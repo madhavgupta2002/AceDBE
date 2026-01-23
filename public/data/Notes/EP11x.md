@@ -41,94 +41,6 @@
 
 ---
 
-### **Questions & Answers: Foundations**
-
-**Q1. Who is considered the father of modern creativity? (Extra Q)**
-*   **Answer:** **Paul Torrance**
-    *   *Explanation:* E. Paul Torrance is renowned for his research on the nature of creativity and the Torrance Tests of Creative Thinking.
-
-**Q1.a Who developed the creativity process? (CLA 1)**
-*   **Answer:** **Graham Wallis**
-    *   *Explanation:* Graham Wallis proposed a four-stage model of the creative process (Preparation, Incubation, Illumination, Verification).
-
-**Q2. The term \_\_\_\_\_\_ refers to the process of creating those innovative solutions. (Extra Q)**
-*   **Answer:** **Innovation**
-    *   *Explanation:* While creativity is idea generation, innovation is the creation/implementation of the solution.
-
-**Q3. Innovation is defined as: (Mid Term)**
-*   **Answer:** **The commercialization of a new product or process.**
-    *   *Explanation:* Innovation requires implementation and value capture (commercialization), not just the idea.
-
-**Q3.a. Innovation means \_\_\_\_\_\_\_\_. (CLA 1)**
-*   **Answer:** **Technology**
-    *   *Explanation:* In the context of the course, innovation is closely associated with the application and use of technology.
-
-**Q4. Who said: "Creativity is seeing what everyone else has seen, and thinking what no one else has thought"? (Extra Q)**
-*   **Answer:** **Albert Einstein**
-    *   *Explanation:* A famous quote often attributed to Einstein regarding scientific discovery and perspective.
-
-**Q5. Who is the father of brainstorming? (Extra Q)**
-*   **Answer:** **Alex Osborn**
-    *   *Explanation:* Alex Osborn introduced the term "Brainstorming" in his book *Applied Imagination*.
-
-**Q5.a. Who is one of American history's most significant innovators and inventors? (CLA 1)**
-*   **Answer:** **Thomas Edison**
-    *   *Explanation:* Thomas Edison is widely recognized for inventions like the practical incandescent light bulb and the phonograph.
-
-**Q6. Innovation is both conceptual and \_\_\_\_\_\_\_. (Extra Q)**
-*   **Answer:** **None of the above**
-    *   *Explanation:* In the original multiple-choice question, the correct option is "None of the above" as the listed alternatives do not capture the intended description.
-
-**Q7. Which technique is designed for reframing the problem? (Extra Q)**
-*   **Answer:** **Creativity**
-    *   *Explanation:* Creative thinking techniques are primarily used to reframe perspective and definition of problems.
-
-**Q7.a. Disney is considered an \_\_\_\_\_\_\_\_\_\_ cultural icon. (CLA 1)**
-*   **Answer:** **International**
-    *   *Explanation:* Disney is known worldwide and is regarded as an international cultural icon.
-
-**Q8. Who is the founder of Coffee Day? (Extra Q)**
-*   **Answer:** **V.G. Siddhartha**
-
-**Q9. Who are the founders of Redbus? (Extra Q)**
-*   **Answer:** **All of the above (Phanindra Sama, Charan Padmaraja, Sudhakar Pasupunuri)**
-
-**Q10.a. Steve Jobs developed products like McIntosh, the iPod and the iPhone. (CLA 1)**
-*   **Answer:** **True**
-    *   *Explanation:* Steve Jobs played a key role in the development and success of these iconic Apple products.
-
-**Q10. Why is associative thinking crucial for entrepreneurs? (Mid Term)**
-*   **Answer:** **It allows entrepreneurs to combine diverse elements into innovative solutions.**
-
-**Q10a. What two key components are required for entrepreneurship? (Mid Term)**
-*   **Answer:** **Innovation and perseverance**
-
-**Q10b. These decisions are concerned with policy matters, and they influence the goals and objectives of a business venture: (Mid Term)**
-*   **Answer:** **Strategic decisions**
-
-**Q11. How is creativity linked to entrepreneurship? (CLA 2)**
-*   **Answer:** **All of the above** (Identify opportunities, Know what to imitate, Prioritize problems)
-
-**Q12. What are some of the essential attributes of being creative? (CLA 2)**
-*   **Answer:** **All of the above** (Questioning, Observing, Experimenting)
-
-**Q13. Why is experimenting key to creativity? (CLA 2)**
-*   **Answer:** **Helps learn new stuff**
-
-**Q14. What is meant by associating in the context of creativity? (CLA 2)**
-*   **Answer:** **Connecting different ideas**
-
-**Q15. Why is questioning critical for creativity? (CLA 2)**
-*   **Answer:** **Helps generate new knowledge**
-
-**Q16. What's meant by out-of-box thinking? (CLA 2)**
-*   **Answer:** **All of the above** (Looking at a problem from different lens, Generating new ideas, Breaking patterns)
-
-**Q17. What are some of the essential attributes of being entrepreneurial? (CLA 2)**
-*   **Answer:** **All of the above** (Questioning, Networking, Associating)
-
----
-
 ## **Topic 2: The Creative Mindset & Psychology**
 
 ### **Three Attributes of a Creative Person**
@@ -156,59 +68,6 @@
 
 ---
 
-### **Questions & Answers: Mindset**
-
-**Q1. What is the "ITC" model described by the professor for developing resilience? (Mid Term)**
-*   **Answer:** **Ignore 50% of situations, tolerate 40%, and confront 10%.**
-
-**Q2. What is the first step towards being creative? (Extra Q)**
-*   **Answer:** **Taking care of your mental, emotional, and physical well-being.**
-    *   *Explanation:* "Put your oxygen mask first." You must be capable before you can create.
-
-**Q3. How does love serve as a driver of creativity? (Extra Q)**
-*   **Answer:** **It allows individuals to tolerate fear, greed, and duty while pursuing what they enjoy.**
-    *   *Explanation:* Passion/Love makes the struggle tolerable.
-
-**Q4. What is the significance of embracing failure in creative pursuits? (Mid Term)**
-*   **Answer:** **Embracing failure allows individuals to learn and improve their creative process.**
-
-**Q5. Neurotransmitters like dopamine and serotonin are important for creativity. Which is linked to motivation and reward? (Mid Term)**
-*   **Answer:** **Dopamine**
-
-**Q6. Studies have shown that creative individuals often exhibit which personality trait? (Mid Term)**
-*   **Answer:** **Openness to experience**
-
-**Q7. Which of the following best describes the role of fear as a driver of creativity? (Mid Term)**
-*   **Answer:** **Fear can push individuals to be creative, but it also exhausts them physically and mentally.**
-    *   *Explanation:* Fear is a negative driver; love/passion is sustainable.
-
-**Q8. The most prevent barriers in creativity is \_\_\_\_\_\_\_\_. (Extra Q)**
-*   **Answer:** **Psychological**
-    *   *Explanation:* Internal barriers (fear, inhibitions) are more significant than external ones.
-
-**Q9. What's meant by Clear Head? (CLA 2)**
-*   **Answer:** **Not being too emotional**
-
-**Q10. What's meant by Thick Skin? (CLA 2)**
-*   **Answer:** **Ability to take tough decisions**
-
-**Q11. What's meant by Deep Heart? (CLA 2)**
-*   **Answer:** **Showing empathy**
-
-**Q12. Empathy is defined by? (CLA 2)**
-*   **Answer:** **Understanding other's emotions**
-
-**Q13. When is a good case to Ignore stuff? (CLA 2)**
-*   **Answer:** **All of the above** (When stakes are low, When you are just seeking an ego boost, When you are dealing with uncontrollable)
-
-**Q14. When is a good case to Tolerate stuff? (CLA 2)**
-*   **Answer:** **When you must save relationships**
-
-**Q15. When is a good case to Confront stuff? (CLA 2)**
-*   **Answer:** **When stakes are high and beyond self**
-
----
-
 ## **Topic 3: Time Management & Discipline**
 
 ### **Urgency-Importance Matrix (Eisenhower)**
@@ -228,18 +87,6 @@
 *   **Definition:** Choosing the difficult choice over the easy one.
 *   **Killing Habits:** Replace unconscious habits (mindless scrolling) with conscious high-leverage activities (reading).
 *   **Delegation:** Delegate tasks that are neither important nor high-leverage.
-
----
-
-### **Questions & Answers: Time Management**
-
-**Q1. What is the key takeaway from the story involving Bill Gates and Warren Buffett? (Extra Q)**
-*   **Answer:** **Focus is the secret to success.**
-    *   *Explanation:* Both identified "Focus" (Prioritization) as their main driver.
-
-**Q2. Incubation is a temporary break from creative problem-solving that can result in insight. (Extra Q)**
-*   **Answer:** **True**
-    *   *Explanation:* Stepping away allows the subconscious to process ideas (Incubation phase).
 
 ---
 
@@ -267,45 +114,6 @@
 
 ---
 
-### **Questions & Answers: Environment & Tech**
-
-**Q1. What is the first thing that machines took away from humans according to the lecture? (Extra Q)**
-*   **Answer:** **Physical labor**
-
-**Q2. What are the two human capabilities mentioned by the professor that machines cannot fully replicate yet? (Mid Term)**
-*   **Answer:** **Empathy and creativity**
-
-**Q3. What effect does the environment have on creativity? (Mid Term)**
-*   **Answer:** **A stimulating environment can enhance creativity.**
-    *   *Explanation:* Nature (Genetics) provides potential; Nurture (Environment) determines expression.
-
-**Q4. What major factor has contributed to the leveling of the playing field? (Mid Term)**
-*   **Answer:** **The democratization of technology, giving everyone access to the same tools.**
-
-**Q5. Why are job opportunities becoming scarce despite economic growth? (Mid Term)**
-*   **Answer:** **The need for human labor is reduced due to the technological asymmetry.**
-
-**Q6. Which of the following best describes the role of creativity in education? (Extra Q)**
-*   **Answer:** **Equipping students to face future challenges and unknown careers.**
-
-**Q7. What does the professor talk about the evolution of human physical strength over generations? (Mid Term)**
-*   **Answer:** **Humans are becoming physically weaker due to less demand for labor.**
-
-**Q8. Who kept teaching even after winning the Nobel prize? (Mid Term)**
-*   **Answer:** **CV Raman**
-    *   *Explanation:* CV Raman continued teaching after winning the Nobel Prize in Physics in 1930.
-
-**Q9. Why is there so much importance associated with creativity in the present scenario? (CLA 2)**
-*   **Answer:** **All of the above** (Rapidity of change, Opportunities galore, Complex problems)
-
-**Q10. Why have problems become complex? (CLA 2)**
-*   **Answer:** **Both** (Too many variables, Low levels of intelligence)
-
-**Q11. The skills that technology finds difficult to replace are? (CLA 2)**
-*   **Answer:** **Both** (Empathy and Creativity)
-
----
-
 ## **Topic 5: FAQs & Physiology of Creativity**
 
 ### **Brain & Physiology**
@@ -330,57 +138,6 @@
 
 ---
 
-### **Questions & Answers: Physiology & Misc**
-
-**Q1. Studies have shown that creative individuals exhibit high levels of fluid intelligence. Which of the following is correlated with fluid intelligence? (Mid Term)**
-*   **Answer:** **Divergent thinking**
-
-**Q2. How does fluid intelligence relate to creativity? (Mid Term)**
-*   **Answer:** **Fluid intelligence can contribute to creativity, but it is not the sole factor.**
-
-**Q3. Intelligence is not necessary, but it is a sufficient condition for creativity. (Extra Q)**
-*   **Answer:** **False**
-    *   *Explanation:* Intelligence is an entry ticket (necessary to an extent), but not sufficient (requires attitude/creativity).
-
-**Q4. The concept of "flow" refers to a state of complete immersion. Which brain regions are involved? (Mid Term)**
-*   **Answer:** **Prefrontal cortex and amygdala**
-
-**Q5. What is the role of the cerebellum in creativity? (Mid Term)**
-*   **Answer:** **It plays a role in abstract thinking and problem-solving.**
-    *   *Explanation:* Traditionally motor control, but research shows links to cognitive efficiency.
-
-**Q6. Creativity involves the ability to generate new ideas. Which aspect of fluid intelligence is most closely related to this? (Mid Term)**
-*   **Answer:** **Problem-solving**
-
-**Q7. How can fluency impact the creative process? (Mid Term)**
-*   **Answer:** **Fluency fosters the generation of multiple ideas and possibilities.**
-
-**Q8. A mind map is a graph used to visualise the organised information. (Extra Q)**
-*   **Answer:** **True**
-
-**Q9. The key to mind mapping is to take note of every idea that comes up. (Extra Q)**
-*   **Answer:** **True**
-
-**Q10. How can creativity be taught? (Mid Term)**
-*   **Answer:** **By developing it like any other skill through practice and learning.**
-
-**Q11. \_\_\_\_\_\_ is the process of idea generation, and it never goes out of fashion. (Extra Q)**
-*   **Answer:** **360*Creativity** 
-
-**Q12. The English word creativity comes from the \_\_\_\_\_\_ term. (Extra Q)**
-*   **Answer:** **Greek and Latin**
-
-**Q13. Which of the following is a potential benefit of curiosity in the workplace? (Mid Term)**
-*   **Answer:** **Increased productivity**
-
-**Q14. Which of the following is a positive outcome of curiosity? (Mid Term)**
-*   **Answer:** **Increased learning and knowledge**
-
-**Q15. How can one become more creative? (CLA 2)**
-*   **Answer:** **It's through practice**
-
----
-
 # **Module 2: Anatomy and Psychology of Creativity**
 
 ## **Topic 1: The Components & Definition of Creativity**
@@ -401,30 +158,6 @@
 
 ---
 
-### **Questions & Answers: Components**
-
-**Q1. What are the three components of creativity mentioned in the lecture? (Extra Q)**
-*   **Answer:** **Expertise, Creative Thinking Skills, and Intrinsic Motivation.**
-
-**Q2. Why is intrinsic motivation critical for creativity? (Extra Q)**
-*   **Answer:** **It sustains effort during difficult phases where extrinsic rewards (money/fame) are absent.**
-
-**Q3. What are the necessary conditions for an idea to be deemed creative? State five ways in which creativity quotient of an idea could be improved. (20 Oct 2025 final exam)**
-*   **Answer:** 
-    *   **Necessary Conditions for an Idea to be Deemed Creative:**
-        1.  **Novelty (Newness):** The idea must be original, unique, or different from existing solutions.
-        2.  **Utility (Usefulness):** The idea must have practical value, solve a problem, or meet a need.
-        3.  **The Formula:** Creativity = Novelty + Utility (Both components are essential).
-        4.  **Domain Relevance:** The idea should be appropriate and applicable within its context.
-    *   **Five Ways to Improve Creativity Quotient of an Idea:**
-        1.  **Enhance Expertise:** Deepen domain knowledge to ensure ideas have utility and are not just common sense.
-        2.  **Develop Creative Thinking Skills:** Improve ability to frame problems, generate ideas, and inspect root causes.
-        3.  **Foster Intrinsic Motivation:** Cultivate internal passion and desire rather than relying solely on extrinsic rewards.
-        4.  **Practice Quantity:** Generate many ideas (quantity breeds quality) and fuse average ideas into high-quality solutions.
-        5.  **Break Patterns:** Use System 2 thinking to challenge assumptions, apply lateral thinking, and break cognitive boundaries.
-
----
-
 ## **Topic 2: Thinking Systems (Daniel Kahneman)**
 
 ### **System 1 vs. System 2**
@@ -442,13 +175,6 @@
 1.  *Bat & Ball:* Total $1.10. Bat costs $1 more than ball. Ball cost? -> **$0.05** (System 1 says $0.10, which is wrong).
 2.  *Widgets:* 5 machines, 5 mins, 5 widgets. 100 machines, 100 widgets? -> **5 Minutes** (System 1 says 100).
 3.  *Lily Pads:* Doubles daily. Full in 48 days. Half full? -> **47th Day** (System 1 says 24).
-
----
-
-### **Questions & Answers: Thinking Systems**
-
-**Q1. Why does the brain rely on System 1 thinking for most daily tasks? (Extra Q)**
-*   **Answer:** **System 1 helps conserve mental energy by using patterns.**
 
 ---
 
@@ -474,22 +200,6 @@
 
 ---
 
-### **Questions & Answers: Neuroscience**
-
-**Q1. What happens to the brain's synaptic connections as we age? (Extra Q)**
-*   **Answer:** **The number of connections decreases, but the nodes become denser/thicker (reinforcing habits).**
-
-**Q2. Which part of the brain is primarily associated with executive function and creativity? (Extra Q)**
-*   **Answer:** **Prefrontal Cortex.**
-
-**Q3. The concept of "flow" refers to a state of complete immersion. Which brain regions are involved? (Extra Q)**
-*   **Answer:** **Prefrontal cortex and amygdala.**
-
-**Q4. What is the role of the cerebellum in creativity? (Extra Q)**
-*   **Answer:** **It plays a role in abstract thinking and problem-solving.**
-
----
-
 ## **Topic 4: Creativity as Fluid Intelligence**
 
 ### **Intelligence vs. Creativity**
@@ -510,28 +220,6 @@
     1.  Loss of sense of time.
     2.  The activity is the end in itself (intrinsic joy).
     3.  You do not get tired.
-
----
-
-### **Questions & Answers: Fluid Intelligence**
-
-**Q1. What is the relationship between intelligence and creativity as described in the lecture? (Extra Q)**
-*   **Answer:** **More intelligent people tend to be more creative but must break established patterns.**
-
-**Q2. Which of the following is correlated with fluid intelligence? (Extra Q)**
-*   **Answer:** **Divergent thinking.**
-
-**Q3. How does fluid intelligence relate to creativity? (Extra Q)**
-*   **Answer:** **Fluid intelligence can contribute to creativity, but it is not the sole factor.**
-
-**Q4. Intelligence is not necessary, but it is a sufficient condition for creativity. (Extra Q)**
-*   **Answer:** **False** (Intelligence is a threshold/entry ticket, but attitude/low inhibition is required for performance).
-
-**Q5. How is creativity linked to intelligence? (CLA 2)**
-*   **Answer:** **Mediated**
-
-**Q6. What's one way of defining intelligence? (CLA 2)**
-*   **Answer:** **All of the above** (Identifying pattern, Predicting pattern, Generating pattern)
 
 ---
 
@@ -564,22 +252,6 @@
 
 ---
 
-### **Questions & Answers: Habits**
-
-**Q1. What lesson can be learned from Thomas Edison's approach to creating the light bulb? (Extra Q)**
-*   **Answer:** **Failure provides valuable lessons and is part of the experimental process.**
-
-**Q2. What does it mean to take 'Half Chances' according to the document? (Extra Q)**
-*   **Answer:** **Grabbing opportunities even if they aren't fully formed.**
-
-**Q3. What does a T-shaped personality refer to? (Extra Q)**
-*   **Answer:** **Someone with deep domain expertise and a wide breadth of perspective.**
-
-**Q4. Who is the founder of Nike mentioned in the lecture? (Extra Q)**
-*   **Answer:** **Phil Knight** (Book: *Shoe Dog*).
-
----
-
 ## **Topic 6: Creativity, Spirituality & Meditation**
 
 ### **The Role of Meditation**
@@ -595,24 +267,6 @@
     *   *Reference:* **Paul Kalanithi** (*When Breath Becomes Air*) – Facing mortality without "Why me?" but "Why not me?".
 
 ---
-
-### **Questions & Answers: Meditation & General**
-
-**Q1. Which of the following is a potential benefit of curiosity in the workplace? (Extra Q)**
-*   **Answer:** **Increased productivity** (and learning/knowledge).
-
-**Q2. Why does Albert Einstein believe imagination is more important than knowledge? (Extra Q)**
-*   **Answer:** **Knowledge explains what has happened, while imagination can predict what could happen.** (Note: Text usually cites "Knowledge is limited; imagination encircles the world").
-
-**Q3. What effect does the environment have on creativity? (Extra Q)**
-*   **Answer:** **A stimulating environment can enhance creativity.** (Nurture > Nature).
-
-**Q4. The most prevent barriers in creativity is \_\_\_\_\_\_\_\_. (Extra Q)**
-*   **Answer:** **Psychological.**
-
-**Q5. How can fluency impact the creative process? (Extra Q)**
-*   **Answer:** **Fluency fosters the generation of multiple ideas and possibilities.**
-
 
 # **Module 3: Problem Discovery and Definition**
 
@@ -635,32 +289,6 @@
 1.  **The Pharmacist:** Transactional. Operates at the level of **Symptoms**. Doesn't care about the "why."
 2.  **The Doctor:** Translates unique symptoms into a **Problem**. Better skin in the game.
 3.  **The Surgeon:** Operates at the level of **Root Causes**. Customizes solutions. High knowledge differential.
-
----
-
-### **Questions & Answers: CPS Process**
-
-**Q1. What is the main difference between a symptom and a problem? (Extra Q)**
-*   **Answer:** **Symptoms are surface-level issues, while problems are deeper, root causes.**
-
-**Q2. Every Problem is a Symptom. (CLA 3)**
-*   **Answer:** **It's a True statement.**
-    *   *Explanation:* Every stated problem is usually a symptom of an even deeper cause until the ultimate root is found.
-
-**Q3. In the example of the Bangalore traffic problem, what did the person solve instead of the traffic issue? (Extra Q)**
-*   **Answer:** **He solved the problem of time wastage.**
-    *   *Explanation:* By hiring a chauffeur and using a Kindle, he transformed the "problem" into a "boon."
-
-**Q4. What's meant by Divergent Thinking? (CLA 3)**
-*   **Answer:** **Generating alternatives.**
-    *   *Explanation:* Creating multiple possibilities rather than narrowing down to one answer.
-
-**Q5. When encountering a problem, what's a more important question to ask? (CLA 3)**
-*   **Answer:** **Why to solve the problem.**
-    *   *Explanation:* Understanding the purpose/value before jumping into "how."
-
-**Q6. What kind of a problem solver is akin to a Pharmacist? (CLA 3)**
-*   **Answer:** **Transactional.**
 
 ---
 
@@ -690,58 +318,6 @@
 
 ---
 
-### **Questions & Answers: Exploration Methods**
-
-**Q1. In the 5 Whys technique, what is the main purpose of asking "Why" multiple times? (Extra Q)**
-*   **Answer:** **To discover the root cause of a problem.**
-
-**Q2. Which is a good technique for problem exploration? (CLA 3)**
-*   **Answer:** **5W + 2H**
-
-**Q2a. Which is a good technique for problem exploration? (CLA 3)**
-*   **Answer:** **Why 5 Analysis**
-
-**Q3. Ishikawa Diagram or Fishbone Diagram is a method of: (CLA 3)**
-*   **Answer:** **Problem exploration.**
-
-**Q4. What is the purpose of the Fishbone Diagram? (Extra Q)**
-*   **Answer:** **To visually map out the causes of a problem in categories.**
-
-**Q5. Mention any three methods of problem understanding and root cause analysis. You may use any example to demonstrate the methods. (20 Oct 2025 final exam)**
-*   **Answer:**
-    *   **1. The 5 Whys Analysis:**
-        *   **Method:** Ask "Why" repeatedly (usually 3-5 times) to move past symptoms and reach the root cause.
-        *   **Origin:** Toyota (Japanese technique).
-        *   **Example:** Problem - Students don't wear helmets.
-            *   Why? They find helmets uncomfortable.
-            *   Why? Helmets are heavy and hot.
-            *   Why? They are designed for adults, not children.
-            *   Why? No child-specific helmet designs available.
-            *   Why? Market doesn't see children as primary users.
-            *   **Root Cause:** Lack of child-friendly helmet designs in the market.
-    *   **2. Fishbone Diagram (Ishikawa / Cause-and-Effect):**
-        *   **Method:** Visual map looking like a fish skeleton with categories of causes (6 Ms).
-        *   **Structure:** The 6 Ms - Man (Personnel), Machine (Equipment/Tech), Material (Raw materials/Data), Method (Process/Rules), Measurement (Data/Feedback), Mother Nature (Environment/Culture).
-        *   **Example:** Problem - Low student attendance.
-            *   **Man:** Teachers' teaching style, student motivation
-            *   **Machine:** Poor classroom infrastructure, lack of technology
-            *   **Material:** Outdated curriculum, lack of learning resources
-            *   **Method:** Rigid teaching methods, no interactive activities
-            *   **Measurement:** No feedback mechanism, poor assessment methods
-            *   **Mother Nature:** Distance to school, weather conditions, family environment
-    *   **3. 5W2H Analysis:**
-        *   **Method:** Deeply understand the dimensionality and scope of a problem using Who, Why, When, Where, What (5W) + How, How Much (2H).
-        *   **Example:** Problem - Food waste in cafeteria.
-            *   **Who:** Students, cafeteria staff, management
-            *   **Why:** Large portions, dislike of menu, lack of awareness
-            *   **When:** During lunch hours, peak times
-            *   **Where:** Cafeteria, dining area
-            *   **What:** Unconsumed food, leftovers
-            *   **How:** Food thrown in bins, lack of composting
-            *   **How Much:** 30% of food wasted daily, significant cost impact
-
----
-
 ## **Topic 3: User-Centric Exploration**
 
 ### **Stakeholder Map**
@@ -752,19 +328,6 @@
 ### **Journey Map (Value Stream Map)**
 *   **Definition:** A temporal (time-based) understanding of a user's experience across touchpoints.
 *   **Purpose:** Identify pain points, emotional responses, and failures (e.g., airport entry process).
-
----
-
-### **Questions & Answers: User-Centric**
-
-**Q1. What is a stakeholder in the context of problem exploration? (Extra Q)**
-*   **Answer:** **An individual or group influencing or affected by the problem.**
-
-**Q2. What does a Journey Map do? (CLA 3)**
-*   **Answer:** **Map how a problem unfolds over time.**
-
-**Q3. What does a Stakeholder map do? (CLA 3)**
-*   **Answer:** **Understand fears and motivation for key parties.**
 
 ---
 
@@ -790,28 +353,6 @@
 
 ---
 
-### **Questions & Answers: Prioritization**
-
-**Q1. What does the MECE principle stand for in problem prioritization? (Extra Q)**
-*   **Answer:** **Mutually Exclusive, Collectively Exhaustive.**
-
-**Q1a. What does MECE stand for? (CLA 4)**
-*   **Answer:** **Both** (Mutually Exclusive, Collectively Exhaustive)
-
-**Q2. What does the Pareto law state? (CLA 3)**
-*   **Answer:** **All of the above (80% causes has 20% effects / 20% causes has 80% effect / Differentiate vital few from the trivial many).**
-
-**Q3. While solving a high-impact and high-frequency problem, you must adopt? (CLA 3)**
-*   **Answer:** **Perma Fix.**
-
-**Q4. While solving a low-impact and high-frequency problem, you must adopt? (CLA 3)**
-*   **Answer:** **Both Quick and Perma Fix**
-
-**Q5. While solving a high-impact and low-frequency problem, you must adopt? (CLA 3)**
-*   **Answer:** **Both Quick and Perma Fix**
-
----
-
 ## **Topic 5: Problem Framing**
 
 ### **Defining the Boundary**
@@ -826,19 +367,6 @@
     *   **Google:** "Fast as flipping through a magazine."
     *   **Mahindra XUV500:** The "Cheetah" (Grills = Jaws, Handles = Paws).
     *   **Canon:** A "Beer Can" (Easy to transport/stack).
-
----
-
-### **Questions & Answers: Framing**
-
-**Q1. What role do constraints play in problem framing? (Extra Q)**
-*   **Answer:** **They help to define non-negotiable boundaries that guide creativity.**
-
-**Q2. Which of the following are part of the FAB model? (Extra Q)**
-*   **Answer:** **Features, Advantages, Benefits.**
-
-**Q3. What are important rules of problem framing? (CLA 4)**
-*   **Answer:** **All of the above** (Not every problem is worth solving, A problem fully understood is half solved, Reframe the problem before solving it)
 
 ---
 
@@ -862,25 +390,6 @@
 
 ---
 
-### **Questions & Answers: Empathy**
-
-**Q1. Which of the following are types of empathy? (Extra Q)**
-*   **Answer:** **Cognitive, Emotional, Compassionate.**
-
-**Q1a. What is included in true and effective empathy? (CLA 4)**
-*   **Answer:** **All of the above** (Perspective taking, Rapport building, Taking actions)
-
-**Q2. What kind of a problem solver is akin to a Doctor? (CLA 3)**
-*   **Answer:** **Critical.** (Uses diagnostics/analysis).
-
-**Q3. What's the base of emotional intelligence? (CLA 4)**
-*   **Answer:** **Self-awareness**
-
-**Q4. What's the antonym of Reductive listening? (CLA 4)**
-*   **Answer:** **Expansive**
-
----
-
 ## **Topic 7: Team Problem Solving (Six Thinking Hats)**
 
 ### **Parallel Thinking (Edward De Bono)**
@@ -892,28 +401,6 @@
     4.  **Black Hat:** Risks, caution, "why it might fail" (Devil’s Advocate).
     5.  **Green Hat:** Creativity, ideas, alternatives.
     6.  **Blue Hat:** Moderation, control, process, the "Big Picture."
-
----
-
-### **Questions & Answers: Six Thinking Hats**
-
-**Q1. In Six Thinking Hats, what does the Orange hat stand for? (CLA 3)**
-*   **Answer:** **There's no Orange Hat.**
-
-**Q2. In Six Thinking Hats, what does the Blue hat stand for? (CLA 3)**
-*   **Answer:** **All of the above (Governance, Moderation, Regulation).**
-
-**Q3. In Six Thinking Hats, what does the White hat stand for? (CLA 3)**
-*   **Answer:** **Facts.**
-
-**Q4. In Six Thinking Hats, what does the Yellow hat stand for? (CLA 3)**
-*   **Answer:** **Enthusiasm (Positive aspects).**
-
-**Q5. In Six Thinking Hats, what does the Red hat stand for? (CLA 3)**
-*   **Answer:** **Opinions (Emotions/Intuition).**
-
-**Q6. In Six Thinking Hats, what does the Green hat stand for? (CLA 3)**
-*   **Answer:** **Ideation.**
 
 # **Module 4: Creative Methods for Problem Solving & Ideation**
 
@@ -937,38 +424,6 @@
     4.  **Social Loafing (Free Riding):** Not everyone puts in the same effort (Tug-of-war effect).
 *   **The Panacea — Brainwriting/Brainstilling:** Participants spend 10 minutes writing/sketching ideas privately first, then share.
 *   **Optimal Team Size:** **A pair (2 people)** is often the right size to avoid boredom without reaching saturation.
-
----
-
-### **Questions & Answers: Foundations**
-
-**Q1. What is the key benefit of allowing participants to generate more ideas during ideation? (Extra Q)**
-*   **Answer:** **It helps improve the quality of ideas over time.**
-    *   *Explanation:* Through the learning curve and sheer volume, better ideas emerge from the "average" ones.
-
-**Q2. Time pressure has the following effect on creativity (generally speaking): (CLA 4)**
-*   **Answer:** **Discourages**
-    *   *Explanation:* Creativity flourishes in "fertile" moments of low pressure and solitude.
-
-**Q3. To be creative, learn to: (CLA 4)**
-*   **Answer:** **All of the above (Observe with purpose, Listen with intent, Defer your judgement).**
-
-**Q4. Mention any three best practices of idea generation. Elucidate any three techniques of creativity, with a single supporting example. (20 Oct 2025 final exam)**
-*   **Answer:**
-    *   **Three Best Practices of Idea Generation:**
-        1.  **Quantity Breeds Quality:** Generate a vast quantity of ideas first. High-quality ideas come from fusing many average ideas (e.g., 550 ideas reduced to 50 through combination). Nature's model: 99.9% of species are extinct to produce robust ones.
-        2.  **Defer Judgment:** Avoid being judgmental during ideation to prevent shutting down creative inputs. Use brainwriting/brainstilling (10 minutes private writing) before sharing to avoid evaluation apprehension.
-        3.  **Create Fertile Moments:** Ideas often occur during "solitary" times (bathing, walking, driving) when there is no time pressure. Avoid time pressure as it discourages creativity.
-    *   **Three Techniques of Creativity with Examples:**
-        1.  **Challenging Assumptions:**
-            *   **Technique:** Questioning established "truths" to unlock new possibilities.
-            *   **Example:** **UPI** challenged the assumption that you need an account number/IFSC to send money. By using mobile numbers and QR codes, UPI revolutionized digital payments in India.
-        2.  **Lateral Thinking (Edward de Bono):**
-            *   **Technique:** Moving "sideways" to approach problems from unconventional angles rather than vertical/linear logic.
-            *   **Example:** **Maruti (1981)** settled a heavy machine into a pit without a crane by filling the pit with **ice** and letting it melt/evaporate, rather than using traditional lifting methods.
-        3.  **SCAMPER:**
-            *   **Technique:** **S**ubstitute, **C**ombine, **A**dapt, **M**odify, **P**ut to another use, **E**liminate, **R**earrange.
-            *   **Example:** **Adaptive Eyewear (Josh Silver):** Substitute glass for plastic; Adapt a syringe to change focal length; Eliminate the optometrist (user-adjusted). This made eyeglasses accessible without professional fitting.
 
 ---
 
@@ -1029,55 +484,6 @@
 
 ---
 
-### **Questions & Answers: Ideation Methods**
-
-**Q1. What is the core principle of the "Challenging Assumptions" ideation method? (Extra Q)**
-*   **Answer:** **Questioning existing beliefs to unlock new possibilities.**
-
-**Q1a. What's a good technique for ideation? (CLA 4)**
-*   **Answer:** **Challenging assumptions**
-
-**Q2. What does 'lateral thinking' mean in the context of ideation? (Extra Q)**
-*   **Answer:** **Taking an unconventional, sideways approach to problem-solving.**
-
-**Q2a. What's Lateral Thinking? (CLA 4)**
-*   **Answer:** **Suspending judgement**
-
-**Q2b. SCAMPER is a method of? (CLA 4)**
-*   **Answer:** **Lateral Thinking**
-
-**Q2c. The Blue Ocean methods are best used for (CLA 4)**
-*   **Answer:** **Lateral Thinking**
-
-**Q3. Where did Toyota get the idea for its 'Just-In-Time' inventory system? (Extra Q)**
-*   **Answer:** **Piggly Wiggly supermarket.**
-
-**Q4. What feature was originally designed for visually impaired people but benefits all users? (Extra Q)**
-*   **Answer:** **Vibrations in mobile phones.** (Subtitles is also correct for hearing impaired).
-
-**Q4a. How does Looking at Extremes help in ideation? (CLA 4)**
-*   **Answer:** **All of the above** (Pushes the logic to extreme situations and users, Improve quality of ideas, Break functional fixedness)
-
-**Q5. Drawing analogies help in ideation through: (CLA 4)**
-*   **Answer:** **Looking across domains.**
-
-**Q6. What are the three levels in the Nine Windows method? (Extra Q)**
-*   **Answer:** **Subsystem, System, and Super System.**
-
-**Q7. In the FAB model, what does F stand for? (CLA 4)**
-*   **Answer:** **Feature** (Features, Advantages, Benefits).
-
-**Q7a. In the FAB model, what does A stand for? (CLA 4)**
-*   **Answer:** **Advantage**
-
-**Q8. The Four Tiers of customer method is best suited for? (CLA 4)**
-*   **Answer:** **All of the above (Exploring issues in existing markets, Creating new markets, Generating interesting ideas).**
-
-**Q9. Theory of Constraints is best used for: (CLA 4)**
-*   **Answer:** **All of the above (Understanding bottleneck operations, Sequencing steps, Optimizing flow).**
-
----
-
 ## **Topic 3: Prioritizing & Making Ideas Acceptable**
 
 ### **Innovation Sweet Spot**
@@ -1105,93 +511,3 @@ A winning idea must sit at the intersection of:
 *   **SCQA (The Flow):** **S**ituation (establish ground) -> **C**omplication (sell the problem) -> **Q**uestion (central challenge) -> **A**nswer (your idea).
 *   **Pyramid Principle (The Logic):** **Answer** at the top -> Supported by **Arguments** -> Supported by **Data/Evidence** at the base.
 *   **SUCCESS Principle (The Elements):** **S**imple, **U**nexpected, **C**oncrete, **C**redible, **E**motional, **S**tories.
-
----
-
-### **Questions & Answers: Prioritization & Acceptance**
-
-**Q1. Which three criteria must be combined for an idea to be considered a winning one? (Extra Q)**
-*   **Answer:** **Human desirability, technical feasibility, and business viability.**
-
-**Q1a. The innovation sweet spot comprises of (CLA 4)**
-*   **Answer:** **All of the above** (Human Desirability, Business Viability, Technical Feasibility)
-
-**Q2. The Impact-Time matrix helps in: (CLA 4)**
-*   **Answer:** **Prioritizing ideas.**
-
-**Q3. What is the right approach when dealing with a stakeholder who sees a lot of negatives in your idea? (Extra Q)**
-*   **Answer:** **Add positives to overcompensate for the negatives.**
-
-**Q4. The SCQA technique is best suited for: (CLA 4)**
-*   **Answer:** **Idea communication.**
-
-**Q5. What does the 'U' stand for in the SUCCESS principle for storytelling? (Extra Q)**
-*   **Answer:** **Unexpected** (Twists make stories memorable).
-
-**Q6. What's the base of emotional intelligence? (CLA 4)**
-*   **Answer:** **Self-awareness.** (Followed by Self-management, Empathy, and Skilled relationships).
-
-
-**Q1. Design a course that can be taught the primary schools to encourage creativity among students. Be detailed about the course outline, duration, evaluation methods and expected outcomes. (20 Oct 2025 final exam)**
-*   **Answer:**
-    *   **Course Title:** "Creative Minds: Exploring, Creating, and Innovating"
-    *   **Target Audience:** Primary school students (Grades 1-5, ages 6-11)
-    *   **Course Duration:**
-        *   **Total Duration:** One academic year (10 months)
-        *   **Frequency:** 2 sessions per week, 45 minutes per session
-        *   **Total Sessions:** 80 sessions (160 hours)
-        *   **Structure:** Progressive modules building from basic to advanced concepts
-    *   **Course Outline:**
-        *   **Module 1: Foundations of Creativity (Months 1-2, 16 sessions)**
-            *   Understanding creativity (Novelty + Utility)
-            *   The 5 Discovery Skills: Questioning, Observing, Experimenting, Networking, Associating
-            *   Thinking outside the box (9-dot puzzle, pattern breaking)
-            *   Activities: Observation walks, "Why" question games, simple experiments
-        *   **Module 2: Creative Problem Solving (Months 3-4, 16 sessions)**
-            *   Problem vs. Symptom understanding
-            *   Simple root cause analysis (3 Whys for kids)
-            *   Creative problem-solving process (Explore, Generate, Validate)
-            *   Activities: Story-based problem solving, group challenges, simple mind mapping
-        *   **Module 3: Idea Generation Techniques (Months 5-6, 16 sessions)**
-            *   Brainwriting (drawing/writing ideas privately)
-            *   SCAMPER simplified (Substitute, Combine, Adapt, Modify, Eliminate, Rearrange)
-            *   Challenging assumptions through games
-            *   Activities: Idea generation games, creative storytelling, art projects
-        *   **Module 4: Hands-On Creativity (Months 7-8, 16 sessions)**
-            *   Think with your hands (drawing, building, prototyping)
-            *   Experimental mindset (learning from "failures")
-            *   Biomimicry basics (learning from nature)
-            *   Activities: Building projects, nature observation, simple prototypes
-        *   **Module 5: Creative Expression & Communication (Months 9-10, 16 sessions)**
-            *   Expressing ideas through art, stories, and presentations
-            *   Empathy and understanding others' perspectives
-            *   Sharing and receiving feedback constructively
-            *   Activities: Creative presentations, peer feedback sessions, collaborative projects
-    *   **Evaluation Methods:**
-        1.  **Portfolio Assessment (40%):** Collection of creative work throughout the year (drawings, stories, prototypes, observations)
-        2.  **Project-Based Evaluation (30%):** Monthly creative projects demonstrating application of concepts
-        3.  **Peer Assessment (10%):** Students evaluate each other's ideas and provide constructive feedback
-        4.  **Self-Reflection Journals (10%):** Weekly entries about creative experiences and learnings
-        5.  **Teacher Observation (10%):** Continuous assessment of participation, curiosity, and creative thinking
-        6.  **No Traditional Exams:** Focus on process over product, effort over perfection
-    *   **Expected Outcomes:**
-        1.  **Cognitive Development:**
-            *   Enhanced divergent thinking and ability to generate multiple solutions
-            *   Improved problem-solving skills and root cause analysis ability
-            *   Better pattern recognition and pattern-breaking capabilities
-        2.  **Behavioral Changes:**
-            *   Increased curiosity and questioning behavior
-            *   Greater comfort with experimentation and "failure" as learning
-            *   Enhanced observation skills and attention to detail
-        3.  **Social-Emotional Skills:**
-            *   Improved empathy and understanding of different perspectives
-            *   Better collaboration and idea-sharing abilities
-            *   Increased confidence in expressing unique ideas
-        4.  **Creative Output:**
-            *   Ability to generate novel and useful ideas
-            *   Skill in combining ideas to create new solutions
-            *   Comfort with hands-on creation and prototyping
-        5.  **Long-term Impact:**
-            *   Foundation for lifelong creative thinking
-            *   Reduced fear of failure and increased resilience
-            *   Enhanced intrinsic motivation for learning and creating
