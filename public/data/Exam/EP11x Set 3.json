@@ -6,6 +6,7 @@
   "questions": [
     {
       "question_id": "1",
+      "module": 1,
       "question_text": "What are the necessary conditions for an idea to be deemed creative? State five ways in which creativity quotient of an idea could be improved.",
       "question_type": "SUBJECTIVE",
       "marks_allocated": 25.0,
@@ -15,6 +16,7 @@
     },
     {
       "question_id": "2",
+      "module": 3,
       "question_text": "Mention any three methods of problem understanding and root cause analysis. You may use any example to demonstrate the methods.",
       "question_type": "SUBJECTIVE",
       "marks_allocated": 25.0,
@@ -24,6 +26,7 @@
     },
     {
       "question_id": "3",
+      "module": 4,
       "question_text": "Mention any three best practices of idea generation. Elucidate any three techniques of creativity, with a single supporting example.",
       "question_type": "SUBJECTIVE",
       "marks_allocated": 25.0,
@@ -33,6 +36,7 @@
     },
     {
       "question_id": "4",
+      "module": 1,
       "question_text": "Design a course that can be taught the primary schools to encourage creativity amount students. Be detailed about the course outline, duration, evaluation methods and expected outcomes.",
       "question_type": "SUBJECTIVE",
       "marks_allocated": 25.0,

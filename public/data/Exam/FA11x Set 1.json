@@ -6,6 +6,7 @@
   "questions": [
     {
       "question_id": "2361441447",
+      "module": 1,
       "question_text": "In a business, if equity contributed by the owners is Rs. 50,000 and the total liabilities are Rs. 300,000, what is the Total Asset Value?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -16,10 +17,12 @@
         "C": "375000",
         "D": "250000"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Using the Accounting Equation: Assets = Liabilities + Equity = 300,000 + 50,000 = 350,000. Total assets equal the sum of liabilities and equity, maintaining the fundamental balance. This is a direct application of the double-entry bookkeeping system, where every resource (asset) is financed either by borrowing (liability) or by owner's funds (equity)."
     },
     {
       "question_id": "2361441448",
+      "module": 1,
       "question_text": "Which one of the following is Nominal Account ?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -30,10 +33,12 @@
         "C": "Capital A/c",
         "D": "SBI Loan A/c"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Nominal Accounts relate to expenses, losses, incomes, and gains. Sales A/c is income (Nominal Account), as per the classification of accounts (Personal, Real, and Nominal). Nominal Accounts are closed at the end of each accounting period, transferring the net result to capital or profit & loss accounts."
     },
     {
       "question_id": "2361441449",
+      "module": 1,
       "question_text": "When Machine worth of Rs.5 lakhs was purchased for cash from Ronak Engineering, the correct accounting entry is:",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -44,10 +49,12 @@
         "C": "Cash Debit 5; Machine Credit 5",
         "D": "Machine Debit 5; Cash Credit 5"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "The purchase of an asset (Machine) by paying cash is recorded by debiting the asset (increasing Machine account as it is a Real Account) and crediting cash (decreasing Cash, another Real Account). The Golden Rule for Real Accounts: Debit what comes in (Machine), Credit what goes out (Cash)."
     },
     {
       "question_id": "2361441450",
+      "module": 1,
       "question_text": "Sold goods worth of Rs. 12 for Rs. 14 on credit to Mr. X. The accounting entries in the acounting equation are:",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -58,10 +65,12 @@
         "C": "Sales -14; Mr. X -14; Goods +12; Cost of Sales +12",
         "D": "Sales -14; Mr. X -14; Goods -12; Cost of Sales -12"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "When goods are sold on credit, sales (income) and receivables (Mr. X, a representative personal account) increase by Rs. 14. Inventory decreases by Rs. 12 (cost of goods), and cost of sales (expense) increases by Rs. 12. This follows the double-entry system and the Golden Rules for Personal and Real Accounts."
     },
     {
       "question_id": "2361441451",
+      "module": 1,
       "question_text": "Salary of Rs. 20 lakhs for the month of January paid on 31st January. The correct accounting entry is the accounting equation is",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -72,10 +81,12 @@
         "C": "Cash -20 in Assets ; Salary -20 in Expense",
         "D": "Cash -20 in Assets ; Outstanding Salary +20 in Expense"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Payment of salary is an expense and reduces cash (asset). Expense accounts are debited, and the cash account is credited as per Nominal Account rules: Debit all expenses & losses; Credit all incomes & gains. Here, both are negative to show outflow."
     },
     {
       "question_id": "2361441452",
+      "module": 1,
       "question_text": "Which one of the following is Real Account?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -86,10 +97,12 @@
         "C": "Capital A/c",
         "D": "Sales A/c"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Real Accounts relate to assets of the business. ‘Cash and Bank A/c’ represents tangible assets and fits in the Real Account category. Other options represent Nominal (Incomes), or Personal (Capital)."
     },
     {
       "question_id": "2361441453",
+      "module": 1,
       "question_text": "Alpha Ltd follows the accounting period of 1st April to 31st March. On January 1, the company deposited Rs. 500 lakhs at an interest rate of 12% per year for one year. The bank pays interest on 30th June and 31st December. The accounting entry on 31st March is:",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -100,10 +113,12 @@
         "C": "Debit: Deposit Rs. 15 Lakhs; Credit: Interest Income Rs. 15 Lakhs",
         "D": "Debit: Interest Income Rs. 15 Lakhs; Credit: Interest Accrued Rs. 15 Lakhs"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "The interest for Jan-Mar (3 months) is accrued but not received. Accrual accounting requires revenue to be recorded when earned, not when received. Debit 'Interest Accrued' (asset/receivable) and credit 'Interest Income' (income). Rs. 500 lakhs × 12% × 3/12 = Rs. 15 lakhs."
     },
     {
       "question_id": "2361441454",
+      "module": 1,
       "question_text": "Salary of March was paid in April. The company follows April to March as accounting period. The Accountant passed an entry for Outstanding Salary. The Outstanding Salary is ____",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -114,10 +129,12 @@
         "C": "Liability",
         "D": "Expense"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Outstanding Salary is a liability as it represents an amount owed to employees for services already received but not yet paid, as per accrual accounting."
     },
     {
       "question_id": "2361441455",
+      "module": 2,
       "question_text": "Payment of Rs. 2 lakhs towards Equity Dividend will appear in the cash flow statement under:",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -128,10 +145,12 @@
         "C": "Cash Flow from Operating Activities",
         "D": "Cash Flow from Financing Activities"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "Dividend payments to shareholders are classified under Cash Flow from Financing Activities in the Cash Flow Statement, since dividends relate to funding the business (capital structure), not operating or investing activities."
     },
     {
       "question_id": "2361441456",
+      "module": 2,
       "question_text": "Cash paid to purchase a machine will appear in the cash flow statement under:",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -142,10 +161,12 @@
         "C": "Cash Flow from Operating Activities",
         "D": "Cash Flow from Financing Activities"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "The purchase of fixed assets such as machinery is classified as an investing activity. Investing activities reflect the cash used to acquire or dispose of long-term assets."
     },
     {
       "question_id": "2361441457",
+      "module": 2,
       "question_text": "JB Chemicals procured material worth of Rs. 300 lakhs during the year. At the end of the year, the material in hand was Rs. 30 lakhs. Which one of the following is the correct adjustment entry to account material consumption?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -156,10 +177,12 @@
         "C": "Debit: Raw Materials Rs. 30 lakhs' Credit: P& L Account Rs.30 lakhs",
         "D": "Debit: Raw Material Consumption Rs. 300 lakhs; Credit: Raw material Rs. 300 lakhs"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Consumption = Opening + Purchases – Closing = 0 + 300 - 30 = 270 lakhs. The materials consumed are transferred from inventory (asset) to expense (PF&L). Debit Raw Material Consumption (expense increases), Credit Raw Material (asset decreases)."
     },
     {
       "question_id": "2361441458",
+      "module": 2,
       "question_text": "Prepaid Insurnace is",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -170,10 +193,12 @@
         "C": "Asset",
         "D": "Liability"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Prepaid Insurance is considered an Asset because it represents payment made in advance for insurance services yet to be received; thus it is a future economic benefit."
     },
     {
       "question_id": "2361441459",
+      "module": 2,
       "question_text": "Outstanding Interest is",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -184,10 +209,12 @@
         "C": "Liability",
         "D": "Expenses"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Outstanding Interest represents interest due but not yet paid—hence, a current liability as per accrual accounting and classification of accounts."
     },
     {
       "question_id": "2361441460",
+      "module": 2,
       "question_text": "Ms. Anita, Bhavya, and Chandra started a partnership and share the profit and loss equally. The firm earned Rs. 600 lakhs in profit during first three years of operations and the entire profit was retained in the business. If Ms. Anita wants to retire and the goodwill is valued at 3 times the average profit, how much will Ms. Anita get on retirement?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -198,10 +225,12 @@
         "C": "Rs. 200 lakhs",
         "D": "Rs. 1200 lakhs"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Average profit = 600/3 = 200 lakhs. Goodwill = 3 × 200 = 600 lakhs. Anita's share = 1/3 of Rs. 600 lakhs = Rs. 200 lakhs. The calculation follows the goodwill valuation and partnership retirement settlement concepts."
     },
     {
       "question_id": "2361441461",
+      "module": 3,
       "question_text": "Your company received an award in recognition of your company's contribution on the environment and sustainability (The Green Award). The accountant has not recorded this in the books. The reason is:",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -212,10 +241,12 @@
         "C": "Money Measurement",
         "D": "Consistency"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "The Money Measurement Concept states that only transactions/measurable events in monetary terms are recorded in the books of accounts. Awards, unless there is a clear monetary benefit, are not recorded."
     },
     {
       "question_id": "2361441462",
+      "module": 3,
       "question_text": "Sigma Biotech imported a machine six months back for Rs. 20 cr. Due to Rupee depreciation, the cost of the same machine is currently Rs. 24 cr. Accountant ignored the change in the value of the machine. The accounting concept behind ignoring the change in the value of the asset is:",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -226,10 +257,12 @@
         "C": "Going Concern",
         "D": "Consistency"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "According to Cost Concept (Historical Cost Principle), assets are recorded at their purchase cost and not adjusted for subsequent price changes in the market or currency exchange rates."
     },
     {
       "question_id": "2361441463",
+      "module": 3,
       "question_text": "While accounting raw material and other inventory items, accountant follows 'cost or market price whichever is lower'. The concept behind this accounting is _____",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -240,10 +273,12 @@
         "C": "Conservatism",
         "D": "Consistency"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Conservatism or Prudence Principle states that anticipated losses should be accounted for, but not gains. Therefore, inventory is valued at cost or market price, whichever is lower."
     },
     {
       "question_id": "2361441464",
+      "module": 3,
       "question_text": "The Accountant of Style Garments charges the thread, buttons and hooks as expense on purchase of these items intead of considering this as inventory. The accounting concept behind this treatment is ______.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -254,10 +289,12 @@
         "C": "Going Concern",
         "D": "Consistency"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Materiality concept allows accountants to expense items that are of relatively low value, as tracking them separately as assets does not materially affect financial statements."
     },
     {
       "question_id": "2361441465",
+      "module": 4,
       "question_text": "Bharat Infrastructure was awarded a contract to develop airport which will take 3 years to complete. The total value of the contract is Rs. 2600 cr and estimated expenses is Rs. 2000 cr. The company is expected to incur Rs. 500 cr. in Year 1, Rs.1000 cr. in Year 2 and Rs. 500 cr in Year 3. If the company follows percentage of completion method, how much profit the company will recognise in Year 1?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -268,10 +305,12 @@
         "C": "Rs. 600 cr.",
         "D": "Rs. 150 cr."
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "Percentage of completion method recognizes revenue and profit in proportion to work completed. Yr 1: (Rs. 500 cr. expenses / Rs. 2000 cr. total) × Profit (Rs. 600 cr.) = Rs. 150 cr."
     },
     {
       "question_id": "2361441466",
+      "module": 4,
       "question_text": "Bharat Infrastructure was awarded a contract to develop airport which will take 3 years to complete. The total value of the contract is Rs. 2600 cr and estimated expenses is Rs. 2000 cr. The company is expected to incur Rs. 500 cr. in Year 1, Rs.1000 cr. in Year 2 and Rs. 500 cr in Year 3. If the company follows Completed Contract Method, how much profit the company will recognise in Year 1?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -282,10 +321,12 @@
         "C": "Zero",
         "D": "Rs. 150 cr."
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Under the Completed Contract Method, revenue and profit are recognized only when the contract is completed, not in progress; so zero profit recognized in Year 1."
     },
     {
       "question_id": "2361441467",
+      "module": 4,
       "question_text": "In cost-first-recovery method of revenue recognition, when do you recognize the profit?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -296,10 +337,12 @@
         "C": "In a year when the cumulative collection is equal to total cost of the project.",
         "D": "When the amount is fully collected from the customer"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "In Cost-First-Recovery, profit is recognized when collections from customers equal total cost of the project. After costs are recovered, further collections contribute to profit."
     },
     {
       "question_id": "2361441468",
+      "module": 4,
       "question_text": "In Installment Method of revenue recognition, when do you recognize the profit?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -310,10 +353,12 @@
         "C": "Every year as per the amount spent on the project",
         "D": "When the amount is fully collected from the customer"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Installment Method recognizes profit in proportion to collection from the customer, as and when installments are received."
     },
     {
       "question_id": "2361441469",
+      "module": 4,
       "question_text": "The opening balance in Receivables Account and Provision for Doubtful Debt on 1st April 2021 were Rs. 200 lakhs and Rs. 10 lakhs respectively. During the year, the company decides to write off a customer's due of Rs. 3 lakhs. The impact of this write off entry is:",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -324,10 +369,12 @@
         "C": "Decrease in Receivables; Decrease in Provision for Doubtful Debts",
         "D": "Decrease in Receivables; Decrease in Profit"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "When an amount is written off, Receivables and Provision for Doubtful Debt both decrease. If provision exists, profit is not affected (no new expense)."
     },
     {
       "question_id": "2361441470",
+      "module": 4,
       "question_text": "A company that sells products with 3-year warranty has a balance of Rs. 50 lakhs in provision for Warranty Expenses account. During the year, a service engineer replaced a component that costs Rs. 2 lakhs while servicing a product under warranty. Which are the two accounts affected by this transaction?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -338,10 +385,12 @@
         "C": "Inventory (Component) A/C and Provision for Warrant Expenses A/C",
         "D": "Only Provision for Warranty Expenses A/c"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "The cost of the component is removed from inventory (asset decreases), and provision for warranty expense (liability) is also reduced, because the previously provided liability is now utilized."
     },
     {
       "question_id": "2361441471",
+      "module": 4,
       "question_text": "In revenue recognition, which one of the following methods considers both amount spent on the project and amount collected from the customers to recognize the profit?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -352,10 +401,12 @@
         "C": "Completed Contract Method",
         "D": "Percentage of Completion Method"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Cost-first-recovery Method recognizes profit only after cost is recovered through collections. Both cost incurred and cash collected are considered in determining profit recognition."
     },
     {
       "question_id": "2361441472",
+      "module": 5,
       "question_text": "A company has a beginning inventory of ₹10,000 and purchases goods worth ₹200,000 during the year. If the ending inventory is ₹20,000, what is the value of Cost of Goods Sold (COGS)?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -366,10 +417,12 @@
         "C": "190000",
         "D": "230000"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "COGS = Opening Inventory + Purchases - Closing Inventory = 10,000 + 200,000 – 20,000 = 190,000."
     },
     {
       "question_id": "2361441473",
+      "module": 5,
       "question_text": "A company has an initial inventory of 50 units at Rs.180 each. Throughout the year, they made two purchases: 100 units at Rs.190 each and 50 units at Rs.200 each. The company sold 180 units. What is the value of the ending inventory using the LIFO method?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -380,10 +433,12 @@
         "C": "3200",
         "D": "3600"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "LIFO (Last-In, First-Out): The newest goods (costliest) are sold first, leaving the oldest as ending inventory. 20 units remain (all from initial stock): 20 × Rs. 180 = Rs. 3,600."
     },
     {
       "question_id": "2361441474",
+      "module": 5,
       "question_text": "A company has an initial inventory of 50 units at Rs.180 each. Throughout the year, they made two purchases: 100 units at Rs.190 each and 50 units at Rs.200 each. The company sold 180 units. What is the value of the ending inventory using the FIFO method?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -394,10 +449,12 @@
         "C": "3200",
         "D": "3600"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "FIFO (First-In, First-Out): The oldest inventory is sold first; ending inventory consists of the most recent purchases. 20 units × Rs. 200 = Rs. 4,000."
     },
     {
       "question_id": "2361441475",
+      "module": 5,
       "question_text": "RJ Traders purchased 600 units in two lots as follows: 200 units at Rs.31 and 400 units at Rs.40. If the company sells 550 units, what is the value of cost of sales using the weighted average cost method?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -408,10 +465,12 @@
         "C": "20350",
         "D": "19450"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Weighted average cost = (200×31 + 400×40)/600 = Rs. 37. Mean cost × 550 units = 37×550 = Rs. 20,350."
     },
     {
       "question_id": "2361441476",
+      "module": 5,
       "question_text": "A retail store had an opening stock of Rs. 60 lakhs at cost. During the period, the store procured Rs. 480 lakhs worth of items. The stores on average charge 20% gross margin. If the total sales of the period is Rs. 500 lakhs, find the closing inventory value at cost.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -422,10 +481,12 @@
         "C": "Rs. 60 lakhs",
         "D": "Rs. 40 lakhs"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Cost of goods sold = Sales × (1 – Gross Margin) = 500 × 0.8 = 400 lakhs. Closing inventory = Opening + Purchases – COGS = 60 + 480 – 400 = 140 lakhs."
     },
     {
       "question_id": "2361441477",
+      "module": 5,
       "question_text": "A company values its ending inventory at Rs. 250,000 using FIFO. If the company follows LIFO, the value of the inventory is Rs. 210,000. If the market value of the inventory is Rs. 200,000, what value should the inventory be reported at?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -436,10 +497,12 @@
         "C": "220000",
         "D": "250000"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "As per conservatism, inventory is valued at cost or market value, whichever is lower. Market value (Rs. 200,000) is less than FIFO/LIFO values; thus, report inventory at Rs. 200,000."
     },
     {
       "question_id": "2361441478",
+      "module": 6,
       "question_text": "An asset with a life of 10 years was purchased for Rs. 100 lakhs three years back. If the company follows Straight Line Method of Depreciation, the depreciated value of the asset at the end of 4 years is _____?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -450,10 +513,12 @@
         "C": "Rs. 60 lakhs",
         "D": "Rs. 30 lakhs"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Straight Line Depreciation per year = 100/10 = Rs. 10 lakhs. Depreciation for 4 years = 4 × 10 = Rs. 40 lakhs. WDV = 100 – 40 = Rs. 60 lakhs."
     },
     {
       "question_id": "2361441479",
+      "module": 6,
       "question_text": "An asset with a life of 10 years was purchased for Rs. 100 lakhs three years back. If the company follows Written Down Value Method of Depreciation at the rate of 20%, the depreciated value of the asset at the end of 4 years is _____?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -464,10 +529,12 @@
         "C": "Rs. 40.96 lakhs",
         "D": "Rs. 32.42 lakhs"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "WDV: Y1-100×0.8=80; Y2-80×0.8=64; Y3-64×0.8=51.2; Y4-51.2×0.8=40.96 lakhs."
     },
     {
       "question_id": "2361441480",
+      "module": 6,
       "question_text": "An asset with a life of 10 years was purchased for Rs. 100 lakhs three years back. If the company follows Sum of the Years Digit Method of Depreciation, the depreciated value of the asset at the end of 4 years is _____?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -478,10 +545,12 @@
         "C": "Rs. 38.18 lakhs",
         "D": "Rs. 70 lakhs"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "SYD: Total years digit = 55. Depreciation: Yr1-10/55×100=18.18, Yr2-9/55×100=16.36, Yr3-8/55×100=14.55, Yr4-7/55×100=12.73; Total depn first 4 years=61.82. Value at end =100–61.82=38.18 lakhs."
     },
     {
       "question_id": "2361441481",
+      "module": 6,
       "question_text": "A machine was purchased at a cost of Rs. 100 lakhs and the depreciated value of the asset today is Rs. 30 lakhs. The machiet was sold for Rs. 25 lakhs. The accounting entry in the Accounting Equation is",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -492,10 +561,12 @@
         "C": "Cash +25; Accumulated Depreciation +70; Loss on sale of Machine -5",
         "D": "Cash +25; Machine -100; Loss on sale of Machine -5"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "At time of sale, remove asset at cost (–100), add accumulated depreciation (+70), add cash received (+25). The shortfall (sale value < NBV) is recognized as a loss (–5)."
     },
     {
       "question_id": "2361441482",
+      "module": 6,
       "question_text": "When an old car was exchanged for a new car, the value of the new car is equal to ____",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -506,10 +577,12 @@
         "C": "Fair value of the old car plus cash paid",
         "D": "Value of the new car without exchange"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "The cost of new asset purchased by part-exchanging old asset is equal to the depreciated book value of old asset plus cash paid, per accounting for fixed assets."
     },
     {
       "question_id": "2361441483",
+      "module": 7,
       "question_text": "In Balance Sheet, where do you find Inventory?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -520,10 +593,12 @@
         "C": "Current Liabilities",
         "D": "Non-current Liabilities"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Inventory is part of Current Assets in a balance sheet, as it is expected to be realized, sold, or consumed within one accounting period."
     },
     {
       "question_id": "2361441484",
+      "module": 7,
       "question_text": "Which one of the following is a non-current asset?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -534,10 +609,12 @@
         "C": "Inventory",
         "D": "Cash & Bank"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Intellectual Property Rights are non-current (fixed/intangible) assets, having a useful life extending beyond one year and used in operations, not for sale."
     },
     {
       "question_id": "2361441485",
+      "module": 8,
       "question_text": "Which one of the following causes deferred tax liability?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -548,10 +625,12 @@
         "C": "When a firm defaulted in paying taxes",
         "D": "When the taxable profit is lower than book profit"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "Deferred tax liability arises when taxable profits are lower than book profits due to timing differences (e.g., different depreciation rates in tax & books), resulting in lower current tax but higher tax in future."
     },
     {
       "question_id": "2361441486",
+      "module": 8,
       "question_text": "An increase in capital work-in-progress shows",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -562,10 +641,12 @@
         "C": "An increase in loan for expansion",
         "D": "The firm is creating capacity"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "Capital work-in-progress represents expenditure on fixed assets under construction. An increase shows the company is investing in new capacity (assets being created)."
     },
     {
       "question_id": "2361441487",
+      "module": 8,
       "question_text": "Other Income in the Profit and Loss Statement refers to",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -576,10 +657,12 @@
         "C": "Dividend Income",
         "D": "Profit on sale of assets"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Other Income includes all such items as Interest Income, Dividend Income, and Profit from sale of assets, since these are incidental and not from main business operations."
     },
     {
       "question_id": "2361441488",
+      "module": 8,
       "question_text": "In Cash Flow Statement, where do you consider amount paid to suppliers of goods and services?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -590,10 +673,12 @@
         "C": "Will not appear in the cash flow statement",
         "D": "Cash Flow from Finance Activities"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Cash paid to suppliers is part of Operating Activities, as it relates to the principal revenue-producing activities of the entity."
     },
     {
       "question_id": "2361441489",
+      "module": 8,
       "question_text": "In Cash Flow Statement, where do you consider repayment of loan?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -604,10 +689,12 @@
         "C": "Cash Flow from Operating Activities",
         "D": "Will not appear in the cash flow statement"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Loan repayments are classified under Financing Activities, as loans affect the capital structure of the company."
     },
     {
       "question_id": "2361441490",
+      "module": 8,
       "question_text": "In Cash Flow Statement, where do you consider the amount received on sale of a machine?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -618,10 +705,12 @@
         "C": "Cash Flow from Investing Activities",
         "D": "Cash Flow from Finance Activities"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Sale of fixed assets (like machines) is an Investing Activity as it pertains to purchase/sale of long-term assets in the Cash Flow Statement."
     },
     {
       "question_id": "2361441491",
+      "module": 8,
       "question_text": "A new customer of your company wants to buy material on credit basis. Which of the following ratios will be useful for you to assess whether you will get the dues on time?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -632,10 +721,12 @@
         "C": "Profit Margin",
         "D": "Asset Turnover Ratio"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Collection Days (Receivables Days) tell how quickly a business collects dues from customers. A lower number indicates faster collection and less credit risk."
     },
     {
       "question_id": "2361441492",
+      "module": 8,
       "question_text": "The Total Asset Turnover Ratio and Profit Margiin of a company are 1.20 and 20% respectively. Find the Return on Total Assets.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -646,10 +737,12 @@
         "C": "20%",
         "D": "16.67%"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Return on Total Assets = Asset Turnover × Profit Margin = 1.2 × 20% = 24%."
     },
     {
       "question_id": "2361441493",
+      "module": 8,
       "question_text": "The balance sheet of Infotech Ltd shows receivable value of Rs. 3000 and revenue of the period is Rs. 36500. Find how long the company takes to collect the dues from customers.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -660,10 +753,12 @@
         "C": "60 days",
         "D": "45 days"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Collection Days = (Receivables ÷ Revenue) × 365 = (3000/36500) × 365 = 30 days."
     },
     {
       "question_id": "2361441494",
+      "module": 8,
       "question_text": "Which set of ratios will be useful to assess the contribution of payables in improving the profitability?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -674,10 +769,12 @@
         "C": "Return on Equity and Return on Total Assets",
         "D": "Return on Total Assets and Profit Margin"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Payables leverage reduces capital need and can improve profitability. ROCE and ROTA capture the effect of payables and asset use on returns."
     },
     {
       "question_id": "2361441495",
+      "module": 8,
       "question_text": "A firm reports Return on Capital Employed of 20%. The company has no debt currently. If the company plans to raise a loan at an interest rate of 8% and achieve debt-equity ratio of 0.50, what will be the Return on Equity (Pre-tax)?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -688,10 +785,12 @@
         "C": "24%",
         "D": "36%"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "ROE(pre-tax) = ROCE + [Spread × Debt/Equity] = 20% + (20%-8%)×0.5 = 20% + 6% = 26%."
     },
     {
       "question_id": "2361441496",
+      "module": 8,
       "question_text": "Inventory Days measures _____",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -702,7 +801,8 @@
         "C": "Time rquired to convert the Raw Material to collecting sales value from customers",
         "D": "Time rquired to convert the Raw Material to Finished Goods"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Inventory Days = (Inventory ÷ COGS) × 365, representing the average time taken to convert raw material (inventory) into sales."
     }
   ]
 }

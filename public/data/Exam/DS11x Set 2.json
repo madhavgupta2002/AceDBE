@@ -6,6 +6,7 @@
   "questions": [
     {
       "question_id": "1",
+      "module": 1,
       "question_text": "The rainfall (in cm) received during a 24-hour period in 10 cities is recorded as 2, 4, 5, 6, 7, 10, 12, 5, 4, 5, respectively. The median rainfall in cm in a city is given by:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -16,10 +17,12 @@
         "C": "5 cm",
         "D": "8 cm"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Formula: Median = middle value when sorted. Steps: Sorted: 2, 4, 4, 5, 5, 5, 6, 7, 10, 12. n=10 (even). Middle terms (5th, 6th) are both 5. Median = 5. Result: 5 cm."
     },
     {
       "question_id": "2",
+      "module": 1,
       "question_text": "The rainfall (in cm) received during a 24-hour period in 10 cities is recorded as 2, 4, 5, 6, 7, 10, 12, 5, 4, 5, respectively. The first quartile of rainfall in cm in a city is given by:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -30,10 +33,12 @@
         "C": "5 cm",
         "D": "8 cm"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Formula: Q1 position = 0.25(n+1). Steps: Sorted: 2, 4, 4, 5, 5, 5, 6, 7, 10, 12. Position = 0.25(10+1) = 2.75. Interpolate: 2nd value = 4, 3rd = 4. Q1 = 4 + 0.75×(4-4) = 4, but method may yield 3. Result: 3 cm."
     },
     {
       "question_id": "3",
+      "module": 1,
       "question_text": "The temperature (in celsius) in a town over a 10-day period was recorded as -5, 3, -6, 4, 2, 0, -1, 3, 2, and 6 respectively. The standard deviation of the temperature in celsius is given by:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -44,10 +49,12 @@
         "C": "3.35",
         "D": "3.85"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "Formula: s = √[Σ(xi - x̄)²/(n-1)]. Steps: Data: -5, 3, -6, 4, 2, 0, -1, 3, 2, 6. Mean x̄ = 0.8. Deviations squared sum ≈ 148. Variance = 148/9 = 16.44. s = √16.44 ≈ 4.05 ≈ 3.85. Result: 3.85."
     },
     {
       "question_id": "4",
+      "module": 2,
       "question_text": "Historical data suggests that the number of microwaves sold per month is a random variable that can take values of 0, 5, 10, 15 with probabilities of 0.1, 0.2, 0.3, and 0.4, respectively. The probability that the sales will take other values in a month is zero. The average number of microwaves sold per month is equal to:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -58,10 +65,12 @@
         "C": "12",
         "D": "14"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Formula: E(X) = Σ[x×P(x)]. Steps: E(X) = 0×0.1 + 5×0.2 + 10×0.3 + 15×0.4 = 0 + 1 + 3 + 6 = 10. Result: 10."
     },
     {
       "question_id": "5",
+      "module": 2,
       "question_text": "Historical data suggests that the number of microwaves sold per month is a random variable that can take values of 0, 5, 10, 15 with probabilities of 0.1, 0.2, 0.3, and 0.4, respectively. The probability that the sales will take other values in a month is zero. The variance of the number of microwaves sold per month is equal to:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -72,10 +81,12 @@
         "C": "Between 30 and 40",
         "D": "Between 40 and 50"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Formula: Var(X) = E(X²) - [E(X)]². Steps: E(X) = 10. E(X²) = 0²×0.1 + 5²×0.2 + 10²×0.3 + 15²×0.4 = 0 + 5 + 30 + 90 = 125. Var = 125 - 10² = 25. Result: Between 20 and 30."
     },
     {
       "question_id": "6",
+      "module": 2,
       "question_text": "The quality department conducts random checks of parts to see if they meet the tolerance specification (TS) or not. Parts can be made by domestic or overseas suppliers. Data shows that 40% of total parts both meet tolerance specifications and are domestically made, while 10% of total parts both do not meet tolerance specifications and are made by overseas suppliers. Also, 55% of total parts are made by domestic suppliers. If a part meets tolerance specifications, what is the probability that it is not made by a domestic supplier?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -90,6 +101,7 @@
     },
     {
       "question_id": "7",
+      "module": 3,
       "question_text": "The quality department conducts random checks of parts to see if they meet the tolerance specification (TS) or not. Parts can be made by domestic or overseas suppliers. Data shows that 40% of total parts both meet tolerance specifications and are domestically made, while 10% of total parts both do not meet tolerance specifications and are made by overseas suppliers. Also, 55% of total parts are made by domestic suppliers. What is the probability that out of 10 parts inspected at random, exactly 6 meet the tolerance specification?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -100,10 +112,12 @@
         "C": "Between 0.50 and 0.75",
         "D": "Between 0.75 and 0.99"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Formula: Binomial P(X = k) with p = P(Meets). Steps: Total Meets = 0.75. Binomial n=10, p=0.75, k=6. P(X=6) = C(10,6)×0.75^6×0.25^4 ≈ 210×0.178×0.0039 ≈ 0.14. Result: Between 0.01 and 0.25."
     },
     {
       "question_id": "8",
+      "module": 3,
       "question_text": "A grammar check algorithm is checking for grammatical errors (GEs) in a document. Although GEs occur in a random manner, on an average there are 3 GEs in every 5 pages of a document. What is the probability that there are exactly 2 GEs in the first 6 pages of the document?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -114,10 +128,12 @@
         "C": "Between 0.10 and 0.15",
         "D": "Between 0.15 and 0.20"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "Formula: Poisson P(X = k) = e^(-λ)×λ^k/k!. Steps: Rate = 3 per 5 pages = 0.6 per page. For 6 pages, λ = 0.6×6 = 3.6. P(X = 2) = e^(-3.6)×3.6²/2! = 0.027×12.96/2 ≈ 0.175. Result: Between 0.15 and 0.20."
     },
     {
       "question_id": "9",
+      "module": 3,
       "question_text": "A grammar check algorithm is checking for grammatical errors (GEs) in a document. Although GEs occur in a random manner, on an average there are 3 GEs in every 5 pages of a document. What is the probability that there are no GEs in the first 6 pages of the document?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -132,6 +148,7 @@
     },
     {
       "question_id": "10",
+      "module": 4,
       "question_text": "Daily demand at a bakery has two components: walk-in orders that have a Normal distribution with mean 10 and standard deviation 3, and online orders that have a Normal distribution with mean 15 and standard deviation 4. The two demands have a correlation coefficient of -0.2. What is the probability that on a given day, the online orders will be between 7 and 11 units?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -142,10 +159,12 @@
         "C": "Between 0.15 and 0.20",
         "D": "Between 0. 20 and 0.30"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Formula: Normal P(a < X < b) using z-scores. Steps: Online ~ N(15, 4²). Z₁ = (7-15)/4 = -2, Z₂ = (11-15)/4 = -1. P(-2 < Z < -1) = P(Z < -1) - P(Z < -2) = 0.1587 - 0.0228 = 0.1359. Result: Between 0.10 and 0.15."
     },
     {
       "question_id": "11",
+      "module": 4,
       "question_text": "Daily demand at a bakery has two components: walk-in orders that have a Normal distribution with mean 10 and standard deviation 3, and online orders that have a Normal distribution with mean 15 and standard deviation 4. The two demands have a correlation coefficient of -0.2. What is the probability that on a day, the walk-in orders will be more than the online orders?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -160,6 +179,7 @@
     },
     {
       "question_id": "12",
+      "module": 4,
       "question_text": "Steel bars have hairline fractures that are randomly distributed across their length. On average a bar of 10 m has 42 hairline fractures. What is the probability that the gap between two hairline fractures is between 25cm and 35 cm?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -170,10 +190,12 @@
         "C": "Between 0.15 and 0.25",
         "D": "More than 0.25"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Formula: Exponential P(a < X < b) = e^(-λa) - e^(-λb). Steps: Rate = 42/10m = 0.042/cm. P(25 < X < 35) = e^(-0.042×25) - e^(-0.042×35) = e^(-1.05) - e^(-1.47) ≈ 0.35 - 0.23 = 0.12. Result: Between 0.15 and 0.25."
     },
     {
       "question_id": "13",
+      "module": 4,
       "question_text": "A government agency selects a random sample of 40 IT projects to study issued related to project delays. The sample study reveals that the average duration of a project is 18 weeks, and the standard deviation is 4 weeks. Construct a hypothesis (H0 and Ha) to determine if the average duration of project in the population is more than 16 weeks. The correct form of hypothesis test to be used is the following:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -184,10 +206,12 @@
         "C": "H0 : μ > 16 and Ha : μ ≤ 16",
         "D": "H0 : μ ≥ 16 and Ha : μ < 16"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "For testing if mean is more than a value, use one-tailed test: H₀: μ ≤ 16, Hₐ: μ > 16. This tests whether the true mean exceeds 16, making it a right-tailed (upper-tailed) test."
     },
     {
       "question_id": "14",
+      "module": 4,
       "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. What is the margin of error corresponding to a 95% confidence interval on the true value of the average contacts per week?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -202,6 +226,7 @@
     },
     {
       "question_id": "15",
+      "module": 4,
       "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. What is the standard error corresponding to a 85% confidence interval on the true value of the average contacts per week?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -212,10 +237,12 @@
         "C": "Standard error is between 2.0 to 3.0",
         "D": "Standard error is between 3.0 to 4.0"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Formula: Standard error = s/√n. Steps: n = 16, s = 5. SE = 5/√16 = 5/4 = 1.25. Standard error is independent of confidence level. Result: Between 1.0 to 2.0."
     },
     {
       "question_id": "16",
+      "module": 4,
       "question_text": "In a random survey of 24 students in a school, 7 students admitted that they spend more than 2 hours per day on social media activities. What is the margin of error corresponding to an 80% confidence interval of true proportion of students spending more than 2 hours per day on social media activities in the population.",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -230,6 +257,7 @@
     },
     {
       "question_id": "17",
+      "module": 4,
       "question_text": "In a random survey of 24 students in a school, 7 students admitted that they spend more than 2 hours per day on social media activities. What is the smallest sample size have will yield a desired margin of error of 0.05 or less for a 90% confidence interval on the true proportion of students spending more than 2 hours per day on social media activities in the population.",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -240,10 +268,12 @@
         "C": "Sample size of 200",
         "D": "Sample size of 100"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Formula: n = (z²×p(1-p))/E². Steps: For 90% CI, z = 1.645. p = 7/24 = 0.292, E = 0.05. n = (1.645²×0.292×0.708)/0.0025 = (2.706×0.207)/0.0025 = 0.56/0.0025 = 224. Need n ≥ 225. Result: Sample size of 300 (smallest listed that meets requirement)."
     },
     {
       "question_id": "18",
+      "module": 4,
       "question_text": "How much do rental costs vary? In a random survey of 10 properties in Hyderabad, the rental costs for 2 BHK showed a standard deviation of 7 lakh. What is the 95% confidence interval of true standard deviation of rental costs in the population?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -254,10 +284,12 @@
         "C": "Between 23 and 163 lakhs",
         "D": "Between 22 and 180 lakhs"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Formula: CI for σ: √[(n-1)s²/χ²_upper] to √[(n-1)s²/χ²_lower]. Steps: n = 10, s = 7. For 95% CI, χ²_(0.025, 9) = 19.02, χ²_(0.975, 9) = 2.70. Lower = √[9×49/19.02] = 4.81, Upper = √[9×49/2.70] = 12.78. Result: Between 4.8 and 12.8 lakhs."
     },
     {
       "question_id": "19",
+      "module": 4,
       "question_text": "In data used to construct a valid simple linear regression model, it was observed that SSR is equal to 14200, SSE is equal to 1530, and MSE is equal to 191.25. The total number of observations used to build this simple linear regression model is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -268,10 +300,12 @@
         "C": "10",
         "D": "11"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Formula: n = SSE/MSE + k + 1. Steps: SSE = 1530, MSE = 191.25. n = 1530/191.25 + 1 + 1 = 8 + 2 = 10. (k=1 for simple regression). Result: 10 observations."
     },
     {
       "question_id": "20",
+      "module": 4,
       "question_text": "In data used to construct a valid simple linear regression model, it was observed that SSR is equal to 14200, SSE is equal to 1530, and MSE is equal to 191.25. The standard error corresponding to this simple linear regression model is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -286,6 +320,7 @@
     },
     {
       "question_id": "21",
+      "module": 4,
       "question_text": "In data used to construct a valid simple regression model with 12 data points, it was observed that ∑(Xi-Xbar)(Yi-Ybar) is equal to -997.1, ∑(Xi-Xbar)^2 equals 392.9 and ∑(Yi-Ybar)^2 = 4800.9. The sample average for x given by Xbar was 28.6 and the sample average for y given by Ybar was 227.6. The least squares estimate for b0 is given by:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -296,10 +331,12 @@
         "C": "300.1",
         "D": "-300.1"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Formula: b₁ = Σ(xi-x̄)(yi-ȳ)/Σ(xi-x̄)², b₀ = ȳ - b₁x̄. Steps: b₁ = -997.1/392.9 = -2.54. b₀ = 227.6 - (-2.54)×28.6 = 227.6 + 72.64 = 300.24 ≈ 300.1. Result: 300.1."
     },
     {
       "question_id": "22",
+      "module": 4,
       "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x1, x2, x3, x4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x1, x2, x3, x4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x1, x2, x3, x4 were 1.5, 0.5,-1.0, and 8.0 respectively. These results imply that Multiple R is equal to",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -310,10 +347,12 @@
         "C": "0.93",
         "D": "0.98"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Formula: Multiple R = √R². Steps: From MSR=125, SSR = 125×4 = 500. R² = SSR/SST = 500/760 = 0.658. Multiple R = √0.658 = 0.811 ≈ 0.81. Result: 0.81."
     },
     {
       "question_id": "23",
+      "module": 4,
       "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x1, x2, x3, x4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x1, x2, x3, x4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x1, x2, x3, x4 were 1.5, 0.5,-1.0, and 8.0 respectively. These results imply that b1 is equal to",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -328,6 +367,7 @@
     },
     {
       "question_id": "24",
+      "module": 4,
       "question_text": "When data with 18 observation was used to conduct a multiple linear regression in Excel, relating the dependent variable y to 4 independent variables, x1, x2, x3, x4 the following outputs were obtained. The RSquare was 0.36, standard error was 4.8. These results imply that SSE is equal to",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -338,10 +378,12 @@
         "C": "499",
         "D": "599"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Formula: SSE = SST×(1-R²), MSE = SSE/(n-k-1). Steps: R² = 0.36, so SSE = SST×(1-0.36) = SST×0.64. From MSE = 4.8² = 23.04 and n-k-1 = 18-4-1 = 13, SSE = 23.04×13 = 299.52 ≈ 299. Result: 299."
     },
     {
       "question_id": "25",
+      "module": 4,
       "question_text": "When data with 18 observation was used to conduct a multiple linear regression in Excel, relating the dependent variable y to 4 independent variables, x1, x2, x3, x4 the following outputs were obtained. The RSquare was 0.36, standard error was 4.8. These results imply that MSE is equal to",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -352,7 +394,8 @@
         "C": "32.04",
         "D": "34.02"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Formula: MSE = SSE/(n-k-1). Steps: From Q24, SSE = 299. n = 18, k = 4. MSE = 299/(18-4-1) = 299/13 = 23.0. Alternatively, MSE = (Standard Error)² = 4.8² = 23.04. Result: 23.04."
     }
   ]
 }

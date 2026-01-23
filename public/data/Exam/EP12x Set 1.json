@@ -6,6 +6,7 @@
   "questions": [
     {
       "question_id": "236144727",
+      "module": 1,
       "question_text": "Who coined the term “entrepreneurship” in the 1700s?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -16,10 +17,12 @@
         "C": "Jean-Baptiste Say",
         "D": "Joseph Schumpeter"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Richard Cantillon (1700s) coined the term 'entrepreneurship' and defined entrepreneurs as individuals willing to take a risk. This was one of the earliest formal definitions of entrepreneurship, establishing the foundation for later theories."
     },
     {
       "question_id": "236144728",
+      "module": 1,
       "question_text": "What is “creative destruction,” as described by Joseph Schumpeter?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -30,10 +33,12 @@
         "C": "Innovating while preserving traditional business methods",
         "D": "Risk-free entrepreneurship"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Creative destruction, as described by Joseph Schumpeter, is the process of continuous innovation replacing old businesses. New innovations and technologies replace older ones, leading to disruption of existing industries and creation of new ones, exemplified by companies like Nokia, Kodak, and Amazon."
     },
     {
       "question_id": "236144729",
+      "module": 1,
       "question_text": "What was a major historical risk faced by entrepreneurs during the spice trade era?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -44,10 +49,12 @@
         "C": "Lack of skilled labor",
         "D": "High transportation taxes"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "A major historical risk faced by entrepreneurs during the spice trade era was uncertain market prices upon arrival. India was the heart of the Spice Route, and spices were luxury items for European nobility, but traders faced price uncertainty when reaching their destinations."
     },
     {
       "question_id": "236144730",
+      "module": 1,
       "question_text": "Entrepreneurship is a modern concept that emerged in the 20th century.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -56,10 +63,12 @@
         "A": "True",
         "B": "False"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Entrepreneurship is NOT a modern concept that emerged in the 20th century. It is an innate human tendency for commerce, existing even before formal language. Entrepreneurship existed in ancient times, as evidenced by silent trade and early economic activities."
     },
     {
       "question_id": "236144731",
+      "module": 1,
       "question_text": "Entrepreneurs are defined solely by their ability to innovate.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -72,6 +81,7 @@
     },
     {
       "question_id": "236144732",
+      "module": 1,
       "question_text": "Decision-making under uncertainty is a defining characteristic of entrepreneurship.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -80,10 +90,12 @@
         "A": "True",
         "B": "False"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Decision-making under uncertainty is a defining characteristic of entrepreneurship. Modern view defines entrepreneurship by uncertainty - if a person makes judgment calls about the future without knowing the outcome, they are an entrepreneur, regardless of the level of innovation."
     },
     {
       "question_id": "236144733",
+      "module": 2,
       "question_text": "Necessity-based entrepreneurs are often constrained by resources. Which of the following strategies would best improve their chance of long-term success?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -98,6 +110,7 @@
     },
     {
       "question_id": "236144734",
+      "module": 2,
       "question_text": "In what situation is an opportunity-based entrepreneur least likely to succeed?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -108,10 +121,12 @@
         "C": "Launching a business with limited market research but strong personal networks",
         "D": "Expanding into a saturated market with no significant differentiation"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "An opportunity-based entrepreneur is least likely to succeed when expanding into a saturated market with no significant differentiation. Success requires innovation, disruption, or identifying unmet needs, not just entering crowded markets without unique value propositions."
     },
     {
       "question_id": "236144735",
+      "module": 2,
       "question_text": "How does the motivation behind opportunity-based entrepreneurship differ most significantly from necessity-based entrepreneurship?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -122,10 +137,12 @@
         "C": "Necessity-based entrepreneurs are focused on scaling rapidly.",
         "D": "Opportunity-based entrepreneurs are driven by the desire to exploit identified gaps."
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "The motivation behind opportunity-based entrepreneurship differs most significantly from necessity-based in that opportunity-based entrepreneurs are driven by the desire to exploit identified gaps. Necessity-based is driven by survival needs, while opportunity-based is driven by choice and market opportunities."
     },
     {
       "question_id": "236144736",
+      "module": 2,
       "question_text": "Which of the following best explains why necessity-based entrepreneurship is more prevalent in low-income economies?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -136,10 +153,12 @@
         "C": "High unemployment drives individuals to create survival-based ventures.",
         "D": "A lack of formal education creates opportunities in informal markets."
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Necessity-based entrepreneurship is more prevalent in low-income economies because high unemployment drives individuals to create survival-based ventures. The 'push' factor - lack of job prospects or forced circumstances - compels people to start businesses out of necessity rather than choice."
     },
     {
       "question_id": "236144737",
+      "module": 2,
       "question_text": "Opportunity-based entrepreneurs always require substantial financial investment to begin.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -148,10 +167,12 @@
         "A": "False",
         "B": "True"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Opportunity-based entrepreneurs do NOT always require substantial financial investment to begin. Entrepreneurship is defined as 'pursuing opportunities without having all the resources available.' Resourcefulness and bootstrapping are key strategies, and too many resources can be counterproductive."
     },
     {
       "question_id": "236144738",
+      "module": 2,
       "question_text": "A street vendor starts selling local snacks to earn a living. Over time, they introduce new flavors and packaging, attracting customers from neighboring towns. This shift demonstrates:",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -162,10 +183,12 @@
         "C": "Necessity-based entrepreneurship evolving into opportunity-based entrepreneurship",
         "D": "Social entrepreneurship with innovative strategies"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "A street vendor starting with local snacks and then introducing new flavors and packaging, attracting customers from neighboring towns, demonstrates necessity-based entrepreneurship evolving into opportunity-based entrepreneurship. The venture transitions from survival-focused to opportunity-driven."
     },
     {
       "question_id": "236144739",
+      "module": 2,
       "question_text": "A rural entrepreneur producing handmade baskets wants to expand their business but lacks access to large urban markets. Which strategy would best align with opportunity-based entrepreneurship?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -176,10 +199,12 @@
         "C": "Hiring local workers to increase production without changing the market focus",
         "D": "Waiting for demand in their local market to grow organically"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "For a rural entrepreneur producing handmade baskets wanting to expand, investing in an e-commerce platform to reach urban buyers directly best aligns with opportunity-based entrepreneurship. This demonstrates innovation, market expansion, and leveraging technology to create new opportunities."
     },
     {
       "question_id": "236144740",
+      "module": 2,
       "question_text": "Why might formalization be a barrier for necessity-based entrepreneurs?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -194,6 +219,7 @@
     },
     {
       "question_id": "236144741",
+      "module": 2,
       "question_text": "An entrepreneur leaves a high-paying corporate job to start a technology platform for small businesses. The venture fails due to market saturation and low adoption. This failure is likely due to:",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -204,10 +230,12 @@
         "C": "High competition from informal markets",
         "D": "Poor product quality"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "An entrepreneur leaving a high-paying corporate job to start a technology platform that fails due to market saturation and low adoption likely failed due to inadequate market research. This highlights the importance of validating market demand and understanding competition before launching."
     },
     {
       "question_id": "236144742",
+      "module": 2,
       "question_text": "A necessity-based entrepreneur starts a roadside food stall. To increase revenue, they are considering offering delivery services. What is the most critical factor to evaluate before implementation?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -222,6 +250,7 @@
     },
     {
       "question_id": "236144743",
+      "module": 2,
       "question_text": "Opportunity-based entrepreneurs often seek to ________ markets by introducing innovative solutions or identifying unmet needs.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -232,10 +261,12 @@
         "C": "Avoid",
         "D": "Replicate"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Opportunity-based entrepreneurs often seek to disrupt markets by introducing innovative solutions or identifying unmet needs. Disruption is associated with opportunity-based entrepreneurship, aiming to change how industries operate through innovation and market transformation."
     },
     {
       "question_id": "236144744",
+      "module": 2,
       "question_text": "Necessity-based entrepreneurship is typically driven by the absence of ________, compelling individuals to create their own income opportunities.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -246,10 +277,12 @@
         "C": "Market gaps",
         "D": "Innovation"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Necessity-based entrepreneurship is typically driven by the absence of employment options, compelling individuals to create their own income opportunities. The 'push' factor - lack of job prospects, job loss, or financial hardships - forces people into entrepreneurship for survival."
     },
     {
       "question_id": "236144745",
+      "module": 2,
       "question_text": "Unlike necessity-based entrepreneurs, opportunity-based entrepreneurs tend to focus on ________ as a key strategy for growth.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -264,6 +297,7 @@
     },
     {
       "question_id": "236144746",
+      "module": 2,
       "question_text": "In many low-income economies, necessity-based entrepreneurship thrives due to a lack of access to ________ and other formal employment opportunities.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -274,10 +308,12 @@
         "C": "Informal markets",
         "D": "Technical Education"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "In many low-income economies, necessity-based entrepreneurship thrives due to a lack of access to stable jobs and other formal employment opportunities. High unemployment and limited career prospects push individuals into creating survival-based ventures in informal sectors."
     },
     {
       "question_id": "236144747",
+      "module": 3,
       "question_text": "What is the key distinction between social entrepreneurship and traditional entrepreneurship?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -292,6 +328,7 @@
     },
     {
       "question_id": "236144748",
+      "module": 3,
       "question_text": "Which resource strategy did the founders of Mango Technology employ to launch their business?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -302,10 +339,12 @@
         "C": "Bootstrapping using personal savings exclusively",
         "D": "Securing high-interest bank loans"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "The founders of Mango Technology employed equity-sharing to acquire essential resources. They gave 2% equity for office space and engineers, demonstrating bootstrapping by leveraging networks and sharing equity - a resourceful strategy to overcome limited capital."
     },
     {
       "question_id": "236144749",
+      "module": 3,
       "question_text": "What makes cooperatives like Amul a successful social entrepreneurship model?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -320,6 +359,7 @@
     },
     {
       "question_id": "236144750",
+      "module": 3,
       "question_text": "Which of the following is an example of bootstrapping?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -330,10 +370,12 @@
         "C": "Using slack resources like free or discounted office space",
         "D": "Partnering with venture capitalists"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "An example of bootstrapping is using slack resources like free or discounted office space. Bootstrapping involves leveraging existing personal resources and customer money, utilizing unused assets (like a friend's empty garage) to minimize initial costs and grow without external funding."
     },
     {
       "question_id": "236144751",
+      "module": 3,
       "question_text": "Social entrepreneurship always operates as a nonprofit entity.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -342,10 +384,12 @@
         "A": "False",
         "B": "True"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Social entrepreneurship does NOT always operate as a nonprofit entity. Social ventures can be for-profit (like Rescript and Gud Gum) and do not always have to rely on grants. They balance profitability with social or environmental goals, proving that social impact and profitability can coexist."
     },
     {
       "question_id": "236144752",
+      "module": 3,
       "question_text": "A startup founder offers equity to a chef to gain expertise in the food industry for their meat distribution venture. What resource strategy does this exemplify?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -356,10 +400,12 @@
         "C": "Equity-based resource acquisition",
         "D": "Bootstrapping"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "A startup founder offering equity to a chef to gain expertise exemplifies equity-based resource acquisition. This strategy trades a percentage of ownership for resources (talent, expertise, credibility), as demonstrated by Licious giving equity to a five-star chef to signal value to investors."
     },
     {
       "question_id": "236144753",
+      "module": 3,
       "question_text": "A social enterprise providing affordable healthcare in rural areas is struggling with high operational costs. What is the most sustainable solution?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -370,10 +416,12 @@
         "C": "Charge higher fees to wealthy customers to subsidize operations for the underserved",
         "D": "Reduce the range of services offered"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "For a social enterprise struggling with high operational costs, the most sustainable solution is charging higher fees to wealthy customers to subsidize operations for the underserved. This is the differential pricing model (cross-subsidization) used by Shankara Nethralaya, ensuring equitable access to services."
     },
     {
       "question_id": "236144754",
+      "module": 3,
       "question_text": "An entrepreneur starts a solar-powered flour mill in a remote village. What is the primary impact of this social venture?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -384,10 +432,12 @@
         "C": "Increased electricity consumption",
         "D": "Improved community access to essential services"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "A solar-powered flour mill in a remote village primarily impacts improved community access to essential services. This exemplifies social entrepreneurship's focus on solving social problems sustainably, providing essential services to underserved communities while creating social impact."
     },
     {
       "question_id": "236144755",
+      "module": 3,
       "question_text": "A cooperative in a rural community produces handcrafted toys but struggles to compete with imported products. What strategy is most aligned with sustainable growth?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -398,10 +448,12 @@
         "C": "Depend entirely on government subsidies",
         "D": "Reduce costs by using cheaper materials"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "For a cooperative struggling to compete with imported products, focusing on quality and niche markets like environmentally conscious buyers is most aligned with sustainable growth. This strategy leverages unique value propositions and aligns with social entrepreneurship principles of quality and sustainability."
     },
     {
       "question_id": "236144756",
+      "module": 3,
       "question_text": "Social enterprises often focus on achieving ________ through innovative and sustainable solutions.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -416,6 +468,7 @@
     },
     {
       "question_id": "236144757",
+      "module": 3,
       "question_text": "The success of cooperatives like Amul lies in their ability to ________ profits to benefit members directly.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -426,10 +479,12 @@
         "C": "Minimize",
         "D": "Distribute"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "The success of cooperatives like Amul lies in their ability to distribute profits to benefit members directly. Founded by Dr. Varghese Kurien, Amul's model ensures that profits return to farmers every 15 days, with ownership spread across all members rather than being hoarded by external shareholders."
     },
     {
       "question_id": "236144758",
+      "module": 3,
       "question_text": "Bootstrapping involves leveraging ________ to minimize initial costs.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -440,10 +495,12 @@
         "C": "Equity funding",
         "D": "Long-term debt"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Bootstrapping involves leveraging slack resources to minimize initial costs. Slack resources are unused assets (like a friend's empty garage or an old motorcycle) that can be utilized creatively. Bootstrapping uses existing personal resources and customer money to grow without external funding."
     },
     {
       "question_id": "236144759",
+      "module": 3,
       "question_text": "A rural social enterprise lacks the financial resources to expand operations. Which approach is the most sustainable?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -454,10 +511,12 @@
         "C": "Partnering with local stakeholders for shared resource access",
         "D": "Apply for targeted grants from impact investors"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "For a rural social enterprise lacking financial resources, applying for targeted grants from impact investors is the most sustainable approach. Grants are 'free' money from government or CSR funds that don't require giving up equity or repayment, making them ideal for social ventures."
     },
     {
       "question_id": "236144760",
+      "module": 3,
       "question_text": "A startup uses bamboo-based paper to promote sustainability. What would help scale their operations while maintaining impact?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -472,6 +531,7 @@
     },
     {
       "question_id": "236144761",
+      "module": 4,
       "question_text": "What is a defining characteristic of deliberate entrepreneurship?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -482,10 +542,12 @@
         "C": "Creating ventures without a clear plan",
         "D": "Resolving personal challenges without market validation"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "A defining characteristic of deliberate entrepreneurship is identifying and systematically pursuing an opportunity. Deliberate opportunity-based entrepreneurs actively seek out market gaps and intentionally leave stable careers to pursue them, driven by focused thinking about a specific problem."
     },
     {
       "question_id": "236144762",
+      "module": 4,
       "question_text": "Which of the following best describes accidental entrepreneurship?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -500,6 +562,7 @@
     },
     {
       "question_id": "236144763",
+      "module": 4,
       "question_text": "What was the primary reason the founder of Red Bus became an entrepreneur?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -510,10 +573,12 @@
         "C": "A planned venture idea from the beginning",
         "D": "A career shift into the technology sector"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "The primary reason the founder of Red Bus became an entrepreneur was an inefficient bus ticketing system observed firsthand. Phanindra Sama (Fani) saw buses going empty while travel agents claimed no tickets were available, leading to an accidental opportunity-driven venture."
     },
     {
       "question_id": "236144764",
+      "module": 4,
       "question_text": "Which of the following is an example of “scratch your own itch” entrepreneurship?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -524,10 +589,12 @@
         "C": "Establishing a business to pursue untapped urban markets",
         "D": "Founding Flipkart to revolutionize e-commerce"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "An example of 'scratch your own itch' entrepreneurship is creating child-safe foods to solve personal parenting challenges. Example: Mansi (Truvy) created a sauces company because she couldn't find processed food safe for her 4-5 year old child - solving a personal problem that applies to others."
     },
     {
       "question_id": "236144765",
+      "module": 4,
       "question_text": "Entrepreneurship can only thrive when external resources are abundant.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -536,10 +603,12 @@
         "A": "False",
         "B": "True"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Entrepreneurship can thrive even when external resources are NOT abundant. Entrepreneurship is about pursuing opportunities despite limited resources. The philosophy is that too much money can lead to poor decisions, while a resource crunch forces creativity - 'you are more likely to die of indigestion than of hunger.'"
     },
     {
       "question_id": "236144766",
+      "module": 4,
       "question_text": "A young mother realizes the lack of child-friendly processed foods in the market and starts a food company to address this gap. What entrepreneurial style does this represent?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -550,10 +619,12 @@
         "C": "Scratch-your-own-itch entrepreneurship",
         "D": "Accidental entrepreneurship"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "A young mother realizing the lack of child-friendly processed foods and starting a food company represents 'scratch-your-own-itch' entrepreneurship. This approach involves solving a personal problem (like Mansi/Truvy) that might also apply to others, starting from personal experience and expanding to market opportunities."
     },
     {
       "question_id": "236144767",
+      "module": 4,
       "question_text": "An entrepreneur loses their job and uses their engineering skills to invent a new product. What type of entrepreneurship does this exemplify?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -564,10 +635,12 @@
         "C": "Opportunity-based deliberate entrepreneurship",
         "D": "Necessity-based accidental entrepreneurship"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "An entrepreneur losing their job and using engineering skills to invent a new product exemplifies necessity-based accidental entrepreneurship. This combines the 'push' factor of job loss (necessity) with an unplanned response to circumstances (accidental), like the Instant Pot inventor who lost his job and needed to solve a personal cooking problem."
     },
     {
       "question_id": "236144768",
+      "module": 4,
       "question_text": "A cooperative bakery chooses not to expand beyond its local area despite strong demand. What is the most likely reason?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -578,10 +651,12 @@
         "C": "Inability to compete in a larger market",
         "D": "Scarcity of financial resources"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "A cooperative bakery choosing not to expand beyond its local area despite strong demand most likely does so to maintain operational simplicity and local focus. The module suggests entrepreneurs can choose not to scale, focusing on a niche or local market to maintain quality and customer connection."
     },
     {
       "question_id": "236144769",
+      "module": 4,
       "question_text": "A startup founder develops an app to solve inefficiencies in a specific industry after experiencing the problem firsthand. Which type of entrepreneurship is this?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -596,6 +671,7 @@
     },
     {
       "question_id": "236144770",
+      "module": 4,
       "question_text": "Deliberate entrepreneurship is often characterized by ________ planning and market research.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -606,10 +682,12 @@
         "C": "Accidental",
         "D": "Minimal"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Deliberate entrepreneurship is often characterized by strategic planning and market research. Deliberate opportunity-based entrepreneurs actively seek out market gaps and intentionally leave stable careers, driven by focused thinking and systematic pursuit of identified opportunities."
     },
     {
       "question_id": "236144771",
+      "module": 4,
       "question_text": "Accidental entrepreneurship often arises from ________ events or circumstances.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -620,10 +698,12 @@
         "C": "Predictable",
         "D": "Market-driven"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Accidental entrepreneurship often arises from unplanned events or circumstances. It's a response to an external stimulus without a prior plan to become an entrepreneur, likened to 'slipping off a cliff' rather than jumping intentionally, like RedBus or Instant Pot."
     },
     {
       "question_id": "236144772",
+      "module": 4,
       "question_text": "“Scratch your own itch” entrepreneurship involves solving ________ problems first, which can lead to broader market opportunities.",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -638,6 +718,7 @@
     },
     {
       "question_id": "236144773",
+      "module": 4,
       "question_text": "A social entrepreneur is torn between seeking external funding or bootstrapping their venture. What factors should they prioritize to make this decision?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -648,10 +729,12 @@
         "C": "Retaining control and operational flexibility and Speed of scaling and access to markets",
         "D": "Building a long-term social impact strategy"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "A social entrepreneur deciding between external funding or bootstrapping should prioritize both retaining control and operational flexibility AND speed of scaling and access to markets. Bootstrapping offers control but limits growth speed, while external funding enables scaling but reduces control - both factors matter for social impact."
     },
     {
       "question_id": "236144774",
+      "module": 4,
       "question_text": "A 45-year-old engineer decides to start an entrepreneurial venture after 20 years of corporate work. What advantages might this entrepreneur have compared to younger founders?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -666,6 +749,7 @@
     },
     {
       "question_id": "236144775",
+      "module": 4,
       "question_text": "An entrepreneur pursuing the lean startup method develops a hypothesis for their product. What is the first step they should take?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -676,10 +760,12 @@
         "C": "Refine the hypothesis internally",
         "D": "Build a prototype and launch it"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "An entrepreneur pursuing the lean startup method should first validate the hypothesis with potential customers. The Lean Startup Method involves an iterative process: start with a hypothesis, talk to customers, validate/change the hypothesis. This prevents 'jumping into the water' without a plan."
     },
     {
       "question_id": "236144776",
+      "module": 4,
       "question_text": "An entrepreneurial team starts a project in their spare time while retaining their full-time jobs. Which startup strategy does this exemplify?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
@@ -690,7 +776,8 @@
         "C": "Moonlighting",
         "D": "Crowdfunding"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "An entrepreneurial team starting a project in their spare time while retaining full-time jobs exemplifies moonlighting. Example: Apple started as a moonlighting project while Steve Wozniak was at HP. Entrepreneurs must check employment contracts regarding Intellectual Property (IP) when moonlighting."
     }
   ]
 }
