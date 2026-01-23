@@ -180,7 +180,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
             <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1">
               <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-indigo-400 shrink-0" />
               <div className="min-w-0">
-                <h1 className="text-base sm:text-xl lg:text-2xl font-bold text-white truncate">
+                <h1 className="text-base sm:text-xl lg:text-2xl font-bold text-white leading-tight">
                   {subject.name}
                 </h1>
                 <p className="text-xs sm:text-sm text-gray-400">Notes</p>
