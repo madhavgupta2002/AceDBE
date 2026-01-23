@@ -5,8 +5,8 @@ import React from 'react';
 interface AnswerStatusProps {
   totalQuestions: number;
   currentQuestionIndex: number;
-  answeredQuestions: (string | null)[];
-  correctAnswers: string[];
+  answeredQuestions: (string[] | null)[];
+  correctAnswers: string[][];
   onQuestionSelect: (index: number) => void;
 }
 
@@ -18,10 +18,17 @@ const AnswerStatus: React.FC<AnswerStatusProps> = ({
   onQuestionSelect,
 }) => {
   const getStatusColor = (index: number) => {
-    if (answeredQuestions[index] === null) {
+    const userAnswer = answeredQuestions[index];
+    if (userAnswer === null) {
       return 'bg-gray-700 text-gray-300 border border-gray-600';
     }
-    if (answeredQuestions[index] === correctAnswers[index]) {
+
+    // Check if arrays are equal
+    const correctAnswer = correctAnswers[index];
+    const isCorrect = userAnswer.length === correctAnswer.length &&
+      userAnswer.every(ans => correctAnswer.includes(ans));
+
+    if (isCorrect) {
       return 'bg-green-700 text-white border border-green-600';
     }
     return 'bg-red-700 text-white border border-red-600';
@@ -38,11 +45,10 @@ const AnswerStatus: React.FC<AnswerStatusProps> = ({
             key={index}
             className={`w-10 h-10 flex items-center justify-center font-semibold ${getStatusColor(
               index
-            )} ${
-              index === currentQuestionIndex
+            )} ${index === currentQuestionIndex
                 ? 'ring-2 ring-indigo-500'
                 : ''
-            }`}
+              }`}
             onClick={() => onQuestionSelect(index)}
           >
             {index + 1}

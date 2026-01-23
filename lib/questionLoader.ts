@@ -2,11 +2,17 @@ import { QuestionFile, IIMBQuestion, Question } from './types';
 
 // Convert IIMB question format to internal format
 export function convertToInternalFormat(iimbQuestion: IIMBQuestion, source?: string): Question {
+  // Parse comma-separated correct answers (e.g., "A, B, C" -> ["A", "B", "C"])
+  const correctAnswers = iimbQuestion.correct_option_label
+    .split(',')
+    .map(ans => ans.trim())
+    .filter(ans => ans.length > 0);
+
   return {
     id: iimbQuestion.question_id,
     text: iimbQuestion.question_text,
     options: iimbQuestion.options,
-    correctAnswer: iimbQuestion.correct_option_label,
+    correctAnswer: correctAnswers,
     module: iimbQuestion.module,
     source: source,
     explanation: iimbQuestion.explanation,
@@ -91,7 +97,7 @@ export async function loadAllQuestionsForSubject(
   const allQuestions: Question[] = [];
 
   for (const bank of banks) {
-    const questions = await loadQuestions(bankType, subjectCode, bank);
+    const questions = await loadQuestions(bankType, subjectCode, bank.bankName);
     allQuestions.push(...questions);
   }
 
@@ -120,7 +126,7 @@ export async function getSetsWithModules(
 
     for (const bank of banks) {
       const questionFile = await loadQuestionFile(bankType, subjectCode, bank.bankName);
-      
+
       if (questionFile && questionFile.questions) {
         // Extract unique modules from questions
         const modules = Array.from(

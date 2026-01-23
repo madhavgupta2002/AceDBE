@@ -2,12 +2,12 @@
 
 import React from 'react';
 import { Question } from '@/lib/types';
-import { CheckCircle, XCircle } from 'lucide-react';
+import { CheckCircle, XCircle, Check } from 'lucide-react';
 
 interface QuizQuestionProps {
   question: Question;
-  onAnswer: (answer: string) => void;
-  selectedAnswer: string | null;
+  onAnswer: (answer: string[]) => void;
+  selectedAnswer: string[] | null;
   showResult: boolean;
 }
 
@@ -17,19 +17,47 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   selectedAnswer,
   showResult,
 }) => {
+  const isMultipleAnswer = question.correctAnswer.length > 1;
+
+  const handleOptionClick = (option: string) => {
+    if (showResult) return;
+
+    if (isMultipleAnswer) {
+      // For multiple answer questions, toggle selection
+      const currentSelections = selectedAnswer || [];
+      if (currentSelections.includes(option)) {
+        onAnswer(currentSelections.filter(opt => opt !== option));
+      } else {
+        onAnswer([...currentSelections, option]);
+      }
+    } else {
+      // For single answer questions, select directly
+      onAnswer([option]);
+    }
+  };
+
+  const isSelected = (option: string) => {
+    return selectedAnswer?.includes(option) || false;
+  };
+
   const getButtonClass = (option: string) => {
     let baseClass =
       'w-full p-4 font-semibold text-left transition duration-200 border ';
+
     if (!showResult) {
+      if (isSelected(option)) {
+        return baseClass + 'bg-indigo-700 text-white border-indigo-600';
+      }
       return (
         baseClass +
         'bg-gray-800 text-gray-100 hover:bg-gray-700 border-gray-700'
       );
     }
-    if (option === question.correctAnswer) {
+
+    if (question.correctAnswer.includes(option)) {
       return baseClass + 'bg-green-800 text-white border-green-700';
     }
-    if (option === selectedAnswer && option !== question.correctAnswer) {
+    if (isSelected(option) && !question.correctAnswer.includes(option)) {
       return baseClass + 'bg-red-800 text-white border-red-700';
     }
     return baseClass + 'bg-gray-700 text-gray-400 border-gray-600';
@@ -42,6 +70,11 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   return (
     <div className="w-full max-w-3xl mx-auto">
       <div className="flex flex-wrap gap-2 mb-4">
+        {isMultipleAnswer && (
+          <span className="px-3 py-1.5 bg-amber-900/50 text-amber-300 border border-amber-800 text-xs font-semibold rounded">
+            Multiple Correct
+          </span>
+        )}
         {question.module && (
           <span className="px-3 py-1.5 bg-indigo-900/50 text-indigo-300 border border-indigo-800 text-xs font-semibold rounded">
             Module {question.module}
@@ -60,30 +93,38 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
         {Object.entries(question.options).map(([key, value]) => (
           <button
             key={key}
-            onClick={() => !showResult && onAnswer(key)}
+            onClick={() => handleOptionClick(key)}
             className={getButtonClass(key)}
             disabled={showResult}
           >
-            <span className="flex items-center">
-              <span className="w-8 h-8 bg-gray-700 flex items-center justify-center mr-3 text-gray-200">
-                {key}
+            <span className="flex items-center justify-between">
+              <span className="flex items-center flex-1">
+                <span className={`w-8 h-8 flex items-center justify-center mr-3 ${isSelected(key) && !showResult
+                    ? 'bg-indigo-900 text-white'
+                    : 'bg-gray-700 text-gray-200'
+                  }`}>
+                  {isMultipleAnswer && isSelected(key) && !showResult ? (
+                    <Check size={16} />
+                  ) : (
+                    key
+                  )}
+                </span>
+                <span className="whitespace-pre-line">{formatText(value)}</span>
               </span>
-              <span className="whitespace-pre-line">{formatText(value)}</span>
-            </span>
-            {showResult && key === question.correctAnswer && (
-              <CheckCircle className="inline-block ml-2 text-green-400" size={24} />
-            )}
-            {showResult &&
-              key === selectedAnswer &&
-              key !== question.correctAnswer && (
-                <XCircle className="inline-block ml-2 text-red-400" size={24} />
+              {showResult && question.correctAnswer.includes(key) && (
+                <CheckCircle className="inline-block ml-2 text-green-400 flex-shrink-0" size={24} />
               )}
+              {showResult &&
+                isSelected(key) &&
+                !question.correctAnswer.includes(key) && (
+                  <XCircle className="inline-block ml-2 text-red-400 flex-shrink-0" size={24} />
+                )}
+            </span>
           </button>
         ))}
       </div>
       {showResult && selectedAnswer && question.explanation && (
         <div className="mt-6 p-4 bg-blue-900/30 border border-blue-700 rounded-lg">
-          {/* <h3 className="text-lg font-semibold text-blue-300 mb-2">Explanation</h3> */}
           <p className="text-gray-200 whitespace-pre-line">{formatText(question.explanation)}</p>
         </div>
       )}
