@@ -1,0 +1,580 @@
+{
+  "exam_metadata": {
+    "subject_name": "Business Statistics",
+    "exam_date": "Extra Questions"
+  },
+  "questions": [
+    {
+      "question_id": "1",
+      "module": 1,
+      "question_text": "What is the primary purpose of using numerical summaries in descriptive statistics?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "To collect more data points for analysis.",
+        "B": "To provide a concise overview of the data's central tendency, spread, and shape.",
+        "C": "To visualize data through charts and graphs.",
+        "D": "To predict future data values."
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "2",
+      "module": 1,
+      "question_text": "Which of the following is an example of data measured on an ordinal scale?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The time of day: 2 AM, 4 AM, 6 AM",
+        "B": "Temperature measured in Celsius: 10°C, 30°C",
+        "C": "Satisfaction ratings: Extremely Satisfied, Satisfied, Neutral, Dissatisfied, Extremely Dissatisfied",
+        "D": "Geographic location: Northeast, Southeast, Northwest"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "question_id": "3",
+      "module": 1,
+      "question_text": "In the given dataset, which of the following variables is considered qualitative in nature?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Age",
+        "B": "Salary",
+        "C": "Gender",
+        "D": "Salary in lakhs"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "question_id": "4",
+      "module": 1,
+      "question_text": "Identify whether the following scenario describes cross-sectional data or time series data: \"A university gathers information on the number of students enrolled in each department during the fall semester of 2024.\"",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Time Section",
+        "B": "Cross Sectional",
+        "C": "Longitudinal",
+        "D": "Historical"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "5",
+      "module": 1,
+      "question_text": "Which of the following is the most effective way to summarize quantitative data for a clearer presentation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Pie Chart",
+        "B": "Bar Graph",
+        "C": "Histogram",
+        "D": "Line Graph"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "question_id": "6",
+      "module": 1,
+      "question_text": "Which of the following is the best measure of central tendency when data contains extreme values or outliers?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Mean",
+        "B": "Median",
+        "C": "Mode"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "7",
+      "module": 1,
+      "question_text": "What does a high value of the standard deviation indicate about a dataset?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The data points are close to the mean",
+        "B": "The data points are spread out from the mean",
+        "C": "The data points are consistent and have no variation"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "8",
+      "module": 1,
+      "question_text": "What does the Five-Number Summary include?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Mean, Mode, Range, Variance, Standard Deviation",
+        "B": "Minimum, First Quartile, Median, Third Quartile, Maximum",
+        "C": "Mode, Median, Range, First Quartile, Interquartile Range",
+        "D": "Mean, Median, Standard Deviation, Minimum, Maximum"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "9",
+      "module": 1,
+      "question_text": "What does the Descriptive Statistics tool in Excel's Data Analysis ToolPak provide for a dataset?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It calculates the correlation between variables.",
+        "B": "It generates a detailed regression analysis.",
+        "C": "It computes measures like mean, median, standard deviation, and range.",
+        "D": "It generates measures of central tendency, variation, and distribution, such as mean, median, mode, range, variance, and standard deviation."
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "question_id": "10",
+      "module": 1,
+      "question_text": "A Bernoulli random variable takes only two possible values — 0 and 1.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "11",
+      "module": 1,
+      "question_text": "In a Binomial distribution, the number of trials is fixed.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "12",
+      "module": 1,
+      "question_text": "A Poisson distribution is used to model the number of events occurring in a fixed interval of time or space.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "13",
+      "module": 1,
+      "question_text": "The mean of a Binomial distribution is given by n×p, where n is the number of trials and p is the probability of success.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "14",
+      "module": 1,
+      "question_text": "A Poisson random variable can take negative values.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "15",
+      "module": 1,
+      "question_text": "The mode is the measure of central tendency that is most affected by outliers in the data.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "16",
+      "module": 1,
+      "question_text": "In a Binomial distribution, each trial can have a different probability of success.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "17",
+      "module": 1,
+      "question_text": "A Bernoulli random variable represents a single experiment with only two outcomes — success or failure.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "18",
+      "module": 2,
+      "question_text": "Which of the following represents the probability of an event that is certain to happen?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.5",
+        "B": "1",
+        "C": "0",
+        "D": "0.75"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "19",
+      "module": 2,
+      "question_text": "What is the probability of the union of two mutually exclusive events, A and B, if P(A)=0.4 and P(B)=0.3?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.7",
+        "B": "1",
+        "C": "0.12",
+        "D": "0"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "20",
+      "module": 2,
+      "question_text": "A movie theater owner notices the following probabilities about two movies: Probability of Movie A (KGF) being a hit: P(A) = 0.34. Probability of Movie B (Kantara) being a hit: P(B)=0.60. Joint probability of both Movie A and Movie B being hits: P(A∩B)=0.18. What is the posterior probability that Movie A (KGF) is a hit given that Movie B (Kantara) is a hit?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.53",
+        "B": "0.18",
+        "C": "0.60",
+        "D": "0.30"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "question_id": "21",
+      "module": 2,
+      "question_text": "Which of the following statements is true about the probability mass function of a fair die?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The sum of all probabilities is 6.",
+        "B": "The sum of all probabilities is 0.",
+        "C": "The sum of all probabilities is 1.",
+        "D": "The sum of all probabilities is 2."
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "question_id": "22",
+      "module": 2,
+      "question_text": "Which of the following is an example of a discrete random variable?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The height of students in a class",
+        "B": "The number of cars in a parking lot",
+        "C": "The time taken to run a marathon",
+        "D": "The weight of apples in a basket"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "23",
+      "module": 2,
+      "question_text": "What does the tail probability of a random variable refer to?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The probability of the random variable being less than or equal to a certain value",
+        "B": "The probability of the random variable being greater than or equal to a certain value",
+        "C": "The probability of the random variable being exactly equal to a certain value",
+        "D": "The probability of the random variable being in the middle of its distribution"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "24",
+      "module": 2,
+      "question_text": "Which of these is an example of a continuous random variable?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The number of emails received in a day.",
+        "B": "The number of defective products in a batch.",
+        "C": "The time it takes to commute to work.",
+        "D": "The count of books on a shelf."
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "question_id": "25",
+      "module": 2,
+      "question_text": "If X and Y are independent random variables with means E(X)=2 and E(Y)=5, and variances Var(X)=4 and Var(Y)=9, what is the variance of the linear combination 3X−2Y?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "3²×Var(X)+(−2)²×Var(Y)",
+        "B": "3²×Var(X)−2²×Var(Y)",
+        "C": "3×Var(X)+2×Var(Y)",
+        "D": "3²×Var(X)+2²×Var(Y)"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "26",
+      "module": 2,
+      "question_text": "The probability of any event is a number between 0 and 1, inclusive.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "27",
+      "module": 2,
+      "question_text": "The probability mass function (PMF) of a discrete random variable provides the probability of each possible outcome.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "28",
+      "module": 2,
+      "question_text": "A random variable is a numerical outcome of a random phenomenon.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "29",
+      "module": 2,
+      "question_text": "The probability of any event is always greater than 1.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "30",
+      "module": 2,
+      "question_text": "The probability mass function (PMF) of a discrete random variable provides the cumulative probability of outcomes up to a certain point.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "31",
+      "module": 2,
+      "question_text": "A random variable is always a continuous value representing the outcome of a random phenomenon.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "32",
+      "module": 3,
+      "question_text": "What is the expectation E(Y) of a Bernoulli random variable where the probability of success (p) is 0.3?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.7",
+        "B": "0.3",
+        "C": "0.09",
+        "D": "1"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "33",
+      "module": 3,
+      "question_text": "Which of the following is true for a binomial distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The trials must be dependent, and the probability of success changes in each trial.",
+        "B": "Each trial must result in more than two outcomes.",
+        "C": "The number of successes in a fixed number of trials is a binomial random variable.",
+        "D": "The trials must be continuous, and the probability of success is not fixed."
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "question_id": "34",
+      "module": 3,
+      "question_text": "In the scenario with Priya making insurance calls, what is the probability that Priya will have at least 6 successful purchases out of 12 calls, given that the probability of success per call is 0.2?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.019",
+        "B": "0.25",
+        "C": "0.5",
+        "D": "0.8"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "35",
+      "module": 3,
+      "question_text": "Which of the following is a necessary assumption for a binomial experiment?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The trials must be dependent on each other.",
+        "B": "The probability of success must change after each trial.",
+        "C": "Each trial has exactly two outcomes: success and failure.",
+        "D": "The trials must be conducted in a random order."
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "question_id": "36",
+      "module": 3,
+      "question_text": "What is the key characteristic of the Poisson distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It models continuous random variables over time.",
+        "B": "It models the number of occurrences of an event within a fixed time or space.",
+        "C": "It requires two parameters: n (number of trials) and p (probability of success)."
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "37",
+      "module": 4,
+      "question_text": "Which of the following is an example of a continuous random variable?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The number of cars in a parking lot",
+        "B": "The number of emails received in a day",
+        "C": "The time it takes for a student to complete a test",
+        "D": "The number of people in a room"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "question_id": "38",
+      "module": 4,
+      "question_text": "Which of the following is a characteristic of a Uniform Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The probability of every outcome is different within the range.",
+        "B": "All values within the range of the distribution are equally likely.",
+        "C": "It only applies to discrete random variables.",
+        "D": "The probability density function (PDF) increases linearly over the range."
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "39",
+      "module": 4,
+      "question_text": "Which of the following is a common application of the Exponential Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Modeling the number of emails received in an hour.",
+        "B": "Modeling the time between arrivals of buses at a bus stop.",
+        "C": "Modeling the heights of students in a class.",
+        "D": "Modeling the total number of defective items in a batch."
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "40",
+      "module": 4,
+      "question_text": "Which of the following is true about the Exponential Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The Exponential Distribution is used to model the number of events occurring in a fixed interval of time or space.",
+        "B": "The Exponential Distribution is memoryless.",
+        "C": "The probability density function (PDF) of an Exponential Distribution is constant over time.",
+        "D": "The mean and variance of an Exponential Distribution are always equal."
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "41",
+      "module": 4,
+      "question_text": "What is the relationship between the Exponential and Poisson Distributions?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The Exponential Distribution models the number of events, while the Poisson Distribution models the time between events.",
+        "B": "The Exponential Distribution models the time between events, while the Poisson Distribution models the number of events.",
+        "C": "The Exponential Distribution is unrelated to the Poisson Distribution.",
+        "D": "The Exponential Distribution applies only to discrete random variables, while the Poisson Distribution applies only to continuous random variables."
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "42",
+      "module": 4,
+      "question_text": "Which of the following is true about a Normal Random Variable?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A normal random variable has a uniform probability across its range.",
+        "B": "A normal random variable has a symmetric, bell-shaped probability density function (PDF).",
+        "C": "The probabilities for a normal random variable are concentrated at a single point.",
+        "D": "The mean, median, and mode of a normal random variable are always different."
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "43",
+      "module": 4,
+      "question_text": "Which of the following is a property of the Standard Normal Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The mean of the standard normal distribution is 1.",
+        "B": "The mean of the standard normal distribution is 0, and the standard deviation is 1.",
+        "C": "The standard normal distribution is skewed to the right.",
+        "D": "The probabilities for the standard normal distribution are concentrated at z=0."
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "44",
+      "module": 4,
+      "question_text": "Continuous distributions describe random variables that can take any value within a specified range.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "45",
+      "module": 4,
+      "question_text": "In a uniform distribution, all outcomes in the range are equally likely.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "46",
+      "module": 4,
+      "question_text": "The exponential distribution is used to model the time between independent events that occur at a constant rate.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "47",
+      "module": 4,
+      "question_text": "The normal distribution is symmetric, with its mean, median, and mode at the same point.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A"
+    }
+  ]
+}
