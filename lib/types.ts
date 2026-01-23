@@ -26,9 +26,9 @@ export interface Question {
   id: string;
   text: string;
   options: { A: string; B: string; C: string; D: string };
-  correctAnswer: string;
+  correctAnswer: string[]; // Array to support multiple correct answers
   module?: string | number;
-  selectedAnswer?: string;
+  selectedAnswer?: string[];
   source?: string; // exam_date from exam_metadata
   explanation?: string;
 }
@@ -46,11 +46,11 @@ export interface QuizState {
   currentQuestionIndex: number;
   score: number;
   totalQuestions: number;
-  selectedAnswer: string | null;
+  selectedAnswer: string[] | null;
   showResult: boolean;
   questions: Question[];
   incorrectAnswers: Question[];
-  answeredQuestions: (string | null)[];
+  answeredQuestions: (string[] | null)[];
 }
 
 // Subject types

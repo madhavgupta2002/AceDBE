@@ -6,7 +6,7 @@ import { Target, Award, XCircle, CheckCircle, HelpCircle, Percent } from 'lucide
 interface QuizStatsProps {
   score: number;
   totalQuestions: number;
-  answeredQuestions: (string | null)[];
+  answeredQuestions: (string[] | null)[];
   size?: 'compact' | 'large';
 }
 

@@ -156,22 +156,54 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     }
   };
 
-  const handleAnswer = (answer: string) => {
+  const handleAnswer = (answer: string[]) => {
     if (quizState.answeredQuestions[quizState.currentQuestionIndex] !== null) {
       return;
     }
 
     const currentQuestion = quizState.questions[quizState.currentQuestionIndex];
-    const isCorrect = answer === currentQuestion.correctAnswer;
+    const isMultipleAnswer = currentQuestion.correctAnswer.length > 1;
+
+    // For multiple answer questions, check if a wrong option was selected
+    const hasWrongOption = answer.some(opt => !currentQuestion.correctAnswer.includes(opt));
+
+    // For multiple answer questions, check if all correct options are selected
+    const allCorrectSelected = currentQuestion.correctAnswer.every(opt => answer.includes(opt)) &&
+      currentQuestion.correctAnswer.length === answer.length;
+
+    // Determine if we should show result
+    let shouldShowResult = false;
+    let shouldMarkAsAnswered = false;
+
+    if (isMultipleAnswer) {
+      // For multiple answer: reveal if wrong option selected OR all correct options selected
+      if (hasWrongOption || allCorrectSelected) {
+        shouldShowResult = true;
+        shouldMarkAsAnswered = true;
+      } else {
+        // Just update selection, don't show result yet
+        setQuizState(prev => ({
+          ...prev,
+          selectedAnswer: answer,
+        }));
+        return;
+      }
+    } else {
+      // Single answer: reveal immediately
+      shouldShowResult = true;
+      shouldMarkAsAnswered = true;
+    }
+
+    const isCorrect = allCorrectSelected || (!isMultipleAnswer && answer.length === 1 && currentQuestion.correctAnswer.includes(answer[0]));
 
     setQuizState((prev) => {
       const newAnsweredQuestions = [...prev.answeredQuestions];
-      newAnsweredQuestions[prev.currentQuestionIndex] = answer;
+      newAnsweredQuestions[prev.currentQuestionIndex] = shouldMarkAsAnswered ? answer : null;
 
       return {
         ...prev,
         selectedAnswer: answer,
-        showResult: true,
+        showResult: shouldShowResult,
         score: isCorrect ? prev.score + 1 : prev.score,
         incorrectAnswers: isCorrect
           ? prev.incorrectAnswers
@@ -331,8 +363,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
               <button
                 onClick={() => setShowAllQuestions(!showAllQuestions)}
                 className={`px-4 py-2 border font-semibold transition duration-200 ${showAllQuestions
-                    ? 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
-                    : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
+                  ? 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
+                  : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
                   }`}
               >
                 {showAllQuestions ? 'Hide Questions List' : 'Show All Questions'}
@@ -340,8 +372,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
               <button
                 onClick={() => setHideWrongOptions(!hideWrongOptions)}
                 className={`px-4 py-2 border font-semibold transition duration-200 ${hideWrongOptions
-                    ? 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
-                    : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
+                  ? 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
+                  : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
                   }`}
               >
                 {hideWrongOptions ? 'Show All Options' : 'Hide Wrong Options'}
@@ -355,7 +387,10 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                 </h3>
                 {quizState.questions.map((q, index) => {
                   const userAnswer = quizState.answeredQuestions[index];
-                  const isCorrect = userAnswer === q.correctAnswer;
+                  // Check if arrays are equal
+                  const isCorrect = userAnswer !== null &&
+                    userAnswer.length === q.correctAnswer.length &&
+                    userAnswer.every(ans => q.correctAnswer.includes(ans));
 
                   return (
                     <div
@@ -374,14 +409,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                         {Object.entries(q.options)
                           .filter(([key]) => {
                             if (hideWrongOptions) {
-                              // Show only correct answer and user's answer (if different)
-                              return key === q.correctAnswer || (userAnswer === key && userAnswer !== q.correctAnswer);
+                              // Show correct answers and user's wrong answers
+                              return q.correctAnswer.includes(key) || (userAnswer?.includes(key) && !q.correctAnswer.includes(key));
                             }
                             return true;
                           })
                           .map(([key, value]) => {
-                            const isUserAnswer = userAnswer === key;
-                            const isCorrectAnswer = key === q.correctAnswer;
+                            const isUserAnswer = userAnswer?.includes(key) || false;
+                            const isCorrectAnswer = q.correctAnswer.includes(key);
 
                             return (
                               <p
@@ -424,14 +459,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                         {Object.entries(q.options)
                           .filter(([key]) => {
                             if (hideWrongOptions) {
-                              // Show only correct answer and user's answer (if different)
-                              return key === q.correctAnswer || (q.selectedAnswer === key && q.selectedAnswer !== q.correctAnswer);
+                              // Show correct answers and user's wrong answers
+                              return q.correctAnswer.includes(key) || (q.selectedAnswer?.includes(key) && !q.correctAnswer.includes(key));
                             }
                             return true;
                           })
                           .map(([key, value]) => {
-                            const isUserAnswer = q.selectedAnswer === key;
-                            const isCorrectAnswer = key === q.correctAnswer;
+                            const isUserAnswer = q.selectedAnswer?.includes(key) || false;
+                            const isCorrectAnswer = q.correctAnswer.includes(key);
 
                             return (
                               <p
