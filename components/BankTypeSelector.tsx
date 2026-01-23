@@ -11,7 +11,7 @@ const BankTypeSelector: React.FC<BankTypeSelectorProps> = ({ onSelect }) => {
   return (
     <div className="mb-8">
       <h2 className="text-2xl font-bold mb-4 text-white">
-        Select Question Bank Type
+        Select Question Type
       </h2>
       <div className="flex flex-col sm:flex-row gap-4">
         <button

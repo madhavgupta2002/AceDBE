@@ -1,0 +1,267 @@
+{
+  "exam_metadata": {
+    "subject_name": "Business Statistics",
+    "exam_date": "Mid Term Batch 2"
+  },
+  "questions": [
+    {
+      "question_id": "STAT_MTB2_Q1",
+      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews. The survey showed that 10 boys received only one job interview, while 75% of the girls received 3 job interviews. Further, only 25% of the boys received 2 interviews, but the number of boys receiving 2 interviews exceeded the number of girls receiving 2 interviews by 5. The probability that a randomly selected student from this survey is a girl that received only 1 interview is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0 and 0.25",
+        "B": "Between 0.25 and 0.50",
+        "C": "Between 0.50 and 0.75",
+        "D": "Between 0.75 and 1"
+      },
+      "correct_option_label": "A",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q2",
+      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The standard deviation of the number of deliveries done by a sales executive in a day is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 3 and 5",
+        "B": "Between 5 and 7",
+        "C": "Between 7 and 9",
+        "D": "Between 9 and 11"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "question_id": "STAT_MTB2_Q3",
+      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The coefficient of variation of the number of deliveries done by a sales executive in a day is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0 to 0.5",
+        "B": "Between 0.5 and 1.0",
+        "C": "Between 1.0 and 1.5",
+        "D": "More than 1.5"
+      },
+      "correct_option_label": "B",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q4",
+      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The type of data recorded can be classified as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Quantitative, numeric, interval",
+        "B": "Quantitative, numeric, ratio",
+        "C": "Quantitative, numeric, cardinal",
+        "D": "Quantitative, numeric, absolute"
+      },
+      "correct_option_label": "B",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q5",
+      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews... The probability that a randomly selected student from this survey is either a boy or a student that received exactly 2 interviews is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0 and 0.25",
+        "B": "Between 0.25 and 0.50",
+        "C": "Between 0.50 and 0.75",
+        "D": "Between 0.75 and 1"
+      },
+      "correct_option_label": "C",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q6",
+      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews... Among students that received exactly 3 interviews, the percentage of boys is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0 and 0.25",
+        "B": "Between 0.25 and 0.50",
+        "C": "Between 0.50 and 0.75",
+        "D": "Between 0.75 and 1"
+      },
+      "correct_option_label": "B",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q7",
+      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews... The probability that a randomly selected girl from this sample received exactly 2 interviews is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0 and 0.25",
+        "B": "Between 0.25 and 0.50",
+        "C": "Between 0.50 and 0.75",
+        "D": "Between 0.75 and 1"
+      },
+      "correct_option_label": "A",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q8",
+      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews... Based on this survey, the standard deviation of the number of interviews received by a student is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0 and 0.75",
+        "B": "Between 0.75 and 1.50",
+        "C": "Between 1.50 and 2.25",
+        "D": "Between 2.25 and 3.00"
+      },
+      "correct_option_label": "A",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q9",
+      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews... The probability that a randomly selected student in this sample that received more than 1 interview is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0 and 0.25",
+        "B": "Between 0.25 and 0.50",
+        "C": "Between 0.50 and 0.75",
+        "D": "Between 0.75 and 1"
+      },
+      "correct_option_label": "D",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q10",
+      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The median number of deliveries done by a sales executive in a day is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "6",
+        "B": "9",
+        "C": "12",
+        "D": "16"
+      },
+      "correct_option_label": "C",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q11",
+      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The inter-quartile range for the number of deliveries done by a sales executive in a day is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "11",
+        "B": "12",
+        "C": "13",
+        "D": "14"
+      },
+      "correct_option_label": "D",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q12",
+      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews... The probability that a randomly selected student in this sample received at most 2 interviews is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0 and 0.25",
+        "B": "Between 0.25 and 0.50",
+        "C": "Between 0.50 and 0.75",
+        "D": "Between 0.75 and 1"
+      },
+      "correct_option_label": "B",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q13",
+      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. If a box plot is drawn for this data, the top of the box will correspond to a number:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 15 and 17",
+        "B": "Between 17 and 19",
+        "C": "Between 19 and 21",
+        "D": "Between 21 and 23"
+      },
+      "correct_option_label": "C",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q14",
+      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews... The percentage of boys that receive 2 or more interviews is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0 and 0.25",
+        "B": "Between 0.25 and 0.50",
+        "C": "Between 0.50 and 0.75",
+        "D": "Between 0.75 and 1"
+      },
+      "correct_option_label": "D",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q15",
+      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The z-score corresponding to the median number of deliveries done by a sales executive in a day is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between -2 and -1",
+        "B": "Between -1 and 0",
+        "C": "Between 0 and 1",
+        "D": "Between 1 and 2"
+      },
+      "correct_option_label": "B",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q16",
+      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The average number of deliveries done by a sales executive in a day is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 10 and 12",
+        "B": "Between 12 and 14",
+        "C": "Between 14 and 16",
+        "D": "Between 16 and 18"
+      },
+      "correct_option_label": "B",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q17",
+      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The number of outliers in this data identified using the box-plot method is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "2",
+        "D": "3"
+      },
+      "correct_option_label": "A",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q18",
+      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews... The probability that a randomly selected student in this sample received exactly 2 interviews is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0 and 0.25",
+        "B": "Between 0.25 and 0.50",
+        "C": "Between 0.50 and 0.75",
+        "D": "Between 0.75 and 1"
+      },
+      "correct_option_label": "A",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q19",
+      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews... Based on this survey, the average number of interviews received by a student is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0 and 0.75",
+        "B": "Between 0.75 and 1.50",
+        "C": "Between 1.50 and 2.25",
+        "D": "Between 2.25 and 3.00"
+      },
+      "correct_option_label": "D",
+      "module": 2
+    },
+    {
+      "question_id": "STAT_MTB2_Q20",
+      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The 40th percentile corresponding to the number of deliveries done by a sales executive in a day is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 6 and 7",
+        "B": "Between 7 and 8",
+        "C": "Between 8 and 9",
+        "D": "Between 9 and 10"
+      },
+      "correct_option_label": "C",
+      "module": 2
+    }
+  ]
+}

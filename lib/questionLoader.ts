@@ -1,13 +1,14 @@
 import { QuestionFile, IIMBQuestion, Question } from './types';
 
 // Convert IIMB question format to internal format
-export function convertToInternalFormat(iimbQuestion: IIMBQuestion): Question {
+export function convertToInternalFormat(iimbQuestion: IIMBQuestion, source?: string): Question {
   return {
     id: iimbQuestion.question_id,
     text: iimbQuestion.question_text,
     options: iimbQuestion.options,
     correctAnswer: iimbQuestion.correct_option_label,
     module: iimbQuestion.module,
+    source: source,
   };
 }
 
@@ -21,7 +22,7 @@ export async function loadQuestionFile(
     const response = await fetch(
       `/api/questions?bankType=${bankType}&subjectCode=${subjectCode}&bankName=${encodeURIComponent(bankName)}`
     );
-    
+
     if (!response.ok) {
       console.error(`Failed to load questions: ${response.statusText}`);
       return null;
@@ -50,7 +51,7 @@ export async function getAvailableBanks(
     const response = await fetch(
       `/api/banks?bankType=${bankType}&subjectCode=${subjectCode}`
     );
-    
+
     if (!response.ok) {
       console.error(`Failed to get banks: ${response.statusText}`);
       return [];
@@ -71,12 +72,13 @@ export async function loadQuestions(
   bankName: string
 ): Promise<Question[]> {
   const questionFile = await loadQuestionFile(bankType, subjectCode, bankName);
-  
+
   if (!questionFile || !questionFile.questions) {
     return [];
   }
 
-  return questionFile.questions.map(convertToInternalFormat);
+  const examDate = questionFile.exam_metadata?.exam_date;
+  return questionFile.questions.map(q => convertToInternalFormat(q, examDate));
 }
 
 // Load all questions for a subject (for full practice mode)

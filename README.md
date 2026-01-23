@@ -6,7 +6,7 @@ A Next.js-based practice website for IIMB course questions, supporting 7 subject
 
 - **7 Subjects**: AE11x, DS11x, EP11x, EP12x, FA11x, MK11x, ST21x
 - **Question Bank Types**: CLA (Continuous Learning Assessment) and Exam
-- **Practice Modes**: Bank-specific practice or full practice across all banks
+- **Practice Modes**: Modulewise practice or full practice across all banks
 - **Question Ordering**: Random or in-order
 - **Dark Mode**: Toggle between light and dark themes
 - **Progress Tracking**: Real-time statistics and answer tracking
@@ -100,7 +100,7 @@ Example structure:
 
 1. Select a subject from the home page
 2. Choose question bank type (CLA or Exam)
-3. Select practice mode (Bank-specific or Full practice)
+3. Select practice mode (Modulewise or Full practice)
 4. Choose question order (Random or In Order)
 5. Select a specific bank (if in bank mode)
 6. Start practicing!
