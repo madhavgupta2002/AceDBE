@@ -2,8 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { BankType } from '@/lib/types';
-import { getAvailableBanks } from '@/lib/questionLoader';
-import { useDarkMode } from '@/contexts/DarkModeContext';
+import { getAvailableBanks, BankInfo } from '@/lib/questionLoader';
 
 interface BankSelectorProps {
   bankType: BankType;
@@ -12,9 +11,8 @@ interface BankSelectorProps {
 }
 
 const BankSelector: React.FC<BankSelectorProps> = ({ bankType, subjectCode, onSelect }) => {
-  const [availableBanks, setAvailableBanks] = useState<string[]>([]);
+  const [availableBanks, setAvailableBanks] = useState<BankInfo[]>([]);
   const [loading, setLoading] = useState(true);
-  const { isDarkMode } = useDarkMode();
 
   useEffect(() => {
     const loadBanks = async () => {
@@ -27,9 +25,17 @@ const BankSelector: React.FC<BankSelectorProps> = ({ bankType, subjectCode, onSe
         console.error('Error loading banks:', error);
         // Fallback to common banks
         if (bankType === 'CLA') {
-          setAvailableBanks(['Batch 1', 'Batch 2', 'Practice']);
+          setAvailableBanks([
+            { bankName: 'Batch 1', displayName: 'Batch 1' },
+            { bankName: 'Batch 2', displayName: 'Batch 2' },
+            { bankName: 'Practice', displayName: 'Practice' }
+          ]);
         } else {
-          setAvailableBanks(['Set 1', 'Set 2', 'Set 3']);
+          setAvailableBanks([
+            { bankName: 'Set 1', displayName: 'Set 1' },
+            { bankName: 'Set 2', displayName: 'Set 2' },
+            { bankName: 'Set 3', displayName: 'Set 3' }
+          ]);
         }
       } finally {
         setLoading(false);
@@ -50,16 +56,16 @@ const BankSelector: React.FC<BankSelectorProps> = ({ bankType, subjectCode, onSe
   return (
     <div className="mb-8">
       <h2 className="text-2xl font-bold mb-4 text-white">
-        Select {bankType === 'CLA' ? 'Batch' : 'Set'}
+        Select {bankType === 'CLA' ? 'Batch' : 'Exam Date'}
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
         {availableBanks.map((bank) => (
           <button
-            key={bank}
-            onClick={() => onSelect(bank)}
+            key={bank.bankName}
+            onClick={() => onSelect(bank.bankName)}
             className="px-6 py-4 bg-gray-800 text-white hover:bg-gray-700 border border-gray-700 hover:border-indigo-500 font-semibold transition duration-200"
           >
-            {bank}
+            {bank.displayName}
           </button>
         ))}
       </div>
