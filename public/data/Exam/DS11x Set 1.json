@@ -198,7 +198,7 @@
     },
     {
       "question_id": "236144713",
-      "module": -1,
+      "module": 5,
       "question_text": "A government agency selects a random sample of 40 IT projects to study issued related to project delays. The sample study reveals that the average duration of a project is 18 weeks, and the standard deviation is 4 weeks. What is the margin of error corresponding to a 85% confidence interval of the average duration of projects in the population.",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -214,7 +214,7 @@
     },
     {
       "question_id": "236144714",
-      "module": -1,
+      "module": 5,
       "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. Construct a hypothesis (H0 and Ha) to d determine if the true value of the average contacts per week is equal to 15. The correct form of hypothesis test to be used is the following:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -230,7 +230,7 @@
     },
     {
       "question_id": "236144715",
-      "module": -1,
+      "module": 5,
       "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. Construct a hypothesis (H0 and Ha) to d determine if the true value of the average contacts per week is equal to 15. For a significance level of 10%, what is the p-value?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -246,7 +246,7 @@
     },
     {
       "question_id": "236144716",
-      "module": -1,
+      "module": 5,
       "question_text": "In a random survey of 42 managers, 24 did not have an MBA degree. What is the smallest sample size among those listed below that will yield a desired margin of error of 0.1 or less for a 99% confidence interval on the true proportion of managers in the population having an MBA degree.",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -262,7 +262,7 @@
     },
     {
       "question_id": "236144717",
-      "module": -1,
+      "module": 5,
       "question_text": "In a random survey of 42 managers, 24 did not have an MBA degree. Construct a hypothesis (H0 and Ha) to determine if the true value of the proportion of managers in the population having an MBA degree is more than 50%. The p-value corresponding to a significance level of 10% is:",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -278,7 +278,7 @@
     },
     {
       "question_id": "236144718",
-      "module": -1,
+      "module": 5,
       "question_text": "In a random survey of 25 customers, it was found that the standard deviation of the individual spend at a retail store was $35. Construct a hypothesis (H0 and Ha) to determine if the true value of the variance in the population for individual spend is more than 900. The test statistic for this test takes a value that is:",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -294,7 +294,7 @@
     },
     {
       "question_id": "236144719",
-      "module": -1,
+      "module": 5,
       "question_text": "In data used to construct a valid simple linear regression model with 10 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to 2840, ∑(X_i-Xbar)^2 equals 568 and ∑(Yi-Ybar)^2 = 15730. The sample average for x given by Xbar was 16 and the sample average for y given by Ybar was 134. These results imply that, if X equals 20, the expected value for Y would be:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -310,7 +310,7 @@
     },
     {
       "question_id": "236144720",
-      "module": -1,
+      "module": 5,
       "question_text": "In data used to construct a valid simple linear regression model with 10 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to 2840, ∑(X_i-Xbar)^2 equals 568 and ∑(Yi-Ybar)^2 = 15730. The sample average for x given by Xbar was 16 and the sample average for y given by Ybar was 134. These results imply that the percentage of variation in Y that could be attributed to variation in X is:",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -326,7 +326,7 @@
     },
     {
       "question_id": "236144721",
-      "module": -1,
+      "module": 5,
       "question_text": "In data used to construct a valid simple linear regression model, it was observed that SSR is equal to 2530.2, SSE is equal to 2270.7, and MSE is equal to 227.1. The total number of observations used to build this simple linear regression model is:",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -342,7 +342,7 @@
     },
     {
       "question_id": "236144722",
-      "module": -1,
+      "module": 5,
       "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x1, x2, x3, x4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x1, x2, x3, x4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x1, x2, x3, x4 were 1.5, 0.5, -1.0, and 8.0 respectively. These results imply that Adjusted R Square is equal to",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -358,7 +358,7 @@
     },
     {
       "question_id": "236144723",
-      "module": -1,
+      "module": 5,
       "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x1, x2, x3, x4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x1, x2, x3, x4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x1, x2, x3, x4 were 1.5, 0.5, -1.0, and 8.0 respectively. These results imply that b4 is equal to",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
@@ -374,7 +374,7 @@
     },
     {
       "question_id": "236144724",
-      "module": -1,
+      "module": 5,
       "question_text": "When data with 18 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x1, x2, x3, x4 the following outputs were obtained. The RSquare was 0.36, standard error was 4.8. These results imply that MSR is equal to",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -390,7 +390,7 @@
     },
     {
       "question_id": "236144725",
-      "module": -1,
+      "module": 5,
       "question_text": "When data with 18 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x1, x2, x3, x4 the following outputs were obtained. The RSquare was 0.36, standard error was 4.8. These results imply that F - statistic is equal to",
       "question_type": "MCQ",
       "marks_allocated": 0.0,

@@ -1,6 +1,6 @@
-# IIMB Practice Portal
+# AceDBE - IIMB BBA-DBE Practice Portal
 
-A Next.js-based practice website for IIMB course questions, supporting 7 subjects with CLA and Exam question banks.
+Your complete practice platform for IIMB BBA-DBE courses, supporting 7 subjects with CLA and Exam question banks.
 
 ## Features
 

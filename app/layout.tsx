@@ -5,28 +5,28 @@ import 'katex/dist/katex.min.css';
 import { DarkModeProvider } from '@/contexts/DarkModeContext';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
-const merriweather = Merriweather({ 
-  subsets: ['latin'], 
+const merriweather = Merriweather({
+  subsets: ['latin'],
   weight: ['300', '400', '700'],
-  variable: '--font-merriweather' 
+  variable: '--font-merriweather'
 });
-const openSans = Open_Sans({ 
+const openSans = Open_Sans({
   subsets: ['latin'],
-  variable: '--font-open-sans' 
+  variable: '--font-open-sans'
 });
-const lora = Lora({ 
+const lora = Lora({
   subsets: ['latin'],
-  variable: '--font-lora' 
+  variable: '--font-lora'
 });
-const roboto = Roboto({ 
+const roboto = Roboto({
   subsets: ['latin'],
   weight: ['300', '400', '500', '700'],
-  variable: '--font-roboto' 
+  variable: '--font-roboto'
 });
 
 export const metadata: Metadata = {
   title: 'IIMB Practice Portal',
-  description: 'Practice portal for IIMB course questions',
+  description: 'AceDBE Practice portal for IIMB course questions',
 };
 
 export default function RootLayout({

@@ -3,8 +3,8 @@ export interface IIMBQuestion {
   question_id: string;
   question_text: string;
   question_type: string;
-  options: { A: string; B: string; C: string; D: string };
-  correct_option_label: string;
+  options: { A?: string; B?: string; C?: string; D?: string };
+  correct_option_label: string | null;
   module?: string | number;
   marks_allocated?: number;
   status?: string;
@@ -25,12 +25,13 @@ export interface QuestionFile {
 export interface Question {
   id: string;
   text: string;
-  options: { A: string; B: string; C: string; D: string };
-  correctAnswer: string[]; // Array to support multiple correct answers
+  options: { A?: string; B?: string; C?: string; D?: string };
+  correctAnswer: string[]; // Array to support multiple correct answers (empty for subjective)
   module?: string | number;
   selectedAnswer?: string[];
   source?: string; // exam_date from exam_metadata
   explanation?: string;
+  isSubjective?: boolean; // Flag to identify subjective questions
 }
 
 // Quiz state types
