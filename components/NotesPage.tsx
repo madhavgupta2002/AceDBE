@@ -44,6 +44,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
   const [error, setError] = useState<string | null>(null);
   const [selectedFont, setSelectedFont] = useState<FontOption>(fontOptions[0]);
   const [fontDropdownOpen, setFontDropdownOpen] = useState(false);
+  const [fontSize, setFontSize] = useState<number>(18); // Default font size in px
 
   useEffect(() => {
     const fetchNotes = async () => {
@@ -224,6 +225,21 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                 </>
               )}
             </div>
+
+            {/* Font Size Slider */}
+            <div className="flex items-center gap-2 sm:gap-3 bg-gray-700 px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg">
+              <span className="text-[10px] sm:text-xs text-gray-400 font-bold">A</span>
+              <input
+                type="range"
+                min="12"
+                max="32"
+                value={fontSize}
+                onChange={(e) => setFontSize(parseInt(e.target.value))}
+                className="w-16 sm:w-24 h-1 bg-gray-600 rounded-lg appearance-none cursor-pointer accent-indigo-500"
+              />
+              <span className="text-sm sm:text-base text-gray-200 font-bold">A</span>
+              <span className="text-[10px] sm:text-xs text-gray-400 hidden sm:inline ml-1">{fontSize}px</span>
+            </div>
           </div>
         </div>
       </div>
@@ -296,7 +312,11 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
             {/* Main Content - Full width on mobile, 9 cols on lg */}
             <article
               className="col-span-1 lg:col-span-9 max-w-none not-italic pt-4 lg:pt-8"
-              style={{ fontFamily: selectedFont.family }}
+              style={{
+                fontFamily: selectedFont.family,
+                fontSize: `${fontSize}px`,
+                lineHeight: '1.6'
+              }}
             >
               <ReactMarkdown
                 remarkPlugins={[remarkGfm, remarkMath]}
