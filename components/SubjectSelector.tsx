@@ -90,7 +90,7 @@ const SubjectSelector: React.FC = () => {
           Term 1
         </h1>
         <p className="text-sm sm:text-lg text-gray-400">
-          Choose a subject to start practicing
+          Ace your BBA-DBE exams with comprehensive notes, compiled playlists, previous year questions, and interactive quizzes.
         </p>
       </div>
 
