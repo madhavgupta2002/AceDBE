@@ -16,7 +16,7 @@ import QuizStats from './QuizStats';
 import AnswerStatus from './AnswerStatus';
 import ModuleSelector from './ModuleSelector';
 import UnifiedQuizSelector from './UnifiedQuizSelector';
-import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle } from 'lucide-react';
+import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen } from 'lucide-react';
 
 interface QuizAppProps {
   subjectCode: string;
@@ -288,6 +288,17 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
             {subject.name}
           </h1>
         </div>
+
+        {/* View Notes Button */}
+        {!loading && (
+          <button
+            onClick={() => router.push(`/quiz/${subjectCode}/notes`)}
+            className="w-full py-2.5 mb-6 bg-indigo-700 hover:bg-indigo-600 text-white border border-indigo-600 font-semibold transition duration-200 flex items-center justify-center gap-2"
+          >
+            <BookOpen className="w-5 h-5" />
+            View Notes
+          </button>
+        )}
 
         {loading && (
           <div className="text-center py-12">
