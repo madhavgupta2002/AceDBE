@@ -35,19 +35,19 @@ const AnswerStatus: React.FC<AnswerStatusProps> = ({
   };
 
   return (
-    <div className="mb-6">
-      <h3 className="text-lg font-semibold mb-2 text-white">
+    <div className="mb-4 sm:mb-6">
+      <h3 className="text-base sm:text-lg font-semibold mb-2 text-white">
         Answer Status
       </h3>
-      <div className="grid grid-cols-6 gap-2">
+      <div className="grid grid-cols-8 sm:grid-cols-6 gap-1 sm:gap-2">
         {Array.from({ length: totalQuestions }, (_, index) => (
           <button
             key={index}
-            className={`w-10 h-10 flex items-center justify-center font-semibold ${getStatusColor(
+            className={`w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center font-semibold text-xs sm:text-sm ${getStatusColor(
               index
             )} ${index === currentQuestionIndex
-                ? 'ring-2 ring-indigo-500'
-                : ''
+              ? 'ring-2 ring-indigo-500'
+              : ''
               }`}
             onClick={() => onQuestionSelect(index)}
           >

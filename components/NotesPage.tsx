@@ -9,6 +9,7 @@ import rehypeKatex from 'rehype-katex';
 import { ArrowLeft, BookOpen, ChevronDown, Type } from 'lucide-react';
 import { loadNotes } from '@/lib/notesLoader';
 import { getSubjectByCode } from '@/lib/subjectMapping';
+import Header from '@/components/Header';
 
 interface NotesPageProps {
   subjectCode: string;
@@ -89,11 +90,12 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
     const lines = markdown.split('\n');
 
     lines.forEach((line) => {
-      // Match headings with optional bold markers and special characters
-      const h1Match = line.match(/^#\s+(.+)$/);
-      const h2Match = line.match(/^##\s+(.+)$/);
-      const h3Match = line.match(/^###\s+(.+)$/);
-      const h4Match = line.match(/^####\s+(.+)$/);
+      // Match headings with optional bold/italic markers (**text**, ***text***)
+      // Updated regex to handle: # **text**, # ***text***, or plain # text
+      const h1Match = line.match(/^#\s+\*{0,3}(.+?)\*{0,3}\s*$/);
+      const h2Match = line.match(/^##\s+\*{0,3}(.+?)\*{0,3}\s*$/);
+      const h3Match = line.match(/^###\s+\*{0,3}(.+?)\*{0,3}\s*$/);
+      const h4Match = line.match(/^####\s+\*{0,3}(.+?)\*{0,3}\s*$/);
 
       if (h1Match) {
         const text = cleanText(h1Match[1]);
@@ -168,65 +170,59 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
 
   return (
     <div className="min-h-screen bg-gray-900">
-      {/* Header */}
-      <div className="bg-gray-800 border-b border-gray-700 sticky top-0 z-10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-4">
+      <Header showBackButton />
+
+      {/* Notes Header - Font Switcher and Title */}
+      <div className="bg-gray-800 border-b border-gray-700 sticky top-[57px] sm:top-[61px] z-10">
+        <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8 py-3 sm:py-4">
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1">
+              <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-indigo-400 shrink-0" />
+              <div className="min-w-0">
+                <h1 className="text-base sm:text-xl lg:text-2xl font-bold text-white truncate">
+                  {subject.name}
+                </h1>
+                <p className="text-xs sm:text-sm text-gray-400">Notes</p>
+              </div>
+            </div>
+
+            {/* Font Switcher */}
+            <div className="relative shrink-0">
               <button
-                onClick={() => router.push(`/quiz/${subjectCode}`)}
-                className="p-2 hover:bg-gray-700 transition-colors rounded"
-                aria-label="Back to quiz"
+                onClick={() => setFontDropdownOpen(!fontDropdownOpen)}
+                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+                aria-label="Change font"
               >
-                <ArrowLeft className="w-6 h-6 text-gray-300" />
+                <Type className="w-3 h-3 sm:w-4 sm:h-4 text-gray-300" />
+                <span className="text-xs sm:text-sm text-gray-200 hidden sm:inline">{selectedFont.name}</span>
+                <ChevronDown className={`w-3 h-3 sm:w-4 sm:h-4 text-gray-300 transition-transform ${fontDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
-              {/* Font Switcher */}
-              <div className="relative">
-                <button
-                  onClick={() => setFontDropdownOpen(!fontDropdownOpen)}
-                  className="flex items-center gap-2 px-3 py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
-                  aria-label="Change font"
-                >
-                  <Type className="w-4 h-4 text-gray-300" />
-                  <span className="text-sm text-gray-200">{selectedFont.name}</span>
-                  <ChevronDown className={`w-4 h-4 text-gray-300 transition-transform ${fontDropdownOpen ? 'rotate-180' : ''}`} />
-                </button>
-                {fontDropdownOpen && (
-                  <>
-                    <div
-                      className="fixed inset-0 z-20"
-                      onClick={() => setFontDropdownOpen(false)}
-                    />
-                    <div className="absolute top-full left-0 mt-2 bg-gray-800 border border-gray-700 rounded-lg shadow-xl z-30 min-w-[180px]">
-                      {fontOptions.map((font) => (
-                        <button
-                          key={font.name}
-                          onClick={() => {
-                            setSelectedFont(font);
-                            setFontDropdownOpen(false);
-                          }}
-                          className={`w-full text-left px-4 py-2.5 text-sm transition-colors hover:bg-gray-700 first:rounded-t-lg last:rounded-b-lg ${selectedFont.name === font.name
-                            ? 'bg-indigo-600 text-white'
-                            : 'text-gray-200'
-                            }`}
-                          style={{ fontFamily: font.family }}
-                        >
-                          {font.name}
-                        </button>
-                      ))}
-                    </div>
-                  </>
-                )}
-              </div>
-              <div className="flex items-center gap-3">
-                <BookOpen className="w-6 h-6 text-indigo-400" />
-                <div>
-                  <h1 className="text-xl sm:text-2xl font-bold text-white">
-                    {subject.name}
-                  </h1>
-                  <p className="text-sm text-gray-400">Notes</p>
-                </div>
-              </div>
+              {fontDropdownOpen && (
+                <>
+                  <div
+                    className="fixed inset-0 z-20"
+                    onClick={() => setFontDropdownOpen(false)}
+                  />
+                  <div className="absolute top-full right-0 mt-2 bg-gray-800 border border-gray-700 rounded-lg shadow-xl z-30 min-w-[160px]">
+                    {fontOptions.map((font) => (
+                      <button
+                        key={font.name}
+                        onClick={() => {
+                          setSelectedFont(font);
+                          setFontDropdownOpen(false);
+                        }}
+                        className={`w-full text-left px-3 sm:px-4 py-2 text-sm transition-colors hover:bg-gray-700 first:rounded-t-lg last:rounded-b-lg ${selectedFont.name === font.name
+                          ? 'bg-indigo-600 text-white'
+                          : 'text-gray-200'
+                          }`}
+                        style={{ fontFamily: font.family }}
+                      >
+                        {font.name}
+                      </button>
+                    ))}
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>
@@ -253,15 +249,15 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
         )}
 
         {markdown && (
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-            {/* Table of Contents - Left Side */}
-            <aside className="lg:col-span-3">
-              <div className="sticky top-[80px] pt-8 self-start">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-8">
+            {/* Table of Contents - Hidden on mobile, visible on lg and up */}
+            <aside className="hidden lg:block lg:col-span-3">
+              <div className="sticky top-[120px] sm:top-[126px] pt-8 self-start">
                 <div
                   className="bg-gray-800 border border-gray-700 rounded-lg p-4 flex flex-col"
                   style={{
                     fontFamily: selectedFont.family,
-                    maxHeight: 'calc(100vh - 120px)'
+                    maxHeight: 'calc(100vh - 160px)'
                   }}
                 >
                   <h2 className="text-lg font-bold text-white mb-3 not-italic flex-shrink-0">Table of Contents</h2>
@@ -297,9 +293,9 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
               </div>
             </aside>
 
-            {/* Main Content - Center/Right Side */}
+            {/* Main Content - Full width on mobile, 9 cols on lg */}
             <article
-              className="lg:col-span-9 max-w-none not-italic pt-8"
+              className="col-span-1 lg:col-span-9 max-w-none not-italic pt-4 lg:pt-8"
               style={{ fontFamily: selectedFont.family }}
             >
               <ReactMarkdown

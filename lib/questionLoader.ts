@@ -2,11 +2,17 @@ import { QuestionFile, IIMBQuestion, Question } from './types';
 
 // Convert IIMB question format to internal format
 export function convertToInternalFormat(iimbQuestion: IIMBQuestion, source?: string): Question {
+  // Check if question is subjective
+  const isSubjective = iimbQuestion.question_type === 'SUBJECTIVE' || !iimbQuestion.correct_option_label;
+
   // Parse comma-separated correct answers (e.g., "A, B, C" -> ["A", "B", "C"])
+  // For subjective questions, this will be an empty array
   const correctAnswers = iimbQuestion.correct_option_label
-    .split(',')
-    .map(ans => ans.trim())
-    .filter(ans => ans.length > 0);
+    ? iimbQuestion.correct_option_label
+      .split(',')
+      .map(ans => ans.trim())
+      .filter(ans => ans.length > 0)
+    : [];
 
   return {
     id: iimbQuestion.question_id,
@@ -16,6 +22,7 @@ export function convertToInternalFormat(iimbQuestion: IIMBQuestion, source?: str
     module: iimbQuestion.module,
     source: source,
     explanation: iimbQuestion.explanation,
+    isSubjective: isSubjective,
   };
 }
 

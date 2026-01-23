@@ -18,9 +18,10 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   showResult,
 }) => {
   const isMultipleAnswer = question.correctAnswer.length > 1;
+  const isSubjective = question.isSubjective || Object.keys(question.options).length === 0;
 
   const handleOptionClick = (option: string) => {
-    if (showResult) return;
+    if (showResult || isSubjective) return;
 
     if (isMultipleAnswer) {
       // For multiple answer questions, toggle selection
@@ -34,6 +35,11 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
       // For single answer questions, select directly
       onAnswer([option]);
     }
+  };
+
+  const handleSubjectiveAcknowledge = () => {
+    // Mark subjective question as "viewed/acknowledged"
+    onAnswer(['SUBJECTIVE_ACKNOWLEDGED']);
   };
 
   const isSelected = (option: string) => {
@@ -67,29 +73,78 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
     return text.replace(/\\n/g, '\n');
   };
 
+  // Render subjective question
+  if (isSubjective) {
+    return (
+      <div className="w-full max-w-3xl mx-auto">
+        <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+          <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-yellow-900/50 text-yellow-300 border border-yellow-800 text-xs font-semibold rounded">
+            Subjective
+          </span>
+          {question.module && (
+            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-indigo-900/50 text-indigo-300 border border-indigo-800 text-xs font-semibold rounded">
+              Mod {question.module}
+            </span>
+          )}
+          {question.source && (
+            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-900/50 text-purple-300 border border-purple-800 text-xs font-semibold rounded truncate max-w-[150px] sm:max-w-none">
+              {question.source}
+            </span>
+          )}
+        </div>
+        <h2 className="text-lg sm:text-2xl font-bold mb-4 sm:mb-6 whitespace-pre-line text-white">
+          {formatText(question.text)}
+        </h2>
+        <div className="bg-yellow-900/20 border border-yellow-700 rounded-lg p-4 sm:p-6">
+          <p className="text-yellow-200 mb-3 sm:mb-4 text-sm sm:text-base">
+            📝 This is a subjective question that requires a written answer.
+            <br />
+            Please answer this question on your exam paper or separately.
+          </p>
+          {!selectedAnswer && !showResult && (
+            <button
+              onClick={handleSubjectiveAcknowledge}
+              className="px-4 sm:px-6 py-2 sm:py-3 bg-yellow-700 hover:bg-yellow-600 text-white border border-yellow-600 font-semibold transition duration-200 text-sm sm:text-base"
+            >
+              Mark as Reviewed
+            </button>
+          )}
+          {(selectedAnswer || showResult) && (
+            <div className="flex items-center gap-2 text-yellow-300">
+              <CheckCircle size={18} className="sm:hidden" />
+              <CheckCircle size={20} className="hidden sm:block" />
+              <span className="font-medium text-sm sm:text-base">Marked as reviewed</span>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // Render regular MCQ question
   return (
     <div className="w-full max-w-3xl mx-auto">
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
         {isMultipleAnswer && (
-          <span className="px-3 py-1.5 bg-amber-900/50 text-amber-300 border border-amber-800 text-xs font-semibold rounded">
+          <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-amber-900/50 text-amber-300 border border-amber-800 text-xs font-semibold rounded">
             Multiple Correct
           </span>
         )}
         {question.module && (
-          <span className="px-3 py-1.5 bg-indigo-900/50 text-indigo-300 border border-indigo-800 text-xs font-semibold rounded">
-            Module {question.module}
+          <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-indigo-900/50 text-indigo-300 border border-indigo-800 text-xs font-semibold rounded">
+            Mod {question.module}
           </span>
         )}
         {question.source && (
-          <span className="px-3 py-1.5 bg-purple-900/50 text-purple-300 border border-purple-800 text-xs font-semibold rounded">
+          <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-900/50 text-purple-300 border border-purple-800 text-xs font-semibold rounded truncate max-w-[150px] sm:max-w-none">
             {question.source}
           </span>
         )}
       </div>
-      <h2 className="text-2xl font-bold mb-6 whitespace-pre-line text-white">
+      <h2 className="text-lg sm:text-2xl font-bold mb-4 sm:mb-6 whitespace-pre-line text-white">
         {formatText(question.text)}
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 gap-2 sm:gap-3">
         {Object.entries(question.options).map(([key, value]) => (
           <button
             key={key}
@@ -99,33 +154,35 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
           >
             <span className="flex items-center justify-between">
               <span className="flex items-center flex-1">
-                <span className={`w-8 h-8 flex items-center justify-center mr-3 ${isSelected(key) && !showResult
-                    ? 'bg-indigo-900 text-white'
-                    : 'bg-gray-700 text-gray-200'
+                <span className={`w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center mr-2 sm:mr-3 text-sm sm:text-base ${isSelected(key) && !showResult
+                  ? 'bg-indigo-900 text-white'
+                  : 'bg-gray-700 text-gray-200'
                   }`}>
                   {isMultipleAnswer && isSelected(key) && !showResult ? (
+                    <Check size={14} className="sm:hidden" />
+                  ) : isMultipleAnswer && isSelected(key) && !showResult ? (
                     <Check size={16} />
                   ) : (
                     key
                   )}
                 </span>
-                <span className="whitespace-pre-line">{formatText(value)}</span>
+                <span className="whitespace-pre-line text-sm sm:text-base">{formatText(value || '')}</span>
               </span>
               {showResult && question.correctAnswer.includes(key) && (
-                <CheckCircle className="inline-block ml-2 text-green-400 flex-shrink-0" size={24} />
+                <CheckCircle className="inline-block ml-2 text-green-400 flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
               )}
               {showResult &&
                 isSelected(key) &&
                 !question.correctAnswer.includes(key) && (
-                  <XCircle className="inline-block ml-2 text-red-400 flex-shrink-0" size={24} />
+                  <XCircle className="inline-block ml-2 text-red-400 flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
                 )}
             </span>
           </button>
         ))}
       </div>
       {showResult && selectedAnswer && question.explanation && (
-        <div className="mt-6 p-4 bg-blue-900/30 border border-blue-700 rounded-lg">
-          <p className="text-gray-200 whitespace-pre-line">{formatText(question.explanation)}</p>
+        <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-blue-900/30 border border-blue-700 rounded-lg">
+          <p className="text-gray-200 whitespace-pre-line text-sm sm:text-base">{formatText(question.explanation)}</p>
         </div>
       )}
     </div>

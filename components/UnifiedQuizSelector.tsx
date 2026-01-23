@@ -50,23 +50,23 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
   const isSetFullySelected = (set: SetWithModules): boolean => {
     const key = getSetKey(set.bankName, set.bankType);
     const selectedModules = selections.get(key);
-    
+
     // For sets without modules, check if the set is selected (marked with special empty array marker)
     if (set.modules.length === 0) {
       // Use a special marker to indicate "all questions from this set"
       return selectedModules?.has('__ALL__') || false;
     }
-    
+
     return selectedModules?.size === set.modules.length;
   };
 
   const isSetPartiallySelected = (set: SetWithModules): boolean => {
     const key = getSetKey(set.bankName, set.bankType);
     const selectedModules = selections.get(key);
-    
+
     // Sets without modules can't be partially selected
     if (set.modules.length === 0) return false;
-    
+
     return (selectedModules?.size || 0) > 0 && (selectedModules?.size || 0) < set.modules.length;
   };
 
@@ -77,10 +77,10 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
       // Get existing selection or create new Set - IMPORTANT: create a new Set to ensure React detects the change
       const existingSet = newSelections.get(key);
       const moduleSet = existingSet ? new Set(existingSet) : new Set<string | number>();
-      
+
       // Remove __ALL__ marker if present (we're selecting individual modules now)
       moduleSet.delete('__ALL__');
-      
+
       // Toggle the module: if selected, deselect it; if not selected, select it
       // This allows deselecting individual modules even when the entire set is selected
       if (moduleSet.has(module)) {
@@ -88,7 +88,7 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
       } else {
         moduleSet.add(module);
       }
-      
+
       // If no modules are selected, remove the key from the map
       if (moduleSet.size === 0) {
         newSelections.delete(key);
@@ -96,7 +96,7 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
         // Update with the new Set (keeps other selected modules intact)
         newSelections.set(key, moduleSet);
       }
-      
+
       return newSelections;
     });
   };
@@ -104,10 +104,10 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
   const toggleSet = (set: SetWithModules) => {
     const key = getSetKey(set.bankName, set.bankType);
     const isFullySelected = isSetFullySelected(set);
-    
+
     setSelections((prev) => {
       const newSelections = new Map(prev);
-      
+
       if (isFullySelected) {
         // Deselect all modules
         newSelections.delete(key);
@@ -120,7 +120,7 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
           newSelections.set(key, new Set(set.modules));
         }
       }
-      
+
       return newSelections;
     });
   };
@@ -128,7 +128,7 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
   const selectAll = () => {
     setSelections((prev) => {
       const newSelections = new Map(prev);
-      
+
       [...claSets, ...examSets].forEach((set) => {
         const key = getSetKey(set.bankName, set.bankType);
         if (set.modules.length > 0) {
@@ -138,7 +138,7 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
           newSelections.set(key, new Set(['__ALL__']));
         }
       });
-      
+
       return newSelections;
     });
   };
@@ -150,29 +150,29 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
   const isAllSelected = () => {
     const allSets = [...claSets, ...examSets];
     if (allSets.length === 0) return false;
-    
+
     return allSets.every((set) => {
       const key = getSetKey(set.bankName, set.bankType);
       const selectedModules = selections.get(key);
-      
+
       if (set.modules.length === 0) {
         // For sets without modules, check for special marker
         return selectedModules?.has('__ALL__') || false;
       }
-      
+
       return selectedModules?.size === set.modules.length;
     });
   };
 
   const handleStartQuiz = () => {
     const selectedSets: Array<{ bankName: string; bankType: 'CLA' | 'Exam'; modules: (string | number)[] }> = [];
-    
+
     selections.forEach((modules, key) => {
       const [bankType, bankName] = key.split(':');
       if (modules.size > 0) {
         // Filter out the special marker and convert to array
         const moduleArray = Array.from(modules).filter(m => m !== '__ALL__') as (string | number)[];
-        
+
         selectedSets.push({
           bankName,
           bankType: bankType as 'CLA' | 'Exam',
@@ -199,29 +199,27 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
     const isPartiallySelected = isSetPartiallySelected(set);
 
     return (
-      <div key={getSetKey(set.bankName, set.bankType)} className="mb-6 p-4 bg-gray-800 border border-gray-700 rounded">
+      <div key={getSetKey(set.bankName, set.bankType)} className="mb-4 sm:mb-6 p-3 sm:p-4 bg-gray-800 border border-gray-700 rounded">
         <button
           onClick={() => toggleSet(set)}
-          className={`w-full text-left mb-3 flex items-center gap-2 ${
-            isFullySelected ? 'text-indigo-400' : isPartiallySelected ? 'text-yellow-400' : 'text-white'
-          } font-semibold hover:text-indigo-300 transition-colors`}
+          className={`w-full text-left mb-2 sm:mb-3 flex items-center gap-2 text-sm sm:text-base ${isFullySelected ? 'text-indigo-400' : isPartiallySelected ? 'text-yellow-400' : 'text-white'
+            } font-semibold hover:text-indigo-300 transition-colors`}
         >
           {/* Circle that becomes a tick when selected */}
-          <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center ${
-            isFullySelected 
-              ? 'bg-indigo-700 border-indigo-600' 
+          <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0 ${isFullySelected
+              ? 'bg-indigo-700 border-indigo-600'
               : isPartiallySelected
-              ? 'bg-yellow-700 border-yellow-600'
-              : 'bg-gray-800 border-gray-600'
-          }`}>
+                ? 'bg-yellow-700 border-yellow-600'
+                : 'bg-gray-800 border-gray-600'
+            }`}>
             {isFullySelected && <Check className="w-3 h-3 text-white" />}
             {isPartiallySelected && <span className="w-2 h-2 bg-yellow-300 rounded-full"></span>}
           </div>
-          {set.displayName}
+          <span className="truncate">{set.displayName}</span>
         </button>
-        
+
         {set.modules.length > 0 && (
-          <div className="flex flex-wrap gap-2 ml-6">
+          <div className="flex flex-wrap gap-1.5 sm:gap-2 ml-4 sm:ml-6">
             {set.modules.map((module) => {
               const selected = isModuleSelected(set.bankName, set.bankType, module);
               return (
@@ -231,13 +229,12 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
                     e.stopPropagation(); // Prevent triggering set toggle
                     toggleModule(set.bankName, set.bankType, module);
                   }}
-                  className={`px-3 py-1.5 text-sm font-medium transition duration-200 border rounded ${
-                    selected
+                  className={`px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm font-medium transition duration-200 border rounded ${selected
                       ? 'bg-indigo-700 text-white border-indigo-600'
                       : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600 hover:border-indigo-500'
-                  }`}
+                    }`}
                 >
-                  Mod {module}
+                  M{module}
                 </button>
               );
             })}
@@ -260,44 +257,42 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
   return (
     <div className="w-full">
       {/* Top Controls */}
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4 mb-4">
         <button
           onClick={allSelected ? deselectAll : selectAll}
-          className={`px-6 py-3 font-semibold transition duration-200 border ${
-            allSelected
-              ? 'bg-gray-700 text-white border-gray-600 hover:bg-gray-600'
-              : 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
-          }`}
+          className={`px-4 sm:px-6 py-2.5 sm:py-3 font-semibold transition duration-200 border text-sm sm:text-base ${allSelected
+            ? 'bg-gray-700 text-white border-gray-600 hover:bg-gray-600'
+            : 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
+            }`}
         >
           {allSelected ? 'Deselect All' : 'Select All'}
         </button>
-        
-        <p className="text-xs text-gray-400 text-center">
+
+        <p className="text-xs text-gray-400 text-center hidden sm:block">
           Click set name to select all questions
         </p>
-        
+
         <button
           onClick={() => setRandomOrder(!randomOrder)}
-          className={`p-3 transition duration-200 border rounded ${
-            randomOrder
-              ? 'bg-purple-700 text-white border-purple-600'
-              : 'bg-gray-800 text-gray-300 border-gray-700 hover:bg-gray-700'
-          }`}
+          className={`p-2.5 sm:p-3 transition duration-200 border rounded self-end sm:self-auto ${randomOrder
+            ? 'bg-purple-700 text-white border-purple-600'
+            : 'bg-gray-800 text-gray-300 border-gray-700 hover:bg-gray-700'
+            }`}
           title="Random Order"
         >
-          <Shuffle className="w-5 h-5" />
+          <Shuffle className="w-4 h-4 sm:w-5 sm:h-5" />
         </button>
       </div>
 
       {/* CLA and Exam Sets Side by Side */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
         {/* CLA Sets */}
         <div>
-          <h2 className="text-2xl font-bold mb-4 text-white border-b border-gray-700 pb-2">
+          <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white border-b border-gray-700 pb-2">
             CLA
           </h2>
           {claSets.length === 0 ? (
-            <p className="text-gray-400">No CLA sets available</p>
+            <p className="text-gray-400 text-sm">No CLA sets available</p>
           ) : (
             claSets.map(renderSet)
           )}
@@ -305,11 +300,11 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
 
         {/* Exam Sets */}
         <div>
-          <h2 className="text-2xl font-bold mb-4 text-white border-b border-gray-700 pb-2">
+          <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white border-b border-gray-700 pb-2">
             Exam
           </h2>
           {examSets.length === 0 ? (
-            <p className="text-gray-400">No Exam sets available</p>
+            <p className="text-gray-400 text-sm">No Exam sets available</p>
           ) : (
             examSets.map(renderSet)
           )}
@@ -317,10 +312,10 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
       </div>
 
       {/* Start Quiz Button */}
-      <div className="flex justify-center mt-8">
+      <div className="flex justify-center mt-6 sm:mt-8">
         <button
           onClick={handleStartQuiz}
-          className="px-8 py-4 bg-green-700 text-white border border-green-600 font-semibold text-lg hover:bg-green-600 transition duration-200"
+          className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-green-700 text-white border border-green-600 font-semibold text-base sm:text-lg hover:bg-green-600 transition duration-200"
         >
           Start Quiz
         </button>
