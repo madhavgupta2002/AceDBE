@@ -93,18 +93,18 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     try {
       // Load questions from all selected sets and modules, grouped by set
       const questionsBySet: Question[][] = [];
-      
+
       for (const set of selections.sets) {
         const setQuestions = await loadQuestions(set.bankType, subjectCode, set.bankName);
-        
+
         // If modules array is empty, it means select all questions from this set
         // Otherwise, filter by selected modules
         const filteredQuestions = set.modules.length === 0
           ? setQuestions
-          : setQuestions.filter(q => 
-              set.modules.includes(q.module || '')
-            );
-        
+          : setQuestions.filter(q =>
+            set.modules.includes(q.module || '')
+          );
+
         if (filteredQuestions.length > 0) {
           questionsBySet.push(filteredQuestions);
         }
@@ -120,10 +120,10 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
       if (selections.randomOrder) {
         // First randomize the order of sets
         const shuffledSets = shuffleArray(questionsBySet);
-        
+
         // Then randomize questions within each set
         const randomizedSets = shuffledSets.map(setQuestions => shuffleArray(setQuestions));
-        
+
         // Flatten into single array
         allQuestions = randomizedSets.flat();
       } else {
@@ -324,27 +324,25 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
               score={quizState.score}
               totalQuestions={quizState.totalQuestions}
               answeredQuestions={quizState.answeredQuestions}
+              size="large"
             />
-            
-            <div className="mt-6 mb-4 flex flex-col sm:flex-row gap-4">
-              <label className="flex items-center gap-2 cursor-pointer">
-                <input
-                  type="checkbox"
-                  checked={showAllQuestions}
-                  onChange={(e) => setShowAllQuestions(e.target.checked)}
-                  className="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600 rounded focus:ring-indigo-500"
-                />
-                <span className="text-white font-medium">
-                  Show all questions with correct answers
-                </span>
-              </label>
+
+            <div className="mt-6 mb-4 flex flex-wrap justify-end gap-3">
               <button
-                onClick={() => setHideWrongOptions(!hideWrongOptions)}
-                className={`px-4 py-2 border font-semibold transition duration-200 ${
-                  hideWrongOptions
+                onClick={() => setShowAllQuestions(!showAllQuestions)}
+                className={`px-4 py-2 border font-semibold transition duration-200 ${showAllQuestions
                     ? 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
                     : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
-                }`}
+                  }`}
+              >
+                {showAllQuestions ? 'Hide Questions List' : 'Show All Questions'}
+              </button>
+              <button
+                onClick={() => setHideWrongOptions(!hideWrongOptions)}
+                className={`px-4 py-2 border font-semibold transition duration-200 ${hideWrongOptions
+                    ? 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
+                    : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
+                  }`}
               >
                 {hideWrongOptions ? 'Show All Options' : 'Hide Wrong Options'}
               </button>
@@ -358,15 +356,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                 {quizState.questions.map((q, index) => {
                   const userAnswer = quizState.answeredQuestions[index];
                   const isCorrect = userAnswer === q.correctAnswer;
-                  
+
                   return (
                     <div
                       key={index}
-                      className={`mb-4 p-4 border ${
-                        isCorrect
-                          ? 'bg-green-900/20 border-green-800'
-                          : 'bg-red-900/30 border-red-800'
-                      }`}
+                      className={`mb-4 p-4 border ${isCorrect
+                        ? 'bg-green-900/20 border-green-800'
+                        : 'bg-red-900/30 border-red-800'
+                        }`}
                     >
                       <p className="font-semibold text-white mb-2">
                         {q.module && <span className="text-indigo-400 mr-2">[Mod {q.module}]</span>}
@@ -385,17 +382,16 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                           .map(([key, value]) => {
                             const isUserAnswer = userAnswer === key;
                             const isCorrectAnswer = key === q.correctAnswer;
-                            
+
                             return (
                               <p
                                 key={key}
-                                className={`text-sm ${
-                                  isCorrectAnswer
-                                    ? 'font-bold text-green-400'
-                                    : isUserAnswer
+                                className={`text-sm ${isCorrectAnswer
+                                  ? 'font-bold text-green-400'
+                                  : isUserAnswer
                                     ? 'text-red-400'
                                     : 'text-gray-400'
-                                }`}
+                                  }`}
                               >
                                 {key}: {value}
                                 {isCorrectAnswer && ' ✓'}
@@ -436,17 +432,16 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                           .map(([key, value]) => {
                             const isUserAnswer = q.selectedAnswer === key;
                             const isCorrectAnswer = key === q.correctAnswer;
-                            
+
                             return (
                               <p
                                 key={key}
-                                className={`text-sm ${
-                                  isCorrectAnswer
-                                    ? 'font-bold text-green-400'
-                                    : isUserAnswer
+                                className={`text-sm ${isCorrectAnswer
+                                  ? 'font-bold text-green-400'
+                                  : isUserAnswer
                                     ? 'text-red-400'
                                     : 'text-gray-400'
-                                }`}
+                                  }`}
                               >
                                 {key}: {value}
                                 {isCorrectAnswer && ' ✓'}
@@ -470,7 +465,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
         )}
 
         {!loading && !quizCompleted && quizState.questions.length > 0 && (
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 pb-28">
             <div className="lg:col-span-9">
               <div className="mb-6">
                 <ModuleSelector
@@ -493,33 +488,6 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                 selectedAnswer={quizState.selectedAnswer}
                 showResult={quizState.showResult}
               />
-
-              <div className="mt-8 flex flex-wrap justify-between items-center gap-4">
-                {quizState.currentQuestionIndex > 0 && (
-                  <button
-                    onClick={() => moveQuestion('prev')}
-                    className="px-4 sm:px-6 py-3 bg-indigo-700 text-white border border-indigo-600 font-semibold hover:bg-indigo-600 transition duration-200 flex items-center"
-                  >
-                    <ArrowLeft className="mr-2" size={20} /> Previous
-                  </button>
-                )}
-
-                <button
-                  onClick={confirmGoToMainMenu}
-                  className="px-4 sm:px-6 py-3 bg-gray-700 text-white border border-gray-600 font-semibold hover:bg-gray-600 transition duration-200 flex items-center"
-                >
-                  <Home className="mr-2" size={20} /> Main Menu
-                </button>
-
-                {quizState.currentQuestionIndex < quizState.totalQuestions - 1 && (
-                  <button
-                    onClick={() => moveQuestion('next')}
-                    className="px-4 sm:px-6 py-3 bg-indigo-700 text-white border border-indigo-600 font-semibold hover:bg-indigo-600 transition duration-200 flex items-center"
-                  >
-                    Next <ArrowRight className="ml-2" size={20} />
-                  </button>
-                )}
-              </div>
             </div>
 
             <div className="lg:col-span-3">
@@ -536,6 +504,49 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
               >
                 Finish Quiz <RefreshCw className="ml-2" size={20} />
               </button>
+            </div>
+          </div>
+        )}
+
+        {/* Fixed Navigation Buttons */}
+        {!loading && !quizCompleted && quizState.questions.length > 0 && (
+          <div className="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 px-2 sm:px-6 lg:px-8 py-4 z-40">
+            <div className="max-w-6xl mx-auto">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
+                <div className="lg:col-span-9">
+                  <div className="flex flex-wrap justify-between items-center gap-3">
+                    {quizState.currentQuestionIndex > 0 ? (
+                      <button
+                        onClick={() => moveQuestion('prev')}
+                        className="px-4 sm:px-6 py-3 bg-indigo-700 text-white border border-indigo-600 font-semibold hover:bg-indigo-600 transition duration-200 flex items-center"
+                      >
+                        <ArrowLeft className="mr-2" size={20} /> Previous
+                      </button>
+                    ) : (
+                      <div className="w-32"></div>
+                    )}
+
+                    <button
+                      onClick={confirmGoToMainMenu}
+                      className="px-4 sm:px-6 py-3 bg-gray-700 text-white border border-gray-600 font-semibold hover:bg-gray-600 transition duration-200 flex items-center"
+                    >
+                      <Home className="mr-2" size={20} /> Main Menu
+                    </button>
+
+                    {quizState.currentQuestionIndex < quizState.totalQuestions - 1 ? (
+                      <button
+                        onClick={() => moveQuestion('next')}
+                        className="px-4 sm:px-6 py-3 bg-indigo-700 text-white border border-indigo-600 font-semibold hover:bg-indigo-600 transition duration-200 flex items-center"
+                      >
+                        Next <ArrowRight className="ml-2" size={20} />
+                      </button>
+                    ) : (
+                      <div className="w-32"></div>
+                    )}
+                  </div>
+                </div>
+                <div className="lg:col-span-3"></div>
+              </div>
             </div>
           </div>
         )}

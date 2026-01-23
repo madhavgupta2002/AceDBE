@@ -26,3 +26,8 @@ body {
 .katex .mord {
   color: #e5e7eb;
 }
+
+/* Hide scrollbar but keep scroll functionality */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
