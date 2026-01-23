@@ -13,3 +13,16 @@ body {
   background: rgb(var(--background-start-rgb));
   min-height: 100vh;
 }
+
+/* KaTeX dark mode styling */
+.katex {
+  color: #e5e7eb;
+}
+
+.katex .base {
+  color: #e5e7eb;
+}
+
+.katex .mord {
+  color: #e5e7eb;
+}

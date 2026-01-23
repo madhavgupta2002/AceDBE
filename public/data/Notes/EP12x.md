@@ -113,7 +113,7 @@
 *   **Definition:** Starting a venture by **personal choice** despite having other career trajectories or vocational options.
 
 *   **The "Pull" Factor:** Driven by the desire to solve a problem, innovate, or disrupt a market.
-*   **Professor’s Favorite Definition:** "Entrepreneurship is the **pursuit of opportunities without having all the resources available**."
+*   **Key Definition:** "Entrepreneurship is the **pursuit of opportunities without having all the resources available**."
 
 *   **Cognitive Game:** Modern OBE is viewed as a **cognitive approach** (logical analysis and opportunity recognition) rather than a personality trait (passion or extroversion).
 
@@ -144,7 +144,7 @@ Q. Correct Statements
 - Entrepreneurship thrives not always with abundant resources but often through creativity driven by constraints.
 - Necessity often drives unique solutions that can disrupt markets just as much as opportunity does.
 
-### **Professor’s Personal Lessons (High-Yield Facts)**
+### **Key Lessons (High-Yield Facts)**
 *   **Food vs. Craft:**
     *   **Food Ventures** (Papad, Energy Bars): Extremely difficult due to quality consistency, shelf life (expiration), and consumer expectations (e.g., comparison to *Lijjat Papad*).
     *   **Craft/Service Ventures** (Screen printing): More successful for beginners because **craft has a long shelf life** (if you don't sell today, you can sell next year).
@@ -184,7 +184,7 @@ Q. Correct Statements
 *   **Mechanism:** If the venture succeeds, the entire community prospers.
 *   **Amul (The Gold Standard):** 
     *   Founded by **Dr. Varghese Kurien**.
-    *   Transformed India from a milk-deficient nation to the world’s largest producer.
+    *   Transformed India from a milk-deficient nation to the world's largest producer.
     *   Model: Village collection centers measure **quantity** and **fat content**; profits return to farmers every 15 days.
 *   **Lijjat Papad:**
     *   Started by seven women in a balcony in the 1950s.
@@ -215,8 +215,8 @@ Q. Correct Statements
 3.  **Debt:** Borrowing money with the obligation to pay it back with interest.
     *   *Example:* **MyCaptain** started with a ₹60,000 loan from parents.
 4.  **Grants:** "Free" money from government or CSR funds that doesn't require giving up equity or repayment.
-    *   *Example:* Karnataka government’s **Elevate 100** program.
-5.  **Venture Capital (VC):** Investing other people’s money (pension funds, HNIs) in exchange for equity.
+    *   *Example:* Karnataka government's **Elevate 100** program.
+5.  **Venture Capital (VC):** Investing other people's money (pension funds, HNIs) in exchange for equity.
     *   **Expectations:** VCs seek **"Hockey Stick" growth** (10x–30x returns).
     *   Venture capital is high-risk; if the company fails, the VC loses the investment.
 
@@ -249,7 +249,7 @@ Q. Correct Statements
 
 ## **Topic 2: Common Ways of Starting a Venture**
 
-The professor identifies **seven popular ways** to enter entrepreneurship:
+**Seven popular ways** to enter entrepreneurship:
 
 1.  **Disruption / "Moonshot":**
     *   Aiming to "put a dent in the universe" (Steve Jobs' term).
@@ -257,7 +257,7 @@ The professor identifies **seven popular ways** to enter entrepreneurship:
     *   *Examples:* Flipkart (legitimized Indian e-commerce), Ather (pioneered EVs in India), Zepto, Meesho.
 2.  **Scratch Your Own Itch:**
     *   Solving a personal problem that the entrepreneur faces.
-    *   *Example:* **Mansi (Truvy)** created a sauces company because she couldn’t find processed food safe for her 4-5 year old child.
+    *   *Example:* **Mansi (Truvy)** created a sauces company because she couldn't find processed food safe for her 4-5 year old child.
 3.  **Moonlighting:**
     *   Starting a venture in spare time while keeping a full-time job.
     *   *Caution:* Entrepreneurs must check the "fine print" in employment contracts regarding Intellectual Property (IP).
