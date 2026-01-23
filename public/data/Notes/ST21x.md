@@ -14,13 +14,6 @@
     *   **Reputation (Reputation-based Exchange):** Works in **close-knit networks**. If an agent cheats, news spreads via gossip, ruining future business prospects.
         *   *Historical Example:* **Maghribi traders** (Middle East/Mediterranean).
 
-Q. Traders in the Italian merchant city of Genoa used which principle to conduct long-distance trade? (CLA)  
-**Repetition**
-
-Q. The medieval Jewish Maghribi traders in the Mediterranean have been conducting long-distance trade based on the principle of **Reputation**. (CLA)
-
-Q. Relational Exchange includes principle of **Reputation** and **Repetition**. (CLA)
-
 ### **B. Power-Based Exchange**
 *   **Nature:** Non-egalitarian; based on coercion or hierarchy. One party (A) exerts power over another (B).
 *   **Characteristics:**
@@ -32,16 +25,11 @@ Q. Relational Exchange includes principle of **Reputation** and **Repetition**. 
     *   **State Enterprises (China):** State directing production and procurement directly.
     *   **Modern Workplace:** Employer-Employee relationship (directives vs. firing).
 
-Q. In China, **State** played a central role in business with businesses acting as subsidiaries of a more massive vertically integrated state. (CLA)
-
 ### **C. Contractual Exchange**
 *   **Nature:** Dominant in the modern economy; allows "Arm’s length" transactions with strangers.
 *   **Key Requirement:** Requires a **Third-Party Enforcer** (The State, Courts, Police, or "The Leviathan").
     *   The enforcer must be **fair** and **effective**. If the enforcer is biased, people revert to relational/power modes.
 *   **Difference:** Unlike relational/power (2 parties), contractual involves 3 parties (Buyer, Seller, Enforcer).
-
-Q. In contractual exchange, who is the "invisible" third party? (CLA)  
-**The Contract Enforcer (The State/Leviathan)**
 
 ---
 
@@ -62,8 +50,6 @@ Q. In contractual exchange, who is the "invisible" third party? (CLA)
     *   **Jati (Caste):** Kinship/Occupational networks (Biradaris).
     *   **Varna:** Social hierarchy regulating economic conduct.
 
-Q. In pre-modern world, **Embeddedness** can give economic actors access to valuable information. (CLA)
-
 ---
 
 ## **1.3 Market Frictions & The Role of Embeddedness**
@@ -74,11 +60,6 @@ Q. In pre-modern world, **Embeddedness** can give economic actors access to valu
     *   *Solution:* Social networks provide better/transparent information about members.
 2.  **Moral Hazard:** The risk that a party will act opportunistically (cheat) after the deal is made.
     *   *Solution:* Communities can impose social sanctions (ostracization, loss of reputation).
-
-Q. Economic transactions are rid with two classic market frictions. What are those? (CLA)  
-**Information asymmetry, Moral hazard**
-
-Q. Evolution of business is closely linked to how forms of **Exchange** evolve. (CLA)
 
 ---
 
@@ -93,9 +74,6 @@ While useful, social structures have significant drawbacks:
 *   **Exclusion/Inequality:**
     *   Insiders erect **Entry Barriers** to limit competition.
     *   Outsiders (marginalized groups) are locked out of economic opportunities.
-
-Q. According to Ronald Burt, what is a disadvantage of very tight-knit social structures? (CLA)  
-**They become echo chambers with a lack of diverse information.**
 
 ---
 
@@ -118,93 +96,6 @@ Q. According to Ronald Burt, what is a disadvantage of very tight-knit social st
     *   **Later Phase:** Became **Cliques/Cabals**. Imposed strict restrictions and entry barriers to limit competition.
     *   **Decline:** Disappeared around 1750-1800 as they stifled open markets.
 
-Q. Merchant **Guilds** were large non-kinship-based networks of merchants who would facilitate trade through networks. (CLA)
-
-Q. What are "Guild secrets"? (CLA)  
-**Rich conduits of information in merchant guilds**
-
----
-
-# **Module 1: Questions & Answers**
-
-**Q1. Relational exchange includes the principles of:** (CLA)  
-*   **Correct Option:** Reputation and Repetition.
-    *   *Explanation:* Relational exchange relies on repeated interactions (future income outweighs cheating) and reputation (social consequences in networks).
-
-**Q2. "Guild Secrets" are best described as:** (CLA)  
-*   **Correct Option:** Censored information of merchant guilds.
-    *   *Explanation:* Guilds acted as cliques that restricted information flow to outsiders to maintain their monopoly/advantage.
-
-**Q3. While contract-based exchange is supposed to be impersonal or generalized, relational and power-based exchange is:** (CLA)  
-*   **Correct Option:** Particularized and built around a person’s identity.
-    *   *Explanation:* In traditional exchanges, *who* you are (your identity/network) dictates business terms, unlike modern contracts where identity matters less.
-
-**Q4. The evolution of business is closely linked to how forms of **Exchange** evolve. (CLA)**  
-*   **Correct Option:** Exchange.
-    *   *Explanation:* The shift from relational/power exchange to contractual exchange defines the history of business evolution.
-
-**Q5. In contractual exchange, who is the "invisible" third party?** (CLA)  
-*   **Correct Option:** The Contract Enforcer (The State/Leviathan).
-    *   *Explanation:* A fair referee (courts/state) is required to enforce agreements between strangers in a contractual system.
-
-**Q6. Which market friction refers to the lack of knowledge about a product's quality or a partner's reliability?** (CLA)  
-*   **Correct Option:** Information Asymmetry.
-    *   *Explanation:* This is the opacity in markets that embeddedness (knowing the person) attempts to solve.
-
-**Q7. According to Ronald Burt, what is a disadvantage of very tight-knit social structures?** (CLA)  
-*   **Correct Option:** They become echo chambers with a lack of diverse information.
-    *   *Explanation:* Access to a variety of groups yields better information than repeating the same info within a closed circle.
-
-**Q3. In cities, a dominant form of business was the family firm like: **Medicis** in Florence and the Fuggers in **Augsburg**. (CLA)**  
-*   **Correct Option:** Augsburg, Medicis
-
----
-
-## **Module 1: Final Exam MCQs (28-Sep-2025)**
-
-**Q1. Whose work argues that bridging multiple social circles improves information diversity? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Ronald Burt
-
-**Q2. What is the chief benefit of conducting business within embedded social structures? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Information asymmetry and moral hazard are reduced
-
-**Q3. A Dalit-owned startup struggles to join legacy networks despite strong products. What challenge is reflected? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Caste-based market exclusion
-
-**Q4. Lineage and religion-based landholding blocks outsiders from buying land or doing business. Which barrier is this? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Social embeddedness
-
-**Q5. A village trader mainly relies on trusted ties with nearby communities. Which exchange mode is exemplified? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Relational exchange
-
-**Q6. A 16th-century Gujarati trader uses letters of recommendation across ports rather than formal contracts. This is… (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Relational exchange
-
-**Q7. Within tightly knit networks, what is a principal downside associated with embeddedness? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Information becomes redundant
-
-**Q8. Associations in a port city regulate prices, quality, and enforcement among members. What institution is this? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Merchant guild
-
-**Q9. A Dalit entrepreneur grows a factory yet faces exclusion from upper-caste networks, limiting opportunities. This highlights challenges under which topic? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Dalit Entrepreneurship
-
-**Q10. Which option is NOT among the three core exchange modes covered in the course? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Government-mandated exchange
-
-**Q11. Guild membership that assures standards and fair dispute resolution primarily supplies which market feature? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Contract enforcement and trust
-
-**Q12. Dense social ties keep fraud low but slow the spread of new ideas. What trade-off is this? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Risk reduction vs. innovation stagnation
-
-**Q13. An entrepreneur trades only within his community, avoiding outsiders even at a profit cost. Which concept explains this? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Embeddedness
-
-**Q14. A pilgrimage site evolving into a business hub where worship and trade intermingle best illustrates… (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Embeddedness
-
-
 ---
 
 # **Module 2: Evolution of Contractual Exchange**
@@ -216,18 +107,6 @@ Q. What are "Guild secrets"? (CLA)
 *   **Historical Context:**
     *   Traditionally, exchange with strangers was limited to specific pockets (Ports/Cities like **Mahajanapadas** in North India).
     *   Early impersonal exchange was restricted to **transparent goods** (e.g., rice) and **spot cash** transactions to minimize uncertainty.
-
-**Q. Contractual exchange increases investments in general. (CLA)**
-*    True
-    *   *Explanation:* Contractual exchange with strangers reduces relationship-specific investments and encourages broader, generalized investment by expanding the circle of opportunity.
-
-**Q. Contractual exchange decreases relationship-specific investments. (CLA)**
-*    Decreases
-    *   *Explanation:* Contractual exchange overshadows relationship-specific exchange.
-
-**Q. Relational and power-based exchange have dominated traditional business. (CLA)**
-*    True
-    *   *Explanation:* Historically, most human exchange occurred in small societies/villages through social networks (relational) or hierarchy (power), not through impersonal contracts.
 
 ---
 
@@ -244,10 +123,6 @@ Q. What are "Guild secrets"? (CLA)
     *   **Impersonal Markets**
     *   **Impartial States**
 
-**Q. In 16th century, Institutions began to lose their influence in Northwestern Europe. (CLA)**
-*    Institutions
-    *   *Explanation:* The shift allowed for the rise of open and generalized economic institutions.
-
 ---
 
 ## **2.3 Contractual Infrastructure (The Third Party)**
@@ -258,10 +133,6 @@ Q. What are "Guild secrets"? (CLA)
     3.  **Enforcement:** Courts and Police became powerful enough to enforce rights based on written evidence.
 *   **Modern Example:** **Uber** relies on a trail of digital records (GPS, ratings). If a driver misbehaves, the platform (Uber) or the State (Police) acts as the third-party enforcer.
 
-**Q. What was the job of public notaries? (CLA)**
-*    Legitimizing transactions
-    *   *Explanation:* Public notaries legitimized transactions and created the legal basis for enforcement.
-
 ---
 
 ## **2.4 Formalization and General Institutions**
@@ -271,14 +142,6 @@ Q. What are "Guild secrets"? (CLA)
     *   Distinct line drawn between **Home** (Personal) and **Work** (Business).
     *   Separate accounts maintained for business expenses versus household expenses.
 *   **Function:** Formalization leaves a **trail of records** (bills, ledgers), making dispute resolution and contract enforcement possible.
-
-**Q. The line between home and work became more distinct, as firms began to Formalize. (CLA)**
-*    Formalize
-    *   *Explanation:* Formalization allowed clear separation and modern business records.
-
-**Q. Greater emphasis on Records and Measurement meant that businesses started to conduct themselves more formally. (CLA)**
-*    Records, Measurement
-    *   *Explanation:* These helped standardize and professionalize business conduct.
 
 ---
 
@@ -293,10 +156,6 @@ Q. What are "Guild secrets"? (CLA)
 *   **Early Examples:** Dutch East India Company (Indonesia) and English East India Company.
 *   **First Markets:** Commodity exchange in **Antwerp**; Stock market in **Amsterdam** (early 1600s).
 
-**Q. Joint stock companies combined the two innovations of generalized institutions. What are those? (CLA)**
-*    Formalization of firm, Emergence of the stock market
-    *   *Explanation:* Joint stock companies formalized ownership and created share markets.
-
 ---
 
 ## **2.6 Modernization of Business in India**
@@ -307,53 +166,6 @@ Q. What are "Guild secrets"? (CLA)
     *   **Professional Management:** Shift from hereditary management (Owner's son) to professional managers (**MBAs**).
     *   **Digital Footprint:** Use of GST, digital payments (Paytm/Google Pay), and GPS creates verifiable transaction records.
     *   **Consumer Redressal:** Platforms (Swiggy, Zomato) and courts allow feedback and dispute resolution, enabling trust between strangers.
-
-**Q. In India, financial regulators have matured and started to demand greater transparency and governance structure. (CLA)**
-*    True
-    *   *Explanation:* Regulatory maturation ensures transparency and better business governance.
-
-**Q. Cities that are Cosmopolitan and accessible attract capital and bring productive partnerships. (CLA)**
-*    Cosmopolitan, accessible
-    *   *Explanation:* Openness and accessibility draw capital and talent.
-
----
-
-## **Module 2: Final Exam MCQs (28-Sep-2025)**
-
-**Q1. Which innovation was pivotal to the rise of modern business in Northwestern Europe? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Double-entry bookkeeping
-
-**Q2. Investors in 1600s Amsterdam buy voyage shares via standardized legal documents without meeting captains. This signals… (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** The rise of impersonal exchange
-
-**Q3. A kinship-dominated trading society opens to outsiders and anonymous transactions. This is a move from ________ to ______ exchange. (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Embedded → impersonal
-
-**Q4. Thousands fund a risky Asian voyage and share profits/losses through a single firm. Which financial innovation is at work? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Risk-sharing via the joint stock model
-
-**Q5. In market evolution, coffeehouses became important because they… (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Served as “third places” for commerce and discussion
-
-**Q6. Which early joint-stock companies were cited as exemplars? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** The Dutch East India Company and the English East India Company
-
-**Q7. What key distinction separates a partnership from a joint-stock company, per the course? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Partnerships involve a few owners; joint-stock firms can have thousands**Q8. A trading voyage is financed by hundreds of small shareholders. Which feature enables pooling large capital? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Separation of ownership and management
-
-**Q9. Which city was not highlighted as a key Atlantic trade hub in Northwestern Europe? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Lisbon
-
-**Q10. In contractual exchange, what is the primary role of a “contract enforcer”? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Resolving disputes and deterring opportunism
-
-**Q11. Historically, what tends to happen when port cities become overcrowded with merchants? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Merchant guilds lose influence
-
-**Q12. A cotton trader shifts from local, relationship-based deals to anonymous international transactions. What transition is this? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Rise of impersonal exchange
-
 
 ---
 
@@ -369,22 +181,6 @@ Q. What are "Guild secrets"? (CLA)
     *   **Pattern:** Exponential rise in per capita income (shaped like a hockey stick).
     *   **Diffusion:** Started in **England/Northwestern Europe**, spread to the US, Japan, and later East Asia.
 
-**Q. After the 1500s and especially after the 1750s, an uncharacteristic exponential growth (hockey stick) happened. (CLA)**
-*   **Hockey stick**
-    *   *Explanation:* Economic historians describe the sudden vertical rise in GDP per capita after centuries of stagnation as a "hockey stick" curve.
-
-**Q. What is stagnation of per capita income in traditional economies is referred to as? (CLA)**
-*   **Malthusian Trap**
-    *   *Explanation:* Traditional economies were stuck in a state where population growth absorbed potential income gains, trapping per capita income.
-
-**Q. Until around 1500 the per capita income of the world was largely ________. (CLA)**
-*   **Stagnant**
-    *   *Explanation:* The world saw little change in per capita income before the growth acceleration.
-
-**Q. What took place as the Malthusian Trap declined? (CLA)**
-*   **Population growth**
-    *   *Explanation:* As societies started to escape this trap, population growth ensued.
-
 ---
 
 ## **3.2 Social Structure & Knowledge Transmission**
@@ -393,14 +189,6 @@ Q. What are "Guild secrets"? (CLA)
     1.  **Home/Parents:** High incentive (love), but limited skill/expertise.
     2.  **Embedded (Clan/Caste/Guild):** Higher expertise than parents. Requires monitoring/reputation to ensure the master teaches the child well (overcoming moral hazard).
     3.  **Market (Strangers):** Access to the **best teachers** globally. Theoretically leads to the fastest innovation but faces the highest risk of opportunism/unreliability.
-
-**Q. As a clan is larger, a more diverse set of skills can be taught to a child. (CLA)**
-*   **True**
-    *   *Explanation:* A larger network (Clan/Guild) offers more variety in expertise compared to a single family unit.
-
-**Q. A family-based teaching is better than clan-based teaching. (CLA)**
-*   **False**
-    *   *Explanation:* Clan- or guild-based teaching exposes the child to wider expertise than the family alone.
 
 ---
 
@@ -414,14 +202,6 @@ Q. What are "Guild secrets"? (CLA)
     *   **Concept:** **Science of Association**. Humans have the capacity to trust and cooperate voluntarily without force.
 *   **Elinor Ostrom:**
     *   Communities with **norms of reciprocity** manage common resources better than isolated individuals.
-
-**Q. Hobbes believed that Human nature was selfish, and given this nature, a "common power" like a State (or Leviathan) was needed. (CLA)**
-*   **State**
-    *   *Explanation:* Hobbes argued that to make strangers uphold promises, a higher authority (State) must exist to punish non-compliance.
-
-**Q. What is the "Mother of all Sciences" that Americans excelled at, according to Tocqueville? (CLA)**
-*   **The Science of Association**
-    *   *Explanation:* Tocqueville highlighted Americans' unmatched ability to voluntarily form associations and solve collective problems.
 
 ---
 
@@ -437,10 +217,6 @@ To transition from embedded/relational exchange to market exchange, three elemen
     *   Trust and ethical behavior.
     *   **Luigi Guiso’s Research:** High-trust societies (e.g., high blood donation rates) have more business on credit/cheques.
 
-**Q. What are the two ingredients necessary for sustaining impersonal exchange between strangers? (CLA)**
-*   **Strong incentives and mass formalization**
-    *   *Explanation:* For exchange with strangers to work, there must be strong incentives to participate and institutions to support reliability.
-
 ---
 
 ## **3.5 The Rise of Northwestern Europe (16th Century)**
@@ -455,44 +231,7 @@ To transition from embedded/relational exchange to market exchange, three elemen
         *   **Standardization:** Reduced discrimination; strangers were treated with the same rules as friends/family.
     *   *Example:* **British East India Company** (highly bureaucratic and formal).
 
-**Q. Merchant guilds declined first in cities that met which criteria? (CLA)**
-*   **Located near the Atlantic coast, benefited from the commercial revolution, and had high levels of printing**
-    *   *Explanation:* The combination of geographic access, commercial opportunity, and new business technologies spurred market emergence.
-
-**Q. What role does "Formalization" play in market emergence? (CLA)**
-*   **It standardizes business behavior, reducing discrimination between friends and strangers**
-    *   *Explanation:* Systems and processes ensure that businesses treat all customers uniformly, which encourages trust and scale.
-
 ---
-
-## **Module 3: Final Exam MCQs (28-Sep-2025)**
-
-**Q1. Why did Indian cotton textiles command premiums over Europe’s wool/hemp? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Uniquely soft, fine, and colorful cotton
-
-**Q2. Colonial policies push Indian farmers toward cotton for British mills, disrupting food security and business patterns. This reflects… (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Transformation of Indian Business under colonialism
-
-**Q3. Why has India’s handloom sector endured despite industrialization? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Cultural relevance, unique products, and adaptation
-
-**Q4. In the 19th century, British machine-made cloth undercuts Indian firms. Which historical process is illustrated? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Transformation of Indian Business
-
-**Q5. Tracing everyday objects to reveal patterns of trade and adaptation requires which core skill? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Historical and cultural analysis
-
-**Q6. Medieval India’s global textile edge stemmed primarily from… (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Distinct weaving and color-fastening skills
-
-**Q7. Village weavers tied to guilds lose work as machine-made cloth floods markets. This reflects… (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** The impact of the Industrial Revolution
-
-**Q8. Imagining Dara Shikoh defeating Aurangzeb to speed openness and technology adoption is an example of… (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Counterfactual analysis
-
-**Q9. Which innovation supported Indian exports to hot regions like the Arabian Peninsula? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Oil-dipped cotton headgear for cooling
 
 # **Module 4: Sustaining Market Development**
 
@@ -505,11 +244,6 @@ To transition from embedded/relational exchange to market exchange, three elemen
     *   **Definition:** Incorporating routines/tech that create a record trail, preventing discrimination between strangers and friends.
     *   **Example:** **Uber/Ride-hailing apps**. Digital records (GPS, ratings) formalize transactions, allowing strangers to trust drivers/riders.
     *   **Impact:** Disrupts traditional brokerage models (e.g., travel agents) and creates direct markets.
-
-**Q.** Examples where information access has improved reliability in business is:  
-- Tourism industry  
-- Travel industry  
-- Taxi industry
 
 ---
 
@@ -526,12 +260,6 @@ To transition from embedded/relational exchange to market exchange, three elemen
     *   **NGOs & Media:** Essential to expose cronyism (nexus between politicians and business) and negative externalities (pollution, data theft).
     *   **Muckraking Journalism (US 1902-1917):** Investigative journalism that exposed business corruption and led to regulation.
 
-**Q.** “Progress isn’t natural” was pointed out by: **Joel Mokyr**
-
-**Q.** When pro-business policies begin to dominate over pro-market policies it gives rise to **Concentration**.
-
-**Q.** The relationship between Capitalism and Capitalists can be described as: **Saving capitalism from the capitalists**
-
 ---
 
 ## **4.3 Drivers of Development: Institutions, Culture, & Tech**
@@ -544,17 +272,11 @@ To transition from embedded/relational exchange to market exchange, three elemen
     *   **Civil Law:** More codified/bureaucratic; often prone to capture by special interests.
 *   **The China Exception:** Rapid growth despite autocratic formal institutions due to a "friendly business environment" and trusted informal norms.
 
-**Q.** Pro-Market policies are meant to be impartial towards all business and are supposed to increase competition. **True**
-
-**Q.** Regions with civil law heritage where law was codified by politicians... were more prone to capture by special interest. **True**
-
 ### **B. Informal Institutions & Culture**
 *   **Africa Case:** Regions closer to capitals rely on formal laws; distant regions rely on informal/tribal norms.
 *   **Slave Trade Legacy:** African regions historically impacted by the slave trade show **lower trust** and lower economic outcomes today.
 *   **Civic Capital (Italy):** History of **City Republics** (11th-12th Century) correlates with high civic capital today (e.g., higher blood donation, check usage over cash).
 *   **Trust & Firm Structure:** High-trust societies allow firms to **decentralize** (trusting managers) and scale up.
-
-**Q.** What historical event in Africa is correlated with lower levels of trust today? **The Slave Trade**
 
 ---
 
@@ -567,8 +289,6 @@ To transition from embedded/relational exchange to market exchange, three elemen
     *   Reduces price dispersion (price gaps between regions shrink).
     *   Increases land value and market access.
 
-**Q.** The digital infrastructure has reduced transaction costs and companies are no longer bound to a specific location for communication related reasons. **Digital**
-
 ---
 
 ## **4.4 The Indian Context: The Metropolis Vacuum**
@@ -577,12 +297,6 @@ To transition from embedded/relational exchange to market exchange, three elemen
 *   **Consequences:**
     *   **Vicious Cycle:** Talent and capital flight from the Heartland to the South/West.
     *   **Poverty Trap:** High dropout rates and low female workforce participation in the Heartland.
-
-**Q.** The Hindi heartland should address the **Metropolis vacuum**, by focusing on reversing the flight of talent and labor.
-
-**Q.** The "Metropolis Vacuum" refers to: **The lack of major metropolitan agglomerations in the Hindi Heartland (Gangetic Plain)**
-
-**Q.** Delhi and NCR enjoy high levels of political **Autonomy**, and the power to set their own policies, future direction and taxation.
 
 ---
 
@@ -598,41 +312,4 @@ To transition from embedded/relational exchange to market exchange, three elemen
     *   Physical infrastructure (Roads/Bridges) is useless without human infrastructure (Health/Education).
     *   **The Bangladesh/Tamil Nadu Model:** Focus on **women's education and health** $\rightarrow$ women enter workforce $\rightarrow$ economic boom (e.g., Textiles).
 
-**Q.** The "Pearl River Delta" model is an example of: **High regional autonomy leading to massive economic output**
-
-**Q.** **Economic** clusters shall attract business, talent and capital, where they could benefit from region’s youth, institutions and low costs, especially in manufacturing.
-
 ---
-
-# **Module 4: Questions & Answers**
-
-**Q.** Financial development has not had a unidirectional flow of progress throughout history. **True**
-
-**Q.** The job of a firm is to minimize competition, increase entry barriers and maximize profit. **True**
-
-**Q.** According to Joel Mokyr, "Progress isn't **Natural**"
-
-**Q.** What is a "Pro-Society Policy"? **A policy designed to promote the overall well-being of society (public goods, equity) rather than specific groups**
-
-**Q.** Research by Acemoglu, Johnson, and Robinson suggests that regions where colonizers had higher mortality rates (and thus did not settle) have: **Lower levels of development today**
-
-**Q.** Muckraking journalism in the US (1902-1917) primarily exposed: **Corruption in business**
-
----
-
-## **Module 4: Final Exam MCQs (28-Sep-2025)**
-
-**Q1. Why do experience-based products (tourism, hand-crafted saris, artisan coffee) retain demand? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** People seek personalized, authentic experiences
-
-**Q2. Merchants create standardized legal rules across cities to curb trust failures. What market-supporting element are they building? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Property rights
-
-**Q3. That everyday people now enjoy comforts beyond past Nawabs suggests… (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Technology has broadened access to “luxury”
-
-**Q4. Post 1990s, Indian firms grow globally with better access to tech, finance, and supply chains. Which trend is shown? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Globalization of Indian Business
-
-**Q5. Workers once feared machines would erase jobs, yet new roles later emerged. What market lesson follows? (Final Exam: 28-Sep-2025)**  
-*   **Correct Option:** Tech can displace some jobs but also creates new ones

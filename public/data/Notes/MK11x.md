@@ -13,44 +13,12 @@
 *   **Level 5: Self-Actualization:** Achieving full potential and pursuing passions (e.g., art, music, philanthropy) after other needs are met.
 *   **Application:** Marketers must identify which need level their product satisfies. Products can satisfy multiple levels (e.g., a phone satisfies social needs; games satisfy relaxation/physiological needs).
 
-**Q1:** *Shelter is a basic need, but a luxury apartment is a want.*  
-**A1:** *True*
-
-**Q2:** *The difference between a need and a want is that needs are specific to individuals, while wants are universal.*  
-**A2:** *False*
-
-**Q3:** *Food is a want, and pizza is a need.*  
-**A3:** *False*
-
-**Q4:** *Marketers can only create wants by influencing consumer behavior toward specific products or services.*  
-**A4:** *False*
-
-**Q5:** *A person’s __________ might be to stay healthy, but there __________ could be to purchase organic foods or follow a specific diet.*  
-**A5:** *need; want*
-
-**Q6:** *Sagar is a successful entrepreneur. He buys a luxury watch that is marketed as a symbol of exclusivity and sophistication. This purchase enhances Sagar’s sense of self-worth and social status. Which type of need is being fulfilled in this case?*  
-**A6:** *Esteem Needs*
-
-**Q7:** *Raju feels deprived of having a vehicle for travelling within the city. It becomes extremely difficult for him many times to travel. He went out today and purchased a bike. In this case vehicle can be said as his need and bike can be said as his want.*  
-
 ---
 
 ### **1.2 Needs vs. Wants**
 *   **Need:** A felt sense of deprivation of basic necessities (e.g., hunger, communication, safety). Marketers **cannot** create needs; they pre-exist.
 *   **Want:** Specific satisfiers for needs, shaped by culture and personality (e.g., Need: Food $\rightarrow$ Want: Burger/Pizza). Marketers influence wants.
 *   **Value:** Benefit divided by Cost. Value exists when Benefit > Cost.
-
-**Q8:** *Which of the following does not accurately describe a characteristic of a market?*  
-**A8:** *A location where supply and demand play no role in transactions*
-
-**Q9:** *Which of the following is NOT an example of a market?*  
-**A9:** *Factory assembly line*
-
-**Q10:** *Which from the following refers to the type of market?*  
-**A10:** *Commodity; Global; International; Stock*
-
-**Q11:** *You visited the market to purchase a pair of shoes. Although the shoes fit your needs perfectly, you find them quite expensive. The seller is explaining all the features of the product, highlighting how they meet your needs and justifying the price. What is the seller attempting to do in this situation?*  
-**A11:** *Create and justify value for the shoe in the mind of customer.*
 
 ---
 
@@ -67,27 +35,6 @@
     *   **B2B (Business to Business):** Manufacturer $\rightarrow$ Wholesaler $\rightarrow$ Retailer.
 *   **Types of Markets (by Geography):** Local, National, Global. (Note: Digital markets/platforms like Amazon defy strict geographic boundaries).
 
-**Q12:** *If the retailer sells refrigerators and washing machines, what type of market is the retailer involved in?*  
-**A12:** *White goods market*
-
-**Q13:** *What type of market is Amazon?*  
-**A13:** *A virtual market*
-
-**Q14:** *What differentiates a white goods market from an FMCG market?*  
-**A14:** *White goods include appliances like refrigerators, while FMCG includes daily-use products like toothpaste*
-
-**Q15:** *FMCG products are typically durable goods that last several years.*  
-**A15:** *False*
-
-**Q16:** *Consumer markets are mainly focused on:*  
-**A16:** *Individual consumers purchasing goods and services for personal use*
-
-**Q17:** *In an economic context, a market is where the forces of __________ and __________ determine prices.*  
-**A17:** *demand; supply*
-
-**Q18:** *Which of the following is NOT a criterion for defining the available market?*  
-**A18:** *Product innovation*
-
 ---
 
 ## **Topic 2: Introduction to Marketing Concepts**
@@ -98,12 +45,6 @@
     *   **Free Exchange:** Buyer has freedom to buy; Seller has freedom to sell (Democracy of choice).
 *   **Marketing Management (Managerial Definition):** The process of planning and executing the **conception, pricing, promotion, and distribution** of ideas, goods, and services to create exchanges that satisfy individual and organizational goals.
     *   **Ideas can be marketed:** e.g., "Donate Blood," "Save Water," Playlists (Spotify).
-
-**Q19:** *In Kotler's definition, marketing is only concerned with individuals, not groups.*  
-**A19:** *False*
-
-**Q20:** *Which of the following options refers to "Customer Value"?*  
-**A20:** *The usability of the product against its price; The benefits received by the customer relative to the cost of the product*
 
 ---
 
@@ -117,9 +58,6 @@
     *   Focus: Making product $\rightarrow$ Finding customer $\rightarrow$ Aggressive pushing.
     *   Philosophy: Inside-Out approach.
 
-**Q21:** *Given that marketing activities are visible and accessible to the local public, it is irrelevant whether the company has defined its target market; the marketing message will inevitably reach customers.*  
-**A21:** *False*
-
 ---
 
 ### **2.3 Marketing Vocabulary**
@@ -129,12 +67,6 @@
     *   **Consumer:** The one who uses/consumes. (Can be the same person, but often different in B2B or family purchases).
 *   **Relationship Marketing:** Focus on customer retention and long-term engagement (familial bond) rather than single transactions.
 *   **Societal Marketing:** Delivering value in a way that preserves/enhances the consumer’s and society’s well-being (e.g., avoiding pollution, healthy products).
-
-**Q22:** *Understanding the target consumer is crucial for developing effective marketing strategies.*  
-**A22:** *True*
-
-**Q23:** *The marketing process involves only the selling of products and services, not the exchange.*  
-**A23:** *False*
 
 ---
 
@@ -151,15 +83,6 @@
 3.  **Constructing & Delivering Value:** Executing the Marketing Mix.
 4.  **Sustaining Value:** Customer Acquisition vs. Customer Retention.
 
-**Q24:** *Which from the following is crucial for developing sustainable marketing strategies?*  
-**A24:** *Understanding customer value*
-
-**Q25:** *Value is determined by dividing the cost by the benefits received.*  
-**A25:** *False*
-
-**Q26:** *The value provided by a product remains constant across different age groups.*  
-**A26:** *False*
-
 ---
 
 ### **3.2 The Marketing Mix (The Ps)**
@@ -173,9 +96,6 @@
     5.  **People:** Service providers/staff skill.
     6.  **Process:** How the service is delivered (steps, hygiene).
     7.  **Physical Evidence:** Environment, testimonials, tangible cues.
-
-**Q27:** *If a start-up company tries to generate a USP for its offering, which of the following stages reflects this activity?*  
-**A27:** *Positioning*
 
 ---
 
@@ -196,9 +116,6 @@
     *   **Focus:** Identifying needs/wants of target markets and delivering satisfaction better than competitors.
     *   **Pillars:** Target market, Customer needs, Integrated marketing, Profitability.
 5.  **Societal/Relationship Marketing:** (Modern Era) Focus on social welfare and long-term customer bonds.
-
-**Q28:** *"Rahul works in an ed-tech company. He went along with his team members to enquire for a Learning management System that acts as a platform for students to view the course content of the institute. They enquired and negotiated with a lot of vendors for a couple of days and then finalized the best one available in their budget." In this case, what kind of purchase is reflected?*  
-**A28:** *Group purchase*
 
 ---
 
@@ -254,19 +171,6 @@
 *   **Positioning:** Creating a perception in the customer's mind.
 *   **Differentiation:** Distinguishing the offering from competitors.
 
-**_Q1:_**  
-*After segmentation, the next step in the marketing strategy is __________.*  
-**_A1:_**  
-*targeting*
-
-**_Q2:_**  
-*STDP: Exclude the incorrect option and select all correct options.*  
-**_A2:_**  
-*A. Targeting  
-B. Differentiation  
-C. Positioning  
-D. Segmentation*
-
 ### **1.2 Analyzing Customer Profiles (Coca-Cola Case Study)**
 *   **Objective:** Identify Target, Value, and Strategy based on ad campaigns.
 *   **Campaign 1 (North India):**
@@ -294,21 +198,6 @@ D. Segmentation*
 *   **Product vs. Customer:** **Customers are segmented**, not products. Products are created *based* on segmented customer needs.
     *   *Example:* Sunsilk creates different variants (Black Shine, Hair Fall Solution, Straight) because customers have different hair needs.
 
-**_Q3:_**  
-*Select the parameters that are used for demographic segmentation.*  
-**_A3:_**  
-*Age, Gender, Income, Occupation*
-
-**_Q4:_**  
-*[Question text obscured: Refers to the process of dividing a market]*  
-**_A4:_**  
-*Segmentation*
-
-**_Q5:_**  
-*What from the following represent the base of segmentation?*  
-**_A5:_**  
-  Geographic, Technographic, Psychographic, Demographic
-
 ### **2.2 Approaches to Marketing**
 *   **Mass Marketing (Undifferentiated):**
     *   **Approach:** Shotgun Approach (Blast without aiming).
@@ -320,16 +209,6 @@ D. Segmentation*
 *   **Niche Marketing:**
     *   **Concept:** Serving a small, specific market segment with high customization.
     *   **Characteristics:** High price, high service, specific needs (e.g., Diabetic food, luxury custom suits).
-
-**_Q6:_**  
-*Segmentation is the process of dividing the heterogeneous market into homogeneous groups.*  
-**_A6:_**  
-*(Practice)*
-
-**_Q7:_**  
-*Soham stores targets only the children below 8 years for all types of items it has. What type of segmentation strategy can be seen in this case?*  
-**_A7:_**  
-*A. Market Specialization*
 
 ---
 
@@ -428,27 +307,12 @@ Marketers analyze three blocks of parameters to select a target:
     *   **Undifferentiated:** Mass marketing (One offer).
     *   **Differentiated:** Different products for different segments (e.g., Coca-Cola, GM, Microsoft).
 
-**_Q8:_**  
-*Targeting involves selecting specific segments to focus marketing efforts on.*  
-**_A8:_**  
-*True*
-
 # **Module 3: Positioning and Marketing Strategy**
 
 ## **Topic 1: Differentiation**
 ### **1.1 Concept**
 *   **Definition:** The act of designing a set of meaningful differences to distinguish the company’s offering from competitors.
 *   **Objective:** To answer "How is our offering different/better?" after identifying the target segment.
-
----
-
-***QnA:***
-
-**Q1. Differentiation can only be based on price and quality.**  
-**A1. False**
-
-**Q2. Differentiations related to form, features, performance, quality, etc. reflects product differentiation.**  
-**A2.** *(See explanation in Product Differentiation above)*
 
 ---
 
@@ -467,20 +331,6 @@ Marketers analyze three blocks of parameters to select a target:
 *   **Channel Differentiation:** Coverage area, expertise, and performance of distribution channels.
 *   **Image Differentiation:** Symbols, media, atmosphere (e.g., luxury store ambience), and events.
 
-***QnA:***
-
-**Q3. Which of the following is a differentiation factor specifically related to service?**  
-**A3. c. Ordering ease**
-
-**Q4. Which of the following aspects are included in differentiation based on service.**  
-**A4. ordering ease, installation, customer training, delivery**
-
-**Q5. Imagery-based differentiation refers to the functional aspects of a product, such as features and durability.**  
-**A5. False**
-
-**Q6. Performance-based differentiation can be seen in products like Surf, which emphasizes quality in stain removal.**  
-**A6. True**
-
 ---
 
 ## **Topic 2: Positioning**
@@ -488,17 +338,6 @@ Marketers analyze three blocks of parameters to select a target:
 *   **Definition (Al Ries & Jack Trout):** Positioning is not what you do to a product; it is what you do to the **mind of the prospect**.
 *   **Definition (Kotler):** Act of designing the company’s offering and image to occupy a distinctive place in the mind of the target market.
 *   **Goal:** To maximize potential benefit to the firm by clarifying the brand's essence.
-
-***QnA:***
-
-**Q7. Positioning is about creating a perception in the consumer's mind regarding a product.**  
-**A7. True**
-
-**Q8. Positioning refers to communication of USP to the customers.**  
-**A8.** *(Correct; see positioning definition above)*
-
-**Q9. Positioning is the process of selecting a homogeneous segmented part from the whole heterogeneous market to sell the product.**  
-**A9. B. False**
 
 ---
 
@@ -510,21 +349,6 @@ Marketers analyze three blocks of parameters to select a target:
     *   **Consumer Ideal Points:** Where the customer wants the product to be.
 *   **Usage:** Identifies market gaps, brand proximity to competitors, and alignment with consumer preferences.
 
-***QnA:***
-
-**Q10. Which tool can be used to visualize a brand's position in relation to its competitors?**  
-**A10. Perceptual Map**
-
-**Q11. Which of the following are the techniques of perceptual mapping?**  
-**A11.**  
-A. Factor Analysis  
-B. Multi-dimensional scaling  
-C. Cluster Analysis  
-D. Conjoint Analysis
-
-**Q12. A __________ map is used to visualize the positioning of brands in relation to each other.**  
-**A12. Perceptual**
-
 ---
 
 ### **2.3 POP and POD**
@@ -532,11 +356,6 @@ D. Conjoint Analysis
 *   **Points of Difference (POD):** Attributes or benefits consumers strongly associate with a brand, positively evaluate, and believe they cannot find to the same extent with a competitor.
     *   **Selection Criteria for POD:** Desirable to consumer, Deliverable by company, Distinctive from competitor.
     *   **Rule of Thumb:** Focus on 1-2 key differences to avoid confusion.
-
-***QnA:***
-
-**Q13. Imagery-based differentiation refers to the functional aspects of a product, such as features and durability.**  
-**A13. False**
 
 ---
 
@@ -554,14 +373,6 @@ D. Conjoint Analysis
 *   **Target Market:** Part of the available market the company decides to pursue (Qualified Available Market).
 *   **Penetrated Market:** Set of consumers actually buying the product.
 
-***QnA:***
-
-**Q14. Differentiation is the act of designing a set of meaningful __________ to distinguish a company's offering from that of competitors.**  
-**A14. d. Differences**
-
-**Q15. Differentiation is the act of designing a set of meaningful __________ to distinguish a company's offering from that of competitors.**  
-**A15. Differences**
-
 ---
 
 ### **3.2 Demand Concepts**
@@ -571,20 +382,6 @@ D. Conjoint Analysis
 *   **Market Potential:** The upper limit of market demand where further marketing spend does not increase demand (Market saturation).
 *   **Primary Demand:** Demand for the **Product Category** (e.g., Soap).
 *   **Secondary Demand:** Demand for a **Specific Brand** (e.g., Lux).
-
-***QnA:***
-
-**Q16. Market __________ represents the demand corresponding to a certain level of marketing __________.**  
-**A16. forecast; expenditure**
-
-**Q17. Market forecast is independent of the company's marketing expenditure.**  
-**A17. False**
-
-**Q18. Primary demand refers to the demand for a specific brand.**  
-**A18. False**
-
-**Q19. Market potential is the maximum demand that can be achieved, beyond which additional marketing expenditure will not increase demand.**  
-**A19. True**
 
 ---
 
@@ -599,17 +396,6 @@ D. Conjoint Analysis
     3.  **Question Marks (High Growth, Low Share):** Problem children. Require cash to become Stars, otherwise they fail.
     4.  **Dogs (Low Growth, Low Share):** Low profit potential. Divest or liquidate.
 
-***QnA:***
-
-**Q20. Which of the following is a feature of strategic business units (SBUs)?**  
-**A20. b. SBUs function as independent profit centers with their own competitors**
-
-**Q21. A corporate mission is established after strategic business units (SBUs) are identified.**  
-**A21. False**
-
-**Q22. The process of breaking down a corporate objective, like increasing market share, involves dividing targets by product, geography, or brand.**  
-**A22. True**
-
 ---
 
 ## **Topic 4: Corporate and Marketing Strategy**
@@ -617,14 +403,6 @@ D. Conjoint Analysis
 1.  **Corporate Strategy:** Overall direction (Mission/Vision).
 2.  **SBU Strategy:** Strategy for specific business units/product lines.
 3.  **Marketing Strategy:** Functional execution (STP + 4Ps).
-
-***QnA:***
-
-**Q23. What does corporate strategy primarily focus on?**  
-**A23. c. Organizational goals and objectives**
-
-**Q24. It is crucial for a company to understand all of the following except __________ to create a sustainable marketing strategy.**  
-**A24. c. Personal aspirations of employees**
 
 ---
 
@@ -687,13 +465,6 @@ To develop marketing strategy, analyze:
     *   **Customer:** Someone who regularly purchases from a specific store/brand (Specific association).
 *   **Significance:** Understanding behaviour helps marketers modify strategy (Segmentation, Targeting, Positioning) to deliver better value.
 
-***_QnA:_***
-**Q1. Maslow’s hierarchy of needs begins with self-actualization and ends with physiological needs.**  
-*False*
-
-**Q2. According to Maslow's hierarchy, esteem needs come after self-actualization.**  
-*False*
-
 ---
 
 ### **1.2 Buying Roles**
@@ -732,13 +503,6 @@ To develop marketing strategy, analyze:
     *   **Desired State Driver:** Aspiration, new fashion, social status (Opportunity Recognition).
 *   **Purchase Intention Categories:** Firm Immediate, Firm Not Immediate, Positive, Neutral, Negative.
 
-***_QnA:_***
-**Q3. Mark all options reflecting purchase intention categories.**  
-*A. Firm and immediate Consumers*  
-*B. Firm but not immediate Consumers*  
-*C. Not interested Consumers*  
-*D. Negative consumers*
-
 ---
 
 ### **Stage 2: Pre-Purchase Information Search**
@@ -751,10 +515,6 @@ To develop marketing strategy, analyze:
     1.  **Extended Problem Solving (EPS):** High risk, high involvement, unfamiliar product (e.g., buying a house/car). Requires extensive external search.
     2.  **Limited Problem Solving (LPS):** Familiar product category but new brand/feature. Moderate search.
     3.  **Routine Problem Solving (RPS):** Habitual, low risk, brand loyal (e.g., toothpaste). Internal search only.
-
-***_QnA:_***
-**Q4. Which type of problem solving, customer will normally be very comfortable as he knows almost everything.**  
-*B. Routine Problem Solving*
 
 ---
 
@@ -769,25 +529,6 @@ To develop marketing strategy, analyze:
     *   **Compensatory Rule:** A good attribute (e.g., low price) compensates for a bad one (e.g., weak design). Based on weighted averages.
     *   **Non-Compensatory Rule:** One specific threshold must be met (e.g., "Screen must be 100 inches"). If failed, the product is rejected regardless of other good features.
 
-***_QnA:_***
-**Q5. The __________ set consists of all the brands available in the market that a consumer may potentially choose from.**  
-*total*
-
-**Q6. The total set only includes the brands the consumer is aware of.**  
-*False*
-
-**Q7. Brands that make it into the consumer's __________ set are seriously considered for purchase.**  
-*evoked*
-
-**Q8. The evoked set includes all brands that the consumer will definitely purchase.**  
-*False*
-
-**Q9. What is the term for a list of brands that a consumer considers before making a purchase decision?**  
-*b. Consideration set*
-
-**Q10. What is the term for a list of brands that a consumer considers before making a purchase decision?**  
-*Consideration set*
-
 ---
 
 ### **Stage 4: Purchase Decision**
@@ -799,16 +540,6 @@ To develop marketing strategy, analyze:
     *   **Bargaining:** The thrill of the deal.
 *   **In-Store Factors:** Store layout, checkout speed, staff interaction, and ambiance influence the final buy.
 
-***_QnA:_***
-**Q11. Motivation and attitude are considered psychological factors that affect consumer behavior.**  
-*True*
-
-**Q12. Which of the following categories will finally lead to either the selection or rejection of the product/brand in wishlist.**  
-*C. Evoked Set*
-
-**Q13. Which of the following will lead to customer satisfaction?**  
-*A. Expectation is equal to Performance*
-
 ---
 
 ### **Stage 5: Post-Purchase Behaviour**
@@ -817,10 +548,6 @@ To develop marketing strategy, analyze:
     *   **P = E:** Satisfaction.
     *   **P > E:** Delight.
 *   **Strategic Implication:** Avoid over-promising and under-delivering. Engage customers post-purchase to reduce dissonance and encourage positive Word of Mouth (WOM).
-
-***_QnA:_***
-**Q14. What is the primary objective of B2B marketing according to the transcript?**  
-*C. To develop customers who will stay with you*
 
 ---
 
@@ -834,13 +561,6 @@ To develop marketing strategy, analyze:
     *   **Personality:** Inner psychological characteristics (e.g., aggressive, introverted).
     *   **Lifestyle:** Pattern of living expressed via **AIO** (Activities, Interests, Opinions).
 
-***_QnA:_***
-**Q15. Personality is an external factor that influences consumer behavior.**  
-*False*
-
-**Q16. Personality reflects the way the person interacts with the environment.**  
-*(Practice)*
-
 ### **4.2 External (Societal) Factors**
 *   **Culture:** Values, perceptions, and wants learned from society (Broadest influence).
 *   **Sub-culture:** Regions, religions, nationalities.
@@ -849,40 +569,6 @@ To develop marketing strategy, analyze:
     *   **Membership Groups:** Family (most important), friends, co-workers.
     *   **Aspirational Groups:** Groups one wishes to join (e.g., influencers).
 *   **Family:** Family life cycle stage impacts consumption.
-
-***_QnA:_***
-**Q17. Social media influencers are considered __________ leaders in consumer behavior.**  
-*opinion*
-
-**Q18. Social factors, such as reference groups and social media influencers, can impact consumer decision-making.**  
-*True*
-
-**Q19. The compensatory decision rule allows consumers to trade off one attribute for another.**  
-*True*
-
-**Q20. Personality is an external factor that influences consumer behavior.**  
-*False*
-
-**Q21. Culture and subculture are examples of personal factors that influence consumer behavior.**  
-*False*
-
-**Q22. A person's age and economic situation are examples of personal factors that influence consumer decisions.**  
-*True*
-
-**Q23. Which of the following is an external factor influencing consumer behavior?**  
-*c. Social Media Influencers*
-
-**Q24. Which of the following is an external factor influencing consumer behavior?**  
-*Social Media Influencers*
-
-**Q25. Social factors, such as reference groups and social media influencers, can impact consumer decision-making.**  
-*True*
-
-**Q26. What from the following reflects a reference group of an individual?**  
-*b. A group that influences an individual's product or service decisions*
-
-**Q27. What is the primary difference between culture and subculture?**  
-*b. Culture is the values and beliefs of a larger society, while subculture refers to smaller groups within that society*
 
 ---
 
@@ -916,13 +602,6 @@ To develop marketing strategy, analyze:
     *   Daughter/Son validated choice (features/style).
     *   Mother questioned mileage/cost (minor dissonance).
     *   Father justified purchase via "Boss has same car" (Social validation).
-
-***_QnA:_***
-**Q28. Which of the following categories will finally lead to either the selection or rejection of the product/brand in wishlist.**  
-*C. Evoked Set*
-
-**Q29. Which of the following will lead to customer satisfaction?**  
-*A. Expectation is equal to Performance*
 
 # **Module 5: Business Buying Behaviour and Strategy**
 
@@ -1051,11 +730,6 @@ A group of individuals within an organization who participate in the purchasing 
     *   Characteristics: Low budgets, captive clientele.
     *   *Strategy:* Cost minimization (L1 bidder usually wins).
 
-*QnA:*
-
-**_Q1. Which type of buyer is characterized by a focus on price and sees products as commodities?_**  
-**_A1. Commodity buyers_**
-
 ---
 
 ## **Topic 7: Case Study: Mediquip (CT Scanner)**
@@ -1174,28 +848,6 @@ A group of individuals within an organization who participate in the purchasing 
 
 ---
 
-***QnA:***
-
-**_Q1. Why are underperformers considered risky customers for suppliers?_**
-**_A1. They operate in industries with high fixed costs_**
-
-**_Q2. What defines the most valuable customers in a B2B context?_**
-**_A2. They invest in the supplier's business to improve outcomes_**
-
-**_Q3. Which market consists of institutions like schools and hospitals, characterized by low budgets and captive clientele?_**
-**_A3. Institutional market_**
-
-**_Q4. What is the primary focus during the introduction stage of the product life cycle?_**
-**_A4. Creating product awareness_**
-
-**_Q5. In service management, what is meant by "service quality"?_**
-**_A5. The overall experience and satisfaction of the customer_**
-
-**_Q6. Which of the following is NOT a component of the product life cycle?_**
-**_A6. Contraction_**
-
----
-
 ## **Topic 5: Service Concept**
 ### **5.1 Defining Services**
 *   **Definition:** Any act/performance that is essentially intangible and does not result in the ownership of anything.
@@ -1258,11 +910,6 @@ A group of individuals within an organization who participate in the purchasing 
 
 ---
 
-#### *QnA:*
-
-***Q1. In product line management, what is meant by "line filling"?***  
-***A1. Introducing more items within the existing range***
-
 ### **1.2 Price-Quality Matrix**
 *   **Premium Strategy:** High Price + High Quality (e.g., Apple).
 *   **High Value Strategy:** Medium Price + High Quality.
@@ -1294,11 +941,6 @@ A group of individuals within an organization who participate in the purchasing 
 6.  **Select Final Price:** Determine the specific number.
 
 ---
-
-#### *QnA:*
-
-***Q2. What is a primary objective of service quality management?***  
-***A2. Enhancing customer satisfaction***
 
 ### **2.2 Pricing Methods**
 *   **Cost-Based (The Floor):**
@@ -1343,11 +985,6 @@ A group of individuals within an organization who participate in the purchasing 
 
 ---
 
-#### *QnA:*
-
-***Q3. How does understanding the characteristics of retailing influence a company's pricing strategy?***  
-***A3. It enables tailoring pricing to match customer expectations and shopping behavior.***
-
 ### **3.2 Types of Wholesalers**
 1.  **Merchant Wholesalers:** **Take title** (ownership) of goods. Bear risk. Provide full service (storage, delivery, financing).
 2.  **Brokers:** Do **not** take title. Bring buyer and seller together. Paid via commission.
@@ -1380,17 +1017,6 @@ A group of individuals within an organization who participate in the purchasing 
 
 ---
 
-#### *QnA:*
-
-***Q4. What is a primary goal of distribution channels in retailing?***  
-***A4. To ensure products reach the end customer efficiently***
-
-***Q5. In pricing strategies, what does price discrimination involve?***  
-***A5. Charging different prices to different customers based on willingness to pay***
-
-***Q6. When conducting a channel analysis, which of the following factors is least likely to impact the effectiveness of a distribution strategy?***  
-***A6. The brand’s historical advertising campaigns***
-
 ### **4.2 Marketing Systems**
 *   **Vertical Marketing System (VMS):** Producer, Wholesaler, and Retailer act as a unified system (One owns the others, or contracts, or wields power). High control (e.g., Apple).
 *   **Horizontal Marketing System (HMS):** Two or more companies at the same level join together to follow a new opportunity (e.g., Retailer cooperatives to bargain with manufacturers).
@@ -1407,11 +1033,6 @@ A group of individuals within an organization who participate in the purchasing 
 *   **Private Labels:** Retailer's own brand (higher margin).
 
 ---
-
-#### *QnA:*
-
-***Q7. Which of the following best describes the relationship between pricing strategies and customer satisfaction?***  
-***A7. Effective pricing strategies can enhance perceived value and improve customer satisfaction.***
 
 ### **5.2 Retail Formats**
 *   **Convenience Stores:** Small, near residential, high price, limited line.
@@ -1461,11 +1082,6 @@ A group of individuals within an organization who participate in the purchasing 
     *   **Maturity Stage:** Goal is to **Remind** (Value proposition still holds).
     *   **Decline Stage:** Minimal promotion.
 
-**_QnA:_**
-
-**_Q1. Which of the following is a key objective of promotional strategies in marketing?_**  
-**_A1. Inform, persuade, and remind customers_**
-
 ### **1.2 The Macro Model of Communication**
 *   **Sender:** The company/marketer.
 *   **Encoding:** Converting the idea/message into a symbolic form (Ad/Story).
@@ -1499,11 +1115,6 @@ A group of individuals within an organization who participate in the purchasing 
 6.  **Direct Marketing:**
     *   **Tools:** Email, Telemarketing, Catalogs, SMS.
     *   **Characteristics:** Customized, up-to-date, interactive.
-
-**_QnA:_**
-
-**_Q2. What is the purpose of personal selling in marketing?_**  
-**_A2. To build direct relationships and tailor solutions to customer needs_**
 
 ---
 
@@ -1550,11 +1161,6 @@ A group of individuals within an organization who participate in the purchasing 
     *   Estimate costs of tasks (Advertising impressions needed to get trial).
     *   Sum of costs = Budget.
 
-**_QnA:_**
-
-**_Q3. What is the primary role of budgeting in marketing campaigns?_**  
-**_A3. To set and allocate financial resources for marketing activities_**
-
 ---
 
 ## **Topic 5: Personal Selling**
@@ -1571,11 +1177,6 @@ A group of individuals within an organization who participate in the purchasing 
     *   **Psychological Resistance:** Apathy, dislike of change, lack of trust.
 6.  **Closing:** Asking for the order (Signing the contract).
 7.  **Follow-up:** Ensuring satisfaction and delivery (Maintenance/Relationship building).
-
-**_QnA:_**
-
-**_Q4. In the B2B sales process, which step involves understanding the specific needs of a potential client?_**  
-**_A4. Needs assessment_**
 
 ---
 
