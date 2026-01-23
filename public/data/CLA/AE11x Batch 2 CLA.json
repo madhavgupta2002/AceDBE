@@ -410,9 +410,14 @@
     {
       "question_id": "BC_B2_Q32",
       "question_text": "Which of the transitional words given below can be used as comparatives (similarly, likewise, also) and which can be used for making concessions (admittedly, granted, certainly)?",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "Comparatives: similarly, likewise, also; Concessions: admittedly, granted, certainly",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Comparatives: similarly, likewise, also; Concessions: admittedly, granted, certainly",
+        "B": "Comparatives: admittedly, granted, certainly; Concessions: similarly, likewise, also",
+        "C": "Comparatives: similarly, also; Concessions: likewise, admittedly, granted, certainly",
+        "D": "Comparatives: similarly, likewise, also, admittedly; Concessions: granted, certainly"
+      },
+      "correct_option_label": "A",
       "module": 3
     },
     {
@@ -464,9 +469,14 @@
     {
       "question_id": "BC_B2_Q37",
       "question_text": "Read the given paragraph and identify the sentence which conveys the main idea and the sentence which is out of place. (1) She often procrastinates on important tasks. (2) Lisa struggles with time management. (3) She finds it difficult to wake up early in the morning. (4) Lisa enjoys reading mystery novels in her free time. (5) She frequently forgets to prioritize her daily activities.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "Main idea: 2; Out of place: 4",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Main idea: 2; Out of place: 4",
+        "B": "Main idea: 1; Out of place: 3",
+        "C": "Main idea: 3; Out of place: 5",
+        "D": "Main idea: 2; Out of place: 5"
+      },
+      "correct_option_label": "A",
       "module": 3
     },
     {
@@ -485,17 +495,27 @@
     {
       "question_id": "BC_B2_Q39",
       "question_text": "Fill in the blanks: The company has been achieving remarkable growth this year; _________, (Furthermore / but) its expansion into international markets is gaining momentum. __________ (Undoubtedly / Even though) such success is a result of meticulous planning and strategic decision-making.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "Furthermore, Undoubtedly",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Furthermore, Undoubtedly",
+        "B": "but, Even though",
+        "C": "Furthermore, Even though",
+        "D": "but, Undoubtedly"
+      },
+      "correct_option_label": "A",
       "module": 3
     },
     {
       "question_id": "BC_B2_Q40",
       "question_text": "Fill in the blanks: ___________ (In a nutshell / On account of), the project exceeded expectations by delivering results ahead of schedule. ____________ (Significantly / Without doubt), this success has boosted the team's morale and confidence.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "In a nutshell, Without doubt",
+      "question_type": "MCQ",
+      "options": {
+        "A": "In a nutshell, Without doubt",
+        "B": "On account of, Significantly",
+        "C": "In a nutshell, Significantly",
+        "D": "On account of, Without doubt"
+      },
+      "correct_option_label": "A",
       "module": 3
     },
     {

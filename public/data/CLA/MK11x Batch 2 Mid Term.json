@@ -40,9 +40,14 @@
       "question_id": "MKT_MT2_04",
       "module": 1,
       "question_text": "A person’s __________ might be to stay healthy, but there __________ could be to purchase organic foods or follow a specific diet.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "need, want"    },
+      "question_type": "MCQ",
+      "options": {
+        "A": "need, want",
+        "B": "want, need",
+        "C": "need, need",
+        "D": "want, want"
+      },
+      "correct_option_label": "A"    },
     {
       "question_id": "MKT_MT2_05",
       "module": 1,
@@ -99,9 +104,14 @@
       "question_id": "MKT_MT2_10",
       "module": 2,
       "question_text": "After segmentation, the next step in the marketing strategy is __________.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "targeting"    },
+      "question_type": "MCQ",
+      "options": {
+        "A": "targeting",
+        "B": "positioning",
+        "C": "differentiation",
+        "D": "segmentation"
+      },
+      "correct_option_label": "A"    },
     {
       "question_id": "MKT_MT2_11",
       "module": 3,
@@ -146,9 +156,14 @@
       "question_id": "MKT_MT2_15",
       "module": 3,
       "question_text": "Market __________ represents the demand corresponding to a certain level of marketing __________.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "forecast, expenditure"    },
+      "question_type": "MCQ",
+      "options": {
+        "A": "forecast, expenditure",
+        "B": "expenditure, forecast",
+        "C": "potential, budget",
+        "D": "share, investment"
+      },
+      "correct_option_label": "A"    },
     {
       "question_id": "MKT_MT2_16",
       "module": 3,
@@ -199,9 +214,14 @@
       "question_id": "MKT_MT2_20",
       "module": 4,
       "question_text": "Social media influencers are considered __________ leaders in consumer behavior.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "opinion"    },
+      "question_type": "MCQ",
+      "options": {
+        "A": "opinion",
+        "B": "thought",
+        "C": "reference",
+        "D": "influence"
+      },
+      "correct_option_label": "A"    },
     {
       "question_id": "MKT_MT2_21",
       "module": 4,
@@ -216,16 +236,26 @@
       "question_id": "MKT_MT2_22",
       "module": 4,
       "question_text": "The __________ set consists of all the brands available in the market that a consumer may potentially choose from.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "total"    },
+      "question_type": "MCQ",
+      "options": {
+        "A": "total",
+        "B": "evoked",
+        "C": "awareness",
+        "D": "consideration"
+      },
+      "correct_option_label": "A"    },
     {
       "question_id": "MKT_MT2_23",
       "module": 4,
       "question_text": "Brands that make it into the consumer's __________ set are seriously considered for purchase.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "evoked"    },
+      "question_type": "MCQ",
+      "options": {
+        "A": "evoked",
+        "B": "total",
+        "C": "awareness",
+        "D": "inept"
+      },
+      "correct_option_label": "A"    },
     {
       "question_id": "MKT_MT2_24",
       "module": 4,

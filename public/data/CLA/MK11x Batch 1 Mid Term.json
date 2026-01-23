@@ -31,9 +31,14 @@
       "question_id": "MKT_MT1_03",
       "module": 1,
       "question_text": "Marketing often starts with identifying a basic human requirement such as ________.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "Food"
+      "question_type": "MCQ",
+      "options": {
+        "A": "Food",
+        "B": "Shelter",
+        "C": "Clothing",
+        "D": "Entertainment"
+      },
+      "correct_option_label": "A"
     },
     {
       "question_id": "MKT_MT1_04",
@@ -50,9 +55,14 @@
       "question_id": "MKT_MT1_05",
       "module": 1,
       "question_text": "When a need is directed to a specific object like a ________, it becomes their ________.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "Laptop or computer, want"
+      "question_type": "MCQ",
+      "options": {
+        "A": "Laptop or computer, want",
+        "B": "Mobile phone, need",
+        "C": "Car, desire",
+        "D": "House, requirement"
+      },
+      "correct_option_label": "A"
     },
     {
       "question_id": "MKT_MT1_06",
@@ -70,9 +80,14 @@
       "question_id": "MKT_MT1_07",
       "module": 1,
       "question_text": "In an economic context, a market is where the forces of ________ and ________ determine prices.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "demand, supply"
+      "question_type": "MCQ",
+      "options": {
+        "A": "demand, supply",
+        "B": "supply, demand",
+        "C": "price, cost",
+        "D": "buyers, sellers"
+      },
+      "correct_option_label": "A"
     },
     {
       "question_id": "MKT_MT1_08",
@@ -112,9 +127,14 @@
       "question_id": "MKT_MT1_11",
       "module": 3,
       "question_text": "A ________ map is used to visualize the positioning of brands in relation to each other.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "perceptual"
+      "question_type": "MCQ",
+      "options": {
+        "A": "perceptual",
+        "B": "geographical",
+        "C": "strategic",
+        "D": "competitive"
+      },
+      "correct_option_label": "A"
     },
     {
       "question_id": "MKT_MT1_12",
@@ -191,9 +211,14 @@
       "question_id": "MKT_MT1_18",
       "module": 3,
       "question_text": "The totality of features and characteristics of a product or service that bear on its ability to satisfy stated or implied needs is ________.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "quality"
+      "question_type": "MCQ",
+      "options": {
+        "A": "quality",
+        "B": "value",
+        "C": "price",
+        "D": "brand"
+      },
+      "correct_option_label": "A"
     },
     {
       "question_id": "MKT_MT1_19",
