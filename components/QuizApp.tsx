@@ -49,8 +49,11 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
   const [allQuestions, setAllQuestions] = useState<Question[]>([]);
   const [selectedModule, setSelectedModule] = useState<string | number | 'all'>('all');
   const [availableModules, setAvailableModules] = useState<(string | number)[]>([]);
-  const [showAllQuestions, setShowAllQuestions] = useState(false);
+  const [showAllQuestions, setShowAllQuestions] = useState(true); // Default to showing all questions
   const [hideWrongOptions, setHideWrongOptions] = useState(false);
+
+  // Master answered questions array that always corresponds to allQuestions (never filtered)
+  const [masterAnsweredQuestions, setMasterAnsweredQuestions] = useState<(string[] | null)[]>([]);
 
   // Helper function to create YouTube playlist URL from video links
   const createPlaylistUrl = (videoLinks: string[]): string => {
@@ -159,6 +162,10 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
       setAllQuestions(allQuestions);
       setSelectedModule('all');
 
+      // Initialize master answered questions array
+      const initialMasterAnswers = new Array(allQuestions.length).fill(null);
+      setMasterAnsweredQuestions(initialMasterAnswers);
+
       setQuizState((prev) => ({
         ...prev,
         currentQuestionIndex: 0,
@@ -219,6 +226,10 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
 
     const isCorrect = allCorrectSelected || (!isMultipleAnswer && answer.length === 1 && currentQuestion.correctAnswer.includes(answer[0]));
 
+    // Find the index of this question in allQuestions to update master array
+    const questionKey = `${currentQuestion.text}-${currentQuestion.source || ''}`;
+    const masterIndex = allQuestions.findIndex(q => `${q.text}-${q.source || ''}` === questionKey);
+
     setQuizState((prev) => {
       const newAnsweredQuestions = [...prev.answeredQuestions];
       newAnsweredQuestions[prev.currentQuestionIndex] = shouldMarkAsAnswered ? answer : null;
@@ -237,6 +248,15 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
         answeredQuestions: newAnsweredQuestions,
       };
     });
+
+    // Update master answered questions array
+    if (shouldMarkAsAnswered && masterIndex !== -1) {
+      setMasterAnsweredQuestions(prev => {
+        const newMaster = [...prev];
+        newMaster[masterIndex] = answer;
+        return newMaster;
+      });
+    }
   };
 
   const moveQuestion = (direction: 'next' | 'prev') => {
@@ -260,21 +280,60 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
       ? allQuestions
       : allQuestions.filter(q => q.module === module || q.module?.toString() === module.toString());
 
+    // Map answers from masterAnsweredQuestions to filtered questions
+    const filteredAnsweredQuestions = filteredQuestions.map(filteredQ => {
+      const questionKey = `${filteredQ.text}-${filteredQ.source || ''}`;
+      const masterIndex = allQuestions.findIndex(q => `${q.text}-${q.source || ''}` === questionKey);
+
+      if (masterIndex !== -1) {
+        return masterAnsweredQuestions[masterIndex];
+      }
+      return null;
+    });
+
+    // Recalculate score based on filtered questions
+    let newScore = 0;
+    filteredQuestions.forEach((q, index) => {
+      const answer = filteredAnsweredQuestions[index];
+      if (answer && answer.length > 0) {
+        const isCorrect = answer.length === q.correctAnswer.length &&
+          answer.every(ans => q.correctAnswer.includes(ans));
+        if (isCorrect) newScore++;
+      }
+    });
+
+    // Recalculate incorrect answers for the filtered set
+    const newIncorrectAnswers: Array<Question & { selectedAnswer: string[] }> = [];
+    filteredQuestions.forEach((q, index) => {
+      const answer = filteredAnsweredQuestions[index];
+      if (answer && answer.length > 0) {
+        const isCorrect = answer.length === q.correctAnswer.length &&
+          answer.every(ans => q.correctAnswer.includes(ans));
+        if (!isCorrect) {
+          newIncorrectAnswers.push({ ...q, selectedAnswer: answer });
+        }
+      }
+    });
+
     setQuizState((prev) => ({
       ...prev,
       currentQuestionIndex: 0,
-      score: 0,
+      score: newScore,
       totalQuestions: filteredQuestions.length,
-      selectedAnswer: null,
-      showResult: false,
+      selectedAnswer: filteredAnsweredQuestions[0],
+      showResult: filteredAnsweredQuestions[0] !== null,
       questions: filteredQuestions,
-      incorrectAnswers: [],
-      answeredQuestions: new Array(filteredQuestions.length).fill(null),
+      incorrectAnswers: newIncorrectAnswers,
+      answeredQuestions: filteredAnsweredQuestions,
     }));
     setQuizCompleted(false);
   };
 
   const finishQuiz = () => {
+    // Reset module filter to 'all' to show complete results
+    if (selectedModule !== 'all') {
+      handleModuleChange('all');
+    }
     setQuizCompleted(true);
   };
 
@@ -473,7 +532,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                     : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
                     }`}
                 >
-                  {showAllQuestions ? 'Hide Questions List' : 'Show All Questions'}
+                  {showAllQuestions ? 'All Questions' : 'Incorrect Questions'}
                 </button>
                 <button
                   onClick={() => setHideWrongOptions(!hideWrongOptions)}
@@ -482,7 +541,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                     : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
                     }`}
                 >
-                  {hideWrongOptions ? 'Show All Options' : 'Hide Wrong Options'}
+                  Toggle Options
                 </button>
               </div>
 
@@ -514,10 +573,11 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                         <div className="space-y-1">
                           {Object.entries(q.options)
                             .filter(([key]) => {
-                              if (hideWrongOptions) {
-                                // Show correct answers and user's wrong answers
-                                return q.correctAnswer.includes(key) || (userAnswer?.includes(key) && !q.correctAnswer.includes(key));
+                              if (!hideWrongOptions) {
+                                // By default (hideWrongOptions=false), only show correct answers
+                                return q.correctAnswer.includes(key);
                               }
+                              // When toggle is on (hideWrongOptions=true), show all options
                               return true;
                             })
                             .map(([key, value]) => {
@@ -564,10 +624,11 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                         <div className="space-y-1">
                           {Object.entries(q.options)
                             .filter(([key]) => {
-                              if (hideWrongOptions) {
-                                // Show correct answers and user's wrong answers
-                                return q.correctAnswer.includes(key) || (q.selectedAnswer?.includes(key) && !q.correctAnswer.includes(key));
+                              if (!hideWrongOptions) {
+                                // By default (hideWrongOptions=false), only show correct answers
+                                return q.correctAnswer.includes(key);
                               }
+                              // When toggle is on (hideWrongOptions=true), show all options
                               return true;
                             })
                             .map(([key, value]) => {
