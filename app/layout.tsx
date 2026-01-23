@@ -3,6 +3,7 @@ import { Inter, Merriweather, Open_Sans, Lora, Roboto } from 'next/font/google';
 import './globals.css';
 import 'katex/dist/katex.min.css';
 import { DarkModeProvider } from '@/contexts/DarkModeContext';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const merriweather = Merriweather({
@@ -25,7 +26,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: 'IIMB Practice Portal',
+  title: 'AceDBE - IIMB Practice Portal',
   description: 'AceDBE Practice portal for IIMB course questions',
 };
 
@@ -39,6 +40,21 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* Google tag (gtag.js) */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-DTVSPV96YT"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-DTVSPV96YT');
+          `}
+        </Script>
       </head>
       <body className={`${inter.className} bg-gray-900 ${merriweather.variable} ${openSans.variable} ${lora.variable} ${roboto.variable}`}>
         <DarkModeProvider>{children}</DarkModeProvider>
