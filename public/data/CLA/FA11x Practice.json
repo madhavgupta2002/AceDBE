@@ -1,0 +1,1320 @@
+{
+  "exam_metadata": {
+    "subject_name": "Financial Statements and Business Performance",
+    "exam_date": "Practice"
+  },
+  "questions": [
+    {
+      "module": 1,
+      "question_id": "P_M1_Q1",
+      "question_text": "Financial statements provide information on",
+      "question_type": "MCQ",
+      "options": {
+        "A": "assets of the company",
+        "B": "liabilities of the company",
+        "C": "profits or losses incurred by the company",
+        "D": "All of the above"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q2",
+      "question_text": "Which of the following options is most likely correct?\nI. Sole-proprietorship business is owned by more than one person\nII. The liability of the shareholders is limited upto unpaid amount on their shares.\nIII. The liability of the sole proprietor is unlimited.\nIV. Partners have limited liability.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "I and II",
+        "B": "II and III",
+        "C": "III and IV",
+        "D": "I and IV"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q3",
+      "question_text": "Creditors use the accounting information to check the ______________ of the business.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "sales",
+        "B": "expenses",
+        "C": "liquidity",
+        "D": "capital"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q4",
+      "question_text": "Credit sales refers to",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Both delivery of goods and collection of money at a future date",
+        "B": "Amount is collected today and delivery will be effected at a future date",
+        "C": "Both delivery of goods and collection of money happens today.",
+        "D": "Goods sold today for which payment will be collected at a future date"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q5",
+      "question_text": "Ledger is a",
+      "question_type": "MCQ",
+      "options": {
+        "A": "statement of assets and liabilities",
+        "B": "list of suppliers",
+        "C": "record of cash and bank transactions",
+        "D": "Summarised record of transactions that shows the net balance of each account"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q6",
+      "question_text": "Which of the following is an example of real account?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Ram's account",
+        "B": "SBI's loan account",
+        "C": "Furniture account",
+        "D": "Electricity expense account"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q7",
+      "question_text": "Harish and Co. paid rent for its office Rs.5000 in cash. How would this transaction be recorded using double entry system of bookkeeping in the books of Harish and Co.?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash account will be debited and rent expense will be credited by Rs.5000",
+        "B": "Office expenses will be debited and rent expense will be credited by Rs.5000",
+        "C": "Harish and Co. will be debited and cash will be credited by Rs.5000",
+        "D": "Rent expense will be debited and cash account will be credited by Rs.5000"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q8",
+      "question_text": "On 1st March 2024, Savita and company took loan from SBI Rs.1,00,000 payable in two years at interest of 8%. The journal entry to record the same on 1st March 2024 will be",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash and bank account debit Rs. 1,00,000; Interest account credit Rs. 1,00,000",
+        "B": "SBI account debit Rs. 1,00,000; cash and bank account credit Rs. 1,00,000",
+        "C": "Loan account debit Rs. 1,00,000; Interest account credit Rs. 1,00,000",
+        "D": "Cash and bank account debit Rs. 1,00,000; Loan account credit Rs. 1,00,000"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q9",
+      "question_text": "Which of the following is the correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Assets = Liabilities - Equity",
+        "B": "Liabilities = Assets + Equity",
+        "C": "Equity = Assets + Liabilities",
+        "D": "Assets = Liabilities + Equity"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q10",
+      "question_text": "Alex Co. purchased furniture of Rs.50,000 in cash. What will be the effect of this transaction on company's assets and liabilities?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Assets (furniture) will decrease by Rs.50,000 and Liabilities (creditor) will decrease by Rs.50,000",
+        "B": "Assets (furniture) will increase by Rs.50,000 and Liabilities (creditor) will decrease by Rs.50,000",
+        "C": "Assets (furniture) will decrease by Rs.50,000 and assets (cash) will increase by Rs.50,000",
+        "D": "Assets (furniture) will increase by Rs.50,000 and assets (cash) will decrease by Rs.50,000"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q11",
+      "question_text": "ABC Ltd. was formed with a capital of Rs.100,000. What will be the effect of this transaction on company's accounting equation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Increase in cash and decrease in capital",
+        "B": "Increase in cash and decrease in liabilities",
+        "C": "Decrease in cash and decrease in liabilities",
+        "D": "Increase in cash and increase in capital"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q12",
+      "question_text": "A firm has assets of Rs. 200,000 and liabilities of Rs.80,000 at the year end. What is the total amount of equity at the year end?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs.200,000",
+        "B": "Rs.80,000",
+        "C": "Rs.120,000",
+        "D": "Rs.280,000"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q13",
+      "question_text": "In a business, if the total assets amount to ₹1800,000 and the total liabilities are ₹1300,000, what is the owner's equity?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹500,000",
+        "B": "₹600,000",
+        "C": "₹400,000",
+        "D": "₹14,00,000"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q14",
+      "question_text": "If total revenues are ₹600,000 and total expenses are ₹400,000, what is the net income?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹200,000",
+        "B": "₹150,000",
+        "C": "₹250,000",
+        "D": "₹1250,000"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q15",
+      "question_text": "In accounting, real accounts are permanent and do not close at the end of the accounting period. Which one of the following is an example of a real account?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Sales",
+        "B": "Rent",
+        "C": "Tables (Furniture)",
+        "D": "Salary"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q16",
+      "question_text": "When furniture worth ₹5,00,000 is purchased and paid for in cash, which account should be debited?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Furniture Account",
+        "B": "Cash Account",
+        "C": "Salary Account",
+        "D": "Creditor Account"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q17",
+      "question_text": "In a transaction where a building worth ₹20,00,000 is purchased and paid for in cash, which account should be credited?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Account",
+        "B": "Building Account",
+        "C": "Loan Account",
+        "D": "Equity Account"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q18",
+      "question_text": "In the case of selling goods on credit to Mr. X, what is the correct double-entry system accounting entry for this transaction?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Sales; Credit: Mr. X",
+        "B": "Debit: Mr. X; Credit: Sales",
+        "C": "Debit: Cash; Credit: Mr. X",
+        "D": "Debit: Sales; Credit: Bank"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q19",
+      "question_text": "What is the correct entry to record the purchase of a machine for ₹2,00,000, paid for in cash?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Machine Account +200000; Cash Account -200000",
+        "B": "Machine Account +200000; Cash Account +200000",
+        "C": "Machine Account -200000; Cash Account +200000",
+        "D": "Machine Account +2000000; Cash Account -100000"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q20",
+      "question_text": "Goods sold for cash worth ₹50,000 must be recorded properly. What is the correct journal entry for this cash sales transaction?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Sales Account +50000 ; Cash Account -50000",
+        "B": "Cash Account +50000; Sales Account +50000",
+        "C": "Cash Account +50000 ; Sales Account -50000",
+        "D": "Sales Account -50000 ; Cash Account +50000"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q21",
+      "question_text": "When salaries are paid to employees, the cash account is reduced, and the salary expense account is increased. For a salary payment of ₹10 k, what is the correct journal entry to record the expense?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Salary Expense +10 k ; Cash +10 k",
+        "B": "Cash +10 k ; Salary Expense -10 k",
+        "C": "Salary Expense +10 k ; Cash -10 k",
+        "D": "Salary Expense -10 k ; Cash +10 k"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q22",
+      "question_text": "Which of the following statements is true about a sole proprietorship?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The owner is personally liable for business debts",
+        "B": "Liability is limited to the business's assets",
+        "C": "Ownership can be transferred easily",
+        "D": "It involves shareholders"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 1,
+      "question_id": "P_M1_Q23",
+      "question_text": "Which of the following statements is true about a Limited Company?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The owner is personally liable for business debts",
+        "B": "Ownership cannot be transferred",
+        "C": "It involves only one shareholder",
+        "D": "The liability of shareholders is limited to the unpaid value of the shares"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q1",
+      "question_text": "Income statement provides information on",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Assets of the company",
+        "B": "Liabilities of the company",
+        "C": "Profits or losses incurred by the company",
+        "D": "All of the above"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q2",
+      "question_text": "Premier Ltd. follows the accounting period of 1st April to 31st March. The company opened a fixed deposit in bank on 1st April and deposited Rs. 50 lakhs at an interest rate of 12% per year for one year. The bank pays interest on 30th June and 31st December. The accounting entry on 31st March is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "No accounting entry is required",
+        "B": "Debit: Interest Accrued Rs. 1.5 Lakhs; Credit: Interest Income Rs. 1.5 lakhs",
+        "C": "Debit: Interest Income Rs. 1.5 Lakhs; Credit: Interest Accrued Rs. 1.5 lakhs",
+        "D": "Debit: Fixed Deposit Rs. 1.5 Lakhs; Credit: Interest Income Rs. 1.5 lakhs"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q3",
+      "question_text": "Premier Ltd. took an insurance policy on 1st October 2023 and paid the insurance preimum of Rs. 120,000 for one year effective from 1st Oct 2023. Assuming the accountant debited the entire Rs. 120,000 as insurance expense on 1st Oct 2023, what adjustment entry needs to be entered to record the correct insurance expense for the year ended 31st March 2024 ?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit Insurance expense Rs.120,000; Credit cash and bank account Rs.120,000",
+        "B": "Debit Prepaid Insurance Rs.120,000; Credit cash and bank account Rs.120,000",
+        "C": "Debit Insurance expense Rs.60,000; Credit cash and bank account Rs.60,000",
+        "D": "Debit Prepaid Insurance Rs.60,000; Credit insurance expense Rs.60,000"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q4",
+      "question_text": "Advance paid to the supplier is an example of",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Asset",
+        "B": "Expense",
+        "C": "Liability",
+        "D": "Income"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q5",
+      "question_text": "Salary expense for the month of March 2024 was paid on Arpil 10, 2024. The accountant failed to record the transaction on 31st March. What should be adjustment entry for the same on March 31, 2024?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Salary account debit; cash and bank account credit",
+        "B": "Salary account credit; cash and bank account debit",
+        "C": "Outstanding Salary account debit; cash and bank account credit",
+        "D": "Salary account debit; outstanding salary account credit"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q6",
+      "question_text": "The company generated a sales of Rs. 100,000 for the year. The accountant estimated 2% of sales will be uncollectible. The accounting entry to record the same would be",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit cash and bank Rs.98,000; Credit debtors Rs. 98,000",
+        "B": "Debit bad debt (expense) Rs.2,000; Credit debtors Rs. 2,000",
+        "C": "Debit bad debt (expense) Rs. 2,000; Credit provision for doubtful debt Rs. 2,000",
+        "D": "Debit debtors Rs. 2,000; Credit provision for doubtful debt Rs. 2,000"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q7",
+      "question_text": "Harish and Co. is a new trading firm engaged in buying and selling garments. During the year ended, the firm had sales of Rs. 6,00,000 and had closing inventory worth Rs.50,000. The firm sold goods at mark up of 20 per cent. What should be the cost of sales of the firm for the year?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs. 400,000",
+        "B": "Rs. 500,000",
+        "C": "Rs. 450,000",
+        "D": "Rs. 550,000"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q8",
+      "question_text": "Ram and Sons paid Rs. 200,000 to its suppliers for purchasing goods. This will be reported as",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash flow from investing activities",
+        "B": "Cash flow from operating activities",
+        "C": "Cash flow from financing activities",
+        "D": "Cash flow from non-operating activities"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q9",
+      "question_text": "Gamma Co. purchased equipment worth Rs. 100,000. They paid transportation charges of Rs. 20,000. The installation expenses pad to the technician was Rs. 2000. What is the amount that will be reflected under cash flow from investing activity in the cash flow statement?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Purchased equipment Rs.100,000",
+        "B": "Purchased equipment Rs.120,000",
+        "C": "Purchased equipment Rs.122,000",
+        "D": "Purchased equipment Rs.118,000"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q10",
+      "question_text": "A company repaid loan Rs. 100,000 during the year. This be shown as --------",
+      "question_type": "MCQ",
+      "options": {
+        "A": "cash outflow under investing activity",
+        "B": "cash outflow under operating activity",
+        "C": "cash outflow under financing activity",
+        "D": "cash inflow under investing activity"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q11",
+      "question_text": "Ms. Gita, Mita and Nita contributed Rs. 6 lakh each and started a partnership to offer customised interior for HNI clients. They shared profit or loss equally. At the end of three years, their friend Rita joined the firm and contributed Rs. 2 lakhs for a one-fourth share in the firm. The partners decided to revalue their business and estimated the goodwill value to be 5 times the last 3 years average profit. The average profit for the last 3 years was Rs. 300,000. What is the amount of goodwill of the firm when new partner joined the firm and the new profit sharing ratio?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs. 3,00,000 and the new profit sharing ratio is 33.33:16.67:16.67:33.33",
+        "B": "Rs. 6,00,000 and the new profit sharing ratio is 33.33:16.67:16.67:33.33",
+        "C": "Rs. 15,00,000 and the new profit sharing ratio is 33.33:16.67:16.67:33.33",
+        "D": "Rs. 15,00,000 and the new profit sharing ratio is 0.25:0.25:0.25:0.25"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q12",
+      "question_text": "Consider the below information and calculate the cash flow from operations:\nSold goods Rs. 500,000, out of this, 30 percent sales are on credit and 70 percent sales are cash sales\nPaid salary to staff Rs. 80,000\nSalary of Rs. 10,000 for the last month not included above is outstanding\nReceived advance from customer Rs. 20,000\nPurchased office furniture Rs. 50,000\nPaid interest on loan Rs. 10,000\nPaid rent expense of Rs. 10,000",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs.200,000",
+        "B": "Rs.280,000",
+        "C": "Rs.260,000",
+        "D": "Rs.250,000"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q13",
+      "question_text": "A Ltd follows the accounting period of 1st April to 31st March. The company deposited Rs. 200 lakhs at an interest rate of 12% per year for one year. The bank pays interest on 30th June and 31st December. What is the journal entry on 31st March?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "No Accounting Entry",
+        "B": "Debit: Interest Accrued Rs. 6 Lakhs; Credit: Interest Income Rs. 6 Lakhs",
+        "C": "Debit: Interest Income Rs. 6 Lakhs; Credit: Interest Accrued Rs. 6 Lakhs",
+        "D": "Debit: Deposit Rs. 6 Lakhs; Credit: Interest Income Rs. 6 Lakhs"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q14",
+      "question_text": "Prepaid Insurance is classified as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Expense",
+        "B": "Asset",
+        "C": "Liability",
+        "D": "Revenue"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q15",
+      "question_text": "The journal entry to record outstanding salary of Rs. 50,000 at year-end is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Salary Expense Rs. 50,000; Credit: Cash Rs. 50,000",
+        "B": "Debit: Salary Expense Rs. 50,000; Credit: Outstanding Salary Rs. 50,000",
+        "C": "Debit: Outstanding Salary Rs. 50,000; Credit: Salary Expense Rs. 50,000",
+        "D": "Debit: Outstanding Salary Rs. 50,000; Credit: Bank Rs. 50,000"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q16",
+      "question_text": "The journal entry to create a provision for doubtful debts of Rs. 30,000 is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Provision for Doubtful Debts Rs. 30,000; Credit: Debtors Rs. 30,000",
+        "B": "Debit: Bad Debts Expense Rs. 30,000; Credit: Provision for Doubtful Debts Rs. 30,000",
+        "C": "Debit: Provision for Doubtful Debts Rs. 30,000; Credit: Bad Debts Rs. 30,000",
+        "D": "Debit: Debtors Rs. 30,000; Credit: Provision for Doubtful Debts Rs. 30,000"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q17",
+      "question_text": "The total material purchase for the year was Rs. 150, and the stock on hand at the end of the year was Rs. 40. The correct journal entry is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Material Expense Rs. 150; Credit: Inventory Rs. 150",
+        "B": "Debit: Material Expense Rs. 110; Credit: Inventory Rs. 110",
+        "C": "Debit: Inventory Rs. 150; Credit: Material Expense Rs. 150",
+        "D": "Debit: Inventory Rs. 110; Credit: Material Expense Rs. 40"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q18",
+      "question_text": "The journal entry for provision for taxes of Rs. 5 lakhs is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Tax Expense Rs. 5 lakhs; Credit: Provision for Tax Rs. 5 lakhs",
+        "B": "Debit: Provision for Tax Rs. 5 lakhs; Credit: Tax Expense Rs. 5 lakhs",
+        "C": "Debit: Tax Expense Rs. 5 lakhs; Credit: Cash Rs. 5 lakhs",
+        "D": "Debit: Cash Rs. 5 lakhs; Credit: Provision for Tax Rs. 5 lakhs"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q19",
+      "question_text": "The journal entry for outstanding rent of Rs. 15,000 at year-end is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Rent Expense Rs. 15,000; Credit: Cash Rs. 15,000",
+        "B": "Debit: Rent Expense Rs. 15,000; Credit: Outstanding Rent Rs. 15,000",
+        "C": "Debit: Outstanding Rent Rs. 15,000; Credit: Rent Expense Rs. 15,000",
+        "D": "Debit: Outstanding Rent Rs. 15,000; Credit: Bank Rs. 15,000"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q20",
+      "question_text": "Issuance of shares for Rs. 10 lakhs will appear in the cash flow statements under:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Operating Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Financing Activities",
+        "D": "Cash Flow from Adjusting Activities"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 2,
+      "question_id": "P_M2_Q21",
+      "question_text": "If Mr. A, B, and C share profits in the ratio of 2:2:1 and the total average profit is Rs. 200 lakhs, what is the value of goodwill if valued at 3 times the average profit?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs. 600 lakhs",
+        "B": "Rs. 400 lakhs",
+        "C": "Rs. 200 lakhs",
+        "D": "Rs. 800 lakhs"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 3,
+      "question_id": "P_M3_Q1",
+      "question_text": "Money measurement concept suggest recording transactions that are",
+      "question_type": "MCQ",
+      "options": {
+        "A": "memorable",
+        "B": "measurable",
+        "C": "self-generated",
+        "D": "adorable"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 3,
+      "question_id": "P_M3_Q2",
+      "question_text": "Mira and Company applied the stright line method of depreciation for the year ended 31st March 2022, changed the method to written down value for the year 2023 and again changed the method to straight line in 2024. Which accounting concept got violated?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cost Concept",
+        "B": "Matching Concept",
+        "C": "Consistency Concept",
+        "D": "Materiality Concept"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 4,
+      "question_id": "P_M4_Q1",
+      "question_text": "Percentage of completion method is usually followed for",
+      "question_type": "MCQ",
+      "options": {
+        "A": "short-term contracts",
+        "B": "Long-term contracts",
+        "C": "both short-term and long-term",
+        "D": "Probable contracts"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 4,
+      "question_id": "P_M4_Q2",
+      "question_text": "When is revenue typically recognized under the delivery method of revenue recognition?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "When payment is received",
+        "B": "When goods are delivered to the customer",
+        "C": "Upon order placement",
+        "D": "When a contract is signed"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 4,
+      "question_id": "P_M4_Q3",
+      "question_text": "A construction company uses percentage of completion method to recognise the revenue. It received a contract for Rs. 100 cr. and the estimated cost to complete the contract is Rs. 80 cr. If 30% of the work was completed in the first year after spending Rs. 24 cr., how much revenue (Sales Values) the company will recognize in the first year?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs. 24 Cr",
+        "B": "Rs. 100 cr.",
+        "C": "Rs. 30 cr.",
+        "D": "Rs. 86 cr."
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 4,
+      "question_id": "P_M4_Q4",
+      "question_text": "Which of the following statements pertains to the completed contract method?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Revenue is recognized gradually as the project progresses.",
+        "B": "Revenue is recognized only upon completion of the contract.",
+        "C": "Revenue is recognized on signing the contract agreement",
+        "D": "Revenue is recognized only upon collection of full contract value"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 4,
+      "question_id": "P_M4_Q5",
+      "question_text": "Which of the following statements pertains to the Cost First Recovery Method?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Revenue is recognized gradually as the project progresses.",
+        "B": "Revenue is recognized only upon completion of the contract.",
+        "C": "Revenue is recognized on signing the contract agreement",
+        "D": "Revenue is recognized only when collection is equal to total project cost"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 4,
+      "question_id": "P_M4_Q6",
+      "question_text": "Which of the following reflects the installment method of revenue recognition?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Revenue is recognized when goods are shipped.",
+        "B": "Revenue is recognized as payments are received from customers.",
+        "C": "Revenue is recognized at the end of the fiscal year.",
+        "D": "Revenue is recognized when the entire sale value is collected"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 4,
+      "question_id": "P_M4_Q7",
+      "question_text": "Which of the following statements is true about the production method of revenue recognition?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Revenue is recognized only upon delivery.",
+        "B": "Revenue recognition is based on the completion of the entire project.",
+        "C": "Revenue is recognized once the production is completed",
+        "D": "Revenue is recognized only when cash is received."
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 4,
+      "question_id": "P_M4_Q8",
+      "question_text": "If a franchisor receives a franchise fee of ₹4,150,000, how should the revenue be recognized if the franchisee starts operations in the next quarter?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Revenue is recognized when the payment is received.",
+        "B": "Revenue is recognized when the franchisee begins operations.",
+        "C": "Revenue is recognized at the end of the franchise term.",
+        "D": "Revenue is recognized equally over the contract period."
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 4,
+      "question_id": "P_M4_Q9",
+      "question_text": "A company sells goods on consignment worth ₹1,660,000. The consignee has sold ₹1,245,000 worth of goods. How much revenue should the consignor recognize? (Note: Products have long shelf-life)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹ 16,60,000",
+        "B": "₹ 12,45,000",
+        "C": "₹ 4,15,000",
+        "D": "₹ 8,30,000"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 4,
+      "question_id": "P_M4_Q10",
+      "question_text": "How should a provision for doubtful debts of ₹415,000 be recognized in the Balance Sheet?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "As a Liability",
+        "B": "As a Contra Asset, reducing accounts receivable.",
+        "C": "As an addition to Equity",
+        "D": "As a Contra Liability"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 4,
+      "question_id": "P_M4_Q11",
+      "question_text": "If a company made allowances for sales returns totaling ₹500,000, how should this be recorded in the Income Statement?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "As an increase in sales revenue.",
+        "B": "As an expense in the Income Statement",
+        "C": "As a reduction in sales revenue on the income statement.",
+        "D": "Not recognised in the Income Statement"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 5,
+      "question_id": "P_M5_Q1",
+      "question_text": "A company has a beginning inventory of ₹50,000 and purchases goods worth ₹150,000 during the year. If the ending inventory is ₹40,000, what is the value of goodsSold (COGS)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹ 1,60,000.00",
+        "B": "₹ 1,40,000.00",
+        "C": "₹ 1,50,000.00",
+        "D": "₹ 1,80,000.00"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 5,
+      "question_id": "P_M5_Q2",
+      "question_text": "Which of the following inventory accounting methods allows for taking into consideraton items which are issued first.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "FIFO",
+        "B": "LIFO",
+        "C": "Retail method",
+        "D": "Weighted Average"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 5,
+      "question_id": "P_M5_Q3",
+      "question_text": "A company has the following purchases of inventory: 100 units at ₹10 each, 200 units at ₹12 each. If the company sells 150 units, what will be the value of Closing stock under FIFO?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹ 1,20,000.00",
+        "B": "₹ 1,50,000.00",
+        "C": "₹ 1,60,000.00",
+        "D": "₹ 1,800.00"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 5,
+      "question_id": "P_M5_Q4",
+      "question_text": "A company has the following purchases of inventory: 100 units at ₹10 each, 200 units at ₹12 each. If the company sells 150 units, what will be the value of Cost of Sales under FIFO?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹ 1,200.00",
+        "B": "₹ 1,500.00",
+        "C": "₹ 1,600.00",
+        "D": "₹ 1,800.00"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 5,
+      "question_id": "P_M5_Q5",
+      "question_text": "A company has the following purchases of inventory: 100 units at ₹10 each, 200 units at ₹12 each. If the company sells 150 units, what will be the value of Closing stock under LIFO?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹ 1,200.00",
+        "B": "₹ 1,500.00",
+        "C": "₹ 1,600.00",
+        "D": "₹ 1,800.00"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 5,
+      "question_id": "P_M5_Q6",
+      "question_text": "A company has the following purchases of inventory: 100 units at ₹10 each, 200 units at ₹12 each. If the company sells 150 units, what will be the value of Cost of Sales under LIFO?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹ 1,200.00",
+        "B": "₹ 1,500.00",
+        "C": "₹ 1,600.00",
+        "D": "₹ 1,800.00"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 5,
+      "question_id": "P_M5_Q7",
+      "question_text": "A company has the following purchases of inventory: 100 units at ₹10 each, 200 units at ₹12 each. If the company sells 150 units, what will be the value of Closing stock under Weighted Average Method?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹ 1,200.00",
+        "B": "₹ 1,700.00",
+        "C": "₹ 1,600.00",
+        "D": "₹ 1,800.00"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 5,
+      "question_id": "P_M5_Q8",
+      "question_text": "A company has the following purchases of inventory: 100 units at ₹10 each, 200 units at ₹12 each. If the company sells 150 units, what will be the value of Cost of Sales under Weighted Average Method?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹ 1,200.00",
+        "B": "₹ 1,700.00",
+        "C": "₹ 1,600.00",
+        "D": "₹ 1,800.00"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 5,
+      "question_id": "P_M5_Q9",
+      "question_text": "A retail store fix the selling price to get 20% margin. That is if the cost is 80, its selling price is 100. During the period, the store purchased goods costing Rs. 100 lakhs. If the sales of the period is Rs. 80 lakhs, what is the value of closing inventory if the store follows retail method of inventory valuation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "36 lakhs",
+        "B": "20 lakhs",
+        "C": "16 lakhs",
+        "D": "45 lakhs"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 5,
+      "question_id": "P_M5_Q10",
+      "question_text": "A manufacturing company has direct materials of ₹100,000, direct labor of ₹50,000, and manufacturing overhead of ₹30,000. What is the total manufacturing cost?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹ 1,50,000.00",
+        "B": "₹ 1,80,000.00",
+        "C": "₹ 1,60,000.00",
+        "D": "₹ 2,00,000.00"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 5,
+      "question_id": "P_M5_Q11",
+      "question_text": "A service company has direct costs of ₹500,000 related to services provided. If the company has no inventory, what is the COGS for the service provided?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹ 4,00,000.00",
+        "B": "₹ 5,00,000.00",
+        "C": "₹ 6,00,000.00",
+        "D": "₹ 7,00,000.00"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 5,
+      "question_id": "P_M5_Q12",
+      "question_text": "A company values its ending inventory at ₹150,000 using FIFO. If the market value of the inventory is ₹140,000, what value should the inventory be reported at?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹ 1,50,000.00",
+        "B": "₹ 1,40,000.00",
+        "C": "₹ 1,60,000.00",
+        "D": "₹ 1,30,000.00"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 6,
+      "question_id": "P_M6_Q1",
+      "question_text": "While accounting fixed assets, which concept is relevant?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Conservatism",
+        "B": "Cost",
+        "C": "Entity",
+        "D": "Matching"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 6,
+      "question_id": "P_M6_Q2",
+      "question_text": "Which concept requires an Accountant to provide depreciation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Conservatism",
+        "B": "Cost",
+        "C": "Entity",
+        "D": "Matching"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 6,
+      "question_id": "P_M6_Q3",
+      "question_text": "In which one of the following asset, Accountant need not provide depreciation/amortisation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Land",
+        "B": "Building",
+        "C": "Machine",
+        "D": "Intellectual Property Right"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 6,
+      "question_id": "P_M6_Q4",
+      "question_text": "An asset with a life of 10 years was purchased for Rs. 10 lakhs three years back. If the company follows Straight Line Method of Depreciation, the depreciated value of the asset at the end of 3 yars is _____?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs. 2 lakhs",
+        "B": "Rs. 10 lakhs",
+        "C": "Rs. 7 lakhs",
+        "D": "Rs. 3 lakhs"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 6,
+      "question_id": "P_M6_Q5",
+      "question_text": "An asset with a life of 10 years was purchased for Rs. 10 lakhs three years back. If the company follows Written Down Value Method of Depreciation at the rate of 20% per year, the depreciated value of the asset at the end of 3 yars is _____?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs. 4.88 lakhs",
+        "B": "Rs. 5.12 lakhs",
+        "C": "Rs. 6.40 lakhs",
+        "D": "Rs. 10 lakhs"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 6,
+      "question_id": "P_M6_Q6",
+      "question_text": "An asset with a life of 10 years was purchased for Rs. 10 lakhs three years back. If the company follows Sum of the Years Digit (SYD) Method of Depreciation, the depreciated value of the asset at the end of 3 yars is _____?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs. 4.91 lakhs",
+        "B": "Rs. 5.09 lakhs",
+        "C": "Rs. 7.00 lakhs",
+        "D": "Rs. 8.20 lakhs"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 6,
+      "question_id": "P_M6_Q7",
+      "question_text": "An asset was purchased for Rs. 10 lakhs and depreciated at the rate of 10% per year on Straight Line Method. At the end of the 8 years, the asset was sold for Rs. 1.80 lakhs. Find the profit or loss on sale of assets.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Loss of Rs. 20,000",
+        "B": "Profit of Rs. 20,000",
+        "C": "Profit of Rs. 1.80 lakhs",
+        "D": "No Profit or Loss on sale of asset"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 6,
+      "question_id": "P_M6_Q8",
+      "question_text": "A Machine was purchased for Rs. 10 lakhs and depreciated at the rate of 10% per year on Straight Line Method. The accounting entry for depreciation is_____.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Machine A/c plus Rs. 1 lakh; Depreciation A/c Minus Rs. 1 lakh",
+        "B": "Accumulated Depreciation A/c Plus Rs. 1 lakh; Depreciation Minus Rs. 1 lakh",
+        "C": "Accumulated Depreciation A/c Minus Rs. 1 lakh; Depreciation Minus Rs. 1 lakh",
+        "D": "Machine A/c Minus Rs. 1 lakhs; Depreciation A/c Minus Rs. 1 lakh"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 6,
+      "question_id": "P_M6_Q9",
+      "question_text": "An old car with depreciated value of Rs. 1 lakh was exchanged for a new car by paying Rs. 8 lakhs. The normal price of the car without exchange is Rs. 10 lakhs. The Accountant will recognise the value of the car at Rs. _____",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs. 10 lakhs",
+        "B": "Rs. 8 lakhs",
+        "C": "Rs. 9 lakhs",
+        "D": "Rs. 11 lakhs"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 6,
+      "question_id": "P_M6_Q10",
+      "question_text": "An old packing machine with depreciated value of Rs. 5 lakhs was exchanged for a new drilling machine by paying Rs. 20 lakhs. The normal price of the drilling machine without exchange is Rs. 22 lakhs. The Accountant will recognise the value of the drilling machine at Rs. _____",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs. 22 lakhs",
+        "B": "Rs. 20 lakhs",
+        "C": "Rs. 25 lakhs",
+        "D": "Rs. 27 lakhs"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 6,
+      "question_id": "P_M6_Q11",
+      "question_text": "A group of similar assets is treated as single asset and group depreciation is followed. If an old asset is exchanged for new assets, the value of the new asset entered in the books of account is ______.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Paid plus fair value of asset exchanged",
+        "B": "Cash Paid",
+        "C": "Fair value new Asset",
+        "D": "Cash Paid plus accumulated depreciation of old asset"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 6,
+      "question_id": "P_M6_Q12",
+      "question_text": "In developing natural resource, a company follows successful effort method. The company spent Rs. 100 cr. to drill in five places but found oil only in one place. The value of natural resource is",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs. 100 cr.",
+        "B": "Rs. 20 cr.",
+        "C": "Rs. 80 cr.",
+        "D": "Rs. 120 cr."
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 7,
+      "question_id": "P_M7_Q1",
+      "question_text": "In Balance Sheet, where do you find Long-Term Loans?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Current Assets",
+        "B": "Current Liabilities",
+        "C": "Non-current Assets",
+        "D": "Non-current Liabilities"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 7,
+      "question_id": "P_M7_Q2",
+      "question_text": "In which industry, firms will have more current assets?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cement",
+        "B": "Software",
+        "C": "Retails",
+        "D": "Hotel"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 7,
+      "question_id": "P_M7_Q3",
+      "question_text": "What causes Deferred Tax Liability?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Differences in inventory accounting",
+        "B": "Differences in Depreciation Methods",
+        "C": "Differences in the Tax Rates",
+        "D": "Differences in Currency Rates"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 7,
+      "question_id": "P_M7_Q4",
+      "question_text": "Capital work-in-progress refers to",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Fixed asset yet to put into use",
+        "B": "Payment due on fixed assets",
+        "C": "Amount collected on Equity Issue",
+        "D": "Amount borrowed to fund work-in-pogress"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 7,
+      "question_id": "P_M7_Q5",
+      "question_text": "ABC Ltd. sold an old machine and earned a profit of Rs. 3 lakhs. Under which head of the Statement of Profit and Loss, the company will show the profit on sale of assets?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Miscellaneous Income",
+        "B": "Other Income",
+        "C": "Revenue from Non-Operating Sources",
+        "D": "Exceptional Income"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 7,
+      "question_id": "P_M7_Q6",
+      "question_text": "\"Changes in inventories of finished goods, Stock-in-trade and work-in-progress\" in the Statement of Profit and Loss refers to _____?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Difference between cost and market value of Inventory",
+        "B": "Consumption of Inventory",
+        "C": "Inventory Loss",
+        "D": "Difference between Opening and closing stock value of Inventory"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 7,
+      "question_id": "P_M7_Q7",
+      "question_text": "Which one of the following items will not appear in the Cash Flow Statement?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Depreciation",
+        "B": "Interest",
+        "C": "Taxes",
+        "D": "Dividend"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 7,
+      "question_id": "P_M7_Q8",
+      "question_text": "Alpha Ltd. financial statement shows the following: Opening Receivables Rs. 100, Closing Receivables Rs. 50, Credit Sales during the period Rs. 500. Find the cash collected from customers.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs. 450",
+        "B": "Rs. 650",
+        "C": "Rs. 550",
+        "D": "Rs. 350"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 7,
+      "question_id": "P_M7_Q9",
+      "question_text": "Cash Book has the following transactions: Cash sales 100; collection from customers 500; cash purchases 50; payment to suppliers 200; salary paid 100; rent and other expenses 200; capital received from owners 400; dividend paid to equity holders 50; loan from SBI 200; interest paid on loan 20; repayment of loan 40; machine purchased 40; old machine sold for 10. Find cash flow from financing activities.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "400",
+        "B": "460",
+        "C": "490",
+        "D": "720"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 7,
+      "question_id": "P_M7_Q10",
+      "question_text": "Cash Book has the following transactions: Cash sales 100; collection from customers 500; cash purchases 50; payment to suppliers 200; salary paid 100; rent and other expenses 200; capital received from owners 400; dividend paid to equity holders 50; loan from SBI 200; interest paid on loan 20; repayment of loan 40; machine purchased 40; old machine sold for 10. Find cash flow from Investing activities.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "-30",
+        "B": "-280",
+        "C": "-50",
+        "D": "70"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 8,
+      "question_id": "P_M8_Q1",
+      "question_text": "In Year 1, a firm reported PBIT of Rs. 50 when investments in total asset was Rs. 100. In Year 2, the firm reported PBIT of Rs. 80, when investments in total asset was Rs. 200. The profitability of the firm in Year 2 _____.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Improved",
+        "B": "Declined",
+        "C": "Remains same"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 8,
+      "question_id": "P_M8_Q2",
+      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Return on Total Assets.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "50%",
+        "B": "20%",
+        "C": "40%",
+        "D": "12%"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 8,
+      "question_id": "P_M8_Q3",
+      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Total Asset Turnover Ratio.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1.8",
+        "B": "2",
+        "C": "2.5",
+        "D": "3"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 8,
+      "question_id": "P_M8_Q4",
+      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Profit Margin.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "25%",
+        "B": "22%",
+        "C": "14%",
+        "D": "30%"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 8,
+      "question_id": "P_M8_Q5",
+      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Fixed Asset Turnover Ratio.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1.15",
+        "B": "2",
+        "C": "2.8",
+        "D": "3"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 8,
+      "question_id": "P_M8_Q6",
+      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Inventory Days.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "53",
+        "B": "61",
+        "C": "82",
+        "D": "143"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "module": 8,
+      "question_id": "P_M8_Q7",
+      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Receivables Days.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "30",
+        "B": "61",
+        "C": "95",
+        "D": "15"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "module": 8,
+      "question_id": "P_M8_Q8",
+      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Return on Capital Employed.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "35%",
+        "B": "20%",
+        "C": "40%",
+        "D": "60%"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "module": 8,
+      "question_id": "P_M8_Q9",
+      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Return on Equity (pre tax).",
+      "question_type": "MCQ",
+      "options": {
+        "A": "24%",
+        "B": "58%",
+        "C": "125%",
+        "D": "90%"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "module": 8,
+      "question_id": "P_M8_Q10",
+      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Return on Equity (post-tax).",
+      "question_type": "MCQ",
+      "options": {
+        "A": "100%",
+        "B": "80%",
+        "C": "60%",
+        "D": "20%"
+      },
+      "correct_option_label": "A"
+    }
+  ]
+}

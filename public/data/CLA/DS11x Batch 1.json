@@ -1,0 +1,161 @@
+{
+    "exam_metadata": {
+      "subject_name": "Business Statistics",
+      "exam_date": "Mid Term Batch 1"
+    },
+    "questions": [
+      {
+        "module": "Mid-Term",
+        "question_id": "STAT_MT_Q1",
+        "question_text": "The daily earnings of a taxi driver in a city has an average of 2400 and a standard deviation of 360. If a random sample of 45 taxi drivers are surveyed, the probability of the average daily earnings in the sample being between 2300 and 2500 is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Between 0.00 and 0.25",
+          "B": "Between 0.25 and 0.50",
+          "C": "Between 0.50 and 0.75",
+          "D": "Between 0.75 and 1.00"
+        },
+        "correct_option_label": "D"
+      },
+      {
+        "module": "Mid-Term",
+        "question_id": "STAT_MT_Q2",
+        "question_text": "Shoppers enter the City Mall at an average of 32 per hour. What is the probability at least 13 customers enter the mall in the next 30 minutes? It is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Between 0.75 and 1.00"
+        },
+        "correct_option_label": "A"
+      },
+      {
+        "module": "Mid-Term",
+        "question_id": "STAT_MT_Q3",
+        "question_text": "If A and B are mutually exclusive events with P(A) = 0.3 and P(B) = 0.5, then P(A u B) is equal to:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "0.0",
+          "B": "0.3",
+          "C": "0.4",
+          "D": "0.8"
+        },
+        "correct_option_label": "D"
+      },
+      {
+        "module": "Mid-Term",
+        "question_id": "STAT_MT_Q4",
+        "question_text": "Scores of 12 job applicants in a screening test is as follows: 18, 23, 27, 21, 32, 17, 20, 29, 22, 30, 25, and 15. Determine the first quartile.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "17.5",
+          "B": "18.5",
+          "C": "19.5",
+          "D": "20.5"
+        },
+        "correct_option_label": "B"
+      },
+      {
+        "module": "Mid-Term",
+        "question_id": "STAT_MT_Q5",
+        "question_text": "Daily demand at a local store can take values of 0, 1, 2, 3, and 4 with probabilities 0.1, 0.2, 0.3, 0.2, and 0.2 respectively. The standard deviation of daily sales is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "1.2",
+          "B": "1.6",
+          "C": "2.2",
+          "D": "2.6"
+        },
+        "correct_option_label": "A"
+      },
+      {
+        "module": "Mid-Term",
+        "question_id": "STAT_MT_Q6",
+        "question_text": "For a given product, the supply (y) and price(x) for 8 weeks is given as (y,x) as: (5, 2), (7, 4), (9, 8), (12, 5), (10, 7), (13, 8), (16, 16) and (16, 6). The sample covariance is equal to:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "10.0",
+          "B": "10.4",
+          "C": "11.0",
+          "D": "11.4"
+        },
+        "correct_option_label": "D"
+      },
+      {
+        "module": "Mid-Term",
+        "question_id": "STAT_MT_Q7",
+        "question_text": "Scores on a national competitive exam were normally distributed with a mean of 80 and a variance of 36. If the top 5% of test scores receive merit awards, what is the lowest score eligible for a merit award? It is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "89",
+          "B": "90",
+          "C": "91",
+          "D": "92"
+        },
+        "correct_option_label": "B"
+      },
+      {
+        "module": "Mid-Term",
+        "question_id": "STAT_MT_Q8",
+        "question_text": "John, Mary and Sue at a fast-food restaurant pack the take-out dinners. John packs 45% of the dinners but fails to include a salt packet 4% of the time. Mary packs 25% of the dinners but omits the salt packet 2% of the time. Sue packs 30% of the dinners but fails to include the salt packet 3% of the time. If you have purchased dinner and find that there is no salt packet, what is the probability that Sue packed your dinner?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "0.16",
+          "B": "0.28",
+          "C": "0.38",
+          "D": "0.56"
+        },
+        "correct_option_label": "B"
+      },
+      {
+        "module": "Mid-Term",
+        "question_id": "STAT_MT_Q9",
+        "question_text": "It is believed that 70% of the customers at a retail chain are satisfied with their shopping experience. If a random sample of 20 shoppers are surveyed, what is the probability that at least 12 are not satisfied with their shopping experience? It is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Between 0.00 and 0.25",
+          "B": "Between 0.25 and 0.50",
+          "C": "Between 0.50 and 0.75",
+          "D": "Between 0.75 and 1.00"
+        },
+        "correct_option_label": "A"
+      },
+      {
+        "module": "Mid-Term",
+        "question_id": "STAT_MT_Q10",
+        "question_text": "The probability that a t-random variable with 5 degrees of freedom takes values between -2.0 and 0.5 is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Between 0.20 and 0.40",
+          "B": "Between 0.40 and 0.60",
+          "C": "Between 0.60 and 0.80",
+          "D": "Between 0.80 and 1.00"
+        },
+        "correct_option_label": "C"
+      },
+      {
+        "module": "Mid-Term",
+        "question_id": "STAT_MT_Q11",
+        "question_text": "A department store has determined that 25% of all their sales are credit sales. If a random sample of 60 sales records are selected, the probability of the proportion of credit sales in the sample being more than 30% is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Between 0.00 and 0.25",
+          "B": "Between 0.25 and 0.50",
+          "C": "Between 0.50 and 0.75",
+          "D": "Between 0.75 and 1.00"
+        },
+        "correct_option_label": "A"
+      },
+      {
+        "module": "Mid-Term",
+        "question_id": "STAT_MT_Q12",
+        "question_text": "The time it takes a mechanic to change the oil in a car is exponentially distributed with a mean of 25 minutes. What is the probability that the mechanic takes less than 40 minutes to change oil in a car? It is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Between 0.00 and 0.25",
+          "B": "Between 0.25 and 0.50",
+          "C": "Between 0.50 and 0.75",
+          "D": "Between 0.75 and 1.00"
+        },
+        "correct_option_label": "D"
+      }
+    ]
+  }

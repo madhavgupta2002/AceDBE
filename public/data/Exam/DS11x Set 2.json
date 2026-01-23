@@ -1,0 +1,358 @@
+{
+  "exam_metadata": {
+    "subject_name": "Business Statistics for Entrepreneurs",
+    "exam_date": "17/05/2025"
+  },
+  "questions": [
+    {
+      "question_id": "1",
+      "question_text": "The rainfall (in cm) received during a 24-hour period in 10 cities is recorded as 2, 4, 5, 6, 7, 10, 12, 5, 4, 5, respectively. The median rainfall in cm in a city is given by:",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "3 cm",
+        "B": "4 cm",
+        "C": "5 cm",
+        "D": "8 cm"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "question_id": "2",
+      "question_text": "The rainfall (in cm) received during a 24-hour period in 10 cities is recorded as 2, 4, 5, 6, 7, 10, 12, 5, 4, 5, respectively. The first quartile of rainfall in cm in a city is given by:",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "3 cm",
+        "B": "4 cm",
+        "C": "5 cm",
+        "D": "8 cm"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "3",
+      "question_text": "The temperature (in celsius) in a town over a 10-day period was recorded as -5, 3, -6, 4, 2, 0, -1, 3, 2, and 6 respectively. The standard deviation of the temperature in celsius is given by:",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "2.35",
+        "B": "2.85",
+        "C": "3.35",
+        "D": "3.85"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "question_id": "4",
+      "question_text": "Historical data suggests that the number of microwaves sold per month is a random variable that can take values of 0, 5, 10, 15 with probabilities of 0.1, 0.2, 0.3, and 0.4, respectively. The probability that the sales will take other values in a month is zero. The average number of microwaves sold per month is equal to:",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "8",
+        "B": "10",
+        "C": "12",
+        "D": "14"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "5",
+      "question_text": "Historical data suggests that the number of microwaves sold per month is a random variable that can take values of 0, 5, 10, 15 with probabilities of 0.1, 0.2, 0.3, and 0.4, respectively. The probability that the sales will take other values in a month is zero. The variance of the number of microwaves sold per month is equal to:",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "Between 0 and 20",
+        "B": "Between 20 and 30",
+        "C": "Between 30 and 40",
+        "D": "Between 40 and 50"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "6",
+      "question_text": "The quality department conducts random checks of parts to see if they meet the tolerance specification (TS) or not. Parts can be made by domestic or overseas suppliers. Data shows that 40% of total parts both meet tolerance specifications and are domestically made, while 10% of total parts both do not meet tolerance specifications and are made by overseas suppliers. Also, 55% of total parts are made by domestic suppliers. If a part meets tolerance specifications, what is the probability that it is not made by a domestic supplier?",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "Between 0.01 and 0.25",
+        "B": "Between 0.25 and 0.50",
+        "C": "Between 0.50 and 0.75",
+        "D": "Between 0.75 and 0.99"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "7",
+      "question_text": "The quality department conducts random checks of parts to see if they meet the tolerance specification (TS) or not. Parts can be made by domestic or overseas suppliers. Data shows that 40% of total parts both meet tolerance specifications and are domestically made, while 10% of total parts both do not meet tolerance specifications and are made by overseas suppliers. Also, 55% of total parts are made by domestic suppliers. What is the probability that out of 10 parts inspected at random, exactly 6 meet the tolerance specification?",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "Between 0.01 and 0.25",
+        "B": "Between 0.25 and 0.50",
+        "C": "Between 0.50 and 0.75",
+        "D": "Between 0.75 and 0.99"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "8",
+      "question_text": "A grammar check algorithm is checking for grammatical errors (GEs) in a document. Although GEs occur in a random manner, on an average there are 3 GEs in every 5 pages of a document. What is the probability that there are exactly 2 GEs in the first 6 pages of the document?",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "Between 0.00 and 0.05",
+        "B": "Between 0.05 and 0.10",
+        "C": "Between 0.10 and 0.15",
+        "D": "Between 0.15 and 0.20"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "question_id": "9",
+      "question_text": "A grammar check algorithm is checking for grammatical errors (GEs) in a document. Although GEs occur in a random manner, on an average there are 3 GEs in every 5 pages of a document. What is the probability that there are no GEs in the first 6 pages of the document?",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "Between 0.00 and 0.05",
+        "B": "Between 0.05 and 0.10",
+        "C": "Between 0.10 and 0.15",
+        "D": "Between 0.15 and 0.20"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "10",
+      "question_text": "Daily demand at a bakery has two components: walk-in orders that have a Normal distribution with mean 10 and standard deviation 3, and online orders that have a Normal distribution with mean 15 and standard deviation 4. The two demands have a correlation coefficient of -0.2. What is the probability that on a given day, the online orders will be between 7 and 11 units?",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "Between 0.00 and 0.10",
+        "B": "Between 0.10 and 0.15",
+        "C": "Between 0.15 and 0.20",
+        "D": "Between 0. 20 and 0.30"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "11",
+      "question_text": "Daily demand at a bakery has two components: walk-in orders that have a Normal distribution with mean 10 and standard deviation 3, and online orders that have a Normal distribution with mean 15 and standard deviation 4. The two demands have a correlation coefficient of -0.2. What is the probability that on a day, the walk-in orders will be more than the online orders?",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "Less than 0.04",
+        "B": "Between 0.04 and 0.08",
+        "C": "Between 0.08 and 0.12",
+        "D": "More than 0.16"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "question_id": "12",
+      "question_text": "Steel bars have hairline fractures that are randomly distributed across their length. On average a bar of 10 m has 42 hairline fractures. What is the probability that the gap between two hairline fractures is between 25cm and 35 cm?",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "Less than 0.05",
+        "B": "Between 0.05 and 0.15",
+        "C": "Between 0.15 and 0.25",
+        "D": "More than 0.25"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "question_id": "13",
+      "question_text": "A government agency selects a random sample of 40 IT projects to study issued related to project delays. The sample study reveals that the average duration of a project is 18 weeks, and the standard deviation is 4 weeks. Construct a hypothesis (H0 and Ha) to determine if the average duration of project in the population is more than 16 weeks. The correct form of hypothesis test to be used is the following:",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "H0 : μ ≤ 16 and Ha : μ > 16",
+        "B": "H0 : μ < 16 and Ha : μ ≥ 16",
+        "C": "H0 : μ > 16 and Ha : μ ≤ 16",
+        "D": "H0 : μ ≥ 16 and Ha : μ < 16"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "14",
+      "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. What is the margin of error corresponding to a 95% confidence interval on the true value of the average contacts per week?",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "Margin of error is between 1.0 to 1.5",
+        "B": "Margin of error is between 1.5 to 2.0",
+        "C": "Margin of error is between 2.0 to 2.5",
+        "D": "Margin of error is between 2.5 to 3.0"
+      },
+      "correct_option_label": "D"
+    },
+    {
+      "question_id": "15",
+      "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. What is the standard error corresponding to a 85% confidence interval on the true value of the average contacts per week?",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "Standard error is between 0.0 to 1.0",
+        "B": "Standard error is between 1.0 to 2.0",
+        "C": "Standard error is between 2.0 to 3.0",
+        "D": "Standard error is between 3.0 to 4.0"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "16",
+      "question_text": "In a random survey of 24 students in a school, 7 students admitted that they spend more than 2 hours per day on social media activities. What is the margin of error corresponding to an 80% confidence interval of true proportion of students spending more than 2 hours per day on social media activities in the population.",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "Margin of error is between 0.0 to 0.10",
+        "B": "Margin of error is between 0.10 to 0.20",
+        "C": "Margin of error is between 0.20 to 0.30",
+        "D": "Margin of error is between 0.30 to 0.40"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "17",
+      "question_text": "In a random survey of 24 students in a school, 7 students admitted that they spend more than 2 hours per day on social media activities. What is the smallest sample size have will yield a desired margin of error of 0.05 or less for a 90% confidence interval on the true proportion of students spending more than 2 hours per day on social media activities in the population.",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "Sample size of 400",
+        "B": "Sample size of 300",
+        "C": "Sample size of 200",
+        "D": "Sample size of 100"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "18",
+      "question_text": "How much do rental costs vary? In a random survey of 10 properties in Hyderabad, the rental costs for 2 BHK showed a standard deviation of 7 lakh. What is the 95% confidence interval of true standard deviation of rental costs in the population?",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "Between 4.8 and 12.8 lakhs",
+        "B": "Between 4.7 and 13.4 lakhs",
+        "C": "Between 23 and 163 lakhs",
+        "D": "Between 22 and 180 lakhs"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "19",
+      "question_text": "In data used to construct a valid simple linear regression model, it was observed that SSR is equal to 14200, SSE is equal to 1530, and MSE is equal to 191.25. The total number of observations used to build this simple linear regression model is:",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "8",
+        "B": "9",
+        "C": "10",
+        "D": "11"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "question_id": "20",
+      "question_text": "In data used to construct a valid simple linear regression model, it was observed that SSR is equal to 14200, SSE is equal to 1530, and MSE is equal to 191.25. The standard error corresponding to this simple linear regression model is:",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "Between 0 and 1",
+        "B": "Between 1 and 10",
+        "C": "Between 10 and 20",
+        "D": "Between 20 and 30"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "question_id": "21",
+      "question_text": "In data used to construct a valid simple regression model with 12 data points, it was observed that ∑(Xi-Xbar)(Yi-Ybar) is equal to -997.1, ∑(Xi-Xbar)^2 equals 392.9 and ∑(Yi-Ybar)^2 = 4800.9. The sample average for x given by Xbar was 28.6 and the sample average for y given by Ybar was 227.6. The least squares estimate for b0 is given by:",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "2.54",
+        "B": "-2.54",
+        "C": "300.1",
+        "D": "-300.1"
+      },
+      "correct_option_label": "C"
+    },
+    {
+      "question_id": "22",
+      "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x1, x2, x3, x4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x1, x2, x3, x4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x1, x2, x3, x4 were 1.5, 0.5,-1.0, and 8.0 respectively. These results imply that Multiple R is equal to",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "0.81",
+        "B": "0.87",
+        "C": "0.93",
+        "D": "0.98"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "23",
+      "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x1, x2, x3, x4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x1, x2, x3, x4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x1, x2, x3, x4 were 1.5, 0.5,-1.0, and 8.0 respectively. These results imply that b1 is equal to",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "10",
+        "B": "12",
+        "C": "1.0",
+        "D": "1.2"
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "24",
+      "question_text": "When data with 18 observation was used to conduct a multiple linear regression in Excel, relating the dependent variable y to 4 independent variables, x1, ... , x4 the following outputs were obtained. The RSquare was 0.36, standard error was 4.8. These results imply that SSE is equal to",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "299",
+        "B": "399",
+        "C": "499",
+        "D": "599"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "25",
+      "question_text": "When data with 18 observation was used to conduct a multiple linear regression in Excel, relating the dependent variable y to 4 independent variables, x1, ... , x4 the following outputs were obtained. The RSquare was 0.36, standard error was 4.8. These results imply that MSE is equal to",
+      "question_type": "MCQ",
+      "marks_allocated": 4.0,
+      "status": "Answered",
+      "options": {
+        "A": "23.04",
+        "B": "24.03",
+        "C": "32.04",
+        "D": "34.02"
+      },
+      "correct_option_label": "A"
+    }
+  ]
+}
