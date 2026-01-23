@@ -48,6 +48,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
   const [selectedModule, setSelectedModule] = useState<string | number | 'all'>('all');
   const [availableModules, setAvailableModules] = useState<(string | number)[]>([]);
   const [showAllQuestions, setShowAllQuestions] = useState(false);
+  const [hideWrongOptions, setHideWrongOptions] = useState(false);
 
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
@@ -248,6 +249,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     });
     setQuizCompleted(false);
     setShowAllQuestions(false);
+    setHideWrongOptions(false);
   };
 
   const confirmGoToMainMenu = () => {
@@ -313,7 +315,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
               answeredQuestions={quizState.answeredQuestions}
             />
             
-            <div className="mt-6 mb-4">
+            <div className="mt-6 mb-4 flex flex-col sm:flex-row gap-4">
               <label className="flex items-center gap-2 cursor-pointer">
                 <input
                   type="checkbox"
@@ -325,6 +327,16 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                   Show all questions with correct answers
                 </span>
               </label>
+              <button
+                onClick={() => setHideWrongOptions(!hideWrongOptions)}
+                className={`px-4 py-2 border font-semibold transition duration-200 ${
+                  hideWrongOptions
+                    ? 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
+                    : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
+                }`}
+              >
+                {hideWrongOptions ? 'Show All Options' : 'Hide Wrong Options'}
+              </button>
             </div>
 
             {showAllQuestions ? (
@@ -351,27 +363,35 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                         {q.text}
                       </p>
                       <div className="space-y-1">
-                        {Object.entries(q.options).map(([key, value]) => {
-                          const isUserAnswer = userAnswer === key;
-                          const isCorrectAnswer = key === q.correctAnswer;
-                          
-                          return (
-                            <p
-                              key={key}
-                              className={`text-sm ${
-                                isCorrectAnswer
-                                  ? 'font-bold text-green-400'
-                                  : isUserAnswer
-                                  ? 'text-red-400'
-                                  : 'text-gray-400'
-                              }`}
-                            >
-                              {key}: {value}
-                              {isCorrectAnswer && ' ✓'}
-                              {isUserAnswer && !isCorrectAnswer && ' (Your answer)'}
-                            </p>
-                          );
-                        })}
+                        {Object.entries(q.options)
+                          .filter(([key]) => {
+                            if (hideWrongOptions) {
+                              // Show only correct answer and user's answer (if different)
+                              return key === q.correctAnswer || (userAnswer === key && userAnswer !== q.correctAnswer);
+                            }
+                            return true;
+                          })
+                          .map(([key, value]) => {
+                            const isUserAnswer = userAnswer === key;
+                            const isCorrectAnswer = key === q.correctAnswer;
+                            
+                            return (
+                              <p
+                                key={key}
+                                className={`text-sm ${
+                                  isCorrectAnswer
+                                    ? 'font-bold text-green-400'
+                                    : isUserAnswer
+                                    ? 'text-red-400'
+                                    : 'text-gray-400'
+                                }`}
+                              >
+                                {key}: {value}
+                                {isCorrectAnswer && ' ✓'}
+                                {isUserAnswer && !isCorrectAnswer && ' (Your answer)'}
+                              </p>
+                            );
+                          })}
                       </div>
                     </div>
                   );
@@ -394,27 +414,35 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                         {q.text}
                       </p>
                       <div className="space-y-1">
-                        {Object.entries(q.options).map(([key, value]) => {
-                          const isUserAnswer = q.selectedAnswer === key;
-                          const isCorrectAnswer = key === q.correctAnswer;
-                          
-                          return (
-                            <p
-                              key={key}
-                              className={`text-sm ${
-                                isCorrectAnswer
-                                  ? 'font-bold text-green-400'
-                                  : isUserAnswer
-                                  ? 'text-red-400'
-                                  : 'text-gray-400'
-                              }`}
-                            >
-                              {key}: {value}
-                              {isCorrectAnswer && ' ✓'}
-                              {isUserAnswer && ' (Your answer)'}
-                            </p>
-                          );
-                        })}
+                        {Object.entries(q.options)
+                          .filter(([key]) => {
+                            if (hideWrongOptions) {
+                              // Show only correct answer and user's answer (if different)
+                              return key === q.correctAnswer || (q.selectedAnswer === key && q.selectedAnswer !== q.correctAnswer);
+                            }
+                            return true;
+                          })
+                          .map(([key, value]) => {
+                            const isUserAnswer = q.selectedAnswer === key;
+                            const isCorrectAnswer = key === q.correctAnswer;
+                            
+                            return (
+                              <p
+                                key={key}
+                                className={`text-sm ${
+                                  isCorrectAnswer
+                                    ? 'font-bold text-green-400'
+                                    : isUserAnswer
+                                    ? 'text-red-400'
+                                    : 'text-gray-400'
+                                }`}
+                              >
+                                {key}: {value}
+                                {isCorrectAnswer && ' ✓'}
+                                {isUserAnswer && ' (Your answer)'}
+                              </p>
+                            );
+                          })}
                       </div>
                     </div>
                   ))}
