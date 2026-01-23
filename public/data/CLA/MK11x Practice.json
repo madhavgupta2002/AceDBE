@@ -174,9 +174,14 @@
     {
       "question_id": "MKT_P_MOD3_Q4",
       "question_text": "Define the Market Sizes: Potential Market, Available Market, and Target Market.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "Bottom: Potential Market (interest), Middle: Available Market (interest, income, access), Top: Target Market (pursued part).",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Bottom: Potential Market (interest), Middle: Available Market (interest, income, access), Top: Target Market (pursued part).",
+        "B": "Top: Potential Market (interest), Middle: Available Market (interest, income, access), Bottom: Target Market (pursued part).",
+        "C": "Bottom: Target Market (pursued part), Middle: Available Market (interest, income, access), Top: Potential Market (interest).",
+        "D": "Bottom: Available Market (interest, income, access), Middle: Potential Market (interest), Top: Target Market (pursued part)."
+      },
+      "correct_option_label": "A",
       "module": 3
     },
     {

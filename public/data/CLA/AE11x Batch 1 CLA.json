@@ -207,17 +207,27 @@
     {
       "question_id": "BC_CLA2_Q2",
       "question_text": "Read the given statements then choose the option that correctly fills in the blanks so that the subject agrees with the verb. Statement: The percentage of profits from the new product line _____ (is/are) impressive. A significant percentage of the customers _____ (prefers/prefer) this product.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "is, prefer",
+      "question_type": "MCQ",
+      "options": {
+        "A": "is, prefer",
+        "B": "are, prefers",
+        "C": "is, prefers",
+        "D": "are, prefer"
+      },
+      "correct_option_label": "A",
       "module": 2
     },
     {
       "question_id": "BC_CLA2_Q3",
       "question_text": "Read the given statements then choose the option that correctly fills in the blanks so that the subject agrees with the verb. Statement: The media _____ (covers/cover) a wide range of business events globally. The media, as a collective body, _____ (has/have) a significant influence on public opinion.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "cover, has",
+      "question_type": "MCQ",
+      "options": {
+        "A": "cover, has",
+        "B": "covers, have",
+        "C": "cover, have",
+        "D": "covers, has"
+      },
+      "correct_option_label": "A",
       "module": 2
     },
     {
@@ -249,9 +259,14 @@
     {
       "question_id": "BC_CLA2_Q6",
       "question_text": "Key in the appropriate articles to fill in the blanks in each of the statements given below. Statements: During ___ internship, students gain practical knowledge. Our professor emphasizes that ___ internship experience is invaluable for career growth. If you get ___ opportunity to do an internship, you should take it.",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "an, the, an",
+      "question_type": "MCQ",
+      "options": {
+        "A": "an, the, an",
+        "B": "the, an, the",
+        "C": "a, the, a",
+        "D": "an, an, the"
+      },
+      "correct_option_label": "A",
       "module": 2
     },
     {
@@ -322,9 +337,14 @@
     {
       "question_id": "BC_CLA2_Q12",
       "question_text": "Key in the appropriate article to fill in the blank for the given sentence. 'I am studying for ___ MBA in Finance.'",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "an",
+      "question_type": "MCQ",
+      "options": {
+        "A": "an",
+        "B": "a",
+        "C": "the",
+        "D": "no article"
+      },
+      "correct_option_label": "A",
       "module": 2
     },
     {
@@ -382,9 +402,14 @@
     {
       "question_id": "BC_CLA3_Q2",
       "question_text": "Which of the transitional words given below can be used as comparatives and which can be used for making concessions? PROBLEM: transitional words (similarly, likewise, also, admittedly, granted, certainly)",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "Comparatives: similarly, likewise, also; Concessions: admittedly, granted, certainly",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Comparatives: similarly, likewise, also; Concessions: admittedly, granted, certainly",
+        "B": "Comparatives: admittedly, granted, certainly; Concessions: similarly, likewise, also",
+        "C": "Comparatives: similarly, also; Concessions: likewise, admittedly, granted, certainly",
+        "D": "Comparatives: similarly, likewise, also, admittedly; Concessions: granted, certainly"
+      },
+      "correct_option_label": "A",
       "module": 3
     },
     {
@@ -435,10 +460,15 @@
     },
     {
       "question_id": "BC_CLA3_Q7",
-      "question_text": "Read the given paragraph and identify which sentence conveys the main idea and which sentence is out of place or lacks coherence. Each sentence is identified with the number placed before its start. 1.She often procrastinates on important tasks, leading to last-minute stress. 2. Lisa struggles with time management, which affects her daily routine. 3. She finds it difficult to wake up early and often misses her morning workouts. 4. Lisa enjoys reading mystery novels in her free time. 5. She frequently forgets to prioritize urgent responsibilities, which makes her feel overwhelmed. Now key in the number given before the sentence to identify the respective sentences: Serial number of the sentence conveying the main idea of the paragraph. Serial number of the sentence which is out of place in this paragraph. (You will get full marks if all the answers are correct, or zero mark if any one answer is wrong. Enter Number only, in single digit, without decimal)",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "2, 4",
+      "question_text": "Read the given paragraph and identify which sentence conveys the main idea and which sentence is out of place or lacks coherence. Each sentence is identified with the number placed before its start. 1.She often procrastinates on important tasks, leading to last-minute stress. 2. Lisa struggles with time management, which affects her daily routine. 3. She finds it difficult to wake up early and often misses her morning workouts. 4. Lisa enjoys reading mystery novels in her free time. 5. She frequently forgets to prioritize urgent responsibilities, which makes her feel overwhelmed. Now choose the option that correctly identifies the serial number of the sentence conveying the main idea and the serial number of the sentence which is out of place in this paragraph.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Main idea: 2; Out of place: 4",
+        "B": "Main idea: 1; Out of place: 3",
+        "C": "Main idea: 3; Out of place: 5",
+        "D": "Main idea: 2; Out of place: 5"
+      },
+      "correct_option_label": "A",
       "module": 3
     },
     {
@@ -456,18 +486,28 @@
     },
     {
       "question_id": "BC_CLA3_Q9",
-      "question_text": "Fill in the blanks in the following statements, using the correct transitional and connecting device from the words given next to each blank. Key in one of the words given next to the blank. Statements: The company has been achieving remarkable growth this year; . (Furthermore/but) its expansion into international markets is gaining momentum. (Undoubtedly/Even though) such success is a result of meticulous planning and execution, which highlights the team's dedication and strategic vision. (You will get full marks if all the answers are correct, or zero mark if any one answer is wrong. Use only the words given as answer choices in brackets)",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "furthermore, undoubtedly",
+      "question_text": "Fill in the blanks in the following statements, using the correct transitional and connecting device from the words given next to each blank. Statements: The company has been achieving remarkable growth this year; . (Furthermore/but) its expansion into international markets is gaining momentum. (Undoubtedly/Even though) such success is a result of meticulous planning and execution, which highlights the team's dedication and strategic vision.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Furthermore, Undoubtedly",
+        "B": "but, Even though",
+        "C": "Furthermore, Even though",
+        "D": "but, Undoubtedly"
+      },
+      "correct_option_label": "A",
       "module": 3
     },
     {
       "question_id": "BC_CLA3_Q10",
-      "question_text": "Fill in the blanks in the following statements, using the correct transitional and connecting device from the words given next to each blank. Key in one of the words given next to the blank. Statements: (In a nutshell/On account of), the project exceeded expectations by delivering results ahead of schedule. (Significantly/Without doubt), this success has boosted the team's morale and client trust. (You will get full marks if all the answers are correct, or zero mark if any one answer is wrong. Use only the words given as answer choices in brackets, in the same format)",
-      "question_type": "SUBJECTIVE",
-      "options": {},
-      "correct_option_label": "In a nutshell, Without doubt",
+      "question_text": "Fill in the blanks in the following statements, using the correct transitional and connecting device from the words given next to each blank. Statements: (In a nutshell/On account of), the project exceeded expectations by delivering results ahead of schedule. (Significantly/Without doubt), this success has boosted the team's morale and client trust.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "In a nutshell, Without doubt",
+        "B": "On account of, Significantly",
+        "C": "In a nutshell, Significantly",
+        "D": "On account of, Without doubt"
+      },
+      "correct_option_label": "A",
       "module": 3
     },
     {

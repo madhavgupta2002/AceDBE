@@ -33,10 +33,15 @@
       {
         "module": 1,
         "question_id": "M1_Q3",
-        "question_text": "If the Revenue is 100 and profit is 40, the Expense is ____. (Enter Number only, in two digits, without decimal).",
-        "question_type": "SUBJECTIVE",
-        "options": {},
-        "correct_option_label": "60"
+        "question_text": "If the Revenue is 100 and profit is 40, the Expense is ____.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "60",
+          "B": "70",
+          "C": "50",
+          "D": "80"
+        },
+        "correct_option_label": "A"
       },
       {
         "module": 1,
@@ -443,42 +448,67 @@
       {
         "module": 4,
         "question_id": "M4_Q1",
-        "question_text": "Kaveri Infrastructure received a by-pass road construction contract. The value of the contract is Rs. 300 cr. and it will take three years to complete. The estimated expenditure of the project in the year 1, year 2 and year 3 are Rs. 50 cr., Rs. 70 cr., and Rs. 120 cr., respectively. If the company follows percentage of completion method, the profit for the year 3 is Rs. ______ cr. (Enter Number only, in two digits, without decimal).",
-        "question_type": "SUBJECTIVE",
-        "options": {},
-        "correct_option_label": "30"
+        "question_text": "Kaveri Infrastructure received a by-pass road construction contract. The value of the contract is Rs. 300 cr. and it will take three years to complete. The estimated expenditure of the project in the year 1, year 2 and year 3 are Rs. 50 cr., Rs. 70 cr., and Rs. 120 cr., respectively. If the company follows percentage of completion method, the profit for the year 3 is Rs. ______ cr.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "30",
+          "B": "40",
+          "C": "20",
+          "D": "50"
+        },
+        "correct_option_label": "A"
       },
       {
         "module": 4,
         "question_id": "M4_Q2",
-        "question_text": "Kaveri Infrastructure received a by-pass road construction contract. The value of the contract is Rs. 240 cr. and it will take three years to complete. The estimated expenditure of the project in the year 1, year 2 and year 3 are Rs. 60 cr., Rs. 100 cr., and Rs. 40 cr., respectively. The estimated collection from the project in the year 1 to year 4 are Rs. 60 cr., Rs. 80 cr., Rs. 80 cr., and Rs. 20 respectively. If the company follows percentage of completion method, the receivable value at the end of Year 2 is Rs. _______ cr. (Enter Number only, in two digits, without decimal).",
-        "question_type": "SUBJECTIVE",
-        "options": {},
-        "correct_option_label": "52"
+        "question_text": "Kaveri Infrastructure received a by-pass road construction contract. The value of the contract is Rs. 240 cr. and it will take three years to complete. The estimated expenditure of the project in the year 1, year 2 and year 3 are Rs. 60 cr., Rs. 100 cr., and Rs. 40 cr., respectively. The estimated collection from the project in the year 1 to year 4 are Rs. 60 cr., Rs. 80 cr., Rs. 80 cr., and Rs. 20 respectively. If the company follows percentage of completion method, the receivable value at the end of Year 2 is Rs. _______ cr.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "52",
+          "B": "60",
+          "C": "48",
+          "D": "56"
+        },
+        "correct_option_label": "A"
       },
       {
         "module": 4,
         "question_id": "M4_Q3",
-        "question_text": "Kaveri Infrastructure received a by-pass road construction contract. The value of the contract is Rs. 240 cr. and it will take three years to complete. The estimated expenditure of the project in the year 1, year 2 and year 3 are Rs. 30 cr., Rs. 50 cr., and Rs. 120 cr., respectively. If the company follows completed contract method, the work-in progress value at the end of Year 2 is Rs. _______ cr. (Enter Number only, in two digits, without decimal).",
-        "question_type": "SUBJECTIVE",
-        "options": {},
-        "correct_option_label": "80"
+        "question_text": "Kaveri Infrastructure received a by-pass road construction contract. The value of the contract is Rs. 240 cr. and it will take three years to complete. The estimated expenditure of the project in the year 1, year 2 and year 3 are Rs. 30 cr., Rs. 50 cr., and Rs. 120 cr., respectively. If the company follows completed contract method, the work-in progress value at the end of Year 2 is Rs. _______ cr.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "80",
+          "B": "90",
+          "C": "70",
+          "D": "100"
+        },
+        "correct_option_label": "A"
       },
       {
         "module": 4,
         "question_id": "M4_Q4",
-        "question_text": "Kaveri Infrastructure received a by-pass road construction contract. The value of the contract is Rs. 240 cr. and it will take three years to complete. The estimated expenditure of the project in the year 1, year 2 and year 3 are Rs. 40 cr., Rs. 60 cr., and Rs. 100 cr., respectively. If the company follows completed contract method, the profit for the year 3 is Rs. ______ cr. (Enter Number only, in two digits, without decimal).",
-        "question_type": "SUBJECTIVE",
-        "options": {},
-        "correct_option_label": "40"
+        "question_text": "Kaveri Infrastructure received a by-pass road construction contract. The value of the contract is Rs. 240 cr. and it will take three years to complete. The estimated expenditure of the project in the year 1, year 2 and year 3 are Rs. 40 cr., Rs. 60 cr., and Rs. 100 cr., respectively. If the company follows completed contract method, the profit for the year 3 is Rs. ______ cr.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "40",
+          "B": "50",
+          "C": "30",
+          "D": "60"
+        },
+        "correct_option_label": "A"
       },
       {
         "module": 4,
         "question_id": "M4_Q5",
-        "question_text": "Kaveri Infrastructure received a by-pass road construction contract. The value of the contract is Rs. 280 cr. and it will take three years to complete at a total cost of Rs. 240 cr. The estimated collection from the project in the year 1, year 2 and year 3 are Rs. 70 cr., Rs. 70 cr., and Rs. 140 cr., respectively. If the company follows Instalment method, the profit for the year 2 is Rs. ______ cr. (Enter Number only, in two digits, without decimal).",
-        "question_type": "SUBJECTIVE",
-        "options": {},
-        "correct_option_label": "10"
+        "question_text": "Kaveri Infrastructure received a by-pass road construction contract. The value of the contract is Rs. 280 cr. and it will take three years to complete at a total cost of Rs. 240 cr. The estimated collection from the project in the year 1, year 2 and year 3 are Rs. 70 cr., Rs. 70 cr., and Rs. 140 cr., respectively. If the company follows Instalment method, the profit for the year 2 is Rs. ______ cr.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "10",
+          "B": "20",
+          "C": "15",
+          "D": "5"
+        },
+        "correct_option_label": "A"
       },
       {
         "module": 4,
