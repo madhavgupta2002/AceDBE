@@ -8,6 +8,7 @@ export interface IIMBQuestion {
   module?: string | number;
   marks_allocated?: number;
   status?: string;
+  explanation?: string;
 }
 
 export interface ExamMetadata {
@@ -29,6 +30,7 @@ export interface Question {
   module?: string | number;
   selectedAnswer?: string;
   source?: string; // exam_date from exam_metadata
+  explanation?: string;
 }
 
 // Quiz state types

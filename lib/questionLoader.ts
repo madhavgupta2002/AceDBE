@@ -9,6 +9,7 @@ export function convertToInternalFormat(iimbQuestion: IIMBQuestion, source?: str
     correctAnswer: iimbQuestion.correct_option_label,
     module: iimbQuestion.module,
     source: source,
+    explanation: iimbQuestion.explanation,
   };
 }
 
