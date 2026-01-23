@@ -9,15 +9,13 @@ import {
   BankType,
   QuizState,
 } from '@/lib/types';
-import { loadQuestions, loadAllQuestionsForSubject } from '@/lib/questionLoader';
+import { loadQuestions } from '@/lib/questionLoader';
 import { getSubjectByCode } from '@/lib/subjectMapping';
 import QuizQuestion from './QuizQuestion';
 import QuizStats from './QuizStats';
 import AnswerStatus from './AnswerStatus';
-import ModeSelector from './ModeSelector';
-import BankTypeSelector from './BankTypeSelector';
-import BankSelector from './BankSelector';
 import ModuleSelector from './ModuleSelector';
+import UnifiedQuizSelector from './UnifiedQuizSelector';
 import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle } from 'lucide-react';
 
 interface QuizAppProps {
@@ -49,10 +47,6 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
   const [allQuestions, setAllQuestions] = useState<Question[]>([]);
   const [selectedModule, setSelectedModule] = useState<string | number | 'all'>('all');
   const [availableModules, setAvailableModules] = useState<(string | number)[]>([]);
-  const [preQuizSelectedModule, setPreQuizSelectedModule] = useState<string | number | 'all'>('all');
-  const [preQuizAvailableModules, setPreQuizAvailableModules] = useState<(string | number)[]>([]);
-  const [selectedBank, setSelectedBank] = useState<string>('');
-  const [showModuleSelection, setShowModuleSelection] = useState(false);
   const [showAllQuestions, setShowAllQuestions] = useState(false);
 
   useEffect(() => {
@@ -79,7 +73,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     quizState.totalQuestions,
   ]);
 
-  const shuffleArray = (array: Question[]) => {
+  const shuffleArray = <T,>(array: T[]): T[] => {
     const shuffled = [...array];
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -88,121 +82,69 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     return shuffled;
   };
 
-  const selectPracticeMode = (mode: PracticeMode) => {
-    setQuizState((prev) => ({ ...prev, practiceMode: mode }));
-  };
-
-  const selectQuestionOrder = (order: QuestionOrder) => {
-    setQuizState((prev) => ({ ...prev, questionOrder: order }));
-  };
-
-  const selectBankType = (bankType: BankType) => {
-    setQuizState((prev) => ({ ...prev, bankType }));
-  };
-
-  const handleBankSelect = async (bankName: string = '') => {
-    setSelectedBank(bankName);
-    await loadModulesForSelection(bankName);
-  };
-
-  const loadModulesForSelection = async (bankName: string = '') => {
-    if (!quizState.bankType) return;
-
+  const startQuiz = async (selections: {
+    sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam'; modules: (string | number)[] }>;
+    randomOrder: boolean;
+  }) => {
     setLoading(true);
-    let questions: Question[] = [];
+    let allQuestions: Question[] = [];
 
     try {
-      if (quizState.practiceMode === 'bank') {
-        questions = await loadQuestions(
-          quizState.bankType,
-          subjectCode,
-          bankName
-        );
+      // Load questions from all selected sets and modules, grouped by set
+      const questionsBySet: Question[][] = [];
+      
+      for (const set of selections.sets) {
+        const setQuestions = await loadQuestions(set.bankType, subjectCode, set.bankName);
+        
+        // If modules array is empty, it means select all questions from this set
+        // Otherwise, filter by selected modules
+        const filteredQuestions = set.modules.length === 0
+          ? setQuestions
+          : setQuestions.filter(q => 
+              set.modules.includes(q.module || '')
+            );
+        
+        if (filteredQuestions.length > 0) {
+          questionsBySet.push(filteredQuestions);
+        }
+      }
+
+      if (questionsBySet.length === 0) {
+        alert('No questions found. Please check your selection.');
+        setLoading(false);
+        return;
+      }
+
+      // Apply random ordering if enabled
+      if (selections.randomOrder) {
+        // First randomize the order of sets
+        const shuffledSets = shuffleArray(questionsBySet);
+        
+        // Then randomize questions within each set
+        const randomizedSets = shuffledSets.map(setQuestions => shuffleArray(setQuestions));
+        
+        // Flatten into single array
+        allQuestions = randomizedSets.flat();
       } else {
-        questions = await loadAllQuestionsForSubject(
-          quizState.bankType,
-          subjectCode
-        );
+        // Process sets in order, questions in order
+        allQuestions = questionsBySet.flat();
       }
 
-      if (questions.length === 0) {
-        alert('No questions found. Please check the selection.');
-        setLoading(false);
-        return;
-      }
-
-      const uniqueModules = Array.from(new Set(questions.map(q => q.module).filter(Boolean))) as (string | number)[];
-      setPreQuizAvailableModules(uniqueModules.sort());
-      setPreQuizSelectedModule('all');
-      setShowModuleSelection(true);
-      setLoading(false);
-    } catch (error) {
-      console.error('Error loading questions:', error);
-      alert('Failed to load questions. Please try again.');
-      setLoading(false);
-    }
-  };
-
-  const startQuiz = async (bankName: string = '') => {
-    if (!quizState.bankType) return;
-
-    setLoading(true);
-    let questions: Question[] = [];
-
-    try {
-      if (quizState.practiceMode === 'bank') {
-        questions = await loadQuestions(
-          quizState.bankType,
-          subjectCode,
-          bankName
-        );
-      } else {
-        questions = await loadAllQuestionsForSubject(
-          quizState.bankType,
-          subjectCode
-        );
-      }
-
-      if (questions.length === 0) {
-        alert('No questions found. Please check the selection.');
-        setLoading(false);
-        return;
-      }
-
-      // Filter by module if a specific module is selected
-      if (preQuizSelectedModule !== 'all') {
-        questions = questions.filter(q => 
-          q.module === preQuizSelectedModule || 
-          q.module?.toString() === preQuizSelectedModule.toString()
-        );
-      }
-
-      if (questions.length === 0) {
-        alert('No questions found for the selected module. Please try a different module.');
-        setLoading(false);
-        return;
-      }
-
-      if (quizState.questionOrder === 'random') {
-        questions = shuffleArray(questions);
-      }
-
-      const uniqueModules = Array.from(new Set(questions.map(q => q.module).filter(Boolean))) as (string | number)[];
+      const uniqueModules = Array.from(new Set(allQuestions.map(q => q.module).filter(Boolean))) as (string | number)[];
       setAvailableModules(uniqueModules.sort());
-      setAllQuestions(questions);
+      setAllQuestions(allQuestions);
       setSelectedModule('all');
 
       setQuizState((prev) => ({
         ...prev,
-        currentBank: bankName,
         currentQuestionIndex: 0,
         score: 0,
-        totalQuestions: questions.length,
+        totalQuestions: allQuestions.length,
         selectedAnswer: null,
         showResult: false,
-        questions: questions,
+        questions: allQuestions,
         incorrectAnswers: [],
-        answeredQuestions: new Array(questions.length).fill(null),
+        answeredQuestions: new Array(allQuestions.length).fill(null),
       }));
       setQuizCompleted(false);
     } catch (error) {
@@ -306,8 +248,6 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     });
     setQuizCompleted(false);
     setShowAllQuestions(false);
-    setShowModuleSelection(false);
-    setPreQuizSelectedModule('all');
   };
 
   const confirmGoToMainMenu = () => {
@@ -356,70 +296,10 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
         )}
 
         {!loading && quizState.questions.length === 0 && (
-          <>
-            {!quizState.bankType ? (
-              <BankTypeSelector onSelect={selectBankType} />
-            ) : (
-              <>
-                <ModeSelector
-                  onSelectMode={selectPracticeMode}
-                  onSelectOrder={selectQuestionOrder}
-                />
-                {!showModuleSelection ? (
-                  quizState.practiceMode === 'bank' ? (
-                    <BankSelector
-                      bankType={quizState.bankType}
-                      subjectCode={subjectCode}
-                      onSelect={handleBankSelect}
-                    />
-                  ) : (
-                    <div className="flex flex-col gap-4">
-                      <h2 className="text-xl font-bold text-white">
-                        Full Practice Mode
-                      </h2>
-                      <button
-                        onClick={() => loadModulesForSelection()}
-                        className="px-6 py-3 bg-green-700 text-white border border-green-600 font-semibold hover:bg-green-600 transition duration-200"
-                      >
-                        Select Module
-                      </button>
-                    </div>
-                  )
-                ) : (
-                  <div className="flex flex-col gap-4">
-                    <h2 className="text-xl font-bold text-white mb-4">
-                      Select Module (Optional)
-                    </h2>
-                    <ModuleSelector
-                      modules={preQuizAvailableModules}
-                      selectedModule={preQuizSelectedModule}
-                      onSelect={(module) => setPreQuizSelectedModule(module)}
-                    />
-                    <div className="flex gap-4 mt-4">
-                      <button
-                        onClick={() => {
-                          setShowModuleSelection(false);
-                          setPreQuizSelectedModule('all');
-                        }}
-                        className="px-6 py-3 bg-gray-700 text-white border border-gray-600 font-semibold hover:bg-gray-600 transition duration-200"
-                      >
-                        Back
-                      </button>
-                      <button
-                        onClick={() => {
-                          setShowModuleSelection(false);
-                          startQuiz(selectedBank);
-                        }}
-                        className="px-6 py-3 bg-green-700 text-white border border-green-600 font-semibold hover:bg-green-600 transition duration-200"
-                      >
-                        Start Quiz
-                      </button>
-                    </div>
-                  </div>
-                )}
-              </>
-            )}
-          </>
+          <UnifiedQuizSelector
+            subjectCode={subjectCode}
+            onStartQuiz={startQuiz}
+          />
         )}
 
         {!loading && quizCompleted && (
@@ -553,17 +433,19 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
         {!loading && !quizCompleted && quizState.questions.length > 0 && (
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             <div className="lg:col-span-9">
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-                <QuizStats
-                  score={quizState.score}
-                  totalQuestions={quizState.totalQuestions}
-                  answeredQuestions={quizState.answeredQuestions}
-                />
+              <div className="mb-6">
                 <ModuleSelector
                   modules={availableModules}
                   selectedModule={selectedModule}
                   onSelect={handleModuleChange}
                 />
+                <div className="mt-4">
+                  <QuizStats
+                    score={quizState.score}
+                    totalQuestions={quizState.totalQuestions}
+                    answeredQuestions={quizState.answeredQuestions}
+                  />
+                </div>
               </div>
 
               <QuizQuestion

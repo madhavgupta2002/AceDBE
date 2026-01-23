@@ -96,3 +96,64 @@ export async function loadAllQuestionsForSubject(
 
   return allQuestions;
 }
+
+// Set with modules info
+export interface SetWithModules {
+  bankName: string;
+  displayName: string;
+  modules: (string | number)[];
+  bankType: 'CLA' | 'Exam';
+}
+
+// Get all sets with their modules for a subject
+export async function getSetsWithModules(
+  subjectCode: string
+): Promise<{ cla: SetWithModules[]; exam: SetWithModules[] }> {
+  const [claBanks, examBanks] = await Promise.all([
+    getAvailableBanks('CLA', subjectCode),
+    getAvailableBanks('Exam', subjectCode),
+  ]);
+
+  const getModulesForBanks = async (banks: BankInfo[], bankType: 'CLA' | 'Exam'): Promise<SetWithModules[]> => {
+    const setsWithModules: SetWithModules[] = [];
+
+    for (const bank of banks) {
+      const questionFile = await loadQuestionFile(bankType, subjectCode, bank.bankName);
+      
+      if (questionFile && questionFile.questions) {
+        // Extract unique modules from questions
+        const modules = Array.from(
+          new Set(
+            questionFile.questions
+              .map(q => q.module)
+              .filter(Boolean) as (string | number)[]
+          )
+        ).sort();
+
+        setsWithModules.push({
+          bankName: bank.bankName,
+          displayName: bank.displayName,
+          modules: modules,
+          bankType: bankType,
+        });
+      } else {
+        // If file couldn't be loaded, still add the set but with empty modules
+        setsWithModules.push({
+          bankName: bank.bankName,
+          displayName: bank.displayName,
+          modules: [],
+          bankType: bankType,
+        });
+      }
+    }
+
+    return setsWithModules;
+  };
+
+  const [claSets, examSets] = await Promise.all([
+    getModulesForBanks(claBanks, 'CLA'),
+    getModulesForBanks(examBanks, 'Exam'),
+  ]);
+
+  return { cla: claSets, exam: examSets };
+}
