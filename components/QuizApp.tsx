@@ -17,6 +17,7 @@ import AnswerStatus from './AnswerStatus';
 import ModeSelector from './ModeSelector';
 import BankTypeSelector from './BankTypeSelector';
 import BankSelector from './BankSelector';
+import ModuleSelector from './ModuleSelector';
 import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle } from 'lucide-react';
 
 interface QuizAppProps {
@@ -45,6 +46,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [allQuestions, setAllQuestions] = useState<Question[]>([]);
+  const [selectedModule, setSelectedModule] = useState<string | number | 'all'>('all');
+  const [availableModules, setAvailableModules] = useState<(string | number)[]>([]);
+  const [preQuizSelectedModule, setPreQuizSelectedModule] = useState<string | number | 'all'>('all');
+  const [preQuizAvailableModules, setPreQuizAvailableModules] = useState<(string | number)[]>([]);
+  const [selectedBank, setSelectedBank] = useState<string>('');
+  const [showModuleSelection, setShowModuleSelection] = useState(false);
+  const [showAllQuestions, setShowAllQuestions] = useState(false);
 
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
@@ -91,6 +100,49 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     setQuizState((prev) => ({ ...prev, bankType }));
   };
 
+  const handleBankSelect = async (bankName: string = '') => {
+    setSelectedBank(bankName);
+    await loadModulesForSelection(bankName);
+  };
+
+  const loadModulesForSelection = async (bankName: string = '') => {
+    if (!quizState.bankType) return;
+
+    setLoading(true);
+    let questions: Question[] = [];
+
+    try {
+      if (quizState.practiceMode === 'bank') {
+        questions = await loadQuestions(
+          quizState.bankType,
+          subjectCode,
+          bankName
+        );
+      } else {
+        questions = await loadAllQuestionsForSubject(
+          quizState.bankType,
+          subjectCode
+        );
+      }
+
+      if (questions.length === 0) {
+        alert('No questions found. Please check the selection.');
+        setLoading(false);
+        return;
+      }
+
+      const uniqueModules = Array.from(new Set(questions.map(q => q.module).filter(Boolean))) as (string | number)[];
+      setPreQuizAvailableModules(uniqueModules.sort());
+      setPreQuizSelectedModule('all');
+      setShowModuleSelection(true);
+      setLoading(false);
+    } catch (error) {
+      console.error('Error loading questions:', error);
+      alert('Failed to load questions. Please try again.');
+      setLoading(false);
+    }
+  };
+
   const startQuiz = async (bankName: string = '') => {
     if (!quizState.bankType) return;
 
@@ -112,7 +164,21 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
       }
 
       if (questions.length === 0) {
-        alert('No questions found. Please check the question bank.');
+        alert('No questions found. Please check the selection.');
+        setLoading(false);
+        return;
+      }
+
+      // Filter by module if a specific module is selected
+      if (preQuizSelectedModule !== 'all') {
+        questions = questions.filter(q => 
+          q.module === preQuizSelectedModule || 
+          q.module?.toString() === preQuizSelectedModule.toString()
+        );
+      }
+
+      if (questions.length === 0) {
+        alert('No questions found for the selected module. Please try a different module.');
         setLoading(false);
         return;
       }
@@ -120,6 +186,11 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
       if (quizState.questionOrder === 'random') {
         questions = shuffleArray(questions);
       }
+
+      const uniqueModules = Array.from(new Set(questions.map(q => q.module).filter(Boolean))) as (string | number)[];
+      setAvailableModules(uniqueModules.sort());
+      setAllQuestions(questions);
+      setSelectedModule('all');
 
       setQuizState((prev) => ({
         ...prev,
@@ -162,9 +233,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
         incorrectAnswers: isCorrect
           ? prev.incorrectAnswers
           : [
-              ...prev.incorrectAnswers,
-              { ...currentQuestion, selectedAnswer: answer },
-            ],
+            ...prev.incorrectAnswers,
+            { ...currentQuestion, selectedAnswer: answer },
+          ],
         answeredQuestions: newAnsweredQuestions,
       };
     });
@@ -182,6 +253,27 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
       selectedAnswer: prev.answeredQuestions[newIndex],
       showResult: prev.answeredQuestions[newIndex] !== null,
     }));
+  };
+
+  const handleModuleChange = (module: string | number | 'all') => {
+    setSelectedModule(module);
+
+    const filteredQuestions = module === 'all'
+      ? allQuestions
+      : allQuestions.filter(q => q.module === module || q.module?.toString() === module.toString());
+
+    setQuizState((prev) => ({
+      ...prev,
+      currentQuestionIndex: 0,
+      score: 0,
+      totalQuestions: filteredQuestions.length,
+      selectedAnswer: null,
+      showResult: false,
+      questions: filteredQuestions,
+      incorrectAnswers: [],
+      answeredQuestions: new Array(filteredQuestions.length).fill(null),
+    }));
+    setQuizCompleted(false);
   };
 
   const finishQuiz = () => {
@@ -213,6 +305,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
       answeredQuestions: [],
     });
     setQuizCompleted(false);
+    setShowAllQuestions(false);
+    setShowModuleSelection(false);
+    setPreQuizSelectedModule('all');
   };
 
   const confirmGoToMainMenu = () => {
@@ -270,23 +365,56 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                   onSelectMode={selectPracticeMode}
                   onSelectOrder={selectQuestionOrder}
                 />
-                {quizState.practiceMode === 'bank' ? (
-                  <BankSelector
-                    bankType={quizState.bankType}
-                    subjectCode={subjectCode}
-                    onSelect={startQuiz}
-                  />
+                {!showModuleSelection ? (
+                  quizState.practiceMode === 'bank' ? (
+                    <BankSelector
+                      bankType={quizState.bankType}
+                      subjectCode={subjectCode}
+                      onSelect={handleBankSelect}
+                    />
+                  ) : (
+                    <div className="flex flex-col gap-4">
+                      <h2 className="text-xl font-bold text-white">
+                        Full Practice Mode
+                      </h2>
+                      <button
+                        onClick={() => loadModulesForSelection()}
+                        className="px-6 py-3 bg-green-700 text-white border border-green-600 font-semibold hover:bg-green-600 transition duration-200"
+                      >
+                        Select Module
+                      </button>
+                    </div>
+                  )
                 ) : (
                   <div className="flex flex-col gap-4">
-                    <h2 className="text-xl font-bold text-white">
-                      Full Practice Mode
+                    <h2 className="text-xl font-bold text-white mb-4">
+                      Select Module (Optional)
                     </h2>
-                    <button
-                      onClick={() => startQuiz()}
-                      className="px-6 py-3 bg-green-700 text-white border border-green-600 font-semibold hover:bg-green-600 transition duration-200"
-                    >
-                      Start Full Practice
-                    </button>
+                    <ModuleSelector
+                      modules={preQuizAvailableModules}
+                      selectedModule={preQuizSelectedModule}
+                      onSelect={(module) => setPreQuizSelectedModule(module)}
+                    />
+                    <div className="flex gap-4 mt-4">
+                      <button
+                        onClick={() => {
+                          setShowModuleSelection(false);
+                          setPreQuizSelectedModule('all');
+                        }}
+                        className="px-6 py-3 bg-gray-700 text-white border border-gray-600 font-semibold hover:bg-gray-600 transition duration-200"
+                      >
+                        Back
+                      </button>
+                      <button
+                        onClick={() => {
+                          setShowModuleSelection(false);
+                          startQuiz(selectedBank);
+                        }}
+                        className="px-6 py-3 bg-green-700 text-white border border-green-600 font-semibold hover:bg-green-600 transition duration-200"
+                      >
+                        Start Quiz
+                      </button>
+                    </div>
                   </div>
                 )}
               </>
@@ -304,28 +432,114 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
               totalQuestions={quizState.totalQuestions}
               answeredQuestions={quizState.answeredQuestions}
             />
-            {quizState.incorrectAnswers.length > 0 && (
+            
+            <div className="mt-6 mb-4">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={showAllQuestions}
+                  onChange={(e) => setShowAllQuestions(e.target.checked)}
+                  className="w-4 h-4 text-indigo-600 bg-gray-700 border-gray-600 rounded focus:ring-indigo-500"
+                />
+                <span className="text-white font-medium">
+                  Show all questions with correct answers
+                </span>
+              </label>
+            </div>
+
+            {showAllQuestions ? (
               <div className="mt-8">
                 <h3 className="text-lg sm:text-xl font-bold mb-4 text-white">
-                  Incorrect Answers:
+                  All Questions:
                 </h3>
-                {quizState.incorrectAnswers.map((q, index) => (
-                  <div
-                    key={index}
-                    className="mb-4 p-4 bg-red-900/30 border border-red-800"
-                  >
-                    <p className="font-semibold text-white">{q.text}</p>
-                    <p className="text-gray-300">
-                      Your answer:{' '}
-                      {q.options[q.selectedAnswer as keyof typeof q.options]}
-                    </p>
-                    <p className="text-gray-300">
-                      Correct answer:{' '}
-                      {q.options[q.correctAnswer as keyof typeof q.options]}
-                    </p>
-                  </div>
-                ))}
+                {quizState.questions.map((q, index) => {
+                  const userAnswer = quizState.answeredQuestions[index];
+                  const isCorrect = userAnswer === q.correctAnswer;
+                  
+                  return (
+                    <div
+                      key={index}
+                      className={`mb-4 p-4 border ${
+                        isCorrect
+                          ? 'bg-green-900/20 border-green-800'
+                          : 'bg-red-900/30 border-red-800'
+                      }`}
+                    >
+                      <p className="font-semibold text-white mb-2">
+                        {q.module && <span className="text-indigo-400 mr-2">[Mod {q.module}]</span>}
+                        {q.source && <span className="text-purple-400 mr-2">[{q.source}]</span>}
+                        {q.text}
+                      </p>
+                      <div className="space-y-1">
+                        {Object.entries(q.options).map(([key, value]) => {
+                          const isUserAnswer = userAnswer === key;
+                          const isCorrectAnswer = key === q.correctAnswer;
+                          
+                          return (
+                            <p
+                              key={key}
+                              className={`text-sm ${
+                                isCorrectAnswer
+                                  ? 'font-bold text-green-400'
+                                  : isUserAnswer
+                                  ? 'text-red-400'
+                                  : 'text-gray-400'
+                              }`}
+                            >
+                              {key}: {value}
+                              {isCorrectAnswer && ' ✓'}
+                              {isUserAnswer && !isCorrectAnswer && ' (Your answer)'}
+                            </p>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
+            ) : (
+              quizState.incorrectAnswers.length > 0 && (
+                <div className="mt-8">
+                  <h3 className="text-lg sm:text-xl font-bold mb-4 text-white">
+                    Incorrect Answers:
+                  </h3>
+                  {quizState.incorrectAnswers.map((q, index) => (
+                    <div
+                      key={index}
+                      className="mb-4 p-4 bg-red-900/30 border border-red-800"
+                    >
+                      <p className="font-semibold text-white mb-2">
+                        {q.module && <span className="text-indigo-400 mr-2">[Mod {q.module}]</span>}
+                        {q.source && <span className="text-purple-400 mr-2">[{q.source}]</span>}
+                        {q.text}
+                      </p>
+                      <div className="space-y-1">
+                        {Object.entries(q.options).map(([key, value]) => {
+                          const isUserAnswer = q.selectedAnswer === key;
+                          const isCorrectAnswer = key === q.correctAnswer;
+                          
+                          return (
+                            <p
+                              key={key}
+                              className={`text-sm ${
+                                isCorrectAnswer
+                                  ? 'font-bold text-green-400'
+                                  : isUserAnswer
+                                  ? 'text-red-400'
+                                  : 'text-gray-400'
+                              }`}
+                            >
+                              {key}: {value}
+                              {isCorrectAnswer && ' ✓'}
+                              {isUserAnswer && ' (Your answer)'}
+                            </p>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )
             )}
             <button
               onClick={resetQuiz}
@@ -339,11 +553,18 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
         {!loading && !quizCompleted && quizState.questions.length > 0 && (
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
             <div className="lg:col-span-9">
-              <QuizStats
-                score={quizState.score}
-                totalQuestions={quizState.totalQuestions}
-                answeredQuestions={quizState.answeredQuestions}
-              />
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                <QuizStats
+                  score={quizState.score}
+                  totalQuestions={quizState.totalQuestions}
+                  answeredQuestions={quizState.answeredQuestions}
+                />
+                <ModuleSelector
+                  modules={availableModules}
+                  selectedModule={selectedModule}
+                  onSelect={handleModuleChange}
+                />
+              </div>
 
               <QuizQuestion
                 question={quizState.questions[quizState.currentQuestionIndex]}

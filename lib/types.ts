@@ -28,6 +28,7 @@ export interface Question {
   correctAnswer: string;
   module?: string | number;
   selectedAnswer?: string;
+  source?: string; // exam_date from exam_metadata
 }
 
 // Quiz state types

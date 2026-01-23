@@ -31,21 +31,19 @@ const ModeSelector: React.FC<ModeSelectorProps> = ({ onSelectMode, onSelectOrder
         <div className="flex gap-3">
           <button
             onClick={() => handleModeSelect('bank')}
-            className={`px-6 py-3 text-white font-semibold transition duration-200 border ${
-              selectedMode === 'bank'
+            className={`px-6 py-3 text-white font-semibold transition duration-200 border ${selectedMode === 'bank'
                 ? 'bg-indigo-700 border-indigo-600'
                 : 'bg-gray-800 border-gray-700 hover:bg-gray-700'
-            }`}
+              }`}
           >
-            Bank Practice
+            Modulewise Practice
           </button>
           <button
             onClick={() => handleModeSelect('full')}
-            className={`px-6 py-3 text-white font-semibold transition duration-200 border ${
-              selectedMode === 'full'
+            className={`px-6 py-3 text-white font-semibold transition duration-200 border ${selectedMode === 'full'
                 ? 'bg-indigo-700 border-indigo-600'
                 : 'bg-gray-800 border-gray-700 hover:bg-gray-700'
-            }`}
+              }`}
           >
             Full Practice
           </button>
@@ -57,21 +55,19 @@ const ModeSelector: React.FC<ModeSelectorProps> = ({ onSelectMode, onSelectOrder
           <div className="flex gap-3">
             <button
               onClick={() => handleOrderSelect('random')}
-              className={`px-6 py-3 text-white font-semibold transition duration-200 border ${
-                selectedOrder === 'random'
+              className={`px-6 py-3 text-white font-semibold transition duration-200 border ${selectedOrder === 'random'
                   ? 'bg-purple-700 border-purple-600'
                   : 'bg-gray-800 border-gray-700 hover:bg-gray-700'
-              }`}
+                }`}
             >
               Random
             </button>
             <button
               onClick={() => handleOrderSelect('inOrder')}
-              className={`px-6 py-3 text-white font-semibold transition duration-200 border ${
-                selectedOrder === 'inOrder'
+              className={`px-6 py-3 text-white font-semibold transition duration-200 border ${selectedOrder === 'inOrder'
                   ? 'bg-purple-700 border-purple-600'
                   : 'bg-gray-800 border-gray-700 hover:bg-gray-700'
-              }`}
+                }`}
             >
               In Order
             </button>

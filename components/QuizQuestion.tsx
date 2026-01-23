@@ -41,6 +41,18 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
 
   return (
     <div className="w-full max-w-3xl mx-auto">
+      <div className="flex flex-wrap gap-2 mb-4">
+        {question.module && (
+          <span className="px-3 py-1.5 bg-indigo-900/50 text-indigo-300 border border-indigo-800 text-xs font-semibold rounded">
+            Module {question.module}
+          </span>
+        )}
+        {question.source && (
+          <span className="px-3 py-1.5 bg-purple-900/50 text-purple-300 border border-purple-800 text-xs font-semibold rounded">
+            {question.source}
+          </span>
+        )}
+      </div>
       <h2 className="text-2xl font-bold mb-6 whitespace-pre-line text-white">
         {formatText(question.text)}
       </h2>

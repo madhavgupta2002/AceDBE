@@ -48,7 +48,7 @@ const BankSelector: React.FC<BankSelectorProps> = ({ bankType, subjectCode, onSe
   if (loading) {
     return (
       <div className="text-center py-8 text-gray-300">
-        Loading banks...
+        Loading...
       </div>
     );
   }

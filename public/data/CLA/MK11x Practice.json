@@ -1,469 +1,508 @@
 {
-    "exam_metadata": {
-      "subject_name": "Marketing",
-      "exam_date": "practice"
+  "exam_metadata": {
+    "subject_name": "Marketing",
+    "exam_date": "practice"
+  },
+  "questions": [
+    {
+      "question_id": "MKT_P_MOD1_Q1",
+      "question_text": "This question may have 1 or more options as correct answer. Please ensure to mark all correct options before submitting. Which ones from the following refers to the type of market?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Commodity",
+        "B": "Global",
+        "C": "International",
+        "D": "Stock"
+      },
+      "correct_option_label": "A, B, C, D",
+      "module": 1
     },
-    "questions": [
-      {
-        "question_id": "MKT_P_MOD1_Q1",
-        "question_text": "This question may have 1 or more options as correct answer. Please ensure to mark all correct options before submitting. Which ones from the following refers to the type of market?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Commodity",
-          "B": "Global",
-          "C": "International",
-          "D": "Stock"
-        },
-        "correct_option_label": "A, B, C, D"
+    {
+      "question_id": "MKT_P_MOD1_Q2",
+      "question_text": "You visited the market to purchase a pair of shoes. Although the shoes fit your needs perfectly, you find them quite expensive. The seller is explaining all the features of the product, highlighting how they meet your needs and justifying the price. What is the seller attempting to do in this situation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Create and justify value for the shoe in the mind of customer.",
+        "B": "Sell the shoe somehow",
+        "C": "Marketing the shoe",
+        "D": "None of the given options are correct"
       },
-      {
-        "question_id": "MKT_P_MOD1_Q2",
-        "question_text": "You visited the market to purchase a pair of shoes. Although the shoes fit your needs perfectly, you find them quite expensive. The seller is explaining all the features of the product, highlighting how they meet your needs and justifying the price. What is the seller attempting to do in this situation?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Create and justify value for the shoe in the mind of customer.",
-          "B": "Sell the shoe somehow",
-          "C": "Marketing the shoe",
-          "D": "None of the given options are correct"
-        },
-        "correct_option_label": "A"
+      "correct_option_label": "A",
+      "module": 1
+    },
+    {
+      "question_id": "MKT_P_MOD1_Q3",
+      "question_text": "Raju feels deprived of having a vehicle for travelling within the city. It becomes extremely difficult for him many times to travel. He went out today and purchased a bike. In this case ____________ is can be said as his need and ___________ can be said as his want.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Bike | Vehicle",
+        "B": "Bike | Fuel",
+        "C": "Vehicle | Bike",
+        "D": "Fuel | Bike"
       },
-      {
-        "question_id": "MKT_P_MOD1_Q3",
-        "question_text": "Raju feels deprived of having a vehicle for travelling within the city. It becomes extremely difficult for him many times to travel. He went out today and purchased a bike. In this case ____________ is can be said as his need and ___________ can be said as his want.",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Bike | Vehicle",
-          "B": "Bike | Fuel",
-          "C": "Vehicle | Bike",
-          "D": "Fuel | Bike"
-        },
-        "correct_option_label": "C"
+      "correct_option_label": "C",
+      "module": 1
+    },
+    {
+      "question_id": "MKT_P_MOD1_Q4",
+      "question_text": "\"Rahul works in an ed-tech company. He went along with his team members to enquire for a Learning management System that acts as a platform for students to view the course content of the institute. They enquired and negotiated with a lot of vendors for a couple of days and then finalized the best one available in their budget.\" In this case, what kind of purchase is reflected?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Individual purchase",
+        "B": "Purchase by group of individuals",
+        "C": "Online purchase",
+        "D": "Group purchase"
       },
-      {
-        "question_id": "MKT_P_MOD1_Q4",
-        "question_text": "\"Rahul works in an ed-tech company. He went along with his team members to enquire for a Learning management System that acts as a platform for students to view the course content of the institute. They enquired and negotiated with a lot of vendors for a couple of days and then finalized the best one available in their budget.\" In this case, what kind of purchase is reflected?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Individual purchase",
-          "B": "Purchase by group of individuals",
-          "C": "Online purchase",
-          "D": "Group purchase"
-        },
-        "correct_option_label": "D"
+      "correct_option_label": "D",
+      "module": 1
+    },
+    {
+      "question_id": "MKT_P_MOD1_Q5",
+      "question_text": "Sagar is a successful entrepreneur. He buys a luxury watch that is marketed as a symbol of exclusivity and sophistication. This purchase enhances Sagar’s sense of self-worth and social status. Which type of need is being fulfilled in this case?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Physiological Needs",
+        "B": "Safety Needs",
+        "C": "Social Needs",
+        "D": "Esteem Needs"
       },
-      {
-        "question_id": "MKT_P_MOD1_Q5",
-        "question_text": "Sagar is a successful entrepreneur. He buys a luxury watch that is marketed as a symbol of exclusivity and sophistication. This purchase enhances Sagar’s sense of self-worth and social status. Which type of need is being fulfilled in this case?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Physiological Needs",
-          "B": "Safety Needs",
-          "C": "Social Needs",
-          "D": "Esteem Needs"
-        },
-        "correct_option_label": "D"
+      "correct_option_label": "D",
+      "module": 1
+    },
+    {
+      "question_id": "MKT_P_MOD2_Q1",
+      "question_text": "If a start-up company tries to generate a USP for it's offering, which of the following stages reflects this activity?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Segmentation",
+        "B": "Targeting",
+        "C": "Positioning",
+        "D": "Differentiation"
       },
-      {
-        "question_id": "MKT_P_MOD2_Q1",
-        "question_text": "If a start-up company tries to generate a USP for it's offering, which of the following stages reflects this activity?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Segmentation",
-          "B": "Targeting",
-          "C": "Positioning",
-          "D": "Differentiation"
-        },
-        "correct_option_label": "C"
+      "correct_option_label": "C",
+      "module": 2
+    },
+    {
+      "question_id": "MKT_P_MOD2_Q2",
+      "question_text": "Segmentation is the process of dividing the _____________ market into _______________ groups.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Identical | Homogeneous",
+        "B": "Hetergeneous | Homogeneous",
+        "C": "Homogeneous | Heterogeneous",
+        "D": "Identical | Heterogeneous"
       },
-      {
-        "question_id": "MKT_P_MOD2_Q2",
-        "question_text": "Segmentation is the process of dividing the _____________ market into _______________ groups.",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Identical | Homogeneous",
-          "B": "Hetergeneous | Homogeneous",
-          "C": "Homogeneous | Heterogeneous",
-          "D": "Identical | Heterogeneous"
-        },
-        "correct_option_label": "B"
+      "correct_option_label": "B",
+      "module": 2
+    },
+    {
+      "question_id": "MKT_P_MOD2_Q3",
+      "question_text": "Soham stores. targets only the children below 8 years for all types of items it has. What type of segmentation strategy can be seen in this case?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Market Sepcialization",
+        "B": "Product Specialization",
+        "C": "Selective Specialization",
+        "D": "Single Segment Concentration"
       },
-      {
-        "question_id": "MKT_P_MOD2_Q3",
-        "question_text": "Soham stores. targets only the children below 8 years for all types of items it has. What type of segmentation strategy can be seen in this case?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Market Sepcialization",
-          "B": "Product Specialization",
-          "C": "Selective Specialization",
-          "D": "Single Segment Concentration"
-        },
-        "correct_option_label": "A"
+      "correct_option_label": "A",
+      "module": 2
+    },
+    {
+      "question_id": "MKT_P_MOD2_Q4",
+      "question_text": "This question may have one or multiple correct options as answers. STDP : Exclude the incorrect option and select all correct options.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Targeting",
+        "B": "Differentiation",
+        "C": "Positioning",
+        "D": "Segmentation"
       },
-      {
-        "question_id": "MKT_P_MOD2_Q4",
-        "question_text": "This question may have one or multiple correct options as answers. STDP : Exclude the incorrect option and select all correct options.",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Targeting",
-          "B": "Differentiation",
-          "C": "Positioning",
-          "D": "Segmentation"
-        },
-        "correct_option_label": "A, B, C, D"
+      "correct_option_label": "A, B, C, D",
+      "module": 2
+    },
+    {
+      "question_id": "MKT_P_MOD2_Q5",
+      "question_text": "Positioning is the process of selecting a homogeneous segmented part from the whole heterogeneous market to sell the product.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
       },
-      {
-        "question_id": "MKT_P_MOD2_Q5",
-        "question_text": "Positioning is the process of selecting a homogeneous segmented part from the whole heterogeneous market to sell the product.",
-        "question_type": "MCQ",
-        "options": {
-          "A": "True",
-          "B": "False"
-        },
-        "correct_option_label": "B"
+      "correct_option_label": "B",
+      "module": 2
+    },
+    {
+      "question_id": "MKT_P_MOD3_Q1",
+      "question_text": "Differentiations related to form, features, performance, quality, etc. reflects ____________ differentiation.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Product",
+        "B": "Service",
+        "C": "Personnel",
+        "D": "Promotional"
       },
-      {
-        "question_id": "MKT_P_MOD3_Q1",
-        "question_text": "Differentiations related to form, features, performance, quality, etc. reflects ____________ differentiation.",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Product",
-          "B": "Service",
-          "C": "Personnel",
-          "D": "Promotional"
-        },
-        "correct_option_label": "A"
+      "correct_option_label": "A",
+      "module": 3
+    },
+    {
+      "question_id": "MKT_P_MOD3_Q2",
+      "question_text": "___________ refers to communication of USP to the customers.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Differentiation",
+        "B": "Positioning",
+        "C": "Targeting",
+        "D": "Segmenting"
       },
-      {
-        "question_id": "MKT_P_MOD3_Q2",
-        "question_text": "___________ refers to communication of USP to the customers.",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Differentiation",
-          "B": "Positioning",
-          "C": "Targeting",
-          "D": "Segmenting"
-        },
-        "correct_option_label": "B"
+      "correct_option_label": "B",
+      "module": 3
+    },
+    {
+      "question_id": "MKT_P_MOD3_Q3",
+      "question_text": "Which of the following are the techniques of perceptual mapping?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Factor Analysis",
+        "B": "Multi-dimensional scaling",
+        "C": "Cluster Analysis",
+        "D": "Conjoint Analysis"
       },
-      {
-        "question_id": "MKT_P_MOD3_Q3",
-        "question_text": "Which of the following are the techniques of perceptual mapping?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Factor Analysis",
-          "B": "Multi-dimensional scaling",
-          "C": "Cluster Analysis",
-          "D": "Conjoint Analysis"
-        },
-        "correct_option_label": "A, B, C, D"
+      "correct_option_label": "A, B, C, D",
+      "module": 3
+    },
+    {
+      "question_id": "MKT_P_MOD3_Q4",
+      "question_text": "Define the Market Sizes: Potential Market, Available Market, and Target Market.",
+      "question_type": "SUBJECTIVE",
+      "options": {},
+      "correct_option_label": "Bottom: Potential Market (interest), Middle: Available Market (interest, income, access), Top: Target Market (pursued part).",
+      "module": 3
+    },
+    {
+      "question_id": "MKT_P_MOD3_Q5",
+      "question_text": "Which of the following reflects different forms of competition?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Generic Level",
+        "B": "Form Level",
+        "C": "Industry Level",
+        "D": "Brand Level"
       },
-      {
-        "question_id": "MKT_P_MOD3_Q4",
-        "question_text": "Define the Market Sizes: Potential Market, Available Market, and Target Market.",
-        "question_type": "SUBJECTIVE",
-        "options": {},
-        "correct_option_label": "Bottom: Potential Market (interest), Middle: Available Market (interest, income, access), Top: Target Market (pursued part)."
+      "correct_option_label": "A, B, C, D",
+      "module": 3
+    },
+    {
+      "question_id": "MKT_P_MOD4_Q1",
+      "question_text": "Mark all options reflecting purchase intention categories.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Firm and immediate Consumers",
+        "B": "Firm but not immediate Consumers",
+        "C": "Not interested Consumers",
+        "D": "Negative consumers"
       },
-      {
-        "question_id": "MKT_P_MOD3_Q5",
-        "question_text": "Which of the following reflects different forms of competition?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Generic Level",
-          "B": "Form Level",
-          "C": "Industry Level",
-          "D": "Brand Level"
-        },
-        "correct_option_label": "A, B, C, D"
+      "correct_option_label": "A, B, C, D",
+      "module": 4
+    },
+    {
+      "question_id": "MKT_P_MOD4_Q2",
+      "question_text": "Which type of problem solving, customer will normally be very comfortable as he knows almost everything.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Extended Problem Solving",
+        "B": "Routine Problem Solving",
+        "C": "Limited Problem Solving",
+        "D": "Personal Problem Solving"
       },
-      {
-        "question_id": "MKT_P_MOD4_Q1",
-        "question_text": "Mark all options reflecting purchase intention categories.",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Firm and immediate Consumers",
-          "B": "Firm but not immediate Consumers",
-          "C": "Not interested Consumers",
-          "D": "Negative consumers"
-        },
-        "correct_option_label": "A, B, C, D"
+      "correct_option_label": "B",
+      "module": 4
+    },
+    {
+      "question_id": "MKT_P_MOD4_Q3",
+      "question_text": "Which of the following categories will finally lead to either the selection ot rejection the product/brand in wishlist.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Inept Set",
+        "B": "Inert Set",
+        "C": "Evoked Set",
+        "D": "Unawareness Set"
       },
-      {
-        "question_id": "MKT_P_MOD4_Q2",
-        "question_text": "Which type of problem solving, customer will normally be very comfortable as he knows almost everything.",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Extended Problem Solving",
-          "B": "Routine Problem Solving",
-          "C": "Limited Problem Solving",
-          "D": "Personal Problem Solving"
-        },
-        "correct_option_label": "B"
+      "correct_option_label": "C",
+      "module": 4
+    },
+    {
+      "question_id": "MKT_P_MOD4_Q4",
+      "question_text": "Which of the following will lead to customer satisfaction?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Expectation is equal to Performance",
+        "B": "Performance is greater than expectation",
+        "C": "Expectation is greater Performance",
+        "D": "Performance is less than Expectation"
       },
-      {
-        "question_id": "MKT_P_MOD4_Q3",
-        "question_text": "Which of the following categories will finally lead to either the selection ot rejection the product/brand in wishlist.",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Inept Set",
-          "B": "Inert Set",
-          "C": "Evoked Set",
-          "D": "Unawareness Set"
-        },
-        "correct_option_label": "C"
+      "correct_option_label": "A",
+      "module": 4
+    },
+    {
+      "question_id": "MKT_P_MOD4_Q5",
+      "question_text": "__________ reflects tha way, the person interacts with the environment.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Culture",
+        "B": "Psychology",
+        "C": "Behaviour",
+        "D": "Personality"
       },
-      {
-        "question_id": "MKT_P_MOD4_Q4",
-        "question_text": "Which of the following will lead to customer satisfaction?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Expectation is equal to Performance",
-          "B": "Performance is greater than expectation",
-          "C": "Expectation is greater Performance",
-          "D": "Performance is less than Expectation"
-        },
-        "correct_option_label": "A"
+      "correct_option_label": "D",
+      "module": 4
+    },
+    {
+      "question_id": "MKT_P_MOD5_Q1",
+      "question_text": "What is the primary objective of B2B marketing according to the transcript?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "To maximize short-term profits",
+        "B": "To develop long-term customer relationships",
+        "C": "To develop customers who will stay with you",
+        "D": "To reduce operational costs"
       },
-      {
-        "question_id": "MKT_P_MOD4_Q5",
-        "question_text": "__________ reflects tha way, the person interacts with the environment.",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Culture",
-          "B": "Psychology",
-          "C": "Behaviour",
-          "D": "Personality"
-        },
-        "correct_option_label": "D"
+      "correct_option_label": "C",
+      "module": 5
+    },
+    {
+      "question_id": "MKT_P_MOD5_Q2",
+      "question_text": "Which type of buyer is characterized by a focus on price and sees products as commodities?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Partners",
+        "B": "Underperformers",
+        "C": "Commodity buyers",
+        "D": "Most valuable customers"
       },
-      {
-        "question_id": "MKT_P_MOD5_Q1",
-        "question_text": "What is the primary objective of B2B marketing according to the transcript?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "To maximize short-term profits",
-          "B": "To develop long-term customer relationships",
-          "C": "To develop customers who will stay with you",
-          "D": "To reduce operational costs"
-        },
-        "correct_option_label": "C"
+      "correct_option_label": "C",
+      "module": 5
+    },
+    {
+      "question_id": "MKT_P_MOD5_Q3",
+      "question_text": "Why are underperformers considered risky customers for suppliers?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "They require high-quality products",
+        "B": "They operate in industries with high fixed costs",
+        "C": "They are loyal and offer consistent orders",
+        "D": "They demand customized solutions"
       },
-      {
-        "question_id": "MKT_P_MOD5_Q2",
-        "question_text": "Which type of buyer is characterized by a focus on price and sees products as commodities?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Partners",
-          "B": "Underperformers",
-          "C": "Commodity buyers",
-          "D": "Most valuable customers"
-        },
-        "correct_option_label": "C"
+      "correct_option_label": "B",
+      "module": 5
+    },
+    {
+      "question_id": "MKT_P_MOD5_Q4",
+      "question_text": "What defines the most valuable customers in a B2B context?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "They require the lowest price",
+        "B": "They often switch suppliers for better deals",
+        "C": "They invest in the supplier's business to improve outcomes",
+        "D": "They prefer standardized products over customized solutions"
       },
-      {
-        "question_id": "MKT_P_MOD5_Q3",
-        "question_text": "Why are underperformers considered risky customers for suppliers?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "They require high-quality products",
-          "B": "They operate in industries with high fixed costs",
-          "C": "They are loyal and offer consistent orders",
-          "D": "They demand customized solutions"
-        },
-        "correct_option_label": "B"
+      "correct_option_label": "C",
+      "module": 5
+    },
+    {
+      "question_id": "MKT_P_MOD5_Q5",
+      "question_text": "Which market consists of institutions like schools and hospitals, characterized by low budgets and captive clientele?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Institutional market",
+        "B": "Commodity market",
+        "C": "Underperformer market",
+        "D": "Partnership market"
       },
-      {
-        "question_id": "MKT_P_MOD5_Q4",
-        "question_text": "What defines the most valuable customers in a B2B context?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "They require the lowest price",
-          "B": "They often switch suppliers for better deals",
-          "C": "They invest in the supplier's business to improve outcomes",
-          "D": "They prefer standardized products over customized solutions"
-        },
-        "correct_option_label": "C"
+      "correct_option_label": "A",
+      "module": 5
+    },
+    {
+      "question_id": "MKT_P_MOD6_Q1",
+      "question_text": "What is the primary focus during the introduction stage of the product life cycle?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Maximizing profits",
+        "B": "Creating product awareness",
+        "C": "Expanding distribution channels",
+        "D": "Reducing production costs"
       },
-      {
-        "question_id": "MKT_P_MOD5_Q5",
-        "question_text": "Which market consists of institutions like schools and hospitals, characterized by low budgets and captive clientele?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Institutional market",
-          "B": "Commodity market",
-          "C": "Underperformer market",
-          "D": "Partnership market"
-        },
-        "correct_option_label": "A"
+      "correct_option_label": "B",
+      "module": 6
+    },
+    {
+      "question_id": "MKT_P_MOD6_Q2",
+      "question_text": "In service management, what is meant by \"service quality\"?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The efficiency of service delivery",
+        "B": "The speed of service",
+        "C": "The overall experience and satisfaction of the customer",
+        "D": "The price of the service"
       },
-      {
-        "question_id": "MKT_P_MOD6_Q1",
-        "question_text": "What is the primary focus during the introduction stage of the product life cycle?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Maximizing profits",
-          "B": "Creating product awareness",
-          "C": "Expanding distribution channels",
-          "D": "Reducing production costs"
-        },
-        "correct_option_label": "B"
+      "correct_option_label": "C",
+      "module": 6
+    },
+    {
+      "question_id": "MKT_P_MOD6_Q3",
+      "question_text": "Which of the following is NOT a component of the product life cycle?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Growth",
+        "B": "Contraction",
+        "C": "Decline",
+        "D": "Introduction"
       },
-      {
-        "question_id": "MKT_P_MOD6_Q2",
-        "question_text": "In service management, what is meant by \"service quality\"?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "The efficiency of service delivery",
-          "B": "The speed of service",
-          "C": "The overall experience and satisfaction of the customer",
-          "D": "The price of the service"
-        },
-        "correct_option_label": "C"
+      "correct_option_label": "B",
+      "module": 6
+    },
+    {
+      "question_id": "MKT_P_MOD6_Q4",
+      "question_text": "In product line management, what is meant by \"line filling\"?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Adding new products to the line",
+        "B": "Introducing more items within the existing range",
+        "C": "Removing underperforming products",
+        "D": "Reducing the number of product variations"
       },
-      {
-        "question_id": "MKT_P_MOD6_Q3",
-        "question_text": "Which of the following is NOT a component of the product life cycle?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Growth",
-          "B": "Contraction",
-          "C": "Decline",
-          "D": "Introduction"
-        },
-        "correct_option_label": "B"
+      "correct_option_label": "B",
+      "module": 6
+    },
+    {
+      "question_id": "MKT_P_MOD6_Q5",
+      "question_text": "What is a primary objective of service quality management?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Enhancing customer satisfaction",
+        "B": "Reducing service costs",
+        "C": "Standardizing service procedures",
+        "D": "Limiting service variations"
       },
-      {
-        "question_id": "MKT_P_MOD6_Q4",
-        "question_text": "In product line management, what is meant by \"line filling\"?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Adding new products to the line",
-          "B": "Introducing more items within the existing range",
-          "C": "Removing underperforming products",
-          "D": "Reducing the number of product variations"
-        },
-        "correct_option_label": "B"
+      "correct_option_label": "A",
+      "module": 6
+    },
+    {
+      "question_id": "MKT_P_MOD7_Q1",
+      "question_text": "How does understanding the characteristics of retailing influence a company's pricing strategy?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It allows for uniform pricing across all markets.",
+        "B": "It enables tailoring pricing to match customer expectations and shopping behavior.",
+        "C": "It eliminates the need for market research.",
+        "D": "It focuses solely on production costs without considering customer insights."
       },
-      {
-        "question_id": "MKT_P_MOD6_Q5",
-        "question_text": "What is a primary objective of service quality management?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Enhancing customer satisfaction",
-          "B": "Reducing service costs",
-          "C": "Standardizing service procedures",
-          "D": "Limiting service variations"
-        },
-        "correct_option_label": "A"
+      "correct_option_label": "B",
+      "module": 7
+    },
+    {
+      "question_id": "MKT_P_MOD7_Q2",
+      "question_text": "What is a primary goal of distribution channels in retailing?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "To increase production costs",
+        "B": "To reduce customer choice",
+        "C": "To limit market access",
+        "D": "To ensure products reach the end customer efficiently"
       },
-      {
-        "question_id": "MKT_P_MOD7_Q1",
-        "question_text": "How does understanding the characteristics of retailing influence a company's pricing strategy?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "It allows for uniform pricing across all markets.",
-          "B": "It enables tailoring pricing to match customer expectations and shopping behavior.",
-          "C": "It eliminates the need for market research.",
-          "D": "It focuses solely on production costs without considering customer insights."
-        },
-        "correct_option_label": "B"
+      "correct_option_label": "D",
+      "module": 7
+    },
+    {
+      "question_id": "MKT_P_MOD7_Q3",
+      "question_text": "In pricing strategies, what does price discrimination involve?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Offering the same price to all customers",
+        "B": "Charging different prices to different customers based on willingness to pay",
+        "C": "Reducing prices for all products",
+        "D": "Setting prices based on production costs alone"
       },
-      {
-        "question_id": "MKT_P_MOD7_Q2",
-        "question_text": "What is a primary goal of distribution channels in retailing?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "To increase production costs",
-          "B": "To reduce customer choice",
-          "C": "To limit market access",
-          "D": "To ensure products reach the end customer efficiently"
-        },
-        "correct_option_label": "D"
+      "correct_option_label": "B",
+      "module": 7
+    },
+    {
+      "question_id": "MKT_P_MOD7_Q4",
+      "question_text": "When conducting a channel analysis, which of the following factors is least likely to impact the effectiveness of a distribution strategy?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Customer accessibility",
+        "B": "Channel performance metrics",
+        "C": "The brand's historical advertising campaigns",
+        "D": "Market coverage and penetration"
       },
-      {
-        "question_id": "MKT_P_MOD7_Q3",
-        "question_text": "In pricing strategies, what does price discrimination involve?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Offering the same price to all customers",
-          "B": "Charging different prices to different customers based on willingness to pay",
-          "C": "Reducing prices for all products",
-          "D": "Setting prices based on production costs alone"
-        },
-        "correct_option_label": "B"
+      "correct_option_label": "C",
+      "module": 7
+    },
+    {
+      "question_id": "MKT_P_MOD7_Q5",
+      "question_text": "Which of the following best describes the relationship between pricing strategies and customer satisfaction?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Higher prices always lead to higher customer satisfaction.",
+        "B": "Effective pricing strategies can enhance perceived value and improve customer satisfaction.",
+        "C": "Pricing strategies should be independent of customer feedback.",
+        "D": "Price reductions guarantee an increase in customer loyalty."
       },
-      {
-        "question_id": "MKT_P_MOD7_Q4",
-        "question_text": "When conducting a channel analysis, which of the following factors is least likely to impact the effectiveness of a distribution strategy?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Customer accessibility",
-          "B": "Channel performance metrics",
-          "C": "The brand's historical advertising campaigns",
-          "D": "Market coverage and penetration"
-        },
-        "correct_option_label": "C"
+      "correct_option_label": "B",
+      "module": 7
+    },
+    {
+      "question_id": "MKT_P_MOD8_Q1",
+      "question_text": "Which of the following is a key objective of promotional strategies in marketing?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Increase operational costs",
+        "B": "Inform, persuade, and remind customers",
+        "C": "Reduce customer service",
+        "D": "Focus only on existing customers"
       },
-      {
-        "question_id": "MKT_P_MOD7_Q5",
-        "question_text": "Which of the following best describes the relationship between pricing strategies and customer satisfaction?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Higher prices always lead to higher customer satisfaction.",
-          "B": "Effective pricing strategies can enhance perceived value and improve customer satisfaction.",
-          "C": "Pricing strategies should be independent of customer feedback.",
-          "D": "Price reductions guarantee an increase in customer loyalty."
-        },
-        "correct_option_label": "B"
+      "correct_option_label": "B",
+      "module": 8
+    },
+    {
+      "question_id": "MKT_P_MOD8_Q2",
+      "question_text": "In the B2B sales process, which step involves understanding the specific needs of a potential client?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Lead generation",
+        "B": "Needs assessment",
+        "C": "Proposal development",
+        "D": "Closing"
       },
-      {
-        "question_id": "MKT_P_MOD8_Q1",
-        "question_text": "Which of the following is a key objective of promotional strategies in marketing?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Increase operational costs",
-          "B": "Inform, persuade, and remind customers",
-          "C": "Reduce customer service",
-          "D": "Focus only on existing customers"
-        },
-        "correct_option_label": "B"
+      "correct_option_label": "B",
+      "module": 8
+    },
+    {
+      "question_id": "MKT_P_MOD8_Q3",
+      "question_text": "What is the purpose of personal selling in marketing?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "To automate customer interaction",
+        "B": "To build direct relationships and tailor solutions to customer needs",
+        "C": "To avoid customer feedback",
+        "D": "To solely promote products online"
       },
-      {
-        "question_id": "MKT_P_MOD8_Q2",
-        "question_text": "In the B2B sales process, which step involves understanding the specific needs of a potential client?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Lead generation",
-          "B": "Needs assessment",
-          "C": "Proposal development",
-          "D": "Closing"
-        },
-        "correct_option_label": "B"
+      "correct_option_label": "B",
+      "module": 8
+    },
+    {
+      "question_id": "MKT_P_MOD8_Q4",
+      "question_text": "What is the primary role of budgeting in marketing campaigns?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "To set and allocate financial resources for marketing activities",
+        "B": "To reduce employee wages",
+        "C": "To increase product prices",
+        "D": "To avoid spending on promotions"
       },
-      {
-        "question_id": "MKT_P_MOD8_Q3",
-        "question_text": "What is the purpose of personal selling in marketing?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "To automate customer interaction",
-          "B": "To build direct relationships and tailor solutions to customer needs",
-          "C": "To avoid customer feedback",
-          "D": "To solely promote products online"
-        },
-        "correct_option_label": "B"
-      },
-      {
-        "question_id": "MKT_P_MOD8_Q4",
-        "question_text": "What is the primary role of budgeting in marketing campaigns?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "To set and allocate financial resources for marketing activities",
-          "B": "To reduce employee wages",
-          "C": "To increase product prices",
-          "D": "To avoid spending on promotions"
-        },
-        "correct_option_label": "A"
-      }
-    ]
-  }
+      "correct_option_label": "A",
+      "module": 8
+    }
+  ]
+}
