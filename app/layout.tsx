@@ -26,8 +26,8 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: 'AceDBE - IIMB Practice Portal',
-  description: 'AceDBE Practice portal for IIMB course questions',
+  title: 'AceDBE - Practice Portal',
+  description: 'AceDBE Practice portal for BBA-DBE course questions',
 };
 
 export default function RootLayout({
