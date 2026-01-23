@@ -49,7 +49,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
       setLoading(true);
       setError(null);
       const content = await loadNotes(subjectCode);
-      
+
       if (content === null) {
         setError('Notes not available for this subject.');
       } else {
@@ -84,17 +84,17 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
   // Extract TOC from markdown
   const toc = useMemo(() => {
     if (!markdown) return [];
-    
+
     const tocItems: TOCItem[] = [];
     const lines = markdown.split('\n');
-    
+
     lines.forEach((line) => {
       // Match headings with optional bold markers and special characters
       const h1Match = line.match(/^#\s+(.+)$/);
       const h2Match = line.match(/^##\s+(.+)$/);
       const h3Match = line.match(/^###\s+(.+)$/);
       const h4Match = line.match(/^####\s+(.+)$/);
-      
+
       if (h1Match) {
         const text = cleanText(h1Match[1]);
         if (text) {
@@ -121,7 +121,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
         }
       }
     });
-    
+
     return tocItems;
   }, [markdown]);
 
@@ -144,7 +144,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
       const headerOffset = 80; // Account for sticky header
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-      
+
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'
@@ -193,8 +193,8 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                 </button>
                 {fontDropdownOpen && (
                   <>
-                    <div 
-                      className="fixed inset-0 z-20" 
+                    <div
+                      className="fixed inset-0 z-20"
                       onClick={() => setFontDropdownOpen(false)}
                     />
                     <div className="absolute top-full left-0 mt-2 bg-gray-800 border border-gray-700 rounded-lg shadow-xl z-30 min-w-[180px]">
@@ -205,11 +205,10 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                             setSelectedFont(font);
                             setFontDropdownOpen(false);
                           }}
-                          className={`w-full text-left px-4 py-2.5 text-sm transition-colors hover:bg-gray-700 first:rounded-t-lg last:rounded-b-lg ${
-                            selectedFont.name === font.name
-                              ? 'bg-indigo-600 text-white'
-                              : 'text-gray-200'
-                          }`}
+                          className={`w-full text-left px-4 py-2.5 text-sm transition-colors hover:bg-gray-700 first:rounded-t-lg last:rounded-b-lg ${selectedFont.name === font.name
+                            ? 'bg-indigo-600 text-white'
+                            : 'text-gray-200'
+                            }`}
                           style={{ fontFamily: font.family }}
                         >
                           {font.name}
@@ -234,7 +233,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
       </div>
 
       {/* Content with TOC */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 sm:pb-12">
         {loading && (
           <div className="text-center py-12">
             <p className="text-gray-300 text-lg">Loading notes...</p>
@@ -254,13 +253,25 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
         )}
 
         {markdown && (
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
             {/* Table of Contents - Left Side */}
-            <aside className="lg:col-span-4">
-              <div className="sticky top-20">
-                <div className="bg-gray-800 border border-gray-700 rounded-lg p-5" style={{ fontFamily: selectedFont.family }}>
-                  <h2 className="text-xl font-bold text-white mb-4 not-italic">Table of Contents</h2>
-                  <nav className="space-y-1 max-h-[calc(100vh-12rem)] overflow-y-auto">
+            <aside className="lg:col-span-3">
+              <div className="sticky top-[80px] pt-8 self-start">
+                <div
+                  className="bg-gray-800 border border-gray-700 rounded-lg p-4 flex flex-col"
+                  style={{
+                    fontFamily: selectedFont.family,
+                    maxHeight: 'calc(100vh - 120px)'
+                  }}
+                >
+                  <h2 className="text-lg font-bold text-white mb-3 not-italic flex-shrink-0">Table of Contents</h2>
+                  <nav
+                    className="space-y-1 overflow-y-auto scrollbar-hide flex-1"
+                    style={{
+                      scrollbarWidth: 'none',
+                      msOverflowStyle: 'none'
+                    }}
+                  >
                     {toc.length === 0 ? (
                       <p className="text-gray-400 text-sm not-italic">No headings found</p>
                     ) : (
@@ -268,15 +279,14 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                         <button
                           key={`${item.id}-${index}`}
                           onClick={() => scrollToHeading(item.id)}
-                          className={`block w-full text-left px-3 py-2 rounded transition-colors hover:bg-gray-700 hover:text-indigo-300 not-italic ${
-                            item.level === 1
-                              ? 'text-white font-semibold text-base'
-                              : item.level === 2
-                              ? 'text-gray-300 text-sm ml-4'
+                          className={`block w-full text-left px-2 py-1.5 rounded transition-colors hover:bg-gray-700 hover:text-indigo-300 not-italic ${item.level === 1
+                            ? 'text-white font-semibold text-sm'
+                            : item.level === 2
+                              ? 'text-gray-300 text-xs ml-2'
                               : item.level === 3
-                              ? 'text-gray-400 text-xs ml-8'
-                              : 'text-gray-500 text-xs ml-12'
-                          }`}
+                                ? 'text-gray-400 text-xs ml-4'
+                                : 'text-gray-500 text-xs ml-6'
+                            }`}
                         >
                           {item.text}
                         </button>
@@ -287,9 +297,9 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
               </div>
             </aside>
 
-            {/* Main Content - Right Side */}
-            <article 
-              className="lg:col-span-8 max-w-none not-italic" 
+            {/* Main Content - Center/Right Side */}
+            <article
+              className="lg:col-span-9 max-w-none not-italic pt-8"
               style={{ fontFamily: selectedFont.family }}
             >
               <ReactMarkdown
@@ -301,9 +311,9 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                     const text = extractTextFromChildren(children);
                     const id = generateId(text);
                     return (
-                      <h1 
+                      <h1
                         id={id}
-                        className="text-4xl font-bold text-white mt-10 mb-6 pb-2 border-b border-gray-700 scroll-mt-20 not-italic" 
+                        className="text-4xl font-bold text-white mt-10 mb-6 pb-2 border-b border-gray-700 scroll-mt-20 not-italic"
                         {...props}
                       >
                         {children}
@@ -314,9 +324,9 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                     const text = extractTextFromChildren(children);
                     const id = generateId(text);
                     return (
-                      <h2 
+                      <h2
                         id={id}
-                        className="text-3xl font-bold text-white mt-8 mb-4 scroll-mt-20 not-italic" 
+                        className="text-3xl font-bold text-white mt-8 mb-4 scroll-mt-20 not-italic"
                         {...props}
                       >
                         {children}
@@ -327,9 +337,9 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                     const text = extractTextFromChildren(children);
                     const id = generateId(text);
                     return (
-                      <h3 
+                      <h3
                         id={id}
-                        className="text-2xl font-bold text-white mt-6 mb-3 scroll-mt-20 not-italic" 
+                        className="text-2xl font-bold text-white mt-6 mb-3 scroll-mt-20 not-italic"
                         {...props}
                       >
                         {children}
@@ -340,9 +350,9 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                     const text = extractTextFromChildren(children);
                     const id = generateId(text);
                     return (
-                      <h4 
+                      <h4
                         id={id}
-                        className="text-xl font-semibold text-white mt-5 mb-2 scroll-mt-20 not-italic" 
+                        className="text-xl font-semibold text-white mt-5 mb-2 scroll-mt-20 not-italic"
                         {...props}
                       >
                         {children}
