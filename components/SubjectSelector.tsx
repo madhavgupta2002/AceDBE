@@ -109,10 +109,10 @@ const SubjectSelector: React.FC = () => {
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3">
-                    <span className="text-xs sm:text-sm text-gray-200 bg-gray-700 px-2 py-0.5 sm:py-1 font-semibold w-fit mb-1 sm:mb-0">
+                    <span className="text-xs sm:text-sm text-gray-200 bg-gray-700 px-2 py-0.5 sm:py-1 font-semibold w-fit mb-1 sm:mb-0 text-center min-w-[50px]">
                       {subject.code}
                     </span>
-                    <h3 className="text-base sm:text-xl font-bold text-white truncate">
+                    <h3 className="text-base sm:text-lg font-bold text-white leading-tight">
                       {subject.name}
                     </h3>
                   </div>
@@ -120,7 +120,7 @@ const SubjectSelector: React.FC = () => {
               </div>
 
               {/* Action Buttons + Arrow */}
-              <div className="flex items-center justify-between sm:justify-end">
+              <div className="flex items-center justify-end mt-2 sm:mt-0 gap-3 sm:gap-4">
                 <div className="flex items-center gap-2">
                   <button
                     onClick={(e) => handleNotesClick(e, subject.code)}
@@ -145,7 +145,7 @@ const SubjectSelector: React.FC = () => {
                     <ClipboardList className="w-4 h-4 sm:w-5 sm:h-5" />
                   </button>
                 </div>
-                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-gray-500 group-hover:text-indigo-400 group-hover:translate-x-1 transition-all ml-3 sm:ml-2" />
+                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-gray-500 group-hover:text-indigo-400 group-hover:translate-x-1 transition-all ml-1" />
               </div>
             </div>
           </div>
