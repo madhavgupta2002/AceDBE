@@ -81,6 +81,12 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
           </button>
         ))}
       </div>
+      {showResult && selectedAnswer && question.explanation && (
+        <div className="mt-6 p-4 bg-blue-900/30 border border-blue-700 rounded-lg">
+          <h3 className="text-lg font-semibold text-blue-300 mb-2">Explanation</h3>
+          <p className="text-gray-200 whitespace-pre-line">{formatText(question.explanation)}</p>
+        </div>
+      )}
     </div>
   );
 };
