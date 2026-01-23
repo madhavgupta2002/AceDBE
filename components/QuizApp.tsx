@@ -712,38 +712,35 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
 
           {/* Fixed Navigation Buttons */}
           {!loading && !quizCompleted && quizState.questions.length > 0 && (
-            <div className="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 px-2 sm:px-6 lg:px-8 py-4 z-40">
+            <div className="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 px-2 sm:px-6 lg:px-8 py-3 sm:py-4 z-40">
               <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
                   <div className="lg:col-span-9">
-                    <div className="flex flex-wrap justify-between items-center gap-3">
+                    <div className="flex justify-between items-center gap-2 sm:gap-4">
                       {quizState.currentQuestionIndex > 0 ? (
                         <button
                           onClick={() => moveQuestion('prev')}
-                          className="px-4 sm:px-6 py-3 bg-indigo-700 text-white border border-indigo-600 font-semibold hover:bg-indigo-600 transition duration-200 flex items-center"
+                          className="px-3 sm:px-6 py-2 sm:py-3 transition duration-200 flex items-center font-semibold text-sm sm:text-base bg-indigo-700 text-white border border-indigo-600 hover:bg-indigo-600"
                         >
-                          <ArrowLeft className="mr-2" size={20} /> Previous
+                          <ArrowLeft className="mr-1 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" /> Previous
                         </button>
                       ) : (
-                        <div className="w-32"></div>
+                        <div className="invisible px-3 sm:px-6 py-2 sm:py-3 flex items-center font-semibold text-sm sm:text-base">
+                          <ArrowLeft className="mr-1 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" /> Previous
+                        </div>
                       )}
-
-                      <button
-                        onClick={confirmGoToMainMenu}
-                        className="px-4 sm:px-6 py-3 bg-gray-700 text-white border border-gray-600 font-semibold hover:bg-gray-600 transition duration-200 flex items-center"
-                      >
-                        <Home className="mr-2" size={20} /> Main Menu
-                      </button>
 
                       {quizState.currentQuestionIndex < quizState.totalQuestions - 1 ? (
                         <button
                           onClick={() => moveQuestion('next')}
-                          className="px-4 sm:px-6 py-3 bg-indigo-700 text-white border border-indigo-600 font-semibold hover:bg-indigo-600 transition duration-200 flex items-center"
+                          className="px-3 sm:px-6 py-2 sm:py-3 transition duration-200 flex items-center font-semibold text-sm sm:text-base bg-indigo-700 text-white border border-indigo-600 hover:bg-indigo-600"
                         >
-                          Next <ArrowRight className="ml-2" size={20} />
+                          Next <ArrowRight className="ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                         </button>
                       ) : (
-                        <div className="w-32"></div>
+                        <div className="invisible px-3 sm:px-6 py-2 sm:py-3 flex items-center font-semibold text-sm sm:text-base">
+                          Next <ArrowRight className="ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                        </div>
                       )}
                     </div>
                   </div>
