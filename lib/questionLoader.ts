@@ -35,11 +35,17 @@ export async function loadQuestionFile(
   }
 }
 
+// Bank info with display name
+export interface BankInfo {
+  bankName: string;
+  displayName: string;
+}
+
 // Get available banks for a subject and bank type
 export async function getAvailableBanks(
   bankType: 'CLA' | 'Exam',
   subjectCode: string
-): Promise<string[]> {
+): Promise<BankInfo[]> {
   try {
     const response = await fetch(
       `/api/banks?bankType=${bankType}&subjectCode=${subjectCode}`
