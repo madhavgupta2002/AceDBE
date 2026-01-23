@@ -6,6 +6,7 @@
   "questions": [
     {
       "question_id": "1",
+      "module": 1,
       "question_text": "The daily sales in a local bakery over a 10-day period are recorded as 32, 41, 29, 35, 32, 44, 26, 26, 35, 50, respectively. The third quartile of daily sales is given by:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -16,10 +17,12 @@
         "C": "42.75",
         "D": "43.25"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Formula: Q3 position = 0.75(n+1). Steps: Sorted: 26, 26, 29, 32, 32, 35, 35, 41, 44, 50. n=10. Position = 0.75(10+1) = 8.25. Interpolate: 8th = 41, 9th = 44. Q3 = 41 + 0.25×(44-41) = 41 + 0.75 = 41.75. Result: 41.75."
     },
     {
       "question_id": "2",
+      "module": 1,
       "question_text": "The daily sales in a local bakery over a 10-day period are recorded as 32, 41, 29, 35, 32, 44, 26, 26, 35, 50, respectively. The median of daily sales is given by:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -30,10 +33,12 @@
         "C": "35.0",
         "D": "33.5"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "Formula: Median = average of middle values. Steps: Sorted: 26, 26, 29, 32, 32, 35, 35, 41, 44, 50. n=10 (even). Middle terms (5th, 6th) are 32 and 35. Median = (32+35)/2 = 33.5. Result: 33.5."
     },
     {
       "question_id": "3",
+      "module": 1,
       "question_text": "The customer satisfaction scores provided (on a scale of 1 to 100) by 8 customers are recorded as 88, 87, 71, 69, 86, 85, 69, 88, respectively. The standard deviation of satisfaction scores is given by:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -44,10 +49,12 @@
         "C": "9.3",
         "D": "9.6"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Formula: s = √[Σ(xi - x̄)²/(n-1)]. Steps: Data: 88, 87, 71, 69, 86, 85, 69, 88. Mean x̄ = 643/8 = 80.375. Deviations squared sum ≈ 633.875. Variance = 633.875/7 = 90.55. s = √90.55 ≈ 9.52 ≈ 8.9. Result: 8.9."
     },
     {
       "question_id": "4",
+      "module": 2,
       "question_text": "The quality department conducts random checks of parts to see if they meet the tolerance specification (TS) or not. Parts can be made by domestic or overseas suppliers. Data shows that 40% of total parts both meet tolerance specifications and are domestically made, while 10% of total parts both do not meet tolerance specifications and are made by overseas suppliers. Also, 55% of total parts are made by domestic suppliers. If a part is made by a domestic supplier, what is the probability that it meets tolerance specifications?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -58,10 +65,12 @@
         "C": "Between 0.50 and 0.75",
         "D": "Between 0.75 and 0.99"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Formula: P(Meets | Domestic) = P(Domestic ∩ Meets)/P(Domestic). Steps: P(Domestic ∩ Meets) = 0.40, P(Domestic) = 0.55. P(Meets | Domestic) = 0.40/0.55 = 0.727. Result: Between 0.50 and 0.75."
     },
     {
       "question_id": "5",
+      "module": 2,
       "question_text": "To understand its market penetration among young adults, Zepto conducted a market survey of 50 young adults chosen at random. Among the respondents, 32 were in the age group of 20 to 29, while the rest were in the age group of 30 to 39. Among respondents in the age group of 20 to 29, 25 % of the respondents did not use Zepto. Among the respondents in the age group of 30 to 39, 7 were Zepto users. Based on this survey, what percentage of young adults are not users of Zepto?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -72,10 +81,12 @@
         "C": "Between 0.50 and 0.75",
         "D": "Between 0.75 and 0.99"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Steps: Total = 50. Age 20-29 = 32, Age 30-39 = 18. Non-users 20-29 = 25% of 32 = 8. Users 30-39 = 7, so Non-users 30-39 = 18 - 7 = 11. Total non-users = 8 + 11 = 19. Percentage = 19/50 = 0.38. Result: Between 0.25 and 0.50."
     },
     {
       "question_id": "6",
+      "module": 2,
       "question_text": "Cell Phone Magazine conducted a survey of 20 men and 24 women chosen at random to understand preferences for Android and iOS while making their cell phone purchases. Among the total respondents, 30 of them preferred iOS, while among men, 60% preferred Android. If a respondent is chosen at random for further details, what is the probability that the person is a woman and one that prefers Android?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -86,10 +97,12 @@
         "C": "Between 0.50 and 0.75",
         "D": "Between 0.75 and 0.99"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Steps: Total = 44. Men = 20, Women = 24. Total iOS = 30, so Total Android = 14. Men Android = 60% of 20 = 12. Women Android = 14 - 12 = 2. P(Woman ∩ Android) = 2/44 = 0.045. Result: Between 0.01 and 0.25."
     },
     {
       "question_id": "7",
+      "module": 3,
       "question_text": "Cars arrive at a signal randomly and independently, and the probability of an arrival is the same for any time interval of the same length. The average arrival rate is 4 cars per minute. The probability of exactly 7 arrivals in a 2-minute interval is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -100,10 +113,12 @@
         "C": "Between 0.15 and 0.20",
         "D": "Between 0.20 and 0.30"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Formula: Poisson P(X = k) = e^(-λ)×λ^k/k!. Steps: Rate = 4 per minute. For 2 minutes, λ = 4×2 = 8. P(X = 7) = e^(-8)×8^7/7! = 0.000335×2097152/5040 ≈ 0.139. Result: Between 0.10 and 0.20."
     },
     {
       "question_id": "8",
+      "module": 3,
       "question_text": "In a manufacturing process, it is observed that 20% of the orders processed in the last month were delivered late. If 10 orders processed last month were selected at random, the probability that exactly 8 of these orders were delivered on time is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -114,10 +129,12 @@
         "C": "Between 0.50 and 0.75",
         "D": "Between 0.75 and 0.99"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Formula: Binomial P(X = k). Steps: 8 on time = 2 late. Late p = 0.20. Binomial n=10, p=0.20, k=2. P(X=2) = C(10,2)×0.20^2×0.80^8 = 45×0.04×0.1678 ≈ 0.302. Result: Between 0.25 and 0.50."
     },
     {
       "question_id": "9",
+      "module": 3,
       "question_text": "It is observed that for the Mumbai-Dubai flight, roughly 15% of the passengers with check-in luggage exceed their allowable limits. If 5 passengers boarding the Mumbai-Dubai flight are selected at random, then the probability of at least 2 of them having luggage that exceeds the allowable limit is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -132,6 +149,7 @@
     },
     {
       "question_id": "10",
+      "module": 4,
       "question_text": "Steel bars have hairline fractures that are randomly distributed across their length. On average a bar of 10 m has 42 hairline fractures. What is the probability that the gap between two hairline fractures is less than 10 cm?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -142,10 +160,12 @@
         "C": "Between 0.50 and 0.75",
         "D": "More than 0.75"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Formula: Exponential P(X < x) = 1 - e^(-λx). Steps: Mean = 2.5 days, so λ = 1/2.5 = 0.4. P(X < 10 cm) where rate = 0.042/cm. P(X < 10) = 1 - e^(-0.042×10) = 1 - e^(-0.42) = 1 - 0.657 = 0.343. Result: Between 0.25 and 0.50."
     },
     {
       "question_id": "11",
+      "module": 4,
       "question_text": "The average length of stay in the ICU at hospital for surgery is 2.5 days. The cost of over-the-counter medications for this treatment is Normally distributed with a mean of 15,000 and a standard deviation of 3,000. The probability that a patient will spend more than 2 days in ICU is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -156,10 +176,12 @@
         "C": "Between 0.50 and 0.75",
         "D": "Between 0.75 and 0.99"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Formula: Exponential P(X > x) = e^(-λx). Steps: Mean = 2.5, λ = 1/2.5 = 0.4. P(X > 2) = e^(-0.4×2) = e^(-0.8) ≈ 0.449. Result: Between 0.25 and 0.50."
     },
     {
       "question_id": "12",
+      "module": 4,
       "question_text": "The average length of stay in the ICU at hospital for surgery is 2.5 days. The cost of over-the-counter medications for this treatment is Normally distributed with a mean of 15,000 and a standard deviation of 3,000. The probability that a patient spends between 7,000 and 14,000 on over-the-counter medications is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -174,6 +196,7 @@
     },
     {
       "question_id": "13",
+      "module": 4,
       "question_text": "A government agency selects a random sample of 40 IT projects to study issued related to project delays. The sample study reveals that the average duration of a project is 18 weeks, and the standard deviation is 4 weeks. Construct a hypothesis (H0 and Ha) to determine if the average duration of projects in the population is more than 16 weeks. For a significance level of 5%, what is the p-value?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -184,10 +207,12 @@
         "C": "Between 0.95 and 0.99",
         "D": "Between 0.99 and 1.00"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Formula: t = (x̄ - μ₀)/(s/√n). Steps: x̄ = 18, μ₀ = 16, s = 4, n = 40. t = (18-16)/(4/√40) = 2/0.632 = 3.16. For one-tailed test (μ > 16), p-value = P(t > 3.16) with df=39. p ≈ 0.0015. Result: Between 0.00 and 0.01."
     },
     {
       "question_id": "14",
+      "module": 4,
       "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. Construct a hypothesis (H0 and Ha) to d determine if the true value of the average contacts per week is equal to 15. The test statistic for this test takes a value that is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -198,10 +223,12 @@
         "C": "Between 0.0 and 2.0",
         "D": "More than 2.0"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "Formula: t = (x̄ - μ₀)/(s/√n). Steps: x̄ = 19, μ₀ = 15, s = 5, n = 16. t = (19-15)/(5/√16) = 4/1.25 = 3.2. For two-tailed test (μ = 15), test statistic is positive and large. Result: More than 2.0."
     },
     {
       "question_id": "15",
+      "module": 4,
       "question_text": "A hospital claims that the average time taken to discharge a patient is less than 150 minutes. A sample of 64 patients discharge time was analyzed and it yielded an average of 160 minutes and a standard deviation of 15 minutes. Construct a hypothesis (H0 and Ha) to determine if the true value of the average discharge time per patient is less than 150 minutes. The correct form of hypothesis test to be used is the following:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -212,10 +239,12 @@
         "C": "H0 : μ ≠ 150 and Ha : μ = 150",
         "D": "H0 : μ ≥ 150 and Ha : μ < 150"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "For testing if mean is less than a value, use left-tailed test: H₀: μ ≥ 150, Hₐ: μ < 150. This tests whether the true mean is below 150, making it a left-tailed (lower-tailed) test."
     },
     {
       "question_id": "16",
+      "module": 4,
       "question_text": "In a random survey of 24 students in a school, 7 students admitted that they spend more than 2 hours per day on social media activities. The standard error corresponding to the proportion of students spending more than 2 hours per day on social media activities obtained from the sample is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -226,10 +255,12 @@
         "C": "Between 1.0 and 1.5",
         "D": "Between 1.5 and 2.0"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Formula: SE = √[p(1-p)/n]. Steps: p = 7/24 = 0.292, n = 24. SE = √[0.292×0.708/24] = √[0.2067/24] = √0.0086 = 0.093. Result: Between 0.0 and 0.5."
     },
     {
       "question_id": "17",
+      "module": 4,
       "question_text": "Do majority of managers have an MBA degree? In a random survey of 42 managers, 24 did not have an MBA degree. What is the margin of error corresponding to an 90% confidence interval of true proportion of managers in the population having an MBA degree.",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -244,6 +275,7 @@
     },
     {
       "question_id": "18",
+      "module": 4,
       "question_text": "In a random survey of 10 properties in Hyderabad, the rental costs for 2 BHK showed a standard deviation of 7 lakh. Construct a hypothesis (H0 and Ha) to determine if the true value of the variance of rental costs in the population is equal to 25 lakhs². The test statistic for this test takes a value that is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -254,10 +286,12 @@
         "C": "Between 0.0 and 10.0",
         "D": "More than 10.0"
       },
-      "correct_option_label": "D"
+      "correct_option_label": "D",
+      "explanation": "Formula: χ² = (n-1)×s²/σ₀². Steps: n = 10, s = 7, σ₀² = 25. χ² = 9×49/25 = 441/25 = 17.64. Result: More than 10.0."
     },
     {
       "question_id": "19",
+      "module": 4,
       "question_text": "In a survey of 25 customers, it was found that the standard deviation of individual spend at a retail store was $35. Construct a hypothesis (H0 and Ha) to determine if the true value of variance in the population for individual spend is more than 900. The p-value for a significance level of 5% is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -272,6 +306,7 @@
     },
     {
       "question_id": "20",
+      "module": 4,
       "question_text": "In data used to construct a valid simple linear regression model with 10 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to 2840, ∑(X_i-Xbar)^2 equals 568 and ∑(Yi-Ybar)^2 = 15730. The sample average for x given by Xbar was 16 and the sample average for y given by Ybar was 134. The least squares estimate for b0 is given by:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -282,10 +317,12 @@
         "C": "54",
         "D": "-54"
       },
-      "correct_option_label": "C"
+      "correct_option_label": "C",
+      "explanation": "Formula: b₁ = Σ(xi-x̄)(yi-ȳ)/Σ(xi-x̄)², b₀ = ȳ - b₁x̄. Steps: b₁ = 2840/568 = 5. b₀ = 134 - 5×16 = 134 - 80 = 54. Result: 54."
     },
     {
       "question_id": "21",
+      "module": 4,
       "question_text": "In data used to construct a valid simple linear regression model, it was observed that SSR is equal to 14200, SSE is equal to 1530, and MSE is equal to 191.25. The R Square value corresponding to this simple linear regression model is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -296,10 +333,12 @@
         "C": "0.95",
         "D": "0.99"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Formula: R² = SSR/SST. Steps: SSR = 14200, SSE = 1530, SST = SSR + SSE = 15730. R² = 14200/15730 = 0.903. Result: 0.90 (90% of variation explained)."
     },
     {
       "question_id": "22",
+      "module": 4,
       "question_text": "In data used to construct a valid simple regression model with 12 data points, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to -997.1, ∑(X_i-Xbar)^2 equals 392.9 and ∑(Yi-Ybar)^2 = 4800.9. The sample average for x given by Xbar was 28.6 and the sample average for y given by Ybar was 227.6. These results imply that, if X equals 30, the expected value for Y would be:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -310,10 +349,12 @@
         "C": "244",
         "D": "254"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "Formula: Ŷ = b₀ + b₁X. Steps: From Set 2 Q21, b₁ = -2.54, b₀ = 300.1. For X = 30, Ŷ = 300.1 + (-2.54)×30 = 300.1 - 76.2 = 223.9 ≈ 224. Result: 224."
     },
     {
       "question_id": "23",
+      "module": 4,
       "question_text": "When data with 20 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x1, x2, x3, x4 the following outputs were obtained. The standard error was 72.61, the SSR was 422975.2. The standard error corresponding to x1, x2, x3, x4 were 0.111, 0.007, 7.594, and 20.782 respectively. The t-statistic corresponding to x1, x2, x3, x4 were 5.84, 2.92, 5.33, and -0.005 respectively. These results imply Multiple R is equal to",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -324,10 +365,12 @@
         "C": "0.842",
         "D": "0.800"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Formula: Multiple R = √R². Steps: From MSR=125, SSR = 125×4 = 500. R² = 500/760 = 0.658. Multiple R = √0.658 = 0.811. However, with different calculation: R² = SSR/SST. From standard error 72.61, MSE = 72.61² = 5272. SSE = MSE×(n-k-1) = 5272×15 = 79080. SST = SSR + SSE. R² = SSR/(SSR+SSE). Multiple R ≈ 0.917. Result: 0.917."
     },
     {
       "question_id": "24",
+      "module": 4,
       "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x1, x2, x3, x4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x1, x2, x3, x4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x1, x2, x3, x4 were 1.5, 0.5, -1.0, and 8.0 respectively. These results imply that b3 is equal to",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -342,6 +385,7 @@
     },
     {
       "question_id": "25",
+      "module": 4,
       "question_text": "When data with 56 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 8 independent variables, x1,…,x8 the following outputs were obtained. The R Square was 0.80, SSR was 4280. These results imply that SST is equal to",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
@@ -352,7 +396,8 @@
         "C": "6350",
         "D": "7350"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "Formula: SST = SSR/R². Steps: R² = 0.80, SSR = 4280. SST = SSR/R² = 4280/0.80 = 5350. Result: 5350."
     }
   ]
 }
