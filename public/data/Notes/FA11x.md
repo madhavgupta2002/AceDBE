@@ -137,14 +137,14 @@ Financial statements must reflect a "True and Fair View." Adjustments are necess
 ### **A. Adjustments Related to Income**
 | Scenario | Impact on P&L (Income) | Impact on Balance Sheet | Entry |
 | :--- | :--- | :--- | :--- |
-| **Accrued Income** (e.g., Interest earned on FD but not received) | Increases Income | **Asset** (Accrued Interest) | Dr. Accrued Interest <br> Cr. Interest Income |
+| **Accrued Income** (e.g., Interest earned on FD but not received) | Increases Income | **Asset** (Accrued Interest) | Dr. Accrued Interest / Cr. Interest Income |
 | **Percentage of Completion** (Long-term contracts like construction) | Recognize revenue proportional to work done | **Asset** (Unbilled Revenue) | Recognize revenue based on $\%$ of work completed in the current year. |
 
 ### **B. Adjustments Related to Expenses**
 | Scenario | Impact on P&L (Expense) | Impact on Balance Sheet | Entry |
 | :--- | :--- | :--- | :--- |
-| **Prepaid Expenses** (e.g., Insurance paid in Oct for full year) | Reduces Expense (Remove future period portion) | **Asset** (Prepaid Insurance) | Dr. Prepaid Insurance <br> Cr. Insurance Expense |
-| **Outstanding Expenses** (e.g., Dec electricity bill paid in Jan) | Increases Expense (Record current period cost) | **Liability** (Outstanding Exp) | Dr. Electricity Expense <br> Cr. Outstanding Electricity |
+| **Prepaid Expenses** (e.g., Insurance paid in Oct for full year) | Reduces Expense (Remove future period portion) | **Asset** (Prepaid Insurance) | Dr. Prepaid Insurance / Cr. Insurance Expense |
+| **Outstanding Expenses** (e.g., Dec electricity bill paid in Jan) | Increases Expense (Record current period cost) | **Liability** (Outstanding Exp) | Dr. Electricity Expense / Cr. Outstanding Electricity |
 
 ### **C. Provisions (Estimations)**
 Used when the exact amount is unknown but the liability is probable.
@@ -953,9 +953,9 @@ Summarizes cash movements to assess solvency and liquidity. Helps check the "qua
 
 | Activity Type | Description | Examples (Inflow/Outflow) |
 | :--- | :--- | :--- |
-| **Operating Activities** | Cash generated from core business operations. | (+) Cash from Sales <br> (-) Payment to Suppliers <br> (-) Salaries/Tax Paid |
-| **Investing Activities** | Cash flows related to long-term assets and investments. | (-) Purchase of Fixed Assets (CAPEX) <br> (+) Sale of Assets <br> (+) **Interest/Dividend Received** |
-| **Financing Activities** | Cash flows related to capital and debt. | (+) Issue of Shares/Debentures <br> (-) Repayment of Loans <br> (-) **Dividend/Interest Paid** |
+| **Operating Activities** | Cash generated from core business operations. | (+) Cash from Sales / (-) Payment to Suppliers / (-) Salaries/Tax Paid |
+| **Investing Activities** | Cash flows related to long-term assets and investments. | (-) Purchase of Fixed Assets (CAPEX) / (+) Sale of Assets / (+) **Interest/Dividend Received** |
+| **Financing Activities** | Cash flows related to capital and debt. | (+) Issue of Shares/Debentures / (-) Repayment of Loans / (-) **Dividend/Interest Paid** |
 
 ### **Analysis of Cash Flow:**
 *   **Ideal Scenario:**

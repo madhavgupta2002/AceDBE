@@ -629,7 +629,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                     : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
                     }`}
                 >
-                  Toggle Options
+                  {hideWrongOptions ? 'Hide Options' : 'Show Options'}
                 </button>
               </div>
 
@@ -831,12 +831,18 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                   </div>
                 )
               )}
-              <button
-                onClick={resetQuiz}
-                className="mt-6 px-6 py-3 bg-indigo-700 text-white border border-indigo-600 font-semibold hover:bg-indigo-600 transition duration-200"
+
+              {/* Feedback Box */}
+              <a
+                href="https://www.linkedin.com/in/madhavgupta2002/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block mt-3 p-3 bg-gray-800/50 border border-gray-700 rounded hover:bg-gray-700/50 hover:border-gray-600 transition-all cursor-pointer"
               >
-                Back to Main Menu
-              </button>
+                <p className="text-xs text-gray-400 text-center">
+                  Please report incorrect answers or bugs
+                </p>
+              </a>
             </div>
           )}
 
@@ -880,6 +886,18 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                 >
                   Finish Quiz <RefreshCw className="ml-2" size={20} />
                 </button>
+
+                {/* Feedback Box */}
+                <a
+                  href="https://www.linkedin.com/in/madhavgupta2002/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block mt-3 p-3 bg-gray-800/50 border border-gray-700 rounded hover:bg-gray-700/50 hover:border-gray-600 transition-all cursor-pointer"
+                >
+                  <p className="text-xs text-gray-400 text-center">
+                    Please report incorrect answers or bugs
+                  </p>
+                </a>
               </div>
             </div>
           )}
