@@ -248,6 +248,7 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
 *   **Conditions:**
     1.  $0 \le f(x) \le 1$
     2.  $\sum f(x) = 1$ (Sum of all probabilities equals 1).
+
 ### **1.2 Numerical Measures**
 *   **Expected Value (Mean / $\mu$):** The long-run average.
     *   **Formula:** $E[X] = \sum [x \times f(x)]$
@@ -255,6 +256,17 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
 *   **Variance ($\sigma^2$):** Weighted average of squared deviations.
     *   **Formula:** $Var(X) = \sum [(x - \mu)^2 \times f(x)]$
 *   **Standard Deviation ($\sigma$):** $\sqrt{Variance}$.
+
+| Property           | General Discrete      |
+|--------------------|----------------------|
+| Random Variable    | $X$                  |
+| Possible Values    | Countable (e.g. 0,1,2)|
+| PMF                | $f(x)$               |
+| Conditions         | $0 \leq f(x) \leq 1$ <br> $\sum f(x) = 1$ |
+| Mean $E[X]$        | $\sum x f(x)$        |
+| Variance $Var(X)$  | $\sum (x - \mu)^2 f(x)$ |
+| Std. Deviation     | $\sqrt{Var(X)}$      |
+
 ### **1.3 Portfolio Analysis (Two Assets)**
 *   **Portfolio Return ($Z$):** Weighted sum of returns of Asset X and Asset Y.
     *   $Z = w_1 X + w_2 Y$ (where $w$ is the proportion of investment).
@@ -280,7 +292,15 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
 *   **Expected Value (Mean):** $E[Y] = p$.
 *   **Variance:** $Var(Y) = p \times q$.
 *   **Standard Deviation:** $\sqrt{p \times q}$.
- 
+
+| Property           | Bernoulli                |
+|--------------------|-------------------------|
+| Random Variable    | $Y$ (0 or 1)            |
+| PMF                | $f(1) = p$, $f(0) = 1-p$|
+| Mean $E[Y]$        | $p$                     |
+| Variance $Var(Y)$  | $p(1-p)$                |
+| Std. Deviation     | $\sqrt{p(1-p)}$         |
+
 
  
 ## **Topic 3: The Binomial Distribution**
@@ -300,6 +320,16 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
 ### **3.3 Calculation Logic**
 *   **"At most $k$":** $P(Y \le k) = P(0) + P(1) + ... + P(k)$.
 *   **"At least $k$":** $P(Y \ge k) = 1 - P(Y \le k-1)$.
+
+| Property           | Binomial ($n$, $p$)                                   |
+|--------------------|------------------------------------------------------|
+| Random Variable    | $Y$ (number of successes in $n$ trials)              |
+| PMF                | $P(Y = y) = {n \choose y} p^y (1-p)^{n-y}$           |
+| Possible Values    | $y = 0,1,2,...,n$                                    |
+| Mean $E[Y]$        | $np$                                                 |
+| Variance $Var(Y)$  | $np(1-p)$                                            |
+| Std. Deviation     | $\sqrt{np(1-p)}$                                     |
+
  
 
 
@@ -324,6 +354,16 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
     *   **Mean:** $E[Y] = \lambda$
     *   **Variance:** $Var(Y) = \lambda$
     *   **Standard Deviation:** $\sqrt{\lambda}$
+
+| Property             | Poisson ($\lambda$)                      |
+|----------------------|------------------------------------------|
+| Random Variable      | $Y$ (events in interval)                 |
+| PMF                  | $P(Y = y) = \dfrac{e^{-\lambda}\lambda^{y}}{y!}$ |
+| Possible Values      | $y = 0,1,2,...$                          |
+| Mean $E[Y]$          | $\lambda$                                |
+| Variance $Var(Y)$    | $\lambda$                                |
+| Std. Deviation       | $\sqrt{\lambda}$                         |
+
 ### **4.3 The Poisson Process**
 *   A **Poisson process** models the number of random events happening over time or space at a constant average rate.
 *   **Key Features:**
@@ -345,27 +385,8 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
     *   In $0.5$ hour: $\Lambda = 10 \times 0.5 = 5$
 *   **Note:** Capital $\Lambda$ is often used to denote the Poisson parameter for an interval ($\Lambda = \lambda T$). Some textbooks use $\text{Poisson}(\Lambda)$ or $\text{Poisson}(\lambda T)$—they mean the same thing.
 
-
-#### **Summary Table of Properties**
-| Property                | Value                  |
-|-------------------------|------------------------|
-| Random Variable         | $Y$ (events in interval)|
-| Possible Values         | $0, 1, 2, ...$         |
-| PMF                     | $\frac{e^{-\lambda}\lambda^{y}}{y!}$ |
-| Mean                    | $\lambda$              |
-| Variance                | $\lambda$              |
-| Std. Deviation          | $\sqrt{\lambda}$       |
-
 ### **4.4 Relation to Binomial**
 *   The Poisson distribution is a limiting case of the Binomial distribution when $n$ (trials) is large and $p$ (probability) is small, such that $np = \lambda$.
-
-### **Module 3 Formula Sheet**
-
-| **Concept** | **Bernoulli** | **Binomial** | **Poisson** |
-| :--- | :--- | :--- | :--- |
-| **PMF $f(y)$** | $f(1)=p; f(0)=1-p$ | ${}^nC_y p^y (1-p)^{n-y}$ | $\frac{e^{-\lambda} \lambda^y}{y!}$ |
-| **Mean $E[Y]$** | $p$ | $np$ | $\lambda$ |
-| **Variance $Var(Y)$** | $p(1-p)$ | $np(1-p)$ | $\lambda$ |
 
 **Portfolio Analysis Formulas:**
 *   **Portfolio Mean:** $E[Z] = w_1 E[X] + w_2 E[Y]$
@@ -392,7 +413,15 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
     *   Calculated by integrating $x \cdot f(x)$.
 *   **Variance ($Var(X)$ or $\sigma^2$):** Measure of spread/dispersion.
     *   Calculated by integrating $(x - \mu)^2 \cdot f(x)$.
- 
+
+| Property           | Continuous Random Variable      |
+|--------------------|--------------------------------|
+| Random Variable    | $X$                            |
+| PDF                | $f(x)$                         |
+| CDF                | $F(x) = P(X \leq x)$           |
+| Possible Values    | All real values in interval    |
+| Mean $E[X]$        | $\int x f(x) dx$               |
+| Variance $Var(X)$  | $\int (x - \mu)^2 f(x) dx$     |
 
  
 ## **Topic 2: Uniform Distribution**
@@ -407,7 +436,16 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
 ### **2.3 Percentile Calculation**
 *   To find the $k$-th percentile ($P_k$):
     *   Solve for $x$: $\frac{x - L}{U - L} = k$ (where $k$ is the decimal probability, e.g., 0.80).
- 
+
+| Property              | Uniform ($L, U$)                 |
+|-----------------------|-----------------------------------|
+| Random Variable       | $X$                              |
+| PDF                   | $f(x) = \frac{1}{U - L}$, $L \leq x \leq U$ |
+| CDF                   | $F(x) = \frac{x - L}{U - L}$     |
+| Mean $E[X]$           | $\frac{L+U}{2}$                  |
+| Variance $Var(X)$     | $\frac{(U-L)^2}{12}$             |
+| Std. Deviation        | $\frac{U-L}{\sqrt{12}}$          |
+
 
  
 ## **Topic 3: Exponential Distribution**
@@ -430,7 +468,17 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
 *   **Poisson:** Counts the **number of events** in a fixed interval.
 *   **Exponential:** Measures the **time between** those events.
 *   If events follow a Poisson process with rate $\lambda$, the inter-arrival times follow an Exponential distribution with mean $\frac{1}{\lambda}$.
- 
+
+| Property                  | Exponential ($\lambda$)           |
+|---------------------------|-----------------------------------|
+| Random Variable           | $X \geq 0$ (time until event)     |
+| PDF                       | $f(x) = \lambda e^{-\lambda x}$   |
+| CDF                       | $1 - e^{-\lambda x}$              |
+| Mean $E[X]$               | $\frac{1}{\lambda}$               |
+| Variance $Var(X)$         | $\frac{1}{\lambda^2}$             |
+| Std. Deviation            | $\frac{1}{\lambda}$               |
+| Memoryless?               | Yes                               |
+
 
  
 ## **Topic 4: Normal Distribution**
@@ -443,6 +491,17 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
     *   Mean = Median = Mode.
     *   Total area = 1; Area to the left/right of mean = 0.5.
     *   Tails extend to infinity but never touch the axis.
+
+| Property                  | Normal ($\mu, \sigma$)                                                          |
+|---------------------------|----------------------------------------------------------------------------------|
+| Random Variable           | $X$                                                                             |
+| PDF                       | $f(x) = \dfrac{1}{\sigma \sqrt{2\pi}} e^{- \frac{(x-\mu)^2}{2\sigma^2}}$        |
+| Parameters                | Mean $\mu$, Std. Dev. $\sigma$                                                  |
+| Mean $E[X]$               | $\mu$                                                                           |
+| Variance $Var(X)$         | $\sigma^2$                                                                      |
+| Std. Deviation            | $\sigma$                                                                        |
+| Empirical Rule            | $\sim$68% ($\mu \pm 1\sigma$), $\sim$95% ($\mu \pm 2\sigma$), $\sim$99.7% ($\mu \pm 3\sigma$) |
+
 ### **4.2 Standard Normal Distribution ($Z$)**
 *   A special normal distribution where **Mean ($\mu$) = 0** and **Standard Deviation ($\sigma$) = 1**.
 *   **Z-Score Formula:** Used to convert any normal random variable $X$ to $Z$.
@@ -459,13 +518,23 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
     *   Mean $\mu = np$
     *   Standard Deviation $\sigma = \sqrt{npq}$
 *   **Continuity Correction:** Since Binomial is discrete and Normal is continuous, add/subtract 0.5 to the discrete value boundaries.
-### **Module 4 Formula Sheet**
 
-| **Property** | **Uniform ($L, U$)** | **Exponential ($\lambda$)** | **Normal ($\mu, \sigma$)** |
-| :--- | :--- | :--- | :--- |
-| **PDF $f(x)$** | $\frac{1}{U - L}$ | $\lambda e^{-\lambda x}$ | - |
-| **CDF $F(x)$** | $\frac{x - L}{U - L}$ | $1 - e^{-\lambda x}$ | $P(Z \le \frac{x-\mu}{\sigma})$ |
-| **Mean $E[X]$** | $\frac{L + U}{2}$ | $\frac{1}{\lambda}$ | $\mu$ (or $np$) |
-| **Variance** | $\frac{(U - L)^2}{12}$ | $\frac{1}{\lambda^2}$ | $\sigma^2$ (or $npq$) |
-| **Std. Deviation** | $\frac{U - L}{\sqrt{12}}$ | $\frac{1}{\lambda}$ | $\sigma$ (or $\sqrt{npq}$) |
-| **Key Formula** | $P(a < X < b) = \frac{b-a}{U-L}$ | $P(X > x) = e^{-\lambda x}$ | $Z = \frac{X - \mu}{\sigma}$ |
+
+## **Formula Sheet**
+
+- **Bernoulli**: Used for a single trial with two outcomes (success/failure, e.g., coin toss, pass/fail).
+- **Binomial**: Used when there are a fixed number $n$ of independent trials, each with the same probability of success $p$ (e.g., number of heads in coin tosses).
+- **Poisson**: Used for counting the number of events in a fixed interval, where events are independent and occur at a known average rate, often for rare events.
+- **Uniform ($L, U$)**: Used when a random variable is equally likely to take any value between $L$ and $U$ (continuous interval).
+- **Exponential ($\lambda$)**: Used for modeling time between events in a Poisson process (such as waiting times, lifetimes).
+- **Normal ($\mu, \sigma$)**: Used for modeling naturally occurring bell-shaped data (e.g., heights, errors, measurement variation).
+
+| Distribution / Properties    | **PMF/PDF $f(x)$**                                                    | **CDF $F(x)$**                          | **Mean $E[X]$**                 | **Variance $Var(X)$**              | **Std. Deviation**                  | **Key Formula / Example**                       |
+|:----------------------------|:----------------------------------------------------------------------|:----------------------------------------|:----------------------------------|:-----------------------------------|:------------------------------------|:------------------------------------------------|
+| **Bernoulli**               | $f(1)=p;\ f(0)=1-p$                                                   | –                                      | $p$                              | $p(1-p)$                          | $\sqrt{p(1-p)}$                    | $P(Y=1)=p$                                     |
+| **Binomial**                | $P(Y=y) = {n \choose y} p^y (1-p)^{n-y}$                              | –                                      | $np$                             | $np(1-p)$                         | $\sqrt{np(1-p)}$                   | $P(Y=y) = {n \choose y} p^y (1-p)^{n-y}$        |
+| **Poisson**                 | $f(y) = \frac{e^{-\lambda} \lambda^y}{y!}$                            | –                                      | $\lambda$                        | $\lambda$                          | $\sqrt{\lambda}$                    | $P(Y = y) = \frac{e^{-\lambda} \lambda^y}{y!}$  |
+| **Uniform ($L, U$)**        | $f(x) = \frac{1}{U - L}$ for $L \leq x \leq U$                        | $F(x) = \frac{x - L}{U - L}$ for $L \leq x \leq U$  | $\frac{L+U}{2}$                  | $\frac{(U-L)^2}{12}$                | $\frac{U-L}{\sqrt{12}}$              | $P(a < X < b) = \frac{b-a}{U-L}$, $a > L$, $b < U$|
+| **Exponential ($\lambda$)** | $f(x) = \lambda e^{-\lambda x}$, $x \geq 0$                           | $F(x) = 1 - e^{-\lambda x}$, $x \geq 0$ | $\frac{1}{\lambda}$               | $\frac{1}{\lambda^2}$                 | $\frac{1}{\lambda}$               | $P(X > x) = e^{-\lambda x}$                      |
+| **Normal ($\mu, \sigma$)**  | $f(x) = \dfrac{1}{\sigma \sqrt{2\pi}} e^{- \frac{(x-\mu)^2}{2\sigma^2}}$ | $F(x) = P(Z \leq \frac{x-\mu}{\sigma})$ | $\mu$ (or $np$ for binomial approx.) | $\sigma^2$ (or $npq$ for binomial approx.) | $\sigma$ (or $\sqrt{npq}$ for binomial approx.) | $Z = \frac{X-\mu}{\sigma}$                        |
+
