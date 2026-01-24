@@ -211,7 +211,7 @@
         "D": "Between 2.25 and 3.00"
       },
       "correct_option_label": "A",
-      "explanation": "**Formula:** $\\sigma = \\sqrt{\\sum(x-\\mu)^2 \\times P(x)}$ for discrete RV\n\n**Steps:**\n- Calculate mean $\\mu = 2.54$ (from notes)\n- Compute $E[X^2]$ and $\\text{Var}(X) = E[X^2] - \\mu^2$\n- Standard deviation $\\approx 0.71$\n\n**Result:** Between 0 and 0.75"
+      "explanation": "**Formula:** $\\sigma = \\sqrt{\\sum(x-\\mu)^2 \\times P(x)}$ for discrete RV\n\n**Steps:**\n- Find frequency for each interview count:\n  - 1 interview: 10 boys + 5 girls = 15\n  - 2 interviews: 15 boys + 10 girls = 25\n  - 3 interviews: 35 boys + 45 girls = 80\n  - Total students = 120\n- Calculate probabilities:\n  - $P(1) = \\frac{15}{120} = 0.125$\n  - $P(2) = \\frac{25}{120} = 0.208$\n  - $P(3) = \\frac{80}{120} = 0.667$\n- Calculate mean $\\mu$: $1 \\times 0.125 + 2 \\times 0.208 + 3 \\times 0.667 = 0.125 + 0.417 + 2.001 = 2.543$\n- Find $E[X^2]$:\n  - $1^2 \\times 0.125 + 2^2 \\times 0.208 + 3^2 \\times 0.667 = 0.125 + 0.832 + 6.003 = 6.96$\n- $\\text{Var}(X) = E[X^2] - (E[X])^2 = 6.96 - (2.543)^2 = 6.96 - 6.468 = 0.492$\n- Standard deviation $\\sigma = \\sqrt{0.492} \\approx 0.70$\n\n**Result:** Between 0 and 0.75"
     },
     {
       "question_id": "STAT_MTB2_Q9",
@@ -281,7 +281,7 @@
         "D": "Between 2.25 and 3.00"
       },
       "correct_option_label": "D",
-      "explanation": "**Formula:** Mean = $\\sum(x \\times P(x))$ for discrete RV\n\n**Steps:**\n- From notes, total interviews = 305, total students = 120\n- Mean = $\\frac{305}{120} = 2.54$\n\n**Result:** Between 2.25 and 3.00"
+      "explanation": "**Formula:** Mean = $\\sum(x \\times P(x))$\n\n**Steps:**\n- Number of boys = 60, number of girls = 60\n- Boys with 1 interview = 10 (given)\n- Boys with 2 interviews = 25% of 60 = 15\n- Boys with 3 interviews = 60 - 10 - 15 = 35\n- Girls with 3 interviews = 75% of 60 = 45\n- Let girls with 2 interviews = y, so boys with 2 interviews (15) = girls with 2 interviews (y) + 5 ⇒ y = 10\n- Girls with 1 interview = 60 - 45 - 10 = 5\n- Total with 1 interview: 10 (boys) + 5 (girls) = 15\n- Total with 2 interviews: 15 (boys) + 10 (girls) = 25\n- Total with 3 interviews: 35 (boys) + 45 (girls) = 80\n- Total interviews: (15 × 1) + (25 × 2) + (80 × 3) = 15 + 50 + 240 = 305\n- Total students = 120\n- Mean = $\\frac{305}{120} = 2.54$\n\n**Result:** Between 2.25 and 3.00"
     }
   ]
 }
