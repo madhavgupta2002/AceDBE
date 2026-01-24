@@ -484,10 +484,10 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
           {!loading && quizState.questions.length > 0 && !quizCompleted && (
             <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-3">
               {/* Notes - Half Width */}
-              <div className="bg-gray-800 border border-gray-700 p-2">
+              <div className="bg-gray-800 border border-gray-700 p-2 h-full flex flex-col">
                 <button
                   onClick={() => window.open(`/quiz/${subjectCode}/notes`, '_blank')}
-                  className="w-full py-2 px-3 bg-indigo-700 hover:bg-indigo-600 text-white border border-indigo-600 font-medium text-sm transition duration-200 flex items-center justify-center gap-2"
+                  className="w-full h-full py-2 px-3 bg-indigo-700 hover:bg-indigo-600 text-white border border-indigo-600 font-medium text-sm transition duration-200 flex items-center justify-center gap-2"
                 >
                   <BookOpen className="w-4 h-4" />
                   View Notes
@@ -497,7 +497,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
               {/* Playlists - Half Width */}
               {moduleNumbers.length > 0 && (
                 <div className="bg-gray-800 border border-gray-700 p-2">
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-2 justify-start">
                     {moduleNumbers.map((moduleNum) => {
                       const videoLinks = subjectVideos[moduleNum] || [];
                       const playlistUrl = createPlaylistUrl(videoLinks);
@@ -505,7 +505,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                         <button
                           key={moduleNum}
                           onClick={() => window.open(playlistUrl, '_blank')}
-                          className="flex-1 py-1.5 px-3 bg-red-700 hover:bg-red-600 text-white border border-red-600 font-medium text-sm transition duration-200 flex items-center justify-center gap-1"
+                          className="flex-[0_0_calc(25%-0.375rem)] py-1.5 px-3 bg-red-700 hover:bg-red-600 text-white border border-red-600 font-medium text-sm transition duration-200 flex items-center justify-center gap-1"
                           title={`Module ${moduleNum} (${videoLinks.length} videos)`}
                         >
                           <Youtube className="w-3 h-3" />
