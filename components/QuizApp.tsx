@@ -58,6 +58,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
 
   // Master answered questions array that always corresponds to allQuestions (never filtered)
   const [masterAnsweredQuestions, setMasterAnsweredQuestions] = useState<(string[] | null)[]>([]);
+  const [reviseMode, setReviseMode] = useState(false);
 
   // Helper function to create YouTube playlist URL from video links
   const createPlaylistUrl = (videoLinks: string[]): string => {
@@ -182,6 +183,81 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
         answeredQuestions: new Array(allQuestions.length).fill(null),
       }));
       setQuizCompleted(false);
+      setReviseMode(false);
+    } catch (error) {
+      console.error('Error loading questions:', error);
+      alert('Failed to load questions. Please try again.');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const startRevise = async (selections: {
+    sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam'; modules: (string | number)[] }>;
+    randomOrder: boolean;
+  }) => {
+    setLoading(true);
+    let allQuestions: Question[] = [];
+
+    try {
+      // Load questions from all selected sets and modules, grouped by set
+      const questionsBySet: Question[][] = [];
+
+      for (const set of selections.sets) {
+        const setQuestions = await loadQuestions(set.bankType, subjectCode, set.bankName);
+
+        // If modules array is empty, it means select all questions from this set
+        // Otherwise, filter by selected modules
+        const filteredQuestions = set.modules.length === 0
+          ? setQuestions
+          : setQuestions.filter(q =>
+            set.modules.includes(q.module || '')
+          );
+
+        if (filteredQuestions.length > 0) {
+          questionsBySet.push(filteredQuestions);
+        }
+      }
+
+      if (questionsBySet.length === 0) {
+        alert('No questions found. Please check your selection.');
+        setLoading(false);
+        return;
+      }
+
+      // Apply random ordering if enabled
+      if (selections.randomOrder) {
+        const shuffledSets = shuffleArray(questionsBySet);
+        const randomizedSets = shuffledSets.map(setQuestions => shuffleArray(setQuestions));
+        allQuestions = randomizedSets.flat();
+      } else {
+        allQuestions = questionsBySet.flat();
+      }
+
+      const uniqueModules = Array.from(new Set(allQuestions.map(q => q.module).filter(Boolean))) as (string | number)[];
+      setAvailableModules(uniqueModules.sort());
+      setAllQuestions(allQuestions);
+      setSelectedModule('all');
+
+      // Auto-fill all correct answers for revision mode
+      const autoAnsweredQuestions = allQuestions.map(q => q.correctAnswer);
+      setMasterAnsweredQuestions(autoAnsweredQuestions);
+
+      setQuizState((prev) => ({
+        ...prev,
+        currentQuestionIndex: 0,
+        score: allQuestions.length, // All answers are correct
+        totalQuestions: allQuestions.length,
+        selectedAnswer: null,
+        showResult: false,
+        questions: allQuestions,
+        incorrectAnswers: [], // No incorrect answers in revise mode
+        answeredQuestions: autoAnsweredQuestions,
+      }));
+
+      // Immediately show completed quiz for revision
+      setQuizCompleted(true);
+      setReviseMode(true);
     } catch (error) {
       console.error('Error loading questions:', error);
       alert('Failed to load questions. Please try again.');
@@ -368,6 +444,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     setQuizCompleted(false);
     setShowAllQuestions(false);
     setHideWrongOptions(false);
+    setReviseMode(false);
   };
 
   const confirmGoToMainMenu = () => {
@@ -512,32 +589,39 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
               <UnifiedQuizSelector
                 subjectCode={subjectCode}
                 onStartQuiz={startQuiz}
+                onStartRevise={startRevise}
               />
             </div>
           )}
 
           {!loading && quizCompleted && (
             <div className="bg-gray-800 border border-gray-700 p-4 sm:p-6 mb-8">
-              <h2 className="text-xl sm:text-2xl font-bold mb-4 text-white">
-                Quiz Completed!
-              </h2>
-              <QuizStats
-                score={quizState.score}
-                totalQuestions={quizState.totalQuestions}
-                answeredQuestions={quizState.answeredQuestions}
-                size="large"
-              />
+              {!reviseMode && (
+                <>
+                  <h2 className="text-xl sm:text-2xl font-bold mb-4 text-white">
+                    Quiz Completed!
+                  </h2>
+                  <QuizStats
+                    score={quizState.score}
+                    totalQuestions={quizState.totalQuestions}
+                    answeredQuestions={quizState.answeredQuestions}
+                    size="large"
+                  />
+                </>
+              )}
 
               <div className="mt-6 mb-4 flex flex-wrap justify-end gap-3">
-                <button
-                  onClick={() => setShowAllQuestions(!showAllQuestions)}
-                  className={`px-4 py-2 border font-semibold transition duration-200 ${showAllQuestions
-                    ? 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
-                    : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
-                    }`}
-                >
-                  {showAllQuestions ? 'All Questions' : 'Incorrect Questions'}
-                </button>
+                {!reviseMode && (
+                  <button
+                    onClick={() => setShowAllQuestions(!showAllQuestions)}
+                    className={`px-4 py-2 border font-semibold transition duration-200 ${showAllQuestions
+                      ? 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
+                      : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
+                      }`}
+                  >
+                    {showAllQuestions ? 'All Questions' : 'Incorrect Questions'}
+                  </button>
+                )}
                 <button
                   onClick={() => setHideWrongOptions(!hideWrongOptions)}
                   className={`px-4 py-2 border font-semibold transition duration-200 ${hideWrongOptions
@@ -549,7 +633,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                 </button>
               </div>
 
-              {showAllQuestions ? (
+              {(showAllQuestions || reviseMode) ? (
                 <div className="mt-8">
                   <h3 className="text-lg sm:text-xl font-bold mb-4 text-white">
                     All Questions:
@@ -569,23 +653,24 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                           : 'bg-red-900/30 border-red-800'
                           }`}
                       >
-                        {/* Module and Source Metadata Box */}
-                        {(q.module || q.source) && (
-                          <div className="mb-3 inline-block">
-                            <div className="flex gap-2 text-xs">
-                              {q.module && (
-                                <span className="px-2 py-1 bg-indigo-900/50 border border-indigo-700 text-indigo-300 font-medium">
-                                  Mod {q.module}
-                                </span>
-                              )}
-                              {q.source && (
-                                <span className="px-2 py-1 bg-purple-900/50 border border-purple-700 text-purple-300 font-medium">
-                                  {q.source}
-                                </span>
-                              )}
-                            </div>
+                        {/* Question Number, Module, and Source Metadata */}
+                        <div className="mb-3 flex items-center justify-between">
+                          <span className="px-2 py-0.5 bg-gray-700/50 border border-gray-600 text-gray-300 font-medium text-xs">
+                            Q{index + 1}
+                          </span>
+                          <div className="flex gap-2 text-xs">
+                            {q.module && (
+                              <span className="px-2 py-1 bg-indigo-900/50 border border-indigo-700 text-indigo-300 font-medium">
+                                Mod {q.module}
+                              </span>
+                            )}
+                            {q.source && (
+                              <span className="px-2 py-1 bg-purple-900/50 border border-purple-700 text-purple-300 font-medium">
+                                {q.source}
+                              </span>
+                            )}
                           </div>
-                        )}
+                        </div>
                         {/* Question Text */}
                         <div className="text-white mb-2 text-sm sm:text-base prose prose-invert prose-indigo max-w-none">
                           <ReactMarkdown
@@ -662,23 +747,24 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                         key={index}
                         className="mb-4 p-4 bg-red-900/30 border border-red-800"
                       >
-                        {/* Module and Source Metadata Box */}
-                        {(q.module || q.source) && (
-                          <div className="mb-3 inline-block">
-                            <div className="flex gap-2 text-xs">
-                              {q.module && (
-                                <span className="px-2 py-1 bg-indigo-900/50 border border-indigo-700 text-indigo-300 font-medium">
-                                  Mod {q.module}
-                                </span>
-                              )}
-                              {q.source && (
-                                <span className="px-2 py-1 bg-purple-900/50 border border-purple-700 text-purple-300 font-medium">
-                                  {q.source}
-                                </span>
-                              )}
-                            </div>
+                        {/* Question Number, Module, and Source Metadata */}
+                        <div className="mb-3 flex items-center justify-between">
+                          <span className="px-2 py-0.5 bg-gray-700/50 border border-gray-600 text-gray-300 font-medium text-xs">
+                            Q{quizState.questions.indexOf(q) + 1}
+                          </span>
+                          <div className="flex gap-2 text-xs">
+                            {q.module && (
+                              <span className="px-2 py-1 bg-indigo-900/50 border border-indigo-700 text-indigo-300 font-medium">
+                                Mod {q.module}
+                              </span>
+                            )}
+                            {q.source && (
+                              <span className="px-2 py-1 bg-purple-900/50 border border-purple-700 text-purple-300 font-medium">
+                                {q.source}
+                              </span>
+                            )}
                           </div>
-                        )}
+                        </div>
                         {/* Question Text */}
                         <div className="text-white mb-2 text-sm sm:text-base prose prose-invert prose-indigo max-w-none">
                           <ReactMarkdown
