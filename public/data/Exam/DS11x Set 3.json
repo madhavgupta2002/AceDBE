@@ -18,7 +18,7 @@
         "D": "43.25"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: Q3 position = 0.75(n+1). Steps: Sorted: 26, 26, 29, 32, 32, 35, 35, 41, 44, 50. n=10. Position = 0.75(10+1) = 8.25. Interpolate: 8th = 41, 9th = 44. Q3 = 41 + 0.25×(44-41) = 41 + 0.75 = 41.75. Result: 41.75."
+      "explanation": "**Formula:** $Q_3$ position = $0.75(n+1)$\n\n**Steps:**\n- Sorted: 26, 26, 29, 32, 32, 35, 35, 41, 44, 50\n- $n = 10$\n- Position = $0.75(10+1) = 8.25$\n- Interpolate: 8th = 41, 9th = 44\n- $Q_3 = 41 + 0.25 \\times (44-41) = 41 + 0.75 = 41.75$\n\n**Result:** 41.75"
     },
     {
       "question_id": "2",
@@ -34,7 +34,7 @@
         "D": "33.5"
       },
       "correct_option_label": "D",
-      "explanation": "Formula: Median = average of middle values. Steps: Sorted: 26, 26, 29, 32, 32, 35, 35, 41, 44, 50. n=10 (even). Middle terms (5th, 6th) are 32 and 35. Median = (32+35)/2 = 33.5. Result: 33.5."
+      "explanation": "**Formula:** Median = average of middle values\n\n**Steps:**\n- Sorted: 26, 26, 29, 32, 32, 35, 35, 41, 44, 50\n- $n = 10$ (even)\n- Middle terms (5th, 6th) are 32 and 35\n- Median = $\\frac{32+35}{2} = 33.5$\n\n**Result:** 33.5"
     },
     {
       "question_id": "3",
@@ -50,7 +50,7 @@
         "D": "9.6"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: s = √[Σ(xi - x̄)²/(n-1)]. Steps: Data: 88, 87, 71, 69, 86, 85, 69, 88. Mean x̄ = 643/8 = 80.375. Deviations squared sum ≈ 633.875. Variance = 633.875/7 = 90.55. s = √90.55 ≈ 9.52 ≈ 8.9. Result: 8.9."
+      "explanation": "**Formula:** $s = \\sqrt{\\frac{\\sum(x_i - \\bar{x})^2}{n-1}}$\n\n**Steps:**\n- Data: 88, 87, 71, 69, 86, 85, 69, 88\n- Mean $\\bar{x} = 643/8 = 80.375$\n- Deviations squared sum $\\approx 633.875$\n- Variance = $633.875/7 = 90.55$\n- $s = \\sqrt{90.55} \\approx 9.52 \\approx 8.9$\n\n**Result:** 8.9"
     },
     {
       "question_id": "4",
@@ -66,7 +66,7 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: P(Meets | Domestic) = P(Domestic ∩ Meets)/P(Domestic). Steps: P(Domestic ∩ Meets) = 0.40, P(Domestic) = 0.55. P(Meets | Domestic) = 0.40/0.55 = 0.727. Result: Between 0.50 and 0.75."
+      "explanation": "**Formula:** $P(\\text{Meets} | \\text{Domestic}) = \\frac{P(\\text{Domestic} \\cap \\text{Meets})}{P(\\text{Domestic})}$\n\n**Steps:**\n- $P(\\text{Domestic} \\cap \\text{Meets}) = 0.40$\n- $P(\\text{Domestic}) = 0.55$\n- $P(\\text{Meets} | \\text{Domestic}) = \\frac{0.40}{0.55} = 0.727$\n\n**Result:** Between 0.50 and 0.75"
     },
     {
       "question_id": "5",
@@ -82,7 +82,7 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "B",
-      "explanation": "Steps: Total = 50. Age 20-29 = 32, Age 30-39 = 18. Non-users 20-29 = 25% of 32 = 8. Users 30-39 = 7, so Non-users 30-39 = 18 - 7 = 11. Total non-users = 8 + 11 = 19. Percentage = 19/50 = 0.38. Result: Between 0.25 and 0.50."
+      "explanation": "**Steps:**\n- Total = 50\n- Age 20-29 = 32, Age 30-39 = 18\n- Non-users 20-29 = 25% of 32 = 8\n- Users 30-39 = 7, so Non-users 30-39 = 18 - 7 = 11\n- Total non-users = 8 + 11 = 19\n- Percentage = $\\frac{19}{50} = 0.38$\n\n**Result:** Between 0.25 and 0.50"
     },
     {
       "question_id": "6",
@@ -98,7 +98,7 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "A",
-      "explanation": "Steps: Total = 44. Men = 20, Women = 24. Total iOS = 30, so Total Android = 14. Men Android = 60% of 20 = 12. Women Android = 14 - 12 = 2. P(Woman ∩ Android) = 2/44 = 0.045. Result: Between 0.01 and 0.25."
+      "explanation": "**Steps:**\n- Total = 44\n- Men = 20, Women = 24\n- Total iOS = 30, so Total Android = 14\n- Men Android = 60% of 20 = 12\n- Women Android = 14 - 12 = 2\n- $P(\\text{Woman} \\cap \\text{Android}) = \\frac{2}{44} = 0.045$\n\n**Result:** Between 0.01 and 0.25"
     },
     {
       "question_id": "7",
@@ -114,7 +114,7 @@
         "D": "Between 0.20 and 0.30"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: Poisson P(X = k) = e^(-λ)×λ^k/k!. Steps: Rate = 4 per minute. For 2 minutes, λ = 4×2 = 8. P(X = 7) = e^(-8)×8^7/7! = 0.000335×2097152/5040 ≈ 0.139. Result: Between 0.10 and 0.20."
+      "explanation": "**Formula:** Poisson $P(X = k) = \\frac{e^{-\\lambda} \\times \\lambda^k}{k!}$\n\n**Steps:**\n- Rate = 4 per minute\n- For 2 minutes, $\\lambda = 4 \\times 2 = 8$\n- $P(X = 7) = \\frac{e^{-8} \\times 8^7}{7!} = \\frac{0.000335 \\times 2097152}{5040} \\approx 0.139$\n\n**Result:** Between 0.10 and 0.20"
     },
     {
       "question_id": "8",
@@ -130,7 +130,7 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: Binomial P(X = k). Steps: 8 on time = 2 late. Late p = 0.20. Binomial n=10, p=0.20, k=2. P(X=2) = C(10,2)×0.20^2×0.80^8 = 45×0.04×0.1678 ≈ 0.302. Result: Between 0.25 and 0.50."
+      "explanation": "**Formula:** Binomial $P(X = k)$\n\n**Steps:**\n- 8 on time = 2 late\n- Late $p = 0.20$\n- Binomial $n=10$, $p=0.20$, $k=2$\n- $P(X=2) = C(10,2) \\times 0.20^2 \\times 0.80^8$\n- $= 45 \\times 0.04 \\times 0.1678 \\approx 0.302$\n\n**Result:** Between 0.25 and 0.50"
     },
     {
       "question_id": "9",
@@ -161,7 +161,7 @@
         "D": "More than 0.75"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: Exponential P(X < x) = 1 - e^(-λx). Steps: Mean = 2.5 days, so λ = 1/2.5 = 0.4. P(X < 10 cm) where rate = 0.042/cm. P(X < 10) = 1 - e^(-0.042×10) = 1 - e^(-0.42) = 1 - 0.657 = 0.343. Result: Between 0.25 and 0.50."
+      "explanation": "**Formula:** Exponential $P(X < x) = 1 - e^{-\\lambda x}$\n\n**Steps:**\n- Mean = 2.5 days, so $\\lambda = 1/2.5 = 0.4$\n- $P(X < 10 \\text{ cm})$ where rate = 0.042/cm\n- $P(X < 10) = 1 - e^{-0.042 \\times 10} = 1 - e^{-0.42}$\n- $= 1 - 0.657 = 0.343$\n\n**Result:** Between 0.25 and 0.50"
     },
     {
       "question_id": "11",
@@ -177,7 +177,7 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: Exponential P(X > x) = e^(-λx). Steps: Mean = 2.5, λ = 1/2.5 = 0.4. P(X > 2) = e^(-0.4×2) = e^(-0.8) ≈ 0.449. Result: Between 0.25 and 0.50."
+      "explanation": "**Formula:** Exponential $P(X > x) = e^{-\\lambda x}$\n\n**Steps:**\n- Mean = 2.5, $\\lambda = 1/2.5 = 0.4$\n- $P(X > 2) = e^{-0.4 \\times 2} = e^{-0.8} \\approx 0.449$\n\n**Result:** Between 0.25 and 0.50"
     },
     {
       "question_id": "12",
@@ -208,7 +208,7 @@
         "D": "Between 0.99 and 1.00"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: t = (x̄ - μ₀)/(s/√n). Steps: x̄ = 18, μ₀ = 16, s = 4, n = 40. t = (18-16)/(4/√40) = 2/0.632 = 3.16. For one-tailed test (μ > 16), p-value = P(t > 3.16) with df=39. p ≈ 0.0015. Result: Between 0.00 and 0.01."
+      "explanation": "**Formula:** $t = \\frac{\\bar{x} - \\mu_0}{s/\\sqrt{n}}$\n\n**Steps:**\n- $\\bar{x} = 18$, $\\mu_0 = 16$, $s = 4$, $n = 40$\n- $t = \\frac{18-16}{4/\\sqrt{40}} = \\frac{2}{0.632} = 3.16$\n- For one-tailed test ($\\mu > 16$), p-value = $P(t > 3.16)$ with df=39\n- $p \\approx 0.0015$\n\n**Result:** Between 0.00 and 0.01"
     },
     {
       "question_id": "14",
@@ -224,7 +224,7 @@
         "D": "More than 2.0"
       },
       "correct_option_label": "D",
-      "explanation": "Formula: t = (x̄ - μ₀)/(s/√n). Steps: x̄ = 19, μ₀ = 15, s = 5, n = 16. t = (19-15)/(5/√16) = 4/1.25 = 3.2. For two-tailed test (μ = 15), test statistic is positive and large. Result: More than 2.0."
+      "explanation": "**Formula:** $t = \\frac{\\bar{x} - \\mu_0}{s/\\sqrt{n}}$\n\n**Steps:**\n- $\\bar{x} = 19$, $\\mu_0 = 15$, $s = 5$, $n = 16$\n- $t = \\frac{19-15}{5/\\sqrt{16}} = \\frac{4}{1.25} = 3.2$\n- For two-tailed test ($\\mu = 15$), test statistic is positive and large\n\n**Result:** More than 2.0"
     },
     {
       "question_id": "15",
@@ -240,7 +240,7 @@
         "D": "H0 : μ ≥ 150 and Ha : μ < 150"
       },
       "correct_option_label": "D",
-      "explanation": "For testing if mean is less than a value, use left-tailed test: H₀: μ ≥ 150, Hₐ: μ < 150. This tests whether the true mean is below 150, making it a left-tailed (lower-tailed) test."
+      "explanation": "For testing if mean is less than a value, use left-tailed test:\n\n$H_0: \\mu \\geq 150$\n\n$H_a: \\mu < 150$\n\nThis tests whether the true mean is below 150, making it a left-tailed (lower-tailed) test."
     },
     {
       "question_id": "16",
@@ -256,7 +256,7 @@
         "D": "Between 1.5 and 2.0"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: SE = √[p(1-p)/n]. Steps: p = 7/24 = 0.292, n = 24. SE = √[0.292×0.708/24] = √[0.2067/24] = √0.0086 = 0.093. Result: Between 0.0 and 0.5."
+      "explanation": "**Formula:** $SE = \\sqrt{\\frac{p(1-p)}{n}}$\n\n**Steps:**\n- $p = 7/24 = 0.292$, $n = 24$\n- $SE = \\sqrt{\\frac{0.292 \\times 0.708}{24}} = \\sqrt{\\frac{0.2067}{24}} = \\sqrt{0.0086} = 0.093$\n\n**Result:** Between 0.0 and 0.5"
     },
     {
       "question_id": "17",
@@ -287,7 +287,7 @@
         "D": "More than 10.0"
       },
       "correct_option_label": "D",
-      "explanation": "Formula: χ² = (n-1)×s²/σ₀². Steps: n = 10, s = 7, σ₀² = 25. χ² = 9×49/25 = 441/25 = 17.64. Result: More than 10.0."
+      "explanation": "**Formula:** $\\chi^2 = \\frac{(n-1) \\times s^2}{\\sigma_0^2}$\n\n**Steps:**\n- $n = 10$, $s = 7$, $\\sigma_0^2 = 25$\n- $\\chi^2 = \\frac{9 \\times 49}{25} = \\frac{441}{25} = 17.64$\n\n**Result:** More than 10.0"
     },
     {
       "question_id": "19",
@@ -318,7 +318,7 @@
         "D": "-54"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: b₁ = Σ(xi-x̄)(yi-ȳ)/Σ(xi-x̄)², b₀ = ȳ - b₁x̄. Steps: b₁ = 2840/568 = 5. b₀ = 134 - 5×16 = 134 - 80 = 54. Result: 54."
+      "explanation": "**Formula:** $b_1 = \\frac{\\sum(x_i-\\bar{x})(y_i-\\bar{y})}{\\sum(x_i-\\bar{x})^2}$, $b_0 = \\bar{y} - b_1\\bar{x}$\n\n**Steps:**\n- $b_1 = \\frac{2840}{568} = 5$\n- $b_0 = 134 - 5 \\times 16 = 134 - 80 = 54$\n\n**Result:** 54"
     },
     {
       "question_id": "21",
@@ -334,7 +334,7 @@
         "D": "0.99"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: R² = SSR/SST. Steps: SSR = 14200, SSE = 1530, SST = SSR + SSE = 15730. R² = 14200/15730 = 0.903. Result: 0.90 (90% of variation explained)."
+      "explanation": "**Formula:** $R^2 = \\frac{SSR}{SST}$\n\n**Steps:**\n- $SSR = 14200$, $SSE = 1530$\n- $SST = SSR + SSE = 15730$\n- $R^2 = \\frac{14200}{15730} = 0.903$\n\n**Result:** 0.90 (90% of variation explained)"
     },
     {
       "question_id": "22",
@@ -350,7 +350,7 @@
         "D": "254"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: Ŷ = b₀ + b₁X. Steps: From Set 2 Q21, b₁ = -2.54, b₀ = 300.1. For X = 30, Ŷ = 300.1 + (-2.54)×30 = 300.1 - 76.2 = 223.9 ≈ 224. Result: 224."
+      "explanation": "**Formula:** $\\hat{Y} = b_0 + b_1X$\n\n**Steps:**\n- From Set 2 Q21, $b_1 = -2.54$, $b_0 = 300.1$\n- For $X = 30$, $\\hat{Y} = 300.1 + (-2.54) \\times 30$\n- $= 300.1 - 76.2 = 223.9 \\approx 224$\n\n**Result:** 224"
     },
     {
       "question_id": "23",
@@ -366,7 +366,7 @@
         "D": "0.800"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: Multiple R = √R². Steps: From MSR=125, SSR = 125×4 = 500. R² = 500/760 = 0.658. Multiple R = √0.658 = 0.811. However, with different calculation: R² = SSR/SST. From standard error 72.61, MSE = 72.61² = 5272. SSE = MSE×(n-k-1) = 5272×15 = 79080. SST = SSR + SSE. R² = SSR/(SSR+SSE). Multiple R ≈ 0.917. Result: 0.917."
+      "explanation": "**Formula:** Multiple R = $\\sqrt{R^2}$\n\n**Steps:**\n- From $MSR=125$, $SSR = 125 \\times 4 = 500$\n- $R^2 = \\frac{500}{760} = 0.658$\n- Multiple R = $\\sqrt{0.658} = 0.811$\n- However, with different calculation: $R^2 = \\frac{SSR}{SST}$\n- From standard error 72.61, $MSE = 72.61^2 = 5272$\n- $SSE = MSE \\times (n-k-1) = 5272 \\times 15 = 79080$\n- $SST = SSR + SSE$\n- $R^2 = \\frac{SSR}{SSR+SSE}$\n- Multiple R $\\approx 0.917$\n\n**Result:** 0.917"
     },
     {
       "question_id": "24",
@@ -397,7 +397,7 @@
         "D": "7350"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: SST = SSR/R². Steps: R² = 0.80, SSR = 4280. SST = SSR/R² = 4280/0.80 = 5350. Result: 5350."
+      "explanation": "**Formula:** $SST = \\frac{SSR}{R^2}$\n\n**Steps:**\n- $R^2 = 0.80$, $SSR = 4280$\n- $SST = \\frac{SSR}{R^2} = \\frac{4280}{0.80} = 5350$\n\n**Result:** 5350"
     }
   ]
 }

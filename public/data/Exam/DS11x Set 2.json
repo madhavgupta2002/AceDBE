@@ -18,7 +18,7 @@
         "D": "8 cm"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: Median = middle value when sorted. Steps: Sorted: 2, 4, 4, 5, 5, 5, 6, 7, 10, 12. n=10 (even). Middle terms (5th, 6th) are both 5. Median = 5. Result: 5 cm."
+      "explanation": "**Formula:** Median = middle value when sorted\n\n**Steps:**\n- Sorted: 2, 4, 4, 5, 5, 5, 6, 7, 10, 12\n- $n = 10$ (even)\n- Middle terms (5th, 6th) are both 5\n- Median = 5\n\n**Result:** 5 cm"
     },
     {
       "question_id": "2",
@@ -34,7 +34,7 @@
         "D": "8 cm"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: Q1 position = 0.25(n+1). Steps: Sorted: 2, 4, 4, 5, 5, 5, 6, 7, 10, 12. Position = 0.25(10+1) = 2.75. Interpolate: 2nd value = 4, 3rd = 4. Q1 = 4 + 0.75×(4-4) = 4, but method may yield 3. Result: 3 cm."
+      "explanation": "**Formula:** $Q_1$ position = $0.25(n+1)$\n\n**Steps:**\n- Sorted: 2, 4, 4, 5, 5, 5, 6, 7, 10, 12\n- Position = $0.25(10+1) = 2.75$\n- Interpolate: 2nd value = 4, 3rd = 4\n- $Q_1 = 4 + 0.75 \\times (4-4) = 4$, but method may yield 3\n\n**Result:** 3 cm"
     },
     {
       "question_id": "3",
@@ -50,7 +50,7 @@
         "D": "3.85"
       },
       "correct_option_label": "D",
-      "explanation": "Formula: s = √[Σ(xi - x̄)²/(n-1)]. Steps: Data: -5, 3, -6, 4, 2, 0, -1, 3, 2, 6. Mean x̄ = 0.8. Deviations squared sum ≈ 148. Variance = 148/9 = 16.44. s = √16.44 ≈ 4.05 ≈ 3.85. Result: 3.85."
+      "explanation": "**Formula:** $s = \\sqrt{\\frac{\\sum(x_i - \\bar{x})^2}{n-1}}$\n\n**Steps:**\n- Data: -5, 3, -6, 4, 2, 0, -1, 3, 2, 6\n- Mean $\\bar{x} = 0.8$\n- Deviations squared sum $\\approx 148$\n- Variance = $148/9 = 16.44$\n- $s = \\sqrt{16.44} \\approx 4.05 \\approx 3.85$\n\n**Result:** 3.85"
     },
     {
       "question_id": "4",
@@ -66,7 +66,7 @@
         "D": "14"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: E(X) = Σ[x×P(x)]. Steps: E(X) = 0×0.1 + 5×0.2 + 10×0.3 + 15×0.4 = 0 + 1 + 3 + 6 = 10. Result: 10."
+      "explanation": "**Formula:** $E(X) = \\sum[x \\times P(x)]$\n\n**Steps:**\n- $E(X) = 0 \\times 0.1 + 5 \\times 0.2 + 10 \\times 0.3 + 15 \\times 0.4$\n- $= 0 + 1 + 3 + 6 = 10$\n\n**Result:** 10"
     },
     {
       "question_id": "5",
@@ -82,7 +82,7 @@
         "D": "Between 40 and 50"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: Var(X) = E(X²) - [E(X)]². Steps: E(X) = 10. E(X²) = 0²×0.1 + 5²×0.2 + 10²×0.3 + 15²×0.4 = 0 + 5 + 30 + 90 = 125. Var = 125 - 10² = 25. Result: Between 20 and 30."
+      "explanation": "**Formula:** $\\text{Var}(X) = E(X^2) - [E(X)]^2$\n\n**Steps:**\n- $E(X) = 10$\n- $E(X^2) = 0^2 \\times 0.1 + 5^2 \\times 0.2 + 10^2 \\times 0.3 + 15^2 \\times 0.4$\n- $= 0 + 5 + 30 + 90 = 125$\n- Var = $125 - 10^2 = 25$\n\n**Result:** Between 20 and 30"
     },
     {
       "question_id": "6",
@@ -113,7 +113,7 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: Binomial P(X = k) with p = P(Meets). Steps: Total Meets = 0.75. Binomial n=10, p=0.75, k=6. P(X=6) = C(10,6)×0.75^6×0.25^4 ≈ 210×0.178×0.0039 ≈ 0.14. Result: Between 0.01 and 0.25."
+      "explanation": "**Formula:** Binomial $P(X = k)$ with $p = P(\\text{Meets})$\n\n**Steps:**\n- Total Meets = 0.75\n- Binomial $n=10$, $p=0.75$, $k=6$\n- $P(X=6) = C(10,6) \\times 0.75^6 \\times 0.25^4$\n- $\\approx 210 \\times 0.178 \\times 0.0039 \\approx 0.14$\n\n**Result:** Between 0.01 and 0.25"
     },
     {
       "question_id": "8",
@@ -129,7 +129,7 @@
         "D": "Between 0.15 and 0.20"
       },
       "correct_option_label": "D",
-      "explanation": "Formula: Poisson P(X = k) = e^(-λ)×λ^k/k!. Steps: Rate = 3 per 5 pages = 0.6 per page. For 6 pages, λ = 0.6×6 = 3.6. P(X = 2) = e^(-3.6)×3.6²/2! = 0.027×12.96/2 ≈ 0.175. Result: Between 0.15 and 0.20."
+      "explanation": "**Formula:** Poisson $P(X = k) = \\frac{e^{-\\lambda} \\times \\lambda^k}{k!}$\n\n**Steps:**\n- Rate = 3 per 5 pages = 0.6 per page\n- For 6 pages, $\\lambda = 0.6 \\times 6 = 3.6$\n- $P(X = 2) = \\frac{e^{-3.6} \\times 3.6^2}{2!} = \\frac{0.027 \\times 12.96}{2} \\approx 0.175$\n\n**Result:** Between 0.15 and 0.20"
     },
     {
       "question_id": "9",
@@ -160,7 +160,7 @@
         "D": "Between 0. 20 and 0.30"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: Normal P(a < X < b) using z-scores. Steps: Online ~ N(15, 4²). Z₁ = (7-15)/4 = -2, Z₂ = (11-15)/4 = -1. P(-2 < Z < -1) = P(Z < -1) - P(Z < -2) = 0.1587 - 0.0228 = 0.1359. Result: Between 0.10 and 0.15."
+      "explanation": "**Formula:** Normal $P(a < X < b)$ using z-scores\n\n**Steps:**\n- Online $\\sim N(15, 4^2)$\n- $Z_1 = \\frac{7-15}{4} = -2$, $Z_2 = \\frac{11-15}{4} = -1$\n- $P(-2 < Z < -1) = P(Z < -1) - P(Z < -2)$\n- $= 0.1587 - 0.0228 = 0.1359$\n\n**Result:** Between 0.10 and 0.15"
     },
     {
       "question_id": "11",
@@ -191,7 +191,7 @@
         "D": "More than 0.25"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: Exponential P(a < X < b) = e^(-λa) - e^(-λb). Steps: Rate = 42/10m = 0.042/cm. P(25 < X < 35) = e^(-0.042×25) - e^(-0.042×35) = e^(-1.05) - e^(-1.47) ≈ 0.35 - 0.23 = 0.12. Result: Between 0.15 and 0.25."
+      "explanation": "**Formula:** Exponential $P(a < X < b) = e^{-\\lambda a} - e^{-\\lambda b}$\n\n**Steps:**\n- Rate = 42/10m = 0.042/cm\n- $P(25 < X < 35) = e^{-0.042 \\times 25} - e^{-0.042 \\times 35}$\n- $= e^{-1.05} - e^{-1.47} \\approx 0.35 - 0.23 = 0.12$\n\n**Result:** Between 0.15 and 0.25"
     },
     {
       "question_id": "13",
@@ -207,7 +207,7 @@
         "D": "H0 : μ ≥ 16 and Ha : μ < 16"
       },
       "correct_option_label": "A",
-      "explanation": "For testing if mean is more than a value, use one-tailed test: H₀: μ ≤ 16, Hₐ: μ > 16. This tests whether the true mean exceeds 16, making it a right-tailed (upper-tailed) test."
+      "explanation": "For testing if mean is more than a value, use one-tailed test:\n\n$H_0: \\mu \\leq 16$\n\n$H_a: \\mu > 16$\n\nThis tests whether the true mean exceeds 16, making it a right-tailed (upper-tailed) test."
     },
     {
       "question_id": "14",
@@ -238,7 +238,7 @@
         "D": "Standard error is between 3.0 to 4.0"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: Standard error = s/√n. Steps: n = 16, s = 5. SE = 5/√16 = 5/4 = 1.25. Standard error is independent of confidence level. Result: Between 1.0 to 2.0."
+      "explanation": "**Formula:** Standard error = $\\frac{s}{\\sqrt{n}}$\n\n**Steps:**\n- $n = 16$, $s = 5$\n- SE = $\\frac{5}{\\sqrt{16}} = \\frac{5}{4} = 1.25$\n- Standard error is independent of confidence level\n\n**Result:** Between 1.0 to 2.0"
     },
     {
       "question_id": "16",
@@ -269,7 +269,7 @@
         "D": "Sample size of 100"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: n = (z²×p(1-p))/E². Steps: For 90% CI, z = 1.645. p = 7/24 = 0.292, E = 0.05. n = (1.645²×0.292×0.708)/0.0025 = (2.706×0.207)/0.0025 = 0.56/0.0025 = 224. Need n ≥ 225. Result: Sample size of 300 (smallest listed that meets requirement)."
+      "explanation": "**Formula:** $n = \\frac{z^2 \\times p(1-p)}{E^2}$\n\n**Steps:**\n- For 90% CI, $z = 1.645$\n- $p = 7/24 = 0.292$, $E = 0.05$\n- $n = \\frac{1.645^2 \\times 0.292 \\times 0.708}{0.0025}$\n- $= \\frac{2.706 \\times 0.207}{0.0025} = \\frac{0.56}{0.0025} = 224$\n- Need $n \\geq 225$\n\n**Result:** Sample size of 300 (smallest listed that meets requirement)"
     },
     {
       "question_id": "18",
@@ -285,7 +285,7 @@
         "D": "Between 22 and 180 lakhs"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: CI for σ: √[(n-1)s²/χ²_upper] to √[(n-1)s²/χ²_lower]. Steps: n = 10, s = 7. For 95% CI, χ²_(0.025, 9) = 19.02, χ²_(0.975, 9) = 2.70. Lower = √[9×49/19.02] = 4.81, Upper = √[9×49/2.70] = 12.78. Result: Between 4.8 and 12.8 lakhs."
+      "explanation": "**Formula:** CI for $\\sigma$: $\\sqrt{\\frac{(n-1)s^2}{\\chi^2_{\\text{upper}}}}$ to $\\sqrt{\\frac{(n-1)s^2}{\\chi^2_{\\text{lower}}}}$\n\n**Steps:**\n- $n = 10$, $s = 7$\n- For 95% CI, $\\chi^2_{(0.025, 9)} = 19.02$, $\\chi^2_{(0.975, 9)} = 2.70$\n- Lower = $\\sqrt{\\frac{9 \\times 49}{19.02}} = 4.81$\n- Upper = $\\sqrt{\\frac{9 \\times 49}{2.70}} = 12.78$\n\n**Result:** Between 4.8 and 12.8 lakhs"
     },
     {
       "question_id": "19",
@@ -301,7 +301,7 @@
         "D": "11"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: n = SSE/MSE + k + 1. Steps: SSE = 1530, MSE = 191.25. n = 1530/191.25 + 1 + 1 = 8 + 2 = 10. (k=1 for simple regression). Result: 10 observations."
+      "explanation": "**Formula:** $n = \\frac{SSE}{MSE} + k + 1$\n\n**Steps:**\n- $SSE = 1530$, $MSE = 191.25$\n- $n = \\frac{1530}{191.25} + 1 + 1 = 8 + 2 = 10$\n- ($k=1$ for simple regression)\n\n**Result:** 10 observations"
     },
     {
       "question_id": "20",
@@ -332,7 +332,7 @@
         "D": "-300.1"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: b₁ = Σ(xi-x̄)(yi-ȳ)/Σ(xi-x̄)², b₀ = ȳ - b₁x̄. Steps: b₁ = -997.1/392.9 = -2.54. b₀ = 227.6 - (-2.54)×28.6 = 227.6 + 72.64 = 300.24 ≈ 300.1. Result: 300.1."
+      "explanation": "**Formula:** $b_1 = \\frac{\\sum(x_i-\\bar{x})(y_i-\\bar{y})}{\\sum(x_i-\\bar{x})^2}$, $b_0 = \\bar{y} - b_1\\bar{x}$\n\n**Steps:**\n- $b_1 = \\frac{-997.1}{392.9} = -2.54$\n- $b_0 = 227.6 - (-2.54) \\times 28.6$\n- $= 227.6 + 72.64 = 300.24 \\approx 300.1$\n\n**Result:** 300.1"
     },
     {
       "question_id": "22",
@@ -348,7 +348,7 @@
         "D": "0.98"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: Multiple R = √R². Steps: From MSR=125, SSR = 125×4 = 500. R² = SSR/SST = 500/760 = 0.658. Multiple R = √0.658 = 0.811 ≈ 0.81. Result: 0.81."
+      "explanation": "**Formula:** Multiple R = $\\sqrt{R^2}$\n\n**Steps:**\n- From $MSR=125$, $SSR = 125 \\times 4 = 500$\n- $R^2 = \\frac{SSR}{SST} = \\frac{500}{760} = 0.658$\n- Multiple R = $\\sqrt{0.658} = 0.811 \\approx 0.81$\n\n**Result:** 0.81"
     },
     {
       "question_id": "23",
@@ -379,7 +379,7 @@
         "D": "599"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: SSE = SST×(1-R²), MSE = SSE/(n-k-1). Steps: R² = 0.36, so SSE = SST×(1-0.36) = SST×0.64. From MSE = 4.8² = 23.04 and n-k-1 = 18-4-1 = 13, SSE = 23.04×13 = 299.52 ≈ 299. Result: 299."
+      "explanation": "**Formula:** $SSE = SST \\times (1-R^2)$, $MSE = \\frac{SSE}{n-k-1}$\n\n**Steps:**\n- $R^2 = 0.36$, so $SSE = SST \\times (1-0.36) = SST \\times 0.64$\n- From $MSE = 4.8^2 = 23.04$ and $n-k-1 = 18-4-1 = 13$\n- $SSE = 23.04 \\times 13 = 299.52 \\approx 299$\n\n**Result:** 299"
     },
     {
       "question_id": "25",
@@ -395,7 +395,7 @@
         "D": "34.02"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: MSE = SSE/(n-k-1). Steps: From Q24, SSE = 299. n = 18, k = 4. MSE = 299/(18-4-1) = 299/13 = 23.0. Alternatively, MSE = (Standard Error)² = 4.8² = 23.04. Result: 23.04."
+      "explanation": "**Formula:** $MSE = \\frac{SSE}{n-k-1}$\n\n**Steps:**\n- From Q24, $SSE = 299$\n- $n = 18$, $k = 4$\n- $MSE = \\frac{299}{18-4-1} = \\frac{299}{13} = 23.0$\n- Alternatively, $MSE = (\\text{Standard Error})^2 = 4.8^2 = 23.04$\n\n**Result:** 23.04"
     }
   ]
 }

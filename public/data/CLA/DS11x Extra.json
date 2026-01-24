@@ -112,7 +112,7 @@
         "D": "Mean, Median, Standard Deviation, Minimum, Maximum"
       },
       "correct_option_label": "B",
-      "explanation": "Five-Number Summary consists of: Minimum, Q1 (First Quartile), Median (Q2), Q3 (Third Quartile), and Maximum. This summary provides a complete picture of data distribution and is used in box plots."
+      "explanation": "Five-Number Summary consists of: Minimum, $Q_1$ (First Quartile), Median ($Q_2$), $Q_3$ (Third Quartile), and Maximum. This summary provides a complete picture of data distribution and is used in box plots."
     },
     {
       "question_id": "9",
@@ -138,7 +138,7 @@
         "B": "False"
       },
       "correct_option_label": "A",
-      "explanation": "Bernoulli random variable represents a single trial with exactly two outcomes: Success (Y=1) with probability p, and Failure (Y=0) with probability (1-p). It is the foundation for the Binomial distribution."
+      "explanation": "Bernoulli random variable represents a single trial with exactly two outcomes: Success ($Y=1$) with probability $p$, and Failure ($Y=0$) with probability $(1-p)$. It is the foundation for the Binomial distribution."
     },
     {
       "question_id": "11",
@@ -150,7 +150,7 @@
         "B": "False"
       },
       "correct_option_label": "A",
-      "explanation": "Binomial distribution requires a fixed number of trials (n). Each trial is independent with constant probability of success (p). The random variable counts the number of successes in these n fixed trials."
+      "explanation": "Binomial distribution requires a fixed number of trials ($n$). Each trial is independent with constant probability of success ($p$). The random variable counts the number of successes in these $n$ fixed trials."
     },
     {
       "question_id": "12",
@@ -162,7 +162,7 @@
         "B": "False"
       },
       "correct_option_label": "A",
-      "explanation": "Poisson distribution models the number of occurrences of an event in a fixed interval of time or space. It is characterized by parameter λ (lambda), which represents the average number of occurrences in that interval."
+      "explanation": "Poisson distribution models the number of occurrences of an event in a fixed interval of time or space. It is characterized by parameter $\\lambda$ (lambda), which represents the average number of occurrences in that interval."
     },
     {
       "question_id": "13",
@@ -174,7 +174,7 @@
         "B": "False"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: E(X) = n×p for Binomial. Steps: For Binomial distribution, mean μ = n×p where n is number of trials and p is probability of success per trial. This is a fundamental property of the Binomial distribution."
+      "explanation": "**Formula:** $E(X) = n \\times p$ for Binomial\n\n**Steps:**\n- For Binomial distribution, mean $\\mu = n \\times p$ where $n$ is number of trials and $p$ is probability of success per trial\n- This is a fundamental property of the Binomial distribution"
     },
     {
       "question_id": "14",
@@ -210,7 +210,7 @@
         "B": "False"
       },
       "correct_option_label": "B",
-      "explanation": "Binomial distribution requires constant probability of success (p) across all trials. If each trial has a different probability, it violates the Binomial assumptions and cannot be modeled as a Binomial distribution."
+      "explanation": "Binomial distribution requires constant probability of success ($p$) across all trials. If each trial has a different probability, it violates the Binomial assumptions and cannot be modeled as a Binomial distribution."
     },
     {
       "question_id": "17",
@@ -222,7 +222,7 @@
         "B": "False"
       },
       "correct_option_label": "A",
-      "explanation": "Bernoulli represents a single experiment with two outcomes: success (Y=1) or failure (Y=0). It is the simplest discrete distribution and forms the basis for Binomial (which is the sum of n independent Bernoulli trials)."
+      "explanation": "Bernoulli represents a single experiment with two outcomes: success ($Y=1$) or failure ($Y=0$). It is the simplest discrete distribution and forms the basis for Binomial (which is the sum of $n$ independent Bernoulli trials)."
     },
     {
       "question_id": "18",
@@ -236,7 +236,7 @@
         "D": "0.75"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: P(A ∪ B) = P(A) + P(B) for mutually exclusive events. Steps: For mutually exclusive events, P(A ∩ B) = 0. So P(A ∪ B) = 0.4 + 0.3 = 0.7. Result: 0.7."
+      "explanation": "Probability ranges from 0 (impossible event) to 1 (certain event), inclusive. This is a fundamental axiom of probability theory. A probability of 1 represents an event that is certain to occur."
     },
     {
       "question_id": "19",
@@ -250,7 +250,7 @@
         "D": "0"
       },
       "correct_option_label": "A",
-      "explanation": "Probability ranges from 0 (impossible event) to 1 (certain event), inclusive. This is a fundamental axiom of probability theory. A probability of 1 represents an event that is certain to occur."
+      "explanation": "**Formula:** $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$\n\nFor mutually exclusive events, $P(A \\cap B) = 0$\n\n**Steps:**\n- $P(A \\cup B) = 0.4 + 0.3 = 0.7$\n\n**Result:** 0.7"
     },
     {
       "question_id": "20",
@@ -264,7 +264,7 @@
         "D": "0.30"
       },
       "correct_option_label": "D",
-      "explanation": "Formula: Bayes' theorem P(A|B) = P(A∩B)/P(B). Steps: P(A|B) = P(A∩B)/P(B) = 0.18/0.60 = 0.30. Given that Movie B is a hit, the probability that Movie A is also a hit is 0.30. Result: 0.30."
+      "explanation": "**Formula:** Bayes' theorem $P(A|B) = \\frac{P(A \\cap B)}{P(B)}$\n\n**Steps:**\n- $P(A|B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{0.18}{0.60} = 0.30$\n- Given that Movie B is a hit, the probability that Movie A is also a hit is 0.30\n\n**Result:** 0.30"
     },
     {
       "question_id": "21",
@@ -278,7 +278,7 @@
         "D": "The sum of all probabilities is 2."
       },
       "correct_option_label": "C",
-      "explanation": "PMF f(x) gives probability for each outcome. For a fair die, P(1) = P(2) = ... = P(6) = 1/6. Sum of all probabilities = 6×(1/6) = 1. This is a fundamental requirement: Σf(x) = 1 for all possible outcomes."
+      "explanation": "PMF $f(x)$ gives probability for each outcome. For a fair die, $P(1) = P(2) = ... = P(6) = 1/6$. Sum of all probabilities = $6 \\times (1/6) = 1$. This is a fundamental requirement: $\\sum f(x) = 1$ for all possible outcomes."
     },
     {
       "question_id": "22",
@@ -306,7 +306,7 @@
         "D": "The probability of the random variable being in the middle of its distribution"
       },
       "correct_option_label": "B",
-      "explanation": "Tail probability P(X ≥ x) is the probability that the random variable is greater than or equal to a certain value. It represents the area under the probability distribution curve to the right of x (the upper tail)."
+      "explanation": "Tail probability $P(X \\geq x)$ is the probability that the random variable is greater than or equal to a certain value. It represents the area under the probability distribution curve to the right of $x$ (the upper tail)."
     },
     {
       "question_id": "24",
@@ -334,7 +334,7 @@
         "D": "3²×Var(X)+2²×Var(Y)"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: Var(aX + bY) = a²Var(X) + b²Var(Y) for independent X, Y. Steps: Var(3X - 2Y) = 3²Var(X) + (-2)²Var(Y) = 9×4 + 4×9 = 36 + 36 = 72. The formula is: 3²×Var(X) + (-2)²×Var(Y)."
+      "explanation": "**Formula:** $\\text{Var}(aX + bY) = a^2\\text{Var}(X) + b^2\\text{Var}(Y)$ for independent $X$, $Y$\n\n**Steps:**\n- $\\text{Var}(3X - 2Y) = 3^2\\text{Var}(X) + (-2)^2\\text{Var}(Y)$\n- $= 9 \\times 4 + 4 \\times 9 = 36 + 36 = 72$\n- The formula is: $3^2 \\times \\text{Var}(X) + (-2)^2 \\times \\text{Var}(Y)$"
     },
     {
       "question_id": "26",
@@ -346,7 +346,7 @@
         "B": "False"
       },
       "correct_option_label": "A",
-      "explanation": "Probability must satisfy 0 ≤ P(Event) ≤ 1. This is a fundamental axiom: probability of an impossible event is 0, probability of a certain event is 1, and all other probabilities lie between these bounds."
+      "explanation": "Probability must satisfy $0 \\leq P(\\text{Event}) \\leq 1$. This is a fundamental axiom: probability of an impossible event is 0, probability of a certain event is 1, and all other probabilities lie between these bounds."
     },
     {
       "question_id": "27",
@@ -358,7 +358,7 @@
         "B": "False"
       },
       "correct_option_label": "A",
-      "explanation": "PMF f(x) provides the probability that a discrete random variable takes a specific value x. It gives P(X = x) for each possible outcome, not cumulative probabilities (which is the CDF)."
+      "explanation": "PMF $f(x)$ provides the probability that a discrete random variable takes a specific value $x$. It gives $P(X = x)$ for each possible outcome, not cumulative probabilities (which is the CDF)."
     },
     {
       "question_id": "28",
@@ -394,7 +394,7 @@
         "B": "False"
       },
       "correct_option_label": "B",
-      "explanation": "PMF provides probabilities for specific values, not cumulative probabilities. The Cumulative Distribution Function (CDF) F(x) = P(X ≤ x) provides cumulative probabilities. PMF gives P(X = x) for each value."
+      "explanation": "PMF provides probabilities for specific values, not cumulative probabilities. The Cumulative Distribution Function (CDF) $F(x) = P(X \\leq x)$ provides cumulative probabilities. PMF gives $P(X = x)$ for each value."
     },
     {
       "question_id": "31",
@@ -420,7 +420,7 @@
         "D": "1"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: E(Y) = p for Bernoulli. Steps: For Bernoulli random variable, E(Y) = 1×p + 0×(1-p) = p. Given p = 0.3, E(Y) = 0.3. Result: 0.3."
+      "explanation": "**Formula:** $E(Y) = p$ for Bernoulli\n\n**Steps:**\n- For Bernoulli random variable, $E(Y) = 1 \\times p + 0 \\times (1-p) = p$\n- Given $p = 0.3$, $E(Y) = 0.3$\n\n**Result:** 0.3"
     },
     {
       "question_id": "33",
@@ -434,7 +434,7 @@
         "D": "The trials must be continuous, and the probability of success is not fixed."
       },
       "correct_option_label": "C",
-      "explanation": "Binomial distribution counts the number of successes in a fixed number of independent trials, each with the same probability of success. The random variable Y represents the count of successes in n trials."
+      "explanation": "Binomial distribution counts the number of successes in a fixed number of independent trials, each with the same probability of success. The random variable $Y$ represents the count of successes in $n$ trials."
     },
     {
       "question_id": "34",
@@ -448,7 +448,7 @@
         "D": "0.8"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: Binomial P(X ≥ k) = 1 - P(X ≤ k-1). Steps: n = 12, p = 0.2. P(X ≥ 6) = 1 - P(X ≤ 5). Using Binomial(n=12, p=0.2), P(X ≤ 5) ≈ 0.981. So P(X ≥ 6) ≈ 0.019. Result: 0.019."
+      "explanation": "**Formula:** Binomial $P(X \\geq k) = 1 - P(X \\leq k-1)$\n\n**Steps:**\n- $n = 12$, $p = 0.2$\n- $P(X \\geq 6) = 1 - P(X \\leq 5)$\n- Using Binomial($n=12$, $p=0.2$), $P(X \\leq 5) \\approx 0.981$\n- So $P(X \\geq 6) \\approx 0.019$\n\n**Result:** 0.019"
     },
     {
       "question_id": "35",
@@ -462,7 +462,7 @@
         "D": "The trials must be conducted in a random order."
       },
       "correct_option_label": "C",
-      "explanation": "Binomial experiment requires: (1) Fixed number of trials n, (2) Each trial has exactly two outcomes (success/failure), (3) Constant probability p, (4) Independent trials. The two-outcome requirement is essential."
+      "explanation": "Binomial experiment requires: (1) Fixed number of trials $n$, (2) Each trial has exactly two outcomes (success/failure), (3) Constant probability $p$, (4) Independent trials. The two-outcome requirement is essential."
     },
     {
       "question_id": "36",
@@ -515,7 +515,7 @@
         "D": "Modeling the total number of defective items in a batch."
       },
       "correct_option_label": "B",
-      "explanation": "Exponential distribution models the time between independent events occurring at constant rate λ. If events follow Poisson process (counts), the inter-arrival times follow Exponential. Examples: time between bus arrivals, time between customer arrivals."
+      "explanation": "Exponential distribution models the time between independent events occurring at constant rate $\\lambda$. If events follow Poisson process (counts), the inter-arrival times follow Exponential. Examples: time between bus arrivals, time between customer arrivals."
     },
     {
       "question_id": "40",
@@ -529,7 +529,7 @@
         "D": "The mean and variance of an Exponential Distribution are always equal."
       },
       "correct_option_label": "B",
-      "explanation": "Exponential distribution has the memoryless property: P(X > t+s | X > t) = P(X > s). The probability of future events does not depend on how much time has already elapsed. This property is unique to Exponential and Geometric distributions."
+      "explanation": "Exponential distribution has the memoryless property: $P(X > t+s | X > t) = P(X > s)$. The probability of future events does not depend on how much time has already elapsed. This property is unique to Exponential and Geometric distributions."
     },
     {
       "question_id": "41",
@@ -556,7 +556,7 @@
         "D": "The mean, median, and mode of a normal random variable are always different."
       },
       "correct_option_label": "B",
-      "explanation": "Normal distribution has a symmetric, bell-shaped PDF curve. It is characterized by two parameters: mean μ (center) and standard deviation σ (spread). The curve is symmetric around the mean, with tails extending to infinity."
+      "explanation": "Normal distribution has a symmetric, bell-shaped PDF curve. It is characterized by two parameters: mean $\\mu$ (center) and standard deviation $\\sigma$ (spread). The curve is symmetric around the mean, with tails extending to infinity."
     },
     {
       "question_id": "43",
@@ -593,7 +593,7 @@
         "B": "False"
       },
       "correct_option_label": "A",
-      "explanation": "Uniform distribution has constant PDF f(x) = 1/(U-L) for L ≤ x ≤ U. All outcomes within the range [L, U] have equal probability density, meaning they are equally likely to occur."
+      "explanation": "Uniform distribution has constant PDF $f(x) = 1/(U-L)$ for $L \\leq x \\leq U$. All outcomes within the range $[L, U]$ have equal probability density, meaning they are equally likely to occur."
     },
     {
       "question_id": "46",

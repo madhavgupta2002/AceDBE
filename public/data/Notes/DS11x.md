@@ -111,12 +111,26 @@
     *   Lower Limit: $Q1 - 1.5 \times IQR$
     *   Upper Limit: $Q3 + 1.5 \times IQR$
 *   **Whiskers:** Extend to the smallest/largest values *within* the limits. Values outside are plotted as points (Outliers).
+
+### **Module 1 Formula Sheet**
+| **Concept** | **Formula / Description** |
+| :--- | :--- |
+| **Relative Frequency** | $\text{Frequency} / n$ |
+| **Percent Frequency** | $\text{Relative Frequency} \times 100$ |
+| **Mean ($\bar{x}$)** | $\frac{\sum x_i}{n}$ |
+| **Weighted Mean** | $\frac{\sum w_i x_i}{\sum w_i}$ |
+| **Percentile Location ($L_p$)** | $\frac{p}{100}(n+1)$ |
+| **Interquartile Range (IQR)** | $Q3 - Q1$ |
+| **Sample Variance ($s^2$)** | $\frac{\sum (x_i - \bar{x})^2}{n-1}$ |
+| **Standard Deviation ($s$)** | $\sqrt{s^2}$ |
+| **Coefficient of Variation (CV)** | $(\frac{s}{\bar{x}}) \times 100$ |
+| **Z-Score** | $z = \frac{x_i - \bar{x}}{s}$ |
+| **Outlier Limits** | Lower: $Q1 - 1.5 \times IQR$ / Upper: $Q3 + 1.5 \times IQR$ |
+
  
 ---
 
- 
-
-# **Module 2: Probability and Random Variables**
+ # **Module 2: Probability and Random Variables**
 ## **Topic 1: Basic Probability Concepts**
 ### **1.1 Key Definitions**
 *   **Random Experiment:** A process or procedure for which more than one outcome is possible (e.g., tossing a coin, rolling a die).
@@ -126,7 +140,7 @@
     *   Range: $0 \le P(\text{Event}) \le 1$.
     *   Sum of probabilities of all outcomes in $S$ = 1.
 *   **Complement of Event $A$ ($A'$ or $A^c$):** Event consisting of all sample points **not** in $A$.
-    *   $P(A') = 1 - PA.$.
+    *   $P(A') = 1 - P(A)$.
 ### **1.2 Relationships Between Events**
 *   **Union ($A \cup B$):** Event containing points in $A$ **or** $B$ **or both**.
 *   **Intersection ($A \cap B$):** Event containing points in **both** $A$ **and** $B$.
@@ -135,8 +149,8 @@
     *   $P(A \cap B) = 0$.
 ### **1.3 The Addition Law**
 *   Used to compute the probability of the union of events.
-*   **Formula:** $P(A \cup B) = PA. + PB. - P(A \cap B)$.
-*   **For Mutually Exclusive Events:** $P(A \cup B) = PA. + PB.$.
+*   **Formula:** $P(A \cup B) = P(A) + P(B) - P(A \cap B)$.
+*   **For Mutually Exclusive Events:** $P(A \cup B) = P(A) + P(B)$.
  
 
  
@@ -144,23 +158,22 @@
 ### **2.1 Conditional Probability**
 *   Probability of event $A$ occurring given that event $B$ has already occurred.
 *   **Notation:** $P(A|B)$.
-*   **Formula:** $P(A|B) = \frac{P(A \cap B)}{PB.}$.
+*   **Formula:** $P(A|B) = \frac{P(A \cap B)}{P(B)}$.
 ### **2.2 The Multiplication Law**
 *   Derived from conditional probability.
-*   **Formula:** $P(A \cap B) = PB. \times P(A|B)$ OR $P(A \cap B) = PA. \times P(B|A)$.
+*   **Formula:** $P(A \cap B) = P(B) \times P(A|B)$ OR $P(A \cap B) = P(A) \times P(B|A)$.
 ### **2.3 Independence of Events**
 *   Two events are independent if the occurrence of one does not alter the probability of the other.
 *   **Conditions for Independence:**
-    1.  $P(A|B) = PA.$
-    2.  $P(B|A) = PB.$
-    3.  $P(A \cap B) = PA. \times PB.$
+    1.  $P(A|B) = P(A)$
+    2.  $P(B|A) = P(B)$
+    3.  $P(A \cap B) = P(A) \times P(B)$
 *   *Note:* Two events with non-zero probabilities cannot be both mutually exclusive and independent.
 ### **2.4 Bayes' Theorem**
 *   Used to update probabilities based on new information.
-*   **Prior Probability:** Initial probability estimate ($PA.$).
+*   **Prior Probability:** Initial probability estimate ($P(A)$).
 *   **Posterior Probability:** Revised probability after obtaining new information ($P(A|B)$).
 *   **Joint Probability Table:** A table listing probabilities of intersections of two variables (useful for calculating marginal and conditional probabilities).
- 
 
  
 ## **Topic 3: Random Variables (Discrete & Continuous)**
@@ -210,6 +223,22 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
     *   $SD(\bar{X}) = \frac{\sigma}{\sqrt{n}}$.
 
  
+
+### **Module 2 Formula Sheet**
+
+| **Concept** | **Formula / Description** |
+| :--- | :--- |
+| **Complement Rule** | $P(A') = 1 - P(A)$ |
+| **Addition Law** | $P(A \cup B) = P(A) + P(B) - P(A \cap B)$ |
+| **Cond. Probability** | $P(A\|B) = \frac{P(A \cap B)}{P(B)}$ |
+| **Multiplication Law** | $P(A \cap B) = P(B) \times P(A\|B)$ |
+| **Independence** | $P(A\|B) = P(A)$ or $P(A \cap B) = P(A)P(B)$ |
+| **Exp. Value (Discrete)** | $E(X) = \sum [x \cdot f(x)]$ |
+| **Variance (Discrete)** | $Var(X) = \sum [(x - \mu)^2 \cdot f(x)]$ |
+| **Linear Func ($aX+b$)** | $E(Y) = aE(X) + b$ <br> $Var(Y) = a^2 Var(X)$ |
+| **Sum ($X+Y$)** | $E(X+Y) = E(X) + E(Y)$ <br> $Var(X+Y) = Var(X) + Var(Y)$ (if indep.) |
+| **Sum of $n$ i.i.d.** | Mean: $n\mu$, SD: $\sqrt{n}\sigma$ |
+| **Avg of $n$ i.i.d.** | Mean: $\mu$, SD: $\frac{\sigma}{\sqrt{n}}$ |
 
 # **Module 3: Discrete Probability Distributions**
 ## **Topic 1: General Discrete Probability Distributions**
@@ -294,7 +323,18 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
     *   *Example:* Rate = 10/hour. For 30 mins, $\lambda = 10 \times 0.5 = 5$.
 ### **4.4 Relation to Binomial**
 *   The Poisson distribution is a limiting case of the Binomial distribution when $n$ (trials) is large and $p$ (probability) is small, such that $np = \lambda$.
- 
+
+### **Module 3 Formula Sheet**
+
+| **Concept** | **Bernoulli** | **Binomial** | **Poisson** |
+| :--- | :--- | :--- | :--- |
+| **PMF $f(y)$** | $f(1)=p; f(0)=1-p$ | ${}^nC_y p^y (1-p)^{n-y}$ | $\frac{e^{-\lambda} \lambda^y}{y!}$ |
+| **Mean $E[Y]$** | $p$ | $np$ | $\lambda$ |
+| **Variance $Var(Y)$** | $p(1-p)$ | $np(1-p)$ | $\lambda$ |
+
+**Portfolio Analysis Formulas:**
+*   **Portfolio Mean:** $E[Z] = w_1 E[X] + w_2 E[Y]$
+*   **Portfolio Variance:** $Var(Z) = w_1^2 \sigma_X^2 + w_2^2 \sigma_Y^2 + 2 w_1 w_2 Cov(X, Y)$
 
 # **Module 4: Continuous Probability Distributions**
 ## **Topic 1: Fundamentals of Continuous Random Variables**
@@ -384,4 +424,13 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
     *   Mean $\mu = np$
     *   Standard Deviation $\sigma = \sqrt{npq}$
 *   **Continuity Correction:** Since Binomial is discrete and Normal is continuous, add/subtract 0.5 to the discrete value boundaries.
-    *   *Example:* $P(X \le 50)$ becomes $P(X_{normal} \le 50.5)$.
+### **Module 4 Formula Sheet**
+
+| **Property** | **Uniform ($L, U$)** | **Exponential ($\lambda$)** | **Normal ($\mu, \sigma$)** |
+| :--- | :--- | :--- | :--- |
+| **PDF $f(x)$** | $\frac{1}{U - L}$ | $\lambda e^{-\lambda x}$ | - |
+| **CDF $F(x)$** | $\frac{x - L}{U - L}$ | $1 - e^{-\lambda x}$ | $P(Z \le \frac{x-\mu}{\sigma})$ |
+| **Mean $E[X]$** | $\frac{L + U}{2}$ | $\frac{1}{\lambda}$ | $\mu$ (or $np$) |
+| **Variance** | $\frac{(U - L)^2}{12}$ | $\frac{1}{\lambda^2}$ | $\sigma^2$ (or $npq$) |
+| **Std. Deviation** | $\frac{U - L}{\sqrt{12}}$ | $\frac{1}{\lambda}$ | $\sigma$ (or $\sqrt{npq}$) |
+| **Key Formula** | $P(a < X < b) = \frac{b-a}{U-L}$ | $P(X > x) = e^{-\lambda x}$ | $Z = \frac{X - \mu}{\sigma}$ |

@@ -3,6 +3,10 @@
 import React from 'react';
 import { Question } from '@/lib/types';
 import { CheckCircle, XCircle, Check } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 interface QuizQuestionProps {
   question: Question;
@@ -73,6 +77,10 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
     return text.replace(/\\n/g, '\n');
   };
 
+  const mdComponents = {
+    p: ({ children }: any) => <span className="inline">{children}</span>,
+  };
+
   // Render subjective question
   if (isSubjective) {
     return (
@@ -92,9 +100,14 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
             </span>
           )}
         </div>
-        <h2 className="text-lg sm:text-2xl font-bold mb-4 sm:mb-6 whitespace-pre-line text-white">
-          {formatText(question.text)}
-        </h2>
+        <div className="text-lg sm:text-2xl mb-4 sm:mb-6 text-white prose prose-invert prose-indigo max-w-none">
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm, remarkMath]}
+            rehypePlugins={[rehypeKatex]}
+          >
+            {formatText(question.text)}
+          </ReactMarkdown>
+        </div>
         <div className="bg-yellow-900/20 border border-yellow-700 rounded-lg p-4 sm:p-6">
           <p className="text-yellow-200 mb-3 sm:mb-4 text-sm sm:text-base">
             📝 This is a subjective question that requires a written answer.
@@ -141,9 +154,14 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
           </span>
         )}
       </div>
-      <h2 className="text-lg sm:text-2xl font-bold mb-4 sm:mb-6 whitespace-pre-line text-white">
-        {formatText(question.text)}
-      </h2>
+      <div className="text-lg sm:text-2xl mb-4 sm:mb-6 text-white prose prose-invert prose-indigo max-w-none">
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm, remarkMath]}
+          rehypePlugins={[rehypeKatex]}
+        >
+          {formatText(question.text)}
+        </ReactMarkdown>
+      </div>
       <div className="grid grid-cols-1 gap-2 sm:gap-3">
         {Object.entries(question.options).map(([key, value]) => (
           <button
@@ -166,7 +184,15 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
                     key
                   )}
                 </span>
-                <span className="whitespace-pre-line text-sm sm:text-base">{formatText(value || '')}</span>
+                <span className="text-sm sm:text-base prose prose-invert prose-indigo max-w-none prose-p:inline flex-1">
+                  <ReactMarkdown
+                    remarkPlugins={[remarkGfm, remarkMath]}
+                    rehypePlugins={[rehypeKatex]}
+                    components={mdComponents}
+                  >
+                    {formatText(value || '')}
+                  </ReactMarkdown>
+                </span>
               </span>
               {showResult && question.correctAnswer.includes(key) && (
                 <CheckCircle className="inline-block ml-2 text-green-400 flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
@@ -181,8 +207,13 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
         ))}
       </div>
       {showResult && selectedAnswer && question.explanation && (
-        <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-blue-900/30 border border-blue-700 rounded-lg">
-          <p className="text-gray-200 whitespace-pre-line text-sm sm:text-base">{formatText(question.explanation)}</p>
+        <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-blue-900/30 border border-blue-700 rounded-lg prose prose-invert prose-indigo max-w-none">
+          <ReactMarkdown
+            remarkPlugins={[remarkGfm, remarkMath]}
+            rehypePlugins={[rehypeKatex]}
+          >
+            {formatText(question.explanation)}
+          </ReactMarkdown>
         </div>
       )}
     </div>

@@ -18,7 +18,7 @@
         "D": "8 cm"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: s = √[Σ(xi - x̄)²/(n-1)]. Steps: Data: 2, 4, 5, 6, 7, 10, 12, 5, 4, 5. Mean x̄ = 60/10 = 6. Deviations: -4, -2, -1, 0, 1, 4, 6, -1, -2, -1. Squared: 16, 4, 1, 0, 1, 16, 36, 1, 4, 1. Sum = 84. Variance = 84/9 = 9.33. s = √9.33 ≈ 3.06 ≈ 3 cm. Result: 3 cm."
+      "explanation": "**Formula:** $s = \\sqrt{\\frac{\\sum(x_i - \\bar{x})^2}{n-1}}$\n\n**Steps:**\n- Data: 2, 4, 5, 6, 7, 10, 12, 5, 4, 5\n- Mean $\\bar{x} = 60/10 = 6$\n- Deviations: -4, -2, -1, 0, 1, 4, 6, -1, -2, -1\n- Squared: 16, 4, 1, 0, 1, 16, 36, 1, 4, 1\n- Sum = 84\n- Variance = $84/9 = 9.33$\n- $s = \\sqrt{9.33} \\approx 3.06 \\approx 3$ cm\n\n**Result:** 3 cm"
     },
     {
       "question_id": "236144702",
@@ -34,7 +34,7 @@
         "D": "8 cm"
       },
       "correct_option_label": "D",
-      "explanation": "Formula: Q3 position = 0.75(n+1). Steps: Sorted: 2, 4, 4, 5, 5, 5, 6, 7, 10, 12. n=10. Position = 0.75(10+1) = 8.25. Interpolate: 8th value = 7, 9th = 10. Q3 = 7 + 0.25×(10-7) = 7.75 ≈ 8 cm. Result: 8 cm."
+      "explanation": "**Formula:** $Q_3$ position = $0.75(n+1)$\n\n**Steps:**\n- Sorted: 2, 4, 4, 5, 5, 5, 6, 7, 10, 12\n- $n = 10$\n- Position = $0.75(10+1) = 8.25$\n- Interpolate: 8th value = 7, 9th = 10\n- $Q_3 = 7 + 0.25 \\times (10-7) = 7.75 \\approx 8$ cm\n\n**Result:** 8 cm"
     },
     {
       "question_id": "236144703",
@@ -50,7 +50,7 @@
         "D": "2"
       },
       "correct_option_label": "D",
-      "explanation": "Formula: Median = average of middle values for even n. Steps: Sorted: -6, -5, -1, 0, 2, 2, 3, 3, 4, 6. n=10 (even). Middle terms (5th, 6th) are 2 and 2. Median = (2+2)/2 = 2. Result: 2."
+      "explanation": "**Formula:** Median = average of middle values for even $n$\n\n**Steps:**\n- Sorted: -6, -5, -1, 0, 2, 2, 3, 3, 4, 6\n- $n = 10$ (even)\n- Middle terms (5th, 6th) are 2 and 2\n- Median = $(2+2)/2 = 2$\n\n**Result:** 2"
     },
     {
       "question_id": "236144704",
@@ -66,7 +66,7 @@
         "D": "1.9"
       },
       "correct_option_label": "D",
-      "explanation": "Formula: σ = √[E(X²) - (E(X))²]. Steps: E(X) = 0×0.28 + 1×0.22 + 2×0.15 + 3×0.10 + 4×0.10 + 5×0.08 + 6×0.07 = 1.87. E(X²) = 0²×0.28 + 1²×0.22 + ... + 6²×0.07 = 6.51. Var = 6.51 - 1.87² = 3.01. σ = √3.01 ≈ 1.74 ≈ 1.9. Result: 1.9."
+      "explanation": "**Formula:** $\\sigma = \\sqrt{E(X^2) - [E(X)]^2}$\n\n**Steps:**\n- $E(X) = 0 \\times 0.28 + 1 \\times 0.22 + 2 \\times 0.15 + 3 \\times 0.10 + 4 \\times 0.10 + 5 \\times 0.08 + 6 \\times 0.07 = 1.87$\n- $E(X^2) = 0^2 \\times 0.28 + 1^2 \\times 0.22 + ... + 6^2 \\times 0.07 = 6.51$\n- Var = $6.51 - 1.87^2 = 3.01$\n- $\\sigma = \\sqrt{3.01} \\approx 1.74 \\approx 1.9$\n\n**Result:** 1.9"
     },
     {
       "question_id": "236144705",
@@ -82,7 +82,7 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: Conditional probability P(US | Truck) = P(US ∩ Truck)/P(Truck). Steps: Total = 600. Cars = 270, Trucks = 330. US Total = 240. US Cars = 10% of 600 = 60. US Trucks = 240 - 60 = 180. P(US | Truck) = 180/330 = 0.545. Result: Between 0.50 and 0.75."
+      "explanation": "**Formula:** $P(\\text{US} | \\text{Truck}) = \\frac{P(\\text{US} \\cap \\text{Truck})}{P(\\text{Truck})}$\n\n**Steps:**\n- Total = 600\n- Cars = 270, Trucks = 330\n- US Total = 240\n- US Cars = 10% of 600 = 60\n- US Trucks = 240 - 60 = 180\n- $P(\\text{US} | \\text{Truck}) = \\frac{180}{330} = 0.545$\n\n**Result:** Between 0.50 and 0.75"
     },
     {
       "question_id": "236144706",
@@ -98,7 +98,7 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "B",
-      "explanation": "Steps: Total autos = 600. US manufactured = 240. P(US) = 240/600 = 0.40. Result: Between 0.25 and 0.50."
+      "explanation": "**Steps:**\n- Total autos = 600\n- US manufactured = 240\n- $P(\\text{US}) = \\frac{240}{600} = 0.40$\n\n**Result:** Between 0.25 and 0.50"
     },
     {
       "question_id": "236144707",
@@ -114,7 +114,7 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: Binomial P(X = k) = C(n,k)×p^k×(1-p)^(n-k). Steps: P(Domestic ∩ Not Meet) = 0.55 - 0.40 = 0.15. Binomial n=10, p=0.15, k=4. P(X=4) = C(10,4)×0.15^4×0.85^6 = 210×0.0005×0.377 ≈ 0.04. Result: Between 0.01 and 0.25."
+      "explanation": "**Formula:** Binomial $P(X = k) = C(n,k) \\times p^k \\times (1-p)^{n-k}$\n\n**Steps:**\n- $P(\\text{Domestic} \\cap \\text{Not Meet}) = 0.55 - 0.40 = 0.15$\n- Binomial $n=10$, $p=0.15$, $k=4$\n- $P(X=4) = C(10,4) \\times 0.15^4 \\times 0.85^6$\n- $= 210 \\times 0.0005 \\times 0.377 \\approx 0.04$\n\n**Result:** Between 0.01 and 0.25"
     },
     {
       "question_id": "236144708",
@@ -130,7 +130,7 @@
         "D": "Between 0.20 and 0.30"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: Poisson distribution for count of events in interval. Steps: 3 GEs per 5 pages ⇒ λ=6 for 10 pages. P(X<3)=P(0)+P(1)+P(2), where P(k;λ)=e^-λ λ^k/k!. Compute P(0) = e^-6, P(1) = e^-6*6, P(2)=e^-6*6^2/2!. The sum ≈ 0.0025 + 0.0149 + 0.0446 ≈ 0.062. Result: Between 0.00 and 0.10."
+      "explanation": "**Formula:** Poisson distribution for count of events in interval\n\n**Steps:**\n- 3 GEs per 5 pages $\\Rightarrow$ $\\lambda = 6$ for 10 pages\n- $P(X < 3) = P(0) + P(1) + P(2)$, where $P(k; \\lambda) = \\frac{e^{-\\lambda} \\lambda^k}{k!}$\n- Compute $P(0) = e^{-6}$, $P(1) = e^{-6} \\times 6$, $P(2) = \\frac{e^{-6} \\times 6^2}{2!}$\n- The sum $\\approx 0.0025 + 0.0149 + 0.0446 \\approx 0.062$\n\n**Result:** Between 0.00 and 0.10"
     },
     {
       "question_id": "236144709",
@@ -146,7 +146,7 @@
         "D": "Between 0. 20 and 0.30"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: Poisson P(X = 0) = e^(-λ). Steps: Rate = 0.6 per page. For 7 pages, λ = 0.6×7 = 4.2. P(X = 0) = e^(-4.2) ≈ 0.015. Result: Between 0.00 and 0.10."
+      "explanation": "**Formula:** Poisson $P(X = 0) = e^{-\\lambda}$\n\n**Steps:**\n- Rate = 0.6 per page\n- For 7 pages, $\\lambda = 0.6 \\times 7 = 4.2$\n- $P(X = 0) = e^{-4.2} \\approx 0.015$\n\n**Result:** Between 0.00 and 0.10"
     },
     {
       "question_id": "236144710",
@@ -162,7 +162,7 @@
         "D": "More than 0.90"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: Normal P(a < X < b) using z-scores. Steps: X ~ N(10, 3²). Z₁ = (7-10)/3 = -1, Z₂ = (16-10)/3 = 2. P(-1 < Z < 2) = P(Z < 2) - P(Z < -1) = 0.9772 - 0.1587 = 0.8185. Result: Between 0.75 and 0.90."
+      "explanation": "**Formula:** Normal $P(a < X < b)$ using z-scores\n\n**Steps:**\n- $X \\sim N(10, 3^2)$\n- $Z_1 = \\frac{7-10}{3} = -1$, $Z_2 = \\frac{16-10}{3} = 2$\n- $P(-1 < Z < 2) = P(Z < 2) - P(Z < -1)$\n- $= 0.9772 - 0.1587 = 0.8185$\n\n**Result:** Between 0.75 and 0.90"
     },
     {
       "question_id": "236144711",
@@ -178,7 +178,7 @@
         "D": "More than 0.16"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: T = W + O, Var(T) = σ_w² + σ_o² + 2ρσ_wσ_o. Steps: Mean(T) = 10+15 = 25. Var(T) = 3² + 4² + 2(-0.2)(3)(4) = 9 + 16 - 4.8 = 20.2. SD = √20.2 ≈ 4.49. Z = (32-25)/4.49 = 1.56. P(T > 32) = P(Z > 1.56) ≈ 0.06. Result: Between 0.04 and 0.08."
+      "explanation": "**Formula:** $T = W + O$, $\\text{Var}(T) = \\sigma_w^2 + \\sigma_o^2 + 2\\rho\\sigma_w\\sigma_o$\n\n**Steps:**\n- Mean$(T) = 10 + 15 = 25$\n- Var$(T) = 3^2 + 4^2 + 2(-0.2)(3)(4) = 9 + 16 - 4.8 = 20.2$\n- SD = $\\sqrt{20.2} \\approx 4.49$\n- $Z = \\frac{32-25}{4.49} = 1.56$\n- $P(T > 32) = P(Z > 1.56) \\approx 0.06$\n\n**Result:** Between 0.04 and 0.08"
     },
     {
       "question_id": "236144712",
@@ -194,7 +194,7 @@
         "D": "More than 0.75"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: Exponential P(a < X < b) = e^(-λa) - e^(-λb). Steps: Rate = 42/10m = 0.042/cm. P(15 < X < 25) = e^(-0.042×15) - e^(-0.042×25) = e^(-0.63) - e^(-1.05) ≈ 0.53 - 0.35 = 0.18. Result: Less than 0.25."
+      "explanation": "**Formula:** Exponential $P(a < X < b) = e^{-\\lambda a} - e^{-\\lambda b}$\n\n**Steps:**\n- Rate = 42/10m = 0.042/cm\n- $P(15 < X < 25) = e^{-0.042 \\times 15} - e^{-0.042 \\times 25}$\n- $= e^{-0.63} - e^{-1.05} \\approx 0.53 - 0.35 = 0.18$\n\n**Result:** Less than 0.25"
     },
     {
       "question_id": "236144713",
@@ -210,7 +210,7 @@
         "D": "Margin of error is between 1.75 to 2.25"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: Margin of error = z*(s/√n) for confidence interval. At 85% confidence, z ≈ 1.44. s = 4, n = 40. Margin = 1.44*(4/√40) = 1.44*(0.632) ≈ 0.91. Result: Margin of error is between 0.75 and 1.25."
+      "explanation": "**Formula:** Margin of error = $z^* \\times \\frac{s}{\\sqrt{n}}$ for confidence interval\n\n**Steps:**\n- At 85% confidence, $z \\approx 1.44$\n- $s = 4$, $n = 40$\n- Margin = $1.44 \\times \\frac{4}{\\sqrt{40}} = 1.44 \\times 0.632 \\approx 0.91$\n\n**Result:** Margin of error is between 0.75 and 1.25"
     },
     {
       "question_id": "236144714",
@@ -226,7 +226,7 @@
         "D": "H0: μ ≥ 15 and Ha: μ < 15"
       },
       "correct_option_label": "B",
-      "explanation": "For testing if mean equals a value, use two-tailed test: H₀: μ = 15, Hₐ: μ ≠ 15. This tests whether the true mean is different from 15 (either greater or less), making it a two-sided alternative hypothesis."
+      "explanation": "For testing if mean equals a value, use two-tailed test:\n\n$H_0: \\mu = 15$\n\n$H_a: \\mu \\neq 15$\n\nThis tests whether the true mean is different from 15 (either greater or less), making it a two-sided alternative hypothesis."
     },
     {
       "question_id": "236144715",
@@ -242,7 +242,7 @@
         "D": "Between 0.99 and 0.95"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: t = (x̄ - μ₀)/(s/√n). Steps: x̄ = 19, μ₀ = 15, s = 5, n = 16. t = (19-15)/(5/√16) = 4/1.25 = 3.2. For two-tailed test, p-value = 2×P(t > 3.2) with df=15. p ≈ 0.006. Result: Between 0.00 and 0.01."
+      "explanation": "**Formula:** $t = \\frac{\\bar{x} - \\mu_0}{s/\\sqrt{n}}$\n\n**Steps:**\n- $\\bar{x} = 19$, $\\mu_0 = 15$, $s = 5$, $n = 16$\n- $t = \\frac{19-15}{5/\\sqrt{16}} = \\frac{4}{1.25} = 3.2$\n- For two-tailed test, p-value = $2 \\times P(t > 3.2)$ with df=15\n- $p \\approx 0.006$\n\n**Result:** Between 0.00 and 0.01"
     },
     {
       "question_id": "236144716",
@@ -258,7 +258,7 @@
         "D": "Sample size of 100"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: Margin = z*sqrt(p(1-p)/n). For 99% confidence, z ≈ 2.58. Maximum margin at p=0.5. Set margin ≤ 0.1. 0.1 ≥ 2.58*sqrt(0.25/n) ⇒ n ≥ (2.58²*0.25)/(0.1²) = 166.41. Sample size closest and ≥166.41 is 200. Result: Sample size of 200."
+      "explanation": "**Formula:** Margin = $z^* \\sqrt{\\frac{p(1-p)}{n}}$\n\n**Steps:**\n- For 99% confidence, $z \\approx 2.58$\n- Maximum margin at $p = 0.5$\n- Set margin $\\leq 0.1$\n- $0.1 \\geq 2.58\\sqrt{\\frac{0.25}{n}}$\n- $n \\geq \\frac{2.58^2 \\times 0.25}{0.1^2} = 166.41$\n- Sample size closest and $\\geq 166.41$ is 200\n\n**Result:** Sample size of 200"
     },
     {
       "question_id": "236144717",
@@ -274,7 +274,7 @@
         "D": "Between 0.95 and 1.00"
       },
       "correct_option_label": "C",
-      "explanation": "Steps: Sample p = 18/42 = 0.429. H₀: p ≤ 0.50, Hₐ: p > 0.50. Since sample proportion (0.429) < 0.50, p-value will be high (fail to reject H₀). p-value ≈ 0.85. Result: Between 0.80 and 0.95."
+      "explanation": "**Steps:**\n- Sample $p = 18/42 = 0.429$\n- $H_0: p \\leq 0.50$, $H_a: p > 0.50$\n- Since sample proportion (0.429) < 0.50, p-value will be high (fail to reject $H_0$)\n- p-value $\\approx 0.85$\n\n**Result:** Between 0.80 and 0.95"
     },
     {
       "question_id": "236144718",
@@ -290,7 +290,7 @@
         "D": "More than 10.0"
       },
       "correct_option_label": "D",
-      "explanation": "Formula: For testing variance, use chi-square: χ² = (n-1)s²/σ₀². Steps: n = 25, s = 35, σ₀² = 900. χ² = (25-1)*35²/900 = 24*1225/900 ≈ 32.7. This is much greater than 10. Result: More than 10.0."
+      "explanation": "**Formula:** For testing variance, use chi-square: $\\chi^2 = \\frac{(n-1)s^2}{\\sigma_0^2}$\n\n**Steps:**\n- $n = 25$, $s = 35$, $\\sigma_0^2 = 900$\n- $\\chi^2 = \\frac{(25-1) \\times 35^2}{900} = \\frac{24 \\times 1225}{900} \\approx 32.7$\n- This is much greater than 10\n\n**Result:** More than 10.0"
     },
     {
       "question_id": "236144719",
@@ -306,7 +306,7 @@
         "D": "194"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: b₁ = Σ(xi-x̄)(yi-ȳ)/Σ(xi-x̄)², b₀ = ȳ - b₁x̄. Steps: b₁ = 2840/568 = 5. b₀ = 134 - 5×16 = 134 - 80 = 54. For X = 20, Ŷ = 54 + 5×20 = 54 + 100 = 154. Result: 154."
+      "explanation": "**Formula:** $b_1 = \\frac{\\sum(x_i-\\bar{x})(y_i-\\bar{y})}{\\sum(x_i-\\bar{x})^2}$, $b_0 = \\bar{y} - b_1\\bar{x}$\n\n**Steps:**\n- $b_1 = \\frac{2840}{568} = 5$\n- $b_0 = 134 - 5 \\times 16 = 134 - 80 = 54$\n- For $X = 20$, $\\hat{Y} = 54 + 5 \\times 20 = 54 + 100 = 154$\n\n**Result:** 154"
     },
     {
       "question_id": "236144720",
@@ -322,7 +322,7 @@
         "D": "0.95"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: R² = SSR/SST = SSR/(SSR+SSE). Steps: SSR = 2840²/568 = 14200. SST = 15730. R² = 14200/15730 = 0.903. Result: 0.9 (90% of variation in Y is explained by X)."
+      "explanation": "**Formula:** $R^2 = \\frac{SSR}{SST} = \\frac{SSR}{SSR+SSE}$\n\n**Steps:**\n- $SSR = \\frac{2840^2}{568} = 14200$\n- $SST = 15730$\n- $R^2 = \\frac{14200}{15730} = 0.903$\n\n**Result:** 0.9 (90% of variation in Y is explained by X)"
     },
     {
       "question_id": "236144721",
@@ -338,7 +338,7 @@
         "D": "15"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: MSE = SSE/(n-2) for simple linear regression. Given MSE = 227.1, SSE = 2270.7, n-2 = SSE/MSE = 2270.7/227.1 ≈ 10, so n = 12. Result: 12."
+      "explanation": "**Formula:** $MSE = \\frac{SSE}{n-2}$ for simple linear regression\n\n**Steps:**\n- Given $MSE = 227.1$, $SSE = 2270.7$\n- $n - 2 = \\frac{SSE}{MSE} = \\frac{2270.7}{227.1} \\approx 10$\n- So $n = 12$\n\n**Result:** 12"
     },
     {
       "question_id": "236144722",
@@ -354,7 +354,7 @@
         "D": "0.75"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: Adjusted R² = 1 - [(SSE/(n-k-1))/(SST/(n-1))]. Steps: n=31, k=4. SSE = SST - SSR. From MSR=125, SSR = 125×4 = 500. SSE = 760-500 = 260. Adjusted R² = 1 - [(260/26)/(760/30)] = 1 - [10/25.33] = 1 - 0.395 = 0.605 ≈ 0.60. Result: 0.60."
+      "explanation": "**Formula:** Adjusted $R^2 = 1 - \\frac{SSE/(n-k-1)}{SST/(n-1)}$\n\n**Steps:**\n- $n = 31$, $k = 4$\n- $SSE = SST - SSR$\n- From $MSR = 125$, $SSR = 125 \\times 4 = 500$\n- $SSE = 760 - 500 = 260$\n- Adjusted $R^2 = 1 - \\frac{260/26}{760/30} = 1 - \\frac{10}{25.33} = 1 - 0.395 = 0.605 \\approx 0.60$\n\n**Result:** 0.60"
     },
     {
       "question_id": "236144723",
@@ -370,7 +370,7 @@
         "D": "24.0"
       },
       "correct_option_label": "D",
-      "explanation": "Formula: t = coefficient / standard error. For x4: t = 8.0, se = 2. Solution: coefficient = t×se = 8.0×2 = 16. (If D is 24.0, rounding or a typo may have occurred. Otherwise, concept: multiply t-stat by standard error for coefficient.)"
+      "explanation": "**Formula:** $t = \\frac{\\text{coefficient}}{\\text{standard error}}$\n\n**Steps:**\n- For $x_4$: $t = 8.0$, $se = 2$\n- Coefficient = $t \\times se = 8.0 \\times 2 = 16$\n\n(If D is 24.0, rounding or a typo may have occurred. Otherwise, concept: multiply t-stat by standard error for coefficient.)"
     },
     {
       "question_id": "236144724",
@@ -386,7 +386,7 @@
         "D": "52"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: MSR = SSR/k, where k = number of predictors. Steps: R² = 0.36, so SSR = 0.36×SST. Need SST. From SSE and MSE: SSE = MSE×(n-k-1) = 4.8²×13 = 23.04×13 = 299.52. SST = SSE/(1-R²) = 299.52/0.64 = 468. SSR = 0.36×468 = 168.48. MSR = 168.48/4 = 42.12 ≈ 42. Result: 42."
+      "explanation": "**Formula:** $MSR = \\frac{SSR}{k}$, where $k$ = number of predictors\n\n**Steps:**\n- $R^2 = 0.36$, so $SSR = 0.36 \\times SST$\n- Need SST. From SSE and MSE: $SSE = MSE \\times (n-k-1) = 4.8^2 \\times 13 = 23.04 \\times 13 = 299.52$\n- $SST = \\frac{SSE}{1-R^2} = \\frac{299.52}{0.64} = 468$\n- $SSR = 0.36 \\times 468 = 168.48$\n- $MSR = \\frac{168.48}{4} = 42.12 \\approx 42$\n\n**Result:** 42"
     },
     {
       "question_id": "236144725",
@@ -402,7 +402,7 @@
         "D": "1.8"
       },
       "correct_option_label": "D",
-      "explanation": "Formula: F = MSR/MSE. Steps: From Q24, MSR = 42. MSE = 4.8² = 23.04. F = 42/23.04 = 1.82 ≈ 1.8. Result: 1.8."
+      "explanation": "**Formula:** $F = \\frac{MSR}{MSE}$\n\n**Steps:**\n- From Q24, $MSR = 42$\n- $MSE = 4.8^2 = 23.04$\n- $F = \\frac{42}{23.04} = 1.82 \\approx 1.8$\n\n**Result:** 1.8"
     }
   ]
 }
