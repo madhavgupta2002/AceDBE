@@ -235,8 +235,8 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
 | **Independence** | $P(A\|B) = P(A)$ or $P(A \cap B) = P(A)P(B)$ |
 | **Exp. Value (Discrete)** | $E(X) = \sum [x \cdot f(x)]$ |
 | **Variance (Discrete)** | $Var(X) = \sum [(x - \mu)^2 \cdot f(x)]$ |
-| **Linear Func ($aX+b$)** | $E(Y) = aE(X) + b$ <br> $Var(Y) = a^2 Var(X)$ |
-| **Sum ($X+Y$)** | $E(X+Y) = E(X) + E(Y)$ <br> $Var(X+Y) = Var(X) + Var(Y)$ (if indep.) |
+| **Linear Func ($aX+b$)** | $E(Y) = aE(X) + b$ / $Var(Y) = a^2 Var(X)$ |
+| **Sum ($X+Y$)** | $E(X+Y) = E(X) + E(Y)$ / $Var(X+Y) = Var(X) + Var(Y)$ (if indep.) |
 | **Sum of $n$ i.i.d.** | Mean: $n\mu$, SD: $\sqrt{n}\sigma$ |
 | **Avg of $n$ i.i.d.** | Mean: $\mu$, SD: $\frac{\sigma}{\sqrt{n}}$ |
 

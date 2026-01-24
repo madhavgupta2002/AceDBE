@@ -99,28 +99,32 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
       const h4Match = line.match(/^####\s+\*{0,3}(.+?)\*{0,3}\s*$/);
 
       if (h1Match) {
-        const text = cleanText(h1Match[1]);
-        if (text) {
-          const id = generateId(text);
-          tocItems.push({ id, text, level: 1 });
+        const rawText = h1Match[1].trim(); // Keep LaTeX intact for display
+        const cleanedText = cleanText(rawText); // Clean for ID generation
+        if (cleanedText) {
+          const id = generateId(cleanedText);
+          tocItems.push({ id, text: rawText, level: 1 }); // Store raw text
         }
       } else if (h2Match) {
-        const text = cleanText(h2Match[1]);
-        if (text) {
-          const id = generateId(text);
-          tocItems.push({ id, text, level: 2 });
+        const rawText = h2Match[1].trim();
+        const cleanedText = cleanText(rawText);
+        if (cleanedText) {
+          const id = generateId(cleanedText);
+          tocItems.push({ id, text: rawText, level: 2 });
         }
       } else if (h3Match) {
-        const text = cleanText(h3Match[1]);
-        if (text) {
-          const id = generateId(text);
-          tocItems.push({ id, text, level: 3 });
+        const rawText = h3Match[1].trim();
+        const cleanedText = cleanText(rawText);
+        if (cleanedText) {
+          const id = generateId(cleanedText);
+          tocItems.push({ id, text: rawText, level: 3 });
         }
       } else if (h4Match) {
-        const text = cleanText(h4Match[1]);
-        if (text) {
-          const id = generateId(text);
-          tocItems.push({ id, text, level: 4 });
+        const rawText = h4Match[1].trim();
+        const cleanedText = cleanText(rawText);
+        if (cleanedText) {
+          const id = generateId(cleanedText);
+          tocItems.push({ id, text: rawText, level: 4 });
         }
       }
     });
@@ -300,7 +304,15 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                                 : 'text-gray-500 text-xs ml-6'
                             }`}
                         >
-                          {item.text}
+                          <ReactMarkdown
+                            remarkPlugins={[remarkGfm, remarkMath]}
+                            rehypePlugins={[rehypeKatex]}
+                            components={{
+                              p: ({ children }: any) => <span className="inline">{children}</span>,
+                            }}
+                          >
+                            {item.text}
+                          </ReactMarkdown>
                         </button>
                       ))
                     )}
