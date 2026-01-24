@@ -18,7 +18,7 @@
         "D": "250000"
       },
       "correct_option_label": "A",
-      "explanation": "Using the Accounting Equation: Assets = Liabilities + Equity = 300,000 + 50,000 = 350,000. Total assets equal the sum of liabilities and equity, maintaining the fundamental balance. This is a direct application of the double-entry bookkeeping system, where every resource (asset) is financed either by borrowing (liability) or by owner's funds (equity)."
+      "explanation": "Using the Accounting Equation: \n\nAssets = Liabilities + Equity = 300,000 + 50,000 = 350,000.\n\nTotal assets equal the sum of liabilities and equity, maintaining the fundamental balance.\n\nThis is a direct application of the double-entry bookkeeping system, where every resource (asset) is financed either by borrowing (liability) or by owner's funds (equity)."
     },
     {
       "question_id": "2361441448",
@@ -34,7 +34,7 @@
         "D": "SBI Loan A/c"
       },
       "correct_option_label": "B",
-      "explanation": "Nominal Accounts relate to expenses, losses, incomes, and gains. Sales A/c is income (Nominal Account), as per the classification of accounts (Personal, Real, and Nominal). Nominal Accounts are closed at the end of each accounting period, transferring the net result to capital or profit & loss accounts."
+      "explanation": "Nominal Accounts relate to expenses, losses, incomes, and gains.\n\nSales A/c is income (Nominal Account), as per the classification of accounts (Personal, Real, and Nominal).\n\nNominal Accounts are closed at the end of each accounting period, transferring the net result to capital or profit & loss accounts."
     },
     {
       "question_id": "2361441449",
@@ -50,7 +50,7 @@
         "D": "Machine Debit 5; Cash Credit 5"
       },
       "correct_option_label": "D",
-      "explanation": "The purchase of an asset (Machine) by paying cash is recorded by debiting the asset (increasing Machine account as it is a Real Account) and crediting cash (decreasing Cash, another Real Account). The Golden Rule for Real Accounts: Debit what comes in (Machine), Credit what goes out (Cash)."
+      "explanation": "The purchase of an asset (Machine) by paying cash is recorded by debiting the asset (increasing Machine account as it is a Real Account) and crediting cash (decreasing Cash, another Real Account).\n\nThe Golden Rule for Real Accounts: Debit what comes in (Machine), Credit what goes out (Cash)."
     },
     {
       "question_id": "2361441450",
@@ -66,7 +66,7 @@
         "D": "Sales -14; Mr. X -14; Goods -12; Cost of Sales -12"
       },
       "correct_option_label": "A",
-      "explanation": "When goods are sold on credit, sales (income) and receivables (Mr. X, a representative personal account) increase by Rs. 14. Inventory decreases by Rs. 12 (cost of goods), and cost of sales (expense) increases by Rs. 12. This follows the double-entry system and the Golden Rules for Personal and Real Accounts."
+      "explanation": "When goods are sold on credit, sales (income) and receivables (Mr. X, a representative personal account) increase by Rs. 14.\n\nInventory decreases by Rs. 12 (cost of goods), and cost of sales (expense) increases by Rs. 12.\n\nThis follows the double-entry system and the Golden Rules for Personal and Real Accounts."
     },
     {
       "question_id": "2361441451",
@@ -82,7 +82,7 @@
         "D": "Cash -20 in Assets ; Outstanding Salary +20 in Expense"
       },
       "correct_option_label": "C",
-      "explanation": "Payment of salary is an expense and reduces cash (asset). Expense accounts are debited, and the cash account is credited as per Nominal Account rules: Debit all expenses & losses; Credit all incomes & gains. Here, both are negative to show outflow."
+      "explanation": "Payment of salary is an expense and reduces cash (asset).\n\nExpense accounts are debited, and the cash account is credited as per Nominal Account rules: \n\nDebit all expenses & losses; Credit all incomes & gains.\n\nHere, both are negative to show outflow."
     },
     {
       "question_id": "2361441452",
@@ -98,7 +98,7 @@
         "D": "Sales A/c"
       },
       "correct_option_label": "B",
-      "explanation": "Real Accounts relate to assets of the business. ‘Cash and Bank A/c’ represents tangible assets and fits in the Real Account category. Other options represent Nominal (Incomes), or Personal (Capital)."
+      "explanation": "Real Accounts relate to assets of the business. \n\n‘Cash and Bank A/c’ represents tangible assets and fits in the Real Account category.\n\nOther options represent Nominal (Incomes), or Personal (Capital)."
     },
     {
       "question_id": "2361441453",
@@ -114,7 +114,7 @@
         "D": "Debit: Interest Income Rs. 15 Lakhs; Credit: Interest Accrued Rs. 15 Lakhs"
       },
       "correct_option_label": "A",
-      "explanation": "The interest for Jan-Mar (3 months) is accrued but not received. Accrual accounting requires revenue to be recorded when earned, not when received. Debit 'Interest Accrued' (asset/receivable) and credit 'Interest Income' (income). Rs. 500 lakhs × 12% × 3/12 = Rs. 15 lakhs."
+      "explanation": "The interest for Jan-Mar (3 months) is accrued but not received.\n\nAccrual accounting requires revenue to be recorded when earned, not when received.\n\nDebit 'Interest Accrued' (asset/receivable) and credit 'Interest Income' (income).\n\nRs. 500 lakhs × 12% × 3/12 = Rs. 15 lakhs."
     },
     {
       "question_id": "2361441454",
@@ -146,7 +146,7 @@
         "D": "Cash Flow from Financing Activities"
       },
       "correct_option_label": "D",
-      "explanation": "Dividend payments to shareholders are classified under Cash Flow from Financing Activities in the Cash Flow Statement, since dividends relate to funding the business (capital structure), not operating or investing activities."
+      "explanation": "Dividend payments to shareholders are classified under Cash Flow from Financing Activities in the Cash Flow Statement,\n\nsince dividends relate to funding the business (capital structure), not operating or investing activities."
     },
     {
       "question_id": "2361441456",
@@ -162,7 +162,7 @@
         "D": "Cash Flow from Financing Activities"
       },
       "correct_option_label": "A",
-      "explanation": "The purchase of fixed assets such as machinery is classified as an investing activity. Investing activities reflect the cash used to acquire or dispose of long-term assets."
+      "explanation": "The purchase of fixed assets such as machinery is classified as an investing activity.\n\nInvesting activities reflect the cash used to acquire or dispose of long-term assets."
     },
     {
       "question_id": "2361441457",
@@ -178,7 +178,7 @@
         "D": "Debit: Raw Material Consumption Rs. 300 lakhs; Credit: Raw material Rs. 300 lakhs"
       },
       "correct_option_label": "A",
-      "explanation": "Consumption = Opening + Purchases – Closing = 0 + 300 - 30 = 270 lakhs. The materials consumed are transferred from inventory (asset) to expense (PF&L). Debit Raw Material Consumption (expense increases), Credit Raw Material (asset decreases)."
+      "explanation": "Consumption = Opening + Purchases – Closing = 0 + 300 - 30 = 270 lakhs.\n\nThe materials consumed are transferred from inventory (asset) to expense (PF&L).\n\nDebit Raw Material Consumption (expense increases), Credit Raw Material (asset decreases)."
     },
     {
       "question_id": "2361441458",
@@ -226,7 +226,7 @@
         "D": "Rs. 1200 lakhs"
       },
       "correct_option_label": "C",
-      "explanation": "Average profit = 600/3 = 200 lakhs. Goodwill = 3 × 200 = 600 lakhs. Anita's share = 1/3 of Rs. 600 lakhs = Rs. 200 lakhs. The calculation follows the goodwill valuation and partnership retirement settlement concepts."
+      "explanation": "Average profit = 600/3 = 200 lakhs.\n\nGoodwill = 3 × 200 = 600 lakhs.\n\nAnita's share = 1/3 of Rs. 600 lakhs = Rs. 200 lakhs.\n\nThe calculation follows the goodwill valuation and partnership retirement settlement concepts."
     },
     {
       "question_id": "2361441461",
@@ -242,7 +242,7 @@
         "D": "Consistency"
       },
       "correct_option_label": "C",
-      "explanation": "The Money Measurement Concept states that only transactions/measurable events in monetary terms are recorded in the books of accounts. Awards, unless there is a clear monetary benefit, are not recorded."
+      "explanation": "The Money Measurement Concept states that only transactions/measurable events in monetary terms are recorded in the books of accounts.\n\nAwards, unless there is a clear monetary benefit, are not recorded."
     },
     {
       "question_id": "2361441462",
@@ -274,7 +274,7 @@
         "D": "Consistency"
       },
       "correct_option_label": "C",
-      "explanation": "Conservatism or Prudence Principle states that anticipated losses should be accounted for, but not gains. Therefore, inventory is valued at cost or market price, whichever is lower."
+      "explanation": "Conservatism or Prudence Principle states that anticipated losses should be accounted for, but not gains.\n\nTherefore, inventory is valued at cost or market price, whichever is lower."
     },
     {
       "question_id": "2361441464",
@@ -290,7 +290,7 @@
         "D": "Consistency"
       },
       "correct_option_label": "A",
-      "explanation": "Materiality concept allows accountants to expense items that are of relatively low value, as tracking them separately as assets does not materially affect financial statements."
+      "explanation": "Materiality concept allows accountants to expense items that are of relatively low value,\n\nas tracking them separately as assets does not materially affect financial statements."
     },
     {
       "question_id": "2361441465",
@@ -306,7 +306,7 @@
         "D": "Rs. 150 cr."
       },
       "correct_option_label": "D",
-      "explanation": "Percentage of completion method recognizes revenue and profit in proportion to work completed. Yr 1: (Rs. 500 cr. expenses / Rs. 2000 cr. total) × Profit (Rs. 600 cr.) = Rs. 150 cr."
+      "explanation": "Percentage of completion method recognizes revenue and profit in proportion to work completed.\n\nYr 1: (Rs. 500 cr. expenses / Rs. 2000 cr. total) × Profit (Rs. 600 cr.) = Rs. 150 cr."
     },
     {
       "question_id": "2361441466",
@@ -322,7 +322,7 @@
         "D": "Rs. 150 cr."
       },
       "correct_option_label": "C",
-      "explanation": "Under the Completed Contract Method, revenue and profit are recognized only when the contract is completed, not in progress; so zero profit recognized in Year 1."
+      "explanation": "Under the Completed Contract Method,\n\nrevenue and profit are recognized only when the contract is completed, not in progress; so zero profit recognized in Year 1."
     },
     {
       "question_id": "2361441467",
@@ -338,7 +338,7 @@
         "D": "When the amount is fully collected from the customer"
       },
       "correct_option_label": "C",
-      "explanation": "In Cost-First-Recovery, profit is recognized when collections from customers equal total cost of the project. After costs are recovered, further collections contribute to profit."
+      "explanation": "In Cost-First-Recovery, profit is recognized when collections from customers equal total cost of the project.\n\nAfter costs are recovered, further collections contribute to profit."
     },
     {
       "question_id": "2361441468",
@@ -354,7 +354,7 @@
         "D": "When the amount is fully collected from the customer"
       },
       "correct_option_label": "A",
-      "explanation": "Installment Method recognizes profit in proportion to collection from the customer, as and when installments are received."
+      "explanation": "Installment Method recognizes profit in proportion to collection from the customer,\n\nas and when installments are received."
     },
     {
       "question_id": "2361441469",
@@ -370,7 +370,7 @@
         "D": "Decrease in Receivables; Decrease in Profit"
       },
       "correct_option_label": "C",
-      "explanation": "When an amount is written off, Receivables and Provision for Doubtful Debt both decrease. If provision exists, profit is not affected (no new expense)."
+      "explanation": "When an amount is written off, Receivables and Provision for Doubtful Debt both decrease.\n\nIf provision exists, profit is not affected (no new expense)."
     },
     {
       "question_id": "2361441470",
@@ -386,7 +386,7 @@
         "D": "Only Provision for Warranty Expenses A/c"
       },
       "correct_option_label": "C",
-      "explanation": "The cost of the component is removed from inventory (asset decreases), and provision for warranty expense (liability) is also reduced, because the previously provided liability is now utilized."
+      "explanation": "The cost of the component is removed from inventory (asset decreases),\n\nand provision for warranty expense (liability) is also reduced, because the previously provided liability is now utilized."
     },
     {
       "question_id": "2361441471",
@@ -402,7 +402,7 @@
         "D": "Percentage of Completion Method"
       },
       "correct_option_label": "B",
-      "explanation": "Cost-first-recovery Method recognizes profit only after cost is recovered through collections. Both cost incurred and cash collected are considered in determining profit recognition."
+      "explanation": "Cost-first-recovery Method recognizes profit only after cost is recovered through collections.\n\nBoth cost incurred and cash collected are considered in determining profit recognition."
     },
     {
       "question_id": "2361441472",
@@ -434,7 +434,7 @@
         "D": "3600"
       },
       "correct_option_label": "D",
-      "explanation": "LIFO (Last-In, First-Out): The newest goods (costliest) are sold first, leaving the oldest as ending inventory. 20 units remain (all from initial stock): 20 × Rs. 180 = Rs. 3,600."
+      "explanation": "LIFO (Last-In, First-Out): The newest goods (costliest) are sold first, leaving the oldest as ending inventory.\n\n20 units remain (all from initial stock): 20 × Rs. 180 = Rs. 3,600."
     },
     {
       "question_id": "2361441474",
@@ -450,7 +450,7 @@
         "D": "3600"
       },
       "correct_option_label": "B",
-      "explanation": "FIFO (First-In, First-Out): The oldest inventory is sold first; ending inventory consists of the most recent purchases. 20 units × Rs. 200 = Rs. 4,000."
+      "explanation": "FIFO (First-In, First-Out): The oldest inventory is sold first; ending inventory consists of the most recent purchases.\n\n20 units × Rs. 200 = Rs. 4,000."
     },
     {
       "question_id": "2361441475",
@@ -466,7 +466,7 @@
         "D": "19450"
       },
       "correct_option_label": "C",
-      "explanation": "Weighted average cost = (200×31 + 400×40)/600 = Rs. 37. Mean cost × 550 units = 37×550 = Rs. 20,350."
+      "explanation": "Weighted average cost = (200×31 + 400×40)/600 = Rs. 37.\n\nMean cost × 550 units = 37×550 = Rs. 20,350."
     },
     {
       "question_id": "2361441476",
@@ -482,7 +482,7 @@
         "D": "Rs. 40 lakhs"
       },
       "correct_option_label": "A",
-      "explanation": "Cost of goods sold = Sales × (1 – Gross Margin) = 500 × 0.8 = 400 lakhs. Closing inventory = Opening + Purchases – COGS = 60 + 480 – 400 = 140 lakhs."
+      "explanation": "Cost of goods sold = Sales × (1 – Gross Margin) = 500 × 0.8 = 400 lakhs.\n\nClosing inventory = Opening + Purchases – COGS = 60 + 480 – 400 = 140 lakhs."
     },
     {
       "question_id": "2361441477",
@@ -498,7 +498,7 @@
         "D": "250000"
       },
       "correct_option_label": "A",
-      "explanation": "As per conservatism, inventory is valued at cost or market value, whichever is lower. Market value (Rs. 200,000) is less than FIFO/LIFO values; thus, report inventory at Rs. 200,000."
+      "explanation": "As per conservatism, inventory is valued at cost or market value, whichever is lower.\n\nMarket value (Rs. 200,000) is less than FIFO/LIFO values; thus, report inventory at Rs. 200,000."
     },
     {
       "question_id": "2361441478",
@@ -514,7 +514,7 @@
         "D": "Rs. 30 lakhs"
       },
       "correct_option_label": "C",
-      "explanation": "Straight Line Depreciation per year = 100/10 = Rs. 10 lakhs. Depreciation for 4 years = 4 × 10 = Rs. 40 lakhs. WDV = 100 – 40 = Rs. 60 lakhs."
+      "explanation": "Straight Line Depreciation per year = 100/10 = Rs. 10 lakhs.\n\nDepreciation for 4 years = 4 × 10 = Rs. 40 lakhs.\n\nWDV = 100 – 40 = Rs. 60 lakhs."
     },
     {
       "question_id": "2361441479",
@@ -530,7 +530,7 @@
         "D": "Rs. 32.42 lakhs"
       },
       "correct_option_label": "C",
-      "explanation": "WDV: Y1-100×0.8=80; Y2-80×0.8=64; Y3-64×0.8=51.2; Y4-51.2×0.8=40.96 lakhs."
+      "explanation": "WDV: Y1-100×0.8=80;\n\nY2-80×0.8=64;\n\nY3-64×0.8=51.2;\n\nY4-51.2×0.8=40.96 lakhs."
     },
     {
       "question_id": "2361441480",
@@ -546,7 +546,7 @@
         "D": "Rs. 70 lakhs"
       },
       "correct_option_label": "C",
-      "explanation": "SYD: Total years digit = 55. Depreciation: Yr1-10/55×100=18.18, Yr2-9/55×100=16.36, Yr3-8/55×100=14.55, Yr4-7/55×100=12.73; Total depn first 4 years=61.82. Value at end =100–61.82=38.18 lakhs."
+      "explanation": "SYD: Total years digit = 55.\n\nDepreciation: Yr1-10/55×100=18.18,\n\nYr2-9/55×100=16.36,\n\nYr3-8/55×100=14.55,\n\nYr4-7/55×100=12.73;\n\nTotal depn first 4 years=61.82.\n\nValue at end =100–61.82=38.18 lakhs."
     },
     {
       "question_id": "2361441481",
@@ -562,7 +562,7 @@
         "D": "Cash +25; Machine -100; Loss on sale of Machine -5"
       },
       "correct_option_label": "A",
-      "explanation": "At time of sale, remove asset at cost (–100), add accumulated depreciation (+70), add cash received (+25). The shortfall (sale value < NBV) is recognized as a loss (–5)."
+      "explanation": "At time of sale, remove asset at cost (–100), add accumulated depreciation (+70), add cash received (+25).\n\nThe shortfall (sale value < NBV) is recognized as a loss (–5)."
     },
     {
       "question_id": "2361441482",
@@ -642,7 +642,7 @@
         "D": "The firm is creating capacity"
       },
       "correct_option_label": "D",
-      "explanation": "Capital work-in-progress represents expenditure on fixed assets under construction. An increase shows the company is investing in new capacity (assets being created)."
+      "explanation": "Capital work-in-progress represents expenditure on fixed assets under construction.\n\nAn increase shows the company is investing in new capacity (assets being created)."
     },
     {
       "question_id": "2361441487",
@@ -658,7 +658,7 @@
         "D": "Profit on sale of assets"
       },
       "correct_option_label": "B",
-      "explanation": "Other Income includes all such items as Interest Income, Dividend Income, and Profit from sale of assets, since these are incidental and not from main business operations."
+      "explanation": "Other Income includes all such items as Interest Income, Dividend Income, and Profit from sale of assets,\n\nsince these are incidental and not from main business operations."
     },
     {
       "question_id": "2361441488",
@@ -674,7 +674,7 @@
         "D": "Cash Flow from Finance Activities"
       },
       "correct_option_label": "B",
-      "explanation": "Cash paid to suppliers is part of Operating Activities, as it relates to the principal revenue-producing activities of the entity."
+      "explanation": "Cash paid to suppliers is part of Operating Activities,\n\nas it relates to the principal revenue-producing activities of the entity."
     },
     {
       "question_id": "2361441489",
@@ -690,7 +690,7 @@
         "D": "Will not appear in the cash flow statement"
       },
       "correct_option_label": "B",
-      "explanation": "Loan repayments are classified under Financing Activities, as loans affect the capital structure of the company."
+      "explanation": "Loan repayments are classified under Financing Activities,\n\nas loans affect the capital structure of the company."
     },
     {
       "question_id": "2361441490",
@@ -722,7 +722,7 @@
         "D": "Asset Turnover Ratio"
       },
       "correct_option_label": "A",
-      "explanation": "Collection Days (Receivables Days) tell how quickly a business collects dues from customers. A lower number indicates faster collection and less credit risk."
+      "explanation": "Collection Days (Receivables Days) tell how quickly a business collects dues from customers.\n\nA lower number indicates faster collection and less credit risk."
     },
     {
       "question_id": "2361441492",
@@ -770,7 +770,7 @@
         "D": "Return on Total Assets and Profit Margin"
       },
       "correct_option_label": "A",
-      "explanation": "Payables leverage reduces capital need and can improve profitability. ROCE and ROTA capture the effect of payables and asset use on returns."
+      "explanation": "Payables leverage reduces capital need and can improve profitability.\n\nROCE and ROTA capture the effect of payables and asset use on returns."
     },
     {
       "question_id": "2361441495",
