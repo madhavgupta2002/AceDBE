@@ -30,7 +30,7 @@
         "D": "Between 0.50 and 0.75"
       },
       "correct_option_label": "A",
-      "explanation": "**Formula:** Poisson $P(X \\geq k) = 1 - P(X < k)$\n\n**Steps:**\n- Rate = 32/hour\n- For 30 min, $\\lambda = 32 \\times 0.5 = 16$\n- $P(X \\geq 13) = 1 - P(X \\leq 12)$\n- Using Poisson($\\lambda=16$), $P(X \\leq 12) \\approx 0.22$\n- So $P(X \\geq 13) \\approx 0.78$\n\n**Result:** Between 0.75 and 1.00"
+      "explanation": "**Formula:** Poisson: $P(X = k) = \\frac{e^{-\\lambda} \\lambda^k}{k!}$\n\n$P(X \\geq 13) = 1 - P(X \\leq 12) = 1 - \\sum_{k=0}^{12} \\frac{e^{-16} 16^k}{k!}$\n\n**Steps:**\n- Rate = 32/hour\n- For 30 min, $\\lambda = 32 \\times 0.5 = 16$\n- $P(X \\geq 13) = 1 - P(X \\leq 12)$\n- Explicitly, $P(X \\leq 12) = \\sum_{k=0}^{12} \\frac{e^{-16} 16^k}{k!}$\n- $P(X \\leq 12) \\approx 0.22$\n- So $P(X \\geq 13) \\approx 1 - 0.22 = 0.78$\n\n**Result:** Between 0.75 and 1.00"
     },
     {
       "question_id": "STAT_MT_Q3",
