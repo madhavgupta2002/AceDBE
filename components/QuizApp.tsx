@@ -569,12 +569,30 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                           : 'bg-red-900/30 border-red-800'
                           }`}
                       >
+                        {/* Module and Source Metadata Box */}
+                        {(q.module || q.source) && (
+                          <div className="mb-3 inline-block">
+                            <div className="flex gap-2 text-xs">
+                              {q.module && (
+                                <span className="px-2 py-1 bg-indigo-900/50 border border-indigo-700 text-indigo-300 font-medium">
+                                  Mod {q.module}
+                                </span>
+                              )}
+                              {q.source && (
+                                <span className="px-2 py-1 bg-purple-900/50 border border-purple-700 text-purple-300 font-medium">
+                                  {q.source}
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        )}
+                        {/* Question Text */}
                         <div className="text-white mb-2 text-sm sm:text-base prose prose-invert prose-indigo max-w-none">
                           <ReactMarkdown
                             remarkPlugins={[remarkGfm, remarkMath]}
                             rehypePlugins={[rehypeKatex]}
                           >
-                            {`${q.module ? `[Mod ${q.module}] ` : ''}${q.source ? `[${q.source}] ` : ''}${q.text}`}
+                            {q.text}
                           </ReactMarkdown>
                         </div>
                         <div className="space-y-1 mb-3">
@@ -644,12 +662,30 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                         key={index}
                         className="mb-4 p-4 bg-red-900/30 border border-red-800"
                       >
+                        {/* Module and Source Metadata Box */}
+                        {(q.module || q.source) && (
+                          <div className="mb-3 inline-block">
+                            <div className="flex gap-2 text-xs">
+                              {q.module && (
+                                <span className="px-2 py-1 bg-indigo-900/50 border border-indigo-700 text-indigo-300 font-medium">
+                                  Mod {q.module}
+                                </span>
+                              )}
+                              {q.source && (
+                                <span className="px-2 py-1 bg-purple-900/50 border border-purple-700 text-purple-300 font-medium">
+                                  {q.source}
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                        )}
+                        {/* Question Text */}
                         <div className="text-white mb-2 text-sm sm:text-base prose prose-invert prose-indigo max-w-none">
                           <ReactMarkdown
                             remarkPlugins={[remarkGfm, remarkMath]}
                             rehypePlugins={[rehypeKatex]}
                           >
-                            {`${q.module ? `[Mod ${q.module}] ` : ''}${q.source ? `[${q.source}] ` : ''}${q.text}`}
+                            {q.text}
                           </ReactMarkdown>
                         </div>
                         <div className="space-y-1 mb-3">
