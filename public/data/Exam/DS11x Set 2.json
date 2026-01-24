@@ -97,7 +97,8 @@
         "C": "Between 0.50 and 0.75",
         "D": "Between 0.75 and 0.99"
       },
-      "correct_option_label": "B"
+      "correct_option_label": "B",
+      "explanation": "**Formula:** $P(\\text{Overseas} \\mid \\text{Meets TS}) = \\frac{P(\\text{Overseas and Meets TS})}{P(\\text{Meets TS})}$\n\n**Steps:**\n- $P(\\text{Domestic}) = 0.55 \\Rightarrow P(\\text{Overseas}) = 0.45$\n- $P(\\text{Domestic and Meets TS}) = 0.40$\n- $P(\\text{Overseas and Not Meets TS}) = 0.10$\n- $P(\\text{Overseas and Meets TS}) = 0.45 - 0.10 = 0.35$\n- $P(\\text{Meets TS}) = 0.40 + 0.35 = 0.75$\n- $P(\\text{Overseas} \\mid \\text{Meets TS}) = \\frac{0.35}{0.75} \\approx 0.47$\n\n**Result:** Between 0.25 and 0.50"
     },
     {
       "question_id": "7",

@@ -26,7 +26,10 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: 'AceDBE - Practice Portal',
+  title: {
+    default: 'AceDBE - Practice Portal',
+    template: '%s - AceDBE',
+  },
   description: 'AceDBE Practice portal for BBA-DBE course questions',
 };
 
