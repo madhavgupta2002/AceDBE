@@ -17,7 +17,7 @@ import AnswerStatus from './AnswerStatus';
 import ModuleSelector from './ModuleSelector';
 import UnifiedQuizSelector from './UnifiedQuizSelector';
 import Header from './Header';
-import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube } from 'lucide-react';
+import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube, Search } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -59,6 +59,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
   // Master answered questions array that always corresponds to allQuestions (never filtered)
   const [masterAnsweredQuestions, setMasterAnsweredQuestions] = useState<(string[] | null)[]>([]);
   const [reviseMode, setReviseMode] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
   // Helper function to create YouTube playlist URL from video links
   const createPlaylistUrl = (videoLinks: string[]): string => {
@@ -445,6 +446,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     setShowAllQuestions(false);
     setHideWrongOptions(false);
     setReviseMode(false);
+    setSearchQuery('');
   };
 
   const confirmGoToMainMenu = () => {
@@ -628,27 +630,43 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                 </>
               )}
 
-              <div className="mt-6 mb-4 flex flex-wrap justify-end gap-3">
-                {!reviseMode && (
+              <div className="mt-6 mb-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                {/* Search Box */}
+                <div className="flex-1 relative">
+                  <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
+                    <Search className="h-5 w-5 text-gray-400" />
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Search questions or options..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full pl-10 pr-4 py-2 bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-200"
+                  />
+                </div>
+
+                <div className="flex flex-wrap justify-end gap-3 shrink-0">
+                  {!reviseMode && (
+                    <button
+                      onClick={() => setShowAllQuestions(!showAllQuestions)}
+                      className={`px-4 py-2 border font-semibold transition duration-200 ${showAllQuestions
+                        ? 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
+                        : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
+                        }`}
+                    >
+                      {showAllQuestions ? 'All Questions' : 'Incorrect Questions'}
+                    </button>
+                  )}
                   <button
-                    onClick={() => setShowAllQuestions(!showAllQuestions)}
-                    className={`px-4 py-2 border font-semibold transition duration-200 ${showAllQuestions
+                    onClick={() => setHideWrongOptions(!hideWrongOptions)}
+                    className={`px-4 py-2 border font-semibold transition duration-200 ${hideWrongOptions
                       ? 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
                       : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
                       }`}
                   >
-                    {showAllQuestions ? 'All Questions' : 'Incorrect Questions'}
+                    {hideWrongOptions ? 'Hide Options' : 'Show Options'}
                   </button>
-                )}
-                <button
-                  onClick={() => setHideWrongOptions(!hideWrongOptions)}
-                  className={`px-4 py-2 border font-semibold transition duration-200 ${hideWrongOptions
-                    ? 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
-                    : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
-                    }`}
-                >
-                  {hideWrongOptions ? 'Hide Options' : 'Show Options'}
-                </button>
+                </div>
               </div>
 
               {(showAllQuestions || reviseMode) ? (
@@ -656,103 +674,119 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                   <h3 className="text-lg sm:text-xl font-bold mb-4 text-white">
                     All Questions:
                   </h3>
-                  {quizState.questions.map((q, index) => {
-                    const userAnswer = quizState.answeredQuestions[index];
-                    // Check if arrays are equal
-                    const isCorrect = userAnswer !== null &&
-                      userAnswer.length === q.correctAnswer.length &&
-                      userAnswer.every(ans => q.correctAnswer.includes(ans));
+                  {quizState.questions
+                    .map((q, idx) => ({ q, idx }))
+                    .filter(({ q }) => {
+                      if (!searchQuery) return true;
+                      const query = searchQuery.toLowerCase();
+                      return q.text.toLowerCase().includes(query) ||
+                        Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(query));
+                    })
+                    .map(({ q, idx }) => {
+                      const userAnswer = quizState.answeredQuestions[idx];
+                      // Check if arrays are equal
+                      const isCorrect = userAnswer !== null &&
+                        userAnswer.length === q.correctAnswer.length &&
+                        userAnswer.every(ans => q.correctAnswer.includes(ans));
 
-                    return (
-                      <div
-                        key={index}
-                        className={`mb-4 p-4 border ${isCorrect
-                          ? 'bg-green-900/20 border-green-800'
-                          : 'bg-red-900/30 border-red-800'
-                          }`}
-                      >
-                        {/* Question Number, Module, and Source Metadata */}
-                        <div className="mb-3 flex items-center justify-between">
-                          <span className="px-2 py-0.5 bg-gray-700/50 border border-gray-600 text-gray-300 font-medium text-xs">
-                            Q{index + 1}
-                          </span>
-                          <div className="flex gap-2 text-xs">
-                            {q.module && (
-                              <span className="px-2 py-1 bg-indigo-900/50 border border-indigo-700 text-indigo-300 font-medium">
-                                Mod {q.module}
-                              </span>
-                            )}
-                            {q.source && (
-                              <span className="px-2 py-1 bg-purple-900/50 border border-purple-700 text-purple-300 font-medium">
-                                {q.source}
-                              </span>
-                            )}
+                      return (
+                        <div
+                          key={idx}
+                          className={`mb-4 p-4 border ${isCorrect
+                            ? 'bg-green-900/20 border-green-800'
+                            : 'bg-red-900/30 border-red-800'
+                            }`}
+                        >
+                          {/* Question Number, Module, and Source Metadata */}
+                          <div className="mb-3 flex items-center justify-between">
+                            <span className="px-2 py-0.5 bg-gray-700/50 border border-gray-600 text-gray-300 font-medium text-xs">
+                              Q{idx + 1}
+                            </span>
+                            <div className="flex gap-2 text-xs">
+                              {q.module && (
+                                <span className="px-2 py-1 bg-indigo-900/50 border border-indigo-700 text-indigo-300 font-medium">
+                                  Mod {q.module}
+                                </span>
+                              )}
+                              {q.source && (
+                                <span className="px-2 py-1 bg-purple-900/50 border border-purple-700 text-purple-300 font-medium">
+                                  {q.source}
+                                </span>
+                              )}
+                            </div>
                           </div>
-                        </div>
-                        {/* Question Text */}
-                        <div className="text-white mb-2 text-sm sm:text-base prose prose-invert prose-indigo max-w-none">
-                          <ReactMarkdown
-                            remarkPlugins={[remarkGfm, remarkMath]}
-                            rehypePlugins={[rehypeKatex]}
-                          >
-                            {q.text}
-                          </ReactMarkdown>
-                        </div>
-                        <div className="space-y-1 mb-3">
-                          {Object.entries(q.options)
-                            .filter(([key]) => {
-                              if (!hideWrongOptions) {
-                                // By default (hideWrongOptions=false), only show correct answers
-                                return q.correctAnswer.includes(key);
-                              }
-                              // When toggle is on (hideWrongOptions=true), show all options
-                              return true;
-                            })
-                            .map(([key, optionValue]) => {
-                              const isUserAnswer = userAnswer?.includes(key) || false;
-                              const isCorrectAnswer = q.correctAnswer.includes(key);
-
-                              return (
-                                <div
-                                  key={key}
-                                  className={`text-sm flex gap-2 ${isCorrectAnswer
-                                    ? 'font-bold text-green-400'
-                                    : isUserAnswer
-                                      ? 'text-red-400'
-                                      : 'text-gray-400'
-                                    }`}
-                                >
-                                  <span className="shrink-0">{key}:</span>
-                                  <span className="prose prose-invert prose-indigo max-w-none prose-p:inline text-current">
-                                    <ReactMarkdown
-                                      remarkPlugins={[remarkGfm, remarkMath]}
-                                      rehypePlugins={[rehypeKatex]}
-                                      components={{
-                                        p: ({ children }: any) => <span className="inline">{children}</span>,
-                                      }}
-                                    >
-                                      {optionValue || ''}
-                                    </ReactMarkdown>
-                                    {isCorrectAnswer && ' ✓'}
-                                    {isUserAnswer && !isCorrectAnswer && ' (Your answer)'}
-                                  </span>
-                                </div>
-                              );
-                            })}
-                        </div>
-                        {q.explanation && (
-                          <div className="mt-2 text-xs sm:text-sm text-blue-300 bg-blue-900/10 p-2 border-l-2 border-blue-700 prose prose-invert prose-indigo max-w-none">
+                          {/* Question Text */}
+                          <div className="text-white mb-2 text-sm sm:text-base prose prose-invert prose-indigo max-w-none">
                             <ReactMarkdown
                               remarkPlugins={[remarkGfm, remarkMath]}
                               rehypePlugins={[rehypeKatex]}
                             >
-                              {`${q.explanation}`}
+                              {q.text}
                             </ReactMarkdown>
                           </div>
-                        )}
-                      </div>
-                    );
-                  })}
+                          <div className="space-y-1 mb-3">
+                            {Object.entries(q.options)
+                              .filter(([key]) => {
+                                if (!hideWrongOptions) {
+                                  // By default (hideWrongOptions=false), only show correct answers
+                                  return q.correctAnswer.includes(key);
+                                }
+                                // When toggle is on (hideWrongOptions=true), show all options
+                                return true;
+                              })
+                              .map(([key, optionValue]) => {
+                                const isUserAnswer = userAnswer?.includes(key) || false;
+                                const isCorrectAnswer = q.correctAnswer.includes(key);
+
+                                return (
+                                  <div
+                                    key={key}
+                                    className={`text-sm flex gap-2 ${isCorrectAnswer
+                                      ? 'font-bold text-green-400'
+                                      : isUserAnswer
+                                        ? 'text-red-400'
+                                        : 'text-gray-400'
+                                      }`}
+                                  >
+                                    <span className="shrink-0">{key}:</span>
+                                    <span className="prose prose-invert prose-indigo max-w-none prose-p:inline text-current">
+                                      <ReactMarkdown
+                                        remarkPlugins={[remarkGfm, remarkMath]}
+                                        rehypePlugins={[rehypeKatex]}
+                                        components={{
+                                          p: ({ children }: any) => <span className="inline">{children}</span>,
+                                        }}
+                                      >
+                                        {optionValue || ''}
+                                      </ReactMarkdown>
+                                      {isCorrectAnswer && ' ✓'}
+                                      {isUserAnswer && !isCorrectAnswer && ' (Your answer)'}
+                                    </span>
+                                  </div>
+                                );
+                              })}
+                          </div>
+                          {q.explanation && (
+                            <div className="mt-2 text-xs sm:text-sm text-blue-300 bg-blue-900/10 p-2 border-l-2 border-blue-700 prose prose-invert prose-indigo max-w-none">
+                              <ReactMarkdown
+                                remarkPlugins={[remarkGfm, remarkMath]}
+                                rehypePlugins={[rehypeKatex]}
+                              >
+                                {`${q.explanation}`}
+                              </ReactMarkdown>
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  {quizState.questions.filter(q => {
+                    if (!searchQuery) return true;
+                    const query = searchQuery.toLowerCase();
+                    return q.text.toLowerCase().includes(query) ||
+                      Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(query));
+                  }).length === 0 && (
+                      <p className="text-gray-400 text-center py-8">No matching questions found.</p>
+                    )}
                 </div>
               ) : (
                 quizState.incorrectAnswers.length > 0 && (
@@ -760,92 +794,107 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                     <h3 className="text-lg sm:text-xl font-bold mb-4 text-white">
                       Incorrect Answers:
                     </h3>
-                    {quizState.incorrectAnswers.map((q, index) => (
-                      <div
-                        key={index}
-                        className="mb-4 p-4 bg-red-900/30 border border-red-800"
-                      >
-                        {/* Question Number, Module, and Source Metadata */}
-                        <div className="mb-3 flex items-center justify-between">
-                          <span className="px-2 py-0.5 bg-gray-700/50 border border-gray-600 text-gray-300 font-medium text-xs">
-                            Q{quizState.questions.indexOf(q) + 1}
-                          </span>
-                          <div className="flex gap-2 text-xs">
-                            {q.module && (
-                              <span className="px-2 py-1 bg-indigo-900/50 border border-indigo-700 text-indigo-300 font-medium">
-                                Mod {q.module}
-                              </span>
-                            )}
-                            {q.source && (
-                              <span className="px-2 py-1 bg-purple-900/50 border border-purple-700 text-purple-300 font-medium">
-                                {q.source}
-                              </span>
-                            )}
+                    {quizState.incorrectAnswers
+                      .filter(q => {
+                        if (!searchQuery) return true;
+                        const query = searchQuery.toLowerCase();
+                        return q.text.toLowerCase().includes(query) ||
+                          Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(query));
+                      })
+                      .map((q, index) => (
+                        <div
+                          key={index}
+                          className="mb-4 p-4 bg-red-900/30 border border-red-800"
+                        >
+                          {/* Question Number, Module, and Source Metadata */}
+                          <div className="mb-3 flex items-center justify-between">
+                            <span className="px-2 py-0.5 bg-gray-700/50 border border-gray-600 text-gray-300 font-medium text-xs">
+                              Q{quizState.questions.indexOf(q) + 1}
+                            </span>
+                            <div className="flex gap-2 text-xs">
+                              {q.module && (
+                                <span className="px-2 py-1 bg-indigo-900/50 border border-indigo-700 text-indigo-300 font-medium">
+                                  Mod {q.module}
+                                </span>
+                              )}
+                              {q.source && (
+                                <span className="px-2 py-1 bg-purple-900/50 border border-purple-700 text-purple-300 font-medium">
+                                  {q.source}
+                                </span>
+                              )}
+                            </div>
                           </div>
-                        </div>
-                        {/* Question Text */}
-                        <div className="text-white mb-2 text-sm sm:text-base prose prose-invert prose-indigo max-w-none">
-                          <ReactMarkdown
-                            remarkPlugins={[remarkGfm, remarkMath]}
-                            rehypePlugins={[rehypeKatex]}
-                          >
-                            {q.text}
-                          </ReactMarkdown>
-                        </div>
-                        <div className="space-y-1 mb-3">
-                          {Object.entries(q.options)
-                            .filter(([key]) => {
-                              if (!hideWrongOptions) {
-                                // By default (hideWrongOptions=false), only show correct answers
-                                return q.correctAnswer.includes(key);
-                              }
-                              // When toggle is on (hideWrongOptions=true), show all options
-                              return true;
-                            })
-                            .map(([key, optionValue]) => {
-                              const isUserAnswer = q.selectedAnswer?.includes(key) || false;
-                              const isCorrectAnswer = q.correctAnswer.includes(key);
-
-                              return (
-                                <div
-                                  key={key}
-                                  className={`text-sm flex gap-2 ${isCorrectAnswer
-                                    ? 'font-bold text-green-400'
-                                    : isUserAnswer
-                                      ? 'text-red-400'
-                                      : 'text-gray-400'
-                                    }`}
-                                >
-                                  <span className="shrink-0">{key}:</span>
-                                  <span className="prose prose-invert prose-indigo max-w-none prose-p:inline text-current">
-                                    <ReactMarkdown
-                                      remarkPlugins={[remarkGfm, remarkMath]}
-                                      rehypePlugins={[rehypeKatex]}
-                                      components={{
-                                        p: ({ children }: any) => <span className="inline">{children}</span>,
-                                      }}
-                                    >
-                                      {optionValue || ''}
-                                    </ReactMarkdown>
-                                    {isCorrectAnswer && ' ✓'}
-                                    {isUserAnswer && ' (Your answer)'}
-                                  </span>
-                                </div>
-                              );
-                            })}
-                        </div>
-                        {q.explanation && (
-                          <div className="mt-2 text-xs sm:text-sm text-blue-300 bg-blue-900/10 p-2 border-l-2 border-blue-700 prose prose-invert prose-indigo max-w-none">
+                          {/* Question Text */}
+                          <div className="text-white mb-2 text-sm sm:text-base prose prose-invert prose-indigo max-w-none">
                             <ReactMarkdown
                               remarkPlugins={[remarkGfm, remarkMath]}
                               rehypePlugins={[rehypeKatex]}
                             >
-                              {`${q.explanation}`}
+                              {q.text}
                             </ReactMarkdown>
                           </div>
-                        )}
-                      </div>
-                    ))}
+                          <div className="space-y-1 mb-3">
+                            {Object.entries(q.options)
+                              .filter(([key]) => {
+                                if (!hideWrongOptions) {
+                                  // By default (hideWrongOptions=false), only show correct answers
+                                  return q.correctAnswer.includes(key);
+                                }
+                                // When toggle is on (hideWrongOptions=true), show all options
+                                return true;
+                              })
+                              .map(([key, optionValue]) => {
+                                const isUserAnswer = q.selectedAnswer?.includes(key) || false;
+                                const isCorrectAnswer = q.correctAnswer.includes(key);
+
+                                return (
+                                  <div
+                                    key={key}
+                                    className={`text-sm flex gap-2 ${isCorrectAnswer
+                                      ? 'font-bold text-green-400'
+                                      : isUserAnswer
+                                        ? 'text-red-400'
+                                        : 'text-gray-400'
+                                      }`}
+                                  >
+                                    <span className="shrink-0">{key}:</span>
+                                    <span className="prose prose-invert prose-indigo max-w-none prose-p:inline text-current">
+                                      <ReactMarkdown
+                                        remarkPlugins={[remarkGfm, remarkMath]}
+                                        rehypePlugins={[rehypeKatex]}
+                                        components={{
+                                          p: ({ children }: any) => <span className="inline">{children}</span>,
+                                        }}
+                                      >
+                                        {optionValue || ''}
+                                      </ReactMarkdown>
+                                      {isCorrectAnswer && ' ✓'}
+                                      {isUserAnswer && ' (Your answer)'}
+                                    </span>
+                                  </div>
+                                );
+                              })}
+                          </div>
+                          {q.explanation && (
+                            <div className="mt-2 text-xs sm:text-sm text-blue-300 bg-blue-900/10 p-2 border-l-2 border-blue-700 prose prose-invert prose-indigo max-w-none">
+                              <ReactMarkdown
+                                remarkPlugins={[remarkGfm, remarkMath]}
+                                rehypePlugins={[rehypeKatex]}
+                              >
+                                {`${q.explanation}`}
+                              </ReactMarkdown>
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    {quizState.incorrectAnswers.filter(q => {
+                      if (!searchQuery) return true;
+                      const query = searchQuery.toLowerCase();
+                      return q.text.toLowerCase().includes(query) ||
+                        Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(query));
+                    }).length === 0 && (
+                        <p className="text-gray-400 text-center py-8">No matching incorrect questions found.</p>
+                      )}
                   </div>
                 )
               )}
