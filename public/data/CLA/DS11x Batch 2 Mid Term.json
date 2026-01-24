@@ -16,7 +16,7 @@
         "D": "Between 9 and 11"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: s = √[Σ(xi - x̄)²/(n-1)]. Steps: Data: 12, 22, 20, 6, 5, 6, 20. Mean x̄ = 91/7 = 13. Deviations: -1, 9, 7, -7, -8, -7, 7. Squared: 1, 81, 49, 49, 64, 49, 49. Sum = 342. Variance = 342/6 = 57. s = √57 ≈ 7.55. Result: Between 7 and 9."
+      "explanation": "**Formula:** $s = \\sqrt{\\frac{\\sum(x_i - \\bar{x})^2}{n-1}}$\n\n**Steps:**\n- Data: 12, 22, 20, 6, 5, 6, 20\n- Mean $\\bar{x} = 91/7 = 13$\n- Deviations: -1, 9, 7, -7, -8, -7, 7\n- Squared: 1, 81, 49, 49, 64, 49, 49\n- Sum = 342\n- Variance = $342/6 = 57$\n- $s = \\sqrt{57} \\approx 7.55$\n\n**Result:** Between 7 and 9"
     },
     {
       "question_id": "STAT_MTB2_Q3",
@@ -30,7 +30,7 @@
         "D": "More than 1.5"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: CV = (s/x̄) × 100. Steps: From Q2, s ≈ 7.55, x̄ = 13. CV = 7.55/13 = 0.581 ≈ 0.58. Result: Between 0.5 and 1.0."
+      "explanation": "**Formula:** $CV = \\frac{s}{\\bar{x}} \\times 100$\n\n**Steps:**\n- From Q2, $s \\approx 7.55$, $\\bar{x} = 13$\n- $CV = \\frac{7.55}{13} = 0.581 \\approx 0.58$\n\n**Result:** Between 0.5 and 1.0"
     },
     {
       "question_id": "STAT_MTB2_Q4",
@@ -58,7 +58,7 @@
         "D": "16"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: Median = middle value when sorted. Steps: Sort: 5, 6, 6, 12, 20, 20, 22. For n=7 (odd), median = 4th value = 12. Result: 12."
+      "explanation": "**Formula:** Median = middle value when sorted\n\n**Steps:**\n- Sort: 5, 6, 6, 12, 20, 20, 22\n- For $n=7$ (odd), median = 4th value = 12\n\n**Result:** 12"
     },
     {
       "question_id": "STAT_MTB2_Q11",
@@ -72,7 +72,7 @@
         "D": "14"
       },
       "correct_option_label": "D",
-      "explanation": "Formula: IQR = Q3 - Q1. Steps: Sorted: 5, 6, 6, 12, 20, 20, 22. Q1 position = 0.25(7+1) = 2, Q1 = 6. Q3 position = 0.75(7+1) = 6, Q3 = 20. IQR = 20 - 6 = 14. Result: 14."
+      "explanation": "**Formula:** $IQR = Q_3 - Q_1$\n\n**Steps:**\n- Sorted: 5, 6, 6, 12, 20, 20, 22\n- $Q_1$ position = $0.25(7+1) = 2$, $Q_1 = 6$\n- $Q_3$ position = $0.75(7+1) = 6$, $Q_3 = 20$\n- $IQR = 20 - 6 = 14$\n\n**Result:** 14"
     },
     {
       "question_id": "STAT_MTB2_Q13",
@@ -86,7 +86,7 @@
         "D": "Between 21 and 23"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: Top of box = Q3. Steps: From Q11, Q3 = 20. The top of the box in a box plot represents Q3. Result: Between 19 and 21."
+      "explanation": "**Formula:** Top of box = $Q_3$\n\n**Steps:**\n- From Q11, $Q_3 = 20$\n- The top of the box in a box plot represents $Q_3$\n\n**Result:** Between 19 and 21"
     },
     {
       "question_id": "STAT_MTB2_Q15",
@@ -100,7 +100,7 @@
         "D": "Between 1 and 2"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: z = (x - x̄)/s. Steps: Median = 12, x̄ = 13, s ≈ 7.55. z = (12 - 13)/7.55 = -1/7.55 ≈ -0.13. Result: Between -1 and 0."
+      "explanation": "**Formula:** $z = \\frac{x - \\bar{x}}{s}$\n\n**Steps:**\n- Median = 12, $\\bar{x} = 13$, $s \\approx 7.55$\n- $z = \\frac{12 - 13}{7.55} = \\frac{-1}{7.55} \\approx -0.13$\n\n**Result:** Between -1 and 0"
     },
     {
       "question_id": "STAT_MTB2_Q16",
@@ -114,7 +114,7 @@
         "D": "Between 16 and 18"
       },
       "correct_option_label": "B",
-      "explanation": "Formula: Mean = Σx/n. Steps: Sum = 12+22+20+6+5+6+20 = 91. n = 7. Mean = 91/7 = 13. Result: Between 12 and 14."
+      "explanation": "**Formula:** Mean = $\\frac{\\sum x}{n}$\n\n**Steps:**\n- Sum = $12+22+20+6+5+6+20 = 91$\n- $n = 7$\n- Mean = $91/7 = 13$\n\n**Result:** Between 12 and 14"
     },
     {
       "question_id": "STAT_MTB2_Q17",
@@ -128,7 +128,7 @@
         "D": "3"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: Outliers if value < Q1 - 1.5×IQR or > Q3 + 1.5×IQR. Steps: Q1 = 6, Q3 = 20, IQR = 14. Lower fence = 6 - 1.5×14 = -15. Upper fence = 20 + 1.5×14 = 41. All values (5 to 22) are within [-15, 41]. Result: 0 outliers."
+      "explanation": "**Formula:** Outliers if value $< Q_1 - 1.5 \\times IQR$ or $> Q_3 + 1.5 \\times IQR$\n\n**Steps:**\n- $Q_1 = 6$, $Q_3 = 20$, $IQR = 14$\n- Lower fence = $6 - 1.5 \\times 14 = -15$\n- Upper fence = $20 + 1.5 \\times 14 = 41$\n- All values (5 to 22) are within $[-15, 41]$\n\n**Result:** 0 outliers"
     },
     {
       "question_id": "STAT_MTB2_Q20",
@@ -141,7 +141,7 @@
         "D": "Between 9 and 10"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: Percentile position = (n+1)×p/100. Steps: n = 7, p = 40. Position = 0.40(7+1) = 3.2. Sorted: 5, 6, 6, 12, 20, 20, 22. Interpolate: 6 + 0.2×(12-6) = 6 + 1.2 = 7.2. Result: Between 7 and 8."
+      "explanation": "**Formula:** Percentile position = $(n+1) \\times \\frac{p}{100}$\n\n**Steps:**\n- $n = 7$, $p = 40$\n- Position = $0.40(7+1) = 3.2$\n- Sorted: 5, 6, 6, 12, 20, 20, 22\n- Interpolate: $6 + 0.2 \\times (12-6) = 6 + 1.2 = 7.2$\n\n**Result:** Between 7 and 8"
     },
     {
       "question_id": "STAT_MTB2_Q1",
@@ -155,7 +155,7 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "A",
-      "explanation": "Steps: Boys with 1 interview = 10. Girls with 3 interviews = 75% of 60 = 45. Boys with 2 interviews = 25% of 60 = 15. Girls with 2 interviews = 15 - 5 = 10. Girls with 1 interview = 60 - 45 - 10 = 5. Total students = 120. P(Girl ∩ 1 interview) = 5/120 = 0.042. Result: Between 0 and 0.25."
+      "explanation": "**Steps:**\n- Boys with 1 interview = 10\n- Girls with 3 interviews = 75% of 60 = 45\n- Boys with 2 interviews = 25% of 60 = 15\n- Girls with 2 interviews = 15 - 5 = 10\n- Girls with 1 interview = 60 - 45 - 10 = 5\n- Total students = 120\n- $P(\\text{Girl} \\cap \\text{1 interview}) = \\frac{5}{120} = 0.042$\n\n**Result:** Between 0 and 0.25"
     },
     {
       "question_id": "STAT_MTB2_Q5",
@@ -169,7 +169,7 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "C",
-      "explanation": "Formula: P(Boy ∪ 2 interviews) = P(Boy) + P(2 interviews) - P(Boy ∩ 2 interviews). Steps: P(Boy) = 60/120 = 0.5. P(2 interviews) = (15+10)/120 = 25/120 = 0.208. P(Boy ∩ 2) = 15/120 = 0.125. P(Boy ∪ 2) = 0.5 + 0.208 - 0.125 = 0.583. Result: Between 0.50 and 0.75."
+      "explanation": "**Formula:** $P(\\text{Boy} \\cup \\text{2 interviews}) = P(\\text{Boy}) + P(\\text{2 interviews}) - P(\\text{Boy} \\cap \\text{2 interviews})$\n\n**Steps:**\n- $P(\\text{Boy}) = \\frac{60}{120} = 0.5$\n- $P(\\text{2 interviews}) = \\frac{15+10}{120} = \\frac{25}{120} = 0.208$\n- $P(\\text{Boy} \\cap \\text{2}) = \\frac{15}{120} = 0.125$\n- $P(\\text{Boy} \\cup \\text{2}) = 0.5 + 0.208 - 0.125 = 0.583$\n\n**Result:** Between 0.50 and 0.75"
     },
     {
       "question_id": "STAT_MTB2_Q6",
@@ -183,7 +183,7 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "B",
-      "explanation": "Steps: Students with 3 interviews: Girls = 45, Boys = 60 - 10 - 15 = 35. Total with 3 interviews = 80. Boys with 3 = 35. Percentage = 35/80 = 0.4375 = 43.75%. Result: Between 0.25 and 0.50."
+      "explanation": "**Steps:**\n- Students with 3 interviews: Girls = 45, Boys = 60 - 10 - 15 = 35\n- Total with 3 interviews = 80\n- Boys with 3 = 35\n- Percentage = $\\frac{35}{80} = 0.4375 = 43.75\\%$\n\n**Result:** Between 0.25 and 0.50"
     },
     {
       "question_id": "STAT_MTB2_Q7",
@@ -197,7 +197,7 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: Conditional probability P(2 interviews | Girl) = P(Girl ∩ 2 interviews)/P(Girl). Steps: Girls with 2 interviews = 10. Total girls = 60. P(2 | Girl) = 10/60 = 0.167. Result: Between 0 and 0.25."
+      "explanation": "**Formula:** Conditional probability $P(\\text{2 interviews} | \\text{Girl}) = \\frac{P(\\text{Girl} \\cap \\text{2 interviews})}{P(\\text{Girl})}$\n\n**Steps:**\n- Girls with 2 interviews = 10\n- Total girls = 60\n- $P(\\text{2} | \\text{Girl}) = \\frac{10}{60} = 0.167$\n\n**Result:** Between 0 and 0.25"
     },
     {
       "question_id": "STAT_MTB2_Q8",
@@ -211,7 +211,7 @@
         "D": "Between 2.25 and 3.00"
       },
       "correct_option_label": "A",
-      "explanation": "Formula: σ = √[Σ(x-μ)²×P(x)] for discrete RV. Steps: Calculate mean μ = 2.54 (from notes). Compute E[X²] and Var(X) = E[X²] - μ². Standard deviation ≈ 0.71. Result: Between 0 and 0.75."
+      "explanation": "**Formula:** $\\sigma = \\sqrt{\\sum(x-\\mu)^2 \\times P(x)}$ for discrete RV\n\n**Steps:**\n- Calculate mean $\\mu = 2.54$ (from notes)\n- Compute $E[X^2]$ and $\\text{Var}(X) = E[X^2] - \\mu^2$\n- Standard deviation $\\approx 0.71$\n\n**Result:** Between 0 and 0.75"
     },
     {
       "question_id": "STAT_MTB2_Q9",
@@ -225,7 +225,7 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "D",
-      "explanation": "Steps: Students with 2 or 3 interviews = 25 + 80 = 105. Total students = 120. P(>1 interview) = 105/120 = 0.875. Result: Between 0.75 and 1."
+      "explanation": "**Steps:**\n- Students with 2 or 3 interviews = 25 + 80 = 105\n- Total students = 120\n- $P(>1 \\text{ interview}) = \\frac{105}{120} = 0.875$\n\n**Result:** Between 0.75 and 1"
     },
     {
       "question_id": "STAT_MTB2_Q12",
@@ -239,7 +239,7 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "B",
-      "explanation": "Steps: Students with 1 or 2 interviews = 15 + 25 = 40. Total students = 120. P(≤2 interviews) = 40/120 = 0.333. Result: Between 0.25 and 0.50."
+      "explanation": "**Steps:**\n- Students with 1 or 2 interviews = 15 + 25 = 40\n- Total students = 120\n- $P(\\leq 2 \\text{ interviews}) = \\frac{40}{120} = 0.333$\n\n**Result:** Between 0.25 and 0.50"
     },
     {
       "question_id": "STAT_MTB2_Q14",
@@ -253,7 +253,7 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "D",
-      "explanation": "Steps: Boys with 2 or 3 interviews = 15 + 35 = 50. Total boys = 60. Percentage = 50/60 = 0.833 = 83.3%. Result: Between 0.75 and 1."
+      "explanation": "**Steps:**\n- Boys with 2 or 3 interviews = 15 + 35 = 50\n- Total boys = 60\n- Percentage = $\\frac{50}{60} = 0.833 = 83.3\\%$\n\n**Result:** Between 0.75 and 1"
     },
     {
       "question_id": "STAT_MTB2_Q18",
@@ -267,7 +267,7 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "A",
-      "explanation": "Steps: Total with 2 interviews = 25. Total students = 120. P(exactly 2) = 25/120 = 0.208. Result: Between 0 and 0.25."
+      "explanation": "**Steps:**\n- Total with 2 interviews = 25\n- Total students = 120\n- $P(\\text{exactly 2}) = \\frac{25}{120} = 0.208$\n\n**Result:** Between 0 and 0.25"
     },
     {
       "question_id": "STAT_MTB2_Q19",
@@ -281,7 +281,7 @@
         "D": "Between 2.25 and 3.00"
       },
       "correct_option_label": "D",
-      "explanation": "Formula: Mean = Σ(x×P(x)) for discrete RV. Steps: From notes, total interviews = 305, total students = 120. Mean = 305/120 = 2.54. Result: Between 2.25 and 3.00."
+      "explanation": "**Formula:** Mean = $\\sum(x \\times P(x))$ for discrete RV\n\n**Steps:**\n- From notes, total interviews = 305, total students = 120\n- Mean = $\\frac{305}{120} = 2.54$\n\n**Result:** Between 2.25 and 3.00"
     }
   ]
 }

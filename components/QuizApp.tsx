@@ -18,6 +18,10 @@ import ModuleSelector from './ModuleSelector';
 import UnifiedQuizSelector from './UnifiedQuizSelector';
 import Header from './Header';
 import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube } from 'lucide-react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 import videosData from '@/public/data/videos.json';
 
 interface QuizAppProps {
@@ -565,12 +569,15 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                           : 'bg-red-900/30 border-red-800'
                           }`}
                       >
-                        <p className="font-semibold text-white mb-2">
-                          {q.module && <span className="text-indigo-400 mr-2">[Mod {q.module}]</span>}
-                          {q.source && <span className="text-purple-400 mr-2">[{q.source}]</span>}
-                          {q.text}
-                        </p>
-                        <div className="space-y-1">
+                        <div className="text-white mb-2 text-sm sm:text-base prose prose-invert prose-indigo max-w-none">
+                          <ReactMarkdown
+                            remarkPlugins={[remarkGfm, remarkMath]}
+                            rehypePlugins={[rehypeKatex]}
+                          >
+                            {`${q.module ? `[Mod ${q.module}] ` : ''}${q.source ? `[${q.source}] ` : ''}${q.text}`}
+                          </ReactMarkdown>
+                        </div>
+                        <div className="space-y-1 mb-3">
                           {Object.entries(q.options)
                             .filter(([key]) => {
                               if (!hideWrongOptions) {
@@ -580,27 +587,48 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                               // When toggle is on (hideWrongOptions=true), show all options
                               return true;
                             })
-                            .map(([key, value]) => {
+                            .map(([key, optionValue]) => {
                               const isUserAnswer = userAnswer?.includes(key) || false;
                               const isCorrectAnswer = q.correctAnswer.includes(key);
 
                               return (
-                                <p
+                                <div
                                   key={key}
-                                  className={`text-sm ${isCorrectAnswer
+                                  className={`text-sm flex gap-2 ${isCorrectAnswer
                                     ? 'font-bold text-green-400'
                                     : isUserAnswer
                                       ? 'text-red-400'
                                       : 'text-gray-400'
                                     }`}
                                 >
-                                  {key}: {value}
-                                  {isCorrectAnswer && ' ✓'}
-                                  {isUserAnswer && !isCorrectAnswer && ' (Your answer)'}
-                                </p>
+                                  <span className="shrink-0">{key}:</span>
+                                  <span className="prose prose-invert prose-indigo max-w-none prose-p:inline text-current">
+                                    <ReactMarkdown
+                                      remarkPlugins={[remarkGfm, remarkMath]}
+                                      rehypePlugins={[rehypeKatex]}
+                                      components={{
+                                        p: ({ children }: any) => <span className="inline">{children}</span>,
+                                      }}
+                                    >
+                                      {optionValue || ''}
+                                    </ReactMarkdown>
+                                    {isCorrectAnswer && ' ✓'}
+                                    {isUserAnswer && !isCorrectAnswer && ' (Your answer)'}
+                                  </span>
+                                </div>
                               );
                             })}
                         </div>
+                        {q.explanation && (
+                          <div className="mt-2 text-xs sm:text-sm text-blue-300 bg-blue-900/10 p-2 border-l-2 border-blue-700 prose prose-invert prose-indigo max-w-none">
+                            <ReactMarkdown
+                              remarkPlugins={[remarkGfm, remarkMath]}
+                              rehypePlugins={[rehypeKatex]}
+                            >
+                              {`Explanation: ${q.explanation}`}
+                            </ReactMarkdown>
+                          </div>
+                        )}
                       </div>
                     );
                   })}
@@ -616,12 +644,15 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                         key={index}
                         className="mb-4 p-4 bg-red-900/30 border border-red-800"
                       >
-                        <p className="font-semibold text-white mb-2">
-                          {q.module && <span className="text-indigo-400 mr-2">[Mod {q.module}]</span>}
-                          {q.source && <span className="text-purple-400 mr-2">[{q.source}]</span>}
-                          {q.text}
-                        </p>
-                        <div className="space-y-1">
+                        <div className="text-white mb-2 text-sm sm:text-base prose prose-invert prose-indigo max-w-none">
+                          <ReactMarkdown
+                            remarkPlugins={[remarkGfm, remarkMath]}
+                            rehypePlugins={[rehypeKatex]}
+                          >
+                            {`${q.module ? `[Mod ${q.module}] ` : ''}${q.source ? `[${q.source}] ` : ''}${q.text}`}
+                          </ReactMarkdown>
+                        </div>
+                        <div className="space-y-1 mb-3">
                           {Object.entries(q.options)
                             .filter(([key]) => {
                               if (!hideWrongOptions) {
@@ -631,27 +662,48 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                               // When toggle is on (hideWrongOptions=true), show all options
                               return true;
                             })
-                            .map(([key, value]) => {
+                            .map(([key, optionValue]) => {
                               const isUserAnswer = q.selectedAnswer?.includes(key) || false;
                               const isCorrectAnswer = q.correctAnswer.includes(key);
 
                               return (
-                                <p
+                                <div
                                   key={key}
-                                  className={`text-sm ${isCorrectAnswer
+                                  className={`text-sm flex gap-2 ${isCorrectAnswer
                                     ? 'font-bold text-green-400'
                                     : isUserAnswer
                                       ? 'text-red-400'
                                       : 'text-gray-400'
                                     }`}
                                 >
-                                  {key}: {value}
-                                  {isCorrectAnswer && ' ✓'}
-                                  {isUserAnswer && ' (Your answer)'}
-                                </p>
+                                  <span className="shrink-0">{key}:</span>
+                                  <span className="prose prose-invert prose-indigo max-w-none prose-p:inline text-current">
+                                    <ReactMarkdown
+                                      remarkPlugins={[remarkGfm, remarkMath]}
+                                      rehypePlugins={[rehypeKatex]}
+                                      components={{
+                                        p: ({ children }: any) => <span className="inline">{children}</span>,
+                                      }}
+                                    >
+                                      {optionValue || ''}
+                                    </ReactMarkdown>
+                                    {isCorrectAnswer && ' ✓'}
+                                    {isUserAnswer && ' (Your answer)'}
+                                  </span>
+                                </div>
                               );
                             })}
                         </div>
+                        {q.explanation && (
+                          <div className="mt-2 text-xs sm:text-sm text-blue-300 bg-blue-900/10 p-2 border-l-2 border-blue-700 prose prose-invert prose-indigo max-w-none">
+                            <ReactMarkdown
+                              remarkPlugins={[remarkGfm, remarkMath]}
+                              rehypePlugins={[rehypeKatex]}
+                            >
+                              {`Explanation: ${q.explanation}`}
+                            </ReactMarkdown>
+                          </div>
+                        )}
                       </div>
                     ))}
                   </div>
