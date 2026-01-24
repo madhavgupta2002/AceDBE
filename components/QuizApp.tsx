@@ -471,7 +471,25 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
 
   return (
     <div className="bg-gray-900 min-h-screen">
-      <Header showBackButton />
+      <Header
+        showBackButton
+        onBack={() => {
+          if (quizState.questions.length > 0) {
+            // If quiz is in progress or completed, back button resets to subject dashboard
+            if (quizCompleted) {
+              resetQuiz();
+            } else {
+              // Optional: Add confirmation if needed, for now direct reset as 'Back' implies exit
+              if (window.confirm("Quit quiz and return to module selection?")) {
+                resetQuiz();
+              }
+            }
+          } else {
+            // If at dashboard, back button goes home
+            router.push('/');
+          }
+        }}
+      />
       <div className="py-6 sm:py-12 px-2 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 sm:mb-8">
@@ -486,7 +504,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
               {/* Notes - Half Width */}
               <div className="bg-gray-800 border border-gray-700 p-2 h-full flex flex-col">
                 <button
-                  onClick={() => window.open(`/quiz/${subjectCode}/notes`, '_blank')}
+                  onClick={() => window.open(`/${subjectCode}/notes`, '_blank')}
                   className="w-full h-full py-2 px-3 bg-indigo-700 hover:bg-indigo-600 text-white border border-indigo-600 font-medium text-sm transition duration-200 flex items-center justify-center gap-2"
                 >
                   <BookOpen className="w-4 h-4" />
@@ -527,7 +545,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                 Study Materials
               </h2>
               <button
-                onClick={() => router.push(`/quiz/${subjectCode}/notes`)}
+                onClick={() => router.push(`/${subjectCode}/notes`)}
                 className="w-full py-2.5 bg-indigo-700 hover:bg-indigo-600 text-white border border-indigo-600 font-semibold transition duration-200 flex items-center justify-center gap-2"
               >
                 <BookOpen className="w-5 h-5" />
@@ -728,7 +746,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                               remarkPlugins={[remarkGfm, remarkMath]}
                               rehypePlugins={[rehypeKatex]}
                             >
-                              {`Explanation: ${q.explanation}`}
+                              {`${q.explanation}`}
                             </ReactMarkdown>
                           </div>
                         )}
@@ -822,7 +840,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                               remarkPlugins={[remarkGfm, remarkMath]}
                               rehypePlugins={[rehypeKatex]}
                             >
-                              {`Explanation: ${q.explanation}`}
+                              {`${q.explanation}`}
                             </ReactMarkdown>
                           </div>
                         )}

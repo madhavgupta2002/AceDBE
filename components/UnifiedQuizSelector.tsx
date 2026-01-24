@@ -25,6 +25,15 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
   const [selections, setSelections] = useState<SelectionMap>(new Map());
   const [randomOrder, setRandomOrder] = useState(false);
 
+  // Derived state for unique module numbers across all sets
+  const allModules = Array.from(new Set(
+    [...claSets, ...examSets].flatMap(set => set.modules)
+  )).sort((a, b) => {
+    const na = typeof a === 'number' ? a : parseInt(a.toString()) || 0;
+    const nb = typeof b === 'number' ? b : parseInt(b.toString()) || 0;
+    return na - nb;
+  });
+
   useEffect(() => {
     const loadSets = async () => {
       setLoading(true);
@@ -127,6 +136,55 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
 
       return newSelections;
     });
+  };
+
+  const toggleModuleAcrossAllSets = (moduleNum: string | number) => {
+    // Determine if this module is currently selected in ALL sets that contain it
+    const relevantSets = [...claSets, ...examSets].filter(set => set.modules.includes(moduleNum));
+
+    if (relevantSets.length === 0) return;
+
+    const isFullySelectedAcrossAll = relevantSets.every(set =>
+      isModuleSelected(set.bankName, set.bankType, moduleNum)
+    );
+
+    setSelections((prev) => {
+      const newSelections = new Map(prev);
+
+      relevantSets.forEach(set => {
+        const key = getSetKey(set.bankName, set.bankType);
+        const currentSet = newSetFromMap(newSelections, key);
+
+        if (isFullySelectedAcrossAll) {
+          // Deselect in all
+          currentSet.delete(moduleNum);
+        } else {
+          // Select in all
+          currentSet.add(moduleNum);
+          currentSet.delete('__ALL__');
+        }
+
+        if (currentSet.size === 0) {
+          newSelections.delete(key);
+        } else {
+          newSelections.set(key, currentSet);
+        }
+      });
+
+      return newSelections;
+    });
+  };
+
+  // Helper to get a new set from map or return a new empty set
+  const newSetFromMap = (map: SelectionMap, key: string): Set<string | number> => {
+    const existing = map.get(key);
+    return existing ? new Set(existing) : new Set<string | number>();
+  };
+
+  const isModuleSelectedInAllRelevantSets = (moduleNum: string | number): boolean => {
+    const relevantSets = [...claSets, ...examSets].filter(set => set.modules.includes(moduleNum));
+    if (relevantSets.length === 0) return false;
+    return relevantSets.every(set => isModuleSelected(set.bankName, set.bankType, moduleNum));
   };
 
   const selectAll = () => {
@@ -318,6 +376,33 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
           </button>
         </div>
       </div>
+
+      {/* Select By Module - Bulk Selection */}
+      {allModules.length > 0 && (
+        <div className="mb-6 p-4 bg-gray-800 border-2 border-indigo-900/50 rounded-lg">
+          <h2 className="text-lg font-bold text-white mb-3 flex items-center justify-between">
+            <span>Select By Module</span>
+            <span className="text-xs font-normal text-gray-400">Selects across all CLA & Exams</span>
+          </h2>
+          <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
+            {allModules.map((module) => {
+              const isActive = isModuleSelectedInAllRelevantSets(module);
+              return (
+                <button
+                  key={`bulk-${module}`}
+                  onClick={() => toggleModuleAcrossAllSets(module)}
+                  className={`px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm font-medium transition duration-200 border rounded ${isActive
+                    ? 'bg-indigo-700 text-white border-indigo-600 shadow-[0_0_10px_rgba(79,70,229,0.3)]'
+                    : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600 hover:border-indigo-500'
+                    }`}
+                >
+                  M{module}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
 
       {/* CLA and Exam Sets Side by Side */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">

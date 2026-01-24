@@ -22,7 +22,7 @@ const SubjectSelector: React.FC = () => {
   const router = useRouter();
 
   const handleSubjectSelect = (code: string) => {
-    router.push(`/quiz/${code}`);
+    router.push(`/${code}`);
   };
 
   // Map subject codes to icons
@@ -67,7 +67,7 @@ const SubjectSelector: React.FC = () => {
 
   const handleNotesClick = (e: React.MouseEvent, subjectCode: string) => {
     e.stopPropagation();
-    router.push(`/quiz/${subjectCode}/notes`);
+    router.push(`/${subjectCode}/notes`);
   };
 
   const handleYoutubeClick = (e: React.MouseEvent, subjectCode: string) => {
@@ -80,7 +80,7 @@ const SubjectSelector: React.FC = () => {
 
   const handleQuizClick = (e: React.MouseEvent, subjectCode: string) => {
     e.stopPropagation();
-    router.push(`/quiz/${subjectCode}`);
+    router.push(`/${subjectCode}`);
   };
 
   return (

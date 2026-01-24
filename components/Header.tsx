@@ -5,9 +5,11 @@ import { useRouter } from 'next/navigation';
 
 interface HeaderProps {
     showBackButton?: boolean;
+    backLink?: string;
+    onBack?: () => void;
 }
 
-const Header: React.FC<HeaderProps> = ({ showBackButton = false }) => {
+const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/', onBack }) => {
     const router = useRouter();
 
     return (
@@ -16,9 +18,15 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false }) => {
                 <div className="flex items-center space-x-2 sm:space-x-3">
                     {showBackButton && (
                         <button
-                            onClick={() => router.push('/')}
+                            onClick={() => {
+                                if (onBack) {
+                                    onBack();
+                                } else {
+                                    router.push(backLink);
+                                }
+                            }}
                             className="p-1.5 sm:p-2 hover:bg-gray-700 transition-colors rounded mr-1 sm:mr-2"
-                            aria-label="Back to home"
+                            aria-label="Back"
                         >
                             <svg className="w-5 h-5 sm:w-6 sm:h-6 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />

@@ -175,7 +175,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
 
   return (
     <div className="min-h-screen bg-gray-900">
-      <Header showBackButton />
+      <Header showBackButton backLink={`/${subjectCode}`} />
 
       {/* Notes Header - Font Switcher and Title */}
       <div className="bg-gray-800 border-b border-gray-700 sticky top-[57px] sm:top-[61px] z-10">
@@ -260,7 +260,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
           <div className="text-center py-12">
             <p className="text-red-400 text-lg">{error}</p>
             <button
-              onClick={() => router.push(`/quiz/${subjectCode}`)}
+              onClick={() => router.push(`/${subjectCode}`)}
               className="mt-4 text-indigo-400 hover:text-indigo-300"
             >
               Back to Quiz
