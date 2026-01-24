@@ -302,25 +302,60 @@ Let $X_1, X_2, ... X_n$ be independent with mean $\mu$ and variance $\sigma^2$.
 *   **"At least $k$":** $P(Y \ge k) = 1 - P(Y \le k-1)$.
  
 
- 
+
 ## **Topic 4: The Poisson Distribution**
 ### **4.1 Characteristics**
 *   **Usage:** Models the number of occurrences of an event over a specified interval of **time** or **space**.
-*   **Examples:** Number of emails per hour, defects per meter of fabric, typos per page.
+*   **Examples:** Number of emails per hour, defects per meter of fabric, typos per page, customers arriving at a store in 30 minutes, number of phone calls at a call center in 15 minutes, number of defects in a stretch of highway, number of keywords on a page.
+*   **Random Variable ($Y$):** Takes values $0, 1, 2, 3, \ldots, \infty$ (i.e., any non-negative integer).
 *   **Assumptions (Poisson Process):**
-    1.  Probability of occurrence is proportional to the interval length.
-    2.  Occurrences in non-overlapping intervals are independent.
+    1.  Probability of occurrence is proportional to the interval length. (Probability of an event in any interval depends only on the interval's length, not on where it starts.)
+    2.  Occurrences in non-overlapping intervals are independent. (Whether an event occurs in one interval does not affect events in another.)
+    3.  The mean and variance are both equal to the same parameter (see below).
+
 ### **4.2 Properties & Formulas**
-*   **Parameter $\lambda$ (Lambda):** The average (mean) number of occurrences in the specified interval.
-*   **PMF Formula:**
-    $$P(Y=y) = \frac{e^{-\lambda} \times \lambda^y}{y!}$$
-    *   Where $e \approx 2.71828$.
-*   **Key Property:** **Mean = Variance = $\lambda$**.
-*   **Standard Deviation:** $\sqrt{\lambda}$.
-### **4.3 Scaling Lambda**
-*   If the rate is given for a specific interval (e.g., 10 calls per hour), and the question asks about a different interval (e.g., 30 minutes):
-    *   **New $\lambda$:** $\text{Original Rate} \times \text{New Interval Ratio}$.
-    *   *Example:* Rate = 10/hour. For 30 mins, $\lambda = 10 \times 0.5 = 5$.
+*   **Parameter $\lambda$ (Lambda):** The average (mean) number of occurrences in the specified interval; $\lambda$ is the only parameter needed for the Poisson distribution.
+*   **Probability Mass Function (PMF):**
+    $$
+    P(Y=y) = \frac{e^{-\lambda} \times \lambda^y}{y!}
+    $$
+    * Where $e \approx 2.71828$ and $y = 0, 1, 2, \ldots$
+*   **Key Properties:**
+    *   **Mean:** $E[Y] = \lambda$
+    *   **Variance:** $Var(Y) = \lambda$
+    *   **Standard Deviation:** $\sqrt{\lambda}$
+### **4.3 The Poisson Process**
+*   A **Poisson process** models the number of random events happening over time or space at a constant average rate.
+*   **Key Features:**
+    *   **Events occur independently.**
+    *   **Inter-arrival times** between events (i.e., the time between one event and the next) are **independent and identically distributed** and follow an **exponential distribution**.
+    *   Let $N(t)$ = number of events that have happened by time $t$.
+    *   For any time interval of length $t$, $N(t)$ follows a Poisson distribution:
+        $$
+        N(t) \sim \text{Poisson}(\lambda t)
+        $$
+*   **Parameter $\lambda$ ("rate"):**
+    *   $\lambda$ = average number of events per unit time (e.g., $\lambda = 10$/hour).
+    *   For any interval of length $T$, the Poisson parameter is $\Lambda = \lambda T$.
+    *   Mean and variance: $\mathbb{E}[N(T)] = \mathrm{Var}(N(T)) = \lambda T$.
+
+#### **Example**
+*   If $\lambda = 10$ events/hour:
+    *   In $2$ hours: $\Lambda = 10 \times 2 = 20$
+    *   In $0.5$ hour: $\Lambda = 10 \times 0.5 = 5$
+*   **Note:** Capital $\Lambda$ is often used to denote the Poisson parameter for an interval ($\Lambda = \lambda T$). Some textbooks use $\text{Poisson}(\Lambda)$ or $\text{Poisson}(\lambda T)$—they mean the same thing.
+
+
+#### **Summary Table of Properties**
+| Property                | Value                  |
+|-------------------------|------------------------|
+| Random Variable         | $Y$ (events in interval)|
+| Possible Values         | $0, 1, 2, ...$         |
+| PMF                     | $\frac{e^{-\lambda}\lambda^{y}}{y!}$ |
+| Mean                    | $\lambda$              |
+| Variance                | $\lambda$              |
+| Std. Deviation          | $\sqrt{\lambda}$       |
+
 ### **4.4 Relation to Binomial**
 *   The Poisson distribution is a limiting case of the Binomial distribution when $n$ (trials) is large and $p$ (probability) is small, such that $np = \lambda$.
 
