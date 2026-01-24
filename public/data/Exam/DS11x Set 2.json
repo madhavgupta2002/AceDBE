@@ -145,7 +145,8 @@
         "C": "Between 0.10 and 0.15",
         "D": "Between 0.15 and 0.20"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "**Formula:** Poisson $P(X = k) = \\frac{e^{-\\lambda} \\times \\lambda^k}{k!}$\n\n**Steps:**\n- Rate = 3 per 5 pages = 0.6 per page\n- For 6 pages, $\\lambda = 0.6 \\times 6 = 3.6$\n- $P(X = 0) = \\frac{e^{-3.6} \\times 3.6^0}{0!} = e^{-3.6}$\n- $e^{-3.6} \\approx 0.027$\n\n**Result:** Between 0.00 and 0.05"
     },
     {
       "question_id": "10",

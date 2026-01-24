@@ -145,7 +145,8 @@
         "C": "Between 0.50 and 0.75",
         "D": "Between 0.75 and 0.99"
       },
-      "correct_option_label": "A"
+      "correct_option_label": "A",
+      "explanation": "**Formula:** Binomial $P(X = k)$ and $P(X \\geq k) = 1 - P(X < k)$\n\n**Steps:**\n- Probability a passenger exceeds limit $p = 0.15$.\n- Number of passengers $n = 5$.\n- Want $P(\\text{at least 2 exceed}) = 1 - P(0) - P(1)$.\n- $P(0) = C(5,0) \\times (0.15)^0 \\times (0.85)^5 = 1 \\times 1 \\times 0.4437 = 0.4437$\n- $P(1) = C(5,1) \\times (0.15)^1 \\times (0.85)^4 = 5 \\times 0.15 \\times 0.5220 = 0.3915$\n- $P(\\geq 2) = 1 - (0.4437 + 0.3915) = 1 - 0.8352 = 0.1648$\n\n**Result:** Between 0.00 and 0.25"
     },
     {
       "question_id": "10",
