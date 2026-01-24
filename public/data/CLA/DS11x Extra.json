@@ -130,7 +130,7 @@
     },
     {
       "question_id": "10",
-      "module": 1,
+      "module": 3,
       "question_text": "A Bernoulli random variable takes only two possible values — 0 and 1.",
       "question_type": "MCQ",
       "options": {
@@ -142,7 +142,7 @@
     },
     {
       "question_id": "11",
-      "module": 1,
+      "module": 3,
       "question_text": "In a Binomial distribution, the number of trials is fixed.",
       "question_type": "MCQ",
       "options": {
@@ -154,7 +154,7 @@
     },
     {
       "question_id": "12",
-      "module": 1,
+      "module": 3,
       "question_text": "A Poisson distribution is used to model the number of events occurring in a fixed interval of time or space.",
       "question_type": "MCQ",
       "options": {
@@ -166,7 +166,7 @@
     },
     {
       "question_id": "13",
-      "module": 1,
+      "module": 3,
       "question_text": "The mean of a Binomial distribution is given by n×p, where n is the number of trials and p is the probability of success.",
       "question_type": "MCQ",
       "options": {
@@ -178,7 +178,7 @@
     },
     {
       "question_id": "14",
-      "module": 1,
+      "module": 3,
       "question_text": "A Poisson random variable can take negative values.",
       "question_type": "MCQ",
       "options": {
@@ -202,7 +202,7 @@
     },
     {
       "question_id": "16",
-      "module": 1,
+      "module": 3,
       "question_text": "In a Binomial distribution, each trial can have a different probability of success.",
       "question_type": "MCQ",
       "options": {
@@ -214,7 +214,7 @@
     },
     {
       "question_id": "17",
-      "module": 1,
+      "module": 3,
       "question_text": "A Bernoulli random variable represents a single experiment with only two outcomes — success or failure.",
       "question_type": "MCQ",
       "options": {
