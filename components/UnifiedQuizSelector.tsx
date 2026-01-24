@@ -10,11 +10,15 @@ interface UnifiedQuizSelectorProps {
     sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam'; modules: (string | number)[] }>;
     randomOrder: boolean;
   }) => void;
+  onStartRevise: (selections: {
+    sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam'; modules: (string | number)[] }>;
+    randomOrder: boolean;
+  }) => void;
 }
 
 type SelectionMap = Map<string, Set<string | number>>;
 
-const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, onStartQuiz }) => {
+const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, onStartQuiz, onStartRevise }) => {
   const [claSets, setClaSets] = useState<SetWithModules[]>([]);
   const [examSets, setExamSets] = useState<SetWithModules[]>([]);
   const [loading, setLoading] = useState(true);
@@ -194,6 +198,34 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
     });
   };
 
+  const handleStartRevise = () => {
+    const selectedSets: Array<{ bankName: string; bankType: 'CLA' | 'Exam'; modules: (string | number)[] }> = [];
+
+    selections.forEach((modules, key) => {
+      const [bankType, bankName] = key.split(':');
+      if (modules.size > 0) {
+        // Filter out the special marker and convert to array
+        const moduleArray = Array.from(modules).filter(m => m !== '__ALL__') as (string | number)[];
+
+        selectedSets.push({
+          bankName,
+          bankType: bankType as 'CLA' | 'Exam',
+          modules: moduleArray.length > 0 ? moduleArray : [],
+        });
+      }
+    });
+
+    if (selectedSets.length === 0) {
+      alert('Please select at least one set or module to start revision.');
+      return;
+    }
+
+    onStartRevise({
+      sets: selectedSets,
+      randomOrder: randomOrder,
+    });
+  };
+
   const renderSet = (set: SetWithModules) => {
     const isFullySelected = isSetFullySelected(set);
     const isPartiallySelected = isSetPartiallySelected(set);
@@ -314,13 +346,19 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
         </div>
       </div>
 
-      {/* Start Quiz Button */}
-      <div className="mt-6 sm:mt-8">
+      {/* Action Buttons */}
+      <div className="mt-6 sm:mt-8 grid grid-cols-2 gap-3">
         <button
           onClick={handleStartQuiz}
-          className="w-full px-6 sm:px-8 py-3 sm:py-4 bg-green-800 text-white border border-green-700 font-semibold text-base sm:text-lg hover:bg-green-700 transition duration-200"
+          className="px-4 sm:px-6 py-3 sm:py-4 bg-green-800 text-white border border-green-700 font-semibold text-base sm:text-lg hover:bg-green-700 transition duration-200"
         >
           Start Quiz
+        </button>
+        <button
+          onClick={handleStartRevise}
+          className="px-4 sm:px-6 py-3 sm:py-4 bg-blue-800 text-white border border-blue-700 font-semibold text-base sm:text-lg hover:bg-blue-700 transition duration-200"
+        >
+          Revise
         </button>
       </div>
     </div>

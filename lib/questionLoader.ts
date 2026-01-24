@@ -117,6 +117,7 @@ export interface SetWithModules {
   displayName: string;
   modules: (string | number)[];
   bankType: 'CLA' | 'Exam';
+  exam_date?: string; // Optional exam date for sorting
 }
 
 // Get all sets with their modules for a subject
@@ -149,6 +150,7 @@ export async function getSetsWithModules(
           displayName: bank.displayName,
           modules: modules,
           bankType: bankType,
+          exam_date: questionFile.exam_metadata?.exam_date,
         });
       } else {
         // If file couldn't be loaded, still add the set but with empty modules
@@ -159,6 +161,35 @@ export async function getSetsWithModules(
           bankType: bankType,
         });
       }
+    }
+
+    // Sort exam sets chronologically by date
+    if (bankType === 'Exam') {
+      setsWithModules.sort((a, b) => {
+        if (!a.exam_date || !b.exam_date) return 0;
+
+        // Parse dates in "DD Month YYYY" format
+        const parseDate = (dateStr: string): Date => {
+          const months: { [key: string]: number } = {
+            'January': 0, 'February': 1, 'March': 2, 'April': 3,
+            'May': 4, 'June': 5, 'July': 6, 'August': 7,
+            'September': 8, 'October': 9, 'November': 10, 'December': 11
+          };
+
+          const parts = dateStr.split(' ');
+          if (parts.length === 3) {
+            const day = parseInt(parts[0]);
+            const month = months[parts[1]];
+            const year = parseInt(parts[2]);
+            return new Date(year, month, day);
+          }
+          return new Date(0); // Return epoch if parsing fails
+        };
+
+        const dateA = parseDate(a.exam_date);
+        const dateB = parseDate(b.exam_date);
+        return dateA.getTime() - dateB.getTime();
+      });
     }
 
     return setsWithModules;
