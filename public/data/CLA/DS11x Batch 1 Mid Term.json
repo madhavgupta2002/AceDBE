@@ -128,7 +128,7 @@
         "D": "Between 0.75 and 1.00"
       },
       "correct_option_label": "A",
-      "explanation": "**Formula:** Binomial $P(X \\geq k) = 1 - P(X \\leq k-1)$\n\n**Steps:**\n- $n = 20$, $p = 0.30$ (not satisfied)\n- Find $P(X \\geq 12)$\n- $P(X \\geq 12) = 1 - P(X \\leq 11)$\n- Using Binomial($n=20$, $p=0.30$), $P(X \\leq 11) \\approx 0.995$\n- So $P(X \\geq 12) \\approx 0.005$\n\n**Result:** Between 0.00 and 0.25"
+      "explanation": "**Formula:** Binomial $P(X \\geq k) = 1 - P(X \\leq k-1)$ where $P(X = x) = {n \\choose x} p^x (1-p)^{n-x}$\n\n**Steps:**\n- $n = 20$, $p = 0.30$ (not satisfied)\n- Find $P(X \\geq 12)$\n- $P(X \\geq 12) = 1 - P(X \\leq 11)$\n- $P(X \\leq 11) = \\sum_{x=0}^{11} {20 \\choose x} (0.3)^{x} (0.7)^{20-x} \\approx 0.995$\n- So $P(X \\geq 12) \\approx 0.005$\n\n**Result:** Between 0.00 and 0.25"
     },
     {
       "question_id": "STAT_MT_Q10",
