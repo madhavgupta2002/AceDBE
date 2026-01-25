@@ -26,22 +26,27 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ banks: [] });
     }
 
-    // Read all files in the directory
-    const files = fs.readdirSync(dirPath);
+    // Check if subject folder exists
+    const subjectPath = path.join(dirPath, subjectCode);
+    if (!fs.existsSync(subjectPath)) {
+      return NextResponse.json({ banks: [] });
+    }
+
+    // Read all files in the subject directory
+    const files = fs.readdirSync(subjectPath);
     
-    // Filter files that match the subject code and extract bank names
+    // Extract bank names from JSON files
     const banks: BankInfo[] = [];
-    const prefix = `${subjectCode} `;
     
     files.forEach((file) => {
-      if (file.startsWith(prefix) && file.endsWith('.json')) {
-        // Extract bank name by removing prefix and .json extension
-        const bankName = file.slice(prefix.length, -5); // Remove prefix and .json
+      if (file.endsWith('.json')) {
+        // Extract bank name by removing .json extension
+        const bankName = file.slice(0, -5); // Remove .json
         
         // For Exam type, read the exam_date from metadata
         if (bankType === 'Exam') {
           try {
-            const filePath = path.join(dirPath, file);
+            const filePath = path.join(subjectPath, file);
             const fileContents = fs.readFileSync(filePath, 'utf-8');
             const data = JSON.parse(fileContents);
             const examDate = data.exam_metadata?.exam_date || bankName;

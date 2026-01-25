@@ -16,13 +16,14 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    // Construct filename
-    const filename = `${subjectCode} ${bankName}.json`;
+    // Construct filename - now just the bank name
+    const filename = `${bankName}.json`;
     const filePath = path.join(
       process.cwd(),
       'public',
       'data',
       bankType,
+      subjectCode,
       filename
     );
 
