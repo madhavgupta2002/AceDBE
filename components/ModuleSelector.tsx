@@ -12,14 +12,11 @@ const ModuleSelector: React.FC<ModuleSelectorProps> = ({ modules, selectedModule
   if (modules.length <= 1) return null;
 
   return (
-    <div className="mb-6">
-      <label className="block text-sm font-medium text-gray-400 mb-2">
-        Filter by Module
-      </label>
-      <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
+    <div className="w-full">
+      <div className="flex flex-wrap gap-1.5 justify-center">
         <button
           onClick={() => onSelect('all')}
-          className={`px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm font-medium transition duration-200 border rounded ${selectedModule === 'all'
+          className={`px-2 py-0.5 text-xs font-normal transition duration-200 border rounded ${selectedModule === 'all'
             ? 'bg-indigo-700 text-white border-indigo-600'
             : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600 hover:border-indigo-500'
             }`}
@@ -30,7 +27,7 @@ const ModuleSelector: React.FC<ModuleSelectorProps> = ({ modules, selectedModule
           <button
             key={module}
             onClick={() => onSelect(module)}
-            className={`px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm font-medium transition duration-200 border rounded ${selectedModule === module
+            className={`px-2 py-0.5 text-xs font-normal transition duration-200 border rounded ${selectedModule === module
               ? 'bg-indigo-700 text-white border-indigo-600'
               : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600 hover:border-indigo-500'
               }`}

@@ -15,6 +15,7 @@ import QuizQuestion from './QuizQuestion';
 import QuizStats from './QuizStats';
 import AnswerStatus from './AnswerStatus';
 import ModuleSelector from './ModuleSelector';
+import SourceSelector from './SourceSelector';
 import UnifiedQuizSelector from './UnifiedQuizSelector';
 import Header from './Header';
 import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube, Search, History, ArrowRightLeft } from 'lucide-react';
@@ -61,6 +62,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
   const [allQuestions, setAllQuestions] = useState<Question[]>([]);
   const [selectedModule, setSelectedModule] = useState<string | number | 'all'>('all');
   const [availableModules, setAvailableModules] = useState<(string | number)[]>([]);
+  const [selectedSource, setSelectedSource] = useState<string | 'all'>('all');
+  const [availableSources, setAvailableSources] = useState<string[]>([]);
   const [showAllQuestions, setShowAllQuestions] = useState(true); // Default to showing all questions
   const [hideWrongOptions, setHideWrongOptions] = useState(false);
 
@@ -173,8 +176,11 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
 
       const uniqueModules = Array.from(new Set(allQuestions.map(q => q.module).filter(Boolean))) as (string | number)[];
       setAvailableModules(uniqueModules.sort());
+      const uniqueSources = Array.from(new Set(allQuestions.map(q => q.source).filter(Boolean))) as string[];
+      setAvailableSources(uniqueSources.sort());
       setAllQuestions(allQuestions);
       setSelectedModule('all');
+      setSelectedSource('all');
 
       // Initialize master answered questions array
       const initialMasterAnswers = new Array(allQuestions.length).fill(null);
@@ -245,8 +251,11 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
 
       const uniqueModules = Array.from(new Set(allQuestions.map(q => q.module).filter(Boolean))) as (string | number)[];
       setAvailableModules(uniqueModules.sort());
+      const uniqueSources = Array.from(new Set(allQuestions.map(q => q.source).filter(Boolean))) as string[];
+      setAvailableSources(uniqueSources.sort());
       setAllQuestions(allQuestions);
       setSelectedModule('all');
+      setSelectedSource('all');
 
       // Auto-fill all correct answers for revision mode
       const autoAnsweredQuestions = allQuestions.map(q => q.correctAnswer);
@@ -362,12 +371,15 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     }));
   };
 
-  const handleModuleChange = (module: string | number | 'all') => {
+  const applyFilters = (module: string | number | 'all', source: string | 'all') => {
     setSelectedModule(module);
+    setSelectedSource(source);
 
-    const filteredQuestions = module === 'all'
-      ? allQuestions
-      : allQuestions.filter(q => q.module === module || q.module?.toString() === module.toString());
+    const filteredQuestions = allQuestions.filter(q => {
+      const moduleMatch = module === 'all' || q.module === module || q.module?.toString() === module.toString();
+      const sourceMatch = source === 'all' || q.source === source;
+      return moduleMatch && sourceMatch;
+    });
 
     // Map answers from masterAnsweredQuestions to filtered questions
     const filteredAnsweredQuestions = filteredQuestions.map(filteredQ => {
@@ -418,10 +430,18 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     setQuizCompleted(false);
   };
 
+  const handleModuleChange = (module: string | number | 'all') => {
+    applyFilters(module, selectedSource);
+  };
+
+  const handleSourceChange = (source: string | 'all') => {
+    applyFilters(selectedModule, source);
+  };
+
   const finishQuiz = () => {
-    // Reset module filter to 'all' to show complete results
-    if (selectedModule !== 'all') {
-      handleModuleChange('all');
+    // Reset filters to 'all' to show complete results
+    if (selectedModule !== 'all' || selectedSource !== 'all') {
+      applyFilters('all', 'all');
     }
     setQuizCompleted(true);
   };
@@ -455,6 +475,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     setHideWrongOptions(false);
     setReviseMode(false);
     setSearchQuery('');
+    setSelectedModule('all');
+    setSelectedSource('all');
   };
 
   const confirmGoToMainMenu = () => {
@@ -963,12 +985,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
           {!loading && !quizCompleted && quizState.questions.length > 0 && (
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 pb-28">
               <div className="lg:col-span-9">
-                <div className="mb-6">
-                  <ModuleSelector
-                    modules={availableModules}
-                    selectedModule={selectedModule}
-                    onSelect={handleModuleChange}
-                  />
+                <div className="mb-4">
                   <div className="mt-4">
                     <QuizStats
                       score={quizState.score}
@@ -987,6 +1004,25 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
               </div>
 
               <div className="lg:col-span-3">
+                <div className="mb-6 space-y-4 bg-gray-800 border border-gray-700 p-4 rounded-lg shadow-sm">
+                  <div>
+                    <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Module</label>
+                    <ModuleSelector
+                      modules={availableModules}
+                      selectedModule={selectedModule}
+                      onSelect={handleModuleChange}
+                    />
+                  </div>
+                  <div className="pt-2 border-t border-gray-700/50">
+                    <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Source</label>
+                    <SourceSelector
+                      sources={availableSources}
+                      selectedSource={selectedSource}
+                      onSelect={handleSourceChange}
+                    />
+                  </div>
+                </div>
+
                 <AnswerStatus
                   totalQuestions={quizState.totalQuestions}
                   currentQuestionIndex={quizState.currentQuestionIndex}
