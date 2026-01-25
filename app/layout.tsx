@@ -60,7 +60,22 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${inter.className} bg-gray-900 ${merriweather.variable} ${openSans.variable} ${lora.variable} ${roboto.variable}`}>
-        <DarkModeProvider>{children}</DarkModeProvider>
+        <DarkModeProvider>
+          {children}
+          <footer className="w-full py-6 mt-auto">
+            <p className="text-center text-xs text-gray-500">
+              Made by{' '}
+              <a
+                href="https://www.linkedin.com/in/madhavgupta2002/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gray-400 underline underline-offset-2 transition-colors"
+              >
+                Madhav Gupta
+              </a>
+            </p>
+          </footer>
+        </DarkModeProvider>
       </body>
     </html>
   );

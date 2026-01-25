@@ -67,10 +67,14 @@
 *   **Addiction:** Alcohol/Drugs lower inhibitions but reduce cognitive control. They are **not** a sustainable path to creativity.
 
 ---
-
 ## **Topic 3: Time Management & Discipline**
 
 ### **Urgency-Importance Matrix (Eisenhower)**
+| | **Urgent** | **Not Urgent** |
+| :--- | :--- | :--- |
+| **Important** | **Do** (Manage) | **Decide** (Focus/Schedule) |
+| **Not Important** | **Delegate** | **Delete** (Eliminate) |
+
 *   **Rule:** Control the **Important** (Priority), Manage the **Urgent**.
 *   **Focus:** Important stuff (Health, Learning, Family) must be scheduled *before* it becomes urgent.
 *   **Example:** Don't wait for a heart attack (Urgent) to start jogging (Important).
@@ -172,7 +176,7 @@
     *   **Creativity requires Thinking Slow** (System 2) to break patterns.
 
 ### **The IQ Test Puzzles (System 1 Traps)**
-1.  *Bat & Ball:* Total $1.10. Bat costs $1 more than ball. Ball cost? -> **$0.05** (System 1 says $0.10, which is wrong).
+1.  *Bat & Ball:* Total \$1.10. Bat costs \$1 more than ball. Ball cost? -> **\$0.05** (System 1 says \$0.10, which is wrong).
 2.  *Widgets:* 5 machines, 5 mins, 5 widgets. 100 machines, 100 widgets? -> **5 Minutes** (System 1 says 100).
 3.  *Lily Pads:* Doubles daily. Full in 48 days. Half full? -> **47th Day** (System 1 says 24).
 
@@ -340,12 +344,12 @@
 ### **2. MECE Principle (McKinsey)**
 *   **Stands for:** **Mutually Exclusive, Collectively Exhaustive**.
 *   **Purpose:** Ensure problems are categorized with no overlap (ME) and cover the entire situation (CE). Reduces interdependency and cascading effects.
-
 ### **3. Impact vs. Frequency Matrix**
-*   **Low Impact / Low Frequency:** Use **Quick Fix** (Jugaad) - Perma Fix is too costly.
-*   **High Impact / Low Frequency:** Use **Perma Fix** (e.g., Fire safety, Aviation/Black box).
-*   **Low Impact / High Frequency:** Use **Perma Fix** (Frequency will eventually "catch up").
-*   **High Impact / High Frequency:** Priority #1 for **Perma Fix**.
+
+| | **Low Frequency** | **High Frequency** |
+| :--- | :--- | :--- |
+| **Low Impact** | **Quick Fix (Jugaad)** (Perma Fix too costly) | **Perma Fix** (Frequency will catch up) |
+| **High Impact** | **Perma Fix** (e.g., Fire safety, Aviation) | **Priority #1 Perma Fix** |
 
 ### **4. Time Consequences: Bruise vs. Cancer**
 *   **Bruise:** Problems that solve themselves with time or remain stable (80-90% of life's problems).
@@ -494,10 +498,11 @@ A winning idea must sit at the intersection of:
 
 ### **Prioritization Matrix**
 *   **Impact-Time Matrix:**
-    *   **Starters:** Low impact, Quick implementation (Warm-up).
-    *   **Stars:** High impact, Quick implementation (Focus here).
-    *   **Pipelines:** High impact, Long implementation (Future focus).
-    *   **Pipe Dreams:** Low impact, Long implementation (**Discard these**).
+
+| | **Quick Implementation** | **Long Implementation** |
+| :--- | :--- | :--- |
+| **Low Impact** | **Starters** (Warm-up) | **Pipe Dreams** (Discard) |
+| **High Impact** | **Stars** (Focus here) | **Pipelines** (Future focus) |
 
 ### **Stakeholder Management**
 *   **Stakeholder:** Anyone whose problem you solve or who is part of the solution.
