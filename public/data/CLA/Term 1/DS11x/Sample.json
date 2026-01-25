@@ -1,0 +1,134 @@
+{
+    "exam_metadata": {
+      "subject_name": "Business Statistics for Entrepreneurs",
+      "exam_date": "Sample"
+    },
+    "questions": [
+      {
+        "question_id": "1",
+        "question_text": "A local animal shelter is tracking the number of animals adopted each week over a span of 8 weeks. The number of adoptions recorded are as follows: 5, 8, 6, 12, 10, 9, 7, and 11. What is the mean and variance of the number of adoptions per week?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "7.5, 5.65",
+          "B": "8.5, 6.00",
+          "C": "7.5, 6.25",
+          "D": "8.5, 5.25"
+        },
+        "correct_option_label": "B",
+        "explanation": "Step 1: Calculate the mean ($\\mu$):\n$$\\mu = \\frac{\\sum x_i}{n} = \\frac{5+8+6+12+10+9+7+11}{8} = \\frac{68}{8} = 8.5$$\nStep 2: Calculate the sample variance ($s^2$):\n$$s^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n-1}$$\n$$(5-8.5)^2=12.25; (8-8.5)^2=0.25; (6-8.5)^2=6.25; (12-8.5)^2=12.25;$$\n$$(10-8.5)^2=2.25; (9-8.5)^2=0.25; (7-8.5)^2=2.25; (11-8.5)^2=6.25$$\n$$\\sum (x_i - \\bar{x})^2 = 42$$\n$$s^2 = \\frac{42}{8-1} = \\frac{42}{7} = 6.00$$",
+        "module": 1
+      },
+      {
+        "question_id": "2",
+        "question_text": "Suppose we have the following joint probabilities. Compute P(A2|B2).\nTable:\n       A1    A2    A3\nB1 | 0.15 | 0.20 | 0.10\nB2 | 0.25 | 0.25 | 0.05",
+        "question_type": "MCQ",
+        "options": {
+          "A": "0.85",
+          "B": "0.45",
+          "C": "0.15",
+          "D": "0.50"
+        },
+        "correct_option_label": "B",
+        "explanation": "Step 1: Use the conditional probability formula:\n$$P(A_2 | B_2) = \\frac{P(A_2 \\cap B_2)}{P(B_2)}$$\nStep 2: Find $P(A_2 \\cap B_2)$ from the table:\n$$P(A_2 \\cap B_2) = 0.25$$\nStep 3: Calculate the marginal probability $P(B_2)$:\n$$P(B_2) = 0.25 + 0.25 + 0.05 = 0.55$$\nStep 4: Compute the final value:\n$$P(A_2 | B_2) = \\frac{0.25}{0.55} \\approx 0.4545$$",
+        "module": 1
+      },
+      {
+        "question_id": "3",
+        "question_text": "Suppose two random variables, Demand (X) and Price (Y) that can each take values 1 and 2 respectively have the following joint distribution. Compute the correlation coefficient between X and Y.\nTable:\n       X=1   X=2\nY=1 | 0.30 | 0.40\nY=2 | 0.20 | 0.10",
+        "question_type": "MCQ",
+        "options": {
+          "A": "0.218",
+          "B": "0.128",
+          "C": "-0.128",
+          "D": "-0.218"
+        },
+        "correct_option_label": "D",
+        "explanation": "Step 1: Calculate expected values and variances:\n$$E[X] = 1(0.5) + 2(0.5) = 1.5; Var(X) = 0.25; \\sigma_x = 0.5$$\n$$E[Y] = 1(0.7) + 2(0.3) = 1.3; Var(Y) = 1.9 - 1.3^2 = 0.21; \\sigma_y = \\sqrt{0.21} \\approx 0.4582$$\nStep 2: Calculate $E[XY]$:\n$$E[XY] = (1 \\cdot 1 \\cdot 0.3) + (2 \\cdot 1 \\cdot 0.4) + (1 \\cdot 2 \\cdot 0.2) + (2 \\cdot 2 \\cdot 0.1) = 0.3 + 0.8 + 0.4 + 0.4 = 1.9$$\nStep 3: Calculate Covariance:\n$$Cov(X,Y) = E[XY] - E[X]E[Y] = 1.9 - (1.5 \\cdot 1.3) = 1.9 - 1.95 = -0.05$$\nStep 4: Calculate Correlation Coefficient ($\\rho$):\n$$\\rho = \\frac{Cov(X,Y)}{\\sigma_x \\sigma_y} = \\frac{-0.05}{0.5 \\cdot 0.4582} \\approx -0.218$$",
+        "module": 1
+      },
+      {
+        "question_id": "4",
+        "question_text": "A company buys components from two suppliers, S1 and S2. The probability that a randomly selected component is from supplier 1 is 0.6. From historical data, it is known that a component purchased from supplier 1 can be defective with probability 0.02, and the probability that a component purchased from supplier 2 can be defective with probability 0.05. If a component is defective, what is the probability that it was purchased from supplier 1?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "0.57",
+          "B": "0.41",
+          "C": "0.66",
+          "D": "0.38"
+        },
+        "correct_option_label": "D",
+        "explanation": "Step 1: Identify given probabilities:\n$P(S_1) = 0.6, P(S_2) = 0.4$\n$P(D|S_1) = 0.02, P(D|S_2) = 0.05$\nStep 2: Calculate total probability of defect $P(D)$ using law of total probability:\n$$P(D) = P(D|S_1)P(S_1) + P(D|S_2)P(S_2) = (0.02 \\cdot 0.6) + (0.05 \\cdot 0.4) = 0.012 + 0.02 = 0.032$$\nStep 3: Use Bayes' Theorem to find $P(S_1|D)$:\n$$P(S_1|D) = \\frac{P(D|S_1)P(S_1)}{P(D)} = \\frac{0.012}{0.032} = 0.375 \\approx 0.38$$",
+        "module": 1
+      },
+      {
+        "question_id": "5",
+        "question_text": "A manufacturer of light bulbs knows that 5% of the light bulbs in a production batch are defective. If a quality manager randomly selects 20 light bulbs from a production batch, what is the probability that at least 2 light bulbs are defective in the sample?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "0.12",
+          "B": "0.34",
+          "C": "0.26",
+          "D": "0.42"
+        },
+        "correct_option_label": "C",
+        "explanation": "This follows a Binomial distribution $X \\sim B(n=20, p=0.05)$.\nStep 1: Calculate $P(X \\ge 2) = 1 - P(X < 2) = 1 - [P(X=0) + P(X=1)]$.\nStep 2: Calculate $P(X=0)$:\n$$P(X=0) = \\binom{20}{0}(0.05)^0(0.95)^{20} \\approx 0.3585$$\nStep 3: Calculate $P(X=1)$:\n$$P(X=1) = \\binom{20}{1}(0.05)^1(0.95)^{19} \\approx 0.3774$$\nStep 4: Final calculation:\n$$P(X \\ge 2) = 1 - (0.3585 + 0.3774) = 1 - 0.7359 = 0.2641 \\approx 0.26$$",
+        "module": 3
+      },
+      {
+        "question_id": "6",
+        "question_text": "Which of the following probability distribution has the memoryless property?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Exponential distribution",
+          "B": "Uniform distribution",
+          "C": "Normal distribution",
+          "D": "Sampling distribution"
+        },
+        "correct_option_label": "A",
+        "explanation": "The memoryless property is a unique characteristic of the Exponential distribution (for continuous) and the Geometric distribution (for discrete). It states that $P(X > s+t | X > s) = P(X > t)$.",
+        "module": 4
+      },
+      {
+        "question_id": "7",
+        "question_text": "A professor wants to analyse the test scores of students that took a recent exam. The scores are normally distributed with a mean of 75 and a standard deviation of 10. Find the z-score of a student that scored 85 on the exam.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "0.16",
+          "B": "0.59",
+          "C": "-1.0",
+          "D": "1.0"
+        },
+        "correct_option_label": "D",
+        "explanation": "Use the z-score formula:\n$$z = \\frac{x - \\mu}{\\sigma}$$\nGiven $x = 85, \\mu = 75, \\sigma = 10$:\n$$z = \\frac{85 - 75}{10} = \\frac{10}{10} = 1.0$$",
+        "module": 4
+      },
+      {
+        "question_id": "8",
+        "question_text": "A bakery produces muffins that have an average weight of 100 gms with a standard deviation of 5 gms. It is known that the weight of muffins have a normal distribution. If a random sample of 25 muffins is selected, what is the probability that the sample mean weight of muffins is more than 102 gms?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "0.001",
+          "B": "0.022",
+          "C": "0.159",
+          "D": "0.841"
+        },
+        "correct_option_label": "B",
+        "explanation": "Step 1: Determine the distribution of the sample mean $\\bar{x} \\sim N(\\mu, \\sigma_{\\bar{x}})$:\n$$\\sigma_{\\bar{x}} = \\frac{\\sigma}{\\sqrt{n}} = \\frac{5}{\\sqrt{25}} = \\frac{5}{5} = 1$$\nStep 2: Calculate the z-score for $\\bar{x} = 102$:\n$$z = \\frac{\\bar{x} - \\mu}{\\sigma_{\\bar{x}}} = \\frac{102 - 100}{1} = 2.0$$\nStep 3: Find $P(Z > 2.0)$:\n$$P(Z > 2.0) = 1 - P(Z < 2.0) = 1 - 0.9772 = 0.0228 \\approx 0.022$$",
+        "module": 4
+      },
+      {
+        "question_id": "9",
+        "question_text": "A customer service department monitors the time between incoming calls, which follows an exponential distribution. If the mean time between the calls is 5 mins, what is the probability that the time between the call exceeds 10 mins.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "0.135",
+          "B": "0.153",
+          "C": "0.531",
+          "D": "0.315"
+        },
+        "correct_option_label": "A",
+        "explanation": "For an Exponential distribution, the survival function is $P(X > x) = e^{-\\lambda x}$.\nStep 1: Find the rate parameter $\\lambda$:\n$$\\mu = \\frac{1}{\\lambda} = 5 \\implies \\lambda = 0.2$$\nStep 2: Calculate $P(X > 10)$:\n$$P(X > 10) = e^{-(0.2)(10)} = e^{-2} \\approx 0.1353$$",
+        "module": 4
+      }
+    ]
+  }

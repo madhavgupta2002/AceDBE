@@ -44,6 +44,13 @@ export const SUBJECTS: Subject[] = [
     description: 'Historical and contemporary perspectives on business and markets',
     term: 1
   },
+  {
+    code: 'DS11x_2024',
+    name: '[2024] Business Statistics for Entrepreneurs',
+    description: 'For Batch 1 with 8 Modules',
+    term: 1
+  },
+
   // Term 4 Subjects
   {
     code: 'MD42x',

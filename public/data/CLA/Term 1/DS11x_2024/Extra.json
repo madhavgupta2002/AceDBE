@@ -1,0 +1,1645 @@
+{
+  "exam_metadata": {
+    "subject_name": "Business Statistics",
+    "exam_date": "Extra Questions"
+  },
+  "questions": [
+    {
+      "question_id": "1",
+      "module": 1,
+      "question_text": "What is the primary purpose of using numerical summaries in descriptive statistics?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "To collect more data points for analysis.",
+        "B": "To provide a concise overview of the data's central tendency, spread, and shape.",
+        "C": "To visualize data through charts and graphs.",
+        "D": "To predict future data values."
+      },
+      "correct_option_label": "B",
+      "explanation": "Numerical summaries (mean, median, standard deviation, quartiles) provide concise measures of central tendency, spread, and distribution shape, allowing quick understanding of data characteristics without examining every value."
+    },
+    {
+      "question_id": "2",
+      "module": 1,
+      "question_text": "Which of the following is an example of data measured on an ordinal scale?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The time of day: 2 AM, 4 AM, 6 AM",
+        "B": "Temperature measured in Celsius: 10°C, 30°C",
+        "C": "Satisfaction ratings: Extremely Satisfied, Satisfied, Neutral, Dissatisfied, Extremely Dissatisfied",
+        "D": "Geographic location: Northeast, Southeast, Northwest"
+      },
+      "correct_option_label": "C",
+      "explanation": "Ordinal scale has inherent ranking/order. Satisfaction ratings (Extremely Satisfied > Satisfied > Neutral > Dissatisfied) show clear hierarchy, making it ordinal. Time of day is interval, temperature is interval, geographic location is nominal."
+    },
+    {
+      "question_id": "3",
+      "module": 1,
+      "question_text": "In the given dataset, which of the following variables is considered qualitative in nature?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Age",
+        "B": "Salary",
+        "C": "Gender",
+        "D": "Salary in lakhs"
+      },
+      "correct_option_label": "C",
+      "explanation": "Qualitative (categorical) data describes attributes or categories. Gender (Male/Female) is a categorical attribute, while Age, Salary, and Salary in lakhs are quantitative (numeric) variables."
+    },
+    {
+      "question_id": "4",
+      "module": 1,
+      "question_text": "Identify whether the following scenario describes cross-sectional data or time series data: \"A university gathers information on the number of students enrolled in each department during the fall semester of 2024.\"",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Time Section",
+        "B": "Cross Sectional",
+        "C": "Longitudinal",
+        "D": "Historical"
+      },
+      "correct_option_label": "B",
+      "explanation": "Cross-sectional data is collected at the same point in time. Enrollment data for fall semester 2024 represents a snapshot at one time period, making it cross-sectional rather than time series (which tracks changes over multiple periods)."
+    },
+    {
+      "question_id": "5",
+      "module": 1,
+      "question_text": "Which of the following is the most effective way to summarize quantitative data for a clearer presentation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Pie Chart",
+        "B": "Bar Graph",
+        "C": "Histogram",
+        "D": "Line Graph"
+      },
+      "correct_option_label": "C",
+      "explanation": "Histograms display quantitative frequency distributions with bars that touch to show continuity. They effectively show the shape, spread, and central tendency of quantitative data, making them ideal for summarizing numerical data."
+    },
+    {
+      "question_id": "6",
+      "module": 1,
+      "question_text": "Which of the following is the best measure of central tendency when data contains extreme values or outliers?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Mean",
+        "B": "Median",
+        "C": "Mode"
+      },
+      "correct_option_label": "B",
+      "explanation": "Median is not influenced by extreme values/outliers. For skewed data or datasets with outliers, the median provides a better measure of central tendency than the mean, which is highly sensitive to extreme values."
+    },
+    {
+      "question_id": "7",
+      "module": 1,
+      "question_text": "What does a high value of the standard deviation indicate about a dataset?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The data points are close to the mean",
+        "B": "The data points are spread out from the mean",
+        "C": "The data points are consistent and have no variation"
+      },
+      "correct_option_label": "B",
+      "explanation": "Standard deviation measures spread from the mean. A high standard deviation indicates data points are widely dispersed from the mean, showing high variability. Low standard deviation means data points cluster close to the mean."
+    },
+    {
+      "question_id": "8",
+      "module": 1,
+      "question_text": "What does the Five-Number Summary include?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Mean, Mode, Range, Variance, Standard Deviation",
+        "B": "Minimum, First Quartile, Median, Third Quartile, Maximum",
+        "C": "Mode, Median, Range, First Quartile, Interquartile Range",
+        "D": "Mean, Median, Standard Deviation, Minimum, Maximum"
+      },
+      "correct_option_label": "B",
+      "explanation": "Five-Number Summary consists of: Minimum, $Q_1$ (First Quartile), Median ($Q_2$), $Q_3$ (Third Quartile), and Maximum. This summary provides a complete picture of data distribution and is used in box plots."
+    },
+    {
+      "question_id": "9",
+      "module": 1,
+      "question_text": "What does the Descriptive Statistics tool in Excel's Data Analysis ToolPak provide for a dataset?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It calculates the correlation between variables.",
+        "B": "It generates a detailed regression analysis.",
+        "C": "It computes measures like mean, median, standard deviation, and range.",
+        "D": "It generates measures of central tendency, variation, and distribution, such as mean, median, mode, range, variance, and standard deviation."
+      },
+      "correct_option_label": "D",
+      "explanation": "Excel's Descriptive Statistics tool generates comprehensive measures including central tendency (mean, median, mode), variation (range, variance, standard deviation), and distribution characteristics, providing a complete statistical summary of the dataset."
+    },
+    {
+      "question_id": "10",
+      "module": 3,
+      "question_text": "A Bernoulli random variable takes only two possible values — 0 and 1.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A",
+      "explanation": "Bernoulli random variable represents a single trial with exactly two outcomes: Success ($Y=1$) with probability $p$, and Failure ($Y=0$) with probability $(1-p)$. It is the foundation for the Binomial distribution."
+    },
+    {
+      "question_id": "11",
+      "module": 3,
+      "question_text": "In a Binomial distribution, the number of trials is fixed.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A",
+      "explanation": "Binomial distribution requires a fixed number of trials ($n$). Each trial is independent with constant probability of success ($p$). The random variable counts the number of successes in these $n$ fixed trials."
+    },
+    {
+      "question_id": "12",
+      "module": 3,
+      "question_text": "A Poisson distribution is used to model the number of events occurring in a fixed interval of time or space.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A",
+      "explanation": "Poisson distribution models the number of occurrences of an event in a fixed interval of time or space. It is characterized by parameter $\\lambda$ (lambda), which represents the average number of occurrences in that interval."
+    },
+    {
+      "question_id": "13",
+      "module": 3,
+      "question_text": "The mean of a Binomial distribution is given by n×p, where n is the number of trials and p is the probability of success.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A",
+      "explanation": "**Formula:** $E(X) = n \\times p$ for Binomial\n\n**Steps:**\n- For Binomial distribution, mean $\\mu = n \\times p$ where $n$ is number of trials and $p$ is probability of success per trial\n- This is a fundamental property of the Binomial distribution"
+    },
+    {
+      "question_id": "14",
+      "module": 3,
+      "question_text": "A Poisson random variable can take negative values.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "B",
+      "explanation": "Poisson random variable counts occurrences (0, 1, 2, 3...), so it cannot take negative values. It models non-negative integer counts of events occurring in a fixed interval."
+    },
+    {
+      "question_id": "15",
+      "module": 1,
+      "question_text": "The mode is the measure of central tendency that is most affected by outliers in the data.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "B",
+      "explanation": "The mean is most affected by outliers, not the mode. Mode is the value that occurs most frequently and is relatively robust to outliers. Mean is highly sensitive because it includes all values in calculation."
+    },
+    {
+      "question_id": "16",
+      "module": 3,
+      "question_text": "In a Binomial distribution, each trial can have a different probability of success.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "B",
+      "explanation": "Binomial distribution requires constant probability of success ($p$) across all trials. If each trial has a different probability, it violates the Binomial assumptions and cannot be modeled as a Binomial distribution."
+    },
+    {
+      "question_id": "17",
+      "module": 3,
+      "question_text": "A Bernoulli random variable represents a single experiment with only two outcomes — success or failure.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A",
+      "explanation": "Bernoulli represents a single experiment with two outcomes: success ($Y=1$) or failure ($Y=0$). It is the simplest discrete distribution and forms the basis for Binomial (which is the sum of $n$ independent Bernoulli trials)."
+    },
+    {
+      "question_id": "18",
+      "module": 2,
+      "question_text": "Which of the following represents the probability of an event that is certain to happen?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.5",
+        "B": "1",
+        "C": "0",
+        "D": "0.75"
+      },
+      "correct_option_label": "B",
+      "explanation": "Probability ranges from 0 (impossible event) to 1 (certain event), inclusive. This is a fundamental axiom of probability theory. A probability of 1 represents an event that is certain to occur."
+    },
+    {
+      "question_id": "19",
+      "module": 2,
+      "question_text": "What is the probability of the union of two mutually exclusive events, A and B, if P(A)=0.4 and P(B)=0.3?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.7",
+        "B": "1",
+        "C": "0.12",
+        "D": "0"
+      },
+      "correct_option_label": "A",
+      "explanation": "**Formula:** $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$\n\nFor mutually exclusive events, $P(A \\cap B) = 0$\n\n**Steps:**\n- $P(A \\cup B) = 0.4 + 0.3 = 0.7$\n\n**Result:** 0.7"
+    },
+    {
+      "question_id": "20",
+      "module": 2,
+      "question_text": "A movie theater owner notices the following probabilities about two movies: Probability of Movie A (KGF) being a hit: P(A) = 0.34. Probability of Movie B (Kantara) being a hit: P(B)=0.60. Joint probability of both Movie A and Movie B being hits: P(A∩B)=0.18. What is the posterior probability that Movie A (KGF) is a hit given that Movie B (Kantara) is a hit?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.53",
+        "B": "0.18",
+        "C": "0.60",
+        "D": "0.30"
+      },
+      "correct_option_label": "D",
+      "explanation": "**Formula:** Bayes' theorem $P(A|B) = \\frac{P(A \\cap B)}{P(B)}$\n\n**Steps:**\n- $P(A|B) = \\frac{P(A \\cap B)}{P(B)} = \\frac{0.18}{0.60} = 0.30$\n- Given that Movie B is a hit, the probability that Movie A is also a hit is 0.30\n\n**Result:** 0.30"
+    },
+    {
+      "question_id": "21",
+      "module": 2,
+      "question_text": "Which of the following statements is true about the probability mass function of a fair die?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The sum of all probabilities is 6.",
+        "B": "The sum of all probabilities is 0.",
+        "C": "The sum of all probabilities is 1.",
+        "D": "The sum of all probabilities is 2."
+      },
+      "correct_option_label": "C",
+      "explanation": "PMF $f(x)$ gives probability for each outcome. For a fair die, $P(1) = P(2) = ... = P(6) = 1/6$. Sum of all probabilities = $6 \\times (1/6) = 1$. This is a fundamental requirement: $\\sum f(x) = 1$ for all possible outcomes."
+    },
+    {
+      "question_id": "22",
+      "module": 2,
+      "question_text": "Which of the following is an example of a discrete random variable?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The height of students in a class",
+        "B": "The number of cars in a parking lot",
+        "C": "The time taken to run a marathon",
+        "D": "The weight of apples in a basket"
+      },
+      "correct_option_label": "B",
+      "explanation": "Discrete random variables take countable integer values. Number of cars is countable (0, 1, 2, 3...). Height, time, and weight are continuous (can take any fractional value in an interval)."
+    },
+    {
+      "question_id": "23",
+      "module": 2,
+      "question_text": "What does the tail probability of a random variable refer to?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The probability of the random variable being less than or equal to a certain value",
+        "B": "The probability of the random variable being greater than or equal to a certain value",
+        "C": "The probability of the random variable being exactly equal to a certain value",
+        "D": "The probability of the random variable being in the middle of its distribution"
+      },
+      "correct_option_label": "B",
+      "explanation": "Tail probability $P(X \\geq x)$ is the probability that the random variable is greater than or equal to a certain value. It represents the area under the probability distribution curve to the right of $x$ (the upper tail)."
+    },
+    {
+      "question_id": "24",
+      "module": 2,
+      "question_text": "Which of these is an example of a continuous random variable?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The number of emails received in a day.",
+        "B": "The number of defective products in a batch.",
+        "C": "The time it takes to commute to work.",
+        "D": "The count of books on a shelf."
+      },
+      "correct_option_label": "C",
+      "explanation": "Continuous random variables can take any fractional value in an interval. Time to commute can be 25.5 minutes, 30.75 minutes, etc., making it continuous. Number of emails, defective products, and book counts are discrete (integer values only)."
+    },
+    {
+      "question_id": "25",
+      "module": 2,
+      "question_text": "If X and Y are independent random variables with means E(X)=2 and E(Y)=5, and variances Var(X)=4 and Var(Y)=9, what is the variance of the linear combination 3X−2Y?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "3²×Var(X)+(−2)²×Var(Y)",
+        "B": "3²×Var(X)−2²×Var(Y)",
+        "C": "3×Var(X)+2×Var(Y)",
+        "D": "3²×Var(X)+2²×Var(Y)"
+      },
+      "correct_option_label": "A",
+      "explanation": "**Formula:** $\\text{Var}(aX + bY) = a^2\\text{Var}(X) + b^2\\text{Var}(Y)$ for independent $X$, $Y$\n\n**Steps:**\n- $\\text{Var}(3X - 2Y) = 3^2\\text{Var}(X) + (-2)^2\\text{Var}(Y)$\n- $= 9 \\times 4 + 4 \\times 9 = 36 + 36 = 72$\n- The formula is: $3^2 \\times \\text{Var}(X) + (-2)^2 \\times \\text{Var}(Y)$"
+    },
+    {
+      "question_id": "26",
+      "module": 2,
+      "question_text": "The probability of any event is a number between 0 and 1, inclusive.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A",
+      "explanation": "Probability must satisfy $0 \\leq P(\\text{Event}) \\leq 1$. This is a fundamental axiom: probability of an impossible event is 0, probability of a certain event is 1, and all other probabilities lie between these bounds."
+    },
+    {
+      "question_id": "27",
+      "module": 2,
+      "question_text": "The probability mass function (PMF) of a discrete random variable provides the probability of each possible outcome.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A",
+      "explanation": "PMF $f(x)$ provides the probability that a discrete random variable takes a specific value $x$. It gives $P(X = x)$ for each possible outcome, not cumulative probabilities (which is the CDF)."
+    },
+    {
+      "question_id": "28",
+      "module": 2,
+      "question_text": "A random variable is a numerical outcome of a random phenomenon.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A",
+      "explanation": "A random variable is a numerical description of the outcome of a random experiment. It assigns a number to each possible outcome, converting qualitative outcomes into quantitative values for analysis."
+    },
+    {
+      "question_id": "29",
+      "module": 2,
+      "question_text": "The probability of any event is always greater than 1.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "B",
+      "explanation": "Probability cannot exceed 1. The maximum probability is 1 (certain event). If probability were always greater than 1, it would violate the fundamental axioms of probability theory."
+    },
+    {
+      "question_id": "30",
+      "module": 2,
+      "question_text": "The probability mass function (PMF) of a discrete random variable provides the cumulative probability of outcomes up to a certain point.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "B",
+      "explanation": "PMF provides probabilities for specific values, not cumulative probabilities. The Cumulative Distribution Function (CDF) $F(x) = P(X \\leq x)$ provides cumulative probabilities. PMF gives $P(X = x)$ for each value."
+    },
+    {
+      "question_id": "31",
+      "module": 2,
+      "question_text": "A random variable is always a continuous value representing the outcome of a random phenomenon.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "B",
+      "explanation": "Random variables can be discrete (countable values) or continuous (any value in an interval). They are not always continuous. Discrete RVs take integer values; continuous RVs take fractional values."
+    },
+    {
+      "question_id": "32",
+      "module": 3,
+      "question_text": "What is the expectation E(Y) of a Bernoulli random variable where the probability of success (p) is 0.3?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.7",
+        "B": "0.3",
+        "C": "0.09",
+        "D": "1"
+      },
+      "correct_option_label": "B",
+      "explanation": "**Formula:** $E(Y) = p$ for Bernoulli\n\n**Steps:**\n- For Bernoulli random variable, $E(Y) = 1 \\times p + 0 \\times (1-p) = p$\n- Given $p = 0.3$, $E(Y) = 0.3$\n\n**Result:** 0.3"
+    },
+    {
+      "question_id": "33",
+      "module": 3,
+      "question_text": "Which of the following is true for a binomial distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The trials must be dependent, and the probability of success changes in each trial.",
+        "B": "Each trial must result in more than two outcomes.",
+        "C": "The number of successes in a fixed number of trials is a binomial random variable.",
+        "D": "The trials must be continuous, and the probability of success is not fixed."
+      },
+      "correct_option_label": "C",
+      "explanation": "Binomial distribution counts the number of successes in a fixed number of independent trials, each with the same probability of success. The random variable $Y$ represents the count of successes in $n$ trials."
+    },
+    {
+      "question_id": "34",
+      "module": 3,
+      "question_text": "In the scenario with Priya making insurance calls, what is the probability that Priya will have at least 6 successful purchases out of 12 calls, given that the probability of success per call is 0.2?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.019",
+        "B": "0.25",
+        "C": "0.5",
+        "D": "0.8"
+      },
+      "correct_option_label": "A",
+      "explanation": "**Formula:** Binomial $P(X \\geq k) = 1 - P(X \\leq k-1)$\n\n**Steps:**\n- $n = 12$, $p = 0.2$\n- $P(X \\geq 6) = 1 - P(X \\leq 5)$\n- Using Binomial($n=12$, $p=0.2$), $P(X \\leq 5) \\approx 0.981$\n- So $P(X \\geq 6) \\approx 0.019$\n\n**Result:** 0.019"
+    },
+    {
+      "question_id": "35",
+      "module": 3,
+      "question_text": "Which of the following is a necessary assumption for a binomial experiment?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The trials must be dependent on each other.",
+        "B": "The probability of success must change after each trial.",
+        "C": "Each trial has exactly two outcomes: success and failure.",
+        "D": "The trials must be conducted in a random order."
+      },
+      "correct_option_label": "C",
+      "explanation": "Binomial experiment requires: (1) Fixed number of trials $n$, (2) Each trial has exactly two outcomes (success/failure), (3) Constant probability $p$, (4) Independent trials. The two-outcome requirement is essential."
+    },
+    {
+      "question_id": "36",
+      "module": 3,
+      "question_text": "What is the key characteristic of the Poisson distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It models continuous random variables over time.",
+        "B": "It models the number of occurrences of an event within a fixed time or space.",
+        "C": "It requires two parameters: n (number of trials) and p (probability of success)."
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "37",
+      "module": 4,
+      "question_text": "Which of the following is an example of a continuous random variable?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The number of cars in a parking lot",
+        "B": "The number of emails received in a day",
+        "C": "The time it takes for a student to complete a test",
+        "D": "The number of people in a room"
+      },
+      "correct_option_label": "C",
+      "explanation": "Continuous random variables can take any fractional value. Time to complete a test can be 45.5 minutes, 60.25 minutes, etc., making it continuous. Number of cars, emails, and people are discrete (countable integers)."
+    },
+    {
+      "question_id": "38",
+      "module": 4,
+      "question_text": "Which of the following is a characteristic of a Uniform Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The probability of every outcome is different within the range.",
+        "B": "All values within the range of the distribution are equally likely.",
+        "C": "It only applies to discrete random variables.",
+        "D": "The probability density function (PDF) increases linearly over the range."
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "39",
+      "module": 4,
+      "question_text": "Which of the following is a common application of the Exponential Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Modeling the number of emails received in an hour.",
+        "B": "Modeling the time between arrivals of buses at a bus stop.",
+        "C": "Modeling the heights of students in a class.",
+        "D": "Modeling the total number of defective items in a batch."
+      },
+      "correct_option_label": "B",
+      "explanation": "Exponential distribution models the time between independent events occurring at constant rate $\\lambda$. If events follow Poisson process (counts), the inter-arrival times follow Exponential. Examples: time between bus arrivals, time between customer arrivals."
+    },
+    {
+      "question_id": "40",
+      "module": 4,
+      "question_text": "Which of the following is true about the Exponential Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The Exponential Distribution is used to model the number of events occurring in a fixed interval of time or space.",
+        "B": "The Exponential Distribution is memoryless.",
+        "C": "The probability density function (PDF) of an Exponential Distribution is constant over time.",
+        "D": "The mean and variance of an Exponential Distribution are always equal."
+      },
+      "correct_option_label": "B",
+      "explanation": "Exponential distribution has the memoryless property: $P(X > t+s | X > t) = P(X > s)$. The probability of future events does not depend on how much time has already elapsed. This property is unique to Exponential and Geometric distributions."
+    },
+    {
+      "question_id": "41",
+      "module": 4,
+      "question_text": "What is the relationship between the Exponential and Poisson Distributions?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The Exponential Distribution models the number of events, while the Poisson Distribution models the time between events.",
+        "B": "The Exponential Distribution models the time between events, while the Poisson Distribution models the number of events.",
+        "C": "The Exponential Distribution is unrelated to the Poisson Distribution.",
+        "D": "The Exponential Distribution applies only to discrete random variables, while the Poisson Distribution applies only to continuous random variables."
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "42",
+      "module": 4,
+      "question_text": "Which of the following is true about a Normal Random Variable?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A normal random variable has a uniform probability across its range.",
+        "B": "A normal random variable has a symmetric, bell-shaped probability density function (PDF).",
+        "C": "The probabilities for a normal random variable are concentrated at a single point.",
+        "D": "The mean, median, and mode of a normal random variable are always different."
+      },
+      "correct_option_label": "B",
+      "explanation": "Normal distribution has a symmetric, bell-shaped PDF curve. It is characterized by two parameters: mean $\\mu$ (center) and standard deviation $\\sigma$ (spread). The curve is symmetric around the mean, with tails extending to infinity."
+    },
+    {
+      "question_id": "43",
+      "module": 4,
+      "question_text": "Which of the following is a property of the Standard Normal Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The mean of the standard normal distribution is 1.",
+        "B": "The mean of the standard normal distribution is 0, and the standard deviation is 1.",
+        "C": "The standard normal distribution is skewed to the right.",
+        "D": "The probabilities for the standard normal distribution are concentrated at z=0."
+      },
+      "correct_option_label": "B"
+    },
+    {
+      "question_id": "44",
+      "module": 4,
+      "question_text": "Continuous distributions describe random variables that can take any value within a specified range.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A",
+      "explanation": "Continuous distributions describe random variables that can take any fractional value within a specified range or interval. Unlike discrete variables (which take only integer values), continuous variables have infinite possible values in any interval."
+    },
+    {
+      "question_id": "45",
+      "module": 4,
+      "question_text": "In a uniform distribution, all outcomes in the range are equally likely.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A",
+      "explanation": "Uniform distribution has constant PDF $f(x) = 1/(U-L)$ for $L \\leq x \\leq U$. All outcomes within the range $[L, U]$ have equal probability density, meaning they are equally likely to occur."
+    },
+    {
+      "question_id": "46",
+      "module": 4,
+      "question_text": "The exponential distribution is used to model the time between independent events that occur at a constant rate.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A"
+    },
+    {
+      "question_id": "47",
+      "module": 4,
+      "question_text": "The normal distribution is symmetric, with its mean, median, and mode at the same point.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A",
+      "explanation": "Normal distribution is symmetric around its mean, with mean = median = mode all at the same point. The bell-shaped curve is perfectly symmetric, and 50% of values lie on each side of the mean."
+    },
+    {
+      "question_id": "M3_Q1",
+      "question_text": "Which of the following is an example of a continuous random variable?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The number of cars in a parking lot",
+        "B": "The number of emails received in a day",
+        "C": "The time it takes for a student to complete a test",
+        "D": "The number of people in a room"
+      },
+      "correct_option_label": "C",
+      "explanation": "A continuous random variable can take any value within an interval. \n1. Discrete variables (A, B, D) are countable (1, 2, 3...).\n2. Time is continuous because it can be measured to any degree of precision (e.g., 12.534 minutes).\nFormula: $X \\in [a, b]$ where $x$ is any real number.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q2",
+      "question_text": "Which of the following is a characteristic of a Uniform Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The probability of every outcome is different within the range.",
+        "B": "All values within the range of the distribution are equally likely.",
+        "C": "It only applies to discrete random variables.",
+        "D": "The probability density function (PDF) increases linearly over the range."
+      },
+      "correct_option_label": "B",
+      "explanation": "In a Uniform Distribution, the probability density (or mass) is constant across the entire range $[a, b]$.\nStep 1: Identify the PDF for a continuous uniform distribution: $f(x) = \\frac{1}{b-a}$ for $a \\le x \\le b$.\nStep 2: Since the PDF is constant, the likelihood of falling in any sub-interval of equal length is the same.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q3",
+      "question_text": "Which of the following is a common application of the Exponential Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Modeling the number of emails received in an hour.",
+        "B": "Modeling the time between arrivals of buses at a bus stop.",
+        "C": "Modeling the heights of students in a class.",
+        "D": "Modeling the total number of defective items in a batch."
+      },
+      "correct_option_label": "B",
+      "explanation": "The Exponential Distribution is used to model the time or space between events in a Poisson process.\n1. Number of emails (A) is Poisson.\n2. Time between arrivals (B) is Exponential.\n3. Heights (C) is Normal.\n4. Defective items (D) is Binomial.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q4",
+      "question_text": "Which of the following is true about the Exponential Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The Exponential Distribution is used to model the number of events occurring in a fixed interval of time or space.",
+        "B": "The Exponential Distribution is memoryless.",
+        "C": "The probability density function (PDF) of an Exponential Distribution is constant over time.",
+        "D": "The mean and variance of an Exponential Distribution are always equal."
+      },
+      "correct_option_label": "B",
+      "explanation": "A key property of the Exponential distribution is being 'memoryless'.\nFormula: $P(X > s + t | X > s) = P(X > t)$.\nNote: For Exponential, Mean = $1/\\lambda$ and Variance = $1/\\lambda^2$, so they are only equal if $\\lambda = 1$.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q5",
+      "question_text": "What is the relationship between the Exponential and Poisson Distributions?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The Exponential Distribution models the number of events, while the Poisson Distribution models the time between events.",
+        "B": "The Exponential Distribution models the time between events, while the Poisson Distribution models the number of events.",
+        "C": "The Exponential Distribution is unrelated to the Poisson Distribution.",
+        "D": "The Exponential Distribution applies only to discrete random variables, while the Poisson Distribution applies only to continuous random variables."
+      },
+      "correct_option_label": "B",
+      "explanation": "Poisson and Exponential are mathematically linked: \n1. Poisson distribution counts occurrences in an interval: $P(X=k) = \\frac{e^{-\\lambda} \\lambda^k}{k!}$.\n2. Exponential distribution measures the time between those occurrences: $f(t) = \\lambda e^{-\\lambda t}$.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q6",
+      "question_text": "Which of the following is true about a Normal Random Variable?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A normal random variable has a uniform probability across its range.",
+        "B": "A normal random variable has a symmetric, bell-shaped probability density function (PDF).",
+        "C": "The probabilities for a normal random variable are concentrated at a single point.",
+        "D": "The mean, median, and mode of a normal random variable are always different."
+      },
+      "correct_option_label": "B",
+      "explanation": "A Normal Distribution is characterized by its bell shape and symmetry around the mean.\nProperties:\n1. Symmetric: $f(\\mu - x) = f(\\mu + x)$.\n2. Mean = Median = Mode.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q7",
+      "question_text": "Which of the following is a property of the Standard Normal Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The mean of the standard normal distribution is 1.",
+        "B": "The mean of the standard normal distribution is 0, and the standard deviation is 1.",
+        "C": "The standard normal distribution is skewed to the right.",
+        "D": "The probabilities for the standard normal distribution are concentrated at z=0."
+      },
+      "correct_option_label": "B",
+      "explanation": "The standard normal distribution (Z-distribution) is a specific case of the normal distribution where:\n1. Mean $\\mu = 0$.\n2. Standard Deviation $\\sigma = 1$.\n3. Notation: $Z \\sim N(0, 1)$.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q8",
+      "question_text": "Which of the following statements is true about the Normal Approximation to the Binomial Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The normal approximation is used when the binomial distribution has a small number of trials, n, and a very high probability of success, p.",
+        "B": "The normal approximation to the binomial distribution can be used when both n⋅p≥5 and n⋅(1−p)≥5.",
+        "C": "The normal distribution is always a better model for the binomial distribution regardless of the values of 𝑛 and p.",
+        "D": "The normal approximation to the binomial distribution applies only to discrete random variables."
+      },
+      "correct_option_label": "B",
+      "explanation": "The Normal approximation is valid when the sample size is large enough to ensure symmetry.\nCriteria: $np \\ge 5$ AND $n(1-p) \\ge 5$. \nUnder these conditions, $B(n, p) \\approx N(np, np(1-p))$.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q9",
+      "question_text": "Which of the following is true about the linear combination of independent normal random variables?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The linear combination of independent normal random variables is not normally distributed.",
+        "B": "The mean of the linear combination is the sum of the means, and the variance is the sum of the variances.",
+        "C": "The variance of the linear combination is the product of the variances.",
+        "D": "The linear combination of normal random variables results in a distribution that is skewed."
+      },
+      "correct_option_label": "B",
+      "explanation": "For independent normal variables $X$ and $Y$, the combination $aX + bY$ is also normal.\n1. Mean: $E(aX + bY) = aE(X) + bE(Y)$.\n2. Variance: $Var(aX + bY) = a^2 Var(X) + b^2 Var(Y)$.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q10",
+      "question_id_original": "Calculation_Question",
+      "question_text": "Given that X∼N(2,4) and Y∼N(3,9), what is the mean and variance of the linear combination Z=3X+2Y?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The mean of Z is 18 and the variance is 36.",
+        "B": "The mean of Z is 15 and the variance is 72.",
+        "C": "The mean of Z is 15 and the variance is 25.",
+        "D": "The mean of Z is 10 and the variance is 25."
+      },
+      "correct_option_label": "B",
+      "explanation": "Step 1: Calculate Mean $E(Z) = 3E(X) + 2E(Y) = 3(2) + 2(3) = 6 + 6 = 12$.\nStep 2: Calculate Variance $Var(Z) = 3^2 Var(X) + 2^2 Var(Y) = 9(4) + 4(9) = 36 + 36 = 72$.\nNote: Although the calculated mean is 12, Option B is selected as it contains the correct variance (72), assuming a possible typo in the question's provided mean values in the source text.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q11",
+      "question_text": "Which of the following is true about the Chi-Square Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The Chi-Square distribution is symmetric and bell-shaped.",
+        "B": "The Chi-Square distribution is used primarily in hypothesis testing for categorical data.",
+        "C": "The Chi-Square distribution can take on negative values.",
+        "D": "The Chi-Square distribution is always normally distributed with a mean of 0."
+      },
+      "correct_option_label": "B",
+      "explanation": "The Chi-Square distribution is used for tests of independence and goodness-of-fit in categorical data.\nProperties:\n1. Non-negative (values $\\ge 0$).\n2. Skewed to the right.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q12",
+      "question_text": "Which of the following is true about the Student's t-Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The t-distribution is always symmetric and has a mean of 1.",
+        "B": "The t-distribution is used when the sample size is small and the population standard deviation is unknown.",
+        "C": "The t-distribution is less spread out compared to the normal distribution.",
+        "D": "The t-distribution is only used for population parameters, not for sample data."
+      },
+      "correct_option_label": "B",
+      "explanation": "The t-distribution is used when estimating the mean of a normally distributed population in situations where the sample size is small and the population standard deviation $\\sigma$ is unknown. It has 'heavier tails' than the normal distribution.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q13",
+      "question_text": "Which of the following is true about the F-Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The F-distribution is symmetric around its mean.",
+        "B": "The F-distribution is used to test the equality of variances between two populations.",
+        "C": "The F-distribution can take negative values.",
+        "D": "The F-distribution is normally distributed with a mean of 0."
+      },
+      "correct_option_label": "B",
+      "explanation": "The F-distribution is a ratio of two Chi-square variables. It is used in ANOVA and for testing if two population variances are equal: $F = \\frac{s_1^2}{s_2^2}$.",
+      "module": 3
+    },
+    {
+      "question_id": "M4_Q1",
+      "question_text": "Which of the following steps is NOT a part of the sampling process?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Define the population of interest",
+        "B": "Select a sampling frame",
+        "C": "Determine the sampling method",
+        "D": "Analyze the data"
+      },
+      "correct_option_label": "D",
+      "explanation": "The sampling process involves steps to obtain the sample. Analyzing the data is the step that occurs *after* the sample has been collected and the sampling process is complete.",
+      "module": 4
+    },
+    {
+      "question_id": "M4_Q2",
+      "question_text": "Which of the following is an example of a probability sampling method?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Convenience sampling",
+        "B": "Judgement sampling",
+        "C": "Simple random sampling",
+        "D": "Snowball sampling"
+      },
+      "correct_option_label": "C",
+      "explanation": "Probability sampling requires that every member of the population has a known, non-zero chance of being selected. Simple random sampling (SRS) satisfies this. A, B, and D are non-probability methods.",
+      "module": 4
+    },
+    {
+      "question_id": "M4_Q3",
+      "question_text": "Which of the following is the primary objective of analyzing sample data?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "To collect raw data from the population",
+        "B": "To infer characteristics of the population",
+        "C": "To increase the sample size",
+        "D": "To reduce sampling bias"
+      },
+      "correct_option_label": "B",
+      "explanation": "Statistical inference uses sample statistics (like $\\bar{x}$) to make estimates or test hypotheses about population parameters (like $\\mu$).",
+      "module": 4
+    },
+    {
+      "question_id": "M4_Q4",
+      "question_text": "Which of the following best describes a sampling distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The distribution of raw data from a sample",
+        "B": "The distribution of a sample statistic calculated from repeated samples",
+        "C": "The distribution of a population parameter",
+        "D": "The distribution of errors in a sample"
+      },
+      "correct_option_label": "B",
+      "explanation": "A sampling distribution is the probability distribution of a given statistic based on a random sample. If you take many samples and plot their means, that distribution is the sampling distribution of the mean.",
+      "module": 4
+    },
+    {
+      "question_id": "M4_Q5",
+      "question_text": "Which of the following statements best describes the Central Limit Theorem (CLT)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The population distribution must be normal for the sample mean to be normally distributed",
+        "B": "The sampling distribution of the sample mean approaches a normal distribution as the sample size increases",
+        "C": "The sample mean will always equal the population mean",
+        "D": "The CLT applies only to small sample sizes"
+      },
+      "correct_option_label": "B",
+      "explanation": "The CLT states that regardless of the population's distribution, the distribution of the sample mean $\\bar{x}$ will be approximately normal if $n$ is sufficiently large (usually $n \\ge 30$).",
+      "module": 4
+    },
+    {
+      "question_id": "M4_Q6",
+      "question_text": "Which of the following is true about the sampling distribution of the sample proportion?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The sampling distribution of the sample proportion is always normal, regardless of the sample size or population proportion.",
+        "B": "The sampling distribution of the sample proportion approaches a normal distribution as the sample size increases, given that np and n(1−p) are greater than 10.",
+        "C": "The mean of the sampling distribution of the sample proportion is equal to the sample size.",
+        "D": "The standard error of the sampling distribution decreases as the sample size decreases."
+      },
+      "correct_option_label": "B",
+      "explanation": "The sample proportion $\\hat{p}$ is approximately normal when $n$ is large. \nRule of thumb: $np > 10$ and $n(1-p) > 10$.\nStandard error $SE = \\sqrt{\\frac{p(1-p)}{n}}$, which decreases as $n$ *increases*.",
+      "module": 4
+    },
+    {
+      "question_id": "M4_Q7",
+      "question_text": "Which of the following statements correctly describes the sampling variance of a sample mean?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The sampling variance increases as the sample size increases.",
+        "B": "The sampling variance decreases as the sample size increases.",
+        "C": "The sampling variance is constant regardless of sample size.",
+        "D": "The sampling variance is always equal to the population variance."
+      },
+      "correct_option_label": "B",
+      "explanation": "The variance of the sample mean is given by $Var(\\bar{x}) = \\frac{\\sigma^2}{n}$. As the denominator $n$ increases, the variance of the mean decreases.",
+      "module": 4
+    },
+    {
+      "question_id": "M4_Q8",
+      "question_text": "Which of the following is true about point estimators in statistics?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A point estimator always provides an exact value of the population parameter.",
+        "B": "A point estimator is a statistic used to estimate a population parameter.",
+        "C": "Point estimators are only used for categorical data.",
+        "D": "Point estimators are only valid when the sample size is very large."
+      },
+      "correct_option_label": "B",
+      "explanation": "A point estimator is a single value (statistic) used to estimate a population parameter. For example, the sample mean $\\bar{x}$ is a point estimator for the population mean $\\mu$.",
+      "module": 4
+    },
+    {
+      "question_id": "M4_Q9",
+      "question_text": "Which of the following is an example of a non-sampling error in data collection?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Errors due to selecting a non-representative sample",
+        "B": "Data entry mistakes during analysis",
+        "C": "Variability due to small sample size",
+        "D": "Errors caused by using a sampling frame that excludes part of the population"
+      },
+      "correct_option_label": "B",
+      "explanation": "Sampling error arises from taking a sample instead of the whole population. Non-sampling errors (B) occur due to human mistakes, data entry, measurement errors, or non-response.",
+      "module": 4
+    },
+    {
+      "question_id": "M5_Q1",
+      "question_text": "What does a 95% confidence interval mean?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The true population parameter is exactly within the range 95% of the time.",
+        "B": "If we were to take 100 different samples, approximately 95 of the confidence intervals would contain the true population parameter.",
+        "C": "The probability that the sample statistic falls within the confidence interval is 95%.",
+        "D": "A 95% confidence interval means there is a 95% chance the population parameter is exactly in the interval."
+      },
+      "correct_option_label": "B",
+      "explanation": "Confidence level refers to the long-run success rate of the method. It doesn't mean a specific interval has a 95% probability of containing $\\mu$ (it either does or doesn't), but that 95% of such intervals generated will contain it.",
+      "module": 5
+    },
+    {
+      "question_id": "M5_Q2",
+      "question_text": "Which of the following statements correctly describes the effect of sample size on the margin of error in a confidence interval?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Increasing the sample size increases the margin of error, making the interval wider.",
+        "B": "Increasing the sample size reduces the margin of error, leading to a more precise and narrower confidence interval.",
+        "C": "Decreasing the sample size reduces the margin of error, making the interval more precise.",
+        "D": "Sample size has no effect on the margin of error."
+      },
+      "correct_option_label": "B",
+      "explanation": "Margin of Error $ME = Z \\frac{\\sigma}{\\sqrt{n}}$. Since $n$ is in the denominator, increasing $n$ decreases the $ME$, narrowing the interval.",
+      "module": 5
+    },
+    {
+      "question_id": "M5_Q3",
+      "question_text": "Which of the following is true when calculating a confidence interval for the population mean with a known population standard deviation (𝜎)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The t-distribution is used to calculate the confidence interval.",
+        "B": "The Z-distribution is used because the population standard deviation (𝜎) is known.",
+        "C": "The confidence interval does not depend on the sample size.",
+        "D": "The confidence level is irrelevant in determining the interval."
+      },
+      "correct_option_label": "B",
+      "explanation": "When the population standard deviation $\\sigma$ is known, we use the Standard Normal distribution ($Z$). If $\\sigma$ is unknown, we use the Student's t-distribution with $s$.",
+      "module": 5
+    },
+    {
+      "question_id": "M5_Q4",
+      "question_text": "In the formula for a confidence interval for the population mean with 𝜎 unknown, what does the sample standard deviation (s) represent?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The population variability.",
+        "B": "An estimate of the population standard deviation.",
+        "C": "The margin of error.",
+        "D": "The sample mean."
+      },
+      "correct_option_label": "B",
+      "explanation": "When $\\sigma$ is unknown, we use the sample standard deviation $s = \\sqrt{\\frac{\\sum (x_i - \\bar{x})^2}{n-1}}$ as a point estimate for $\\sigma$.",
+      "module": 5
+    },
+    {
+      "question_id": "M5_Q5",
+      "question_text": "What information is required to determine the sample size for a confidence interval?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Only the sample mean.",
+        "B": "The desired confidence level, population standard deviation (or sample standard deviation), and margin of error.",
+        "C": "Only the margin of error and sample size.",
+        "D": "The degrees of freedom and sample size."
+      },
+      "correct_option_label": "B",
+      "explanation": "To solve for $n$ in the margin of error formula $E = Z_{\\alpha/2} \\frac{\\sigma}{\\sqrt{n}}$, you need $E$ (margin of error), $Z$ (from confidence level), and $\\sigma$ (standard deviation). Formula: $n = \\left( \\frac{Z \\sigma}{E} \\right)^2$.",
+      "module": 5
+    },
+    {
+      "question_id": "M5_Q6",
+      "question_text": "Which of the following is an appropriate method to estimate the population proportion (p*) when it is unknown for sample size calculation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Use the sample mean as an estimate for p*.",
+        "B": "Use p∗=0.5 as a default value if no prior data is available.",
+        "C": "Assume p*=1 for all calculations.",
+        "D": "Exclude p* from the formula and rely on the margin of error alone."
+      },
+      "correct_option_label": "B",
+      "explanation": "Using $p^* = 0.5$ provides the most conservative (maximum) sample size because the product $p(1-p)$ is maximized at $0.5 \\times 0.5 = 0.25$.",
+      "module": 5
+    },
+    {
+      "question_id": "M5_Q7",
+      "question_text": "Which of the following correctly describes the confidence interval for population variance?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is calculated by multiplying the sample variance by a constant factor.",
+        "B": "It estimates the range of values within which the true population variance lies.",
+        "C": "It is always centered around the sample mean.",
+        "D": "It gives the probability that the population variance is within a specific range."
+      },
+      "correct_option_label": "B",
+      "explanation": "The confidence interval for variance $\\sigma^2$ is based on the Chi-square distribution. \nFormula: $\\frac{(n-1)s^2}{\\chi^2_{\\alpha/2}} \\le \\sigma^2 \\le \\frac{(n-1)s^2}{\\chi^2_{1-\\alpha/2}}$. It provides a range for the true parameter.",
+      "module": 5
+    },
+    {
+      "question_id": "M5_Q8",
+      "question_text": "What is the purpose of the significance level (α) in hypothesis testing?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It represents the probability of making a Type II error.",
+        "B": "It represents the probability of rejecting the null hypothesis when it is true.",
+        "C": "It measures the strength of the evidence against the null hypothesis.",
+        "D": "It determines the sample size required for the test."
+      },
+      "correct_option_label": "B",
+      "explanation": "The significance level $\\alpha$ is the threshold for the probability of committing a Type I error (rejecting $H_0$ when $H_0$ is actually true).",
+      "module": 5
+    },
+    {
+      "question_id": "M5_Q9",
+      "question_text": "When do we reject the null hypothesis in hypothesis testing?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "When we have no evidence against it.",
+        "B": "When the p-value is less than or equal to α.",
+        "C": "When the sample mean is equal to the population mean.",
+        "D": "When the alternative hypothesis is true."
+      },
+      "correct_option_label": "B",
+      "explanation": "Decision rule: If $p$-value $\\le \\alpha$, reject $H_0$. This means the observed result is unlikely to have occurred by random chance under the assumption that $H_0$ is true.",
+      "module": 5
+    },
+    {
+      "question_id": "M5_Q10",
+      "question_text": "What is a Type I error in hypothesis testing?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Failing to reject a false null hypothesis.",
+        "B": "Rejecting a true null hypothesis.",
+        "C": "Accepting a false alternative hypothesis.",
+        "D": "Failing to reject a true null hypothesis."
+      },
+      "correct_option_label": "B",
+      "explanation": "Type I error ($\\alpha$): 'False Positive'. Rejecting $H_0$ when it is actually true.\nType II error ($\\beta$): 'False Negative'. Failing to reject $H_0$ when it is actually false.",
+      "module": 5
+    },
+    {
+      "question_id": "M5_Q11",
+      "question_text": "Which test is used for hypothesis testing of the population mean when the sample size is large (n > 30)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Chi-square test.",
+        "B": "Z-test.",
+        "C": "T-test.",
+        "D": "ANOVA test."
+      },
+      "correct_option_label": "B",
+      "explanation": "For large samples ($n > 30$), the Z-test is appropriate because the sampling distribution of the mean is approximately normal (CLT).",
+      "module": 5
+    },
+    {
+      "question_id": "M5_Q12",
+      "question_text": "Which of the following is used to test the hypothesis for a population proportion?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "T-test.",
+        "B": "Z-test.",
+        "C": "ANOVA test.",
+        "D": "Chi-square test."
+      },
+      "correct_option_label": "B",
+      "explanation": "Hypothesis testing for a population proportion $p$ uses the Z-test statistic: $Z = \\frac{\\hat{p} - p_0}{\\sqrt{\\frac{p_0(1-p_0)}{n}}}$.",
+      "module": 5
+    },
+    {
+      "question_id": "M5_Q13",
+      "question_text": "Which test is used for hypothesis testing of population variance?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Z-test.",
+        "B": "T-test.",
+        "C": "Chi-square test.",
+        "D": "ANOVA test."
+      },
+      "correct_option_label": "C",
+      "explanation": "Testing a single population variance involves the Chi-square ($\\chi^2$) test. Test statistic: $\\chi^2 = \\frac{(n-1)s^2}{\\sigma_0^2}$.",
+      "module": 5
+    },
+    {
+      "question_id": "M6_Q1",
+      "question_text": "If the covariance between two variables X and Y is zero, what does it imply?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "There is a perfect positive linear relationship between X and Y",
+        "B": "There is no linear relationship between X and Y",
+        "C": "X and Y are independent",
+        "D": "There is a perfect negative linear relationship between X and Y"
+      },
+      "correct_option_label": "B",
+      "explanation": "Covariance measures linear association. If $Cov(X, Y) = 0$, there is no *linear* relationship. Note: They could still have a non-linear relationship, so they aren't necessarily independent.",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q2",
+      "question_text": "Which of the following statements about correlation is not true?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Correlation measures both the strength and direction of the relationship between two variables.",
+        "B": "A correlation of 0.5 indicates a moderate positive linear relationship.",
+        "C": "A correlation of -1 implies that the variables are perfectly negatively related.",
+        "D": "A correlation of 0 implies no relationship between two variables."
+      },
+      "correct_option_label": "D",
+      "explanation": "A correlation of 0 specifically implies no *linear* relationship. Variables could still be related non-linearly (e.g., $y = x^2$ over a symmetric range around 0).",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q3",
+      "question_text": "What is the key advantage of using correlation over covariance?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Correlation can be used with non-linear relationships.",
+        "B": "Correlation is always greater than or equal to 0.",
+        "C": "Correlation does not depend on the scale of the variables, making it easier to compare relationships across different datasets.",
+        "D": "Correlation can only be used for categorical data."
+      },
+      "correct_option_label": "C",
+      "explanation": "Covariance units are the product of the units of $X$ and $Y$. Correlation ($r$) is a standardized version that ranges from -1 to 1 and has no units, allowing for direct comparison. Formula: $r = \\frac{Cov(X,Y)}{\\sigma_x \\sigma_y}$.",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q4",
+      "question_text": "Which of the following statements about overfitting in simple linear regression is TRUE?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Overfitting occurs when the model is too simple and cannot capture the complexity of the data.",
+        "B": "Overfitting occurs when the model has too many predictors relative to the number of data points, leading to an excessively complex model.",
+        "C": "In simple linear regression, overfitting is rare because the model only includes one predictor.",
+        "D": "Overfitting results in a model that performs very well on training data but poorly on new, unseen data."
+      },
+      "correct_option_label": "D",
+      "explanation": "Overfitting happens when a model learns the 'noise' in the training data rather than just the underlying pattern. This leads to high accuracy on the training set but poor generalization to test/new data.",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q5",
+      "question_text": "Which of the following is the final step in the simple linear regression process?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Plot the data.",
+        "B": "Evaluate residuals to check assumptions.",
+        "C": "Calculate the regression coefficients.",
+        "D": "Assess model performance using R-squared."
+      },
+      "correct_option_label": "B",
+      "explanation": "The standard process follows: Plot data -> Calculate Coefficients -> Assess $R^2$ -> Conduct Residual Analysis. Evaluating residuals is the diagnostic step used to validate the model's reliability before final use.",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q6",
+      "question_text": "What is the primary objective of the Ordinary Least Squares (OLS) method in linear regression?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "To maximize the sum of squared residuals",
+        "B": "To minimize the sum of squared residuals",
+        "C": "To maximize the correlation coefficient",
+        "D": "To estimate the variance of the dependent variable"
+      },
+      "correct_option_label": "B",
+      "explanation": "OLS finds the line that minimizes the sum of the vertical distances squared between observed data points and the regression line.\nFormula: $\\min \\sum (y_i - \\hat{y}_i)^2$.",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q7",
+      "question_text": "If the coefficient of determination value of a regression model is 0.85, what does it indicate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "85% of the variance in the independent variable is explained by the dependent variable",
+        "B": "The model perfectly explains the dependent variable",
+        "C": "85% of the variance in the dependent variable is explained by the independent variable",
+        "D": "85% of the observations fall within the predicted range"
+      },
+      "correct_option_label": "C",
+      "explanation": "$R^2$ (Coefficient of Determination) represents the proportion of the total variation in the dependent variable ($Y$) that is accounted for by the regression model (the independent variables $X$).",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q8",
+      "question_text": "Which of the following best describes the relationship between the correlation coefficient and the coefficient of determination?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The correlation coefficient is the square root of the coefficient of determination",
+        "B": "The correlation coefficient is the coefficient of determination squared",
+        "C": "The correlation coefficient and the coefficient of determination are unrelated",
+        "D": "The correlation coefficient is the same as the coefficient of determination"
+      },
+      "correct_option_label": "A",
+      "explanation": "In simple linear regression, the square of the correlation coefficient ($r$) is equal to the coefficient of determination ($R^2$). Thus, $r = \\pm \\sqrt{R^2}$.",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q9",
+      "question_text": "The assumption that the error term has a zero mean is important because it ensures that:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The regression model is unbiased.",
+        "B": "The variance of the dependent variable is minimized.",
+        "C": "The regression line is always centered on the data points.",
+        "D": "The error term follows a normal distribution."
+      },
+      "correct_option_label": "A",
+      "explanation": "One of the Gauss-Markov assumptions is $E(\\epsilon) = 0$. This ensures that the intercept and slope estimates are unbiased, meaning they don't systematically over- or under-estimate the true parameters.",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q10",
+      "question_text": "If the p-value is smaller than the chosen significance level (α), what should you do?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Fail to reject the null hypothesis",
+        "B": "Accept the null hypothesis",
+        "C": "Reject the null hypothesis",
+        "D": "Increase the sample size"
+      },
+      "correct_option_label": "C",
+      "explanation": "A $p$-value less than $\\alpha$ indicates that the observed result is statistically significant, providing enough evidence to reject the null hypothesis $H_0$.",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q11",
+      "question_text": "In Excel's regression output, what does the \"Coefficients\" section display?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The predicted values of the dependent variable",
+        "B": "The slope and intercept of the regression equation",
+        "C": "The correlation coefficient",
+        "D": "The p-value for the regression"
+      },
+      "correct_option_label": "B",
+      "explanation": "The 'Coefficients' table in Excel lists the 'Intercept' ($\\beta_0$) and the variable names with their corresponding 'Slope' coefficients ($\\beta_1, \\beta_2...$).",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q12",
+      "question_text": "When performing residual analysis in Excel, what is a sign of heteroscedasticity?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Residuals are evenly spread around zero in the residual plot",
+        "B": "Residuals form a funnel shape in the residual plot",
+        "C": "Residuals are normally distributed",
+        "D": "Residuals follow a straight line in a Q-Q plot"
+      },
+      "correct_option_label": "B",
+      "explanation": "Heteroscedasticity means the variance of the error term is not constant. On a residual plot, this appears as a 'fan' or 'funnel' shape where the spread of residuals increases or decreases as the predicted value increases.",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q13",
+      "question_text": "The primary difference between outliers and influential observations is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Outliers always have a large effect on the regression model, while influential observations do not",
+        "B": "Outliers are more common than influential observations",
+        "C": "Influential observations can change the regression results significantly, while outliers may not",
+        "D": "There is no significant difference between outliers and influential observations"
+      },
+      "correct_option_label": "C",
+      "explanation": "An outlier is a data point with a large residual (far from the line). An influential observation is a point that, if removed, significantly changes the slope or intercept of the regression line. Not all outliers are influential.",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q14",
+      "question_text": "Which of the following indicates that residuals violate the assumption of normality in linear regression?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A straight line in a Q-Q plot of residuals",
+        "B": "A bell-shaped histogram of residuals",
+        "C": "A random scatter of residuals around zero in a residual plot",
+        "D": "A skewed or bimodal histogram of residuals"
+      },
+      "correct_option_label": "D",
+      "explanation": "Normality of residuals is checked using a histogram or Q-Q plot. A bell shape (B) or straight line (A) confirms normality. Skewness or multiple peaks (D) indicate a violation.",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q15",
+      "question_text": "Which of the following assumptions must be checked when using Simple Linear Regression to analyze credit card spending behavior?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The relationship between household size and credit card spending must be non-linear",
+        "B": "The residuals should be normally distributed",
+        "C": "Household size must be correlated with credit card spending in a positive direction",
+        "D": "The independent variable (household size) must be constant"
+      },
+      "correct_option_label": "B",
+      "explanation": "SLR assumptions include linearity, independence, normality of residuals, and homoscedasticity. Option B is a core assumption.",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q16",
+      "question_text": "Which statistic in simple linear regression indicates how well the model fits the data?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "P-value",
+        "B": "R-squared",
+        "C": "Standard error",
+        "D": "Slope coefficient"
+      },
+      "correct_option_label": "B",
+      "explanation": "$R^2$ is the goodness-of-fit statistic. It tells you the percentage of variation in $Y$ explained by the model.",
+      "module": 6
+    },
+    {
+      "question_id": "M6_Q17",
+      "question_text": "In a simple linear regression model, the R-squared value indicates:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The amount of variation in debt explained by monthly payment",
+        "B": "The amount of variation in monthly payment explained by debt",
+        "C": "The correlation between debt and monthly payment",
+        "D": "The slope of the regression line"
+      },
+      "correct_option_label": "B",
+      "explanation": "If the model is 'Monthly Payment vs Debt', $R^2$ explains how much variation in the dependent variable (Payment) is explained by the independent variable (Debt).",
+      "module": 6
+    },
+    {
+      "question_id": "M7_Q1",
+      "question_text": "The coefficient 𝜷𝟏 in a Multiple Linear Regression model indicates:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The total variance explained by the independent variables.",
+        "B": "The change in the dependent variable for a one-unit change in 𝒙𝟏 holding all other predictors constant.",
+        "C": "The intercept of the regression line.",
+        "D": "The error term in the mode."
+      },
+      "correct_option_label": "B",
+      "explanation": "In Multiple Linear Regression (MLR), each $\\beta$ coefficient represents the partial effect of that variable. It is the change in $Y$ per unit change in $X_i$, keeping all other $X$ variables fixed ('ceteris paribus').",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q2",
+      "question_text": "Which method is commonly used to estimate the coefficients in Multiple Linear Regression?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Maximum likelihood estimation.",
+        "B": "Principal component analysis.",
+        "C": "Gradient descent.",
+        "D": "Least squares estimation."
+      },
+      "correct_option_label": "D",
+      "explanation": "Least squares estimation (or OLS) is the standard method for determining the line of best fit in MLR by minimizing the sum of squared residuals.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q3",
+      "question_text": "Adjusted R square is preferred over R square when:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The number of predictors is very small.",
+        "B": "The dependent variable is categorical.",
+        "C": "The sample size is very small.",
+        "D": "The model contains a large number of independent variables."
+      },
+      "correct_option_label": "D",
+      "explanation": "$R^2$ always increases when new predictors are added, even if they are irrelevant. Adjusted $R^2$ penalizes for adding variables that don't improve the model significantly. \nFormula: $1 - (1-R^2)\\frac{n-1}{n-p-1}$.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q4",
+      "question_text": "Which of the following statements is correct about the p-value in the context of testing the significance of a regression coefficient in MLR?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A low p-value (less than the significance level) indicates that the null hypothesis can be rejected, implying the predictor is statistically significant.",
+        "B": "A high p-value (greater than the significance level) suggests that the regression model is a poor fit for the data.",
+        "C": "The p-value indicates the strength of the overall model, not the significance of individual predictors.",
+        "D": "A p-value greater than 0.05 always implies the predictor is irrelevant to the model."
+      },
+      "correct_option_label": "A",
+      "explanation": "Individual t-tests check if $\\beta_i = 0$. A $p$-value $< 0.05$ means we reject $\\beta_i = 0$, concluding the variable $X_i$ is a significant predictor.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q5",
+      "question_text": "The F-test in Multiple Linear Regression tests the null hypothesis that:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "All regression coefficients are individually zero.",
+        "B": "At least one regression coefficient is significantly different from zero.",
+        "C": "The model has no multicollinearity.",
+        "D": "The residuals are homoscedastic."
+      },
+      "correct_option_label": "A",
+      "explanation": "The F-test for overall significance has $H_0: \\beta_1 = \\beta_2 = ... = \\beta_k = 0$. Rejecting $H_0$ means at least one predictor is significant.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q6",
+      "question_text": "In Multiple Linear Regression (MLR), which of the following is true about the t-statistic for testing the significance of a regression coefficient?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The t-statistic follows a normal distribution with n degrees of freedom.",
+        "B": "The t-statistic follows a t-distribution with n−p degrees of freedom.",
+        "C": "The t-statistic follows a t-distribution with n−p−1 degrees of freedom.",
+        "D": "The t-statistic follows a normal distribution with n−p−1 degrees of freedom."
+      },
+      "correct_option_label": "C",
+      "explanation": "For MLR with $n$ observations and $p$ independent variables, the degrees of freedom for the t-test on coefficients is $df = n - (p + 1) = n - p - 1$.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q7",
+      "question_text": "Which of the following techniques is used to address multicollinearity in Multiple Linear Regression?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Increase the sample size.",
+        "B": "Remove some highly correlated independent variables.",
+        "C": "Use the principle of least squares.",
+        "D": "Perform log transformation on the variables."
+      },
+      "correct_option_label": "B",
+      "explanation": "Multicollinearity occurs when predictors are highly correlated. The simplest remedy is to remove one of the highly correlated variables to stabilize the coefficient estimates.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q8",
+      "question_text": "Which of the following statements is true regarding residual analysis in MLR?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Residual analysis is only useful for detecting non-linearity.",
+        "B": "Residual analysis is essential for checking if the model violates assumptions such as normality and homoscedasticity.",
+        "C": "Residual analysis can replace model validation techniques such as cross-validation.",
+        "D": "Residual analysis only applies to simple linear regression, not multiple linear regression."
+      },
+      "correct_option_label": "B",
+      "explanation": "Residual analysis is a diagnostic tool for MLR to ensure the errors are random, normally distributed, and have constant variance, which are requirements for valid inference.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q9",
+      "question_text": "A data point with high leverage but small residual is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Likely an outlier.",
+        "B": "Likely an influential observation.",
+        "C": "Not influential and should be ignored.",
+        "D": "Always a good data point for model accuracy."
+      },
+      "correct_option_label": "B",
+      "explanation": "Leverage measures how far an observation's predictor values are from the average. A point with high leverage and a small residual effectively pulls the regression line toward it, making it influential.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q10",
+      "question_text": "When performing Multiple Linear Regression, you notice that the adjusted R squared value is significantly lower than the R squared value. What is the most likely explanation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The model is overfitting the data.",
+        "B": "The dependent variable is incorrectly specified.",
+        "C": "The independent variables are not linearly related to the dependent variable.",
+        "D": "The independent variables are irrelevant, and the model may include too many predictors."
+      },
+      "correct_option_label": "D",
+      "explanation": "Adjusted $R^2$ penalizes for complexity. If it is much lower than $R^2$, it indicates that many predictors in the model are not contributing enough explanatory power to justify their inclusion.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q11",
+      "question_text": "In the context of Multiple Linear Regression (MLR), which of the following would most likely lead to a high variance in the estimated regression coefficients?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Adding more relevant predictors to the model.",
+        "B": "Including predictors that are highly correlated with each other (multicollinearity).",
+        "C": "Increasing the sample size without adding predictors.",
+        "D": "Using a smaller sample size"
+      },
+      "correct_option_label": "B",
+      "explanation": "Multicollinearity inflates the standard errors (variance) of the coefficient estimates, making them unstable and sensitive to small changes in the data.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q12",
+      "question_text": "In the residual plot, if the residuals show a pattern (e.g., a curve), what does this suggest about the model?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The model is appropriate and well-fitted",
+        "B": "The residuals are homoscedastic",
+        "C": "The model may have omitted a significant variable or non-linearity",
+        "D": "The residuals are normally distributed"
+      },
+      "correct_option_label": "C",
+      "explanation": "Residuals should be random scatter. A visible pattern (like a curve) indicates that the linear model is failing to capture a non-linear relationship or an important interaction/variable.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q13",
+      "question_text": "What does the F-statistic in an ANOVA table for MLR test?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Whether the residuals are normally distributed",
+        "B": "Whether the model explains a significant portion of the variance in the dependent variable",
+        "C": "Whether the predictors are correlated with each other",
+        "D": "Whether the residuals are homoscedastic"
+      },
+      "correct_option_label": "B",
+      "explanation": "The F-statistic tests the overall significance of the model ($H_0: R^2 = 0$). It determines if the predictors collectively explain a significant portion of the variance in $Y$.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q14",
+      "question_text": "Adjusted R-squared is preferred over R-squared when:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The model contains a very small number of predictors",
+        "B": "The model has irrelevant or redundant predictors",
+        "C": "The sample size is very large",
+        "D": "The dependent variable is categorical"
+      },
+      "correct_option_label": "B",
+      "explanation": "As discussed, Adjusted $R^2$ accounts for the number of predictors ($p$) and helps prevent artificial inflation of the fit caused by redundant variables.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q15",
+      "question_text": "In a multiple linear regression model, what is the consequence of heteroscedastic residuals?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The model may underestimate the variability in the data",
+        "B": "The residuals will appear as a straight line in the residual plot",
+        "C": "The standard errors of the coefficients could be biased, leading to unreliable significance tests",
+        "D": "The model will have perfect predictive accuracy"
+      },
+      "correct_option_label": "C",
+      "explanation": "Heteroscedasticity violates OLS assumptions. While the coefficients remain unbiased, the standard errors are incorrect, making t-stats and p-values unreliable.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q16",
+      "question_text": "A p-value less than 0.05 for a t-test on a regression coefficient indicates:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The predictor is not statistically significant",
+        "B": "The predictor is statistically significant",
+        "C": "The regression model is a good fit",
+        "D": "The coefficient is equal to zero"
+      },
+      "correct_option_label": "B",
+      "explanation": "$p < 0.05$ leads to rejection of $H_0: \\beta_i = 0$, meaning we are $95\\%$ confident that the predictor has a non-zero effect on $Y$.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q17",
+      "question_text": "Which of the following situations would most likely lead to omitted variable bias in a regression model?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The dependent variable is highly correlated with one of the predictors.",
+        "B": "An important variable that influences both the dependent and independent variables is excluded from the model.",
+        "C": "The sample size is too large for the model.",
+        "D": "There is no correlation between the independent variables."
+      },
+      "correct_option_label": "B",
+      "explanation": "Omitted Variable Bias (OVB) occurs when a variable that belongs in the true model (because it affects $Y$) is also correlated with one or more included $X$ variables.",
+      "module": 7
+    },
+    {
+      "question_id": "M7_Q18",
+      "question_text": "The F-statistic in multiple linear regression is used to:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Test if the regression model has a significant overall fit",
+        "B": "Compare the fit of two different regression models",
+        "C": "Test the significance of individual regression coefficients",
+        "D": "Evaluate the normality of residuals"
+      },
+      "correct_option_label": "A",
+      "explanation": "The F-statistic measures the ratio of Explained Variance to Unexplained Variance. If the ratio is high enough, the overall model is considered to have a significant fit.",
+      "module": 7
+    },
+    {
+      "question_id": "M8_Q1",
+      "question_text": "How should categorical variables be included in a Multiple Linear Regression model?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Use the categorical variable as is, without any changes.",
+        "B": "Use dummy variables to represent each category.",
+        "C": "Exclude categorical variables from the model.",
+        "D": "Treat categorical variables as numbers in the model."
+      },
+      "correct_option_label": "B",
+      "explanation": "Categorical variables are non-numeric. To use them, we create dummy (indicator) variables (0 or 1). If a variable has $k$ categories, we use $k-1$ dummy variables.",
+      "module": 8
+    },
+    {
+      "question_id": "M8_Q2",
+      "question_text": "What does the coefficient of a variable in a Multiple Linear Regression model tell us?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It shows how much the dependent variable changes when the independent variable increases by one unit.",
+        "B": "It shows the total value of the dependent variable.",
+        "C": "It tells us the average value of the independent variable.",
+        "D": "It shows the relationship between all independent variables."
+      },
+      "correct_option_label": "A",
+      "explanation": "The slope coefficient $\\beta_i$ represents the rate of change: $\\Delta Y / \\Delta X_i$. It quantifies the effect of the specific predictor on the target variable.",
+      "module": 8
+    },
+    {
+      "question_id": "M8_Q3",
+      "question_text": "What does an interaction variable in Multiple Linear Regression represent?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is a product of two independent variables used to check the existence of a conditional relationship between them.",
+        "B": "It shows the effect of one variable on the dependent variable without considering other variables.",
+        "C": "It is the sum of two independent variables.",
+        "D": "It represents a single variable’s effect on the dependent variable."
+      },
+      "correct_option_label": "A",
+      "explanation": "An interaction term ($X_1 \\cdot X_2$) is used when the effect of $X_1$ on $Y$ depends on the level of $X_2$. This captures synergy or conditional effects.",
+      "module": 8
+    }
+  ]
+}
