@@ -716,7 +716,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                       if (!searchQuery) return true;
                       const query = searchQuery.toLowerCase();
                       return q.text.toLowerCase().includes(query) ||
-                        Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(query));
+                        (q.options && Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(query)));
                     })
                     .map(({ q, idx }) => {
                       const userAnswer = quizState.answeredQuestions[idx];
@@ -739,6 +739,11 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                               Q{idx + 1}
                             </span>
                             <div className="flex gap-2 text-xs">
+                              {q.isSubjective && (
+                                <span className="px-2 py-1 bg-yellow-900/50 border border-yellow-700 text-yellow-300 font-medium">
+                                  Subjective
+                                </span>
+                              )}
                               {q.module && (
                                 <span className="px-2 py-1 bg-indigo-900/50 border border-indigo-700 text-indigo-300 font-medium">
                                   Mod {q.module}
@@ -760,48 +765,51 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                               {q.text}
                             </ReactMarkdown>
                           </div>
-                          <div className="space-y-1 mb-3">
-                            {Object.entries(q.options)
-                              .filter(([key]) => {
-                                if (!hideWrongOptions) {
-                                  // By default (hideWrongOptions=false), only show correct answers
-                                  return q.correctAnswer.includes(key);
-                                }
-                                // When toggle is on (hideWrongOptions=true), show all options
-                                return true;
-                              })
-                              .map(([key, optionValue]) => {
-                                const isUserAnswer = userAnswer?.includes(key) || false;
-                                const isCorrectAnswer = q.correctAnswer.includes(key);
+                          {/* Only show options for non-subjective questions */}
+                          {q.options && Object.keys(q.options).length > 0 && (
+                            <div className="space-y-1 mb-3">
+                              {Object.entries(q.options)
+                                .filter(([key]) => {
+                                  if (!hideWrongOptions) {
+                                    // By default (hideWrongOptions=false), only show correct answers
+                                    return q.correctAnswer.includes(key);
+                                  }
+                                  // When toggle is on (hideWrongOptions=true), show all options
+                                  return true;
+                                })
+                                .map(([key, optionValue]) => {
+                                  const isUserAnswer = userAnswer?.includes(key) || false;
+                                  const isCorrectAnswer = q.correctAnswer.includes(key);
 
-                                return (
-                                  <div
-                                    key={key}
-                                    className={`text-sm flex gap-2 ${isCorrectAnswer
-                                      ? 'font-bold text-green-400'
-                                      : isUserAnswer
-                                        ? 'text-red-400'
-                                        : 'text-gray-400'
-                                      }`}
-                                  >
-                                    <span className="shrink-0">{key}:</span>
-                                    <span className="prose prose-invert prose-indigo max-w-none prose-p:inline text-current">
-                                      <ReactMarkdown
-                                        remarkPlugins={[remarkGfm, remarkMath]}
-                                        rehypePlugins={[rehypeKatex]}
-                                        components={{
-                                          p: ({ children }: any) => <span className="inline">{children}</span>,
-                                        }}
-                                      >
-                                        {optionValue || ''}
-                                      </ReactMarkdown>
-                                      {isCorrectAnswer && ' ✓'}
-                                      {isUserAnswer && !isCorrectAnswer && ' (Your answer)'}
-                                    </span>
-                                  </div>
-                                );
-                              })}
-                          </div>
+                                  return (
+                                    <div
+                                      key={key}
+                                      className={`text-sm flex gap-2 ${isCorrectAnswer
+                                        ? 'font-bold text-green-400'
+                                        : isUserAnswer
+                                          ? 'text-red-400'
+                                          : 'text-gray-400'
+                                        }`}
+                                    >
+                                      <span className="shrink-0">{key}:</span>
+                                      <span className="prose prose-invert prose-indigo max-w-none prose-p:inline text-current">
+                                        <ReactMarkdown
+                                          remarkPlugins={[remarkGfm, remarkMath]}
+                                          rehypePlugins={[rehypeKatex]}
+                                          components={{
+                                            p: ({ children }: any) => <span className="inline">{children}</span>,
+                                          }}
+                                        >
+                                          {optionValue || ''}
+                                        </ReactMarkdown>
+                                        {isCorrectAnswer && ' ✓'}
+                                        {isUserAnswer && !isCorrectAnswer && ' (Your answer)'}
+                                      </span>
+                                    </div>
+                                  );
+                                })}
+                            </div>
+                          )}
                           {q.explanation && (
                             <div className="mt-2 text-xs sm:text-sm text-blue-300 bg-blue-900/10 p-2 border-l-2 border-blue-700 prose prose-invert prose-indigo max-w-none">
                               <ReactMarkdown
@@ -819,7 +827,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                     if (!searchQuery) return true;
                     const query = searchQuery.toLowerCase();
                     return q.text.toLowerCase().includes(query) ||
-                      Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(query));
+                      (q.options && Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(query)));
                   }).length === 0 && (
                       <p className="text-gray-400 text-center py-8">No matching questions found.</p>
                     )}
@@ -869,48 +877,51 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                               {q.text}
                             </ReactMarkdown>
                           </div>
-                          <div className="space-y-1 mb-3">
-                            {Object.entries(q.options)
-                              .filter(([key]) => {
-                                if (!hideWrongOptions) {
-                                  // By default (hideWrongOptions=false), only show correct answers
-                                  return q.correctAnswer.includes(key);
-                                }
-                                // When toggle is on (hideWrongOptions=true), show all options
-                                return true;
-                              })
-                              .map(([key, optionValue]) => {
-                                const isUserAnswer = q.selectedAnswer?.includes(key) || false;
-                                const isCorrectAnswer = q.correctAnswer.includes(key);
+                          {/* Only show options for non-subjective questions */}
+                          {q.options && Object.keys(q.options).length > 0 && (
+                            <div className="space-y-1 mb-3">
+                              {Object.entries(q.options)
+                                .filter(([key]) => {
+                                  if (!hideWrongOptions) {
+                                    // By default (hideWrongOptions=false), only show correct answers
+                                    return q.correctAnswer.includes(key);
+                                  }
+                                  // When toggle is on (hideWrongOptions=true), show all options
+                                  return true;
+                                })
+                                .map(([key, optionValue]) => {
+                                  const isUserAnswer = q.selectedAnswer?.includes(key) || false;
+                                  const isCorrectAnswer = q.correctAnswer.includes(key);
 
-                                return (
-                                  <div
-                                    key={key}
-                                    className={`text-sm flex gap-2 ${isCorrectAnswer
-                                      ? 'font-bold text-green-400'
-                                      : isUserAnswer
-                                        ? 'text-red-400'
-                                        : 'text-gray-400'
-                                      }`}
-                                  >
-                                    <span className="shrink-0">{key}:</span>
-                                    <span className="prose prose-invert prose-indigo max-w-none prose-p:inline text-current">
-                                      <ReactMarkdown
-                                        remarkPlugins={[remarkGfm, remarkMath]}
-                                        rehypePlugins={[rehypeKatex]}
-                                        components={{
-                                          p: ({ children }: any) => <span className="inline">{children}</span>,
-                                        }}
-                                      >
-                                        {optionValue || ''}
-                                      </ReactMarkdown>
-                                      {isCorrectAnswer && ' ✓'}
-                                      {isUserAnswer && ' (Your answer)'}
-                                    </span>
-                                  </div>
-                                );
-                              })}
-                          </div>
+                                  return (
+                                    <div
+                                      key={key}
+                                      className={`text-sm flex gap-2 ${isCorrectAnswer
+                                        ? 'font-bold text-green-400'
+                                        : isUserAnswer
+                                          ? 'text-red-400'
+                                          : 'text-gray-400'
+                                        }`}
+                                    >
+                                      <span className="shrink-0">{key}:</span>
+                                      <span className="prose prose-invert prose-indigo max-w-none prose-p:inline text-current">
+                                        <ReactMarkdown
+                                          remarkPlugins={[remarkGfm, remarkMath]}
+                                          rehypePlugins={[rehypeKatex]}
+                                          components={{
+                                            p: ({ children }: any) => <span className="inline">{children}</span>,
+                                          }}
+                                        >
+                                          {optionValue || ''}
+                                        </ReactMarkdown>
+                                        {isCorrectAnswer && ' ✓'}
+                                        {isUserAnswer && ' (Your answer)'}
+                                      </span>
+                                    </div>
+                                  );
+                                })}
+                            </div>
+                          )}
                           {q.explanation && (
                             <div className="mt-2 text-xs sm:text-sm text-blue-300 bg-blue-900/10 p-2 border-l-2 border-blue-700 prose prose-invert prose-indigo max-w-none">
                               <ReactMarkdown
@@ -927,7 +938,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                       if (!searchQuery) return true;
                       const query = searchQuery.toLowerCase();
                       return q.text.toLowerCase().includes(query) ||
-                        Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(query));
+                        (q.options && Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(query)));
                     }).length === 0 && (
                         <p className="text-gray-400 text-center py-8">No matching incorrect questions found.</p>
                       )}

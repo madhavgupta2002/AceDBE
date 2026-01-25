@@ -21,7 +21,7 @@ export function convertToInternalFormat(iimbQuestion: IIMBQuestion, source?: str
     correctAnswer: correctAnswers,
     module: iimbQuestion.module,
     source: source,
-    explanation: iimbQuestion.explanation,
+    explanation: iimbQuestion.explaination || iimbQuestion.explanation, // Handle typo in JSON
     isSubjective: isSubjective,
   };
 }
