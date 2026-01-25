@@ -24,6 +24,22 @@ const SubjectSelector: React.FC = () => {
   const router = useRouter();
   const [selectedTerm, setSelectedTerm] = useState<number>(1);
 
+  // Load saved term on mount
+  React.useEffect(() => {
+    const savedTerm = localStorage.getItem('selectedTerm');
+    if (savedTerm) {
+      const termNumber = parseInt(savedTerm, 10);
+      if (AVAILABLE_TERMS.includes(termNumber)) {
+        setSelectedTerm(termNumber);
+      }
+    }
+  }, []);
+
+  const handleTermChange = (term: number) => {
+    setSelectedTerm(term);
+    localStorage.setItem('selectedTerm', term.toString());
+  };
+
   // Get subjects for selected term
   const filteredSubjects = getSubjectsByTerm(selectedTerm);
 
@@ -104,10 +120,10 @@ const SubjectSelector: React.FC = () => {
           {AVAILABLE_TERMS.map((term) => (
             <button
               key={term}
-              onClick={() => setSelectedTerm(term)}
+              onClick={() => handleTermChange(term)}
               className={`px-6 py-2.5 font-semibold text-sm sm:text-base transition-all duration-200 ${selectedTerm === term
-                  ? 'bg-indigo-600 text-white shadow-lg'
-                  : 'bg-transparent text-gray-400 hover:text-white hover:bg-gray-700'
+                ? 'bg-indigo-600 text-white shadow-lg'
+                : 'bg-transparent text-gray-400 hover:text-white hover:bg-gray-700'
                 }`}
             >
               Term {term}
