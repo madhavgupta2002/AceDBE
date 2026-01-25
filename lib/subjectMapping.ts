@@ -113,3 +113,25 @@ export const getTermForSubject = (code: string): number => {
 export const getSubjectsByTerm = (term: number): Subject[] => {
   return SUBJECTS.filter(s => s.term === term);
 };
+
+// Check if a subject code is an alternative version (has _something suffix)
+export const isAlternativeVersion = (code: string): boolean => {
+  return /_[^_]+$/.test(code);
+};
+
+// Get the base subject code (without _something suffix)
+export const getBaseSubjectCode = (code: string): string => {
+  const match = code.match(/^([A-Za-z0-9]+)_/);
+  return match ? match[1] : code;
+};
+
+// Get alternative version for a subject if it exists
+export const getAlternativeVersion = (code: string): Subject | undefined => {
+  // Find any subject that starts with this code + underscore
+  return SUBJECTS.find(s => s.code.startsWith(code + '_'));
+};
+
+// Get subjects for term, filtered to exclude alternative versions (for homepage)
+export const getSubjectsByTermFiltered = (term: number): Subject[] => {
+  return SUBJECTS.filter(s => s.term === term && !isAlternativeVersion(s.code));
+};
