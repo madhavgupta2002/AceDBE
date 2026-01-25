@@ -1,0 +1,567 @@
+{
+    "exam_metadata": {
+      "subject_name": "Operations Management",
+      "exam_date": "Batch 1 CLA"
+    },
+    "questions": [
+      {
+        "question_id": "M1_Q1",
+        "question_text": "What is the primary strategic focus of Narayana Health?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Maximizing revenue from high-income patients",
+          "B": "Offering luxury patient experiences",
+          "C": "Delivering affordable, high-volume, specialized cardiac care",
+          "D": "Expanding outpatient retail clinics"
+        },
+        "correct_option_label": "C",
+        "explanation": "Narayana Health focuses on a high-volume, low-cost model specifically for specialized cardiac care to make it affordable.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q2",
+        "question_text": "Which of the following ensures quality without raising costs at Narayana Health?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Eliminating insurance options",
+          "B": "Specialization of tasks and high surgery volumes per doctor",
+          "C": "Using international surgical teams",
+          "D": "Paying doctors by the number of surgeries"
+        },
+        "correct_option_label": "B",
+        "explanation": "By performing high volumes, doctors gain repetitive expertise (specialization), which improves quality and reduces unit costs.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q3",
+        "question_text": "Compared to multispecialty hospitals, Narayana Health maintains high clinical quality primarily by:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Specializing in specific procedures, increasing repetition and expertise",
+          "B": "Conducting fewer but higher-paying surgeries",
+          "C": "Outsourcing surgeries to foreign-trained doctors",
+          "D": "Using low-cost generic equipment"
+        },
+        "correct_option_label": "A",
+        "explanation": "Focusing on specific procedures allows for greater repetition, which leads to fewer errors and higher clinical proficiency.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q4",
+        "question_text": "Which operational practice helps Narayana Health keep costs low?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Use of disposable tools only",
+          "B": "Minimal use of diagnostic imaging",
+          "C": "High equipment utilization and frugal innovation (e.g., reusing surgical clamps)",
+          "D": "Importing all surgical supplies"
+        },
+        "correct_option_label": "C",
+        "explanation": "Maximizing the use of expensive equipment and implementing cost-saving innovations like sterilization for reuse helps keep expenses down.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q5",
+        "question_text": "Why are Narayana Health’s per-patient costs typically lower than those of multispecialty hospitals?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Government subsidies",
+          "B": "Luxury patient rooms are avoided",
+          "C": "Focused procedures allow better economies of scale",
+          "D": "It avoids using modern diagnostic tools"
+        },
+        "correct_option_label": "C",
+        "explanation": "Concentrating on a narrow range of procedures enables the hospital to achieve massive scale and efficiency in supply purchasing and operations.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q6",
+        "question_text": "Narayana Health improves delivery speed (i.e., time-to-surgery) over multispecialty hospitals by:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Increasing consultant availability only on weekends",
+          "B": "Offering surgeries only to insured patients",
+          "C": "Streamlining pre-op and post-op tasks via task specialization",
+          "D": "Reducing nurse availability per shift"
+        },
+        "correct_option_label": "C",
+        "explanation": "Specializing tasks among staff allows patients to move through the pre- and post-operative phases more efficiently.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q7",
+        "question_text": "In a manufacturing firm, the following decisions are taken. What would be the impact of such decisions on performance measures – Cost, Quality, Delivery and Flexibility?\n\nI. Decision 1 (D1): Hiring an extra technician to check the machines at the end of every day.\nII. Decision 2 (D2): Changing the layout of the machines to match that needed for a particular product.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "D1 – Increase in cost; D2 – Increase in cost.",
+          "B": "D1 – Increase in cost; D2 – Decrease in flexibility.",
+          "C": "D1 – Decrease in cost; D2 – Improved quality.",
+          "D": "D1 – Increase in cost; D2 – Decrease in cost."
+        },
+        "correct_option_label": "B",
+        "explanation": "Hiring adds labor costs, while product-specific layouts limit the firm's ability to easily produce different items, reducing flexibility.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q8",
+        "question_text": "In a service firm, the following decisions are taken. What would be the impact of such decisions on performance measures – Cost, Quality, Delivery and Flexibility?\n\nI. Decision 1 (D1): Training program for skill upgradation and multiskilling of the workforce.\nII. Decision 2 (D2): Standard Operating Procedures deployed at key steps in the process.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "D1 – No change in quality; D2 – Increase in quality.",
+          "B": "D1 – Increase in quality; D2 – Increase in cost.",
+          "C": "D1 – Decrease in delivery; D2 – Increase in delivery.",
+          "D": "D1 – Increase in quality; D2 – Increase in delivery."
+        },
+        "correct_option_label": "D",
+        "explanation": "Multiskilling improves employee competence (quality), and SOPs ensure consistent, faster process completion (delivery).",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q9",
+        "question_text": "In a factory, the production line has 3 steps with these capacities:\nStep 1: 60 units/hour\nStep 2: 45 units/hour\nStep 3: 50 units/hour\nThe bottleneck of the process is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Step 1",
+          "B": "Step 2",
+          "C": "Step 3",
+          "D": "Cannot be determined"
+        },
+        "correct_option_label": "B",
+        "explanation": "The bottleneck is the resource with the lowest capacity; in this case, Step 2 at 45 units/hour.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q10",
+        "question_text": "If the bottleneck produces 45 units per hour, the overall process capacity is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "45 units/hour",
+          "B": "50 units/hour",
+          "C": "60 units/hour",
+          "D": "155 units/hour"
+        },
+        "correct_option_label": "A",
+        "explanation": "The overall capacity of any process is dictated by its bottleneck; it cannot produce faster than its slowest step.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q11",
+        "question_text": "The bottleneck in a process is the step that:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Has the highest capacity",
+          "B": "Has the lowest capacity",
+          "C": "Comes first in the process",
+          "D": "Is the most expensive step"
+        },
+        "correct_option_label": "B",
+        "explanation": "By definition, the bottleneck is the step with the smallest capacity that limits the output of the entire system.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q12",
+        "question_text": "If two machines work in parallel, each producing 20 units/hour, the combined capacity is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "10 units/hour",
+          "B": "20 units/hour",
+          "C": "40 units/hour",
+          "D": "60 units/hour"
+        },
+        "correct_option_label": "C",
+        "explanation": "Capacities of parallel resources are additive; 20 units/hour + 20 units/hour = 40 units/hour.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q13",
+        "question_text": "A reactor can hold 100 units and each batch takes 2 hours to process. What is the capacity per hour?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "25 units/hour",
+          "B": "50 units/hour",
+          "C": "100 units/hour",
+          "D": "200 units/hour"
+        },
+        "correct_option_label": "B",
+        "explanation": "Capacity is calculated as units per batch divided by time per batch: 100 units / 2 hours = 50 units/hour.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q14",
+        "question_text": "If the bottleneck has a capacity of 40 units/hour and all other steps have 60 units/hour, which action increases total capacity?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Increase capacity of bottleneck",
+          "B": "Add workers to non-bottleneck steps",
+          "C": "Add more raw material",
+          "D": "Reduce final inspection time"
+        },
+        "correct_option_label": "A",
+        "explanation": "To increase system capacity, you must increase the capacity of the bottleneck resource.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q15",
+        "question_text": "Consider the following steps (part of a process) and given capacities:\nCutting: 30 units/hour\nAssembly: 25 units/hour\nPainting: 35 units/hour\nPackaging: 40 units/hour\nIf the factory adds another assembly line doubling assembly capacity, what is the new bottleneck?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Cutting",
+          "B": "Assembly",
+          "C": "Painting",
+          "D": "Packaging"
+        },
+        "correct_option_label": "A",
+        "explanation": "Assembly doubles from 25 to 50. Comparing new capacities (30, 50, 35, 40), Cutting (30) is now the lowest.",
+        "module": 1
+      },
+      {
+        "question_id": "M2_Q1",
+        "question_text": "If Activity E is crashed by exactly 1 week (from 4→3 weeks), what happens to the overall schedule?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Project duration decreases by 1 week (20→19), with two critical paths: A–C–E–I–J and B–D–H–J",
+          "B": "Project duration decreases by 2 weeks (20→18); critical path becomes A–C–G–J",
+          "C": "Project duration is unchanged because E has slack",
+          "D": "Project duration decreases by 1 week (20→19); critical path is only B–D–H–J"
+        },
+        "correct_option_label": "A",
+        "explanation": "Crashing E reduces its path from 20 to 19. Since another path (B-D-H-J) is also 19, the project duration is 19 with two critical paths.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q2",
+        "question_text": "If Activity F is delayed by exactly 2 weeks, while all other activities remain on schedule, what effect will this have on the overall project duration?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The project duration will increase by 2 weeks",
+          "B": "The project duration will remain unchanged",
+          "C": "The critical path will shift to include Activity F",
+          "D": "Activity J will be delayed because of F’s late finish"
+        },
+        "correct_option_label": "B",
+        "explanation": "Activity F is not on the critical path and its delay of 2 weeks is within its available slack, leaving the total project duration unaffected.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q3",
+        "question_text": "Which of the following strategies will most effectively reduce the overall project duration in this project network?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Reducing the duration of non-critical activities",
+          "B": "Crashing activities on the critical path such as A, C, or E",
+          "C": "Re-sequencing non-critical tasks to use up available slack",
+          "D": "Ignoring slack in non-critical activities"
+        },
+        "correct_option_label": "B",
+        "explanation": "Only reducing the time of activities on the critical path directly shortens the total project duration.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q4",
+        "question_text": "Activity A is crashed from 6 to 5 weeks, increasing direct cost by ₹5,000. This crash shortens the total project duration by 1 week. If indirect (overhead) costs are ₹6,000 per week, what is the impact on total project cost?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Total cost increases because added direct cost exceeds indirect savings",
+          "B": "Total cost is unchanged because direct and indirect effects cancel",
+          "C": "Total cost decreases because indirect savings (₹6,000) exceed added direct cost (₹5,000)",
+          "D": "Crashing A is irrelevant to indirect costs"
+        },
+        "correct_option_label": "C",
+        "explanation": "Saving 1 week reduces indirect costs by ₹6,000. Subtracting the ₹5,000 crash cost results in a net saving of ₹1,000.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q5",
+        "question_text": "When deciding which activities to crash in order to shorten the total project duration, why should a project manager focus only on activities along the critical path, rather than on activities that have slack (float)?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Only activities on the critical path determine the total project duration and therefore influence potential indirect cost savings",
+          "B": "Activities with slack are typically more expensive to crash than those on the critical path",
+          "C": "Crashing non-critical (slack) activities increases complexity without guaranteed schedule reduction"
+        },
+        "correct_option_label": "A",
+        "explanation": "Total project duration is defined by the longest path (critical path); crashing other activities does not shorten the project finish time.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q6",
+        "question_text": "Which of the following statements is NOT true in a Just-In-Time (JIT) production environment?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Processing work-in-progress (WIP) in batches",
+          "B": "The activity of each workstation is authorized by the demand of downstream workstations",
+          "C": "Maintaining a constant flow of parts",
+          "D": "Moving parts through the production system based on end-unit demand"
+        },
+        "correct_option_label": "A",
+        "explanation": "JIT aims for single-piece flow or very small batches; large batch processing of WIP is contrary to JIT principles.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q7",
+        "question_text": "What is the primary goal of the Just In Time (JIT) system?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "To maximize inventory levels",
+          "B": "To produce goods based on demand and minimize waste",
+          "C": "To increase the number of suppliers",
+          "D": "To maintain a fixed production schedule"
+        },
+        "correct_option_label": "B",
+        "explanation": "The objective of JIT is to eliminate waste by producing only what is needed, when it is needed, by the customer.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q8",
+        "question_text": "What is the primary purpose of calculating slack time in a project network diagram?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "To identify which activities can be safely delayed or rescheduled without affecting the overall project deadline",
+          "B": "To determine which activities can be removed from the schedule to shorten the project duration",
+          "C": "To measure potential budget overruns during execution",
+          "D": "To prioritize activities for outsourcing"
+        },
+        "correct_option_label": "A",
+        "explanation": "Slack represents the amount of time an activity can be delayed without causing a delay to subsequent activities or the project finish date.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q9",
+        "question_text": "Which of the following statements is NOT associated with the Kanban system in Lean management?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Limiting the amount of work-in-progress (WIP) to reduce bottlenecks",
+          "B": "Using visual signals to control workflow and production scheduling",
+          "C": "Assigning each employee a personal container for organizing tools and documents",
+          "D": "Enhancing workflow efficiency and continuous delivery to customers"
+        },
+        "correct_option_label": "C",
+        "explanation": "Organizing personal tools is a 5S practice ('Set in order'), whereas Kanban is a pull system for production control using visual signals.",
+        "module": 2
+      },
+      {
+        "question_id": "M4_Q1",
+        "question_text": "What is the primary role of the dabbawalas in Mumbai's workforce system?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Supervising manufacturing lines",
+          "B": "Distributing newspapers",
+          "C": "Delivering home-cooked meals to office workers",
+          "D": "Importing packaged food from factories"
+        },
+        "correct_option_label": "C",
+        "explanation": "Dabbawalas provide a unique service of transporting hot meals from homes to office workers in Mumbai.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q2",
+        "question_text": "The core strength of the dabbawala model lies in its:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Automation and software scheduling",
+          "B": "Use of AI and GPS systems",
+          "C": "Manual coordination and decentralized logistics",
+          "D": "Reliance on government subsidies"
+        },
+        "correct_option_label": "C",
+        "explanation": "The system operates with near-perfect reliability through human coordination and a simple, decentralized coding system without digital technology.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q3",
+        "question_text": "What OM principle is most evident in the dabbawala system’s error reduction?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Mass production",
+          "B": "Automation",
+          "C": "Continuous improvement and standard work",
+          "D": "Machine-learning-based feedback"
+        },
+        "correct_option_label": "C",
+        "explanation": "Their low error rate is achieved through highly standardized work processes and a culture of continuous improvement.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q4",
+        "question_text": "The differentiating factor(s) of services industry from product industry is/are",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Services cannot be inventoried",
+          "B": "Service quality happens only after the service is delivered, therefore unlike products, it cannot be planned for in advance",
+          "C": "Service Workers are less skilled than Production Workers",
+          "D": "Both (a) and (b)"
+        },
+        "correct_option_label": "D",
+        "explanation": "Services are intangible/perishable (no inventory) and are often co-produced with the customer, making inspection prior to delivery impossible.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q5",
+        "question_text": "Which of the following relate to a gap resulting in a service quality problem?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Management is unable to invest in appropriate technology required for service delivery",
+          "B": "Service firms write an ambitious brochure about their service offerings",
+          "C": "The worker morale is low in the organisation",
+          "D": "All of the above"
+        },
+        "correct_option_label": "D",
+        "explanation": "Gaps can occur due to resource constraints, over-promising in marketing, or execution failures caused by low morale.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q6",
+        "question_text": "A logistics company is analysing the number of accidents its’ fleet is involved in. Which of the following charts could be used in this process?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "p chart",
+          "B": "X bar chart",
+          "C": "c chart",
+          "D": "All of the above"
+        },
+        "correct_option_label": "C",
+        "explanation": "A c-chart is used to monitor the number of defects (accidents) per unit of time or space.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q7",
+        "question_text": "In six sigma methodology, at which stage are the plans to eliminate identified variations arrived at?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Define",
+          "B": "Measure",
+          "C": "Analyse",
+          "D": "Implement",
+          "E": "Control"
+        },
+        "correct_option_label": "D",
+        "explanation": "In the DMAIC process, the 'Improve' (often called Implement) stage is where solutions are piloted and executed to remove defects.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q8",
+        "question_text": "Total Quality Management (TQM) emphasizes:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Isolated quality control efforts",
+          "B": "Quality as a responsibility of only the quality control department",
+          "C": "Organization-wide involvement in continuous quality improvement",
+          "D": "Reducing costs by minimizing quality assurance efforts"
+        },
+        "correct_option_label": "C",
+        "explanation": "TQM is a holistic management philosophy that integrates quality as a core goal for every member of the organization.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q9",
+        "question_text": "A p-chart is used to monitor:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The proportion of defective items in a sample",
+          "B": "The range of variation in a process",
+          "C": "The total count of defects per unit",
+          "D": "The variation in continuous measurements"
+        },
+        "correct_option_label": "A",
+        "explanation": "The p-chart is an attribute control chart used specifically to track the fraction or percentage of non-conforming items.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q10",
+        "question_text": "In a control chart, data points falling outside the upper and lower control limits suggest:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The process is stable",
+          "B": "There are assignable causes of variation",
+          "C": "There is no need for process improvement",
+          "D": "The process is within normal statistical variation"
+        },
+        "correct_option_label": "B",
+        "explanation": "Points outside limits indicate 'special cause' or 'assignable' variation, meaning the process is out of statistical control.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q11_v1",
+        "question_text": "What is the primary objective of a Cpk index in process capability analysis?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Measuring employee efficiency",
+          "B": "Evaluating how well a process meets customer specifications",
+          "C": "Reducing production cycle time"
+        },
+        "correct_option_label": "B",
+        "explanation": "Cpk measures how close a process is to its specification limits relative to its natural variability.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q12",
+        "question_text": "If average defect count per unit (c̄) = 9 defects/unit, what are the control limits?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "UCL = 18, LCL = 0",
+          "B": "UCL = 9, LCL = 3",
+          "C": "UCL = 12, LCL = 6",
+          "D": "UCL = 27, LCL = 0"
+        },
+        "correct_option_label": "A",
+        "explanation": "UCL = c̄ + 3*sqrt(c̄) = 9 + 3(3) = 18. LCL = c̄ - 3*sqrt(c̄) = 9 - 9 = 0.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q13",
+        "question_text": "A point above the UCL in a C-Chart indicates:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Normal variation",
+          "B": "Assignable cause",
+          "C": "Improved process",
+          "D": "Reduced variability"
+        },
+        "correct_option_label": "B",
+        "explanation": "Any point exceeding the Upper Control Limit represents an unusual spike in defects likely caused by a specific, identifiable factor.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q14",
+        "question_text": "A printing press is analysing its efficiency. It treats a job to be good, if there is no spelling mistake, font mismatch, colour mismatch or wrong spacing. Which of the following charts can be used for this situation?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "p chart",
+          "B": "X bar and R chart",
+          "C": "c chart",
+          "D": "All of the above"
+        },
+        "correct_option_label": "A",
+        "explanation": "The classification is binary (Good vs. Bad job) based on multiple attribute criteria, which is tracked via a p-chart.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q15",
+        "question_text": "If D₃ for n = 5 is 0, and D₄ = 2.114, and R̄ = 4, what are the control limits for the R chart?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "LCL = 0, UCL = 8.456",
+          "B": "LCL = 0, UCL = 4.228",
+          "C": "LCL = 2, UCL = 6.456",
+          "D": "LCL = 4, UCL = 8.456"
+        },
+        "correct_option_label": "A",
+        "explanation": "UCL = D₄ * R̄ = 2.114 * 4 = 8.456. LCL = D₃ * R̄ = 0 * 4 = 0.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q11_v2",
+        "question_text": "Which of the following is not true for X̄ and R charts?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "X̄ chart shows process average",
+          "B": "R chart shows process variability",
+          "C": "They are used for attribute data",
+          "D": "They are used for variables data"
+        },
+        "correct_option_label": "C",
+        "explanation": "X-bar and R charts are specifically for variable (measurable) data, not attribute (counted/categorical) data.",
+        "module": 4
+      }
+    ]
+  }

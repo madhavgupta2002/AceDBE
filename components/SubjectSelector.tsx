@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import {
   ArrowRight,
   MessageSquare,
@@ -14,12 +14,18 @@ import {
   Youtube,
   ClipboardList
 } from 'lucide-react';
-import { SUBJECTS } from '@/lib/subjectMapping';
+import { SUBJECTS, getSubjectsByTerm } from '@/lib/subjectMapping';
 import { useRouter } from 'next/navigation';
 import videosData from '@/public/data/videos.json';
 
+const AVAILABLE_TERMS = [1, 4]; // Define available terms
+
 const SubjectSelector: React.FC = () => {
   const router = useRouter();
+  const [selectedTerm, setSelectedTerm] = useState<number>(1);
+
+  // Get subjects for selected term
+  const filteredSubjects = getSubjectsByTerm(selectedTerm);
 
   const handleSubjectSelect = (code: string) => {
     router.push(`/${code}`);
@@ -34,7 +40,14 @@ const SubjectSelector: React.FC = () => {
       'EP12x': <Rocket className="w-6 h-6 text-white" />,
       'FA11x': <DollarSign className="w-6 h-6 text-white" />,
       'MK11x': <TrendingUp className="w-6 h-6 text-white" />,
-      'ST21x': <Building2 className="w-6 h-6 text-white" />
+      'ST21x': <Building2 className="w-6 h-6 text-white" />,
+      'MD42x': <BookOpen className="w-6 h-6 text-white" />,
+      'MK41x': <TrendingUp className="w-6 h-6 text-white" />,
+      'OB41x': <MessageSquare className="w-6 h-6 text-white" />,
+      'OM41x': <ClipboardList className="w-6 h-6 text-white" />,
+      'ST41x': <Building2 className="w-6 h-6 text-white" />,
+      'EP41x': <Lightbulb className="w-6 h-6 text-white" />,
+      'MD41x': <BarChart3 className="w-6 h-6 text-white" />,
     };
     return iconMap[code] || <MessageSquare className="w-6 h-6 text-white" />;
   };
@@ -85,9 +98,27 @@ const SubjectSelector: React.FC = () => {
 
   return (
     <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-12 max-w-4xl">
+      {/* Term Selector */}
+      <div className="flex justify-center mb-6 sm:mb-8">
+        <div className="inline-flex bg-gray-800 border border-gray-700 p-1 gap-1">
+          {AVAILABLE_TERMS.map((term) => (
+            <button
+              key={term}
+              onClick={() => setSelectedTerm(term)}
+              className={`px-6 py-2.5 font-semibold text-sm sm:text-base transition-all duration-200 ${selectedTerm === term
+                  ? 'bg-indigo-600 text-white shadow-lg'
+                  : 'bg-transparent text-gray-400 hover:text-white hover:bg-gray-700'
+                }`}
+            >
+              Term {term}
+            </button>
+          ))}
+        </div>
+      </div>
+
       <div className="text-center mb-6 sm:mb-12">
         <h1 className="text-2xl sm:text-4xl font-bold mb-2 sm:mb-4 text-white">
-          Term 1
+          Term {selectedTerm}
         </h1>
         <p className="text-sm sm:text-lg text-gray-400">
           Ace your BBA-DBE exams with comprehensive notes, compiled playlists, previous year questions, and interactive quizzes.
@@ -95,7 +126,7 @@ const SubjectSelector: React.FC = () => {
       </div>
 
       <div className="space-y-3">
-        {SUBJECTS.map((subject, index) => (
+        {filteredSubjects.map((subject, index) => (
           <div
             key={subject.code}
             className="bg-gray-800 border border-gray-700 hover:border-indigo-500 hover:bg-gray-750 transition-all duration-200 cursor-pointer group"

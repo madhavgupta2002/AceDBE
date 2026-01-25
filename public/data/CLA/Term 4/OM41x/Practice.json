@@ -1,0 +1,798 @@
+{
+    "exam_metadata": {
+      "subject_name": "Operations Management",
+      "exam_date": "Practice Questions"
+    },
+    "questions": [
+      {
+        "question_id": "M1_Q1",
+        "question_text": "What is described as a common trade-off challenge in manufacturing operations? (Select the most appropriate answer)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Balancing quality, cost, delivery, and flexibility",
+          "B": "Increasing the number of employees to reduce cost",
+          "C": "Reducing supplier involvement to improve quality",
+          "D": "Extending production time to improve customer satisfaction"
+        },
+        "correct_option_label": "A",
+        "explanation": "Manufacturing involves managing competing objectives where improving one often requires a compromise in another, such as quality versus cost.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q2",
+        "question_text": "In the context of operations management, what does the transformation process involve? (Select the most appropriate answer)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Converting inputs into outputs through activities involving multiple stakeholders",
+          "B": "Increasing the number of trading partners for better distribution",
+          "C": "Outsourcing all manufacturing processes",
+          "D": "Reducing the number of activities to cut costs"
+        },
+        "correct_option_label": "A",
+        "explanation": "Operations management is fundamentally about the process of converting various inputs into finished goods or services.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q3",
+        "question_text": "What is one of the main reasons organizations need to detect impending quality issues early? (Select the most appropriate answer)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "To increase inventory levels",
+          "B": "To prevent future quality problems before they happen",
+          "C": "To reduce the number of employees",
+          "D": "To extend delivery times"
+        },
+        "correct_option_label": "B",
+        "explanation": "Early detection allows organizations to take proactive measures, ensuring that defects do not reach the customer and reducing waste.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q4",
+        "question_text": "Which of the following best describes the role of the operations support layer in an organization?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "It manages customer interactions and feedback",
+          "B": "It handles procurement, planning, maintenance, and IT systems that support operations",
+          "C": "It oversees research and development exclusively",
+          "D": "It is responsible for marketing and sales strategies"
+        },
+        "correct_option_label": "B",
+        "explanation": "The support layer provides the necessary infrastructure and planning functions that allow the core transformation process to function efficiently.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_F_Q1",
+        "question_text": "In a continuous flow system, what is the focus to ensure smooth operations? (Select the most appropriate answer)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Increasing product variety",
+          "B": "Maintaining a streamlined flow and balancing workstations",
+          "C": "Maximizing inventory between stages",
+          "D": "Reducing the number of stages in the process"
+        },
+        "correct_option_label": "B",
+        "explanation": "Continuous flow systems rely on high-volume production where synchronization and balance between workstations are critical.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_F_Q2",
+        "question_text": "Why can a small quality error cause a major disruption in a continuous flow system? (Select the most appropriate answer)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Because the process allows for large inventory buffers",
+          "B": "Because continuous flow systems rely heavily on uninterrupted, balanced workstations",
+          "C": "Because variety is very high in continuous flow systems",
+          "D": "Because such systems have fewer stages"
+        },
+        "correct_option_label": "B",
+        "explanation": "Since these systems have minimal buffers, a failure at any single point can cause the entire production line to stop.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_F_Q3",
+        "question_text": "The term \"Manage the Offerings\" means managing the (Select the most appropriate answer):",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Varieties",
+          "B": "Volume",
+          "C": "Flow",
+          "D": "System"
+        },
+        "correct_option_label": "A",
+        "explanation": "Managing offerings relates to the variety of products or services a company provides to its target market.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_F_Q4",
+        "question_text": "Which of the following is an example of an Intermittent Flow System? (Select the most appropriate answer)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Car Manufacturing",
+          "B": "Pharmaceutical",
+          "C": "Restaurant",
+          "D": "Banking"
+        },
+        "correct_option_label": "C",
+        "explanation": "A restaurant handles varied orders with different requirements, which is characteristic of an intermittent flow system.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_F_Q5",
+        "question_text": "Which of the following is an example of a Jumbled Flow System? (Select the most appropriate answer)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Automobile Assembly",
+          "B": "Construction of an Atomic Power Station",
+          "C": "Fertilizer Manufacturing",
+          "D": "A fast-food joint"
+        },
+        "correct_option_label": "B",
+        "explanation": "Large-scale unique projects like power station construction involve highly customized, complex, and non-linear sequences of tasks.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_I_Q1",
+        "question_text": "Which of the following operational choices at IndiGo Airlines primarily impacts the responsiveness of the operations? (Select the most appropriate answer)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The number of employees per aircraft",
+          "B": "The check-in staff doubling as baggage handlers",
+          "C": "The number of models offered by the airline"
+        },
+        "correct_option_label": "C",
+        "explanation": "Reducing aircraft variety (using a single model) simplifies maintenance and training, allowing for faster response and higher utilization.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_I_Q2",
+        "question_text": "Refer to the video in Subsection 1.3.2, in the comparison between Manufacturer A and Manufacturer B, which performance metric is directly affected by the defect rate at the assembly line?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Cost",
+          "B": "Flexibility",
+          "C": "Quality",
+          "D": "Delivery"
+        },
+        "correct_option_label": "C",
+        "explanation": "The defect rate is a primary indicator of process quality, reflecting how many units fail to meet standards.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_I_Q3",
+        "question_text": "What are order qualifying attributes?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Basic performance measures that customers expect for shortlisting a firm’s offering",
+          "B": "Operational decisions that increase costs",
+          "C": "Marketing strategies used to promote products"
+        },
+        "correct_option_label": "A",
+        "explanation": "Order qualifiers are the minimum requirements a product must meet for a customer to even consider purchasing it.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_C_Q1",
+        "question_text": "In capacity analysis, why is it important to know the process time for each activity? (Select the most appropriate answer)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "To estimate the quality of the product",
+          "B": "To determine the workload and capacity of resources",
+          "C": "To calculate the marketing budget",
+          "D": "To analyze customer buying behavior"
+        },
+        "correct_option_label": "B",
+        "explanation": "Understanding process time is essential to calculate how much work a resource can handle and identify the system's output limits.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_C_Q2",
+        "question_text": "Which of the following is part of the basic information required to start a capacity analysis? (Select the most appropriate answer)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Technological and logical constraints",
+          "B": "Supplier feedback",
+          "C": "Customer satisfaction scores",
+          "D": "Market competition analysis"
+        },
+        "correct_option_label": "A",
+        "explanation": "Capacity analysis requires data on the sequence of operations and technical limits of the machinery or labor involved.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_C_Q3",
+        "question_text": "Refer to our discussion in Section 1.4.5, what is the total time taken to process one batch of toys from preparation to inspection and packing? (for the first order)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "45 minutes",
+          "B": "50 minutes",
+          "C": "55 minutes",
+          "D": "60 minutes"
+        },
+        "correct_option_label": "D",
+        "explanation": "This refers to the throughput time for the initial batch, accounting for the sum of all sequential activity times.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_C_Q4",
+        "question_text": "Refer to our discussion in Section 1.4.6, Which stage in the toy production process takes the longest time and is likely the bottleneck?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Preparation",
+          "B": "Pre-treatment",
+          "C": "Painting",
+          "D": "Drying"
+        },
+        "correct_option_label": "C",
+        "explanation": "The bottleneck is the resource with the longest processing time per unit, which in this case study is the painting stage.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_C_Q5",
+        "question_text": "Refer to our discussion in Section 1.4.7, given an 8-hour working day, what is the maximum number of toy pallets that can be produced per day, assuming the bottleneck is in the painting stage?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "18 pallets per day",
+          "B": "21 pallets per day",
+          "C": "24 pallets per day",
+          "D": "30 pallets per day"
+        },
+        "correct_option_label": "C",
+        "explanation": "Daily capacity is calculated by dividing the total available time (480 minutes) by the processing time of the bottleneck station.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_C_Q6",
+        "question_text": "Refer to our discussion in Section 1.4.7, which of the following statements best explains why the drying stage is not considered a capacity-constrained resource?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Drying time is shorter than preparation time",
+          "B": "Drying stage uses expensive resources",
+          "C": "Drying can handle any number of pallets without limiting overall output",
+          "D": "Drying is not required for all types of toys"
+        },
+        "correct_option_label": "C",
+        "explanation": "If a station can process large batches simultaneously without slowing down the flow, it does not limit the process capacity.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_B_Q1",
+        "question_text": "Refer to the video in Section 1.5.2, what was identified as the bottleneck in the toy manufacturing process before adding capacity?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Preparation stage",
+          "B": "Pre-treatment stage",
+          "C": "Painting booth",
+          "D": "Inspection and packing"
+        },
+        "correct_option_label": "C",
+        "explanation": "The painting booth was the slowest operation, limiting the overall output of the production line.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_B_Q2",
+        "question_text": "What is a key implication of the “wandering bottleneck” when capacity is added at the bottleneck station? (Select the most appropriate answer)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The output always doubles after adding capacity",
+          "B": "The bottleneck shifts to another station and affects the actual output increase",
+          "C": "The original bottleneck remains unchanged",
+          "D": "Output decreases due to machine inefficiency"
+        },
+        "correct_option_label": "B",
+        "explanation": "Improving the current bottleneck often reveals the next slowest station, which then becomes the new constraint.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_B_Q3",
+        "question_text": "Refer to the video in Section 1.5.3, when increasing the number of pallets processed simultaneously in the painting booth from one to three, what happens to the bottleneck in the production process?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "It remains at the painting booth",
+          "B": "It shifts to the pre-treatment stage",
+          "C": "It shifts to the preparation stage",
+          "D": "It is eliminated completely"
+        },
+        "correct_option_label": "C",
+        "explanation": "By reducing the effective cycle time of the painting stage, the preparation stage becomes the slowest part of the process.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_B_Q4",
+        "question_text": "Refer to the video in Section 1.5.4, What is the effect of changing the operating policy to process multiple pallets in the painting booth rather than adding a second booth?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Output stays the same, but costs increase",
+          "B": "Output increases without additional investment in capacity",
+          "C": "Output decreases due to longer preparation times",
+          "D": "Output doubles immediately"
+        },
+        "correct_option_label": "B",
+        "explanation": "Better utilization of existing resources or batching can improve throughput without the need for expensive capital expenditure.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_CAL_Q1",
+        "question_text": "Based on the table (Resource 1: 10m/2w, Resource 2: 6m/1w, Resource 3: 16m/3w), which resource is bottleneck?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Resource 1",
+          "B": "Resource 2",
+          "C": "Resource 3",
+          "D": "Both Resource 1 and 2"
+        },
+        "correct_option_label": "B",
+        "explanation": "Resource 2 has the longest processing time per worker (6 min), compared to Resource 1 (5 min) and Resource 3 (5.33 min).",
+        "module": 1
+      },
+      {
+        "question_id": "M1_CAL_Q2",
+        "question_text": "Estimate process capacity",
+        "question_type": "MCQ",
+        "options": {
+          "A": "1/5 unit/minute",
+          "B": "1/6 unit/minute",
+          "C": "3/16 unit/minute",
+          "D": "2/6 unit/minute"
+        },
+        "correct_option_label": "B",
+        "explanation": "Capacity is determined by the bottleneck (Resource 2), which produces 1 unit every 6 minutes.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_CAL_Q3",
+        "question_text": "If the demand is very high, what is flow rate?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "1/6 unit/minute",
+          "B": "1/5 unit/minute",
+          "C": "2/6 unit/minute",
+          "D": "3/16 unit/minute"
+        },
+        "correct_option_label": "A",
+        "explanation": "Under high demand, the flow rate is equal to the process capacity, which is 1/6 units per minute.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_CAL_Q4",
+        "question_text": "If the demand is very high, what is cycle time?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "2 min/unit",
+          "B": "1/5 min/unit",
+          "C": "6 min/unit",
+          "D": "7 min/unit"
+        },
+        "correct_option_label": "C",
+        "explanation": "Cycle time is the inverse of the flow rate; at high demand, it equals the bottleneck time of 6 minutes per unit.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_CAL_Q5",
+        "question_text": "Estimate the average labour content",
+        "question_type": "MCQ",
+        "options": {
+          "A": "40 min/unit",
+          "B": "32 min/unit",
+          "C": "31 min/unit",
+          "D": "26 min/unit"
+        },
+        "correct_option_label": "B",
+        "explanation": "Labor content is the sum of the process times of all steps: 10 + 6 + 16 = 32 minutes.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_CAL_Q6",
+        "question_text": "If the demand is very high, what is Labour Utilization?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "77.77%",
+          "B": "71.56%",
+          "C": "88.88%",
+          "D": "70.17%"
+        },
+        "correct_option_label": "C",
+        "explanation": "Utilization = Labor Content / (Cycle Time * Number of Workers) = 32 / (6 * 6) = 88.88%.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_CAL_Q7",
+        "question_text": "If the wage rate is ₹500 per hour and if the demand is very high, what is cost of direct labour?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "₹356 per hour",
+          "B": "₹325 per hour",
+          "C": "₹380 per hour",
+          "D": "₹300 per hour"
+        },
+        "correct_option_label": "D",
+        "explanation": "Total Hourly Wage = 6 * 500 = 3000. Hourly Output = 10 units. Cost per unit = 3000/10 = 300.",
+        "module": 1
+      },
+      {
+        "question_id": "M2_Q1",
+        "question_text": "What best describes the concept of the \"productivity paradox\" as discussed in the module? (Select the most appropriate answer)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "High investment always results in high customer satisfaction",
+          "B": "Increased automation guarantees lower lead times",
+          "C": "Internal performance appears strong, but external results (like customer satisfaction or market success) remain poor",
+          "D": "Reducing labor costs always improves product quality"
+        },
+        "correct_option_label": "C",
+        "explanation": "The paradox occurs when operational metrics look good on paper but do not translate into overall business value or customer happiness.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q2",
+        "question_text": "What is the main reason why focusing on local optima can lead to a productivity paradox? (Select the most appropriate answer)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "It always reduces the output-to-input ratio",
+          "B": "Local improvements may not contribute to overall organizational goals",
+          "C": "It ensures higher customer satisfaction but lower profit",
+          "D": "It increases coordination among supply chain partners"
+        },
+        "correct_option_label": "B",
+        "explanation": "Optimizing a single department without considering the entire system can create imbalances or ignore the true bottleneck.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q3",
+        "question_text": "According to the ground rules for managing productivity, who determines whether a product or service truly creates value?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The organization’s management",
+          "B": "The suppliers in the value chain",
+          "C": "The end customer",
+          "D": "The production department"
+        },
+        "correct_option_label": "C",
+        "explanation": "Value is always defined by the customer's willingness to pay for a specific set of features or benefits.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_L_Q1",
+        "question_text": "The term that pertains to the attribute of a product or a service valued by a targeted customer is called ______________.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Value stream mapping",
+          "B": "Value proposition",
+          "C": "Value engineering",
+          "D": "Valuations"
+        },
+        "correct_option_label": "B",
+        "explanation": "A value proposition outlines why a customer should choose a product, focusing on the benefits they value.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_L_Q2",
+        "question_text": "Activities for which a customer may not want to pay for are called _______________.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Overhead activities",
+          "B": "Non-value adding activities",
+          "C": "Inspection activities",
+          "D": "Indirect activities"
+        },
+        "correct_option_label": "B",
+        "explanation": "In Lean philosophy, non-value-adding activities (Muda) are wastes that should be eliminated as they don't enhance the product for the customer.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_L_Q3",
+        "question_text": "According to the discussion, which of the following best explains why non value-adding activities harm productivity in organizations? (Select the most appropriate answer)",
+        "question_type": "MCQ",
+        "options": {
+          "A": "They increase employee engagement but reduce efficiency.",
+          "B": "They do not contribute to customer-perceived value and add unnecessary cost and time.",
+          "C": "They improve local performance but reduce global coordination.",
+          "D": "They are necessary to maintain system stability and compliance."
+        },
+        "correct_option_label": "B",
+        "explanation": "Wasted effort consumes resources without increasing output quality or value, thereby lowering overall productivity.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_L_Q4",
+        "question_text": "Which of the following are the components of a JIT system? Note: Make sure you select all the correct options [Multiple options may be correct]",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Set-up time reduction",
+          "B": "Benchmarking",
+          "C": "Quality Circles",
+          "D": "Pull scheduling"
+        },
+        "correct_option_label": "A, C, D",
+        "explanation": "Just-In-Time systems focus on waste reduction via quick setups, employee involvement (Quality Circles), and pull-based production (Kanban).",
+        "module": 2
+      },
+      {
+        "question_id": "M2_L_Q5",
+        "question_text": "In a kanban system, what does the number of containers between two stages in production represent?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The number of finished goods in the warehouse",
+          "B": "The number of workers needed in the process",
+          "C": "The number of kanban cards controlling inventory flow",
+          "D": "The total production capacity of the system"
+        },
+        "correct_option_label": "C",
+        "explanation": "The number of containers effectively limits the work-in-process (WIP) and serves as the visual signal for production.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_P_Q1",
+        "question_text": "IIM Bangalore is hosting its annual management fest \"Vista\", which involves planning keynote speeches, competitions, and sponsorships. This activity is best categorized as:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "An ongoing operation",
+          "B": "A project",
+          "C": "A routine administrative function",
+          "D": "None of the above"
+        },
+        "correct_option_label": "B",
+        "explanation": "A project is a temporary endeavor with a defined beginning and end, aimed at creating a unique result.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_P_Q2",
+        "question_text": "The IT department at IIM Bangalore is responsible for maintaining the campus Wi-Fi network, ensuring uptime, and providing helpdesk support. This is best classified as:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "A temporary project",
+          "B": "A project with no end date",
+          "C": "An operation",
+          "D": "A phase of a project"
+        },
+        "correct_option_label": "C",
+        "explanation": "Ongoing, repetitive activities required to maintain business continuity are classified as operations.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_P_Q3",
+        "question_text": "During which phase does a project typically experience quick momentum, where most of the work is done?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Initiation",
+          "B": "Planning",
+          "C": "Execution",
+          "D": "Closure"
+        },
+        "correct_option_label": "C",
+        "explanation": "The execution phase is where resources are deployed and the actual work of the project is performed.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_P_Q5",
+        "question_text": "Using the network data (A:3, B:2, C:4, D:3 where B,C follow A, and D follows B,C), identify the early start (ES) and early finish (EF) time for activity D.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "ES = 10, EF = 7",
+          "B": "ES = 11, EF = 10",
+          "C": "ES = 7, EF = 10",
+          "D": "ES = 7, EF = 7"
+        },
+        "correct_option_label": "C",
+        "explanation": "ES for D is the max EF of predecessors B (3+2=5) and C (3+4=7), which is 7. EF = ES + duration = 7+3=10.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_P_Q6",
+        "question_text": "Using the network data (A:3, B:2, C:4, D:3), identify the slack time for activity B.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "5",
+          "B": "7",
+          "C": "2",
+          "D": "0"
+        },
+        "correct_option_label": "C",
+        "explanation": "Slack is the difference between the late start and early start. Since path A-C-D is longer (10) than A-B-D (8), B has 2 days of slack.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_P_Q7",
+        "question_text": "Using the project network data identify the critical path.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "A → B → D",
+          "B": "A → C → D",
+          "C": "A → B → C → D",
+          "D": "D → A → C → B"
+        },
+        "correct_option_label": "B",
+        "explanation": "The critical path is the longest sequence of tasks: A (3) + C (4) + D (3) = 10 days.",
+        "module": 2
+      },
+      {
+        "question_id": "M3_Q1",
+        "question_text": "Which of the following issues does a six-sigma program address?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Addressing issues faced by suppliers and trading partners",
+          "B": "Addressing quality issues",
+          "C": "Addressing employee motivation issues",
+          "D": "None of the above"
+        },
+        "correct_option_label": "B",
+        "explanation": "Six Sigma is a data-driven methodology specifically designed to reduce variation and eliminate defects in processes.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_Q2",
+        "question_text": "Manufacturing firms measure defects in terms of “defects per million opportunities”",
+        "question_type": "MCQ",
+        "options": {
+          "A": "True",
+          "B": "False"
+        },
+        "correct_option_label": "A",
+        "explanation": "DPMO is the standard metric used in Six Sigma to quantify quality performance across different process complexities.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_Q3",
+        "question_text": "Which of the following system is a better method of quality management?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Detection and Correction",
+          "B": "Prevention and Elimination",
+          "C": "Detection and Elimination",
+          "D": "Prevention and Correction"
+        },
+        "correct_option_label": "B",
+        "explanation": "Focusing on prevention and the root-cause elimination of defects is more cost-effective and efficient than fixing errors after they occur.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_Q4",
+        "question_text": "In DMAIC methodology, identifying possible sources of variation is done in _______ stage.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Define",
+          "B": "Analyze",
+          "C": "Improve",
+          "D": "Measure"
+        },
+        "correct_option_label": "B",
+        "explanation": "The 'Analyze' phase focuses on using data to identify the root causes of process problems and variation.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_Q5",
+        "question_text": "Which of the following correctly represents the sequence of phases in the Six Sigma DMAIC methodology?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Define → Analyze → Measure → Improve → Control",
+          "B": "Define → Measure → Analyze → Improve → Control",
+          "C": "Design → Measure → Act → Implement → Control",
+          "D": "Define → Manage → Assess → Implement → Check"
+        },
+        "correct_option_label": "B",
+        "explanation": "DMAIC stands for Define, Measure, Analyze, Improve, and Control—the standard five-step process for Six Sigma improvements.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_SPC_Q1",
+        "question_text": "Consider the quality control issues in an airline’s operation. Bad weather is a _________.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Common cause",
+          "B": "Assignable cause"
+        },
+        "correct_option_label": "A",
+        "explanation": "Common causes are inherent to the process or environment and are generally predictable or expected sources of variation.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_SPC_Q2",
+        "question_text": "Customer specification limits represent the voice of the process.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "True",
+          "B": "False"
+        },
+        "correct_option_label": "B",
+        "explanation": "Specification limits represent the 'Voice of the Customer,' while control limits represent the 'Voice of the Process.'",
+        "module": 3
+      },
+      {
+        "question_id": "M3_SPC_Q3",
+        "question_text": "What is the main purpose of establishing control limits in Statistical Process Control (SPC)?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "To define customer specifications for quality",
+          "B": "To identify variations caused by assignable (non-random) causes",
+          "C": "To eliminate the need for sampling",
+          "D": "To increase production speed"
+        },
+        "correct_option_label": "B",
+        "explanation": "Control limits help distinguish between natural random variation and variation that requires investigation and correction.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_SPC_Q4",
+        "question_text": "For variable based measures we have ________________.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "p chart",
+          "B": "X bar and R chart",
+          "C": "c chart",
+          "D": "None of the above"
+        },
+        "correct_option_label": "B",
+        "explanation": "X-bar and R charts are used for continuous data (variables) like weight, length, or time.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_SPC_Q6",
+        "question_text": "What is the main purpose of using early detection rules in Statistical Process Control (SPC)?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "To increase the sample size of the process",
+          "B": "To improve the visual appearance of control charts",
+          "C": "To detect non-random patterns or drifts in the process before defects occur",
+          "D": "To redefine the control limits for each batch"
+        },
+        "correct_option_label": "C",
+        "explanation": "Early detection rules (like Western Electric rules) flag trends or shifts that suggest a process is heading out of control.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_CC_Q1",
+        "question_text": "What is the primary purpose of a c-chart in quality control?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "To monitor variable data such as weight and temperature",
+          "B": "To monitor count data, such as the number of defects per unit",
+          "C": "To monitor the proportion of defective items",
+          "D": "To monitor the range of observations"
+        },
+        "correct_option_label": "B",
+        "explanation": "The c-chart is used for attributes when we are counting the total number of defects in a fixed-size sample.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_CC_Q2",
+        "question_text": "Refer the problem on textile manufacturing. Suppose the average number of defects per unit is 4, what is the upper control limit (UCL) for the c-chart using 3-sigma limits?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "3+ 3√3",
+          "B": "5+ 3√5",
+          "C": "2 + 3√2",
+          "D": "4 + 3√4"
+        },
+        "correct_option_label": "D",
+        "explanation": "The UCL for a c-chart is calculated as c + 3√c, where c is the average number of defects.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_CC_Q6",
+        "question_text": "In process capability analysis, what does the Cp (Process Capability Index) represent?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The difference between the process mean and the target value",
+          "B": "The consistency or stability of the process over time",
+          "C": "The ratio of specification spread to process spread",
+          "D": "The rate of defects per produced unit"
+        },
+        "correct_option_label": "C",
+        "explanation": "Cp compares the width of the customer's tolerance limits to the natural spread of the process (6 sigma).",
+        "module": 3
+      },
+      {
+        "question_id": "M3_CC_Q7",
+        "question_text": "What is the correct formula for calculating the Process Capability Index (Cp)?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "(USL+LSL)/6σ",
+          "B": "σ/(USL−LSL)",
+          "C": "(USL−LSL)/6σ",
+          "D": "(USL−LSL)/3σ"
+        },
+        "correct_option_label": "C",
+        "explanation": "The formula divides the allowed tolerance range (USL-LSL) by the total process variation (6 standard deviations).",
+        "module": 3
+      }
+    ]
+  }
