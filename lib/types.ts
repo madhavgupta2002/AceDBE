@@ -9,6 +9,7 @@ export interface IIMBQuestion {
   marks_allocated?: number;
   status?: string;
   explanation?: string;
+  explaination?: string; // Handle typo in JSON files
 }
 
 export interface ExamMetadata {

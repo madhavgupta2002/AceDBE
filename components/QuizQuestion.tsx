@@ -117,19 +117,30 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
           {!selectedAnswer && !showResult && (
             <button
               onClick={handleSubjectiveAcknowledge}
-              className="px-4 sm:px-6 py-2 sm:py-3 bg-yellow-700 hover:bg-yellow-600 text-white border border-yellow-600 font-semibold transition duration-200 text-sm sm:text-base"
+              className="px-4 sm:px-6 py-2 sm:py-3 bg-indigo-700 hover:bg-indigo-600 text-white border border-indigo-600 font-semibold transition duration-200 text-sm sm:text-base"
             >
-              Mark as Reviewed
+              View Sample Solution
             </button>
           )}
           {(selectedAnswer || showResult) && (
-            <div className="flex items-center gap-2 text-yellow-300">
+            <div className="flex items-center gap-2 text-green-300">
               <CheckCircle size={18} className="sm:hidden" />
               <CheckCircle size={20} className="hidden sm:block" />
-              <span className="font-medium text-sm sm:text-base">Marked as reviewed</span>
+              <span className="font-medium text-sm sm:text-base">Sample solution viewed</span>
             </div>
           )}
         </div>
+        {/* Show explanation for subjective questions after viewing sample solution */}
+        {(selectedAnswer || showResult) && question.explanation && (
+          <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-blue-900/30 border border-blue-700 rounded-lg prose prose-invert prose-indigo max-w-none">
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm, remarkMath]}
+              rehypePlugins={[rehypeKatex]}
+            >
+              {formatText(question.explanation)}
+            </ReactMarkdown>
+          </div>
+        )}
       </div>
     );
   }
