@@ -1,0 +1,568 @@
+{
+    "exam_metadata": {
+      "subject_name": "Entrepreneurial Hypothesis Testing",
+      "exam_date": "Batch 1 CLA"
+    },
+    "questions": [
+      {
+        "question_id": "CLA1_Q1",
+        "question_text": "What is the primary purpose of applying hypothesis testing in entrepreneurship?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "To validate business ideas scientifically before investing resources",
+          "B": "To replace market research altogether",
+          "C": "To guarantee the success of a startup",
+          "D": "To eliminate risks entirely"
+        },
+        "correct_option_label": "A",
+        "explanation": "Hypothesis testing allows entrepreneurs to scientifically verify their assumptions about a business model before committing significant capital or time.",
+        "module": 1
+      },
+      {
+        "question_id": "CLA1_Q2",
+        "question_text": "Why is understanding scientific methods important for entrepreneurs?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "It guarantees they will become Nobel laureates",
+          "B": "It helps reduce heartache and resource wastage during venture development",
+          "C": "It allows entrepreneurs to avoid all risks",
+          "D": "It guarantees quick success in the market"
+        },
+        "correct_option_label": "B",
+        "explanation": "Scientific methods provide a structured way to test ideas, helping entrepreneurs avoid pursuing unviable paths and wasting resources.",
+        "module": 1
+      },
+      {
+        "question_id": "CLA1_Q3",
+        "question_text": "What is a common misconception about being born an entrepreneur?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "It’s necessary to be born with a high risk-taking ability",
+          "B": "Anyone can learn and develop entrepreneurial skills through principles and methods",
+          "C": "Entrepreneurs are only born in wealthy families",
+          "D": "Entrepreneurship requires formal education only"
+        },
+        "correct_option_label": "B",
+        "explanation": "The core teaching is that entrepreneurship is a discipline that can be learned, debunking the myth that it is an innate trait one must be born with.",
+        "module": 1
+      },
+      {
+        "question_id": "CLA1_Q4",
+        "question_text": "According to Steve Blank, how is a startup best defined?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "A permanent business with a fixed model",
+          "B": "A company designed to fail quickly",
+          "C": "A temporary organisation in search of a scalable, sustainable business model",
+          "D": "An organisation solely focused on technology development"
+        },
+        "correct_option_label": "C",
+        "explanation": "Steve Blank defines a startup as a temporary organization designed to search for a repeatable and scalable business model.",
+        "module": 1
+      },
+      {
+        "question_id": "CLA1_Q5",
+        "question_text": "Which of the following is NOT one of the nine building blocks in the business model canvas?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Revenue streams",
+          "B": "Cost structure",
+          "C": "Marketing slogans",
+          "D": "Customer segments"
+        },
+        "correct_option_label": "C",
+        "explanation": "Marketing slogans are promotional tools, not one of the foundational structural blocks like segments, costs, or revenue in the Business Model Canvas.",
+        "module": 1
+      },
+      {
+        "question_id": "CLA1_Q6",
+        "question_text": "What illustrates a segmented market?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Offering vehicles to different customer needs (budget, luxury, utility)",
+          "B": "Only selling one universal car model",
+          "C": "Having no variations in product design",
+          "D": "Ignoring customer preferences"
+        },
+        "correct_option_label": "A",
+        "explanation": "Market segmentation involves dividing a broad market into subsets of consumers who have common needs or priorities.",
+        "module": 1
+      },
+      {
+        "question_id": "CLA1_Q7",
+        "question_text": "Which of the following is NOT a utility lever in the buyer utility map?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Environmental friendliness",
+          "B": "Risk reduction",
+          "C": "Convenience",
+          "D": "Financial auditing"
+        },
+        "correct_option_label": "D",
+        "explanation": "Financial auditing is a corporate compliance process, not a standard lever used to increase buyer utility in a product's value proposition.",
+        "module": 1
+      },
+      {
+        "question_id": "CLA1_Q8",
+        "question_text": "What are the six experience stages considered in the buyer utility map?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Purchase, delivery, usage, supplements, maintenance, disposal",
+          "B": "Marketing, sales, distribution, execution, service, follow-up",
+          "C": "Planning, development, launch, growth, maturity, decline",
+          "D": "Awareness, evaluation, purchase, consumption, retention, advocacy"
+        },
+        "correct_option_label": "A",
+        "explanation": "The buyer utility map tracks the customer experience through six specific stages: purchase, delivery, usage, supplements, maintenance, and disposal.",
+        "module": 1
+      },
+      {
+        "question_id": "CLA1_Q9",
+        "question_text": "What does a buyer utility map evaluate?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The financial health of a company",
+          "B": "How products or services deliver value across utility levers and experience stages",
+          "C": "The marketing budget efficiency",
+          "D": "The operational workflow"
+        },
+        "correct_option_label": "B",
+        "explanation": "A buyer utility map helps identify where a product creates value for customers across different levers and stages of the user experience.",
+        "module": 1
+      },
+      {
+        "question_id": "CLA1_Q10",
+        "question_text": "What triad does the course suggest for framing hypotheses in startups?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Problem, product, price (PPP)",
+          "B": "Customer, problem, solution (CPS)",
+          "C": "Marketing, sales, finance (MSF)",
+          "D": "Investor, team, business (ITB)"
+        },
+        "correct_option_label": "B",
+        "explanation": "The CPS triad ensures entrepreneurs validate who the customer is, what problem they face, and if the proposed solution actually works for them.",
+        "module": 1
+      },
+      {
+        "question_id": "CLA2_Q1",
+        "question_text": "What does the “blue ocean” strategy primarily focus on?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Competing directly in crowded markets",
+          "B": "Creating new market space and making competition irrelevant",
+          "C": "Lowering costs to beat competitors",
+          "D": "Copying competitors' products"
+        },
+        "correct_option_label": "B",
+        "explanation": "Blue ocean strategy is about creating uncontested market space where competition is non-existent or irrelevant.",
+        "module": 2
+      },
+      {
+        "question_id": "CLA2_Q2",
+        "question_text": "Which element is the cornerstone of blue ocean strategy?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Cost minimisation",
+          "B": "Marketing budgets",
+          "C": "Competitive spying",
+          "D": "Value innovation, creating better value for buyers"
+        },
+        "correct_option_label": "D",
+        "explanation": "Value innovation, the simultaneous pursuit of differentiation and low cost, is the fundamental principle of blue ocean strategy.",
+        "module": 2
+      },
+      {
+        "question_id": "CLA2_Q3",
+        "question_text": "What key framework helps companies implement a blue ocean strategy by identifying what to eliminate, raise, reduce, and create?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "SWOT analysis",
+          "B": "ERRC model",
+          "C": "Porter’s five forces",
+          "D": "PESTLE analysis"
+        },
+        "correct_option_label": "B",
+        "explanation": "The Eliminate-Reduce-Raise-Create (ERRC) grid is used to reconstruct buyer value elements and create a new value curve.",
+        "module": 2
+      },
+      {
+        "question_id": "CLA2_Q4",
+        "question_text": "How can entrepreneurs discover potential new categories?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "By ignoring local market needs",
+          "B": "By competing only on price",
+          "C": "By observing unmet or underserved customer needs and innovating solutions",
+          "D": "By copying successful corporations"
+        },
+        "correct_option_label": "C",
+        "explanation": "New market categories are found by identifying gaps where current market offerings do not satisfy specific customer needs.",
+        "module": 2
+      },
+      {
+        "question_id": "CLA2_Q5",
+        "question_text": "Why do smaller but higher-paying customer segments matter to startups?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "They generate disproportionately higher revenue and loyalty",
+          "B": "They are easy to ignore",
+          "C": "They require no marketing efforts",
+          "D": "They prefer mass-market products"
+        },
+        "correct_option_label": "A",
+        "explanation": "Niche segments with higher willingness to pay often provide the necessary margins and early adoption loyalty needed for a startup to survive.",
+        "module": 2
+      },
+      {
+        "question_id": "CLA2_Q6",
+        "question_text": "What was a key reason the venture \"Better Place\" failed despite its innovative battery swapping network for EVs?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Lack of funding",
+          "B": "Poor customer service",
+          "C": "Too much competition",
+          "D": "Bad timing"
+        },
+        "correct_option_label": "D",
+        "explanation": "Despite the innovation, 'Better Place' failed largely due to the market and infrastructure not being ready at that specific time.",
+        "module": 2
+      },
+      {
+        "question_id": "CLA2_Q7",
+        "question_text": "Why is it essential for entrepreneurs to \"fail fast\" or \"fail smart\"?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "To minimise losses and gain learning quickly for better future ventures",
+          "B": "To avoid taking any risks",
+          "C": "To gain media attention",
+          "D": "To avoid customer feedback"
+        },
+        "correct_option_label": "A",
+        "explanation": "Failing fast allows entrepreneurs to test assumptions quickly and pivot or stop before they exhaust their resources.",
+        "module": 2
+      },
+      {
+        "question_id": "CLA2_Q8",
+        "question_text": "When defining metrics for an experiment, what question should be answered?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "How many competitors exist?",
+          "B": "What is the product price?",
+          "C": "How will you measure success?",
+          "D": "Who will be the CEO?"
+        },
+        "correct_option_label": "C",
+        "explanation": "Clear metrics are necessary to determine whether an experimental test has validated or invalidated a specific hypothesis.",
+        "module": 2
+      },
+      {
+        "question_id": "CLA2_Q9",
+        "question_text": "What is the first step suggested before ideation in starting a venture?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Identify a significant problem to solve",
+          "B": "Focus on building technology",
+          "C": "Pick a famous product",
+          "D": "Prepare a business plan"
+        },
+        "correct_option_label": "A",
+        "explanation": "Successful entrepreneurship starts with finding a real, painful problem rather than just having a product idea without a clear use case.",
+        "module": 2
+      },
+      {
+        "question_id": "CLA2_Q10",
+        "question_text": "What does \"loss aversion\" imply when developing products?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Customers dislike changing unless the new option is significantly better",
+          "B": "People take risks in order to avoid losses",
+          "C": "Customers will always choose new products",
+          "D": "Customers buy products that are developped using low cost"
+        },
+        "correct_option_label": "A",
+        "explanation": "Loss aversion means people feel the pain of losing what they have more than the gain of something new, so a new product must be significantly superior to trigger a switch.",
+        "module": 2
+      },
+      {
+        "question_id": "CLA3_Q1",
+        "question_text": "Why is time spent on site or heat maps useful for startups?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "They show where customers spend attention, helping refine user experience.",
+          "B": "They increase advertising costs",
+          "C": "They replace customer interviews",
+          "D": "They are not actionable"
+        },
+        "correct_option_label": "A",
+        "explanation": "Heat maps and time metrics provide behavioral data on where users focus, allowing for data-driven UX improvements.",
+        "module": 3
+      },
+      {
+        "question_id": "CLA3_Q2",
+        "question_text": "Which metric indicates strong evidence of stakeholder interest in a new venture?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Bounce rate",
+          "B": "Signup rates and collected contact information",
+          "C": "Total website visits only",
+          "D": "Number of product features"
+        },
+        "correct_option_label": "B",
+        "explanation": "Collecting contact information or having signups represents a much higher level of commitment and interest than simple page visits.",
+        "module": 3
+      },
+      {
+        "question_id": "CLA3_Q3",
+        "question_text": "You receive positive verbal feedback but no follow-up action or contact details from potential customers. What might this indicate?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Genuine customer interest",
+          "B": "Strong sales potential",
+          "C": "Immediate product market fit",
+          "D": "False positive due to politeness bias, not actual commitment"
+        },
+        "correct_option_label": "D",
+        "explanation": "Verbal compliments without commitment are often 'false positives' where people are being polite rather than expressing real purchase intent.",
+        "module": 3
+      },
+      {
+        "question_id": "CLA3_Q4",
+        "question_text": "What should a startup do upon realising the original customer segment is not interested, but a new segment shows interest?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Ignore the new segment",
+          "B": "Pivot customer focus and adapt offerings accordingly",
+          "C": "Delay pivoting",
+          "D": "Expand product features"
+        },
+        "correct_option_label": "B",
+        "explanation": "Pivoting allows a startup to shift its focus toward a market segment that demonstrates actual demand.",
+        "module": 3
+      },
+      {
+        "question_id": "CLA3_Q5",
+        "question_text": "Why should startups believe customers over friends, family, or mentors?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Customers define market reality",
+          "B": "Friends always give unbiased feedback",
+          "C": "Mentors are always correct",
+          "D": "Family has better insights"
+        },
+        "correct_option_label": "A",
+        "explanation": "Actual customers are the only ones who provide evidence of whether a product will be purchased, whereas friends and family are often biased.",
+        "module": 3
+      },
+      {
+        "question_id": "CLA3_Q6",
+        "question_text": "During early testing, why is it important not to push customers for positive signals?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Because only positive feedback matters",
+          "B": "To speed up experiments",
+          "C": "Because negative feedback is irrelevant",
+          "D": "To avoid leading questions that bias the results"
+        },
+        "correct_option_label": "D",
+        "explanation": "Seeking only validation prevents entrepreneurs from seeing flaws and leads to biased data that doesn't reflect true market needs.",
+        "module": 3
+      },
+      {
+        "question_id": "CLA3_Q7",
+        "question_text": "What should entrepreneurs do if customers partially deny the usefulness of a feature during interviews?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Dismiss the feedback",
+          "B": "Consider pivoting or refining the feature to match customer needs better",
+          "C": "Double down on the feature unthinkingly",
+          "D": "Ignore customer segments"
+        },
+        "correct_option_label": "B",
+        "explanation": "Constructive criticism or partial denial is a signal to refine the product to better align with what the customer actually values.",
+        "module": 3
+      },
+      {
+        "question_id": "CLA3_Q8",
+        "question_text": "What action shows more commitment than verbal compliments in interviews?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Providing an email or phone number for follow-ups",
+          "B": "Saying “nice idea” several times",
+          "C": "Staying silent",
+          "D": "Changing the topic"
+        },
+        "correct_option_label": "A",
+        "explanation": "Volunteering personal contact information is a 'skin in the game' metric that indicates real interest in the solution.",
+        "module": 3
+      },
+      {
+        "question_id": "CLA3_Q9",
+        "question_text": "What is the recommended approach when some hypotheses are partially supported?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Disregard the data",
+          "B": "Refine and iterate to clarify assumptions and retest",
+          "C": "Abandon the project immediately",
+          "D": "Skip further research"
+        },
+        "correct_option_label": "B",
+        "explanation": "Entrepreneurship is an iterative process; partial support suggests the idea is close but needs refinement to be fully validated.",
+        "module": 3
+      },
+      {
+        "question_id": "CLA3_Q10",
+        "question_text": "Why is sunk cost fallacy dangerous in entrepreneurial ventures?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "It encourages immediate pivoting",
+          "B": "It makes entrepreneurs focus on past investments, not present evidence",
+          "C": "It ensures success",
+          "D": "It promotes innovation"
+        },
+        "correct_option_label": "B",
+        "explanation": "The sunk cost fallacy leads founders to continue wasting resources on failing ideas just because they have already invested heavily in them.",
+        "module": 3
+      },
+      {
+        "question_id": "CLA4_Q1",
+        "question_text": "What mindset is crucial for entrepreneurs during hypothesis testing?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Proving their assumptions right",
+          "B": "Trying to prove themselves wrong to uncover real insights",
+          "C": "Ignoring customer feedback",
+          "D": "Seeking only positive validation"
+        },
+        "correct_option_label": "B",
+        "explanation": "The most effective entrepreneurs try to invalidate their ideas quickly to avoid spending time and money on unworkable concepts.",
+        "module": 4
+      },
+      {
+        "question_id": "CLA4_Q2",
+        "question_text": "During early-stage startups, what is a common source of wasted effort?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Creating complex solutions without validating customer problems",
+          "B": "Focusing on launching the product",
+          "C": "Excessive funding",
+          "D": "Lack of technical skills"
+        },
+        "correct_option_label": "A",
+        "explanation": "Building a full-featured product before confirming that customers actually have the problem it solves is a primary cause of startup failure.",
+        "module": 4
+      },
+      {
+        "question_id": "CLA4_Q3",
+        "question_text": "How should entrepreneurs treat success milestones?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "As static end goals",
+          "B": "As evolving targets to push further growth",
+          "C": "Irrelevant details",
+          "D": "A sign to stop working"
+        },
+        "correct_option_label": "B",
+        "explanation": "Milestones should be used as indicators to iterate and set higher objectives for continuous growth and scaling.",
+        "module": 4
+      },
+      {
+        "question_id": "CLA4_Q4",
+        "question_text": "What is the role of communities (entrepreneurship cells, incubators) in startup ecosystems?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Provide support, learning, and networking opportunities",
+          "B": "Increase competition",
+          "C": "Distract founders",
+          "D": "Only facilitate funding"
+        },
+        "correct_option_label": "A",
+        "explanation": "Incubators and communities provide the mentorship and resources necessary to nurture a startup through its early vulnerable stages.",
+        "module": 4
+      },
+      {
+        "question_id": "CLA4_Q5",
+        "question_text": "According to Pradyun, why should entrepreneurs aim to “self-select in” rather than “self-select out”?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "To avoid challenges",
+          "B": "To minimise workload",
+          "C": "To wait for perfect conditions",
+          "D": "To actively engage and seize opportunities despite difficulties"
+        },
+        "correct_option_label": "D",
+        "explanation": "Entrepreneurship requires a proactive mindset where you choose to participate and solve problems rather than waiting for conditions to be easy.",
+        "module": 4
+      },
+      {
+        "question_id": "CLA4_Q6",
+        "question_text": "Which of the following statements is true about 'effectuation' and 'causal thinking'?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Effectuation involves iterative creation",
+          "B": "Effectuation ignores planning",
+          "C": "Causal thinking means guessing",
+          "D": "Effectuation means random trial and error"
+        },
+        "correct_option_label": "A",
+        "explanation": "Effectuation is a logic of entrepreneurial expertise that involves working with available means to iteratively create an outcome.",
+        "module": 4
+      },
+      {
+        "question_id": "CLA4_Q7",
+        "question_text": "A founder feels deeply “passionate” about a specific idea and refuses to consider alternatives even when evidence shows limited urgency and a tiny market size. What is the key risk associated with this form of passion?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Passion always guarantees success, so there is no risk",
+          "B": "Investors will automatically invest more",
+          "C": "Attachment to one idea can block pivoting away from a fundamentally weak problem choice",
+          "D": "It eliminates the need for any validation"
+        },
+        "correct_option_label": "C",
+        "explanation": "Over-attachment to a solution prevents a founder from acknowledging negative data and shifting to a more viable problem/market.",
+        "module": 4
+      },
+      {
+        "question_id": "CLA4_Q8",
+        "question_text": "Pradyun's group builds a matching algorithm for mentoring rural children with college students during a hackathon. Why was this successful?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Team collaboration with diverse skills and clear roles",
+          "B": "Only focusing on coding speed",
+          "C": "Ignoring mentorship aspects",
+          "D": "Over-relying on external vendors"
+        },
+        "correct_option_label": "A",
+        "explanation": "The combination of technical skills and a clear understanding of the social objective within a collaborative team led to the successful outcome.",
+        "module": 4
+      },
+      {
+        "question_id": "CLA4_Q9",
+        "question_text": "How did cold emailing help Pradyun in launching his startup efforts?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "It was a waste of time",
+          "B": "It required no effort",
+          "C": "Only social media is effective",
+          "D": "It helped in networking and finding opportunities proactively"
+        },
+        "correct_option_label": "D",
+        "explanation": "Proactive outreach like cold emailing allows founders to build a network and find opportunities that aren't publicly advertised.",
+        "module": 4
+      },
+      {
+        "question_id": "CLA4_Q10",
+        "question_text": "What is more important than the product or idea in entrepreneurship?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Execution and delivering value",
+          "B": "Marketing campaigns",
+          "C": "Funding amounts",
+          "D": "Team size"
+        },
+        "correct_option_label": "A",
+        "explanation": "A great idea is worthless without proper execution and the ability to consistently provide value to the target market.",
+        "module": 4
+      }
+    ]
+  }

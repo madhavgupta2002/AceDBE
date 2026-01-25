@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { getTermForSubject } from '@/lib/subjectMapping';
 
 interface BankInfo {
   bankName: string;
@@ -20,7 +21,11 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    const dirPath = path.join(process.cwd(), 'public', 'data', bankType);
+    // Get the term for this subject to find the correct folder
+    const term = getTermForSubject(subjectCode);
+    const termFolder = `Term ${term}`;
+
+    const dirPath = path.join(process.cwd(), 'public', 'data', bankType, termFolder);
 
     if (!fs.existsSync(dirPath)) {
       return NextResponse.json({ banks: [] });
@@ -34,15 +39,15 @@ export async function GET(request: NextRequest) {
 
     // Read all files in the subject directory
     const files = fs.readdirSync(subjectPath);
-    
+
     // Extract bank names from JSON files
     const banks: BankInfo[] = [];
-    
+
     files.forEach((file) => {
       if (file.endsWith('.json')) {
         // Extract bank name by removing .json extension
         const bankName = file.slice(0, -5); // Remove .json
-        
+
         // For Exam type, read the exam_date from metadata
         if (bankType === 'Exam') {
           try {

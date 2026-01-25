@@ -1,0 +1,1114 @@
+{
+    "exam_metadata": {
+      "subject_name": "Introduction to Strategic Management",
+      "exam_date": "Batch 1 CLA"
+    },
+    "questions": [
+      {
+        "question_id": "M1_Q1",
+        "question_text": "Which of the following best explains why firms exist rather than leaving all transactions to the market?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "To Eliminate Competition",
+          "B": "To Coordinate Complex Interdependent Activities Efficiently",
+          "C": "To Increase Consumer Bargaining Power",
+          "D": "To Avoid Government Regulation"
+        },
+        "correct_option_label": "B",
+        "explanation": "Firms exist to coordinate complex interdependent activities more efficiently than the market by reducing transaction costs.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q2",
+        "question_text": "Benchmarking firm performance against industry standards is a form of:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Controlling",
+          "B": "Planning",
+          "C": "Organising",
+          "D": "Leading"
+        },
+        "correct_option_label": "A",
+        "explanation": "Controlling involves monitoring performance and comparing it against standards or benchmarks to ensure objectives are met.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q3",
+        "question_text": "Which type of firm is most likely to face the highest regulatory scrutiny?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Sole Proprietorship",
+          "B": "Partnership Firm",
+          "C": "Private Limited Company",
+          "D": "Public Limited Company"
+        },
+        "correct_option_label": "D",
+        "explanation": "Public limited companies face the highest scrutiny due to extensive legal disclosure requirements aimed at protecting public shareholders.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q4",
+        "question_text": "Which organisational structure groups employees primarily by their specialised functions (e.g., marketing, finance)?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Divisional",
+          "B": "Functional",
+          "C": "Matrix",
+          "D": "Network"
+        },
+        "correct_option_label": "B",
+        "explanation": "A functional structure organizes the workforce into departments based on their area of expertise or specialization.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q5",
+        "question_text": "Which of the following is NOT typically a barrier to delegation?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Lack of Trust",
+          "B": "Micromanagement Tendencies",
+          "C": "Fear of Subordinate Failure",
+          "D": "Empowering Subordinates with Authority"
+        },
+        "correct_option_label": "D",
+        "explanation": "Empowering subordinates is the actual goal of delegation, whereas lack of trust and micromanagement are inhibitors.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q6",
+        "question_text": "According to Mintzberg, which of the following is NOT a managerial role category?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Interpersonal",
+          "B": "Informational",
+          "C": "Decisional",
+          "D": "Technical"
+        },
+        "correct_option_label": "D",
+        "explanation": "Mintzberg identified interpersonal, informational, and decisional roles; 'technical' refers to a skill set, not a role category.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q7",
+        "question_text": "Political skills are particularly important for managers because:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "They help managers resolve technological disruptions",
+          "B": "They allow managers to build coalitions and navigate power dynamics",
+          "C": "They ensure managers do not need technical expertise",
+          "D": "They eliminate the need for delegation"
+        },
+        "correct_option_label": "B",
+        "explanation": "Political skills enable managers to effectively handle internal influence, alliances, and organizational power structures.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q9",
+        "question_text": "A tall organisational structure is characterised by:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Fewer levels of management and wider span of control",
+          "B": "Many levels of management and narrow span of control",
+          "C": "Flat reporting relationships",
+          "D": "Decentralised decision-making only"
+        },
+        "correct_option_label": "B",
+        "explanation": "Tall structures have many hierarchical layers and narrow spans of control, meaning managers supervise fewer direct reports.",
+        "module": 1
+      },
+      {
+        "question_id": "M1_Q10",
+        "question_text": "Which of the following is a key challenge in managing diverse teams?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Reducing Technological Costs",
+          "B": "Addressing Conscious and Unconscious Biases",
+          "C": "Eliminating the need for Supervision",
+          "D": "Minimising Product Categories"
+        },
+        "correct_option_label": "B",
+        "explanation": "Managing diversity requires actively identifying and mitigating biases to foster an inclusive and productive environment.",
+        "module": 1
+      },
+      {
+        "question_id": "M2_Q1",
+        "question_text": "According to the Value Stick Framework, total value creation is defined as the difference between:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Customer's willingness to pay and firm's retained value",
+          "B": "Price changed and cost incurred",
+          "C": "Customer's willingness to pay and supplier's willingness to sell",
+          "D": "Consumer surplus and supplier surplus"
+        },
+        "correct_option_label": "C",
+        "explanation": "Total value creation is the gap between a customer's maximum willingness to pay and a supplier's minimum willingness to sell.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q2",
+        "question_text": "Which of the following creates market dis-equilibrium in a firm's favor?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Charging higher prices without innovation",
+          "B": "Increasing Competition",
+          "C": "Maintaining market equilibrium",
+          "D": "Lowering supplier willingnesss to sell or increasing customer willingness to pay"
+        },
+        "correct_option_label": "D",
+        "explanation": "Widening the value gap by influencing WTP or WTS creates a competitive advantage that disrupts market balance.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q3",
+        "question_text": "In the Value Chain framework, activities such as inbound logistics and operations are examples of:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Support Activities",
+          "B": "Primary Activities",
+          "C": "External Environment Factors",
+          "D": "Strategic Alliances"
+        },
+        "correct_option_label": "B",
+        "explanation": "Primary activities are the core functions directly involved in the creation, sale, and delivery of a product.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q4",
+        "question_text": "Tactics are better described as:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The long-term vision of the firm",
+          "B": "Short-term actions and manoeuvre to implement strategy",
+          "C": "Corporate level strategy decisions",
+          "D": "Unplanned decisions based on gut feeling"
+        },
+        "correct_option_label": "B",
+        "explanation": "Tactics are operational, short-term moves designed to execute the broader long-term strategy of an organization.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q5",
+        "question_text": "The key question at the Corporate level strategy is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "How do we compete in the market?",
+          "B": "How to train employees effectively?",
+          "C": "What is our day-to-day execution plan?",
+          "D": "What businesses should we be in?"
+        },
+        "correct_option_label": "D",
+        "explanation": "Corporate strategy determines the scope of the whole firm and what industries or markets it should participate in.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q6",
+        "question_text": "Business level strategy mainly addresses:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "How to compete in a specific market",
+          "B": "Which market to diversify into",
+          "C": "Which functions to allocate resources to",
+          "D": "How to draft mission statements"
+        },
+        "correct_option_label": "A",
+        "explanation": "Business-level strategy focuses on how a specific unit achieves a competitive advantage within its specific market segment.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q7",
+        "question_text": "Amazon increases customer willingness to pay mainly through:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Limited product selection",
+          "B": "Prime program, convenience, and customer engagement",
+          "C": "Higher Product Prices",
+          "D": "Exclusive offline retail stores"
+        },
+        "correct_option_label": "B",
+        "explanation": "Programs like Prime enhance perceived value and convenience, thereby increasing the maximum price customers are willing to pay.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q8",
+        "question_text": "Marico’s positioning of Saffola as a health-focused brand is an example of:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Corporate level strategy",
+          "B": "Functional strategy",
+          "C": "Business level strategy",
+          "D": "Tactical decision"
+        },
+        "correct_option_label": "C",
+        "explanation": "Brand positioning and differentiation within a market are core elements of business-level competitive strategy.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q9",
+        "question_text": "Toyota’s operational excellence strategy is best described as:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Offering the cheapest cars in the market",
+          "B": "Relying only on government incentives",
+          "C": "Only producing luxury cars",
+          "D": "Implementing lean manufacturing and just-in-time inventory"
+        },
+        "correct_option_label": "D",
+        "explanation": "Toyota's operational strategy is famous for its lean systems that minimize waste and improve efficiency in the value chain.",
+        "module": 2
+      },
+      {
+        "question_id": "M2_Q10",
+        "question_text": "Abnormal profits are defined as:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Profits generated only from lowering supplier costs",
+          "B": "Profits earned when value creation and capture exceed competitor's",
+          "C": "Normal profits earned in competitive markets",
+          "D": "Profits arising from government subsidies"
+        },
+        "correct_option_label": "B",
+        "explanation": "Abnormal (or economic) profits are those that exceed the average industry level due to a superior competitive advantage.",
+        "module": 2
+      },
+      {
+        "question_id": "M3_Q1",
+        "question_text": "The entrepreneurial school of strategy emphasises:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Shared cultural values shaping strategy",
+          "B": "Strategy formed by visionary leader's intuition",
+          "C": "Adaptation to external environment only",
+          "D": "Step-by-step analytical planning"
+        },
+        "correct_option_label": "B",
+        "explanation": "The entrepreneurial school views strategy as a visionary process centered on the leader's intuition and mental concepts.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_Q2",
+        "question_text": "The power school of strategy stresses the role of:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Cultural values",
+          "B": "External environment only",
+          "C": "Politics, coalitions, and influence",
+          "D": "Trial and error learning"
+        },
+        "correct_option_label": "C",
+        "explanation": "The power school focuses on the use of influence and politics to negotiate strategy among competing stakeholders.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_Q3",
+        "question_text": "The cognitive school of strategy highlights:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Visionary leaders drive bold moves",
+          "B": "Strategy shaped by managers’ perceptions, biases, and learning",
+          "C": "Focus only on shareholder value",
+          "D": "Environment dictates all strategy"
+        },
+        "correct_option_label": "B",
+        "explanation": "The cognitive school explores the mental processes and biases that shape how strategists interpret information.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_Q4",
+        "question_text": "The environmental school of strategy argues that strategy is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Proactively shaped by leaders",
+          "B": "A passive response to external forces",
+          "C": "Always internally driven",
+          "D": "Independent of market forces"
+        },
+        "correct_option_label": "B",
+        "explanation": "The environmental school suggests that firms are shaped by their surroundings and must react to external pressures.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_Q5",
+        "question_text": "The learning school of strategy views strategy as:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "A deliberate top-down plan",
+          "B": "Completely shaped by leaders’ intuition",
+          "C": "Emergent through trial, error, and feedback",
+          "D": "Rigid five-year plans"
+        },
+        "correct_option_label": "C",
+        "explanation": "The learning school argues that strategy emerges incrementally as organizations experience and learn from their actions.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_Q6",
+        "question_text": "The cultural school of strategy emphasises:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Economic forces alone",
+          "B": "Government regulations",
+          "C": "CEO’s vision only",
+          "D": "Shared organisational beliefs and values"
+        },
+        "correct_option_label": "D",
+        "explanation": "This school views strategy formation as a social process rooted in the shared beliefs and culture of the organization.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_Q7",
+        "question_text": "SWOT analysis maps:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Strengths, weaknesses, opportunities, threats",
+          "B": "Revenue and cost analysis",
+          "C": "Vision and Mission Alignment",
+          "D": "Supplier bargaining power only"
+        },
+        "correct_option_label": "A",
+        "explanation": "SWOT is a standard tool used to evaluate internal strengths/weaknesses and external opportunities/threats.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_Q8",
+        "question_text": "The configurational school suggests strategy evolves through:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Linear Incremental changes",
+          "B": "Sudden transformations across stages like growth and maturity",
+          "C": "Only top management decisions",
+          "D": "Only trial and error learning"
+        },
+        "correct_option_label": "B",
+        "explanation": "The configurational school describes strategy as staying in a stable state before undergoing major, sudden shifts or transitions.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_Q9",
+        "question_text": "PESTEL analysis is used for:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Value chain analysis",
+          "B": "Internal resource evaluation",
+          "C": "External environment analysis",
+          "D": "SWOT analysis"
+        },
+        "correct_option_label": "C",
+        "explanation": "PESTEL is a framework used to scan and monitor macro-environmental factors in the external market.",
+        "module": 3
+      },
+      {
+        "question_id": "M3_Q10",
+        "question_text": "The first step in the Strategic Management Process is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Defining vision, mission, and goals",
+          "B": "Evaluating performance metrics",
+          "C": "Strategy implementation",
+          "D": "Internal analysis"
+        },
+        "correct_option_label": "A",
+        "explanation": "Strategy formation begins with establishing the fundamental purpose and long-term direction of the organization.",
+        "module": 3
+      },
+      {
+        "question_id": "M4_Q1",
+        "question_text": "The purpose of scanning in external analysis is to:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Identify early signals of change and trends",
+          "B": "Focus only on competitors",
+          "C": "Measure internal efficiency",
+          "D": "Forecast industry growth"
+        },
+        "correct_option_label": "A",
+        "explanation": "Scanning is the initial process of identifying broad environmental changes and potential future trends.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q2",
+        "question_text": "Monitoring differs from scanning because it:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Is more detailed and focused on specific trends",
+          "B": "Covers a wider environment",
+          "C": "Deals only with internal factors",
+          "D": "Requires no data collection"
+        },
+        "correct_option_label": "A",
+        "explanation": "While scanning is broad, monitoring involves tracking specific, previously identified trends more closely.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q3",
+        "question_text": "The macro environment affects:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Only one specific industry",
+          "B": "All organisations across industries",
+          "C": "Only startups",
+          "D": "Only multinational firms"
+        },
+        "correct_option_label": "B",
+        "explanation": "Macro-environmental factors (economic, political, etc.) generally impact the entire economy and multiple industries simultaneously.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q4",
+        "question_text": "The bargaining power of suppliers is high when:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "There are many suppliers offering identical inputs",
+          "B": "Inputs are easily replaceable",
+          "C": "Suppliers depend heavily on one buyer",
+          "D": "Switching costs are high for buyers"
+        },
+        "correct_option_label": "D",
+        "explanation": "Suppliers gain power when buyers cannot easily or cheaply switch to alternative sources of supply.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q5",
+        "question_text": "Which of the following reduces rivalry among competitors?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "High fixed costs",
+          "B": "Many competitors of equal size",
+          "C": "High product differentiation",
+          "D": "Low exit barriers"
+        },
+        "correct_option_label": "C",
+        "explanation": "Unique, differentiated products reduce head-to-head price competition, thereby lowering the intensity of industry rivalry.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q6",
+        "question_text": "An example of supplier power in the automobile industry is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Multiple tire vendors competing on price",
+          "B": "Chip manufacturers during global shortages",
+          "C": "Retailers offering discounts",
+          "D": "Banks providing car loans"
+        },
+        "correct_option_label": "B",
+        "explanation": "During shortages, suppliers of critical components (like chips) gain significant leverage over manufacturers.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q7",
+        "question_text": "Which of the following is a key component of competitor analysis?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Future objectives",
+          "B": "Employee morale",
+          "C": "Production output",
+          "D": "Organisational hierarchy"
+        },
+        "correct_option_label": "A",
+        "explanation": "Analyzing a competitor's future objectives helps predict their potential strategic moves and counter-reactions.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q8",
+        "question_text": "Key Success Factors (KSFs) are best defined as:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Short-term goals of a firm",
+          "B": "Financial ratios for performance",
+          "C": "Critical elements required to compete successfully in an industry",
+          "D": "Ethical considerations"
+        },
+        "correct_option_label": "C",
+        "explanation": "KSFs are the core competitive elements that every firm in a given industry must perform well to be successful.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q9",
+        "question_text": "High mobility barriers in an industry result in:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Frequent firm entry and exit",
+          "B": "Unclear Competition",
+          "C": "Stability and sustained profitability of group",
+          "D": "Rapid technological change"
+        },
+        "correct_option_label": "C",
+        "explanation": "Mobility barriers prevent firms from moving between strategic groups, protecting the profitability of groups with high barriers.",
+        "module": 4
+      },
+      {
+        "question_id": "M4_Q10",
+        "question_text": "Industry boundaries help firms to:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Ignore competitors",
+          "B": "Identify who their real competitors and substitutes are",
+          "C": "Determine internal efficiency",
+          "D": "Plan employee training"
+        },
+        "correct_option_label": "B",
+        "explanation": "Defining industry boundaries clarifies the competitive arena and helps identify direct rivals and indirect threats from substitutes.",
+        "module": 4
+      },
+      {
+        "question_id": "M5_Q1",
+        "question_text": "What is the primary purpose of conducting an internal analysis in strategic management?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "To identify external threats in the market",
+          "B": "To identify internal strengths and weaknesses to gain competitive advantage",
+          "C": "To benchmark competitors’ strategies",
+          "D": "To establish financial benchmarks"
+        },
+        "correct_option_label": "B",
+        "explanation": "Internal analysis focuses on assessing a firm's own assets and capabilities to find sources of competitive advantage.",
+        "module": 5
+      },
+      {
+        "question_id": "M5_Q2",
+        "question_text": "Why is internal analysis particularly vital in the Indian context?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Because Indian firms operate under government protection",
+          "B": "Because of global investor expectations",
+          "C": "Because Indian firms face unique institutional and market complexities",
+          "D": "Because Indian firms lack access to foreign technology"
+        },
+        "correct_option_label": "C",
+        "explanation": "The complex business landscape in India requires firms to deeply understand their specific internal capabilities to navigate local challenges.",
+        "module": 5
+      },
+      {
+        "question_id": "M5_Q3",
+        "question_text": "What best describes 'core competencies'?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "A firm’s tangible assets that drive performance",
+          "B": "A firm’s ability to imitate competitors quickly",
+          "C": "The financial strength of the firm",
+          "D": "The collective learning and integration of multiple skills and technologies"
+        },
+        "correct_option_label": "D",
+        "explanation": "Core competencies are integrated sets of skills and technologies that deliver unique value to customers.",
+        "module": 5
+      },
+      {
+        "question_id": "M5_Q4",
+        "question_text": "Which of the following best reflects a primary activity in the value chain?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Marketing and sales",
+          "B": "Human resource management",
+          "C": "Procurement",
+          "D": "Research and development"
+        },
+        "correct_option_label": "A",
+        "explanation": "In Porter's Value Chain, Marketing and Sales is a primary activity directly involved in getting the product to the buyer.",
+        "module": 5
+      },
+      {
+        "question_id": "M5_Q5",
+        "question_text": "A firm possesses a valuable, rare, and costly-to-imitate resource, yet its fragmented structure prevents it from effectively exploiting it. According to the VRIO framework, which of the following best describes the firm’s competitive position?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Sustained competitive advantage",
+          "B": "Temporary competitive advantage",
+          "C": "Unused competitive potential due to organizational misalignment",
+          "D": "Competitive parity"
+        },
+        "correct_option_label": "C",
+        "explanation": "If a firm lacks the necessary organizational alignment ('O' in VRIO), it cannot capitalize on its valuable resources.",
+        "module": 5
+      },
+      {
+        "question_id": "M5_Q6",
+        "question_text": "Which of the following is a primary activity under Porter's value chain?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Technology development",
+          "B": "Service delivery",
+          "C": "Human resource management",
+          "D": "Inbound logistics"
+        },
+        "correct_option_label": "D",
+        "explanation": "Inbound logistics is a primary activity that involves receiving, storing, and distributing inputs to the production process.",
+        "module": 5
+      },
+      {
+        "question_id": "M5_Q7",
+        "question_text": "Which of the following best captures the essence of 'dynamic capabilities'?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The ability to adapt and reconfigure resources in changing environments",
+          "B": "The ability to maintain strong cash flows",
+          "C": "The ability to perform routine functions efficiently",
+          "D": "The use of external consultants for learning"
+        },
+        "correct_option_label": "A",
+        "explanation": "Dynamic capabilities refer to the firm's ability to adjust and rebuild its competencies to stay relevant in a shifting environment.",
+        "module": 5
+      },
+      {
+        "question_id": "M5_Q8",
+        "question_text": "Which of the following is NOT a criterion for identifying a core competency?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "They are easily substitutable by competitors",
+          "B": "They must be embedded in technology systems only",
+          "C": "They must be short-term and easily measurable",
+          "D": "They are simple operational skills"
+        },
+        "correct_option_label": "A",
+        "explanation": "A core competency must be difficult for competitors to substitute in order to provide a lasting advantage.",
+        "module": 5
+      },
+      {
+        "question_id": "M5_Q9",
+        "question_text": "What does the term ‘causal ambiguity’ imply in the context of VRIO?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "That firms cannot easily identify the true source of a competitor’s success",
+          "B": "That firms often fail to imitate unique historical processes",
+          "C": "That firms often copy without understanding underlying culture",
+          "D": "That firms can easily copy capabilities if motivated"
+        },
+        "correct_option_label": "A",
+        "explanation": "Causal ambiguity makes a resource inimitable because competitors do not understand the link between the resource and the advantage.",
+        "module": 5
+      },
+      {
+        "question_id": "M5_Q10",
+        "question_text": "Why is it essential to continuously upgrade firm capabilities?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Because markets and technologies evolve",
+          "B": "Because shareholder demands increase over time",
+          "C": "Because firms must align capabilities with external conditions",
+          "D": "Because competitors can quickly copy existing resources"
+        },
+        "correct_option_label": "D",
+        "explanation": "Constant upgrading is necessary to prevent competitive advantages from being eroded by imitation or obsolescence.",
+        "module": 5
+      },
+      {
+        "question_id": "M6_Q1",
+        "question_text": "A firm identifies that its Research and Development process allows it to launch products faster than competitors, but the process heavily depends on one key scientist. According to the VRIO framework, which factor limits sustainability of this advantage?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Valuability",
+          "B": "Rarity",
+          "C": "Inimitability",
+          "D": "Organisation"
+        },
+        "correct_option_label": "C",
+        "explanation": "Dependency on a single individual makes the advantage hard to scale and potentially easy to disrupt, affecting long-term inimitability/sustainability.",
+        "module": 6
+      },
+      {
+        "question_id": "M6_Q2",
+        "question_text": "A retail chain has invested in advanced analytics that help forecast customer demand accurately. However, frontline staff lack the training to use the insights effectively. What should the firm prioritise to realise full strategic value?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Upgrading analytics tools",
+          "B": "Train and empower front-end staff",
+          "C": "Outsource analytics function",
+          "D": "Increase advertising spend"
+        },
+        "correct_option_label": "B",
+        "explanation": "Assets only provide strategic value when the organization is trained and capable of using them to support its goals.",
+        "module": 6
+      },
+      {
+        "question_id": "M6_Q3",
+        "question_text": "A company has developed a unique logistics algorithm that reduces delivery time by 40%. Competitors start imitating the system within six months. What kind of competitive advantage did the firm initially have?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Sustained competitive advantage",
+          "B": "No advantage",
+          "C": "Competitive parity",
+          "D": "Temporary competitive advantage"
+        },
+        "correct_option_label": "D",
+        "explanation": "An advantage that is quickly imitated by competitors is considered temporary rather than sustained.",
+        "module": 6
+      },
+      {
+        "question_id": "M6_Q4",
+        "question_text": "A manufacturing firm’s production technology is valuable and rare but not protected by patents. What should the firm do to prevent imitation?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "File for patent protection immediately",
+          "B": "Build organisational routines and secrecy",
+          "C": "Sell technology to competitors",
+          "D": "Increase transparency to reduce risk"
+        },
+        "correct_option_label": "B",
+        "explanation": "In the absence of formal legal protection, firms must rely on internal complexity and secrecy to protect their advantages.",
+        "module": 6
+      },
+      {
+        "question_id": "M6_Q5",
+        "question_text": "When analysing internal resources, a manager realises the company’s marketing team has creative skills unmatched in the industry. Which step ensures this capability becomes a core competency?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Integrate marketing creativity with other functional routines",
+          "B": "Hire more creative individuals",
+          "C": "Benchmark against competitors",
+          "D": "Focus only on resource acquisition"
+        },
+        "correct_option_label": "A",
+        "explanation": "A capability becomes a core competency when it is integrated across functional lines and embedded in the firm's systems.",
+        "module": 6
+      },
+      {
+        "question_id": "M6_Q6",
+        "question_text": "A firm discovers that its procurement process reduces costs but customers do not perceive additional value. What should the firm do next?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Increase focus on external benchmarking",
+          "B": "Leverage procurement advantage to improve customer value",
+          "C": "Discontinue cost advantage process",
+          "D": "Sell low-value operations"
+        },
+        "correct_option_label": "B",
+        "explanation": "Internal cost savings should be strategically used to enhance features or lower prices to create value for the end customer.",
+        "module": 6
+      },
+      {
+        "question_id": "M6_Q7",
+        "question_text": "A firm performs well in employee training and product innovation, yet market share remains stagnant. Which analysis can help identify the disconnect?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "VRIO analysis",
+          "B": "PESTEL analysis",
+          "C": "Five Forces analysis",
+          "D": "BCG matrix"
+        },
+        "correct_option_label": "A",
+        "explanation": "VRIO analysis helps determine if the internal resources (training/innovation) are being effectively organized to capture market value.",
+        "module": 6
+      },
+      {
+        "question_id": "M6_Q8",
+        "question_text": "During a value chain analysis, a firm realises that outbound logistics costs are unusually high due to outdated systems. What should the firm prioritise first?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Outsource logistics functions",
+          "B": "Upgrade to modern logistics technology",
+          "C": "Negotiate lower transportation costs",
+          "D": "Ignore until next cycle"
+        },
+        "correct_option_label": "B",
+        "explanation": "Addressing the root cause of inefficiency—the outdated technology—is the primary strategic step to fix the value chain gap.",
+        "module": 6
+      },
+      {
+        "question_id": "M6_Q9",
+        "question_text": "A startup identifies a new niche market but lacks resources to scale. Which capability should it focus on to sustain early success?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Develop strategic alliances",
+          "B": "Focus on marketing investment",
+          "C": "Focus on organisational learning",
+          "D": "Diversify products"
+        },
+        "correct_option_label": "A",
+        "explanation": "Strategic alliances allow resource-constrained startups to access the scale and distribution needed to sustain growth.",
+        "module": 6
+      },
+      {
+        "question_id": "M6_Q10",
+        "question_text": "A company’s Research and Development unit is efficient but isolated from marketing and production. What organisational issue does this reflect in VRIO terms?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Organisation misalignment",
+          "B": "Capability rarity",
+          "C": "Inimitability gap",
+          "D": "Resource rigidity"
+        },
+        "correct_option_label": "A",
+        "explanation": "Isolation between key functional units is a clear sign of poor organizational alignment, preventing value capture.",
+        "module": 6
+      },
+      {
+        "question_id": "M7_Q1",
+        "question_text": "A textile firm identifies that sustainability practices are becoming industry standards. How should it respond to maintain distinct advantage?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Standardise sustainability practices",
+          "B": "Enhance sustainability focus through innovation",
+          "C": "Reduce focus on sustainability",
+          "D": "Partner with NGOs for branding"
+        },
+        "correct_option_label": "B",
+        "explanation": "When a strength becomes common practice, a firm must innovate to stay ahead and maintain a competitive advantage.",
+        "module": 7
+      },
+      {
+        "question_id": "M7_Q2",
+        "question_text": "During capability assessment, a manager notes that customer relationship systems are advanced but employees resist using them. Which area needs focus?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Change management and training",
+          "B": "Technology investment",
+          "C": "HR capability development",
+          "D": "Leadership development"
+        },
+        "correct_option_label": "A",
+        "explanation": "Technical tools are ineffective without proper change management to address human resistance and adoption barriers.",
+        "module": 7
+      },
+      {
+        "question_id": "M7_Q3",
+        "question_text": "A firm’s long-term contracts with key suppliers ensure cost advantage. Which type of capability does this reflect?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Operational efficiency",
+          "B": "Dynamic capability",
+          "C": "Relational capability",
+          "D": "Financial capability"
+        },
+        "correct_option_label": "C",
+        "explanation": "Relational capabilities represent the firm's ability to manage and leverage beneficial long-term external partnerships.",
+        "module": 7
+      },
+      {
+        "question_id": "M7_Q4",
+        "question_text": "A company conducts an internal analysis and finds a skill gap in data interpretation. How can this insight be leveraged strategically?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Hire data specialists",
+          "B": "Design training programs",
+          "C": "Develop strategic partnerships",
+          "D": "Invest in automation tools"
+        },
+        "correct_option_label": "B",
+        "explanation": "Addressing internal skill gaps through targeted training programs builds the necessary capabilities to execute strategy.",
+        "module": 7
+      },
+      {
+        "question_id": "M7_Q5",
+        "question_text": "When two firms possess similar tangible assets, how can one still achieve superior performance?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "By leveraging superior leadership and culture",
+          "B": "By investing more in assets",
+          "C": "By restructuring financial policies",
+          "D": "By hiring more employees"
+        },
+        "correct_option_label": "A",
+        "explanation": "Intangible resources like leadership and culture often create the difference in performance when physical assets are equal.",
+        "module": 7
+      },
+      {
+        "question_id": "M7_Q6",
+        "question_text": "In evaluating a firm’s strengths, why is it important to assess imitability?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Because it indicates resource value",
+          "B": "Because it shows how competitors will respond",
+          "C": "Because it identifies causal ambiguity",
+          "D": "Because it determines market growth"
+        },
+        "correct_option_label": "B",
+        "explanation": "Assessing imitability helps predict how quickly rivals will be able to replicate a successful strategy and erode the advantage.",
+        "module": 7
+      },
+      {
+        "question_id": "M7_Q7",
+        "question_text": "A manager conducting a VRIO analysis identifies multiple valuable but non-rare resources. What strategic action should follow?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Discontinue resource allocation",
+          "B": "Invest in imitation",
+          "C": "Reallocate to more distinctive areas",
+          "D": "Ignore them"
+        },
+        "correct_option_label": "C",
+        "explanation": "Non-rare resources only provide competitive parity; a firm should reallocate its focus toward areas that offer unique, rare advantages.",
+        "module": 7
+      },
+      {
+        "question_id": "M7_Q8",
+        "question_text": "A company integrates its marketing, Research and Development, and customer support teams to respond faster to market shifts. What capability is being strengthened?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Operational efficiency",
+          "B": "Dynamic capability",
+          "C": "Learning capability",
+          "D": "Cross-functional capability"
+        },
+        "correct_option_label": "B",
+        "explanation": "The ability to reconfigure internal teams to respond quickly to market changes is a core aspect of dynamic capabilities.",
+        "module": 7
+      },
+      {
+        "question_id": "M7_Q9",
+        "question_text": "After benchmarking, a firm realises it has higher innovation speed but lower cost efficiency. What should be its next strategic step?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Focus on reducing costs to match competitors",
+          "B": "Capitalise on innovation and reduce inefficiencies",
+          "C": "Ignore innovation and cut Research and Development budgets",
+          "D": "Invest in aggressive marketing"
+        },
+        "correct_option_label": "B",
+        "explanation": "Management should double down on its innovative strengths while actively working to minimize its operational weaknesses.",
+        "module": 7
+      },
+      {
+        "question_id": "M7_Q10",
+        "question_text": "An organisation has built strong brand loyalty but faces disruption from technology-based entrants. What internal action will help sustain advantage?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Invest in new technology",
+          "B": "Leverage customer engagement and service quality",
+          "C": "Focus on short-term profits",
+          "D": "Increase production capacity"
+        },
+        "correct_option_label": "A",
+        "explanation": "To survive technological disruption, a firm must modernize its core capabilities despite existing brand strength.",
+        "module": 7
+      },
+      {
+        "question_id": "M8_Q1",
+        "question_text": "What is the primary reason why aligning structure with strategy is critical in organisation",
+        "question_type": "MCQ",
+        "options": {
+          "A": "It ensures ecient oper ations irrespective of market changes",
+          "B": "It enables better alignment between goals, decision-making, and execution",
+          "C": "It allows maximum profit optimisation through rigid hierarchy",
+          "D": "It minimises the importance of structure in execution"
+        },
+        "correct_option_label": "B",
+        "explanation": "An organization's structure must be designed to support and facilitate the execution of its strategic goals.",
+        "module": 8
+      },
+      {
+        "question_id": "M8_Q2",
+        "question_text": "According to the A-S-P model, which component ensures continuous learning and adustment",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Analysis component that monitors external conditions",
+          "B": "Strategy component that designs market choices",
+          "C": "Performance component that tests strategy execution",
+          "D": "Feedback loop that ensures dynamic realignment"
+        },
+        "correct_option_label": "D",
+        "explanation": "The feedback loop provides the information necessary to adjust strategies and structures based on performance results.",
+        "module": 8
+      },
+      {
+        "question_id": "M8_Q3",
+        "question_text": "A firm’s alanced Scor ecard shows strong process eciency but weak learning metrics What risk does this pose",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Reduced adaptability to changing environments",
+          "B": "Potential skill gap in leadership training",
+          "C": "Increased employee resistance",
+          "D": "Decline in eciency metrics"
+        },
+        "correct_option_label": "A",
+        "explanation": "Poor learning and growth metrics indicate that the firm may struggle to innovate and adapt when market conditions shift.",
+        "module": 8
+      },
+      {
+        "question_id": "M8_Q4",
+        "question_text": "Management notices that performance reviews are inconsistent across departments What aspect of performance management needs strengthening",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Clear goal-setting and calibration",
+          "B": "Automated tracking tools",
+          "C": "Manager coaching and feedback capability",
+          "D": "Employee incentive alignment"
+        },
+        "correct_option_label": "A",
+        "explanation": "Calibration processes ensure that performance standards are applied consistently across various departments and teams.",
+        "module": 8
+      },
+      {
+        "question_id": "M8_Q5",
+        "question_text": "What is the main dier ence between strategic and financial controls",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Strategic controls are ualitative and futur e-oriented financial contr ols are uantitative and past-oriented",
+          "B": "Strategic controls focus on past results, while financial controls are forward-looking",
+          "C": "Strategic controls are rigid and measurable, unlike financial controls",
+          "D": "Financial controls are subective while str ategic are uantitative"
+        },
+        "correct_option_label": "A",
+        "explanation": "Strategic controls monitor the validity of the strategy and its implementation path, while financial controls measure past economic success.",
+        "module": 8
+      },
+      {
+        "question_id": "M8_Q6",
+        "question_text": "A company notices delays in decision-making due to excessive centralisation Which structur al adaptation would best improve agility",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Increase in hierarchical levels for better control",
+          "B": "Delegating more authority to lower levels",
+          "C": "Reinforce centralised reporting lines",
+          "D": "Reduce team autonomy"
+        },
+        "correct_option_label": "B",
+        "explanation": "Decentralization by delegating authority empowers local levels to make decisions faster and improves overall organizational responsiveness.",
+        "module": 8
+      },
+      {
+        "question_id": "M8_Q7",
+        "question_text": "A fast-growing startup faces bottlenecks because all approvals go through the founder Which structur e could resolve this",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Remain in simple structure but add more assistants",
+          "B": "Adopt a functional structure with clear department heads",
+          "C": "Transition to functional structure for eciency",
+          "D": "Shift to a decentralised structure"
+        },
+        "correct_option_label": "B",
+        "explanation": "Moving to a functional structure with departmental heads helps distribute responsibility and removes the founder as the sole bottleneck.",
+        "module": 8
+      },
+      {
+        "question_id": "M8_Q8",
+        "question_text": "Which element in performance management translates strategy into measurable actions",
+        "question_type": "MCQ",
+        "options": {
+          "A": "e y Performance Indicators PIs",
+          "B": "Performance appraisal system",
+          "C": "Organisational hierarchy",
+          "D": "Strategic communication channels"
+        },
+        "correct_option_label": "A",
+        "explanation": "Key Performance Indicators (KPIs) act as the link between broad strategic goals and concrete, trackable operational metrics.",
+        "module": 8
+      },
+      {
+        "question_id": "M8_Q9",
+        "question_text": "A firm implements new digital tools for tracking performance but sees no improvement What could be the reason",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Misalignment between digital tools and cultural adoption",
+          "B": "Lack of manager capability to use data eectively",
+          "C": "Overreliance on technology instead of training",
+          "D": "Overdependence on consultants"
+        },
+        "correct_option_label": "A",
+        "explanation": "Technology alone cannot improve performance if the organization's culture and people are not aligned to utilize it.",
+        "module": 8
+      },
+      {
+        "question_id": "M8_Q10",
+        "question_text": "A diversified company’s divisions are competing for funds and customers Which contr ol mechanism would help align them",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Corporate-level resource allocation and governance",
+          "B": "alanced Scor ecard integration",
+          "C": "Autonomous divisional planning systems",
+          "D": "Greater centralisation of authority"
+        },
+        "correct_option_label": "A",
+        "explanation": "At the corporate level, management must govern and allocate resources across units to ensure collective organizational goals are prioritized over unit competition.",
+        "module": 8
+      }
+    ]
+  }

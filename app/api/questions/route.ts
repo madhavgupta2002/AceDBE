@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { getTermForSubject } from '@/lib/subjectMapping';
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
@@ -16,6 +17,10 @@ export async function GET(request: NextRequest) {
   }
 
   try {
+    // Get the term for this subject to find the correct folder
+    const term = getTermForSubject(subjectCode);
+    const termFolder = `Term ${term}`;
+
     // Construct filename - now just the bank name
     const filename = `${bankName}.json`;
     const filePath = path.join(
@@ -23,6 +28,7 @@ export async function GET(request: NextRequest) {
       'public',
       'data',
       bankType,
+      termFolder,
       subjectCode,
       filename
     );

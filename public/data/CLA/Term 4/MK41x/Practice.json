@@ -1,0 +1,302 @@
+{
+  "exam_metadata": {
+    "subject_name": "Digital Marketing Strategy",
+    "exam_date": "Practice Questions"
+  },
+  "questions": [
+    {
+      "question_id": "MK41x_M1_Q1",
+      "question_text": "Where in the diagram above does this example fit in?\n\n\"A healthcare startup decides to focus only on urban hospitals rather than rural clinics due to higher adoption of digital tools.\"",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Market Selection",
+        "B": "Distributing services",
+        "C": "Build Customer Relationships",
+        "D": ""
+      },
+      "correct_option_label": "A",
+      "explanation": "Market selection involves focusing efforts where digital adoption (and business potential) is greatest.",
+      "module": 1
+    },
+    {
+      "question_id": "MK41x_M1_Q2",
+      "question_text": "Where in the diagram above does this example fit in?\n\n\"Netflix uses tiered pricing (mobile-only, standard, premium) to match different customer willingness to pay.\"",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Sales Promotion",
+        "B": "Value Positioning",
+        "C": "Pricing",
+        "D": ""
+      },
+      "correct_option_label": "C",
+      "explanation": "Tiered offerings map to Pricing, allowing capture of different segments based on willingness to pay.",
+      "module": 1
+    },
+    {
+      "question_id": "MK41x_M1_Q3",
+      "question_text": "You can use this template as a guide to the simple editor markdown and OLX markup to use for multiple choice problems. Edit this component to replace this template with your own assessment.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "an incorrect answer",
+        "B": "the correct answer",
+        "C": "an incorrect answer",
+        "D": ""
+      },
+      "correct_option_label": "B",
+      "explanation": "The correct answer is explicitly marked (tick) as the template suggests.",
+      "module": 1
+    },
+    {
+      "question_id": "MK41x_M1_Q4",
+      "question_text": "Two companies in the ride-hailing industry adopt different competitive approaches:\n\nCompany A invests in expanding the overall market by improving service quality, onboarding new drivers, and creating new customer use cases.\n\nCompany B focuses on aggressive price cuts and driver incentives aimed solely at taking customers away from competitors.\n\nWhich option best explains the competitive logic followed by Company A and Company B?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Company A follows positive-sum competition, while Company B follows zero-sum competition",
+        "B": "Company A follows zero-sum competition, while Company B follows positive-sum competition",
+        "C": "Both companies follow zero-sum competition because they operate in the same industry",
+        "D": "Both companies follow positive-sum competition because customers benefit in both cases"
+      },
+      "correct_option_label": "A",
+      "explanation": "Positive-sum focuses on market growth, while zero-sum aims to take directly from competitors.",
+      "module": 1
+    },
+    {
+      "question_id": "MK41x_M2_Q1",
+      "question_text": "A hotel focuses on publishing blog articles, FAQs, comparison charts, and ensures positive reviews across Google and TripAdvisor to help customers evaluate options rationally.\n\nWhich stage of the customer journey is being addressed?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Dreaming",
+        "B": "Research / Planning",
+        "C": "Stay / Experiencing",
+        "D": ""
+      },
+      "correct_option_label": "B",
+      "explanation": "Research / Planning is the stage where customers rationally evaluate and compare options.",
+      "module": 2
+    },
+    {
+      "question_id": "MK41x_M2_Q2",
+      "question_text": "Which of the following actions is most appropriate for the Dreaming stage?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Running influencer collaborations and aspirational content",
+        "B": "Sending service feedback surveys",
+        "C": "Offering loyalty discounts to past guests",
+        "D": ""
+      },
+      "correct_option_label": "A",
+      "explanation": "Dreaming stage requires aspirational, inspirational marketing like influencer collaborations.",
+      "module": 2
+    },
+    {
+      "question_id": "MK41x_M2_Q3",
+      "question_text": "Ravi sees an advertisement for a new smartphone on Instagram. Before making a purchase, he searches on Google, reads reviews on e-commerce websites, watches YouTube videos, and compares prices online. This stage of the buying process is called:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Zero Moment of Truth (ZMOT)",
+        "B": "First Moment of Truth (Point of Sale / Shelf)",
+        "C": "Second Moment of Truth (Post-purchase experience)",
+        "D": ""
+      },
+      "correct_option_label": "A",
+      "explanation": "Zero Moment of Truth refers to the research/evaluation phase before purchase.",
+      "module": 2
+    },
+    {
+      "question_id": "MK41x_M3_Q1",
+      "question_text": "A health-tech startup launches a new fitness app but notices that users scroll past its ads without engaging. Research shows users are interested in fitness but view ads while commuting and have very limited time and attention.\n\nWhich factor should the startup focus on MOST to improve communication effectiveness?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Increasing message complexity to convey detailed information",
+        "B": "Enhancing modality and executional characteristics for quick processing",
+        "C": "Strengthening source credibility with expert endorsements only",
+        "D": "Increasing brand information across all touchpoints"
+      },
+      "correct_option_label": "B",
+      "explanation": "Quick, easily processed ads (simple, visual) work best for distracted users.",
+      "module": 3
+    },
+    {
+      "question_id": "MK41x_M3_Q2",
+      "question_text": "A fintech startup sees 50,000 ad impressions, 5,000 clicks, but only 50 sign-ups.\n\nWhat does this MOST clearly indicate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The ad creative is ineffective",
+        "B": "The targeting is completely wrong",
+        "C": "The conversion funnel has friction after the click",
+        "D": "The impressions are too low"
+      },
+      "correct_option_label": "C",
+      "explanation": "Good clicks but poor sign-ups suggest post-click friction in the funnel.",
+      "module": 3
+    },
+    {
+      "question_id": "MK41x_M3_Q3",
+      "question_text": "A startup runs a display ad campaign with the following data:\n\nTotal Impressions = 2,000,000\nTotal Clicks = 1,000\nTotal Purchases = 50\n\nWhat are the Click-Through Rate (CTR) and Transaction Conversion Rate (TCR)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "CTR = 0.05%, TCR = 2%",
+        "B": "CTR = 0.5%, TCR = 5%",
+        "C": "CTR = 0.05%, TCR = 5%",
+        "D": "CTR = 5%, TCR = 0.05%"
+      },
+      "correct_option_label": "C",
+      "explanation": "CTR and TCR are calculated from clicks/impressions and purchases/clicks respectively.",
+      "module": 3
+    },
+    {
+      "question_id": "MK41x_M3_Q4",
+      "question_text": "A display campaign reports the following:\n\nMedia Spend = $50,000\nTotal Purchases = 200\nMargin per purchase = $400\n\nWhat is the Display Ad Return and ROA?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Return = $80,000; ROA = 160%",
+        "B": "Return = $30,000; ROA = 60%",
+        "C": "Return = $50,000; ROA = 100%",
+        "D": "Return = $20,000; ROA = 40%"
+      },
+      "correct_option_label": "A",
+      "explanation": "Return is margin per purchase times purchases, ROA is return relative to spend.",
+      "module": 3
+    },
+    {
+      "question_id": "MK41x_M4_Q1",
+      "question_text": "What kind of content does A and B represent in the diagram above?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A-Inspire and B-Educate",
+        "B": "A-Educate and B-Inspire",
+        "C": "A-Educate and B-Promotional",
+        "D": ""
+      },
+      "correct_option_label": "A",
+      "explanation": "A is content that inspires, B is content that educates, as per the labels.",
+      "module": 4
+    },
+    {
+      "question_id": "MK41x_M4_Q2",
+      "question_text": "A brand launching a new cordless hair straightener notices many website visitors view the product page but don’t buy. Which action best targets the Leads → Clients stage?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Run broad YouTube awareness ads",
+        "B": "Offer a limited-time coupon + free heat-protect spray at checkout",
+        "C": "Publish “How to choose a straightener” blog posts",
+        "D": "Ask existing customers to share referrals"
+      },
+      "correct_option_label": "B",
+      "explanation": "A limited-time coupon plus freebie directly incentivizes conversions from leads to clients.",
+      "module": 4
+    },
+    {
+      "question_id": "MK41x_M4_Q3",
+      "question_text": "A hair tools brand wants to appear in AI answers for: “Best hair dryer for frizzy hair under ₹3,000?” Which action best demonstrates GEO?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Publish a structured guide with a comparison table, “best for” bullets, and FAQs",
+        "B": "Increase keyword density on the product page and buy backlinks",
+        "C": "Run Instagram influencer reels to boost awareness",
+        "D": "Add pop-ups to collect emails from visitors"
+      },
+      "correct_option_label": "A",
+      "explanation": "Structured, comprehensive guides help brands appear in AI-generated and search answers.",
+      "module": 4
+    },
+    {
+      "question_id": "MK41x_M5_Q1",
+      "question_text": "A new airline brand wants to reach a large audience and make people aware of its services for the first time. Which stage of the engagement funnel should it focus on first?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Preference",
+        "B": "Convert / Purchase",
+        "C": "Awareness",
+        "D": "Loyalty"
+      },
+      "correct_option_label": "C",
+      "explanation": "For new brands, building top-of-funnel awareness is the first priority.",
+      "module": 5
+    },
+    {
+      "question_id": "MK41x_M5_Q2",
+      "question_text": "A new shampoo brand wants to reach many people and make them aware of the product for the first time. Which stage of the engagement funnel should it focus on?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Loyalty",
+        "B": "Convert / Purchase",
+        "C": "Awareness",
+        "D": "Preference"
+      },
+      "correct_option_label": "C",
+      "explanation": "Initial marketing for new products should be focused on Awareness.",
+      "module": 5
+    },
+    {
+      "question_id": "MK41x_M6_Q1",
+      "question_text": "A digital fitness app encourages users to create workout playlists, share progress on social media, and customize training plans using their own data. The company observes that users who actively create and share content remain engaged longer and generate higher subscription renewals.\n\nWhich of the following best explains how the firm’s performance is improved in this scenario?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Customer engagement marketing directly increases firm performance without customer participation",
+        "B": "Firm performance improves only due to increased advertising spend",
+        "C": "Customer-owned resources strengthen the impact of customer engagement on firm performance",
+        "D": "Customer engagement has no role once customer-owned resources are involved"
+      },
+      "correct_option_label": "C",
+      "explanation": "Customer-owned resources (content, participation) boost engagement’s impact on firm results.",
+      "module": 6
+    },
+    {
+      "question_id": "MK41x_M6_Q2",
+      "question_text": "If a firm wants to maximize CEV by improving only one component, which of the following actions best aligns with increasing Customer Referral Value (CRV)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Launching a referral reward program to encourage existing customers to bring in new ones",
+        "B": "Increasing the average duration a customer stays with the company",
+        "C": "Collecting feedback to improve product design",
+        "D": "Creating an influencer campaign on social media"
+      },
+      "correct_option_label": "A",
+      "explanation": "Referral reward programs are directly targeted at increasing the number of referrals (CRV).",
+      "module": 6
+    },
+    {
+      "question_id": "MK41x_M6_Q3",
+      "question_text": "In the customer engagement process shown, predictive models are used to determine the \"next best engagement.\" This step is most directly aligned with which of the following business objectives?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Managing inventory and logistics",
+        "B": "Churn reduction and winback strategies",
+        "C": "Reducing website bounce rate only",
+        "D": ""
+      },
+      "correct_option_label": "B",
+      "explanation": "Next best engagement aids retention and regaining lost (churned) customers.",
+      "module": 6
+    },
+    {
+      "question_id": "MK41x_M6_Q4",
+      "question_text": "Which of the following sequences best represents the cyclical process of design and learning starting from concrete experience?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "See and Experience → Reflect and Observe → Test and Shape → Imagine and Model",
+        "B": "See and Experience → Dimension and Diagram → Question and Reframe → Test and Shape",
+        "C": "See and Experience → Dimension and Diagram → Imagine and Model → Test and Shape",
+        "D": "See and Experience → Dimension and Diagram → Question and Reframe → Imagine and Model"
+      },
+      "correct_option_label": "C",
+      "explanation": "The correct cyclical process is: concrete, abstract, creative, test and shape.",
+      "module": 6
+    },
+    {
+      "question_id": "MK41x_M6_Q5",
+      "question_text": "What is the \"?\" in the diagram?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Market Penetration in a New Market",
+        "B": "Market Development",
+        "C": "Product Withdrawal",
+        "D": ""
+      },
+      "correct_option_label": "B",
+      "explanation": "\"Market Development\" is the strategic move depicted by the ? in the diagram.",
+      "module": 6
+    }
+  ]
+}

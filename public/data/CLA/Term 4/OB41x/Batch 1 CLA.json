@@ -1,0 +1,1392 @@
+{
+    "exam_metadata": {
+      "subject_name": "People, Work, and Organisation",
+      "exam_date": "Batch 1 CLA"
+    },
+    "questions": [
+      {
+        "question_id": "M1Q1",
+        "question_text": "A person is watching an educational video while the AC hums, traffic noise seeps in, and family members talk nearby. Yet the person remains focused on the content. Which sequences best captures the internal process described?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Detect all stimuli → respond equally to all → fatigue",
+          "B": "Detect stimuli → randomly select one → ignore all others",
+          "C": "Detect multiple stimuli → selectivley attend to some → organise and interpret them → give meaning while filtering out others",
+          "D": "Ignore all external stimuli → rely only on memory"
+        },
+        "correct_option_label": "C",
+        "explanation": "This sequence describes the stages of perception where an individual filters out distractions to focus on and interpret specific relevant information.",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q2",
+        "question_text": "A manager concludes \"Rohan is careless and disrespectful\", without first exploring whether norms and expectations had been clearly communicated or whether roles had recently changed. From a perceptual standpoint, what is the deepest problem with this conclusion?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "It ignores that attitudes, past experience, and expectations shape what is noticed and how behaviour is interpreted",
+          "B": "It assumes perception is purely sensory, not interpretive",
+          "C": "It treats communication as more critical than perception",
+          "D": "It assumes that norms never matter"
+        },
+        "correct_option_label": "A",
+        "explanation": "The manager's conclusion is biased as it fails to account for external factors and personal framing that influence how behavior is perceived and judged.",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q3",
+        "question_text": "A colleague who is usually punctual to every meeting arrives 20 minutes late one day and seems flustered. You immediately think, \"Something serious must have happened on the way.\" According to the attribution logic, which pattern of information is most likely driving your judgement?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Low distinctiveness, high consensus, low consistency",
+          "B": "High distinctiveness, low consensus, high consistency",
+          "C": "High distinctiveness, low consensus, low consistency",
+          "D": "Low distinctiveness, low consensus, high consistency"
+        },
+        "correct_option_label": "C",
+        "explanation": "External attribution occurs when the behavior is unusual for the person (high distinctiveness), others are not late (low consensus), and it is not their regular habit (low consistency).",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q4",
+        "question_text": "A team is trained on the distinctiveness-consensus-consistency framework. One member claims: \"As long as consistency is high, we should always treat behaviour as caused by the individual.\" Based on the explanation given, what is the best critique of this statement?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "It is correct beacuse consistency alone determines attribution",
+          "B": "It is incorrect because high consistency must always mean an external cause",
+          "C": "It is irrelevant because attribution does not use any of these three elements",
+          "D": "It is incomplete because consistency must be interpreted together with distinctivness and consensus to decide between internal and external causes"
+        },
+        "correct_option_label": "D",
+        "explanation": "Attribution requires analyzing all three factors (consistency, distinctiveness, and consensus) together to accurately determine the cause of behavior.",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q5",
+        "question_text": "Which statement best captures the distinction between content and process theories of motivation?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Content theories explain how motivation operates over time; process theories list types of needs",
+          "B": "Content theories ask “what” motivates people (needs, motives), whereas process theories ask “how” motivation occurs (the mechanisms and sequences)",
+          "C": "Both content and process theories only study salary as a motivator",
+          "D": "Process theories ignore behaviour and focus on personality"
+        },
+        "correct_option_label": "B",
+        "explanation": "Content theories focus on identifying the specific factors or needs that motivate individuals, while process theories examine the cognitive mechanisms behind the motivation.",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q6",
+        "question_text": "Which of the following aligns most closely with Alderfer’s modification of Maslow’s hierarchy?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Needs must always be satisfied strictly from physiological to self-actualisation without overlap",
+          "B": "Only growth needs matter in organisations; existence and relatedness are irrelevant",
+          "C": "Regression in needs is impossible once growth has begun",
+          "D": "Needs are collapsed into existence, relatedness, and growth, can operate simultaneously, and people may regress when frustrated"
+        },
+        "correct_option_label": "D",
+        "explanation": "Alderfer's ERG theory simplifies needs and acknowledges that multiple needs can be active at once and individuals can move backwards (frustration-regression).",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q7",
+        "question_text": "A large multinational offers excellent pay, security, and facilities, yet new graduates often leave within a year, saying, “The work is boring; I don’t feel I’m growing.” Which integrated conclusion best explains this pattern?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Hygiene factors like salary and conditions eliminate dissatisfaction but do not by themselves create strong, sustained motivation",
+          "B": "High hygiene automatically guarantees long-term engagement",
+          "C": "Content theories ignore such situations",
+          "D": "Only process theories can explain early attrition"
+        },
+        "correct_option_label": "A",
+        "explanation": "Based on Herzberg's theory, environmental factors (hygiene) prevent dissatisfaction but only motivators like growth and challenging work lead to job satisfaction.",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q8",
+        "question_text": "A high-performing employee believes she deserved a promotion but was passed over. After reviewing the talent-identification process, she concludes that multiple leaders applied clear, consistent criteria and that some colleagues matched those criteria more closely this year. She still feels disappointed but says, “The system is fair; I just need to improve.” Which outcome does this reaction exemplify?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Lack of distributive justice and system satisfaction",
+          "B": "Strong system satisfaction from procedural justice, despite limited distributive justice",
+          "C": "Breakdown of interactional justice",
+          "D": "Complete loss of trust in the organisation"
+        },
+        "correct_option_label": "B",
+        "explanation": "Even though the outcome was unfavorable (low distributive justice), the employee accepts it because she views the decision-making process as transparent and fair (high procedural justice).",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q9",
+        "question_text": "According to Vroom’s model, which motivation statement is most accurate?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "High motivation requires either expectancy or valence to be high, but not both",
+          "B": "Motivation is additive: expectancy + instrumentality + valence",
+          "C": "Motivation is multiplicative, so if any one of expectancy, instrumentality or valence is effectively zero, overall motivation collapses",
+          "D": "Motivation depends only on valence, not on beliefs about effort or performance"
+        },
+        "correct_option_label": "C",
+        "explanation": "Vroom's Expectancy Theory posits that motivation is a product of three variables; if any variable is absent, total motivation is zero.",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q10",
+        "question_text": "A startup founder wants to “motivate” employees and is torn between increasing salaries slightly or redesigning roles to include more autonomy, client ownership, feedback, and visible impact. Using the closing link between content and process theories in the lecture, which reasoning is strongest?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Only salary changes matter: job design has no motivational effect",
+          "B": "Job redesign that enriches responsibility and feedback can activate intrinsic motives (content side), while well-structured rewards and recognition systems apply process theories like expectancy and reinforcement",
+          "C": "Extrinsic rewards make process theories unnecessary",
+          "D": "Content theories and process theories should never be used together"
+        },
+        "correct_option_label": "B",
+        "explanation": "Combining job enrichment with fair rewards addresses both the 'what' (intrinsic needs) and 'how' (reinforcement mechanics) of employee motivation.",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q11",
+        "question_text": "Which accurately distinguishes programmed from non-programmed and strategic from operational decisions?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Programmed = routine/repetitive/rule-based (e.g., weekly reordering); non-programmed = unique/new (e.g., new market entry); strategic = long-term impact (e.g., geographic expansion); operational = daily execution (e.g., staff scheduling)",
+          "B": "Programmed = unique/unstructured; strategic = day-to-day execution",
+          "C": "Strategic always requires more time than operational",
+          "D": "Non-programmed decisions have no trade-offs"
+        },
+        "correct_option_label": "A",
+        "explanation": "This distinction separates decisions based on their frequency/predictability (programmed vs non-programmed) and their level of impact/timeline (strategic vs operational).",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q12",
+        "question_text": "Which accurately captures the core characteristics and trade-offs of System 1 vs. System 2 thinking?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "System 1 = deliberate/slow/accurate but effortful; System 2 = automatic/quick/intuitive",
+          "B": "Both systems are always equally effortful",
+          "C": "System 1 = automatic/intuitive/quick (e.g., recognising a friend) but risks snap errors; System 2 = deliberate/analytical/effortful (e.g., market entry) but more accurate",
+          "D": "System 2 operates only for programmed decisions"
+        },
+        "correct_option_label": "C",
+        "explanation": "System 1 is fast and reflexive, useful for immediate tasks but prone to bias, while System 2 is slow and logical, necessary for complex problem-solving.",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q13",
+        "question_text": "You're interviewing candidates and notice left-handers like Da Vinci and Hendrix; you prefer them, assuming creativity. A colleague has challenges with right-handed creators. What bias explains your preference, and how should you counter it per the guidance?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Self-serving bias; ignore the challenge",
+          "B": "Halo effect; distorts perceptions",
+          "C": "Anchoring: change your reference group",
+          "D": "Confirmation bias (favouring info confirming preconceptions); actively seek disconfirming evidence"
+        },
+        "correct_option_label": "D",
+        "explanation": "The preference results from confirmation bias, which can be mitigated by intentionally looking for evidence that contradicts one's preconceived notions.",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q14",
+        "question_text": "Which accurately summarises the intuitive method for predicting others' behaviour?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Observe phenomena → ignore data → guess randomly → predict",
+          "B": "Observe phenomena → collect data → identify patterns → build heuristics → predict future behaviour",
+          "C": "Focus only on current mood → immediate reaction",
+          "D": "Avoid past experiences entirely"
+        },
+        "correct_option_label": "B",
+        "explanation": "Intuition in predicting behavior relies on systematic observation and the development of mental shortcuts (heuristics) based on past patterns.",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q15",
+        "question_text": "Which accurately captures the layered personality metaphor and its progression?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Outermost = behaviours → attitudes/beliefs → values (deeper layers), like peeling an onion to reveal core drivers",
+          "B": "Outermost = values → attitudes/beliefs → behaviours (deepest)",
+          "C": "All layers are equal and interchangeable",
+          "D": "The iceberg metaphor shows behaviours as the largest visible part"
+        },
+        "correct_option_label": "A",
+        "explanation": "The onion metaphor suggests that visible behaviors are driven by progressively deeper and more stable layers of attitudes and core values.",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q16",
+        "question_text": "You misjudge a colleague's firm tone as rudeness, later learning it stemmed from repeated project failures. Integrating the onion metaphor and bias warning, what holistic takeaway guides future people management?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Surface behaviours alone suffice for feedback",
+          "B": "Never give feedback on behaviours",
+          "C": "All judgments are permanent",
+          "D": "Behaviours (outer layer) trigger intuitive biases; peel to attitudes/context for accurate diagnosis, self-reflection, and adjusted engagement"
+        },
+        "correct_option_label": "D",
+        "explanation": "Management requires looking beyond surface-level actions to understand underlying motivations and context to avoid inaccurate snap judgments.",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q17",
+        "question_text": "You judge a colleague \"difficult to work with\" after one interaction, leading to avoidance. Reflecting, you realise this judgment shapes future engagements. Per the discussion, what process perpetuates this, and how should you counter it?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Temporary behaviour; ignore it",
+          "B": "Attitude formation (judgment about a person) reinforced by selective info supporting the belief; seek disconfirming evidence and context",
+          "C": "Superstition; use nudges",
+          "D": "Values conflict; change their role"
+        },
+        "correct_option_label": "B",
+        "explanation": "Negative attitudes are often sustained by focusing only on information that confirms them; managers should actively seek contradictory evidence to break this cycle.",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q18",
+        "question_text": "According to the onion/iceberg logic, how do values relate to attitudes/beliefs and behaviours?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Values are outermost; behaviours are deepest",
+          "B": "Values and behaviours are identical",
+          "C": "Attitudes determine values, not the other way around",
+          "D": "Values are a core layer; they shape enduring attitudes/beliefs, which in turn manifest in visible behaviours"
+        },
+        "correct_option_label": "D",
+        "explanation": "Values act as the fundamental core that dictates how an individual perceives the world (attitudes) and subsequently acts (behaviors).",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q19",
+        "question_text": "An employee says, “My pay is low,” and feels upset that friends earn more, yet does not apply elsewhere and continues to work. Which interpretation fits the three-component attitude model?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "cognition (“pay is low”) and affect (“friends get more”) signal dissatisfaction, but the behavioural intention to act (quit/search) is not yet aligned",
+          "B": "cognitive, affective, and behavioural components are fully aligned",
+          "C": "only behaviour matters; thoughts and feelings are irrelevant",
+          "D": "There is no attitude here, only behaviour"
+        },
+        "correct_option_label": "A",
+        "explanation": "This illustrates a case where the thinking (cognition) and feeling (affect) components of an attitude do not yet match the final action (behavior).",
+        "module": 1
+      },
+      {
+        "question_id": "M1Q20",
+        "question_text": "According to the model, which sequence correctly describes the three components of an attitude?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "behavioural (what I do) → affective (how I feel) → cognitive (what I think)",
+          "B": "cognitive (opinions/beliefs) → affective (feelings/emotions) → behavioural (intention/action)",
+          "C": "affective → behavioral only",
+          "D": "cognitive only"
+        },
+        "correct_option_label": "B",
+        "explanation": "Attitudes typically form through a progression from a belief or thought to an emotional response, leading to a specific intention or action.",
+        "module": 1
+      },
+      {
+        "question_id": "M2Q1",
+        "question_text": "A 17-year-old describes their weekly life as: school, playing for a local football club, volunteering at a temple, and visiting a swimming pool-run academy. Based on the framing used, which is the most accurate interpretation of their context?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "They are surrounded only by government institutions",
+          "B": "They are continuously interacting with multiple organisations that create products/services and structure activities",
+          "C": "Only their school truly counts as an organisation",
+          "D": "Organisations are limited to profit-making companies"
+        },
+        "correct_option_label": "B",
+        "explanation": "Everyday life involves constant interaction with various structured entities, whether educational, social, or recreational, which are all organizations.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q2",
+        "question_text": "Which definition best reflects what an organisation is?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "A random collection of people in one place",
+          "B": "Any group of friends meeting socially",
+          "C": "Only entities created for profit",
+          "D": "A deliberate arrangement where tasks are grouped and delegated to people with relevant specialisation, with roles, authority and responsibilities coordinated to achieve a shared purpose"
+        },
+        "correct_option_label": "D",
+        "explanation": "An organization is defined by its intentional structure and the coordination of specialized roles to reach a specific common objective.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q3",
+        "question_text": "You are mapping stakeholders for Domino’s, but list only “employees” and “customers.” What is the most substantial improvement to make this map more useful for people, work, and organisational decisions?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Remove customers and keep employees only",
+          "B": "Differentiate internal roles (e.g., marketing, sales, delivery, production, managers) and add external actors (government, competitors, financiers) because their stakes and expectations differ",
+          "C": "Focus only on government regulations",
+          "D": "Include only shareholders as a generic category"
+        },
+        "correct_option_label": "B",
+        "explanation": "Effective stakeholder mapping requires identifying specific internal subgroups and external entities whose diverse interests impact the organization.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q4",
+        "question_text": "You manage a local Domino’s outlet on a rainy Saturday evening. Online orders spike, walk-ins increase, and you must still uphold the 30-minute delivery promise. From the description of Domino’s operations, which managerial focus is most critical at this moment?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Coordinating tasks (order-taking, baking, dispatch, stock use) so that product, process and service standards set by the franchiser are maintained despite demand variability",
+          "B": "Relying only on the headquarters’ brand image",
+          "C": "Ignoring online orders to prioritise walk-ins",
+          "D": "Stopping deliveries until the rain clears"
+        },
+        "correct_option_label": "A",
+        "explanation": "In high-demand periods, the manager's primary role is to coordinate various operational functions to ensure quality and service standards are met.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q5",
+        "question_text": "Which description best captures Domino’s India in organisational terms?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "A small local eatery with no formal structure",
+          "B": "An informal group of delivery riders",
+          "C": "A charity with no commercial objectives",
+          "D": "A complex, large quick-service restaurant chain run in India by Jubilant FoodWorks under a franchise arrangement from the US parent"
+        },
+        "correct_option_label": "D",
+        "explanation": "Domino's India is a large-scale, formal corporate entity operating under a franchise model, involving complex legal and operational structures.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q6",
+        "question_text": "You reflect on your neighbourhood gym using the input–conversion–output framework. Which analysis fits the description given?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Only the rent paid by the gym owner matters",
+          "B": "Inputs (equipment, trainers, space) → conversion (trainer routines, scheduling, member support) → output (fitness experience and results) that you value enough to stay loyal",
+          "C": "Value is created solely by advertisements, not by service",
+          "D": "There are no identifiable inputs or outputs"
+        },
+        "correct_option_label": "B",
+        "explanation": "The gym adds value by transforming physical and human resources (inputs) into a beneficial fitness experience (output) through organized processes.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q7",
+        "question_text": "Why is “customer loyalty and satisfaction” highlighted when discussing organisational survival and growth?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Because loyal customers signal that the organisation’s value creation (through people, processes and outputs) is actually perceived and appreciated",
+          "B": "Because inputs are unimportant",
+          "C": "Because marketing alone drives all success",
+          "D": "Because regulations demand loyalty"
+        },
+        "correct_option_label": "A",
+        "explanation": "Customer loyalty validates that an organization is successfully creating value, which is essential for long-term sustainability.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q8",
+        "question_text": "Which definition best captures a “stakeholder” in the Domino’s example?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Any person who buys pizza once",
+          "B": "Only shareholders listed on stock exchanges",
+          "C": "Only senior executives",
+          "D": "Anyone who has a stake in the organisation’s actions and outcomes"
+        },
+        "correct_option_label": "D",
+        "explanation": "Stakeholders are all individuals or groups who can affect or are affected by the company's activities, including staff, customers, and regulators.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q9",
+        "question_text": "You are advising a new QSR chain. They plan to focus solely on customer discounts and ignore complaints in consumer forums, assuming “only current buyers matter.” Using the Domino’s example, what is the strongest argument against this approach?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Unresolved complaints can escalate to legal/consumer bodies, turning courts, forums and the broader community into influential stakeholders whose negative perceptions can erode legitimacy and future demand",
+          "B": "Discounts eliminate all reputational risk",
+          "C": "Forums and courts cannot affect perception",
+          "D": "Non-customers will never influence brand outcomes"
+        },
+        "correct_option_label": "A",
+        "explanation": "Ignoring grievances can turn passive groups into active, hostile stakeholders, damaging the company's long-term reputation and legal standing.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q10",
+        "question_text": "Domino’s India offers localised vegetarian and spicy items while promising consistent 30-minute delivery across ~1,900+ outlets and a strong online/app presence. For students of people, work and organisation, what integrated organisational capability does this best illustrate?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Pure dependence on technology alone",
+          "B": "Lack of process because of franchising",
+          "C": "Coordinated planning, organising and control across functions (procurement, kitchen, delivery, tech, marketing) to handle scale, variability in demand, and local preferences under a unified service promise"
+        },
+        "correct_option_label": "C",
+        "explanation": "Success at scale requires integrating diverse departments and processes to deliver a consistent customer experience despite regional variations.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q11",
+        "question_text": "A member of the Jubilant FoodWorks board learns of a proposal to expand Domino’s into a new region. They focus on long-term profitability, regulatory compliance, and overall sustainability, but do not design the store-level operations. Which description best fits their role?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Operational manager responsible for day-to-day execution",
+          "B": "Board member exercising oversight on behalf of shareholders over compliance and long term sustainability/profitability",
+          "C": "Shareholder with no responsibilities",
+          "D": "Delivery staff coordinating orders"
+        },
+        "correct_option_label": "B",
+        "explanation": "Board members focus on high-level strategy and governance to protect shareholder interests, rather than managing daily shop-floor tasks.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q12",
+        "question_text": "You observe a manager who spends time clarifying team targets, arranging training, giving performance feedback, negotiating deadlines, and assigning ownership of key tasks. Which integrated description best fits their core responsibilities?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Ensuring individual technical excellence only",
+          "B": "Avoiding involvement in people's issues",
+          "C": "Focusing only on cost-cutting",
+          "D": "Aligning the team with organisational goals, building people’s ability to perform productively, guiding them through feedback, and ensuring deadlines are met via effective delegation"
+        },
+        "correct_option_label": "D",
+        "explanation": "Effective managers balance the need for results with developing their team's skills and ensuring their work aligns with broader company objectives.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q13",
+        "question_text": "Which set best summarises the four broad activities managers are responsible for?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Planning, marketing, accounting, and selling",
+          "B": "Aligning the team to organisational goals; ensuring people/processes are productive; giving performance and development feedback; ensuring deadlines are met while employees grow their careers",
+          "C": "Hiring, firing, budgeting, and reporting",
+          "D": "Supervising attendance only"
+        },
+        "correct_option_label": "B",
+        "explanation": "Management involves setting direction, optimizing operations, developing people, and ensuring the timely delivery of results.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q14",
+        "question_text": "Why is delegation called a “hallmark” of being an effective manager?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "It lets managers escape accountability",
+          "B": "It eliminates the need for feedback",
+          "C": "It enables managers to get work done through others, distribute responsibilities, and support employees’ growth and development",
+          "D": "It reduces the importance of team goals"
+        },
+        "correct_option_label": "C",
+        "explanation": "Delegation allows managers to scale their impact by empowering others to take on tasks, which simultaneously builds team capability.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q15",
+        "question_text": "Two managers have the same technical background. Manager A focuses on her own deliverables; Manager B spends substantial time aligning team goals, training team members, providing feedback, resolving conflicts, and coordinating across functions. Which is more likely to be considered an effective manager, and why?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Manager A, because technical work is all that matters",
+          "B": "Manager B, because effective management is about coordinating people and processes, getting results through others, and building cooperation and collaboration toward organisational purpose",
+          "C": "Both equally, as roles are identical",
+          "D": "Neither, because only senior leadership manages"
+        },
+        "correct_option_label": "B",
+        "explanation": "True management effectiveness comes from managing collective performance and interpersonal dynamics rather than focusing on individual output.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q16",
+        "question_text": "You are newly promoted first-line manager in a Domino’s store. Most of your day is spent guiding team members in baking, packing and serving, dealing with customers, and coordinating with riders. Which skill mix is most critical at this level?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Conceptual skills only",
+          "B": "Technical and interpersonal skills, because you must do the job well and work closely with people and customers",
+          "C": "Diagnostic skills only",
+          "D": "Legal and lobbying skills"
+        },
+        "correct_option_label": "B",
+        "explanation": "First-line managers need technical knowledge to supervise operations and strong interpersonal skills to interact directly with staff and customers.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q17",
+        "question_text": "You move from a store manager role to a regional head overseeing 25 outlets. You now rarely bake pizzas yourself but must anticipate operational bottlenecks, interpret market changes and support outlet managers in solving complex problems. How does the relative importance of your skills shift?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Technical skills increase; diagnostic and conceptual skills decrease",
+          "B": "Interpersonal skills disappear",
+          "C": "Diagnostic and conceptual skills become more central, while technical details can be obtained from others",
+          "D": "Only technical skills matter"
+        },
+        "correct_option_label": "C",
+        "explanation": "As managers rise in hierarchy, they rely more on analytical and strategic thinking (conceptual) while delegating specific technical tasks.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q18",
+        "question_text": "Which definition of work is correct?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Any activity done only for money",
+          "B": "Effortful, productive activity that results in a product or service",
+          "C": "Only tasks assigned by a formal employer",
+          "D": "Activities that others approve of"
+        },
+        "correct_option_label": "B",
+        "explanation": "Work is broadly defined as any purposeful effort that creates value or useful outcomes, regardless of whether it is paid.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q19",
+        "question_text": "How is “job” distinguished from “work”?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Work is any effortful productive activity; a job is work performed in a formal organisational context where specific tasks/activities are assigned with expectations toward organisational outcomes (often monetised)",
+          "B": "Job refers only to creative professions",
+          "C": "Work must be unpaid; job must be paid",
+          "D": "Job and work are exact synonyms"
+        },
+        "correct_option_label": "A",
+        "explanation": "While 'work' is a general activity, a 'job' refers specifically to a formalized role within an organization with specific duties and rewards.",
+        "module": 2
+      },
+      {
+        "question_id": "M2Q20",
+        "question_text": "Younger people are increasingly drawn to hobbies and entrepreneurial projects that give them personal and social meaning, while families may not see these as “real work.” What is the most helpful way to interpret this tension?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Younger people reject the concept of work",
+          "B": "Only the elders’ definition of work is valid",
+          "C": "Meaning has no role in how we define work",
+          "D": "It reflects differing mental models and meanings of work (beyond traditional jobs), requiring explicit reflection and dialogue about how various activities meet the core definition"
+        },
+        "correct_option_label": "D",
+        "explanation": "Societal perceptions of work evolve; understanding these different perspectives requires communication about value and purpose beyond traditional employment.",
+        "module": 2
+      },
+      {
+        "question_id": "M3Q1",
+        "question_text": "You are a newly promoted team lead with five direct reports. During a weekly check-in, one employee shares their career aspirations while struggling with a deadline. According to the expanded role of managers beyond traditional tasks, your most comprehensive response would involve:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Delegating the deadline task to another team member without discussion.",
+          "B": "Reporting the issue to HR for staffing adjustments.",
+          "C": "Providing one-on-one coaching, feedback, and guidance on career goals alongside task coordination.",
+          "D": "Budgeting extra hours for the employee to complete the work alone."
+        },
+        "correct_option_label": "C",
+        "explanation": "Modern management involves balancing operational task delivery with personal coaching and career development for team members.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q2",
+        "question_text": "As a department head, your day starts with a supplier dispute, shifts to a team crisis over missed deliverables, includes a peer meeting, and ends with a customer call-all fragmented and fast-paced. This routine primarily highlights manager's:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Preference for written reports over oral exchanges.",
+          "B": "Heavy involvement in crisis management, conflict resolution, and quick context switches.",
+          "C": "Slow, reflective planning without interruptions.",
+          "D": "Exclusive focus on direct reports, avoiding external contacts."
+        },
+        "correct_option_label": "B",
+        "explanation": "Managerial work is characterized by high variety, fragmentation, and brevity, requiring frequent shifts between different types of urgent problems.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q3",
+        "question_text": "As a manager, you notice your calendar is packed with appointments, leading to constant firefighting after minor issues escalate unnoticed, then reverting to routine busyness. This cycle matches the description of:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Managing on autopilot, creating false security where problems fester, explode, and pull you into reactive mode.",
+          "B": "Mindful reflection, breaking the vicious autopilot loop.",
+          "C": "Balanced communication limited to vertical interactions.",
+          "D": "Low-pressure work with ample time for reading and writing."
+        },
+        "correct_option_label": "A",
+        "explanation": "This describes the 'activity trap' where managers become so busy with routines that they lose proactive awareness and only react to crises.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q4",
+        "question_text": "You observe one manager resolving team conflicts proactively with feedback while another escalates them, both using similar situations but differing in approach, achieving equal effectiveness through personal strengths. This scenario demonstrates people management as:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Pure science with reproducible, uniform outcomes regardless of personality.",
+          "B": "Common sense needs no attention or training.",
+          "C": "An art excluding enduring rules or hypotheses.",
+          "D": "A craft blending science principles and individual artistry for signature styles."
+        },
+        "correct_option_label": "D",
+        "explanation": "Management is a craft because it uses established principles (science) but requires individual judgment and personal style (art) for execution.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q5",
+        "question_text": "Amid activity traps where tasks dominate, managers forget to ask how they add value to themselves, underscoring that without mindfulness, they overlook people management's foundation as:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Unimportant compared to technical training.",
+          "B": "Simplistic common sense everyone possesses naturally.",
+          "C": "An unintended outcome of daily activities alone.",
+          "D": "A science with rules, hypotheses, and principles like delegation applicable across contexts."
+        },
+        "correct_option_label": "D",
+        "explanation": "Mindful management recognizes that while it requires personal style, it is grounded in systematic rules and principles that can be studied and applied.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q6",
+        "question_text": "Studies on great managers, including Google's Project Oxygen, reveal that beyond varied \"laundry lists,\" effective leaders share:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Unique traits varying by organisation without overlap.",
+          "B": "Attributes needing five-point or more detailed rating scales.",
+          "C": "Core characteristics corroborated across multiple research studies.",
+          "D": "Qualities assessed only through other's feedback, not self-reflection."
+        },
+        "correct_option_label": "C",
+        "explanation": "Research across various organizations consistently identifies a shared set of essential management behaviors that drive high performance.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q7",
+        "question_text": "As a software services manager surveyed by NASCOM in 2016-17, you note rising AI automation, young employee aspirations, and competitor collaborations changing hiring and strategy. These findings confirm that external changes consistently impact:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Managers through varying intensities across all organisations.",
+          "B": "Isolated sectors without cross-industry patterns.",
+          "C": "Uniform effects regardless of nation or business type.",
+          "D": "Only employee demographics without regulatory influence."
+        },
+        "correct_option_label": "A",
+        "explanation": "Macro-environmental shifts in technology and society force managers in all organizations to adapt their strategies and people practices.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q8",
+        "question_text": "Over the last 5 years, your organisation has shifted from siloed departments chasing fixed targets to cross-team collaboration and quick experimentation on new delivery models amid regulatory changes. As a manager, this requires you to:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Foster collaboration, innovation, and agile planning with multiple contingency options.",
+          "B": "Maintain autopilot execution without revisiting goals.",
+          "C": "Enforce stricter departmental isolation for efficiency.",
+          "D": "Prioritise routinization over environmental anticipation."
+        },
+        "correct_option_label": "A",
+        "explanation": "Changing environments require managers to abandon rigid structures in favor of flexible, collaborative work styles and proactive planning.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q9",
+        "question_text": "Innovation as challenging status quo- improving what works, fixing what doesn't pairs with essential skills like deep listening to access:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Multiple perspectives for informed decisions and alternative ideas.",
+          "B": "Dismissal of challenging viewpoints.",
+          "C": "Fear-free participation stifled by biases.",
+          "D": "Single hierarchical viewpoint dominance."
+        },
+        "correct_option_label": "A",
+        "explanation": "Innovation requires managers to listen deeply to various viewpoints to find better ways to operate and avoid stagnant decision-making.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q10",
+        "question_text": "As a first-time technical manager, you fear delegating a strategy proposal, fearing replacement, but holding it plateaus your growth while freeing time for higher priorities if delegated right. Effective delegation requires:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Retaining all competence to avoid direct reports excelling.",
+          "B": "Explaining only under non-tight deadlines.",
+          "C": "Trust, ownership transfer, and continuous personal growth post-delegation.",
+          "D": "Walking away without support or clarity."
+        },
+        "correct_option_label": "C",
+        "explanation": "Success in delegation comes from trusting employees with real responsibility while the manager focuses on developing new strategic capabilities.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q11",
+        "question_text": "Managers commonly err by delegating tasks they dislike, creating a culture where reports mimic avoidance, undermining:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "30-40% enjoyable job portions only.",
+          "B": "Expertise building for threshold competence.",
+          "C": "Tight-deadline expert handoffs.",
+          "D": "Discipline of walking the talk despite unliked duties."
+        },
+        "correct_option_label": "D",
+        "explanation": "Managers must lead by example; dumping only undesirable tasks on subordinates sends a negative message about work ethic and professional standards.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q12",
+        "question_text": "Delegation succeeds by providing six clarities, starting with expected outcomes and including responsibility, time milestones, priority tied to a larger vision, communication with support queries, and:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Task subsets without accountability.",
+          "B": "Consequences covering personal and organisational rewards/impacts.",
+          "C": "Personal biases during handoff.",
+          "D": "Micromanagement post-assignment."
+        },
+        "correct_option_label": "B",
+        "explanation": "The final part of successful delegation is ensuring the employee understands the positive or negative impact of the task's completion.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q13",
+        "question_text": "Your expert team member excels at competition analysis but holds no decision authority in the bureaucratic structure, while a newcomer requests more responsibility. Optimal delegation balances:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Immediate task completion, ignoring positional constraints.",
+          "B": "Expertise with authority position and growth opportunities for motivated members.",
+          "C": "Uniform assignment without sensitivity assessment.",
+          "D": "Repeated expert reliance despite plateauing risks."
+        },
+        "correct_option_label": "B",
+        "explanation": "Effective delegation matches tasks to an individual's skill level while providing growth opportunities to keep team members motivated.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q14",
+        "question_text": "Your team meets numbers, but internal stakeholders complain about service quality despite repeated clarifications. To help them see the bigger picture, you delegate a team member to:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Study processes, benchmark other departments, and gather stakeholder feedback.",
+          "B": "Reorganise immediately without external exposure.",
+          "C": "Assign individual activity fixes without socialisation.",
+          "D": "Micromanage quality metrics directly."
+        },
+        "correct_option_label": "A",
+        "explanation": "Delegating cross-functional investigation helps employees understand external expectations and improves overall service quality and internal alignment.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q15",
+        "question_text": "After mapping stakeholders with yourself at the centre, you realise that beyond direct reports, your manager's peer, cross-department peers, and suppliers influence your project success. This exercise reveals:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Only direct reports qualify as true stakeholders.",
+          "B": "External groups like customers have no internal relevance.",
+          "C": "Stakeholders are people with stakes in your success and whose success you impact.",
+          "D": "Skip-level managers lack expectations from you."
+        },
+        "correct_option_label": "C",
+        "explanation": "Stakeholder mapping demonstrates that a manager's effectiveness depends on managing a web of mutual dependencies beyond just their direct team.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q16",
+        "question_text": "Cross-functional conflicts between your direct reports and peer's team escalate despite numbers being met, requiring you to avoid blame games and solve them jointly. Practical peer management demands:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Enforcing departmental silos for clarity.",
+          "B": "Understanding pain points and mitigating them beyond task focus.",
+          "C": "Competitor framing for resource protection.",
+          "D": "Withholding credit to maintain leverage."
+        },
+        "correct_option_label": "B",
+        "explanation": "Managing peers involves looking beyond immediate tasks to understand shared challenges and finding collaborative solutions to systemic conflicts.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q17",
+        "question_text": "Promoted over peer applicants to manage them, you face awkward dynamics, wondering how to shift from hanging out to leading. The critical first preparation step is:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Strong conversation with your manager for clarity on expectations and goals.",
+          "B": "Continuing social hangouts to ease tension.",
+          "C": "Immediate authority assertion in group settings.",
+          "D": "Delegating all decisions, avoiding direct involvement."
+        },
+        "correct_option_label": "A",
+        "explanation": "When transitioning to leading former peers, the manager must first align with their own supervisor to establish professional boundaries and role clarity.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q18",
+        "question_text": "Your best friend, now a direct report, receives extra responsibilities and sensitive info you once shared casually as peers. To maintain professional boundaries:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Continue gossiping for relationship preservation.",
+          "B": "Avoid favouritism, confidential sharing, and badmouthing others.",
+          "C": "Give them all strategic tasks due to friendship trust.",
+          "D": "Maintain identical casual interactions post-promotion."
+        },
+        "correct_option_label": "B",
+        "explanation": "Professionalism requires setting clear boundaries to prevent personal relationships from creating perceptions of bias or confidentiality breaches in the workplace.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q19",
+        "question_text": "Your intuitive, open-door boss is replaced by a formal, documentation-heavy leader who demands agendas. Adapting from morning walk-ins to structured emails reveals the key to success:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Knowing your boss's preferred information style and work methods.",
+          "B": "Maintaining identical interaction patterns.",
+          "C": "Complaining about the unavailability to colleagues.",
+          "D": "Escalating access issues to HR."
+        },
+        "correct_option_label": "A",
+        "explanation": "'Managing up' involves identifying and adapting to a supervisor's specific communication preferences and operational needs.",
+        "module": 3
+      },
+      {
+        "question_id": "M3Q20",
+        "question_text": "Effective boss management patterns emphasise knowing priorities, strengths/weaknesses, info preferences, aspirations, plus:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Throwing surprises for attention.",
+          "B": "Independent decision-making isolation.",
+          "C": "Problem dumping without solutions.",
+          "D": "Flagging issues with pre-emptive solutions from the boss's perspective."
+        },
+        "correct_option_label": "D",
+        "explanation": "A proactive manager supports their superior by identifying potential problems early and suggesting viable solutions from a higher-level perspective.",
+        "module": 3
+      },
+      {
+        "question_id": "M4Q1",
+        "question_text": "A newly appointed manager wants to quickly understand employee's views on a recent policy change and collect their ideas for improvement. Which option best represents an appropriate primary channel for this purpose?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Circulating the updated standard operating manuals.",
+          "B": "Conducting an employee feedback survey or using suggestion boxes to gather inputs.",
+          "C": "Publishing a detailed article in the in-house magazine.",
+          "D": "Asking senior leaders to send a top-down email about the policy."
+        },
+        "correct_option_label": "B",
+        "explanation": "Feedback channels like surveys and suggestion boxes are designed to facilitate two-way communication and collect honest employee input efficiently.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q2",
+        "question_text": "Which option best captures the core roles for the sender and receiver in the communication process?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The sender hears and interprets, while the receiver only thinks and transmits.",
+          "B": "Both sender and receiver perform identical fuctions without any distinction.",
+          "C": "The sender thinks and communicates ideas using language, while the receiver hears and interpretes the message through their own perceptions and experiences.",
+          "D": "The sender only provides written messages and the."
+        },
+        "correct_option_label": "C",
+        "explanation": "Communication is an active process of encoding by the sender and decoding by the receiver, often influenced by subjective backgrounds.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q3",
+        "question_text": "A new manager from HR attends a supply chain review where colleagues constantly use terms like “SAP”, “JIT”, and other internal codes. The manager leaves confused, even though everyone else found the discussion clear and logical. Which option best explains why communication failed for this manager?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The message relied on jargon meaningful only within that specific community, making the message difficult for an outsider to understand.",
+          "B": "The sender's role alone determines effectiveness, so the receiver's background is irrelevant.",
+          "C": "The medium of a face-to-face meeting always guarantees complete understanding for all participants.",
+          "D": "The presence if psychological noise is impossible in formal organisational settings."
+        },
+        "correct_option_label": "A",
+        "explanation": "Semantic barriers like industry-specific jargon can exclude those who are not part of that specialized group from understanding the core message.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q4",
+        "question_text": "A manager has two reliable direct reports who always execute tasks well and listen attentively, making them favourites. When a colleague points out minor error in their recent work, the manager brushes them of without investiagtion. Which explantion fits this scenario?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "A information overload from managing too many tasks at once.",
+          "B": "Selective perception causes the manager not to see any bad in those favourites, even when highlighted.",
+          "C": "A language barrier between the colleague and the manager.",
+          "D": "Lack of self-awareness about the manager's own biases."
+        },
+        "correct_option_label": "B",
+        "explanation": "Selective perception leads people to ignore or rationalize negative information about individuals they favor, maintaining their internal bias.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q5",
+        "question_text": "What two linked dimensions are highlighted for language as a barrier?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Only fluency in one's native language.",
+          "B": "Stereotypes alone without cultural context.",
+          "C": "Technology use in local terms.",
+          "D": "Lack of proficiency in a common language like English, combined with cultural differences across regions and nations."
+        },
+        "correct_option_label": "D",
+        "explanation": "Language barriers in organizations are often a mix of technical proficiency gaps and deeper cultural differences in communication styles.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q6",
+        "question_text": "Which option correctly outlines the progresssion triggered by communication barriers?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Confusion → misunderstanding → defensiveness → mistrust → conflict",
+          "B": "Mistrust → defensiveness → confusion → conflict → misunderstanding",
+          "C": "Misunderstanding → confusion → defensiveness → mistrust → conflict",
+          "D": "Defensiveness → misunderstanding → mistrust → confusion → conflict"
+        },
+        "correct_option_label": "A",
+        "explanation": "Unresolved communication failures typically escalate from initial confusion into interpersonal defensiveness and long-term organizational conflict.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q7",
+        "question_text": "A top individual contributor on the team expects promotion soon after a year of gentle coaching, but the manager sees no managerial potential. The manager avoids the talk, fearing it will damage morale or prompt resginations. What defines this as difficult?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "It induces no stress, just a simple affirmation.",
+          "B": "Anxiety over phrasing without hurting, uncertain reception, and consequences like turnover.",
+          "C": "Only relevant for bossess, not team members.",
+          "D": "Easy because the employee is reliable."
+        },
+        "correct_option_label": "B",
+        "explanation": "Difficult conversations are defined by high emotional stakes, differing perspectives, and potentially significant negative outcomes if handled poorly.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q8",
+        "question_text": "A manager's star team member consistently hits targets but is rude and withholds information from colleagues, eroding team dynamics despite being a \"calling\". Into which category does this fall?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Performance-related, specifically objective high performance with attitudinal issues.",
+          "B": "Interpersonal conflict between manager and team.",
+          "C": "Job skills plateau unrelated to behaviour.",
+          "D": "Organisational policy enforcement."
+        },
+        "correct_option_label": "A",
+        "explanation": "This describes a 'performance-attitude' gap where excellent technical output is marred by poor teamwork and destructive interpersonal behavior.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q9",
+        "question_text": "How does preparation for challenging conversation differ from regular meetings?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "No preparation needed due to anxiety.",
+          "B": "Less focus, same as performance reviews.",
+          "C": "Greater emphasis, comprehensiveness: know objective/outcome, problem from both views, open mind for listening/solutions.",
+          "D": "Only document policy, ignore employees view."
+        },
+        "correct_option_label": "C",
+        "explanation": "Preparation for tough talks requires deep empathy and planning to ensure the manager remains balanced and solution-oriented during high stress.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q10",
+        "question_text": "A manager prepares to inform a non-performer of a new organisational layoff policy, spending 30-45 minutes documenting. What must guide the objective and outcome?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Objective: communicate policy change and impact; outcome: employee understands potential exit if no improvement, preparing to seek a new job.",
+          "B": "Objective: debate policy fairness; outcome: employee quits immediately.",
+          "C": "Objective: coach behaviour only; outcome: instant promotion.",
+          "D": "Objective: Avoid all mention of performance."
+        },
+        "correct_option_label": "A",
+        "explanation": "Clarity in both the factual message (objective) and the desired understanding or action (outcome) is essential for effective communication of bad news.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q11",
+        "question_text": "What singular role must a manager anchor in?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Friend or coach giving casual advice.",
+          "B": "Peer sharing ideas informally.",
+          "C": "Manager only, with organisational responsibilities, behaving accordingly (250% clear).",
+          "D": "Mentor focused on long-term growth alone."
+        },
+        "correct_option_label": "C",
+        "explanation": "Despite being friendly or coaching, a manager's primary identity must remain as a formal representative of the organization's goals and policies.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q12",
+        "question_text": "Which sequence covers key conduct?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Talk more, avoid silence, and provide support.",
+          "B": "Hide objective, use \"we\" always.",
+          "C": "Play victim for popularity.",
+          "D": "State objective/agenda upfront, talk less/listen more (incl. unsaid), summarise end, mindful \"I\" (feel/think/suggest), stick facts/purpose."
+        },
+        "correct_option_label": "D",
+        "explanation": "Effective communication conduct involves setting clear expectations, active listening, and using 'I' statements to own one's perspective.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q13",
+        "question_text": "A manager wants extra hours for project recognition, but family urges to park in the evening. Tension builds over differing needs. Which conflict type?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Interpersonal: disagreement between the individual’s work ideas and the family’s priorities/thoughts.",
+          "B": "Only intrapersonal self-doubt.",
+          "C": "Intergroup team vs. home.",
+          "D": "No conflict, just scheduling."
+        },
+        "correct_option_label": "A",
+        "explanation": "This is interpersonal conflict where the needs and expectations of one party (family) clash with those of another (the individual's work goals).",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q14",
+        "question_text": "Manager reflects on a bitter, unresolved friend conflict that has persisted for years vs. a resolved sibling one. Insight for teams?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "“Conflicts always disabling; avoid.”",
+          "B": "“Analyse resolved (parties/issue/resolution) vs. unresolved (lingering bad taste)—perceive negative impacts early for healthy handling.”",
+          "C": "“Only intrapersonal matter.”",
+          "D": "“No reflection needed; inevitable bitterness.”"
+        },
+        "correct_option_label": "B",
+        "explanation": "Analyzing how past conflicts were resolved helps teams proactively manage future disagreements before they become toxic and permanent.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q15",
+        "question_text": "How do dyadic/intragroup/intergroup variations affect managers' conflict resolution styles?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Identical mediation role always.",
+          "B": "No variation needed.",
+          "C": "Vary manager mediation role: direct for dyadic, facilitate intragroup, and different for intergroup.",
+          "D": "Only the intergroup requires action."
+        },
+        "correct_option_label": "C",
+        "explanation": "Conflict resolution strategies must adapt depending on whether the issue is between two individuals, within a single team, or across different departments.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q16",
+        "question_text": "How should a manager respond when a senior snaps, \"Please don't speak,\" to silence a junior's valid input during a meeting?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Apologise, assuming a misunderstanding.",
+          "B": "Ignore as standard hierarchy.",
+          "C": "Let it escalate to voting.",
+          "D": "Intervene immediately as an assertive verbal attack to protect speaking rights and credibility."
+        },
+        "correct_option_label": "D",
+        "explanation": "A manager must act as a protector of inclusive communication, assertively addressing attempts to silence team members regardless of seniority.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q17",
+        "question_text": "What is the core reason managers exist in conflict situations?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "To resolve right vs. wrong via algorithms.",
+          "B": "To avoid stress by delegating.",
+          "C": "To decide between right and more right from the bigger organisational picture beyond conflicting parties.",
+          "D": "To ensure both sides are fully satisfied."
+        },
+        "correct_option_label": "C",
+        "explanation": "Managerial intervention in conflict aims to balance competing interests in a way that best serves the organization's overarching goals.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q18",
+        "question_text": "Two peer departments under your purview conflict, but they have no direct impact on your operations. What tactical approach preserves your relationships with both?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Intervene with a superordinate goal emphasising organisational aims.",
+          "B": "Avoid involvement and let them resolve it independently.",
+          "C": "Compromise by allocating shared resources equally.",
+          "D": "Educate them on each other's perspectives in a joint session."
+        },
+        "correct_option_label": "B",
+        "explanation": "When conflicts between peers do not affect one's own work, staying neutral (avoidance) can be a valid tactic to remain untainted by the dispute.",
+        "module": 4
+      },
+      {
+        "question_id": "M4Q19",
+        "question_text": "Which conflict resolution method involves convening parties to define the problem, gather perspectives, and secure commitments for change?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Superordinate goal approach",
+          "B": "Problem-solving orientation",
+          "C": "Smoothing differences",
+          "D": "Usage of authority"
+        },
+        "correct_option_label": "B",
+        "explanation": "The problem-solving orientation focuses on open communication and collaborative fact-finding to find a mutually beneficial solution.",
+        "module": 4
+      },
+      {
+        "question_id": "M5Q1",
+        "question_text": "The founder daily ensures vision cascades to all, measures intangibles for viability despite unprofitability. Operations fixate on year-end targets. How does this contrast classify actions?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Manager outputs over owner outcomes",
+          "B": "Owner long-term over manager short-term",
+          "C": "Equal preoccupation balance",
+          "D": "Profit trumps all sustainability"
+        },
+        "correct_option_label": "B",
+        "explanation": "Founders/owners typically focus on long-term enterprise health and mission, while managers often focus on immediate operational KPIs.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q2",
+        "question_text": "Rapid growth triggers quick decisions in unfamiliar areas. Outcomes include upward escalation, overload, cracks, and collaboration suffers. What initiates this?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Ample prior experience",
+          "B": "Stable job roles",
+          "C": "Internal grooming pace",
+          "D": "Need for rapid decision-making"
+        },
+        "correct_option_label": "D",
+        "explanation": "Scaling challenges often stem from the pressure to make fast choices in new contexts without established supporting structures.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q3",
+        "question_text": "Firm doubles headcount in 4 years; few old-timers juggle interviews, decisions, ramp-up training. New HR department forms amid culture drift. What drives formalisation?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Surging selection/training demands",
+          "B": "Reduced newcomer influx",
+          "C": "Founder vision alone"
+        },
+        "correct_option_label": "A",
+        "explanation": "Growth necessitates the creation of formal HR processes to handle the volume of hiring and training that informal systems can no longer manage.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q4",
+        "question_text": "Organisation design encompasses structure (hardware: tangible/visible) and culture (software: intangible/invisible). Analogy stresses compatibility for efficiency/effectiveness. What unifies both elements?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Culture secondary to charts",
+          "B": "Structure always dominates",
+          "C": "Mutual compatibility is essential",
+          "D": "Independent optimisation suffices"
+        },
+        "correct_option_label": "C",
+        "explanation": "A firm's formal reporting lines (structure) and shared values (culture) must be aligned to function effectively as a whole.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q5",
+        "question_text": "The entrepreneur dismisses organisation design as a mere \"organisation chart,\" citing easy Microsoft Office templates from a Google search. How should a founder apply a deeper view amid scaling?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Rely solely on chart visuals",
+          "B": "Integrate structure and culture",
+          "C": "Ignore design entirely",
+          "D": "Copy large firm templates"
+        },
+        "correct_option_label": "B",
+        "explanation": "Design involves more than just a chart; it requires intentional planning of how roles and cultural norms support the company's growth.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q6",
+        "question_text": "No two organisations share culture, akin to unique personalities. Adjectives (supportive/caring) sound alike, yet experiences diverge. Why inevitable uniqueness?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Common descriptors unify",
+          "B": "Shared across visits",
+          "C": "Founder-independent norms",
+          "D": "Distinct programming per group"
+        },
+        "correct_option_label": "D",
+        "explanation": "Every organization develops a unique 'social DNA' or programming based on its history, leadership, and group dynamics.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q7",
+        "question_text": "A startup tech firm in Meerut loses its star software developer, who handled coding, client demos, and team mentoring. The CEO insists on hiring \"another exactly like Raj\" instead of redefining the role. What is the primary flaw in the CEO's approach?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Failing to recognise that a position exists independent of the person filling it, treating it as person-specific rather than task-based.",
+          "B": "Overemphasising tasks while ignoring the unique skills Raj brought to demos.",
+          "C": "Ignoring global benchmarks for software roles in startups.",
+          "D": "Assuming all developers can handle mentoring without training."
+        },
+        "correct_option_label": "A",
+        "explanation": "Organizational roles should be defined by necessary tasks and outputs, not by the unique combination of traits of a single former employee.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q8",
+        "question_text": "A new edtech startup hires its first content creator. Students expect engaging tutorials (mentor role), investors want innovation reports (contributor role), and colleagues seek admin help. Yet the hiring doc lists only \"produce 10 videos/week\" without stakeholder expectations. How does this impact organisational structure?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Weakens the position as a building block by lacking clarity on roles/responsibilities from significant others, beyond easily measured tasks.",
+          "B": "Prioritises self-expectations over stakeholder ones, like innovation.",
+          "C": "Treats the role like theatre without a performing arts context.",
+          "D": "Limits quantification to videos, ignoring admin tasks."
+        },
+        "correct_option_label": "A",
+        "explanation": "A role that lacks clarity on how it serves various stakeholders creates performance gaps and weakens the organizational foundation.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q9",
+        "question_text": "A growing Delhi e-commerce firm restructures amid rapid market shifts, reassigning logistics tasks across teams without founder oversight on position specs. This causes hiring mismatches, uneven performance evaluations, and salary disputes. Why is leadership involvement critical?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Delegation to admin for short-term profits.",
+          "B": "Position descriptions as basis for restructuring (tasks/roles reassignment), ads, selection, compensation, and performance in volatile contexts.",
+          "C": "Focus only on today's salaries, not 5-10 year talent.",
+          "D": "Grouping functions without responsibility clarity."
+        },
+        "correct_option_label": "B",
+        "explanation": "Leadership must ensure that role definitions are accurate and aligned with the company's new structure to maintain fairness and operational efficiency.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q10",
+        "question_text": "An engineering startup skips technical coding tests for developers, using one inexperienced junior panel repeating \"tell me about yourself\" across two rounds. A fluent Excel-proficient candidate with strong tech skills is rejected for \"not senior enough,\" despite culture fit, delaying projects. What process flaw persists?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Two rounds deemed excessive.",
+          "B": "Juniors are ideal for screening.",
+          "C": "Culture secondary to skills.",
+          "D": "No role-tailored tests (technical fluency extent), untrained/non-senior panels lacking cultural grasp, repetitive questions amplifying biases."
+        },
+        "correct_option_label": "D",
+        "explanation": "Ineffective selection processes that lack objective, role-relevant testing and trained interviewers lead to biased and poor hiring decisions.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q11",
+        "question_text": "During 2025 economic volatility, a manufacturing founder opts out of sales manager panels for \"strategic time,\" hiring via agencies. Culture becomes compliance-focused rather than adaptive, undermining the long-term enterprise legacy as an agile innovator. What parameter was undervalued?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Selection as key legacy driver, where founder interviews embed philosophy into the culture bedrock for high performance.",
+          "B": "Agencies for efficiency.",
+          "C": "Volatility excusing absence.",
+          "D": "Sales not culture-core."
+        },
+        "correct_option_label": "A",
+        "explanation": "A founder's personal involvement in key hires is vital for passing on organizational values and maintaining a specific performance culture.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q12",
+        "question_text": "Sarah runs a successful organic export business. Initially, her goal was \"maximum quarterly profit.\" However, after attending a leadership module, she decides to redefine her performance criteria. She begins focusing on building a \"performance culture\" and assesses whether the business can maintain its trajectory if she steps away to focus on long-term vision. If Sarah’s business continues to run \"business as usual\" in her absence, what does this imply about her role according to the four dimensions of performance management?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The enterprise has failed because the founder is no longer contributing to the sales turnover.",
+          "B": "Sarah has successfully merged her personal success with the enterprise's success.",
+          "C": "The enterprise is successful, and Sarah must now transition from managing \"business as usual\" to contributing to the enterprise's growth through a vision that is \"beyond her.\"",
+          "D": "The organisational performance management system is flawed because it lacks individual goal setting for the founder."
+        },
+        "correct_option_label": "C",
+        "explanation": "Successful scaling means the company's daily operations no longer rely on the founder, allowing them to shift to high-level strategic growth.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q13",
+        "question_text": "A company has high sales turnover and excellent profit margins, but its employees are frequently unable to implement innovative ideas shared by customers. According to the multi-dimensional criteria, where is the primary gap?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The Financial Perspective",
+          "B": "The Organisation Dimension",
+          "C": "The Customer Dimension",
+          "D": "The Strategic Perspective"
+        },
+        "correct_option_label": "B",
+        "explanation": "Inability to implement ideas suggests a failure in internal organizational processes and structures despite financial success.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q14",
+        "question_text": "A software company has a goal to \"Improve Product Reliability.\" The CEO has told the Managers, but the junior programmers remain focused solely on \"Coding Speed,\" resulting in many bugs. What is the fundamental failure here?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The company failed to cascade the \"Reliability\" dimension down to the programmers' specific tasks and behaviours.",
+          "B": "The programmers are not talented enough to code quickly and reliably.",
+          "C": "The CEO should not have shared the goal with the Managers first.",
+          "D": "Coding speed is more important than product reliability in a performance culture."
+        },
+        "correct_option_label": "A",
+        "explanation": "Strategy fails when top-level goals are not translated into specific, actionable objectives for individual employees at the operational level.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q15",
+        "question_text": "Why is it a problem if an entrepreneur’s goal sheet is 80% \"Business as Usual\" (BAU)?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Because it means the entrepreneur is doing the work they hired managers to do.",
+          "B": "Because BAU goals are not important for the organisation's survival.",
+          "C": "Because BAU goals should only be assigned to the junior-most staff.",
+          "D": "Because BAU goals don't have any financial impact."
+        },
+        "correct_option_label": "A",
+        "explanation": "An entrepreneur should focus on growth and strategy; if they spend too much time on routine tasks, they are likely micro-managing or failing to lead.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q16",
+        "question_text": "During a quarterly review, a lead developer admits she is struggling because the company recently switched to a new programming language she doesn't know. How should a leader applying this module's coaching framework respond?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Identify this as a \"personal constraint\" and use coaching to bridge the capability gap.",
+          "B": "Treat it as a performance failure and reduce her \"Business as Usual\" weightage.",
+          "C": "Ignore the issue and tell her to figure it out on her own time.",
+          "D": "Re-assign her to a different department where the old language is still used."
+        },
+        "correct_option_label": "A",
+        "explanation": "Effective performance management identifies skill gaps not as failures but as areas for coaching and developmental support.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q17",
+        "question_text": "Why must entrepreneurs evaluate their lives holistically when considering legacy?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "To compartmentalise business success from personal roles",
+          "B": "To prioritise leaving a legacy over living one",
+          "C": "To focus only on managerial and enterprise effectiveness",
+          "D": "Because they embody multiple roles—entrepreneur, manager, owner, and family member (husband, wife, etc.)—requiring balanced assessment across effectiveness dimensions and well being"
+        },
+        "correct_option_label": "D",
+        "explanation": "A sustainable legacy requires the founder to be effective in all their life roles, ensuring that professional success does not come at the expense of personal health or family.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q18",
+        "question_text": "A founder scaling their tech startup repeatedly shares the organisation's purpose, vision for sustainable growth beyond profitability, and core values in every team meeting—sometimes over 100 times—to inspire alignment, while humbly challenging team ideas with probing \"why\" questions, as if ignorant, without diminishing respect. When implementing new processes like timely reporting, the founder adheres first. This leadership style exemplifies:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Expecting all employees to think like the founder for efficiency intuitively",
+          "B": "Limiting discussions to profitability goals without philosophical depth",
+          "C": "Key dimensions of managerial effectiveness: communicating vision passionately, humbly challenging assumptions, and walking the talk to signal systems",
+          "D": "Treating questioning as authoritative commands to enforce the founder's ideas"
+        },
+        "correct_option_label": "C",
+        "explanation": "Effective leaders drive alignment by constantly communicating the mission, being open to better ideas, and modeling expected behavior themselves.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q19",
+        "question_text": "During a cash flow crisis, delaying salaries, an entrepreneur refrains from expressing frustration, instead regulating emotions to guide the team through solutions, maintaining positivity with \"this too shall pass\" while modelling resilience against banker pressures and project delays. This approach counters scaling pitfalls by:",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Reinforcing team failures to motivate faster learning",
+          "B": "Demonstrating personal effectiveness via emotion regulation, resilience under adversity, and enabling others rather than disabling them",
+          "C": "Isolating personal emotions from organisational needs",
+          "D": "Demanding immediate execution without acknowledging learning curves"
+        },
+        "correct_option_label": "B",
+        "explanation": "A leader's ability to remain calm and constructive during crises provides stability and keeps the team focused on solutions rather than panic.",
+        "module": 5
+      },
+      {
+        "question_id": "M5Q20",
+        "question_text": "What is the primary dimension for entrepreneurs in leaving a legacy regarding organisational foundations?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "Courageously, periodically re-examining philosophies, assumptions, beliefs—adapting to the environment while retaining the core to avoid extinction",
+          "B": "Permanently fixing initial values without reclarification",
+          "C": "Delegating the challenge to management teams exclusively",
+          "D": "Ignoring external changes for internal consistency"
+        },
+        "correct_option_label": "A",
+        "explanation": "A lasting legacy requires an organization that can evolve its methods and beliefs to match a changing world while staying true to its essential purpose.",
+        "module": 5
+      }
+    ]
+  }

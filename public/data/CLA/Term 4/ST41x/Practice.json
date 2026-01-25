@@ -1,0 +1,92 @@
+{
+  "exam_metadata": {
+    "subject_name": "Introduction to Strategic Management",
+    "exam_date": "Practice Questions"
+  },
+  "questions": [
+    {
+      "question_id": "Module1_Quiz1",
+      "question_text": "Which of the following is NOT one of the four functions in the P-O-L-C framework?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Planning",
+        "B": "Organizing",
+        "C": "Leading",
+        "D": "Implementing"
+      },
+      "correct_option_label": "D",
+      "explanation": "Implementing is not part of the classic P-O-L-C framework, which stands for Planning, Organizing, Leading, and Controlling.",
+      "module": 1
+    },
+    {
+      "question_id": "Module1_Quiz2",
+      "question_text": "Which of the following best describes the concept of a seperate leagal entity?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The firm's owners are fully responsible for all business debts",
+        "B": "The firm's existence is dependent on its owner's lifespan",
+        "C": "The firm has its own legal identity, distinct from its owners",
+        "D": "The firm cannot be sued or enter into contracts"
+      },
+      "correct_option_label": "C",
+      "explanation": "A separate legal entity means the firm has its own identity, distinct from its owners and may act independently.",
+      "module": 1
+    },
+    {
+      "question_id": "Module1_Quiz3",
+      "question_text": "The primary of defining an organization structure is to:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Reduce the number of employees",
+        "B": "Clarify roles, reponsibilites, and reporting relationships",
+        "C": "Comply with government regulations only",
+        "D": "Determine pricing strategies"
+      },
+      "correct_option_label": "B",
+      "explanation": "Clarifying roles, responsibilities, and reporting relationships is the main purpose of defining an organization’s structure.",
+      "module": 1
+    },
+    {
+      "question_id": "Module1_Quiz4",
+      "question_text": "A tech startup is structured so that developers report to both a product manager (for feature requirements) and an engineering lead (for technical guidance). Which type of organisational structure does this reflect, and what is one main challenge it might face?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Functional; Lack of innovation",
+        "B": "Matrix; Confusion over authority",
+        "C": "Divisional; Increased costs",
+        "D": "Virtual; Communication delays"
+      },
+      "correct_option_label": "B",
+      "explanation": "A matrix structure features dual reporting which can cause confusion over authority, making it complex.",
+      "module": 1
+    },
+    {
+      "question_id": "Module2_Quiz1",
+      "question_text": "Which of the following activities would most likely fall under corporate-level strategy?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Implementing a new HR training program",
+        "B": "Deciding whether to acquire another company or divest a business unit",
+        "C": "Launching a new advertising campaign for a product",
+        "D": "Adjusting product pricing to respond to competition"
+      },
+      "correct_option_label": "B",
+      "explanation": "Decisions about acquisitions or divestments are typically made at the corporate level as they affect the organization's structure and scope.",
+      "module": 2
+    },
+    {
+      "question_id": "Module2_Quiz2",
+      "question_text": "What is a key risk when the three levels of strategy are not aligned?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Excessive market share",
+        "B": "Increased short-term profits",
+        "C": "Execution gaps and poor organisational performance",
+        "D": "Too much innovation"
+      },
+      "correct_option_label": "C",
+      "explanation": "Misalignment between strategic levels can cause execution gaps, leading to poor overall performance.",
+      "module": 2
+    }
+  ]
+}
