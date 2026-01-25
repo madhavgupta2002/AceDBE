@@ -14,7 +14,7 @@ import {
   Youtube,
   ClipboardList
 } from 'lucide-react';
-import { SUBJECTS, getSubjectsByTerm } from '@/lib/subjectMapping';
+import { SUBJECTS, getSubjectsByTermFiltered } from '@/lib/subjectMapping';
 import { useRouter } from 'next/navigation';
 import videosData from '@/public/data/videos.json';
 
@@ -40,8 +40,8 @@ const SubjectSelector: React.FC = () => {
     localStorage.setItem('selectedTerm', term.toString());
   };
 
-  // Get subjects for selected term
-  const filteredSubjects = getSubjectsByTerm(selectedTerm);
+  // Get subjects for selected term (filtered to exclude alternative versions)
+  const filteredSubjects = getSubjectsByTermFiltered(selectedTerm);
 
   const handleSubjectSelect = (code: string) => {
     router.push(`/${code}`);
