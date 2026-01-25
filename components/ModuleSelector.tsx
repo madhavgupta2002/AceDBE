@@ -16,28 +16,26 @@ const ModuleSelector: React.FC<ModuleSelectorProps> = ({ modules, selectedModule
       <label className="block text-sm font-medium text-gray-400 mb-2">
         Filter by Module
       </label>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
         <button
           onClick={() => onSelect('all')}
-          className={`px-4 py-2 text-sm font-semibold transition duration-200 border ${
-            selectedModule === 'all'
-              ? 'bg-indigo-700 text-white border-indigo-600'
-              : 'bg-gray-800 text-gray-300 border-gray-700 hover:bg-gray-700 hover:border-indigo-500'
-          }`}
+          className={`px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm font-medium transition duration-200 border rounded ${selectedModule === 'all'
+            ? 'bg-indigo-700 text-white border-indigo-600'
+            : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600 hover:border-indigo-500'
+            }`}
         >
-          All Modules
+          All
         </button>
         {modules.map((module) => (
           <button
             key={module}
             onClick={() => onSelect(module)}
-            className={`px-4 py-2 text-sm font-semibold transition duration-200 border ${
-              selectedModule === module
-                ? 'bg-indigo-700 text-white border-indigo-600'
-                : 'bg-gray-800 text-gray-300 border-gray-700 hover:bg-gray-700 hover:border-indigo-500'
-            }`}
+            className={`px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm font-medium transition duration-200 border rounded ${selectedModule === module
+              ? 'bg-indigo-700 text-white border-indigo-600'
+              : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600 hover:border-indigo-500'
+              }`}
           >
-            Module {module}
+            M{module}
           </button>
         ))}
       </div>
