@@ -64,6 +64,7 @@ const SubjectSelector: React.FC = () => {
       'ST41x': <Building2 className="w-6 h-6 text-white" />,
       'EP41x': <Lightbulb className="w-6 h-6 text-white" />,
       'MD41x': <BarChart3 className="w-6 h-6 text-white" />,
+      'DS11x_2024': <BarChart3 className="w-6 h-6 text-white" />,
     };
     return iconMap[code] || <MessageSquare className="w-6 h-6 text-white" />;
   };

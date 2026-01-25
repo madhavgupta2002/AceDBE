@@ -131,20 +131,6 @@
       "explanation": "**Formula:** Binomial $P(X \\geq k) = 1 - P(X \\leq k-1)$ where $P(X = x) = {n \\choose x} p^x (1-p)^{n-x}$\n\n**Steps:**\n- $n = 20$, $p = 0.30$ (not satisfied)\n- Find $P(X \\geq 12)$\n- $P(X \\geq 12) = 1 - P(X \\leq 11)$\n- $P(X \\leq 11) = \\sum_{x=0}^{11} {20 \\choose x} (0.3)^{x} (0.7)^{20-x} \\approx 0.995$\n- So $P(X \\geq 12) \\approx 0.005$\n\n**Result:** Between 0.00 and 0.25"
     },
     {
-      "question_id": "STAT_MT_Q10",
-      "module": 5,
-      "question_text": "The probability that a t-random variable with 5 degrees of freedom takes values between -2.0 and 0.5 is:",
-      "question_type": "MCQ",
-      "options": {
-        "A": "Between 0.20 and 0.40",
-        "B": "Between 0.40 and 0.60",
-        "C": "Between 0.60 and 0.80",
-        "D": "Between 0.80 and 1.00"
-      },
-      "correct_option_label": "C",
-      "explanation": "**Formula:** t-distribution $P(-2.0 < t < 0.5)$ with df = 5\n\n**Steps:**\n- Using t-table, $P(t < 0.5) \\approx 0.68$\n- $P(t < -2.0) \\approx 0.05$\n- $P(-2.0 < t < 0.5) = 0.68 - 0.05 = 0.63$\n\n**Result:** Between 0.60 and 0.80"
-    },
-    {
       "question_id": "STAT_MT_Q11",
       "module": 4,
       "question_text": "A department store has determined that 25% of all their sales are credit sales. If a random sample of 60 sales records are selected, the probability of the proportion of credit sales in the sample being more than 30% is:",
