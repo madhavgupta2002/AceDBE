@@ -18,7 +18,7 @@ import ModuleSelector from './ModuleSelector';
 import SourceSelector from './SourceSelector';
 import UnifiedQuizSelector from './UnifiedQuizSelector';
 import Header from './Header';
-import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube, Search, History, ArrowRightLeft } from 'lucide-react';
+import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube, Search, History, ArrowRightLeft, Check } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -71,6 +71,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
   const [masterAnsweredQuestions, setMasterAnsweredQuestions] = useState<(string[] | null)[]>([]);
   const [reviseMode, setReviseMode] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [globalAnswersVisible, setGlobalAnswersVisible] = useState(true);
+  const [individualAnswersVisible, setIndividualAnswersVisible] = useState<Record<number, boolean>>({});
 
   // Helper function to create YouTube playlist URL from video links
   const createPlaylistUrl = (videoLinks: string[]): string => {
@@ -427,7 +429,6 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
       incorrectAnswers: newIncorrectAnswers,
       answeredQuestions: filteredAnsweredQuestions,
     }));
-    setQuizCompleted(false);
   };
 
   const handleModuleChange = (module: string | number | 'all') => {
@@ -475,6 +476,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     setHideWrongOptions(false);
     setReviseMode(false);
     setSearchQuery('');
+    setGlobalAnswersVisible(true);
+    setIndividualAnswersVisible({});
     setSelectedModule('all');
     setSelectedSource('all');
   };
@@ -688,6 +691,29 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                 </>
               )}
 
+              {/* Results View Filters */}
+              <div className="mb-6 p-4 bg-gray-900/50 border border-gray-700 rounded-xl">
+                <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
+                  <div className="flex-1 w-full">
+                    <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Filter by Module</label>
+                    <ModuleSelector
+                      modules={availableModules}
+                      selectedModule={selectedModule}
+                      onSelect={handleModuleChange}
+                    />
+                  </div>
+                  <div className="hidden md:block w-px h-10 bg-gray-700"></div>
+                  <div className="flex-1 w-full">
+                    <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Filter by Source</label>
+                    <SourceSelector
+                      sources={availableSources}
+                      selectedSource={selectedSource}
+                      onSelect={handleSourceChange}
+                    />
+                  </div>
+                </div>
+              </div>
+
               <div className="mt-6 mb-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                 {/* Search Box */}
                 <div className="flex-1 relative">
@@ -724,6 +750,21 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                   >
                     {hideWrongOptions ? 'Hide Options' : 'Show Options'}
                   </button>
+
+                  <button
+                    onClick={() => {
+                      const newState = !globalAnswersVisible;
+                      setGlobalAnswersVisible(newState);
+                      // Reset all individual overrides when global toggle is used
+                      setIndividualAnswersVisible({});
+                    }}
+                    className={`px-4 py-2 border font-semibold transition duration-200 ${!globalAnswersVisible
+                      ? 'bg-amber-700 text-white border-amber-600 hover:bg-amber-600'
+                      : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
+                      }`}
+                  >
+                    {!globalAnswersVisible ? 'Show Correct' : 'Hide Correct'}
+                  </button>
                 </div>
               </div>
 
@@ -757,9 +798,27 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                         >
                           {/* Question Number, Module, and Source Metadata */}
                           <div className="mb-3 flex items-center justify-between">
-                            <span className="px-2 py-0.5 bg-gray-700/50 border border-gray-600 text-gray-300 font-medium text-xs">
-                              Q{idx + 1}
-                            </span>
+                            <div className="flex items-center gap-2">
+                              <span className="px-2 py-0.5 bg-gray-700/50 border border-gray-600 text-gray-300 font-medium text-xs">
+                                Q{idx + 1}
+                              </span>
+                              <button
+                                onClick={() => {
+                                  const currentVisible = individualAnswersVisible[idx] ?? globalAnswersVisible;
+                                  setIndividualAnswersVisible(prev => ({
+                                    ...prev,
+                                    [idx]: !currentVisible
+                                  }));
+                                }}
+                                className={`p-1 border transition-colors ${(individualAnswersVisible[idx] ?? globalAnswersVisible)
+                                  ? 'bg-green-700 text-white border-green-600 hover:bg-green-600'
+                                  : 'bg-gray-700 text-gray-400 border-gray-600 hover:bg-gray-600'
+                                  }`}
+                                title="Toggle Answer Visibility"
+                              >
+                                <Check size={12} />
+                              </button>
+                            </div>
                             <div className="flex gap-2 text-xs">
                               {q.isSubjective && (
                                 <span className="px-2 py-1 bg-yellow-900/50 border border-yellow-700 text-yellow-300 font-medium">
@@ -802,15 +861,18 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                                 .map(([key, optionValue]) => {
                                   const isUserAnswer = userAnswer?.includes(key) || false;
                                   const isCorrectAnswer = q.correctAnswer.includes(key);
+                                  const isVisible = individualAnswersVisible[idx] ?? globalAnswersVisible;
 
                                   return (
                                     <div
                                       key={key}
-                                      className={`text-sm flex gap-2 ${isCorrectAnswer
-                                        ? 'font-bold text-green-400'
-                                        : isUserAnswer
-                                          ? 'text-red-400'
-                                          : 'text-gray-400'
+                                      className={`text-sm flex gap-2 ${isVisible
+                                        ? (isCorrectAnswer
+                                          ? 'font-bold text-green-400'
+                                          : isUserAnswer
+                                            ? 'text-red-400'
+                                            : 'text-gray-400')
+                                        : 'text-gray-400'
                                         }`}
                                     >
                                       <span className="shrink-0">{key}:</span>
@@ -824,8 +886,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                                         >
                                           {optionValue || ''}
                                         </ReactMarkdown>
-                                        {isCorrectAnswer && ' ✓'}
-                                        {isUserAnswer && !isCorrectAnswer && ' (Your answer)'}
+                                        {isVisible && isCorrectAnswer && ' ✓'}
+                                        {isVisible && isUserAnswer && !isCorrectAnswer && ' (Your answer)'}
                                       </span>
                                     </div>
                                   );
