@@ -887,8 +887,8 @@
         "B": "Profit will increase",
         "C": "Profit will not be affected"
       },
-      "correct_option_label": "A",
-      "explanation": "Negative 'Changes in inventories' means closing stock < opening stock (inventory decreased).\n\nThis increases COGS (more inventory consumed), which reduces profit.\n\nThe negative value indicates inventory was consumed/sold, increasing expenses and decreasing profit."
+      "correct_option_label": "B",
+      "explanation": "Changes in Inventory is calculated as Opening Stock minus Closing Stock. A negative value means Closing Stock is higher (you produced more than you sold). These unsold goods are moved to Assets, meaning their production cost is removed from the current year's expenses. Lower expenses result in increased profit."
     },
     {
       "module": 7,
