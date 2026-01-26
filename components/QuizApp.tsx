@@ -447,6 +447,76 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     setQuizCompleted(true);
   };
 
+  const clearResponse = (index: number) => {
+    const currentQuestion = quizState.questions[index];
+    const userAnswer = quizState.answeredQuestions[index];
+
+    if (userAnswer === null) return;
+
+    const isCorrect = userAnswer.length === currentQuestion.correctAnswer.length &&
+      userAnswer.every(ans => currentQuestion.correctAnswer.includes(ans));
+
+    setQuizState((prev) => {
+      const newAnsweredQuestions = [...prev.answeredQuestions];
+      newAnsweredQuestions[index] = null;
+
+      // Find in incorrectAnswers and remove if present
+      const questionKey = `${currentQuestion.text}-${currentQuestion.source || ''}`;
+      const newIncorrectAnswers = prev.incorrectAnswers.filter(q =>
+        `${q.text}-${q.source || ''}` !== questionKey
+      );
+
+      return {
+        ...prev,
+        score: isCorrect ? prev.score - 1 : prev.score,
+        incorrectAnswers: newIncorrectAnswers,
+        answeredQuestions: newAnsweredQuestions,
+        // If we are clearing the CURRENT question, also update selection/result state
+        selectedAnswer: index === prev.currentQuestionIndex ? null : prev.selectedAnswer,
+        showResult: index === prev.currentQuestionIndex ? false : prev.showResult,
+      };
+    });
+
+    // Sync with master
+    const questionKey = `${currentQuestion.text}-${currentQuestion.source || ''}`;
+    const masterIndex = allQuestions.findIndex(q => `${q.text}-${q.source || ''}` === questionKey);
+    if (masterIndex !== -1) {
+      setMasterAnsweredQuestions(prev => {
+        const newMaster = [...prev];
+        newMaster[masterIndex] = null;
+        return newMaster;
+      });
+    }
+  };
+
+  const clearAllResponses = () => {
+    if (window.confirm('Clear all responses in the current quiz?')) {
+      const clearedAnswers = new Array(quizState.questions.length).fill(null);
+
+      setQuizState(prev => ({
+        ...prev,
+        score: 0,
+        selectedAnswer: null,
+        showResult: false,
+        incorrectAnswers: [],
+        answeredQuestions: clearedAnswers,
+      }));
+
+      // Reset master answered questions for the questions currently in the quiz
+      setMasterAnsweredQuestions(prev => {
+        const newMaster = [...prev];
+        quizState.questions.forEach(q => {
+          const questionKey = `${q.text}-${q.source || ''}`;
+          const masterIndex = allQuestions.findIndex(mq => `${mq.text}-${mq.source || ''}` === questionKey);
+          if (masterIndex !== -1) {
+            newMaster[masterIndex] = null;
+          }
+        });
+        return newMaster;
+      });
+    }
+  };
+
   const jumpToQuestion = (index: number) => {
     setQuizState((prev) => ({
       ...prev,
@@ -1060,6 +1130,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                 <QuizQuestion
                   question={quizState.questions[quizState.currentQuestionIndex]}
                   onAnswer={handleAnswer}
+                  onClearResponse={() => clearResponse(quizState.currentQuestionIndex)}
                   selectedAnswer={quizState.selectedAnswer}
                   showResult={quizState.showResult}
                 />
@@ -1097,6 +1168,13 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                   className="w-full mt-4 px-4 sm:px-6 py-3 bg-green-700 text-white border border-green-600 font-semibold hover:bg-green-600 transition duration-200 flex items-center justify-center"
                 >
                   Finish Quiz <RefreshCw className="ml-2" size={20} />
+                </button>
+
+                <button
+                  onClick={clearAllResponses}
+                  className="w-full mt-2 px-4 sm:px-6 py-2 bg-gray-700 text-gray-300 border border-gray-600 font-semibold hover:bg-gray-600 hover:text-white transition duration-200 flex items-center justify-center text-sm"
+                >
+                  Clear All Responses
                 </button>
 
                 {/* Feedback Box */}
