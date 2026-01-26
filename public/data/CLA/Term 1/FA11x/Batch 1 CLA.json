@@ -926,11 +926,11 @@
       "options": {
         "A": "900",
         "B": "890",
-        "C": "1160",
+        "C": "1210",
         "D": "720"
       },
       "correct_option_label": "C",
-      "explanation": "Financing activities: Capital received (+500), Dividend paid (-50), Loan received (+800), Loan repayment (-40).\n\nNet = 500 - 50 + 800 - 40 = 1,210.\n\nBut answer is 1,160. Recalculating: 500 + 800 - 50 - 40 = 1,210.\n\nGiven answer C (1,160), the cash flow from financing is 1,160."
+      "explanation": "Financing activities: Capital received (+500), Dividend paid (-50), Loan received (+800), Loan repayment (-40).\n\nNet = 500 - 50 + 800 - 40 = 1,210."
     },
     {
       "module": 7,
