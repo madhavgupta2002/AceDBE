@@ -134,48 +134,113 @@ $$Assets = Liabilities + (Capital + Revenue - Expenses - Dividends)$$
 ## **1. Adjustment Entries**
 Financial statements must reflect a "True and Fair View." Adjustments are necessary to account for Accruals, Deferrals, and Non-Cash items, adhering to the **Matching Concept** (Revenue matched with expenses of the same period).
 
+
 ### **A. Adjustments Related to Income**
-| Scenario | Impact on P&L (Income) | Impact on Balance Sheet | Entry |
-| :--- | :--- | :--- | :--- |
-| **Accrued Income** (e.g., Interest earned on FD but not received) | Increases Income | **Asset** (Accrued Interest) | Dr. Accrued Interest / Cr. Interest Income |
-| **Percentage of Completion** (Long-term contracts like construction) | Recognize revenue proportional to work done | **Asset** (Unbilled Revenue) | Recognize revenue based on $\%$ of work completed in the current year. |
+
+- **Accrued Income:** For example, interest earned on a fixed deposit but not yet received.
+    - This increases income in the Profit and Loss account.
+    - It is shown as an asset in the Balance Sheet (Accrued Interest).
+    - **Entry:**  
+        | Dr.               | Cr.              |
+        |-------------------|------------------|
+        | Accrued Interest  | Interest Income  |
+
+- **Percentage of Completion:** Used for long-term contracts (like construction), where revenue is recognized in proportion to the work completed.
+    - Revenue is recognized in the Profit and Loss account based on the degree of completion.
+    - The unbilled portion is shown as an asset in the Balance Sheet (Unbilled Revenue).
+    - **Entry:**  
+        | Dr.             | Cr.         |
+        |-----------------|-------------|
+        | Unbilled Revenue| Revenue     |
+
+---
 
 ### **B. Adjustments Related to Expenses**
-| Scenario | Impact on P&L (Expense) | Impact on Balance Sheet | Entry |
-| :--- | :--- | :--- | :--- |
-| **Prepaid Expenses** (e.g., Insurance paid in Oct for full year) | Reduces Expense (Remove future period portion) | **Asset** (Prepaid Insurance) | Dr. Prepaid Insurance / Cr. Insurance Expense |
-| **Outstanding Expenses** (e.g., Dec electricity bill paid in Jan) | Increases Expense (Record current period cost) | **Liability** (Outstanding Exp) | Dr. Electricity Expense / Cr. Outstanding Electricity |
+
+- **Prepaid Expenses:** For example, insurance paid in October covering the whole year.
+    - The portion related to future periods reduces expense in the Profit and Loss account.
+    - The prepaid amount is shown as an asset in the Balance Sheet (Prepaid Insurance).
+    - **Entry:**  
+        | Dr.               | Cr.                |
+        |-------------------|--------------------|
+        | Prepaid Insurance | Insurance Expense  |
+
+- **Outstanding Expenses:** For example, electricity bill for December paid in January.
+    - The expense is recognized in the Profit and Loss account in the current period (increases expense).
+    - The unpaid amount is shown as a liability in the Balance Sheet (Outstanding Expenses).
+    - **Entry:**  
+        | Dr.                  | Cr.                      |
+        |----------------------|--------------------------|
+        | Electricity Expense  | Outstanding Electricity  |
+
+---
 
 ### **C. Provisions (Estimations)**
 Used when the exact amount is unknown but the liability is probable.
 *   **Provision for Bad Debts:**
     *   Estimating % of receivables that may default.
-    *   Entry: **Dr. Bad Debt Expense** | **Cr. Provision for Doubtful Debts**.
+    *   Entry:  
+        | Dr.              | Cr.                           |
+        |------------------|-------------------------------|
+        | Bad Debt Expense | Provision for Doubtful Debts  |
     *   *Presentation:* Deducted from Sundry Debtors (Asset side) or shown as Contra-Asset.
 *   **Provision for Warranty:**
     *   Matching sale revenue with future repair costs.
-    *   Entry (Creation): **Dr. Warranty Expense** | **Cr. Provision for Warranty**.
-    *   Entry (Actual Repair): **Dr. Provision for Warranty** | **Cr. Inventory/Cash** (No P&L impact at time of repair).
+    *   Entry (Creation):  
+        | Dr.              | Cr.                   |
+        |------------------|-----------------------|
+        | Warranty Expense | Provision for Warranty|
+    *   Entry (Actual Repair):  
+        | Dr.                     | Cr.            |
+        |-------------------------|----------------|
+        
+        | Provision for Warranty  | Inventory/Cash |
+        *(No P&L impact at time of repair.)*
 *   **Gratuity:**
     *   Accrued liability for employee service (e.g., 15 days salary per year).
-    *   Entry: **Dr. Gratuity Expense** | **Cr. Provision for Gratuity** (Long-term Liability).
+    *   Entry:  
+        | Dr.             | Cr.                   |
+        |-----------------|-----------------------|
+        | Gratuity Expense| Provision for Gratuity|
+        *(Long-term Liability)*
+
+---
 
 ### **D. Inventory Consumption Adjustment**
 Since purchase entries record inflow to stores, consumption must be calculated to determine the expense.
 *   **Formula:** $$Material Consumed = Opening Stock + Purchases - Closing Stock$$
 *   **Entry:**
-    *   Dr. Cost of Material Consumed (Expense)
-    *   Cr. Inventory (Asset)
+    | Dr.                      | Cr.       |
+    |--------------------------|-----------|
+    | Cost of Material Consumed| Inventory |
+
+---
 
 ### **E. Depreciation (Fixed Assets)**
 Allocation of asset cost over its useful life.
 *   **Nature:** Non-cash expense.
-*   **Entry:** **Dr. Depreciation Expense** | **Cr. Accumulated Depreciation**.
+*   **Entry:**  
+    | Dr.                  | Cr.                       |
+    |----------------------|---------------------------|
+    | Depreciation Expense | Accumulated Depreciation  |
 *   **Presentation:** Shown as a deduction from the Gross Block (Asset) in the Balance Sheet to arrive at Net Block.
 
+---
+
 ### **F. Revaluation of Financial Assets**
-*   **Fair Value Through Profit & Loss (FVTPL):** Short-term/Trading assets. Gain/Loss goes to **P&L**.
-*   **Fair Value Through Other Comprehensive Income (FVTOCI):** Long-term investments. Gain/Loss goes to **Other Equity** (Reserves), not P&L.
+*   **Fair Value Through Profit & Loss (FVTPL):** Short-term/Trading assets. Gain/Loss goes to **P&L**.  
+    | Dr.                           | Cr.                |
+    |-------------------------------|--------------------|
+    | Investment (if loss)/         | Gain on Investment |
+    | Loss on Investment (if gain)  | Investment         |
+*   **Fair Value Through Other Comprehensive Income (FVTOCI):** Long-term investments. Gain/Loss goes to **Other Equity** (Reserves), not P&L.  
+    | Dr.                         | Cr.              |
+    |-----------------------------|------------------|
+    | Investment (if gain)        | OCI - Reserves   |
+    | OCI - Reserves (if loss)    | Investment       |
+
+---
+
 
 ---
 
