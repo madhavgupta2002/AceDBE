@@ -961,7 +961,7 @@
     {
       "module": 8,
       "question_id": "CLA8_Q2",
-      "question_text": "Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Total Asset Turnover Ratio.",
+      "question_text": "The Balance Sheet and Income Statement of NatureRemedy Pharma Ltd has the following values. Equity: Rs. 80; Non-current Liabilities: Rs. 120; Current Liabilities: Rs. 50; Non-current assets (mainly fixed assets): Rs. 160; Inventory: Rs. 40; Receivables: Rs. 50; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: Rs. 60; Interest: Rs. 10; Taxes: Rs. 10. Find Total Asset Turnover Ratio.",
       "question_type": "MCQ",
       "options": {
         "A": "1.20",
@@ -969,8 +969,8 @@
         "C": "1.00",
         "D": "0.12"
       },
-      "correct_option_label": "A",
-      "explanation": "Total Assets = 160 + 40 + 50 = 250.\n\nAsset Turnover = Sales / Total Assets = 240 / 250 = 0.96.\n\nBut answer is 1.20. Recalculating: If PBIT = 60, and we need turnover, perhaps Sales = 240, Assets = 200?\n\nGiven answer A (1.20), Asset Turnover = 1.20."
+      "correct_option_label": "B",
+      "explanation": "Total Assets are calculated as the sum of non-current assets and current assets. Non-current assets = Rs. 160. Current assets = Inventory (Rs. 40) + Receivables (Rs. 50) = Rs. 90. Therefore, Total Assets = 160 + 90 = Rs. 250. Total Asset Turnover Ratio = Sales / Total Assets = 240 / 250 = 0.96."
     },
     {
       "module": 8,
