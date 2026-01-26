@@ -193,8 +193,8 @@ Used when the exact amount is unknown but the liability is probable.
     *   Entry (Actual Repair):  
         | Dr.                     | Cr.            |
         |-------------------------|----------------|
-        
         | Provision for Warranty  | Inventory/Cash |
+
         *(No P&L impact at time of repair.)*
 *   **Gratuity:**
     *   Accrued liability for employee service (e.g., 15 days salary per year).
