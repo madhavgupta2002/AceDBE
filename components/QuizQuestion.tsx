@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Question } from '@/lib/types';
-import { CheckCircle, XCircle, Check } from 'lucide-react';
+import { CheckCircle, XCircle, Check, RotateCcw } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -11,6 +11,7 @@ import rehypeKatex from 'rehype-katex';
 interface QuizQuestionProps {
   question: Question;
   onAnswer: (answer: string[]) => void;
+  onClearResponse?: () => void;
   selectedAnswer: string[] | null;
   showResult: boolean;
 }
@@ -18,6 +19,7 @@ interface QuizQuestionProps {
 const QuizQuestion: React.FC<QuizQuestionProps> = ({
   question,
   onAnswer,
+  onClearResponse,
   selectedAnswer,
   showResult,
 }) => {
@@ -85,19 +87,32 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   if (isSubjective) {
     return (
       <div className="w-full max-w-3xl mx-auto">
-        <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
-          <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-yellow-900/50 text-yellow-300 border border-yellow-800 text-xs font-semibold rounded">
-            Subjective
-          </span>
-          {question.module && (
-            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-indigo-900/50 text-indigo-300 border border-indigo-800 text-xs font-semibold rounded">
-              Mod {question.module}
+        <div className="flex flex-wrap items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+          <div className="flex flex-wrap gap-1.5 sm:gap-2">
+            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-yellow-900/50 text-yellow-300 border border-yellow-800 text-xs font-semibold rounded">
+              Subjective
             </span>
-          )}
-          {question.source && (
-            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-900/50 text-purple-300 border border-purple-800 text-xs font-semibold rounded truncate max-w-[150px] sm:max-w-none">
-              {question.source}
-            </span>
+            {question.module && (
+              <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-indigo-900/50 text-indigo-300 border border-indigo-800 text-xs font-semibold rounded">
+                Mod {question.module}
+              </span>
+            )}
+            {question.source && (
+              <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-900/50 text-purple-300 border border-purple-800 text-xs font-semibold rounded truncate max-w-[150px] sm:max-w-none">
+                {question.source}
+              </span>
+            )}
+          </div>
+
+          {onClearResponse && selectedAnswer && (
+            <button
+              onClick={onClearResponse}
+              className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-bold text-gray-400 hover:text-white bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700 hover:border-gray-500 rounded shadow-sm transition-all active:scale-95"
+              title="Clear response"
+            >
+              <RotateCcw size={12} className="text-gray-500" />
+              Clear
+            </button>
           )}
         </div>
         <div className="text-lg sm:text-2xl mb-4 sm:mb-6 text-white prose prose-invert prose-indigo max-w-none">
@@ -148,21 +163,34 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   // Render regular MCQ question
   return (
     <div className="w-full max-w-3xl mx-auto">
-      <div className="flex flex-wrap gap-1.5 sm:gap-2 mb-3 sm:mb-4">
-        {isMultipleAnswer && (
-          <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-amber-900/50 text-amber-300 border border-amber-800 text-xs font-semibold rounded">
-            Multiple Correct
-          </span>
-        )}
-        {question.module && (
-          <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-indigo-900/50 text-indigo-300 border border-indigo-800 text-xs font-semibold rounded">
-            Mod {question.module}
-          </span>
-        )}
-        {question.source && (
-          <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-900/50 text-purple-300 border border-purple-800 text-xs font-semibold rounded truncate max-w-[150px] sm:max-w-none">
-            {question.source}
-          </span>
+      <div className="flex flex-wrap items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+        <div className="flex flex-wrap gap-1.5 sm:gap-2">
+          {isMultipleAnswer && (
+            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-amber-900/50 text-amber-300 border border-amber-800 text-xs font-semibold rounded">
+              Multiple Correct
+            </span>
+          )}
+          {question.module && (
+            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-indigo-900/50 text-indigo-300 border border-indigo-800 text-xs font-semibold rounded">
+              Mod {question.module}
+            </span>
+          )}
+          {question.source && (
+            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-900/50 text-purple-300 border border-purple-800 text-xs font-semibold rounded truncate max-w-[150px] sm:max-w-none">
+              {question.source}
+            </span>
+          )}
+        </div>
+
+        {onClearResponse && selectedAnswer && (
+          <button
+            onClick={onClearResponse}
+            className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-bold text-gray-400 hover:text-white bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700 hover:border-gray-500 rounded shadow-sm transition-all active:scale-95"
+            title="Clear response"
+          >
+            <RotateCcw size={12} className="text-gray-500" />
+            Clear
+          </button>
         )}
       </div>
       <div className="text-lg sm:text-2xl mb-4 sm:mb-6 text-white prose prose-invert prose-indigo max-w-none">
