@@ -516,3 +516,156 @@ A winning idea must sit at the intersection of:
 *   **SCQA (The Flow):** **S**ituation (establish ground) -> **C**omplication (sell the problem) -> **Q**uestion (central challenge) -> **A**nswer (your idea).
 *   **Pyramid Principle (The Logic):** **Answer** at the top -> Supported by **Arguments** -> Supported by **Data/Evidence** at the base.
 *   **SUCCESS Principle (The Elements):** **S**imple, **U**nexpected, **C**oncrete, **C**redible, **E**motional, **S**tories.
+
+---
+
+# 📘 CASE STUDY ANALYSIS – FRAMEWORK SUMMARY
+
+---
+
+## 1️⃣ Problem Exploration & Root Cause Frameworks
+
+### 🔹 1.1 5 Whys Analysis
+**Purpose:** Identify the *true root cause*, not just symptoms.
+**How to Apply:**
+* Start with the **problem statement**
+* Ask **“Why did this happen?”**
+* Repeat 5 times (or until the cause is **actionable & controllable**)
+* **Example:** *Problem: The machine stopped. 1. Fuse blew. 2. Bearing wasn't lubricated. 3. Lubrication pump failed. 4. Shaft was worn. 5. Metal shavings got in (Root Cause: No filter on the intake).*
+
+### 🔹 1.2 Ishikawa / Fishbone Diagram
+**Purpose:** Structured brainstorming of all possible causes.
+| Category | Meaning |
+| :--- | :--- |
+| Man | Skills, training, motivation |
+| Machine | Tools, software, infrastructure |
+| Material | Inputs, data quality |
+| Method | SOPs, workflows |
+| Measurement | KPIs, feedback loops |
+| Mother Nature | Culture, environment, regulations |
+* **Example:** *Analyzing "High Employee Turnover." Man (lack of training), Method (toxic management style), Mother Nature (uncompetitive industry pay).*
+
+### 🔹 1.3 5W + 2H Technique
+**Purpose:** Complete situational clarity before jumping to solutions.
+| Element | Question |
+| :--- | :--- |
+| Who | Stakeholders involved |
+| What | Exactly is happening |
+| When | Timing, frequency |
+| Where | Location/process step |
+| Why | Reason/importance |
+| How | Process flow |
+| How Much | Cost, impact, volume |
+* **Example:** *Defining a "Software Bug." Who (Premium users), What (App crashes on login), When (After v2.1 update), How Much (Affects 15% of users).*
+
+### 🔹 1.4 Stakeholder Map
+**Purpose:** Understand *who matters and why*.
+1. Identify all stakeholders
+2. Map **Pains** (risks) & **Gains** (incentives)
+3. Assess **Power vs Interest**
+* **Example:** *New Factory Build. High Power/High Interest: Local Government. High Power/Low Interest: National Environment Agency.*
+
+### 🔹 1.5 Journey Map
+**Purpose:** Identify *where exactly* the experience breaks.
+* Timeline, Touchpoints, Emotions, Pain Points.
+* **Example:** *Ordering Food. Stage: Delivery. Touchpoint: App Notification. Pain Point: "Driver is nearby" but stays in one spot for 10 minutes (Frustration).*
+
+---
+
+## 2️⃣ Ideation & Lateral Thinking Techniques
+
+### 🔹 2.1 SCAMPER
+**Purpose:** Systematic creativity.
+| Letter | Meaning | Example |
+| :--- | :--- | :--- |
+| S | Substitute | Use plastic instead of glass to reduce weight. |
+| C | Combine | Phone + Camera = Smartphone. |
+| A | Adapt | Use a car suspension idea for a mountain bike. |
+| M | Modify | "Magnify" a candy bar into a "Giant" size. |
+| P | Put to Use | Use old shipping containers as pop-up cafes. |
+| E | Eliminate | Remove the headphone jack to make a phone thinner. |
+| R | Reverse | Pay-before-you-eat (Fast food) vs. Pay-after. |
+
+### 🔹 2.2 Six Thinking Hats
+**Purpose:** Balanced decision-making.
+* **Example:** *Evaluating a new "AI Chatbot" policy. White: Costs $50k. Red: Staff fear job loss. Black: It might hallucinate. Yellow: 24/7 support. Green: Can it write poems for customers? Blue: Let’s set a 3-month trial.*
+
+### 🔹 2.3 Nine Windows (TRIZ)
+**Purpose:** Break “present-only” thinking by looking at Sub-systems/Super-systems across Time.
+* **Example:** *Evolution of the Car. Past/System: Model T. Present/System: EV Tesla. Future/System: Self-driving pods. Future/Super-system: Smart cities with zero traffic lights.*
+
+### 🔹 2.4 Analogous Thinking
+**Purpose:** Import proven ideas from other domains.
+* **Example:** *A hospital looking to speed up patient transfers looks at an **F1 Pit Stop crew** to learn high-speed coordination.*
+
+### 🔹 2.5 Looking at Extremes
+**Purpose:** Design for edge users → benefit all.
+* **Example:** *Designing a banking app for **90-year-olds** (High contrast, large buttons) results in an interface that is easier for **everyone** to use in bright sunlight.*
+
+### 🔹 2.6 Challenging Assumptions
+**Purpose:** Break hidden constraints.
+* **Example:** *Assumption: "People want to go to a store to rent movies." **Netflix** challenged this: "What if the movie comes to them via mail/internet?"*
+
+---
+
+## 3️⃣ Prioritization & Strategic Frameworks
+
+### 🔹 3.1 Pareto Law (80/20)
+**Purpose:** Focus on what truly matters.
+* **Example:** *In e-commerce, **20% of products** usually generate **80% of the revenue**. Focus marketing on that 20%.*
+
+### 🔹 3.2 MECE Principle
+**Purpose:** Mutually Exclusive, Collectively Exhaustive (No gaps/overlaps).
+* **Example:** *Categorizing a workforce by age: [Under 30], [30-50], [Over 50]. Everyone fits in one (ME), and all ages are covered (CE).*
+
+### 🔹 3.3 Impact–Frequency Matrix
+* **Example:** *IT Support. High Impact/High Frequency: "Server Down" (Perma-Fix). Low Impact/High Frequency: "Forgot Password" (Quick Fix/Automation).*
+
+### 🔹 3.4 Impact–Time Matrix
+* **Example:** *Marketing. High Impact/Low Time: "Send promo email to existing list" (Star). High Impact/High Time: "Rebranding the entire company" (Pipeline).*
+
+### 🔹 3.5 Theory of Constraints (TOC)
+**Purpose:** Optimize the system via the bottleneck.
+* **Example:** *A factory can make 100 engines but only 50 car frames. The **frame shop** is the bottleneck; adding more engine workers is a waste of money.*
+
+---
+
+## 4️⃣ Communication & Acceptability Frameworks
+
+### 🔹 4.1 FAB Model
+* **Example (Selling a Cloud Drive):** *Feature: 1TB Space. Advantage: Store 200,000 photos. Benefit: Never lose a precious family memory again.*
+
+### 🔹 4.2 SCQA Structure
+**Situation → Complication → Question → Answer**
+* **Example:** *Sales are up (S), but profits are down due to shipping costs (C). How can we reduce costs without losing sales? (Q). We should switch to local distributors (A).*
+
+### 🔹 4.3 Pyramid Principle
+**Logic:** Answer first → then reasons → then data.
+* **Example:** *"We should acquire Company X (Answer). Reasons: 1. It expands our reach. 2. It has unique tech. Data: Market share stats and patent lists."*
+
+### 🔹 4.4 SUCCESS Principle
+**Sticky Ideas Checklist:** Simple, Unexpected, Concrete, Credible, Emotional, Stories.
+* **Example:** *The "This is your brain on drugs" egg-frying commercial (Simple, Concrete, Emotional).*
+
+### 🔹 4.5 Innovation Sweet Spot
+**Intersection of:** Desirable (Do they want it?), Feasible (Can we build it?), Viable (Can we make money?).
+* **Example:** *The original iPhone (People wanted it, technology finally allowed it, and users were willing to pay $499).*
+
+---
+
+## 5️⃣ Mindset & Resilience Models
+
+### 🔹 5.1 ITC Resilience Model
+* **Example:** *Dealing with a rude client. Ignore (50%—don't take it personally), Tolerate (40%—stay professional to close the deal), Confront (10%—if they use abusive language).*
+
+### 🔹 5.2 Graham Wallis Creative Process
+1. Preparation, 2. Incubation, 3. Illumination, 4. Verification.
+* **Example:** *Researching a logo (Prep), stepping away for a walk (Incubation), the "Aha!" moment (Illumination), testing the logo on a shirt (Verification).*
+
+### 🔹 5.3 Listening Frameworks
+* **Reductive (Decision):** Listening to a pitch to say "Yes" or "No."
+* **Expansive (Exploration):** Listening to a teammate to build on their "crazy" idea.
+
+### 🔹 5.4 RASA Listening
+**Receive → Appreciate → Summarize → Ask**
+* **Example:** *Client: "I'm worried about the price." Consultant: "I hear you (R). Thanks for being honest (A). So, the budget is tight for this quarter? (S). What figure were you aiming for? (A)."*

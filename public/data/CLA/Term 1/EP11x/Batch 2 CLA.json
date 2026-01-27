@@ -734,7 +734,9 @@
       "status": "Answered",
       "options": {
         "A": "It's a True statement.",
-        "B": "It's a False statement"
+        "B": "It's a False statement",
+        "C": "It depends on the context",
+        "D": "None"
       },
       "correct_option_label": "A",
       "explanation": "Every problem is a symptom of an underlying root cause. Understanding this helps identify the real issue rather than just treating surface-level manifestations."
@@ -836,10 +838,12 @@
       "question_type": "MCQ",
       "status": "Answered",
       "options": {
-        "A": "Ideation",
-        "B": "Critical thinking"
+        "A": "Governance",
+        "B": "Hunch",
+        "C": "Ideation",
+        "D": "Critical thinking"
       },
-      "correct_option_label": "A",
+      "correct_option_label": "C",
       "explanation": "The Green hat in Six Thinking Hats represents ideation, creativity, and new ideas, encouraging innovative thinking and exploration of alternatives without judgment."
     },
     {
