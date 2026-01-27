@@ -63,7 +63,7 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
     const router = useRouter();
 
     return (
-        <nav className="bg-gradient-to-r from-slate-900 via-slate-800/95 to-slate-900 backdrop-blur-xl border-b border-slate-600/30 sticky top-0 z-10 shadow-xl shadow-black/30">
+        <nav className="bg-gradient-to-r from-slate-900 via-slate-800/95 to-slate-900 backdrop-blur-xl border-b border-slate-600/30 sticky top-0 z-10 shadow-xl shadow-black/30 print:hidden">
             <div className="max-w-5xl mx-auto px-8 sm:px-16 lg:px-24 py-3 sm:py-4 flex items-center justify-between">
                 {/* Left section - Back button + Logo */}
                 <div className="flex items-center space-x-2 sm:space-x-3">
