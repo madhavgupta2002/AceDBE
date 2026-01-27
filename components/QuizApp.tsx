@@ -108,6 +108,31 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
           moveQuestion('next');
         }
       }
+
+      // Handle A, B, C, D key presses for option selection
+      const key = event.key.toUpperCase();
+      if (['A', 'B', 'C', 'D'].includes(key)) {
+        const currentQuestion = quizState.questions[quizState.currentQuestionIndex];
+        // Only handle if question has options and hasn't been answered yet
+        if (currentQuestion?.options &&
+          Object.keys(currentQuestion.options).includes(key) &&
+          quizState.answeredQuestions[quizState.currentQuestionIndex] === null &&
+          !currentQuestion.isSubjective) {
+          const isMultipleAnswer = currentQuestion.correctAnswer.length > 1;
+          if (isMultipleAnswer) {
+            // For multiple answer questions, toggle selection
+            const currentSelections = quizState.selectedAnswer || [];
+            if (currentSelections.includes(key)) {
+              handleAnswer(currentSelections.filter(opt => opt !== key));
+            } else {
+              handleAnswer([...currentSelections, key]);
+            }
+          } else {
+            // For single answer questions, select directly
+            handleAnswer([key]);
+          }
+        }
+      }
     };
 
     window.addEventListener('keydown', handleKeyPress);
@@ -117,6 +142,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     quizState.questions.length,
     quizCompleted,
     quizState.totalQuestions,
+    quizState.questions,
+    quizState.answeredQuestions,
+    quizState.selectedAnswer,
   ]);
 
   const shuffleArray = <T,>(array: T[]): T[] => {

@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-import { ArrowLeft, BookOpen, ChevronDown, Type } from 'lucide-react';
+import { ArrowLeft, BookOpen, ChevronDown, Type, Printer } from 'lucide-react';
 import { loadNotes } from '@/lib/notesLoader';
 import { getSubjectByCode } from '@/lib/subjectMapping';
 import Header from '@/components/Header';
@@ -159,6 +159,10 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
     }
   };
 
+  const handlePrint = () => {
+    window.print();
+  };
+
   if (!subject) {
     return (
       <div className="min-h-screen bg-gray-900 text-center py-12 px-4">
@@ -175,10 +179,175 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
 
   return (
     <div className="min-h-screen bg-gray-900">
+      {/* Print-specific styles */}
+      <style jsx global>{`
+        @media print {
+          /* Hide non-essential elements */
+          .print\:hidden {
+            display: none !important;
+          }
+          
+          /* Reset page background to white */
+          html, body {
+            background: white !important;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+          }
+          
+          /* Main container styles */
+          .min-h-screen {
+            min-height: auto !important;
+            background: white !important;
+          }
+          
+          /* Article content styles for print */
+          article {
+            max-width: 100% !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            color: #1a1a1a !important;
+            font-size: 12pt !important;
+            line-height: 1.6 !important;
+          }
+          
+          /* Text colors for print */
+          article h1, article h2, article h3, article h4, article h5, article h6 {
+            color: #000 !important;
+            page-break-after: avoid;
+          }
+          
+          article p, article li, article span, article td, article th {
+            color: #1a1a1a !important;
+          }
+          
+          article strong {
+            color: #000 !important;
+          }
+          
+          article em {
+            color: #333 !important;
+          }
+          
+          /* Link styling for print */
+          article a {
+            color: #2563eb !important;
+            text-decoration: underline !important;
+          }
+          
+          /* Code blocks styling */
+          article code {
+            background: #f3f4f6 !important;
+            color: #4f46e5 !important;
+            border: 1px solid #e5e7eb !important;
+          }
+          
+          article pre {
+            background: #f3f4f6 !important;
+            border: 1px solid #e5e7eb !important;
+            page-break-inside: avoid;
+          }
+          
+          /* Table styling */
+          article table {
+            border-collapse: collapse !important;
+          }
+          
+          article th, article td {
+            border: 1px solid #d1d5db !important;
+            background: white !important;
+          }
+          
+          article thead {
+            background: #f3f4f6 !important;
+          }
+          
+          article th {
+            background: #f3f4f6 !important;
+          }
+          
+          /* Blockquote styling */
+          article blockquote {
+            border-left: 4px solid #6366f1 !important;
+            background: #f5f5ff !important;
+            color: #333 !important;
+          }
+          
+          /* Horizontal rule */
+          article hr {
+            border-color: #d1d5db !important;
+          }
+          
+          /* List markers */
+          article li::marker {
+            color: #6366f1 !important;
+          }
+          
+          /* Hide TOC sidebar */
+          aside {
+            display: none !important;
+          }
+          
+          /* Make article full width */
+          .lg\:col-span-9 {
+            grid-column: 1 / -1 !important;
+          }
+          
+          /* Print footer with website link */
+          .print-footer {
+            display: block !important;
+            text-align: center;
+            padding: 24pt 0 12pt 0;
+            margin-top: 24pt;
+            font-size: 11pt;
+            color: #1a1a1a !important;
+            border-top: 1px solid #e5e7eb;
+          }
+          
+          /* Page footer with AceDBE link on each page */
+          @page {
+            margin: 0.75in;
+            @bottom-right {
+              content: "AceDBE";
+              font-size: 9pt;
+              color: #6366f1;
+            }
+          }
+          
+          /* Alternative: Add running header using CSS */
+          .page-footer {
+            position: fixed;
+            bottom: 0.5in;
+            right: 0.75in;
+            font-size: 9pt;
+            color: #6366f1 !important;
+          }
+          
+          /* Add page breaks control */
+          article h1 {
+            page-break-before: auto;
+          }
+          
+          article h2, article h3 {
+            page-break-after: avoid;
+          }
+          
+          article pre, article table, article blockquote {
+            page-break-inside: avoid;
+          }
+          
+
+        }
+        
+        /* Hide print footer on screen */
+        .print-footer {
+          display: none;
+        }
+      `}</style>
+
       <Header showBackButton backLink={`/${subjectCode}`} />
 
       {/* Notes Header - Font Switcher and Title */}
-      <div className="bg-gray-800 border-b border-gray-700 sticky top-[57px] sm:top-[61px] z-10">
+      <div className="bg-gray-800 border-b border-gray-700 sticky top-[57px] sm:top-[61px] z-10 print:hidden">
         <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8 py-3 sm:py-4">
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1">
@@ -244,6 +413,16 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
               <span className="text-sm sm:text-base text-gray-200 font-bold">A</span>
               <span className="text-[10px] sm:text-xs text-gray-400 hidden sm:inline ml-1">{fontSize}px</span>
             </div>
+
+            {/* Print Button */}
+            <button
+              onClick={handlePrint}
+              className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 bg-indigo-700 hover:bg-indigo-600 rounded-lg transition-colors print:hidden"
+              aria-label="Print notes"
+              title="Print notes"
+            >
+              <Printer className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+            </button>
           </div>
         </div>
       </div>
@@ -496,6 +675,18 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
               </ReactMarkdown>
             </article>
           </div>
+        )}
+
+        {/* Print footer - shown only when printing (appears after content) */}
+        {markdown && (
+          <>
+            <div className="print-footer">
+              Your free IIMB BBA DBE exam prep companion
+            </div>
+            <div className="page-footer">
+              <a href="http://acedbe.vercel.app/" style={{ color: '#6366f1', textDecoration: 'none' }}>AceDBE</a>
+            </div>
+          </>
         )}
       </div>
     </div>
