@@ -147,7 +147,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
         </div>
         {/* Show explanation for subjective questions after viewing sample solution */}
         {(selectedAnswer || showResult) && question.explanation && (
-          <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-blue-900/30 border border-blue-700 rounded-lg prose prose-invert prose-indigo max-w-none">
+          <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-blue-900/30 border border-blue-700 rounded-lg prose prose-invert prose-indigo max-w-none leading-loose">
             <ReactMarkdown
               remarkPlugins={[remarkGfm, remarkMath]}
               rehypePlugins={[rehypeKatex]}
@@ -246,7 +246,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
         ))}
       </div>
       {showResult && selectedAnswer && question.explanation && (
-        <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-blue-900/30 border border-blue-700 rounded-lg prose prose-invert prose-indigo max-w-none">
+        <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-blue-900/30 border border-blue-700 rounded-lg prose prose-invert prose-indigo max-w-none leading-loose">
           <ReactMarkdown
             remarkPlugins={[remarkGfm, remarkMath]}
             rehypePlugins={[rehypeKatex]}
