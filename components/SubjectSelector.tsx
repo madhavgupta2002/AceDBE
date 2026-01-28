@@ -12,7 +12,8 @@ import {
   Building2,
   BookOpen,
   Youtube,
-  ClipboardList
+  ClipboardList,
+  ExternalLink
 } from 'lucide-react';
 import { SUBJECTS, getSubjectsByTermFiltered } from '@/lib/subjectMapping';
 import { useRouter } from 'next/navigation';
@@ -198,6 +199,33 @@ const SubjectSelector: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Disclaimer Section */}
+      <div className="mt-12 py-6 border-t border-gray-800 flex flex-col items-center text-center">
+        <p className="text-xs text-gray-500 mb-3 font-bold">
+          Disclaimer: Do not rely solely on this for your preparation. Refer official sources for more information.
+        </p>
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+          <a
+            href="https://apps.iimbx.edu.in/learner-dashboard/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center text-xs text-indigo-400 hover:text-indigo-300 transition-colors"
+          >
+            <ExternalLink className="w-3 h-3 mr-1" />
+            Official Website
+          </a>
+          <a
+            href="https://iimblr1-my.sharepoint.com/:f:/g/personal/jayshreeg24_iimb_ac_in/IgB09mAJCjj4SIAg2PiId53ZAedwU6A7su4Jl1zLwtWSxrk?e=CjmlGO"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center text-xs text-indigo-400 hover:text-indigo-300 transition-colors"
+          >
+            <ExternalLink className="w-3 h-3 mr-1" />
+            Academic Cell Repository
+          </a>
+        </div>
       </div>
     </div>
   );
