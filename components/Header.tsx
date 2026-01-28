@@ -1,6 +1,6 @@
 'use client';
 
-import { Linkedin } from 'lucide-react';
+// import { Linkedin } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 
 interface HeaderProps {
@@ -104,7 +104,7 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
                 </div>
 
                 {/* Right section - Connect button */}
-                <a
+                {/* <a
                     href="https://www.linkedin.com/in/madhavgupta2002/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -113,7 +113,7 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
                 >
                     <Linkedin className="h-3.5 w-3.5 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:scale-110" />
                     <span className="hidden sm:inline">Connect</span>
-                </a>
+                </a> */}
             </div>
         </nav>
     );

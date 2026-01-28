@@ -42,17 +42,10 @@ export default function PrivacyPolicy() {
                 <section className="mb-8 border-t border-gray-800 pt-8">
                     <h2 className="text-2xl font-semibold mb-4">4. Third-Party Links</h2>
                     <p className="leading-relaxed mb-4">
-                        Our website contains links to other websites (like YouTube for playlists and LinkedIn). Clicking on those links may allow third parties to collect or share data about you. We do not control these third-party websites and are not responsible for their privacy statements.
+                        Our website contains links to other websites (like YouTube for playlists). Clicking on those links may allow third parties to collect or share data about you. We do not control these third-party websites and are not responsible for their privacy statements.
                     </p>
                 </section>
 
-                <section className="mb-8 border-t border-gray-800 pt-8">
-                    <h2 className="text-2xl font-semibold mb-4">5. Contact Us</h2>
-                    <p className="leading-relaxed mb-4">
-                        If you have any questions about this privacy policy, please contact us via LinkedIn:
-                        <a href="https://www.linkedin.com/in/madhavgupta2002/" className="text-blue-500 hover:underline ml-1" target="_blank" rel="noopener noreferrer">Madhav Gupta</a>.
-                    </p>
-                </section>
 
                 <div className="mt-12">
                     <a href="/" className="inline-block px-6 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors">
