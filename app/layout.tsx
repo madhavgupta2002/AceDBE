@@ -148,14 +148,6 @@ export default function RootLayout({
                   Madhav Gupta
                 </a>
               </p> */}
-              {/* <nav>
-                <a
-                  href="/privacy"
-                  className="text-[10px] text-gray-600 hover:text-gray-400 transition-colors"
-                >
-                  Privacy Policy
-                </a>
-              </nav> */}
             </div>
           </footer>
         </DarkModeProvider>
