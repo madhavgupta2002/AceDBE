@@ -136,17 +136,27 @@ export default function RootLayout({
         <DarkModeProvider>
           {children}
           <footer className="w-full py-6 mt-auto">
-            <p className="text-center text-xs text-gray-500">
-              Made by{' '}
-              <a
-                href="https://www.linkedin.com/in/madhavgupta2002/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-gray-400 underline underline-offset-2 transition-colors"
-              >
-                Madhav Gupta
-              </a>
-            </p>
+            <div className="flex flex-col items-center gap-2">
+              <p className="text-center text-xs text-gray-500">
+                Made by{' '}
+                <a
+                  href="https://www.linkedin.com/in/madhavgupta2002/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gray-400 underline underline-offset-2 transition-colors"
+                >
+                  Madhav Gupta
+                </a>
+              </p>
+              <nav>
+                <a
+                  href="/privacy"
+                  className="text-[10px] text-gray-600 hover:text-gray-400 transition-colors"
+                >
+                  Privacy Policy
+                </a>
+              </nav>
+            </div>
           </footer>
         </DarkModeProvider>
       </body>
