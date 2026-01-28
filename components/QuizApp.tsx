@@ -1129,7 +1129,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
               )}
 
               {/* Feedback Box */}
-              <a
+              {/* <a
                 href="https://www.linkedin.com/in/madhavgupta2002/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -1138,7 +1138,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                 <p className="text-xs text-gray-400 text-center">
                   Please report incorrect answers or bugs
                 </p>
-              </a>
+              </a> */}
             </div>
           )}
 
@@ -1206,7 +1206,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                 </button>
 
                 {/* Feedback Box */}
-                <a
+                {/* <a
                   href="https://www.linkedin.com/in/madhavgupta2002/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -1215,7 +1215,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
                   <p className="text-xs text-gray-400 text-center">
                     Please report incorrect answers or bugs
                   </p>
-                </a>
+                </a> */}
               </div>
             </div>
           )}

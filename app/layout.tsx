@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   },
   description: 'Ace your BBA-DBE exams with comprehensive notes, compiled playlists, previous year questions, and interactive quizzes for every subject.',
   keywords: ['BBA', 'DBE', 'IIMB', 'Practice Questions', 'Exam Prep', 'AceDBE', 'Notes', 'Quizzes'],
-  authors: [{ name: 'Madhav Gupta' }],
-  creator: 'Madhav Gupta',
+  // authors: [{ name: 'Madhav Gupta' }],
+  // creator: 'Madhav Gupta',
   publisher: 'AceDBE',
   formatDetection: {
     email: false,
@@ -135,9 +135,9 @@ export default function RootLayout({
       <body className={`${inter.className} bg-gray-900 ${merriweather.variable} ${openSans.variable} ${lora.variable} ${roboto.variable}`}>
         <DarkModeProvider>
           {children}
-          <footer className="w-full py-6 mt-auto">
+          <footer className="w-full py-6 mt-auto border-t border-gray-800/50">
             <div className="flex flex-col items-center gap-2">
-              <p className="text-center text-xs text-gray-500">
+              {/* <p className="text-center text-xs text-gray-500">
                 Made by{' '}
                 <a
                   href="https://www.linkedin.com/in/madhavgupta2002/"
@@ -147,19 +147,20 @@ export default function RootLayout({
                 >
                   Madhav Gupta
                 </a>
-              </p>
-              <nav>
+              </p> */}
+              {/* <nav>
                 <a
                   href="/privacy"
                   className="text-[10px] text-gray-600 hover:text-gray-400 transition-colors"
                 >
                   Privacy Policy
                 </a>
-              </nav>
+              </nav> */}
             </div>
           </footer>
         </DarkModeProvider>
       </body>
     </html>
+
   );
 }
