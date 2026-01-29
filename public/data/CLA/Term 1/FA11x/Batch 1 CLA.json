@@ -466,10 +466,12 @@
       "question_type": "MCQ",
       "options": {
         "A": "Inventory on Consignment +80; Inventory -80; Cash and Bank +100; Sales +100; Inventory on Consignment -72; Cost of Sales -72",
-        "B": "Inventory on Consignment +80; Inventory -80; Cash and Bank +100; Sales +100; Inventory on Consignment -80; Cost of Sales -80"
+        "B": "Inventory on Consignment +80; Inventory -80; Cash and Bank +100; Sales +100; Inventory on Consignment -80; Cost of Sales -80",
+        "C": "Cash and Bank + 100; Sales +100; Inventory -72; Cost of Sales -72",
+        "D": "Cash and Bank + 100; Sales +100; Inventory -80; Cost of Sales -80"
       },
-      "correct_option_label": "A",
-      "explanation": "In consignment sales, goods transferred to consignee are not sales - they remain as 'Inventory on Consignment' (asset).\n\nWhen 90% sold (72 lakhs cost), revenue and cost of sales are recognized for the sold portion only.\n\nUnsold 10% (8 lakhs) remains as inventory.\n\nEntry: Transfer 80 to consignment inventory, recognize sales of 100, recognize cost of 72 for sold portion."
+      "correct_option_label": "B",
+      "explanation": "In consignment, goods transferred remain as 'Inventory on Consignment'.\n\nWhen 90\\% sold (72 lakhs cost), revenue and cost recognized for sold portion. Unsold 10\\% (8 lakhs) remains inventory. But if unsold is not saleable, full cost (80) is recognized.\n\nGiven answer B, cost of 80 is recognized."
     },
     {
       "module": 4,
