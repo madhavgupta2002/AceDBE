@@ -6,6 +6,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import rehypeRaw from 'rehype-raw';
 import { ArrowLeft, BookOpen, ChevronDown, Type, Printer } from 'lucide-react';
 import { loadNotes } from '@/lib/notesLoader';
 import { getSubjectByCode } from '@/lib/subjectMapping';
@@ -485,7 +486,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                         >
                           <ReactMarkdown
                             remarkPlugins={[remarkGfm, remarkMath]}
-                            rehypePlugins={[rehypeKatex]}
+                            rehypePlugins={[rehypeRaw, rehypeKatex]}
                             components={{
                               p: ({ children }: any) => <span className="inline">{children}</span>,
                             }}
@@ -511,7 +512,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
             >
               <ReactMarkdown
                 remarkPlugins={[remarkGfm, remarkMath]}
-                rehypePlugins={[rehypeKatex]}
+                rehypePlugins={[rehypeRaw, rehypeKatex]}
                 components={{
                   // Headings with IDs for TOC navigation
                   h1: ({ node, children, ...props }: any) => {

@@ -1187,3 +1187,44 @@ To understand **ROE (The main river)**, trace back the tributaries:
 3.  **ROTA** depends on $\rightarrow$ **Asset Turnover** and **Profit Margin**.
 4.  **Asset Turnover** depends on $\rightarrow$ Fixed/Current Asset efficiency (Inventory/Collection days).
 5.  **Profit Margin** depends on $\rightarrow$ Cost Control (Material/Employee costs).
+
+Below is the **FULL & FINAL CONSOLIDATED TABLE**, combining **earlier entries + Module 3–8 additional entries**, **properly corrected**, **standardized to Debit → Credit order**, and written in an **exam-ready format with Golden Rules explanations**.
+
+---
+
+## ** JOURNAL ENTRIES TABLE **
+
+| **Transaction Type**                          | **Debit A/c**                                                    | **Credit A/c**                    | **Explanation / Golden Rule Applied**                                                          |
+| --------------------------------------------- | ---------------------------------------------------------------- | --------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Capital Introduced**                        | Cash A/c                                                         | Capital A/c                       | Real A/c: Cash comes in → Debit <br> Personal A/c: Owner is the giver → Credit                 |
+| **Asset Purchase (Cash)**                     | Asset A/c                                                        | Cash A/c                          | Real A/c: Asset comes in → Debit <br> Real A/c: Cash goes out → Credit                         |
+| **Asset Purchase (Credit)**                   | Asset A/c                                                        | Vendor A/c                        | Real A/c: Asset comes in → Debit <br> Personal A/c: Vendor is the giver → Credit               |
+| **Purchase of Goods (Credit)**                | Purchases A/c                                                    | Supplier A/c                      | Nominal A/c: Expense incurred → Debit <br> Personal A/c: Supplier is the giver → Credit        |
+| **Sale of Goods (Credit)**                    | Customer A/c                                                     | Sales A/c                         | Personal A/c: Customer is the receiver → Debit <br> Nominal A/c: Income earned → Credit        |
+| **Payment to Creditor**                       | Supplier A/c                                                     | Cash A/c                          | Personal A/c: Supplier is the receiver → Debit <br> Real A/c: Cash goes out → Credit           |
+| **Collection from Debtor**                    | Cash A/c                                                         | Customer A/c                      | Real A/c: Cash comes in → Debit <br> Personal A/c: Customer is the giver → Credit              |
+| **Expense Paid (Salary/Rent)**                | Expense A/c                                                      | Cash A/c                          | Nominal A/c: Expense incurred → Debit <br> Real A/c: Cash goes out → Credit                    |
+| **Outstanding Expense**                       | Expense A/c                                                      | Outstanding Expense A/c           | Nominal A/c: Expense of current period → Debit <br> Personal A/c: Liability created → Credit   |
+| **Prepaid Expense**                           | Prepaid Expense A/c                                              | Expense A/c                       | Real A/c: Asset created → Debit <br> Nominal A/c: Expense reduced → Credit                     |
+| **Accrued Income**                            | Accrued Income A/c                                               | Income A/c                        | Real A/c: Asset (Receivable) → Debit <br> Nominal A/c: Income earned → Credit                  |
+| **Accrued Interest Income**                   | Interest Accrued A/c                                             | Interest Income A/c               | Real A/c: Receivable created → Debit <br> Nominal A/c: Revenue recognized → Credit             |
+| **Material Consumption**                      | Consumption Expense A/c                                          | Inventory A/c                     | Nominal A/c: Expense recognized → Debit <br> Real A/c: Asset decreases → Credit                |
+| **Depreciation**                              | Depreciation Expense A/c                                         | Accumulated Depreciation A/c      | Nominal A/c: Non-cash expense → Debit <br> Contra-asset reduces value → Credit                 |
+| **Provision for Bad Debts**                   | Bad Debts Expense A/c                                            | Provision for Doubtful Debts A/c  | Nominal A/c: Expected loss → Debit <br> Contra-asset created → Credit                          |
+| **Bad Debts Written off (Against Provision)** | Provision for Doubtful Debts A/c                                 | Customer A/c                      | Provision utilized → Debit <br> Personal A/c: Debtor removed → Credit                          |
+| **Provision for Tax / Bonus**                 | Tax/Bonus Expense A/c                                            | Provision A/c                     | Nominal A/c: Expense recognized → Debit <br> Liability created → Credit                        |
+| **Provision for Warranty (Creation)**         | Warranty Expense A/c                                             | Provision for Warranty A/c        | Nominal A/c: Matching principle → Debit <br> Liability created (Prudence) → Credit             |
+| **Warranty Claim (Utilisation)**              | Provision for Warranty A/c                                       | Inventory / Cash A/c              | Provision reduced → Debit <br> Real A/c: Asset goes out → Credit                               |
+| **Goodwill (New Partner)**                    | Goodwill A/c                                                     | Old Partners’ Capital A/c         | Real A/c: Intangible asset created → Debit <br> Capital increases → Credit                     |
+| **Consignment – Transfer of Goods**           | Inventory on Consignment A/c                                     | Inventory A/c                     | Real A/c: Stock reclassified → Debit <br> Real A/c: Stock moves out → Credit                   |
+| **Consignment – Sale by Consignee**           | Cash / Bank A/c                                                  | Sales A/c                         | Real A/c: Cash comes in → Debit <br> Nominal A/c: Revenue earned → Credit                      |
+| **Consignment – Cost of Sales**               | Cost of Sales A/c                                                | Inventory on Consignment A/c      | Nominal A/c: Expense matched → Debit <br> Real A/c: Asset reduced → Credit                     |
+| **Sale of Asset (Loss)**                      | Cash A/c <br> Accumulated Depreciation A/c <br> Loss on Sale A/c | Asset A/c                         | Real A/c: Cash in → Debit <br> Nominal A/c: Loss → Debit <br> Asset goes out → Credit          |
+| **Sale of Asset (Profit)**                    | Cash A/c <br> Accumulated Depreciation A/c                       | Asset A/c <br> Profit on Sale A/c | Real A/c: Cash in → Debit <br> Nominal A/c: Gain → Credit                                      |
+| **Asset Exchange (Old + Cash)**               | New Asset A/c                                                    | Old Asset A/c <br> Cash A/c       | Real A/c: New asset comes in → Debit <br> Old asset & cash go out → Credit                     |
+| **Drawings (Personal Use)**                   | Drawings A/c                                                     | Purchases / Cash A/c              | Personal A/c: Owner is receiver → Debit <br> Nominal/Real A/c: Business asset reduced → Credit |
+| **Share Capital Issued**                      | Bank A/c                                                         | Share Capital A/c                 | Real A/c: Money comes in → Debit <br> Equity increases → Credit                                |
+| **Bonus Shares Issue**                        | Reserves A/c                                                     | Share Capital A/c                 | Personal A/c: Reserves reduced → Debit <br> Capital increased → Credit                         |
+| **Share Forfeiture**                          | Share Capital A/c                                                | Forfeited Shares A/c              | Personal A/c: Capital cancelled → Debit <br> Capital profit created → Credit                   |
+
+---
