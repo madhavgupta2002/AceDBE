@@ -979,8 +979,8 @@
         "B": "Profit will increase",
         "C": "Profit will not be affected"
       },
-      "correct_option_label": "B",
-      "explanation": "Positive 'Changes in inventories' means closing stock > opening stock (inventory increased).\n\nThis decreases COGS (less inventory consumed), which increases profit.\n\nThe positive value indicates inventory build-up, reducing expenses and increasing profit."
+      "correct_option_label": "A",
+      "explanation": "Positive 'Changes in inventories' means closing stock > opening stock (inventory increased).\n\nThis decreases COGS (less inventory consumed),   decreases profit.\n\nThe positive value indicates inventory build-up, reducing expenses and decreasing profit."
     },
     {
       "module": 7,
