@@ -1192,38 +1192,131 @@ To understand **ROE (The main river)**, trace back the tributaries:
 
 ## JOURNAL ENTRIES TABLE 
 
-| **Transaction Type**                          | **Debit A/c**                                                    | **Credit A/c**                    | **Explanation / Golden Rule Applied**                                                          |
-| --------------------------------------------- | ---------------------------------------------------------------- | --------------------------------- | ---------------------------------------------------------------------------------------------- |
-| **Capital Introduced**                        | Cash A/c                                                         | Capital A/c                       | Real A/c: Cash comes in → Debit <br> Personal A/c: Owner is the giver → Credit                 |
-| **Asset Purchase (Cash)**                     | Asset A/c                                                        | Cash A/c                          | Real A/c: Asset comes in → Debit <br> Real A/c: Cash goes out → Credit                         |
-| **Asset Purchase (Credit)**                   | Asset A/c                                                        | Vendor A/c                        | Real A/c: Asset comes in → Debit <br> Personal A/c: Vendor is the giver → Credit               |
-| **Purchase of Goods (Credit)**                | Purchases A/c                                                    | Supplier A/c                      | Nominal A/c: Expense incurred → Debit <br> Personal A/c: Supplier is the giver → Credit        |
-| **Sale of Goods (Credit)**                    | Customer A/c                                                     | Sales A/c                         | Personal A/c: Customer is the receiver → Debit <br> Nominal A/c: Income earned → Credit        |
-| **Payment to Creditor**                       | Supplier A/c                                                     | Cash A/c                          | Personal A/c: Supplier is the receiver → Debit <br> Real A/c: Cash goes out → Credit           |
-| **Collection from Debtor**                    | Cash A/c                                                         | Customer A/c                      | Real A/c: Cash comes in → Debit <br> Personal A/c: Customer is the giver → Credit              |
-| **Expense Paid (Salary/Rent)**                | Expense A/c                                                      | Cash A/c                          | Nominal A/c: Expense incurred → Debit <br> Real A/c: Cash goes out → Credit                    |
-| **Outstanding Expense**                       | Expense A/c                                                      | Outstanding Expense A/c           | Nominal A/c: Expense of current period → Debit <br> Personal A/c: Liability created → Credit   |
-| **Prepaid Expense**                           | Prepaid Expense A/c                                              | Expense A/c                       | Real A/c: Asset created → Debit <br> Nominal A/c: Expense reduced → Credit                     |
-| **Accrued Income**                            | Accrued Income A/c                                               | Income A/c                        | Real A/c: Asset (Receivable) → Debit <br> Nominal A/c: Income earned → Credit                  |
-| **Accrued Interest Income**                   | Interest Accrued A/c                                             | Interest Income A/c               | Real A/c: Receivable created → Debit <br> Nominal A/c: Revenue recognized → Credit             |
-| **Material Consumption**                      | Consumption Expense A/c                                          | Inventory A/c                     | Nominal A/c: Expense recognized → Debit <br> Real A/c: Asset decreases → Credit                |
-| **Depreciation**                              | Depreciation Expense A/c                                         | Accumulated Depreciation A/c      | Nominal A/c: Non-cash expense → Debit <br> Contra-asset reduces value → Credit                 |
-| **Provision for Bad Debts**                   | Bad Debts Expense A/c                                            | Provision for Doubtful Debts A/c  | Nominal A/c: Expected loss → Debit <br> Contra-asset created → Credit                          |
-| **Bad Debts Written off (Against Provision)** | Provision for Doubtful Debts A/c                                 | Customer A/c                      | Provision utilized → Debit <br> Personal A/c: Debtor removed → Credit                          |
-| **Provision for Tax / Bonus**                 | Tax/Bonus Expense A/c                                            | Provision A/c                     | Nominal A/c: Expense recognized → Debit <br> Liability created → Credit                        |
-| **Provision for Warranty (Creation)**         | Warranty Expense A/c                                             | Provision for Warranty A/c        | Nominal A/c: Matching principle → Debit <br> Liability created (Prudence) → Credit             |
-| **Warranty Claim (Utilisation)**              | Provision for Warranty A/c                                       | Inventory / Cash A/c              | Provision reduced → Debit <br> Real A/c: Asset goes out → Credit                               |
-| **Goodwill (New Partner)**                    | Goodwill A/c                                                     | Old Partners’ Capital A/c         | Real A/c: Intangible asset created → Debit <br> Capital increases → Credit                     |
-| **Consignment – Transfer of Goods**           | Inventory on Consignment A/c                                     | Inventory A/c                     | Real A/c: Stock reclassified → Debit <br> Real A/c: Stock moves out → Credit                   |
-| **Consignment – Sale by Consignee**           | Cash / Bank A/c                                                  | Sales A/c                         | Real A/c: Cash comes in → Debit <br> Nominal A/c: Revenue earned → Credit                      |
-| **Consignment – Cost of Sales**               | Cost of Sales A/c                                                | Inventory on Consignment A/c      | Nominal A/c: Expense matched → Debit <br> Real A/c: Asset reduced → Credit                     |
-| **Sale of Asset (Loss)**                      | Cash A/c <br> Accumulated Depreciation A/c <br> Loss on Sale A/c | Asset A/c                         | Real A/c: Cash in → Debit <br> Nominal A/c: Loss → Debit <br> Asset goes out → Credit          |
-| **Sale of Asset (Profit)**                    | Cash A/c <br> Accumulated Depreciation A/c                       | Asset A/c <br> Profit on Sale A/c | Real A/c: Cash in → Debit <br> Nominal A/c: Gain → Credit                                      |
-| **Asset Exchange (Old + Cash)**               | New Asset A/c                                                    | Old Asset A/c <br> Cash A/c       | Real A/c: New asset comes in → Debit <br> Old asset & cash go out → Credit                     |
-| **Drawings (Personal Use)**                   | Drawings A/c                                                     | Purchases / Cash A/c              | Personal A/c: Owner is receiver → Debit <br> Nominal/Real A/c: Business asset reduced → Credit |
-| **Share Capital Issued**                      | Bank A/c                                                         | Share Capital A/c                 | Real A/c: Money comes in → Debit <br> Equity increases → Credit                                |
-| **Bonus Shares Issue**                        | Reserves A/c                                                     | Share Capital A/c                 | Personal A/c: Reserves reduced → Debit <br> Capital increased → Credit                         |
-| **Share Forfeiture**                          | Share Capital A/c                                                | Forfeited Shares A/c              | Personal A/c: Capital cancelled → Debit <br> Capital profit created → Credit                   |
+---
+
+## ** RULES OF ACCOUNTING**
+
+1. **Personal Account**
+   *Debit the Receiver, Credit the Giver*
+
+2. **Real Account**
+   *Debit what comes in, Credit what goes out*
+
+3. **Nominal Account**
+   *Debit all Expenses & Losses, Credit all Incomes & Gains*
+
+---
+
+## 📘 **CLASSIFICATION OF ALL ACCOUNTS USED**
+
+### 🧍 **PERSONAL ACCOUNTS**
+
+*(Natural persons, Artificial persons, Representative personal a/cs)*
+
+* Capital A/c
+* Drawings A/c
+* Supplier / Vendor A/c
+* Customer / Debtor / Receivable A/c
+* Outstanding Expense A/c
+* Provision for Tax A/c
+* Provision for Bonus A/c
+* Provision for Warranty A/c
+* Old Partners’ Capital A/c
+* Share Capital A/c
+* Forfeited Shares A/c
+* Reserves & Surplus A/c
+
+---
+
+### 🏦 **REAL ACCOUNTS**
+
+*(Assets – tangible & intangible)*
+
+* Cash A/c
+* Bank A/c
+* Inventory / Stock A/c
+* Inventory on Consignment A/c
+* Asset A/c (Plant, Machinery, Furniture, etc.)
+* New Asset A/c
+* Old Asset A/c
+* Accrued Income A/c
+* Interest Accrued A/c
+* Prepaid Expense A/c
+* Goodwill A/c
+* Accumulated Depreciation A/c *(Contra-asset)*
+
+---
+
+### 📊 **NOMINAL ACCOUNTS**
+
+*(Expenses, losses, incomes, gains)*
+
+* Purchases A/c
+* Sales A/c
+* Expense A/c (Salary, Rent, Insurance, etc.)
+* Consumption Expense A/c
+* Cost of Sales A/c
+* Depreciation Expense A/c
+* Bad Debts Expense A/c
+* Warranty Expense A/c
+* Tax Expense A/c
+* Bonus Expense A/c
+* Loss on Sale of Asset A/c
+* Profit on Sale of Asset A/c
+* Interest Income A/c
+* Income A/c
+
+---
+
+| **Transaction / Section**                 | **Debit A/c**                     | **Credit A/c**                    | **Asset** | **Expense** | **Liability** | **Capital** |
+| ----------------------------------------- | --------------------------------- | --------------------------------- | --------- | ----------- | ------------- | ----------- |
+| **CAPITAL & DRAWINGS**                    |                                   |                                   |           |             |               |             |
+| Capital Introduced                        | Cash A/c (⬆️)                     | Capital A/c (⬆️)                  | +         |             |               | +           |
+| Drawings (Cash / Goods)                   | Drawings A/c (⬆️)                 | Cash / Purchases A/c (⬇️)         | −         | −           |               | −           |
+| **PURCHASE OF GOODS**                     |                                   |                                   |           |             |               |             |
+| Purchase of Goods (Cash)                  | Purchases A/c (⬆️)                | Cash A/c (⬇️)                     | −         | +           |               | −           |
+| Purchase of Goods (Credit)                | Purchases A/c (⬆️)                | Supplier A/c (⬆️)                 |           | +           | +             | −           |
+| **SALE OF GOODS**                         |                                   |                                   |           |             |               |             |
+| Sale of Goods (Cash)                      | Cash A/c (⬆️)                     | Sales A/c (⬆️)                    | +         |             |               | +           |
+| Sale of Goods (Credit)                    | Customer A/c (⬆️)                 | Sales A/c (⬆️)                    | +         |             |               | +           |
+| **RECEIPTS & PAYMENTS**                   |                                   |                                   |           |             |               |             |
+| Payment to Creditor                       | Supplier A/c (⬇️)                 | Cash A/c (⬇️)                     | −         |             | −             |             |
+| Collection from Debtor                    | Cash A/c (⬆️)                     | Customer A/c (⬇️)                 | +         |             |               |             |
+| **EXPENSES & ADJUSTMENTS**                |                                   |                                   |           |             |               |             |
+| Expense Paid (Salary / Rent)              | Expense A/c (⬆️)                  | Cash A/c (⬇️)                     | −         | +           |               | −           |
+| Outstanding Expense                       | Expense A/c (⬆️)                  | Outstanding Expense A/c (⬆️)      |           | +           | +             | −           |
+| Prepaid Expense                           | Prepaid Expense A/c (⬆️)          | Expense A/c (⬇️)                  | +         | −           |               | +           |
+| **INCOME ADJUSTMENTS**                    |                                   |                                   |           |             |               |             |
+| Accrued Income                            | Accrued Income A/c (⬆️)           | Income A/c (⬆️)                   | +         |             |               | +           |
+| Accrued Interest Income                   | Interest Accrued A/c (⬆️)         | Interest Income A/c (⬆️)          | +         |             |               | +           |
+| **INVENTORY & CONSUMPTION**               |                                   |                                   |           |             |               |             |
+| Material Consumption                      | Consumption Expense A/c (⬆️)      | Inventory A/c (⬇️)                | −         | +           |               | −           |
+| **DEPRECIATION & BAD DEBTS**              |                                   |                                   |           |             |               |             |
+| Depreciation                              | Depreciation Expense A/c (⬆️)     | Accumulated Depreciation A/c (⬆️) | −         | +           |               | −           |
+| Provision for Bad Debts                   | Bad Debts Expense A/c (⬆️)        | Provision for D.D. A/c (⬆️)       | −         | +           |               | −           |
+| Bad Debts Written off (Against Provision) | Provision for D.D. A/c (⬇️)       | Customer A/c (⬇️)                 | −         |             |               |             |
+| **PROVISIONS**                            |                                   |                                   |           |             |               |             |
+| Provision for Tax / Bonus                 | Tax / Bonus Expense A/c (⬆️)      | Provision A/c (⬆️)                |           | +           | +             | −           |
+| Provision for Warranty (Creation)         | Warranty Expense A/c (⬆️)         | Provision for Warranty A/c (⬆️)   |           | +           | +             | −           |
+| Warranty Claim (Utilisation)              | Provision for Warranty A/c (⬇️)   | Inventory / Cash A/c (⬇️)         | −         |             | −             |             |
+| **ASSET PURCHASE**                        |                                   |                                   |           |             |               |             |
+| Asset Purchased (Cash)                    | Asset A/c (⬆️)                    | Cash A/c (⬇️)                     | +         |             |               | −           |
+| Asset Purchased (Credit)                  | Asset A/c (⬆️)                    | Vendor A/c (⬆️)                   | +         |             | +             | −           |
+| **SALE OF ASSET**                         |                                   |                                   |           |             |               |             |
+| Sale of Asset (Loss)                      | Cash + Acc. Dep. + Loss A/c (⬆️)  | Asset A/c (⬇️)                    | −         | +           |               | −           |
+| Sale of Asset (Profit)                    | Cash + Acc. Dep. A/c (⬆️)         | Asset + Profit A/c (⬇️⬆️)         | −         |             |               | +           |
+| **ASSET EXCHANGE**                        |                                   |                                   |           |             |               |             |
+| Asset Exchange (Old + Cash)               | New Asset A/c (⬆️)                | Old Asset + Cash A/c (⬇️)         | +         |             |               | −           |
+| **CONSIGNMENT**                           |                                   |                                   |           |             |               |             |
+| Consignment – Goods Sent                  | Inventory on Consignment A/c (⬆️) | Inventory A/c (⬇️)                | +         |             |               |             |
+| Consignment – Sale                        | Cash / Bank A/c (⬆️)              | Sales A/c (⬆️)                    | +         |             |               | +           |
+| Consignment – Cost of Sales               | Cost of Sales A/c (⬆️)            | Inventory on Consignment A/c (⬇️) | −         | +           |               | −           |
+| **PARTNERSHIP & GOODWILL**                |                                   |                                   |           |             |               |             |
+| Goodwill (New Partner)                    | Goodwill A/c (⬆️)                 | Old Partners’ Capital A/c (⬆️)    | +         |             |               | +           |
+| **SHARE CAPITAL**                         |                                   |                                   |           |             |               |             |
+| Share Capital Issued                      | Bank A/c (⬆️)                     | Share Capital A/c (⬆️)            | +         |             |               | +           |
+| Bonus Shares Issue                        | Reserves A/c (⬇️)                 | Share Capital A/c (⬆️)            |           |             |               | + / −       |
+| Share Forfeiture                          | Share Capital A/c (⬇️)            | Forfeited Shares A/c (⬆️)         |           |             |               | − / +       |
 
 ---
 
@@ -1246,22 +1339,56 @@ To understand **ROE (The main river)**, trace back the tributaries:
 
 **A. Percentage of Completion Method (POCM)**
 *   Used for: Long-term construction/infrastructure.
-*   $$\%\ Completed = \frac{\text{Cost Incurred to Date}}{\text{Total Estimated Cost}} \times 100$$
-*   $$Revenue\ Recognized = \text{Total Contract Value} \times \%\ Completed$$
-*   $$Profit\ Recognized = \text{Revenue Recognized} - \text{Cost Incurred}$$
+
+**Percentage of Work Completed:**
+*   $$\text{Percentage of Completion} = \frac{\text{Cost Incurred to Date}}{\text{Total Estimated Cost}} \times 100$$
+
+**Revenue Recognised (till date):**
+*   $$\text{Revenue} = \text{Percentage of Completion} \times \text{Total Contract Value}$$
+
+**Profit Recognised (till date):**
+*   $$\text{Profit} = \text{Revenue Recognised} - \text{Cost Incurred}$$
 
 **B. Installment Method**
 *   Used for: High collection risk.
-*   $$Profit\ Margin\ \% = \frac{\text{Total Expected Profit}}{\text{Total Sales Value}}$$
-*   $$Profit\ Recognized = \text{Cash Collected} \times \text{Profit Margin \%}$$
+
+**Total Profit:**
+*   $$\text{Total Profit} = \text{Total Sales} - \text{Total Cost}$$
+
+**Profit Margin:**
+*   $$\text{Profit Margin (\%)} = \frac{\text{Total Profit}}{\text{Total Sales}}$$
+
+**Profit Recognised per Instalment:**
+*   $$\text{Profit per Instalment} = \text{Instalment Received} \times \text{Profit Margin}$$
+
+**Cost Recognised per Instalment:**
+*   $$\text{Cost Recognised} = \text{Instalment Received} - \text{Profit Recognised}$$
 
 **C. Completed Contract Method**
 *   **Revenue/Profit:** Recognized only when the contract is **100%** complete.
 *   *Interim:* Costs go to WIP (Asset); Cash received goes to Advances (Liability).
 
+**Revenue Recognition:**
+*   $$\text{Revenue} = \text{Total Contract Value}$$ *(only on completion)*
+
+**Profit:**
+*   $$\text{Profit} = \text{Total Revenue} - \text{Total Cost}$$ *(recognised only at completion)*
+
 **D. Cost Recovery Method**
 *   **Revenue:** Recognized only after **total cost** is recovered by cash collections.
-*   **Profit:** Recognized only after the point where $$Cash\ Collected > Total\ Cost$$.
+*   **Profit:** Recognized only after the point where $$\text{Cumulative Cash Collected} \geq \text{Total Project Cost}$$
+
+**Revenue Recognition Condition:**
+*   Revenue is recognised only when:
+    $$\text{Cumulative Cash Collected} \geq \text{Total Project Cost}$$
+*   *(No profit recognised until full cost is recovered)*
+
+**E. Input Method (Time & Material Contracts)**
+*   Used for: Service contracts billed based on time and materials.
+
+**Revenue Recognised:**
+*   $$\text{Revenue} = \text{Hours Worked} \times \text{Rate per Hour}$$
+
 
 ---
 
