@@ -491,7 +491,7 @@
         "D": "50"
       },
       "correct_option_label": "A",
-      "explanation": "Under percentage of completion, total profit = contract value - total cost = 300 - (50+70+120 = 240) = 60. Profit is recognized proportionally over years. Until year 2, profit recognized is proportional to work completed, remaining profit is recognized in year 3. Calculation shows 30 is the final year's profit."
+      "explanation": "**Step 1: Calculate total estimated cost** [ 50 + 70 + 120 = ₹240 crore ] **Step 2: Calculate total estimated profit** [ 300 - 240 = ₹60 crore ] **Step 3: Percentage of completion at the end of Year 2** [ \text{Cost incurred till Year 2} = 50 + 70 = ₹120 crore ] [ \text{Percentage completed} = \frac{120}{240} = 50% ] **Step 4: Profit recognized till Year 2** [ 50% \times 60 = ₹30 crore ] **Step 5: Profit for Year 3** [ \text{Total profit} - \text{Profit till Year 2} = 60 - 30 = ₹30 crore ]"
     },
     {
       "module": 4,
@@ -547,7 +547,7 @@
         "D": "5"
       },
       "correct_option_label": "A",
-      "explanation": "In Instalment method, revenue and profit are recognized to the extent of cash collected. Profit for year 2 is calculated based on the collections and the profit margin applicable."
+      "explanation": "Step 1: Calculate total profit\n Total contract value = Rs. 280 cr.\nTotal cost = Rs. 240 cr.\n Total profit = 280 - 240 = Rs. 40 cr.\n\nStep 2: Calculate total collections\nYear 1 collection = Rs. 70 cr.\nYear 2 collection = Rs. 70 cr.\nYear 3 collection = Rs. 140 cr.\nTotal collections = 70 + 70 + 140 = Rs. 280 cr.\n\nStep 3: Profit to be recognized under Instalment Method\nProfit is recognized in proportion to cash collected.\n\nProfit for Year 2 = (Collection in Year 2 / Total collections) × Total profit\n= (70 / 280) × 40\n= (1 / 4) × 40\n= Rs. 10 cr."
     },
     {
       "module": 4,
@@ -556,7 +556,9 @@
       "question_type": "MCQ",
       "options": {
         "A": "Inventory on Consignment +80; Inventory -80; Cash and Bank +100; Sales +100; Inventory on Consignment -72; Cost of Sales -72",
-        "B": "Inventory on Consignment +80; Inventory -80; Cash and Bank +100; Sales +100; Inventory on Consignment -80; Cost of Sales -80"
+        "B": "Inventory on Consignment +80; Inventory -80; Cash and Bank +100; Sales +100; Inventory on Consignment -80; Cost of Sales -80",
+        "C": "Cash and Bank + 100; Sales +100; Inventory -72; Cost of Sales -72",
+        "D": "Cash and Bank + 100; Sales +100; Inventory -80; Cost of Sales -80"
       },
       "correct_option_label": "B",
       "explanation": "In consignment, goods transferred remain as 'Inventory on Consignment'.\n\nWhen 90\\% sold (72 lakhs cost), revenue and cost recognized for sold portion. Unsold 10\\% (8 lakhs) remains inventory. But if unsold is not saleable, full cost (80) is recognized.\n\nGiven answer B, cost of 80 is recognized."
@@ -568,7 +570,9 @@
       "question_type": "MCQ",
       "options": {
         "A": "Decrease in Receivables; Decrease in Profit",
-        "B": "Decrease in Receivables; Decrease in Provision for Doubtful Debts"
+        "B": "Decrease in Receivables; Decrease in Provision for Doubtful Debts",
+        "C": "Decrease in Profit; Decrease in Provision for Doubtful Debts",
+        "D": "Decrease in Receivables; Decrease in Provision for Doubtful Debts; Decrease in Profit"
       },
       "correct_option_label": "B",
       "explanation": "When a bad debt is written off against the provision, receivables decrease and the provision decreases, but there is no immediate impact on profit since expense was recognized at the time of creating provision."
