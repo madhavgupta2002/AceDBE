@@ -1188,11 +1188,9 @@ To understand **ROE (The main river)**, trace back the tributaries:
 4.  **Asset Turnover** depends on $\rightarrow$ Fixed/Current Asset efficiency (Inventory/Collection days).
 5.  **Profit Margin** depends on $\rightarrow$ Cost Control (Material/Employee costs).
 
-Below is the **FULL & FINAL CONSOLIDATED TABLE**, combining **earlier entries + Module 3–8 additional entries**, **properly corrected**, **standardized to Debit → Credit order**, and written in an **exam-ready format with Golden Rules explanations**.
-
 ---
 
-## ** JOURNAL ENTRIES TABLE **
+## JOURNAL ENTRIES TABLE 
 
 | **Transaction Type**                          | **Debit A/c**                                                    | **Credit A/c**                    | **Explanation / Golden Rule Applied**                                                          |
 | --------------------------------------------- | ---------------------------------------------------------------- | --------------------------------- | ---------------------------------------------------------------------------------------------- |
@@ -1228,3 +1226,160 @@ Below is the **FULL & FINAL CONSOLIDATED TABLE**, combining **earlier entries + 
 | **Share Forfeiture**                          | Share Capital A/c                                                | Forfeited Shares A/c              | Personal A/c: Capital cancelled → Debit <br> Capital profit created → Credit                   |
 
 ---
+
+## FORMULA SHEET
+---
+
+### **1. Accounting Mechanics (Module 1 & 2)**
+
+**The Fundamental Accounting Equation**
+*   $$Assets = Liabilities + Equity$$
+*   **Expanded:** $$Assets = Liabilities + (Capital + Revenue - Expenses - Dividends)$$
+
+**Profit Calculation**
+*   $$Profit = Revenue - Expenses$$
+*   $$Gross\ Profit = Revenue - Cost\ of\ Goods\ Sold\ (COGS)$$
+
+---
+
+### **2. Revenue Recognition Formulas (Module 4)**
+
+**A. Percentage of Completion Method (POCM)**
+*   Used for: Long-term construction/infrastructure.
+*   $$\%\ Completed = \frac{\text{Cost Incurred to Date}}{\text{Total Estimated Cost}} \times 100$$
+*   $$Revenue\ Recognized = \text{Total Contract Value} \times \%\ Completed$$
+*   $$Profit\ Recognized = \text{Revenue Recognized} - \text{Cost Incurred}$$
+
+**B. Installment Method**
+*   Used for: High collection risk.
+*   $$Profit\ Margin\ \% = \frac{\text{Total Expected Profit}}{\text{Total Sales Value}}$$
+*   $$Profit\ Recognized = \text{Cash Collected} \times \text{Profit Margin \%}$$
+
+**C. Completed Contract Method**
+*   **Revenue/Profit:** Recognized only when the contract is **100%** complete.
+*   *Interim:* Costs go to WIP (Asset); Cash received goes to Advances (Liability).
+
+**D. Cost Recovery Method**
+*   **Revenue:** Recognized only after **total cost** is recovered by cash collections.
+*   **Profit:** Recognized only after the point where $$Cash\ Collected > Total\ Cost$$.
+
+---
+
+### **3. Inventory Valuation Formulas (Module 5)**
+
+**A. Cost of Goods Sold (COGS)**
+*   $$COGS = \text{Opening Stock} + Purchases - \text{Closing Stock}$$
+
+**B. Weighted Average Cost**
+*   $$Weighted\ Avg\ Rate = \frac{\text{Total Value of Inventory Available}}{\text{Total Units Available}}$$
+*   *Note:* Calculated after every new purchase in Perpetual System.
+
+**C. Retail Method**
+*   Used by: Retailers with high volume items.
+*   $$Cost\ of\ Sales = \text{Sales Value} - (\text{Sales Value} \times \text{Gross Margin \%})$$
+*   $$Closing\ Inventory = (\text{Opening Stock} + Purchases) - \text{Estimated COGS}$$
+
+**D. Manufacturing Cost**
+*   $$Cost\ of\ Goods\ Manufactured = \text{Material Consumed} + \text{Direct Labor} + \text{Manufacturing Overheads}$$
+*   **Cost of Completed Units:** Allocated based on % completion of WIP.
+
+**E. Valuation Rule (Conservatism)**
+*   Inventory Value = **Lower of** (Cost **OR** Net Realizable Value/Market Price).
+
+---
+
+### **4. Depreciation & Fixed Assets (Module 6)**
+
+**A. Straight Line Method (SLM)**
+*   $$Depreciation\ (Per\ Year) = \frac{\text{Cost} - \text{Salvage Value}}{\text{Useful Life}}$$
+
+**B. Written Down Value (WDV) / Declining Balance**
+*   $$Depreciation = \text{Opening Book Value} \times \text{Depreciation Rate \%}$$
+
+**C. Sum of Years' Digits (SYD)**
+*   $$Sum\ of\ Digits = \frac{N(N+1)}{2}$$ *(where N = Useful Life)*
+*   $$Depreciation = \frac{\text{Remaining Life}}{Sum\ of\ Digits} \times (\text{Cost} - \text{Salvage})$$
+
+**D. Natural Resources (Depletion)**
+*   $$Depletion\ Rate = \frac{\text{Total Cost}}{\text{Total Estimated Reserves}}$$
+*   $$Expense = \text{Units Extracted} \times \text{Depletion Rate}$$
+
+**E. Exchange of Assets (Swap)**
+*   **Similar Assets:** $$\text{New Asset Value} = \text{Book Value of Old Asset} + \text{Cash Paid}$$ *(No P&L impact)*.
+*   **Dissimilar Assets:** $$\text{New Asset Value} = \text{Fair Market Value}$$ *(Profit/Loss is recognized)*.
+
+---
+
+### **5. Financial Ratio Analysis (Module 8)**
+
+#### **A. Profitability Drivers**
+1.  **Return on Total Assets (ROTA)**
+    *   $$ROTA = \frac{\text{PBIT}}{\text{Total Assets}}$$
+    *   *Relationship:* $$ROTA = \text{Asset Turnover} \times \text{Profit Margin}$$
+
+2.  **Return on Capital Employed (ROCE)**
+    *   $$ROCE = \frac{\text{PBIT}}{\text{Capital Employed}}$$
+    *   $$Capital\ Employed = \text{Total Assets} - \text{Non-Interest Bearing Current Liabilities (Payables)}$$
+
+3.  **Return on Equity (ROE)**
+    *   **Pre-tax:** $$ROE = \frac{\text{Profit Before Tax (PBT)}}{\text{Equity}}$$
+    *   **Post-tax:** $$ROE = \frac{\text{Profit After Tax (PAT)}}{\text{Equity}}$$
+    *   **Leverage Relationship:** $$ROE = ROCE + [\text{Spread} \times \text{Debt/Equity Ratio}]$$
+
+#### **B. Efficiency (Asset Management)**
+4.  **Asset Turnover Ratio (ATO)**
+    *   $$ATO = \frac{Sales}{\text{Total Assets}}$$
+
+5.  **Fixed Asset Turnover (FATO)**
+    *   $$FATO = \frac{Sales}{\text{Net Fixed Assets}}$$
+
+6.  **Inventory Days**
+    *   $$Inventory\ Days = \frac{Inventory}{\text{Average Cost of Sales per day}}$$
+    *   *Alternative:* $$(\frac{Inventory}{COGS}) \times 365$$
+
+7.  **Collection Days (Receivables)**
+    *   $$Collection\ Days = \frac{Receivables}{\text{Average Sales per day}}$$
+    *   *Alternative:* $$(\frac{Receivables}{Sales}) \times 365$$
+
+#### **C. Cost Management**
+8.  **Profit Margin (PBIT Margin)**
+    *   $$Margin = \frac{\text{PBIT}}{Sales}$$
+
+9.  **Effective Tax Rate**
+    *   $$Rate = \frac{\text{Tax Expense}}{\text{Profit Before Tax (PBT)}}$$
+
+#### **D. Solvency & Risk**
+10. **Current Ratio (Liquidity)**
+    *   $$Current\ Ratio = \frac{\text{Current Assets}}{\text{Current Liabilities}}$$
+
+11. **Debt to Equity Ratio (D/E)**
+    *   $$D/E = \frac{\text{Total Debt}}{Equity}$$
+
+12. **Debt Service Coverage Ratio (DSCR)**
+    *   *From Notes:* $$DSCR = \frac{\text{PBDIT} - Tax}{\text{Interest Cost} + \text{Loan Repayment (Principal)}}$$
+    *   *(PBDIT = Profit Before Depreciation, Interest, Taxes)*
+
+13. **Interest Spread**
+    *   $$Spread = ROCE - \text{Interest Rate}$$
+    *   $$Interest\ Rate = \frac{\text{Interest Expense}}{Loan\ Amount}$$
+
+---
+
+### **6. Altman Z-Score (Bankruptcy Prediction)**
+*   **Formula:** $$Z = 1.2X_1 + 1.4X_2 + 3.3X_3 + 0.6X_4 + 1.0X_5$$
+    *   $$X_1 = \frac{\text{Working Capital}}{\text{Total Assets}}$$
+    *   $$X_2 = \frac{\text{Retained Earnings}}{\text{Total Assets}}$$
+    *   $$X_3 = \frac{\text{EBIT}}{\text{Total Assets}}$$
+    *   $$X_4 = \frac{\text{Equity}}{\text{Total Debt}}$$
+    *   $$X_5 = \frac{Sales}{\text{Total Assets}}$$
+
+---
+
+### **7. Important Concepts**
+
+*   **Bonus Shares:** Issued from Reserves. No cash flow. No change in Net Worth. Increases number of shares, decreases price per share.
+*   **Stock Split:** Reduces face value. No journal entry. No change in Equity value.
+*   **Buyback:** Cash goes out, Equity reduces.
+*   **Deferred Tax Liability (DTL):** Taxable Profit < Book Profit (Pay less tax now, more later).
+*   **Deferred Tax Asset (DTA):** Taxable Profit > Book Profit (Pay more tax now, less later).
+*   **Operating Cycle:** Cash $\to$ Raw Material $\to$ WIP $\to$ Finished Goods $\to$ Receivables $\to$ Cash.
