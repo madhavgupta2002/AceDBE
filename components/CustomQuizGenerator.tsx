@@ -137,8 +137,9 @@ const CustomQuizGenerator: React.FC = () => {
     }));
   };
 
-  const downloadQuizJson = (questions: TransformedQuestion[]) => {
-    const dataStr = JSON.stringify(questions, null, 2);
+  const downloadQuizJson = (quizData: GeneratedQuiz) => {
+    // Download in the original format with metadata (matching predefined quiz format)
+    const dataStr = JSON.stringify(quizData, null, 2);
     const blob = new Blob([dataStr], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
@@ -158,24 +159,39 @@ const CustomQuizGenerator: React.FC = () => {
     reader.onload = (e) => {
       try {
         const content = e.target?.result as string;
-        const questions = JSON.parse(content);
-
-        // Validate the structure
-        if (!Array.isArray(questions) || questions.length === 0) {
-          throw new Error('Invalid quiz format: expected an array of questions');
-        }
-
-        // Check if it's in transformed format or original format
-        const isTransformedFormat = questions[0].correctAnswer !== undefined;
+        const jsonData = JSON.parse(content);
 
         let transformedQuestions: TransformedQuestion[];
 
-        if (isTransformedFormat) {
-          transformedQuestions = questions;
+        // Check if it's in the original GeneratedQuiz format (with exam_metadata)
+        if (jsonData.exam_metadata && jsonData.questions && Array.isArray(jsonData.questions)) {
+          // Original format with metadata - this is the predefined format
+          transformedQuestions = transformQuizData(jsonData as GeneratedQuiz);
+        } else if (Array.isArray(jsonData)) {
+          // Validate array is not empty
+          if (jsonData.length === 0) {
+            throw new Error('Invalid quiz format: questions array is empty');
+          }
+
+          // Check format type
+          if (jsonData[0].correctAnswer !== undefined) {
+            // Already transformed format
+            transformedQuestions = jsonData;
+          } else if (jsonData[0].correct_option_label !== undefined) {
+            // Questions array without metadata - wrap it
+            const quizData: GeneratedQuiz = {
+              exam_metadata: {
+                subject_name: 'Imported Quiz',
+                exam_date: new Date().toISOString().slice(0, 10),
+              },
+              questions: jsonData,
+            };
+            transformedQuestions = transformQuizData(quizData);
+          } else {
+            throw new Error('Invalid quiz format: unexpected question structure');
+          }
         } else {
-          // Try to parse as GeneratedQuiz format
-          const quizData = { questions } as GeneratedQuiz;
-          transformedQuestions = transformQuizData(quizData);
+          throw new Error('Invalid quiz format: expected object with exam_metadata and questions, or an array of questions');
         }
 
         // Store and navigate
@@ -215,8 +231,8 @@ const CustomQuizGenerator: React.FC = () => {
       // Store in sessionStorage
       sessionStorage.setItem('customQuizQuestions', JSON.stringify(transformedQuestions));
 
-      // Optional: Download the quiz for reproducibility
-      downloadQuizJson(transformedQuestions);
+      // Optional: Download the quiz for reproducibility (in original format with metadata)
+      downloadQuizJson(quizData);
 
       // Navigate to custom quiz page
       handleCloseDialog();
@@ -276,9 +292,30 @@ IMPORTANT RULES:
 - Questions should test understanding of the study material
 - Make questions challenging but fair
 - Vary the difficulty levels
-- Do NOT include any text outside the JSON object`;
+- Do NOT include any text outside the JSON object
+
+FORMATTING INSTRUCTIONS (if applicable):
+- Use LaTeX for mathematical formulas and equations
+- For inline math (in text), use: $formula$ (e.g., $x = 5$, $E = mc^2$)
+- For block/display math (centered), use: $$formula$$ (e.g., $$\\frac{a}{b}$$)
+- Use markdown formatting for emphasis: **bold**, *italic*
+- Use \\n for line breaks when needed
+- Common LaTeX examples:
+  * Fractions: $\\frac{numerator}{denominator}$
+  * Square root: $\\sqrt{x}$
+  * Exponents: $x^2$ or $e^{-t}$
+  * Subscripts: $x_1$
+  * Greek letters: $\\alpha$, $\\beta$, $\\pi$
+  * Summation: $\\sum_{i=1}^{n}$
+  * Integrals: $\\int_0^1 x dx$
+- Apply formatting to question_text, options, and explanation fields
+- Ensure all LaTeX is properly escaped in JSON (use \\\\ for backslash)`;
 
     const userPrompt = `Generate ${numberOfQuestions} MCQ questions.
+
+METADATA INSTRUCTIONS:
+- Set "subject_name" to a relevant topic/subject name based on the study material content
+- Set "exam_date" to today's date in format "Custom"
 
 ${customInstructions ? `Custom Instructions: ${customInstructions}` : ''}
 
