@@ -1,0 +1,398 @@
+{
+  "exam_metadata": {
+    "subject_name": "Custom AI Quiz",
+    "exam_date": "2026-01-30"
+  },
+  "questions": [
+    {
+      "question_id": "Q1",
+      "question_text": "For a discrete probability mass function $f(x)$, which of the following conditions must be met regarding the sum of all probabilities?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$\\sum f(x) = 0$",
+        "B": "$\\sum f(x) = 1$",
+        "C": "$\\sum f(x) = \\mu$",
+        "D": "$\\sum f(x) = \\sigma^2$"
+      },
+      "correct_option_label": "B",
+      "explanation": "One of the fundamental properties of a discrete probability distribution is that the sum of all probabilities in the sample space must equal 1."
+    },
+    {
+      "question_id": "Q2",
+      "question_text": "Select the correct formula for the **Expected Value** $E[X]$ of a discrete random variable $X$.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$E[X] = \\sum [x^2 \\times f(x)]$",
+        "B": "$E[X] = \\sum [x \\times f(x)]$",
+        "C": "$E[X] = \\frac{\\sum x}{n}$",
+        "D": "$E[X] = \\sum [(x - \\mu)^2 \\times f(x)]$"
+      },
+      "correct_option_label": "B",
+      "explanation": "The expected value (mean) of a discrete random variable is the weighted average of its values, calculated as $\\sum x f(x)$."
+    },
+    {
+      "question_id": "Q3",
+      "question_text": "In insurance applications, what is the 'Break-even Premium' equivalent to?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The maximum possible claim amount",
+        "B": "The variance of the claim amount",
+        "C": "The expected claim amount ($E[X]$)",
+        "D": "The standard deviation of the claim amount"
+      },
+      "correct_option_label": "C",
+      "explanation": "The break-even premium is the amount an insurer must charge to cover the long-run average of claims, which is the expected value."
+    },
+    {
+      "question_id": "Q4",
+      "question_text": "Which formula correctly calculates the **Variance** $Var(X)$ for a general discrete random variable?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$\\sum (x - \\mu) f(x)$",
+        "B": "$\\sqrt{\\sum (x - \\mu)^2 f(x)}$",
+        "C": "$\\sum (x - \\mu)^2 f(x)$",
+        "D": "$\\sum x^2 f(x)$"
+      },
+      "correct_option_label": "C",
+      "explanation": "Variance is defined as the weighted average of the squared deviations from the mean: $\\sum (x - \\mu)^2 f(x)$."
+    },
+    {
+      "question_id": "Q5",
+      "question_text": "Select the correct formula for the **Mean of a Portfolio** $Z = w_1X + w_2Y$.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$E[Z] = w_1^2 E[X] + w_2^2 E[Y]$",
+        "B": "$E[Z] = w_1 E[X] + w_2 E[Y]$",
+        "C": "$E[Z] = E[X] + E[Y]$",
+        "D": "$E[Z] = w_1 w_2 (E[X] + E[Y])$"
+      },
+      "correct_option_label": "B",
+      "explanation": "The expected return of a portfolio is the weighted sum of the expected returns of the individual assets."
+    },
+    {
+      "question_id": "Q6",
+      "question_text": "Which formula represents the **Variance of a Portfolio** $Z$ consisting of two assets $X$ and $Y$?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$Var(Z) = w_1^2 \\sigma_X^2 + w_2^2 \\sigma_Y^2$",
+        "B": "$Var(Z) = w_1 \\sigma_X + w_2 \\sigma_Y + Cov(X,Y)$",
+        "C": "$Var(Z) = w_1^2 \\sigma_X^2 + w_2^2 \\sigma_Y^2 + 2w_1 w_2 Cov(X,Y)$",
+        "D": "$Var(Z) = (w_1 \\sigma_X + w_2 \\sigma_Y)^2$"
+      },
+      "correct_option_label": "C",
+      "explanation": "Portfolio variance accounts for the weighted variances of individual assets and their covariance: $w_1^2 \\sigma_X^2 + w_2^2 \\sigma_Y^2 + 2w_1 w_2 Cov(X,Y)$."
+    },
+    {
+      "question_id": "Q7",
+      "question_text": "How is the **Correlation** ($r$) between two assets $X$ and $Y$ calculated?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$r = \\frac{Cov(X,Y)}{\\sigma_X \\sigma_Y}$",
+        "B": "$r = Cov(X,Y) \\times \\sigma_X \\sigma_Y$",
+        "C": "$r = \\frac{\\sigma_X \\sigma_Y}{Cov(X,Y)}$",
+        "D": "$r = \\frac{Var(X) + Var(Y)}{Cov(X,Y)}$"
+      },
+      "correct_option_label": "A",
+      "explanation": "Correlation is the covariance of the two variables divided by the product of their standard deviations."
+    },
+    {
+      "question_id": "Q8",
+      "question_text": "For a **Bernoulli** random variable with success probability $p$, what is the formula for the variance?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$p$",
+        "B": "$p^2$",
+        "C": "$p(1-p)$",
+        "D": "$\\sqrt{p(1-p)}$"
+      },
+      "correct_option_label": "C",
+      "explanation": "The variance of a Bernoulli trial is $p \\times q$, where $q = 1-p$."
+    },
+    {
+      "question_id": "Q9",
+      "question_text": "Which of the following is **NOT** a condition for a Binomial experiment?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The number of trials $n$ is fixed.",
+        "B": "Each trial has two possible outcomes.",
+        "C": "The probability of success $p$ changes with each trial.",
+        "D": "The trials are independent of each other."
+      },
+      "correct_option_label": "C",
+      "explanation": "In a Binomial experiment, the probability of success $p$ must remain constant for every trial."
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "Select the correct **Probability Mass Function** for the Binomial distribution.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$P(Y=y) = \\frac{e^{-\\lambda} \\lambda^y}{y!}$",
+        "B": "$P(Y=y) = \\binom{n}{y} p^y (1-p)^{n-y}$",
+        "C": "$P(Y=y) = p(1-p)^{y-1}$",
+        "D": "$P(Y=y) = \\frac{1}{n}$"
+      },
+      "correct_option_label": "B",
+      "explanation": "The Binomial PMF is given by the combination formula $\\binom{n}{y}$ multiplied by the probability of $y$ successes and $n-y$ failures."
+    },
+    {
+      "question_id": "Q11",
+      "question_text": "What is the formula for the **Mean** ($\\mu$) of a Binomial distribution with $n$ trials and success probability $p$?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$\\mu = p$",
+        "B": "$\\mu = n(1-p)$",
+        "C": "$\\mu = np$",
+        "D": "$\\mu = \\sqrt{npq}$"
+      },
+      "correct_option_label": "C",
+      "explanation": "The expected number of successes in $n$ independent Bernoulli trials is $n \\times p$."
+    },
+    {
+      "question_id": "Q12",
+      "question_text": "If you need to calculate the probability of having **'At least k'** successes in a Binomial experiment, which logic should you use?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$P(Y \\ge k) = 1 - P(Y \\le k)$",
+        "B": "$P(Y \\ge k) = 1 - P(Y \\le k-1)$",
+        "C": "$P(Y \\ge k) = P(0) + P(1) + ... + P(k)$",
+        "D": "$P(Y \\ge k) = P(k) + P(k+1)$"
+      },
+      "correct_option_label": "B",
+      "explanation": "The complement of 'at least $k$' is 'less than $k$' (which is 'at most $k-1$'). Thus $P(Y \\ge k) = 1 - P(Y \\le k-1)$."
+    },
+    {
+      "question_id": "Q13",
+      "question_text": "The **Poisson distribution** is most appropriate for modeling which of the following?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The number of successes in 10 coin tosses.",
+        "B": "The weight of apples in a crate.",
+        "C": "The number of customers arriving at a bank in one hour.",
+        "D": "The time it takes for a battery to fail."
+      },
+      "correct_option_label": "C",
+      "explanation": "The Poisson distribution models the number of occurrences of an event over a fixed interval of time or space."
+    },
+    {
+      "question_id": "Q14",
+      "question_text": "Select the correct **Probability Mass Function** for the Poisson distribution with parameter $\\lambda$.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$P(Y=y) = \\frac{e^{-\\lambda} \\lambda^y}{y!}$",
+        "B": "$P(Y=y) = \\lambda e^{-\\lambda y}$",
+        "C": "$P(Y=y) = \\binom{n}{y} p^y q^{n-y}$",
+        "D": "$P(Y=y) = 1 - e^{-\\lambda y}$"
+      },
+      "correct_option_label": "A",
+      "explanation": "The Poisson PMF is defined as $\\frac{e^{-\\lambda} \\lambda^y}{y!}$ for $y = 0, 1, 2, ...$."
+    },
+    {
+      "question_id": "Q15",
+      "question_text": "In a Poisson distribution, what unique relationship exists between the mean and the variance?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Mean = $\\sqrt{Variance}$",
+        "B": "Mean = Variance = $\\lambda$",
+        "C": "Mean = $2 \\times$ Variance",
+        "D": "Mean = $1/\\lambda$"
+      },
+      "correct_option_label": "B",
+      "explanation": "A key property of the Poisson distribution is that its mean and variance are both equal to the parameter $\\lambda$."
+    },
+    {
+      "question_id": "Q16",
+      "question_text": "If events occur at a rate of $\\lambda$ per hour, what is the Poisson parameter $\\Lambda$ for an interval of $T$ hours?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$\\Lambda = \\lambda / T$",
+        "B": "$\\Lambda = \\lambda^T$",
+        "C": "$\\Lambda = \\lambda T$",
+        "D": "$\\Lambda = \\sqrt{\\lambda T}$"
+      },
+      "correct_option_label": "C",
+      "explanation": "In a Poisson process, the mean number of events in an interval is proportional to the length of the interval: $\\Lambda = \\lambda T$."
+    },
+    {
+      "question_id": "Q17",
+      "question_text": "The Poisson distribution can be used to approximate the Binomial distribution when:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$n$ is small and $p$ is large.",
+        "B": "$n$ is large and $p$ is small.",
+        "C": "$n$ is large and $p$ is 0.5.",
+        "D": "$n$ and $p$ are both very small."
+      },
+      "correct_option_label": "B",
+      "explanation": "The Poisson is the limiting case of the Binomial distribution as $n \\to \\infty$ and $p \\to 0$, keeping $np = \\lambda$ constant."
+    },
+    {
+      "question_id": "Q18",
+      "question_text": "What is the probability that a **continuous** random variable $X$ takes on an exact specific value (e.g., $P(X = 5)$)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0",
+        "B": "0.5",
+        "C": "1",
+        "D": "$f(5)$"
+      },
+      "correct_option_label": "A",
+      "explanation": "For continuous random variables, the probability of any single point is zero because probability is defined as the area under the curve over an interval."
+    },
+    {
+      "question_id": "Q19",
+      "question_text": "Which formula represents the **Probability Density Function (PDF)** of a Uniform distribution on the interval $[L, U]$?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$f(x) = \\frac{x-L}{U-L}$",
+        "B": "$f(x) = \\frac{1}{U-L}$",
+        "C": "$f(x) = \\frac{1}{U}$",
+        "D": "$f(x) = \\frac{L+U}{2}$"
+      },
+      "correct_option_label": "B",
+      "explanation": "The PDF of a Uniform distribution is constant between $L$ and $U$, calculated as $1$ divided by the length of the interval."
+    },
+    {
+      "question_id": "Q20",
+      "question_text": "Select the correct formula for the **Variance** of a Uniform distribution.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$Var(X) = \\frac{(U-L)^2}{12}$",
+        "B": "$Var(X) = \\frac{L+U}{2}$",
+        "C": "$Var(X) = \\frac{(U-L)^2}{2}$",
+        "D": "$Var(X) = \\sqrt{\\frac{U-L}{12}}$"
+      },
+      "correct_option_label": "A",
+      "explanation": "The variance of a continuous Uniform distribution is defined as $\\frac{(U-L)^2}{12}$."
+    },
+    {
+      "question_id": "Q21",
+      "question_text": "To find the $k$-th percentile in a Uniform distribution, which formula should you use to solve for $x$?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$x = L + k$",
+        "B": "$\\frac{x-L}{U-L} = k$",
+        "C": "$\\frac{x}{U-L} = k$",
+        "D": "$1 - e^{-\\lambda x} = k$"
+      },
+      "correct_option_label": "B",
+      "explanation": "The percentile is found using the Cumulative Distribution Function (CDF). For Uniform, $F(x) = \\frac{x-L}{U-L}$, so we set this equal to $k$."
+    },
+    {
+      "question_id": "Q22",
+      "question_text": "If events follow a Poisson process with rate $\\lambda$, what distribution describes the **time between** these events?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Binomial",
+        "B": "Normal",
+        "C": "Exponential",
+        "D": "Uniform"
+      },
+      "correct_option_label": "C",
+      "explanation": "The Exponential distribution models the inter-arrival times (time between events) in a Poisson process."
+    },
+    {
+      "question_id": "Q23",
+      "question_text": "Select the correct **Cumulative Distribution Function (CDF)** for an Exponential distribution.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$F(x) = \\lambda e^{-\\lambda x}$",
+        "B": "$F(x) = 1 - e^{-\\lambda x}$",
+        "C": "$F(x) = e^{-\\lambda x}$",
+        "D": "$F(x) = 1 - \\lambda e^{-\\lambda x}$"
+      },
+      "correct_option_label": "B",
+      "explanation": "The CDF of an Exponential distribution, representing $P(X \\le x)$, is $1 - e^{-\\lambda x}$."
+    },
+    {
+      "question_id": "Q24",
+      "question_text": "What is the relationship between the Mean and the Standard Deviation in an **Exponential distribution**?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Mean = $1/\\lambda$, Std Dev = $1/\\lambda^2$",
+        "B": "Mean = Std Dev = $1/\\lambda$",
+        "C": "Mean = $\\lambda$, Std Dev = $\\lambda$",
+        "D": "Mean = $1/\\lambda$, Std Dev = $\\sqrt{\\lambda}$"
+      },
+      "correct_option_label": "B",
+      "explanation": "For an Exponential distribution, the mean and the standard deviation are identical, both equal to $1/\\lambda$."
+    },
+    {
+      "question_id": "Q25",
+      "question_text": "Which property of the Exponential distribution states that $P(X > t_0 + t | X > t_0) = P(X > t)$?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Symmetry Property",
+        "B": "Memoryless Property",
+        "C": "Central Limit Property",
+        "D": "Stationary Property"
+      },
+      "correct_option_label": "B",
+      "explanation": "The memoryless property means the probability of an event occurring in the future is independent of how much time has already passed."
+    },
+    {
+      "question_id": "Q26",
+      "question_text": "Which formula is used to convert a Normal random variable $X$ into a **Standard Normal** random variable $Z$?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$Z = \\frac{X - \\sigma}{\\mu}$",
+        "B": "$Z = \\frac{X - \\mu}{\\sigma}$",
+        "C": "$Z = \\frac{\\mu - X}{\\sigma}$",
+        "D": "$Z = (X - \\mu)^2 / \\sigma$"
+      },
+      "correct_option_label": "B",
+      "explanation": "The Z-score formula $Z = (X - \\mu) / \\sigma$ standardizes any normal distribution to a mean of 0 and standard deviation of 1."
+    },
+    {
+      "question_id": "Q27",
+      "question_text": "According to the **Empirical Rule**, approximately what percentage of data falls within $\\mu \\pm 2\\sigma$ in a Normal distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "68.3%",
+        "B": "95.4%",
+        "C": "99.7%",
+        "D": "50.0%"
+      },
+      "correct_option_label": "B",
+      "explanation": "The empirical rule states that approx. 68% falls within 1 SD, 95.4% within 2 SDs, and 99.7% within 3 SDs."
+    },
+    {
+      "question_id": "Q28",
+      "question_text": "When using the Normal distribution to approximate a Binomial distribution, what are the correct formulas for $\\mu$ and $\\sigma$?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$\\mu = np, \\sigma = npq$",
+        "B": "$\\mu = np, \\sigma = \\sqrt{npq}$",
+        "C": "$\\mu = p, \\sigma = \\sqrt{p(1-p)}$",
+        "D": "$\\mu = \\lambda, \\sigma = \\sqrt{\\lambda}$"
+      },
+      "correct_option_label": "B",
+      "explanation": "The approximation uses the Binomial mean ($np$) and the Binomial standard deviation ($\\sqrt{npq}$)."
+    },
+    {
+      "question_id": "Q29",
+      "question_text": "What is the **Continuity Correction** required when approximating a discrete Binomial value with a continuous Normal distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Multiplying the result by $n/N$",
+        "B": "Adding or subtracting 0.5 to the discrete boundaries",
+        "C": "Squaring the standard deviation",
+        "D": "Dividing the mean by $\\lambda$"
+      },
+      "correct_option_label": "B",
+      "explanation": "Because we move from a discrete to a continuous scale, we adjust boundaries by 0.5 to better capture the area of the discrete bars."
+    },
+    {
+      "question_id": "Q30",
+      "question_text": "Under which conditions is the Normal approximation to the Binomial distribution considered valid?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$n < 30$",
+        "B": "$p$ is very close to 0 or 1",
+        "C": "$np \\ge 5$ and $nq \\ge 5$",
+        "D": "Whenever $n$ is an even number"
+      },
+      "correct_option_label": "C",
+      "explanation": "The approximation is valid when the expected number of successes ($np$) and failures ($nq$) are both at least 5."
+    }
+  ]
+}

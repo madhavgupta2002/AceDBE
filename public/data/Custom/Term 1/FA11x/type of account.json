@@ -1,0 +1,580 @@
+{
+  "exam_metadata": {
+    "subject_name": "Custom AI Quiz",
+    "exam_date": "2026-01-30"
+  },
+  "questions": [
+    {
+      "question_id": "Q1",
+      "question_text": "Which of the following categories does the 'Capital Account' fall into?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Real Account",
+        "B": "Nominal Account",
+        "C": "Personal Account",
+        "D": "Representative Real Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "Capital Account represents the owner (a person), making it a Personal Account. Real accounts are for assets, and Nominal accounts are for expenses/incomes."
+    },
+    {
+      "question_id": "Q2",
+      "question_text": "According to the study material, 'Bank Account' is classified as which type of account?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Personal Account",
+        "B": "Real Account",
+        "C": "Nominal Account",
+        "D": "Representative Personal Account"
+      },
+      "correct_option_label": "B",
+      "explanation": "The provided material lists Bank A/c under Real Accounts (Assets). While some systems treat it as Artificial Personal, we follow the provided material. Nominal accounts are for P&L items."
+    },
+    {
+      "question_id": "Q3",
+      "question_text": "Which rule applies to a 'Nominal Account'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit what comes in, Credit what goes out",
+        "B": "Debit the receiver, Credit the giver",
+        "C": "Debit all expenses and losses, Credit all incomes and gains",
+        "D": "Debit the giver, Credit the receiver"
+      },
+      "correct_option_label": "C",
+      "explanation": "C is the golden rule for Nominal accounts. A applies to Real accounts, and B applies to Personal accounts."
+    },
+    {
+      "question_id": "Q4",
+      "question_text": "How is 'Outstanding Salary Account' classified?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Nominal Account",
+        "B": "Real Account",
+        "C": "Representative Personal Account",
+        "D": "Intangible Real Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "Outstanding Salary represents employees to whom salary is owed, making it Representative Personal. Salary A/c alone would be Nominal."
+    },
+    {
+      "question_id": "Q5",
+      "question_text": "Which of these is a 'Real Account'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Purchases Account",
+        "B": "Goodwill Account",
+        "C": "Interest Accrued Account",
+        "D": "Loss on Sale of Asset Account"
+      },
+      "correct_option_label": "B",
+      "explanation": "Goodwill is an intangible asset, thus a Real Account. Purchases and Loss on Sale are Nominal; Interest Accrued is Representative Personal."
+    },
+    {
+      "question_id": "Q6",
+      "question_text": "The rule 'Debit the receiver, Credit the giver' applies to:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Plant and Machinery Account",
+        "B": "Rent Account",
+        "C": "Customer / Debtor Account",
+        "D": "Cash Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "Customer/Debtor is a Personal Account, which follows this rule. Plant and Cash are Real; Rent is Nominal."
+    },
+    {
+      "question_id": "Q7",
+      "question_text": "Which of the following is NOT a Representative Personal Account?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Prepaid Insurance Account",
+        "B": "Accrued Income Account",
+        "C": "Unearned Income Account",
+        "D": "Depreciation Expense Account"
+      },
+      "correct_option_label": "D",
+      "explanation": "Depreciation Expense is a Nominal Account as it represents a loss/expense. The others represent persons/authorities related to payments or receipts."
+    },
+    {
+      "question_id": "Q8",
+      "question_text": "Classification of 'Drawings Account' is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Personal Account",
+        "B": "Real Account",
+        "C": "Nominal Account",
+        "D": "Valuation Account"
+      },
+      "correct_option_label": "A",
+      "explanation": "Drawings represent the owner's personal withdrawal, categorized as a Personal Account. Real accounts are assets; Nominal are expenses."
+    },
+    {
+      "question_id": "Q9",
+      "question_text": "What type of account is 'Inventory / Stock Account'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Nominal Account",
+        "B": "Personal Account",
+        "C": "Real Account",
+        "D": "Representative Personal Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "Inventory is a tangible asset, making it a Real Account. Nominal accounts record the cost of goods sold, not the stock itself."
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "Which rule is used for the 'Sales Account'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit what comes in, Credit what goes out",
+        "B": "Credit all incomes and gains",
+        "C": "Debit the receiver",
+        "D": "Credit the giver"
+      },
+      "correct_option_label": "B",
+      "explanation": "Sales is a Nominal Account (income). The rule is to credit incomes. A is for Real accounts; C and D are for Personal accounts."
+    },
+    {
+      "question_id": "Q11",
+      "question_text": "Identify the Representative Personal Account from the list:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Commission Income A/c",
+        "B": "Commission Payable A/c",
+        "C": "Cash A/c",
+        "D": "Furniture A/c"
+      },
+      "correct_option_label": "B",
+      "explanation": "Commission Payable represents a person to whom money is owed. Commission Income is Nominal; Cash and Furniture are Real."
+    },
+    {
+      "question_id": "Q12",
+      "question_text": "What is the classification of 'Accumulated Depreciation Account'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Nominal Account",
+        "B": "Representative Personal Account",
+        "C": "Real Account (Contra-asset)",
+        "D": "Natural Personal Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "Accumulated Depreciation is a contra-asset and is classified under Real Accounts in the provided material. Nominal accounts are for current period expenses."
+    },
+    {
+      "question_id": "Q13",
+      "question_text": "Which of these follows the rule 'Debit what comes in, Credit what goes out'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Supplier Account",
+        "B": "Rent Expense Account",
+        "C": "Machinery Account",
+        "D": "Capital Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "Machinery is a Real Account (Asset). Supplier and Capital are Personal; Rent Expense is Nominal."
+    },
+    {
+      "question_id": "Q14",
+      "question_text": "Which category does 'Provision for Doubtful Debts' belong to?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Nominal Account",
+        "B": "Real Account",
+        "C": "Representative Personal Account",
+        "D": "Artificial Personal Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "Provisions on the liability side are Representative Personal Accounts. Nominal accounts track the actual bad debt expense."
+    },
+    {
+      "question_id": "Q15",
+      "question_text": "Classify 'Loss on Sale of Asset Account':",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Real Account",
+        "B": "Nominal Account",
+        "C": "Personal Account",
+        "D": "Asset Account"
+      },
+      "correct_option_label": "B",
+      "explanation": "Losses are recorded in Nominal Accounts. Real accounts record the asset itself; Personal accounts record the buyer/seller."
+    },
+    {
+      "question_id": "Q16",
+      "question_text": "'Rent Paid in Advance' is a:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Nominal Account",
+        "B": "Real Account",
+        "C": "Representative Personal Account",
+        "D": "Natural Personal Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "Advance payments are Representative Personal Accounts. Rent Paid (expense) would be Nominal."
+    },
+    {
+      "question_id": "Q17",
+      "question_text": "Which of the following is an 'Artificial Personal Account'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Mr. Sharma's A/c",
+        "B": "Share Capital A/c",
+        "C": "Cash A/c",
+        "D": "Purchases A/c"
+      },
+      "correct_option_label": "B",
+      "explanation": "Share Capital represents the company's obligation to shareholders (artificial entity). Mr. Sharma is Natural Personal; Cash is Real; Purchases is Nominal."
+    },
+    {
+      "question_id": "Q18",
+      "question_text": "The 'Purchases Account' is classified as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Real Account",
+        "B": "Nominal Account",
+        "C": "Personal Account",
+        "D": "Representative Personal Account"
+      },
+      "correct_option_label": "B",
+      "explanation": "Purchases represent an expense for the business, categorized as a Nominal Account. Real accounts are for assets like Inventory."
+    },
+    {
+      "question_id": "Q19",
+      "question_text": "When we 'Debit the receiver', which account type are we dealing with?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Real",
+        "B": "Nominal",
+        "C": "Personal",
+        "D": "All of the above"
+      },
+      "correct_option_label": "C",
+      "explanation": "The rule 'Debit the receiver' is specific to Personal accounts. Real uses 'what comes in'; Nominal uses 'expenses/losses'."
+    },
+    {
+      "question_id": "Q20",
+      "question_text": "What type of account is 'Bills Receivable'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Real Account",
+        "B": "Nominal Account",
+        "C": "Representative Personal Account",
+        "D": "Natural Personal Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "Bills Receivable represents the person from whom the amount is due, making it a Representative Personal Account."
+    },
+    {
+      "question_id": "Q21",
+      "question_text": "Which of these is a Nominal Account?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Interest Payable A/c",
+        "B": "Interest Accrued A/c",
+        "C": "Interest Income A/c",
+        "D": "Prepaid Interest A/c"
+      },
+      "correct_option_label": "C",
+      "explanation": "Interest Income is a gain/income, which is Nominal. The others (Payable, Accrued, Prepaid) are Representative Personal Accounts."
+    },
+    {
+      "question_id": "Q22",
+      "question_text": "How do you classify 'Reserves & Surplus'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Real Account",
+        "B": "Personal Account",
+        "C": "Nominal Account",
+        "D": "Expense Account"
+      },
+      "correct_option_label": "B",
+      "explanation": "Reserves & Surplus belong to the owners, thus categorized as a Personal Account. Nominal accounts are for specific current incomes/expenses."
+    },
+    {
+      "question_id": "Q23",
+      "question_text": "Which rule applies to 'Cash Account'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit all expenses",
+        "B": "Credit the giver",
+        "C": "Debit what comes in",
+        "D": "Credit all gains"
+      },
+      "correct_option_label": "C",
+      "explanation": "Cash is a Real Account. The rule is 'Debit what comes in, Credit what goes out'. A and D are for Nominal; B is for Personal."
+    },
+    {
+      "question_id": "Q24",
+      "question_text": "'Provision for Warranty' (Liability) is classified as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Nominal Account",
+        "B": "Representative Personal Account",
+        "C": "Real Account",
+        "D": "Intangible Asset"
+      },
+      "correct_option_label": "B",
+      "explanation": "As a liability-side provision, it represents a future obligation to persons, making it Representative Personal. Warranty Expense is Nominal."
+    },
+    {
+      "question_id": "Q25",
+      "question_text": "Which of the following is a 'Real Account'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Old Asset Account",
+        "B": "Old Partners' Capital Account",
+        "C": "Bad Debts Expense Account",
+        "D": "Sales Account"
+      },
+      "correct_option_label": "A",
+      "explanation": "Assets (Old or New) are Real Accounts. Partners' Capital is Personal; Bad Debts and Sales are Nominal."
+    },
+    {
+      "question_id": "Q26",
+      "question_text": "Classification of 'Forfeited Shares Account' is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Real Account",
+        "B": "Nominal Account",
+        "C": "Personal Account",
+        "D": "Contra-asset Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "Forfeited Shares are part of Share Capital, which represents the shareholders (Personal). Real accounts are assets; Nominal are for P&L items."
+    },
+    {
+      "question_id": "Q27",
+      "question_text": "'Tax Expense Account' is a:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Nominal Account",
+        "B": "Representative Personal Account",
+        "C": "Real Account",
+        "D": "Natural Personal Account"
+      },
+      "correct_option_label": "A",
+      "explanation": "Tax Expense is an expense of the business, making it a Nominal Account. Provision for Tax would be Representative Personal."
+    },
+    {
+      "question_id": "Q28",
+      "question_text": "Which of these is a Representative Personal Account?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Salary A/c",
+        "B": "Outstanding Salary A/c",
+        "C": "Cash A/c",
+        "D": "Owner's A/c"
+      },
+      "correct_option_label": "B",
+      "explanation": "Outstanding Salary represents the person to whom it's payable. Salary A/c is Nominal; Cash is Real; Owner's A/c is Personal (Natural)."
+    },
+    {
+      "question_id": "Q29",
+      "question_text": "What type of account is 'Inventory on Consignment'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Nominal Account",
+        "B": "Real Account",
+        "C": "Personal Account",
+        "D": "Representative Personal Account"
+      },
+      "correct_option_label": "B",
+      "explanation": "Inventory on Consignment is still an asset (stock), making it a Real Account. Nominal accounts are for sales/expenses."
+    },
+    {
+      "question_id": "Q30",
+      "question_text": "The rule 'Credit all incomes and gains' applies to:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Profit on Sale of Asset Account",
+        "B": "Bank Account",
+        "C": "Customer Account",
+        "D": "Stock Account"
+      },
+      "correct_option_label": "A",
+      "explanation": "Profit on Sale is a Nominal Account (gain), which follows this rule. Bank and Stock are Real; Customer is Personal."
+    },
+    {
+      "question_id": "Q31",
+      "question_text": "Identify the 'Natural Personal Account':",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Share Capital A/c",
+        "B": "Vendor / Supplier A/c",
+        "C": "Outstanding Expense A/c",
+        "D": "Provision for Tax A/c"
+      },
+      "correct_option_label": "B",
+      "explanation": "A Supplier is a natural person (or entity treated as a person). Share Capital is Artificial; Outstanding Expense and Provision for Tax are Representative."
+    },
+    {
+      "question_id": "Q32",
+      "question_text": "Which of the following is a Nominal Account?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Prepaid Expense",
+        "B": "Outstanding Expense",
+        "C": "Consumption Expense",
+        "D": "Accrued Income"
+      },
+      "correct_option_label": "C",
+      "explanation": "Consumption Expense is an actual expense (Nominal). Prepaid, Outstanding, and Accrued are Representative Personal Accounts."
+    },
+    {
+      "question_id": "Q33",
+      "question_text": "Classify 'Unearned Income Account':",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Nominal Account",
+        "B": "Real Account",
+        "C": "Representative Personal Account",
+        "D": "Intangible Real Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "Unearned income represents an obligation to a customer (person), making it Representative Personal. Income itself is Nominal."
+    },
+    {
+      "question_id": "Q34",
+      "question_text": "Which rule is applied to 'Machinery Account'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit the receiver",
+        "B": "Credit all gains",
+        "C": "Debit what comes in",
+        "D": "Credit the giver"
+      },
+      "correct_option_label": "C",
+      "explanation": "Machinery is a Real Account (Asset). Real accounts follow 'Debit what comes in, Credit what goes out'. A and D are Personal; B is Nominal."
+    },
+    {
+      "question_id": "Q35",
+      "question_text": "Identify the odd one out based on account type:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Plant A/c",
+        "B": "Furniture A/c",
+        "C": "Machinery A/c",
+        "D": "Salary A/c"
+      },
+      "correct_option_label": "D",
+      "explanation": "Plant, Furniture, and Machinery are Real Accounts (Assets). Salary A/c is a Nominal Account (Expense)."
+    },
+    {
+      "question_id": "Q36",
+      "question_text": "What type of account is 'Bills Payable'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Real Account",
+        "B": "Nominal Account",
+        "C": "Representative Personal Account",
+        "D": "Natural Personal Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "Bills Payable represents creditors to whom money is owed, making it a Representative Personal Account."
+    },
+    {
+      "question_id": "Q37",
+      "question_text": "In the rule 'Debit all expenses and losses', which of these accounts would be debited?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Sales A/c",
+        "B": "Interest Income A/c",
+        "C": "Depreciation Expense A/c",
+        "D": "Capital A/c"
+      },
+      "correct_option_label": "C",
+      "explanation": "Depreciation Expense is a Nominal Account (expense/loss). Sales and Interest Income are gains (credited); Capital is Personal."
+    },
+    {
+      "question_id": "Q38",
+      "question_text": "'Advance from Customers A/c' is classified as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Personal Account",
+        "B": "Real Account",
+        "C": "Nominal Account",
+        "D": "Tangible Account"
+      },
+      "correct_option_label": "A",
+      "explanation": "Advance from Customers is a Representative Personal Account (representing the customer). Real is for assets; Nominal is for income/expense."
+    },
+    {
+      "question_id": "Q39",
+      "question_text": "Which of the following is a Nominal Account?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cost of Sales A/c",
+        "B": "Inventory A/c",
+        "C": "Bills Receivable A/c",
+        "D": "Cash A/c"
+      },
+      "correct_option_label": "A",
+      "explanation": "Cost of Sales is an expense (Nominal). Inventory and Cash are Real; Bills Receivable is Representative Personal."
+    },
+    {
+      "question_id": "Q40",
+      "question_text": "Classification of 'Provision for Bonus Account' is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Nominal Account",
+        "B": "Representative Personal Account",
+        "C": "Real Account",
+        "D": "Asset Account"
+      },
+      "correct_option_label": "B",
+      "explanation": "Provision for Bonus is a liability representing employees, thus Representative Personal. Bonus Expense is Nominal."
+    },
+    {
+      "question_id": "Q41",
+      "question_text": "Which rule applies when a business pays cash to a supplier?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit Nominal, Credit Real",
+        "B": "Debit Personal, Credit Real",
+        "C": "Debit Real, Credit Personal",
+        "D": "Debit Personal, Credit Nominal"
+      },
+      "correct_option_label": "B",
+      "explanation": "Supplier (Personal) is the receiver (Debit); Cash (Real) goes out (Credit). A, C, and D do not match this transaction."
+    },
+    {
+      "question_id": "Q42",
+      "question_text": "'Warranty Expense A/c' is classified as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Real Account",
+        "B": "Personal Account",
+        "C": "Nominal Account",
+        "D": "Valuation Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "Warranty Expense is an expense, making it a Nominal Account. Provision for Warranty is Representative Personal."
+    },
+    {
+      "question_id": "Q43",
+      "question_text": "Which of these is an Intangible Real Account?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash",
+        "B": "Goodwill",
+        "C": "Machinery",
+        "D": "Inventory"
+      },
+      "correct_option_label": "B",
+      "explanation": "Goodwill is an asset that cannot be touched, thus an Intangible Real Account. Cash, Machinery, and Inventory are Tangible Real Accounts."
+    },
+    {
+      "question_id": "Q44",
+      "question_text": "What type of account is 'Interest Accrued Account'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Nominal Account",
+        "B": "Real Account",
+        "C": "Representative Personal Account",
+        "D": "Revenue Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "Accrued items (Receivables) are Representative Personal Accounts. Interest Income itself is Nominal."
+    }
+  ]
+}

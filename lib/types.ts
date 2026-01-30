@@ -38,7 +38,7 @@ export interface Question {
 // Quiz state types
 export type PracticeMode = 'bank' | 'full';
 export type QuestionOrder = 'random' | 'inOrder';
-export type BankType = 'CLA' | 'Exam';
+export type BankType = 'CLA' | 'Exam' | 'Custom';
 
 export interface QuizState {
   practiceMode: PracticeMode;

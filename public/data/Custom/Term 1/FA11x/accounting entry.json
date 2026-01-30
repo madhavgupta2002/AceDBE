@@ -1,0 +1,333 @@
+{
+  "exam_metadata": {
+    "subject_name": "Custom AI Quiz",
+    "exam_date": "2026-01-30"
+  },
+  "questions": [
+    {
+      "question_id": "Q1",
+      "question_text": "When a machine worth Rs. 5,00,000 is purchased for cash, what is the correct journal entry based on the Golden Rules of Accounting?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Cash; Credit: Machine",
+        "B": "Debit: Machine; Credit: Cash",
+        "C": "Debit: Machine; Credit: Bank Loan",
+        "D": "Debit: Expense; Credit: Cash"
+      },
+      "correct_option_label": "B",
+      "explanation": "According to the Real Account rule 'Debit what comes in, Credit what goes out', the Machine (asset) comes in and is debited, while Cash (asset) goes out and is credited."
+    },
+    {
+      "question_id": "Q2",
+      "question_text": "A business sold goods worth Rs. 9,000 for Rs. 12,000 on credit to Mr. X. Which of the following correctly describes the impact on the accounting equation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Sales +12,000; Mr. X +12,000; Goods -9,000; Cost of Sales -9,000",
+        "B": "Sales +12,000; Mr. X -12,000; Goods -9,000; Cost of Sales +9,000",
+        "C": "Sales -12,000; Mr. X +12,000; Goods +9,000; Cost of Sales -9,000",
+        "D": "Sales +9,000; Mr. X +9,000; Goods -12,000; Cost of Sales -12,000"
+      },
+      "correct_option_label": "A",
+      "explanation": "Revenue (Sales) increases equity by 12,000, Debtors (Mr. X) increase assets by 12,000, Inventory (Goods) decreases assets by 9,000, and Cost of Sales reduces equity by 9,000."
+    },
+    {
+      "question_id": "Q3",
+      "question_text": "On 1st March 2024, a company took a loan from SBI for Rs. 1,00,000. What is the correct journal entry to record this transaction?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Loan Account; Credit: Cash and Bank",
+        "B": "Debit: Interest Account; Credit: SBI Account",
+        "C": "Debit: Cash and Bank; Credit: Loan Account",
+        "D": "Debit: SBI Account; Credit: Interest Account"
+      },
+      "correct_option_label": "C",
+      "explanation": "When taking a loan, the asset (Cash/Bank) increases and is debited, while the liability (Loan) increases and is credited."
+    },
+    {
+      "question_id": "Q4",
+      "question_text": "What is the correct journal entry to record an outstanding water supply expense of Rs. 5,000 at year-end?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Water Supply Expense; Credit: Cash",
+        "B": "Debit: Outstanding Water Supply Expense; Credit: Bank",
+        "C": "Debit: Water Supply Expense; Credit: Outstanding Water Supply Expense",
+        "D": "Debit: Outstanding Water Supply Expense; Credit: Water Supply Expense"
+      },
+      "correct_option_label": "C",
+      "explanation": "To record an outstanding expense, the Expense account is debited (increasing expenses) and the Outstanding Expense (a liability) is credited."
+    },
+    {
+      "question_id": "Q5",
+      "question_text": "When the proprietor introduces additional capital into the business in the form of cash, which accounts are affected?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Capital A/c; Credit: Cash A/c",
+        "B": "Debit: Cash A/c; Credit: Drawings A/c",
+        "C": "Debit: Cash A/c; Credit: Capital A/c",
+        "D": "Debit: Bank A/c; Credit: Cash A/c"
+      },
+      "correct_option_label": "C",
+      "explanation": "Capital introduction increases the asset 'Cash' (Debit) and increases the 'Capital' liability/equity account (Credit)."
+    },
+    {
+      "question_id": "Q6",
+      "question_text": "If a partner withdraws goods from the business for personal use, what is the correct credit entry?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Credit: Sales A/c",
+        "B": "Credit: Purchases A/c",
+        "C": "Credit: Capital A/c",
+        "D": "Credit: Inventory on Consignment A/c"
+      },
+      "correct_option_label": "B",
+      "explanation": "When goods are taken for personal use (Drawings), the Drawings account is debited and the Purchases account is credited to reduce the cost of goods available for sale."
+    },
+    {
+      "question_id": "Q7",
+      "question_text": "Purchasing goods on credit from a supplier results in:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Decrease in Asset and Increase in Liability",
+        "B": "Increase in Expense and Increase in Liability",
+        "C": "Increase in Asset and Decrease in Capital",
+        "D": "Decrease in Expense and Increase in Asset"
+      },
+      "correct_option_label": "B",
+      "explanation": "Purchases (Expense) increase and the Supplier (Liability) increases."
+    },
+    {
+      "question_id": "Q8",
+      "question_text": "What is the accounting entry for collecting cash from a debtor (customer)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Customer A/c; Credit: Cash A/c",
+        "B": "Debit: Cash A/c; Credit: Sales A/c",
+        "C": "Debit: Cash A/c; Credit: Customer A/c",
+        "D": "Debit: Bank A/c; Credit: Bad Debts A/c"
+      },
+      "correct_option_label": "C",
+      "explanation": "Collecting cash increases the asset 'Cash' (Debit) and decreases the asset 'Customer/Debtor' (Credit)."
+    },
+    {
+      "question_id": "Q9",
+      "question_text": "How does a 'Prepaid Expense' adjustment affect the accounting equation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Asset (+), Expense (-), Capital (+)",
+        "B": "Asset (-), Expense (+), Capital (-)",
+        "C": "Liability (+), Expense (+), Capital (-)",
+        "D": "Asset (+), Liability (+), Capital (0)"
+      },
+      "correct_option_label": "A",
+      "explanation": "Prepaid expense creates an asset (+), reduces the current period's expense (-), which in turn increases capital (+)."
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "The journal entry for 'Accrued Interest Income' is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Interest Income A/c; Credit: Interest Accrued A/c",
+        "B": "Debit: Cash A/c; Credit: Interest Income A/c",
+        "C": "Debit: Interest Accrued A/c; Credit: Interest Income A/c",
+        "D": "Debit: Interest Accrued A/c; Credit: Cash A/c"
+      },
+      "correct_option_label": "C",
+      "explanation": "Accrued income is earned but not yet received. We debit the asset 'Interest Accrued' and credit the revenue 'Interest Income'."
+    },
+    {
+      "question_id": "Q11",
+      "question_text": "When raw materials are consumed in production, which account is credited?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Consumption Expense A/c",
+        "B": "Inventory A/c",
+        "C": "Purchases A/c",
+        "D": "Work-in-Progress A/c"
+      },
+      "correct_option_label": "B",
+      "explanation": "Material consumption moves value from the asset (Inventory) to an expense (Consumption Expense). Therefore, Inventory is credited."
+    },
+    {
+      "question_id": "Q12",
+      "question_text": "What is the correct journal entry to record Depreciation Expense?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Asset A/c; Credit: Depreciation Expense A/c",
+        "B": "Debit: Depreciation Expense A/c; Credit: Accumulated Depreciation A/c",
+        "C": "Debit: Accumulated Depreciation A/c; Credit: Depreciation Expense A/c",
+        "D": "Debit: Depreciation Expense A/c; Credit: Cash A/c"
+      },
+      "correct_option_label": "B",
+      "explanation": "Depreciation is an expense (Debit) and it increases the contra-asset account Accumulated Depreciation (Credit)."
+    },
+    {
+      "question_id": "Q13",
+      "question_text": "Creating a 'Provision for Bad Debts' involves:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Provision for D.D.; Credit: Bad Debts Expense",
+        "B": "Debit: Bad Debts Expense; Credit: Provision for D.D.",
+        "C": "Debit: Customer A/c; Credit: Provision for D.D.",
+        "D": "Debit: Cash A/c; Credit: Bad Debts Expense"
+      },
+      "correct_option_label": "B",
+      "explanation": "To create a provision, we recognize an expense (Debit) and increase the provision account (Credit)."
+    },
+    {
+      "question_id": "Q14",
+      "question_text": "When a specific Bad Debt is written off against an existing provision, the entry is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Bad Debts Expense; Credit: Customer A/c",
+        "B": "Debit: Provision for D.D.; Credit: Customer A/c",
+        "C": "Debit: Customer A/c; Credit: Provision for D.D.",
+        "D": "Debit: Provision for D.D.; Credit: Bad Debts Expense"
+      },
+      "correct_option_label": "B",
+      "explanation": "Writing off against a provision reduces the provision (Debit) and reduces the customer's balance (Credit)."
+    },
+    {
+      "question_id": "Q15",
+      "question_text": "What is the accounting impact of creating a Provision for Warranty?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Expense (+), Liability (+), Capital (-)",
+        "B": "Expense (-), Liability (-), Capital (+)",
+        "C": "Asset (+), Expense (+), Capital (-)",
+        "D": "Asset (-), Liability (+), Capital (-)"
+      },
+      "correct_option_label": "A",
+      "explanation": "Creating a provision increases an expense and a liability, which reduces the overall capital."
+    },
+    {
+      "question_id": "Q16",
+      "question_text": "When a company utilizes a warranty provision to replace a defective part from inventory, it should:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Warranty Expense; Credit: Inventory",
+        "B": "Debit: Provision for Warranty; Credit: Inventory",
+        "C": "Debit: Inventory; Credit: Provision for Warranty",
+        "D": "Debit: Cash; Credit: Provision for Warranty"
+      },
+      "correct_option_label": "B",
+      "explanation": "Utilization of a provision reduces the liability (Debit: Provision) and reduces the asset used (Credit: Inventory)."
+    },
+    {
+      "question_id": "Q17",
+      "question_text": "Purchasing an asset on credit from a vendor results in:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Asset A/c; Credit: Cash A/c",
+        "B": "Debit: Vendor A/c; Credit: Asset A/c",
+        "C": "Debit: Asset A/c; Credit: Vendor A/c",
+        "D": "Debit: Expense A/c; Credit: Vendor A/c"
+      },
+      "correct_option_label": "C",
+      "explanation": "The asset increases (Debit) and the liability to the vendor increases (Credit)."
+    },
+    {
+      "question_id": "Q18",
+      "question_text": "When an asset is sold at a loss, which of the following is part of the journal entry?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Credit: Loss A/c",
+        "B": "Debit: Asset A/c",
+        "C": "Debit: Loss A/c",
+        "D": "Credit: Accumulated Depreciation A/c"
+      },
+      "correct_option_label": "C",
+      "explanation": "A loss is an expense/reduction in equity and must be debited."
+    },
+    {
+      "question_id": "Q19",
+      "question_text": "In an asset exchange where an old asset and cash are given for a new asset, the new asset is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Credited",
+        "B": "Debited",
+        "C": "Ignored",
+        "D": "Recorded as a Liability"
+      },
+      "correct_option_label": "B",
+      "explanation": "The new asset 'comes in' to the business and is therefore debited."
+    },
+    {
+      "question_id": "Q20",
+      "question_text": "When goods are sent on consignment, the entry is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Inventory A/c; Credit: Inventory on Consignment A/c",
+        "B": "Debit: Inventory on Consignment A/c; Credit: Inventory A/c",
+        "C": "Debit: Sales A/c; Credit: Inventory A/c",
+        "D": "Debit: Consignee A/c; Credit: Sales A/c"
+      },
+      "correct_option_label": "B",
+      "explanation": "Goods are moved from general inventory to a specific consignment inventory account (both are assets)."
+    },
+    {
+      "question_id": "Q21",
+      "question_text": "The entry to record the 'Cost of Sales' for goods sold on consignment is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Cost of Sales A/c; Credit: Inventory on Consignment A/c",
+        "B": "Debit: Inventory on Consignment A/c; Credit: Cost of Sales A/c",
+        "C": "Debit: Sales A/c; Credit: Inventory A/c",
+        "D": "Debit: Purchases A/c; Credit: Inventory on Consignment A/c"
+      },
+      "correct_option_label": "A",
+      "explanation": "Cost of Sales (Expense) is debited and the specific asset (Inventory on Consignment) is credited."
+    },
+    {
+      "question_id": "Q22",
+      "question_text": "When a new partner brings goodwill into the business, the 'Goodwill A/c' is debited and which account is credited?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "New Partner's Capital A/c",
+        "B": "Old Partners' Capital A/c",
+        "C": "Cash A/c",
+        "D": "Revaluation A/c"
+      },
+      "correct_option_label": "B",
+      "explanation": "Goodwill recognized upon admission of a partner is credited to the existing (old) partners' capital accounts."
+    },
+    {
+      "question_id": "Q23",
+      "question_text": "The issue of 'Bonus Shares' from reserves results in:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Increase in Total Assets",
+        "B": "Decrease in Total Liabilities",
+        "C": "Decrease in Reserves and Increase in Share Capital",
+        "D": "Increase in Cash and Increase in Share Capital"
+      },
+      "correct_option_label": "C",
+      "explanation": "Bonus shares are a capitalization of reserves; Reserves (Debit/Decrease) and Share Capital (Credit/Increase)."
+    },
+    {
+      "question_id": "Q24",
+      "question_text": "What is the journal entry for 'Share Forfeiture'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debit: Share Capital A/c; Credit: Forfeited Shares A/c",
+        "B": "Debit: Forfeited Shares A/c; Credit: Share Capital A/c",
+        "C": "Debit: Bank A/c; Credit: Share Capital A/c",
+        "D": "Debit: Share Capital A/c; Credit: Bank A/c"
+      },
+      "correct_option_label": "A",
+      "explanation": "When shares are forfeited, the Share Capital is reduced (Debit) and the amount already received is moved to the Forfeited Shares account (Credit)."
+    },
+    {
+      "question_id": "Q25",
+      "question_text": "When a company pays a salary to an employee in cash, the accounting impact is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Asset (-), Expense (+), Capital (-)",
+        "B": "Asset (+), Expense (+), Capital (+)",
+        "C": "Asset (-), Liability (-), Capital (0)",
+        "D": "Asset (+), Liability (+), Capital (-)"
+      },
+      "correct_option_label": "A",
+      "explanation": "Cash (Asset) decreases, Salary (Expense) increases, and because expenses reduce profit, Capital also decreases."
+    }
+  ]
+}

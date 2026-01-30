@@ -28,7 +28,7 @@ export function convertToInternalFormat(iimbQuestion: IIMBQuestion, source?: str
 
 // Load question file from public/data directory via API
 export async function loadQuestionFile(
-  bankType: 'CLA' | 'Exam',
+  bankType: 'CLA' | 'Exam' | 'Custom',
   subjectCode: string,
   bankName: string
 ): Promise<QuestionFile | null> {
@@ -58,7 +58,7 @@ export interface BankInfo {
 
 // Get available banks for a subject and bank type
 export async function getAvailableBanks(
-  bankType: 'CLA' | 'Exam',
+  bankType: 'CLA' | 'Exam' | 'Custom',
   subjectCode: string
 ): Promise<BankInfo[]> {
   try {
@@ -81,7 +81,7 @@ export async function getAvailableBanks(
 
 // Load and convert questions for quiz
 export async function loadQuestions(
-  bankType: 'CLA' | 'Exam',
+  bankType: 'CLA' | 'Exam' | 'Custom',
   subjectCode: string,
   bankName: string
 ): Promise<Question[]> {
@@ -97,7 +97,7 @@ export async function loadQuestions(
 
 // Load all questions for a subject (for full practice mode)
 export async function loadAllQuestionsForSubject(
-  bankType: 'CLA' | 'Exam',
+  bankType: 'CLA' | 'Exam' | 'Custom',
   subjectCode: string
 ): Promise<Question[]> {
   const banks = await getAvailableBanks(bankType, subjectCode);
@@ -116,20 +116,21 @@ export interface SetWithModules {
   bankName: string;
   displayName: string;
   modules: (string | number)[];
-  bankType: 'CLA' | 'Exam';
+  bankType: 'CLA' | 'Exam' | 'Custom';
   exam_date?: string; // Optional exam date for sorting
 }
 
 // Get all sets with their modules for a subject
 export async function getSetsWithModules(
   subjectCode: string
-): Promise<{ cla: SetWithModules[]; exam: SetWithModules[] }> {
-  const [claBanks, examBanks] = await Promise.all([
+): Promise<{ cla: SetWithModules[]; exam: SetWithModules[]; custom: SetWithModules[] }> {
+  const [claBanks, examBanks, customBanks] = await Promise.all([
     getAvailableBanks('CLA', subjectCode),
     getAvailableBanks('Exam', subjectCode),
+    getAvailableBanks('Custom', subjectCode),
   ]);
 
-  const getModulesForBanks = async (banks: BankInfo[], bankType: 'CLA' | 'Exam'): Promise<SetWithModules[]> => {
+  const getModulesForBanks = async (banks: BankInfo[], bankType: 'CLA' | 'Exam' | 'Custom'): Promise<SetWithModules[]> => {
     const setsWithModules: SetWithModules[] = [];
 
     for (const bank of banks) {
@@ -195,10 +196,11 @@ export async function getSetsWithModules(
     return setsWithModules;
   };
 
-  const [claSets, examSets] = await Promise.all([
+  const [claSets, examSets, customSets] = await Promise.all([
     getModulesForBanks(claBanks, 'CLA'),
     getModulesForBanks(examBanks, 'Exam'),
+    getModulesForBanks(customBanks, 'Custom'),
   ]);
 
-  return { cla: claSets, exam: examSets };
+  return { cla: claSets, exam: examSets, custom: customSets };
 }

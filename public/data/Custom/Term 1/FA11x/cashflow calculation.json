@@ -1,0 +1,203 @@
+{
+  "exam_metadata": {
+    "subject_name": "Cash Flow Statement Analysis",
+    "exam_date": "Custom"
+  },
+  "questions": [
+    {
+      "question_id": "Q1",
+      "question_text": "Based on the following Cash Book data, calculate the **Cash Flow from Operating Activities**:\n- Cash sales: ₹120\n- Collection from debtors: ₹380\n- Cash purchases: ₹70\n- Payment to suppliers: ₹210\n- Salary paid: ₹90\n- Rent paid: ₹60\n- Interest paid on loan: ₹30\n- Machine purchased: ₹100",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹100",
+        "B": "₹70",
+        "C": "₹40",
+        "D": "₹170"
+      },
+      "correct_option_label": "B",
+      "explanation": "Operating Inflows = Cash Sales + Collection from Debtors = $120 + 380 = 500$.\nOperating Outflows = Cash Purchases + Payment to Suppliers + Salary + Rent = $70 + 210 + 90 + 60 = 430$.\nNet Operating Cash Flow = $500 - 430 = ₹70$.\nNote: Interest paid is a financing activity and Machine purchase is an investing activity."
+    },
+    {
+      "question_id": "Q2",
+      "question_text": "A company reports total sales of ₹500,000, of which $60\\%$ is on cash basis. Other details include: Salary paid ₹80,000; Rent paid ₹40,000; Advance received from customers ₹20,000; Interest paid ₹15,000. What is the **Cash Flow from Operating Activities**?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹200,000",
+        "B": "₹185,000",
+        "C": "₹320,000",
+        "D": "₹195,000"
+      },
+      "correct_option_label": "A",
+      "explanation": "Cash Sales = $500,000 \\times 60\\% = 300,000$.\nTotal Operating Inflows = $300,000 (Sales) + 20,000 (Advance) = 320,000$.\nTotal Operating Outflows = $80,000 (Salary) + 40,000 (Rent) = 120,000$.\nNet Operating Cash Flow = $320,000 - 120,000 = ₹200,000$.\nInterest paid (₹15,000) is excluded as it is a financing activity."
+    },
+    {
+      "question_id": "Q3",
+      "question_text": "From the following information, calculate the **Cash Flow from Financing Activities**:\n- Capital introduced: ₹400\n- Loan from bank: ₹600\n- Dividend paid: ₹50\n- Interest paid on loan: ₹30\n- Loan repaid: ₹100\n- Machine purchased: ₹200",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹1,000",
+        "B": "₹820",
+        "C": "₹620",
+        "D": "₹720"
+      },
+      "correct_option_label": "B",
+      "explanation": "Financing Inflows = Capital introduced + Bank Loan = $400 + 600 = 1,000$.\nFinancing Outflows = Dividend paid + Interest paid + Loan repaid = $50 + 30 + 100 = 180$.\nNet Financing Cash Flow = $1,000 - 180 = ₹820$.\nMachine purchase is an investing activity and is ignored here."
+    },
+    {
+      "question_id": "Q4",
+      "question_text": "Determine the **Cash Flow from Financing Activities** based on these transactions:\n- Equity shares issued: ₹1,000\n- Debentures redeemed: ₹300\n- Dividend paid: ₹100\n- Interest paid: ₹50\n- Furniture purchased: ₹200",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹750",
+        "B": "₹450",
+        "C": "₹550",
+        "D": "₹350"
+      },
+      "correct_option_label": "C",
+      "explanation": "Financing Inflows = Issue of Equity Shares = ₹1,000.\nFinancing Outflows = Debentures redeemed + Dividend paid + Interest paid = $300 + 100 + 50 = 450$.\nNet Financing Cash Flow = $1,000 - 450 = ₹550$.\nFurniture purchase is an investing activity."
+    },
+    {
+      "question_id": "Q5",
+      "question_text": "Calculate the **Cash Flow from Investing Activities** using the following details:\n- Machine purchased: ₹250\n- Old machinery sold: ₹90\n- Investment in shares: ₹150\n- Dividend received: ₹40\n- Loan taken from bank: ₹300",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹270",
+        "B": "–₹270",
+        "C": "–₹130",
+        "D": "₹30"
+      },
+      "correct_option_label": "B",
+      "explanation": "Investing Inflows = Sale of machinery + Dividend received = $90 + 40 = 130$.\nInvesting Outflows = Purchase of machine + Investment in shares = $250 + 150 = 400$.\nNet Investing Cash Flow = $130 - 400 = –₹270$.\nLoan taken is a financing activity."
+    },
+    {
+      "question_id": "Q6",
+      "question_text": "Find the **Cash Flow from Investing Activities**:\n- Land purchased: ₹500,000\n- Building sold: ₹200,000\n- Equipment purchased: ₹120,000\n- Brokerage paid on purchase of land: ₹10,000",
+      "question_type": "MCQ",
+      "options": {
+        "A": "–₹430,000",
+        "B": "–₹420,000",
+        "C": "₹200,000",
+        "D": "–₹630,000"
+      },
+      "correct_option_label": "A",
+      "explanation": "Investing Inflows = Sale of Building = ₹200,000.\nInvesting Outflows = Land purchase + Equipment purchase + Brokerage = $500,000 + 120,000 + 10,000 = 630,000$.\nNet Investing Cash Flow = $200,000 - 630,000 = –₹430,000$.\nBrokerage on purchase is capitalized and treated as part of the asset cost (Investing outflow)."
+    },
+    {
+      "question_id": "Q7",
+      "question_text": "From the mixed data below, identify the **Cash Flow from Financing Activities** only:\n- Cash sales: ₹200\n- Capital introduced: ₹500\n- Loan repaid: ₹150\n- Dividend paid: ₹50\n- Machine sold: ₹90",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹500",
+        "B": "₹350",
+        "C": "₹300",
+        "D": "₹590"
+      },
+      "correct_option_label": "C",
+      "explanation": "Financing Inflow = Capital introduced = ₹500.\nFinancing Outflows = Loan repaid + Dividend paid = $150 + 50 = 200$.\nNet Financing Cash Flow = $500 - 200 = ₹300$.\nCash sales (Operating) and Machine sold (Investing) are ignored."
+    },
+    {
+      "question_id": "Q8",
+      "question_text": "Calculate **Cash Flow from Operating Activities** from the following:\n- Goods sold on credit: ₹400\n- Cash collected from customers: ₹250\n- Raw material purchased for cash: ₹100\n- Salary paid: ₹70\n- Rent paid: ₹30\n- Interest paid: ₹20",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹70",
+        "B": "₹50",
+        "C": "₹30",
+        "D": "₹250"
+      },
+      "correct_option_label": "B",
+      "explanation": "Operating Inflows = Cash collected from customers = ₹250 (Credit sales are ignored).\nOperating Outflows = Raw material purchase + Salary + Rent = $100 + 70 + 30 = 200$.\nNet Operating Cash Flow = $250 - 200 = ₹50$.\nInterest paid is a financing activity."
+    },
+    {
+      "question_id": "Q9",
+      "question_text": "Under which category is **Interest paid on a bank loan** typically classified in a Cash Flow Statement for a non-financial company?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Operating Activities",
+        "B": "Investing Activities",
+        "C": "Financing Activities",
+        "D": "Cash Equivalents"
+      },
+      "correct_option_label": "C",
+      "explanation": "Interest paid is a cost of obtaining finance (capital/debt), hence it is classified as a **Financing Activity**.\nFor financial companies, it might be operating, but generally, it is financing."
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "How is **Dividend received** on investments in shares classified in the Cash Flow Statement?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Operating Activities",
+        "B": "Investing Activities",
+        "C": "Financing Activities",
+        "D": "Extraordinary Items"
+      },
+      "correct_option_label": "B",
+      "explanation": "Dividend received is a return on investments made in other entities.\nSince investments are part of **Investing Activities**, the income generated from them is also classified as an investing inflow."
+    },
+    {
+      "question_id": "Q11",
+      "question_text": "What does a significant gap between **Adjusted Accrual Profit** and **Operating Cash Flow** potentially indicate to an analyst?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The company is expanding its fixed assets.",
+        "B": "The company has high liquidity.",
+        "C": "Potential manipulation or aggressive accounting practices.",
+        "D": "The company is paying off its long-term debts."
+      },
+      "correct_option_label": "C",
+      "explanation": "Comparing profit (accrual) with cash flow (actual movement) checks the 'quality of profits'.\nA large unexplained gap suggests that profits reported on paper are not translating into actual cash, which could signal aggressive accounting."
+    },
+    {
+      "question_id": "Q12",
+      "question_text": "Which of the following describes an **ideal scenario** for a healthy, growing company regarding its cash flow patterns?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Negative Operating, Positive Investing, Positive Financing",
+        "B": "Positive Operating, Negative Investing, Positive/Negative Financing",
+        "C": "Positive Operating, Positive Investing, Negative Financing",
+        "D": "Negative Operating, Negative Investing, Negative Financing"
+      },
+      "correct_option_label": "B",
+      "explanation": "A healthy company should generate cash from its core operations (Positive Operating).\nIt should reinvest that cash into long-term assets for growth (Negative Investing).\nFinancing depends on whether they are raising new capital or paying back old debt."
+    },
+    {
+      "question_id": "Q13",
+      "question_text": "If a company has:\n- Net Cash from Operating Activities: ₹100\n- Net Cash from Investing Activities: –₹50\n- Net Cash from Financing Activities: –₹20\nWhat is the **Net Increase/Decrease in Cash** for the year?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Increase of ₹170",
+        "B": "Decrease of ₹30",
+        "C": "Increase of ₹30",
+        "D": "Increase of ₹70"
+      },
+      "correct_option_label": "C",
+      "explanation": "Net Cash Flow = Operating + Investing + Financing\nNet Cash Flow = $100 + (-50) + (-20) = 100 - 70 = ₹30$.\nThis represents a net increase in cash."
+    },
+    {
+      "question_id": "Q14",
+      "question_text": "In the context of the Cash Flow Statement, an **Advance received from a customer** is treated as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Operating Cash Inflow",
+        "B": "Investing Cash Inflow",
+        "C": "Financing Cash Inflow",
+        "D": "Non-cash Item"
+      },
+      "correct_option_label": "A",
+      "explanation": "Advances from customers are directly related to the core business sales process.\nTherefore, they are classified as **Operating Cash Inflows**."
+    },
+    {
+      "question_id": "Q15",
+      "question_text": "Why is **Brokerage paid on the purchase of an investment** subtracted in the Investing Activities section?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is an administrative expense.",
+        "B": "It is part of the cost of the asset being acquired.",
+        "C": "It is a financing charge.",
+        "D": "It is a non-cash transaction."
+      },
+      "correct_option_label": "B",
+      "explanation": "Expenses directly attributable to the acquisition of an asset (like brokerage or installation) are capitalized.\nSince the purchase of the asset is an investing activity, the associated brokerage is also an **Investing Outflow**."
+    }
+  ]
+}
