@@ -37,6 +37,26 @@ const fontOptions: FontOption[] = [
   { name: 'Roboto', family: 'var(--font-roboto), sans-serif', className: 'font-sans' }
 ];
 
+// Helper function to clean text from markdown formatting
+const cleanText = (text: string) => {
+  return text
+    .replace(/\*\*\*/g, '') // Remove triple asterisks
+    .replace(/\*\*/g, '')   // Remove double asterisks
+    .replace(/\*/g, '')     // Remove single asterisks
+    .trim();
+};
+
+// Helper function to generate consistent IDs
+const generateId = (text: string) => {
+  const cleaned = cleanText(text);
+  return cleaned
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, '') // Remove special chars except spaces and hyphens
+    .replace(/\s+/g, '-')          // Replace spaces with hyphens
+    .replace(/-+/g, '-')           // Replace multiple hyphens with single
+    .replace(/^-|-$/g, '');        // Remove leading/trailing hyphens
+};
+
 const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
   const router = useRouter();
   const subject = getSubjectByCode(subjectCode);
@@ -64,25 +84,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
     fetchNotes();
   }, [subjectCode]);
 
-  // Helper function to clean text from markdown formatting
-  const cleanText = (text: string) => {
-    return text
-      .replace(/\*\*\*/g, '') // Remove triple asterisks
-      .replace(/\*\*/g, '')   // Remove double asterisks
-      .replace(/\*/g, '')     // Remove single asterisks
-      .trim();
-  };
 
-  // Helper function to generate consistent IDs
-  const generateId = (text: string) => {
-    const cleaned = cleanText(text);
-    return cleaned
-      .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, '') // Remove special chars except spaces and hyphens
-      .replace(/\s+/g, '-')          // Replace spaces with hyphens
-      .replace(/-+/g, '-')           // Replace multiple hyphens with single
-      .replace(/^-|-$/g, '');        // Remove leading/trailing hyphens
-  };
 
   // Extract TOC from markdown
   const toc = useMemo(() => {
