@@ -18,7 +18,7 @@ import ModuleSelector from './ModuleSelector';
 import SourceSelector from './SourceSelector';
 import UnifiedQuizSelector from './UnifiedQuizSelector';
 import Header from './Header';
-import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube, Search, History, ArrowRightLeft, Check } from 'lucide-react';
+import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube, Search, History, ArrowRightLeft, Check, Download } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -195,7 +195,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
   };
 
   const startQuiz = async (selections: {
-    sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam'; modules: (string | number)[] }>;
+    sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam' | 'Custom'; modules: (string | number)[] }>;
     randomOrder: boolean;
   }) => {
     setLoading(true);
@@ -276,7 +276,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
   };
 
   const startRevise = async (selections: {
-    sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam'; modules: (string | number)[] }>;
+    sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam' | 'Custom'; modules: (string | number)[] }>;
     randomOrder: boolean;
   }) => {
     setLoading(true);
@@ -618,6 +618,42 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     setSelectedSource('all');
   };
 
+  // Download/Export current quiz as JSON
+  const downloadCurrentQuiz = () => {
+    if (quizState.questions.length === 0) return;
+
+    // Convert internal Question format back to the predefined quiz format
+    const exportData = {
+      exam_metadata: {
+        subject_name: isCustomMode ? (customTitle || 'Custom AI Quiz') : (subject?.name || 'Quiz'),
+        exam_date: new Date().toISOString().slice(0, 10),
+      },
+      questions: quizState.questions.map((q, index) => ({
+        question_id: q.id || `Q${index + 1}`,
+        question_text: q.text,
+        question_type: q.isSubjective ? 'Subjective' : 'MCQ',
+        options: q.options || { A: '', B: '', C: '', D: '' },
+        correct_option_label: q.correctAnswer.length > 0 ? q.correctAnswer.join(',') : null,
+        module: q.module,
+        explanation: q.explanation || '',
+      })),
+    };
+
+    const dataStr = JSON.stringify(exportData, null, 2);
+    const blob = new Blob([dataStr], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    const fileName = isCustomMode
+      ? `custom-quiz-${new Date().toISOString().slice(0, 10)}.json`
+      : `${subjectCode}-quiz-${new Date().toISOString().slice(0, 10)}.json`;
+    link.download = fileName;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+
   const confirmGoToMainMenu = () => {
     setShowConfirmation(true);
   };
@@ -913,6 +949,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       }`}
                   >
                     {!globalAnswersVisible ? 'Show Correct' : 'Hide Correct'}
+                  </button>
+
+                  <button
+                    onClick={downloadCurrentQuiz}
+                    className="px-4 py-2 border font-semibold transition duration-200 bg-purple-700 text-white border-purple-600 hover:bg-purple-600 flex items-center gap-2"
+                    title="Export quiz as JSON file"
+                  >
+                    <Download size={16} /> Export
                   </button>
                 </div>
               </div>
@@ -1254,6 +1298,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                   className="w-full mt-2 px-4 sm:px-6 py-2 bg-gray-700 text-gray-300 border border-gray-600 font-semibold hover:bg-gray-600 hover:text-white transition duration-200 flex items-center justify-center text-sm"
                 >
                   Clear All Responses
+                </button>
+
+                <button
+                  onClick={downloadCurrentQuiz}
+                  className="w-full mt-2 px-4 sm:px-6 py-2 bg-purple-700 text-white border border-purple-600 font-semibold hover:bg-purple-600 transition duration-200 flex items-center justify-center text-sm"
+                  title="Export quiz as JSON file"
+                >
+                  <Download className="mr-2" size={16} /> Export Quiz
                 </button>
 
                 {/* Feedback Box */}

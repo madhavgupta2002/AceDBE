@@ -1,0 +1,398 @@
+{
+  "exam_metadata": {
+    "subject_name": "Custom AI Quiz",
+    "exam_date": "2026-01-30"
+  },
+  "questions": [
+    {
+      "question_id": "Q1",
+      "question_text": "Profit Margin ratio measures the portion of profit in revenue. Which ratio is used to measure the portion of revenue generated from the total assets of a company?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Return on Total Assets (ROTA)",
+        "B": "Asset Turnover Ratio (ATO)",
+        "C": "Inventory Turnover Ratio",
+        "D": "Fixed Asset Turnover Ratio"
+      },
+      "correct_option_label": "B",
+      "explanation": "Asset Turnover Ratio (ATO) measures how efficiently a company uses its assets to generate sales. Formula: ATO = Sales / Total Assets."
+    },
+    {
+      "question_id": "Q2",
+      "question_text": "You have been tasked to identify the cost leader among different companies in the same industry. Which ratio will be most useful for this assessment?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Asset Turnover Ratio",
+        "B": "Current Ratio",
+        "C": "Profit Margin",
+        "D": "Debt to Equity Ratio"
+      },
+      "correct_option_label": "C",
+      "explanation": "Profit Margin (PBIT Margin) indicates how much of every dollar of sales a company actually keeps as earnings. A higher margin often indicates better cost management or cost leadership. Formula: Profit Margin = PBIT / Sales."
+    },
+    {
+      "question_id": "Q3",
+      "question_text": "You want to compare the overall profitability of two different industries to determine which one is performing better. Which ratio is the most appropriate for this comparison?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Return on Total Assets (ROTA)",
+        "B": "Inventory Days",
+        "C": "Collection Days",
+        "D": "Current Ratio"
+      },
+      "correct_option_label": "A",
+      "explanation": "ROTA is a comprehensive measure of how effectively a company uses its assets to generate profit, making it ideal for cross-industry profitability comparisons. Formula: ROTA = PBIT / Total Assets."
+    },
+    {
+      "question_id": "Q4",
+      "question_text": "A manufacturing firm wants to assess the efficiency of its current asset management, specifically regarding its stock. Which ratio should it use?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Collection Days",
+        "B": "Fixed Asset Turnover",
+        "C": "Inventory Days",
+        "D": "Asset Turnover Ratio"
+      },
+      "correct_option_label": "C",
+      "explanation": "Inventory Days measures the average number of days it takes to turn inventory into sales, reflecting inventory management efficiency. Formula: Inventory Days = (Inventory / COGS) * 365."
+    },
+    {
+      "question_id": "Q5",
+      "question_text": "You have been tasked to identify the company whose assets are most productive across different industries. Which ratio will be most useful?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Profit Margin",
+        "B": "Return on Equity (ROE)",
+        "C": "Asset Turnover Ratio (ATO)",
+        "D": "Debt Service Coverage Ratio (DSCR)"
+      },
+      "correct_option_label": "C",
+      "explanation": "Asset Turnover Ratio (ATO) specifically measures productivity by showing how much revenue is generated per unit of asset. Formula: ATO = Sales / Total Assets."
+    },
+    {
+      "question_id": "Q6",
+      "question_text": "A new customer wants to buy goods on credit. Which ratio is most useful for a credit manager to assess whether the customer's dues will be received on time?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Collection Days",
+        "B": "Profit Margin",
+        "C": "Fixed Asset Turnover",
+        "D": "Interest Spread"
+      },
+      "correct_option_label": "A",
+      "explanation": "Collection Days (Receivables Days) measures the average time it takes for a company to collect payments from its debtors. Formula: Collection Days = (Receivables / Sales) * 365."
+    },
+    {
+      "question_id": "Q7",
+      "question_text": "Which set of ratios will be useful to assess the contribution of payables (non-interest bearing current liabilities) in improving a company's profitability?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "ATO and FATO",
+        "B": "ROTA and ROCE",
+        "C": "ROE and DSCR",
+        "D": "Current Ratio and D/E Ratio"
+      },
+      "correct_option_label": "B",
+      "explanation": "The difference between ROTA and ROCE highlights the impact of non-interest bearing liabilities (payables). Formulas: ROTA = PBIT / Total Assets; ROCE = PBIT / Capital Employed; Capital Employed = Total Assets - Payables."
+    },
+    {
+      "question_id": "Q8",
+      "question_text": "What does 'Inventory Days' specifically measure in the context of efficiency?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The amount of profit made per unit of inventory",
+        "B": "The number of days it takes to collect cash from customers",
+        "C": "The duration for which the company holds its stock before selling it",
+        "D": "The ratio of inventory to total current assets"
+      },
+      "correct_option_label": "C",
+      "explanation": "Inventory Days indicates the average time inventory stays in the warehouse. Formula: Inventory Days = (Inventory / COGS) * 365."
+    },
+    {
+      "question_id": "Q9",
+      "question_text": "If you need to assess the short-term liquidity of a company to ensure it can meet its immediate obligations, which ratio is most appropriate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Debt to Equity Ratio",
+        "B": "Current Ratio",
+        "C": "Asset Turnover Ratio",
+        "D": "Effective Tax Rate"
+      },
+      "correct_option_label": "B",
+      "explanation": "The Current Ratio is a liquidity ratio that measures a company's ability to pay short-term obligations. Formula: Current Ratio = Current Assets / Current Liabilities."
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "Which of the following formulas correctly identifies Return on Total Assets (ROTA)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "ROTA = PBIT / Capital Employed",
+        "B": "ROTA = PBIT / Total Assets",
+        "C": "ROTA = PAT / Total Assets",
+        "D": "ROTA = Sales / Total Assets"
+      },
+      "correct_option_label": "B",
+      "explanation": "Return on Total Assets (ROTA) measures the operational profitability relative to total assets. Formula: ROTA = PBIT / Total Assets."
+    },
+    {
+      "question_id": "Q11",
+      "question_text": "How is Capital Employed calculated when determining Return on Capital Employed (ROCE)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Total Assets + Total Liabilities",
+        "B": "Total Assets - Total Debt",
+        "C": "Total Assets - Non-Interest Bearing Current Liabilities (Payables)",
+        "D": "Current Assets - Current Liabilities"
+      },
+      "correct_option_label": "C",
+      "explanation": "Capital Employed represents the long-term funds invested in the business. Formula: Capital Employed = Total Assets - Payables."
+    },
+    {
+      "question_id": "Q12",
+      "question_text": "Identify the correct relationship between ROTA, Asset Turnover, and Profit Margin.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "ROTA = Asset Turnover + Profit Margin",
+        "B": "ROTA = Asset Turnover / Profit Margin",
+        "C": "ROTA = Asset Turnover × Profit Margin",
+        "D": "ROTA = (Asset Turnover × Profit Margin) / Tax Rate"
+      },
+      "correct_option_label": "C",
+      "explanation": "ROTA can be decomposed into efficiency (ATO) and profitability (Margin). Formula: ROTA = (Sales / Total Assets) * (PBIT / Sales) = PBIT / Total Assets."
+    },
+    {
+      "question_id": "Q13",
+      "question_text": "Which formula is used to calculate the Pre-tax Return on Equity (ROE)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "ROE = PAT / Equity",
+        "B": "ROE = PBIT / Equity",
+        "C": "ROE = PBT / Equity",
+        "D": "ROE = Sales / Equity"
+      },
+      "correct_option_label": "C",
+      "explanation": "Pre-tax ROE uses Profit Before Tax. Formula: Pre-tax ROE = PBT / Equity."
+    },
+    {
+      "question_id": "Q14",
+      "question_text": "Which formula correctly represents the Leverage Relationship for Return on Equity (ROE)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "ROE = ROTA + [Spread × Debt/Equity]",
+        "B": "ROE = ROCE + [Spread × Debt/Equity]",
+        "C": "ROE = ROCE - [Spread × Debt/Equity]",
+        "D": "ROE = Profit Margin × Asset Turnover"
+      },
+      "correct_option_label": "B",
+      "explanation": "ROE is influenced by the return on capital and the benefit of financial leverage. Formula: ROE = ROCE + [Spread × Debt/Equity Ratio]."
+    },
+    {
+      "question_id": "Q15",
+      "question_text": "Which ratio measures the efficiency of a firm in utilizing its investment in fixed assets like plant and machinery?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Asset Turnover Ratio (ATO)",
+        "B": "Fixed Asset Turnover (FATO)",
+        "C": "Inventory Days",
+        "D": "Current Ratio"
+      },
+      "correct_option_label": "B",
+      "explanation": "Fixed Asset Turnover measures how effectively a company uses its net fixed assets to generate sales. Formula: FATO = Sales / Net Fixed Assets."
+    },
+    {
+      "question_id": "Q16",
+      "question_text": "Which formula is used to calculate the Interest Spread?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Spread = ROTA - Interest Rate",
+        "B": "Spread = ROCE - Interest Rate",
+        "C": "Spread = ROE - ROCE",
+        "D": "Spread = PBIT - Interest Expense"
+      },
+      "correct_option_label": "B",
+      "explanation": "Interest Spread is the difference between the return on capital and the cost of debt. Formula: Spread = ROCE - Interest Rate."
+    },
+    {
+      "question_id": "Q17",
+      "question_text": "Identify the formula for Debt Service Coverage Ratio (DSCR) as per the study material.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "DSCR = PBIT / Interest Expense",
+        "B": "DSCR = (PBDIT - Tax) / (Interest Cost + Loan Repayment)",
+        "C": "DSCR = Total Debt / Equity",
+        "D": "DSCR = PAT / Loan Repayment"
+      },
+      "correct_option_label": "B",
+      "explanation": "DSCR measures the ability to service debt including principal. Formula: DSCR = (PBDIT - Tax) / (Interest Cost + Loan Repayment)."
+    },
+    {
+      "question_id": "Q18",
+      "question_text": "The Effective Tax Rate is identified by which of the following formulas?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Tax Expense / PBIT",
+        "B": "Tax Expense / Sales",
+        "C": "Tax Expense / Profit Before Tax (PBT)",
+        "D": "Tax Expense / Profit After Tax (PAT)"
+      },
+      "correct_option_label": "C",
+      "explanation": "The effective tax rate shows the actual tax burden relative to pre-tax profits. Formula: Effective Tax Rate = Tax Expense / PBT."
+    },
+    {
+      "question_id": "Q19",
+      "question_text": "If a lender wants to know the cost of the loan relative to the total loan amount, which formula should they use?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Interest Rate = Interest Expense / Total Assets",
+        "B": "Interest Rate = Interest Expense / Loan Amount",
+        "C": "Interest Rate = PBIT / Loan Amount",
+        "D": "Interest Rate = Spread + ROCE"
+      },
+      "correct_option_label": "B",
+      "explanation": "The interest rate represents the cost of borrowing. Formula: Interest Rate = Interest Expense / Loan Amount."
+    },
+    {
+      "question_id": "Q20",
+      "question_text": "Which ratio is used to identify the level of financial risk and the proportion of debt used to finance the company's equity?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Current Ratio",
+        "B": "Debt to Equity Ratio (D/E)",
+        "C": "ROCE",
+        "D": "Fixed Asset Turnover"
+      },
+      "correct_option_label": "B",
+      "explanation": "The D/E ratio measures financial leverage and risk. Formula: D/E = Total Debt / Equity."
+    },
+    {
+      "question_id": "Q21",
+      "question_text": "Which of the following describes the 'Alternative' formula for Collection Days?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "(Sales / Receivables) * 365",
+        "B": "(Receivables / Sales) * 365",
+        "C": "Receivables / Average Sales per day",
+        "D": "Both B and C"
+      },
+      "correct_option_label": "D",
+      "explanation": "Collection Days can be calculated as Receivables divided by average daily sales, or (Receivables/Sales) * 365. Formula: Collection Days = (Receivables / Sales) * 365."
+    },
+    {
+      "question_id": "Q22",
+      "question_text": "In the context of the Cash Flow Statement, where would you classify the amount received from the sale of a factory machine?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Operating Cash Flow",
+        "B": "Financing Cash Flow",
+        "C": "Investing Cash Flow",
+        "D": "Non-Cash Item"
+      },
+      "correct_option_label": "C",
+      "explanation": "Cash received from the sale of long-term assets (Fixed Assets) is classified under Investing Cash Flow."
+    },
+    {
+      "question_id": "Q23",
+      "question_text": "Where is the repayment of a bank loan principal classified in the Cash Flow Statement?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Operating Cash Flow",
+        "B": "Financing Cash Flow",
+        "C": "Investing Cash Flow",
+        "D": "Profit and Loss Statement"
+      },
+      "correct_option_label": "B",
+      "explanation": "Repayment of loans and payment of dividends are related to the capital structure and are classified under Financing Cash Flow."
+    },
+    {
+      "question_id": "Q24",
+      "question_text": "Where is the amount paid to suppliers for raw materials considered in the Cash Flow Statement?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Operating Cash Flow",
+        "B": "Financing Cash Flow",
+        "C": "Investing Cash Flow",
+        "D": "Capital Work-in-Progress"
+      },
+      "correct_option_label": "A",
+      "explanation": "Payments to suppliers are part of the core business operations and are classified under Operating Cash Flow."
+    },
+    {
+      "question_id": "Q25",
+      "question_text": "An increase in 'Capital Work-in-Progress' on the Balance Sheet most likely indicates:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The company is selling its fixed assets",
+        "B": "The company is investing in new fixed assets that are not yet operational",
+        "C": "Inventory is being converted to sales faster",
+        "D": "The company has paid off its long-term debt"
+      },
+      "correct_option_label": "B",
+      "explanation": "Capital Work-in-Progress represents investment in fixed assets (like a factory under construction) that are not yet ready for use."
+    },
+    {
+      "question_id": "Q26",
+      "question_text": "Which of the following would lead to a 'Deferred Tax Liability'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Permanent differences in tax and accounting income",
+        "B": "Timing differences where accounting profit is higher than taxable profit",
+        "C": "Timing differences where taxable profit is higher than accounting profit",
+        "D": "A decrease in the effective tax rate"
+      },
+      "correct_option_label": "B",
+      "explanation": "Deferred Tax Liability arises due to timing differences when the tax expense in the P&L is higher than the tax actually payable to authorities."
+    },
+    {
+      "question_id": "Q27",
+      "question_text": "What does 'Other Income' in the Profit and Loss Statement typically refer to?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Revenue from the primary business operations",
+        "B": "Income from non-operating activities like interest or sale of scrap",
+        "C": "The gross profit before operating expenses",
+        "D": "The total profit after all taxes"
+      },
+      "correct_option_label": "B",
+      "explanation": "Other Income includes earnings from activities not related to the core business operations, such as interest income or dividend income."
+    },
+    {
+      "question_id": "Q28",
+      "question_text": "If a company's 'Spread' is positive, what is the impact on Return on Equity (ROE) as the Debt to Equity ratio increases?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "ROE will decrease",
+        "B": "ROE will remain constant",
+        "C": "ROE will increase",
+        "D": "ROCE will decrease"
+      },
+      "correct_option_label": "C",
+      "explanation": "According to the leverage relationship formula (ROE = ROCE + [Spread × D/E]), if Spread is positive, increasing the D/E ratio will mathematically increase the ROE."
+    },
+    {
+      "question_id": "Q29",
+      "question_text": "Which formula is used to calculate the Inventory Days using COGS?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "(Inventory / Sales) * 365",
+        "B": "(COGS / Inventory) * 365",
+        "C": "(Inventory / COGS) * 365",
+        "D": "Inventory / Average Sales per day"
+      },
+      "correct_option_label": "C",
+      "explanation": "Inventory Days is calculated using the Cost of Goods Sold (COGS) as it represents the cost value of the stock. Formula: Inventory Days = (Inventory / COGS) * 365."
+    },
+    {
+      "question_id": "Q30",
+      "question_text": "Which ratio measures the portion of Profit Before Interest and Taxes (PBIT) in the total Sales of a company?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "ROTA",
+        "B": "Asset Turnover",
+        "C": "Profit Margin",
+        "D": "ROCE"
+      },
+      "correct_option_label": "C",
+      "explanation": "Profit Margin (or PBIT Margin) measures operating profitability per dollar of sales. Formula: Profit Margin = PBIT / Sales."
+    }
+  ]
+}

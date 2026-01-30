@@ -1,0 +1,268 @@
+{
+  "exam_metadata": {
+    "subject_name": "Custom AI Quiz",
+    "exam_date": "2026-01-30"
+  },
+  "questions": [
+    {
+      "question_id": "Q1",
+      "question_text": "Issuance of new equity shares for Rs. 15 lakhs will be classified under which activity in the Cash Flow Statement?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Operating Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Financing Activities",
+        "D": "Cash Flow from Adjustment Activities"
+      },
+      "correct_option_label": "C",
+      "explanation": "Issuing shares changes the size and composition of the equity capital, which is a financing activity."
+    },
+    {
+      "question_id": "Q2",
+      "question_text": "Where would the cash payment for the purchase of a new factory building appear in the Cash Flow Statement?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Operating Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Financing Activities",
+        "D": "It will not appear in the Cash Flow Statement"
+      },
+      "correct_option_label": "B",
+      "explanation": "The acquisition of long-term assets, such as buildings or machinery, is classified as an investing activity."
+    },
+    {
+      "question_id": "Q3",
+      "question_text": "In a Cash Flow Statement, the payment of salaries to employees is considered part of:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Operating Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Financing Activities",
+        "D": "Non-cash Expenses"
+      },
+      "correct_option_label": "A",
+      "explanation": "Salaries are related to the principal revenue-generating activities of the business, making them operating activities."
+    },
+    {
+      "question_id": "Q4",
+      "question_text": "The repayment of a long-term bank loan should be categorized as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Investing Activities",
+        "B": "Cash Flow from Operating Activities",
+        "C": "Cash Flow from Financing Activities",
+        "D": "Cash Flow from Revenue Activities"
+      },
+      "correct_option_label": "C",
+      "explanation": "Repaying loans affects the borrowing composition of the company, which falls under financing activities."
+    },
+    {
+      "question_id": "Q5",
+      "question_text": "Under which heading would 'Interest Received' on a fixed deposit be reported?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Operating Activities",
+        "B": "Cash Flow from Financing Activities",
+        "C": "Cash Flow from Investing Activities",
+        "D": "It is a non-cash flow item"
+      },
+      "correct_option_label": "C",
+      "explanation": "Interest received is typically an inflow from an investment, thus classified under investing activities."
+    },
+    {
+      "question_id": "Q6",
+      "question_text": "Cash received from customers for the sale of goods is classified as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Operating Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Financing Activities",
+        "D": "Cash Flow from Capital Activities"
+      },
+      "correct_option_label": "A",
+      "explanation": "This is a principal revenue-generating activity, which is the definition of an operating activity."
+    },
+    {
+      "question_id": "Q7",
+      "question_text": "The payment of a cash dividend to shareholders is recorded under:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Operating Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Financing Activities",
+        "D": "It is not included in the Cash Flow Statement"
+      },
+      "correct_option_label": "C",
+      "explanation": "Dividends represent a return to providers of capital, which is a financing activity."
+    },
+    {
+      "question_id": "Q8",
+      "question_text": "Where would the cash received from the sale of an old delivery van be placed?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Financing Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Operating Activities",
+        "D": "Cash Flow from Extraordinary Activities"
+      },
+      "correct_option_label": "B",
+      "explanation": "Disposal of long-term assets is classified as an investing activity."
+    },
+    {
+      "question_id": "Q9",
+      "question_text": "Interest paid on a bank overdraft or loan is classified as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Financing Activities",
+        "B": "Cash Flow from Operating Activities",
+        "C": "Cash Flow from Investing Activities",
+        "D": "Cash Flow from Asset Activities"
+      },
+      "correct_option_label": "A",
+      "explanation": "Interest paid is related to the cost of borrowing (capital structure), making it a financing activity."
+    },
+    {
+      "question_id": "Q10",
+      "question_text": "Cash paid to suppliers for raw materials is an example of:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Financing Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Operating Activities",
+        "D": "Non-operating Outflow"
+      },
+      "correct_option_label": "C",
+      "explanation": "Payments to suppliers are part of the core operational cycle of a business."
+    },
+    {
+      "question_id": "Q11",
+      "question_text": "The purchase of shares in another company as a long-term investment is a:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Financing Activity",
+        "B": "Operating Activity",
+        "C": "Investing Activity",
+        "D": "Non-cash Activity"
+      },
+      "correct_option_label": "C",
+      "explanation": "Acquisition of investments is categorized under investing activities."
+    },
+    {
+      "question_id": "Q12",
+      "question_text": "Cash payment of income taxes is generally classified as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Operating Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Financing Activities",
+        "D": "It is ignored in the Cash Flow Statement"
+      },
+      "correct_option_label": "A",
+      "explanation": "Tax payments are typically related to the profits from principal revenue activities, thus classified as operating."
+    },
+    {
+      "question_id": "Q13",
+      "question_text": "Proceeds from the issuance of debentures would appear under:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Operating Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Financing Activities",
+        "D": "Cash Flow from Reserve Activities"
+      },
+      "correct_option_label": "C",
+      "explanation": "Issuing debentures increases the borrowings of the company, which is a financing activity."
+    },
+    {
+      "question_id": "Q14",
+      "question_text": "Rent received from a property held as an investment (not the main business) is classified as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Operating Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Financing Activities",
+        "D": "It does not appear in the statement"
+      },
+      "correct_option_label": "B",
+      "explanation": "Income from non-operating long-term assets, like investment property rent, is an investing activity."
+    },
+    {
+      "question_id": "Q15",
+      "question_text": "The buyback of equity shares by a company is a:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Financing Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Operating Activities",
+        "D": "Cash Flow from Revenue Activities"
+      },
+      "correct_option_label": "A",
+      "explanation": "A buyback reduces the equity capital, which is a change in capital structure and thus a financing activity."
+    },
+    {
+      "question_id": "Q16",
+      "question_text": "Cash paid for the purchase of a patent is categorized as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Operating Activity",
+        "B": "Financing Activity",
+        "C": "Investing Activity",
+        "D": "Administrative Activity"
+      },
+      "correct_option_label": "C",
+      "explanation": "Patents are long-term intangible assets; their purchase is an investing activity."
+    },
+    {
+      "question_id": "Q17",
+      "question_text": "Under which section would 'Proceeds from the sale of investments' be listed?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Financing Activities",
+        "B": "Cash Flow from Operating Activities",
+        "C": "Cash Flow from Investing Activities",
+        "D": "Cash Flow from Income Activities"
+      },
+      "correct_option_label": "C",
+      "explanation": "Selling investments is the disposal of long-term assets, classified as an investing activity."
+    },
+    {
+      "question_id": "Q18",
+      "question_text": "Redemption of preference shares is classified as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Operating Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Financing Activities",
+        "D": "Non-cash Outflow"
+      },
+      "correct_option_label": "C",
+      "explanation": "Redemption of shares reduces the capital of the company, making it a financing activity."
+    },
+    {
+      "question_id": "Q19",
+      "question_text": "Cash paid for manufacturing expenses and office rent is part of:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Operating Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Financing Activities",
+        "D": "Cash Flow from Capital Activities"
+      },
+      "correct_option_label": "A",
+      "explanation": "These are daily operational expenses related to the company's primary business."
+    },
+    {
+      "question_id": "Q20",
+      "question_text": "Taking a short-term bank loan to fund business growth is classified as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash Flow from Operating Activities",
+        "B": "Cash Flow from Investing Activities",
+        "C": "Cash Flow from Financing Activities",
+        "D": "It is not a cash flow"
+      },
+      "correct_option_label": "C",
+      "explanation": "Borrowing funds, whether short-term or long-term, changes the debt composition of the business and is a financing activity."
+    }
+  ]
+}

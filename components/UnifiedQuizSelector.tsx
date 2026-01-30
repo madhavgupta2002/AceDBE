@@ -7,11 +7,11 @@ import { Shuffle, Check } from 'lucide-react';
 interface UnifiedQuizSelectorProps {
   subjectCode: string;
   onStartQuiz: (selections: {
-    sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam'; modules: (string | number)[] }>;
+    sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam' | 'Custom'; modules: (string | number)[] }>;
     randomOrder: boolean;
   }) => void;
   onStartRevise: (selections: {
-    sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam'; modules: (string | number)[] }>;
+    sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam' | 'Custom'; modules: (string | number)[] }>;
     randomOrder: boolean;
   }) => void;
 }
@@ -21,9 +21,11 @@ type SelectionMap = Map<string, Set<string | number>>;
 const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, onStartQuiz, onStartRevise }) => {
   const [claSets, setClaSets] = useState<SetWithModules[]>([]);
   const [examSets, setExamSets] = useState<SetWithModules[]>([]);
+  const [customSets, setCustomSets] = useState<SetWithModules[]>([]);
   const [loading, setLoading] = useState(true);
   const [selections, setSelections] = useState<SelectionMap>(new Map());
   const [randomOrder, setRandomOrder] = useState(false);
+  const [showCustom, setShowCustom] = useState(false);
 
   // Derived state for unique module numbers across all sets
   const allModules = Array.from(new Set(
@@ -38,9 +40,10 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
     const loadSets = async () => {
       setLoading(true);
       try {
-        const { cla, exam } = await getSetsWithModules(subjectCode);
+        const { cla, exam, custom } = await getSetsWithModules(subjectCode);
         setClaSets(cla);
         setExamSets(exam);
+        setCustomSets(custom);
       } catch (error) {
         console.error('Error loading sets:', error);
       } finally {
@@ -51,9 +54,9 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
     loadSets();
   }, [subjectCode]);
 
-  const getSetKey = (bankName: string, bankType: 'CLA' | 'Exam') => `${bankType}:${bankName}`;
+  const getSetKey = (bankName: string, bankType: 'CLA' | 'Exam' | 'Custom') => `${bankType}:${bankName}`;
 
-  const isModuleSelected = (bankName: string, bankType: 'CLA' | 'Exam', module: string | number): boolean => {
+  const isModuleSelected = (bankName: string, bankType: 'CLA' | 'Exam' | 'Custom', module: string | number): boolean => {
     const key = getSetKey(bankName, bankType);
     const moduleSet = selections.get(key);
     // Check if module is in the set (ignore __ALL__ marker)
@@ -83,11 +86,33 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
     return (selectedModules?.size || 0) > 0 && (selectedModules?.size || 0) < set.modules.length;
   };
 
-  const toggleModule = (bankName: string, bankType: 'CLA' | 'Exam', module: string | number) => {
+  const toggleModule = (bankName: string, bankType: 'CLA' | 'Exam' | 'Custom', module: string | number) => {
     setSelections((prev) => {
-      const newSelections = new Map(prev);
+      const newSelections = new Map();
       const key = getSetKey(bankName, bankType);
-      // Get existing selection or create new Set - IMPORTANT: create a new Set to ensure React detects the change
+
+      // Mutually exclusive: If selecting a Custom quiz, clear others. If selecting CLA/Exam, clear Custom.
+      if (bankType === 'Custom') {
+        // Find existing custom selections (though we'll probably only allow one for simplicity as per "independently")
+        // But let's just clear everything else first if we were in CLA/Exam mode
+        const hasNonCustom = Array.from(prev.keys()).some(k => !k.startsWith('Custom:'));
+        if (hasNonCustom) {
+          // Keep only current custom key if it was already selected, or start fresh
+        } else {
+          // If already in custom mode, we can either allow multiple custom or keep it single.
+          // The user said "independently", let's allow only ONE custom selection at a time for maximum clarity.
+          newSelections.clear();
+        }
+      } else {
+        // Selecting CLA or Exam -> Clear all custom selections
+        prev.forEach((val, k) => {
+          if (!k.startsWith('Custom:')) {
+            newSelections.set(k, val);
+          }
+        });
+      }
+
+      // Get existing selection or create new Set
       const existingSet = newSelections.get(key);
       const moduleSet = existingSet ? new Set(existingSet) : new Set<string | number>();
 
@@ -119,7 +144,25 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
     const isFullySelected = isSetFullySelected(set);
 
     setSelections((prev) => {
-      const newSelections = new Map(prev);
+      let newSelections = new Map(prev);
+
+      // Mutual exclusivity logic
+      if (set.bankType === 'Custom') {
+        // If selecting a custom set, clear everything else
+        if (!isFullySelected) {
+          newSelections = new Map();
+        }
+      } else {
+        // If selecting CLA/Exam, clear custom sets
+        const hasCustom = Array.from(newSelections.keys()).some(k => k.startsWith('Custom:'));
+        if (hasCustom) {
+          const filtered = new Map();
+          newSelections.forEach((v, k) => {
+            if (!k.startsWith('Custom:')) filtered.set(k, v);
+          });
+          newSelections = filtered;
+        }
+      }
 
       if (isFullySelected) {
         // Deselect all modules
@@ -149,7 +192,7 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
     );
 
     setSelections((prev) => {
-      const newSelections = new Map(prev);
+      const newSelections = new Map(); // Clear all (including custom) to start fresh
 
       relevantSets.forEach(set => {
         const key = getSetKey(set.bankName, set.bankType);
@@ -189,7 +232,7 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
 
   const selectAll = () => {
     setSelections((prev) => {
-      const newSelections = new Map(prev);
+      const newSelections = new Map(); // Start fresh to clear custom
 
       [...claSets, ...examSets].forEach((set) => {
         const key = getSetKey(set.bankName, set.bankType);
@@ -227,17 +270,19 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
   };
 
   const handleStartQuiz = () => {
-    const selectedSets: Array<{ bankName: string; bankType: 'CLA' | 'Exam'; modules: (string | number)[] }> = [];
+    const selectedSets: Array<{ bankName: string; bankType: 'CLA' | 'Exam' | 'Custom'; modules: (string | number)[] }> = [];
 
     selections.forEach((modules, key) => {
-      const [bankType, bankName] = key.split(':');
+      const parts = key.split(':');
+      const bankType = parts[0];
+      const bankName = parts.slice(1).join(':');
       if (modules.size > 0) {
         // Filter out the special marker and convert to array
         const moduleArray = Array.from(modules).filter(m => m !== '__ALL__') as (string | number)[];
 
         selectedSets.push({
           bankName,
-          bankType: bankType as 'CLA' | 'Exam',
+          bankType: bankType as 'CLA' | 'Exam' | 'Custom',
           // If modules array is empty after filtering __ALL__, it means select all questions from this set
           // We'll pass empty array to indicate "all questions" in the quiz loader
           modules: moduleArray.length > 0 ? moduleArray : [],
@@ -257,17 +302,19 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
   };
 
   const handleStartRevise = () => {
-    const selectedSets: Array<{ bankName: string; bankType: 'CLA' | 'Exam'; modules: (string | number)[] }> = [];
+    const selectedSets: Array<{ bankName: string; bankType: 'CLA' | 'Exam' | 'Custom'; modules: (string | number)[] }> = [];
 
     selections.forEach((modules, key) => {
-      const [bankType, bankName] = key.split(':');
+      const parts = key.split(':');
+      const bankType = parts[0];
+      const bankName = parts.slice(1).join(':');
       if (modules.size > 0) {
         // Filter out the special marker and convert to array
         const moduleArray = Array.from(modules).filter(m => m !== '__ALL__') as (string | number)[];
 
         selectedSets.push({
           bankName,
-          bankType: bankType as 'CLA' | 'Exam',
+          bankType: bankType as 'CLA' | 'Exam' | 'Custom',
           modules: moduleArray.length > 0 ? moduleArray : [],
         });
       }
@@ -374,8 +421,48 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
           >
             <Shuffle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
           </button>
+
+          <button
+            onClick={() => setShowCustom(!showCustom)}
+            className={`px-3 py-1.5 sm:px-4 sm:py-2 font-semibold transition duration-200 border text-xs sm:text-sm ${showCustom
+              ? 'bg-purple-700 text-white border-purple-600 hover:bg-purple-600'
+              : 'bg-gray-800 text-gray-300 border-gray-700 hover:bg-gray-700'
+              }`}
+          >
+            {showCustom ? 'Hide Custom' : 'Show Custom Quizzes'}
+          </button>
         </div>
       </div>
+
+      {/* Custom Quizzes Selection (MUTUALLY EXCLUSIVE) */}
+      {showCustom && customSets.length > 0 && (
+        <div className="mb-6 p-4 bg-gray-800 border-2 border-purple-900/50 rounded-lg">
+          <h2 className="text-lg font-bold text-white mb-3 flex items-center justify-between">
+            <span></span>
+            <span className="text-xs font-normal text-purple-400">Selected independently (clears other selections)</span>
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            {customSets.map(set => (
+              <button
+                key={getSetKey(set.bankName, 'Custom')}
+                onClick={() => toggleSet(set)}
+                className={`text-left p-3 border transition duration-200 flex items-center gap-2 text-sm ${isSetFullySelected(set)
+                  ? 'bg-purple-900/40 border-purple-500 text-white'
+                  : 'bg-gray-900/50 border-gray-700 text-gray-400 hover:border-purple-500/50'
+                  }`}
+              >
+                <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0 ${isSetFullySelected(set)
+                  ? 'bg-purple-700 border-purple-600'
+                  : 'bg-gray-800 border-gray-600'
+                  }`}>
+                  {isSetFullySelected(set) && <Check className="w-3 h-3 text-white" />}
+                </div>
+                <span className="truncate">{set.displayName}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Select By Module - Bulk Selection */}
       {allModules.length > 0 && (

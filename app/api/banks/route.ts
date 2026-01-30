@@ -60,6 +60,9 @@ export async function GET(request: NextRequest) {
             // If reading fails, use bank name as fallback
             banks.push({ bankName, displayName: bankName });
           }
+        } else if (bankType === 'Custom') {
+          // For Custom quizzes, use the filename as display name
+          banks.push({ bankName, displayName: bankName });
         } else {
           // For CLA, use bank name as display name
           banks.push({ bankName, displayName: bankName });
