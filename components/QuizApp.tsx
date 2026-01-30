@@ -27,9 +27,11 @@ import videosData from '@/public/data/videos.json';
 
 interface QuizAppProps {
   subjectCode: string;
+  customQuestions?: Question[];
+  customTitle?: string;
 }
 
-const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
+const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customTitle }) => {
   const router = useRouter();
   const subject = getSubjectByCode(subjectCode);
 
@@ -40,6 +42,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
   // Get the base subject if this is an alternative version
   const baseSubjectCode = isAltVersion ? getBaseSubjectCode(subjectCode) : null;
   const baseSubject = baseSubjectCode ? getSubjectByCode(baseSubjectCode) : null;
+
+  // Check if this is a custom quiz mode
+  const isCustomMode = !!customQuestions && customQuestions.length > 0;
 
   const [quizState, setQuizState] = useState<QuizState>({
     practiceMode: 'bank',
@@ -146,6 +151,38 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     quizState.answeredQuestions,
     quizState.selectedAnswer,
   ]);
+
+  // Auto-start quiz when custom questions are provided
+  useEffect(() => {
+    if (isCustomMode && customQuestions && quizState.questions.length === 0) {
+      const questions = customQuestions;
+      const uniqueModules = Array.from(new Set(questions.map(q => q.module).filter(Boolean))) as (string | number)[];
+      setAvailableModules(uniqueModules.sort());
+      const uniqueSources = Array.from(new Set(questions.map(q => q.source).filter(Boolean))) as string[];
+      setAvailableSources(uniqueSources.sort());
+      setAllQuestions(questions);
+      setSelectedModule('all');
+      setSelectedSource('all');
+
+      // Initialize master answered questions array
+      const initialMasterAnswers = new Array(questions.length).fill(null);
+      setMasterAnsweredQuestions(initialMasterAnswers);
+
+      setQuizState((prev) => ({
+        ...prev,
+        currentQuestionIndex: 0,
+        score: 0,
+        totalQuestions: questions.length,
+        selectedAnswer: null,
+        showResult: false,
+        questions: questions,
+        incorrectAnswers: [],
+        answeredQuestions: new Array(questions.length).fill(null),
+      }));
+      setQuizCompleted(false);
+      setReviseMode(false);
+    }
+  }, [isCustomMode, customQuestions]);
 
   const shuffleArray = <T,>(array: T[]): T[] => {
     const shuffled = [...array];
@@ -591,7 +628,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     }
   };
 
-  if (!subject) {
+  // Only show subject not found if NOT in custom mode
+  if (!subject && !isCustomMode) {
     return (
       <div className="text-center py-12">
         <p className="text-red-400">Subject not found</p>
@@ -602,12 +640,24 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
     );
   }
 
+  // Determine the title to display
+  const displayTitle = isCustomMode ? (customTitle || 'Custom AI Quiz') : subject?.name;
+
   return (
     <div className="bg-gray-900 min-h-screen">
       <Header
         showBackButton
         onBack={() => {
-          if (quizState.questions.length > 0) {
+          if (isCustomMode) {
+            // In custom mode, back always goes home
+            if (quizState.questions.length > 0 && !quizCompleted) {
+              if (window.confirm("Quit quiz and return to home?")) {
+                router.push('/');
+              }
+            } else {
+              router.push('/');
+            }
+          } else if (quizState.questions.length > 0) {
             // If quiz is in progress or completed, back button resets to subject dashboard
             if (quizCompleted) {
               resetQuiz();
@@ -626,11 +676,11 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
       <div className="py-6 sm:py-12 px-2 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6">
-            {subject.name}
+            {displayTitle}
           </h1>
 
           {/* Alternative Version Switcher */}
-          {!loading && quizState.questions.length === 0 && (alternativeVersion || isAltVersion) && (
+          {!isCustomMode && !loading && quizState.questions.length === 0 && (alternativeVersion || isAltVersion) && (
             <div className="mb-6 bg-amber-900/30 border border-amber-700 p-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
@@ -660,7 +710,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
 
 
           {/* Compact Notes & Playlists during quiz */}
-          {!loading && quizState.questions.length > 0 && !quizCompleted && (
+          {!isCustomMode && !loading && quizState.questions.length > 0 && !quizCompleted && (
             <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-3">
               {/* Notes - Half Width */}
               <div className="bg-gray-800 border border-gray-700 p-2 h-full flex flex-col">
@@ -699,7 +749,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
           )}
 
           {/* Full View Notes Section - when quiz NOT active */}
-          {!loading && (quizState.questions.length === 0 || quizCompleted) && (
+          {!isCustomMode && !loading && (quizState.questions.length === 0 || quizCompleted) && (
             <div className="mb-6 bg-gray-800 border border-gray-700 p-4">
               <h2 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
                 <BookOpen className="w-6 h-6 text-indigo-400" />
@@ -717,7 +767,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
 
 
           {/* Full Video Playlists Section - when quiz NOT active */}
-          {!loading && moduleNumbers.length > 0 && (quizState.questions.length === 0 || quizCompleted) && (
+          {!isCustomMode && !loading && moduleNumbers.length > 0 && (quizState.questions.length === 0 || quizCompleted) && (
             <div className="mb-6 bg-gray-800 border border-gray-700 p-4">
               <h2 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
                 <Youtube className="w-6 h-6 text-red-500" />
@@ -757,7 +807,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode }) => {
           )}
 
 
-          {!loading && quizState.questions.length === 0 && (
+          {!isCustomMode && !loading && quizState.questions.length === 0 && (
             <div className="mb-6 bg-gray-800 border border-gray-700 p-4">
               <h2 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
                 <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">

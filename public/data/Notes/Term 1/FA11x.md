@@ -1226,6 +1226,67 @@ To understand **ROE (The main river)**, trace back the tributaries:
 * Forfeited Shares A/c
 * Reserves & Surplus A/c
 
+### 🧍‍♂️ **REPRESENTATIVE PERSONAL ACCOUNTS**
+
+*(Accounts that represent a person or authority to whom something is payable or from whom something is receivable)*
+
+---
+
+#### 🔹 Outstanding / Payable Related
+
+* Outstanding Salary A/c
+* Outstanding Rent A/c
+* Outstanding Wages A/c
+* Outstanding Expenses A/c
+* Expenses Payable A/c
+
+---
+
+#### 🔹 Accrued / Receivable Related
+
+* Accrued Income A/c
+* Income Accrued A/c
+* Interest Accrued A/c
+* Commission Accrued A/c
+* Rent Accrued A/c
+
+---
+
+#### 🔹 Prepaid / Advance Related
+
+* Prepaid Expense A/c
+* Prepaid Insurance A/c
+* Rent Paid in Advance A/c
+* Salary Paid in Advance A/c
+
+---
+
+#### 🔹 Provisions *(Liability Side)*
+
+* Provision for Tax A/c
+* Provision for Bonus A/c
+* Provision for Doubtful Debts A/c
+* Provision for Bad Debts A/c
+* Provision for Warranty A/c
+* Provision for Expenses A/c
+
+---
+
+#### 🔹 Unearned / Advance Income
+
+* Income Received in Advance A/c
+* Unearned Income A/c
+* Advance from Customers A/c
+
+---
+
+#### 🔹 Miscellaneous Representative Personal Accounts
+
+* Bills Payable A/c
+* Bills Receivable A/c
+* Interest Payable A/c
+* Commission Payable A/c
+
 ---
 
 ### 🏦 **REAL ACCOUNTS**
@@ -1239,9 +1300,6 @@ To understand **ROE (The main river)**, trace back the tributaries:
 * Asset A/c (Plant, Machinery, Furniture, etc.)
 * New Asset A/c
 * Old Asset A/c
-* Accrued Income A/c
-* Interest Accrued A/c
-* Prepaid Expense A/c
 * Goodwill A/c
 * Accumulated Depreciation A/c *(Contra-asset)*
 

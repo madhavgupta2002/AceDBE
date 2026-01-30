@@ -18,6 +18,7 @@ import {
 import { SUBJECTS, getSubjectsByTermFiltered } from '@/lib/subjectMapping';
 import { useRouter } from 'next/navigation';
 import videosData from '@/public/data/videos.json';
+import CustomQuizGenerator from './CustomQuizGenerator';
 
 const AVAILABLE_TERMS = [1, 4]; // Define available terms
 
@@ -200,6 +201,9 @@ const SubjectSelector: React.FC = () => {
           </div>
         ))}
       </div>
+
+      {/* Custom Quiz Generator */}
+      <CustomQuizGenerator />
 
       {/* Disclaimer Section */}
       <div className="mt-12 py-6 border-t border-gray-800 flex flex-col items-center text-center">
