@@ -422,7 +422,7 @@ ${studyMaterial}`;
                       placeholder="Paste or edit the JSON response here..."
                     />
                     <p className="mt-1 text-xs text-gray-500">
-                      Fix any JSON formatting issues and click "Retry Parse" to try again.
+                      Fix any JSON formatting issues and click &quot;Retry Parse&quot; to try again.
                     </p>
                   </div>
 

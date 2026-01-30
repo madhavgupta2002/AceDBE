@@ -142,6 +142,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [
     quizState.currentQuestionIndex,
     quizState.questions.length,
@@ -182,7 +183,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
       setQuizCompleted(false);
       setReviseMode(false);
     }
-  }, [isCustomMode, customQuestions]);
+  }, [isCustomMode, customQuestions, quizState.questions.length]);
 
   const shuffleArray = <T,>(array: T[]): T[] => {
     const shuffled = [...array];

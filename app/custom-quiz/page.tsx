@@ -56,7 +56,7 @@ export default function CustomQuizPage() {
                     <div className="text-center">
                         <h1 className="text-2xl font-bold text-white mb-4">No Quiz Found</h1>
                         <p className="text-gray-400 mb-6">
-                            It looks like there's no custom quiz loaded. Generate a new quiz from the home page.
+                            It looks like there&apos;s no custom quiz loaded. Generate a new quiz from the home page.
                         </p>
                         <button
                             onClick={() => router.push('/')}
