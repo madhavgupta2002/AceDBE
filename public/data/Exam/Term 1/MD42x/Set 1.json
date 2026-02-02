@@ -1,0 +1,568 @@
+{
+    "exam_metadata": {
+        "subject_name": "Evolution of Business and Market",
+        "exam_date": "28 September 2025"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "Which option is NOT among the three core exchange modes covered in the course?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Relational exchange",
+                "B": "Power-based exchange",
+                "C": "Government-mandated exchange",
+                "D": "Contractual exchange"
+            },
+            "correct_option_label": "C",
+            "explanation": "The course identifies relational, power-based, and contractual exchange as the primary modes. Government-mandated exchange is not listed as one of these three fundamental pillars.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Within tightly knit networks, what is a principal downside associated with embeddedness?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Access to new markets improves",
+                "B": "Information becomes redundant",
+                "C": "Transaction costs fall",
+                "D": "Diversity of information expands"
+            },
+            "correct_option_label": "B",
+            "explanation": "Strongly embedded networks often lead to 'information redundancy' because everyone knows the same things. This limits the influx of new ideas and diverse market perspectives.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "Which innovation was pivotal to the rise of modern business in Northwestern Europe?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The feudal land system",
+                "B": "Double-entry bookkeeping",
+                "C": "Barter-only trade",
+                "D": "Purely verbal agreements"
+            },
+            "correct_option_label": "B",
+            "explanation": "Double-entry bookkeeping allowed businesses to track assets and liabilities accurately. This transparency was crucial for managing complex, large-scale commercial operations in Europe.",
+            "module": 2
+        },
+        {
+            "question_id": "4",
+            "question_text": "Which city was not highlighted as a key Atlantic trade hub in Northwestern Europe?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Amsterdam",
+                "B": "Antwerp",
+                "C": "London",
+                "D": "Lisbon"
+            },
+            "correct_option_label": "D",
+            "explanation": "While Lisbon was a major port, the course specifically highlights Amsterdam, Antwerp, and London as the primary hubs driving the rise of modern business in the Northwestern European region.",
+            "module": 2
+        },
+        {
+            "question_id": "5",
+            "question_text": "What is the chief benefit of conducting business within embedded social structures?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Competition is eliminated",
+                "B": "Foreign market entry becomes cheaper",
+                "C": "Information asymmetry and moral hazard are reduced",
+                "D": "Product innovation accelerates"
+            },
+            "correct_option_label": "C",
+            "explanation": "Embeddedness relies on social ties and reputation. This environment builds trust, which naturally lowers the risks of moral hazard and information asymmetry between traders.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "Historically, what tends to happen when port cities become overcrowded with merchants?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Agricultural output spikes",
+                "B": "Merchant guilds lose influence",
+                "C": "Religious authorities take over trade",
+                "D": "Commodity prices uniformly drop"
+            },
+            "correct_option_label": "B",
+            "explanation": "As port cities grow and attract diverse merchants, it becomes harder for exclusive guilds to regulate all activity. This increased competition often leads to the decline of traditional guild power.",
+            "module": 3
+        },
+        {
+            "question_id": "7",
+            "question_text": "What key distinction separates a partnership from a joint-stock company, per the course?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Partnerships are oral only; joint-stock firms are written",
+                "B": "Partnerships involve a few owners; joint-stock firms can have thousands",
+                "C": "Partnerships are state-owned; joint-stock firms are private",
+                "D": "Partnerships can’t trade abroad; joint stock firms can"
+            },
+            "correct_option_label": "B",
+            "explanation": "Partnerships are typically limited to a small group of known associates. In contrast, joint-stock companies allow for thousands of anonymous shareholders to pool capital together.",
+            "module": 2
+        },
+        {
+            "question_id": "8",
+            "question_text": "Whose work argues that bridging multiple social circles improves information diversity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ronald Burt",
+                "B": "Joel Mokyr",
+                "C": "Max Weber",
+                "D": "Emily Kadens"
+            },
+            "correct_option_label": "A",
+            "explanation": "Ronald Burt's research focuses on the concept of 'structural holes.' He argues that individuals who bridge different social groups gain access to more diverse and non-redundant information.",
+            "module": 1
+        },
+        {
+            "question_id": "9",
+            "question_text": "Which early joint-stock companies were cited as exemplars?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The Dutch East India Company and the English East India Company",
+                "B": "The Spanish Armada and the French Trade Company",
+                "C": "The Belgian Mercantile Association and the Hamburg Corporation",
+                "D": "The Venetian Guild and the Ottoman Company"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Dutch East India Company (VOC) and the English East India Company (EIC) are the classic examples of early joint-stock firms that revolutionized global trade and finance.",
+            "module": 2
+        },
+        {
+            "question_id": "10",
+            "question_text": "In contractual exchange, what is the primary role of a “contract enforcer”?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Resolving disputes and deterring opportunism",
+                "B": "Certifying product quality",
+                "C": "Collecting trade taxes",
+                "D": "Issuing loans to traders"
+            },
+            "correct_option_label": "A",
+            "explanation": "Contract enforcers provide the legal or institutional backbone needed to resolve disagreements. Their presence ensures that parties fulfill their obligations and discourages cheating.",
+            "module": 3
+        },
+        {
+            "question_id": "11",
+            "question_text": "A village trader mainly relies on trusted ties with nearby communities. Which exchange mode is exemplified?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Impersonal exchange",
+                "B": "Contractual exchange",
+                "C": "Relational exchange",
+                "D": "Power based exchange"
+            },
+            "correct_option_label": "C",
+            "explanation": "Relational exchange is based on long-term personal relationships, trust, and shared history. This is typical of village economies where trades happen between known community members.",
+            "module": 1
+        },
+        {
+            "question_id": "12",
+            "question_text": "Associations in a port city regulate prices, quality, and enforcement among members. What institution is this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "State bureaucracy",
+                "B": "Merchant guild",
+                "C": "Religious trust",
+                "D": "Joint stock company"
+            },
+            "correct_option_label": "B",
+            "explanation": "Merchant guilds were self-regulating organizations that managed trade standards and member conduct. They provided collective security and ensured fair competition among local traders.",
+            "module": 3
+        },
+        {
+            "question_id": "13",
+            "question_text": "An entrepreneur trades only within his community, avoiding outsiders even at a profit cost. Which concept explains this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Technological superiority",
+                "B": "Market democratization",
+                "C": "Industrial revolution",
+                "D": "Embeddedness"
+            },
+            "correct_option_label": "D",
+            "explanation": "Embeddedness occurs when economic activities are deeply rooted in social relationships. Traders may choose the security of their social circle over the higher profits offered by outsiders.",
+            "module": 1
+        },
+        {
+            "question_id": "14",
+            "question_text": "A trading voyage is financed by hundreds of small shareholders. Which feature enables pooling large capital?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Religious donations",
+                "B": "Separation of ownership and management",
+                "C": "Unpaid colonial labour",
+                "D": "Shared agrarian lands"
+            },
+            "correct_option_label": "B",
+            "explanation": "The separation of ownership and management allows individuals to invest without needing to run the business. This structure is essential for attracting large-scale capital from a broad investor base.",
+            "module": 2
+        },
+        {
+            "question_id": "15",
+            "question_text": "A cotton trader shifts from local, relationship-based deals to anonymous international transactions. What transition is this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Collapse of capitalism",
+                "B": "Rise of impersonal exchange",
+                "C": "Agriculture → services",
+                "D": "Caste-based trade formation"
+            },
+            "correct_option_label": "B",
+            "explanation": "The move from dealing with known associates to trading with strangers in a formal market marks the 'Rise of impersonal exchange,' facilitated by standardized rules and legal systems.",
+            "module": 3
+        },
+        {
+            "question_id": "16",
+            "question_text": "Merchants create standardized legal rules across cities to curb trust failures. What market-supporting element are they building?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Financial speculation",
+                "B": "Informal settlements",
+                "C": "Property rights",
+                "D": "Technology hubs"
+            },
+            "correct_option_label": "C",
+            "explanation": "Standardized rules provide a framework for protecting property rights and enforcing contracts. These elements are essential for fostering trust in markets where participants do not know each other.",
+            "module": 3
+        },
+        {
+            "question_id": "17",
+            "question_text": "A Dalit entrepreneur grows a factory yet faces exclusion from upper-caste networks, limiting opportunities. This highlights challenges under which topic?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cotton trade",
+                "B": "Financial globalization",
+                "C": "Industrial revolution",
+                "D": "Dalit Entrepreneurship"
+            },
+            "correct_option_label": "D",
+            "explanation": "This scenario directly illustrates the social and systemic barriers faced in 'Dalit Entrepreneurship,' where historical caste-based exclusions persist even in modern industrial settings.",
+            "module": 1
+        },
+        {
+            "question_id": "18",
+            "question_text": "In the 19th century, British machine-made cloth undercuts Indian firms. Which historical process is illustrated?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Social embeddedness",
+                "B": "Transformation of Indian Business",
+                "C": "Market democratization",
+                "D": "Decline of modern finance"
+            },
+            "correct_option_label": "B",
+            "explanation": "The influx of cheap British textiles represents a major shift in the 'Transformation of Indian Business' under colonial rule, where traditional domestic production was disrupted by industrial imports.",
+            "module": 2
+        },
+        {
+            "question_id": "19",
+            "question_text": "A kinship-dominated trading society opens to outsiders and anonymous transactions. This is a move from ________ to ______ exchange.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Embedded → impersonal",
+                "B": "Contractual → relational",
+                "C": "Power-based → contractual",
+                "D": "Religious → secular"
+            },
+            "correct_option_label": "A",
+            "explanation": "Opening a society to anonymous transactions signifies a shift from 'embedded' (personal/kinship-based) exchange to 'impersonal' exchange based on objective rules and institutions.",
+            "module": 3
+        },
+        {
+            "question_id": "20",
+            "question_text": "Lineage and religion-based landholding blocks outsiders from buying land or doing business. Which barrier is this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Urbanization pressures",
+                "B": "State-led capitalism",
+                "C": "Technological limits",
+                "D": "Social embeddedness"
+            },
+            "correct_option_label": "D",
+            "explanation": "Social embeddedness can act as a barrier to market entry. When land or resources are tied exclusively to specific kinship or religious groups, it prevents outsiders from participating in the economy.",
+            "module": 1
+        },
+        {
+            "question_id": "21",
+            "question_text": "Workers once feared machines would erase jobs, yet new roles later emerged. What market lesson follows?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "History never rhymes in tech",
+                "B": "Technology always causes permanent job loss",
+                "C": "Tech can displace some jobs but also creates new ones",
+                "D": "Manual work is change-proof"
+            },
+            "correct_option_label": "C",
+            "explanation": "This lesson from the Industrial Revolution shows that while technology disrupts existing roles, it also drives economic growth that creates entirely new types of employment and demand.",
+            "module": 4
+        },
+        {
+            "question_id": "22",
+            "question_text": "In market evolution, coffeehouses became important because they…",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Offered silent, solitary workspaces",
+                "B": "Served as “third places” for commerce and discussion",
+                "C": "Replaced formal marketplaces",
+                "D": "Banned trade on religious grounds"
+            },
+            "correct_option_label": "B",
+            "explanation": "Coffeehouses acted as neutral 'third places' where merchants and intellectuals could exchange information, debate ideas, and conduct informal business meetings, facilitating market evolution.",
+            "module": 3
+        },
+        {
+            "question_id": "23",
+            "question_text": "Medieval India’s global textile edge stemmed primarily from…",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cheap labor and fixed routes",
+                "B": "European dye access",
+                "C": "Distinct weaving and color-fastening skills",
+                "D": "Universal industrial machinery"
+            },
+            "correct_option_label": "C",
+            "explanation": "India dominated the global textile market due to superior craftsmanship in weaving and sophisticated knowledge of dyes and color-fastening techniques that other regions could not replicate.",
+            "module": 3
+        },
+        {
+            "question_id": "24",
+            "question_text": "Imagining Dara Shikoh defeating Aurangzeb to speed openness and technology adoption is an example of…",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Supply-side economics",
+                "B": "Behavioral economics",
+                "C": "Democratic theory",
+                "D": "Counterfactual analysis"
+            },
+            "correct_option_label": "D",
+            "explanation": "Counterfactual analysis involves asking 'what if' questions about historical events to understand how different choices or outcomes might have altered the trajectory of a nation's development.",
+            "module": 4
+        },
+        {
+            "question_id": "25",
+            "question_text": "That everyday people now enjoy comforts beyond past Nawabs suggests…",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Technology has broadened access to “luxury”",
+                "B": "Entertainment is no longer business",
+                "C": "Modern royalty consumes less",
+                "D": "Comfort depends only on income"
+            },
+            "correct_option_label": "A",
+            "explanation": "Technological advancements and mass production have democratized access to goods that were once exclusive to the elite, making former 'luxuries' available to the general public.",
+            "module": 4
+        },
+        {
+            "question_id": "26",
+            "question_text": "Why did Indian cotton textiles command premiums over Europe’s wool/hemp?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Control of the spice trade",
+                "B": "Europe couldn’t produce wool",
+                "C": "Uniquely soft, fine, and colorful cotton",
+                "D": "Greater access to silk"
+            },
+            "correct_option_label": "C",
+            "explanation": "Indian cotton was prized globally for its exceptional quality, softness, and vibrant patterns, which were far superior to the heavy, uncomfortable fabrics common in Europe at the time.",
+            "module": 3
+        },
+        {
+            "question_id": "27",
+            "question_text": "Why has India’s handloom sector endured despite industrialization?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rigid government subsidies",
+                "B": "Replacing fast fashion with rural output",
+                "C": "Cultural relevance, unique products, and adaptation",
+                "D": "Guaranteed foreign markets"
+            },
+            "correct_option_label": "C",
+            "explanation": "The handloom sector survives because it provides unique, culturally significant products that mass-produced factory goods cannot replicate, catering to niche and authentic market segments.",
+            "module": 4
+        },
+        {
+            "question_id": "28",
+            "question_text": "Which innovation supported Indian exports to hot regions like the Arabian Peninsula?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Wool-soaked fabrics",
+                "B": "Velvet-embroidered turbans",
+                "C": "Plastic-coated linen",
+                "D": "Oil-dipped cotton headgear for cooling"
+            },
+            "correct_option_label": "D",
+            "explanation": "Technological adaptations like oil-dipped cotton fabrics provided cooling properties, making Indian textiles particularly suitable and desirable in the hot climates of the Middle East.",
+            "module": 3
+        },
+        {
+            "question_id": "29",
+            "question_text": "Why do experience-based products (tourism, hand-crafted saris, artisan coffee) retain demand?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Hand made is always cheaper",
+                "B": "Customers reject branding outright",
+                "C": "People seek personalized, authentic experiences",
+                "D": "Automation makes handwork superior"
+            },
+            "correct_option_label": "C",
+            "explanation": "In an increasingly automated world, consumers value the uniqueness and 'authenticity' of hand-crafted or artisanal products, which provide a personal connection that mass production lacks.",
+            "module": 1
+        },
+        {
+            "question_id": "30",
+            "question_text": "Tracing everyday objects to reveal patterns of trade and adaptation requires which core skill?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Economic forecasting",
+                "B": "Cost benefit modeling",
+                "C": "Historical and cultural analysis",
+                "D": "Technical auditing"
+            },
+            "correct_option_label": "C",
+            "explanation": "Understanding the evolution of business requires analyzing the 'biography' of objects through historical and cultural lenses to see how they traveled and changed through different markets.",
+            "module": 1
+        },
+        {
+            "question_id": "31",
+            "question_text": "Guild membership that assures standards and fair dispute resolution primarily supplies which market feature?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Information redundancy",
+                "B": "State-backed taxation",
+                "C": "Pure price competition",
+                "D": "Contract enforcement and trust"
+            },
+            "correct_option_label": "D",
+            "explanation": "Guilds acted as private institutions that enforced rules among their members. By ensuring quality and settling disputes, they created the trust necessary for stable market transactions.",
+            "module": 3
+        },
+        {
+            "question_id": "32",
+            "question_text": "A pilgrimage site evolving into a business hub where worship and trade intermingle best illustrates…",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Industrialization",
+                "B": "Embeddedness",
+                "C": "Impersonal exchange",
+                "D": "Market democratization"
+            },
+            "correct_option_label": "B",
+            "explanation": "This is a classic example of embeddedness, where economic trade is socially nested within religious and cultural activities, rather than being a separate, anonymous activity.",
+            "module": 1
+        },
+        {
+            "question_id": "33",
+            "question_text": "A 16th-century Gujarati trader uses letters of recommendation across ports rather than formal contracts. This is…",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Impersonal exchange",
+                "B": "Relational exchange",
+                "C": "Government exchange",
+                "D": "Contractual exchange"
+            },
+            "correct_option_label": "B",
+            "explanation": "The use of personal recommendations (Hundis or letters) signals relational exchange, where business is conducted based on social reputation and personal networks rather than legal contracts.",
+            "module": 1
+        },
+        {
+            "question_id": "34",
+            "question_text": "Investors in 1600s Amsterdam buy voyage shares via standardized legal documents without meeting captains. This signals…",
+            "question_type": "MCQ",
+            "options": {
+                "A": "State monopolization",
+                "B": "The rise of impersonal exchange",
+                "C": "Embedded trade networks",
+                "D": "Caste-based entrepreneurship"
+            },
+            "correct_option_label": "B",
+            "explanation": "Trading shares with strangers through formal documents is a hallmark of impersonal exchange. It allows capital to move beyond personal friendship or family circles into a broader market.",
+            "module": 3
+        },
+        {
+            "question_id": "35",
+            "question_text": "A Dalit-owned startup struggles to join legacy networks despite strong products. What challenge is reflected?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Industrial disruption",
+                "B": "Caste-based market exclusion",
+                "C": "Agrarian modernization",
+                "D": "Inclusive democratization"
+            },
+            "correct_option_label": "B",
+            "explanation": "Social structures like caste can create barriers that prevent talented individuals from accessing established business networks, a phenomenon known as caste-based market exclusion.",
+            "module": 1
+        },
+        {
+            "question_id": "36",
+            "question_text": "Village weavers tied to guilds lose work as machine-made cloth floods markets. This reflects…",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Democratization of technology",
+                "B": "Intensified embeddedness",
+                "C": "The impact of the Industrial Revolution",
+                "D": "Decentralized trade"
+            },
+            "correct_option_label": "C",
+            "explanation": "The displacement of traditional hand-weavers by industrial machinery is a defining feature of the Industrial Revolution, showcasing how technological leaps disrupt existing economic structures.",
+            "module": 4
+        },
+        {
+            "question_id": "37",
+            "question_text": "Thousands fund a risky Asian voyage and share profits/losses through a single firm. Which financial innovation is at work?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Risk-sharing via the joint stock model",
+                "B": "Religious finance",
+                "C": "Tax-collection investment",
+                "D": "Decentralized barter"
+            },
+            "correct_option_label": "A",
+            "explanation": "The joint-stock model revolutionized finance by allowing many investors to share the high risks and rewards of long-distance trade, protecting individuals from total financial ruin if a voyage failed.",
+            "module": 2
+        },
+        {
+            "question_id": "38",
+            "question_text": "Dense social ties keep fraud low but slow the spread of new ideas. What trade-off is this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Market expansion vs. cost reduction",
+                "B": "Political stability vs. cultural change",
+                "C": "Risk reduction vs. innovation stagnation",
+                "D": "Wealth accumulation vs. taxation"
+            },
+            "correct_option_label": "C",
+            "explanation": "While close-knit social networks build the trust needed to reduce risk, they can also become 'echo chambers' that discourage outsiders and the new ideas necessary for innovation.",
+            "module": 1
+        },
+        {
+            "question_id": "39",
+            "question_text": "Colonial policies push Indian farmers toward cotton for British mills, disrupting food security and business patterns. This reflects…",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Transformation of Indian Business under colonialism",
+                "B": "Strengthening temple economies",
+                "C": "Embedded agricultural growth",
+                "D": "Economic liberalization in India"
+            },
+            "correct_option_label": "A",
+            "explanation": "Colonialism forced Indian agriculture to serve British industrial needs. This transformation prioritized cash crops for export over local food security, fundamentally altering the Indian business landscape.",
+            "module": 2
+        },
+        {
+            "question_id": "40",
+            "question_text": "Post 1990s, Indian firms grow globally with better access to tech, finance, and supply chains. Which trend is shown?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The rise of Northwestern Europe",
+                "B": "Institutional decline",
+                "C": "Globalization of Indian Business",
+                "D": "Collapse of embedded societies"
+            },
+            "correct_option_label": "C",
+            "explanation": "The 1990s economic reforms opened Indian markets, allowing domestic firms to integrate into the global economy and compete on an international scale through better access to resources.",
+            "module": 2
+        }
+    ]
+}
