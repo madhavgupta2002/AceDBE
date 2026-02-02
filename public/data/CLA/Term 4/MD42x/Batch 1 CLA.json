@@ -1,637 +1,847 @@
 {
-    "exam_metadata": {
-      "subject_name": "Exploring Society & Social Structure",
-      "exam_date": "Batch 1 CLA"
+  "exam_metadata": {
+    "subject_name": "Exploring Society & Social Structure",
+    "exam_date": "Batch 1 CLA"
+  },
+  "questions": [
+    {
+      "question_id": "M1_Q1",
+      "question_text": "According to C. Wright Mills, why do many \"ordinary men\" feel their private lives are a series of traps?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "They lack the professional skills needed for the modern job market.",
+        "B": "Their awareness is bounded by private orbits, while their lives are shaped by impersonal world changes.",
+        "C": "They are overly interested in politics and civic engagement.",
+        "D": "They refuse to use modern technology to solve personal inconveniences."
+      },
+      "correct_option_label": "B",
+      "explanation": "Individuals often feel trapped because they focus only on personal surroundings, failing to see how large-scale historical and social changes impact their lives.",
+      "module": 1
     },
-    "questions": [
-      {
-        "question_id": "M1_Q1",
-        "question_text": "According to C. Wright Mills, why do many \"ordinary men\" feel their private lives are a series of traps?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "They lack the professional skills needed for the modern job market.",
-          "B": "Their awareness is bounded by private orbits, while their lives are shaped by impersonal world changes.",
-          "C": "They are overly interested in politics and civic engagement.",
-          "D": "They refuse to use modern technology to solve personal inconveniences."
-        },
-        "correct_option_label": "B",
-        "explanation": "Individuals often feel trapped because they focus only on personal surroundings, failing to see how large-scale historical and social changes impact their lives.",
-        "module": 1
+    {
+      "question_id": "M1_Q2",
+      "question_text": "When using the \"Three Guiding Questions,\" what is the focus of the \"Structure\" question?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Where a society stands in the timeline of human history.",
+        "B": "The variety of men and women that prevail in this period.",
+        "C": "How an individual can improve their personal discipline.",
+        "D": "Which institutions matter here and how they connect."
       },
-      {
-        "question_id": "M1_Q2",
-        "question_text": "When using the \"Three Guiding Questions,\" what is the focus of the \"Structure\" question?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Where a society stands in the timeline of human history.",
-          "B": "The variety of men and women that prevail in this period.",
-          "C": "How an individual can improve their personal discipline.",
-          "D": "Which institutions matter here and how they connect."
-        },
-        "correct_option_label": "D",
-        "explanation": "The 'Structure' question examines the essential components of a society and how its various institutions interact to form a social order.",
-        "module": 1
+      "correct_option_label": "D",
+      "explanation": "The 'Structure' question examines the essential components of a society and how its various institutions interact to form a social order.",
+      "module": 1
+    },
+    {
+      "question_id": "M1_Q3",
+      "question_text": "How does the transition from a \"joint family\" to a \"nuclear family\" in India relate to Mills' theory?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is a personal trouble caused by family arguments.",
+        "B": "It is a business mission to sell more small apartments.",
+        "C": "It is a fact of contemporary history that shapes individual success and failure.",
+        "D": "It is a sign that people are becoming less professional."
       },
-      {
-        "question_id": "M1_Q3",
-        "question_text": "How does the transition from a \"joint family\" to a \"nuclear family\" in India relate to Mills' theory?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "It is a personal trouble caused by family arguments.",
-          "B": "It is a business mission to sell more small apartments.",
-          "C": "It is a fact of contemporary history that shapes individual success and failure.",
-          "D": "It is a sign that people are becoming less professional."
-        },
-        "correct_option_label": "C",
-        "explanation": "Shifting family structures are historical trends that create new social conditions affecting the individual's path to success or failure.",
-        "module": 1
+      "correct_option_label": "C",
+      "explanation": "Shifting family structures are historical trends that create new social conditions affecting the individual's path to success or failure.",
+      "module": 1
+    },
+    {
+      "question_id": "M1_Q4",
+      "question_text": "In the \"5-Step Mini-Framework,\" what is the purpose of Step 2: \"Check for patterns\"?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "To find a personal solution to your problem.",
+        "B": "To name the trouble you are facing.",
+        "C": "To see if the problem is repeating across many people, indicating a public issue.",
+        "D": "To determine if you need a new air purifier."
       },
-      {
-        "question_id": "M1_Q4",
-        "question_text": "In the \"5-Step Mini-Framework,\" what is the purpose of Step 2: \"Check for patterns\"?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "To find a personal solution to your problem.",
-          "B": "To name the trouble you are facing.",
-          "C": "To see if the problem is repeating across many people, indicating a public issue.",
-          "D": "To determine if you need a new air purifier."
-        },
-        "correct_option_label": "C",
-        "explanation": "Checking for patterns helps determine if a problem is an isolated individual trouble or a widespread social issue.",
-        "module": 1
+      "correct_option_label": "C",
+      "explanation": "Checking for patterns helps determine if a problem is an isolated individual trouble or a widespread social issue.",
+      "module": 1
+    },
+    {
+      "question_id": "M1_Q5",
+      "question_text": "According to Stephanie Coontz, how does the modern \"love match\" compare to historical models of marriage?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It has always been the primary reason for marriage across all cultures.",
+        "B": "It is a historical anomaly that would have been seen as impractical for most of human history.",
+        "C": "It is more stable because it is based on emotional intimacy.",
+        "D": "It is a biological necessity that humans only recently discovered."
       },
-      {
-        "question_id": "M1_Q5",
-        "question_text": "According to Stephanie Coontz, how does the modern \"love match\" compare to historical models of marriage?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "It has always been the primary reason for marriage across all cultures.",
-          "B": "It is a historical anomaly that would have been seen as impractical for most of human history.",
-          "C": "It is more stable because it is based on emotional intimacy.",
-          "D": "It is a biological necessity that humans only recently discovered."
-        },
-        "correct_option_label": "B",
-        "explanation": "For most of history, marriage was a strategic economic or political alliance; marrying solely for love is a relatively recent social development.",
-        "module": 1
+      "correct_option_label": "B",
+      "explanation": "For most of history, marriage was a strategic economic or political alliance; marrying solely for love is a relatively recent social development.",
+      "module": 1
+    },
+    {
+      "question_id": "M1_Q6",
+      "question_text": "In Medieval Europe, how was \"courtly love\" typically viewed in relation to marriage?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It was the fundamental requirement for a legal wedding.",
+        "B": "It was seen as a \"meaner\" form of love compared to spousal duty.",
+        "C": "It was idealized as a form of love entirely separate from the practical alliances of marriage.",
+        "D": "It was encouraged by the Church to strengthen family bonds."
       },
-      {
-        "question_id": "M1_Q6",
-        "question_text": "In Medieval Europe, how was \"courtly love\" typically viewed in relation to marriage?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "It was the fundamental requirement for a legal wedding.",
-          "B": "It was seen as a \"meaner\" form of love compared to spousal duty.",
-          "C": "It was idealized as a form of love entirely separate from the practical alliances of marriage.",
-          "D": "It was encouraged by the Church to strengthen family bonds."
-        },
-        "correct_option_label": "C",
-        "explanation": "In the medieval period, romantic 'courtly love' was considered an ideal distinct from the practical, contractual nature of marriage.",
-        "module": 1
+      "correct_option_label": "C",
+      "explanation": "In the medieval period, romantic 'courtly love' was considered an ideal distinct from the practical, contractual nature of marriage.",
+      "module": 1
+    },
+    {
+      "question_id": "M1_Q7",
+      "question_text": "What is the \"Modern Paradox\" of marriage described by Coontz?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "By expecting a single relationship to satisfy all our needs, we have made the institution more fragile.",
+        "B": "We want to get married, but we also want to stay single.",
+        "C": "Marriage is cheaper now, but fewer people can afford it.",
+        "D": "We believe love conquers all, but we only marry for money."
       },
-      {
-        "question_id": "M1_Q7",
-        "question_text": "What is the \"Modern Paradox\" of marriage described by Coontz?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "By expecting a single relationship to satisfy all our needs, we have made the institution more fragile.",
-          "B": "We want to get married, but we also want to stay single.",
-          "C": "Marriage is cheaper now, but fewer people can afford it.",
-          "D": "We believe love conquers all, but we only marry for money."
-        },
-        "correct_option_label": "A",
-        "explanation": "The paradox is that while we value marriage more for emotional fulfillment, the high expectations we place on it make it more susceptible to ending.",
-        "module": 1
+      "correct_option_label": "A",
+      "explanation": "The paradox is that while we value marriage more for emotional fulfillment, the high expectations we place on it make it more susceptible to ending.",
+      "module": 1
+    },
+    {
+      "question_id": "M1_Q8",
+      "question_text": "How does power influence \"Sleep Inequities\" according to the text?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Powerful people never need to sleep.",
+        "B": "The ability to control the timing and environment of sleep is unevenly distributed based on social status.",
+        "C": "Everyone has equal access to high-quality sleep regardless of status.",
+        "D": "Power only matters for sleep in the military or prisons."
       },
-      {
-        "question_id": "M1_Q8",
-        "question_text": "How does power influence \"Sleep Inequities\" according to the text?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Powerful people never need to sleep.",
-          "B": "The ability to control the timing and environment of sleep is unevenly distributed based on social status.",
-          "C": "Everyone has equal access to high-quality sleep regardless of status.",
-          "D": "Power only matters for sleep in the military or prisons."
-        },
-        "correct_option_label": "B",
-        "explanation": "Sleep is not just biological; those with more social power have greater control over when and where they can rest undisturbed.",
-        "module": 1
+      "correct_option_label": "B",
+      "explanation": "Sleep is not just biological; those with more social power have greater control over when and where they can rest undisturbed.",
+      "module": 1
+    },
+    {
+      "question_id": "M1_Q9",
+      "question_text": "Why does the \"Politics of Sleep\" raise the question of a \"right not to sleep\"?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Because everyone wants to be awake 24/7.",
+        "B": "Because sleep is no longer a biological requirement.",
+        "C": "Because the government wants to ban sleeping in public.",
+        "D": "Because advances in biomedicine (like Modafinil) could turn sleep into an optional commodity."
       },
-      {
-        "question_id": "M1_Q9",
-        "question_text": "Why does the \"Politics of Sleep\" raise the question of a \"right not to sleep\"?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Because everyone wants to be awake 24/7.",
-          "B": "Because sleep is no longer a biological requirement.",
-          "C": "Because the government wants to ban sleeping in public.",
-          "D": "Because advances in biomedicine (like Modafinil) could turn sleep into an optional commodity."
-        },
-        "correct_option_label": "D",
-        "explanation": "Advancements in medication could transform sleep from a biological necessity into a choice, potentially creating social pressure to stay awake.",
-        "module": 1
+      "correct_option_label": "D",
+      "explanation": "Advancements in medication could transform sleep from a biological necessity into a choice, potentially creating social pressure to stay awake.",
+      "module": 1
+    },
+    {
+      "question_id": "M1_Q10",
+      "question_text": "What do Coontz’s history of marriage and Williams’ sociology of sleep have in common?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Both prove that biology is more important than society.",
+        "B": "Both suggest that personal feelings are the only way to measure success.",
+        "C": "Both demonstrate that seemingly \"private\" behaviors are actually shaped by history, institutions, and social rules.",
+        "D": "Both argue that modern Western ideals are the most successful in history."
       },
-      {
-        "question_id": "M1_Q10",
-        "question_text": "What do Coontz’s history of marriage and Williams’ sociology of sleep have in common?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Both prove that biology is more important than society.",
-          "B": "Both suggest that personal feelings are the only way to measure success.",
-          "C": "Both demonstrate that seemingly \"private\" behaviors are actually shaped by history, institutions, and social rules.",
-          "D": "Both argue that modern Western ideals are the most successful in history."
-        },
-        "correct_option_label": "C",
-        "explanation": "Both studies apply the sociological imagination to show that personal behaviors like sleeping or marrying are deeply embedded in social structures.",
-        "module": 1
+      "correct_option_label": "C",
+      "explanation": "Both studies apply the sociological imagination to show that personal behaviors like sleeping or marrying are deeply embedded in social structures.",
+      "module": 1
+    },
+    {
+      "question_id": "M1_Q11",
+      "question_text": "According to Smith, why is productivity lower in Agriculture than in Manufacturing?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Farmers are naturally less hardworking than factory workers.",
+        "B": "The nature of agriculture makes it difficult to separate tasks cleanly because work changes with the seasons.",
+        "C": "Agriculture relies on God's will rather than human industry.",
+        "D": "Poor countries produce better corn than rich countries."
       },
-      {
-        "question_id": "M1_Q11",
-        "question_text": "According to Smith, why is productivity lower in Agriculture than in Manufacturing?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Farmers are naturally less hardworking than factory workers.",
-          "B": "The nature of agriculture makes it difficult to separate tasks cleanly because work changes with the seasons.",
-          "C": "Agriculture relies on God's will rather than human industry.",
-          "D": "Poor countries produce better corn than rich countries."
-        },
-        "correct_option_label": "B",
-        "explanation": "Smith argues that because agricultural tasks are seasonal, they cannot be subdivided into a continuous division of labor as easily as manufacturing.",
-        "module": 1
+      "correct_option_label": "B",
+      "explanation": "Smith argues that because agricultural tasks are seasonal, they cannot be subdivided into a continuous division of labor as easily as manufacturing.",
+      "module": 1
+    },
+    {
+      "question_id": "M1_Q12",
+      "question_text": "How does Marx describe the \"devaluation of the human world\"?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It happens because people stop going to university.",
+        "B": "It is caused by the \"Fall of Man\" or original sin.",
+        "C": "It only occurs during economic recessions.",
+        "D": "It occurs in direct proportion to the increase in the value of the world of things."
       },
-      {
-        "question_id": "M1_Q12",
-        "question_text": "How does Marx describe the \"devaluation of the human world\"?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "It happens because people stop going to university.",
-          "B": "It is caused by the \"Fall of Man\" or original sin.",
-          "C": "It only occurs during economic recessions.",
-          "D": "It occurs in direct proportion to the increase in the value of the world of things."
-        },
-        "correct_option_label": "D",
-        "explanation": "Marx asserts that as commodities and products gain more value in a capitalist system, the human worth of the laborer decreases.",
-        "module": 1
+      "correct_option_label": "D",
+      "explanation": "Marx asserts that as commodities and products gain more value in a capitalist system, the human worth of the laborer decreases.",
+      "module": 1
+    },
+    {
+      "question_id": "M1_Q13",
+      "question_text": "What central irony does Marx identify regarding the worker in a modern capitalist system?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The worker becomes richer as they spend more time at the factory.",
+        "B": "The worker becomes a \"wretched commodity\" in inverse proportion to the power and magnitude of their production.",
+        "C": "The worker becomes more skilled as the value of their product decreases.",
+        "D": "The more machines are used, the more leisure time the worker enjoys."
       },
-      {
-        "question_id": "M1_Q13",
-        "question_text": "What central irony does Marx identify regarding the worker in a modern capitalist system?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "The worker becomes richer as they spend more time at the factory.",
-          "B": "The worker becomes a \"wretched commodity\" in inverse proportion to the power and magnitude of their production.",
-          "C": "The worker becomes more skilled as the value of their product decreases.",
-          "D": "The more machines are used, the more leisure time the worker enjoys."
-        },
-        "correct_option_label": "B",
-        "explanation": "The irony is that the more wealth and value a worker produces for the employer, the more expendable and impoverished the worker becomes as a 'commodity'.",
-        "module": 1
+      "correct_option_label": "B",
+      "explanation": "The irony is that the more wealth and value a worker produces for the employer, the more expendable and impoverished the worker becomes as a 'commodity'.",
+      "module": 1
+    },
+    {
+      "question_id": "M1_Q14",
+      "question_text": "How is the \"Sovereign\" or \"Leviathan\" created?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "By every person agreeing to authorize and give up their right of governing themselves to one man or assembly.",
+        "B": "By a group of people fighting until only one person is left alive.",
+        "C": "By God choosing a king and telling the people to obey.",
+        "D": "By the sovereign making a promise to the people to be fair."
       },
-      {
-        "question_id": "M1_Q14",
-        "question_text": "How is the \"Sovereign\" or \"Leviathan\" created?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "By every person agreeing to authorize and give up their right of governing themselves to one man or assembly.",
-          "B": "By a group of people fighting until only one person is left alive.",
-          "C": "By God choosing a king and telling the people to obey.",
-          "D": "By the sovereign making a promise to the people to be fair."
-        },
-        "correct_option_label": "A",
-        "explanation": "According to Hobbes, the Sovereign is created through a social contract where individuals surrender their rights to a central authority for collective security.",
-        "module": 1
+      "correct_option_label": "A",
+      "explanation": "According to Hobbes, the Sovereign is created through a social contract where individuals surrender their rights to a central authority for collective security.",
+      "module": 1
+    },
+    {
+      "question_id": "M1_Q15",
+      "question_text": "According to Hobbes, when do justice and injustice begin to exist?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "They are natural feelings born within every human heart.",
+        "B": "They exist as soon as two people meet each other.",
+        "C": "Only after a common power is established and laws are created.",
+        "D": "They are defined by the \"Golden Rule\" in the state of nature."
       },
-      {
-        "question_id": "M1_Q15",
-        "question_text": "According to Hobbes, when do justice and injustice begin to exist?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "They are natural feelings born within every human heart.",
-          "B": "They exist as soon as two people meet each other.",
-          "C": "Only after a common power is established and laws are created.",
-          "D": "They are defined by the \"Golden Rule\" in the state of nature."
-        },
-        "correct_option_label": "C",
-        "explanation": "Hobbes argues that in the state of nature, nothing is unjust; justice and injustice are only possible once a civil society with laws is formed.",
-        "module": 1
+      "correct_option_label": "C",
+      "explanation": "Hobbes argues that in the state of nature, nothing is unjust; justice and injustice are only possible once a civil society with laws is formed.",
+      "module": 1
+    },
+    {
+      "question_id": "M2_Q1",
+      "question_text": "According to C. Wright Mills, why do many \"ordinary men\" feel their private lives are a series of traps?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "They lack the professional skills needed for the modern job market.",
+        "B": "They are overly interested in politics and civic engagement.",
+        "C": "They refuse to use modern technology to solve personal inconveniences.",
+        "D": "Their awareness is bounded by private orbits, while their lives are shaped by impersonal world changes."
       },
-      {
-        "question_id": "M2_Q1",
-        "question_text": "According to C. Wright Mills, why do many \"ordinary men\" feel their private lives are a series of traps?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "They lack the professional skills needed for the modern job market.",
-          "B": "They are overly interested in politics and civic engagement.",
-          "C": "They refuse to use modern technology to solve personal inconveniences.",
-          "D": "Their awareness is bounded by private orbits, while their lives are shaped by impersonal world changes."
-        },
-        "correct_option_label": "D",
-        "explanation": "Individuals often feel trapped because they focus only on personal surroundings, failing to see how large-scale historical and social changes impact their lives.",
-        "module": 2
+      "correct_option_label": "D",
+      "explanation": "Individuals often feel trapped because they focus only on personal surroundings, failing to see how large-scale historical and social changes impact their lives.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_Q2",
+      "question_text": "When using the \"Three Guiding Questions,\" what is the focus of the \"Structure\" question?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Where a society stands in the timeline of human history.",
+        "B": "The variety of men and women that prevail in this period.",
+        "C": "Which institutions matter here and how they connect.",
+        "D": "How an individual can improve their personal discipline."
       },
-      {
-        "question_id": "M2_Q2",
-        "question_text": "When using the \"Three Guiding Questions,\" what is the focus of the \"Structure\" question?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Where a society stands in the timeline of human history.",
-          "B": "The variety of men and women that prevail in this period.",
-          "C": "Which institutions matter here and how they connect.",
-          "D": "How an individual can improve their personal discipline."
-        },
-        "correct_option_label": "C",
-        "explanation": "The 'Structure' question examines the essential components of a society and how its various institutions interact to form a social order.",
-        "module": 2
+      "correct_option_label": "C",
+      "explanation": "The 'Structure' question examines the essential components of a society and how its various institutions interact to form a social order.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_Q3",
+      "question_text": "How does the transition from a \"joint family\" to a \"nuclear family\" in India relate to Mills' theory?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is a fact of contemporary history that shapes individual success and failure.",
+        "B": "It is a personal trouble caused by family arguments.",
+        "C": "It is a business mission to sell more small apartments."
       },
-      {
-        "question_id": "M2_Q3",
-        "question_text": "How does the transition from a \"joint family\" to a \"nuclear family\" in India relate to Mills' theory?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "It is a fact of contemporary history that shapes individual success and failure.",
-          "B": "It is a personal trouble caused by family arguments.",
-          "C": "It is a business mission to sell more small apartments."
-        },
-        "correct_option_label": "A",
-        "explanation": "Shifting family structures are historical trends that create new social conditions affecting the individual's path to success or failure.",
-        "module": 2
+      "correct_option_label": "A",
+      "explanation": "Shifting family structures are historical trends that create new social conditions affecting the individual's path to success or failure.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_Q4",
+      "question_text": "In the \"5-Step Mini-Framework,\" what is the purpose of Step 2: \"Check for patterns\"?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "To find a personal solution to your problem.",
+        "B": "To name the trouble you are facing.",
+        "C": "To see if the problem is repeating across many people, indicating a public issue.",
+        "D": "To determine if you need a new air purifier."
       },
-      {
-        "question_id": "M2_Q4",
-        "question_text": "In the \"5-Step Mini-Framework,\" what is the purpose of Step 2: \"Check for patterns\"?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "To find a personal solution to your problem.",
-          "B": "To name the trouble you are facing.",
-          "C": "To see if the problem is repeating across many people, indicating a public issue.",
-          "D": "To determine if you need a new air purifier."
-        },
-        "correct_option_label": "C",
-        "explanation": "Checking for patterns helps determine if a problem is an isolated individual trouble or a widespread social issue.",
-        "module": 2
+      "correct_option_label": "C",
+      "explanation": "Checking for patterns helps determine if a problem is an isolated individual trouble or a widespread social issue.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_Q5",
+      "question_text": "According to Stephanie Coontz, how does the modern \"love match\" compare to historical models of marriage?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It has always been the primary reason for marriage across all cultures.",
+        "B": "It is more stable because it is based on emotional intimacy.",
+        "C": "It is a biological necessity that humans only recently discovered.",
+        "D": "It is a historical anomaly that would have been seen as impractical for most of human history."
       },
-      {
-        "question_id": "M2_Q5",
-        "question_text": "According to Stephanie Coontz, how does the modern \"love match\" compare to historical models of marriage?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "It has always been the primary reason for marriage across all cultures.",
-          "B": "It is more stable because it is based on emotional intimacy.",
-          "C": "It is a biological necessity that humans only recently discovered.",
-          "D": "It is a historical anomaly that would have been seen as impractical for most of human history."
-        },
-        "correct_option_label": "D",
-        "explanation": "For most of history, marriage was a strategic economic or political alliance; marrying solely for love is a relatively recent social development.",
-        "module": 2
+      "correct_option_label": "D",
+      "explanation": "For most of history, marriage was a strategic economic or political alliance; marrying solely for love is a relatively recent social development.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_Q6",
+      "question_text": "In Medieval Europe, how was \"courtly love\" typically viewed in relation to marriage?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It was idealized as a form of love entirely separate from the practical alliances of marriage.",
+        "B": "It was the fundamental requirement for a legal wedding.",
+        "C": "It was seen as a \"meaner\" form of love compared to spousal duty.",
+        "D": "It was encouraged by the Church to strengthen family bonds."
       },
-      {
-        "question_id": "M2_Q6",
-        "question_text": "In Medieval Europe, how was \"courtly love\" typically viewed in relation to marriage?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "It was idealized as a form of love entirely separate from the practical alliances of marriage.",
-          "B": "It was the fundamental requirement for a legal wedding.",
-          "C": "It was seen as a \"meaner\" form of love compared to spousal duty.",
-          "D": "It was encouraged by the Church to strengthen family bonds."
-        },
-        "correct_option_label": "A",
-        "explanation": "In the medieval period, romantic 'courtly love' was considered an ideal distinct from the practical, contractual nature of marriage.",
-        "module": 2
+      "correct_option_label": "A",
+      "explanation": "In the medieval period, romantic 'courtly love' was considered an ideal distinct from the practical, contractual nature of marriage.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_Q7",
+      "question_text": "What is the \"Modern Paradox\" of marriage described by Coontz?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "We want to get married, but we also want to stay single.",
+        "B": "By expecting a single relationship to satisfy all our needs, we have made the institution more fragile.",
+        "C": "Marriage is cheaper now, but fewer people can afford it.",
+        "D": "We believe love conquers all, but we only marry for money."
       },
-      {
-        "question_id": "M2_Q7",
-        "question_text": "What is the \"Modern Paradox\" of marriage described by Coontz?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "We want to get married, but we also want to stay single.",
-          "B": "By expecting a single relationship to satisfy all our needs, we have made the institution more fragile.",
-          "C": "Marriage is cheaper now, but fewer people can afford it.",
-          "D": "We believe love conquers all, but we only marry for money."
-        },
-        "correct_option_label": "B",
-        "explanation": "The paradox is that while we value marriage more for emotional fulfillment, the high expectations we place on it make it more susceptible to ending.",
-        "module": 2
+      "correct_option_label": "B",
+      "explanation": "The paradox is that while we value marriage more for emotional fulfillment, the high expectations we place on it make it more susceptible to ending.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_Q8",
+      "question_text": "How does power influence \"Sleep Inequities\" according to the text?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Powerful people never need to sleep.",
+        "B": "Everyone has equal access to high-quality sleep regardless of status.",
+        "C": "Power only matters for sleep in the military or prisons.",
+        "D": "The ability to control the timing and environment of sleep is unevenly distributed based on social status."
       },
-      {
-        "question_id": "M2_Q8",
-        "question_text": "How does power influence \"Sleep Inequities\" according to the text?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Powerful people never need to sleep.",
-          "B": "Everyone has equal access to high-quality sleep regardless of status.",
-          "C": "Power only matters for sleep in the military or prisons.",
-          "D": "The ability to control the timing and environment of sleep is unevenly distributed based on social status."
-        },
-        "correct_option_label": "D",
-        "explanation": "Sleep is not just biological; those with more social power have greater control over when and where they can rest undisturbed.",
-        "module": 2
+      "correct_option_label": "D",
+      "explanation": "Sleep is not just biological; those with more social power have greater control over when and where they can rest undisturbed.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_Q9",
+      "question_text": "Why does the \"Politics of Sleep\" raise the question of a \"right not to sleep\"?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Because everyone wants to be awake 24/7.",
+        "B": "Because sleep is no longer a biological requirement.",
+        "C": "Because advances in biomedicine (like Modafinil) could turn sleep into an optional commodity.",
+        "D": "Because the government wants to ban sleeping in public."
       },
-      {
-        "question_id": "M2_Q9",
-        "question_text": "Why does the \"Politics of Sleep\" raise the question of a \"right not to sleep\"?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Because everyone wants to be awake 24/7.",
-          "B": "Because sleep is no longer a biological requirement.",
-          "C": "Because advances in biomedicine (like Modafinil) could turn sleep into an optional commodity.",
-          "D": "Because the government wants to ban sleeping in public."
-        },
-        "correct_option_label": "C",
-        "explanation": "Advancements in medication could transform sleep from a biological necessity into a choice, potentially creating social pressure to stay awake.",
-        "module": 2
+      "correct_option_label": "C",
+      "explanation": "Advancements in medication could transform sleep from a biological necessity into a choice, potentially creating social pressure to stay awake.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_Q10",
+      "question_text": "What do Coontz’s history of marriage and Williams’ sociology of sleep have in common?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Both demonstrate that seemingly \"private\" behaviors are actually shaped by history, institutions, and social rules.",
+        "B": "Both prove that biology is more important than society.",
+        "C": "Both suggest that personal feelings are the only way to measure success.",
+        "D": "Both argue that modern Western ideals are the most successful in history."
       },
-      {
-        "question_id": "M2_Q10",
-        "question_text": "What do Coontz’s history of marriage and Williams’ sociology of sleep have in common?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Both demonstrate that seemingly \"private\" behaviors are actually shaped by history, institutions, and social rules.",
-          "B": "Both prove that biology is more important than society.",
-          "C": "Both suggest that personal feelings are the only way to measure success.",
-          "D": "Both argue that modern Western ideals are the most successful in history."
-        },
-        "correct_option_label": "A",
-        "explanation": "Both studies apply the sociological imagination to show that personal behaviors like sleeping or marrying are deeply embedded in social structures.",
-        "module": 2
+      "correct_option_label": "A",
+      "explanation": "Both studies apply the sociological imagination to show that personal behaviors like sleeping or marrying are deeply embedded in social structures.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_Q11",
+      "question_text": "According to Hobbes, when do justice and injustice begin to exist?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Only after a common power is established and laws are created.",
+        "B": "They are natural feelings born within every human heart.",
+        "C": "They exist as soon as two people meet each other.",
+        "D": "They are defined by the \"Golden Rule\" in the state of nature."
       },
-      {
-        "question_id": "M2_Q11",
-        "question_text": "According to Hobbes, when do justice and injustice begin to exist?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Only after a common power is established and laws are created.",
-          "B": "They are natural feelings born within every human heart.",
-          "C": "They exist as soon as two people meet each other.",
-          "D": "They are defined by the \"Golden Rule\" in the state of nature."
-        },
-        "correct_option_label": "A",
-        "explanation": "Hobbes argues that in the state of nature, nothing is unjust; justice and injustice are only possible once a civil society with laws is formed.",
-        "module": 2
+      "correct_option_label": "A",
+      "explanation": "Hobbes argues that in the state of nature, nothing is unjust; justice and injustice are only possible once a civil society with laws is formed.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_Q12",
+      "question_text": "How is the \"Sovereign\" or \"Leviathan\" created?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "By a group of people fighting until only one person is left alive.",
+        "B": "By God choosing a king and telling the people to obey.",
+        "C": "By every person agreeing to authorize and give up their right of governing themselves to one man or assembly.",
+        "D": "By the sovereign making a promise to the people to be fair."
       },
-      {
-        "question_id": "M2_Q12",
-        "question_text": "How is the \"Sovereign\" or \"Leviathan\" created?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "By a group of people fighting until only one person is left alive.",
-          "B": "By God choosing a king and telling the people to obey.",
-          "C": "By every person agreeing to authorize and give up their right of governing themselves to one man or assembly.",
-          "D": "By the sovereign making a promise to the people to be fair."
-        },
-        "correct_option_label": "C",
-        "explanation": "According to Hobbes, the Sovereign is created through a social contract where individuals surrender their rights to a central authority for collective security.",
-        "module": 2
+      "correct_option_label": "C",
+      "explanation": "According to Hobbes, the Sovereign is created through a social contract where individuals surrender their rights to a central authority for collective security.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_Q13",
+      "question_text": "What central irony does Marx identify regarding the worker in a modern capitalist system?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The worker becomes richer as they spend more time at the factory.",
+        "B": "The worker becomes more skilled as the value of their product decreases.",
+        "C": "The worker becomes a \"wretched commodity\" in inverse proportion to the power and magnitude of their production.",
+        "D": "The more machines are used, the more leisure time the worker enjoys."
       },
-      {
-        "question_id": "M2_Q13",
-        "question_text": "What central irony does Marx identify regarding the worker in a modern capitalist system?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "The worker becomes richer as they spend more time at the factory.",
-          "B": "The worker becomes more skilled as the value of their product decreases.",
-          "C": "The worker becomes a \"wretched commodity\" in inverse proportion to the power and magnitude of their production.",
-          "D": "The more machines are used, the more leisure time the worker enjoys."
-        },
-        "correct_option_label": "C",
-        "explanation": "The irony is that the more wealth and value a worker produces for the employer, the more expendable and impoverished the worker becomes as a 'commodity'.",
-        "module": 2
+      "correct_option_label": "C",
+      "explanation": "The irony is that the more wealth and value a worker produces for the employer, the more expendable and impoverished the worker becomes as a 'commodity'.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_Q14",
+      "question_text": "What is \"Objectification of Labour\" according to Marx?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "When labour becomes embodied in an object and stands against the producer as an \"alien power.\"",
+        "B": "When a worker uses an object to make their job easier.",
+        "C": "When a capitalist treats a worker like a physical object.",
+        "D": "When labor is replaced entirely by machines."
       },
-      {
-        "question_id": "M2_Q14",
-        "question_text": "What is \"Objectification of Labour\" according to Marx?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "When labour becomes embodied in an object and stands against the producer as an \"alien power.\"",
-          "B": "When a worker uses an object to make their job easier.",
-          "C": "When a capitalist treats a worker like a physical object.",
-          "D": "When labor is replaced entirely by machines."
-        },
-        "correct_option_label": "A",
-        "explanation": "Objectification occurs when the worker's effort is realized in a product that is then owned by the capitalist and used as a force against the worker.",
-        "module": 2
+      "correct_option_label": "A",
+      "explanation": "Objectification occurs when the worker's effort is realized in a product that is then owned by the capitalist and used as a force against the worker.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_Q15",
+      "question_text": "What does Smith mean by \"Universal Opulence\"?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A society where only the King and the rich have gold and silver.",
+        "B": "A state of abundance where even the poorest person benefits from the cooperation of thousands of specialized workers.",
+        "C": "A world where machines do all the work and humans never labor.",
+        "D": "A state where everyone has exactly the same amount of wealth."
       },
-      {
-        "question_id": "M2_Q15",
-        "question_text": "What does Smith mean by \"Universal Opulence\"?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "A society where only the King and the rich have gold and silver.",
-          "B": "A state of abundance where even the poorest person benefits from the cooperation of thousands of specialized workers.",
-          "C": "A world where machines do all the work and humans never labor.",
-          "D": "A state where everyone has exactly the same amount of wealth."
-        },
-        "correct_option_label": "B",
-        "explanation": "Universal opulence refers to a condition in a well-governed society where the division of labor leads to a level of productivity that benefits all members.",
-        "module": 2
+      "correct_option_label": "B",
+      "explanation": "Universal opulence refers to a condition in a well-governed society where the division of labor leads to a level of productivity that benefits all members.",
+      "module": 2
+    },
+    {
+      "question_id": "M3_Q1",
+      "question_text": "How did the societal response to the Dreyfus Affair reflect a transition in solidarity?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It was a religious battle between Jewish and non-Jewish groups that strengthened traditional beliefs.",
+        "B": "It was an attempt by a changing society to restore mechanical solidarity by punishing a designated \"other\".",
+        "C": "It was a purely military conflict intended to protect national secrets from German spies.",
+        "D": "It was an economic crisis caused by the specialized division of labor in industrial France."
       },
-      {
-        "question_id": "M3_Q1",
-        "question_text": "How did the societal response to the Dreyfus Affair reflect a transition in solidarity?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "It was a religious battle between Jewish and non-Jewish groups that strengthened traditional beliefs.",
-          "B": "It was an attempt by a changing society to restore mechanical solidarity by punishing a designated \"other\".",
-          "C": "It was a purely military conflict intended to protect national secrets from German spies.",
-          "D": "It was an economic crisis caused by the specialized division of labor in industrial France."
-        },
-        "correct_option_label": "B",
-        "explanation": "The scapegoating of Dreyfus was a social reaction intended to reinforce collective unity (mechanical solidarity) by creating a common enemy.",
-        "module": 3
+      "correct_option_label": "B",
+      "explanation": "The scapegoating of Dreyfus was a social reaction intended to reinforce collective unity (mechanical solidarity) by creating a common enemy.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q2",
+      "question_text": "How is the invention of \"witches\" as common enemies explained?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "As a rational response to the actual presence of voodoo in the village.",
+        "B": "As a strategic move by the King of England to regain control over the land.",
+        "C": "As a desperate way for a disintegrating community to find an outlet and restore a sense of group identity.",
+        "D": "As a modern form of organic solidarity based on judicial evidence."
       },
-      {
-        "question_id": "M3_Q2",
-        "question_text": "How is the invention of \"witches\" as common enemies explained?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "As a rational response to the actual presence of voodoo in the village.",
-          "B": "As a strategic move by the King of England to regain control over the land.",
-          "C": "As a desperate way for a disintegrating community to find an outlet and restore a sense of group identity.",
-          "D": "As a modern form of organic solidarity based on judicial evidence."
-        },
-        "correct_option_label": "C",
-        "explanation": "Creating 'witches' as enemies served as a mechanism for a fractured community to reaffirm its boundaries and collective values.",
-        "module": 3
+      "correct_option_label": "C",
+      "explanation": "Creating 'witches' as enemies served as a mechanism for a fractured community to reaffirm its boundaries and collective values.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q3",
+      "question_text": "Why did the Salem community experience \"structural disintegration\" leading up to the trials?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Their original religious mission and group feeling had deteriorated as the colony prospered.",
+        "B": "Massive crop failures led to widespread starvation and anomie.",
+        "C": "The Native Americans successfully dismantled the settlers' social hierarchy.",
+        "D": "The \"Half Covenant\" completely banned the younger generation from the church."
       },
-      {
-        "question_id": "M3_Q3",
-        "question_text": "Why did the Salem community experience \"structural disintegration\" leading up to the trials?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Their original religious mission and group feeling had deteriorated as the colony prospered.",
-          "B": "Massive crop failures led to widespread starvation and anomie.",
-          "C": "The Native Americans successfully dismantled the settlers' social hierarchy.",
-          "D": "The \"Half Covenant\" completely banned the younger generation from the church."
-        },
-        "correct_option_label": "A",
-        "explanation": "Structural disintegration occurred as the growth of the colony led to increased individualism and the weakening of the shared religious vision.",
-        "module": 3
+      "correct_option_label": "A",
+      "explanation": "Structural disintegration occurred as the growth of the colony led to increased individualism and the weakening of the shared religious vision.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q4",
+      "question_text": "Durkheim uses the analogy of a \"living organism\" to describe:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Mechanical solidarity.",
+        "B": "A rock with identical atoms.",
+        "C": "Organic solidarity.",
+        "D": "A tribe where everyone farms and raises chickens."
       },
-      {
-        "question_id": "M3_Q4",
-        "question_text": "Durkheim uses the analogy of a \"living organism\" to describe:",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Mechanical solidarity.",
-          "B": "A rock with identical atoms.",
-          "C": "Organic solidarity.",
-          "D": "A tribe where everyone farms and raises chickens."
-        },
-        "correct_option_label": "C",
-        "explanation": "Organic solidarity is like an organism because individuals are highly specialized and interdependent for the survival of the whole social body.",
-        "module": 3
+      "correct_option_label": "C",
+      "explanation": "Organic solidarity is like an organism because individuals are highly specialized and interdependent for the survival of the whole social body.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q5",
+      "question_text": "Why is criminal law more prevalent in societies with mechanical solidarity?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Because there is no need for rules in small villages.",
+        "B": "Because these societies have a highly developed civil court system.",
+        "C": "Because individuals have too much personality and free will.",
+        "D": "Because crimes in these societies are seen as a direct offense to the strong collective consciousness."
       },
-      {
-        "question_id": "M3_Q5",
-        "question_text": "Why is criminal law more prevalent in societies with mechanical solidarity?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Because there is no need for rules in small villages.",
-          "B": "Because these societies have a highly developed civil court system.",
-          "C": "Because individuals have too much personality and free will.",
-          "D": "Because crimes in these societies are seen as a direct offense to the strong collective consciousness."
-        },
-        "correct_option_label": "D",
-        "explanation": "In mechanical solidarity, crime is viewed as a direct violation of the shared moral code that holds the group together.",
-        "module": 3
+      "correct_option_label": "D",
+      "explanation": "In mechanical solidarity, crime is viewed as a direct violation of the shared moral code that holds the group together.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q6",
+      "question_text": "How is \"Anomie\" defined in the context of social change?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A state of over-regulation where people feel helpless.",
+        "B": "A state of normlessness occurring when rapid change outpaces the formation of new rules.",
+        "C": "A perfect balance between individual and group interests.",
+        "D": "The excessive identification with a group, like a kamikaze pilot."
       },
-      {
-        "question_id": "M3_Q6",
-        "question_text": "How is \"Anomie\" defined in the context of social change?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "A state of over-regulation where people feel helpless.",
-          "B": "A state of normlessness occurring when rapid change outpaces the formation of new rules.",
-          "C": "A perfect balance between individual and group interests.",
-          "D": "The excessive identification with a group, like a kamikaze pilot."
-        },
-        "correct_option_label": "B",
-        "explanation": "Anomie is a condition of breakdown in social norms, often happening during rapid transitions when old rules no longer provide guidance.",
-        "module": 3
+      "correct_option_label": "B",
+      "explanation": "Anomie is a condition of breakdown in social norms, often happening during rapid transitions when old rules no longer provide guidance.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q7",
+      "question_text": "What occurs when there is \"weak integration\" in a society, according to Hornsby’s grid?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Altruism.",
+        "B": "Anomie.",
+        "C": "Egoism.",
+        "D": "Fatalism."
       },
-      {
-        "question_id": "M3_Q7",
-        "question_text": "What occurs when there is \"weak integration\" in a society, according to Hornsby’s grid?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Altruism.",
-          "B": "Anomie.",
-          "C": "Egoism.",
-          "D": "Fatalism."
-        },
-        "correct_option_label": "C",
-        "explanation": "Weak integration leads to egoism, where individuals feel less connected to society and prioritize their own interests.",
-        "module": 3
+      "correct_option_label": "C",
+      "explanation": "Weak integration leads to egoism, where individuals feel less connected to society and prioritize their own interests.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q8",
+      "question_text": "Why was Alfred Dreyfus targeted, according to the documents?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "He was caught selling secrets to the British King.",
+        "B": "He was a Jewish minority, making him an easy \"other\" to blame for societal problems.",
+        "C": "He refused to participate in collective effervescence.",
+        "D": "He was a proponent of mechanical solidarity."
       },
-      {
-        "question_id": "M3_Q8",
-        "question_text": "Why was Alfred Dreyfus targeted, according to the documents?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "He was caught selling secrets to the British King.",
-          "B": "He was a Jewish minority, making him an easy \"other\" to blame for societal problems.",
-          "C": "He refused to participate in collective effervescence.",
-          "D": "He was a proponent of mechanical solidarity."
-        },
-        "correct_option_label": "B",
-        "explanation": "Dreyfus's minority status made him a convenient scapegoat for a French society seeking internal unity against a perceived 'other'.",
-        "module": 3
+      "correct_option_label": "B",
+      "explanation": "Dreyfus's minority status made him a convenient scapegoat for a French society seeking internal unity against a perceived 'other'.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q9",
+      "question_text": "What does the \"Half Covenant\" in Salem history reveal about the church's strategy?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "They wanted to execute half of the village as witches.",
+        "B": "They wanted to move the colony back to England.",
+        "C": "They were establishing a new form of organic solidarity through religion.",
+        "D": "They were trying to attract younger members by relaxing membership rules in a changing world."
       },
-      {
-        "question_id": "M3_Q9",
-        "question_text": "What does the \"Half Covenant\" in Salem history reveal about the church's strategy?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "They wanted to execute half of the village as witches.",
-          "B": "They wanted to move the colony back to England.",
-          "C": "They were establishing a new form of organic solidarity through religion.",
-          "D": "They were trying to attract younger members by relaxing membership rules in a changing world."
-        },
-        "correct_option_label": "D",
-        "explanation": "The 'Half Covenant' was an institutional adjustment meant to preserve the church's influence by making membership easier for newer generations.",
-        "module": 3
+      "correct_option_label": "D",
+      "explanation": "The 'Half Covenant' was an institutional adjustment meant to preserve the church's influence by making membership easier for newer generations.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q10",
+      "question_text": "What caused the \"tide to turn\" and the Salem trials to end?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Tituba confessed and said she acted alone.",
+        "B": "The girls were caught faking their symptoms in a forest.",
+        "C": "Accusations reached elite members of society, including the governor's wife.",
+        "D": "The Native Americans and settlers signed a peace treaty."
       },
-      {
-        "question_id": "M3_Q10",
-        "question_text": "What caused the \"tide to turn\" and the Salem trials to end?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Tituba confessed and said she acted alone.",
-          "B": "The girls were caught faking their symptoms in a forest.",
-          "C": "Accusations reached elite members of society, including the governor's wife.",
-          "D": "The Native Americans and settlers signed a peace treaty."
-        },
-        "correct_option_label": "C",
-        "explanation": "The trials halted when the legal system's accusations began targeting people with significant social power, making the process unsustainable.",
-        "module": 3
+      "correct_option_label": "C",
+      "explanation": "The trials halted when the legal system's accusations began targeting people with significant social power, making the process unsustainable.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q11",
+      "question_text": "According to Anne Hornsby, online communities develop solidarity by using:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Only informal gossip.",
+        "B": "Punitive death sentences for breaking rules.",
+        "C": "Both regulation (rules/enforcement) and integration (rituals/meetings).",
+        "D": "A strategy of total anonymity where no one ever knows anyone else."
       },
-      {
-        "question_id": "M3_Q11",
-        "question_text": "According to Anne Hornsby, online communities develop solidarity by using:",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Only informal gossip.",
-          "B": "Punitive death sentences for breaking rules.",
-          "C": "Both regulation (rules/enforcement) and integration (rituals/meetings).",
-          "D": "A strategy of total anonymity where no one ever knows anyone else."
-        },
-        "correct_option_label": "C",
-        "explanation": "Digital solidarity requires both a framework of rules to prevent chaos and social rituals to create a sense of belonging.",
-        "module": 3
+      "correct_option_label": "C",
+      "explanation": "Digital solidarity requires both a framework of rules to prevent chaos and social rituals to create a sense of belonging.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q12",
+      "question_text": "Why is \"group fizz\" important even in organic solidarity (modern) societies?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is necessary for solidarity to be preserved and felt by individuals.",
+        "B": "It is no longer important and has disappeared.",
+        "C": "It allows people to avoid paying taxes.",
+        "D": "It helps people find better-specialized jobs."
       },
-      {
-        "question_id": "M3_Q12",
-        "question_text": "Why is \"group fizz\" important even in organic solidarity (modern) societies?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "It is necessary for solidarity to be preserved and felt by individuals.",
-          "B": "It is no longer important and has disappeared.",
-          "C": "It allows people to avoid paying taxes.",
-          "D": "It helps people find better-specialized jobs."
-        },
-        "correct_option_label": "A",
-        "explanation": "Group fizz (collective effervescence) provides the emotional energy needed for individuals to feel connected to the larger social structure.",
-        "module": 3
+      "correct_option_label": "A",
+      "explanation": "Group fizz (collective effervescence) provides the emotional energy needed for individuals to feel connected to the larger social structure.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q13",
+      "question_text": "Why does Durkheim argue that the transition to organic solidarity is \"not automatic\"?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Because people are naturally too lazy to specialize.",
+        "B": "Because the King of England usually blocks it with a charter.",
+        "C": "Because it requires sufficient time for new laws and norms to form to regulate the new structure.",
+        "D": "Because mechanical solidarity is always more efficient."
       },
-      {
-        "question_id": "M3_Q13",
-        "question_text": "Why does Durkheim argue that the transition to organic solidarity is \"not automatic\"?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Because people are naturally too lazy to specialize.",
-          "B": "Because the King of England usually blocks it with a charter.",
-          "C": "Because it requires sufficient time for new laws and norms to form to regulate the new structure.",
-          "D": "Because mechanical solidarity is always more efficient."
-        },
-        "correct_option_label": "C",
-        "explanation": "Transitions between types of solidarity can be unstable because it takes time for social regulations to catch up with economic changes.",
-        "module": 3
+      "correct_option_label": "C",
+      "explanation": "Transitions between types of solidarity can be unstable because it takes time for social regulations to catch up with economic changes.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q14",
+      "question_text": "What is \"collective effervescence\" (group fizz)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A rationalistic principle of evidence.",
+        "B": "An intense shared emotion that makes individuals feel part of a greater whole.",
+        "C": "A pathological state caused by weak integration.",
+        "D": "The specialized training of a doctor."
       },
-      {
-        "question_id": "M3_Q14",
-        "question_text": "What is \"collective effervescence\" (group fizz)?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "A rationalistic principle of evidence.",
-          "B": "An intense shared emotion that makes individuals feel part of a greater whole.",
-          "C": "A pathological state caused by weak integration.",
-          "D": "The specialized training of a doctor."
-        },
-        "correct_option_label": "B",
-        "explanation": "It refers to the communal excitement and shared focus that occurs during group rituals, unifying participants into a single social unit.",
-        "module": 3
+      "correct_option_label": "B",
+      "explanation": "It refers to the communal excitement and shared focus that occurs during group rituals, unifying participants into a single social unit.",
+      "module": 3
+    },
+    {
+      "question_id": "M3_Q15",
+      "question_text": "What is the fundamental difference between mechanical and organic solidarity?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Mechanical is based on religious similarity; organic is based on interdependence and difference.",
+        "B": "Mechanical is based on specialized roles; organic is based on similarity.",
+        "C": "Mechanical is found in modern cities; organic is found in small tribal villages.",
+        "D": "Mechanical relies on civil law; organic relies on repressive law."
       },
-      {
-        "question_id": "M3_Q15",
-        "question_text": "What is the fundamental difference between mechanical and organic solidarity?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Mechanical is based on religious similarity; organic is based on interdependence and difference.",
-          "B": "Mechanical is based on specialized roles; organic is based on similarity.",
-          "C": "Mechanical is found in modern cities; organic is found in small tribal villages.",
-          "D": "Mechanical relies on civil law; organic relies on repressive law."
-        },
-        "correct_option_label": "A",
-        "explanation": "Mechanical solidarity is rooted in shared beliefs and likeness, while organic solidarity relies on specialized roles and mutual dependency.",
-        "module": 3
-      }
-    ]
-  }
+      "correct_option_label": "A",
+      "explanation": "Mechanical solidarity is rooted in shared beliefs and likeness, while organic solidarity relies on specialized roles and mutual dependency.",
+      "module": 3
+    },
+    {
+      "question_id": "Question 1",
+      "question_text": "Why is it insufficient to focus only on economic capital when studying power in society?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is too difficult to measure compared to cultural capital, which is more visible.",
+        "B": "Economic capital cannot be converted into any other form of capital.",
+        "C": "It fails to explain how accumulated advantage and power are reproduced within society.",
+        "D": "Most people in modern society have equal amounts of economic capital."
+      },
+      "correct_option_label": "C",
+      "explanation": "Focusing solely on economic capital overlooks how cultural and social assets facilitate the reproduction of class privilege and status over time. Bourdieu argues that these symbolic forms of capital are essential for maintaining long-term social dominance.",
+      "module": 4
+    },
+    {
+      "question_id": "Question 2",
+      "question_text": "Bourdieu notes that converting economic capital into cultural capital requires \"misrecognition.\" What does this mean?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The conversion must appear as a crude, direct financial exchange to be valid.",
+        "B": "People must pretend they do not have any economic capital at all.",
+        "C": "Institutions must refuse to recognize that a student paid for their education.",
+        "D": "The acquired culture must appear as an innate talent or personality trait rather than a result of social background."
+      },
+      "correct_option_label": "D",
+      "explanation": "Misrecognition occurs when the social and economic origins of cultural capital are hidden, making learned behaviors appear as natural, innate qualities. This process legitimizes inequality by framing class-based advantages as individual merit.",
+      "module": 4
+    },
+    {
+      "question_id": "Question 3",
+      "question_text": "Erving Goffman’s concept of \"Dramaturgy\" suggests that society is primarily composed of:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A series of enacted dramas where individuals play roles following implicit scripts.",
+        "B": "Rational actors making choices solely based on economic gain.",
+        "C": "Biologically determined behaviors that cannot be changed.",
+        "D": "A fixed structure that individuals have no power to influence."
+      },
+      "correct_option_label": "A",
+      "explanation": "Goffman's dramaturgical perspective views social interaction as a theatrical performance where individuals manage their impressions. People act out roles guided by cultural scripts to maintain a consistent social identity for their audience.",
+      "module": 4
+    },
+    {
+      "question_id": "Question 4",
+      "question_text": "Which defensive practice involves performers suppressing spontaneous feelings to maintain a professional front?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Dramaturgical loyalty.",
+        "B": "Dramaturgical circumspection.",
+        "C": "Dramaturgical discipline.",
+        "D": "Audience tact."
+      },
+      "correct_option_label": "C",
+      "explanation": "Dramaturgical discipline involves the performer's ability to exercise self-control and suppress internal emotions that might conflict with the role being performed. This ensures the 'front' remains convincing and prevents performance disruptions.",
+      "module": 4
+    },
+    {
+      "question_id": "Question 5",
+      "question_text": "A CEO using private elevators and receptionists to prevent subordinates from approaching is an example of:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Dramaturgical circumspection.",
+        "B": "Polite blindness.",
+        "C": "Dramaturgical loyalty.",
+        "D": "A performance breakdown."
+      },
+      "correct_option_label": "A",
+      "explanation": "Dramaturgical circumspection refers to the careful planning and management of the environment to avoid embarrassing or revealing situations. By controlling access, the CEO maintains a professional distance and avoids unplanned interactions that could damage their image.",
+      "module": 4
+    },
+    {
+      "question_id": "Question 6",
+      "question_text": "In the context of Giddens' \"Structuration\" theory, how does society change?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Through the constant interaction between external structures and individual agency.",
+        "B": "Changes occur only when government laws are rewritten.",
+        "C": "Societal structures are fixed and cannot be changed by individuals.",
+        "D": "Change is purely random and cannot be explained theoretically."
+      },
+      "correct_option_label": "A",
+      "explanation": "Structuration theory argues that social structure and human agency are not separate entities but are mutually dependent. Society changes as individuals use their agency to reproduce or modify social structures through their everyday activities.",
+      "module": 4
+    },
+    {
+      "question_id": "Question 7",
+      "question_text": "According to Bourdieu, why is the study of \"economic capital\" alone insufficient to explain social power?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is the most hidden form of transmission in modern society.",
+        "B": "It fails to account for how accumulated advantage and power are reproduced through other means.",
+        "C": "Economic capital cannot be converted into any other form of capital.",
+        "D": "It is only relevant in \"equal opportunity\" games like dice or cards."
+      },
+      "correct_option_label": "B",
+      "explanation": "Bourdieu posits that social power is also transmitted through cultural and social capital, which helps preserve inequality across generations. Analyzing only wealth ignores the symbolic mechanisms that legitimize status and exclude others from power.",
+      "module": 4
+    },
+    {
+      "question_id": "Question 8",
+      "question_text": "What does Bourdieu argue is the effect of \"institutionalized cultural capital,\" such as an elite university degree?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It makes the individual's capital instantly convertible into cash without loss.",
+        "B": "It allows an individual to skip the process of accumulating embodied capital.",
+        "C": "It eliminates the need for social capital in the job market.",
+        "D": "It creates an official guarantee of value and merit, setting sharp boundaries between successful and unsuccessful candidates."
+      },
+      "correct_option_label": "D",
+      "explanation": "Institutionalized cultural capital, like academic credentials, provides an official, state-sanctioned recognition of a person's cultural competence. This creates a clear distinction between the 'qualified' and the 'unqualified,' legitimizing social hierarchy.",
+      "module": 4
+    },
+    {
+      "question_id": "Question 9",
+      "question_text": "How is \"social capital\" defined in Bourdieu's framework?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The total amount of money a person has in their bank account.",
+        "B": "The inherited genetic traits that make a person popular.",
+        "C": "Resources linked to a durable network of institutionalized relationships or group membership.",
+        "D": "The ability to speak multiple languages fluently."
+      },
+      "correct_option_label": "C",
+      "explanation": "Social capital refers to the actual or potential resources derived from belonging to a social network or group. These connections provide individuals with benefits and access to other forms of capital based on mutual recognition and membership.",
+      "module": 4
+    },
+    {
+      "question_id": "Question 10",
+      "question_text": "Why must the conversion of economic capital into cultural or social capital involve \"misrecognition\"?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "So that the transition does not appear as a crude, direct economic exchange.",
+        "B": "Because the law prohibits the direct purchase of social status.",
+        "C": "To ensure that the individual forgets how much money they originally spent.",
+        "D": "Because cultural capital has no actual value in the labor market."
+      },
+      "correct_option_label": "A",
+      "explanation": "For capital to gain symbolic power, its origin in economic wealth must be obscured or 'misrecognized' as natural merit. This ensures the transition into social or cultural status appears legitimate rather than as a transactional purchase.",
+      "module": 4
+    },
+    {
+      "question_id": "Question 11",
+      "question_text": "Erving Goffman’s \"Dramaturgy\" uses what primary analogy to understand social interaction?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A biological organism where every part has a specific function.",
+        "B": "A marketplace where individuals trade services for the best price.",
+        "C": "A battlefield where individuals compete for limited resources.",
+        "D": "A stage or theatrical performance where individuals play roles following implicit scripts."
+      },
+      "correct_option_label": "D",
+      "explanation": "Goffman's analogy compares social life to a theater where people are actors performing on a stage. Individuals use scenery and scripts to manage the impressions others form of them during social encounters.",
+      "module": 4
+    },
+    {
+      "question_id": "Question 12",
+      "question_text": "According to Goffman, why do individuals focus so much on \"performance disruptions\" or scenes?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Because they are the most common form of social interaction.",
+        "B": "Because disruptions reveal that social reality is fragile and requires constant maintenance.",
+        "C": "Because performers enjoy being embarrassed in front of an audience.",
+        "D": "To prove that the audience is not actually paying attention."
+      },
+      "correct_option_label": "B",
+      "explanation": "Disruptions or 'scenes' are significant because they shatter the established social reality and expose the underlying effort required to maintain it. They demonstrate that social order is a fragile construction that requires continuous impression management.",
+      "module": 4
+    },
+    {
+      "question_id": "Question 13",
+      "question_text": "What is dramaturgical discipline as a defensive practice?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Being loyal to your teammates and never badmouthing the product.",
+        "B": "Controlling the physical setting to hide the chaos in the kitchen.",
+        "C": "The capacity of the performer to remain poised, functional, and emotionally detached (affective dissociation).",
+        "D": "Choosing an audience that is unlikely to ask difficult questions."
+      },
+      "correct_option_label": "C",
+      "explanation": "Dramaturgical discipline refers to the actor's internal control to remain focused and composed regardless of unexpected events. It involves an emotional detachment that allows the performer to continue their role flawlessly even under pressure.",
+      "module": 4
+    },
+    {
+      "question_id": "Question 14",
+      "question_text": "What is the concept of \"tact regarding tact\"?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The audience ignores a performer's mistake to save the show.",
+        "B": "The performer ensures they act in a way that allows the audience to continue their protective efforts.",
+        "C": "A team of performers practicing their lines together.",
+        "D": "The audience revolting against a performer by throwing objects."
+      },
+      "correct_option_label": "B",
+      "explanation": "Tact regarding tact is a cooperative strategy where the performer assists the audience in overlooking their mistakes. It involves the performer providing the audience with the cues or behaviors necessary to maintain the face-saving 'tact' that preserves the performance.",
+      "module": 4
+    },
+    {
+      "question_id": "Question 15",
+      "question_text": "Which form of cultural capital refers to internalized dispositions, such as one's accent and body language?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Objectified state.",
+        "B": "Embodied state.",
+        "C": "Institutionalized state.",
+        "D": "Economic state."
+      },
+      "correct_option_label": "B",
+      "explanation": "Embodied cultural capital consists of properties and dispositions that are internalized within the individual's mind and body. Examples include one's speech patterns, manners, and habitual physical movements that reflect their social class.",
+      "module": 4
+    }
+  ]
+}

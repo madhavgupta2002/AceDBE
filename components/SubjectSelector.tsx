@@ -24,7 +24,7 @@ const AVAILABLE_TERMS = [1, 4]; // Define available terms
 
 const SubjectSelector: React.FC = () => {
   const router = useRouter();
-  const [selectedTerm, setSelectedTerm] = useState<number>(1);
+  const [selectedTerm, setSelectedTerm] = useState<number>(4);
 
   // Load saved term on mount
   React.useEffect(() => {
