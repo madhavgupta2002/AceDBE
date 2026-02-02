@@ -297,6 +297,76 @@
       "correct_option_label": "B",
       "explanation": "\"Market Development\" is the strategic move depicted by the ? in the diagram.",
       "module": 6
+    },
+    {
+      "question_id": "Practice_7_U01",
+      "question_text": "Which of the following is NOT an example of a B2B relationship?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Tata Motors purchasing steel from Tata Steel",
+        "B": "A hospital procuring MRI machines from Siemens",
+        "C": "A retail customer buying a smartphone from a showroom",
+        "D": "An airline leasing aircraft from Boeing"
+      },
+      "correct_option_label": "C",
+      "explanation": "A retail customer buying for personal use represents a Business-to-Consumer (B2C) transaction, whereas the others involve transactions between two business entities.",
+      "module": 7
+    },
+    {
+      "question_id": "Practice_7_U02",
+      "question_text": "A buyer invites multiple suppliers to bid for the same component every year and selects the lowest-cost option with limited concern for long-term relationships. Which purchasing strategy does this represent?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Keiretsu purchasing",
+        "B": "Value-based purchasing",
+        "C": "Adversarial purchasing",
+        "D": "Relationship marketing"
+      },
+      "correct_option_label": "C",
+      "explanation": "Adversarial purchasing is characterized by short-term, price-focused competition where the buyer uses multiple sources to drive prices down.",
+      "module": 7
+    },
+    {
+      "question_id": "Practice_7_U03",
+      "question_text": "A manufacturing company evaluates a new machine. Annual productivity benefit = ₹1,20,000. Maintenance and operating costs = ₹70,000. Question: What is the Value of the offering?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹1,90,000",
+        "B": "₹50,000",
+        "C": "₹70,000",
+        "D": "None of the above"
+      },
+      "correct_option_label": "B",
+      "explanation": "Value in a B2B context is the net benefit, calculated by subtracting the costs of using the product (₹70,000) from the productivity benefits (₹1,20,000).",
+      "module": 7
+    },
+    {
+      "question_id": "Practice_7_U04",
+      "question_text": "In the Brand Value Chain diagram (Marketing program investment -> X -> Customer mindset -> Customer multiplier -> Y -> Market multiplier -> Shareholder value), what are X and Y?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Y = market share; X = promotional intensity",
+        "B": "Y = brand performance; X = program multiplier",
+        "C": "Y = brand awareness; X = program effectiveness",
+        "D": "Y = customer loyalty; X = channel multiplier"
+      },
+      "correct_option_label": "B",
+      "explanation": "According to Keller's Brand Value Chain, the Program Multiplier (X) links investment to mindset, and Brand Performance (Y) results from the customer mindset.",
+      "module": 7
+    },
+    {
+      "question_id": "Practice_7_U05",
+      "question_text": "A B2B software firm supplies CRM solutions: Client A has periodic purchases/basic support; Client B has customized pricing/dedicated managers; Client C jointly plans roadmaps/integrates systems. Classify these into relationship levels:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A: Transactional; B: Interaction-based; C: Collaborative",
+        "B": "A: Interaction-based; B: Transactional; C: Strategic",
+        "C": "A: Basic; B: Collaborative; C: Interaction-based",
+        "D": "A: Strategic; B: Interaction-based; C: Transactional"
+      },
+      "correct_option_label": "A",
+      "explanation": "Relationships evolve from Transactional (discrete purchases) to Interaction-based (coordinated support) and finally Collaborative (joint value creation).",
+      "module": 7
     }
   ]
 }
