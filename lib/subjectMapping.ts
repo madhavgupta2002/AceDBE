@@ -50,6 +50,13 @@ export const SUBJECTS: Subject[] = [
     description: 'For Batch 1 with 8 Modules',
     term: 1
   },
+  // Term 2 Subjects
+  {
+    code: 'ES21x',
+    name: 'Principles of Microeconomics',
+    description: '',
+    term: 2
+  },
 
   // Term 4 Subjects
   {

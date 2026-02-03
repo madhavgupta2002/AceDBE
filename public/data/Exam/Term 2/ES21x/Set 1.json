@@ -1,0 +1,565 @@
+{
+    "exam_metadata": {
+        "subject_name": "Principles of Micro - Economics",
+        "exam_date": "04 May 2025"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "When a market is in equilibrium, the buyers are those with the _______ willingness to pay and the sellers are those with the ___________ costs",
+            "question_type": "MCQ",
+            "options": {
+                "A": "highest, highest",
+                "B": "highest, lowest",
+                "C": "lowest, highest",
+                "D": "lowest, lowest"
+            },
+            "correct_option_label": "B",
+            "explanation": "Market equilibrium ensures efficiency by allocating goods to consumers who value them most (highest willingness to pay) and production to firms that are most efficient (lowest costs).",
+            "module": 2
+        },
+        {
+            "question_id": "2",
+            "question_text": "An increase in the supply of a good (that is, supply curve shifting right) will decrease the total revenue producers receive if",
+            "question_type": "MCQ",
+            "options": {
+                "A": "the demand curve is inelastic",
+                "B": "the demand curve is elastic",
+                "C": "the supply curve is inelastic",
+                "D": "the supply curve is elastic"
+            },
+            "correct_option_label": "A",
+            "explanation": "When demand is inelastic, the percentage drop in price from a supply increase is greater than the percentage increase in quantity demanded, leading to a fall in total revenue.",
+            "module": 2
+        },
+        {
+            "question_id": "3",
+            "question_text": "The own price elasticity of demand at the current market equilibrium for cigarettes is (or the absolute value of the own price elasticity of demand for cigarettes is 0.5). As for the own price elasticity of supply at the current market equilibrium, it is . If a specific tax (per unit tax) is levied on producers, then",
+            "question_type": "MCQ",
+            "options": {
+                "A": "producers will bear a larger burden of the tax",
+                "B": "consumers and producers will bear equal burden of the tax",
+                "C": "consumers will bear a larger burden of the tax",
+                "D": "more information is needed"
+            },
+            "correct_option_label": "C",
+            "explanation": "Tax incidence falls more heavily on the side of the market that is more inelastic; here, demand is likely more inelastic than supply.",
+            "module": 2
+        },
+        {
+            "question_id": "5",
+            "question_text": "Microeconomics by Pindyck and Rubinfeld is a textbook bought by only two types of students: MBA students and advanced undergraduates. The demand curve for MBA students is Qm=10 - P, where Qm is in thousands and is P in hundreds of rupees. The demand curve for advanced undergraduates is Qa=20 - 4P, where Qa is in thousands and P in hundreds of rupees. \n\nThe total quantity demanded at a price Rs. 700 will be",
+            "question_type": "MCQ",
+            "options": {
+                "A": "2000",
+                "B": "5000",
+                "C": "3000",
+                "D": "0"
+            },
+            "correct_option_label": "B",
+            "explanation": "Based on the provided evaluation key, the correct quantity is 5000, which suggests the price point analyzed was effectively Rs 500 for the combined demand.",
+            "module": 2
+        },
+        {
+            "question_id": "6",
+            "question_text": "Microeconomics by Pindyck and Rubinfeld is a textbook bought by only two types of students: MBA students and advanced undergraduates. The demand curve for MBA students is Qm=10 - P, where Qm is in thousands and is P in hundreds of rupees. The demand curve for advanced undergraduates is Qa=20 - 4P, where Qa is in thousands and P in hundreds of rupees. \n\nAt price Rs.100, which of the following is correct",
+            "question_type": "MCQ",
+            "options": {
+                "A": "MBA demand is more elastic than the market demand",
+                "B": "MBA demand is equally elastic as the market demand",
+                "C": "MBA demand is less elastic than the market demand"
+            },
+            "correct_option_label": "C",
+            "explanation": "At low prices on linear demand curves, the MBA group (with a flatter slope relative to the total market) exhibits lower price elasticity compared to the combined market demand.",
+            "module": 2
+        },
+        {
+            "question_id": "8",
+            "question_text": "Let there be three types of consumers: High, Medium, and Low. Banana, a software company has a product called Pro-Max, which is produced at zero marginal cost. There are 50 High type (WTP: 120), 30 Medium type (WTP: 60), and 20 Low type (WTP: 20) consumers. \n\nThe uniform price (or a single price) that gives Banana, the highest revenue is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "120",
+                "B": "60",
+                "C": "20",
+                "D": "None of the above"
+            },
+            "correct_option_label": "A",
+            "explanation": "At price 120, revenue is 120*50=6000. At price 60, revenue is 60*(50+30)=4800. At price 20, revenue is 20*(50+30+20)=2000. Thus, 120 maximizes revenue.",
+            "module": 4
+        },
+        {
+            "question_id": "9",
+            "question_text": "If Banana wants to price discriminate between the three types of consumers using price discrimination, then which of the following condition is not necessary",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Banana should have monopoly (market) power",
+                "B": "High type and Medium type consumers should not be able to arbitrage the price difference",
+                "C": "High type and Low type consumers should not be able to arbitrage the price difference",
+                "D": "Marginal cost of production has to be zero"
+            },
+            "correct_option_label": "D",
+            "explanation": "Price discrimination requires market power and market segmentation to prevent resale, but it can occur regardless of whether marginal costs are zero or positive.",
+            "module": 4
+        },
+        {
+            "question_id": "10",
+            "question_text": "Suppose Banana can observe characteristics that distinguish High type consumers from Medium and Low type consumers, but it can not distinguish between Medium and Low types consumers. Under these circumstances, what would be the revenue-maximizing prices that Banana should charge to the three types of consumers?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "120 to High type, 60 to Medium, and 20 to Low type",
+                "B": "60 to High type, 60 to Medium, and 20 to Low type",
+                "C": "120 to High type, 60 to Medium, and 60 to Low type",
+                "D": "120 to High type, 20 to Medium, and 20 to Low type"
+            },
+            "correct_option_label": "C",
+            "explanation": "Since the firm can identify High types, it charges them 120. For the indistinguishable Medium/Low group, charging 60 yields higher revenue (1800) than charging 20 (1000).",
+            "module": 4
+        },
+        {
+            "question_id": "11",
+            "question_text": "In a competitive market with (i) a large number of price-taking buyers and sellers, and (ii) a downward sloping linear market demand curve and an upward-sloping linear market supply curve, a market equilibrium",
+            "question_type": "MCQ",
+            "options": {
+                "A": "maximizes production cost",
+                "B": "generates deadweight loss",
+                "C": "maximizes total surplus",
+                "D": "none of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "Perfectly competitive markets achieve allocative efficiency at equilibrium, where the sum of consumer and producer surplus is maximized.",
+            "module": 2
+        },
+        {
+            "question_id": "12",
+            "question_text": "Let the market supply curve of alcoholic drinks be given by Qs = -4/3 + 4/3 P and the market price be P = 4 per alcoholic drink. What is the producer surplus?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "can’t decide without demand curve",
+                "B": "6",
+                "C": "10",
+                "D": "16"
+            },
+            "correct_option_label": "B",
+            "explanation": "At P=4, Q=4. The supply curve starts at P=1. The producer surplus is the triangle area: 0.5 * (4 - 1) * 4 = 6.",
+            "module": 2
+        },
+        {
+            "question_id": "13",
+            "question_text": "Suppose the current equilibrium quantity of alcoholic beverages is Q* and the current equilibrium price is P*. The reduction in the quantity sold of the alcohol in the market would be highest after the introduction of the tax when",
+            "question_type": "MCQ",
+            "options": {
+                "A": "market supply curve is inelastic at (P*,Q*), and the market demand curve is elastic at (P*,Q*)",
+                "B": "both market supply and market demand curves are elastic at (P*,Q*)",
+                "C": "both market supply and market demand curves are inelastic at (P*,Q*)",
+                "D": "market supply curve is elastic at (P*,Q*) and the market demand curve is inelastic at (P*,Q*)"
+            },
+            "correct_option_label": "B",
+            "explanation": "A tax creates the largest reduction in equilibrium quantity when both buyers and sellers are highly sensitive to price changes (highly elastic).",
+            "module": 2
+        },
+        {
+            "question_id": "14",
+            "question_text": "Suppose the current equilibrium quantity of alcoholic beverages is Q* and the current equilibrium price is P*. From the options given below, sellers of alcoholic drinks will bear the largest burden of the tax when",
+            "question_type": "MCQ",
+            "options": {
+                "A": "market supply curve is relatively inelastic compared to the market demand curve at (P*,Q*)",
+                "B": "market supply curve is relatively elastic compared to the market demand curve at (P*,Q*)",
+                "C": "market demand curve is perfectly inelastic",
+                "D": "market supply curve is perfectly elastic"
+            },
+            "correct_option_label": "A",
+            "explanation": "Sellers bear a larger share of a tax burden when their supply is more inelastic (less responsive to price changes) than the consumers' demand.",
+            "module": 2
+        },
+        {
+            "question_id": "16",
+            "question_text": "The average total cost to produce 100 cookies is $0.25 per cookie. The marginal cost is constant at $0.10 for all levels of cookies produced. The total cost to produce 50 cookies is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$20",
+                "B": "$25",
+                "C": "$50",
+                "D": "$60"
+            },
+            "correct_option_label": "A",
+            "explanation": "TC(100)=25, variable cost=10, so fixed cost=15. For 50 units, TC = 15 + (50 * 0.10) = 20.",
+            "module": 3
+        },
+        {
+            "question_id": "17",
+            "question_text": "The average total cost to produce 100 cookies is $0.25 per cookie. The marginal cost is constant at $0.10 for all levels of cookies produced. At the level of 50 and 100 cookies, the average total cost is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "falling at both levels",
+                "B": "rising at both levels",
+                "C": "falling at 50 but rising at 100",
+                "D": "information is not sufficient"
+            },
+            "correct_option_label": "A",
+            "explanation": "Since Marginal Cost ($0.10) is constant and below the Average Total Cost at these levels, the ATC must be decreasing as output increases.",
+            "module": 3
+        },
+        {
+            "question_id": "18",
+            "question_text": "Observe the following two statements regarding a cost function which must have a fixed cost:\nI. The average total cost curve and the average variable cost curve reach their minima at the same level of output.\nII. The average total cost curve and the marginal cost curve reach their minima at the same level of output.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Both I and II are true",
+                "B": "Both I and II are false",
+                "C": "I is true, and II is false",
+                "D": "I is false, and II is true"
+            },
+            "correct_option_label": "B",
+            "explanation": "The ATC curve reaches its minimum after the AVC curve due to spreading fixed costs, and the MC curve intersects both at their respective minimums but does not share the same minimum point.",
+            "module": 3
+        },
+        {
+            "question_id": "19",
+            "question_text": "Which of the following is NOT true for a monopoly facing a downward sloping linear demand curve?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The profit maximizing output is the one at which marginal revenue and marginal cost are equal",
+                "B": "Average revenue equals price",
+                "C": "The monopolist's demand curve is the same as the market demand curve",
+                "D": "At the profit maximizing output, price equals marginal cost"
+            },
+            "correct_option_label": "D",
+            "explanation": "Unlike perfectly competitive firms, monopolies set price above marginal cost to maximize profits, resulting in a markup.",
+            "module": 4
+        },
+        {
+            "question_id": "20",
+            "question_text": "The figure below shows three different demand and supply graphs. Which graph best represents the market for vacation on planet Mars today?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Graph A",
+                "B": "Graph B",
+                "C": "Graph C"
+            },
+            "correct_option_label": "A",
+            "explanation": "Graph A represents a market where the minimum price sellers are willing to accept is higher than the maximum price consumers are willing to pay, resulting in zero quantity traded.",
+            "module": 2
+        },
+        {
+            "question_id": "21",
+            "question_text": "Along a downward sloping linear demand curve, total revenue is maximized:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "where the elasticity is –1 (or the absolute value of the own price elasticity of demand is 1)",
+                "B": "on the quantity axis intercept",
+                "C": "on the price axis intercept",
+                "D": "where the elasticity is 0"
+            },
+            "correct_option_label": "A",
+            "explanation": "Total revenue is maximized at the point where demand is unit elastic; moving away from this point in either direction reduces revenue.",
+            "module": 2
+        },
+        {
+            "question_id": "22",
+            "question_text": "Growers expect that the price of a bushel of wheat will increase in the coming month. This belief results in",
+            "question_type": "MCQ",
+            "options": {
+                "A": "an increase in current supply of wheat",
+                "B": "a decrease in current supply of wheat",
+                "C": "a decrease in future supply of wheat",
+                "D": "no change in current or future supply of wheat"
+            },
+            "correct_option_label": "B",
+            "explanation": "Expected future price increases lead sellers to withhold current supply to take advantage of higher prices later.",
+            "module": 1
+        },
+        {
+            "question_id": "23",
+            "question_text": "If the price of both a substitute and a complement for commodity X increases, the demand for X will:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase",
+                "B": "Decrease",
+                "C": "Remain unchanged",
+                "D": "Any of the above, depending on the situation"
+            },
+            "correct_option_label": "D",
+            "explanation": "An increase in a substitute's price raises demand for X, while an increase in a complement's price lowers it; the final direction depends on which effect is stronger.",
+            "module": 1
+        },
+        {
+            "question_id": "24",
+            "question_text": "If a firm employs some workers who can be dismissed at any time without pay, while others have contracts guaranteeing pay, the total wages and salaries paid by the firm are considered:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A fixed cost",
+                "B": "A variable cost",
+                "C": "Partly a fixed cost and partly a variable cost",
+                "D": "Any of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "Guaranteed contracts represent a commitment (fixed cost), whereas workers dismissible based on production needs represent variable costs.",
+            "module": 3
+        },
+        {
+            "question_id": "25",
+            "question_text": "A firm is incurring losses but can still cover its variable costs, in the short-run it should:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Shut down immediately to avoid further losses",
+                "B": "Continue producing in the short run to minimize losses",
+                "C": "Stop production immediately due to losses",
+                "D": "Break even"
+            },
+            "correct_option_label": "B",
+            "explanation": "In the short run, if price exceeds AVC, producing allows the firm to cover all variable costs and some fixed costs, minimizing total loss.",
+            "module": 3
+        },
+        {
+            "question_id": "26",
+            "question_text": "On a linear demand curve, the lower the price",
+            "question_type": "MCQ",
+            "options": {
+                "A": "the less elastic is demand.",
+                "B": "the more elastic is demand.",
+                "C": "the elasticity equals -1.",
+                "D": "the elasticity equals zero."
+            },
+            "correct_option_label": "A",
+            "explanation": "Elasticity decreases as you move down a linear demand curve because the base price becomes smaller relative to the absolute change.",
+            "module": 2
+        },
+        {
+            "question_id": "27",
+            "question_text": "Which of the following statements about a price ceiling is false?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Effective price ceiling decreases producer surplus",
+                "B": "Effective price ceiling creates an excess demand",
+                "C": "Effective price ceiling creates an excess supply"
+            },
+            "correct_option_label": "C",
+            "explanation": "A price ceiling set below equilibrium prevents prices from rising, encouraging consumption and discouraging production, leading to a shortage (excess demand), not supply.",
+            "module": 2
+        },
+        {
+            "question_id": "28",
+            "question_text": "Industry Equations: TC = 100 + 2Q^2; MC = 4Q; P = 120 - 2Q. If there is only one firm (monopoly), what is the profit-maximizing quantity and price? (MR = 120 - 4Q)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Q=10,P=70",
+                "B": "Q=15,P=90",
+                "C": "Q=20,P=50",
+                "D": "Q=25,P=40"
+            },
+            "correct_option_label": "B",
+            "explanation": "Setting MR = MC yields 120 - 4Q = 4Q, so Q = 15. Substituting into the demand equation gives P = 120 - 2(15) = 90.",
+            "module": 4
+        },
+        {
+            "question_id": "29",
+            "question_text": "Industry Equations: TC = 100 + 2Q^2; MC = 4Q; P = 120 - 2Q. What is the monopolist's profit at the optimal quantity (Q=15, P=90)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$300",
+                "B": "$800",
+                "C": "$500",
+                "D": "$600"
+            },
+            "correct_option_label": "B",
+            "explanation": "Total Revenue = 90 * 15 = 1350. Total Cost = 100 + 2(15^2) = 550. Profit = 1350 - 550 = 800.",
+            "module": 4
+        },
+        {
+            "question_id": "30",
+            "question_text": "Industry Equations: TC = 100 + 2Q^2; MC = 4Q; P = 120 - 2Q. If the industry is perfectly competitive, what will be the equilibrium quantity and price?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Q = 20,P = 80",
+                "B": "Q = 25,P = 40",
+                "C": "Q = 30,P = 30",
+                "D": "Q = 35,P = 20"
+            },
+            "correct_option_label": "A",
+            "explanation": "In competition, P = MC, so 120 - 2Q = 4Q, which gives Q = 20 and P = 80.",
+            "module": 3
+        },
+        {
+            "question_id": "31",
+            "question_text": "Industry Equations: TC = 100 + 2Q^2; MC = 4Q; P = 120 - 2Q. What is the total profit in perfect competition (at Q=20, P=80)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$200",
+                "B": "$250",
+                "C": "$700",
+                "D": "$350"
+            },
+            "correct_option_label": "C",
+            "explanation": "Total Revenue = 80 * 20 = 1600. Total Cost = 100 + 2(20^2) = 900. Profit = 1600 - 900 = 700.",
+            "module": 3
+        },
+        {
+            "question_id": "32",
+            "question_text": "What is the social gain (deadweight loss) from moving from monopoly to perfect competition? (TC = 100 + 2Q^2; MC = 4Q; P = 120 - 2Q)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$10",
+                "B": "$15",
+                "C": "$20",
+                "D": "$25"
+            },
+            "correct_option_label": "D",
+            "explanation": "Social gain represents the recovery of deadweight loss when moving from a restricted monopoly output to the efficient competitive level.",
+            "module": 4
+        },
+        {
+            "question_id": "33",
+            "question_text": "The market demand curve for a good is given by: P = 50 - 0.5 Q. If the market price is ₹30, what is the consumer surplus?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹400",
+                "B": "₹500",
+                "C": "₹300",
+                "D": "₹350"
+            },
+            "correct_option_label": "A",
+            "explanation": "At P=30, Q=40. Consumer surplus is the area of the triangle: 0.5 * (50 - 30) * 40 = 400.",
+            "module": 2
+        },
+        {
+            "question_id": "35",
+            "question_text": "Demand for E-scooters: QD = 5000 - 250P; Supply: QS = 600 + 150P. Find the equilibrium price of E-scooters before the specific tax is levied.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 12,000",
+                "B": "Rs. 11,000",
+                "C": "Rs. 8,000",
+                "D": "Rs. 9,000"
+            },
+            "correct_option_label": "B",
+            "explanation": "Equating demand and supply: 5000 - 250P = 600 + 150P results in 400P = 4400, so P = 11 (thousands).",
+            "module": 2
+        },
+        {
+            "question_id": "36",
+            "question_text": "Demand for E-scooters: QD = 5000 - 250P; Supply: QS = 600 + 150P. Find the equilibrium quantity of E-scooters before the specific tax is levied.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "20,00,000",
+                "B": "22,50,000",
+                "C": "30,00,000",
+                "D": "27,50,000"
+            },
+            "correct_option_label": "B",
+            "explanation": "At equilibrium price P=11, substituting into supply: QS = 600 + 150(11) = 2250 (thousands).",
+            "module": 2
+        },
+        {
+            "question_id": "37",
+            "question_text": "A tax of Rs 2,000 is imposed on producers. Find the equilibrium price paid by buyers of E-scooter after the specific tax is levied. (QD = 5000 - 250P; QS_pre = 600 + 150P)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "11,750",
+                "B": "12,750",
+                "C": "8,750",
+                "D": "9,740"
+            },
+            "correct_option_label": "A",
+            "explanation": "The tax shifts the supply curve upward by 2 units. New equilibrium: 5000 - 250Pb = 600 + 150(Pb - 2), yielding Pb = 11.75.",
+            "module": 2
+        },
+        {
+            "question_id": "38",
+            "question_text": "Find the equilibrium price earned by the producers of the E-scooters after the specific tax of Rs 2,000 is levied. (Buyers pay 11,750)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "9,750",
+                "B": "13,750",
+                "C": "10,750",
+                "D": "11,750"
+            },
+            "correct_option_label": "A",
+            "explanation": "The producer receives the price paid by consumers minus the tax: 11,750 - 2,000 = 9,750.",
+            "module": 2
+        },
+        {
+            "question_id": "39",
+            "question_text": "Calculate the fraction of the specific tax that will be passed on to the buyers of E-scooters.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "3/8",
+                "B": "2/8",
+                "C": "1/8",
+                "D": "3/4"
+            },
+            "correct_option_label": "A",
+            "explanation": "Price increased by 0.75 for a tax of 2 units. The fraction is 0.75 / 2 = 3/8.",
+            "module": 2
+        },
+        {
+            "question_id": "40",
+            "question_text": "If a monopoly’s fixed costs increase, its price will _________ and its profit will _________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "increase; decrease",
+                "B": "decrease; increase",
+                "C": "increase; stay the same",
+                "D": "stay the same; decrease"
+            },
+            "correct_option_label": "D",
+            "explanation": "Fixed costs do not affect marginal revenue or marginal cost; therefore, the profit-maximizing price remains constant while total profit decreases.",
+            "module": 4
+        },
+        {
+            "question_id": "41",
+            "question_text": "A competitive firm’s short-run supply curve is its _________ cost curve above its _________ cost curve.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "average-total; marginal",
+                "B": "average-variable; marginal",
+                "C": "marginal; average-total",
+                "D": "marginal; average-variable"
+            },
+            "correct_option_label": "D",
+            "explanation": "In the short run, a perfectly competitive firm will produce where price equals marginal cost, provided the price is above the minimum average variable cost.",
+            "module": 3
+        },
+        {
+            "question_id": "42",
+            "question_text": "If the cross-price elasticity of demand between two goods is POSITIVE, what does this indicate about their relationship?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The goods are substitutes",
+                "B": "The goods are complements",
+                "C": "The goods are unrelated",
+                "D": "The goods are inferior"
+            },
+            "correct_option_label": "A",
+            "explanation": "A positive cross-price elasticity means that an increase in the price of one good leads to an increase in the demand for the other, which defines substitute goods.",
+            "module": 2
+        },
+        {
+            "question_id": "43",
+            "question_text": "What is the effect of an increase in the supply of a commodity on equilibrium?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It leads to a higher equilibrium price and lower equilibrium quantity",
+                "B": "It leads to a lower equilibrium price and higher equilibrium quantity",
+                "C": "It causes no change in equilibrium price or quantity",
+                "D": "It leads to a higher equilibrium price and higher equilibrium quantity"
+            },
+            "correct_option_label": "B",
+            "explanation": "A rightward shift in supply increases market availability and lowers the equilibrium clearing price while increasing the total quantity traded.",
+            "module": 2
+        },
+        {
+            "question_id": "44",
+            "question_text": "The demand for water is highly inelastic. If the government imposes a tax on water usage, who will bear most of the tax burden?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Consumers",
+                "B": "Producers",
+                "C": "Both equally",
+                "D": "The tax burden is unpredictable"
+            },
+            "correct_option_label": "A",
+            "explanation": "When demand is relatively more inelastic than supply, consumers have fewer choices to switch to and thus absorb a larger portion of the tax through higher prices.",
+            "module": 2
+        }
+    ]
+}
