@@ -1,0 +1,148 @@
+{
+    "exam_metadata": {
+        "subject_name": "Venturing on a Budget: Rs250 Venture",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "Which of the following is an example of a transaction in the pen-selling scenario?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The entrepreneur deciding to start a business",
+                "B": "The entrepreneur convincing the student to buy the pen",
+                "C": "The student paying ₹5 for the pen",
+                "D": "The entrepreneur carrying the pen to the school"
+            },
+            "correct_option_label": "C",
+            "explanation": "A transaction involves the actual exchange of goods or services for money. In the given scenario, the act of the student paying for the pen completes this exchange process.",
+            "module": "1"
+        },
+        {
+            "question_id": "2",
+            "question_text": "What is the difference between revenue and profit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Revenue is the total income, while profit is what remains after expenses are deducted",
+                "B": "Profit and revenue are the same concepts",
+                "C": "Revenue is earned only from selling products, while profit is earned from services",
+                "D": "Profit is the total money earned before deducting expenses"
+            },
+            "correct_option_label": "A",
+            "explanation": "Revenue refers to the total amount of money brought in through business activities. Profit is the financial gain remaining after all costs, taxes, and expenses have been subtracted from the total revenue.",
+            "module": "1"
+        },
+        {
+            "question_id": "3",
+            "question_text": "Which of the following is NOT a key consideration when ideating in an entrepreneurial context, according to the text?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Creating something valuable that facilitates an exchange.",
+                "B": "Being aware of limited resources compared to larger companies.",
+                "C": "Capturing the value created to benefit the business.",
+                "D": "Focusing solely on generating innovative and novel ideas, regardless of customer demand."
+            },
+            "correct_option_label": "D",
+            "explanation": "In entrepreneurship, ideation must be linked to market demand and the potential for a transaction. Innovation for its own sake is insufficient if it does not address a customer need or create extractable value.",
+            "module": "2"
+        },
+        {
+            "question_id": "4",
+            "question_text": "What is \"affordance\" in the context of design?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The monetary value of a resource.",
+                "B": "The implicit communication of how to interact with an object based on its design.",
+                "C": "The ability to easily access a resource.",
+                "D": "The process of breaking an object to repurpose it."
+            },
+            "correct_option_label": "B",
+            "explanation": "Affordance is a design principle where the physical properties of an object provide intuitive cues for its operation, such as a round glass suggesting it should be held and used for drinking.",
+            "module": "2"
+        },
+        {
+            "question_id": "5",
+            "question_text": "Which of the following best describes the \"affordable loss\" principle discussed in the text?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Always choosing the option that costs the least amount of money.",
+                "B": "Being willing to accept any level of loss when pursuing a new venture.",
+                "C": "Determining the potential losses of an action and deciding if they are acceptable.",
+                "D": "Avoiding any action that could potentially lead to a loss of resources."
+            },
+            "correct_option_label": "C",
+            "explanation": "The affordable loss principle suggests that entrepreneurs should base their decisions on the amount of downside risk they are willing to lose, rather than focusing purely on potential returns.",
+            "module": "2"
+        },
+        {
+            "question_id": "6",
+            "question_text": "Which of the following best describes the initial primary goal of the Verger when he started his venture?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Building a large, scalable business with multiple locations.",
+                "B": "Creating a family business that could be passed down through generations.",
+                "C": "Generating cash to replace his lost income.",
+                "D": "Developing a brand that would become well-known in the area."
+            },
+            "correct_option_label": "C",
+            "explanation": "According to the story, the Verger did not start with an expansion plan. His immediate need after losing his job was to find a new revenue stream to replace his monthly salary.",
+            "module": "3"
+        },
+        {
+            "question_id": "7",
+            "question_text": "What is \"revenue per square foot\" used for?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Measuring employee productivity",
+                "B": "Assessing the performance of a store based on real estate costs and revenue",
+                "C": "Calculating the store's overall profit margin",
+                "D": "Determining the optimal store layout"
+            },
+            "correct_option_label": "B",
+            "explanation": "This metric evaluates how effectively a business utilizes its physical space to generate sales. It is especially important in urban retail where real estate is a significant driver of total operational costs.",
+            "module": "3"
+        },
+        {
+            "question_id": "8",
+            "question_text": "When the business is going from 0-1, it should focus on _____",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Viability of the business",
+                "B": "Value creation",
+                "C": "Sustainability and Efficiency",
+                "D": "Production"
+            },
+            "correct_option_label": "B",
+            "explanation": "The 0 to 1 phase is about moving from nothing to the first store or prototype. This stage focuses on identifying and verifying what is truly valuable to the customer to facilitate an initial exchange.",
+            "module": "3"
+        },
+        {
+            "question_id": "9",
+            "question_text": "What is the key difference between social enterprises and businesses that piggyback on social movements like sustainability or feminism?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Social enterprises prioritize profit above all else, while businesses that follow social movements focus solely on charity.",
+                "B": "Social enterprises have a business model that ensures the fair distribution of value among stakeholders, while businesses following social movements may simply capitalize on trends without a sustainable model.",
+                "C": "Social enterprises are purely non-profit organizations, while businesses leveraging social movements are profit-driven.",
+                "D": "Social enterprises always focus on one social issue, while businesses leveraging social movements may focus on multiple trends."
+            },
+            "correct_option_label": "B",
+            "explanation": "Social enterprises integrate social goals into their core business model and fairly distribute captured value to stakeholders. Other businesses might adopt social messaging purely as a marketing tactic to ride a societal trend.",
+            "module": "4"
+        },
+        {
+            "question_id": "10",
+            "question_text": "In the \"zero to one\" phase of building a company, what is the most critical question that needs to be answered?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "How can we scale our product across multiple locations?",
+                "B": "What is the value that we are providing and who is willing to pay for it?",
+                "C": "How can we attract investors and raise capital?",
+                "D": "What marketing strategies will help us reach the largest audience?"
+            },
+            "correct_option_label": "B",
+            "explanation": "The most fundamental step in starting a venture is determining the value proposition. A business cannot exist without a product or service that is desirable enough for a customer to pay for it.",
+            "module": "4"
+        }
+    ]
+}
