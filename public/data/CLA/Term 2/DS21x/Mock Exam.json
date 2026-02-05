@@ -1,0 +1,457 @@
+{
+    "exam_metadata": {
+        "subject_name": "Advanced Statistics for Business",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "Q1",
+            "question_text": "The Joint Probability Mass Function of 2 discrete random variables X and Y are given as follows:\nP(X = x, Y = y) = {(x+y)/36, x, y \u2208 {1,2,3}}\nAre the variables X and Y independent?\na. Yes, because P(X = 1, Y = 1) = P(X = 1) \u2219 P(Y = 1)\nb. No, because joint PMF \u2260 product of marginals\nc. Cannot be determined without sample size\nd. Only independent when x = y\ne. Dependent, since P(X = 2, Y = 2) > P(X = 2) \u2219 P(Y = 2)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Yes, because P(X = 1, Y = 1) = P(X = 1) \u2219 P(Y = 1)",
+                "B": "No, because joint PMF \u2260 product of marginals",
+                "C": "Cannot be determined without sample size",
+                "D": "Only independent when x = y",
+                "E": "Dependent, since P(X = 2, Y = 2) > P(X = 2) \u2219 P(Y = 2)"
+            },
+            "correct_option_label": "B",
+            "explanation": "Variables are independent only if P(X,Y) = P(X)P(Y). Because the joint PMF is defined by an additive term (x+y), it is mathematically impossible to factor it into the product of two separate functions of x and y respectively.",
+            "module": 1
+        },
+        {
+            "question_id": "Q2",
+            "question_text": "A sample of 300 employees who own a car among various technology companies were questioned on whether they own a luxury car. The responses obtained were tabulated as given in the table.\n\nCompany: Infosys Limited | Wipro Limited | TCS | CTS | Tech Mahindra | Accenture | IBM\nNumber of employees who own a luxury car: 10 | 4 | 7 | 8 | 3 | 9 | 9\nNumber of employees who do not own a luxury car: 30 | 31 | 38 | 22 | 27 | 56 | 46\n\nConsider the level of significance (\u03b1) = 0.05 for this problem. The p-value for this problem is 0.398. What is the value of the test statistic for this dataset? And, what would be the degrees of freedom (dof) for this dataset?\na. \u03c7\u00b2 = 3.95, dof = 8\nb. \u03c7\u00b2 = 6.23, dof = 6\nc. \u03c7\u00b2 = 10.27, dof = 4\nd. \u03c7\u00b2 = 6.23, dof = 4\ne. \u03c7\u00b2 = 14.26, dof = 8",
+            "question_type": "MCQ",
+            "options": {
+                "A": "\u03c7\u00b2 = 3.95, dof = 8",
+                "B": "\u03c7\u00b2 = 6.23, dof = 6",
+                "C": "\u03c7\u00b2 = 10.27, dof = 4",
+                "D": "\u03c7\u00b2 = 6.23, dof = 4",
+                "E": "\u03c7\u00b2 = 14.26, dof = 8"
+            },
+            "correct_option_label": "B",
+            "explanation": "Degrees of freedom for a test of independence is calculated as (rows - 1) * (columns - 1). Here, dof = (2 - 1) * (7 - 1) = 6. Matching the p-value of 0.398 with 6 degrees of freedom gives \u03c7\u00b2 = 6.23.",
+            "module": 1
+        },
+        {
+            "question_id": "Q3",
+            "question_text": "A marketing team claims that customer preferences for four product colours are equally distributed. To test this, they survey 220 customers and get the following responses:\nColor: Red | Blue | Green | Yellow\nObserved Frequency: 65 | 55 | 40 | 60\nWhat is the chi-square test statistic for this data, and which test does it correspond to?\na. 9.00 \u2014 Chi-Square test of independence\nb. 9.00 \u2014 Chi-Square goodness of fit test\nc. 6.36 \u2014 Chi-Square goodness of fit test\nd. 10.00 \u2014 One-sample Z-test",
+            "question_type": "MCQ",
+            "options": {
+                "A": "9.00 \u2014 Chi-Square test of independence",
+                "B": "9.00 \u2014 Chi-Square goodness of fit test",
+                "C": "6.36 \u2014 Chi-Square goodness of fit test",
+                "D": "10.00 \u2014 One-sample Z-test"
+            },
+            "correct_option_label": "C",
+            "explanation": "Expected frequency (E) = 220/4 = 55. \u03c7\u00b2 = \u03a3(O-E)\u00b2/E = [(65-55)\u00b2 + (55-55)\u00b2 + (40-55)\u00b2 + (60-55)\u00b2] / 55 = (100+0+225+25)/55 = 350/55 \u2248 6.36. This test compares observed vs expected distribution, making it a Goodness of Fit test.",
+            "module": 1
+        },
+        {
+            "question_id": "Q4",
+            "question_text": "A logistics firm claims the median delivery time for its premium service is 24 hours. A quality analyst tests this by recording delivery times (in hours) for 10 randomly selected premium orders: 22, 26, 24, 30, 28, 23, 25, 27, 29, 31\nUsing the Wilcoxon signed-rank test at a 5% significance level, the analyst calculates the test statistic. The critical value for n=10 (two-tailed) is 8. Calculate the sum of positive ranks (W+), and determine the correct conclusion?\na. W+ = 32.5; fail to reject H0\nb. W+ = 27.5; reject H0\nc. W+ = 40.0; reject H0\nd. W+ = 40.0; fail to reject H0\ne. None of the above.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "W+ = 32.5; fail to reject H0",
+                "B": "W+ = 27.5; reject H0",
+                "C": "W+ = 40.0; reject H0",
+                "D": "W+ = 40.0; fail to reject H0",
+                "E": "None of the above."
+            },
+            "correct_option_label": "C",
+            "explanation": "Differences (X-24): -2, 2, 0, 6, 4, -1, 1, 3, 5, 7. Excluding 0, absolute ranks for non-zero differences are assigned. Positive ranks (diffs 2, 6, 4, 1, 3, 5, 7) sum to 40. Since W is far from the critical value of 8, we reject H0.",
+            "module": 1
+        },
+        {
+            "question_id": "Q5",
+            "question_text": "A company tests the effectiveness of a new training program by comparing employee productivity scores before and after the training. The scores (out of 100) for 6 employees are:\nEmployee: 1 | 2 | 3 | 4 | 5 | 6\nBefore: 72 | 65 | 80 | 68 | 75 | 82\nAfter: 78 | 70 | 82 | 65 | 77 | 85\nUsing the Wilcoxon signed-rank test (one-tailed, significance level \u03b1 = 0.05), test whether the training program led to an increase in productivity. The critical value for n = 6 (one-tailed) is 2\na. W+ = 10; Fail to reject H0\nb. W+ = 12; Reject H0\nc. W+ = 17.75; Reject H0\nd. W+ = 17.5; Fail to reject H0\ne. W+ = 20; Reject H0",
+            "question_type": "MCQ",
+            "options": {
+                "A": "W+ = 10; Fail to reject H0",
+                "B": "W+ = 12; Reject H0",
+                "C": "W+ = 17.75; Reject H0",
+                "D": "W+ = 17.5; Fail to reject H0",
+                "E": "W+ = 20; Reject H0"
+            },
+            "correct_option_label": "D",
+            "explanation": "Differences (After-Before): 6, 5, 2, -3, 2, 3. Ranks: 6, 5, 1.5, 3.5, 1.5, 3.5. Positive ranks (6, 5, 1.5, 1.5, 3.5) sum to 17.5. For a one-tailed test with n=6 and CV=2, the calculated W+ does not meet the criteria to reject H0.",
+            "module": 1
+        },
+        {
+            "question_id": "Q6",
+            "question_text": "The monthly salary of the programmer and lines of code written per day by 10 programmers are given in a table. What would be the lines of code written by a programmer whose monthly salary is $48,000? Slope (\u03b21) = 4.5, and intercept (\u03b20) = -30.\nMonthly salary (in thousands of dollars): 32.7 | 34.7 | 35.6 | 37.3 | 37.5 | 38.5 | 39.5 | 40.5 | 41.2 | 42.5\nLines of code written per day: 110 | 111 | 114 | 145 | 156 | 160 | 162 | 162 | 169 | 171\na. 150\nb. 165\nc. 175\nd. 180\ne. 186",
+            "question_type": "MCQ",
+            "options": {
+                "A": "150",
+                "B": "165",
+                "C": "175",
+                "D": "180",
+                "E": "186"
+            },
+            "correct_option_label": "E",
+            "explanation": "Using the linear regression equation Y = \u03b20 + \u03b21X, where X is salary in thousands. Y = -30 + 4.5(48) = -30 + 216 = 186 lines of code.",
+            "module": 2
+        },
+        {
+            "question_id": "Q7",
+            "question_text": "A doctor wants to predict if a patient has a certain disease (1 = Yes, 0 = No) based on their age. A logistic regression model gives this equation:\nLog odds of disease = \u22122 + 0.05 \u00d7 (Age)\nWhat is the predicted probability of disease (P (Y = 1)) for a 40-year-old patient?\na. 12%\nb. 25%\nc. 50%\nd. 75%\ne. 90%",
+            "question_type": "MCQ",
+            "options": {
+                "A": "12%",
+                "B": "25%",
+                "C": "50%",
+                "D": "75%",
+                "E": "90%"
+            },
+            "correct_option_label": "C",
+            "explanation": "Log-odds = -2 + 0.05(40) = 0. Probability P = e^(log-odds) / (1 + e^(log-odds)). P = e^0 / (1 + e^0) = 1 / (1 + 1) = 0.5 or 50%.",
+            "module": 2
+        },
+        {
+            "question_id": "Q8",
+            "question_text": "A hospital wants to predict whether a patient is at high risk of readmission (1 = Yes, 0 = No) based on: length of stay (in days), and number of chronic conditions. The logistic model is:\nIntercept (\u03b20) = -3.2, Length of stay (\u03b21) = 0.15 per day, Chronic conditions (\u03b22) = 0.8 per condition.\nFor a patient who stayed for 6 days and with 2 chronic conditions, calculate (1) The log-odds of readmission, (2) Compute their probability of admission.\na. Log-odds: -0.7; Probability: 33.2%\nb. Log-odds: 0.1; Probability: 52.5%\nc. Log-odds: -1.2; Probability: 23.2%\nd. Log-odds: 0.8; Probability: 69.0%\ne. Log-odds: -2.0; Probability: 11.9%",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Log-odds: -0.7; Probability: 33.2%",
+                "B": "Log-odds: 0.1; Probability: 52.5%",
+                "C": "Log-odds: -1.2; Probability: 23.2%",
+                "D": "Log-odds: 0.8; Probability: 69.0%",
+                "E": "Log-odds: -2.0; Probability: 11.9%"
+            },
+            "correct_option_label": "A",
+            "explanation": "Log-odds = -3.2 + 0.15(6) + 0.8(2) = -3.2 + 0.9 + 1.6 = -0.7. Probability = e^(-0.7) / (1 + e^(-0.7)) \u2248 0.4965 / 1.4965 \u2248 33.2%.",
+            "module": 2
+        },
+        {
+            "question_id": "Q9",
+            "question_text": "A medical AI model predicts whether a patient has a disease (1 = Positive, 0 = Negative). The confusion matrix for 200 test cases is:\n\nActual Positive: Predicted Positive 50 | Predicted Negative 10\nActual Negative: Predicted Positive 20 | Predicted Negative 120\n\nWhat is the F1-Score of this model?\na. 0.67\nb. 0.77\nc. 0.80\nd. 0.83\ne. 0.90",
+            "question_type": "MCQ",
+            "options": {
+                "A": "0.67",
+                "B": "0.77",
+                "C": "0.80",
+                "D": "0.83",
+                "E": "0.90"
+            },
+            "correct_option_label": "B",
+            "explanation": "Precision = TP/(TP+FP) = 50/(50+20) = 0.714. Recall = TP/(TP+FN) = 50/(50+10) = 0.833. F1-Score = 2 * (Precision * Recall) / (Precision + Recall) = 2 * (0.595) / (1.547) \u2248 0.77.",
+            "module": 3
+        },
+        {
+            "question_id": "Q10",
+            "question_text": "A company analyses its quarterly sales data (in $000s) for the past 3 years:\nQuarter: Q1 | Q2 | Q3 | Q4\nYear 1: 80 | 110 | 100 | 130\nYear 2: 90 | 120 | 105 | 140\nYear 3: 85 | 115 | 95 | 135\nWhat is seasonality index for Q4?\na. 1.4\nb. 1.28\nc. 1.24\nd. 1.78\ne. 2.22",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1.4",
+                "B": "1.28",
+                "C": "1.24",
+                "D": "1.78",
+                "E": "2.22"
+            },
+            "correct_option_label": "C",
+            "explanation": "Grand Mean = Sum of all values / 12 = 1305 / 12 = 108.75. Average for Q4 = (130+140+135)/3 = 135. Seasonality Index = Q4 Avg / Grand Mean = 135 / 108.75 \u2248 1.24.",
+            "module": 3
+        },
+        {
+            "question_id": "Q11",
+            "question_text": "A store uses exponential smoothing with \u03b1 = 0.4 to forecast daily sales.\n\u2022 Yesterday's forecast: 100 units\n\u2022 Yesterday's actual sales: 120 units\nWhat is today's forecast?\na. 100\nb. 104\nc. 108\nd. 112\ne. 120",
+            "question_type": "MCQ",
+            "options": {
+                "A": "100",
+                "B": "104",
+                "C": "108",
+                "D": "112",
+                "E": "120"
+            },
+            "correct_option_label": "C",
+            "explanation": "Today's forecast = Yesterday's forecast + \u03b1 * (Yesterday's actual - Yesterday's forecast). Forecast = 100 + 0.4 * (120 - 100) = 100 + 8 = 108.",
+            "module": 3
+        },
+        {
+            "question_id": "Q12",
+            "question_text": "A coffee shop recorded its daily customer counts for the past 5 days:\nDay: Monday | Tuesday | Wednesday | Thursday | Friday\nCustomers: 120 | 150 | 130 | 140 | 160\nUsing the simple average method, what is the forecast for Saturday?\na. 120\nb. 130\nc. 140\nd. 150\ne. 160",
+            "question_type": "MCQ",
+            "options": {
+                "A": "120",
+                "B": "130",
+                "C": "140",
+                "D": "150",
+                "E": "160"
+            },
+            "correct_option_label": "C",
+            "explanation": "Simple average = (120+150+130+140+160) / 5 = 700 / 5 = 140.",
+            "module": 3
+        },
+        {
+            "question_id": "Q13",
+            "question_text": "A retailer uses a weighted average method to forecast weekly sales, assigning these weights to the past 3 weeks:\n\u2022 Most recent week (t-1): Weight = 0.5\n\u2022 2 weeks ago (t-2): Weight = 0.3\n\u2022 3 weeks ago (t-3): Weight = 0.2\nSales data: Week t-3: 200 units, Week t-2: 220 units, Week t-1: 250 units\nWhat is the weighted average forecast for the next week?\na. 210\nb. 231\nc. 233\nd. 235\ne. 240",
+            "question_type": "MCQ",
+            "options": {
+                "A": "210",
+                "B": "231",
+                "C": "233",
+                "D": "235",
+                "E": "240"
+            },
+            "correct_option_label": "B",
+            "explanation": "Forecast = (0.5 * 250) + (0.3 * 220) + (0.2 * 200) = 125 + 66 + 40 = 231.",
+            "module": 3
+        },
+        {
+            "question_id": "Q14",
+            "question_text": "A farmer must choose between three crop options with profits ($000s) dependent on rainfall:\nCrop: Drought (\u03b81) | Normal (\u03b82) | Heavy Rain (\u03b83)\nCorn (A): 20 | 60 | 40\nSoyabean (B): 30 | 50 | 30\nWheat (C): 40 | 40 | 20\nIf the farmer uses the Maximax criterion, which crop will they choose?\na. Corn (A)\nb. Soybean (B)\nc. Wheat (C)\nd. Indifferent between A and C\ne. Cannot determine/ not enough data",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Corn (A)",
+                "B": "Soybean (B)",
+                "C": "Wheat (C)",
+                "D": "Indifferent between A and C",
+                "E": "Cannot determine/ not enough data"
+            },
+            "correct_option_label": "A",
+            "explanation": "Maximax looks for the maximum possible payoff. For Corn it is 60, for Soyabean it is 50, and for Wheat it is 40. The highest overall value is 60, belonging to Corn.",
+            "module": 4
+        },
+        {
+            "question_id": "Q15",
+            "question_text": "Using the same crop profit table as Q14, assume the farmer\u2019s optimism coefficient (\u03b1) is 0.7. Which crop maximizes the Hurwicz weighted payoff?\na. Corn (A)\nb. Soybean (B)\nc. Wheat (C)\nd. Indifferent between A and B\ne. Cannot determine/ not enough data",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Corn (A)",
+                "B": "Soybean (B)",
+                "C": "Wheat (C)",
+                "D": "Indifferent between A and B",
+                "E": "Cannot determine/ not enough data"
+            },
+            "correct_option_label": "A",
+            "explanation": "Hurwicz Score = \u03b1(Max Payoff) + (1-\u03b1)(Min Payoff). Corn: 0.7(60) + 0.3(20) = 48. Soybean: 0.7(50) + 0.3(30) = 44. Wheat: 0.7(40) + 0.3(20) = 34. Corn has the highest score.",
+            "module": 4
+        },
+        {
+            "question_id": "Q16",
+            "question_text": "A tech startup must decide whether to Develop a New Product (Cost: 200K) or upgrading new product (Cost: 80K). Market research suggests:\n1. If they Develop New Product: 60% chance of High Demand (Profit: $500K), 40% chance of Low Demand (Profit: $100K)\n2. If they Upgrade Existing Product: 70% chance of Moderate Success (Profit: $300K), 30% chance of Failure (Profit: $0)\nUsing a decision tree, which option has the higher expected monetary value (EMV)?\na. Develop New Product \nb. Upgrade Existing Product\nc. Both have equal EMV\nd. It depends on the accuracy of market research\ne. Cannot be determined with this dataset.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Develop New Product",
+                "B": "Upgrade Existing Product",
+                "C": "Both have equal EMV",
+                "D": "It depends on the accuracy of market research",
+                "E": "Cannot be determined with this dataset."
+            },
+            "correct_option_label": "A",
+            "explanation": "EMV(New) = (0.6 * 500 + 0.4 * 100) - 200 = 340 - 200 = 140K. EMV(Upgrade) = (0.7 * 300 + 0.3 * 0) - 80 = 210 - 80 = 130K. Developing the new product yields a higher EMV.",
+            "module": 4
+        },
+        {
+            "question_id": "Q17",
+            "question_text": "In logistic regression, the logit function is defined as log(p / (1-p)). What is the primary purpose of this transformation?\na. To ensure the dependent variable is normally distributed.\nb. To model a linear relationship between predictors and probability.\nc. To constrain predicted probabilities between 0 and 1.\nd. To minimize the sum of squared residuals.\ne. To handle multicollinearity among predictors.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To ensure the dependent variable is normally distributed.",
+                "B": "To model a linear relationship between predictors and probability.",
+                "C": "To constrain predicted probabilities between 0 and 1.",
+                "D": "To minimize the sum of squared residuals.",
+                "E": "To handle multicollinearity among predictors."
+            },
+            "correct_option_label": "B",
+            "explanation": "The logit transformation allows the non-linear S-shaped probability curve to be modeled as a linear function of independent variables.",
+            "module": 2
+        },
+        {
+            "question_id": "Q18",
+            "question_text": "In a simple linear regression model Y = \u03b20 + \u03b21X, what does the slope coefficient (\u03b21) represent?\na. The predicted value of Y when X = 0.\nb. The change in Y for a one-unit increase in X, holding all else constant.\nc. The strength of the correlation between X and Y.\nd. The probability that X influences Y.\ne. The error term of the model.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The predicted value of Y when X = 0.",
+                "B": "The change in Y for a one-unit increase in X, holding all else constant.",
+                "C": "The strength of the correlation between X and Y.",
+                "D": "The probability that X influences Y.",
+                "E": "The error term of the model."
+            },
+            "correct_option_label": "B",
+            "explanation": "The slope coefficient (\u03b21) quantifies how much the dependent variable Y changes on average for every one-unit increment in the predictor X.",
+            "module": 2
+        },
+        {
+            "question_id": "Q19",
+            "question_text": "Which of the following is not an assumption of logistic regression?\na. The dependent variable is binary.\nb. Predictors are linearly related to the log-odds.\nc. Residuals must be normally distributed.\nd. No severe multicollinearity among predictors.\ne. Observations are independent.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The dependent variable is binary.",
+                "B": "Predictors are linearly related to the log-odds.",
+                "C": "Residuals must be normally distributed.",
+                "D": "No severe multicollinearity among predictors.",
+                "E": "Observations are independent."
+            },
+            "correct_option_label": "C",
+            "explanation": "Logistic regression does not require residuals to be normally distributed; it uses Maximum Likelihood Estimation rather than Ordinary Least Squares.",
+            "module": 2
+        },
+        {
+            "question_id": "Q20",
+            "question_text": "The output of a logistic regression model for a binary classification problem is:\nP(Y = 1) = 1 / (1 + e^-(2 + 0.5X))\nHow would you interpret the coefficient of X (0.5)?\na. A one-unit increase in X increases the probability of Y=1 by 50%.\nb. A one-unit increase in X multiplies the odds of Y = 1 by e^0.5.\nc. X has no significant effect on Y.\nd. The log-odds of Y=1 decrease by 0.5 for every unit increase in X.\ne. X is negatively correlated with Y.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A one-unit increase in X increases the probability of Y=1 by 50%.",
+                "B": "A one-unit increase in X multiplies the odds of Y = 1 by e^0.5.",
+                "C": "X has no significant effect on Y.",
+                "D": "The log-odds of Y=1 decrease by 0.5 for every unit increase in X.",
+                "E": "X is negatively correlated with Y."
+            },
+            "correct_option_label": "B",
+            "explanation": "In logistic regression, the exponentiated coefficient represents the odds ratio. Thus, a unit increase in X results in the odds being multiplied by e^0.5.",
+            "module": 2
+        },
+        {
+            "question_id": "Q21",
+            "question_text": "In multiple linear regression with two predictors (X1 and X2), how is the adjusted R \u2013 squared different from R \u2013 squared?\na. Adjusted R-squared decreases as more predictors are added.\nb. Adjusted R-squared accounts for the number of predictors and sample size.\nc. Adjusted R-squared is always higher than R-squared.\nd. Adjusted R-squared measures the significance of individual coefficients.\ne. Adjusted R-squared ignores the effect of irrelevant predictors.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Adjusted R-squared decreases as more predictors are added.",
+                "B": "Adjusted R-squared accounts for the number of predictors and sample size.",
+                "C": "Adjusted R-squared is always higher than R-squared.",
+                "D": "Adjusted R-squared measures the significance of individual coefficients.",
+                "E": "Adjusted R-squared ignores the effect of irrelevant predictors."
+            },
+            "correct_option_label": "B",
+            "explanation": "Adjusted R-squared provides a more accurate measure of goodness-of-fit by penalizing for the addition of predictors that do not significantly improve the model.",
+            "module": 2
+        },
+        {
+            "question_id": "Q22",
+            "question_text": "What is the key distinction between parametric and non \u2013 parametric tests?\na. Parametric tests require distributional assumption, while non-parametric tests do not.\nb. Non-parametric tests always have higher statistical power.\nc. Parametric tests can only be used for categorical data.\nd. Non-parametric tests assume a specific population distribution.\ne. Parametric tests are only applicable to small sample sizes.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Parametric tests require distributional assumption, while non-parametric tests do not.",
+                "B": "Non-parametric tests always have higher statistical power.",
+                "C": "Parametric tests can only be used for categorical data.",
+                "D": "Non-parametric tests assume a specific population distribution.",
+                "E": "Parametric tests are only applicable to small sample sizes."
+            },
+            "correct_option_label": "A",
+            "explanation": "Parametric tests assume the population follows a specific distribution (like Normal), whereas non-parametric tests are distribution-free and based on ranks.",
+            "module": 1
+        },
+        {
+            "question_id": "Q23",
+            "question_text": "Which of the following is a non \u2013 parametric alternative to the paired t \u2013 test?\na. ANOVA\nb. Wilcoxon signed - rank test\nc. Chi \u2013 square test\nd. Pearson\u2019s correlation\ne. Two-sample z \u2013 test",
+            "question_type": "MCQ",
+            "options": {
+                "A": "ANOVA",
+                "B": "Wilcoxon signed - rank test",
+                "C": "Chi \u2013 square test",
+                "D": "Pearson\u2019s correlation",
+                "E": "Two-sample z \u2013 test"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Wilcoxon signed-rank test is the standard non-parametric substitute for the paired t-test when the assumption of normality is violated.",
+            "module": 1
+        },
+        {
+            "question_id": "Q24",
+            "question_text": "Which of the following tests is parametric?\na. Mann-Whitney U test\nb. Kruskal \u2013 Wallis test\nc. Spearman\u2019s rank correlation\nd. Independent samples t \u2013 test\ne. Friedman test",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mann-Whitney U test",
+                "B": "Kruskal \u2013 Wallis test",
+                "C": "Spearman\u2019s rank correlation",
+                "D": "Independent samples t \u2013 test",
+                "E": "Friedman test"
+            },
+            "correct_option_label": "D",
+            "explanation": "The independent samples t-test is parametric because it relies on the assumption that the population data is normally distributed.",
+            "module": 1
+        },
+        {
+            "question_id": "Q25",
+            "question_text": "In the Wilcoxon signed-rank test, how are tied differences handled?\na. They are excluded from the analysis.\nb. They are assigned the same average rank.\nc. They are treated as zero differences.\nd. They are given ranks randomly.\ne. The test cannot be applied if ties exist.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They are excluded from the analysis.",
+                "B": "They are assigned the same average rank.",
+                "C": "They are treated as zero differences.",
+                "D": "They are given ranks randomly.",
+                "E": "The test cannot be applied if ties exist."
+            },
+            "correct_option_label": "B",
+            "explanation": "When data points share the same value, they are given a rank that is the average of the positions they would occupy if they were different.",
+            "module": 1
+        },
+        {
+            "question_id": "Q26",
+            "question_text": "What is the null hypothesis of the Wilcoxon signed-rank test?\na. The two groups have equal means.\nb. The distributions of both groups are identical.\nc. The data follows a normal distribution.\nd. The variances of the two groups are equal.\ne. The median difference between pairs is zero.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The two groups have equal means.",
+                "B": "The distributions of both groups are identical.",
+                "C": "The data follows a normal distribution.",
+                "D": "The variances of the two groups are equal.",
+                "E": "The median difference between pairs is zero."
+            },
+            "correct_option_label": "E",
+            "explanation": "The Wilcoxon signed-rank test evaluates whether the median of the differences between paired observations is significantly different from zero.",
+            "module": 1
+        },
+        {
+            "question_id": "Q27",
+            "question_text": "Which forecasting method would you choose for a dataset with no trend or seasonality but occasional outliers?\na. Seasonal Na\u00efve method\nb. Na\u00efve method\nc. Simple Average method\nd. Weighted Average method\ne. Exponential Smoothing method",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Seasonal Na\u00efve method",
+                "B": "Na\u00efve method",
+                "C": "Simple Average method",
+                "D": "Weighted Average method",
+                "E": "Exponential Smoothing method"
+            },
+            "correct_option_label": "E",
+            "explanation": "Exponential smoothing is ideal for datasets with noise but no distinct trend, as it provides a smooth forecast by weighting older observations less.",
+            "module": 3
+        },
+        {
+            "question_id": "Q28",
+            "question_text": "The Hurwicz Method combines:\na. Minimax and Maximax criteria.\nb. Optimism (\u03b1) and pessimism (1\u2212\u03b1) weights.\nc. Only probabilities of outcomes.\nd. Historical averages.\ne. None of the above.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Minimax and Maximax criteria.",
+                "B": "Optimism (\u03b1) and pessimism (1\u2212\u03b1) weights.",
+                "C": "Only probabilities of outcomes.",
+                "D": "Historical averages.",
+                "E": "None of the above."
+            },
+            "correct_option_label": "B",
+            "explanation": "The Hurwicz criterion uses a coefficient of optimism (\u03b1) to create a weighted average of the maximum and minimum payoffs for each strategy.",
+            "module": 4
+        },
+        {
+            "question_id": "Q29",
+            "question_text": "A Decision Tree splits data based on:\na. Random selection of features.\nb. Criteria that maximize information gain or purity.\nc. Linear regression coefficients.\nd. Control chart thresholds.\ne. None of the above.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Random selection of features.",
+                "B": "Criteria that maximize information gain or purity.",
+                "C": "Linear regression coefficients.",
+                "D": "Control chart thresholds.",
+                "E": "None of the above."
+            },
+            "correct_option_label": "B",
+            "explanation": "Decision trees use measures like Information Gain, Gini Impurity, or Variance Reduction to find the feature and split point that best separates the data.",
+            "module": 4
+        },
+        {
+            "question_id": "Q30",
+            "question_text": "The Maximin Criterion is used by a decision-maker who:\na. Seeks the highest possible payoff regardless of risk.\nb. Focuses on minimizing the maximum possible loss.\nc. Balances optimism and pessimism using a coefficient.\nd. Ignores probabilities of outcomes.\ne. Assigns weights and then take the maximum payoff value.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Seeks the highest possible payoff regardless of risk.",
+                "B": "Focuses on minimizing the maximum possible loss.",
+                "C": "Balances optimism and pessimism using a coefficient.",
+                "D": "Ignores probabilities of outcomes.",
+                "E": "Assigns weights and then take the maximum payoff value."
+            },
+            "correct_option_label": "B",
+            "explanation": "Maximin is a conservative/pessimistic strategy where the decision-maker identifies the worst-case scenario for each option and selects the one with the 'best' worst-case payoff.",
+            "module": 4
+        }
+    ]
+}

@@ -57,6 +57,12 @@ export const SUBJECTS: Subject[] = [
     description: '',
     term: 2
   },
+  {
+    code: 'DS21x',
+    name: 'Advanced Statistics for Business',
+    description: '',
+    term: 2
+  },
 
   // Term 4 Subjects
   {

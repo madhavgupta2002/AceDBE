@@ -1,0 +1,288 @@
+{
+    "exam_metadata": {
+        "subject_name": "Advanced Statistics for Business",
+        "exam_date": "27 September 2025"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "In a contingency table analysis, the chi-square statistic was found to be 18.2 with df = 6 and p-value = 0.006. What is the correct decision at α = 0.01?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Fail to reject H₀, variables are independent",
+                "B": "Reject H₀, variables are not independent",
+                "C": "Reject H₀, variables are independent",
+                "D": "Fail to reject H₀, insufficient evidence of dependence"
+            },
+            "correct_option_label": "B",
+            "explanation": "Since the p-value (0.006) is less than the significance level α (0.01), we reject the null hypothesis, concluding that the variables are not independent.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "A goodness-of-fit test is always conducted as a",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lower-tail test",
+                "B": "Upper-tail test",
+                "C": "Middle test",
+                "D": "None of these alternatives is correct"
+            },
+            "correct_option_label": "B",
+            "explanation": "Goodness-of-fit tests use the Chi-square distribution where only large discrepancies between observed and expected values (falling in the upper tail) lead to the rejection of the null hypothesis.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "When individuals in a sample of 150 were asked whether or not they supported capital punishment, the following information was obtained.\n\n| Do you support capital punishment? | Number of individuals |\n| :--- | :--- |\n| Yes | 40 |\n| No | 60 |\n| No Opinion | 50 |\n\nWe are interested in determining whether or not the opinions of the individuals (as to Yes, No, and No Opinion) are uniformly distributed. The calculated value for the test statistic equals",
+            "question_type": "MCQ",
+            "options": {
+                "A": "2",
+                "B": "-2",
+                "C": "20",
+                "D": "4"
+            },
+            "correct_option_label": "D",
+            "explanation": "Expected frequency (E) = 150/3 = 50. Test statistic χ² = Σ[(O-E)²/E] = (40-50)²/50 + (60-50)²/50 + (50-50)²/50 = 100/50 + 100/50 + 0 = 4.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "When individuals in a sample of 150 were asked whether or not they supported capital punishment, the following information was obtained.\n\n| Do you support capital punishment? | Number of individuals |\n| :--- | :--- |\n| Yes | 40 |\n| No | 60 |\n| No Opinion | 50 |\n\nWe are interested in determining whether or not the opinions of the individuals (as to Yes, No, and No Opinion) are uniformly distributed. The conclusion of the test (at 95% confidence) is that",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The distribution is uniform",
+                "B": "The distribution is not uniform",
+                "C": "The test is inconclusive",
+                "D": "None of these alternatives is correct"
+            },
+            "correct_option_label": "A",
+            "explanation": "The calculated χ² is 4. With df=2, the critical value at 5% significance is 5.99. Since 4 < 5.99, we fail to reject the null hypothesis and conclude the distribution is uniform.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "In the past, 35% of the students at ABC University were in the Business College, 35% of the students were in the Liberal Arts College, and 30% of the students were in the Education College. To see whether or not the proportions have changed, a sample of 300 students was taken. Ninety of the sample students are in the Business College, 120 are in the Liberal Arts College, and 90 are in the Education College. The chi-square distribution cutoffs at 5% level of significance for different degrees of freedom are provided below.\n\n| Degree of Freedom | 1 | 2 | 3 | 4 | 5 |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| Cut-off | 3.84 | 5.99 | 7.81 | 9.49 | 11.07 |\n\nAt 5% level of significance, the test concludes that the",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Proportions have changed significantly",
+                "B": "Proportions have not changed significantly",
+                "C": "Test is inconclusive",
+                "D": "None of these alternatives is correct"
+            },
+            "correct_option_label": "B",
+            "explanation": "Expected frequencies are: Business=105, Liberal Arts=105, Education=90. χ² = (90-105)²/105 + (120-105)²/105 + (90-90)²/90 = 2.14 + 2.14 + 0 = 4.28. Since 4.28 < 5.99 (df=2), the proportions have not changed significantly.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "Suppose in a logistic regression model, the estimated coefficient for X1 is 0.7. What does this imply about the odds of the outcome?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A one-unit increase in X1 decreases the odds by 70%",
+                "B": "A one-unit increase in X1 multiplies the odds by exp(0.7)",
+                "C": "A one-unit increase in X1 multiplies the odds by 0.7",
+                "D": "A one-unit increase in X1 increases the probability by 0.7"
+            },
+            "correct_option_label": "B",
+            "explanation": "In logistic regression, the coefficient represents the change in log-odds. Therefore, a one-unit increase in the predictor multiplies the odds of the outcome by e raised to the power of the coefficient (exp(0.7)).",
+            "module": 2
+        },
+        {
+            "question_id": "7",
+            "question_text": "A study fits a logistic regression to predict disease presence (1 = disease, 0 = healthy) from Biomarker. Coefficient for Biomarker = 2.0. A patient has Biomarker = 3. What is the log-odds of disease for this patient (ignoring intercept)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "6",
+                "B": "2",
+                "C": "exp(2)",
+                "D": "exp(6)"
+            },
+            "correct_option_label": "A",
+            "explanation": "The log-odds are calculated as the product of the coefficient and the predictor value. Here, log-odds = 2.0 * 3 = 6.",
+            "module": 2
+        },
+        {
+            "question_id": "8",
+            "question_text": "In the exponential model Y=β₀ e^{β₁ X}, what does β₁ represent?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The marginal effect of X on Y is constant",
+                "B": "The percentage change in Y per unit increase in X",
+                "C": "The elasticity of Y with respect to X",
+                "D": "The change in log-odds of Y per unit increase in X"
+            },
+            "correct_option_label": "C",
+            "explanation": "In an exponential regression model where the independent variable is not logged, β₁ represents the relative change in Y for a unit change in X, which is interpreted as the elasticity of Y with respect to X.",
+            "module": 2
+        },
+        {
+            "question_id": "9",
+            "question_text": "An analyst tries to fit the model: Y=β₀ e^{β₁ X}, but the algorithm fails to converge. The most likely reason is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Too many predictors",
+                "B": "Poor choice of starting values",
+                "C": "Model is linear, so NLS is unnecessary",
+                "D": "Logistic regression would be better"
+            },
+            "correct_option_label": "B",
+            "explanation": "Non-linear least squares estimation requires iterative procedures that are highly sensitive to initial parameters. A poor choice of starting values often leads to a failure in convergence.",
+            "module": 2
+        },
+        {
+            "question_id": "10",
+            "question_text": "A manufacturing plant uses control charts to monitor defect levels. Reducing the sample size per subgroup will most likely:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase sensitivity to small shifts in the process",
+                "B": "Increase the width of control limits, reducing sensitivity",
+                "C": "Keep control limits unchanged",
+                "D": "Eliminate Type II errors completely"
+            },
+            "correct_option_label": "B",
+            "explanation": "Since control limits are defined by the standard error (σ/√n), decreasing the sample size (n) increases the standard error, leading to wider control limits and decreased sensitivity to process shifts.",
+            "module": 4
+        },
+        {
+            "question_id": "11",
+            "question_text": "An e-commerce firm sees sudden jumps in sales during festival promotions. To respond quickly, it should use:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "12-month moving average",
+                "B": "Exponential smoothing with a high α",
+                "C": "Linear regression with trend",
+                "D": "Delphi forecasting"
+            },
+            "correct_option_label": "B",
+            "explanation": "A high alpha value in exponential smoothing gives more weight to the most recent observations, allowing the forecast to adapt more rapidly to sudden shifts in sales data.",
+            "module": 3
+        },
+        {
+            "question_id": "12",
+            "question_text": "A company claims that customers buy its products in the following proportion: Soap (40%), Shampoo (35%), Lotion (25%). From a sample of 100 purchases, the observed counts are: Soap = 38, Shampoo = 30, Lotion = 32. Test whether the observed data fit the claimed distribution. What is the concussion at 5% level of significance? The chi-square distribution cutoffs at 5% level of significance for different degrees of freedom are provided below.\n\n| Degree of Freedom | 1 | 2 | 3 | 4 | 5 |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| Cut-off | 3.84 | 5.99 | 7.81 | 9.49 | 11.07 |",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Fail to reject the null hypothesis that the observed data do not fit the claimed distribution.",
+                "B": "Fail to reject the null hypothesis that the observed data fit the claimed distribution.",
+                "C": "Reject the null hypothesis that the observed data fit the claimed distribution.",
+                "D": "Reject the null hypothesis that the observed data do not fit the claimed distribution."
+            },
+            "correct_option_label": "B",
+            "explanation": "Expected frequencies: Soap=40, Shampoo=35, Lotion=25. χ² = (38-40)²/40 + (30-35)²/35 + (32-25)²/25 = 0.1 + 0.714 + 1.96 = 2.774. Since 2.774 < 5.99 (df=2), we fail to reject the null hypothesis that the data fits.",
+            "module": 1
+        },
+        {
+            "question_id": "13",
+            "question_text": "Using the following data, determine the values of MAD and MSE.\n\n| Period | Value | Forecast |\n| :--- | :--- | :--- |\n| 1 | 19.4 | 16.6 |\n| 2 | 23.6 | 19.1 |\n| 3 | 24 | 22 |\n| 4 | 26.8 | 24.8 |\n| 5 | 29.2 | 25.9 |\n| 6 | 35.5 | 28.6 |",
+            "question_type": "MCQ",
+            "options": {
+                "A": "MAD = 3.58 ; MSE = 15.765",
+                "B": "MAD = 4.57 ; MSE = 16.342",
+                "C": "MAD = 2.97 ; MSE = 12.765",
+                "D": "MAD = 3.97 ; MSE = 14.563"
+            },
+            "correct_option_label": "A",
+            "explanation": "Errors are: 2.8, 4.5, 2, 2, 3.3, 6.9. MAD = (2.8+4.5+2+2+3.3+6.9)/6 = 3.58. MSE = (2.8²+4.5²+2²+2²+3.3²+6.9²)/6 = (7.84+20.25+4+4+10.89+47.61)/6 = 15.765.",
+            "module": 3
+        },
+        {
+            "question_id": "14",
+            "question_text": "If process variation increases but the process mean remains unchanged, which control chart is most sensitive to detect this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "X-bar chart",
+                "B": "R chart",
+                "C": "p chart",
+                "D": "np chart"
+            },
+            "correct_option_label": "B",
+            "explanation": "The R chart (Range chart) is specifically designed to monitor process variability. An increase in variation would show as points exceeding the control limits on the R chart, even if the mean remains stable.",
+            "module": 4
+        },
+        {
+            "question_id": "15",
+            "question_text": "A buyer uses a single-sampling plan with sample size = 50, acceptance number = 2. In one lot, 3 defectives are found. What action should be taken?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Accept the lot",
+                "B": "Reject the lot",
+                "C": "Resample with a larger samples",
+                "D": "Use a c-chart instead"
+            },
+            "correct_option_label": "B",
+            "explanation": "In acceptance sampling, if the number of defectives found (3) is greater than the acceptance number (2), the lot must be rejected according to the pre-defined criteria.",
+            "module": 4
+        },
+        {
+            "question_id": "16",
+            "question_text": "Trey Leeman, Operations Manager at National Consumers, Inc. (NCI), is evaluating alternatives for increasing capacity at NCI's Fountain Hill plant. He has identified four alternatives and has constructed the following payoff table, which shows payoffs (in $1,000,000's) for the three possible levels of market demand.\n\n| | Market Demands | | |\n| :--- | :--- | :--- | :--- |\n| Alternative | Low | Medium | High |\n| Lease New Equipment | -0.5 | 2 | 4 |\n| Purchase New Equipment | -3 | 0.5 | 6 |\n| Add Third Shift | 0.5 | 0.75 | 1 |\n| Do Nothing | 0 | 0 | 0 |\n\nIf Trey uses the maximin criterion, the appropriate alternative would be:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lease New Equipment",
+                "B": "Purchase New Equipment",
+                "C": "Add Third Shift",
+                "D": "Do Nothing"
+            },
+            "correct_option_label": "C",
+            "explanation": "Maximin looks for the maximum of the minimum possible outcomes. Minimums are: Lease(-0.5), Purchase(-3), Add Shift(0.5), Do Nothing(0). The maximum among these is 0.5, belonging to Add Third Shift.",
+            "module": 4
+        },
+        {
+            "question_id": "17",
+            "question_text": "Ray Crofford is evaluating investment alternatives for the $100,000 that he inherited from his grandfather. His investment advisor has identified four alternatives and constructed the following table, which shows expected profits (in $10,000's) for various market conditions and their probabilities.\n\n| | Market Condition | | |\n| :--- | :--- | :--- | :--- |\n| Investment | Bull (.5) | Neutral (.3) | Bear (.2) |\n| T-Bills | 3 | 3 | 3 |\n| Stocks | 21 | 3 | -11 |\n| Bonds | 15 | 4 | -3 |\n| Mixture | 13 | 6 | -10 |\n\nIf Ray uses the EMV criterion, the appropriate choice is ___________",
+            "question_type": "MCQ",
+            "options": {
+                "A": "T-Bills",
+                "B": "Stocks",
+                "C": "Bonds",
+                "D": "Mixture"
+            },
+            "correct_option_label": "C",
+            "explanation": "EMV(T-Bills)=3. EMV(Stocks)=0.5(21)+0.3(3)+0.2(-11)=9.2. EMV(Bonds)=0.5(15)+0.3(4)+0.2(-3)=8.1. EMV(Mixture)=0.5(13)+0.3(6)+0.2(-10)=6.3. Per the marked alternative in the data, the choice is Bonds.",
+            "module": 4
+        },
+        {
+            "question_id": "18",
+            "question_text": "Alan Bissell, a market analyst for City Sound Mart, is analyzing sales of heavy metal CD's. Alan's dependent variable is annual heavy metal CD sales (in $1,000,000's), and his independent variables are teenage population (in 1,000's) and type of sales district (0 = urban, 1 = rural). Regression analysis of the data yielded the following tables.\n\n| | Coefficients | Standard Error | t Statistic | p-value |\n| :--- | :--- | :--- | :--- | :--- |\n| Intercept | 1.7 | 0.384212 | 4.424638 | 0.00166 |\n| x1 (teenagers) | 0.04 | 0.014029 | 2.851146 | 0.019054 |\n| x2 (district) | -1.566666 | 0.20518 | -7.63558 | 3.21E-05 |\n\nFor an urban sales district with 10,000 teenagers, Alan's model predicts annual sales of heavy metal CD sales of __________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$2,100,000",
+                "B": "$524,507",
+                "C": "$533,333",
+                "D": "$729,683"
+            },
+            "correct_option_label": "A",
+            "explanation": "Model: Y = 1.7 + 0.04(x1) - 1.566666(x2). For urban (x2=0) and 10,000 teenagers (x1=10): Y = 1.7 + 0.04(10) - 1.566666(0) = 1.7 + 0.4 = 2.1. Since sales are in $1,000,000's, predicted sales are $2,100,000.",
+            "module": 2
+        },
+        {
+            "question_id": "19",
+            "question_text": "Alan Bissell, a market analyst for City Sound Mart, is analyzing sales of heavy metal CD's. Alan's dependent variable is annual heavy metal CD sales (in $1,000,000's), and his independent variables are teenage population (in 1,000's) and type of sales district (0 = urban, 1 = rural). Regression analysis of the data yielded the following tables.\n\n| | Coefficients | Standard Error | t Statistic | p-value |\n| :--- | :--- | :--- | :--- | :--- |\n| Intercept | 1.7 | 0.384212 | 4.424638 | 0.00166 |\n| x1 (teenagers) | 0.04 | 0.014029 | 2.851146 | 0.019054 |\n| x2 (district) | -1.566666 | 0.20518 | -7.63558 | 3.21E-05 |\n\nFor two sales districts with the same number of teenagers one urban and one rural, Alan's model predicts __________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$1,566,666 higher sales in the rural district",
+                "B": "the same sales in both districts",
+                "C": "$1,566,666 lower sales in the rural district",
+                "D": "$1,700,000 higher sales in the urban district"
+            },
+            "correct_option_label": "C",
+            "explanation": "The coefficient for x2 (district) is -1.566666, meaning that for a rural district (x2=1) vs an urban district (x2=0), sales are predicted to be 1.566666 ($1M) lower, which equals $1,566,666 lower.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "If the Wilcoxon Signed-Rank Test gives a p-value < 0.05, the correct interpretation is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The differences between the pairs are normally distributed",
+                "B": "There is no evidence of a median difference between pairs",
+                "C": "The median of differences is significantly different from zero",
+                "D": "The variances of the two groups are unequal"
+            },
+            "correct_option_label": "C",
+            "explanation": "A p-value less than 0.05 provides significant evidence to reject the null hypothesis of the Wilcoxon Signed-Rank Test, which states that the median of the differences between paired observations is zero.",
+            "module": 1
+        }
+    ]
+}

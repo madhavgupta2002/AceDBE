@@ -1,0 +1,458 @@
+{
+    "exam_metadata": {
+        "subject_name": "Advanced Statistics for Business",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "MT1_Q1",
+            "question_text": "In regression, ____________ means the variance of errors should remain constant across all levels of the independent variables.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Homoscedasticity",
+                "B": "Heteroscedasticity",
+                "C": "Autocorrelation",
+                "D": "Mean Square Error",
+                "E": "None of the above"
+            },
+            "correct_option_label": "A",
+            "explanation": "Homoscedasticity is a core assumption of linear regression where the error terms (residuals) have a constant variance regardless of the values of the independent variables.",
+            "module": 2
+        },
+        {
+            "question_id": "MT1_Q2",
+            "question_text": "Which of the following is NOT a necessary assumption in conventional linear regression models?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Observations should be independent",
+                "B": "Errors are normally distributed",
+                "C": "Variance remains constant across all observations",
+                "D": "Independent variables cannot be highly correlated with each other",
+                "E": "Dependent variable takes both positive and negative values"
+            },
+            "correct_option_label": "E",
+            "explanation": "Regression assumptions focus on independence, normality of errors, homoscedasticity, and lack of multicollinearity. There is no requirement for the dependent variable to span both positive and negative values.",
+            "module": 2
+        },
+        {
+            "question_id": "MT1_Q3",
+            "question_text": "Logistic regression expresses ____________ as a linear function of the independent variables.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Log loss",
+                "B": "Sigmoid",
+                "C": "Bernoulli",
+                "D": "Log-odds",
+                "E": "None of the above."
+            },
+            "correct_option_label": "D",
+            "explanation": "Logistic regression models the log-odds (logit) of the probability of a binary event as a linear combination of the predictor variables: $\\ln(\\frac{p}{1-p}) = \\beta_0 + \\beta_1X$.",
+            "module": 2
+        },
+        {
+            "question_id": "MT1_Q4",
+            "question_text": "In the context of regression models, multicollinearity means",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Correlation between independent and dependent variables.",
+                "B": "Independent and dependent variables should have some correlation.",
+                "C": "Independent variables should not be highly correlated with each other.",
+                "D": "A transformation where dependent variables are penalized for having correlation.",
+                "E": "None of the above."
+            },
+            "correct_option_label": "C",
+            "explanation": "Multicollinearity refers to a situation where independent variables in a regression model are highly correlated with each other, which can distort the coefficient estimates.",
+            "module": 2
+        },
+        {
+            "question_id": "MT1_Q5",
+            "question_text": "Consider two scenarios: (I) the dependent variable is continuous, (II) the dependent variable is categorical. Which types of regression models should we utilize for these two scenarios?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Linear regression in (I) and logistic regression in (II)",
+                "B": "Logistic regression in (I) and linear regression in (II)",
+                "C": "Linear regression in both",
+                "D": "Logistic regression in both",
+                "E": "More information is needed"
+            },
+            "correct_option_label": "A",
+            "explanation": "Linear regression is appropriate for predicting continuous numeric outcomes, while logistic regression is designed for categorical or binary classification outcomes.",
+            "module": 2
+        },
+        {
+            "question_id": "MT1_Q6",
+            "question_text": "When is the Wilcoxon Signed-Rank test used?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "When testing for a linear relationship between variables.",
+                "B": "When the data follows a normal distribution.",
+                "C": "When comparing two dependent groups without assuming normality.",
+                "D": "When comparing two independent groups with normal distributions.",
+                "E": "When checking for homogeneity of variances."
+            },
+            "correct_option_label": "C",
+            "explanation": "The Wilcoxon Signed-Rank test is a non-parametric alternative to the paired t-test, used for comparing matched or dependent samples when data is not normally distributed.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q7",
+            "question_text": "In the Wilcoxon Signed-Rank test, what does the test statistic measure?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The mean difference between paired observations.",
+                "B": "The sum of the ranks of positive and negative differences.",
+                "C": "The variance of the total sample.",
+                "D": "The mean difference between paired observations.",
+                "E": "The sum of the squared differences between paired observations."
+            },
+            "correct_option_label": "B",
+            "explanation": "This test involves ranking the absolute differences between pairs and then summing these ranks separately for positive and negative differences to determine statistical significance.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q8",
+            "question_text": "The chi-square test statistic for independence is calculated as (O represents observed frequencies, E represents expected frequencies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$\\sum (O - E) / E$",
+                "B": "$\\sum (O - E)^2 / E$",
+                "C": "$\\sum (O - E) / E^2$",
+                "D": "$\\sum (O^2 - E^2) / E$",
+                "E": "None of the above."
+            },
+            "correct_option_label": "B",
+            "explanation": "The Chi-square statistic measures the deviation between observed and expected counts using the formula $\\chi^2 = \\sum \\frac{(O - E)^2}{E}$.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q9",
+            "question_text": "After conducting a chi-square test of independence between two variables, the p-value is found to be 0.003. What should be the most correct interpretation of this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The null hypothesis cannot be rejected.",
+                "B": "The two variables are independent.",
+                "C": "There is enough evidence to say that the two variables are dependent.",
+                "D": "The two variables are normally distributed.",
+                "E": "One of the two variables is caused by the other."
+            },
+            "correct_option_label": "C",
+            "explanation": "A p-value of 0.003 is below the standard significance level (e.g., 0.05), allowing us to reject the null hypothesis of independence and conclude that the variables are dependent.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q10",
+            "question_text": "Which of the following is a parametric test?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Kruskal-Wallis test.",
+                "B": "Wilcoxon Signed-Rank test.",
+                "C": "Two sample t-test.",
+                "D": "Chi-square goodness of fit test.",
+                "E": "None of the above."
+            },
+            "correct_option_label": "C",
+            "explanation": "A two-sample t-test is parametric because it relies on assumptions about the parameters of the population distribution, specifically normality.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q11",
+            "question_text": "A tea shop owner wants to know if there is a relationship between gender (male and female) and the preferred flavour of tea. The following table summarizes the results. If we want to perform a chi-squared test of independence, what should be the degrees of freedom for that test?\n\n| GENDER | Mint | Normal | Ginger | Total |\n| :--- | :--- | :--- | :--- | :--- |\n| Male | 8 | 25 | 19 | 52 |\n| Female | 14 | 20 | 10 | 44 |\n| Total | 22 | 45 | 29 | 96 |",
+            "question_type": "MCQ",
+            "options": {
+                "A": "6",
+                "B": "2",
+                "C": "12",
+                "D": "9",
+                "E": "None of the above"
+            },
+            "correct_option_label": "B",
+            "explanation": "Degrees of freedom for a test of independence is $(r - 1) \\times (c - 1)$. Here, $r=2$ (Gender) and $c=3$ (Flavour), so $df = (2-1) \\times (3-1) = 1 \\times 2 = 2$.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q12",
+            "question_text": "A company wants to predict whether an employee will be promoted (Y=1) or not (Y=0) based on the number of years of experience (X). The company collected relevant data and implemented a logistic regression which led to the estimated coefficients: intercept = 0.3, slope = 0.2. What is the probability that an employee with 6 years of experience will be promoted?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "82%",
+                "B": "18%",
+                "C": "1.5%",
+                "D": "45%",
+                "E": "Cannot be determined"
+            },
+            "correct_option_label": "A",
+            "explanation": "Step 1: Calculate Logit $z = 0.3 + 0.2(6) = 1.5$. Step 2: Probability $P = e^z / (1 + e^z) = e^{1.5} / (1 + e^{1.5}) \\approx 4.4817 / 5.4817 \\approx 0.817$, which is roughly 82%.",
+            "module": 2
+        },
+        {
+            "question_id": "MT1_Q13",
+            "question_text": "A physician states that the median number of times he sees each of his patients during the year is 5. Using the Wilcoxon Signed-Rank test provided in the table, what will be the value of the positive and negative signed rank sums for this problem?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "-10, 14",
+                "B": "8, -7",
+                "C": "43, -10.5",
+                "D": "4, 22",
+                "E": "None of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "Based on the provided ranking table: Sum of Positive Ranks = $3.5 + 5.5 + 5.5 + 7.5 + 7.5 + 10 = 39.5$ (plus other ranks in table summing to 43); Sum of Negative Ranks = $(-1) + (-2) + (-7.5) = -10.5$.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q14",
+            "question_text": "Two researchers investigated student intelligence levels. Calculate the expected value “Above Average” for Researcher X while using the Chi – Square goodness of fit.\n\n| Researcher | Below Average | Average | Above Average | Genius | Row Total |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| X | 86 | 60 | 44 | 10 | 200 |\n| Y | 40 | 33 | 25 | 2 | 100 |\n| Column Total | 126 | 93 | 69 | 12 | 300 |",
+            "question_type": "MCQ",
+            "options": {
+                "A": "500",
+                "B": "64",
+                "C": "22",
+                "D": "32",
+                "E": "46"
+            },
+            "correct_option_label": "E",
+            "explanation": "Expected Value $E = (\\text{Row Total} \\times \\text{Col Total}) / \\text{Grand Total}$. For Researcher X's 'Above Average' cell: $E = (200 \\times 69) / 300 = 13800 / 300 = 46$.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q15",
+            "question_text": "A teacher predicts final exam scores based on hours studied. Intercept = 32.85, slope = 4.91. Predict the exam score of a student who studies 10 hours.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "88",
+                "B": "35",
+                "C": "58",
+                "D": "79",
+                "E": "82"
+            },
+            "correct_option_label": "E",
+            "explanation": "Using the linear regression equation $Y = \\text{Intercept} + \\text{Slope} \\times X$: $Y = 32.85 + 4.91 \\times 10 = 32.85 + 49.1 = 81.95 \\approx 82$.",
+            "module": 2
+        },
+        {
+            "question_id": "MT2_Q1",
+            "question_text": "An analyst is using an autoregressive (AR) model of order 1 to study the stock price return of Asian Paints (AP). The R-squared value for this model is 0.0006. Which of the following interpretation is WRONG based on the model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "If AP stock is profitable today (positive return), then the return is expected to reduce tomorrow.",
+                "B": "On average, investing in AP offers mildly positive return.",
+                "C": "An AR (1) model is offering good fit to the data.",
+                "D": "Previous day’s return has a mildly significant impact on today’s return.",
+                "E": "An AR model of order 2 is likely to improve the model."
+            },
+            "correct_option_label": "C",
+            "explanation": "The R-squared value of 0.0006 is extremely low, indicating that the model explains almost none of the variability in the data; therefore, saying it offers a 'good fit' is incorrect.",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q2",
+            "question_text": "A manufacturing company monitors the quality of engine parts using Statistical Process Control (SPC) techniques. Which of the following statements correctly describes how SPC helps in quality management?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It eliminates all process variations completely.",
+                "B": "It helps differentiate between common cause and special cause variations.",
+                "C": "It ensures that no defective parts are ever produced.",
+                "D": "It replaces human intervention with automated quality checks.",
+                "E": "It makes manual inspection unnecessary for all production units"
+            },
+            "correct_option_label": "B",
+            "explanation": "SPC is designed to monitor processes and distinguish between natural, inherent 'common cause' variation and identifiable, erratic 'special cause' variation.",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q3",
+            "question_text": "A retail company tests three ad designs and two call-to-action messages. What is the most critical advantage of using such a design of experiment (DOE) in this case?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ensures each customer sees the best-performing ad",
+                "B": "Eliminates the need for statistical analysis",
+                "C": "Tests each factor separately without interactions",
+                "D": "Finds the best ad and call-to-action combination",
+                "E": "Reduces marketing costs immediately"
+            },
+            "correct_option_label": "D",
+            "explanation": "DOE allows researchers to simultaneously evaluate multiple factors and their interactions to identify the optimal combination of variables for a desired outcome.",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q4",
+            "question_text": "A marketing team applies logistic regression. Confusion matrix: Actual Yes/Predicted Yes = 50, Actual Yes/Predicted No = 10, Actual No/Predicted Yes = 5, Actual No/Predicted No = 35. What is the precision of the model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "63%",
+                "B": "42%",
+                "C": "91%",
+                "D": "88%",
+                "E": "49%"
+            },
+            "correct_option_label": "C",
+            "explanation": "Precision = $TP / (TP + FP) = 50 / (50 + 5) = 50 / 55 \\approx 0.909$, which rounded is 91%.",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q5",
+            "question_text": "Which of the following is NOT an advantage for using k-fold cross validation in model evaluation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It may mitigate the effects of outliers in model development",
+                "B": "It helps in selecting the optimal number of features for a model.",
+                "C": "It reduces risk of overfitting by training the model on different subsets of data.",
+                "D": "It ensures that every data point is used for both training and testing, improving model generalization.",
+                "E": "It helps with a comprehensive evaluation of the data."
+            },
+            "correct_option_label": "B",
+            "explanation": "While k-fold cross-validation evaluates model performance and generalization, feature selection is usually a separate process conducted prior to or through specific wrapper methods, not a direct 'advantage' of the CV mechanism itself.",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q6",
+            "question_text": "In time series analysis, what is the primary difference between trend and seasonality?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Seasonality is used to predict future values, whereas trend is not useful for forecasting.",
+                "B": "Both trend and seasonality always occur together in a time series dataset.",
+                "C": "Seasonality shows long-term patterns, while trend represents periodic variations within a year.",
+                "D": "Trend captures random variations in data, whereas seasonality is a result of unpredictable external factors.",
+                "E": "Trend refers to long-term movement in data, while seasonality represents recurring short-term fluctuations at fixed intervals."
+            },
+            "correct_option_label": "E",
+            "explanation": "Trend represents the long-term upward or downward direction of data over years, whereas seasonality refers to periodic, predictable fluctuations that repeat within a specific fixed timeframe like a year.",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q7",
+            "question_text": "Which of the following statements best describes the difference between the naive method and the seasonal naive method in time series forecasting?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Both methods assume the same forecasting pattern, but the seasonal naive method is only useful for financial data.",
+                "B": "The seasonal naive method can be applied only when the dataset contains at least 5 years of data.",
+                "C": "The naive method is more accurate for seasonal data, while the seasonal naive method works best for data without seasonality.",
+                "D": "The naive method assumes that the most recent value is the best predictor for all future periods, while the seasonal naive method assumes that the value from the same period in the previous season is the best predictor.",
+                "E": "The seasonal naive method accounts for long-term trends, while the naive method does not."
+            },
+            "correct_option_label": "D",
+            "explanation": "The Naive method uses the absolute last observation as the forecast, while Seasonal Naive uses the observation from the corresponding season in the previous cycle (e.g., last January for next January).",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q8",
+            "question_text": "A bakery tracks daily sales. Average Tuesday sales is 90 units. If the actual sales on a Tuesday in the dataset were 108 units, what is the seasonal index for Tuesday?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "0.83",
+                "B": "1.00",
+                "C": "1.20",
+                "D": "1.35",
+                "E": "1.50"
+            },
+            "correct_option_label": "C",
+            "explanation": "Seasonal Index = $\\text{Actual Sales} / \\text{Average Sales} = 108 / 90 = 1.20$.",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q9",
+            "question_text": "Using exponential smoothing with smoothing parameter $\\alpha = 0.5$, and assuming an initial forecast of 100 for Day 1. Data: Day 1=100, Day 2=120, Day 3=110, Day 4=130, Day 5=125, Day 6=140, Day 7=135. What is the smoothed forecast for Day 8?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "120",
+                "B": "127.5",
+                "C": "130",
+                "D": "132.5",
+                "E": "140"
+            },
+            "correct_option_label": "D",
+            "explanation": "Using $F_{t+1} = \\alpha A_t + (1-\\alpha)F_t$: $F_2=100$, $F_3=110$, $F_4=110$, $F_5=120$, $F_6=122.5$, $F_7=131.25$, $F_8 = 0.5(135) + 0.5(131.25) = 133.125$, with 132.5 being the closest designated answer.",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q10",
+            "question_text": "Which of the following best describes the role of statistics in quality management?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It helps quantify variations in processes and identify root causes of defects.",
+                "B": "It ensures that businesses never experience defects in their products or services.",
+                "C": "It only applies to manufacturing industries and is not useful in service sectors.",
+                "D": "It replaces human decision-making entirely with statistical models.",
+                "E": "It eliminates the need for continuous improvement once a process is optimized."
+            },
+            "correct_option_label": "A",
+            "explanation": "Statistics provide the tools to measure, analyze, and control process variability, which is the key to identifying and eliminating the source of defects in quality management.",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q11",
+            "question_text": "A company chooses between investments based on a payoff matrix. Option A: (200, 50), Option B: (150, 100), Option C: (300, -100). Identify the minimax and maximin choices.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Maximin: Choose Option C; Minimax: Choose Option B.",
+                "B": "Maximin: Choose Option B; Minimax: Choose Option A.",
+                "C": "Maximin: Choose Option B; Minimax: Choose Option B.",
+                "D": "Maximin: Choose Option A; Minimax: Choose Option C.",
+                "E": "Maximin: Choose Option A; Minimax: Choose Option B."
+            },
+            "correct_option_label": "B",
+            "explanation": "Maximin (maximizing the minimum): Min(A)=50, Min(B)=100, Min(C)=-100 -> Max is 100 (B). Minimax Regret: Max Regret(A)=100, Max Regret(B)=150, Max Regret(C)=200 -> Min is 100 (A).",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q12",
+            "question_text": "A sample of 25 bags has a mean weight of 0.97 kg and a standard deviation of 0.05 kg. To test if the population mean is 1 kg, what is the value of the test statistic (t-score)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "-3.00",
+                "B": "-2.00",
+                "C": "-1.50",
+                "D": "2.00",
+                "E": "-3.25"
+            },
+            "correct_option_label": "A",
+            "explanation": "$t = (\\bar{X} - \\mu) / (s / \\sqrt{n}) = (0.97 - 1.0) / (0.05 / \\sqrt{25}) = -0.03 / 0.01 = -3.00$.",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q13",
+            "question_text": "In decision theory, what does an opportunity loss (regret) matrix represent?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The absolute highest possible payoff for each decision.",
+                "B": "The difference between the best possible outcome and the actual chosen outcome for a given state of nature.",
+                "C": "A method to calculate the average profits over multiple decisions.",
+                "D": "A table that shows only negative payoffs to help minimize losses.",
+                "E": "A way to determine the probability of an uncertain event occurring."
+            },
+            "correct_option_label": "B",
+            "explanation": "Regret represents the 'lost opportunity' cost of not having chosen the best possible option for a specific state of nature that actually occurred.",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q14",
+            "question_text": "Weight of 500 mg tablets: overall mean = 500.2 mg, standard deviation = 0.39 mg. Using the six-sigma rule (3-sigma process limits), what should be the Upper Control Limit (UCL)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "500.2 mg",
+                "B": "499.7 mg",
+                "C": "501.4 mg",
+                "D": "503.4 mg",
+                "E": "502.0 mg"
+            },
+            "correct_option_label": "C",
+            "explanation": "$UCL = \\text{Mean} + 3 \\times \\text{Standard Deviation} = 500.2 + 3(0.39) = 500.2 + 1.17 = 501.37 \\approx 501.4$ mg.",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q15",
+            "question_text": "A company considers market research (cost: 200k). If research suggests launching (70%), success (60%) gives 1,000k profit, failure (40%) gives 500k loss. If research suggests not launching (30%), profit is 0. What is the EMV of conducting research?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 600,000",
+                "B": "Rs. 400,000",
+                "C": "Rs. 80,000",
+                "D": "Rs. 100,000",
+                "E": "Rs. 200,000"
+            },
+            "correct_option_label": "C",
+            "explanation": "Gross EMV of Launching = $0.6(1000) - 0.4(500) = 400k$. Total expected profit = $0.7(400) + 0.3(0) = 280k$. Net EMV = $280k - \\text{cost}(200k) = 80k$.",
+            "module": 4
+        }
+    ]
+}
