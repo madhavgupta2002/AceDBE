@@ -1,0 +1,568 @@
+{
+    "exam_metadata": {
+        "subject_name": "Foundation of Business Communication II",
+        "exam_date": "27 September 2025"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "In the communication process, decoding is done by:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Noise",
+                "B": "Receiver",
+                "C": "Sender",
+                "D": "Channel"
+            },
+            "correct_option_label": "B",
+            "explanation": "In the communication process, the receiver is responsible for decoding and interpreting the sensory signals into a meaningful message.",
+            "module": "1"
+        },
+        {
+            "question_id": "2",
+            "question_text": "Which is an example of written communication?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Email",
+                "B": "Gesture",
+                "C": "Face-to-face talk",
+                "D": "Telephone call"
+            },
+            "correct_option_label": "A",
+            "explanation": "Email is a digital form of written correspondence, unlike gestures (non-verbal) or phone calls (oral).",
+            "module": "2"
+        },
+        {
+            "question_id": "3",
+            "question_text": "Which principle ensures business communication is easy to understand?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ambiguity",
+                "B": "Lengthiness",
+                "C": "Confusion",
+                "D": "Clarity"
+            },
+            "correct_option_label": "D",
+            "explanation": "Clarity, one of the 7Cs, ensures that simple language and logic are used so the message is not ambiguous or confusing.",
+            "module": "1"
+        },
+        {
+            "question_id": "4",
+            "question_text": "Which is the most suitable channel for urgent internal communication?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Monthly report",
+                "B": "Telephone call",
+                "C": "Circular",
+                "D": "Notice board"
+            },
+            "correct_option_label": "B",
+            "explanation": "A telephone call allows for immediate transmission and real-time feedback, making it ideal for urgent matters compared to written reports or notices.",
+            "module": "1"
+        },
+        {
+            "question_id": "5",
+            "question_text": "Which type of communication flows from employees to managers?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Upward",
+                "B": "Grapevine",
+                "C": "Lateral",
+                "D": "Downward"
+            },
+            "correct_option_label": "A",
+            "explanation": "Upward communication follows the organizational hierarchy from subordinates to superiors, typically for reporting or feedback.",
+            "module": "1"
+        },
+        {
+            "question_id": "6",
+            "question_text": "Which of these is a disadvantage of oral communication?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Clarity",
+                "B": "Personal touch",
+                "C": "Quick feedback",
+                "D": "No permanent record"
+            },
+            "correct_option_label": "D",
+            "explanation": "Oral communication is ephemeral; unless recorded, it does not leave a permanent written record for legal or archival purposes.",
+            "module": "1"
+        },
+        {
+            "question_id": "7",
+            "question_text": "Which element of communication ensures the message is received as intended?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Confusion",
+                "B": "Grapevine",
+                "C": "Noise",
+                "D": "Feedback"
+            },
+            "correct_option_label": "D",
+            "explanation": "Feedback closes the communication loop, allowing the sender to verify if the receiver has interpreted the message with high fidelity.",
+            "module": "1"
+        },
+        {
+            "question_id": "8",
+            "question_text": "Which of these is an example of external communication?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Discussion with colleague",
+                "B": "Staff meeting",
+                "C": "Email to client",
+                "D": "Office circular"
+            },
+            "correct_option_label": "C",
+            "explanation": "External communication involves interacting with stakeholders outside the organization, such as customers, clients, or investors.",
+            "module": "1"
+        },
+        {
+            "question_id": "9",
+            "question_text": "Which of the following is a business document?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Novel",
+                "B": "Poem",
+                "C": "Story",
+                "D": "Invoice"
+            },
+            "correct_option_label": "D",
+            "explanation": "An invoice is a specialized commercial document used for recording financial transactions, identifying it as a business document.",
+            "module": "2"
+        },
+        {
+            "question_id": "10",
+            "question_text": "Which section of a business report presents the findings?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Title page",
+                "B": "Body",
+                "C": "Introduction",
+                "D": "References"
+            },
+            "correct_option_label": "B",
+            "explanation": "The body of a report is where the actual content, detailed data, and analysis of findings are presented to the reader.",
+            "module": "2"
+        },
+        {
+            "question_id": "11",
+            "question_text": "The process of drafting comes:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "After proofreading",
+                "B": "Before planning",
+                "C": "After sending",
+                "D": "After planning"
+            },
+            "correct_option_label": "D",
+            "explanation": "In the writing process, drafting follows the planning stage where the purpose and outline have already been established.",
+            "module": "2"
+        },
+        {
+            "question_id": "12",
+            "question_text": "Which type of business document is commonly used for quick notes in the office?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Resume",
+                "B": "Advertisement",
+                "C": "Memo",
+                "D": "Invoice"
+            },
+            "correct_option_label": "C",
+            "explanation": "A memorandum (memo) is used for short, informal internal communication within an organization.",
+            "module": "2"
+        },
+        {
+            "question_id": "13",
+            "question_text": "Proofreading is mainly concerned with:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Language errors",
+                "B": "Graphics",
+                "C": "Audience analysis",
+                "D": "Ideas"
+            },
+            "correct_option_label": "A",
+            "explanation": "Proofreading is the final stage of editing focused on correcting technical errors in language, such as grammar, spelling, and punctuation.",
+            "module": "2"
+        },
+        {
+            "question_id": "14",
+            "question_text": "Which of these is an internal communication tool?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Staff notice",
+                "B": "Newspaper ad",
+                "C": "Brochure",
+                "D": "TV commercial"
+            },
+            "correct_option_label": "A",
+            "explanation": "A staff notice is an internal tool used to convey information to employees within the organization.",
+            "module": "2"
+        },
+        {
+            "question_id": "15",
+            "question_text": "Which of these is a non-verbal cue?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Report",
+                "B": "Email",
+                "C": "Gesture",
+                "D": "Letter"
+            },
+            "correct_option_label": "C",
+            "explanation": "Gestures are part of non-verbal communication (Kinesics), conveying meaning through physical body movements rather than words.",
+            "module": "1"
+        },
+        {
+            "question_id": "16",
+            "question_text": "Which of the following is a barrier to interpersonal communication?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Respect",
+                "B": "Active listening",
+                "C": "Prejudice",
+                "D": "Clarity"
+            },
+            "correct_option_label": "C",
+            "explanation": "Prejudice acts as a psychological filter that can distort messages and lead to misinterpretation, serving as a barrier to effective communication.",
+            "module": "1"
+        },
+        {
+            "question_id": "17",
+            "question_text": "Which is an example of lateral communication?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customer to company",
+                "B": "Colleague to colleague",
+                "C": "Employee to manager",
+                "D": "Manager to staff"
+            },
+            "correct_option_label": "B",
+            "explanation": "Lateral communication occurs between individuals at the same level of an organization, such as peers or colleagues.",
+            "module": "1"
+        },
+        {
+            "question_id": "18",
+            "question_text": "Which of these demonstrates active listening?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Daydreaming",
+                "B": "Interrupting often",
+                "C": "Making eye contact",
+                "D": "Looking away"
+            },
+            "correct_option_label": "C",
+            "explanation": "Active listening involves engaging with the speaker through non-verbal signals like eye contact to show focus and undivided attention.",
+            "module": "3"
+        },
+        {
+            "question_id": "19",
+            "question_text": "A small group meeting allows for:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sharing of ideas",
+                "B": "Ignoring opinions",
+                "C": "Avoiding feedback",
+                "D": "Silent communication"
+            },
+            "correct_option_label": "A",
+            "explanation": "Small groups (3-10 people) typically gather for a common purpose to ideate, share views, and solve problems collaboratively.",
+            "module": "3"
+        },
+        {
+            "question_id": "20",
+            "question_text": "Eye contact during interaction usually suggests:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Disinterest",
+                "B": "Confidence",
+                "C": "Dishonesty",
+                "D": "Anger"
+            },
+            "correct_option_label": "B",
+            "explanation": "In most professional settings, eye contact is a non-verbal signal that builds trust and projects self-assurance and confidence.",
+            "module": "3"
+        },
+        {
+            "question_id": "21",
+            "question_text": "A good introduction in a presentation should:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ignore the audience",
+                "B": "Summarise the whole talk",
+                "C": "Capture attention and state purpose",
+                "D": "Be very long"
+            },
+            "correct_option_label": "C",
+            "explanation": "A presentation introduction should include an attention getter and clearly state the business objective to engage the audience early.",
+            "module": "4"
+        },
+        {
+            "question_id": "22",
+            "question_text": "Which of the following should be avoided in presentations?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Eye contact",
+                "B": "Using visuals",
+                "C": "Clear structure",
+                "D": "Overloading slides with text"
+            },
+            "correct_option_label": "D",
+            "explanation": "Overloading slides with text distracts the audience and often leads them to stop listening to the speaker to read the slides instead.",
+            "module": "4"
+        },
+        {
+            "question_id": "23",
+            "question_text": "Which is the best way to conclude a business presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Start a new topic",
+                "B": "Summarise key points",
+                "C": "Tell unrelated jokes",
+                "D": "Leave without saying anything"
+            },
+            "correct_option_label": "B",
+            "explanation": "The conclusion (Close) should recap and summarize main points to reinforce the message and aid the audience's retention.",
+            "module": "4"
+        },
+        {
+            "question_id": "24",
+            "question_text": "The main aim of visual aids is to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Confuse",
+                "B": "Replace the speaker",
+                "C": "Support the message",
+                "D": "Distract"
+            },
+            "correct_option_label": "C",
+            "explanation": "Visual aids are meant to provide an additional content channel that synergizes with the speech to improve impact and retention.",
+            "module": "4"
+        },
+        {
+            "question_id": "25",
+            "question_text": "Which of these shows poor presentation practice?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Summarising",
+                "B": "Engaging with audience",
+                "C": "Reading directly from slides",
+                "D": "Speaking clearly"
+            },
+            "correct_option_label": "C",
+            "explanation": "Reading directly from slides undermines the presenter's credibility and suggests they are not prepared or knowledgeable about the subject.",
+            "module": "4"
+        },
+        {
+            "question_id": "26",
+            "question_text": "Which is an example of a resource for preparing presentations?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Gossip",
+                "B": "Personal diary",
+                "C": "Research material",
+                "D": "Random talk"
+            },
+            "correct_option_label": "C",
+            "explanation": "Research material provides the data, evidence, and credible information necessary to build a convincing and effective business presentation.",
+            "module": "4"
+        },
+        {
+            "question_id": "27",
+            "question_text": "Audience analysis helps the presenter:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Avoid preparation",
+                "B": "Create confusion",
+                "C": "Ignore feedback",
+                "D": "Adjust message for listeners"
+            },
+            "correct_option_label": "D",
+            "explanation": "Understanding the audience's profiles and needs allows the presenter to tailor their language and content for maximum impact.",
+            "module": "4"
+        },
+        {
+            "question_id": "28",
+            "question_text": "Which of these is least effective in keeping audience interest?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Monotone delivery",
+                "B": "Good visuals",
+                "C": "Clear voice",
+                "D": "Interaction"
+            },
+            "correct_option_label": "A",
+            "explanation": "A monotone delivery lacks variation in speed, pitch, and volume, which quickly leads to audience disorientation and loss of interest.",
+            "module": "4"
+        },
+        {
+            "question_id": "29",
+            "question_text": "What is the purpose of rehearsing a presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduce nervousness and improve flow",
+                "B": "Waste time",
+                "C": "Avoid feedback",
+                "D": "Memorise every word"
+            },
+            "correct_option_label": "A",
+            "explanation": "Rehearsing helps a speaker build confidence, manage nervous energy, and ensure smooth transitions between points and visuals.",
+            "module": "4"
+        },
+        {
+            "question_id": "30",
+            "question_text": "Which of the following is a disadvantage of using too many visuals?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Better understanding",
+                "B": "Retention",
+                "C": "Clarity",
+                "D": "Audience confusion"
+            },
+            "correct_option_label": "D",
+            "explanation": "Excessive or complex visual elements can overwhelm the audience, making it difficult for them to process information and causing confusion.",
+            "module": "4"
+        },
+        {
+            "question_id": "31",
+            "question_text": "Which of these is not a feature of effective communication?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Feedback",
+                "B": "Understanding",
+                "C": "Clarity",
+                "D": "Noise"
+            },
+            "correct_option_label": "D",
+            "explanation": "Noise is a barrier or inhibitor that disrupts the communication process, hindering the effective exchange of information.",
+            "module": "1"
+        },
+        {
+            "question_id": "32",
+            "question_text": "Which step comes last in the writing process?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Planning",
+                "B": "Revising",
+                "C": "Drafting",
+                "D": "Proofreading"
+            },
+            "correct_option_label": "D",
+            "explanation": "Proofreading is the final check for language errors (grammar, spelling, punctuation) before the document is published or sent.",
+            "module": "2"
+        },
+        {
+            "question_id": "33",
+            "question_text": "Paraphrasing is important in active listening because ________________________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "it allows the listener to interrupt the speaker and provide his of her own opinion",
+                "B": "it helps ensure the listener has understood the message by restating it in one’s own words",
+                "C": "it gives the speaker the chance to talk more without interruption",
+                "D": "it shows the listener is bored and wants to finish the conversation quickly"
+            },
+            "correct_option_label": "B",
+            "explanation": "Paraphrasing confirms comprehension by condensing the speaker's message in the listener's mind, ensuring a shared understanding.",
+            "module": "3"
+        },
+        {
+            "question_id": "34",
+            "question_text": "Sneha has been invited to give a presentation at her workplace. She is nervous because she has always struggled with Glossophobia.\n\nWhich one of the following options will NOT help Sneha to overcome her nervousness?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rehearsing in front of a small, supportive audience before the actual presentation.",
+                "B": "Focusing on deep breathing and mindfulness techniques.",
+                "C": "Visualizing herself speaking confidently to an encouraging audience.",
+                "D": "Focusing meticulously on getting every word or movement perfectly."
+            },
+            "correct_option_label": "D",
+            "explanation": "Focusing on absolute perfection increases anxiety; it is better to focus on positive outcomes and connecting with friendly faces.",
+            "module": "4"
+        },
+        {
+            "question_id": "35",
+            "question_text": "Which of the following statements best explains the significance of the inverted pyramid approach in writing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It ensures that all points in the article receive equal attention, to improve readability.",
+                "B": "It emphasizes starting with less important information and gradually building up to the key points.",
+                "C": "It arranges the content without any clear prioritization of information.",
+                "D": "It organizes the content by presenting the most crucial information first, followed by supporting details in decreasing order of importance."
+            },
+            "correct_option_label": "D",
+            "explanation": "The inverted pyramid prioritizes the core message or conclusion upfront, which is essential for busy managers who have limited time.",
+            "module": "2"
+        },
+        {
+            "question_id": "36",
+            "question_text": "Open-ended questions are asked when you want to ____________________",
+            "question_type": "MCQ",
+            "options": {
+                "A": "create a non- threatening and supportive environment for communication.",
+                "B": "verify what is already known.",
+                "C": "clarify what is already known.",
+                "D": "induce stress in the interviewee during interviews."
+            },
+            "correct_option_label": "A",
+            "explanation": "Open-ended questions give the respondent latitude to express themselves, fostering a supportive environment and encouraging detailed information.",
+            "module": "3"
+        },
+        {
+            "question_id": "37",
+            "question_text": "Which of the following is least likely to be a psychological characteristic of someone suffering from Glossophobia?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Anticipatory anxiety weeks before a speaking event.",
+                "B": "Intense self-doubt about one's ability to communicate effectively in public.",
+                "C": "Experiencing symptoms like rapid heartbeat, dry mouth, or nausea when faced with public speaking.",
+                "D": "A tendency to seek out speaking opportunities in social settings."
+            },
+            "correct_option_label": "D",
+            "explanation": "Glossophobia is the fear of public speaking; sufferers typically avoid speaking events rather than seeking them out.",
+            "module": "4"
+        },
+        {
+            "question_id": "38",
+            "question_text": "Which of the following strategies best demonstrates emotional intelligence when managing audience interactions after a presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Agreeing with all feedback to avoid confrontation, regardless of its relevance or accuracy.",
+                "B": "Responding to all feedback with detailed justifications to prove your expertise.",
+                "C": "Acknowledging both positive and negative feedback without becoming defensive, and using it to improve future presentations.",
+                "D": "Focusing only on questions that align with the content of the presentation, while dismissing unrelated inquiries."
+            },
+            "correct_option_label": "C",
+            "explanation": "Emotional intelligence involves managing interactions by staying cool, listening without reacting defensively, and evaluating performance objectively.",
+            "module": "4"
+        },
+        {
+            "question_id": "39",
+            "question_text": "Which of the following statements best describes an Assertive communication style?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Speaking in a way that conflicts with others’ perspectives, asserting dominance in conversation.",
+                "B": "Speaking without regard for others’ feelings, focusing only on one’s own needs and desires.",
+                "C": "Speaking in a way that is direct, honest, and respectful while taking others’ feelings into account.",
+                "D": "Speaking in a neutral manner, avoiding conflict, and not expressing thoughts or needs clearly."
+            },
+            "correct_option_label": "C",
+            "explanation": "Assertiveness is the sweet spot between aggression and passivity, where one stands their ground while remaining respectful of others.",
+            "module": "3"
+        },
+        {
+            "question_id": "40",
+            "question_text": "You’re preparing a presentation for a potential investor pitch. You’ve been advised to follow the 10-20-30 Rule to ensure that your presentation is clear, concise, and engaging.\n\nChoose the option that best explains the reason for deploying the 10-20-30 Rule as a good strategy for the investor pitch presentation.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It forces you to focus on the most important points, delivering them concisely, and keeping the audience engaged within the time limit.",
+                "B": "It helps you include all the technical aspects of your startup, regardless of how long it takes to explain each one.",
+                "C": "It gives you enough time to present the detailed financial analysis and risk assessments that investors require.",
+                "D": "It ensures that the presentation is visually appealing by focusing on design rather than content."
+            },
+            "correct_option_label": "A",
+            "explanation": "The 10-20-30 rule (10 slides, 20 minutes, 30 point font) ensures the presentation remains focused on essential insights within a limited timeframe.",
+            "module": "4"
+        }
+    ]
+}
