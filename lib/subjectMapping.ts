@@ -69,6 +69,30 @@ export const SUBJECTS: Subject[] = [
     description: '',
     term: 2
   },
+  {
+    code: 'AE21x',
+    name: 'Foundation of Business Communication II',
+    description: '',
+    term: 2
+  },
+  {
+    code: 'SE21x',
+    name: 'Persuasive Communication',
+    description: '',
+    term: 2
+  },
+  {
+    code: 'PJ21x',
+    name: 'Venturing on a Budget: Rs.250 Venture',
+    description: '',
+    term: 2
+  },
+  {
+    code: 'ID21x',
+    name: 'Website Development',
+    description: '',
+    term: 2
+  },
 
   // Term 4 Subjects
   {
