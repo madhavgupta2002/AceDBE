@@ -1,0 +1,568 @@
+{
+    "exam_metadata": {
+        "subject_name": "Indian Knowledge System",
+        "exam_date": "Batch 1 Mid Term"
+    },
+    "questions": [
+        {
+            "question_id": "Q1",
+            "question_text": "What term is used to describe the established tenant or accepted truth after resolving a doubt in the Indian knowledge framework?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Prameya",
+                "B": "Nirṇaya",
+                "C": "Siddhānta",
+                "D": "Pramātā"
+            },
+            "correct_option_label": "C",
+            "explanation": "In the Nyāya framework, a Siddhānta is an established tenet or conclusion reached after resolving ambiguities (Saṃśaya) through a structured process of investigation and proof.",
+            "module": "4"
+        },
+        {
+            "question_id": "Q2",
+            "question_text": "What are the three main components of the knowledge triangle as per the Nyāyaśāstra.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Prameya, Pramāṇa, Prayojana",
+                "B": "Prameya, Pramāṇa, Pramātā",
+                "C": "Pramāṇa, Pramātā, Siddhānta",
+                "D": "Prayojana, Siddhānta, Nirṇaya"
+            },
+            "correct_option_label": "B",
+            "explanation": "The knowledge triangle consists of Pramātā (the seeker/subject of knowledge), Prameya (the object of knowledge), and Pramāṇa (the means of obtaining valid knowledge).",
+            "module": "4"
+        },
+        {
+            "question_id": "Q3",
+            "question_text": "What distinguishes the Āraṇyakas from the Brāhmaṇas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They focus on philosophical interpretations of rituals",
+                "B": "They contain hymns for rituals",
+                "C": "They are exclusively about warfare",
+                "D": "They discuss political strategies"
+            },
+            "correct_option_label": "A",
+            "explanation": "While Brāhmaṇas focus on the technical and procedural details of conducting rituals, Āraṇyakas provide a deeper philosophical and symbolic meaning behind those same activities.",
+            "module": "1"
+        },
+        {
+            "question_id": "Q4",
+            "question_text": "Which school of Indian philosophy focuses primarily on explaining the external world (Jagat)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sāṅkhya",
+                "B": "Yoga",
+                "C": "Mīmāṁsā",
+                "D": "Advaita Vedānta"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Sāṅkhya school focuses on the nature of the material world (Jagat) by theorizing the evolution of Prakṛti (matter) into 23 constituent elements and its relationship with Puruṣa (consciousness).",
+            "module": "2"
+        },
+        {
+            "question_id": "Q5",
+            "question_text": "Which of the following is the purpose of Nītiśāstra?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To teach the history of ancient civilizations",
+                "B": "To lead humans towards a beautiful and happy life",
+                "C": "To document scientific knowledge",
+                "D": "To preserve social customs and practices"
+            },
+            "correct_option_label": "B",
+            "explanation": "Nītiśāstra provides ethical guidance and moral principles (Nīti means 'to lead') intended to help individuals navigate life successfully and achieve long-term happiness.",
+            "module": "4"
+        },
+        {
+            "question_id": "Q6",
+            "question_text": "Which philosophical school focuses primarily on the nature of self (Jiva)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Nyāya",
+                "B": "Vaiśeṣika",
+                "C": "Pūrva Mīmāṁsā",
+                "D": "Advaita Vedānta"
+            },
+            "correct_option_label": "D",
+            "explanation": "Advaita Vedānta focuses extensively on the Jīva (self), arguing that its true nature is identical to Brahman and that realization of this identity is the path to liberation.",
+            "module": "2"
+        },
+        {
+            "question_id": "Q7",
+            "question_text": "Which two dynasties are primarily discussed in the Itihāsa?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Maurya and Gupta",
+                "B": "Chola and Pallava",
+                "C": "Surya and Chandra",
+                "D": "Kuru and Pandya"
+            },
+            "correct_option_label": "C",
+            "explanation": "The two great epics (Itihāsas) focus on the Solar dynasty (Surya-vaṃśa) in the Rāmāyaṇa and the Lunar dynasty (Chandra-vaṃśa) in the Mahābhārata.",
+            "module": "4"
+        },
+        {
+            "question_id": "Q8",
+            "question_text": "What is the primary criterion for classifying Indian philosophical systems as astika or nastika?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Whether or not they believe in God.",
+                "B": "Their acceptance or rejection of the authority of the Vedas.",
+                "C": "Their views on karma and reincarnation.",
+                "D": "Their origin within or outside of India."
+            },
+            "correct_option_label": "B",
+            "explanation": "In Indian philosophy, schools are classified as Āstika if they accept the authority of the Vedas (even if they don't believe in Ishvara) and Nāstika if they reject it.",
+            "module": "2"
+        },
+        {
+            "question_id": "Q9",
+            "question_text": "What is the meaning of the term \"Subhāṣita\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Theorems",
+                "B": "Beautifully rendered or uttered verses with wisdom",
+                "C": "Sacred hymns",
+                "D": "A form of classical dance in Indian tradition"
+            },
+            "correct_option_label": "B",
+            "explanation": "Subhāṣitas are concise, poetic verses that express wise observations, ethical lessons, and insightful principles of life in a polished and eloquent manner.",
+            "module": "4"
+        },
+        {
+            "question_id": "Q10",
+            "question_text": "Which Indian philosophy focuses primarily on theistic devotion to Ishvara?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mīmāṁsā",
+                "B": "Nyāya",
+                "C": "Dvaita Vedānta",
+                "D": "Cārvāka"
+            },
+            "correct_option_label": "C",
+            "explanation": "Dvaita Vedānta, propounded by Madhvācārya, is strictly theistic, viewing the Jīva and Ishvara (Brahman) as separate and emphasizing total devotion to the Lord.",
+            "module": "2"
+        },
+        {
+            "question_id": "Q11",
+            "question_text": "Which of the following statements best describes the approach of Rāmāyaṇa and Mahābhārata?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rāmāyaṇa takes a descriptive approach, while Mahābhārata is normative",
+                "B": "Both epics follow the same approach but in different contexts",
+                "C": "Rāmāyaṇa takes a normative approach, while Mahābhārata is descriptive",
+                "D": "Mahābhārata is a myth, while Rāmāyaṇa is historical"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Rāmāyaṇa presents ideal, \"textbook\" characters and behavior (normative), whereas the Mahābhārata portrays the complex realities and moral gray areas of life as they unfold (descriptive).",
+            "module": "4"
+        },
+        {
+            "question_id": "Q12",
+            "question_text": "Which of the following best describes the primary purpose of the Vedas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To serve as a guide for a deeper understanding of the self and the world",
+                "B": "To establish rules for governance",
+                "C": "To record the historical events of India",
+                "D": "To provide scientific explanations of natural phenomena"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Vedas serve as a comprehensive repository of knowledge providing spiritual values, principles, and practices for a gainful life and ultimate self-realization.",
+            "module": "1"
+        },
+        {
+            "question_id": "Q13",
+            "question_text": "Why is \"Prayojana\" an essential component of the Indian knowledge framework?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It defines the purpose that guides knowledge creation.",
+                "B": "It is the logical reasoning behind a claim.",
+                "C": "It classifies objects into various categories.",
+                "D": "It helps in proving the correctness of a hypothesis."
+            },
+            "correct_option_label": "A",
+            "explanation": "Prayojana is the specific aim or purpose of an inquiry. In the IKS framework, knowledge creation must be driven by a relevant objective that addresses a human need or doubt.",
+            "module": "4"
+        },
+        {
+            "question_id": "Q14",
+            "question_text": "Why is it important for new knowledge to align with existing tenets?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To maintain the sanctity of tradition",
+                "B": "To prevent unnecessary confusion and contradictions",
+                "C": "To ensure all knowledge remains unchanged",
+                "D": "To avoid challenges to religious authority"
+            },
+            "correct_option_label": "B",
+            "explanation": "Aligning new claims with established Siddhānta (tenets) ensures consistency within the system and prevents logical contradictions that would render the knowledge bank unreliable.",
+            "module": "4"
+        },
+        {
+            "question_id": "Q15",
+            "question_text": "What is the primary function of Māheśvara sūtras in Sanskrit grammar?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To define Sanskrit syntax rules",
+                "B": "To organize Sanskrit phonemes systematically",
+                "C": "To list all possible words in Sanskrit",
+                "D": "To group Sanskrit verbs and nouns into categories"
+            },
+            "correct_option_label": "B",
+            "explanation": "The 14 Māheśvara sūtras organize Sanskrit phonemes (varnas) into a specific, non-arbitrary sequence used by Pāṇini to create compact, rule-based grammatical operations.",
+            "module": "3"
+        },
+        {
+            "question_id": "Q16",
+            "question_text": "What was the primary objective of Pāṇini’s grammar?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To create new words unrelated to traditional Sanskrit",
+                "B": "To document and structure the existing language systematically",
+                "C": "To simplify Sanskrit for non-native learners",
+                "D": "To eliminate complex sentence structures"
+            },
+            "correct_option_label": "B",
+            "explanation": "Pāṇini's objective in the Aṣṭādhyāyī was to 'reverse engineer' and codify the existing Sanskrit language into a precise, logical, and rule-based system of linguistic structuring.",
+            "module": "3"
+        },
+        {
+            "question_id": "Q17",
+            "question_text": "How did Chandaḥ-śāstra Piṅgala’s work on prosody (Chandaḥ-śāstra) incorporate binary concepts?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "He used symbolic representations to define complex numbers.",
+                "B": "By defining Laghu and Guru as 1 and 0 respectively, he created binary-like systems for prosody.",
+                "C": "He developed algorithms for complex mathematical calculations.",
+                "D": "He focused on phonetics without incorporating binary concepts."
+            },
+            "correct_option_label": "B",
+            "explanation": "Piṅgala used the two basic types of syllables (Laghu and Guru) to create permutations representing metrical patterns, which is the earliest known use of binary-like systems and sequences.",
+            "module": "5"
+        },
+        {
+            "question_id": "Q18",
+            "question_text": "A modern legal system often struggles with ethical vs. legal dilemmas. Which of the following texts would provide better insight into handling such dilemmas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rāmāyaṇa, as it presents clear moral choices",
+                "B": "Mahābhārata, as it explores complex ethical situations",
+                "C": "Purāṇa, as they offer a vast collection of stories",
+                "D": "None of the above, as all of them focus on mythology rather than ethics"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Mahābhārata is the primary text for exploring 'Reality' and complex human dilemmas, showcasing various characters who must navigate conflicting duties and moral 'shades of gray'.",
+            "module": "4"
+        },
+        {
+            "question_id": "Q19",
+            "question_text": "A student wants to study the logic behind perception and inference. Which Indian school should they explore?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mīmāṁsā",
+                "B": "Advaita Vedānta",
+                "C": "Nyāya",
+                "D": "Sāṅkhya"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Nyāya school is the foundation for logic and epistemology, focusing specifically on the legitimate means of knowledge (Pramāṇas) such as perception (Pratyakṣa) and inference (Anumāna).",
+            "module": "4"
+        },
+        {
+            "question_id": "Q20",
+            "question_text": "Which of the following is true about Vyākaraṇa as a Vedāṅgas ?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It deals with the meaning of words in the Vedic texts.",
+                "B": "It provides the grammatical structure necessary for understanding Vedic Sanskrit.",
+                "C": "It outlines the rituals required in Vedic practices.",
+                "D": "It ensures the proper timing of Vedic rituals."
+            },
+            "correct_option_label": "B",
+            "explanation": "As a Vedāṅga (auxiliary science), Vyākaraṇa (Grammar) provides the essential linguistic and syntactical framework needed to accurately understand, analyze, and preserve the language of the Vedas.",
+            "module": "1"
+        },
+        {
+            "question_id": "Q1",
+            "question_text": "What is the primary focus of town planning according to Vāstu-śāstra ?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Construction of grand monuments",
+                "B": "Efficient utilization of available land for human habitation",
+                "C": "Expansion of urban areas into forests",
+                "D": "Maximizing population density in cities"
+            },
+            "correct_option_label": "B",
+            "explanation": "Town planning in Vāstu-śāstra is defined as a collective set of processes and methods to deploy available land for human habitation in the most efficient way possible.",
+            "module": "7"
+        },
+        {
+            "question_id": "Q2",
+            "question_text": "What was the major mathematical contribution of Mādhava of Saṅgamāgrāma?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Quadratic equations",
+                "B": "Pascal’s Triangle",
+                "C": "Infinite series approximations",
+                "D": "Fibonacci series"
+            },
+            "correct_option_label": "C",
+            "explanation": "Mādhava of Saṅgamāgrāma, the founder of the Kerala School of Mathematics, discovered several infinite series for π, sine, and cosine functions centuries before European mathematicians.",
+            "module": "5"
+        },
+        {
+            "question_id": "Q3",
+            "question_text": "What was the purpose of the reservoirs surrounding Dholāvīrā?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To provide drinking water for the city",
+                "B": "To enhance the city’s aesthetics",
+                "C": "For military defense",
+                "D": "For recreational activities"
+            },
+            "correct_option_label": "A",
+            "explanation": "Dholāvīrā utilized a sophisticated water management system consisting of a series of 16 large reservoirs to ensure a reliable water supply for the city's inhabitants.",
+            "module": "6"
+        },
+        {
+            "question_id": "Q4",
+            "question_text": "Which ancient Indian text classifies three types of water routes?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Manusmṛti",
+                "B": "Ṛgveda",
+                "C": "Rāmāyaṇa",
+                "D": "Arthaśāstra"
+            },
+            "correct_option_label": "D",
+            "explanation": "Kauṭilya's Arthaśāstra (Book 7) specifies three distinct classes of water routes: ordinary river routes (Kulya), coastal traffic routes (Kulapatha), and ocean routes (Samyanapatha).",
+            "module": "7"
+        },
+        {
+            "question_id": "Q5",
+            "question_text": "What is the primary purpose of Arthaśāstra as stated by Kauṭilya?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To provide religious guidelines for rulers",
+                "B": "To promote economic development through trade and commerce",
+                "C": "To establish a framework for state affairs, including internal administration and foreign policy",
+                "D": "To serve as a historical record of Mauryan rule"
+            },
+            "correct_option_label": "C",
+            "explanation": "Kauṭilya defined Arthaśāstra as the science dealing with the acquisition and protection of the earth, achieved through internal administration and a robust foreign policy framework.",
+            "module": "7"
+        },
+        {
+            "question_id": "Q6",
+            "question_text": "What does Indian Psychology emphasize as the reason for human suffering?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Genetic predisposition",
+                "B": "External environmental factors",
+                "C": "Ignorance of one's true nature",
+                "D": "Lack of education"
+            },
+            "correct_option_label": "C",
+            "explanation": "Indian psychological traditions, such as the triguṇa system and Advaita Vedānta, identify ignorance (Avidyā) of one's true divine nature (Sat-Chit-Ananda) as the root cause of all human suffering.",
+            "module": "8"
+        },
+        {
+            "question_id": "Q7",
+            "question_text": "Why is the Indian place value system considered revolutionary?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It allowed numbers to be represented compactly and manipulated easily",
+                "B": "It limited calculations to small values",
+                "C": "It was based on physical objects rather than numerals",
+                "D": "It was independent of zero"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Indian place value system, using ten symbols and zero as a placeholder, allowed for compact notation of huge numbers and simplified complex arithmetical operations.",
+            "module": "5"
+        },
+        {
+            "question_id": "Q8",
+            "question_text": "How does Vāstu-śāstra aim to align architecture with natural forces?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "By prescribing the use of only organic materials in construction",
+                "B": "By ensuring structures are aligned with the Pañcamahābhūtāḥ (five elements)",
+                "C": "By mandating east-facing entrances for all buildings",
+                "D": "By dictating the exact interior placement of objects such as vases and furniture"
+            },
+            "correct_option_label": "B",
+            "explanation": "Vāstu-śāstra is the art of correct setting that aims to harmonize and align architectural structures with the natural forces represented by the five basic elements (Pañcamahābhūtāḥ).",
+            "module": "7"
+        },
+        {
+            "question_id": "Q9",
+            "question_text": "How does Indian Psychology approach the understanding of consciousness compared to Western psychology?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It considers consciousness as a byproduct of the brain",
+                "B": "It acknowledges multiple perspectives, including consciousness as distinct from the physical body",
+                "C": "It considers consciousness to be a sensory perception",
+                "D": "It ignores the concept of consciousness altogether"
+            },
+            "correct_option_label": "B",
+            "explanation": "Unlike the positivistic Western approach that often views mind as a byproduct of the brain, Indian Psychology takes a holistic view, seeing consciousness as the distinct true self (witness) of all activity.",
+            "module": "8"
+        },
+        {
+            "question_id": "Q10",
+            "question_text": "Which of the following best describes the contributions of Āryabhaṭa?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "He primarily focused on philosophical interpretations of numbers.",
+                "B": "He introduced the use of sine functions and place value notation.",
+                "C": "He developed a method to approximate π but did not use algebra.",
+                "D": "He worked only in the field of astronomy and not mathematics."
+            },
+            "correct_option_label": "B",
+            "explanation": "Āryabhaṭa was a pioneering figure who introduced formal mathematical foundations to astronomy, including the sine table and the decimal place value notation.",
+            "module": "5"
+        },
+        {
+            "question_id": "Q11",
+            "question_text": "Which of the following best explains why India’s irrigation and water management systems were advanced?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They provided sustainable solutions for agriculture",
+                "B": "They were medium-scale systems with moderate impact",
+                "C": "They were entirely dependent on rainfall",
+                "D": "They were used only for religious purposes"
+            },
+            "correct_option_label": "A",
+            "explanation": "India's historical irrigation systems, such as the Ahar-Pyne system and various massive dams, were highly advanced because they provided long-term, sustainable solutions to seasonal fluctuations in water availability for agriculture.",
+            "module": "6"
+        },
+        {
+            "question_id": "Q12",
+            "question_text": "What distinguishes Kauṭilya’s Arthaśāstra from the works of earlier scholars like Brihaspati and Ushanas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is entirely original with no influence from previous texts",
+                "B": "It is written in Pali language, unlike previous works",
+                "C": "It systematically compiles, refines, and adds new perspectives to earlier ideas",
+                "D": "It focuses only on warfare and espionage"
+            },
+            "correct_option_label": "C",
+            "explanation": "Kauṭilya acknowledges the work of ancient teachers but stands out by systematically compiling, refining, and providing fresh perspectives in his comprehensive 15-book treatise.",
+            "module": "7"
+        },
+        {
+            "question_id": "Q13",
+            "question_text": "Why is the lost wax casting technique named “Madhuciṣṭa Vidhānam”?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It uses honey as an adhesive",
+                "B": "The wax used is derived from honeybee residues",
+                "C": "The idols are coated with honey after casting",
+                "D": "The process mimics the way honeycombs are formed"
+            },
+            "correct_option_label": "B",
+            "explanation": "The term 'Madhuciṣṭa' literally means 'leftover of honey' (beeswax). This residue is used to create the original pattern which is later melted away to leave the mold for metal casting.",
+            "module": "6"
+        },
+        {
+            "question_id": "Q14",
+            "question_text": "What does the widespread presence of iron beams in temples like Konark and Puri suggest?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The iron was imported from foreign lands",
+                "B": "Iron technology was widely used across India",
+                "C": "The structures were built much later than previously thought",
+                "D": "The beams were made of non-ferrous metals"
+            },
+            "correct_option_label": "B",
+            "explanation": "The unearthing of numerous gigantic iron beams used as structural elements in various temples across Orissa and elsewhere proves that advanced iron technology and forge-welding were commonplace in ancient India.",
+            "module": "6"
+        },
+        {
+            "question_id": "Q15",
+            "question_text": "A historian is researching ancient town planning methods in India. Which text should they refer to for insights on roads, water resources, and village planning?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Bṛhat-saṁhitā",
+                "B": "Arthaśāstra",
+                "C": "Matsya-purāṇa",
+                "D": "Nāradaśilpaśāstra"
+            },
+            "correct_option_label": "D",
+            "explanation": "Nāradaśilpaśāstra is a canonical Vastu text that specifically provides detailed information on roads, water resources, and identifies 14 distinct types of towns and village planning.",
+            "module": "7"
+        },
+        {
+            "question_id": "Q16",
+            "question_text": "How could modern metallurgists benefit from studying Wootz steel?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To create decorative sculptures",
+                "B": "To replace aluminum in aircraft",
+                "C": "To develop new high-strength alloys",
+                "D": "To make cooking utensils"
+            },
+            "correct_option_label": "C",
+            "explanation": "Study of the unique Indian process of Wootz steel making can offer modern metallurgists valuable insights into the production of high-carbon, corrosion-resistant, and high-strength iron-carbon alloys.",
+            "module": "6"
+        },
+        {
+            "question_id": "Q17",
+            "question_text": "A psychologist wants to study the impact of meditation on well-being using Indian Psychological principles. Which approach should they take?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Focus only on changes in brain activity",
+                "B": "Measure only emotional responses through surveys",
+                "C": "Integrate objective and subjective experiences, including self-awareness and inner transformation",
+                "D": "Avoid scientific methods and rely solely on scriptures"
+            },
+            "correct_option_label": "C",
+            "explanation": "Indian Psychology integrates both the objective physical aspects and the subjective internal experiences of a person, focusing on inner transformation and the awareness of the true self.",
+            "module": "8"
+        },
+        {
+            "question_id": "Q18",
+            "question_text": "How did the Indian numeral system influence modern computation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It introduced the binary system directly",
+                "B": "It provided the foundation for decimal-based calculations and algorithms",
+                "C": "It eliminated the need for symbols in mathematics",
+                "D": "It was primarily used for religious calculations only"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Indian numeral system, with its robust place value notation and use of zero, provided the essential foundation for the formal decimal-based arithmetic and algorithms used in all modern computation.",
+            "module": "5"
+        },
+        {
+            "question_id": "Q19",
+            "question_text": "A person who is highly ambitious, constantly active, and driven by desire is likely dominated by which guna?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sattva",
+                "B": "Rajas",
+                "C": "Tamas",
+                "D": "Ananda"
+            },
+            "correct_option_label": "B",
+            "explanation": "According to the triguṇa system, Rajas is the quality of passion, excitement, and ambition that binds an individual to the world through intense action and desire.",
+            "module": "8"
+        },
+        {
+            "question_id": "Q20",
+            "question_text": "If you were designing a sustainable water management system for a modern city in a semi-arid region, which ancient Indian technique would be most useful?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ahar-Pyne System",
+                "B": "Kallanai-style dam construction",
+                "C": "Stepwell storage and usage",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Ancient techniques like the Ahar-Pyne irrigation, the Kallanai dam's sustainability, and the ornamental storage-focused stepwells all offer relevant models for addressing seasonal fluctuations in water availability.",
+            "module": "6"
+        }
+    ]
+}
