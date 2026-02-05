@@ -58,6 +58,12 @@ export const SUBJECTS: Subject[] = [
     term: 2
   },
   {
+    code: 'ID22x',
+    name: 'Indian Knowledge Systems',
+    description: '',
+    term: 2
+  },
+  {
     code: 'DS21x',
     name: 'Advanced Statistics for Business',
     description: '',
