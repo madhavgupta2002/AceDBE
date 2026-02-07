@@ -962,3 +962,95 @@ Prioritization involves classifying tasks into four quadrants:
 - **Time Tools:** Bio-rhythms (prime time), Time Boxing, Swiss Cheese, and Pomodoro.
 - **Support Network:** You need more than friends; you need **Mentors** for clarity and challenge.
 - **Resilience:** The capacity to **reframe** and maintain physical/mental stamina during a crisis.
+
+# Interviews
+
+## 1. D. Shivakumar on Digitalisation of Businesses
+### 1.1 Evolution of Business Models
+*   **Back-end to Front-end Shift:** Business models have moved from focusing on the predictability of supply and manufacturing (Back-end) to focusing on consumer trends and agility (Front-end).
+*   **FMCG Transformation:** The industry moved from a physical distribution model (C&F, wholesalers) to modern trade (retail partnerships), and finally to digitally enabled models (E-commerce).
+*   **Data Specificity:** Modern businesses leverage granular data (pin-code level) provided by smartphones and identity systems like Aadhaar to predict demand.
+
+### 1.2 Transformation and Sustainability
+*   **The Survival Clock:** 45% of CEOs believe their companies won't exist in 10 years without a mindset shift.
+*   **Transformation Signal:** If stakeholders discuss a brand in the "past tense," it is a sure signal that the business needs immediate change.
+*   **New Literacies:** Professionals must develop working knowledge in:
+    *   **Sustainability:** Understanding industry-specific climate impacts (e.g., e-waste in electronics, water in agriculture).
+    *   **AI Fluency:** Using AI to outperform those who don't.
+
+### 1.3 The Content Economy
+*   **Context over Content:** "Content is King, but Context is the Kingdom."
+*   **Influencer Marketing:** Shift from celebrity "hits" to quantitative "follower counts." 
+*   **Trust and Verification:** The rise of Deepfakes and "fake news" makes verification services a significant future business opportunity.
+
+**Linkage to Course Content:**
+*   **Module 2 (Value Creation):** Links to the Transformation process ($Inputs \rightarrow Conversion \rightarrow Outputs$) and how digitalization improves the conversion process.
+*   **Module 7 (Technology & Change):** Directly reflects the impact of AI, job displacement for repetitive tasks, and the necessity of "judgment" as a human differentiator.
+*   **Module 8 (Resilience):** The need for a "learning and agile culture" to survive market uphevolas.
+
+---
+
+## 2. D. Shivakumar on Organisational Culture
+### 2.1 The Nokia Culture Case Study
+*   **Cultural Heritage:** Rooted in Finnish socialism; emphasizes team survival, trust, and invisible leadership (the leader sits at the side).
+*   **Compensation Alignment:** Executive salary was split: **50% for results** and **50% for behavioral values**.
+*   **Ground-up Values:** Values were created through employee "cafes" rather than being imposed from the top-down.
+
+### 2.2 Technology and Future Work
+*   **Generative AI Deployment:** AI is most effective where the organization has the most data (suppliers, customers, or manufacturing).
+*   **The Gig Economy:** Shift toward **fractional roles** (CMO/CFO) and "volunteer" status for employees.
+*   **Job Risk:** Repetitive, non-value-adding jobs are disappearing (e.g., telephone operators), while higher-order jobs requiring creativity and imagination remain safe.
+
+### 2.3 Global Market Perspectives
+*   **The 1-Billion Markets:** China (manufacturing), India (services), and Africa (potential hindered by lack of governance).
+*   **India’s Bedrock:** Digital Public Infrastructure (DPI) is the primary driver of current and future GDP growth.
+
+| Feature | India | China | Africa |
+| :--- | :--- | :--- | :--- |
+| **Focus** | Services & IT | Manufacturing | Emerging/Distributed |
+| **Bedrock** | Digital Public Infra | Massive Factory Base | Untapped Potential |
+| **Language Advantage**| High (English Database) | Low (Mandarin) | Low (Fragmented) |
+
+**Linkage to Course Content:**
+*   **Module 5 (Owner vs. Manager):** Links to the founder’s role in setting the "Software" (Culture) of the organization.
+*   **Module 6 (Performance Management):** Reflects the 50/50 split between tasks and behaviors/values.
+*   **Module 7 (National Culture):** Directly maps to Hofstede’s dimensions (Nokia’s low Power Distance and high Collectivism).
+
+---
+
+## 3. Deepa Nagraj on Leadership Insights
+### 3.1 The First-Time Manager Transition
+*   **The Mridangam Effect:** Managers get "beaten" from both sides (supervisor demands and team needs).
+*   **Well-being:** Managers must regulate their own emotions so their internal stress doesn't impact the team.
+*   **Second-Guessing:** New managers often doubt themselves, especially in global settings; it is essential to "unlearn" the fear of making mistakes.
+
+### 3.2 Managing Global Diversity
+*   **Cultural Nuances:** Behavioral differences (e.g., using terms of endearment or avoiding eye contact/handshakes) can lead to complaints if not understood as cultural traits.
+*   **The "Sweetie" Example:** Misinterpretations between US and Indian team members regarding professional address styles.
+
+### 3.3 The Human Connect in a Tech World
+*   **AI vs. Relationship:** Management is a relationship. While AI can automate reports, it cannot provide the emotional support needed during a family crisis.
+*   **Scrum Masters:** Managers are evolving into facilitators who provide support rather than "bossing" or direct supervision.
+*   **Continuous Learning:** Success depends on the ability to keep **unlearning and relearning**.
+
+**Linkage to Course Content:**
+*   **Module 1 (Perception & Attribution):** Links to how managers interpret feedback and attribute intentions to others' behaviors.
+*   **Module 4 (Communication & Conflict):** Deeply connected to the "Don't React, Respond" rule and the management of difficult cross-cultural conversations.
+*   **Module 6 (HRM & M&A):** Provides real-world context for cultural integration failures in mergers and the "Hot Stove Rule" equivalent for transparency.
+*   **Module 8 (Managing Self):** Reinforces self-awareness, reflection, and building a professional support network.
+
+---
+
+## Quick Revision Summary
+- **Key Definitions:**
+    - **Mridangam Effect:** The dual pressure from bosses and subordinates.
+    - **Digital Public Infrastructure (DPI):** India's foundation for future economic growth.
+    - **Scrum Master:** A facilitator-led management style replacing traditional authority.
+- **Important Formulas:**
+    - $Behavioral\ Value = 50\%\ of\ Salary$ (Nokia model).
+    - $Human\ Advantage = f(\text{Judgment, Creativity, Empathy})$.
+- **Must-Remember Points:**
+    - AI replaces repetitive coordination; Humans replace routine with **judgment**.
+    - Cultural integration is the #1 reason M&As fail.
+    - To move to a higher role, a manager must first create a **successor**.
+    - Trust is the starting point in high-performing cultures like Nokia.
