@@ -1,0 +1,1184 @@
+{
+    "exam_metadata": {
+        "subject_name": "Entrepreneurial Mindset and Methods",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "Based on the typology of ventures presented, a business like MapmyIndia that holds its own against a dominant global competitor like Google would most likely be categorized as a:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Speculative venture",
+                "B": "Revolutionary venture",
+                "C": "Niche venture",
+                "D": "Lifestyle venture"
+            },
+            "correct_option_label": "C",
+            "explanation": "Niche ventures address highly specific, narrow market segments. MapmyIndia operates in a specific geographic mapping and navigation niche tailored to Indian geography, allowing it to compete effectively against broader global competitors like Google.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "The fundamental element that differentiates how an early-stage venture is run as compared to an established business is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The presence of a business plan",
+                "B": "The amount of capital raised",
+                "C": "The number of employees",
+                "D": "The level of uncertainty"
+            },
+            "correct_option_label": "D",
+            "explanation": "Early-stage ventures operate under 'Knightian Uncertainty' where the future is unknowable and unpredictable. Established businesses operate in stable environments where traditional risk and linear planning can be applied.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "A business opportunity is best described as a combination of a large market, a product/service, and which another key element?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A passionate team with relevant skills",
+                "B": "A favourable regulatory environment",
+                "C": "A specific technology",
+                "D": "A unique financial model"
+            },
+            "correct_option_label": "A",
+            "explanation": "According to the Three Pillars of Opportunity Evaluation, a viable opportunity exists at the intersection of Market/Customer Needs, Feasibility, and Capability & Willingness, which requires a passionate team possessing Founder-Market Fit.",
+            "module": 2
+        },
+        {
+            "question_id": "4",
+            "question_text": "What is a key limitation of opportunity evaluation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is always a perfect and objective process",
+                "B": "It can quickly lead to weak ideas being pursued.",
+                "C": "It is an imperfect and subjective exercise.",
+                "D": "The environment is static, so opportunity attractiveness does not change."
+            },
+            "correct_option_label": "C",
+            "explanation": "Purely desk-based opportunity evaluation is an imperfect and highly subjective exercise. Especially for revolutionary 'Zero to One' ideas, true potential can only be validated through real-world action, not just paper analysis.",
+            "module": 2
+        },
+        {
+            "question_id": "5",
+            "question_text": "What is the recommended role for a founder during early-stage customer interviews?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Marketer",
+                "B": "Explorer",
+                "C": "Salesperson",
+                "D": "Engineer"
+            },
+            "correct_option_label": "B",
+            "explanation": "During early-stage customer interviews, founders should act as explorers discovering qualitative insights. They must actively avoid pitching their solution or acting as salespeople in order to prevent bias.",
+            "module": 3
+        },
+        {
+            "question_id": "6",
+            "question_text": "What is a key guideline for preparing for customer interviews?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ask open-ended questions and abstract them to a level.",
+                "B": "Ask a high number of detailed questions.",
+                "C": "Use only yes/no questions.",
+                "D": "Avoid asking for personal stories."
+            },
+            "correct_option_label": "A",
+            "explanation": "A core guideline for customer interviews is to prepare 6 to 8 open-ended questions and abstract them by one level. This allows founders to understand the broader context of the customer's problem without prematurely pitching a specific solution.",
+            "module": 3
+        },
+        {
+            "question_id": "7",
+            "question_text": "What is the paradoxical nature of equity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It makes a company financially stable but unattractive to investors.",
+                "B": "It can be used as a profit-sharing tool but not for compensation.",
+                "C": "It's necessary for attracting talent but can also lead to founder conflict.",
+                "D": "It is a fixed value that does not change over time."
+            },
+            "correct_option_label": "C",
+            "explanation": "Equity acts as a powerful dual-natured tool: it serves as the ultimate financial incentive and talent magnet for startups, yet disagreements over equity are simultaneously among the top reasons for fatal founder conflicts.",
+            "module": 6
+        },
+        {
+            "question_id": "8",
+            "question_text": "What is a significant drawback of splitting equity among founders early in a venture's life?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It creates more uncertainty for the founders.",
+                "B": "Leads to lack of motivation among founders.",
+                "C": "Increases risk of misallocation.",
+                "D": "It makes the negotiation process more complex."
+            },
+            "correct_option_label": "C",
+            "explanation": "Splitting equity too early carries a high risk of misallocation because it is extremely difficult to accurately predict each founder's long-term operational contributions and actual value addition before the venture fully scales.",
+            "module": 6
+        },
+        {
+            "question_id": "9",
+            "question_text": "Which type of investor is typically the first to fund a startup outside of friends and family?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Early-stage investors (Series A and B).",
+                "B": "Mega investors (growth-stage).",
+                "C": "Public market investors.",
+                "D": "Angel investors."
+            },
+            "correct_option_label": "D",
+            "explanation": "According to the venture capital investment hierarchy, Angel investors or Pre-Seed syndicates (typically High Net Worth Individuals) are the first layer of external, professional funding outside of the immediate 'Friends, Family & Fools' circle.",
+            "module": 7
+        },
+        {
+            "question_id": "10",
+            "question_text": "In the context of private equity, which asset class is focused on investing in small, early-stage companies with high growth potential?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Venture Capital",
+                "B": "Hedge Funds",
+                "C": "Mutual Funds",
+                "D": "Public Pension Funds"
+            },
+            "correct_option_label": "A",
+            "explanation": "Venture Capital is a specialized asset class within the broader private equity landscape that focuses exclusively on early-stage, high-growth companies that inherently possess a high-risk, high-reward profile.",
+            "module": 7
+        },
+        {
+            "question_id": "11",
+            "question_text": "What does \"carried interest\" refer to?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The 2% annual management fee paid to General Partners (GPs).",
+                "B": "80% of profits go to Limited Partners (LPs).",
+                "C": "An individual VC's share of the total GP profit.",
+                "D": "A fee paid by startups to VCs for carrying their debt."
+            },
+            "correct_option_label": "C",
+            "explanation": "Carried interest (or 'Carry') refers to the share of profits (usually 20%) that General Partners receive from the fund's returns after the initial principal has been fully repaid to the Limited Partners.",
+            "module": 7
+        },
+        {
+            "question_id": "12",
+            "question_text": "What is the key factor that VCs consider when evaluating an early-stage company?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A high market capitalization.",
+                "B": "A differentiated solution to an unmet need.",
+                "C": "A well-established product with a long history.",
+                "D": "Many existing competitors."
+            },
+            "correct_option_label": "B",
+            "explanation": "Venture Capitalists prioritize startups that target large, growing markets by providing a highly differentiated solution to a significant unmet need, ensuring the venture has strong potential for exponential growth.",
+            "module": 7
+        },
+        {
+            "question_id": "13",
+            "question_text": "What is the core purpose of \"bootstrapping\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To focus on a single, high-risk project.",
+                "B": "To secure large-scale venture capital funding.",
+                "C": "To take on as much debt as possible to fuel growth.",
+                "D": "To minimize outside debt and equity financing."
+            },
+            "correct_option_label": "D",
+            "explanation": "Bootstrapping is a collection of methods intended to grow a venture using organic revenue and personal resources. Its absolute core purpose is to preserve founder autonomy by minimizing or avoiding external debt and equity (VC) financing entirely.",
+            "module": 8
+        },
+        {
+            "question_id": "14",
+            "question_text": "Which of the following types of ventures can't be completely bootstrapped?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Revolutionary ventures",
+                "B": "Ventures with low upfront costs.",
+                "C": "Niche ventures",
+                "D": "Lifestyle Ventures"
+            },
+            "correct_option_label": "A",
+            "explanation": "Revolutionary ventures (such as deep-tech or mission-critical medical devices) require extremely high safety standards, massive physical assets, and significant R&D capital upfront, making it impossible to scale them purely through bootstrapping.",
+            "module": 8
+        },
+        {
+            "question_id": "15",
+            "question_text": "What is the primary purpose of equity as a financial tool for a venture?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To increase the company's liabilities.",
+                "B": "To mobilize resources for the venture.",
+                "C": "To reduce the founder's ownership stake.",
+                "D": "To manage day-to-day operational expenses."
+            },
+            "correct_option_label": "B",
+            "explanation": "As a strategic financial tool, founders issue equity to Angel investors and Venture Capitalists to mobilize vital resources, transforming ownership stakes into massive infusions of growth capital and strategic network access.",
+            "module": 6
+        },
+        {
+            "question_id": "16",
+            "question_text": "The concept of \"Entrepreneurship as a method\" implies which of the following?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is an innate trait that only some individuals possess.",
+                "B": "Entrepreneurial thinking and action can be consciously developed.",
+                "C": "It guarantees success for all ventures.",
+                "D": "It is a repeatable process with specific ways of thinking and tools."
+            },
+            "correct_option_label": "B, D",
+            "explanation": "Entrepreneurship is a method, not an innate biological trait. As a method, it consists of a repeatable collection of tools and decision-making rubrics, and the corresponding entrepreneurial thinking can be consciously learned and developed by anyone.",
+            "module": 1
+        },
+        {
+            "question_id": "17",
+            "question_text": "What factors significantly influence entrepreneurship?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Access to capital",
+                "B": "Regulatory and policy environment",
+                "C": "Luck alone",
+                "D": "Societal and cultural changes"
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "Entrepreneurial ideas never dry up because the environment is constantly shifting. Societal/demographic changes, regulatory deregulation, and technological advances—coupled with access to capital—act as massive external stimuli for new ventures.",
+            "module": 1
+        },
+        {
+            "question_id": "18",
+            "question_text": "A startup founder, after extensive market research, determines that their idea has a \"Super High Potential\" but also faces \"Super High Challenge.\" What are the logical implications of this assessment, and what type of venture is this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The venture's high potential is due to a compelling reason to buy, but its success is contingent on overcoming major implementation obstacles.",
+                "B": "This venture is an ideal \"Quick Win\" because of its high potential.",
+                "C": "The entrepreneur should abandon the idea, as the high challenge makes it unfeasible.",
+                "D": "This venture is a \"Moon Shot,\" requiring significant resources and a high tolerance for risk."
+            },
+            "correct_option_label": "A, D",
+            "explanation": "On the Market Opportunity Navigator grid, an idea exhibiting both 'Super High Potential' and 'Super High Challenge' is classified as a 'Moonshot'. It promises massive rewards driven by compelling customer needs but requires conquering significant implementation friction.",
+            "module": 2
+        },
+        {
+            "question_id": "19",
+            "question_text": "Which of the following scenarios demonstrate confirmation bias in opportunity evaluation and development?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Founders prematurely assume product-market fit without validating hypotheses",
+                "B": "Startups redesign their go-to-market strategy after observing unexpected consumer behaviour.",
+                "C": "Founders selectively seek customer testimonials validating their original hypothesis.",
+                "D": "Entrepreneurs ignore negative prototype feedback to maintain conviction."
+            },
+            "correct_option_label": "A, C, D",
+            "explanation": "Confirmation bias occurs when an entrepreneur's optimism overrides objective evidence. Prematurely assuming fit, selectively seeking out positive feedback, and willfully ignoring negative experimental data are all classic manifestations of this bias.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "In assessing technical and economic feasibility, which of the following questions are critical for founders?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Will venture capitalists value the company at a higher multiple in future funding rounds?",
+                "B": "Can operating costs be sustainably managed given the revenue model?",
+                "C": "Is the product technically deliverable with expected safety standards?",
+                "D": "Can the price point balance margins and customer willingness to pay?"
+            },
+            "correct_option_label": "B, C, D",
+            "explanation": "Feasibility strictly analyzes whether the product can be built reliably (technical capability and safety) and whether it can be delivered economically (managing unit operating costs, healthy margins, and appropriate pricing).",
+            "module": 2
+        },
+        {
+            "question_id": "21",
+            "question_text": "Which of the following factors would most likely indicate that a startup has achieved problem/solution fit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A significant number of users actively seek out the solution",
+                "B": "The product has high profit margins",
+                "C": "Customers express frustration with current alternatives",
+                "D": "The team has built a scalable tech stack"
+            },
+            "correct_option_label": "A, C",
+            "explanation": "Problem-Solution Fit validates that a tangible problem exists and customers acknowledge it. Qualitative indicators include customers expressing severe frustration with existing alternatives and actively seeking out the newly proposed solution.",
+            "module": 3
+        },
+        {
+            "question_id": "22",
+            "question_text": "What data points most directly inform the decision to pivot or persevere?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Experimental results against your hypotheses",
+                "B": "Whether your original business plan deadline has arrived",
+                "C": "Founder gut feeling about the market",
+                "D": "Direct customer feedback on value and usability"
+            },
+            "correct_option_label": "A, D",
+            "explanation": "The Lean Method dictates that pivots must be completely evidence-based. Rigorous experimental results against falsifiable metrics and direct, qualitative customer feedback on usability provide the actual data required to pivot.",
+            "module": 3
+        },
+        {
+            "question_id": "23",
+            "question_text": "Which of the following statements about Unfair Advantage are correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is usually obvious from the start of the venture.",
+                "B": "It can come from patents, partnerships, or unique logistics.",
+                "C": "It develops over time as the business matures.",
+                "D": "It can be easily copied by competitors."
+            },
+            "correct_option_label": "B, C",
+            "explanation": "An Unfair Advantage is a proprietary moat (e.g., patents, algorithms, exclusive partnerships) that cannot be easily bought or copied. It is rarely obvious on day one and usually develops iteratively as the business matures.",
+            "module": 3
+        },
+        {
+            "question_id": "24",
+            "question_text": "The choice of Key Metrics plays a critical role in determining venture viability. Which of the following would be considered meaningful indicators of startup progress?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Annual Employee Attrition",
+                "B": "Customer Acquisition Cost (CAC)",
+                "C": "Gross Merchandise Value (GMV)",
+                "D": "Net Promoter Score (NPS)"
+            },
+            "correct_option_label": "B, C, D",
+            "explanation": "In Lean Startup methodology, value metrics like Customer Acquisition Cost (CAC), transaction volume (GMV), and customer satisfaction signals (NPS) are critical indicators of sustainable growth and Product-Market Fit.",
+            "module": 3
+        },
+        {
+            "question_id": "25",
+            "question_text": "Which of the following statements accurately capture the strategic role of equity in entrepreneurial ventures?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Equity serves as an instrument to align incentives between founders, employees, and investors.",
+                "B": "Equity primarily functions as a tool for mobilizing resources and attracting human capital.",
+                "C": "Equity represents a claim on the residual value of the venture after settling liabilities.",
+                "D": "Equity should always be equally distributed among founders to ensure fairness and harmony."
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "Equity represents residual ownership (Assets minus Liabilities). Strategically, it aligns long-term incentives across stakeholders and acts as a primary magnet to mobilize capital and retain top-tier talent in lieu of high salaries.",
+            "module": 6
+        },
+        {
+            "question_id": "26",
+            "question_text": "In the context of founding team dynamics, which of the following factors have a direct impact on venture scalability and investor confidence?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Complementary skillsets and clearly articulated roles",
+                "B": "A founding team composed entirely of close friends, given pre-existing trust and harmony",
+                "C": "Mechanisms for conflict resolution and structured communication",
+                "D": "Alignment between personal motivations of co-founders and long-term venture strategy"
+            },
+            "correct_option_label": "A, C, D",
+            "explanation": "Investors seek teams with highly complementary skills, clear hierarchies (to avoid analysis paralysis), and structured conflict resolution. Conversely, teams made purely of close friends often avoid difficult conversations, risking venture stability.",
+            "module": 6
+        },
+        {
+            "question_id": "27",
+            "question_text": "When considering vesting mechanisms for founders and employees, which of the following statements hold true?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Vesting reduces risks arising from premature departures by linking equity to tenure or milestones.",
+                "B": "Vesting erodes founder motivation since it restricts immediate access to ownership.",
+                "C": "Time-based vesting is less flexible and less adaptive compared to milestone- based vesting.",
+                "D": "Investors strongly prefer ventures that integrate vesting frameworks into their equity structures."
+            },
+            "correct_option_label": "A, C, D",
+            "explanation": "Vesting acts as a protective shield against founders who quit early, forcing them to earn equity over time. Investors heavily prefer these frameworks, and milestone-based vesting inherently offers more adaptability than strict time-based schedules.",
+            "module": 6
+        },
+        {
+            "question_id": "28",
+            "question_text": "Which of the following practices are recommended for avoiding equity-related pitfalls when structuring founding agreements?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Postponing equity discussions indefinitely until market validation is achieved",
+                "B": "Engaging neutral third parties or advisors during equity negotiations",
+                "C": "Embedding flexibility through milestone-based or time-based vesting clauses",
+                "D": "Facilitating early, candid conversations about expectations, and potential conflict-resolution mechanisms"
+            },
+            "correct_option_label": "B, C, D",
+            "explanation": "To prevent fatal early-stage conflicts, founders must engage in early 'intellectually honest' discussions, utilize neutral third parties to draft agreements, and enforce flexible vesting clauses to protect the venture's longevity.",
+            "module": 6
+        },
+        {
+            "question_id": "29",
+            "question_text": "Within the VC ecosystem, which statements best describe the role of Limited Partners (LPs) and General Partners (GPs)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "LPs are operationally active, frequently participating in startup decision-making.",
+                "B": "LPs supply the majority of the capital, while GPs deploy the capital, manage portfolios, and oversee exits.",
+                "C": "GPs typically charge management fees in addition to sharing in the upside returns.",
+                "D": "GPs typically contribute 2–5% of the total fund size but are entitled to carried interest on profits."
+            },
+            "correct_option_label": "B, C, D",
+            "explanation": "Limited Partners (LPs) are passive institutions supplying ~95% of the capital. General Partners (GPs) supply a minimal ~2-5% stake, actively deploy funds, charge annual management fees, and earn 'Carry' on future profits.",
+            "module": 7
+        },
+        {
+            "question_id": "30",
+            "question_text": "Which of the following statements correctly differentiate Public Equity from Private Equity in the context of venture financing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Private equity investments are cheaper than investments in public equity.",
+                "B": "Investors in public equity have limited influence on operations, while private equity investors often exert significant strategic control.",
+                "C": "Public equity refers to ownership in companies listed on stock exchanges, whereas private equity refers to stakes in privately held firms.",
+                "D": "Publicly traded shares offer liquidity and price transparency, while private equity investments are typically illiquid and negotiated."
+            },
+            "correct_option_label": "B, C, D",
+            "explanation": "Public equity provides transparent pricing and high liquidity on open exchanges with limited strategic control. Private equity (including VC) involves illiquid, highly negotiated stakes in private firms where investors exert significant board-level control.",
+            "module": 7
+        },
+        {
+            "question_id": "31",
+            "question_text": "Which valuation methodologies are most commonly used by venture capitalists when pricing early-stage startups?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Comparables based on similar firms’ valuation multiples",
+                "B": "Total Enterprise Value (TEV) relative to revenue or EBITDA multiples",
+                "C": "Discounted Dividend Models (DDM)",
+                "D": "Net Present Value (NPV) of future free cash flows"
+            },
+            "correct_option_label": "A, B",
+            "explanation": "Due to massive uncertainty and lack of historical data, models like DCF or DDM are virtually useless for early-stage startups. VCs primarily rely on Comparables (deals of similar size/industry) and multiples of revenue once initial traction is proven.",
+            "module": 7
+        },
+        {
+            "question_id": "32",
+            "question_text": "Which of the following factors make venture capital funding unsuitable for certain ventures?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The business model requires patient capital but yields modest returns.",
+                "B": "The founder values decision-making autonomy above growth.",
+                "C": "The venture targets a niche market with limited scalability.",
+                "D": "The venture demonstrates strong PMF and exponential demand signals."
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "VC is 'rocket fuel' demanding rapid exponential scale and massive target markets. It is fundamentally unsuitable for niche markets yielding modest returns, or for founders who wish to retain absolute autonomous control over their company.",
+            "module": 7
+        },
+        {
+            "question_id": "33",
+            "question_text": "Which techniques constitute effective bootstrapping strategies?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sharing infrastructure and employees with other firms",
+                "B": "Using customer prepayments to fund working capital",
+                "C": "Leasing assets instead of purchasing outright",
+                "D": "Prioritizing market share over cash flows in early phases"
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "Effective bootstrapping requires absolute cash preservation. Core strategies include staggering payments, sharing infrastructure to convert fixed costs to variable costs, and leveraging customer prepayments (sell before you build).",
+            "module": 8
+        },
+        {
+            "question_id": "34",
+            "question_text": "Which of the following elements underpin the Power Law dynamics of VC returns?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "VCs consciously accept losses on many bets in pursuit of high magnitude wins.",
+                "B": "The majority of portfolio companies fail or underperform.",
+                "C": "Portfolio returns follow a normal distribution curve across all startups.",
+                "D": "A minority of outlier investments generate disproportionate gains."
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "The Power Law explicitly rejects normal distributions. It dictates that ~65% of VC portfolio companies will fail, but the entire fund's massive returns are driven by a tiny ~10% minority of 'home run' outlier investments.",
+            "module": 7
+        },
+        {
+            "question_id": "35",
+            "question_text": "Which are valid exit routes for venture investors?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Trade sale/acquisition",
+                "B": "Management buyout",
+                "C": "Initial Public Offering (IPO)",
+                "D": "Employee resignations"
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "Because VC funds have a strict 7-10 year lifespan, they require liquidity events to return capital to LPs. Valid exits include taking the company public (IPO), selling to a larger firm (trade sale), or a management buyout.",
+            "module": 7
+        },
+        {
+            "question_id": "36",
+            "question_text": "An entrepreneur who focuses on what he/she can do with available means demonstrates causal reasoning.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "B",
+            "explanation": "This statement is false. Focusing on available means (Who I am, what I know, whom I know) defines the 'Bird-in-Hand' principle of Effectual logic, whereas Causal logic focuses on working backward from predefined goals.",
+            "module": 1
+        },
+        {
+            "question_id": "37",
+            "question_text": "A founder choosing between two high-potential opportunities implicitly faces opportunity costs, since resources committed to one path reduce the ability to pursue others.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "A",
+            "explanation": "True. Time, capital, and mental bandwidth are finite early on. Pursuing one strategic pivot inherently consumes these resources, establishing an opportunity cost over alternative options.",
+            "module": 2
+        },
+        {
+            "question_id": "38",
+            "question_text": "Insights from friends, teammates, and investors are equally valuable as customer interviews for early-stage validation.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "B",
+            "explanation": "False. Relying on friends and family generates severe 'False Positives' due to politeness and inherent bias. Objective validation requires unbiased discovery directly from target customers experiencing the pain point.",
+            "module": 3
+        },
+        {
+            "question_id": "39",
+            "question_text": "Business plans are irrelevant in lean ventures and should be completely discarded.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "B",
+            "explanation": "False. While lengthy, static traditional business plans are avoided under uncertainty, the 'planning process' itself is not discarded. Lean ventures replace them with dynamic, 1-page Lean Canvases.",
+            "module": 3
+        },
+        {
+            "question_id": "40",
+            "question_text": "An MVP (Minimum Viable Product) should include all major product features to maximize learning during testing.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "B",
+            "explanation": "False. An MVP is specifically defined as the absolute smallest set of activities needed to rigorously disprove a hypothesis. Adding non-essential features wastes resources and delays learning.",
+            "module": 3
+        },
+        {
+            "question_id": "41",
+            "question_text": "Running many parallel MVPs simultaneously accelerates learning and guarantees faster product-market fit.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "B",
+            "explanation": "False. Running too many concurrent MVPs scatters a startup's limited resources and confounds the resulting data, making it impossible to cleanly isolate and validate specific Leap-of-Faith assumptions.",
+            "module": 3
+        },
+        {
+            "question_id": "42",
+            "question_text": "Equity is often referred to as the “joker in the pack” because it is a flexible instrument that can be creatively structured to manage ownership uncertainties.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "A",
+            "explanation": "True. Equity is an incredibly versatile tool. It can be separated from decision rights, split asynchronously, or structured with complex vesting schedules to accommodate massive future uncertainties.",
+            "module": 6
+        },
+        {
+            "question_id": "43",
+            "question_text": "Equal equity splits between founders are generally viewed positively by venture capitalists because they signal fairness.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "B",
+            "explanation": "False. VCs generally dislike strict 50/50 splits because they often signal an inability to navigate difficult conversations early on, and they risk plunging the company into 'analysis paralysis' if a tie-breaking vote is required.",
+            "module": 6
+        },
+        {
+            "question_id": "44",
+            "question_text": "Bootstrapped ventures tend to cultivate stronger financial discipline than VC-backed ventures.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "A",
+            "explanation": "True. Because they operate exclusively on self-generated cash flows without the massive safety net of external equity, bootstrapped founders are forced to ruthlessly eliminate fluff and prioritize immediate positive cash flow.",
+            "module": 8
+        },
+        {
+            "question_id": "45",
+            "question_text": "Investor reputation strongly influences future fundraising success because signal strength drives credibility with subsequent VCs.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "A",
+            "explanation": "True. In the highly uncertain VC ecosystem, an investment from a top-tier fund acts as a powerful signaling mechanism, validating the startup's potential and making it drastically easier to attract subsequent investors.",
+            "module": 7
+        },
+        {
+            "question_id": "46",
+            "question_text": "VC fund lifecycles generally range between 7 to 10 years, after which LPs must be fully repaid before profits are distributed.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "A",
+            "explanation": "True. Venture capital funds operate on strict, time-bound lifecycles (typically 7-10 years). The standard financial arrangement requires Limited Partners to recoup their original principal entirely before General Partners collect carried interest.",
+            "module": 7
+        },
+        {
+            "question_id": "47",
+            "question_text": "Angel networks and syndicates reduce risk for individual angels by pooling investments and sharing due diligence.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "A",
+            "explanation": "True. Angel networks aggregate capital from multiple individuals, allowing them to diversify their portfolios widely across multiple startups while collectively bearing the heavy burden of extensive due diligence.",
+            "module": 7
+        },
+        {
+            "question_id": "48",
+            "question_text": "VC valuations are influenced as much by investor perceptions, market sentiment, and exit expectations as by financial fundamentals.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "A",
+            "explanation": "True. Because early-stage ventures lack historical financial data, valuations are an art rather than a strict science, relying heavily on perceived momentum, founder pedigree, and macroeconomic sentiment regarding future exits.",
+            "module": 7
+        },
+        {
+            "question_id": "49",
+            "question_text": "Attracting venture capital is essential for entrepreneurial success in most sectors.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "B",
+            "explanation": "False. Venture capital is an extreme form of funding appropriate for less than 5% of startups aiming for hyper-growth. The vast majority of successful entrepreneurial ventures scale reliably through organic bootstrapping.",
+            "module": 7
+        },
+        {
+            "question_id": "50",
+            "question_text": "Negotiating delayed payments to suppliers is an unethical bootstrapping strategy and should never be used.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "B",
+            "explanation": "False. Proactively negotiating extended credit periods with suppliers is a perfectly legal, ethical, and highly common financial discipline used in bootstrapping to stabilize cash flow.",
+            "module": 8
+        },
+        {
+            "question_id": "51",
+            "question_text": "Question No. 13 (Case Study From Q.No 14 To 18) AuroraTech: Balancing Vision and Survival\nAarav and Meera launched AuroraTech, a platform helping manufacturing firms predict machinery failures using AI. After securing ₹30 lakhs from personal savings, they built an early version of the product and pitched it to ten mid-sized factories. While several managers expressed interest during initial conversations, most hesitated when told the subscription would cost ₹5,000 per month. During follow-up calls, factory owners revealed that integrating AuroraTech’s system with their existing machinery would require additional hardware investments, which they were unwilling to make immediately. Aarav believed AuroraTech should develop more advanced predictive models and invest aggressively in marketing to retain a technological edge. Meera disagreed, proposing that they collaborate with existing IoT hardware providers to design a simpler, integrated solution first. Funding debates added tension. Aarav wanted to approach VCs immediately. Meera argued they should first refine pricing and improve user adoption before seeking external funds. An angel investor offered ₹80 lakhs for 30% equity and a board seat. Aarav was inclined to accept the offer to accelerate growth, but Meera worried about losing control too early and preferred to continue testing customer behavior with smaller pilots before committing to fundraising. Three months later, AuroraTech’s trial launch showed poor retention: out of 150 users, only 12 renewed their subscription after the first month. With limited funds remaining, conflicting strategies, and unclear customer priorities, Aarav and Meera must decide how to validate demand, allocate resources, and position AuroraTech.",
+            "question_type": "SUBJECTIVE",
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "This is a reference case study text. Please refer to this context for the subsequent questions (ID 52 to 56) related to AuroraTech.",
+            "module": 3
+        },
+        {
+            "question_id": "52",
+            "question_text": "Before committing to large-scale fundraising, what should AuroraTech prioritize?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Accepting the angel offer without further testing",
+                "B": "Increasing marketing budget",
+                "C": "Expanding into new customer segments immediately",
+                "D": "Running controlled pricing and feature experiments on a limited group"
+            },
+            "correct_option_label": "D",
+            "explanation": "Please refer to the AuroraTech context (Question ID 51). With severe retention issues (only 12 out of 150 renewals), they lack Product-Market Fit. Scaling a broken model through fundraising is fatal; they must iterate rapidly via limited experiments to find PMF.",
+            "module": 3
+        },
+        {
+            "question_id": "53",
+            "question_text": "Meera’s proposal to partner with hardware providers is primarily aimed at:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reducing integration barriers for customers",
+                "B": "Shifting to a completely hardware-focused business",
+                "C": "Get constant revenue",
+                "D": "Increasing upfront revenue from hardware sales"
+            },
+            "correct_option_label": "A",
+            "explanation": "Please refer to the AuroraTech context (Question ID 51). Customer feedback revealed their main friction was the need for extra hardware investments. Partnering with existing IoT providers directly neutralizes this implementation barrier without abandoning their software core.",
+            "module": 3
+        },
+        {
+            "question_id": "54",
+            "question_text": "Accepting the angel investor’s offer could be risky mainly because:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It creates early equity dilution and governance constraints",
+                "B": "Customer feedback becomes irrelevant post-funding",
+                "C": "It guarantees loss of pricing flexibility",
+                "D": "Angel funding limits future VC interest"
+            },
+            "correct_option_label": "A",
+            "explanation": "Please refer to the AuroraTech context (Question ID 51). Surrendering 30% of equity and a board seat before achieving PMF massively dilutes founder ownership and introduces external governance control prematurely, complicating future rounds.",
+            "module": 6
+        },
+        {
+            "question_id": "55",
+            "question_text": "What is the most appropriate interpretation of the low renewal rate in the pilot?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customers are apprehensive of new products",
+                "B": "Customers are inherently uninterested in predictive maintenance",
+                "C": "The pricing and value proposition may not be aligned with customer expectations",
+                "D": "More aggressive social media marketing is urgently needed"
+            },
+            "correct_option_label": "C",
+            "explanation": "Please refer to the AuroraTech context (Question ID 51). Retention is the ultimate value metric. Only 12 of 150 users renewing mathematically proves that the current pricing model or the core value proposition drastically fails to deliver ongoing value.",
+            "module": 4
+        },
+        {
+            "question_id": "56",
+            "question_text": "If AuroraTech focuses on small-scale customer pilots before raising funds, the primary advantage is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It avoids the need to modify the product further",
+                "B": "It maintains competition in the market",
+                "C": "It ensures better negotiating power during future fundraising",
+                "D": "It guarantees higher short-term revenue"
+            },
+            "correct_option_label": "C",
+            "explanation": "Please refer to the AuroraTech context (Question ID 51). Reaching Product-Market Fit organically via small-scale pilots demonstrates robust demand. This verified traction significantly de-risks the business, handing founders superior negotiating leverage with future VCs.",
+            "module": 7
+        },
+        {
+            "question_id": "57",
+            "question_text": "Question No. 19 (Case Study From Q.No 20 To 24) Scenario: Meesho’s Scaling Challenge\nBetween FY 2017–18 and FY 2019–20, Meesho expanded rapidly from 27,926 active entrepreneurs to over 2.4 million. Revenue grew from ₹800 million to over ₹3,000 million, but this growth came at a cost. Customer acquisition cost (CAC) rose from ₹561.64 to ₹1,378.93, while advertising expenses multiplied fourfold. Distribution costs also surged as Meesho scaled logistics. The leadership team faced a key question: Is Meesho’s growth sustainable when CAC is rising faster than revenue per entrepreneur? Should they continue aggressive customer acquisition through digital ads, or shift focus to deepening engagement and increasing LTV (lifetime value) of each entrepreneur?\n\nTable: Key Metrics (Meesho)\n| Metric | FY 2017-18 | FY 2018-19 | FY 2019-20 |\n| --- | --- | --- | --- |\n| Active Entrepreneurs | 27,926 | 908,973 | 2,465,160 |\n| Orders Received | 329,547 | 9,127,545 | 37,693,864 |\n| Revenue (INR millions) | | 800 | 3070 |\n| Advertising Expense (INR m) | | 500 | 2170 |\n| Distribution Expense (INR m) | | 820 | 2540 |\n| CAC (INR) | | 561.64 | 1378.93 |\n| Revenue/Entrepreneur (INR) | | 880.11 | 1245.36 |",
+            "question_type": "SUBJECTIVE",
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "This is a reference case study text. Please refer to this context for the subsequent questions (ID 58 to 62) related to Meesho.",
+            "module": 4
+        },
+        {
+            "question_id": "58",
+            "question_text": "What trend does the CAC show from FY 2018–19 to FY 2019–20?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It decreased by more than half",
+                "B": "It remained constant",
+                "C": "It more than doubled",
+                "D": "It had no impact on revenue"
+            },
+            "correct_option_label": "C",
+            "explanation": "Please refer to the Meesho context (Question ID 57). The provided table shows CAC grew from ₹561.64 in FY 18-19 to ₹1378.93 in FY 19-20. Since 561.64 x 2 = 1123.28, the acquisition cost more than doubled in a single year.",
+            "module": 4
+        },
+        {
+            "question_id": "59",
+            "question_text": "In FY 2018–19, Meesho was on average losing money on each order. True or False?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "true",
+                "B": "false",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "A",
+            "explanation": "Please refer to the Meesho context (Question ID 57).\nStep 1: Avg Revenue per Order = 800m / 9.1m ≈ ₹87.6\nStep 2: Avg Distribution Cost per Order = 820m / 9.1m ≈ ₹90\nStep 3: Since distribution costs purely per unit exceed the revenue generated, unit economics are negative, thus they are losing money.",
+            "module": 4
+        },
+        {
+            "question_id": "60",
+            "question_text": "Which statement best reflects Meesho’s unit customer economics in FY 2019–20?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "CAC is irrelevant compared to advertising expense",
+                "B": "CAC is higher than annual revenue per entrepreneur",
+                "C": "CAC is lower than annual revenue per entrepreneur",
+                "D": "CAC and annual revenue per entrepreneur are equal"
+            },
+            "correct_option_label": "B",
+            "explanation": "Please refer to the Meesho context (Question ID 57). The table explicitly shows that for FY 19-20, CAC is ₹1378.93 while the Revenue per Entrepreneur is only ₹1245.36. Thus, upfront acquisition costs exceed the annual revenue generated per user.",
+            "module": 4
+        },
+        {
+            "question_id": "61",
+            "question_text": "Based on FY 2019-20 numbers, how many months should an entrepreneur stay with Meesho for the company to recover their acquisition cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "15 months",
+                "B": "9 months",
+                "C": "6 months",
+                "D": "12 months"
+            },
+            "correct_option_label": "A",
+            "explanation": "Please refer to the Meesho context (Question ID 57).\nStep 1: Calculate monthly revenue per entrepreneur: $\\frac{1245.36}{12} \\approx 103.78$\nStep 2: Divide CAC by monthly revenue to find breakeven: $\\frac{1378.93}{103.78} \\approx 13.28$ months\nStep 3: To fully recover and start exceeding acquisition costs, retaining the user closer to the ~14-15 month mark is logically required.",
+            "module": 4
+        },
+        {
+            "question_id": "62",
+            "question_text": "Would you say Meesho had product-market fit in FY 2019-20?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Yes",
+                "B": "No",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "A",
+            "explanation": "Please refer to the Meesho context (Question ID 57). Despite negative unit economics due to rapid, subsidized expansion, exploding from 900k to 2.4 million users with massive order volume demonstrates undeniable market demand and behavioral traction, signaling early PMF.",
+            "module": 4
+        },
+        {
+            "question_id": "63",
+            "question_text": "Question No. 7 (Case Study From Q.No 8 To 12) GreenSpire Energy\nKabir, a mechanical engineer, leaves his corporate role to start GreenSpire Energy, which designs compact biogas units for urban and peri-urban households and communities. With minimal capital, he builds an early prototype using salvaged parts from scrapyards and negotiates night-time access to a local fabrication shop in exchange for future maintenance contracts. To fund his first installations, Kabir persuades a housing society to pay 40% in advance, promising delivery within three months. He supplements income by conducting training workshops for plumbers, which also help create a support ecosystem for his product. His cousin, an architect, prepares installation manuals and brand visuals without charge, asking for a royalty arrangement if the venture scales. Interest grows, but larger associations demand 24/7 service guarantees and a government lab certification costing ₹40 lakhs. Kabir’s options include: 1. Continue with advances and reinvest profits, though growth would be slow. 2. Secure a second high-interest loan against his family home. 3. Accept an investor’s offer of ₹1.2 crore for 35% equity, but with veto power over new product lines. Kabir faces a choice between control, security, and credibility.",
+            "question_type": "SUBJECTIVE",
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "This is a reference case study text. Please refer to this context for the subsequent questions (ID 64 to 68) related to GreenSpire Energy.",
+            "module": 8
+        },
+        {
+            "question_id": "64",
+            "question_text": "Which path most effectively allows Kabir to expand service capacity without undermining future flexibility?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Taking a high interest loan against his home to finance the service vertical",
+                "B": "Accepting investor funds despite restrictive veto conditions",
+                "C": "Reinvesting income to slowly build up service capacity",
+                "D": ""
+            },
+            "correct_option_label": "C",
+            "explanation": "Please refer to the GreenSpire Energy context (Question ID 63). Organic bootstrapping via reinvested income avoids both the immense personal financial ruin of a high-interest home loan and the catastrophic loss of strategic flexibility imposed by VC veto clauses.",
+            "module": 8
+        },
+        {
+            "question_id": "65",
+            "question_text": "Why is the investor’s veto clause particularly dangerous in this context?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It blocks entry into adjacent markets if the core stalls",
+                "B": "It prevents Kabir from raising further loans",
+                "C": "It reduces margins on existing product sales",
+                "D": "It discourages housing associations from long-term contracts"
+            },
+            "correct_option_label": "A",
+            "explanation": "Please refer to the GreenSpire Energy context (Question ID 63). If Kabir grants veto power over 'new product lines', he surrenders his ability to pivot. Should the core biogas market stall, the investor can legally block him from pursuing new adjacent opportunities.",
+            "module": 6
+        },
+        {
+            "question_id": "66",
+            "question_text": "Which source of validation would most strengthen Kabir’s position in later negotiations with institutional investors?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Revenues from plumber training workshops",
+                "B": "Royalty-based contributions from family members",
+                "C": "Customer advances linked to installation contracts",
+                "D": "Access to fabrication facilities through barter"
+            },
+            "correct_option_label": "C",
+            "explanation": "Please refer to the GreenSpire Energy context (Question ID 63). Securing 40% upfront payments directly validates that the customer experiences acute pain and trusts the proposed solution. This 'Sell Before You Build' metric is the most powerful proof of market demand to future investors.",
+            "module": 8
+        },
+        {
+            "question_id": "67",
+            "question_text": "What is the most significant long-term risk of heavy reliance on barter-style contributions like his cousin’s pro bono branding?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Hidden obligations that complicate future ownership structures",
+                "B": "Marginally lower short-term costs that are easily absorbed",
+                "C": "Minimal impact, as branding is not valued highly by investors",
+                "D": "Slower recognition of cash inflows on financial statements"
+            },
+            "correct_option_label": "A",
+            "explanation": "Please refer to the GreenSpire Energy context (Question ID 63). Vague, undocumented 'handshake' agreements involving future royalties create highly problematic equity-like encumbrances that massively complicate VC due diligence and cap table structuring later.",
+            "module": 6
+        },
+        {
+            "question_id": "68",
+            "question_text": "If Kabir postpones certification due to lack of funds, which consequence is most likely?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increased margins due to avoided compliance costs",
+                "B": "Greater negotiating leverage with future investors",
+                "C": "Stronger loyalty among current early adopters",
+                "D": "Reduced credibility with institutional buyers, capping growth"
+            },
+            "correct_option_label": "D",
+            "explanation": "Please refer to the GreenSpire Energy context (Question ID 63). Larger associations strictly demand the government certification. Postponing it completely locks him out of the highly lucrative institutional B2B market, indefinitely capping his growth.",
+            "module": 2
+        },
+        {
+            "question_id": "69",
+            "question_text": "Question No. 1 (Case Study From Q.No 2 To 6) BioNova: The Patent Dilemma (Deep-Tech Innovation & Strategic Licensing)\nBioNova, a biotech startup, developed a breakthrough diagnostic chip capable of detecting multiple cancers early with 90% accuracy. After five years of R&D, they filed for a global patent and attracted attention from GenPharm, a large U.S. pharmaceutical giant. GenPharm offered $10M upfront for exclusive global licensing rights but required BioNova to halt independent commercialization. Founder Aditi hesitated, worried that surrendering exclusivity would limit BioNova's ability to innovate future products. Her co-founder Raj supported accepting the offer, arguing BioNova lacked capital to build manufacturing facilities. Meanwhile, a competing biotech firm announced a similar chip entering clinical trials, reducing BioNova's first-mover advantage. Investors urged the team to accept GenPharm's deal, fearing the runway would run out before full-scale launch. Aditi countered with a proposal to license regionally, retaining Indian commercialization rights while sharing international markets. The team now faces a trade-off between short-term cash flow security and long-term strategic autonomy.",
+            "question_type": "SUBJECTIVE",
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "This is a reference case study text. Please refer to this context for the subsequent questions (ID 70 to 74) related to BioNova.",
+            "module": 3
+        },
+        {
+            "question_id": "70",
+            "question_text": "Accepting GenPharm’s exclusive deal primarily risks:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increasing manufacturing costs",
+                "B": "Surrendering global control over commercialization",
+                "C": "Forfeiting clinical trial data",
+                "D": "Losing short-term investor confidence"
+            },
+            "correct_option_label": "B",
+            "explanation": "Please refer to the BioNova context (Question ID 69). The case states the deal requires BioNova to 'halt independent commercialization'. By accepting, they entirely surrender their strategic autonomy and control over global distribution of their innovation.",
+            "module": 3
+        },
+        {
+            "question_id": "71",
+            "question_text": "A regional licensing model helps BioNova by:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lowering fixed costs automatically",
+                "B": "Avoiding R&D expenses entirely",
+                "C": "Bypassing FDA trials",
+                "D": "Preserving the ability to commercialize in selected markets"
+            },
+            "correct_option_label": "D",
+            "explanation": "Please refer to the BioNova context (Question ID 69). Aditi's counter-proposal to license internationally but retain Indian commercialization rights ensures BioNova preserves its autonomy in a key selected regional market.",
+            "module": 3
+        },
+        {
+            "question_id": "72",
+            "question_text": "Delaying commercialization while awaiting better offers is risky because:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Hospitals distrust biotech startups",
+                "B": "BioNova's patents may expire",
+                "C": "Competitors are advancing rapidly with similar products",
+                "D": "Investors prefer long-term R&D"
+            },
+            "correct_option_label": "C",
+            "explanation": "Please refer to the BioNova context (Question ID 69). The text explicitly mentions a competing biotech firm announcing a similar chip entering trials. Delays will inherently allow these competitors to erase BioNova's critical first-mover advantage.",
+            "module": 3
+        },
+        {
+            "question_id": "73",
+            "question_text": "Raj’s argument to accept the offer is rooted in:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A belief in global monopoly power",
+                "B": "Distrust of Aditi’s leadership",
+                "C": "Long-term cost arbitrage",
+                "D": "Capital constraints preventing independent scaling"
+            },
+            "correct_option_label": "D",
+            "explanation": "Please refer to the BioNova context (Question ID 69). Co-founder Raj explicitly argues for the deal based on the fact that BioNova lacks the necessary capital to build their own independent manufacturing facilities.",
+            "module": 8
+        },
+        {
+            "question_id": "74",
+            "question_text": "Investors’ preference for GenPharm’s deal likely stems from:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Distrust of medical devices",
+                "B": "Their short investment horizons",
+                "C": "Desire to push BioNova into insolvency",
+                "D": "Mandates to own manufacturing IP"
+            },
+            "correct_option_label": "B",
+            "explanation": "Please refer to the BioNova context (Question ID 69). VC investors operate on fixed 7-10 year fund horizons. Their fear of the runway ending before full launch reflects an institutional preference for immediate, guaranteed liquidity over extended strategic patience.",
+            "module": 7
+        },
+        {
+            "question_id": "75",
+            "question_text": "Match the Effectuation Principles with Their Key Ideas\nColumn A (Principle) | Column B (Key Idea)\n--- | ---\n1. Bird-in-Hand | a. Co-creation with stakeholders\n2. Affordable Loss | b. Turning surprises into opportunities\n3. Lemonade | c. Starting with existing means\n4. Crazy Quilt | d. Focusing on acceptable downside",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1-c, 2-a, 3-b, 4-d",
+                "B": "1-b, 2-c, 3-a, 4-d",
+                "C": "1-a, 2-b, 3-c, 4-d",
+                "D": "1-c, 2-d, 3-b, 4-a"
+            },
+            "correct_option_label": "D",
+            "explanation": "Bird-in-Hand emphasizes starting with available means (1-c). Affordable Loss limits downside risk (2-d). Lemonade treats surprises as opportunities (3-b). Crazy Quilt involves co-creating futures through partnerships (4-a).",
+            "module": 1
+        },
+        {
+            "question_id": "76",
+            "question_text": "Match Customer-Centric Processes\nColumn A (Step) | Column B (Goal)\n--- | ---\n1. Customer Discovery | a. Engage deeper with pilot users\n2. Customer Validation | b. Learn needs via interviews & Shadowing\n3. Customer Creation | c. Drive demand at scale\n4. Company Building | d. Create org structure for scaling",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1-d, 2-b, 3-a, 4-c",
+                "B": "1-b, 2-d, 3-c, 4-a",
+                "C": "1-b, 2-a, 3-c, 4-d",
+                "D": "1-c, 2-d, 3-b, 4-a"
+            },
+            "correct_option_label": "C",
+            "explanation": "Customer Discovery is qualitative learning via interviews (1-b). Validation tests assumptions deeply with pilot users (2-a). Creation forces mass market demand (3-c). Company Building forms the structured organization required to scale (4-d).",
+            "module": 3
+        },
+        {
+            "question_id": "77",
+            "question_text": "Match Revenue Models with Their Nature\nColumn A (Model) | Column B (Nature)\n--- | ---\n1. Subscription | a) One-time payment per feature or license\n2. Licensing | b) Free access, upsell later\n3. Freemium | c) Recurring payment cycles\n4. One-Time Sale | d) Royalties for intellectual property",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1-b, 2-a, 3-d, 4-c",
+                "B": "1-a, 2-b, 3-c, 4-d",
+                "C": "1-c, 2-b, 3-d, 4-a",
+                "D": "1-c, 2-d, 3-b, 4-a"
+            },
+            "correct_option_label": "D",
+            "explanation": "Subscriptions require recurring payments (1-c). Licensing deals with IP royalties (2-d). Freemium offers base services for free while upselling (3-b). One-time sales are singular transactions (4-a).",
+            "module": 3
+        },
+        {
+            "question_id": "78",
+            "question_text": "Match Unfair Advantages with Examples\nColumn A (Unfair Advantage Type) | Column B (Example)\n--- | ---\n1. Patents | a. Exclusive access to last-mile logistics\n2. Strategic Partnerships | b. Protects proprietary algorithms legally\n3. Network Effects | c. More users drive increasing value\n4. Proprietary Data | d. Ownership of unique customer behaviour patterns",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1-c, 2-d, 3-b, 4-a",
+                "B": "1-b, 2-d, 3-c, 4-a",
+                "C": "1-b, 2-a, 3-c, 4-d",
+                "D": "1-d, 2-b, 3-a, 4-c"
+            },
+            "correct_option_label": "C",
+            "explanation": "Patents legally protect innovations (1-b). Partnerships secure exclusive supply or logistics (2-a). Network effects mean value grows with more users (3-c). Proprietary data constitutes owning un-replicable behavior patterns (4-d).",
+            "module": 3
+        },
+        {
+            "question_id": "79",
+            "question_text": "Match External Influences with Their Role in Opportunity Evaluation\nColumn A (Factor) | Column B (Impact)\n--- | ---\n1. Regulatory Shifts | a. Influence speed of adoption\n2. Technology Trends | b. Change feasibility of product delivery\n3. Competitor Activity | c. Forces differentiation in strategy\n4. Customer Behaviour | d. Affects barriers to entry and pricing",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1-a, 2-b, 3-c, 4-d",
+                "B": "1-c, 2-b, 3-a, 4-d",
+                "C": "1-a, 2-d, 3-b, 4-c",
+                "D": "1-d, 2-b, 3-c, 4-a"
+            },
+            "correct_option_label": "D",
+            "explanation": "Regulatory shifts adjust legal barriers and entry costs (1-d). Tech trends revolutionize delivery feasibility (2-b). Competitors strictly enforce strategic differentiation (3-c). Changing behavior natively dictates how fast a product is adopted (4-a).",
+            "module": 1
+        },
+        {
+            "question_id": "80",
+            "question_text": "Which of the following correctly represents the sequence of stages in the entrepreneurial process?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Idea generation → Opportunity evaluation → Resource mobilization → Venture creation",
+                "B": "Raise capital → Build MVP → Analyse problem → Identify customer",
+                "C": "Resource allocation → Market entry → Generate idea → Business exit",
+                "D": "Identify problem → Secure funding → Launch product → Generate idea"
+            },
+            "correct_option_label": "A",
+            "explanation": "The linear macro-process starts with ideation, flows into objective opportunity evaluation, moves toward gathering necessary resources (via Bootstrapping/VC), and finally concludes with operational venture creation.",
+            "module": 1
+        },
+        {
+            "question_id": "81",
+            "question_text": "What is the correct funding sequence for a high-growth startup?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Series A → Series B → Seed → Series C",
+                "B": "Seed → Series A → Series B → Series C",
+                "C": "Series B → Seed → Series C → Series A",
+                "D": "Seed → Series B → Series A → Series C"
+            },
+            "correct_option_label": "B",
+            "explanation": "Venture funding follows a structured hierarchical chronology: it starts with Seed capital for early validation, and progresses into scaling rounds mathematically labeled Series A, B, and C.",
+            "module": 7
+        },
+        {
+            "question_id": "82",
+            "question_text": "Arrange the correct steps when prioritizing opportunities based on risk-return trade-off:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Compare ratios → Identify risks → Estimate returns → Select",
+                "B": "Select → Compare → Estimate → Identify",
+                "C": "Estimate returns → Select opportunity → Identify risks → Compare ratios",
+                "D": "Identify risks → Estimate returns → Compare ratios → Select opportunity"
+            },
+            "correct_option_label": "D",
+            "explanation": "Rigorous objective evaluation requires first identifying downside friction/risks, mathematically estimating upside returns, comparing the derived ratios objectively against each other, and finally selecting the best strategic path.",
+            "module": 2
+        },
+        {
+            "question_id": "83",
+            "question_text": "Which is the correct sequence when running lean experiments?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Define hypothesis → Select metrics → Run test → Analyse results",
+                "B": "Run test → Define hypothesis → Measure → Analyse",
+                "C": "Select metrics → Define hypothesis → Run test → Analyse results",
+                "D": "Analyse results → Run test → Define hypothesis → Select metrics"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Lean Method strictly requires defining a falsifiable hypothesis before acting. Then, appropriate metrics are selected, the MVP test is run in the market, and results are analyzed to dictate the pivot or persevere decision.",
+            "module": 3
+        },
+        {
+            "question_id": "84",
+            "question_text": "Which is the correct sequence in turning customer insights into learning?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Collect feedback → Spot patterns → Draw insights → Refine assumptions",
+                "B": "Spot patterns → Draw insights → Collect feedback → Refine assumptions",
+                "C": "Refine assumptions → Collect feedback → Spot patterns → Draw insights",
+                "D": "Draw insights → Refine assumptions → Collect feedback → Spot patterns"
+            },
+            "correct_option_label": "A",
+            "explanation": "During validation, founders collect raw qualitative feedback first, naturally spot recurring occurrences/patterns, distill those into actionable business insights, and finally use them to refine their Lean Canvas assumptions.",
+            "module": 3
+        }
+    ]
+}
