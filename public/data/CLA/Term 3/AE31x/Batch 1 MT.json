@@ -1,0 +1,568 @@
+{
+    "exam_metadata": {
+        "subject_name": "Spreadsheets and Analytics",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "MT1_Q1",
+            "question_text": "There is a weekly report that you have to prepare, this report has repetitive formatting requirements. It takes you at least 10 min to do this formatting. This report is done in Microsoft Excel. Which feature of Excel can be used to automate this report to reduce the formatting time to less than a minute",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Micros",
+                "B": "Macros",
+                "C": "Scripts",
+                "D": "Format Painter"
+            },
+            "correct_option_label": "B",
+            "explanation": "A Macro is an automated script backed by VBA that records repetitive sequences like formatting and data cleaning. It executes these recorded steps instantly upon a single click, saving significant time on manual tasks.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q2",
+            "question_text": "You have been summoned by the CFO to create a mail to the Accounts Receivable and Sales team every week on the outstanding for more than 60 days, for them to take necessary follow-up action. You have been asked to create a trigger to run the script every Monday morning at 5pm. What is the type of trigger called",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Event Based",
+                "B": "Line Based",
+                "C": "Time Based",
+                "D": "Cell Based"
+            },
+            "correct_option_label": "C",
+            "explanation": "Time-based triggers dictate when backend logic executes automatically at set chronological intervals (like a daily or weekly schedule) without any manual user prompting.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q3",
+            "question_text": "Apps Scripts can be used for:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Pull Live Data from an API",
+                "B": "Validate Data Entries",
+                "C": "Write Macros",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Google Apps Script is a versatile platform used to extend spreadsheet capabilities. It can fetch external APIs (using UrlFetchApp), validate inputs via programmatic logic, and act as custom macros to automate tasks.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q4",
+            "question_text": "Fundamental Building Blocks of spread sheet based system",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Data Linking across sheets",
+                "B": "Cloud Platform",
+                "C": "Budget Friendly",
+                "D": "Ease of Use"
+            },
+            "correct_option_label": "A",
+            "explanation": "Data linking using Primary Keys across different tables and sheets is a fundamental building block. It allows standalone spreadsheets to behave like interconnected databases or mini-ERPs.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q5",
+            "question_text": "Specifically, e.namedValues gives you a JavaScript object where:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Keys are arrays of answer and value are questions from the form",
+                "B": "Answers are arrays of keys and questions are values from the form",
+                "C": "Keys are names of questions from the form and Values are arrays of answer",
+                "D": "None of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "In Google Forms scripting, the `e.namedValues` object captures submitted data by mapping the exact names of the form questions as 'Keys', and storing the user's submitted responses as array 'Values'.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q6",
+            "question_text": "You want to automate delivery fee calculation for the following business rule,\n\nIn Bangalore and Chennai: Rs. 80 flat fee for Free users; Premium users get free delivery\n\nIn Mumbai: Premium users pay Rs. 40 flat; Free users pay Rs. 5/kg,\n\nWhich of formula is correct",
+            "question_type": "MCQ",
+            "options": {
+                "A": "=IFS( AND(OR(B48=\"Chn\", B48=\"Blr\"), B49=\"Free\"), 80, AND(OR(B48=\"Chn\", B48=\"Blr\"), B49=\"Premium\"), 0, AND(B48=\"Mum\", B49=\"Premium\"), 40, TRUE, B36*5)",
+                "B": "=IFS( AND(OR(B48=\"Chn\", B48=\"Mum\"), B49=\"Free\"), 80, AND(OR(B48=\"Chn\", B48=\"Blr\"), B49=\"Premium\"), 0, AND(B48=\"BLR\", B49=\"Premium\"), 40, TRUE, B36*5)",
+                "C": "=IFS( AND(OR(B48=\"Chn\", B48=\"Blr\"), B49=\"Free\"), 80, AND(OR(B48=\"Chn\", B48=\"Blr\"), B49=\"Premium\"), 0, AND(B48=Blr\", B49=\"Premium\"), 40, FALSE, B36*5)",
+                "D": "=IFS( OR(AND(B48=\"Chn\", B48=\"Blr\"), 80, AND(OR(B48=\"Chn\", B48=\"Blr\"), B49=\"Premium\"), 0, AND(B48=\"Mum\", B49=\"Premium\"), 40, TRUE, B36*5)"
+            },
+            "correct_option_label": "A",
+            "explanation": "Option A perfectly encapsulates the nested logic using IFS. It evaluates Chn/Blr with Free (80), Chn/Blr with Premium (0), Mum with Premium (40), and uses the TRUE fallback for the remaining Mum Free users to multiply weight (B36) by 5.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q7",
+            "question_text": "Why is 'Safety Stock' calculated in inventory planning?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "For tax purposes",
+                "B": "To account for demand fluctuations",
+                "C": "To track discounts",
+                "D": "To forecast sales"
+            },
+            "correct_option_label": "B",
+            "explanation": "Safety Stock acts as a minimum buffer strictly calculated to prevent stockouts during worst-case scenarios, such as sudden demand spikes (fluctuations) or unexpected delivery delays.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q8",
+            "question_text": "If you are building a Employee Master Table which of the following would be unique identifier to refer to specific employee across various tables, it's also known as primary key",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Employee ID",
+                "B": "Employee Name",
+                "C": "Date of Joining",
+                "D": "Employee Address"
+            },
+            "correct_option_label": "A",
+            "explanation": "A Primary Key must be a completely unique identifier to link records accurately. Employee IDs are specifically generated to be distinct, avoiding issues with duplicate names or overlapping join dates.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q9",
+            "question_text": "You want to know how fast the inventory moves, which of the following column of Inventory table helps you on the same",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Standard Deviations",
+                "B": "Maximum Lead Time",
+                "C": "Average Daily Sales",
+                "D": "Average Lead Time"
+            },
+            "correct_option_label": "C",
+            "explanation": "Average Daily Sales directly tracks the historical daily consumption rate of a product, making it the primary metric for assessing how quickly inventory moves out of the warehouse.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q10",
+            "question_text": "Which of the following is not a usecase of UrlFetchApp",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Trigger whatsapp messages using services likeTwilio and Interkart",
+                "B": "Get Real time currency exchange",
+                "C": "Connect with external CRMs and ERP",
+                "D": "Building Macros"
+            },
+            "correct_option_label": "D",
+            "explanation": "UrlFetchApp bridges Google Apps Script to external APIs across the internet (like CRMs or currency trackers). Building basic spreadsheet Macros relies on local spreadsheet interactions, not external network fetching.",
+            "module": 1
+        },
+        {
+            "question_id": "MT1_Q11",
+            "question_text": "______ helps in making sense of large volume of data not by changing the raw data itself but by creating a summary view",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Summary Table",
+                "B": "Pivot Table",
+                "C": "None of the above",
+                "D": "Custom Table"
+            },
+            "correct_option_label": "B",
+            "explanation": "A Pivot Table automatically reorganizes, aggregates, and cross-tabulates raw dataset rows into an interactive summary view without altering the original baseline data.",
+            "module": 2
+        },
+        {
+            "question_id": "MT1_Q12",
+            "question_text": "What is the first step of real world data analysis:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Preparing Dashboard",
+                "B": "Understanding Dataset",
+                "C": "Investigating Dataset",
+                "D": "Analysing Insights with pivot slicers"
+            },
+            "correct_option_label": "B",
+            "explanation": "Before charting or building pivots, an analyst must first understand the underlying structure of the dataset (e.g., distinguishing whether the data is a transaction table or a pre-summarized view).",
+            "module": 2
+        },
+        {
+            "question_id": "MT1_Q13",
+            "question_text": "You have been given the data of a gifting shop that deals with Chocolates and Bouquets, depending on the occasion some customers might only order chocolate some might only order bouquets and some might order both. These aren’t mutually exclusive sets. Hence we apply the basics of Set theory. Which of the following is correct",
+            "question_type": "MCQ",
+            "options": {
+                "A": "n(C ∩ B) = n(C) + n(B) + n(C ∩ B)",
+                "B": "n(A ∩ B) = n(A) + n(B) – n(A ∩ B)",
+                "C": "n(A ∪ B) = n(A) + n(B) + n(A) ∩ n(B)",
+                "D": "n(B ∪ C) + n(C ∩ B) = n(B) + n(C)"
+            },
+            "correct_option_label": "D",
+            "explanation": "By Set Theory, the total number of unique orders (Union) equals the sum of individual groups minus their overlap (Intersection): n(B \u222a C) = n(B) + n(C) - n(C \u2229 B). Option D is the direct algebraic rearrangement of this standard formula.",
+            "module": 2
+        },
+        {
+            "question_id": "MT1_Q14",
+            "question_text": "Which formula best categorizes SKU variety for each customer?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "COUNT(SKU)",
+                "B": "COUNTIF(SKU>3)",
+                "C": "If(SKUCount > 35,\"A\", ...)",
+                "D": "MATCH(SKU)"
+            },
+            "correct_option_label": "C",
+            "explanation": "Categorizing or segmenting users based on behavioral metrics requires logical conditionals. Nested IF statements assess a metric (like SKUCount) against a threshold to assign a category label.",
+            "module": 2
+        },
+        {
+            "question_id": "MT1_Q15",
+            "question_text": "While building a dashboard you are trying to find which area returns the most products. How would you construct the pivot for the same, which data would you select ?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Row: SKU, Column: ReturnQty",
+                "B": "Row: LocalityCluster, Value: Sum of ReturnQty",
+                "C": "Row: CustomerId Column: ReturnQty",
+                "D": "Row: SKU Value: Sum of Orders"
+            },
+            "correct_option_label": "B",
+            "explanation": "To identify returns by geographic area, you must set the spatial dimension (LocalityCluster) as the Row, and aggregate the return metrics (Sum of ReturnQty) within the pivot's Values section.",
+            "module": 2
+        },
+        {
+            "question_id": "MT1_Q16",
+            "question_text": "When you use a slicer and categorise your revenue data monthwise, you notice that revenue is going up but item count remains the same, which of the following could be right (Select all that make sense)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Price Increase",
+                "B": "Volume Increase",
+                "C": "Supply Increase",
+                "D": "Customer count Increase"
+            },
+            "correct_option_label": "A, D",
+            "explanation": "If item count (volume) is unchanged but revenue rises, the product prices must have increased. Alternatively, an increased customer count without a volume jump implies changes in purchasing patterns favoring higher-ticket items.",
+            "module": 2
+        },
+        {
+            "question_id": "MT1_Q17",
+            "question_text": "Why use MAX for Total Orders in daily-SKU level data?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Prevents double-counting from repeated entries",
+                "B": "Adds totals faster",
+                "C": "Gets SKU count",
+                "D": "Sorts rows better"
+            },
+            "correct_option_label": "A",
+            "explanation": "When summarizing daily-SKU data, aggregate order totals might duplicate across individual rows. Using MAX isolates the true daily figure without artificially inflating the sum through double-counting.",
+            "module": 2
+        },
+        {
+            "question_id": "MT1_Q18",
+            "question_text": "You are going to launch a discount to reward your loyal customers, How would you identify these customers?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sort by value of frequency of purchase to identify the top 50 customers",
+                "B": "Sort by value of average order value identify the top 50 customers",
+                "C": "Sort by value of distinct signup date and identify the top 50 customers",
+                "D": "Sort by value of max purchase date and identify top 50 customers"
+            },
+            "correct_option_label": "A",
+            "explanation": "Customer loyalty is fundamentally demonstrated by a high frequency of purchases. Sorting by frequency effectively isolates users who consistently interact and buy from the brand.",
+            "module": 3
+        },
+        {
+            "question_id": "MT1_Q19",
+            "question_text": "While building your dashboard you want to copy formulas, however this seems to be tedious, which of the below steps have to be taken to make the copying of formulas simpler",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Manual write each formula",
+                "B": "Do paste special and copy only formulas",
+                "C": "Do Ctrl C and Ctrl V",
+                "D": "Turn off GetPivotSummaryData from Options"
+            },
+            "correct_option_label": "B",
+            "explanation": "Using 'Paste Special -> Formulas' ensures that only the structural mathematical logic is transferred across cells, preventing the overriding of cell formatting or inadvertently locking external pivot references.",
+            "module": 2
+        },
+        {
+            "question_id": "MT1_Q20",
+            "question_text": "After the annual performance review of a company with 5000+ employees, you have now got the data containing ratings for all the employees, CEO wants you to present a slide in the upcoming meeting of % of Top performers, Average performers and Below Average performers in the company, which of the following formula will you use for the same",
+            "question_type": "MCQ",
+            "options": {
+                "A": "IF(Annual Rating >4,...)",
+                "B": "VLOOKUP from Employee master",
+                "C": "SUMIF(Ratings)",
+                "D": "FILTER(Department)"
+            },
+            "correct_option_label": "A",
+            "explanation": "To categorize a raw numerical rating into a categorical segment (e.g., Top, Average, Below Average), a logic-based IF statement is required to evaluate each employee's score against predefined performance thresholds.",
+            "module": 2
+        },
+        {
+            "question_id": "MT2_Q1",
+            "question_text": "In one of the marketing team presentation, they have spoken about a group of customers who had recently purchased products of Rs 10 Lakhs in aggregate, The frequency of purchase of these customers is once every year. One of your junior asked you after the presentation what was the kind of segmentation done by Marketing Team",
+            "question_type": "MCQ",
+            "options": {
+                "A": "RFM Segmentation",
+                "B": "RPM Segmentation",
+                "C": "RMP Segmentation",
+                "D": "Statistical Segmentation"
+            },
+            "correct_option_label": "A",
+            "explanation": "The segmentation described highlights Recency (recently purchased), Monetary value (Rs 10 Lakhs aggregate spend), and Frequency (once every year). This aligns perfectly with the standard RFM framework.",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q2",
+            "question_text": "What is the formula for frequency?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Invoice Value/ Total customer",
+                "B": "Average of Order Value",
+                "C": "No of Orders/ Total months active",
+                "D": "Total Spend/ Total Invoice Value"
+            },
+            "correct_option_label": "C",
+            "explanation": "Purchase frequency tracks how often a customer transacts over their lifecycle. It is calculated by dividing their total number of distinct orders by their total active lifespan (in months).",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q3",
+            "question_text": "When building a retention matrix, which Excel feature is essential for easily visualizing drop-offs over time?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Conditional formatting",
+                "B": "Formulas",
+                "C": "Data validation",
+                "D": "Pivot Tables"
+            },
+            "correct_option_label": "A",
+            "explanation": "Conditional formatting (such as applying color heat maps from green to red) is essential over cohort matrices to instantly visualize and spot patterns regarding customer retention and drop-off rates.",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q4",
+            "question_text": "If a cohort’s CLTV is ₹2,400, which of the following Customer Acquisition Cost (CAC) would you prefer?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹2,400 – ₹2,800",
+                "B": "₹480 – ₹720",
+                "C": "₹1,200 – ₹1,800",
+                "D": "₹100 – ₹300"
+            },
+            "correct_option_label": "D",
+            "explanation": "A core strategic rule is that LTV must strictly exceed CAC for business viability. The lowest possible CAC band (₹100 \u2013 ₹300) creates the highest profit margin and safest LTV-to-CAC ratio.",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q5",
+            "question_text": "You have been approached by Marketing head, they want to run a campaign the cost of the campaign per customer would come upto Rs. 1425/-, from the below data calculate the maximum amount that can be spent per customer, and advise if we can proceed with the campaign or not?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The maximum amount that can be spent per customer is Rs. 1500, hence we can proceed with the campaign.",
+                "B": "The maximum amount that can be spent per customer is Rs 5000, hence we can proceed with the campaign",
+                "C": "The maximum amount that can be spent per customer is Rs. 2500, hence we can proceed with the campaign",
+                "D": "The maximum amount that can be spent per customer is Rs. 750, hence we cannot proceed with the campaign"
+            },
+            "correct_option_label": "A",
+            "explanation": "Calculated Profit LTV = AOV \u00d7 Frequency \u00d7 Lifespan \u00d7 Profit %. \nLTV = 250 \u00d7 2 \u00d7 10 \u00d7 0.30 = Rs. 1500. \nSince the maximum spend (LTV) is 1500, and the campaign costs 1425, it is profitable to proceed.",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q6",
+            "question_text": "If my average churn is 25% what is the lifespan of the customer",
+            "question_type": "MCQ",
+            "options": {
+                "A": "2.5",
+                "B": "0.25",
+                "C": "4",
+                "D": "2"
+            },
+            "correct_option_label": "C",
+            "explanation": "Average Lifespan is modeled statistically as the inverse of the churn rate. \nLifespan = 1 \u00f7 Churn Rate. \nLifespan = 1 \u00f7 0.25 = 4 periods.",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q7",
+            "question_text": "What Excel function is used to calculate average lifespan (Centroid of lifespan) from the cohort matrix in our calculations and method shown in class?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "SUMPRODUCT(Z4:AE4,Z3:AE3)/SUM(Z4:AE4)",
+                "B": "SUM(Z4:AE4) /PRODUCT(Z4:AE4,Z3:AE3)",
+                "C": "SUM(Z3:AE3) /SUMPRODUCT(Z4:AE4,Z3:AE3)",
+                "D": "SUMPRODUCT(Z4:AE4,Z3:AE3)/SUM(Z4:AE4) + 1"
+            },
+            "correct_option_label": "A",
+            "explanation": "To accurately measure the cohort's average retention span, SUMPRODUCT is utilized to multiply the number of retained customers at each period by their corresponding month index, divided by the cohort's total starting sum to yield a weighted average.",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q8",
+            "question_text": "What nature of function is used to calculate average lifespan from the cohort matrix in our method shown in class?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Simple Average",
+                "B": "Weighted Average",
+                "C": "Moving Average",
+                "D": "Probability"
+            },
+            "correct_option_label": "B",
+            "explanation": "Calculating lifespan through cohort matrices inherently relies on a Weighted Average to ensure cohorts of differing initial sizes appropriately influence the final timeline metrics.",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q9",
+            "question_text": "Which of the below is the correct formula to calculate Recency?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "DATEDIF(Invoice Date, Current Date, \u201cM\u201d)",
+                "B": "DATEIF(Current Date, Invoice Date, \u201cM\u201d)",
+                "C": "DATE(Invoice Date, Current Date, \u201cM\u201d)",
+                "D": "DAY (Current Date, Invoice Date, \u201cM\u201d)"
+            },
+            "correct_option_label": "A",
+            "explanation": "DATEDIF effectively evaluates elapsed time. Passing 'Invoice Date' as start, 'Current Date' as end, and 'M' as the parameter returns the exact recency in elapsed months.",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q10",
+            "question_text": "How do you bifurcate the total order value into different buckets",
+            "question_type": "MCQ",
+            "options": {
+                "A": "By using percentile formula then multiplying it into number of buckets and then putting a ceiling function",
+                "B": "By using percentage formula then multiplying it into number of buckets and then putting a ceiling function",
+                "C": "By using percentile Rank formula then multiplying it into number of buckets and then putting a ceiling function",
+                "D": "By using percent rank formula then multiplying it into number of buckets and then putting a ceiling function"
+            },
+            "correct_option_label": "D",
+            "explanation": "RFM scoring segments customers dynamically using statistical distribution. The PERCENTRANK formula ranks a value relative to the dataset, which is then multiplied by the target bucket count and rounded up via a CEILING function to establish the final score (1 to 4).",
+            "module": 3
+        },
+        {
+            "question_id": "MT2_Q11",
+            "question_text": "What is the primary purpose of an MIS Report",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To record all raw data, build a ERP system that captures data and then build automations and charts on it so that it can be used for business intelligence",
+                "B": "To help decision-makers understand business performance through summarized insights",
+                "C": "To track sales data and marketing data for managers",
+                "D": "To prepare tax filings after doing the PnL. This is useful for accounting teams to finalize their monthly activities"
+            },
+            "correct_option_label": "B",
+            "explanation": "A Management Information System (MIS) synthesizes multifaceted cross-departmental data to provide executive decision-makers with summarized, high-level narratives on overall business health.",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q12",
+            "question_text": "What is a Trial Balance?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A summary of monthly sales and purchases done by company in different cost headings",
+                "B": "customer transaction log of revenue and costs according to individual city or unit",
+                "C": "Profit and loss statement for each item that is tracked in the company",
+                "D": "A list of all ledger accounts with their debit or credit balances to confirm books balance"
+            },
+            "correct_option_label": "D",
+            "explanation": "A Trial Balance acts as a raw data export summarizing all active accounting ledgers alongside their cumulative debit and credit totals, ensuring mathematical alignment before drafting a formal P&L.",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q13",
+            "question_text": "Which cost would typically be classified under SG and A?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Raw Materials for production of finished goods",
+                "B": "Facebook Ads for a product launch",
+                "C": "HR and Finance Salaries",
+                "D": "Transport to deliver finished goods"
+            },
+            "correct_option_label": "C",
+            "explanation": "SG&A (Selling, General, and Administrative) expenses encapsulate fixed central overheads that support overarching business operations but are independent of direct project execution, such as HR and Finance compensation.",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q14",
+            "question_text": "Your company is in production of Games, recently you have launched a offline single player game named Noha on Playstation and it’s a hit, Six months since the launch today you are sitting for a meeting with top executives and discussing on the PnL, which of the following would be an apt description for trend of your PnL",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Since you deal in Physical goods and high direct cost there wouldn’t be a significantly high gross margin",
+                "B": "Since you deal with minimal Physical goods and low direct cost there would be a significantly high gross margin",
+                "C": "Since you deal in gaming company the hosting charges will be high but salaries would be low and thus there is positive gross margin",
+                "D": "After sales service would be a significant component of your costs and hence the gross margin wouldn’t be significantly high"
+            },
+            "correct_option_label": "B",
+            "explanation": "Offline digital games require almost no physical raw materials to replicate once developed. Because direct production costs (COGS) are extremely low compared to the retail price, the Gross Margin sits significantly high.",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q15",
+            "question_text": "In a D2C fashion brand, why is CM1 actively monitored?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To track product manufacturing costs",
+                "B": "To track electricity consumption",
+                "C": "To calculate depreciation",
+                "D": "To measure the ROI of marketing campaigns"
+            },
+            "correct_option_label": "D",
+            "explanation": "Contribution Margin 1 (CM1) evaluates the profitability strictly after Direct Marketing expenditures are subtracted from the Gross Margin. It directly measures the efficiency and ROI of acquisition channels before central overheads apply.",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q16",
+            "question_text": "You are sitting in an PnL Analysis meeting the CEO wants you to filter using main heads and show the total of all expense under that head, there are multiple such heads and you should keep filtering and giving totals of only visible rows when filters are applied, which formula should you use?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "SUBTOTAL(9, range)",
+                "B": "SUMIF",
+                "C": "SUM",
+                "D": "AGGREGATE(9, range)"
+            },
+            "correct_option_label": "A",
+            "explanation": "When dealing with multi-layered, filterable P&L data, SUBTOTAL (using index 9) evaluates visible cells only. It dynamically calculates true aggregates without double-counting nested line items hidden by active filters.",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q17",
+            "question_text": "You entity operates across 2 locations and 1 HQ, the CEO spends 30% of his time at HQ and the rest of the time equally between Location 1 and Location 2. You are asked to prepare location wise PnL, How would you deal with CEO salary?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Show it entirely under HQ",
+                "B": "Apportion the salary equally between all 3 locations",
+                "C": "CEO Salary is not a component of PnL",
+                "D": "Apportion it in ratio of 3:3.5:3.5"
+            },
+            "correct_option_label": "D",
+            "explanation": "Indirect costs must be apportioned logically reflecting consumption. The CEO dedicates 30% time to HQ. The remaining 70% is split evenly (35% Location 1, 35% Location 2), yielding an apportionment ratio of 30:35:35, or simplified to 3:3.5:3.5.",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q18",
+            "question_text": "What would be the topline of the PnL",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹50.00 Cr",
+                "B": "₹49.85 Cr",
+                "C": "₹49.50 Cr",
+                "D": "₹50.35 Cr"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Topline Gross Revenue exclusively sums core operational credit earnings. \nSubscription (34.50) + One-time License (10.25) + Professional Services (5.10) = 49.85 Cr. Bank Interest is classified post-operations.",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q19",
+            "question_text": "What is CM1 if Unit Costs = ₹15.15 Cr and Direct Marketing = ₹8.35 Cr?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹27.00 Cr",
+                "B": "₹26.35 Cr",
+                "C": "₹26.50 Cr",
+                "D": "₹27.35 Cr"
+            },
+            "correct_option_label": "B",
+            "explanation": "CM1 evaluates gross profitability minus direct marketing. \nGross Revenue (49.85) - Unit Costs (15.15) = Gross Margin (34.70). \nGross Margin (34.70) - Direct Marketing (8.35) = CM1 (26.35 Cr).",
+            "module": 4
+        },
+        {
+            "question_id": "MT2_Q20",
+            "question_text": "A year back, most of the staffs started quitting from support functions, this led to lots of workload and backlogs. In order to prevent such instance the teams started extensively hiring. Which of the below Comment is apt with reference to the numbers in above TB",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Admin costs are 20.86% of revenue, While it is good to keep backups extensively hiring has lead to this spike in cost.",
+                "B": "Admin costs are 30.01% of revenue, While it is good to keep backups extensively hiring has lead to this spike in cost.",
+                "C": "Admin costs are 101.01% of revenue, While it is good to keep backups extensively hiring has lead to this spike in cost",
+                "D": "Admin costs are 20.86% of revenue, Is a common scenario for software industries since salary is the only major component of their PnL"
+            },
+            "correct_option_label": "A",
+            "explanation": "Calculated structurally, Admin Salaries (10.40) divided by the Revenue Topline (49.85) equals ~20.86%. This metric identifies how the reactive strategy of over-hiring has built excessive fixed SG&A overheads cutting heavily into EBITDA.",
+            "module": 4
+        }
+    ]
+}

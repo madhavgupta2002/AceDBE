@@ -1,0 +1,1688 @@
+{
+    "exam_metadata": {
+        "subject_name": "EP31x Entrepreneurial Mindset",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "01",
+            "question_text": "Prof. Sarasvathy’s research on expert entrepreneurs primarily disrupted which of the following assumptions in classical entrepreneurial theory?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Opportunity is discovered through linear analysis",
+                "B": "Entrepreneurs inherently possess rare personality traits",
+                "C": "Entrepreneurial success is primarily driven by prior capital availability",
+                "D": "Causation is the only viable decision-making approach under uncertainty"
+            },
+            "correct_option_label": "D",
+            "explanation": "Prof. Sarasvathy's research introduced Effectuation, challenging the classical assumption that causation (linear, predictive planning) is the only or best way to navigate extreme uncertainty.",
+            "module": 1
+        },
+        {
+            "question_id": "02",
+            "question_text": "The Bird-in-Hand principle fundamentally shifts entrepreneurial strategy by:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Relying on predictive analytics to mitigate uncertainty",
+                "B": "Starting with affordable market research data",
+                "C": "Initiating action based on the entrepreneur’s means rather than desired ends",
+                "D": "Seeking capital investment before product development"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Bird-in-Hand principle advocates starting with what you have (Who I am, what I know, whom I know) rather than waiting for external resources or focusing solely on distant goals.",
+            "module": 1
+        },
+        {
+            "question_id": "03",
+            "question_text": "How does risk differ from uncertainty? (Select all those applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Risk is measurable using probabilities; uncertainty is not",
+                "B": "Under uncertainty, decision-makers cannot assign probabilities to outcomes",
+                "C": "Risk involves randomness; uncertainty involves complete determinism",
+                "D": "Risk can be insured or hedged; uncertainty requires adaptive strategies"
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "Risk is a known unknown where probabilities can be calculated and hedged. Knightian uncertainty involves unknowable outcomes where historical data cannot predict the future.",
+            "module": 1
+        },
+        {
+            "question_id": "04",
+            "question_text": "The word “entrepreneur” is derived from the French term ‘Entreprendre’. What does it mean?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To innovate",
+                "B": "To predict",
+                "C": "To undertake",
+                "D": "To lead"
+            },
+            "correct_option_label": "C",
+            "explanation": "The French word 'entreprendre' translates literally to 'undertake', referring to an individual who undertakes the risk of a new enterprise.",
+            "module": 1
+        },
+        {
+            "question_id": "05",
+            "question_text": "What types of changes often spark new entrepreneurial opportunities? (Select all those applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Technological developments like AI or blockchain",
+                "B": "Changes in societal preferences and demographics",
+                "C": "Natural disasters and weather patterns",
+                "D": "Political and regulatory shifts (e.g., FDI norms)"
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "New venture ideas primarily emerge from continuous environmental shifts, specifically technological, social/demographic, and political/regulatory changes.",
+            "module": 1
+        },
+        {
+            "question_id": "06",
+            "question_text": "In a rapidly changing AI regulatory landscape, a founder decides to co-create solutions with legal experts and client partners instead of waiting for regulatory clarity. What best explains this behavior?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Exploitation of asymmetric information",
+                "B": "Strategic hedging",
+                "C": "Effectual control through stakeholder engagement",
+                "D": "Avoidance of sunk cost bias"
+            },
+            "correct_option_label": "C",
+            "explanation": "This demonstrates the 'Crazy Quilt' principle of Effectuation, where founders focus on co-creation and forming partnerships (stakeholder commitments) to navigate and control an uncertain future.",
+            "module": 1
+        },
+        {
+            "question_id": "07",
+            "question_text": "Why is the idea that \"ideas are finite\" a flawed assumption in entrepreneurship? (Select all those applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because ideas are constantly generated by external changes",
+                "B": "Because every idea has already been implemented",
+                "C": "Because combinations of needs and capabilities can be infinite",
+                "D": "Because only experts can generate valuable ideas"
+            },
+            "correct_option_label": "A, C",
+            "explanation": "Ideas are never depleted because the macro-environment constantly shifts, creating new problems, and humans possess an infinite capacity to combine different skills and needs.",
+            "module": 1
+        },
+        {
+            "question_id": "08",
+            "question_text": "Which principle of effectuation explicitly contradicts conventional approaches to risk-return trade-offs in finance?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Affordable Loss",
+                "B": "Lemonade",
+                "C": "Pilot-in-the-Plane",
+                "D": "Bird-in-Hand"
+            },
+            "correct_option_label": "A",
+            "explanation": "Conventional finance computes risk-adjusted expected returns, while 'Affordable Loss' flips this by having the entrepreneur focus purely on what they are willing to lose, capping downside risk.",
+            "module": 1
+        },
+        {
+            "question_id": "09",
+            "question_text": "Which of the following statements align with the idea that “Anyone can be an entrepreneur”? (Select all those applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Entrepreneurship is a teachable and learnable process",
+                "B": "Only people with prior business experience succeed",
+                "C": "Diverse personal backgrounds can inspire entrepreneurial thinking",
+                "D": "Entrepreneurial action requires a fixed, linear personality profile"
+            },
+            "correct_option_label": "A, C",
+            "explanation": "Research shows there are no immutable entrepreneurial traits. Entrepreneurship is a methodology that can be taught, and people from diverse backgrounds can leverage their unique experiences to build ventures.",
+            "module": 1
+        },
+        {
+            "question_id": "10",
+            "question_text": "The concept of opportunity cost is most relevant in which of the following entrepreneurial decisions?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Investing in a proven revenue model",
+                "B": "Accepting a partnership with a supplier",
+                "C": "Choosing between spending time building a prototype versus pursuing an internship",
+                "D": "Registering the business under MSME norms"
+            },
+            "correct_option_label": "C",
+            "explanation": "Opportunity cost refers to the value of the next best alternative foregone. Choosing to build a prototype means sacrificing the guaranteed income and experience of an internship.",
+            "module": 2
+        },
+        {
+            "question_id": "11",
+            "question_text": "A team of student entrepreneurs launches a startup using their coding skills, networks within college, and feedback from peers to iteratively refine their offering. This approach reflects a combination of which effectual principles?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Bird-in-Hand, Lemonade, Crazy-Quilt",
+                "B": "Affordable Loss, Causal Logic, Lean Startup",
+                "C": "Pilot-in-the-Plane, Expected Return, Preemptive Planning",
+                "D": "Blue Ocean Strategy, Agile Thinking, Goal Optimization"
+            },
+            "correct_option_label": "A",
+            "explanation": "Using coding skills and college networks refers to 'Bird-in-Hand' (means), getting feedback from peers acts like 'Crazy-Quilt' (co-creation), and iteratively refining covers adaptive learning elements of effectuation.",
+            "module": 1
+        },
+        {
+            "question_id": "12",
+            "question_text": "What is entrepreneurship not limited to? (Select all those applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "For-profit ventures",
+                "B": "Social or environmental goals",
+                "C": "Just having an idea",
+                "D": "Creating value under uncertainty"
+            },
+            "correct_option_label": "A, C",
+            "explanation": "Entrepreneurship is not solely about for-profit undertakings (social ventures exist) and it is much more than just having an idea (execution and value creation are key).",
+            "module": 1
+        },
+        {
+            "question_id": "13",
+            "question_text": "Which company from the case discussions leveraged India's retail infrastructure to disrupt the fresh food space?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Amagi",
+                "B": "Tricog",
+                "C": "MapmyIndia",
+                "D": "iD Fresh Foods"
+            },
+            "correct_option_label": "D",
+            "explanation": "iD Fresh Foods leveraged local retail and supply chain networks to scale their perishable food products (like idli/dosa batter).",
+            "module": 1
+        },
+        {
+            "question_id": "14",
+            "question_text": "Which of the following ventures would best fit the category of a Propagatory Venture?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A one-person bakery serving a local neighborhood",
+                "B": "A software startup creating new programming languages",
+                "C": "A franchise-based education business rapidly scaling across India",
+                "D": "A lifestyle business generating consistent income with no intent to scale"
+            },
+            "correct_option_label": "C",
+            "explanation": "Propagatory ventures replicate a proven business model in a new geography or context to scale rapidly, much like a franchise expansion.",
+            "module": 1
+        },
+        {
+            "question_id": "15",
+            "question_text": "Which of the following best characterizes the contrast between effectual logic and causal logic in terms of goal formulation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Effectual logic assumes goals are fixed and determined externally",
+                "B": "Effectual logic treats goals as emergent, shaped through interaction and iteration",
+                "C": "Causal logic ignores goal setting entirely",
+                "D": "Causal logic builds goals based on emotional and social intuition"
+            },
+            "correct_option_label": "B",
+            "explanation": "Unlike causal logic which starts with predefined goals, effectual logic starts with a pool of means and allows goals to emerge dynamically through interactions and stakeholder commitments.",
+            "module": 1
+        },
+        {
+            "question_id": "16",
+            "question_text": "What does “ideate passionately but evaluate dispassionately” imply?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Evaluation should be emotionally driven",
+                "B": "Emotional commitment is key to evaluation",
+                "C": "Creativity should be uninhibited, but decision-making must be rational",
+                "D": "Avoid generating too many ideas"
+            },
+            "correct_option_label": "C",
+            "explanation": "The golden rule of opportunity evaluation states that while idea generation requires unbridled passion and creativity, evaluating the business viability requires cold, objective, and unbiased analysis.",
+            "module": 2
+        },
+        {
+            "question_id": "17",
+            "question_text": "What criteria should be assessed to determine economic feasibility of an entrepreneurial idea? (Tick all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Margins between cost and customer willingness to pay",
+                "B": "Founder’s educational background",
+                "C": "Profitability of the offering",
+                "D": "Time to secure media coverage"
+            },
+            "correct_option_label": "A, C",
+            "explanation": "Economic feasibility is strictly concerned with the venture's ability to generate revenue, maintain palatable gross margins, and achieve profitability, independent of founder traits or media hype.",
+            "module": 2
+        },
+        {
+            "question_id": "18",
+            "question_text": "How can confirmation bias affect opportunity evaluation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It enhances objective decision-making",
+                "B": "It helps eliminate emotional attachment",
+                "C": "It aids in customer discovery",
+                "D": "It can cause entrepreneurs to overvalue their own ideas"
+            },
+            "correct_option_label": "D",
+            "explanation": "Confirmation bias leads founders to selectively seek out data that validates their assumptions, blinding them to actual market risks and making them artificially overvalue weak ideas.",
+            "module": 2
+        },
+        {
+            "question_id": "19",
+            "question_text": "In the context of willingness, why must entrepreneurs consider opportunity cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To assess what they’re giving up by choosing this path",
+                "B": "To decide whether their skills are sufficient",
+                "C": "To identify startup competitors",
+                "D": "To calculate exact margins"
+            },
+            "correct_option_label": "A",
+            "explanation": "Evaluating Founder-Market fit requires an entrepreneur to objectively assess if they are willing to absorb the high opportunity costs (lost wages, career gaps) required by the entrepreneurial journey.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "What does SOM (Serviceable Obtainable Market) represent in market sizing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Total number of global users",
+                "B": "The portion of the market your firm can realistically capture",
+                "C": "National policy impact",
+                "D": "Total addressable market"
+            },
+            "correct_option_label": "B",
+            "explanation": "SOM is the realistic segment of the Serviceable Addressable Market (SAM) that a venture can actually capture given its current resources, constraints, and competition.",
+            "module": 2
+        },
+        {
+            "question_id": "21",
+            "question_text": "Why is opportunity evaluation considered inherently difficult in entrepreneurship? (Tick all the options that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ideas are not always well-defined",
+                "B": "The process is purely objective",
+                "C": "It is subjective and prone to error",
+                "D": "Due to uncertainty"
+            },
+            "correct_option_label": "C, D",
+            "explanation": "Evaluating ideas in the early stages involves operating in extreme Knightian uncertainty where historical data doesn't exist, making judgments highly subjective and error-prone.",
+            "module": 2
+        },
+        {
+            "question_id": "22",
+            "question_text": "Which of the following is not a typical technique for idea generation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Brainstorming",
+                "B": "SWOT Analysis",
+                "C": "Painstorming",
+                "D": "Hobby- or skill-driven ideation"
+            },
+            "correct_option_label": "B",
+            "explanation": "SWOT Analysis is an evaluative and strategic planning tool for existing businesses, not an initial ideation technique like brainstorming or observing customer pains.",
+            "module": 1
+        },
+        {
+            "question_id": "23",
+            "question_text": "Which of the following are valid reasons to move from desk-based evaluation to taking action? (Tick all the options that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Environment is dynamic and changing",
+                "B": "Action gives real feedback that desk research cannot",
+                "C": "Desk evaluation ensures 100% success",
+                "D": "Stakeholder commitment often emerges only after action"
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "Desk research cannot reliably evaluate 'Zero to One' ideas. Action is required because it yields real-world feedback, adapts to dynamic environments, and attracts tangible stakeholder commitments.",
+            "module": 2
+        },
+        {
+            "question_id": "24",
+            "question_text": "An entrepreneur evaluates a moonshot idea with high uncertainty and unclear margins. What should they consider next?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Delay the idea indefinitely",
+                "B": "Identify what action can be taken now to test feasibility",
+                "C": "Wait until the entire market matures",
+                "D": "Focus only on building a complete business plan first"
+            },
+            "correct_option_label": "B",
+            "explanation": "Moonshots (High Potential, High Challenge) require stepping out of theoretical evaluation and into action to build prototypes or MVPs that practically test technical and economic feasibility.",
+            "module": 2
+        },
+        {
+            "question_id": "25",
+            "question_text": "Why doesn’t every idea translate to a viable opportunity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ideas are always scalable",
+                "B": "Evaluation techniques are always conclusive",
+                "C": "All ideas can succeed if funded well",
+                "D": "Many ideas lack a customer need or feasible solution"
+            },
+            "correct_option_label": "D",
+            "explanation": "An idea only becomes an opportunity if it exists at the intersection of a real market need, feasibility (technical/economic), and founder willingness.",
+            "module": 2
+        },
+        {
+            "question_id": "26",
+            "question_text": "Which of the following would constitute evidence of market traction at an early stage? (Tick all the options that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "LOIs (Letters of Intent) from potential customers",
+                "B": "Verbal encouragement from friends",
+                "C": "Early-stage partner commitments",
+                "D": "Pre-orders from end users"
+            },
+            "correct_option_label": "A, C, D",
+            "explanation": "Market traction requires 'credible commitments' (e.g., pre-orders, LOIs, partner contracts), whereas verbal encouragement from friends is merely a false positive driven by politeness.",
+            "module": 3
+        },
+        {
+            "question_id": "27",
+            "question_text": "In the Ather or Ola Electric EV market sizing case, which segment does SAM refer to?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Global electric vehicle ecosystem",
+                "B": "Charging infrastructure only",
+                "C": "Two-wheeler EV segment within India",
+                "D": "Specific products built for export"
+            },
+            "correct_option_label": "C",
+            "explanation": "While TAM encompasses all EVs in India, SAM (Serviceable Addressable Market) narrows the focus to the specific category the firm initially targets: the two-wheeler EV market in India.",
+            "module": 2
+        },
+        {
+            "question_id": "28",
+            "question_text": "While developing a B2B SaaS product, you notice a long sales cycle and customers delaying decisions. What does this indicate in opportunity evaluation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "High implementation difficulty",
+                "B": "Strong unmet need",
+                "C": "Positive cash flow potential",
+                "D": "Weakness in team motivation"
+            },
+            "correct_option_label": "A",
+            "explanation": "In the Market Opportunity Navigator, long B2B sales cycles and delayed revenue are major 'Implementation Obstacles' that increase the overall challenge (friction) of the venture.",
+            "module": 2
+        },
+        {
+            "question_id": "29",
+            "question_text": "You hear from an accelerator that your idea is too early-stage. Which step could help you move forward despite uncertainty?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Wait six months and resubmit",
+                "B": "Do a desk-based market analysis again",
+                "C": "Try selling or demonstrating the concept to potential users",
+                "D": "Increase your social media presence"
+            },
+            "correct_option_label": "C",
+            "explanation": "Action is the ultimate form of evaluation. Creating MVPs to demonstrate the concept to users gathers the tangible evidence needed to reduce uncertainty and validate demand.",
+            "module": 3
+        },
+        {
+            "question_id": "30",
+            "question_text": "You’re considering two ideas:\nIdea A has massive TAM but low margins\nIdea B has smaller TAM but high willingness to pay and strong margin\nBased on the opportunity evaluation framework, which idea should be prioritized initially?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Idea A, because market size matters most",
+                "B": "Idea B, as it may offer better economic viability and faster cash flow",
+                "C": "Both, since TAM matters more than margin",
+                "D": "Neither until external funding is secured"
+            },
+            "correct_option_label": "B",
+            "explanation": "High willingness to pay and strong gross margins make Idea B economically viable and self-sustaining faster, acting as a 'Quick Win' or 'Gold Mine' depending on execution challenges.",
+            "module": 2
+        },
+        {
+            "question_id": "31",
+            "question_text": "A founder is preparing for early customer interviews. Which of the following strategies would most likely lead to meaningful insights? (Select all that applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Framing the discussion as an opportunity to get feedback on product features",
+                "B": "Asking open-ended questions that explore real past experiences and frustrations",
+                "C": "Allowing silence during the interview to encourage richer responses",
+                "D": "Sharing the product idea early to validate interest through user reactions"
+            },
+            "correct_option_label": "B, C",
+            "explanation": "Lean interviewing emphasizes understanding the customer's problem without biasing them. Asking for stories of past behavior and embracing silence yield deeper truths than pitching a product early.",
+            "module": 3
+        },
+        {
+            "question_id": "32",
+            "question_text": "A founder is filling out the Lean Canvas for their healthy food startup. Which of the following entries would be considered misaligned or poorly framed for this early-stage venture that’s looking to find problem-solution fit? (Select all that applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Key Metric: “Monthly recurring revenue (MRR)”",
+                "B": "Unfair Advantage: “Our founder is deeply passionate about nutrition”",
+                "C": "Solution: “Millet-based cookies that replace processed snacks”",
+                "D": "Problem: “People lack healthy, convenient snack options during work hours”"
+            },
+            "correct_option_label": "A, B",
+            "explanation": "Passion is a prerequisite, not an 'Unfair Advantage' (which must be uncopyable). Furthermore, early-stage Key Metrics should track discovery/validation (e.g., interviews conducted), not lagging indicators like MRR.",
+            "module": 3
+        },
+        {
+            "question_id": "33",
+            "question_text": "If customer interviews consistently reveal enthusiasm but MVP usage remains low, the most appropriate strategic response is to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Redesign the brand identity",
+                "B": "Reduce pricing immediately",
+                "C": "Investigate the gap between intent and behaviour, and test habit-related barriers",
+                "D": "Add new features based on customer suggestions"
+            },
+            "correct_option_label": "C",
+            "explanation": "When stated intent doesn't match actual behavior, the problem is often onboarding friction or habit loops. Blindly adding features or dropping prices treats the symptom rather than diagnosing the underlying friction.",
+            "module": 3
+        },
+        {
+            "question_id": "34",
+            "question_text": "While assessing product-market fit, which signal offers the strongest evidence for “demonstrated demand”?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase in website traffic",
+                "B": "Prepayment by a small segment of users despite minimal feature set",
+                "C": "Verbal affirmations in interviews",
+                "D": "Repeat visits on landing pages"
+            },
+            "correct_option_label": "B",
+            "explanation": "Financial commitment (people opening their wallets) is the ultimate metric of validated demand, transcending vanity metrics like website hits or verbal affirmations.",
+            "module": 3
+        },
+        {
+            "question_id": "35",
+            "question_text": "Which combination of Lean Canvas blocks directly influences the pricing and scalability model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Channels and Customer Segments",
+                "B": "Solution and Unfair Advantage",
+                "C": "Key Metrics and Problem",
+                "D": "Revenue Streams and Cost Structure"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Revenue Streams (how value is captured) and the Cost Structure (expenses required) inherently define the venture's gross margins and economic viability for scaling.",
+            "module": 3
+        },
+        {
+            "question_id": "36",
+            "question_text": "Which best illustrates an “unfair advantage” in the context of early-stage ventures? (Select all that applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A better UI/UX than competitors",
+                "B": "Faster website loading time",
+                "C": "Patents",
+                "D": "A pre-existing influencer partnership that accelerates trust and traction"
+            },
+            "correct_option_label": "C, D",
+            "explanation": "An 'Unfair Advantage' cannot be easily copied or bought. Patents provide legal monopolies, and exclusive insider partnerships grant unique distribution channels that competitors cannot replicate.",
+            "module": 3
+        },
+        {
+            "question_id": "37",
+            "question_text": "Which interpretation of MVP outcomes reveals a flawed application of Lean principles?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "“A few users liked it, so we should scale the platform immediately.”",
+                "B": "“Only 5% converted, so we should consider if we solved a real problem.”",
+                "C": "“Most users didn’t finish the sign-up, so we need to study onboarding friction.”",
+                "D": "“The retention curve drops in Week 2 — let’s test behavioural triggers.”"
+            },
+            "correct_option_label": "A",
+            "explanation": "Scaling prematurely based on minor anecdotal positive feedback without achieving broad, rigorous Product-Market Fit is a classic 'flawed execution' trap that destroys startups.",
+            "module": 3
+        },
+        {
+            "question_id": "38",
+            "question_text": "Which of the following customer behaviours would strongly validate the existence of a real and painful problem worth solving? (Select all that applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customers pay for a temporary workaround that is inefficient or manual",
+                "B": "Users express frustration and complain on online forums regularly",
+                "C": "Customers ask frequently about your product’s roadmap and go-live date",
+                "D": "Users sign up but don’t return after initial exposure"
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "Customers actively complaining, asking for solutions, and already paying for inefficient alternatives proves the pain is severe enough that they are actively seeking relief.",
+            "module": 3
+        },
+        {
+            "question_id": "39",
+            "question_text": "How does customer-centricity, as emphasized in the venture building toolkit, extend beyond the design of product features? (Select all that applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It includes choosing acquisition channels based on founder preferences",
+                "B": "It drives all aspects of venture logic, including pricing, positioning, and sequencing of experiments",
+                "C": "It means prioritizing customer response over all else",
+                "D": "It replaces all competitive benchmarking"
+            },
+            "correct_option_label": "B, C",
+            "explanation": "Customer-centricity fundamentally shifts the venture from assuming the founder knows best to a model where customer responses strictly dictate the product iterations, pricing models, and pivot timing.",
+            "module": 3
+        },
+        {
+            "question_id": "40",
+            "question_text": "Which of the following best explains why early adopters must be separated from general customers in strategic planning?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They tend to be less price sensitive and more technically literate",
+                "B": "They reflect standard market behaviour",
+                "C": "They are more sceptical of MVPs",
+                "D": "They require longer onboarding periods"
+            },
+            "correct_option_label": "A",
+            "explanation": "Early adopters feel the pain most acutely, making them highly forgiving of early MVP flaws and typically less price-sensitive compared to the slower-moving mainstream market.",
+            "module": 3
+        },
+        {
+            "question_id": "41",
+            "question_text": "Which statement best captures the paradox of business plans?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They ensure better investor engagement regardless of market context",
+                "B": "They provide essential clarity for both stable and turbulent environments",
+                "C": "They offer structure but may hinder adaptive learning in volatile domains",
+                "D": "They are outdated tools in modern entrepreneurial practice"
+            },
+            "correct_option_label": "C",
+            "explanation": "Traditional lengthy business plans force linear, predictive execution. In highly uncertain startup environments, strict adherence to a plan prevents the necessary adaptive learning and pivoting required.",
+            "module": 3
+        },
+        {
+            "question_id": "42",
+            "question_text": "Which of the following states a critical misapplication of hypothesis testing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Designing experiments to maximize learning from each test",
+                "B": "Structuring tests to confirm the team’s prior assumptions",
+                "C": "Using MVPs to test user behaviour rather than stated preferences",
+                "D": "Prioritizing falsifiability over usability"
+            },
+            "correct_option_label": "B",
+            "explanation": "Hypotheses must be constructed to be falsifiable. Testing purely to seek confirmation of prior beliefs is a manifestation of Confirmation Bias and destroys the value of the Lean Method.",
+            "module": 3
+        },
+        {
+            "question_id": "43",
+            "question_text": "Which of the following would most strongly justify a pivot in a Lean Startup? (Select all that applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Users repeatedly use the product in unintended ways",
+                "B": "MVP adoption is high, but revenue model is unclear",
+                "C": "Interview insights reveal a more urgent adjacent problem",
+                "D": "Investors ask for higher margins"
+            },
+            "correct_option_label": "A, C",
+            "explanation": "A pivot is justified when fundamental customer behavior reveals a new reality, such as users adapting the tool for an entirely different use-case or discovering a more severe problem during interviews.",
+            "module": 3
+        },
+        {
+            "question_id": "44",
+            "question_text": "What’s the core reason Lean Startup methods are often unsuitable for mission-critical industries?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lack of funding options",
+                "B": "Long development cycles that preclude rapid iteration",
+                "C": "Minimal use of MVPs",
+                "D": "Absence of customer segmentation"
+            },
+            "correct_option_label": "B",
+            "explanation": "Mission-critical sectors (like aerospace or deep-tech medical devices) involve massive hardware cycles where building a faulty, rapid 'MVP' could result in disaster, making fast iteration physically impossible.",
+            "module": 3
+        },
+        {
+            "question_id": "45",
+            "question_text": "A founder is targeting both college students and working professionals for a learning platform. According to lean methodology, which of the following approaches would be most appropriate in this context? (Select all that applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Create a separate Lean Canvas for each segment to avoid assumption overlap",
+                "B": "Identify common pain points across both segments to simplify the business model",
+                "C": "Focus on one segment (early adopters) to design sharper hypotheses and experiments",
+                "D": "Use generalized value propositions applicable to all users for broader reach"
+            },
+            "correct_option_label": "A, C",
+            "explanation": "Different segments have drastically different pains and channels. Best practice dictates creating distinct Lean Canvases and focusing on the most desperate segment (early adopters) first.",
+            "module": 3
+        },
+        {
+            "question_id": "46",
+            "question_text": "FashNear's model exemplifies a premature attempt at productization without validating what critical entrepreneurial concept?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Channel-market fit",
+                "B": "Monetization elasticity",
+                "C": "Problem-solution fit",
+                "D": "Switching cost viability"
+            },
+            "correct_option_label": "C",
+            "explanation": "FashNear created a complex, high-touch delivery MVP without ensuring customers genuinely needed the solution. When subsidies ended, demand died, proving they lacked Problem-Solution fit.",
+            "module": 4
+        },
+        {
+            "question_id": "47",
+            "question_text": "The pivot from FashNear to Meri Shop (Meesho 1.0) was primarily a correction of which faulty assumption in the Lean Canvas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "That neighborhood fashion stores were not digitally ready",
+                "B": "That urban customers had a strong need for hyperlocal fashion delivery",
+                "C": "That resellers could manage logistics independently",
+                "D": "That WhatsApp was not a viable commercial platform"
+            },
+            "correct_option_label": "B",
+            "explanation": "The founders mistakenly assumed convenience was a massive pain point for B2C consumers. They pivoted to B2B (MeriShop) once they realized urban consumers didn't actually want hyperlocal delivery.",
+            "module": 4
+        },
+        {
+            "question_id": "48",
+            "question_text": "Meesho’s decision to vertically integrate logistics and payments most closely represents an attempt to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduce transaction complexity and increase stickiness through value capture mechanisms",
+                "B": "Enhance brand differentiation by offering exclusive merchandise",
+                "C": "Achieve cost parity with hyper-scaled competitors",
+                "D": "Foster open-access interoperability for third-party developers"
+            },
+            "correct_option_label": "A",
+            "explanation": "By solving the painful logistics and payments piece for the resellers, Meesho captured the entire transaction loop, reducing complexity and ensuring massive user stickiness.",
+            "module": 4
+        },
+        {
+            "question_id": "49",
+            "question_text": "What “Revenue Streams” did Meesho Supply (Meesho 2.0) unlock? (Select that all applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lifetime subscription licenses",
+                "B": "Supplier listing fee",
+                "C": "Transaction-based sales commissions",
+                "D": "NGO-based grants"
+            },
+            "correct_option_label": "C",
+            "explanation": "Meesho 2.0 monetized via a sustainable and scalable channel: taking a 10-20% commission on the transactions completed by resellers.",
+            "module": 4
+        },
+        {
+            "question_id": "50",
+            "question_text": "According to the case method philosophy, why is consensus not a necessary goal in class discussion?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because faculty prefer individual grading",
+                "B": "Because diverse perspectives foster deeper learning and reflection",
+                "C": "Because the class must simulate boardroom fights",
+                "D": "Because answers are not available online"
+            },
+            "correct_option_label": "B",
+            "explanation": "The case method emphasizes that there is no single right answer. Exposure to conflicting viewpoints improves decision-making under ambiguity far more than forced consensus.",
+            "module": 4
+        },
+        {
+            "question_id": "51",
+            "question_text": "What is an example of post-class reflection in the case method?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Memorizing what the company actually did",
+                "B": "Searching the internet for the real outcome",
+                "C": "Comparing one’s pre-class solution with the range of ideas explored in class",
+                "D": "Writing a summary of the lecture slides"
+            },
+            "correct_option_label": "C",
+            "explanation": "Effective post-case reflection involves synthesizing how one's original mental models shifted after being exposed to the rigorous debate and diverse perspectives during class.",
+            "module": 4
+        },
+        {
+            "question_id": "52",
+            "question_text": "Why is it discouraged to “Google” the actual business outcome before discussing a case?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because it wastes time",
+                "B": "Because it creates bias and undermines learning through ambiguity",
+                "C": "Because professors prefer students to be surprised",
+                "D": "Because answers are not available online"
+            },
+            "correct_option_label": "B",
+            "explanation": "Knowing the real outcome induces hindsight bias, preventing students from genuinely struggling with the raw data and ambiguity the founders faced at that specific point in time.",
+            "module": 4
+        },
+        {
+            "question_id": "53",
+            "question_text": "Which strategic insight directly shaped the UVP of Meesho 2.0?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customers in Tier 1 cities preferred curated fashion over discounts",
+                "B": "Social commerce was replacing traditional storefronts",
+                "C": "Supply-side unreliability was limiting reseller success",
+                "D": "Return rates had stabilized, opening new revenue channels"
+            },
+            "correct_option_label": "C",
+            "explanation": "Meesho identified that their active power-users (women resellers) were desperately struggling with logistics, unreliable suppliers, and payments—forming the basis of Meesho 2.0's supply-side platform.",
+            "module": 4
+        },
+        {
+            "question_id": "54",
+            "question_text": "Meesho’s strong alignment with infrastructural shifts like UPI and Jio’s low-cost data exemplifies which type of entrepreneurial opportunity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Arbitrage opportunity",
+                "B": "Disintermediation opportunity",
+                "C": "Technology-induced structural opportunity",
+                "D": "Timing-based speculative opportunity"
+            },
+            "correct_option_label": "C",
+            "explanation": "The proliferation of cheap internet and digital payments created a massive, structural technological shift, empowering millions in Tier-2/3 cities to run online commerce.",
+            "module": 4
+        },
+        {
+            "question_id": "55",
+            "question_text": "When Meesho integrates supplier reliability metrics and buyer NPS into its platform governance model, it is attempting to solve which inherent platform challenge?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Price parity enforcement",
+                "B": "Chicken-and-egg problem",
+                "C": "Multihoming externality",
+                "D": "Quality assurance in decentralized ecosystems"
+            },
+            "correct_option_label": "D",
+            "explanation": "In a marketplace with thousands of independent suppliers, the platform must guarantee trust. Ratings and NPS scores act as decentralized quality control to protect the end consumer.",
+            "module": 4
+        },
+        {
+            "question_id": "56",
+            "question_text": "Meesho’s business model evolution reflects which of the following concepts from lean startup methodology? (Select that all applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Build-Measure-Learn loop",
+                "B": "Vanity metric optimization",
+                "C": "Product-market fit exploration",
+                "D": "Split-testing at scale"
+            },
+            "correct_option_label": "A, C",
+            "explanation": "Meesho repeatedly built early versions, measured retention, learned what worked, and pivoted (FashNear -> MeriShop -> Meesho 2.0) relentlessly searching for true PMF.",
+            "module": 4
+        },
+        {
+            "question_id": "57",
+            "question_text": "Which of the following best illustrates Meesho’s shift from relying on vanity metrics to focusing on value metrics during its pivot from Meri Shop to Meesho Supply?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The team prioritized download numbers and media mentions to attract more investors for Meesho 1.0",
+                "B": "They increased social media ad impressions to create top-of-funnel awareness",
+                "C": "They shifted attention from app installs and early traction to metrics like reseller retention, income per entrepreneur, and order fulfilment quality",
+                "D": "They started measuring web traffic to analyse user interest in specific categories"
+            },
+            "correct_option_label": "C",
+            "explanation": "They ignored the 25,000 'vanity' downloads of MeriShop because retention was <30%, realizing true value lay in metrics that indicated ongoing, sustainable usage.",
+            "module": 4
+        },
+        {
+            "question_id": "58",
+            "question_text": "Why did Meesho’s founders decide to shut down Meesho 1.0 (Meri Shop), and what does this decision illustrate in the context of managerial decision-making?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They had already invested heavily in the first version and decided to continue scaling it for ROI, reflecting rational cost recovery strategy",
+                "B": "They chose to exit Meesho 1.0 despite prior effort and investment, recognizing that continuing would not justify future returns, thereby avoiding the sunk cost fallacy",
+                "C": "They received investor pressure to retain both models, but focused on Meesho 1.0 due to brand familiarity",
+                "D": "They saw Meesho 2.0 as a temporary experiment and intended to return to the original model once retention stabilized"
+            },
+            "correct_option_label": "B",
+            "explanation": "They correctly avoided the Sunk Cost Fallacy, ruthlessly killing a product they had spent months building once the data proved it lacked long-term Product-Market Fit.",
+            "module": 4
+        },
+        {
+            "question_id": "59",
+            "question_text": "Which of the following decisions by Meesho’s founders best reflects the entrepreneurial principle of “affordable loss” rather than “expected return”?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Seeking Series A funding from SAIF Partners",
+                "B": "Leaving corporate jobs to test FashNear with minimal capital",
+                "C": "Expanding to 4000+ cities based on third-party projections",
+                "D": "Designing an AI-based personalization engine before PMF"
+            },
+            "correct_option_label": "B",
+            "explanation": "They committed only their personal savings and immediate time to launch an unscalable MVP, ensuring their downside risk was explicitly capped to an affordable amount.",
+            "module": 4
+        },
+        {
+            "question_id": "60",
+            "question_text": "Which of the following best exemplifies the application of the Corridor Principle in Meesho’s evolution from FashNear to Meesho Supply?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The founders waited to perfect the Meesho app before launching, to avoid early market feedback",
+                "B": "After the failure of FashNear, the founders stopped pursuing entrepreneurship and took corporate jobs",
+                "C": "Initial entry into fashion delivery (FashNear) gave the founders insights into unbranded commerce, enabling them to pivot successively toward Meri Shop and eventually Meesho Supply",
+                "D": "Meesho's founders conducted market research for 18 months before launching any venture"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Corridor Principle states that taking action opens 'doors' to new opportunities. Only by operating the flawed earlier models did they discover the existence of the reseller market.",
+            "module": 4
+        },
+        {
+            "question_id": "61",
+            "question_text": "What was RTR’s Unique Value Proposition in its final validated model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Designer clothes for sale at wholesale prices",
+                "B": "Designer clothes available for rental online with timely delivery and styling support",
+                "C": "Personal shoppers for college students",
+                "D": "Fast fashion delivered within 24 hours"
+            },
+            "correct_option_label": "B",
+            "explanation": "Rent the Runway solved the access problem for young women by offering high-end designer apparel for rental, backed by robust sizing support to alleviate online shopping anxiety.",
+            "module": 5
+        },
+        {
+            "question_id": "62",
+            "question_text": "What leap-of-faith assumption did RTR test with its first trunk show MVP at Harvard?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Women would rent without seeing the dress",
+                "B": "Designers were open to rental licensing",
+                "C": "Women were willing to rent and return designer dresses after styling",
+                "D": "Online-only platforms would outperform boutiques"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Harvard trunk show tested the most foundational behavioral hypothesis: whether women would actually rent dresses (instead of buying them) and return them in good condition.",
+            "module": 5
+        },
+        {
+            "question_id": "63",
+            "question_text": "What customer segment emerged as the most responsive to RTR’s offering through early validation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Middle-aged working professionals",
+                "B": "Fashion bloggers in Tier 2 cities",
+                "C": "Fashion-conscious women in their 20s",
+                "D": "Retail boutique owners"
+            },
+            "correct_option_label": "C",
+            "explanation": "Their early MVPs targeted young women (18-35) lacking purchasing power but possessing a strong desire to wear designer clothing for social events.",
+            "module": 5
+        },
+        {
+            "question_id": "64",
+            "question_text": "How did RTR effectively differentiate from competitors like Avelle and WTGT?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "By targeting older women in urban metros",
+                "B": "By offering only accessories and handbags",
+                "C": "By acquiring stale goods at end-of-season sales",
+                "D": "By focusing on new-season inventory, superior logistics, and emotional branding"
+            },
+            "correct_option_label": "D",
+            "explanation": "RTR differentiated themselves by buying directly from designers to offer fresh, high-quality inventory and creating a powerful 'Cinderella experience' through robust logistics.",
+            "module": 5
+        },
+        {
+            "question_id": "65",
+            "question_text": "What key operational insight did RTR gain by keeping logistics and dry-cleaning in-house early on?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Margins on accessories would be low",
+                "B": "Inventory costs could be entirely outsourced",
+                "C": "High control enabled service consistency and rapid learning",
+                "D": "Customer care could be fully automated"
+            },
+            "correct_option_label": "C",
+            "explanation": "Because their entire value proposition rested on perfect delivery and condition, maintaining extreme operational control over dry-cleaning ensured they could rapidly identify and fix quality issues.",
+            "module": 5
+        },
+        {
+            "question_id": "66",
+            "question_text": "What strategy did RTR use to pivot from a designer-hosted white-label model to owning the full customer experience?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Co-branding with department stores",
+                "B": "Buying inventory directly from designers and building its own rental platform",
+                "C": "Licensing e-commerce plugins to small boutiques",
+                "D": "Outsourcing styling to freelance consultants"
+            },
+            "correct_option_label": "B",
+            "explanation": "When designers rejected the white-label backend service out of cannibalization fears, RTR pivoted to buying the inventory outright and managing the rental ecosystem completely independently.",
+            "module": 5
+        },
+        {
+            "question_id": "67",
+            "question_text": "What Lean Startup principle is reflected in RTR’s phased MVPs (Harvard → Yale → Beta site)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Pivoting to an unrelated use case",
+                "B": "Validated learning through staged hypothesis testing",
+                "C": "Disruption through viral growth loops",
+                "D": "Network effects before monetization"
+            },
+            "correct_option_label": "B",
+            "explanation": "RTR systematically escalated their tests: Harvard tested basic rental demand, Yale tested renting without try-ons, and PDFs tested virtual demand, perfectly embodying staged, rigorous learning.",
+            "module": 5
+        },
+        {
+            "question_id": "68",
+            "question_text": "Which metric(s) would best help RTR evaluate product-market fit in the early stage? (Select that all applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Number of Instagram followers",
+                "B": "Number of new renters",
+                "C": "Repeat rental rate among users",
+                "D": "Total number of dresses listed"
+            },
+            "correct_option_label": "B, C",
+            "explanation": "Followers and listings are vanity metrics. True PMF is demonstrated by conversion (users actually paying to rent) and retention (users returning to rent again).",
+            "module": 5
+        },
+        {
+            "question_id": "69",
+            "question_text": "If RTR had optimized only for website traffic and new user sign-ups during its early phase, it would have fallen into what startup trap?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Value capture without delivery",
+                "B": "Overfitting the MVP",
+                "C": "Confusing traction with value",
+                "D": "Brand overreach"
+            },
+            "correct_option_label": "C",
+            "explanation": "150,000 signups generated hype, but signups alone do not generate revenue. Optimizing purely for traffic confuses superficial traction with the actual delivery of financial value.",
+            "module": 5
+        },
+        {
+            "question_id": "70",
+            "question_text": "RTR’s sequence of MVPs demonstrates which principles of disciplined entrepreneurial experimentation? (Select that all applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Each MVP de-risked a separate behavioural or operational assumption",
+                "B": "Learning was structured to prioritize what could kill the model if untrue",
+                "C": "The team avoided sunk cost fallacies by rapidly retiring unscalable MVPs",
+                "D": "All MVPs were run digitally to test e-commerce at scale from day one"
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "They tackled the riskiest assumptions first (will women rent?), kept their experiments insanely cheap (physical trunk shows, PDFs), and discarded the tests as soon as the hypothesis was proven.",
+            "module": 5
+        },
+        {
+            "question_id": "71",
+            "question_text": "RTR's approach embodied effectual logic through: (Select that all applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Starting with the white-label solution that required no investment in inventory",
+                "B": "Scaling before validation due to high investor demand",
+                "C": "Allowing stakeholder resistance (e.g., designers) to reshape their go-to-market model",
+                "D": "Defining a fixed five-year plan and sticking to it"
+            },
+            "correct_option_label": "A, C",
+            "explanation": "RTR used means-based ideation and leveraged negative designer feedback (Crazy Quilt/Lemonade) to pivot into a standalone platform targeting a younger demographic.",
+            "module": 5
+        },
+        {
+            "question_id": "72",
+            "question_text": "What distinguishes customer discovery from traditional market research in RTR's approach?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Focus on market sizing",
+                "B": "Use of pre-survey segmentation",
+                "C": "Inference from revealed behaviour as opposed stated customer preference",
+                "D": "Aggregating pricing elasticity tables"
+            },
+            "correct_option_label": "C",
+            "explanation": "Instead of asking women 'would you rent a dress?' in a survey, they physically observed women opening their wallets to rent a dress, proving actual behavior over stated intent.",
+            "module": 5
+        },
+        {
+            "question_id": "73",
+            "question_text": "Effectuation encourages starting with means. In RTR’s case, this principle was evident in:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Launching with a logistics partner network",
+                "B": "Using college campuses and personal networks for early MVPs",
+                "C": "Prioritizing advanced data modelling before product-market fit",
+                "D": "Partnering with global retailers from day one"
+            },
+            "correct_option_label": "B",
+            "explanation": "The founders leveraged what they immediately had access to ('Who I know')—their university campus networks at Harvard and Yale—to launch cheap, effective early experiments.",
+            "module": 5
+        },
+        {
+            "question_id": "74",
+            "question_text": "If RTR had scaled before resolving service quality issues, it would have risked:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Network congestion",
+                "B": "Inverse economies of scale",
+                "C": "Reputational erosion from failed deliveries and product quality",
+                "D": "Monetization through B2B resale"
+            },
+            "correct_option_label": "C",
+            "explanation": "Premature scaling without robust backend operations leads to ruined customer experiences. For a 'Cinderella experience' business, a ruined dress means permanent brand defection.",
+            "module": 5
+        },
+        {
+            "question_id": "75",
+            "question_text": "What key trade-offs did RTR face during its scale/no-scale inflection point? (Select that all applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Diversification vs. Category leadership",
+                "B": "Market share vs. Operational depth",
+                "C": "Fixed cost minimization vs. Customer satisfaction",
+                "D": "Target group expansion vs. Customer satisfaction"
+            },
+            "correct_option_label": "A, B, C, D",
+            "explanation": "RTR faced multiple growth dilemmas: scaling to new demographics, offering new categories (bags/accessories), and balancing their crumbling operations vs the demand for massive market share.",
+            "module": 5
+        },
+        {
+            "question_id": "76",
+            "question_text": "Which of the following mechanisms function as safeguards against premature or misaligned equity outcomes in founding teams? (Select all that applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Time-based vesting schedules to match effort with ownership accrual",
+                "B": "Milestone-based equity contingent on validated deliverables",
+                "C": "Equal upfront equity to avoid difficult conversations",
+                "D": "Founder buy-back clauses in case of early departure"
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "Vesting clauses ensure that founders earn their equity over time or upon milestones, protecting the venture's capitalization table if a founder quits prematurely.",
+            "module": 6
+        },
+        {
+            "question_id": "77",
+            "question_text": "Which of the following best captures the strategic purpose of equity allocation in early-stage startups?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To institutionalize profit participation among co-founders",
+                "B": "To distribute residual ownership based on market benchmarks",
+                "C": "To align individual incentives with collective long-term value creation under high uncertainty",
+                "D": "To satisfy regulatory capitalization thresholds prior to incorporation"
+            },
+            "correct_option_label": "C",
+            "explanation": "Equity is the ultimate financial incentive designed to align a team towards massive, long-term capital appreciation, substituting for the high salaries startups cannot afford.",
+            "module": 6
+        },
+        {
+            "question_id": "78",
+            "question_text": "A founder argues that they deserve 60% of the company’s equity because they conceived the original idea. Which of the following is the most balanced counterpoint?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ideas alone are insufficient without execution; equity should reflect effort and ongoing value creation",
+                "B": "60% is fair if the founder is willing to delay their vesting in favour of others",
+                "C": "High equity helps attract VCs",
+                "D": "Only idea owners are legally entitled to majority equity"
+            },
+            "correct_option_label": "A",
+            "explanation": "Ideas are cheap and inherently flawed. Equity should be distributed based on ongoing execution, risk assumed, and future capability to generate value.",
+            "module": 6
+        },
+        {
+            "question_id": "79",
+            "question_text": "Which statement best articulates the relationship between equity ownership and control in a startup context?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Equity holders automatically possess decision-making authority proportional to their stake",
+                "B": "Control is derived solely from equity unless external financing is raised",
+                "C": "Voting power is always equal among founding equity holders",
+                "D": "Governance structures, not equity percentages, determine formal control"
+            },
+            "correct_option_label": "D",
+            "explanation": "Equity equals residual financial risk and reward, but decision rights and control are established through explicit contractual governance and board seating.",
+            "module": 6
+        },
+        {
+            "question_id": "80",
+            "question_text": "Which of the following best reflects the role of equity in determining decision rights?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "All equity holders have equal say in daily operations",
+                "B": "Decision rights may be structured independently of equity ownership",
+                "C": "Equity always grants board-level authority",
+                "D": "Equity automatically results in managerial control"
+            },
+            "correct_option_label": "B",
+            "explanation": "Founders can maintain a 50/50 equity split while legally assigning 100% operational decision-making power to a designated CEO.",
+            "module": 6
+        },
+        {
+            "question_id": "81",
+            "question_text": "Why are equal equity splits generally discouraged in high-growth startups?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Investors perceive equal splits as a sign of lack of strategic clarity",
+                "B": "They increase the company’s tax burden in the early stage",
+                "C": "Equal splits ensure maximum alignment of founder incentives",
+                "D": "They are preferred by accelerators like Y Combinator"
+            },
+            "correct_option_label": "A",
+            "explanation": "VCs view 50/50 splits as a red flag, indicating founders avoided tough conversations and risking complete operational deadlock when strategic disagreements occur.",
+            "module": 6
+        },
+        {
+            "question_id": "82",
+            "question_text": "The paradox of equity in startup founding teams is best described as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Equity is legally binding but rarely enforceable without funding",
+                "B": "Equity creates psychological safety and strategic inflexibility simultaneously",
+                "C": "Equity must be shared to build the company, but sharing can also destabilize power dynamics",
+                "D": "Equity increases market valuation but reduces cultural cohesion"
+            },
+            "correct_option_label": "C",
+            "explanation": "Founders must give away equity to attract top talent and capital, yet giving away equity dilutes their control and introduces immense risk of internal conflict.",
+            "module": 6
+        },
+        {
+            "question_id": "83",
+            "question_text": "Two co-founders clash over the company’s future direction, one prioritizes profitability, the other scale. What is the most constructive next step?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Immediate legal arbitration",
+                "B": "External mediation to facilitate values-alignment discussion",
+                "C": "Board vote to resolve conflict",
+                "D": "Automatic trigger of founder exit clause"
+            },
+            "correct_option_label": "B",
+            "explanation": "Bringing in an objective third-party coach or lawyer helps resolve deeply personal clashes without permanently fracturing the relationship or triggering extreme legal exits.",
+            "module": 6
+        },
+        {
+            "question_id": "84",
+            "question_text": "Which of the following accurately represent the 'Three Rs' that often create tension among co-founders?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Roles, Rewards, Relationships",
+                "B": "Recruitment, Revenue, Returns",
+                "C": "Responsibility, Reputation, Resignation",
+                "D": "Risk, Revenue, Recognition"
+            },
+            "correct_option_label": "A",
+            "explanation": "Founder conflict stems almost entirely from disputes over Rewards (equity/cash), Roles (decision turf), and Relationships (the dynamic between friends vs professionals).",
+            "module": 6
+        },
+        {
+            "question_id": "85",
+            "question_text": "A co-founder proposes deferring equity discussions until after Series A funding to \"focus on execution.\" What is the potential downside of this approach?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It optimizes decision-making speed",
+                "B": "It reflects strong founder cohesion",
+                "C": "It ensures optimal equity valuations",
+                "D": "It postpones alignment and amplifies uncertainty"
+            },
+            "correct_option_label": "D",
+            "explanation": "Kicking the can down the road builds immense unaddressed anxiety. When valuations increase at Series A, the friction during the eventual split discussion will be exponentially worse.",
+            "module": 6
+        },
+        {
+            "question_id": "86",
+            "question_text": "Vesting clauses in founder agreements primarily serve which of the following conceptual functions?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To increase investor return multiples in down-round scenarios",
+                "B": "To align ownership rights with future contribution and mitigate disengagement risk",
+                "C": "To signal market readiness for product launch",
+                "D": "To accelerate founder payout timelines and M-and-A exits"
+            },
+            "correct_option_label": "B",
+            "explanation": "Vesting ensures that a founder cannot walk away with half the company after three months, structurally aligning their equity rewards with their continuous future effort.",
+            "module": 6
+        },
+        {
+            "question_id": "87",
+            "question_text": "A founder choosing to delay salary in favour of equity is best interpreted as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An unsustainable business model based on personal sacrifice",
+                "B": "A liquidity constraint preventing salary payouts",
+                "C": "A credible signal of long-term alignment and belief in venture upside",
+                "D": "A poor cash-flow decision likely to deter investors"
+            },
+            "correct_option_label": "C",
+            "explanation": "Sweat equity demonstrates that the founder has immense 'skin in the game' and is willing to bet their personal financial stability on the venture's ultimate success.",
+            "module": 6
+        },
+        {
+            "question_id": "88",
+            "question_text": "Equity distribution within startups has cultural consequences. What is one long-term impact of a poorly designed equity structure? (Select all that applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Inefficient marketing funnels",
+                "B": "Internalized distrust and erosion of founder cohesion",
+                "C": "Inability to hire and retain high-quality employees",
+                "D": "Disincentivized external investor participation only"
+            },
+            "correct_option_label": "B, C",
+            "explanation": "A fractured cap table destroys trust among the core team and leaves insufficient equity pool (ESOPs) to attract elite future talent, stalling company growth.",
+            "module": 6
+        },
+        {
+            "question_id": "89",
+            "question_text": "Which of the following are valid reasons for linking MVP execution to equity allocation? (Select all that applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It reveals which founders take initiative using limited resources",
+                "B": "It shifts equity discussions from entitlement to behavioural evidence",
+                "C": "It strengthens investor confidence by anchoring ownership in execution",
+                "D": "It ensures idea-generation is weighted more heavily than delivery"
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "Delaying the split (for rookie founders) until after the MVP phase removes assumptions and grounds the equity negotiation entirely in actual observed effort and execution.",
+            "module": 6
+        },
+        {
+            "question_id": "90",
+            "question_text": "Why are equity negotiations particularly difficult among close-knit founder teams in the Indian startup context?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Indian founders are rarely aware of equity norms",
+                "B": "Close relationships create emotional inertia that suppresses candid financial discussions",
+                "C": "Indian regulations prevent founders from disclosing equity",
+                "D": "Early investors in India often mandate fixed equity ratios"
+            },
+            "correct_option_label": "B",
+            "explanation": "Discussing money and hierarchy among family or close friends feels overly transactional and culturally uncomfortable, often resulting in naive 'handshake deals' that fail later.",
+            "module": 6
+        },
+        {
+            "question_id": "91",
+            "question_text": "What is the main reason why VCs back high-risk ventures despite high failure rates?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The law requires funding startups for economic inclusion",
+                "B": "Portfolio returns are dominated by outliers, validating risk",
+                "C": "Startups pay high interest post Series A",
+                "D": "Early-stage ventures never fail completely"
+            },
+            "correct_option_label": "B",
+            "explanation": "Venture capital economics rely entirely on the 'Power Law', where 10% of their portfolio (the massive 'home runs') return enough to cover the losses of the 90% that fail.",
+            "module": 7
+        },
+        {
+            "question_id": "92",
+            "question_text": "If a VC like Sequoia removes a holding period for LPs, which of the following is the most direct consequence?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "LPs can withdraw at will, increasing short-term risk",
+                "B": "Startups receive less mentorship support",
+                "C": "Deep tech startups benefit from extended capital cycles",
+                "D": "Fund managers are replaced with angel syndicates"
+            },
+            "correct_option_label": "A",
+            "explanation": "A traditional VC fund 'locks in' LP capital for 7-10 years to allow ventures time to scale. Without holding periods, LPs could demand their money back, destabilizing the fund.",
+            "module": 7
+        },
+        {
+            "question_id": "93",
+            "question_text": "What factors make venture capital negotiations difficult between founders and investors? (Select that all applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Entrepreneurs are overly optimistic about valuation",
+                "B": "Valuation metrics are ambiguous and not market-based",
+                "C": "The more equity one side receives, the greater the pie for both",
+                "D": "Distribution of control is a zero-sum game"
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "Early valuations are highly ambiguous (comparable metrics over cash flow). Founders naturally overestimate their worth, and fighting over board seats is purely a zero-sum battle for control.",
+            "module": 7
+        },
+        {
+            "question_id": "94",
+            "question_text": "Which of the following BEST explains why venture capital is described as an 'art' rather than a 'science' in early-stage financing? (Select that all applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Data-intensive methods such as DCF are often not applicable",
+                "B": "Early-stage ventures often present qualitative signals over quantitative ones.",
+                "C": "Legal structures in VC vary significantly across geographies.",
+                "D": "Investors always invest based on gut feeling and personal bias."
+            },
+            "correct_option_label": "A, B",
+            "explanation": "Because early-stage startups have no historical operating data, rigorous financial models (like DCF) fail. VCs must rely on qualitative 'art'—evaluating founder passion, market gaps, and early momentum.",
+            "module": 7
+        },
+        {
+            "question_id": "95",
+            "question_text": "Which of the following statements best reflects a misconception about venture capitalists' role in startups?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "VCs primarily seek outsized returns within a limited time frame.",
+                "B": "VCs may take board seats to monitor their investments.",
+                "C": "VCs are entrepreneurs and often manage daily operations.",
+                "D": "VCs bring strategic support and industry connections."
+            },
+            "correct_option_label": "C",
+            "explanation": "It is a misconception that VCs run the startup day-to-day. They act as strategic board members and door-openers, but execution remains strictly the founders' responsibility.",
+            "module": 7
+        },
+        {
+            "question_id": "96",
+            "question_text": "Which of the following founders is MOST LIKELY to attract Angel Investment?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A first-time founder with an MVP, market validation, and domain experience",
+                "B": "A founder with a prototype of a hardware device with no market traction",
+                "C": "A corporate professional planning to quit their job and enter fintech",
+                "D": "A college student with a business idea but no execution"
+            },
+            "correct_option_label": "A",
+            "explanation": "Angel investors seek early indicators of success. An MVP combined with validated demand and founder domain expertise significantly lowers the risk profile for early checks.",
+            "module": 7
+        },
+        {
+            "question_id": "97",
+            "question_text": "A startup founder building a deep tech AI solution is sceptical of VC funding. She believes VCs may push her for short-term growth instead of research depth. Which funding source might better align with her needs?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A top-tier growth equity fund",
+                "B": "Government grant",
+                "C": "A hedge fund",
+                "D": "A bank term loan"
+            },
+            "correct_option_label": "B",
+            "explanation": "Deep-tech and intense R&D require long, patient capital without immediate revenue pressures. Government grants offer non-dilutive, patient capital perfectly suited for this phase.",
+            "module": 7
+        },
+        {
+            "question_id": "98",
+            "question_text": "A startup in the Agritech sector operating in Tier-2 India is in the process of raising its Seed round. Based on known investment theses, which VC firm is MOST likely to fund them?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sequoia Capital – late-stage consumer tech focus",
+                "B": "KKR – private equity with focus on leveraged buyouts",
+                "C": "Tiger Global – prefers post-Series B global startups",
+                "D": "Accel – focus on disruptive AI and Bharat startups"
+            },
+            "correct_option_label": "D",
+            "explanation": "Accel's explicit focus on 'Bharat' (Tier-2/3 Indian markets) aligns perfectly with the geography and stage of the Agritech startup.",
+            "module": 7
+        },
+        {
+            "question_id": "99",
+            "question_text": "VC fund’s life cycle is 10 years. It is currently in year 7, and the GP wants to invest in a deep tech startup with 8-year commercialization timeline. Which is the biggest constraint?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Exit timeline mismatch",
+                "B": "Liquidity preference",
+                "C": "Valuation cap issues",
+                "D": "Founder's dilution resistance"
+            },
+            "correct_option_label": "A",
+            "explanation": "The fund must liquidate and return cash to LPs by year 10. Investing in a venture requiring 8 years to exit would force the fund 5 years past its legal maturity date.",
+            "module": 7
+        },
+        {
+            "question_id": "100",
+            "question_text": "A founder is offered $3M funding for 25% equity. She wants to maintain more ownership. Which of the following is a VIABLE strategic move?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Walk away from VC funding completely",
+                "B": "Negotiate to raise a convertible note instead",
+                "C": "Ask for board observer rights",
+                "D": "Increase her burn rate to justify a higher valuation"
+            },
+            "correct_option_label": "B",
+            "explanation": "Convertible notes push the equity pricing (valuation) to a later round when the company has hit milestones, theoretically allowing the founder to give up less equity later.",
+            "module": 7
+        },
+        {
+            "question_id": "101",
+            "question_text": "During due diligence, a VC discovers that a startup’s growth numbers are inflated, and customer churn is hidden. Which of the following is the strongest implication?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The VC will lower the offered valuation",
+                "B": "The startup will move to public listing",
+                "C": "The VC will demand board control",
+                "D": "The startup may lose its investment entirely due to breach of trust"
+            },
+            "correct_option_label": "D",
+            "explanation": "Due diligence relies on founder integrity. Discovering deliberate deception regarding core metrics breaks all trust, causing the VC to abandon the deal entirely (adverse selection).",
+            "module": 7
+        },
+        {
+            "question_id": "102",
+            "question_text": "A founder is pitching a logistics tech startup with limited revenue but strong customer adoption. The VC wants to value the company. Which of the following would be the MOST appropriate valuation method?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Discounted Cash Flow (DCF)",
+                "B": "TEV/EBITDA",
+                "C": "Comparable company multiples based on TEV/Revenue",
+                "D": "Net Asset Valuation"
+            },
+            "correct_option_label": "C",
+            "explanation": "For early-stage startups lacking stable cash flows or high EBITDA, VCs rely heavily on Comparable (Comps) analysis based on top-line revenue multiples in the specific sector.",
+            "module": 7
+        },
+        {
+            "question_id": "103",
+            "question_text": "In which of the following scenarios is angel investment more appropriate than venture capital? (Select that all applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A startup has no revenue but is building a Minimum Viable Product (MVP)",
+                "B": "A proven business model looking to scale internationally",
+                "C": "Founders are still testing core hypotheses about customer needs",
+                "D": "The startup requires $15M to expand into three new verticals"
+            },
+            "correct_option_label": "A, C",
+            "explanation": "Angel investments supply early, patient capital intended purely to build MVPs and reach Product-Market Fit. Scaling massive operations requires Institutional VC money.",
+            "module": 7
+        },
+        {
+            "question_id": "104",
+            "question_text": "Which of the following investor types are typically Limited Partners (LPs) in VC funds? (Select that all applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sovereign wealth funds",
+                "B": "Family offices",
+                "C": "University endowments",
+                "D": "Insurance companies"
+            },
+            "correct_option_label": "A, B, C, D",
+            "explanation": "LPs are large institutional entities possessing massive pools of patient capital seeking diversified returns, including endowments, sovereign funds, family offices, and insurance pensions.",
+            "module": 7
+        },
+        {
+            "question_id": "105",
+            "question_text": "A startup founder is offered term sheets by two VCs. To decide wisely, the founder should evaluate which of the following? (Select that all applies)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The valuation and equity dilution in each offer",
+                "B": "The strategic fit and past portfolio of the VCs",
+                "C": "The VC’s control rights and liquidation preferences",
+                "D": "The fund’s expected Internal Rate of Return (IRR)"
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "Founders must look beyond raw valuation to assess the VC's strategic value-add (networks), board control requirements, and punishing financial mechanisms like liquidation preferences.",
+            "module": 7
+        },
+        {
+            "question_id": "106",
+            "question_text": "Which of the following best explains why bootstrapping may be preferred over VC funding in the early stages of a startup?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It accelerates large-scale hiring and capital expansion",
+                "B": "It offers access to sophisticated investor networks",
+                "C": "It preserves founder control and allows iterative development",
+                "D": "It eliminates the need for customer feedback"
+            },
+            "correct_option_label": "C",
+            "explanation": "Bootstrapping allows the founder to maintain 100% equity and operational control, giving them the flexibility to pivot and test models without immense VC pressure to scale prematurely.",
+            "module": 8
+        },
+        {
+            "question_id": "107",
+            "question_text": "A founder follows the rule: “Do not lease what you can borrow.” This reflects which underlying mindset of bootstrapping?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Getting access to resources with minimum financial outlay",
+                "B": "Minimizing long-term commitment to investors",
+                "C": "Maximizing brand reach",
+                "D": "Outsourcing critical operations"
+            },
+            "correct_option_label": "A",
+            "explanation": "The 'Bootstrapper's Hierarchy' is obsessed with cash conservation. Borrowing an asset costs zero cash, whereas leasing still creates a fixed financial liability.",
+            "module": 8
+        },
+        {
+            "question_id": "108",
+            "question_text": "Which thumb rule aligns most closely with converting fixed costs into variable costs?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Buying all equipment second-hand",
+                "B": "Renting equipment instead of purchasing",
+                "C": "Hiring full-time staff at reduced salaries",
+                "D": "Applying for a bank loan to cover operating costs"
+            },
+            "correct_option_label": "B",
+            "explanation": "Purchasing creates a massive fixed sunk cost. Renting or paying per-usage transforms that expense into a variable cost, deeply conserving the startup's precious early cash runway.",
+            "module": 8
+        },
+        {
+            "question_id": "109",
+            "question_text": "Bootstrapping and venture capital are:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mutually exclusive throughout the venture lifecycle",
+                "B": "Complementary only during Series A round",
+                "C": "Complementary in the seed stage",
+                "D": "Complementary, with bootstrapping used early and VC later on"
+            },
+            "correct_option_label": "D",
+            "explanation": "Many elite founders bootstrap initially to achieve PMF and retain high equity, and then take VC funding only when they need massive fuel to rapidly scale the proven model.",
+            "module": 8
+        },
+        {
+            "question_id": "110",
+            "question_text": "A SaaS startup generates modest revenues and chooses not to raise VC despite multiple offers. Instead, it reinvests customer revenue to build product features. Which of the following statements best reflects a possible long-term limitation of this approach?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The startup may raise its valuation too quickly, attracting unrealistic expectations",
+                "B": "Competitors with VC backing may scale faster, leading to market capture",
+                "C": "The startup will eventually need to exit via IPO, limiting exit optionality",
+                "D": "It may lack the cash runway to attract top-tier venture debt firms"
+            },
+            "correct_option_label": "B",
+            "explanation": "Bootstrapping dictates a slower, organic growth pace. If a well-funded competitor enters the space, they can aggressively outspend the bootstrapped firm on customer acquisition, stealing the market.",
+            "module": 8
+        },
+        {
+            "question_id": "111",
+            "question_text": "A founder insists on bootstrapping even when a product demands early access to costly infrastructure (e.g., lab equipment). What is the most critical misjudgement in this approach?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Overestimating customer loyalty",
+                "B": "Misaligning product strategy with resource strategy",
+                "C": "Ignoring compliance with debt covenants",
+                "D": "Underestimating team morale due to funding delays"
+            },
+            "correct_option_label": "B",
+            "explanation": "Capital-intensive 'Deep Tech' businesses physically cannot be bootstrapped. Insisting on bootstrapping here shows an intellectual failure to align the required operational scale with the financing strategy.",
+            "module": 8
+        },
+        {
+            "question_id": "112",
+            "question_text": "Founders leveraging joint utilization methods of bootstrapping are likely to benefit from:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Access to high-risk debt with flexible repayment terms",
+                "B": "Reduced cost per unit via network effects",
+                "C": "Higher valuation through faster revenue growth",
+                "D": "Economies of scale and reduced capital expenditure through shared assets"
+            },
+            "correct_option_label": "D",
+            "explanation": "Sharing resources (coworking spaces, shared CFOs, pooled purchasing) allows cash-strapped startups to utilize premium assets without absorbing the entire capital expenditure themselves.",
+            "module": 8
+        },
+        {
+            "question_id": "113",
+            "question_text": "A founder avoids hiring a marketing agency and instead leverages alumni networks, personal branding, and partnerships with student influencers. This strategy best illustrates:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Avoidance of market testing",
+                "B": "Misallocation of marketing capital",
+                "C": "Leveraging social capital in a resource-constrained setting",
+                "D": "Dependence on viral growth for scalability"
+            },
+            "correct_option_label": "C",
+            "explanation": "Bootstrapping forces founders to aggressively use their personal 'means' (Effectuation's Crazy Quilt/Bird-in-Hand) such as alumni networks, acting as a free substitute for paid marketing.",
+            "module": 8
+        },
+        {
+            "question_id": "114",
+            "question_text": "A startup founder decides not to raise VC funding despite receiving a term sheet, citing flexibility in trying different product directions. What potential risk is the founder trying to avoid?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Overcapitalization and tax inefficiencies",
+                "B": "Increased founder vesting obligations",
+                "C": "Low conversion from MVP to IPO",
+                "D": "Strategic lock-in from investor preferences"
+            },
+            "correct_option_label": "D",
+            "explanation": "Taking VC money means agreeing to a 'growth-at-all-costs' timeline and taking board direction. The founder is trying to avoid being locked into a rigid path if they want to casually explore pivots.",
+            "module": 8
+        },
+        {
+            "question_id": "115",
+            "question_text": "A bootstrapped hardware startup delays production because critical tooling requires upfront investment. It avoids leasing and decides to wait until pre-orders cross a certain threshold. What principle of bootstrapping does this reflect?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Converting fixed costs into brand capital",
+                "B": "Using customer validation to defer capital deployment",
+                "C": "Scaling before funding",
+                "D": "Focusing on valuation signals rather than revenue"
+            },
+            "correct_option_label": "B",
+            "explanation": "By executing a 'Sell Before You Build' strategy, the founder mitigates massive downside risk by ensuring the demand actually exists to cover the tooling cost before deploying cash.",
+            "module": 8
+        },
+        {
+            "question_id": "116",
+            "question_text": "Which of the following statements help distinguish bootstrapping from effectuation? (Tick all the right options)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Effectuation is rooted in the logic of control, bootstrapping in resource optimization",
+                "B": "Bootstrapping emphasizes means-efficiency; effectuation emphasizes means-driven action",
+                "C": "Bootstrapping is a financing strategy; effectuation is a cognitive and decision-making framework",
+                "D": "Effectuation discourages any form of financial prudence in early-stage startups"
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "While complementary, Effectuation is an overarching mindset/methodology for navigating uncertainty. Bootstrapping is explicitly a set of tactical financing and resource-optimization strategies.",
+            "module": 8
+        },
+        {
+            "question_id": "117",
+            "question_text": "Bootstrapped ventures often prioritize cash over market share in early stages. Which implications follow logically from this strategy? (Tick all the right answers)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Preference for paying customers over free users",
+                "B": "Trade-off virality for monetization",
+                "C": "Aggressive user acquisition through discounts and offers",
+                "D": "Lower burn rate, higher early breakeven"
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "Bootstrapped startups must survive entirely on their own generated cash. Therefore, they focus on finding paying customers immediately (ignoring vanity viral growth) to maintain a low burn rate.",
+            "module": 8
+        },
+        {
+            "question_id": "118",
+            "question_text": "Compared to VC-backed ventures, bootstrapped ventures during early stages are more likely to ______ (Tick all the correct options)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Make decisions based on valuation maximization",
+                "B": "Be constrained by the liability of smallness and lack of legitimacy",
+                "C": "Choose strategic partnerships over in-house capability development",
+                "D": "Develop product-market fit through iterative revenue-based learning"
+            },
+            "correct_option_label": "B, C, D",
+            "explanation": "Lacking the signaling power of a VC brand, bootstrapped firms struggle with legitimacy. To survive, they lean heavily on partnerships and focus intensely on revenue-based iteration over valuation metrics.",
+            "module": 8
+        },
+        {
+            "question_id": "119",
+            "question_text": "A bootstrapped startup focuses on charging interest on overdue invoices and refusing service to late-paying customers. This reflects which bootstrapping principle? (Tick all the correct options)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customer discipline to improve cash flow",
+                "B": "Signalling exclusivity to increase demand",
+                "C": "Leveraging short-term debt markets",
+                "D": "Prioritizing cash health over customer retention"
+            },
+            "correct_option_label": "A, D",
+            "explanation": "Positive cash flow is the lifeblood of a bootstrapped startup. Firing customers who string out payments reflects immense discipline in prioritizing survival over meaningless vanity retention metrics.",
+            "module": 8
+        },
+        {
+            "question_id": "120",
+            "question_text": "Which of the following scenarios are not ideal for bootstrapping, even if the founder is willing? (Tick all the correct options)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The product requires time-taking regulatory approvals before market testing",
+                "B": "The venture depends heavily on user-generated network effects",
+                "C": "There’s significant competition with access to institutional capital",
+                "D": "The venture is based on recurring services to known local clients"
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "Startups facing multi-year regulatory approvals, aggressive VC-backed competitors, or requiring massive subsidized user scale to build network effects require external, patient, deep-pocket capital to survive.",
+            "module": 8
+        }
+    ]
+}

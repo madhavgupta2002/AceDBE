@@ -1,0 +1,848 @@
+{
+    "exam_metadata": {
+        "subject_name": "Design Thinking",
+        "exam_date": "15 January 2025"
+    },
+    "questions": [
+        {
+            "question_id": "CLA1_Q1",
+            "question_text": "What are the essentials of design thinking?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Systematic model",
+                "B": "Human-centricity",
+                "C": "Problem-solving",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Design thinking is defined as a human-centric, systematic model of problem-solving. Thus, all three elements—systematic model, human-centricity, and problem-solving—are its essential components.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q2",
+            "question_text": "Design thinking is suitable for what kind of problems?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Technical-centric",
+                "B": "Human-centric",
+                "C": "Business-centric",
+                "D": "All of the above"
+            },
+            "correct_option_label": "B",
+            "explanation": "Design thinking focuses on the human behind the problem (broader than just customer-centric). It is best suited for complex human-centric problems where empathy and understanding user needs are paramount.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q3",
+            "question_text": "What is the benefit of adopting the Stage gate model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Saves time",
+                "B": "Improves predictability",
+                "C": "Saves money",
+                "D": "Improves accuracy"
+            },
+            "correct_option_label": "C",
+            "explanation": "Traditional linear or stage-gate models are often adopted to save money and maintain strict control over resources and budgets at each phase, though they may fail with highly complex, unpredictable challenges.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q4",
+            "question_text": "What's the starting point of Design Thinking process?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ideas",
+                "B": "Problems",
+                "C": "Voice of customer",
+                "D": "Inspiration"
+            },
+            "correct_option_label": "D",
+            "explanation": "Unlike traditional problem-solving models that start with an idea or a problem, the Design Thinking process starts with 'Inspiration', driven by either aspiration or desperation.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q5",
+            "question_text": "What is the heart of Design Thinking?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Empathy",
+                "B": "Prototyping",
+                "C": "Neither",
+                "D": "Both"
+            },
+            "correct_option_label": "D",
+            "explanation": "The heart of design thinking lies in both Empathizing with the user to understand their true needs and Prototyping iteratively to validate those needs and solutions.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q6",
+            "question_text": "Going from a symptom directly to a solution is termed as?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Quick Fix",
+                "B": "PERMA Fix",
+                "C": "Root Cause Analysis",
+                "D": "None of the above"
+            },
+            "correct_option_label": "A",
+            "explanation": "Moving straight from a Symptom to a Solution without understanding the underlying problem is considered a 'Quick Fix' or 'Jugaad' approach, functioning merely as a band-aid.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q7",
+            "question_text": "True or False- Every problem is a symptom.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "correct_option_label": "A",
+            "explanation": "In problem exploration, what initially appears as a problem is almost always just a symptom of a deeper root cause. You must dig deeper to find the real issue.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q8",
+            "question_text": "A high Frequency but a high Impact problem calls for",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Quick Fix",
+                "B": "Perma Fix",
+                "C": "Can't say",
+                "D": "It depends"
+            },
+            "correct_option_label": "B",
+            "explanation": "High frequency and high impact problems are equivalent to 'Cancer' problems which aggravate over time. They require a 'Perma Fix' going down to the root causes rather than superficial treatment.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q9",
+            "question_text": "Design thinking is best suited when there is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Availability of time",
+                "B": "Audacity of goals",
+                "C": "Access to customer",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Design thinking should be adopted when all 5 conditions are met: Audacity of Goal, Ambiguity of Context, Availability of Time, Access to Customers, and Diversity of Team.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q10",
+            "question_text": "True or False- Every problem has a single root cause",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "None"
+            },
+            "correct_option_label": "B",
+            "explanation": "Problems are multifaceted and wicked. A single problem usually branches out into multiple causes and root causes, which is why techniques like the Problem Exploration Map are used.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q11",
+            "question_text": "Which technique is best suited for Known Problem and Known Solution space?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lean thiinking",
+                "B": "Lateral thinking",
+                "C": "Critical thinking",
+                "D": "Design thinking"
+            },
+            "correct_option_label": "A",
+            "explanation": "When both the problem and the solution are known, Lean Thinking is best used. It focuses on speed, efficiency, and automation (e.g., Six Sigma).",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q12",
+            "question_text": "Which technique is best suited for Unknown Problem and Unknown Solution space?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lean thinking",
+                "B": "Lateral thinking",
+                "C": "Critical thinking",
+                "D": "Design thinking"
+            },
+            "correct_option_label": "D",
+            "explanation": "Design Thinking operates in the sweet spot of high ambiguity, making it the perfect approach when both the problem and the solution are currently unknown.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q13",
+            "question_text": "What is the right sequence in design thinking?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Divergent then Convergent",
+                "B": "Convergent then Divergent",
+                "C": "Only Divergent",
+                "D": "Only Convergent"
+            },
+            "correct_option_label": "A",
+            "explanation": "Following the Double Diamond Model, Design Thinking dictates that you must 'Diverge Before You Converge'. You first broaden your thinking to explore, then narrow it down to define and select.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q14",
+            "question_text": "In design thinking the focus is on the",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Subject",
+                "B": "Object",
+                "C": "Both",
+                "D": "Neither"
+            },
+            "correct_option_label": "A",
+            "explanation": "A key tenet of design thinking is focusing on the 'Subject' (the human behind the problem) rather than the 'Object' (the physical product or technology itself).",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q15",
+            "question_text": "Design thinking not about design, it is about",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Thinking",
+                "B": "Solving",
+                "C": "Exploring",
+                "D": "Conceptualizing"
+            },
+            "correct_option_label": "A",
+            "explanation": "Design thinking is not about designing physical products; it is about designing your thinking. It focuses on ensuring the structured mental approach aligns with user aspirations.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA2_Q1",
+            "question_text": "Providing a Solution for a Root Cause results into",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Quick Fix",
+                "B": "Perma Fix",
+                "C": "Recurrence of the problem",
+                "D": "Recurrence of the symptom"
+            },
+            "correct_option_label": "B",
+            "explanation": "When you address the root cause of a problem instead of just treating its surface symptoms, you achieve a 'Perma Fix', preventing the problem from recurring.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q2",
+            "question_text": "Can empathy be learned?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Yes",
+                "B": "No",
+                "C": "Can't say",
+                "D": "It depends"
+            },
+            "correct_option_label": "A",
+            "explanation": "Empathy is a science that can be created, engineered, mapped, and systematically learned using various techniques like active listening (RASA) and emotional intelligence frameworks.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q3",
+            "question_text": "In Design Thinking customer comes to you with a",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Problem",
+                "B": "Solution",
+                "C": "Idea",
+                "D": "Sympton"
+            },
+            "correct_option_label": "D",
+            "explanation": "Customers generally present their immediate pain point or 'Symptom' (spelled 'Sympton' in the options). The design thinker's job is to trace that symptom back to the root problem.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q4",
+            "question_text": "When you are doing Problem Exploration, you should avoid",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Root cause analysis",
+                "B": "Prioritization",
+                "C": "Ideation",
+                "D": "Probing"
+            },
+            "correct_option_label": "C",
+            "explanation": "In Design Thinking, you must strictly defer judgment and compartmentalize phases. Ideation (solution generation) must be entirely avoided while still exploring the problem.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q5",
+            "question_text": "If a customer perceives a lot of pain in adopting an idea, your approach should be",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Eliminate all the pains",
+                "B": "Add gains",
+                "C": "Can't say",
+                "D": "None"
+            },
+            "correct_option_label": "B",
+            "explanation": "According to the Empathy Map equation, users will only engage if Gains > Pains. Since you can rarely eliminate all pain, the optimal approach is to significantly add to the gains to outweigh it.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q6",
+            "question_text": "Design Thinking calls for",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A clear head",
+                "B": "A deep heart",
+                "C": "A thick skin",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "The mindset of a true design thinker requires three attributes: A clear head (focus), a deep heart (compassion/empathy), and a thick skin (indifference to unwarranted opinions).",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q7",
+            "question_text": "A Design Brief comes where in the design thinking process?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "At the very start",
+                "B": "In the middle",
+                "C": "Towards the end",
+                "D": "It depends on the project"
+            },
+            "correct_option_label": "A",
+            "explanation": "A Design Brief sets the context and sandbox boundaries for a project. Therefore, it is drafted at the very beginning before problem-solving or defining effectively begins.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q8",
+            "question_text": "What are the conditions of a good Design Brief?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Vagueness",
+                "B": "Constraints",
+                "C": "Inspirational",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "A strong design brief must meet three criteria: It must be Inspirational, it must have clear Constraints, and it must remain Vague enough regarding 'how' to solve the problem.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q9",
+            "question_text": "What is a part of Emotional Intelligence?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Empathy",
+                "B": "Self-awareness",
+                "C": "Self-management",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Daniel Goleman's model of Emotional Intelligence consists of 4 parts: Self-Awareness, Self-Management, Empathy, and Social Skills. Thus, all listed options are correct.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q10",
+            "question_text": "When listening to a disgruntled customer, you should adopt this listening style",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Critical",
+                "B": "Empathetic",
+                "C": "None",
+                "D": "Both"
+            },
+            "correct_option_label": "B",
+            "explanation": "Julian Treasure's listening positions suggest that for a disgruntled person seeking emotional release, one should adopt an Empathetic listening stance, ignoring logical critiques momentarily.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q11",
+            "question_text": "In the RASA technique of listening, what does S stand for?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sympathize",
+                "B": "Summarize",
+                "C": "Surprise",
+                "D": "Solve"
+            },
+            "correct_option_label": "B",
+            "explanation": "The RASA framework stands for Receive, Appreciate, Summarize, and Ask. 'Summarize' is used to parrot points back to build rapport and plug gaps.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q12",
+            "question_text": "The objective of Problem Exploration technique is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Understand the problem in detail",
+                "B": "Identify the various Root Causes",
+                "C": "Classify problem in various categories",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Problem exploration involves drilling down from symptoms into multiple causes and root causes, mapping them out comprehensively, and classifying them to determine what needs fixing.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q13",
+            "question_text": "The objective of Stakeholder Map is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Identify the key stakeholders",
+                "B": "Identify the motivations and demotivation of each stakeholder",
+                "C": "Discover conflict between stakeholders",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "A Stakeholder Map serves to identify 7 to 9 key entities involved, document their positives/motivations and negatives/demotivations, and uncover conflicting demands between them.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q14",
+            "question_text": "What are the various components of an Empathy Map?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Say and Do",
+                "B": "Think and Feel",
+                "C": "See and Hear",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "An Empathy Map analyzes user psychology across three channels: Input (Seeing/Hearing), Processing (Thinking/Feeling), and Output (Saying/Doing).",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q15",
+            "question_text": "What is a User Persona?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Profile of one customer",
+                "B": "Profile of a typical customer",
+                "C": "None",
+                "D": "Both"
+            },
+            "correct_option_label": "B",
+            "explanation": "A Buyer or User Persona is a microscopic profile acting as a 'mask' to represent and understand the generic or typical user's demographics, fears, and objectives.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA3_Q1",
+            "question_text": "Which is not a technique for Ideation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Design for the Extreme",
+                "B": "Challenging Assumptions",
+                "C": "Paper prototyping",
+                "D": "Analogous Design"
+            },
+            "correct_option_label": "C",
+            "explanation": "Paper prototyping is an execution technique used in the 'Prototype & Test' phase, not an ideation or solution generation method like challenging assumptions or analogous design.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q2",
+            "question_text": "Which is not a technique for Ideation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Challenging assumptions",
+                "B": "Lateral thinking",
+                "C": "TRIZ",
+                "D": "Quick and Dirty Prototype"
+            },
+            "correct_option_label": "D",
+            "explanation": "Building a 'Quick and Dirty Prototype' is an experimental method to test concepts during the Prototyping stage. Methods like TRIZ, Lateral Thinking, and Challenging Assumptions belong to Ideation.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q3",
+            "question_text": "Which is not an Ideation Trigger?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Eliminate",
+                "B": "Substitute",
+                "C": "Reverse",
+                "D": "None of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Eliminate, Substitute, and Reverse are all valid triggers contained within the SCAMPER ideation technique. Therefore, 'None of the above' is the correct answer.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q4",
+            "question_text": "Drawing inspirations from other industries and scenarios is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Scenario planning",
+                "B": "Across the value chain",
+                "C": "Analogous design",
+                "D": "Design for the extreme"
+            },
+            "correct_option_label": "C",
+            "explanation": "Analogous design involves drawing inspiration from a completely unrelated domain or industry solving a similar generalized problem (e.g., using airplane service concepts for a cafeteria).",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q5",
+            "question_text": "Who coined the term Lateral Thinking?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Edward de Bono",
+                "B": "Daniel Kahneman",
+                "C": "Eliyahu Goldratt",
+                "D": "Tony Buzan"
+            },
+            "correct_option_label": "A",
+            "explanation": "The term Lateral Thinking, which involves moving sideways away from straightforward logic to spark creative ideas, was coined by Edward de Bono.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q6",
+            "question_text": "What's the starting point of Design Thinking process?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ideas",
+                "B": "Problems",
+                "C": "Voice of customer",
+                "D": "Inspiration"
+            },
+            "correct_option_label": "D",
+            "explanation": "Unlike standard approaches, the Design Thinking model is front-loaded and always starts with an overarching Inspiration—a clear 'Why'.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q7",
+            "question_text": "Who is the big proponent of Mind Mapping?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Edward de Bono",
+                "B": "Daniel Kahneman",
+                "C": "Eliyahu Goldratt",
+                "D": "Tony Buzan"
+            },
+            "correct_option_label": "D",
+            "explanation": "Tony Buzan popularized Mind Mapping, an associative spatial technique that mimics how the human brain naturally processes ideas.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q8",
+            "question_text": "Brainstorming technique suffers from the following shortcomings",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Groupthink",
+                "B": "Idea blocking",
+                "C": "Social loafing",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Traditional group verbal brainstorming is flawed due to social dynamics like Groupthink, Idea Blocking, Evaluation Apprehension, and Social Loafing. Brainwriting is preferred.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q9",
+            "question_text": "A winning idea mush have the properties of",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Human Desirability",
+                "B": "Technical Feasibility",
+                "C": "Business Viability",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Venn Diagram of Innovation (the DFV Matrix) states a winning idea sits at the exact intersection of Human Desirability, Technical Feasibility, and Business Viability.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q10",
+            "question_text": "Impact-Time Matrix is a means of",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Idea generation",
+                "B": "Idea prioritization",
+                "C": "Problem exploration",
+                "D": "Prototyping"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Impact-Time Matrix is a rubric used to evaluate and prioritize ideas post-generation, separating them into categories like Starters, Stars, Pipeline, or Pipe Dreams.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q11",
+            "question_text": "When you are doing Ideation, you should avoid",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Building on other's ideas",
+                "B": "Evaluating ideas",
+                "C": "Going for a high quantity",
+                "D": "Sketching ideas"
+            },
+            "correct_option_label": "B",
+            "explanation": "A cardinal rule of Ideation is to Defer Judgment. Evaluating or critically judging ideas during generation kills momentum and creativity.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q12",
+            "question_text": "Which technique is not suitable for ideation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Fish Bone Diagram",
+                "B": "SCAMPER",
+                "C": "Lateral Thinking",
+                "D": "TRIZ"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Fish Bone (Ishikawa) Diagram is an analytical tool used for Root Cause Analysis during problem exploration, not for generating creative solutions (ideation).",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q13",
+            "question_text": "Which is not a technique for Ideation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "TRIZ",
+                "B": "Lateral thinking",
+                "C": "SCAMPER",
+                "D": "Stakeholder Map"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Stakeholder Map is a visual empathy tool used during problem exploration to map conflicts and motivations, not for generating solutions during Ideation.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q14",
+            "question_text": "Design Thinking calls for",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Being judgemental",
+                "B": "Deferring judgement",
+                "C": "Can't say",
+                "D": "It depends"
+            },
+            "correct_option_label": "B",
+            "explanation": "Design Thinking structurally separates generation from evaluation. You must completely defer judgment during the creative phases to ensure radical ideas surface without fear.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q15",
+            "question_text": "One of the primary things to keep in mind about ideation is that",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Quantity comes out of quality",
+                "B": "Quality comes out of quantity",
+                "C": "Many good ideas are necessary to start with",
+                "D": "Many average ideas is a bad start"
+            },
+            "correct_option_label": "B",
+            "explanation": "In ideation, high quantity yields high quality. The goal is to generate massive volumes of ideas, mathematically increasing the odds of finding exceptional ones when narrowing down later.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA4_Q1",
+            "question_text": "You can prototype",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A service idea",
+                "B": "A product idea",
+                "C": "A process idea",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Prototyping is versatile. It applies to tangible products (via clay or paper) as well as intangible service and process ideas (via storyboarding or skits).",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q2",
+            "question_text": "Which is not a technique for prototyping?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Scenario planning",
+                "B": "Storyboarding",
+                "C": "SCAMPER",
+                "D": "Storytelling"
+            },
+            "correct_option_label": "C",
+            "explanation": "SCAMPER is an ideation trigger checklist (Substitute, Combine, Adapt, etc.) used to generate solutions, whereas Storyboarding and Scenarios are used to test and prototype service flow.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q3",
+            "question_text": "A business model is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "How you create value",
+                "B": "How to deliver value",
+                "C": "How you appropriate value",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Alexander Osterwalder's Business Model Canvas is built on three pillars: how an idea survives by generating value, delivering value downstream, and appropriating value upstream.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q4",
+            "question_text": "Which is not a technique for prototyping?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Analogous Design",
+                "B": "Storyboarding",
+                "C": "Scenario planning",
+                "D": "Storytelling"
+            },
+            "correct_option_label": "A",
+            "explanation": "Analogous Design is a creative Ideation method looking to unrelated fields for inspiration, not a Prototyping technique used for validating hypotheses.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q5",
+            "question_text": "In the SCQA model of effective storytelling, what does C stand for?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Conclusion",
+                "B": "Complication",
+                "C": "Content",
+                "D": "Concrete"
+            },
+            "correct_option_label": "B",
+            "explanation": "SCQA stands for Situation, Complication, Question, and Answer. 'Complication' defines why the established situation has suddenly turned into a problem needing attention.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q6",
+            "question_text": "Which company is a big proponent of Design Thinking?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "IDEO",
+                "B": "McKinsey and Company",
+                "C": "BCG",
+                "D": "IKEA"
+            },
+            "correct_option_label": "A",
+            "explanation": "IDEO is a globally renowned design and consulting firm celebrated as one of the fundamental pioneers and proponents of the modern Design Thinking process.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q7",
+            "question_text": "Which technique is not suitable for prioritisation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "80/20 Rule",
+                "B": "Impact-Frequency Matrix",
+                "C": "Feasible-Viable-Desirable Matrix",
+                "D": "Fish Bone Diagram"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Fish Bone Diagram maps causes to effects during Problem Exploration. Matrices like Impact-Time/Frequency and DFV (Desirability-Feasibility-Viability) are used for Idea Prioritization.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q8",
+            "question_text": "Which is not a technique for Ideation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Design for the Extreme",
+                "B": "Challenging Assumptions",
+                "C": "Paper prototyping",
+                "D": "Analogous Design"
+            },
+            "correct_option_label": "C",
+            "explanation": "Paper prototyping belongs strictly to the Prototyping and Testing phase where concepts are modeled visually, whereas the other options are triggers to spark new ideas.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q9",
+            "question_text": "Impact-Time Matrix is a means of",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Idea generation",
+                "B": "Idea prioritisation",
+                "C": "Problem exploration",
+                "D": "Prototyping"
+            },
+            "correct_option_label": "B",
+            "explanation": "After generating hundreds of concepts, the Impact-Time matrix provides a rubric to filter and prioritize ideas into actionable buckets like 'Starters' or 'Pipe Dreams'.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q10",
+            "question_text": "A winning idea must have the properties of",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Human Desirability",
+                "B": "Technical Feasibility",
+                "C": "Business Viability",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "For an idea to succeed and scale, it must hit the innovation sweet spot combining Human Desirability (want), Technical Feasibility (buildable), and Business Viability (profitable).",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q11",
+            "question_text": "Which is not a technique for Ideation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Challenging assumptions",
+                "B": "Lateral thinking",
+                "C": "TRIZ",
+                "D": "Quick and Dirty Prototype"
+            },
+            "correct_option_label": "D",
+            "explanation": "A 'Quick and Dirty Prototype' is an artifact used in the prototyping stage to test hypotheses rapidly, not a cognitive method to brainstorm ideas.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q12",
+            "question_text": "Who is a big proponent of design thinking?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Marshall Goldsmith",
+                "B": "David Kelley",
+                "C": "Tom Peters",
+                "D": "Bill Gates"
+            },
+            "correct_option_label": "B",
+            "explanation": "David Kelley, founder of IDEO and Stanford's d.school, is one of the biggest proponents and founding figures of human-centered Design Thinking.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q13",
+            "question_text": "In the SCQA model of effective storytelling, what does S stand for?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Solution",
+                "B": "Situation",
+                "C": "Significant",
+                "D": "Story"
+            },
+            "correct_option_label": "B",
+            "explanation": "The 'S' in SCQA storytelling stands for 'Situation', setting the calm baseline context before a complication is introduced.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q14",
+            "question_text": "Value proposition refers to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "What customer gets for what she pays",
+                "B": "How are you superior to others",
+                "C": "None",
+                "D": "Both"
+            },
+            "correct_option_label": "D",
+            "explanation": "In business modeling, Value Proposition is both the core exchange (the functional/emotional value the customer receives) and the unique superiority it offers over competitors.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q15",
+            "question_text": "Design thinking, in principle, is closest to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Systems thinking",
+                "B": "Lateral thinking",
+                "C": "Critical thinking",
+                "D": "Lean thinking"
+            },
+            "correct_option_label": "A",
+            "explanation": "Design Thinking requires avoiding local optimization by looking holistically across the entire user experience network, aligning very closely with the macro-perspective of Systems thinking.",
+            "module": 4
+        }
+    ]
+}
