@@ -20,7 +20,7 @@ import { useRouter } from 'next/navigation';
 import videosData from '@/public/data/videos.json';
 import CustomQuizGenerator from './CustomQuizGenerator';
 
-const AVAILABLE_TERMS = [1, 2, 4]; // Define available terms
+const AVAILABLE_TERMS = [1, 2, 3, 4]; // Define available terms
 
 const SubjectSelector: React.FC = () => {
   const router = useRouter();
@@ -74,6 +74,13 @@ const SubjectSelector: React.FC = () => {
       'SE21x': <MessageSquare className="w-6 h-6 text-white" />,
       'PJ21x': <Rocket className="w-6 h-6 text-white" />,
       'ID21x': <BookOpen className="w-6 h-6 text-white" />,
+      'FA31x': <DollarSign className="w-6 h-6 text-white" />,
+      'EP31x': <Lightbulb className="w-6 h-6 text-white" />,
+      'SE31x': <Lightbulb className="w-6 h-6 text-white" />,
+      'MK31x': <TrendingUp className="w-6 h-6 text-white" />,
+      'AE31x': <BarChart3 className="w-6 h-6 text-white" />,
+      'ID32x': <BookOpen className="w-6 h-6 text-white" />,
+      'ID31x': <BookOpen className="w-6 h-6 text-white" />,
     };
     return iconMap[code] || <MessageSquare className="w-6 h-6 text-white" />;
   };

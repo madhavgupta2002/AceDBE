@@ -94,6 +94,50 @@ export const SUBJECTS: Subject[] = [
     term: 2
   },
 
+  // Term 3 Subjects
+  {
+    code: 'FA31x',
+    name: 'Management Accounting',
+    description: '',
+    term: 3
+  },
+  {
+    code: 'EP31x',
+    name: 'Entrepreneurial Mindset and Methods',
+    description: '',
+    term: 3
+  },
+  {
+    code: 'SE31x',
+    name: 'Design Your Thinking',
+    description: '',
+    term: 3
+  },
+  {
+    code: 'MK31x',
+    name: 'Social Media for Marketing',
+    description: '',
+    term: 3
+  },
+  {
+    code: 'AE31x',
+    name: 'Spreadsheets for Business Decisions',
+    description: '',
+    term: 3
+  },
+  {
+    code: 'ID32x',
+    name: 'Exploring Sustainability in the Indian Context',
+    description: '',
+    term: 3
+  },
+  {
+    code: 'ID31x',
+    name: 'Understanding Indian Culture Theatre and its presence in daily life',
+    description: '',
+    term: 3
+  },
+
   // Term 4 Subjects
   {
     code: 'MD42x',
