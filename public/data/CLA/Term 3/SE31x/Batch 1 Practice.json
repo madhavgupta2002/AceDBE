@@ -1,0 +1,316 @@
+{
+    "exam_metadata": {
+        "subject_name": "Design Thinking",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "M1_Q1",
+            "question_text": "What is the core of design thinking?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Creating profitable designs",
+                "B": "Human-centricity",
+                "C": "Having the best idea",
+                "D": "Focusing on the product"
+            },
+            "correct_option_label": "B",
+            "explanation": "Design thinking is fundamentally a human-centric approach to problem-solving. It prioritizes the needs and experiences of the human behind the problem over merely focusing on the product or immediate profitability.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q2",
+            "question_text": "Which of the following highlights a problem with the Stage-gate model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Starts with a problem",
+                "B": "Starts with an idea",
+                "C": "It is a linear model",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "The traditional Stage-gate model is linear and typically jumps straight from a known problem to an idea or solution. This makes it rigid and prone to failure when faced with complex, unpredictable human challenges.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q3",
+            "question_text": "What is more important in design thinking?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "How to solve a problem?",
+                "B": "Why to solve a problem?",
+                "C": "Both are the same",
+                "D": "Neither"
+            },
+            "correct_option_label": "B",
+            "explanation": "Understanding 'Why to solve a problem?' provides the inspiration and true intent behind the process. It is infinitely more important than the technical 'How' because it ensures you are solving the right problem.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q4",
+            "question_text": "What is a crucial starting point to keep in mind during the ideation stage?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Coming up with many average ideas",
+                "B": "Coming up with few average ideas",
+                "C": "Coming up with few good ideas",
+                "D": "Coming up with many good ideas"
+            },
+            "correct_option_label": "A",
+            "explanation": "A core rule of ideation is that quantity drives quality. Generating a massive volume of average ideas initially is the best way to eventually filter down to a few exceptionally good ones.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q5",
+            "question_text": "Which movement of Gandhi's is comparable to prototype stage?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The train incident in South Africa",
+                "B": "Dandi March",
+                "C": "When first Indian National Congress was formed",
+                "D": "Quit India Movement"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Dandi March served as a prototype for Mahatma Gandhi's design thinking. It allowed him to test the concept of non-violent civil disobedience on a small, focused scale (salt) before scaling it nationwide.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q6",
+            "question_text": "Lateral thinking works in the realm of",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Known problem and Known solution",
+                "B": "Unknown problem and Unknown solution",
+                "C": "Known problem and Unknown Solution",
+                "D": "Unknown problem and Known Solution"
+            },
+            "correct_option_label": "C",
+            "explanation": "Lateral thinking is best used when the problem is Known but the solution is Unknown, as it involves creative workarounds and sideways thinking to discover a new approach.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q7",
+            "question_text": "Which of the following is a condition under which design thinking is used?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Availability of time",
+                "B": "Diversity of team",
+                "C": "Ambiguity of context",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Design thinking requires five key conditions to be effective: Audacity of Goal, Ambiguity of Context, Availability of Time, Access to Customers, and Diversity of the Team.",
+            "module": 1
+        },
+        {
+            "question_id": "M2_Q1",
+            "question_text": "Which of the following must be cultivated to adopt a design thinking mindset? (Choose all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Thick skin",
+                "B": "Knowing everything about something / Deeply thinking about anything that comes to mind",
+                "C": "Deep heart",
+                "D": "Clear head"
+            },
+            "correct_option_label": "A, C, D",
+            "explanation": "The three essential attributes of a design thinker's mindset are a Clear Head (knowing priorities), a Deep Heart (compassion/empathy), and a Thick Skin (indifference to unwarranted opinions).",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q2",
+            "question_text": "It is necessary to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To say No to increase our Zone of influence",
+                "B": "To say Yes to increase our Zone of Influence",
+                "C": "To say No to increase our Zone of concern",
+                "D": "To say Yes to increase our Zone of concern"
+            },
+            "correct_option_label": "B",
+            "explanation": "To maintain a clear head, you must shrink your limitless 'Zone of Concern' by saying 'No', and actively expand your actionable 'Zone of Influence' by saying 'Yes'.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q3",
+            "question_text": "Doctors try to understand the issue till its",
+            "question_type": "MCQ",
+            "options": {
+                "A": "symptoms",
+                "B": "problems",
+                "C": "root causes",
+                "D": "(all are the same)"
+            },
+            "correct_option_label": "C",
+            "explanation": "Unlike pharmacists who provide quick fixes for symptoms, doctors map out symptoms to identify and treat the actual underlying root causes, yielding high-value results.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q4",
+            "question_text": "To look at a problem from an objective lens, it is necessary to think about it from the level of",
+            "question_type": "MCQ",
+            "options": {
+                "A": "my position",
+                "B": "my colleague's position",
+                "C": "my boss's position",
+                "D": "my boss's boss's position"
+            },
+            "correct_option_label": "D",
+            "explanation": "To truly evaluate a problem's gravity and gain objective emotional space, the 'Pay Grade Rule' suggests you should think two levels above your pay grade (your boss's boss).",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q5",
+            "question_text": "Which of these is not a component to be considered while developing a design brief?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Inspirational",
+                "B": "Vague",
+                "C": "Rigidity",
+                "D": "Constraints"
+            },
+            "correct_option_label": "C",
+            "explanation": "A good design brief acts as a sandbox. It must be Inspirational, Constrained, and Vague enough to allow creative freedom. Rigidity restricts the creative exploration required.",
+            "module": 2
+        },
+        {
+            "question_id": "M3_Q1",
+            "question_text": "For an idea to be termed as creative, it needs to be",
+            "question_type": "MCQ",
+            "options": {
+                "A": "novel",
+                "B": "grand",
+                "C": "useful",
+                "D": "both a and c"
+            },
+            "correct_option_label": "D",
+            "explanation": "Creativity is scientifically defined as the ability to generate an idea that is simultaneously novel (new/unique) and useful (valuable/practical).",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q2",
+            "question_text": "In the Alternative Uses Test, which of these is not one of the parameters used in measuring creativity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Flexibility",
+                "B": "Accuracy",
+                "C": "Originality",
+                "D": "Elaboration"
+            },
+            "correct_option_label": "B",
+            "explanation": "Guilford's Alternate Uses Test measures creativity using four parameters: Fluency, Flexibility, Originality, and Elaboration. Accuracy is associated with convergent thinking (intelligence).",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q3",
+            "question_text": "Taking hobbies seriously helps one",
+            "question_type": "MCQ",
+            "options": {
+                "A": "increase their self-confidence",
+                "B": "get exposed to different perspectives in life",
+                "C": "get exposed to different kinds of people in life",
+                "D": "all of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Cultivating hobbies nurtures creativity by building self-confidence, offering diverse perspectives, building new networks, and encouraging cross-domain associative thinking.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q4",
+            "question_text": "There is creativity involved in humour.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True",
+                "B": "False",
+                "C": "None",
+                "D": "Both"
+            },
+            "correct_option_label": "A",
+            "explanation": "True. Humor and creativity share identical neural circuitry. Both rely on establishing a linear setup and then suddenly breaking the pattern with a benign violation of logic.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q5",
+            "question_text": "An important point to be noted about judgement during ideation is that",
+            "question_type": "MCQ",
+            "options": {
+                "A": "we must critically judge an idea or situation",
+                "B": "we must defer it",
+                "C": "we do not need to care about it",
+                "D": "judgement must be present all the time"
+            },
+            "correct_option_label": "B",
+            "explanation": "During the ideation phase, judgment must be strictly deferred. Evaluating ideas while attempting to generate them causes evaluation apprehension and kills creative momentum.",
+            "module": 3
+        },
+        {
+            "question_id": "M4_Q1",
+            "question_text": "Business viability refers to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Having the technological base to finish the project",
+                "B": "Being a businessman/businesswoman",
+                "C": "Does it make commercial sense?",
+                "D": "Understanding the needs of the consumer"
+            },
+            "correct_option_label": "C",
+            "explanation": "In the Innovation Trinity, Business Viability specifically addresses whether the proposed solution makes economic and commercial sense for the organization to pursue.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q2",
+            "question_text": "Why is prototyping necessary?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Helps one gain clarity",
+                "B": "Identify issues",
+                "C": "Offers confidence to customers",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Prototyping brings ideas to life. It offers spatial clarity, identifies hidden constraints early to prevent massive failures, and provides visual confidence to stakeholders and customers.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q3",
+            "question_text": "Which of these is not a rule of prototyping?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Doing the last experiment first",
+                "B": "Maximising learning per unit time and dollar",
+                "C": "Fail faster to succeed sooner",
+                "D": "Don't show your best product till the end"
+            },
+            "correct_option_label": "D",
+            "explanation": "Prototyping encourages showing rough, quick-and-dirty models early on. Hiding your work until it is 'perfect' contradicts the rapid feedback loop fundamental to design thinking.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q4",
+            "question_text": "Which of these is not a service prototyping method?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Storyboarding",
+                "B": "Lego and clay",
+                "C": "Storytelling",
+                "D": "Scenarios"
+            },
+            "correct_option_label": "B",
+            "explanation": "Lego and clay are physical, spatial materials used for Product Prototyping. Storyboarding, SCQA storytelling, and scenarios are temporal methods used for Service Prototyping.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q5",
+            "question_text": "The business model canvas begins with",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Key partners",
+                "B": "Value proposition",
+                "C": "Outreach channels",
+                "D": "Cost structure"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Business Model Canvas centers entirely around the Value Proposition—the core functional and emotional offering that the business promises to deliver to its users.",
+            "module": 4
+        }
+    ]
+}

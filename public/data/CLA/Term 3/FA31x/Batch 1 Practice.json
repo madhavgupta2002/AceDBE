@@ -1,0 +1,1072 @@
+{
+    "exam_metadata": {
+        "subject_name": "Management Accounting",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "The users of accounting information include:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Internal Managers",
+                "B": "Investors and Lenders",
+                "C": "Tax Authorities",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Accounting information is utilized by a wide variety of stakeholders, including internal management for decision making, and external parties like investors, lenders, and tax authorities for assessment.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Financial accountants face difficulties in finding the profit due to lack of information on ________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Material purchased",
+                "B": "Expenses incurred in factory",
+                "C": "Value of inventory",
+                "D": "None of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "Financial accounting primarily tracks external transactions. Determining accurate internal product costs and the corresponding value of closing inventory requires cost accounting systems.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "Material consumed during a period is equal to __________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Opening stock plus purchases less closing stock",
+                "B": "Opening stock plus closing stock less purchases",
+                "C": "Closing stock plus purchases less opening stock",
+                "D": "None of the above"
+            },
+            "correct_option_label": "A",
+            "explanation": "The basic formula for tracking material flow and consumption is: \nOpening Stock + Purchases - Closing Stock = Material Consumed.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "The cost accountants records transactions between __________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Business and lenders, employees, suppliers and customers",
+                "B": "Business and tax authorities",
+                "C": "One department and another department",
+                "D": "Business and owners"
+            },
+            "correct_option_label": "C",
+            "explanation": "Unlike financial accounting which records transactions with external parties, cost accounting focuses on the internal movement of resources, such as transfers between departments.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "Which one of the following is an example of variable cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Supervisor Salary",
+                "B": "Salesmen commission",
+                "C": "Interest Expenses",
+                "D": "Auditor’s Fee"
+            },
+            "correct_option_label": "B",
+            "explanation": "A variable cost changes in direct proportion to changes in volume or activity. Salesmen commission varies directly with the number of units sold or sales revenue generated.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "Fixed cost per unit will",
+            "question_type": "MCQ",
+            "options": {
+                "A": "increaase ...",
+                "B": "decrease...",
+                "C": "stay constant ..",
+                "D": "Decline when the volume increases"
+            },
+            "correct_option_label": "D",
+            "explanation": "While total fixed cost remains constant, the fixed cost per unit declines as production volume increases because the same total cost is spread over a larger number of units.",
+            "module": 1
+        },
+        {
+            "question_id": "7",
+            "question_text": "Which one of the following cost is not included for inventory valuation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Repairs and Maintenance",
+                "B": "Supervisors’ salary",
+                "C": "Commission paid to salesmen",
+                "D": "Both (b) and (c)"
+            },
+            "correct_option_label": "C",
+            "explanation": "Inventory valuation includes only manufacturing (product) costs. Commission paid to salesmen is a selling expense, which is treated as a period cost and excluded from inventory valuation.",
+            "module": 1
+        },
+        {
+            "question_id": "8",
+            "question_text": "A new order from a customer requires a tool that is not available with the company. The order size is 1000 units. The customer might place repeat orders and the tool can be used for all orders received during the next two years. However, there is no guarantee that customer will place repeat order. In pricing decision, the cost of tool is ____________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Relevant cost for all future orders including the first and subsequent order",
+                "B": "Fixed cost and hence not relevant for pricing decision",
+                "C": "Relevant cost only for the first order and not relevant for subsequent orders",
+                "D": "None of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "Since there is no guarantee of future orders, the entire cost of the specialized tool must be recovered from the first order, making it fully relevant to the initial pricing decision.",
+            "module": 1
+        },
+        {
+            "question_id": "9",
+            "question_text": "Conversion cost is equal to sum of __________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Material, Labour and Manufacturing Overhead",
+                "B": "Material and Manufacturing Overhead",
+                "C": "Labour and Manufacturing Overhead",
+                "D": "Material and Labour"
+            },
+            "correct_option_label": "C",
+            "explanation": "Conversion cost represents the manufacturing effort required to convert raw materials into finished goods. It is calculated as Direct Labour + Manufacturing Overhead.",
+            "module": 1
+        },
+        {
+            "question_id": "10",
+            "question_text": "What is cost object related to?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cost allocation",
+                "B": "Cost distribution",
+                "C": "Cost collection",
+                "D": "All of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "A cost object is the lowest specific point or item (like a product, service, or customer) for which cost data is accumulated and collected.",
+            "module": 1
+        },
+        {
+            "question_id": "11",
+            "question_text": "Document(s) used in cost accumulation:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "MAterial requizition Sheet",
+                "B": "Employee sheet",
+                "C": "MAchine Log Book",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Cost accumulation utilizes source documents to track resource consumption. Material requisition sheets track materials, employee time sheets track labour, and machine log books track overhead/machine usage.",
+            "module": 1
+        },
+        {
+            "question_id": "12",
+            "question_text": "Common costs are allocated to ___________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cost objects",
+                "B": "Cost centres",
+                "C": "End Products",
+                "D": "Any one of the three"
+            },
+            "correct_option_label": "A",
+            "explanation": "Common (indirect) costs cannot be directly traced, so they must be systematically allocated to the specific cost objects that consume them.",
+            "module": 1
+        },
+        {
+            "question_id": "13",
+            "question_text": "Which one of the following is likely to use Job Costing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Audit Firm like KPMG",
+                "B": "E-commerce company like Amazon",
+                "C": "Consumer Durable company like Samsung",
+                "D": "Garment Manufacturer like Levis"
+            },
+            "correct_option_label": "A",
+            "explanation": "Job costing is used for unique, custom-made products or services. An audit firm treats each client engagement as a specific, highly customized 'job'.",
+            "module": 1
+        },
+        {
+            "question_id": "14",
+            "question_text": "In process costing, common costs are generally allocated to __________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Final Products",
+                "B": "Processes",
+                "C": "Machines",
+                "D": "Any one of the above three"
+            },
+            "correct_option_label": "B",
+            "explanation": "In mass production environments using process costing, costs are accumulated and allocated per department or 'process' rather than by individual product or job.",
+            "module": 1
+        },
+        {
+            "question_id": "15",
+            "question_text": "We need allocation basis to assign the cost to products when the cost is in the nature of ________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Indirect cost",
+                "B": "Direct Cost",
+                "C": "Fixed Cost",
+                "D": "Sunk Cost"
+            },
+            "correct_option_label": "A",
+            "explanation": "Direct costs are traced easily to products. Indirect costs (overheads) are shared across multiple products and thus require an allocation basis to be assigned fairly.",
+            "module": 1
+        },
+        {
+            "question_id": "16",
+            "question_text": "The most appropriate basis of allocating after-sales service department cost is __________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Unit Produced",
+                "B": "Machine Hours",
+                "C": "Sales Value",
+                "D": "Equal value"
+            },
+            "correct_option_label": "C",
+            "explanation": "After-sales service costs are typically driven by the volume and value of sales made, making Sales Value the most logical allocation basis.",
+            "module": 1
+        },
+        {
+            "question_id": "17",
+            "question_text": "A hospital wants to allocate nursing department costs to in-patients. The most appropriate basis of allocation is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Direct Cost",
+                "B": "Cost of Medicines",
+                "C": "Surgery Hours",
+                "D": "No of days to stay in hostpial as inpatient"
+            },
+            "correct_option_label": "D",
+            "explanation": "Nursing resources are consumed based on the duration a patient remains in the hospital ward. Therefore, the number of days stayed is the most accurate cost driver.",
+            "module": 1
+        },
+        {
+            "question_id": "18",
+            "question_text": "In multi-product situation, cost distortion takes place when:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Material cost percentage is large",
+                "B": "Direct cost percentage is low",
+                "C": "Direct cost percentage is high",
+                "D": "Production quantity are uneven"
+            },
+            "correct_option_label": "B",
+            "explanation": "When the direct cost percentage is low, it means indirect overhead costs are very high. High indirect costs lead to heavy reliance on arbitrary allocation bases, causing severe cost distortions.",
+            "module": 1
+        },
+        {
+            "question_id": "19",
+            "question_text": "If costs are allocated on the basis of actual utilization of resources, the cost per unit between months will:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "differ significantly",
+                "B": "reduce oveer the years",
+                "C": "remain equal",
+                "D": "increase over the years"
+            },
+            "correct_option_label": "A",
+            "explanation": "Using actual utilization means fixed costs are divided by fluctuating monthly volumes, causing the calculated cost per unit to differ significantly from month to month.",
+            "module": 1
+        },
+        {
+            "question_id": "20",
+            "question_text": "What is the primary difference between manufacturing and service industry?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Absence of inventory",
+                "B": "Production and consumption take place simultaneously",
+                "C": "Outputs are independent",
+                "D": "One or more of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Service industries differ from manufacturing largely because services cannot be inventoried (absence of inventory) and are usually consumed exactly as they are produced.",
+            "module": 1
+        },
+        {
+            "question_id": "21",
+            "question_text": "For a telecom service provider, the costs are finally accumulated to ________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Spectrum",
+                "B": "Customer",
+                "C": "Pulse rate or minutes",
+                "D": "Any one of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "In continuous service industries like telecom, the ultimate cost object for pricing and tracking usage is the standard unit of service delivered, such as a minute or data pulse.",
+            "module": 1
+        },
+        {
+            "question_id": "22",
+            "question_text": "Most appropriate method of costing for a television channel is _______.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Job Costing",
+                "B": "Process Costing",
+                "C": "Operating costing",
+                "D": "None of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "Broadcasting is a continuous service. Service industries utilize Operating Costing to determine the cost of providing that continuous service over a period.",
+            "module": 1
+        },
+        {
+            "question_id": "23",
+            "question_text": "Most appropriate method of costing for a postal department or courier company is ________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Job Costing",
+                "B": "Process costing",
+                "C": "Operating Costing",
+                "D": "None of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "Courier and transport services rely on Operating Costing (a hybrid approach) to track the costs of continuous logistics operations.",
+            "module": 1
+        },
+        {
+            "question_id": "24",
+            "question_text": "The cost structure of University will show _________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Most costs are indirect",
+                "B": "Most costs are directly traceable to end service (students)",
+                "C": "Direct and indirect cost would be equal",
+                "D": "None of the above"
+            },
+            "correct_option_label": "A",
+            "explanation": "Universities have massive infrastructure, faculty, and administrative overheads that support all students broadly, meaning the vast majority of their cost structure is indirect.",
+            "module": 1
+        },
+        {
+            "question_id": "25",
+            "question_text": "Which one of the following industry is likely to use JOB Costing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sugar Manufacturer",
+                "B": "Telecom Service Provider",
+                "C": "Audit Firm",
+                "D": "Grain Dealer"
+            },
+            "correct_option_label": "C",
+            "explanation": "Job costing applies to specific, customized work. An audit firm conducts unique engagements tailored to individual clients, making Job Costing highly appropriate.",
+            "module": 2
+        },
+        {
+            "question_id": "26",
+            "question_text": "Which one of the following is not likely to use JOB Costing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Transport Service Provider",
+                "B": "Construction company",
+                "C": "Law Firm",
+                "D": "Automobile Service Station"
+            },
+            "correct_option_label": "A",
+            "explanation": "Construction, law firms, and auto repair handle specific custom jobs. A transport service provider operates continuously and uses Operating Costing instead.",
+            "module": 2
+        },
+        {
+            "question_id": "27",
+            "question_text": "Which one of the following industry is likely to use PROCESS Costing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Movie Production House",
+                "B": "Cement manufacturer",
+                "C": "Management Consultants",
+                "D": "Interior Decorator"
+            },
+            "correct_option_label": "B",
+            "explanation": "Process costing is designed for mass-manufacturing environments where output is uniform and identical, such as cement, sugar, or steel production.",
+            "module": 2
+        },
+        {
+            "question_id": "28",
+            "question_text": "Which one of the following industry is not likely to use PROCESS Costing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Power Generating Company",
+                "B": "Book Publishing Company",
+                "C": "Tractor manufacturer",
+                "D": "E-Commerce Retailer"
+            },
+            "correct_option_label": "B",
+            "explanation": "Book publishing runs in specific batches or titles (Batch/Job costing). Power generation and manufacturing assembly lines use Process/Operating principles.",
+            "module": 2
+        },
+        {
+            "question_id": "29",
+            "question_text": "Under which method(s) of job costing, direct material is charged on actual basis?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Normal Job Costing",
+                "B": "Actual Job Costing",
+                "C": "Standard Job Costing",
+                "D": "Both Normal and Actual Job Costing"
+            },
+            "correct_option_label": "D",
+            "explanation": "Both Normal and Actual Job costing systems trace direct materials to jobs using actual incurred costs. Standard costing uses budgeted amounts for direct materials.",
+            "module": 2
+        },
+        {
+            "question_id": "30",
+            "question_text": "Under which method of job costing, indirect costs are charged on actual basis?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Normal Job Costing",
+                "B": "Actual Job Costing",
+                "C": "Standard Job Costing",
+                "D": "None of the above"
+            },
+            "correct_option_label": "B",
+            "explanation": "Actual Job Costing waits until the end of the period to allocate exact, actual indirect costs to jobs, unlike Normal Costing which uses a predetermined estimated rate.",
+            "module": 2
+        },
+        {
+            "question_id": "31",
+            "question_text": "Which one of the following statements is true for normal job costing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Both direct and indirect costs are on actual basis",
+                "B": "Both direct and indirect costs are on budgeted basis",
+                "C": "Direct costs are on budgeted basis and indirect costs are on actual basis",
+                "D": "Indirect costs are on budgeted basis and direct costs are on actual basis"
+            },
+            "correct_option_label": "D",
+            "explanation": "Normal costing applies actual costs for direct inputs (material and labor) but uses a predetermined, budgeted rate for applying indirect overhead costs.",
+            "module": 2
+        },
+        {
+            "question_id": "32",
+            "question_text": "National Highways Authority has invited tender for an elevated road project. Your company wants to participate in the tender. Which of the following job costing method will be used by your costing department?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Normal Job Costing",
+                "B": "Actual Job Costing",
+                "C": "Standard Job Costing",
+                "D": "None of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "When preparing a bid or quoting a tender for future work, accountants rely on Standard Job Costing to estimate future direct and indirect costs.",
+            "module": 2
+        },
+        {
+            "question_id": "33",
+            "question_text": "Which one of the following allocation is most suitable for automobile service station for charging indirect cost to a job?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Direct Labour",
+                "B": "Units",
+                "C": "Direct Material",
+                "D": "Horse Power of the vehicle"
+            },
+            "correct_option_label": "A",
+            "explanation": "In an auto repair setting, overheads like garage rent and equipment depreciation are highly correlated with the amount of time mechanics spend working on a vehicle (Direct Labour hours/cost).",
+            "module": 2
+        },
+        {
+            "question_id": "34",
+            "question_text": "What is the consequence of United Leathers example discussed in the lecture not following the new method of costing and pricing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customers are encouraged for asking more delivery and designs.",
+                "B": "Some customers are charged relatively higher whereas others are charged lower.",
+                "C": "No relationship between revenue growth and profit growth.",
+                "D": "All of the above."
+            },
+            "correct_option_label": "D",
+            "explanation": "Failing to implement Customer Costing allows demanding customers to abuse free services, creates cross-subsidization where simple customers overpay, and disconnects revenue from true profitability.",
+            "module": 2
+        },
+        {
+            "question_id": "35",
+            "question_text": "Which one of the following company would find customer costing relevant?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Fertilizer Manufacturer",
+                "B": "Customised Plastic Bottle manufacturer",
+                "C": "Business School",
+                "D": "Automobile Service Station"
+            },
+            "correct_option_label": "B",
+            "explanation": "A B2B manufacturer dealing with large clients who request varying order sizes, custom designs, and different delivery frequencies benefits immensely from tracing costs down to the specific customer level.",
+            "module": 2
+        },
+        {
+            "question_id": "36",
+            "question_text": "Equivalent unit refers to ___________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Partially completed units expressed as full unit",
+                "B": "Fully completed units",
+                "C": "Machine hours related to partially completed units",
+                "D": "Budgeted Material Quantity per unit"
+            },
+            "correct_option_label": "A",
+            "explanation": "In process costing, Equivalent Units is a metric that converts a given number of partially completed WIP inventory units into the equivalent amount of fully completed units based on their percentage of completion.",
+            "module": 2
+        },
+        {
+            "question_id": "37",
+            "question_text": "Using the following information, compute the conversion cost. Direct Material Cost: 50000; Direct Labour: 10000; Manufacturing Overhead: 60000; Administrative Expenses: 5000: Selling Expenses: 20000; Distribution Expenses: 8000",
+            "question_type": "MCQ",
+            "options": {
+                "A": "128,000",
+                "B": "148,000",
+                "C": "120,000",
+                "D": "70,000"
+            },
+            "correct_option_label": "D",
+            "explanation": "Conversion Cost = Direct Labour + Manufacturing Overhead. \nConversion Cost = 10,000 + 60,000 = 70,000. Administrative and selling expenses are period costs.",
+            "module": 2
+        },
+        {
+            "question_id": "38",
+            "question_text": "The following are related to conversion cost: Opening WIP: 100 units (20% completed); New units taken up during the period: 500 units; Closing WIP: 50 units (80% completed). The Equivalent Units is equal to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "550 Units",
+                "B": "600 Units",
+                "C": "590 Units",
+                "D": "540 Units"
+            },
+            "correct_option_label": "C",
+            "explanation": "Assuming the standard Weighted Average method: \nTotal Completed Units = 100 + 500 - 50 = 550. \nClosing WIP Equivalent = 50 units × 80% = 40. \nTotal Equivalent Units = 550 + 40 = 590 Units.",
+            "module": 2
+        },
+        {
+            "question_id": "39",
+            "question_text": "Refer the input given in the above question. You have the following additional information: Value of Opening Work-in-process: 2000; Expenses incurred during the period: 40,000. The cost per EU",
+            "question_type": "MCQ",
+            "options": {
+                "A": "71.19",
+                "B": "70.00",
+                "C": "72.73",
+                "D": "None of the above"
+            },
+            "correct_option_label": "A",
+            "explanation": "Under Weighted Average, Total Cost = Opening WIP Cost (2000) + Current Cost (40,000) = 42,000. \nCost per Equivalent Unit = 42,000 / 590 EU = 71.186, which rounds to 71.19.",
+            "module": 2
+        },
+        {
+            "question_id": "40",
+            "question_text": "Opening WIP value plus cost incurred during the period should be equal to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cost of completed units less closing WIP value",
+                "B": "Cost of completed units plus closing WIP value",
+                "C": "Cost of completed units",
+                "D": "Opening WIP value plus cost of completed units minus closing WIP value"
+            },
+            "correct_option_label": "B",
+            "explanation": "This represents the fundamental accounting cost reconciliation equation in process costing. Total costs accounted for (Completed + Closing WIP) must equal total costs to account for (Opening WIP + Incurred Costs).",
+            "module": 2
+        },
+        {
+            "question_id": "41",
+            "question_text": "Normal losses are charged to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Completed units",
+                "B": "Work-in-process",
+                "C": "Both completed units and work-in-process",
+                "D": "Profit and Loss Account directly"
+            },
+            "correct_option_label": "C",
+            "explanation": "Normal loss is an expected, unavoidable cost of production. Its cost is absorbed by inflating the per-unit cost of the remaining good units, both those fully completed and those remaining in WIP.",
+            "module": 2
+        },
+        {
+            "question_id": "42",
+            "question_text": "Abnormal Losses are:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Charged to completed good units",
+                "B": "Separated and charged to Profit and Loss Account",
+                "C": "Charged to Work-in-process",
+                "D": "Charged to completed units and WIP"
+            },
+            "correct_option_label": "B",
+            "explanation": "Abnormal loss results from inefficiency or breakdowns. It is separated from product costs and written off directly to the P&L as a period cost to maintain accurate inventory valuation.",
+            "module": 2
+        },
+        {
+            "question_id": "43",
+            "question_text": "Treating abnormal loss as normal loss leads to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase in profit",
+                "B": "Decrease in profit",
+                "C": "No change in profit",
+                "D": "Unrelated to profit"
+            },
+            "correct_option_label": "A",
+            "explanation": "By improperly treating an abnormal loss as a normal loss, the cost gets absorbed into closing inventory rather than being fully expensed immediately. This overvalues inventory, temporarily inflating reported profits.",
+            "module": 2
+        },
+        {
+            "question_id": "44",
+            "question_text": "At the beginning of the process, 200 units are in WIP with 60% completion on conversion cost. During the period, 1000 units are introduced. Units completed and closing WIP are 900 units and 250 units. The closing WIP is completed to an extent of 20%. Units lost are treated as normal loss. Compute the Equivalent Units for the period.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "900",
+                "B": "950",
+                "C": "1000",
+                "D": "1200"
+            },
+            "correct_option_label": "B",
+            "explanation": "Using Weighted Average: \nEquivalent Units = Fully Completed Units (900) + [Closing WIP (250) × 20%]. \nEU = 900 + 50 = 950. Normal loss units are ignored in EU computation.",
+            "module": 2
+        },
+        {
+            "question_id": "45",
+            "question_text": "In the above example, if the lost units are treated as abnormal loss, total equivalent units are _____.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "900",
+                "B": "950",
+                "C": "1000",
+                "D": "1200"
+            },
+            "correct_option_label": "C",
+            "explanation": "Total input = 200 + 1000 = 1200 units. \nAccounted = 900 (completed) + 250 (WIP) = 1150 units. \nLost = 50 units. If abnormal, these 50 units receive full equivalent valuation. \nTotal EU = 900 (Completed) + 50 (WIP) + 50 (Abnormal) = 1000 units.",
+            "module": 2
+        },
+        {
+            "question_id": "46",
+            "question_text": "Joint-product and by-product classifications are based:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Solely at the discretion of the production manager",
+                "B": "On the economic value of the products",
+                "C": "On the production time taken by the products to complete into finished products",
+                "D": "All the above are correct"
+            },
+            "correct_option_label": "B",
+            "explanation": "Products emerging from a common process are classified purely based on their relative sales (economic) value. High-value outputs are joint products, while low-value incidentals are by-products.",
+            "module": 2
+        },
+        {
+            "question_id": "47",
+            "question_text": "Products coming out of common process are classified as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Joint-product or by-products or scrap",
+                "B": "Separable products or joint-products or scrap",
+                "C": "Inseparable products or joint-products or by-products",
+                "D": "Common-base products or Joint-products or by-products"
+            },
+            "correct_option_label": "A",
+            "explanation": "A common production process (like crude oil refining) yields multiple outputs that are strictly classified into three categories based on value: Joint Products, By-Products, and Scrap.",
+            "module": 2
+        },
+        {
+            "question_id": "48",
+            "question_text": "Estimated realizable value is calculated:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "When sales value is readily ascertainable at the split-off point",
+                "B": "When sales value is not readily ascertainable at the split-off point",
+                "C": "When the joint production cost is negligible",
+                "D": "When the joint production cost is very high"
+            },
+            "correct_option_label": "B",
+            "explanation": "If a joint product has no market value immediately at the split-off point and requires further processing, accountants estimate its realizable value by taking the final sales price minus post-split processing costs.",
+            "module": 2
+        },
+        {
+            "question_id": "49",
+            "question_text": "Which of the following statements is true for joint-products?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An outcome of the same raw material and process/operations.",
+                "B": "May often require further processing.",
+                "C": "Cannot be produced separately.",
+                "D": "All of above."
+            },
+            "correct_option_label": "D",
+            "explanation": "Joint products inherently share raw materials, cannot be manufactured independently up to the split-off point, and typically undergo further separate processing before final sale.",
+            "module": 2
+        },
+        {
+            "question_id": "50",
+            "question_text": "Products incidental to the manufacture of main product are called _______.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Joint-products",
+                "B": "By-products",
+                "C": "Both (a) and (b)",
+                "D": "Neither (a) nor (b)"
+            },
+            "correct_option_label": "B",
+            "explanation": "Outputs that emerge incidentally alongside the primary manufacturing process and possess minor economic sales value are categorized as by-products.",
+            "module": 2
+        },
+        {
+            "question_id": "51",
+            "question_text": "Which one of the following is indirect material cost for a textile garment manufacturing unit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Collar",
+                "B": "Buttons",
+                "C": "Thread",
+                "D": "Cloth"
+            },
+            "correct_option_label": "C",
+            "explanation": "While thread is a physical part of the final garment, its cost per unit is too insignificant to trace directly to each shirt economically, making it an indirect material.",
+            "module": 2
+        },
+        {
+            "question_id": "52",
+            "question_text": "A Software company follows job costing. Which one of the following employee cost is indirect labour cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Software Engineer working on the job",
+                "B": "Project Manager, exclusively assigned for the job",
+                "C": "Team leaders who manage software engineers",
+                "D": "A team of Business Analysts"
+            },
+            "correct_option_label": "C",
+            "explanation": "Team leaders supervise multiple engineers across various projects. Their time cannot be exclusively traced to a single specific job, making their salary an indirect cost (overhead).",
+            "module": 2
+        },
+        {
+            "question_id": "53",
+            "question_text": "Indirect costs are outcome of",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Costs are not directly traceable in an economical way",
+                "B": "More than one department uses the services",
+                "C": "Both (a) and (b)",
+                "D": "Neither (a) and (b)"
+            },
+            "correct_option_label": "C",
+            "explanation": "A cost is classified as indirect either because it is shared mutually among several departments or because it is simply not cost-effective to track it precisely to a single unit.",
+            "module": 2
+        },
+        {
+            "question_id": "54",
+            "question_text": "For an automobile dealer, which of the following cost is direct cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Salary of sales team which contacts prospective customers and market the products",
+                "B": "Warehouse rent",
+                "C": "Insurance premium paid for the vehicles in the warehouse at the rate of .5% of the cost of vehicles",
+                "D": "None of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "Because the insurance premium is calculated strictly as a percentage of the specific vehicle's cost, it can be traced exclusively and directly to that specific vehicle (cost object).",
+            "module": 2
+        },
+        {
+            "question_id": "55",
+            "question_text": "Indirect costs are to be",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Allocated to products and services",
+                "B": "Ignored; they are outside product costing",
+                "C": "Converted into direct cost by analyzing them further",
+                "D": "Carried over to next period"
+            },
+            "correct_option_label": "A",
+            "explanation": "Since indirect costs cannot be traced directly, they must be systematically accumulated and then allocated to final products and services using a logical allocation base.",
+            "module": 2
+        },
+        {
+            "question_id": "56",
+            "question_text": "A television manufacturer produces 6 models of television. The most appropriate basis of allocating inspection department cost is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Material Cost",
+                "B": "Machine Hour",
+                "C": "Number of Units Produced",
+                "D": "None of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "Inspection resources are generally consumed on a per-unit basis, as quality control must evaluate each television rolling off the line.",
+            "module": 2
+        },
+        {
+            "question_id": "57",
+            "question_text": "An FMCG company producing 20 different products pooled all support service departments’ costs into two broad pools – manufacturing support service and administrative support service. It then allocates the cost to 20 products using machine hours and number of units. This method of indirect cost allocation would lead to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Seriously distort the product costs",
+                "B": "Higher record-keeping costs",
+                "C": "Accurate product costing",
+                "D": "Efficient Cost Control"
+            },
+            "correct_option_label": "A",
+            "explanation": "Using only broad, volume-based pools to allocate complex service costs ignores actual resource consumption patterns, causing severe cost cross-subsidization and distorted product costs.",
+            "module": 2
+        },
+        {
+            "question_id": "58",
+            "question_text": "In step-wise allocation of indirect costs",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Service departments cost are ignored completely",
+                "B": "Service of one service department to another service department is ignored completely",
+                "C": "Service of one service department to another service department is sequentially considered",
+                "D": "Service of one service department to another service department is simultaneously considered"
+            },
+            "correct_option_label": "C",
+            "explanation": "The step-wise method ranks service departments and allocates their costs downward sequentially. Once a department is closed out, it does not receive allocations back from subsequent departments.",
+            "module": 2
+        },
+        {
+            "question_id": "59",
+            "question_text": "Rane and Co manufactures eight types of milk chocolates and candies. Power and utility costs are allocated based on material costs. For the month of June, the budgeted power and utility cost is Rs. 15 lakhs and material consumption is Rs. 180 lakhs. Actual power and utility is Rs.16 lakhs and actual material consumed is Rs. 180 lakhs. Material cost for one of the milk bar “SLIM” is Rs. 24. Power and utility cost to be allocated to SLIM is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs 2.13",
+                "B": "Rs 2.00",
+                "C": "Rs 0.83",
+                "D": "Rs 0.89"
+            },
+            "correct_option_label": "B",
+            "explanation": "1. Standard Overhead Rate = Budgeted Power / Budgeted Material = 15L / 180L = Rs. 0.0833 per Rupee of material. \n2. Allocation to SLIM = Material Cost (Rs. 24) × 0.0833 = Rs. 2.00.",
+            "module": 2
+        },
+        {
+            "question_id": "60",
+            "question_text": "Ashok and Rahul are friends and sharing an apartment. They have recently taken television channel connection. The service provider offers the following deal: Rs. 300 for basic channels, Rs. 500 for basic and news channels and Rs. 800 for basic, news and sports channels. Basic and sports channels would cost Rs. 600. Ashok generally watches news channels and Rahul prefers sports channels and hence they decided to take basic, news and sports channels. They are wondering how to share Rs. 800 between them. The fair allocation is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 400 each",
+                "B": "Rs. 500 for Ashok and Rs. 300 for Rahul",
+                "C": "Rs. 200 for Ashok and Rs. 600 for Rahul",
+                "D": "Rs. 350 for Ashok and Rs. 450 for Rahul"
+            },
+            "correct_option_label": "D",
+            "explanation": "The base cost (300) benefits both and is split evenly (150 each). Ashok pays the incremental cost for News (500 - 300 = 200). Rahul pays the incremental cost for Sports (600 - 300 = 300). Ashok total = 150 + 200 = 350. Rahul total = 150 + 300 = 450.",
+            "module": 2
+        },
+        {
+            "question_id": "61",
+            "question_text": "Traditional overhead allocation based on one or two cost pools lead to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Under-costing of high volume products related to low volume products",
+                "B": "Over-costing of high volume products related to low volume products",
+                "C": "Fairly correct costing of both high volume and low volume products",
+                "D": "None of the above"
+            },
+            "correct_option_label": "B",
+            "explanation": "Using volume-based drivers (like machine hours) incorrectly assumes that high-volume products consume all the overhead, leading to their over-costing and the subsidization of low-volume complex products.",
+            "module": 2
+        },
+        {
+            "question_id": "62",
+            "question_text": "A firm produces customized product as well as mass-consumption general product. Traditional costing system will lead to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Under-costing of customized product",
+                "B": "Under-costing of mass-consumption product",
+                "C": "Under-costing of customized product and fair-costing of mass-consumption product",
+                "D": "Fair-costing of both products"
+            },
+            "correct_option_label": "A",
+            "explanation": "Customized products require extensive setup, engineering, and design activities. Traditional volume-based costing fails to allocate these batch-level costs properly, severely under-costing the complex customized items.",
+            "module": 2
+        },
+        {
+            "question_id": "63",
+            "question_text": "In which of the following situations, traditional overhead allocation will cause problem in costing of products?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A software firm executing small and large project in different domains",
+                "B": "A pharmaceutical firm producing tablets, capsules, syrups and ointment of different quantities and values",
+                "C": "An infrastructure firm executing customized products",
+                "D": "All the three cases"
+            },
+            "correct_option_label": "D",
+            "explanation": "Traditional costing fails in any environment characterized by high product diversity, varied order sizes, and high complexity, making it problematic in all the listed scenarios.",
+            "module": 2
+        },
+        {
+            "question_id": "64",
+            "question_text": "Best Chemicals recently started following activity based costing. Which one of the following will be the likely outcome of the ABC?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Improvement in the accuracy of product costing",
+                "B": "Better decision making",
+                "C": "Cost data can be used for strategic decision making",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "ABC removes cost distortions. This accurate product costing enables managers to make vastly improved operational pricing decisions and strategic product-mix decisions.",
+            "module": 2
+        },
+        {
+            "question_id": "65",
+            "question_text": "Which one of the following is the most appropriate cost driver for the quality control department?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Number of units produced",
+                "B": "Number of inspection points",
+                "C": "Quantity rejected",
+                "D": "Time taken for inspection"
+            },
+            "correct_option_label": "B",
+            "explanation": "In ABC, costs are assigned based on events that trigger resource consumption. The number of specific inspection points dictates the effort the QC department exerts.",
+            "module": 2
+        },
+        {
+            "question_id": "66",
+            "question_text": "Activity-based-management (ABM):",
+            "question_type": "MCQ",
+            "options": {
+                "A": "ABM is another version of Activity Based Costing.",
+                "B": "ABM provides more accurate product costing",
+                "C": "ABM uses ABC data for planning, controlling and decision making",
+                "D": "Both (a) and (b)"
+            },
+            "correct_option_label": "C",
+            "explanation": "While ABC is a method to calculate costs accurately, ABM is the managerial philosophy of utilizing that ABC data to improve processes, eliminate waste, and optimize pricing.",
+            "module": 2
+        },
+        {
+            "question_id": "67",
+            "question_text": "The primary focus of ABM is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reducing cost of activities",
+                "B": "Eliminating activities",
+                "C": "Optimizing time, cost and quality aspects of activities",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "ABM evaluates activities holistically. It targets non-value-added activities for elimination, reduces the cost of core activities, and evaluates them across time, cost, and quality metrics.",
+            "module": 2
+        },
+        {
+            "question_id": "68",
+            "question_text": "Under variable costing, fixed cost is treated as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product Cost",
+                "B": "Period Cost",
+                "C": "Both Product Cost and Period Cost",
+                "D": "Neither Product cost nor period cost"
+            },
+            "correct_option_label": "B",
+            "explanation": "Marginal (variable) costing strictly isolates fixed factory overheads and writes them off entirely in the period they are incurred, treating them as Period Costs rather than capitalizing them in inventory.",
+            "module": 3
+        },
+        {
+            "question_id": "69",
+            "question_text": "When volume increases, variable cost per unit is __________ and fixed cost per unit is _______________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Constant; declining",
+                "B": "Declining; constant",
+                "C": "Increasing; constant",
+                "D": "Declining; declining"
+            },
+            "correct_option_label": "A",
+            "explanation": "Variable costs behave linearly in total but remain constant on a per-unit basis. Fixed costs remain constant in total, causing their per-unit amount to decline as production expands.",
+            "module": 3
+        },
+        {
+            "question_id": "70",
+            "question_text": "Total cost at two activities level are as follows: Total cost for 200 units is Rs. 10000 and total cost for 300 units is Rs. 12000. If High-Low method is followed, the variable cost and fixed cost are _____________ and __________ respectively.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 20 and Rs. 6000",
+                "B": "Rs. 50 and Zero",
+                "C": "Rs. 40 and Rs. 2000",
+                "D": "Rs. 50 and Rs. 2000"
+            },
+            "correct_option_label": "A",
+            "explanation": "1. VC = (12,000 - 10,000) / (300 - 200) = 2,000 / 100 = Rs. 20 per unit. \n2. FC = Total Cost - (VC × Units) = 12,000 - (300 × 20) = 12,000 - 6,000 = Rs. 6000.",
+            "module": 3
+        },
+        {
+            "question_id": "71",
+            "question_text": "A firm sells its product for Rs. 200 per unit and its variable cost is Rs. 80. If the fixed cost is Rs. 300000, how many units the firm should sell to earn a profit of Rs. 300000?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1000 units",
+                "B": "2000 units",
+                "C": "2500 units",
+                "D": "5000 units"
+            },
+            "correct_option_label": "D",
+            "explanation": "Target Volume = (Fixed Cost + Target Profit) / Unit Contribution. \nTarget Units = (300,000 + 300,000) / (200 - 80) = 600,000 / 120 = 5000 units.",
+            "module": 3
+        },
+        {
+            "question_id": "72",
+            "question_text": "A Tea Plantation owner is selling tea leaves at the rate of Rs. 150 per KG in the wholesale auction market. He is now considering to process 30% of the production and sell the same in the retail market. He needs to invest Rs. 20 million for the plant and the cost of capital is 15%. Incremental variable cost is Rs. 30 per KG and fixed cost per year excluding opportunity cost is Rs. 1 million per year. The plant is likely to process 100,000 KG of tea per year. He should charge a minimum price of Rs. _______ for the processed tea.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 150",
+                "B": "Rs. 180",
+                "C": "Rs. 210",
+                "D": "Rs. 220"
+            },
+            "correct_option_label": "D",
+            "explanation": "Cost of Capital = 15% of 20M = 3M. \nTotal Incremental Fixed Cost = 1M + 3M = 4M. \nFixed Cost per unit (for 100,000 KG) = 4,000,000 / 100,000 = Rs. 40. \nTotal Incremental Cost = VC (30) + FC (40) = Rs. 70. \nMinimum Retail Price = Existing Opportunity Sales Price (150) + Incremental Cost (70) = Rs. 220.",
+            "module": 3
+        },
+        {
+            "question_id": "73",
+            "question_text": "Compute the degree of operating leverage, financial leverage and total leverage using the following data: Sales 100; Variable cost Rs 40; Fixed Cost excluding interest Rs. 20; and Interest 10.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1.50, 2.00 and 2.30 respectively",
+                "B": "1.20, 2..00 and 2.40 respectively",
+                "C": "1.50, 1.33 and 2.00 respectively",
+                "D": "1.33, 1.50 and 2.00 respectively"
+            },
+            "correct_option_label": "C",
+            "explanation": "CM = 100 - 40 = 60. PBIT = 60 - 20 = 40. PBT = 40 - 10 = 30. \nDOL = CM/PBIT = 60/40 = 1.50. \nDFL = PBIT/PBT = 40/30 = 1.33. \nTotal Leverage = DOL × DFL = 1.50 × 1.33 = 2.00.",
+            "module": 3
+        },
+        {
+            "question_id": "74",
+            "question_text": "The long-range planning refers to ____________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Draw a path to achieve a goal over the next few years.",
+                "B": "An abstract statement that explains the existence of business.",
+                "C": "Setting up a long-term target for the business.",
+                "D": "All of the above."
+            },
+            "correct_option_label": "A",
+            "explanation": "Long-range planning spans typically 5 to 10 years, detailing the strategic roadmap to move the company toward realizing its overarching vision statement.",
+            "module": 4
+        },
+        {
+            "question_id": "75",
+            "question_text": "The basic difference between budget and standard is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "budgets are prepared for full capacity whereas standards are for achievable capacity",
+                "B": "budget is for aggregate volume whereas standards are cost per unit",
+                "C": "budgets are normally for one year whereas standards for shorter period",
+                "D": "budgets vary from period to period whereas standards are fixed always"
+            },
+            "correct_option_label": "B",
+            "explanation": "Standards are essentially \"budgets for one unit.\" A budget lays out expectations for a total volume of activity, while a standard specifies the cost permitted for a single unit.",
+            "module": 4
+        },
+        {
+            "question_id": "76",
+            "question_text": "Under general variance analysis framework, efficiency variance is equal to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Differences between standard quantity and actual quantity times standard rate",
+                "B": "Differences between standard quantity and actual quantity times actual rate",
+                "C": "Differences between standard rate and actual rate times differences between standard quantity and actual quantity",
+                "D": "Both (a) and (b) can be used"
+            },
+            "correct_option_label": "A",
+            "explanation": "Efficiency (or Usage) variance isolates the impact of consuming more or fewer resources than planned. It is calculated by multiplying the difference in quantities by the fixed standard rate.",
+            "module": 4
+        }
+    ]
+}
