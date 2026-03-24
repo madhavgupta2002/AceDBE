@@ -32,7 +32,7 @@ function computeForSubject(subject: CgpaSubject, input: MarksInput | undefined):
     const letter = marks.gradeOverride;
     const points = gradeFromTotal(
       letter === 'O' ? 91 : letter === 'A' ? 81 : letter === 'B' ? 71 :
-      letter === 'C' ? 61 : letter === 'D' ? 51 : letter === 'E' ? 41 : 0
+        letter === 'C' ? 61 : letter === 'D' ? 51 : letter === 'E' ? 41 : 0
     ).points;
     return {
       isCounted: true,
@@ -233,7 +233,7 @@ export default function CgpaCalculator() {
 
                 {/* Column header row */}
                 <div className="grid gap-0 bg-gray-900/30 border-b border-gray-700/40"
-                  style={{ gridTemplateColumns: '5rem 1fr 2rem 1fr 7rem' }}>
+                  style={{ gridTemplateColumns: '5rem 1fr 2rem 1fr 12rem' }}>
                   {['Code · Subject', '', 'Cr', 'Marks (Internal + Final = Total or Direct)', 'Grade'].map((h, i) => (
                     <div key={i} className="px-3 py-1.5 text-[9px] font-bold text-gray-600 uppercase tracking-widest"
                       style={i === 1 ? { gridColumn: 'span 1' } : {}}>
@@ -279,7 +279,7 @@ export default function CgpaCalculator() {
                           <div
                             key={subject.id}
                             className={`grid items-center hover:bg-gray-900/30 transition-colors ${!isLast ? 'border-b border-gray-700/25' : ''}`}
-                            style={{ gridTemplateColumns: '5rem 1fr 2rem 1fr 7rem' }}
+                            style={{ gridTemplateColumns: '5rem 1fr 2rem 1fr 12rem' }}
                           >
                             {/* Code */}
                             <div className="px-3 py-1.5 text-[10px] font-mono text-gray-500 truncate" title={subject.code}>
@@ -343,33 +343,31 @@ export default function CgpaCalculator() {
                             </div>
 
                             {/* Grade */}
-                            <div className="px-2 py-1.5 flex items-center gap-1.5">
-                              <select
-                                value={input.gradeOverride}
-                                onChange={e => updateMarks(subject.id, { gradeOverride: e.target.value as any })}
-                                className="bg-gray-900 border border-gray-700 focus:outline-none focus:ring-1 focus:ring-indigo-500/70 text-gray-400 rounded px-1.5 py-1 text-xs w-14 transition-colors"
-                                aria-label={`${subject.name} grade override`}
-                              >
-                                <option value="">Auto</option>
-                                {(['O','A','B','C','D','E','F'] as LetterGrade[]).map(g => (
-                                  <option key={g} value={g}>{g}</option>
-                                ))}
-                              </select>
-
-                              {computed.gradeLetter && computed.gradePoints !== null ? (
-                                <span
-                                  className={`text-[10px] font-semibold px-2 py-0.5 rounded border tabular-nums ${
-                                    computed.isOverride
-                                      ? 'border-amber-700/50 bg-amber-950/30 text-amber-300'
-                                      : (GRADE_BADGE[computed.gradeLetter] || 'border-gray-700 bg-gray-900/30 text-gray-400')
-                                  }`}
-                                  title={computed.isOverride ? 'Grade set manually' : 'Computed from marks'}
-                                >
-                                  {computed.gradeLetter} · {computed.gradePoints}
-                                </span>
-                              ) : (
-                                <span className="text-[10px] text-gray-700">—</span>
-                              )}
+                            <div className="px-2 py-1.5 flex items-center">
+                              <div className="flex gap-0.5 items-center">
+                                {(['O', 'A', 'B', 'C', 'D', 'E', 'F'] as LetterGrade[]).map(g => {
+                                  const isSelected = input.gradeOverride === g;
+                                  const isComputedGrade = !input.gradeOverride && computed.gradeLetter === g;
+                                  return (
+                                    <button
+                                      key={g}
+                                      onClick={() => updateMarks(subject.id, { gradeOverride: isSelected ? '' : g })}
+                                      className={`w-[18px] h-[18px] flex items-center justify-center rounded-full border text-[8px] font-bold transition-all ${
+                                        isSelected
+                                          ? 'border-indigo-500 bg-indigo-500/30 text-indigo-300'
+                                          : isComputedGrade
+                                          ? 'border-gray-600 bg-gray-700/30 text-gray-400'
+                                          : 'border-gray-600 bg-gray-900 text-gray-400 hover:border-gray-500 hover:bg-gray-800'
+                                      }`}
+                                      aria-label={`Set ${subject.name} grade to ${g}`}
+                                      type="button"
+                                      title={g}
+                                    >
+                                      {g}
+                                    </button>
+                                  );
+                                })}
+                              </div>
                             </div>
                           </div>
                         );
