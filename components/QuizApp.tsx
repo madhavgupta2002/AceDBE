@@ -18,7 +18,8 @@ import ModuleSelector from './ModuleSelector';
 import SourceSelector from './SourceSelector';
 import UnifiedQuizSelector from './UnifiedQuizSelector';
 import Header from './Header';
-import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube, Search, History, ArrowRightLeft, Check, Download } from 'lucide-react';
+import StopWatch from './StopWatch';
+import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube, Search, History, ArrowRightLeft, Check, Download, Play, Pause } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -78,6 +79,10 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
   const [searchQuery, setSearchQuery] = useState('');
   const [globalAnswersVisible, setGlobalAnswersVisible] = useState(true);
   const [individualAnswersVisible, setIndividualAnswersVisible] = useState<Record<number, boolean>>({});
+
+  // Timer state
+  const [elapsedSeconds, setElapsedSeconds] = useState(0);
+  const [isTimerActive, setIsTimerActive] = useState(false);
 
   // Helper function to create YouTube playlist URL from video links
   const createPlaylistUrl = (videoLinks: string[]): string => {
@@ -153,6 +158,17 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     quizState.selectedAnswer,
   ]);
 
+  // Timer effect - increment elapsed seconds every second while quiz is active
+  useEffect(() => {
+    if (!isTimerActive) return;
+
+    const interval = setInterval(() => {
+      setElapsedSeconds(prev => prev + 1);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [isTimerActive]);
+
   // Auto-start quiz when custom questions are provided
   useEffect(() => {
     if (isCustomMode && customQuestions && quizState.questions.length === 0) {
@@ -182,6 +198,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
       }));
       setQuizCompleted(false);
       setReviseMode(false);
+      setElapsedSeconds(0);
+      setIsTimerActive(true);
     }
   }, [isCustomMode, customQuestions, quizState.questions.length]);
 
@@ -267,6 +285,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
       }));
       setQuizCompleted(false);
       setReviseMode(false);
+      setElapsedSeconds(0);
+      setIsTimerActive(true);
     } catch (error) {
       console.error('Error loading questions:', error);
       alert('Failed to load questions. Please try again.');
@@ -511,6 +531,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
       applyFilters('all', 'all');
     }
     setQuizCompleted(true);
+    setIsTimerActive(false);
   };
 
   const clearResponse = (index: number) => {
@@ -616,6 +637,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     setIndividualAnswersVisible({});
     setSelectedModule('all');
     setSelectedSource('all');
+    setElapsedSeconds(0);
+    setIsTimerActive(false);
   };
 
   // Download/Export current quiz as JSON
@@ -1256,6 +1279,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                   onClearResponse={() => clearResponse(quizState.currentQuestionIndex)}
                   selectedAnswer={quizState.selectedAnswer}
                   showResult={quizState.showResult}
+                  elapsedSeconds={elapsedSeconds}
+                  isTimerActive={isTimerActive}
+                  onToggleTimer={() => setIsTimerActive(!isTimerActive)}
                 />
               </div>
 

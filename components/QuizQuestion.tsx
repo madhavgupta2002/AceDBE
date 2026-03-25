@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { Question } from '@/lib/types';
-import { CheckCircle, XCircle, Check, RotateCcw } from 'lucide-react';
+import { CheckCircle, XCircle, Check, RotateCcw, Play, Pause } from 'lucide-react';
+import StopWatch from './StopWatch';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -14,6 +15,9 @@ interface QuizQuestionProps {
   onClearResponse?: () => void;
   selectedAnswer: string[] | null;
   showResult: boolean;
+  elapsedSeconds?: number;
+  isTimerActive?: boolean;
+  onToggleTimer?: () => void;
 }
 
 const QuizQuestion: React.FC<QuizQuestionProps> = ({
@@ -22,6 +26,9 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   onClearResponse,
   selectedAnswer,
   showResult,
+  elapsedSeconds = 0,
+  isTimerActive = false,
+  onToggleTimer,
 }) => {
   const isMultipleAnswer = question.correctAnswer.length > 1;
   const isSubjective = question.isSubjective || Object.keys(question.options).length === 0;
@@ -88,7 +95,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
     return (
       <div className="w-full max-w-3xl mx-auto">
         <div className="flex flex-wrap items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
-          <div className="flex flex-wrap gap-1.5 sm:gap-2">
+          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
             <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-yellow-900/50 text-yellow-300 border border-yellow-800 text-xs font-semibold rounded">
               Subjective
             </span>
@@ -102,6 +109,17 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
                 {question.source}
               </span>
             )}
+            <button
+              onClick={onToggleTimer}
+              className={`inline-flex items-center gap-1 px-1.5 py-1 rounded transition-all ${isTimerActive
+                ? 'bg-red-900/40 text-red-400 hover:bg-red-900/60'
+                : 'bg-green-900/40 text-green-400 hover:bg-green-900/60'
+              }`}
+              title={isTimerActive ? 'Pause timer' : 'Start timer'}
+            >
+              <StopWatch elapsedSeconds={elapsedSeconds} isActive={isTimerActive} />
+              {isTimerActive ? <Pause size={12} /> : <Play size={12} />}
+            </button>
           </div>
 
           {onClearResponse && selectedAnswer && (
@@ -164,7 +182,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   return (
     <div className="w-full max-w-3xl mx-auto">
       <div className="flex flex-wrap items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
-        <div className="flex flex-wrap gap-1.5 sm:gap-2">
+        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
           {isMultipleAnswer && (
             <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-amber-900/50 text-amber-300 border border-amber-800 text-xs font-semibold rounded">
               Multiple Correct
@@ -180,6 +198,17 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
               {question.source}
             </span>
           )}
+          <button
+            onClick={onToggleTimer}
+            className={`inline-flex items-center gap-1 px-1.5 py-1 rounded transition-all ${isTimerActive
+              ? 'bg-red-900/40 text-red-400 hover:bg-red-900/60'
+              : 'bg-green-900/40 text-green-400 hover:bg-green-900/60'
+            }`}
+            title={isTimerActive ? 'Pause timer' : 'Start timer'}
+          >
+            <StopWatch elapsedSeconds={elapsedSeconds} isActive={isTimerActive} />
+            {isTimerActive ? <Pause size={12} /> : <Play size={12} />}
+          </button>
         </div>
 
         {onClearResponse && selectedAnswer && (
