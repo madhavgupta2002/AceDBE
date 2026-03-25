@@ -352,13 +352,12 @@ export default function CgpaCalculator() {
                                     <button
                                       key={g}
                                       onClick={() => updateMarks(subject.id, { gradeOverride: isSelected ? '' : g })}
-                                      className={`w-[18px] h-[18px] flex items-center justify-center rounded-full border text-[8px] font-bold transition-all ${
-                                        isSelected
+                                      className={`w-[18px] h-[18px] flex items-center justify-center rounded-full border text-[8px] font-bold transition-all ${isSelected
                                           ? 'border-indigo-500 bg-indigo-500/30 text-indigo-300'
                                           : isComputedGrade
-                                          ? 'border-gray-600 bg-gray-700/30 text-gray-400'
-                                          : 'border-gray-600 bg-gray-900 text-gray-400 hover:border-gray-500 hover:bg-gray-800'
-                                      }`}
+                                            ? 'border-gray-600 bg-gray-700/30 text-gray-400'
+                                            : 'border-gray-600 bg-gray-900 text-gray-400 hover:border-gray-500 hover:bg-gray-800'
+                                        }`}
                                       aria-label={`Set ${subject.name} grade to ${g}`}
                                       type="button"
                                       title={g}
