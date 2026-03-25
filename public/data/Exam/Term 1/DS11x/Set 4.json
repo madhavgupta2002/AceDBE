@@ -1,0 +1,498 @@
+{
+    "exam_metadata": {
+        "subject_name": "Business Statistics for Entrepreneurs",
+        "exam_date": "1 February 2026"
+    },
+    "questions": [
+        {
+            "question_id": "582113212",
+            "question_text": "The data corresponding to the total one-year return, in percent, for 9 midcap mutual funds are as follows: 0.7, 0.8, 0.1, -0.7, -0.7, 1.6, 0.2, -0.5, and -0.4. The median for this data is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between -0.5 and 0",
+                "B": "Between 0 and 0.5",
+                "C": "Between -1 and -0.5",
+                "D": "Between 0.5 and 1"
+            },
+            "correct_option_label": "B",
+            "explanation": "To find the median, we first sort the data in ascending order:\n-0.7, -0.7, -0.5, -0.4, 0.1, 0.2, 0.7, 0.8, 1.6.\n\nSince there are n = 9 observations (an odd number), the median is the exact middle value.\nLocation of median = (n + 1) / 2 = (9 + 1) / 2 = 5th position.\n\nThe 5th value in the sorted dataset is 0.1.\n\n0.1 falls between 0 and 0.5.",
+            "module": 1
+        },
+        {
+            "question_id": "582113213",
+            "question_text": "The data corresponding to the total one-year return, in percent, for 9 midcap mutual funds are as follows: 0.7, 0.8, 0.1, -0.7, -0.7, 1.6, 0.2, -0.5, and -0.4.\n\nThe 60th percentile for this data is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.5",
+                "B": "Between -1 and -0.5",
+                "C": "Between -0.5 and 0",
+                "D": "Between 0.5 and 1"
+            },
+            "correct_option_label": "A",
+            "explanation": "Using the sorted data from the previous question:\n-0.7, -0.7, -0.5, -0.4, 0.1, 0.2, 0.7, 0.8, 1.6.\n\nTo find the 60th percentile (p = 60) for n = 9 observations, we use the location formula:\nL_p = (p / 100) * (n + 1)\nL_60 = (60 / 100) * (9 + 1) = 0.60 * 10 = 6.\n\nThe 6th value in the sorted dataset is 0.2.\n\n0.2 falls between 0 and 0.5.",
+            "module": 1
+        },
+        {
+            "question_id": "582113214",
+            "question_text": "The data corresponding to the total one-year return, in percent, for 9 midcap mutual funds are as follows: 0.7, 0.8, 0.1, -0.7, -0.7, 1.6, 0.2, -0.5, and -0.4.\n\nThe mode for this data is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between -0.5 and 0",
+                "B": "Between 0 and 0.5",
+                "C": "Between 0.5 and 1",
+                "D": "Between -1 and -0.5"
+            },
+            "correct_option_label": "D",
+            "explanation": "The mode is the measure of central tendency representing the value that occurs with the greatest frequency.\n\nIn the given dataset:\n0.7 occurs 1 time\n0.8 occurs 1 time\n0.1 occurs 1 time\n-0.7 occurs 2 times\n1.6 occurs 1 time\n0.2 occurs 1 time\n-0.5 occurs 1 time\n-0.4 occurs 1 time\n\nThe value -0.7 has the highest frequency (2).\nTherefore, Mode = -0.7.\n\n-0.7 falls between -1 and -0.5.",
+            "module": 1
+        },
+        {
+            "question_id": "582113215",
+            "question_text": "For events A, B, and C, P(A) = 0.15, P(B)=0.1, P(C) = 0.51, P(A and C) = 0.05, P(B and C) = 0.03, and A and B are mutually exclusive events. Then P(A or C) is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.25 and 0.5",
+                "B": "Between 0.75 and 1.0",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0 and 0.25"
+            },
+            "correct_option_label": "C",
+            "explanation": "To find P(A or C), we use the Addition Law of probability:\nP(A \\cup C) = P(A) + P(C) - P(A \\cap C)\n\nSubstituting the given values into the formula:\nP(A \\cup C) = 0.15 + 0.51 - 0.05\nP(A \\cup C) = 0.66 - 0.05 = 0.61\n\n0.61 falls between 0.5 and 0.75.",
+            "module": 2
+        },
+        {
+            "question_id": "582113216",
+            "question_text": "For events A, B, and C, P(A) = 0.15, P(B)=0.1, P(C) = 0.51, P(A and C) = 0.05, P(B and C) = 0.03, and A and B are mutually exclusive events.\n\nThen P(C given A) is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.5 and 0.75",
+                "B": "Between 0.75 and 1.0",
+                "C": "Between 0 and 0.25",
+                "D": "Between 0.25 and 0.5"
+            },
+            "correct_option_label": "D",
+            "explanation": "We are asked to calculate the conditional probability P(C | A).\n\nThe formula for conditional probability is:\nP(C | A) = P(C \\cap A) / P(A)\n\nFrom the given data:\nP(A and C) = 0.05\nP(A) = 0.15\n\nSubstitute the values:\nP(C | A) = 0.05 / 0.15 = 1 / 3 \\approx 0.3333.\n\n0.3333 falls between 0.25 and 0.5.",
+            "module": 2
+        },
+        {
+            "question_id": "582113217",
+            "question_text": "For events A, B, and C, P(A) = 0.15, P(B)=0.1, P(C) = 0.51, P(A and C) = 0.05, P(B and C) = 0.03, and A and B are mutually exclusive events.\n\nThen P(B given C) is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.25 and 0.5",
+                "B": "Between 0.5 and 0.75",
+                "C": "Between 0.75 and 1.0",
+                "D": "Between 0 and 0.25"
+            },
+            "correct_option_label": "D",
+            "explanation": "We are asked to calculate the conditional probability P(B | C).\n\nThe formula for conditional probability is:\nP(B | C) = P(B \\cap C) / P(C)\n\nFrom the given data:\nP(B and C) = 0.03\nP(C) = 0.51\n\nSubstitute the values:\nP(B | C) = 0.03 / 0.51 = 1 / 17 \\approx 0.0588.\n\n0.0588 falls between 0 and 0.25.",
+            "module": 2
+        },
+        {
+            "question_id": "582113218",
+            "question_text": "In a survey of 75 people, surveyors asked two questions: (i) do you have a computer and home and (ii) do you have a scientific calculator at home. Of the 49 respondents that said that they have a computer at home 46 responded yes to both. Fifteen respondents said that they neither have a computer nor a scientific calculator at home. If a respondent is chosen at random has a scientific calculator at home, what is the probability that the respondent does not have a computer at home?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.75 and 1.0",
+                "B": "Between 0.5 and 0.75",
+                "C": "Between 0.25 and 0.5",
+                "D": "Between 0 and 0.25"
+            },
+            "correct_option_label": "D",
+            "explanation": "Let C be the event of having a computer, and S be the event of having a scientific calculator.\nTotal respondents (n) = 75.\nRespondents with neither = 15.\nTherefore, respondents with at least one (C \\cup S) = 75 - 15 = 60.\n\nWe are given:\n|C| = 49 (Total with a computer)\n|C \\cap S| = 46 (Total with both)\n\nUsing the Addition Law to find total with a scientific calculator |S|:\n|C \\cup S| = |C| + |S| - |C \\cap S|\n60 = 49 + |S| - 46\n60 = 3 + |S| \\implies |S| = 57.\n\nWe need the probability that the respondent does NOT have a computer, GIVEN they have a scientific calculator: P(C' | S).\nP(C' | S) = P(C' \\cap S) / P(S)\n\nThe number of people with a scientific calculator but NO computer is:\n|C' \\cap S| = |S| - |C \\cap S| = 57 - 46 = 11.\n\nSo, P(C' | S) = 11 / 57 \\approx 0.1930.\n\n0.1930 falls between 0 and 0.25.",
+            "module": 2
+        },
+        {
+            "question_id": "582113219",
+            "question_text": "In a survey of 75 people, surveyors asked two questions: (i) do you have a computer and home and (ii) do you have a scientific calculator at home. Of the 49 respondents that said that they have a computer at home 46 responded yes to both. Fifteen respondents said that they neither have a computer nor a scientific calculator at home. \n\nIf a respondent is chosen at random, what is the probability that the respondent has either a scientific calculator or a computer at home, but not both?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.5 and 0.75",
+                "B": "Between 0.75 and 1.0",
+                "C": "Between 0.25 and 0.5",
+                "D": "Between 0 and 0.25"
+            },
+            "correct_option_label": "D",
+            "explanation": "We need the probability of having exactly one of the two devices (symmetric difference).\n\nTotal respondents with at least one device: |C \\cup S| = 60.\nTotal respondents with both devices: |C \\cap S| = 46.\n\nTotal respondents with exactly one device:\n|C \\cup S| - |C \\cap S| = 60 - 46 = 14.\n\nProbability = 14 / 75 \\approx 0.1867.\n\n0.1867 falls between 0 and 0.25.",
+            "module": 2
+        },
+        {
+            "question_id": "582113220",
+            "question_text": "In a survey of 75 people, surveyors asked two questions: (i) do you have a computer and home and (ii) do you have a scientific calculator at home. Of the 49 respondents that said that they have a computer at home 46 responded yes to both. Fifteen respondents said that they neither have a computer nor a scientific calculator at home. \n\nIf a respondent is chosen at random, what is the probability that the respondent does not have a computer at home?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.75 and 1.0",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.25 and 0.5"
+            },
+            "correct_option_label": "D",
+            "explanation": "We need the marginal probability of a respondent not having a computer P(C').\n\nTotal respondents = 75.\nRespondents with a computer |C| = 49.\nRespondents without a computer |C'| = 75 - 49 = 26.\n\nProbability P(C') = 26 / 75 \\approx 0.3467.\n\n0.3467 falls between 0.25 and 0.5.",
+            "module": 2
+        },
+        {
+            "question_id": "582113221",
+            "question_text": "The number of flaws in a porcelain cup can take values of 0, 1, 2, 3, or 4 with probability of 0.35, 0.45, 0.13, 0.03 and 0.04 respectively. The expected value for the number of flaws in a cup is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.5 and 1.0",
+                "B": "Between 0 and 0.5",
+                "C": "Between 1.0 and 1.5",
+                "D": "Between 1.5 and 2"
+            },
+            "correct_option_label": "A",
+            "explanation": "This represents a discrete probability distribution. The expected value (Mean), E[X], is calculated by the formula:\nE[X] = \\sum [x \\cdot P(x)]\n\nE[X] = (0 * 0.35) + (1 * 0.45) + (2 * 0.13) + (3 * 0.03) + (4 * 0.04)\nE[X] = 0 + 0.45 + 0.26 + 0.09 + 0.16\nE[X] = 0.96\n\n0.96 falls between 0.5 and 1.0.",
+            "module": 3
+        },
+        {
+            "question_id": "582113222",
+            "question_text": "The number of flaws in a porcelain cup can take values of 0, 1, 2, 3, or 4 with probability of 0.35, 0.45, 0.13, 0.03 and 0.04 respectively.\n\nThe variance for the number of flaws in a cup is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 1.0 and 1.5",
+                "B": "Between 0.5 and 1.0",
+                "C": "Between 1.5 and 2",
+                "D": "Between 0 and 0.5"
+            },
+            "correct_option_label": "B",
+            "explanation": "The variance for a discrete random variable is given by:\nVar(X) = E[X^2] - (E[X])^2\n\nFirst, we calculate E[X^2]:\nE[X^2] = \\sum [x^2 \\cdot P(x)]\nE[X^2] = (0^2 * 0.35) + (1^2 * 0.45) + (2^2 * 0.13) + (3^2 * 0.03) + (4^2 * 0.04)\nE[X^2] = 0 + 0.45 + (4 * 0.13) + (9 * 0.03) + (16 * 0.04)\nE[X^2] = 0 + 0.45 + 0.52 + 0.27 + 0.64 = 1.88\n\nWe know from the previous calculation that E[X] = 0.96.\nVar(X) = 1.88 - (0.96)^2\nVar(X) = 1.88 - 0.9216 = 0.9584\n\n0.9584 falls between 0.5 and 1.0.",
+            "module": 3
+        },
+        {
+            "question_id": "582113223",
+            "question_text": "The number of flaws in a porcelain cup can take values of 0, 1, 2, 3, or 4 with probability of 0.35, 0.45, 0.13, 0.03 and 0.04 respectively.\n\nThe 80th percentile for the number of flaws in a cup is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "3",
+                "B": "2",
+                "C": "1",
+                "D": "0"
+            },
+            "correct_option_label": "C",
+            "explanation": "To find the 80th percentile, we accumulate the probabilities (CDF) until the sum reaches or exceeds 0.80.\n\nP(X \\le 0) = 0.35\nP(X \\le 1) = 0.35 + 0.45 = 0.80\n\nSince the cumulative probability at exactly X = 1 reaches 0.80, the 80th percentile is 1.",
+            "module": 3
+        },
+        {
+            "question_id": "582113224",
+            "question_text": "A government study shows that the daily consumption of power for a household is random with mean of 10 kwh and a standard deviation of 2 kwh. If power consumption on different days are independent, the standard deviation of total power consumption of power by a household over a 30-day period is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 3 and 6",
+                "B": "Less than 3",
+                "C": "Between 6 and 9",
+                "D": "Greater than 9"
+            },
+            "correct_option_label": "D",
+            "explanation": "Let X_i be the daily power consumption. The total consumption over 30 days is S = \\sum X_i, where n = 30.\nSince daily consumptions are independent identically distributed variables, the variance of the sum is the sum of the variances:\nVar(S) = n \\cdot \\sigma^2 = 30 \\cdot (2^2) = 30 \\cdot 4 = 120.\n\nThe standard deviation of the total consumption is:\nSD(S) = \\sqrt{120} \\approx 10.954 kwh.\n\n10.954 is greater than 9.",
+            "module": 2
+        },
+        {
+            "question_id": "582113225",
+            "question_text": "A government study shows that the daily consumption of power for a household is random with mean of 10 kwh and a standard deviation of 2 kwh. \n\nThe coefficient of variation of total power consumption of power by a household over a 30-day period is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.50 and 0.75",
+                "B": "Between 0.25 and 0.50",
+                "C": "Greater than 1",
+                "D": "Less than 0.25"
+            },
+            "correct_option_label": "D",
+            "explanation": "The coefficient of variation (CV) is the ratio of the standard deviation to the mean.\nFor the total power consumption S:\nMean E(S) = n \\cdot \\mu = 30 \\cdot 10 = 300 kwh.\nStandard deviation SD(S) = \\sqrt{n} \\cdot \\sigma = \\sqrt{30} \\cdot 2 \\approx 10.954 kwh.\n\nCV(S) = SD(S) / E(S) = 10.954 / 300 \\approx 0.0365.\n\n0.0365 is less than 0.25.",
+            "module": 2
+        },
+        {
+            "question_id": "582113226",
+            "question_text": "A government study shows that the daily consumption of power for a household is random with mean of 10 kwh and a standard deviation of 2 kwh. \n\nThe standard deviation of average power consumption of power by a household over a 30-day period is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Greater than 9",
+                "B": "Between 6 and 9",
+                "C": "Less than 3",
+                "D": "Between 3 and 6"
+            },
+            "correct_option_label": "C",
+            "explanation": "Let \\bar{X} be the average power consumption over n = 30 days.\nThe standard deviation of the average of n independent variables is given by:\nSD(\\bar{X}) = \\sigma / \\sqrt{n}\n\nSD(\\bar{X}) = 2 / \\sqrt{30} \\approx 2 / 5.477 \\approx 0.365 kwh.\n\n0.365 is less than 3.",
+            "module": 2
+        },
+        {
+            "question_id": "582113227",
+            "question_text": "A government study shows that the daily consumption of power for a household is random with mean of 10 kwh and a standard deviation of 2 kwh. \n\nThe coefficient of variation of average power consumption of power by a household over a 30-day period is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Less than 0.25",
+                "B": "Greater than 1",
+                "C": "Between 0.25 and 0.50",
+                "D": "Between 0.50 and 0.75"
+            },
+            "correct_option_label": "A",
+            "explanation": "The coefficient of variation (CV) is the ratio of the standard deviation to the mean.\nFor the average power consumption \\bar{X}:\nMean E(\\bar{X}) = \\mu = 10 kwh.\nStandard deviation SD(\\bar{X}) = \\sigma / \\sqrt{n} = 2 / \\sqrt{30} \\approx 0.365 kwh.\n\nCV(\\bar{X}) = SD(\\bar{X}) / E(\\bar{X}) = 0.365 / 10 = 0.0365.\n\n0.0365 is less than 0.25.",
+            "module": 2
+        },
+        {
+            "question_id": "582113228",
+            "question_text": "A survey revealed that 40% of all households are satisfied with their primary financial institution. Suppose a sample of 8 households is chosen for further study. The probability that exactly 6 households of these 8 households are not satisfied with their primary financial institution is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.75 and 1.0",
+                "B": "Between 0 and 0.25",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.25 and 0.5"
+            },
+            "correct_option_label": "B",
+            "explanation": "We use the Binomial distribution, as there is a fixed number of independent trials (n=8) and two outcomes (satisfied/not satisfied).\nThe probability of a household being satisfied is 0.40.\nTherefore, the probability of a household being NOT satisfied is p = 1 - 0.40 = 0.60.\n\nLet Y be the number of households that are not satisfied. We want P(Y = 6):\nP(Y = y) = \\binom{n}{y} p^y (1-p)^{n-y}\nP(Y = 6) = \\binom{8}{6} (0.60)^6 (0.40)^2\n\n\\binom{8}{6} = 28\n(0.60)^6 \\approx 0.046656\n(0.40)^2 = 0.16\n\nP(Y = 6) = 28 \\cdot 0.046656 \\cdot 0.16 \\approx 0.2090.\n\n0.2090 falls between 0 and 0.25.",
+            "module": 3
+        },
+        {
+            "question_id": "582113229",
+            "question_text": "A survey revealed that 40% of all households are satisfied with their primary financial institution. Suppose a sample of 8 households is chosen for further study.\n\nThe probability that at least 2 households of these 8 households are satisfied with their primary financial institution is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.5 and 0.75",
+                "B": "Between 0 and 0.25",
+                "C": "Between 0.75 and 1.0",
+                "D": "Between 0.25 and 0.5"
+            },
+            "correct_option_label": "C",
+            "explanation": "Using the Binomial distribution where \"success\" is being satisfied.\np = 0.40, n = 8.\nWe want P(Y \\ge 2) = 1 - [P(Y = 0) + P(Y = 1)].\n\nP(Y = 0) = \\binom{8}{0} (0.4)^0 (0.6)^8 = 1 \\cdot 1 \\cdot 0.016796 = 0.0168\nP(Y = 1) = \\binom{8}{1} (0.4)^1 (0.6)^7 = 8 \\cdot 0.4 \\cdot 0.0279936 = 0.08958\n\nP(Y \\le 1) = 0.0168 + 0.08958 = 0.10638.\nP(Y \\ge 2) = 1 - 0.10638 = 0.89362.\n\n0.8936 falls between 0.75 and 1.0.",
+            "module": 3
+        },
+        {
+            "question_id": "582113230",
+            "question_text": "A survey revealed that 40% of all households are satisfied with their primary financial institution. Suppose a sample of 8 households is chosen for further study.\n\nThe probability that at most 3 households of these 8 households are satisfied with their primary financial institution is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.25 and 0.5",
+                "B": "Between 0.5 and 0.75",
+                "C": "Between 0.75 and 1.0",
+                "D": "Between 0 and 0.25"
+            },
+            "correct_option_label": "B",
+            "explanation": "Using the Binomial distribution with p = 0.40, n = 8.\nWe want P(Y \\le 3) = P(Y = 0) + P(Y = 1) + P(Y = 2) + P(Y = 3).\n\nFrom previous calculations:\nP(Y = 0) \\approx 0.0168\nP(Y = 1) \\approx 0.0896\n\nCalculating the rest:\nP(Y = 2) = \\binom{8}{2} (0.4)^2 (0.6)^6 = 28 \\cdot 0.16 \\cdot 0.046656 \\approx 0.2090\nP(Y = 3) = \\binom{8}{3} (0.4)^3 (0.6)^5 = 56 \\cdot 0.064 \\cdot 0.07776 \\approx 0.2787\n\nSumming these up:\nP(Y \\le 3) = 0.0168 + 0.0896 + 0.2090 + 0.2787 = 0.5941.\n\n0.5941 falls between 0.5 and 0.75.",
+            "module": 3
+        },
+        {
+            "question_id": "582113231",
+            "question_text": "A survey revealed that 40% of all households are satisfied with their primary financial institution. Suppose a sample of 8 households is chosen for further study.\n\nThe probability that exactly 5 households of these 8 households are satisfied with their primary financial institution is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.5 and 0.75",
+                "B": "Between 0 and 0.25",
+                "C": "Between 0.75 and 1.0",
+                "D": "Between 0.25 and 0.5"
+            },
+            "correct_option_label": "B",
+            "explanation": "Using the Binomial distribution with p = 0.40, n = 8.\nWe want P(Y = 5):\n\nP(Y = 5) = \\binom{8}{5} (0.4)^5 (0.6)^3\n\\binom{8}{5} = \\binom{8}{3} = 56\n(0.4)^5 = 0.01024\n(0.6)^3 = 0.216\n\nP(Y = 5) = 56 \\cdot 0.01024 \\cdot 0.216 \\approx 0.1239.\n\n0.1239 falls between 0 and 0.25.",
+            "module": 3
+        },
+        {
+            "question_id": "582113232",
+            "question_text": "At State Bank of India, the number of customers arriving in 1-hour interval is random with a mean of 6. What is the probability that at least 2 customers arrive in a 1-hour interval?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.75 and 1.0",
+                "C": "Between 0.25 and 0.5",
+                "D": "Between 0.5 and 0.75"
+            },
+            "correct_option_label": "B",
+            "explanation": "We use the Poisson distribution since it models the number of occurrences over a specified time interval.\nThe rate for 1 hour is \\lambda = 6.\nWe want P(Y \\ge 2) = 1 - [P(Y = 0) + P(Y = 1)].\n\nP(Y = y) = (e^{-\\lambda} \\cdot \\lambda^y) / y!\nP(Y = 0) = (e^{-6} \\cdot 6^0) / 0! = e^{-6} \\approx 0.002479\nP(Y = 1) = (e^{-6} \\cdot 6^1) / 1! = 6 \\cdot e^{-6} \\approx 0.014873\n\nP(Y \\le 1) = 0.002479 + 0.014873 = 0.017352\nP(Y \\ge 2) = 1 - 0.017352 = 0.982648.\n\n0.9826 falls between 0.75 and 1.0.",
+            "module": 3
+        },
+        {
+            "question_id": "582113233",
+            "question_text": "At State Bank of India, the number of customers arriving in 1-hour interval is random with a mean of 6.\n\nWhat is the probability that exactly 4 customers arrive in a 30 min interval?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.5 and 0.75",
+                "C": "Between 0.25 and 0.5",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "A",
+            "explanation": "We use the Poisson distribution and adjust the mean for the 30-minute interval.\nSince the mean is 6 per 60 mins, the mean for 30 mins is \\lambda = 6 \\cdot (30 / 60) = 3.\nWe want P(Y = 4):\n\nP(Y = 4) = (e^{-3} \\cdot 3^4) / 4!\nP(Y = 4) = (0.049787 \\cdot 81) / 24\nP(Y = 4) \\approx 4.03275 / 24 \\approx 0.1680.\n\n0.1680 falls between 0 and 0.25.",
+            "module": 3
+        },
+        {
+            "question_id": "582113234",
+            "question_text": "At State Bank of India, the number of customers arriving in 1-hour interval is random with a mean of 6.\n\nWhat is the probability that at most 3 customers arrive in a 30 min interval?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.75 and 1.0",
+                "B": "Between 0 and 0.25",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.25 and 0.5"
+            },
+            "correct_option_label": "C",
+            "explanation": "Using the Poisson distribution with the adjusted mean \\lambda = 3 (for a 30-minute interval).\nWe want P(Y \\le 3) = P(Y = 0) + P(Y = 1) + P(Y = 2) + P(Y = 3).\n\nP(Y = 0) = (e^{-3} \\cdot 3^0) / 0! \\approx 0.0498\nP(Y = 1) = (e^{-3} \\cdot 3^1) / 1! \\approx 0.1494\nP(Y = 2) = (e^{-3} \\cdot 3^2) / 2! \\approx 0.2240\nP(Y = 3) = (e^{-3} \\cdot 3^3) / 3! \\approx 0.2240\n\nP(Y \\le 3) = 0.0498 + 0.1494 + 0.2240 + 0.2240 = 0.6472.\n\n0.6472 falls between 0.5 and 0.75.",
+            "module": 3
+        },
+        {
+            "question_id": "582113235",
+            "question_text": "At State Bank of India, the number of customers arriving in 1-hour interval is random with a mean of 6.\n\nWhat is the probability that at least 4 but no more than 6 customers arrive in a 1-hour interval?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.75 and 1.0",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0 and 0.25"
+            },
+            "correct_option_label": "B",
+            "explanation": "Using the Poisson distribution with the original mean \\lambda = 6 (for a 1-hour interval).\nWe want P(4 \\le Y \\le 6) = P(Y = 4) + P(Y = 5) + P(Y = 6).\n\nP(Y = 4) = (e^{-6} \\cdot 6^4) / 4! = (0.002479 \\cdot 1296) / 24 \\approx 0.1339\nP(Y = 5) = (e^{-6} \\cdot 6^5) / 5! = (0.002479 \\cdot 7776) / 120 \\approx 0.1606\nP(Y = 6) = (e^{-6} \\cdot 6^6) / 6! = (0.002479 \\cdot 46656) / 720 \\approx 0.1606\n\nP(4 \\le Y \\le 6) = 0.1339 + 0.1606 + 0.1606 = 0.4551.\n\n0.4551 falls between 0.25 and 0.5.",
+            "module": 3
+        },
+        {
+            "question_id": "582113236",
+            "question_text": "Maintenance data shows that the time between failures of a medical scanning equipment is random with a mean of 75 days. The probability that the equipment is available for a continuous period of at least 90 days before repair is needed is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.75 and 1.0",
+                "C": "Between 0.25 and 0.5",
+                "D": "Between 0.5 and 0.75"
+            },
+            "correct_option_label": "C",
+            "explanation": "We use the Exponential distribution, which models the time between random events (failures).\nThe mean time between failures is \\mu = 75 days, so the rate parameter \\lambda = 1/\\mu = 1/75.\n\nWe want to find the tail probability, P(X \\ge 90):\nP(X \\ge x) = e^{-\\lambda x}\nP(X \\ge 90) = e^{-90 / 75} = e^{-1.2}\n\ne^{-1.2} \\approx 0.3012.\n\n0.3012 falls between 0.25 and 0.5.",
+            "module": 4
+        },
+        {
+            "question_id": "582113237",
+            "question_text": "Maintenance data shows that the time between failures of a medical scanning equipment is random with a mean of 75 days.\n\nThe probability that the time between failures is less than 60 days is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.5 and 0.75",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0 and 0.25",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "A",
+            "explanation": "Using the Exponential distribution with \\lambda = 1/75.\nWe want the cumulative distribution probability P(X < 60):\n\nP(X < x) = 1 - e^{-\\lambda x}\nP(X < 60) = 1 - e^{-60 / 75} = 1 - e^{-0.8}\n\nSince e^{-0.8} \\approx 0.4493:\nP(X < 60) = 1 - 0.4493 = 0.5507.\n\n0.5507 falls between 0.5 and 0.75.",
+            "module": 4
+        },
+        {
+            "question_id": "582113238",
+            "question_text": "Maintenance data shows that the time between failures of a medical scanning equipment is random with a mean of 75 days.\n\nThe probability that the time between failures is at least 60 days but no more than 90 days is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.5 and 0.75",
+                "B": "Between 0.75 and 1.0",
+                "C": "Between 0 and 0.25",
+                "D": "Between 0.25 and 0.5"
+            },
+            "correct_option_label": "C",
+            "explanation": "Using the Exponential distribution with \\lambda = 1/75.\nWe want P(60 \\le X \\le 90).\nThis can be calculated as P(X \\ge 60) - P(X \\ge 90).\n\nFrom previous calculations:\nP(X \\ge 60) = e^{-60/75} = e^{-0.8} \\approx 0.4493\nP(X \\ge 90) = e^{-90/75} = e^{-1.2} \\approx 0.3012\n\nP(60 \\le X \\le 90) = 0.4493 - 0.3012 = 0.1481.\n\n0.1481 falls between 0 and 0.25.",
+            "module": 4
+        },
+        {
+            "question_id": "582113239",
+            "question_text": "Maintenance data shows that the time between failures of a medical scanning equipment is random with a mean of 75 days.\n\nThe 80th percentile of the time between failures is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "More than 105",
+                "B": "Less than 35",
+                "C": "Between 35 and 70",
+                "D": "Between 70 and 105"
+            },
+            "correct_option_label": "A",
+            "explanation": "We need to find the value x such that the cumulative probability P(X \\le x) is 0.80.\n\n1 - e^{-x / 75} = 0.80\ne^{-x / 75} = 0.20\n\nTaking the natural logarithm of both sides:\n-x / 75 = \\ln(0.20)\n-x / 75 \\approx -1.6094\nx = 75 \\cdot 1.6094 = 120.705 days.\n\n120.705 is more than 105.",
+            "module": 4
+        },
+        {
+            "question_id": "582113240",
+            "question_text": "At the ATM in the lobby of the corporate office building, customers arrive in a random manner with a rate of 6 per hour. The probability of having an interval of 15 minutes or more with no customer arrival is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.75 and 1.0",
+                "B": "Between 0.5 and 0.75",
+                "C": "Between 0.25 and 0.5",
+                "D": "Between 0 and 0.25"
+            },
+            "correct_option_label": "D",
+            "explanation": "This follows an Exponential distribution for the time between arrivals since arrivals are a Poisson process.\nThe rate is \\lambda = 6 customers per hour.\nThe time interval we are querying is 15 minutes, which is 15 / 60 = 0.25 hours.\n\nWe want the probability that the time between arrivals (X) is at least 0.25 hours:\nP(X \\ge 0.25) = e^{-\\lambda x}\nP(X \\ge 0.25) = e^{-6 \\cdot 0.25} = e^{-1.5}\n\ne^{-1.5} \\approx 0.2231.\n\n0.2231 falls between 0 and 0.25.",
+            "module": 4
+        },
+        {
+            "question_id": "582113241",
+            "question_text": "At the ATM in the lobby of the corporate office building, customers arrive in a random manner with a rate of 6 per hour.\n\nThe probability of at least 4 customers arriving in a 1-hour interval is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.5 and 0.75",
+                "C": "Between 0.25 and 0.5",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "D",
+            "explanation": "This models the number of events in an interval, so we use the Poisson distribution with \\lambda = 6.\nWe want P(Y \\ge 4) = 1 - [P(Y = 0) + P(Y = 1) + P(Y = 2) + P(Y = 3)].\n\nP(Y = y) = (e^{-6} \\cdot 6^y) / y!\nP(Y = 0) = e^{-6} \\approx 0.002479\nP(Y = 1) = 6 \\cdot e^{-6} \\approx 0.014873\nP(Y = 2) = (36/2) \\cdot e^{-6} = 18 \\cdot e^{-6} \\approx 0.044618\nP(Y = 3) = (216/6) \\cdot e^{-6} = 36 \\cdot e^{-6} \\approx 0.089235\n\nP(Y \\le 3) = 0.002479 + 0.014873 + 0.044618 + 0.089235 = 0.1512\nP(Y \\ge 4) = 1 - 0.1512 = 0.8488.\n\n0.8488 falls between 0.75 and 1.0.",
+            "module": 3
+        },
+        {
+            "question_id": "582113242",
+            "question_text": "At the ATM in the lobby of the corporate office building, customers arrive in a random manner with a rate of 6 per hour.\n\nThe probability of having at least 4 but no more than 8 customers arriving in a 1-hour interval is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.75 and 1.0",
+                "D": "Between 0.5 and 0.75"
+            },
+            "correct_option_label": "D",
+            "explanation": "Using the Poisson distribution with \\lambda = 6.\nWe want P(4 \\le Y \\le 8) = P(Y = 4) + P(Y = 5) + P(Y = 6) + P(Y = 7) + P(Y = 8).\n\nP(Y = 4) = (e^{-6} \\cdot 6^4) / 4! \\approx 0.13385\nP(Y = 5) = (e^{-6} \\cdot 6^5) / 5! \\approx 0.16062\nP(Y = 6) = (e^{-6} \\cdot 6^6) / 6! \\approx 0.16062\nP(Y = 7) = (e^{-6} \\cdot 6^7) / 7! \\approx 0.13768\nP(Y = 8) = (e^{-6} \\cdot 6^8) / 8! \\approx 0.10326\n\nSumming these probabilities:\nP(4 \\le Y \\le 8) = 0.13385 + 0.16062 + 0.16062 + 0.13768 + 0.10326 = 0.69603.\n\n0.6960 falls between 0.5 and 0.75.",
+            "module": 3
+        },
+        {
+            "question_id": "582113243",
+            "question_text": "The weight of domestic adult cats is Normally distributed with mean of 5 kgs and standard deviation of 0.5 kgs. The probability of a cat weighing more than 4.2 kgs is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.75 and 1.0",
+                "B": "Between 0.5 and 0.75",
+                "C": "Between 0.25 and 0.5",
+                "D": "Between 0 and 0.25"
+            },
+            "correct_option_label": "A",
+            "explanation": "This specifies a Normal distribution with \\mu = 5 and \\sigma = 0.5.\nWe want to find P(X > 4.2).\n\nFirst, calculate the Z-score for X = 4.2:\nZ = (X - \\mu) / \\sigma\nZ = (4.2 - 5) / 0.5 = -0.8 / 0.5 = -1.6\n\nWe want P(Z > -1.6) = 1 - P(Z \\le -1.6).\nUsing the standard normal distribution table, P(Z \\le -1.6) \\approx 0.0548.\nP(Z > -1.6) = 1 - 0.0548 = 0.9452.\n\n0.9452 falls between 0.75 and 1.0.",
+            "module": 4
+        },
+        {
+            "question_id": "582113244",
+            "question_text": "The weight of domestic adult cats is Normally distributed with mean of 5 kgs and standard deviation of 0.5 kgs.\n\nThe probability of a cat weighing less than 5.8 kgs is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.25 and 0.5",
+                "B": "Between 0.75 and 1.0",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0 and 0.25"
+            },
+            "correct_option_label": "B",
+            "explanation": "Using the Normal distribution with \\mu = 5 and \\sigma = 0.5.\nWe want to find P(X < 5.8).\n\nCalculate the Z-score for X = 5.8:\nZ = (5.8 - 5) / 0.5 = 0.8 / 0.5 = 1.6\n\nWe want P(Z < 1.6).\nUsing the standard normal distribution table, P(Z < 1.6) \\approx 0.9452.\n\n0.9452 falls between 0.75 and 1.0.",
+            "module": 4
+        },
+        {
+            "question_id": "582113245",
+            "question_text": "The weight of domestic adult cats is Normally distributed with mean of 5 kgs and standard deviation of 0.5 kgs.\n\nThe probability of a cat weighing between 4.2 and 5.8 kgs is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.25 and 0.5",
+                "B": "Between 0.5 and 0.75",
+                "C": "Between 0 and 0.25",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "D",
+            "explanation": "Using the Normal distribution with \\mu = 5 and \\sigma = 0.5.\nWe want P(4.2 < X < 5.8).\nThis is equal to P(X < 5.8) - P(X \\le 4.2).\n\nFrom previous calculations, the Z-scores are:\nZ_2 = 1.6 \\implies P(Z < 1.6) \\approx 0.9452\nZ_1 = -1.6 \\implies P(Z < -1.6) \\approx 0.0548\n\nP(4.2 < X < 5.8) = 0.9452 - 0.0548 = 0.8904.\n\n0.8904 falls between 0.75 and 1.0.",
+            "module": 4
+        },
+        {
+            "question_id": "582113246",
+            "question_text": "The weight of domestic adult cats is Normally distributed with mean of 5 kgs and standard deviation of 0.5 kgs.\n\nThe 90th percentile of the weight of a cat is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 6.0 kgs and 6.2 kgs",
+                "B": "Between 6.2 kgs and 6.4 kgs",
+                "C": "Greater than 6.4 kgs",
+                "D": "Less than 6.0 kgs"
+            },
+            "correct_option_label": "D",
+            "explanation": "To find the 90th percentile, we look for the X value such that P(X \\le x) = 0.90.\n\nFirst, find the Z-score that corresponds to a cumulative probability of 0.90.\nFrom the standard normal table, Z \\approx 1.2816.\n\nNow, convert the Z-score back to the original value X:\nX = \\mu + Z \\cdot \\sigma\nX = 5 + 1.2816 \\cdot 0.5\nX = 5 + 0.6408 = 5.6408 kgs.\n\n5.6408 kgs is less than 6.0 kgs.",
+            "module": 4
+        }
+    ]
+}
