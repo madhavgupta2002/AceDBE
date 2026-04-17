@@ -1,0 +1,498 @@
+{
+    "exam_metadata": {
+        "subject_name": "Business Statistics for Entrepreneurs",
+        "exam_date": "29 March 2026"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "The data corresponding to the annualized return, in percent, for 7 stocks are as follows: 6, 2, 4, 9, 1, 3, and 5. The mean for this data is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Less than 2",
+                "B": "Between 2 and 4",
+                "C": "Between 4 and 6 (Correct Alternative)",
+                "D": "More than 6"
+            },
+            "correct_option_label": "C",
+            "explanation": "To find the mean, sum all the values and divide by the number of observations ($n$).\n\n1. Sum of values = $6 + 2 + 4 + 9 + 1 + 3 + 5 = 30$\n2. Number of observations ($n$) = 7\n3. Mean ($\\bar{x}$) = $\\frac{30}{7} \\approx 4.285$\n\nSince 4.285 lies between 4 and 6, the correct choice is C.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "The data corresponding to the annualized return, in percent, for 7 stocks are as follows: 6, 2, 4, 9, 1, 3, and 5. The 30th percentile for this data is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Less than 2",
+                "B": "Between 2 and 4 (Correct Alternative)",
+                "C": "Between 4 and 6",
+                "D": "More than 6"
+            },
+            "correct_option_label": "B",
+            "explanation": "To calculate the 30th percentile:\n\n1. Sort the data in ascending order: 1, 2, 3, 4, 5, 6, 9.\n2. Find the location index $L_p = \\frac{p}{100}(n + 1)$.\n3. Here, $p = 30$ and $n = 7$. $L_{30} = \\frac{30}{100}(7 + 1) = 0.3 \\times 8 = 2.4$.\n4. The 2.4th position is between the 2nd value (2) and 3rd value (3). \n5. Using interpolation: Value = 2nd Value + 0.4 \\times (3rd Value - 2nd Value) = $2 + 0.4(3 - 2) = 2.4$.\n\nThe 30th percentile is 2.4, which lies between 2 and 4.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "The data corresponding to the returns for 8 stocks are as follows: 4, 3, 0, 5, 2, 9, 4, and 5. The inter-quartile range for this data is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 3 (Correct Alternative)",
+                "B": "Between 3 and 6",
+                "C": "Between 6 and 9",
+                "D": "Between 9 and 12"
+            },
+            "correct_option_label": "A",
+            "explanation": "To find the inter-quartile range (IQR), we need $Q3 - Q1$.\n\n1. Sort the data ($n=8$): 0, 2, 3, 4, 4, 5, 5, 9.\n2. Calculate Q1 (25th percentile location): $L_{25} = 0.25 \\times (8+1) = 2.25$.\n   $Q1 = \\text{2nd value} + 0.25 \\times (\\text{3rd} - \\text{2nd}) = 2 + 0.25(3 - 2) = 2.25$.\n3. Calculate Q3 (75th percentile location): $L_{75} = 0.75 \\times (8+1) = 6.75$.\n   $Q3 = \\text{6th value} + 0.75 \\times (\\text{7th} - \\text{6th}) = 5 + 0.75(5 - 5) = 5.0$.\n4. Calculate IQR = $Q3 - Q1 = 5.0 - 2.25 = 2.75$.\n\nSince 2.75 is between 0 and 3, the correct answer is A.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "For events A, B, and C, P(A) = 0.45, P(B)=0.15, P(C) = 0.25, P(A and B) = 0.1, P(A and C) = 0.15, and B and C are mutually exclusive events. Then P(B or C) is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5 (Correct Alternative)",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "B",
+            "explanation": "Using the Addition Law for probabilities:\n$P(B \\cup C) = P(B) + P(C) - P(B \\cap C)$.\n\nSince events B and C are mutually exclusive, $P(B \\cap C) = 0$.\nTherefore:\n$P(B \\cup C) = 0.15 + 0.25 - 0 = 0.40$.\n\n0.40 falls between 0.25 and 0.5.",
+            "module": 2
+        },
+        {
+            "question_id": "5",
+            "question_text": "For events A, B, and C, P(A) = 0.45, P(B)=0.15, P(C) = 0.25, P(A and B) = 0.1, P(A and C) = 0.15, and B and C are mutually exclusive events. Then P(B given A) is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25 (Correct Alternative)",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "A",
+            "explanation": "By the definition of conditional probability:\n$P(B | A) = \\frac{P(A \\cap B)}{P(A)}$\n\nSubstitute the given values:\n$P(B | A) = \\frac{0.1}{0.45} \\approx 0.2222$\n\n0.2222 falls between 0 and 0.25.",
+            "module": 2
+        },
+        {
+            "question_id": "6",
+            "question_text": "For events A, B, and C, P(A) = 0.45, P(B)=0.15, P(C) = 0.25, P(A and B) = 0.1, P(A and C) = 0.15, and B and C are mutually exclusive events. Then P(A given B) is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75 (Correct Alternative)",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "C",
+            "explanation": "By the definition of conditional probability:\n$P(A | B) = \\frac{P(A \\cap B)}{P(B)}$\n\nSubstitute the given values:\n$P(A | B) = \\frac{0.1}{0.15} = \\frac{2}{3} \\approx 0.6667$\n\n0.6667 falls between 0.5 and 0.75.",
+            "module": 2
+        },
+        {
+            "question_id": "7",
+            "question_text": "A survey conducted by Financial Times, found that 40% of all adults are stockholders, and 75% of all adult stockholders have a college education. Suppose 37% of all adults have some college education. If a survey respondent is randomly chosen, what is the probability that the adult has neither college education nor owns stock?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75 (Correct Alternative)",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "C",
+            "explanation": "Let $S$ = Stockholder, $C$ = College Education.\nWe are given:\n$P(S) = 0.40$\n$P(C | S) = 0.75$\n$P(C) = 0.37$\n\n1. Find $P(C \\cap S)$: $P(C \\cap S) = P(S) \\times P(C | S) = 0.40 \\times 0.75 = 0.30$.\n2. Find the probability of either ($P(C \\cup S)$): $P(C \\cup S) = P(C) + P(S) - P(C \\cap S) = 0.37 + 0.40 - 0.30 = 0.47$.\n3. Find probability of neither: $P(C' \\cap S') = 1 - P(C \\cup S) = 1 - 0.47 = 0.53$.\n\n0.53 lies between 0.5 and 0.75.",
+            "module": 2
+        },
+        {
+            "question_id": "8",
+            "question_text": "A survey conducted by Financial Times, found that 40% of all adults are stockholders, and 75% of all adult stockholders have a college education. Suppose 37% of all adults have some college education. According to the survey what percentage of college educated adults are stockholders?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0 (Correct Alternative)"
+            },
+            "correct_option_label": "D",
+            "explanation": "Let $S$ = Stockholder, $C$ = College Education.\nWe are given:\n$P(S) = 0.40$\n$P(C | S) = 0.75$\n$P(C) = 0.37$\n\nFirst, find the joint probability $P(C \\cap S)$:\n$P(C \\cap S) = P(S) \\times P(C | S) = 0.40 \\times 0.75 = 0.30$.\n\nWe need the percentage of college-educated adults who are stockholders, which is $P(S | C)$:\n$P(S | C) = \\frac{P(C \\cap S)}{P(C)} = \\frac{0.30}{0.37} \\approx 0.8108$ (or $81.08\\%$).\n\n0.8108 is between 0.75 and 1.0.",
+            "module": 2
+        },
+        {
+            "question_id": "9",
+            "question_text": "A survey conducted by Financial Times, found that 40% of all adults are stockholders, and 75% of all adult stockholders have a college education. Suppose 37% of all adults have some college education. According to the survey what percentage of adults that do not own stocks have a college education?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25 (Correct Alternative)",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "A",
+            "explanation": "Let $S$ = Stockholder, $C$ = College Education.\nWe are given:\n$P(S) = 0.40 \\implies P(S') = 1 - 0.40 = 0.60$\n$P(C | S) = 0.75$\n$P(C) = 0.37$\n\n1. Find $P(C \\cap S)$: $P(C \\cap S) = P(S) \\times P(C | S) = 0.40 \\times 0.75 = 0.30$.\n2. Find $P(C \\cap S')$ (College ed but no stocks): $P(C \\cap S') = P(C) - P(C \\cap S) = 0.37 - 0.30 = 0.07$.\n3. Find $P(C | S')$: $P(C | S') = \\frac{P(C \\cap S')}{P(S')} = \\frac{0.07}{0.60} \\approx 0.1167$ (or $11.67\\%$).\n\n0.1167 falls between 0 and 0.25.",
+            "module": 2
+        },
+        {
+            "question_id": "10",
+            "question_text": "The number of rainy days in a week in the city of Dublin can take values of 0, 1, 2, 3, 4 or 5 with probability of 0.05, 0.05, 0.1, 0.1, 0.5 and 0.2 respectively. The 80th percentile for the number of rainy days is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1",
+                "B": "2",
+                "C": "3",
+                "D": "4 (Correct Alternative)"
+            },
+            "correct_option_label": "D",
+            "explanation": "To find the 80th percentile, we calculate the cumulative probabilities ($F(x)$):\n- $X = 0$: $0.05$\n- $X = 1$: $0.05 + 0.05 = 0.10$\n- $X = 2$: $0.10 + 0.10 = 0.20$\n- $X = 3$: $0.20 + 0.10 = 0.30$\n- $X = 4$: $0.30 + 0.50 = 0.80$\n- $X = 5$: $0.80 + 0.20 = 1.00$\n\nThe 80th percentile is the smallest value of $X$ for which the cumulative probability is at least $0.80$. At $X = 4$, the cumulative probability is exactly $0.80$.",
+            "module": 3
+        },
+        {
+            "question_id": "11",
+            "question_text": "The number of rainy days in a week in the city of Dublin can take values of 0, 1, 2, 3, 4 or 5 with probability of 0.05, 0.05, 0.1, 0.1, 0.5 and 0.2 respectively. The probability of at most 2 rainy days is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25 (Correct Alternative)",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "A",
+            "explanation": "We need the probability of $X \\le 2$.\n$P(X \\le 2) = P(X=0) + P(X=1) + P(X=2)$\n$P(X \\le 2) = 0.05 + 0.05 + 0.10 = 0.20$\n\n0.20 falls between 0 and 0.25.",
+            "module": 3
+        },
+        {
+            "question_id": "12",
+            "question_text": "The number of rainy days in a week in the city of Dublin can take values of 0, 1, 2, 3, 4 or 5 with probability of 0.05, 0.05, 0.1, 0.1, 0.5 and 0.2 respectively. The probability of at least 3 rainy days is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0 (Correct Alternative)"
+            },
+            "correct_option_label": "D",
+            "explanation": "We need the probability of $X \\ge 3$.\n$P(X \\ge 3) = P(X=3) + P(X=4) + P(X=5)$\n$P(X \\ge 3) = 0.10 + 0.50 + 0.20 = 0.80$\n\nAlternatively, using the complement rule: $1 - P(X \\le 2) = 1 - 0.20 = 0.80$.\n0.80 falls between 0.75 and 1.0.",
+            "module": 3
+        },
+        {
+            "question_id": "13",
+            "question_text": "The daily rainfall in a town has a mean of 6 mm and a standard deviation of 2 mm. If the rainfall on different days is independent, the coefficient of variation of the total rainfall over a 4-day period is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Less than 0.25 (Correct Alternative)",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Greater than 0.75"
+            },
+            "correct_option_label": "A",
+            "explanation": "Let $X_i$ be the rainfall on day $i$. $S_4 = X_1 + X_2 + X_3 + X_4$.\nFor the sum of $n=4$ independent and identically distributed variables:\n1. Expected Value (Mean): $E(S_4) = n \\mu = 4 \\times 6 = 24$ mm.\n2. Standard Deviation: $SD(S_4) = \\sqrt{n} \\sigma = \\sqrt{4} \\times 2 = 2 \\times 2 = 4$ mm.\n3. Coefficient of Variation (CV) = $\\frac{\\text{Standard Deviation}}{\\text{Mean}} = \\frac{4}{24} \\approx 0.1667$.\n\n0.1667 is less than 0.25.",
+            "module": 1
+        },
+        {
+            "question_id": "14",
+            "question_text": "The daily rainfall in a town has a mean of 6 mm and a standard deviation of 2 mm. If the rainfall on different days are independent, the standard deviation of the total rainfall over a 4-day period is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Less than 1.5",
+                "B": "Between 1.5 and 2.5",
+                "C": "Between 2.5 and 3.5",
+                "D": "Greater than 3.5 (Correct Alternative)"
+            },
+            "correct_option_label": "D",
+            "explanation": "For the sum $S_n$ of $n$ independent variables with standard deviation $\\sigma$:\n$SD(S_n) = \\sqrt{n} \\times \\sigma$\nHere, $n=4$ and $\\sigma=2$.\n$SD(S_4) = \\sqrt{4} \\times 2 = 2 \\times 2 = 4$ mm.\n\n4 is greater than 3.5.",
+            "module": 2
+        },
+        {
+            "question_id": "15",
+            "question_text": "The monthly labour cost has a mean of 12 lakhs and a standard deviation of 3 lakhs. If the labor costs during different months are independent, the coefficient of variation of the average labor cost per month over a 3-month period is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Less than 0.25 (Correct Alternative)",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Greater than 0.75"
+            },
+            "correct_option_label": "A",
+            "explanation": "Let $\\bar{X}$ be the average over $n=3$ months.\n1. Mean of $\\bar{X}$: $E(\\bar{X}) = \\mu = 12$ lakhs.\n2. Standard Deviation of $\\bar{X}$: $SD(\\bar{X}) = \\frac{\\sigma}{\\sqrt{n}} = \\frac{3}{\\sqrt{3}} = \\sqrt{3} \\approx 1.732$ lakhs.\n3. Coefficient of Variation (CV) = $\\frac{SD(\\bar{X})}{E(\\bar{X})} = \\frac{1.732}{12} \\approx 0.1443$.\n\n0.1443 is less than 0.25.",
+            "module": 1
+        },
+        {
+            "question_id": "16",
+            "question_text": "The monthly labour cost has a mean of 12 lakhs and a standard deviation of 3 lakhs. If the labor costs during different months are independent, the standard deviation of the average labor cost per month over a 3-month period is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Less than 3 (Correct Alternative)",
+                "B": "Between 3 and 6",
+                "C": "Between 6 and 9",
+                "D": "Greater than 9"
+            },
+            "correct_option_label": "A",
+            "explanation": "For the average $\\bar{X}$ of $n$ independent variables with standard deviation $\\sigma$:\n$SD(\\bar{X}) = \\frac{\\sigma}{\\sqrt{n}}$\nHere, $n=3$ and $\\sigma=3$ lakhs.\n$SD(\\bar{X}) = \\frac{3}{\\sqrt{3}} = \\sqrt{3} \\approx 1.732$ lakhs.\n\n1.732 is less than 3.",
+            "module": 2
+        },
+        {
+            "question_id": "17",
+            "question_text": "A survey revealed that 20% of gig workers have less than 2 months of reserve income in their bank account. Suppose a sample of 10 gig workers from this group is chosen for further study. The probability that exactly 2 out these 10 workers have less than 2 months of reserve is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5 (Correct Alternative)",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "B",
+            "explanation": "This follows a Binomial distribution with $n=10$ and $p=0.20$.\nWe need $P(X=2)$.\nFormula: $P(X=y) = \\binom{n}{y} p^y (1-p)^{n-y}$\n$P(X=2) = \\binom{10}{2} (0.20)^2 (0.80)^8$\n$P(X=2) = 45 \\times 0.04 \\times 0.16777 \\approx 0.3020$\n\n0.3020 falls between 0.25 and 0.5.",
+            "module": 3
+        },
+        {
+            "question_id": "18",
+            "question_text": "A survey revealed that 20% of gig workers have less than 2 months of reserve income in their bank account. Suppose a sample of 10 gig workers from this group is chosen for further study. The probability that at most 4 out these 10 workers have less than 2 months of reserve is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0 (Correct Alternative)"
+            },
+            "correct_option_label": "D",
+            "explanation": "This follows a Binomial distribution with $n=10$ and $p=0.20$.\nWe need $P(X \\le 4) = P(0) + P(1) + P(2) + P(3) + P(4)$.\n- $P(0) = (0.8)^{10} \\approx 0.1074$\n- $P(1) = 10(0.2)(0.8)^9 \\approx 0.2684$\n- $P(2) = 45(0.2)^2(0.8)^8 \\approx 0.3020$\n- $P(3) = 120(0.2)^3(0.8)^7 \\approx 0.2013$\n- $P(4) = 210(0.2)^4(0.8)^6 \\approx 0.0881$\nSum = $0.1074 + 0.2684 + 0.3020 + 0.2013 + 0.0881 \\approx 0.9672$\n\n0.9672 is between 0.75 and 1.0.",
+            "module": 3
+        },
+        {
+            "question_id": "19",
+            "question_text": "A survey revealed that 10% of senior citizens do not have a credit card. Suppose a sample of 15 senior citizens from this group is chosen for further study. The probability that less than 2 of these 15 senior citizens do not have a credit card is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75 (Correct Alternative)",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "C",
+            "explanation": "This follows a Binomial distribution with $n=15$ and $p=0.10$.\nWe need $P(X < 2) = P(X=0) + P(X=1)$.\n- $P(0) = \\binom{15}{0} (0.10)^0 (0.90)^{15} = (0.9)^{15} \\approx 0.2059$\n- $P(1) = \\binom{15}{1} (0.10)^1 (0.90)^{14} = 15 \\times 0.1 \\times 0.2288 \\approx 0.3432$\nSum = $0.2059 + 0.3432 = 0.5491$\n\n0.5491 is between 0.5 and 0.75.",
+            "module": 3
+        },
+        {
+            "question_id": "20",
+            "question_text": "A survey revealed that 10% of senior citizens do not have a credit card. Suppose a sample of 15 senior citizens from this group is chosen for further study. The probability that at least 1 of these 15 senior citizens have a credit card is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0 (Correct Alternative)"
+            },
+            "correct_option_label": "D",
+            "explanation": "Be careful with the wording: success here is \"have a credit card\".\nIf 10% *do not* have a credit card, then 90% *do* have a credit card ($p=0.90$).\nWe need $P(X \\ge 1)$ out of $n=15$.\nUsing the complement rule: $P(X \\ge 1) = 1 - P(X = 0)$.\n$P(X=0) = \\binom{15}{0} (0.90)^0 (0.10)^{15} = (0.10)^{15} \\approx 0.000...$\nSo, $P(X \\ge 1) = 1 - 0.000... = 1.0$.\n\n1.0 is between 0.75 and 1.0.",
+            "module": 3
+        },
+        {
+            "question_id": "21",
+            "question_text": "At a production facility, the number of defective parts manufactured in an 8-hour shift is random with an average of 3. What is the probability that at most 9 defects in a 24-hour production period?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75 (Correct Alternative)",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "C",
+            "explanation": "This follows a Poisson process.\nRate for 8 hours = 3 defects.\nRate for 24 hours ($\\lambda$) = $3 \\times 3 = 9$ defects.\nWe need $P(X \\le 9)$.\nSumming the Poisson probabilities from $X=0$ to $X=9$ for $\\lambda = 9$ yields approximately 0.5874.\n\n0.5874 falls between 0.5 and 0.75.",
+            "module": 3
+        },
+        {
+            "question_id": "22",
+            "question_text": "At a production facility, the number of defective parts manufactured in an 8-hour shift is random with an average of 3. What is the probability that at least 6 defects in a 24-hour production period?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0 (Correct Alternative)"
+            },
+            "correct_option_label": "D",
+            "explanation": "This follows a Poisson process.\nRate for 8 hours = 3 defects.\nRate for 24 hours ($\\lambda$) = $3 \\times 3 = 9$ defects.\nWe need $P(X \\ge 6) = 1 - P(X \\le 5)$.\nUsing the formula $P(x) = \\frac{e^{-\\lambda} \\lambda^x}{x!}$:\n$P(X \\le 5) = e^{-9} (1 + 9 + 40.5 + 121.5 + 273.375 + 492.075) \\approx 0.1156$.\n$P(X \\ge 6) = 1 - 0.1156 = 0.8844$.\n\n0.8844 is between 0.75 and 1.0.",
+            "module": 3
+        },
+        {
+            "question_id": "23",
+            "question_text": "At Fast Cars Dealers, the number of cars sold per month is random with an average of 4. What is the probability that at most 4 cars are sold in a month?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75 (Correct Alternative)",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "C",
+            "explanation": "This follows a Poisson distribution with $\\lambda = 4$.\nWe need $P(X \\le 4) = P(0) + P(1) + P(2) + P(3) + P(4)$.\n- $P(0) = e^{-4} \\approx 0.0183$\n- $P(1) = 4 \\times e^{-4} \\approx 0.0733$\n- $P(2) = \\frac{16}{2} \\times e^{-4} \\approx 0.1465$\n- $P(3) = \\frac{64}{6} \\times e^{-4} \\approx 0.1954$\n- $P(4) = \\frac{256}{24} \\times e^{-4} \\approx 0.1954$\nSum = $0.0183 + 0.0733 + 0.1465 + 0.1954 + 0.1954 = 0.6289$.\n\n0.6289 is between 0.5 and 0.75.",
+            "module": 3
+        },
+        {
+            "question_id": "24",
+            "question_text": "At Fast Cars Dealers, the number of cars sold per month is random with an average of 4. What is the probability that at least 5 cars are sold in a month?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5 (Correct Alternative)",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "B",
+            "explanation": "This follows a Poisson distribution with $\\lambda = 4$.\nWe need $P(X \\ge 5) = 1 - P(X \\le 4)$.\nFrom the previous calculation, $P(X \\le 4) \\approx 0.6289$.\n$P(X \\ge 5) = 1 - 0.6289 = 0.3711$.\n\n0.3711 falls between 0.25 and 0.5.",
+            "module": 3
+        },
+        {
+            "question_id": "25",
+            "question_text": "The time to process a home loan application at a bank is random with a mean of 2 weeks. The probability that the duration to process the loan is more than 21 days is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25 (Correct Alternative)",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "A",
+            "explanation": "This uses the Exponential distribution. Let the random variable $X$ be the time in days.\nMean ($\\mu$) = 2 weeks = 14 days.\nRate ($\\lambda$) = $\\frac{1}{14}$.\nWe need the tail probability $P(X > 21)$.\n$P(X > 21) = e^{-\\lambda x} = e^{-\\frac{21}{14}} = e^{-1.5} \\approx 0.2231$.\n\n0.2231 is between 0 and 0.25.",
+            "module": 4
+        },
+        {
+            "question_id": "26",
+            "question_text": "The time to process a home loan application at a bank is random with a mean of 2 weeks. The probability that the duration to process the loan is less than 3 days is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25 (Correct Alternative)",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "A",
+            "explanation": "This uses the Exponential distribution. Let $X$ be the time in days.\nMean ($\\mu$) = 14 days.\nRate ($\\lambda$) = $\\frac{1}{14}$.\nWe need $P(X < 3) = 1 - e^{-\\lambda x} = 1 - e^{-\\frac{3}{14}} = 1 - e^{-0.214} \\approx 1 - 0.8071 = 0.1929$.\n\n0.1929 is between 0 and 0.25.",
+            "module": 4
+        },
+        {
+            "question_id": "27",
+            "question_text": "The waiting time at a ticketing counter in a metro station is random with a mean of 3 minutes. The probability that the waiting time is between 1 and 5 minutes is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75 (Correct Alternative)",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "C",
+            "explanation": "This uses the Exponential distribution. \nMean = 3 minutes $\\implies \\lambda = \\frac{1}{3}$.\nWe need $P(1 < X < 5) = F(5) - F(1) = (1 - e^{-\\frac{5}{3}}) - (1 - e^{-\\frac{1}{3}}) = e^{-\\frac{1}{3}} - e^{-\\frac{5}{3}}$.\n- $e^{-0.333} \\approx 0.7165$\n- $e^{-1.667} \\approx 0.1889$\n$P(1 < X < 5) = 0.7165 - 0.1889 = 0.5276$.\n\n0.5276 falls between 0.5 and 0.75.",
+            "module": 4
+        },
+        {
+            "question_id": "28",
+            "question_text": "The waiting time at a ticketing counter in a metro station is random with a mean of 3 minutes. The probability that the waiting time is less than 1 minute is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5 (Correct Alternative)",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "B",
+            "explanation": "This uses the Exponential distribution.\nMean = 3 minutes $\\implies \\lambda = \\frac{1}{3}$.\nWe need $P(X < 1) = 1 - e^{-\\lambda x} = 1 - e^{-\\frac{1}{3}} \\approx 1 - 0.7165 = 0.2835$.\n\n0.2835 is between 0.25 and 0.5.",
+            "module": 4
+        },
+        {
+            "question_id": "29",
+            "question_text": "The number of audio defects or Plosives in an audio recording is random but occurs at the rate of 3 defects in a 1-hour recording. The probability of having at most 4 Plosives in one hour of recording is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0 (Correct Alternative)"
+            },
+            "correct_option_label": "D",
+            "explanation": "This follows a Poisson distribution with $\\lambda = 3$.\nWe need $P(X \\le 4) = P(0) + P(1) + P(2) + P(3) + P(4)$.\n$P(X \\le 4) = e^{-3} \\left(1 + 3 + \\frac{9}{2} + \\frac{27}{6} + \\frac{81}{24}\\right)$\n$P(X \\le 4) = 0.0498 \\times (1 + 3 + 4.5 + 4.5 + 3.375) = 0.0498 \\times 16.375 \\approx 0.815$.\n\n0.815 is between 0.75 and 1.0.",
+            "module": 3
+        },
+        {
+            "question_id": "30",
+            "question_text": "The number of audio defects or Plosives in an audio recording is random but occurs at the rate of 3 defects in a 1-hour recording. The probability of having at least 1 Plosive in one hour of recording is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0 (Correct Alternative)"
+            },
+            "correct_option_label": "D",
+            "explanation": "This follows a Poisson distribution with $\\lambda = 3$.\nWe need $P(X \\ge 1) = 1 - P(X = 0)$.\n$P(X = 0) = e^{-3} \\approx 0.0498$.\n$P(X \\ge 1) = 1 - 0.0498 = 0.9502$.\n\n0.9502 is between 0.75 and 1.0.",
+            "module": 3
+        },
+        {
+            "question_id": "31",
+            "question_text": "The number of audio defects or Plosives in an audio recording is random but occurs at the rate of 3 defects in a 1-hour recording. The probability of having no Plosive in one hour of recording is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25 (Correct Alternative)",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "A",
+            "explanation": "This follows a Poisson distribution with $\\lambda = 3$.\nWe need $P(X = 0)$.\n$P(X = 0) = \\frac{e^{-3} 3^0}{0!} = e^{-3} \\approx 0.0498$.\n\n0.0498 falls between 0 and 0.25.",
+            "module": 3
+        },
+        {
+            "question_id": "32",
+            "question_text": "The daily demand for petrol at a petrol pump in Bengaluru has a Normal distribution with mean of 13000 litres and standard deviation of 4000 litres. The probability that daily demand is between 8000 and 19000 litres is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0 (Correct Alternative)"
+            },
+            "correct_option_label": "D",
+            "explanation": "This follows a Normal Distribution with $\\mu = 13000$ and $\\sigma = 4000$.\n1. Find Z-scores:\n   $Z_1 = \\frac{8000 - 13000}{4000} = -1.25$\n   $Z_2 = \\frac{19000 - 13000}{4000} = 1.50$\n2. Find probabilities from the standard normal table:\n   $P(Z \\le 1.50) \\approx 0.9332$\n   $P(Z \\le -1.25) \\approx 0.1056$\n3. Calculate interval probability:\n   $P(-1.25 \\le Z \\le 1.50) = 0.9332 - 0.1056 = 0.8276$.\n\n0.8276 is between 0.75 and 1.0.",
+            "module": 4
+        },
+        {
+            "question_id": "33",
+            "question_text": "The daily demand for petrol at a petrol pump in Bengaluru has a Normal distribution with mean of 13000 litres and standard deviation of 4000 litres. The 75th percentile of the daily demand is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Less than 15000",
+                "B": "Between 15000 and 16000 (Correct Alternative)",
+                "C": "Between 16000 and 17000",
+                "D": "More than 17000"
+            },
+            "correct_option_label": "B",
+            "explanation": "This follows a Normal Distribution with $\\mu = 13000$ and $\\sigma = 4000$.\n1. From the standard normal table, the Z-score for the 75th percentile ($P(Z < z) = 0.75$) is approximately $z = 0.674$.\n2. Convert back to original scale: \n   Value = $\\mu + Z\\sigma = 13000 + 0.674 \\times 4000 = 13000 + 2696 = 15696$ litres.\n\n15696 is between 15000 and 16000.",
+            "module": 4
+        },
+        {
+            "question_id": "34",
+            "question_text": "The amount of protein in an energy bar has a Normal distribution with a mean of 12% and standard deviation of 1.5%. The probability that the amount of protein in an energy bar is between 11.5% and 14% is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75 (Correct Alternative)",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "C",
+            "explanation": "This follows a Normal Distribution with $\\mu = 12$ and $\\sigma = 1.5$.\n1. Find Z-scores:\n   $Z_1 = \\frac{11.5 - 12}{1.5} = -0.333$\n   $Z_2 = \\frac{14 - 12}{1.5} = 1.333$\n2. Find probabilities from the standard normal table:\n   $P(Z \\le 1.333) \\approx 0.9082$\n   $P(Z \\le -0.333) \\approx 0.3707$\n3. Calculate interval probability:\n   $P(-0.333 \\le Z \\le 1.333) = 0.9082 - 0.3707 = 0.5375$.\n\n0.5375 falls between 0.5 and 0.75.",
+            "module": 4
+        },
+        {
+            "question_id": "35",
+            "question_text": "The amount of protein in an energy bar has a Normal distribution with a mean of 12% and standard deviation of 1.5%. The probability that the amount of protein in an energy bar is between 9 % and 11% is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.25 (Correct Alternative)",
+                "B": "Between 0.25 and 0.5",
+                "C": "Between 0.5 and 0.75",
+                "D": "Between 0.75 and 1.0"
+            },
+            "correct_option_label": "A",
+            "explanation": "This follows a Normal Distribution with $\\mu = 12$ and $\\sigma = 1.5$.\n1. Find Z-scores:\n   $Z_1 = \\frac{9 - 12}{1.5} = -2.0$\n   $Z_2 = \\frac{11 - 12}{1.5} = -0.667$\n2. Find probabilities from the standard normal table:\n   $P(Z \\le -0.667) \\approx 0.2525$\n   $P(Z \\le -2.0) \\approx 0.0228$\n3. Calculate interval probability:\n   $P(-2.0 \\le Z \\le -0.667) = 0.2525 - 0.0228 = 0.2297$.\n\n0.2297 falls between 0 and 0.25.",
+            "module": 4
+        }
+    ]
+}
