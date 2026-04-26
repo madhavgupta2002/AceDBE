@@ -80,7 +80,7 @@ export const SUBJECTS: Subject[] = [
     description: 'Historical and contemporary perspectives on business and markets',
     icon: 'Building2',
     aliases: [
-      { batch: 1, code: 'ST21x', term: 1 },
+      { batch: 1, code: 'ST21x', term: 2 },
       { batch: 2, code: 'ST21x', term: 1 },
     ],
   },
@@ -165,7 +165,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'Lightbulb',
     aliases: [
       { batch: 1, code: 'EP31x', term: 3 },
-      { batch: 2, code: 'EP31x', term: 3 },
+      { batch: 2, code: '', term: 3 },
     ],
   },
   {
@@ -174,7 +174,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'Lightbulb',
     aliases: [
       { batch: 1, code: 'SE31x', term: 3 },
-      { batch: 2, code: 'SE31x', term: 3 },
+      { batch: 2, code: '', term: 3 },
     ],
   },
   {
@@ -183,7 +183,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'TrendingUp',
     aliases: [
       { batch: 1, code: 'MK31x', term: 3 },
-      { batch: 2, code: 'MK31x', term: 3 },
+      { batch: 2, code: '', term: 3 },
     ],
   },
   {
@@ -192,7 +192,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'BarChart3',
     aliases: [
       { batch: 1, code: 'AE31x', term: 3 },
-      { batch: 2, code: 'AE31x', term: 3 },
+      { batch: 2, code: '', term: 3 },
     ],
   },
   {
@@ -201,7 +201,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'BookOpen',
     aliases: [
       { batch: 1, code: 'ID32x', term: 3 },
-      { batch: 2, code: 'ID32x', term: 3 },
+      { batch: 2, code: '', term: 3 },
     ],
   },
   {
@@ -210,7 +210,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'BookOpen',
     aliases: [
       { batch: 1, code: 'ID31x', term: 3 },
-      { batch: 2, code: 'ID31x', term: 3 },
+      { batch: 2, code: '', term: 3 },
     ],
   },
 
@@ -221,7 +221,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'BookOpen',
     aliases: [
       { batch: 1, code: 'MD42x', term: 4 },
-      { batch: 2, code: 'MD42x', term: 4 },
+      { batch: 2, code: '', term: 4 },
     ],
   },
   {
@@ -230,7 +230,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'TrendingUp',
     aliases: [
       { batch: 1, code: 'MK41x', term: 4 },
-      { batch: 2, code: 'MK41x', term: 4 },
+      { batch: 2, code: '', term: 4 },
     ],
   },
   {
@@ -239,7 +239,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'MessageSquare',
     aliases: [
       { batch: 1, code: 'OB41x', term: 4 },
-      { batch: 2, code: 'OB41x', term: 4 },
+      { batch: 2, code: '', term: 4 },
     ],
   },
   {
@@ -248,7 +248,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'ClipboardList',
     aliases: [
       { batch: 1, code: 'OM41x', term: 4 },
-      { batch: 2, code: 'OM41x', term: 4 },
+      { batch: 2, code: '', term: 4 },
     ],
   },
   {
@@ -257,7 +257,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'Building2',
     aliases: [
       { batch: 1, code: 'ST41x', term: 4 },
-      { batch: 2, code: 'ST41x', term: 4 },
+      { batch: 2, code: '', term: 4 },
     ],
   },
   {
@@ -266,7 +266,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'Lightbulb',
     aliases: [
       { batch: 1, code: 'EP41x', term: 4 },
-      { batch: 2, code: 'EP41x', term: 4 },
+      { batch: 2, code: '', term: 4 },
     ],
   },
   {
@@ -275,7 +275,287 @@ export const SUBJECTS: Subject[] = [
     icon: 'BarChart3',
     aliases: [
       { batch: 1, code: 'MD41x', term: 4 },
-      { batch: 2, code: 'MD41x', term: 4 },
+      { batch: 2, code: '', term: 4 },
+    ],
+  },
+
+  // ── Term 5 ──────────────────────────────────────────────────
+  {
+    name: 'Digital Design Tools and Documentation & Presentation',
+    description: '',
+    icon: 'BookOpen',
+    aliases: [
+      { batch: 1, code: '', term: 5 },
+      { batch: 2, code: '', term: 5 },
+    ],
+  },
+  {
+    name: 'Generating Entrepreneurial Resources',
+    description: '',
+    icon: 'Rocket',
+    aliases: [
+      { batch: 1, code: '', term: 5 },
+      { batch: 2, code: '', term: 5 },
+    ],
+  },
+  {
+    name: 'Principles of Macroeconomics',
+    description: '',
+    icon: 'Building2',
+    aliases: [
+      { batch: 1, code: '', term: 5 },
+      { batch: 2, code: '', term: 5 },
+    ],
+  },
+  {
+    name: 'New Age Business Models',
+    description: '',
+    icon: 'Lightbulb',
+    aliases: [
+      { batch: 1, code: '', term: 5 },
+      { batch: 2, code: '', term: 5 },
+    ],
+  },
+  {
+    name: 'Behavioural Economics',
+    description: '',
+    icon: 'TrendingUp',
+    aliases: [
+      { batch: 1, code: '', term: 5 },
+      { batch: 2, code: '', term: 5 },
+    ],
+  },
+  {
+    name: 'New Product Development',
+    description: '',
+    icon: 'Rocket',
+    aliases: [
+      { batch: 1, code: '', term: 5 },
+      { batch: 2, code: '', term: 5 },
+    ],
+  },
+
+  // ── Term 6 ──────────────────────────────────────────────────
+  {
+    name: 'Supply Chain Management (SCM)',
+    description: '',
+    icon: 'ClipboardList',
+    aliases: [
+      { batch: 1, code: '', term: 6 },
+      { batch: 2, code: '', term: 6 },
+    ],
+  },
+  {
+    name: 'Growth Hacking',
+    description: '',
+    icon: 'TrendingUp',
+    aliases: [
+      { batch: 1, code: '', term: 6 },
+      { batch: 2, code: '', term: 6 },
+    ],
+  },
+  {
+    name: 'Product Management',
+    description: '',
+    icon: 'ClipboardList',
+    aliases: [
+      { batch: 1, code: '', term: 6 },
+      { batch: 2, code: '', term: 6 },
+    ],
+  },
+  {
+    name: 'Inclusive Business Models',
+    description: '',
+    icon: 'Building2',
+    aliases: [
+      { batch: 1, code: '', term: 6 },
+      { batch: 2, code: '', term: 6 },
+    ],
+  },
+  {
+    name: 'Business Research Methods',
+    description: '',
+    icon: 'BarChart3',
+    aliases: [
+      { batch: 1, code: '', term: 6 },
+      { batch: 2, code: '', term: 6 },
+    ],
+  },
+  {
+    name: 'Project / Do your Venture-1',
+    description: '',
+    icon: 'Rocket',
+    aliases: [
+      { batch: 1, code: '', term: 6 },
+      { batch: 2, code: '', term: 6 },
+    ],
+  },
+
+  // ── Term 7 ──────────────────────────────────────────────────
+  {
+    name: 'Organizational Development',
+    description: '',
+    icon: 'MessageSquare',
+    aliases: [
+      { batch: 1, code: '', term: 7 },
+      { batch: 2, code: '', term: 7 },
+    ],
+  },
+  {
+    name: 'Sales and Distribution Management (DTC)',
+    description: '',
+    icon: 'TrendingUp',
+    aliases: [
+      { batch: 1, code: '', term: 7 },
+      { batch: 2, code: '', term: 7 },
+    ],
+  },
+  {
+    name: 'Do your Venture-2',
+    description: '',
+    icon: 'Rocket',
+    aliases: [
+      { batch: 1, code: '', term: 7 },
+      { batch: 2, code: '', term: 7 },
+    ],
+  },
+  {
+    name: 'Nature of Languages',
+    description: '',
+    icon: 'BookOpen',
+    aliases: [
+      { batch: 1, code: '', term: 7 },
+      { batch: 2, code: '', term: 7 },
+    ],
+  },
+  {
+    name: 'Critical Thinking',
+    description: '',
+    icon: 'Lightbulb',
+    aliases: [
+      { batch: 1, code: '', term: 7 },
+      { batch: 2, code: '', term: 7 },
+    ],
+  },
+  {
+    name: 'Big Data Analytics',
+    description: '',
+    icon: 'BarChart3',
+    aliases: [
+      { batch: 1, code: '', term: 7 },
+      { batch: 2, code: '', term: 7 },
+    ],
+  },
+  {
+    name: 'Family Business',
+    description: '',
+    icon: 'Building2',
+    aliases: [
+      { batch: 1, code: '', term: 7 },
+      { batch: 2, code: '', term: 7 },
+    ],
+  },
+
+  // ── Term 8 ──────────────────────────────────────────────────
+  {
+    name: 'Customer Relationship Management',
+    description: '',
+    icon: 'MessageSquare',
+    aliases: [
+      { batch: 1, code: '', term: 8 },
+      { batch: 2, code: '', term: 8 },
+    ],
+  },
+  {
+    name: 'Digital Design Tool 2',
+    description: '',
+    icon: 'BookOpen',
+    aliases: [
+      { batch: 1, code: '', term: 8 },
+      { batch: 2, code: '', term: 8 },
+    ],
+  },
+  {
+    name: 'Corporate Finance',
+    description: '',
+    icon: 'DollarSign',
+    aliases: [
+      { batch: 1, code: '', term: 8 },
+      { batch: 2, code: '', term: 8 },
+    ],
+  },
+  {
+    name: 'New Age Business Models',
+    description: '',
+    icon: 'Lightbulb',
+    aliases: [
+      { batch: 1, code: '', term: 8 },
+      { batch: 2, code: '', term: 8 },
+    ],
+  },
+  {
+    name: 'UI/UX Design',
+    description: '',
+    icon: 'BookOpen',
+    aliases: [
+      { batch: 1, code: '', term: 8 },
+      { batch: 2, code: '', term: 8 },
+    ],
+  },
+
+  // ── Term 9 ──────────────────────────────────────────────────
+  {
+    name: 'Commercial Environment of Business',
+    description: '',
+    icon: 'Building2',
+    aliases: [
+      { batch: 1, code: '', term: 9 },
+      { batch: 2, code: '', term: 9 },
+    ],
+  },
+  {
+    name: 'Ethics',
+    description: '',
+    icon: 'BookOpen',
+    aliases: [
+      { batch: 1, code: '', term: 9 },
+      { batch: 2, code: '', term: 9 },
+    ],
+  },
+  {
+    name: 'Managing Digital Assets',
+    description: '',
+    icon: 'BookOpen',
+    aliases: [
+      { batch: 1, code: '', term: 9 },
+      { batch: 2, code: '', term: 9 },
+    ],
+  },
+  {
+    name: 'Exponential Technologies',
+    description: '',
+    icon: 'Lightbulb',
+    aliases: [
+      { batch: 1, code: '', term: 9 },
+      { batch: 2, code: '', term: 9 },
+    ],
+  },
+  {
+    name: 'Mobile Application Development',
+    description: '',
+    icon: 'BookOpen',
+    aliases: [
+      { batch: 1, code: '', term: 9 },
+      { batch: 2, code: '', term: 9 },
+    ],
+  },
+  {
+    name: 'Project (Mentored)',
+    description: '',
+    icon: 'Rocket',
+    aliases: [
+      { batch: 1, code: '', term: 9 },
+      { batch: 2, code: '', term: 9 },
     ],
   },
 ];
@@ -310,7 +590,7 @@ export const getSubjectsByBatch = (
   const results: { subject: Subject; alias: SubjectAlias }[] = [];
   for (const subject of SUBJECTS) {
     const alias = subject.aliases.find(
-      a => a.batch === batch && (term === undefined || a.term === term),
+      a => a.batch === batch && a.code !== '' && (term === undefined || a.term === term),
     );
     if (alias) results.push({ subject, alias });
   }
@@ -321,12 +601,12 @@ export const getSubjectsByBatch = (
 export const getDisplayNameForAlias = (subject: Subject, alias: SubjectAlias): string =>
   alias.name ?? subject.name;
 
-/** Sorted list of terms available for a given batch */
+/** Sorted list of terms that have active subjects (with codes) for a given batch */
 export const getTermsForBatch = (batch: number): number[] => {
   const terms = new Set<number>();
   for (const subject of SUBJECTS) {
     for (const alias of subject.aliases) {
-      if (alias.batch === batch) terms.add(alias.term);
+      if (alias.batch === batch && alias.code !== '') terms.add(alias.term);
     }
   }
   return Array.from(terms).sort((a, b) => a - b);
