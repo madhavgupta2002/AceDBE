@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
-import { getTermForSubject } from '@/lib/subjectMapping';
-
 interface BankInfo {
   bankName: string;
   displayName: string;
@@ -21,11 +19,7 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    // Get the term for this subject to find the correct folder
-    const term = getTermForSubject(subjectCode);
-    const termFolder = `Term ${term}`;
-
-    const dirPath = path.join(process.cwd(), 'public', 'data', bankType, termFolder);
+    const dirPath = path.join(process.cwd(), 'public', 'data', bankType);
 
     if (!fs.existsSync(dirPath)) {
       return NextResponse.json({ banks: [] });
