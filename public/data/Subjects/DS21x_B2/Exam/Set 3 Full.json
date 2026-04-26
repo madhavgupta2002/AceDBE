@@ -1,0 +1,106 @@
+{
+  "exam_metadata": {
+    "subject_name": "Business Statistics for Entrepreneurs",
+    "exam_date": "4 October 2025"
+  },
+  "questions": [
+    {
+      "question_id": "13",
+      "question_text": "A government agency selects a random sample of 40 IT projects to study issued related to project delays. The sample study reveals that the average duration of a project is 18 weeks, and the standard deviation is 4 weeks. Construct a hypothesis ($H_0$ and $H_a$) to determine if the average duration of projects in the population is more than 16 weeks. For a significance level of 5%, what is the p-value?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0.00 and 0.01",
+        "B": "Between 0.01 and 0.05",
+        "C": "Between 0.95 and 0.99",
+        "D": "Between 0.99 and 1.00"
+      },
+      "correct_option_label": "A",
+      "explanation": "Step 1: $H_0: \\mu \\le 16$, $H_a: \\mu > 16$. \nStep 2: Calculate test statistic $z = \\frac{\\bar{x} - \\mu_0}{s/\\sqrt{n}} = \\frac{18 - 16}{4/\\sqrt{40}} \\approx \\frac{2}{0.632} = 3.16$. \nStep 3: $P(Z > 3.16) \\approx 0.0008$. This is between 0.00 and 0.01.",
+      "module": 4
+    },
+    {
+      "question_id": "14",
+      "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. Construct a hypothesis ($H_0$ and $H_a$) to d determine if the true value of the average contacts per week is equal to 15. The test statistic for this test takes a value that is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Less than -2.0",
+        "B": "Between -2.0 and 0.0",
+        "C": "Between 0.0 and 2.0",
+        "D": "More than 2.0"
+      },
+      "correct_option_label": "D",
+      "explanation": "One-sample t-test: $t = \\frac{\\bar{x} - \\mu_0}{s/\\sqrt{n}}$. \n$t = \\frac{19 - 15}{5/\\sqrt{16}} = \\frac{4}{1.25} = 3.2$. \n3.2 is more than 2.0.",
+      "module": 4
+    },
+    {
+      "question_id": "15",
+      "question_text": "A hospital claims that the average time taken to discharge a patient is less than 150 minutes. A sample of 64 patients discharge time was analyzed and it yielded an average of 160 minutes and a standard deviation of 15 minutes. Construct a hypothesis ($H_0$ and $H_a$) to determine if the true value of the average discharge time per patient is less than 150 minutes. The correct form of hypothesis test to be used is the following:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$H_0 : \\mu \\le 150$ and $H_a : \\mu > 150$",
+        "B": "$H_0 : \\mu = 150$ and $H_a : \\mu \\neq 150$",
+        "C": "$H_0 : \\mu \\neq 150$ and $H_a : \\mu = 150$",
+        "D": "$H_0 : \\mu \\ge 150$ and $H_a : \\mu < 150$"
+      },
+      "correct_option_label": "D",
+      "explanation": "The research claim (average time is less than 150) becomes the alternative hypothesis $H_a$. The null hypothesis $H_0$ must include the equal sign and cover the remaining possibility ($H_0: \\mu \\ge 150$).",
+      "module": 4
+    },
+    {
+      "question_id": "16",
+      "question_text": "In a random survey of 24 students in a school, 7 students admitted that they spend more than 2 hours per day on social media activities. The standard error corresponding to the proportion of students spending more than 2 hours per day on social media activities obtained from the sample is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0.0 and 0.5",
+        "B": "Between 0.5 and 1.0",
+        "C": "Between 1.0 and 1.5",
+        "D": "Between 1.5 and 2.0"
+      },
+      "correct_option_label": "A",
+      "explanation": "Sample proportion $\\hat{p} = 7 / 24 \\approx 0.2917$. \nStandard error $SE = \\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}} = \\sqrt{\\frac{0.2917 \\cdot 0.7083}{24}} \\approx \\sqrt{0.0086} \\approx 0.0927$. \nThis value is between 0.0 and 0.5.",
+      "module": 2
+    },
+    {
+      "question_id": "17",
+      "question_text": "Do majority of managers have an MBA degree? In a random survey of 42 managers, 24 did not have an MBA degree. What is the margin of error corresponding to an 90% confidence interval of true proportion of managers in the population having an MBA degree.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Margin of error is between 0.0 to 0.10",
+        "B": "Margin of error is between 0.10 to 0.20",
+        "C": "Margin of error is between 0.20 to 0.30",
+        "D": "Margin of error is between 0.30 to 0.40"
+      },
+      "correct_option_label": "B",
+      "explanation": "Sample size $n=42$. Number with MBA = $42 - 24 = 18$. \n$\\hat{p} = 18/42 \\approx 0.4286$. \nFor 90% CI, $z = 1.645$. \n$ME = z \\cdot \\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}} = 1.645 \\cdot \\sqrt{\\frac{0.4286 \\cdot 0.5714}{42}} \\approx 1.645 \\cdot 0.0763 \\approx 0.1256$. \nThis is between 0.10 and 0.20.",
+      "module": 3
+    },
+    {
+      "question_id": "18",
+      "question_text": "In a random survey of 10 properties in Hyderabad, the rental costs for 2 BHK showed a standard deviation of 7 lakh. Construct a hypothesis ($H_0$ and $H_a$) to determine if the true value of the variance of rental costs in the population is equal to 25 lakhs$^2$. The test statistic for this test takes a value that is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Less than -10.0",
+        "B": "Between -10.0 and 0.0",
+        "C": "Between 0.0 and 10.0",
+        "D": "More than 10.0"
+      },
+      "correct_option_label": "D",
+      "explanation": "Chi-square test for variance: $\\chi^2 = \\frac{(n-1)s^2}{\\sigma_0^2}$. \nGiven: $n=10, s=7$ (so $s^2=49$), $\\sigma_0^2 = 25$. \n$\\chi^2 = \\frac{9 \\cdot 49}{25} = \\frac{441}{25} = 17.64$. \n17.64 is more than 10.0.",
+      "module": 4
+    },
+    {
+      "question_id": "19",
+      "question_text": "In a survey of 25 customers, it was found that the standard deviation of individual spend at a retail store was $35. Construct a hypothesis ($H_0$ and $H_a$) to determine if the true value of variance in the population for individual spend is more than 900. The p-value for a significance level of 5% is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0.00 and 0.05",
+        "B": "Between 0.05 and 0.25",
+        "C": "Between 0.75 and 0.95",
+        "D": "Between 0.95 and 1.00"
+      },
+      "correct_option_label": "B",
+      "explanation": "Step 1: $\\chi^2 = \\frac{(n-1)s^2}{\\sigma_0^2} = \\frac{24 \\cdot 35^2}{900} = \\frac{24 \\cdot 1225}{900} = 32.67$. \nStep 2: $df = 24$. \nStep 3: Using Chi-square table for $df=24$, the value 32.67 falls between 0.10 (33.2) and 0.90. The upper tail area $P(\\chi^2 > 32.67)$ is between 0.05 and 0.25.",
+      "module": 4
+    }
+  ]
+}

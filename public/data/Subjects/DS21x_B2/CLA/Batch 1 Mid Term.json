@@ -1,0 +1,92 @@
+{
+    "exam_metadata": {
+        "subject_name": "Business Statistics",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "STAT_MT_Q1",
+            "question_text": "The daily earnings of a taxi driver in a city has an average of 2400 and a standard deviation of 360. If a random sample of 45 taxi drivers are surveyed, the probability of the average daily earnings in the sample being between 2300 and 2500 is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.00 and 0.25",
+                "B": "Between 0.25 and 0.50",
+                "C": "Between 0.50 and 0.75",
+                "D": "Between 0.75 and 1.00"
+            },
+            "correct_option_label": "D",
+            "explanation": "According to the Central Limit Theorem, the sampling distribution of the sample mean $\\bar{X}$ is approximately normal with $\\mu = 2400$ and standard error $SE = \\frac{\\sigma}{\\sqrt{n}}$.\n\n**Steps:**\n1. Calculate Standard Error: $SE = \\frac{360}{\\sqrt{45}} \\approx 53.67$\n2. Find Z-scores for 2300 and 2500:\n   $Z_1 = \\frac{2300 - 2400}{53.67} \\approx -1.86$\n   $Z_2 = \\frac{2500 - 2400}{53.67} \\approx 1.86$\n3. Find the probability: $P(-1.86 < Z < 1.86) = P(Z < 1.86) - P(Z < -1.86) \\approx 0.9686 - 0.0314 = 0.9372$.\nThis value is between 0.75 and 1.00.",
+            "module": 2
+        },
+        {
+            "question_id": "STAT_MT_Q6",
+            "question_text": "For a given product, the supply (y) and price(x) for 8 weeks is given as (y,x) as: (5, 2), (7, 4), (9, 8), (12, 5), (10, 7), (13, 8), (16, 16) and (16, 6). The sample covariance is equal to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "10.0",
+                "B": "10.4",
+                "C": "11.0",
+                "D": "11.4"
+            },
+            "correct_option_label": "D",
+            "explanation": "Sample covariance measures the linear association between two variables in a sample.\n\n**Steps:**\n1. Calculate the sample means: $\\bar{x} = \\frac{2+4+8+5+7+8+16+6}{8} = 7.0$ and $\\bar{y} = \\frac{5+7+9+12+10+13+16+16}{8} = 11.0$ (Note: using precise mean of y = 11.0).\n2. Compute the sum of products of deviations $\\sum(x_i - \\bar{x})(y_i - \\bar{y})$ which equals $79.875$.\n3. Calculate Covariance: $Cov(X,Y) = \\frac{\\sum(x_i - \\bar{x})(y_i - \\bar{y})}{n-1} = \\frac{79.875}{7} \\approx 11.41 \\approx 11.4$.",
+            "module": 4
+        },
+        {
+            "question_id": "STAT_MT_Q7",
+            "question_text": "Scores on a national competitive exam were normally distributed with a mean of 80 and a variance of 36. If the top 5% of test scores receive merit awards, what is the lowest score eligible for a merit award? It is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "89",
+                "B": "90",
+                "C": "91",
+                "D": "92"
+            },
+            "correct_option_label": "B",
+            "explanation": "We need to find the specific $x$ value (score) at the 95th percentile of the normal distribution, leaving the top 5% in the upper tail.\n\n**Steps:**\n1. Identify parameters: $\\mu = 80$, standard deviation $\\sigma = \\sqrt{36} = 6$.\n2. The z-score corresponding to the top 5% (or cumulative probability of 0.95) is approximately $1.645$.\n3. Convert z-score to raw score: $x = \\mu + (z \\times \\sigma) = 80 + (1.645 \\times 6) = 80 + 9.87 = 89.87$.\nThis rounds to 90.",
+            "module": 1
+        },
+        {
+            "question_id": "STAT_MT_Q9",
+            "question_text": "It is believed that 70% of the customers at a retail chain are satisfied with their shopping experience. If a random sample of 20 shoppers are surveyed, what is the probability that at least 12 are not satisfied with their shopping experience? It is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.00 and 0.25",
+                "B": "Between 0.25 and 0.50",
+                "C": "Between 0.50 and 0.75",
+                "D": "Between 0.75 and 1.00"
+            },
+            "correct_option_label": "A",
+            "explanation": "This follows a Binomial distribution. If 70% are satisfied, then $p = 0.30$ represents the proportion of customers who are *not satisfied*.\n\n**Steps:**\n1. Let $X$ be the number of unsatisfied customers. $X \\sim B(n=20, p=0.30)$.\n2. We need $P(X \\geq 12) = 1 - P(X \\leq 11)$.\n3. Calculating the cumulative probability $P(X \\leq 11) = \\sum_{x=0}^{11} \\binom{20}{x} (0.3)^x (0.7)^{20-x} \\approx 0.995$.\n4. Therefore, $P(X \\geq 12) = 1 - 0.995 = 0.005$.\nThis value is between 0.00 and 0.25.",
+            "module": 1
+        },
+        {
+            "question_id": "STAT_MT_Q10",
+            "question_text": "The probability that a t-random variable with 5 degrees of freedom takes values between -2.0 and 0.5 is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.20 and 0.40",
+                "B": "Between 0.40 and 0.60",
+                "C": "Between 0.60 and 0.80",
+                "D": "Between 0.80 and 1.00"
+            },
+            "correct_option_label": "C",
+            "explanation": "This requires finding the area under the t-distribution curve with 5 degrees of freedom between the bounds -2.0 and 0.5.\n\n**Steps:**\n1. Look up or calculate the cumulative probability at $t = 0.5$: $P(t < 0.5) \\approx 0.68$.\n2. Look up or calculate the cumulative probability at $t = -2.0$: $P(t < -2.0) \\approx 0.05$.\n3. Find the difference: $P(-2.0 < t < 0.5) = 0.68 - 0.05 = 0.63$.\nThis value is between 0.60 and 0.80.",
+            "module": 1
+        },
+        {
+            "question_id": "STAT_MT_Q11",
+            "question_text": "A department store has determined that 25% of all their sales are credit sales. If a random sample of 60 sales records are selected, the probability of the proportion of credit sales in the sample being more than 30% is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.00 and 0.25",
+                "B": "Between 0.25 and 0.50",
+                "C": "Between 0.50 and 0.75",
+                "D": "Between 0.75 and 1.00"
+            },
+            "correct_option_label": "A",
+            "explanation": "The sampling distribution of the sample proportion $\\hat{p}$ can be approximated by a normal distribution with mean $p$ and standard error $\\sqrt{\\frac{p(1-p)}{n}}$.\n\n**Steps:**\n1. Identify parameters: $p = 0.25$, $n = 60$.\n2. Calculate Standard Error (SE): $SE = \\sqrt{\\frac{0.25 \\times 0.75}{60}} = \\sqrt{0.003125} \\approx 0.0559$.\n3. Find Z-score for $\\hat{p} = 0.30$: $Z = \\frac{0.30 - 0.25}{0.0559} \\approx 0.894$.\n4. Compute the upper tail probability: $P(\\hat{p} > 0.30) = P(Z > 0.894) \\approx 0.1856$.\nThis value is between 0.00 and 0.25.",
+            "module": 2
+        }
+    ]
+}

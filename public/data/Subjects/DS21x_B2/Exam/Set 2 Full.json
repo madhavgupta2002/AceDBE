@@ -1,0 +1,92 @@
+{
+  "exam_metadata": {
+    "subject_name": "Business Statistics for Entrepreneurs",
+    "exam_date": "17 May 2025"
+  },
+  "questions": [
+    {
+      "question_id": "13",
+      "question_text": "A government agency selects a random sample of 40 IT projects to study issued related to project delays. The sample study reveals that the average duration of a project is 18 weeks, and the standard deviation is 4 weeks. Construct a hypothesis ($H_0$ and $H_a$) to determine if the average duration of project in the population is more than 16 weeks. The correct form of hypothesis test to be used is the following:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$H_0 : \\mu \\le 16$ and $H_a : \\mu > 16$",
+        "B": "$H_0 : \\mu < 16$ and $H_a : \\mu \\ge 16$",
+        "C": "$H_0 : \\mu > 16$ and $H_a : \\mu \\le 16$",
+        "D": "$H_0 : \\mu \\ge 16$ and $H_a : \\mu < 16$"
+      },
+      "correct_option_label": "A",
+      "explanation": "The claim is \"more than 16 weeks\", which becomes the alternative hypothesis ($H_a: \\mu > 16$). The null hypothesis is the opposite or status quo ($H_0: \\mu \\le 16$).",
+      "module": 4
+    },
+    {
+      "question_id": "14",
+      "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. What is the margin of error corresponding to a 95% confidence interval on the true value of the average contacts per week?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Margin of error is between 1.0 to 1.5",
+        "B": "Margin of error is between 1.5 to 2.0",
+        "C": "Margin of error is between 2.0 to 2.5",
+        "D": "Margin of error is between 2.5 to 3.0"
+      },
+      "correct_option_label": "D",
+      "explanation": "Step 1: $n=16, \\bar{x}=19, s=5, df=15$.\nStep 2: $t_{0.025, 15} = 2.131$.\nStep 3: Margin of Error $ME = t \\cdot \\frac{s}{\\sqrt{n}} = 2.131 \\cdot \\frac{5}{4} = 2.66$.",
+      "module": 3
+    },
+    {
+      "question_id": "15",
+      "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. What is the standard error corresponding to a 85% confidence interval on the true value of the average contacts per week?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Standard error is between 0.0 to 1.0",
+        "B": "Standard error is between 1.0 to 2.0",
+        "C": "Standard error is between 2.0 to 3.0",
+        "D": "Standard error is between 3.0 to 4.0"
+      },
+      "correct_option_label": "B",
+      "explanation": "Standard Error $SE = \\frac{s}{\\sqrt{n}} = \\frac{5}{\\sqrt{16}} = 1.25$. This is independent of the confidence level.",
+      "module": 2
+    },
+    {
+      "question_id": "16",
+      "question_text": "In a random survey of 24 students in a school, 7 students admitted that they spend more than 2 hours per day on social media activities. What is the margin of error corresponding to an 80% confidence interval of true proportion of students spending more than 2 hours per day on social media activities in the population.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Margin of error is between 0.0 to 0.10",
+        "B": "Margin of error is between 0.10 to 0.20",
+        "C": "Margin of error is between 0.20 to 0.30",
+        "D": "Margin of error is between 0.30 to 0.40"
+      },
+      "correct_option_label": "B",
+      "explanation": "Step 1: $\\hat{p} = 7/24 \\approx 0.2917$.\nStep 2: $z_{0.10} = 1.28$.\nStep 3: $ME = z \\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}} = 1.28 \\sqrt{\\frac{0.2917 \\cdot 0.7083}{24}} \\approx 0.118$.",
+      "module": 3
+    },
+    {
+      "question_id": "17",
+      "question_text": "In a random survey of 24 students in a school, 7 students admitted that they spend more than 2 hours per day on social media activities. What is the smallest sample size have will yield a desired margin of error of 0.05 or less for a 90% confidence interval on the true proportion of students spending more than 2 hours per day on social media activities in the population.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Sample size of 400",
+        "B": "Sample size of 300",
+        "C": "Sample size of 200",
+        "D": "Sample size of 100"
+      },
+      "correct_option_label": "B",
+      "explanation": "Step 1: Use $n = \\frac{z^2 p(1-p)}{E^2}$ with $z=1.645, E=0.05$.\nStep 2: Conservative estimate $p=0.5 \\Rightarrow n = \\frac{1.645^2 \\cdot 0.25}{0.0025} \\approx 271$. Rounded to nearest option, 300.",
+      "module": 3
+    },
+    {
+      "question_id": "18",
+      "question_text": "How much do rental costs vary? In a random survey of 10 properties in Hyderabad, the rental costs for 2 BHK showed a standard deviation of 7 lakh. What is the 95% confidence interval of true standard deviation of rental costs in the population?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 4.8 and 12.8 lakhs",
+        "B": "Between 4.7 and 13.4 lakhs",
+        "C": "Between 23 and 163 lakhs",
+        "D": "Between 22 and 180 lakhs"
+      },
+      "correct_option_label": "A",
+      "explanation": "Step 1: $df=9, s^2=49, \\chi^2_{0.025, 9}=19.023, \\chi^2_{0.975, 9}=2.7$.\nStep 2: Lower limit $= \\sqrt{\\frac{9 \\cdot 49}{19.023}} = 4.81$.\nStep 3: Upper limit $= \\sqrt{\\frac{9 \\cdot 49}{2.7}} = 12.78$.",
+      "module": 3
+    }
+  ]
+}

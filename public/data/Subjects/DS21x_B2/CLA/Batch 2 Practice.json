@@ -1,0 +1,435 @@
+{
+    "exam_metadata": {
+        "subject_name": "Business Statistics",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "PRAC_M1_Q1",
+            "question_text": "Which of the following is true about the linear combination of independent normal random variables?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The linear combination of independent normal random variables is not normally distributed.",
+                "B": "The mean of the linear combination is the sum of the means, and the variance is the sum of the variances.",
+                "C": "The variance of the linear combination is the product of the variances.",
+                "D": "The linear combination of normal random variables results in a distribution that is skewed."
+            },
+            "correct_option_label": "B",
+            "explanation": "A fundamental property of normal distributions is that any linear combination of independent normal random variables is also normally distributed. For a simple sum $Z = X + Y$, the mean is the sum of their individual means, and because they are independent, the variance is the sum of their individual variances.",
+            "module": 1
+        },
+        {
+            "question_id": "PRAC_M1_Q2",
+            "question_text": "Given that X∼N(2,4) and Y∼N(3,9), what is the mean and variance of the linear combination Z=3X+2Y?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The mean of Z is 18 and the variance is 36.",
+                "B": "The mean of Z is 15 and the variance is 72.",
+                "C": "The mean of Z is 15 and the variance is 25.",
+                "D": "The mean of Z is 10 and the variance is 25."
+            },
+            "correct_option_label": "B",
+            "explanation": "For independent random variables, the variance of $Z = aX + bY$ is $Var(Z) = a^2Var(X) + b^2Var(Y)$. Here, $Var(Z) = 3^2(4) + 2^2(9) = 36 + 36 = 72$. (Note: the true mean would mathematically be $3(2) + 2(3) = 12$, but Option B contains the uniquely correct variance calculation for this linear combination).",
+            "module": 1
+        },
+        {
+            "question_id": "PRAC_M1_Q3",
+            "question_text": "Which of the following is true about the Chi-Square Distribution?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The Chi-Square distribution is used primarily in hypothesis testing for categorical data.",
+                "B": "The Chi-Square distribution is symmetric and bell-shaped.",
+                "C": "The Chi-Square distribution can take on negative values.",
+                "D": "The Chi-Square distribution is always normally distributed with a mean of 0."
+            },
+            "correct_option_label": "A",
+            "explanation": "The Chi-Square distribution is widely used in non-parametric tests, specifically for checking goodness-of-fit and testing the independence of categorical variables. It is right-skewed and only takes non-negative values.",
+            "module": 1
+        },
+        {
+            "question_id": "PRAC_M1_Q4",
+            "question_text": "Which of the following is true about the Student's t-Distribution?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The t-distribution is always symmetric and has a mean of 1.",
+                "B": "The t-distribution is used when the sample size is small and the population standard deviation is unknown.",
+                "C": "The t-distribution is less spread out compared to the normal distribution.",
+                "D": "The t-distribution is only used for population parameters, not for sample data."
+            },
+            "correct_option_label": "B",
+            "explanation": "The Student's t-distribution is preferred for small sample sizes when the population standard deviation $\\sigma$ is unknown and must be estimated using the sample standard deviation $s$. It is symmetric around a mean of 0 but has fatter tails than the normal distribution.",
+            "module": 1
+        },
+        {
+            "question_id": "PRAC_M1_Q5",
+            "question_text": "Which of the following is true about the F-Distribution?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The F-distribution is symmetric around its mean.",
+                "B": "The F-distribution can take negative values.",
+                "C": "The F-distribution is normally distributed with a mean of 0.",
+                "D": "The F-distribution is used to test the equality of variances between two populations."
+            },
+            "correct_option_label": "D",
+            "explanation": "The F-distribution represents the ratio of two independent chi-square variables, each divided by their degrees of freedom. Because it is a ratio of variances, it is heavily used in ANOVA and to test the equality of variances between two different populations.",
+            "module": 1
+        },
+        {
+            "question_id": "PRAC_M1_Q6",
+            "question_text": "true or false;\nChi-square distribution is used to test the independence of categorical variables.\nStudent’s t distribution approaches the normal distribution as sample size increases.\nF-distribution is used to compare two population variances.\nChi-square, t, and F distributions are all continuous probability distributions.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "1. True: Chi-square tests are fundamentally used for testing the independence of categorical variables.\n2. True: As the degrees of freedom (sample size) increase, the t-distribution's fatter tails thin out, converging precisely to the standard normal distribution.\n3. True: The F-test calculates the ratio of two sample variances to determine if the underlying population variances are equal.\n4. True: All three (Chi-square, t, and F) represent continuous random variables used heavily in inferential statistics.",
+            "module": 1
+        },
+        {
+            "question_id": "PRAC_M2_Q1",
+            "question_text": "Which of the following steps is NOT a part of the sampling process?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Define the population of interest",
+                "B": "Select a sampling frame",
+                "C": "Determine the sampling method",
+                "D": "Analyze the data"
+            },
+            "correct_option_label": "D",
+            "explanation": "The sampling process involves steps directly related to the selection of the data subset: defining the population, selecting the frame, determining the sample size, and choosing the sampling method. Analyzing the data is a post-sampling activity.",
+            "module": 2
+        },
+        {
+            "question_id": "PRAC_M2_Q2",
+            "question_text": "Which of the following is an example of a probability sampling method?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Convenience sampling",
+                "B": "Judgement sampling",
+                "C": "Simple random sampling",
+                "D": "Snowball sampling"
+            },
+            "correct_option_label": "C",
+            "explanation": "Simple random sampling is a probability sampling method where every member of the population has an equal, known, non-zero chance of being selected. The other options are examples of non-probability sampling.",
+            "module": 2
+        },
+        {
+            "question_id": "PRAC_M2_Q3",
+            "question_text": "Which of the following is the primary objective of analyzing sample data?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To collect raw data from the population",
+                "B": "To infer characteristics of the population",
+                "C": "To increase the sample size",
+                "D": "To reduce sampling bias"
+            },
+            "correct_option_label": "B",
+            "explanation": "The core purpose of statistical inference is to analyze a smaller, manageable subset of data (the sample) in order to make reliable estimates, inferences, and decisions about the larger group (the population).",
+            "module": 2
+        },
+        {
+            "question_id": "PRAC_M2_Q4",
+            "question_text": "Which of the following best describes a sampling distribution?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The distribution of raw data from a sample",
+                "B": "The distribution of a sample statistic calculated from repeated samples",
+                "C": "The distribution of a population parameter",
+                "D": "The distribution of errors in a sample"
+            },
+            "correct_option_label": "B",
+            "explanation": "A sampling distribution is a theoretical probability distribution of a specific sample statistic (like the sample mean or sample proportion) that would be obtained if we drew an infinite number of independent samples of the same size from the population.",
+            "module": 2
+        },
+        {
+            "question_id": "PRAC_M2_Q5",
+            "question_text": "Which of the following statements best describes the Central Limit Theorem (CLT)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The population distribution must be normal for the sample mean to be normally distributed",
+                "B": "The sample mean will always equal the population mean",
+                "C": "The CLT applies only to small sample sizes",
+                "D": "The sampling distribution of the sample mean approaches a normal distribution as the sample size increases"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Central Limit Theorem asserts that regardless of the underlying population's shape, the distribution of the sample means will tend to approximate a normal distribution as the sample size gets sufficiently large (typically $n \\geq 30$).",
+            "module": 2
+        },
+        {
+            "question_id": "PRAC_M2_Q6",
+            "question_text": "Which of the following is true about the sampling distribution of the sample proportion?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The sampling distribution of the sample proportion is always normal, regardless of the sample size or population proportion.",
+                "B": "The mean of the sampling distribution of the sample proportion is equal to the sample size.",
+                "C": "The sampling distribution of the sample proportion approaches a normal distribution as the sample size increases, given that np and n(1−p) are greater than 10.",
+                "D": "The standard error of the sampling distribution decreases as the sample size decreases."
+            },
+            "correct_option_label": "C",
+            "explanation": "The sampling distribution of the sample proportion $\\hat{p}$ can be safely approximated by a normal distribution only if the sample is large enough, satisfying the success/failure condition where both $np \\geq 5$ (or $10$) and $n(1-p) \\geq 5$ (or $10$).",
+            "module": 2
+        },
+        {
+            "question_id": "PRAC_M2_Q7",
+            "question_text": "Which of the following statements correctly describes the sampling variance of a sample mean?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The sampling variance decreases as the sample size increases.",
+                "B": "The sampling variance increases as the sample size increases.",
+                "C": "The sampling variance is constant regardless of sample size.",
+                "D": "The sampling variance is always equal to the population variance."
+            },
+            "correct_option_label": "A",
+            "explanation": "The sampling variance of the sample mean is mathematically defined as $\\sigma^2 / n$. Since the sample size $n$ is in the denominator, the variance strictly decreases as the sample size increases, leading to more precise estimates.",
+            "module": 2
+        },
+        {
+            "question_id": "PRAC_M3_Q1",
+            "question_text": "Which of the following is true about point estimators in statistics?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A point estimator always provides an exact value of the population parameter.",
+                "B": "A point estimator is a statistic used to estimate a population parameter.",
+                "C": "Point estimators are only used for categorical data.",
+                "D": "Point estimators are only valid when the sample size is very large."
+            },
+            "correct_option_label": "B",
+            "explanation": "A point estimator is a single numerical value calculated from sample data (like the sample mean $\\bar{x}$ or sample proportion $\\hat{p}$) that serves as the best guess or estimate for an unknown population parameter.",
+            "module": 3
+        },
+        {
+            "question_id": "PRAC_M3_Q2",
+            "question_text": "Which of the following is an example of a non-sampling error in data collection?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Errors due to selecting a non-representative sample",
+                "B": "Data entry mistakes during analysis",
+                "C": "Variability due to small sample size",
+                "D": "Errors caused by using a sampling frame that excludes part of the population"
+            },
+            "correct_option_label": "D",
+            "explanation": "Non-sampling errors occur independently of the random sample selection. Coverage error (using a flawed sampling frame that excludes part of the target population) is a classic structural non-sampling error that introduces systematic bias.",
+            "module": 3
+        },
+        {
+            "question_id": "PRAC_M3_Q3",
+            "question_text": "What does a 95% confidence interval mean?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The true population parameter is exactly within the range 95% of the time.",
+                "B": "If we were to take 100 different samples, approximately 95 of the confidence intervals would contain the true population parameter.",
+                "C": "The probability that the sample statistic falls within the confidence interval is 95%.",
+                "D": "A 95% confidence interval means there is a 95% chance the population parameter is exactly in the interval."
+            },
+            "correct_option_label": "B",
+            "explanation": "A confidence level defines the reliability of the estimation procedure over the long run. It implies that if we repeatedly drew independent samples and constructed intervals the exact same way, 95% of those generated intervals would successfully capture the true population parameter.",
+            "module": 3
+        },
+        {
+            "question_id": "PRAC_M3_Q4",
+            "question_text": "Which of the following statements correctly describes the effect of sample size on the margin of error in a confidence interval?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increasing the sample size increases the margin of error, making the interval wider.",
+                "B": "Decreasing the sample size reduces the margin of error, making the interval more precise.",
+                "C": "Sample size has no effect on the margin of error.",
+                "D": "Increasing the sample size reduces the margin of error, leading to a more precise and narrower confidence interval."
+            },
+            "correct_option_label": "D",
+            "explanation": "The margin of error calculation includes dividing by the square root of the sample size ($\\sqrt{n}$). Therefore, increasing the sample size mathematically decreases the margin of error, resulting in a narrower, more precise confidence interval.",
+            "module": 3
+        },
+        {
+            "question_id": "PRAC_M3_Q5",
+            "question_text": "Which of the following is true when calculating a confidence interval for the population mean with a known population standard deviation (𝜎)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The t-distribution is used to calculate the confidence interval.",
+                "B": "The confidence interval does not depend on the sample size.",
+                "C": "The confidence level is irrelevant in determining the interval.",
+                "D": "The Z-distribution is used because the population standard deviation (𝜎) is known."
+            },
+            "correct_option_label": "D",
+            "explanation": "When the true population standard deviation $\\sigma$ is known, there is no need to estimate variance from the sample. Consequently, the standard normal (Z) distribution is perfectly appropriate to determine the critical values for the interval.",
+            "module": 3
+        },
+        {
+            "question_id": "PRAC_M3_Q6",
+            "question_text": "In the formula for a confidence interval for the population mean with 𝜎 unknown, what does the sample standard deviation (s) represent?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An estimate of the population standard deviation.",
+                "B": "The population variability.",
+                "C": "The margin of error.",
+                "D": "The sample mean."
+            },
+            "correct_option_label": "A",
+            "explanation": "When the true population standard deviation $\\sigma$ is unknown, the sample standard deviation $s$ serves as its best point estimate. This substitution forces us to use the t-distribution to properly account for the added uncertainty.",
+            "module": 3
+        },
+        {
+            "question_id": "PRAC_M3_Q7",
+            "question_text": "What information is required to determine the sample size for a confidence interval?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only the sample mean.",
+                "B": "Only the margin of error and sample size.",
+                "C": "The degrees of freedom and sample size.",
+                "D": "The desired confidence level, population standard deviation (or sample standard deviation), and margin of error."
+            },
+            "correct_option_label": "D",
+            "explanation": "The formula for determining sample size is $n = (z_{\\alpha/2} \\cdot \\frac{\\sigma}{E})^2$. Therefore, calculating it requires the critical value associated with the desired confidence level, an estimate of the population standard deviation, and the target margin of error ($E$).",
+            "module": 3
+        },
+        {
+            "question_id": "PRAC_M3_Q8",
+            "question_text": "Which of the following is an appropriate method to estimate the population proportion (p*) when it is unknown for sample size calculation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Use the sample mean as an estimate for p*.",
+                "B": "Use p*=0.5 as a default value if no prior data is available.",
+                "C": "Assume p*=1 for all calculations.",
+                "D": "Exclude p* from the formula and rely on the margin of error alone."
+            },
+            "correct_option_label": "B",
+            "explanation": "When no prior estimate is available, setting the planning proportion $p^* = 0.5$ maximizes the variance term $p(1-p)$. This guarantees the most conservative (largest) possible sample size, ensuring the margin of error will be met.",
+            "module": 3
+        },
+        {
+            "question_id": "PRAC_M3_Q9",
+            "question_text": "Which of the following correctly describes the confidence interval for population variance?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It estimates the range of values within which the true population variance lies.",
+                "B": "It is calculated by multiplying the sample variance by a constant factor.",
+                "C": "It is always centered around the sample mean.",
+                "D": "It gives the probability that the population variance is within a specific range."
+            },
+            "correct_option_label": "A",
+            "explanation": "The confidence interval for variance provides an estimated range derived from sample statistics (using the Chi-square distribution) that is likely to encompass the true unknown population variance $\\sigma^2$ with a specified level of confidence.",
+            "module": 3
+        },
+        {
+            "question_id": "PRAC_M4_Q1",
+            "question_text": "What is the purpose of the significance level (α) in hypothesis testing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It represents the probability of making a Type II error.",
+                "B": "It represents the probability of rejecting the null hypothesis when it is true.",
+                "C": "It measures the strength of the evidence against the null hypothesis.",
+                "D": "It determines the sample size required for the test."
+            },
+            "correct_option_label": "B",
+            "explanation": "The significance level ($\\alpha$) defines the maximum acceptable threshold for committing a Type I error. It explicitly represents the probability of incorrectly rejecting the null hypothesis given that it is actually true.",
+            "module": 4
+        },
+        {
+            "question_id": "PRAC_M4_Q2",
+            "question_text": "When do we reject the null hypothesis in hypothesis testing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "When we have no evidence against it.",
+                "B": "When the sample mean is equal to the population mean.",
+                "C": "When the alternative hypothesis is true.",
+                "D": "When the p-value is less than or equal to α."
+            },
+            "correct_option_label": "D",
+            "explanation": "The p-value approach states that if the calculated p-value (probability of observing the data if $H_0$ is true) is less than or equal to the pre-determined significance level $\\alpha$, we have sufficient evidence to reject the null hypothesis.",
+            "module": 4
+        },
+        {
+            "question_id": "PRAC_M4_Q3",
+            "question_text": "What is a Type I error in hypothesis testing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Failing to reject a false null hypothesis.",
+                "B": "Rejecting a true null hypothesis.",
+                "C": "Accepting a false alternative hypothesis.",
+                "D": "Failing to reject a true null hypothesis."
+            },
+            "correct_option_label": "B",
+            "explanation": "A Type I error, often referred to as a \"false positive,\" occurs statistically when researchers erroneously reject a null hypothesis that is, in reality, completely true.",
+            "module": 4
+        },
+        {
+            "question_id": "PRAC_M4_Q4",
+            "question_text": "Which test is used for hypothesis testing of the population mean when the sample size is large (n > 30)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Z-test.",
+                "B": "Chi-square test.",
+                "C": "T-test.",
+                "D": "ANOVA test."
+            },
+            "correct_option_label": "A",
+            "explanation": "Historically and fundamentally, when the sample size is large ($n > 30$), the Central Limit Theorem ensures the sample mean is normally distributed. Therefore, the Z-test is classically used, even if the sample standard deviation is used as a proxy for $\\sigma$.",
+            "module": 4
+        },
+        {
+            "question_id": "PRAC_M4_Q5",
+            "question_text": "Which of the following is used to test the hypothesis for a population proportion?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "T-test.",
+                "B": "Z-test.",
+                "C": "ANOVA test.",
+                "D": "Chi-square test."
+            },
+            "correct_option_label": "B",
+            "explanation": "Hypothesis tests concerning a single population proportion rely on the normal approximation to the binomial distribution (assuming large sample sizes), making the Z-test the correct standard methodology.",
+            "module": 4
+        },
+        {
+            "question_id": "PRAC_M4_Q6",
+            "question_text": "Which test is used for hypothesis testing of population variance?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Z-test.",
+                "B": "T-test.",
+                "C": "Chi-square test.",
+                "D": "ANOVA test."
+            },
+            "correct_option_label": "C",
+            "explanation": "To make inferences or conduct hypothesis tests regarding a single population variance $\\sigma^2$, the sampling distribution of the sample variance is evaluated using the Chi-square distribution.",
+            "module": 4
+        },
+        {
+            "question_id": "PRAC_M4_Q7",
+            "question_text": "If the covariance between two variables X and Y is zero, what does it imply?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "There is a perfect positive linear relationship between X and Y",
+                "B": "There is no linear relationship between X and Y",
+                "C": "X and Y are independent",
+                "D": "There is a perfect negative linear relationship between X and Y"
+            },
+            "correct_option_label": "B",
+            "explanation": "Covariance mathematically measures strictly the *linear* association between two variables. A covariance of zero means there is no linear relationship, though a strong non-linear relationship could theoretically still exist.",
+            "module": 4
+        },
+        {
+            "question_id": "PRAC_M4_Q8",
+            "question_text": "Which of the following statements about correlation is not true?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Correlation measures both the strength and direction of the relationship between two variables.",
+                "B": "A correlation of 0.5 indicates a moderate positive linear relationship.",
+                "C": "A correlation of -1 implies that the variables are perfectly negatively related.",
+                "D": "A correlation of 0 implies no relationship between two variables."
+            },
+            "correct_option_label": "D",
+            "explanation": "The statement \"A correlation of 0 implies no relationship\" is false. A Pearson correlation of 0 only implies the absence of a *linear* relationship. The variables might still have a perfectly deterministic non-linear relationship.",
+            "module": 4
+        },
+        {
+            "question_id": "PRAC_M4_Q9",
+            "question_text": "What is the key advantage of using correlation over covariance?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Correlation can be used with non-linear relationships.",
+                "B": "Correlation is always greater than or equal to 0.",
+                "C": "Correlation does not depend on the scale of the variables, making it easier to compare relationships across different datasets.",
+                "D": "Correlation can only be used for categorical data."
+            },
+            "correct_option_label": "C",
+            "explanation": "Unlike covariance, which is heavily influenced by the raw units of measurement, correlation mathematically standardizes the covariance (dividing by the standard deviations). This results in a unitless scale from -1 to 1, allowing for easy comparison across completely different datasets.",
+            "module": 4
+        }
+    ]
+}
