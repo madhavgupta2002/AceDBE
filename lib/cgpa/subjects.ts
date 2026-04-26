@@ -29,7 +29,7 @@ export const CGPA_SUBJECTS: CgpaSubject[] = [
   { term: 1, code: 'EP12x', name: 'Exploration into Entrepreneurship', credits: 1.5, id: '' },
   { term: 1, code: 'FA11x', name: 'Financial Statements and Business Performance', credits: 3, id: '' },
   { term: 1, code: 'AE11x', name: 'Foundations of Business Communication I', credits: 1.5, id: '' },
-  { term: 1, code: 'DS11x', name: 'Business Statistics for Entrepreneurs I', credits: 1.5, id: '' },
+  { term: 1, code: 'DS11x_B2', name: 'Business Statistics for Entrepreneurs I', credits: 1.5, id: '' },
   { term: 1, code: 'ST21x', name: 'Evolution of Business and Market', credits: 1.5, id: '' },
 
   // Year 1: Term 2 (15)

@@ -10,7 +10,7 @@ import {
   QuizState,
 } from '@/lib/types';
 import { loadQuestions } from '@/lib/questionLoader';
-import { getSubjectByCode, getAlternativeVersion, isAlternativeVersion, getBaseSubjectCode } from '@/lib/subjectMapping';
+import { getSubjectByCode } from '@/lib/subjectMapping';
 import QuizQuestion from './QuizQuestion';
 import QuizStats from './QuizStats';
 import AnswerStatus from './AnswerStatus';
@@ -35,14 +35,6 @@ interface QuizAppProps {
 const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customTitle }) => {
   const router = useRouter();
   const subject = getSubjectByCode(subjectCode);
-
-  // Check for alternative version (e.g., DS11x has DS11x_B1 as alternative)
-  const alternativeVersion = getAlternativeVersion(subjectCode);
-  // Check if current subject IS an alternative version (e.g., DS11x_B1)
-  const isAltVersion = isAlternativeVersion(subjectCode);
-  // Get the base subject if this is an alternative version
-  const baseSubjectCode = isAltVersion ? getBaseSubjectCode(subjectCode) : null;
-  const baseSubject = baseSubjectCode ? getSubjectByCode(baseSubjectCode) : null;
 
   // Check if this is a custom quiz mode
   const isCustomMode = !!customQuestions && customQuestions.length > 0;
@@ -738,35 +730,6 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6">
             {displayTitle}
           </h1>
-
-          {/* Alternative Version Switcher */}
-          {!isCustomMode && !loading && quizState.questions.length === 0 && (alternativeVersion || isAltVersion) && (
-            <div className="mb-6 bg-amber-900/30 border border-amber-700 p-4">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                  <ArrowRightLeft className="w-5 h-5 text-amber-400" />
-                  <div>
-                    <p className="text-amber-200 font-medium text-sm">
-                      {isAltVersion ? 'Viewing Previous Version' : 'Alternative Version Available'}
-                    </p>
-                    <p className="text-amber-400/70 text-xs">
-                      {isAltVersion
-                        ? `This is an older version. Click to view the current version.`
-                        : `${alternativeVersion?.name} - ${alternativeVersion?.description}`
-                      }
-                    </p>
-                  </div>
-                </div>
-                <button
-                  onClick={() => router.push(`/${isAltVersion ? baseSubjectCode : alternativeVersion?.code}`)}
-                  className="px-4 py-2 bg-amber-700 hover:bg-amber-600 text-white border border-amber-600 font-semibold text-sm transition duration-200 flex items-center gap-2"
-                >
-                  <History className="w-4 h-4" />
-                  {isAltVersion ? 'Current Version' : 'Previous Version'}
-                </button>
-              </div>
-            </div>
-          )}
 
 
           {/* Compact Notes & Playlists during quiz */}
