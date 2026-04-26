@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState } from 'react';
 
 const AVAILABLE_BATCHES = [1, 2] as const;
 type BatchNumber = (typeof AVAILABLE_BATCHES)[number];
@@ -18,19 +18,10 @@ const BatchContext = createContext<BatchContextType>({
 export const BatchProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [selectedBatch, setSelectedBatchState] = useState<number>(2);
 
-  useEffect(() => {
-    const saved = localStorage.getItem('selectedBatch');
-    if (saved) {
-      const parsed = parseInt(saved, 10);
-      if ((AVAILABLE_BATCHES as readonly number[]).includes(parsed)) {
-        setSelectedBatchState(parsed);
-      }
-    }
-  }, []);
-
   const setSelectedBatch = (batch: number) => {
-    setSelectedBatchState(batch);
-    localStorage.setItem('selectedBatch', batch.toString());
+    if ((AVAILABLE_BATCHES as readonly number[]).includes(batch)) {
+      setSelectedBatchState(batch);
+    }
   };
 
   return (
