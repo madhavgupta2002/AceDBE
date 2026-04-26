@@ -14,19 +14,22 @@ export default function Home() {
       <Header />
       <div className="max-w-4xl mx-auto px-3 sm:px-4 py-2 sm:py-3 flex items-center justify-between gap-3">
         {/* Batch Selector */}
-        <div className="inline-flex bg-gray-800 border border-gray-700 p-0.5 gap-0.5 rounded">
-          {[1, 2].map((batch) => (
-            <button
-              key={batch}
-              onClick={() => setSelectedBatch(batch)}
-              className={`px-3 py-1 font-semibold text-xs sm:text-sm transition-all duration-200 ${selectedBatch === batch
-                  ? 'bg-amber-600 text-white'
-                  : 'bg-transparent text-gray-400 hover:text-white hover:bg-gray-700'
-                }`}
-            >
-              B{batch}
-            </button>
-          ))}
+        <div className="flex items-center gap-2">
+          <span className="text-xs text-gray-400 hidden sm:inline">Select your batch:</span>
+          <div className="inline-flex bg-gray-800 border border-gray-700 p-0.5 gap-0.5 rounded">
+            {[1, 2].map((batch) => (
+              <button
+                key={batch}
+                onClick={() => setSelectedBatch(batch)}
+                className={`px-3 py-1 font-semibold text-xs sm:text-sm transition-all duration-200 ${selectedBatch === batch
+                    ? 'bg-amber-600 text-white'
+                    : 'bg-transparent text-gray-400 hover:text-white hover:bg-gray-700'
+                  }`}
+              >
+                Batch {batch}
+              </button>
+            ))}
+          </div>
         </div>
         {/* CGPA Calculator */}
         <button
