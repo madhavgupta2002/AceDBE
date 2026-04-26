@@ -68,13 +68,7 @@ export const CGPA_SUBJECTS: CgpaSubject[] = [
   { term: 4, code: 'MD42x', name: 'Exploring Society & Structure', credits: 1.5, id: '' },
 
   // Year 2: Term 5 (15)
-  {
-    term: 5,
-    code: '',
-    name: 'Digital Design Tools and Documentation & Presentation',
-    credits: 3,
-    id: '',
-  },
+  { term: 5, code: '', name: 'Digital Design Tools and Documentation & Presentation', credits: 3, id: '' },
   { term: 5, code: '', name: 'Generating Entrepreneurial Resources', credits: 3, id: '' },
   { term: 5, code: '', name: 'Principles of Macroeconomics', credits: 1.5, id: '' },
   { term: 5, code: '', name: 'New Age Business Models', credits: 3, id: '' },

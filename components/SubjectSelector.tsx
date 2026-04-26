@@ -12,7 +12,6 @@ import {
 import { getSubjectsByBatch, getTermsForBatch, getDisplayNameForAlias, getIconForCode } from '@/lib/subjectMapping';
 import { useBatch } from '@/contexts/BatchContext';
 import { useRouter } from 'next/navigation';
-import videosData from '@/public/data/videos.json';
 import CustomQuizGenerator from './CustomQuizGenerator';
 
 const SubjectSelector: React.FC = () => {
@@ -63,17 +62,23 @@ const SubjectSelector: React.FC = () => {
     return `http://www.youtube.com/watch_videos?video_ids=${videoIds.join(',')}`;
   };
 
-  // Get all videos for a subject
-  const getAllVideosForSubject = (subjectCode: string): string => {
-    const subjectVideos = (videosData as any)[subjectCode] || {};
-    const allVideoLinks: string[] = [];
+  // Get all videos for a subject (fetches on demand)
+  const getAllVideosForSubject = async (subjectCode: string): Promise<string> => {
+    try {
+      const response = await fetch(`/data/Subjects/${subjectCode}/videos.json`);
+      if (!response.ok) return '';
+      const subjectVideos = await response.json();
+      const allVideoLinks: string[] = [];
 
-    Object.keys(subjectVideos).forEach(moduleNum => {
-      const moduleVideos = subjectVideos[moduleNum] || [];
-      allVideoLinks.push(...moduleVideos);
-    });
+      Object.keys(subjectVideos).forEach(moduleNum => {
+        const moduleVideos = subjectVideos[moduleNum] || [];
+        allVideoLinks.push(...moduleVideos);
+      });
 
-    return createPlaylistUrl(allVideoLinks);
+      return createPlaylistUrl(allVideoLinks);
+    } catch {
+      return '';
+    }
   };
 
   const handleNotesClick = (e: React.MouseEvent, subjectCode: string) => {
@@ -81,9 +86,9 @@ const SubjectSelector: React.FC = () => {
     router.push(`/${subjectCode}/notes`);
   };
 
-  const handleYoutubeClick = (e: React.MouseEvent, subjectCode: string) => {
+  const handleYoutubeClick = async (e: React.MouseEvent, subjectCode: string) => {
     e.stopPropagation();
-    const playlistUrl = getAllVideosForSubject(subjectCode);
+    const playlistUrl = await getAllVideosForSubject(subjectCode);
     if (playlistUrl) {
       window.open(playlistUrl, '_blank');
     }
