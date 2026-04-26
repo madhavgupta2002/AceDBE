@@ -21,8 +21,9 @@ export async function GET(request: NextRequest) {
       process.cwd(),
       'public',
       'data',
-      bankType,
+      'Subjects',
       subjectCode,
+      bankType,
       filename
     );
 

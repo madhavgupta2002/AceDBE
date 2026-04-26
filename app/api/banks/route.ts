@@ -19,19 +19,12 @@ export async function GET(request: NextRequest) {
   }
 
   try {
-    const dirPath = path.join(process.cwd(), 'public', 'data', bankType);
-
-    if (!fs.existsSync(dirPath)) {
-      return NextResponse.json({ banks: [] });
-    }
-
-    // Check if subject folder exists
-    const subjectPath = path.join(dirPath, subjectCode);
+    const subjectPath = path.join(process.cwd(), 'public', 'data', 'Subjects', subjectCode, bankType);
     if (!fs.existsSync(subjectPath)) {
       return NextResponse.json({ banks: [] });
     }
 
-    // Read all files in the subject directory
+    // Read all files in the bank type directory
     const files = fs.readdirSync(subjectPath);
 
     // Extract bank names from JSON files
