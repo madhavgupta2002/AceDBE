@@ -18,28 +18,17 @@ const SubjectSelector: React.FC = () => {
   const router = useRouter();
   const { selectedBatch, setSelectedBatch } = useBatch();
   const availableTerms = getTermsForBatch(selectedBatch);
-  const [selectedTerm, setSelectedTerm] = useState<number>(availableTerms[availableTerms.length - 1] ?? 1);
+  const latestVisibleTerm = availableTerms[availableTerms.length - 1] ?? 1;
+  const [selectedTerm, setSelectedTerm] = useState<number>(latestVisibleTerm);
 
   // When batch changes, clamp selected term to a valid one for that batch
   React.useEffect(() => {
     const terms = getTermsForBatch(selectedBatch);
-    if (!terms.includes(selectedTerm)) {
-      setSelectedTerm(terms[terms.length - 1] ?? 1);
-    }
+    setSelectedTerm(terms[terms.length - 1] ?? 1);
   }, [selectedBatch]);
-
-  // Persist term selection
-  React.useEffect(() => {
-    const savedTerm = localStorage.getItem('selectedTerm');
-    if (savedTerm) {
-      const parsed = parseInt(savedTerm, 10);
-      if (availableTerms.includes(parsed)) setSelectedTerm(parsed);
-    }
-  }, []);
 
   const handleTermChange = (term: number) => {
     setSelectedTerm(term);
-    localStorage.setItem('selectedTerm', term.toString());
   };
 
   // Subjects for current batch + term
