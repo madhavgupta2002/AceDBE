@@ -36,9 +36,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
   const router = useRouter();
   const subject = getSubjectByCode(subjectCode);
 
-  // Check for alternative version (e.g., DS11x has DS11x_2024 as alternative)
+  // Check for alternative version (e.g., DS11x has DS11x_B1 as alternative)
   const alternativeVersion = getAlternativeVersion(subjectCode);
-  // Check if current subject IS an alternative version (e.g., DS11x_2024)
+  // Check if current subject IS an alternative version (e.g., DS11x_B1)
   const isAltVersion = isAlternativeVersion(subjectCode);
   // Get the base subject if this is an alternative version
   const baseSubjectCode = isAltVersion ? getBaseSubjectCode(subjectCode) : null;
