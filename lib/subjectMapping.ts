@@ -303,7 +303,7 @@ export const SUBJECTS: Subject[] = [
     description: '',
     icon: 'Building2',
     aliases: [
-      { batch: 1, code: '', term: 5 },
+      { batch: 1, code: 'ES51x', term: 5 },
       { batch: 2, code: '', term: 5 },
     ],
   },
@@ -312,7 +312,7 @@ export const SUBJECTS: Subject[] = [
     description: '',
     icon: 'Lightbulb',
     aliases: [
-      { batch: 1, code: '', term: 5 },
+      { batch: 1, code: 'EP52x', term: 5 },
       { batch: 2, code: '', term: 5 },
     ],
   },
@@ -321,7 +321,7 @@ export const SUBJECTS: Subject[] = [
     description: '',
     icon: 'TrendingUp',
     aliases: [
-      { batch: 1, code: '', term: 5 },
+      { batch: 1, code: 'MD51x', term: 5 },
       { batch: 2, code: '', term: 5 },
     ],
   },
@@ -479,15 +479,6 @@ export const SUBJECTS: Subject[] = [
     name: 'Corporate Finance',
     description: '',
     icon: 'DollarSign',
-    aliases: [
-      { batch: 1, code: '', term: 8 },
-      { batch: 2, code: '', term: 8 },
-    ],
-  },
-  {
-    name: 'New Age Business Models',
-    description: '',
-    icon: 'Lightbulb',
     aliases: [
       { batch: 1, code: '', term: 8 },
       { batch: 2, code: '', term: 8 },

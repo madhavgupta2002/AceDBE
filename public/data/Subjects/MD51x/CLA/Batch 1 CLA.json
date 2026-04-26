@@ -1,0 +1,428 @@
+{
+    "exam_metadata": {
+        "subject_name": "Behavioral Economics",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "1_1",
+            "question_text": "In the Mug experiment and the Duke University basketball ticket, we have seen the Endowment Effect where the willingness to accept (WTA) for sellers is significantly greater than the willingness to pay (WTP) for buyers. Which of the following principles explain the Endowment Effect?\n\nI. Reference Points\nII. Loss Aversion\nIII. Risk Aversion\nIV. Probability Weighting Function",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "I, II and III",
+                "C": "I,II and IV",
+                "D": "Only I"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Endowment Effect is primarily driven by reference dependence (valuing what you currently possess as a baseline) and loss aversion (the psychological pain of losing the item is weighted more heavily than the pleasure of gaining it).",
+            "module": 1
+        },
+        {
+            "question_id": "1_2",
+            "question_text": "Which of the following examples illustrates the concept of affect bias?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "You are at a movie theatre and chose one movie over another because you like the design of movie’s poster",
+                "B": "Never choose a restaurant since the dish you like is never available there",
+                "C": "Choose to always drive a car and not a bike because you had met with a bike accident recently",
+                "D": "Refuse to buy from a store, where you think the products are over-priced, although you are wrong"
+            },
+            "correct_option_label": "A",
+            "explanation": "Affect bias (or affect heuristic) involves relying on immediate emotional reactions—like finding a poster visually or emotionally appealing—to make decisions, rather than engaging in objective analysis.",
+            "module": 1
+        },
+        {
+            "question_id": "1_3",
+            "question_text": "Studies have shown the “identifiable victim effect” in donations. People are more willing to make donations to a single individual with a name and a face, which reflects poverty than to a group of victims although donation to group would be consistent utilitarian principles. Which of the following heuristics explains this effect?\n\nI. Anchoring\nII. Availability\nIII. Affect\nIV. Representativeness\n\nChoose the correct option:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and III",
+                "B": "I and IV",
+                "C": "III and IV",
+                "D": "III only"
+            },
+            "correct_option_label": "D",
+            "explanation": "The identifiable victim effect is fundamentally explained by the Affect heuristic. A single, vividly identified individual evokes a stronger emotional response than a statistical group, motivating people to donate more.",
+            "module": 1
+        },
+        {
+            "question_id": "1_4",
+            "question_text": "In a study, students were asked to spin a wheel that would stop at 10 or 65. They were asked to note down the number and then were asked the following two questions:\n\nA. Is the percentage of African nations among UN members larger or smaller than the number you just wrote?\nB. What is your best guess of the percentage of African nations in UN?\n\nThe average estimate to question B by those who saw 10 and 65 were 25% and 45% respectively. Although the participants could see that the numbers 10 or 65 were completely random, why was it affecting their estimate of question B?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Availability Heuristic",
+                "B": "Anchoring Heuristic",
+                "C": "Representativeness Heuristic",
+                "D": "Misconceptions of Chance"
+            },
+            "correct_option_label": "B",
+            "explanation": "The participants' estimates were heavily influenced by the initial random number they generated (10 or 65). This demonstrates the Anchoring Heuristic, where irrelevant initial information serves as an influential reference point for subsequent judgments.",
+            "module": 1
+        },
+        {
+            "question_id": "1_5",
+            "question_text": "It is very common to hear that a batsman or bowler is in great form or having ‘hit a purple patch’. A similar term in basketball is the player having ‘hot hands’. A study analyzing thousands of sequences of shots and misses, showed that considering that some players are more accurate than others, the sequences of shots and misses satisfied all the tests of randomness. Understandably, the public reaction to this was general disbelief and hot hand fallacy still holds sway. Which of the following heuristics causes people to see hot hands and continue to believe in it despite contrary evidence?\n\nI. Availability Heuristic\nII. Law of small numbers\nIII. Confirmation Bias\nIV. Insensitivity to Base Rate",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Both I and II",
+                "B": "Both I and IV",
+                "C": "Both III and IV",
+                "D": "Only II"
+            },
+            "correct_option_label": "D",
+            "explanation": "The \"hot hand\" fallacy is primarily caused by belief in the Law of Small Numbers, where observers mistakenly expect short, random sequences of events to be perfectly representative of the underlying statistical probability, leading them to see patterns where none exist.",
+            "module": 1
+        },
+        {
+            "question_id": "1_6",
+            "question_text": "Ali scored 65/100 in mid-term and 90/100 in the end-term, while Rani scored 90/100 in the mid-term and 65/100 in the end-term. Although both scored the same overall, Ali is happier than Rani. This is because of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Endowment Effect",
+                "B": "Anchoring Heuristic",
+                "C": "Loss Aversion",
+                "D": "Mental Accounting"
+            },
+            "correct_option_label": "C",
+            "explanation": "Rani's score drops from 90 to 65, creating a psychological sense of loss relative to her mid-term baseline. Due to Loss Aversion, the pain of this perceived loss outweighs the joy of the initial high score, making her less happy than Ali who experiences a gain.",
+            "module": 1
+        },
+        {
+            "question_id": "1_7",
+            "question_text": "In the Mug experiment and the Duke University basketball ticket, we have seen the Endowment Effect where the willingness to accept (WTA) for sellers is significantly greater than the willingness to pay (WTP) for buyers. Which of the following principles explain the Endowment Effect?\n\nI. Reference Points\nII. Loss Aversion\nIII. Risk Aversion\nIV. Probability Weighting Function",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "I, II and III",
+                "C": "I,II and IV",
+                "D": "Only I"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Endowment Effect is explained by individuals using their current ownership state as a Reference Point, and Loss Aversion, where giving up an owned item is felt more intensely than gaining the equivalent item.",
+            "module": 1
+        },
+        {
+            "question_id": "1_8",
+            "question_text": "The concept of mental accounting is related to\n\nI. Transaction Utility\nII. Categorization of financial activities: income and expenses\nIII. Present-biased consumption",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Both I and II",
+                "B": "Only I",
+                "C": "Both II and III",
+                "D": "Only II"
+            },
+            "correct_option_label": "A",
+            "explanation": "Mental accounting explains how individuals categorize and group financial activities (like setting separate mental budgets for different expenses) and relies heavily on transaction utility to evaluate the perceived value of deals based on reference points.",
+            "module": 1
+        },
+        {
+            "question_id": "1_9",
+            "question_text": "Consider the following statements with respect to bundling:\n\nI. Small gains should be aggregated\nII. Small gains should be segregated\nIII. Small losses should be aggregated\nIV. Small losses should be segregated\nV. Large losses and small gains should be aggregated\n\nWhich of the following options are correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Both I and II",
+                "B": "Both II and III",
+                "C": "Both I and IV",
+                "D": "Both I and III"
+            },
+            "correct_option_label": "B",
+            "explanation": "Based on the principles of hedonic editing in prospect theory, small gains should be segregated (kept separate) to maximize psychological pleasure, whereas small losses should be aggregated (combined) to minimize the \"pain of paying.\"",
+            "module": 1
+        },
+        {
+            "question_id": "1_10",
+            "question_text": "Why do people like to go to all-inclusive resorts, where you pay the entire cost upfront and don’t have to pay for individual meals, drinks, activities etc., even though they know they will probably end up paying more for all-inclusive than a regular resort?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Risk Aversion",
+                "B": "Transaction Utility",
+                "C": "Loss Aversion",
+                "D": "Affect Heuristic"
+            },
+            "correct_option_label": "B",
+            "explanation": "Pre-paying for an all-inclusive resort provides positive transaction utility by decoupling consumption from payment. It eliminates the negative transaction utility (the psychological \"pain of paying\") experienced every time money is handed over for individual items.",
+            "module": 1
+        },
+        {
+            "question_id": "2_1",
+            "question_text": "Context: Your local cinema theatre is screening the following movies:\n1. A mediocre movie this weekend (u0 = 3),\n2. A good movie next weekend (u1 = 5),\n3. A great movie two weekends from now (u2 = 8) and\n4. A Marvel movie three weekends from now (u3 = 13).\n\nFor all questions that follow (Question 1 to 4), assume that β = 1/2 and δ = 1.\nU^t (x) represent Utility at time t ( this weekend (0), next weekend(1), two weekends from now(2), three weekends from now(3) ) from watching a particular movie x ( Mediocre(a), Good(b), Great(c), Marvel(d)) .\n\nAs an Econ, find U^0 (d), U^1 (d) and U^2 (d), and chose the correct option from below:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "5, 8 and 13",
+                "B": "13, 13 and 13",
+                "C": "6.5 , 6.5 and 6.5",
+                "D": "3.25, 6.5 and 13"
+            },
+            "correct_option_label": "B",
+            "explanation": "Step 1: An \"Econ\" represents a standard exponential discounter who has no present bias, thus β = 1. \nStep 2: The standard discount factor is δ = 1. \nStep 3: The utility of movie d (Marvel) is 13. At any time t, U^t(d) = β * δ^(delay) * u = 1 * 1 * 13 = 13.\nTherefore, the utility remains 13 across all evaluated time periods.",
+            "module": 2
+        },
+        {
+            "question_id": "2_2",
+            "question_text": "[Refer to the context provided in Question 1] As an exponential discounter which movie you will watch?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mediocre",
+                "B": "Good",
+                "C": "Great",
+                "D": "Marvel"
+            },
+            "correct_option_label": "D",
+            "explanation": "Step 1: An exponential discounter sets β = 1 and uses δ = 1.\nStep 2: They compare the utilities of all options with no time inconsistency: Mediocre (3), Good (5), Great (8), and Marvel (13).\nStep 3: Since Marvel offers the highest absolute utility (13) and there is no strict discounting, they choose to watch Marvel.",
+            "module": 2
+        },
+        {
+            "question_id": "2_3",
+            "question_text": "[Refer to the context provided in Question 1] As a naïve hyperbolic discounter, you will watch which movie?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mediocre",
+                "B": "Good",
+                "C": "Great",
+                "D": "Marvel"
+            },
+            "correct_option_label": "C",
+            "explanation": "Step 1: At t=0, a naïve discounter plans for the future assuming future selves won't be biased. Utilities are: Mediocre=3, Good=0.5*5=2.5, Great=0.5*8=4, Marvel=0.5*13=6.5. They plan to watch Marvel.\nStep 2: At t=1, they evaluate: Good=5, Great=0.5*8=4, Marvel=0.5*13=6.5. They still wait.\nStep 3: At t=2, 'Great' is now immediate so its utility is 8. 'Marvel' is in the future so its utility is 0.5*13=6.5. Since 8 > 6.5, they unexpectedly change their plan and watch the Great movie at t=2.",
+            "module": 2
+        },
+        {
+            "question_id": "2_4",
+            "question_text": "[Refer to the context provided in Question 1] As a sophisticated hyperbolic discounter, you will watch which movie?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mediocre",
+                "B": "Good",
+                "C": "Great",
+                "D": "Marvel"
+            },
+            "correct_option_label": "A",
+            "explanation": "Step 1: A sophisticate uses backward induction. They know at t=2 they would choose Great (8) over Marvel (0.5*13=6.5). So Marvel is eliminated.\nStep 2: At t=1, they know if they wait, they'll watch Great. They compare Good (immediate, 5) to Great (delayed, 0.5*8=4). They would choose Good. Great is eliminated.\nStep 3: At t=0, they compare Mediocre (immediate, 3) to Good (delayed, 0.5*5=2.5). Since 3 > 2.5, they choose to watch the Mediocre movie immediately.",
+            "module": 2
+        },
+        {
+            "question_id": "2_5",
+            "question_text": "Calculate the one-year discount factor (δ) if individual A is indifferent between $40 today and $80 in two years? [Assume individual A is an exponential discounter]",
+            "question_type": "MCQ",
+            "options": {
+                "A": "0.5",
+                "B": "1.41",
+                "C": "2",
+                "D": "0.71"
+            },
+            "correct_option_label": "D",
+            "explanation": "Step 1: Set up the exponential discounting equation: Utility(today) = δ^t * Utility(future).\nStep 2: Substitute the known values: 40 = δ^2 * 80.\nStep 3: Solve for δ^2: δ^2 = 40 / 80 = 0.5.\nStep 4: Take the square root to find δ: δ = √0.5 ≈ 0.707, which rounds to 0.71.",
+            "module": 2
+        },
+        {
+            "question_id": "2_6",
+            "question_text": "Even if all investors know that the market will ultimately crash, and that the unique Nash equilibrium strategy is to exit the market, they might assume that others will continue to buy for just a little while longer. If individual investors think that they can stay one step ahead of the competition and exit the market just before everybody else does, they will want to continue to buy. In the process, of course, they will drive prices even higher.\n\nThe act of buying, as described above, is best explained by which of the following?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Level-k thinking",
+                "B": "Commitment strategy",
+                "C": "Convergence to Nash Equilibrium",
+                "D": "Dominant Strategy Equilibrium"
+            },
+            "correct_option_label": "A",
+            "explanation": "This perfectly describes Level-k thinking. An investor assumes the average market participant is at Level-0 or Level-1, and positions themselves exactly one level higher (Level-k) to stay just one step ahead, thereby delaying their exit from the market.",
+            "module": 2
+        },
+        {
+            "question_id": "2_7",
+            "question_text": "Following are the average number quoted in a beauty contest game for three different groups:\n\nGroup-A: 35.13\nGroup-B: 25.60\nGroup-C: 17.15\n\nConsidering CH model, which of the following values of τ explains best the above outcomes?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "τ_A = 1, τ_(B )= 2 and τ_C = 4",
+                "B": "τ_A = 4, τ_(B )= 2 and τ_C = 1",
+                "C": "τ_A = 2, τ_(B )= 4 and τ_C = 3",
+                "D": "τ_A = 4, τ_(B )= 5 and τ_C = 2"
+            },
+            "correct_option_label": "A",
+            "explanation": "In the Cognitive Hierarchy (CH) model, a higher τ indicates a greater mean level of strategic reasoning. Higher reasoning levels yield numbers closer to the Nash equilibrium of 0. Thus, Group C (17.15) must have the highest τ, and Group A (35.13) must have the lowest.",
+            "module": 2
+        },
+        {
+            "question_id": "2_8",
+            "question_text": "Consider the applications of CH model we have seen in class. A higher τ:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "implies more firms with higher order type emerge.",
+                "B": "does not have a bearing on profits.",
+                "C": "firms are less likely to stay in business",
+                "D": "firms are less likely to exhibit strategic sophistication"
+            },
+            "correct_option_label": "A",
+            "explanation": "In the Cognitive Hierarchy model, the parameter τ characterizes the distribution of player sophistication. A higher τ implies that the overall population is more sophisticated, meaning a higher frequency of higher-order (deeper-thinking) strategic firms.",
+            "module": 2
+        },
+        {
+            "question_id": "2_9",
+            "question_text": "Consider a numerical beauty contest game where a person can choose a number between 20 and 100 (both included). The person who chooses a number closest to the 2/3 of the average number will be the winner. What is the Nash Equilibrium (NE) in this game?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "0",
+                "B": "40",
+                "C": "60",
+                "D": "20"
+            },
+            "correct_option_label": "D",
+            "explanation": "Through iterative elimination of weakly dominated strategies, participants continuously guess 2/3 of the previous maximum. Unlike a standard 0-100 game that converges to 0, the choice set is bounded at 20. Therefore, the process stops at the lowest allowable boundary, making 20 the Nash Equilibrium.",
+            "module": 2
+        },
+        {
+            "question_id": "2_10",
+            "question_text": "In the Numerical Beauty Contest Game, the participants must guess a number from 10 to 100. The winning guess would be closest to the 2/3rd of the average of guesses. Assume that you are a Level-2 thinker and your competitors are drawn from a pool of Level-0 and Level- 1 thinkers.\n\nYou as a Level-2 thinker you believe that your competitors are drawn from a pool of 30% Level-0 and 70% Level-1 thinkers. Given these beliefs about your competitors, which of the following would be your best guess?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "28",
+                "B": "31",
+                "C": "37",
+                "D": "55"
+            },
+            "correct_option_label": "A",
+            "explanation": "Step 1: Identify Level-0 guess. Assuming random selection, Level-0 mean = (10+100)/2 = 55.\nStep 2: Identify Level-1 guess. Level-1 best responds to Level-0 = (2/3) * 55 = 36.67.\nStep 3: Calculate the expected average based on Level-2's beliefs = (0.30 * 55) + (0.70 * 36.67) = 16.5 + 25.67 = 42.17.\nStep 4: Calculate Level-2's best response = (2/3) * 42.17 = 28.11. The closest option is 28.",
+            "module": 2
+        },
+        {
+            "question_id": "3_1",
+            "question_text": "In the Niederle and Vesterlund (2007) paper discussed in the class, women are less likely to choose a competitive tournament incentive. According to the study, this is best explained by:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "differences in math ability between men and women",
+                "B": "differences in preference for solving math related tasks",
+                "C": "differences in measures of self-confidence",
+                "D": "differences in performance in the task under a competitive setting."
+            },
+            "correct_option_label": "C",
+            "explanation": "The study found no significant difference in actual ability or performance between men and women. Instead, the gap in choosing the competitive tournament is primarily driven by differences in overconfidence (men exhibit higher self-confidence in their relative ability) and varying attitudes toward competition.",
+            "module": 3
+        },
+        {
+            "question_id": "3_2",
+            "question_text": "Consider the following statement with respect to Babcock, Linda, et al (AER, 2007) study discussed in the class.\n\nI. Low promotability tasks are necessary tasks that need to be taken care of but does not lead to career advancement.\nII. Empirical evidence suggests that women are more likely to volunteer for the low promotability tasks in mixed-gender environment\nIII. As women are more likely to volunteer, higher levels of volunteering is observed in all-female environment compared to all-males environment.\n\nWhich of the above statements are true?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I only",
+                "B": "II only",
+                "C": "I and II only",
+                "D": "I, II and III"
+            },
+            "correct_option_label": "C",
+            "explanation": "Statements I and II are accurate reflections of the study; women volunteer more for non-promotable tasks in mixed groups due to shared expectations. Statement III is false because in single-sex environments (both all-male and all-female), the volunteering rates equalize.",
+            "module": 3
+        },
+        {
+            "question_id": "3_3",
+            "question_text": "Read the following excerpt:\n\n“……. If a manager is convinced that the people in her group are first-rate, they’ll reliably outperform a group whose manager believes the reverse—even if the innate talent of the two groups is similar.”\n\nThis is an example of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Pygmalion Effects",
+                "B": "Taste discrimination",
+                "C": "Statistical discrimination",
+                "D": "Both Taste and Statistical discrimination"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Pygmalion Effect is a psychological phenomenon where higher expectations lead to an increase in performance. A manager's positive reinforcement acts as a self-fulfilling prophecy, boosting the team's output regardless of innate talent.",
+            "module": 3
+        },
+        {
+            "question_id": "3_4",
+            "question_text": "In the labour market context, the optimal policy for Taste-based discrimination is _____________ and Statistical discrimination is _________________",
+            "question_type": "MCQ",
+            "options": {
+                "A": "affirmative actions, eliminate information asymmetry about employee productivity",
+                "B": "eliminate information asymmetry about employee productivity, Affirmative actions",
+                "C": "eliminate information asymmetry about employee productivity, steps to increase productivity",
+                "D": "affirmative actions, increase wages"
+            },
+            "correct_option_label": "A",
+            "explanation": "Taste-based discrimination is rooted in irrational prejudice, making affirmative action a necessary intervention. Statistical discrimination is caused by a lack of information, making the elimination of information asymmetry the most effective policy solution.",
+            "module": 3
+        },
+        {
+            "question_id": "3_5",
+            "question_text": "A report from The Guardian reads:\n\n“…… data from the Australian Bureau of Statistics reveals that management of Australian businesses is dominated by men to an extent that far outweighs the level of men and women in the total workforce. In the healthcare sector, men account for just 22% of all employees, but for 56% of all managers…..”\n\nWhich of the following statements are relevant to above representation?\n\nI. Mechanically few people from the minority group are in a position to make a decision regarding others. To the extent that leaders discriminate members from the minority group, discrimination will persist.\nII. Majority group’s belief that minority group is incapable of success may be reinforced since they rarely observe minority success in the first place.\nIII. Minorities may themselves feel that they are incapable of success or the world is rigged against them.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only II and III",
+                "B": "Only I and II",
+                "C": "I , II and III",
+                "D": "Only I and III"
+            },
+            "correct_option_label": "C",
+            "explanation": "The lack of representation at management levels acts as a self-fulfilling barrier. It mechanically prevents minority promotion (I), reinforces majoritarian stereotypes through lack of visible success (II), and damages the minority group's self-perception and aspirations (III).",
+            "module": 3
+        },
+        {
+            "question_id": "3_6",
+            "question_text": "Consider the following statements with respect to Nudge:\n\nI. Nudge refers to any aspect of choice architecture that alters the choice set available to individuals\nII. Nudge alters the people’s behaviour in predictable ways\nIII. Nudge significantly alters the economic incentives of the individuals\n\nWhich of the following statements is/are true?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Both I and II",
+                "B": "Both II and III",
+                "C": "I, II and III",
+                "D": "Only II"
+            },
+            "correct_option_label": "D",
+            "explanation": "By definition, a nudge alters behavior in a predictable way without forbidding any options (so it doesn't limit the choice set) and without significantly changing economic incentives. Thus, only statement II is correct.",
+            "module": 3
+        },
+        {
+            "question_id": "3_7",
+            "question_text": "Which of the following are traits of an intervention that would qualify as nudge under the principles of ‘Libertarian Paternalism’?\n\nI. Interventions that are easy and cheap to avoid\nII. The harmful options are removed from the choice set\nIII. People have full liberty to choose from the entire choice set\n\nChoose the right option:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only I",
+                "B": "Only II",
+                "C": "Only III",
+                "D": "I and III"
+            },
+            "correct_option_label": "D",
+            "explanation": "Libertarian paternalism dictates that nudges must preserve freedom of choice. Interventions must be easy and cheap to avoid (I) and must maintain the individual's full liberty to select any option without outright banning harmful choices (III).",
+            "module": 3
+        },
+        {
+            "question_id": "3_8",
+            "question_text": "With respect to Save More Tomorrow nudge, which of the following psychological principles of human behaviour make it an effective policy tool to increase the savings of individuals?\n\nI. Most individuals want to be saving more, but hardly follow through.\nII. Self-control problems make it easier to commit for savings that would begin sometime in the future\nIII. People dislike actions which are unfair\n\nChoose the correct option",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only I",
+                "B": "Only II",
+                "C": "II and III",
+                "D": "I and II"
+            },
+            "correct_option_label": "D",
+            "explanation": "The 'Save More Tomorrow' nudge works precisely because of the intention-action gap (people want to save but fail to act) and hyperbolic discounting (it's psychologically easier to commit future pay raises to savings than to take an immediate loss of disposable income).",
+            "module": 3
+        },
+        {
+            "question_id": "3_9",
+            "question_text": "The UK tax department usually sends a standard letter to those who have not paid their taxes on time, reminding them to do so. With the help of Behavioural Insights Team, the letters were modified to contain the following different messages each sent to a different group:\n\nI. “Nine out of ten people in your local area pay their tax on time. You are in the minority that does not pay their tax on time.”\nII. “Nine out of ten people pay their tax on time. You are in the minority that does not pay their tax on time.”\nIII. “Nine out of ten people with a debt like yours pay their tax on time. You are in the minority that does not pay their tax on time.”\nIV. ““Nine out of ten people with a debt like yours, in your area, pay their tax on time. You are in the minority that does not pay their tax on time.”\n\nIdentify the message that was most likely to be sent to the control group?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I",
+                "B": "II",
+                "C": "III",
+                "D": "IV"
+            },
+            "correct_option_label": "B",
+            "explanation": "Message II represents the basic descriptive social norm (\"Nine out of ten people pay...\"). The other options are experimental modifications adding specificity, such as localizing the norm or contextualizing the debt, making message II the baseline for this norm experiment.",
+            "module": 3
+        },
+        {
+            "question_id": "3_10",
+            "question_text": "Which of the following choice problems are suitable for designing a choice architecture with Nudges?\n\nChoices related to:\nI. Investment goods (saving, exercising etc) where the costs are immediate, but benefits are in future\nII. Sin goods (smoking, alcohol, sweets etc) where the costs are in future, but benefits are immediate\nIII. Decisions that are made infrequently but have high stakes such as buying a house, buying a life insurance etc\n\nChoose the right option:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "I only",
+                "C": "II only",
+                "D": "I, II and III"
+            },
+            "correct_option_label": "D",
+            "explanation": "Nudges are most effective where individuals exhibit bounded rationality and lack proper feedback. This includes choices with delayed rewards (investment goods), immediate temptations (sin goods), and highly complex, infrequent choices where learning from experience is difficult.",
+            "module": 3
+        }
+    ]
+}
