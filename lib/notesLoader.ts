@@ -2,13 +2,9 @@
  * Utility to load markdown notes for a subject
  */
 
-import { getTermForSubject } from './subjectMapping';
-
 export async function loadNotes(subjectCode: string): Promise<string | null> {
   try {
-    // Get the term for this subject to find the correct folder
-    const term = getTermForSubject(subjectCode);
-    const response = await fetch(`/data/Notes/Term ${term}/${subjectCode}.md`);
+    const response = await fetch(`/data/Notes/${subjectCode}.md`);
 
     if (!response.ok) {
       if (response.status === 404) {

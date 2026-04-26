@@ -1,5 +1,5 @@
 
-# ***Business Statistics for Entrepreneurs - 1***
+# ***Business Statistics for Entrepreneurs***
 
 # Module 1: Descriptive Statistics
 
