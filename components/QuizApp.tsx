@@ -691,7 +691,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     return (
       <div className="text-center py-12">
         <p className="text-red-400">Subject not found</p>
-        <button onClick={() => router.push('/')} className="mt-4 text-indigo-400 hover:text-indigo-300">
+        <button onClick={() => router.push('/')} className="mt-4 text-emerald-400 hover:text-emerald-300">
           Go back to home
         </button>
       </div>
@@ -702,7 +702,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
   const displayTitle = isCustomMode ? (customTitle || 'Custom AI Quiz') : subject?.name;
 
   return (
-    <div className="bg-gray-900 min-h-screen">
+    <div className="min-h-screen relative z-[1]">
       <Header
         showBackButton
         onBack={() => {
@@ -731,9 +731,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
           }
         }}
       />
-      <div className="py-6 sm:py-12 px-2 sm:px-6 lg:px-8">
+      <div className="py-6 sm:py-10 px-3 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-5 sm:mb-7 tracking-tight">
             {displayTitle}
           </h1>
 
@@ -742,10 +742,10 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
           {!isCustomMode && !loading && quizState.questions.length > 0 && !quizCompleted && (
             <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-3">
               {/* Notes - Half Width */}
-              <div className="bg-gray-800 border border-gray-700 p-2 h-full flex flex-col">
+              <div className="bg-surface border border-surface-border/60 rounded-xl p-2.5 h-full flex flex-col">
                 <button
                   onClick={() => window.open(`/${subjectCode}/notes`, '_blank')}
-                  className="w-full h-full py-2 px-3 bg-indigo-700 hover:bg-indigo-600 text-white border border-indigo-600 font-medium text-sm transition duration-200 flex items-center justify-center gap-2"
+                  className="w-full h-full py-2.5 px-3 bg-emerald-800 hover:bg-emerald-700 text-white border border-emerald-700/45 font-medium text-sm transition-all duration-200 flex items-center justify-center gap-2 rounded-lg"
                 >
                   <BookOpen className="w-4 h-4" />
                   View Notes
@@ -754,7 +754,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
               {/* Playlists - Half Width */}
               {moduleNumbers.length > 0 && (
-                <div className="bg-gray-800 border border-gray-700 p-2">
+                <div className="bg-surface border border-surface-border/60 rounded-xl p-2.5">
                   <div className="flex flex-wrap gap-2 justify-start">
                     {moduleNumbers.map((moduleNum) => {
                       const videoLinks = subjectVideos[moduleNum] || [];
@@ -763,7 +763,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                         <button
                           key={moduleNum}
                           onClick={() => window.open(playlistUrl, '_blank')}
-                          className="flex-[0_0_calc(25%-0.375rem)] py-1.5 px-3 bg-red-700 hover:bg-red-600 text-white border border-red-600 font-medium text-sm transition duration-200 flex items-center justify-center gap-1"
+                          className="flex-[0_0_calc(25%-0.375rem)] py-1.5 px-3 bg-red-600/80 hover:bg-red-500 text-white border border-red-500/30 font-medium text-sm transition-all duration-200 flex items-center justify-center gap-1 rounded-lg"
                           title={`Module ${moduleNum} (${videoLinks.length} videos)`}
                         >
                           <Youtube className="w-3 h-3" />
@@ -779,17 +779,18 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
           {/* Full View Notes Section - when quiz NOT active */}
           {!isCustomMode && !loading && (quizState.questions.length === 0 || quizCompleted) && (
-            <div className="mb-6 bg-gray-800 border border-gray-700 p-4">
-              <h2 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
-                <BookOpen className="w-6 h-6 text-indigo-400" />
+            <div className="mb-6 bg-surface border border-surface-border/60 rounded-xl p-5">
+              <h2 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
+                <BookOpen className="w-5 h-5 text-emerald-400" />
                 Study Materials
               </h2>
               <button
                 onClick={() => router.push(`/${subjectCode}/notes`)}
-                className="w-full py-2.5 bg-indigo-700 hover:bg-indigo-600 text-white border border-indigo-600 font-semibold transition duration-200 flex items-center justify-center gap-2"
+                className="w-full py-3 bg-gradient-to-r from-emerald-900 to-emerald-800 hover:from-emerald-800 hover:to-emerald-700 text-white border border-emerald-700/35 font-semibold transition-all duration-200 flex items-center justify-center gap-2 rounded-xl shadow-md"
               >
                 <BookOpen className="w-5 h-5" />
                 View Notes
+                <ArrowRight className="w-4 h-4" />
               </button>
             </div>
           )}
@@ -797,9 +798,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
           {/* Full Video Playlists Section - when quiz NOT active */}
           {!isCustomMode && !loading && moduleNumbers.length > 0 && (quizState.questions.length === 0 || quizCompleted) && (
-            <div className="mb-6 bg-gray-800 border border-gray-700 p-4">
-              <h2 className="text-xl font-bold text-white mb-3 flex items-center gap-2">
-                <Youtube className="w-6 h-6 text-red-500" />
+            <div className="mb-6 bg-surface border border-surface-border/60 rounded-xl p-5">
+              <h2 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
+                <Youtube className="w-5 h-5 text-red-400" />
                 Video Playlists
               </h2>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
@@ -812,9 +813,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       key={moduleNum}
                       onClick={() => window.open(playlistUrl, '_blank')}
                       disabled={!playlistUrl}
-                      className={`py-2.5 px-4 font-semibold transition duration-200 flex items-center justify-center gap-2 ${playlistUrl
-                        ? 'bg-red-700 hover:bg-red-600 text-white border border-red-600'
-                        : 'bg-gray-700 text-gray-400 border border-gray-600 cursor-not-allowed'
+                      className={`py-2.5 px-4 font-semibold transition-all duration-200 flex items-center justify-center gap-2 rounded-lg ${playlistUrl
+                        ? 'bg-red-600/80 hover:bg-red-500 text-white border border-red-500/30'
+                        : 'bg-slate-800/50 text-slate-500 border border-slate-700/40 cursor-not-allowed'
                         }`}
                       title={playlistUrl ? `Open Module ${moduleNum} playlist (${videoLinks.length} videos)` : 'No videos available'}
                     >
@@ -829,7 +830,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
           {loading && (
             <div className="text-center py-12">
-              <p className="text-gray-300">
+              <p className="text-slate-400">
                 Loading questions...
               </p>
             </div>
@@ -837,9 +838,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
 
           {!isCustomMode && !loading && quizState.questions.length === 0 && (
-            <div className="mb-6 bg-gray-800 border border-gray-700 p-4">
-              <h2 className="text-xl font-bold text-white mb-4 flex items-center gap-2">
-                <svg className="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="mb-6 bg-surface border border-surface-border/60 rounded-xl p-5">
+              <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                <svg className="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
                 </svg>
                 Practice Quiz
@@ -853,7 +854,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
           )}
 
           {!loading && quizCompleted && (
-            <div className="bg-gray-800 border border-gray-700 p-4 sm:p-6 mb-8">
+            <div className="bg-surface border border-surface-border/60 rounded-xl p-4 sm:p-6 mb-8 shadow-card">
               {!reviseMode && (
                 <>
                   <h2 className="text-xl sm:text-2xl font-bold mb-4 text-white">
@@ -869,19 +870,19 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
               )}
 
               {/* Results View Filters */}
-              <div className="mb-6 p-4 bg-gray-900/50 border border-gray-700 rounded-xl">
+              <div className="mb-6 p-4 bg-surface-dark/60 border border-surface-border/40 rounded-xl">
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
                   <div className="flex-1 w-full">
-                    <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Filter by Module</label>
+                    <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Filter by Module</label>
                     <ModuleSelector
                       modules={availableModules}
                       selectedModule={selectedModule}
                       onSelect={handleModuleChange}
                     />
                   </div>
-                  <div className="hidden md:block w-px h-10 bg-gray-700"></div>
+                  <div className="hidden md:block w-px h-10 bg-slate-700/50"></div>
                   <div className="flex-1 w-full">
-                    <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Filter by Source</label>
+                    <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Filter by Source</label>
                     <SourceSelector
                       sources={availableSources}
                       selectedSource={selectedSource}
@@ -895,14 +896,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                 {/* Search Box */}
                 <div className="flex-1 relative">
                   <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
-                    <Search className="h-5 w-5 text-gray-400" />
+                    <Search className="h-5 w-5 text-slate-500" />
                   </div>
                   <input
                     type="text"
                     placeholder="Search questions or options..."
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    className="w-full pl-10 pr-4 py-2 bg-gray-700 border border-gray-600 text-white focus:outline-none focus:ring-2 focus:ring-indigo-500 transition duration-200"
+                    className="w-full pl-10 pr-4 py-2.5 bg-surface-dark/60 border border-surface-border/60 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/50 focus:border-emerald-500/50 transition-all duration-200"
                   />
                 </div>
 
@@ -910,9 +911,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                   {!reviseMode && (
                     <button
                       onClick={() => setShowAllQuestions(!showAllQuestions)}
-                      className={`px-4 py-2 border font-semibold transition duration-200 ${showAllQuestions
-                        ? 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
-                        : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
+                      className={`px-4 py-2 border font-semibold transition-all duration-200 rounded-lg ${showAllQuestions
+                        ? 'bg-emerald-600/80 text-white border-emerald-500/40 hover:bg-emerald-500'
+                        : 'bg-slate-700/60 text-slate-200 border-slate-600/40 hover:bg-slate-600'
                         }`}
                     >
                       {showAllQuestions ? 'All Questions' : 'Incorrect Questions'}
@@ -920,9 +921,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                   )}
                   <button
                     onClick={() => setHideWrongOptions(!hideWrongOptions)}
-                    className={`px-4 py-2 border font-semibold transition duration-200 ${hideWrongOptions
-                      ? 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
-                      : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
+                    className={`px-4 py-2 border font-semibold transition-all duration-200 rounded-lg ${hideWrongOptions
+                      ? 'bg-emerald-600/80 text-white border-emerald-500/40 hover:bg-emerald-500'
+                      : 'bg-slate-700/60 text-slate-200 border-slate-600/40 hover:bg-slate-600'
                       }`}
                   >
                     {hideWrongOptions ? 'Hide Options' : 'Show Options'}
@@ -935,9 +936,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       // Reset all individual overrides when global toggle is used
                       setIndividualAnswersVisible({});
                     }}
-                    className={`px-4 py-2 border font-semibold transition duration-200 ${!globalAnswersVisible
-                      ? 'bg-amber-700 text-white border-amber-600 hover:bg-amber-600'
-                      : 'bg-gray-700 text-gray-200 border-gray-600 hover:bg-gray-600'
+                    className={`px-4 py-2 border font-semibold transition-all duration-200 rounded-lg ${!globalAnswersVisible
+                      ? 'bg-amber-600/80 text-white border-amber-500/40 hover:bg-amber-500'
+                      : 'bg-slate-700/60 text-slate-200 border-slate-600/40 hover:bg-slate-600'
                       }`}
                   >
                     {!globalAnswersVisible ? 'Show Correct' : 'Hide Correct'}
@@ -945,7 +946,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
                   <button
                     onClick={downloadCurrentQuiz}
-                    className="px-4 py-2 border font-semibold transition duration-200 bg-purple-700 text-white border-purple-600 hover:bg-purple-600 flex items-center gap-2"
+                    className="px-4 py-2 border font-semibold transition-all duration-200 rounded-lg bg-purple-600/80 text-white border-purple-500/40 hover:bg-purple-500 flex items-center gap-2"
                     title="Export quiz as JSON file"
                   >
                     <Download size={16} /> Export
@@ -976,15 +977,15 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       return (
                         <div
                           key={idx}
-                          className={`mb-4 p-4 border ${isCorrect
-                            ? 'bg-green-900/20 border-green-800'
-                            : 'bg-red-900/30 border-red-800'
+                          className={`mb-4 p-4 border rounded-xl ${isCorrect
+                            ? 'bg-emerald-900/15 border-emerald-800/40'
+                            : 'bg-red-900/15 border-red-800/40'
                             }`}
                         >
                           {/* Question Number, Module, and Source Metadata */}
                           <div className="mb-3 flex items-center justify-between">
                             <div className="flex items-center gap-2">
-                              <span className="px-2 py-0.5 bg-gray-700/50 border border-gray-600 text-gray-300 font-medium text-xs">
+                              <span className="px-2 py-0.5 bg-slate-700/50 border border-slate-600/40 text-slate-300 font-medium text-xs rounded-md">
                                 Q{idx + 1}
                               </span>
                               <button
@@ -995,9 +996,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                                     [idx]: !currentVisible
                                   }));
                                 }}
-                                className={`p-1 border transition-colors ${(individualAnswersVisible[idx] ?? globalAnswersVisible)
-                                  ? 'bg-green-700 text-white border-green-600 hover:bg-green-600'
-                                  : 'bg-gray-700 text-gray-400 border-gray-600 hover:bg-gray-600'
+                                className={`p-1 border transition-colors rounded-md ${(individualAnswersVisible[idx] ?? globalAnswersVisible)
+                                  ? 'bg-emerald-700/80 text-white border-emerald-600/50 hover:bg-emerald-600'
+                                  : 'bg-slate-700/60 text-slate-400 border-slate-600/40 hover:bg-slate-600'
                                   }`}
                                 title="Toggle Answer Visibility"
                               >
@@ -1006,17 +1007,17 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                             </div>
                             <div className="flex gap-2 text-xs">
                               {q.isSubjective && (
-                                <span className="px-2 py-1 bg-yellow-900/50 border border-yellow-700 text-yellow-300 font-medium">
+                                <span className="px-2 py-1 bg-yellow-900/40 border border-yellow-700/40 text-yellow-300 font-medium rounded-md">
                                   Subjective
                                 </span>
                               )}
                               {q.module && (
-                                <span className="px-2 py-1 bg-indigo-900/50 border border-indigo-700 text-indigo-300 font-medium">
+                                <span className="px-2 py-1 bg-emerald-900/30 border border-emerald-700/40 text-emerald-300 font-medium rounded-md">
                                   Mod {q.module}
                                 </span>
                               )}
                               {q.source && (
-                                <span className="px-2 py-1 bg-purple-900/50 border border-purple-700 text-purple-300 font-medium">
+                                <span className="px-2 py-1 bg-purple-900/30 border border-purple-700/40 text-purple-300 font-medium rounded-md">
                                   {q.source}
                                 </span>
                               )}
@@ -1098,7 +1099,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                     return q.text.toLowerCase().includes(query) ||
                       (q.options && Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(query)));
                   }).length === 0 && (
-                      <p className="text-gray-400 text-center py-8">No matching questions found.</p>
+                      <p className="text-slate-500 text-center py-8">No matching questions found.</p>
                     )}
                 </div>
               ) : (
@@ -1117,21 +1118,21 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       .map((q, index) => (
                         <div
                           key={index}
-                          className="mb-4 p-4 bg-red-900/30 border border-red-800"
+                          className="mb-4 p-4 bg-red-900/15 border border-red-800/40 rounded-xl"
                         >
                           {/* Question Number, Module, and Source Metadata */}
                           <div className="mb-3 flex items-center justify-between">
-                            <span className="px-2 py-0.5 bg-gray-700/50 border border-gray-600 text-gray-300 font-medium text-xs">
+                            <span className="px-2 py-0.5 bg-slate-700/50 border border-slate-600/40 text-slate-300 font-medium text-xs rounded-md">
                               Q{quizState.questions.indexOf(q) + 1}
                             </span>
                             <div className="flex gap-2 text-xs">
                               {q.module && (
-                                <span className="px-2 py-1 bg-indigo-900/50 border border-indigo-700 text-indigo-300 font-medium">
+                                <span className="px-2 py-1 bg-emerald-900/30 border border-emerald-700/40 text-emerald-300 font-medium rounded-md">
                                   Mod {q.module}
                                 </span>
                               )}
                               {q.source && (
-                                <span className="px-2 py-1 bg-purple-900/50 border border-purple-700 text-purple-300 font-medium">
+                                <span className="px-2 py-1 bg-purple-900/30 border border-purple-700/40 text-purple-300 font-medium rounded-md">
                                   {q.source}
                                 </span>
                               )}
@@ -1169,7 +1170,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                                         ? 'font-bold text-green-400'
                                         : isUserAnswer
                                           ? 'text-red-400'
-                                          : 'text-gray-400'
+                                          : 'text-slate-500'
                                         }`}
                                     >
                                       <span className="shrink-0">{key}:</span>
@@ -1192,7 +1193,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                             </div>
                           )}
                           {q.explanation && (
-                            <div className="mt-2 text-xs sm:text-sm text-blue-300 bg-blue-900/10 p-2 border-l-2 border-blue-700 prose prose-invert prose-indigo max-w-none leading-loose">
+                            <div className="mt-2 text-xs sm:text-sm text-slate-300 bg-emerald-900/10 p-3 border-l-2 border-emerald-600/50 rounded-r-lg prose prose-invert prose-indigo max-w-none leading-loose">
                               <ReactMarkdown
                                 remarkPlugins={[remarkGfm, remarkMath]}
                                 rehypePlugins={[rehypeKatex]}
@@ -1209,7 +1210,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       return q.text.toLowerCase().includes(query) ||
                         (q.options && Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(query)));
                     }).length === 0 && (
-                        <p className="text-gray-400 text-center py-8">No matching incorrect questions found.</p>
+                        <p className="text-slate-500 text-center py-8">No matching incorrect questions found.</p>
                       )}
                   </div>
                 )
@@ -1255,17 +1256,17 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
               </div>
 
               <div className="lg:col-span-3">
-                <div className="mb-6 space-y-4 bg-gray-800 border border-gray-700 p-4 rounded-lg shadow-sm">
+                <div className="mb-6 space-y-4 bg-surface border border-surface-border/60 p-4 rounded-xl shadow-card">
                   <div>
-                    <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Module</label>
+                    <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Module</label>
                     <ModuleSelector
                       modules={availableModules}
                       selectedModule={selectedModule}
                       onSelect={handleModuleChange}
                     />
                   </div>
-                  <div className="pt-2 border-t border-gray-700/50">
-                    <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2">Source</label>
+                  <div className="pt-2 border-t border-slate-700/40">
+                    <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Source</label>
                     <SourceSelector
                       sources={availableSources}
                       selectedSource={selectedSource}
@@ -1283,21 +1284,21 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                 />
                 <button
                   onClick={finishQuiz}
-                  className="w-full mt-4 px-4 sm:px-6 py-3 bg-green-700 text-white border border-green-600 font-semibold hover:bg-green-600 transition duration-200 flex items-center justify-center"
+                  className="w-full mt-4 px-4 sm:px-6 py-3 bg-emerald-800 text-white border border-emerald-700/45 font-semibold hover:bg-emerald-700 transition-all duration-200 flex items-center justify-center rounded-xl shadow-md"
                 >
                   Finish Quiz <RefreshCw className="ml-2" size={20} />
                 </button>
 
                 <button
                   onClick={clearAllResponses}
-                  className="w-full mt-2 px-4 sm:px-6 py-2 bg-gray-700 text-gray-300 border border-gray-600 font-semibold hover:bg-gray-600 hover:text-white transition duration-200 flex items-center justify-center text-sm"
+                  className="w-full mt-2 px-4 sm:px-6 py-2 bg-slate-700/60 text-slate-300 border border-slate-600/40 font-semibold hover:bg-slate-600 hover:text-white transition-all duration-200 flex items-center justify-center text-sm rounded-xl"
                 >
                   Clear All Responses
                 </button>
 
                 <button
                   onClick={downloadCurrentQuiz}
-                  className="w-full mt-2 px-4 sm:px-6 py-2 bg-purple-700 text-white border border-purple-600 font-semibold hover:bg-purple-600 transition duration-200 flex items-center justify-center text-sm"
+                  className="w-full mt-2 px-4 sm:px-6 py-2 bg-purple-600/80 text-white border border-purple-500/40 font-semibold hover:bg-purple-500 transition-all duration-200 flex items-center justify-center text-sm rounded-xl"
                   title="Export quiz as JSON file"
                 >
                   <Download className="mr-2" size={16} /> Export Quiz
@@ -1320,7 +1321,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
           {/* Fixed Navigation Buttons */}
           {!loading && !quizCompleted && quizState.questions.length > 0 && (
-            <div className="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 px-2 sm:px-6 lg:px-8 py-3 sm:py-4 z-40">
+            <div className="fixed bottom-0 left-0 right-0 bg-[#0b1120]/95 backdrop-blur-xl border-t border-slate-700/40 px-2 sm:px-6 lg:px-8 py-3 sm:py-4 z-40">
               <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
                   <div className="lg:col-span-9">
@@ -1328,7 +1329,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       {quizState.currentQuestionIndex > 0 ? (
                         <button
                           onClick={() => moveQuestion('prev')}
-                          className="px-3 sm:px-6 py-2 sm:py-3 transition duration-200 flex items-center font-semibold text-sm sm:text-base bg-indigo-700 text-white border border-indigo-600 hover:bg-indigo-600"
+                          className="px-3 sm:px-6 py-2 sm:py-3 transition-all duration-200 flex items-center font-semibold text-sm sm:text-base bg-slate-700/60 text-white border border-slate-600/40 hover:bg-slate-600 rounded-xl"
                         >
                           <ArrowLeft className="mr-1 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" /> Previous
                         </button>
@@ -1341,7 +1342,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       {quizState.currentQuestionIndex < quizState.totalQuestions - 1 ? (
                         <button
                           onClick={() => moveQuestion('next')}
-                          className="px-3 sm:px-6 py-2 sm:py-3 transition duration-200 flex items-center font-semibold text-sm sm:text-base bg-indigo-700 text-white border border-indigo-600 hover:bg-indigo-600"
+                          className="px-3 sm:px-6 py-2 sm:py-3 transition-all duration-200 flex items-center font-semibold text-sm sm:text-base bg-emerald-800 text-white border border-emerald-700/45 hover:bg-emerald-700 rounded-xl shadow-md"
                         >
                           Next <ArrowRight className="ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                         </button>
@@ -1361,21 +1362,21 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
         {
           showConfirmation && (
-            <div className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50">
-              <div className="p-6 bg-gray-800 border border-gray-700 max-w-sm w-full">
-                <p className="mb-4 text-gray-200">
+            <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 z-50">
+              <div className="p-6 bg-surface border border-surface-border/60 max-w-sm w-full rounded-xl shadow-card">
+                <p className="mb-4 text-slate-300">
                   Are you sure you want to go back to the main menu? Your progress will be lost.
                 </p>
                 <div className="flex justify-end gap-2">
                   <button
                     onClick={() => handleConfirmation(false)}
-                    className="px-4 py-2 bg-gray-700 text-gray-200 border border-gray-600 hover:bg-gray-600 transition duration-200"
+                    className="px-4 py-2 bg-slate-700/60 text-slate-200 border border-slate-600/40 hover:bg-slate-600 transition-all duration-200 rounded-lg"
                   >
                     Cancel
                   </button>
                   <button
                     onClick={() => handleConfirmation(true)}
-                    className="px-4 py-2 bg-red-700 text-white border border-red-600 hover:bg-red-600 transition duration-200"
+                    className="px-4 py-2 bg-red-600/80 text-white border border-red-500/40 hover:bg-red-500 transition-all duration-200 rounded-lg"
                   >
                     Confirm
                   </button>

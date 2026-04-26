@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import {
   ArrowRight,
   MessageSquare,
@@ -9,27 +9,14 @@ import {
   ExternalLink,
   BookOpen
 } from 'lucide-react';
-import { getSubjectsByBatch, getTermsForBatch, getDisplayNameForAlias, getIconForCode } from '@/lib/subjectMapping';
+import { getSubjectsByBatch, getDisplayNameForAlias, getIconForCode } from '@/lib/subjectMapping';
 import { useBatch } from '@/contexts/BatchContext';
 import { useRouter } from 'next/navigation';
 import CustomQuizGenerator from './CustomQuizGenerator';
 
-const SubjectSelector: React.FC = () => {
+const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) => {
   const router = useRouter();
   const { selectedBatch, setSelectedBatch } = useBatch();
-  const availableTerms = getTermsForBatch(selectedBatch);
-  const latestVisibleTerm = availableTerms[availableTerms.length - 1] ?? 1;
-  const [selectedTerm, setSelectedTerm] = useState<number>(latestVisibleTerm);
-
-  // When batch changes, clamp selected term to a valid one for that batch
-  React.useEffect(() => {
-    const terms = getTermsForBatch(selectedBatch);
-    setSelectedTerm(terms[terms.length - 1] ?? 1);
-  }, [selectedBatch]);
-
-  const handleTermChange = (term: number) => {
-    setSelectedTerm(term);
-  };
 
   // Subjects for current batch + term
   const subjectsForTerm = getSubjectsByBatch(selectedBatch, selectedTerm);
@@ -89,55 +76,35 @@ const SubjectSelector: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-12 max-w-4xl">
-      {/* Term Selector */}
-      <div className="flex justify-center mb-6 sm:mb-8">
-        <div className="inline-flex bg-gray-800 border border-gray-700 p-1 gap-1">
-          {getTermsForBatch(selectedBatch).map((term) => (
-            <button
-              key={term}
-              onClick={() => handleTermChange(term)}
-              className={`px-6 py-2.5 font-semibold text-sm sm:text-base transition-all duration-200 ${selectedTerm === term
-                ? 'bg-indigo-600 text-white shadow-lg'
-                : 'bg-transparent text-gray-400 hover:text-white hover:bg-gray-700'
-                }`}
-            >
-              Term {term}
-            </button>
-          ))}
-        </div>
-      </div>
+    <div className="container mx-auto px-3 sm:px-4 py-2 sm:py-4 max-w-4xl relative z-[1]">
+      {/* Term heading */}
+      <h2 className="text-xl sm:text-2xl font-extrabold text-white tracking-tight mb-4 sm:mb-6 px-1 text-center">
+        Term {selectedTerm}
+      </h2>
 
-      <div className="text-center mb-6 sm:mb-12">
-        <h1 className="text-2xl sm:text-4xl font-bold mb-2 sm:mb-4 text-white">
-          Term {selectedTerm}
-        </h1>
-        <p className="text-sm sm:text-lg text-gray-400">
-          Ace your BBA-DBE exams with comprehensive notes, compiled playlists, previous year questions, and interactive quizzes.
-        </p>
-      </div>
+
 
       <div className="space-y-3">
         {subjectsForTerm.map(({ subject, alias }) => (
           <div
             key={alias.code}
-            className="bg-gray-800 border border-gray-700 hover:border-indigo-500 hover:bg-gray-750 transition-all duration-200 cursor-pointer group"
+            className="bg-surface border border-surface-border/60 hover:border-emerald-500/40 rounded-xl transition-all duration-200 cursor-pointer group shadow-card hover:shadow-card-hover"
             onClick={() => handleSubjectSelect(alias.code)}
           >
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-4 sm:p-6">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-4 sm:p-5">
               {/* Subject Info */}
               <div className="flex items-center space-x-3 sm:space-x-4 flex-1 mb-3 sm:mb-0">
-                <div className="bg-indigo-600 p-2 sm:p-3 group-hover:bg-indigo-500 transition-colors shrink-0">
+                <div className="bg-emerald-600/90 p-2.5 sm:p-3 rounded-xl group-hover:bg-emerald-500 transition-colors shrink-0 shadow-glow-emerald">
                   {React.createElement(getIconForCode(alias.code), {
-                    className: 'w-6 h-6 text-white',
+                    className: 'w-5 h-5 sm:w-6 sm:h-6 text-white',
                   })}
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3">
-                    <span className="text-xs sm:text-sm text-gray-200 bg-gray-700 px-2 py-0.5 sm:py-1 font-semibold w-fit mb-1 sm:mb-0 text-center min-w-[50px]">
+                    <span className="text-[11px] sm:text-xs text-slate-300 bg-slate-700/60 px-2 py-0.5 sm:py-1 font-semibold w-fit mb-1 sm:mb-0 text-center min-w-[50px] rounded-md border border-slate-600/30">
                       {alias.code}
                     </span>
-                    <h3 className="text-base sm:text-lg font-bold text-white leading-tight">
+                    <h3 className="text-sm sm:text-base font-bold text-white leading-tight">
                       {getDisplayNameForAlias(subject, alias)}
                     </h3>
                   </div>
@@ -146,31 +113,31 @@ const SubjectSelector: React.FC = () => {
 
               {/* Action Buttons + Arrow */}
               <div className="flex items-center justify-end mt-2 sm:mt-0 gap-3 sm:gap-4">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1.5">
                   <button
                     onClick={(e) => handleNotesClick(e, alias.code)}
-                    className="p-2 bg-indigo-600 hover:bg-indigo-500 text-white transition-colors"
+                    className="p-2 bg-indigo-600/90 hover:bg-indigo-500 text-white transition-all rounded-lg border border-indigo-500/35"
                     title="View Notes"
                   >
-                    <BookOpen className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <BookOpen className="w-4 h-4" />
                   </button>
                   <button
                     onClick={(e) => handleYoutubeClick(e, alias.code)}
-                    className="p-2 bg-red-600 hover:bg-red-500 text-white transition-colors"
+                    className="p-2 bg-red-600/80 hover:bg-red-500 text-white transition-all rounded-lg border border-red-500/30"
                     title="Watch All Videos"
                     disabled={!getAllVideosForSubject(alias.code)}
                   >
-                    <Youtube className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <Youtube className="w-4 h-4" />
                   </button>
                   <button
                     onClick={(e) => handleQuizClick(e, alias.code)}
-                    className="p-2 bg-green-600 hover:bg-green-500 text-white transition-colors"
+                    className="p-2 bg-emerald-700/85 hover:bg-emerald-600 text-white transition-all rounded-lg border border-emerald-600/35"
                     title="Start Quiz"
                   >
-                    <ClipboardList className="w-4 h-4 sm:w-5 sm:h-5" />
+                    <ClipboardList className="w-4 h-4" />
                   </button>
                 </div>
-                <ArrowRight className="w-5 h-5 sm:w-6 sm:h-6 text-gray-500 group-hover:text-indigo-400 group-hover:translate-x-1 transition-all ml-1" />
+                <ArrowRight className="w-5 h-5 text-slate-600 group-hover:text-emerald-400 group-hover:translate-x-1 transition-all ml-1" />
               </div>
             </div>
           </div>
@@ -181,8 +148,8 @@ const SubjectSelector: React.FC = () => {
       <CustomQuizGenerator />
 
       {/* Disclaimer Section */}
-      <div className="mt-12 py-6 border-t border-gray-800 flex flex-col items-center text-center">
-        <p className="text-xs text-gray-500 mb-3 font-bold">
+      <div className="mt-14 py-6 border-t border-slate-800/60 flex flex-col items-center text-center">
+        <p className="text-xs text-slate-500 mb-3 font-medium">
           Disclaimer: Do not rely solely on this for your preparation. Refer official sources for more information.
         </p>
         <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
@@ -190,7 +157,7 @@ const SubjectSelector: React.FC = () => {
             href="https://apps.iimbx.edu.in/learner-dashboard/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-xs text-indigo-400 hover:text-indigo-300 transition-colors"
+            className="flex items-center text-xs text-emerald-400/80 hover:text-emerald-300 transition-colors"
           >
             <ExternalLink className="w-3 h-3 mr-1" />
             Official Website
@@ -199,7 +166,7 @@ const SubjectSelector: React.FC = () => {
             href="https://iimblr1-my.sharepoint.com/:f:/g/personal/jayshreeg24_iimb_ac_in/IgB09mAJCjj4SIAg2PiId53ZAedwU6A7su4Jl1zLwtWSxrk?e=CjmlGO"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-xs text-indigo-400 hover:text-indigo-300 transition-colors"
+            className="flex items-center text-xs text-emerald-400/80 hover:text-emerald-300 transition-colors"
           >
             <ExternalLink className="w-3 h-3 mr-1" />
             Academic Cell Repository

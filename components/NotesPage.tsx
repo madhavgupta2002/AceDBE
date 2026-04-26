@@ -168,11 +168,11 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
 
   if (!subject) {
     return (
-      <div className="min-h-screen bg-gray-900 text-center py-12 px-4">
+      <div className="min-h-screen relative z-[1] text-center py-12 px-4">
         <p className="text-red-400 mb-4">Subject not found</p>
         <button
           onClick={() => router.push('/')}
-          className="text-indigo-400 hover:text-indigo-300"
+          className="text-emerald-400 hover:text-emerald-300"
         >
           Go back to home
         </button>
@@ -181,7 +181,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen relative z-[1]">
       {/* Print-specific styles */}
       <style jsx global>{`
         @media print {
@@ -350,16 +350,16 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
       <Header showBackButton backLink={`/${subjectCode}`} />
 
       {/* Notes Header - Font Switcher and Title */}
-      <div className="bg-gray-800 border-b border-gray-700 sticky top-[57px] sm:top-[61px] z-10 print:hidden">
+      <div className="bg-surface border-b border-surface-border/60 sticky top-[57px] sm:top-[61px] z-10 print:hidden">
         <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8 py-3 sm:py-4">
           <div className="flex items-center justify-between gap-3">
             <div className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1">
-              <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-indigo-400 shrink-0" />
+              <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-emerald-400 shrink-0" />
               <div className="min-w-0">
                 <h1 className="text-base sm:text-xl lg:text-2xl font-bold text-white leading-tight">
                   {subject.name}
                 </h1>
-                <p className="text-xs sm:text-sm text-gray-400">Notes</p>
+                <p className="text-xs sm:text-sm text-slate-400">Notes</p>
               </div>
             </div>
 
@@ -367,12 +367,12 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
             <div className="relative shrink-0">
               <button
                 onClick={() => setFontDropdownOpen(!fontDropdownOpen)}
-                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors"
+                className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 bg-slate-700/60 hover:bg-slate-600 rounded-lg transition-colors"
                 aria-label="Change font"
               >
-                <Type className="w-3 h-3 sm:w-4 sm:h-4 text-gray-300" />
-                <span className="text-xs sm:text-sm text-gray-200 hidden sm:inline">{selectedFont.name}</span>
-                <ChevronDown className={`w-3 h-3 sm:w-4 sm:h-4 text-gray-300 transition-transform ${fontDropdownOpen ? 'rotate-180' : ''}`} />
+                <Type className="w-3 h-3 sm:w-4 sm:h-4 text-slate-300" />
+                <span className="text-xs sm:text-sm text-slate-200 hidden sm:inline">{selectedFont.name}</span>
+                <ChevronDown className={`w-3 h-3 sm:w-4 sm:h-4 text-slate-300 transition-transform ${fontDropdownOpen ? 'rotate-180' : ''}`} />
               </button>
               {fontDropdownOpen && (
                 <>
@@ -380,7 +380,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                     className="fixed inset-0 z-20"
                     onClick={() => setFontDropdownOpen(false)}
                   />
-                  <div className="absolute top-full right-0 mt-2 bg-gray-800 border border-gray-700 rounded-lg shadow-xl z-30 min-w-[160px]">
+                  <div className="absolute top-full right-0 mt-2 bg-surface border border-surface-border/60 rounded-lg shadow-xl z-30 min-w-[160px]">
                     {fontOptions.map((font) => (
                       <button
                         key={font.name}
@@ -388,9 +388,9 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                           setSelectedFont(font);
                           setFontDropdownOpen(false);
                         }}
-                        className={`w-full text-left px-3 sm:px-4 py-2 text-sm transition-colors hover:bg-gray-700 first:rounded-t-lg last:rounded-b-lg ${selectedFont.name === font.name
-                          ? 'bg-indigo-600 text-white'
-                          : 'text-gray-200'
+                        className={`w-full text-left px-3 sm:px-4 py-2 text-sm transition-colors hover:bg-slate-700/60 first:rounded-t-lg last:rounded-b-lg ${selectedFont.name === font.name
+                          ? 'bg-emerald-600 text-white'
+                          : 'text-slate-200'
                           }`}
                         style={{ fontFamily: font.family }}
                       >
@@ -403,24 +403,24 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
             </div>
 
             {/* Font Size Slider */}
-            <div className="flex items-center gap-2 sm:gap-3 bg-gray-700 px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg">
-              <span className="text-[10px] sm:text-xs text-gray-400 font-bold">A</span>
+            <div className="flex items-center gap-2 sm:gap-3 bg-slate-700/60 px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg">
+              <span className="text-[10px] sm:text-xs text-slate-400 font-bold">A</span>
               <input
                 type="range"
                 min="12"
                 max="32"
                 value={fontSize}
                 onChange={(e) => setFontSize(parseInt(e.target.value))}
-                className="w-16 sm:w-24 h-1 bg-gray-600 rounded-lg appearance-none cursor-pointer accent-indigo-500"
+                className="w-16 sm:w-24 h-1 bg-slate-600 rounded-lg appearance-none cursor-pointer accent-emerald-500"
               />
-              <span className="text-sm sm:text-base text-gray-200 font-bold">A</span>
-              <span className="text-[10px] sm:text-xs text-gray-400 hidden sm:inline ml-1">{fontSize}px</span>
+              <span className="text-sm sm:text-base text-slate-200 font-bold">A</span>
+              <span className="text-[10px] sm:text-xs text-slate-400 hidden sm:inline ml-1">{fontSize}px</span>
             </div>
 
             {/* Print Button */}
             <button
               onClick={handlePrint}
-              className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 bg-indigo-700 hover:bg-indigo-600 rounded-lg transition-colors print:hidden"
+              className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 bg-emerald-700 hover:bg-emerald-600 rounded-lg transition-colors print:hidden"
               aria-label="Print notes"
               title="Print notes"
             >
@@ -434,7 +434,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 sm:pb-12">
         {loading && (
           <div className="text-center py-12">
-            <p className="text-gray-300 text-lg">Loading notes...</p>
+            <p className="text-slate-300 text-lg">Loading notes...</p>
           </div>
         )}
 
@@ -443,7 +443,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
             <p className="text-red-400 text-lg">{error}</p>
             <button
               onClick={() => router.push(`/${subjectCode}`)}
-              className="mt-4 text-indigo-400 hover:text-indigo-300"
+              className="mt-4 text-emerald-400 hover:text-emerald-300"
             >
               Back to Quiz
             </button>
@@ -456,7 +456,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
             <aside className="hidden lg:block lg:col-span-3">
               <div className="sticky top-[120px] sm:top-[126px] pt-8 self-start">
                 <div
-                  className="bg-gray-800 border border-gray-700 rounded-lg p-4 flex flex-col"
+                  className="bg-surface border border-surface-border/60 rounded-xl p-4 flex flex-col"
                   style={{
                     fontFamily: selectedFont.family,
                     maxHeight: 'calc(100vh - 160px)'
@@ -471,19 +471,19 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                     }}
                   >
                     {toc.length === 0 ? (
-                      <p className="text-gray-400 text-sm not-italic">No headings found</p>
+                      <p className="text-slate-400 text-sm not-italic">No headings found</p>
                     ) : (
                       toc.map((item, index) => (
                         <button
                           key={`${item.id}-${index}`}
                           onClick={() => scrollToHeading(item.id)}
-                          className={`block w-full text-left px-2 py-1.5 rounded transition-colors hover:bg-gray-700 hover:text-indigo-300 not-italic ${item.level === 1
+                          className={`block w-full text-left px-2 py-1.5 rounded transition-colors hover:bg-slate-700/60 hover:text-emerald-300 not-italic ${item.level === 1
                             ? 'text-white font-semibold text-sm'
                             : item.level === 2
-                              ? 'text-gray-300 text-xs ml-2'
+                              ? 'text-slate-300 text-xs ml-2'
                               : item.level === 3
-                                ? 'text-gray-400 text-xs ml-4'
-                                : 'text-gray-500 text-xs ml-6'
+                                ? 'text-slate-400 text-xs ml-4'
+                                : 'text-slate-500 text-xs ml-6'
                             }`}
                         >
                           <ReactMarkdown
@@ -523,7 +523,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                     return (
                       <h1
                         id={id}
-                        className="text-4xl font-bold text-white mt-10 mb-6 pb-2 border-b border-gray-700 scroll-mt-20 not-italic"
+                        className="text-4xl font-bold text-white mt-10 mb-6 pb-2 border-b border-slate-700/40 scroll-mt-20 not-italic"
                         {...props}
                       >
                         {children}
@@ -577,17 +577,17 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                   ),
                   // Paragraphs with better readability - optimized for reading
                   p: ({ node, ...props }) => (
-                    <p className="text-gray-200 mb-5 leading-7 text-base font-normal not-italic" {...props} />
+                    <p className="text-slate-200 mb-5 leading-7 text-base font-normal not-italic" {...props} />
                   ),
                   // Lists with better spacing
                   ul: ({ node, ...props }) => (
-                    <ul className="list-disc list-outside text-gray-200 mb-5 space-y-2.5 ml-6 not-italic" {...props} />
+                    <ul className="list-disc list-outside text-slate-200 mb-5 space-y-2.5 ml-6 not-italic" {...props} />
                   ),
                   ol: ({ node, ...props }) => (
-                    <ol className="list-decimal list-outside text-gray-200 mb-5 space-y-2.5 ml-6 not-italic" {...props} />
+                    <ol className="list-decimal list-outside text-slate-200 mb-5 space-y-2.5 ml-6 not-italic" {...props} />
                   ),
                   li: ({ node, ...props }) => (
-                    <li className="text-gray-200 leading-7 pl-2 marker:text-indigo-400 not-italic" {...props} />
+                    <li className="text-slate-200 leading-7 pl-2 marker:text-emerald-400 not-italic" {...props} />
                   ),
                   // Code blocks
                   code: ({ node, className, children, ...props }: any) => {
@@ -595,7 +595,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                     if (isInline) {
                       return (
                         <code
-                          className="bg-gray-800 text-indigo-300 px-1.5 py-0.5 rounded text-sm font-mono"
+                          className="bg-surface text-emerald-300 px-1.5 py-0.5 rounded text-sm font-mono"
                           {...props}
                         >
                           {children}
@@ -604,7 +604,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                     }
                     return (
                       <code
-                        className="block bg-gray-800 text-gray-200 p-4 rounded-lg overflow-x-auto mb-5 font-mono text-sm border border-gray-700"
+                        className="block bg-surface text-slate-200 p-4 rounded-lg overflow-x-auto mb-5 font-mono text-sm border border-surface-border/60"
                         {...props}
                       >
                         {children}
@@ -612,21 +612,21 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                     );
                   },
                   pre: ({ node, children, ...props }: any) => (
-                    <pre className="bg-gray-800 rounded-lg p-4 overflow-x-auto mb-5 border border-gray-700" {...props}>
+                    <pre className="bg-surface rounded-lg p-4 overflow-x-auto mb-5 border border-surface-border/60" {...props}>
                       {children}
                     </pre>
                   ),
                   // Blockquotes
                   blockquote: ({ node, ...props }) => (
                     <blockquote
-                      className="border-l-4 border-indigo-500 pl-5 italic text-gray-300 my-5 bg-gray-800/50 py-2 rounded-r"
+                      className="border-l-4 border-emerald-500 pl-5 italic text-slate-300 my-5 bg-surface/50 py-2 rounded-r"
                       {...props}
                     />
                   ),
                   // Links
                   a: ({ node, ...props }) => (
                     <a
-                      className="text-indigo-400 hover:text-indigo-300 underline transition-colors"
+                      className="text-emerald-400 hover:text-emerald-300 underline transition-colors"
                       {...props}
                     />
                   ),
@@ -634,35 +634,35 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                   table: ({ node, ...props }) => (
                     <div className="overflow-x-auto mb-5 my-5">
                       <table
-                        className="min-w-full border-collapse border border-gray-700"
+                        className="min-w-full border-collapse border border-surface-border/60"
                         {...props}
                       />
                     </div>
                   ),
                   thead: ({ node, ...props }) => (
-                    <thead className="bg-gray-800" {...props} />
+                    <thead className="bg-surface" {...props} />
                   ),
                   tbody: ({ node, ...props }) => (
                     <tbody {...props} />
                   ),
                   tr: ({ node, ...props }) => (
-                    <tr className="border-b border-gray-700 even:bg-gray-800/30 hover:bg-gray-800/50 transition-colors" {...props} />
+                    <tr className="border-b border-surface-border/60 even:bg-surface/30 hover:bg-surface/50 transition-colors" {...props} />
                   ),
                   th: ({ node, ...props }) => (
                     <th
-                      className="border border-gray-700 px-4 py-3 text-left font-semibold text-white bg-gray-800"
+                      className="border border-surface-border/60 px-4 py-3 text-left font-semibold text-white bg-surface"
                       {...props}
                     />
                   ),
                   td: ({ node, ...props }) => (
                     <td
-                      className="border border-gray-700 px-4 py-3 text-gray-200"
+                      className="border border-surface-border/60 px-4 py-3 text-slate-200"
                       {...props}
                     />
                   ),
                   // Horizontal rule
                   hr: ({ node, ...props }) => (
-                    <hr className="border-gray-700 my-8" {...props} />
+                    <hr className="border-slate-700/40 my-8" {...props} />
                   ),
                   // Strong/Bold
                   strong: ({ node, ...props }) => (
@@ -670,7 +670,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                   ),
                   // Emphasis/Italic
                   em: ({ node, ...props }) => (
-                    <em className="italic text-gray-300" {...props} />
+                    <em className="italic text-slate-300" {...props} />
                   ),
                 }}
               >

@@ -146,23 +146,23 @@ export default function CgpaCalculator() {
     if (window.confirm('Clear all CGPA inputs?')) setMarksById({});
   };
 
-  const inputCls = 'bg-gray-900 border border-gray-700 focus:outline-none focus:ring-1 focus:ring-indigo-500/70 focus:border-indigo-500/70 text-gray-100 rounded px-2 py-1 text-xs tabular-nums placeholder:text-gray-600 transition-colors w-full';
+  const inputCls = 'bg-surface-dark border border-surface-border/60 focus:outline-none focus:ring-1 focus:ring-emerald-500/70 focus:border-emerald-500/70 text-slate-100 rounded-lg px-2 py-1 text-xs tabular-nums placeholder:text-slate-600 transition-colors w-full';
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen relative z-[1] text-white">
       <div className="max-w-6xl mx-auto px-3 sm:px-4 lg:px-6 py-4 sm:py-6">
 
         {/* ── Header ── */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-4">
           <div>
             <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight">CGPA Calculator</h1>
-            <p className="text-[11px] text-gray-500 mt-0.5">
-              Enter <span className="text-gray-300 font-medium">Internal + Final</span>, or fill <span className="text-gray-300 font-medium">Total</span> directly. Grade dropdown overrides auto-calc.
+            <p className="text-[11px] text-slate-500 mt-0.5">
+              Enter <span className="text-slate-300 font-medium">Internal + Final</span>, or fill <span className="text-slate-300 font-medium">Total</span> directly. Grade dropdown overrides auto-calc.
             </p>
           </div>
           <button
             onClick={clearAll}
-            className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-gray-800 hover:bg-gray-750 border border-gray-700 hover:border-red-800/60 text-gray-400 hover:text-red-400 rounded transition-all text-xs font-medium self-start sm:self-auto"
+            className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-surface hover:bg-surface-light border border-surface-border/60 hover:border-red-800/60 text-slate-400 hover:text-red-400 rounded-lg transition-all text-xs font-medium self-start sm:self-auto"
             type="button"
           >
             <Trash2 className="w-3.5 h-3.5" />
@@ -173,25 +173,25 @@ export default function CgpaCalculator() {
         {/* ── Summary bar ── */}
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-2.5 mb-4">
           {/* CGPA tile */}
-          <div className="lg:col-span-1 bg-gray-800/70 border border-gray-700/70 rounded-lg p-3 flex flex-col justify-between">
-            <div className="flex items-center gap-1.5 text-[10px] font-semibold text-gray-500 uppercase tracking-widest">
-              <Award className="w-3.5 h-3.5 text-indigo-400" />
+          <div className="lg:col-span-1 bg-surface border border-surface-border/60 rounded-xl p-3 flex flex-col justify-between">
+            <div className="flex items-center gap-1.5 text-[10px] font-semibold text-slate-500 uppercase tracking-widest">
+              <Award className="w-3.5 h-3.5 text-emerald-400" />
               Overall CGPA
             </div>
-            <div className={`mt-1 text-3xl font-extrabold tabular-nums tracking-tight ${overallStats.cgpa !== null ? 'text-white' : 'text-gray-600'}`}>
+            <div className={`mt-1 text-3xl font-extrabold tabular-nums tracking-tight ${overallStats.cgpa !== null ? 'text-white' : 'text-slate-600'}`}>
               {fmt(overallStats.cgpa)}
             </div>
-            <div className="text-[10px] text-gray-600 mt-0.5">{overallStats.credits} credits counted</div>
+            <div className="text-[10px] text-slate-600 mt-0.5">{overallStats.credits} credits counted</div>
           </div>
 
           {/* Term SGPA grid */}
-          <div className="lg:col-span-3 bg-gray-800/70 border border-gray-700/70 rounded-lg p-3">
-            <div className="text-[10px] font-semibold text-gray-600 uppercase tracking-widest mb-2">Term-wise SGPA</div>
+          <div className="lg:col-span-3 bg-surface border border-surface-border/60 rounded-xl p-3">
+            <div className="text-[10px] font-semibold text-slate-600 uppercase tracking-widest mb-2">Term-wise SGPA</div>
             <div className="grid grid-cols-9 gap-1.5">
               {termStats.map(({ term, sgpa }) => (
-                <div key={term} className="bg-gray-900/60 border border-gray-700/60 rounded text-center py-1.5 px-1">
-                  <div className="text-[9px] font-bold text-gray-600 uppercase tracking-widest">T{term}</div>
-                  <div className={`text-xs font-bold tabular-nums mt-0.5 ${sgpa !== null ? 'text-gray-100' : 'text-gray-700'}`}>
+                <div key={term} className="bg-surface-dark/60 border border-surface-border/40 rounded-lg text-center py-1.5 px-1">
+                  <div className="text-[9px] font-bold text-slate-600 uppercase tracking-widest">T{term}</div>
+                  <div className={`text-xs font-bold tabular-nums mt-0.5 ${sgpa !== null ? 'text-slate-100' : 'text-slate-700'}`}>
                     {fmt(sgpa)}
                   </div>
                 </div>
@@ -214,28 +214,28 @@ export default function CgpaCalculator() {
             const yearGPA = yearCredits > 0 ? yearQP / yearCredits : null;
 
             return (
-              <section key={year} className="bg-gray-800/50 border border-gray-700/60 rounded-lg overflow-hidden">
+              <section key={year} className="bg-surface/50 border border-surface-border/40 rounded-xl overflow-hidden">
 
                 {/* Year header */}
-                <div className="flex items-center justify-between px-3 py-2 border-b border-gray-700/50 bg-gray-800/80">
+                <div className="flex items-center justify-between px-3 py-2 border-b border-surface-border/40 bg-surface/80">
                   <div className="flex items-baseline gap-2">
-                    <h2 className="text-sm font-extrabold text-gray-100">Year {year}</h2>
-                    <span className="text-[10px] text-gray-600">Terms {terms[0]}–{terms[2]}</span>
+                    <h2 className="text-sm font-extrabold text-slate-100">Year {year}</h2>
+                    <span className="text-[10px] text-slate-600">Terms {terms[0]}–{terms[2]}</span>
                   </div>
-                  <div className="flex items-center gap-1.5 text-[10px] text-gray-500">
+                  <div className="flex items-center gap-1.5 text-[10px] text-slate-500">
                     <span>Year GPA</span>
-                    <span className={`font-bold tabular-nums text-xs ${yearGPA !== null ? 'text-indigo-300' : 'text-gray-700'}`}>
+                    <span className={`font-bold tabular-nums text-xs ${yearGPA !== null ? 'text-emerald-300' : 'text-slate-700'}`}>
                       {fmt(yearGPA)}
                     </span>
-                    {yearCredits > 0 && <span className="text-gray-700">· {yearCredits} cr</span>}
+                    {yearCredits > 0 && <span className="text-slate-700">· {yearCredits} cr</span>}
                   </div>
                 </div>
 
                 {/* Column header row */}
-                <div className="grid gap-0 bg-gray-900/30 border-b border-gray-700/40"
+                <div className="grid gap-0 bg-surface-dark/30 border-b border-surface-border/40"
                   style={{ gridTemplateColumns: '5rem 1fr 2rem 1fr 12rem' }}>
                   {['Code · Subject', '', 'Cr', 'Marks (Internal + Final = Total or Direct)', 'Grade'].map((h, i) => (
-                    <div key={i} className="px-3 py-1.5 text-[9px] font-bold text-gray-600 uppercase tracking-widest"
+                    <div key={i} className="px-3 py-1.5 text-[9px] font-bold text-slate-600 uppercase tracking-widest"
                       style={i === 1 ? { gridColumn: 'span 1' } : {}}>
                       {h}
                     </div>
@@ -251,16 +251,16 @@ export default function CgpaCalculator() {
                   return (
                     <div key={term}>
                       {/* Term sub-header */}
-                      <div className="flex items-center gap-2 px-3 py-1 bg-gray-900/50 border-b border-gray-700/30">
-                        <span className="text-[9px] font-bold text-gray-600 uppercase tracking-widest shrink-0">Term {term}</span>
-                        <div className="flex-1 h-px bg-gray-700/30" />
+                      <div className="flex items-center gap-2 px-3 py-1 bg-surface-dark/50 border-b border-surface-border/30">
+                        <span className="text-[9px] font-bold text-slate-600 uppercase tracking-widest shrink-0">Term {term}</span>
+                        <div className="flex-1 h-px bg-surface-border/30" />
                         {termSGPA !== null && (
-                          <span className="text-[9px] font-semibold text-indigo-400/80 bg-indigo-950/40 border border-indigo-900/50 rounded-full px-2 py-0.5 tabular-nums">
+                          <span className="text-[9px] font-semibold text-emerald-400/80 bg-emerald-950/40 border border-emerald-900/50 rounded-full px-2 py-0.5 tabular-nums">
                             SGPA {fmt(termSGPA)}
                           </span>
                         )}
                         {tStat.credits > 0 && (
-                          <span className="text-[9px] text-gray-700 tabular-nums shrink-0">{tStat.credits} cr</span>
+                          <span className="text-[9px] text-slate-700 tabular-nums shrink-0">{tStat.credits} cr</span>
                         )}
                       </div>
 
@@ -278,21 +278,21 @@ export default function CgpaCalculator() {
                         return (
                           <div
                             key={subject.id}
-                            className={`grid items-center hover:bg-gray-900/30 transition-colors ${!isLast ? 'border-b border-gray-700/25' : ''}`}
+                            className={`grid items-center hover:bg-surface-dark/30 transition-colors ${!isLast ? 'border-b border-surface-border/25' : ''}`}
                             style={{ gridTemplateColumns: '5rem 1fr 2rem 1fr 12rem' }}
                           >
                             {/* Code */}
-                            <div className="px-3 py-1.5 text-[10px] font-mono text-gray-500 truncate" title={subject.code}>
+                            <div className="px-3 py-1.5 text-[10px] font-mono text-slate-500 truncate" title={subject.code}>
                               {subject.code || '—'}
                             </div>
 
                             {/* Subject name */}
-                            <div className="px-1 py-1.5 text-xs text-gray-300 truncate" title={subject.name}>
+                            <div className="px-1 py-1.5 text-xs text-slate-300 truncate" title={subject.name}>
                               {clampLabel(subject.name)}
                             </div>
 
                             {/* Credits */}
-                            <div className="px-1 py-1.5 text-[10px] text-gray-600 text-center tabular-nums">
+                            <div className="px-1 py-1.5 text-[10px] text-slate-600 text-center tabular-nums">
                               {subject.credits}
                             </div>
 
@@ -309,7 +309,7 @@ export default function CgpaCalculator() {
                                     aria-label={`${subject.name} internal marks`}
                                   />
                                 </div>
-                                <span className="text-gray-700 text-xs select-none">+</span>
+                                <span className="text-slate-700 text-xs select-none">+</span>
                                 <div className="w-16">
                                   <input
                                     type="number" inputMode="decimal" min={0} max={100} step={0.01}
@@ -320,12 +320,12 @@ export default function CgpaCalculator() {
                                     aria-label={`${subject.name} final marks`}
                                   />
                                 </div>
-                                <span className="text-gray-700 text-xs select-none">=</span>
-                                <div className="w-8 text-xs font-semibold text-gray-300 tabular-nums text-right">
-                                  {shownTotal !== null ? shownTotal.toFixed(0) : <span className="text-gray-700">—</span>}
+                                <span className="text-slate-700 text-xs select-none">=</span>
+                                <div className="w-8 text-xs font-semibold text-slate-300 tabular-nums text-right">
+                                  {shownTotal !== null ? shownTotal.toFixed(0) : <span className="text-slate-700">—</span>}
                                 </div>
-                                <span className="text-[10px] text-gray-700 select-none">/100</span>
-                                <span className="text-[9px] text-gray-700 uppercase tracking-widest mx-1 select-none">or</span>
+                                <span className="text-[10px] text-slate-700 select-none">/100</span>
+                                <span className="text-[9px] text-slate-700 uppercase tracking-widest mx-1 select-none">or</span>
                                 <div className="w-16">
                                   <input
                                     type="number" inputMode="decimal" min={0} max={100} step={0.01}
@@ -353,10 +353,10 @@ export default function CgpaCalculator() {
                                       key={g}
                                       onClick={() => updateMarks(subject.id, { gradeOverride: isSelected ? '' : g })}
                                       className={`w-[18px] h-[18px] flex items-center justify-center rounded-full border text-[8px] font-bold transition-all ${isSelected
-                                          ? 'border-indigo-500 bg-indigo-500/30 text-indigo-300'
+                                          ? 'border-emerald-500 bg-emerald-500/30 text-emerald-300'
                                           : isComputedGrade
-                                            ? 'border-gray-600 bg-gray-700/30 text-gray-400'
-                                            : 'border-gray-600 bg-gray-900 text-gray-400 hover:border-gray-500 hover:bg-gray-800'
+                                            ? 'border-slate-600 bg-slate-700/30 text-slate-400'
+                                            : 'border-slate-600 bg-surface-dark text-slate-400 hover:border-slate-500 hover:bg-surface'
                                         }`}
                                       aria-label={`Set ${subject.name} grade to ${g}`}
                                       type="button"

@@ -12,7 +12,7 @@ interface BatchContextType {
 
 const BatchContext = createContext<BatchContextType>({
   selectedBatch: 2,
-  setSelectedBatch: () => {},
+  setSelectedBatch: () => { },
 });
 
 export const BatchProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {

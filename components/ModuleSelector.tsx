@@ -16,9 +16,9 @@ const ModuleSelector: React.FC<ModuleSelectorProps> = ({ modules, selectedModule
       <div className="flex flex-wrap gap-1.5 justify-center">
         <button
           onClick={() => onSelect('all')}
-          className={`px-2 py-0.5 text-xs font-normal transition duration-200 border rounded ${selectedModule === 'all'
-            ? 'bg-indigo-700 text-white border-indigo-600'
-            : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600 hover:border-indigo-500'
+          className={`px-2.5 py-1 text-xs font-medium transition-all duration-200 border rounded-lg ${selectedModule === 'all'
+            ? 'bg-emerald-600/80 text-white border-emerald-500/50'
+            : 'bg-slate-700/60 text-slate-300 border-slate-600/40 hover:bg-slate-600 hover:border-emerald-500/40'
             }`}
         >
           All
@@ -27,9 +27,9 @@ const ModuleSelector: React.FC<ModuleSelectorProps> = ({ modules, selectedModule
           <button
             key={module}
             onClick={() => onSelect(module)}
-            className={`px-2 py-0.5 text-xs font-normal transition duration-200 border rounded ${selectedModule === module
-              ? 'bg-indigo-700 text-white border-indigo-600'
-              : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600 hover:border-indigo-500'
+            className={`px-2.5 py-1 text-xs font-medium transition-all duration-200 border rounded-lg ${selectedModule === module
+              ? 'bg-emerald-600/80 text-white border-emerald-500/50'
+              : 'bg-slate-700/60 text-slate-300 border-slate-600/40 hover:bg-slate-600 hover:border-emerald-500/40'
               }`}
           >
             M{module}

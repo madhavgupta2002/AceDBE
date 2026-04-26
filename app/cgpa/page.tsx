@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function CgpaPage() {
   return (
-    <div className="min-h-screen bg-gray-900 text-white">
+    <div className="min-h-screen relative z-[1] text-white">
       <Header showBackButton backLink="/" />
       <CgpaCalculator />
     </div>
