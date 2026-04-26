@@ -24,7 +24,6 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
-import videosData from '@/public/data/videos.json';
 
 interface QuizAppProps {
   subjectCode: string;
@@ -93,9 +92,16 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     return `http://www.youtube.com/watch_videos?video_ids=${videoIds.join(',')}`;
   };
 
-  // Get videos for current subject
-  const subjectVideos = (videosData as any)[subjectCode] || {};
+  // Get videos for current subject (fetched dynamically)
+  const [subjectVideos, setSubjectVideos] = useState<Record<string, string[]>>({});
   const moduleNumbers = Object.keys(subjectVideos).sort((a, b) => Number(a) - Number(b));
+
+  useEffect(() => {
+    fetch(`/data/Subjects/${subjectCode}/videos.json`)
+      .then(res => res.ok ? res.json() : {})
+      .then(data => setSubjectVideos(data))
+      .catch(() => setSubjectVideos({}));
+  }, [subjectCode]);
 
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
