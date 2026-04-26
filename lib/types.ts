@@ -56,9 +56,16 @@ export interface QuizState {
 }
 
 // Subject types
+export interface SubjectAlias {
+  batch: number;
+  code: string;  // data folder code used for file loading and URL routing
+  term: number;  // term this subject appears in for this batch
+  name?: string; // optional batch-specific name override
+}
+
 export interface Subject {
-  code: string;
   name: string;
   description: string;
-  term: number;
+  icon: string; // lucide-react icon name (e.g., 'MessageSquare', 'BarChart3')
+  aliases: SubjectAlias[];
 }
