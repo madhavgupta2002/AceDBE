@@ -16,14 +16,14 @@ const BankTypeSelector: React.FC<BankTypeSelectorProps> = ({ onSelect }) => {
       <div className="flex flex-col sm:flex-row gap-4">
         <button
           onClick={() => onSelect('CLA')}
-          className="px-8 py-4 text-white bg-indigo-700 hover:bg-indigo-600 border border-indigo-600 font-semibold transition duration-200"
+          className="px-8 py-4 text-white bg-emerald-700/80 hover:bg-emerald-600/80 border border-emerald-600/40 font-semibold transition duration-200 rounded-xl shadow-card hover:shadow-card-hover"
         >
           <div className="text-xl mb-2">CLA</div>
           <div className="text-sm opacity-90">Continuous Learning Assessment</div>
         </button>
         <button
           onClick={() => onSelect('Exam')}
-          className="px-8 py-4 text-white bg-purple-700 hover:bg-purple-600 border border-purple-600 font-semibold transition duration-200"
+          className="px-8 py-4 text-white bg-purple-700/80 hover:bg-purple-600/80 border border-purple-600/40 font-semibold transition duration-200 rounded-xl shadow-card hover:shadow-card-hover"
         >
           <div className="text-xl mb-2">Exam</div>
           <div className="text-sm opacity-90">Examination Question Sets</div>

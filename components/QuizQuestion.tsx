@@ -61,25 +61,25 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
 
   const getButtonClass = (option: string) => {
     let baseClass =
-      'w-full p-4 font-semibold text-left transition duration-200 border ';
+      'w-full p-4 font-semibold text-left transition-all duration-200 border rounded-xl ';
 
     if (!showResult) {
       if (isSelected(option)) {
-        return baseClass + 'bg-indigo-700 text-white border-indigo-600';
+        return baseClass + 'bg-indigo-700/70 text-white border-indigo-500/50 shadow-md';
       }
       return (
         baseClass +
-        'bg-gray-800 text-gray-100 hover:bg-gray-700 border-gray-700'
+        'bg-surface text-slate-100 hover:bg-surface-light border-surface-border/60 hover:border-slate-600'
       );
     }
 
     if (question.correctAnswer.includes(option)) {
-      return baseClass + 'bg-green-800 text-white border-green-700';
+      return baseClass + 'bg-emerald-800/40 text-white border-emerald-600/50';
     }
     if (isSelected(option) && !question.correctAnswer.includes(option)) {
-      return baseClass + 'bg-red-800 text-white border-red-700';
+      return baseClass + 'bg-red-800/40 text-white border-red-600/50';
     }
-    return baseClass + 'bg-gray-700 text-gray-400 border-gray-600';
+    return baseClass + 'bg-slate-800/40 text-slate-500 border-slate-700/40';
   };
 
   const formatText = (text: string) => {
@@ -96,25 +96,25 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
       <div className="w-full max-w-3xl mx-auto">
         <div className="flex flex-wrap items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
           <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
-            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-yellow-900/50 text-yellow-300 border border-yellow-800 text-xs font-semibold rounded">
+            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-yellow-900/30 text-yellow-300 border border-yellow-700/40 text-xs font-semibold rounded-full">
               Subjective
             </span>
             {question.module && (
-              <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-indigo-900/50 text-indigo-300 border border-indigo-800 text-xs font-semibold rounded">
+              <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-emerald-900/30 text-emerald-300 border border-emerald-700/40 text-xs font-semibold rounded-full">
                 Mod {question.module}
               </span>
             )}
             {question.source && (
-              <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-900/50 text-purple-300 border border-purple-800 text-xs font-semibold rounded truncate max-w-[150px] sm:max-w-none">
+              <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-900/30 text-purple-300 border border-purple-700/40 text-xs font-semibold rounded-full truncate max-w-[150px] sm:max-w-none">
                 {question.source}
               </span>
             )}
             <button
               onClick={onToggleTimer}
-              className={`inline-flex items-center gap-1 px-1.5 py-1 rounded transition-all ${isTimerActive
-                ? 'bg-red-900/40 text-red-400 hover:bg-red-900/60'
-                : 'bg-green-900/40 text-green-400 hover:bg-green-900/60'
-              }`}
+              className={`inline-flex items-center gap-1 px-1.5 py-1 rounded-full transition-all ${isTimerActive
+                ? 'bg-red-900/30 text-red-400 hover:bg-red-900/50'
+                : 'bg-emerald-900/30 text-emerald-400 hover:bg-emerald-900/50'
+                }`}
               title={isTimerActive ? 'Pause timer' : 'Start timer'}
             >
               <StopWatch elapsedSeconds={elapsedSeconds} isActive={isTimerActive} />
@@ -125,10 +125,10 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
           {onClearResponse && selectedAnswer && (
             <button
               onClick={onClearResponse}
-              className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-bold text-gray-400 hover:text-white bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700 hover:border-gray-500 rounded shadow-sm transition-all active:scale-95"
+              className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-bold text-slate-400 hover:text-white bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/40 hover:border-slate-500 rounded-lg shadow-sm transition-all active:scale-95"
               title="Clear response"
             >
-              <RotateCcw size={12} className="text-gray-500" />
+              <RotateCcw size={12} className="text-slate-500" />
               Clear
             </button>
           )}
@@ -141,8 +141,8 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
             {formatText(question.text)}
           </ReactMarkdown>
         </div>
-        <div className="bg-yellow-900/20 border border-yellow-700 rounded-lg p-4 sm:p-6">
-          <p className="text-yellow-200 mb-3 sm:mb-4 text-sm sm:text-base">
+        <div className="bg-yellow-900/15 border border-yellow-700/40 rounded-xl p-4 sm:p-6">
+          <p className="text-yellow-200/90 mb-3 sm:mb-4 text-sm sm:text-base">
             📝 This is a subjective question that requires a written answer.
             <br />
             Please answer this question on your exam paper or separately.
@@ -150,22 +150,24 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
           {!selectedAnswer && !showResult && (
             <button
               onClick={handleSubjectiveAcknowledge}
-              className="px-4 sm:px-6 py-2 sm:py-3 bg-indigo-700 hover:bg-indigo-600 text-white border border-indigo-600 font-semibold transition duration-200 text-sm sm:text-base"
+              className="px-4 sm:px-6 py-2 sm:py-3 bg-emerald-600 hover:bg-emerald-500 text-white border border-emerald-500/40 font-semibold transition-all duration-200 text-sm sm:text-base rounded-xl"
             >
               View Sample Solution
             </button>
           )}
           {(selectedAnswer || showResult) && (
-            <div className="flex items-center gap-2 text-green-300">
+            <div className="flex items-center gap-2 text-emerald-300">
               <CheckCircle size={18} className="sm:hidden" />
               <CheckCircle size={20} className="hidden sm:block" />
               <span className="font-medium text-sm sm:text-base">Sample solution viewed</span>
             </div>
           )}
         </div>
-        {/* Show explanation for subjective questions after viewing sample solution */}
         {(selectedAnswer || showResult) && question.explanation && (
-          <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-blue-900/30 border border-blue-700 rounded-lg prose prose-invert prose-indigo max-w-none leading-loose">
+          <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-emerald-900/15 border border-emerald-700/30 rounded-xl prose prose-invert prose-indigo max-w-none leading-loose">
+            <div className="flex items-center gap-2 mb-2 text-emerald-400 text-sm font-semibold">
+              Explanation
+            </div>
             <ReactMarkdown
               remarkPlugins={[remarkGfm, remarkMath]}
               rehypePlugins={[rehypeKatex]}
@@ -184,26 +186,26 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
       <div className="flex flex-wrap items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
         <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
           {isMultipleAnswer && (
-            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-amber-900/50 text-amber-300 border border-amber-800 text-xs font-semibold rounded">
+            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-amber-900/30 text-amber-300 border border-amber-700/40 text-xs font-semibold rounded-full">
               Multiple Correct
             </span>
           )}
           {question.module && (
-            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-indigo-900/50 text-indigo-300 border border-indigo-800 text-xs font-semibold rounded">
+            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-emerald-900/30 text-emerald-300 border border-emerald-700/40 text-xs font-semibold rounded-full">
               Mod {question.module}
             </span>
           )}
           {question.source && (
-            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-900/50 text-purple-300 border border-purple-800 text-xs font-semibold rounded truncate max-w-[150px] sm:max-w-none">
+            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-900/30 text-purple-300 border border-purple-700/40 text-xs font-semibold rounded-full truncate max-w-[150px] sm:max-w-none">
               {question.source}
             </span>
           )}
           <button
             onClick={onToggleTimer}
-            className={`inline-flex items-center gap-1 px-1.5 py-1 rounded transition-all ${isTimerActive
-              ? 'bg-red-900/40 text-red-400 hover:bg-red-900/60'
-              : 'bg-green-900/40 text-green-400 hover:bg-green-900/60'
-            }`}
+            className={`inline-flex items-center gap-1 px-1.5 py-1 rounded-full transition-all ${isTimerActive
+              ? 'bg-red-900/30 text-red-400 hover:bg-red-900/50'
+              : 'bg-emerald-900/30 text-emerald-400 hover:bg-emerald-900/50'
+              }`}
             title={isTimerActive ? 'Pause timer' : 'Start timer'}
           >
             <StopWatch elapsedSeconds={elapsedSeconds} isActive={isTimerActive} />
@@ -214,10 +216,10 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
         {onClearResponse && selectedAnswer && (
           <button
             onClick={onClearResponse}
-            className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-bold text-gray-400 hover:text-white bg-gray-800/50 hover:bg-gray-700/50 border border-gray-700 hover:border-gray-500 rounded shadow-sm transition-all active:scale-95"
+            className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-bold text-slate-400 hover:text-white bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/40 hover:border-slate-500 rounded-lg shadow-sm transition-all active:scale-95"
             title="Clear response"
           >
-            <RotateCcw size={12} className="text-gray-500" />
+            <RotateCcw size={12} className="text-slate-500" />
             Clear
           </button>
         )}
@@ -230,7 +232,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
           {formatText(question.text)}
         </ReactMarkdown>
       </div>
-      <div className="grid grid-cols-1 gap-2 sm:gap-3">
+      <div className="grid grid-cols-1 gap-2.5 sm:gap-3">
         {Object.entries(question.options).map(([key, value]) => (
           <button
             key={key}
@@ -240,9 +242,9 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
           >
             <span className="flex items-center justify-between">
               <span className="flex items-center flex-1">
-                <span className={`w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center mr-2 sm:mr-3 text-sm sm:text-base ${isSelected(key) && !showResult
-                  ? 'bg-indigo-900 text-white'
-                  : 'bg-gray-700 text-gray-200'
+                <span className={`w-7 h-7 sm:w-8 sm:h-8 flex items-center justify-center mr-2.5 sm:mr-3 text-sm sm:text-base rounded-lg ${isSelected(key) && !showResult
+                  ? 'bg-indigo-800/80 text-white'
+                  : 'bg-slate-700/60 text-slate-300'
                   }`}>
                   {isMultipleAnswer && isSelected(key) && !showResult ? (
                     <Check size={14} className="sm:hidden" />
@@ -263,7 +265,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
                 </span>
               </span>
               {showResult && question.correctAnswer.includes(key) && (
-                <CheckCircle className="inline-block ml-2 text-green-400 flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
+                <CheckCircle className="inline-block ml-2 text-emerald-400 flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
               )}
               {showResult &&
                 isSelected(key) &&
@@ -275,7 +277,10 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
         ))}
       </div>
       {showResult && selectedAnswer && question.explanation && (
-        <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-blue-900/30 border border-blue-700 rounded-lg prose prose-invert prose-indigo max-w-none leading-loose">
+        <div className="mt-4 sm:mt-6 p-3 sm:p-4 bg-emerald-900/15 border border-emerald-700/30 rounded-xl prose prose-invert prose-indigo max-w-none leading-loose">
+          <div className="flex items-center gap-2 mb-2 text-emerald-400 text-sm font-semibold">
+            Explanation
+          </div>
           <ReactMarkdown
             remarkPlugins={[remarkGfm, remarkMath]}
             rehypePlugins={[rehypeKatex]}

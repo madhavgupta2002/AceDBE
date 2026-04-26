@@ -336,18 +336,18 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
     const isPartiallySelected = isSetPartiallySelected(set);
 
     return (
-      <div key={getSetKey(set.bankName, set.bankType)} className="mb-4 sm:mb-6 p-3 sm:p-4 bg-gray-800 border border-gray-700 rounded">
+      <div key={getSetKey(set.bankName, set.bankType)} className="mb-4 sm:mb-6 p-3 sm:p-4 bg-surface-dark/40 border border-surface-border/40 rounded-xl">
         <button
           onClick={() => toggleSet(set)}
-          className={`w-full text-left mb-2 sm:mb-3 flex items-center gap-2 text-sm sm:text-base ${isFullySelected ? 'text-indigo-400' : isPartiallySelected ? 'text-yellow-400' : 'text-white'
-            } font-semibold hover:text-indigo-300 transition-colors`}
+          className={`w-full text-left mb-2 sm:mb-3 flex items-center gap-2 text-sm sm:text-base ${isFullySelected ? 'text-emerald-400' : isPartiallySelected ? 'text-yellow-400' : 'text-white'
+            } font-semibold hover:text-emerald-300 transition-colors`}
         >
           {/* Circle that becomes a tick when selected */}
           <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0 ${isFullySelected
-            ? 'bg-indigo-700 border-indigo-600'
+            ? 'bg-emerald-600 border-emerald-500'
             : isPartiallySelected
-              ? 'bg-yellow-700 border-yellow-600'
-              : 'bg-gray-800 border-gray-600'
+              ? 'bg-yellow-600 border-yellow-500'
+              : 'bg-slate-800 border-slate-600'
             }`}>
             {isFullySelected && <Check className="w-3 h-3 text-white" />}
             {isPartiallySelected && <span className="w-2 h-2 bg-yellow-300 rounded-full"></span>}
@@ -363,12 +363,12 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
                 <button
                   key={module}
                   onClick={(e) => {
-                    e.stopPropagation(); // Prevent triggering set toggle
+                    e.stopPropagation();
                     toggleModule(set.bankName, set.bankType, module);
                   }}
-                  className={`px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm font-medium transition duration-200 border rounded ${selected
-                    ? 'bg-indigo-700 text-white border-indigo-600'
-                    : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600 hover:border-indigo-500'
+                  className={`px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm font-medium transition-all duration-200 border rounded-lg ${selected
+                    ? 'bg-emerald-600/80 text-white border-emerald-500/50'
+                    : 'bg-slate-700/60 text-slate-300 border-slate-600/40 hover:bg-slate-600 hover:border-emerald-500/40'
                     }`}
                 >
                   M{module}
@@ -384,7 +384,7 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
   if (loading) {
     return (
       <div className="text-center py-12">
-        <p className="text-gray-300">Loading question sets...</p>
+        <p className="text-slate-400">Loading question sets...</p>
       </div>
     );
   }
@@ -394,8 +394,8 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
   return (
     <div className="w-full">
       {/* Top Controls */}
-      <div className="flex items-center justify-between gap-3 mb-4">
-        <p className="text-xs text-gray-400 hidden sm:block">
+      <div className="flex items-center justify-between gap-3 mb-5">
+        <p className="text-xs text-slate-500 hidden sm:block">
           Click set name to select all questions
         </p>
         <div className="flex-1 sm:hidden"></div>
@@ -403,9 +403,9 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
         <div className="flex items-center gap-2">
           <button
             onClick={allSelected ? deselectAll : selectAll}
-            className={`px-3 py-1.5 sm:px-4 sm:py-2 font-semibold transition duration-200 border text-xs sm:text-sm ${allSelected
-              ? 'bg-gray-700 text-white border-gray-600 hover:bg-gray-600'
-              : 'bg-indigo-700 text-white border-indigo-600 hover:bg-indigo-600'
+            className={`px-3 py-1.5 sm:px-4 sm:py-2 font-semibold transition-all duration-200 border text-xs sm:text-sm rounded-lg ${allSelected
+              ? 'bg-slate-700/60 text-white border-slate-600/40 hover:bg-slate-600'
+              : 'bg-purple-600/80 text-white border-purple-500/40 hover:bg-purple-500'
               }`}
           >
             {allSelected ? 'Deselect All' : 'Select All'}
@@ -413,30 +413,32 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
 
           <button
             onClick={() => setRandomOrder(!randomOrder)}
-            className={`p-1.5 sm:p-2 transition duration-200 border rounded ${randomOrder
-              ? 'bg-purple-700 text-white border-purple-600'
-              : 'bg-gray-800 text-gray-300 border-gray-700 hover:bg-gray-700'
+            className={`p-1.5 sm:p-2 transition-all duration-200 border rounded-lg ${randomOrder
+              ? 'bg-purple-600/80 text-white border-purple-500/40'
+              : 'bg-slate-800/60 text-slate-300 border-slate-700/40 hover:bg-slate-700'
               }`}
             title="Random Order"
           >
             <Shuffle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
           </button>
 
-          <button
-            onClick={() => setShowCustom(!showCustom)}
-            className={`px-3 py-1.5 sm:px-4 sm:py-2 font-semibold transition duration-200 border text-xs sm:text-sm ${showCustom
-              ? 'bg-purple-700 text-white border-purple-600 hover:bg-purple-600'
-              : 'bg-gray-800 text-gray-300 border-gray-700 hover:bg-gray-700'
-              }`}
-          >
-            {showCustom ? 'Hide Custom' : 'Show Custom Quizzes'}
-          </button>
+          {customSets.length > 0 && (
+            <button
+              onClick={() => setShowCustom(!showCustom)}
+              className={`px-3 py-1.5 sm:px-4 sm:py-2 font-semibold transition-all duration-200 border text-xs sm:text-sm rounded-lg ${showCustom
+                ? 'bg-purple-600/80 text-white border-purple-500/40 hover:bg-purple-500'
+                : 'bg-slate-800/60 text-slate-300 border-slate-700/40 hover:bg-slate-700'
+                }`}
+            >
+              {showCustom ? 'Hide Custom' : 'Show Custom Quizzes'}
+            </button>
+          )}
         </div>
       </div>
 
       {/* Custom Quizzes Selection (MUTUALLY EXCLUSIVE) */}
       {showCustom && customSets.length > 0 && (
-        <div className="mb-6 p-4 bg-gray-800 border-2 border-purple-900/50 rounded-lg">
+        <div className="mb-6 p-4 bg-surface border-2 border-purple-800/30 rounded-xl">
           <h2 className="text-lg font-bold text-white mb-3 flex items-center justify-between">
             <span></span>
             <span className="text-xs font-normal text-purple-400">Selected independently (clears other selections)</span>
@@ -446,14 +448,14 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
               <button
                 key={getSetKey(set.bankName, 'Custom')}
                 onClick={() => toggleSet(set)}
-                className={`text-left p-3 border transition duration-200 flex items-center gap-2 text-sm ${isSetFullySelected(set)
-                  ? 'bg-purple-900/40 border-purple-500 text-white'
-                  : 'bg-gray-900/50 border-gray-700 text-gray-400 hover:border-purple-500/50'
+                className={`text-left p-3 border transition-all duration-200 flex items-center gap-2 text-sm rounded-lg ${isSetFullySelected(set)
+                  ? 'bg-purple-900/30 border-purple-500/50 text-white'
+                  : 'bg-surface-dark/40 border-slate-700/40 text-slate-400 hover:border-purple-500/40'
                   }`}
               >
                 <div className={`w-4 h-4 rounded-full border-2 flex items-center justify-center shrink-0 ${isSetFullySelected(set)
-                  ? 'bg-purple-700 border-purple-600'
-                  : 'bg-gray-800 border-gray-600'
+                  ? 'bg-purple-600 border-purple-500'
+                  : 'bg-slate-800 border-slate-600'
                   }`}>
                   {isSetFullySelected(set) && <Check className="w-3 h-3 text-white" />}
                 </div>
@@ -466,10 +468,10 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
 
       {/* Select By Module - Bulk Selection */}
       {allModules.length > 0 && (
-        <div className="mb-6 p-4 bg-gray-800 border-2 border-indigo-900/50 rounded-lg">
+        <div className="mb-6 p-4 bg-surface border border-surface-border/60 rounded-xl">
           <h2 className="text-lg font-bold text-white mb-3 flex items-center justify-between">
             <span>Select By Module</span>
-            <span className="text-xs font-normal text-gray-400">Selects across all CLA & Exams</span>
+            <span className="text-xs font-normal text-slate-500">Selects across all CLA & Exams</span>
           </h2>
           <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
             {allModules.map((module) => {
@@ -478,9 +480,9 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
                 <button
                   key={`bulk-${module}`}
                   onClick={() => toggleModuleAcrossAllSets(module)}
-                  className={`px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm font-medium transition duration-200 border rounded ${isActive
-                    ? 'bg-indigo-700 text-white border-indigo-600 shadow-[0_0_10px_rgba(79,70,229,0.3)]'
-                    : 'bg-gray-700 text-gray-300 border-gray-600 hover:bg-gray-600 hover:border-indigo-500'
+                  className={`px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium transition-all duration-200 border rounded-lg ${isActive
+                    ? 'bg-emerald-600/80 text-white border-emerald-500/50 shadow-glow-emerald'
+                    : 'bg-slate-700/60 text-slate-300 border-slate-600/40 hover:bg-slate-600 hover:border-emerald-500/40'
                     }`}
                 >
                   M{module}
@@ -495,11 +497,11 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
         {/* CLA Sets */}
         <div>
-          <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white border-b border-gray-700 pb-2">
+          <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-white border-b border-slate-700/40 pb-2">
             CLA
           </h2>
           {claSets.length === 0 ? (
-            <p className="text-gray-400 text-sm">No CLA sets available</p>
+            <p className="text-slate-500 text-sm">No CLA sets available</p>
           ) : (
             claSets.map(renderSet)
           )}
@@ -507,11 +509,11 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
 
         {/* Exam Sets */}
         <div>
-          <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white border-b border-gray-700 pb-2">
+          <h2 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 text-white border-b border-slate-700/40 pb-2">
             Exam
           </h2>
           {examSets.length === 0 ? (
-            <p className="text-gray-400 text-sm">No Exam sets available</p>
+            <p className="text-slate-500 text-sm">No Exam sets available</p>
           ) : (
             examSets.map(renderSet)
           )}
@@ -522,15 +524,15 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
       <div className="mt-6 sm:mt-8 grid grid-cols-2 gap-3">
         <button
           onClick={handleStartQuiz}
-          className="px-4 sm:px-6 py-3 sm:py-4 bg-green-800 text-white border border-green-700 font-semibold text-base sm:text-lg hover:bg-green-700 transition duration-200"
+          className="px-4 sm:px-6 py-3 sm:py-4 bg-gradient-to-r from-emerald-900 to-emerald-800 text-white border border-emerald-700/35 font-semibold text-base sm:text-lg hover:from-emerald-800 hover:to-emerald-700 transition-all duration-200 rounded-xl shadow-md flex items-center justify-center gap-2"
         >
-          Start Quiz
+          ▶ Start Quiz
         </button>
         <button
           onClick={handleStartRevise}
-          className="px-4 sm:px-6 py-3 sm:py-4 bg-blue-800 text-white border border-blue-700 font-semibold text-base sm:text-lg hover:bg-blue-700 transition duration-200"
+          className="px-4 sm:px-6 py-3 sm:py-4 bg-gradient-to-r from-blue-900 to-blue-800 text-white border border-blue-700/35 font-semibold text-base sm:text-lg hover:from-blue-800 hover:to-blue-700 transition-all duration-200 rounded-xl shadow-md flex items-center justify-center gap-2"
         >
-          Revise
+          ✏️ Revise
         </button>
       </div>
     </div>

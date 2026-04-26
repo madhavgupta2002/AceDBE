@@ -20,7 +20,7 @@ const AnswerStatus: React.FC<AnswerStatusProps> = ({
   const getStatusColor = (index: number) => {
     const userAnswer = answeredQuestions[index];
     if (userAnswer === null) {
-      return 'bg-gray-700 text-gray-300 border border-gray-600';
+      return 'bg-slate-700/60 text-slate-300 border border-slate-600/40 rounded-lg';
     }
 
     // Check if arrays are equal
@@ -29,9 +29,9 @@ const AnswerStatus: React.FC<AnswerStatusProps> = ({
       userAnswer.every(ans => correctAnswer.includes(ans));
 
     if (isCorrect) {
-      return 'bg-green-700 text-white border border-green-600';
+      return 'bg-emerald-700/70 text-white border border-emerald-600/50 rounded-lg';
     }
-    return 'bg-red-700 text-white border border-red-600';
+    return 'bg-red-700/70 text-white border border-red-600/50 rounded-lg';
   };
 
   return (
@@ -46,7 +46,7 @@ const AnswerStatus: React.FC<AnswerStatusProps> = ({
             className={`w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center font-semibold text-xs sm:text-sm ${getStatusColor(
               index
             )} ${index === currentQuestionIndex
-              ? 'ring-2 ring-indigo-500'
+              ? 'ring-2 ring-emerald-400'
               : ''
               }`}
             onClick={() => onQuestionSelect(index)}

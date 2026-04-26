@@ -29,7 +29,7 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   metadataBase: new URL('https://acedbe.vercel.app'),
   title: {
-    default: 'AceDBE - Practice Portal',
+    default: 'AceDBE: Excel BBA-DBE Exams',
     template: '%s | AceDBE',
   },
   description: 'Ace your BBA-DBE exams with comprehensive notes, compiled playlists, previous year questions, and interactive quizzes for every subject.',
