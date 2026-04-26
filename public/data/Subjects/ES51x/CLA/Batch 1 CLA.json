@@ -1,0 +1,848 @@
+{
+    "exam_metadata": {
+        "subject_name": "Fundamentals of Macroeconomics",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "M1_Q1",
+            "question_text": "In a small island economy, only two goods are produced: fish and coconuts. In 2023, 100 kg of fish sold at Rs. 200/kg and 50 coconuts sold at Rs. 50 each. In 2024, 110 kg of fish sold at Rs. 250/kg and 60 coconuts sold at Rs. 60 each. Using 2023 as the base year, what is the approximate real GDP growth rate from 2023 to 2024?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "36% -- because nominal output rose from Rs. 22,500 to Rs. 31,100",
+                "B": "12% -- because output at base-year prices rose from Rs. 22,500 to Rs. 25,000",
+                "C": "11% -- because output at base-year prices rose from Rs. 22,500 to Rs. 25,000",
+                "D": "25% -- because the average of fish and coconut quantity growth is 25%"
+            },
+            "correct_option_label": "C",
+            "explanation": "Real GDP evaluates output using base-year (2023) prices.\nStep 1: Calculate 2023 Real GDP = (100 kg * 200) + (50 * 50) = 20,000 + 2,500 = 22,500.\nStep 2: Calculate 2024 Real GDP = (110 kg * 200) + (60 * 50) = 22,000 + 3,000 = 25,000.\nStep 3: Growth Rate = ((25,000 - 22,500) / 22,500) * 100 = (2,500 / 22,500) * 100 ≈ 11.11%.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q2",
+            "question_text": "A small country produces only three goods: rice, cloth, and milk. In the base year, households spent 50% of their budget on rice, 30% on cloth, and 20% on milk. Five years later, rice prices have risen 40%, cloth prices have risen 10%, and milk prices have risen 5%. However, households have responded by shifting their spending: they now spend only 30% on rice, 30% on cloth, and 40% on milk. If the government still uses the base-year spending weights to compute inflation, the resulting index will:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Overstate inflation, because it assigns the highest weight to rice, the item whose price rose the most, even though people now buy less of it",
+                "B": "Understate inflation, because milk spending has doubled and should receive more weight",
+                "C": "Accurately measure inflation, because base-year weights provide a consistent benchmark",
+                "D": "Overstate inflation, because cloth prices barely changed and should receive more weight"
+            },
+            "correct_option_label": "A",
+            "explanation": "A fixed-weight (base-year) inflation index assumes consumption patterns do not change. By applying the original 50% weight to rice (which had the highest price increase), the index fails to account for the substitution effect where consumers now buy less rice, thus overstating actual living cost increases.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q3",
+            "question_text": "Country X has the following national accounts data (in Rs. billion): GDP = 500, Consumption = 300, Government Spending = 120, Exports = 80, Imports = 60. What is the level of Investment in Country X?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 60 billion",
+                "B": "Rs. 80 billion",
+                "C": "Rs. 100 billion",
+                "D": "Rs. 40 billion"
+            },
+            "correct_option_label": "A",
+            "explanation": "Using the Expenditure Approach GDP Identity: Y = C + I + G + NX.\nStep 1: Calculate Net Exports (NX) = Exports - Imports = 80 - 60 = 20.\nStep 2: Substitute values into the equation: 500 = 300 + I + 120 + 20.\nStep 3: Solve for I: 500 = 440 + I => I = 60 billion.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q4",
+            "question_text": "In an economy, households save 15% of GDP, the government runs a fiscal deficit of 5% of GDP, and the country runs a trade deficit (imports exceed exports) of 3% of GDP. Using the savings-investment identity (Private Savings + Public Savings + Foreign Savings = Investment), what is investment as a percentage of GDP?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "7%",
+                "B": "13%",
+                "C": "17%",
+                "D": "23%"
+            },
+            "correct_option_label": "B",
+            "explanation": "The savings-investment identity states that Investment (I) = Private Savings + Public Savings + Foreign Savings.\nStep 1: Identify values: Private Savings = 15%, Public Savings = -5% (deficit is negative savings), Foreign Savings = 3% (trade deficit means imports > exports, injecting foreign savings).\nStep 2: Calculate: I = 15% - 5% + 3% = 13%.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q5",
+            "question_text": "India's GDP grew at roughly 7% per year for over a decade, but then contracted sharply by 7.3% in the quarter following the COVID-19 lockdown in 2020. Which of the following best describes the economic interpretation of these two observations?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Both reflect long-run supply-side changes in India's productive capacity",
+                "B": "The sustained 7% growth reflects long-run supply-driven trends, while the sharp COVID contraction reflects a short-run shock",
+                "C": "Both reflect short-run demand fluctuations around a stable trend",
+                "D": "The sustained growth was demand-driven, while the COVID contraction was supply-driven"
+            },
+            "correct_option_label": "B",
+            "explanation": "Macroeconomic data shows a dual pattern: a long-term smooth upward drift primarily driven by structural supply-side factors (like the 7% sustained growth), and short-term choppy fluctuations resulting from sudden shocks like the COVID-19 lockdown.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q6",
+            "question_text": "In 2022, following the Russia-Ukraine conflict, global wheat and crude oil prices surged. For a wheat-importing country like Egypt, this event is best classified as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A positive demand shock, because global demand for commodities increased",
+                "B": "A positive supply shock, because higher prices incentivize domestic production",
+                "C": "A negative demand shock, because Egyptian consumers reduced spending",
+                "D": "A negative supply shock, because the cost of key inputs rose sharply"
+            },
+            "correct_option_label": "D",
+            "explanation": "A sharp rise in the prices of critical global commodities like wheat and oil represents a negative supply shock (cost-push shock). It increases raw material and food costs, causing macroeconomic friction and inflation outside the control of domestic aggregate demand.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q7",
+            "question_text": "A restaurant prints new menus every six months. When food input costs rise by 15% mid-cycle, the restaurant cannot immediately raise prices. This is an example of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Information asymmetry, because customers don't know input costs have risen",
+                "B": "Credit constraints, because the restaurant cannot borrow to cover higher costs",
+                "C": "Price stickiness, because there are costs to adjusting prices frequently",
+                "D": "Commitment lock-ins, because the restaurant has long-term supply contracts"
+            },
+            "correct_option_label": "C",
+            "explanation": "Price stickiness (often called 'menu costs') refers to the friction where businesses cannot adjust their prices immediately to match cost changes due to the physical or logistical expenses of doing so, like reprinting menus.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q8",
+            "question_text": "A farmer grows wheat and sells it to a flour mill for Rs. 20,000. The mill processes it into flour and sells it to a bakery for Rs. 35,000. The bakery makes bread and sells it to consumers for Rs. 60,000. If someone mistakenly adds up all three sales figures (Rs. 20,000 + Rs. 35,000 + Rs. 60,000 = Rs. 1,15,000) as the contribution to GDP, the error they are making is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ignoring the income approach, which would give a different total",
+                "B": "Double-counting, because GDP should only count final goods (Rs. 60,000) or equivalently the sum of value added at each stage (Rs. 20,000 + Rs. 15,000 + Rs. 25,000 = Rs. 60,000)",
+                "C": "Undercounting, because they should also include the value of seeds and fertilizer the farmer used",
+                "D": "Using the production approach when they should be using the expenditure approach, which would give Rs. 60,000"
+            },
+            "correct_option_label": "B",
+            "explanation": "GDP only accounts for the value of final goods and services to avoid double-counting. Adding intermediate sales means counting the value of the original wheat three separate times.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q9",
+            "question_text": "A politician claims: 'Our economy has doubled in size over the last 8 years -- GDP went from Rs. 100 trillion to Rs. 200 trillion!' An economist points out that prices also doubled over the same period. What should the economist conclude about real economic growth?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The economy genuinely doubled in real terms as well",
+                "B": "Real GDP fell by half because inflation eroded purchasing power",
+                "C": "It is impossible to determine real growth without knowing the base year",
+                "D": "Real GDP was roughly unchanged -- all the increase was due to inflation"
+            },
+            "correct_option_label": "D",
+            "explanation": "Nominal GDP is evaluated at current prices and includes inflation. If both the Nominal GDP and the price level doubled exactly, the entire increase is an illusion of inflation (price fingerprint), meaning the real physical output (quantity fingerprint) remained effectively unchanged.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q10",
+            "question_text": "In the circular flow model, a software engineer's salary paid by an IT company represents:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A flow in the goods market from firms to households",
+                "B": "A flow in the factor market from firms to households",
+                "C": "A flow in the goods market from households to firms",
+                "D": "A flow in the capital market from households to firms"
+            },
+            "correct_option_label": "B",
+            "explanation": "In the circular flow model, households supply labor (a factor of production) to businesses in the resource/factor market. The wages paid back to the households represent a monetary flow in this factor market.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q11",
+            "question_text": "A homemaker cooks meals, tutors her children, and maintains the household every day. A neighbor does identical work but is employed as a cook, tutor, and housekeeper for other families. In standard GDP measurement:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only the neighbor's work is counted in GDP because it involves market transactions",
+                "B": "Both contribute equally to GDP because the work is identical",
+                "C": "Only the homemaker's work is counted because it creates more social value",
+                "D": "Neither is counted because services are excluded from GDP"
+            },
+            "correct_option_label": "A",
+            "explanation": "Standard GDP measurement relies on capturing monetary transactions in recognized markets. Homemaker services, despite producing real economic value, are excluded from GDP because no money officially changes hands.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q12",
+            "question_text": "During a recession, an individual firm cuts wages to reduce costs and stay profitable. If all firms in the economy simultaneously cut wages, the most likely macroeconomic outcome is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The economy recovers quickly because firms become more competitive",
+                "B": "Inflation rises because firms now have higher profit margins",
+                "C": "Unemployment falls because lower wages make hiring cheaper",
+                "D": "Aggregate demand falls because workers' total spending power declines, potentially deepening the recession"
+            },
+            "correct_option_label": "D",
+            "explanation": "This exemplifies the paradox of aggregation. While cutting wages saves money for a micro-actor (one firm), if all macro-actors do it, total household income plunges, leading to a massive drop in aggregate consumer spending (C) which deepens the recession.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q13",
+            "question_text": "In early 2020, many Indian airlines had pre-purchased fuel contracts and locked in airport slot commitments for the full year. When COVID-19 shut down air travel in March, airlines could not easily cancel these obligations. This situation best illustrates which short-run friction?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Price stickiness",
+                "B": "Information asymmetry",
+                "C": "Commitment lock-ins",
+                "D": "Credit constraints"
+            },
+            "correct_option_label": "C",
+            "explanation": "Commitment lock-ins represent rigidities where long-term contracts and pre-arranged structural commitments prevent a firm from dynamically adjusting its costs during an instantaneous demand shock.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q14",
+            "question_text": "Consider two years: Year 1 (base) and Year 2. Smartphones did not exist in Year 1 but account for 10% of household spending in Year 2. A (Laspeyres) price index - which uses the base-year basket - would:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Correctly capture the impact of smartphones on cost of living",
+                "B": "Overstate inflation because it ignores the new product entirely",
+                "C": "Understate inflation because smartphones are expensive new additions",
+                "D": "Miss the impact of smartphones entirely, since they were not in the base-year basket"
+            },
+            "correct_option_label": "D",
+            "explanation": "Base-year indices (like Laspeyres) lock in the basket of goods at the starting year to isolate price variations. Consequently, they structurally fail to account for new technologies or products introduced after the base year.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q15",
+            "question_text": "Country A and Country B both have GDP of Rs. 1,000 billion. Country A's composition: C = 75%, I = 12%, G = 18%, NX = -5%. Country B's composition: C = 55%, I = 30%, G = 12%, NX = +3%. An analyst studying long-run growth prospects would most likely conclude:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Country A will grow faster because higher consumption signals a stronger domestic economy",
+                "B": "Country B will likely grow faster because its higher investment share builds future productive capacity",
+                "C": "Both will grow at similar rates because their GDP levels are identical",
+                "D": "Country A will grow faster because government spending drives economic activity"
+            },
+            "correct_option_label": "B",
+            "explanation": "While consumption (C) drives short-term demand, investments (I) in physical and technological capital build the structural, productive capacity necessary to sustain high long-term economic growth.",
+            "module": 1
+        },
+        {
+            "question_id": "M2_Q1",
+            "question_text": "Nominal interest rate is 10%. Expected inflation rises from 4% to 7%. What happens to the real interest rate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Falls from 6% to 3%",
+                "B": "Rises from 6% to 7%",
+                "C": "Falls from 4% to 3%",
+                "D": "Remains constant"
+            },
+            "correct_option_label": "A",
+            "explanation": "According to Fisher's identity, Real Interest Rate ≈ Nominal Rate - Inflation Rate.\nStep 1: Initial Real Rate = 10% - 4% = 6%.\nStep 2: New Real Rate = 10% - 7% = 3%.\nTherefore, it falls from 6% to 3%.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q2",
+            "question_text": "Mr. Sen works in a private company and earns a fixed monthly salary. This year, the inflation rate in the economy increased from 4% to 9%, but his salary increased by only 5%. In this situation, Mr. Sen’s real income has:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increased",
+                "B": "Decreased",
+                "C": "Remained unchanged",
+                "D": "Doubled"
+            },
+            "correct_option_label": "B",
+            "explanation": "Real income evaluates nominal gains against the loss of purchasing power (inflation). Since Mr. Sen's nominal salary increased by 5%, but prices rose by 9%, his true purchasing power (real income) decreased by approximately 4%.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q3",
+            "question_text": "Unexpected inflation redistributes income from:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Borrowers to lenders",
+                "B": "Government to firms",
+                "C": "Firms to workers",
+                "D": "Lenders to borrowers"
+            },
+            "correct_option_label": "D",
+            "explanation": "Unexpected inflation lowers the real value of money over time. As a result, borrowers benefit because they repay their fixed-rate loans using money that is now worth less than when they initially borrowed it, hurting lenders.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q4",
+            "question_text": "If banks anticipate higher default risk, they will:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase lending",
+                "B": "Reduce reserves",
+                "C": "Decrease lending",
+                "D": "Increase consumption"
+            },
+            "correct_option_label": "C",
+            "explanation": "During periods of high credit risk or rising NPAs, banks become risk-averse. To protect their balance sheets and maintain safe buffers, they tighten lending standards and decrease total loan distributions.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q5",
+            "question_text": "The central bank reduced the repo rate to encourage borrowing and investment in the economy. However, commercial banks reduced their lending rates by only a very small margin. This situation reflects:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Strong monetary transmission",
+                "B": "Weak monetary transmission",
+                "C": "Fiscal contraction",
+                "D": "Increase in money supply"
+            },
+            "correct_option_label": "B",
+            "explanation": "Monetary transmission is the process by which central bank rate changes ripple into the actual economy. If commercial banks refuse to pass on repo rate cuts to consumers, the transmission mechanism is considered weak or broken.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q6",
+            "question_text": "If MPC = 0.75 and government spending increases by ₹200 crore. The increase in Aggregate Deman would be:-",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹200 crore",
+                "B": "₹400 crore",
+                "C": "₹600 crore",
+                "D": "₹800 crore"
+            },
+            "correct_option_label": "D",
+            "explanation": "The fiscal multiplier dictates the total demand generation from new spending.\nStep 1: Multiplier = 1 / (1 - MPC) = 1 / (1 - 0.75) = 1 / 0.25 = 4.\nStep 2: Increase in Aggregate Demand = Multiplier * Increase in G = 4 * 200 crore = ₹800 crore.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q7",
+            "question_text": "Investment function: I = 300 − 20r. The interest rate falls from 10% to 5%. Then Increase in investment would be:-",
+            "question_type": "MCQ",
+            "options": {
+                "A": "50",
+                "B": "75",
+                "C": "100",
+                "D": "150"
+            },
+            "correct_option_label": "C",
+            "explanation": "Step 1: Calculate initial investment at r = 10%. I_1 = 300 - 20(10) = 300 - 200 = 100.\nStep 2: Calculate new investment at r = 5%. I_2 = 300 - 20(5) = 300 - 100 = 200.\nStep 3: Increase = I_2 - I_1 = 200 - 100 = 100.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q8",
+            "question_text": "Money supply rises by 10%, velocity falls by 3%, output rises by 4%. Inflation rate will be",
+            "question_type": "MCQ",
+            "options": {
+                "A": "3%",
+                "B": "5%",
+                "C": "7%",
+                "D": "11%"
+            },
+            "correct_option_label": "A",
+            "explanation": "Using the equation of exchange in growth terms: %ΔM + %ΔV = %ΔP + %ΔY.\nStep 1: Plug in the values: 10% + (-3%) = Inflation (%ΔP) + 4%.\nStep 2: 7% = %ΔP + 4%.\nStep 3: %ΔP = 7% - 4% = 3%.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q9",
+            "question_text": "To boost economic growth, the government increases its spending on infrastructure projects. As a result, income and employment begin to rise across different sectors of the economy. The rise in income and employment is due to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Supply shock",
+                "B": "Multiplier effect",
+                "C": "Exchange rate appreciation",
+                "D": "Cost-push inflation"
+            },
+            "correct_option_label": "B",
+            "explanation": "The multiplier effect occurs when initial government spending creates a ripple of cascading demand, as one person's income from the project is spent and becomes another person's income, multiplying overall GDP.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q10",
+            "question_text": "If unemployment falls below natural rate:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Inflation rises",
+                "B": "Inflation falls",
+                "C": "Inflation constant",
+                "D": "Output falls"
+            },
+            "correct_option_label": "A",
+            "explanation": "When the economy is overheated and operating with a positive output gap (unemployment below the natural sustainable capacity), wages and prices get pushed up rapidly, accelerating demand-pull inflation.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q11",
+            "question_text": "Currency appreciation leads to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Export rise",
+                "B": "Import fall",
+                "C": "Inflation rise",
+                "D": "Net exports fall"
+            },
+            "correct_option_label": "D",
+            "explanation": "When a domestic currency appreciates, domestic goods become comparatively more expensive for foreign buyers (exports drop) while foreign goods become cheaper for locals (imports rise), causing net exports to fall.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q12",
+            "question_text": "Liquidity trap implies LM curve:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Vertical",
+                "B": "Horizontal",
+                "C": "Downward",
+                "D": "Upward"
+            },
+            "correct_option_label": "B",
+            "explanation": "At the zero lower bound (liquidity trap), interest rates cannot fall any further and people hoard all cash injections. In the IS-LM framework, this perfectly elastic demand for money corresponds to a flat/horizontal LM curve.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q13",
+            "question_text": "Monetary policy in liquidity trap is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Effective",
+                "B": "Expansionary",
+                "C": "Ineffective",
+                "D": "Fiscal"
+            },
+            "correct_option_label": "C",
+            "explanation": "In a liquidity trap where nominal interest rates are essentially at 0%, traditional monetary policy loses its ability to stimulate demand via rate cuts, rendering it highly ineffective.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q14",
+            "question_text": "The central bank announces a strict inflation target of 4%. As a result, firms expect stable prices in the future and reduce their planned price increases. This is an example of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Credit channel",
+                "B": "Exchange rate channel",
+                "C": "Expectations channel",
+                "D": "Fiscal policy"
+            },
+            "correct_option_label": "C",
+            "explanation": "Forward guidance and transparent targets influence public and market beliefs. When credible, this expectations channel alters real economic behavior today, acting as a self-fulfilling prophecy to stabilize inflation.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q15",
+            "question_text": "Monetary easing aims to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduce GDP",
+                "B": "Increase AD",
+                "C": "Increase taxes",
+                "D": "Reduce exports"
+            },
+            "correct_option_label": "B",
+            "explanation": "Monetary easing (cutting interest rates or injecting liquidity) lowers the cost of borrowing. This stimulates consumption (C) and investment (I), thereby aiming to increase Aggregate Demand (AD).",
+            "module": 2
+        },
+        {
+            "question_id": "M3_Q1",
+            "question_text": "India’s exports rise sharply due to strong global demand, while imports remain unchanged. According to the open economy GDP identity, this will:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduce GDP",
+                "B": "Increase GDP",
+                "C": "Not affect GDP",
+                "D": "Increase inflation only"
+            },
+            "correct_option_label": "B",
+            "explanation": "According to the open economy GDP identity Y = C + I + G + (Exports - Imports). If exports increase and imports stay constant, Net Exports (NX) increases, which directly increases total GDP.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q2",
+            "question_text": "After the US Federal Reserve raises interest rates, investors move funds from India to the US. This will most likely cause:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rupee appreciation",
+                "B": "Increase in exports immediately",
+                "C": "Fall in imports",
+                "D": "Rupee depreciation"
+            },
+            "correct_option_label": "D",
+            "explanation": "As capital flows out of India seeking higher yields in the US, investors sell Rupees to buy Dollars. This decreases demand for the Rupee and increases demand for the Dollar, causing the Rupee to depreciate.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q3",
+            "question_text": "If Indian interest rate = 8%\nUS interest rate = 5%\nInvestors expect the rupee to depreciate by 3%.\nAccording to Interest Rate Parity (IRP), capital will:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Flow to India",
+                "B": "Flow to US",
+                "C": "Be indifferent",
+                "D": "Stop completely"
+            },
+            "correct_option_label": "C",
+            "explanation": "Interest Rate Parity implies that the interest differential (8% - 5% = 3%) exactly matches the expected currency depreciation (3%). Because returns equalize across both assets after accounting for exchange risks, investors will be indifferent.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q4",
+            "question_text": "Rupee depreciates significantly. Indian exports become cheaper abroad. In the product market, this will:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduce aggregate demand",
+                "B": "Increase net exports",
+                "C": "Reduce GDP",
+                "D": "Increase imports"
+            },
+            "correct_option_label": "B",
+            "explanation": "When the real exchange rate depreciates, domestic goods become more competitive globally, leading to higher export volumes and lower import volumes, thereby increasing total Net Exports.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q5",
+            "question_text": "RBI increases policy rates sharply. Through the exchange rate channel, this will likely:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Depreciate rupee",
+                "B": "Appreciate rupee",
+                "C": "Reduce capital inflow",
+                "D": "Increase imports only"
+            },
+            "correct_option_label": "B",
+            "explanation": "Higher domestic interest rates attract foreign capital seeking better returns. The resulting inflow of foreign investment boosts demand for the Rupee in FX markets, causing the domestic currency to appreciate.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q6",
+            "question_text": "A country wants:\n• Fixed exchange rate\n• Free capital mobility\n• Independent monetary policy\nAccording to the Trinity, this is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Fully achievable",
+                "B": "Common in developing countries",
+                "C": "Only possible in crisis",
+                "D": "Impossible simultaneously"
+            },
+            "correct_option_label": "D",
+            "explanation": "The 'Impossible Trinity' (Trilemma) theory dictates that a central bank can only select two out of these three macroeconomic objectives at the same time; achieving all three simultaneously is impossible.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q7",
+            "question_text": "India records a current account deficit of $20 billion. At the same time, it receives $25 billion in capital inflows. The overall balance of payments will:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Show deficit",
+                "B": "Show surplus",
+                "C": "Be zero (ignoring errors)",
+                "D": "Collapse"
+            },
+            "correct_option_label": "B",
+            "explanation": "BOP is the sum of the Current Account and Capital Account. Current Account (-$20B) + Capital Account (+$25B) results in a net positive influx of $5 billion, yielding an overall BOP surplus.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q8",
+            "question_text": "Global oil prices increase permanently, raising production costs in India. This is primarily a:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Real shock",
+                "B": "Nominal shock",
+                "C": "Monetary shock",
+                "D": "Exchange rate shock"
+            },
+            "correct_option_label": "A",
+            "explanation": "An oil spike represents a massive change in the physical cost and availability of critical raw materials on the ground. Disruptions affecting physical production are defined as real supply shocks.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q9",
+            "question_text": "A country maintains fixed exchange rate but runs large current account deficits financed by short-term capital inflows. Investors suddenly withdraw funds. This will likely cause:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Currency crisis",
+                "B": "Currency appreciation",
+                "C": "Inflation fall",
+                "D": "GDP rise"
+            },
+            "correct_option_label": "A",
+            "explanation": "Relying on volatile short-term 'hot money' (FPI) to finance a fixed peg is highly fragile. Sudden capital flight rapidly depletes central bank reserves, leading directly to a broken peg and severe currency crisis.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q10",
+            "question_text": "India’s trade-to-GDP ratio rises from 20% to 45% over a decade. This indicates:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduced globalization",
+                "B": "Higher global integration",
+                "C": "Currency crisis",
+                "D": "Capital flight"
+            },
+            "correct_option_label": "B",
+            "explanation": "The trade-to-GDP ratio ((Exports + Imports) / GDP) is the primary metric for trade openness. A rising ratio directly signifies increased economic interdependence and higher global integration.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q11",
+            "question_text": "A country has high short-term external debt relative to foreign exchange reserves. This makes the country:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Less vulnerable",
+                "B": "Immune to shocks",
+                "C": "More competitive",
+                "D": "More vulnerable to crisis"
+            },
+            "correct_option_label": "D",
+            "explanation": "If short-term external debt exceeds FX reserves, a country cannot cover its immediate foreign liabilities during a panic or sudden capital flight, making its economy highly vulnerable to a sovereign default or currency collapse.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q12",
+            "question_text": "Exchange rate appreciates due to capital inflows, but exports fall. The fall in exports occurs in:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Asset market",
+                "B": "Product market",
+                "C": "Money market",
+                "D": "Labor market"
+            },
+            "correct_option_label": "B",
+            "explanation": "While exchange rates are determined in the asset/financial markets, the actual trade of physical goods and services—where the fall in real exports registers—takes place in the production or product market.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q13",
+            "question_text": "RBI increases money supply. In an open economy with flexible exchange rate, this will likely:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Appreciate currency",
+                "B": "Depreciate currency",
+                "C": "Fix exchange rate",
+                "D": "Reduce imports"
+            },
+            "correct_option_label": "B",
+            "explanation": "Increasing the money supply lowers domestic interest rates. Lower yields drive capital to flow out of the country, leading to a decreased demand for the currency and consequent depreciation.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q14",
+            "question_text": "Under fixed exchange rate, RBI must intervene when demand for dollars rises. RBI will:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Buy dollars",
+                "B": "Increase exports",
+                "C": "Sell dollars",
+                "D": "Reduce imports directly"
+            },
+            "correct_option_label": "C",
+            "explanation": "If demand for dollars rises, there is upward pressure on the dollar (and downward on the Rupee). To maintain the fixed peg, the RBI must supply the market by selling its own dollar reserves.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q15",
+            "question_text": "During global financial crisis, investors pull funds from emerging markets suddenly. This phenomenon is called:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sudden stop",
+                "B": "Quantitative easing",
+                "C": "Trade surplus",
+                "D": "Currency peg"
+            },
+            "correct_option_label": "A",
+            "explanation": "A 'sudden stop' is a macroeconomic phenomenon characterizing a sharp, unexpected halt or reversal of international capital flows into an emerging economy, often triggering systemic crises.",
+            "module": 3
+        },
+        {
+            "question_id": "M4_Q1",
+            "question_text": "Fiscal policy primarily refers to the government's use of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Interest rates and money supply",
+                "B": "Taxation and public expenditure",
+                "C": "Exchange rate adjustments",
+                "D": "Trade tariffs only"
+            },
+            "correct_option_label": "B",
+            "explanation": "Fiscal policy relates exclusively to the executive branch's decisions (Finance Ministry) regarding the management of government spending (expenditure) and revenue collection (taxation) to influence the economy.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q2",
+            "question_text": "Which of the following best defines fiscal deficit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Total government revenue minus expenditure",
+                "B": "Total expenditure minus total revenue excluding borrowings",
+                "C": "Government borrowing from foreign countries",
+                "D": "Difference between exports and imports"
+            },
+            "correct_option_label": "B",
+            "explanation": "The fiscal deficit represents the shortfall of a government's total revenue (excluding debt/borrowings) compared to its total expenditure, thereby directly indicating how much new debt the government needs to issue.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q3",
+            "question_text": "A persistent fiscal deficit is generally financed through:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Government borrowing",
+                "B": "Increasing exports",
+                "C": "Reducing imports",
+                "D": "Increasing interest rates"
+            },
+            "correct_option_label": "A",
+            "explanation": "When spending chronically exceeds tax collections, the government must cover the shortfall by borrowing funds from domestic or international markets via issuing government securities (bonds).",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q4",
+            "question_text": "Which of the following is NOT a component of fiscal policy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Government expenditure",
+                "B": "Taxation",
+                "C": "Monetary policy",
+                "D": "Budgetary allocation"
+            },
+            "correct_option_label": "C",
+            "explanation": "Monetary policy involves managing interest rates and the money supply, and it is controlled independently by the Central Bank (e.g., RBI), completely separate from the government's fiscal budgetary operations.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q5",
+            "question_text": "Expansionary fiscal policy typically involves:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increasing taxes and reducing spending",
+                "B": "Increasing government spending or reducing taxes",
+                "C": "Reducing money supply",
+                "D": "Increasing interest rates"
+            },
+            "correct_option_label": "B",
+            "explanation": "To stimulate a sluggish economy, governments run deficits (expansionary stance) by injecting more money into the system through higher spending (G) or by leaving more money with consumers via tax cuts (T).",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q6",
+            "question_text": "Contractionary fiscal policy aims to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduce inflationary pressure",
+                "B": "Increase unemployment",
+                "C": "Expand exports",
+                "D": "Increase government debt"
+            },
+            "correct_option_label": "A",
+            "explanation": "During periods of overheating and high inflation, governments adopt a countercyclical contractionary stance by cutting spending and raising taxes to pull demand out of the economy, easing inflationary pressures.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q7",
+            "question_text": "A high fiscal deficit may lead to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lower public debt",
+                "B": "Higher government borrowing",
+                "C": "Immediate economic collapse",
+                "D": "Zero inflation"
+            },
+            "correct_option_label": "B",
+            "explanation": "A fiscal deficit is the exact mathematical gap between revenues and expenditures. A high gap strictly necessitates heavy government borrowing to keep operations funded.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q8",
+            "question_text": "Which of the following measures the government's borrowing requirement?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Revenue deficit",
+                "B": "Current account deficit",
+                "C": "Trade deficit",
+                "D": "Fiscal deficit"
+            },
+            "correct_option_label": "D",
+            "explanation": "The fiscal deficit is fundamentally the core accounting metric indicating the exact quantum of money the government needs to borrow from financial markets within a given financial year.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q9",
+            "question_text": "A fiscal deficit used for productive investment can:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Promote long-term economic growth",
+                "B": "Always reduce economic growth",
+                "C": "Increase unemployment permanently",
+                "D": "Reduce tax revenues automatically"
+            },
+            "correct_option_label": "A",
+            "explanation": "Borrowing is categorized as 'Good Debt' if the deficit is channeled toward productive capital expenditures (like ports and highways), which enhance future GDP capacity and eventually pay for themselves.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q10",
+            "question_text": "Which situation makes fiscal deficits less harmful to long-term growth?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Borrowing for consumption",
+                "B": "Borrowing for subsidies only",
+                "C": "Borrowing for productive investment",
+                "D": "Borrowing to reduce taxes permanently"
+            },
+            "correct_option_label": "C",
+            "explanation": "Deficits become sustainable when the borrowed funds are deployed into productive asset creation (Capex). This elevates the structural growth rate (g), ensuring the economy expands faster than the interest rate burden (r).",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q11",
+            "question_text": "The relationship between fiscal deficit and economic growth depends largely on:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Exchange rate regime",
+                "B": "Population size",
+                "C": "Trade balance",
+                "D": "How borrowed funds are used"
+            },
+            "correct_option_label": "D",
+            "explanation": "Debt itself is neutral; its macroeconomic impact depends strictly on whether it is used as 'good debt' (funding structural infrastructure) or 'bad debt' (funding non-productive current consumption and freebies).",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q12",
+            "question_text": "Which of the following is a potential risk of excessive fiscal deficits?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rising public debt",
+                "B": "Reduced government control",
+                "C": "Higher exports automatically",
+                "D": "Increased savings rate"
+            },
+            "correct_option_label": "A",
+            "explanation": "Excessive and continuous fiscal deficits mean the government is constantly issuing bonds. Over time, this accumulates into a massive aggregate public debt burden that can consume large portions of the budget in interest payments.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q13",
+            "question_text": "In the long run, economic growth is mainly driven by:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Government borrowing",
+                "B": "Short-term fiscal stimulus",
+                "C": "Productivity improvements",
+                "D": "Exchange rate movements"
+            },
+            "correct_option_label": "C",
+            "explanation": "According to long-run growth theory, while capital accumulation eventually faces diminishing returns, sustained exponential growth is driven entirely by non-rivalrous technological and productivity improvements (Ideas).",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q14",
+            "question_text": "Public investment in infrastructure can contribute to growth by:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reducing government revenue",
+                "B": "Improving productivity of private sector",
+                "C": "Increasing inflation automatically",
+                "D": "Reducing labour supply"
+            },
+            "correct_option_label": "B",
+            "explanation": "Government-built infrastructure like modern highways, internet grids, and power plants dramatically reduces logistical and transport costs, enabling private sector businesses to operate much more efficiently and profitably.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q15",
+            "question_text": "Which type of government expenditure is most likely to promote long-term growth?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Investment in education and infrastructure",
+                "B": "Consumption subsidies",
+                "C": "Administrative spending",
+                "D": "Defence expenditure only"
+            },
+            "correct_option_label": "A",
+            "explanation": "Investments in human capital (education/health) and physical capital (infrastructure) are classified as productive capital expenditure. They build the long-term supply-side capacity required to permanently raise GDP ceilings.",
+            "module": 4
+        }
+    ]
+}

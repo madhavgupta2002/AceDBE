@@ -22,8 +22,8 @@ export default function Home() {
                 key={batch}
                 onClick={() => setSelectedBatch(batch)}
                 className={`px-3 py-1 font-semibold text-xs sm:text-sm transition-all duration-200 ${selectedBatch === batch
-                    ? 'bg-amber-600 text-white'
-                    : 'bg-transparent text-gray-400 hover:text-white hover:bg-gray-700'
+                  ? 'bg-amber-600 text-white'
+                  : 'bg-transparent text-gray-400 hover:text-white hover:bg-gray-700'
                   }`}
               >
                 Batch {batch}

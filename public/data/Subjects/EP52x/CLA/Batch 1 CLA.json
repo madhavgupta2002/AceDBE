@@ -1,0 +1,1086 @@
+{
+    "exam_metadata": {
+        "subject_name": "New-Age Business Models",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "CLA1-Q1",
+            "question_text": "Which of the following best defines a “Business Model” ?\nI It explains how a company operates.\nII It explains how a company makes money.\nIII It explains how a company activates value to company.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II and III",
+                "C": "I and III",
+                "D": "All the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "A business model is a conceptual structure that outlines how a company creates (operates), delivers (activates value), and captures value (makes money) within its ecosystem.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1-Q2",
+            "question_text": "Byju, an Indian edtech company launched a product for grade 1 to grade 3, featuring popular Disney characters. ‘The Disney’ - Byjus’s early learning App became popular with pre-school to Grade 3 kids. This example is an illustration of which of the following business model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Franchising business Moll",
+                "B": "Licensing Business Model",
+                "C": "Marketplace business Model",
+                "D": "None of the above"
+            },
+            "correct_option_label": "B",
+            "explanation": "This is a classic Licensing Business Model, where the licensor (Disney) allows a licensee (Byju's) to use its intellectual property (characters) for a fee or royalty.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1-Q3",
+            "question_text": "What is an example for value delivery of swiggy?\nI The App on IOS and android\nII Delivery Partners\nIII commissions from restaurants\nIV listing fee from restaurants",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II III and IV",
+                "C": "I, III and IV",
+                "D": "All the above"
+            },
+            "correct_option_label": "A",
+            "explanation": "Value delivery refers to the capabilities and network required to deliver the customer experience, which in Swiggy's case includes the mobile application and the fleet of delivery partners.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1-Q4",
+            "question_text": "Which of the following is the best example of value appropriation?\nI The App on ios and android\nII Delivery Partners\nIII commissions from restaurants\nIV listing fee from restaurants",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "III and IV",
+                "C": "I, III and IV",
+                "D": "All the above"
+            },
+            "correct_option_label": "B",
+            "explanation": "Value appropriation represents how a company captures value in monetary terms. For a food delivery aggregator, this includes charging commissions and listing fees to restaurants.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1-Q5",
+            "question_text": "Which of the following statements are/is true?\nI BM and Strategy are same and refer to the same concept.\nII BM and Strategy are different but interconnected and need to be aligned\nIII Strategy deals with high level directions\nIV Business model is implementation of strategy",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I only",
+                "B": "I II and III",
+                "C": "II III and IV",
+                "D": "All the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "Business Strategy is a high-level plan determining where to compete, while a Business Model (BM) is the practical blueprint detailing how that strategy will be implemented through daily operations.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1-Q6",
+            "question_text": "Value Proposition, Value Delivery and Value Appropriation are the three pillars of a business Model. Take the case of swiggy, the food delivery aggregator. What is the value proposition of swiggy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ready to Eat food delivered from restaurants of customer’s choice",
+                "B": "Delivery Partner who pickup and deliver/food.",
+                "C": "Commission charged from restaurants.",
+                "D": "None of the above"
+            },
+            "correct_option_label": "A",
+            "explanation": "The value proposition is the core problem the business solves for the customer. Swiggy offers users the convenience of wide restaurant choices and rapid, predictable delivery of ready-to-eat food.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1-Q7",
+            "question_text": "Manufacturing business Model has several Advantages but has challenges too. Which of the following statements are/is true in this context?\nI Manufacturing business Model gives more control for the company over decisions regarding sourcing, pricing, and features of products.\nII The model involves low upfront cost to start the business\nIII The model is risky in sectors where in technology or new developments change rapidly",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II and III",
+                "C": "I and III",
+                "D": "All the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "The manufacturer model provides total control over production and pricing but requires extremely high initial capital expenditure (CapEx), making statement II completely false.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1-Q8",
+            "question_text": "Distribution business Model involves company’s acting as distributors and perform crucial role of connecting manufacturers and brands to retailers. Which of the following statements is true in this context?\nI Distributors typically operate on low gross margins but make it up by having a larger and quicker turnover of inventory\nII Warehousing and logistics cost is a significant component of distributor.\nIII Extending credit to retailers is an important role played by distributors",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II and III",
+                "C": "I and III",
+                "D": "All the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Distributors face low profit margins and heavy warehousing costs. They survive by maintaining a high volume inventory turnover and absorbing risk by offering credit terms to retailers.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1-Q9",
+            "question_text": "Retailer business model includes large format supermarkets, organized retail and smaller kirana stores examples being D-Mart, Reliance Retail, Spencers and local small stores. Which of the following statements is true about the retailer business model?\nI The Choice of location is an important factor in the success of retailers\nII The margins enjoyed by retailers are lower typically compared to distributor’s margins\nIII In the past decade, advent of e-commerce negatively affected success of retail business models",
+            "question_type": "MCQ",
+            "options": {
+                "A": "II and III",
+                "B": "I and II",
+                "C": "I and III",
+                "D": "All the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "Retailers have been heavily disrupted by e-commerce and rely deeply on prime physical locations. However, they generally enjoy higher profit margins on goods compared to the low-margin distributor model.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1-Q10",
+            "question_text": "Franchising business model involves a large company or brand (franchisor) appointing a smaller organization or business as a franchisee to extend their reach and go to market faster. Which of the following are/is true of the franchising business model ?\nI McDonalds\nII Café coffee day\nIii Ashok Leyland\nIv Flipkart",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II and III",
+                "C": "I and III",
+                "D": "All the above"
+            },
+            "correct_option_label": "A",
+            "explanation": "McDonald's and Cafe Coffee Day are prime examples of the franchising model, allowing rapid expansion with minimal CapEx. Ashok Leyland is a manufacturer and Flipkart is a platform.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA2-Q1",
+            "question_text": "Nokia and Blackberry were leaders in mobile phone market before being displaced by players like Apple and Samsung with their mobile phones. Which of these factors caused with their development?\nI Change in consumer behaviours and tastes\nII Platform business model VS Pipeline business model\nIII Change in semi-conductor technology\nIV Lower prices of Apple and Samsung",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II and III",
+                "C": "III and IV",
+                "D": "None of the above"
+            },
+            "correct_option_label": "A",
+            "explanation": "Nokia and Blackberry operated on a linear pipeline model and failed to adapt to changing consumer expectations. Apple's launch of the App Store disrupted them by shifting to a co-creative platform model.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2-Q2",
+            "question_text": "Which of the following is not a platform business model?\nI Blogging- Medium.\nII Food- Domino's Pizza.\nIII Travel- Indigo Airlines.\nIV Hospitality- Oyo",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II abd III",
+                "C": "I and IV",
+                "D": "III and IV"
+            },
+            "correct_option_label": "B",
+            "explanation": "Domino's Pizza and Indigo Airlines operate as traditional linear pipeline businesses (creating and delivering a direct service), unlike Medium or Oyo which connect third-party producers with consumers.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2-Q3",
+            "question_text": "Business models can be broadly classified into. Platform Business models and Pipeline Business Models. Which of the following statements are true?\nI Platform business models benefit from lower costs due to efficient supply chain and supply side economies of scale.\nII Pipeline business model relay on standardization for efficiency. And scalability while platform business models can offer customization.\nIII Roles of Producers and consumers are blurred and Co creation of value happens in platform business models.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "II and III",
+                "B": "I and II",
+                "C": "I and III",
+                "D": "All the above"
+            },
+            "correct_option_label": "A",
+            "explanation": "Pipeline models rely on supply-side economies of scale and standardization. Platform models grow via demand-side economies (network effects) where users fluidly co-create value and customize offerings.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2-Q4",
+            "question_text": "Facebook Business models exhibit which of the following features?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Single sided network effect.",
+                "B": "Indirect or two sided network effect.",
+                "C": "Both of the above.",
+                "D": "None of the above."
+            },
+            "correct_option_label": "C",
+            "explanation": "Facebook utilizes single-sided network effects (more users attract more friends) as well as two-sided indirect network effects (more users attract complementary groups like advertisers and developers).",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2-Q5",
+            "question_text": "Ride sharing platform Ola Exhibits which type of network effect?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Indirect or two sided network effect.",
+                "B": "Single sided or direct network effect.",
+                "C": "Both of the above.",
+                "D": "None of the above."
+            },
+            "correct_option_label": "A",
+            "explanation": "Ola is driven by a two-sided network effect; an increase in the number of riders significantly increases the value of the platform for drivers, and vice versa.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2-Q6",
+            "question_text": "Demand economies of scale refers to the phenomena where value of platform grows as the Number of customers and users grows, creating virtuous cycle of growth. Where do you see strong demand economies of scale?\nI Maruti Suzuki.\nII Ola Ridesharing.\nIII Paytm\nIV Cafe coffee day.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II and III",
+                "C": "III and IV",
+                "D": "I and IV"
+            },
+            "correct_option_label": "B",
+            "explanation": "Ola and Paytm are highly scalable digital platforms that rely on demand-side economies of scale (network effects) to grow, whereas Maruti and CCD rely on traditional supply-side economies.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2-Q7",
+            "question_text": "Looking at Platform metrics, which metric measures the optimal balance between the two sides, such as drivers and riders in Ola and Uber?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Liquidity.",
+                "B": "Customer acquisition cost.",
+                "C": "Net Promoter Score.",
+                "D": "Lifetime value."
+            },
+            "correct_option_label": "A",
+            "explanation": "Liquidity is the key platform metric that measures the ease of transactions and the balance of supply and demand, tracked via metrics like driver acceptance times and passenger wait times.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2-Q8",
+            "question_text": "Churn rate or Retention rate directly affects which of the following metrics?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customer acquisition cost.",
+                "B": "Lifetime value.",
+                "C": "Liquidity.",
+                "D": "Conversion rate."
+            },
+            "correct_option_label": "B",
+            "explanation": "Customer Lifetime Value (CLV) represents the total revenue generated from a customer before they leave. Therefore, a high churn rate directly reduces the LTV of the user base.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2-Q9",
+            "question_text": "As a strategy to kickstart a platform, several strategies can be adopted. One of them is to Seed the platform by spending money to get one side to scale. Which of the following are examples of this strategy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Facebook first launched only for Harvard University by Invitation only and gradually opened for other universities and finally for public.",
+                "B": "Red Bus first opened the platform by on boarding Bus operators only, but after critical mass they opened up consumer side.",
+                "C": "Google Android smartphone to compete with Apple offered $5 million prize for best apps in 10 categories.",
+                "D": "JustDial when it launched, went after all small businesses who advertised in yellow pages physical dictionary."
+            },
+            "correct_option_label": "C",
+            "explanation": "Seeding a platform involves spending upfront capital to incentivize one side of the market. Google literally paid developers $5M in prizes to populate the Android store to attract future users.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2-Q10",
+            "question_text": "As a strategy to kickstart a platform, several strategies can be adopted. One of them is to piggyback on users from a different platform and onboard them. Which one of these is example of the strategy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Facebook first launched only for Harvard University by Invitation only and gradually opened for other universities and finally for public.",
+                "B": "Red Bus first opened the platform by on boarding Bus operators only, but after critical mass they opened up consumer side.",
+                "C": "Google Android smartphone to compete with Apple offered $5 million prize for best apps in 10 categories.",
+                "D": "JustDial when it launched, went after all small businesses who advertised in yellow pages physical dictionary."
+            },
+            "correct_option_label": "D",
+            "explanation": "The piggyback strategy involves leveraging an existing external network's user base. JustDial scraped physical Yellow Pages to artificially generate its initial merchant database.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA3-Q1",
+            "question_text": "Tata Motors is streamlining their raw material purchases needed for manufacturing. Which of the following Is a likely to be explored option?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Amazon",
+                "B": "Paytm",
+                "C": "IndiaMart",
+                "D": "OYO"
+            },
+            "correct_option_label": "C",
+            "explanation": "IndiaMART is India's largest B2B marketplace specifically designed to connect manufacturers with raw material suppliers efficiently, streamlining B2B procurement.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3-Q2",
+            "question_text": "B2B marketplaces is an online platform that connects businesses. Which of the following is true?\nI B2B platform connects businesses.\nII You can buy and sell products and services.\nIII You can collaborate on projects in B2B platform.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II and III",
+                "C": "I and III",
+                "D": "All the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Modern B2B marketplaces go beyond just connecting businesses for transactions; they offer integrated value-added tools to collaborate, negotiate, and manage the supply chain.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3-Q3",
+            "question_text": "Alibaba is one of the largest global B2B marketplace. Which of the statement is not true?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Alibaba connects buyers and sellers worldwide.",
+                "B": "Alibaba provides various services beyond the marketplace such as logistics, Financing And many more.",
+                "C": "Alibaba lists only genuine products.",
+                "D": "Alibaba uses data analytics and AI for better user experience."
+            },
+            "correct_option_label": "C",
+            "explanation": "Like many massive fragmented marketplaces, Alibaba struggles heavily with quality control and fake goods. It is false that they list 'only genuine products'.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3-Q4",
+            "question_text": "Which of these are benefits of B2B marketplace?\nI Shorter sales cycle.\nII Easier negotiation.\nIII Limited supplier options.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II and III",
+                "C": "I and III",
+                "D": "all of the above."
+            },
+            "correct_option_label": "A",
+            "explanation": "B2B marketplaces streamline procurement cycles and simplify negotiations via automated RFQs. However, they massively expand supplier diversity, so statement III is incorrect.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3-Q5",
+            "question_text": "Which one of these is Leading Indian B2B marketplace?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Urban Company.",
+                "B": "IndiaMart",
+                "C": "Big Basket.",
+                "D": "Tata neu"
+            },
+            "correct_option_label": "B",
+            "explanation": "IndiaMART is the pioneer and the largest B2B digital marketplace in India, deeply focused on connecting domestic and global buyers with Indian SMEs.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3-Q6",
+            "question_text": "Which of these statements is not true About UDAAN- A B2B marketplace and leading Indian startup?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Udan focuses narrowly on specific segments Like retailers, wholesalers and manufacturers.",
+                "B": "Udan offers a user friendly interface.",
+                "C": "In short span of time, UDAN has achieved good growth.",
+                "D": "UDAN does not offer additional services such as logistics, fulfillment and credit service."
+            },
+            "correct_option_label": "D",
+            "explanation": "Udaan's massive growth specifically comes from offering integrated value-added services like end-to-end logistics, supply chain fulfillment, and built-in credit financing for retailers.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3-Q7",
+            "question_text": "In general, Large B2B marketplaces earn major portion of the revenue by which of the following means?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Advertising of products and services.",
+                "B": "Brand promotion and launch fees.",
+                "C": "Commission or take rate as a percentage of value of goods and services.",
+                "D": "Logistic fees."
+            },
+            "correct_option_label": "C",
+            "explanation": "While platforms monetize through various avenues, the overwhelming majority of their revenue is generated from the 'take rate'—the commission charged on the Gross Merchandise Value transacted.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA4-Q1",
+            "question_text": "There are various methods to price your SAAS software offering and charge the customers. One of the methods is the freemium model.\nWhich one of these is an example of the freemium model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Twilio- Cloud Communication company prices its services based on number of messages or calls.",
+                "B": "Salesforce software company offers its essential plans at $25 per user per month, while Enterprise and Unlimited plans are at higher prices.",
+                "C": "Video conferencing software Zoom offers Basic plan as free up to 100 participants, while Pro plan starts at 14.99 dollars per host per month.",
+                "D": "Microsoft offers Microsoft 365 Business Basics, Starting at $5 per user per month, while Microsoft 365 Basic Standard starts at $12 per user per month."
+            },
+            "correct_option_label": "C",
+            "explanation": "The Freemium model offers basic utility for free to minimize user friction and rapidly build a massive audience, charging a premium for advanced proprietary features (like Zoom's Pro plan).",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4-Q2",
+            "question_text": "There are various methods to price your SAAS software offering and charge the customers. One of the methods is usage-based pricing. Which one of the following is an example of usage-based pricing model.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Twilio- Cloud Communication company prices its services based on number of messages or calls.",
+                "B": "Salesforce software company offers its essential plans at $25 per user per month, while Enterprise and Unlimited plans are at higher prices.",
+                "C": "Video conferencing software Zoom offers Basic plan as free up to 100 participants, while Pro plan starts at 14.99 dollars per host per month.",
+                "D": "Microsoft offers Microsoft 365 Business Basics, Starting at $5 per user per month, while Microsoft 365 Basic Standard starts at $12 per user per month."
+            },
+            "correct_option_label": "A",
+            "explanation": "Usage-based or 'pay-as-you-go' pricing inherently aligns costs with exact consumption. Twilio perfectly models this by charging per API call or SMS sent.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4-Q3",
+            "question_text": "There are various methods to price your SAAS software offering and charge the customers. One of the method is Per-User pricing model. Which of the following is the example of per-User Pricing Model ?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Twilio- Cloud Communication company prices its services based on number of messages or calls.",
+                "B": "LinkedIn charges Corporates various tiered Prices for its business offerings",
+                "C": "Video conferencing software Zoom offers Basic plan as free up to 100 participants, while Pro plan starts at 14.99 dollars per host per month.",
+                "D": "Microsoft offers Microsoft 365 Business Basics, Starting at $5 per user per month, while Microsoft 365 Basic Standard starts at $12 per user per month."
+            },
+            "correct_option_label": "D",
+            "explanation": "Per-User (or seat-based) pricing charges a fixed subscription fee multiplied directly by the number of active employees or seats using the software.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4-Q4",
+            "question_text": "There are various methods to price your SAAS software offering and Charge the customers. One of the method is feature based pricing. Which one of the following is example of Feature based pricing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Twilio- Cloud Communication company prices its services based on number of messages or calls.",
+                "B": "Salesforce software company offers its essential plans at $25 per user per month, while Enterprise and Unlimited plans are at higher prices.",
+                "C": "Video conferencing software Zoom offers Basic plan as free up to 100 participants, while Pro plan starts at 14.99 dollars per host per month.",
+                "D": "Microsoft offers Microsoft 365 Business Basics, Starting at $5 per user per month, while Microsoft 365 Basic Standard starts at $12 per user per month."
+            },
+            "correct_option_label": "B",
+            "explanation": "Feature-based (tiered) pricing segregates customers by their specific needs, unlocking more robust tools and advanced modules as they pay for higher enterprise tiers.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4-Q5",
+            "question_text": "Before SAAS business model became popular, Organizations went in for enterprise software installed on their services in premises. Which of the following statements is true About the earlier pre-SAAS scenario.\nI. Software Involved higher capital expenditure upfront.\nII. Installation and training costs were lower earlier.\nIII. Charges and upgrade of software is more difficult.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II and III",
+                "C": "III and I",
+                "D": "All the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "Legacy on-premise software required massive initial hardware/software capital expenditure (CapEx) and made upgrades technically complex, but their installation and maintenance costs were definitively higher, making statement II false.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4-Q6",
+            "question_text": "Fintech business models have seen huge growth in India. One of the key factors has been technological advancements. Which of the following has been significant factors in this regard?\nI Mobile technology due to widespread smartphone adaptation.\nII Faster Microprocessor speed in latest computers and phones.\nIII Artificial Intelligence and Machine learning.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II and III",
+                "C": "I and III",
+                "D": "None of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "The core technological drivers of Fintech are mobile penetration (bringing the bank to the user's pocket) and the deployment of AI/ML for fraud detection and alternative credit scoring.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4-Q7",
+            "question_text": "Regulatory sandbox mechanism such as Reserve Bank of India's regulatory sand box allows fintech startups to test new ideas without facing regulatory barriers.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True.",
+                "B": "False.",
+                "C": "None of the above.",
+                "D": "All of the above."
+            },
+            "correct_option_label": "A",
+            "explanation": "A Regulatory Sandbox enables the safe testing of innovative digital financial products in a live but controlled environment, providing necessary temporary regulatory exemptions.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4-Q8",
+            "question_text": "Availability and access to vast amounts of data has been a major factor in growth of Fintech. Which of the following statement is true?\nI Fintech lenders use multiple data sources such as digital transaction, social media activity and advance analytics to assess credit worthiness and provide small loans.\nII Fintech wealth management firms leverage data to offer personalized investment advice tailored to Individual risk profile and financial goals.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I only.",
+                "B": "II only",
+                "C": "Both are true.",
+                "D": "None of the above."
+            },
+            "correct_option_label": "C",
+            "explanation": "Fintech radically relies on alternative data. It powers alternative credit scoring for individuals without formal histories (lending) and fuels Robo-advisors algorithms (wealth management).",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4-Q9",
+            "question_text": "In the fintech sector, financial technology companies have emerged to provide banking services through digital platforms by typically partnering with traditional banks. What are those companies called?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Neo Banks.",
+                "B": "Payment banks.",
+                "C": "Lending bank.",
+                "D": "Small financial banks."
+            },
+            "correct_option_label": "A",
+            "explanation": "Neobanks (Challenger Banks) are entirely digital, agile financial institutions without physical branches. They piggyback on licensed traditional banks to offer superior digital banking experiences.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4-Q10",
+            "question_text": "Payment banks such as Paytm Payment Bank have emerged and are scaling. Which of the following statements are true?\nI Payment banks are primarily focused on payments and remittances.\nII Payment banks cannot issue loans or credit cards.\nIII Payment banks cannot offer services like savings account and money transfers.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II and III",
+                "C": "I and III",
+                "D": "All the above"
+            },
+            "correct_option_label": "A",
+            "explanation": "Payment banks are restricted banking entities; they primarily facilitate seamless digital payments/remittances and cannot issue credit risk products (loans/credit cards). However, they can legally offer savings accounts.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA5-Q1",
+            "question_text": "A healthcare platform allows patients to browse through various doctors, compare their consultation fees, and read reviews before booking. Which business model is this platform primarily using?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "On-Demand Model",
+                "B": "Aggregator Model",
+                "C": "B2C Retail Model",
+                "D": "Infrastructure as a Service"
+            },
+            "correct_option_label": "B",
+            "explanation": "By bringing together multiple fragmented service providers (doctors) onto a single unified interface to facilitate discovery and transactions, the platform utilizes a classic Aggregator Business Model.",
+            "module": 5
+        },
+        {
+            "question_id": "CLA5-Q2",
+            "question_text": "Urban Company (formerly Urban Clap) lists various independent professionals like plumbers and beauticians on its app. In this scenario, what role is the platform playing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Service Provider",
+                "B": "Software as a Service",
+                "C": "Traditional Retailer",
+                "D": "Intermediary/Aggregator"
+            },
+            "correct_option_label": "D",
+            "explanation": "Urban Company does not directly employ these professionals; it serves as a digital intermediary/aggregator, connecting independent home-service workers with clients while standardizing the experience.",
+            "module": 5
+        },
+        {
+            "question_id": "CLA5-Q3",
+            "question_text": "What is the primary focus of the \"Value Proposition\" in an On-Demand business model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Broadest possible variety of long-term options",
+                "B": "Lowest possible price through bulk buying",
+                "C": "Manual offline processing",
+                "D": "Speed, convenience, and responsiveness"
+            },
+            "correct_option_label": "D",
+            "explanation": "The core tenet of the on-demand model is unmatched convenience, minimizing customer wait times, and fulfilling immediate, real-time needs.",
+            "module": 5
+        },
+        {
+            "question_id": "CLA5-Q4",
+            "question_text": "A user requests a grocery delivery through Zepto and expects the items to arrive within 10 minutes. This is an example of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "On-Demand Business Model",
+                "B": "Traditional E-commerce",
+                "C": "Vertical SaaS",
+                "D": "Horizontal Aggregator"
+            },
+            "correct_option_label": "A",
+            "explanation": "Zepto's 'quick commerce' strictly represents the On-Demand Business Model, defined by immediate fulfillment and rapid, hyper-local logistics.",
+            "module": 5
+        },
+        {
+            "question_id": "CLA5-Q5",
+            "question_text": "A food delivery app like Swiggy allows you to choose from 50 different local restaurants and then delivers your order within 30 minutes. How would you classify this business model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Pure Aggregator only",
+                "B": "Pure On-Demand only",
+                "C": "Combined Aggregator and On-Demand",
+                "D": "Horizontal SaaS"
+            },
+            "correct_option_label": "C",
+            "explanation": "Swiggy acts as an aggregator by consolidating hundreds of restaurants on one menu, and simultaneously acts as an on-demand business by deploying a fleet to ensure immediate fulfillment.",
+            "module": 5
+        },
+        {
+            "question_id": "CLA5-Q6",
+            "question_text": "A homeowner needs an urgent repair for a leaking pipe, but doesn't have a trusted contact. They use Urban Company because it offers \"reliable, certified, and affordable services.\" Which part of the Business Model Canvas does this address?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Key Resources",
+                "B": "Value Proposition",
+                "C": "Cost Structure",
+                "D": "Revenue Streams"
+            },
+            "correct_option_label": "B",
+            "explanation": "Solving the severe trust and reliability gap in the fragmented home services market is Urban Company's unique, customer-centric Value Proposition.",
+            "module": 5
+        },
+        {
+            "question_id": "CLA5-Q7",
+            "question_text": "If a service professional accidentally damages a customer's appliance during a repair, a major challenge arises regarding liability. Why is this a risk for the platform?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The platform is not allowed to have insurance.",
+                "B": "It raises questions about whether the platform or the provider is responsible for the harm.",
+                "C": "Customers are not allowed to report damages.",
+                "D": "Appliance repairs are too expensive to insure."
+            },
+            "correct_option_label": "B",
+            "explanation": "Because platform workers are classified as independent contractors rather than employees, establishing clear legal and financial accountability for damages is a critical unresolved challenge.",
+            "module": 5
+        },
+        {
+            "question_id": "CLA5-Q8",
+            "question_text": "Which metric is described as the \"most important\" for ensuring a platform business model is actually working?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Liquidity",
+                "B": "The total number of employees in the head office",
+                "C": "The color scheme of the mobile app",
+                "D": "The number of physical offices owned by the company"
+            },
+            "correct_option_label": "A",
+            "explanation": "Liquidity is the quintessential platform health metric. It proves the platform can efficiently and seamlessly match active supply with active demand without significant interaction failures.",
+            "module": 5
+        },
+        {
+            "question_id": "CLA5-Q9",
+            "question_text": "Practo originally provided free ERP and clinic management software to doctors to help them manage appointments and digital records. What was the primary strategic goal of offering this software for free?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To generate immediate subscription revenue",
+                "B": "To replace the need for physical hospitals",
+                "C": "To seed the marketplace and kickstart the \"flywheel\"",
+                "D": "To sell hardware like computers to doctors"
+            },
+            "correct_option_label": "C",
+            "explanation": "By offering a free software tool to doctors, Practo solved the 'chicken or egg' problem, building immense supply-side inventory that would subsequently attract patients to the consumer app.",
+            "module": 5
+        },
+        {
+            "question_id": "CLA5-Q10",
+            "question_text": "Which of the following is considered a \"Key Metric\" for Practo to determine its revenue growth and platform health?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The number of organic visitors and actual online consultations",
+                "B": "The number of physical offices Practo owns",
+                "C": "The amount of paper used for physical health records",
+                "D": "The speed of the doctors' cars"
+            },
+            "correct_option_label": "A",
+            "explanation": "Actionable metrics drive strategic decisions. For an aggregator like Practo, measuring organic platform traffic and the volume of successful digital consultations accurately reflects growth and monetization.",
+            "module": 5
+        },
+        {
+            "question_id": "CLA6-Q1",
+            "question_text": "What does immutability” mean in the context of blockchain?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Data can be easily edited later",
+                "B": "Data, once added, is practically unchangeable",
+                "C": "Only governments can access the data",
+                "D": "Data is deleted after verification"
+            },
+            "correct_option_label": "B",
+            "explanation": "Immutability is a foundational pillar of blockchain technology; once a block is cryptographically sealed and chained, it cannot be tampered with without invalidating the entire chain.",
+            "module": 6
+        },
+        {
+            "question_id": "CLA6-Q2",
+            "question_text": "What does decentralization in blockchain ensure?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Single point of control",
+                "B": "Central authority dominance",
+                "C": "Data is distributed across multiple nodes",
+                "D": "Data deletion"
+            },
+            "correct_option_label": "C",
+            "explanation": "Decentralization ensures that the ledger is securely copied and validated across thousands of independent global computers (nodes), removing reliance on a single central server.",
+            "module": 6
+        },
+        {
+            "question_id": "CLA6-Q3",
+            "question_text": "A software developer chooses Ethereum for a project because it supports smart contracts and decentralized applications, not just payments. Why is Ethereum different from Bitcoin in this scenario?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ethereum is only a physical coin",
+                "B": "Ethereum supports programmable applications and smart contracts",
+                "C": "Bitcoin is more decentralized than all systems",
+                "D": "Ethereum cannot process transactions"
+            },
+            "correct_option_label": "B",
+            "explanation": "While Bitcoin serves strictly as a digital currency/store of value, Ethereum features a Turing-complete environment that allows developers to run automated, self-executing 'Smart Contracts'.",
+            "module": 6
+        },
+        {
+            "question_id": "CLA6-Q4",
+            "question_text": "A digital artist shares her artwork online, and soon thousands of identical copies spread across social media. She wants a way to prove she is the original creator. What does an NFT help her establish?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Original ownership and authenticity of the digital work",
+                "B": "Physical ownership of all copies",
+                "C": "Automatic copyright enforcement in all countries",
+                "D": "Elimination of internet sharing"
+            },
+            "correct_option_label": "A",
+            "explanation": "Non-Fungible Tokens (NFTs) act as publicly verifiable, cryptographic certificates on a blockchain, definitively proving the original authenticity and unique ownership of a digital asset.",
+            "module": 6
+        },
+        {
+            "question_id": "CLA6-Q5",
+            "question_text": "What is cryptocurrency?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A paper-based currency issued only by banks",
+                "B": "A government bond",
+                "C": "A digital or virtual currency secured by cryptography",
+                "D": "A type of physical commodity"
+            },
+            "correct_option_label": "C",
+            "explanation": "Cryptocurrency is entirely virtual money that uses advanced encryption algorithms to secure and verify peer-to-peer transactions without the need for central banking oversight.",
+            "module": 6
+        },
+        {
+            "question_id": "CLA6-Q6",
+            "question_text": "What are discovery platforms primarily used for?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Selling products",
+                "B": "Building audience and reach",
+                "C": "Managing finances",
+                "D": "Creating physical goods"
+            },
+            "correct_option_label": "B",
+            "explanation": "Discovery platforms (like TikTok and YouTube) utilize massive recommendation algorithms to distribute content globally, allowing independent creators to rapidly build a massive fan base.",
+            "module": 6
+        },
+        {
+            "question_id": "CLA6-Q7",
+            "question_text": "What is the first stage in the creator lifecycle?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Creation",
+                "B": "Growth",
+                "C": "Monetisation",
+                "D": "Discovery"
+            },
+            "correct_option_label": "A",
+            "explanation": "The creator economy lifecycle follows four sequential steps: Creation (making the art), Discovery (finding an audience), Monetization, and Growth (scaling operations).",
+            "module": 6
+        },
+        {
+            "question_id": "CLA6-Q8",
+            "question_text": "Graphy helps teacher creators organize classes, host webinars, manage payments, and handle community management. What kind of platform is Graphy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Physical retail chain",
+                "B": "Cryptocurrency exchange",
+                "C": "Real estate platform",
+                "D": "SaaS hybrid learning platform"
+            },
+            "correct_option_label": "D",
+            "explanation": "Graphy provides independent educational creators with comprehensive Software-as-a-Service tools to seamlessly run their digital teaching businesses without relying on social networks.",
+            "module": 6
+        },
+        {
+            "question_id": "CLA6-Q9",
+            "question_text": "Kunal Kamra uses Patreon to offer exclusive content to fans who pledge monthly support. Which creator economy model does this represent?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Print media distribution",
+                "B": "Direct fan engagement and crowdfunding",
+                "C": "Traditional bank lending",
+                "D": "Celebrity licensing"
+            },
+            "correct_option_label": "B",
+            "explanation": "Patreon is a subscription platform that allows creators to bypass ad networks and monetize directly by charging their most loyal fans a recurring monthly fee.",
+            "module": 6
+        },
+        {
+            "question_id": "CLA6-Q10",
+            "question_text": "What happens during the discovery phase?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Selling products",
+                "B": "Managing finance",
+                "C": "Building an audience through content sharing",
+                "D": "Hiring employees"
+            },
+            "correct_option_label": "C",
+            "explanation": "In the discovery phase, creators heavily focus on releasing high-quality, shareable content to algorithmically attract new viewers and establish an engaged digital community.",
+            "module": 6
+        },
+        {
+            "question_id": "CLA7-Q1",
+            "question_text": "Business Metrics or Key Performance Indicators ( KPIs) are quantifiable measures used by companies. Which of the following is true:\n1. They are useful to predict Future trends about the business\n2. They can be used to analyze performance of individuals or certain processes\n3. They can be used to identify problems areas",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1 and 2",
+                "B": "2 and 3",
+                "C": "1 and 3",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Key Performance Indicators form the strategic backbone of a business; they predict future analytics, evaluate operational bottlenecks, and align employee performance targets.",
+            "module": 7
+        },
+        {
+            "question_id": "CLA7-Q2",
+            "question_text": "An Ecommerce company has an app that users download and can do purchases through the app. Which of the following can be considered as a vanity metric and not an actionable metric in this context:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Monthly active users (at least one purchase done)",
+                "B": "Number of App downloads",
+                "C": "Average order value",
+                "D": "Repeat purchase rate"
+            },
+            "correct_option_label": "B",
+            "explanation": "Total app downloads look great on paper but provide no indication of active engagement or financial viability, making it a classic vanity metric compared to actual purchasing data.",
+            "module": 7
+        },
+        {
+            "question_id": "CLA7-Q3",
+            "question_text": "Sales Per Square feet is an important metric for which of these business Models",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Retail Business Model",
+                "B": "Distributor Business Model",
+                "C": "Leasing Business Model",
+                "D": "Razor Blade Business Model"
+            },
+            "correct_option_label": "A",
+            "explanation": "Physical footprint constraints define the retail model. Measuring the revenue generated per unit of floor space dictates the efficiency of store layout and inventory display.",
+            "module": 7
+        },
+        {
+            "question_id": "CLA7-Q4",
+            "question_text": "Inventory turnover ratio is an important metric in which of these business models?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Subscription Business Model",
+                "B": "Leasing Business Model",
+                "C": "Razor Blade Business Model",
+                "D": "Distributor Business Model"
+            },
+            "correct_option_label": "D",
+            "explanation": "Because distributors absorb high warehousing costs and operate on incredibly low margins, their financial survival completely depends on churning their massive inventory rapidly.",
+            "module": 7
+        },
+        {
+            "question_id": "CLA7-Q5",
+            "question_text": "A company is following a Bundling Business strategy by bundling their newly launched Milkshakes along with their traditional, popular Milk, Curd and other products. Which of the following metric would you track and focus on to evaluate the success of the Bundling strategy over the next six months.\n1. Higher average Order value per customer than before\n2. Cross sell rate – people buying additional items than before\n3. Default rate of Customers\n4. Gross Margins of Milk and Curd",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II and III",
+                "C": "III and IV",
+                "D": "I and IV"
+            },
+            "correct_option_label": "A",
+            "explanation": "A bundling model aims to increase basket size by pairing products. Therefore, a spike in Average Order Value and a higher cross-selling rate indicate a successful bundle launch.",
+            "module": 7
+        },
+        {
+            "question_id": "CLA7-Q6",
+            "question_text": "Asset Utilization Rate and Default rates are typic metrics used in connection with which Business Model :",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Retail Business Model",
+                "B": "Distributor Business Model",
+                "C": "Razor Blade Business Model",
+                "D": "Leasing Business Model"
+            },
+            "correct_option_label": "D",
+            "explanation": "In leasing, capital is sunk into a physical asset. Profitability is exclusively driven by minimizing lessee payment defaults and maximizing the utilization (rental) rate of the equipment.",
+            "module": 7
+        },
+        {
+            "question_id": "CLA7-Q7",
+            "question_text": "Aggregator Business Models are popular across many sectors. Which of the following metrics are important metrics for Aggregator businesses?\n1. Gross Merchandise Value or Gross Sales Value\n2. Take Rate or Commission Rate\n3. Number of active users on the aggregator platform",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1 and 2",
+                "B": "2 and 3",
+                "C": "1 and 3",
+                "D": "All of the above"
+            },
+            "correct_option_label": "D",
+            "explanation": "Aggregators calculate success via scale. They heavily track total platform volume (GMV), user engagement/liquidity (active users), and the percentage they scrape off the top (Take Rate).",
+            "module": 7
+        },
+        {
+            "question_id": "CLA7-Q8",
+            "question_text": "Network effect is more relatable to which of the following business models?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Franchise business model",
+                "B": "Marketplace business model",
+                "C": "Licensing business model",
+                "D": "Razorblade business model"
+            },
+            "correct_option_label": "B",
+            "explanation": "Marketplaces rely entirely on Demand Economies of Scale; as more sellers join, the platform attracts more buyers, creating an exponential, self-reinforcing network effect.",
+            "module": 7
+        },
+        {
+            "question_id": "CLA7-Q9",
+            "question_text": "In an E-commerce company , the website gets huge amount of Traffic but the Bounce rate is high. Which of the following is possible cause :\n1. Very high page loading time\n2. Lack of discounts or High prices\n3. Irrelevant content in the web page",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1 and 2",
+                "B": "2 and 3",
+                "C": "1 and 3",
+                "D": "None of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "A high bounce rate indicates visitors leave immediately upon arrival. This is predominantly caused by agonizingly slow load times or a complete mismatch between the marketing clickbait and actual content.",
+            "module": 7
+        },
+        {
+            "question_id": "CLA7-Q10",
+            "question_text": "A telecom company, in order to reduce its losses and increase its profitability, decided to reduce the investments in telecom towers. However, that strategy backfired because it led to more dropped voice calls, more customer dissatisfaction and customers leaving. Their Losses actually increased. Which of the following could have prevented this, if the company had implemented the strategy :",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Balanced Score card",
+                "B": "Network effects",
+                "C": "Aggressive Selling",
+                "D": "Strong public relations"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Balanced Scorecard forces executives to track non-financial metrics (Customer perspective, Internal processes) alongside finance, preventing short-term cost-cutting from destroying the long-term customer experience.",
+            "module": 7
+        },
+        {
+            "question_id": "CLA8-Q1",
+            "question_text": "Vijay wants to buy atta using a consumer app connected to ONDC. The system broadcasts his search to relevant seller nodes in his location. Which ONDC participant performs this matchmaking role?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Seller app",
+                "B": "Gateway",
+                "C": "Logistics provider",
+                "D": "Payment processor"
+            },
+            "correct_option_label": "B",
+            "explanation": "In ONDC's architecture, Gateways act as the multicasting switchboard. They receive the search criteria from the Buyer App and broadcast it to all registered local Seller Apps simultaneously.",
+            "module": 8
+        },
+        {
+            "question_id": "CLA8-Q2",
+            "question_text": "A buyer uses Paytm to search for products, while the seller is listed through another seller-side application, and both transact because they are connected through ONDC. What does this illustrate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Proprietary data lock-iN",
+                "B": "Single-platform dependency",
+                "C": "Open network interoperability",
+                "D": "Marketplace monopoly"
+            },
+            "correct_option_label": "C",
+            "explanation": "ONDC functions like UPI. The ability for users on one app to purchase from sellers listed exclusively on another app exemplifies complete decentralized, open network interoperability.",
+            "module": 8
+        },
+        {
+            "question_id": "CLA8-Q3",
+            "question_text": "A technology startup builds payment, logistics, or reconciliation tools for ONDC participants and earns revenue from transactions across the network. What ONDC opportunity does this represent?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Monolithic platform control",
+                "B": "Specialized technology service provider model",
+                "C": "Traditional wholesale distribution",
+                "D": "Closed subscription retailing"
+            },
+            "correct_option_label": "B",
+            "explanation": "ONDC unbundles the supply chain. This allows tech firms to monetize specific micro-services (like API gateways or logistics tech) without building full-stack monolithic platforms.",
+            "module": 8
+        },
+        {
+            "question_id": "CLA8-Q4",
+            "question_text": "A startup builds a niche platform only for organic products sourced from multiple sellers and plugs into ONDC. Why might this model work well on ONDC?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because ONDC restricts categories",
+                "B": "Because niche platforms can stand out and access network-wide demand",
+                "C": "Because ONDC only supports grocerie",
+                "D": "Because it eliminates the need for buyers"
+            },
+            "correct_option_label": "B",
+            "explanation": "ONDC offers universal discoverability. Niche platforms don't have to build huge buyer bases; they plug into ONDC and automatically access demand from mega Buyer Apps like Paytm.",
+            "module": 8
+        },
+        {
+            "question_id": "CLA8-Q5",
+            "question_text": "Which of the following best describes ONDC itself?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A shopping app like Amazon",
+                "B": "A regulator for e-commerce",
+                "C": "An open protocol and network enabler for digital commerce",
+                "D": "A logistics-only service"
+            },
+            "correct_option_label": "C",
+            "explanation": "ONDC is explicitly not a centralized company, competitor, or a direct shopping app. It is a government-backed, decentralized open protocol infrastructure enabling e-commerce interaction.",
+            "module": 8
+        },
+        {
+            "question_id": "CLA8-Q6",
+            "question_text": "Magicpin earns revenue by taking commissions from listed businesses, selling advertising space, and offering premium subscriptions. What does this indicate about its business model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It depends only on one revenue stream",
+                "B": "It is a non-profit platform",
+                "C": "It only earns from logistics",
+                "D": "It uses multiple monetization channels"
+            },
+            "correct_option_label": "D",
+            "explanation": "Like most modern digital aggregators, Magicpin derisks its business by layering multiple revenue streams (take rates, ad space, subscriptions) over its massive active user base.",
+            "module": 8
+        },
+        {
+            "question_id": "CLA8-Q7",
+            "question_text": "A startup founder wants an example of how ONDC can help a commerce platform improve user experience, transparency, and seller onboarding. Which example from the transcript fits best?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Magicpin’s ONDC integration",
+                "B": "Domino’s standalone app",
+                "C": "Traditional kirana ledger",
+                "D": "Offline wholesale market"
+            },
+            "correct_option_label": "A",
+            "explanation": "Magicpin integrated as a Seller App into ONDC, immediately seeing a 20% traffic boost by making their hyper-local sellers globally discoverable to third-party buyer apps.",
+            "module": 8
+        },
+        {
+            "question_id": "CLA8-Q8",
+            "question_text": "Vijay sees atta listed by Gupta Kirana Store and BigBasket, then chooses Gupta Kirana because of the lower product price. He later separately chooses Dunzo for delivery. What feature of ONDC does this demonstrate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Bundled platform services",
+                "B": "Unbundled commerce choice",
+                "C": "Closed retail architecture",
+                "D": "Centralized seller allocation"
+            },
+            "correct_option_label": "B",
+            "explanation": "This perfectly exemplifies 'unbundled commerce'. ONDC structurally separates the product purchase layer from the logistical fulfillment layer, empowering ultimate consumer choice and competitive pricing.",
+            "module": 8
+        },
+        {
+            "question_id": "CLA8-Q9",
+            "question_text": "A kirana store owner joins ONDC through a seller-side app and becomes discoverable to buyers coming from many different buyer apps. What benefit is being highlighted?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Seller reach beyond a single platform",
+                "B": "Increased platform exclusivity",
+                "C": "Limited discovery only on one website",
+                "D": "Mandatory dependence on large e-commerce players"
+            },
+            "correct_option_label": "A",
+            "explanation": "By utilizing ONDC, small merchants break free from platform silos. A single catalog upload grants them network-wide, universal visibility across dozens of different connected Buyer Applications.",
+            "module": 8
+        },
+        {
+            "question_id": "CLA8-Q10",
+            "question_text": "Ramesh, a handloom weaver from Odisha, used to sell his sarees to middlemen at very low prices. After listing them on an ONDC-enabled platform, a customer in Delhi buys directly from him. What does this example primarily show?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Platform exclusivity",
+                "B": "Closed marketplace model",
+                "C": "Franchise retail model",
+                "D": "Democratization of digital commerce"
+            },
+            "correct_option_label": "D",
+            "explanation": "ONDC democratizes commerce by lowering the barrier to entry, allowing rural producers to completely bypass traditional, highly-taxed distribution pipelines and access nationwide D2C markets.",
+            "module": 8
+        }
+    ]
+}
