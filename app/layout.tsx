@@ -3,6 +3,7 @@ import { Inter, Merriweather, Open_Sans, Lora, Roboto } from 'next/font/google';
 import './globals.css';
 import 'katex/dist/katex.min.css';
 import { DarkModeProvider } from '@/contexts/DarkModeContext';
+import { BatchProvider } from '@/contexts/BatchContext';
 import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
@@ -134,6 +135,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} bg-gray-900 ${merriweather.variable} ${openSans.variable} ${lora.variable} ${roboto.variable}`}>
         <DarkModeProvider>
+          <BatchProvider>
           {children}
           <footer className="w-full py-6 mt-auto border-t border-gray-800/50">
             <div className="flex flex-col items-center gap-2">
@@ -150,6 +152,7 @@ export default function RootLayout({
               </p> */}
             </div>
           </footer>
+          </BatchProvider>
         </DarkModeProvider>
       </body>
     </html>

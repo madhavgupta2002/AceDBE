@@ -4,36 +4,37 @@ import React, { useState } from 'react';
 import {
   ArrowRight,
   MessageSquare,
-  BarChart3,
-  Lightbulb,
-  Rocket,
-  DollarSign,
-  TrendingUp,
-  Building2,
-  BookOpen,
   Youtube,
   ClipboardList,
-  ExternalLink
+  ExternalLink,
+  BookOpen
 } from 'lucide-react';
-import { SUBJECTS, getSubjectsByTerm } from '@/lib/subjectMapping';
+import { getSubjectsByBatch, getTermsForBatch, getDisplayNameForAlias, getIconForCode } from '@/lib/subjectMapping';
+import { useBatch } from '@/contexts/BatchContext';
 import { useRouter } from 'next/navigation';
 import videosData from '@/public/data/videos.json';
 import CustomQuizGenerator from './CustomQuizGenerator';
 
-const AVAILABLE_TERMS = [1, 2, 3, 4]; // Define available terms
-
 const SubjectSelector: React.FC = () => {
   const router = useRouter();
-  const [selectedTerm, setSelectedTerm] = useState<number>(4);
+  const { selectedBatch, setSelectedBatch } = useBatch();
+  const availableTerms = getTermsForBatch(selectedBatch);
+  const [selectedTerm, setSelectedTerm] = useState<number>(availableTerms[availableTerms.length - 1] ?? 1);
 
-  // Load saved term on mount
+  // When batch changes, clamp selected term to a valid one for that batch
+  React.useEffect(() => {
+    const terms = getTermsForBatch(selectedBatch);
+    if (!terms.includes(selectedTerm)) {
+      setSelectedTerm(terms[terms.length - 1] ?? 1);
+    }
+  }, [selectedBatch]);
+
+  // Persist term selection
   React.useEffect(() => {
     const savedTerm = localStorage.getItem('selectedTerm');
     if (savedTerm) {
-      const termNumber = parseInt(savedTerm, 10);
-      if (AVAILABLE_TERMS.includes(termNumber)) {
-        setSelectedTerm(termNumber);
-      }
+      const parsed = parseInt(savedTerm, 10);
+      if (availableTerms.includes(parsed)) setSelectedTerm(parsed);
     }
   }, []);
 
@@ -42,47 +43,11 @@ const SubjectSelector: React.FC = () => {
     localStorage.setItem('selectedTerm', term.toString());
   };
 
-  // Get subjects for selected term
-  const filteredSubjects = getSubjectsByTerm(selectedTerm);
+  // Subjects for current batch + term
+  const subjectsForTerm = getSubjectsByBatch(selectedBatch, selectedTerm);
 
   const handleSubjectSelect = (code: string) => {
     router.push(`/${code}`);
-  };
-
-  // Map subject codes to icons
-  const getSubjectIcon = (code: string) => {
-    const iconMap: { [key: string]: React.ReactNode } = {
-      'AE11x': <MessageSquare className="w-6 h-6 text-white" />,
-      'DS11x_B2': <BarChart3 className="w-6 h-6 text-white" />,
-      'EP11x': <Lightbulb className="w-6 h-6 text-white" />,
-      'EP12x': <Rocket className="w-6 h-6 text-white" />,
-      'FA11x': <DollarSign className="w-6 h-6 text-white" />,
-      'MK11x': <TrendingUp className="w-6 h-6 text-white" />,
-      'ST21x': <Building2 className="w-6 h-6 text-white" />,
-      'MD42x': <BookOpen className="w-6 h-6 text-white" />,
-      'MK41x': <TrendingUp className="w-6 h-6 text-white" />,
-      'OB41x': <MessageSquare className="w-6 h-6 text-white" />,
-      'OM41x': <ClipboardList className="w-6 h-6 text-white" />,
-      'ST41x': <Building2 className="w-6 h-6 text-white" />,
-      'EP41x': <Lightbulb className="w-6 h-6 text-white" />,
-      'MD41x': <BarChart3 className="w-6 h-6 text-white" />,
-      'DS11x_B1': <BarChart3 className="w-6 h-6 text-white" />,
-      'ES21x': <Building2 className="w-6 h-6 text-white" />,
-      'DS21x': <BarChart3 className="w-6 h-6 text-white" />,
-      'ID22x': <BookOpen className="w-6 h-6 text-white" />,
-      'AE21x': <MessageSquare className="w-6 h-6 text-white" />,
-      'SE21x': <MessageSquare className="w-6 h-6 text-white" />,
-      'PJ21x': <Rocket className="w-6 h-6 text-white" />,
-      'ID21x': <BookOpen className="w-6 h-6 text-white" />,
-      'FA31x': <DollarSign className="w-6 h-6 text-white" />,
-      'EP31x': <Lightbulb className="w-6 h-6 text-white" />,
-      'SE31x': <Lightbulb className="w-6 h-6 text-white" />,
-      'MK31x': <TrendingUp className="w-6 h-6 text-white" />,
-      'AE31x': <BarChart3 className="w-6 h-6 text-white" />,
-      'ID32x': <BookOpen className="w-6 h-6 text-white" />,
-      'ID31x': <BookOpen className="w-6 h-6 text-white" />,
-    };
-    return iconMap[code] || <MessageSquare className="w-6 h-6 text-white" />;
   };
 
   // Create YouTube playlist URL from video links
@@ -134,7 +99,7 @@ const SubjectSelector: React.FC = () => {
       {/* Term Selector */}
       <div className="flex justify-center mb-6 sm:mb-8">
         <div className="inline-flex bg-gray-800 border border-gray-700 p-1 gap-1">
-          {AVAILABLE_TERMS.map((term) => (
+          {getTermsForBatch(selectedBatch).map((term) => (
             <button
               key={term}
               onClick={() => handleTermChange(term)}
@@ -159,25 +124,27 @@ const SubjectSelector: React.FC = () => {
       </div>
 
       <div className="space-y-3">
-        {filteredSubjects.map((subject, index) => (
+        {subjectsForTerm.map(({ subject, alias }) => (
           <div
-            key={subject.code}
+            key={alias.code}
             className="bg-gray-800 border border-gray-700 hover:border-indigo-500 hover:bg-gray-750 transition-all duration-200 cursor-pointer group"
-            onClick={() => handleSubjectSelect(subject.code)}
+            onClick={() => handleSubjectSelect(alias.code)}
           >
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-4 sm:p-6">
               {/* Subject Info */}
               <div className="flex items-center space-x-3 sm:space-x-4 flex-1 mb-3 sm:mb-0">
                 <div className="bg-indigo-600 p-2 sm:p-3 group-hover:bg-indigo-500 transition-colors shrink-0">
-                  {getSubjectIcon(subject.code)}
+                  {React.createElement(getIconForCode(alias.code), {
+                    className: 'w-6 h-6 text-white',
+                  })}
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3">
                     <span className="text-xs sm:text-sm text-gray-200 bg-gray-700 px-2 py-0.5 sm:py-1 font-semibold w-fit mb-1 sm:mb-0 text-center min-w-[50px]">
-                      {subject.code}
+                      {alias.code}
                     </span>
                     <h3 className="text-base sm:text-lg font-bold text-white leading-tight">
-                      {subject.name}
+                      {getDisplayNameForAlias(subject, alias)}
                     </h3>
                   </div>
                 </div>
@@ -187,22 +154,22 @@ const SubjectSelector: React.FC = () => {
               <div className="flex items-center justify-end mt-2 sm:mt-0 gap-3 sm:gap-4">
                 <div className="flex items-center gap-2">
                   <button
-                    onClick={(e) => handleNotesClick(e, subject.code)}
+                    onClick={(e) => handleNotesClick(e, alias.code)}
                     className="p-2 bg-indigo-600 hover:bg-indigo-500 text-white transition-colors"
                     title="View Notes"
                   >
                     <BookOpen className="w-4 h-4 sm:w-5 sm:h-5" />
                   </button>
                   <button
-                    onClick={(e) => handleYoutubeClick(e, subject.code)}
+                    onClick={(e) => handleYoutubeClick(e, alias.code)}
                     className="p-2 bg-red-600 hover:bg-red-500 text-white transition-colors"
                     title="Watch All Videos"
-                    disabled={!getAllVideosForSubject(subject.code)}
+                    disabled={!getAllVideosForSubject(alias.code)}
                   >
                     <Youtube className="w-4 h-4 sm:w-5 sm:h-5" />
                   </button>
                   <button
-                    onClick={(e) => handleQuizClick(e, subject.code)}
+                    onClick={(e) => handleQuizClick(e, alias.code)}
                     className="p-2 bg-green-600 hover:bg-green-500 text-white transition-colors"
                     title="Start Quiz"
                   >

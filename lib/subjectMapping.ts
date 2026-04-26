@@ -1,204 +1,354 @@
-import { Subject } from './types';
+import { Subject, SubjectAlias } from './types';
+import {
+  MessageSquare,
+  BarChart3,
+  Lightbulb,
+  Rocket,
+  DollarSign,
+  TrendingUp,
+  Building2,
+  BookOpen,
+  ClipboardList,
+} from 'lucide-react';
 
 export const SUBJECTS: Subject[] = [
-  // Term 1 Subjects
+  // ── Term 1 ──────────────────────────────────────────────────
   {
-    code: 'AE11x',
     name: 'Foundations of Business Communication – I',
     description: 'Fundamentals of business communication and professional writing',
-    term: 1
+    icon: 'MessageSquare',
+    aliases: [
+      { batch: 1, code: 'AE11x', term: 1 },
+      { batch: 2, code: 'AE11x', term: 1 },
+    ],
   },
   {
-    code: 'DS11x_B2',
     name: 'Business Statistics for Entrepreneurs',
     description: 'Statistical methods and data analysis for business decision-making',
-    term: 1
+    icon: 'BarChart3',
+    aliases: [
+      { batch: 1, code: 'DS11x_B1', term: 1, name: 'Business Statistics for Entrepreneurs' },
+      { batch: 2, code: 'DS11x_B2', term: 1, name: 'Business Statistics for Entrepreneurs I' },
+    ],
   },
   {
-    code: 'EP11x',
+    name: 'Business Statistics for Entrepreneurs II',
+    description: 'Statistical methods and data analysis for business decision-making',
+    icon: 'BarChart3',
+    aliases: [
+      { batch: 2, code: 'DS21x_B2', term: 2 },
+    ],
+  },
+  {
     name: 'Creativity Mindset for Innovation and Imagination',
     description: 'Developing creative thinking and innovation capabilities',
-    term: 1
+    icon: 'Lightbulb',
+    aliases: [
+      { batch: 1, code: 'EP11x', term: 1 },
+      { batch: 2, code: 'EP11x', term: 1 },
+    ],
   },
   {
-    code: 'EP12x',
     name: 'Exploration into Entrepreneurship',
     description: 'Understanding entrepreneurship and business creation',
-    term: 1
+    icon: 'Rocket',
+    aliases: [
+      { batch: 1, code: 'EP12x', term: 1 },
+      { batch: 2, code: 'EP12x', term: 1 },
+    ],
   },
   {
-    code: 'FA11x',
     name: 'Financial Statements and Business Performance',
     description: 'Financial reporting and performance analysis',
-    term: 1
+    icon: 'DollarSign',
+    aliases: [
+      { batch: 1, code: 'FA11x', term: 1 },
+      { batch: 2, code: 'FA11x', term: 1 },
+    ],
   },
   {
-    code: 'MK11x',
     name: 'Marketing Fundamentals',
     description: 'Core marketing principles and strategies',
-    term: 1
+    icon: 'TrendingUp',
+    aliases: [
+      { batch: 1, code: 'MK11x', term: 1 },
+      { batch: 2, code: 'MK11x', term: 1 },
+    ],
   },
   {
-    code: 'ST21x',
     name: 'Evolution of Business and Market',
     description: 'Historical and contemporary perspectives on business and markets',
-    term: 1
+    icon: 'Building2',
+    aliases: [
+      { batch: 1, code: 'ST21x', term: 1 },
+      { batch: 2, code: 'ST21x', term: 1 },
+    ],
   },
+
+  // ── Term 2 ──────────────────────────────────────────────────
   {
-    code: 'DS11x_B1',
-    name: '[Batch 1] Business Statistics for Entrepreneurs',
-    description: 'For Batch 1 with 8 Modules',
-    term: 1
-  },
-  // Term 2 Subjects
-  {
-    code: 'ES21x',
     name: 'Principles of Microeconomics',
     description: '',
-    term: 2
+    icon: 'Building2',
+    aliases: [
+      { batch: 1, code: 'ES21x', term: 2 },
+      { batch: 2, code: 'ES21x', term: 2 },
+    ],
   },
   {
-    code: 'ID22x',
     name: 'Indian Knowledge Systems',
     description: '',
-    term: 2
+    icon: 'BookOpen',
+    aliases: [
+      { batch: 1, code: 'ID22x', term: 2 },
+      { batch: 2, code: 'ID22x', term: 2 },
+    ],
   },
   {
-    code: 'DS21x',
     name: 'Advanced Statistics for Business',
     description: '',
-    term: 2
+    icon: 'BarChart3',
+    aliases: [
+      { batch: 1, code: 'DS21x', term: 2 },
+    ],
   },
   {
-    code: 'AE21x',
     name: 'Foundation of Business Communication II',
     description: '',
-    term: 2
+    icon: 'MessageSquare',
+    aliases: [
+      { batch: 1, code: 'AE21x', term: 2 },
+      { batch: 2, code: 'AE21x', term: 2 },
+    ],
   },
   {
-    code: 'SE21x',
     name: 'Persuasive Communication',
     description: '',
-    term: 2
+    icon: 'MessageSquare',
+    aliases: [
+      { batch: 1, code: 'SE21x', term: 2 },
+      { batch: 2, code: 'SE21x', term: 2 },
+    ],
   },
   {
-    code: 'PJ21x',
     name: 'Venturing on a Budget: Rs.250 Venture',
     description: '',
-    term: 2
+    icon: 'Rocket',
+    aliases: [
+      { batch: 1, code: 'PJ21x', term: 2 },
+      { batch: 2, code: 'PJ21x', term: 2 },
+    ],
   },
   {
-    code: 'ID21x',
     name: 'Website Development',
     description: '',
-    term: 2
+    icon: 'BookOpen',
+    aliases: [
+      { batch: 1, code: 'ID21x', term: 2 },
+      { batch: 2, code: 'ID21x', term: 2 },
+    ],
   },
-
-  // Term 3 Subjects
   {
-    code: 'FA31x',
     name: 'Management Accounting',
     description: '',
-    term: 3
-  },
-  {
-    code: 'EP31x',
-    name: 'Entrepreneurial Mindset and Methods',
-    description: '',
-    term: 3
-  },
-  {
-    code: 'SE31x',
-    name: 'Design Your Thinking',
-    description: '',
-    term: 3
-  },
-  {
-    code: 'MK31x',
-    name: 'Social Media for Marketing',
-    description: '',
-    term: 3
-  },
-  {
-    code: 'AE31x',
-    name: 'Spreadsheets for Business Decisions',
-    description: '',
-    term: 3
-  },
-  {
-    code: 'ID32x',
-    name: 'Exploring Sustainability in the Indian Context',
-    description: '',
-    term: 3
-  },
-  {
-    code: 'ID31x',
-    name: 'Understanding Indian Culture Theatre and its presence in daily life',
-    description: '',
-    term: 3
+    icon: 'DollarSign',
+    aliases: [
+      { batch: 1, code: 'FA31x', term: 3 },
+      { batch: 2, code: 'FA31x', term: 2 },
+    ],
   },
 
-  // Term 4 Subjects
+  // ── Term 3 ──────────────────────────────────────────────────
   {
-    code: 'MD42x',
+    name: 'Entrepreneurial Mindset and Methods',
+    description: '',
+    icon: 'Lightbulb',
+    aliases: [
+      { batch: 1, code: 'EP31x', term: 3 },
+      { batch: 2, code: 'EP31x', term: 3 },
+    ],
+  },
+  {
+    name: 'Design Your Thinking',
+    description: '',
+    icon: 'Lightbulb',
+    aliases: [
+      { batch: 1, code: 'SE31x', term: 3 },
+      { batch: 2, code: 'SE31x', term: 3 },
+    ],
+  },
+  {
+    name: 'Social Media for Marketing',
+    description: '',
+    icon: 'TrendingUp',
+    aliases: [
+      { batch: 1, code: 'MK31x', term: 3 },
+      { batch: 2, code: 'MK31x', term: 3 },
+    ],
+  },
+  {
+    name: 'Spreadsheets for Business Decisions',
+    description: '',
+    icon: 'BarChart3',
+    aliases: [
+      { batch: 1, code: 'AE31x', term: 3 },
+      { batch: 2, code: 'AE31x', term: 3 },
+    ],
+  },
+  {
+    name: 'Exploring Sustainability in the Indian Context',
+    description: '',
+    icon: 'BookOpen',
+    aliases: [
+      { batch: 1, code: 'ID32x', term: 3 },
+      { batch: 2, code: 'ID32x', term: 3 },
+    ],
+  },
+  {
+    name: 'Understanding Indian Culture Theatre and its presence in daily life',
+    description: '',
+    icon: 'BookOpen',
+    aliases: [
+      { batch: 1, code: 'ID31x', term: 3 },
+      { batch: 2, code: 'ID31x', term: 3 },
+    ],
+  },
+
+  // ── Term 4 ──────────────────────────────────────────────────
+  {
     name: 'Exploring Society & Social Structure',
     description: '',
-    term: 4
+    icon: 'BookOpen',
+    aliases: [
+      { batch: 1, code: 'MD42x', term: 4 },
+      { batch: 2, code: 'MD42x', term: 4 },
+    ],
   },
   {
-    code: 'MK41x',
     name: 'Digital Marketing Strategy',
     description: '',
-    term: 4
+    icon: 'TrendingUp',
+    aliases: [
+      { batch: 1, code: 'MK41x', term: 4 },
+      { batch: 2, code: 'MK41x', term: 4 },
+    ],
   },
   {
-    code: 'OB41x',
     name: 'People, Work, and Organizations',
     description: '',
-    term: 4
+    icon: 'MessageSquare',
+    aliases: [
+      { batch: 1, code: 'OB41x', term: 4 },
+      { batch: 2, code: 'OB41x', term: 4 },
+    ],
   },
   {
-    code: 'OM41x',
     name: 'Operations Management',
     description: '',
-    term: 4
+    icon: 'ClipboardList',
+    aliases: [
+      { batch: 1, code: 'OM41x', term: 4 },
+      { batch: 2, code: 'OM41x', term: 4 },
+    ],
   },
   {
-    code: 'ST41x',
     name: 'Introduction to Strategic Management',
     description: '',
-    term: 4
+    icon: 'Building2',
+    aliases: [
+      { batch: 1, code: 'ST41x', term: 4 },
+      { batch: 2, code: 'ST41x', term: 4 },
+    ],
   },
   {
-    code: 'EP41x',
     name: 'Entrepreneurial Hypothesis Testing',
     description: '',
-    term: 4
+    icon: 'Lightbulb',
+    aliases: [
+      { batch: 1, code: 'EP41x', term: 4 },
+      { batch: 2, code: 'EP41x', term: 4 },
+    ],
   },
   {
-    code: 'MD41x',
     name: 'Sustainability Measures for SMEs',
     description: '',
-    term: 4
+    icon: 'BarChart3',
+    aliases: [
+      { batch: 1, code: 'MD41x', term: 4 },
+      { batch: 2, code: 'MD41x', term: 4 },
+    ],
   },
 ];
 
-export const getSubjectByCode = (code: string): Subject | undefined => {
-  return SUBJECTS.find(s => s.code === code);
+// ── Lookup helpers ──────────────────────────────────────────────
+
+/** Find a subject by searching across all aliases */
+export const getSubjectByCode = (code: string): Subject | undefined =>
+  SUBJECTS.find(s => s.aliases.some(a => a.code === code));
+
+/** Find the specific alias entry for a code */
+export const getAliasForCode = (code: string): SubjectAlias | undefined => {
+  for (const subject of SUBJECTS) {
+    const alias = subject.aliases.find(a => a.code === code);
+    if (alias) return alias;
+  }
+  return undefined;
 };
 
-export const getSubjectName = (code: string): string => {
+export const getSubjectName = (code: string): string =>
+  getSubjectByCode(code)?.name ?? code;
+
+/** Returns the term the given alias code sits in */
+export const getTermForSubject = (code: string): number =>
+  getAliasForCode(code)?.term ?? 1;
+
+/** All subjects available for a given batch, optionally filtered by term */
+export const getSubjectsByBatch = (
+  batch: number,
+  term?: number,
+): { subject: Subject; alias: SubjectAlias }[] => {
+  const results: { subject: Subject; alias: SubjectAlias }[] = [];
+  for (const subject of SUBJECTS) {
+    const alias = subject.aliases.find(
+      a => a.batch === batch && (term === undefined || a.term === term),
+    );
+    if (alias) results.push({ subject, alias });
+  }
+  return results;
+};
+
+/** Get the display name for a subject in a given batch (uses alias name if set, otherwise subject name) */
+export const getDisplayNameForAlias = (subject: Subject, alias: SubjectAlias): string =>
+  alias.name ?? subject.name;
+
+/** Sorted list of terms available for a given batch */
+export const getTermsForBatch = (batch: number): number[] => {
+  const terms = new Set<number>();
+  for (const subject of SUBJECTS) {
+    for (const alias of subject.aliases) {
+      if (alias.batch === batch) terms.add(alias.term);
+    }
+  }
+  return Array.from(terms).sort((a, b) => a - b);
+};
+
+// ── Icon mapping ────────────────────────────────────────────
+
+const ICON_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
+  'MessageSquare': MessageSquare,
+  'BarChart3': BarChart3,
+  'Lightbulb': Lightbulb,
+  'Rocket': Rocket,
+  'DollarSign': DollarSign,
+  'TrendingUp': TrendingUp,
+  'Building2': Building2,
+  'BookOpen': BookOpen,
+  'ClipboardList': ClipboardList,
+};
+
+/** Get the lucide-react icon component for a subject code */
+export const getIconForCode = (code: string): React.ComponentType<{ className?: string }> => {
   const subject = getSubjectByCode(code);
-  return subject?.name || code;
+  if (!subject) return MessageSquare; // fallback
+  return ICON_MAP[subject.icon] || MessageSquare;
 };
-
-export const getTermForSubject = (code: string): number => {
-  const subject = getSubjectByCode(code);
-  return subject?.term || 1;
-};
-
-export const getSubjectsByTerm = (term: number): Subject[] => {
-  return SUBJECTS.filter(s => s.term === term);
-};
-
-
