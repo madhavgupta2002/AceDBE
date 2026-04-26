@@ -15,7 +15,7 @@ import {
   ClipboardList,
   ExternalLink
 } from 'lucide-react';
-import { SUBJECTS, getSubjectsByTermFiltered } from '@/lib/subjectMapping';
+import { SUBJECTS, getSubjectsByTerm } from '@/lib/subjectMapping';
 import { useRouter } from 'next/navigation';
 import videosData from '@/public/data/videos.json';
 import CustomQuizGenerator from './CustomQuizGenerator';
@@ -42,8 +42,8 @@ const SubjectSelector: React.FC = () => {
     localStorage.setItem('selectedTerm', term.toString());
   };
 
-  // Get subjects for selected term (filtered to exclude alternative versions)
-  const filteredSubjects = getSubjectsByTermFiltered(selectedTerm);
+  // Get subjects for selected term
+  const filteredSubjects = getSubjectsByTerm(selectedTerm);
 
   const handleSubjectSelect = (code: string) => {
     router.push(`/${code}`);
@@ -53,7 +53,7 @@ const SubjectSelector: React.FC = () => {
   const getSubjectIcon = (code: string) => {
     const iconMap: { [key: string]: React.ReactNode } = {
       'AE11x': <MessageSquare className="w-6 h-6 text-white" />,
-      'DS11x': <BarChart3 className="w-6 h-6 text-white" />,
+      'DS11x_B2': <BarChart3 className="w-6 h-6 text-white" />,
       'EP11x': <Lightbulb className="w-6 h-6 text-white" />,
       'EP12x': <Rocket className="w-6 h-6 text-white" />,
       'FA11x': <DollarSign className="w-6 h-6 text-white" />,
