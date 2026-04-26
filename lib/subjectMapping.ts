@@ -45,8 +45,8 @@ export const SUBJECTS: Subject[] = [
     term: 1
   },
   {
-    code: 'DS11x_2024',
-    name: '[2024] Business Statistics for Entrepreneurs',
+    code: 'DS11x_B1',
+    name: '[Batch 1] Business Statistics for Entrepreneurs',
     description: 'For Batch 1 with 8 Modules',
     term: 1
   },
