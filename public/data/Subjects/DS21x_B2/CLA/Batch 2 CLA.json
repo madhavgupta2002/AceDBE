@@ -1,0 +1,568 @@
+{
+    "exam_metadata": {
+        "subject_name": "Business Statistics for Entrepreneurs",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "CLA1_Q1",
+            "question_text": "Suppose $X_1$ and $X_2$ are independent normal random variables with variances 4 and 9 respectively. Consider the random variable $Y = aX_1 + bX_2$. Which of the following conditions on a and b will make $\\text{Var}(Y) = 0$?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "a = b",
+                "B": "a = -b",
+                "C": "a = 0 and b = 0",
+                "D": "a² + b² = 1"
+            },
+            "correct_option_label": "C",
+            "explanation": "Since $X_1$ and $X_2$ are independent, the variance of their linear combination is $\\text{Var}(Y) = a^2\\text{Var}(X_1) + b^2\\text{Var}(X_2) = 4a^2 + 9b^2$. For $\\text{Var}(Y)$ to be exactly $0$, we must have $4a^2 + 9b^2 = 0$. Since squared terms and variances are non-negative, the only way the sum can be zero is if both $a=0$ and $b=0$.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q2",
+            "question_text": "If returns on Stock A and Stock B are independent and normally distributed, what is the distribution of Y = Return of B − Return of A?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Uniform",
+                "B": "Normal",
+                "C": "Binomial",
+                "D": "Lognormal"
+            },
+            "correct_option_label": "B",
+            "explanation": "A fundamental property of normal distributions is that any linear combination of independent normal random variables is also normally distributed. Therefore, the difference between the returns of Stock B and Stock A will follow a Normal distribution.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q3",
+            "question_text": "If Z is a standard normal random variable, what is the distribution of $X = Z^2$?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Chi-square with 1 degree of freedom",
+                "B": "Normal",
+                "C": "t distribution",
+                "D": "F distribution"
+            },
+            "correct_option_label": "A",
+            "explanation": "By definition, the square of a single standard normal random variable ($Z^2$) follows a Chi-square distribution with exactly 1 degree of freedom.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q4",
+            "question_text": "In a study of monthly stock returns with a small sample size, why is the Student’s t distribution preferred over the normal distribution?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It assumes zero variance",
+                "B": "It is skewed",
+                "C": "It accounts for additional uncertainty due to small samples",
+                "D": "It ignores degrees of freedom"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Student's t-distribution is preferred for small sample sizes because it has thicker tails than the normal distribution. These thicker tails account for the additional uncertainty introduced when estimating the population standard deviation from a small sample.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q5",
+            "question_text": "In testing the overall significance of a multiple regression model explaining stock returns, an F statistic is computed. As both numerator and denominator degrees of freedom increase, what happens to the F distribution?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It becomes more skewed",
+                "B": "It spreads out with a larger variance",
+                "C": "It becomes more sharply peaked around 1",
+                "D": "It converges to a uniform distribution"
+            },
+            "correct_option_label": "C",
+            "explanation": "As the degrees of freedom for both the numerator and denominator increase in an F-distribution, its variance decreases and the distribution becomes more symmetric, eventually peaking sharply around the value of 1.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q6",
+            "question_text": "A portfolio manager wants to test if the mean daily return of a stock differs from 0.5% based on a sample of 15 days. Which distribution is appropriate for the test?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "F-distribution",
+                "B": "chi-square distribution",
+                "C": "t-distribution",
+                "D": "normal distribution"
+            },
+            "correct_option_label": "C",
+            "explanation": "Because the sample size is small ($n = 15 < 30$) and the population standard deviation is assumed unknown, the t-distribution is the appropriate sampling distribution for testing the mean.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q7",
+            "question_text": "Which of the following correctly defines the F distribution?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is the ratio of two independent normal random variables divided by their variances.",
+                "B": "It is a continuous distribution defined for all real values, positive and negative.",
+                "C": "It is always symmetric around 1.",
+                "D": "It is the ratio of two independent chi-square random variables, each divided by their respective degrees of freedom."
+            },
+            "correct_option_label": "D",
+            "explanation": "The mathematical definition of an F-distribution is the ratio of two independent chi-square random variables, where each variable has first been divided by its respective degrees of freedom.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q8",
+            "question_text": "A UPI app analyses the distribution of daily transaction amounts and finds:\nMean = ₹1,200, Median = ₹700, Mode = ₹400.\nWhat is the correct conclusion?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The distribution is positively skewed",
+                "B": "The distribution is negatively skewed",
+                "C": "The distribution is symmetric",
+                "D": "Skewness cannot be determined from these values"
+            },
+            "correct_option_label": "A",
+            "explanation": "When comparing the central tendencies: Mean (1200) > Median (700) > Mode (400). A distribution where the mean is pulled to the right of the median and mode indicates a long tail on the right side, which means it is positively skewed.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q9",
+            "question_text": "A mobile-based micro-investment app records the risk category of each user as Conservative, Moderate, Aggressive. What is the type of data that the app records?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Nominal",
+                "B": "Ordinal",
+                "C": "Interval",
+                "D": "Ratio"
+            },
+            "correct_option_label": "B",
+            "explanation": "The categories 'Conservative', 'Moderate', and 'Aggressive' represent a meaningful, logical ranking of risk levels. Because there is an inherent order, it is classified as Ordinal data.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q10",
+            "question_text": "A digital payments platform wants to compare success rate vs. number of transactions across 100 merchants. The best data visualisation to represent this will be:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Bar chart",
+                "B": "Pie chart",
+                "C": "Histogram",
+                "D": "Scatter plot"
+            },
+            "correct_option_label": "D",
+            "explanation": "To observe the relationship and correlation between two continuous numerical variables (success rate and number of transactions) for a given set of data points (100 merchants), a scatter plot is the ideal visualization tool.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA2_Q1",
+            "question_text": "In a UPI study analyzing customer transaction behavior, which of the following best describes a sampling frame?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A statistical summary of transaction data",
+                "B": "A list or mechanism used to identify all customers eligible for sampling",
+                "C": "The total number of transactions analyzed",
+                "D": "A technique used to model customer spending patterns"
+            },
+            "correct_option_label": "B",
+            "explanation": "A sampling frame is essentially the source material or list from which a sample is drawn. It acts as the mechanism to identify every element of the target population that has a chance to be selected.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q2",
+            "question_text": "In a Finance analytics project estimating average monthly transaction value across platform users, what is the defining characteristic of a probabilistic sampling method?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Users are selected based on ease of access or recent activity",
+                "B": "Each platform user has a known, non-zero probability of being selected",
+                "C": "Users are chosen based on analyst judgment or business rules",
+                "D": "Sampling error is fully removed through algorithmic selection"
+            },
+            "correct_option_label": "B",
+            "explanation": "The core defining characteristic of any probabilistic sampling method is that every individual unit in the target population has a known, objective, and non-zero probability of being included in the sample.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q3",
+            "question_text": "Which condition best justifies the use of stratified sampling instead of simple random sampling?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "When the population elements are difficult to identify",
+                "B": "When clusters are diverse and representative of the population",
+                "C": "When the population is heterogeneous but strata are internally homogeneous",
+                "D": "When sampling costs must be minimized at all costs"
+            },
+            "correct_option_label": "C",
+            "explanation": "Stratified sampling is most effective when the overall population is highly diverse (heterogeneous), but can be logically divided into sub-groups (strata) that are highly similar (homogeneous) within themselves.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q4",
+            "question_text": "What best explains why the average transaction value computed from a sample differs from the true population average?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Data recording errors in the payment system",
+                "B": "Structural changes in customer spending behavior",
+                "C": "Sampling variability arising from using only a subset of all transactions",
+                "D": "Incorrect segmentation of customers"
+            },
+            "correct_option_label": "C",
+            "explanation": "The natural discrepancy between a sample statistic and the actual population parameter is known as sampling error. This happens purely because the sample is only a subset of the entire population, causing inherent sampling variability.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q5",
+            "question_text": "What does it mean to say that the sample mean X̄ is an unbiased estimator of μ?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "X̄ is always equal to μ",
+                "B": "X̄ has zero variance",
+                "C": "The sampling distribution of X̄ is symmetric",
+                "D": "The expected value of X̄ equals the population mean μ"
+            },
+            "correct_option_label": "D",
+            "explanation": "An estimator is unbiased if, on average over many repeated samples, it perfectly estimates the target parameter. Mathematically, this means the expected value of the sample mean equals the true population mean, $E(\\bar{X}) = \\mu$.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q6",
+            "question_text": "If the population distribution is normal with mean μ and standard deviation σ, what is the distribution of the sample mean X̄?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A uniform distribution",
+                "B": "A distribution with unknown shape",
+                "C": "A normal distribution with mean μ and standard deviation σ/√n",
+                "D": "A normal distribution with mean X̄ and variance σ²"
+            },
+            "correct_option_label": "C",
+            "explanation": "When drawing from a normally distributed population, the sampling distribution of the sample mean is also exactly normally distributed. Its expected value remains $\\mu$, but its standard error is reduced to $\\sigma/\\sqrt{n}$.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q7",
+            "question_text": "What does the Central Limit Theorem describe?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The distribution of the population becomes normal as sample size increases",
+                "B": "The sampling distribution of the sample mean becomes approximately normal for large samples",
+                "C": "The sample data must be normally distributed",
+                "D": "The population variance becomes smaller"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Central Limit Theorem (CLT) is a foundational statistical principle stating that the sampling distribution of the sample mean will tend to approximate a normal distribution as the sample size grows large, regardless of the underlying population's original shape.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q8",
+            "question_text": "A startup company uses customer transaction data that is non-normal. Under what condition can the sampling distribution of the mean be approximated by a normal distribution?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "When the population is symmetric",
+                "B": "When variance is known",
+                "C": "When the sample size is sufficiently large",
+                "D": "When transactions are uniformly distributed"
+            },
+            "correct_option_label": "C",
+            "explanation": "As guaranteed by the Central Limit Theorem, even if the parent population is heavily skewed or non-normal, the sampling distribution of the mean will be approximately normal if the sample size drawn is sufficiently large (typically $n \\geq 30$).",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q9",
+            "question_text": "In a Bank study estimating the proportion of users who default on a short-term loan, increasing the sample size n has which effect on the sampling distribution of the sample default rate p̄?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Shifts the mean default rate away from the true population rate",
+                "B": "Reduces the standard error of the estimated default rate",
+                "C": "Makes the distribution of p̄ more skewed",
+                "D": "Changes the expected value of p̄"
+            },
+            "correct_option_label": "B",
+            "explanation": "The standard error for a sample proportion is calculated as $\\sqrt{p(1-p)/n}$. Because $n$ is in the denominator, increasing the sample size directly reduces the standard error, making the estimate more precise and the distribution narrower.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q10",
+            "question_text": "In a EdTech risk analysis, returns on a digital asset are assumed to be normally distributed. What distribution does (n − 1)S² / σ² follow?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Chi-square distribution with (n − 1) degrees of freedom",
+                "B": "Normal distribution",
+                "C": "t distribution",
+                "D": "F distribution"
+            },
+            "correct_option_label": "A",
+            "explanation": "A key theorem in statistics states that if samples are drawn from a normal population, the ratio of the sample variance multiplied by $n-1$ to the true population variance exactly follows a Chi-square distribution with $n - 1$ degrees of freedom.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA3_Q1",
+            "question_text": "A firm estimates the average transaction value (θ) of its users using two different point estimators derived from random samples. Both estimators are unbiased. Estimator A has a smaller standard error than Estimator B.\nWhich statement is correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Estimator B is preferred because it produces larger variability",
+                "B": "Estimator A is more efficient because its estimates are more concentrated around θ",
+                "C": "Estimator B is more consistent because it has higher variance",
+                "D": "Both estimators are equally efficient since they are unbiased"
+            },
+            "correct_option_label": "B",
+            "explanation": "When comparing two unbiased estimators, the one with the smaller standard error (variance) is deemed more 'efficient'. This is because its estimates will be much more tightly concentrated around the true parameter $\\theta$.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q2",
+            "question_text": "An analyst uses the sample mean of customer transaction amounts to estimate the population mean. As the number of customers sampled increases, the estimates become increasingly closer to the true population mean.\nWhich property of point estimators is being illustrated?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Unbiasedness",
+                "B": "Efficiency",
+                "C": "Consistency",
+                "D": "Sufficiency"
+            },
+            "correct_option_label": "C",
+            "explanation": "Consistency is the specific statistical property where an estimator converges in probability to the true population parameter as the sample size $n$ approaches infinity.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q3",
+            "question_text": "A company estimates average customer transaction value using a simple random sample. Despite careful random sampling, the estimate differs slightly from the true population mean because only one sample could be collected.\nThis difference is best described as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sampling error arising from random variation in the selected sample",
+                "B": "Coverage error due to mismatch between population and objective",
+                "C": "Measurement error caused by ambiguous data collection",
+                "D": "Non-response error due to missing segments"
+            },
+            "correct_option_label": "A",
+            "explanation": "This natural discrepancy occurs purely by chance because the estimate is based on a random subset rather than the whole population. This is fundamentally known as sampling error.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q4",
+            "question_text": "An analyst conducts both online and in-branch customer satisfaction surveys. However, online users respond at a much lower rate than in-branch customers, even though both groups are equally important for decision-making.\nThis problem is best classified as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sampling error",
+                "B": "Coverage error",
+                "C": "Non-response error",
+                "D": "Measurement error"
+            },
+            "correct_option_label": "C",
+            "explanation": "Non-response error happens when selected participants in a sample systematically fail to participate or respond, causing certain segments (here, online users) to be underrepresented, leading to biased insights.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q5",
+            "question_text": "A digital lending platform wants to estimate the average credit score of its borrower population. The population standard deviation is unknown, but a random sample provides a sample standard deviation.\nAccording to statistical inference principles discussed, which quantity should be used to compute the margin of error for the confidence interval?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Population mean",
+                "B": "Population variance",
+                "C": "Sample standard deviation",
+                "D": "Sample proportion"
+            },
+            "correct_option_label": "C",
+            "explanation": "In real-world scenarios where the population standard deviation is unknown, we substitute it with the sample standard deviation ($s$) and rely on the t-distribution to properly construct the margin of error.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q6",
+            "question_text": "An industry firm constructs a 95% confidence interval for the population mean transaction value using a random sample. The resulting interval is ₹4,800 to ₹5,200. Which of the following interpretations is statistically correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "There is a 95% probability that the population mean lies between ₹4,800 and ₹5,200",
+                "B": "95% of individual customer transactions lie between ₹4,800 and ₹5,200",
+                "C": "If we repeatedly drew samples and constructed intervals in this way, about 95% of such intervals would contain the true population mean",
+                "D": "The population mean will lie closer to ₹5,000 than any other value"
+            },
+            "correct_option_label": "C",
+            "explanation": "A confidence level defines the long-term success rate of the method. It means that if we repeat the exact same sampling and interval calculation process indefinitely, 95% of those resulting intervals will successfully capture the true population mean.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q7",
+            "question_text": "Two company product teams compare confidence intervals for customer satisfaction scores. Team A uses an 80% confidence interval, while Team B uses a 95% confidence interval with the same sample size and variability. Which statement is statistically correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Team B’s interval is narrower because it is more reliable",
+                "B": "Team A’s interval has a larger margin of error due to lower confidence",
+                "C": "Team A’s interval is narrower but carries a higher risk of excluding the true mean",
+                "D": "Both intervals have the same margin of error"
+            },
+            "correct_option_label": "C",
+            "explanation": "A lower confidence level (like 80%) requires a smaller critical value, which tightens the margin of error and narrows the interval. The trade-off, however, is a higher risk (20% vs 5%) that the interval will completely miss the true population parameter.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q8",
+            "question_text": "A robo-advisory firm wants to estimate the proportion of investors who rebalance portfolios monthly. The firm desires a specific margin of error for its confidence interval. Which of the following changes would reduce the margin of error without altering the observed sample proportion?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increasing the confidence level while keeping sample size fixed",
+                "B": "Decreasing the sample size while keeping confidence level fixed",
+                "C": "Increasing the sample size while keeping confidence level fixed",
+                "D": "Replacing p̂ with the unknown population proportion p"
+            },
+            "correct_option_label": "C",
+            "explanation": "The margin of error involves division by the square root of the sample size ($\\sqrt{n}$). Therefore, increasing the sample size directly reduces the standard error and tightens the overall margin of error, holding the confidence level constant.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q9",
+            "question_text": "A small business owner wants to estimate the propotion of cutomers demand on product with a 99% confidence level and a desired margin of error of 0.05. The analyst uses the planning value p*= 0.5 to determine the required sample size. Why is 0.5 often used as a planning value when no prior information is available?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It minimizes the required sample size",
+                "B": "It produces the maximum variability, leading to a conservative (largest) sample size estimate",
+                "C": "It ensures symmetric confidence intervals",
+                "D": "It guarantees the margin of error equals zero"
+            },
+            "correct_option_label": "B",
+            "explanation": "When planning sample sizes for a proportion, the term $p(1-p)$ is maximized at $p = 0.5$ (yielding $0.25$). Using this maximum variance guarantees the calculation yields a large enough sample size to safely cover any possible true proportion.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q10",
+            "question_text": "An entrepreneur risk estimates the variance of daily portfolio returns.A random sample of n = 20 days gives a sample variance s² = 0.0004.\nAssuming normality, find the LOWER bound of the 95% confidence interval for the population variance.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "0.000428",
+                "B": "0.000231",
+                "C": "0.000852",
+                "D": "0.000120"
+            },
+            "correct_option_label": "B",
+            "explanation": "The confidence interval for variance uses the Chi-square distribution. For the lower bound, we use the upper critical value $\\chi^2_{\\alpha/2, n-1}$. Here, $n-1 = 19$, $\\alpha = 0.05$, so we need $\\chi^2_{0.025, 19} \\approx 32.852$. The lower bound is $\\frac{(n-1)s^2}{\\chi^2} = \\frac{19 \\times 0.0004}{32.852} = \\frac{0.0076}{32.852} \\approx 0.000231$.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA4_Q1",
+            "question_text": "A consumer protection agency suspects that a beverage company is overfilling bottles labeled 750 ml to attract customers. To verify this, they collect a random sample of bottles and want to statistically test whether the average amount filled differs from the labeled quantity.\nWhich of the following correctly specifies the null hypothesis, alternative hypothesis, and the type of test?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "H₀: μ = 750\nH₁: μ ≠ 750\nTwo-tailed test",
+                "B": "H₀: μ ≥ 750\nH₁: μ < 750\nLower-tailed test",
+                "C": "H₀: μ ≤ 750\nH₁: μ > 750\nUpper-tailed test",
+                "D": "H₀: μ ≠ 750\nH₁: μ = 750\nTwo-tailed test"
+            },
+            "correct_option_label": "A",
+            "explanation": "Even though there is a suspicion of overfilling, the goal stated is to test whether the amount strictly 'differs from' 750 ml. The phrase 'differs from' implies searching for any change in either direction, establishing $H_0: \\mu = 750$ and $H_1: \\mu \\neq 750$, requiring a two-tailed test.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q2",
+            "question_text": "Geeta Kumari wants to test whether the average service response time at her service center has exceeded 48 hours.\nThe hypotheses are:\nH₀: μ ≤ 48 hours\nH₁: μ > 48 hours\nWhich of the following statements correctly describes a Type I error in this context?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Concluding that the average response time is greater than 48 hours when in reality it is 48 hours or less.",
+                "B": "Concluding that the average response time is 48 hours or less when in reality it is greater than 48 hours.",
+                "C": "Concluding that the average response time is exactly 48 hours when it is actually greater than 48 hours.",
+                "D": "Concluding that the sample mean is greater than 48 hours when the population mean is unknown."
+            },
+            "correct_option_label": "A",
+            "explanation": "A Type I error occurs when one rejects a true null hypothesis. In this context, $H_0$ claims the true mean is $\\leq 48$ hours. A Type I error would be concluding the alternative ($> 48$ hours) when in fact $H_0$ was actually true.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q3",
+            "question_text": "A quality control manager suspects that a machine filling packets labeled as 250 grams may be underfilling them. To investigate, a random sample of 36 packets is collected. The sample mean weight is 246 grams and the sample standard deviation is 12 grams.\nThe manager conducts a hypothesis test at a significance level of 5%.\nH₀: μ = 250\nH₁: μ < 250\nWhat is the approximate value of the test statistic?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "-1.50",
+                "B": "-2.00",
+                "C": "-3.00",
+                "D": "-0.67"
+            },
+            "correct_option_label": "B",
+            "explanation": "The test statistic is calculated using $t = \\frac{\\bar{x} - \\mu}{s / \\sqrt{n}}$. Substituting the given values: $t = \\frac{246 - 250}{12 / \\sqrt{36}} = \\frac{-4}{12 / 6} = \\frac{-4}{2} = -2.00$.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q4",
+            "question_text": "A company claims that the average lifetime of its batteries is 300 hours. A consumer group believes the lifetime is less than claimed. A random sample of 36 batteries is tested and the average lifetime is 287 hours. Assume the population standard deviation is 30 hours. Test the claim at a significance level of 0.05 using the p-value approach. What is the correct conclusion?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Do not reject H0 because the p-value is greater than the significance level.",
+                "B": "Reject H0 because the sample mean is less than the population mean.",
+                "C": "Reject H0 because the p-value is smaller than the significance level.",
+                "D": "Do not reject H0 because the sample size is small."
+            },
+            "correct_option_label": "C",
+            "explanation": "First find the test statistic: $Z = \\frac{287 - 300}{30 / \\sqrt{36}} = \\frac{-13}{5} = -2.6$. This is a lower-tailed test. The p-value corresponding to $Z = -2.6$ is approximately $0.0047$. Since $0.0047 < 0.05$, we reject $H_0$.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q5",
+            "question_text": "An online learning platform claims that 70% of its users complete a course they enroll in. A researcher believes that the actual completion rate is lower than the claim.\nA random sample of 500 users is taken, and 320 users completed the course.\nUsing a hypothesis test for the population proportion, what is the approximate p-value for this test?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "0.0017",
+                "B": "0.0170",
+                "C": "0.0340",
+                "D": "0.0710"
+            },
+            "correct_option_label": "A",
+            "explanation": "Sample proportion $\\hat{p} = 320/500 = 0.64$. Hypotheses: $H_0: p = 0.70$, $H_1: p < 0.70$. $Z = \\frac{0.64 - 0.70}{\\sqrt{0.70 \\times 0.30 / 500}} = \\frac{-0.06}{0.02049} \\approx -2.93$. Looking up $Z = -2.93$ in the normal table yields a lower tail p-value of approximately $0.0017$.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q6",
+            "question_text": "A quality analyst claims that the variance of delivery times of a logistics company is 64 minutes. To test whether the variability has changed, a random sample of 25 deliveries is collected and the sample variance is found to be 100 minutes.\nAssume the delivery times follow a normal distribution. A two-tailed hypothesis test is conducted.\nWhat is the approximate p-value of the test?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "0.21",
+                "B": "0.11",
+                "C": "0.08",
+                "D": "0.04"
+            },
+            "correct_option_label": "C",
+            "explanation": "Testing $H_0: \\sigma^2 = 64$ vs $H_1: \\sigma^2 \\neq 64$. The Chi-square test statistic is $\\chi^2 = \\frac{(n-1)s^2}{\\sigma_0^2} = \\frac{24 \\times 100}{64} = 37.5$. With $df = 24$, the right-tail probability $P(\\chi^2 > 37.5)$ is approx $0.04$. Because this is a two-tailed test, the final p-value is doubled: $2 \\times 0.04 = 0.08$.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q7",
+            "question_text": "A streaming platform claims that 65% of its subscribers watch at least one movie per week. A data analyst suspects that the actual proportion is different from this claim.\nA random sample of 600 subscribers is taken, and 360 subscribers report watching at least one movie per week.\nUsing a two-tailed hypothesis test, what is the approximate p-value?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "0.005",
+                "B": "0.020",
+                "C": "0.051",
+                "D": "0.010"
+            },
+            "correct_option_label": "D",
+            "explanation": "Sample $\\hat{p} = 360/600 = 0.60$. Hypotheses are $H_0: p = 0.65$ and $H_1: p \\neq 0.65$. The test statistic is $Z = \\frac{0.60 - 0.65}{\\sqrt{0.65 \\times 0.35 / 600}} = \\frac{-0.05}{0.01947} \\approx -2.57$. The lower tail probability for $Z = -2.57$ is $0.005$. For a two-tailed test, p-value $= 2 \\times 0.005 = 0.010$.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q8",
+            "question_text": "A dataset contains 5 observations of two variables X and Y. The sample means are x̄ = 6 and ȳ = 10. The sum of the products of deviations ∑(xi − x̄)(yi − ȳ) calculated from the data is 40. What is the sample covariance Sxy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "5",
+                "B": "8",
+                "C": "10",
+                "D": "40"
+            },
+            "correct_option_label": "C",
+            "explanation": "The mathematical formula for sample covariance is $S_{xy} = \\frac{\\sum(x_i - \\bar{x})(y_i - \\bar{y})}{n - 1}$. Given the sum of products is $40$ and sample size $n = 5$, the covariance is $S_{xy} = \\frac{40}{5 - 1} = \\frac{40}{4} = 10$.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q9",
+            "question_text": "The sample covariance between two variables X and Y is 8200. The sample standard deviation of X is 8 and the sample standard deviation of Y is 1250. Which of the following best describes the relationship between X and Y?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "There is a perfect positive linear relationship between X and Y.",
+                "B": "There is a strong positive linear relationship between X and Y.",
+                "C": "There is a strong negative linear relationship between X and Y.",
+                "D": "There is no linear relationship between X and Y."
+            },
+            "correct_option_label": "B",
+            "explanation": "The correlation coefficient $r$ is calculated as $\\frac{S_{xy}}{S_x S_y} = \\frac{8200}{8 \\times 1250} = \\frac{8200}{10000} = 0.82$. A correlation coefficient of $0.82$ indicates a strong, positive linear relationship, but it is not perfectly $1$.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q10",
+            "question_text": "Which of the following statements about the Pearson correlation coefficient is correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A correlation coefficient close to zero means there is absolutely no relationship between the variables.",
+                "B": "A high correlation coefficient always implies that one variable causes a change in the other.",
+                "C": "A correlation coefficient close to zero indicates that there may be no linear relationship, though a nonlinear relationship might exist.",
+                "D": "The correlation coefficient measures both linear and nonlinear relationships between variables."
+            },
+            "correct_option_label": "C",
+            "explanation": "The Pearson correlation coefficient is specifically designed to measure only the strength of the *linear* relationship. If it is zero, it merely means no linear pattern exists; however, a perfectly clear nonlinear pattern (e.g., a parabolic curve) could still be present.",
+            "module": 4
+        }
+    ]
+}
