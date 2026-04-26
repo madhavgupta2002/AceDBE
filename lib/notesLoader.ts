@@ -4,7 +4,7 @@
 
 export async function loadNotes(subjectCode: string): Promise<string | null> {
   try {
-    const response = await fetch(`/data/Subjects/${subjectCode}/Notes/${subjectCode}.md`);
+    const response = await fetch(`/data/Subjects/${subjectCode}/NOTES.md`);
 
     if (!response.ok) {
       if (response.status === 404) {
