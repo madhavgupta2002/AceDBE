@@ -1,0 +1,498 @@
+{
+    "exam_metadata": {
+        "subject_name": "Explorations in Entrepreneurship",
+        "exam_date": "31 January 2026"
+    },
+    "questions": [
+        {
+            "question_id": "582113431",
+            "question_text": "Which situation best fits the course’s definition of necessity-based entrepreneurship?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A farmer who starts a street food stall as a side business",
+                "B": "A designer launches a side project while in a full‑time job.",
+                "C": "A farmer who lost land in a drought starts a small street food stall",
+                "D": "A software engineer quits a well-paying job to build a new B2B SaaS product."
+            },
+            "correct_option_label": "C",
+            "explanation": "Necessity-based entrepreneurship is driven by the urgent need for survival or livelihood due to the lack of other options, such as losing land or a job.",
+            "module": 2
+        },
+        {
+            "question_id": "582113432",
+            "question_text": "In the course framing, which statement about opportunity-based entrepreneurship is most accurate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It involves choosing to pursue a problem or opportunity even when a decent career path is available.",
+                "B": "It always leads to large, scalable ventures.",
+                "C": "It refers to starting only when venture capital is already committed.",
+                "D": "It only applies to technology or digital businesses."
+            },
+            "correct_option_label": "A",
+            "explanation": "Opportunity-based entrepreneurship is defined as a choice made by individuals to pursue a specific market gap or idea, even if they have alternative vocational or career trajectories available to them.",
+            "module": 2
+        },
+        {
+            "question_id": "582113433",
+            "question_text": "Which founder is closest to a deliberate opportunity-based entrepreneur as described in the sessions?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Someone who inherits a family store but keeps running it in exactly the same way.",
+                "B": "Someone who stumbles upon the Redbus ticketing problem while travelling and then decides to start up.",
+                "C": "Someone who is laid off unexpectedly and opens a small corner shop to pay rent.",
+                "D": "Someone who had long been exploring ideas, then consciously quits a job to start Mango Technologies."
+            },
+            "correct_option_label": "D",
+            "explanation": "Deliberate opportunity-based entrepreneurship involves an intentional and planned decision to leave a stable position to pursue a specific identified venture.",
+            "module": 4
+        },
+        {
+            "question_id": "582113434",
+            "question_text": "In the Redbus story, what makes it a classic case of accidental entrepreneurship in the course?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The founders always wanted to be in the travel industry and planned for years.",
+                "B": "They received a grant specifically to build a bus operating system before seeing any market issues.",
+                "C": "They were forced by regulation to computerise ticketing for bus owners.",
+                "D": "They noticed a strange mismatch—empty buses but “no tickets”—and that observation pushed them towards starting up."
+            },
+            "correct_option_label": "D",
+            "explanation": "Accidental entrepreneurship occurs when an external stimulus or observation (like the bus ticketing mismatch) triggers the start of a venture that was not previously planned.",
+            "module": 4
+        },
+        {
+            "question_id": "582113435",
+            "question_text": "According to the opportunity-based entrepreneurship lecture, which of the following is a key caution?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Saying “I want to be big” does not by itself ensure that the venture will become big.",
+                "B": "Ventures that start small are structurally unable to scale.",
+                "C": "Only necessity-based ventures can grow big over time.",
+                "D": "If you start with few resources, you should avoid aiming for growth."
+            },
+            "correct_option_label": "A",
+            "explanation": "The course cautions that scaling requires more than just intent; it involves paying attention to market signals and building capabilities over time, regardless of the initial vision.",
+            "module": 2
+        },
+        {
+            "question_id": "582113436",
+            "question_text": "Which scenario best illustrates the course’s general definition of entrepreneurship (beyond necessity vs opportunity labels)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A salaried employee executing routine tasks with a guaranteed monthly income.",
+                "B": "A trader who only acts when outcomes can be predicted with high certainty.",
+                "C": "A researcher working on a fully funded project with no responsibility for revenue.",
+                "D": "A founder pursuing an opportunity despite not having all needed resources in hand."
+            },
+            "correct_option_label": "D",
+            "explanation": "Entrepreneurship is fundamentally defined as the pursuit of opportunities without having all the required resources immediately available, relying instead on resourcefulness.",
+            "module": 2
+        },
+        {
+            "question_id": "582113437",
+            "question_text": "In the necessity-based entrepreneurship session, why is microfinance highlighted as important?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It provides small loans through community groups, enabling people with few assets to start or stabilize tiny ventures.",
+                "B": "It mainly funds large, venture-backed technology startups.",
+                "C": "It is used only to finance formal, registered companies with audited statements.",
+                "D": "It replaces the need for customers by giving long-term grants."
+            },
+            "correct_option_label": "A",
+            "explanation": "Microfinance allows individuals in the informal economy to access credit without traditional collateral, using community groups to stabilize or grow small livelihood ventures.",
+            "module": 2
+        },
+        {
+            "question_id": "582113438",
+            "question_text": "Which statement about scale and starting reasons aligns best with the course?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Both necessity- and opportunity-based ventures can end up either modest or large; the starting trigger doesn’t fix the final scale.",
+                "B": "Ventures that begin from necessity are expected to remain micro or local.",
+                "C": "Scale is predetermined by whether the founder has prior corporate experience.",
+                "D": "Only opportunity-based startups can reasonably aspire to multiple outlets or large markets."
+            },
+            "correct_option_label": "A",
+            "explanation": "The motivation for starting (necessity vs opportunity) does not determine the eventual success or size of a venture; necessity ventures can grow large, and opportunity ventures can remain small.",
+            "module": 2
+        },
+        {
+            "question_id": "582113439",
+            "question_text": "In the Mango Technologies–Qualcomm story, what central lesson about resources does the course emphasise?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Having far more engineers automatically leads big firms to better products.",
+                "B": "Resource-rich companies are always more innovative than small startups.",
+                "C": "A small team with constrained resources can sometimes build a superior product by thinking sharply about the problem.",
+                "D": "Startups should delay product work until they have funding equal to large firms."
+            },
+            "correct_option_label": "C",
+            "explanation": "A resource crunch can foster creativity and focus, allowing small teams to build superior solutions through ingenuity rather than sheer capital, as seen with Mango Technologies.",
+            "module": 3
+        },
+        {
+            "question_id": "582113440",
+            "question_text": "Which situation is most consistent with necessity-based entrepreneurship as described in the course?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A corporate employee who feels “bored” with meetings and launches a direct‑to‑consumer brand while still employed.",
+                "B": "A corporate employee loses her job due to downsizing, but since she was always passionate about climate issues, she then starts to prototype a new sustainability app.",
+                "C": "A migrant who cannot prove prior qualifications in a new country and starts a small ethnic food venture to earn a living.",
+                "D": "A manager who leaves a stable job to chase a long-planned “disruptive” logistics idea."
+            },
+            "correct_option_label": "C",
+            "explanation": "Necessity-based entrepreneurship is common among individuals, like immigrants, who lack formal credentials or job prospects and must start small ventures to survive.",
+            "module": 2
+        },
+        {
+            "question_id": "582113441",
+            "question_text": "Match the concept to the best description based on the lessons.\nList 1:\n(1) Bootstrapping\n(2) License Raj\n(3) Affordable loss\n(4) Social entrepreneurship (as a construct)\n\nList 2:\n(A) Investing no more than you can afford to lose; controlling downside\n(B) Bureaucratic controls that suppressed entrepreneurship for decades\n(C) Using resources you currently have to start/progress\n(D) A construct to capture solving social problems where making money isn’t the primary motive",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1–B 2–A 3–D 4–C",
+                "B": "1–B 2–A 3–C 4–D",
+                "C": "1–C 2–B 3–A 4–D",
+                "D": "1–B 2–C 3–A 4–D"
+            },
+            "correct_option_label": "C",
+            "explanation": "Bootstrapping uses current resources (C), License Raj was bureaucratic control (B), Affordable loss controls downside (A), and Social Entrepreneurship focuses on social impact over profit (D).",
+            "module": 3
+        },
+        {
+            "question_id": "582113442",
+            "question_text": "In the socio-cultural lecture, which mechanisms are used to explain how tight-knit communities historically enforced trust in high-value trade?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Keeping participation within friends and extended family",
+                "B": "Immediate cash payments for every transaction",
+                "C": "Ostracising members who behave opportunistically",
+                "D": "Relying only on courts and formal contracts for enforcement"
+            },
+            "correct_option_label": "C",
+            "explanation": "Historically, communities like the Hasidic Jews and Indian diamond merchants relied on the threat of social ostracization to enforce trust and honesty in high-value, credit-based trades.",
+            "module": 1
+        },
+        {
+            "question_id": "582113443",
+            "question_text": "Match each type of entrepreneurship to the “plunge decision” trigger described in the lectures.\nList 1:\n(1) Opportunity-based\n(2) Necessity-based\n(3) Accidental (example style)\n(4) Community/region advantage (historical)\n\nList 2:\n(A) “Jump of your own choice” to pursue a problem/opportunity\n(B) Start because you have no other livelihood option\n(C) Start without a pre-planned “burning desire” but due to a situational trigger/observation (e.g., a mismatch noticed)\n(D) Exposure to entrepreneurial learning/resources through region/community networks",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1–A 2–C 3–B 4–D",
+                "B": "1–A 2–B 3–C 4–D",
+                "C": "1–A 2–D 3–B 4–C",
+                "D": "1–D 2–B 3–C 4–A"
+            },
+            "correct_option_label": "B",
+            "explanation": "Opportunity is a choice (A), Necessity is lack of options (B), Accidental is situational (C), and Community refers to regional learning networks (D).",
+            "module": 4
+        },
+        {
+            "question_id": "582113444",
+            "question_text": "A microfinance NGO gives loans to a group of borrowers and treats the group as the “collateral,” because members ensure each other repays. According to the lecture, what is the best explanation for this design?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The NGO lends only to formally registered businesses with audited accounts.",
+                "B": "The NGO relies only on government guarantees, not borrower behaviour.",
+                "C": "The community/group acts as collateral through mutual monitoring and pressure to repay.",
+                "D": "The NGO uses physical assets (land/gold) pledged by each borrower"
+            },
+            "correct_option_label": "C",
+            "explanation": "Social collateral in microfinance relies on group peer pressure and mutual monitoring within a community to ensure repayment without traditional physical assets.",
+            "module": 2
+        },
+        {
+            "question_id": "582113445",
+            "question_text": "A group of friends, comfortable in their jobs, experience a major inconvenience in the environment (a market/system inefficiency). This observation triggers the idea to start a venture, despite no prior intention to become entrepreneurs. Which label best fits this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Opportunity-based accidental entrepreneurship",
+                "B": "Necessity-based entrepreneurship",
+                "C": "Hybrid entrepreneurship (part-time while employed)",
+                "D": "Deliberate opportunity-based entrepreneurship"
+            },
+            "correct_option_label": "A",
+            "explanation": "When an unexpected observation triggers a venture idea in someone who wasn't planning to be an entrepreneur, it is categorized as accidental opportunity-based entrepreneurship.",
+            "module": 4
+        },
+        {
+            "question_id": "582113446",
+            "question_text": "A student says, “Every founder on panels sounds like they had everything planned from day one.” Based on the lecture, what is the best explanation for why founders can sound that way?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Panels systematically select founders who had written plans and clear milestones from the start, so the sample is biased toward “planned” stories",
+                "B": "Founders retrospectively impose a coherent, linear story on a messy journey (hindsight sensemaking), so uncertainty and false starts get compressed",
+                "C": "Founders’ stories sound planned mainly because investors require a clear narrative and timeline, so founders learn to present the journey as intentional",
+                "D": "Founders actually do plan everything early, because competitive markets punish improvisation and reward detailed forecasting"
+            },
+            "correct_option_label": "B",
+            "explanation": "Hindsight sensemaking is a psychological process where founders looking back create a linear narrative for their journey, omitting the actual uncertainty and pivots they experienced.",
+            "module": 4
+        },
+        {
+            "question_id": "582113447",
+            "question_text": "An employee builds a side project after office hours. They do not use office equipment, but the project is in the same domain as the employer’s business. They also mention it in a team chat and ask a colleague for feedback. When the employer finds out, they warn the employee to stop immediately. Based on the lecture’s discussion of moonlighting, which risk is most directly highlighted?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Employment duty/conflict-of-interest risk: even outside office hours, competing in the same domain can violate duty-of-loyalty policies and trigger action",
+                "B": "Execution risk: moonlighting reduces speed and quality, so the product will fail",
+                "C": "Founder-team risk: colleagues who gave feedback may later claim co-founder status",
+                "D": "Go-to-market risk: launching without a brand will make customer acquisition too expensive"
+            },
+            "correct_option_label": "A",
+            "explanation": "Moonlighting in the same industry as one's employer often violates 'Duty of Loyalty' or non-compete clauses, creating significant legal and professional risk for the employee.",
+            "module": 4
+        },
+        {
+            "question_id": "582113448",
+            "question_text": "A startup with little cash offers equity to bring a highly reputed domain expert onto the team. After that, investors take the venture more seriously. What is the best explanation consistent with the lecture?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Equity substitutes for cash to access human resources, and the expert’s presence acts as a signal of venture quality",
+                "B": "The expert’s presence guarantees customers, so product-market fit is automatic",
+                "C": "The main benefit is legal protection: the expert’s reputation functions like a patent barrier",
+                "D": "The expert reduces uncertainty by making future outcomes predictable, so the venture stops being entrepreneurial"
+            },
+            "correct_option_label": "A",
+            "explanation": "Equity is a resource that can be traded for high-quality talent, and having a reputed expert validates the venture's credibility to external investors.",
+            "module": 3
+        },
+        {
+            "question_id": "582113449",
+            "question_text": "What is the most appropriate way, according to this passage, for an investor to use the founder’s origin story when evaluating a venture?\n\nThe instructor emphasises that investors and educators often over‑romanticise founders who talk about “changing the world” from day one. Many successful ventures, however, began with modest aims: solving a small irritation, trying out a side project, or responding to a local need. What differentiates those that later scale is not the grandeur of the initial vision but how the founders pay attention to signals, redesign their models, and build capabilities over time. A venture with a bold initial pitch can still fail if it does not learn, while a modest start can grow substantially through disciplined experimentation.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Fund only ventures that started from modest side projects, because they have already proven product–market fit.",
+                "B": "Prefer ventures with the boldest origin stories, because big initial visions are the best predictor of long‑term scale.",
+                "C": "Use the origin story mainly to understand how the founder has responded to feedback and redesigned the venture, rather than as a predictor on its own.",
+                "D": "Treat origin stories as unreliable and ignore them completely, focusing only on current financial metrics."
+            },
+            "correct_option_label": "C",
+            "explanation": "Origin stories should be used to evaluate a founder's ability to learn and adapt based on feedback rather than just judging the scale of the initial idea.",
+            "module": 4
+        },
+        {
+            "question_id": "582113450",
+            "question_text": "Using the course’s distinction between planned opportunity pursuit and emergent opportunities discovered through action, which of the following founder behaviours clearly belong to the planned opportunity pursuit side of the spectrum?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A student builds a small tool to organise campus events for personal use; only after friends adopt it widely does she consider turning it into a product.",
+                "B": "An individual facing family financial distress starts selling snacks at a bus stop with whatever ingredients are available, just to generate cash.",
+                "C": "A founder loses her corporate job. Without the knowledge of the company she earlier researched inefficiencies in logistics. She is now keen on designing a venture specifically to address those gaps.",
+                "D": "An engineer sets out with the explicit goal of redesigning a traditional appliance category, studies global benchmarks, and then prototypes a new product."
+            },
+            "correct_option_label": "D",
+            "explanation": "Planned opportunity pursuit involves intentional research and setting an explicit goal for a new product, unlike emergent opportunities that arise from personal use or survival needs.",
+            "module": 4
+        },
+        {
+            "question_id": "582113451",
+            "question_text": "The session on deliberate vs accidental entrepreneurship discusses different starting patterns using examples such as Redbus, Instant Pot, and ID Fresh Food. Consider these simplified patterns: Arrange these four patterns from most accidental to most deliberate according to the lecture’s framing.\n1. A home cook experiments with a pressure cooker recipe for personal convenience, posts it online, and only later realises global demand.\n2. A founder explicitly aims to redesign a traditional food category, conducts market research, and launches a fresh‑idli batter brand with a clear scale‑up plan.\n3. An engineer frustrated with bus ticket booking builds a small tool to solve his own problem, which later turns into a major platform.\n4. A corporate professional leaves their job to “disrupt” a large, inefficient industry with a clearly chosen tech solution.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "4 1 3 2",
+                "B": "2 3 1 4",
+                "C": "1 3 2 4",
+                "D": "1 2 3 4"
+            },
+            "correct_option_label": "C",
+            "explanation": "The sequence moves from pure personal use (1) to solving a personal itch (3) to planned market entry (2) to intentional disruption (4).",
+            "module": 4
+        },
+        {
+            "question_id": "582113452",
+            "question_text": "The lecture uses different examples to show how ventures can move from informal beginnings to more structured, planned growth. Consider the following simplified paths (all hypothetical but consistent with the course’s stories): Arrange these paths in order of least to most planned at the moment they first become more formal ventures (i.e., at the point where they move beyond the initial informal activity).\n1. A founder starts a snack stall at a bus stop to earn immediate income, later formalises it into a registered business with multiple outlets.\n2. An engineer, after detailed study of the bus‑ticketing market, launches a platform with a clear pan‑India rollout plan that is executed as designed.\n3. A developer creates a small bus‑ticketing tool to solve his own travel problem; after initial use, he realises the wider gap and gradually builds a full company around it.\n4. A home cook experiments with recipes for family use and posts them online; after viewers request deliveries, she designs a city‑wide brand and delivery system.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "2 4 3 1",
+                "B": "1 4 3 2",
+                "C": "1 3 4 2",
+                "D": "3 1 2 4"
+            },
+            "correct_option_label": "C",
+            "explanation": "The order reflects a progression from necessity-based (1), to solving a personal itch (3), to reactive organic growth (4), and finally to a fully planned market launch (2).",
+            "module": 4
+        },
+        {
+            "question_id": "582113453",
+            "question_text": "The “Starting a Venture – 7 Common Ways” session contrasts different starting patterns in terms of how much personal safety-net and reversibility they offer at the moment of starting up. Consider these four simplified patterns: Arrange these patterns from most to least reversible at the time the person starts working seriously on the venture.\n1. Leaving a stable job to raise a large VC round for a disruptive moonshot, with no clear path back if it fails.\n2. Keeping a full‑time job while experimenting evenings and weekends on a potential venture, only quitting after consistent paying customers appear.\n3. Using existing kitchen and household resources to start a small subscription‑based food business, reinvesting profits slowly.\n4. Quitting a job after minimal savings to start a venture purely from enthusiasm, without clear evidence of customers or support.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1 3 4 2",
+                "B": "3 1 2 4",
+                "C": "2 4 3 1",
+                "D": "2 3 4 1"
+            },
+            "correct_option_label": "D",
+            "explanation": "Moonlighting (2) is most reversible as the job is retained. Raising VC for a moonshot (1) is the least reversible due to high stakes and external capital obligations.",
+            "module": 4
+        },
+        {
+            "question_id": "582113454",
+            "question_text": "In the Mango Technologies story, the founders did not have their own hardware platform or global distribution channels. Instead, they built an operating system suited for low‑end phones and partnered with Qualcomm, which already had reach with handset makers. The lecture notes that Mango brought deep local insight and software capabilities, while Qualcomm contributed credibility, existing relationships, and the ability to embed Mango’s technology into many devices. The instructor uses this to show that entrepreneurs can create value by controlling key pieces of the puzzle rather than owning everything end‑to‑end. Which option best captures the strategic lesson about resource use illustrated by this partnership?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is better to delay the venture until you can build your own hardware and distribution from scratch.",
+                "B": "The safest strategy is to license all technology outright to a large firm and exit the market immediately.",
+                "C": "Entrepreneurs should avoid partnerships because sharing control always reduces value.",
+                "D": "Owning a distinctive, hard‑to‑replace capability and combining it with a partner’s channels can unlock opportunities that neither party could realise alone."
+            },
+            "correct_option_label": "D",
+            "explanation": "Strategic resource use involves leveraging unique internal capabilities and combining them with a partner's established infrastructure to achieve scale that neither could reach alone.",
+            "module": 3
+        },
+        {
+            "question_id": "582113455",
+            "question_text": "Across the sessions on “Starting a Venture – Common Ways” and “Social Entrepreneurship”, the course contrasts different motivations and models. Which of the following founders’ plans would most likely be judged as internally consistent with a social‑enterprise logic that still seeks financial sustainability?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "“We will offer eye surgeries at different prices so that wealthier patients paying market rates cover the costs of those who cannot pay, while maintaining identical clinical quality for all.”",
+                "B": "“We will run free evening classes for government‑school students, which they can attend conveniently. We will charge for the students since we need stable salaries for our survival.”",
+                "C": "“We will maximise profit in luxury fashion and once a year donate a small amount to any charity that asks.”",
+                "D": "“We will produce eco‑friendly everyday products, price them competitively, but will target middle‑income and low‑income customers.”"
+            },
+            "correct_option_label": "A",
+            "explanation": "The differential pricing model (like Shankara Nethralaya) is a consistent social enterprise strategy where profits from affluent customers subsidize services for the poor, ensuring sustainability.",
+            "module": 3
+        },
+        {
+            "question_id": "582113456",
+            "question_text": "Match each entrepreneurial path with the main evaluation focus the course suggests when judging its potential, drawing on sessions about necessity vs opportunity, social entrepreneurship, and podcasts/interviews.\nList 1:\n(1) Necessity‑driven micro‑venture started after a drought wipes out a family’s farm income.\n(2) For‑profit social venture selling eco‑friendly paper (e.g., Rescript).\n(3) Non‑profit entrance‑coaching platform run by volunteers (e.g., OpenGrad Foundation).\n(4) High‑growth tech startup in B2B SaaS, backed by venture capital (e.g., Rishi Kulkarni’s second venture).\n\nList 2:\n(A) Depth of real community engagement, quality of volunteers, and whether free access is reaching those historically excluded from coaching.\n(B) Ability to combine impact on target communities with a business model that can scale beyond the founder’s personal effort while staying environmentally credible.\n(C) Whether the venture meaningfully improves the founder’s livelihood under severe constraints and can gradually formalise if context and support improve.\n(D) Size and accessibility of the addressable market, unit economics, and repeatable sales processes that justify outside capital and potential exits.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1–A 2–D 3–C 4–B",
+                "B": "1–D 2–B 3–A 4–C",
+                "C": "1–D 2–A 3–B 4–C",
+                "D": "1–C 2–B 3–A 4–D"
+            },
+            "correct_option_label": "D",
+            "explanation": "Necessity focuses on livelihood improvement (C), Social Ventures on impact+scale (B), Non-profits on volunteer/community depth (A), and VC-backed startups on market size/economics (D).",
+            "module": 3
+        },
+        {
+            "question_id": "582113457",
+            "question_text": "Drawing on the Entrepreneurial Resources session and stories of bootstrapping vs external funding, consider an early‑stage founder choosing among four funding strategies. Assume the founder wants to maximise control and learning in the first year while still getting enough resources to move. Rank these strategies from most aligned to least aligned with the founder’s goal of maintaining control while learning.\n1. Raise a large VC round that gives away 55% equity immediately, enabling rapid hiring and marketing.\n2. Bootstrap using savings and customer revenue, plus using spare capacity in a relative’s small factory to run small batches.\n3. Take a high‑interest informal loan that must be repaid weekly, backed by a personal guarantee from family property.\n4. Apply for a state grant programme like Elevate 100, which provides non‑dilutive funds in exchange for meeting certain reporting requirements.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "2 4 1 3",
+                "B": "3 4 1 2",
+                "C": "2 1 4 3",
+                "D": "1 2 3 4"
+            },
+            "correct_option_label": "A",
+            "explanation": "Bootstrapping (2) offers the most control. Grants (4) are non-dilutive. Large VC (1) reduces control significantly. High-interest informal loans (3) are the most risky and restrictive.",
+            "module": 3
+        },
+        {
+            "question_id": "582113458",
+            "question_text": "Match each entrepreneur or organisation to the key uncertainty or judgement challenge highlighted in their story, integrating insights from multiple modules and interviews.\nList 1:\n(1) Rishi Kulkarni’s B2B SaaS venture (deal‑management product).\n(2) Ashutosh Ananth’s move from novelty corporate gifts to recycled A4 paper (Rescript).\n(3) Prathima Seethur’s sustainable architecture practice.\n(4) DJ Ramakrishnappa’s Joining the Dots Foundation in rural education and sports.\n\nList 2:\n(A) Choosing to shift from one‑time novelty purchases to an everyday product, betting that institutions would adopt a sustainable alternative with repeat demand.\n(B) Deciding which rural programmes (education, sports, healthcare, environment) to prioritise and how to prove impact in contexts with limited data.\n(C) Judging which process bottlenecks in large companies’ sales and operations (e.g., contracts, approvals) were painful enough that customers would pay for automation.\n(D) Convincing clients that eco‑responsive design and long‑term environmental performance justified higher upfront effort and sometimes different material choices.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1–A 2–C 3–B 4–D",
+                "B": "1–D 2–C 3–B 4–C",
+                "C": "1–A 2 –C 3–D 4–B",
+                "D": "1–C 2–A 3–D 4–B"
+            },
+            "correct_option_label": "D",
+            "explanation": "Rishi solved B2B bottlenecks (C), Ashutosh shifted to everyday sustainability (A), Prathima convinced clients on eco-design (D), and Ramakrishnappa prioritized rural impact (B).",
+            "module": 4
+        },
+        {
+            "question_id": "582113459",
+            "question_text": "A small developer building three urban townhouses has a fixed sustainability budget of INR 100,000 per house. They must choose measures that give visible environmental benefits and appeal to eco-aware buyers. Which allocation is most likely to deliver immediate practical and perceived value?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Spend INR 50,000 on native landscaping and INR 50,000 on decorative eco-friendly finishes to boost aesthetics.",
+                "B": "Reserve the full INR 100,000 for certifications and green labels to improve resale credentials.",
+                "C": "Invest INR 100,000 per house in a small rooftop solar array focused on long-term energy savings.",
+                "D": "Use INR 60,000 to install rooftop rainwater capture and INR 40,000 on separating wet and dry waste systems for each house."
+            },
+            "correct_option_label": "D",
+            "explanation": "For visible and immediate impact, practical systems like rainwater harvesting and waste management provide tangible environmental utility and perceived value to buyers.",
+            "module": 3
+        },
+        {
+            "question_id": "582113460",
+            "question_text": "A solo founder of a community-focused eco-retail startup has enthusiasm but limited industry connections and budget. Which low-cost, high-leverage early action most likely accelerates venture traction?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Spend the limited budget on a polished website and online ads to attract immediate customers.",
+                "B": "Rely solely on family support and bootstrap sales through word-of-mouth without external outreach.",
+                "C": "Actively seek a senior mentor and join targeted networking groups while using short practical courses to build business skills.",
+                "D": "Hire a professional networker on commission to set up partnerships and meetings with possible clients."
+            },
+            "correct_option_label": "C",
+            "explanation": "Leveraging social networks and mentorship is a low-cost way for resource-constrained founders to gain industry knowledge and accelerate business growth.",
+            "module": 3
+        },
+        {
+            "question_id": "582113461",
+            "question_text": "A social entrepreneur plans telemedicine hubs in remote villages. Which pricing and operating choice most likely makes the service sustainable while remaining affordable for villagers?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Offer all consultations free and rely entirely on episodic grant funding and donations to cover operating costs.",
+                "B": "Operate solely through subscription bundles sold to city hospitals, with no direct charge to rural users.",
+                "C": "Charge a small per-consult fee and sell/monitor kits via trained local operators and NGOs to ensure repeatable, low-cost access.",
+                "D": "Require villagers to buy expensive diagnostic hardware upfront and provide consultations at no further cost."
+            },
+            "correct_option_label": "C",
+            "explanation": "Sustainability in social ventures often requires a small, affordable fee to ensure repeatable service delivery while leveraging local operators for low-cost implementation.",
+            "module": 3
+        },
+        {
+            "question_id": "582113462",
+            "question_text": "A zero-waste startup manages campus waste and finds that low-value wet and sanitary waste drives costs. To create a financially viable offer, what pricing structure should the startup adopt?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only accept valuable recyclables and refuse to handle non-valuable waste unless the client finds a third-party buyer.",
+                "B": "Set a high per-kg rate for all waste but offer no guarantee on end-destination to remain cost-competitive.",
+                "C": "Rely entirely on ad-hoc donations and occasional carbon grants, providing services for free to all campuses.",
+                "D": "Charge customers a fixed service fee plus a variable component for non-recyclable wet waste, guaranteeing full-source segregation and recycling."
+            },
+            "correct_option_label": "D",
+            "explanation": "A combination of fixed service fees and variable costs for problematic waste ensures that the startup can cover its operational costs while providing a guaranteed sustainable outcome.",
+            "module": 3
+        },
+        {
+            "question_id": "582113463",
+            "question_text": "A farmer-producer collective aims to move farmers from commodity sellers to stronger margin-capturing roles. Which strategic move will most directly increase farmer incomes and reduce their exposure to volatile spot prices?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Develop local processing and value-added products so the group controls grading, processing and sets prices closer to the consumer.",
+                "B": "Encourage farmers to plant higher-volume commodity crops and compete on bulk supply to large buyers.",
+                "C": "Advise farmers to individually export raw produce to international buyers to bypass domestic middlemen.",
+                "D": "Shift entirely to contract farming for multinational processors, surrendering price control in exchange for guaranteed off-take."
+            },
+            "correct_option_label": "A",
+            "explanation": "Moving up the value chain through local processing and value-added products allows farmer collectives to capture more margin and reduce dependence on raw commodity price fluctuations.",
+            "module": 3
+        },
+        {
+            "question_id": "582113464",
+            "question_text": "An entrepreneur plans to certify handloom fabric for authenticity and later claim carbon credits for lower emissions versus power looms. What is the most pragmatic first data element to collect during a pilot?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Estimate per-meter carbon savings using industry averages first, then try to track which weaver made each fabric.",
+                "B": "Collect consumer survey responses about perceived sustainability and use that as primary evidence for credits.",
+                "C": "Measure only sales conversion in export markets to infer sustainability benefits without on-loom verification.",
+                "D": "Capture traceability data (geolocation, weaver identity, and timestamped media) via a loom-mounted device and QR-code before estimating carbon savings."
+            },
+            "correct_option_label": "D",
+            "explanation": "The most pragmatic data element for certification and carbon credits is verifiable traceability that proves the product was indeed made on a handloom by specific weavers.",
+            "module": 3
+        },
+        {
+            "question_id": "582113465",
+            "question_text": "A 45-year-old senior manager with strong industry contacts wants to test a new education product without quitting a secure job. Which starting approach best reduces personal risk while leveraging her network to validate paying customers?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Begin testing the product alongside the current job during evenings and weekends to validate paying customers before deciding to exit full-time employment.",
+                "B": "Approach venture capitalists now to secure growth capital and hire a sales force to accelerate customer onboarding.",
+                "C": "Register as a nonprofit and rely on grants and donations to pay for pilots and salaried staff from day one.",
+                "D": "Quit immediately to focus full-time, hire a small team, and pursue rapid customer acquisition through paid marketing."
+            },
+            "correct_option_label": "A",
+            "explanation": "Testing a venture as a side project (moonlighting) allows experienced professionals to validate the market using their existing networks without the risk of immediate job loss.",
+            "module": 4
+        }
+    ]
+}

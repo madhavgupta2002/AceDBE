@@ -29,11 +29,10 @@ export default function Home() {
               <button
                 key={term}
                 onClick={() => setSelectedTerm(term)}
-                className={`w-8 sm:w-9 py-1.5 font-semibold text-xs sm:text-sm transition-all duration-200 rounded-lg flex items-center justify-center ${
-                  selectedTerm === term
+                className={`w-8 sm:w-9 py-1.5 font-semibold text-xs sm:text-sm transition-all duration-200 rounded-lg flex items-center justify-center ${selectedTerm === term
                     ? 'bg-slate-700/80 text-white shadow-md'
                     : 'bg-transparent text-slate-500 hover:text-slate-200 hover:bg-slate-700/40'
-                }`}
+                  }`}
               >
                 {term}
               </button>
@@ -49,11 +48,10 @@ export default function Home() {
               <button
                 key={batch}
                 onClick={() => setSelectedBatch(batch)}
-                className={`px-4 py-1.5 font-semibold text-xs sm:text-sm transition-all duration-200 rounded-lg ${
-                  selectedBatch === batch
+                className={`px-4 py-1.5 font-semibold text-xs sm:text-sm transition-all duration-200 rounded-lg ${selectedBatch === batch
                     ? 'bg-amber-600 text-white shadow-md'
                     : 'bg-transparent text-slate-400 hover:text-white hover:bg-slate-700/60'
-                }`}
+                  }`}
               >
                 {batch}
               </button>
