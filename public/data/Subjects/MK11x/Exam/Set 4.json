@@ -1,0 +1,708 @@
+{
+    "exam_metadata": {
+        "subject_name": "Marketing Fundamentals",
+        "exam_date": "01 February 2026"
+    },
+    "questions": [
+        {
+            "question_id": "582113121",
+            "question_text": "Which metric best captures customer lifetime value (CLV)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Average monthly sales volume",
+                "B": "Annual advertising spend on retention",
+                "C": "Profit margin on a single transaction",
+                "D": "Total revenue from a customer over time minus acquisition and servicing costs"
+            },
+            "correct_option_label": "D",
+            "explanation": "Customer Lifetime Value (CLV) is the total net profit a company can expect from a single customer throughout their entire relationship with the brand, considering acquisition and servicing costs.",
+            "module": 1
+        },
+        {
+            "question_id": "582113122",
+            "question_text": "Which of the following is NOT a characteristic of a strong brand?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Inconsistent messaging",
+                "B": "High awareness",
+                "C": "Positive associations",
+                "D": "Customer loyalty"
+            },
+            "correct_option_label": "A",
+            "explanation": "A strong brand requires consistent messaging to build trust and clear identity; inconsistency confuses consumers and weakens brand equity.",
+            "module": 1
+        },
+        {
+            "question_id": "582113123",
+            "question_text": "The purpose of segmentation in marketing is to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduce competition",
+                "B": "Maximize advertising spend",
+                "C": "Divide the market into smaller groups with shared characteristics",
+                "D": "Increase production efficiency"
+            },
+            "correct_option_label": "C",
+            "explanation": "Segmentation involves dividing a broad, heterogeneous market into homogeneous subsets of consumers who share similar needs, traits, or behaviors.",
+            "module": 1
+        },
+        {
+            "question_id": "582113124",
+            "question_text": "Which type of targeting focuses on tailoring messages based on past customer behavior?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Behavioral",
+                "B": "Geographic",
+                "C": "Demographic",
+                "D": "Psychographic"
+            },
+            "correct_option_label": "A",
+            "explanation": "Behavioral segmentation and targeting use actual consumer actions, such as purchase history or usage rates, to deliver relevant marketing messages.",
+            "module": 1
+        },
+        {
+            "question_id": "582113125",
+            "question_text": "A positioning statement typically includes:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Advertising media and budget",
+                "B": "Product features and pricing strategy",
+                "C": "Target audience, frame of reference, point of difference, reason to believe",
+                "D": "Financial goals and competitor analysis"
+            },
+            "correct_option_label": "C",
+            "explanation": "A standard positioning statement identifies the target segment, the category (frame of reference), the unique benefit (POD), and the evidence (reason to believe).",
+            "module": 1
+        },
+        {
+            "question_id": "582113126",
+            "question_text": "Which of the following best defines consumer-derived value?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The market share a company holds",
+                "B": "The premium charged for branded goods",
+                "C": "Value as perceived by the customer based on benefits and costs",
+                "D": "The firm’s cost of producing the product"
+            },
+            "correct_option_label": "C",
+            "explanation": "Value is defined as the customer's perceived assessment of the utility of a product based on the benefits received versus the total cost incurred.",
+            "module": 1
+        },
+        {
+            "question_id": "582113127",
+            "question_text": "Which stage of the product life cycle is typically associated with heavy promotional spending to build awareness?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Maturity",
+                "B": "Decline",
+                "C": "Growth",
+                "D": "Introduction"
+            },
+            "correct_option_label": "D",
+            "explanation": "During the Introduction stage, firms invest heavily in promotion to inform consumers about the new product and establish market presence.",
+            "module": 1
+        },
+        {
+            "question_id": "582113128",
+            "question_text": "Which distribution strategy provides the widest coverage but least control?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Direct distribution",
+                "B": "Exclusive distribution",
+                "C": "Intensive distribution",
+                "D": "Selective distribution"
+            },
+            "correct_option_label": "C",
+            "explanation": "Intensive distribution aims to place products in as many outlets as possible (mass market), which maximizes reach but reduces the manufacturer's control over retail presentation.",
+            "module": 1
+        },
+        {
+            "question_id": "582113129",
+            "question_text": "What does the term \"share of voice\" measure?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A brand’s advertising spend as a percentage of total industry spend",
+                "B": "Customer Referrals",
+                "C": "A brand’s market share in units",
+                "D": "The ratio of sales to advertising costs"
+            },
+            "correct_option_label": "A",
+            "explanation": "Share of Voice (SOV) measures the brand's share of total advertising activity within its market or industry compared to competitors.",
+            "module": 1
+        },
+        {
+            "question_id": "582113130",
+            "question_text": "Which is a key feature of guerrilla marketing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Heavy reliance on traditional media",
+                "B": "Low-cost, unconventional tactics to gain attention",
+                "C": "Focus exclusively on discounts",
+                "D": "Use of celebrity endorsements"
+            },
+            "correct_option_label": "B",
+            "explanation": "Guerrilla marketing relies on creative, high-impact, and low-cost unconventional methods to capture consumer attention and create buzz.",
+            "module": 1
+        },
+        {
+            "question_id": "582113131",
+            "question_text": "Which factor is LEAST relevant in determining brand positioning?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Competitor actions",
+                "B": "Internal capabilities",
+                "C": "Employee compensation packages",
+                "D": "Customer needs"
+            },
+            "correct_option_label": "C",
+            "explanation": "While compensation affects internal operations, brand positioning focuses on customers, competitors, and company capabilities to create a distinctive market image.",
+            "module": 1
+        },
+        {
+            "question_id": "582113132",
+            "question_text": "The concept of \"blue ocean strategy\" emphasizes:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lowering operational costs",
+                "B": "Maximizing production efficiency",
+                "C": "Creating uncontested market space",
+                "D": "Competing in saturated markets"
+            },
+            "correct_option_label": "C",
+            "explanation": "Blue Ocean Strategy involves moving away from crowded markets (Red Oceans) by creating new demand in uncontested spaces through value innovation.",
+            "module": 1
+        },
+        {
+            "question_id": "582113133",
+            "question_text": "Which of the following is an example of co-branding?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Coca-Cola selling Diet Coke",
+                "B": "Nike and Apple collaborating on fitness tracking",
+                "C": "McDonald's offering meal combos",
+                "D": "A local shop selling multiple brands"
+            },
+            "correct_option_label": "B",
+            "explanation": "Co-branding occurs when two established brands collaborate to create a joint offering that leverages the brand equity of both participants.",
+            "module": 1
+        },
+        {
+            "question_id": "582113134",
+            "question_text": "Which strategy focuses on adjusting the marketing mix for each international market?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Diversification",
+                "B": "Adaptation",
+                "C": "Penetration",
+                "D": "Standardization"
+            },
+            "correct_option_label": "B",
+            "explanation": "Adaptation involves tailoring product features, pricing, and communication to meet the specific cultural, economic, and legal requirements of different international markets.",
+            "module": 1
+        },
+        {
+            "question_id": "582113135",
+            "question_text": "Which type of research design is best suited for exploring new phenomena without prior knowledge?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Experimental research",
+                "B": "Descriptive research",
+                "C": "Causal research",
+                "D": "Exploratory research"
+            },
+            "correct_option_label": "D",
+            "explanation": "Exploratory research is used at the initial stage of research to gather insights and clarify problems when the researcher has little prior knowledge.",
+            "module": 1
+        },
+        {
+            "question_id": "582113136",
+            "question_text": "In the diffusion of innovation theory, \"early adopters\":",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Resist innovations until proven",
+                "B": "Influence the adoption of new products within social groups",
+                "C": "Adopt only after the majority does",
+                "D": "At the very first try of the product"
+            },
+            "correct_option_label": "B",
+            "explanation": "Early adopters are opinion leaders who try new products early and influence the subsequent adoption by the broader market majority.",
+            "module": 1
+        },
+        {
+            "question_id": "582113137",
+            "question_text": "Which type of brand extension is most risky?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Flanker brand extension",
+                "B": "Unrelated category extension",
+                "C": "Line extension within the same category",
+                "D": "Endorsed brand extension"
+            },
+            "correct_option_label": "B",
+            "explanation": "Extending a brand into an unrelated category carries the highest risk of brand dilution if the new product fails to align with the core brand values.",
+            "module": 1
+        },
+        {
+            "question_id": "582113138",
+            "question_text": "Which pricing strategy involves setting a low initial price to quickly gain market share?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Skimming pricing",
+                "B": "Penetration Pricing",
+                "C": "Psychological pricing",
+                "D": "Cost-plus pricing"
+            },
+            "correct_option_label": "B",
+            "explanation": "Penetration pricing uses a low entry price to attract a large number of buyers and win a high market share rapidly.",
+            "module": 1
+        },
+        {
+            "question_id": "582113139",
+            "question_text": "Which of the following best defines disintermediation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Outsourcing logistics to third parties",
+                "B": "Adding more layers of wholesalers",
+                "C": "Using exclusive distributors",
+                "D": "Eliminating intermediaries in the channel"
+            },
+            "correct_option_label": "D",
+            "explanation": "Disintermediation refers to cutting out middlemen (wholesalers, retailers) to sell directly from the producer to the consumer, often facilitated by the internet.",
+            "module": 1
+        },
+        {
+            "question_id": "582113140",
+            "question_text": "A company tracking \"net promoter score (NPS)\" is measuring:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Profit margin percentage",
+                "B": "Employee turnover rate",
+                "C": "Customers willingness to respond",
+                "D": "Market share growth"
+            },
+            "correct_option_label": "C",
+            "explanation": "Net Promoter Score (NPS) measures customer loyalty by asking how likely they are to recommend the brand to others (willingness to respond/promote).",
+            "module": 1
+        },
+        {
+            "question_id": "582113141",
+            "question_text": "Which of the following best defines a \"touchpoint\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The distribution channel used",
+                "B": "The promotional offer given",
+                "C": "The price point of a product",
+                "D": "Any interaction between a brand and its customer"
+            },
+            "correct_option_label": "D",
+            "explanation": "A touchpoint includes any encounter—direct or indirect—where a customer interacts with a brand across the entire customer journey.",
+            "module": 1
+        },
+        {
+            "question_id": "582113142",
+            "question_text": "Which type of innovation represents minor improvements to existing products?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Radical",
+                "B": "Breakthrough",
+                "C": "Incremental",
+                "D": "Disruptive"
+            },
+            "correct_option_label": "C",
+            "explanation": "Incremental innovation focuses on making small, continuous improvements or updates to an existing product to enhance its performance or value.",
+            "module": 1
+        },
+        {
+            "question_id": "582113143",
+            "question_text": "Which growth strategy in Ansoff’s matrix involves selling new products to new markets?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product development",
+                "B": "Market penetration",
+                "C": "Diversification",
+                "D": "Market development"
+            },
+            "correct_option_label": "C",
+            "explanation": "In Ansoff's Matrix, Diversification occurs when a firm creates new products for entirely new markets, which is the riskiest growth strategy.",
+            "module": 1
+        },
+        {
+            "question_id": "582113144",
+            "question_text": "Which concept describes the risk of overextending a brand into unrelated categories?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Brand Dilution",
+                "B": "Brand resonance",
+                "C": "Brand recall",
+                "D": "Brand reinforcement"
+            },
+            "correct_option_label": "A",
+            "explanation": "Brand Dilution happens when a brand is spread too thin across unrelated categories, weakening its core associations in the minds of consumers.",
+            "module": 1
+        },
+        {
+            "question_id": "582113145",
+            "question_text": "Which distribution strategy is best for products requiring after-sales service and high involvement?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mass distribution",
+                "B": "Intensive distribution",
+                "C": "Selective distribution",
+                "D": "Direct-only distribution"
+            },
+            "correct_option_label": "C",
+            "explanation": "Selective distribution involves using a limited number of qualified intermediaries who can provide specific services or support for high-involvement products.",
+            "module": 1
+        },
+        {
+            "question_id": "582113146",
+            "question_text": "In the adoption of innovation, which group adopts products just before the majority?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Innovators",
+                "B": "Late majority",
+                "C": "Laggards",
+                "D": "Early majority"
+            },
+            "correct_option_label": "D",
+            "explanation": "The early majority adopts innovations after innovators and early adopters, but before the late majority and laggards.",
+            "module": 1
+        },
+        {
+            "question_id": "582113147",
+            "question_text": "Which promotional tool is best suited for stimulating immediate sales?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Corporate social responsibility",
+                "B": "Soponsorships",
+                "C": "Sales promotions",
+                "D": "Public relations"
+            },
+            "correct_option_label": "C",
+            "explanation": "Sales promotions use short-term incentives like discounts or coupons to encourage immediate purchase or trial.",
+            "module": 1
+        },
+        {
+            "question_id": "582113148",
+            "question_text": "Which channel function is performed when wholesalers break bulk and sell in smaller lots?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Bulk-breaking",
+                "B": "Financing",
+                "C": "Risk-taking",
+                "D": "Assorting"
+            },
+            "correct_option_label": "A",
+            "explanation": "Bulk-breaking is the process where intermediaries buy in large quantities from manufacturers and sell them in smaller, more manageable quantities to retailers or consumers.",
+            "module": 1
+        },
+        {
+            "question_id": "582113149",
+            "question_text": "Which pricing tactic sets artificially high prices to suggest superior quality?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Prestige pricing",
+                "B": "Penetration pricing",
+                "C": "Psychological pricing",
+                "D": "Skimming pricing"
+            },
+            "correct_option_label": "A",
+            "explanation": "Prestige pricing (or premium pricing) involves setting high prices to project an image of luxury, exclusivity, and high quality.",
+            "module": 1
+        },
+        {
+            "question_id": "582113150",
+            "question_text": "A company offering different variants of toothpaste under the same brand is practicing:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Co-branding",
+                "B": "Brand extension",
+                "C": "Flanker Branding",
+                "D": "Line extension"
+            },
+            "correct_option_label": "D",
+            "explanation": "Line extension refers to introducing additional items in the same product category under the same brand name (e.g., new flavors or sizes).",
+            "module": 1
+        },
+        {
+            "question_id": "582113151",
+            "question_text": "Which metric measures profitability relative to marketing investment?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Market share",
+                "B": "Break-even volume",
+                "C": "Return on marketing investment (ROMI)",
+                "D": "Gross margin"
+            },
+            "correct_option_label": "C",
+            "explanation": "ROMI is a specific metric used to calculate the effectiveness and profitability generated by a specific marketing campaign or total marketing spend.",
+            "module": 1
+        },
+        {
+            "question_id": "582113152",
+            "question_text": "In diffusion of innovation, \"laggards\" are characterized by:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Quick acceptance of innovations",
+                "B": "Influence over early adopters",
+                "C": "Skepticism and adoption only when products are mainstream",
+                "D": "High income and education"
+            },
+            "correct_option_label": "C",
+            "explanation": "Laggards are tradition-bound, skeptical of change, and are the last to adopt an innovation, often only after it has become a necessity or mainstream.",
+            "module": 1
+        },
+        {
+            "question_id": "582113153",
+            "question_text": "Which factor primarily drives customer-based brand equity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Distribution intensity",
+                "B": "Customer perceptions and associations",
+                "C": "Company advertising budget",
+                "D": "Competitor pricing"
+            },
+            "correct_option_label": "B",
+            "explanation": "CBBE is built on what customers have learned, felt, and heard about the brand over time; it is the differential effect brand knowledge has on consumer response.",
+            "module": 1
+        },
+        {
+            "question_id": "582113154",
+            "question_text": "Which element of the promotional mix is most credible but least controllable?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Advertising",
+                "B": "Public relations",
+                "C": "Sales promotion",
+                "D": "Personal selling"
+            },
+            "correct_option_label": "B",
+            "explanation": "Public relations (specifically publicity) is seen as more credible because it often comes from third-party sources (like news), but the firm cannot fully control how the message is reported.",
+            "module": 1
+        },
+        {
+            "question_id": "582113155",
+            "question_text": "Which of the following best describes dynamic pricing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Offering one-time discounts",
+                "B": "Adjusting prices in real-time based on demand and supply",
+                "C": "Setting prices below competitors always",
+                "D": "Charging a fixed price regardless of conditions"
+            },
+            "correct_option_label": "B",
+            "explanation": "Dynamic pricing is a strategy where prices fluctuate continuously based on market demand, competitor pricing, and other environmental factors.",
+            "module": 1
+        },
+        {
+            "question_id": "582113156",
+            "question_text": "Which targeting strategy treats the market as a single homogeneous group?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Differentiated marketing",
+                "B": "Undifferentiated marketing",
+                "C": "Concentrated marketing",
+                "D": "Niche marketing"
+            },
+            "correct_option_label": "B",
+            "explanation": "Undifferentiated (mass) marketing ignores segment differences and goes after the whole market with one offer.",
+            "module": 1
+        },
+        {
+            "question_id": "582113157",
+            "question_text": "Which term refers to the customer’s emotional connection with a brand beyond satisfaction?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Brand loyalty",
+                "B": "Brand love",
+                "C": "Brand imagery",
+                "D": "Brand awareness"
+            },
+            "correct_option_label": "B",
+            "explanation": "Brand love goes beyond functional loyalty, representing a deep emotional and passionate attachment to a brand.",
+            "module": 1
+        },
+        {
+            "question_id": "582113158",
+            "question_text": "Which of the following refers to a firm introducing a cheaper product to defend against low-cost rivals?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Flanker brand",
+                "B": "Umbrella brand",
+                "C": "Private label",
+                "D": "Fighter brand"
+            },
+            "correct_option_label": "D",
+            "explanation": "A fighter brand is a lower-priced product introduced by a company specifically to compete with low-cost competitors without diluting the premium brand's equity.",
+            "module": 1
+        },
+        {
+            "question_id": "582113159",
+            "question_text": "Which media scheduling pattern alternates heavy advertising with no advertising?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Pulsing",
+                "B": "Seasonal",
+                "C": "Flighting",
+                "D": "Continuous"
+            },
+            "correct_option_label": "C",
+            "explanation": "Flighting involves periods of heavy advertising followed by periods of zero advertising (hibernation) to maximize impact within specific timeframes.",
+            "module": 1
+        },
+        {
+            "question_id": "582113160",
+            "question_text": "Which strategy involves licensing another firm to produce and market under the company’s brand?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Brand licensing",
+                "B": "Co-branding",
+                "C": "Outsourcing",
+                "D": "Franchising"
+            },
+            "correct_option_label": "A",
+            "explanation": "Brand licensing is a legal agreement where a brand owner allows another firm to use its brand name on products for a fee or royalty.",
+            "module": 1
+        },
+        {
+            "question_id": "582113161",
+            "question_text": "A mature product category shows stable demand but increasing competition and margin pressure. The firm continues to invest heavily in awareness advertising without adjusting its strategy. From a product life cycle",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Prepare for immediate product withdrawal",
+                "B": "Increase production capacity to meet future demand",
+                "C": "Emphasize differentiation, efficiency, or line extensions",
+                "D": "Focus on market expansion through awareness"
+            },
+            "correct_option_label": "C",
+            "explanation": "In the Maturity stage, awareness is already high, so firms should shift focus toward differentiation and operational efficiency to maintain profit margins.",
+            "module": 2
+        },
+        {
+            "question_id": "582113162",
+            "question_text": "A firm selling a complex industrial solution focuses its sales pitch on superior service quality compared to competitors and reduces price to match the lowest bid. Later analysis shows the solution actually delivers significant downstream revenue gains for the buyer. What strategic mistake did the firm most likely make?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Applying a resonating focus value proposition",
+                "B": "Overestimating competitor price sensitivity",
+                "C": "Targeting the wrong buying center members",
+                "D": "Ignoring the customer’s value model and economic impact"
+            },
+            "correct_option_label": "D",
+            "explanation": "The firm failed to demonstrate the True Economic Value (TEV) and revenue gains to the customer, leading them to compete on price instead of value.",
+            "module": 2
+        },
+        {
+            "question_id": "582113163",
+            "question_text": "A firm selling high-value, technically complex offerings relies heavily on mass advertising to generate sales, but conversion remains low. Which change in promotion strategy would be most appropriate based on marketing fundamentals?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase price promotions to stimulate trial",
+                "B": "Reduce promotional spending to cut costs",
+                "C": "Shift emphasis toward personal selling and relationship building",
+                "D": "Rely exclusively on digital self-service channels"
+            },
+            "correct_option_label": "C",
+            "explanation": "High-value B2B or complex products require personal interaction and trust, making personal selling more effective than mass advertising for conversion.",
+            "module": 2
+        },
+        {
+            "question_id": "582113164",
+            "question_text": "A firm selling a low-involvement daily-use product notices that consumers choose primarily based on price with minimal brand loyalty. Which market characteristic best explains this behavior?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Commodity market structure",
+                "B": "High switching costs",
+                "C": "High perceived differentiation",
+                "D": "Relationship-driven buying"
+            },
+            "correct_option_label": "A",
+            "explanation": "In a commodity market, products are viewed as undifferentiated, leading consumers to buy solely based on price availability.",
+            "module": 2
+        },
+        {
+            "question_id": "582113165",
+            "question_text": "A company identifies three customer groups interested in its product, but only one group has both purchasing power and access to the firm’s distribution network. How should this group be classified?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Target market",
+                "B": "Primary demand market",
+                "C": "Potential market",
+                "D": "Available market"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Available Market consists of consumers who have interest, income (purchasing power), and access to the product.",
+            "module": 2
+        },
+        {
+            "question_id": "582113166",
+            "question_text": "A firm decides to sell exclusively through local physical stores due to limited digital capabilities. Which factor most directly constrains its target market choice?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Company preferences",
+                "B": "Customer Resources",
+                "C": "Competitive intensity",
+                "D": "Product life cycle stage"
+            },
+            "correct_option_label": "B",
+            "explanation": "Target market selection is constrained by the company's ability to reach customers; choosing physical stores limits the market to those with access and resources to visit locally.",
+            "module": 2
+        },
+        {
+            "question_id": "582113167",
+            "question_text": "A supplier pitching to a business client highlights a long list of product features and quality certifications. During negotiations, the client remains focused only on price and shows little interest in differentiation. Based on B2B value proposition logic, what is the most likely reason for this outcome?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The supplier has clearly established points of difference",
+                "B": "The supplier is using a resonating focus strategy",
+                "C": "The value proposition is based on all benefits without relevance to customer context",
+                "D": "The buying situation is a straight rebuy with high involvement"
+            },
+            "correct_option_label": "C",
+            "explanation": "The 'All Benefits' approach fails in B2B if the features mentioned are not mapped to the specific business needs or KPIs of the customer.",
+            "module": 2
+        },
+        {
+            "question_id": "582113168",
+            "question_text": "A marketer observes strong demand for a product category but weak demand for the firm’s offering within that category. Which concept best explains this gap?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Market forecast",
+                "B": "Market demand",
+                "C": "Potential Market",
+                "D": "Secondary demand"
+            },
+            "correct_option_label": "D",
+            "explanation": "Primary demand refers to the total category demand, while secondary demand refers to the demand for a specific brand's offering within that category.",
+            "module": 2
+        },
+        {
+            "question_id": "582113169",
+            "question_text": "A firm increases its marketing spend significantly and observes higher sales volume without expanding customer segments. Which relationship is most clearly illustrated here?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Market demand varies with marketing expenditure",
+                "B": "Market share depends only on product quality",
+                "C": "Market demand is independent of marketing effort",
+                "D": "Market potential equals market forecast"
+            },
+            "correct_option_label": "A",
+            "explanation": "Market demand is not fixed; it is a function that increases with industry marketing expenditure up to a certain saturation point (market potential).",
+            "module": 2
+        },
+        {
+            "question_id": "582113170",
+            "question_text": "An organization plans to purchase a customized software system that will affect multiple departments. Several internal stakeholders provide inputs, and formal evaluation and negotiation processes are initiated. Which buying situation best describes this purchase?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Modified rebuy",
+                "B": "Straight rebuy",
+                "C": "New task buying situation",
+                "D": "Routine purchasing decision"
+            },
+            "correct_option_label": "C",
+            "explanation": "A 'New Task' occurs when a firm buys a product or service for the first time, requiring extensive information gathering and involvement of the full buying center.",
+            "module": 2
+        }
+    ]
+}

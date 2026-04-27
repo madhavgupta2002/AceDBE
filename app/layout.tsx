@@ -136,10 +136,10 @@ export default function RootLayout({
       <body className={`${inter.className} bg-gray-900 ${merriweather.variable} ${openSans.variable} ${lora.variable} ${roboto.variable}`}>
         <DarkModeProvider>
           <BatchProvider>
-          {children}
-          <footer className="w-full py-6 mt-auto border-t border-gray-800/50">
-            <div className="flex flex-col items-center gap-2">
-              {/* <p className="text-center text-xs text-gray-500">
+            {children}
+            <footer className="w-full py-6 mt-auto border-t border-gray-800/50">
+              <div className="flex flex-col items-center gap-2">
+                {/* <p className="text-center text-xs text-gray-500">
                 Made by{' '}
                 <a
                   href="https://www.linkedin.com/in/madhavgupta2002/"
@@ -150,8 +150,8 @@ export default function RootLayout({
                   Madhav Gupta
                 </a>
               </p> */}
-            </div>
-          </footer>
+              </div>
+            </footer>
           </BatchProvider>
         </DarkModeProvider>
       </body>
