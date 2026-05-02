@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import {
   Question,
   PracticeMode,
@@ -738,42 +739,19 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
           </h1>
 
 
-          {/* Compact Notes & Playlists during quiz */}
+          {/* Compact Notes during quiz */}
           {!isCustomMode && !loading && quizState.questions.length > 0 && !quizCompleted && (
-            <div className="mb-4 grid grid-cols-1 md:grid-cols-2 gap-3">
-              {/* Notes - Half Width */}
-              <div className="bg-surface border border-surface-border/60 rounded-xl p-2.5 h-full flex flex-col">
-                <button
-                  onClick={() => window.open(`/${subjectCode}/notes`, '_blank')}
-                  className="w-full h-full py-2.5 px-3 bg-emerald-800 hover:bg-emerald-700 text-white border border-emerald-700/45 font-medium text-sm transition-all duration-200 flex items-center justify-center gap-2 rounded-lg"
+            <div className="mb-4">
+              <div className="bg-surface border border-surface-border/60 rounded-xl p-2.5">
+                <Link
+                  href={`/${subjectCode}/notes`}
+                  target="_blank"
+                  className="w-full py-2.5 px-3 bg-emerald-800 hover:bg-emerald-700 text-white border border-emerald-700/45 font-medium text-sm transition-all duration-200 flex items-center justify-center gap-2 rounded-lg"
                 >
                   <BookOpen className="w-4 h-4" />
                   View Notes
-                </button>
+                </Link>
               </div>
-
-              {/* Playlists - Half Width */}
-              {moduleNumbers.length > 0 && (
-                <div className="bg-surface border border-surface-border/60 rounded-xl p-2.5">
-                  <div className="flex flex-wrap gap-2 justify-start">
-                    {moduleNumbers.map((moduleNum) => {
-                      const videoLinks = subjectVideos[moduleNum] || [];
-                      const playlistUrl = createPlaylistUrl(videoLinks);
-                      return playlistUrl ? (
-                        <button
-                          key={moduleNum}
-                          onClick={() => window.open(playlistUrl, '_blank')}
-                          className="flex-[0_0_calc(25%-0.375rem)] py-1.5 px-3 bg-red-600/80 hover:bg-red-500 text-white border border-red-500/30 font-medium text-sm transition-all duration-200 flex items-center justify-center gap-1 rounded-lg"
-                          title={`Module ${moduleNum} (${videoLinks.length} videos)`}
-                        >
-                          <Youtube className="w-3 h-3" />
-                          M{moduleNum}
-                        </button>
-                      ) : null;
-                    })}
-                  </div>
-                </div>
-              )}
             </div>
           )}
 
@@ -784,14 +762,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                 <BookOpen className="w-5 h-5 text-emerald-400" />
                 Study Materials
               </h2>
-              <button
-                onClick={() => router.push(`/${subjectCode}/notes`)}
+              <Link
+                href={`/${subjectCode}/notes`}
                 className="w-full py-3 bg-gradient-to-r from-emerald-900 to-emerald-800 hover:from-emerald-800 hover:to-emerald-700 text-white border border-emerald-700/35 font-semibold transition-all duration-200 flex items-center justify-center gap-2 rounded-xl shadow-md"
               >
                 <BookOpen className="w-5 h-5" />
                 View Notes
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </Link>
             </div>
           )}
 
@@ -870,27 +848,35 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
               )}
 
               {/* Results View Filters */}
-              <div className="mb-6 p-4 bg-surface-dark/60 border border-surface-border/40 rounded-xl">
-                <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
-                  <div className="flex-1 w-full">
-                    <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Filter by Module</label>
-                    <ModuleSelector
-                      modules={availableModules}
-                      selectedModule={selectedModule}
-                      onSelect={handleModuleChange}
-                    />
-                  </div>
-                  <div className="hidden md:block w-px h-10 bg-slate-700/50"></div>
-                  <div className="flex-1 w-full">
-                    <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Filter by Source</label>
-                    <SourceSelector
-                      sources={availableSources}
-                      selectedSource={selectedSource}
-                      onSelect={handleSourceChange}
-                    />
+              {(availableModules.length > 1 || availableSources.length > 1) && (
+                <div className="mb-6 p-4 bg-surface-dark/60 border border-surface-border/40 rounded-xl">
+                  <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
+                    {availableModules.length > 1 && (
+                      <div className="flex-1 w-full">
+                        <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Filter by Module</label>
+                        <ModuleSelector
+                          modules={availableModules}
+                          selectedModule={selectedModule}
+                          onSelect={handleModuleChange}
+                        />
+                      </div>
+                    )}
+                    {availableModules.length > 1 && availableSources.length > 1 && (
+                      <div className="hidden md:block w-px h-10 bg-slate-700/50"></div>
+                    )}
+                    {availableSources.length > 1 && (
+                      <div className="flex-1 w-full">
+                        <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Filter by Source</label>
+                        <SourceSelector
+                          sources={availableSources}
+                          selectedSource={selectedSource}
+                          onSelect={handleSourceChange}
+                        />
+                      </div>
+                    )}
                   </div>
                 </div>
-              </div>
+              )}
 
               <div className="mt-6 mb-6 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                 {/* Search Box */}
@@ -1233,6 +1219,32 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
           {!loading && !quizCompleted && quizState.questions.length > 0 && (
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 pb-28">
               <div className="lg:col-span-9">
+                {/* Mobile-only: module & source selectors above stats */}
+                {(availableModules.length > 1 || availableSources.length > 1) && (
+                  <div className="lg:hidden mb-4 space-y-3 bg-surface border border-surface-border/60 p-4 rounded-xl shadow-card">
+                    {availableModules.length > 1 && (
+                      <div>
+                        <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Module</label>
+                        <ModuleSelector
+                          modules={availableModules}
+                          selectedModule={selectedModule}
+                          onSelect={handleModuleChange}
+                        />
+                      </div>
+                    )}
+                    {availableSources.length > 1 && (
+                      <div className={availableModules.length > 1 ? 'pt-2 border-t border-slate-700/40' : ''}>
+                        <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Source</label>
+                        <SourceSelector
+                          sources={availableSources}
+                          selectedSource={selectedSource}
+                          onSelect={handleSourceChange}
+                        />
+                      </div>
+                    )}
+                  </div>
+                )}
+
                 <div className="mb-4">
                   <div className="mt-4">
                     <QuizStats
@@ -1256,24 +1268,30 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
               </div>
 
               <div className="lg:col-span-3">
-                <div className="mb-6 space-y-4 bg-surface border border-surface-border/60 p-4 rounded-xl shadow-card">
-                  <div>
-                    <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Module</label>
-                    <ModuleSelector
-                      modules={availableModules}
-                      selectedModule={selectedModule}
-                      onSelect={handleModuleChange}
-                    />
+                {(availableModules.length > 1 || availableSources.length > 1) && (
+                  <div className="hidden lg:block mb-6 space-y-4 bg-surface border border-surface-border/60 p-4 rounded-xl shadow-card">
+                    {availableModules.length > 1 && (
+                      <div>
+                        <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Module</label>
+                        <ModuleSelector
+                          modules={availableModules}
+                          selectedModule={selectedModule}
+                          onSelect={handleModuleChange}
+                        />
+                      </div>
+                    )}
+                    {availableSources.length > 1 && (
+                      <div className={availableModules.length > 1 ? 'pt-2 border-t border-slate-700/40' : ''}>
+                        <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Source</label>
+                        <SourceSelector
+                          sources={availableSources}
+                          selectedSource={selectedSource}
+                          onSelect={handleSourceChange}
+                        />
+                      </div>
+                    )}
                   </div>
-                  <div className="pt-2 border-t border-slate-700/40">
-                    <label className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-2">Source</label>
-                    <SourceSelector
-                      sources={availableSources}
-                      selectedSource={selectedSource}
-                      onSelect={handleSourceChange}
-                    />
-                  </div>
-                </div>
+                )}
 
                 <AnswerStatus
                   totalQuestions={quizState.totalQuestions}

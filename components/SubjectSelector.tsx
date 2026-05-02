@@ -11,19 +11,14 @@ import {
 } from 'lucide-react';
 import { getSubjectsByBatch, getDisplayNameForAlias, getIconForCode } from '@/lib/subjectMapping';
 import { useBatch } from '@/contexts/BatchContext';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 import CustomQuizGenerator from './CustomQuizGenerator';
 
 const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) => {
-  const router = useRouter();
   const { selectedBatch, setSelectedBatch } = useBatch();
 
   // Subjects for current batch + term
   const subjectsForTerm = getSubjectsByBatch(selectedBatch, selectedTerm);
-
-  const handleSubjectSelect = (code: string) => {
-    router.push(`/${code}`);
-  };
 
   // Create YouTube playlist URL from video links
   const createPlaylistUrl = (videoLinks: string[]): string => {
@@ -57,22 +52,11 @@ const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) =
     }
   };
 
-  const handleNotesClick = (e: React.MouseEvent, subjectCode: string) => {
-    e.stopPropagation();
-    router.push(`/${subjectCode}/notes`);
-  };
-
   const handleYoutubeClick = async (e: React.MouseEvent, subjectCode: string) => {
-    e.stopPropagation();
     const playlistUrl = await getAllVideosForSubject(subjectCode);
     if (playlistUrl) {
       window.open(playlistUrl, '_blank');
     }
-  };
-
-  const handleQuizClick = (e: React.MouseEvent, subjectCode: string) => {
-    e.stopPropagation();
-    router.push(`/${subjectCode}`);
   };
 
   return (
@@ -86,10 +70,10 @@ const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) =
 
       <div className="space-y-3">
         {subjectsForTerm.map(({ subject, alias }) => (
-          <div
+          <Link
             key={alias.code}
-            className="bg-surface border border-surface-border/60 hover:border-emerald-500/40 rounded-xl transition-all duration-200 cursor-pointer group shadow-card hover:shadow-card-hover"
-            onClick={() => handleSubjectSelect(alias.code)}
+            href={`/${alias.code}`}
+            className="block bg-surface border border-surface-border/60 hover:border-emerald-500/40 rounded-xl transition-all duration-200 cursor-pointer group shadow-card hover:shadow-card-hover"
           >
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-4 sm:p-5">
               {/* Subject Info */}
@@ -114,33 +98,34 @@ const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) =
               {/* Action Buttons + Arrow */}
               <div className="flex items-center justify-end mt-2 sm:mt-0 gap-3 sm:gap-4">
                 <div className="flex items-center gap-1.5">
-                  <button
-                    onClick={(e) => handleNotesClick(e, alias.code)}
+                  <Link
+                    href={`/${alias.code}/notes`}
+                    onClick={(e) => e.stopPropagation()}
                     className="p-2 bg-indigo-600/90 hover:bg-indigo-500 text-white transition-all rounded-lg border border-indigo-500/35"
                     title="View Notes"
                   >
                     <BookOpen className="w-4 h-4" />
-                  </button>
+                  </Link>
                   <button
-                    onClick={(e) => handleYoutubeClick(e, alias.code)}
+                    onClick={(e) => { e.preventDefault(); handleYoutubeClick(e, alias.code); }}
                     className="p-2 bg-red-600/80 hover:bg-red-500 text-white transition-all rounded-lg border border-red-500/30"
                     title="Watch All Videos"
-                    disabled={!getAllVideosForSubject(alias.code)}
                   >
                     <Youtube className="w-4 h-4" />
                   </button>
-                  <button
-                    onClick={(e) => handleQuizClick(e, alias.code)}
+                  <Link
+                    href={`/${alias.code}`}
+                    onClick={(e) => e.stopPropagation()}
                     className="p-2 bg-emerald-700/85 hover:bg-emerald-600 text-white transition-all rounded-lg border border-emerald-600/35"
                     title="Start Quiz"
                   >
                     <ClipboardList className="w-4 h-4" />
-                  </button>
+                  </Link>
                 </div>
                 <ArrowRight className="w-5 h-5 text-slate-600 group-hover:text-emerald-400 group-hover:translate-x-1 transition-all ml-1" />
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
