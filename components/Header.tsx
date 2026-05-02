@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { Linkedin, Menu, X, BarChart2 } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 interface HeaderProps {
     showBackButton?: boolean;
@@ -12,7 +12,6 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/', onBack }) => {
-    const router = useRouter();
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
@@ -21,24 +20,30 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
                 {/* Left section - Back button + Logo */}
                 <div className="flex items-center space-x-2 sm:space-x-3">
                     {showBackButton && (
-                        <button
-                            onClick={() => {
-                                if (onBack) {
-                                    onBack();
-                                } else {
-                                    router.push(backLink);
-                                }
-                            }}
-                            className="p-1.5 sm:p-2 hover:bg-slate-700/60 transition-all duration-200 rounded-lg group mr-1"
-                            aria-label="Back"
-                        >
-                            <svg className="w-5 h-5 sm:w-6 sm:h-6 text-slate-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
-                            </svg>
-                        </button>
+                        onBack ? (
+                            <button
+                                onClick={onBack}
+                                className="p-1.5 sm:p-2 hover:bg-slate-700/60 transition-all duration-200 rounded-lg group mr-1"
+                                aria-label="Back"
+                            >
+                                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-slate-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                                </svg>
+                            </button>
+                        ) : (
+                            <Link
+                                href={backLink}
+                                className="p-1.5 sm:p-2 hover:bg-slate-700/60 transition-all duration-200 rounded-lg group mr-1"
+                                aria-label="Back"
+                            >
+                                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-slate-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                                </svg>
+                            </Link>
+                        )
                     )}
-                    <button
-                        onClick={() => router.push('/')}
+                    <Link
+                        href="/"
                         className="flex items-center space-x-2 sm:space-x-3 group transition-all duration-300 hover:scale-[1.02]"
                     >
                         <div className="relative">
@@ -60,19 +65,19 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
                                 Excel BBA-DBE Exams
                             </span>
                         </div>
-                    </button>
+                    </Link>
                 </div>
 
                 {/* Right section - Desktop */}
                 <div className="hidden sm:flex items-center gap-2">
-                    <button
-                        onClick={() => router.push('/cgpa')}
+                    <Link
+                        href="/cgpa"
                         className="flex items-center gap-2 px-4 py-2 bg-purple-400/10 hover:bg-purple-400/20 text-purple-300 rounded-xl transition-all duration-300 text-sm font-semibold border border-purple-400/25 hover:border-purple-400/40 backdrop-blur-sm"
                         aria-label="CGPA Calculator"
                     >
                         <BarChart2 className="h-4 w-4" />
                         <span>CGPA</span>
-                    </button>
+                    </Link>
                     <a
                         href="https://www.linkedin.com/in/madhavgupta2002/"
                         target="_blank"
