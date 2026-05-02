@@ -61,7 +61,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
 
   const getButtonClass = (option: string) => {
     let baseClass =
-      'w-full p-4 font-semibold text-left transition-all duration-200 border rounded-xl ';
+      'w-full p-3 sm:p-4 text-left transition-all duration-200 border rounded-xl ';
 
     if (!showResult) {
       if (isSelected(option)) {
@@ -133,7 +133,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
             </button>
           )}
         </div>
-        <div className="text-lg sm:text-2xl mb-4 sm:mb-6 text-white prose prose-invert prose-indigo max-w-none">
+        <div className="text-base sm:text-lg mb-4 sm:mb-6 text-white prose prose-invert prose-indigo max-w-none text-justify">
           <ReactMarkdown
             remarkPlugins={[remarkGfm, remarkMath]}
             rehypePlugins={[rehypeKatex]}
@@ -224,7 +224,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
           </button>
         )}
       </div>
-      <div className="text-lg sm:text-2xl mb-4 sm:mb-6 text-white prose prose-invert prose-indigo max-w-none">
+      <div className="text-base sm:text-lg mb-4 sm:mb-6 text-white prose prose-invert prose-indigo max-w-none text-justify">
         <ReactMarkdown
           remarkPlugins={[remarkGfm, remarkMath]}
           rehypePlugins={[rehypeKatex]}
@@ -254,7 +254,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
                     key
                   )}
                 </span>
-                <span className="text-sm sm:text-base prose prose-invert prose-indigo max-w-none prose-p:inline flex-1">
+                <span className="text-sm sm:text-[0.9rem] prose prose-invert prose-indigo max-w-none prose-p:inline flex-1">
                   <ReactMarkdown
                     remarkPlugins={[remarkGfm, remarkMath]}
                     rehypePlugins={[rehypeKatex]}
