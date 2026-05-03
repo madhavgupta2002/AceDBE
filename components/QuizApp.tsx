@@ -728,6 +728,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
           .option-label { font-weight: 600; margin-right: 4px; }
           .answer { font-size: 10px; color: #155724; background: #d4edda; padding: 2px 6px; border-radius: 2px; margin-top: 2px; }
           .subjective-space { margin: 4px 0; color: #999; font-size: 10px; }
+          .footer { position: fixed; bottom: 6mm; right: 8mm; font-size: 8px; color: #aaa; }
           @media print {
             body { padding: 10mm 10mm; }
             .question-block { page-break-inside: avoid; }
@@ -739,6 +740,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
         ${uniqueSources.length > 0 ? `<div class="sources">${uniqueSources.join(' &bull; ')}</div>` : ''}
         <div class="subtitle">${questions.length} Questions${withAnswers ? ' (With Answers)' : ''}</div>
         ${questionsHtml}
+        <div class="footer">acedbe.in</div>
       </body>
       </html>
     `);
