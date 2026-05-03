@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import {
@@ -20,7 +20,7 @@ import SourceSelector from './SourceSelector';
 import UnifiedQuizSelector from './UnifiedQuizSelector';
 import Header from './Header';
 import StopWatch from './StopWatch';
-import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube, Search, History, ArrowRightLeft, Check, Download, Play, Pause } from 'lucide-react';
+import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube, Search, History, ArrowRightLeft, Check, Download, Play, Pause, Printer } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -676,6 +676,95 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     URL.revokeObjectURL(url);
   };
 
+  // Print quiz as PDF/paper
+  const printQuiz = (withAnswers: boolean) => {
+    if (quizState.questions.length === 0) return;
+
+    const title = isCustomMode ? (customTitle || 'Custom AI Quiz') : (subject?.name || 'Quiz');
+    const questions = quizState.questions;
+    const uniqueSources = Array.from(new Set(questions.map(q => q.source).filter(Boolean))) as string[];
+
+    const questionsHtml = questions.map((q, idx) => {
+      const optionsHtml = !q.isSubjective && q.options
+        ? Object.entries(q.options)
+          .filter(([, val]) => val && val.trim() !== '')
+          .map(([key, val]) => {
+            const isCorrect = withAnswers && q.correctAnswer.includes(key);
+            return `<div class="option ${isCorrect ? 'correct' : ''}"><span class="option-label">${key}.</span> ${val}</div>`;
+          }).join('')
+        : '<div class="subjective-space">_______________________________________</div>';
+
+      const answerHtml = withAnswers && q.correctAnswer.length > 0
+        ? `<div class="answer">Answer: ${q.correctAnswer.join(', ')}${q.explanation ? ' — ' + q.explanation.replace(/</g, '&lt;').replace(/>/g, '&gt;') : ''}</div>`
+        : '';
+
+      return `
+        <div class="question-block">
+          <div class="question-text"><strong>Q${idx + 1}.</strong> ${q.text.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</div>
+          <div class="options">${optionsHtml}</div>
+          ${answerHtml}
+        </div>`;
+    }).join('');
+
+    const printWindow = window.open('', '_blank');
+    if (!printWindow) return;
+
+    printWindow.document.write(`
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <title>${title} - Quiz</title>
+        <style>
+          * { margin: 0; padding: 0; box-sizing: border-box; }
+          body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; line-height: 1.4; padding: 15mm 12mm; color: #000; background: #fff; }
+          h1 { font-size: 16px; text-align: center; margin-bottom: 4px; }
+          .sources { text-align: center; font-size: 11px; font-weight: 600; color: #333; margin-bottom: 3px; }
+          .subtitle { text-align: center; font-size: 10px; color: #555; margin-bottom: 12px; border-bottom: 1px solid #ccc; padding-bottom: 8px; }
+          .question-block { margin-bottom: 10px; page-break-inside: avoid; }
+          .question-text { margin-bottom: 4px; font-size: 11px; }
+          .options { margin-left: 16px; margin-bottom: 3px; }
+          .option { margin-bottom: 2px; font-size: 10.5px; padding: 1px 4px; border-radius: 2px; }
+          .option.correct { background: #d4edda; font-weight: 600; }
+          .option-label { font-weight: 600; margin-right: 4px; }
+          .answer { font-size: 10px; color: #155724; background: #d4edda; padding: 2px 6px; border-radius: 2px; margin-top: 2px; }
+          .subjective-space { margin: 4px 0; color: #999; font-size: 10px; }
+          @media print {
+            body { padding: 10mm 10mm; }
+            .question-block { page-break-inside: avoid; }
+          }
+        </style>
+      </head>
+      <body>
+        <h1>${title}</h1>
+        ${uniqueSources.length > 0 ? `<div class="sources">${uniqueSources.join(' &bull; ')}</div>` : ''}
+        <div class="subtitle">${questions.length} Questions${withAnswers ? ' (With Answers)' : ''}</div>
+        ${questionsHtml}
+      </body>
+      </html>
+    `);
+    printWindow.document.close();
+    printWindow.focus();
+    setTimeout(() => printWindow.print(), 300);
+  };
+
+  // State for print menu
+  const [showPrintMenu, setShowPrintMenu] = useState(false);
+  const printMenuRef = useRef<HTMLDivElement>(null);
+
+  // Handle click outside print menu
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (printMenuRef.current && !printMenuRef.current.contains(event.target as Node)) {
+        setShowPrintMenu(false);
+      }
+    };
+
+    if (showPrintMenu) {
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => document.removeEventListener('mousedown', handleClickOutside);
+    }
+  }, [showPrintMenu]);
+
   const confirmGoToMainMenu = () => {
     setShowConfirmation(true);
   };
@@ -937,6 +1026,31 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                   >
                     <Download size={16} /> Export
                   </button>
+                  <div className="relative" ref={printMenuRef}>
+                    <button
+                      onClick={() => setShowPrintMenu(!showPrintMenu)}
+                      className="px-4 py-2 border font-semibold transition-all duration-200 rounded-lg bg-sky-600/80 text-white border-sky-500/40 hover:bg-sky-500 flex items-center gap-2"
+                      title="Print quiz as PDF"
+                    >
+                      <Printer size={16} /> Print
+                    </button>
+                    {showPrintMenu && (
+                      <div className="absolute top-full right-0 mt-1 w-40 bg-slate-800 border border-slate-600 rounded-lg shadow-lg z-50 overflow-hidden">
+                        <button
+                          onClick={() => { printQuiz(false); setShowPrintMenu(false); }}
+                          className="w-full px-3 py-2 text-xs text-left text-slate-200 hover:bg-slate-700 transition-colors"
+                        >
+                          Without Answers
+                        </button>
+                        <button
+                          onClick={() => { printQuiz(true); setShowPrintMenu(false); }}
+                          className="w-full px-3 py-2 text-xs text-left text-slate-200 hover:bg-slate-700 transition-colors border-t border-slate-700"
+                        >
+                          With Answers
+                        </button>
+                      </div>
+                    )}
+                  </div>
                 </div>
               </div>
 
@@ -1314,13 +1428,40 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                   Clear All Responses
                 </button>
 
-                <button
-                  onClick={downloadCurrentQuiz}
-                  className="w-full mt-2 px-4 sm:px-6 py-2 bg-purple-600/80 text-white border border-purple-500/40 font-semibold hover:bg-purple-500 transition-all duration-200 flex items-center justify-center text-sm rounded-xl"
-                  title="Export quiz as JSON file"
-                >
-                  <Download className="mr-2" size={16} /> Export Quiz
-                </button>
+                <div className="flex gap-2 mt-2">
+                  <button
+                    onClick={downloadCurrentQuiz}
+                    className="w-1/2 px-2 sm:px-3 py-2 bg-purple-600/80 text-white border border-purple-500/40 font-semibold hover:bg-purple-500 transition-all duration-200 flex items-center justify-center text-sm rounded-xl"
+                    title="Export quiz as JSON file"
+                  >
+                    <Download className="mr-1" size={14} /> Export
+                  </button>
+                  <div className="relative w-1/2" ref={printMenuRef}>
+                    <button
+                      onClick={() => setShowPrintMenu(!showPrintMenu)}
+                      className="w-full px-2 sm:px-3 py-2 bg-sky-600/80 text-white border border-sky-500/40 font-semibold hover:bg-sky-500 transition-all duration-200 flex items-center justify-center text-sm rounded-xl"
+                      title="Print quiz as PDF"
+                    >
+                      <Printer className="mr-1" size={14} /> Print
+                    </button>
+                    {showPrintMenu && (
+                      <div className="absolute bottom-full left-0 mb-1 w-full bg-slate-800 border border-slate-600 rounded-lg shadow-lg z-50 overflow-hidden">
+                        <button
+                          onClick={() => { printQuiz(false); setShowPrintMenu(false); }}
+                          className="w-full px-3 py-2 text-xs text-left text-slate-200 hover:bg-slate-700 transition-colors"
+                        >
+                          Without Answers
+                        </button>
+                        <button
+                          onClick={() => { printQuiz(true); setShowPrintMenu(false); }}
+                          className="w-full px-3 py-2 text-xs text-left text-slate-200 hover:bg-slate-700 transition-colors border-t border-slate-700"
+                        >
+                          With Answers
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                </div>
 
                 {/* Feedback Box */}
                 {/* <a
