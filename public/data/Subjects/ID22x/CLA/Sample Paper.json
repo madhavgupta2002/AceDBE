@@ -1,0 +1,652 @@
+{
+    "exam_metadata": {
+        "subject_name": "Indian Knowledge Systems",
+        "exam_date": "Sample Paper"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "In the IKS corpus, the 14 Vidhyāsthānas are categorised as a particular kind of source:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Literary source of other (non-Sanātana) traditions",
+                "B": "Core-literary source of Sanātana Dharma",
+                "C": "Oral traditions of various traditions",
+                "D": "Regional literary sources"
+            },
+            "correct_option_label": "B",
+            "explanation": "The 14 Vidyasthanas (which include 4 Vedas, 6 Vedangas, Puranas, Nyaya, Mimamsa, and Dharma Shastra) are considered the foundational, core literary sources of Sanatana Dharma.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Identify the incorrect statement:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "In an oral tradition, the entire knowledge is to be committed to one’s memory since scripting was not allowed.",
+                "B": "In an oral tradition, the entire knowledge is to be committed to one’s memory. Therefore, it needs to be concise and specific.",
+                "C": "In an oral tradition, the entire knowledge is to be committed to one’s memory. Therefore, they were multitasking.",
+                "D": "In an oral tradition, the partial knowledge is to be committed to everyone’s memory since it’s huge and easy."
+            },
+            "correct_option_label": "B",
+            "explanation": "The requirement for knowledge to be concise and specific using Sutras and Mnemonics is a fundamental characteristic of preserving vast amounts of information in an oral tradition.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "Whichever of the following matches correctly?\na Atharvaveda I. Brahma-gaṇa\nb Yajurveda II. udgātṛ-gaṇa\nc Sāmaveda III. hotṛ-gaṇa\n IV. Adhvaryu-gaṇa",
+            "question_type": "MCQ",
+            "options": {
+                "A": "a-IV, b-II, c-I",
+                "B": "a-I, b-IV, c-II",
+                "C": "a-III, b-IV, c-II",
+                "D": "a-III, b-IV, c-III"
+            },
+            "correct_option_label": "B",
+            "explanation": "In Vedic tradition, the Atharvaveda is chanted by the Brahma priest (I), the Yajurveda by the Adhvaryu (IV), and the Samaveda by the Udgata (II).",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "Which of the following statement are false?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Vedas are recognized as heritage by UNESCO.",
+                "B": "Vyāsa organized the Vedic corpus in to four divisions.",
+                "C": "Atharva-veda is the largest among the Vedic repositories.",
+                "D": "Yājñavalkya has propounded the śukla Yajurveda."
+            },
+            "correct_option_label": "C",
+            "explanation": "The Rigveda is the oldest and largest among the Vedic repositories, containing 10,552 mantras spread across 10 Mandalas, not the Atharvaveda.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "Identify the Vedic meter in the given verse: \nउत्क्रामन्तं स्थितं वापि भुञ्जानं वा गुणान्वितम्।\nविमूढा नानुिश्यस्थन्त िश्यस्थन्त ज्ञानचक्षुषः ।।",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Uṣṇik",
+                "B": "Triṣṭup",
+                "C": "Anuṣṭup",
+                "D": "Bṛhati"
+            },
+            "correct_option_label": "C",
+            "explanation": "The verse follows the Anuṣṭup meter. This metrical form consists of four quarters (Padas), with each quarter containing exactly 8 syllables, totaling 32 syllables.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "Jayesh, a country youngster, acknowledges nature for being a gift to humanity every day and prays without fail. Which of the following categories does Jayesh's act fall under?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Bhūta- Yajña",
+                "B": "Brahma-Yajña",
+                "C": "Deva- Yajña",
+                "D": "Manuṣya- Yajña"
+            },
+            "correct_option_label": "C",
+            "explanation": "Deva-Yajña involves honoring and acknowledging the natural forces and deities (such as the sun, rain, and nature) that sustain life, reflecting a daily attitude of gratitude.",
+            "module": 1
+        },
+        {
+            "question_id": "7",
+            "question_text": "Identify the author of magnum opus named pañca-tantra ?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Viṣṇu śarmā",
+                "B": "Nārāyaṇa paṇḍita",
+                "C": "Vedānta deśika",
+                "D": "Bhartṛhari"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Pañca-tantra was composed by Vishnu Sharma as a form of Nīti-śāstra. He used animal fables to teach practical life skills and administrative wisdom to three princes.",
+            "module": 4
+        },
+        {
+            "question_id": "8",
+            "question_text": "Identify the correct statement ?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mahā-purāṇas are 18 in number.",
+                "B": "Rāmāyaṇa consist of 7 parvas.",
+                "C": "Māhā-bhārata are having 18 Kāṇdas.",
+                "D": "Bhagvad-gīta is part of Bhīṣma purāṇa."
+            },
+            "correct_option_label": "A",
+            "explanation": "The Purāṇic repository formally classifies the major foundational texts into 18 Mahā-purāṇas, which collectively encompass over four lakh verses.",
+            "module": 4
+        },
+        {
+            "question_id": "9",
+            "question_text": "The longer days and shorter nights in the northern hemisphere is called:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Uttarāyaṇa",
+                "B": "Dakṣiṇāyaṇa",
+                "C": "Vishuvat",
+                "D": "Lear year day"
+            },
+            "correct_option_label": "A",
+            "explanation": "Uttarāyaṇa marks the period when the Sun moves Northwards from the winter solstice to the summer solstice, causing longer days and shorter nights in the Northern Hemisphere.",
+            "module": 5
+        },
+        {
+            "question_id": "10",
+            "question_text": "Identify the false statement among the following options:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sthala-purāṇas focus on regional glorification",
+                "B": "Upa-purāṇas are smaller than Mahā-purāṇa",
+                "C": "Pañca-lakṣanas are important characteristics for Mahā-purāṇa",
+                "D": "The number of Mahā-purāṇa can not be established with certainty."
+            },
+            "correct_option_label": "D",
+            "explanation": "The number of Mahā-purāṇas is historically well-established and universally recognized within the tradition as exactly 18 major works. Thus, statement D is false.",
+            "module": 4
+        },
+        {
+            "question_id": "11",
+            "question_text": "Sandeep asked Manoj about the key characteristics of Purāṇas. Manoj replied: \"I know for certain that they include stories about creation and dissolution of the universe. They also contain stories about different royal dynasties. But I am not able to remember the rest.\" Can you help Manoj identify the remaining important elements of Purāṇas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Stories of King (Vaṃśānucarita), Dharma-upadeśa (moral teachings)",
+                "B": "Stories of King (Vaṃśānucarita), Time period of different 'Manu' (Manvantara)",
+                "C": "Time period of different 'Manu' (Manvantara), Dharma-upadeśa (moral teachings)",
+                "D": "Stories of King (Vaṃśānucarita), Dharma-upadeśa (moral teachings), Time period of different 'Manu' (Manvantara)."
+            },
+            "correct_option_label": "B",
+            "explanation": "The 5 defining characteristics (Pañca-lakṣaṇa) of a Purāṇa include Sarga, Prati Sarga, Vaṃśa, Manvantara (time cycles of different Manus), and Vaṃśānucarita (stories/genealogies of kings).",
+            "module": 4
+        },
+        {
+            "question_id": "12",
+            "question_text": "As per the Bhūta-saṃkhyā system of nomenclature the correct representation of the word वणण-आश्रम-गुण (varṇa-āśrama-guṇa):",
+            "question_type": "MCQ",
+            "options": {
+                "A": "443",
+                "B": "344",
+                "C": "4507535",
+                "D": "5357054"
+            },
+            "correct_option_label": "B",
+            "explanation": "In Bhūta-Saṃkhyā, entities denote numbers: 'Varna' = 4, 'Ashrama' = 4, and 'Guna' = 3. Because numbers are read from right to left, the sequence translates to 344.",
+            "module": 5
+        },
+        {
+            "question_id": "13",
+            "question_text": "As per the kaṭapayādi system of nomenclature the correct representation of the word िुण्डरिक (puṇḍarika):",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1236",
+                "B": "6321",
+                "C": "1521",
+                "D": "1251"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Kaṭapayādi system associates consonants with digits. The word is deciphered alphabet by alphabet and the resulting numeric sequence is reversed to give the final number 1236.",
+            "module": 5
+        },
+        {
+            "question_id": "14",
+            "question_text": "What is the correct representation of the word ििार्ण(Parārdha):",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1017",
+                "B": "1015",
+                "C": "1016",
+                "D": "1014"
+            },
+            "correct_option_label": "A",
+            "explanation": "In the advanced Indian decimal system mentioned in texts like Lilavati, there are unique names for higher powers of ten up to 10^17, which is known as Parārdha.",
+            "module": 5
+        },
+        {
+            "question_id": "15",
+            "question_text": "Identify the odd ancient measure from the given option:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Paramāṇu",
+                "B": "Ṛtu",
+                "C": "Laghu",
+                "D": "Yava"
+            },
+            "correct_option_label": "D",
+            "explanation": "Paramāṇu, Ṛtu, and Laghu generally relate to measurements of time or spatial length. Yava, however, is an ancient measurement unit for weight based on seeds.",
+            "module": 5
+        },
+        {
+            "question_id": "16",
+            "question_text": "Which Indian Mathematician has developed the symbol of Zero which has been used as independent numeral and computational purposes.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Āryabhaṭṭa",
+                "B": "Bhāskarācārya",
+                "C": "Rāmānujācārya",
+                "D": "Brahmagupta"
+            },
+            "correct_option_label": "D",
+            "explanation": "Brahmagupta (628 CE) formalized the use of zero, providing specific mathematical rules for its usage as an independent numeral and for performing computational operations with it.",
+            "module": 5
+        },
+        {
+            "question_id": "17",
+            "question_text": "Identify the row number of the binary sequence “1010100” array of length 7.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "21",
+                "B": "22",
+                "C": "23",
+                "D": "20"
+            },
+            "correct_option_label": "A",
+            "explanation": "Using Piṅgala's binary logic framework, finding the corresponding row of a binary sequence is part of the 'Uddista' process mapping it to a numeric value based on its array position.",
+            "module": 5
+        },
+        {
+            "question_id": "18",
+            "question_text": "Identify the incorrect statement:\nStatement 1: Only Mānava has composed the Śulba Sūtras.\nStatemnet 2: The ancient Indian name for the science of algebra is bīja-gaṇita.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Statement 1 is correct and Statement 2 is incorrect.",
+                "B": "Statement 2 is correct and Statement 1 is incorrect.",
+                "C": "Both statement are correct.",
+                "D": "Both statement are incorrect."
+            },
+            "correct_option_label": "B",
+            "explanation": "Statement 1 is incorrect because the Śulba Sūtras were composed by multiple ancient scholars like Baudhayana and Apastamba, not just Manava. Statement 2 is entirely correct.",
+            "module": 5
+        },
+        {
+            "question_id": "19",
+            "question_text": "Which Indian Mathematician has given the accurate value of pie upto 17 million places?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mādhava",
+                "B": "Bhāskarācārya",
+                "C": "Rāmānujan",
+                "D": "Āryabhaṭa"
+            },
+            "correct_option_label": "C",
+            "explanation": "Srinivasa Ramanujan generated revolutionary infinite series algorithms for π, which form the mathematical foundation for modern computer calculations of π up to millions of digits.",
+            "module": 5
+        },
+        {
+            "question_id": "20",
+            "question_text": "Match with the correct one:\n1. Trignometry x. bīja-gaṇita.\n2. Algebra Y. śulbasūtra\n3. Rope-gemotry Z. jyotpatti",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1-Y, 2-Z, 3-X",
+                "B": "1-Z, 2-X, 3-Y",
+                "C": "1-Z, 2-Y, 3-Z",
+                "D": "1-Y, 2-X, 3-Z"
+            },
+            "correct_option_label": "C",
+            "explanation": "Jyotpatti deals with chord construction (Trigonometry), Bīja-gaṇita is advanced Algebra, and Śulba-sūtra outlines the rules for Rope Geometry used in building complex altars.",
+            "module": 5
+        },
+        {
+            "question_id": "21",
+            "question_text": "Chooses the correct option based upon the given statement:\nStatement 1: Uddiṣṭa –Given a binary sequence, the process of identifying the corresponding row number in the array (prastāra), directly.\nStatement 2: Naṣṭa - The process of finding the total number of binary sequences(rows) in the prastāra (array).",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Statement 1 is correct and Statement 2 is incorrect.",
+                "B": "Statement 2 is correct and Statement 1 is incorrect.",
+                "C": "Both statement are correct.",
+                "D": "Both statement are incorrect."
+            },
+            "correct_option_label": "A",
+            "explanation": "Uddiṣṭa successfully identifies the row from the sequence. However, Naṣṭa is the reverse process of finding the sequence from a given row number, not the total number of rows.",
+            "module": 5
+        },
+        {
+            "question_id": "22",
+            "question_text": "Identify the incorrect statement:\nStatement 1: The celestial entities are an integral part of all human beings on earth.\nStatement 2: Astronomy is a study of some alien entities but an integral and important aspect of one’s life.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Statement 1 is correct and Statement 2 is incorrect.",
+                "B": "Statement 2 is correct and Statement 1 is incorrect.",
+                "C": "Both statement are correct.",
+                "D": "Both statement are incorrect."
+            },
+            "correct_option_label": "D",
+            "explanation": "In Indian astronomy, celestial bodies are viewed as enlivening forces mutually dependent on Earth, so framing them merely as alien entities contradicts the philosophical premise.",
+            "module": 5
+        },
+        {
+            "question_id": "23",
+            "question_text": "The imaginary point directly above a particular location on the celestial sphere is called as ?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Nadir",
+                "B": "Zenith",
+                "C": "Ecliptic",
+                "D": "Azimuth"
+            },
+            "correct_option_label": "B",
+            "explanation": "In astronomical coordination, the Zenith is defined as the imaginary point directly overhead an observer on the celestial sphere.",
+            "module": 5
+        },
+        {
+            "question_id": "24",
+            "question_text": "The Kṛṣṇa pakṣa (Dark fortnight) is the time interval between ______.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "beginning from Amāvasyā to Pūrṇimā.",
+                "B": "beginning from Pūrṇimā to Amāvasyā.",
+                "C": "From Amāvasyā to Amāvasyā.",
+                "D": "From Pūrṇimā to Pūrṇimā."
+            },
+            "correct_option_label": "B",
+            "explanation": "The Kṛṣṇa Pakṣa (dark/waning phase) begins right after the full moon (Pūrṇimā) and gradually decreases until the new moon (Amāvasyā).",
+            "module": 5
+        },
+        {
+            "question_id": "25",
+            "question_text": "Compute the karaṇa if the longitudes of moon (M) = 20102’ and the sun (S)= 219017’.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "55",
+                "B": "56",
+                "C": "57",
+                "D": "58"
+            },
+            "correct_option_label": "C",
+            "explanation": "A Karana corresponds to half of a Tithi (a 6° separation between the Sun and Moon). Subtracting their longitudes reveals the distinct angular separation matching this index.",
+            "module": 5
+        },
+        {
+            "question_id": "26",
+            "question_text": "Align the Yantras with their respective function.\n1. Cakra-yantra X. Determine timings of rising and settings of signs.\n2. Turīya-yantra Y. Determine longitude and latitude of planet.\n3. Nāḍīvalaya yantra Z. Determine zenith distance and latitude.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1-Y, 2-X, 3-Z",
+                "B": "1-Z, 2-X, 3-Y",
+                "C": "1-X, 2-Y, 3-Z",
+                "D": "1-Y, 2-Z, 3-X"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Cakra-yantra sets longitudes/latitudes, Turīya-yantra evaluates zenith distance and latitude, and Nāḍīvalaya determines precise timings like the Lagna.",
+            "module": 5
+        },
+        {
+            "question_id": "27",
+            "question_text": "Suppose a team of financial experts informs you that it is not safe to invest in a particular company’s stock. They have come to this recommendation based on the study of the financial position of the company, its business model and its future potential. Based on their report, you decide not to go ahead with the investment. What means have the experts and you used to arrive at the knowledge that the stock is not suitable for an investment.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Anumāna (Inference) and Śabda (Testimony) respectively",
+                "B": "Both via Pratyakṣa (Perception)",
+                "C": "Pratyakṣa (Perception) and Śabda (Testimony) respectively",
+                "D": "Both via Anumāna (Inference)"
+            },
+            "correct_option_label": "A",
+            "explanation": "The experts used Anumāna (Inference) based on detailed financial data, while you used Śabda (Testimony from reliable sources) to make the final decision.",
+            "module": 4
+        },
+        {
+            "question_id": "28",
+            "question_text": "Consider the following Anumāna: “Nature is perfect because of being created by God.” The hetvābhāsa which it is committing is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Viruddha (Contradictor)",
+                "B": "Avyabhicāra (Erratic)",
+                "C": "Sādhya-sama (Unproved)",
+                "D": "Prakaraṇa-sama (Restatement of Problem)"
+            },
+            "correct_option_label": "C",
+            "explanation": "This argument commits the Sādhya-sama fallacy, which occurs when an unproved reason (God creating nature) is utilized to attempt to prove a hypothesis (that nature is perfect).",
+            "module": 4
+        },
+        {
+            "question_id": "29",
+            "question_text": "Arrange the following statements in the correct order as per the Nyāya logical framework for\nsetting out an argument\nI: Whatever has wings is a bird, like a crow\nII: Hence, it is a bird\nIII: Penguin is a bird\nIV: The penguin is so\nV: Penguin has wings",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I, III, V, IV, II",
+                "B": "III, V, I, IV, II",
+                "C": "V, III, I, IV, II",
+                "D": "V, I, III, IV, II"
+            },
+            "correct_option_label": "B",
+            "explanation": "Nyāya logic's 5 steps are Pratijñā (Hypothesis: III), Hetu (Reason: V), Udāharaṇa (Example rule: I), Upanaya (Application: IV), and Nigamana (Conclusion: II).",
+            "module": 4
+        },
+        {
+            "question_id": "30",
+            "question_text": "Match the examples with their siddhānta.\nP. Acceptance of 5 sense organs J. Prati- tantra-siddhānta\nQ. Particularly in physics force means F=ma K. Adhikaraṇa- siddhānta\nR. Living beings needs water to survive and several of them living being exist because there is water. L. Abhyupagama- siddhānta\nM. Sarva-tantra-siddhānta",
+            "question_type": "MCQ",
+            "options": {
+                "A": "P-K, Q-M, R-J",
+                "B": "P-M, Q-K, R-L",
+                "C": "P-M, Q-J, R-K",
+                "D": "P-M, Q-J, R-L"
+            },
+            "correct_option_label": "C",
+            "explanation": "5 sense organs is widely accepted (Sarva-tantra), F=ma is a domain-specific tenet (Prati-tantra), and inferring existence due to water is a derived implication (Adhikaraṇa).",
+            "module": 4
+        },
+        {
+            "question_id": "31",
+            "question_text": "Which of the following correctly describes the 5-step approach of deductive/inductive logic.\nP Pratijñā (Development of Proposition)\nQ Udāharaṇa (Example for the support of the proposition)\nR Hetu ( Establishing the proposition through reasoning)\nS Nigamana (Restating of the proposition)\nT Upanaya (Validity of the proposition)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "P, Q, R, S, T",
+                "B": "P, R, Q, S, T",
+                "C": "P, Q, R, T, S",
+                "D": "P, R, Q, T, S"
+            },
+            "correct_option_label": "D",
+            "explanation": "The 5 Avayavas of Indian inference logic strictly follow the order of Pratijñā (P), Hetu (R), Udāharaṇa (Q), Upanaya (T), and finally Nigamana (S).",
+            "module": 4
+        },
+        {
+            "question_id": "32",
+            "question_text": "Choose the correct option:\nStatement 1: Adding prefixes in Sanskrit language doesn’t change the meaning and there is also limitation for adding prefixes in the word.\nStatement 2: Prefixes can be added only with verb forms.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Statement 1 is correct and Statement 2 is incorrect.",
+                "B": "Statement 2 is correct and Statement 1 is incorrect.",
+                "C": "Both statement are correct.",
+                "D": "Both statement are incorrect."
+            },
+            "correct_option_label": "B",
+            "explanation": "Upasargas (prefixes) profoundly alter a verb's meaning (to strengthen, improvise, or reverse) and are fundamentally applied to Dhatus (verb roots).",
+            "module": 3
+        },
+        {
+            "question_id": "33",
+            "question_text": "Which of the following is not considered to be tri-muni of Sanskrit grammar ?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Pāṇinī",
+                "B": "Patañjalī",
+                "C": "Kātyāyana",
+                "D": "Piṅgala"
+            },
+            "correct_option_label": "D",
+            "explanation": "The \"Tri-Muni\" of Sanskrit grammar are Pāṇini, Patañjali, and Kātyāyana. Piṅgala is celebrated for his work on metrics and binary logic (Chhandas), not core grammar.",
+            "module": 3
+        },
+        {
+            "question_id": "34",
+            "question_text": "Which of the statement is false considering the structure of Sanskrit language.\nStatement 1: The word generation scheme in Sanskrit language is modular based.\nStatement 2: Language processing and word generation are derivative in nature.\nStatement 3: All suffixes and prefixes should be added simultaneously to generate a word in Sanskrit.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Statement 1 is correct and Statement 2 & 3 are incorrect.",
+                "B": "Statement 1 and 2 is correct and Statement 3 are incorrect.",
+                "C": "Statement 1 and 3 are correct and Statement 2 is incorrect.",
+                "D": "Statement 2 and 3 are incorrect and Statement 1 is correct."
+            },
+            "correct_option_label": "B",
+            "explanation": "Sanskrit word generation applies recursive and rule-based logic. Affixes are added algorithmically in a step-by-step derivational manner, not all simultaneously.",
+            "module": 3
+        },
+        {
+            "question_id": "35",
+            "question_text": "Jayesh is bibliophile, novel writer and good listener. Which component of a language is missing in the given statement.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Receptive skills of sound",
+                "B": "Receptive skills of script",
+                "C": "Productive skills of sound",
+                "D": "Productive skills of script"
+            },
+            "correct_option_label": "C",
+            "explanation": "Being a bibliophile implies Reading, a writer implies Writing, and a listener implies Listening. The missing language dimension is Speaking, which is the Productive skill of sound.",
+            "module": 3
+        },
+        {
+            "question_id": "36",
+            "question_text": "Match the following:\nCriteria Examples\nP. Doer a. hastena\nQ. Receiver b. prātaḥkāle\nR. The locus of action c. bālakāya\nS. Instrument d. Yantrakārakaḥ\nOptions:\n1. P - a, Q - d, R - c, S - b\n2. P - b, Q - a, R - d, S - c\n3. P - c, Q- b, R- a, S- d\n4. P - d, Q- c, R- b, S – a",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1. P - a, Q - d, R - c, S - b",
+                "B": "2. P - b, Q - a, R - d, S - c",
+                "C": "3. P - c, Q- b, R- a, S- d",
+                "D": "4. P - d, Q- c, R- b, S – a"
+            },
+            "correct_option_label": "D",
+            "explanation": "According to the Karaka system: The Doer (Karta) is Yantrakārakaḥ (d), Receiver (Sampradana) is bālakāya (c), Locus (Adhikarana) is prātaḥkāle (b), and Instrument (Karana) is hastena (a).",
+            "module": 3
+        },
+        {
+            "question_id": "37",
+            "question_text": "What does ‘Āyus ̍ in Āyurveda stand for?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Life",
+                "B": "Nityaga",
+                "C": "Health",
+                "D": "Jivitam"
+            },
+            "correct_option_label": "A",
+            "explanation": "'Āyus' translates directly to 'Life' or longevity. Therefore, Āyurveda literally means the \"Science of Life\" and focuses on sustaining living systems.",
+            "module": 8
+        },
+        {
+            "question_id": "38",
+            "question_text": "Which of the following is a part of ̍ Laghu Trāyi ̍?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Caraka saṃhitā",
+                "B": "Aśtānga Hṛdaya",
+                "C": "Mādhava Nidhāna",
+                "D": "Suśruta saṃhitā"
+            },
+            "correct_option_label": "C",
+            "explanation": "Mādhava Nidhāna is one of the three foundational texts that collectively constitute the Laghu Trāyi (Lesser Triad) in the study of Ayurveda.",
+            "module": 8
+        },
+        {
+            "question_id": "39",
+            "question_text": "Which dośa represents the energy pool of motion and movement?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sattva",
+                "B": "Pitta",
+                "C": "Rajas",
+                "D": "Vāta"
+            },
+            "correct_option_label": "D",
+            "explanation": "Vāta, which is composed of the Air and Space elements, governs all aspects of motion, energy flow, and bodily movement.",
+            "module": 8
+        },
+        {
+            "question_id": "40",
+            "question_text": "Indian Psychology borrows the concept on Triguṇa from:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Vedānta",
+                "B": "Sāṃkya",
+                "C": "Āyurveda",
+                "D": "Vaiśeṣika"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Sāṅkhya philosophical school systematized the framework of the three Guṇas (Sattva, Rajas, Tamas) which Indian psychology uses to understand behavior and constitution.",
+            "module": 8
+        },
+        {
+            "question_id": "41",
+            "question_text": "Match the following components of the antaḥkaraṇa with their role in interacting with the world\nI. Provides subjective evaluation of the stimulus A. Citta\nII. Provides a repository of past experiences for analysing external stimulus B. Ahaṃkāra\nIII. Provides a sense of entitlement and agency to the psychological process C. Buddhi",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I-C, II-B, III-A",
+                "B": "I-C, II-A, III-B",
+                "C": "I-A, II-C, III-B",
+                "D": "I-A, II-B, III-C"
+            },
+            "correct_option_label": "B",
+            "explanation": "Citta is the mind-field repository (II-A), Ahaṃkāra provides agency and ownership (III-B), and Buddhi makes decisions and evaluates stimuli (I-C).",
+            "module": 8
+        },
+        {
+            "question_id": "42",
+            "question_text": "The centre of the Vāstu-puruṣa-maṇḍala is known as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mitra",
+                "B": "Aryaman",
+                "C": "Brahmā",
+                "D": "Vivasvān"
+            },
+            "correct_option_label": "C",
+            "explanation": "The sacred central zone of the Vāstu Puruṣa Maṇḍala, meant to align structures with cosmic energy, is known as the Brahmasthala, representing Lord Brahma.",
+            "module": 7
+        },
+        {
+            "question_id": "43",
+            "question_text": "The base platform on which the entire structure rests is known as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Prākāra",
+                "B": "Adhiṣṭhāna",
+                "C": "Vimāna",
+                "D": "Maṇḍapa"
+            },
+            "correct_option_label": "B",
+            "explanation": "In Hindu temple architectural frameworks, the foundational base platform that supports the entire weight of the structure is called the Adhiṣṭhāna.",
+            "module": 7
+        },
+        {
+            "question_id": "44",
+            "question_text": "As per Vāstu-śāstra which element is not considered as Vāstu:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Temple or a Palace (Prāsāda)",
+                "B": "Counch (Śayana)",
+                "C": "Conveyance (Yāna)",
+                "D": "Owner (Yajamāna)"
+            },
+            "correct_option_label": "D",
+            "explanation": "Vāstu encompasses physical constructs like Bhūmi (Earth), Prāsāda (Temples), Yāna (Conveyances), and Śayana (Furniture). The Yajamāna is the human host, not the physical Vāstu.",
+            "module": 7
+        },
+        {
+            "question_id": "45",
+            "question_text": "Match the following:\nA Pādavinyāsa- i Offerings\nB Vāstospati- ii Materials\nC Vastu - iii Site layout",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1. A - ii, B - iii, C - i",
+                "B": "2. A - iii, B - ii, C- i",
+                "C": "3. A - iii, B - i, C - ii",
+                "D": "4. A - ii, B - i, C -iii"
+            },
+            "correct_option_label": "C",
+            "explanation": "Pādavinyāsa refers to the site layout using the Mandala grid (A-iii). Vāstospati concerns offerings and rituals (B-i). Vastu refers to materials and their preparation (C-ii).",
+            "module": 7
+        },
+        {
+            "question_id": "46",
+            "question_text": "Which ancient Indian text mentions three types of houses in the capital city: including Vimana, Harmya, and Vimana?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Atharvaveda",
+                "B": "Matsya Purana",
+                "C": "Ramayana",
+                "D": "Arthashastra of Kautilya"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Ramayana frequently describes the majestic town planning of Ayodhya, including references to towering residential structures like Vimanas and Harmyas.",
+            "module": 7
+        }
+    ]
+}
