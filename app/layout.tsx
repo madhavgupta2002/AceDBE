@@ -5,6 +5,7 @@ import 'katex/dist/katex.min.css';
 import { DarkModeProvider } from '@/contexts/DarkModeContext';
 import { BatchProvider } from '@/contexts/BatchContext';
 import Script from 'next/script';
+import { NavigationProgress } from '@/components/NavigationProgress';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const merriweather = Merriweather({
@@ -134,6 +135,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`${inter.className} bg-gray-900 ${merriweather.variable} ${openSans.variable} ${lora.variable} ${roboto.variable}`}>
+        <NavigationProgress />
         <DarkModeProvider>
           <BatchProvider>
             {children}

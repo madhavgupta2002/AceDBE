@@ -75,7 +75,7 @@ const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) =
             href={`/${alias.code}`}
             className="block bg-surface border border-surface-border/60 hover:border-emerald-500/40 rounded-xl transition-all duration-200 cursor-pointer group shadow-card hover:shadow-card-hover"
           >
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-4 sm:p-5">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-3 sm:p-3.5">
               {/* Subject Info */}
               <div className="flex items-center space-x-3 sm:space-x-4 flex-1 mb-3 sm:mb-0">
                 <div className="bg-emerald-600/90 p-2.5 sm:p-3 rounded-xl group-hover:bg-emerald-500 transition-colors shrink-0 shadow-glow-emerald">
