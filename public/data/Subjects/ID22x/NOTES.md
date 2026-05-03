@@ -1,3 +1,4 @@
+***Indian Knowledge Systems***
 # Module 1: Introduction to the IKS and Vedic Corpus
 
 ## 1.0 Welcome to the Module

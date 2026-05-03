@@ -1,0 +1,568 @@
+{
+    "exam_metadata": {
+        "subject_name": "Indian Knowledge Systems",
+        "exam_date": "Batch 2 Mid Term"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "What distinguishes the Āraṇyakas from the Brāhmaṇas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They focus on philosophical interpretations of rituals",
+                "B": "They contain hymns for rituals",
+                "C": "They are exclusively about warfare",
+                "D": "They discuss political strategies"
+            },
+            "correct_option_label": "A",
+            "explanation": "While Brāhmaṇas provide the technical operating procedures for rituals, the Āraṇyakas focus on the philosophical symbolism of these rituals, intended for study in seclusion.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Which of the following is the purpose of Nītiśāstra?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To teach the history of ancient civilizations",
+                "B": "To lead humans towards a beautiful and happy life",
+                "C": "To document scientific knowledge",
+                "D": "To preserve social customs and practices"
+            },
+            "correct_option_label": "B",
+            "explanation": "Nītiśāstra refers to disciplines that guide human behavior. Its primary purpose is to provide codes of conduct and ethical guidance to lead humans toward a righteous and happy life.",
+            "module": 4
+        },
+        {
+            "question_id": "3",
+            "question_text": "What is the ultimate goal of a debate (Vāda) in the Indian tradition?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To prove one's superiority over the opponent",
+                "B": "To entertain an audience",
+                "C": "To defeat opponents in philosophical battles",
+                "D": "To establish the true nature of knowledge"
+            },
+            "correct_option_label": "D",
+            "explanation": "In the Indian tradition, Vāda (debate) is a mechanism for refining knowledge. Its goal is to collaboratively discern the true nature of the subject, not to defeat an opponent.",
+            "module": 4
+        },
+        {
+            "question_id": "4",
+            "question_text": "How was knowledge primarily preserved in ancient India?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Written manuscripts",
+                "B": "Stone carvings",
+                "C": "Oral transmission",
+                "D": "Printed books"
+            },
+            "correct_option_label": "C",
+            "explanation": "In ancient India, knowledge was preserved and passed down through generations primarily via oral transmission (Guru-śiṣya paramparā) using memory aids like Shlokas and Sutras.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "What is the primary concern of Indian philosophical traditions?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Understanding political systems",
+                "B": "Promoting social structures",
+                "C": "Seeking ultimate happiness",
+                "D": "Developing scientific theories"
+            },
+            "correct_option_label": "C",
+            "explanation": "The ultimate goal of all Indian philosophical systems (Darśana) is the attainment of Mokṣa, which represents liberation from suffering and the realization of infinite, ultimate happiness.",
+            "module": 2
+        },
+        {
+            "question_id": "6",
+            "question_text": "Which of the following is a key characteristic of the Purāṇas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A source of scientific knowledge from ancient times",
+                "B": "A collection of stories, philosophical systems, and societal aspects",
+                "C": "A historical account of medieval India",
+                "D": "An encyclopedic work on ancient India"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Purāṇas serve as broad encyclopedias that blend socio-cultural values, history, and philosophical ideas using stories, making complex concepts accessible to society.",
+            "module": 4
+        },
+        {
+            "question_id": "7",
+            "question_text": "Which ancient text was written by Viṣṇu Śarmā to educate princes?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Hitopadeśa",
+                "B": "Vidura-Nīti",
+                "C": "Pañcatantra",
+                "D": "Nīti-śataka"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Pañcatantra was composed by Vishnu Sharma as a Nīti-śāstra. It uses engaging animal fables to teach life skills and administration to young princes.",
+            "module": 4
+        },
+        {
+            "question_id": "8",
+            "question_text": "What does the term \"Upanaya\" refer to in the process of argumentation in the Indian knowledge framework?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Establishing a relationship between reason and conclusion.",
+                "B": "Providing examples from previous studies to support the hypothesis.",
+                "C": "Ensuring that the current case aligns with prior research.",
+                "D": "Setting forth the hypothesis or claim."
+            },
+            "correct_option_label": "C",
+            "explanation": "In the Nyāya five-step logic framework, Upanaya is the application step. It connects the established general rule to the specific current case being analyzed to ensure alignment.",
+            "module": 4
+        },
+        {
+            "question_id": "9",
+            "question_text": "Why is Pāṇini’s Aṣṭādhyāyī considered computationally significant?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is written in a programming language",
+                "B": "It requires computer simulations for validation",
+                "C": "It incorporates modern computational methods",
+                "D": "It follows a step-by-step derivation process similar to algorithms"
+            },
+            "correct_option_label": "D",
+            "explanation": "Pāṇini's grammar uses sophisticated data structures and recursive logic. Words are generated through a step-by-step derivational process, highly analogous to modern computer algorithms.",
+            "module": 3
+        },
+        {
+            "question_id": "10",
+            "question_text": "Which of the following statements about the five characteristics (Pañcalakṣaṇa) of a purāṇas is INCORRECT?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sarga refers to the creation of the universe, detailing how the cosmos emerged from nothingness.",
+                "B": "Pratisarga describes the destruction and subsequent recreation of the universe, often referred to as Pralaya.",
+                "C": "Vaṃśa refers to the classification of Puranas based on different geographical regions of India.",
+                "D": "Vaṃśānucarita includes genealogies of kings and sages, tracing their lineages and historical narratives."
+            },
+            "correct_option_label": "C",
+            "explanation": "Vaṃśa refers to the genealogies or lineage of gods and rishis, not the geographical classification of the Puranic texts.",
+            "module": 4
+        },
+        {
+            "question_id": "11",
+            "question_text": "Which aspect of life do the Śulba-sūtra mainly address?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Personal health practices",
+                "B": "Measurement and construction for rituals",
+                "C": "Political administration",
+                "D": "Household management"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Śulba-sūtras are manuals within the Kalpa Vedānga. They provide complex rules for the measurement and geometric construction of Vedic sacrificial altars.",
+            "module": 1
+        },
+        {
+            "question_id": "12",
+            "question_text": "Why is it important for new knowledge to align with existing tenets?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To maintain the sanctity of tradition",
+                "B": "To prevent unnecessary confusion and contradictions",
+                "C": "To ensure all knowledge remains unchanged",
+                "D": "To avoid challenges to religious authority"
+            },
+            "correct_option_label": "B",
+            "explanation": "In Indian logic, established tenets (Siddhānta) form a proven framework. Aligning new knowledge with them is necessary to ensure consistent progress and prevent logical contradictions.",
+            "module": 4
+        },
+        {
+            "question_id": "13",
+            "question_text": "What is the primary function of Māheśvara sūtras in Sanskrit grammar?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To define Sanskrit syntax rules",
+                "B": "To organize Sanskrit phonemes systematically",
+                "C": "To list all possible words in Sanskrit",
+                "D": "To group Sanskrit verbs and nouns into categories"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Māheśvara sūtras consists of 14 rules that systematically organize Sanskrit vowels and consonants. They are used to create short mnemonic codes (Pratyaharas) for algorithmic grammar.",
+            "module": 3
+        },
+        {
+            "question_id": "14",
+            "question_text": "What does the term ‘sutra’ refer to in Panini’s Aṣṭādhyāyī?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A short descriptive sentence",
+                "B": "A set of poetic verses",
+                "C": "A concise aphoristic rule",
+                "D": "A religious hymn"
+            },
+            "correct_option_label": "C",
+            "explanation": "A 'sutra' is a highly concise, aphoristic rule formulated for easy memorization. The Aṣṭādhyāyī uses 3,983 such sutras to algorithmically generate the Sanskrit language.",
+            "module": 3
+        },
+        {
+            "question_id": "15",
+            "question_text": "Which Indian philosophy focuses primarily on theistic devotion to Ishvara?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mīmāṁsā",
+                "B": "Nyāya",
+                "C": "Dvaita Vedānta",
+                "D": "Cārvāka"
+            },
+            "correct_option_label": "C",
+            "explanation": "Founded by Madhvācārya, Dvaita Vedānta is a dualistic philosophy emphasizing that liberation is achieved through absolute Bhakti (theistic devotion) towards Lord Viṣṇu (Īśvara).",
+            "module": 2
+        },
+        {
+            "question_id": "16",
+            "question_text": "What is the core purpose of Itihāsas as opposed to Purāṇas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Itihāsas focus on the four Purusharthas, while Purāṇas are encyclopedic in nature",
+                "B": "Itihāsas provide mythical stories, whereas Purāṇas are only historical",
+                "C": "Itihāsas discuss social order, whereas Purāṇas focus on individual duty",
+                "D": "Purāṇas present moral dilemmas, while Itihāsas provide clear answers"
+            },
+            "correct_option_label": "A",
+            "explanation": "Itihāsas (like Ramayana and Mahabharata) are historical epics specifically focused on guiding human behavior across the four Puruṣārthas, whereas Purāṇas act as broad encyclopedias.",
+            "module": 4
+        },
+        {
+            "question_id": "17",
+            "question_text": "A modern legal system often struggles with ethical vs. legal dilemmas. Which of the following texts would provide better insight into handling such dilemmas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rāmāyaṇa, as it presents clear moral choices",
+                "B": "Mahābhārata, as it explores complex ethical situations",
+                "C": "Purāṇa, as they offer a vast collection of stories",
+                "D": "None of the above, as all of them focus on mythology rather than ethics"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Mahābhārata adopts a descriptive approach, deeply exploring shades of gray, complex human emotions, and the consequences of ethical and legal dilemmas.",
+            "module": 4
+        },
+        {
+            "question_id": "18",
+            "question_text": "Which of the following is true about Vyākaraṇa as a Vedāṅgas ?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It deals with the meaning of words in the Vedic texts.",
+                "B": "It provides the grammatical structure necessary for understanding Vedic Sanskrit.",
+                "C": "It outlines the rituals required in Vedic practices.",
+                "D": "It ensures the proper timing of Vedic rituals."
+            },
+            "correct_option_label": "B",
+            "explanation": "Vyākaraṇa is the science of grammar. It provides the rule-based structural logic needed to correctly interpret and preserve the Sanskrit language used in the Vedas.",
+            "module": 1
+        },
+        {
+            "question_id": "19",
+            "question_text": "A student argues that karma determines everything in life and that no action can change one's destiny. How would an Indian philosophical system likely respond?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Agree completely, as all Indian schools support strict determinism.",
+                "B": "Suggest that karma is irrelevant to human actions.",
+                "C": "Disagree, as most schools acknowledge free will alongside past karma.",
+                "D": "Argue that karma applies only to religious individuals."
+            },
+            "correct_option_label": "C",
+            "explanation": "Indian philosophy teaches that while past Karma shapes present conditions, individuals inherently possess free will, allowing them to determine future actions and alter their destiny.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "A student wants to study the logic behind perception and inference. Which Indian school should they explore?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mīmāṁsā",
+                "B": "Advaita Vedānta",
+                "C": "Nyāya",
+                "D": "Sāṅkhya"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Nyāya school, founded by Sage Gautama, specializes in Epistemology. It provides the systematic logical framework for analyzing valid means of knowledge like perception and inference.",
+            "module": 2
+        },
+        {
+            "question_id": "1",
+            "question_text": "What is the ultimate goal of Indian Psychology?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Developing mindfulness",
+                "B": "Enhancing cognitive abilities",
+                "C": "Liberation from ignorance and suffering",
+                "D": "Improving physical health alone"
+            },
+            "correct_option_label": "C",
+            "explanation": "Indian psychology's goal is to remove ignorance (Prajñāparādha) so the individual realizes their true nature (Sat-Chit-Ānanda).",
+            "module": 8
+        },
+        {
+            "question_id": "2",
+            "question_text": "What classification system did Piṅgala use for syllables in Sanskrit prosody?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Anudātta and Udātta",
+                "B": "Saptaka and Tāla",
+                "C": "Laghu and Guru",
+                "D": "Svara and Vyañjana"
+            },
+            "correct_option_label": "C",
+            "explanation": "Piṅgala's Chandaḥ Śāstra classifies syllables as Laghu (short=1) and Guru (long=0), forming the basis of the binary system.",
+            "module": 5
+        },
+        {
+            "question_id": "3",
+            "question_text": "What does Indian Psychology emphasize as the reason for human suffering?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Genetic predisposition",
+                "B": "External environmental factors",
+                "C": "Ignorance of one's true nature",
+                "D": "Lack of education"
+            },
+            "correct_option_label": "C",
+            "explanation": "Suffering arises from not recognizing one's true nature as Sat-Chit-Ānanda, largely due to ignorance and distractions.",
+            "module": 8
+        },
+        {
+            "question_id": "4",
+            "question_text": "Which ancient Indian text describes a method for zinc extraction?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Caraka Saṁhitā",
+                "B": "Rasa-Ratna-Saṁuccaya",
+                "C": "Arthaśāstra",
+                "D": "Suśruta Saṁhitā"
+            },
+            "correct_option_label": "B",
+            "explanation": "The 11th-century text Rasa-Ratna-Saṁuccaya describes the complex downward drift distillation method (Yantra) required for zinc extraction.",
+            "module": 6
+        },
+        {
+            "question_id": "5",
+            "question_text": "How do archaeological sites like Mohenjo-daro and Dholāvīrā contribute to our understanding of ancient Indian town planning?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They show evidence of spontaneous and semi-planned settlements",
+                "B": "They prove that ancient Indians did not have knowledge of structured architecture",
+                "C": "They reveal the use of advanced planning techniques and systematic urban design",
+                "D": "They provide insights into religious structures, not so much about town planning"
+            },
+            "correct_option_label": "C",
+            "explanation": "Sites like Dholavira reveal highly systematic urban layouts, structured architecture, and the presence of 16 large reservoirs for water management.",
+            "module": 6
+        },
+        {
+            "question_id": "6",
+            "question_text": "Which text is considered one of the oldest available on Vāstu-śāstra and was written by Maya?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mānasāra",
+                "B": "Viśvakarmaprakāśa",
+                "C": "Mayamatam",
+                "D": "Kāśyapaśilpa"
+            },
+            "correct_option_label": "C",
+            "explanation": "Mayamatam, attributed to Maya, is considered one of the oldest and most foundational available texts on the science of Vāstu-śāstra.",
+            "module": 7
+        },
+        {
+            "question_id": "7",
+            "question_text": "Which of the following best describes the distinction between town planning and architecture?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Town planning focuses on the efficient use of land for various purposes, while architecture is solely concerned with building design.",
+                "B": "Town planning primarily deals with infrastructure development, while architecture concentrates on the aesthetic aspects of buildings.",
+                "C": "Town planning involves the design of transportation networks, while architecture is centered on constructing residential buildings.",
+                "D": "Town planning encompasses the layout of human settlements and infrastructure, whereas architecture involves the planning and construction of various structures for human use."
+            },
+            "correct_option_label": "D",
+            "explanation": "Town planning provides the systematic layout for settlements and infrastructure, while architecture focuses on designing specific structures like homes and temples within that layout.",
+            "module": 7
+        },
+        {
+            "question_id": "8",
+            "question_text": "What role does \"Agni\" play in Ayurvedic health assessment?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It represents the balance of doshas in the body.",
+                "B": "It refers to the body's digestive fire, which is crucial for metabolism and overall health.",
+                "C": "It is another name for the immune system.",
+                "D": "It describes the strength of a person’s sense organs."
+            },
+            "correct_option_label": "B",
+            "explanation": "Agni refers to the body's digestive fire, which converts food into energy and tissues via Pitta, making it essential for metabolism.",
+            "module": 8
+        },
+        {
+            "question_id": "9",
+            "question_text": "What is the significance of the Brahmastala in the Vāstu Puruṣa Maṇḍala ?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It represents the deity Vishvakarma, the divine architect",
+                "B": "It is the designated place for the construction of fort walls",
+                "C": "It is the sacred central zone, aligning structures with cosmic energy",
+                "D": "It is a separate area designated for water conservation"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Brahmasthala is the central core of the Vāstu Puruṣa Maṇḍala, viewed as a sacred zone to align the structure with cosmic energies.",
+            "module": 7
+        },
+        {
+            "question_id": "10",
+            "question_text": "The requirement that the circular Gārhapatya Agni altar must have the same area as the square Āhavanīya Agni altar suggests an early understanding of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The value of pi (π) and geometric transformations",
+                "B": "Relativity and quantum mechanics",
+                "C": "Calculus and differential equations",
+                "D": "Binary and hexadecimal numbering systems"
+            },
+            "correct_option_label": "A",
+            "explanation": "Equating the area of a circular altar to a square altar demonstrates an advanced early understanding of geometric transformations and the value of π.",
+            "module": 5
+        },
+        {
+            "question_id": "11",
+            "question_text": "How does Indian Psychology define \"liberation\" (moksha)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Detachment from society and responsibilities",
+                "B": "Attaining physical and emotional independence",
+                "C": "astery over circumstances",
+                "D": "Freedom from ignorance and realization of one's true nature"
+            },
+            "correct_option_label": "D",
+            "explanation": "Moksha is defined as the freedom from ignorance and suffering, enabling the realization of one's true divine nature.",
+            "module": 8
+        },
+        {
+            "question_id": "12",
+            "question_text": "How is Indian astronomy distinct from the Western approach?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Indian astronomy treats celestial entities as inert objects without any influence on Earth.",
+                "B": "Indian astronomy considers celestial entities as integral to life and human activities.",
+                "C": "Western astronomy focuses more on the spiritual aspects of celestial bodies.",
+                "D": "Both Indian and Western astronomy have identical interpretations of celestial events."
+            },
+            "correct_option_label": "B",
+            "explanation": "Indian astronomy views celestial bodies as enlivening forces that are mutually dependent on earthly life, rather than just inert physical objects.",
+            "module": 5
+        },
+        {
+            "question_id": "13",
+            "question_text": "Why is there a danger in mechanically applying Western psychological concepts to the Indian context?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Western psychology is universal and does not need modification",
+                "B": "Indian psychology does not recognize behavior as a subject of study",
+                "C": "Psychological behavior is influenced by cultural context, which varies between societies",
+                "D": "Western psychology use scientific methods"
+            },
+            "correct_option_label": "C",
+            "explanation": "Psychological behavior is deeply influenced by cultural context. Mechanically applying Western models ignores the unique cultural frameworks of Indian society.",
+            "module": 8
+        },
+        {
+            "question_id": "14",
+            "question_text": "Which of the following best explains why India’s irrigation and water management systems were advanced?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They were entirely dependent on rainfall",
+                "B": "They were used only for religious purposes",
+                "C": "They provided sustainable solutions for agriculture",
+                "D": "They were medium-scale systems with moderate impact"
+            },
+            "correct_option_label": "C",
+            "explanation": "Systems like the Kallanai dam and Ahar Pyne were highly advanced because they provided long-lasting and sustainable irrigation solutions for agriculture that are still in use.",
+            "module": 6
+        },
+        {
+            "question_id": "15",
+            "question_text": "A psychologist wants to study the impact of meditation on well-being using Indian Psychological principles. Which approach should they take?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Focus only on changes in brain activity",
+                "B": "Measure only emotional responses through surveys",
+                "C": "Integrate objective and subjective experiences, including self-awareness and inner transformation",
+                "D": "Avoid scientific methods and rely solely on scriptures"
+            },
+            "correct_option_label": "C",
+            "explanation": "Indian psychology requires a methodological shift that integrates subjective experiences, self-awareness, and inner transformation with systematic objective study.",
+            "module": 8
+        },
+        {
+            "question_id": "16",
+            "question_text": "How could modern metallurgists benefit from studying Wootz steel?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To create decorative sculptures",
+                "B": "To replace aluminum in aircraft",
+                "C": "To develop new high-strength alloys",
+                "D": "To make cooking utensils"
+            },
+            "correct_option_label": "C",
+            "explanation": "Wootz steel possessed unique high-strength properties (used for Damascus blades), making it a valuable ancient process for inspiring modern high-strength alloy development.",
+            "module": 6
+        },
+        {
+            "question_id": "17",
+            "question_text": "How did the Indian numeral system influence modern computation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It introduced the binary system directly",
+                "B": "It provided the foundation for decimal-based calculations and algorithms",
+                "C": "It eliminated the need for symbols in mathematics",
+                "D": "It was primarily used for religious calculations only"
+            },
+            "correct_option_label": "B",
+            "explanation": "The invention of zero and the decimal place value system formed the robust foundation needed for complex arithmetic and modern computational algorithms.",
+            "module": 5
+        },
+        {
+            "question_id": "18",
+            "question_text": "A person who is highly ambitious, constantly active, and driven by desire is likely dominated by which guna?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sattva",
+                "B": "Rajas",
+                "C": "Tamas",
+                "D": "Ananda"
+            },
+            "correct_option_label": "B",
+            "explanation": "According to the Tri-guṇa system, Rajas is the quality that governs passion, ambition, motion, and constant activity.",
+            "module": 8
+        },
+        {
+            "question_id": "19",
+            "question_text": "The Pythagorean theorem was known in ancient India through:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Euclid's works",
+                "B": "Āryabhaṭīya and Ārya-siddhānta",
+                "C": "Baudhāyana Śulbasūtra",
+                "D": "Bhāskara’s Līlāvatī"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Bhuja-koti-karna-nyaya, which corresponds to the Pythagorean theorem, was extensively documented in the Baudhāyana Śulbasūtra.",
+            "module": 5
+        },
+        {
+            "question_id": "20",
+            "question_text": "A researcher is designing a museum exhibit on ancient Indian metallurgy. Which of the following artifacts would best illustrate the use of alloying technology?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A stone inscription on temple construction",
+                "B": "An iron pillar from a medieval fort",
+                "C": "A terracotta sculpture from the Indus Valley",
+                "D": "A bronze idol from the Chola period"
+            },
+            "correct_option_label": "D",
+            "explanation": "Bronze idols, often created via the Lost Wax casting method with Pañcaloha (five metals), are perfect examples of sophisticated ancient Indian alloying technology.",
+            "module": 6
+        }
+    ]
+}
