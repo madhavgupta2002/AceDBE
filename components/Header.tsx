@@ -107,13 +107,14 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
             {/* Mobile menu dropdown */}
             {mobileMenuOpen && (
                 <div className="sm:hidden border-t border-slate-700/40 bg-[#0b1120]/98 backdrop-blur-xl px-4 py-3 space-y-2">
-                    <button
-                        onClick={() => { router.push('/cgpa'); setMobileMenuOpen(false); }}
+                    <Link
+                        href="/cgpa"
+                        onClick={() => setMobileMenuOpen(false)}
                         className="w-full flex items-center gap-2 px-4 py-2.5 bg-purple-400/10 text-purple-300 rounded-xl text-sm font-semibold border border-purple-400/25"
                     >
                         <BarChart2 className="h-4 w-4" />
                         CGPA Calculator
-                    </button>
+                    </Link>
                     <a
                         href="https://www.linkedin.com/in/madhavgupta2002/"
                         target="_blank"
