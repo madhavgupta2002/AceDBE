@@ -15,7 +15,7 @@
                 "D": "lowest, lowest"
             },
             "correct_option_label": "B",
-            "explanation": "In equilibrium, the market clears at price P^* where QD = QS.\n\nBuyers side: Only buyers with Willingness to Pay \\geq P^* purchase the good. These are the buyers with the highest WTP — they value the good most and are willing to pay at least the market price.\n\nSellers side: Only sellers with Cost \\leq P^* find it profitable to sell. These are the sellers with the lowest costs — they are the most efficient producers.\n\nThis dual condition ensures all mutually beneficial trades are realized and Total Surplus is maximized.",
+            "explanation": "In equilibrium, the market clears at price $P^*$ where QD = QS.\n\nBuyers side: Only buyers with Willingness to Pay $\\geq P^*$ purchase the good. These are the buyers with the highest WTP — they value the good most and are willing to pay at least the market price.\n\nSellers side: Only sellers with Cost $\\leq P^*$ find it profitable to sell. These are the sellers with the lowest costs — they are the most efficient producers.\n\nThis dual condition ensures all mutually beneficial trades are realized and Total Surplus is maximized.",
             "module": 2
         },
         {
@@ -29,7 +29,7 @@
                 "D": "the supply curve is elastic"
             },
             "correct_option_label": "A",
-            "explanation": "When supply shifts right, the equilibrium price falls and quantity rises. The net effect on Total Revenue (TR = P \\times Q) depends on the price elasticity of demand.\n\nCase 1 — Inelastic demand (|PED| < 1): The percentage fall in price exceeds the percentage rise in quantity sold. The price effect dominates, so TR falls.\n\nCase 2 — Elastic demand (|PED| > 1): The percentage rise in quantity exceeds the percentage fall in price. The quantity effect dominates, so TR rises.\n\nConclusion: An increase in supply decreases total producer revenue when demand is inelastic (Option A).",
+            "explanation": "When supply shifts right, the equilibrium price falls and quantity rises. The net effect on Total Revenue (TR = P $\\times$ Q) depends on the price elasticity of demand.\n\nCase 1 — Inelastic demand (|PED| < 1): The percentage fall in price exceeds the percentage rise in quantity sold. The price effect dominates, so TR falls.\n\nCase 2 — Elastic demand (|PED| > 1): The percentage rise in quantity exceeds the percentage fall in price. The quantity effect dominates, so TR rises.\n\nConclusion: An increase in supply decreases total producer revenue when demand is inelastic (Option A).",
             "module": 2
         },
         {
@@ -43,7 +43,7 @@
                 "D": "more information is needed"
             },
             "correct_option_label": "C",
-            "explanation": "Tax incidence depends on the relative elasticities of supply and demand. The more inelastic side of the market bears the larger share of the tax.\n\nGiven: |PED| = 0.5 (demand is inelastic — cigarettes are addictive necessities with no close substitutes).\n\nConsumer's share of tax \\approx \\frac{E_S}{E_S + |E_D|}.\n\nWhen supply is relatively more elastic than demand (|PES| > |PED| = 0.5), the consumer's share is larger.\n\nIntuitively: inelastic demand means consumers cannot easily reduce cigarette purchases even as prices rise, so producers can pass most of the tax on to consumers.\n\nConclusion: Consumers bear the larger burden of the tax.",
+            "explanation": "Tax incidence depends on the relative elasticities of supply and demand. The more inelastic side of the market bears the larger share of the tax.\n\nGiven: |PED| = 0.5 (demand is inelastic — cigarettes are addictive necessities with no close substitutes).\n\nConsumer's share of tax $\\approx \\frac{E_S}{E_S + |E_D|}$.\n\nWhen supply is relatively more elastic than demand (|PES| > |PED| = 0.5), the consumer's share is larger.\n\nIntuitively: inelastic demand means consumers cannot easily reduce cigarette purchases even as prices rise, so producers can pass most of the tax on to consumers.\n\nConclusion: Consumers bear the larger burden of the tax.",
             "module": 2
         },
         {
@@ -57,7 +57,7 @@
                 "D": "0"
             },
             "correct_option_label": "C",
-            "explanation": "Since P is measured in hundreds of rupees, convert the price: P = \\frac{700}{100} = 7.\n\nStep 1: Calculate MBA demand at P = 7.\nQ_m = 10 - 7 = 3 (thousands) = 3,000 units.\n\nStep 2: Calculate undergraduate demand at P = 7.\nQ_a = 20 - 4(7) = 20 - 28 = -8.\nSince quantity demanded cannot be negative, Q_a = 0. (Undergraduates are fully priced out when P > 5, i.e., when the price exceeds Rs 500.)\n\nStep 3: Total quantity demanded.\nQ_{total} = 3,000 + 0 = 3,000 units.",
+            "explanation": "Since P is measured in hundreds of rupees, convert the price: P = $\\frac{700}{100}$ = 7.\n\nStep 1: Calculate MBA demand at P = 7.\n$Q_m$ = 10 - 7 = 3 (thousands) = 3,000 units.\n\nStep 2: Calculate undergraduate demand at P = 7.\n$Q_a$ = 20 - 4(7) = 20 - 28 = -8.\nSince quantity demanded cannot be negative, $Q_a$ = 0. (Undergraduates are fully priced out when P > 5, i.e., when the price exceeds Rs 500.)\n\nStep 3: Total quantity demanded.\n$Q_{total}$ = 3,000 + 0 = 3,000 units.",
             "module": 2
         },
         {
@@ -70,7 +70,7 @@
                 "C": "MBA demand is less elastic than the market demand"
             },
             "correct_option_label": "C",
-            "explanation": "Convert price: P = \\frac{100}{100} = 1.\n\nStep 1: MBA elasticity at P = 1.\nQ_m = 10 - 1 = 9 (thousands).\n\\varepsilon_m = \\left|\\frac{dQ_m}{dP}\\right| \\times \\frac{P}{Q_m} = 1 \\times \\frac{1}{9} \\approx 0.111.\n\nStep 2: Market demand at P = 1 (since P = 1 < 5, both types buy).\nQ_{total} = (10 - P) + (20 - 4P) = 30 - 5P = 30 - 5(1) = 25 (thousands).\n\\varepsilon_{market} = \\left|\\frac{dQ}{dP}\\right| \\times \\frac{P}{Q} = 5 \\times \\frac{1}{25} = 0.200.\n\nStep 3: Compare elasticities.\n\\varepsilon_m = 0.111 < \\varepsilon_{market} = 0.200.\n\nMBA demand is less elastic than market demand at P = Rs 100.",
+            "explanation": "Convert price: P = $\\frac{100}{100}$ = 1.\n\nStep 1: MBA elasticity at P = 1.\n$Q_m$ = 10 - 1 = 9 (thousands).\n$\\varepsilon_m$ = $\\left|\\frac{dQ_m}{dP}\\right| \\times \\frac{P}{Q_m}$ = 1 $\\times \\frac{1}{9} \\approx$ 0.111.\n\nStep 2: Market demand at P = 1 (since P = 1 < 5, both types buy).\n$Q_{total}$ = (10 - P) + (20 - 4P) = 30 - 5P = 30 - 5(1) = 25 (thousands).\n$\\varepsilon_{market}$ = $\\left|\\frac{dQ}{dP}\\right| \\times \\frac{P}{Q}$ = 5 $\\times \\frac{1}{25}$ = 0.200.\n\nStep 3: Compare elasticities.\n$\\varepsilon_m$ = 0.111 < $\\varepsilon_{market}$ = 0.200.\n\nMBA demand is less elastic than market demand at P = Rs 100.",
             "module": 2
         },
         {
@@ -84,7 +84,7 @@
                 "D": "None of the above"
             },
             "correct_option_label": "A",
-            "explanation": "Since MC = 0, revenue equals profit. Evaluate revenue at each possible uniform price:\n\nAt P = 120: Only High types buy (WTP \\geq 120).\nTR = 120 \\times 50 = 6,000.\n\nAt P = 60: High and Medium types buy (WTP \\geq 60).\nTR = 60 \\times (50 + 30) = 60 \\times 80 = 4,800.\n\nAt P = 20: All types buy.\nTR = 20 \\times (50 + 30 + 20) = 20 \\times 100 = 2,000.\n\nRevenue is maximized at P = 120 with TR = 6,000.",
+            "explanation": "Since MC = 0, revenue equals profit. Evaluate revenue at each possible uniform price:\n\nAt P = 120: Only High types buy (WTP $\\geq$ 120).\nTR = 120 $\\times$ 50 = 6,000.\n\nAt P = 60: High and Medium types buy (WTP $\\geq$ 60).\nTR = 60 $\\times$ (50 + 30) = 60 $\\times$ 80 = 4,800.\n\nAt P = 20: All types buy.\nTR = 20 $\\times$ (50 + 30 + 20) = 20 $\\times$ 100 = 2,000.\n\nRevenue is maximized at P = 120 with TR = 6,000.",
             "module": 4
         },
         {
@@ -112,7 +112,7 @@
                 "D": "120 to High type, 20 to Medium, and 20 to Low type"
             },
             "correct_option_label": "C",
-            "explanation": "The firm can identify High types but cannot distinguish Medium from Low types.\n\nFor High types (50 consumers, WTP = 120):\nCharge P = 120 (their full WTP). Revenue = 120 \\times 50 = 6,000.\n\nFor the indistinguishable Medium + Low group (30 + 20 = 50 consumers):\n- At P = 60: Only Medium types buy (WTP \\geq 60). Revenue = 60 \\times 30 = 1,800.\n- At P = 20: Both Medium and Low types buy. Revenue = 20 \\times 50 = 1,000.\n\nCharging P = 60 to the entire group maximizes revenue from this segment (1,800 > 1,000).\n\nRevenue-maximizing prices: 120 to High, 60 to Medium, and 60 to Low types.",
+            "explanation": "The firm can identify High types but cannot distinguish Medium from Low types.\n\nFor High types (50 consumers, WTP = 120):\nCharge P = 120 (their full WTP). Revenue = 120 $\\times$ 50 = 6,000.\n\nFor the indistinguishable Medium + Low group (30 + 20 = 50 consumers):\n- At P = 60: Only Medium types buy (WTP $\\geq$ 60). Revenue = 60 $\\times$ 30 = 1,800.\n- At P = 20: Both Medium and Low types buy. Revenue = 20 $\\times$ 50 = 1,000.\n\nCharging P = 60 to the entire group maximizes revenue from this segment (1,800 > 1,000).\n\nRevenue-maximizing prices: 120 to High, 60 to Medium, and 60 to Low types.",
             "module": 4
         },
         {
@@ -126,7 +126,7 @@
                 "D": "none of the above"
             },
             "correct_option_label": "C",
-            "explanation": "At the competitive market equilibrium (P^*, Q^*):\n- All buyers with WTP \\geq P^* purchase the good (goods go to those who value them most).\n- All sellers with cost \\leq P^* produce (production by the most efficient firms).\n- All mutually beneficial trades are realized — no profitable trade is left unexploited.\n\nTotal Surplus = CS + PS = Value to buyers - Cost to sellers.\n\nAt equilibrium, no reallocation can make one party better off without making another worse off (Pareto efficiency). Therefore, Total Surplus is maximized at the competitive equilibrium.",
+            "explanation": "At the competitive market equilibrium ($P^*, Q^*$):\n- All buyers with WTP $\\geq P^*$ purchase the good (goods go to those who value them most).\n- All sellers with cost $\\leq P^*$ produce (production by the most efficient firms).\n- All mutually beneficial trades are realized — no profitable trade is left unexploited.\n\nTotal Surplus = CS + PS = Value to buyers - Cost to sellers.\n\nAt equilibrium, no reallocation can make one party better off without making another worse off (Pareto efficiency). Therefore, Total Surplus is maximized at the competitive equilibrium.",
             "module": 2
         },
         {
@@ -140,7 +140,7 @@
                 "D": "16"
             },
             "correct_option_label": "B",
-            "explanation": "Step 1: Find the minimum supply price (price at which Q_S = 0).\n0 = -\\frac{4}{3} + \\frac{4}{3}P \\Rightarrow \\frac{4}{3}P = \\frac{4}{3} \\Rightarrow P_{min} = 1.\n\nStep 2: Find quantity supplied at P = 4.\nQ_S = -\\frac{4}{3} + \\frac{4}{3}(4) = -\\frac{4}{3} + \\frac{16}{3} = \\frac{12}{3} = 4.\n\nStep 3: Calculate Producer Surplus (area of the triangle below the price and above the supply curve).\nPS = \\frac{1}{2} \\times (P - P_{min}) \\times Q = \\frac{1}{2} \\times (4 - 1) \\times 4 = \\frac{1}{2} \\times 3 \\times 4 = 6.",
+            "explanation": "Step 1: Find the minimum supply price (price at which $Q_S$ = 0).\n0 = -$\\frac{4}{3}$ + $\\frac{4}{3}P \\Rightarrow \\frac{4}{3}P$ = $\\frac{4}{3} \\Rightarrow P_{min}$ = 1.\n\nStep 2: Find quantity supplied at P = 4.\n$Q_S$ = -$\\frac{4}{3}$ + $\\frac{4}{3}(4)$ = -$\\frac{4}{3}$ + $\\frac{16}{3}$ = $\\frac{12}{3}$ = 4.\n\nStep 3: Calculate Producer Surplus (area of the triangle below the price and above the supply curve).\nPS = $\\frac{1}{2} \\times$ (P - $P_{min}) \\times$ Q = $\\frac{1}{2} \\times$ (4 - 1) $\\times$ 4 = $\\frac{1}{2} \\times$ 3 $\\times$ 4 = 6.",
             "module": 2
         },
         {
@@ -168,7 +168,7 @@
                 "D": "market supply curve is perfectly elastic"
             },
             "correct_option_label": "A",
-            "explanation": "The tax burden falls more heavily on the more inelastic side of the market.\n\nSeller's share of tax \\approx \\frac{|E_D|}{E_S + |E_D|}.\n\nIf supply is relatively more inelastic than demand (E_S < |E_D|): Sellers have fewer alternatives — they cannot easily shift production to other goods when their net price falls. They absorb a larger share of the tax through a lower net price received.\n\nOption A (supply more inelastic than demand) means sellers bear the larger burden.\n\nNote: Options C and D describe conditions where consumers bear most of the burden (perfectly inelastic demand or perfectly elastic supply).",
+            "explanation": "The tax burden falls more heavily on the more inelastic side of the market.\n\nSeller's share of tax $\\approx \\frac{|E_D|}{E_S + |E_D|}$.\n\nIf supply is relatively more inelastic than demand ($E_S < |E_D|$): Sellers have fewer alternatives — they cannot easily shift production to other goods when their net price falls. They absorb a larger share of the tax through a lower net price received.\n\nOption A (supply more inelastic than demand) means sellers bear the larger burden.\n\nNote: Options C and D describe conditions where consumers bear most of the burden (perfectly inelastic demand or perfectly elastic supply).",
             "module": 2
         },
         {
@@ -182,7 +182,7 @@
                 "D": "$60"
             },
             "correct_option_label": "A",
-            "explanation": "Step 1: Find Total Cost at Q = 100.\nTC(100) = ATC \\times Q = 0.25 \\times 100 = \\$25.\n\nStep 2: Find Total Variable Cost at Q = 100 (since MC is constant, TVC = MC \\times Q).\nTVC(100) = 0.10 \\times 100 = \\$10.\n\nStep 3: Solve for Fixed Cost.\nFC = TC - TVC = 25 - 10 = \\$15.\n\nStep 4: Find Total Cost at Q = 50.\nTC(50) = FC + MC \\times Q = 15 + 0.10 \\times 50 = 15 + 5 = \\$20.",
+            "explanation": "Step 1: Find Total Cost at Q = 100.\nTC(100) = ATC $\\times$ Q = 0.25 $\\times$ 100 = \\$25.\n\nStep 2: Find Total Variable Cost at Q = 100 (since MC is constant, TVC = MC $\\times$ Q).\nTVC(100) = 0.10 $\\times$ 100 = \\$10.\n\nStep 3: Solve for Fixed Cost.\nFC = TC - TVC = 25 - 10 = \\$15.\n\nStep 4: Find Total Cost at Q = 50.\nTC(50) = FC + MC $\\times$ Q = 15 + 0.10 $\\times$ 50 = 15 + 5 = \\$20.",
             "module": 3
         },
         {
@@ -196,7 +196,7 @@
                 "D": "information is not sufficient"
             },
             "correct_option_label": "A",
-            "explanation": "From Q16, FC = \\$15. The ATC function is:\nATC(Q) = \\frac{FC}{Q} + MC = \\frac{15}{Q} + 0.10.\n\nAt Q = 50: ATC = \\frac{15}{50} + 0.10 = 0.30 + 0.10 = \\$0.40.\nAt Q = 100: ATC = \\frac{15}{100} + 0.10 = 0.15 + 0.10 = \\$0.25.\n\nAs Q increases, \\frac{15}{Q} decreases, so ATC is always falling.\n\nKey rule: When MC < ATC, the ATC curve is falling. Here MC = \\$0.10 is always below ATC at both output levels, so ATC is falling at both Q = 50 and Q = 100.",
+            "explanation": "From Q16, FC = \\$15. The ATC function is:\nATC(Q) = $\\frac{FC}{Q}$ + MC = $\\frac{15}{Q}$ + 0.10.\n\nAt Q = 50: ATC = $\\frac{15}{50}$ + 0.10 = 0.30 + 0.10 = \\$0.40.\nAt Q = 100: ATC = $\\frac{15}{100}$ + 0.10 = 0.15 + 0.10 = \\$0.25.\n\nAs Q increases, $\\frac{15}{Q}$ decreases, so ATC is always falling.\n\nKey rule: When MC < ATC, the ATC curve is falling. Here MC = \\$0.10 is always below ATC at both output levels, so ATC is falling at both Q = 50 and Q = 100.",
             "module": 3
         },
         {
@@ -224,7 +224,7 @@
                 "D": "At the profit maximizing output, price equals marginal cost"
             },
             "correct_option_label": "D",
-            "explanation": "Evaluate each statement:\n\nA (True): Profit maximization always requires MR = MC — this holds for all market structures.\n\nB (True): AR = \\frac{TR}{Q} = \\frac{P \\times Q}{Q} = P. Average revenue always equals price.\n\nC (True): A monopolist is the sole seller, so it faces the entire downward-sloping market demand curve.\n\nD (False): At the monopolist's profit-maximizing output, MR = MC, and the price is set above MC using the demand curve. For a monopolist, P > MR = MC. Setting P = MC is the condition for a perfectly competitive market, not a monopoly.\n\nThe statement that is NOT true is D.",
+            "explanation": "Evaluate each statement:\n\nA (True): Profit maximization always requires MR = MC — this holds for all market structures.\n\nB (True): $AR = \\frac{TR}{Q} = \\frac{P \\times Q}{Q} = P$. Average revenue always equals price.\n\nC (True): A monopolist is the sole seller, so it faces the entire downward-sloping market demand curve.\n\nD (False): At the monopolist's profit-maximizing output, MR = MC, and the price is set above MC using the demand curve. For a monopolist, P > MR = MC. Setting P = MC is the condition for a perfectly competitive market, not a monopoly.\n\nThe statement that is NOT true is D.",
             "module": 4
         },
         {
@@ -251,7 +251,7 @@
                 "D": "where the elasticity is 0"
             },
             "correct_option_label": "A",
-            "explanation": "Total Revenue TR = P \\times Q. Along a linear demand curve:\n- On the upper half (elastic portion, |PED| > 1): lowering price increases TR (quantity rises more than price falls).\n- On the lower half (inelastic portion, |PED| < 1): raising price increases TR (price rises more than quantity falls).\n\nTR is maximized exactly at the midpoint of the demand curve, where |PED| = 1 (unit elastic). This is also the point where Marginal Revenue = 0 (since MR = 0 is the condition for maximum TR).\n\nAt the quantity-axis intercept, P = 0, so TR = 0. At the price-axis intercept, Q = 0, so TR = 0. Both endpoints give TR = 0.",
+            "explanation": "Total Revenue TR = P $\\times$ Q. Along a linear demand curve:\n- On the upper half (elastic portion, |PED| > 1): lowering price increases TR (quantity rises more than price falls).\n- On the lower half (inelastic portion, |PED| < 1): raising price increases TR (price rises more than quantity falls).\n\nTR is maximized exactly at the midpoint of the demand curve, where |PED| = 1 (unit elastic). This is also the point where Marginal Revenue = 0 (since MR = 0 is the condition for maximum TR).\n\nAt the quantity-axis intercept, P = 0, so TR = 0. At the price-axis intercept, Q = 0, so TR = 0. Both endpoints give TR = 0.",
             "module": 2
         },
         {
@@ -307,7 +307,7 @@
                 "D": "Break even"
             },
             "correct_option_label": "B",
-            "explanation": "In the short run, fixed costs must be paid regardless of whether the firm produces or shuts down.\n\nShutdown rule: Shut down only if P < AVC (i.e., the firm cannot even cover its variable costs).\n\nIf P \\geq AVC (variable costs are fully covered):\n- By producing: the firm pays all variable costs and uses the remaining revenue to partially offset fixed costs, reducing its total loss.\n- By shutting down: the firm earns zero revenue but still pays all fixed costs — a larger loss.\n\nFormally: Loss from producing = FC - (TR - TVC). Since TR \\geq TVC, this loss is less than FC (the shutdown loss).\n\nConclusion: The firm minimizes its loss by continuing to produce in the short run.",
+            "explanation": "In the short run, fixed costs must be paid regardless of whether the firm produces or shuts down.\n\nShutdown rule: Shut down only if P < AVC (i.e., the firm cannot even cover its variable costs).\n\nIf P $\\geq$ AVC (variable costs are fully covered):\n- By producing: the firm pays all variable costs and uses the remaining revenue to partially offset fixed costs, reducing its total loss.\n- By shutting down: the firm earns zero revenue but still pays all fixed costs — a larger loss.\n\nFormally: Loss from producing = FC - (TR - TVC). Since TR $\\geq$ TVC, this loss is less than FC (the shutdown loss).\n\nConclusion: The firm minimizes its loss by continuing to produce in the short run.",
             "module": 3
         },
         {
@@ -321,7 +321,7 @@
                 "D": "the elasticity equals zero."
             },
             "correct_option_label": "A",
-            "explanation": "For a linear inverse demand curve P = A - BQ, the price elasticity of demand at any point (P, Q) is:\n|PED| = \\frac{1}{B} \\times \\frac{P}{Q}.\n\nAs we move down the demand curve:\n- P decreases (numerator falls).\n- Q increases (denominator rises).\n- The ratio \\frac{P}{Q} decreases.\n\nTherefore, |PED| decreases as price falls.\n\nInterpretation: At low prices, the base is small relative to the absolute price change, so a given price cut represents a smaller percentage change, making demand less responsive (less elastic).",
+            "explanation": "For a linear inverse demand curve P = A - BQ, the price elasticity of demand at any point (P, Q) is:\n|PED| = $\\frac{1}{B} \\times \\frac{P}{Q}.$\n\nAs we move down the demand curve:\n- P decreases (numerator falls).\n- Q increases (denominator rises).\n- The ratio $\\frac{P}{Q}$ decreases.\n\nTherefore, |PED| decreases as price falls.\n\nInterpretation: At low prices, the base is small relative to the absolute price change, so a given price cut represents a smaller percentage change, making demand less responsive (less elastic).",
             "module": 2
         },
         {
@@ -334,7 +334,7 @@
                 "C": "Effective price ceiling creates an excess supply"
             },
             "correct_option_label": "C",
-            "explanation": "A binding (effective) price ceiling is set below the equilibrium price: P_C < P^*.\n\nStatement A (True): At P_C < P^*, sellers receive a lower price per unit, shrinking the area of producer surplus below the market price and above the supply curve. Producer surplus decreases.\n\nStatement B (True): At P_C: Quantity demanded (QD at P_C) > Quantity supplied (QS at P_C). This creates a shortage, i.e., excess demand.\n\nStatement C (False): A price ceiling does not create excess supply. It creates excess demand (shortage) because the artificially low price encourages more buying but discourages production. Excess supply (a surplus) results from a price floor set above the equilibrium price.\n\nThe false statement is C.",
+            "explanation": "A binding (effective) price ceiling is set below the equilibrium price: $P_C < P^*$.\n\nStatement A (True): At $P_C < P^*$, sellers receive a lower price per unit, shrinking the area of producer surplus below the market price and above the supply curve. Producer surplus decreases.\n\nStatement B (True): At $P_C$: Quantity demanded (QD at $P_C$) > Quantity supplied (QS at $P_C$). This creates a shortage, i.e., excess demand.\n\nStatement C (False): A price ceiling does not create excess supply. It creates excess demand (shortage) because the artificially low price encourages more buying but discourages production. Excess supply (a surplus) results from a price floor set above the equilibrium price.\n\nThe false statement is C.",
             "module": 2
         },
         {
@@ -348,7 +348,7 @@
                 "D": "Q=25,P=40"
             },
             "correct_option_label": "B",
-            "explanation": "Step 1: Set MR = MC to find profit-maximizing quantity.\n120 - 4Q = 4Q\n120 = 8Q\nQ_M = 15.\n\nStep 2: Substitute Q_M = 15 into the demand curve to find price.\nP_M = 120 - 2(15) = 120 - 30 = 90.\n\nMonopoly equilibrium: Q_M = 15, P_M = 90.",
+            "explanation": "Step 1: Set MR = MC to find profit-maximizing quantity.\n120 - 4Q = 4Q\n120 = 8Q\n$Q_M$ = 15.\n\nStep 2: Substitute $Q_M$ = 15 into the demand curve to find price.\n$P_M$ = 120 - 2(15) = 120 - 30 = 90.\n\nMonopoly equilibrium: $Q_M$ = 15, $P_M$ = 90.",
             "module": 4
         },
         {
@@ -362,7 +362,7 @@
                 "D": "$600"
             },
             "correct_option_label": "B",
-            "explanation": "Step 1: Calculate Total Revenue at Q = 15, P = 90.\nTR = P \\times Q = 90 \\times 15 = 1,350.\n\nStep 2: Calculate Total Cost at Q = 15.\nTC = 100 + 2(15)^2 = 100 + 2(225) = 100 + 450 = 550.\n\nStep 3: Calculate Profit.\n\\pi = TR - TC = 1,350 - 550 = \\$800.",
+            "explanation": "Step 1: Calculate Total Revenue at Q = 15, P = 90.\nTR = P $\\times$ Q = 90 $\\times$ 15 = 1,350.\n\nStep 2: Calculate Total Cost at Q = 15.\nTC = 100 + 2(15)^2 = 100 + 2(225) = 100 + 450 = 550.\n\nStep 3: Calculate Profit.\n$\\pi$ = TR - TC = 1,350 - 550 = \\$800.",
             "module": 4
         },
         {
@@ -376,7 +376,7 @@
                 "D": "Q = 35,P = 20"
             },
             "correct_option_label": "A",
-            "explanation": "In perfect competition, each firm is a price taker and produces where P = MC.\n\nStep 1: Set P = MC.\n120 - 2Q = 4Q\n120 = 6Q\nQ^* = 20.\n\nStep 2: Find equilibrium price by substituting Q^* = 20 into the demand curve.\nP^* = 120 - 2(20) = 120 - 40 = 80.\n\nCompetitive equilibrium: Q^* = 20, P^* = 80.",
+            "explanation": "In perfect competition, each firm is a price taker and produces where P = MC.\n\nStep 1: Set P = MC.\n120 - 2Q = 4Q\n120 = 6Q\n$Q^* = 20$.\n\nStep 2: Find equilibrium price by substituting $Q^*$ = 20 into the demand curve.\n$P^* = 120 - 2(20) = 120 - 40 = 80$.\n\nCompetitive equilibrium: $Q^*$ = 20, $P^*$ = 80.",
             "module": 3
         },
         {
@@ -390,7 +390,7 @@
                 "D": "$350"
             },
             "correct_option_label": "C",
-            "explanation": "Step 1: Calculate Total Revenue at Q = 20, P = 80.\nTR = P \\times Q = 80 \\times 20 = 1,600.\n\nStep 2: Calculate Total Cost at Q = 20.\nTC = 100 + 2(20)^2 = 100 + 2(400) = 100 + 800 = 900.\n\nStep 3: Calculate Profit.\n\\pi = TR - TC = 1,600 - 900 = \\$700.",
+            "explanation": "Step 1: Calculate Total Revenue at Q = 20, P = 80.\nTR = P $\\times$ Q = 80 $\\times$ 20 = 1,600.\n\nStep 2: Calculate Total Cost at Q = 20.\nTC = 100 + 2(20)^2 = 100 + 2(400) = 100 + 800 = 900.\n\nStep 3: Calculate Profit.\n$\\pi$ = TR - TC = 1,600 - 900 = \\$700.",
             "module": 3
         },
         {
@@ -404,7 +404,7 @@
                 "D": "$25"
             },
             "correct_option_label": "D",
-            "explanation": "The Deadweight Loss (DWL) under monopoly is the area of the triangle between the monopoly output and the competitive output.\n\nKey values:\nMonopoly: Q_M = 15, P_M = 90.\nCompetition: Q^* = 20, P^* = 80.\n\nStep 1: Identify the base and height of the DWL triangle.\nBase = Q^* - Q_M = 20 - 15 = 5.\nHeight = P_M - P^* = 90 - 80 = 10.\n\nStep 2: Calculate DWL.\nDWL = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 5 \\times 10 = 25.\n\nThis represents the value of trades that would have occurred under competition but do not occur under monopoly due to the restricted output.",
+            "explanation": "The Deadweight Loss (DWL) under monopoly is the area of the triangle between the monopoly output and the competitive output.\n\nKey values:\nMonopoly: $Q_M$ = 15, $P_M$ = 90.\nCompetition: $Q^*$ = 20, $P^*$ = 80.\n\nStep 1: Identify the base and height of the DWL triangle.\nBase = $Q^* - Q_M$ = 20 - 15 = 5.\nHeight = $P_M - P^*$ = 90 - 80 = 10.\n\nStep 2: Calculate DWL.\nDWL = $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$ = $\\frac{1}{2} \\times$ 5 $\\times$ 10 = 25.\n\nThis represents the value of trades that would have occurred under competition but do not occur under monopoly due to the restricted output.",
             "module": 4
         },
         {
@@ -418,7 +418,7 @@
                 "D": "₹350"
             },
             "correct_option_label": "A",
-            "explanation": "Step 1: Find equilibrium quantity at P = 30.\n30 = 50 - 0.5Q\n0.5Q = 20\nQ = 40.\n\nStep 2: Find the maximum willingness to pay (P-intercept of the demand curve, at Q = 0).\nP_{max} = 50.\n\nStep 3: Calculate Consumer Surplus (area of the triangle below the demand curve and above the price).\nCS = \\frac{1}{2} \\times Q \\times (P_{max} - P) = \\frac{1}{2} \\times 40 \\times (50 - 30) = \\frac{1}{2} \\times 40 \\times 20 = \\text{Rs }400.",
+            "explanation": "Step 1: Find equilibrium quantity at P = 30.\n30 = 50 - 0.5Q\n0.5Q = 20\nQ = 40.\n\nStep 2: Find the maximum willingness to pay (P-intercept of the demand curve, at Q = 0).\n$P_{max}$ = 50.\n\nStep 3: Calculate Consumer Surplus (area of the triangle below the demand curve and above the price).\nCS = $\\frac{1}{2} \\times$ Q $\\times$ ($P_{max}$ - P) = $\\frac{1}{2} \\times$ 40 $\\times$ (50 - 30) = $\\frac{1}{2} \\times$ 40 $\\times$ 20 = Rs 400.",
             "module": 2
         },
         {
@@ -432,7 +432,7 @@
                 "D": "Rs. 9,000"
             },
             "correct_option_label": "B",
-            "explanation": "Set QD = QS to find equilibrium.\n5000 - 250P = 600 + 150P\n5000 - 600 = 150P + 250P\n4400 = 400P\nP^* = 11 (in thousands of rupees) = Rs 11,000.",
+            "explanation": "Set QD = QS to find equilibrium.\n5000 - 250P = 600 + 150P\n5000 - 600 = 150P + 250P\n4400 = 400P\n$P^*$ = 11 (in thousands of rupees) = Rs 11,000.",
             "module": 2
         },
         {
@@ -446,7 +446,7 @@
                 "D": "27,50,000"
             },
             "correct_option_label": "B",
-            "explanation": "Substitute the equilibrium price P^* = 11 into the supply equation.\nQ^* = 600 + 150(11) = 600 + 1,650 = 2,250 (in thousands).\n\nVerify using demand: QD = 5000 - 250(11) = 5000 - 2,750 = 2,250. ✓\n\nEquilibrium quantity = 2,250 thousands = 22,50,000 units.",
+            "explanation": "Substitute the equilibrium price $P^*$ = 11 into the supply equation.\n$Q^*$ = 600 + 150(11) = 600 + 1,650 = 2,250 (in thousands).\n\nVerify using demand: QD = 5000 - 250(11) = 5000 - 2,750 = 2,250. ✓\n\nEquilibrium quantity = 2,250 thousands = 22,50,000 units.",
             "module": 2
         },
         {
@@ -460,7 +460,7 @@
                 "D": "9,740"
             },
             "correct_option_label": "A",
-            "explanation": "A tax of Rs 2,000 = 2 (in thousands) imposed on producers means the seller retains P_s = P_b - 2, where P_b is the buyer's price.\n\nStep 1: Rewrite supply in terms of buyer price.\nQ_S^{new} = 600 + 150 \\times (P_b - 2).\n\nStep 2: Set QD = QS^{new} and solve for P_b.\n5000 - 250P_b = 600 + 150(P_b - 2)\n5000 - 250P_b = 600 + 150P_b - 300\n5000 - 250P_b = 300 + 150P_b\n4700 = 400P_b\nP_b = 11.75 (thousands) = Rs 11,750.",
+            "explanation": "A tax of Rs 2,000 = 2 (in thousands) imposed on producers means the seller retains $P_s$ = $P_b$ - 2, where $P_b$ is the buyer's price.\n\nStep 1: Rewrite supply in terms of buyer price.\n$Q_S^{new}$ = 600 + 150 $\\times$ ($P_b$ - 2).\n\nStep 2: Set QD = $QS^{new}$ and solve for $P_b.$\n5000 - $250P_b$ = 600 + 150($P_b$ - 2)\n5000 - $250P_b$ = 600 + $150P_b$ - 300\n5000 - $250P_b$ = 300 + $150P_b$\n4700 = $400P_b$\n$P_b$ = 11.75 (thousands) = Rs 11,750.",
             "module": 2
         },
         {
@@ -474,7 +474,7 @@
                 "D": "11,750"
             },
             "correct_option_label": "A",
-            "explanation": "The tax wedge means: P_b - P_s = T.\n\nThe producer receives the buyer's price minus the tax.\nP_s = P_b - T = 11,750 - 2,000 = Rs 9,750.\n\nVerification: The tax burden is split as:\n- Buyers pay Rs 11,750 vs. pre-tax Rs 11,000: buyer burden = Rs 750.\n- Sellers receive Rs 9,750 vs. pre-tax Rs 11,000: seller burden = Rs 1,250.\n- Total burden = 750 + 1,250 = Rs 2,000 = the full tax. ✓",
+            "explanation": "The tax wedge means: $P_b$ - $P_s$ = T.\n\nThe producer receives the buyer's price minus the tax.\n$P_s$ = $P_b$ - T = 11,750 - 2,000 = Rs 9,750.\n\nVerification: The tax burden is split as:\n- Buyers pay Rs 11,750 vs. pre-tax Rs 11,000: buyer burden = Rs 750.\n- Sellers receive Rs 9,750 vs. pre-tax Rs 11,000: seller burden = Rs 1,250.\n- Total burden = 750 + 1,250 = Rs 2,000 = the full tax. ✓",
             "module": 2
         },
         {
@@ -488,7 +488,7 @@
                 "D": "3/4"
             },
             "correct_option_label": "A",
-            "explanation": "Fraction of tax passed to buyers = \\frac{\\text{Rise in buyer price}}{\\text{Tax amount}}.\n\nBuyer price before tax: P_b^{before} = Rs 11,000.\nBuyer price after tax: P_b^{after} = Rs 11,750.\nTax = Rs 2,000.\n\nFraction = \\frac{11,750 - 11,000}{2,000} = \\frac{750}{2,000} = \\frac{3}{8}.",
+            "explanation": "Fraction of tax passed to buyers = $\\frac{\\text{Rise in buyer price}}{\\text{Tax amount}}$.\n\nBuyer price before tax: $P_b^{before}$ = Rs 11,000.\nBuyer price after tax: $P_b^{after}$ = Rs 11,750.\nTax = Rs 2,000.\n\nFraction = $\\frac{11{,}750 - 11{,}000}{2{,}000} = \\frac{750}{2{,}000} = \\frac{3}{8}$.",
             "module": 2
         },
         {
@@ -502,7 +502,7 @@
                 "D": "stay the same; decrease"
             },
             "correct_option_label": "D",
-            "explanation": "A monopolist maximizes profit by setting MR = MC.\n\nKey insight: Fixed costs are constant — they do not appear in the MR or MC equations. An increase in fixed costs does not change MR or MC.\n\nTherefore:\n- The profit-maximizing quantity Q^* (where MR = MC) is unchanged.\n- The price P^* (read from the demand curve at Q^*) is unchanged.\n\nHowever, Total Profit = TR - TC = TR - (VC + FC). Since FC increases, TC increases by the same amount, and profit decreases by exactly the increase in fixed cost.\n\nResult: Price stays the same; profit decreases.",
+            "explanation": "A monopolist maximizes profit by setting MR = MC.\n\nKey insight: Fixed costs are constant — they do not appear in the MR or MC equations. An increase in fixed costs does not change MR or MC.\n\nTherefore:\n- The profit-maximizing quantity $Q^*$ (where MR = MC) is unchanged.\n- The price $P^*$ (read from the demand curve at $Q^*$) is unchanged.\n\nHowever, Total Profit = TR - TC = TR - (VC + FC). Since FC increases, TC increases by the same amount, and profit decreases by exactly the increase in fixed cost.\n\nResult: Price stays the same; profit decreases.",
             "module": 4
         },
         {
@@ -516,7 +516,7 @@
                 "D": "marginal; average-variable"
             },
             "correct_option_label": "D",
-            "explanation": "A competitive firm is a price taker and maximizes profit by producing where P = MC.\n\nHowever, the firm only produces if the price covers its average variable cost. The shutdown rule:\n- If P < AVC (min): Shut down — the firm cannot even cover variable costs, so it produces zero.\n- If P \\geq AVC (min): Produce on the MC curve.\n\nTherefore, the short-run supply curve is the marginal cost (MC) curve for all prices at or above the minimum average variable cost (AVC).\n\nThe supply curve is: the MC curve above the AVC curve.",
+            "explanation": "A competitive firm is a price taker and maximizes profit by producing where P = MC.\n\nHowever, the firm only produces if the price covers its average variable cost. The shutdown rule:\n- If P < AVC (min): Shut down — the firm cannot even cover variable costs, so it produces zero.\n- If P $\\geq$ AVC (min): Produce on the MC curve.\n\nTherefore, the short-run supply curve is the marginal cost (MC) curve for all prices at or above the minimum average variable cost (AVC).\n\nThe supply curve is: the MC curve above the AVC curve.",
             "module": 3
         },
         {
@@ -530,7 +530,7 @@
                 "D": "The goods are inferior"
             },
             "correct_option_label": "A",
-            "explanation": "Cross-price elasticity of demand: E_{XY} = \\frac{\\% \\Delta Q_X}{\\% \\Delta P_Y}.\n\nIf E_{XY} > 0: When the price of Y rises, demand for X also rises. Consumers substitute the now-costlier Y with X. The goods are substitutes (e.g., Pepsi and Coca-Cola).\n\nIf E_{XY} < 0: When the price of Y rises, demand for X falls. The goods are consumed together — they are complements (e.g., cars and petrol).\n\nIf E_{XY} = 0: Changes in the price of Y have no effect on demand for X. The goods are unrelated.\n\nA positive cross-price elasticity indicates the goods are substitutes.",
+            "explanation": "Cross-price elasticity of demand: $E_{XY} = \\frac{\\% \\Delta Q_X}{\\% \\Delta P_Y}$.\n\nIf $E_{XY}$ > 0: When the price of Y rises, demand for X also rises. Consumers substitute the now-costlier Y with X. The goods are substitutes (e.g., Pepsi and Coca-Cola).\n\nIf $E_{XY}$ < 0: When the price of Y rises, demand for X falls. The goods are consumed together — they are complements (e.g., cars and petrol).\n\nIf $E_{XY}$ = 0: Changes in the price of Y have no effect on demand for X. The goods are unrelated.\n\nA positive cross-price elasticity indicates the goods are substitutes.",
             "module": 2
         },
         {
@@ -544,7 +544,7 @@
                 "D": "It leads to a higher equilibrium price and higher equilibrium quantity"
             },
             "correct_option_label": "B",
-            "explanation": "An increase in supply means the supply curve shifts rightward.\n\nStep 1: At the original price P^*, the rightward shift creates excess supply (QS > QD). There is downward pressure on price.\n\nStep 2: As price falls, quantity demanded increases along the demand curve and quantity supplied decreases along the new supply curve, until a new equilibrium is reached.\n\nNew equilibrium:\n- Equilibrium price falls: P^*_{new} < P^*_{old}.\n- Equilibrium quantity rises: Q^*_{new} > Q^*_{old}.\n\nAn increase in supply leads to a lower equilibrium price and higher equilibrium quantity.",
+            "explanation": "An increase in supply means the supply curve shifts rightward.\n\nStep 1: At the original price $P^*$, the rightward shift creates excess supply (QS > QD). There is downward pressure on price.\n\nStep 2: As price falls, quantity demanded increases along the demand curve and quantity supplied decreases along the new supply curve, until a new equilibrium is reached.\n\nNew equilibrium:\n- Equilibrium price falls: $P^*_{new} < P^*_{old}$.\n- Equilibrium quantity rises: $Q^*_{new} > Q^*_{old}$.\n\nAn increase in supply leads to a lower equilibrium price and higher equilibrium quantity.",
             "module": 2
         },
         {
@@ -558,7 +558,7 @@
                 "D": "The tax burden is unpredictable"
             },
             "correct_option_label": "A",
-            "explanation": "Tax incidence rule: The more inelastic side of the market bears the larger share of the tax.\n\nConsumer's share of tax = \\frac{E_S}{E_S + |E_D|}.\n\nFor water, demand is highly inelastic (|E_D| \\approx 0): consumers cannot easily reduce usage (water is a necessity) or switch to alternatives.\n\nAs |E_D| \\rightarrow 0, the consumer's share \\rightarrow \\frac{E_S}{E_S + 0} = 1.\n\nProducers can raise prices almost fully, passing nearly the entire tax on to consumers without losing much quantity sold.\n\nConclusion: Consumers bear most of the tax burden when demand is highly inelastic.",
+            "explanation": "Tax incidence rule: The more inelastic side of the market bears the larger share of the tax.\n\nConsumer's share of tax = $\\frac{E_S}{E_S + |E_D|}$.\n\nFor water, demand is highly inelastic ($|E_D| \\approx 0$): consumers cannot easily reduce usage (water is a necessity) or switch to alternatives.\n\nAs $|E_D| \\rightarrow 0$, the consumer's share $\\rightarrow \\frac{E_S}{E_S + 0} = 1$.\n\nProducers can raise prices almost fully, passing nearly the entire tax on to consumers without losing much quantity sold.\n\nConclusion: Consumers bear most of the tax burden when demand is highly inelastic.",
             "module": 2
         }
     ]
