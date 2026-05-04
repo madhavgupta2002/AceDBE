@@ -17,7 +17,7 @@
                 "D": "9000"
             },
             "correct_option_label": "D",
-            "explanation": "Conversion Cost = Direct Labour + Manufacturing Overheads.\nDirect Labour = Rs. 6000.\nManufacturing Overheads = Fuel (Rs. 2000) + Other factory expenses (Rs. 1000) = Rs. 3000.\nConversion Cost = 6000 + 3000 = Rs. 9000.\nNote: Advertisement, Distribution, and Administrative expenses are period costs and not included in conversion cost.",
+            "explanation": "Conversion Cost = Direct Labour + Manufacturing Overheads.\n\nDirect Labour = Rs. 6000.\n\nManufacturing Overheads = Fuel (Rs. 2000) + Other factory expenses (Rs. 1000) = Rs. 3000.\n\nConversion Cost = 6000 + 3000 = Rs. 9000.\n\nNote: Advertisement, Distribution, and Administrative expenses are period costs and not included in conversion cost.",
             "module": 1
         },
         {
@@ -31,7 +31,7 @@
                 "D": "22000"
             },
             "correct_option_label": "A",
-            "explanation": "Cost of Goods Manufactured (COGM) calculation:\nRaw Material Consumed = Opening Stock (2000) + Purchases (10000) - Closing Stock (1000) = 11000.\nPrime Cost = RM Consumed (11000) + Factory Labour (5000) = 16000.\nGross Factory Cost = Prime Cost (16000) + Other Factory Expenses (6000) = 22000.\nCOGM = Gross Factory Cost (22000) + Opening WIP (3000) - Closing WIP (2000) = 23000.\nSelling, Distribution, and Admin expenses are period costs and ignored for COGM.",
+            "explanation": "Cost of Goods Manufactured (COGM) calculation:\n\nRaw Material Consumed = Opening Stock (2000) + Purchases (10000) - Closing Stock (1000) = 11000.\n\nPrime Cost = RM Consumed (11000) + Factory Labour (5000) = 16000.\n\nGross Factory Cost = Prime Cost (16000) + Other Factory Expenses (6000) = 22000.\n\nCOGM = Gross Factory Cost (22000) + Opening WIP (3000) - Closing WIP (2000) = 23000.\n\nSelling, Distribution, and Admin expenses are period costs and ignored for COGM.",
             "module": 1
         },
         {
@@ -45,7 +45,7 @@
                 "D": "Over-recovery of Rs. 40000"
             },
             "correct_option_label": "A",
-            "explanation": "Standard Overhead Rate = Budgeted Overhead / Budgeted Machine Hours = 100000 / 1000 = Rs. 100 per hour.\nRecovered (Applied) Overhead = Actual Hours × Standard Rate = 800 × 100 = Rs. 80000.\nActual Overhead Incurred = Rs. 120000.\nUnder-recovery = Actual Overhead - Recovered Overhead = 120000 - 80000 = Rs. 40000.",
+            "explanation": "Standard Overhead Rate = Budgeted Overhead / Budgeted Machine Hours = 100000 / 1000 = Rs. 100 per hour.\n\nRecovered (Applied) Overhead = Actual Hours \u00d7 Standard Rate = 800 \u00d7 100 = Rs. 80000.\n\nActual Overhead Incurred = Rs. 120000.\n\nUnder-recovery = Actual Overhead - Recovered Overhead = 120000 - 80000 = Rs. 40000.",
             "module": 4
         },
         {
@@ -59,7 +59,7 @@
                 "D": "Rs. 1310"
             },
             "correct_option_label": "D",
-            "explanation": "Total Estimated Cost Calculation:\nWood (50000) + Paint/Material (20000) + Labour (40000) + Factory Overhead (10000) + Admin Overhead (1000) + Transport (10000) = Rs. 131000.\nCost per unit = Total Cost / Number of Units = 131000 / 100 = Rs. 1310.",
+            "explanation": "Total Estimated Cost Calculation:\n\nWood (50000) + Paint/Material (20000) + Labour (40000) + Factory Overhead (10000) + Admin Overhead (1000) + Transport (10000) = Rs. 131000.\n\nCost per unit = Total Cost / Number of Units = 131000 / 100 = Rs. 1310.",
             "module": 1
         },
         {
@@ -73,7 +73,7 @@
                 "D": "8.34"
             },
             "correct_option_label": "C",
-            "explanation": "Using the Weighted Average Method:\nTotal Units to Account for = Opening WIP (100) + New Units Introduced (3000) = 3100.\nCompleted Units = Total Units - Closing WIP = 3100 - 600 = 2500 units.\nEquivalent Units (EU) for Conversion Cost = (Completed Units × 100%) + (Closing WIP × 40%) = 2500 + (600 × 40%) = 2500 + 240 = 2740 EU.\nTotal Conversion Cost = Opening WIP Cost + Cost Incurred = 3000 + 13440 = 16440.\nCost per Equivalent Unit = 16440 / 2740 = 6.00.",
+            "explanation": "Using the Weighted Average Method:\n\nTotal Units to Account for = Opening WIP (100) + New Units Introduced (3000) = 3100.\n\nCompleted Units = Total Units - Closing WIP = 3100 - 600 = 2500 units.\n\nEquivalent Units (EU) for Conversion Cost = (Completed Units \u00d7 100%) + (Closing WIP \u00d7 40%) = 2500 + (600 \u00d7 40%) = 2500 + 240 = 2740 EU.\n\nTotal Conversion Cost = Opening WIP Cost + Cost Incurred = 3000 + 13440 = 16440.\n\nCost per Equivalent Unit = 16440 / 2740 = 6.00.",
             "module": 2
         },
         {
@@ -87,7 +87,7 @@
                 "D": "2820"
             },
             "correct_option_label": "A",
-            "explanation": "Total Units Input = Opening WIP + New Units Introduced = 100 + 3000 = 3100 units.\nTotal Units Output = Completed Units + Closing WIP.\n3100 = Completed Units + 600.\nCompleted Units = 3100 - 600 = 2500 units.",
+            "explanation": "Total Units Input = Opening WIP + New Units Introduced = 100 + 3000 = 3100 units.\n\nTotal Units Output = Completed Units + Closing WIP.\n\n3100 = Completed Units + 600.\n\nCompleted Units = 3100 - 600 = 2500 units.",
             "module": 2
         },
         {
@@ -101,7 +101,7 @@
                 "D": "6.23"
             },
             "correct_option_label": "D",
-            "explanation": "Using the Weighted Average Method:\nEquivalent Units (EU) = (Completed Units × 100%) + (Closing WIP × 40%) + Normal Loss.\nNormal loss is absorbed by good units and has 0 Equivalent Units for cost spread.\nTotal EU = 2400 + (600 × 40%) + 0 = 2400 + 240 = 2640 EU.\nTotal Conversion Cost = Opening WIP Cost + Cost Incurred = 3000 + 13440 = 16440.\nCost per EU = 16440 / 2640 = 6.227 = 6.23.",
+            "explanation": "Using the Weighted Average Method:\n\nEquivalent Units (EU) = (Completed Units \u00d7 100%) + (Closing WIP \u00d7 40%) + Normal Loss.\n\nNormal loss is absorbed by good units and has 0 Equivalent Units for cost spread.\n\nTotal EU = 2400 + (600 \u00d7 40%) + 0 = 2400 + 240 = 2640 EU.\n\nTotal Conversion Cost = Opening WIP Cost + Cost Incurred = 3000 + 13440 = 16440.\n\nCost per EU = 16440 / 2640 = 6.227 = 6.23.",
             "module": 2
         },
         {
@@ -129,7 +129,7 @@
                 "D": "83333.33"
             },
             "correct_option_label": "C",
-            "explanation": "Design department costs are driven by the Number of Designs (Activity Based Costing).\nTotal Designs = 300 (X) + 150 (Y) + 50 (Z) = 500 designs.\nDesign Cost Allocation Rate = Total Design Cost / Total Designs = 500000 / 500 = Rs. 1000 per design.\nCost allocated to Product X = Designs for X × Rate = 300 × 1000 = Rs. 3,00,000.",
+            "explanation": "Design department costs are driven by the Number of Designs (Activity Based Costing).\n\nTotal Designs = 300 (X) + 150 (Y) + 50 (Z) = 500 designs.\n\nDesign Cost Allocation Rate = Total Design Cost / Total Designs = 500000 / 500 = Rs. 1000 per design.\n\nCost allocated to Product X = Designs for X \u00d7 Rate = 300 \u00d7 1000 = Rs. 3,00,000.",
             "module": 2
         },
         {
@@ -171,7 +171,7 @@
                 "D": "225000 units"
             },
             "correct_option_label": "C",
-            "explanation": "Selling Price per unit = Rs. 70\nVariable Cost per unit = Material (25) + Labour (3) + Other mfg expenses (2) = Rs. 30\nContribution Margin per unit = Sales - Variable Cost = 70 - 30 = Rs. 40\nRequired Units = (Fixed Cost + Target Profit) / Contribution per unit\nRequired Units = (20,00,000 + 50,00,000) / 40 = 70,00,000 / 40 = 175,000 units.",
+            "explanation": "Selling Price per unit = Rs. 70\n\nVariable Cost per unit = Material (25) + Labour (3) + Other mfg expenses (2) = Rs. 30\n\nContribution Margin per unit = Sales - Variable Cost = 70 - 30 = Rs. 40\n\nRequired Units = (Fixed Cost + Target Profit) / Contribution per unit\n\nRequired Units = (20,00,000 + 50,00,000) / 40 = 70,00,000 / 40 = 175,000 units.",
             "module": 3
         },
         {
@@ -185,7 +185,7 @@
                 "D": "Rs. 110 lakhs"
             },
             "correct_option_label": "D",
-            "explanation": "Margin of Safety (MOS) is calculated as the excess of current actual sales over the break-even sales.\nMOS = Current Sales - Break-Even Sales\nMOS = 120 lakhs - 10 lakhs = Rs. 110 lakhs.",
+            "explanation": "Margin of Safety (MOS) is calculated as the excess of current actual sales over the break-even sales.\n\nMOS = Current Sales - Break-Even Sales\n\nMOS = 120 lakhs - 10 lakhs = Rs. 110 lakhs.",
             "module": 3
         },
         {
@@ -199,7 +199,7 @@
                 "D": "Rs. 18 per unit"
             },
             "correct_option_label": "C",
-            "explanation": "Target Profit = Rs. 20000.\nFixed Cost = Rs. 20000.\nTarget Contribution Required = Fixed Cost + Target Profit = 20000 + 20000 = Rs. 40000.\nEstimated Sales Quantity = 5000 units.\nRequired Contribution per unit = 40000 / 5000 = Rs. 8.\nNew Selling Price = Variable Cost per unit + Required Contribution per unit = 4 + 8 = Rs. 12.",
+            "explanation": "Target Profit = Rs. 20000.\n\nFixed Cost = Rs. 20000.\n\nTarget Contribution Required = Fixed Cost + Target Profit = 20000 + 20000 = Rs. 40000.\n\nEstimated Sales Quantity = 5000 units.\n\nRequired Contribution per unit = 40000 / 5000 = Rs. 8.\n\nNew Selling Price = Variable Cost per unit + Required Contribution per unit = 4 + 8 = Rs. 12.",
             "module": 3
         },
         {
@@ -213,7 +213,7 @@
                 "D": "Maximum Rs. 5 per unit"
             },
             "correct_option_label": "B",
-            "explanation": "In a Make or Buy decision, the maximum acceptable purchase price equals the total avoidable internal costs.\nAvoidable Variable Cost = Rs. 70,000.\nAvoidable Fixed Cost = Rs. 10,000.\nTotal Avoidable Cost = 70,000 + 10,000 = Rs. 80,000.\nMaximum offer per unit = Total Avoidable Cost / Number of Units = 80,000 / 20,000 = Rs. 4 per unit.",
+            "explanation": "In a Make or Buy decision, the maximum acceptable purchase price equals the total avoidable internal costs.\n\nAvoidable Variable Cost = Rs. 70,000.\n\nAvoidable Fixed Cost = Rs. 10,000.\n\nTotal Avoidable Cost = 70,000 + 10,000 = Rs. 80,000.\n\nMaximum offer per unit = Total Avoidable Cost / Number of Units = 80,000 / 20,000 = Rs. 4 per unit.",
             "module": 3
         },
         {
@@ -241,7 +241,7 @@
                 "D": "Product B"
             },
             "correct_option_label": "D",
-            "explanation": "Degree of Operating Leverage (DOL) acts as a multiplier measuring how sensitive profit is to a change in sales.\nPercentage Change in Profit = DOL × Percentage Change in Sales.\nProduct A Profit Increase = 1.20 × 20% = 24%.\nProduct B Profit Increase = 2.00 × 20% = 40%.\nTherefore, Product B's profit will increase more.",
+            "explanation": "Degree of Operating Leverage (DOL) acts as a multiplier measuring how sensitive profit is to a change in sales.\n\nPercentage Change in Profit = DOL \u00d7 Percentage Change in Sales.\n\nProduct A Profit Increase = 1.20 \u00d7 20% = 24%.\n\nProduct B Profit Increase = 2.00 \u00d7 20% = 40%.\n\nTherefore, Product B's profit will increase more.",
             "module": 3
         },
         {
@@ -255,7 +255,7 @@
                 "D": "26700"
             },
             "correct_option_label": "A",
-            "explanation": "Production Quantity = Budgeted Sales + Desired Closing Stock - Opening Stock\nBudgeted Sales (January) = 30000 units.\nDesired Closing Stock (January) = 10% of February Sales = 10% × 28000 = 2800 units.\nOpening Stock (January) = 500 units.\nProduction = 30000 + 2800 - 500 = 32300 units.",
+            "explanation": "Production Quantity = Budgeted Sales + Desired Closing Stock - Opening Stock\n\nBudgeted Sales (January) = 30000 units.\n\nDesired Closing Stock (January) = 10% of February Sales = 10% \u00d7 28000 = 2800 units.\n\nOpening Stock (January) = 500 units.\n\nProduction = 30000 + 2800 - 500 = 32300 units.",
             "module": 4
         },
         {
@@ -269,7 +269,7 @@
                 "D": "66600"
             },
             "correct_option_label": "D",
-            "explanation": "First, calculate Production units for January: Sales (30000) + Desired Closing FG Stock (10% of 28000 = 2800) - Opening FG Stock (500) = 32300 units.\nRaw Material Required for Production = 32300 units × 2 KGs/unit = 64600 KGs.\nRaw Material Purchases = RM for Production + Desired Closing RM Stock - Opening RM Stock.\nAssuming Opening RM Stock is 0 (as not provided), Purchases = 64600 + 2000 - 0 = 66600 KGs.",
+            "explanation": "First, calculate Production units for January: Sales (30000) + Desired Closing FG Stock (10% of 28000 = 2800) - Opening FG Stock (500) = 32300 units.\n\nRaw Material Required for Production = 32300 units \u00d7 2 KGs/unit = 64600 KGs.\n\nRaw Material Purchases = RM for Production + Desired Closing RM Stock - Opening RM Stock.\n\nAssuming Opening RM Stock is 0 (as not provided), Purchases = 64600 + 2000 - 0 = 66600 KGs.",
             "module": 4
         },
         {
@@ -283,7 +283,7 @@
                 "D": "Rs. 4,00,000"
             },
             "correct_option_label": "B",
-            "explanation": "A 15 days credit period means that approximately 50% of a month's sales are collected in the month of sale, and the remaining 50% is collected in the subsequent month.\nCollection from Opening Receivables = Rs. 2,00,000.\nCollection from January Sales = 50% of 5,00,000 = Rs. 2,50,000.\nTotal Cash Collection = 2,00,000 + 2,50,000 = Rs. 4,50,000.",
+            "explanation": "A 15 days credit period means that approximately 50% of a month's sales are collected in the month of sale, and the remaining 50% is collected in the subsequent month.\n\nCollection from Opening Receivables = Rs. 2,00,000.\n\nCollection from January Sales = 50% of 5,00,000 = Rs. 2,50,000.\n\nTotal Cash Collection = 2,00,000 + 2,50,000 = Rs. 4,50,000.",
             "module": 4
         },
         {
@@ -311,7 +311,7 @@
                 "D": "Rs. 14000 Adverse"
             },
             "correct_option_label": "D",
-            "explanation": "Standard Quantity for Actual Production = 800 units × 5 Kgs/unit = 4000 KGs.\nStandard Cost for Actual Production = 4000 KGs × Rs. 10 = Rs. 40000.\nActual Cost = Actual Quantity × Actual Price = 4500 KGs × Rs. 12 = Rs. 54000.\nMaterial Cost Variance = Standard Cost - Actual Cost = 40000 - 54000 = -14000 (Adverse).",
+            "explanation": "Standard Quantity for Actual Production = 800 units \u00d7 5 Kgs/unit = 4000 KGs.\n\nStandard Cost for Actual Production = 4000 KGs \u00d7 Rs. 10 = Rs. 40000.\n\nActual Cost = Actual Quantity \u00d7 Actual Price = 4500 KGs \u00d7 Rs. 12 = Rs. 54000.\n\nMaterial Cost Variance = Standard Cost - Actual Cost = 40000 - 54000 = -14000 (Adverse).",
             "module": 4
         },
         {
@@ -325,7 +325,7 @@
                 "D": "Rs. 10000 Adverse"
             },
             "correct_option_label": "B",
-            "explanation": "Material Price Variance = (Standard Price - Actual Price) × Actual Quantity.\nStandard Price = Rs. 10.\nActual Price = Rs. 12.\nActual Quantity = 4500 KGs.\nMaterial Price Variance = (10 - 12) × 4500 = -2 × 4500 = -9000 (Adverse).",
+            "explanation": "Material Price Variance = (Standard Price - Actual Price) \u00d7 Actual Quantity.\n\nStandard Price = Rs. 10.\n\nActual Price = Rs. 12.\n\nActual Quantity = 4500 KGs.\n\nMaterial Price Variance = (10 - 12) \u00d7 4500 = -2 \u00d7 4500 = -9000 (Adverse).",
             "module": 4
         },
         {
@@ -339,7 +339,7 @@
                 "D": "Rs. 5000 Adverse"
             },
             "correct_option_label": "D",
-            "explanation": "Standard Quantity (SQ) for Actual Production = 800 units × 5 Kgs/unit = 4000 KGs.\nActual Quantity (AQ) used = 4500 KGs.\nStandard Price (SP) = Rs. 10 per KG.\nMaterial Usage Variance = (SQ - AQ) × SP = (4000 - 4500) × 10 = -500 × 10 = -5000 (Adverse).",
+            "explanation": "Standard Quantity (SQ) for Actual Production = 800 units \u00d7 5 Kgs/unit = 4000 KGs.\n\nActual Quantity (AQ) used = 4500 KGs.\n\nStandard Price (SP) = Rs. 10 per KG.\n\nMaterial Usage Variance = (SQ - AQ) \u00d7 SP = (4000 - 4500) \u00d7 10 = -500 \u00d7 10 = -5000 (Adverse).",
             "module": 4
         },
         {
@@ -353,7 +353,7 @@
                 "D": "Rate Variance: Rs. 50 Lakhs (Adverse); Quantity Variance: Rs. 240 lakhs (Favourable); Total Sales Variance: Rs. 190 Lakhs (Favourable)"
             },
             "correct_option_label": "A",
-            "explanation": "Budgeted Sales Value = 10,00,000 units × Rs. 100 = Rs. 1000 Lakhs.\nActual Sales Value = 12,00,000 units × Rs. 95 = Rs. 1140 Lakhs.\nTotal Sales Variance = Actual Sales - Budgeted Sales = 1140 - 1000 = +140 Lakhs (Favourable).\nSales Rate (Price) Variance = (Actual Price - Standard Price) × Actual Quantity = (95 - 100) × 12,00,000 = -60 Lakhs (Adverse).\nSales Quantity (Volume) Variance = (Actual Quantity - Standard Quantity) × Standard Price = (12,00,000 - 10,00,000) × 100 = +200 Lakhs (Favourable).",
+            "explanation": "Budgeted Sales Value = 10,00,000 units \u00d7 Rs. 100 = Rs. 1000 Lakhs.\n\nActual Sales Value = 12,00,000 units \u00d7 Rs. 95 = Rs. 1140 Lakhs.\n\nTotal Sales Variance = Actual Sales - Budgeted Sales = 1140 - 1000 = +140 Lakhs (Favourable).\n\nSales Rate (Price) Variance = (Actual Price - Standard Price) \u00d7 Actual Quantity = (95 - 100) \u00d7 12,00,000 = -60 Lakhs (Adverse).\n\nSales Quantity (Volume) Variance = (Actual Quantity - Standard Quantity) \u00d7 Standard Price = (12,00,000 - 10,00,000) \u00d7 100 = +200 Lakhs (Favourable).",
             "module": 4
         }
     ]

@@ -17,7 +17,7 @@
                 "D": "20000"
             },
             "correct_option_label": "D",
-            "explanation": "Prime Cost is the sum of all direct costs. Prime Cost = Direct Material + Direct Labour + Direct Expenses.\nPrime Cost = 10000 (Material) + 6000 (Labour) + 4000 (Direct Expenses) = Rs. 20000. Other costs given are indirect overheads.",
+            "explanation": "Prime Cost is the sum of all direct costs. Prime Cost = Direct Material + Direct Labour + Direct Expenses.\n\nPrime Cost = 10000 (Material) + 6000 (Labour) + 4000 (Direct Expenses) = Rs. 20000. Other costs given are indirect overheads.",
             "module": 1
         },
         {
@@ -45,7 +45,7 @@
                 "D": "39000"
             },
             "correct_option_label": "C",
-            "explanation": "Step 1: RM Consumed = Opening (1000) + Purchased (20000) - Closing (1000) = Rs. 20000.\nStep 2: Prime Cost = RM Consumed (20000) + Labour (5000) = Rs. 25000.\nStep 3: Gross Factory Cost = Prime Cost (25000) + Factory Expenses (6000) = Rs. 31000.\nStep 4: COGM = Gross Factory Cost (31000) + Opening WIP (3000) - Closing WIP (2000) = Rs. 32000.",
+            "explanation": "Step 1: RM Consumed = Opening (1000) + Purchased (20000) - Closing (1000) = Rs. 20000.\n\nStep 2: Prime Cost = RM Consumed (20000) + Labour (5000) = Rs. 25000.\n\nStep 3: Gross Factory Cost = Prime Cost (25000) + Factory Expenses (6000) = Rs. 31000.\n\nStep 4: COGM = Gross Factory Cost (31000) + Opening WIP (3000) - Closing WIP (2000) = Rs. 32000.",
             "module": 1
         },
         {
@@ -59,7 +59,7 @@
                 "D": "Under-recovery of Rs. 10000"
             },
             "correct_option_label": "C",
-            "explanation": "Step 1: Overhead Recovery Rate = Budgeted Overhead / Budgeted Hours = 100000 / 1000 = Rs. 100 per hour.\nStep 2: Applied Overhead = Actual Hours × Recovery Rate = 1200 × 100 = Rs. 120000.\nStep 3: Actual Overhead is 110000. Since Applied (120000) > Actual (110000), there is an over-recovery of Rs. 10000.",
+            "explanation": "Step 1: Overhead Recovery Rate = Budgeted Overhead / Budgeted Hours = 100000 / 1000 = Rs. 100 per hour.\n\nStep 2: Applied Overhead = Actual Hours \u00d7 Recovery Rate = 1200 \u00d7 100 = Rs. 120000.\n\nStep 3: Actual Overhead is 110000. Since Applied (120000) > Actual (110000), there is an over-recovery of Rs. 10000.",
             "module": 4
         },
         {
@@ -73,7 +73,7 @@
                 "D": "Rs. 210"
             },
             "correct_option_label": "C",
-            "explanation": "Step 1: Calculate Total Estimated Cost = Cloth (140000) + Materials (10000) + Labour (60000) + Factory OH (20000) + Admin OH (10000) + Transport (10000) = Rs. 250000.\nStep 2: Cost per unit = Total Cost / Number of units = 250000 / 1000 = Rs. 250.",
+            "explanation": "Step 1: Calculate Total Estimated Cost = Cloth (140000) + Materials (10000) + Labour (60000) + Factory OH (20000) + Admin OH (10000) + Transport (10000) = Rs. 250000.\n\nStep 2: Cost per unit = Total Cost / Number of units = 250000 / 1000 = Rs. 250.",
             "module": 1
         },
         {
@@ -87,7 +87,7 @@
                 "D": "7.00"
             },
             "correct_option_label": "D",
-            "explanation": "Step 1: Completed units = Opening (100) + Introduced (3000) - Closing WIP (600) = 2500 units.\nStep 2: Equivalent Units (Weighted Average) = Completed (2500) + Closing WIP EU (600 × 40%) = 2500 + 240 = 2740 EU.\nStep 3: Total Conversion Cost = Opening (2000) + Current (17180) = Rs. 19180.\nStep 4: Cost per EU = 19180 / 2740 = Rs. 7.00.",
+            "explanation": "Step 1: Completed units = Opening (100) + Introduced (3000) - Closing WIP (600) = 2500 units.\n\nStep 2: Equivalent Units (Weighted Average) = Completed (2500) + Closing WIP EU (600 \u00d7 40%) = 2500 + 240 = 2740 EU.\n\nStep 3: Total Conversion Cost = Opening (2000) + Current (17180) = Rs. 19180.\n\nStep 4: Cost per EU = 19180 / 2740 = Rs. 7.00.",
             "module": 2
         },
         {
@@ -101,7 +101,7 @@
                 "D": "2820"
             },
             "correct_option_label": "C",
-            "explanation": "The formula to find the number of completed units is Opening WIP + Units Introduced - Closing WIP.\nCompleted Units = 300 (Opening WIP) + 2800 (Introduced) - 600 (Closing WIP) = 2500 units.",
+            "explanation": "The formula to find the number of completed units is Opening WIP + Units Introduced - Closing WIP.\n\nCompleted Units = 300 (Opening WIP) + 2800 (Introduced) - 600 (Closing WIP) = 2500 units.",
             "module": 2
         },
         {
@@ -129,7 +129,7 @@
                 "D": "160000"
             },
             "correct_option_label": "D",
-            "explanation": "Step 1: The correct cost driver for design cost allocation is 'Number of Designs'. Total designs = 16 (X) + 10 (Y) + 4 (Z) = 30.\nStep 2: Calculate the proportion of designs for Product X = 16 / 30.\nStep 3: Allocated Cost = (16 / 30) × 3,00,000 = Rs. 160,000.",
+            "explanation": "Step 1: The correct cost driver for design cost allocation is 'Number of Designs'. Total designs = 16 (X) + 10 (Y) + 4 (Z) = 30.\n\nStep 2: Calculate the proportion of designs for Product X = 16 / 30.\n\nStep 3: Allocated Cost = (16 / 30) \u00d7 3,00,000 = Rs. 160,000.",
             "module": 2
         },
         {
@@ -171,7 +171,7 @@
                 "D": "100,000 units"
             },
             "correct_option_label": "D",
-            "explanation": "Step 1: Calculate Variable Cost per unit = Material (30) + Labour (5) + Other Expenses (35) = Rs. 70.\nStep 2: Calculate Contribution per unit = Selling Price (100) - Variable Cost (70) = Rs. 30.\nStep 3: Break-Even Units = Fixed Cost / Contribution per unit = 30,00,000 / 30 = 100,000 units.",
+            "explanation": "Step 1: Calculate Variable Cost per unit = Material (30) + Labour (5) + Other Expenses (35) = Rs. 70.\n\nStep 2: Calculate Contribution per unit = Selling Price (100) - Variable Cost (70) = Rs. 30.\n\nStep 3: Break-Even Units = Fixed Cost / Contribution per unit = 30,00,000 / 30 = 100,000 units.",
             "module": 3
         },
         {
@@ -185,7 +185,7 @@
                 "D": "225,000 units"
             },
             "correct_option_label": "C",
-            "explanation": "Step 1: Variable Cost per unit = 30 + 5 + 35 = Rs. 70.\nStep 2: Contribution per unit = 100 - 70 = Rs. 30.\nStep 3: Target Units = (Fixed Cost + Target Profit) / Contribution per unit = (30,00,000 + 30,00,000) / 30 = 60,00,000 / 30 = 200,000 units.",
+            "explanation": "Step 1: Variable Cost per unit = 30 + 5 + 35 = Rs. 70.\n\nStep 2: Contribution per unit = 100 - 70 = Rs. 30.\n\nStep 3: Target Units = (Fixed Cost + Target Profit) / Contribution per unit = (30,00,000 + 30,00,000) / 30 = 60,00,000 / 30 = 200,000 units.",
             "module": 3
         },
         {
@@ -199,7 +199,7 @@
                 "D": "Rs. 120 lakhs"
             },
             "correct_option_label": "C",
-            "explanation": "Margin of Safety represents how much current/actual sales exceed the break-even volume.\nMargin of Safety = Current Sales - Break-even Sales = 120 lakhs - 10 lakhs = Rs. 110 lakhs.",
+            "explanation": "Margin of Safety represents how much current/actual sales exceed the break-even volume.\n\nMargin of Safety = Current Sales - Break-even Sales = 120 lakhs - 10 lakhs = Rs. 110 lakhs.",
             "module": 3
         },
         {
@@ -213,7 +213,7 @@
                 "D": "Rs. 60 lakhs"
             },
             "correct_option_label": "A",
-            "explanation": "Step 1: PV Ratio = Change in Profit / Change in Sales = (60 - 30) / (160 - 100) = 30 / 60 = 50%.\nStep 2: Find Fixed Cost using Year 1: Contribution = Sales × PV Ratio = 100 × 50% = 50 lakhs. Fixed Cost = Contribution - Profit = 50 - 30 = 20 lakhs.\nStep 3: Break-Even Sales = Fixed Cost / PV Ratio = 20 / 0.50 = 40 lakhs.",
+            "explanation": "Step 1: PV Ratio = Change in Profit / Change in Sales = (60 - 30) / (160 - 100) = 30 / 60 = 50%.\n\nStep 2: Find Fixed Cost using Year 1: Contribution = Sales \u00d7 PV Ratio = 100 \u00d7 50% = 50 lakhs. Fixed Cost = Contribution - Profit = 50 - 30 = 20 lakhs.\n\nStep 3: Break-Even Sales = Fixed Cost / PV Ratio = 20 / 0.50 = 40 lakhs.",
             "module": 3
         },
         {
@@ -241,7 +241,7 @@
                 "D": "No, Profit declines from Rs. 3 lakhs to Rs. 2 lakhs"
             },
             "correct_option_label": "B",
-            "explanation": "Step 1: Current Profit = [(100 - 50) × 10000] - 200000 = 500000 - 200000 = Rs. 3 lakhs.\nStep 2: Proposed Profit = [(80 - 50) × 20000] - 200000 = 600000 - 200000 = Rs. 4 lakhs.\nStep 3: Thus, Profit increases from Rs. 3 lakhs to Rs. 4 lakhs.",
+            "explanation": "Step 1: Current Profit = [(100 - 50) \u00d7 10000] - 200000 = 500000 - 200000 = Rs. 3 lakhs.\n\nStep 2: Proposed Profit = [(80 - 50) \u00d7 20000] - 200000 = 600000 - 200000 = Rs. 4 lakhs.\n\nStep 3: Thus, Profit increases from Rs. 3 lakhs to Rs. 4 lakhs.",
             "module": 3
         },
         {
@@ -255,7 +255,7 @@
                 "D": "Maximum Rs. 4 per unit"
             },
             "correct_option_label": "D",
-            "explanation": "Step 1: The relevant cost of internal manufacturing is Variable Cost + Avoidable Fixed Cost.\nStep 2: Total Avoidable Cost = 70,000 (VC) + 10,000 (Saved FC) = Rs. 80,000.\nStep 3: Maximum acceptable price = 80,000 / 20,000 units = Rs. 4 per unit.",
+            "explanation": "Step 1: The relevant cost of internal manufacturing is Variable Cost + Avoidable Fixed Cost.\n\nStep 2: Total Avoidable Cost = 70,000 (VC) + 10,000 (Saved FC) = Rs. 80,000.\n\nStep 3: Maximum acceptable price = 80,000 / 20,000 units = Rs. 4 per unit.",
             "module": 3
         },
         {
@@ -269,7 +269,7 @@
                 "D": "Product A"
             },
             "correct_option_label": "D",
-            "explanation": "When a limiting factor exists, products should be ranked by their contribution per unit of the limiting factor.\nContribution per hour for Product A = 10 / 3 = Rs. 3.33/hr. For Product B = 15 / 5 = Rs. 3.00/hr. Product A provides a higher return per scarce hour.",
+            "explanation": "When a limiting factor exists, products should be ranked by their contribution per unit of the limiting factor.\n\nContribution per hour for Product A = 10 / 3 = Rs. 3.33/hr. For Product B = 15 / 5 = Rs. 3.00/hr. Product A provides a higher return per scarce hour.",
             "module": 3
         },
         {
@@ -297,7 +297,7 @@
                 "D": "27700"
             },
             "correct_option_label": "A",
-            "explanation": "Step 1: Calculate Desired Closing Stock for January = 10% of February Sales = 10% of 28000 = 2800 units.\nStep 2: Apply the production budget formula: Production = Sales + Closing Stock - Opening Stock.\nStep 3: January Production = 30000 + 2800 - 500 = 32300 units.",
+            "explanation": "Step 1: Calculate Desired Closing Stock for January = 10% of February Sales = 10% of 28000 = 2800 units.\n\nStep 2: Apply the production budget formula: Production = Sales + Closing Stock - Opening Stock.\n\nStep 3: January Production = 30000 + 2800 - 500 = 32300 units.",
             "module": 4
         },
         {
@@ -325,7 +325,7 @@
                 "D": "Rs. 14000 Favourable"
             },
             "correct_option_label": "B",
-            "explanation": "Step 1: Standard Cost for Actual Output = Actual Units (600) × Standard Qty per unit (5) × Standard Price (10) = 3000 × 10 = Rs. 30000.\nStep 2: Actual Cost = Actual Qty (4500) × Actual Price (12) = Rs. 54000.\nStep 3: Total Material Cost Variance = Standard Cost (30000) - Actual Cost (54000) = -24000 (Adverse).",
+            "explanation": "Step 1: Standard Cost for Actual Output = Actual Units (600) \u00d7 Standard Qty per unit (5) \u00d7 Standard Price (10) = 3000 \u00d7 10 = Rs. 30000.\n\nStep 2: Actual Cost = Actual Qty (4500) \u00d7 Actual Price (12) = Rs. 54000.\n\nStep 3: Total Material Cost Variance = Standard Cost (30000) - Actual Cost (54000) = -24000 (Adverse).",
             "module": 4
         },
         {
@@ -339,7 +339,7 @@
                 "D": "Rs. 10000 Adverse"
             },
             "correct_option_label": "A",
-            "explanation": "Step 1: Formula for Material Rate (Price) Variance is (Standard Price - Actual Price) × Actual Quantity.\nStep 2: Calculate Variance = (10 - 12) × 4500 = -2 × 4500 = -9000.\nStep 3: A negative result indicates an Adverse variance of Rs. 9000.",
+            "explanation": "Step 1: Formula for Material Rate (Price) Variance is (Standard Price - Actual Price) \u00d7 Actual Quantity.\n\nStep 2: Calculate Variance = (10 - 12) \u00d7 4500 = -2 \u00d7 4500 = -9000.\n\nStep 3: A negative result indicates an Adverse variance of Rs. 9000.",
             "module": 4
         },
         {
@@ -353,7 +353,7 @@
                 "D": "Rs. 1600 Favorable"
             },
             "correct_option_label": "D",
-            "explanation": "Step 1: Total Actual Sales Revenue = 1200 units × Rs. 18 = Rs. 21600.\nStep 2: Total Budgeted Sales Revenue = 1000 units × Rs. 20 = Rs. 20000.\nStep 3: Total Sales Variance = Actual Sales - Budgeted Sales = 21600 - 20000 = +1600. Since actual revenue is higher, it is Favorable.",
+            "explanation": "Step 1: Total Actual Sales Revenue = 1200 units \u00d7 Rs. 18 = Rs. 21600.\n\nStep 2: Total Budgeted Sales Revenue = 1000 units \u00d7 Rs. 20 = Rs. 20000.\n\nStep 3: Total Sales Variance = Actual Sales - Budgeted Sales = 21600 - 20000 = +1600. Since actual revenue is higher, it is Favorable.",
             "module": 4
         }
     ]
