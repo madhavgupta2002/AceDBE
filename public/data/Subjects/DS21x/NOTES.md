@@ -1,3 +1,4 @@
+***Advanced Statistics for Businesses***
 # Module 1: Non-Parametric Methods
 
 ## 1.0 Welcome to the Module

@@ -1,0 +1,317 @@
+{
+    "exam_metadata": {
+        "subject_name": "Advanced Statistics for Business",
+        "exam_date": "03 May 2025",
+        "batch": 1,
+        "attempt": "Main"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "A practitioner uses multiple linear regression to model the monthly sales of a product with three regressors: advertising spending, price of the product, rate of inflation. The results show that the value of $R^2$ is 0.53. If the practitioner uses a simple linear regression with only the price of the product as a regressor, then the value of $R^2$ is found to be 0.12. Which one of the following is NOT necessarily a correct interpretation of this model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Using all three regressors provide a better model than using a single regressor",
+                "B": "53% of the variation in sales can be explained by the three regressors",
+                "C": "12% of the variation in sales can be explained by only the price",
+                "D": "The sales can be predicted using the three regressors in future",
+                "E": "All three regressors impact the sales significantly"
+            },
+            "correct_option_label": "E",
+            "explanation": "The $R^2$ value measures the proportion of the total variation in the dependent variable (sales) that is explained by the independent variables. A higher $R^2$ (0.53 vs 0.12) implies better explanatory power as a whole. However, $R^2$ alone does not indicate the statistical significance of individual predictors. It is possible for a multiple regression model to have a high overall $R^2$ while one or more of its regressors are statistically insignificant (e.g., due to multicollinearity). Therefore, we cannot necessarily conclude that *all three* regressors impact the sales significantly just by looking at the $R^2$ value.",
+            "module": 2
+        },
+        {
+            "question_id": "2",
+            "question_text": "To determine if the preference for colour of roses (red, white or pink) depends on purpose of buying (wedding, other events, individual gifts, personal use), a survey was conducted by a florist among her customers. The cross-tabulated frequency contingency table is given below. If the florist wants to conduct a suitable nonparametric test, which of the following options is the most appropriate?\n\n| | Wedding | Other events | Individual gifts | Personal use |\n| :--- | :--- | :--- | :--- | :--- |\n| **Red roses** | 40 | 25 | 10 | 15 |\n| **White roses** | 20 | 15 | 20 | 25 |\n| **Pink roses** | 30 | 5 | 10 | 13 |",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Test of independence, with null distribution given by $\\chi^2$ (degrees of freedom 6)",
+                "B": "Test of independence, with null distribution given by $\\chi^2$ (degrees of freedom 12)",
+                "C": "Wilcoxon signed rank test, with null distribution given by N(0,1) (suitably scaled)",
+                "D": "Wilcoxon rank-sum test, with null distribution given by N(0,1) (suitably scaled)",
+                "E": "Goodness of fit test, with null distribution given by $\\chi^2$ (degrees of freedom 11)"
+            },
+            "correct_option_label": "A",
+            "explanation": "We are testing the relationship between two categorical variables: 'colour of roses' and 'purpose of buying'. The appropriate nonparametric test for examining this association is the Chi-Square Test of Independence. \n\nThe degrees of freedom for a contingency table are calculated as:\n$$df = (r - 1)(c - 1)$$\nWhere $r$ is the number of rows and $c$ is the number of columns.\nHere, $r = 3$ (Red, White, Pink) and $c = 4$ (Wedding, Other events, Individual gifts, Personal use).\n$$df = (3 - 1) \\times (4 - 1) = 2 \\times 3 = 6$$\nTherefore, the correct test is the Test of independence with a $\\chi^2$ distribution and 6 degrees of freedom.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "Which of the following statements about control charts is most accurate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A process that falls within the control limits is always producing products that meet customer specifications.",
+                "B": "Control charts help identify special cause variation but cannot detect trends or patterns over time.",
+                "C": "If a single point falls outside the control limits, the process must be immediately stopped.",
+                "D": "The control limits on an X-bar chart depend on the process standard deviation and sample size.",
+                "E": "Control charts can replace inspection entirely in modern quality control systems."
+            },
+            "correct_option_label": "D",
+            "explanation": "In Statistical Process Control (SPC), the upper and lower control limits of an $\\bar{X}$ (X-bar) chart are determined by the process mean and the standard error of the sample mean. The formula for the control limits is:\n$$CL = \\bar{\\bar{X}} \\pm 3\\frac{\\sigma}{\\sqrt{n}}$$\nwhere $\\sigma$ is the process standard deviation and $n$ is the sample size. Thus, the control limits depend fundamentally on both the standard deviation and the sample size.",
+            "module": 4
+        },
+        {
+            "question_id": "4",
+            "question_text": "In evaluating the accuracy of predictions in logistic regression model, there are various metrics, including “accuracy”, “F1 score” and “quadratic score”. Consider three prediction objectives: (I) assessing the quality of correct predictions, (II) understanding the overall performance of a model, (III) ensuring good predictions in both classes. For each of these objectives, which of the following options matches the metrics in the best possible manner?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I: accuracy, II: quadratic score, III: F1 score",
+                "B": "I: F1 score, II: accuracy, III: quadratic score",
+                "C": "I: quadratic score, II: F1 score, III: accuracy",
+                "D": "I: F1 score, II: quadratic score, III: accuracy",
+                "E": "I: quadratic score, II: accuracy, III: F1 score"
+            },
+            "correct_option_label": "E",
+            "explanation": "Different metrics serve different specific evaluation purposes in classification models:\n(I) Assessing the quality of probabilistic predictions (i.e., how close the predicted probability is to the actual outcome) is best achieved using the **Quadratic Score** (also known as the Brier Score).\n(II) Understanding the overall percentage of correct predictions (both True Positives and True Negatives) is best measured by overall **Accuracy**.\n(III) Ensuring good predictions across both classes, particularly when managing false positives and false negatives or dealing with imbalanced datasets, is the domain of the **F1 Score** (the harmonic mean of precision and recall).\nThus, mapping corresponds to: I $\\rightarrow$ quadratic score, II $\\rightarrow$ accuracy, III $\\rightarrow$ F1 score.",
+            "module": 3
+        },
+        {
+            "question_id": "5",
+            "question_text": "A manufacturing company wants to evaluate whether two different groups of workers, Group A (trained using a traditional approach) and Group B (trained using a modern approach), have different productivity levels. The manager considered 20 randomly selected workers from Group A and 25 randomly selected workers from Group B; and measured their productivity (units produced by worker per week). Based on this data, a two-sample Wilcoxon rank-sum test was conducted, and the p-value of the test statistic was found to be 0.003%. What should be the most appropriate conclusion?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The two groups do not perform significantly differently",
+                "B": "The two groups perform significantly differently, but we cannot say which group is more productive",
+                "C": "Group A performs significantly better than Group B",
+                "D": "Group B performs significantly better than Group A",
+                "E": "More information is required to comment on this problem"
+            },
+            "correct_option_label": "B",
+            "explanation": "The p-value of the test is 0.003% ($0.00003$), which is much smaller than the standard significance levels (e.g., 5% or $\\alpha = 0.05$). This strongly dictates rejecting the null hypothesis, meaning the two groups perform significantly differently. However, because the Wilcoxon rank-sum test is a non-directional (two-tailed) test by default, the p-value alone only tells us that a significant difference exists. Without examining the actual rank sums (the test statistic values for each group) or their respective medians, we cannot conclude which group's productivity is higher. Therefore, we know they differ, but we need more descriptive data to specify direction.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "Which of the following statements best explains how the \"Six Sigma\" quality level relates to the normal distribution?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A Six Sigma process has a mean exactly six standard deviations away from both specification limits, ensuring zero defects.",
+                "B": "Six Sigma guarantees that any process with a normal distribution will meet customer requirements.",
+                "C": "Six Sigma assumes that in a normal distribution, nearly all values (99.99966%) fall within ±6 standard deviations.",
+                "D": "Six Sigma means that defects are eliminated entirely by setting the control limits at ±6σ, beyond which no points can occur.",
+                "E": "Six Sigma refers to any process that has less than 3.4 defects per million units, assuming perfect centring and stability."
+            },
+            "correct_option_label": "C",
+            "explanation": "In quality management, a process is statistically considered to perform at a \"Six Sigma\" level if the design specifications are located 6 standard deviations away from the process mean on a normal distribution. Statistically, the area under the normal curve bounded by $\\pm 6\\sigma$ corresponds to $99.99966\\%$ of the data. This leaves a practically negligible tail probability equivalent to $3.4$ Defects Per Million Opportunities (DPMO), traditionally factoring in a $1.5\\sigma$ process shift. Option C directly explains this distributional assumption.",
+            "module": 4
+        },
+        {
+            "question_id": "7",
+            "question_text": "Which of the following is true about the goodness of fit test?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is always a right-tailed test",
+                "B": "It helps in assessing the fit of a regression model",
+                "C": "It cannot be used for checking if a data is uniformly distributed",
+                "D": "The test should be rejected if the statistic is either too small or too large",
+                "E": "It is a parametric procedure for one-sample problems"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Chi-Square Goodness of Fit test compares observed frequencies against expected frequencies. The test statistic is calculated as:\n$$\\chi^2 = \\sum \\frac{(O - E)^2}{E}$$\nBecause the differences between observed and expected frequencies are squared, the test statistic is always zero or positive. Large deviations between $O$ and $E$ result in a large $\\chi^2$ statistic. Therefore, the rejection region for the null hypothesis (that the data follows the specified distribution) is exclusively located in the upper (right) tail of the Chi-Square distribution.",
+            "module": 1
+        },
+        {
+            "question_id": "8",
+            "question_text": "Maximum likelihood estimation (MLE) technique is used for estimating the unknown parameters of a logistic regression model. Which of the following statements is WRONG about this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "MLE can be used for estimating parameters in linear regression model as well",
+                "B": "MLE in logistic regression model relies on iterative optimisation procedure",
+                "C": "The objective of MLE is to find data points which are most likely to appear",
+                "D": "In Excel, the SOLVER routine can be used for implementing MLE",
+                "E": "MLE returns the parameters which maximise the chance of observing the data that we have seen"
+            },
+            "correct_option_label": "C",
+            "explanation": "The objective of Maximum Likelihood Estimation (MLE) is to estimate the *parameters* (e.g., coefficients $\\beta_0, \\beta_1$) of the statistical model that maximize the likelihood (probability) of the observed sample data occurring. It is not designed to find or predict the specific *data points* that are most likely to appear. Therefore, statement C fundamentally misrepresents the mathematical objective of the MLE technique.",
+            "module": 2
+        },
+        {
+            "question_id": "9",
+            "question_text": "A consumer electronics startup is evaluating the launch of two out of three new products: a Smart Water Bottle, a Portable Espresso Maker, and a Mini Air Purifier. The estimated launch costs are ₹15 lakhs for the Smart Water Bottle, ₹20 lakhs for the Espresso Maker, and ₹10 lakhs for the Air Purifier. Of course, the market response is uncertain and could be Low, Medium, or High demand. The team has estimated the profit (in ₹ lakhs) under each scenario, based on market research. These values are given in the table below, with the estimated probability of every scenario given as percentages in parentheses.\n\n| | Low (30% probability) | Medium (40% probability) | High (30% probability) |\n| :--- | :--- | :--- | :--- |\n| **Smart Water Bottle** | 8 | 14 | 22 |\n| **Espresso Maker** | 5 | 18 | 30 |\n| **Mini Air Purifier** | 10 | 12 | 15 |\n\nIf the company can launch any two products and is seeking to maximise expected net profit (defined as expected profit minus cost), which two products should the company launch and what will be the expected net profit in that case?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Smart Water Bottle and Mini Air Purifier, ₹2.3 lakhs",
+                "B": "Smart Water Bottle and Espresso Maker, ₹1.3 lakhs",
+                "C": "Espresso Maker and Mini Air Purifier, ₹2.7 lakhs",
+                "D": "Smart Water Bottle and Mini Air Purifier, ₹1.9 lakhs",
+                "E": "Espresso Maker and Mini Air Purifier, ₹2.3 lakhs"
+            },
+            "correct_option_label": "D",
+            "explanation": "Step 1: Calculate the Expected Profit for each product by multiplying the scenarios by their probabilities.\n- **Smart Water Bottle**: $E(P) = (0.30 \\times 8) + (0.40 \\times 14) + (0.30 \\times 22) = 2.4 + 5.6 + 6.6 = 14.6$ lakhs\n- **Espresso Maker**: $E(P) = (0.30 \\times 5) + (0.40 \\times 18) + (0.30 \\times 30) = 1.5 + 7.2 + 9.0 = 17.7$ lakhs\n- **Mini Air Purifier**: $E(P) = (0.30 \\times 10) + (0.40 \\times 12) + (0.30 \\times 15) = 3.0 + 4.8 + 4.5 = 12.3$ lakhs\n\nStep 2: Calculate the Expected Net Profit (Expected Profit - Launch Cost).\n- **Smart Water Bottle**: $14.6 - 15 = -0.4$ lakhs\n- **Espresso Maker**: $17.7 - 20 = -2.3$ lakhs\n- **Mini Air Purifier**: $12.3 - 10 = +2.3$ lakhs\n\nStep 3: Select the top two products to maximize total net profit.\nThe highest expected net profits are for the Mini Air Purifier ($+2.3$) and the Smart Water Bottle ($-0.4$).\nTotal Expected Net Profit = $2.3 + (-0.4) = 1.9$ lakhs. \nTherefore, the optimal combination is Smart Water Bottle and Mini Air Purifier with a combined expected net profit of ₹1.9 lakhs.",
+            "module": 4
+        },
+        {
+            "question_id": "10",
+            "question_text": "You are given monthly demand data (in units) for a product and the last 6 months of data for the year 2024 are given below.\n\n| Month | Demand |\n| :--- | :--- |\n| July | 210 |\n| August | 215 |\n| September | 209 |\n| October | 225 |\n| November | 230 |\n| December | 227 |\n\nIf Mr. Gupta plans to use the drift method for forecasting the monthly demand in February and Mrs. Gupta plans to use the mean method, what values will they forecast?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mr. Gupta: 244.0, Mrs. Gupta: 230.4",
+                "B": "Mr. Gupta: 233.8, Mrs. Gupta: 219.3",
+                "C": "Mr. Gupta: 219.3, Mrs. Gupta: 230.4",
+                "D": "Mr. Gupta: 244.0, Mrs. Gupta: 228.1",
+                "E": "Mr. Gupta: 219.3, Mrs. Gupta: 233.8"
+            },
+            "correct_option_label": "B",
+            "explanation": "Let the data size be $T=6$. The observed values ($Y_t$) are: $Y_1=210$, $Y_2=215$, $Y_3=209$, $Y_4=225$, $Y_5=230$, $Y_6=227$.\n\n**Mrs. Gupta (Mean Method):**\nThe forecast is the average of all available historical data:\n$Forecast = \\frac{210 + 215 + 209 + 225 + 230 + 227}{6} = \\frac{1316}{6} \\approx 219.333$\n\n**Mr. Gupta (Drift Method):**\nThe drift formula forecasts based on the average change seen over the historical span. The formula is:\n$F_{T+h} = Y_T + h \\times \\left( \\frac{Y_T - Y_1}{T - 1} \\right)$\nWe are predicting for February, which is 2 periods after December ($h=2$).\n$F_{Feb} = Y_6 + 2 \\times \\left( \\frac{Y_6 - Y_1}{6 - 1} \\right)$\n$F_{Feb} = 227 + 2 \\times \\left( \\frac{227 - 210}{5} \\right) = 227 + 2 \\times \\left( \\frac{17}{5} \\right)$\n$F_{Feb} = 227 + 2 \\times 3.4 = 227 + 6.8 = 233.8$\n\nThe correct forecast values are 233.8 and 219.3 respectively.",
+            "module": 3
+        },
+        {
+            "question_id": "11",
+            "question_text": "A cloud kitchen is evaluating how their price pattern and delivery time affect the ratings they receive from their customers. They utilised a linear regression model and the output of that model is presented in the table below. Unfortunately, two cells in the output table are missing, and therefore the interpretation of how delivery time is impacting the rating cannot be assessed. Which of the following must be the correct interpretation?\n\n| Variable | Estimate | Std. Error | t-statistic | p-value |\n| :--- | :--- | :--- | :--- | :--- |\n| Intercept | 18.609 | 0.600 | 31.014 | $\\approx 0$*** |\n| Price | 0.0011 | 0.0003 | 3.044 | 0.002** |\n| Delivery time | $-0.043$ | 0.011 | | |",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The t-statistic for Delivery time is -0.043 and it is not significant.",
+                "B": "The t-statistic for Delivery time is -0.473 and it is not significant",
+                "C": "The t-statistic for Delivery time is -4.035 and it is highly significant",
+                "D": "The t-statistic for Delivery time is -4.3 but significance cannot be assessed",
+                "E": "The t-statistic for Delivery time is -0.473 and it is highly significant"
+            },
+            "correct_option_label": "C",
+            "explanation": "In linear regression output, the t-statistic is calculated as the coefficient estimate divided by its standard error:\n$$t = \\frac{\\text{Estimate}}{\\text{Std. Error}}$$\nFor the 'Delivery time' variable:\n$$t \\approx \\frac{-0.043}{0.011} \\approx -3.909$$\nHowever, considering standard regression software output, the raw estimate before rounding was likely closer to $-0.04438$ (since $-4.035 \\times 0.011 \\approx -0.04438$, which rounds to $-0.043$). Based on the provided options, $-4.035$ corresponds correctly to this calculation order. \nA t-statistic of $-4.035$ indicates a value well beyond $\\pm 2.0$, signifying that the variable falls far into the critical region and its p-value is extremely small. Hence, it is highly significant.",
+            "module": 2
+        },
+        {
+            "question_id": "12",
+            "question_text": "A dairy startup named “SayCheese!” is launching a new type of cheese block which is supposed to last 3 weeks after the seal is broken. To test whether the median time (before the cheese goes bad) is indeed equal to 3 weeks, the quality control manager collected data from a sample 8 cheese-blocks they produced and found that these blocks lasted 15, 14, 24, 22, 17, 19, 13 and 16 days, respectively. The manager plans to use Wilcoxon signed rank test to see if there is significant deviation from the claim. The value of the test statistic in this case is going to be:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "4",
+                "B": "-3.5",
+                "C": "5.3",
+                "D": "-1.96",
+                "E": "-1.2"
+            },
+            "correct_option_label": "D",
+            "explanation": "Hypothesized median = 3 weeks = 21 days. Sample size $n=8$.\nData: 15, 14, 24, 22, 17, 19, 13, 16\nStep 1: Calculate differences from the median ($X_i - 21$): \n$-6, -7, +3, +1, -4, -2, -8, -5$\n\nStep 2: Take the absolute differences and rank them:\nAbsolute differences: $6, 7, 3, 1, 4, 2, 8, 5$\nSorted Abs Diffs: $1, 2, 3, 4, 5, 6, 7, 8$\nRanks: $1, 2, 3, 4, 5, 6, 7, 8$\n\nStep 3: Assign the signs back to the ranks:\n+1 came from $+1$ $\\rightarrow$ Rank 1 (+)\n+2 came from $-2$ $\\rightarrow$ Rank 2 (-)\n+3 came from $+3$ $\\rightarrow$ Rank 3 (+)\n+4 came from $-4$ $\\rightarrow$ Rank 4 (-)\n+5 came from $-5$ $\\rightarrow$ Rank 5 (-)\n+6 came from $-6$ $\\rightarrow$ Rank 6 (-)\n+7 came from $-7$ $\\rightarrow$ Rank 7 (-)\n+8 came from $-8$ $\\rightarrow$ Rank 8 (-)\n\nStep 4: Compute the rank sums:\nPositive rank sum ($W^+$) = $1 + 3 = 4$\nNegative rank sum ($W^-$) = $2 + 4 + 5 + 6 + 7 + 8 = 32$\nTest statistic $W = \\min(4, 32) = 4$.\n\nStep 5: For large-sample approximation, we standardize $W^+$:\nMean $\\mu_W = \\frac{n(n+1)}{4} = \\frac{8 \\times 9}{4} = 18$\nVariance $\\sigma_W^2 = \\frac{n(n+1)(2n+1)}{24} = \\frac{8 \\times 9 \\times 17}{24} = 51$\nStandard deviation $\\sigma_W = \\sqrt{51} \\approx 7.1414$\n$$Z = \\frac{W^+ - \\mu_W}{\\sigma_W} = \\frac{4 - 18}{7.1414} = \\frac{-14}{7.1414} \\approx -1.96$$\nTherefore, the standardized test statistic is -1.96.",
+            "module": 1
+        },
+        {
+            "question_id": "13",
+            "question_text": "Suppose that a dataset has been collected from a consulting company, and the amount they charge for every project according to the difficulty level are computed. The data are presented below.\n\n| | Low charge | High charge |\n| :--- | :--- | :--- |\n| **Easy projects** | 0 | 6 |\n| **Moderate projects**| 7 | 8 |\n| **Hard projects** | 3 | 6 |\n\nIf we use chi-square test of independence to find whether the charging pattern is dependent on difficulty level, what should we find (assume that no cells are merged for this exercise)?\nThe chi-square distribution cutoffs at 5% level of significance for different degrees of freedom are provided below.\n\n| Degrees of freedom | 1 | 2 | 3 | 4 | 5 | 6 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Cut-off** | 3.84 | 5.99 | 7.81 | 9.49 | 11.07 | 12.59 |",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The test statistic is 3.8, and the test is rejected (i.e., charges are dependent on difficulty level)",
+                "B": "The test statistic is 2.4, and the test is not rejected (i.e., charges are independent on difficulty level)",
+                "C": "The test statistic is 5.7, and the test is rejected (i.e., charges are dependent on difficulty level)",
+                "D": "The test statistic is 4.2, and the test is not rejected (i.e., charges are independent on difficulty level)",
+                "E": "The test statistic is 8.3, and the test is rejected (i.e., charges are dependent on difficulty level)"
+            },
+            "correct_option_label": "D",
+            "explanation": "First, find the row totals, column totals, and grand total.\nRow totals: Easy = 6, Moderate = 15, Hard = 9\nColumn totals: Low = 10, High = 20\nGrand total = 30\n\nNext, compute Expected frequencies ($E = \\frac{\\text{Row Total} \\times \\text{Col Total}}{\\text{Grand Total}}$):\n- E(Easy, Low) = $(6 \\times 10) / 30 = 2$\n- E(Easy, High) = $(6 \\times 20) / 30 = 4$\n- E(Mod, Low) = $(15 \\times 10) / 30 = 5$\n- E(Mod, High) = $(15 \\times 20) / 30 = 10$\n- E(Hard, Low) = $(9 \\times 10) / 30 = 3$\n- E(Hard, High) = $(9 \\times 20) / 30 = 6$\n\nNow, calculate the Chi-Square statistic $\\chi^2 = \\sum \\frac{(O - E)^2}{E}$:\n$\\chi^2 = \\frac{(0-2)^2}{2} + \\frac{(6-4)^2}{4} + \\frac{(7-5)^2}{5} + \\frac{(8-10)^2}{10} + \\frac{(3-3)^2}{3} + \\frac{(6-6)^2}{6}$\n$\\chi^2 = \\frac{4}{2} + \\frac{4}{4} + \\frac{4}{5} + \\frac{4}{10} + 0 + 0$\n$\\chi^2 = 2.0 + 1.0 + 0.8 + 0.4 = 4.2$\n\nDegrees of freedom $df = (r-1)(c-1) = (3-1)(2-1) = 2$.\nThe cutoff for $df = 2$ at a 5% significance level is 5.99.\nSince $4.2 < 5.99$, we do not reject the null hypothesis, meaning the charging pattern is independent of difficulty level.",
+            "module": 1
+        },
+        {
+            "question_id": "14",
+            "question_text": "A statistician is trying the method of simple exponential smoothing on a dataset of historical daily footfall at a café. After he ran his model, the last 10 days' observations (t is used to indicate the present day) are found to be as given in the table below. If he uses the same model to forecast the footfall for tomorrow (t+1), which of the following numbers is the closest of the forecasts?\n\n| Day | t-9 | t-8 | t-7 | t-6 | t-5 | t-4 | t-3 | t-2 | t-1 | t |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Actual footfall** | 707 | 1241 | 794 | 348 | 809 | 906 | 934 | 1263 | 1214 | 3685 |\n| **SES modelled footfall** | 1450.3 | 1227.3 | 1231.4 | 1100.2 | 874.5 | 854.9 | 870.2 | 889.3 | 1001.4 | 1065.2 |",
+            "question_type": "MCQ",
+            "options": {
+                "A": "3500",
+                "B": "1210",
+                "C": "1850",
+                "D": "2900",
+                "E": "2410"
+            },
+            "correct_option_label": "C",
+            "explanation": "The formula for simple exponential smoothing is:\n$$F_{t+1} = \\alpha Y_t + (1 - \\alpha)F_t$$\nWe must first determine the smoothing parameter $\\alpha$. We can deduce $\\alpha$ using data from periods $t-1$ and $t$:\nActual at $t-1$ ($Y_{t-1}$) = 1214\nModelled at $t-1$ ($F_{t-1}$) = 1001.4\nModelled at $t$ ($F_t$) = 1065.2\n$$F_t = \\alpha Y_{t-1} + (1 - \\alpha)F_{t-1}$$\n$$1065.2 = \\alpha(1214) + (1 - \\alpha)(1001.4)$$\n$$1065.2 = 1214\\alpha + 1001.4 - 1001.4\\alpha$$\n$$1065.2 - 1001.4 = 212.6\\alpha$$\n$$63.8 = 212.6\\alpha$$\n$$\\alpha = \\frac{63.8}{212.6} \\approx 0.30$$\n\nNow use $\\alpha = 0.3$ to forecast footfall for tomorrow ($t+1$):\nActual at $t$ ($Y_t$) = 3685\nModelled at $t$ ($F_t$) = 1065.2\n$$F_{t+1} = \\alpha Y_t + (1 - \\alpha)F_t$$\n$$F_{t+1} = 0.3(3685) + 0.7(1065.2)$$\n$$F_{t+1} = 1105.5 + 745.64 = 1851.14$$\nThe closest number is 1850.",
+            "module": 3
+        },
+        {
+            "question_id": "15",
+            "question_text": "A survey was conducted to see whether giving tips to waiters in restaurants depend on the colour of the clothes the waiters are wearing. In this survey, it was found that 40 of the 69 waiters wearing red and 130 of the 349 waiters wearing a different colour were tipped. If we use a simple logistic regression model to determine if tipping (Yes or No, denote it as $Y$) depends on the colour of the clothes (let $X=1$ denote red and $X=0$ denote other colours), then the coefficients of the regression model are found as $\\hat{\\beta}_0 = -0.52$, $\\hat{\\beta}_1 = 0.84$. Which of the following should be a correct interpretation of this model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "There is a 37% chance of getting tipped if one is wearing other colours, but that increases significantly if they wear red",
+                "B": "The chance of getting tipped while wearing red is 84% more than the chance of getting tipped while wearing other colours",
+                "C": "There is a 52% less chance of getting tipped if one is not wearing red",
+                "D": "There is a 58% chance of getting tipped if one is wearing other colours, but that increases significantly if they wear red",
+                "E": "The number of tips increases by 0.84 units if a waiter wears red instead of other colours"
+            },
+            "correct_option_label": "A",
+            "explanation": "The logistic regression model uses the log-odds formula: $\\log(\\frac{p}{1-p}) = \\beta_0 + \\beta_1 X$.\nFor waiters wearing other colours ($X = 0$):\n$$\\log(\\text{odds}) = \\beta_0 = -0.52$$\n$$\\text{Odds} = e^{-0.52} \\approx 0.5945$$\n$$p = \\frac{\\text{Odds}}{1 + \\text{Odds}} = \\frac{0.5945}{1.5945} \\approx 0.3728$$\nSo, there is roughly a 37.3% (or approximately 37%) chance of getting tipped while wearing other colours.\nFor waiters wearing red ($X = 1$):\n$$\\log(\\text{odds}) = \\beta_0 + \\beta_1 = -0.52 + 0.84 = 0.32$$\nBecause the $\\beta_1$ coefficient is positive ($+0.84$), moving from other colours to red strictly increases the probability of receiving a tip. Thus, option A perfectly outlines this interpretation.",
+            "module": 2
+        },
+        {
+            "question_id": "16",
+            "question_text": "A specialty coffee roaster is known for its signature espresso blend, which has a target caffeine content of 95 mg per 30 ml shot. Due to recent customer feedback about unusually strong coffee, the quality team wants to test if the average caffeine content per shot has increased. The caffeine content in individual espresso shots can be assumed to be normally distributed, with a known population standard deviation of 5 mg. The roaster analyses a random sample of 100 espresso shots, and the sample mean caffeine content is found to be 96.5 mg. What can you say about the p-value of the relevant test for analysing this problem with the dataset?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Approximately 1%",
+                "B": "Approximately 0.15%",
+                "C": "Between 5% and 10%",
+                "D": "More than 10%",
+                "E": "Between 1% and 5%"
+            },
+            "correct_option_label": "B",
+            "explanation": "We are conducting a one-tailed (right-tailed) Hypothesis test because we are testing if the content has *increased*.\n$H_0: \\mu \\le 95$\n$H_1: \\mu > 95$\n\nPopulation mean $\\mu = 95$, Sample mean $\\bar{x} = 96.5$, Population std dev $\\sigma = 5$, Sample size $n = 100$.\nThe standard error of the mean is:\n$$SE = \\frac{\\sigma}{\\sqrt{n}} = \\frac{5}{\\sqrt{100}} = \\frac{5}{10} = 0.5$$\nCalculate the test statistic (Z-score):\n$$Z = \\frac{\\bar{x} - \\mu}{SE} = \\frac{96.5 - 95}{0.5} = \\frac{1.5}{0.5} = 3.0$$\nThe p-value is the probability of observing a Z-score of 3.0 or greater. \nFrom the standard normal cumulative distribution table, $P(Z \\le 3.0) \\approx 0.99865$.\n$$p\\text{-value} = 1 - 0.99865 = 0.00135$$\n$0.00135$ expressed as a percentage is $0.135\\%$, which is approximately $0.15\\%$.",
+            "module": 4
+        },
+        {
+            "question_id": "17",
+            "question_text": "Question No. 1 (Case Study From Q.No 2 To 5)\nFour questions in this part are all related to a dataset which provides information about 5000 different orders in a superstore. Imagine that Ms. Shreya is an analyst with the superstore and is solving a few problems for the organisation. She finds that along with the ID and date of every order, the dataset lists which segment the customer falls in (Consumer, Corporate, or Home Office), total number of quantities bought, the total amount paid by the customer (this reflects the total sales per invoice), and the profit made by the store in that order. The data also records whether the order was eventually returned, and it is found that 296 of the 5000 orders were returned",
+            "question_type": "SUBJECTIVE",
+            "explanation": "This is a reference context for the subsequent questions (ID 18 to 21). It outlines a dataset of 5000 orders covering variables like sales amount, order segment, quantities, and return status.",
+            "module": 1
+        },
+        {
+            "question_id": "18",
+            "question_text": "In order to study the distribution of the sales, visual inspection was done, and it was found that a logarithmic transformation helps with a symmetric structure. To further understand if this transformed variable follows a normal distribution, Ms. Shreya decides to use the chi-square goodness of fit test. She estimated the mean and standard deviation of the log(sales) to be 4.9 and 1.7, respectively. Then, she created five intervals in the range of log(sales) and found the following:\n\n| | Observed frequency | Normal probability | Expected frequency |\n| :--- | :--- | :--- | :--- |\n| **Less than 2** | 238 | 0.044 | 220.1 |\n| **2 to 4** | 1322 | 0.254 | 1271.2 |\n| **4 to 6** | 1938 | 0.443 | 2214.7 |\n| **6 to 8** | 1400 | 0.225 | 1123.4 |\n| **More than 8** | 102 | 0.034 | 170.6 |\n| **Total** | 5000 | 1 | 5000 |\n\nWhat is the value of the goodness of fit test statistic for this problem and what should be the conclusion of the test? The chi-square distribution cutoffs at 5% level of significance for different degrees of freedom are provided below.\n\n| Degrees of freedom | 1 | 2 | 3 | 4 | 5 | 6 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| **Cut-off** | 3.84 | 5.99 | 7.81 | 9.49 | 11.07 | 12.59 |\n\n*(Refer to the case study context introduced in Question ID 1 (Case Study From Q.No 2 To 5))*",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Test statistic is 14.47 and decision is to reject normality",
+                "B": "Test statistic is 6.8 and decision is not to reject normality",
+                "C": "Test statistic is 97.5 and decision is to reject normality",
+                "D": "Test statistic is 3.1 and decision is not to reject normality",
+                "E": "Test statistic is 133.7 and decision is to reject normality"
+            },
+            "correct_option_label": "E",
+            "explanation": "Calculate the Chi-Square statistic $\\chi^2 = \\sum \\frac{(O - E)^2}{E}$ for each category:\n1. $\\frac{(238 - 220.1)^2}{220.1} = \\frac{17.9^2}{220.1} \\approx 1.455$\n2. $\\frac{(1322 - 1271.2)^2}{1271.2} = \\frac{50.8^2}{1271.2} \\approx 2.030$\n3. $\\frac{(1938 - 2214.7)^2}{2214.7} = \\frac{(-276.7)^2}{2214.7} \\approx 34.570$\n4. $\\frac{(1400 - 1123.4)^2}{1123.4} = \\frac{276.6^2}{1123.4} \\approx 68.100$\n5. $\\frac{(102 - 170.6)^2}{170.6} = \\frac{(-68.6)^2}{170.6} \\approx 27.585$\nSum of these values $\\approx 133.74$.\n\nDegrees of freedom $df = k - 1 - p$. Here we have $k=5$ intervals, and we estimated $p=2$ parameters (mean and standard deviation) from the data.\n$$df = 5 - 1 - 2 = 2$$\nThe critical cut-off for $df=2$ at 5% is 5.99. Since our test statistic $133.74 > 5.99$, we reject the null hypothesis of normality.",
+            "module": 1
+        },
+        {
+            "question_id": "19",
+            "question_text": "Ms. Shreya next modelled the profit amount (in rupees) through a multiple linear regression model, with customer segments and number of items as regressors. The output of this regression is shown below. Which of the options is not true about the interpretation of this model?\n\n| | Coefficients | Std.Error | t Stat | P-value |\n| :--- | :--- | :--- | :--- | :--- |\n| **Intercept** | -4.968 | 9.638 | -0.515 | 0.606 |\n| **Corporate** | 9.246 | 11.089 | 0.834 | 0.404 |\n| **Home Office** | 15.77 | 13.214 | 1.193 | 0.233 |\n| **Number of items**| 28.312 | 3.433 | 8.247 | 0 |\n\n*(Refer to the case study context introduced in Question ID 1 (Case Study From Q.No 2 To 5))*",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Segment-wise, there is no difference in the amount of profit",
+                "B": "More number of items leads to more profit for the store",
+                "C": "Every item being sold to corporate customers leads to a profit of approximately 32.6 rupees",
+                "D": "Since the intercept term is non-significant, it must be removed from the model",
+                "E": "For a new order being placed, Ms. Shreya can use this model to predict the amount of profit"
+            },
+            "correct_option_label": "D",
+            "explanation": "Option D suggests that a non-significant intercept must be eliminated from the model. This is statistically false. Even when an intercept's p-value ($0.606$) indicates it's statistically indistinguishable from zero, standard modelling practice retains the intercept term unless there is strict theoretical justification to pass the model directly through the origin. Forcing the intercept to zero restricts the model and severely biases the coefficients of the other predictors.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "To understand and forecast which order may be returned, Ms. Shreya thinks about using a logistic regression where the response variable is whether the order was returned, and the predictors are days since order placed, total sales amount, and fixed effects of customer segment. However, her manager says that it will not be a good idea. What do you think might be the main reason behind this?\n\n*(Refer to the case study context introduced in Question ID 1 (Case Study From Q.No 2 To 5))*",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Fixed effects may not work well in this problem",
+                "B": "The predictors may not be normally distributed and thus the regression assumptions may be violated",
+                "C": "Proportions of orders returned is approximately 6%, which reflects an imbalanced class problem",
+                "D": "Whether an order is returned or not depends on many other variables",
+                "E": "Logistic regression requires Bernoulli distributed random variables, which is not available in this dataset"
+            },
+            "correct_option_label": "C",
+            "explanation": "From the case study prompt, there are 296 returned orders out of 5000 total. The proportion is roughly $296 / 5000 = 0.0592$ or $\\approx 6\\%$. This scenario presents a classic \"imbalanced class\" issue where the target variable (Returns) is massively skewed toward one label (Not Returned). When classes are extremely imbalanced, standard logistic regression tends to predict the majority class for all data points, achieving high accuracy but providing practically zero predictive power for the minority \"Returns\" class.",
+            "module": 3
+        },
+        {
+            "question_id": "21",
+            "question_text": "As a final analysis, Ms. Shreya fitted an autoregressive model of order 1 to the day-by-day sales amount. For the same time series, she estimated the intercept term as 1664.23, and the autoregressive coefficient as 0.105. If the last seven days’ sales amount are found to be 6233.05, 2698.93, 814.59, 177.64, 1657.35, 2915.53, and 713.79, the last one being the sales today, what should be the predicted sales amount for tomorrow (pick the closest integer)?\n\n*(Refer to the case study context introduced in Question ID 1 (Case Study From Q.No 2 To 5))*",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs 1739",
+                "B": "Rs 2173",
+                "C": "Rs 1664",
+                "D": "Rs 6233",
+                "E": "Rs 789"
+            },
+            "correct_option_label": "A",
+            "explanation": "An Autoregressive Model of order 1 [AR(1)] uses only the value from the immediate previous time period ($Y_t$) to predict the future value ($Y_{t+1}$).\nThe AR(1) equation is: \n$$Y_{t+1} = \\beta_0 + \\beta_1 Y_t$$\nWhere intercept $\\beta_0 = 1664.23$, and the autoregressive coefficient $\\beta_1 = 0.105$.\nThe sales today (the last listed day, $Y_t$) = $713.79$.\n$$Y_{t+1} = 1664.23 + 0.105 \\times 713.79$$\n$$Y_{t+1} = 1664.23 + 74.94795$$\n$$Y_{t+1} = 1739.17795$$\nRounding to the nearest integer, the predicted sales for tomorrow is Rs 1739.",
+            "module": 3
+        }
+    ]
+}

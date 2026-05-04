@@ -1,0 +1,360 @@
+{
+    "exam_metadata": {
+        "subject_name": "Business Statistics for Entrepreneurs",
+        "exam_date": "01 February 2026",
+        "batch": 1,
+        "attempt": "Re 3"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "A product manager at a subscription-box startup computed the sample first quartile as 120 weekly orders and the third quartile as 260 weekly orders. Applying the standard interquartile rule to flag potential outliers, should a single week with 500 orders be treated as an outlier and why?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "No - the spread between quartiles yields a high cutoff that places 500 within expected variation, so it should not be flagged.",
+                "B": "Yes - the middle 50% range is 140 orders, one-and-a-half times that is 210, the upper cutoff is 470, and 500 exceeds 470 so it is an outlier.",
+                "C": "No - because extreme business events can inflate counts, manual review is preferred before tagging as an outlier based solely on quartiles.",
+                "D": "Yes - any value more than twice the third quartile is considered extreme, and 500 is more than double 260 so it is an outlier."
+            },
+            "correct_option_label": "B",
+            "explanation": "To identify outliers using the Interquartile Range (IQR) method, we calculate the bounds as follows:\n\n1. Identify the quartiles: $Q1 = 120$ and $Q3 = 260$.\n2. Calculate the IQR: $IQR = Q3 - Q1 = 260 - 120 = 140$.\n3. Calculate the upper outlier boundary (fence): $Upper Limit = Q3 + 1.5 \\times IQR = 260 + 1.5(140) = 260 + 210 = 470$.\n\nSince the single week's value of $500$ exceeds the upper limit of $470$, it is statistically classified as an outlier.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "A wealth advisor computed a weighted average return across four mutual fund categories using the number of funds in each category and obtained 8.1%. If fund sizes (assets under management) vary substantially, what is the most defensible change in the weighting approach and why?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Keep using fund counts as weights because each fund represents an independent opportunity and counts reflect breadth across the category.",
+                "B": "Use the actual amounts invested (or assets) as weights so larger-dollar exposures contribute proportionally to the portfolio return.",
+                "C": "Use equal weights across categories to neutralize category size differences and treat each category as equally important.",
+                "D": "Switch to geometric averaging of category returns to account for compounding instead of changing weighting by size."
+            },
+            "correct_option_label": "B",
+            "explanation": "When dealing with financial portfolios where components (funds) vary significantly in size (assets under management), simple averages or counts distort the true overall performance. A Weighted Mean should be applied using the actual dollar amounts (assets) as weights ($w_i$). This ensures that the portfolio return accurately reflects the proportional contribution of larger-dollar exposures, making it the most defensible and economically sound approach.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "A product analyst for a food-delivery app records these fields: delivery_time in minutes, payment_method coded 1=card/2=wallet/3=COD, customer_rating on a 1–5 star scale, and order_id a numeric identifier. Which classification of these variables is correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "delivery_time: ratio; payment_method: ordinal because codes are numeric; customer_rating: ratio because numbers imply differences; order_id: nominal.",
+                "B": "delivery_time: nominal; payment_method: nominal; customer_rating: ordinal; order_id: interval because order sequence matters.",
+                "C": "delivery_time: ratio; payment_method: nominal; customer_rating: ordinal; order_id: nominal identifier with no quantitative meaning.",
+                "D": "delivery_time: interval; payment_method: ordinal; customer_rating: nominal; order_id: ratio since numeric codes exist."
+            },
+            "correct_option_label": "C",
+            "explanation": "Analyzing the data types:\n- `delivery_time`: Ratio scale because it is quantitative, continuous, and has an absolute zero.\n- `payment_method`: Nominal scale because the numeric codes (1, 2, 3) are merely labels for categorical data with no inherent ranking.\n- `customer_rating`: Ordinal scale because a 1-5 star rating represents a clear rank/order, but distances between points are not strictly defined as equal.\n- `order_id`: Nominal scale because it serves purely as a unique label/identifier without any quantitative or ranked meaning.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "An online sweets chain recorded weekly sales (n=132) with mean = 135.98, median = 105, Q1 = 82.25 and Q3 = 136.5. The regional manager suspects recent marketing campaigns produced irregular high weeks. What is the best next analytic step to test whether the high values are linked to those campaign events?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Group weekly sales by store and by whether a promotion ran, then compare the distributions and quartiles for each group.",
+                "B": "Remove the top 5% of sales values and recompute overall averages to see if the mean falls close to the median.",
+                "C": "Fit a time-ordered smoothing line to total weekly sales across all stores and check for seasonal patterns only.",
+                "D": "Compute coefficient of variation for the pooled series and benchmark the number against industry norms."
+            },
+            "correct_option_label": "A",
+            "explanation": "To investigate whether irregular high sales weeks are specifically linked to marketing campaigns, it is necessary to segregate the dataset into distinct categories based on the occurrence of the campaigns. Grouping sales data by \"promotion ran\" versus \"no promotion\" and comparing their respective distributions (using means, medians, and quartiles) is the appropriate descriptive analytics approach to reveal if the high values systematically correspond with the campaign periods.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "A salary survey (n=103) has mean = 25.92 lakhs and SD = 3.66. Standardized values show two observations more than three SDs above the mean, while a box-and-whisker procedure flagged several additional points (including 18, 32, 35, 38, 50). Which practical policy is best for deciding which records to mark for follow-up?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only flag values exceeding ±3 standard deviations and ignore the interquartile-based flags to avoid overreach.",
+                "B": "Use the IQR whisker-based rule alone and treat any value beyond 1.5×IQR from the quartiles as an outlier for removal.",
+                "C": "Flag for manual review any observation identified by either the standardized-score cutoff or the IQR/whisker rule, then investigate case-by-case.",
+                "D": "Automatically exclude all observations flagged by any detection rule and report summary statistics on the truncated sample."
+            },
+            "correct_option_label": "C",
+            "explanation": "Z-scores (standardization) and the Interquartile Range (IQR) method are both statistically valid techniques for outlier detection, but they are sensitive to different elements (e.g., Z-scores are sensitive to extreme deviations in normally distributed data, while IQR is robust to skewness). Rather than blindly excluding points, standard statistical practice dictates flagging anomalies generated by either method for manual review and case-by-case investigation to determine their validity.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "A placement survey (n=103) records satisfaction on five ordered categories and includes gender. The analyst must compare the percentage distribution of satisfaction between men and women so differences in proportions are clear. Which graphical display is most effective for that purpose?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Separate pie charts for men and women, with sector sizes showing the percent in each satisfaction category.",
+                "B": "Grouped vertical bars showing percentage frequency for each satisfaction level with one bar per gender per category.",
+                "C": "Stacked absolute-count bars that place total counts per satisfaction level with colored segments for genders.",
+                "D": "A histogram of satisfaction scores for the pooled sample to view the overall shape of the distribution."
+            },
+            "correct_option_label": "B",
+            "explanation": "To compare the relative frequencies (percentage distributions) of an ordinal categorical variable (satisfaction) across two distinct groups (gender), a grouped (side-by-side) vertical bar chart is the most effective data visualization method. It allows direct side-by-side visual comparison of proportions, unlike pie charts which are harder to compare, or absolute-count bars which don't emphasize relative percentage differences.",
+            "module": 1
+        },
+        {
+            "question_id": "7",
+            "question_text": "A robo-advisor reviews a dataset of 25 mutual funds: 16 are domestic equity, 12 have four- or five-star ratings, and 9 funds are both domestic and four-/five-star. If one fund is picked at random, what is the probability it is either domestic or has a four-/five-star rating?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "0.76",
+                "B": "0.64",
+                "C": "0.48",
+                "D": "0.36"
+            },
+            "correct_option_label": "A",
+            "explanation": "Let Event $A$ be picking a domestic equity fund, and Event $B$ be picking a four- or five-star rating fund.\nWe are given:\n- Total funds $n = 25$\n- Funds in $A$: $n(A) = 16$\n- Funds in $B$: $n(B) = 12$\n- Funds in both $A$ and $B$: $n(A \\cap B) = 9$\n\nUsing the Addition Law for probabilities:\n$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$\n\n$P(A) = \\frac{16}{25}$, $P(B) = \\frac{12}{25}$, $P(A \\cap B) = \\frac{9}{25}$\n\n$P(A \\cup B) = \\frac{16}{25} + \\frac{12}{25} - \\frac{9}{25} = \\frac{19}{25}$\n\n$P(A \\cup B) = 0.76$",
+            "module": 2
+        },
+        {
+            "question_id": "8",
+            "question_text": "A neobank estimates 8% of cardholders ultimately default. Historical data show every defaulter misses a monthly payment, while 25% of non-defaulters miss a payment. If a customer misses a payment, should the bank recall the card when the recall threshold is 0.25?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Yes - the posterior default probability is slightly above the threshold.",
+                "B": "No - the posterior default probability is below the cutoff.",
+                "C": "No - a missed payment gives no useful update, so do not recall the card.",
+                "D": "Yes - the posterior exceeds 0.30."
+            },
+            "correct_option_label": "A",
+            "explanation": "This requires applying Bayes' Theorem to update the probability of default based on a missed payment.\nLet $D$ = Default, $D'$ = Non-Default, and $M$ = Missed Payment.\nGiven:\n- Prior probability of default $P(D) = 0.08$\n- Prior probability of non-default $P(D') = 1 - 0.08 = 0.92$\n- Conditional probability $P(M|D) = 1.0$ (every defaulter misses a payment)\n- Conditional probability $P(M|D') = 0.25$\n\nWe need to find the posterior probability $P(D|M)$:\n$P(D|M) = \\frac{P(M|D)P(D)}{P(M|D)P(D) + P(M|D')P(D')}$\n\n$P(D|M) = \\frac{1.0 \\times 0.08}{(1.0 \\times 0.08) + (0.25 \\times 0.92)}$\n$P(D|M) = \\frac{0.08}{0.08 + 0.23} = \\frac{0.08}{0.31} \\approx 0.258$\n\nSince the posterior default probability of $\\approx 0.258$ is slightly above the recall threshold of $0.25$, the bank should recall the card.",
+            "module": 2
+        },
+        {
+            "question_id": "9",
+            "question_text": "A streaming platform finds Show A is a hit with probability 0.34, Show B is a hit with probability 0.60, and both shows are hits together with probability 0.18. Which statement best describes the relationship between the two hit events?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Independent",
+                "B": "Mutually exclusive",
+                "C": "Cannot decide",
+                "D": "Dependent"
+            },
+            "correct_option_label": "D",
+            "explanation": "Two events $A$ and $B$ are statistically independent if and only if the probability of their intersection equals the product of their individual probabilities: $P(A \\cap B) = P(A) \\times P(B)$.\n\nGiven:\n- $P(A) = 0.34$\n- $P(B) = 0.60$\n- $P(A \\cap B) = 0.18$\n\nCheck for independence:\n$P(A) \\times P(B) = 0.34 \\times 0.60 = 0.204$\nSince $P(A \\cap B) = 0.18 \\neq 0.204$, the occurrences of the two events alter the probabilities of each other. Therefore, the events are dependent.",
+            "module": 2
+        },
+        {
+            "question_id": "10",
+            "question_text": "Beryl Bakery reviewed 150 production days and recorded the number of defective cakes each day: 60 days with 0 defects, 45 days with 1 defect, 25 days with 2 defects, 10 days with 3 defects, and 10 days with 4 defects. Using this historical data as estimates, what is the best estimate of the probability that a randomly chosen day has two or fewer defects?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "About 0.87",
+                "B": "About 0.77",
+                "C": "About 0.93",
+                "D": "About 0.80"
+            },
+            "correct_option_label": "A",
+            "explanation": "To find the estimated probability of a randomly chosen day having two or fewer defects ($X \\le 2$), we sum the relative frequencies of 0, 1, and 2 defects from the historical sample data.\n\n- Days with 0 defects = 60\n- Days with 1 defect = 45\n- Days with 2 defects = 25\n- Total favorable days = $60 + 45 + 25 = 130$\n- Total days observed ($n$) = 150\n\nProbability $P(X \\le 2) = \\frac{130}{150} = \\frac{13}{15} \\approx 0.8667$.\nRounding to two decimal places gives about 0.87.",
+            "module": 1
+        },
+        {
+            "question_id": "11",
+            "question_text": "A founder places 8 identical, independent sales calls. Each call converts to an order with probability 0.25. For short-term staffing planning, which pair best describes the expected number of orders and the standard deviation of that count?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Expected 2.0 orders and standard deviation about 1.22",
+                "B": "Expected 1.5 orders and standard deviation about 1.22",
+                "C": "Expected 2.0 orders and standard deviation about 1.73",
+                "D": "Expected 2.0 orders and standard deviation about 0.87"
+            },
+            "correct_option_label": "A",
+            "explanation": "This follows a Binomial distribution because there are a fixed number of independent trials ($n = 8$) with a constant probability of success ($p = 0.25$).\n\nExpected Value (Mean) $E(X) = n \\times p$\n$E(X) = 8 \\times 0.25 = 2.0$ orders.\n\nVariance $Var(X) = n \\times p \\times (1 - p)$\n$Var(X) = 8 \\times 0.25 \\times 0.75 = 1.5$\n\nStandard Deviation $SD(X) = \\sqrt{Var(X)}$\n$SD(X) = \\sqrt{1.5} \\approx 1.2247$\n\nThe correct pair is an expected value of 2.0 and a standard deviation of approximately 1.22.",
+            "module": 2
+        },
+        {
+            "question_id": "12",
+            "question_text": "A chef knows the ideal frying temperature is a random variable X with mean 160ºC and standard deviation 5ºC. He asks you to express this on the Fahrenheit scale using Y = (9/5)X + 32. Which statement correctly gives the mean and standard deviation of Y?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mean = 320ºF, standard deviation = 1.8ºF",
+                "B": "Mean = 288ºF, standard deviation = 9ºF",
+                "C": "Mean = 320ºF, standard deviation = 25ºF",
+                "D": "Mean = 320ºF, standard deviation = 9ºF"
+            },
+            "correct_option_label": "D",
+            "explanation": "When applying a linear transformation $Y = aX + b$ to a random variable:\n1. The expected value (mean) shifts and scales: $E(Y) = aE(X) + b$\n2. The standard deviation scales by the absolute value of $a$, but is unaffected by the shift $b$: $SD(Y) = |a| \\times SD(X)$\n\nGiven $E(X) = 160$ and $SD(X) = 5$, and transformation $Y = \\frac{9}{5}X + 32$:\n\n$E(Y) = \\frac{9}{5}(160) + 32 = 288 + 32 = 320^{\\circ}F$.\n$SD(Y) = |\\frac{9}{5}| \\times 5 = 9^{\\circ}F$.\n\nThus, Mean = $320^{\\circ}F$ and standard deviation = $9^{\\circ}F$.",
+            "module": 2
+        },
+        {
+            "question_id": "13",
+            "question_text": "A bootstrapped e-commerce startup runs 10 independent promotional emails to cold leads. Historically each email converts with probability 1/6. The founder wants the chance of getting 3 or more purchases from the 10 emails to be at least 50%. What per-email conversion probability should they target to reach that threshold?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Approximately 0.18",
+                "B": "Approximately 0.24",
+                "C": "Approximately 0.259",
+                "D": "Approximately 0.30"
+            },
+            "correct_option_label": "C",
+            "explanation": "This follows a Binomial distribution $X \\sim Binomial(n=10, p)$. We need to find the target probability $p$ such that $P(X \\ge 3) \\ge 0.50$.\n\nRecall that $P(X \\ge 3) = 1 - P(X \\le 2)$. We test the options:\nIf we use $p \\approx 0.259$:\n$P(X=0) = (1 - 0.259)^{10} = (0.741)^{10} \\approx 0.050$\n$P(X=1) = 10(0.259)(0.741)^9 \\approx 0.174$\n$P(X=2) = 45(0.259)^2(0.741)^8 \\approx 0.274$\n\nSumming these probabilities: $P(X \\le 2) \\approx 0.050 + 0.174 + 0.274 = 0.498$.\nThen, $P(X \\ge 3) = 1 - 0.498 = 0.502$.\n\nSince $0.502 \\ge 0.50$, targeting a conversion probability of approximately 0.259 correctly achieves the 50% threshold for 3 or more purchases.",
+            "module": 2
+        },
+        {
+            "question_id": "14",
+            "question_text": "A popular roadside eatery averages 10 customer arrivals per hour. For staffing they consider a 30-minute slice. What is the probability that at most 10 customers arrive in a 30-minute interval?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Approximately 0.541",
+                "B": "Approximately 0.175",
+                "C": "Approximately 0.843",
+                "D": "Approximately 0.986"
+            },
+            "correct_option_label": "D",
+            "explanation": "Arrivals are modeled using the Poisson distribution. \nThe average rate is $\\lambda = 10$ arrivals per hour.\nFor a 30-minute interval ($0.5$ hours), the adjusted Poisson parameter is $\\Lambda = \\lambda \\times t = 10 \\times 0.5 = 5$ arrivals.\n\nWe need the cumulative probability $P(X \\le 10)$ for a Poisson random variable with $\\Lambda = 5$:\n$P(X \\le 10) = \\sum_{x=0}^{10} \\frac{e^{-5} \\times 5^x}{x!}$\n\nUsing Poisson CDF tables or formulas, evaluating this sum gives approximately $0.9863$.",
+            "module": 2
+        },
+        {
+            "question_id": "15",
+            "question_text": "A call center records an average of 6 incoming calls per 15 minutes. An agent plans a 3-minute stretch break when caught up. What is the chance the break is uninterrupted (no calls during the 3 minutes)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "About 0.18",
+                "B": "About 0.05",
+                "C": "About 0.301",
+                "D": "About 0.41"
+            },
+            "correct_option_label": "C",
+            "explanation": "Call arrivals follow a Poisson distribution. \nThe average rate is $6$ calls per $15$ minutes, which simplifies to $\\lambda = \\frac{6}{15} = 0.4$ calls per minute.\nFor a $t = 3$ minute break, the expected number of calls is $\\Lambda = \\lambda \\times t = 0.4 \\times 3 = 1.2$ calls.\n\nTo find the chance of an uninterrupted break, we need the probability of zero calls occurring ($X=0$):\n$P(X = 0) = \\frac{e^{-\\Lambda} \\times \\Lambda^0}{0!} = e^{-1.2}$\n\nCalculating $e^{-1.2}$ yields $\\approx 0.30119$. Thus, there is about a $0.301$ chance the break is uninterrupted.",
+            "module": 2
+        },
+        {
+            "question_id": "16",
+            "question_text": "A food-delivery startup measures a 70% chance that any given order is delivered on time. Over a 20-day promotional period the operations manager wants to know the probability that the team will achieve 15 or more timely deliveries. Using the binomial model (independent orders with identical probability), which is the best approximate value for that probability?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "About a 40% likelihood",
+                "B": "About a 25% likelihood",
+                "C": "About a 60% likelihood",
+                "D": "About a 10% likelihood"
+            },
+            "correct_option_label": "A",
+            "explanation": "This follows a Binomial distribution $X \\sim Binomial(n=20, p=0.70)$. We need to find $P(X \\ge 15)$.\n\nUsing the Normal Approximation to the Binomial:\nMean $\\mu = np = 20 \\times 0.70 = 14$\nVariance $\\sigma^2 = np(1-p) = 20 \\times 0.70 \\times 0.30 = 4.2$\nStandard Deviation $\\sigma = \\sqrt{4.2} \\approx 2.049$\n\nApplying the continuity correction to find $P(X \\ge 15)$, we calculate $P(Y > 14.5)$ for the normal curve:\n$Z = \\frac{X_{corrected} - \\mu}{\\sigma} = \\frac{14.5 - 14}{2.049} = \\frac{0.5}{2.049} \\approx 0.244$\n\nUsing the standard normal table, the area to the right of $Z = 0.244$ is roughly $0.4036$. This corresponds to about a 40% likelihood.",
+            "module": 2
+        },
+        {
+            "question_id": "17",
+            "question_text": "A mall manager models customer arrivals as Poisson with an average of 180 visitors per hour. For a 10-minute window that gives mean 30. If the manager instead expects 210 per hour (mean 35 in 10 minutes), how does the probability of observing between 10 and 20 arrivals in that 10-minute window change?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It first rises then falls as the rate increases",
+                "B": "It falls substantially",
+                "C": "It rises noticeably",
+                "D": "It stays nearly the same"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Poisson distribution describes the probability of a given number of events occurring in a fixed interval. Initially, the mean parameter $\\lambda$ is 30. The interval of interest (10 to 20 arrivals) is already on the left tail of the distribution, as the bulk of probability mass centers around 30.\n\nWhen the mean rate increases to $\\lambda = 35$, the entire distribution shifts further to the right. Consequently, the probability mass residing in the lower tail region (between 10 and 20) decreases significantly. Thus, the probability of observing values in that lower range falls substantially.",
+            "module": 2
+        },
+        {
+            "question_id": "18",
+            "question_text": "A production manager has n = 1,000 items and a defect probability p = 0.002 per item. They consider approximating the binomial count of defects by a Poisson with parameter λ = n·p. Which justification best supports using the Poisson approximation here?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because p is very small and n is large so the binomial mean np is modest",
+                "B": "Because n is large regardless of p",
+                "C": "Because p is not zero",
+                "D": "Because n·p is greater than 1"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Poisson distribution serves as an excellent approximation to the Binomial distribution under specific conditions: when the number of trials ($n$) is very large ($n \\to \\infty$), and the probability of success on a single trial ($p$) is very small ($p \\to 0$), such that the product $\\lambda = n \\times p$ remains a moderate, constant value. In this scenario, $n = 1000$ (large) and $p = 0.002$ (very small), making the expected value $np = 2$ modest.",
+            "module": 2
+        },
+        {
+            "question_id": "19",
+            "question_text": "Aleena runs a last-mile delivery fleet using an e-bike whose time between charges is well modelled as a uniform random variable between 6 and 10 hours. She asks: what is the probability a rider will need a recharge at or before 7 hours of use?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "About 0.75",
+                "B": "About 0.30",
+                "C": "About 0.25",
+                "D": "About 0.20"
+            },
+            "correct_option_label": "C",
+            "explanation": "This is a continuous Uniform Distribution with a lower limit $L = 6$ and upper limit $U = 10$.\nThe probability density function (PDF) is $f(x) = \\frac{1}{U - L} = \\frac{1}{10 - 6} = \\frac{1}{4}$ for $6 \\le x \\le 10$.\n\nWe need to find the probability that the time $X$ is at most 7 hours, which corresponds to the CDF $P(X \\le 7)$:\n$P(X \\le 7) = \\frac{x - L}{U - L} = \\frac{7 - 6}{10 - 6} = \\frac{1}{4} = 0.25$.",
+            "module": 3
+        },
+        {
+            "question_id": "20",
+            "question_text": "A café observes on average two customer arrivals per minute (assume a Poisson process). If staff take a scheduled 5-minute break, what is the probability that exactly 10 customers arrive during that 5-minute interval?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Approximately 0.25",
+                "B": "Approximately 0.005",
+                "C": "Approximately 0.1251",
+                "D": "Approximately 0.05"
+            },
+            "correct_option_label": "C",
+            "explanation": "Arrivals follow a Poisson distribution. \nThe average rate is $\\lambda = 2$ customers per minute.\nFor an interval of $t = 5$ minutes, the Poisson parameter $\\Lambda$ (the average expected in that interval) is $\\Lambda = \\lambda \\times t = 2 \\times 5 = 10$ customers.\n\nWe need the probability of exactly $X = 10$ arrivals:\n$P(X = y) = \\frac{e^{-\\Lambda} \\Lambda^y}{y!}$\n$P(X = 10) = \\frac{e^{-10} \\times 10^{10}}{10!}$\n$P(X = 10) \\approx \\frac{0.0000454 \\times 10,000,000,000}{3,628,800} \\approx 0.1251$",
+            "module": 2
+        },
+        {
+            "question_id": "21",
+            "question_text": "A component's diameter is approximately normal with mean 50 mm and standard deviation 3 mm. Management asks: what symmetric interval around the mean will contain about 90% of diameters?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "[47.0 mm, 53.0 mm]",
+                "B": "[44.0 mm, 56.0 mm]",
+                "C": "[45.1 mm, 54.9 mm]",
+                "D": "[42.1 mm, 57.9 mm]"
+            },
+            "correct_option_label": "C",
+            "explanation": "The component diameter follows a Normal distribution with $\\mu = 50$ and $\\sigma = 3$. \nTo find a symmetric interval containing 90% of the data, we look for the central 90% area, leaving 5% (0.05) in each tail.\n\nThe critical Z-value for a 90% confidence interval ($Z_{\\alpha/2}$) is approximately $1.645$.\nThe interval is calculated as $\\mu \\pm (Z \\times \\sigma)$:\n$Margin \\, of \\, Error = 1.645 \\times 3 = 4.935$\n\nLower Limit: $50 - 4.935 = 45.065 \\approx 45.1$\nUpper Limit: $50 + 4.935 = 54.935 \\approx 54.9$\n\nThe symmetric interval is approximately $[45.1 \\, \\text{mm}, 54.9 \\, \\text{mm}]$.",
+            "module": 3
+        },
+        {
+            "question_id": "22",
+            "question_text": "A city tram stop reports that the average wait for the next tram is 3 minutes. A commuter has already waited 4 minutes. What is the best estimate of the probability the commuter will still need to wait at least 2 more minutes?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "About 0.26",
+                "B": "About 0.63",
+                "C": "About 0.51",
+                "D": "About 0.39"
+            },
+            "correct_option_label": "C",
+            "explanation": "Waiting times are modelled by the Exponential Distribution. The average wait time (mean) is $E[X] = \\frac{1}{\\lambda} = 3$ minutes, thus the rate parameter is $\\lambda = 1/3$.\n\nA defining characteristic of the Exponential Distribution is the \"Memoryless Property\", meaning the probability of waiting a subsequent time $t$ is unaffected by the time already elapsed $s$ ($P(X > s + t | X > s) = P(X > t)$).\n\nWe need the probability of waiting at least 2 *more* minutes, which simply equals $P(X > 2)$:\n$P(X > 2) = e^{-\\lambda x} = e^{-(1/3) \\times 2} = e^{-2/3} \\approx e^{-0.6667} \\approx 0.5134$.",
+            "module": 3
+        },
+        {
+            "question_id": "23",
+            "question_text": "A bike-share hub averages 5 arrivals per hour. Which calculation gives the probability that no bikes arrive in the next 30 minutes?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "About 0.918",
+                "B": "About 0.223",
+                "C": "About 0.082",
+                "D": "About 0.0067"
+            },
+            "correct_option_label": "C",
+            "explanation": "Arrivals follow a Poisson distribution. The rate is given as $\\lambda = 5$ arrivals per hour.\nFor a 30-minute interval ($0.5$ hours), the adjusted Poisson parameter $\\Lambda$ is $\\Lambda = 5 \\times 0.5 = 2.5$.\n\nWe need the probability of $0$ arrivals ($X=0$):\n$P(X = 0) = \\frac{e^{-\\Lambda} \\Lambda^0}{0!} = e^{-2.5}$\n\nEvaluating $e^{-2.5}$ yields $\\approx 0.08208$, or about $0.082$.",
+            "module": 2
+        },
+        {
+            "question_id": "24",
+            "question_text": "DroneParts Ltd. makes two mating components. Machine A yields diameters ~N(50.00, 0.04^2) mm and Machine B yields diameters ~N(50.10, 0.05^2) mm, independent. Let clearance = B − A. What is the probability the clearance is negative (i.e., part B is smaller than A)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "About 0.41",
+                "B": "About 0.059",
+                "C": "About 0.16",
+                "D": "About 0.003"
+            },
+            "correct_option_label": "B",
+            "explanation": "Let $C$ represent the clearance, such that $C = B - A$. Since $A$ and $B$ are independent normal random variables, their linear combination $C$ is also normally distributed.\n\nMean of $C$: $\\mu_C = \\mu_B - \\mu_A = 50.10 - 50.00 = 0.10$ mm\nVariance of $C$: Because variance adds for independent variables regardless of subtraction, $Var(C) = \\sigma_B^2 + \\sigma_A^2 = 0.05^2 + 0.04^2 = 0.0025 + 0.0016 = 0.0041$.\nStandard Deviation of $C$: $\\sigma_C = \\sqrt{0.0041} \\approx 0.06403$ mm\n\nWe need the probability that clearance is negative, $P(C < 0)$. \nStandardizing to find the Z-score:\n$Z = \\frac{x - \\mu_C}{\\sigma_C} = \\frac{0 - 0.10}{0.06403} \\approx -1.562$\n\nUsing the standard normal CDF, $P(Z < -1.56) \\approx 0.0594$.",
+            "module": 3
+        },
+        {
+            "question_id": "25",
+            "question_text": "A quality team inspects a batch of 200 electronic modules. Historical defect probability is 0.03 per module. Using a normal approximation to the binomial and applying the usual 0.5 correction for discreteness, what is the approximate probability that the sample contains at most 8 defective modules?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "About 0.65",
+                "B": "About 0.75",
+                "C": "About 0.85",
+                "D": "About 0.95"
+            },
+            "correct_option_label": "C",
+            "explanation": "The actual count is Binomially distributed: $X \\sim Binomial(n=200, p=0.03)$. We are estimating $P(X \\le 8)$.\n\nCalculate Normal parameters:\nMean $\\mu = n \\times p = 200 \\times 0.03 = 6$\nVariance $\\sigma^2 = n \\times p \\times (1-p) = 6 \\times 0.97 = 5.82$\nStandard Deviation $\\sigma = \\sqrt{5.82} \\approx 2.412$\n\nApply continuity correction for \"at most 8\" ($X \\le 8$) by extending the range by $0.5$ to account for the discrete bar reaching $8.5$. Thus we find $P(Y < 8.5)$ on the continuous curve.\n$Z = \\frac{8.5 - \\mu}{\\sigma} = \\frac{8.5 - 6}{2.412} = \\frac{2.5}{2.412} \\approx 1.036$\n\nLooking up $Z = 1.036$ on a standard normal table, the cumulative probability is approximately $0.85$.",
+            "module": 3
+        }
+    ]
+}

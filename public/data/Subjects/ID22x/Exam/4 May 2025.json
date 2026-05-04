@@ -1,0 +1,710 @@
+{
+    "exam_metadata": {
+        "subject_name": "Indian Knowledge System",
+        "exam_date": "04 May 2025",
+        "batch": 1,
+        "attempt": "Main"
+    },
+    "questions": [
+        {
+            "question_id": "30",
+            "question_text": "The key concepts that make Pāṇini's Aṣṭādhyāyī relevant for the application of Natural Language Processing (NLP) are its ______ and ______ structure.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "limited; poetic",
+                "B": "generative; algorithmic",
+                "C": "rhythmic; symbolic",
+                "D": "simple; English-like"
+            },
+            "correct_option_label": "B",
+            "explanation": "Pāṇini's Aṣṭādhyāyī is highly relevant to Natural Language Processing (NLP) because it operates on a rule-based, generative, and algorithmic structure. It uses an \"If-Then\" logic similar to modern computer programming to derive words from roots.",
+            "module": 3
+        },
+        {
+            "question_id": "49",
+            "question_text": "Which section of the Mahābhārata is a rich source of guidance on governance and public administration?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Vana Parva",
+                "B": "Aśvamedha Parva",
+                "C": "Śānti Parva",
+                "D": "Sabhā Parva"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Śānti Parva is Book 12 of the Mahābhārata and contains 120 chapters of Bhīṣma’s advice to Yudhiṣṭhira on taxation, kingship, and the origin of the state, serving as a rich source of public administration guidelines.",
+            "module": 7
+        },
+        {
+            "question_id": "27",
+            "question_text": "How did the 'Siddhānta' tradition contribute to the development of Indian astronomy from an analytical perspective?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It focused on philosophical debates about the cosmos",
+                "B": "It emphasized astrological predictions over scientific calculations",
+                "C": "It laid the foundation for computational and mathematical approaches to astronomy",
+                "D": "It rejected earlier astronomical models in favor of modern physics"
+            },
+            "correct_option_label": "C",
+            "explanation": "Pioneered by Aryabhata, the Siddhāntik tradition established full-fledged mathematical astronomy. It laid the foundation for computational approaches, relying on S&T principles rather than just qualitative observation.",
+            "module": 5
+        },
+        {
+            "question_id": "4",
+            "question_text": "Suppose you find an ancient iron artifact with no signs of rust despite being exposed to the elements. What hypothesis could you form based on Indian metallurgical traditions?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It was stored underground for centuries",
+                "B": "It was painted with a protective coating",
+                "C": "It was covered in gold leaf",
+                "D": "It was likely made using ancient Indian high-phosphorus iron techniques"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Delhi Iron Pillar is a famous example of ancient Indian metallurgical expertise, remaining corrosion-resistant for centuries. This rust resistance is attributed to high-phosphorus iron techniques used by ancient Indian metallurgists.",
+            "module": 6
+        },
+        {
+            "question_id": "47",
+            "question_text": "In Āyurveda, which elemental combination constitutes Pitta?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Fire and Water",
+                "B": "Earth and Air",
+                "C": "Water and Earth",
+                "D": "Air and Space"
+            },
+            "correct_option_label": "A",
+            "explanation": "In Āyurveda, the Pitta doṣa is primarily composed of the elements Fire and Water. It governs chemical activities, digestion, and warmth in the body.",
+            "module": 8
+        },
+        {
+            "question_id": "19",
+            "question_text": "According to the Jaina classification of reality, which of the following correctly distinguishes between jīva and ajīva?\n\ni) Jīva – immobile; ajīva – mobile\nii) Jīva – physical entities; ajīva – non-physical entities\niii) Jīva – living entities; ajīva – non-living entities\niv) Jīva – illusions; ajīva – real substances",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only i",
+                "B": "Both i and ii",
+                "C": "Only iii",
+                "D": "Both ii and iv"
+            },
+            "correct_option_label": "C",
+            "explanation": "Jaina metaphysics strictly divides reality into two categories: Jīva, representing sentient, living entities, and Ajīva, representing non-living matter or insentient entities.",
+            "module": 2
+        },
+        {
+            "question_id": "45",
+            "question_text": "In Kauṭilya's governance structure, what distinguishes an ‘Amātya’ from a ‘Mantri’?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mantris focus on lawmaking, while Amātyas govern foreign relations",
+                "B": "Amātyas belong to the royal family, while Mantris are elected",
+                "C": "Mantris handle taxation, while Amātyas oversee military affairs",
+                "D": "Amātyas are responsible for execution, while Mantris serve as advisors"
+            },
+            "correct_option_label": "D",
+            "explanation": "According to Kauṭilya's Arthaśāstra, a 'Mantri' belongs to a small group for secret consultations (advisors), while an 'Amātya' refers to high-level executive officers tasked with implementation and execution.",
+            "module": 7
+        },
+        {
+            "question_id": "6",
+            "question_text": "What is the significance of literary sources in understanding India's technological past?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They are more reliable than archaeological evidence",
+                "B": "They replace the need for physical artifacts",
+                "C": "They focus only on religious aspects, not science",
+                "D": "They provide descriptions of technologies used in different periods"
+            },
+            "correct_option_label": "D",
+            "explanation": "Literary sources like the Yuktikalpataru or Brihat-Samhita provide extensive vocabulary and descriptions of ancient engineering, architecture, and metallurgy, serving as a crucial pillar alongside archaeological and living evidence.",
+            "module": 6
+        },
+        {
+            "question_id": "50",
+            "question_text": "In Sanskrit literature, the term subhāṣita refers to a/an _______.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Royal commandments in verse",
+                "B": "Beautifully rendered utterances or sayings",
+                "C": "Ancient legal code",
+                "D": "Scientific treatise in poetry"
+            },
+            "correct_option_label": "B",
+            "explanation": "The term Su-bhāṣita translates to \"beautifully uttered\" or \"well-spoken.\" It represents insightful observations in poetic meter, often conveying moral values or social wisdom.",
+            "module": 4
+        },
+        {
+            "question_id": "29",
+            "question_text": "How does the triguṇa framework in Indian Psychology address a fundamental philosophical challenge about human nature?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It reveals the origin of karma and rebirth",
+                "B": "It identifies the reason behind physical illnesses",
+                "C": "It explains the difference between good and evil actions",
+                "D": "It accounts for the diversity in human behavior despite a shared metaphysical essence"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Triguṇa framework explains that while all humans share the same core identity (Sat-Chit-Ānanda), the varying proportions of Sattva, Rajas, and Tamas lead to the vast diversity in individual human behavior and personalities.",
+            "module": 8
+        },
+        {
+            "question_id": "36",
+            "question_text": "What is the primary focus of Kautilya's Arthashastra?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Economic policies and taxation systems",
+                "B": "The philosophical origins of the state",
+                "C": "Practical administration and governance",
+                "D": "Comparative analysis of different forms of governance"
+            },
+            "correct_option_label": "C",
+            "explanation": "Kauṭilya's Arthaśāstra is primarily a comprehensive treatise dealing with practical state affairs, internal administration, public welfare, and external policy to ensure a prosperous and secure state.",
+            "module": 7
+        },
+        {
+            "question_id": "28",
+            "question_text": "In a linguistics workshop, a student says that Sanskrit has survived with minimal corruption over millennia. Based on Śikṣā, how would you best explain this phenomenon?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The phonetics of Sanskrit were rigorously preserved through a science of pronunciation",
+                "B": "Its vocabulary was codified in Pāṇini's Aṣṭādhyāyī",
+                "C": "It was protected by secrecy and limited access to texts",
+                "D": "Its written script has been unaltered since ancient times"
+            },
+            "correct_option_label": "A",
+            "explanation": "Śikṣā is the Vedāṅga dedicated to the science of phonetics and pronunciation. It systematically mapped out articulatory locations, ensuring that oral knowledge was preserved with exact fidelity over thousands of years.",
+            "module": 3
+        },
+        {
+            "question_id": "25",
+            "question_text": "What is the Āyurvedic recommendation for consuming Guru-āhāra?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Eat double the usual amount",
+                "B": "Eat only half of one's hunger",
+                "C": "Eat till full satiety is reached",
+                "D": "Avoid it completely"
+            },
+            "correct_option_label": "B",
+            "explanation": "According to Āyurveda, Guru-āhāra refers to food that is heavy and hard to digest. It is recommended to consume such food only to half the capacity of one's hunger to allow for proper digestion.",
+            "module": 8
+        },
+        {
+            "question_id": "16",
+            "question_text": "Which of the following best describes the role of the Yajurveda in a Vedic ritual?\n\ni) Invoking the devatā through poetic hymns\nii) Singing mantra-s in a melodious manner to please the gods\niii) Performing the actual yajña with procedural knowledge\niv) Coordinating and monitoring the entire ritual",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only i",
+                "B": "Only ii",
+                "C": "Only iii",
+                "D": "Both i and ii"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Yajurveda serves as a manual for rituals, providing the procedural instructions and mantras necessary for performing actual yajñas (sacrifices) by the Adhvaryu priest.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Which of the following is NOT one of the eight limbs of Vāstu-śāstra?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Alaṅkaraṇa",
+                "B": "Jyotiṣa",
+                "C": "Vāstoṣpati",
+                "D": "Yajamāna"
+            },
+            "correct_option_label": "B",
+            "explanation": "Jyotiṣa is a Vedāṅga dealing with astronomy, not one of the eight limbs of Vāstu-śāstra. The eight limbs include Yajamāna, Sthāpatyam, Śilpi, Bhūmi, Vāstoṣpati, Padavinyāsa, Vāstu, and Alaṅkaraṇa.",
+            "module": 7
+        },
+        {
+            "question_id": "15",
+            "question_text": "What modern mathematical concept is most closely related to Piṅgala's binary cycle of length 3?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Pascal's Triangle",
+                "B": "De Bruijn sequence",
+                "C": "Newton's binomial theorem",
+                "D": "Fibonacci sequence"
+            },
+            "correct_option_label": "B",
+            "explanation": "Piṅgala explored the generation of binary combinations (laghu and guru) in prosody. His mnemonic mapping of 3-bit sequences anticipates the modern mathematical concept of the de Bruijn sequence by over 2,000 years.",
+            "module": 5
+        },
+        {
+            "question_id": "48",
+            "question_text": "You are designing a classroom activity that encourages students to refute each other's claims without making claims of their own. Which type of argument does this mirror in the Nyāya classification?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Vāda",
+                "B": "Chala",
+                "C": "Vitaṇḍā",
+                "D": "Jalpa"
+            },
+            "correct_option_label": "C",
+            "explanation": "In Nyāya logic, Vitaṇḍā refers to a type of debate where the participant solely aims to refute the opponent's thesis without establishing their own positive claim.",
+            "module": 4
+        },
+        {
+            "question_id": "46",
+            "question_text": "Match the following terms from the Indian epistemological framework with their correct meanings:\n\n1. Pramātṛ\n2. Pramāṇa\n3. Prameya\n4. Pramā\n\nE. The reliable means of acquiring knowledge\nF. The resulting true cognition\nG. The object of knowledge\nH. The knower who acquires knowledge",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1F, 2G, 3E, 4H",
+                "B": "1H, 2E, 3G, 4F",
+                "C": "1G, 2F, 3H, 4E",
+                "D": "1E, 2H, 3F, 4G"
+            },
+            "correct_option_label": "B",
+            "explanation": "In Indian epistemology, Pramātṛ is the knower (H), Pramāṇa is the means of knowledge (E), Prameya is the object of knowledge (G), and Pramā is the valid knowledge/cognition acquired (F).",
+            "module": 4
+        },
+        {
+            "question_id": "7",
+            "question_text": "Who is the author of the Mānasollāsa?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Pāṇini",
+                "B": "Someśvara",
+                "C": "Bhāskara",
+                "D": "Rājaśekhara"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Mānasollāsa is an encyclopedic work written by the Chalukya king Someśvara III in the 12th century, covering topics like statecraft, architecture, and arts.",
+            "module": 4
+        },
+        {
+            "question_id": "13",
+            "question_text": "Which of the following is a work on Tamil grammar?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cilappatikāram",
+                "B": "Periyapurāṇam",
+                "C": "Tolkāppiyam",
+                "D": "Puṟanāṉūṟu"
+            },
+            "correct_option_label": "C",
+            "explanation": "Tolkāppiyam is the oldest surviving work on Tamil grammar, covering phonology, morphology, and poetics. It serves as a foundational text for the Tamil language.",
+            "module": 3
+        },
+        {
+            "question_id": "11",
+            "question_text": "What does ‘Prakṛti’ refer to in Āyurvedic diagnosis?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Digestive fire (Agni) level",
+                "B": "The primary imbalance in doṣās",
+                "C": "The patient's inherent constitution",
+                "D": "Mental condition of a patient"
+            },
+            "correct_option_label": "C",
+            "explanation": "In Āyurveda, Prakṛti refers to an individual's unique physical and psychological constitution, determined at conception by the specific balance of the three doṣas.",
+            "module": 8
+        },
+        {
+            "question_id": "42",
+            "question_text": "A practitioner wishes to reduce distractions from the outer world to focus inward. Based on principles of Indian psychology, which value best supports this inner orientation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Dhṛti (Determination)",
+                "B": "Vairāgya (Dispassion)",
+                "C": "Jijñāsā (Curiosity)",
+                "D": "Karuṇā (Compassion)"
+            },
+            "correct_option_label": "B",
+            "explanation": "Vairāgya (detachment or dispassion) is essential in Indian psychology and yoga to withdraw the mind's attachment to external sensory objects, allowing focus to turn inward toward the self.",
+            "module": 8
+        },
+        {
+            "question_id": "41",
+            "question_text": "Which of the following would be the responsibility of a Vardhakin in a construction project?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Overseeing the financial aspects of construction",
+                "B": "Cutting raw materials like wood and stone",
+                "C": "Joining parts and refining the surfaces of a building",
+                "D": "Drafting the initial design and measurements"
+            },
+            "correct_option_label": "C",
+            "explanation": "In traditional architecture, the Vardhakin is the finisher whose responsibilities include joining different parts of the structure together and polishing or refining surfaces.",
+            "module": 7
+        },
+        {
+            "question_id": "35",
+            "question_text": "Which of the following best demonstrates the correct application of the subtractive principle in expressing the number 29 in ancient Indian numerical conventions?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Dvisaptati",
+                "B": "Dvādaśa-navati",
+                "C": "Ekonatriṃśat",
+                "D": "Caturdaśa"
+            },
+            "correct_option_label": "C",
+            "explanation": "The subtractive principle is seen in \"Ekonatriṃśat\" (Eka-ūna-triṃśat), which literally means \"one less than thirty,\" hence representing the number 29.",
+            "module": 5
+        },
+        {
+            "question_id": "5",
+            "question_text": "The primary reason for the use of ślokas, sūtras, and mnemonics in traditional Indian Knowledge Systems was to promote ______ and ease of ______ in oral traditions.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "poetic form; transmission",
+                "B": "storytelling; understanding",
+                "C": "brevity; memorization",
+                "D": "uniformity; interpretation"
+            },
+            "correct_option_label": "C",
+            "explanation": "Because ancient Indian knowledge was preserved orally, it needed to be highly concise (brevity) using Ślokas and Sūtras to make memorization and accurate transmission easier.",
+            "module": 1
+        },
+        {
+            "question_id": "12",
+            "question_text": "How did ancient Indian water conservation techniques address seasonal variations in water availability?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "By creating interconnected reservoirs and stepwells",
+                "B": "By using rain-fed agriculture",
+                "C": "By relying on river floods for irrigation",
+                "D": "By constructing deep wells"
+            },
+            "correct_option_label": "A",
+            "explanation": "Ancient systems like those in Dholavira used massive interconnected reservoirs, and structures like Step-wells (Vavs) were specifically designed to harvest and store water during monsoons for use in dry seasons.",
+            "module": 6
+        },
+        {
+            "question_id": "38",
+            "question_text": "If the kośas are like garments for the self, what does this metaphor imply about the nature of self in Indian Psychology?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The self is unknowable because it is hidden by too many layers",
+                "B": "The self is identical to the most subtle garment (ānandamaya-kośa)",
+                "C": "The self is adaptable and changes identity with every kośa",
+                "D": "The self is unchanging and distinct from all its coverings"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Pañca-koṣa framework describes five sheaths covering consciousness. The metaphor implies that just as a person is distinct from their clothes, the true Self (Atman) is distinct and unchanging, regardless of the physical or mental 'sheaths' covering it.",
+            "module": 8
+        },
+        {
+            "question_id": "8",
+            "question_text": "Which Vedāṅga contributed to the development of the Indian calendar system?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Jyotiṣam",
+                "B": "Kalpaḥ",
+                "C": "Chandaḥ",
+                "D": "Vyākaraṇam"
+            },
+            "correct_option_label": "A",
+            "explanation": "Jyotiṣam is the Vedāṅga dealing with astronomy. It studies the movements of the sun, moon, and stars to calculate time and determine auspicious moments, forming the basis of the Indian calendar (Pañcāṅga).",
+            "module": 1
+        },
+        {
+            "question_id": "31",
+            "question_text": "What is the basis of a lunar month in the Indian calendar?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The time taken by the Moon to move from one Rāśi to another",
+                "B": "The time taken by the Moon to return to the same position relative to the Sun",
+                "C": "The time taken by the Moon to complete one full rotation",
+                "D": "The time taken by the Moon to complete a sidereal revolution"
+            },
+            "correct_option_label": "B",
+            "explanation": "A lunar month (Synodic month) in the Indian calendar is based on the interval between two successive new moons or full moons, which is the time it takes for the Moon to return to the same position relative to the Sun.",
+            "module": 5
+        },
+        {
+            "question_id": "43",
+            "question_text": "From the Indian psychological lens, how is one able to recall having had a good sleep, despite the absence of dreams or waking awareness?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because the gross body recorded the event",
+                "B": "Because the subtle body was active and observing",
+                "C": "Because the brain generates false memory",
+                "D": "Because consciousness persists and allows for post-facto reflection"
+            },
+            "correct_option_label": "D",
+            "explanation": "In Suṣupti (deep sleep), both the gross and subtle bodies are inactive. The ability to wake up and say \"I slept peacefully\" proves that a background witnessing consciousness (Turīya) was continuously present.",
+            "module": 8
+        },
+        {
+            "question_id": "14",
+            "question_text": "What are the five components of the Pañcāṅga?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Tithi, Saṃvatsara, Ṛtu, Māsa, Pakṣa",
+                "B": "Tithi, Karaṇa, Nakṣatra, Yoga, Vāra",
+                "C": "Tithi, Nakṣatra, Rāśi, Graha, Saṃvatsara",
+                "D": "Graha, Ṛtu, Pakṣa, Nakṣatra, Yoga"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Pañcāṅga consists of five limbs used for timekeeping: Tithi (lunar day), Karaṇa (half-tithi), Nakṣatra (star constellation), Yoga (solar-lunar angle), and Vāra (weekday).",
+            "module": 5
+        },
+        {
+            "question_id": "34",
+            "question_text": "How does identifying the place of articulation help in the study of language?\n\ni) It reveals the meaning behind each sound\nii) It explains why different people have different voices\niii) It explains why certain languages don't have certain sounds\niv) It helps in producing sounds correctly and classifying them systematically",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only i",
+                "B": "Both ii and iii",
+                "C": "Only iv",
+                "D": "Both i and iv"
+            },
+            "correct_option_label": "C",
+            "explanation": "Identifying the place of articulation (e.g., Kanta, Tala, Murdha) allows for the precise, systematic classification of phonemes and ensures they are produced accurately, which was the central focus of Śikṣā.",
+            "module": 3
+        },
+        {
+            "question_id": "37",
+            "question_text": "What is the literal meaning of the word Nīti?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "That which protects one's actions",
+                "B": "That which controls society",
+                "C": "That which leads or guides",
+                "D": "That which punishes the wrongdoer"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Sanskrit root of Nīti implies \"that which leads.\" Nīti-śāstras are disciplines or ethical frameworks designed to guide human behavior and governance towards Dharma.",
+            "module": 4
+        },
+        {
+            "question_id": "33",
+            "question_text": "How does the concept of Rāja Dharma distinguish the ideal role of a king in relation to power and righteousness?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A passive observer in governance",
+                "B": "An enforcer of a strict rule",
+                "C": "A ruler who prioritizes economic growth over societal welfare",
+                "D": "A representative of God responsible for upholding Dharma"
+            },
+            "correct_option_label": "D",
+            "explanation": "Rāja-dharma mandates that the king does not wield absolute despotic power; rather, he acts as a custodian or divine representative whose primary duty is to protect subjects and uphold Dharma.",
+            "module": 7
+        },
+        {
+            "question_id": "32",
+            "question_text": "A student wants to improve focus and clarity of thought during morning study sessions. According to Ayurvedic Dinacaryā, what time should they ideally wake up to align with natural bodily functions for optimal mental activity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1 muhurta before sunrise",
+                "B": "2 muhurtas before sunrise",
+                "C": "At sunrise",
+                "D": "After sunrise"
+            },
+            "correct_option_label": "B",
+            "explanation": "Ayurveda recommends waking up during the \"Brāhma-muhurta,\" which is approximately 1.5 hours (or two muhurtas) before sunrise, a time considered optimal for acquiring knowledge and mental clarity due to Vata dominance.",
+            "module": 8
+        },
+        {
+            "question_id": "21",
+            "question_text": "Which town design would you recommend as most suitable for a coastal settlement prone to natural disasters, based on its structural adaptability and resilience?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Kārmukha",
+                "B": "Nandyāvarta",
+                "C": "Sarvatobhadra",
+                "D": "Daṇḍaka"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Kārmukha (bow-shaped) town design is recommended for towns situated along seashores or riverbanks, taking advantage of the natural curves of the geography to handle coastal dynamics effectively.",
+            "module": 7
+        },
+        {
+            "question_id": "1",
+            "question_text": "According to Āyurveda, which of the following best defines a state of health (Svastha)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Balance of bodily functions and a pleasant state of self, senses, and mind",
+                "B": "Absence of disease in the body",
+                "C": "Physical fitness and muscular strength",
+                "D": "Ability to perform daily activities without fatigue"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Suśruta Saṃhitā defines a Svastha (healthy person) as one whose doshas, agni, and tissues are balanced, and whose soul, senses, and mind are in a pleasant, blissful state.",
+            "module": 8
+        },
+        {
+            "question_id": "26",
+            "question_text": "In what way does Kauṭilya's Arthaśāstra demonstrate analytical engagement with earlier treatises by scholars such as Bṛhaspati and Uṣanas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is written in Pāli language, unlike previous works",
+                "B": "It systematically compiles, refines, and adds new perspectives to earlier ideas",
+                "C": "It focuses primarily on warfare and espionage",
+                "D": "It is entirely original with no influence from previous texts"
+            },
+            "correct_option_label": "B",
+            "explanation": "Kauṭilya explicitly acknowledges earlier scholars and incorporates their teachings. The Arthaśāstra synthesizes, refines, and critiques earlier schools of political thought, creating a highly structured and analytical framework.",
+            "module": 7
+        },
+        {
+            "question_id": "17",
+            "question_text": "A student of comparative philosophy argues that despite being non-Vedic, Buddhism has parallels with Advaita Vedanta. Which of the following best illustrates this common ground?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Belief in eternal soul",
+                "B": "Liberation through physical austerity",
+                "C": "Suffering is caused by ignorance of true nature of reality",
+                "D": "Emphasis on rituals and gods"
+            },
+            "correct_option_label": "C",
+            "explanation": "Both Advaita Vedanta (which blames Maya/Avidyā) and Buddhism (which blames Avidyā and Trishna) identify foundational ignorance of the true nature of reality as the primary cause of human suffering.",
+            "module": 2
+        },
+        {
+            "question_id": "44",
+            "question_text": "The most important advantage of Pāṇini's use of abbreviated forms and mnemonics in his grammar is that _______.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It introduces flexibility and improvisation into grammar.",
+                "B": "It helps compress large volumes of information for easier retention.",
+                "C": "It prevents learners from memorizing complex rules.",
+                "D": "It allows use of foreign words in Sanskrit."
+            },
+            "correct_option_label": "B",
+            "explanation": "Pāṇini used tools like Pratyaharas (short codes) and the Maheshwara-sutras to compress massive grammatical rules into a highly compact, algorithmic format, making them easy to memorize and transmit orally.",
+            "module": 3
+        },
+        {
+            "question_id": "10",
+            "question_text": "The school of Indian philosophy that is generally paired with Nyāya is _______.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Vedānta",
+                "B": "Vaiśeṣika",
+                "C": "Yoga",
+                "D": "Sāṅkhya"
+            },
+            "correct_option_label": "B",
+            "explanation": "Nyāya (logic and epistemology) is traditionally paired with Vaiśeṣika (metaphysics and atomic theory), as they share similar views on reality and liberation, often merging into a syncretic school called Nyāya-Vaiśeṣika.",
+            "module": 2
+        },
+        {
+            "question_id": "3",
+            "question_text": "In Bhūta-Saṃkhyā, which entity is commonly used to represent the number 1?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Candra (Moon)",
+                "B": "Agni (Fire)",
+                "C": "Gaja (Elephant)",
+                "D": "Netra (Eye)"
+            },
+            "correct_option_label": "A",
+            "explanation": "In the Bhūta-Saṃkhyā system, entities that are uniquely singular are used to represent the number 1. Because there is only one moon, \"Candra\" denotes 1.",
+            "module": 5
+        },
+        {
+            "question_id": "20",
+            "question_text": "How did Pāṇini's Aṣṭādhyāyī influence computational methods?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It introduced algorithmic approaches to linguistic rules.",
+                "B": "It contained the earliest examples of decimal notation.",
+                "C": "It provided astronomical tables for calculations.",
+                "D": "It used binary mathematics for encryption."
+            },
+            "correct_option_label": "A",
+            "explanation": "The Aṣṭādhyāyī operates like a formal computer language, deploying recursive data structures and context-sensitive \"If-Then\" rules, heavily influencing modern theoretical computer science and algorithmic generation of language.",
+            "module": 3
+        },
+        {
+            "question_id": "23",
+            "question_text": "Based on Āyurvedic principles, which explanation best evaluates the most probable cause for a college student experiencing frequent yawning during lectures, despite having 7 hours of nightly sleep?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Elevated Sattva due to early morning meditation",
+                "B": "High Vāta due to late-night gadget use",
+                "C": "Disturbed Pitta causing unwanted sleep",
+                "D": "Excess Kapha from a sedentary lifestyle"
+            },
+            "correct_option_label": "D",
+            "explanation": "Kapha governs stability, lethargy, and sleepiness. Excess Kapha, often induced by heavy food or a sedentary lifestyle, increases Tamas and results in lethargy and yawning during the day.",
+            "module": 8
+        },
+        {
+            "question_id": "24",
+            "question_text": "Considering the evolution of surgical practices, what aspect of Suśruta's approach can be evaluated as still holding relevance in contemporary medical procedures?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "He discovered many modern medical tools",
+                "B": "Some of his techniques are still relevant in modern surgery",
+                "C": "He was the first to use robotic surgery",
+                "D": "His surgical methods were extremely advanced"
+            },
+            "correct_option_label": "B",
+            "explanation": "Many of Suśruta's pioneering techniques, particularly in rhinoplasty (plastic surgery), extraction of cataracts, and the design of blunt/sharp surgical instruments, form the foundational basis of related modern surgical procedures.",
+            "module": 6
+        },
+        {
+            "question_id": "9",
+            "question_text": "If you were to design a modern university town following ancient Indian principles, which settlement type would be the most suitable?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Durga",
+                "B": "Maṭha/Vihāra",
+                "C": "Karvāṭikā",
+                "D": "Nigama"
+            },
+            "correct_option_label": "B",
+            "explanation": "Maṭhas and Vihāras were traditional monastic and educational settlements (like Nalanda). They were designed as self-contained campuses for learning, making them the direct ancient equivalent of a university town.",
+            "module": 7
+        },
+        {
+            "question_id": "18",
+            "question_text": "What is the most prominent difference between the Drāviḍa and Nāgara temple styles?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The shape of the vimāna and śikhara.",
+                "B": "The number of pillars in the maṇḍapa.",
+                "C": "The materials used for construction.",
+                "D": "The layout of the temple complex."
+            },
+            "correct_option_label": "A",
+            "explanation": "The primary distinguishing factor is the superstructure above the sanctum. Drāviḍa temples feature a stepped, pyramidal tower (Vimāna), while Nāgara temples have a curving, beehive-shaped tower (Śikhara).",
+            "module": 7
+        },
+        {
+            "question_id": "22",
+            "question_text": "How did the jāti-system originally function in relation to trades?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It ensured skilled knowledge was passed down within specific communities",
+                "B": "It was a British-imposed system",
+                "C": "It was a rigid hierarchy that prevented economic growth",
+                "D": "It had limited relation to professions"
+            },
+            "correct_option_label": "A",
+            "explanation": "Historically, knowledge of specific crafts, S&T, and metallurgy was preserved through the Guru-Shishya Parampara and community lineages (Jātis). It ensured high-level technical skills were retained and transmitted across generations.",
+            "module": 6
+        },
+        {
+            "question_id": "40",
+            "question_text": "A student claims that any new philosophical idea in the Indian tradition must be entirely original and can contradict earlier established knowledge. Based on the Indian knowledge framework, how should this idea be evaluated?\n\ni) It is accepted, as innovation is more valued than continuity.\nii) It is partly flawed, as new ideas are encouraged but must align with established tenets.\niii) It is fully correct, since questioning tradition is central to Indian philosophy.\niv) It is irrelevant, since all philosophical knowledge is fixed and cannot evolve.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only i",
+                "B": "Only ii",
+                "C": "Both i and iii",
+                "D": "Both ii and iv"
+            },
+            "correct_option_label": "B",
+            "explanation": "Indian knowledge relies on debate (Vāda) and the establishment of Siddhānta (tenets). While inquiry is encouraged, true knowledge is cumulative; new ideas build upon or align with fundamental established principles (like causality or Atman).",
+            "module": 4
+        },
+        {
+            "question_id": "39",
+            "question_text": "The Maheśvara-sūtras, also known as the Pratyāhāra-sūtras, are Pāṇini’s systematic arrangement of Sanskrit sounds. How many sūtras constitute the Maheśvara-sūtras?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "9",
+                "B": "14",
+                "C": "13",
+                "D": "2000"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Maheśvara-sūtras consist of exactly 14 aphorisms. They function as the foundational building blocks or \"code\" for organizing Sanskrit vowels and consonants for grammatical derivation.",
+            "module": 3
+        }
+    ]
+}

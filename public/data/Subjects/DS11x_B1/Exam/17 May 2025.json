@@ -1,7 +1,9 @@
 {
   "exam_metadata": {
     "subject_name": "Business Statistics for Entrepreneurs",
-    "exam_date": "17 May 2025"
+    "exam_date": "17 May 2025",
+    "batch": 1,
+    "attempt": "Re 1"
   },
   "questions": [
     {
@@ -159,7 +161,6 @@
       "module": 3
     },
     {
-      "question_id": "12",
       "question_id": "12",
       "question_text": "Steel bars have hairline fractures that are randomly distributed across their length. On average a bar of 10 m has 42 hairline fractures. What is the probability that the gap between two hairline fractures is between 25cm and 35 cm?",
       "question_type": "MCQ",
