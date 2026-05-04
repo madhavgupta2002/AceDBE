@@ -3,7 +3,7 @@ Analyze the question PDF data and reformat it strictly using the provided schema
 Rules:
 - Do not add or remove fields.
 - Do not invent or modify content.
-- If date nto mentioned then Exam date is going to be "Batch 1", otherwise in format DD Month 202Y
+- If date nto mentioned then Exam date is going to be "Batch 1", otherwise in format DD Month 202Y (if it looks like a response sheet for an exam then create a batch and attempt names key with empty string under exam metadata too)
 - Preserve question text, options, correct_option_label, explanations, and module numbers exactly.
 - Provide a short 2-3  line explaination based on correct answer, maths questions should have a proper step by step explaiantion
 - Ensure the output follows valid JSON structure.
@@ -19,7 +19,9 @@ Schema:
 {
   "exam_metadata": {
     "subject_name": "string",
-    "exam_date": "string"
+    "exam_date": "string",
+    "batch": ""    (empty and keeep only for exams)
+    "attempt": "" (empty and keeep only for exams)
   },
   "questions": [
     {

@@ -1,358 +1,360 @@
 {
-    "exam_metadata": {
-      "subject_name": "Business Statistics for Entrepreneurs",
-      "exam_date": "12 January 2025"
+  "exam_metadata": {
+    "subject_name": "Business Statistics for Entrepreneurs",
+    "exam_date": "12 January 2025",
+    "batch": 1,
+    "attempt": "Main"
+  },
+  "questions": [
+    {
+      "question_id": "236144701",
+      "question_text": "The rainfall (in cm) received during a 24-hour period in 10 cities is recorded as 2, 4, 5, 6, 7, 10, 12, 5, 4, 5, respectively. The standard deviation of rainfall in cm in a city is given by:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "3 cm",
+        "B": "4 cm",
+        "C": "5 cm",
+        "D": "8 cm"
+      },
+      "correct_option_label": "A",
+      "explanation": "Step 1: Calculate the mean (\\bar{x}). \\bar{x} = \\frac{2+4+5+6+7+10+12+5+4+5}{10} = \\frac{60}{10} = 6.\nStep 2: Calculate the sum of squared deviations. \\sum(x_i - \\bar{x})^2 = (2-6)^2 + (4-6)^2 + (5-6)^2 + (6-6)^2 + (7-6)^2 + (10-6)^2 + (12-6)^2 + (5-6)^2 + (4-6)^2 + (5-6)^2 = 16 + 4 + 1 + 0 + 1 + 16 + 36 + 1 + 4 + 1 = 80.\nStep 3: Calculate sample variance (s^2). s^2 = \\frac{\\sum(x_i - \\bar{x})^2}{n-1} = \\frac{80}{9} \\approx 8.89.\nStep 4: Calculate standard deviation (s). s = \\sqrt{8.89} \\approx 2.98 \\approx 3\\text{ cm}.",
+      "module": 1
     },
-    "questions": [
-      {
-        "question_id": "236144701",
-        "question_text": "The rainfall (in cm) received during a 24-hour period in 10 cities is recorded as 2, 4, 5, 6, 7, 10, 12, 5, 4, 5, respectively. The standard deviation of rainfall in cm in a city is given by:",
-        "question_type": "MCQ",
-        "options": {
-          "A": "3 cm",
-          "B": "4 cm",
-          "C": "5 cm",
-          "D": "8 cm"
-        },
-        "correct_option_label": "A",
-        "explanation": "Step 1: Calculate the mean (\\bar{x}). \\bar{x} = \\frac{2+4+5+6+7+10+12+5+4+5}{10} = \\frac{60}{10} = 6.\nStep 2: Calculate the sum of squared deviations. \\sum(x_i - \\bar{x})^2 = (2-6)^2 + (4-6)^2 + (5-6)^2 + (6-6)^2 + (7-6)^2 + (10-6)^2 + (12-6)^2 + (5-6)^2 + (4-6)^2 + (5-6)^2 = 16 + 4 + 1 + 0 + 1 + 16 + 36 + 1 + 4 + 1 = 80.\nStep 3: Calculate sample variance (s^2). s^2 = \\frac{\\sum(x_i - \\bar{x})^2}{n-1} = \\frac{80}{9} \\approx 8.89.\nStep 4: Calculate standard deviation (s). s = \\sqrt{8.89} \\approx 2.98 \\approx 3\\text{ cm}.",
-        "module": 1
+    {
+      "question_id": "236144702",
+      "question_text": "The rainfall (in cm) received during a 24-hour period in 10 cities is recorded as 2, 4, 5, 6, 7, 10, 12, 5, 4, 5, respectively. The third quartile of rainfall in cm in a city is given by:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "3 cm",
+        "B": "4 cm",
+        "C": "5 cm",
+        "D": "8 cm"
       },
-      {
-        "question_id": "236144702",
-        "question_text": "The rainfall (in cm) received during a 24-hour period in 10 cities is recorded as 2, 4, 5, 6, 7, 10, 12, 5, 4, 5, respectively. The third quartile of rainfall in cm in a city is given by:",
-        "question_type": "MCQ",
-        "options": {
-          "A": "3 cm",
-          "B": "4 cm",
-          "C": "5 cm",
-          "D": "8 cm"
-        },
-        "correct_option_label": "D",
-        "explanation": "Step 1: Arrange data in ascending order: 2, 4, 4, 5, 5, 5, 6, 7, 10, 12.\nStep 2: Calculate the index for Q3. Index = 0.75 \\times (n + 1) = 0.75 \\times 11 = 8.25.\nStep 3: Interpolate between the 8th and 9th values. Value at index 8 is 7 and value at index 9 is 10. Q3 = 7 + 0.25 \\times (10 - 7) = 7.75. Among the options provided, 8 cm is the closest representation.",
-        "module": 1
+      "correct_option_label": "D",
+      "explanation": "Step 1: Arrange data in ascending order: 2, 4, 4, 5, 5, 5, 6, 7, 10, 12.\nStep 2: Calculate the index for Q3. Index = 0.75 \\times (n + 1) = 0.75 \\times 11 = 8.25.\nStep 3: Interpolate between the 8th and 9th values. Value at index 8 is 7 and value at index 9 is 10. Q3 = 7 + 0.25 \\times (10 - 7) = 7.75. Among the options provided, 8 cm is the closest representation.",
+      "module": 1
+    },
+    {
+      "question_id": "236144703",
+      "question_text": "The temperature (in Celsius) in a town over a 10-day period was recorded as -5, 3, -6, 4, 2, 0, -1, 3, 2, and 6 respectively. The median temperature in Celsius is given by:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "-2",
+        "B": "-1",
+        "C": "1",
+        "D": "2"
       },
-      {
-        "question_id": "236144703",
-        "question_text": "The temperature (in Celsius) in a town over a 10-day period was recorded as -5, 3, -6, 4, 2, 0, -1, 3, 2, and 6 respectively. The median temperature in Celsius is given by:",
-        "question_type": "MCQ",
-        "options": {
-          "A": "-2",
-          "B": "-1",
-          "C": "1",
-          "D": "2"
-        },
-        "correct_option_label": "D",
-        "explanation": "Step 1: Arrange the data in ascending order: -6, -5, -1, 0, 2, 2, 3, 3, 4, 6.\nStep 2: Identify the middle terms. For n=10, the median is the average of the 5th and 6th terms.\nStep 3: 5th term = 2, 6th term = 2. Median = \\frac{2 + 2}{2} = 2.",
-        "module": 1
+      "correct_option_label": "D",
+      "explanation": "Step 1: Arrange the data in ascending order: -6, -5, -1, 0, 2, 2, 3, 3, 4, 6.\nStep 2: Identify the middle terms. For n=10, the median is the average of the 5th and 6th terms.\nStep 3: 5th term = 2, 6th term = 2. Median = \\frac{2 + 2}{2} = 2.",
+      "module": 1
+    },
+    {
+      "question_id": "236144704",
+      "question_text": "Historical data suggests that the number of refrigerators sold per month is a random variable that can take values of 0, 1, 2, 3, 4, 5, and 6 with probabilities of 0.28, 0.22, 0.15, 0.10, 0.10, 0.08, and 0.07 respectively. The probability that the sales will be 7 or more in a month is zero. The standard deviation of the number of refrigerators sold per month is equal to:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.7",
+        "B": "1.1",
+        "C": "1.5",
+        "D": "1.9"
       },
-      {
-        "question_id": "236144704",
-        "question_text": "Historical data suggests that the number of refrigerators sold per month is a random variable that can take values of 0, 1, 2, 3, 4, 5, and 6 with probabilities of 0.28, 0.22, 0.15, 0.10, 0.10, 0.08, and 0.07 respectively. The probability that the sales will be 7 or more in a month is zero. The standard deviation of the number of refrigerators sold per month is equal to:",
-        "question_type": "MCQ",
-        "options": {
-          "A": "0.7",
-          "B": "1.1",
-          "C": "1.5",
-          "D": "1.9"
-        },
-        "correct_option_label": "D",
-        "explanation": "Step 1: Calculate Mean E(X) = \\sum x_i P(x_i) = 0(0.28) + 1(0.22) + 2(0.15) + 3(0.10) + 4(0.10) + 5(0.08) + 6(0.07) = 0.22 + 0.30 + 0.30 + 0.40 + 0.40 + 0.42 = 2.04.\nStep 2: Calculate E(X^2) = \\sum x_i^2 P(x_i) = 0^2(0.28) + 1^2(0.22) + 2^2(0.15) + 3^2(0.10) + 4^2(0.10) + 5^2(0.08) + 6^2(0.07) = 0 + 0.22 + 0.60 + 0.90 + 1.60 + 2.00 + 2.52 = 7.84.\nStep 3: Calculate Variance Var(X) = E(X^2) - [E(X)]^2 = 7.84 - (2.04)^2 = 7.84 - 4.1616 = 3.6784.\nStep 4: Calculate Standard Deviation SD = \\sqrt{3.6784} \\approx 1.918.",
-        "module": 2
+      "correct_option_label": "D",
+      "explanation": "Step 1: Calculate Mean E(X) = \\sum x_i P(x_i) = 0(0.28) + 1(0.22) + 2(0.15) + 3(0.10) + 4(0.10) + 5(0.08) + 6(0.07) = 0.22 + 0.30 + 0.30 + 0.40 + 0.40 + 0.42 = 2.04.\nStep 2: Calculate E(X^2) = \\sum x_i^2 P(x_i) = 0^2(0.28) + 1^2(0.22) + 2^2(0.15) + 3^2(0.10) + 4^2(0.10) + 5^2(0.08) + 6^2(0.07) = 0 + 0.22 + 0.60 + 0.90 + 1.60 + 2.00 + 2.52 = 7.84.\nStep 3: Calculate Variance Var(X) = E(X^2) - [E(X)]^2 = 7.84 - (2.04)^2 = 7.84 - 4.1616 = 3.6784.\nStep 4: Calculate Standard Deviation SD = \\sqrt{3.6784} \\approx 1.918.",
+      "module": 2
+    },
+    {
+      "question_id": "236144705",
+      "question_text": "In a random sample of 600 automobiles in the US, 270 were cars and the rest were trucks. Also, 240 were US manufactured automobiles and the rest were made in Japan. Additionally, 10% of the samples were US made cars. If an automobile chosen at random was a truck, the probability that it was manufactured in the US is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0.01 and 0.25",
+        "B": "Between 0.25 and 0.50",
+        "C": "Between 0.50 and 0.75",
+        "D": "Between 0.75 and 0.99"
       },
-      {
-        "question_id": "236144705",
-        "question_text": "In a random sample of 600 automobiles in the US, 270 were cars and the rest were trucks. Also, 240 were US manufactured automobiles and the rest were made in Japan. Additionally, 10% of the samples were US made cars. If an automobile chosen at random was a truck, the probability that it was manufactured in the US is:",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Between 0.01 and 0.25",
-          "B": "Between 0.25 and 0.50",
-          "C": "Between 0.50 and 0.75",
-          "D": "Between 0.75 and 0.99"
-        },
-        "correct_option_label": "C",
-        "explanation": "Step 1: Total Automobiles (N) = 600. Cars = 270, so Trucks = 600 - 270 = 330.\nStep 2: US made = 240. US made cars = 10% of 600 = 60.\nStep 3: Calculate US made trucks = US made total - US made cars = 240 - 60 = 180.\nStep 4: Calculate conditional probability P(US|Truck) = \\frac{\\text{US Trucks}}{\\text{Total Trucks}} = \\frac{180}{330} \\approx 0.545. This falls between 0.50 and 0.75.",
-        "module": 1
+      "correct_option_label": "C",
+      "explanation": "Step 1: Total Automobiles (N) = 600. Cars = 270, so Trucks = 600 - 270 = 330.\nStep 2: US made = 240. US made cars = 10% of 600 = 60.\nStep 3: Calculate US made trucks = US made total - US made cars = 240 - 60 = 180.\nStep 4: Calculate conditional probability P(US|Truck) = \\frac{\\text{US Trucks}}{\\text{Total Trucks}} = \\frac{180}{330} \\approx 0.545. This falls between 0.50 and 0.75.",
+      "module": 1
+    },
+    {
+      "question_id": "236144706",
+      "question_text": "In a random sample of 600 automobiles in the US, 270 were cars and the rest were trucks. Also, 240 were US manufactured automobiles and the rest were made in Japan. Additionally, 10% of the samples were US made cars. The probability that a randomly selected automobile is made in the US is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0.01 and 0.25",
+        "B": "Between 0.25 and 0.50",
+        "C": "Between 0.50 and 0.75",
+        "D": "Between 0.75 and 0.99"
       },
-      {
-        "question_id": "236144706",
-        "question_text": "In a random sample of 600 automobiles in the US, 270 were cars and the rest were trucks. Also, 240 were US manufactured automobiles and the rest were made in Japan. Additionally, 10% of the samples were US made cars. The probability that a randomly selected automobile is made in the US is:",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Between 0.01 and 0.25",
-          "B": "Between 0.25 and 0.50",
-          "C": "Between 0.50 and 0.75",
-          "D": "Between 0.75 and 0.99"
-        },
-        "correct_option_label": "B",
-        "explanation": "Total automobiles = 600. US manufactured automobiles = 240. Probability P(US) = \\frac{\\text{Total US Manufactured}}{\\text{Total Sample Size}} = \\frac{240}{600} = 0.40. This value is between 0.25 and 0.50.",
-        "module": 1
+      "correct_option_label": "B",
+      "explanation": "Total automobiles = 600. US manufactured automobiles = 240. Probability P(US) = \\frac{\\text{Total US Manufactured}}{\\text{Total Sample Size}} = \\frac{240}{600} = 0.40. This value is between 0.25 and 0.50.",
+      "module": 1
+    },
+    {
+      "question_id": "236144707",
+      "question_text": "The quality department conducts random checks of parts to see if they meet the tolerance specification (TS) or not. Parts can be made by domestic or overseas suppliers. Data shows that 40% of total parts both meet tolerance specifications and are domestically made, while 10% of total parts both do not meet tolerance specifications and are made by overseas suppliers. Also, 55% of total parts are made by domestic suppliers. What is the probability that out of 10 parts inspected at random, exactly 4 are manufactured by domestic suppliers and do not meet tolerance specifications.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0.01 and 0.25",
+        "B": "Between 0.25 and 0.50",
+        "C": "Between 0.50 and 0.75",
+        "D": "Between 0.75 and 0.99"
       },
-      {
-        "question_id": "236144707",
-        "question_text": "The quality department conducts random checks of parts to see if they meet the tolerance specification (TS) or not. Parts can be made by domestic or overseas suppliers. Data shows that 40% of total parts both meet tolerance specifications and are domestically made, while 10% of total parts both do not meet tolerance specifications and are made by overseas suppliers. Also, 55% of total parts are made by domestic suppliers. What is the probability that out of 10 parts inspected at random, exactly 4 are manufactured by domestic suppliers and do not meet tolerance specifications.",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Between 0.01 and 0.25",
-          "B": "Between 0.25 and 0.50",
-          "C": "Between 0.50 and 0.75",
-          "D": "Between 0.75 and 0.99"
-        },
-        "correct_option_label": "A",
-        "explanation": "Step 1: Calculate probability of domestic and not meeting TS. P(\\text{Domestic}) = P(\\text{Domestic} \\cap \\text{Meet TS}) + P(\\text{Domestic} \\cap \\text{Not Meet TS}). 0.55 = 0.40 + p \\implies p = 0.15.\nStep 2: Use Binomial Distribution where n = 10, k = 4, p = 0.15. P(X = 4) = \\binom{10}{4} (0.15)^4 (0.85)^6 = 210 \\times 0.00050625 \\times 0.37715 \\approx 0.04. This value is between 0.01 and 0.25.",
-        "module": 2
+      "correct_option_label": "A",
+      "explanation": "Step 1: Calculate probability of domestic and not meeting TS. P(\\text{Domestic}) = P(\\text{Domestic} \\cap \\text{Meet TS}) + P(\\text{Domestic} \\cap \\text{Not Meet TS}). 0.55 = 0.40 + p \\implies p = 0.15.\nStep 2: Use Binomial Distribution where n = 10, k = 4, p = 0.15. P(X = 4) = \\binom{10}{4} (0.15)^4 (0.85)^6 = 210 \\times 0.00050625 \\times 0.37715 \\approx 0.04. This value is between 0.01 and 0.25.",
+      "module": 2
+    },
+    {
+      "question_id": "236144708",
+      "question_text": "A grammar check algorithm is checking for grammatical errors (GEs) in a document. Although GEs occur in a random manner, on an average there are 3 GEs in every 5 pages of a document. What is the probability that there are less than 3 GEs in the last 10 pages of the document?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0.00 and 0.10",
+        "B": "Between 0.10 and 0.15",
+        "C": "Between 0.15 and 0.20",
+        "D": "Between 0.20 and 0.30"
       },
-      {
-        "question_id": "236144708",
-        "question_text": "A grammar check algorithm is checking for grammatical errors (GEs) in a document. Although GEs occur in a random manner, on an average there are 3 GEs in every 5 pages of a document. What is the probability that there are less than 3 GEs in the last 10 pages of the document?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Between 0.00 and 0.10",
-          "B": "Between 0.10 and 0.15",
-          "C": "Between 0.15 and 0.20",
-          "D": "Between 0.20 and 0.30"
-        },
-        "correct_option_label": "A",
-        "explanation": "Step 1: Find mean rate for 10 pages (\\lambda). Average rate = 3 GEs / 5 pages = 0.6 GEs/page. For 10 pages, \\lambda = 0.6 \\times 10 = 6.\nStep 2: Use Poisson formula P(X < 3) = P(0) + P(1) + P(2) = \\frac{e^{-6} 6^0}{0!} + \\frac{e^{-6} 6^1}{1!} + \\frac{e^{-6} 6^2}{2!}.\nStep 3: Calculate terms: P(0) \\approx 0.0025, P(1) \\approx 0.0149, P(2) \\approx 0.0446. Sum \\approx 0.062, which is between 0.00 and 0.10.",
-        "module": 2
+      "correct_option_label": "A",
+      "explanation": "Step 1: Find mean rate for 10 pages (\\lambda). Average rate = 3 GEs / 5 pages = 0.6 GEs/page. For 10 pages, \\lambda = 0.6 \\times 10 = 6.\nStep 2: Use Poisson formula P(X < 3) = P(0) + P(1) + P(2) = \\frac{e^{-6} 6^0}{0!} + \\frac{e^{-6} 6^1}{1!} + \\frac{e^{-6} 6^2}{2!}.\nStep 3: Calculate terms: P(0) \\approx 0.0025, P(1) \\approx 0.0149, P(2) \\approx 0.0446. Sum \\approx 0.062, which is between 0.00 and 0.10.",
+      "module": 2
+    },
+    {
+      "question_id": "236144709",
+      "question_text": "A grammar check algorithm is checking for grammatical errors (GEs) in a document. Although GEs occur in a random manner, on an average there are 3 GEs in every 5 pages of a document. If the algorithm found a GE at the bottom of page 2, what is the probability that no GE is detected in the next 7 pages?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0.00 and 0.10",
+        "B": "Between 0.10 and 0.15",
+        "C": "Between 0.15 and 0.20",
+        "D": "Between 0.20 and 0.30"
       },
-      {
-        "question_id": "236144709",
-        "question_text": "A grammar check algorithm is checking for grammatical errors (GEs) in a document. Although GEs occur in a random manner, on an average there are 3 GEs in every 5 pages of a document. If the algorithm found a GE at the bottom of page 2, what is the probability that no GE is detected in the next 7 pages?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Between 0.00 and 0.10",
-          "B": "Between 0.10 and 0.15",
-          "C": "Between 0.15 and 0.20",
-          "D": "Between 0.20 and 0.30"
-        },
-        "correct_option_label": "A",
-        "explanation": "Step 1: Calculate the mean rate for 7 pages (\\lambda). Rate = 3/5 = 0.6 per page. For 7 pages, \\lambda = 0.6 \\times 7 = 4.2.\nStep 2: Use Poisson distribution for X = 0. P(X = 0) = e^{-\\lambda} = e^{-4.2} \\approx 0.015. This probability falls between 0.00 and 0.10.",
-        "module": 2
+      "correct_option_label": "A",
+      "explanation": "Step 1: Calculate the mean rate for 7 pages (\\lambda). Rate = 3/5 = 0.6 per page. For 7 pages, \\lambda = 0.6 \\times 7 = 4.2.\nStep 2: Use Poisson distribution for X = 0. P(X = 0) = e^{-\\lambda} = e^{-4.2} \\approx 0.015. This probability falls between 0.00 and 0.10.",
+      "module": 2
+    },
+    {
+      "question_id": "236144710",
+      "question_text": "Daily demand at a bakery has two components: walk-in orders that have a Normal distribution with mean 10 and standard deviation 3, and online orders that have a Normal distribution with mean 15 and standard deviation 4. The two demands have a correlation coefficient of -0.2. What is the probability that on a given day, the walk-in orders will be between 7 and 16 units?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Less than 0.60",
+        "B": "Between 0.60 and 0.75",
+        "C": "Between 0.75 and 0.90",
+        "D": "More than 0.90"
       },
-      {
-        "question_id": "236144710",
-        "question_text": "Daily demand at a bakery has two components: walk-in orders that have a Normal distribution with mean 10 and standard deviation 3, and online orders that have a Normal distribution with mean 15 and standard deviation 4. The two demands have a correlation coefficient of -0.2. What is the probability that on a given day, the walk-in orders will be between 7 and 16 units?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Less than 0.60",
-          "B": "Between 0.60 and 0.75",
-          "C": "Between 0.75 and 0.90",
-          "D": "More than 0.90"
-        },
-        "correct_option_label": "C",
-        "explanation": "Step 1: For walk-in orders, X \\sim N(10, 3^2). We need P(7 < X < 16).\nStep 2: Convert to Z-scores. Z_{lower} = \\frac{7 - 10}{3} = -1. Z_{upper} = \\frac{16 - 10}{3} = 2.\nStep 3: Calculate P(-1 < Z < 2) = P(Z < 2) - P(Z < -1) = 0.9772 - 0.1587 = 0.8185. This is between 0.75 and 0.90.",
-        "module": 3
+      "correct_option_label": "C",
+      "explanation": "Step 1: For walk-in orders, X \\sim N(10, 3^2). We need P(7 < X < 16).\nStep 2: Convert to Z-scores. Z_{lower} = \\frac{7 - 10}{3} = -1. Z_{upper} = \\frac{16 - 10}{3} = 2.\nStep 3: Calculate P(-1 < Z < 2) = P(Z < 2) - P(Z < -1) = 0.9772 - 0.1587 = 0.8185. This is between 0.75 and 0.90.",
+      "module": 3
+    },
+    {
+      "question_id": "236144711",
+      "question_text": "Daily demand at a bakery has two components: walk-in orders that have a Normal distribution with mean 10 and standard deviation 3, and online orders that have a Normal distribution with mean 15 and standard deviation 4. The two demands have a correlation coefficient of -0.2. If the overall daily demand exceeds 32 per day, the bakery considers it to be a Super-Day. What is the probability that the bakery will have a Super-Day?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Less than 0.04",
+        "B": "Between 0.04 and 0.08",
+        "C": "Between 0.08 and 0.12",
+        "D": "More than 0.16"
       },
-      {
-        "question_id": "236144711",
-        "question_text": "Daily demand at a bakery has two components: walk-in orders that have a Normal distribution with mean 10 and standard deviation 3, and online orders that have a Normal distribution with mean 15 and standard deviation 4. The two demands have a correlation coefficient of -0.2. If the overall daily demand exceeds 32 per day, the bakery considers it to be a Super-Day. What is the probability that the bakery will have a Super-Day?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Less than 0.04",
-          "B": "Between 0.04 and 0.08",
-          "C": "Between 0.08 and 0.12",
-          "D": "More than 0.16"
-        },
-        "correct_option_label": "B",
-        "explanation": "Step 1: Define total demand T = X + Y. Mean \\mu_T = 10 + 15 = 25.\nStep 2: Variance \\sigma_T^2 = \\sigma_X^2 + \\sigma_Y^2 + 2\\rho\\sigma_X\\sigma_Y = 3^2 + 4^2 + 2(-0.2)(3)(4) = 9 + 16 - 4.8 = 20.2.\nStep 3: SD \\sigma_T = \\sqrt{20.2} \\approx 4.49.\nStep 4: Find P(T > 32). Z = \\frac{32 - 25}{4.49} \\approx 1.56. P(Z > 1.56) = 1 - 0.9406 = 0.0594. This is between 0.04 and 0.08.",
-        "module": 3
+      "correct_option_label": "B",
+      "explanation": "Step 1: Define total demand T = X + Y. Mean \\mu_T = 10 + 15 = 25.\nStep 2: Variance \\sigma_T^2 = \\sigma_X^2 + \\sigma_Y^2 + 2\\rho\\sigma_X\\sigma_Y = 3^2 + 4^2 + 2(-0.2)(3)(4) = 9 + 16 - 4.8 = 20.2.\nStep 3: SD \\sigma_T = \\sqrt{20.2} \\approx 4.49.\nStep 4: Find P(T > 32). Z = \\frac{32 - 25}{4.49} \\approx 1.56. P(Z > 1.56) = 1 - 0.9406 = 0.0594. This is between 0.04 and 0.08.",
+      "module": 3
+    },
+    {
+      "question_id": "236144712",
+      "question_text": "Steel bars have hairline fractures that are randomly distributed across their length. On average a bar of 10 m has 42 hairline fractures. What is the probability that the gap between two hairline fractures is between 15cm and 25 cm?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Less than 0.25",
+        "B": "Between 0.25 and 0.50",
+        "C": "Between 0.50 and 0.75",
+        "D": "More than 0.75"
       },
-      {
-        "question_id": "236144712",
-        "question_text": "Steel bars have hairline fractures that are randomly distributed across their length. On average a bar of 10 m has 42 hairline fractures. What is the probability that the gap between two hairline fractures is between 15cm and 25 cm?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Less than 0.25",
-          "B": "Between 0.25 and 0.50",
-          "C": "Between 0.50 and 0.75",
-          "D": "More than 0.75"
-        },
-        "correct_option_label": "A",
-        "explanation": "Step 1: Determine the rate per cm (\\lambda). \\lambda = 42 \\text{ fractures} / 1000 \\text{ cm} = 0.042 \\text{ cm}^{-1}.\nStep 2: Gaps follow an Exponential distribution. P(15 < X < 25) = e^{-0.042 \\times 15} - e^{-0.042 \\times 25}.\nStep 3: Calculate e^{-0.63} - e^{-1.05} \\approx 0.5326 - 0.3499 = 0.1827. This is Less than 0.25.",
-        "module": 3
+      "correct_option_label": "A",
+      "explanation": "Step 1: Determine the rate per cm (\\lambda). \\lambda = 42 \\text{ fractures} / 1000 \\text{ cm} = 0.042 \\text{ cm}^{-1}.\nStep 2: Gaps follow an Exponential distribution. P(15 < X < 25) = e^{-0.042 \\times 15} - e^{-0.042 \\times 25}.\nStep 3: Calculate e^{-0.63} - e^{-1.05} \\approx 0.5326 - 0.3499 = 0.1827. This is Less than 0.25.",
+      "module": 3
+    },
+    {
+      "question_id": "236144713",
+      "question_text": "A government agency selects a random sample of 40 IT projects to study issued related to project delays. The sample study reveals that the average duration of a project is 18 weeks, and the standard deviation is 4 weeks. What is the margin of error corresponding to a 85% confidence interval of the average duration of projects in the population.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Margin of error is between 0.25 to 0.75",
+        "B": "Margin of error is between 0.75 to 1.25",
+        "C": "Margin of error is between 1.25 to 1.75",
+        "D": "Margin of error is between 1.75 to 2.25"
       },
-      {
-        "question_id": "236144713",
-        "question_text": "A government agency selects a random sample of 40 IT projects to study issued related to project delays. The sample study reveals that the average duration of a project is 18 weeks, and the standard deviation is 4 weeks. What is the margin of error corresponding to a 85% confidence interval of the average duration of projects in the population.",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Margin of error is between 0.25 to 0.75",
-          "B": "Margin of error is between 0.75 to 1.25",
-          "C": "Margin of error is between 1.25 to 1.75",
-          "D": "Margin of error is between 1.75 to 2.25"
-        },
-        "correct_option_label": "B",
-        "explanation": "Step 1: Identify values: n = 40, s = 4. For 85% confidence, \\alpha = 0.15, so \\alpha/2 = 0.075. Z_{0.075} \\approx 1.44.\nStep 2: Margin of Error (ME) = Z \\times \\frac{s}{\\sqrt{n}} = 1.44 \\times \\frac{4}{\\sqrt{40}} = 1.44 \\times 0.632 \\approx 0.91. This is between 0.75 to 1.25.",
-        "module": 5
+      "correct_option_label": "B",
+      "explanation": "Step 1: Identify values: n = 40, s = 4. For 85% confidence, \\alpha = 0.15, so \\alpha/2 = 0.075. Z_{0.075} \\approx 1.44.\nStep 2: Margin of Error (ME) = Z \\times \\frac{s}{\\sqrt{n}} = 1.44 \\times \\frac{4}{\\sqrt{40}} = 1.44 \\times 0.632 \\approx 0.91. This is between 0.75 to 1.25.",
+      "module": 5
+    },
+    {
+      "question_id": "236144714",
+      "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. Construct a hypothesis (H_0 and H_a) to determine if the true value of the average contacts per week is equal to 15. The correct form of hypothesis test to be used is the following:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "H_0: \\mu \\le 15 \\text{ and } H_a: \\mu > 15",
+        "B": "H_0: \\mu = 15 \\text{ and } H_a: \\mu \\neq 15",
+        "C": "H_0: \\mu \\neq 15 \\text{ and } H_a: \\mu = 15",
+        "D": "H_0: \\mu \\ge 15 \\text{ and } H_a: \\mu < 15"
       },
-      {
-        "question_id": "236144714",
-        "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. Construct a hypothesis (H_0 and H_a) to determine if the true value of the average contacts per week is equal to 15. The correct form of hypothesis test to be used is the following:",
-        "question_type": "MCQ",
-        "options": {
-          "A": "H_0: \\mu \\le 15 \\text{ and } H_a: \\mu > 15",
-          "B": "H_0: \\mu = 15 \\text{ and } H_a: \\mu \\neq 15",
-          "C": "H_0: \\mu \\neq 15 \\text{ and } H_a: \\mu = 15",
-          "D": "H_0: \\mu \\ge 15 \\text{ and } H_a: \\mu < 15"
-        },
-        "correct_option_label": "B",
-        "explanation": "To test if the population mean is 'equal to' a specific value, a two-tailed test is used. The null hypothesis (H_0) asserts the equality, and the alternative hypothesis (H_a) asserts the inequality. Thus, H_0: \\mu = 15 and H_a: \\mu \\neq 15.",
-        "module": 5
+      "correct_option_label": "B",
+      "explanation": "To test if the population mean is 'equal to' a specific value, a two-tailed test is used. The null hypothesis (H_0) asserts the equality, and the alternative hypothesis (H_a) asserts the inequality. Thus, H_0: \\mu = 15 and H_a: \\mu \\neq 15.",
+      "module": 5
+    },
+    {
+      "question_id": "236144715",
+      "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. Construct a hypothesis (H_0 and H_a) to determine if the true value of the average contacts per week is equal to 15. For a significance level of 10%, what is the p-value?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0.00 and 0.01",
+        "B": "Between 0.01 and 0.05",
+        "C": "Between 0.99 and 1.00",
+        "D": "Between 0.99 and 0.95"
       },
-      {
-        "question_id": "236144715",
-        "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. Construct a hypothesis (H_0 and H_a) to determine if the true value of the average contacts per week is equal to 15. For a significance level of 10%, what is the p-value?",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Between 0.00 and 0.01",
-          "B": "Between 0.01 and 0.05",
-          "C": "Between 0.99 and 1.00",
-          "D": "Between 0.99 and 0.95"
-        },
-        "correct_option_label": "A",
-        "explanation": "Step 1: Calculate test statistic t = \\frac{\\bar{x} - \\mu}{s/\\sqrt{n}} = \\frac{19 - 15}{5/\\sqrt{16}} = \\frac{4}{1.25} = 3.2. df = 15.\nStep 2: For two-tailed test, p-value = 2 \\times P(t_{15} > 3.2). Looking at t-table, P(t_{15} > 2.947) = 0.005. So p-value < 2 \\times 0.005 = 0.01. It is between 0.00 and 0.01.",
-        "module": 5
+      "correct_option_label": "A",
+      "explanation": "Step 1: Calculate test statistic t = \\frac{\\bar{x} - \\mu}{s/\\sqrt{n}} = \\frac{19 - 15}{5/\\sqrt{16}} = \\frac{4}{1.25} = 3.2. df = 15.\nStep 2: For two-tailed test, p-value = 2 \\times P(t_{15} > 3.2). Looking at t-table, P(t_{15} > 2.947) = 0.005. So p-value < 2 \\times 0.005 = 0.01. It is between 0.00 and 0.01.",
+      "module": 5
+    },
+    {
+      "question_id": "236144716",
+      "question_text": "In a random survey of 42 managers, 24 did not have an MBA degree. What is the smallest sample size among those listed below that will yield a desired margin of error of 0.1 or less for a 99% confidence interval on the true proportion of managers in the population having an MBA degree.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Sample size of 400",
+        "B": "Sample size of 300",
+        "C": "Sample size of 200",
+        "D": "Sample size of 100"
       },
-      {
-        "question_id": "236144716",
-        "question_text": "In a random survey of 42 managers, 24 did not have an MBA degree. What is the smallest sample size among those listed below that will yield a desired margin of error of 0.1 or less for a 99% confidence interval on the true proportion of managers in the population having an MBA degree.",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Sample size of 400",
-          "B": "Sample size of 300",
-          "C": "Sample size of 200",
-          "D": "Sample size of 100"
-        },
-        "correct_option_label": "C",
-        "explanation": "Step 1: Sample proportion \\hat{p} (MBA) = \\frac{42 - 24}{42} = \\frac{18}{42} \\approx 0.4286.\nStep 2: Use sample size formula n = \\frac{Z^2 \\hat{p}(1-\\hat{p})}{ME^2}. For 99% CI, Z \\approx 2.576. ME = 0.1.\nStep 3: n = \\frac{2.576^2 \\times 0.4286 \\times 0.5714}{0.1^2} = \\frac{6.6358 \\times 0.2449}{0.01} \\approx 162.5. The smallest listed sample size greater than 162.5 is 200.",
-        "module": 5
+      "correct_option_label": "C",
+      "explanation": "Step 1: Sample proportion \\hat{p} (MBA) = \\frac{42 - 24}{42} = \\frac{18}{42} \\approx 0.4286.\nStep 2: Use sample size formula n = \\frac{Z^2 \\hat{p}(1-\\hat{p})}{ME^2}. For 99% CI, Z \\approx 2.576. ME = 0.1.\nStep 3: n = \\frac{2.576^2 \\times 0.4286 \\times 0.5714}{0.1^2} = \\frac{6.6358 \\times 0.2449}{0.01} \\approx 162.5. The smallest listed sample size greater than 162.5 is 200.",
+      "module": 5
+    },
+    {
+      "question_id": "236144717",
+      "question_text": "In a random survey of 42 managers, 24 did not have an MBA degree. Construct a hypothesis (H_0 and H_a) to determine if the true value of the proportion of managers in the population having an MBA degree is more than 50%. The p-value corresponding to a significance level of 10% is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0.00 and 0.05",
+        "B": "Between 0.05 and 0.20",
+        "C": "Between 0.80 and 0.95",
+        "D": "Between 0.95 and 1.00"
       },
-      {
-        "question_id": "236144717",
-        "question_text": "In a random survey of 42 managers, 24 did not have an MBA degree. Construct a hypothesis (H_0 and H_a) to determine if the true value of the proportion of managers in the population having an MBA degree is more than 50%. The p-value corresponding to a significance level of 10% is:",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Between 0.00 and 0.05",
-          "B": "Between 0.05 and 0.20",
-          "C": "Between 0.80 and 0.95",
-          "D": "Between 0.95 and 1.00"
-        },
-        "correct_option_label": "C",
-        "explanation": "Step 1: \\hat{p} = 18/42 \\approx 0.4286. H_0: p \\le 0.5, H_a: p > 0.5.\nStep 2: Test stat Z = \\frac{\\hat{p} - p_0}{\\sqrt{p_0(1-p_0)/n}} = \\frac{0.4286 - 0.5}{\\sqrt{0.5 \\times 0.5 / 42}} = \\frac{-0.0714}{0.07715} \\approx -0.925.\nStep 3: For right-tailed test, p-value = P(Z > -0.925) = 1 - P(Z < -0.925) = 1 - 0.1775 = 0.8225. This is between 0.80 and 0.95.",
-        "module": 5
+      "correct_option_label": "C",
+      "explanation": "Step 1: \\hat{p} = 18/42 \\approx 0.4286. H_0: p \\le 0.5, H_a: p > 0.5.\nStep 2: Test stat Z = \\frac{\\hat{p} - p_0}{\\sqrt{p_0(1-p_0)/n}} = \\frac{0.4286 - 0.5}{\\sqrt{0.5 \\times 0.5 / 42}} = \\frac{-0.0714}{0.07715} \\approx -0.925.\nStep 3: For right-tailed test, p-value = P(Z > -0.925) = 1 - P(Z < -0.925) = 1 - 0.1775 = 0.8225. This is between 0.80 and 0.95.",
+      "module": 5
+    },
+    {
+      "question_id": "236144718",
+      "question_text": "In a random survey of 25 customers, it was found that the standard deviation of the individual spend at a retail store was $35. Construct a hypothesis (H_0 and H_a) to determine if the true value of the variance in the population for individual spend is more than 900. The test statistic for this test takes a value that is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Less than -10.0",
+        "B": "Between -10.0 and 0.0",
+        "C": "Between 0.0 and 10.0",
+        "D": "More than 10.0"
       },
-      {
-        "question_id": "236144718",
-        "question_text": "In a random survey of 25 customers, it was found that the standard deviation of the individual spend at a retail store was $35. Construct a hypothesis (H_0 and H_a) to determine if the true value of the variance in the population for individual spend is more than 900. The test statistic for this test takes a value that is:",
-        "question_type": "MCQ",
-        "options": {
-          "A": "Less than -10.0",
-          "B": "Between -10.0 and 0.0",
-          "C": "Between 0.0 and 10.0",
-          "D": "More than 10.0"
-        },
-        "correct_option_label": "D",
-        "explanation": "Step 1: Test statistic for variance is Chi-square (\\chi^2). \\chi^2 = \\frac{(n-1)s^2}{\\sigma_0^2}.\nStep 2: n = 25, s = 35, \\sigma_0^2 = 900.\nStep 3: \\chi^2 = \\frac{24 \\times 35^2}{900} = \\frac{24 \\times 1225}{900} = \\frac{29400}{900} \\approx 32.67. This value is More than 10.0.",
-        "module": 5
+      "correct_option_label": "D",
+      "explanation": "Step 1: Test statistic for variance is Chi-square (\\chi^2). \\chi^2 = \\frac{(n-1)s^2}{\\sigma_0^2}.\nStep 2: n = 25, s = 35, \\sigma_0^2 = 900.\nStep 3: \\chi^2 = \\frac{24 \\times 35^2}{900} = \\frac{24 \\times 1225}{900} = \\frac{29400}{900} \\approx 32.67. This value is More than 10.0.",
+      "module": 5
+    },
+    {
+      "question_id": "236144719",
+      "question_text": "In data used to construct a valid simple linear regression model with 10 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to 2840, ∑(X_i-Xbar)^2 equals 568 and ∑(Yi-Ybar)^2 = 15730. The sample average for x given by Xbar was 16 and the sample average for y given by Ybar was 134. These results imply that, if X equals 20, the expected value for Y would be:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "134",
+        "B": "154",
+        "C": "174",
+        "D": "194"
       },
-      {
-        "question_id": "236144719",
-        "question_text": "In data used to construct a valid simple linear regression model with 10 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to 2840, ∑(X_i-Xbar)^2 equals 568 and ∑(Yi-Ybar)^2 = 15730. The sample average for x given by Xbar was 16 and the sample average for y given by Ybar was 134. These results imply that, if X equals 20, the expected value for Y would be:",
-        "question_type": "MCQ",
-        "options": {
-          "A": "134",
-          "B": "154",
-          "C": "174",
-          "D": "194"
-        },
-        "correct_option_label": "B",
-        "explanation": "Step 1: Find slope (\\beta_1) = \\frac{\\sum(X_i-\\bar{X})(Y_i-\\bar{Y})}{\\sum(X_i-\\bar{X})^2} = \\frac{2840}{568} = 5.\nStep 2: Find intercept (\\beta_0) = \\bar{Y} - \\beta_1\\bar{X} = 134 - 5(16) = 134 - 80 = 54.\nStep 3: Predict Y for X=20. \\hat{Y} = 54 + 5(20) = 54 + 100 = 154.",
-        "module": 6
+      "correct_option_label": "B",
+      "explanation": "Step 1: Find slope (\\beta_1) = \\frac{\\sum(X_i-\\bar{X})(Y_i-\\bar{Y})}{\\sum(X_i-\\bar{X})^2} = \\frac{2840}{568} = 5.\nStep 2: Find intercept (\\beta_0) = \\bar{Y} - \\beta_1\\bar{X} = 134 - 5(16) = 134 - 80 = 54.\nStep 3: Predict Y for X=20. \\hat{Y} = 54 + 5(20) = 54 + 100 = 154.",
+      "module": 6
+    },
+    {
+      "question_id": "236144720",
+      "question_text": "In data used to construct a valid simple linear regression model with 10 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to 2840, ∑(X_i-Xbar)^2 equals 568 and ∑(Yi-Ybar)^2 = 15730. The sample average for x given by Xbar was 16 and the sample average for y given by Ybar was 134. These results imply that the percentage of variation in Y that could be attributed to variation in X is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.8",
+        "B": "0.85",
+        "C": "0.9",
+        "D": "0.95"
       },
-      {
-        "question_id": "236144720",
-        "question_text": "In data used to construct a valid simple linear regression model with 10 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to 2840, ∑(X_i-Xbar)^2 equals 568 and ∑(Yi-Ybar)^2 = 15730. The sample average for x given by Xbar was 16 and the sample average for y given by Ybar was 134. These results imply that the percentage of variation in Y that could be attributed to variation in X is:",
-        "question_type": "MCQ",
-        "options": {
-          "A": "0.8",
-          "B": "0.85",
-          "C": "0.9",
-          "D": "0.95"
-        },
-        "correct_option_label": "C",
-        "explanation": "Step 1: Calculate R^2 = \\frac{[\\sum(X_i-\\bar{X})(Y_i-\\bar{Y})]^2}{\\sum(X_i-\\bar{X})^2 \\sum(Y_i-\\bar{Y})^2}.\nStep 2: R^2 = \\frac{2840^2}{568 \\times 15730} = \\frac{8065600}{8934640} \\approx 0.902.\nStep 3: The percentage of variation is 0.9.",
-        "module": 6
+      "correct_option_label": "C",
+      "explanation": "Step 1: Calculate R^2 = \\frac{[\\sum(X_i-\\bar{X})(Y_i-\\bar{Y})]^2}{\\sum(X_i-\\bar{X})^2 \\sum(Y_i-\\bar{Y})^2}.\nStep 2: R^2 = \\frac{2840^2}{568 \\times 15730} = \\frac{8065600}{8934640} \\approx 0.902.\nStep 3: The percentage of variation is 0.9.",
+      "module": 6
+    },
+    {
+      "question_id": "236144721",
+      "question_text": "In data used to construct a valid simple linear regression model, it was observed that SSR is equal to 2530.2, SSE is equal to 2270.7, and MSE is equal to 227.1. The total number of observations used to build this simple linear regression model is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "10",
+        "B": "11",
+        "C": "12",
+        "D": "15"
       },
-      {
-        "question_id": "236144721",
-        "question_text": "In data used to construct a valid simple linear regression model, it was observed that SSR is equal to 2530.2, SSE is equal to 2270.7, and MSE is equal to 227.1. The total number of observations used to build this simple linear regression model is:",
-        "question_type": "MCQ",
-        "options": {
-          "A": "10",
-          "B": "11",
-          "C": "12",
-          "D": "15"
-        },
-        "correct_option_label": "C",
-        "explanation": "Step 1: In simple linear regression, MSE = SSE / (n - 2).\nStep 2: 227.1 = 2270.7 / (n - 2).\nStep 3: (n - 2) = 2270.7 / 227.1 = 10. n = 12.",
-        "module": 6
+      "correct_option_label": "C",
+      "explanation": "Step 1: In simple linear regression, MSE = SSE / (n - 2).\nStep 2: 227.1 = 2270.7 / (n - 2).\nStep 3: (n - 2) = 2270.7 / 227.1 = 10. n = 12.",
+      "module": 6
+    },
+    {
+      "question_id": "236144722",
+      "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, x_2, x_3, x_4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x_1, x_2, x_3, x_4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x_1, x_2, x_3, x_4 were 1.5, 0.5, -1.0, and 8.0 respectively. These results imply that Adjusted R Square is equal to",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.60",
+        "B": "0.65",
+        "C": "0.70",
+        "D": "0.75"
       },
-      {
-        "question_id": "236144722",
-        "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, x_2, x_3, x_4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x_1, x_2, x_3, x_4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x_1, x_2, x_3, x_4 were 1.5, 0.5, -1.0, and 8.0 respectively. These results imply that Adjusted R Square is equal to",
-        "question_type": "MCQ",
-        "options": {
-          "A": "0.60",
-          "B": "0.65",
-          "C": "0.70",
-          "D": "0.75"
-        },
-        "correct_option_label": "A",
-        "explanation": "Step 1: Calculate SSR = MSR \\times k = 125 \\times 4 = 500.\nStep 2: Calculate R^2 = SSR / SST = 500 / 760 \\approx 0.6579.\nStep 3: Adjusted R^2 = 1 - \\frac{(1 - R^2)(n - 1)}{n - k - 1} = 1 - \\frac{(1 - 0.6579)(30)}{31 - 4 - 1} = 1 - \\frac{0.3421 \\times 30}{26} \\approx 1 - 0.3947 = 0.6053 \\approx 0.60.",
-        "module": 7
+      "correct_option_label": "A",
+      "explanation": "Step 1: Calculate SSR = MSR \\times k = 125 \\times 4 = 500.\nStep 2: Calculate R^2 = SSR / SST = 500 / 760 \\approx 0.6579.\nStep 3: Adjusted R^2 = 1 - \\frac{(1 - R^2)(n - 1)}{n - k - 1} = 1 - \\frac{(1 - 0.6579)(30)}{31 - 4 - 1} = 1 - \\frac{0.3421 \\times 30}{26} \\approx 1 - 0.3947 = 0.6053 \\approx 0.60.",
+      "module": 7
+    },
+    {
+      "question_id": "236144723",
+      "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, x_2, x_3, x_4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x_1, x_2, x_3, x_4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x_1, x_2, x_3, x_4 were 1.5, 0.5, -1.0, and 8.0 respectively. These results imply that b_2 is equal to",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.4",
+        "B": "4.0",
+        "C": "2.4",
+        "D": "24.0"
       },
-      {
-        "question_id": "236144723",
-        "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, x_2, x_3, x_4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x_1, x_2, x_3, x_4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x_1, x_2, x_3, x_4 were 1.5, 0.5, -1.0, and 8.0 respectively. These results imply that b_2 is equal to",
-        "question_type": "MCQ",
-        "options": {
-          "A": "0.4",
-          "B": "4.0",
-          "C": "2.4",
-          "D": "24.0"
-        },
-        "correct_option_label": "D",
-        "explanation": "Coefficient b_i = t_i \\times SE_i. For the second variable x_2: b_2 = t_2 \\times SE_2 = 0.5 \\times 48 = 24.0.",
-        "module": 7
+      "correct_option_label": "D",
+      "explanation": "Coefficient b_i = t_i \\times SE_i. For the second variable x_2: b_2 = t_2 \\times SE_2 = 0.5 \\times 48 = 24.0.",
+      "module": 7
+    },
+    {
+      "question_id": "236144724",
+      "question_text": "When data with 18 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, ..., x_4 the following outputs were obtained. The RSquare was 0.36, standard error was 4.8. These results imply that MSR is equal to",
+      "question_type": "MCQ",
+      "options": {
+        "A": "22",
+        "B": "32",
+        "C": "42",
+        "D": "52"
       },
-      {
-        "question_id": "236144724",
-        "question_text": "When data with 18 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, ..., x_4 the following outputs were obtained. The RSquare was 0.36, standard error was 4.8. These results imply that MSR is equal to",
-        "question_type": "MCQ",
-        "options": {
-          "A": "22",
-          "B": "32",
-          "C": "42",
-          "D": "52"
-        },
-        "correct_option_label": "C",
-        "explanation": "Step 1: MSE = (Standard Error)^2 = 4.8^2 = 23.04. df_{error} = n - k - 1 = 18 - 4 - 1 = 13.\nStep 2: SSE = MSE \\times df_{error} = 23.04 \\times 13 = 299.52.\nStep 3: R^2 = SSR / (SSR + SSE) \\implies 0.36 = SSR / (SSR + 299.52) \\implies 0.36(SSR) + 107.8272 = SSR \\implies 107.8272 = 0.64(SSR) \\implies SSR = 168.48.\nStep 4: MSR = SSR / k = 168.48 / 4 = 42.12 \\approx 42.",
-        "module": 7
+      "correct_option_label": "C",
+      "explanation": "Step 1: MSE = (Standard Error)^2 = 4.8^2 = 23.04. df_{error} = n - k - 1 = 18 - 4 - 1 = 13.\nStep 2: SSE = MSE \\times df_{error} = 23.04 \\times 13 = 299.52.\nStep 3: R^2 = SSR / (SSR + SSE) \\implies 0.36 = SSR / (SSR + 299.52) \\implies 0.36(SSR) + 107.8272 = SSR \\implies 107.8272 = 0.64(SSR) \\implies SSR = 168.48.\nStep 4: MSR = SSR / k = 168.48 / 4 = 42.12 \\approx 42.",
+      "module": 7
+    },
+    {
+      "question_id": "236144725",
+      "question_text": "When data with 18 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, ..., x_4 the following outputs were obtained. The RSquare was 0.36, standard error was 4.8. These results imply that F - statistic is equal to",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.018",
+        "B": "0.0018",
+        "C": "0.18",
+        "D": "1.8"
       },
-      {
-        "question_id": "236144725",
-        "question_text": "When data with 18 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, ..., x_4 the following outputs were obtained. The RSquare was 0.36, standard error was 4.8. These results imply that F - statistic is equal to",
-        "question_type": "MCQ",
-        "options": {
-          "A": "0.018",
-          "B": "0.0018",
-          "C": "0.18",
-          "D": "1.8"
-        },
-        "correct_option_label": "D",
-        "explanation": "Step 1: F = \\frac{R^2 / k}{(1 - R^2) / (n - k - 1)}.\nStep 2: n = 18, k = 4, R^2 = 0.36.\nStep 3: F = \\frac{0.36 / 4}{(1 - 0.36) / (18 - 4 - 1)} = \\frac{0.09}{0.64 / 13} = \\frac{0.09}{0.04923} \\approx 1.828 \\approx 1.8.",
-        "module": 7
-      }
-    ]
-  }
+      "correct_option_label": "D",
+      "explanation": "Step 1: F = \\frac{R^2 / k}{(1 - R^2) / (n - k - 1)}.\nStep 2: n = 18, k = 4, R^2 = 0.36.\nStep 3: F = \\frac{0.36 / 4}{(1 - 0.36) / (18 - 4 - 1)} = \\frac{0.09}{0.64 / 13} = \\frac{0.09}{0.04923} \\approx 1.828 \\approx 1.8.",
+      "module": 7
+    }
+  ]
+}

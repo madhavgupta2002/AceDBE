@@ -1,0 +1,290 @@
+{
+    "exam_metadata": {
+        "subject_name": "Advanced Statistics for Business",
+        "exam_date": "28 January 2026",
+        "batch": 1,
+        "attempt": "Re 2"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "A very small p-value in the Chi-Square test indicates:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Strong evidence in favor of independence",
+                "B": "Weak evidence against independence",
+                "C": "Strong evidence against independence",
+                "D": "Incorrect calculation"
+            },
+            "correct_option_label": "C",
+            "explanation": "In a Chi-Square test of independence, the null hypothesis ($H_0$) states that the variables are independent. A very small p-value (typically $\\le 0.05$) indicates that the observed data is highly unlikely under the null hypothesis, leading to its rejection. Rejecting $H_0$ means there is strong statistical evidence against independence, showing that a significant association exists between the variables.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "A retail firm studies whether store location influences the mode of payment.\n\n| Location | Cash | Card | UPI | Total |\n| :--- | :--- | :--- | :--- | :--- |\n| **Urban** | 120 | 180 | 200 | 500 |\n| **Semi-urban** | 160 | 90 | 50 | 300 |\n| **Rural** | 140 | 40 | 20 | 200 |\n| **Total** | 420 | 310 | 270 | 1000 |\n\nWhat is the correct null hypothesis?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The mode of payment causes a store location",
+                "B": "Store location and mode of payment are independent",
+                "C": "Payment preferences differ across locations",
+                "D": "Urban customers prefer digital payments"
+            },
+            "correct_option_label": "B",
+            "explanation": "This scenario requires a Chi-Square Test of Independence to determine if there is an association between two categorical variables: 'Store Location' and 'Mode of Payment'. The null hypothesis ($H_0$) for any test of independence always states that the two categorical variables are entirely independent (i.e., there is no relationship or dependency between them).",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "A company fits a Poisson distribution to call-center arrivals and runs a goodness-of-fit test. What is the purpose of this test?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To validate whether the Poisson model is reasonable",
+                "B": "To forecast call volume",
+                "C": "To check the independence of calls",
+                "D": "To estimate the arrival rate"
+            },
+            "correct_option_label": "A",
+            "explanation": "A Goodness of Fit test (such as the Chi-Square Goodness of Fit test) is specifically used to determine how well an observed dataset matches a theoretical probability distribution. In this context, testing the call-center arrivals against a Poisson distribution validates whether the assumption that the data follows a Poisson model is statistically sound and reasonable.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "A company claims a training program improves analyst speed. Times (minutes) for 10 analysts are recorded:\n\nBefore: 52, 47, 50, 46, 49, 53, 48, 51, 45, 50\nAfter: 49, 44, 47, 45, 45, 50, 47, 48, 43, 52\n\nUsing a Wilcoxon signed-rank test for paired data at $\\alpha$ = 0.05 (one-tailed) to test whether the median time decreased, which conclusion is correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Fail to reject H0; there is insufficient evidence that the median time decreased.",
+                "B": "Reject H0; there is evidence that the median time decreased.",
+                "C": "Reject H0; there is evidence that the median time increased.",
+                "D": "Fail to reject H0; the test is invalid because the differences include both positive and negative values."
+            },
+            "correct_option_label": "B",
+            "explanation": "To perform the Wilcoxon signed-rank test, we first calculate the differences (After - Before) for each pair:\n(49-52)=-3, (44-47)=-3, (47-50)=-3, (45-46)=-1, (45-49)=-4, (50-53)=-3, (47-48)=-1, (48-51)=-3, (43-45)=-2, (52-50)=+2.\n\nThe absolute differences are: 3, 3, 3, 1, 4, 3, 1, 3, 2, 2.\nNine out of ten differences are negative, indicating that the time taken almost universally decreased. When assigning ranks, the negative rank sum will be substantially larger than the positive rank sum. A test statistic calculated on this highly skewed rank sum will fall into the rejection region for $\\alpha = 0.05$. Therefore, we reject the null hypothesis ($H_0$) and conclude there is significant evidence that the median time decreased.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "A retailer fits a model for analysing sales (number of observations in the dataset is 120), and the estimated model is:\n\n$\\widehat{sales} = 210 - 1.6(Price) + 0.9(AdSpend) + 12(Holiday)$\n\nWhere Price is given in ₹, AdSpend in thousands of ₹, and Holiday is 1 during holiday weeks and 0 otherwise. For the fitted model, they report\n\n- R^2 = 0.82\n- VIFs: Price = 12.5, AdSpend = 13.1, Holiday = 1.2\n- Residuals vs fitted show a clear \"funnel\" (variance increases with fitted values)\n- Corr(Price, AdSpend) = -0.91\n\nWhich statement is most defensible based on the given information?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The model is reliable because R^2 is high; the funnel shape is not a problem for inference.",
+                "B": "The larger coefficient of AdSpend (0.9) compared to Price (1.6) proves AdSpend is more important.",
+                "C": "Multicollinearity and heteroskedasticity both threaten inference.",
+                "D": "Since Corr(Price, AdSpend) is negative, multicollinearity cannot be an issue."
+            },
+            "correct_option_label": "C",
+            "explanation": "1. The \"funnel\" shape in the residuals versus fitted values plot is the classic indicator of **heteroskedasticity** (non-constant variance of errors). This violates the core OLS assumption of homoscedasticity, making standard errors biased and invalidating hypothesis tests.\n2. The Variance Inflation Factors (VIFs) for Price (12.5) and AdSpend (13.1) are significantly greater than the standard threshold of 10. High VIFs are definitive proof of severe **multicollinearity** (further supported by the high correlation coefficient of -0.91).\nTherefore, both heteroskedasticity and multicollinearity are present and pose severe threats to the model's inferential validity.",
+            "module": 2
+        },
+        {
+            "question_id": "6",
+            "question_text": "An HR team models employee performance score using:\n\n$\\rightarrow$ Training hours\n$\\rightarrow$ Experience (years)\n$\\rightarrow$ Job satisfaction (1-5 scale)\n\nWhat does $R^2 = 0.78$ imply managerially?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "78% of employees perform well",
+                "B": "The model explains 78% of the variation in performance",
+                "C": "The model predicts performance with 78% accuracy",
+                "D": "22% of variables are irrelevant"
+            },
+            "correct_option_label": "B",
+            "explanation": "In linear regression, the coefficient of determination, denoted as $R^2$, measures the proportion of total variance in the dependent variable (employee performance score) that is explained by the independent variables (training hours, experience, and job satisfaction). An $R^2$ of 0.78 directly translates to \"78% of the variation in performance is explained by the model.\"",
+            "module": 2
+        },
+        {
+            "question_id": "7",
+            "question_text": "A positive coefficient in a logistic regression implies that an increase in the predictor:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increases the probability by the coefficient value",
+                "B": "Increases the mean of Y",
+                "C": "Increases the odds of the outcome",
+                "D": "Guarantees the outcome will occur"
+            },
+            "correct_option_label": "C",
+            "explanation": "In logistic regression, the model formula predicts the log-odds of the outcome:\n$$\\log\\left(\\frac{p}{1-p}\\right) = \\beta_0 + \\beta_1 X$$\nA positive coefficient ($\\beta_1 > 0$) means that an increase in predictor $X$ leads to a direct linear increase in the log-odds. Because the logarithmic function is monotonic, an increase in the log-odds translates to an increase in the actual **odds** of the outcome occurring. It does not linearly increase the probability by the coefficient value due to the bounded S-curve (sigmoid) shape of the function.",
+            "module": 2
+        },
+        {
+            "question_id": "8",
+            "question_text": "A bank wants to predict whether a loan applicant will default (Yes/No) based on income, credit score, and employment status. Which model is MOST appropriate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Logistic regression",
+                "B": "ANOVA",
+                "C": "Multiple linear regression",
+                "D": "Discriminant analysis"
+            },
+            "correct_option_label": "A",
+            "explanation": "The dependent variable (loan default) in this scenario is categorical and binary (Yes/No). Logistic regression is a statistical method explicitly designed to model binary classification problems. It calculates the probability of a binary event occurring using the logistic function, keeping the predicted values strictly between 0 and 1, making it the most appropriate model.",
+            "module": 2
+        },
+        {
+            "question_id": "9",
+            "question_text": "A bank models loan default (1 is used for default, 0 otherwise) as:\n\n$logit(p) = -4.2 + 0.018(Balance) + 0.95(LatePay)$\n\nwhere $p$ is the probability of default, the variable Balance is given in thousands of ₹, and LatePay is recorded as 1 if any late payment in last 6 months, else 0.\n\nWhich option correctly gives the odds ratio for a ₹50,000 increase in Balance?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "0.9",
+                "B": "1.02",
+                "C": "2.46",
+                "D": "2.09"
+            },
+            "correct_option_label": "C",
+            "explanation": "The predictor 'Balance' is measured in thousands of ₹. Therefore, an increase of ₹50,000 means the variable increases by 50 units ($\\Delta X = 50$).\nIn logistic regression, the change in the log-odds is given by $\\beta_1 \\times \\Delta X$. \n$$\\text{Change in log-odds} = 0.018 \\times 50 = 0.9$$\nThe odds ratio (OR) is the exponentiation of the change in log-odds:\n$$OR = e^{\\beta_1 \\Delta X} = e^{0.9}$$\n$$e^{0.9} \\approx 2.4596$$\nRounding to two decimal places, the odds ratio is 2.46.",
+            "module": 2
+        },
+        {
+            "question_id": "10",
+            "question_text": "Which metric is MOST commonly used to measure prediction accuracy in regression?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "t-statistic",
+                "B": "p-value",
+                "C": "R^2",
+                "D": "Mean Squared Error (MSE)"
+            },
+            "correct_option_label": "D",
+            "explanation": "Prediction accuracy in regression models (which deal with continuous outcomes) is evaluated by assessing how close the predicted values are to the actual observations. Mean Squared Error (MSE), alongside RMSE and MAE, specifically measures the magnitude of prediction error. While $R^2$ represents the proportion of variance explained (goodness of fit), MSE directly calculates accuracy through error measurement. The t-statistic and p-value are exclusively used for hypothesis testing.",
+            "module": 3
+        },
+        {
+            "question_id": "11",
+            "question_text": "Two models have equal MAE = 6.\n\nModel A has RMSE = 7, Model B has RMSE = 14. What does this imply?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Model A has biased predictions",
+                "B": "Model B has highly volatile errors",
+                "C": "Model B fits the training data better",
+                "D": "Errors are symmetric in both"
+            },
+            "correct_option_label": "B",
+            "explanation": "Mean Absolute Error (MAE) computes the average magnitude of errors, treating all errors proportionally. Root Mean Squared Error (RMSE) squares the errors before averaging them, heavily penalizing larger errors. If Model B has an identical average error (MAE = 6) to Model A but a substantially higher RMSE (14 vs. 7), it implies that Model B's errors vary wildly in magnitude—containing severe outliers or exceptionally large errors mixed with very small ones. Thus, Model B's errors are highly volatile.",
+            "module": 3
+        },
+        {
+            "question_id": "12",
+            "question_text": "In a multiplicative model, Quarterly seasonal indices (unadjusted) are:\n\n| Q1 | Q2 | Q3 | Q4 |\n| :--- | :--- | :--- | :--- |\n| 0.72 | 0.88 | 1.28 | 1.04 |\n\nWhat should be done before using them?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Subtract mean from each index",
+                "B": "Divide each index by 4",
+                "C": "Normalize so their average equals 1",
+                "D": "Square each index"
+            },
+            "correct_option_label": "C",
+            "explanation": "In a multiplicative time series model, seasonal indices represent the proportion of the baseline average expected in each specific season. A core mathematical requirement is that the seasonal indices must balance out over an entire cycle (e.g., a year). For quarterly data, this means the sum of the four indices must exactly equal the number of periods (4), ensuring their average is precisely 1. If the unadjusted indices do not meet this criterion, they must be normalized so their average equals 1.",
+            "module": 3
+        },
+        {
+            "question_id": "13",
+            "question_text": "In a multiplicative model, Quarterly seasonal indices (unadjusted) are:\n\n| Q1 | Q2 | Q3 | Q4 |\n| :--- | :--- | :--- | :--- |\n| 0.72 | 0.88 | 1.28 | 1.04 |\n\nWhat is the normalized seasonal index for Q3?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1.28",
+                "B": "1.31",
+                "C": "1.25",
+                "D": "1.20"
+            },
+            "correct_option_label": "B",
+            "explanation": "Step 1: Calculate the sum of the unadjusted seasonal indices.\n$$\\text{Sum} = 0.72 + 0.88 + 1.28 + 1.04 = 3.92$$\n\nStep 2: For 4 quarters, the sum of the normalized indices should be 4.0. We calculate the normalization multiplier:\n$$\\text{Multiplier} = \\frac{\\text{Required Sum}}{\\text{Actual Sum}} = \\frac{4.0}{3.92} \\approx 1.020408$$\n\nStep 3: Multiply the unadjusted Q3 index by the multiplier.\n$$\\text{Normalized Q3} = 1.28 \\times 1.020408 \\approx 1.30612$$\nRounding to two decimal places, the normalized seasonal index for Q3 is 1.31.",
+            "module": 3
+        },
+        {
+            "question_id": "14",
+            "question_text": "If an AR model fits historical data very well but forecasts poorly, this MOST likely indicates:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Overfitting",
+                "B": "Underfitting",
+                "C": "Stationarity",
+                "D": "White noise"
+            },
+            "correct_option_label": "A",
+            "explanation": "An Autoregressive (AR) model that exhibits high accuracy on training data (historical data) but performs poorly on new, unseen test data (forecasts) is experiencing overfitting. Overfitting means the model is too complex and has learned the random noise and unique anomalies of the training set rather than the actual underlying predictive pattern.",
+            "module": 3
+        },
+        {
+            "question_id": "15",
+            "question_text": "A filling process has specs LSL = 490 ml, USL = 510 ml. A sample of 50 bottles gives $\\bar{x} = 498.2$ ml, $s = 3.6$ ml. Assume normality.\n\nWhich option correctly states $C_p$, $C_{pk}$, and the approval decision if the requirement is $C_{pk} \\ge 1.33$?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$C_p \\approx 0.93$, $C_{pk} \\approx 0.76$; do not approve the process.",
+                "B": "$C_p \\approx 1.33$, $C_{pk} \\approx 1.09$; approve the process.",
+                "C": "$C_p \\approx 0.76$, $C_{pk} \\approx 0.93$; approve the process because $C_p > 0.9$.",
+                "D": "$C_p \\approx 1.09$, $C_{pk} \\approx 0.93$; approve only if the mean is centred."
+            },
+            "correct_option_label": "A",
+            "explanation": "Step 1: Calculate the Process Capability Index ($C_p$)\n$$C_p = \\frac{\\text{USL} - \\text{LSL}}{6s} = \\frac{510 - 490}{6 \\times 3.6} = \\frac{20}{21.6} \\approx 0.9259 \\approx 0.93$$\n\nStep 2: Calculate the Centered Process Capability Index ($C_{pk}$)\n$$C_{pk} = \\min\\left( \\frac{\\text{USL} - \\bar{x}}{3s}, \\frac{\\bar{x} - \\text{LSL}}{3s} \\right)$$\n$$C_{pk} = \\min\\left( \\frac{510 - 498.2}{3 \\times 3.6}, \\frac{498.2 - 490}{3 \\times 3.6} \\right)$$\n$$C_{pk} = \\min\\left( \\frac{11.8}{10.8}, \\frac{8.2}{10.8} \\right)$$\n$$C_{pk} = \\min(1.0926, 0.7593) \\approx 0.76$$\n\nStep 3: Approval Decision\nSince the calculated $C_{pk}$ ($0.76$) is less than the strict requirement of $1.33$, the process does not meet the quality standards and should not be approved.",
+            "module": 4
+        },
+        {
+            "question_id": "16",
+            "question_text": "A factory inspects 400 units per day. The Average fraction defective ($\\bar{p}$) is 0.04. What is the UCL for the p-chart?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "0.10",
+                "B": "0.06",
+                "C": "0.08",
+                "D": "0.07"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Upper Control Limit (UCL) for a p-chart is determined by adding three standard deviations of the proportion to the mean proportion. The formula is:\n$$UCL = \\bar{p} + 3 \\sqrt{\\frac{\\bar{p}(1 - \\bar{p})}{n}}$$\nGiven $\\bar{p} = 0.04$ and $n = 400$:\n$$UCL = 0.04 + 3 \\sqrt{\\frac{0.04 \\times (1 - 0.04)}{400}}$$\n$$UCL = 0.04 + 3 \\sqrt{\\frac{0.04 \\times 0.96}{400}}$$\n$$UCL = 0.04 + 3 \\sqrt{\\frac{0.0384}{400}}$$\n$$UCL = 0.04 + 3 \\sqrt{0.000096}$$\n$$UCL = 0.04 + 3(0.0097979...)$$\n$$UCL = 0.04 + 0.02939... \\approx 0.0694$$\nRounding to two decimal places gives a UCL of 0.07.",
+            "module": 4
+        },
+        {
+            "question_id": "17",
+            "question_text": "Producer’s risk refers to the probability of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Accepting a bad lot",
+                "B": "Producing defectives",
+                "C": "Rejecting a good lot",
+                "D": "Inspection error"
+            },
+            "correct_option_label": "C",
+            "explanation": "In hypothesis testing and statistical quality control, the Producer's Risk (represented by $\\alpha$) is the probability of committing a Type I error. This specifically occurs when an inspection plan incorrectly rejects a lot that is actually of acceptable quality (meets the AQL). It is named Producer's risk because the producer faces the financial loss and consequence of an unrightfully rejected batch of good products.",
+            "module": 4
+        },
+        {
+            "question_id": "18",
+            "question_text": "An OC curve shows P(accept) = 0.90 at AQL. What does this imply?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "90% of bad lots accepted",
+                "B": "Inspection accuracy is 90%",
+                "C": "Process capability is 0.9",
+                "D": "10% of good lots rejected"
+            },
+            "correct_option_label": "D",
+            "explanation": "An Operating Characteristic (OC) curve plots the probability of accepting a lot against its true defect fraction. The Acceptable Quality Level (AQL) represents a lot that is considered \"good\". If the probability of accepting a good lot is 0.90 ($P(\\text{accept}) = 0.90$), then the probability of rejecting that same good lot is $1 - 0.90 = 0.10$, or 10%. This 10% is the producer's risk (Type I error). Thus, it implies that 10% of good lots will be rejected.",
+            "module": 4
+        },
+        {
+            "question_id": "19",
+            "question_text": "An acceptance plan has: AQL = 1%, LTPD = 6%, Producer’s risk $\\alpha$ = 5%, and Consumer’s risk $\\beta$ = 10%. Which statement is CORRECT?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "5% of bad lots accepted",
+                "B": "10% of good lots accepted",
+                "C": "10% of good lots rejected",
+                "D": "5% of good lots rejected"
+            },
+            "correct_option_label": "D",
+            "explanation": "Producer's risk ($\\alpha$) represents the probability of a Type I error, which is the chance of rejecting a lot that meets the Acceptable Quality Level (AQL)—a \"good\" lot. Since $\\alpha = 5\\%$, there is a 5% probability that good lots will be incorrectly rejected. Consumer's risk ($\\beta = 10\\%$) represents the chance of accepting a bad lot (LTPD), so 10% of bad lots would be accepted, not good ones. Therefore, the statement \"5% of good lots rejected\" is perfectly aligned with the definition of producer's risk.",
+            "module": 4
+        },
+        {
+            "question_id": "20",
+            "question_text": "Why is $R^2$ NOT commonly used to evaluate logistic regression models?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Logistic regression has no residuals",
+                "B": "Logistic regression is non-parametric",
+                "C": "The dependent variable is binary",
+                "D": "$R^2$ always equals zero"
+            },
+            "correct_option_label": "C",
+            "explanation": "Standard $R^2$ evaluates goodness of fit based on the proportion of variance explained by a linear model using Ordinary Least Squares (OLS) for continuous variables. In logistic regression, the dependent variable is categorical and binary (e.g., 0 or 1), and models use Maximum Likelihood Estimation (MLE) rather than OLS. The variance of a binary variable is strictly tied to its mean, making the OLS-based $R^2$ mathematically irrelevant for assessing goodness of fit. Instead, pseudo-$R^2$ variations or classification metrics (like AUC or F1 score) are used.",
+            "module": 2
+        }
+    ]
+}

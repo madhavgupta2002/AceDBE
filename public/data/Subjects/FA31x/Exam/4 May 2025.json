@@ -1,0 +1,360 @@
+{
+    "exam_metadata": {
+        "subject_name": "Management Accounting",
+        "exam_date": "28 February 2026",
+        "batch": 1,
+        "attempt": "Main"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "Find the Prime Cost from the following information:\nMaterial Consumed Rs. 10000; Labour Rs. 6000; Direct Expenses Rs. 4000; Fuel used to operate the machine Rs. 2000; Other factory Expenses Rs. 1000; Advertisement Rs. 5000; Distribution Rs. 2000; Other Administrative Expenses Rs. 1000",
+            "question_type": "MCQ",
+            "options": {
+                "A": "22000",
+                "B": "13000",
+                "C": "23000",
+                "D": "20000"
+            },
+            "correct_option_label": "D",
+            "explanation": "Prime Cost is the sum of all direct costs. Prime Cost = Direct Material + Direct Labour + Direct Expenses.\nPrime Cost = 10000 (Material) + 6000 (Labour) + 4000 (Direct Expenses) = Rs. 20000. Other costs given are indirect overheads.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Which one of the following defines conversion cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Material Plus Labour Cost",
+                "B": "Labour Cost only",
+                "C": "Material plus Labour plus Factory Overhead",
+                "D": "Labour Cost Plus Factory Overhead"
+            },
+            "correct_option_label": "D",
+            "explanation": "Conversion cost refers to the direct labor and manufacturing overhead costs incurred to convert raw materials into finished products. The formula is Conversion Cost = Direct Labour Cost + Manufacturing (Factory) Overhead.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "Find the cost of goods manufactured from the following information:\nRaw Material opening stock Rs.1000; Raw Material Purchased during the period Rs. 20000; Closing Raw Material Rs. 1000; Factory Labour Rs. 5000; Other Factory Expenses Rs. 6000; Opening WIP Rs. 3000; Closing WIP Rs. 2000; Selling and Distribution Expenses Rs. 5000; Admin Exp. Rs. 2000.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "37000",
+                "B": "31000",
+                "C": "32000",
+                "D": "39000"
+            },
+            "correct_option_label": "C",
+            "explanation": "Step 1: RM Consumed = Opening (1000) + Purchased (20000) - Closing (1000) = Rs. 20000.\nStep 2: Prime Cost = RM Consumed (20000) + Labour (5000) = Rs. 25000.\nStep 3: Gross Factory Cost = Prime Cost (25000) + Factory Expenses (6000) = Rs. 31000.\nStep 4: COGM = Gross Factory Cost (31000) + Opening WIP (3000) - Closing WIP (2000) = Rs. 32000.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "Alpha Limited Budgeted Factory Overhead for the year was Rs. 100000; The budgeted Machine hour is 1000 hours for the year. The factory worked for 1200 hours and incurred a factory overhead of Rs. 110000. Find the under-recovery or over-recovery of Factory Overhead for the year.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Under-recovery of Rs. 20000",
+                "B": "Over-recovery of Rs. 20000",
+                "C": "Over-recovery of Rs. 10000",
+                "D": "Under-recovery of Rs. 10000"
+            },
+            "correct_option_label": "C",
+            "explanation": "Step 1: Overhead Recovery Rate = Budgeted Overhead / Budgeted Hours = 100000 / 1000 = Rs. 100 per hour.\nStep 2: Applied Overhead = Actual Hours × Recovery Rate = 1200 × 100 = Rs. 120000.\nStep 3: Actual Overhead is 110000. Since Applied (120000) > Actual (110000), there is an over-recovery of Rs. 10000.",
+            "module": 4
+        },
+        {
+            "question_id": "5",
+            "question_text": "A client of KG Garments asked to give a quote to produce 1000 units T-shirts for a special occassion. The Cost Accountant estimates the following expenses: Cloth Rs. 140000; Collar and other materials Rs. 10000; Labour Rs. 60000; Factory Overhead Rs. 20000; Allocated Administrative overhead Rs. 10000; Transport Expense Rs. 10000. Find the cost per unit of T Shirts.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 240",
+                "B": "Rs. 200",
+                "C": "Rs. 250",
+                "D": "Rs. 210"
+            },
+            "correct_option_label": "C",
+            "explanation": "Step 1: Calculate Total Estimated Cost = Cloth (140000) + Materials (10000) + Labour (60000) + Factory OH (20000) + Admin OH (10000) + Transport (10000) = Rs. 250000.\nStep 2: Cost per unit = Total Cost / Number of units = 250000 / 1000 = Rs. 250.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "Compute the cost per Equivalent Unit for the conversion cost from the information given below:\nConversion Cost in Opening WIP: Rs. 2000; Conversion cost incurred during the period: Rs. 17180; Opening WIP Units (60% completed on conversion cost): 100 units; New Units introduced during the period: 3000 units; Closing WIP: 600 units (40% completed on conversion cost).",
+            "question_type": "MCQ",
+            "options": {
+                "A": "5.81",
+                "B": "8.34",
+                "C": "7.25",
+                "D": "7.00"
+            },
+            "correct_option_label": "D",
+            "explanation": "Step 1: Completed units = Opening (100) + Introduced (3000) - Closing WIP (600) = 2500 units.\nStep 2: Equivalent Units (Weighted Average) = Completed (2500) + Closing WIP EU (600 × 40%) = 2500 + 240 = 2740 EU.\nStep 3: Total Conversion Cost = Opening (2000) + Current (17180) = Rs. 19180.\nStep 4: Cost per EU = 19180 / 2740 = Rs. 7.00.",
+            "module": 2
+        },
+        {
+            "question_id": "7",
+            "question_text": "Compute the number of completed units for the month from the information given below:\nOpening WIP Units (100% completed on Material and 20% completed on conversion cost): 300 units; New Units introduced during the period: 2800 units; Closing WIP: 600 units (100% completed on Material and 60% completed on conversion cost).",
+            "question_type": "MCQ",
+            "options": {
+                "A": "2300",
+                "B": "3500",
+                "C": "2500",
+                "D": "2820"
+            },
+            "correct_option_label": "C",
+            "explanation": "The formula to find the number of completed units is Opening WIP + Units Introduced - Closing WIP.\nCompleted Units = 300 (Opening WIP) + 2800 (Introduced) - 600 (Closing WIP) = 2500 units.",
+            "module": 2
+        },
+        {
+            "question_id": "8",
+            "question_text": "Which one of the following is the most appropriate cost driver for the Inspection department in a multi product company?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Number of parts in a product",
+                "B": "Machine Hour",
+                "C": "Number of Units",
+                "D": "Material Cost"
+            },
+            "correct_option_label": "A",
+            "explanation": "Cost drivers should reflect the underlying factor causing the cost to be incurred. Inspection efforts scale with product complexity, making the 'Number of parts in a product' the most direct driver of inspection activities.",
+            "module": 2
+        },
+        {
+            "question_id": "9",
+            "question_text": "CoolTech manufacturers 3 models of washing Airconditioning Equipment. The design department spent Rs. 3,00,000 during the year. You have the following information: Production Quantity: 3000 units of Model X; 5000 units of Model Y; 10000 units of Model Z. Number of Designs: 16 for Model X; 10 for Model Y and 4 for Model Z; Assembly Hours per unit: 5 hours for Product X; 3 hours for Product Y and 1 hour for Product Z. How much of the design department cost should be allocated to Product X?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "50000",
+                "B": "166667",
+                "C": "112500",
+                "D": "160000"
+            },
+            "correct_option_label": "D",
+            "explanation": "Step 1: The correct cost driver for design cost allocation is 'Number of Designs'. Total designs = 16 (X) + 10 (Y) + 4 (Z) = 30.\nStep 2: Calculate the proportion of designs for Product X = 16 / 30.\nStep 3: Allocated Cost = (16 / 30) × 3,00,000 = Rs. 160,000.",
+            "module": 2
+        },
+        {
+            "question_id": "10",
+            "question_text": "Maruti Ltd manufactuers several models of automobiles. The products are manufacturered in batches and the assembly line has to be setup before taking up a new product. Each time when a new car is taken up for the production, the company spends Rs. 1,00,000 towards setting up assembly line. The Assembly Line Set Up activity is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Facility-Level Activity",
+                "B": "Product-Level Activity",
+                "C": "Unit-Level Activity",
+                "D": "Batch-level Activity"
+            },
+            "correct_option_label": "D",
+            "explanation": "Setting up the assembly line is an activity required each time a new run or batch of a specific model is initiated. Therefore, it is classified as a Batch-Level Activity in the ABC cost hierarchy.",
+            "module": 2
+        },
+        {
+            "question_id": "11",
+            "question_text": "A multi-product mobile manufacturing company spends Rs. 120 cr. per year for packing. Packing is a ______________",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Facility-Level Activity",
+                "B": "Batch-level Activity",
+                "C": "Product-Level Activity",
+                "D": "Unit-Level Activity"
+            },
+            "correct_option_label": "D",
+            "explanation": "Packing is typically performed on every single item as it reaches the end of the production line. Because it is tied to each individual unit produced, it is considered a Unit-Level Activity.",
+            "module": 2
+        },
+        {
+            "question_id": "12",
+            "question_text": "A tubelight manufacturer sells each unit for Rs. 100. The cost structure shows the following:\nMaterial: Rs. 30; Labour Rs. 5; Other manufacturing expenses: Rs. 35; Fixed cost for the period is Rs. 30,00,000.\nHow many units the company has to produce and sell to break-even?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "120,000 units",
+                "B": "80000 units",
+                "C": "150,000 units",
+                "D": "100,000 units"
+            },
+            "correct_option_label": "D",
+            "explanation": "Step 1: Calculate Variable Cost per unit = Material (30) + Labour (5) + Other Expenses (35) = Rs. 70.\nStep 2: Calculate Contribution per unit = Selling Price (100) - Variable Cost (70) = Rs. 30.\nStep 3: Break-Even Units = Fixed Cost / Contribution per unit = 30,00,000 / 30 = 100,000 units.",
+            "module": 3
+        },
+        {
+            "question_id": "13",
+            "question_text": "A tubelight manufacturer sells each unit for Rs. 100. The cost structure shows the following:\nMaterial: Rs. 30; Labour Rs. 5; Other manufacturing expenses: Rs. 35; Fixed cost for the period is Rs. 30,00,000.\nHow many units the company has to produce and sell to achieve a target profit of Rs. 30 lakhs?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "100,000 units",
+                "B": "150,000 units",
+                "C": "200,000 units",
+                "D": "225,000 units"
+            },
+            "correct_option_label": "C",
+            "explanation": "Step 1: Variable Cost per unit = 30 + 5 + 35 = Rs. 70.\nStep 2: Contribution per unit = 100 - 70 = Rs. 30.\nStep 3: Target Units = (Fixed Cost + Target Profit) / Contribution per unit = (30,00,000 + 30,00,000) / 30 = 60,00,000 / 30 = 200,000 units.",
+            "module": 3
+        },
+        {
+            "question_id": "14",
+            "question_text": "Find the margin of safety from the following information:\nBreak-even Sales: Rs. 10 lakhs; Budgeted Sales: Rs. 130 lakhs; Current Sales: Rs. 120 lakhs; Current Profit: Rs. 40 lakhs.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 10 lakhs",
+                "B": "Rs. 30 lakhs",
+                "C": "Rs. 110 lakhs",
+                "D": "Rs. 120 lakhs"
+            },
+            "correct_option_label": "C",
+            "explanation": "Margin of Safety represents how much current/actual sales exceed the break-even volume.\nMargin of Safety = Current Sales - Break-even Sales = 120 lakhs - 10 lakhs = Rs. 110 lakhs.",
+            "module": 3
+        },
+        {
+            "question_id": "15",
+            "question_text": "Find the break-even point from the information given:\nYear 1 Sales: Rs. 100 lakhs; Year 2 Sales: Rs. 160 lakhs; Year 1 Profit: Rs. 30 lakhs; Year 2 Profit Rs. 60 lakhs.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 40 lakhs",
+                "B": "Inadequate Information",
+                "C": "Rs. 50 lakhs",
+                "D": "Rs. 60 lakhs"
+            },
+            "correct_option_label": "A",
+            "explanation": "Step 1: PV Ratio = Change in Profit / Change in Sales = (60 - 30) / (160 - 100) = 30 / 60 = 50%.\nStep 2: Find Fixed Cost using Year 1: Contribution = Sales × PV Ratio = 100 × 50% = 50 lakhs. Fixed Cost = Contribution - Profit = 50 - 30 = 20 lakhs.\nStep 3: Break-Even Sales = Fixed Cost / PV Ratio = 20 / 0.50 = 40 lakhs.",
+            "module": 3
+        },
+        {
+            "question_id": "16",
+            "question_text": "If the margin of safety is 100 lakhs and the contribution margin is 30%, the firm's profit is equal to ______________?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 30 lakhs",
+                "B": "Rs. 70 lakhs",
+                "C": "Rs. 100 lakhs",
+                "D": "Zero Profit"
+            },
+            "correct_option_label": "A",
+            "explanation": "A key relationship in CVP analysis is that Profit equals Margin of Safety multiplied by the Contribution Margin Ratio.\nProfit = 100 lakhs × 30% = Rs. 30 lakhs.",
+            "module": 3
+        },
+        {
+            "question_id": "17",
+            "question_text": "Marketing Manager recommends to reduce the price by 20% (From Rs. 100 to Rs. 80) to double the sales quantity (From 10000 units to 20000 units). The variable cost is Rs. 50 and the fixed cost Rs. 2 lakhs. Do you recommend to cut the price by 20%?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Yes, Profit increases from Rs. 2 lakhs to Rs. 3 lakhs",
+                "B": "Yes, Profit increases from Rs. 3 lakhs to Rs. 4 lakhs",
+                "C": "Yes, Profit increases from Rs. 1 lakhs to Rs. 3 lakhs",
+                "D": "No, Profit declines from Rs. 3 lakhs to Rs. 2 lakhs"
+            },
+            "correct_option_label": "B",
+            "explanation": "Step 1: Current Profit = [(100 - 50) × 10000] - 200000 = 500000 - 200000 = Rs. 3 lakhs.\nStep 2: Proposed Profit = [(80 - 50) × 20000] - 200000 = 600000 - 200000 = Rs. 4 lakhs.\nStep 3: Thus, Profit increases from Rs. 3 lakhs to Rs. 4 lakhs.",
+            "module": 3
+        },
+        {
+            "question_id": "18",
+            "question_text": "An entity produces 20,000 units of a part which is required for producing product \"A\". The total production cost of this part is Rs.110,000. It consist of Rs. 70,000 variable cost and Rs. 40,000 fixed cost. The management has an offer from an outsider to supply the same parts. If the entity decides to purchase from the outside supplier, it can save only Rs. 10000 fixed cost (balance Rs. 30000 will be still incurred). How much it can offer maximum to the outside supplier?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Maximum Rs. 5.50 per unit",
+                "B": "Maximum Rs. 5 per unit",
+                "C": "Maximum Rs. 3.5 per unit",
+                "D": "Maximum Rs. 4 per unit"
+            },
+            "correct_option_label": "D",
+            "explanation": "Step 1: The relevant cost of internal manufacturing is Variable Cost + Avoidable Fixed Cost.\nStep 2: Total Avoidable Cost = 70,000 (VC) + 10,000 (Saved FC) = Rs. 80,000.\nStep 3: Maximum acceptable price = 80,000 / 20,000 units = Rs. 4 per unit.",
+            "module": 3
+        },
+        {
+            "question_id": "19",
+            "question_text": "Product A and Product B contribute Rs. 10 and Rs. 15 respectively. Product A requires 3 hours and Product B requires 5 hours. Which product should get priority to manufacture when machine hours are limited?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Inadequate Information",
+                "B": "Both products get equal priority",
+                "C": "Product B",
+                "D": "Product A"
+            },
+            "correct_option_label": "D",
+            "explanation": "When a limiting factor exists, products should be ranked by their contribution per unit of the limiting factor.\nContribution per hour for Product A = 10 / 3 = Rs. 3.33/hr. For Product B = 15 / 5 = Rs. 3.00/hr. Product A provides a higher return per scarce hour.",
+            "module": 3
+        },
+        {
+            "question_id": "20",
+            "question_text": "The Degree of Operating Leverage for two products are as follows:\nProduct A: 1.20; Product B: 2.00. If sales are expected to increase by 20% in the next period, which product's profit will increase more?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product B",
+                "B": "Profit of both products will decline",
+                "C": "Depends on Contribution Margin of the products",
+                "D": "Product A"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Degree of Operating Leverage (DOL) represents the percentage change in profit given a percentage change in sales. Product B has a higher DOL (2.00 vs 1.20), meaning its profit will grow faster (2.00 × 20% = 40% increase).",
+            "module": 3
+        },
+        {
+            "question_id": "21",
+            "question_text": "Alpha Ltd is preparing production budget for the month of January. Sales Department wants to have 10% of the next month inventory to handle spurt in demand. Budgeted Sales for January and February are 30000 units and 28000 units respectively. January opening stock is expected to be 500 units. How many units that Production Department has to produce in the month of January?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "32300",
+                "B": "33300",
+                "C": "26700",
+                "D": "27700"
+            },
+            "correct_option_label": "A",
+            "explanation": "Step 1: Calculate Desired Closing Stock for January = 10% of February Sales = 10% of 28000 = 2800 units.\nStep 2: Apply the production budget formula: Production = Sales + Closing Stock - Opening Stock.\nStep 3: January Production = 30000 + 2800 - 500 = 32300 units.",
+            "module": 4
+        },
+        {
+            "question_id": "22",
+            "question_text": "Which one of the following is used to find the cash paid to suppliers?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Opening Payables + Credit Purchases + Closing Payables",
+                "B": "Opening Payables + Credit Purchases - Closing Payables",
+                "C": "Opening Payables - Credit Purchases + Closing Payables",
+                "D": "Closing Payables + Credit Purchases + Opening Payables"
+            },
+            "correct_option_label": "B",
+            "explanation": "To determine the actual cash paid to suppliers in a period, you take the amount owed at the start (Opening Payables), add new credit purchases, and subtract what is still unpaid at the end (Closing Payables).",
+            "module": 4
+        },
+        {
+            "question_id": "23",
+            "question_text": "Find the total material cost variance from the information given below:\nBudgeted Production: 800 units; Each unit requires 5 Kgs of Material and each KG of material costs Rs. 10 per KG.\nActual Production: 600 units. Material procured is 4500 Kgs at Rs. 12 per KG.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 24000 Favourable",
+                "B": "Rs. 24000 Adverse",
+                "C": "Rs. 14000 Adverse",
+                "D": "Rs. 14000 Favourable"
+            },
+            "correct_option_label": "B",
+            "explanation": "Step 1: Standard Cost for Actual Output = Actual Units (600) × Standard Qty per unit (5) × Standard Price (10) = 3000 × 10 = Rs. 30000.\nStep 2: Actual Cost = Actual Qty (4500) × Actual Price (12) = Rs. 54000.\nStep 3: Total Material Cost Variance = Standard Cost (30000) - Actual Cost (54000) = -24000 (Adverse).",
+            "module": 4
+        },
+        {
+            "question_id": "24",
+            "question_text": "Find the total Material Rate Variance from the information given below:\nBudgeted Production: 800 units; Each unit requires 5 Kgs of Material and each KG of material costs Rs. 10 per KG. Actual Production: 600 units. Material procured is 4500 Kgs at Rs. 12 per KG.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 9000 Adverse",
+                "B": "Rs. 10000 Favourable",
+                "C": "Rs. 9000 Favourable",
+                "D": "Rs. 10000 Adverse"
+            },
+            "correct_option_label": "A",
+            "explanation": "Step 1: Formula for Material Rate (Price) Variance is (Standard Price - Actual Price) × Actual Quantity.\nStep 2: Calculate Variance = (10 - 12) × 4500 = -2 × 4500 = -9000.\nStep 3: A negative result indicates an Adverse variance of Rs. 9000.",
+            "module": 4
+        },
+        {
+            "question_id": "25",
+            "question_text": "From the information given below, find the total Sales Variance:\nBudgeted Sales: 1000 units; Actual Sales: 1200 units; Budgeted Selling Price: Rs. 20; Acutal Selling Price: Rs. 18",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 6000 Favorable",
+                "B": "Rs. 1600 Adverse",
+                "C": "Rs. 6000 Adverse",
+                "D": "Rs. 1600 Favorable"
+            },
+            "correct_option_label": "D",
+            "explanation": "Step 1: Total Actual Sales Revenue = 1200 units × Rs. 18 = Rs. 21600.\nStep 2: Total Budgeted Sales Revenue = 1000 units × Rs. 20 = Rs. 20000.\nStep 3: Total Sales Variance = Actual Sales - Budgeted Sales = 21600 - 20000 = +1600. Since actual revenue is higher, it is Favorable.",
+            "module": 4
+        }
+    ]
+}
