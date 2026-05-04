@@ -23,20 +23,7 @@ const BankSelector: React.FC<BankSelectorProps> = ({ bankType, subjectCode, onSe
         setAvailableBanks(banks);
       } catch (error) {
         console.error('Error loading banks:', error);
-        // Fallback to common banks
-        if (bankType === 'CLA') {
-          setAvailableBanks([
-            { bankName: 'Batch 1', displayName: 'Batch 1' },
-            { bankName: 'Batch 2', displayName: 'Batch 2' },
-            { bankName: 'Practice', displayName: 'Practice' }
-          ]);
-        } else {
-          setAvailableBanks([
-            { bankName: 'Set 1', displayName: 'Set 1' },
-            { bankName: 'Set 2', displayName: 'Set 2' },
-            { bankName: 'Set 3', displayName: 'Set 3' }
-          ]);
-        }
+        setAvailableBanks([]);
       } finally {
         setLoading(false);
       }
