@@ -5,102 +5,18 @@
     },
     "questions": [
         {
-            "question_id": "31",
-            "question_text": "A country aiming to track its overall sustainability progress decides to combine indicators like income, education, life expectancy, and ecological footprint into a single metriWhat is this approach called?",
+            "question_id": "1",
+            "question_text": "What does the \"Story of Stuff\" say about the current economic system?",
             "question_type": "MCQ",
             "options": {
-                "A": "Expert opinions only",
-                "B": "Single data points",
-                "C": "Qualitative assessments",
-                "D": "Composite indices"
-            },
-            "correct_option_label": "D",
-            "explanation": "Combining multiple single indicators into a unified score or rank (like the HDI or Happy Planet Index) is known as creating composite indices. This provides a broader snapshot of sustainability than single data points.",
-            "module": 7
-        },
-        {
-            "question_id": "40",
-            "question_text": "Which of the following is not one of the four core ideas of sustainability identified by Jeremy Caradonna?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Focus on short-term profits for businesses.",
-                "B": "Limits to economic growth and resource use.",
-                "C": "Long-term thinking about the well-being of future generations.",
-                "D": "Human society, economy, and natural environment are interconnecte"
-            },
-            "correct_option_label": "A",
-            "explanation": "Jeremy Caradonna's core ideas include interconnectedness, ecological limits, future-oriented planning, and local resilience. Focusing on short-term profits directly contradicts the long-term, systems-level approach of sustainability.",
-            "module": 1
-        },
-        {
-            "question_id": "21",
-            "question_text": "A local government implements a new policy to reduce urban waste by promoting composting and recycling. However, after a few months, it finds that many residents are still mixing wet and dry waste, making processing difficult. Why does this problem arise?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "People understand a linear cause-effect relationship",
-                "B": "People demonstrate an interconnectedness with social behaviors and lack of clear solutions",
-                "C": "It is easy to predict outcomes",
-                "D": "It is a simple, straightforward solution"
-            },
-            "correct_option_label": "B",
-            "explanation": "Waste segregation is a 'wicked problem' that involves deeply ingrained human habits, awareness, and complex social behaviors. It is not a simple linear issue but an interconnected social challenge lacking a definitive, straightforward solution.",
-            "module": 2
-        },
-        {
-            "question_id": "45",
-            "question_text": "What did Kate Raworth's Doughnut model integrate into its framework?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Linear economic production models.",
-                "B": "The concept of planetary boundaries and social foundations.",
-                "C": "Traditional GDP growth targets.",
-                "D": "Short-term financial gains for corporations."
-            },
-            "correct_option_label": "B",
-            "explanation": "Kate Raworth's Doughnut Economics framework aims to balance an inner ring of human needs (social foundations) against an outer ring of ecological limits (planetary boundaries).",
-            "module": 2
-        },
-        {
-            "question_id": "19",
-            "question_text": "If a farmer starts converting an old scooter into a functional mini-tractor for farm work, thereby saving costs and repurposing existing materials, this action best exemplifies the concept of what?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "High-tech agriculture",
-                "B": "Industrial production",
-                "C": "Frugal innovation",
-                "D": "Mass consumption"
+                "A": "It prioritizes social equity over environmental protection",
+                "B": "It encourages long-term resource management",
+                "C": "It operates on a linear model that is unsustainable on a finite planet",
+                "D": "It is highly efficient and sustainable"
             },
             "correct_option_label": "C",
-            "explanation": "Converting a scooter into a mini-tractor is a prime example of frugal innovation or 'Jugaad'. It utilizes local ingenuity and repurposed materials to create affordable, context-specific solutions in resource-constrained environments.",
+            "explanation": "Annie Leonard's \"The Story of Stuff\" highlights the fundamental flaw of the linear economy ('Take, Make, Waste'). Endless extraction and disposal cannot be sustained indefinitely on a planet with finite resources.",
             "module": 2
-        },
-        {
-            "question_id": "27",
-            "question_text": "A large-scale project aiming to plant millions of trees claims carbon credits. However, an investigation reveals that many trees were already planned, and local communities were not properly compensateWhat pitfall in carbob markets does this represent?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Additionality and equity concerns",
-                "B": "Efficient and transparent credit allocation",
-                "C": "Community-driven development",
-                "D": "Rapid and verifiable carbon sequestration"
-            },
-            "correct_option_label": "A",
-            "explanation": "For a carbon credit to be valid, it must have 'additionality' (the action wouldn't have happened otherwise). If trees were already planned, this rule is violated. Furthermore, failing to compensate locals highlights severe equity concerns often seen in carbon markets.",
-            "module": 7
-        },
-        {
-            "question_id": "13",
-            "question_text": "What is a significant challenge to India achieving its clean energy transition targets?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Abundance of fossil fuels",
-                "B": "Low energy demand",
-                "C": "Data gaps and un-commissioned projects",
-                "D": "Lack of interest from corporations"
-            },
-            "correct_option_label": "C",
-            "explanation": "India faces multiple systemic hurdles to achieving its energy transition targets, including massive DISCOM debt, policy uncertainty, land acquisition conflicts, and data gaps related to un-commissioned capacity.",
-            "module": 7
         },
         {
             "question_id": "2",
@@ -117,146 +33,6 @@
             "module": 2
         },
         {
-            "question_id": "12",
-            "question_text": "What is a key challenge to the adoption of Decentralized Renewable Energy (DRE) solutions in India?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Excessive government subsidies",
-                "B": "Reliable grid access",
-                "C": "High financing barriers for smallholder farmers",
-                "D": "Lack of technological innovation"
-            },
-            "correct_option_label": "C",
-            "explanation": "Decentralized Renewable Energy (DRE) models like solar microgrids or pumps are vital for rural power, but they face massive hurdles due to high upfront capital costs and heavy financing barriers for smallholder farmers.",
-            "module": 4
-        },
-        {
-            "question_id": "10",
-            "question_text": "What makes it most difficult for farmers to save seeds?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Erratic climate",
-                "B": "Lack of storage facilities",
-                "C": "Government regulations",
-                "D": "High cost of new seeds"
-            },
-            "correct_option_label": "A",
-            "explanation": "Erratic weather patterns driven by climate change, such as early-onset heatwaves, directly impact crop cycles and grain production, making traditional seed-saving practices highly vulnerable and difficult to execute.",
-            "module": 4
-        },
-        {
-            "question_id": "32",
-            "question_text": "A tech company creates an open-source mapping platform that allows local communities to add details like footpaths, small shops, and water sources, which often don't appear on commercial maps. What is this an example of?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Community driven platform",
-                "B": "Government-exclusive databases",
-                "C": "Learning Management System",
-                "D": "Private ownership"
-            },
-            "correct_option_label": "A",
-            "explanation": "Platforms like OpenStreetMap rely entirely on local volunteers to map granular, hyper-local data. This is a primary example of a community-driven platform characterized by open contribution and collective intelligence.",
-            "module": 5
-        },
-        {
-            "question_id": "15",
-            "question_text": "What is required for a project to generate carbon credits?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Minimal monitoring",
-                "B": "Permanence, additionality, and MRV (Monitoring, Reporting, Verification)",
-                "C": "Unlimited emissions",
-                "D": "Exclusive government ownership"
-            },
-            "correct_option_label": "B",
-            "explanation": "Valid carbon credits require strict compliance with fundamental rules: additionality (impact beyond business as usual), permanence (long-term sequestration), and rigorous MRV (Monitoring, Reporting, and Verification).",
-            "module": 7
-        },
-        {
-            "question_id": "26",
-            "question_text": "A farmer, inspired by discussions on agroecology and soil as a carbon sink, decides to switch from conventional monoculture to diverse cropping and no-till farming. This decision aims to achieve what benefit?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Increase immediate crop yield dramatically",
-                "B": "Reduce the need for manual labor",
-                "C": "Rely more on imported seeds",
-                "D": "Combat climate change by sequestering carbon in the soil"
-            },
-            "correct_option_label": "D",
-            "explanation": "Agroecological practices such as diverse cropping and no-till farming restore organic matter, allowing the soil to absorb and sequester atmospheric carbon, thus combating climate change effectively.",
-            "module": 4
-        },
-        {
-            "question_id": "9",
-            "question_text": "In the Puttenhalli Lake revival story, what key role did citizens play in bringing the lake back to life?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "They built luxury resorts around the lake.",
-                "B": "They introduced new, exotic fish species.",
-                "C": "They engaged in consistent collective action.",
-                "D": "They received government grants to privatize the lake."
-            },
-            "correct_option_label": "C",
-            "explanation": "The revival of Puttenahalli Lake in Bengaluru is a shining example of Elinor Ostrom's theories, where citizens successfully reclaimed an urban common through consistent, organized collective action and self-governance.",
-            "module": 3
-        },
-        {
-            "question_id": "14",
-            "question_text": "In the \"echo model\" of capacity building, learning starts with training and continues through what?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "External expert lectures only",
-                "B": "Rote memorization",
-                "C": "Community of practice and sharing problems",
-                "D": "Solo assignments"
-            },
-            "correct_option_label": "C",
-            "explanation": "Networked governance and capacity building extend beyond simple training by forming a 'community of practice.' This ongoing process allows individuals to continuously share knowledge, overcome problems, and learn collectively.",
-            "module": 7
-        },
-        {
-            "question_id": "5",
-            "question_text": "What is the \"Tragedy of the Commons\" about?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "The role of government in resource allocation",
-                "B": "How individual self-interest can deplete shared resources",
-                "C": "The benefits of privatization of public goods",
-                "D": "The success of collective bargaining"
-            },
-            "correct_option_label": "B",
-            "explanation": "Coined by Garrett Hardin, the Tragedy of the Commons models how individuals, acting in rational short-term self-interest, inevitably over-extract and ruin a shared, finite resource to the detriment of all.",
-            "module": 3
-        },
-        {
-            "question_id": "24",
-            "question_text": "A tech company is developing a new platform where users can share their health records with doctors across different hospitals, but only with their explicit permission. This concept is most aligned with which layer of the India Stack?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Consent layer",
-                "B": "Cashless layer",
-                "C": "Presence-less layer",
-                "D": "Paperless layer"
-            },
-            "correct_option_label": "A",
-            "explanation": "In the framework of Digital Public Infrastructure (DPI), managing the flow of sensitive personal data securely and strictly through explicit user permission corresponds directly to the Consent layer (or Data Exchange rail).",
-            "module": 5
-        },
-        {
-            "question_id": "39",
-            "question_text": "According to the Brundtland Report, sustainable development is defined as:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Development that focuses solely on environmental protection.",
-                "B": "Development that relies on technological advancements to solve all problems.",
-                "C": "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs.",
-                "D": "Development that prioritizes economic growth above all else."
-            },
-            "correct_option_label": "C",
-            "explanation": "Published by the UN in 1987, the Brundtland Report (Our Common Future) defined sustainable development fundamentally as meeting the needs of the present without compromising the ability of future generations to meet theirs.",
-            "module": 1
-        },
-        {
             "question_id": "3",
             "question_text": "Peter Senge's content on systems thinking suggests that the challenges of sustainability grew out of what approach to thinking?",
             "question_type": "MCQ",
@@ -269,314 +45,6 @@
             "correct_option_label": "B",
             "explanation": "Traditional problem-solving relies heavily on reductionism and a mechanistic approach to separate parts. Systems thinking suggests this fragmented worldview directly causes modern, deeply intertwined sustainability crises.",
             "module": 2
-        },
-        {
-            "question_id": "1",
-            "question_text": "What does the \"Story of Stuff\" say about the current economic system?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "It prioritizes social equity over environmental protection",
-                "B": "It encourages long-term resource management",
-                "C": "It operates on a linear model that is unsustainable on a finite planet",
-                "D": "It is highly efficient and sustainable"
-            },
-            "correct_option_label": "C",
-            "explanation": "Annie Leonard's \"The Story of Stuff\" highlights the fundamental flaw of the linear economy ('Take, Make, Waste'). Endless extraction and disposal cannot be sustained indefinitely on a planet with finite resources.",
-            "module": 2
-        },
-        {
-            "question_id": "47",
-            "question_text": "Which of the following is a characteristic of \"frugal innovation\"?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Focus on adding unnecessary features.",
-                "B": "Designed for high-income market segments.",
-                "C": "Optimized performance with core functionalities.",
-                "D": "Substantial cost increase."
-            },
-            "correct_option_label": "C",
-            "explanation": "Frugal innovation is characterized by strategic cost reduction, stripping away non-essential features, and optimizing performance around core functionalities to create 'good enough', scalable solutions.",
-            "module": 2
-        },
-        {
-            "question_id": "44",
-            "question_text": "Which concept describes an approach where all materials are designed to be nutrients in either biological or technical cycles, mimicking natural ecosystems where \"waste equals food\"?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Cradle to Cradle",
-                "B": "Eco-efficiency",
-                "C": "Cradle to Grave",
-                "D": "Linear Economy"
-            },
-            "correct_option_label": "A",
-            "explanation": "The Cradle to Cradle (C2C) framework redesigns industrial systems so materials act as biological or technical nutrients circulating perpetually, effectively eliminating the concept of waste.",
-            "module": 2
-        },
-        {
-            "question_id": "33",
-            "question_text": "A research institution in India develops a bio-decomposer that farmers can spray on their fields to break down crop stubble into compost, thus reducing the need for burning. This innovation offers a solution to which dilemma, discussed in Module 6?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Industrial pollution",
-                "B": "Waste management in cities",
-                "C": "Stubble burning dilemma",
-                "D": "Water scarcity"
-            },
-            "correct_option_label": "C",
-            "explanation": "Bio-decomposers (like those developed by IARI) provide an alternative to the widespread practice of stubble burning, thereby mitigating a significant source of intense winter air pollution over the Indo-Gangetic plain.",
-            "module": 6
-        },
-        {
-            "question_id": "16",
-            "question_text": "What is the biggest challenge ESG faces?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Clear, universal definitions of sustainability",
-                "B": "The mismatch between ESG rating and reality (e.g., disclosure quality vs. actual performance)",
-                "C": "Consistent ESG scores across agencies",
-                "D": "Lack of investor interest in ESG"
-            },
-            "correct_option_label": "B",
-            "explanation": "A major critique of ESG metrics is that high scores frequently reflect superior corporate reporting and disclosure capabilities rather than genuine, robust environmental or social performance, leading to greenwashing.",
-            "module": 7
-        },
-        {
-            "question_id": "11",
-            "question_text": "According to George Zayden and Charles Morton, what is a fundamental principle of energy?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Energy policy reforms",
-                "B": "Energy is primarily derived from a finite number of sources that are rapidly depleting.",
-                "C": "Energy is continuously transformed (e.g., from potential to kinetic, chemical to thermal), and all sources, whether fossil or renewable, are part of this ongoing flow.",
-                "D": "Global energy trade"
-            },
-            "correct_option_label": "C",
-            "explanation": "The fundamental physical reality of energy is that it cannot be created or destroyed. It is simply transformed across different states, underlying all ecological cycles and human mechanical power systems.",
-            "module": 4
-        },
-        {
-            "question_id": "46",
-            "question_text": "What is \"Jugaad\" in the context of sustainability?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "A high-tech, expensive industrial process.",
-                "B": "A formalized concept focused on mass production for global markets.",
-                "C": "An innovative fix or improvised solution born from ingenuity and cleverness, often using local resources.",
-                "D": "A method of creating waste efficiently."
-            },
-            "correct_option_label": "C",
-            "explanation": "'Jugaad' is a uniquely Indian concept referring to grassroots, flexible problem-solving using local ingenuity to craft speedy, improvised, and affordable solutions in highly resource-constrained environments.",
-            "module": 2
-        },
-        {
-            "question_id": "20",
-            "question_text": "A city's initiative to plant more trees to absorb carbon dioxide is a direct action. However, the underlying issue might be a public belief that environmental protection hinders economic growth. Which tool from systems thinking helps uncover such underlying beliefs?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Event analysis",
-                "B": "Causal loop diagram",
-                "C": "The Iceberg Model",
-                "D": "Statistical correlation"
-            },
-            "correct_option_label": "C",
-            "explanation": "The Iceberg Model allows systems thinkers to look beyond surface events (like planting trees) to uncover structural patterns and, ultimately, the deeply embedded mental models driving behaviors.",
-            "module": 2
-        },
-        {
-            "question_id": "23",
-            "question_text": "A remote village in India faces unreliable electricity. An entrepreneur proposes installing solar-powered mini-grids to provide consistent power for homes and small businesses. What work does this demonstrate?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Fossil fuel subsidies",
-                "B": "Grid expansion projects",
-                "C": "Decentralized Renewable Energy (DRE) solutions",
-                "D": "Centralized power generation"
-            },
-            "correct_option_label": "C",
-            "explanation": "Implementing solar-powered mini-grids in remote villages exemplifies Decentralized Renewable Energy (DRE) solutions, offering localized, reliable, and clean energy without relying on centralized, coal-heavy grids.",
-            "module": 4
-        },
-        {
-            "question_id": "25",
-            "question_text": "A survey finds that while a company reports high environmental performance, its employees consistently rate their working conditions as poor. What concerns about ESG scores does this reflect?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Focus on disclosure quality rather than real impact",
-                "B": "Following market trends",
-                "C": "Focus on employee satisfaction",
-                "D": "Technological advancement for sustainability"
-            },
-            "correct_option_label": "A",
-            "explanation": "This disparity points to the critique that ESG scores often aggregate or mask poor social impact behind polished environmental disclosure, proving that high reporting quality does not equal real, holistic sustainability.",
-            "module": 7
-        },
-        {
-            "question_id": "7",
-            "question_text": "What does the \"Poromboke song\" critique?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Traditional music forms",
-                "B": "The degradation of urban wetlands and common property resources",
-                "C": "Modern architectural styles",
-                "D": "Economic development projects"
-            },
-            "correct_option_label": "B",
-            "explanation": "T.M. Krishna's 'Poromboke' song protests the encroachment, destruction, and pollution of Chennai's critical urban wetlands and common property lands, particularly by fly ash and industrial waste.",
-            "module": 3
-        },
-        {
-            "question_id": "22",
-            "question_text": "If a textile company designs a shirt for a single use and then it is discarded, what economic model is it following?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Circular economy",
-                "B": "Linear materials economy",
-                "C": "Cradle-to-cradle design",
-                "D": "Regenerative design"
-            },
-            "correct_option_label": "B",
-            "explanation": "A design meant for single use followed immediately by disposal perfectly characterizes the 'Take, Make, Waste' paradigm of the linear materials economy (cradle-to-grave).",
-            "module": 2
-        },
-        {
-            "question_id": "48",
-            "question_text": "What is considered a \"negative externality\"?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "A benefit that a person or firm provides to others.",
-                "B": "A cost that an individual or firm's action imposes on others, not involved in the original transaction.",
-                "C": "An internal cost fully accounted for by producers.",
-                "D": "A perfectly efficient allocation of resources in a market."
-            },
-            "correct_option_label": "B",
-            "explanation": "A negative externality is an unintended side effect of an economic activity that imposes a cost on third parties who are entirely external to the transaction, representing a failure in market pricing.",
-            "module": 3
-        },
-        {
-            "question_id": "18",
-            "question_text": "A village relies on a shared fishing pond, but individual fishermen start taking more fish than can naturally replenish, fearing others will do the same. What is this an example of?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Private ownership success",
-                "B": "Tragedy of the Commons",
-                "C": "Sustainable resource management",
-                "D": "Collective bargaining"
-            },
-            "correct_option_label": "B",
-            "explanation": "This scenario illustrates the classic Tragedy of the Commons, where fear of missing out and short-term individual self-interest drive actors to over-extract and destroy an open-access shared resource.",
-            "module": 3
-        },
-        {
-            "question_id": "35",
-            "question_text": "A student notices that during a local festival, a massive amount of single-use plastic is generated, leading to clogged drains and overflowing bins. This illustrates which aspect of the \"waste problem\" described in the context of managing waste in cities?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Efficient waste flow",
-                "B": "Effective source segregation",
-                "C": "Systemic leakages at every stage of waste management",
-                "D": "Advanced waste processing technology"
-            },
-            "correct_option_label": "C",
-            "explanation": "Uncollected garbage that ends up overflowing and clogging municipal drains is a textbook example of systemic leakages within an urban waste management flow that is failing at collection and segregation.",
-            "module": 6
-        },
-        {
-            "question_id": "49",
-            "question_text": "The \"Tragedy of the Commons\" suggests that unregulated access to shared resources leads to:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Optimal resource management.",
-                "B": "Enhanced community cooperation.",
-                "C": "Increased individual accountability.",
-                "D": "Overexploitation and depletion of the resource."
-            },
-            "correct_option_label": "D",
-            "explanation": "Garrett Hardin's core thesis in the Tragedy of the Commons is that without strict rules, shared and finite open-access resources will invariably face collective ruin through individual overexploitation.",
-            "module": 3
-        },
-        {
-            "question_id": "29",
-            "question_text": "The concept of the \"Doughnut Economy\" advocates for economic development that respects what two boundaries?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Economic growth and technological limits",
-                "B": "Cultural and ethical norms",
-                "C": "Planetary boundaries and social foundations",
-                "D": "Political and social boundaries"
-            },
-            "correct_option_label": "C",
-            "explanation": "Kate Raworth's Doughnut Economy aims to find a safe and just space for humanity situated strictly between an inner ring of essential social foundations and an outer ring of hard ecological planetary boundaries.",
-            "module": 2
-        },
-        {
-            "question_id": "41",
-            "question_text": "Which Indian environmental movement is cited as differing from Western environmentalism by emphasizing equity, decentralization, and livelihoods?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Narmada Bachao Andolan",
-                "B": "Silent Valley Movement",
-                "C": "Project Tiger",
-                "D": "Deep Ecology"
-            },
-            "correct_option_label": "A",
-            "explanation": "Unlike Western approaches that focus on wilderness preservation, the Narmada Bachao Andolan deeply intertwines environmental protection with the human right to survival, equitable livelihood, and fighting tribal displacement.",
-            "module": 1
-        },
-        {
-            "question_id": "17",
-            "question_text": "If a company claims its new product is eco-friendly but uses misleading statistics and hides its carbon-intensive supply chain, which concept would best describe this?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Frugal innovation",
-                "B": "Circular economy",
-                "C": "Corporate social responsibility",
-                "D": "Greenwashing"
-            },
-            "correct_option_label": "D",
-            "explanation": "Greenwashing occurs when companies deceptive present an eco-friendly facade to consumers, using misleading metrics or ESG reporting to cover up deeply unsustainable core operations and supply chains.",
-            "module": 7
-        },
-        {
-            "question_id": "36",
-            "question_text": "A country's energy policy primarily focuses on increasing its GDP without considering the environmental impact of increased energy consumption. This approach risks following a trend depicted by which curve, mentioned in the context of measuring sustainability?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Learning Curve",
-                "B": "Environmental Kuznets Curve",
-                "C": "Lorenz Curve",
-                "D": "Phillips Curve"
-            },
-            "correct_option_label": "B",
-            "explanation": "The Environmental Kuznets Curve suggests that pollution rises with early economic growth before eventually dropping. However, relying on this theory is highly risky as certain emissions, like CO2, typically fail to decline without aggressive intervention.",
-            "module": 7
-        },
-        {
-            "question_id": "28",
-            "question_text": "A young professional decides to drastically reduce their clothing purchases and use existing items for longer. This personal choice contributes to which broader goal?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Boosting textile industry sales",
-                "B": "Enhancing personal wellbeing and contributing to climate change mitigation",
-                "C": "Promoting impulsive buying habits",
-                "D": "Increasing fashion trends"
-            },
-            "correct_option_label": "B",
-            "explanation": "Mindful consumption—like limiting clothing purchases—reduces personal clutter, enhancing well-being while significantly slashing water and carbon footprints associated with the highly polluting fast-fashion linear economy.",
-            "module": 8
-        },
-        {
-            "question_id": "42",
-            "question_text": "The Triple Bottom Line (TBL) framework, popularized by John Elkington, encourages businesses to expand their focus beyond financial performance to include which three interdependent pillars?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Production, Price, Promotion",
-                "B": "People, Planet, Profit",
-                "C": "Policy, Planning, Practice",
-                "D": "Products, Processes, Partnerships"
-            },
-            "correct_option_label": "B",
-            "explanation": "Popularized by John Elkington, the Triple Bottom Line framework shifts corporate performance measurement from pure economics to evaluating three equally important outcomes: People (social), Planet (environmental), and Profit (economic).",
-            "module": 1
         },
         {
             "question_id": "4",
@@ -593,6 +61,20 @@
             "module": 2
         },
         {
+            "question_id": "5",
+            "question_text": "What is the \"Tragedy of the Commons\" about?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The role of government in resource allocation",
+                "B": "How individual self-interest can deplete shared resources",
+                "C": "The benefits of privatization of public goods",
+                "D": "The success of collective bargaining"
+            },
+            "correct_option_label": "B",
+            "explanation": "Coined by Garrett Hardin, the Tragedy of the Commons models how individuals, acting in rational short-term self-interest, inevitably over-extract and ruin a shared, finite resource to the detriment of all.",
+            "module": 3
+        },
+        {
             "question_id": "6",
             "question_text": "The \"Tragedy of the Commons\" concept illustrates how individuals acting in their short-term self-interest, can cause...",
             "question_type": "MCQ",
@@ -607,31 +89,17 @@
             "module": 3
         },
         {
-            "question_id": "43",
-            "question_text": "What is the main purpose of the United Nations Sustainable Development Goals (SDGs), adopted in 2015?",
+            "question_id": "7",
+            "question_text": "What does the \"Poromboke song\" critique?",
             "question_type": "MCQ",
             "options": {
-                "A": "To provide a call for systemic transformation of society through collaboration, innovation, and justice.",
-                "B": "To set military alliances for global security.",
-                "C": "To exclusively fund environmental conservation projects.",
-                "D": "To create a global framework for economic growth only."
-            },
-            "correct_option_label": "A",
-            "explanation": "Adopted in 2015 as Agenda 2030, the 17 UN SDGs represent a comprehensive global blueprint aiming for deep, systemic societal transformation integrating ecological, social, and equitable economic development.",
-            "module": 1
-        },
-        {
-            "question_id": "50",
-            "question_text": "Elinor Ostrom's work challenged the inevitability of the Tragedy of the Commons by demonstrating that:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Individual self-interest always leads to collective ruin.",
-                "B": "Communities can effectively manage shared resources through self-organizing institutions and collective action.",
-                "C": "Only state control or privatization can prevent resource depletion.",
-                "D": "External agents are always necessary to enforce commitments regarding common pool resources."
+                "A": "Traditional music forms",
+                "B": "The degradation of urban wetlands and common property resources",
+                "C": "Modern architectural styles",
+                "D": "Economic development projects"
             },
             "correct_option_label": "B",
-            "explanation": "Ostrom won a Nobel Prize by empirically proving that communities do not require top-down state intervention or privatization. Through robust local rule-making and monitoring, they can govern commons sustainably.",
+            "explanation": "T.M. Krishna's 'Poromboke' song protests the encroachment, destruction, and pollution of Chennai's critical urban wetlands and common property lands, particularly by fly ash and industrial waste.",
             "module": 3
         },
         {
@@ -649,18 +117,298 @@
             "module": 3
         },
         {
-            "question_id": "34",
-            "question_text": "A charitable organization provides free water purification systems in areas with contaminated groundwater. While addressing an immediate need, it doesn't engage local communities in maintaining the systems or setting water usage rules. According to Elinor Ostrom's insights, what might be a long-term challenge for this initiative?",
+            "question_id": "9",
+            "question_text": "In the Puttenhalli Lake revival story, what key role did citizens play in bringing the lake back to life?",
             "question_type": "MCQ",
             "options": {
-                "A": "Over-empowerment of communities",
-                "B": "Excessive reliance on local expertise",
-                "C": "Too much focus on self-organization",
-                "D": "Lack of community ownership and sustainability of the systems"
+                "A": "They built luxury resorts around the lake.",
+                "B": "They introduced new, exotic fish species.",
+                "C": "They engaged in consistent collective action.",
+                "D": "They received government grants to privatize the lake."
+            },
+            "correct_option_label": "C",
+            "explanation": "The revival of Puttenahalli Lake in Bengaluru is a shining example of Elinor Ostrom's theories, where citizens successfully reclaimed an urban common through consistent, organized collective action and self-governance.",
+            "module": 3
+        },
+        {
+            "question_id": "10",
+            "question_text": "What makes it most difficult for farmers to save seeds?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Erratic climate",
+                "B": "Lack of storage facilities",
+                "C": "Government regulations",
+                "D": "High cost of new seeds"
+            },
+            "correct_option_label": "A",
+            "explanation": "Erratic weather patterns driven by climate change, such as early-onset heatwaves, directly impact crop cycles and grain production, making traditional seed-saving practices highly vulnerable and difficult to execute.",
+            "module": 4
+        },
+        {
+            "question_id": "11",
+            "question_text": "According to George Zayden and Charles Morton, what is a fundamental principle of energy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Energy policy reforms",
+                "B": "Energy is primarily derived from a finite number of sources that are rapidly depleting.",
+                "C": "Energy is continuously transformed (e.g., from potential to kinetic, chemical to thermal), and all sources, whether fossil or renewable, are part of this ongoing flow.",
+                "D": "Global energy trade"
+            },
+            "correct_option_label": "C",
+            "explanation": "The fundamental physical reality of energy is that it cannot be created or destroyed. It is simply transformed across different states, underlying all ecological cycles and human mechanical power systems.",
+            "module": 4
+        },
+        {
+            "question_id": "12",
+            "question_text": "What is a key challenge to the adoption of Decentralized Renewable Energy (DRE) solutions in India?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Excessive government subsidies",
+                "B": "Reliable grid access",
+                "C": "High financing barriers for smallholder farmers",
+                "D": "Lack of technological innovation"
+            },
+            "correct_option_label": "C",
+            "explanation": "Decentralized Renewable Energy (DRE) models like solar microgrids or pumps are vital for rural power, but they face massive hurdles due to high upfront capital costs and heavy financing barriers for smallholder farmers.",
+            "module": 4
+        },
+        {
+            "question_id": "13",
+            "question_text": "What is a significant challenge to India achieving its clean energy transition targets?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Abundance of fossil fuels",
+                "B": "Low energy demand",
+                "C": "Data gaps and un-commissioned projects",
+                "D": "Lack of interest from corporations"
+            },
+            "correct_option_label": "C",
+            "explanation": "India faces multiple systemic hurdles to achieving its energy transition targets, including massive DISCOM debt, policy uncertainty, land acquisition conflicts, and data gaps related to un-commissioned capacity.",
+            "module": 7
+        },
+        {
+            "question_id": "14",
+            "question_text": "In the \"echo model\" of capacity building, learning starts with training and continues through what?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "External expert lectures only",
+                "B": "Rote memorization",
+                "C": "Community of practice and sharing problems",
+                "D": "Solo assignments"
+            },
+            "correct_option_label": "C",
+            "explanation": "Networked governance and capacity building extend beyond simple training by forming a 'community of practice.' This ongoing process allows individuals to continuously share knowledge, overcome problems, and learn collectively.",
+            "module": 7
+        },
+        {
+            "question_id": "15",
+            "question_text": "What is required for a project to generate carbon credits?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Minimal monitoring",
+                "B": "Permanence, additionality, and MRV (Monitoring, Reporting, Verification)",
+                "C": "Unlimited emissions",
+                "D": "Exclusive government ownership"
+            },
+            "correct_option_label": "B",
+            "explanation": "Valid carbon credits require strict compliance with fundamental rules: additionality (impact beyond business as usual), permanence (long-term sequestration), and rigorous MRV (Monitoring, Reporting, and Verification).",
+            "module": 7
+        },
+        {
+            "question_id": "16",
+            "question_text": "What is the biggest challenge ESG faces?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Clear, universal definitions of sustainability",
+                "B": "The mismatch between ESG rating and reality (e.g., disclosure quality vs. actual performance)",
+                "C": "Consistent ESG scores across agencies",
+                "D": "Lack of investor interest in ESG"
+            },
+            "correct_option_label": "B",
+            "explanation": "A major critique of ESG metrics is that high scores frequently reflect superior corporate reporting and disclosure capabilities rather than genuine, robust environmental or social performance, leading to greenwashing.",
+            "module": 7
+        },
+        {
+            "question_id": "17",
+            "question_text": "If a company claims its new product is eco-friendly but uses misleading statistics and hides its carbon-intensive supply chain, which concept would best describe this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Frugal innovation",
+                "B": "Circular economy",
+                "C": "Corporate social responsibility",
+                "D": "Greenwashing"
             },
             "correct_option_label": "D",
-            "explanation": "If a solution is imposed without participatory rulemaking (Principle 3) and proportional local investment, it fails to build community ownership, leading to rapid degradation and collapse once external charity departs.",
+            "explanation": "Greenwashing occurs when companies deceptive present an eco-friendly facade to consumers, using misleading metrics or ESG reporting to cover up deeply unsustainable core operations and supply chains.",
+            "module": 7
+        },
+        {
+            "question_id": "18",
+            "question_text": "A village relies on a shared fishing pond, but individual fishermen start taking more fish than can naturally replenish, fearing others will do the same. What is this an example of?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Private ownership success",
+                "B": "Tragedy of the Commons",
+                "C": "Sustainable resource management",
+                "D": "Collective bargaining"
+            },
+            "correct_option_label": "B",
+            "explanation": "This scenario illustrates the classic Tragedy of the Commons, where fear of missing out and short-term individual self-interest drive actors to over-extract and destroy an open-access shared resource.",
             "module": 3
+        },
+        {
+            "question_id": "19",
+            "question_text": "If a farmer starts converting an old scooter into a functional mini-tractor for farm work, thereby saving costs and repurposing existing materials, this action best exemplifies the concept of what?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "High-tech agriculture",
+                "B": "Industrial production",
+                "C": "Frugal innovation",
+                "D": "Mass consumption"
+            },
+            "correct_option_label": "C",
+            "explanation": "Converting a scooter into a mini-tractor is a prime example of frugal innovation or 'Jugaad'. It utilizes local ingenuity and repurposed materials to create affordable, context-specific solutions in resource-constrained environments.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "A city's initiative to plant more trees to absorb carbon dioxide is a direct action. However, the underlying issue might be a public belief that environmental protection hinders economic growth. Which tool from systems thinking helps uncover such underlying beliefs?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Event analysis",
+                "B": "Causal loop diagram",
+                "C": "The Iceberg Model",
+                "D": "Statistical correlation"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Iceberg Model allows systems thinkers to look beyond surface events (like planting trees) to uncover structural patterns and, ultimately, the deeply embedded mental models driving behaviors.",
+            "module": 2
+        },
+        {
+            "question_id": "21",
+            "question_text": "A local government implements a new policy to reduce urban waste by promoting composting and recycling. However, after a few months, it finds that many residents are still mixing wet and dry waste, making processing difficult. Why does this problem arise?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "People understand a linear cause-effect relationship",
+                "B": "People demonstrate an interconnectedness with social behaviors and lack of clear solutions",
+                "C": "It is easy to predict outcomes",
+                "D": "It is a simple, straightforward solution"
+            },
+            "correct_option_label": "B",
+            "explanation": "Waste segregation is a 'wicked problem' that involves deeply ingrained human habits, awareness, and complex social behaviors. It is not a simple linear issue but an interconnected social challenge lacking a definitive, straightforward solution.",
+            "module": 2
+        },
+        {
+            "question_id": "22",
+            "question_text": "If a textile company designs a shirt for a single use and then it is discarded, what economic model is it following?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Circular economy",
+                "B": "Linear materials economy",
+                "C": "Cradle-to-cradle design",
+                "D": "Regenerative design"
+            },
+            "correct_option_label": "B",
+            "explanation": "A design meant for single use followed immediately by disposal perfectly characterizes the 'Take, Make, Waste' paradigm of the linear materials economy (cradle-to-grave).",
+            "module": 2
+        },
+        {
+            "question_id": "23",
+            "question_text": "A remote village in India faces unreliable electricity. An entrepreneur proposes installing solar-powered mini-grids to provide consistent power for homes and small businesses. What work does this demonstrate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Fossil fuel subsidies",
+                "B": "Grid expansion projects",
+                "C": "Decentralized Renewable Energy (DRE) solutions",
+                "D": "Centralized power generation"
+            },
+            "correct_option_label": "C",
+            "explanation": "Implementing solar-powered mini-grids in remote villages exemplifies Decentralized Renewable Energy (DRE) solutions, offering localized, reliable, and clean energy without relying on centralized, coal-heavy grids.",
+            "module": 4
+        },
+        {
+            "question_id": "24",
+            "question_text": "A tech company is developing a new platform where users can share their health records with doctors across different hospitals, but only with their explicit permission. This concept is most aligned with which layer of the India Stack?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Consent layer",
+                "B": "Cashless layer",
+                "C": "Presence-less layer",
+                "D": "Paperless layer"
+            },
+            "correct_option_label": "A",
+            "explanation": "In the framework of Digital Public Infrastructure (DPI), managing the flow of sensitive personal data securely and strictly through explicit user permission corresponds directly to the Consent layer (or Data Exchange rail).",
+            "module": 5
+        },
+        {
+            "question_id": "25",
+            "question_text": "A survey finds that while a company reports high environmental performance, its employees consistently rate their working conditions as poor. What concerns about ESG scores does this reflect?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Focus on disclosure quality rather than real impact",
+                "B": "Following market trends",
+                "C": "Focus on employee satisfaction",
+                "D": "Technological advancement for sustainability"
+            },
+            "correct_option_label": "A",
+            "explanation": "This disparity points to the critique that ESG scores often aggregate or mask poor social impact behind polished environmental disclosure, proving that high reporting quality does not equal real, holistic sustainability.",
+            "module": 7
+        },
+        {
+            "question_id": "26",
+            "question_text": "A farmer, inspired by discussions on agroecology and soil as a carbon sink, decides to switch from conventional monoculture to diverse cropping and no-till farming. This decision aims to achieve what benefit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase immediate crop yield dramatically",
+                "B": "Reduce the need for manual labor",
+                "C": "Rely more on imported seeds",
+                "D": "Combat climate change by sequestering carbon in the soil"
+            },
+            "correct_option_label": "D",
+            "explanation": "Agroecological practices such as diverse cropping and no-till farming restore organic matter, allowing the soil to absorb and sequester atmospheric carbon, thus combating climate change effectively.",
+            "module": 4
+        },
+        {
+            "question_id": "27",
+            "question_text": "A large-scale project aiming to plant millions of trees claims carbon credits. However, an investigation reveals that many trees were already planned, and local communities were not properly compensateWhat pitfall in carbob markets does this represent?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Additionality and equity concerns",
+                "B": "Efficient and transparent credit allocation",
+                "C": "Community-driven development",
+                "D": "Rapid and verifiable carbon sequestration"
+            },
+            "correct_option_label": "A",
+            "explanation": "For a carbon credit to be valid, it must have 'additionality' (the action wouldn't have happened otherwise). If trees were already planned, this rule is violated. Furthermore, failing to compensate locals highlights severe equity concerns often seen in carbon markets.",
+            "module": 7
+        },
+        {
+            "question_id": "28",
+            "question_text": "A young professional decides to drastically reduce their clothing purchases and use existing items for longer. This personal choice contributes to which broader goal?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Boosting textile industry sales",
+                "B": "Enhancing personal wellbeing and contributing to climate change mitigation",
+                "C": "Promoting impulsive buying habits",
+                "D": "Increasing fashion trends"
+            },
+            "correct_option_label": "B",
+            "explanation": "Mindful consumption—like limiting clothing purchases—reduces personal clutter, enhancing well-being while significantly slashing water and carbon footprints associated with the highly polluting fast-fashion linear economy.",
+            "module": 8
+        },
+        {
+            "question_id": "29",
+            "question_text": "The concept of the \"Doughnut Economy\" advocates for economic development that respects what two boundaries?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Economic growth and technological limits",
+                "B": "Cultural and ethical norms",
+                "C": "Planetary boundaries and social foundations",
+                "D": "Political and social boundaries"
+            },
+            "correct_option_label": "C",
+            "explanation": "Kate Raworth's Doughnut Economy aims to find a safe and just space for humanity situated strictly between an inner ring of essential social foundations and an outer ring of hard ecological planetary boundaries.",
+            "module": 2
         },
         {
             "question_id": "30",
@@ -675,6 +423,90 @@
             "correct_option_label": "A",
             "explanation": "Co-creating rules alongside stakeholders directly fulfills Ostrom's principle of 'Participatory Rulemaking.' It establishes 'nested' polycentric governance structures that respect local contexts, unlike top-down mandates.",
             "module": 3
+        },
+        {
+            "question_id": "31",
+            "question_text": "A country aiming to track its overall sustainability progress decides to combine indicators like income, education, life expectancy, and ecological footprint into a single metriWhat is this approach called?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Expert opinions only",
+                "B": "Single data points",
+                "C": "Qualitative assessments",
+                "D": "Composite indices"
+            },
+            "correct_option_label": "D",
+            "explanation": "Combining multiple single indicators into a unified score or rank (like the HDI or Happy Planet Index) is known as creating composite indices. This provides a broader snapshot of sustainability than single data points.",
+            "module": 7
+        },
+        {
+            "question_id": "32",
+            "question_text": "A tech company creates an open-source mapping platform that allows local communities to add details like footpaths, small shops, and water sources, which often don't appear on commercial maps. What is this an example of?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Community driven platform",
+                "B": "Government-exclusive databases",
+                "C": "Learning Management System",
+                "D": "Private ownership"
+            },
+            "correct_option_label": "A",
+            "explanation": "Platforms like OpenStreetMap rely entirely on local volunteers to map granular, hyper-local data. This is a primary example of a community-driven platform characterized by open contribution and collective intelligence.",
+            "module": 5
+        },
+        {
+            "question_id": "33",
+            "question_text": "A research institution in India develops a bio-decomposer that farmers can spray on their fields to break down crop stubble into compost, thus reducing the need for burning. This innovation offers a solution to which dilemma, discussed in Module 6?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Industrial pollution",
+                "B": "Waste management in cities",
+                "C": "Stubble burning dilemma",
+                "D": "Water scarcity"
+            },
+            "correct_option_label": "C",
+            "explanation": "Bio-decomposers (like those developed by IARI) provide an alternative to the widespread practice of stubble burning, thereby mitigating a significant source of intense winter air pollution over the Indo-Gangetic plain.",
+            "module": 6
+        },
+        {
+            "question_id": "34",
+            "question_text": "A charitable organization provides free water purification systems in areas with contaminated groundwater. While addressing an immediate need, it doesn't engage local communities in maintaining the systems or setting water usage rules. According to Elinor Ostrom's insights, what might be a long-term challenge for this initiative?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Over-empowerment of communities",
+                "B": "Excessive reliance on local expertise",
+                "C": "Too much focus on self-organization",
+                "D": "Lack of community ownership and sustainability of the systems"
+            },
+            "correct_option_label": "D",
+            "explanation": "If a solution is imposed without participatory rulemaking (Principle 3) and proportional local investment, it fails to build community ownership, leading to rapid degradation and collapse once external charity departs.",
+            "module": 3
+        },
+        {
+            "question_id": "35",
+            "question_text": "A student notices that during a local festival, a massive amount of single-use plastic is generated, leading to clogged drains and overflowing bins. This illustrates which aspect of the \"waste problem\" described in the context of managing waste in cities?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Efficient waste flow",
+                "B": "Effective source segregation",
+                "C": "Systemic leakages at every stage of waste management",
+                "D": "Advanced waste processing technology"
+            },
+            "correct_option_label": "C",
+            "explanation": "Uncollected garbage that ends up overflowing and clogging municipal drains is a textbook example of systemic leakages within an urban waste management flow that is failing at collection and segregation.",
+            "module": 6
+        },
+        {
+            "question_id": "36",
+            "question_text": "A country's energy policy primarily focuses on increasing its GDP without considering the environmental impact of increased energy consumption. This approach risks following a trend depicted by which curve, mentioned in the context of measuring sustainability?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Learning Curve",
+                "B": "Environmental Kuznets Curve",
+                "C": "Lorenz Curve",
+                "D": "Phillips Curve"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Environmental Kuznets Curve suggests that pollution rises with early economic growth before eventually dropping. However, relying on this theory is highly risky as certain emissions, like CO2, typically fail to decline without aggressive intervention.",
+            "module": 7
         },
         {
             "question_id": "37",
@@ -703,6 +535,174 @@
             "correct_option_label": "C",
             "explanation": "OpenStreetMap (OSM) functions as the 'Wikipedia of mapping.' It is a community-driven digital commons that depends on crowdsourced volunteers to freely document and maintain hyper-local geographic data.",
             "module": 5
+        },
+        {
+            "question_id": "39",
+            "question_text": "According to the Brundtland Report, sustainable development is defined as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Development that focuses solely on environmental protection.",
+                "B": "Development that relies on technological advancements to solve all problems.",
+                "C": "Development that meets the needs of the present without compromising the ability of future generations to meet their own needs.",
+                "D": "Development that prioritizes economic growth above all else."
+            },
+            "correct_option_label": "C",
+            "explanation": "Published by the UN in 1987, the Brundtland Report (Our Common Future) defined sustainable development fundamentally as meeting the needs of the present without compromising the ability of future generations to meet theirs.",
+            "module": 1
+        },
+        {
+            "question_id": "40",
+            "question_text": "Which of the following is not one of the four core ideas of sustainability identified by Jeremy Caradonna?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Focus on short-term profits for businesses.",
+                "B": "Limits to economic growth and resource use.",
+                "C": "Long-term thinking about the well-being of future generations.",
+                "D": "Human society, economy, and natural environment are interconnecte"
+            },
+            "correct_option_label": "A",
+            "explanation": "Jeremy Caradonna's core ideas include interconnectedness, ecological limits, future-oriented planning, and local resilience. Focusing on short-term profits directly contradicts the long-term, systems-level approach of sustainability.",
+            "module": 1
+        },
+        {
+            "question_id": "41",
+            "question_text": "Which Indian environmental movement is cited as differing from Western environmentalism by emphasizing equity, decentralization, and livelihoods?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Narmada Bachao Andolan",
+                "B": "Silent Valley Movement",
+                "C": "Project Tiger",
+                "D": "Deep Ecology"
+            },
+            "correct_option_label": "A",
+            "explanation": "Unlike Western approaches that focus on wilderness preservation, the Narmada Bachao Andolan deeply intertwines environmental protection with the human right to survival, equitable livelihood, and fighting tribal displacement.",
+            "module": 1
+        },
+        {
+            "question_id": "42",
+            "question_text": "The Triple Bottom Line (TBL) framework, popularized by John Elkington, encourages businesses to expand their focus beyond financial performance to include which three interdependent pillars?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Production, Price, Promotion",
+                "B": "People, Planet, Profit",
+                "C": "Policy, Planning, Practice",
+                "D": "Products, Processes, Partnerships"
+            },
+            "correct_option_label": "B",
+            "explanation": "Popularized by John Elkington, the Triple Bottom Line framework shifts corporate performance measurement from pure economics to evaluating three equally important outcomes: People (social), Planet (environmental), and Profit (economic).",
+            "module": 1
+        },
+        {
+            "question_id": "43",
+            "question_text": "What is the main purpose of the United Nations Sustainable Development Goals (SDGs), adopted in 2015?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To provide a call for systemic transformation of society through collaboration, innovation, and justice.",
+                "B": "To set military alliances for global security.",
+                "C": "To exclusively fund environmental conservation projects.",
+                "D": "To create a global framework for economic growth only."
+            },
+            "correct_option_label": "A",
+            "explanation": "Adopted in 2015 as Agenda 2030, the 17 UN SDGs represent a comprehensive global blueprint aiming for deep, systemic societal transformation integrating ecological, social, and equitable economic development.",
+            "module": 1
+        },
+        {
+            "question_id": "44",
+            "question_text": "Which concept describes an approach where all materials are designed to be nutrients in either biological or technical cycles, mimicking natural ecosystems where \"waste equals food\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cradle to Cradle",
+                "B": "Eco-efficiency",
+                "C": "Cradle to Grave",
+                "D": "Linear Economy"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Cradle to Cradle (C2C) framework redesigns industrial systems so materials act as biological or technical nutrients circulating perpetually, effectively eliminating the concept of waste.",
+            "module": 2
+        },
+        {
+            "question_id": "45",
+            "question_text": "What did Kate Raworth's Doughnut model integrate into its framework?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Linear economic production models.",
+                "B": "The concept of planetary boundaries and social foundations.",
+                "C": "Traditional GDP growth targets.",
+                "D": "Short-term financial gains for corporations."
+            },
+            "correct_option_label": "B",
+            "explanation": "Kate Raworth's Doughnut Economics framework aims to balance an inner ring of human needs (social foundations) against an outer ring of ecological limits (planetary boundaries).",
+            "module": 2
+        },
+        {
+            "question_id": "46",
+            "question_text": "What is \"Jugaad\" in the context of sustainability?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A high-tech, expensive industrial process.",
+                "B": "A formalized concept focused on mass production for global markets.",
+                "C": "An innovative fix or improvised solution born from ingenuity and cleverness, often using local resources.",
+                "D": "A method of creating waste efficiently."
+            },
+            "correct_option_label": "C",
+            "explanation": "'Jugaad' is a uniquely Indian concept referring to grassroots, flexible problem-solving using local ingenuity to craft speedy, improvised, and affordable solutions in highly resource-constrained environments.",
+            "module": 2
+        },
+        {
+            "question_id": "47",
+            "question_text": "Which of the following is a characteristic of \"frugal innovation\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Focus on adding unnecessary features.",
+                "B": "Designed for high-income market segments.",
+                "C": "Optimized performance with core functionalities.",
+                "D": "Substantial cost increase."
+            },
+            "correct_option_label": "C",
+            "explanation": "Frugal innovation is characterized by strategic cost reduction, stripping away non-essential features, and optimizing performance around core functionalities to create 'good enough', scalable solutions.",
+            "module": 2
+        },
+        {
+            "question_id": "48",
+            "question_text": "What is considered a \"negative externality\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A benefit that a person or firm provides to others.",
+                "B": "A cost that an individual or firm's action imposes on others, not involved in the original transaction.",
+                "C": "An internal cost fully accounted for by producers.",
+                "D": "A perfectly efficient allocation of resources in a market."
+            },
+            "correct_option_label": "B",
+            "explanation": "A negative externality is an unintended side effect of an economic activity that imposes a cost on third parties who are entirely external to the transaction, representing a failure in market pricing.",
+            "module": 3
+        },
+        {
+            "question_id": "49",
+            "question_text": "The \"Tragedy of the Commons\" suggests that unregulated access to shared resources leads to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Optimal resource management.",
+                "B": "Enhanced community cooperation.",
+                "C": "Increased individual accountability.",
+                "D": "Overexploitation and depletion of the resource."
+            },
+            "correct_option_label": "D",
+            "explanation": "Garrett Hardin's core thesis in the Tragedy of the Commons is that without strict rules, shared and finite open-access resources will invariably face collective ruin through individual overexploitation.",
+            "module": 3
+        },
+        {
+            "question_id": "50",
+            "question_text": "Elinor Ostrom's work challenged the inevitability of the Tragedy of the Commons by demonstrating that:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Individual self-interest always leads to collective ruin.",
+                "B": "Communities can effectively manage shared resources through self-organizing institutions and collective action.",
+                "C": "Only state control or privatization can prevent resource depletion.",
+                "D": "External agents are always necessary to enforce commitments regarding common pool resources."
+            },
+            "correct_option_label": "B",
+            "explanation": "Ostrom won a Nobel Prize by empirically proving that communities do not require top-down state intervention or privatization. Through robust local rule-making and monitoring, they can govern commons sustainably.",
+            "module": 3
         }
     ]
 }
