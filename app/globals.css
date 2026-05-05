@@ -42,15 +42,46 @@ body::after {
 
 /* KaTeX dark mode styling */
 .katex {
-  color: #e2e8f0;
+  color: #f1f5f9;
+  font-size: 1.1em;
+  font-family: 'KaTeX_Main', 'Times New Roman', serif;
 }
 
 .katex .base {
-  color: #e2e8f0;
+  color: #f1f5f9;
 }
 
 .katex .mord {
-  color: #e2e8f0;
+  color: #f1f5f9;
+}
+
+/* Make fractions more readable with better spacing */
+.katex .mfrac .frac-line {
+  border-color: #cbd5e1;
+}
+
+.katex .mfrac {
+  padding: 0 0.1em;
+}
+
+/* Display math blocks - clean card style */
+.katex-display {
+  margin: 1em 0;
+  padding: 0.8em 0;
+  overflow-x: auto;
+}
+
+.katex-display > .katex {
+  font-size: 1.2em;
+}
+
+/* Subtle color for operators */
+.katex .mrel {
+  color: #c4b5fd;
+}
+
+.katex .mbin {
+  color: #86efac;
 }
 
 /* Custom Scrollbar Styles */

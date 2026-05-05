@@ -8,7 +8,7 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import rehypeRaw from 'rehype-raw';
 import { ArrowLeft, BookOpen, ChevronDown, Type, Printer } from 'lucide-react';
-import { loadNotes } from '@/lib/notesLoader';
+import { loadNotes, loadFormulas } from '@/lib/notesLoader';
 import { getSubjectByCode } from '@/lib/subjectMapping';
 import Header from '@/components/Header';
 
@@ -66,13 +66,23 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
   const [selectedFont, setSelectedFont] = useState<FontOption>(fontOptions[0]);
   const [fontDropdownOpen, setFontDropdownOpen] = useState(false);
   const [fontSize, setFontSize] = useState<number>(18); // Default font size in px
+  const [showFormulas, setShowFormulas] = useState(false);
+  const [formulasContent, setFormulasContent] = useState<string | null>(null);
+  const [notesContent, setNotesContent] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchNotes = async () => {
       setLoading(true);
       setError(null);
-      const content = await loadNotes(subjectCode);
+      const [notes, formulas] = await Promise.all([
+        loadNotes(subjectCode),
+        loadFormulas(subjectCode),
+      ]);
 
+      setFormulasContent(formulas);
+      setNotesContent(notes);
+
+      const content = notes;
       if (content === null) {
         setError('Notes not available for this subject.');
       } else {
@@ -83,6 +93,13 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
 
     fetchNotes();
   }, [subjectCode]);
+
+  const handleToggleFormulas = () => {
+    if (!formulasContent) return;
+    const next = !showFormulas;
+    setShowFormulas(next);
+    setMarkdown(next ? formulasContent : notesContent);
+  };
 
 
 
@@ -222,7 +239,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
       </head>
       <body>
         <div class="title">${title}</div>
-        <div class="subtitle">Notes</div>
+        <div class="subtitle">${showFormulas ? 'Formula Sheet' : 'Notes'}</div>
         ${renderedHtml}
         <div class="footer">acedbe.in</div>
       </body>
@@ -318,6 +335,22 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
               <span className="text-sm sm:text-base text-slate-200 font-bold">A</span>
               <span className="text-[10px] sm:text-xs text-slate-400 hidden sm:inline ml-1">{fontSize}px</span>
             </div>
+
+            {/* Formulas Toggle */}
+            {formulasContent && (
+              <button
+                onClick={handleToggleFormulas}
+                className={`flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg transition-colors font-bold text-sm print:hidden ${
+                  showFormulas
+                    ? 'bg-amber-500 hover:bg-amber-400 text-white'
+                    : 'bg-slate-700/60 hover:bg-slate-600 text-slate-200'
+                }`}
+                aria-label="Toggle formula sheet"
+                title={showFormulas ? 'Switch to Notes' : 'Switch to Formula Sheet'}
+              >
+                F
+              </button>
+            )}
 
             {/* Print Button */}
             <button

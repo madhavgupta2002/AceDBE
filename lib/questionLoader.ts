@@ -92,7 +92,7 @@ export async function loadQuestions(
   }
 
   const examDate = questionFile.exam_metadata?.exam_date;
-  return questionFile.questions.map(q => convertToInternalFormat(q, examDate));
+  return questionFile.questions.map(q => convertToInternalFormat(q, bankName));
 }
 
 // Load all questions for a subject (for full practice mode)
