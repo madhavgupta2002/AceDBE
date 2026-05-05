@@ -524,11 +524,17 @@ Cost object = activity-driven product/service.
 ## 🔹 14. Module 2 One-Page Formula Sheet
 
 **Prime Cost** = Direct Material + Direct Labour + Direct Expenses
+
 **Completed Units** = Opening WIP + Units Introduced − Closing WIP
+
 **Equivalent Units** = Completed Units + Closing WIP × % Completion
+
 **Cost per EU** = Total Cost ÷ Total EU
+
 **Normal Loss** = absorbed by good units
+
 **Abnormal Loss** = charged to P&L
+
 **ABC Driver Rule** = choose the factor that actually causes the cost 
 
 ---
@@ -565,6 +571,7 @@ This module is about using accounting information for **managerial decisions** s
 ### 📐 Core formula
 
 **Contribution = Sales − Variable Cost**
+
 **Profit = Contribution − Fixed Cost** 
 
 ### 🧠 Exam pattern
@@ -582,7 +589,9 @@ Break-even analysis tells you how many units or how much sales value is needed t
 ### 📐 Key formulas
 
 **BEP (Units) = Fixed Cost ÷ Contribution per unit**
+
 **BEP (Sales) = Fixed Cost ÷ Contribution Margin Ratio**
+
 **Profit = Margin of Safety × Contribution per unit** 
 
 ### 🧠 Representative question
@@ -627,7 +636,9 @@ If sales volume is fixed and management wants a target profit, first calculate t
 ### 📐 Formula
 
 **Required Contribution = Fixed Cost + Target Profit**
+
 **Contribution per unit = Required Contribution ÷ Units**
+
 **Selling Price = Variable Cost per unit + Contribution per unit** 
 
 ### 🧠 Representative question
@@ -665,7 +676,9 @@ If you are given sales and profit for two periods, you can derive the PV ratio f
 ### 📐 Formula
 
 **PV Ratio = Change in Profit ÷ Change in Sales**
+
 **Fixed Cost = Contribution − Profit**
+
 **BEP Sales = Fixed Cost ÷ PV Ratio** 
 
 ### 🧠 Representative question
@@ -787,13 +800,21 @@ So **yes, profit rises to Rs. 4 lakhs ✅**
 ## 🔹 13. Quick formula sheet for Module 3
 
 **Contribution = Sales − Variable Cost**
+
 **Profit = Contribution − Fixed Cost**
+
 **BEP (Units) = Fixed Cost ÷ Contribution per unit**
+
 **BEP (Sales) = Fixed Cost ÷ CMR**
+
 **MOS = Actual Sales − BEP Sales**
+
 **Profit = MOS × CMR**
+
 **DOL = Contribution ÷ PBIT**
+
 **Limiting factor ranking = Contribution per scarce resource unit**
+
 **Make or Buy = Compare vendor price with avoidable internal cost** 
 
 ---
@@ -832,6 +853,7 @@ Budgeting is a planning tool. It helps management convert strategy into numbers 
 ### 📐 Basic budget relationships
 
 **Production Budget = Sales + Desired Closing Stock − Opening Stock**
+
 **Purchase Budget = Material Required for Production + Desired Closing Material − Opening Material** 
 
 ---
@@ -1017,7 +1039,9 @@ Sales variance compares actual revenue with budgeted revenue. It can be split in
 ### 📐 Formula
 
 **Total Sales Variance = Actual Sales − Budgeted Sales**
+
 **Rate Variance = (Actual Price − Standard Price) × Actual Quantity**
+
 **Quantity Variance = (Actual Quantity − Budgeted Quantity) × Standard Price** 
 
 ### 🧠 Representative question
@@ -1104,19 +1128,25 @@ So the answer is **Rs. 9000 Adverse ✅**
 ### ✅ Budgeting
 
 **Production = Sales + Desired Closing Stock − Opening Stock**
+
 **Purchase = Material Required + Desired Closing RM − Opening RM**
+
 **Cash Budget = all cash inflows − all cash outflows** 
 
 ### ✅ Variance Analysis
 
 **Total Variance = Standard Cost − Actual Cost**
+
 **Price Variance = (SP − AP) × AQ**
+
 **Usage Variance = (SQ − AQ) × SP** 
 
 ### ✅ Sales Variance
 
 **Total Sales Variance = Actual Sales − Budgeted Sales**
+
 **Rate Variance = (AP − SP) × AQ**
+
 **Quantity Variance = (AQ − SQ) × SP** 
 
 ### ✅ Supplier payments
