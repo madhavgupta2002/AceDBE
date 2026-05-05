@@ -340,11 +340,10 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
             {formulasContent && (
               <button
                 onClick={handleToggleFormulas}
-                className={`flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg transition-colors font-bold text-sm print:hidden ${
-                  showFormulas
+                className={`flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg transition-colors font-bold text-sm print:hidden ${showFormulas
                     ? 'bg-amber-500 hover:bg-amber-400 text-white'
                     : 'bg-slate-700/60 hover:bg-slate-600 text-slate-200'
-                }`}
+                  }`}
                 aria-label="Toggle formula sheet"
                 title={showFormulas ? 'Switch to Notes' : 'Switch to Formula Sheet'}
               >
