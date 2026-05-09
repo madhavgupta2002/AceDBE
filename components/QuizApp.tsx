@@ -20,7 +20,7 @@ import SourceSelector from './SourceSelector';
 import UnifiedQuizSelector from './UnifiedQuizSelector';
 import Header from './Header';
 import StopWatch from './StopWatch';
-import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube, Search, History, ArrowRightLeft, Check, Download, Play, Pause, Printer } from 'lucide-react';
+import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube, Search, History, ArrowRightLeft, Check, Download, Play, Pause, Printer, Eye, EyeOff, XCircle, List } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -985,27 +985,53 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                 </div>
 
                 <div className="flex flex-wrap justify-end gap-3 shrink-0">
+                  {/* Filter: All vs Incorrect Only */}
                   {!reviseMode && (
+                    <div className="flex items-center bg-slate-800/70 rounded-lg p-1 border border-slate-700/50 gap-0.5" title="Filter which questions to show">
+                      <button
+                        onClick={() => setShowAllQuestions(true)}
+                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-semibold transition-all duration-200 ${showAllQuestions
+                            ? 'bg-emerald-600 text-white shadow-sm'
+                            : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
+                          }`}
+                      >
+                        <List size={13} /> All
+                      </button>
+                      <button
+                        onClick={() => setShowAllQuestions(false)}
+                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-semibold transition-all duration-200 ${!showAllQuestions
+                            ? 'bg-red-600 text-white shadow-sm'
+                            : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
+                          }`}
+                      >
+                        <XCircle size={13} /> Incorrect Only
+                      </button>
+                    </div>
+                  )}
+
+                  {/* Options visibility: Show all options vs correct answer only */}
+                  <div className="flex items-center bg-slate-800/70 rounded-lg p-1 border border-slate-700/50 gap-0.5" title="Control which answer options are visible">
                     <button
-                      onClick={() => setShowAllQuestions(!showAllQuestions)}
-                      className={`px-4 py-2 border font-semibold transition-all duration-200 rounded-lg ${showAllQuestions
-                        ? 'bg-emerald-600/80 text-white border-emerald-500/40 hover:bg-emerald-500'
-                        : 'bg-slate-700/60 text-slate-200 border-slate-600/40 hover:bg-slate-600'
+                      onClick={() => setHideWrongOptions(false)}
+                      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-semibold transition-all duration-200 ${!hideWrongOptions
+                          ? 'bg-slate-500 text-white shadow-sm'
+                          : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
                         }`}
                     >
-                      {showAllQuestions ? 'All Questions' : 'Incorrect Questions'}
+                      All Options
                     </button>
-                  )}
-                  <button
-                    onClick={() => setHideWrongOptions(!hideWrongOptions)}
-                    className={`px-4 py-2 border font-semibold transition-all duration-200 rounded-lg ${hideWrongOptions
-                      ? 'bg-emerald-600/80 text-white border-emerald-500/40 hover:bg-emerald-500'
-                      : 'bg-slate-700/60 text-slate-200 border-slate-600/40 hover:bg-slate-600'
-                      }`}
-                  >
-                    {hideWrongOptions ? 'Hide Options' : 'Show Options'}
-                  </button>
+                    <button
+                      onClick={() => setHideWrongOptions(true)}
+                      className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-semibold transition-all duration-200 ${hideWrongOptions
+                          ? 'bg-slate-500 text-white shadow-sm'
+                          : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
+                        }`}
+                    >
+                      Answer Only
+                    </button>
+                  </div>
 
+                  {/* Show / Hide correct answers */}
                   <button
                     onClick={() => {
                       const newState = !globalAnswersVisible;
@@ -1013,12 +1039,13 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       // Reset all individual overrides when global toggle is used
                       setIndividualAnswersVisible({});
                     }}
-                    className={`px-4 py-2 border font-semibold transition-all duration-200 rounded-lg ${!globalAnswersVisible
-                      ? 'bg-amber-600/80 text-white border-amber-500/40 hover:bg-amber-500'
-                      : 'bg-slate-700/60 text-slate-200 border-slate-600/40 hover:bg-slate-600'
+                    className={`flex items-center gap-2 px-4 py-2 border font-semibold transition-all duration-200 rounded-lg ${globalAnswersVisible
+                        ? 'bg-amber-600/80 text-white border-amber-500/40 hover:bg-amber-500'
+                        : 'bg-slate-700/60 text-slate-200 border-slate-600/40 hover:bg-slate-600'
                       }`}
+                    title={globalAnswersVisible ? 'Hide correct answers' : 'Reveal correct answers'}
                   >
-                    {!globalAnswersVisible ? 'Show Correct' : 'Hide Correct'}
+                    {globalAnswersVisible ? <><EyeOff size={14} /> Hide Answers</> : <><Eye size={14} /> Show Answers</>}
                   </button>
 
                   <button

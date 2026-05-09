@@ -1,3 +1,5 @@
+***Management Accounting***
+
 # Module 01: Introduction to Management Accounting
 
 ## 1.0 Welcome to Module 01
