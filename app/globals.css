@@ -43,8 +43,8 @@ body::after {
 /* KaTeX dark mode styling */
 .katex {
   color: #f1f5f9;
-  font-size: 1.1em;
-  font-family: 'KaTeX_Main', 'Times New Roman', serif;
+  font-size: 0.85em;
+  font-family: 'KaTeX_SansSerif', 'Arial', sans-serif;
 }
 
 .katex .base {
@@ -71,8 +71,8 @@ body::after {
   overflow-x: auto;
 }
 
-.katex-display > .katex {
-  font-size: 1.2em;
+.katex-display>.katex {
+  font-size: 0.85em;
 }
 
 /* Subtle color for operators */

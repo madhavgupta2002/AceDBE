@@ -1,0 +1,1032 @@
+{
+    "exam_metadata": {
+        "subject_name": "Management Accounting",
+        "exam_date": "Batch 2",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "A Bluetooth headset manufacturing company produced 50,000 units in July and 75,000 units in August. The manufacturing cost in July is Rs. 50 lakhs. As the volume increased, the manufacturing cost in August is Rs. 70 lakhs. What is the variable cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs.80 per unit",
+                "B": "Rs.50 per unit",
+                "C": "Rs.90 per unit",
+                "D": "Rs.95 per unit"
+            },
+            "correct_option_label": "A",
+            "explanation": "Using the High-Low Method:\n\n$$Variable\\ Cost = \\frac{Cost\\ at\\ Highest\\ Volume - Cost\\ at\\ Lowest\\ Volume}{Highest\\ Volume - Lowest\\ Volume}$$\n\n$$Variable\\ Cost = \\frac{70,00,000 - 50,00,000}{75,000 - 50,000} = \\frac{20,00,000}{25,000} = 80$$\n\nThe variable cost is Rs. 80 per unit.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "A Bluetooth headset manufacturing company produced 55,000 units in July and 75,000 units in August. The manufacturing cost in July is Rs. 50 lakhs. As the volume increased, the manufacturing cost in August is Rs. 60 lakhs. What is the fixed cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 10.50 lakhs",
+                "B": "Rs. 35 lakhs",
+                "C": "Rs. 22.50 lakhs",
+                "D": "Rs. 25.80 lakhs"
+            },
+            "correct_option_label": "C",
+            "explanation": "Step 1: Find Variable Cost using the High-Low Method:\n\n$$Variable\\ Cost/Unit = \\frac{60,00,000 - 50,00,000}{75,000 - 55,000} = \\frac{10,00,000}{20,000} = Rs. 50/unit$$\n\nStep 2: Find Fixed Cost by substituting into the total cost equation (Total Cost = Fixed Cost + Variable Cost):\n\n$$50,00,000 = Fixed\\ Cost + (50 \\times 55,000)$$\n\n$$50,00,000 = Fixed\\ Cost + 27,50,000$$\n\n$$Fixed\\ Cost = 22,50,000 = Rs. 22.50\\ lakhs$$",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "You got the following financial data from your accounting department. Opening Stock - Finished Goods Rs. 30; Opening Stock - Raw Material Rs. 100; Opening Stock - Work-in-progress Rs. 28; Closing Stock - Finished Goods Rs. 20; Closing Stock - Raw Material Rs. 231; Closing Stock - Work-in-progress Rs. 14; Raw Material Purchases Rs. 900; Manufacturing overhead Rs. 275; Salary and Wages to Factory Workers Rs. 150. Calculate the value of \"Material consumed\" during the period?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "774",
+                "B": "769",
+                "C": "1000",
+                "D": "986"
+            },
+            "correct_option_label": "B",
+            "explanation": "$$Material\\ Consumed = Opening\\ Stock\\ of\\ Raw\\ Material + Raw\\ Material\\ Purchases - Closing\\ Stock\\ of\\ Raw\\ Material$$\n\n$$Material\\ Consumed = 100 + 900 - 231 = 769$$",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "You got the following financial data from your accounting department. Opening Stock - Finished Goods Rs. 30; Opening Stock - Raw Material Rs. 102; Opening Stock - Work-in-progress Rs. 28; Closing Stock - Finished Goods Rs. 20; Closing Stock - Raw Material Rs. 231; Closing Stock - Work-in-progress Rs. 14; Raw Material Purchases Rs. 912; Manufacturing overhead Rs. 275; Salary and Wages to Factory Workers Rs. 150. Calculate the value of \"Conversion Cost\" for the period?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "425",
+                "B": "325",
+                "C": "231",
+                "D": "681"
+            },
+            "correct_option_label": "A",
+            "explanation": "$$Conversion\\ Cost = Direct\\ Labour + Manufacturing\\ Overhead$$\n\nBased on the data provided:\n\n$$Conversion\\ Cost = 150\\ (Salary\\ and\\ Wages) + 275\\ (Manufacturing\\ Overhead) = 425$$",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "You got the following financial data from your accounting department. Opening Stock - Finished Goods Rs. 30; Opening Stock - Raw Material Rs. 100; Opening Stock - Work-in-progress Rs. 28; Closing Stock - Finished Goods Rs. 20; Closing Stock - Raw Material Rs. 231; Closing Stock - Work-in-progress Rs. 14; Raw Material Purchases Rs. 912; Manufacturing overhead Rs. 290; Salary and Wages to Factory Workers Rs. 150. Calculate the value of \"Cost of Goods Manufactured\" during the period?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1235",
+                "B": "1133",
+                "C": "1222",
+                "D": "1200"
+            },
+            "correct_option_label": "A",
+            "explanation": "Step 1: Calculate Raw Material Consumed:\n\n$$RM\\ Consumed = 100\\ (Op.\\ RM) + 912\\ (Purchases) - 231\\ (Cl.\\ RM) = 781$$\n\nStep 2: Calculate Total Manufacturing Cost:\n\n$$Total\\ Mfg.\\ Cost = 781\\ (RM) + 150\\ (Labour) + 290\\ (OH) = 1221$$\n\nStep 3: Calculate Cost of Goods Manufactured (COGM):\n\n$$COGM = Total\\ Mfg.\\ Cost + Opening\\ WIP - Closing\\ WIP$$\n\n$$COGM = 1221 + 28 - 14 = 1235$$",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "You got the following financial data from your accounting department. Opening Stock - Finished Goods Rs. 30; Opening Stock - Raw Material Rs. 100; Opening Stock - Work-in-progress Rs. 28; Closing Stock - Finished Goods Rs. 20; Closing Stock - Raw Material Rs. 231; Closing Stock - Work-in-progress Rs. 14; Raw Material Purchases Rs. 900; Manufacturing overhead Rs. 250; Salary and Wages to Factory Workers Rs. 100. Calculate the \"Cost of goods sold\" during the period?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1178",
+                "B": "1232",
+                "C": "1321",
+                "D": "1143"
+            },
+            "correct_option_label": "D",
+            "explanation": "Step 1: Calculate Raw Material Consumed:\n\n$$100\\ (Op.\\ RM) + 900\\ (Purchases) - 231\\ (Cl.\\ RM) = 769$$\n\nStep 2: Calculate Cost of Goods Manufactured (COGM):\n\n$$COGM = 769\\ (RM) + 100\\ (Labour) + 250\\ (OH) + 28\\ (Op.\\ WIP) - 14\\ (Cl.\\ WIP) = 1133$$\n\nStep 3: Calculate Cost of Goods Sold (COGS):\n\n$$COGS = COGM + Opening\\ Finished\\ Goods - Closing\\ Finished\\ Goods$$\n\n$$COGS = 1133 + 30 - 20 = 1143$$",
+            "module": 1
+        },
+        {
+            "question_id": "7",
+            "question_text": "Brand Times is an advertising consulting firm which provides advertising services for its clients. The company bills the customers charging all direct costs (like fee paid to artists) incurred for the job, indirect costs (like salary for the production technicians and office expenses) and 40% mark-up on total cost. The average indirect cost per month is Rs. 80 Lakhs. During the month of January, the firm plans to execute 8 jobs of different kinds. The total estimated production hours for all 8 jobs are 160 hours. The entity enters into an advertising service contract with an FMCG company, the cost details and the time spent on this particular job by Brand Times are as follows:- Artists Fee works out to Rs. 30 lakhs. Total hours required to shoot and edit the film is 30 hours. You are required to calculate by what amount should Brand Times bill the FMCG company?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 36,00,000",
+                "B": "Rs. 45,00,000",
+                "C": "Rs. 63,00,000",
+                "D": "Rs. 50,00,000"
+            },
+            "correct_option_label": "C",
+            "explanation": "Step 1: Calculate Indirect Cost per Hour:\n\n$$Rate = \\frac{80\\ Lakhs}{160\\ Hours} = 0.5\\ Lakhs/Hour$$\n\nStep 2: Apply overhead to the job based on actual hours (30 hours):\n\n$$Applied\\ Indirect\\ Cost = 30 \\times 0.5\\ Lakhs = 15\\ Lakhs$$\n\nStep 3: Calculate Total Cost:\n\n$$Total\\ Cost = Direct\\ Cost\\ (30\\ Lakhs) + Indirect\\ Cost\\ (15\\ Lakhs) = 45\\ Lakhs$$\n\nStep 4: Add 40% Markup:\n\n$$Bill\\ Amount = 45\\ Lakhs \\times 1.40 = 63\\ Lakhs = Rs. 63,00,000$$",
+            "module": 1
+        },
+        {
+            "question_id": "8",
+            "question_text": "Brand Times is an advertising consulting firm which provides advertising services for its clients. The company bills the customers charging all direct costs (like fee paid to artists) incurred for the job, indirect costs (like salary for the production technicians and office expenses) and 30% mark-up on total cost. The average indirect cost per month is Rs. 80 Lakhs. During the month of January, the firm plans to execute 8 jobs of different kinds. The total estimated production hours for all 8 jobs are 160 hours. The entity enters into an advertising service contract with a Mobile Phone company that wants to release a one page advertisement in the newspapers. Total Hours required to make the advertisement is 6 hours. The material cost is insignificant and the company will directly pay to the newspaper for the advertisement. You are required to calculate by what amount should Brand Times bill the Mobile Phone company?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 3,90,000",
+                "B": "Rs. 3,50,000",
+                "C": "Rs. 13,33,333",
+                "D": "Rs. 13,50,000"
+            },
+            "correct_option_label": "A",
+            "explanation": "Step 1: Calculate Indirect Cost per Hour:\n\n$$Rate = \\frac{80,00,000}{160} = 50,000/Hour$$\n\nStep 2: Apply overhead to the 6-hour job:\n\n$$Applied\\ Indirect\\ Cost = 6 \\times 50,000 = 3,00,000$$\n\nStep 3: Add 30% Markup (Material costs are zero/insignificant):\n\n$$Bill\\ Amount = 3,00,000 \\times 1.30 = 3,90,000$$",
+            "module": 1
+        },
+        {
+            "question_id": "9",
+            "question_text": "Rahul and Rohit have acquired an automobile service station for a price Rs. 1300 lakhs. The average monthly operating cost is Rs. 50 lakhs which includes salary for the workers, rent for the building, and other expenses. The owners expect a minimum return of 1% per month for their investment. On an average 100 vehicles are serviced per day including Saturday and Sunday. However, the vehicles are of different types and cost. Total servicing hours per month is 9000 hours. The firm has an option of using either \"Units\" or \"Servicing Hour\" rate as a basis of allocating the total cost to vehicles. Suppose if the firm services two different types of vehicles – one high end vehicle and another economy vehicle and it spends 6 hours and 2 hours to service high end vehicle and economy vehicle respectively, use the above data to calculate how much should be charged to the high end vehicle, if \"units\" is used as a basis to allocate the total cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 2100",
+                "B": "Rs. 1200",
+                "C": "Rs. 1400",
+                "D": "Rs. 1800"
+            },
+            "correct_option_label": "A",
+            "explanation": "Step 1: Calculate Total Required Recovery Cost:\n\n$$Total\\ Cost = Monthly\\ Operating\\ Cost\\ (50\\ L) + Minimum\\ Return\\ (1\\%\\ of\\ 1300\\ L) = 50 + 13 = 63\\ Lakhs$$\n\nStep 2: Calculate Units (Vehicles per month assuming 30 days):\n\n$$100\\ vehicles/day \\times 30\\ days = 3000\\ units$$\n\nStep 3: Calculate Charge per Unit:\n\n$$Charge = \\frac{63,00,000}{3000} = Rs. 2100$$\n\nSince the allocation basis is \"Units\", every vehicle is charged the flat rate of Rs. 2100, regardless of the hours spent.",
+            "module": 1
+        },
+        {
+            "question_id": "10",
+            "question_text": "Rahul and Rohit have acquired an automobile service station for a price Rs. 1300 lakhs. The average monthly operating cost is Rs. 50 lakhs which includes salary for the workers, rent for the building, and other expenses. The owners expect a minimum return of 1% per month for their investment. On an average 100 vehicles are serviced per day including Saturday and Sunday. However, the vehicles are of different types and cost. Total servicing hours per month is 9000 hours. The firm has an option of using either \"Units\" or \"Servicing Hour\" rate as a basis of allocating the total cost to vehicles. Suppose if the firm services two different types of vehicles – one high end vehicle and another economy vehicle and it spends 6 hours and 2 hours to service high end vehicle and economy vehicle respectively, use the above data to calculate how much should be charged to the Economy vehicle, if \"units\" is used as a basis to allocate the total cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 2200",
+                "B": "Rs. 2100",
+                "C": "Rs. 1500",
+                "D": "None is correct"
+            },
+            "correct_option_label": "B",
+            "explanation": "As established in the previous calculation, the flat charge per unit is Rs. 2100. Using \"units\" as an allocation base disregards the difference in service times. Therefore, the economy vehicle is also charged Rs. 2100.",
+            "module": 1
+        },
+        {
+            "question_id": "11",
+            "question_text": "Rahul and Rohit have acquired an automobile service station for a price Rs. 1300 lakhs. The average monthly operating cost is Rs. 50 lakhs which includes salary for the workers, rent for the building, and other expenses. The owners expect a minimum return of 1% per month for their investment. On an average 150 vehicles are serviced per day including Saturday and Sunday. However, the vehicles are of different types and cost. Total servicing hours per month is 8000 hours. The firm has an option of using \"Units\" or \"Servicing Hour\" Rate as a basis of allocating the total cost to vehicles. Suppose if the firm services two different types of vehicles – one high end vehicle and another economy vehicle. If it spends 6 hours and 2 hours to service high end vehicle and economy vehicles respectively, use the above data to calculate how much should be charged to the high end vehicle, if \"service hours\" is used as a basis to allocate the total cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 4800",
+                "B": "Rs. 4725",
+                "C": "Rs. 5200",
+                "D": "Rs. 4680"
+            },
+            "correct_option_label": "B",
+            "explanation": "Step 1: Total Required Recovery Cost:\n\n$$Total\\ Cost = 50\\ Lakhs + (1\\% \\times 1300\\ Lakhs) = 63\\ Lakhs$$\n\nStep 2: Calculate Cost per Service Hour:\n\n$$Rate = \\frac{63,00,000}{8000\\ hours} = Rs. 787.5/hour$$\n\nStep 3: Allocate to High-End Vehicle (6 hours):\n\n$$Charge = 6 \\times 787.5 = Rs. 4725$$",
+            "module": 1
+        },
+        {
+            "question_id": "12",
+            "question_text": "Rahul and Rohit have acquired an automobile service station for a price Rs. 1300 lakhs. The average monthly operating cost is Rs. 65 lakhs which includes salary for the workers, rent for the building, and other expenses. The owners expect a minimum return of 1% per month for their investment. On an average 150 vehicles are serviced per day including Saturday and Sunday. However, the vehicles are of different types and cost. Total servicing hours per month is 10,000 hours. The firm has an option of using \"Units\" or \"Servicing Hour\" Rate as a basis of allocating the total cost to vehicles. Suppose if the firm services two different types of vehicles – one high end vehicle and another economy vehicle and it spends 6 hours and 2 hours to service high end vehicle and economy vehicles respectively, use the above data to calculate how much should be charged to the Economy vehicle, if \"service hours\" is used as a basis to allocate the total cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 1700",
+                "B": "Rs. 1360",
+                "C": "Rs. 1733",
+                "D": "Rs. 1560"
+            },
+            "correct_option_label": "D",
+            "explanation": "Step 1: Total Required Recovery Cost:\n\n$$Total\\ Cost = 65\\ Lakhs + (1\\% \\times 1300\\ Lakhs) = 78\\ Lakhs$$\n\nStep 2: Calculate Cost per Service Hour:\n\n$$Rate = \\frac{78,00,000}{10,000\\ hours} = Rs. 780/hour$$\n\nStep 3: Allocate to Economy Vehicle (2 hours):\n\n$$Charge = 2 \\times 780 = Rs. 1560$$",
+            "module": 1
+        },
+        {
+            "question_id": "13",
+            "question_text": "Rahul and Rohit have acquired an automobile service station for a price Rs. 1300 lakhs. The average monthly operating cost is Rs. 50 lakhs which includes salary for the workers, rent for the building, and other expenses. The owners expect a minimum return of 1% per month for their investment. On an average 100 vehicles are serviced per day including Saturday and Sunday. However, the vehicles are of different types and cost. Total servicing hours per month is 6000 hours. The firm has an option of using either \"Units\" or \"Servicing Hour\" rate as a basis of allocating the total cost to vehicles. Suppose if the firm services two different types of vehicles – one high end vehicle and another economy vehicle and it spends 6 hours and 2 hours to service high end vehicle and economy vehicle respectively. Which basis of cost allocation is more appropriate in the given scenario?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Unit",
+                "B": "Service Hours",
+                "C": "Indifferent between the two basis of allocation",
+                "D": "Neither is an appropriate basis of cost allocation"
+            },
+            "correct_option_label": "B",
+            "explanation": "Because the high-end vehicle takes significantly more time (6 hours) compared to the economy vehicle (2 hours), they consume resources unevenly. Using \"Service Hours\" correctly applies more overhead costs to jobs that take longer to perform, avoiding cross-subsidization.",
+            "module": 1
+        },
+        {
+            "question_id": "14",
+            "question_text": "ABC Bakers produces muffins that are sold to retailers and hotels. During the month of June, the company incurred the follwing production cost. Muffin ingredients for Rs. 4,50,000, Labour cost of Rs. 2,50,000, Factory overheads of Rs. 2,00,000, Selling expenses of Rs. 50,000, salary to office staff of Rs.1,50,000. Normal spoilage in the production process of Rs. 20,000 and abnormal spoilage of Rs.7,500. Use the data to calculate the per unit cost of the muffins assigned to inventory for June if it produced 20,000 muffins during the period.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 45.00",
+                "B": "Rs. 46.00",
+                "C": "Rs. 45.80",
+                "D": "Rs. 48.50"
+            },
+            "correct_option_label": "B",
+            "explanation": "Total Manufacturing Costs incurred = Ingredients (4,50,000) + Labour (2,50,000) + Factory Overhead (2,00,000) = Rs. 9,00,000.\n\nAccording to standard costing rules, the cost of normal spoilage is absorbed by the good units. (Here, the Rs. 20,000 cost is inherently part of the 9,00,000 total incurred. Abnormal spoilage is separated). If normal spoilage cost is presented as an additional absorbed cost, Total Inventoriable Cost = 9,00,000 + 20,000 = 9,20,000. \n\n$$Cost\\ per\\ unit = \\frac{9,20,000}{20,000\\ units} = Rs. 46.00$$",
+            "module": 1
+        },
+        {
+            "question_id": "15",
+            "question_text": "ABC Bakers produces muffins that are sold to retailers and hotels. During the month of June, the company incurred the follwing production cost. Muffin ingredients for Rs. 4,50,000, Labour cost of Rs. 2,50,000, Factory overheads of Rs. 2,00,000, Selling expenses of Rs. 50,000, salary to office staff of Rs. 3,50,000. Normal spoilage in the production process of Rs. 30,000 and abnormal spoilage of Rs.1,500. Use the data to calculate the amount that ABC Bakers will assign as a period expense for the month of June if it has produced 20,000 Muffins during the month.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 4,01,500",
+                "B": "Rs. 4,07,500",
+                "C": "Rs. 2,07,500",
+                "D": "None is correct"
+            },
+            "correct_option_label": "A",
+            "explanation": "Period expenses are costs that are not tied directly to the production of inventory. They include non-manufacturing costs (Selling expenses, Office salaries) and abnormal losses.\n\n$$Period\\ Expense = Selling\\ Expenses\\ (50,000) + Office\\ Staff\\ Salary\\ (3,50,000) + Abnormal\\ Spoilage\\ (1,500)$$\n\n$$Period\\ Expense = 4,01,500$$",
+            "module": 1
+        },
+        {
+            "question_id": "16",
+            "question_text": "Standard Polymer and Co manufactures pet (Polyethylene terephthalate) bottles of three sizes. The material goes through two processes before reaching final product. The direct material cost for the 200 ml, 500 ml and 1 lt bottles are Rs. 1, Rs. 2 and Rs. 3.50 per unit respectively. In Process 1, the firm spends Rs. 30 lakhs for labour, Rs. 5 lakhs for power and fuel and Rs. 12 lakhs towards depreciation. In Process 2, the firm spends Rs. 12 lakhs for labour, Rs. 10 lakhs for power and fuel and Rs. 5.2 lakhs towards depreciation. The efforts required for manufacturing three sizes of the bottles are in the ratio of 1.00: 1.20: 1.50. That is, if 1 hour is required to manufacture 10000 units of 200 ml bottles, 1.20 hours is required to manufacture 10000 units of 500 ml bottles and 1.50 hours is required to manufacture 10000 units of 1 lt bottle. during the month – 5 lakhs pieces of 200 ml bottles, 8 lakhs pieces of 500 ml bottles and 15 lakhs pieces of 1 lt bottles. Find the per unit cost of 200 ml. bottle, 500 ml bottle, and 1000 ml bottle.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 3.00 (200 ml); Rs. 4.40 (500 ml) and Rs. 6.00 (1000 ml)",
+                "B": "Rs. 3.00 (200 ml); Rs. 4.90 (500 ml) and Rs. 6.00 (1000 ml)",
+                "C": "Rs. 3.00 (200 ml); Rs. 4.40 (500 ml) and Rs. 6.50 (1000 ml)",
+                "D": "Rs. 3.50 (200 ml); Rs. 4.90 (500 ml) and Rs. 6.00 (1000 ml)"
+            },
+            "correct_option_label": "C",
+            "explanation": "Step 1: Total Conversion Cost = Process 1 (30+5+12=47 Lakhs) + Process 2 (12+10+5.2=27.2 Lakhs) = 74.2 Lakhs.\n\nStep 2: Equivalent Units based on effort ratio:\n\n- 200 ml: $5\\ Lakhs \\times 1.00 = 5.0\\ Lakhs$\n\n- 500 ml: $8\\ Lakhs \\times 1.20 = 9.6\\ Lakhs$\n\n- 1 lt: $15\\ Lakhs \\times 1.50 = 22.5\\ Lakhs$\n\nTotal Equivalent Units = $5.0 + 9.6 + 22.5 = 37.1\\ Lakhs$.\n\nStep 3: Conversion Cost per Base Equivalent Unit = $\\frac{74.2}{37.1} = Rs. 2.00$.\n\nStep 4: Total Unit Costs (Direct Material + Weighted Conversion Cost):\n\n- 200 ml: $1.00 + (2.00 \\times 1.00) = Rs. 3.00$\n\n- 500 ml: $2.00 + (2.00 \\times 1.20) = Rs. 4.40$\n\n- 1 lt: $3.50 + (2.00 \\times 1.50) = Rs. 6.50$",
+            "module": 1
+        },
+        {
+            "question_id": "17",
+            "question_text": "ABC’s inventory at the end of the period consists of 7000 units. 100% of material is supplied at the beginning of the period. However, Henry, the production manager estimates that these units are only 50% complete with respect to direct labour and production overhead. The cost per equivalent unit is Rs. 60 for material and Rs. 90 for conversion costs. What is the value of closing WIP?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 8,61,000",
+                "B": "Rs. 7,35,000",
+                "C": "Rs. 6,15,000",
+                "D": "Rs. 5,70,000"
+            },
+            "correct_option_label": "B",
+            "explanation": "Step 1: Calculate the value of Materials in Closing WIP:\n\n$$Material\\ Value = 7000\\ units \\times 100\\% \\times Rs. 60 = 4,20,000$$\n\nStep 2: Calculate the value of Conversion in Closing WIP:\n\n$$Conversion\\ Value = 7000\\ units \\times 50\\% \\times Rs. 90 = 3,15,000$$\n\nStep 3: Total Closing WIP Value:\n\n$$Total\\ Value = 4,20,000 + 3,15,000 = Rs. 7,35,000$$",
+            "module": 2
+        },
+        {
+            "question_id": "18",
+            "question_text": "Calculate the amount of conversion cost using the data given as follows: Direct Material - Rs. 57,000; Direct Labour - Rs 40,000 ; Indirect Labour - Rs. 29,000 ; Other Manufacturing Overheads - Rs. 12,000 ; Depreciation of production equipment - Rs. 50,000 ; Salary paid to factory supervisors- Rs. 80,000",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 1,86,000",
+                "B": "Rs. 2,11,000",
+                "C": "Rs. 1,06,000",
+                "D": "Rs. 1,31,000"
+            },
+            "correct_option_label": "B",
+            "explanation": "Conversion Cost = Direct Labour + All Manufacturing Overheads (Indirect Labour, Other Mfg OH, Depreciation on prod eq, Supervisor Salaries).\n\n$$Conversion\\ Cost = 40,000 + 29,000 + 12,000 + 50,000 + 80,000 = 2,11,000$$",
+            "module": 2
+        },
+        {
+            "question_id": "19",
+            "question_text": "A shoe company has the following two factory overhead: Material handling and Quality inspection. The expected cost of material handling for the period is Rs. 2,20,000 and Rs.2,00,000 for quality inspection. The entity currently applies overhead based on direct labour hours. The estimated direct labour hours are 80,000 for the period. You are asked to submit a bid for which you assemble the following data on a proposed job: Direct materials cost Rs. 1,40,000 and Direct labour cost Rs.1,60,000. Direct labour hours expected to be spent 30,000 hours. What is the estimated cost product cost on the proposed job?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 2,59,000",
+                "B": "Rs. 2,20,000",
+                "C": "Rs. 1,80,000",
+                "D": "Rs. 4,57,500"
+            },
+            "correct_option_label": "D",
+            "explanation": "Step 1: Calculate Total Estimated Overhead Rate:\n\n$$Total\\ Expected\\ OH = 2,20,000 + 2,00,000 = 4,20,000$$\n\n$$OH\\ Application\\ Rate = \\frac{4,20,000}{80,000\\ hours} = Rs. 5.25\\ per\\ DLH$$\n\nStep 2: Apply overhead to the proposed job:\n\n$$Applied\\ OH = 30,000\\ hours \\times 5.25 = 1,57,500$$\n\nStep 3: Total Product Cost for the Job:\n\n$$Total\\ Cost = Direct\\ Material\\ (1,40,000) + Direct\\ Labour\\ (1,60,000) + Applied\\ OH\\ (1,57,500) = 4,57,500$$",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "Abnormal spoilage",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Affects Product cost",
+                "B": "Affects both the product cost and the period cost",
+                "C": "Does not affect Product cost",
+                "D": "Part of conversion cost"
+            },
+            "correct_option_label": "C",
+            "explanation": "Abnormal spoilage is treated as a period cost (loss) and is charged directly to the Profit & Loss statement to isolate inefficiencies. It does not affect the inventoriable product cost.",
+            "module": 2
+        },
+        {
+            "question_id": "21",
+            "question_text": "Cost of Goods Sold is equal to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cost of Goods Available For Sale - Closing stock of Finished Goods",
+                "B": "Prime Cost + Conversion Cost",
+                "C": "Cost of Goods Manufactured during the period - Closing stock of Finished Goods",
+                "D": "Beginning W.I.P. + Manufacturing Cost less indirect cost applied – Ending W.I.P"
+            },
+            "correct_option_label": "A",
+            "explanation": "Cost of Goods Sold is calculated by taking the Cost of Goods Available for Sale (which is Opening Finished Goods + Cost of Goods Manufactured) and subtracting the Closing Stock of Finished Goods.",
+            "module": 2
+        },
+        {
+            "question_id": "22",
+            "question_text": "Alpha Ltd manufactures customized equipment for various process industries and it follows Normal Costing (in Job Costing).  The budgeted overhead for a period is Rs. 100 lakhs and budgeted machine hours is 10000 hours.  The actual overhead of the period is Rs. 118 lakhs and the actual machine hours is 9000 hours.  Mars Sugars Ltd asked Alpha Ltd to manufacture an equipment that requires Rs. 20 lakhs worth of the direct material and Rs. 8 lakhs worth of labour cost. The job requires  500 labour-hours to complete.   Find the cost of the job if Alpha Ltd uses normal costing.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 34.55 lakhs",
+                "B": "Rs. 28 lakhs",
+                "C": "Rs. 33 lakhs",
+                "D": "Rs. 20 lakhs"
+            },
+            "correct_option_label": "C",
+            "explanation": "Under normal costing, overhead is applied using a predetermined rate based on budgeted figures.\n\nStep 1: OH Rate = $\\frac{100\\ Lakhs}{10,000\\ hours} = Rs. 0.01\\ Lakhs/hour\\ (or\\ Rs.\\ 1000/hr)$.\n\nStep 2: Applied OH for the job = $500\\ hours \\times 0.01\\ Lakhs/hr = 5\\ Lakhs$.\n\nStep 3: Total Cost = Direct Material (20 Lakhs) + Direct Labour (8 Lakhs) + Applied OH (5 Lakhs) = 33 Lakhs.",
+            "module": 2
+        },
+        {
+            "question_id": "23",
+            "question_text": "At the beginning of the process, 300 units are in WIP with 70% completion on conversion cost. During the period, 1200 units are introduced. Units completed and closing WIP are 1000 units and 250 units. The closing WIP is completed to an extent of 40%. Units lost are treated as normal loss. Compute the Equivalent Units for the period if the entity follows \"Weighted Average\" Cost Flow assumption?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "840 units",
+                "B": "1000 units",
+                "C": "870 units",
+                "D": "1100 units"
+            },
+            "correct_option_label": "D",
+            "explanation": "Under the Weighted Average method, opening WIP is blended with current production, so degree of completion for Opening WIP is ignored. Normal losses carry zero equivalent units. \n\nEquivalent Units = (Completed Units $\\times$ 100%) + (Closing WIP $\\times$ % Complete)\n\nEquivalent Units = (1000 $\\times$ 100%) + (250 $\\times$ 40%)\n\n$$Equivalent\\ Units = 1000 + 100 = 1100\\ units$$",
+            "module": 2
+        },
+        {
+            "question_id": "24",
+            "question_text": "Which of the following statements is true for joint-products?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "All statements are correct.",
+                "B": "An outcome of the same raw material and process/operations.",
+                "C": "May often require further processing.",
+                "D": "Cannot be produced separately."
+            },
+            "correct_option_label": "A",
+            "explanation": "Joint products are two or more products yielded from the same basic raw material and process, cannot be produced separately without the others, and often require further independent processing after the split-off point.",
+            "module": 2
+        },
+        {
+            "question_id": "25",
+            "question_text": "Overtime salary and Nightshift allowance are examples of _______.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Manufacturing Overhead",
+                "B": "Indirect Labour cost",
+                "C": "General and Administrative Cost",
+                "D": "Direct Labour cost"
+            },
+            "correct_option_label": "A",
+            "explanation": "Overtime premiums and nightshift allowances are generally treated as manufacturing overhead rather than direct labor because they represent additional costs that apply to general plant operations or scheduling crunches, not intrinsically to a specific job.",
+            "module": 2
+        },
+        {
+            "question_id": "26",
+            "question_text": "Best Chemicals recently started following Activity Based Costing. Which one of the following will be the likely outcome of the ABC?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Improvement in the accuracy of product costing",
+                "B": "Better decision making",
+                "C": "Cost data can be used for strategic decision making",
+                "D": "All are correct"
+            },
+            "correct_option_label": "D",
+            "explanation": "Activity-Based Costing (ABC) eliminates broad averages and allocates overhead based on actual activity consumption, leading to highly accurate product costs, enabling better strategic and operational decision-making.",
+            "module": 2
+        },
+        {
+            "question_id": "27",
+            "question_text": "ABC assumes that the best way to assign indirect costs to products is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only on the basis of direct labour hours",
+                "B": "Only on the basis of direct machine hours",
+                "C": "Based on the product's demand for resource - consuming activities",
+                "D": "None is correct"
+            },
+            "correct_option_label": "C",
+            "explanation": "The core philosophy of Activity Based Costing (ABC) is that products consume activities, and activities consume resources. Therefore, indirect costs are assigned based on the product's specific demand for those activities.",
+            "module": 2
+        },
+        {
+            "question_id": "28",
+            "question_text": "A firm produces customized product as well as mass-consumption general product. Traditional costing system will lead to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Under-costing of customized product",
+                "B": "Under-costing of mass-consumption product",
+                "C": "Under-costing of customized product and fair-costing of mass-consumption product",
+                "D": "Fair-costing of both products"
+            },
+            "correct_option_label": "A",
+            "explanation": "Traditional volume-based costing heavily charges high-volume (mass-consumption) products while failing to capture the complexity and high overhead demand of low-volume (customized) products. This cross-subsidization leads to under-costing customized products and over-costing general products.",
+            "module": 2
+        },
+        {
+            "question_id": "29",
+            "question_text": "A garment company received three customized orders in a month. The first order is a repeat order. The second one requires a minor change of the previous design and the third order is a new order. The most appropriate basis of allocating design department cost is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Design hours",
+                "B": "Selling Price",
+                "C": "No. of units produced",
+                "D": "Design cost"
+            },
+            "correct_option_label": "A",
+            "explanation": "A repeat order requires zero or minimal design time, whereas a completely new order requires heavy design time. Allocating by 'Design hours' accurately reflects the actual effort and resource consumed by the design department for each unique order.",
+            "module": 2
+        },
+        {
+            "question_id": "30",
+            "question_text": "From the data supplied, you are required to calculate the Cost of Goods Manufactured during the period; Opening stock of Raw Material Rs. 50,000; Opening WIP Rs. 60,000; Raw Material purchased during the period Rs. 1,00,000; Direct material used Rs. 30,000; Direct Labour Rs. 50,000; Manufacturing overhead applied Rs.40,000; Closing WIP Rs.10,000.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 1,85,000",
+                "B": "Rs. 1,70,000",
+                "C": "Rs. 1,60,000",
+                "D": "Rs. 2,20,000"
+            },
+            "correct_option_label": "B",
+            "explanation": "$$COGM = Direct\\ Material\\ Used + Direct\\ Labour + Mfg\\ Overhead\\ Applied + Opening\\ WIP - Closing\\ WIP$$\n\n$$COGM = 30,000 + 50,000 + 40,000 + 60,000 - 10,000 = Rs. 1,70,000$$",
+            "module": 2
+        },
+        {
+            "question_id": "31",
+            "question_text": "Which one of the following is not likely to benefit through ABC",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An online taxi aggregator",
+                "B": "Advertising Consulting firm offering both print, TV, digital consulting jobs",
+                "C": "Supermarket with 2000 shops, procures all items centrally",
+                "D": "A jewellery manufacturing company with large number of designs"
+            },
+            "correct_option_label": "A",
+            "explanation": "ABC is most beneficial for firms with high product/service diversity and complex, large overheads. An online taxi aggregator provides a highly standardized, repetitive service where volume-based drivers work fine, making complex ABC unnecessary.",
+            "module": 2
+        },
+        {
+            "question_id": "32",
+            "question_text": "Swastik Products Ltd. Makes two products in their factory. They follow a traditional cost accounting system for the application of overhead to the products. Currently they use direct labour hour as application base. One of the products called\"C\" incurred 1,50,000 direct labour hours and another product called \"B\" incurred 45,000 direct labour hours. Now they are considering converting to ABC. If Product redesign is one of the Activity Centers, then what in your opinion is the most appropriate Cost Driver that should be used for the calculation of overhead application rate under ABC .",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Pounds",
+                "B": "No. of changes",
+                "C": "No. of production orders",
+                "D": "No. of Machine hours"
+            },
+            "correct_option_label": "B",
+            "explanation": "Product redesign is a product-level activity. The factor that directly causes the cost of redesign to fluctuate is the number of engineering changes or modifications requested, making \"No. of changes\" the best cost driver.",
+            "module": 2
+        },
+        {
+            "question_id": "33",
+            "question_text": "When activity based costing is implemented, the initial outcome is normally that:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The cost of all products will be lower",
+                "B": "The cost of all products will be higher.",
+                "C": "The cost of low volume products will be lower and the cost of high volume products will be higher.",
+                "D": "The cost of low volume products will be higher and the cost of high volume products will be lower"
+            },
+            "correct_option_label": "D",
+            "explanation": "Under traditional costing, high-volume products absorb most of the overhead costs, effectively subsidizing complex, low-volume products. Implementing ABC reassigns these batch and product-level costs accurately, typically revealing that low-volume customized products cost more than previously thought, and high-volume standard products cost less.",
+            "module": 2
+        },
+        {
+            "question_id": "34",
+            "question_text": "Jupiter and Co is manufacturing an equipment that is assembled by robots. The set-up activity is an important activity and it costs Rs. 10 lakhs per set-up. The company follows ABC and as per ABC, the cost per unit is Rs. 5000 when 1000 units are produced per batch. The sales department requires 1000 units per month. The company now plans to increase the batch size to 3000 units per batch to reduce the set up cost. However, this increase will force the company to carry additional inventory of 2000 units in the first month and 1000 units in the second month. The inventory carrying cost is 1% per month of the product cost. The product is non-perishable and can be sold at a normal price. Which one of the following statement is true?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "This decision of increasing the batch size will not be financially beneficial to the company since product cost saving is less than inventory carrying cost",
+                "B": "This decision of increasing the batch size will be financially beneficial to the company since product cost saving is more than inventory carrying cost",
+                "C": "This decision of increasing the batch size will not have any impact since product cost saving is equal to additional inventory carrying cost",
+                "D": "Inadequate information to take a decision on whether to increase the batch size or not"
+            },
+            "correct_option_label": "B",
+            "explanation": "Original Setup Cost per unit = 10,00,000 / 1000 = Rs. 1000.\n\nNew Setup Cost per unit = 10,00,000 / 3000 = Rs. 333.33.\n\nSetup Cost Savings = 1000 - 333.33 = Rs. 666.67 per unit.\n\nInventory Carrying Cost = 1% of product cost (Rs. 5000) = Rs. 50 per unit per month. \n\nEven carrying the inventory for multiple months, the Rs. 50/month holding cost is far less than the massive Rs. 666 per unit savings achieved by spreading the setup cost over a larger batch. Therefore, the decision is financially beneficial.",
+            "module": 2
+        },
+        {
+            "question_id": "35",
+            "question_text": "The production department of company A has 10,000 units of inventory. These units are 80% complete at the beginning. During the month, work was started on 70,000 units. The production department completed 60,000 units during this period. Ending work- in -progress units are 50% complete. The materials are drawn at the beginning of the process. Use the following details to calculate the total Cost of ending WIP inventory using weighted average method. Beginning W.I.P (a) Material - Rs. 1,00,000 (b) Conversion Cost -Rs. 2,00,000. Cost incurred during the period: (a) Material - Rs.1,30,000 (b) Conversion Cost - 3,20,000.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 1,47,400",
+                "B": "Rs. 1,31,785",
+                "C": "Rs. 1,18,000",
+                "D": "Rs. 2,00,000"
+            },
+            "correct_option_label": "B",
+            "explanation": "Total units to account for = 10,000 (Op WIP) + 70,000 (Started) = 80,000.\n\nEnding WIP = 80,000 - 60,000 (Completed) = 20,000 units.\n\nEquivalent Units (Weighted Average):\n\nMaterial EU = 60,000 (Completed) + 20,000 (Cl WIP at 100%) = 80,000 EU.\n\nConversion EU = 60,000 (Completed) + (20,000 * 50% for Cl WIP) = 70,000 EU.\n\nCost per EU:\n\nMaterial = (1,00,000 + 1,30,000) / 80,000 = 2.875\n\nConversion = (2,00,000 + 3,20,000) / 70,000 = 7.42857...\n\nCost of Ending WIP:\n\nMaterial = 20,000 * 2.875 = 57,500\n\nConversion = 10,000 * 7.42857 = 74,285.7\n\nTotal Ending WIP Cost = 57,500 + 74,285.7 = Rs. 1,31,785.7 -> 1,31,785.",
+            "module": 2
+        },
+        {
+            "question_id": "36",
+            "question_text": "The production department of company A has 10,000 units of inventory. These units are 80% complete at the beginning. During the month, work was started on 70,000 units. The production department completed 60,000 units during this period. Ending work- in -progress units are 50% complete. The materials are drawn at the beginning of the process. Use the following details to calculate the cost per unit of Equivalent units using weighted average method. Beginning W.I.P (a) Material - Rs. 70,000 (b) Conversion Cost -Rs. 1,20,000. Cost incurred during the period: (a) Material - Rs.1,30,000 (b) Conversion Cost - 280,000.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 9.00",
+                "B": "Rs. 10.70",
+                "C": "Rs. 8.21",
+                "D": "Rs. 10.30"
+            },
+            "correct_option_label": "C",
+            "explanation": "As established, Material EU = 80,000; Conversion EU = 70,000.\n\nCost per Material EU = (70,000 + 1,30,000) / 80,000 = 2,00,000 / 80,000 = 2.50\n\nCost per Conversion EU = (1,20,000 + 2,80,000) / 70,000 = 4,00,000 / 70,000 = 5.714\n\nTotal Cost per Equivalent Unit = 2.50 + 5.714 = Rs. 8.214 -> Rs. 8.21",
+            "module": 2
+        },
+        {
+            "question_id": "37",
+            "question_text": "A pharmaceutical company is following Activity Based Costing. The manufacturing process has three activities namely, setting up the machines, mixing ingredients and packing. The company manufactures more than 200 tablets in batches and the quantity per batch varies from 5000 to 50000 units. Tablets are packed in three quantities (4 numbers, 10 numbers and 30 numbers). The number of these activities and cost of these activities of a period is as follows: (a) Set-up: 80 set-ups, Rs. 2 lakhs (b) Mixing: 5000 hours, Rs. 10 lakhs (c) Packing: 50000 times, Rs. 5 lakhs. During the period, the company produced a 50000 tablets named Vita-C in one batch using 50 hours of mixing and these tablets are packed in 10 tablets per strip. If the Raw material cost per unit of Vita-C is Rs. 4 and labour cost is included in the activity costs, find the cost per unit of Vita-C.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 4.25 per unit",
+                "B": "Rs. 3.25 per unit",
+                "C": "Rs. 6.25 per unit",
+                "D": "Rs. 5.25 per unit"
+            },
+            "correct_option_label": "D",
+            "explanation": "Activity Rates:\n\n- Setup Rate = 2,00,000 / 80 = Rs. 2500 per setup\n\n- Mixing Rate = 10,00,000 / 5000 = Rs. 200 per hour\n\n- Packing Rate = 5,00,000 / 50,000 = Rs. 10 per pack\n\n\n\nJob Profile for Vita-C:\n\n- 1 Batch -> 1 Setup = 1 * 2500 = Rs. 2500\n\n- Mixing Hours = 50 -> 50 * 200 = Rs. 10,000\n\n- Packing = 50,000 tablets / 10 per strip = 5000 packs -> 5000 * 10 = Rs. 50,000\n\nTotal Activity Cost = 2500 + 10,000 + 50,000 = Rs. 62,500\n\nActivity Cost per unit = 62,500 / 50,000 tablets = Rs. 1.25\n\nTotal Cost per unit = Raw Material (Rs. 4.00) + Activity Cost (Rs. 1.25) = Rs. 5.25",
+            "module": 2
+        },
+        {
+            "question_id": "38",
+            "question_text": "A pharmaceutical company is following Activity Based Costing. The manufacturing process has three activities namely, setting up the machines, mixing ingredients and packing. The company manufactures more than 200 tablets in batches and the quantity per batch varies from 5000 to 50000 units. Tablets are packed in three quantities (4 numbers, 10 numbers and 15 numbers). The number of these activities and cost of these activities of a period is as follows: (a) Set-up: 80 set-ups, Rs. 2 lakhs (b) Mixing: 5000 hours, Rs. 10 lakhs (c) Packing: 50000 times, Rs. 5 lakhs. During the period, the company produced a 15000 tablets named Tel-met in three batches using 100 hours of mixing and these tablets are packed in 15 tablets per strip. If the Raw material cost per unit of Vita-C is Rs. 6 and labour cost is included in the activity costs, find the cost per unit of Vita-C.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 9.50 per unit",
+                "B": "Rs. 11.50 per unit",
+                "C": "Rs. 10.50 per unit",
+                "D": "Rs. 8.50 per unit"
+            },
+            "correct_option_label": "D",
+            "explanation": "Activity Rates remain same: Setup = 2500/setup, Mixing = 200/hr, Packing = 10/pack.\n\nJob Profile for Tel-met (assuming question meant Tel-met cost):\n\n- 3 Batches -> 3 Setups = 3 * 2500 = Rs. 7500\n\n- Mixing Hours = 100 -> 100 * 200 = Rs. 20,000\n\n- Packing = 15,000 tablets / 15 per strip = 1000 packs -> 1000 * 10 = Rs. 10,000\n\nTotal Activity Cost = 7500 + 20,000 + 10,000 = Rs. 37,500\n\nActivity Cost per unit = 37,500 / 15,000 tablets = Rs. 2.50\n\nTotal Cost per unit = Raw Material (Rs. 6.00) + Activity Cost (Rs. 2.50) = Rs. 8.50",
+            "module": 2
+        },
+        {
+            "question_id": "39",
+            "question_text": "A firm has total costs of Rs.18000 when 2000 units are produced and Rs.26000 when 5200 units are produced. During March, 3500 units were produced and sold for Rs. 8 each. What is the total variable cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 8,750",
+                "B": "Rs. 6,250",
+                "C": "Rs. 12,000",
+                "D": "Rs. 8,000"
+            },
+            "correct_option_label": "A",
+            "explanation": "Using the High-Low Method to find Variable Cost per unit:\n\n$$Variable\\ Cost/Unit = \\frac{26,000 - 18,000}{5,200 - 2,000} = \\frac{8,000}{3,200} = Rs. 2.5/unit$$\n\nTotal Variable Cost for 3500 units = $3500 \\times 2.5 = Rs. 8,750$",
+            "module": 3
+        },
+        {
+            "question_id": "40",
+            "question_text": "A firm has total costs of Rs. 18000 when 2000 units are produced and Rs. 26000 when 5200 units are produced. During March, 5000 units were produced and sold for Rs. 8 each. What is the total cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 24,250",
+                "B": "Rs. 20,500",
+                "C": "Rs. 21,750",
+                "D": "Rs. 25,500"
+            },
+            "correct_option_label": "D",
+            "explanation": "Step 1: Variable Cost per unit = Rs. 2.5 (from previous calculation).\n\nStep 2: Find Fixed Cost:\n\n$$Total\\ Cost = Fixed\\ Cost + (Variable\\ Cost \\times Units)$$\n\n$$18,000 = Fixed\\ Cost + (2.5 \\times 2000)$$\n\n$$Fixed\\ Cost = 18,000 - 5,000 = 13,000$$\n\nStep 3: Calculate Total Cost for 5000 units:\n\n$$Total\\ Cost = 13,000 + (2.5 \\times 5000) = 13,000 + 12,500 = Rs. 25,500$$",
+            "module": 3
+        },
+        {
+            "question_id": "41",
+            "question_text": "At a Cafe, the break-even point is 2,000 units. If fixed costs are $6,50,000 and variable costs are $30 per unit, what is the selling price per unit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$280",
+                "B": "$180",
+                "C": "$150",
+                "D": "$355"
+            },
+            "correct_option_label": "D",
+            "explanation": "$$Break\\text{-}Even\\ Units = \\frac{Fixed\\ Cost}{Selling\\ Price - Variable\\ Cost}$$\n\n$$2000 = \\frac{6,50,000}{P - 30}$$\n\n$$P - 30 = \\frac{6,50,000}{2000}$$\n\n$$P - 30 = 325$$\n\n$$P = 355$$\n\nThe selling price is $355 per unit.",
+            "module": 3
+        },
+        {
+            "question_id": "42",
+            "question_text": "A pharma store has estimated that fixed costs per month is $113,750 and variable cost per dollar of sales is 50%. Sales during June totaled to $400,000. What is the break-even point per month in sales?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$325000",
+                "B": "$227500",
+                "C": "$455000",
+                "D": "$151667"
+            },
+            "correct_option_label": "B",
+            "explanation": "If Variable Cost Ratio is 50%, then the Contribution Margin Ratio (CMR) is also 50% (or 0.5).\n\n$$Break\\text{-}Even\\ Sales = \\frac{Fixed\\ Costs}{CMR} = \\frac{113,750}{0.50} = \\$227,500$$",
+            "module": 3
+        },
+        {
+            "question_id": "43",
+            "question_text": "At the end of first year of operations, Alpha Ltd. has 2000 units of inventory on hand. Variable cost is $100 per unit and fixed manufacturing cost is $30 per unit. The use of Absorption costing rather than Variable costing would result in a higher profit of $_______.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$90,000",
+                "B": "$60,000",
+                "C": "$100,000",
+                "D": "$140,000"
+            },
+            "correct_option_label": "B",
+            "explanation": "The difference in profit between Absorption Costing and Variable Costing is due to the fixed manufacturing overhead deferred in closing inventory.\n\n$$Difference = Change\\ in\\ Inventory\\ units \\times Fixed\\ Overhead\\ Rate\\ per\\ unit$$\n\n$$Difference = 2000\\ units \\times \\$30 = \\$60,000$$",
+            "module": 3
+        },
+        {
+            "question_id": "44",
+            "question_text": "Robin Company currently produces 12,000 units of part B13. Current costs for part B13 are as follows: Variable cost $21 per unit and fixed cost $24 per unit. If the company decides to buy part B13, 50% fixed costs would be avoided. The company has an offer from a wholesaler who wishes to sell the part to Robin for $31 per unit. What effect will occur if the company decides to accept the offer?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "No change in the profit",
+                "B": "Profit of the period increases by $16000",
+                "C": "Profit of the period increases by $24000",
+                "D": "None of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "To make the part:\n\nRelevant Cost to Make = Variable Cost ($21) + Avoidable Fixed Cost (50% of $24 = $12) = $33 per unit.\n\nCost to Buy = $31 per unit.\n\nSavings per unit by buying = $33 - $31 = $2 per unit.\n\nTotal Savings for 12,000 units = 12,000 $\\times$ $2 = $24,000.\n\nAccepting the offer increases profit by $24,000.",
+            "module": 3
+        },
+        {
+            "question_id": "45",
+            "question_text": "The current cost structure of a garment manufacturer shows variable cost of $30 and fixed cost of $100,000. The volume per period is 10,000 units. The company currently sells the product at $50 per unit. The company is considering to do embroidery on 2000 units of garments, which will cost additonal $3 per unit. The selling price per unit for embroidery-cloth is $70 per unit. The revised total fixed cost is $120,000. The accountant allocated $24,000 fixed cost to embroidery-cloth on the basis of unit produced. The company should ________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The company should take up the new project since the cost per unit is $13 against an incremental revenue of $20 per unit.",
+                "B": "The company should not take up the new project since the cost per unit is $13 against an incremental revenue of $10 per unit.",
+                "C": "Take up the new project since the incremental cost per unit is $3 against an incremental revenue of $10 per unit.",
+                "D": "Take up the new project since the incremental cost per unit is $4 against an incremental revenue of $10 per unit."
+            },
+            "correct_option_label": "A",
+            "explanation": "Evaluate the incremental costs and revenues for the 2000 embroidered units.\n\nIncremental Revenue per unit = $70 - $50 = $20.\n\nIncremental Costs:\n\n- Variable Cost = $3/unit.\n\n- Incremental Fixed Cost = Revised FC ($120,000) - Old FC ($100,000) = $20,000 total.\n\n- Incremental Fixed Cost per unit = $20,000 / 2000 units = $10/unit. (Ignore the accountant's arbitrary $24k allocation).\n\nTotal Incremental Cost per unit = $3 (Var) + $10 (Fix) = $13/unit.\n\nSince incremental revenue ($20) exceeds incremental cost ($13), the project should be taken up.",
+            "module": 3
+        },
+        {
+            "question_id": "46",
+            "question_text": "R R and Sons is a manufacturer of a special component required for security system. The product is normally sold for Rs. 1,50,000 per unit and has the following costs per unit: Direct material - Rs. 30,000; Direct Labour - Rs. 15,000; Variable manufacturing overhead - Rs. 12,000; Fixed manufacturing overhead - Rs. 30,000; Shipping and handling cost - Rs. 3,000; Fixed selling costs- Rs. 10,000; Total cost - Rs. 100,000. R R and Sons has received a special, one-time order for supply of 1000 units of this component. Assumimg that they have excess capacity, what is the minimum acceptable price for this one-time special order?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The order should be accepted only if the selling price per unit is greater than Rs. 50,000.",
+                "B": "The order should be accepted only if the selling price per unit is greater than Rs. 60,000.",
+                "C": "The order should be accepted only if the selling price per unit is greater than Rs. 100,000.",
+                "D": "The order should be accepted only if the selling price per unit is greater than Rs. 47,000."
+            },
+            "correct_option_label": "B",
+            "explanation": "For a special order with excess capacity, only variable costs are relevant. General fixed overheads are sunk/already recovered.\n\nRelevant Variable Costs = Direct Material (30,000) + Direct Labour (15,000) + Variable Mfg OH (12,000) + Shipping (3,000) = Rs. 60,000.\n\nThe minimum acceptable price is Rs. 60,000.",
+            "module": 3
+        },
+        {
+            "question_id": "47",
+            "question_text": "R R and Sons is a manufacturer of a special component required for security system. The product is normally sold for Rs. 1,50,000 per unit and has the following costs per unit: Direct material - Rs. 20,000; Direct Labour - Rs. 10,000; Variable manufacturing overhead - Rs. 12,000; Fixed manufacturing overhead - Rs. 30,000; Shipping and handling cost - Rs. 3,000; Fixed selling costs- Rs. 10,000; Total cost - Rs. 85,000. R R and Sons has received a special, one-time order for supply of 100 units of this component. Assume that R R and Sons is operating at full capacity. Also assume that the next best alternative use of the capacity is the production of another equipment called \"BM-05\" which would produce a total contribution margin of Rs. 100,000. What is the minimum per unit acceptable price for this one-time special order?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The order should be accepted only if the selling price per unit is greater than Rs. 45,000.",
+                "B": "The order should be accepted only if the selling price per unit is greater than Rs. 46,000.",
+                "C": "The order should be accepted only if the selling price per unit is greater than Rs. 100,000.",
+                "D": "The order should be accepted only if the selling price per unit is greater than Rs. 146,000."
+            },
+            "correct_option_label": "B",
+            "explanation": "Because the firm is at full capacity, accepting the order incurs an Opportunity Cost.\n\nVariable Cost = DM (20,000) + DL (10,000) + VOH (12,000) + Shipping (3,000) = Rs. 45,000.\n\nOpportunity Cost per unit = Total Lost CM / units = 100,000 / 100 = Rs. 1,000.\n\nMinimum Price = Relevant Variable Cost + Opportunity Cost = 45,000 + 1,000 = Rs. 46,000.",
+            "module": 3
+        },
+        {
+            "question_id": "48",
+            "question_text": "R K corp. has total fixed costs of Rs. 225,000 and the company's contribution margin represents 60% of revenue per unit. If the unit price is Rs.125 how many units must R K corp. see to break even?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "3000 units",
+                "B": "2000 units",
+                "C": "5000 units",
+                "D": "None is correct"
+            },
+            "correct_option_label": "A",
+            "explanation": "Contribution Margin per unit = 60% of Rs. 125 = Rs. 75.\n\n$$Break\\text{-}Even\\ Units = \\frac{Fixed\\ Cost}{CM\\ per\\ unit}$$\n\n$$Break\\text{-}Even\\ Units = \\frac{225,000}{75} = 3000\\ units$$",
+            "module": 3
+        },
+        {
+            "question_id": "49",
+            "question_text": "Agro Ltd. Which produces only one product, provides the following data:- Selling Price per unit - Rs. 120; Direct materials - Rs. 21 per unit ; Direct Labour - Rs. 10 per unit ; Variable manufacturing overheads- Rs. 3 per unit ; Variable selling and administrative - Rs 6 per unit ; Total Fixed Manufacturing overhead- Rs. 76,000; Total Fixed Selling and Administrative expenses -Rs. 58,000; Opening inventory - 0; Units produced during the period- 5000 units; Units sold during the period- 4,500 units; Closing inventory- 500. Based on the above information, you are required to calculate the total contribution margin for the month using variable costing approach.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 360,000",
+                "B": "Rs. 225,000",
+                "C": "Rs. 270,000",
+                "D": "Rs. 180,000"
+            },
+            "correct_option_label": "A",
+            "explanation": "Contribution Margin = Sales Revenue - Total Variable Costs (for units sold).\n\nTotal Variable Cost per unit = DM (21) + DL (10) + Var Mfg OH (3) + Var Selling (6) = Rs. 40.\n\nContribution Margin per unit = Selling Price (120) - Var Cost (40) = Rs. 80.\n\nTotal Contribution Margin = Units Sold (4500) $\\times$ CM per unit (80) = Rs. 3,60,000.",
+            "module": 3
+        },
+        {
+            "question_id": "50",
+            "question_text": "The reason for some costs to be mixed in nature is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Presence of sunk cost in the cost structure.",
+                "B": "When minimal variable cost is incurred even if a facility is idle.",
+                "C": "Presence of opportunity cost in the cost structure.",
+                "D": "When we place fixed and variable costs into a single cost pool."
+            },
+            "correct_option_label": "D",
+            "explanation": "Mixed costs (semi-variable costs) exhibit characteristics of both fixed and variable costs. This typically happens in accounting when a single cost pool (like 'Electricity' or 'Maintenance') bundles a fixed base charge with a variable usage component.",
+            "module": 3
+        },
+        {
+            "question_id": "51",
+            "question_text": "Nexus Ltd. has the following unit selling prices and per unit costs at an annual sales of Rs. 9,00,000. Selling price- Rs. 30; Prime cost- Rs. 6; Variable manufacturing overhead- Re. 1; Fixed manufactuing overhead- Rs. 7; Variable selling and administration cost- Re.1; Fixed Selling and administration costs- Rs. 3; Total costs- Rs. 18; Profit - Rs. 12 . You are required to calculate Nexus Ltd. breakeven point in units.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "21,176 units",
+                "B": "22,000 units",
+                "C": "13,636 units",
+                "D": "37,500 units"
+            },
+            "correct_option_label": "C",
+            "explanation": "Step 1: Calculate Total Units Sold initially to find Total Fixed Costs. Sales = Rs. 9,00,000. Selling Price = Rs. 30. Units = 9,00,000 / 30 = 30,000 units.\n\nStep 2: Calculate Total Fixed Costs = Fixed Mfg OH (7 $\\times$ 30,000) + Fixed Selling OH (3 $\\times$ 30,000) = 2,10,000 + 90,000 = Rs. 3,00,000.\n\nStep 3: Calculate Contribution Margin per unit = Selling Price (30) - Variable Costs (Prime Cost 6 + Var Mfg 1 + Var Selling 1 = 8) = Rs. 22.\n\nStep 4: Break-Even Units = Total Fixed Cost / CM per unit = 3,00,000 / 22 = 13,636.36 units. Rounded to 13,636 units.",
+            "module": 3
+        },
+        {
+            "question_id": "52",
+            "question_text": "Management of Neno Ltd. sets a targeted operating income of $8,000 to be achieved during the current period. Following are the relevant details you may use to calculate the number of units Neo Ltd. must sell to achieve its targeted operating income. The unit selling price is $200; Fixed costs are $4000. Unit variable cost $100.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "120 units",
+                "B": "40 units",
+                "C": "80 units",
+                "D": "None of them"
+            },
+            "correct_option_label": "A",
+            "explanation": "Contribution Margin per unit = Selling Price ($200) - Variable Cost ($100) = $100.\n\nTarget Units = (Fixed Costs + Target Income) / CM per unit\n\nTarget Units = (4000 + 8000) / 100 = 12000 / 100 = 120 units.",
+            "module": 3
+        },
+        {
+            "question_id": "53",
+            "question_text": "Use the following data to calculate the Margin Of Safety (MOS) in dollars. Total sales volume 150 units; Unit selling price $200; Fixed costs are $4000; Unit variable cost $100.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$10,000",
+                "B": "$11,000",
+                "C": "$22,000",
+                "D": "Enough data is not available to calculate MOS"
+            },
+            "correct_option_label": "C",
+            "explanation": "Step 1: Calculate Actual Sales = 150 units $\\times$ $200 = $30,000.\n\nStep 2: Calculate Break-Even Units = Fixed Costs ($4000) / CM per unit ($200 - $100) = 40 units.\n\nStep 3: Calculate Break-Even Sales = 40 units $\\times$ $200 = $8,000.\n\nStep 4: Margin of Safety = Actual Sales - Break-Even Sales = $30,000 - $8,000 = $22,000.",
+            "module": 3
+        },
+        {
+            "question_id": "54",
+            "question_text": "For a firm that has excess capacity, a special order pricing decision should",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Consider the opportunity costs from potential lost sales.",
+                "B": "Compare the total cost per unit and the special order price.",
+                "C": "Evaluate any joint costs incurred up to the split-off point.",
+                "D": "Compare relevant costs to the special order price."
+            },
+            "correct_option_label": "D",
+            "explanation": "When there is excess capacity, opportunity costs are zero. Total costs are irrelevant as they include sunk fixed costs. The correct approach is to compare only the relevant (incremental variable and avoidable fixed) costs against the special order price.",
+            "module": 3
+        },
+        {
+            "question_id": "55",
+            "question_text": "Given the information shown for the four products produced by Sky Ltd, which product should Sky Ltd produce first? Assume unlimited demand for each product. Product A: Price/unit = $100; Unit Contribution= $60; Contribution per Machine hour =$15; Product B: Price = $80; Unit contribution=$50; Contribution per Machine Hour =$8; Product C: Price = $75; Unit contribution=$35; Contribution per Machine Hour =$12: Product D: Price = $110; Unit contribution=$55; Contribution per Machine Hour =$11",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product A",
+                "B": "Product C",
+                "C": "Product B",
+                "D": "Product D"
+            },
+            "correct_option_label": "A",
+            "explanation": "When managing a constraint (machine hours), profitability is maximized by prioritizing the product with the highest Contribution Margin per unit of the limiting factor. Product A has the highest ($15/hr) compared to B ($8), C ($12), and D ($11).",
+            "module": 3
+        },
+        {
+            "question_id": "56",
+            "question_text": "Alpha Ltd produces three products (A, B, C) and the expected quantity of sales is 1000, 2000 and 3000 units respectively. The contribution per unit of Product A is Rs. 100, Product B is 200, Product C is 300. If the fixed cost of the period is Rs. 280000 how many units of A, B and C are to be produced to break- even?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product A = 60; Product B = 40; Product C = 20",
+                "B": "Product A = 40; Product B = 60; Product C = 20",
+                "C": "Product A = 40; Product B = 40; Product C = 40",
+                "D": "Product A = 200; Product B = 400; Product C = 600"
+            },
+            "correct_option_label": "D",
+            "explanation": "Step 1: Determine the Sales Mix ratio: 1000 : 2000 : 3000 = 1 : 2 : 3.\n\nStep 2: Calculate Contribution Margin per 'Bag' (1 unit of A + 2 of B + 3 of C):\n\n$$CM_{Bag} = (1 \\times 100) + (2 \\times 200) + (3 \\times 300) = 100 + 400 + 900 = 1400$$\n\nStep 3: Calculate Break-Even Bags:\n\n$$BEP\\ Bags = \\frac{Fixed\\ Cost}{CM_{Bag}} = \\frac{280,000}{1400} = 200\\ Bags$$\n\nStep 4: Distribute bags to products:\n\n- A: $200 \\times 1 = 200$ units\n\n- B: $200 \\times 2 = 400$ units\n\n- C: $200 \\times 3 = 600$ units",
+            "module": 3
+        },
+        {
+            "question_id": "57",
+            "question_text": "Firm A is reporting an operating profit of Rs. 100 when its current sales if Rs. 600. The operating leverage of the firm is 2. If the budgeted sales for the next period is Rs. 1200, find the revised operating profit.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 300",
+                "B": "Rs. 150",
+                "C": "Rs. 200",
+                "D": "Rs. 180"
+            },
+            "correct_option_label": "A",
+            "explanation": "Degree of Operating Leverage (DOL) = % Change in Profit / % Change in Sales.\n\nSales increase from 600 to 1200 is a 100% increase.\n\nExpected % Change in Profit = DOL $\\times$ % Change in Sales = 2 $\\times$ 100% = 200% increase.\n\nNew Profit = Old Profit + (200% increase of Old Profit) = 100 + 200 = Rs. 300.",
+            "module": 3
+        },
+        {
+            "question_id": "58",
+            "question_text": "What is the profit/loss of a decision to sell or process a product further given the following information? Unit production cost of the product is $10,000; Unit selling price of the product is $6,000; Incremental processing cost per unit is $ 2,500; The new selling price is $6,650. Answer in $",
+            "question_type": "MCQ",
+            "options": {
+                "A": "650",
+                "B": "4150",
+                "C": "-3350",
+                "D": "-1,850"
+            },
+            "correct_option_label": "D",
+            "explanation": "Relevant figures for process further decision are incremental revenues and incremental costs. Sunk production costs ($10,000) are ignored.\n\nIncremental Revenue = New Selling Price - Old Selling Price = $6,650 - $6,000 = $650.\n\nIncremental Cost = $2,500.\n\nNet Profit/Loss = Incremental Revenue - Incremental Cost = $650 - $2,500 = -$1,850.",
+            "module": 3
+        },
+        {
+            "question_id": "59",
+            "question_text": "Which of the following statements is TRUE about budgets?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Budget document is called Master budget and it consists of operating and financial budget.",
+                "B": "Budget document is called Financial budget and it consists of the key factor and operating budget.",
+                "C": "Budget document is called Functional budget and it consists of the Master budget and Operating budget.",
+                "D": "Budget document is called Key budget and it consists of the master budget, operating budget and financial budget."
+            },
+            "correct_option_label": "A",
+            "explanation": "The final consolidated budget document is known as the Master Budget, which is broadly split into two components: Operating Budgets (sales, production, expenses) and Financial Budgets (cash, capital, balance sheet).",
+            "module": 4
+        },
+        {
+            "question_id": "60",
+            "question_text": "An entity prepares its Production budget for the period. To avoid stock out situation, the production department generally produces more than the current month's sales target. The production policy is normally in the form of desired closing finished goods inventory as a percentage of next month's target sales. For its product called \"Lenin\", ABC Ltd's production department decides to produce and carry an inventory of 20% of next month's target sales. Sales forecast for the months of April, May, June and July are 120,000, 1,50,000, 1,00,000 and 100,000 respectively, you are required to calculate the number of units that should be produced in the months of April, May and June. Assume NIL opening inventory for the month of April.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "April = 1,50,000 units; May = 1,40,000 units; June = 98,000 units",
+                "B": "April = 1,50,000 units; May = 1,40,000 units; June = 100,000 units",
+                "C": "April = 1,50,000 units; May = 1,40,000 units; June = 96,000 units",
+                "D": "April = 1,50,000 units; May = 96,000 units; June = 120,000 units"
+            },
+            "correct_option_label": "B",
+            "explanation": "Formula: Production = Current Sales + Desired Closing Inventory - Opening Inventory\n\nApril: Sales = 120,000. Closing Inv (20% of May's 150k) = 30,000. Opening Inv = 0. Production = 120k + 30k - 0 = 1,50,000 units.\n\nMay: Sales = 150,000. Closing Inv (20% of June's 100k) = 20,000. Opening Inv (April's Closing) = 30,000. Production = 150k + 20k - 30k = 1,40,000 units.\n\nJune: Sales = 100,000. Closing Inv (20% of July's 100k) = 20,000. Opening Inv (May's Closing) = 20,000. Production = 100k + 20k - 20k = 1,00,000 units.",
+            "module": 4
+        },
+        {
+            "question_id": "61",
+            "question_text": "Which one of the following statements is correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Production budget follows labour budget if the cost of labour is variable in nature.",
+                "B": "Financial budget follows labour budget if the cost of labour is variable in nature.",
+                "C": "Labour budget follows Financial budget if the cost of labour is variable in nature.",
+                "D": "Labour budget follows production budget if the cost of labour is variable in nature."
+            },
+            "correct_option_label": "D",
+            "explanation": "In the Master Budget sequence, the Sales Budget determines the Production Budget. Once the number of units to be produced is set (Production Budget), it dictates the Direct Material and Direct Labour budgets required to fulfill that production.",
+            "module": 4
+        },
+        {
+            "question_id": "62",
+            "question_text": "Indus corp. produces office use equipment. You are the concerned manager developing a flexible budget. The entity already has a master budget but it is estimated that its range extends from 20% above to 20% below the master budget. Assuming a selling price of $60 per unit, variable costs of $40, fixed costs of $70,000 and an estimated output according to the master budget of 5000 units, you are required to calculate the operating income at each level keeping in mind the major assumption/s of the flexible budget.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Operating Income at 80% is $10,000; Operating Income at 100% is $30,000; Operating Income @120% $50,000",
+                "B": "Operating Income at 80% is $0; Operating Income at 100% is $20,000; Operating Income @120% $40,000",
+                "C": "Operating Income at 80% is $(10,000); Operating Income at 100% is $10,000; Operating Income @120% $30,000",
+                "D": "As fixed cost will change beyond 100%, we will need additional data on fixed cost to calculate the operating cost at that level of activity."
+            },
+            "correct_option_label": "A",
+            "explanation": "Master Output (100%) = 5000 units. 80% = 4000 units. 120% = 6000 units. Contribution Margin (CM) = $60 - $40 = $20/unit.\n\n100% Level: CM = 5000 $\\times$ $20 = $100,000. Income = $100,000 - $70,000 = $30,000.\n\n80% Level: CM = 4000 $\\times$ $20 = $80,000. Income = $80,000 - $70,000 = $10,000.\n\n120% Level: CM = 6000 $\\times$ $20 = $120,000. Income = $120,000 - $70,000 = $50,000.",
+            "module": 4
+        },
+        {
+            "question_id": "63",
+            "question_text": "ABC Ltd. computed its budgeted production at 37,000 units to sustain budgeted sales of 40,000 units in the month of December. Four pounds of direct material are needed to produce each unit of finished product. The new direct materials cost $10 per pound but they were previously procured for $5 per pound. ABC Ltd. has 48,000 pounds on hand at the beginning of December and has a desired direct materials ending inventory of 36,000. What is the Direct Materials Usage Budget for the month of December?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$1240,000",
+                "B": "$1480,000",
+                "C": "$1432,000",
+                "D": "$1360,000"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Direct Materials USAGE Budget calculates the cost of materials actually consumed in production.\n\nUsage quantity = Budgeted Production $\\times$ Materials per unit = 37,000 units $\\times$ 4 lbs = 148,000 lbs.\n\nAt the new cost of $10 per pound: Usage Budget Cost = 148,000 $\\times$ $10 = $1,480,000.",
+            "module": 4
+        },
+        {
+            "question_id": "64",
+            "question_text": "Actuals differ from budgets mainly on account of _________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Managers have done a poor job of managing operations.",
+                "B": "Conditions have changed since the budget was developed.",
+                "C": "The budget was poorly conceived and constructed.",
+                "D": "All are correct."
+            },
+            "correct_option_label": "D",
+            "explanation": "Variances occur for multiple reasons: poor execution (inefficiencies), external market shifts affecting raw materials/demand, or initial standard-setting flaws (too tight or too loose targets).",
+            "module": 4
+        },
+        {
+            "question_id": "65",
+            "question_text": "An entity is preparing its budgeted cost of goods manufactured and budgeted cost of goods sold schedules for a certain period. The entity has computed its budgeted production at 37,000 units to sustain budgeted sales of 40,000 units. Two hours of direct labour at $20 per hour are needed to convert the direct materials to finished goods. The entity uses direct labour hours to apply variable factory overheads and has determined that its variable overhead rate is $5 per hour. If direct material used is $1432,000; fixed factory overhead is $300,000; finished goods beginning is $1000,000 and finished goods ending is $700,000. Use the information provided above to arrive at the budgeted cost of goods sold.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$3832,000",
+                "B": "$3882,000",
+                "C": "$4582,000",
+                "D": "None of them"
+            },
+            "correct_option_label": "B",
+            "explanation": "Step 1: Calculate Cost of Goods Manufactured (COGM)\n\nDirect Material Used = $1,432,000\n\nDirect Labour = 37,000 units $\\times$ 2 hrs $\\times$ $20/hr = $1,480,000\n\nVariable Overhead = 37,000 units $\\times$ 2 hrs $\\times$ $5/hr = $370,000\n\nFixed Overhead = $300,000\n\nCOGM = 1432k + 1480k + 370k + 300k = $3,582,000\n\nStep 2: Calculate Cost of Goods Sold (COGS)\n\nCOGS = COGM + Opening FG - Closing FG\n\nCOGS = 3,582,000 + 1,000,000 - 700,000 = $3,882,000.",
+            "module": 4
+        },
+        {
+            "question_id": "66",
+            "question_text": "Concerning relationship between beginning inventory, ending inventory, production, and sales, which of the following is true?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Production = Beginning Inventory + Sales – Ending Inventory",
+                "B": "Production = Beginning Inventory + Ending Inventory – Sales",
+                "C": "Production = Sales + Ending Inventory – Beginning Inventory",
+                "D": "Production = Beginning Inventory – Ending Inventory + Sales"
+            },
+            "correct_option_label": "C",
+            "explanation": "The standard inventory reconciliation equation is: Opening Inventory + Production = Sales + Closing Inventory. Rearranging for production gives: Production = Sales + Ending Inventory - Beginning Inventory.",
+            "module": 4
+        },
+        {
+            "question_id": "67",
+            "question_text": "Which of the following statements is correct about variance analysis?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "In Variance analysis the quantity realted difference is called Efficiency variance, while the rate related variance is called Price variance.",
+                "B": "In Variance analysis the quantity realted difference is called Usage variance, while the rate related variance is called Efficiency variance.",
+                "C": "Total variance is the sum Usage and Efficiency variance",
+                "D": "None of them is correct."
+            },
+            "correct_option_label": "A",
+            "explanation": "In standard variance analysis, deviations caused by using more or fewer inputs than standard is called Usage/Efficiency variance (quantity-related). Deviations caused by paying more or less per unit of input is called Rate/Price variance.",
+            "module": 4
+        },
+        {
+            "question_id": "68",
+            "question_text": "Which one of the following budget is not affected when credit period to customers is changed from 30 days to 90 days to achieve 30% inrease in sales?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Production Budget",
+                "B": "Cash Budgets",
+                "C": "Capital budget",
+                "D": "Sales Budget"
+            },
+            "correct_option_label": "C",
+            "explanation": "Changing credit policies directly affects the Sales Budget (due to expected 30% increase), Production Budget (to meet new sales), and Cash Budget (delayed cash inflows). The Capital budget involves long-term asset acquisition and is unaffected by short-term working capital policy shifts.",
+            "module": 4
+        },
+        {
+            "question_id": "69",
+            "question_text": "An entity plans to produce 10,000 kgs of output during a particular period. However, actual production for the period is only 8000 kgs. The product needs 600 gms of Raw material \"A\" to produce 1 Kg of the product. The cost per Kg of raw material \"A\" is estimated to be Rs.40. The factory consumed 6,000 Kgs of raw material \"A\" and purchased it at an average cost of Rs.42 per Kg. Though the entity had a budgeted production of 10,000 Kgs but the actual output is only 8,000 Kg. Using the data above you are required to calculate the Material Price Variance.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "12,000 (A)",
+                "B": "10,000 (A)",
+                "C": "12,000 (F)",
+                "D": "10,000 (F)"
+            },
+            "correct_option_label": "A",
+            "explanation": "Material Price Variance = (Standard Price - Actual Price) $\\times$ Actual Quantity Purchased/Consumed\n\n$$MPV = (40 - 42) \\times 6000$$\n\n$$MPV = -2 \\times 6000 = -12,000$$\n\nA negative variance denotes an Adverse (A) variance, meaning the company spent Rs. 12,000 more due to higher prices.",
+            "module": 4
+        },
+        {
+            "question_id": "70",
+            "question_text": "An entity plans to produce 10,000 kgs of output during a particular period. However, actual production for the period is only 8000 kgs. The product needs 600 gms of Raw material \"A\" to produce 1 Kg of the product. The cost per Kg of raw material \"A\" is estimated to be Rs.35. The factory consumed 5,000 Kgs of raw material \"A\" and purchased it at an average cost of Rs.42 per Kg. Though the entity had a budgeted production of 10,000 Kgs but the actual output is only 8,000 Kg. Using the data above you are required to calculate the Material Usage Variance.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "7,800 (F)",
+                "B": "7,000 (A)",
+                "C": "7,800 (A)",
+                "D": "7,000 (F)"
+            },
+            "correct_option_label": "B",
+            "explanation": "Step 1: Calculate Standard Quantity for Actual Output:\n\n$$SQ = 8000\\ kgs\\ (output) \\times 0.6\\ kgs\\ (standard\\ input) = 4800\\ kgs$$\n\nStep 2: Calculate Material Usage Variance:\n\n$$MUV = (Standard\\ Quantity - Actual\\ Quantity) \\times Standard\\ Price$$\n\n$$MUV = (4800 - 5000) \\times 35 = -200 \\times 35 = -7000$$\n\nA negative result indicates an Adverse (A) variance.",
+            "module": 4
+        },
+        {
+            "question_id": "71",
+            "question_text": "Standard time allowed to complete one unit is 2 hours. A worker during a week (48 hours) completed 20 units and draws a salary of Rs. 10,000. The standard rate per day of 8 hours shift is Rs. 1000. Which is total Labor variance?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Labour Variance is 5000 unfavourable",
+                "B": "Labour Variance is 5000 favourable",
+                "C": "0",
+                "D": "Labour Variance is 1000 favourable"
+            },
+            "correct_option_label": "A",
+            "explanation": "Step 1: Calculate Standard Rate per Hour = Rs. 1000 / 8 hours = Rs. 125/hr.\n\nStep 2: Calculate Standard Hours for Actual Output = 20 units $\\times$ 2 hrs = 40 hours.\n\nStep 3: Calculate Standard Cost = 40 hours $\\times$ Rs. 125/hr = Rs. 5000.\n\nStep 4: Calculate Total Labor Variance = Standard Cost - Actual Cost\n\n$$Total\\ Variance = 5000 - 10000 = -5000$$\n\nRs. 5000 unfavourable (adverse).",
+            "module": 4
+        },
+        {
+            "question_id": "72",
+            "question_text": "A firm follows labour hours to allocate fixed overhead. A negative volume variance occurs",
+            "question_type": "MCQ",
+            "options": {
+                "A": "When you recovered more overheads than budgeted",
+                "B": "When you recovered less overheads than budgeted",
+                "C": "When the fixed overhead Spending variance is also positive.",
+                "D": "None of them"
+            },
+            "correct_option_label": "B",
+            "explanation": "Fixed Overhead Volume Variance = Applied (Recovered) Fixed OH - Budgeted Fixed OH. A negative volume variance implies under-absorption, meaning production volume fell short, and the firm recovered less overhead than was initially budgeted.",
+            "module": 4
+        },
+        {
+            "question_id": "73",
+            "question_text": "Actual overhead of XYZ Ltd. totaled $ 16,800. In the month of January it manufactured 3,600 units. Each unit requires one direct labor hour. Overhead is applied based on direct labor hours. Following informatiion is provided to you for the month: - Actual direct labor hours worked is 3900 hours; budgeted fixed overhead is $12,000, based on 4000 units budgeted for the period; standard variable overhead rate $1.50 per hour; standard total (application) rate is $4.50 per hour. You are required to calculate Fixed overhead volume variance.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$1500 (A)",
+                "B": "$1200 (A)",
+                "C": "$1200 (F)",
+                "D": "$1500 (F)"
+            },
+            "correct_option_label": "B",
+            "explanation": "Step 1: Determine Standard Fixed Overhead Rate:\n\n$$Fixed\\ Rate = \\frac{Budgeted\\ FOH}{Budgeted\\ Hours} = \\frac{12,000}{4000} = \\$3/hr$$\n\nStep 2: Calculate Applied Fixed Overhead based on standard hours allowed for actual production:\n\n$$Applied\\ FOH = Actual\\ Units \\times Std\\ Hrs/Unit \\times Fixed\\ Rate$$\n\n$$Applied\\ FOH = 3600 \\times 1 \\times 3 = \\$10,800$$\n\nStep 3: Fixed Overhead Volume Variance:\n\n$$Volume\\ Variance = Applied\\ FOH - Budgeted\\ FOH = 10,800 - 12,000 = -1200$$\n\nSince Applied < Budgeted, it is a $1200 Adverse (A) variance.",
+            "module": 4
+        }
+    ]
+}
