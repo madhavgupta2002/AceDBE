@@ -83,7 +83,24 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   };
 
   const formatText = (text: string) => {
-    return text.replace(/\\n/g, '\n');
+    let processed = text.replace(/\\n/g, '\n');
+
+    // Protect $$...$$ display math blocks so currency escaping doesn't touch them
+    const mathBlocks: string[] = [];
+    processed = processed.replace(/\$\$[\s\S]*?\$\$/g, (match) => {
+      mathBlocks.push(match);
+      return `\x00MATH${mathBlocks.length - 1}\x00`;
+    });
+
+    // Escape currency dollar signs: $ optionally followed by whitespace then a digit or underscore
+    // Patterns: $30, $ 2,500, $113,750, $___, etc.
+    // This leaves inline math like $\times$ untouched (backslash follows $, not whitespace+digit)
+    processed = processed.replace(/\$\s*(?=[0-9_])/g, '\\$');
+
+    // Restore display math blocks
+    processed = processed.replace(/\x00MATH(\d+)\x00/g, (_, i) => mathBlocks[parseInt(i)]);
+
+    return processed;
   };
 
   const mdComponents = {
