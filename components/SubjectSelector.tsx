@@ -17,6 +17,12 @@ import CustomQuizGenerator from './CustomQuizGenerator';
 const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) => {
   const { selectedBatch, setSelectedBatch } = useBatch();
 
+  // Academic Cell Repository links per term
+  const academicCellRepoLinks: Record<number, string> = {
+    1: 'https://iimblr1-my.sharepoint.com/:f:/g/personal/jayshreeg24_iimb_ac_in/IgB09mAJCjj4SIAg2PiId53ZAedwU6A7su4Jl1zLwtWSxrk?e=CjmlGO',
+    2: 'https://iimblr1-my.sharepoint.com/:f:/g/personal/bbadbeac_iimb_ac_in/IgAwna_E8k72Spx0EObS-U1PASIQro2JVHaoKmrb9EBjO-U?e=DAckNj',
+  };
+
   // Subjects for current batch + term
   const subjectsForTerm = getSubjectsByBatch(selectedBatch, selectedTerm);
 
@@ -147,15 +153,17 @@ const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) =
             <ExternalLink className="w-3 h-3 mr-1" />
             Official Website
           </a>
-          <a
-            href="https://iimblr1-my.sharepoint.com/:f:/g/personal/jayshreeg24_iimb_ac_in/IgB09mAJCjj4SIAg2PiId53ZAedwU6A7su4Jl1zLwtWSxrk?e=CjmlGO"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center text-xs text-emerald-400/80 hover:text-emerald-300 transition-colors"
-          >
-            <ExternalLink className="w-3 h-3 mr-1" />
-            Academic Cell Repository
-          </a>
+          {academicCellRepoLinks[selectedTerm] && (
+            <a
+              href={academicCellRepoLinks[selectedTerm]}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center text-xs text-emerald-400/80 hover:text-emerald-300 transition-colors"
+            >
+              <ExternalLink className="w-3 h-3 mr-1" />
+              Academic Cell Repository (Term {selectedTerm})
+            </a>
+          )}
         </div>
       </div>
     </div>
