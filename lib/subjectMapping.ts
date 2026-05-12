@@ -285,7 +285,7 @@ export const SUBJECTS: Subject[] = [
     description: '',
     icon: 'BookOpen',
     aliases: [
-      { batch: 1, code: '', term: 5 },
+      { batch: 1, code: 'SE51x', term: 5 },
       { batch: 2, code: '', term: 5 },
     ],
   },
@@ -294,7 +294,7 @@ export const SUBJECTS: Subject[] = [
     description: '',
     icon: 'Rocket',
     aliases: [
-      { batch: 1, code: '', term: 5 },
+      { batch: 1, code: 'EP51x', term: 5 },
       { batch: 2, code: '', term: 5 },
     ],
   },
@@ -330,7 +330,7 @@ export const SUBJECTS: Subject[] = [
     description: '',
     icon: 'Rocket',
     aliases: [
-      { batch: 1, code: '', term: 5 },
+      { batch: 1, code: 'MD52x', term: 5 },
       { batch: 2, code: '', term: 5 },
     ],
   },

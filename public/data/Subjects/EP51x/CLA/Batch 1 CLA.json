@@ -1,0 +1,710 @@
+{
+    "exam_metadata": {
+        "subject_name": "Generating Entrepreneurial Resources",
+        "exam_date": "Batch 1",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "The primary role of the finance function is to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Recruit employees and plan their incentives",
+                "B": "Raise funds and ensure the availability of all required resources for the business",
+                "C": "Conduct marketing campaigns and set targets",
+                "D": "Design production systems and fulfil orders"
+            },
+            "correct_option_label": "B",
+            "explanation": "The strategic role of the finance function involves far more than basic accounting; its primary objective is ensuring organizational sustainability by securing the necessary resources and capital to keep the business operational and growing.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "One important responsibility of the finance function is to keep the capital providers satisfied. These include",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only employees",
+                "B": "Only customers",
+                "C": "Founders and investors",
+                "D": "Government regulators"
+            },
+            "correct_option_label": "C",
+            "explanation": "Founders act as capital providers by contributing highly valuable intellectual capital, while investors provide financial capital. The finance function must manage expectations and satisfy the engagement requirements of both.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "The finance function helps a business in I. Making an enterprise sustainable II. Ignoring the capital providers’ interests III. Monitoring and measuring performance IV. Incentivising only the investors",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I and II",
+                "B": "II and IV",
+                "C": "I and IV",
+                "D": "I and III"
+            },
+            "correct_option_label": "D",
+            "explanation": "The finance function is critical for ensuring organizational sustainability (I) and developing appropriate business metrics to monitor and measure performance (III). It actively manages, rather than ignores, capital provider interests and designs incentives for all stakeholders, not just investors.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "Which of the following financial statements are primarily used to assess a company's financial performance and financial health?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Profit and Loss Statement and Balance Sheet",
+                "B": "Cost Sheet and Variance Analysis",
+                "C": "Bank Statement",
+                "D": "Product Development History"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Profit and Loss (P&L) Statement is used to measure operational financial performance (profitability) over a period, while the Balance Sheet assesses the company's financial health, net worth, and liquidity at a specific point in time.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "Authorized capital refers to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The capital actually raised from investors",
+                "B": "The maximum amount of share capital a company is permitted to issue as stated in its memorandum",
+                "C": "The capital subscribed by shareholders",
+                "D": "The capital paid to creditors"
+            },
+            "correct_option_label": "B",
+            "explanation": "Authorized Capital is legally defined in a company's Memorandum of Association as the absolute maximum amount of equity share capital it is permitted to raise and issue to shareholders.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "If a promoter initially owns 100% of a company, and the company issues new shares, which reduces the promoter's holding to 60%, this is called",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Capital restructuring",
+                "B": "Share consolidation",
+                "C": "Dividend distribution",
+                "D": "Dilution of promoter’s stake"
+            },
+            "correct_option_label": "D",
+            "explanation": "When a startup prints/issues new shares to an incoming investor, the existing founders suffer a proportional reduction in their percentage ownership, a process directly referred to as equity dilution.",
+            "module": 1
+        },
+        {
+            "question_id": "7",
+            "question_text": "If investors contribute ₹8 million for 25% equity, the post-money valuation of the startup is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹24 million",
+                "B": "₹40 million",
+                "C": "₹32 million",
+                "D": "₹48 million"
+            },
+            "correct_option_label": "C",
+            "explanation": "Post-Money Valuation is calculated as Investment Amount / Percentage Equity Acquired. Therefore, ₹8 million / 0.25 = ₹32 million.",
+            "module": 1
+        },
+        {
+            "question_id": "8",
+            "question_text": "Which funding source is most ideally suitable for the Proof of Concept (PoC) stage of a high-growth, high-risk startup?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Funds raised through an IPO",
+                "B": "Bank loans",
+                "C": "Corporate loans",
+                "D": "Angel investors"
+            },
+            "correct_option_label": "D",
+            "explanation": "Angel investors provide early-stage risk equity capital necessary for unproven, high-growth startups at the Proof of Concept stage. Banks typically require cash flows or collateral that PoC startups lack, and IPOs are strictly for mature companies.",
+            "module": 1
+        },
+        {
+            "question_id": "9",
+            "question_text": "Pre-money valuation refers to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The value estimated for the assets of a company that exist prior to the mobilisation of a round of financing, based on the valuation arrived at for the round of financing in question",
+                "B": "The value of a company after the new investment is received",
+                "C": "The total revenue of the company",
+                "D": "The market value of the company after IPO"
+            },
+            "correct_option_label": "A",
+            "explanation": "Pre-money valuation is the notional value of all the company's existing assets (including ideas, IP, and market traction) immediately before the new cash from an investor is injected into the business.",
+            "module": 1
+        },
+        {
+            "question_id": "10",
+            "question_text": "A startup has a pre-money valuation of ₹40 million and raises ₹10 million from investors. What percentage of ownership will the new investors receive?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "10%",
+                "B": "20%",
+                "C": "30%",
+                "D": "40%"
+            },
+            "correct_option_label": "B",
+            "explanation": "First, calculate the Post-Money Valuation: Pre-Money (₹40M) + Investment (₹10M) = ₹50M. The percentage equity acquired by the investor is Investment / Post-Money Valuation = 10 / 50 = 20%.",
+            "module": 1
+        },
+        {
+            "question_id": "11",
+            "question_text": "Which of the following shows the most commonly followed correct sequence of the investment process?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sourcing →Evaluation → Screening → Structuring→ Contracting →Exit",
+                "B": "Sourcing → Screening → Evaluation → Structuring → Contracting → Exit",
+                "C": "Sourcing → Structuring → Screening → Evaluation → Contracting → Exit",
+                "D": "Sourcing → Screening → Structuring → Evaluation → Contracting→ Exit"
+            },
+            "correct_option_label": "B",
+            "explanation": "The standard venture capital investment process begins with deal sourcing, rapidly screening out mismatches, deeply evaluating the remainder (due diligence), negotiating a term sheet (structuring), signing final agreements (contracting), and finally achieving liquidity (exit).",
+            "module": 2
+        },
+        {
+            "question_id": "12",
+            "question_text": "___________ is the stage in the venture capital investment process where investors find potential startups to invest in.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Deal Sourcing",
+                "B": "Deal Screening",
+                "C": "Deal Structuring",
+                "D": "Deal Shifting"
+            },
+            "correct_option_label": "A",
+            "explanation": "Deal Sourcing is the initial stage where venture capitalists and angel networks gather leads and find prospective startups to enter their investment pipeline.",
+            "module": 2
+        },
+        {
+            "question_id": "13",
+            "question_text": "Deal evaluation comprises I. Due diligence II. Identifying the deal III. Analysing the business model IV. Valuing the start-up V. Assisting in marketing the start-up firm",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I, II and IV",
+                "B": "II, III and IV",
+                "C": "I, II and V",
+                "D": "I, III and IV"
+            },
+            "correct_option_label": "D",
+            "explanation": "Deal evaluation focuses on deep investigation and pricing, consisting of due diligence (I), analyzing the business model (III), and valuing the startup (IV). Identifying the deal is part of 'sourcing', and marketing assistance is 'post-investment engagement'.",
+            "module": 2
+        },
+        {
+            "question_id": "14",
+            "question_text": "The fertiliser manufacturing industry requires heavy investment in physical assets. Which of the following ratios would be most suitable for valuing a fertiliser manufacturing company?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Price to interest cost ratio",
+                "B": "Price to expense ratio",
+                "C": "Price to earnings ratio",
+                "D": "Price to book ratio"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Price-to-Book (P/B) ratio compares market price to net worth. It is the most appropriate valuation multiple for traditional, capital-intensive heavy industries that hold massive physical assets on their balance sheets.",
+            "module": 2
+        },
+        {
+            "question_id": "15",
+            "question_text": "Match the terms in Column A with Column B:\n\nColumn A\n1. Deal screening\n2. IPO\n3. Due Diligence\n4. Investor Monitoring\n\nColumn B\ni. Exit stage\nii. Filtering out the suitable deals\niii. Post-Funding\niv. Deal Evaluation",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1–i, 2–ii, 3–iv, 4–iii",
+                "B": "1–ii, 2–i, 3–iv, 4–iii",
+                "C": "1–i, 2–ii, 3–iii, 4–iv",
+                "D": "1–iii, 2–ii, 3–iv, 4–i"
+            },
+            "correct_option_label": "B",
+            "explanation": "Deal screening involves rapidly filtering suitable deals (1-ii). An IPO represents a liquidity/exit stage (2-i). Due diligence is the core of deal evaluation (3-iv). Investor monitoring occurs actively in the post-funding phase (4-iii).",
+            "module": 2
+        },
+        {
+            "question_id": "16",
+            "question_text": "Which of the following sets of companies may not be ideally compared using P/E ratios?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A set of companies whose growth is stagnant",
+                "B": "A set of companies whose profits are declining",
+                "C": "A set of companies whose sales are growing but incur loss before interest and depreciation",
+                "D": "Future growth prospects are high"
+            },
+            "correct_option_label": "C",
+            "explanation": "Price-to-Earnings (P/E) ratios require a positive net profit to be mathematically meaningful. If companies are incurring losses before interest and depreciation (negative EBITDA/PAT), standard P/E ratios cannot be used; EV/Sales is typically used instead.",
+            "module": 2
+        },
+        {
+            "question_id": "17",
+            "question_text": "Which of the following ratios is not affected by the capital structure of the company?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "EV/EBITDA ratio",
+                "B": "P/E ratio",
+                "C": "P/B ratio",
+                "D": "Profit/Equity"
+            },
+            "correct_option_label": "A",
+            "explanation": "The EV/EBITDA multiple evaluates the Enterprise Value (which aggregates both equity and debt) against earnings before interest. By excluding interest expenses, it neutralizes the impact of differing corporate borrowing policies (capital structures).",
+            "module": 2
+        },
+        {
+            "question_id": "18",
+            "question_text": "A P/B ratio less than 1 may indicate",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The company is highly profitable",
+                "B": "The company has no assets",
+                "C": "The company has high growth",
+                "D": "The company is undervalued"
+            },
+            "correct_option_label": "D",
+            "explanation": "A Price-to-Book ratio of less than 1 means the stock is trading at a price lower than the mathematical value of its net assets on the balance sheet, often signaling to the market that the company is undervalued.",
+            "module": 2
+        },
+        {
+            "question_id": "19",
+            "question_text": "The market price of a company’s share is ₹200. The company has 10,000 outstanding shares of Rs. 100 face value each. The company's retained earnings amount to Rs. 5,00,000. Find the Price to Book ratio.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1.33",
+                "B": "1.50",
+                "C": "2.50",
+                "D": "2.33"
+            },
+            "correct_option_label": "A",
+            "explanation": "Net Worth (Book Value) = Equity Share Capital + Retained Earnings. Share Capital = 10,000 shares * ₹100 = ₹1,000,000. Total Net Worth = ₹1,000,000 + ₹5,00,000 = ₹1,500,000. Book Value per share = ₹1,500,000 / 10,000 = ₹150. P/B Ratio = Market Price / Book Value = 200 / 150 = 1.33.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "The market value of a company’s equity is ₹800 crore. The company has debt of ₹300 crore and a cash balance of ₹100 crore. Find the enterprise value, given that one of the choices below is correct",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹900 crore",
+                "B": "₹1,000 crore",
+                "C": "₹1,100 crore",
+                "D": "₹1,200 crore"
+            },
+            "correct_option_label": "B",
+            "explanation": "Enterprise Value (EV) is calculated as Market Value of Equity + Total Debt - Cash & Cash Equivalents. Thus, EV = 800 + 300 - 100 = ₹1,000 crore.",
+            "module": 2
+        },
+        {
+            "question_id": "21",
+            "question_text": "A cash budget enables most directly to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Estimate the number of personnel required at various levels with various professional and academic backgrounds",
+                "B": "Leads to alternative go to market strategies",
+                "C": "Segment target customers based on various dimensions such as demographics",
+                "D": "Estimate funding requirement for the enterprise over the planning horizon"
+            },
+            "correct_option_label": "D",
+            "explanation": "A cash budget systematically maps out expected cash receipts against cash payments. By calculating the cumulative cash deficit, it directly enables founders to estimate the precise total funding requirement over their planning horizon.",
+            "module": 3
+        },
+        {
+            "question_id": "22",
+            "question_text": "Which of the following is a key component of a financial forecast?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Weather conditions",
+                "B": "Revenue projections",
+                "C": "Office location",
+                "D": "Employee names"
+            },
+            "correct_option_label": "B",
+            "explanation": "Revenue projections, along with expense estimates and cash flow analysis, are the foundational quantitative components required to build an accurate startup financial forecast.",
+            "module": 3
+        },
+        {
+            "question_id": "23",
+            "question_text": "Which of the following is not typically included in a financial forecast?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Revenue projections",
+                "B": "Expense estimates",
+                "C": "Cash flow projections",
+                "D": "Historical financial statements only"
+            },
+            "correct_option_label": "D",
+            "explanation": "A financial forecast inherently maps out the future trajectory of the business (using projected revenues, expenses, and cash flows). While historical financial statements provide a baseline, a forecast is never composed *only* of historical data.",
+            "module": 3
+        },
+        {
+            "question_id": "24",
+            "question_text": "Find the cash surplus/deficit at the end of the month.\nA startup entered into the following transactions during the month of June:\n\n• Revenue earned ₹5,00,000 (out of which ₹2,00,000 received in cash by end June)\n• Incurred overhead cost paid in cash at the end of June - ₹1,20,000\n• Incurred marketing cost paid in cash at the end of June - ₹80,000\n• Paid Salaries in cash at the end of June - ₹1,00,000\n• The startup had a cash surplus of ₹1,50,000 at the beginning of the month",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cash deficit of ₹50,000",
+                "B": "Cash deficit of ₹1,00,000",
+                "C": "Cash surplus of ₹50,000",
+                "D": "Cash deficit of ₹1,00,000"
+            },
+            "correct_option_label": "C",
+            "explanation": "Cash Budget deals strictly with cash movement. Cash Receipts = ₹2,00,000. Cash Payments = ₹1,20,000 + ₹80,000 + ₹1,00,000 = ₹3,00,000. Net operating cash flow for June = 2,00,000 - 3,00,000 = -₹1,00,000. Add the opening surplus of ₹1,50,000. Closing balance = 1,50,000 - 1,00,000 = ₹50,000 cash surplus.",
+            "module": 3
+        },
+        {
+            "question_id": "25",
+            "question_text": "A startup projects the following financials for the next year:\n\nRevenue = ₹100 lakh\nExpenses = 120 lakh\nExpected cash inflow from forecasted revenue = ₹80 lakh\nExpected cash outflow due to forecasted expenses = ₹100 lakh\nExpected investment in technology (in addition to forecasted expenses) = ₹50 lakh\n\nAssume that the entire cash deficit based on the above data has to be funded. What is the funding requirement based on the cash forecast?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹120 lakh",
+                "B": "₹180 lakh",
+                "C": "₹230 lakh",
+                "D": "₹70 lakh"
+            },
+            "correct_option_label": "D",
+            "explanation": "Funding requirement uses cash flows, ignoring pure accounting revenues/expenses. Cash Outflows = ₹100 lakh (expenses) + ₹50 lakh (CapEx) = ₹150 lakh. Cash Inflows = ₹80 lakh. Total Funding Requirement (Deficit) = ₹150 lakh - ₹80 lakh = ₹70 lakh.",
+            "module": 3
+        },
+        {
+            "question_id": "26",
+            "question_text": "The financial position of a startup is improving showing higher forecasted (future) cash profits. Other things remaining the same, the higher forecasted (future) cash profits will most likely",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase valuation",
+                "B": "Reduce valuation",
+                "C": "Have no impact on valuation",
+                "D": "Reduce future cash flow"
+            },
+            "correct_option_label": "A",
+            "explanation": "A company's valuation is fundamentally derived from the present value of its future cash flows. Therefore, forecasting higher future cash profits directly signals business strength, driving up the overall valuation of the enterprise.",
+            "module": 3
+        },
+        {
+            "question_id": "27",
+            "question_text": "Investors primarily use financial forecasts to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Verify past sales orders",
+                "B": "Estimate financial aspects of growth potential and estimate expected returns",
+                "C": "Manage employees’ motivation",
+                "D": "Draw a balance between direct and indirect costs"
+            },
+            "correct_option_label": "B",
+            "explanation": "Investors utilize a startup's financial forecasts to model out growth scenarios, calculate exit valuations (using multiples), and ultimately estimate the potential return multiplier on their risk capital.",
+            "module": 3
+        },
+        {
+            "question_id": "28",
+            "question_text": "A startup earns revenue of ₹500 per customer and spends ₹600 to acquire and serve them. This indicates",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Strong unit economics",
+                "B": "Break-even",
+                "C": "Negative unit economics",
+                "D": "High valuation"
+            },
+            "correct_option_label": "C",
+            "explanation": "Unit economics measures the profitability of delivering one individual unit/customer. If it costs ₹600 to deliver a service that yields only ₹500 in revenue, the business generates a loss on every transaction, representing negative unit economics.",
+            "module": 3
+        },
+        {
+            "question_id": "29",
+            "question_text": "A high cash burn rate primarily indicates that",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The company is spending cash rapidly",
+                "B": "The company is highly profitable",
+                "C": "The company is generating surplus cash",
+                "D": "The company has high revenue projections"
+            },
+            "correct_option_label": "A",
+            "explanation": "Cash burn rate defines the speed at which a startup depletes its cash reserves to finance its operations (when payments exceed receipts). A high burn rate simply means the company is spending cash very rapidly.",
+            "module": 3
+        },
+        {
+            "question_id": "30",
+            "question_text": "A startup has a monthly cash receipt of ₹2,00,000 and a monthly cash payment of ₹5,00,000. What is the net cash burn?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹2,00,000",
+                "B": "₹5,00,000",
+                "C": "₹7,00,000",
+                "D": "₹3,00,000"
+            },
+            "correct_option_label": "D",
+            "explanation": "Net cash burn is the strict difference between cash receipts and cash payments. ₹5,00,000 (Outflows) - ₹2,00,000 (Inflows) = A net cash burn of ₹3,00,000 per month.",
+            "module": 3
+        },
+        {
+            "question_id": "31",
+            "question_text": "A term sheet can best be described as",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A legally binding contract establishing permanent ownership rights",
+                "B": "A summary of key investment terms and conditions, including valuation, equity stake, liquidation preference and other rights",
+                "C": "An estimated investment plan for the next five years",
+                "D": "An estimate of benefits from tax holidays and exemptions"
+            },
+            "correct_option_label": "B",
+            "explanation": "A Term Sheet is an interim, largely non-binding communication document drafted by investors outlining the proposed financial parameters and governance principles (valuation, board rights, exit terms) before full due diligence and final contracting.",
+            "module": 4
+        },
+        {
+            "question_id": "32",
+            "question_text": "A startup prepares a document detailing projected revenues, costs, and funding needs for the next 5 years. This is best described as",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Term sheet",
+                "B": "Shareholders’ agreement",
+                "C": "Financial forecast",
+                "D": "Investors’ agreement"
+            },
+            "correct_option_label": "C",
+            "explanation": "A document utilized to map out and project a company's future revenues, expenses, and cumulative cash deficit over a multi-year horizon to estimate funding requirements is known as a financial forecast.",
+            "module": 4
+        },
+        {
+            "question_id": "33",
+            "question_text": "Which of the following is most likely correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Term sheet is primarily a non-binding document with some clauses intended to be binding",
+                "B": "Term sheet is primarily a legally binding document with all clauses intended to be binding",
+                "C": "Term sheet is primarily a non-binding document, with all clauses intended to be binding",
+                "D": "Term sheet is primarily a non-binding document with all clauses intended to be legally binding"
+            },
+            "correct_option_label": "A",
+            "explanation": "To allow for unhindered negotiation and due diligence, a Term Sheet acts mostly as a non-binding offer. However, specific clauses like Confidentiality and Exclusivity (No-Shop) are explicitly made legally binding.",
+            "module": 4
+        },
+        {
+            "question_id": "34",
+            "question_text": "A founder signs a term sheet and later negotiates with another investor. Which clause is violated?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Valuation clause",
+                "B": "Exit clause",
+                "C": "No-shop clause",
+                "D": "Governance clause"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Exclusivity or 'No-Shop' clause explicitly prohibits founders from shopping the deal, pitching, or negotiating with competing investors for a defined timeframe (e.g., 60 days) after signing a term sheet.",
+            "module": 4
+        },
+        {
+            "question_id": "35",
+            "question_text": "Liquidation preference ensures",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Higher revenue share to preference shareholders in the event of liquidation",
+                "B": "Priority payout to preference shareholders over common shareholders in the event of liquidation",
+                "C": "Equal distribution of proceeds between preference and common shareholders in the event of liquidation",
+                "D": "Priority payout to common shareholders in the event of liquidation"
+            },
+            "correct_option_label": "B",
+            "explanation": "Liquidation preference is an investor protection right that dictates the payout waterfall. It ensures that preferred shareholders are paid back their initial investment (or a multiple thereof) before common shareholders (founders) receive any proceeds during an exit.",
+            "module": 4
+        },
+        {
+            "question_id": "36",
+            "question_text": "An investor is most likely to convert (instead of taking liquidation preference) when",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Participation rights are available",
+                "B": "Preference value is higher than equity value",
+                "C": "Exit value is low",
+                "D": "Equity value is higher than the liquidation preference, and the preference is non-participating"
+            },
+            "correct_option_label": "D",
+            "explanation": "If an investor holds non-participating preference shares, they must choose either their guaranteed multiple or their proportional equity share. If the company is sold at a very high valuation, their equity % will yield more cash than the fixed preference multiple, prompting them to convert.",
+            "module": 4
+        },
+        {
+            "question_id": "37",
+            "question_text": "An investor invests ₹10 crore for a 20% stake. The company exits with liquidation proceeds of ₹100 crore. The investor has a 1x liquidation preference with participation rights. What is the investor’s payout if they exercise participation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹28 crore",
+                "B": "₹30 crore",
+                "C": "₹36 crore",
+                "D": "₹20 crore"
+            },
+            "correct_option_label": "A",
+            "explanation": "With participating rights, the investor gets their 1x capital back first: ₹10 crore. This leaves ₹90 crore in proceeds. The investor then participates pro-rata, taking their 20% of the remaining ₹90 crore = ₹18 crore. Total payout = ₹10cr + ₹18cr = ₹28 crore.",
+            "module": 4
+        },
+        {
+            "question_id": "38",
+            "question_text": "An investor invests ₹20 crore for a 20% stake. The company exits at ₹200 crore. The investor has 2x liquidation preference with no participation rights. What is the investor’s expected payout, assuming the investor chooses the optimal option?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹20 crore",
+                "B": "₹28 crore",
+                "C": "₹36 crore",
+                "D": "₹40 crore"
+            },
+            "correct_option_label": "D",
+            "explanation": "Without participation rights, the investor chooses the higher of two payoffs. Option 1 (Preference): 2x of ₹20cr = ₹40 crore. Option 2 (Convert): 20% of the ₹200cr exit = ₹40 crore. Both options yield exactly ₹40 crore.",
+            "module": 4
+        },
+        {
+            "question_id": "39",
+            "question_text": "A down round occurs when",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A company raises funds at a higher valuation than in the previous round",
+                "B": "A company raises funds at a lower valuation than in the previous round",
+                "C": "A company raises funds at the same valuation",
+                "D": "A company issues bonus shares in the current round"
+            },
+            "correct_option_label": "B",
+            "explanation": "A 'Down Round' is defined as a financing event where a startup is forced to raise new capital by selling shares at a lower price per share than in its previous funding round, often triggering severe anti-dilution protections for existing investors.",
+            "module": 4
+        },
+        {
+            "question_id": "40",
+            "question_text": "The founder of the company had initially invested Rs. 10,00,000. The firm raised Rs. 2,50,000 in series A funding from an investor who took 20% stake. The share price was Re. 1 per share. The company raised another Rs. 2,00,000 in series B funding at Re. 0.50 per share. Find the new ownership stake after the Series B funding round, assuming the full ratchet provision was exercised?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The founder’s stake is reduced to 53.6%, Series A Investor stake at 26.3% and Series B Investor stake at 20.1%",
+                "B": "The founder’s stake is reduced to 52.6%, Series A Investor stake at 25.3% and Series B Investor stake at 22.1%",
+                "C": "The founder’s stake is reduced to 54.6%, Series A Investor stake at 24.3% and Series B Investor stake at 21.1%",
+                "D": "The founder’s stake is reduced to 52.6%, Series A Investor stake at 26.3% and Series B Investor stake at 21.1%"
+            },
+            "correct_option_label": "D",
+            "explanation": "Pre-Series B: Founder owns 10L shares, Series A owns 2.5L shares (bought at Re 1). Series B raises 2L at Re 0.50, buying 4L shares. Full Ratchet triggers for Series A: their buy price drops to Re 0.50. For their 2.5L investment, they are now entitled to 5L total shares, meaning they receive 2.5L new shares. Total cap table: Founder (10L) + Series A (5L) + Series B (4L) = 19L shares. Founder = 10/19 = 52.6%. Series A = 5/19 = 26.3%. Series B = 4/19 = 21.1%.",
+            "module": 4
+        },
+        {
+            "question_id": "41",
+            "question_text": "Which form of business requires registration under the LLP Act 2008?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Partnership",
+                "B": "Sole proprietorship",
+                "C": "Limited Liability Partnership (LLP)",
+                "D": "HUF"
+            },
+            "correct_option_label": "C",
+            "explanation": "A Limited Liability Partnership is a specific corporate hybrid that must mandatorily be incorporated and registered under the governing provisions of the Limited Liability Partnership (LLP) Act, 2008.",
+            "module": 7
+        },
+        {
+            "question_id": "42",
+            "question_text": "Which document defines the scope and objectives of a company?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Articles of Association",
+                "B": "Memorandum of Association",
+                "C": "Partnership deed",
+                "D": "LLP agreement"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Memorandum of Association (MOA) acts as the company's external charter. It strictly dictates the company's operational scope, main objectives, and limits of authorized capital, binding what the entity can legally engage in.",
+            "module": 7
+        },
+        {
+            "question_id": "43",
+            "question_text": "Which of the following is not mandatory for LLP?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Annual General Meeting",
+                "B": "LLP Agreement",
+                "C": "Registration with MCA",
+                "D": "Digital Signature Certificate"
+            },
+            "correct_option_label": "A",
+            "explanation": "Unlike Private Limited Companies, which must mandatorily convene an Annual General Meeting (AGM) under the Companies Act, LLPs face a relaxed compliance structure and are not legally forced to hold AGMs.",
+            "module": 7
+        },
+        {
+            "question_id": "44",
+            "question_text": "The Annual General Meeting is mandatory for",
+            "question_type": "MCQ",
+            "options": {
+                "A": "LLP",
+                "B": "Partnership",
+                "C": "Private limited company",
+                "D": "Sole proprietorship"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Companies Act enforces strict corporate governance on Private Limited Companies, including the mandatory obligation to hold an Annual General Meeting (AGM) to approve financial statements and auditor appointments.",
+            "module": 7
+        },
+        {
+            "question_id": "45",
+            "question_text": "The Digital Signature Certificate (DSC) is primarily required for",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Hiring employees on contract",
+                "B": "Paying salaries online",
+                "C": "Internal business reviews of a non-statutory nature",
+                "D": "Online filing of documents with the Ministry of Corporate Affairs (MCA)"
+            },
+            "correct_option_label": "D",
+            "explanation": "A Digital Signature Certificate (DSC) is a secure, encrypted digital key legally mandated for directors and professionals to digitally sign, authenticate, and submit statutory forms on the MCA portal.",
+            "module": 7
+        },
+        {
+            "question_id": "46",
+            "question_text": "Which of the following entities has unlimited liability?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Partnership firm",
+                "B": "Limited Liability Partnership",
+                "C": "Private Limited Company",
+                "D": "One Person Company"
+            },
+            "correct_option_label": "A",
+            "explanation": "In a traditional Partnership Firm, the business does not have a separate legal identity from its owners. Consequently, partners carry unlimited personal liability, meaning personal assets can be attached to pay off business debts.",
+            "module": 7
+        },
+        {
+            "question_id": "47",
+            "question_text": "DPIIT registration is primarily intended for",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Early tax payment",
+                "B": "Hiring employees",
+                "C": "Startup recognition, promotion and access to government benefits",
+                "D": "Audit compliance and governance"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Department for Promotion of Industry and Internal Trade (DPIIT) registration was created specifically to formally recognize startups, granting them access to promotional government benefits like tax holidays, fast-track IP filing, and compliance self-certification.",
+            "module": 7
+        },
+        {
+            "question_id": "48",
+            "question_text": "Which of the following statements is correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Memorandum of association (MOA) governs the internal management of the company",
+                "B": "Articles of association (AOA) defines the scope and boundaries for the company",
+                "C": "Both MoA and AoA deal with the same aspects of running a company",
+                "D": "MOA defines scope, AOA defines the internal rules of the company"
+            },
+            "correct_option_label": "D",
+            "explanation": "The MOA defines the company's external operational boundaries and primary objectives (scope). Conversely, the AOA functions as the internal rulebook dictating governance, director powers, and shareholder rights.",
+            "module": 7
+        },
+        {
+            "question_id": "49",
+            "question_text": "Which of the following regulators will have to be approached by any company planning to issue shares to the public.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "DPIIT",
+                "B": "SEBI",
+                "C": "MCA",
+                "D": "GST Council"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Securities and Exchange Board of India (SEBI) is the apex regulator of the capital markets in India. Any company seeking to raise capital from the public via an Initial Public Offering (IPO) must adhere to their stringent disclosure guidelines.",
+            "module": 7
+        },
+        {
+            "question_id": "50",
+            "question_text": "DPIIT registration is primarily useful for",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increasing revenues",
+                "B": "Hiring employees",
+                "C": "Audit compliance",
+                "D": "Startup recognition and tax and other regulatory benefits"
+            },
+            "correct_option_label": "D",
+            "explanation": "DPIIT registration is a critical tool for startups to gain formal recognition, unlocking direct financial and operational benefits such as exemption from angel tax, 3-year income tax holidays, and significant rebates on trademark and patent applications.",
+            "module": 7
+        }
+    ]
+}

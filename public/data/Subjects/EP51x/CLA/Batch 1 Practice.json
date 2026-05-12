@@ -1,0 +1,1452 @@
+{
+    "exam_metadata": {
+        "subject_name": "Generating Entrepreneurial Resources",
+        "exam_date": "Batch 1",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "According to the lecture, an entrepreneur is also considered a capital provider because they contribute:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only financial investments",
+                "B": "Intellectual capital, skills, and experience",
+                "C": "Only physical assets like buildings",
+                "D": "Government funding"
+            },
+            "correct_option_label": "B",
+            "explanation": "Entrepreneurs act as critical capital providers by contributing their highly valuable intellectual capital, skills, and experience, often foregoing alternative financial compensation in the early stages.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "One important role of the finance function in an enterprise is to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Manage production processes",
+                "B": "Focus only on marketing activities",
+                "C": "Measure and monitor organisational performance",
+                "D": "Handle only employee recruitment"
+            },
+            "correct_option_label": "C",
+            "explanation": "The finance function goes beyond just raising capital; it involves developing appropriate business metrics and tracking organizational performance to ensure sustainability and satisfy investor expectations.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "Why would a B2C strategy require more capital investment for Glucotrak?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because the government funds the marketing",
+                "B": "Because doctors will distribute the product",
+                "C": "Because manufacturing costs disappear",
+                "D": "Because the company must build its own sales and marketing infrastructure"
+            },
+            "correct_option_label": "D",
+            "explanation": "A Business-to-Consumer (B2C) go-to-market strategy requires the company to directly reach the end-user, necessitating massive capital expenditure to build independent sales, distribution, and marketing infrastructure.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "If Glucotrak chooses a B2B model by licensing its technology to large companies, what is the likely financial implication?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Higher marketing investment for Glucotrak",
+                "B": "Complete control over the market price",
+                "C": "Lower initial capital investment but lower share of revenue",
+                "D": "No need for partners"
+            },
+            "correct_option_label": "C",
+            "explanation": "In a B2B licensing model, the startup avoids the heavy capital expenditure required for distribution and marketing. However, because the larger partner takes on the market risk, the startup must accept a lower percentage of the final revenue.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "Why do start-ups often divide enterprise development into phases?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To eliminate investor involvement",
+                "B": "To manage activities and capital requirements more effectively",
+                "C": "To reduce the number of employees",
+                "D": "To avoid raising funds"
+            },
+            "correct_option_label": "B",
+            "explanation": "Phased development allows founders to strategically focus their effort, progressively reduce information asymmetry, minimize cash burn, and stage their capital requirements to limit early equity dilution.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "What is meant by “product–market fit” in the second phase of the start-up’s development?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Limiting the product to one market segment",
+                "B": "Increasing the price of the product",
+                "C": "Reducing the number of competitors",
+                "D": "Ensuring the product matches the needs of the target market"
+            },
+            "correct_option_label": "D",
+            "explanation": "Product-market fit refers to the stage where early commercialization proves that the technology or service genuinely satisfies strong demand within the intended target market.",
+            "module": 1
+        },
+        {
+            "question_id": "7",
+            "question_text": "What does “unit economics” refer to in a start-up?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The cost and profit associated with selling one unit of a product",
+                "B": "The total value of the company",
+                "C": "The number of investors in the company",
+                "D": "The number of employees in the company"
+            },
+            "correct_option_label": "A",
+            "explanation": "Unit economics evaluates profitability on a per-unit basis, analyzing the delivered cost versus the price charged to the customer to determine if the fundamental business model is sustainable.",
+            "module": 1
+        },
+        {
+            "question_id": "8",
+            "question_text": "What is the purpose of the “exit stage” for investors in a start-up?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To transfer ownership to employees",
+                "B": "To stop the company from growing",
+                "C": "To close the company permanently",
+                "D": "To allow investors to sell their investment and realise returns"
+            },
+            "correct_option_label": "D",
+            "explanation": "Venture Capital funds operate on finite lifecycles (usually 10-12 years). The exit stage provides the necessary liquidity event (like an IPO or trade sale) enabling them to convert their equity into cash and return profits to their Limited Partners.",
+            "module": 1
+        },
+        {
+            "question_id": "9",
+            "question_text": "Why do start-ups often have high growth potential?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because they avoid competition",
+                "B": "Because they introduce innovative products or business models",
+                "C": "Because they already dominate the market",
+                "D": "Because they always have government support"
+            },
+            "correct_option_label": "B",
+            "explanation": "Startups are defined as high-novelty, low-to-medium capital intensive businesses. Their introduction of disruptive technologies and innovative business models gives them the competitive advantage needed for explosive growth.",
+            "module": 1
+        },
+        {
+            "question_id": "10",
+            "question_text": "Why are start-ups considered more vulnerable than established companies?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They have fewer resources and smaller size",
+                "B": "They always have government backing",
+                "C": "They operate only in global markets",
+                "D": "They have unlimited capital"
+            },
+            "correct_option_label": "A",
+            "explanation": "Despite their innovation, startups suffer from a lack of organizational maturity, extreme small size, missing infrastructure, and severe vulnerability to cash flow dry-ups, making them highly susceptible to failure.",
+            "module": 1
+        },
+        {
+            "question_id": "11",
+            "question_text": "What does “customer acceptance risk” mean for a start-up?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customers always accept new products",
+                "B": "Customers only buy from large companies",
+                "C": "Customers do not know the product price",
+                "D": "Customers may not be willing to use or buy the product"
+            },
+            "correct_option_label": "D",
+            "explanation": "Even if a startup successfully mitigates technology risk and builds a functioning product, it still faces customer acceptance risk—the possibility that the market ultimately rejects the product.",
+            "module": 1
+        },
+        {
+            "question_id": "12",
+            "question_text": "Which of the following is an example of regulatory risk for start-ups?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Expanding to new markets",
+                "B": "Increasing number of employees",
+                "C": "Changes in government rules affecting the business",
+                "D": "Improving product quality"
+            },
+            "correct_option_label": "C",
+            "explanation": "Regulatory uncertainty involves sudden shifts in government policy or laws (such as new fintech or ride-hailing regulations) that can instantly disrupt or outlaw a startup's operational model.",
+            "module": 1
+        },
+        {
+            "question_id": "13",
+            "question_text": "In the framework discussed in the session, businesses are classified based on which two factors??",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Profit and market share",
+                "B": "Number of employees and revenue",
+                "C": "Advertising and branding",
+                "D": "Technology novelty and capital intensity"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Risk Financing Classification Matrix categorizes businesses into four quadrants based purely on their level of technology/business model novelty and their capital intensity, determining their suitability for venture funding.",
+            "module": 1
+        },
+        {
+            "question_id": "14",
+            "question_text": "Why are some highly innovative ventures difficult to finance?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They operate only in international markets",
+                "B": "They involve significant uncertainty along with large capital needs",
+                "C": "Their technologies are already well established",
+                "D": "They avoid partnerships with investors"
+            },
+            "correct_option_label": "B",
+            "explanation": "High Novelty / High Capital ventures (like deep science or new drug development) are notoriously difficult to fund because they require massive capital injections long before they can prove commercial viability, risking the 'Valley of Death'.",
+            "module": 1
+        },
+        {
+            "question_id": "15",
+            "question_text": "What is the primary purpose of providing collateral when raising a loan?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To increase the ownership of the lender in the company",
+                "B": "To reduce the repayment period of the loan",
+                "C": "To provide the lender with security in case the borrower fails to repay",
+                "D": "To eliminate the need to pay interest"
+            },
+            "correct_option_label": "C",
+            "explanation": "Debt financing requires collateral so the lender has a security package (physical assets) they can liquidate to recover their principal if the borrower defaults on their mandatory periodic payments.",
+            "module": 1
+        },
+        {
+            "question_id": "16",
+            "question_text": "A financial instrument that combines features of both debt and equity is called:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Convertible asset",
+                "B": "Hybrid instrument",
+                "C": "Treasury instrument",
+                "D": "Venture loan"
+            },
+            "correct_option_label": "B",
+            "explanation": "Hybrid instruments, such as Preference Share Capital or Convertible Notes, blend the characteristics of both debt (e.g., fixed dividend/interest rates) and equity (e.g., potential conversion to share capital).",
+            "module": 1
+        },
+        {
+            "question_id": "17",
+            "question_text": "What are the two common ways equity investors earn returns from their investment?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Interest payments and loan repayment",
+                "B": "Dividends and capital gains",
+                "C": "Salaries and bonuses",
+                "D": "Rent and royalties"
+            },
+            "correct_option_label": "B",
+            "explanation": "Equity investors share symmetrically in the risk and reward, generating returns through discretionary dividends (profit distribution) and capital gains (appreciation in the underlying share value).",
+            "module": 1
+        },
+        {
+            "question_id": "18",
+            "question_text": "What does authorised capital represent in a company?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The amount of dividend paid to shareholders",
+                "B": "The amount of profit a company expects to earn",
+                "C": "The value of assets owned by the company",
+                "D": "The maximum share capital that a company is allowed to raise"
+            },
+            "correct_option_label": "D",
+            "explanation": "Authorized Capital is the absolute maximum amount of equity share capital a company is legally permitted to raise and issue, as formally stated in its Memorandum of Association.",
+            "module": 1
+        },
+        {
+            "question_id": "19",
+            "question_text": "In the context of share capital, what does “face value” refer to?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The market price of a share",
+                "B": "The dividend received by shareholders",
+                "C": "The value of company assets",
+                "D": "The minimum nominal value assigned to each share"
+            },
+            "correct_option_label": "D",
+            "explanation": "Face Value (or Nominal Value) is the minimum nominal price per share stipulated under Indian law (usually a multiple of ₹1), primarily used to calculate percentage-based dividend payouts.",
+            "module": 1
+        },
+        {
+            "question_id": "20",
+            "question_text": "Development agencies often invest in start-ups primarily because they:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "seek quick financial returns similar to venture capital funds",
+                "B": "aim to promote sectors that are strategically important for economic development",
+                "C": "specialise in funding only consumer technology businesses",
+                "D": "operate as private profit-maximising investment firms"
+            },
+            "correct_option_label": "B",
+            "explanation": "Unlike commercial VCs driven purely by financial returns, developmental agencies and impact investors provide capital to purposefully solve social problems or stimulate strategically underserved economic sectors.",
+            "module": 1
+        },
+        {
+            "question_id": "21",
+            "question_text": "Public equity markets become an important source of capital for start-ups mainly because they:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "allow entrepreneurs to avoid sharing ownership with investors",
+                "B": "eliminate the need for financial reporting by the company",
+                "C": "guarantee profits for the company’s founders",
+                "D": "provide a mechanism for early investors to convert their shares into cash"
+            },
+            "correct_option_label": "D",
+            "explanation": "Public equity markets (Stock Exchanges) serve as massive capital pools for mature companies and, critically, provide the ultimate liquidity mechanism (exit route) for early-stage investors to cash out their shares.",
+            "module": 1
+        },
+        {
+            "question_id": "22",
+            "question_text": "In the earliest stages of a start-up, such as the idea stage and proof of concept stage, funding most commonly comes from:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Public equity markets",
+                "B": "Institutional banks",
+                "C": "Founders, family and friends",
+                "D": "Venture capital funds"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Idea and Proof of Concept stages carry the highest risk and lack verifiable data. Therefore, they are almost exclusively funded by the '3 Fs' (Founders, Family, and Friends) who invest based on personal relationships rather than commercial metrics.",
+            "module": 1
+        },
+        {
+            "question_id": "23",
+            "question_text": "When a start-up requires larger amounts of funding beyond what angels or angel networks can typically provide, it usually approaches:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Early-stage venture capital funds",
+                "B": "Personal bank loans",
+                "C": "Government authorities",
+                "D": "Trade unions"
+            },
+            "correct_option_label": "A",
+            "explanation": "Once a startup moves from early revenue to the growth stage, its capital requirements exceed the capacity of individual angels. It must then approach Institutional Venture Capital (VC) funds to secure large, staged equity rounds.",
+            "module": 1
+        },
+        {
+            "question_id": "24",
+            "question_text": "Compared with investing individually, angels who join an angel network can:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "invest only in companies selected by government regulators",
+                "B": "avoid paying any membership or participation fees",
+                "C": "completely eliminate investment risk",
+                "D": "spread their investments across multiple start-ups with smaller amounts per deal"
+            },
+            "correct_option_label": "D",
+            "explanation": "Angel networks pool capital together, allowing individual investors to write smaller checks across a larger number of startups. This provides critical risk diversification while granting access to a shared due-diligence secretariat.",
+            "module": 1
+        },
+        {
+            "question_id": "25",
+            "question_text": "Which of the following best describes the role of a stock exchange in the public equity market?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It guarantees profits to investors",
+                "B": "It acts as a marketplace where shares can be issued and traded",
+                "C": "It replaces banks in lending to businesses",
+                "D": "It provides loans to companies at subsidised rates"
+            },
+            "correct_option_label": "B",
+            "explanation": "A stock exchange functions strictly as a regulated marketplace, facilitating the public issuance of new shares to raise capital and providing a secondary market where existing shares can be bought and sold freely.",
+            "module": 1
+        },
+        {
+            "question_id": "26",
+            "question_text": "In India, the regulatory authority responsible for overseeing public equity markets and protecting investors is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "RBI",
+                "B": "NABARD",
+                "C": "IRDAI",
+                "D": "SEBI"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Securities and Exchange Board of India (SEBI) is the apex regulatory body governing public capital markets and Alternative Investment Funds to ensure strict transparency and investor protection.",
+            "module": 1
+        },
+        {
+            "question_id": "27",
+            "question_text": "In the venture capital investment process, what is typically issued after the investor shows preliminary interest in the start-up?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Share buyback agreement",
+                "B": "Dividend policy",
+                "C": "Term sheet",
+                "D": "Listing approval"
+            },
+            "correct_option_label": "C",
+            "explanation": "After deal sourcing and initial screening, an interested investor issues a Term Sheet. This is a preliminary, mostly non-binding document outlining proposed valuation and conditions before deep due diligence begins.",
+            "module": 1
+        },
+        {
+            "question_id": "28",
+            "question_text": "What is considered the \"best vote of confidence\" for an incoming investor during a growth-stage funding round?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Having a perfectly accurate original business plan with no materialized risks",
+                "B": "Presenting theoretical unit cost projections instead of realized data",
+                "C": "Existing investors' willingness to provide follow-on capital",
+                "D": "The founder's ability to manage all leadership roles without a staffing plan"
+            },
+            "correct_option_label": "C",
+            "explanation": "During growth-phase pitching, the strongest market validation and confidence signal to new, incoming investors is the continued financial participation of existing early-stage investors in the current round.",
+            "module": 2
+        },
+        {
+            "question_id": "29",
+            "question_text": "What primarily influences the valuation of early-stage firms compared to mature firms?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Historical financial data and stable operating performance",
+                "B": "Regulatory disclosures and stock market performance",
+                "C": "Established cost structures and long operating history",
+                "D": "Available capital, investor preferences, and market trends"
+            },
+            "correct_option_label": "D",
+            "explanation": "Unlike mature firms valued on historical cash flows and public market multiples, early-stage valuation is highly subjective and heavily driven by current capital availability, macroeconomic shifts, and investor sector preferences.",
+            "module": 2
+        },
+        {
+            "question_id": "30",
+            "question_text": "Why do companies within the same industry tend to have similar P/E and P/B ratios?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They are regulated by the same authorities",
+                "B": "They follow identical accounting standards",
+                "C": "They have similar relationships between capital, sales, and profits",
+                "D": "They issue the same number of shares"
+            },
+            "correct_option_label": "C",
+            "explanation": "Firms in the same industry exhibit clustering around mean valuation multiples because they share comparable capital intensity, operating dynamics, and profitability characteristics.",
+            "module": 2
+        },
+        {
+            "question_id": "31",
+            "question_text": "Why do private sector banks typically have higher P-E and P-B ratios than public sector banks?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They have more government support",
+                "B": "They face fewer social obligations and higher profitability",
+                "C": "They operate in different industries",
+                "D": "They have lower capital requirements"
+            },
+            "correct_option_label": "B",
+            "explanation": "Private sector banks command higher valuation multiples because they are strictly driven by commercial profit margins, unlike public sector banks which bear the cost of fulfilling broader governmental social obligations.",
+            "module": 2
+        },
+        {
+            "question_id": "32",
+            "question_text": "Why is EV/EBITDA preferred over P/E for some companies?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It uses market share price",
+                "B": "It applies only to profitable firms",
+                "C": "It is unaffected by capital structure and accounting differences",
+                "D": "It ignores industry comparisons"
+            },
+            "correct_option_label": "C",
+            "explanation": "EV/EBITDA evaluates Enterprise Value against operating earnings before interest and taxes. This neutralizes the distorting effects of differing corporate borrowing policies (capital structure) and depreciation accounting methods.",
+            "module": 2
+        },
+        {
+            "question_id": "33",
+            "question_text": "What problem is Kloud Garage primarily trying to solve?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "High cost of car manufacturing",
+                "B": "Inefficiencies and long wait times in service centers",
+                "C": "Lack of skilled software engineers",
+                "D": "Limited availability of spare parts"
+            },
+            "correct_option_label": "B",
+            "explanation": "As per the Kloud Garage case analysis, the startup's core value proposition addresses the significant customer pain point of inefficiencies and prolonged wait times at traditional automotive service centers.",
+            "module": 2
+        },
+        {
+            "question_id": "34",
+            "question_text": "Why does Cloud Garage have no sales in Year 1?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lack of market demand",
+                "B": "Focus on proof of concept and product development",
+                "C": "High competition in the industry",
+                "D": "Regulatory restrictions"
+            },
+            "correct_option_label": "B",
+            "explanation": "In typical phased enterprise development, Year 1 (Phase 1) is dedicated entirely to product development, establishing infrastructure, and ensuring reliability, meaning pre-commercial sales are virtually zero.",
+            "module": 2
+        },
+        {
+            "question_id": "35",
+            "question_text": "Why do investors expect to exit within a specific time frame?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To reduce operational costs",
+                "B": "Due to venture capital fund lifecycle constraints",
+                "C": "Because of government regulations",
+                "D": "To avoid competition"
+            },
+            "correct_option_label": "B",
+            "explanation": "Institutional Venture Capital funds operate with finite, closed-end lifespans (typically 10-12 years). They are contractually obligated to liquidate their investments and return capital to their Limited Partners within this horizon.",
+            "module": 2
+        },
+        {
+            "question_id": "36",
+            "question_text": "What does the “power law” in venture investing imply?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "All investments yield equal returns",
+                "B": "Investors avoid high-risk startups",
+                "C": "Returns are guaranteed over time",
+                "D": "Most returns come from a few highly successful investments"
+            },
+            "correct_option_label": "D",
+            "explanation": "Venture capital returns are driven by the power law, where the vast majority of startups fail or break even, and the entire fund's profitability relies on a small handful of outsized, exponential successes.",
+            "module": 2
+        },
+        {
+            "question_id": "37",
+            "question_text": "Why might dilution still be beneficial for founders?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It eliminates investor involvement",
+                "B": "It guarantees control over decisions",
+                "C": "It can increase the overall value of their equity",
+                "D": "It reduces the number of shares"
+            },
+            "correct_option_label": "C",
+            "explanation": "Although a founder's percentage ownership decreases through dilution, the capital injected drives massive enterprise growth. Thus, a smaller percentage of a significantly larger valuation yields a higher absolute monetary wealth.",
+            "module": 2
+        },
+        {
+            "question_id": "38",
+            "question_text": "What is the purpose of a capitalization (cap) table?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To track company revenue growth",
+                "B": "To record shareholding changes across funding rounds",
+                "C": "To calculate operating costs",
+                "D": "To determine market demand"
+            },
+            "correct_option_label": "B",
+            "explanation": "A capitalization table is a detailed ledger that tracks the exact breakdown of company ownership, reflecting how equity percentages shift and dilute among founders, investors, and employee pools across successive funding rounds.",
+            "module": 2
+        },
+        {
+            "question_id": "39",
+            "question_text": "How is post-money valuation calculated?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Investment amount minus equity percentage",
+                "B": "Investment amount divided by equity percentage received",
+                "C": "Pre-money valuation minus investment",
+                "D": "Total assets minus liabilities"
+            },
+            "correct_option_label": "B",
+            "explanation": "Post-Money Valuation represents the total notional value of the firm after cash injection. It is mathematically calculated by dividing the specific Investment Amount by the Percentage of Equity Acquired by the investor.",
+            "module": 2
+        },
+        {
+            "question_id": "40",
+            "question_text": "Why is dilution adjustment important in valuation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To account for future changes in ownership percentages",
+                "B": "To reduce company expenses",
+                "C": "To increase investor control",
+                "D": "To estimate revenue growth"
+            },
+            "correct_option_label": "A",
+            "explanation": "Investors use reverse calculation to adjust for future dilution. By calculating the expected dilution in subsequent funding rounds, they determine the exact higher entry equity percentage needed today to hit their target exit percentage tomorrow.",
+            "module": 2
+        },
+        {
+            "question_id": "41",
+            "question_text": "What primarily drives changes in valuation across funding rounds?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Number of employees",
+                "B": "Amount of capital raised and equity percentage",
+                "C": "Government policies",
+                "D": "Company age"
+            },
+            "correct_option_label": "B",
+            "explanation": "Successive valuations are fundamentally discovered by the market through the mathematical relationship between the new capital amounts raised and the corresponding equity percentages negotiated by incoming investors.",
+            "module": 2
+        },
+        {
+            "question_id": "42",
+            "question_text": "What is the purpose of adjustment mechanisms in funding agreements?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To increase company revenue",
+                "B": "To reduce market competition",
+                "C": "To fix share prices permanently",
+                "D": "To compensate investors if performance targets are not met"
+            },
+            "correct_option_label": "D",
+            "explanation": "Adjustment mechanisms, such as convertible instruments and anti-dilution ratchets, protect investors from downside price risk by granting them more shares if the company underperforms and fails to meet projected valuation targets.",
+            "module": 2
+        },
+        {
+            "question_id": "43",
+            "question_text": "How does scenario analysis benefit founders?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It removes the need for funding",
+                "B": "It ensures accurate predictions",
+                "C": "It helps evaluate different funding strategies and reduce dilution",
+                "D": "It eliminates investor involvement"
+            },
+            "correct_option_label": "C",
+            "explanation": "Financial models are not perfect predictions but scenario-planning tools. Scenario analysis allows founders to evaluate trade-offs between upfront vs. staged funding to maximize capital efficiency and minimize their equity dilution.",
+            "module": 2
+        },
+        {
+            "question_id": "44",
+            "question_text": "How can founders reduce dilution in early funding rounds?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase initial funding amount",
+                "B": "Delay product development",
+                "C": "Avoid investors completely",
+                "D": "Raise smaller amounts initially and more in later rounds"
+            },
+            "correct_option_label": "D",
+            "explanation": "Staged funding is the key to minimizing dilution. By raising just enough capital to reach the next milestone, founders reduce early risk, allowing them to raise larger sums later at much higher valuations, thereby surrendering less equity.",
+            "module": 2
+        },
+        {
+            "question_id": "45",
+            "question_text": "A cash budget primarily represents:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Profit and loss of a company",
+                "B": "Receipts and payments over a period",
+                "C": "Assets and liabilities",
+                "D": "Shareholder returns"
+            },
+            "correct_option_label": "B",
+            "explanation": "Unlike standard P&L statements which include non-cash items, a cash budget is a pure tracking tool that strictly represents actual cash receipts and actual cash payments over a specific period.",
+            "module": 3
+        },
+        {
+            "question_id": "46",
+            "question_text": "Which growth path represents the fastest expansion?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lazy",
+                "B": "Balanced",
+                "C": "Cozy",
+                "D": "Crazy"
+            },
+            "correct_option_label": "D",
+            "explanation": "In strategic modeling, the 'Crazy' path represents ultra-fast, aggressive scale-up (e.g., 36 centers in 3 years). This necessitates immense upfront capital and a heavy reliance on technology over human resources.",
+            "module": 3
+        },
+        {
+            "question_id": "47",
+            "question_text": "Why is a technology-led strategy preferred in the “crazy” growth path?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To reduce marketing costs",
+                "B": "To reduce marketing costs",
+                "C": "To manage rapid expansion and improve productivity",
+                "D": "To increase pricing"
+            },
+            "correct_option_label": "C",
+            "explanation": "The 'Crazy' growth strategy demands expanding too quickly for traditional HR-intensive models to cope. A heavy, one-time investment in enterprise technology is absolutely required to manage this rapid expansion and ensure productivity.",
+            "module": 3
+        },
+        {
+            "question_id": "48",
+            "question_text": "What is “peak operational cash deficit”?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Maximum profit earned",
+                "B": "Highest cumulative shortfall between operational receipts and payments",
+                "C": "Difference between assets and liabilities",
+                "D": "Total investment in infrastructure"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Peak Operational Cash Deficit represents the highest absolute cumulative shortfall recorded between cash outflows and inflows before the startup finally achieves a consistent cash surplus.",
+            "module": 3
+        },
+        {
+            "question_id": "49",
+            "question_text": "What determines the number of associates required in a centre?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Office size",
+                "B": "Marketing budget",
+                "C": "Client acquisition forecast",
+                "D": "Number of investors"
+            },
+            "correct_option_label": "C",
+            "explanation": "In operational modeling, staffing levels are directly tied to demand. The number of professional associates required is strictly determined by dividing the projected active clients by the associate's client capacity.",
+            "module": 3
+        },
+        {
+            "question_id": "50",
+            "question_text": "What does a cumulative cash deficit indicate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Profit earned over time",
+                "B": "Total assets owned",
+                "C": "Market valuation",
+                "D": "Total excess of payments over receipts over time"
+            },
+            "correct_option_label": "D",
+            "explanation": "The cumulative cash deficit tallies the ongoing losses across multiple months, representing the total excess of cash payments over cash receipts up to a specific point in time.",
+            "module": 3
+        },
+        {
+            "question_id": "51",
+            "question_text": "What is valuation primarily used to determine in this context?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Company revenue",
+                "B": "Number of employees",
+                "C": "Marketing budget",
+                "D": "Investor’s equity share"
+            },
+            "correct_option_label": "D",
+            "explanation": "In venture finance structuring, valuation is not just an abstract vanity metric; it is the fundamental mathematical lever used to determine the exact percentage of equity the investor receives for their cash injection.",
+            "module": 3
+        },
+        {
+            "question_id": "52",
+            "question_text": "What is a key challenge highlighted in early-stage investing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lack of product innovation",
+                "B": "Managing employee performance",
+                "C": "Aligning valuation expectations between investors and founders",
+                "D": "Reducing operational costs"
+            },
+            "correct_option_label": "C",
+            "explanation": "Because early-stage startups lack historical financial data, relying heavily on future projections, aligning the subjective valuation expectations between optimistic founders and risk-averse investors is a primary hurdle.",
+            "module": 4
+        },
+        {
+            "question_id": "53",
+            "question_text": "What is the primary purpose of structuring in financing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To fix company valuation",
+                "B": "To align interests of investors and founders",
+                "C": "To reduce company size",
+                "D": "To eliminate risks completely"
+            },
+            "correct_option_label": "B",
+            "explanation": "Deal structuring involves designing a complex package of financial instruments and governance rights to perfectly align the often competing goals of founders (control/wealth) and investors (returns/liquidity).",
+            "module": 4
+        },
+        {
+            "question_id": "54",
+            "question_text": "What are the two main objectives of founders discussed in the video?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Revenue and cost reduction",
+                "B": "Control and wealth",
+                "C": "Liquidity and valuation",
+                "D": "Expansion and hiring"
+            },
+            "correct_option_label": "B",
+            "explanation": "Founders generally navigate the 'Rich vs. King' framework, balancing the desire for extreme wealth creation (which often requires giving up equity) against the desire to retain strict operational control.",
+            "module": 4
+        },
+        {
+            "question_id": "55",
+            "question_text": "What does the “Rich” entrepreneur prioritize?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Maintaining full control of the company",
+                "B": "Minimizing investor involvement",
+                "C": "Reducing company valuation",
+                "D": "Wealth creation over control"
+            },
+            "correct_option_label": "D",
+            "explanation": "A 'Rich' entrepreneur is willing to surrender voting control and significant equity percentages to venture capitalists in order to aggressively scale the business and maximize their personal financial wealth upon exit.",
+            "module": 4
+        },
+        {
+            "question_id": "56",
+            "question_text": "What is a key limitation of direct equity investment compared to convertible instruments?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It does not involve ownership",
+                "B": "It cannot adjust valuation based on future performance",
+                "C": "It guarantees higher returns",
+                "D": "It avoids regulatory compliance"
+            },
+            "correct_option_label": "B",
+            "explanation": "Direct equity locks the investor into a rigid valuation immediately. Convertible instruments are far more flexible, bridging valuation gaps by tying the final conversion price directly to future performance metrics.",
+            "module": 4
+        },
+        {
+            "question_id": "57",
+            "question_text": "What are convertible instruments in startup financing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Direct equity investments",
+                "B": "Government grants",
+                "C": "Non-equity investments that convert into equity later",
+                "D": "Fixed deposits"
+            },
+            "correct_option_label": "C",
+            "explanation": "Convertible instruments (like CCPS or Convertible Notes) are initially issued as quasi-debt or preference shares but carry a contractual mandate to convert into common equity shares at a defined future milestone.",
+            "module": 4
+        },
+        {
+            "question_id": "58",
+            "question_text": "Why are term sheets generally non-binding?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To maintain flexibility for negotiation",
+                "B": "To avoid legal documentation",
+                "C": "To reduce investor risk",
+                "D": "To eliminate founder involvement"
+            },
+            "correct_option_label": "A",
+            "explanation": "Term sheets are deliberately non-binding to provide both parties the flexibility to negotiate freely and allow investors an out if exhaustive due diligence uncovers hidden liabilities before final capital is deployed.",
+            "module": 4
+        },
+        {
+            "question_id": "59",
+            "question_text": "What is the role of independent directors on a startup’s board?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Represent investor interests only",
+                "B": "Manage company operations",
+                "C": "Provide unbiased decisions in the best interest of the company",
+                "D": "Handle financial reporting"
+            },
+            "correct_option_label": "C",
+            "explanation": "Independent directors act as neutral arbiters. They are appointed to objectively resolve potential deadlocks between the founder’s team and the investors' nominees, voting strictly in the holistic interest of the enterprise.",
+            "module": 4
+        },
+        {
+            "question_id": "60",
+            "question_text": "What is the purpose of a drag-along clause?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To prevent share sales",
+                "B": "To allow minority shareholders to join a sale",
+                "C": "To fix company valuation",
+                "D": "To force founders to sell shares during an exit"
+            },
+            "correct_option_label": "D",
+            "explanation": "A Drag-Along right empowers majority investors to forcefully 'drag' minority shareholders (founders) into selling their stakes if a strategic corporate buyer demands 100% total control to execute an acquisition.",
+            "module": 4
+        },
+        {
+            "question_id": "61",
+            "question_text": "What does “participation rights” mean in liquidation preference?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Investors cannot convert to equity",
+                "B": "Investors receive their investment and also share in remaining proceeds",
+                "C": "Investors only receive their initial investment",
+                "D": "Investors lose their priority rights"
+            },
+            "correct_option_label": "B",
+            "explanation": "A participating liquidation preference, often termed 'double dipping,' allows investors to extract their guaranteed capital multiple first, and then additionally participate pro-rata in the distribution of the remaining exit cash.",
+            "module": 4
+        },
+        {
+            "question_id": "62",
+            "question_text": "What is the primary purpose of anti-dilution ratchets?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To increase company revenue",
+                "B": "To protect early investors during down rounds",
+                "C": "To eliminate new investors",
+                "D": "To fix share prices permanently"
+            },
+            "correct_option_label": "B",
+            "explanation": "Anti-dilution mechanisms (like Full Ratchet or Weighted Average) are deployed exclusively to protect existing investors from suffering excessive ownership loss if the company raises new funds at a drastically lower valuation (Down Round).",
+            "module": 4
+        },
+        {
+            "question_id": "63",
+            "question_text": "Why are exits important for investors?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To increase operational efficiency",
+                "B": "To reduce company costs",
+                "C": "To realise returns on their investment",
+                "D": "To hire more employees"
+            },
+            "correct_option_label": "C",
+            "explanation": "Because venture capital funds possess strict, finite lifespans, executing a liquidity event (exit) is absolutely essential for fund managers to convert illiquid startup shares into cash and realize returns for their LPs.",
+            "module": 5
+        },
+        {
+            "question_id": "64",
+            "question_text": "Which is the most preferred exit route for investors?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Buyback",
+                "B": "Initial Public Offering (IPO)",
+                "C": "Trade sale",
+                "D": "Self-liquidating instrument"
+            },
+            "correct_option_label": "B",
+            "explanation": "An Initial Public Offering (IPO) is overwhelmingly the most preferred exit because the massive retail and institutional demand in public markets drives the highest potential for un-capped capital appreciation.",
+            "module": 5
+        },
+        {
+            "question_id": "65",
+            "question_text": "Why is it important for investors and founders to discuss exit early?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To reduce company costs",
+                "B": "To increase employee count",
+                "C": "To avoid valuation",
+                "D": "To align expectations on timelines and exit options"
+            },
+            "correct_option_label": "D",
+            "explanation": "Founders might be content building a legacy business for decades, whereas institutional investors require a hard cash exit within 5 to 8 years. Discussing exits early aligns strategic horizons and prevents future board disputes.",
+            "module": 5
+        },
+        {
+            "question_id": "66",
+            "question_text": "Why can’t all companies go for an IPO?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because of regulatory requirements and investor preferences",
+                "B": "Due to lack of employees",
+                "C": "Due to low marketing",
+                "D": "Because IPOs are banned"
+            },
+            "correct_option_label": "A",
+            "explanation": "Listing on a public stock exchange is heavily governed by entities like SEBI, which impose stringent profitability, maturity, and corporate governance thresholds that early-stage, loss-making startups simply cannot meet.",
+            "module": 5
+        },
+        {
+            "question_id": "67",
+            "question_text": "What is one major cost associated with an IPO?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Employee salaries",
+                "B": "Marketing discounts",
+                "C": "Office rent",
+                "D": "Fees, commissions, and compliance costs"
+            },
+            "correct_option_label": "D",
+            "explanation": "An IPO is an extremely resource-intensive process. Direct financial costs such as merchant banker fees, brokerage commissions, and exhaustive regulatory compliance can consume 7% to 10% of the total capital raised.",
+            "module": 5
+        },
+        {
+            "question_id": "68",
+            "question_text": "What is a trade sale?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Selling products in the market",
+                "B": "Issuing new shares to the public",
+                "C": "Selling company shares, assets, or the entire company to another buyer",
+                "D": "Buying back shares"
+            },
+            "correct_option_label": "C",
+            "explanation": "A trade sale is an M&A exit route where the startup's existing shareholders sell the entire business or its core operational assets to a strategic corporate acquirer looking to integrate the technology.",
+            "module": 5
+        },
+        {
+            "question_id": "69",
+            "question_text": "What is one advantage of trade sales over IPOs?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Immediate liquidity and faster execution",
+                "B": "Higher valuation",
+                "C": "Less ownership transfer",
+                "D": "No change in management"
+            },
+            "correct_option_label": "A",
+            "explanation": "While IPOs take 8 to 12 months and involve immense regulatory scrutiny, a trade sale can close in as little as 30 days, providing founders and investors with immediate, upfront cash liquidity.",
+            "module": 5
+        },
+        {
+            "question_id": "70",
+            "question_text": "When are self-liquidating instruments typically used?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "When IPO markets are strong",
+                "B": "When multiple buyers are available",
+                "C": "When the company is not profitable",
+                "D": "When exit options like IPO or trade sale are limited"
+            },
+            "correct_option_label": "D",
+            "explanation": "In underdeveloped capital markets where traditional IPOs or corporate M&A activities are rare, investors use self-liquidating instruments to extract their returns directly from the company's own operating cash flows.",
+            "module": 5
+        },
+        {
+            "question_id": "71",
+            "question_text": "Why is networking important in fundraising?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To reduce company costs",
+                "B": "To avoid business operations",
+                "C": "To understand market trends and connect with investors",
+                "D": "To increase production"
+            },
+            "correct_option_label": "C",
+            "explanation": "Because private venture markets are highly opaque with undisclosed valuations and deal terms, founders must actively network to discover shifting market trends, benchmark standard terms, and secure warm introductions to investors.",
+            "module": 5
+        },
+        {
+            "question_id": "72",
+            "question_text": "Why is a contingency buffer included in financial planning?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To increase profits",
+                "B": "To prepare for uncertainties and worst-case scenarios",
+                "C": "To reduce operational costs",
+                "D": "To avoid using debt"
+            },
+            "correct_option_label": "B",
+            "explanation": "Financial modeling in startups is inherently uncertain. A 10% to 15% contingency buffer is added to capital requirements to absorb unforeseen macroeconomic shocks or operational delays without facing fatal cash dry-ups.",
+            "module": 6
+        },
+        {
+            "question_id": "73",
+            "question_text": "Which funding source is considered the cheapest and least risky?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Equity",
+                "B": "Venture debt",
+                "C": "Internal accruals",
+                "D": "Mezzanine funding"
+            },
+            "correct_option_label": "C",
+            "explanation": "Internal accruals (organically generated operating cash flows) sit at the top of the financing hierarchy because they do not trigger equity dilution, nor do they carry mandatory interest burdens or strict repayment timelines.",
+            "module": 6
+        },
+        {
+            "question_id": "74",
+            "question_text": "What is a key factor investors consider when evaluating a founder’s pitch?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only historical financial data",
+                "B": "Founder’s execution capability and strategic fit",
+                "C": "Company logo and branding alone",
+                "D": "Short-term revenue only"
+            },
+            "correct_option_label": "B",
+            "explanation": "Because early-stage forecasts are unreliable, investors heavily scrutinize the team's execution history, unique technical capability, and intellectual honesty to determine if they can effectively navigate future market pivots.",
+            "module": 6
+        },
+        {
+            "question_id": "75",
+            "question_text": "Why do founders create competition among potential buyers?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To reduce operational complexity",
+                "B": "To lower valuation expectations",
+                "C": "To increase valuation through competitive bidding",
+                "D": "To avoid negotiations"
+            },
+            "correct_option_label": "C",
+            "explanation": "In opaque M&A markets, pure mathematical valuation means little without leverage. Engaging multiple prospective buyers simultaneously triggers FOMO (Fear Of Missing Out), driving up the asset's final valuation range.",
+            "module": 6
+        },
+        {
+            "question_id": "76",
+            "question_text": "What is the most effective way to approach investors?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cold emails without follow-up",
+                "B": "Social media advertisements",
+                "C": "Warm introductions through networks",
+                "D": "Random outreach"
+            },
+            "correct_option_label": "C",
+            "explanation": "Venture capitalists rely heavily on social proof. Securing warm introductions through mutual connections, existing portfolio founders, or verified ecosystem players yields the highest success rate in securing pitch meetings.",
+            "module": 6
+        },
+        {
+            "question_id": "77",
+            "question_text": "What is the primary purpose of generating initial excitement in a pitch?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To provide detailed financial data",
+                "B": "To immediately capture investor attention",
+                "C": "To reduce competition",
+                "D": "To avoid discussing risks"
+            },
+            "correct_option_label": "B",
+            "explanation": "A pitch structure begins with a 'Hook'—a bold market statement or personal anecdote—designed specifically to capture immediate attention before diving into granular structural business details.",
+            "module": 6
+        },
+        {
+            "question_id": "78",
+            "question_text": "What is the purpose of defining TAM, SAM, and SOM in a pitch?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To calculate company expenses",
+                "B": "To show market size and achievable opportunity",
+                "C": "To analyze employee performance",
+                "D": "To reduce competition"
+            },
+            "correct_option_label": "B",
+            "explanation": "Defining the Total, Serviceable, and Obtainable market breaks down the macro opportunity mathematically, proving to investors that the headroom is large enough to allow massive expansion and high exits.",
+            "module": 6
+        },
+        {
+            "question_id": "79",
+            "question_text": "What is the purpose of including an exit thesis in a pitch?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To reduce operational costs",
+                "B": "To explain company history",
+                "C": "To avoid dilution",
+                "D": "To show how investors will achieve returns"
+            },
+            "correct_option_label": "D",
+            "explanation": "A successful pitch must conclude by demonstrating outcome. Outlining an exit strategy (e.g., potential M&A acquirers or IPO timelines) shows the investor exactly how they will liquidate their shares and generate their target multiple.",
+            "module": 6
+        },
+        {
+            "question_id": "80",
+            "question_text": "Which clauses in a term sheet are typically binding?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Valuation and dilution",
+                "B": "Revenue projections",
+                "C": "Exclusivity and confidentiality",
+                "D": "Market size assumptions"
+            },
+            "correct_option_label": "C",
+            "explanation": "While the overarching commercial investment parameters remain non-binding subject to due diligence, the Exclusivity (No-Shop) and Confidentiality clauses are strictly legally binding to protect the investor's negotiation time and deal secrecy.",
+            "module": 6
+        },
+        {
+            "question_id": "81",
+            "question_text": "What is the purpose of a Shareholders' Agreement (SHA)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To calculate company revenue",
+                "B": "To extend and formalize terms agreed in the term sheet",
+                "C": "To manage daily operations",
+                "D": "To determine employee salaries"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Shareholders Agreement (SHA) translates the high-level, non-binding concepts negotiated in the Term Sheet into legally binding, highly complex contractual covenants dictating governance, anti-dilution formulas, and investor rights.",
+            "module": 6
+        },
+        {
+            "question_id": "82",
+            "question_text": "Which form is used for reserving the name of a Private Limited Company?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "DIR-3 KYC",
+                "B": "PAS-3",
+                "C": "SPICe Plus Part A",
+                "D": "MGT-14"
+            },
+            "correct_option_label": "C",
+            "explanation": "During the incorporation process, SPICe+ Part A is the mandated MCA form used to apply for and reserve a unique name for the proposed company, which remains valid for an initial period of 20 days.",
+            "module": 7
+        },
+        {
+            "question_id": "83",
+            "question_text": "Which of the following is strictly prohibited for use as a registered office space under the Companies Act 2013?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A residential house",
+                "B": "A coworking space",
+                "C": "Physical office space",
+                "D": "A virtual office space"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Companies Act requires a registered office to be physically identifiable and capable of receiving official correspondence. Virtual offices are strictly prohibited, though residential properties and coworking desks are legally acceptable.",
+            "module": 7
+        },
+        {
+            "question_id": "84",
+            "question_text": "A company is prohibited from starting its business operations or borrowing funds until which of the following forms is filed?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Form ADT-1",
+                "B": "Form INC 22",
+                "C": "Form INC 20 A",
+                "D": "Form DIR 3"
+            },
+            "correct_option_label": "C",
+            "explanation": "Form INC-20A (Declaration of Commencement of Business) must be filed to prove the initial subscriber capital has been deposited in the bank account; without it, the company cannot legally commence operations or borrow money.",
+            "module": 7
+        },
+        {
+            "question_id": "85",
+            "question_text": "What is the maximum permissible gap between two consecutive board meetings for a company?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "30 days",
+                "B": "60 days",
+                "C": "120 days",
+                "D": "90 days"
+            },
+            "correct_option_label": "C",
+            "explanation": "To ensure active corporate governance, the law mandates a minimum of four board meetings per year, stipulating that the time gap between any two consecutive meetings cannot exceed 120 days.",
+            "module": 7
+        },
+        {
+            "question_id": "86",
+            "question_text": "Why is Equity Capital referred to as \"Permanent Capital\" in the context of a company?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because it must be repaid to shareholders every year.",
+                "B": "Because it remains with the company until it is sold, dissolved, or closed down.",
+                "C": "Because the dividend rate is fixed and cannot be changed.",
+                "D": "Because it is a form of debt that never matures."
+            },
+            "correct_option_label": "B",
+            "explanation": "Unlike debt which carries strict maturity dates and repayment mandates, equity is 'patient' or 'permanent risk capital'. It provides maximum stability as there is no legal obligation for the company to repay the principal amount while operating.",
+            "module": 7
+        },
+        {
+            "question_id": "87",
+            "question_text": "What is the borrowing limit for a private limited company from shareholders under the Companies Act, 2013?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "50% of paid-up capital only",
+                "B": "Unlimited borrowing from shareholders",
+                "C": "Only up to ₹10 crore",
+                "D": "100% of paid-up capital, free reserves, and securities premium"
+            },
+            "correct_option_label": "D",
+            "explanation": "Under standard exemptions, a private company can accept borrowings (deposits) from its shareholders up to a strict cap of 100% of its combined Paid-up Capital, Free Reserves, and Securities Premium (though DPIIT startups are exempt from this limit).",
+            "module": 7
+        },
+        {
+            "question_id": "88",
+            "question_text": "Which of the following is a key pre-investment compliance for private placement?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Opening a separate bank account",
+                "B": "Cancelling existing shares",
+                "C": "Converting into an LLP",
+                "D": "Closing the company"
+            },
+            "correct_option_label": "A",
+            "explanation": "Before issuing shares via a Private Placement or Preferential Allotment, a company must mandatorily open a separate Escrow or Designated Bank Account specifically to receive the incoming subscription funds securely.",
+            "module": 7
+        },
+        {
+            "question_id": "89",
+            "question_text": "Which of the following statements best describes a convertible note?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is a pure equity instrument issued to the public",
+                "B": "It is a hybrid debt instrument that can be converted into equity",
+                "C": "It is a grant given by the government to startups",
+                "D": "It is a short-term loan that cannot be converted into shares"
+            },
+            "correct_option_label": "B",
+            "explanation": "A Convertible Note is a hybrid debt instrument exclusive to DPIIT-recognized startups. It acts as a loan initially but holds the mechanism to convert into equity shares upon the occurrence of a qualifying funding round within 10 years.",
+            "module": 7
+        },
+        {
+            "question_id": "90",
+            "question_text": "Which of the following is a key compliance requirement after share allotment?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Issuing share certificates within 60 days",
+                "B": "Closing the company bank account",
+                "C": "Avoiding audit reports",
+                "D": "Not filing any documents with ROC"
+            },
+            "correct_option_label": "A",
+            "explanation": "Following the legal allotment of new shares to investors, the company is statutorily required to issue properly stamped physical or dematerialized Share Certificates within a maximum timeframe of 60 days.",
+            "module": 7
+        },
+        {
+            "question_id": "91",
+            "question_text": "Which business structure is generally preferred for raising venture capital funding?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sole proprietorship",
+                "B": "Traditional partnership",
+                "C": "Private limited company",
+                "D": "Unregistered partnership"
+            },
+            "correct_option_label": "C",
+            "explanation": "Institutional VC investors highly prefer Private Limited Companies because they offer robust limited liability, a separate legal identity, clean mechanisms for issuing convertible preference shares, and the ability to easily allocate ESOPs.",
+            "module": 8
+        },
+        {
+            "question_id": "92",
+            "question_text": "What is a major limitation of proprietorships and traditional partnerships?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Limited market access",
+                "B": "High incorporation costs",
+                "C": "Unlimited personal liability for business debts",
+                "D": "Inability to hire employees"
+            },
+            "correct_option_label": "C",
+            "explanation": "The primary drawback of proprietorships and traditional partnerships is the complete lack of separation between the business entity and the owners, exposing founders to unlimited personal liability if the business accrues excessive debt.",
+            "module": 8
+        },
+        {
+            "question_id": "93",
+            "question_text": "How does venture capital differ from traditional debt financing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Venture capital requires collateral and fixed repayments",
+                "B": "Venture capital investors take equity ownership in the company",
+                "C": "Debt financing gives investors ownership rights",
+                "D": "Venture capital is only available to large corporations"
+            },
+            "correct_option_label": "B",
+            "explanation": "Unlike debt which demands fixed periodic repayments regardless of cash flow, Venture Capital provides 'patient' capital by taking minority equity ownership, sharing symmetrically in the venture's risk and eventual rewards without mandating immediate returns.",
+            "module": 8
+        },
+        {
+            "question_id": "94",
+            "question_text": "What is typically the main focus of Series B and later-stage funding rounds?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Building a minimum viable product",
+                "B": "Testing business ideas with friends and family",
+                "C": "Scaling operations and expanding into new markets",
+                "D": "Registering the company structure"
+            },
+            "correct_option_label": "C",
+            "explanation": "While seed rounds fund proof of concept, Series B and later-stage 'Growth Equity' rounds are utilized strictly for aggressively scaling unit economics, increasing market share, and expanding operations into new international geographies.",
+            "module": 8
+        },
+        {
+            "question_id": "95",
+            "question_text": "What is the primary role of a term sheet in venture capital funding?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It guarantees immediate funding",
+                "B": "It acts as a non-binding framework for the proposed investment",
+                "C": "It replaces all legal agreements",
+                "D": "It transfers ownership immediately"
+            },
+            "correct_option_label": "B",
+            "explanation": "A Term Sheet serves as the preliminary, mostly non-binding letter of intent that maps out core commercial parameters (valuation, control rights) to ensure base alignment before expensive legal due diligence begins.",
+            "module": 8
+        },
+        {
+            "question_id": "96",
+            "question_text": "Why is intellectual property reviewed during due diligence?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To increase marketing efforts",
+                "B": "To verify that the company legally owns its claimed IP",
+                "C": "To reduce taxation liabilities",
+                "D": "To appoint new directors"
+            },
+            "correct_option_label": "B",
+            "explanation": "Investors must verify that the startup completely and legally owns its core software code and patents, checking that IP was properly assigned from the founding team to the corporate entity to avoid future legal disputes.",
+            "module": 8
+        },
+        {
+            "question_id": "97",
+            "question_text": "What is the primary purpose of a Shareholders’ Agreement (SHA)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To determine product pricing",
+                "B": "To govern rights, responsibilities, and relationships among shareholders",
+                "C": "To calculate company taxes",
+                "D": "To appoint employees"
+            },
+            "correct_option_label": "B",
+            "explanation": "The SHA is the definitive legal rulebook dictating exactly how the company is governed, formalizing board representation, anti-dilution protections, and mapping the complex relationships between incoming investors and existing founders.",
+            "module": 8
+        },
+        {
+            "question_id": "98",
+            "question_text": "What is the purpose of a drag-along right?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To prevent investors from selling shares",
+                "B": "To allow shareholders to match market prices",
+                "C": "To enable a shareholder to force others to sell shares in a transaction",
+                "D": "To guarantee dividends for founders"
+            },
+            "correct_option_label": "C",
+            "explanation": "A Drag-Along right is an extreme exit protection mechanism. It allows majority investors to forcefully compel minority shareholders (like founders) to sell their equity stakes to ensure a strategic acquirer can buy 100% of the firm.",
+            "module": 8
+        },
+        {
+            "question_id": "99",
+            "question_text": "Why are payment terms important in a contract?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They define employee roles",
+                "B": "They help maintain predictable cash flow and avoid delayed payments",
+                "C": "They determine company valuation",
+                "D": "They replace confidentiality clauses"
+            },
+            "correct_option_label": "B",
+            "explanation": "Strictly defined payment terms (such as net-30 or net-45 days) and corresponding dispute resolution mechanisms in commercial contracts are absolutely critical for startups to manage working capital cycles and maintain predictable operational cash flows.",
+            "module": 8
+        },
+        {
+            "question_id": "100",
+            "question_text": "Why are IP assignment clauses important in employment contracts?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They increase employee salaries",
+                "B": "They ensure the company owns work created by employees or contractors",
+                "C": "They replace confidentiality agreements",
+                "D": "They reduce taxation liabilities"
+            },
+            "correct_option_label": "B",
+            "explanation": "Under the Copyright Act, the creator initially owns their work. IP assignment clauses are legally necessary to explicitly transfer the ownership of code or content created by employees to the corporate entity.",
+            "module": 8
+        },
+        {
+            "question_id": "101",
+            "question_text": "Why is labor compliance important for startups?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It only helps reduce taxes",
+                "B": "It builds institutional quality and reduces legal risks",
+                "C": "It eliminates the need for contracts",
+                "D": "It replaces intellectual property protection"
+            },
+            "correct_option_label": "B",
+            "explanation": "Startups must adhere to acts like POSH and PF to avoid compounding legal penalties. High compliance hygiene builds institutional quality, preventing major red flags during investor due diligence which could delay or kill a deal.",
+            "module": 8
+        },
+        {
+            "question_id": "102",
+            "question_text": "What are reserved matters in a shareholders’ agreement?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Routine operational decisions",
+                "B": "Decisions requiring approval from specific shareholders or investors",
+                "C": "Employee management policies",
+                "D": "Marketing strategies only"
+            },
+            "correct_option_label": "B",
+            "explanation": "Reserved matters (or Affirmative Covenants) are a list of critical structural changes (e.g., raising debt, selling assets, altering board composition) that legally cannot be executed without the positive, explicit consent of the investor.",
+            "module": 8
+        },
+        {
+            "question_id": "103",
+            "question_text": "What is the purpose of a pre-emptive right?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To allow investors to control daily operations",
+                "B": "To increase company valuation automatically",
+                "C": "To eliminate liquidation risk",
+                "D": "To help shareholders maintain their ownership percentage during new share issuances"
+            },
+            "correct_option_label": "D",
+            "explanation": "Pre-emptive rights grant early investors the pro-rata capability to subscribe to new equity shares generated in future funding rounds, allowing them to defend their ownership percentage against severe dilution.",
+            "module": 8
+        }
+    ]
+}

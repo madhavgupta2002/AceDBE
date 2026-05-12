@@ -1,0 +1,500 @@
+{
+    "exam_metadata": {
+        "subject_name": "Digital Design Tools and Documentation & Presentation",
+        "exam_date": "Batch 1",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "M1_Q1",
+            "question_text": "Which principle of design primarily controls the order in which a viewer reads information?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Balance",
+                "B": "Hierarchy",
+                "C": "Repetition",
+                "D": "Proximity"
+            },
+            "correct_option_label": "B",
+            "explanation": "Hierarchy dictates the intended reading sequence of a design layout. It acts as a guide for the viewer's eye, deliberately directing attention using variations in scale, visual weight, and placement.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q2",
+            "question_text": "A layout where visual weight is evenly distributed on both sides of an axis is called",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Asymmetrical balance",
+                "B": "Radial balance",
+                "C": "Symmetrical balance",
+                "D": "Dynamic balance"
+            },
+            "correct_option_label": "C",
+            "explanation": "Symmetrical balance occurs when visual weight is distributed equally on both sides of a central axis. This type of equilibrium creates a layout that feels formal, stable, and calm.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q3",
+            "question_text": "Using the same headline font across all slides to create familiarity is an example of which principle?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Contrast",
+                "B": "Proximity",
+                "C": "Scale",
+                "D": "Repetition"
+            },
+            "correct_option_label": "D",
+            "explanation": "Repetition involves the deliberate reuse of visual tokens, such as fonts, colors, or layout structures. This builds predictability, familiarity, and a cohesive visual language throughout a presentation.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q4",
+            "question_text": "Which of these is a sign of poor typographic hierarchy on a slide?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "One clear headline, smaller subhead, readable body text",
+                "B": "Consistent line length and spacing",
+                "C": "Distinct weight differences between headline and body",
+                "D": "Multiple competing headline sizes on the same slide"
+            },
+            "correct_option_label": "D",
+            "explanation": "Multiple competing headline sizes create conflicting focal points, leading to cognitive overload. Good hierarchy requires clear, distinct differences in size and weight to seamlessly guide the reading path.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q5",
+            "question_text": "Placing related items close together and unrelated items farther apart uses which principle?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Alignment",
+                "B": "Proximity",
+                "C": "Contrast",
+                "D": "Rhythm"
+            },
+            "correct_option_label": "B",
+            "explanation": "Proximity is a Gestalt principle where items placed physically close together are naturally perceived by the brain as related or part of a single unit, helping to establish organization and hierarchy without adding visual noise.",
+            "module": 1
+        },
+        {
+            "question_id": "M2_Q1",
+            "question_text": "Which of the following best describes the \"Empathy Gap\" in design?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The physical distance between the designer and the user.",
+                "B": "The difference between a communicator’s intent and a receiver’s reality.",
+                "C": "The lack of emotional connection between team members.",
+                "D": "The time delay between research and the final design."
+            },
+            "correct_option_label": "B",
+            "explanation": "The empathy gap highlights the cognitive disconnect between what a designer intends to communicate (Concept A) and how the audience actually perceives it in their reality (Concept B).",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q2",
+            "question_text": "What is the primary goal of \"Contextual Inquiry\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To interview users in a controlled laboratory setting.",
+                "B": "To know users in their natural context rather than an imagined one.",
+                "C": "To ask users to predict their future behavior.",
+                "D": "To gather demographic data like age and gender."
+            },
+            "correct_option_label": "B",
+            "explanation": "Contextual inquiry involves observing and understanding users within their actual, everyday environment. This gathers raw, authentic data to supercharge cognitive empathy and inform accurate user personas.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q3",
+            "question_text": "In an Empathy Map, which quadrant analyzes what the user is thinking but perhaps not saying?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Says",
+                "B": "Thinks",
+                "C": "Does",
+                "D": "Feels"
+            },
+            "correct_option_label": "B",
+            "explanation": "The \"Thinks\" quadrant of an Empathy Map is dedicated to capturing the user's internal thoughts, assumptions, and underlying beliefs, which they might not explicitly vocalize in the \"Says\" quadrant.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q4",
+            "question_text": "Cognitive Load is often compared to which part of a computer?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The Hard Drive",
+                "B": "The RAM (Mental Bandwidth)",
+                "C": "The Graphics Card",
+                "D": "The Motherboard"
+            },
+            "correct_option_label": "B",
+            "explanation": "Cognitive load acts like a computer's RAM. It represents the limited \"mental bandwidth\" or working memory the human brain has available to process and hold information at any given time.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q5",
+            "question_text": "Cognitive Load is often compared to which part of a computer?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The Hard Drive",
+                "B": "The RAM (Mental Bandwidth)",
+                "C": "The Graphics Card",
+                "D": "The Motherboard"
+            },
+            "correct_option_label": "B",
+            "explanation": "Cognitive load acts like a computer's RAM. It represents the limited \"mental bandwidth\" or working memory the human brain has available to process and hold information at any given time.",
+            "module": 2
+        },
+        {
+            "question_id": "M3_Q1",
+            "question_text": "What is the primary purpose of a brand’s verbal identity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Define logo usage",
+                "B": "Specify color hex codes",
+                "C": "Guide voice and tone in communication",
+                "D": "Set image resolution standards"
+            },
+            "correct_option_label": "C",
+            "explanation": "Verbal identity ensures a brand speaks with a coherent, consistent voice across all touchpoints. It uses standardized guidelines (like tone charts and microcopy libraries) to turn language into a strategic lever.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q2",
+            "question_text": "Which item is part of a visual identity system?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Tone of voice chart",
+                "B": "Logo lockup and color palette",
+                "C": "Customer service scripts",
+                "D": "Pricing tiers"
+            },
+            "correct_option_label": "B",
+            "explanation": "A visual identity system comprises the visible, aesthetic layers of a brand. This fundamentally includes components such as logo lockups, color palettes, typography, and imagery guidelines.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q3",
+            "question_text": "Which item is part of a visual identity system?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Tone of voice chart",
+                "B": "Logo lockup and color palette",
+                "C": "Customer service scripts",
+                "D": "Pricing tiers"
+            },
+            "correct_option_label": "B",
+            "explanation": "A visual identity system comprises the visible, aesthetic layers of a brand. This fundamentally includes components such as logo lockups, color palettes, typography, and imagery guidelines.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q4",
+            "question_text": "Which element is most essential in the strategic brief to ensure a brand artifact meets stakeholder expectations?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Preferred file format for final deliverables",
+                "B": "Clear business objective and success metrics",
+                "C": "A long list of optional color variations",
+                "D": "The designer’s personal style preferences"
+            },
+            "correct_option_label": "B",
+            "explanation": "A strategic brief acts as the design's North Star, moving it beyond subjective taste. Defining a clear business objective (Decision Sentence) and success metrics is crucial for evaluating if the final artifact fulfills stakeholder goals.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q5",
+            "question_text": "Which practice best preserves typography discipline?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Using many decorative fonts for variety",
+                "B": "Defining and using a limited set of approved fonts, sizes, and weights",
+                "C": "Letting each slide designer choose fonts freely",
+                "D": "Using only uppercase text everywhere"
+            },
+            "correct_option_label": "B",
+            "explanation": "Typography discipline relies heavily on strict constraints. Defining and adhering to a limited set of 2-3 approved fonts, standard sizes, and weights ensures visual hierarchy is maintained and cognitive load is reduced.",
+            "module": 3
+        },
+        {
+            "question_id": "M4_Q1",
+            "question_text": "According to the \"Narrative Arc,\" how should a presentation begin?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "With a detailed list of data points",
+                "B": "By establishing the \"Status Quo\" to build relatability",
+                "C": "With the final solution",
+                "D": "By introducing the speaker’s credentials"
+            },
+            "correct_option_label": "B",
+            "explanation": "A strong narrative arc begins by establishing the \"Status Quo\"—the current reality or context. This grounds the audience and builds relatability before introducing the central conflict or problem demanding a change.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q2",
+            "question_text": "What is the \"Big Idea\" of a presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The longest slide in the deck",
+                "B": "A complex technical explanation",
+                "C": "A clear, punchy sentence that summarizes the core message",
+                "D": "The final \"Thank You\" slide"
+            },
+            "correct_option_label": "C",
+            "explanation": "The \"Big Idea\" serves as the presentation's strategic North Star. It is a single, clear, punchy sentence summarizing the core message, which every single slide must support or illustrate.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q3",
+            "question_text": "In the \"Hero’s Journey\" framework for slides, who is the protagonist?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The Presenter",
+                "B": "The Product/Service",
+                "C": "The Audience",
+                "D": "The CEO"
+            },
+            "correct_option_label": "C",
+            "explanation": "In an effective presentation utilizing the Hero's Journey framework, the audience is positioned as the protagonist. The idea or product is merely positioned as a tool that aids the audience in their success.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q4",
+            "question_text": "What is the purpose of \"Conflict and Resolution\" in a slide deck?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To create an argument with the audience",
+                "B": "To create \"presentation resonance\" by showing the gap between \"What Is\" and \"What Could Be\"",
+                "C": "To highlight the faults of competitors",
+                "D": "To make the presentation longer"
+            },
+            "correct_option_label": "B",
+            "explanation": "Toggling between the flawed \"What Is\" (conflict) and the improved \"What Could Be\" (resolution) creates cognitive tension and \"presentation resonance.\" This dynamic keeps the audience emotionally engaged and desiring the proposed change.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q5",
+            "question_text": "How does \"Human-Centric Data\" improve a presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "By using as many spreadsheets as possible",
+                "B": "By replacing numbers with abstract art",
+                "C": "By attaching a human face or lived experience to abstract statistics",
+                "D": "By focusing only on the speaker's personal life"
+            },
+            "correct_option_label": "C",
+            "explanation": "While raw numbers provide scale, they can be difficult to internalize. Attaching a human face or tangible lived experience to abstract statistics provides relatable meaning and increases the emotional impact of the data.",
+            "module": 4
+        },
+        {
+            "question_id": "M5_Q1",
+            "question_text": "Which slide element in Google Slides should you edit to change a layout across all slides at once?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Individual slide background",
+                "B": "Master slide (Slide Master)",
+                "C": "Notes pane",
+                "D": "Speaker notes"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Master Slide (or Theme Builder) controls the backend architecture of a deck. Any adjustments made here—such as changing fonts, layout structures, or background colors—are automatically propagated across every slide.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q2",
+            "question_text": "Which slide element in Google Slides should you edit to change a layout across all slides at once?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Individual slide background",
+                "B": "Master slide (Slide Master)",
+                "C": "Notes pane",
+                "D": "Speaker notes"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Master Slide (or Theme Builder) controls the backend architecture of a deck. Any adjustments made here—such as changing fonts, layout structures, or background colors—are automatically propagated across every slide.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q3",
+            "question_text": "Which Google Slides feature helps maintain consistent spacing and alignment across objects?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Insert > Chart",
+                "B": "File > Version history",
+                "C": "Arrange > Align and Distribute",
+                "D": "View > Speaker notes"
+            },
+            "correct_option_label": "C",
+            "explanation": "The \"Align\" and \"Distribute\" tools located in the Arrange menu are essential for snapping multiple objects into perfect alignment and ensuring equal spatial distribution, which establishes a clean visual hierarchy.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q4",
+            "question_text": "What is the recommended way to include a logo on many slides without manually adding it each time?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Paste it on every slide individually",
+                "B": "Add it to the master slide or footer component",
+                "C": "Type the brand name as text on each slide",
+                "D": "Use a watermark image on one slide only"
+            },
+            "correct_option_label": "B",
+            "explanation": "Embedding a brand logo directly into the Master Slide layout ensures precise, standardized placement on every single slide while preventing accidental deletions or shifts during individual slide editing.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q5",
+            "question_text": "Which verbal identity tool helps keep tone consistent across product descriptions and social posts?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Tone chart with examples and do/don’t lists",
+                "B": "Color palette sheet",
+                "C": "Grid system for layouts",
+                "D": "Icon library"
+            },
+            "correct_option_label": "A",
+            "explanation": "A tone chart utilizing concrete \"do/don't\" phrasing examples acts as an easily teachable guardrail. It aligns different writers to maintain the same brand voice across varied deliverables.",
+            "module": 3
+        },
+        {
+            "question_id": "M6_Q1",
+            "question_text": "According to Allan Paivio’s Dual-Coding Theory, what are the two subsystems the brain uses to process information?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Logical and Emotional",
+                "B": "Verbal and Non-verbal",
+                "C": "Auditory and Sensory",
+                "D": "Conscious and Subconscious"
+            },
+            "correct_option_label": "B",
+            "explanation": "Allan Paivio’s Dual Coding Theory states that the human brain efficiently processes information simultaneously via two distinct pathways: the verbal channel (text and speech) and the non-verbal channel (images and visuals).",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q2",
+            "question_text": "What is the primary benefit of syncing a bullet point with a relevant animation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It reduces the file size of the presentation.",
+                "B": "It eliminates the need for a presenter.",
+                "C": "It creates two separate cognitive paths to the same memory.",
+                "D": "It prevents the audience from taking notes."
+            },
+            "correct_option_label": "C",
+            "explanation": "Syncing a visual animation exactly with verbal delivery (temporal contiguity) leverages the Dual Coding Theory, effectively creating two separate but synchronized cognitive paths that strengthen memory retention.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q3",
+            "question_text": "What is the \"Seductive Detail Effect\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Using high-quality images to improve professionalism.",
+                "B": "Adding high-intensity media that distracts from core data.",
+                "C": "The use of \"Ease-in\" and \"Ease-out\" functions.",
+                "D": "Creating a brand essence through color palettes."
+            },
+            "correct_option_label": "B",
+            "explanation": "The Seductive Detail Effect is a cognitive danger where overly flashy or high-intensity visuals (the \"glitter\") overwhelm the brain, causing the audience to focus entirely on the media while completely missing the core strategic data.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q4",
+            "question_text": "According to Richard Mayer’s Redundancy Principle, why should you avoid having on-screen text that exactly matches your narration?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is a violation of copyright.",
+                "B": "It makes the presentation move too slowly.",
+                "C": "It \"jams\" the verbal processor and causes cognitive overload.",
+                "D": "It violates Disney’s 12 Principles."
+            },
+            "correct_option_label": "C",
+            "explanation": "The Redundancy Principle explains that simultaneously reading on-screen text while hearing the exact same narration forces the brain to process identical information twice through the verbal channel, jamming it and causing cognitive overload.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q5",
+            "question_text": "What does the \"Segmenting Principle\" suggest regarding video use?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Videos should always be at least 10 minutes long.",
+                "B": "Information should be presented in one continuous stream.",
+                "C": "Videos should be broken into short, learner-paced segments.",
+                "D": "Videos must always include background music."
+            },
+            "correct_option_label": "C",
+            "explanation": "Because passive attention drops rapidly after 3 to 6 minutes, the Segmenting Principle requires that heavy video content be segmented into short (30-60 second) clips punctuated by pauses to allow information to transfer to long-term memory.",
+            "module": 6
+        },
+        {
+            "question_id": "M7_Q1",
+            "question_text": "What should always accompany a design before critique",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Final visuals only",
+                "B": "One-line objective and brief",
+                "C": "Multiple color options",
+                "D": "A long biography"
+            },
+            "correct_option_label": "B",
+            "explanation": "Critiquing in a \"context vacuum\" results in subjective, conflicting feedback. Providing the strategic brief and a one-line objective upfront ensures all reviews are measured against strategic intent rather than personal taste.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q2",
+            "question_text": "Which review stage should focus on messaging and structure",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Final review",
+                "B": "Draft review",
+                "C": "Concept review",
+                "D": "Production audit"
+            },
+            "correct_option_label": "C",
+            "explanation": "Structural architecture and core messaging must be solidified during the early Concept Review stage. Delaying fundamental feedback until the final or production stages results in massive, costly rework.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q3",
+            "question_text": "What is the main risk of solutionizing during a critique",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Faster approvals",
+                "B": "Breaking visual hierarchy or governance",
+                "C": "More stakeholder buy-in",
+                "D": "Better accessibility"
+            },
+            "correct_option_label": "B",
+            "explanation": "Solutionizing—attempting to fix a design live in the room—bypasses careful constraints and data evidence, frequently resulting in hasty compromises that break established visual hierarchy and brand governance.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q4",
+            "question_text": "Which facilitation tool captures off-topic ideas without derailing the meeting",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Immediate redesign",
+                "B": "Parking lot",
+                "C": "Open mic",
+                "D": "Free editing"
+            },
+            "correct_option_label": "B",
+            "explanation": "A \"Parking Lot\" is an essential meeting tool that acknowledges and records complex or off-topic ideas, safely setting them aside so they do not derail the immediate timeboxed agenda.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q5",
+            "question_text": "How should subjective feedback like “I don’t like it” be handled",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Implement immediately",
+                "B": "Ignore it",
+                "C": "Translate into observation, impact, suggestion",
+                "D": "Ask for a new designer"
+            },
+            "correct_option_label": "C",
+            "explanation": "Vague or subjective reactions must be objectively reframed using the 3-part rule (Observation -> Impact -> Suggestion). This extracts the root cause of the emotional reaction and ties it back to a tangible design element to fix.",
+            "module": 7
+        }
+    ]
+}
