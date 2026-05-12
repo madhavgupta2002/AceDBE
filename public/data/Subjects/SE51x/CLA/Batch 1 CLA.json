@@ -1,0 +1,290 @@
+{
+    "exam_metadata": {
+        "subject_name": "Digital Design Tools and Documentation & Presentation",
+        "exam_date": "",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "CLA1_Q1",
+            "question_text": "Which practice improves accessibility for viewers with low vision?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Using low-contrast text on busy backgrounds",
+                "B": "Small body text to fit more content",
+                "C": "High contrast between text and background",
+                "D": "Decorative fonts for body copy"
+            },
+            "correct_option_label": "C",
+            "explanation": "High contrast between text and the background is crucial for accessibility, ensuring that visually impaired users or those with low vision can clearly read the content without relying solely on color.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q2",
+            "question_text": "A “limited palette” strategy means",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Using only black and white",
+                "B": "Using every color in the brand book on each slide",
+                "C": "Changing colors slide to slide for variety",
+                "D": "Choosing a small set of colors and using them consistently"
+            },
+            "correct_option_label": "D",
+            "explanation": "A limited palette strategy involves restricting design to a core set of functional colors (typically 3: Background, Primary, Accent) and using them consistently to maintain visual harmony and reduce cognitive load.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q3",
+            "question_text": "Which of the following best describes visual contrast?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Difference between elements that makes them stand out from each other",
+                "B": "Repeating the same element across a layout",
+                "C": "Grouping similar items together",
+                "D": "Aligning elements to a grid"
+            },
+            "correct_option_label": "A",
+            "explanation": "Visual contrast is the principle of highlighting the differences between elements (such as through color, value, size, or weight) to separate the foreground from the background and create clarity.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q4",
+            "question_text": "Which layout choice most likely causes cognitive overload for an audience?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "One idea per slide with clear visuals",
+                "B": "Dense slides with multiple charts, long paragraphs, and many colors",
+                "C": "A single, high-impact image with a short headline",
+                "D": "A simple bulleted list of three items"
+            },
+            "correct_option_label": "B",
+            "explanation": "Dense slides packed with multiple focal points, excessive text, and too many colors drastically increase \"noise effort\" and cognitive load, overwhelming the brain's working memory.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q5",
+            "question_text": "Which is the best reason to use a grid system in slide design?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To make slides look identical to competitors",
+                "B": "To force more content onto each slide",
+                "C": "To avoid using images",
+                "D": "To ensure consistent alignment and spacing across slides"
+            },
+            "correct_option_label": "D",
+            "explanation": "Grid systems act as invisible scaffolds that organize the layout. They ensure consistent alignment, reduce visual friction, and help predictably guide the viewer's reading path.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA2_Q1",
+            "question_text": "Which \"Power Tool\" of microcopy is a psychological trigger that clarifies intent and drives action?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Passive Verbs",
+                "B": "Adjectives",
+                "C": "Active Verbs",
+                "D": "Nouns"
+            },
+            "correct_option_label": "C",
+            "explanation": "Active verbs (e.g., \"Download\", \"Explore\") are precise, action-driven words that clarify exactly what step the user should take next, effectively reducing choice friction.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q2",
+            "question_text": "In the context of content, \"Friction\" is described as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The \"gravity\" that slows an audience down or causes doubt.",
+                "B": "The excitement generated by a strong call to action.",
+                "C": "The physical texture of the paper used for prototyping.",
+                "D": "The disagreement between designers."
+            },
+            "correct_option_label": "A",
+            "explanation": "Friction acts as psychological \"gravity\" or resistance. It includes anything that slows the audience down, causes cognitive load, creates doubt, or prevents them from taking action.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q3",
+            "question_text": "Which test requires a user to look at a design for a very short time and explain what it is about?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The Blur Test",
+                "B": "The 5-Second Rule",
+                "C": "The Cloze Test",
+                "D": "The A/B Test"
+            },
+            "correct_option_label": "B",
+            "explanation": "The 5-Second Rule is a practical clarity test where a design is shown for exactly 5 seconds. The viewer must then state the main takeaway, proving whether the core message is immediately impactful.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q4",
+            "question_text": "What is the primary purpose of the \"Blur Test\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To test content comprehension.",
+                "B": "To evaluate visual hierarchy and layout structure.",
+                "C": "To see if the colors are aesthetically pleasing.",
+                "D": "To measure the reading speed of the user."
+            },
+            "correct_option_label": "B",
+            "explanation": "The Blur Test involves squinting or blurring a design until text becomes illegible. This strips away detailed content, allowing the designer to objectively evaluate if the visual hierarchy and layout groupings are effective.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q5",
+            "question_text": "The \"Cloze Test\" measures content clarity by asking participants to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rank the design on a scale of 1 to 10.",
+                "B": "Fill in the blanks in a passage.",
+                "C": "Click on a button as fast as they can.",
+                "D": "Draw the layout from memory."
+            },
+            "correct_option_label": "B",
+            "explanation": "The Cloze Test measures text comprehension by removing every 5th or 6th word from a document and asking users to fill in the blanks, checking if the context and copy are clear enough to guess the missing parts.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA3_Q1",
+            "question_text": "Which guideline helps maintain verbal identity across teams?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A color token sheet",
+                "B": "A grid system for layouts",
+                "C": "A list of approved icons",
+                "D": "A tone chart with examples and do/don't language"
+            },
+            "correct_option_label": "D",
+            "explanation": "Verbal identity is maintained using standardized voice guidelines, such as a tone chart with specific \"Voice Dos and Don'ts\" that pair on-brand examples with off-brand rewrites to standardize language choices.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q2",
+            "question_text": "Which is a sign of weak brand governance in artifacts?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Consistent logo placement and locked tokens",
+                "B": "Shared component libraries with locked tokens",
+                "C": "Random logo sizes, multiple palettes, and mixed typefaces",
+                "D": "Documented brand guidelines"
+            },
+            "correct_option_label": "C",
+            "explanation": "Weak brand governance results in a patchwork of inconsistent designs. Random sizing, mixed typefaces, and unstandardized palettes show that teams are not adhering to unified brand foundations.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q3",
+            "question_text": "What role do shared component libraries play in collaborative design?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They increase file size without benefit",
+                "B": "They force each designer to recreate components",
+                "C": "They centralize reusable components and lock tokens for consistency",
+                "D": "They remove the need for brand guidelines"
+            },
+            "correct_option_label": "C",
+            "explanation": "Shared component libraries act as efficiency multipliers by centralizing reusable, pre-approved blocks (like metric cards) and locking tokens, allowing teams to quickly produce consistent and high-quality artifacts.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q4",
+            "question_text": "Which visual choice undermines credibility for a legal or financial brand?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Neon colors and playful display fonts",
+                "B": "Clean sans-serif typography and neutral palette",
+                "C": "Conservative imagery and clear hierarchy",
+                "D": "Consistent footer with logo and tokens"
+            },
+            "correct_option_label": "A",
+            "explanation": "Legal and financial brands must convey trust, stability, and professionalism. Neon colors and playful fonts project an overly energetic or chaotic personality that contradicts these essential values.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q5",
+            "question_text": "What is the best way to show brand hierarchy on a slide for a sub-brand and master brand?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Place both logos at random locations",
+                "B": "Hide the master brand entirely",
+                "C": "Use master brand tokens everywhere and ignore sub-brand identity",
+                "D": "Use a two-tier layout: sub-brand primary area and reserved endorsement zone for master tokens"
+            },
+            "correct_option_label": "D",
+            "explanation": "In an \"Endorsed\" brand architecture model, a two-tier hierarchy is used. The primary visual space belongs to the sub-brand, while a standardized reserved zone acts as the master brand's formal endorsement.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA4_Q1",
+            "question_text": "What is the primary question of the \"So What?\" Test?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "How much did this presentation cost?",
+                "B": "Why should the audience care?",
+                "C": "Is the font large enough?",
+                "D": "Does the presenter look professional?"
+            },
+            "correct_option_label": "B",
+            "explanation": "The \"So What?\" test ensures that data and information provide explicit value. It asks \"Why should the audience care?\" to guarantee the content solves a problem or offers a clear benefit to the viewer.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q2",
+            "question_text": "Why should presenters use Analogies and Metaphors?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To make the presentation sound more poetic",
+                "B": "To fill up space on a slide",
+                "C": "To avoid using any real data",
+                "D": "To act as cognitive bridges for complex or abstract data"
+            },
+            "correct_option_label": "D",
+            "explanation": "Analogies and metaphors simplify abstract data by connecting it to familiar mental models. This makes them powerful \"cognitive bridges\" that speed up audience comprehension.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q3",
+            "question_text": "According to the \"Blink Rule,\" how quickly should a slide be understood?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Under 3 seconds",
+                "B": "30 seconds",
+                "C": "1 minute",
+                "D": "5 minutes"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Blink Rule dictates that a slide must act as a quick visual support rather than a script, meaning it needs to be processed and understood in just a few seconds (under 3 seconds).",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q4",
+            "question_text": "What is an \"Emotional Anchor\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A heavy piece of equipment",
+                "B": "A hook like a shocking statistic or \"what if\" question to create a connection",
+                "C": "A long list of technical specifications",
+                "D": "The footer of a slide"
+            },
+            "correct_option_label": "B",
+            "explanation": "An emotional anchor is a hook used in the first 60 seconds (such as a shocking statistic or vulnerable question) to trigger curiosity and empathy, emotionally investing the audience before logic/data is presented.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q5",
+            "question_text": "Instead of ending with \"Thank You,\" what does the module suggest using?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A \"Call to Adventure\" with a specific, immediate task",
+                "B": "A list of references",
+                "C": "A repeat of the first slide",
+                "D": "An invitation to a coffee break"
+            },
+            "correct_option_label": "A",
+            "explanation": "Ending with a generic \"Thank You\" is a wasted opportunity. Presentations should conclude with a \"Call to Adventure\" that provides specific, immediate behavioral changes or tasks to convert the audience's engagement into action.",
+            "module": 4
+        }
+    ]
+}

@@ -1,0 +1,850 @@
+{
+    "exam_metadata": {
+        "subject_name": "New Product Development",
+        "exam_date": "Batch 1",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "Which product category is characterised by low development costs but may lead to a lack of competitiveness in the long run?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Breakthough products",
+                "B": "Platform products",
+                "C": "Support products",
+                "D": "Radical Innovations"
+            },
+            "correct_option_label": "C",
+            "explanation": "Support products have minimal technological change and provide immediate, short-term cash flow. However, relying solely on them destroys long-term competitiveness.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Which category involves the \"next generation\" or next level of change in technology?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Support products",
+                "B": "Platform products",
+                "C": "Derivative products",
+                "D": "Breakthrough products"
+            },
+            "correct_option_label": "B",
+            "explanation": "Platform products establish a next-generation base for future derivatives and offer entirely new benefits over previous iterations.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "What is the consequences of discovering the need for a new distribution channel at a late stage of development?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It leads to longer negotiations and can derail the project",
+                "B": "It reduces the overall cost of the product",
+                "C": "It speeds up the negotiation process",
+                "D": "It has no impact on the project timeline"
+            },
+            "correct_option_label": "A",
+            "explanation": "Late-stage changes in product development, including operational shifts like distribution, incur exponentially higher costs and can significantly delay or derail the project.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "When a product faces \"product-level competition,\" what must be adjusted specifically for the product?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The company's entire mission statemet",
+                "B": "The employee benefits package",
+                "C": "The company's legal name",
+                "D": "Pricing the positioning relative to specific rival products"
+            },
+            "correct_option_label": "D",
+            "explanation": "Product-level competition requires strategic adjustments specific to the product itself, such as fine-tuning its pricing and market positioning against direct rivals.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "What are the two factors that merge to lead to product choices at the start of the funnel?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Employee count and board size",
+                "B": "Customer needs and technology feasibility",
+                "C": "Weather patterns and stock prices",
+                "D": "Previous sales and current debt"
+            },
+            "correct_option_label": "B",
+            "explanation": "The product funnel visually represents the pipeline that merges unmet customer needs with technological feasibility to generate actionable ideas.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "What happen if the starting point of the product funnel is \"too narrow\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The company will save money on research",
+                "B": "The company will be limited in its choice and unable to make optimal decisions",
+                "C": "The product will be released much faster",
+                "D": "The quality of the final products will increase automatically"
+            },
+            "correct_option_label": "B",
+            "explanation": "A funnel that is too narrow restricts the pool of ideas early on, increasing the risk of missing out on highly viable and innovative product opportunities.",
+            "module": 1
+        },
+        {
+            "question_id": "7",
+            "question_text": "What is essential requirement for the effective management of stage gates?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Hiring external security for the gates",
+                "B": "Keeping the criteria for advancement secret",
+                "C": "Communication of the process to all employees",
+                "D": "Eliminatingn the budget for new ideas"
+            },
+            "correct_option_label": "C",
+            "explanation": "Effective stage-gate management requires defining objective criteria and maintaining transparent assessment processes that are clearly communicated to all employees.",
+            "module": 1
+        },
+        {
+            "question_id": "8",
+            "question_text": "Stage gate evaluation teams should ideally be:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Made up of only marketing specialists",
+                "B": "Outsourced to a different country",
+                "C": "Only members of the finance department",
+                "D": "Cross-functional teams"
+            },
+            "correct_option_label": "D",
+            "explanation": "Stage gates require dedicated cross-functional evaluation teams to properly assess strategic, technical, marketing, and financial feasibility.",
+            "module": 1
+        },
+        {
+            "question_id": "9",
+            "question_text": "What is major disadvantage of allowing late-stage flexibility in product development",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It increases costs significantly",
+                "B": "It makes the product too simple",
+                "C": "It reduces the number of features",
+                "D": "It speeds up the manufacturing process"
+            },
+            "correct_option_label": "A",
+            "explanation": "While flexibility is needed, late-stage alterations or added features sharply increase costs exponentially (often 10x-100x) compared to early design changes.",
+            "module": 1
+        },
+        {
+            "question_id": "10",
+            "question_text": "What happened to Proctor and Gamble's first attempt at a cosmetics line?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It was instant global success",
+                "B": "It intially failed because they used the wrong framework",
+                "C": "They decided to stop making detergent instead",
+                "D": "The product was never released"
+            },
+            "correct_option_label": "B",
+            "explanation": "New product lines face inherent risks when entering existing markets if the firm’s existing frameworks and core competencies do not align properly with the new category.",
+            "module": 1
+        },
+        {
+            "question_id": "11",
+            "question_text": "In Maruti example, why did the company decide to launch an EV?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because they ran out of gas",
+                "B": "Because employees wanted new cars",
+                "C": "To stay competitive against rivals like Tata and Mahindra",
+                "D": "To increase the cost of their other cars"
+            },
+            "correct_option_label": "C",
+            "explanation": "Sustained competitive advantage requires launching new product lines (like EVs) to counter rivals from replicating previous advantages and taking market share.",
+            "module": 1
+        },
+        {
+            "question_id": "12",
+            "question_text": "New Product Development (NPD) integrates foundations from strategy, design, and:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Marketing and Operations",
+                "B": "Gardening and Cooking",
+                "C": "Politics and Religion",
+                "D": "History and Literature"
+            },
+            "correct_option_label": "A",
+            "explanation": "A structured approach to NPD links multiple disciplines systematically, primarily Strategy, Design, Marketing, and Operations.",
+            "module": 1
+        },
+        {
+            "question_id": "13",
+            "question_text": "The role of a Product Manager is best described as a:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "General management role",
+                "B": "Junior entry-level position",
+                "C": "Specialist functional role",
+                "D": "Role with no responsibility for success"
+            },
+            "correct_option_label": "A",
+            "explanation": "Product management is a general management role that requires cross-functional oversight across marketing, finance, ops, and strategy, rather than just being a specialist function.",
+            "module": 1
+        },
+        {
+            "question_id": "14",
+            "question_text": "Why must companies like Apple release new versions of the iPhone every year?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because the old ones stop working",
+                "B": "To stay ahead of competitors who would otherwise kill their advantage",
+                "C": "To reduce the number of features available",
+                "D": "Because the government requires it"
+            },
+            "correct_option_label": "B",
+            "explanation": "Rivals constantly replicate technological advantages. Consistent new product introductions are necessary to prevent market stagnation and maintain a sustained competitive advantage.",
+            "module": 1
+        },
+        {
+            "question_id": "15",
+            "question_text": "What happens to a firm’s competitive advantage if they do not innovate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It grows stronger over time",
+                "B": "Competitors will copy the products and the advantage will be lost",
+                "C": "The customer will pay more for old products",
+                "D": "The firm will have no more costs"
+            },
+            "correct_option_label": "B",
+            "explanation": "Competition naturally erodes existing advantages over time as rivals replicate products, meaning a lack of continuous innovation leads to commoditization and lost advantage.",
+            "module": 1
+        },
+        {
+            "question_id": "16",
+            "question_text": "Why do some practitioners argue against mentioning the price during a concept test?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To ensure the customer only focuses on the brand name",
+                "B": "Because price is irrelevant to the customer's decision",
+                "C": "To collect insights on product quality without the bias of price",
+                "D": "Because the price is always determined by the government"
+            },
+            "correct_option_label": "C",
+            "explanation": "Introducing a price tag early on can bias the user's perception; excluding it ensures the testing purely assesses the product's quality, features, and true appeal.",
+            "module": 2
+        },
+        {
+            "question_id": "17",
+            "question_text": "Which analytical tool is used to group products into specific benefit segments like \"comfort\" or \"fashion\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cluster analysis",
+                "B": "Financial payback period",
+                "C": "SWOT analysis",
+                "D": "Break-even analysis"
+            },
+            "correct_option_label": "A",
+            "explanation": "Tools like Cluster analysis (often used alongside Conjoint analysis) group customers into distinct benefit segments based on their preferences and trade-offs.",
+            "module": 2
+        },
+        {
+            "question_id": "18",
+            "question_text": "What do the letters in the ATAR forecasting model stand for?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Action, Time, Analysis, Result",
+                "B": "Awareness, Trial, Availability, Repeat",
+                "C": "Assessment, Testing, Agreement, Revenue",
+                "D": "Allocation, Trend, Accuracy, Reliability"
+            },
+            "correct_option_label": "B",
+            "explanation": "The ATAR model is a forecasting tool that estimates market success by calculating the percentages for Awareness, Trial, Availability, and Repeat purchases.",
+            "module": 2
+        },
+        {
+            "question_id": "19",
+            "question_text": "For a big ticket item like a laptop, if it has high \"awareness and trial\", which of the following could be an indicator that the product is low on \"repeat\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customers are not buying it every week",
+                "B": "The price is too low",
+                "C": "Customers are not recommending the product to others",
+                "D": "The product is not available in offline stores"
+            },
+            "correct_option_label": "C",
+            "explanation": "For high-durability, big-ticket items, \"repeat\" is largely measured by whether the trial users advocate for the product via word-of-mouth recommendations to others.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "What is another name for the \"Product Protocol\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Marketing Plan",
+                "B": "Financial Audit",
+                "C": "Product Requirements or Deliverables",
+                "D": "Legal Contract"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Product Protocol defines the core concept and deliverables, translating the winning idea into a clear list of core attributes, benefits, and technical requirements before engineering begins.",
+            "module": 2
+        },
+        {
+            "question_id": "21",
+            "question_text": "Which financial metric is commonly used as a \"go/no-go\" parameter for a project?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Return on Investment (ROI)",
+                "B": "Employee satisfaction score",
+                "C": "Number of social media followers",
+                "D": "The CEO's annual bonus"
+            },
+            "correct_option_label": "A",
+            "explanation": "A project's financial viability, such as Return on Investment (ROI), profitability, and margin targets, is a critical criteria in the Stage-Gate system to determine if a project should proceed.",
+            "module": 2
+        },
+        {
+            "question_id": "22",
+            "question_text": "How did Rubbermaid derive most of its product ideas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "By understanding customer problems through focus groups and complaints",
+                "B": "Through high-technology laboratory breakthroughs",
+                "C": "By copying the fashion industry",
+                "D": "By guessing what people might want in the future"
+            },
+            "correct_option_label": "A",
+            "explanation": "Gathering feedback on customer pain points, complaints, and everyday frustrations provides strong signals for innovation and opportunity identification.",
+            "module": 2
+        },
+        {
+            "question_id": "23",
+            "question_text": "What is a \"short menu\" strategy for a food truck?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A menu printed on small paper",
+                "B": "Keeping limited choices, such as only burgers or fries",
+                "C": "A menu that changes every hour",
+                "D": "Serving only small-sized portions"
+            },
+            "correct_option_label": "B",
+            "explanation": "A short menu strategy limits product variety to focus entirely on core competencies, thereby simplifying operations and ensuring higher quality for the selected options.",
+            "module": 2
+        },
+        {
+            "question_id": "24",
+            "question_text": "If a student is designing a House of Quality for Maruti, what should they map against customer requirements?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The names of the car designers",
+                "B": "The history of the automobile",
+                "C": "Technical specifications and competition mapping",
+                "D": "The global stock market trends"
+            },
+            "correct_option_label": "C",
+            "explanation": "In Quality Function Deployment (QFD), the House of Quality visually maps customer requirements (Whats) against technical engineering specifications (Hows) and competitive benchmarks.",
+            "module": 2
+        },
+        {
+            "question_id": "25",
+            "question_text": "What is the primary focus of research for a new product compared to an existing one?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Gathering large-scale statistical data",
+                "B": "Identifying what is missing in current offerings or latent needs",
+                "C": "Collecting feedback on the current colour and texture",
+                "D": "Reducing the current sales price"
+            },
+            "correct_option_label": "B",
+            "explanation": "New product research heavily focuses on exploring opportunity spaces and mapping 'blue oceans' to discover unmet, latent customer needs instead of just tweaking existing features.",
+            "module": 2
+        },
+        {
+            "question_id": "26",
+            "question_text": "What is a primary reason QFD leads to lower costs?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It uses cheaper materials",
+                "B": "It reduces the number of employees",
+                "C": "It focuses only on \"Indifferent\" features",
+                "D": "It eliminates expensive, late-stage design changes"
+            },
+            "correct_option_label": "D",
+            "explanation": "QFD translates the Voice of the Customer directly into technical specs early in the process, which ensures alignment and minimizes exponentially expensive late-stage design changes.",
+            "module": 2
+        },
+        {
+            "question_id": "27",
+            "question_text": "A company provides a toolkit for designing custom jewellery. If it reduces the time the company spends on initial design, what benefit is being realised?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduction in development time",
+                "B": "Elimination of customer contact",
+                "C": "Higher marketing fees",
+                "D": "Standardised mass production"
+            },
+            "correct_option_label": "A",
+            "explanation": "User toolkits shift the trial-and-error design process to the customer, dramatically lowering internal development time and associated costs while catering to heterogeneous demand.",
+            "module": 2
+        },
+        {
+            "question_id": "28",
+            "question_text": "What is a common model used to evaluate new products at the end of concept development and testing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "ATAR model",
+                "B": "Honeycomb model",
+                "C": "Porter's Fives Forces",
+                "D": "SWOT Analysis"
+            },
+            "correct_option_label": "A",
+            "explanation": "The ATAR forecasting model (Awareness, Trial, Availability, Repeat) is widely used to quantify market potential and forecast success after concept testing.",
+            "module": 2
+        },
+        {
+            "question_id": "29",
+            "question_text": "What is the difference between \"Active\" and \"Passive\" risk acceptance?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "There is no difference",
+                "B": "Active acceptance involves a contingency plan; passive acceptance deals with risks as they come",
+                "C": "Active acceptance avoids all risk; passive acceptance transfers it",
+                "D": "Active acceptance is for successful projects only"
+            },
+            "correct_option_label": "B",
+            "explanation": "In risk management, active acceptance means acknowledging the risk and proactively building a contingency plan, whereas passive acceptance means merely dealing with issues if they arise.",
+            "module": 2
+        },
+        {
+            "question_id": "30",
+            "question_text": "How does identifying an \"associated product inadequacy\" lead to innovation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It forces the company to lower the price of the main product",
+                "B": "It shows that the competitor's marketing is better",
+                "C": "It proves that customers prefer center stands over side stands",
+                "D": "It reveals that a product cannot be used simultaneously with others, prompting a redesign of the shape or arrangement"
+            },
+            "correct_option_label": "D",
+            "explanation": "Studying associated inadequacies reveals where a product fails to integrate well into the user's broader ecosystem, highlighting a clear opportunity for design innovation to solve the frustration.",
+            "module": 2
+        },
+        {
+            "question_id": "31",
+            "question_text": "What is the definition of \"Design\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The aesthetic layering of a product's exterior.",
+                "B": "The synthesis of technology and human needs into manufacturable products.",
+                "C": "The process of following market trends to improve sales.",
+                "D": "A method of reducing manufacturing costs."
+            },
+            "correct_option_label": "B",
+            "explanation": "Product design fundamentally goes beyond aesthetics; it is defined as the successful synthesis of technological capabilities and human needs into user-friendly, manufacturable products.",
+            "module": 3
+        },
+        {
+            "question_id": "32",
+            "question_text": "A company decides to launch a new music device that changes how people perceive \"owning\" music, similar to the original iPod. This is an example of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Design-driven innovation",
+                "B": "Market-driven innovation",
+                "C": "Incremental improvement",
+                "D": "Bulky product design"
+            },
+            "correct_option_label": "A",
+            "explanation": "Design-driven innovation focuses on pushing new meanings and radically altering the product's core purpose in the customer's mind, creating new markets rather than just satisfying existing ones.",
+            "module": 3
+        },
+        {
+            "question_id": "33",
+            "question_text": "What is a key disadvantage of Integral Product Architecture mentioned by the professor?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It results in a bulky and heavy product.",
+                "B": "It uses too many standard components from different brands.",
+                "C": "It prevents the product from having multiple functions.",
+                "D": "Post-purchase repairs and upgrades are extremely difficult."
+            },
+            "correct_option_label": "D",
+            "explanation": "Integral architecture tightly integrates components to optimize size and form, but this lack of modularity makes it exceedingly difficult to repair, upgrade, or customize the product post-purchase.",
+            "module": 3
+        },
+        {
+            "question_id": "34",
+            "question_text": "What is one way to cut assembly time according to DFM principles?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase the number of fasteners",
+                "B": "Add more customisation options during the assembly stage",
+                "C": "Eliminate fasteners in the product",
+                "D": "Use different types of screws for every fitting"
+            },
+            "correct_option_label": "C",
+            "explanation": "Design for Manufacturing (DFM) prioritizes improving production efficiency by standardizing parts and eliminating fasteners/manual adjustments, significantly reducing assembly time.",
+            "module": 3
+        },
+        {
+            "question_id": "35",
+            "question_text": "IKEA furniture, which requires the customer to do the final assembly, is an example of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Leaving assembly to the customer to ease transport and storage.",
+                "B": "Purely integral architecture.",
+                "C": "Using high-skill workers for prototype development.",
+                "D": "Increasing system complexity for assembly."
+            },
+            "correct_option_label": "A",
+            "explanation": "A key DFM principle is outsourcing the final assembly process directly to the end-user, which optimizes flat-pack packaging, logistics, and warehousing costs.",
+            "module": 3
+        },
+        {
+            "question_id": "36",
+            "question_text": "Why might an SUV be designed with lower seats and easy access?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To make it look more like a heavy-duty truck.",
+                "B": "To increase ground clearance for rough roads.",
+                "C": "To create a user-centric design that meets specific customer needs for comfort while maintaining SUV features.",
+                "D": "Because the law requires all SUVs to have car-like handling."
+            },
+            "correct_option_label": "C",
+            "explanation": "Adapting an SUV's architecture for easier access reflects a user-centric design approach, explicitly addressing target audience pain points (like ingress/egress) while retaining core product benefits.",
+            "module": 3
+        },
+        {
+            "question_id": "37",
+            "question_text": "Why is a physical prototype still necessary despite the availability of computer simulations?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Computer models are more expensive than physical models.",
+                "B": "Physical prototypes help detect unanticipated issues that computer models might miss.",
+                "C": "Simulations cannot provide mileage data for cars.",
+                "D": "Legal regulations require every prototype to be physical."
+            },
+            "correct_option_label": "B",
+            "explanation": "While CAD allows for flexible digital testing, physical prototyping is mandatory for uncovering unanticipated human-interaction flaws, sensory reactions, and ergonomic issues that simulations routinely overlook.",
+            "module": 3
+        },
+        {
+            "question_id": "38",
+            "question_text": "Why did Gillette skip the 4-blade system and go straight to 5 blades (Fusion)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because 4 blades were illegal in the US.",
+                "B": "Because the 4-blade prototype failed the feasibility test.",
+                "C": "To reduce the price of the cartridges.",
+                "D": "To bypass the competition (Wilkinson Sword) who had already launched a 4-blade system."
+            },
+            "correct_option_label": "D",
+            "explanation": "In intensely competitive markets, leapfrogging the competition by moving directly to a more advanced architecture (like 5 blades) is a deliberate strategy to reclaim the \"breakthrough\" market position.",
+            "module": 3
+        },
+        {
+            "question_id": "39",
+            "question_text": "Who are considered \"Direct Participants\" in the product design process?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Company lawyers and technical service teams.",
+                "B": "Resellers, vendors, and suppliers.",
+                "C": "Reseach and Development teams, industrial designers, and manufacturing engineers.",
+                "D": "Government regulators."
+            },
+            "correct_option_label": "C",
+            "explanation": "The core internal team responsible for directly bringing the product design to life includes cross-functional members like R&D personnel, industrial designers, and manufacturing engineers.",
+            "module": 3
+        },
+        {
+            "question_id": "40",
+            "question_text": "In which structure does the product manager have \"discretionary power\" over the functional manager?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lightweight Matrix",
+                "B": "Heavyweight Matrix",
+                "C": "Functional structure",
+                "D": "Standard Matrix"
+            },
+            "correct_option_label": "B",
+            "explanation": "In a Heavyweight Matrix structure, the Product Manager is granted overarching discretionary power and authority over functional managers to aggressively drive radical or breakthrough projects.",
+            "module": 3
+        },
+        {
+            "question_id": "41",
+            "question_text": "A small startup with 10 members all focused on a single product launch is using a:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Project-based structure",
+                "B": "Functional structure",
+                "C": "Lightweight matrix",
+                "D": "Heavyweight matrix"
+            },
+            "correct_option_label": "A",
+            "explanation": "A project-based structure is ideal for start-ups or breakthrough projects because it utilizes a dedicated, cross-functional team working exclusively on one single product from start to finish.",
+            "module": 3
+        },
+        {
+            "question_id": "42",
+            "question_text": "A customer uses a product and feels it \"just feels right\" and has a \"wow factor.\" This is an example of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Functional performance only",
+                "B": "Product integrity",
+                "C": "Low-cost manufacturing",
+                "D": "Outsourced prototyping"
+            },
+            "correct_option_label": "B",
+            "explanation": "Product integrity occurs when there is perfect alignment between internal processes, actual product performance, and external customer expectations, resulting in a cohesive \"wow factor.\"",
+            "module": 3
+        },
+        {
+            "question_id": "43",
+            "question_text": "Why might a bank prefer a \"Productised\" banking solution over a \"Pure Service\" agreement?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because they don't want to talk to the service provider.",
+                "B": "Because pure services are illegal in banking",
+                "C": "Because it lowers the risk of cost overruns and makes it easier to visualise the end result",
+                "D": "Because productised services are always manual"
+            },
+            "correct_option_label": "C",
+            "explanation": "Productizing an intangible service (packaging it with fixed pricing, naming, and SLAs) reduces perceived risk, defines scope clearly, and prevents massive cost overruns.",
+            "module": 3
+        },
+        {
+            "question_id": "44",
+            "question_text": "In a \"User-oriented PSS,\" who typically retains ownership of the product?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The firm or service provider",
+                "B": "The individual customer",
+                "C": "A third-party government agency",
+                "D": "The product is destroyed after one use"
+            },
+            "correct_option_label": "A",
+            "explanation": "In a User-Oriented Product Service System (like furniture rentals or bike-sharing), the firm strictly retains ownership while the user simply pays to rent the product for a specific duration.",
+            "module": 3
+        },
+        {
+            "question_id": "45",
+            "question_text": "Why might a firm transition from ad hoc servicing to an Annual Maintenance Contract (AMC) model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To manage service personnel and portfolios in a more planned, efficient way.",
+                "B": "To ensure the customer takes over all maintenance responsibilities.",
+                "C": "To make the service more intangible and harder to measure.",
+                "D": "To increase resource wastage during pickups."
+            },
+            "correct_option_label": "A",
+            "explanation": "Shifting to a Product-Oriented PSS like an AMC provides the firm with predictable, recurring revenue and allows for highly efficient, planned utilization of its service personnel.",
+            "module": 3
+        },
+        {
+            "question_id": "46",
+            "question_text": "What is defined as the first output of technical development that allows for user testing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Market research",
+                "B": "Prototype",
+                "C": "Patent filing",
+                "D": "Competitor Analysis"
+            },
+            "correct_option_label": "B",
+            "explanation": "A prototype is the first tangible approximation of a product generated during technical development that can be effectively used for testing, learning, and gathering actual user feedback.",
+            "module": 4
+        },
+        {
+            "question_id": "47",
+            "question_text": "If a team completes the technical development of an idea, what is the next logical step mentioned for that output?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Immediately launch it to the public.",
+                "B": "File a copyright lawsuit.",
+                "C": "Expose the output to user testing.",
+                "D": "Stop all further development."
+            },
+            "correct_option_label": "C",
+            "explanation": "Once early technical development is completed, the resulting prototype must be immediately exposed to iterative user testing to detect functional bugs and gather critical user-interaction data.",
+            "module": 4
+        },
+        {
+            "question_id": "48",
+            "question_text": "Why is \"Product Use Testing\" necessary when a product has already been simulated on a drawing board?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Actual user needs are diverse and complex.",
+                "B": "Simulation always shows exactly how users will feel.",
+                "C": "Drawing boards are not allowed in engineering.",
+                "D": "Product use testing is only required for hardware, not software."
+            },
+            "correct_option_label": "A",
+            "explanation": "Market acceptance testing in the real world is essential because digital simulations frequently miss the nuanced, diverse, and highly complex operating conditions that end-users actually experience.",
+            "module": 4
+        },
+        {
+            "question_id": "49",
+            "question_text": "Why does the professor suggest involving marketing from the beginning of development?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "So they can handle the sales pitch immediately.",
+                "B": "To ensure feedback loops are integrated into the re-development process.",
+                "C": "Marketing is not involved until the product is sold.",
+                "D": "To hide defects from the engineers."
+            },
+            "correct_option_label": "B",
+            "explanation": "NPD is cross-functional. Involving marketing early ensures that vital Voice of the Customer (VOC) feedback loops consistently guide the iterative design and re-development process.",
+            "module": 4
+        },
+        {
+            "question_id": "50",
+            "question_text": "You are developing a product and want to do a quick check with 30% of functionality. Which method should you use?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Alpha testing",
+                "B": "Gamma testing",
+                "C": "A full market launch",
+                "D": "Beta testing"
+            },
+            "correct_option_label": "A",
+            "explanation": "Alpha testing is an internal, early-stage evaluation typically conducted when the product only has around 30% functionality, designed to catch obvious baseline flaws before external exposure.",
+            "module": 4
+        },
+        {
+            "question_id": "51",
+            "question_text": "When launching a new medical scanner, why is Gamma testing required over early prototyping?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because medical scanners are cheap to discard.",
+                "B": "Because early prototypes are better for medical use.",
+                "C": "Because the law prohibits early testing.",
+                "D": "Because medicine requires full development and thorough evaluation."
+            },
+            "correct_option_label": "D",
+            "explanation": "High-risk, life-critical industries like medical equipment strictly require Gamma testing—a rigorous, extended clinical evaluation of the fully finalized product—because any failure would be catastrophic.",
+            "module": 4
+        },
+        {
+            "question_id": "52",
+            "question_text": "Why is \"blind testing\" used in product development?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To make sure the user does not see the product.",
+                "B": "To avoid the \"halo effect\" of the brand and get feedback on the product itself.",
+                "C": "To save money on packaging.",
+                "D": "Because customers prefer not to know what they are using"
+            },
+            "correct_option_label": "B",
+            "explanation": "Blind testing deliberately hides the brand identity from the participant to eliminate the \"halo effect,\" ensuring that the feedback gathered strictly reflects the product's actual performance and quality.",
+            "module": 4
+        },
+        {
+            "question_id": "53",
+            "question_text": "You are diagnosing why your EV is not selling. What should you look for?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The colour of the car.",
+                "B": "The name of the CEO.",
+                "C": "If there are enough mechanics to service the product.",
+                "D": "If the ads are too loud."
+            },
+            "correct_option_label": "C",
+            "explanation": "Innovative products often fail if the required supporting ecosystem is absent. A lack of trained mechanics is a hidden barrier or 'associated product inadequacy' that severely restricts EV market adoption.",
+            "module": 4
+        },
+        {
+            "question_id": "54",
+            "question_text": "Why is \"ergonomics\" considered a factor in demand creation for existing products?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because it makes the product easier and more comfortable to use.",
+                "B": "Because it changes the colour of the product.",
+                "C": "Because it increases the weight.",
+                "D": "Because it is unrelated to user experience."
+            },
+            "correct_option_label": "A",
+            "explanation": "Improving ergonomics serves as a direct feature enhancement that directly elevates comfort and ease of use, creating new appeal and stimulating demand for an already existing product category.",
+            "module": 4
+        },
+        {
+            "question_id": "55",
+            "question_text": "Which differentiation type is usually \"easier\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Horizontal",
+                "B": "Vertical",
+                "C": "Both are impossible.",
+                "D": "Only vertical."
+            },
+            "correct_option_label": "A",
+            "explanation": "Horizontal differentiation (altering colors, flavors, or basic features at the same price point) is technically easier and less costly than vertical differentiation, which requires fundamentally changing product quality and luxury tiers.",
+            "module": 4
+        },
+        {
+            "question_id": "56",
+            "question_text": "What is the first rule for creating demand without latent needs?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Trust market research implicitly.",
+                "B": "Do not trust market research.",
+                "C": "Spend a huge budget on ads.",
+                "D": "Change the product every day."
+            },
+            "correct_option_label": "B",
+            "explanation": "When customers have no latent or expressed need for a completely unfamiliar product, traditional market research is highly unreliable as users cannot articulate feedback on something they don't understand.",
+            "module": 4
+        },
+        {
+            "question_id": "57",
+            "question_text": "Why is the \"New Resources + New Users\" option considered high risk?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because it is cheap.",
+                "B": "Because customers dislike new things.",
+                "C": "Because existing products are bad.",
+                "D": "It is high cost and high risk."
+            },
+            "correct_option_label": "D",
+            "explanation": "Targeting entirely new users with completely new resources is inherently the most difficult strategy. It lacks the safety of existing competencies and markets, thus carrying extremely high capital costs and market risk.",
+            "module": 4
+        },
+        {
+            "question_id": "58",
+            "question_text": "How long do you have to file a patent after the first disclosure?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "10 years",
+                "B": "One month",
+                "C": "Two weeks",
+                "D": "Within one year"
+            },
+            "correct_option_label": "D",
+            "explanation": "Under strategic patent filing rules, firms should delay full patents to avoid wasted costs but strictly utilize a provisional patent within one year of initial disclosure to maintain protection.",
+            "module": 4
+        },
+        {
+            "question_id": "59",
+            "question_text": "What was the purpose of Tropicana giving free juice to morning joggers?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "As a trial to associate the juice with healthy habits.",
+                "B": "To make them tired.",
+                "C": "To waste the juice.",
+                "D": "To make the joggers pay for it later."
+            },
+            "correct_option_label": "A",
+            "explanation": "To create demand for a new product category without traditional latent needs, firms use strategic trials and free samples (like jogging route distribution) to strongly associate the product with positive, healthy lifestyle habits.",
+            "module": 4
+        },
+        {
+            "question_id": "60",
+            "question_text": "How did Safal communicate that their frozen peas were better?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "By saying fresh peas are poisonous.",
+                "B": "By highlighting price stability and availability all year round.",
+                "C": "By hiding the production process.",
+                "D": "By charging more than anyone else."
+            },
+            "correct_option_label": "B",
+            "explanation": "Safal successfully built a new market and overcame the cultural perception of 'stale' frozen food by explicitly communicating direct benefits: exact weights, stable pricing, and convenient year-round availability.",
+            "module": 4
+        }
+    ]
+}
