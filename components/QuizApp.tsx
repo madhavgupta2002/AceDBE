@@ -97,11 +97,18 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
   const [subjectVideos, setSubjectVideos] = useState<Record<string, string[]>>({});
   const moduleNumbers = Object.keys(subjectVideos).sort((a, b) => Number(a) - Number(b));
 
+  // Check if subject has short notes (FORMULAS.md)
+  const [hasFormulas, setHasFormulas] = useState(false);
+
   useEffect(() => {
     fetch(`/data/Subjects/${subjectCode}/videos.json`)
       .then(res => res.ok ? res.json() : {})
       .then(data => setSubjectVideos(data))
       .catch(() => setSubjectVideos({}));
+
+    fetch(`/data/Subjects/${subjectCode}/FORMULAS.md`, { method: 'HEAD' })
+      .then(res => setHasFormulas(res.ok))
+      .catch(() => setHasFormulas(false));
   }, [subjectCode]);
 
   useEffect(() => {
@@ -834,14 +841,35 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
           {!isCustomMode && !loading && quizState.questions.length > 0 && !quizCompleted && (
             <div className="mb-4">
               <div className="bg-surface border border-surface-border/60 rounded-xl p-2.5">
-                <Link
-                  href={`/${subjectCode}/notes`}
-                  target="_blank"
-                  className="w-full py-2.5 px-3 bg-emerald-800 hover:bg-emerald-700 text-white border border-emerald-700/45 font-medium text-sm transition-all duration-200 flex items-center justify-center gap-2 rounded-lg"
-                >
-                  <BookOpen className="w-4 h-4" />
-                  View Notes
-                </Link>
+                {hasFormulas ? (
+                  <div className="flex gap-2">
+                    <Link
+                      href={`/${subjectCode}/notes?view=short`}
+                      target="_blank"
+                      className="flex-1 py-2.5 px-3 bg-amber-700 hover:bg-amber-600 text-white border border-amber-600/45 font-medium text-sm transition-all duration-200 flex items-center justify-center gap-2 rounded-lg"
+                    >
+                      <BookOpen className="w-4 h-4" />
+                      Short Notes
+                    </Link>
+                    <Link
+                      href={`/${subjectCode}/notes?view=detailed`}
+                      target="_blank"
+                      className="flex-1 py-2.5 px-3 bg-emerald-800 hover:bg-emerald-700 text-white border border-emerald-700/45 font-medium text-sm transition-all duration-200 flex items-center justify-center gap-2 rounded-lg"
+                    >
+                      <BookOpen className="w-4 h-4" />
+                      Detailed Notes
+                    </Link>
+                  </div>
+                ) : (
+                  <Link
+                    href={`/${subjectCode}/notes`}
+                    target="_blank"
+                    className="w-full py-2.5 px-3 bg-emerald-800 hover:bg-emerald-700 text-white border border-emerald-700/45 font-medium text-sm transition-all duration-200 flex items-center justify-center gap-2 rounded-lg"
+                  >
+                    <BookOpen className="w-4 h-4" />
+                    View Notes
+                  </Link>
+                )}
               </div>
             </div>
           )}
@@ -853,14 +881,35 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                 <BookOpen className="w-5 h-5 text-emerald-400" />
                 Study Materials
               </h2>
-              <Link
-                href={`/${subjectCode}/notes`}
-                className="w-full py-3 bg-gradient-to-r from-emerald-900 to-emerald-800 hover:from-emerald-800 hover:to-emerald-700 text-white border border-emerald-700/35 font-semibold transition-all duration-200 flex items-center justify-center gap-2 rounded-xl shadow-md"
-              >
-                <BookOpen className="w-5 h-5" />
-                View Notes
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+              {hasFormulas ? (
+                <div className="flex gap-3">
+                  <Link
+                    href={`/${subjectCode}/notes?view=short`}
+                    className="flex-1 py-3 bg-gradient-to-r from-amber-800 to-amber-700 hover:from-amber-700 hover:to-amber-600 text-white border border-amber-600/35 font-semibold transition-all duration-200 flex items-center justify-center gap-2 rounded-xl shadow-md"
+                  >
+                    <BookOpen className="w-5 h-5" />
+                    Short Notes
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                  <Link
+                    href={`/${subjectCode}/notes?view=detailed`}
+                    className="flex-1 py-3 bg-gradient-to-r from-emerald-900 to-emerald-800 hover:from-emerald-800 hover:to-emerald-700 text-white border border-emerald-700/35 font-semibold transition-all duration-200 flex items-center justify-center gap-2 rounded-xl shadow-md"
+                  >
+                    <BookOpen className="w-5 h-5" />
+                    Detailed Notes
+                    <ArrowRight className="w-4 h-4" />
+                  </Link>
+                </div>
+              ) : (
+                <Link
+                  href={`/${subjectCode}/notes`}
+                  className="w-full py-3 bg-gradient-to-r from-emerald-900 to-emerald-800 hover:from-emerald-800 hover:to-emerald-700 text-white border border-emerald-700/35 font-semibold transition-all duration-200 flex items-center justify-center gap-2 rounded-xl shadow-md"
+                >
+                  <BookOpen className="w-5 h-5" />
+                  View Notes
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              )}
             </div>
           )}
 
@@ -991,8 +1040,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       <button
                         onClick={() => setShowAllQuestions(true)}
                         className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-semibold transition-all duration-200 ${showAllQuestions
-                            ? 'bg-emerald-600 text-white shadow-sm'
-                            : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
+                          ? 'bg-emerald-600 text-white shadow-sm'
+                          : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
                           }`}
                       >
                         <List size={13} /> All
@@ -1000,8 +1049,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       <button
                         onClick={() => setShowAllQuestions(false)}
                         className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-semibold transition-all duration-200 ${!showAllQuestions
-                            ? 'bg-red-600 text-white shadow-sm'
-                            : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
+                          ? 'bg-red-600 text-white shadow-sm'
+                          : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
                           }`}
                       >
                         <XCircle size={13} /> Incorrect Only
@@ -1014,8 +1063,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                     <button
                       onClick={() => setHideWrongOptions(false)}
                       className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-semibold transition-all duration-200 ${!hideWrongOptions
-                          ? 'bg-slate-500 text-white shadow-sm'
-                          : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
+                        ? 'bg-slate-500 text-white shadow-sm'
+                        : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
                         }`}
                     >
                       All Options
@@ -1023,8 +1072,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                     <button
                       onClick={() => setHideWrongOptions(true)}
                       className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-semibold transition-all duration-200 ${hideWrongOptions
-                          ? 'bg-slate-500 text-white shadow-sm'
-                          : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
+                        ? 'bg-slate-500 text-white shadow-sm'
+                        : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
                         }`}
                     >
                       Answer Only
@@ -1040,8 +1089,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       setIndividualAnswersVisible({});
                     }}
                     className={`flex items-center gap-2 px-4 py-2 border font-semibold transition-all duration-200 rounded-lg ${globalAnswersVisible
-                        ? 'bg-amber-600/80 text-white border-amber-500/40 hover:bg-amber-500'
-                        : 'bg-slate-700/60 text-slate-200 border-slate-600/40 hover:bg-slate-600'
+                      ? 'bg-amber-600/80 text-white border-amber-500/40 hover:bg-amber-500'
+                      : 'bg-slate-700/60 text-slate-200 border-slate-600/40 hover:bg-slate-600'
                       }`}
                     title={globalAnswersVisible ? 'Hide correct answers' : 'Reveal correct answers'}
                   >

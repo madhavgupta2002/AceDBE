@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useMemo } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -59,6 +59,7 @@ const generateId = (text: string) => {
 
 const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const subject = getSubjectByCode(subjectCode);
   const [markdown, setMarkdown] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
@@ -82,23 +83,25 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
       setFormulasContent(formulas);
       setNotesContent(notes);
 
-      const content = notes;
-      if (content === null) {
-        setError('Notes not available for this subject.');
+      const wantShort = searchParams.get('view') === 'short';
+      if (wantShort && formulas) {
+        setShowFormulas(true);
+        setMarkdown(formulas);
+      } else if (notes) {
+        setMarkdown(notes);
       } else {
-        setMarkdown(content);
+        setError('Notes not available for this subject.');
       }
       setLoading(false);
     };
 
     fetchNotes();
-  }, [subjectCode]);
+  }, [subjectCode, searchParams]);
 
-  const handleToggleFormulas = () => {
-    if (!formulasContent) return;
-    const next = !showFormulas;
-    setShowFormulas(next);
-    setMarkdown(next ? formulasContent : notesContent);
+  const handleToggleFormulas = (toShort: boolean) => {
+    if (toShort && !formulasContent) return;
+    setShowFormulas(toShort);
+    setMarkdown(toShort ? formulasContent : notesContent);
   };
 
 
@@ -212,6 +215,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
           pre { background: #f3f4f6; padding: 6px 8px; border-radius: 3px; font-size: 9px; margin: 4px 0; overflow-x: auto; page-break-inside: avoid; }
           pre code { background: none; padding: 0; color: #1a1a1a; }
           blockquote { border-left: 3px solid #6366f1; padding: 3px 8px; margin: 4px 0; background: #f8f8ff; font-style: italic; color: #333; }
+          blockquote > *:last-child { margin-bottom: 0; }
           table { width: 100%; border-collapse: collapse; margin: 6px 0; font-size: 10px; page-break-inside: avoid; }
           th, td { border: 1px solid #d1d5db; padding: 3px 6px; text-align: left; color: #1a1a1a; }
           th { background: #f3f4f6; font-weight: 600; }
@@ -239,7 +243,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
       </head>
       <body>
         <div class="title">${title}</div>
-        <div class="subtitle">${showFormulas ? 'Formula Sheet' : 'Notes'}</div>
+        <div class="subtitle">${showFormulas ? 'Short Notes' : 'Notes'}</div>
         ${renderedHtml}
         <div class="footer">acedbe.in</div>
       </body>
@@ -278,7 +282,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                 <h1 className="text-base sm:text-xl lg:text-2xl font-bold text-white leading-tight">
                   {subject.name}
                 </h1>
-                <p className="text-xs sm:text-sm text-slate-400">Notes</p>
+                <p className="text-xs sm:text-sm text-slate-400">{showFormulas ? 'Short Notes' : 'Notes'}</p>
               </div>
             </div>
 
@@ -336,19 +340,28 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
               <span className="text-[10px] sm:text-xs text-slate-400 hidden sm:inline ml-1">{fontSize}px</span>
             </div>
 
-            {/* Formulas Toggle */}
+            {/* Notes Type Toggle */}
             {formulasContent && (
-              <button
-                onClick={handleToggleFormulas}
-                className={`flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-1.5 sm:py-2 rounded-lg transition-colors font-bold text-sm print:hidden ${showFormulas
-                    ? 'bg-amber-500 hover:bg-amber-400 text-white'
-                    : 'bg-slate-700/60 hover:bg-slate-600 text-slate-200'
-                  }`}
-                aria-label="Toggle formula sheet"
-                title={showFormulas ? 'Switch to Notes' : 'Switch to Formula Sheet'}
-              >
-                F
-              </button>
+              <div className="flex items-center bg-slate-700/60 rounded-lg p-0.5 print:hidden">
+                <button
+                  onClick={() => handleToggleFormulas(true)}
+                  className={`px-2 sm:px-3 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-colors ${showFormulas
+                    ? 'bg-amber-500 text-white shadow-sm'
+                    : 'text-slate-300 hover:text-white'
+                    }`}
+                >
+                  Short Notes
+                </button>
+                <button
+                  onClick={() => handleToggleFormulas(false)}
+                  className={`px-2 sm:px-3 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-colors ${!showFormulas
+                    ? 'bg-emerald-600 text-white shadow-sm'
+                    : 'text-slate-300 hover:text-white'
+                    }`}
+                >
+                  Detailed Notes
+                </button>
+              </div>
             )}
 
             {/* Print Button */}
@@ -553,7 +566,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                   // Blockquotes
                   blockquote: ({ node, ...props }) => (
                     <blockquote
-                      className="border-l-4 border-emerald-500 pl-5 italic text-slate-300 my-5 bg-surface/50 py-2 rounded-r"
+                      className="border-l-4 border-emerald-500 pl-5 italic text-slate-300 my-5 bg-surface/50 py-2 rounded-r [&>*:last-child]:mb-0"
                       {...props}
                     />
                   ),

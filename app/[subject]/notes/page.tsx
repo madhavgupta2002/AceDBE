@@ -1,5 +1,6 @@
 import NotesPage from '@/components/NotesPage';
 import { Metadata } from 'next';
+import { Suspense } from 'react';
 
 interface NotesPageProps {
   params: Promise<{
@@ -16,5 +17,9 @@ export async function generateMetadata({ params }: NotesPageProps): Promise<Meta
 
 export default async function NotesRoute({ params }: NotesPageProps) {
   const { subject } = await params;
-  return <NotesPage subjectCode={subject} />;
+  return (
+    <Suspense>
+      <NotesPage subjectCode={subject} />
+    </Suspense>
+  );
 }
