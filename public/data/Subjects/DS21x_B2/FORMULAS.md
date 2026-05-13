@@ -1,7 +1,3 @@
-# Business Statistics for Entrepreneurs II — Formula Sheet with Worked Examples
-
----
-
 ## MODULE 1: Distributions Related to Normal
 
 ---
