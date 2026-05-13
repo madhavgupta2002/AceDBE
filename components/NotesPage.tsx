@@ -215,6 +215,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
           pre { background: #f3f4f6; padding: 6px 8px; border-radius: 3px; font-size: 9px; margin: 4px 0; overflow-x: auto; page-break-inside: avoid; }
           pre code { background: none; padding: 0; color: #1a1a1a; }
           blockquote { border-left: 3px solid #6366f1; padding: 3px 8px; margin: 4px 0; background: #f8f8ff; font-style: italic; color: #333; }
+          blockquote p { white-space: pre-line; }
           blockquote > *:last-child { margin-bottom: 0; }
           table { width: 100%; border-collapse: collapse; margin: 6px 0; font-size: 10px; page-break-inside: avoid; }
           th, td { border: 1px solid #d1d5db; padding: 3px 6px; text-align: left; color: #1a1a1a; }
@@ -566,7 +567,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                   // Blockquotes
                   blockquote: ({ node, ...props }) => (
                     <blockquote
-                      className="border-l-4 border-emerald-500 pl-5 italic text-slate-300 my-5 bg-surface/50 py-2 rounded-r [&>*:last-child]:mb-0"
+                      className="border-l-4 border-emerald-500 pl-5 italic text-slate-300 my-5 bg-surface/50 py-2 rounded-r [&>*:last-child]:mb-0 [&_p]:whitespace-pre-line"
                       {...props}
                     />
                   ),
