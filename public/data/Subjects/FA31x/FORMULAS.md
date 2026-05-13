@@ -1,7 +1,3 @@
-# Management Accounting — Formula Sheet with Worked Examples
-
----
-
 ## MODULE 1: Cost Concepts & Cost Sheet
 
 ---
@@ -13,6 +9,7 @@ $$\text{Prime Cost} = \text{Direct Material} + \text{Direct Labour} + \text{Dire
 **Q26:** Material Consumed Rs. 10000; Labour Rs. 6000; Direct Expenses Rs. 4000; Fuel Rs. 2000; Other factory Expenses Rs. 1000; Advertisement Rs. 5000; Distribution Rs. 2000; Admin Rs. 1000. Find Prime Cost.
 
 > Prime Cost = 10000 + 6000 + 4000 = **Rs. 20000** ✓
+>
 > *(Fuel, factory expenses, advertisement, distribution, admin are all overheads — excluded)*
 
 ---
@@ -24,8 +21,11 @@ $$\text{Conversion Cost} = \text{Direct Labour} + \text{Manufacturing (Factory) 
 **Q1:** Material Rs. 10000; Labour Rs. 6000; Fuel Rs. 2000; Other factory Expenses Rs. 1000; Advertisement Rs. 5000; Distribution Rs. 2000; Admin Rs. 1000. Find Conversion Cost.
 
 > Direct Labour = 6000
+>
 > Factory Overheads = Fuel (2000) + Other factory (1000) = 3000
+>
 > Conversion Cost = 6000 + 3000 = **Rs. 9000** ✓
+>
 > *(Material is excluded; Advertisement/Distribution/Admin are period costs)*
 
 ---
@@ -43,9 +43,13 @@ $$\text{COGM} = \text{Gross Factory Cost} + \text{Opening WIP} - \text{Closing W
 **Q28:** Opening RM Rs. 1000; Purchases Rs. 20000; Closing RM Rs. 1000; Labour Rs. 5000; Factory Exp Rs. 6000; Opening WIP Rs. 3000; Closing WIP Rs. 2000; S&D Rs. 5000; Admin Rs. 2000.
 
 > RM Consumed = 1000 + 20000 − 1000 = 20000
+>
 > Prime Cost = 20000 + 5000 = 25000
+>
 > Gross Factory Cost = 25000 + 6000 = 31000
+>
 > COGM = 31000 + 3000 − 2000 = **Rs. 32000** ✓
+>
 > *(S&D and Admin excluded)*
 
 ---
@@ -57,6 +61,7 @@ $$\text{Cost per Unit} = \frac{\text{Total Estimated Cost}}{\text{Number of Unit
 **Q30:** Cloth Rs. 140000; Materials Rs. 10000; Labour Rs. 60000; Factory OH Rs. 20000; Admin OH Rs. 10000; Transport Rs. 10000. Units = 1000.
 
 > Total Cost = 140000 + 10000 + 60000 + 20000 + 10000 + 10000 = 250000
+>
 > Cost/unit = 250000 / 1000 = **Rs. 250** ✓
 
 ---
@@ -84,8 +89,11 @@ $$\text{Cost per EU} = \frac{\text{Opening WIP Cost} + \text{Cost Incurred}}{\te
 **Q5:** Opening WIP: 100 units (60% complete); New: 3000; Closing WIP: 600 (40% complete). Conversion cost in Opening WIP: Rs. 3000; Incurred: Rs. 13440.
 
 > Completed = 100 + 3000 − 600 = 2500
+>
 > EU = 2500 + (600 × 0.40) = 2500 + 240 = 2740
+>
 > Total Cost = 3000 + 13440 = 16440
+>
 > Cost/EU = 16440 / 2740 = **Rs. 6.00** ✓
 
 ---
@@ -97,8 +105,11 @@ $$\text{EU} = (\text{Completed Units} \times 100\%) + (\text{Closing WIP} \times
 **Q7:** Same as above but Completed = 2400 units; Normal Loss = 100 units.
 
 > EU = 2400 + (600 × 0.40) + 0 = 2400 + 240 = 2640
+>
 > Total Cost = 3000 + 13440 = 16440
+>
 > Cost/EU = 16440 / 2640 = **Rs. 6.23** ✓
+>
 > *(Normal loss absorbs zero EU — its cost spreads over good units)*
 
 ---
@@ -112,7 +123,9 @@ $$\text{Allocated Cost} = \text{Activity Rate} \times \text{Driver Units for Pro
 **Q9:** Design dept cost Rs. 5,00,000. Designs: X = 300, Y = 150, Z = 50. Allocate to X.
 
 > Total Designs = 300 + 150 + 50 = 500
+>
 > Rate = 500000 / 500 = Rs. 1000/design
+>
 > Cost to X = 300 × 1000 = **Rs. 3,00,000** ✓
 
 ---
@@ -146,7 +159,9 @@ $$\text{BEP (units)} = \frac{\text{Fixed Cost}}{\text{Contribution per Unit}}$$
 **Q37:** SP = Rs. 100; Material Rs. 30, Labour Rs. 5, Other mfg Rs. 35; FC = Rs. 30,00,000.
 
 > VC/unit = 30 + 5 + 35 = 70
+>
 > Contribution/unit = 100 − 70 = 30
+>
 > BEP = 30,00,000 / 30 = **1,00,000 units** ✓
 
 ---
@@ -158,6 +173,7 @@ $$\text{Required Units} = \frac{\text{Fixed Cost} + \text{Target Profit}}{\text{
 **Q12:** SP Rs. 70; VC Rs. 30; FC Rs. 20,00,000; Target Profit Rs. 50,00,000.
 
 > Contribution/unit = 70 − 30 = 40
+>
 > Units = (20,00,000 + 50,00,000) / 40 = 70,00,000 / 40 = **1,75,000 units** ✓
 
 ---
@@ -193,7 +209,9 @@ $$\text{BEP} = \frac{\text{FC}}{\text{PV Ratio}}$$
 **Q40:** Year 1: Sales 100L, Profit 30L. Year 2: Sales 160L, Profit 60L.
 
 > PV Ratio = (60 − 30)/(160 − 100) = 30/60 = 50%
+>
 > FC = (100 × 0.50) − 30 = 50 − 30 = 20 lakhs
+>
 > BEP = 20 / 0.50 = **Rs. 40 lakhs** ✓
 
 ---
@@ -205,6 +223,7 @@ $$\text{New SP} = \text{VC/unit} + \frac{\text{FC} + \text{Target Profit}}{\text
 **Q14:** Current SP Rs. 10; VC Rs. 4; FC Rs. 20000; Target Profit Rs. 20000; Qty = 5000.
 
 > Required Contribution = (20000 + 20000) / 5000 = Rs. 8
+>
 > New SP = 4 + 8 = **Rs. 12** ✓
 
 ---
@@ -216,7 +235,9 @@ $$\text{Compare: Current Profit vs. Proposed Profit}$$
 **Q42:** Current: SP 100, VC 50, Qty 10000, FC 2L. Proposed: SP 80, Qty 20000.
 
 > Current Profit = (100−50)×10000 − 200000 = 500000 − 200000 = 3,00,000
+>
 > Proposed Profit = (80−50)×20000 − 200000 = 600000 − 200000 = 4,00,000
+>
 > **Yes, accept** — Profit increases from 3L to **4L** ✓
 
 ---
@@ -228,6 +249,7 @@ $$\text{Max Purchase Price/Unit} = \frac{\text{Variable Cost} + \text{Avoidable 
 **Q15:** VC Rs. 70000; FC Rs. 40000 (only Rs. 10000 avoidable); Units = 20000.
 
 > Avoidable Cost = 70000 + 10000 = 80000
+>
 > Max price = 80000 / 20000 = **Rs. 4 per unit** ✓
 
 ---
@@ -239,7 +261,9 @@ $$\text{Contribution per unit of scarce resource} = \frac{\text{Contribution/uni
 **Q44:** Product A: Contribution Rs. 10, requires 3 hrs. Product B: Contribution Rs. 15, requires 5 hrs.
 
 > A = 10/3 = Rs. 3.33/hr
+>
 > B = 15/5 = Rs. 3.00/hr
+>
 > **Product A gets priority** (higher contribution per machine hour) ✓
 
 ---
@@ -251,7 +275,9 @@ $$\%\Delta \text{Profit} = \text{DOL} \times \%\Delta \text{Sales}$$
 **Q17:** DOL: Product A = 1.20, Product B = 2.00. Sales increase = 20%.
 
 > A profit increase = 1.20 × 20% = 24%
+>
 > B profit increase = 2.00 × 20% = 40%
+>
 > **Product B's profit increases more** ✓
 
 ---
@@ -267,6 +293,7 @@ $$\text{Production} = \text{Budgeted Sales} + \text{Desired Closing Stock} - \te
 **Q18:** Jan Sales = 30000; Feb Sales = 28000; Policy: 10% of next month as closing; Opening = 500.
 
 > Closing Stock = 10% × 28000 = 2800
+>
 > Production = 30000 + 2800 − 500 = **32300 units** ✓
 
 ---
@@ -278,6 +305,7 @@ $$\text{RM Purchases} = (\text{Production} \times \text{Material/unit}) + \text{
 **Q19:** Production = 32300 units; 2 KG/unit; Desired Closing RM = 2000 KG; Opening RM = 0.
 
 > RM needed = 32300 × 2 = 64600 KG
+>
 > Purchases = 64600 + 2000 − 0 = **66600 KGs** ✓
 
 ---
@@ -313,14 +341,19 @@ $$\text{Under/Over} = \text{Applied} - \text{Actual}$$
 **Q29:** Budgeted OH = 100000; Budgeted Hrs = 1000; Actual Hrs = 1200; Actual OH = 110000.
 
 > Rate = 100000/1000 = Rs. 100/hr
+>
 > Applied = 1200 × 100 = 120000
+>
 > Difference = 120000 − 110000 = +10000
+>
 > **Over-recovery of Rs. 10000** ✓
 
 **Q3:** Same formula but Actual Hrs = 800; Actual OH = 120000.
 
 > Applied = 800 × 100 = 80000
+>
 > Difference = 80000 − 120000 = −40000
+>
 > **Under-recovery of Rs. 40000** ✓
 
 ---
@@ -332,7 +365,9 @@ $$\text{MCV} = (\text{Actual Output} \times \text{Std Qty/unit} \times \text{Std
 **Q22:** Budgeted: 1000 units, 5 KG/unit, Rs. 10/KG. Actual: 800 units, 4500 KG, Rs. 12/KG.
 
 > Std Cost = 800 × 5 × 10 = 40000
+>
 > Actual Cost = 4500 × 12 = 54000
+>
 > MCV = 40000 − 54000 = **Rs. 14000 Adverse** ✓
 
 ---
@@ -370,7 +405,9 @@ $$\text{Sales Volume Variance} = (\text{AQ} - \text{BQ}) \times \text{SP}$$
 **Q25:** Budgeted: 10L units × Rs. 100. Actual: 12L units × Rs. 95.
 
 > Total = (12L × 95) − (10L × 100) = 1140L − 1000L = **Rs. 140L Favourable**
+>
 > Price Variance = (95 − 100) × 12L = **Rs. 60L Adverse**
+>
 > Volume Variance = (12L − 10L) × 100 = **Rs. 200L Favourable** ✓
 
 $$\boxed{140\text{L (F)} = -60\text{L (A)} + 200\text{L (F)}}$$
