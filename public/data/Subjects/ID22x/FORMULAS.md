@@ -1,7 +1,3 @@
-# Indian Knowledge Systems — Comprehensive Revision Notes
-
----
-
 ## MODULE 1: IKS Corpus & Vedic Foundation
 
 ---
