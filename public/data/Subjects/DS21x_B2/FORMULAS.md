@@ -68,7 +68,6 @@ Standard Error of $\bar{X}$: $\sigma / \sqrt{n}$
 
 > The linear combination is also normally distributed.
 > The mean is the sum of the means, and the variance is the sum of the variances.
-> **Answer: B** ✓
 
 ---
 
@@ -82,7 +81,6 @@ $$\text{Mean} = k, \quad Var = 2k$$
 
 > Used primarily for hypothesis testing of categorical data (goodness-of-fit, independence).
 > Right-skewed, only takes non-negative values.
-> **Answer: A** ✓
 
 ---
 
@@ -107,7 +105,6 @@ $$\text{Mean} = 0, \quad Var = \frac{k}{k-2}$$
 
 > Used when sample size is small and population σ is unknown.
 > Symmetric around mean of 0, fatter tails than normal.
-> **Answer: B** ✓
 
 ---
 
@@ -121,7 +118,6 @@ $$\text{Mean} = \frac{k_2}{k_2 - 2}$$
 
 > Used to test the equality of variances between two populations.
 > Ratio of two chi-square variables; used in ANOVA.
-> **Answer: D** ✓
 
 ---
 
@@ -192,7 +188,6 @@ $$Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}}$$
 **Q29:** Which statement best describes the CLT?
 
 > The sampling distribution of the sample mean approaches a normal distribution as the sample size increases.
-> **Answer: D** ✓
 
 ---
 
@@ -218,7 +213,6 @@ Conditions: $np \ge 5$ and $n(1-p) \ge 5$
 **Q30:** Which is true about the sampling distribution of the sample proportion?
 
 > Approaches normal as $n$ increases, given $np$ and $n(1-p)$ are greater than 10.
-> **Answer: C** ✓
 
 ---
 
@@ -268,37 +262,30 @@ $$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
 **Q25:** Which step is NOT part of the sampling process?
 
 > Analyzing the data is a post-sampling activity, not part of the sampling process itself.
-> **Answer: D** ✓
 
 **Q26:** Which is an example of a probability sampling method?
 
 > Simple random sampling — every member has an equal, known, non-zero chance of selection.
-> **Answer: C** ✓
 
 **Q27:** Primary objective of analyzing sample data?
 
 > To infer characteristics of the population.
-> **Answer: B** ✓
 
 **Q28:** What best describes a sampling distribution?
 
 > The distribution of a sample statistic calculated from repeated samples.
-> **Answer: B** ✓
 
 **Q31:** Sampling variance of a sample mean vs sample size?
 
 > Sampling variance $\sigma^2/n$ decreases as $n$ increases.
-> **Answer: A** ✓
 
 **Q32:** What is a point estimator?
 
 > A statistic used to estimate a population parameter (e.g., $\bar{x}$ estimates $\mu$).
-> **Answer: B** ✓
 
 **Q33:** Example of a non-sampling error?
 
 > Using a sampling frame that excludes part of the population (coverage error).
-> **Answer: D** ✓
 
 ---
 
@@ -464,37 +451,30 @@ If $p$ unknown → use $p = 0.5$
 **Q34:** What does a 95% confidence interval mean?
 
 > If we take 100 different samples, approximately 95 of the CIs would contain the true parameter.
-> **Answer: B** ✓
 
 **Q35:** Effect of sample size on margin of error?
 
 > Increasing $n$ reduces the margin of error → narrower, more precise CI.
-> **Answer: D** ✓
 
 **Q36:** When σ is known, which distribution is used?
 
 > The Z-distribution, because the population σ is known.
-> **Answer: D** ✓
 
 **Q37:** What does sample standard deviation $s$ represent when σ is unknown?
 
 > An estimate of the population standard deviation.
-> **Answer: A** ✓
 
 **Q38:** What info is required to determine sample size for a CI?
 
 > Desired confidence level, population SD (or sample SD), and margin of error.
-> **Answer: D** ✓
 
 **Q39:** How to estimate $p$ when unknown for sample size calculation?
 
 > Use $p = 0.5$ — maximizes variance, gives conservative (largest) sample size.
-> **Answer: B** ✓
 
 **Q40:** What describes the CI for population variance?
 
 > It estimates the range within which the true population variance lies.
-> **Answer: A** ✓
 
 ---
 
@@ -658,32 +638,26 @@ $$\chi^2 = \frac{(n-1)s^2}{\sigma_0^2}, \quad df = n-1$$
 **Q41:** What is the purpose of significance level α?
 
 > Probability of rejecting the null hypothesis when it is true (Type I error).
-> **Answer: B** ✓
 
 **Q42:** When do we reject $H_0$?
 
 > When the p-value is less than or equal to α.
-> **Answer: D** ✓
 
 **Q43:** What is a Type I error?
 
 > Rejecting a true null hypothesis (false positive).
-> **Answer: B** ✓
 
 **Q44:** Which test for population mean when $n > 30$?
 
 > Z-test — CLT ensures normality of sample mean.
-> **Answer: A** ✓
 
 **Q45:** Which test for population proportion?
 
 > Z-test — uses normal approximation to binomial.
-> **Answer: B** ✓
 
 **Q46:** Which test for population variance?
 
 > Chi-square test.
-> **Answer: C** ✓
 ## Covariance & Correlation
 
 ---
@@ -726,17 +700,14 @@ $$r = \frac{S_{xy}}{S_x \cdot S_y}, \quad -1 \le r \le 1$$
 **Q47:** If covariance between X and Y is zero, what does it imply?
 
 > No **linear** relationship — a non-linear relationship could still exist.
-> **Answer: B** ✓
 
 **Q48:** Which statement about correlation is NOT true?
 
 > "Correlation of 0 implies no relationship" is false — only no *linear* relationship.
-> **Answer: D** ✓
 
 **Q49:** Key advantage of correlation over covariance?
 
 > Correlation is scale-free ($-1$ to $1$), making comparisons across datasets easier.
-> **Answer: C** ✓
 
 ---
 
