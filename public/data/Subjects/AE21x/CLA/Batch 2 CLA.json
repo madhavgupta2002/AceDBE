@@ -1,0 +1,723 @@
+{
+    "exam_metadata": {
+        "subject_name": "Business Communication",
+        "exam_date": "Batch 1",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "CLA 1 - Quiz 1",
+            "question_text": "Read the short passage (the 'scenario') that follows:\n\nPassage:\nA teacher sends an email to her class outlining the requirements for a group presentation. The email states that the students have to prepare a report on the assigned topic and bring a hard copy to the class on the following Monday. Students read the email and assume that 'report' meant 'a brief summary'. They do not ask the teacher for clarification. On Monday, most students arrive with a short summary, while the teacher had expected a longer, more detailed report.\n\nIn this scenario which of the following options best describes the communication process that unfolded?\nChoose one.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The teacher encodes the message, sends it via email, students decode it based on their assumption, but they fail to provide feedback which might have avoided the confusion that ensued.",
+                "B": "The teacher sends a vague message, but the students decode it correctly, and the teacher receives the feedback on time.",
+                "C": "The teacher sends an unclear message, the students encode a different interpretation and provides feedback to confirm their understanding.",
+                "D": "The teacher uses informal language and a wrong channel of communication, and the student misinterprets the feedback leading to confusion."
+            },
+            "correct_option_label": "A",
+            "explanation": "The communication process involves the sender encoding a message and the receiver decoding it. The crucial missing step here is feedback; without asking for clarification, the students decoded the message based on assumptions, leading to ineffective communication.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 1 - Quiz 2",
+            "question_text": "Read the statement given below. From the options provided, select the one that best completes the sentence.\n\nStatement:\nSpoken and written communication which is focused, reliable, and disciplined has the power to ______.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "distract and confuse the audience",
+                "B": "influence opinion and shape perception",
+                "C": "decrease trust and credibility",
+                "D": "limit the reach of the message"
+            },
+            "correct_option_label": "B",
+            "explanation": "Effective business communication that is well-structured and disciplined serves as a powerful tool to build trust, shape organizational perception, and appropriately influence stakeholder opinions.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 1 - Quiz 3",
+            "question_text": "Which one of the options best interprets the statement that follows?\n\nStatement:\nIn today's flat world, communication has emerged as arguably the most important source of competitive advantage.\n\nWhich one of the following options best interprets the above statement?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Communication is more important than technology in a globalized world.",
+                "B": "Effective communication can significantly contribute to gaining an edge in business.",
+                "C": "Competitive advantage is the only benefit of effective communication.",
+                "D": "Communication is relevant in a flat world."
+            },
+            "correct_option_label": "B",
+            "explanation": "In an increasingly undifferentiated 'flat' market, the ability to clearly articulate intent and build relationships via effective communication sets businesses apart and grants them a significant competitive advantage.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 1 - Quiz 4",
+            "question_text": "Read the statement given below. From the options provided, select the one that best completes the sentence.\n\nStatement:\nIn communication, being context-sensitive means __________:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "ignoring the emotional state of the audience.",
+                "B": "constructing the message based on the situation and the needs of the audience.",
+                "C": "speaking in the same tone regardless of the setting.",
+                "D": "using complex language to impress the audience."
+            },
+            "correct_option_label": "B",
+            "explanation": "Being context-sensitive implies an 'Audience Flex'—adapting the content, tone, and delivery method of a message to align with the specific situational dynamics and the recipient's needs.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 1 - Quiz 5",
+            "question_text": "Read the statement given below. From the options provided, select the one that best completes the sentence.\n\nStatement:\nCharts and graphs, as visual communication tools, are effective because they ________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "can replace all forms of written communication.",
+                "B": "only serve as decoration in reports and presentations.",
+                "C": "require no explanation for the audience to understand.",
+                "D": "help communicate complex data and make trends easily understandable"
+            },
+            "correct_option_label": "D",
+            "explanation": "Visual communication efficiently packs high-density information. Charts and graphs simplify complex numerical data, allowing managers and stakeholders to quickly identify trends and insights.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 1 - Quiz 6",
+            "question_text": "Read the statement given below. From the options provided, select the one that best completes the sentence.\n\nStatement:\nAwareness of Metacommunication helps us ____________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "better understand and interpret verbal messages",
+                "B": "analyse the barriers to communication",
+                "C": "remove communication barriers.",
+                "D": "infer meaning based on the verbal messages alone."
+            },
+            "correct_option_label": "A",
+            "explanation": "Metacommunication (communication about communication) includes body language and paralanguage. It provides the underlying cues that help listeners accurately interpret the true meaning behind spoken words.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 1 - Quiz 7",
+            "question_text": "Read the sentences that follow. Pick the one that provides the most appropriate register for interaction between colleagues in a workplace setting.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Could you be so kind as to send me the requested information at your earliest convenience?",
+                "B": "Sneha, could you please send me that info when you get a moment?",
+                "C": "Hey, when you get a chance, could you shoot me that info?",
+                "D": "Bro, please ping me the required data when you're able to do so’"
+            },
+            "correct_option_label": "B",
+            "explanation": "Option B perfectly captures the standard professional register for colleague interactions—it is courteous, respectful, and appropriately direct without being overly formal or improperly casual.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 1 - Quiz 8",
+            "question_text": "Which one of the following statements is minimally ambiguous, and therefore more concrete?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "We will review the proposal by the end of this week and provide feedback.",
+                "B": "The proposal will be reviewed on Monday, and we will send our response shortly.",
+                "C": "The proposal will be thoroughly examined during our team meeting next week.",
+                "D": "We will review the proposal next Monday and send you our response at 1700 hrs that day."
+            },
+            "correct_option_label": "D",
+            "explanation": "Concreteness ensures no room for guesswork. Specifying the exact day ('next Monday') and a precise time ('1700 hrs') provides maximum clarity and minimizes ambiguity.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 1 - Quiz 9",
+            "question_text": "Complete the sentence that follows by selecting the option that best describes business messages.\n\nSentence\nThe three most basic characteristics of a business message are ___________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "creativity, brevity, and enthusiasm.",
+                "B": "formality, emotion, and vocabulary",
+                "C": "structure, logic, and flow",
+                "D": "clarity, simplicity, and registry."
+            },
+            "correct_option_label": "C",
+            "explanation": "Unlike narrative fiction, effective business communication relies critically on a predictable physical structure, sound logic, and a smooth flow of arguments to ensure quick comprehension and actionable outcomes.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 1 - Quiz 10",
+            "question_text": "Read the following passage (which is an excerpt from the novel Pride and Prejudice by Jane Austen) carefully.\n\nPassage\nMr. Bingley was good enough to call at Longbourn, and Jane and Elizabeth were in the drawing room when he arrived. Mrs. Bennet was, as usual, anxious to make a good impression, and had prepared for him with a very fine breakfast. Mr. Bingley was as pleasant and agreeable as ever, and he and Jane exchanged pleasantries as they talked about the weather and the neighbourhood.\n\nAfter some time, Mr. Bingley invited Jane to come and dine at Netherfield. Mrs. Bennet, ever eager to secure a match for her daughters, was thrilled at the idea and immediately accepted for Jane. Jane was delighted, though Elizabeth, a little wary, began to notice Mr. Bingley's attention to her sister.\n\nThe next day, Jane was indeed invited to Netherfield, and Mrs. Bennet insisted that Jane should stay overnight to avoid the long, tiring journey home. Jane was pleased, but Elizabeth, feeling protective of her sister, began to worry about the consequences of such an invitation.\n\nWhich of the options that follow best describes the manner in which the passage is structured ? Select one.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Chronological",
+                "B": "Spatial",
+                "C": "Logical",
+                "D": "Topical"
+            },
+            "correct_option_label": "A",
+            "explanation": "The passage follows a clear timeline of events, transitioning through phrases like 'when he arrived', 'After some time', and 'The next day', which defines a chronological structure.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 1 - Quiz 11",
+            "question_text": "Read the following scenario carefully.\n\nScenario\nA software company has received the following feedback from its clients:\n1. Several clients have mentioned that the user interface of the software is difficult to navigate.\n2. A significant number of customer support calls in the last month have been related to confusion over specific features of the software.\n3. After implementing a minor redesign to make the interface more intuitive, customer support calls decreased by 30%. The company concludes that improving the user interface of the software leads to better customer understanding and fewer support issues. They decide to invest in User Interface improvements for other features of the software.\n\nWhat is the logical approach the company has deployed in reaching a decision to invest in an improved User Interface? Select one of the following options:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An inductive approach",
+                "B": "A deductive approach",
+                "C": "A realistic approach",
+                "D": "A factual approach to arrive at the decision"
+            },
+            "correct_option_label": "A",
+            "explanation": "The company observed specific, individual instances (client complaints, support tickets, success of a small fix) and used them to form a generalized principle/decision. This is inductive reasoning.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 1 - Quiz 12",
+            "question_text": "Fill the blank with one word to complete the sentence that follows. While doing so, do not enter blank spaces or special characters. Exact word will get full mark, and near match words will get no marks.\n\nThe sentence:\n____________ barriers to communication, such as stress, emotions, or preconceived notions, can distort a message and hinder effective communication.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Answer: Psychological. \nExplanation: Psychological barriers relate to the mental and emotional states of the communicators, such as bias, stress, and prejudice, which impede accurate interpretation.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 1 - Quiz 13",
+            "question_text": "Fill the blanks with two words to complete the sentence. While doing so, do not enter any special characters. Enter only one space in between two words. Exact two words will get full mark, and near match words will get no marks.\n\nThe sentence:\nDuring an appraisal meeting, Sanjay’s manager is providing feedback on his strengths and suggesting areas that might be improved. Sanjay is paying close attention and is responsive, signalling to the manager that he is listening. This type of listening is referred to as _______ ______.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Answer: active listening. \nExplanation: Active listening is a psychological process that involves fully concentrating, understanding, responding, and remembering what is being said.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 1 - Quiz 14",
+            "question_text": "Fill the blank with one word to complete the sentence that follows. While doing so, do not enter blank spaces or special characters. Exact word will get full mark, and near match words will get no marks.\n\nThe sentence:\n___________ is the term used to describe the study of body language and nonverbal communication that uses physical actions to convey meaning.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Answer: Kinesics. \nExplanation: Kinesics is the study of how body movements, gestures, facial expressions, and posture communicate information non-verbally.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 1 - Quiz 15",
+            "question_text": "Read the statement below.\n\nThe statement\nIn a workplace setting, a manager's use of a sarcastic tone when giving feedback can be considered a form of metacommunication that may influence how the employee interprets the content of the feedback, regardless of the words used.\n\nIs the statement is True or False? Select the appropriate answer.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True",
+                "B": "False"
+            },
+            "correct_option_label": "A",
+            "explanation": "A sarcastic tone falls under paralanguage (vocalics), which is a crucial element of metacommunication. Tone heavily influences the ultimate meaning the receiver deduces beyond the literal text.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA 2 - Quiz 1",
+            "question_text": "Choose the best option given below to complete the following sentence meaningfully.\n\nWritten communication ensures _________________ .",
+            "question_type": "MCQ",
+            "options": {
+                "A": "repeated access",
+                "B": "easy expression of emotions",
+                "C": "immediate feedback",
+                "D": "clear understanding"
+            },
+            "correct_option_label": "A",
+            "explanation": "Written communication leaves a permanent record, allowing recipients to archive, reference, and access the exact information repeatedly at their convenience.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 2 - Quiz 2",
+            "question_text": "Choose the correct option that represents the process of writing accurately",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Drafting, Reviewing, Editing ,Planning",
+                "B": "Reviewing, Planning, Drafting, Editing",
+                "C": "Planning, Drafting, Reviewing and Editing",
+                "D": "Revising, composing, Synthesis and proof reading"
+            },
+            "correct_option_label": "C",
+            "explanation": "The standard four-step writing framework progresses logically through Planning (pre-writing), Drafting (writing without filtering), Reviewing/Revising (structuring), and Editing (polishing).",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 2 - Quiz 3",
+            "question_text": "Choose the best option given below to complete the following sentence meaningfully.\n\nThe indirect approach to writing __________________________________________ .",
+            "question_type": "MCQ",
+            "options": {
+                "A": "mitigates negative reaction by the reader",
+                "B": "guarantees immediate understanding",
+                "C": "avoids the need for structure",
+                "D": "eliminates all confusion"
+            },
+            "correct_option_label": "A",
+            "explanation": "The indirect approach typically uses a buffer before delivering the core message, making it the preferred method for conveying bad news to mitigate an initial emotional or negative reaction.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 2 - Quiz 4",
+            "question_text": "Choose the best option given below to complete the following sentence meaningfully\n\nGenerative AI apps can yield best results when _________________________________ .",
+            "question_type": "MCQ",
+            "options": {
+                "A": "they are used without any prior training data",
+                "B": "they operate in isolation with human input",
+                "C": "they rely solely on unverified sources",
+                "D": "they are used with clear, specific instructions"
+            },
+            "correct_option_label": "D",
+            "explanation": "AI models operate on the principle of 'Garbage In, Garbage Out'. Therefore, yielding high-quality, relevant results strictly requires clear, highly specific instructional prompts.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 2 - Quiz 5",
+            "question_text": "Choose from the options given below to complete the statement.\n\nIn business communication, when using the inverted pyramid structure, you should start with the main point to grab the reader's attention, followed by the ___________ , and finish with less critical information or background.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "general idea",
+                "B": "thesis statement",
+                "C": "supporting details",
+                "D": "anti thesis"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Inverted Pyramid places the most critical recommendation at the top, immediately followed by the most important supporting details, with background information tapering off at the end.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 2 - Quiz 6",
+            "question_text": "Choose the best option that correctly answers the following question.\n\nHow does cultural stereotyping affect the exchange of ideas at the workplace?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It promotes open and honest dialogue among all employees.",
+                "B": "It helps employees focus on shared goals and objectives.",
+                "C": "It can lead to misinterpretations, misunderstandings, and hinder effective collaboration.",
+                "D": "It ensures that every employee is heard and valued equally."
+            },
+            "correct_option_label": "C",
+            "explanation": "Cultural stereotyping creates psychological and cultural barriers, fostering biases that cloud judgment and severely hinder mutual understanding and organizational collaboration.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 2 - Quiz 7",
+            "question_text": "Read the following business email carefully to answer the question given below:\n\nDear Tushar,\n\nI hope you're doing well. I would like to schedule a meeting to discuss the marketing strategy for the first quarter of this year. I believe it’s important to review our current plans, analyse potential improvements, and align our goals for the upcoming months.\n\nLet me know your availability for a meeting this week or next to discuss the above.\n\nLooking forward to your response.\n\nWith Best Regards,\n\nSindhu\n\nNow, identify the most appropriate subject line from the options.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Request for a Meeting to Discuss Q1 Marketing Strategy",
+                "B": "Meeting notice Q1 discussion",
+                "C": "Marketing strategy meeting",
+                "D": "Lets discuss Q1"
+            },
+            "correct_option_label": "A",
+            "explanation": "An effective email subject line must be specific, professional, and descriptive enough to inform the recipient exactly what the email entails at a glance.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 2 - Quiz 8",
+            "question_text": "Read the following business email and identify the writing approach adopted by Sindhu. While doing so, do not enter blank spaces or special characters. Exact word will get full mark, and near match words will get no marks.\n\nDear Samir,\n\nI hope you're doing well. I would like to schedule a meeting to discuss the marketing strategy for the first quarter of this year. I believe it’s important to review our current plans, analyse potential improvements, and align our goals for the upcoming months.\n\nLet me know your availability this week or the next for a meeting to discuss the above.\n\nLooking forward to your response.\n\nWith Best regards,\n\nSindhu\n\nYour task is to respond by filling in the blank (one word) to complete the sentence that follows.\n\nThe approach being deployed here is the ______________style of writing.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Answer: direct. \nExplanation: By stating the objective right in the opening paragraph without buffering, the sender employs a direct approach suited for routine and positive interactions.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 2 - Quiz 9",
+            "question_text": "Fill the blanks with two words to complete the sentence. While doing so, do not enter any special characters. Enter only one space in between two words. Exact two words will get full mark, and near match words will get no marks.\n\nIn the ___________ ____________ letter style, all parts of the letter are aligned at left margin.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Answer: full block. \nExplanation: Full Block Format is a standard convention in professional letter writing where all components (date, address, body, sign-off) are flush with the left margin.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 2 - Quiz 10",
+            "question_text": "Fill the blanks with two words to complete the sentence. While doing so, do not enter any special characters. Enter only one space in between two words. Exact two words will get full mark, and near match words will get no marks.\n\nWhen the core message is first established and then the argument is presented to support the core message, the structural model applied would be the __________ ________ structure.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Answer: inverted pyramid. \nExplanation: Stemming from journalism, the inverted pyramid places the \"lead\" (core message) upfront so the reader grasps the main point before delving into the supporting arguments.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 2 - Quiz 11",
+            "question_text": "Fill in each of the three blanks with a suitable word to result in a meaningful sentence.\n\nThe OBC structure which helps in easy organisation of ideas stands for __________ ,___________ and ___________.\n\n(You will get full marks if all the answers are correct, or zero mark if any one answer is wrong.)",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Answer: opening, body, close. \nExplanation: OBC refers to the tri-part physical structure of a business document: Opening (introductory context), Body (main arguments), and Closing (call to action).",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 2 - Quiz 12",
+            "question_text": "Fill in the blank with a suitable word to make a meaningful sentence.\n\nWhen budgeting your time for writing a business message, 80% of the available time should be invested for the Planning, Review and ________ phases.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Answer: Editing. \nExplanation: According to the 40-20-40 rule, drafting only takes 20% of the time, meaning the remaining 80% is allocated to planning, reviewing, and editing.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 2 - Quiz 13",
+            "question_text": "Determine whether the following statement is True or False. Select one of the options listed to select your choice.\n\nWhile we have heard the adage that less is more, in writing , at the Drafting stage, more is better.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True",
+                "B": "False"
+            },
+            "correct_option_label": "A",
+            "explanation": "During the drafting phase, writers are encouraged to output as much content as possible without filtering or self-editing. The refinement process ('less is more') occurs later in editing.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 2 - Quiz 14",
+            "question_text": "Is the following statement True or False? Select one of the options listed to indicate your choice.\n\nThe Minto Pyramid model specifies that the recommendation or conclusion is positioned at the start and is followed by arguments that support this conclusion or recommendation, and that each argument is followed by evidentiary points to establish the logic presented.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True",
+                "B": "False"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Minto Pyramid Principle requires placing the central answer at the apex of the structure, logically supported by underlying branches of grouped arguments and detailed data.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 2 - Quiz 15",
+            "question_text": "Is the following statement True or False? Select one of the options listed to indicate your choice.\n\nThe STAR structure is an effective and useful communication framework that helps us to present responses in a clear and concise way, particularly in situations such as job interviews or performance reviews.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True",
+                "B": "False"
+            },
+            "correct_option_label": "A",
+            "explanation": "The STAR method (Situation, Task, Action, Result) is widely recognized as the standard framework for providing structured and impactful narrative responses in professional behavioral assessments.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA 3 - Quiz 1",
+            "question_text": "Why is it important for managers to be effective at interactive communication nowadays? Choose the best option given below to answer the following question correctly.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To improve their sartorial image in the workplace.",
+                "B": "To compensate for the lack of their technological proficiency.",
+                "C": "To enhance team collaboration and productivity.",
+                "D": "Because technology is making oral communication obsolete in the business milieu."
+            },
+            "correct_option_label": "C",
+            "explanation": "Interactive and interpersonal communication establishes trust and alignment, directly serving as the catalyst for enhanced collaboration, efficient problem-solving, and overall organizational productivity.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA 3 - Quiz 2",
+            "question_text": "Which of the following is a key characteristic of interpersonal communication? Choose the best option given below to answer the question that follows appropriately.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It promises risk free communication exchange.",
+                "B": "It is devoid of cultural, social, relational, and situational factors.",
+                "C": "It is transactional and involves both sending and receiving messages.",
+                "D": "It emphasises minimally on verbal communication."
+            },
+            "correct_option_label": "C",
+            "explanation": "Interpersonal communication is fundamentally a dynamic, closed-loop process where information and feedback are exchanged transactionally between communicators.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA 3 - Quiz 3",
+            "question_text": "Read the workplace scenario carefully and choose the best option given below to answer the question that follows appropriately.\n\nIn a workplace meeting, Sarita and Jagan are discussing a project deadline. Jagan feels that Sarita is not contributing enough and raises his voice, accusing her of not meeting expectations. Sarita, feeling attacked decides to not let Jagan get away with his accusations.\n\nQuestion:\nWhich of the following behaviours is most likely to manifest in this situation due to the \"fight\" response from Sarita?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "She calmly listen to Jagan's concerns and respond thoughtfully.",
+                "B": "She remains completely silent and avoids any eye contact.",
+                "C": "Sarita engages in deep, reflective thinking before saying or doing anything.",
+                "D": "She becomes simultaneously aggressive and defensive."
+            },
+            "correct_option_label": "D",
+            "explanation": "The 'fight' response is a physiological reaction to perceived attack, typically overriding logical dialogue and manifesting as aggressive and defensive retaliation.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA 3 - Quiz 4",
+            "question_text": "In a high-pressure meeting, your colleague makes a comment that frustrates you, and you feel the urge to retort immediately. What should you do to communicate more effectively?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lash out to defend your point of view, ensuring your opinion is heard.",
+                "B": "Take a deep breath, count to ten, and then respond calmly, considering all perspectives before reacting.",
+                "C": "Stay silent and not respond, hoping the issue will resolve itself.",
+                "D": "Interrupt your colleague to clarify your position right away, as it's important to correct any misunderstandings."
+            },
+            "correct_option_label": "B",
+            "explanation": "Emotional regulation is key to effective communication. Pausing and reflecting helps avoid non-constructive reactionary behavior, paving the way for measured, professional dialogue.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA 3 - Quiz 5",
+            "question_text": "Read the workplace scenario carefully and choose the best option given below to complete the statement correctly.\n\nAnil and Mala are work together on a project. Anil is well aware of his strengths and weaknesses and openly shares this with Mala. However, Mala is unsure about how much to disclose about herself and most often keeps her thoughts and feelings to herself.\n\nAccording to the Johari Window Model, Anil’s and Mala’s communication profiles will be classified as _____________________________________ .",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Arena and Facade respectively",
+                "B": "Facade in both cases",
+                "C": "Facade and Blind Spot respectively",
+                "D": "Blind Spot and Arena respectively"
+            },
+            "correct_option_label": "A",
+            "explanation": "In the Johari Window, 'Arena' describes information known to self and others (Anil's openness), while 'Facade' (or Hidden) refers to information known to self but consciously hidden from others (Mala's reticence).",
+            "module": 3
+        },
+        {
+            "question_id": "CLA 3 - Quiz 6",
+            "question_text": "Choose the best option given below to complete the statement that follows appropriately.\n\nStatement:\nOne factor that may not significantly influence an individual’s communication behaviour is ____________________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Emotional intelligence",
+                "B": "Emotional State",
+                "C": "Language proficiency",
+                "D": "Spoken accent"
+            },
+            "correct_option_label": "D",
+            "explanation": "While emotional intelligence, mood, and linguistic skill fundamentally change message construction and processing, an accent is simply a paralinguistic variance that does not dictate one's underlying communication behavior.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA 3 - Quiz 7",
+            "question_text": "How can facilitators improve their leadership effectiveness during team meetings? Choose the best option given below to answer the question appropriately.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "By avoiding involvement in discussions and letting team members decide everything.",
+                "B": "By actively guiding the conversation back on track when it goes off-topic and ensuring equal participation.",
+                "C": "By speaking the most during meetings to ensure that only their opinions are heard.",
+                "D": "By delegating all responsibilities to team members and stepping back entirely."
+            },
+            "correct_option_label": "B",
+            "explanation": "A facilitator's core duty is to guide team dynamics. This involves keeping discussions focused on agenda goals, managing time efficiently, and ensuring all members have an equal opportunity to participate.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA 3 - Quiz 8",
+            "question_text": "Read the following workplace scenario carefully and choose the best option given below to answer the question that follows appropriately:\n\nYou are a manager at a marketing firm. One of your team members, Arati, has been struggling with the quality of her presentations. Although she works hard and meets deadlines, her presentations often lack depth, and do not effectively communicate key points. You need to provide feedback on this issue.\n\nQuestion:\nWhich of the following options deploys the Hamburger method for giving feedback?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "\"Arati, your presentations have been lacking in depth lately. The content is often too basic and doesn't meet the expected standard. This needs to be improved, or it could impact your future projects.\"",
+                "B": "\"Arati, your dedication to meeting deadlines is commendable, and I can see you put a lot of work into your presentations. However, your content lacks depth of the key details that we usually expect. I believe that, with more focus on refining the key points, you can enhance the quality of your work significantly, and I’m confident you’ll improve.\"",
+                "C": "\"Arati, I appreciate your punctuality with deadlines, and I know you're putting in effort. However, the presentations need to communicate more key insights, as they often lack depth. Putting in sincere efforts in building presentations will help you.\"",
+                "D": "\"Arati, you're doing a great job keeping up with the deadlines, but I think your presentations could benefit from a bit more detail. You have the potential to do this.\""
+            },
+            "correct_option_label": "C",
+            "explanation": "The Hamburger method places constructive criticism between two layers of positive reinforcement. Option C clearly sandwiching the critique on depth between praise for punctuality and encouragement for future effort.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA 3 - Quiz 9",
+            "question_text": "Read the sentence that follows and determine whether it is True or False. In the context of effective listening, responding immediately to a speaker’s point without pausing to reflect or asking clarifying questions demonstrates better comprehension and retention of information.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True",
+                "B": "False"
+            },
+            "correct_option_label": "B",
+            "explanation": "Active listening requires cognitive processing. Reflecting, pausing, and clarifying demonstrate significantly better comprehension compared to immediate reactionary responses.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA 3 - Quiz 10",
+            "question_text": "Read the sentence that follows and determine whether it is True or False.\n\nThe Sentence: Rhetorical questions are deployed in communication because they are formulated to elicit reflection, an emotional response or to emphasize a perspective, rather than seeking a verbal response from the audience.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True",
+                "B": "False"
+            },
+            "correct_option_label": "A",
+            "explanation": "Rhetorical questions are tactical delivery tools designed to mentally engage the audience and stimulate thought processing, explicitly without requiring anyone to speak out loud.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA 3 - Quiz 11",
+            "question_text": "Read the sequence of questions that follow and then fill in the blank to complete the sentence meaningfully.\n\nIn an interview, the interviewer asked the following questions in the following order-\n\n• Can you tell me about your experience with project management?\n• What specific tools or strategies do you use when managing multiple projects simultaneously?\n• Can you walk me through how you handled a project where you faced significant challenges with tight deadlines?\"\n• Did you find it stressful?\n\nThe questioning method the interviewer has deployed here is referred to as the ______________________ technique.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Answer: Funnel. \nExplanation: The funnel technique starts with high-level, broad, open-ended questions and sequentially narrows down into granular, specific, or closed-ended questions.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA 3 - Quiz 12",
+            "question_text": "Read the statement below and fill in the blank to complete the sentence meaningfully\n\nUnlike closed questions, which can be answered with a simple \"yes\" or \"no,\" _________ questions encourage the person to explain, clarify, or elaborate further.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Answer: Open. \nExplanation: Open (or open-ended/probing) questions inherently demand more than a binary response, forcing the speaker to provide context, reasoning, and detailed narrative.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA 3 - Quiz 13",
+            "question_text": "Read the statement below and fill in the blank with an appropriate word to complete the sentence meaningfully\n\nInformal communication networks in organizations are referred to as the _________.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Answer: Grapevine. \nExplanation: The grapevine constitutes the unofficial layer of corporate communication, driven by social interaction and rumors, operating outside official organizational hierarchies.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA 4 - Quiz 1",
+            "question_text": "Choose the best option to complete the following statement meaningfully.\n\nThe Statement:\nOne of the reasons why the 10-20-30 rule is effective in presentations is _______________________ .",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It encourages excessive information to engage the audience, making the presentation more thorough.",
+                "B": "It helps keep the presentation concise and focused, ensuring the audience remains engaged and the message is clear.",
+                "C": "It allows the speaker to delve into finer details, which could be useful to the audience.",
+                "D": "It forces the speaker to rush through information without sufficient explanation."
+            },
+            "correct_option_label": "B",
+            "explanation": "Guy Kawasaki's 10-20-30 rule (10 slides, 20 mins, 30-pt font) is an anti-overload strategy designed specifically to distill presentations to their core essence, ensuring audience retention.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA 4 - Quiz 2",
+            "question_text": "Read the passage carefully and follow the instruction given below:\n\nThe Passage-\nJaspreet, the project manager, is preparing a presentation for an internal team of software engineers relating to a new system upgrade his team is implementing. He understands that AIM Communication Model is key to the success of his presentation. He is planning how he might tailor his approach to ensure that his message resonates well with the software engineers in the team\n\nThe Instruction:\nChoose the best option that includes the critical factors needed for aligning the audience, intent, and message effectively.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ensuring the message is brief enough to allow the software engineers to interpret it in their own way, thereby fostering creativity and focusing their efforts.",
+                "B": "Tailoring the depth of the content to match the software engineers' expertise, using clear, understandable language while emphasizing both the technical and business aspects of the upgrade.",
+                "C": "Relying solely on visual aids and avoiding spoken content to ensure the software engineers stay focused on the slides, based on the concept that a picture is worth a thousand words.",
+                "D": "Presenting as much technical details as possible in the shortest time to get the software engineers to understand the upgrade’s significance, and are able to meet the target and ensure success of the project."
+            },
+            "correct_option_label": "B",
+            "explanation": "Applying the AIM model (Audience, Intent, Message) requires a deep understanding of the specific target group (engineers) and mapping the technical depth of the message appropriately to their existing knowledge base.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA 4 - Quiz 3",
+            "question_text": "Read the passage carefully and follow the instruction given below.\n\nThe Passage:\nIn a manufacturing company , there has been a growing concern about the company's high rate of employee turnover. Over the past year, approximately 25% of employees have left, resulting in significant disruption to project timelines, team morale, and overall productivity. Many employees are leaving for higher-paying opportunities, better work-life balance, and more engaging work environments in competing manufacturing companies.\n\nThe Instruction:\nChoose the option from the four that follow which truly represents the structure : Cause –> Effect –> Solution.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Production is down 15 percent; the organization is experiencing a high rate of employee turnover; increase salaries and improve working conditions to retain employees",
+                "B": "increase salaries and improve working conditions to retain employees; the organization is seeing a high rate of employee turnover; the Production is down 15 percent",
+                "C": "the Production is down 15 percent; increase salaries and improve working conditions to retain employees; the organization is seeing a high rate of employee turnover",
+                "D": "the organization is seeing a high rate of employee turnover; the Production is down 15 percent; increase salaries and improve working conditions to retain employees"
+            },
+            "correct_option_label": "D",
+            "explanation": "This logical sequence structurally traces the root problem (Cause: turnover), the consequential business impact (Effect: lower production), and the actionable recommendation (Solution: better pay/conditions).",
+            "module": 4
+        },
+        {
+            "question_id": "CLA 4 - Quiz 4",
+            "question_text": "Choose the option that doesn’t support the following statement.\n\nThe Statement\nRegister in language refers to the variation in speech or writing depending on the context, purpose, and social dynamics of the situation. It changes based on __________________",
+            "question_type": "MCQ",
+            "options": {
+                "A": "factors such as the formality of the setting,",
+                "B": "the social roles of the participants",
+                "C": "the relationship between the speaker and the audience.",
+                "D": "extreme emotional state of the speaker"
+            },
+            "correct_option_label": "D",
+            "explanation": "Language register is structurally determined by formality, audience relationship, and social roles. An extreme emotional state represents a psychological disruption rather than a formalized linguistic register.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA 4 - Quiz 5",
+            "question_text": "Choose the option that best answers the following question.\n\nThe Question:\nWhich of the following is the most effective attention-getting technique to use at the beginning of a presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Starting with a long list of facts and figures",
+                "B": "Asking a thought-provoking question related to the topic",
+                "C": "Immediately diving into technical jargon to establish credibility",
+                "D": "Reading directly from a script without engaging the audience"
+            },
+            "correct_option_label": "B",
+            "explanation": "An 'Attention Getter' is crucial in the opening phase of a presentation. Using a thought-provoking (rhetorical) question instantly hooks the audience and demands cognitive engagement.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA 4 - Quiz 6",
+            "question_text": "Read the passage carefully and follow the instruction given below.\n\nThe Passage:\nYou are preparing a quarterly performance report for your team, and you wish to present the data in a way that is both engaging and easy to understand. Instead of simply displaying raw numbers and text-heavy slides, you decide to use infographics to visualize key metrics such as sales growth, market trends, and customer satisfaction.\n\nChoose the best option to complete the sentence from the four that follow:\n\nThe Sentence:\nYour goal of making information more digestible and memorable for your audience is best done by ____________________________________________ .",
+            "question_type": "MCQ",
+            "options": {
+                "A": "replacing all textual explanations, leaving only graphics for a more aesthetically pleasing presentation.",
+                "B": "simplifying complex data into clear, visually appealing formats that make it easier for the audience to grasp key insights quickly.",
+                "C": "focusing on visual appeal without worrying about the accuracy of the data presented.",
+                "D": "making the presentation shorter, allowing you to skip over important details and focus only on the visuals."
+            },
+            "correct_option_label": "B",
+            "explanation": "The primary role of visual aids is to support and clarify the message. Infographics translate dense metrics into visual hierarchies, accelerating audience comprehension without sacrificing necessary context.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA 4 - Quiz 7",
+            "question_text": "Choose the option that best answers the following question.\n\nThe Question:\nWhich of the following is the most effective way to ensure that audience remembers your presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "By providing a detailed explanation for every point in the middle of your presentation and by taking questions on the fly.",
+                "B": "By focusing on technical details throughout the presentation and providing handouts occasionally.",
+                "C": "By spending most of your time discussing background information to establish context and perspective from the audience point of view.",
+                "D": "By starting with an interesting introduction and concluding with a memorable summary and call to action."
+            },
+            "correct_option_label": "D",
+            "explanation": "Aligning with the \"Three Commandments\" of presenting, memory retention is maximized when speakers clearly introduce the agenda at the start and aggressively reinforce the core message during the conclusion.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA 4 - Quiz 8",
+            "question_text": "Choose the best option from the following:\n\nThe most suitable title for a slide with the following bullet points is -\n\n• \"Improves cardiovascular health\"\n• \"Boosts mood and energy\"\n• \"Promotes better sleep\"",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The Importance of Nutrition",
+                "B": "How to Boost Your Mood",
+                "C": "Physical Activity Benefits",
+                "D": "Improving Heart Health"
+            },
+            "correct_option_label": "C",
+            "explanation": "The listed bullet points are universally recognized physiological and psychological outcomes resulting directly from physical exercise, making option C the most encompassing slide title.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA 4 - Quiz 9",
+            "question_text": "Read the following question carefully and choose the best option from the following:\n\nThe Question:\nWhich of the following is least likely to support an effective presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Speaking in a monotone voice to maintain consistency",
+                "B": "Using varied intonation to emphasize key points",
+                "C": "Breathing deeply to project your voice clearly",
+                "D": "Varying your voice pitch and pace to keep the audience engaged"
+            },
+            "correct_option_label": "A",
+            "explanation": "Effective oral delivery relies heavily on vocal modulation. Speaking in a monotone voice severely inhibits engagement, signaling a lack of passion and causing audience fatigue.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA 4 - Quiz 10",
+            "question_text": "Choose the option that refers to the well- known guideline ‘Tell them what you have told them’.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reinforcing the key points at the end of the presentation",
+                "B": "Elaborating the core message in the middle of the presentation",
+                "C": "Beginning the presentation by listing the key points going to be discussed during the rest of the presentation",
+                "D": "Glossing over the core message at the start of the presentation"
+            },
+            "correct_option_label": "A",
+            "explanation": "The third directive of the 'Three Commandments of Presentations' dictates summarizing and restating the primary recommendations during the conclusion to imprint the message in the audience's mind.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA 4 - Quiz 11",
+            "question_text": "Is the following statement True or False?\n\nThe Statement:\nThe \"Rule of Seven\" in slide presentations suggests that it is effective to write long paragraphs of text and multiple detailed bullet points to provide as much information as possible.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True",
+                "B": "False"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Rule of Seven actually promotes minimalism on slides, advising presenters to use no more than seven lines of text per slide and a maximum of seven words per line to avoid text overload.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA 4 - Quiz 12",
+            "question_text": "Is the following statement True or False?.\n\nThe Statement:\nDuring presentations, an open stance posture projects self-assurance, makes the presenter seem more credible and trustworthy to your audience.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True",
+                "B": "False"
+            },
+            "correct_option_label": "A",
+            "explanation": "Kinesics (body language) dictates that maintaining an open, unshielded stance communicates approachability, vulnerability, and honesty, thereby significantly enhancing speaker credibility.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA 4 - Quiz 13",
+            "question_text": "Is the following statement True or False?.\n\nThe Statement:\nCrossing arms during a presentation is an effective way to project a high level of confidence.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True",
+                "B": "False"
+            },
+            "correct_option_label": "B",
+            "explanation": "In non-verbal communication, crossed arms are universally perceived as a defensive, closed-off, or hostile barrier rather than a display of self-assured confidence.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA 4 - Quiz 14",
+            "question_text": "Is the following statement True or False?.\n\nThe Statement: Story telling in a business milieu may not be entirely effective if any one of the three elements, namely- the Story, the Visuals, or the Telling is absent.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True",
+                "B": "False"
+            },
+            "correct_option_label": "A",
+            "explanation": "An impactful business presentation relies on the synthesis of structure (Story), design aesthetics (Visuals), and charismatic delivery (Telling); removing one destabilizes the effectiveness of the entire effort.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA 4 - Quiz 15",
+            "question_text": "Is the following statement True or False?.\n\nThe Statement: The text on your slides should have a font size of at least 16 points.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "True",
+                "B": "False"
+            },
+            "correct_option_label": "B",
+            "explanation": "Standard presentation heuristics, such as the 10-20-30 rule, mandate a minimum font size of 30 points to guarantee legibility from the back of the room; 16 points is far too small.",
+            "module": 4
+        }
+    ]
+}

@@ -2,80 +2,87 @@
 
 ---
 
-### Z-Score (Standardization)
+### Standard Normal Distribution
+
+#### Standardization
 
 $$Z = \frac{X - \mu}{\sigma}$$
 
-**Example:** Test scores are normally distributed with mean 75 and standard deviation 10. A student scored 85. Find the z-score.
+#### Inverse Formula
 
-> $Z = \frac{85 - 75}{10} = \frac{10}{10} = \mathbf{1.0}$ ✓
+$$X = \mu + Z\sigma$$
 
----
+* Standard Normal: Mean $= 0$, SD $= 1$
 
-### Linear Combination — Mean
+**Q10:** Scores are normally distributed with mean 75, SD 10. Find the z-score of a student that scored 85.
 
-$$E(Y) = a_1E(X_1) + a_2E(X_2) + \dots + a_nE(X_n) + b$$
+> *Why: Standardize raw score to compare across normal distributions.*
+> $z = \frac{85 - 75}{10} = \frac{10}{10}$
+> **z = 1.0** ✓
 
-### Linear Combination — Variance (Independent)
+**Q3:** Scores normally distributed with mean 80, variance 36. Lowest score for top 5% merit award?
 
-$$Var(Y) = a_1^2Var(X_1) + a_2^2Var(X_2) + \dots + a_n^2Var(X_n)$$
-
-**Example:** Given $X \sim N(2, 4)$ and $Y \sim N(3, 9)$, find the mean and variance of $Z = 3X + 2Y$.
-
-> $E(Z) = 3(2) + 2(3) = 6 + 6 = 12$
->
-> $Var(Z) = 3^2(4) + 2^2(9) = 36 + 36 = \mathbf{72}$ ✓
-
----
-
-### Special Cases Table
-
-| Scenario | Mean | Variance |
-|:---|:---|:---|
-| $Y = aX + b$ | $a\mu + b$ | $a^2\sigma^2$ |
-| $Y = X_1 + X_2$ | $\mu_1 + \mu_2$ | $\sigma_1^2 + \sigma_2^2$ |
-| $Y = X_1 - X_2$ | $\mu_1 - \mu_2$ | $\sigma_1^2 + \sigma_2^2$ |
-| $Y = \sum X_i$ (i.i.d.) | $n\mu$ | $n\sigma^2$ |
-| $\bar{X} = \frac{\sum X_i}{n}$ | $\mu$ | $\frac{\sigma^2}{n}$ |
-
-> **Key Rule:** Variances always **add**, even when subtracting variables.
+> *Why: Need cutoff for top 5% — find Z for 95th percentile, then convert back to raw score.*
+> $\sigma = \sqrt{36} = 6$
+> 📋 **Z-Table:** Find cumulative area = 0.95 → Row 1.6, Col .04 → 0.9495; Col .05 → 0.9505 → Z = 1.645
+> $x = \mu + Z\sigma = 80 + (1.645 \times 6) = 80 + 9.87 = 89.87$
+> **≈ 90** ✓
 
 ---
 
-### Inverse Normal — Finding Unknown $\sigma$
+### Linear Combination of Variables
 
-$$\sigma = \frac{X - \mu}{Z}$$
+If $Z = aX + bY + c$:
 
-**Example:** Mean filling weight is 658g. Only 3% of bottles weigh ≤ 610g. Find $\sigma$.
+#### Mean
 
-> $Z$ for 0.03 = $-1.88$
->
-> $\sigma = \frac{610 - 658}{-1.88} = \frac{-48}{-1.88} = \mathbf{25.52}$ ✓
+$$E(Z) = aE(X) + bE(Y) + c$$
 
----
+#### Variance (Independent Variables)
 
-### Inverse Normal — Finding Unknown $\mu$
+$$Var(Z) = a^2Var(X) + b^2Var(Y)$$
 
-$$\mu = X - Z \cdot \sigma$$
+#### Variance (Dependent Variables)
 
-**Example:** $\sigma = 0.05$ and $P(X \ge 11.9) = 0.995$. Find $\mu$.
+$$Var(Z) = a^2Var(X) + b^2Var(Y) + 2ab \cdot Cov(X,Y)$$
 
-> $Z$ for lower tail 0.005 = $-2.57$
->
-> $\mu = 11.9 - (-2.57)(0.05) = 11.9 + 0.1285 = \mathbf{12.03}$ ✓
+#### Important Special Cases
+
+| Case | Mean | Variance |
+|------|------|----------|
+| $X + Y$ | $\mu_X + \mu_Y$ | $\sigma_X^2 + \sigma_Y^2$ |
+| $X - Y$ | $\mu_X - \mu_Y$ | $\sigma_X^2 + \sigma_Y^2$ |
+| $\bar{X}$ | $\mu$ | $\sigma^2 / n$ |
+
+Standard Error of $\bar{X}$: $\sigma / \sqrt{n}$
+
+**Q20:** $X \sim N(2,4)$, $Y \sim N(3,9)$. Find mean and variance of $Z = 3X + 2Y$.
+
+> *Why: Linear combination of independent normals — apply coefficient rules for E and Var.*
+> $E[Z] = 3(2) + 2(3) = 12$
+> $Var(Z) = 3^2(4) + 2^2(9) = 36 + 36$
+> **Variance = 72** ✓
+> *(Variances always add for independent variables; use squared coefficients)*
+
+**Q19:** Which is true about the linear combination of independent normal random variables?
+
+> The linear combination is also normally distributed.
+> The mean is the sum of the means, and the variance is the sum of the variances.
+> **Answer: B** ✓
 
 ---
 
 ### Chi-Square Distribution
 
-$$\chi^2_k = Z_1^2 + Z_2^2 + \dots + Z_k^2$$
+$$\chi^2 = \sum Z_i^2, \quad df = k$$
 
-| Property | Value |
-|:---|:---|
-| Mean | $k$ |
-| Variance | $2k$ |
-| Domain | $\ge 0$ only |
-| Shape | Right-skewed → Normal as $k$ increases |
+$$\text{Mean} = k, \quad Var = 2k$$
+
+**Q21:** Which is true about the Chi-Square Distribution?
+
+> Used primarily for hypothesis testing of categorical data (goodness-of-fit, independence).
+> Right-skewed, only takes non-negative values.
+> **Answer: A** ✓
 
 ---
 
@@ -83,415 +90,692 @@ $$\chi^2_k = Z_1^2 + Z_2^2 + \dots + Z_k^2$$
 
 $$t = \frac{Z}{\sqrt{\chi^2 / k}}$$
 
-| Property | Value |
-|:---|:---|
-| Mean | $0$ (for $k > 1$) |
-| Variance | $\frac{k}{k-2}$ (for $k > 2$) |
-| Shape | Symmetric, heavier tails than Normal |
-| Convergence | $t \to Z$ as $k \to \infty$ |
+$$\text{Mean} = 0, \quad Var = \frac{k}{k-2}$$
+
+* Bell-shaped, heavier tails than normal
+* Approaches normal as $k \to \infty$
+
+**Q5:** Probability that $t$ with 5 df takes values between −2.0 and 0.5:
+
+> *Why: Direct t-distribution CDF problem — use t-table to bound tail probabilities.*
+> 📋 **t-Table:** df = 5; $t_{0.050}$ = 2.015 → since |−2.0| < 2.015, $P(t < -2.0) \approx 0.05$
+> $P(t < 0.5) \approx 0.68$; $P(t < -2.0) \approx 0.05$
+> $P(-2.0 < t < 0.5) = 0.68 - 0.05 = 0.63$
+> **Between 0.60 and 0.80** ✓
+
+**Q22:** Which is true about the Student's t-Distribution?
+
+> Used when sample size is small and population σ is unknown.
+> Symmetric around mean of 0, fatter tails than normal.
+> **Answer: B** ✓
 
 ---
 
-### F-Distribution
+### F Distribution
 
-$$F_{k_1, k_2} = \frac{\chi^2_1 / k_1}{\chi^2_2 / k_2}$$
+$$F = \frac{\chi_1^2 / k_1}{\chi_2^2 / k_2}$$
 
-| Property | Value |
-|:---|:---|
-| Mean | $\frac{k_2}{k_2 - 2}$ (for $k_2 > 2$) |
-| Domain | $\ge 0$ only |
-| Shape | Right-skewed |
+$$\text{Mean} = \frac{k_2}{k_2 - 2}$$
 
----
+**Q23:** Which is true about the F-Distribution?
 
-## MODULE 2: Sampling and Sampling Distributions
+> Used to test the equality of variances between two populations.
+> Ratio of two chi-square variables; used in ANOVA.
+> **Answer: D** ✓
 
 ---
 
-### Standard Error of the Mean
+### Distribution Properties (True/False)
 
-$$\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}$$
+**Q24:** All true:
 
-**Example:** A bakery produces muffins with average weight 100g and $\sigma = 5$g. For a sample of 25 muffins, find $P(\bar{x} > 102)$.
-
-> $\sigma_{\bar{x}} = \frac{5}{\sqrt{25}} = 1$
->
-> $Z = \frac{102 - 100}{1} = 2.0$
->
-> $P(Z > 2.0) = 1 - 0.9772 = \mathbf{0.022}$ ✓
+> Chi-square distribution is used to test independence of categorical variables. ✓
+> Student's t approaches normal as sample size increases. ✓
+> F-distribution is used to compare two population variances. ✓
+> Chi-square, t, and F distributions are all continuous probability distributions. ✓
 
 ---
 
-### Variance of the Sample Mean
+## MODULE 2: Sampling & Sampling Distributions
+
+---
+
+### Standard Error of Mean
+
+$$SE = \frac{\sigma}{\sqrt{n}}$$
+
+### Variance of Sample Mean
 
 $$Var(\bar{X}) = \frac{\sigma^2}{n}$$
 
-**Example:** Population has $\sigma^2 = 4.41$. For $n = 20$ plants, find the variance of the average height.
-
-> $Var(\bar{X}) = \frac{4.41}{20} = \mathbf{0.2205}$ ✓
-
----
-
-### Z-Score for Sample Mean (CLT)
-
-$$Z = \frac{\bar{x} - \mu}{\sigma / \sqrt{n}}$$
-
-> **CLT Condition:** Applies when $n \ge 30$, regardless of population shape.
-
----
-
 ### Standard Error of Proportion
 
-$$\sigma_{\bar{p}} = \sqrt{\frac{p(1-p)}{n}}$$
+$$SE = \sqrt{\frac{p(1-p)}{n}}$$
 
-**Example:** In a survey of 24 students, 7 spend more than 2 hours on social media. Find the standard error.
+**Q1:** Average daily earnings = 2400, SD = 360, sample of 45. Probability sample mean between 2300 and 2500?
 
-> $\hat{p} = 7/24 \approx 0.2917$
->
-> $SE = \sqrt{\frac{0.2917 \times 0.7083}{24}} = \sqrt{0.0086} \approx \mathbf{0.093}$ ✓
+> *Why: n = 45 ≥ 30, σ known — CLT applies, use Z with SE of sample mean.*
+> $SE = \frac{360}{\sqrt{45}} \approx 53.67$
+> $Z_1 = \frac{2300 - 2400}{53.67} \approx -1.86$
+> $Z_2 = \frac{2500 - 2400}{53.67} \approx 1.86$
+> 📋 **Z-Table:** Row 1.8, Col .06 → 0.9686; by symmetry P(Z < −1.86) = 0.0314
+> $P(-1.86 < Z < 1.86) = 0.9686 - 0.0314 = 0.9372$
+> **Between 0.75 and 1.00** ✓
+
+**Q12:** The variance of the sampling distribution of the sample mean is:
+
+> *Why: Variance of X̄ shrinks by factor n — central property of sampling distributions.*
+> $Var(\bar{X}) = \frac{\sigma^2}{n}$
+> **Answer: $\sigma^2 / n$** ✓
 
 ---
 
-### Z-Score for Proportion
+### Central Limit Theorem (CLT)
 
-$$Z = \frac{\bar{p} - p}{\sqrt{p(1-p)/n}}$$
+For large $n$ ($\ge 30$):
 
-> **Normal Approximation Condition:** $np \ge 5$ and $n(1-p) \ge 5$.
+$$\bar{X} \sim N\left(\mu, \frac{\sigma}{\sqrt{n}}\right)$$
+
+#### Z-score for Sample Mean
+
+$$Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}}$$
+
+**Q11:** Muffins: mean 100 gms, SD 5 gms. Sample of 25. Probability sample mean > 102 gms?
+
+> *Why: σ known, finding P(X̄ > value) — standardize to Z and look up normal table.*
+> $SE = \frac{5}{\sqrt{25}} = 1$
+> $z = \frac{102 - 100}{1} = 2.0$
+> 📋 **Z-Table:** Row 2.0, Col .00 → 0.9772
+> $P(Z > 2.0) = 1 - 0.9772 = 0.0228$
+> **≈ 0.022** ✓
+
+**Q29:** Which statement best describes the CLT?
+
+> The sampling distribution of the sample mean approaches a normal distribution as the sample size increases.
+> **Answer: D** ✓
 
 ---
 
-### Chi-Square Relation for Sample Variance
+### Sampling Distribution of Proportion
+
+$$\hat{p} \sim N\left(p, \sqrt{\frac{p(1-p)}{n}}\right)$$
+
+#### Z-score for Sample Proportion
+
+$$Z = \frac{\hat{p} - p}{\sqrt{\frac{p(1-p)}{n}}}$$
+
+Conditions: $np \ge 5$ and $n(1-p) \ge 5$
+
+**Q6:** 25% of sales are credit sales. Sample of 60. Probability proportion > 30%?
+
+> *Why: np = 15 ≥ 5, n(1−p) = 45 ≥ 5 — normal approximation valid for sample proportion.*
+> $SE = \sqrt{\frac{0.25 \times 0.75}{60}} = \sqrt{0.003125} \approx 0.0559$
+> $Z = \frac{0.30 - 0.25}{0.0559} \approx 0.894$
+> 📋 **Z-Table:** Row 0.8, Col .09 → 0.8133; Row 0.9, Col .00 → 0.8159; interpolate for Z = 0.894 ≈ 0.8144
+> $P(Z > 0.894) \approx 0.1856$
+> **Between 0.00 and 0.25** ✓
+
+**Q30:** Which is true about the sampling distribution of the sample proportion?
+
+> Approaches normal as $n$ increases, given $np$ and $n(1-p)$ are greater than 10.
+> **Answer: C** ✓
+
+---
+
+### Sample Variance & Chi-Square Relation
+
+$$s^2 = \frac{\sum (x_i - \bar{x})^2}{n-1}$$
 
 $$\frac{(n-1)s^2}{\sigma^2} \sim \chi^2_{n-1}$$
 
-> **Condition:** Population must be normally distributed.
+**Q7:** Adoptions over 8 weeks: 5, 8, 6, 12, 10, 9, 7, 11. Find mean and variance.
 
----
-
-### Sample Variance
-
-$$s^2 = \frac{\sum (x_i - \bar{x})^2}{n - 1}$$
-
-**Example:** Weekly adoptions: 5, 8, 6, 12, 10, 9, 7, 11. Find the mean and variance.
-
+> *Why: Descriptive stats from raw data — use sample variance formula (divide by n−1).*
 > $\bar{x} = \frac{68}{8} = 8.5$
->
-> Squared deviations sum = 42
->
-> $s^2 = \frac{42}{7} = \mathbf{6.00}$ ✓
+> Squared deviations: 12.25, 0.25, 6.25, 12.25, 2.25, 0.25, 2.25, 6.25 → Sum = 42
+> $s^2 = \frac{42}{7} = 6.00$
+> **Mean = 8.5, Variance = 6.00** ✓
+> *(Always divide by $(n-1)$ for sample variance)*
 
 ---
 
-## MODULE 3: Confidence Intervals and Estimation
+### Binomial Distribution
+
+$$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$$
+
+**Q9:** 5% defective bulbs. Sample of 20. Probability at least 2 defective?
+
+> *Why: Fixed n, constant p, two outcomes — use binomial distribution.*
+> $P(X=0) = \binom{20}{0}(0.05)^0(0.95)^{20} \approx 0.3585$
+> $P(X=1) = \binom{20}{1}(0.05)^1(0.95)^{19} \approx 0.3774$
+> $P(X \ge 2) = 1 - (0.3585 + 0.3774) = 1 - 0.7359$
+> 📋 **Binomial Table:** n = 20, p = 0.05, k = 1 → P(X ≤ 1) = 0.7358
+> **≈ 0.26** ✓
+
+**Q4:** 70% satisfied. Sample of 20. Probability at least 12 NOT satisfied?
+
+> *Why: Reframe as binomial — "not satisfied" has p = 0.30, fixed n = 20.*
+> Let $X$ = unsatisfied, $p = 0.30$, $X \sim B(20, 0.30)$
+> 📋 **Binomial Table:** n = 20, p = 0.30, k = 11 → P(X ≤ 11) = 0.9949
+> $P(X \ge 12) = 1 - P(X \le 11) = 1 - 0.995$
+> **≈ 0.005 → Between 0.00 and 0.25** ✓
+> *(Reframe the problem: "not satisfied" = complement probability)*
 
 ---
 
-### CI for Mean ($\sigma$ Known) — Z Interval
+### Sampling Concepts
 
-$$\bar{x} \pm Z_{\alpha/2} \left( \frac{\sigma}{\sqrt{n}} \right)$$
+**Q25:** Which step is NOT part of the sampling process?
 
-**Example:** Average daily demand from 25 samples is 370, $\sigma = 75$. Build a 95% CI.
+> Analyzing the data is a post-sampling activity, not part of the sampling process itself.
+> **Answer: D** ✓
 
+**Q26:** Which is an example of a probability sampling method?
+
+> Simple random sampling — every member has an equal, known, non-zero chance of selection.
+> **Answer: C** ✓
+
+**Q27:** Primary objective of analyzing sample data?
+
+> To infer characteristics of the population.
+> **Answer: B** ✓
+
+**Q28:** What best describes a sampling distribution?
+
+> The distribution of a sample statistic calculated from repeated samples.
+> **Answer: B** ✓
+
+**Q31:** Sampling variance of a sample mean vs sample size?
+
+> Sampling variance $\sigma^2/n$ decreases as $n$ increases.
+> **Answer: A** ✓
+
+**Q32:** What is a point estimator?
+
+> A statistic used to estimate a population parameter (e.g., $\bar{x}$ estimates $\mu$).
+> **Answer: B** ✓
+
+**Q33:** Example of a non-sampling error?
+
+> Using a sampling frame that excludes part of the population (coverage error).
+> **Answer: D** ✓
+
+---
+
+## MODULE 3: Confidence Intervals & Estimation
+
+---
+
+### General Form
+
+$$\text{Point Estimate} \pm \text{Margin of Error}$$
+
+---
+
+### CI for Mean — σ Known (Z-interval)
+
+$$\bar{x} \pm Z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}}$$
+
+**Q13:** $n=25$, $\bar{x}=370$, $\sigma=75$. Find 95% CI.
+
+> *Why: σ known — use Z-interval for confidence interval of the mean.*
+> 📋 **Z-Table:** 95% CI → α/2 = 0.025 → Row 1.9, Col .06 → 0.9750 → $Z_{0.025}$ = 1.96
 > $ME = 1.96 \times \frac{75}{\sqrt{25}} = 1.96 \times 15 = 29.4$
->
-> CI = $370 \pm 29.4$ = $\mathbf{[340.6,\ 399.4]}$ ✓
+> CI = $370 \pm 29.4$
+> **[341, 399]** ✓
+
+**Q50:** $n=40$, $\bar{x}=18$, $s=4$. Margin of error for 85% CI?
+
+> *Why: Large n (40 ≥ 30) — use Z even though σ unknown; find Z for 85% confidence.*
+> 📋 **Z-Table:** 85% CI → α/2 = 0.075 → find area = 0.925 → Row 1.4, Col .04 → 0.9251 → $Z_{0.075} \approx 1.44$
+> $ME = 1.44 \times \frac{4}{\sqrt{40}} = 1.44 \times 0.632 \approx 0.91$
+> **Between 0.75 and 1.25** ✓
 
 ---
 
-### CI for Mean ($\sigma$ Unknown) — t Interval
+### CI for Mean — σ Unknown (t-interval)
 
-$$\bar{x} \pm t_{\alpha/2,\ n-1} \left( \frac{s}{\sqrt{n}} \right)$$
+$$\bar{x} \pm t_{\alpha/2, \; n-1} \cdot \frac{s}{\sqrt{n}}$$
 
-**Example:** 16 weekly reports show mean 19, $s = 5$ contacts. Find the margin of error for a 95% CI.
+**Q14:** $n=20$, $\bar{x}=51$, $s=7$. Margin of error for 90% CI?
 
-> $df = 15$, $t_{0.025, 15} = 2.131$
->
-> $ME = 2.131 \times \frac{5}{\sqrt{16}} = 2.131 \times 1.25 = \mathbf{2.66}$ ✓
+> *Why: σ unknown, small n (20 < 30) — use t-interval with df = n−1.*
+> 📋 **t-Table:** df = 19, α/2 = 0.05 → $t_{0.050, 19}$ = 1.729
+> $ME = 1.729 \times \frac{7}{\sqrt{20}} = 1.729 \times 1.565 \approx 2.71$
+> **ME ≈ 2.71** ✓
 
----
+**Q57:** $n=16$, $\bar{x}=19$, $s=5$. Margin of error for 95% CI?
 
-### CI for Mean ($\sigma$ Unknown) — Margin of Error at Other Confidence Levels
+> *Why: σ unknown, small n (16 < 30) — use t-interval.*
+> 📋 **t-Table:** df = 15, α/2 = 0.025 → $t_{0.025, 15}$ = 2.131
+> $ME = 2.131 \times \frac{5}{4} = 2.66$
+> **Between 2.5 and 3.0** ✓
 
-**Example:** 40 IT projects, $\bar{x} = 18$ weeks, $s = 4$. Find ME for 85% CI.
+**Q58:** $n=16$, $s=5$. Standard error for 85% CI?
 
-> $\alpha = 0.15$, $Z_{0.075} \approx 1.44$
->
-> $ME = 1.44 \times \frac{4}{\sqrt{40}} = 1.44 \times 0.632 = \mathbf{0.91}$ ✓
-
----
-
-### Standard Error (Independent of Confidence Level)
-
-$$SE = \frac{s}{\sqrt{n}}$$
-
-**Example:** $n = 16$, $s = 5$. Find standard error.
-
-> $SE = \frac{5}{\sqrt{16}} = \frac{5}{4} = \mathbf{1.25}$ ✓
->
-> *(Standard error does not change with confidence level)*
+> *Why: SE depends only on s and n, not on confidence level.*
+> $SE = \frac{s}{\sqrt{n}} = \frac{5}{4} = 1.25$
+> **Between 1.0 and 2.0** ✓
+> *(Standard error is independent of confidence level)*
 
 ---
 
 ### CI for Proportion
 
-$$\bar{p} \pm Z_{\alpha/2} \sqrt{\frac{\bar{p}(1-\bar{p})}{n}}$$
+$$\hat{p} \pm Z_{\alpha/2} \cdot \sqrt{\frac{\hat{p}(1-\hat{p})}{n}}$$
 
-**Example:** In a survey of 900 women IT employees, 396 are satisfied with childcare facilities. Build a 90% CI.
+**Q15:** $n=900$, 396 satisfied. Find 90% CI for proportion.
 
-> $\hat{p} = 396/900 = 0.44$, $Z_{0.05} = 1.645$
->
+> *Why: Large n, estimating population proportion — use Z-interval for p̂.*
+> $\hat{p} = 396/900 = 0.44$
 > $SE = \sqrt{\frac{0.44 \times 0.56}{900}} \approx 0.01655$
->
-> $ME = 1.645 \times 0.01655 \approx 0.027$
->
-> CI = $0.44 \pm 0.027$ = $\mathbf{[0.41,\ 0.47]}$ ✓
+> 📋 **Z-Table:** 90% CI → α/2 = 0.05 → Row 1.6, Col .04/.05 → Z = 1.645
+> $ME = 1.645 \times 0.01655 \approx 0.0272$
+> CI = $0.44 \pm 0.0272$
+> **[0.41, 0.47]** ✓
+
+**Q59:** $n=24$, 7 students spend >2 hrs. Margin of error for 80% CI?
+
+> *Why: Proportion CI — use Z-interval with p̂ from sample.*
+> $\hat{p} = 7/24 \approx 0.2917$
+> 📋 **Z-Table:** 80% CI → α/2 = 0.10 → Row 1.2, Col .08 → 0.8997 ≈ 0.90 → $z_{0.10}$ = 1.28
+> $ME = 1.28 \times \sqrt{\frac{0.2917 \times 0.7083}{24}} \approx 1.28 \times 0.0927 \approx 0.118$
+> **Between 0.10 and 0.20** ✓
+
+**Q66:** $n=42$, 18 have MBA. Margin of error for 90% CI?
+
+> *Why: Proportion CI with large n — use Z-interval.*
+> $\hat{p} = 18/42 \approx 0.4286$
+> 📋 **Z-Table:** 90% CI → Z = 1.645 (Row 1.6, Col .04/.05)
+> $ME = 1.645 \times \sqrt{\frac{0.4286 \times 0.5714}{42}} \approx 1.645 \times 0.0763 \approx 0.1256$
+> **Between 0.10 and 0.20** ✓
+
+**Q65:** $n=24$, 7 students. Standard error of proportion?
+
+> *Why: SE of proportion depends only on p̂ and n — no table lookup needed.*
+> $SE = \sqrt{\frac{0.2917 \times 0.7083}{24}} \approx 0.0927$
+> **Between 0.0 and 0.5** ✓
 
 ---
 
-### Margin of Error for Proportion
-
-$$ME = Z_{\alpha/2} \sqrt{\frac{\bar{p}(1-\bar{p})}{n}}$$
-
-**Example:** 24 students surveyed, 7 spend >2 hrs on social media. Find ME for 80% CI.
-
-> $\hat{p} = 7/24 \approx 0.2917$, $Z_{0.10} = 1.28$
->
-> $ME = 1.28 \times \sqrt{\frac{0.2917 \times 0.7083}{24}} = 1.28 \times 0.0927 \approx \mathbf{0.119}$ ✓
-
----
-
-### CI for Variance (Chi-Square Bounds)
+### CI for Variance (Chi-Square)
 
 $$\frac{(n-1)s^2}{\chi^2_{\alpha/2}} \le \sigma^2 \le \frac{(n-1)s^2}{\chi^2_{1-\alpha/2}}$$
 
-> For **standard deviation**: take square root of both limits.
+#### CI for Standard Deviation
 
-**Example:** 10 properties in Hyderabad, rental $s = 7$ lakh. Find 95% CI for $\sigma$.
+Take square root of both bounds.
 
-> $df = 9$, $s^2 = 49$, $\chi^2_{0.025, 9} = 19.023$, $\chi^2_{0.975, 9} = 2.7$
->
-> Lower = $\sqrt{\frac{9 \times 49}{19.023}} = \sqrt{23.18} = 4.81$
->
-> Upper = $\sqrt{\frac{9 \times 49}{2.7}} = \sqrt{163.33} = 12.78$
->
-> CI for $\sigma$ = $\mathbf{[4.81,\ 12.78]}$ lakhs ✓
+**Q61:** $n=10$, $s=7$. Find 95% CI for standard deviation.
 
----
-
-### Sample Size for Estimating Mean
-
-$$n = \left( \frac{Z_{\alpha/2} \cdot \sigma}{E} \right)^2$$
-
-> **Planning value for $\sigma$:** Use historical data, pilot study, or $\frac{\text{Range}}{4}$.
+> *Why: CI for σ uses chi-square distribution — look up both tail critical values.*
+> $df = 9$, $s^2 = 49$
+> 📋 **χ²-Table:** df = 9, $\chi^2_{0.025}$ = 19.023; $\chi^2_{0.975}$ = 2.700
+> Lower $= \sqrt{\frac{9 \times 49}{19.023}} = 4.81$
+> Upper $= \sqrt{\frac{9 \times 49}{2.7}} = 12.78$
+> **CI for σ: [4.8, 12.8] lakhs** ✓
+> *(Take square root of variance bounds to get SD bounds)*
 
 ---
 
-### Sample Size for Estimating Proportion
+### Sample Size for Mean
 
-$$n = \left( \frac{Z_{\alpha/2}}{E} \right)^2 p^*(1 - p^*)$$
+$$n = \left(\frac{Z_{\alpha/2} \cdot \sigma}{E}\right)^2$$
 
-> Use $p^* = 0.5$ if no prior estimate exists (most conservative).
-
-**Example:** Desired ME = 0.05 for 90% CI on proportion. Find minimum sample size.
-
-> $Z_{0.05} = 1.645$, $p^* = 0.5$
->
-> $n = \frac{1.645^2 \times 0.25}{0.05^2} = \frac{0.6765}{0.0025} \approx \mathbf{271}$ ✓
+*(E = desired margin of error)*
 
 ---
 
-### Sample Size for Proportion (with prior estimate)
+### Sample Size for Proportion
 
-**Example:** 42 managers surveyed, 18 have MBA. Find smallest $n$ for ME ≤ 0.1 at 99% CI.
+$$n = \frac{Z_{\alpha/2}^2 \cdot p(1-p)}{E^2}$$
 
-> $\hat{p} = 18/42 \approx 0.4286$, $Z_{0.005} = 2.576$, $E = 0.1$
->
-> $n = \frac{2.576^2 \times 0.4286 \times 0.5714}{0.01} = \frac{6.636 \times 0.2449}{0.01} \approx \mathbf{163}$ ✓
+If $p$ unknown → use $p = 0.5$
 
----
+**Q53:** $\hat{p} = 18/42 \approx 0.4286$. Smallest $n$ for 99% CI with $E = 0.1$?
 
-## MODULE 4: Hypothesis Testing, Covariance & Correlation
+> *Why: Sample size formula for proportion — need Z for 99% confidence.*
+> 📋 **Z-Table:** 99% CI → α/2 = 0.005 → Row 2.5, Col .07/.08 → Z = 2.576
+> $n = \frac{2.576^2 \times 0.4286 \times 0.5714}{0.01} = \frac{6.636 \times 0.2449}{0.01} \approx 162.5$
+> Smallest listed size ≥ 162.5 → **200** ✓
 
----
+**Q60:** 7/24 students. Smallest $n$ for 90% CI with $E = 0.05$?
 
-### Hypothesis Setup Rules
-
-| Claim Direction | $H_0$ | $H_a$ | Test Type |
-|:---|:---|:---|:---|
-| "more than $A$" | $\mu \le A$ | $\mu > A$ | Upper Tail |
-| "less than $A$" | $\mu \ge A$ | $\mu < A$ | Lower Tail |
-| "equal to $A$" | $\mu = A$ | $\mu \neq A$ | Two-Tailed |
-
-> **Rule:** $H_0$ always contains equality ($=, \le, \ge$). $H_a$ never does.
-
-**Example:** A government agency wants to determine if average IT project duration is more than 16 weeks.
-
-> $H_0: \mu \le 16$ and $H_a: \mu > 16$ → **Upper Tail Test** ✓
-
-**Example:** Test if true average contacts per week equals 15.
-
-> $H_0: \mu = 15$ and $H_a: \mu \neq 15$ → **Two-Tailed Test** ✓
+> *Why: Sample size for proportion — use p = 0.5 (conservative) since exact p unknown.*
+> 📋 **Z-Table:** 90% CI → Z = 1.645
+> Conservative: $p = 0.5$, $z = 1.645$
+> $n = \frac{1.645^2 \times 0.25}{0.0025} = \frac{0.6765}{0.0025} \approx 271$
+> Nearest listed option → **300** ✓
+> *(Use $p = 0.5$ when unknown — gives largest conservative estimate)*
 
 ---
 
-### Test Statistic for Mean ($\sigma$ Unknown — t-test)
+### Properties of Estimators
 
-$$t_{n-1} = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}$$
-
-**Example:** 16 weekly reports: $\bar{x} = 19$, $s = 5$. Test if $\mu = 15$.
-
-> $t = \frac{19 - 15}{5/\sqrt{16}} = \frac{4}{1.25} = \mathbf{3.2}$ ✓
->
-> $df = 15$. Two-tailed p-value $= 2 \times P(t_{15} > 3.2) < 2 \times 0.005 = \mathbf{0.01}$ ✓
+* **Unbiased:** $E(\bar{X}) = \mu$
+* **Efficient:** Minimum variance
+* **Consistent:** Better as $n$ increases
+* **Sufficient:** Uses all sample info
 
 ---
 
-### Test Statistic for Mean ($\sigma$ Known or large $n$ — Z-test)
+### Confidence Interval Concepts
+
+**Q34:** What does a 95% confidence interval mean?
+
+> If we take 100 different samples, approximately 95 of the CIs would contain the true parameter.
+> **Answer: B** ✓
+
+**Q35:** Effect of sample size on margin of error?
+
+> Increasing $n$ reduces the margin of error → narrower, more precise CI.
+> **Answer: D** ✓
+
+**Q36:** When σ is known, which distribution is used?
+
+> The Z-distribution, because the population σ is known.
+> **Answer: D** ✓
+
+**Q37:** What does sample standard deviation $s$ represent when σ is unknown?
+
+> An estimate of the population standard deviation.
+> **Answer: A** ✓
+
+**Q38:** What info is required to determine sample size for a CI?
+
+> Desired confidence level, population SD (or sample SD), and margin of error.
+> **Answer: D** ✓
+
+**Q39:** How to estimate $p$ when unknown for sample size calculation?
+
+> Use $p = 0.5$ — maximizes variance, gives conservative (largest) sample size.
+> **Answer: B** ✓
+
+**Q40:** What describes the CI for population variance?
+
+> It estimates the range within which the true population variance lies.
+> **Answer: A** ✓
+
+---
+
+## MODULE 4: Hypothesis Testing
+
+---
+
+### Hypotheses
+
+$$H_0 \text{ contains: } =, \le, \ge$$
+
+$$H_a \text{ contains: } \ne, <, >$$
+
+### Type of Tests
+
+| $H_a$ | Test Type |
+|--------|-----------|
+| $\ne$ | Two-tailed |
+| $>$ | Right-tailed |
+| $<$ | Left-tailed |
+
+### Decision Rule
+
+$$\text{Reject } H_0 \text{ if } p\text{-value} \le \alpha$$
+
+---
+
+### Hypothesis Formulation Rules
+
+| Claim | $H_0$ | $H_a$ | Tail |
+|-------|--------|--------|------|
+| Equal to value | $\mu = k$ | $\mu \ne k$ | Two-tailed |
+| More than value | $\mu \le k$ | $\mu > k$ | Upper |
+| Less than value | $\mu \ge k$ | $\mu < k$ | Lower |
+
+**Q51:** Test if average contacts = 15.
+
+> *Why: Claim is "equal to" → two-tailed test with equality in H₀.*
+> **$H_0: \mu = 15$, $H_a: \mu \ne 15$** ✓ (two-tailed)
+
+**Q56:** Test if average duration > 16 weeks.
+
+> *Why: Claim is "more than" → upper-tailed test.*
+> **$H_0: \mu \le 16$, $H_a: \mu > 16$** ✓ (upper-tailed)
+
+**Q64:** Test if average discharge time < 150 min.
+
+> *Why: Claim is "less than" → lower-tailed test.*
+> **$H_0: \mu \ge 150$, $H_a: \mu < 150$** ✓ (lower-tailed)
+
+---
+
+### Z-test for Mean (σ known or large n)
 
 $$Z = \frac{\bar{x} - \mu_0}{\sigma / \sqrt{n}}$$
 
-**Example:** 40 IT projects: $\bar{x} = 18$, $s = 4$. Test if $\mu > 16$ at $\alpha = 0.05$.
+**Q62:** $n=40$, $\bar{x}=18$, $s=4$. Test if $\mu > 16$. Find p-value.
 
-> $Z = \frac{18 - 16}{4/\sqrt{40}} = \frac{2}{0.632} = 3.16$
->
-> $P(Z > 3.16) \approx \mathbf{0.0008}$ → Reject $H_0$ ✓
-
----
-
-### Test Statistic for Mean — p-value Interpretation
-
-**Example:** Scarlet Inc. claims filter lasts 300 days. $n = 50$, $\bar{x} = 298$, $s = 5$. Test $H_0: \mu = 300$ (two-tailed).
-
-> $t = \frac{298 - 300}{5/\sqrt{50}} = \frac{-2}{0.7071} = -2.828$, $df = 49$
->
-> Two-tailed p-value $= 2 \times P(t > 2.828) \approx \mathbf{0.007}$ ✓
+> *Why: Large n (40 ≥ 30) — use Z-test even though σ unknown. Upper-tailed test.*
+> $H_0: \mu \le 16$, $H_a: \mu > 16$
+> $z = \frac{18 - 16}{4/\sqrt{40}} = \frac{2}{0.632} = 3.16$
+> 📋 **Z-Table:** Row 3.0, Col .09 → 0.9990 (table max); Z = 3.16 is beyond table → P ≈ 0.9992
+> $P(Z > 3.16) \approx 0.0008$
+> **Between 0.00 and 0.01** ✓
 
 ---
 
-### Test Statistic for Proportion (Z-test)
+### t-test for Mean (σ unknown, small n)
 
-$$Z = \frac{\bar{p} - p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}}$$
+$$t = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}, \quad df = n - 1$$
 
-> **Key:** Standard error uses hypothesized $p_0$ (not sample $\hat{p}$).
+**Q52:** $n=16$, $\bar{x}=19$, $s=5$. Test if $\mu = 15$. Find p-value.
 
-**Example:** 400 workers surveyed, 52 belong to unions. Test if proportion > 12%.
+> *Why: σ unknown, small n (16 < 30) — use t-test. Two-tailed since H₁: μ ≠ 15.*
+> $H_0: \mu = 15$, $H_a: \mu \ne 15$ (two-tailed)
+> $t = \frac{19 - 15}{5/\sqrt{16}} = \frac{4}{1.25} = 3.2$, $df = 15$
+> 📋 **t-Table:** df = 15, $t_{0.005}$ = 2.947; since 3.2 > 2.947, single-tail p < 0.005
+> $p\text{-value} = 2 \times P(t_{15} > 3.2) < 2 \times 0.005 = 0.01$
+> **Between 0.00 and 0.01** ✓
 
-> $\hat{p} = 52/400 = 0.13$, $p_0 = 0.12$
->
-> $Z = \frac{0.13 - 0.12}{\sqrt{0.12 \times 0.88/400}} = \frac{0.01}{0.01625} = 0.615$
->
-> $P(Z > 0.615) = 1 - 0.7307 = \mathbf{0.269}$ → Do Not Reject $H_0$ ✓
+**Q63:** Same setup. Test statistic value?
 
----
+> *Why: Same t-test setup as Q52 — just compute the test statistic.*
+> $t = \frac{19 - 15}{5/4} = 3.2$
+> **More than 2.0** ✓
 
-### Upper-Tail Proportion Test — Negative Z
+**Q16:** $n=50$, $\bar{x}=298$, $s=5$. Test if $\mu = 300$.
 
-**Example:** 42 managers, 18 have MBA. Test if proportion with MBA > 50% at $\alpha = 0.10$.
-
-> $\hat{p} = 18/42 \approx 0.4286$, $p_0 = 0.5$
->
-> $Z = \frac{0.4286 - 0.5}{\sqrt{0.5 \times 0.5/42}} = \frac{-0.0714}{0.07715} = -0.925$
->
-> Upper-tail p-value $= P(Z > -0.925) = 1 - 0.1775 = \mathbf{0.8225}$ → Do Not Reject $H_0$ ✓
-
----
-
-### Test Statistic for Variance (Chi-Square Test)
-
-$$\chi^2_{n-1} = \frac{(n-1)s^2}{\sigma_0^2}$$
-
-**Example:** 10 properties, $s = 7$ lakh. Test if $\sigma^2 = 25$ (two-tailed).
-
-> $\chi^2 = \frac{9 \times 49}{25} = \frac{441}{25} = \mathbf{17.64}$ ✓
+> *Why: Large n (50 ≥ 30) — t ≈ Z. Two-tailed test for μ = 300.*
+> $t = \frac{298 - 300}{5/\sqrt{50}} = \frac{-2}{0.7071} \approx -2.828$, $df=49$
+> 📋 **t-Table:** df ≈ 50, $t_{0.005}$ = 2.678; since |2.828| > 2.678, single-tail p < 0.005
+> $p = 2 \times P(t > 2.828) \approx 0.007$
+> **≈ 0.007** ✓
 
 ---
 
-### Chi-Square Variance Test — p-value
+### Z-test for Proportion
 
-**Example:** 25 customers, $s = \$35$. Test if $\sigma^2 > 900$.
+$$Z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}}$$
 
-> $\chi^2 = \frac{24 \times 1225}{900} = \frac{29400}{900} = 32.67$, $df = 24$
->
-> Upper-tail: $P(\chi^2_{24} > 32.67)$ → p-value is **between 0.05 and 0.25** ✓
+**Q17:** $n=400$, 52 in unions. Test if $p > 0.12$. Find p-value.
+
+> *Why: Testing proportion — use Z-test for proportion. Upper-tailed.*
+> $\hat{p} = 52/400 = 0.13$
+> $z = \frac{0.13 - 0.12}{\sqrt{\frac{0.12 \times 0.88}{400}}} = \frac{0.01}{0.01625} \approx 0.615$
+> 📋 **Z-Table:** Row 0.6, Col .01 → 0.7291; Col .02 → 0.7324; interpolate Z = 0.615 ≈ 0.7307
+> $P(Z > 0.615) = 1 - 0.7307 = 0.2693$
+> **≈ 0.269** ✓
+
+**Q54:** $n=42$, 18 have MBA. Test if $p > 0.50$.
+
+> *Why: Testing proportion > 0.50 — Z-test for proportion, upper-tailed.*
+> $\hat{p} = 0.4286$, upper-tail test
+> $Z = \frac{0.4286 - 0.5}{\sqrt{0.5 \times 0.5/42}} = \frac{-0.0714}{0.07715} \approx -0.925$
+> 📋 **Z-Table:** Row 0.9, Col .02 → 0.8212; by symmetry P(Z < −0.925) ≈ 1 − 0.8225 = 0.1775
+> $p\text{-value} = P(Z > -0.925) = 1 - 0.1775 = 0.8225$
+> **Between 0.80 and 0.95** ✓
+> *(Negative z in upper-tail test → large p-value → fail to reject $H_0$)*
 
 ---
 
-### Lower-Tail Chi-Square Test
+### Chi-Square Test for Variance
 
-**Example:** 25 soft drink bottles, $s = 3$ ml. Test if $\sigma^2 < 8$.
+$$\chi^2 = \frac{(n-1)s^2}{\sigma_0^2}, \quad df = n-1$$
 
+**Q18:** $n=25$, $s=3$ (so $s^2=9$). Test if $\sigma^2 < 8$.
+
+> *Why: Testing variance — use chi-square test. Lower-tailed since H₁: σ² < 8.*
 > $\chi^2 = \frac{24 \times 9}{8} = 27$, $df = 24$
->
-> Lower-tail p-value $= P(\chi^2_{24} < 27) \approx \mathbf{0.696}$ → Do Not Reject $H_0$ ✓
+> 📋 **χ²-Table:** df = 24; $\chi^2_{0.90}$ = 15.659, $\chi^2_{0.10}$ = 33.196; since 15.659 < 27 < 33.196, p-value is between 0.10 and 0.90
+> $P(\chi^2 < 27)$ with $df=24 \approx 0.696$
+> **p-value ≈ 0.696** ✓
+> *(Lower-tailed test for variance)*
+
+**Q55:** $n=25$, $s=35$. Test if $\sigma^2 > 900$.
+
+> *Why: Testing if variance exceeds a value — chi-square test, upper-tailed.*
+> $\chi^2 = \frac{24 \times 1225}{900} = \frac{29400}{900} \approx 32.67$
+> 📋 **χ²-Table:** df = 24; $\chi^2_{0.10}$ = 33.196; since 32.67 < 33.196, p-value > 0.10
+> **More than 10.0** ✓
+
+**Q67:** $n=10$, $s=7$. Test if $\sigma^2 = 25$.
+
+> *Why: Testing variance equality — chi-square test, two-tailed.*
+> $\chi^2 = \frac{9 \times 49}{25} = \frac{441}{25} = 17.64$
+> 📋 **χ²-Table:** df = 9; $\chi^2_{0.05}$ = 16.919, $\chi^2_{0.025}$ = 19.023; since 16.919 < 17.64 < 19.023, upper-tail p is between 0.025 and 0.05
+> **More than 10.0** ✓
+
+**Q68:** $n=25$, $s=35$. Test if $\sigma^2 > 900$. Find p-value.
+
+> *Why: Same chi-square test as Q55 — now find the p-value range from the table.*
+> $\chi^2 = 32.67$, $df = 24$
+> 📋 **χ²-Table:** df = 24; $\chi^2_{0.10}$ = 33.196, $\chi^2_{0.05}$ = 36.415; since 32.67 < 33.196, p-value > 0.10
+> $P(\chi^2 > 32.67)$ falls between 0.05 and 0.25
+> **Between 0.05 and 0.25** ✓
 
 ---
 
-### p-Value Decision Rule
+### Hypothesis Testing Concepts
 
-$$\text{If } p\text{-value} \le \alpha \implies \textbf{Reject } H_0$$
+**Q41:** What is the purpose of significance level α?
 
-$$\text{If } p\text{-value} > \alpha \implies \textbf{Do Not Reject } H_0$$
+> Probability of rejecting the null hypothesis when it is true (Type I error).
+> **Answer: B** ✓
 
-> For **two-tailed tests**: double the one-tail probability.
+**Q42:** When do we reject $H_0$?
 
----
+> When the p-value is less than or equal to α.
+> **Answer: D** ✓
 
-### Covariance
+**Q43:** What is a Type I error?
 
-$$s_{xy} = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{n - 1}$$
+> Rejecting a true null hypothesis (false positive).
+> **Answer: B** ✓
 
-> Positive → same direction. Negative → opposite direction. Near zero → no linear association.
-> **Limitation:** Sensitive to units of measurement.
+**Q44:** Which test for population mean when $n > 30$?
 
----
+> Z-test — CLT ensures normality of sample mean.
+> **Answer: A** ✓
 
-### Correlation (Pearson's $r$)
+**Q45:** Which test for population proportion?
 
-$$r_{xy} = \frac{s_{xy}}{s_x \cdot s_y}$$
+> Z-test — uses normal approximation to binomial.
+> **Answer: B** ✓
 
-> Range: $-1 \le r \le +1$. Unitless. $r = 0$ means no **linear** relationship (non-linear may exist).
+**Q46:** Which test for population variance?
 
-**Example:** Demand ($X$) and Price ($Y$) joint distribution: $Cov(X,Y) = -0.05$, $\sigma_X = 0.5$, $\sigma_Y = 0.4582$.
-
-> $r = \frac{-0.05}{0.5 \times 0.4582} = \frac{-0.05}{0.2291} = \mathbf{-0.218}$ ✓
-
----
-
-### Covariance from Joint Distribution
-
-$$Cov(X,Y) = E[XY] - E[X] \cdot E[Y]$$
-
-**Example:** Joint distribution table for $X \in \{1,2\}$, $Y \in \{1,2\}$ with $P(1,1)=0.3, P(2,1)=0.4, P(1,2)=0.2, P(2,2)=0.1$.
-
-> $E[X] = 1(0.5) + 2(0.5) = 1.5$
->
-> $E[Y] = 1(0.7) + 2(0.3) = 1.3$
->
-> $E[XY] = 1(1)(0.3) + 2(1)(0.4) + 1(2)(0.2) + 2(2)(0.1) = 1.9$
->
-> $Cov = 1.9 - (1.5)(1.3) = 1.9 - 1.95 = \mathbf{-0.05}$ ✓
+> Chi-square test.
+> **Answer: C** ✓
+## Covariance & Correlation
 
 ---
 
-## Quick Reference: Which Distribution to Use
+### Sample Covariance
 
-| Testing | Distribution | Test Statistic |
-|:---|:---|:---|
-| Mean ($\sigma$ known, $n \ge 30$) | **Z** | $\frac{\bar{x} - \mu_0}{\sigma/\sqrt{n}}$ |
-| Mean ($\sigma$ unknown) | **t** ($df = n-1$) | $\frac{\bar{x} - \mu_0}{s/\sqrt{n}}$ |
-| Proportion | **Z** | $\frac{\hat{p} - p_0}{\sqrt{p_0(1-p_0)/n}}$ |
-| Variance | **$\chi^2$** ($df = n-1$) | $\frac{(n-1)s^2}{\sigma_0^2}$ |
-| Two Variances | **F** ($k_1, k_2$) | $\frac{s_1^2 / \sigma_1^2}{s_2^2 / \sigma_2^2}$ |
+$$S_{xy} = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{n-1}$$
+
+**Q2:** Supply and price for 8 weeks: (5,2), (7,4), (9,8), (12,5), (10,7), (13,8), (16,16), (16,6). Find covariance.
+
+> *Why: Measuring how two variables move together — use sample covariance formula (divide by n−1).*
+> $\bar{x} = 7.0$, $\bar{y} = 11.0$
+> $\sum(x_i - \bar{x})(y_i - \bar{y}) = 79.875$
+> $Cov(X,Y) = \frac{79.875}{7} \approx 11.41$
+> **≈ 11.4** ✓
+
+---
+
+### Pearson Correlation Coefficient
+
+$$r = \frac{S_{xy}}{S_x \cdot S_y}, \quad -1 \le r \le 1$$
+
+* $r = 0$: No linear relationship (non-linear may exist)
+* Correlation ≠ Causation
+
+**Q8:** Joint distribution of X and Y. Find correlation.
+
+> *Why: Correlation = standardized covariance — scale-free measure of linear relationship.*
+> $E[X]=1.5$, $Var(X)=0.25$, $\sigma_X=0.5$
+> $E[Y]=1.3$, $Var(Y)=0.21$, $\sigma_Y=0.4582$
+> $E[XY] = 1.9$
+> $Cov(X,Y) = 1.9 - (1.5)(1.3) = -0.05$
+> $r = \frac{-0.05}{0.5 \times 0.4582} \approx -0.218$
+> **r ≈ −0.218** ✓
+
+---
+
+### Covariance & Correlation Concepts
+
+**Q47:** If covariance between X and Y is zero, what does it imply?
+
+> No **linear** relationship — a non-linear relationship could still exist.
+> **Answer: B** ✓
+
+**Q48:** Which statement about correlation is NOT true?
+
+> "Correlation of 0 implies no relationship" is false — only no *linear* relationship.
+> **Answer: D** ✓
+
+**Q49:** Key advantage of correlation over covariance?
+
+> Correlation is scale-free ($-1$ to $1$), making comparisons across datasets easier.
+> **Answer: C** ✓
+
+---
+
+## Quick Reference: Which Test to Use
+
+| Situation | Test | Distribution |
+|-----------|------|--------------|
+| Mean, σ known | Z-test | Standard Normal |
+| Mean, σ unknown, small n | t-test | Student's t ($df = n-1$) |
+| Proportion | Z-test | Standard Normal |
+| Variance | Chi-square test | $\chi^2$ ($df = n-1$) |
+| Compare two variances | F-test | F-distribution |
+
+---
+
+## Quick Reference: Critical Values
+
+| Confidence Level | $Z_{\alpha/2}$ |
+|------------------|----------------|
+| 80% | 1.28 |
+| 85% | 1.44 |
+| 90% | 1.645 |
+| 95% | 1.96 |
+| 99% | 2.576 |
 
 ---
 
 ## Key Decision Rules Summary
 
-| Scenario | Rule |
-|:---|:---|
-| CI wider or narrower? | Higher confidence → wider; Larger $n$ → narrower |
-| $\sigma$ known vs unknown? | Known → Z; Unknown → t |
-| Proportion SE in CI vs HT | CI uses $\hat{p}$; HT uses $p_0$ |
-| Variance always adds? | **Yes** — even when subtracting variables |
-| Most conservative $p^*$? | Use $p^* = 0.5$ to maximize sample size |
-| Two-tailed p-value? | Double the one-tail probability |
+| Rule | Detail |
+|------|--------|
+| Reject $H_0$ | p-value ≤ α |
+| Sample Variance | Always divide by $(n-1)$ |
+| σ unknown | Use t-distribution |
+| σ known | Use Z-distribution |
+| CLT condition | $n \ge 30$ |
+| Proportion condition | $np \ge 5$ and $n(1-p) \ge 5$ |
+| Unknown $p$ for sample size | Use $p = 0.5$ (conservative) |
+| Chi-square | Right-skewed, never negative |
+| Variances always ADD | Even in subtraction: $Var(X-Y) = \sigma_X^2 + \sigma_Y^2$ |
+| Two-tailed p-value | Multiply single-tail probability by 2 |
+| Correlation = 0 | No **linear** relationship (non-linear may exist) |
