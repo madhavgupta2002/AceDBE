@@ -2,42 +2,6 @@
 
 ---
 
-### Key Diagrams
-
-#### Linear Demand Curve
-
-```mermaid
-xychart-beta
-    title "Linear Demand Curve (P = a/b - Q/b)"
-    x-axis "Quantity Demanded" [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    y-axis "Price" 0 --> 10
-    line [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
-```
-
-#### Supply and Demand Equilibrium
-
-```mermaid
-xychart-beta
-    title "Supply & Demand Equilibrium"
-    x-axis "Quantity" [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    y-axis "Price" 0 --> 10
-    line "Demand" [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
-    line "Supply" [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-```
-
-#### Circular Flow of Economy
-
-```mermaid
-flowchart LR
-    H[Households] -->|Labour, Land, Capital| F[Firms]
-    F -->|Wages, Rent, Profit| H
-    F -->|Goods & Services| M[Market for G&S]
-    M -->|Goods & Services| H
-    H -->|Spending| M
-```
-
----
-
 ### What is Economics
 
 - Economics = study of how society manages its **scarce resources**
@@ -57,6 +21,16 @@ flowchart LR
 
 - Closely intertwined — macro arises from millions of micro decisions
 - Each has its own set of **models**, often taught separately
+
+#### Circular Flow of Economy
+
+```mermaid
+flowchart LR
+    H[Households] -->|Labour, Land, Capital| F[Firms]
+    F -->|Wages, Rent, Profit| H
+    F -->|Goods & Services| H
+    H -->|Revenue / Spending| F
+```
 
 > **Q:** Economics is the study of how society manages its **scarce resources** ✓
 
@@ -177,6 +151,14 @@ $$Q_d = a - bP \quad (a > 0, \; b > 0)$$
 | Vertical ($Q_d = 0$) | $P = a/b$ (max price) |
 | Slope | $\Delta Q_d / \Delta P = -b$ |
 
+```mermaid
+xychart-beta
+    title "Linear Demand Curve"
+    x-axis "Quantity Demanded" [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    y-axis "Price" 0 --> 10
+    line [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+```
+
 ---
 
 ### Demand Function (Full)
@@ -204,6 +186,15 @@ $$Q_d = f(P, \; M, \; P_r, \; T, \; F, \; S, \; T_p, \; G, \; C \ldots)$$
 | **Movement along** (change in Qty Demanded) | Change in **own price** only | Extension ($P\downarrow \to Q\uparrow$) or Contraction ($P\uparrow \to Q\downarrow$) |
 | **Shift** (change in Demand) | Change in **any other factor** | Rightward (increase) or Leftward (decrease) |
 
+```mermaid
+flowchart TD
+    A[Change in Commodity's OWN Price] --> B[Movement Along Curve]
+    B --> C(Extension / Contraction)
+    
+    D[Change in OTHER Factors] --> E[Shift in Curve entirely]
+    E --> F(Increase / Decrease)
+```
+
 ---
 
 ### Determinants of Demand (Shift Factors)
@@ -220,6 +211,52 @@ $$Q_d = f(P, \; M, \; P_r, \; T, \; F, \; S, \; T_p, \; G, \; C \ldots)$$
 
 - **Substitutes:** Used in place of each other (hot dogs & hamburgers, cinema & streaming)
 - **Complements:** Used together (gasoline & automobiles, computers & software)
+
+#### Income-Demand Curves
+
+```mermaid
+xychart-beta
+    title "Income Demand: Normal Good (positive slope)"
+    x-axis "Quantity Demanded" [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    y-axis "Income (M)" 0 --> 8
+    line [0, 1, 2, 3, 4, 5, 6, 7, 8]
+```
+
+```mermaid
+xychart-beta
+    title "Income Demand: Inferior Good (negative slope)"
+    x-axis "Quantity Demanded" [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    y-axis "Income (M)" 0 --> 8
+    line [8, 7, 6, 5, 4, 3, 2, 1, 0]
+```
+
+#### Cross-Demand Curves
+
+```mermaid
+xychart-beta
+    title "Cross Demand: Substitutes (positive slope)"
+    x-axis "Quantity of X" [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    y-axis "Price of Y" 0 --> 8
+    line [0, 1, 2, 3, 4, 5, 6, 7, 8]
+```
+
+```mermaid
+xychart-beta
+    title "Cross Demand: Complements (negative slope)"
+    x-axis "Quantity of X" [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    y-axis "Price of Y" 0 --> 8
+    line [8, 7, 6, 5, 4, 3, 2, 1, 0]
+```
+
+```mermaid
+xychart-beta
+    title "Demand Shifts (1: Base, 2: Increase, 3: Decrease)"
+    x-axis "Quantity" [0, 1, 2, 3, 4, 5, 6, 7]
+    y-axis "Price" 0 --> 8
+    line [6, 5, 4, 3, 2, 1, 0, 0]
+    line [8, 7, 6, 5, 4, 3, 2, 1]
+    line [4, 3, 2, 1, 0, 0, 0, 0]
+```
 
 > **Q:** Buyers expect flat prices to rise next year → current demand = **Increases** (rush to buy now) ✓
 > **Q:** If price of both a substitute AND a complement for X increases, demand for X = **Any outcome possible** (depends on which effect dominates) ✓
@@ -246,6 +283,14 @@ $$Q_s = c + dP \quad (c > 0, \; d > 0)$$
 | Vertical ($Q_s = 0$) | $P = -c/d$ |
 | Slope | $\Delta Q_s / \Delta P = +d$ |
 
+```mermaid
+xychart-beta
+    title "Linear Supply Curve"
+    x-axis "Quantity Supplied" [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    y-axis "Price" 0 --> 10
+    line [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
 ---
 
 ### Movement vs. Shift (Supply)
@@ -254,6 +299,15 @@ $$Q_s = c + dP \quad (c > 0, \; d > 0)$$
 |------|-------|--------|
 | **Movement along** | Change in **own price** only | Extension ($P\uparrow \to Q\uparrow$) or Contraction ($P\downarrow \to Q\downarrow$) |
 | **Shift** | Change in **any other factor** | Rightward (increase) or Leftward (decrease) |
+
+```mermaid
+flowchart TD
+    A[Change in Commodity's OWN Price] --> B[Movement Along Supply Curve]
+    B --> C(Extension: P↑ → Qs↑ / Contraction: P↓ → Qs↓)
+    
+    D[Change in OTHER Factors] --> E[Shift in Supply Curve]
+    E --> F(Increase: Rightward / Decrease: Leftward)
+```
 
 ### Determinants of Supply (Shift Factors)
 
@@ -287,6 +341,15 @@ $$Q_s = c + dP \quad (c > 0, \; d > 0)$$
 
 - **Stable equilibrium:** Any disturbance is self-adjusting — market forces restore $P^*$ automatically
 - **Invisible Hand:** Prices act as signals coordinating millions of independent decisions without central authority
+
+```mermaid
+xychart-beta
+    title "Market Equilibrium (1: Demand, 2: Supply)"
+    x-axis "Quantity" [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    y-axis "Price" 0 --> 10
+    line [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+    line [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
 
 > **Q:** Price falls below equilibrium → **Quantity demanded exceeds quantity supplied** (shortage) ✓
 > **Q:** At equilibrium, buyers have **highest** WTP and sellers have **lowest** costs ✓
@@ -366,6 +429,26 @@ $$\varepsilon_p = \left|\frac{\%\Delta Q_d}{\%\Delta P}\right| = \left|\frac{\De
 | **Unitary Elastic** | $= 1$ | — | Q changes proportionately with P |
 | **Inelastic** | $< 1$ | Relatively steep | Q not very responsive to P |
 | **Perfectly Inelastic** | $0$ | **Vertical** | Q never changes regardless of P |
+
+```mermaid
+xychart-beta
+    title "Elasticity Types (1: Elastic, 2: Unitary, 3: Inelastic)"
+    x-axis "Quantity" [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    y-axis "Price" 0 --> 10
+    line [6, 5, 5, 4, 4, 3, 3, 2, 2, 1, 1]
+    line [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+    line [10, 8, 6, 4, 2, 0, 0, 0, 0, 0, 0]
+```
+
+*On a linear demand curve: Upper half = Elastic (|ε| > 1), Midpoint = Unitary (|ε| = 1), Lower half = Inelastic (|ε| < 1)*
+
+```mermaid
+flowchart LR
+    A["P = a/b (top)"] --> B["Elastic |ε| > 1"]
+    B --> C["Midpoint: |ε| = 1 (Max TR)"]
+    C --> D["Inelastic |ε| < 1"]
+    D --> E["Q = a (bottom)"]
+```
 
 > **Q:** Vertical demand curve = **Perfectly inelastic** ✓
 > **Q:** %ΔQ < %ΔP → PED = **Less than 1** (inelastic) ✓
@@ -478,6 +561,16 @@ $$\varepsilon_s = \left|\frac{\%\Delta Q_s}{\%\Delta P}\right| = \left|\frac{\De
 | **Perfectly Inelastic** | $0$ (Vertical) |
 
 - Depends on **production flexibility** and **time horizon** (supply more elastic in long run)
+
+```mermaid
+xychart-beta
+    title "Supply Elasticity (1: Inelastic, 2: Elastic, 3: Perfectly Elastic)"
+    x-axis "Quantity" [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    y-axis "Price" 0 --> 16
+    line [0, 2, 4, 6, 8, 10, 12, 14, 16]
+    line [0, 0, 1, 1, 2, 2, 3, 3, 4]
+    line [4, 4, 4, 4, 4, 4, 4, 4, 4]
+```
 
 ---
 
@@ -642,6 +735,16 @@ As use of one input increases (others fixed), a point is reached where **additio
 - Initially: Specialization → MP rises
 - Eventually: Crowding → **MP falls**
 
+```mermaid
+xychart-beta
+    title "Production (1: Total, 2: Average, 3: Marginal)"
+    x-axis "Labour" [0, 1, 2, 3, 4, 5, 6]
+    y-axis "Output" -5 --> 35
+    line [0, 4, 14, 24, 30, 32, 30]
+    line [0, 4, 7, 8, 7, 6, 5]
+    line [0, 4, 10, 10, 6, 2, -2]
+```
+
 ---
 
 ### Returns to Scale (Long Run)
@@ -714,6 +817,27 @@ $$MC = \frac{\Delta TC}{\Delta q} = \frac{\Delta TVC}{\Delta q}$$
 | 5 | 310 | 12 | 50 | 62 | 80 |
 | 6 | 420 | 10 | 60 | **70** | 110 |
 
+```mermaid
+xychart-beta
+    title "Total Costs (1: TC, 2: TVC, 3: TFC)"
+    x-axis "Quantity" [0, 1, 2, 3, 4, 5, 6]
+    y-axis "Cost" 0 --> 450
+    line [60, 100, 130, 170, 230, 310, 420]
+    line [0, 40, 70, 110, 170, 250, 360]
+    line [60, 60, 60, 60, 60, 60, 60]
+```
+
+```mermaid
+xychart-beta
+    title "Avg & Marg Costs (1: MC, 2: ATC, 3: AVC, 4: AFC)"
+    x-axis "Quantity" [1, 2, 3, 4, 5, 6]
+    y-axis "Cost/Unit" 0 --> 120
+    line [40, 30, 40, 60, 80, 110]
+    line [100, 65, 57, 58, 62, 70]
+    line [40, 35, 37, 43, 50, 60]
+    line [60, 30, 20, 15, 12, 10]
+```
+
 > **Q:** ATC for 6 units = 420/6 = **Rs 70** ✓
 > **Q:** MC from 4→5 units = 310 − 230 = **Rs 80** ✓
 > **Q:** ATC starts increasing at **4 units** (from 56.67 to 57.5) ✓
@@ -777,6 +901,15 @@ In perfect competition: **P = AR = MR** (horizontal demand curve for individual 
 $$\text{Profit} = TR - TC$$
 
 **Rule:** Produce where **P = MR = MC** (with MC rising / cutting MR from below)
+
+```mermaid
+xychart-beta
+    title "Perfect Competition (1: P=AR=MR, 2: Marginal Cost)"
+    x-axis "Quantity" [0, 5, 10, 15, 20, 25]
+    y-axis "Price/Cost" 0 --> 100
+    line [80, 80, 80, 80, 80, 80]
+    line [0, 20, 40, 60, 80, 100]
+```
 
 #### Profit/Loss Conditions
 
@@ -950,9 +1083,28 @@ $$DWL = \frac{1}{2} \times (P_M - P^*) \times (Q^* - Q_M)$$
 
 Monopoly produces **less** at a **higher price** → some mutually beneficial trades don't occur
 
+```mermaid
+flowchart TD
+    A["Perfect Competition: P* = 80, Q* = 20"] --> B["All surplus shared: Max TS"]
+    C["Monopoly: PM = 90, QM = 15"] --> D["Higher P, Lower Q"]
+    D --> E["CS transfers to PS"]
+    D --> F["DWL = ½ × (PM-P*) × (Q*-QM)"]
+    F --> G["Lost trades: units 15→20 never produced"]
+```
+
 - **Consumer Surplus:** ↓ (transferred to monopolist + lost as DWL)
 - **Producer Surplus:** ↑ (gains from higher price)
 - **Total Surplus:** ↓ (DWL = net loss to society)
+
+```mermaid
+xychart-beta
+    title "Monopoly Eq (1: Demand, 2: MR, 3: MC)"
+    x-axis "Quantity" [0, 5, 10, 15, 20, 25, 30]
+    y-axis "Price" 0 --> 120
+    line [120, 110, 100, 90, 80, 70, 60]
+    line [120, 100, 80, 60, 40, 20, 0]
+    line [0, 20, 40, 60, 80, 100, 120]
+```
 
 **Q:** DWL from monopoly to competition ($Q_M = 15, P_M = 90$; $Q^* = 20, P^* = 80$)?
 

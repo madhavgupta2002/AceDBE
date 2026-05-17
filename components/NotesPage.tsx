@@ -232,7 +232,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
           .katex { font-size: 1em; }
           .katex-display { margin: 4px 0; overflow-x: auto; }
           /* Mermaid diagram overrides for print */
-          .mermaid-diagram { background: transparent !important; border: none !important; padding: 0; margin: 6px 0; display: flex; justify-content: center; max-width: 280px; }
+          .mermaid-diagram { background: transparent !important; border: none !important; padding: 0; margin: 6px 0; display: flex; justify-content: center; max-width: 180px; }
           .mermaid-diagram svg { max-width: 100%; height: auto; }
           .mermaid-diagram text, .mermaid-diagram .label { fill: #000000 !important; color: #000000 !important; }
           .mermaid-diagram path, .mermaid-diagram line, .mermaid-diagram polyline { stroke: #000000 !important; }

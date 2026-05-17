@@ -106,7 +106,7 @@ const MermaidBlock: React.FC<MermaidBlockProps> = ({ chart }) => {
     return (
         <div
             ref={containerRef}
-            className="mermaid-diagram my-2 overflow-x-auto flex justify-center max-w-sm [&_svg]:bg-transparent"
+            className="mermaid-diagram my-5 overflow-x-auto flex justify-center [&_svg]:bg-transparent"
             dangerouslySetInnerHTML={{ __html: svg }}
         />
     );
