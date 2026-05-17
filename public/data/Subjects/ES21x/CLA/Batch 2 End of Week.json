@@ -1,0 +1,570 @@
+{
+    "exam_metadata": {
+        "subject_name": "Principles of Microeconomics",
+        "exam_date": "Batch 2",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "CLA1_Q1",
+            "question_text": "Reference Context: Rishav can make a round-trip to Jadavpur from College Street to do a task that takes 1 hour to complete and gives him utility worth Rs 500. Rishav ONLY has the following two ways to commute to Jadavpur from College Street:\n1. Rishav can purchase a return ticket for the metro, which costs Rs 50 and results in a total commute time of 1 hour. Thus, if Rishav takes metro to travel to Jadavpur, it takes him 2 hours to complete the task.\n2. Another option is to travel using a city bus, which costs Rs 30 in total, resulting in a total commute time of 3 hours. Thus, if Rishav takes city bus to travel to Jadavpur, it takes him 4 hours to complete the task.\nWhen Rishav is not traveling or working on the specific task, he can work and earn Rs 100 per hour.\n\nWhat is the opportunity cost of traveling by bus?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs 200",
+                "B": "Rs 650",
+                "C": "Rs 150",
+                "D": "Rs 430"
+            },
+            "correct_option_label": "D",
+            "explanation": "Opportunity cost is the explicit cost plus the implicit cost (foregone wages). Explicit cost for the bus is Rs 30. The implicit cost is the wages lost during the total 4 hours taken (3 hours commute + 1 hour task), which is $4 \\times 100 = Rs 400$. Total Opportunity Cost = $30 + 400 = Rs 430$.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q2",
+            "question_text": "Refer to the context in Question CLA1_Q1.\n\nWhat is the Opportunity cost of travelling by metro?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs 200",
+                "B": "Rs 250",
+                "C": "Rs 470",
+                "D": "Rs 230"
+            },
+            "correct_option_label": "B",
+            "explanation": "Explicit cost for the metro is Rs 50. Total time taken is 2 hours (1 hour commute + 1 hour task). Implicit cost is the foregone wages for 2 hours: $2 \\times 100 = Rs 200$. Total Opportunity Cost = $50 + 200 = Rs 250$.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q3",
+            "question_text": "Refer to the context in Question CLA1_Q1.\n\nWhat is the net economic benefit of Rishav by travelling using metro?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs 650",
+                "B": "Rs 250",
+                "C": "Rs 130",
+                "D": "Rs 180"
+            },
+            "correct_option_label": "B",
+            "explanation": "Net economic benefit is Total Benefit minus Total Cost. Total Benefit from the task is Rs 500. Total Opportunity Cost of using the metro is Rs 250 (as calculated in Q2). Net Benefit = $500 - 250 = Rs 250$.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q4",
+            "question_text": "Refer to the context in Question CLA1_Q1.\n\nWhat is the new opportunity cost of traveling by bus for Debayan, who is identical to Rishav except that he can earn hourly wage of only Rs 50 when not traveling?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs 550",
+                "B": "Rs 250",
+                "C": "Rs 470",
+                "D": "Rs 230"
+            },
+            "correct_option_label": "D",
+            "explanation": "Debayan's implicit cost for the 4-hour bus option is $4 \\times 50 = Rs 200$. The explicit cost is Rs 30. Total Opportunity Cost = $30 + 200 = Rs 230$.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q5",
+            "question_text": "Refer to the context in Question CLA1_Q1.\n\nWhat is the new opportunity cost of traveling by metro for Debayan?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs 550",
+                "B": "Rs 250",
+                "C": "Rs 470",
+                "D": "Rs 150"
+            },
+            "correct_option_label": "D",
+            "explanation": "Debayan's implicit cost for the 2-hour metro option is $2 \\times 50 = Rs 100$. The explicit cost is Rs 50. Total Opportunity Cost = $50 + 100 = Rs 150$.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q6",
+            "question_text": "Reference Context: Imagine a situation where potential buyers of flats and current flat owners considering selling their properties suddenly come to the realization that flat prices are expected to rise significantly next year. This shift in expectations about future price increases could have several immediate and long-term effects on the housing market.\n\nWhat is the likely immediate effect on the demand for flats in the current market when buyers expect prices to rise significantly next year?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Demand will decrease as buyers wait for prices to increase next year.",
+                "B": "Demand will increase as buyers rush to buy now before prices increase.",
+                "C": "Demand will remain the same as buyers are indifferent to future price changes.",
+                "D": "Demand will fluctuate based on the overall economic outlook."
+            },
+            "correct_option_label": "B",
+            "explanation": "If consumers expect prices to be higher in the future, their current demand for the good will increase as they aim to make the purchase before the price goes up.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q7",
+            "question_text": "Refer to the context in Question CLA1_Q6.\n\nHow will the supply of flats in the current market likely change when sellers expect prices to rise significantly next year?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Supply will increase as sellers try to sell flats quickly before prices fall.",
+                "B": "Supply will remain the same, as sellers are unsure about future price movements.",
+                "C": "Supply will decrease as sellers decide to hold onto their flats in anticipation of higher prices next year.",
+                "D": "Supply will decrease due to a reduction in the number of flats being built."
+            },
+            "correct_option_label": "C",
+            "explanation": "When sellers anticipate future price increases, they tend to hoard or hold back current inventory, leading to a leftward shift (decrease) in current supply.",
+            "module": 1
+        },
+        {
+            "question_id": "CLA1_Q8",
+            "question_text": "Refer to the context in Question CLA1_Q6.\n\nWhat is the likely impact on the price of flats in the current market if both demand increases and supply decreases due to expectations of higher future prices?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Prices will decrease as the market is flooded with buyers.",
+                "B": "Prices will increase due to higher demand and lower supply.",
+                "C": "Prices will remain stable as the effects of increased demand and decreased supply cancel each other out.",
+                "D": "Prices will fluctuate unpredictably depending on the number of flats available."
+            },
+            "correct_option_label": "B",
+            "explanation": "An increase in demand (rightward shift) coupled with a decrease in supply (leftward shift) definitively pushes the equilibrium price upward.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA1_Q9",
+            "question_text": "Refer to the context in Question CLA1_Q6.\n\nIf sellers hold off on selling their flats due to expectations of higher prices next year, what is the likely short-term impact on the market?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "There will be a shortage of flats in the market, driving up prices.",
+                "B": "The number of flats available for sale will increase in the short term.",
+                "C": "Prices will decrease due to an oversupply of flats.",
+                "D": "Prices will remain unchanged, as the market adjusts to the lower supply."
+            },
+            "correct_option_label": "A",
+            "explanation": "Holding off sales decreases current supply, creating excess demand (a shortage) at the current price, which naturally drives the price upward.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA1_Q10",
+            "question_text": "The demand for chocolate is: $Q_d = 100 - 10P$\nAnd the supply of chocolate is: $Q_s = 10 + 20P$\nWhere $P$ is the price of chocolate.\nFind the equilibrium price and quantity of chocolate.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "P = 3 and Q = 70",
+                "B": "P = 5 and Q = 50",
+                "C": "P = 4 and Q = 60",
+                "D": "None of the above"
+            },
+            "correct_option_label": "A",
+            "explanation": "Equilibrium occurs where quantity demanded equals quantity supplied: $100 - 10P = 10 + 20P$. Solving for $P$: $30P = 90 \\Rightarrow P = 3$. Substitute $P = 3$ into the demand equation: $Q = 100 - 10(3) = 70$.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q1",
+            "question_text": "What occurs when the market price of a product falls below its equilibrium price?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The quantity demanded matches the quantity supplied, ensuring market equilibrium.",
+                "B": "The quantity demanded exceeds the quantity supplied.",
+                "C": "The quantity demanded is less than the quantity supplied.",
+                "D": "This situation is impossible because prices always adjust to the equilibrium level."
+            },
+            "correct_option_label": "B",
+            "explanation": "When price falls below equilibrium, it becomes cheaper for buyers causing quantity demanded to rise, while sellers offer less. This creates excess demand (a shortage) where quantity demanded exceeds quantity supplied.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q2",
+            "question_text": "If the cross-price elasticity of demand between two goods is POSITIVE, what does this indicate about their relationship?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The goods are substitutes",
+                "B": "The goods are complements",
+                "C": "The goods are unrelated",
+                "D": "The goods are inferior"
+            },
+            "correct_option_label": "A",
+            "explanation": "A positive cross-price elasticity means that an increase in the price of one good leads to an increase in the demand for the other, which is the defining characteristic of substitute goods.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q3",
+            "question_text": "What does a perfectly vertical demand curve for a commodity indicate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Demand is highly elastic",
+                "B": "Demand is perfectly inelastic",
+                "C": "Demand is unitary elastic",
+                "D": "Demand is perfectly elastic"
+            },
+            "correct_option_label": "B",
+            "explanation": "A vertical demand curve shows that quantity demanded does not change regardless of price changes, indicating zero price elasticity of demand, or perfectly inelastic demand.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q4",
+            "question_text": "What is the effect of an increase in the supply of a commodity on equilibrium?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It leads to a higher equilibrium price and lower equilibrium quantity",
+                "B": "It causes no change in equilibrium price or quantity",
+                "C": "It leads to a higher equilibrium price and higher equilibrium quantity",
+                "D": "It leads to a lower equilibrium price and higher equilibrium quantity"
+            },
+            "correct_option_label": "D",
+            "explanation": "An increase in supply corresponds to a rightward shift in the supply curve. This moves the equilibrium point along the downward-sloping demand curve, resulting in a lower price and a higher quantity.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q5",
+            "question_text": "If the percentage increase in the quantity of a commodity demanded is smaller than the percentage fall in price, the price elasticity of demand is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Greater than 1",
+                "B": "Equal to 1",
+                "C": "Less than 1",
+                "D": "Zero"
+            },
+            "correct_option_label": "C",
+            "explanation": "Price Elasticity of Demand is the ratio of percentage change in quantity to percentage change in price. If the numerator is smaller than the denominator, the absolute value is less than 1 (inelastic demand).",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q6",
+            "question_text": "Reference Context: The supply of labor is given by: $L^S = 12w$\nwhere $L^S$ represents the quantity of labor supplied (in millions of hours) and $w$ is the wage rate per hour.\nThe demand for labor (in millions of hours) is given by: $L^D = 96 - 12w$\n\nWhat is the free-market wage rate and employment level?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 4 per hour, 48 million hours",
+                "B": "Rs. 6 per hour, 60 million hours",
+                "C": "Rs. 5 per hour, 50 million hours",
+                "D": "Rs. 7 per hour, 72 million hours"
+            },
+            "correct_option_label": "A",
+            "explanation": "Set $L^S = L^D$: $12w = 96 - 12w \\Rightarrow 24w = 96 \\Rightarrow w = 4$. Substitute $w = 4$ into $L^S$: $L = 12(4) = 48$ million hours.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q7",
+            "question_text": "Refer to the context in Question CLA2_Q6.\n\nIf the government sets a minimum wage of $6 per hour, how many people will be employed?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "40 million hours",
+                "B": "60 million hours",
+                "C": "24 million hours",
+                "D": "50 million hours"
+            },
+            "correct_option_label": "C",
+            "explanation": "At a minimum wage of $w = 6$, the quantity of labor demanded is $L^D = 96 - 12(6) = 24$. The quantity supplied is $L^S = 12(6) = 72$. Employment is determined by the short side of the market (demand), so 24 million hours will be employed.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q8",
+            "question_text": "Refer to the context in Question CLA2_Q6.\n\nInstead of the minimum wage, the government introduces labor subsidies, where each employer is paid a subsidy of Rs 2 for every hour of labor done by the employee. What will the new equilibrium wage and employment level be?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs 5 per hour, 60 million hours",
+                "B": "Rs 6 per hour, 72 million hours",
+                "C": "Rs 7 per hour, 84 million hours",
+                "D": "Rs. 4 per hour, 48 million hours"
+            },
+            "correct_option_label": "A",
+            "explanation": "A subsidy to employers decreases their effective wage cost to $w - 2$. The new demand curve is $L^D = 96 - 12(w - 2) = 120 - 12w$. Setting $L^S = L^D$: $12w = 120 - 12w \\Rightarrow 24w = 120 \\Rightarrow w = 5$. Employment is $12(5) = 60$ million hours.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q9",
+            "question_text": "If the government wants to maximum the revenue from taxing the consumers, which type of good should it tax?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A good with perfectly elastic demand",
+                "B": "A good with unitary elastic demand",
+                "C": "A good with perfectly inelastic demand",
+                "D": "A luxury good with many substitutes"
+            },
+            "correct_option_label": "C",
+            "explanation": "When demand is perfectly inelastic, quantity demanded does not drop at all when the tax increases the price. This maximizes the tax base and results in the highest possible tax revenue without deadweight loss.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA2_Q10",
+            "question_text": "A company raises the price of its product by 15%, and total revenue increases. What does this suggest about the price elasticity of demand?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Demand is elastic",
+                "B": "Demand is inelastic",
+                "C": "Demand is unitary elastic",
+                "D": "Demand is perfectly elastic"
+            },
+            "correct_option_label": "B",
+            "explanation": "If a price increase leads to higher total revenue, it means the percentage drop in quantity demanded was smaller than the percentage increase in price, which is the definition of inelastic demand.",
+            "module": 2
+        },
+        {
+            "question_id": "CLA3_Q1",
+            "question_text": "Reference Context: The following table provides information on the total cost of Lily's ice cream production:\n\n| Quantity of Ice Cream (in Litres) | Total Cost (in Rs) |\n| --- | --- |\n| 0 | 60 |\n| 1 | 100 |\n| 2 | 130 |\n| 3 | 170 |\n| 4 | 230 |\n| 5 | 310 |\n| 6 | 420 |\n\nFind Average Total Cost (ATC) for 6 units of Ice Cream.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 5",
+                "B": "Rs. 7",
+                "C": "Rs. 70",
+                "D": "Rs. 12"
+            },
+            "correct_option_label": "C",
+            "explanation": "Average Total Cost (ATC) is Total Cost divided by Quantity. For 6 units, the Total Cost is Rs 420. $ATC = 420 / 6 = Rs 70$.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q2",
+            "question_text": "Refer to the context in Question CLA3_Q1.\n\nWhat is the Marginal Cost (MC) when the production increases from 4 units to 5 units of ice cream?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 10",
+                "B": "Rs. 80",
+                "C": "Rs. 40",
+                "D": "Rs. 50"
+            },
+            "correct_option_label": "B",
+            "explanation": "Marginal Cost is the change in Total Cost when quantity increases by one unit. $MC = TC(5) - TC(4) = 310 - 230 = Rs 80$.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q3",
+            "question_text": "Refer to the context in Question CLA3_Q1.\n\nAt which level of output does the Average Total Cost start increasing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "3 units",
+                "B": "4 units",
+                "C": "5 units",
+                "D": "6 units"
+            },
+            "correct_option_label": "B",
+            "explanation": "Calculate ATC for each level: ATC(2)=65, ATC(3)=56.67, ATC(4)=57.5. Since ATC drops from Q=2 to Q=3 but goes up at Q=4 (from 56.67 to 57.5), it starts increasing at 4 units.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q4",
+            "question_text": "You are constructing an apartment building, and your market research department initially estimated revenues of Rs 9 Crore, while the engineering department estimated costs of Rs 6 crore, of which spending Rs. 1.5 comes from laying the foundation. After spending Rs. 1.5 crore on the foundation, a recession causes the revenue estimate to be revised down to Rs. 5.0 crore. Given this situation, should you complete the apartment building?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Yes, because the project will still generate positive revenue.",
+                "B": "No, because the revised revenue estimate is lower than the total cost of construction.",
+                "C": "Yes, because you have already spent Rs. 1.5 crore, so completing the project is the best option.",
+                "D": "No, because the recession has caused a loss, and it’s better to cut losses now."
+            },
+            "correct_option_label": "C",
+            "explanation": "The Rs 1.5 crore spent is a sunk cost and should be ignored. The remaining marginal cost to finish is $6 - 1.5 = 4.5$ crore. Since marginal revenue (5.0 crore) is greater than marginal cost (4.5 crore), finishing it maximizes profit/minimizes losses.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q5",
+            "question_text": "A competitive firm’s short-run supply curve is its _________ cost curve above its _________ cost curve.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "average-total; marginal",
+                "B": "average-variable; marginal",
+                "C": "marginal; average-total",
+                "D": "marginal; average-variable"
+            },
+            "correct_option_label": "D",
+            "explanation": "A firm maximizes profit by producing where $P = MC$. However, it will shut down if $P < AVC$. Thus, its supply curve is the portion of the Marginal Cost curve that lies above the Average Variable Cost curve.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q6",
+            "question_text": "A profit-maximizing firm in a competitive market is currently producing 100 units of output. It has average total cost of $8, and fixed cost of $200. Suppose the average revenue is $7.\n\nWhat is its average variable cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$8",
+                "B": "$2",
+                "C": "$6",
+                "D": "None of the above"
+            },
+            "correct_option_label": "C",
+            "explanation": "Total Cost (TC) = $ATC \\times Q = 8 \\times 100 = 800$. Variable Cost (VC) = $TC - FC = 800 - 200 = 600$. Average Variable Cost (AVC) = $VC / Q = 600 / 100 = $6$.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q7",
+            "question_text": "What would be your recommendation for the firm in Q6?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "keep producing in the short run but exit the market in the long run.",
+                "B": "shut down in the short run but return to production in the long run.",
+                "C": "shut down in the short run and exit the market in the long run.",
+                "D": "keep producing both in the short run and in the long run."
+            },
+            "correct_option_label": "A",
+            "explanation": "Price ($7) is less than ATC ($8) so the firm operates at a loss, meaning it should exit in the long run. However, since Price ($7) is greater than AVC ($6), it covers all variable costs and some fixed costs, so it should keep producing in the short run.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q8",
+            "question_text": "Reference Context: The short-run cost function of a company is given by the equation: $TC = 200 + 55q$. Where TC is the total cost (in thousands) and q is the total quantity of output (in thousands).\n\nWhat is the company’s Fixed Cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "200",
+                "B": "55",
+                "C": "100",
+                "D": "55q"
+            },
+            "correct_option_label": "A",
+            "explanation": "Fixed Costs are costs that do not vary with the quantity produced. In the total cost equation $TC = 200 + 55q$, the constant term is 200.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q9",
+            "question_text": "Refer to the context in Question CLA3_Q8.\n\nIf the company produces 100,000 units of goods (q = 100), what would be its Average Variable Cost (AVC)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "5.5",
+                "B": "55,000",
+                "C": "0.55",
+                "D": "55"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Variable Cost (VC) part of the equation is $55q$. Average Variable Cost (AVC) is $VC / q = 55q / q = 55$. This remains constant at all output levels for this linear cost function.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA3_Q10",
+            "question_text": "The government imposes a $1,000 per year license fee on all pizza restaurants. As a result, which cost curves shift?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "average total cost and marginal cost",
+                "B": "average total cost and average fixed cost",
+                "C": "average variable cost and marginal cost",
+                "D": "average variable cost and average fixed cost"
+            },
+            "correct_option_label": "B",
+            "explanation": "A license fee is a fixed cost because it does not vary with output. An increase in fixed cost pushes up Average Fixed Cost (AFC) and thereby Average Total Cost (ATC). Marginal and Variable cost curves are unaffected.",
+            "module": 3
+        },
+        {
+            "question_id": "CLA4_Q1",
+            "question_text": "For a profit-maximizing monopoly that charges a single price, what is the relationship between price P, marginal revenue MR, and marginal cost MC?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "P = MR and MR = MC.",
+                "B": "P > MR and MR = MC.",
+                "C": "P = MR and MR > MC",
+                "D": "P > MR and MR > MC."
+            },
+            "correct_option_label": "B",
+            "explanation": "A monopolist maximizes profit where $MR = MC$. Because the monopolist faces a downward-sloping demand curve, it must lower the price on all units to sell an additional unit, meaning Price ($P$) is strictly greater than Marginal Revenue ($MR$).",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q2",
+            "question_text": "If a monopoly’s fixed costs increase, its price will _________ and its profit will _________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "increase; decrease",
+                "B": "decrease; increase",
+                "C": "increase; stay the same",
+                "D": "stay the same; decrease"
+            },
+            "correct_option_label": "D",
+            "explanation": "Fixed costs do not affect Marginal Cost. Since the profit-maximizing output and price are determined by where $MR = MC$, price and quantity will stay the same. However, higher fixed costs will decrease overall profit.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q3",
+            "question_text": "Which of the following statements about price discrimination is true?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Price discrimination increases consumer surplus.",
+                "B": "Price discrimination is only possible in perfectly competitive markets.",
+                "C": "Price discrimination allows firms to capture more of the total surplus.",
+                "D": "None of the above."
+            },
+            "correct_option_label": "C",
+            "explanation": "Price discrimination involves charging different prices to different customers based on their willingness to pay, allowing the monopolist to convert consumer surplus into producer surplus (profit).",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q4",
+            "question_text": "A natural monopoly exists when:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The government restricts entry into the industry",
+                "B": "The firm has control over a key input",
+                "C": "One firm can supply the entire market at a lower cost than multiple firms",
+                "D": "The firm earns excessive profits"
+            },
+            "correct_option_label": "C",
+            "explanation": "A natural monopoly arises when there are massive economies of scale (continually decreasing ATC), making it cheaper for a single firm to supply the entire market than for two or more firms to do so.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q5",
+            "question_text": "Price discrimination is more likely to be successful when:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Consumers can easily resell the product",
+                "B": "Consumers have the same willingness to pay",
+                "C": "The firm has market power and can prevent resale",
+                "D": "The market is perfectly competitive"
+            },
+            "correct_option_label": "C",
+            "explanation": "To successfully price discriminate, a firm must have market power to set prices and must be able to prevent arbitrage (resale) so that buyers in the low-price market cannot sell to buyers in the high-price market.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q6",
+            "question_text": "Reference Context: A monopolist has a fixed cost of Rs 5 and a constant marginal cost of Rs 6. The demand for its product is given in the table below:\n\n| Price (in Rs) | Quantity |\n| --- | --- |\n| Rs 10 | 1 unit |\n| Rs 9 | 2 units |\n| Rs 8 | 3 units |\n| Rs 7 | 4 units |\n| Rs 6 | 5 units |\n\nWhat is the total revenue when the firm sells 3 units?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 10",
+                "B": "Rs. 24",
+                "C": "Rs. 30",
+                "D": "Rs. 40"
+            },
+            "correct_option_label": "B",
+            "explanation": "Total Revenue (TR) is Price multiplied by Quantity. At 3 units, the price is Rs 8. $TR = 8 \\times 3 = Rs 24$.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q7",
+            "question_text": "Refer to the context in Question CLA4_Q6.\n\nWhat is the marginal revenue when output increases from 2 to 3 units?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 6",
+                "B": "Rs. 7",
+                "C": "Rs. 8",
+                "D": "Rs. 9"
+            },
+            "correct_option_label": "A",
+            "explanation": "TR at 2 units is $9 \\times 2 = 18$. TR at 3 units is $8 \\times 3 = 24$. Marginal Revenue is the change in TR: $24 - 18 = Rs 6$.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q8",
+            "question_text": "Refer to the context in Question CLA4_Q6.\n\nAt what quantity does the monopolist maximize profit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "5 Units",
+                "B": "4 Units",
+                "C": "3 Units",
+                "D": "2 Units"
+            },
+            "correct_option_label": "C",
+            "explanation": "Profit is maximized where MR = MC. MC is constant at Rs 6. From Q7, we know MR between 2 and 3 units is Rs 6. Therefore, MR = MC at 3 units.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q9",
+            "question_text": "Refer to the context in Question CLA4_Q6.\n\nWhat is the optimal price the monopolist should charge to maximize profit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 6",
+                "B": "Rs. 7",
+                "C": "Rs. 8",
+                "D": "Rs. 9"
+            },
+            "correct_option_label": "C",
+            "explanation": "As determined in Q8, the profit-maximizing quantity is 3 units. According to the demand schedule, the price consumers are willing to pay for 3 units is Rs 8.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA4_Q10",
+            "question_text": "Refer to the context in Question CLA4_Q6.\n\nWhat is the maximal profit of the monopolist?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. -1",
+                "B": "Rs. 2",
+                "C": "Rs. 0",
+                "D": "Rs. 1"
+            },
+            "correct_option_label": "D",
+            "explanation": "Profit = TR - TC. At 3 units, $TR = 24$. Total Cost is Fixed Cost plus Variable Cost: $TC = 5 + (6 \\times 3) = 5 + 18 = 23$. Max Profit = $24 - 23 = Rs 1$.",
+            "module": 4
+        }
+    ]
+}
