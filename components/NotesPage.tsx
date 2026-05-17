@@ -11,6 +11,7 @@ import { ArrowLeft, BookOpen, ChevronDown, Type, Printer } from 'lucide-react';
 import { loadNotes, loadFormulas } from '@/lib/notesLoader';
 import { getSubjectByCode } from '@/lib/subjectMapping';
 import Header from '@/components/Header';
+import MermaidBlock from '@/components/MermaidBlock';
 
 interface NotesPageProps {
   subjectCode: string;
@@ -230,6 +231,14 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
           /* KaTeX overrides for print */
           .katex { font-size: 1em; }
           .katex-display { margin: 4px 0; overflow-x: auto; }
+          /* Mermaid diagram overrides for print */
+          .mermaid-diagram { background: transparent !important; border: none !important; padding: 0; margin: 6px 0; display: flex; justify-content: center; max-width: 280px; }
+          .mermaid-diagram svg { max-width: 100%; height: auto; }
+          .mermaid-diagram text, .mermaid-diagram .label { fill: #000000 !important; color: #000000 !important; }
+          .mermaid-diagram path, .mermaid-diagram line, .mermaid-diagram polyline { stroke: #000000 !important; }
+          .mermaid-diagram .node rect, .mermaid-diagram .node circle, .mermaid-diagram .node polygon { stroke: #000000 !important; fill: transparent !important; }
+          .mermaid-diagram .edgeLabel { background: #ffffff !important; }
+          .mermaid-diagram .grid line { stroke: #cccccc !important; }
           /* Reset any dark-mode classes from copied HTML */
           [class*="text-white"], [class*="text-slate"], [class*="text-emerald"], [class*="text-indigo"], [class*="text-purple"] { color: #1a1a1a !important; }
           [class*="border-slate"], [class*="border-surface"] { border-color: #d1d5db !important; }
@@ -539,6 +548,15 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                   ),
                   // Code blocks
                   code: ({ node, className, children, ...props }: any) => {
+                    const match = /language-(\w+)/.exec(className || '');
+                    const lang = match ? match[1] : null;
+
+                    // Render mermaid diagrams
+                    if (lang === 'mermaid') {
+                      const chart = String(children).replace(/\n$/, '');
+                      return <MermaidBlock chart={chart} />;
+                    }
+
                     const isInline = !className;
                     if (isInline) {
                       return (
@@ -559,11 +577,22 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                       </code>
                     );
                   },
-                  pre: ({ node, children, ...props }: any) => (
-                    <pre className="bg-surface rounded-lg p-4 overflow-x-auto mb-5 border border-surface-border/60" {...props}>
-                      {children}
-                    </pre>
-                  ),
+                  pre: ({ node, children, ...props }: any) => {
+                    // Check if this pre contains a mermaid code block via the AST node
+                    const codeChild = node?.children?.[0];
+                    const className = codeChild?.properties?.className || [];
+                    const isMermaid = Array.isArray(className)
+                      ? className.some((c: string) => c === 'language-mermaid')
+                      : typeof className === 'string' && className.includes('language-mermaid');
+                    if (isMermaid) {
+                      return <>{children}</>;
+                    }
+                    return (
+                      <pre className="bg-surface rounded-lg p-4 overflow-x-auto mb-5 border border-surface-border/60" {...props}>
+                        {children}
+                      </pre>
+                    );
+                  },
                   // Blockquotes
                   blockquote: ({ node, ...props }) => (
                     <blockquote

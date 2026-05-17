@@ -195,3 +195,47 @@ Question number and problem statement appear **outside** the blockquote in bold.
 5. Merge duplicate questions using slash notation (`Q12/Q45:`)
 6. Add Quick Reference and Decision Rules at the end
 7. Add Rapid-Fire table if total questions exceed ~40
+
+---
+
+### 8. Diagrams (Mermaid)
+
+Diagrams are rendered using **Mermaid** syntax inside fenced code blocks with the `mermaid` language tag. The renderer uses a dark theme with transparent backgrounds, white text/borders, and an emerald-based color palette for charts.
+
+**Supported diagram types:** flowcharts, sequence diagrams, xychart (line/bar), pie charts, class diagrams, etc.
+
+**Rendering details:**
+- Background is always transparent (no box or container around the diagram)
+- All text, labels, axes, and borders render in white (`#ffffff`)
+- Node fills are transparent; only borders are visible
+- XY chart plot colors: `#10b981, #6366f1, #f59e0b, #ef4444, #8b5cf6`
+- Max width is constrained to `max-w-sm` (~384px), centered
+- Diagrams are rendered inline on the page without any surrounding box or border
+
+**Usage in notes:**
+
+````markdown
+```mermaid
+xychart-beta
+    title "Linear Demand Curve (P = a/b - Q/b)"
+    x-axis "Quantity Demanded" [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    y-axis "Price" 0 --> 10
+    line [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+```
+````
+
+````markdown
+```mermaid
+flowchart TD
+    A[Start] --> B{Decision}
+    B -->|Yes| C[Action 1]
+    B -->|No| D[Action 2]
+```
+````
+
+**Guidelines for generating diagrams:**
+- Use `xychart-beta` for any supply/demand curves, cost curves, or quantitative relationships
+- Use `flowchart` for decision trees, process flows, circular flows
+- Keep labels short (they render small at max-w-sm)
+- Do not add background color directives — the renderer forces transparent
+- Prefer simple diagrams; avoid overly complex multi-node charts that become unreadable at small sizes

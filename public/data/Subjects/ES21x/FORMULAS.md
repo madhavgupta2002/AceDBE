@@ -2,6 +2,42 @@
 
 ---
 
+### Key Diagrams
+
+#### Linear Demand Curve
+
+```mermaid
+xychart-beta
+    title "Linear Demand Curve (P = a/b - Q/b)"
+    x-axis "Quantity Demanded" [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    y-axis "Price" 0 --> 10
+    line [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+```
+
+#### Supply and Demand Equilibrium
+
+```mermaid
+xychart-beta
+    title "Supply & Demand Equilibrium"
+    x-axis "Quantity" [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    y-axis "Price" 0 --> 10
+    line "Demand" [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+    line "Supply" [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```
+
+#### Circular Flow of Economy
+
+```mermaid
+flowchart LR
+    H[Households] -->|Labour, Land, Capital| F[Firms]
+    F -->|Wages, Rent, Profit| H
+    F -->|Goods & Services| M[Market for G&S]
+    M -->|Goods & Services| H
+    H -->|Spending| M
+```
+
+---
+
 ### What is Economics
 
 - Economics = study of how society manages its **scarce resources**
