@@ -84,6 +84,32 @@ body::after {
   color: #86efac;
 }
 
+/* Mermaid diagram - match page background */
+.mermaid-diagram svg {
+  background: transparent !important;
+}
+
+.mermaid-diagram svg>rect:first-child,
+.mermaid-diagram .background {
+  display: none !important;
+}
+
+.mermaid-diagram .node rect,
+.mermaid-diagram .node circle,
+.mermaid-diagram .node polygon {
+  fill: transparent !important;
+  stroke: #ffffff !important;
+}
+
+.mermaid-diagram .edgeLabel {
+  background-color: transparent !important;
+}
+
+.mermaid-diagram .edgeLabel rect {
+  fill: transparent !important;
+  opacity: 0 !important;
+}
+
 /* Custom Scrollbar Styles */
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
