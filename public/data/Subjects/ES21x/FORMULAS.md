@@ -1,4 +1,4 @@
-## MODULE 1: Foundations & Conceptual Tools of Economics
+## MODULE 1: Forces of Demand and Supply
 
 ---
 
@@ -123,10 +123,6 @@ Utility from task = Rs 500
 
 ---
 
-## MODULE 2: Demand, Supply & Market Equilibrium
-
----
-
 ### Law of Demand
 
 As the **price increases**, the **quantity demanded decreases**, ceteris paribus → **downward-sloping** demand curve
@@ -240,6 +236,10 @@ $$Q_s = c + dP \quad (c > 0, \; d > 0)$$
 
 ---
 
+## MODULE 2: Equilibrium in a Competitive Market
+
+---
+
 ### Market Equilibrium
 
 **Equilibrium Price ($P^*$)** = price where $Q_d = Q_s$ (**market-clearing price**)
@@ -313,7 +313,7 @@ $$Q_s = c + dP \quad (c > 0, \; d > 0)$$
 
 ---
 
-## MODULE 3: Elasticity
+## Elasticity
 
 ---
 
@@ -323,8 +323,8 @@ $$\varepsilon_p = \left|\frac{\%\Delta Q_d}{\%\Delta P}\right| = \left|\frac{\De
 
 *Always use **absolute value** for comparison*
 
-| Category | $|\varepsilon_p|$ | Curve Shape | Meaning |
-|----------|:-:|-------------|---------|
+| Category | $\|\varepsilon_p\|$ | Curve Shape | Meaning |
+|:---|:---:|:---|:---|
 | **Perfectly Elastic** | $\infty$ | Horizontal | Slightest price change → Q drops to zero |
 | **Elastic** | $> 1$ | Relatively flat | Q very responsive to P |
 | **Unitary Elastic** | $= 1$ | — | Q changes proportionately with P |
@@ -434,8 +434,8 @@ $$\varepsilon_c^{XY} = \frac{\%\Delta Q_X}{\%\Delta P_Y} = \frac{\Delta Q_X}{\De
 
 $$\varepsilon_s = \left|\frac{\%\Delta Q_s}{\%\Delta P}\right| = \left|\frac{\Delta Q_s}{\Delta P} \times \frac{P}{Q_s}\right|$$
 
-| Category | $|\varepsilon_s|$ |
-|----------|:-:|
+| Category | $\|\varepsilon_s\|$ |
+|:---|:---:|
 | **Elastic** | $> 1$ |
 | **Inelastic** | $< 1$ |
 | **Perfectly Elastic** | $\infty$ (Horizontal) |
@@ -445,7 +445,7 @@ $$\varepsilon_s = \left|\frac{\%\Delta Q_s}{\%\Delta P}\right| = \left|\frac{\De
 
 ---
 
-## MODULE 4: Surplus & Government Intervention
+## Surplus & Government Intervention
 
 ---
 
@@ -581,7 +581,7 @@ $$DWL_{tax} = \frac{1}{2} \times T \times \Delta Q$$
 
 ---
 
-## MODULE 5: Production & Costs
+## MODULE 3: Looking inside a Firm
 
 ---
 
@@ -715,7 +715,7 @@ $$MC = \frac{\Delta TC}{\Delta q} = \frac{\Delta TVC}{\Delta q}$$
 
 ---
 
-## MODULE 6: Perfect Competition
+## MODULE 4: Perfect Competition vs Monopoly
 
 ---
 
@@ -807,7 +807,7 @@ $$\text{Profit} = TR - TC$$
 
 ---
 
-## MODULE 7: Monopoly
+## Monopoly
 
 ---
 
@@ -949,7 +949,7 @@ $$L = \frac{P - MC}{P} = \frac{1}{\varepsilon_p}$$
 
 ---
 
-## MODULE 8: Price Discrimination
+## Price Discrimination
 
 ---
 
