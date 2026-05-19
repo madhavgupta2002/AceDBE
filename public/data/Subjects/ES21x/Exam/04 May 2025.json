@@ -62,12 +62,13 @@
         },
         {
             "question_id": "6",
-            "question_text": "Microeconomics by Pindyck and Rubinfeld is a textbook bought by only two types of students: MBA students and advanced undergraduates. The demand curve for MBA students is Qm=10 - P, where Qm is in thousands and is P in hundreds of rupees. The demand curve for advanced undergraduates is Qa=20 - 4P, where Qa is in thousands and P in hundreds of rupees. \n\nAt price Rs.100, which of the following is correct",
+            "question_text": "At price Rs.100, which of the following is correct",
             "question_type": "MCQ",
             "options": {
                 "A": "MBA demand is more elastic than the market demand",
                 "B": "MBA demand is equally elastic as the market demand",
-                "C": "MBA demand is less elastic than the market demand"
+                "C": "MBA demand is less elastic than the market demand",
+                "D": "None of the above"
             },
             "correct_option_label": "C",
             "explanation": "Convert price: P = $\\frac{100}{100}$ = 1.\n\nStep 1: MBA elasticity at P = 1.\n$Q_m$ = 10 - 1 = 9 (thousands).\n$\\varepsilon_m$ = $\\left|\\frac{dQ_m}{dP}\\right| \\times \\frac{P}{Q_m}$ = 1 $\\times \\frac{1}{9} \\approx$ 0.111.\n\nStep 2: Market demand at P = 1 (since P = 1 < 5, both types buy).\n$Q_{total}$ = (10 - P) + (20 - 4P) = 30 - 5P = 30 - 5(1) = 25 (thousands).\n$\\varepsilon_{market}$ = $\\left|\\frac{dQ}{dP}\\right| \\times \\frac{P}{Q}$ = 5 $\\times \\frac{1}{25}$ = 0.200.\n\nStep 3: Compare elasticities.\n$\\varepsilon_m$ = 0.111 < $\\varepsilon_{market}$ = 0.200.\n\nMBA demand is less elastic than market demand at P = Rs 100.",
@@ -75,7 +76,7 @@
         },
         {
             "question_id": "8",
-            "question_text": "Let there be three types of consumers: High, Medium, and Low. Banana, a software company has a product called Pro-Max, which is produced at zero marginal cost. There are 50 High type (WTP: 120), 30 Medium type (WTP: 60), and 20 Low type (WTP: 20) consumers. \n\nThe uniform price (or a single price) that gives Banana, the highest revenue is",
+            "question_text": "Let there be three types of consumers: High, Medium, and Low. Banana, a software company has a product called Pro-Max, which is produced at zero marginal cost. Also assume that there are 50 High type, 30 Medium type, and 20 Low type consumers. Moreover, each consumer has a demand for only one unit of Pro-Max. Following are the maximum willingness to pay for the product by the three consumers' types:\n\nHigh: 120;         Medium: 60;         Low: 20.\n\nThe uniform price (or a single price) that gives Banana, the highest revenue is",
             "question_type": "MCQ",
             "options": {
                 "A": "120",
@@ -145,7 +146,7 @@
         },
         {
             "question_id": "13",
-            "question_text": "Suppose the current equilibrium quantity of alcoholic beverages is Q* and the current equilibrium price is P*. The reduction in the quantity sold of the alcohol in the market would be highest after the introduction of the tax when",
+            "question_text": "Suppose the current equilibrium quantity of alcoholic beverages is Q* and the current equilibrium price is P*. The government wishes to reduce the quantity of alcoholic beverages sold, and therefore, is considering the imposition of a specific tax (on per unit of quantity sold) on the sellers of alcoholic drinks. Suppose that the market for alcoholic drinks can be described by (i) a large number of price-taking buyers and sellers of alcoholic drinks, and (ii) a downward sloping linear market demand curve and an upward sloping linear market supply curve.\n\nFrom the options given below, the reduction in the quantity sold of the alcohol in the market would be highest after the introduction of the tax when",
             "question_type": "MCQ",
             "options": {
                 "A": "market supply curve is inelastic at (P*,Q*), and the market demand curve is elastic at (P*,Q*)",
@@ -159,7 +160,7 @@
         },
         {
             "question_id": "14",
-            "question_text": "Suppose the current equilibrium quantity of alcoholic beverages is Q* and the current equilibrium price is P*. From the options given below, sellers of alcoholic drinks will bear the largest burden of the tax when",
+            "question_text": "From the options given below, sellers of alcoholic drinks will bear the largest burden of the tax when",
             "question_type": "MCQ",
             "options": {
                 "A": "market supply curve is relatively inelastic compared to the market demand curve at (P*,Q*)",
@@ -173,13 +174,13 @@
         },
         {
             "question_id": "16",
-            "question_text": "The average total cost to produce 100 cookies is $0.25 per cookie. The marginal cost is constant at $0.10 for all levels of cookies produced. The total cost to produce 50 cookies is:",
+            "question_text": "The average total cost to produce 100 cookies is \\$0.25 per cookie. The marginal cost is constant at \\$0.10 for all levels of cookies produced. The total cost to produce 50 cookies is:",
             "question_type": "MCQ",
             "options": {
-                "A": "$20",
-                "B": "$25",
-                "C": "$50",
-                "D": "$60"
+                "A": "\\$20",
+                "B": "\\$25",
+                "C": "\\$50",
+                "D": "\\$60"
             },
             "correct_option_label": "A",
             "explanation": "Step 1: Find Total Cost at Q = 100.\nTC(100) = ATC $\\times$ Q = 0.25 $\\times$ 100 = \\$25.\n\nStep 2: Find Total Variable Cost at Q = 100 (since MC is constant, TVC = MC $\\times$ Q).\nTVC(100) = 0.10 $\\times$ 100 = \\$10.\n\nStep 3: Solve for Fixed Cost.\nFC = TC - TVC = 25 - 10 = \\$15.\n\nStep 4: Find Total Cost at Q = 50.\nTC(50) = FC + MC $\\times$ Q = 15 + 0.10 $\\times$ 50 = 15 + 5 = \\$20.",
@@ -187,7 +188,7 @@
         },
         {
             "question_id": "17",
-            "question_text": "The average total cost to produce 100 cookies is $0.25 per cookie. The marginal cost is constant at $0.10 for all levels of cookies produced. At the level of 50 and 100 cookies, the average total cost is",
+            "question_text": "At the level of 50 and 100 cookies, the average total cost is",
             "question_type": "MCQ",
             "options": {
                 "A": "falling at both levels",
@@ -234,7 +235,8 @@
             "options": {
                 "A": "Graph A",
                 "B": "Graph B",
-                "C": "Graph C"
+                "C": "Graph C",
+                "D": "Graph B and Graph C"
             },
             "correct_option_label": "A",
             "explanation": "Today, no technology exists to travel to or vacation on Mars. This means no seller can supply Mars vacations at any commercially viable price.\n\nIn market terms: the minimum price sellers would require to supply even one unit far exceeds the maximum price any consumer is willing to pay.\n\nGraph A represents this situation — the supply curve lies entirely above the demand curve at every quantity. The two curves never intersect, so there is no equilibrium and zero quantity is traded.\n\nThis is a market that does not exist (yet).",
@@ -246,7 +248,7 @@
             "question_type": "MCQ",
             "options": {
                 "A": "where the elasticity is –1 (or the absolute value of the own price elasticity of demand is 1)",
-                "B": "on the quantity axis intercept",
+                "B": "on the quantity axis intercept (that is, the point where demand curve meets the X-axis)",
                 "C": "on the price axis intercept",
                 "D": "where the elasticity is 0"
             },
@@ -331,7 +333,8 @@
             "options": {
                 "A": "Effective price ceiling decreases producer surplus",
                 "B": "Effective price ceiling creates an excess demand",
-                "C": "Effective price ceiling creates an excess supply"
+                "C": "Effective price ceiling creates an excess supply",
+                "D": "To have any effect, the price ceiling must be set at a lower level than the original equilibrium price."
             },
             "correct_option_label": "C",
             "explanation": "A binding (effective) price ceiling is set below the equilibrium price: $P_C < P^*$.\n\nStatement A (True): At $P_C < P^*$, sellers receive a lower price per unit, shrinking the area of producer surplus below the market price and above the supply curve. Producer surplus decreases.\n\nStatement B (True): At $P_C$: Quantity demanded (QD at $P_C$) > Quantity supplied (QS at $P_C$). This creates a shortage, i.e., excess demand.\n\nStatement C (False): A price ceiling does not create excess supply. It creates excess demand (shortage) because the artificially low price encourages more buying but discourages production. Excess supply (a surplus) results from a price floor set above the equilibrium price.\n\nThe false statement is C.",
@@ -339,7 +342,7 @@
         },
         {
             "question_id": "28",
-            "question_text": "Industry Equations: TC = 100 + 2Q^2; MC = 4Q; P = 120 - 2Q. If there is only one firm (monopoly), what is the profit-maximizing quantity and price? (MR = 120 - 4Q)",
+            "question_text": "The industry is characterized by the following equations:\n\nTotal Cost per Firm: TC = 100 + 2Q²\nMarginal Cost per Firm: MC = 4Q\nIndustry Demand Curve: P = 120 - 2Q\n\nIf there is only one firm (monopoly) in the industry, what is the profit-maximizing quantity and price? Marginal Revenue Curve for the monopolist is given by: MR = 120 - 4Q",
             "question_type": "MCQ",
             "options": {
                 "A": "Q=10,P=70",
@@ -353,13 +356,13 @@
         },
         {
             "question_id": "29",
-            "question_text": "Industry Equations: TC = 100 + 2Q^2; MC = 4Q; P = 120 - 2Q. What is the monopolist's profit at the optimal quantity (Q=15, P=90)?",
+            "question_text": "What is the monopolist's profit at the optimal quantity (Q=15, P=90)?",
             "question_type": "MCQ",
             "options": {
-                "A": "$300",
-                "B": "$800",
-                "C": "$500",
-                "D": "$600"
+                "A": "\\$300",
+                "B": "\\$800",
+                "C": "\\$500",
+                "D": "\\$600"
             },
             "correct_option_label": "B",
             "explanation": "Step 1: Calculate Total Revenue at Q = 15, P = 90.\nTR = P $\\times$ Q = 90 $\\times$ 15 = 1,350.\n\nStep 2: Calculate Total Cost at Q = 15.\nTC = 100 + 2(15)^2 = 100 + 2(225) = 100 + 450 = 550.\n\nStep 3: Calculate Profit.\n$\\pi$ = TR - TC = 1,350 - 550 = \\$800.",
@@ -367,7 +370,7 @@
         },
         {
             "question_id": "30",
-            "question_text": "Industry Equations: TC = 100 + 2Q^2; MC = 4Q; P = 120 - 2Q. If the industry is perfectly competitive, what will be the equilibrium quantity and price?",
+            "question_text": "If the industry is perfectly competitive, what will be the equilibrium quantity and price?",
             "question_type": "MCQ",
             "options": {
                 "A": "Q = 20,P = 80",
@@ -381,13 +384,13 @@
         },
         {
             "question_id": "31",
-            "question_text": "Industry Equations: TC = 100 + 2Q^2; MC = 4Q; P = 120 - 2Q. What is the total profit in perfect competition (at Q=20, P=80)?",
+            "question_text": "What is the total profit in perfect competition (at Q=20, P=80)?",
             "question_type": "MCQ",
             "options": {
-                "A": "$200",
-                "B": "$250",
-                "C": "$700",
-                "D": "$350"
+                "A": "\\$200",
+                "B": "\\$250",
+                "C": "\\$700",
+                "D": "\\$350"
             },
             "correct_option_label": "C",
             "explanation": "Step 1: Calculate Total Revenue at Q = 20, P = 80.\nTR = P $\\times$ Q = 80 $\\times$ 20 = 1,600.\n\nStep 2: Calculate Total Cost at Q = 20.\nTC = 100 + 2(20)^2 = 100 + 2(400) = 100 + 800 = 900.\n\nStep 3: Calculate Profit.\n$\\pi$ = TR - TC = 1,600 - 900 = \\$700.",
@@ -395,13 +398,13 @@
         },
         {
             "question_id": "32",
-            "question_text": "What is the social gain (deadweight loss) from moving from monopoly to perfect competition? (TC = 100 + 2Q^2; MC = 4Q; P = 120 - 2Q)",
+            "question_text": "What is the social gain (deadweight loss) from moving from monopoly to perfect competition?",
             "question_type": "MCQ",
             "options": {
-                "A": "$10",
-                "B": "$15",
-                "C": "$20",
-                "D": "$25"
+                "A": "\\$10",
+                "B": "\\$15",
+                "C": "\\$20",
+                "D": "\\$25"
             },
             "correct_option_label": "D",
             "explanation": "The Deadweight Loss (DWL) under monopoly is the area of the triangle between the monopoly output and the competitive output.\n\nKey values:\nMonopoly: $Q_M$ = 15, $P_M$ = 90.\nCompetition: $Q^*$ = 20, $P^*$ = 80.\n\nStep 1: Identify the base and height of the DWL triangle.\nBase = $Q^* - Q_M$ = 20 - 15 = 5.\nHeight = $P_M - P^*$ = 90 - 80 = 10.\n\nStep 2: Calculate DWL.\nDWL = $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$ = $\\frac{1}{2} \\times$ 5 $\\times$ 10 = 25.\n\nThis represents the value of trades that would have occurred under competition but do not occur under monopoly due to the restricted output.",
@@ -423,7 +426,7 @@
         },
         {
             "question_id": "35",
-            "question_text": "Demand for E-scooters: QD = 5000 - 250P; Supply: QS = 600 + 150P. Find the equilibrium price of E-scooters before the specific tax is levied.",
+            "question_text": "This is the Year 2040. The annual Demand for E-scooters in Bengaluru, driven by generation Z and teenagers of generation Alpha, is given by QD = 5000 - 250P. The quantity is measured in thousands of E-scooters and the price is measured in thousands of rupees per E-scooter. Even though E-scooters are environmentally a better choice, their high-adoption and reckless riding has increased road accidents. As a result, Bengaluru Municipal Corporation (Bruhat Bengaluru Mahanagara Palike) has imposed a specific (quantity) tax of rupees two thousand per E-scooter (i.e., Rs. 2,000 per E-Scooter) on producers. The before tax supply curve for E-scooters is QS = 600 + 150P. Again, Q is measured in thousands of E-scooters and P is measured in thousands of rupees per E-scooter.\n\nFind the equilibrium price of E-scooters before the specific tax is levied.",
             "question_type": "MCQ",
             "options": {
                 "A": "Rs. 12,000",
@@ -437,7 +440,7 @@
         },
         {
             "question_id": "36",
-            "question_text": "Demand for E-scooters: QD = 5000 - 250P; Supply: QS = 600 + 150P. Find the equilibrium quantity of E-scooters before the specific tax is levied.",
+            "question_text": "Find the equilibrium quantity of E-scooters before the specific tax is levied.",
             "question_type": "MCQ",
             "options": {
                 "A": "20,00,000",
@@ -451,7 +454,7 @@
         },
         {
             "question_id": "37",
-            "question_text": "A tax of Rs 2,000 is imposed on producers. Find the equilibrium price paid by buyers of E-scooter after the specific tax is levied. (QD = 5000 - 250P; QS_pre = 600 + 150P)",
+            "question_text": "Find the equilibrium price paid by buyers of E-scooter after the specific tax is levied.",
             "question_type": "MCQ",
             "options": {
                 "A": "11,750",
@@ -465,7 +468,7 @@
         },
         {
             "question_id": "38",
-            "question_text": "Find the equilibrium price earned by the producers of the E-scooters after the specific tax of Rs 2,000 is levied. (Buyers pay 11,750)",
+            "question_text": "Find the equilibrium price earned by the producers of the E-scooters after the specific tax of Rs 2,000 is levied.",
             "question_type": "MCQ",
             "options": {
                 "A": "9,750",
