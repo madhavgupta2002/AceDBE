@@ -11,12 +11,12 @@ interface BatchContextType {
 }
 
 const BatchContext = createContext<BatchContextType>({
-  selectedBatch: 2,
+  selectedBatch: 1,
   setSelectedBatch: () => { },
 });
 
 export const BatchProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [selectedBatch, setSelectedBatchState] = useState<number>(2);
+  const [selectedBatch, setSelectedBatchState] = useState<number>(1);
 
   const setSelectedBatch = (batch: number) => {
     if ((AVAILABLE_BATCHES as readonly number[]).includes(batch)) {

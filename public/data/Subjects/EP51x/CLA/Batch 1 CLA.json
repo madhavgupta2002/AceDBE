@@ -567,6 +567,146 @@
             "module": 4
         },
         {
+            "question_id": "M5_Q01",
+            "question_text": "The exit stage for investors typically involves",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Hiring employees for expansion",
+                "B": "Selling their stake through an IPO, acquisition, or offer for sale or through strategic or secondary sale",
+                "C": "Conducting due diligence for a new investment",
+                "D": "Negotiating term sheets with new investors"
+            },
+            "correct_option_label": "B",
+            "explanation": "An exit strategy is the method by which a venture capitalist or business owner intends to liquidate their position in a financial asset. Typical pathways include an IPO, trade sales/acquisitions, or secondary sales.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q02",
+            "question_text": "Match the terms in column A with their suitable description mentioned in column B\n\nColumn A\n1. Exit\n2. Pre-money valuation\n3. Post-money valuation\n4. Exit multiple\n\nColumn B\nA. Value arrived at based on the investment and the return expected by the new (incoming) investor\nB. Selling stake to realize returns\nC. Measures the return earned by an investor by comparing the exit proceeds to the original investment.\nD. Value arrived at after excluding the investment by the new (in) investor",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1 – D, 2 – B, 3 – A, 4 – C",
+                "B": "1 – B, 2 – D, 3 – A, 4 - C",
+                "C": "1 – B, 2 – A, 3 – D, 4 - C",
+                "D": "1 – B, 2 – A, 3 – D, 4 – C"
+            },
+            "correct_option_label": "B",
+            "explanation": "Exit refers to selling stake to realize returns (1-B). Pre-money valuation is the company value excluding the new investment (2-D). Post-money valuation includes the investment based on expected returns (3-A). The exit multiple measures return by comparing exit proceeds to original investment (4-C).",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q03",
+            "question_text": "A startup has a pre-money valuation of ₹60 crore. It raises ₹15 crore. What percentage stake does the investor get?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "20%",
+                "B": "15%",
+                "C": "25%",
+                "D": "30%"
+            },
+            "correct_option_label": "A",
+            "explanation": "Post-money Valuation = Pre-money Valuation + Investment Amount = 60 + 15 = ₹75 crore. Investor's Stake % = (Investment Amount / Post-money Valuation) * 100 = (15 / 75) * 100 = 20%.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q04",
+            "question_text": "An investor invests ₹25 crore for 25% stake. What is the post-money valuation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹50 crore",
+                "B": "₹75 crore",
+                "C": "₹100 crore",
+                "D": "₹80 crore"
+            },
+            "correct_option_label": "C",
+            "explanation": "Post-money Valuation = Investment Amount / Stake % = 25 crore / 0.25 = ₹100 crore.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q05",
+            "question_text": "Which of the following statements is correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Pre-money valuation includes the investment by the incoming investor",
+                "B": "Both exclude the investment by the incoming investor",
+                "C": "Both include the investment by the incoming investor",
+                "D": "Post-money valuation includes the investment by the incoming investor"
+            },
+            "correct_option_label": "D",
+            "explanation": "Post-money valuation is calculated as pre-money valuation plus the new investment amount, meaning it explicitly includes the incoming investor's capital.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q06",
+            "question_text": "An investor invests ₹20 crore for 25% stake. The company exits at ₹200 crore. Find the post-money valuation.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹30 crore",
+                "B": "₹200 crore",
+                "C": "₹40 crore",
+                "D": "₹80 crore"
+            },
+            "correct_option_label": "D",
+            "explanation": "Post-money Valuation = Investment Amount / Stake % = 20 crore / 0.25 = ₹80 crore. Note that exit valuation does not affect the historical post-money valuation at investment.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q07",
+            "question_text": "An investor invests ₹20 crore for 25% stake. The company exits at ₹200 crore. Find the pre-money valuation.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹60 crore",
+                "B": "₹30 crore",
+                "C": "₹80 crore",
+                "D": "₹40 crore"
+            },
+            "correct_option_label": "A",
+            "explanation": "Post-money Valuation = Investment / Stake = 20 / 0.25 = ₹80 crore. Pre-money Valuation = Post-money Valuation - Investment Amount = 80 - 20 = ₹60 crore.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q08",
+            "question_text": "An investor invests ₹20 crore for 25% stake. The company exits at ₹200 crore. Find the exit multiple, assuming that there is no further equity",
+            "question_type": "MCQ",
+            "options": {
+                "A": "2x",
+                "B": "3x",
+                "C": "2.5x",
+                "D": "1.5x"
+            },
+            "correct_option_label": "C",
+            "explanation": "The investor owns a 25% stake. At exit, investor's share of proceeds = 25% of ₹200 crore = ₹50 crore. Exit Multiple = Investor's Exit Proceeds / Initial Investment = 50 / 20 = 2.5x.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q09",
+            "question_text": "An investor invests ₹10 crore in a company. The investor expects to earn a 30% annual return over 5 years. If the expected valuation of the equity of the company at the time of exit is Rs 186 crore what is the % equity stake the investor should seek at the time of making the investment, assuming that there will be no further dilution?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "20%",
+                "B": "25%",
+                "C": "15%",
+                "D": "18%"
+            },
+            "correct_option_label": "A",
+            "explanation": "Target future value = $10 \\times (1 + 0.30)^5 = 10 \\times 3.71293 = ₹37.13$ crore. Required % equity stake = Target value / Exit valuation = 37.13 / 186 ≈ 19.96% ≈ 20%.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q10",
+            "question_text": "Which of the following is a key consequence of a down round?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Dilution of the founder’s ownership stake",
+                "B": "Increase in founder ownership",
+                "C": "Increase in the firm’s valuation",
+                "D": "Reduction in the total number of shares"
+            },
+            "correct_option_label": "A",
+            "explanation": "A down round occurs when a company raises capital at a lower valuation than in previous rounds. This typically triggers anti-dilution provisions for existing investors, resulting in severe dilution of the founder's ownership stake.",
+            "module": 5
+        },
+        {
             "question_id": "41",
             "question_text": "Which form of business requires registration under the LLP Act 2008?",
             "question_type": "MCQ",
@@ -705,6 +845,146 @@
             "correct_option_label": "D",
             "explanation": "DPIIT registration is a critical tool for startups to gain formal recognition, unlocking direct financial and operational benefits such as exemption from angel tax, 3-year income tax holidays, and significant rebates on trademark and patent applications.",
             "module": 7
+        },
+        {
+            "question_id": "M8_Q01",
+            "question_text": "Which of the following forms of business leads to unlimited liability?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Limited liability partnership",
+                "B": "Company",
+                "C": "Sole-proprietorship",
+                "D": "Private limited company"
+            },
+            "correct_option_label": "C",
+            "explanation": "In a sole proprietorship, the business and the owner are legally the same entity, meaning the owner has unlimited personal liability for all business debts and obligations.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q02",
+            "question_text": "Which of the following entities has a separate legal identity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sole proprietorship",
+                "B": "Limited Liability Partnership (LLP)",
+                "C": "Partnership",
+                "D": "HUF"
+            },
+            "correct_option_label": "B",
+            "explanation": "A Limited Liability Partnership (LLP) is incorporated under the LLP Act, 2008, establishing it as a separate legal entity distinct from its partners.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q03",
+            "question_text": "Which of the following entities does not require incorporation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Private company",
+                "B": "LLP",
+                "C": "OPC",
+                "D": "Sole proprietorship"
+            },
+            "correct_option_label": "D",
+            "explanation": "A sole proprietorship does not require formal incorporation with the government/Registrar of Companies to begin operations, unlike companies or LLPs.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q04",
+            "question_text": "A trademark protects the __________ of a business.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Plant and machinery of a company",
+                "B": "Invention and technological know-how",
+                "C": "Brand name, logo, and symbols",
+                "D": "Literary works and artistic expressions"
+            },
+            "correct_option_label": "C",
+            "explanation": "A trademark is a form of intellectual property that protects brand identifiers such as brand names, logos, taglines, symbols, or distinct colors used to distinguish goods or services.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q05",
+            "question_text": "Venture capital funds primarily invest in",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Government projects",
+                "B": "Mature companies",
+                "C": "Banks",
+                "D": "Early-stage startups"
+            },
+            "correct_option_label": "D",
+            "explanation": "Venture capital funds provide high-risk capital primarily to early-stage, high-growth startups that lack access to traditional credit markets due to a lack of collateral.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q06",
+            "question_text": "A bottle manufacturing company creates a uniquely shaped bottle with a distinct look and feel. Which form of intellectual property protection is most appropriate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Patent",
+                "B": "Design",
+                "C": "Trademark",
+                "D": "Copyright"
+            },
+            "correct_option_label": "B",
+            "explanation": "Under the Designs Act, 2000, design registration protects the novel aesthetic features, shape, pattern, configuration, or ornamentation applied to an article (such as a uniquely shaped bottle).",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q07",
+            "question_text": "Which of the following statements is most likely correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Category I Alternative Investment Funds (AIFs) are required to focus on early-stage ventures/innovation-heavy businesses.",
+                "B": "Alternative Investment Funds (AIFs) are regulated by RBI",
+                "C": "Venture capital (VC) funds invest mainly in listed companies",
+                "D": "Alternative Investment Funds (AIFs) cannot invest in equity"
+            },
+            "correct_option_label": "A",
+            "explanation": "In India, Category I AIFs are funds that invest in start-ups, early-stage ventures, social ventures, SMEs, or sectors which the government considers socially or economically desirable (e.g., venture capital funds).",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q08",
+            "question_text": "Information rights allow are usually meant to enable investors to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Control day to day operations of a company and not just strategic aspects of a company’s functioning",
+                "B": "Hire employees of their preference",
+                "C": "Approve dividends",
+                "D": "Access financial information and other management updates"
+            },
+            "correct_option_label": "D",
+            "explanation": "Information rights contractually entitle investors to receive regular financial reports, MIS updates, and audited statements to monitor their investment.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q09",
+            "question_text": "Which right protects investors during a down round?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Information rights",
+                "B": "Anti-dilution rights",
+                "C": "Economic rights",
+                "D": "Board rights"
+            },
+            "correct_option_label": "B",
+            "explanation": "Anti-dilution rights protect existing investors from losing ownership value when a company issues new shares at a lower price per share than in previous rounds (a down round).",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q10",
+            "question_text": "Which right allows investors to receive priority in payouts at the time of exit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Economic rights (liquidation preference)",
+                "B": "Information rights",
+                "C": "Board rights",
+                "D": "Observer rights"
+            },
+            "correct_option_label": "A",
+            "explanation": "Liquidation preference is an economic right that dictates the payout hierarchy during a sale or liquidation event, ensuring investors get paid before common shareholders (founders).",
+            "module": 8
         }
     ]
 }
