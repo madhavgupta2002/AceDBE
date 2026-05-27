@@ -845,6 +845,845 @@
             "correct_option_label": "B",
             "explanation": "Safal successfully built a new market and overcame the cultural perception of 'stale' frozen food by explicitly communicating direct benefits: exact weights, stable pricing, and convenient year-round availability.",
             "module": 4
+        },
+        {
+            "question_id": "M5_Q01",
+            "question_text": "If a startup team is struggling to align their technical product roadmap with high-level business goals, which concept most directly applies to evaluate their path?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A manufacturing capability index",
+                "B": "A new product business plan",
+                "C": "An engineering stress-test checklist",
+                "D": "A software-defined networking model"
+            },
+            "correct_option_label": "B",
+            "explanation": "A new product business plan bridges the gap between high-level business goals and the tactical execution or product roadmap, helping align stakeholders and technical plans.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q02",
+            "question_text": "Why did Southwest Airlines purposefully avoid major hub airports like those in New York, Chicago, or Boston?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Major airports did not allow low-cost carriers to land under any circumstances.",
+                "B": "Southwest's airplanes were physically too small to land on major airport runways.",
+                "C": "Larger airports suffer from significant time lags, taxi delays, and complex baggage handling.",
+                "D": "Travelers in major metropolitan areas only preferred luxury bus travel."
+            },
+            "correct_option_label": "C",
+            "explanation": "Southwest avoided congested hubs because they wanted to maximize aircraft airtime, minimizing time lags, taxi delays, and ground turnaround times.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q03",
+            "question_text": "Which of the following operational choices directly supports Southwest's strategic goal of maximising aircraft air time?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Standardising on a single size and brand of aircraft to simplify maintenance and training.",
+                "B": "Utilising a highly diverse fleet containing multiple brands of aircraft.",
+                "C": "Operating exclusively through a hub-and-spoke connection model.",
+                "D": "Offering high-end, customized meals that require specialized onboard kitchens."
+            },
+            "correct_option_label": "A",
+            "explanation": "Standardizing a single aircraft type (such as the Boeing 737) simplified maintenance, part inventories, and crew training, facilitating exceptionally fast turnaround times and higher aircraft utilization.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q04",
+            "question_text": "What does the \"C\" stand for in the ERRC Grid?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cost",
+                "B": "Customer",
+                "C": "Competitor",
+                "D": "Create"
+            },
+            "correct_option_label": "D",
+            "explanation": "In Blue Ocean Strategy, the ERRC grid stands for Eliminate, Reduce, Raise, and Create.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q05",
+            "question_text": "An airline wants to lower its basic ticket prices. According to ERRC principles, what is the most appropriate way to apply the \"Eliminate\" quadrant?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Eliminate the safety briefings before takeoff.",
+                "B": "Eliminate mandatory pilot licensing requirements.",
+                "C": "Eliminate complimentary fringe services like lounge access or free meals.",
+                "D": "Eliminate the use of fuel to reduce direct operating costs."
+            },
+            "correct_option_label": "C",
+            "explanation": "To reduce costs without compromising safety or operations, budget airlines eliminate non-essential services like lounges, free meals, and seat selections.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q06",
+            "question_text": "Which of the following is the correct second step to construct a Blue Ocean Strategy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Draw the \"to-be\" strategy canvas.",
+                "B": "Go to the field and watch consumers in action.",
+                "C": "Define a compelling marketing tagline.",
+                "D": "Build a prototype of the physical product."
+            },
+            "correct_option_label": "B",
+            "explanation": "The Blue Ocean formulation process starts with visual awakening (as-is canvas), followed by visual exploration (going to the field to discover unmet needs and pain points).",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q07",
+            "question_text": "Why did the BCCI assign \"iconic players\" (like Tendulkar to Mumbai or Dravid to Bangalore) when launching the IPL?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To ensure these players received the highest possible salaries in the league.",
+                "B": "To act as referees and field managers during matches.",
+                "C": "Because international players were banned from playing in those specific cities.",
+                "D": "To help build an immediate regional connection and fan base for the local franchises."
+            },
+            "correct_option_label": "D",
+            "explanation": "Assigning local iconic players to respective city franchises created an immediate regional identity and a loyal fan base for the newly established teams.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q08",
+            "question_text": "Why is a \"fact-based executive summary\" highly critical for an NPD business plan?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because senior managers and project sponsors typically read only this summary to make investment decisions.",
+                "B": "Because it contains the complete, unedited source code of the product.",
+                "C": "Because it is legally required by the government before launching any business.",
+                "D": "Because it is the only section where you are allowed to use images and graphics."
+            },
+            "correct_option_label": "A",
+            "explanation": "High-level executives and decision-makers often rely on the concise, fact-based executive summary to evaluate a business plan's viability before dedicating resources.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q09",
+            "question_text": "An executive knows a performance problem exists in their product line but has no idea how to fix it internally. How can strategy consultants help?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "By taking over the company's manufacturing operations permanently.",
+                "B": "By bringing in objective outsider views, structuring choices, and mapping clear implementation paths.",
+                "C": "By firing the existing product development team to save immediate cash.",
+                "D": "By providing free capital loans to cover the operational losses."
+            },
+            "correct_option_label": "B",
+            "explanation": "Strategy consultants offer objective external perspectives, structured diagnostic frameworks, and actionable implementation paths to resolve complex, unrecognized organizational bottlenecks.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q10",
+            "question_text": "What does the failure of AMD’s PIC tell us about \"design awards\" versus \"market appropriateness\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Winning a design award guarantees that a product will be highly profitable.",
+                "B": "Emerging markets never buy products that win design awards.",
+                "C": "Only software products can win industrial design awards.",
+                "D": "Design awards often celebrate technical/aesthetic novelty, which may completely ignore the actual infrastructure and economic realities of the target users."
+            },
+            "correct_option_label": "D",
+            "explanation": "Despite winning industrial design awards, AMD's PIC failed because it was not contextually appropriate for emerging market infrastructure and competed poorly with local internet cafes.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q11",
+            "question_text": "Evaluate how the \"individualistic vs. community-living\" cultural difference impacts product marketing in emerging markets.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because consumers care deeply about what their social circles think, marketing and product features must allow for easy sharing and community feedback.",
+                "B": "It has no impact; consumers globally buy products for identical reasons.",
+                "C": "It means you should never sell personal items like sunglasses in emerging markets.",
+                "D": "It forces companies to sell only bulk family-pack products."
+            },
+            "correct_option_label": "A",
+            "explanation": "In community-centric emerging markets, social circles heavily influence purchase decisions. Designing products and campaigns that facilitate sharing and social validation enhances adoption.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q12",
+            "question_text": "What is a critical requirement for products targeted at BOP markets to withstand local living and working conditions?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sleek, fragile glass bodies.",
+                "B": "Extreme robustness to handle sweat, physical labour, and rough use.",
+                "C": "Constant internet connectivity to run system updates.",
+                "D": "Delicate touch sensors that require clean, air-conditioned rooms."
+            },
+            "correct_option_label": "B",
+            "explanation": "Bottom of the Pyramid (BOP) markets feature rugged physical environments and manual working conditions, requiring highly durable, sweat-resistant, and robust product designs.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q13",
+            "question_text": "Why does a product that is priced \"too cheap\" sometimes face a consumer adoption barrier in value-sensitive markets?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Consumers assume that a very low price is a direct signal of low quality.",
+                "B": "Governments levy heavy luxury taxes on cheap goods.",
+                "C": "Cheap products are physically too large to carry home.",
+                "D": "It is illegal to sell products below manufacturing cost."
+            },
+            "correct_option_label": "A",
+            "explanation": "In value-sensitive markets, price acts as a strong quality signal. Underpricing a product can trigger suspicion that it is unreliable, defective, or of poor quality.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q14",
+            "question_text": "How do left-brain and right-brain capabilities differ in the context of product design?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Left-brain handles creative aesthetics; right-brain handles math and logic.",
+                "B": "Left-brain handles linear, logical, and analytical flow; right-brain handles design synthesis, context, and empathy.",
+                "C": "Left-brain is used only by managers; right-brain is used only by artists.",
+                "D": "There is no structural difference; they perform identical tasks."
+            },
+            "correct_option_label": "B",
+            "explanation": "Left-brain capabilities focus on structured, logical, and quantitative analysis, while right-brain traits enable empathy, contextual understanding, and creative design synthesis.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q15",
+            "question_text": "Which of the following is a direct application of soft innovation in a service industry like telecommunications?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Laying new underground fiber-optic cables across the country.",
+                "B": "Buying out a competitor's cell towers.",
+                "C": "Creating 20 different pricing and data-plan variations to match diverse user preferences.",
+                "D": "Upgrading all hardware servers to run 20% faster."
+            },
+            "correct_option_label": "C",
+            "explanation": "Soft innovation involves changing the aesthetic, sensory, or intellectual presentation of a product or service. Adjusting price configurations and tariff bundles to fit user preferences is a classic example.",
+            "module": 5
+        },
+        {
+            "question_id": "M6_Q01",
+            "question_text": "Why should a modern product manager actively incorporate environmental and ethical concerns during the strategic launch phase?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because government regulatory bodies completely take over marketing budgets at this stage",
+                "B": "Because ethical concerns automate the process of user-testing prototypes",
+                "C": "Because consumers, public policy, and sustainability standards increasingly demand corporate responsibility",
+                "D": "Because sustainability models guarantee that a product will experience zero market competition"
+            },
+            "correct_option_label": "C",
+            "explanation": "Modern launch strategies must align with consumer expectations, public policies, and global sustainability standards to avoid regulatory backlash and build brand trust.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q02",
+            "question_text": "What is the core high-level difference between \"strategic decisions\" and \"tactical decisions\" in launch planning?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Strategic decisions are short-term; tactical decisions are long-term",
+                "B": "Strategic decisions are long-term and have high impact; tactical decisions are operational, execution-related day-to-day choices",
+                "C": "Strategic decisions are handled by consultants; tactical decisions are handled only by sales reps",
+                "D": "There is no difference; they are identical terms used interchangeably in launch planning"
+            },
+            "correct_option_label": "B",
+            "explanation": "Strategic launch decisions set the long-term, high-impact parameters of target markets and positioning, whereas tactical decisions manage the immediate day-to-day elements of the marketing mix.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q03",
+            "question_text": "If a company is executing an \"aggressive strategic launch,\" which tactical market-targeting choice must they make to ensure alignment?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They must target a broad market, as an aggressive launch cannot be supported by a narrow target",
+                "B": "They must target a highly narrow, niche demographic segment",
+                "C": "They must completely avoid setting a retail price for the first six months",
+                "D": "They must reduce their sales force to cut operating overhead"
+            },
+            "correct_option_label": "A",
+            "explanation": "To sustain an aggressive strategy with massive resource and marketing commitments, the product must target a sufficiently broad market to recover the high launch expenses.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q04",
+            "question_text": "What is the strategic logic behind a \"permeance decision\" where a product is launched with an \"exit option in your pocket\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It allows the firm to systematically avoid paying corporate taxes",
+                "B": "It is used only in fashion industries where products have a legal six-month shelf-life limit",
+                "C": "It keeps the firm from making binding alliances that make escape difficult if early profitability/market share thresholds are not met",
+                "D": "It forces competitors to copy the product faster"
+            },
+            "correct_option_label": "C",
+            "explanation": "Launching with a planned exit option (conditional permanence) protects the firm from long-term, binding commitments and allows a clean market withdrawal if performance thresholds are missed.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q05",
+            "question_text": "How does segmenting a market on an \"end-use basis\" affect product design choices for items like apparel?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It limits the company to selling only one size of clothing",
+                "B": "It forces all manufactured items to be priced at a single cost-leader point",
+                "C": "It eliminates the need to perform any psychographic segmentation",
+                "D": "It dictates specific product attributes (e.g., a \"party shirt\" vs. \"office shirt\"), altering the target features and values communicated"
+            },
+            "correct_option_label": "D",
+            "explanation": "End-use segmentation groups consumers based on how they use a product, directly dictating specific functional and aesthetic attributes (such as activewear vs. formalwear).",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q06",
+            "question_text": "An FMCG company wants to launch a new detergent. How should they leverage \"divisibility\" to accelerate market diffusion?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Build a massive factory to manufacture only 50kg bulk bags",
+                "B": "Create small sachets or free trial packs to let consumers try the product at low cost/risk",
+                "C": "Charge a premium price to signal high-end quality to laggards",
+                "D": "Spend their entire launch budget exclusively on digital billboards"
+            },
+            "correct_option_label": "B",
+            "explanation": "Divisibility (or trialability) allows consumers to test a new product in small, low-risk quantities. Low-cost sachets lower the barrier to trial, speeding up adoption.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q07",
+            "question_text": "How did Canon adapt its positioning for the \"AE1\" camera in the US versus the Japanese market?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "In the US, it was sold at half price; in Japan, it was sold only via rent-to-own schemes",
+                "B": "In the US, it was positioned as simple and easy to use (\"so advanced it is simple\"); in Japan, it was positioned as a high-tech tool for experienced users",
+                "C": "In the US, it was positioned as a cheap, entry-level disposable; in Japan, it was sold as luxury art",
+                "D": "It used the exact same advertising campaigns in both nations without any changes"
+            },
+            "correct_option_label": "B",
+            "explanation": "Canon adapted its value communication contextually: targeting US consumers with a message of simplicity (\"so advanced it is simple\"), while emphasizing advanced technology for the expert-oriented Japanese market.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q08",
+            "question_text": "Critique the corporate objective: \"Our brand community exists solely to drive sales and serve the financial bottom line of the business.\"",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is short-sighted; the real community must be built to serve the people, fostering authentic trust that will naturally benefit the business over the long term",
+                "B": "It is a highly strategic approach that ensures maximum investor support",
+                "C": "It is the fastest way to turn variable marketing costs into fixed costs",
+                "D": "It is effective only if the company has zero brand advocates"
+            },
+            "correct_option_label": "A",
+            "explanation": "A genuine brand community should prioritize the needs of its members. Exploiting a community strictly for sales destroys authentic consumer trust.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q09",
+            "question_text": "Which of the following is NOT one of the three tactical stages of the launch cycle?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Pre-launch stage",
+                "B": "Beachhead stage",
+                "C": "Mature growth stage",
+                "D": "Early growth stage"
+            },
+            "correct_option_label": "C",
+            "explanation": "The tactical stages of a product launch cycle typically include pre-launch, beachhead, and early growth. Mature growth occurs later in the product's broader lifecycle, well past the launch phase.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q10",
+            "question_text": "How does a \"lean launch\" process mitigate the financial risks of a new product introduction?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "By spending 100% of the budget on television advertising upfront",
+                "B": "By hiring only temporary contract-based sales managers",
+                "C": "By offering the product entirely for free to avoid inventory costs",
+                "D": "By remaining flexible and delaying heavy inventory commitments, ramping up production only as real sales demand is proven"
+            },
+            "correct_option_label": "D",
+            "explanation": "Lean launch strategies conserve capital by avoiding massive upfront inventory build-up. Production is scaled up progressively as real-world market demand signals are validated.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q11",
+            "question_text": "You are developing a new passenger vehicle. How should you apply the online market testing approach before dedicating factory lines to full-scale assembly?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Offer the car entirely for free to the first 1,000 online visitors",
+                "B": "Put up all features and an online demo to generate interest, then transition interested users to a local dealer test drive",
+                "C": "Force customers to pay the full price of the car online before showing them any pictures of it",
+                "D": "Avoid releasing any details to the public until 10,000 cars are fully manufactured"
+            },
+            "correct_option_label": "B",
+            "explanation": "Online test models generate interest and gather intent through web configurations or digital demos before guiding consumers to physical test drives, minimizing physical distribution risk.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q12",
+            "question_text": "Why is a \"speculative sale\" under the pseudo sale umbrella highly appropriate for B2B and consumer durables rather than fast-moving consumer goods (FMCG)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "FMCG buyers always expect to buy products in bulk",
+                "B": "Speculative sales are legally prohibited for low-value food items",
+                "C": "Customers prefer touch and feel for FMCG products",
+                "D": "B2B transactions involve long buying cycles and custom specifications where asking \"will you buy this when ready\" is natural and expected"
+            },
+            "correct_option_label": "D",
+            "explanation": "B2B purchases feature long buying cycles, high capitalization, and custom requirements. Asking prospective buyers for purchasing commitments prior to manufacturing is standard practice in these markets.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q13",
+            "question_text": "Critique the practice of a development team that creates its launch metrics in isolation, without reviewing best practices or getting external validation.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is risky; teams should seek external validation from experts or benchmarks and adjust metrics throughout to remain aligned with actual business goals",
+                "B": "It is ideal because outsiders will steal the product's secrets",
+                "C": "It is acceptable only if the firm is highly bureaucratic",
+                "D": "It is effective only if the product has zero competitive alternatives"
+            },
+            "correct_option_label": "A",
+            "explanation": "Designing metrics in isolation risks misaligning the launch with industry realities. External benchmarks and expert input keep the metrics realistic and valuable.",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q14",
+            "question_text": "During the formulation and evaluation stage of a failing product, what is the fourth stage of execution?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ideation",
+                "B": "Implementation",
+                "C": "Market Testing",
+                "D": "Prototyping"
+            },
+            "correct_option_label": "B",
+            "explanation": "In product deletion planning, the four key stages are recognition, analysis/revitalization, evaluation/decision, and finally, implementation (executing the actual exit or phase-out).",
+            "module": 6
+        },
+        {
+            "question_id": "M6_Q15",
+            "question_text": "You are developing a sustainable construction material. How can you strategically leverage public policy debates to your advantage?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Position your product to solve modern policy concerns (low energy consumption, renewable resources) and align directly with green initiatives",
+                "B": "Hide the environmental benefits to avoid political attention",
+                "C": "Lobby the government to ban all physical construction entirely",
+                "D": "Focus strictly on high-power consumption models to show technological superiority"
+            },
+            "correct_option_label": "A",
+            "explanation": "Aligning sustainable offerings directly with ongoing public policy initiatives allows a firm to capitalize on green incentives, regulations, and consumer awareness trends.",
+            "module": 6
+        },
+        {
+            "question_id": "M7_Q01",
+            "question_text": "In the rural healthcare case, what was the key problem being addressed?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lack of entertainment options in villages",
+                "B": "Limited access to healthcare services in rural areas",
+                "C": "High cost of urban real estate",
+                "D": "Lack of online shopping platforms"
+            },
+            "correct_option_label": "B",
+            "explanation": "The primary problem addressed in the Neurosynaptic rural healthcare case was the lack of access to basic primary healthcare for rural communities located far from urban medical centers.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q02",
+            "question_text": "Why was technology alone not enough to solve the rural healthcare problem?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because patients did not need doctors",
+                "B": "Because healthcare does not require any workflow",
+                "C": "Becasue rural users only wanted mobile phones",
+                "D": "Because the solution also required doctors, local operators, medicines, tests, connectivity, trust, and service delivery"
+            },
+            "correct_option_label": "D",
+            "explanation": "Healthcare cannot operate as a pure technology product; it requires a complete operational ecosystem including clinics, operators, doctors, pharmacies, diagnostics, and consumer trust.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q03",
+            "question_text": "What was one major learning form early rural healthcare experiments?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A consultation service is incomplete if patients still cannot easily access medicines or diagnostic tests",
+                "B": "Rural patients do not require follow-up care",
+                "C": "Technology products should never be tested in the field",
+                "D": "Doctors are not needed in telemedicine"
+            },
+            "correct_option_label": "A",
+            "explanation": "Simply matching a patient with a remote doctor is insufficient if the patient is unable to purchase the prescribed medicine or undergo necessary diagnostic tests nearby.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q04",
+            "question_text": "Why did the healthcare product go through several versions?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To change the brand name repeatedly",
+                "B": "To avoid customer feedback",
+                "C": "To respond to feedback, field problems, usability issues, and technology changes",
+                "D": "To reduce the number of users"
+            },
+            "correct_option_label": "C",
+            "explanation": "Telemedicine equipment must undergo iterative development to resolve rugged rural environment issues (such as voltage surges or low bandwidth) and simplify user interfaces.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q05",
+            "question_text": "What does the decision to discard some prototypes show?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Every product idea must be launched",
+                "B": "Products should be continued even when users cannot use them",
+                "C": "Market acceptance, usability, cost, and resource limits matter in product decisions",
+                "D": "Customer feedback is not important"
+            },
+            "correct_option_label": "C",
+            "explanation": "Discarding unviable prototypes ensures that scarce corporate resources are not wasted on designs that fail to meet usability, cost, or market acceptance criteria.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q06",
+            "question_text": "Why is regulation important in medical product development?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It ensures that devices meet required standards and can be safely used or sold",
+                "B": "It only increases marketing cost",
+                "C": "It removes the need to product testing",
+                "D": "It is useful only after the product becomes popular"
+            },
+            "correct_option_label": "A",
+            "explanation": "Medical devices deal directly with patient health, making regulatory compliance (like ISO 13485 or CDSCO) mandatory to verify safety and device reliability.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q07",
+            "question_text": "What major shift happened when the healthcare venture moved from selling technology to providing services?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The company stopped using technology",
+                "B": "The company stopped working with partners",
+                "C": "The product became irrelevant",
+                "D": "The company gained direct contact with patients, daily feedback, recurring revenue, and better understanding of field realities"
+            },
+            "correct_option_label": "D",
+            "explanation": "Moving from a hardware sales model to a service delivery model established continuous customer relationships, recurring revenue streams, and a feedback loop of real-world usage.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q08",
+            "question_text": "What is the key difference between product management and project management?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product management is only sales",
+                "B": "Project management is only product testing",
+                "C": "Product management focuses on what to build, while project management focuses more on timelines, deliverables, and execution",
+                "D": "Both are unrelated to customers"
+            },
+            "correct_option_label": "C",
+            "explanation": "Product management defines the product vision, features, and strategy (\"what to build\"), while project management focuses on scheduling, task coordination, and execution timelines.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q09",
+            "question_text": "What is the role of a prototype in product management?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To create a final product without testing",
+                "B": "To test ideas, demonstrate features, collect feedback, and refine the product",
+                "C": "To avoid involving customer",
+                "D": "To replace the product requirements document"
+            },
+            "correct_option_label": "B",
+            "explanation": "Prototypes are early representations of a product used for user testing, feedback gathering, and validation of technical and design assumptions.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q10",
+            "question_text": "What does a Product Requirements Document usually capture?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only the company’s revenue",
+                "B": "Only the final price of the product",
+                "C": "Only the marketing slogan",
+                "D": "Product features, user actions, constraints, technical requirements, and expected behaviour"
+            },
+            "correct_option_label": "D",
+            "explanation": "A PRD is a comprehensive document outlining functional capabilities, user interactions, technical specifications, and operating constraints for the engineering team.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q11",
+            "question_text": "In a finance-related product, why are data and compliance critical?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because lending decisions involve customer risk, rules, policies, and regulatory responsibility",
+                "B": "Because finance products do not need customers",
+                "C": "Because all lending decisions can be made randomly",
+                "D": "Because compliance reduces the need for analysis"
+            },
+            "correct_option_label": "A",
+            "explanation": "Financial technologies must balance risk underwriting with strict compliance structures, protecting operations from defaults, fraud, and legal/regulatory liabilities.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q12",
+            "question_text": "What does the discussion on AI suggest about the future of product management?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product managers will no longer be needed",
+                "B": "Product managers must use AI carefully while still applying judgment, validation, and context",
+                "C": "AI should make all decisions without human review",
+                "D": "Product managers should avoid AI completely"
+            },
+            "correct_option_label": "B",
+            "explanation": "While AI can accelerate data synthesis and PRD drafting, human judgment remains critical to assess context, manage ethics, and validate model outputs.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q13",
+            "question_text": "Why should product managers avoid depending on only one AI tool?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "AI tools, pricing, access, capabilities, and company policies may change quickly",
+                "B": "One AI tool can solve every possible problem forever",
+                "C": "Different tools never change",
+                "D": "Product managers should not experiment"
+            },
+            "correct_option_label": "A",
+            "explanation": "The AI landscape is evolving rapidly, with frequent shifts in vendor capabilities, API pricing structures, access policies, and data privacy regulations.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q14",
+            "question_text": "What is one practical suggestion for students interested in product management or entrepreneurship?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Build products without understanding users",
+                "B": "Start by observing daily problems, researching existing solutions, building simple prototypes, and collecting feedback",
+                "C": "Focus only on theory and avoid practice",
+                "D": "Ignore existing market solutions"
+            },
+            "correct_option_label": "B",
+            "explanation": "Aspiring product builders learn best by actively observing user pain points, analyzing existing alternatives, creating rapid prototypes, and iterating based on real feedback.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q15",
+            "question_text": "Why is human judgment still important when using AI in product management?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because AI can support analysis and documentation, but the product manager must still check context, validate outputs, and make the final decision",
+                "B": "Because AI should replace all product decisions",
+                "C": "Because product managers should avoid using AI tools",
+                "D": "Because AI always gives perfect answers"
+            },
+            "correct_option_label": "A",
+            "explanation": "AI acts as a powerful analytical assistant, but human product managers are ultimately responsible for identifying biases, validating accuracy, and checking strategic alignment.",
+            "module": 7
+        },
+        {
+            "question_id": "M8_Q01",
+            "question_text": "What does new product development mainly involve?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Planning, designing, testing, launching products",
+                "B": "Selling, advertising, billing, reporting products",
+                "C": "Hiring, training, paying, reviewing staff",
+                "D": "Storing, packing, shipping, tracking goods"
+            },
+            "correct_option_label": "A",
+            "explanation": "New product development is an end-to-end, multi-disciplinary process spanning planning, concept design, validation, testing, and final commercialization.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q02",
+            "question_text": "Why are early product decisions important?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They affect colour, logo, office, staff",
+                "B": "They affect cost, design, customers, launch",
+                "C": "They affect salary, leave, travel, meals",
+                "D": "They affect storage, billing, files, records"
+            },
+            "correct_option_label": "B",
+            "explanation": "Decisions made early in the design stage lock in product architectures and resource plans, setting limits on future development costs, timelines, and product utility.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q03",
+            "question_text": "What does a business model explain?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Employees, meetings, attendence, holidays",
+                "B": "Offics, fruniture, systems, stationery",
+                "C": "Customer,value, delivery, revenue",
+                "D": "Reports, folders, emails, approvals"
+            },
+            "correct_option_label": "C",
+            "explanation": "A business model describes how an organization creates, delivers, and captures value by defining target customers, value propositions, and revenue structures.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q04",
+            "question_text": "What does a mission statement include?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Salary, roles, leave, promotion",
+                "B": "Buildings, rooms, furniture, equipment",
+                "C": "Product, goals, markets, stakeholders",
+                "D": "Ads, posters, banner, slogans"
+            },
+            "correct_option_label": "C",
+            "explanation": "A product mission statement outlines the key business goals, primary target markets, core assumptions, and critical stakeholders for the development team.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q05",
+            "question_text": "What is portfolio management used for?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Balancing different product projects",
+                "B": "Counting daily product sales",
+                "C": "Recording employee attendance data",
+                "D": "Printing product packaging labels"
+            },
+            "correct_option_label": "A",
+            "explanation": "Portfolio management balances a firm's product pipeline across different horizons—such as short-term incremental line extensions and long-term radical breakthroughs.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q06",
+            "question_text": "What is the purpose of stage gates?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Naming products before advertising begins",
+                "B": "Packing products before final delivery",
+                "C": "Reviewing ideas before moving forward",
+                "D": "Hiring teams before office setup"
+            },
+            "correct_option_label": "C",
+            "explanation": "Stage gates are visual checkpoints with clear criteria that allow teams to evaluate project viability and redirect or shelve unpromising projects before wasting capital.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q07",
+            "question_text": "What does the buyer utility map identify?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "New offices for company expansion",
+                "B": "New spaces for customer value",
+                "C": "New salaries for employee roles",
+                "D": "New posters for product promotion"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Buyer Utility Map helps firms map competitive offerings across the buyer's experience journey, highlighting unserved \"blue ocean\" spaces for customer value.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q08",
+            "question_text": "Who are lead users?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Users avoiding products after launch",
+                "B": "Users buyig only discounted items",
+                "C": "Users copying competitors every time",
+                "D": "Users facing needs before others"
+            },
+            "correct_option_label": "D",
+            "explanation": "Lead users experience needs months or years ahead of the general market and stand to benefit significantly from discovering a functional solution early.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q09",
+            "question_text": "What are must-have features in Kano's model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Extra feature customer ignore",
+                "B": "Costly fearures customer reject",
+                "C": "Random features companies guess",
+                "D": "Basic features customer expect"
+            },
+            "correct_option_label": "D",
+            "explanation": "Must-haves represent the fundamental features that customers expect as baseline requirements; if absent, the user will reject the product entirely.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q10",
+            "question_text": "What does the House of Quality connect?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customer names with biling records",
+                "B": "Customer emails with sales posters",
+                "C": "Customer need with technical sepcifications",
+                "D": "Customer visits with office meetings"
+            },
+            "correct_option_label": "C",
+            "explanation": "The House of Quality is a structured, visual QFD matrix that translates the Voice of the Customer (Whats) directly into technical design requirements (Hows).",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q11",
+            "question_text": "Why is QFD useful?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It reduces late design changes",
+                "B": "It increases product naming choices",
+                "C": "It removes customer reserach steps",
+                "D": "It delays product launch planning"
+            },
+            "correct_option_label": "A",
+            "explanation": "By aligning marketing requirements and engineering specifications during early design phases, QFD eliminates late-stage, expensive engineering changes near production.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q12",
+            "question_text": "What does modular architecture support?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Fixed parts, limited repairs, restrictions",
+                "B": "Large size, slower use, confuse",
+                "C": "Easy upgraded, repairs, replacements"
+            },
+            "correct_option_label": "C",
+            "explanation": "Modular systems isolate functional elements into interchangeable components, making it simple to execute upgrades, product repairs, and part replacements.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q13",
+            "question_text": "What are prototypes used for?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Testing, learning, communication, integration",
+                "B": "Billing, filing, storage, transport",
+                "C": "Hiring, trianing, attendance, payroll",
+                "D": "Branding, slogans, posters, event"
+            },
+            "correct_option_label": "A",
+            "explanation": "Prototypes are physical or digital approximations used to test functional assumptions, learn from failures, communicate concepts, and verify integration.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q14",
+            "question_text": "What are product services systems?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product labels for retail shelves",
+                "B": "Product plus service value combinations",
+                "C": "Service delays in customer support",
+                "D": "Sales reports for company meetings"
+            },
+            "correct_option_label": "B",
+            "explanation": "Product-Service Systems (PSS) are hybrid business models that bundle physical hardware with support services to reduce product commoditization.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q15",
+            "question_text": "What does design thinking focus on?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Users, feedback, prototypes, iterations",
+                "B": "Prices, discounts, coupons, billing",
+                "C": "Files, records, reportss, signatures",
+                "D": "Offices, teams, salaries, meetings"
+            },
+            "correct_option_label": "A",
+            "explanation": "Design thinking is a solution-focused approach that centers on deep user empathy, continuous feedback gathering, rapid prototyping, and quick iterations.",
+            "module": 8
         }
     ]
 }
