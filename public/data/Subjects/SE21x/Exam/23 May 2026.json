@@ -1,0 +1,570 @@
+{
+    "exam_metadata": {
+        "subject_name": "Persuasive Communication",
+        "exam_date": "23 May 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "What is the “curse of knowledge” as described in the book - “What to Say and When to Shut Up”?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The tendency of knowledgeable individuals to assume that their audience has the same level of understanding as them.",
+                "B": "The tendency of audiences to always assume they know more than the speaker.",
+                "C": "The inability of listeners to grasp any new information.",
+                "D": "The reluctance of speakers to share knowledge due to fear of judgment."
+            },
+            "correct_option_label": "A",
+            "explanation": "The 'curse of knowledge' is a cognitive bias where expert presenters fail to realize that their audience lacks the deep background context or technical jargon necessary to understand the presentation easily.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "In speech structuring, the \"buns and patty\" analogy suggests an optimal content distribution strategy. Based on this framework, how should a 10-minute presentation be structured for maximum effectiveness?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Allocate 10% of time to the introduction, 10% to the conclusion, and 80% to the body for in-depth coverage.",
+                "B": "Follow a 20%-60%-20% approach to maximize focus on key arguments while maintaining audience engagement.",
+                "C": "Distribute time as 15% for the introduction, 15% for the conclusion, and 70% for the body, ensuring a well-framed and impactful delivery.",
+                "D": "Use an even 33%-33%-33% split to give equal weight to the introduction, body, and conclusion for better symmetry."
+            },
+            "correct_option_label": "C",
+            "explanation": "According to the OBC (Opening-Body-Conclusion) framework, the ideal presentation structure allocates 15% of the time to the opening, 70% to the main body containing arguments and data, and 15% to the conclusion.",
+            "module": 2
+        },
+        {
+            "question_id": "3",
+            "question_text": "According to Albert Mehrabian’s research, which of the following is the correct breakdown of how nonverbal elements impact an audience?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Words 7%, tone 38%, expressions 55%",
+                "B": "Words 38%, tone 7%, expressions 55%",
+                "C": "Words 7%, tone 55%, expressions 38%",
+                "D": "Words 55%, tone 7%, expressions 38%"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Albert Mehrabian rule states that verbal words account for 7% of communication impact, vocal tone accounts for 38%, and visual non-verbal expressions account for 55%.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "In Aristotle’s theory of persuasion, what role does logic (logos) play in influencing an audience?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It establishes credibility by highlighting the speaker’s expertise.",
+                "B": "It focuses on using complex language to impress the audience.",
+                "C": "It provides facts, data, and reasoning to make the argument rational and convincing.",
+                "D": "It appeals to emotions by creating a strong personal connection."
+            },
+            "correct_option_label": "C",
+            "explanation": "Aristotle's Logos refers to logical appeal. It works by convincing the audience through clear reasoning, objective facts, structural data, and verifiable evidence.",
+            "module": 3
+        },
+        {
+            "question_id": "5",
+            "question_text": "Which of the following best defines a SMART objective?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A goal that is broad, ambitious, and open-ended.",
+                "B": "A vision statement that outlines an organization’s long-term aspirations.",
+                "C": "An objective that is Specific, Measurable, Achievable, Realistic, and Time-bound.",
+                "D": "A plan that focuses only on short-term success without measurable criteria."
+            },
+            "correct_option_label": "C",
+            "explanation": "A SMART objective provides direct structural clarity to an audience, standing for Specific, Measurable, Achievable, Realistic, and Time-bound parameters.",
+            "module": 3
+        },
+        {
+            "question_id": "6",
+            "question_text": "During a college seminar, Neha was asked to present her project in front of the class. As she walked onto the stage, she became extremely nervous, her hands started shaking, and she found it difficult to speak clearly in front of the audience. Which term best describes Neha’s fear?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Acrophobia – fear of heights",
+                "B": "Glossophobia – fear of public speaking",
+                "C": "Claustrophobia – fear of closed spaces",
+                "D": "Technophobia – fear of technology"
+            },
+            "correct_option_label": "B",
+            "explanation": "Glossophobia refers specifically to the fear of public speaking or presenting in front of an audience, triggering automatic physical and physiological fight-or-flight reactions.",
+            "module": 1
+        },
+        {
+            "question_id": "7",
+            "question_text": "Which of the following is NOT a category in Kotler’s method of audience segmentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Behavioral information",
+                "B": "Demographic information",
+                "C": "Psychographic information",
+                "D": "Astrological information"
+            },
+            "correct_option_label": "D",
+            "explanation": "Audience segmentation standardly relies on demographic, psychographic, behavioral, and situational parameters. Astrological information is scientifically invalid and is not used in audience analysis.",
+            "module": 2
+        },
+        {
+            "question_id": "8",
+            "question_text": "In a presentation, how do visual aids and speech contribute to effective communication?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Speech delivers the verbal content, while visual aids like slides and demonstrations support and enrich the overall message.",
+                "B": "Only speech is necessary, as visual aids could divert attention from the main message.",
+                "C": "Visual aids are unnecessary, and the focus should strictly be on the verbal delivery of the speech.",
+                "D": "Visual aids can completely substitute for speech, eliminating the need for verbal explanation."
+            },
+            "correct_option_label": "A",
+            "explanation": "A strong presentation combines both verbal speech and visual design. Speech carries the core argument and tone, while slide decks act as supportive structures that enrich understanding.",
+            "module": 4
+        },
+        {
+            "question_id": "9",
+            "question_text": "What does Patti Smith’s Nobel Prize ceremony performance teach us about handling mistakes during a presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Immediate exit is the best way to preserve professional dignity.",
+                "B": "Acknowledging errors gracefully builds audience rapport and allows for a successful finish.",
+                "C": "Professional performers are immune to nerves; errors are strictly technical.",
+                "D": "Mistakes are definitive proof of a lack of preparation."
+            },
+            "correct_option_label": "B",
+            "explanation": "Patti Smith's legendary performance demonstrates that human errors happen on stage; pausing to acknowledge them transparently builds deep audience empathy and provides a path to a highly successful finish.",
+            "module": 1
+        },
+        {
+            "question_id": "10",
+            "question_text": "What is the importance of considering the \"frame of reference\" when preparing a presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It allows you to select appropriate content and set the right context for the audience",
+                "B": "It helps you structure your presentation logically",
+                "C": "It ensures the speech is long enough",
+                "D": "It makes your delivery more confident"
+            },
+            "correct_option_label": "A",
+            "explanation": "Analyzing the audience's frame of reference ensures the content is aligned with their baseline knowledge, cultural background, and immediate environment, helping the speaker establish proper context.",
+            "module": 2
+        },
+        {
+            "question_id": "11",
+            "question_text": "In Steve Jobs’ commencement speech, what role does the opening greeting play in the overall structure?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It immediately presents complex concepts to grab attention.",
+                "B": "It introduces the main theme of the speech in detail.",
+                "C": "It engages the audience with an anecdote and sets a positive tone.",
+                "D": "It serves as a casual introduction, without any deeper context."
+            },
+            "correct_option_label": "C",
+            "explanation": "Steve Jobs used a self-deprecating hook ('I never graduated from college') to immediately lower the formality barrier, humanize himself, and set an engaging, empathetic tone.",
+            "module": 2
+        },
+        {
+            "question_id": "12",
+            "question_text": "According to this course \"hack\" for confidence, why is it critical for a leader to project a strong posture and steady energy during the first 15 seconds of a presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It allows the speaker to memorize the script more effectively while standing.",
+                "B": "It serves as a scientific measurement of the speaker's actual internal stress levels.",
+                "C": "It prevents audience distraction and establishes a professional perception before the persuasion begins.",
+                "D": "It ensures that the audience will agree with the speaker’s proposal regardless of the content."
+            },
+            "correct_option_label": "C",
+            "explanation": "First impressions are locked in during the first 15 seconds. Demonstrating physical poise, eye contact, and steady energy signals authority and ensures the audience focuses on the message from the very start.",
+            "module": 1
+        },
+        {
+            "question_id": "13",
+            "question_text": "A senior leader tells you that when you present, you come across as stiff and nervous, which undermines trust. They suggest you need to work on your non-verbal \"style.\" Which response aligns best with the advice on authenticity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Adopt a completely new, animated persona that feels forced and unnatural.",
+                "B": "Focus only on technical data, as that is the true measure of professionalism.",
+                "C": "Refuse to change, as changing your style is inauthentic and dishonest.",
+                "D": "Work within your \"growth zone\" by making comfortable, small adjustments to your facial expressions and posture."
+            },
+            "correct_option_label": "D",
+            "explanation": "Authenticity does not prevent a speaker from improving. The speaker must slowly make natural, steady improvements within their 'growth zone' rather than fabricating an artificial stage persona.",
+            "module": 1
+        },
+        {
+            "question_id": "14",
+            "question_text": "What is the fundamental purpose of communication in a professional environment?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To rely exclusively on data and statistics without context",
+                "B": "To showcase extensive vocabulary and technical jargon",
+                "C": "To deliver information in a way that is clear, relevant, and actionable",
+                "D": "To minimize interaction and maintain a one-way flow of information"
+            },
+            "correct_option_label": "C",
+            "explanation": "Professional communication serves to streamline actions and align teams. Information must be structured simply, remain relevant to stakeholders, and provide clear directions for what needs to happen next.",
+            "module": 1
+        },
+        {
+            "question_id": "15",
+            "question_text": "What are the four key components of an effective presentation - Conclusion?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Simply restate the objective and recap the content.",
+                "B": "Give a concise summary, restate the objective or recommendation, add emotional impact, and finish with a strong closing statement.",
+                "C": "Focus solely on repeating facts without summarizing or creating an impact.",
+                "D": "Summarize the main points, introduce new ideas, and conclude abruptly."
+            },
+            "correct_option_label": "B",
+            "explanation": "An optimal conclusion wraps up by summarizing core insights, re-stating the objective or central recommendation, adding an emotional hook, and delivering an impactful exit line.",
+            "module": 2
+        },
+        {
+            "question_id": "16",
+            "question_text": "In the context of effective communication, what is the key reason why \"framing and resonance\" are essential for delivering a successful message?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They establish common protocols between the speaker and the audience, ensuring better understanding.",
+                "B": "They eliminate the need to analyze the audience’s perspectives and preferences.",
+                "C": "They help the speaker convey a large amount of information in a short time.",
+                "D": "They allow the speaker to appear more knowledgeable and authoritative."
+            },
+            "correct_option_label": "A",
+            "explanation": "Framing and resonance calibrate the communication channel. They synchronize the speaker's transmitter with the audience's receiver, establishing a common understanding and shared values.",
+            "module": 2
+        },
+        {
+            "question_id": "17",
+            "question_text": "The BERC framework is designed to enhance the effectiveness of a presentation. Which of the following best describes its key components?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A content development method focused on adding as much information as possible to maximize knowledge sharing.",
+                "B": "A structured approach ensuring a presentation is Brief, Engaging, Relevant, and Clear, improving audience understanding and retention.",
+                "C": "A strategy for memorizing speeches verbatim to eliminate the need for improvisation or adjustments.",
+                "D": "A framework emphasizing advanced jargon and complex language to establish authority and credibility in presentations."
+            },
+            "correct_option_label": "B",
+            "explanation": "The BERC framework helps presenters fine-tune their scripts by passing every sentence through four strict quality gates: Brevity, Engagement, Relevance, and Clarity.",
+            "module": 2
+        },
+        {
+            "question_id": "18",
+            "question_text": "For a five-minute presentation, what is the ideal number of total sentences to include to maintain a professional speaking pace of 120 words per minute?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "15 sentences",
+                "B": "120 sentences",
+                "C": "600 sentences",
+                "D": "40 sentences"
+            },
+            "correct_option_label": "D",
+            "explanation": "At 120 words per minute, a 5-minute presentation requires exactly 600 words. Since a persuasive sentence contains about 15 words, the total comes to: 600 words / 15 words per sentence = 40 sentences.",
+            "module": 2
+        },
+        {
+            "question_id": "19",
+            "question_text": "In the analysis of Steve Jobs’s 2005 Stanford speech, how does his specific transition-\"Today I want to tell you three stories of my life. That’s it. No big deal. Just three stories\"-demonstrate the BERC framework in action?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is an example of the Clear gate because it uses complex academic language to impress the faculty and staff in the audience.",
+                "B": "It fails the Brevity gate by repeating the word \"stories\" three times in a row.",
+                "C": "It passes the Clarity and Engaging gates by using precise \"signposting\" that tells the audience exactly what to expect, making them want to hear the next sentence.",
+                "D": "It ignores Relevance by focusing on personal anecdotes rather than business metrics."
+            },
+            "correct_option_label": "C",
+            "explanation": "By explicitly telling the audience what to expect ('three stories'), Steve Jobs used clear signposting. This made the roadmap highly digestible, engaging, and easy to follow.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "Which of the following best describes the importance of answering the question “What’s in it for me?” in a persuasive presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It provides a clear incentive for the audience to engage with and support your proposal.",
+                "B": "It focuses on explaining the background of your idea or business.",
+                "C": "It ensures the audience understands your personal motivations.",
+                "D": "It serves as an introduction to build your credibility before presenting your main argument."
+            },
+            "correct_option_label": "A",
+            "explanation": "This question addresses the 'U-Factor' (user benefit). Persuasion succeeds only when the audience is shown how the proposal resolves their personal challenges and adds value to them.",
+            "module": 3
+        },
+        {
+            "question_id": "21",
+            "question_text": "Why is it important to create emotions in the audience during a persuasive presentation, as described in the AEIOUE framework?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Emotions are secondary to logic and can be used to manipulate the audience.",
+                "B": "Emotions serve as a tool to trigger immediate action without consideration for the message content.",
+                "C": "Emotions are irrelevant as long as the objective and examples are clear.",
+                "D": "Emotions help bind the message together and ensure that the audience is engaged throughout."
+            },
+            "correct_option_label": "D",
+            "explanation": "Emotional appeal (xE) is the 'binding agent' of the AEIOUxE model. Emotions hold the logical, structural components of the speech together and generate deep, lasting engagement.",
+            "module": 3
+        },
+        {
+            "question_id": "22",
+            "question_text": "In a persuasive presentation, credibility plays a crucial role in influencing the audience. Which of the following statements correctly explains how different dimensions of credibility contribute to the effectiveness of the speaker?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Integrity and character are essential for credibility since audiences only trust presenters who are morally upright and have a history of honesty.",
+                "B": "A combination of expertise, integrity, character, track record, appearance & confidence, and demographics collectively determines a speaker's credibility, as each factor influences the audience’s perception and trust in different ways.",
+                "C": "Expertise is the sole factor in credibility because only a speaker's qualifications and knowledge determine their authority and ability to persuade.",
+                "D": "Track record, appearance, confidence, and demographics enhance credibility by shaping audience perceptions, but they are less important than integrity and expertise."
+            },
+            "correct_option_label": "B",
+            "explanation": "Credibility (Ethos/I-Factor) is a multidimensional construct. Physical confidence, visual neatness, professional history, logical clarity, and verified credentials work together to establish audience trust.",
+            "module": 3
+        },
+        {
+            "question_id": "23",
+            "question_text": "Renowned physicist Richard Feynman famously stated that if you cannot explain something simply, you likely do not fully understand it yourself. In the context of a persuasive presentation, which of the following questions best aligns with this principle by requiring the speaker to demonstrate clear reasoning and credibility?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "What do you want from me?",
+                "B": "Why should I agree with you?",
+                "C": "Who are you?",
+                "D": "What’s in it for me?"
+            },
+            "correct_option_label": "B",
+            "explanation": "The question 'Why should I agree with you?' tests the speaker's logical proof and simplified rationale (Logos), forcing the speaker to communicate complex arguments using basic, relatable language.",
+            "module": 3
+        },
+        {
+            "question_id": "24",
+            "question_text": "According to the instructor, how should you structure your presentation using the AEIOU framework?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Start with examples, then provide the objective, followed by emotions and credibility.",
+                "B": "Focus only on the objective and examples in the beginning and end.",
+                "C": "Begin with attention and objective, include examples, credibility, and benefits in the body, and end with a summary and emotional closing.",
+                "D": "Begin with a detailed explanation of examples, followed by emotional content throughout the presentation."
+            },
+            "correct_option_label": "C",
+            "explanation": "To align AEIOUxE with structural flow, the opening must capture Attention and state the Objective, the body must support this with Credibility (I-factor), Examples, and benefits (U-factor), and the conclusion must wrap up with an Emotional punch.",
+            "module": 3
+        },
+        {
+            "question_id": "25",
+            "question_text": "Which element of the AEIOU framework did the speaker focus on when he shared personal benefits of being a \"weekday vegetarian\" like feeling healthier and saving money?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Objective",
+                "B": "Attention",
+                "C": "U-factor",
+                "D": "Examples"
+            },
+            "correct_option_label": "D",
+            "explanation": "By sharing personal metrics (money saved, positive health effects), Graham Hill used concrete personal experiences as Examples to validate and prove his main objective.",
+            "module": 3
+        },
+        {
+            "question_id": "26",
+            "question_text": "Scenario:\nAt a national startup competition, Arjun is presenting his new delivery platform to a panel of investors and business leaders. Wanting to sound professional, he begins by saying:\n\n“Good afternoon everyone. I’m Arjun, founder of SwiftDrop, and today I will explain how our delivery platform works and how it can improve urban logistics.”\n\nAlthough his presentation is well-organized, the judges seem distracted during the first few minutes. Later, one mentor mentions that while the idea was strong, the opening failed to immediately grab the audience’s attention. Arjun realizes that he focused too much on formal introduction and not enough on creating excitement or curiosity at the beginning.\n\nAccording to the AEIOUXE framework, what could Arjun have done differently at the start of his presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Focused only on technical details before introducing the business idea",
+                "B": "Opened with a powerful hook or engaging statement to capture attention",
+                "C": "Begun by discussing pricing and profits immediately",
+                "D": "Presented all financial projections at the beginning"
+            },
+            "correct_option_label": "B",
+            "explanation": "To hook distracted judges right away, Arjun should have started with a provocative hook (such as an engaging statistic, problem, or visual cue) to command interest, rather than relying on standard, passive greetings.",
+            "module": 3
+        },
+        {
+            "question_id": "27",
+            "question_text": "In the AEIOUXE framework, which element directly answers the question “What do you want me to do?”",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Attention",
+                "B": "U-factor",
+                "C": "Objective",
+                "D": "I-factor"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Objective defines the direct ask. It specifies the action, funding approval, or commitment the speaker wants from the audience by the end of the presentation.",
+            "module": 3
+        },
+        {
+            "question_id": "28",
+            "question_text": "Hans Rosling’s TED talk is widely regarded as a masterclass in data visualization. What was a key element that made his presentations effective?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "He used advanced statistical formulas without explanation",
+                "B": "He combined data visualization with dynamic storytelling and interactive elements",
+                "C": "He relied solely on spreadsheets and statistical reports",
+                "D": "He focused only on humor and entertainment rather than data-driven insights"
+            },
+            "correct_option_label": "B",
+            "explanation": "Hans Rosling humanized dry statistics by using animated bubble graphs, dynamic physical showmanship, and storytelling to make dense demographic facts emotionally engaging.",
+            "module": 3
+        },
+        {
+            "question_id": "29",
+            "question_text": "Martin Sheen’s speech on global demographics, as cited in the book, used a storytelling approach. Why is storytelling an effective technique for data presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It adds entertainment value without improving comprehension",
+                "B": "It makes data emotionally engaging, increasing retention and impact",
+                "C": "It allows presenters to avoid discussing actual statistics and facts",
+                "D": "It ensures that data is simplified to the point where details are omitted"
+            },
+            "correct_option_label": "B",
+            "explanation": "Storytelling builds emotional resonance (Pathos). When hard data is presented within a story, the information becomes easier for the audience to digest, process, and remember.",
+            "module": 3
+        },
+        {
+            "question_id": "30",
+            "question_text": "During your presentation on a new company policy, an audience member interrupts with skepticism. What is the best response?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ignore the interruption and move on.",
+                "B": "Acknowledge their concern and provide a clear, fact-based response.",
+                "C": "Challenge them by asking why they doubt the policy.",
+                "D": "Dismiss their concern and continue presenting."
+            },
+            "correct_option_label": "B",
+            "explanation": "Handling skeptical interventions requires professionalism. Dismissing or ignoring concerns damages credibility; the correct response is to acknowledge their perspective and counter logically with factual evidence.",
+            "module": 4
+        },
+        {
+            "question_id": "31",
+            "question_text": "Which of the following is the best way to use slides in a presentation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Avoid using slides and rely only on verbal explanation.",
+                "B": "Use excessive animations and sound effects to make it engaging.",
+                "C": "Fill slides with large paragraphs to provide detailed explanations.",
+                "D": "Use minimal text, relevant visuals, and highlight key points."
+            },
+            "correct_option_label": "D",
+            "explanation": "Slides should strictly act as visual aids. Heavy paragraphs distract the audience because they read instead of listening. Using minimal text and clean graphics keeps the focus on the speaker's vocal delivery.",
+            "module": 4
+        },
+        {
+            "question_id": "32",
+            "question_text": "With the rise of social media and constant exposure to information, audiences today have shorter attention spans. As a speaker, why is this an important factor to consider?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Shorter attention spans only affect virtual presentations, not in-person speeches.",
+                "B": "Audiences can maintain focus indefinitely without interactive elements.",
+                "C": "Attention spans remain the same regardless of digital distractions.",
+                "D": "The overwhelming flow of information makes it harder to retain audience focus, so engagement strategies are essential."
+            },
+            "correct_option_label": "D",
+            "explanation": "Because modern digital lifestyles cause intense cognitive distraction, speakers cannot expect passive attention; they must purposefully design high-engagement strategies throughout their presentation.",
+            "module": 3
+        },
+        {
+            "question_id": "33",
+            "question_text": "Which of the following \"don'ts\" should be avoided when creating slides?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Using too many colors and fonts, overloading slides with information, and neglecting to provide references for external content",
+                "B": "Keeping slides minimal with only essential information and using a consistent color scheme throughout",
+                "C": "Focusing solely on content accuracy and ignoring the aesthetic design of the slides",
+                "D": "Including only visuals and no text to allow for full audience engagement"
+            },
+            "correct_option_label": "A",
+            "explanation": "Overloading slides, using noisy color/font variations, and omitting academic citations are common slide design errors that decrease speaker credibility and distract the audience.",
+            "module": 4
+        },
+        {
+            "question_id": "34",
+            "question_text": "For a high-stakes 10-minute business presentation, what is the recommended maximum number of content-heavy slides to ensure deep audience engagement?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A single slide that contains all data points to avoid switching visuals.",
+                "B": "Five slides, focusing on only three core content slides after the title and thank you.",
+                "C": "At least ten slides, ensuring one minute is spent on each slide.",
+                "D": "Twenty slides, utilizing fast-paced transitions to keep the energy high."
+            },
+            "correct_option_label": "B",
+            "explanation": "Applying the slide-to-time ratio formula ($Total Time / 2 = Max Slides$), a 10-minute speech should have a maximum of 5 slides, preserving audience attention by focusing only on core takeaways.",
+            "module": 4
+        },
+        {
+            "question_id": "35",
+            "question_text": "Rohan, a startup founder, is preparing to present his business idea to a group of potential investors. He wants to make a strong impression and convince them that his startup is worth investing in. Which approach would make Rohan’s investor pitch most effective?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Talking only about the amount of funding required without explaining the business opportunity or market potential.",
+                "B": "Avoiding discussion about risks and competitors to make the business appear perfect.",
+                "C": "Understanding the investors’ interests, presenting a clear ROI plan, and delivering a well structured pitch supported by market research and details.",
+                "D": "Keeping the presentation extremely short and relying mainly on confidence instead of facts and data."
+            },
+            "correct_option_label": "C",
+            "explanation": "An optimal fundraising pitch must integrate investor analysis (what they care about), a clear market viability structure, clear returns (ROI), and a professional design backed by factual research.",
+            "module": 2
+        },
+        {
+            "question_id": "36",
+            "question_text": "Riya, a final-year engineering student interested in product management, attended a startup summit in Bengaluru. Before the event, she researched the speakers, learned about their companies, and prepared a few thoughtful questions. She also practiced a short professional introduction. After a session, Riya spoke with a startup co-founder. Instead of asking for an internship directly, she appreciated his ideas on customer experience and asked an insightful question about business growth. The co-founder was impressed and agreed to connect with her on LinkedIn. In the following months, Riya stayed in touch by sharing relevant articles and engaging professionally with his posts. Later, when the company announced internship openings, he remembered Riya and encouraged her to apply. What key factors helped Riya turn a short networking interaction into a possible career opportunity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "She prepared well, asked meaningful questions, and maintained professional contact",
+                "B": "She sent messages to all the speakers",
+                "C": "She attended every session at the summit and noted their email id.",
+                "D": "She abruptly asked for an internship"
+            },
+            "correct_option_label": "A",
+            "explanation": "Riya's successful networking highlights three steps: careful pre-event research, asking thoughtful questions that offer instant credibility, and maintaining consistent, low-pressure LinkedIn engagement over time.",
+            "module": 1
+        },
+        {
+            "question_id": "37",
+            "question_text": "A marketing director is presenting a proposal for a new customer loyalty app to company executives. She begins by sharing the story of a frustrated customer who switched to a competitor after facing repeated service delays. She then asks the executives, “If customers continue leaving this easily, can we really say we are meeting their expectations?” To finish, she presents survey results and case studies from other companies that increased customer retention by 20% after launching similar apps. Which combination of persuasive elements from the AEIOUXE framework is the marketing director using to gain approval for the proposal?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Extra Emotions (Storytelling), Provocation (The “O” factor), and Examples (Data-driven Arguments)",
+                "B": "Humor, Technical Language, and Neutral Communication",
+                "C": "Complex Statistics, Self-Deprecation, and Jargon",
+                "D": "Personal Opinions, Passive Tone, and Informal Speech"
+            },
+            "correct_option_label": "A",
+            "explanation": "By sharing a customer's specific story, she utilizes Emotional Appeal (xE). Her target question serves as a Provocation (A), and she validates the proposal using survey metrics as concrete Examples (E).",
+            "module": 3
+        },
+        {
+            "question_id": "38",
+            "question_text": "Scenario:\nYou are a project manager, and one of your team members, Sarah, has been missing deadlines on important tasks. This is causing delays in the overall project. You need to address the issue, but Sarah becomes anxious when receiving negative feedback.\n\nHow should you handle this situation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Avoid discussing the issue to prevent making Sarah uncomfortable.",
+                "B": "Send a brief message pointing out her mistakes without offering guidance.",
+                "C": "Arrange a private discussion and give constructive feedback by focusing on solutions and support.",
+                "D": "Criticize Sarah during a team meeting so everyone understands the importance of deadlines."
+            },
+            "correct_option_label": "C",
+            "explanation": "Constructive professional feedback is best delivered in private. It addresses performance lapses directly while offering actionable paths forward and showing support, which keeps anxiety low and preserves trust.",
+            "module": 1
+        },
+        {
+            "question_id": "39",
+            "question_text": "Scenario:\nYou are attending a group discussion during a company recruitment process. The moderator asks you about a business trend that you are not very familiar with. You are unsure how to respond in front of the other candidates.\n\nHow should you handle this situation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Give a random answer with confidence, even if it may be incorrect.",
+                "B": "Stay silent and avoid answering the question.",
+                "C": "Honestly admit limited knowledge about the topic but share your logical understanding and reasoning.",
+                "D": "Tell the moderator the topic is unfair and unrelated to the recruitment process."
+            },
+            "correct_option_label": "C",
+            "explanation": "When facing unfamiliar questions, faking knowledge harms credibility. The professional response is to honestly state your level of knowledge while offering a logical framework based on related industry concepts.",
+            "module": 4
+        },
+        {
+            "question_id": "40",
+            "question_text": "Scenario:\nRahul, an MBA student, is leading a team project presentation for a corporate case competition. Due to an error in the financial analysis prepared by him, the team presents incorrect data to the judges. After the presentation, the team members are upset because the mistake affected their overall performance. Rahul realizes he must address the situation professionally.\n\nWhat would be the most effective way for Rahul to apologize in this professional situation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Blame the limited preparation time and other team members for the mistake.",
+                "B": "Give a brief apology without explaining the problem or solution.",
+                "C": "Avoid discussing the mistake and hope the team moves on quickly.",
+                "D": "Accept responsibility, sincerely apologize, and explain how he will correct the issue in future presentations."
+            },
+            "correct_option_label": "D",
+            "explanation": "A professional apology requires taking clear accountability for errors. Rahul must apologize to his team, accept responsibility, and outline structural improvements to prevent similar mistakes in future presentations.",
+            "module": 1
+        }
+    ]
+}

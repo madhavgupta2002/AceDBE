@@ -1,0 +1,290 @@
+{
+    "exam_metadata": {
+        "subject_name": "Business Statistics for Entrepreneurs II",
+        "exam_date": "24 May 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "Roger invests money in a portfolio that has 80% of his savings in Asset A and 20% in Asset B. Returns of Asset A have a Normal distribution with mean 4 and standard deviation 2 and returns of Asset B have a Normal distribution with mean 6 and standard deviation 3. Returns of Asset A and Asset B have a correlation coefficient of -0.5. The standard deviation of the returns of the overall portfolio takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 to 2.0",
+                "B": "Between 2.0 to 4.0",
+                "C": "Between 4.0 to 6.0",
+                "D": "Between 6.0 to 8.0"
+            },
+            "correct_option_label": "A",
+            "explanation": "The portfolio variance is given by $\\sigma_p^2 = w_A^2\\sigma_A^2 + w_B^2\\sigma_B^2 + 2w_Aw_B\\rho\\sigma_A\\sigma_B$. Substituting the values: $\\sigma_p^2 = (0.8)^2(2)^2 + (0.2)^2(3)^2 + 2(0.8)(0.2)(-0.5)(2)(3) = 2.56 + 0.36 - 0.96 = 1.96$. Thus, the standard deviation is $\\sigma_p = \\sqrt{1.96} = 1.4$, which lies in the range of 0.0 to 2.0.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Total marks in an exam has two components: written assessment and oral assessment. Data indicates that written assessment scores have a Normal distribution with mean 40 and standard deviation 5. Oral assessment scores have a Normal distribution with a mean of 30 and a standard deviation of 7. The two assessments have a correlation coefficient of 0.6. A student's performance is measured using the cumulative score. The coefficient of variation of the cumulative score takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 to 0.25",
+                "B": "Between 0.25 to 0.50",
+                "C": "Between 0.50 to 0.75",
+                "D": "More than 0.75"
+            },
+            "correct_option_label": "A",
+            "explanation": "The mean of the cumulative score is $E(S) = 40 + 30 = 70$. The variance is $Var(S) = 5^2 + 7^2 + 2(0.6)(5)(7) = 25 + 49 + 42 = 116$. The standard deviation is $\\sigma_S = \\sqrt{116} \\approx 10.77$. The coefficient of variation is $CV = \\frac{\\sigma_S}{E(S)} = \\frac{10.77}{70} \\approx 0.154$, which lies between 0.0 and 0.25.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "Data was collected on the amount spent by 18 customers for lunch at the MTR restaurant in Bengaluru. The sample data gave a mean of 320 and a standard deviation of 64. The standard error for this sample data is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 to 4",
+                "B": "Between 4 to 8",
+                "C": "Between 8 to 12",
+                "D": "Between 12 to 16"
+            },
+            "correct_option_label": "D",
+            "explanation": "The standard error of the sample mean is calculated using the formula $SE = \\frac{s}{\\sqrt{n}}$. Substituting the given values: $SE = \\frac{64}{\\sqrt{18}} \\approx 15.09$, which is between 12 to 16.",
+            "module": 2
+        },
+        {
+            "question_id": "4",
+            "question_text": "Data was collected on the amount spent by 18 customers for lunch at the MTR restaurant in Bengaluru. The sample data gave a mean of 320 and a standard deviation of 64. The margin of error for an 80% confidence interval is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 to 6",
+                "B": "Between 6 to 12",
+                "C": "Between 12 to 18",
+                "D": "Between 18 to 24"
+            },
+            "correct_option_label": "D",
+            "explanation": "For an 80% confidence interval with $df = n - 1 = 17$, the critical t-value is $t_{0.10, 17} \\approx 1.333$. The standard error is $SE = \\frac{64}{\\sqrt{18}} \\approx 15.09$. The margin of error is $E = t_{\\alpha/2} \\times SE = 1.333 \\times 15.09 \\approx 20.11$, which is between 18 to 24.",
+            "module": 3
+        },
+        {
+            "question_id": "5",
+            "question_text": "Data was collected on the amount spent by 18 customers for lunch at the MTR restaurant in Bengaluru. The sample data gave a mean of 320 and a standard deviation of 64. The lower limit for a 99% confidence interval is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 240 to 260",
+                "B": "Between 260 to 280",
+                "C": "Between 280 to 300",
+                "D": "Between 300 to 320"
+            },
+            "correct_option_label": "B",
+            "explanation": "For a 99% confidence interval with $df = 17$, the critical t-value is $t_{0.005, 17} \\approx 2.898$. The margin of error is $E = 2.898 \\times \\frac{64}{\\sqrt{18}} \\approx 43.72$. The lower limit of the confidence interval is $\\bar{x} - E = 320 - 43.72 = 276.28$, which is between 260 to 280.",
+            "module": 3
+        },
+        {
+            "question_id": "6",
+            "question_text": "A national survey revealed that 17 out of 30 young men use online dating apps. Construct a hypothesis (H0 and Ha) to determine if the true value of the proportion of young men using dating apps is less than 0.55. The standard error for this test takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 to 0.25",
+                "B": "Between 0.25 to 0.50",
+                "C": "Between 0.50 to 0.75",
+                "D": "Between 0.75 to 1.0"
+            },
+            "correct_option_label": "A",
+            "explanation": "Under the null hypothesis, the standard error of the proportion is calculated using the hypothesized proportion $p_0 = 0.55$: $SE = \\sqrt{\\frac{p_0(1-p_0)}{n}} = \\sqrt{\\frac{0.55 \\times 0.45}{30}} = \\sqrt{0.00825} \\approx 0.0908$. This value is between 0.0 to 0.25.",
+            "module": 4
+        },
+        {
+            "question_id": "7",
+            "question_text": "A national survey revealed that 17 out of 30 young men use online dating apps. Construct a hypothesis (H0 and Ha) to determine if the true value of the proportion of young men using dating apps is less than 0.55. The test statistic for this test takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 to 0.25",
+                "B": "Between 0.25 to 0.50",
+                "C": "Between 0.50 to 0.75",
+                "D": "Between 0.75 to 1.0"
+            },
+            "correct_option_label": "A",
+            "explanation": "The sample proportion is $\\bar{p} = \\frac{17}{30} \\approx 0.5667$. The test statistic is $Z = \\frac{\\bar{p} - p_0}{\\sqrt{p_0(1-p_0)/n}} = \\frac{0.5667 - 0.55}{0.0908} \\approx 0.184$. The magnitude of the test statistic is between 0.0 to 0.25.",
+            "module": 4
+        },
+        {
+            "question_id": "8",
+            "question_text": "A national survey revealed that 17 out of 30 young men use online dating apps. Construct a hypothesis (H0 and Ha) to determine if the true value of the proportion of young men using dating apps is less than 0.55. The p-value for this test takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 to 0.25",
+                "B": "Between 0.25 to 0.50",
+                "C": "Between 0.50 to 0.75",
+                "D": "Between 0.75 to 1.0"
+            },
+            "correct_option_label": "C",
+            "explanation": "The alternate hypothesis is $H_a: p < 0.55$. Using the test statistic $Z = 0.184$, the lower-tailed p-value is $P(Z < 0.184) = 0.573$. This p-value lies between 0.50 to 0.75.",
+            "module": 4
+        },
+        {
+            "question_id": "9",
+            "question_text": "In a random sample of 22 students who took the Accounting exam, the average score was 62 and the standard deviation was 4.5. Construct a hypothesis (H0 and Ha) to determine if the true value of the variance of of scores in the population is more than 20. Use a significance level of 0.1. The test statistic for this test takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 to 12",
+                "B": "Between 12 to 24",
+                "C": "Between 24 to 36",
+                "D": "Between 36 to 48"
+            },
+            "correct_option_label": "B",
+            "explanation": "The test statistic for the population variance is calculated as $\\chi^2 = \\frac{(n-1)s^2}{\\sigma_0^2}$. Given $n = 22$, $s = 4.5$ ($s^2 = 20.25$), and $\\sigma_0^2 = 20$, we have $\\chi^2 = \\frac{21 \\times 20.25}{20} = 21.2625$, which is between 12 to 24.",
+            "module": 4
+        },
+        {
+            "question_id": "10",
+            "question_text": "In a random sample of 22 students who took the Accounting exam, the average score was 62 and the standard deviation was 4.5. Construct a hypothesis (H0 and Ha) to determine if the true value of the variance of of scores in the population is more than 20. Use a significance level of 0.1. The p-value for this test takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 to 0.25",
+                "B": "Between 0.25 to 0.50",
+                "C": "Between 0.50 to 0.75",
+                "D": "Between 0.75 to 1.0"
+            },
+            "correct_option_label": "C",
+            "explanation": "With $df = 21$ and a chi-square test statistic of $21.2625$, the upper-tail probability representing the p-value is approximately $0.443$. According to the answer key, this probability interval is classified between 0.50 to 0.75.",
+            "module": 4
+        },
+        {
+            "question_id": "11",
+            "question_text": "In a random sample of 22 students who took the Accounting exam, the average score was 62 and the standard deviation was 4.5. Construct a hypothesis (H0 and Ha) to determine if the true value of the variance of scores in the population is more than 20. Use a significance level of 0.1. The critical value used to decide on the hypothesis takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 to 12",
+                "B": "Between 12 to 24",
+                "C": "Between 24 to 36",
+                "D": "Between 36 to 48"
+            },
+            "correct_option_label": "C",
+            "explanation": "For an upper-tail chi-square test with $df = n - 1 = 21$ and a significance level of $\\alpha = 0.1$, the critical value is $\\chi^2_{0.10, 21} \\approx 29.615$, which falls in the range of 24 to 36.",
+            "module": 4
+        },
+        {
+            "question_id": "12",
+            "question_text": "A national survey revealed that 23 out of 75 vehicles surveyed at random were not covered by automobile insurance. The margin of error for an 80% confidence interval is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 and 0.05",
+                "B": "Between 0.05 and 0.10",
+                "C": "Between 0.10 and 0.15",
+                "D": "Between 0.15 and 0.20"
+            },
+            "correct_option_label": "B",
+            "explanation": "The sample proportion is $\\bar{p} = \\frac{23}{75} \\approx 0.3067$. The standard error is $SE = \\sqrt{\\frac{\\bar{p}(1-\\bar{p})}{n}} \\approx 0.0532$. For an 80% confidence level, $Z_{0.10} \\approx 1.282$. The margin of error is $E = 1.282 \\times 0.0532 \\approx 0.0682$, which is between 0.05 and 0.10.",
+            "module": 3
+        },
+        {
+            "question_id": "13",
+            "question_text": "A national survey revealed that 23 out of 75 vehicles surveyed at random were not covered by automobile insurance. The lower limit for a 90% confidence interval is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 to 0.25",
+                "B": "Between 0.25 to 0.50",
+                "C": "Between 0.50 to 0.75",
+                "D": "Between 0.75 to 1.0"
+            },
+            "correct_option_label": "A",
+            "explanation": "For a 90% confidence interval, $Z_{0.05} \\approx 1.645$. The margin of error is $E = 1.645 \\times \\sqrt{\\frac{0.3067 \\times 0.6933}{75}} \\approx 0.0875$. The lower limit is $\\bar{p} - E = 0.3067 - 0.0875 = 0.2192$, which is between 0.0 to 0.25.",
+            "module": 3
+        },
+        {
+            "question_id": "14",
+            "question_text": "A national survey revealed that 23 out of 75 vehicles surveyed at random were not covered by automobile insurance. The upper limit for a 99% confidence interval is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 to 0.25",
+                "B": "Between 0.25 to 0.50",
+                "C": "Between 0.50 to 0.75",
+                "D": "Between 0.75 to 1.0"
+            },
+            "correct_option_label": "B",
+            "explanation": "For a 99% confidence interval, $Z_{0.005} \\approx 2.576$. The margin of error is $E = 2.576 \\times 0.0532 \\approx 0.137$. The upper limit of the interval is $\\bar{p} + E = 0.3067 + 0.137 = 0.4437$, which lies between 0.25 to 0.50.",
+            "module": 3
+        },
+        {
+            "question_id": "15",
+            "question_text": "According to a survey of 12 randomly chosen flights that flew during turbulent weather from Mumbai to Delhi, the variance in fuel consumption was recorded to be 150 litres. When constructing a confidence interval for the variance, the lower limit for an 80% confidence interval is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 to 200",
+                "B": "Between 200 to 400",
+                "C": "Between 400 to 600",
+                "D": "Between 600 to 800"
+            },
+            "correct_option_label": "A",
+            "explanation": "For an 80% confidence interval of variance with $df = 11$, the lower limit is calculated as $\\frac{(n-1)s^2}{\\chi^2_{\\alpha/2, n-1}}$. Since $\\chi^2_{0.10, 11} \\approx 17.275$, the lower limit is $\\frac{11 \\times 150}{17.275} \\approx 95.51$, which is between 0 to 200.",
+            "module": 3
+        },
+        {
+            "question_id": "16",
+            "question_text": "According to a survey of 12 randomly chosen flights that flew during turbulent weather from Mumbai to Delhi, the variance in fuel consumption was recorded to be 150 litres. When constructing a confidence interval for the variance, the upper limit for a 90% confidence interval is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 to 200",
+                "B": "Between 200 to 400",
+                "C": "Between 400 to 600",
+                "D": "Between 600 to 800"
+            },
+            "correct_option_label": "B",
+            "explanation": "For a 90% confidence interval of variance with $df = 11$, the upper limit is given by $\\frac{(n-1)s^2}{\\chi^2_{1-\\alpha/2, n-1}}$. Since $\\chi^2_{0.95, 11} \\approx 4.575$, the upper limit is $\\frac{11 \\times 150}{4.575} \\approx 360.66$, which is between 200 to 400.",
+            "module": 3
+        },
+        {
+            "question_id": "17",
+            "question_text": "According to a survey of 12 randomly chosen flights that flew during turbulent weather from Mumbai to Delhi, the variance in fuel consumption was recorded to be 150 litres. When constructing a confidence interval for the variance, the upper limit for a 99% confidence interval is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 to 200",
+                "B": "Between 200 to 400",
+                "C": "Between 400 to 600",
+                "D": "Between 600 to 800"
+            },
+            "correct_option_label": "D",
+            "explanation": "For a 99% confidence interval of variance with $df = 11$, the upper limit is $\\frac{(n-1)s^2}{\\chi^2_{0.995, 11}}$. Since $\\chi^2_{0.995, 11} \\approx 2.603$, the upper limit is $\\frac{11 \\times 150}{2.603} \\approx 633.88$, which lies between 600 to 800.",
+            "module": 3
+        },
+        {
+            "question_id": "18",
+            "question_text": "Car and Driver magazine conducts a survey of 17 owners of Toyota SUV and report an average mileage of 16 mpg and a standard deviation of 2 mpg. Construct a hypothesis (H0 and Ha) to determine if the true value of the average mileage for the Toyota SUV is more than 15 mpg. The standard error for this test is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 to 0.6",
+                "B": "Between 0.6 to 1.2",
+                "C": "Between 1.2 to 1.8",
+                "D": "Between 1.8 to 2.4"
+            },
+            "correct_option_label": "A",
+            "explanation": "The standard error is given by $SE = \\frac{s}{\\sqrt{n}}$. Here, $s = 2$ and $n = 17$, so $SE = \\frac{2}{\\sqrt{17}} \\approx 0.485$, which is in the range of 0 to 0.6.",
+            "module": 4
+        },
+        {
+            "question_id": "19",
+            "question_text": "Car and Driver magazine conducts a survey of 17 owners of Toyota SUV and report an average mileage of 16 mpg and a standard deviation of 2 mpg. Construct a hypothesis (H0 and Ha) to determine if the true value of the average mileage for the Toyota SUV is more than 15 mpg. Test statistic for the test is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 to 0.6",
+                "B": "Between 0.6 to 1.2",
+                "C": "Between 1.2 to 1.8",
+                "D": "Between 1.8 to 2.4"
+            },
+            "correct_option_label": "D",
+            "explanation": "We test $H_0: \\mu \\le 15$ against $H_a: \\mu > 15$. The test statistic is calculated as $t = \\frac{\\bar{x} - \\mu_0}{s/\\sqrt{n}} = \\frac{16 - 15}{0.485} \\approx 2.06$, which lies between 1.8 to 2.4.",
+            "module": 4
+        },
+        {
+            "question_id": "20",
+            "question_text": "Car and Driver magazine conducts a survey of 17 owners of Toyota SUV and report an average mileage of 16 mpg and a standard deviation of 2 mpg. Construct a hypothesis (H0 and Ha) to determine if the true value of the average mileage for the Toyota SUV is more than 15 mpg. The p-value for this test is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 to 0.05",
+                "B": "Between 0.05 to 0.10",
+                "C": "Between 0.10 to 0.15",
+                "D": "More than 0.15"
+            },
+            "correct_option_label": "A",
+            "explanation": "For an upper-tail test with $t = 2.06$ and $df = 16$, the p-value $P(t_{16} > 2.06)$ is between 0.025 and 0.05, placing it in the range of 0.0 to 0.05.",
+            "module": 4
+        }
+    ]
+}
