@@ -1,0 +1,710 @@
+{
+    "exam_metadata": {
+        "subject_name": "Indian Knowledge System",
+        "exam_date": "24 May 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "30",
+            "question_text": "Which feature best distinguishes the Khajuraho temples (central Indian group) from the Dravidian South Indian granite tradition, as described in the course materials?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Primary construction in hard granite employing single‑block vimana crowns",
+                "B": "A temple carved by vertical excavation from a basalt hill to create a monolithic structure",
+                "C": "Mandapas with musical pillars tuned to produce the seven notes when struck",
+                "D": "Interconnected compartments arranged along an east–west axis with abundant expressive human sculptures"
+            },
+            "correct_option_label": "D",
+            "explanation": "Khajuraho temples feature interconnected compartments arranged along an east-west axis with abundant expressive human sculptures, whereas Dravidian South Indian temples are characterized by massive granite structures, musical pillars, and single-block vimana crowns.",
+            "module": 6
+        },
+        {
+            "question_id": "7",
+            "question_text": "In Kautilya's Sapta Prakritis (Elements of a Kautilyan State), which of the following is NOT one of the seven elements listed?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Swami (the King)",
+                "B": "Janapada (the Territory/settlement)",
+                "C": "Vidya (specialized knowledge or learning)",
+                "D": "Danda (law, army and security)"
+            },
+            "correct_option_label": "C",
+            "explanation": "The seven elements (Sapta Prakriti) of a state are Swami (the King), Amatya (the Minister), Janapada (the Territory), Durga (the Fortified Capital), Kosha (the Treasury), Danda (the Army), and Mitra (the Ally). Vidya is not one of these seven elements.",
+            "module": 7
+        },
+        {
+            "question_id": "17",
+            "question_text": "In Sāṅkhya metaphysics as presented, which pairing correctly identifies Prakriti and Puruṣa?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Prakriti: transcendent unchanging reality; Puruṣa: evolving matter",
+                "B": "Prakriti: moral law; Puruṣa: agent of action",
+                "C": "Prakriti : material cause; Puruṣa: conscious final cause",
+                "D": "Prakriti: efficient cause; Puruṣa: material substrate"
+            },
+            "correct_option_label": "C",
+            "explanation": "In Sāṅkhya philosophy, Prakriti is the active, material cause of the universe consisting of three gunas (Sattva, Rajas, and Tamas), while Puruṣa is pure, passive consciousness representing the final cause.",
+            "module": 2
+        },
+        {
+            "question_id": "15",
+            "question_text": "Within the tri‑guṇa framework used to explain personality and behaviour, which guṇa is primarily linked to movement, desire and passionate activity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ananda — blissful fulfilment associated with the self",
+                "B": "Rajas — movement, desire and ambition",
+                "C": "Tamas — restfulness, inertia and sleep",
+                "D": "Sattva — stability, clarity and knowledge"
+            },
+            "correct_option_label": "B",
+            "explanation": "Rajas is characterized by movement, passion, desire, and ambition, whereas Sattva is linked to stability and clarity, and Tamas is linked to restfulness and inertia.",
+            "module": 2
+        },
+        {
+            "question_id": "38",
+            "question_text": "Which statement best reflects the distinction between Vedanga Jyotisha and modern popular notions of astrology?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Vedanga Jyotisha prescribes domestic law codes and household ceremonies",
+                "B": "Vedanga Jyotisha was chiefly used to chart individuals' future fortunes like modern horoscopy",
+                "C": "Vedanga Jyotisha is an astronomy-based system for fixing auspicious times for Vedic activities, not predictive astrology",
+                "D": "Vedanga Jyotisha is a branch of ritual poetry concerned only with meter and rhythm"
+            },
+            "correct_option_label": "C",
+            "explanation": "Vedanga Jyotisha is focused on astronomical calculations to determine appropriate times for Vedic rituals (Kala Nirnaya), rather than predictive astrology (Phalita Jyotisha) or charting individual fortunes.",
+            "module": 1
+        },
+        {
+            "question_id": "41",
+            "question_text": "Which description best captures the vāda practice as explained in the lecture for producing reliable knowledge?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Structured argument with a claim, pramāṇa-based proof, and considered acceptance",
+                "B": "Rhetorical debate aimed at winning public support",
+                "C": "Immediate acceptance of the first proponent's claim",
+                "D": "Deference to scripture without critical discussion"
+            },
+            "correct_option_label": "A",
+            "explanation": "Vāda is a collaborative and structured academic debate where both sides seek to establish the truth of a claim using valid means of knowledge (pramāṇa), rather than winning using rhetoric or uncritical acceptance.",
+            "module": 4
+        },
+        {
+            "question_id": "16",
+            "question_text": "At a Vedic yajna, Rigveda hymns are often borrowed and performed musically. Which priestly group performs that musical recitation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Atharvaveda priests (Brahma/gana) who supervise the ritual",
+                "B": "Rigveda priests (Hotr/gana) who chant the original hymns",
+                "C": "Samaveda priests (Udgatr/gana) who set Rigvedic hymns to song",
+                "D": "Yajurveda priests (Adhvaryu/gana) who perform the sacrificial rites"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Udgātṛ priests of Samaveda sing the hymns, setting Rigvedic verses to musical scales for recitation during sacrifices.",
+            "module": 1
+        },
+        {
+            "question_id": "27",
+            "question_text": "According to the Bhūta-Saṃkhyā example, what number does the phrase 'Rama Chandra Guna Nanda Ritu Pakṣa' represent when decoded and read in the prescribed order? (Consider the entire phrase as a single number)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "326 ,913",
+                "B": "292,613",
+                "C": "239 ,613",
+                "D": "269 ,313"
+            },
+            "correct_option_label": "D",
+            "explanation": "In Bhūta-Saṃkhyā, words represent digits: Rama = 3, Chandra = 1, Guna = 3, Nanda = 9, Ritu = 6, and Pakṣa = 2. When decoded and read from right to left (according to the rule \"aṅkānāṃ vāmato gatiḥ\"), we get the number 269,313.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "Which of the following lists the Four Noble Truths in the order given by the Buddha?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "There is suffering; there is a cause for suffering; there is an end to suffering; there is a path to that end",
+                "B": "There is suffering; there is a path to end suffering; there is a cause for suffering; there is an end to suffering",
+                "C": "There is a path to end suffering; there is suffering; there is a cause for suffering; there is an end to suffering",
+                "D": "There is an end to suffering; there is a cause for suffering; there is suffering; there is a path to that end"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Four Noble Truths in Buddhism are: (1) suffering (Dukkha), (2) cause of suffering (Samudaya), (3) end to suffering (Nirodha), and (4) path to the end of suffering (Magga).",
+            "module": 2
+        },
+        {
+            "question_id": "24",
+            "question_text": "A physician following Caraka‑samhita principles encounters a patient with fever. Which initial sequence of steps aligns with the course guidance before selecting a remedy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Assess the patient's prakṛti first and then prescribe a preliminary symptomatic remedy",
+                "B": "Give Pancha-karma cleansing first, then assess symptoms and prescribe medicines",
+                "C": "Treat the presenting symptoms immediately, then investigate the cause only if symptoms persist",
+                "D": "Identify the cause (hetu), check whether symptoms match that cause, then choose the remedy"
+            },
+            "correct_option_label": "D",
+            "explanation": "In Ayurvedic clinical diagnosis (derived from the Nyāya framework of examining cause and effect), a physician first identifies the cause (hetu), verifies the symptomatic manifestation matching the cause, and then prescribes the appropriate treatment.",
+            "module": 8
+        },
+        {
+            "question_id": "42",
+            "question_text": "The course treats Euclid's parallel postulate [If a straight line intersects two other straight lines forming two interior angles on the same side that are less than two right angles, then the two lines, if extended indefinitely, meet on that side on which the angles sum to less than two right angles] as which type of Siddhānta in the Nyāya classification?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Abhyupagāma-Siddhānta (a hypothetical postulate assumed for further inquiry)",
+                "B": "Adhikāraṇa-Siddhānta (a principle implying other principles)",
+                "C": "Sarvatantra-Siddhānta (tenet accepted by all schools)",
+                "D": "Pratitantra-Siddhānta (tenet peculiar to one school)"
+            },
+            "correct_option_label": "A",
+            "explanation": "Abhyupagāma-Siddhānta is a hypothetical tenet or postulate assumed for further logical investigation without being definitively proven, which aligns with how Euclid's parallel postulate is treated in geometry.",
+            "module": 4
+        },
+        {
+            "question_id": "35",
+            "question_text": "Which Nyāya hetvabhaṣa (fallacy) best characterizes the argument 'Penguins can fly because they are birds'?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sādhya-sama (using an unproven reason to establish the sādhyā)",
+                "B": "Vyabhicāra (using a hetu that is not invariably co-occurring with the sādhyā)",
+                "": "Viruddha (reason proving the contradiction of the intended claim)",
+                "D": "Prakaraṇasama (circular reasoning that preserves the doubt)"
+            },
+            "correct_option_label": "B",
+            "explanation": "The argument exhibits the fallacy of Vyabhicāra (erratic reason) because the hetu (\"being a bird\") is not invariably concurrent with the sādhya (\"ability to fly\"), as some birds (like penguins) cannot fly.",
+            "module": 4
+        },
+        {
+            "question_id": "22",
+            "question_text": "Given the Brihadeeshwara Temple’s 99‑foot vimana topped by an 80‑ton single granite cupola, which engineering challenge is most critical to address when attempting a faithful structural replication?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Designing lifting, transport and placement methods to move and secure massive granite blocks at great height",
+                "B": "Formulating mineral pigments that reproduce mural colours exactly as on the original tower",
+                "C": "Reintroducing nearby stepwell water systems to support the tower’s foundations",
+                "D": "Reproducing the temple’s iconographic sculptural program for ritual authenticity"
+            },
+            "correct_option_label": "A",
+            "explanation": "The primary engineering challenge of the Brihadeeshwara Temple was the transport and placement of massive single-block granite elements (such as the 80-ton cupola/Kumbham) at a height of over 200 feet.",
+            "module": 6
+        },
+        {
+            "question_id": "31",
+            "question_text": "A ruler finds the army well maintained but the treasury nearly empty. According to Kautilya's priorities in Arthashastra, which should the ruler prioritize first to restore state strength?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Recruit more soldiers to expand the army",
+                "B": "Replenish the treasury through economic measures and revenue generation",
+                "C": "Launch a diplomatic campaign to form new alliances",
+                "D": "Construct additional forts around the capital"
+            },
+            "correct_option_label": "B",
+            "explanation": "Kauṭilya asserts that the Treasury (Kosha) is more fundamental than the Army (Daṇḍa) because a robust treasury is required to sustain and maintain an army.",
+            "module": 7
+        },
+        {
+            "question_id": "34",
+            "question_text": "In the Vaisheshika analysis illustrated by the sentence 'No brown cow walks here', which mapping of words to Vaisheshika categories is correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "'cow' → Guna (attribute); 'walks' → Dravya (substance)",
+                "B": "'brown' → Karma (action); 'here' → Vishesha (particularity)",
+                "C": "'here' → Dravya (substance); 'brown' → Guna (attribute)",
+                "D": "'walks' → Samanya (universal); 'no' → Samavaya (inherence)"
+            },
+            "correct_option_label": "C",
+            "explanation": "Under Vaiśeṣika, 'here' refers to Space/Locus which is a Dravya (substance), and 'brown' refers to a color/quality which is a Guṇa (attribute).",
+            "module": 4
+        },
+        {
+            "question_id": "21",
+            "question_text": "In the traditional Indian division of the ecliptic into 27 Nakshatras, how many degrees (and minutes) does one Nakshatra span?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "12o00' (720 minutes)",
+                "B": "15o00' (900 minutes)",
+                "C": "13o20' (800 minutes)",
+                "D": "10o00' (600 minutes)"
+            },
+            "correct_option_label": "C",
+            "explanation": "The total ecliptic is 360 degrees ($360^\\circ$). Dividing this into 27 equal parts: $360^\\circ / 27 = 13.333^\\circ$, which is equal to $13^\\circ 20'$ (or $800$ minutes of arc).",
+            "module": 5
+        },
+        {
+            "question_id": "50",
+            "question_text": "A patient shows signs of excessive agni (strong digestive heat): persistent hunger, burning sensations and sleep disturbance. According to the Ayurvedic lectures, which approach best aligns with the principle of restoring balance?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Intensify heating stimulants to further increase digestive fire",
+                "B": "Apply measures to reduce Pitta and calm agni (e.g., cooling diet and lifestyle)",
+                "C": "Advise vigorous cold exposure to eliminate bodily heat",
+                "D": "Recommend prolonged fasting to extinguish digestive activity"
+            },
+            "correct_option_label": "B",
+            "explanation": "Excessive agni is associated with a Pitta imbalance. To restore equilibrium, therapies and dietary measures that reduce Pitta and calm the metabolic heat (such as a cooling diet and lifestyle changes) must be applied.",
+            "module": 8
+        },
+        {
+            "question_id": "1",
+            "question_text": "The Sanskrit root 'vid' is the source of the word 'Veda'. What primary meaning of 'vid' is used to define 'Veda'?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A body of knowledge or knowing",
+                "B": "A specific poetic meter",
+                "C": "A place of worship",
+                "D": "A prescribed ritual action"
+            },
+            "correct_option_label": "A",
+            "explanation": "The word 'Veda' is derived from the Sanskrit verbal root 'vid', which means \"to know\". Hence, 'Veda' literally means a body of knowledge.",
+            "module": 1
+        },
+        {
+            "question_id": "43",
+            "question_text": "How does Nilakantha Somayaji's planetary model, as described in the course, resemble Tycho Brahe's system?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Both are strictly heliocentric with Earth orbiting the Sun",
+                "B": "Both assume planets orbit the Sun while the Sun orbits the Earth",
+                "C": "Both place Earth at the exact centre with all bodies orbiting Earth in simple circles",
+                "D": "Both adopt elliptical orbits for planets around the Sun"
+            },
+            "correct_option_label": "B",
+            "explanation": "Nilakantha Somayaji's geo-heliocentric model (developed in 1501 CE) and Tycho Brahe's system (1588 CE) both proposed that all other planets orbit the Sun, while the Sun itself orbits the stationary Earth.",
+            "module": 5
+        },
+        {
+            "question_id": "26",
+            "question_text": "A meditator is repeatedly distracted by external sounds. Which step of Patanjali's eightfold path is explicitly aimed at withdrawing the senses from external objects inward?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Dharana (concentrative fixation)",
+                "B": "Yama (ethical restraints)",
+                "C": "Pratyahara (withdrawal of the senses)",
+                "D": "Pranayama (breath regulation)"
+            },
+            "correct_option_label": "C",
+            "explanation": "Pratyāhāra, the fifth limb of Aṣṭāṅga Yoga, is the practice of consciously withdrawing the sensory organs away from external objects and turning them inward.",
+            "module": 2
+        },
+        {
+            "question_id": "18",
+            "question_text": "Which epistemic source (pramāṇa) did the Cārvākas accept as the sole valid means of knowledge?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Direct perception (pratyakṣa) alone",
+                "B": "Scriptural testimony (śabda) as final",
+                "C": "Analogy (upamāna) together with inferential proof",
+                "D": "Inference (anumāna) combined with testimony"
+            },
+            "correct_option_label": "A",
+            "explanation": "The radical materialist Cārvāka school accepts only direct sensory perception (Pratyakṣa) as a valid source of knowledge, rejecting inference (Anumāna) and verbal testimony (Śabda).",
+            "module": 2
+        },
+        {
+            "question_id": "4",
+            "question_text": "Which of the following lists the pañca‑lakṣaṇas (five characteristics) that the lecture identifies as required for a text to be called a Mahāpurāṇa?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sarga; Prati-sarga; Vaṃśa; Manvantara; Itihāsa",
+                "B": "Sarga; Prati-sarga; Vaṃśa; Manvantara; Sthala-puranas",
+                "C": "Sarga; Upa-sarga; Vaṃśa; Manvantara; Upapurāṇa",
+                "D": "Sarga; Prati-sarga; Vaṃśa; Manvantara; Vaṃśānucarita"
+            },
+            "correct_option_label": "D",
+            "explanation": "The five characteristics of a classical Purāṇa (Pañca-lakṣaṇa) are: Sarga (creation), Prati-sarga (recreation), Vaṃśa (genealogy of gods/sages), Manvantara (cosmic epochs of Manu), and Vaṃśānucarita (dynastic histories).",
+            "module": 4
+        },
+        {
+            "question_id": "33",
+            "question_text": "The oral transmission of Indian Knowledge Systems shaped textual strategies. Which consequence best evaluates that uniqueness?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A preference for very long prose treatises to record every ritual detail",
+                "B": "Conciseness through verses, sutras and mnemonics to enable memorization and preserve knowledge orally",
+                "C": "A drift toward unstructured speech without fixed meters or phonetic rules",
+                "D": "A primary reliance on printed commentaries instead of oral methods"
+            },
+            "correct_option_label": "B",
+            "explanation": "To facilitate perfect oral transmission without corruption, ancient Indian texts utilized highly concise forms such as verses (shlokas), aphorisms (sutras), and mnemonic codes.",
+            "module": 1
+        },
+        {
+            "question_id": "39",
+            "question_text": "Which Vedāntic school teaches that individual souls are parts of Brahman and prescribes both devotional bhakti and total surrender (prapatti) as methods to attain moksha?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Dvaita Vedanta (complete difference with hierarchical devotion)",
+                "B": "Viśiṣṭādvaita (part–whole theism emphasizing bhakti and prapatti)",
+                "C": "Advaita Vedanta (identity of Jiva and Brahman)",
+                "D": "Pūrva-Mīmāṃsā (ritual performance as path to punya)"
+            },
+            "correct_option_label": "B",
+            "explanation": "Viśiṣṭādvaita (qualified non-dualism), as promulgated by Rāmānujācārya, teaches that the Jīvas are real parts of Brahman (organic relation) and advocates Bhakti and Prapatti (complete surrender) for achieving liberation.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "Using the Kāṭapayādi rules given in the course, which numeral is encoded by the word 'abhavat'?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "466",
+                "B": "644",
+                "C": "440",
+                "D": "446"
+            },
+            "correct_option_label": "C",
+            "explanation": "Under the Kāṭapayādi system, the vowels alone represent $0$, consonants without a vowel (like halant 't' at the end) are ignored, and letters correspond to numbers: 'bha' = $4$, 'va' = $4$, 'a' at start = $0$. This yields $0, 4, 4$ from left to right. Reversing this sequence gives $440$.",
+            "module": 5
+        },
+        {
+            "question_id": "6",
+            "question_text": "Which statement about the Grand Anicut (Kallanai) is supported by the watershed management lecture?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It was erected by Emperor Ashoka in the 3rd century BCE as part of a road network.",
+                "B": "It is a decorative stepwell in western India primarily used for ritual bathing and storage.",
+                "C": "It was built on the River Kaveri by the Chola king Karikalan and is the world’s oldest dam still in use.",
+                "D": "It was constructed in the Gupta period as a palace reservoir and later adapted for irrigation."
+            },
+            "correct_option_label": "C",
+            "explanation": "The Grand Anicut (Kallanai) was built across the Kaveri River in Tamil Nadu by Chola King Karikalan in the 1st century CE and is celebrated as the world's oldest functional dam still in use.",
+            "module": 6
+        },
+        {
+            "question_id": "13",
+            "question_text": "According to the Vishnudharmottara Purana cited in the dyes and painting lecture, which set lists the basic colours used to generate many shades?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "White, Red, Yellow, Black and Blue",
+                "B": "Cyan, Magenta, Yellow and Black",
+                "C": "White, Green, Brown, Indigo and Gold",
+                "D": "Red, Green and Blue"
+            },
+            "correct_option_label": "A",
+            "explanation": "The *Viṣṇudharmottara Purāṇa* specifies five primary or basic colors (pañca-varṇa): White (Śveta), Red (Rakta), Yellow (Pīta), Black (Kṛṣṇa), and Blue (Nīla), from which all other shades are mixed.",
+            "module": 6
+        },
+        {
+            "question_id": "36",
+            "question_text": "Which of the following describes a defining property of a 4×4 Pan‑diagonal (Sarvatobhadra) magic square as presented in the course?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Each row is a cyclic permutation of the first row",
+                "B": "All rows and columns sum to the magic constant but diagonals may differ",
+                "C": "Every 2×2 subsquare formed by consecutive rows and columns sums to the magic constant",
+                "D": "Only the two main diagonals sum to the magic constant while 2×2 subsquares need not"
+            },
+            "correct_option_label": "C",
+            "explanation": "A pan-diagonal or *Sarvatobhadra* magic square has the unique property where not only do the rows, columns, and main diagonals sum to the magic constant, but every $2 \\times 2$ sub-square formed by consecutive rows and columns also sums to the same magic constant.",
+            "module": 5
+        },
+        {
+            "question_id": "48",
+            "question_text": "In Ayurvedic tri‑dosha theory from the lectures, which two elements compose Pitta?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Air and Space",
+                "B": "Fire (Agni) and Water",
+                "C": "Water and Earth",
+                "D": "Fire and Earth"
+            },
+            "correct_option_label": "B",
+            "explanation": "In Ayurvedic Tri-dosha theory, Pitta is governed by the elements of Fire (Agni) and Water (Ap/Jala), representing metabolic and thermal functions.",
+            "module": 8
+        },
+        {
+            "question_id": "40",
+            "question_text": "How would a Panini-informed NLP system most reliably extract actor–action–object (karaka) relations from the sentence 'balaḥ vṛkṣasya phalam khādati'?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Translate the sentence into English and parse using English grammar",
+                "B": "Use only statistical co‑occurrence without morphological analysis",
+                "C": "Dismantle inflected forms to their roots and use case endings (karakas) to link participants to the verb",
+                "D": "Rely on fixed word‑order patterns to assign subject and object roles"
+            },
+            "correct_option_label": "C",
+            "explanation": "A Pāṇinian NLP system uses the Kārakas (case endings) of highly inflected Sanskrit words to establish the precise semantic relationships between nouns and the verb (action), independent of word order.",
+            "module": 3
+        },
+        {
+            "question_id": "37",
+            "question_text": "The surgical techniques lecture summarizes Sushruta's instrument inventory (101 blunt, 20 sharp). What conclusion about ancient surgical practice is best supported by that description?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Surgery relied on only a few universal tools and was largely informal",
+                "B": "Most medical procedures avoided instruments and were noninvasive",
+                "C": "Surgical care was performed only by untrained barbers without ethical codes",
+                "D": "Surgical practice used a broad, systematized clinical approach with many specialized instruments and formal training"
+            },
+            "correct_option_label": "D",
+            "explanation": "Suśruta's comprehensive inventory of 101 blunt and 20 sharp surgical instruments demonstrates that ancient Indian surgery (Śalya-tantra) was highly systematic, specialized, and professionally organized.",
+            "module": 6
+        },
+        {
+            "question_id": "2",
+            "question_text": "Which description best captures the broader Vedic meaning of yajna as explained in the Vedic living material?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A ritual fire offering performed by priests at an altar",
+                "B": "A grand principle of give-and-take that supports social sustainability",
+                "C": "A prescription for strict renunciation of material prosperity",
+                "D": "Worship directed exclusively to later Puranic deities such as Vishnu or Shiva"
+            },
+            "correct_option_label": "B",
+            "explanation": "Beyond the fire ritual, Yajna represents the cosmic and social principle of mutual exchange, ecological balance, and social sustainability (give-and-take).",
+            "module": 1
+        },
+        {
+            "question_id": "10",
+            "question_text": "Which statement best captures the Jaina doctrine of Syād‑vāda (the standpoint theory)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Knowledge comes solely from scripture and tradition",
+                "B": "Reality is plural and each claim is valid from a particular standpoint",
+                "C": "Only one entity exists and multiplicity is illusion",
+                "D": "Truth is absolute and identical for all observers"
+            },
+            "correct_option_label": "B",
+            "explanation": "Syādvāda (or Anekāntavāda) asserts that truth and reality are complex and multifaceted, meaning any single claim is relative and only valid from a specific standpoint or perspective.",
+            "module": 2
+        },
+        {
+            "question_id": "12",
+            "question_text": "In the Nyāya account of Anumāna, what is the role of the term 'vyāpti'?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An invariable concomitance between the observed hetu and the sādhyā that permits valid inference",
+                "B": "A temporal sequence in which one cognition follows another",
+                "C": "Authoritative testimony from a reliable teacher used as evidence",
+                "D": "A superficial similarity used for poetic comparison in Upamāna"
+            },
+            "correct_option_label": "A",
+            "explanation": "Vyāpti represents the relation of invariable concomitance (universal association) between the middle term (hetu/reason) and the major term (sādhya/thesis) that underpins all valid logical inference.",
+            "module": 4
+        },
+        {
+            "question_id": "47",
+            "question_text": "Which metallurgical property of zinc led ancient Indian metallurgists to use a downward‑drift distillation method to obtain metallic zinc?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Zinc remains liquid at normal atmospheric temperature and must be solidified",
+                "B": "Zinc has a very high melting point near 1,538oC requiring extreme furnaces",
+                "C": "Zinc oxidizes to ZnO in air at about 550oC, so vapor must be rapidly condensed",
+                "D": "Zinc spontaneously forms stable alloys with charcoal at room temperature"
+            },
+            "correct_option_label": "C",
+            "explanation": "Zinc vaporizes at $930^\\circ\\text{C}$ but oxidizes instantly into zinc oxide (ZnO) at $550^\\circ\\text{C}$ if exposed to air. Therefore, ancient metallurgists designed downward-drift distillation to condense zinc vapor rapidly in a reducing, closed environment.",
+            "module": 6
+        },
+        {
+            "question_id": "45",
+            "question_text": "A student repeatedly yawns in daytime classes despite sufficient nighttime sleep. According to the lecture on sleep and doṣas, which doṣa may underlie unwanted daytime yawning?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Vāta — producing restlessness and insomnia",
+                "B": "Pitta — producing unwanted daytime sleepiness and yawning",
+                "C": "Kapha — producing natural heaviness and increased sleep need",
+                "D": "Tamas — causing only deep nocturnal sleep and inertia"
+            },
+            "correct_option_label": "B",
+            "explanation": "While Kapha increases overall sleepiness and heaviness, Pitta imbalance is specifically associated with daytime sleepiness and chronic yawning in those who get sufficient nocturnal sleep.",
+            "module": 8
+        },
+        {
+            "question_id": "8",
+            "question_text": "Which of the following lists correctly names the six Vedangas identified as auxiliary disciplines necessary for understanding the Vedas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Siksha, Vyakarana, Nirukta, Chandas, Kalpa, Jyotisha",
+                "B": "Siksha, Sulba, Nirukta, Chandas, Grihya, Jyotisha",
+                "C": "Chandas, Kalpa, Jyotisha, Mimamsa, Nyaya, Sulba",
+                "D": "Vyakarana, Nirukta, Sulba, Kalpa, Jyotisha, Upavedas"
+            },
+            "correct_option_label": "A",
+            "explanation": "The six Vedāṅgas (auxiliary limbs) are: Śikṣā (phonetics), Vyākaraṇa (grammar), Nirukta (etymology), Chandas (metrics), Kalpa (rituals), and Jyotiṣa (astronomy).",
+            "module": 1
+        },
+        {
+            "question_id": "44",
+            "question_text": "Given the described discontinuities in indigenous Science and Technology, which first‑step approach does the lecturer recommend to begin recovering lost techniques?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rapidly replacing traditional crafts with large‑scale industrial imports",
+                "B": "Field study of surviving structures and reverse‑engineering practices from living evidences and manuscripts",
+                "C": "Relying exclusively on modern textbooks and imported engineering standards",
+                "D": "Privatizing all artisan guilds and ceasing community knowledge collection"
+            },
+            "correct_option_label": "B",
+            "explanation": "To recover lost traditional technologies, the primary recommended step is conducting field studies of surviving historical monuments/artifacts and reverse-engineering the practices described in available manuscripts.",
+            "module": 6
+        },
+        {
+            "question_id": "5",
+            "question_text": "Which four Pramāṇas does the Nyāya account list as legitimate means of knowledge?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Perception (Pratyakṣa), Inference (Anumāna), Comparison (Upamāna), Testimony (Śabda)",
+                "B": "Inference (Anumāna), Analogy (Rūpa), Testimony (Śabda), Sense-doubt (Saṃśaya)",
+                "C": "Perception (Pratyakṣa), Inference (Anumāna), Memory (Smṛti), Testimony (Śabda)",
+                "D": "Perception (Pratyakṣa), Comparison (Upamāna), Direct revelation (Pratyabhijñā), Testimony (Śabda)"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Nyāya school recognizes exactly four valid sources of knowledge (pramāṇas): Pratyakṣa (perception), Anumāna (inference), Upamāna (comparison), and Śabda (verbal testimony).",
+            "module": 4
+        },
+        {
+            "question_id": "28",
+            "question_text": "Using the lamp‑post/shanku shadow method (derived by similar triangles) with EB = EF × AE / (AC − EF): a lamp post of height AC = 10 m and a shanku of height EF = 2 m placed AE = 20 m from the post produce a shadow EB. Compute EB.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "5 m",
+                "B": "10 m",
+                "C": "4 m",
+                "D": "2.5 m"
+            },
+            "correct_option_label": "A",
+            "explanation": "Based on similar triangles, substituting the given values into the formula yields:\n$$\\text{EB} = \\frac{\\text{EF} \\times \\text{AE}}{\\text{AC} - \\text{EF}} = \\frac{2 \\times 20}{10 - 2} = \\frac{40}{8} = 5\\text{ m}$$",
+            "module": 5
+        },
+        {
+            "question_id": "32",
+            "question_text": "A patient has chronic constipation from retained Vāta‑related toxins in the bowels. According to the Pancha‑karma principles taught, which procedure directly targets bowel cleansing for this condition?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Nasyā (nasal administration) to clear the head and sinuses",
+                "B": "Śirodhāra (continuous oil poured on the head) to calm the mind",
+                "C": "Basti (medicated enema) to cleanse the bowels",
+                "D": "External massage of vital points only for systemic relaxation"
+            },
+            "correct_option_label": "C",
+            "explanation": "Basti (medicated enema) is the primary Pañcakarma therapy used to eliminate vitiated Vāta and accumulated toxins directly from the colon (the primary seat of Vāta).",
+            "module": 8
+        },
+        {
+            "question_id": "23",
+            "question_text": "Within the context of Arthashastra, how is the term 'artha' best understood?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Purely as monetary wealth held by the king",
+                "B": "As military power gained by conquest of neighbours",
+                "C": "As exclusively religious merit obtained by royal ritual",
+                "D": "As means to satisfy material requirements and to ensure societal well‑being through management of the earth's resources"
+            },
+            "correct_option_label": "D",
+            "explanation": "In the *Arthaśāstra*, 'artha' represents the livelihood of people, the territory they inhabit, and the proactive administration of earthly resources to ensure collective material security and societal well-being.",
+            "module": 7
+        },
+        {
+            "question_id": "49",
+            "question_text": "Which policy action by the British Raj is cited in the course as a likely contributor to the decline of Indian wootz steel production?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Nationalization of all small furnaces into state factories",
+                "B": "Introduction of production taxes and mining bans",
+                "C": "Strict prohibition on all metalworking guilds",
+                "D": "Mandating export quotas for wootz steel"
+            },
+            "correct_option_label": "B",
+            "explanation": "Heavy colonial tax policies on local furnaces and strict bans on mining (such as the Arms Act and forest bans) dismantled the indigenous metallurgical ecosystem, leading to the collapse of Wootz steel production.",
+            "module": 6
+        },
+        {
+            "question_id": "46",
+            "question_text": "According to the Paninian mnemonic iko yan‑aci, what transformation occurs when combining 'prati' + 'ekam'?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Prevent any sandhi and keep the two words fully separate",
+                "B": "Swap the initial consonants of the two words before joining",
+                "C": "Replace final 'i' of prati with 'e' and insert 'y', yielding 'pratyekam'",
+                "D": "Delete the vowel of the second word and concatenate without insertion"
+            },
+            "correct_option_label": "C",
+            "explanation": "The rule \"iko yaṇ-aci\" governs Yaṇ Sandhi. When the vowel 'i' is followed by a dissimilar vowel (like 'e' in 'ekam'), the 'i' is replaced by the semivowel 'y', yielding 'pratyekam'.",
+            "module": 3
+        },
+        {
+            "question_id": "11",
+            "question_text": "According to the lecture's summary of the Bhagavata-Purāṇa and related Purāṇas, when does the mother first begin to feel fetal movement?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Third month",
+                "B": "Eighth month",
+                "C": "Sixth month",
+                "D": "Fifth month"
+            },
+            "correct_option_label": "C",
+            "explanation": "The *Bhāgavata Purāṇa* and related texts describe fetal development, noting that the mother begins to feel fetal movement during the sixth month of gestation.",
+            "module": 4
+        },
+        {
+            "question_id": "29",
+            "question_text": "Using the Panchanga tithi calculation: if Moon longitude = 60°12' and Sun longitude = 19°07', which tithi (counting from new moon) is the current instant?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Third tithi (Tritiya)",
+                "B": "Fifteenth tithi (Purnima)",
+                "C": "First tithi (Pratipada)",
+                "D": "Fourth tithi (Chaturthi)"
+            },
+            "correct_option_label": "D",
+            "explanation": "A Tithi corresponds to every $12^\\circ$ of angular separation between the Moon and the Sun. The difference in longitude is $60^\\circ 12' - 19^\\circ 07' = 41^\\circ 05'$. Dividing by $12^\\circ$ yields $\\approx 3.42$, which falls in the 4th interval ($36^\\circ$ to $48^\\circ$), corresponding to Chaturthi (the fourth tithi).",
+            "module": 5
+        },
+        {
+            "question_id": "25",
+            "question_text": "How does the Brahmana portion of Vedic literature differ from the Aranyaka portion?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Brahmana records musical settings for mantras; Aranyaka lists practical altar construction rules",
+                "B": "Brahmana provides detailed procedural instructions for rituals in prose; Aranyaka explains the rituals' symbolism and philosophical meaning",
+                "C": "Brahmana contains later philosophical treatises; Aranyaka is an index of rare words and synonyms",
+                "D": "Brahmana focuses on household ceremonies; Aranyaka is exclusively about astronomy"
+            },
+            "correct_option_label": "B",
+            "explanation": "Brāhmaṇas are prose manuals providing \"standard operating procedures\" and structural guidelines for performing rituals, whereas Āraṇyakas dwell on the esoteric symbolism and philosophical underpinnings of those rituals.",
+            "module": 1
+        },
+        {
+            "question_id": "14",
+            "question_text": "Why does Kautilya emphasize that the sequence swami–amatya–janapada–durga–kosha–danda–mitra should not be disturbed?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because the sequence maps to social hierarchy among groups",
+                "B": "Because the order reflects chronological stages of state formation",
+                "C": "Because the order prescribes ritual duties to be performed in sequence",
+                "D": "Because earlier elements are more important and later elements depend on them"
+            },
+            "correct_option_label": "D",
+            "explanation": "The seven elements (Sapta Prakriti) are listed in descending order of priority. Earlier elements are more vital and foundational to the survival and stability of the state, with subsequent elements depending on them.",
+            "module": 7
+        },
+        {
+            "question_id": "9",
+            "question_text": "Which three terms form the standard background context for Indian philosophical inquiry (Darshana)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Perception, Inference, Testimony",
+                "B": "Jiva (self), Jagat (world), Ishvara (divine)",
+                "C": "Atman (soul), Dharma (duty), Moksha (liberation)",
+                "D": "Karma (action), Samsara (cycle), Maya (illusion)"
+            },
+            "correct_option_label": "B",
+            "explanation": "Classical Darśana (Indian philosophy) centers its metaphysical and ontological inquiry around the triadic relationship between Jīva (the individual self), Jagat (the material world), and Īśvara (the divine or supreme reality).",
+            "module": 2
+        },
+        {
+            "question_id": "19",
+            "question_text": "Which Itihāsa does the lecture present as adopting a normative approach that models ideal characters who consult counsel and prioritise duty?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Bhagavata Purana (devotional and genealogical)",
+                "B": "Panchatantra (didactic animal fables)",
+                "C": "Mahabharata (descriptive, dilemma‑centred)",
+                "D": "Ramayana (normative, duty‑centred)"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Rāmāyaṇa is characterized as normative because it depicts ideal models of conduct (such as Rāma prioritizing his duties and righteousness as a ruler and son), unlike the descriptive and dilemma-centric narrative of the Mahābhārata.",
+            "module": 4
+        }
+    ]
+}

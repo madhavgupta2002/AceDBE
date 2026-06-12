@@ -1,0 +1,360 @@
+{
+    "exam_metadata": {
+        "subject_name": "Management Accounting",
+        "exam_date": "23 May 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "Find the raw material consumed during the period from the following information: Raw Material opening stock Rs.5000; Raw Material Purchased during the period Rs. 15000; Closing Raw Material Rs. 3000; Factory Labour Rs. 5000; Other Factory Expenses Rs. 6000; Opening WIP Rs. 3000; Closing WIP Rs. 2000; Selling and Distribution Expenses Rs. 5000; Admin Exp. Rs. 2000",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs.12,000",
+                "B": "Rs.23,000",
+                "C": "Rs.19,000",
+                "D": "Rs.17,000"
+            },
+            "correct_option_label": "D",
+            "explanation": "Raw Material Consumed is calculated as:\n$$\\text{Raw Material Consumed} = \\text{Opening Stock} + \\text{Purchases} - \\text{Closing Stock}$$\n$$\\text{Raw Material Consumed} = 5,000 + 15,000 - 3,000 = \\text{Rs. } 17,000$$",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Find the Cost of Goods Manufactured during the period from the following information: Raw Material opening stock Rs.5000; Raw Material Purchased during the period Rs. 15000; Closing Raw Material Rs. 3000; Factory Labour Rs. 5000; Other Factory Expenses Rs. 6000; Opening WIP Rs. 3000; Closing WIP Rs. 2000; Selling and Distribution Expenses Rs. 5000; Admin Exp. Rs. 2000.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs.22,000",
+                "B": "Rs.24,000",
+                "C": "Rs.29,000",
+                "D": "Rs.17,000"
+            },
+            "correct_option_label": "C",
+            "explanation": "Cost of Goods Manufactured (COGM) is calculated as:\n1. $\\text{Raw Material Consumed} = 5,000 + 15,000 - 3,000 = 17,000$\n2. $\\text{Total Manufacturing Costs} = \\text{Raw Materials Consumed} + \\text{Factory Labour} + \\text{Other Factory Expenses} = 17,000 + 5,000 + 6,000 = 28,000$\n3. $\\text{COGM} = \\text{Total Manufacturing Costs} + \\text{Opening WIP} - \\text{Closing WIP} = 28,000 + 3,000 - 2,000 = \\text{Rs. } 29,000$.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "A client of Star Carpentary asked to give a quote to produce 50 units of Chairs. The Cost Accountant estimates the following expenses: Wood Rs. 75,000; Rubber Rs.5,000; Paint and other material Rs. 25,000; Direct Labour Rs. 40,000; Factory supervisor's salary Rs. 10,000; Allocated Administrative overhead Rs. 1,000; Transport Expense Rs. 10,000; Quality inspection cost Rs.5,000. Find the cost per unit of Chair.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs.3,100",
+                "B": "Rs.3,420",
+                "C": "Rs.3,300",
+                "D": "Rs.1,310"
+            },
+            "correct_option_label": "B",
+            "explanation": "Total estimated costs are calculated as:\n$$\\text{Total Cost} = 75,000 \\text{ (Wood)} + 5,000 \\text{ (Rubber)} + 25,000 \\text{ (Paint)} + 40,000 \\text{ (Labour)} + 10,000 \\text{ (Supervisor)} + 1,000 \\text{ (Admin)} + 10,000 \\text{ (Transport)} + 5,000 \\text{ (Quality)} = \\text{Rs. } 171,000$$\n$$\\text{Cost per unit} = \\frac{171,000}{50} = \\text{Rs. } 3,420$$",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "Find the Prime cost from the following information: Material Consumed Rs. 100,000; Direct Labour Rs. 40,000; Factory Overhead Rs. 20,000; Advertisement Rs. 5000; Selling and Distribution Rs. 20,000; Salary to Accounts team Rs. 25,000, Wages to the factory supervisor Rs. 10,000.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs.140,000",
+                "B": "Rs.2,15,000",
+                "C": "Rs. 2,20,000",
+                "D": "Rs. 70,000"
+            },
+            "correct_option_label": "A",
+            "explanation": "Prime cost is the sum of direct materials and direct labour:\n$$\\text{Prime Cost} = \\text{Material Consumed} + \\text{Direct Labour} = 100,000 + 40,000 = \\text{Rs. } 140,000$$\nOther expenses like factory supervisor wages, selling, and administrative expenses are indirect costs/period costs and are excluded.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "Find the conversion cost from the following information: Material Consumed Rs. 100,000; Direct Labour Rs. 40,000; Factory Power Rs. 15,000; Factory Insurance Rs. 5,000; Factory Machine Repairs and Maintenance Rs. 10000; Advertisement Rs. 5000; Selling and Distribution Rs. 20,000; Salary to Accounts team Rs. 25,000,",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs.70,000",
+                "B": "Rs.170,000",
+                "C": "Rs. 90,000",
+                "D": "Rs. 95,000"
+            },
+            "correct_option_label": "A",
+            "explanation": "Conversion cost includes direct labour and manufacturing overheads:\n$$\\text{Manufacturing Overhead} = 15,000 \\text{ (Power)} + 5,000 \\text{ (Insurance)} + 10,000 \\text{ (Repairs)} = \\text{Rs. } 30,000$$\n$$\\text{Conversion Cost} = \\text{Direct Labour} + \\text{Manufacturing Overhead} = 40,000 + 30,000 = \\text{Rs. } 70,000$$",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "Charlie Limited's Budgeted Factory Overhead for the year was Rs. 150,000; The budgeted Machine hour is 1,000 hours for the year. The factory worked for 900 hours and incurred a factory overhead of Rs. 1,40,000. Find the under-recovery or over-recovery of Factory Overhead for the year.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs.16,000 under- recovery",
+                "B": "Rs.16,000 over- recovery",
+                "C": "Rs.5,000 over- recovery",
+                "D": "Rs.5,000 under- recovery"
+            },
+            "correct_option_label": "D",
+            "explanation": "1. $\\text{Budgeted Overhead Rate} = \\frac{150,000}{1,000} = \\text{Rs. } 150 \\text{ per hour}$.\n2. $\\text{Overhead Recovered (Applied)} = 900 \\text{ actual hours} \\times 150 = \\text{Rs. } 135,000$.\n3. $\\text{Under-recovery} = \\text{Actual Overhead} - \\text{Overhead Recovered} = 140,000 - 135,000 = \\text{Rs. } 5,000 \\text{ under-recovery}$.",
+            "module": 2
+        },
+        {
+            "question_id": "7",
+            "question_text": "Compute the cost per Equivalent Unit for the conversion cost from the information given below: Conversion Cost in Opening WIP: Rs. 8500; Conversion cost incurred during the period: Rs. 20,000; Opening WIP Units (70% completed on conversion cost): 100 units; New Units introduced during the period: 3000 units; Closing WIP: 500 units (50% completed on conversion cost). Use Weighted Average Method.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "10",
+                "B": "6",
+                "C": "15",
+                "D": "12"
+            },
+            "correct_option_label": "A",
+            "explanation": "Using the Weighted Average Method:\n1. $\\text{Units Completed and Transferred Out} = \\text{Opening WIP} + \\text{New Units} - \\text{Closing WIP} = 100 + 3,000 - 500 = 2,600 \\text{ units}$.\n2. $\\text{Equivalent Units for Conversion Cost} = (2,600 \\times 100\\%) + (500 \\times 50\\%) = 2,600 + 250 = 2,850 \\text{ units}$.\n3. $\\text{Total Conversion Cost} = \\text{Opening WIP Cost} + \\text{Current Cost} = 8,500 + 20,000 = \\text{Rs. } 28,500$.\n4. $\\text{Cost per Equivalent Unit} = \\frac{28,500}{2,850} = \\text{Rs. } 10$.",
+            "module": 2
+        },
+        {
+            "question_id": "8",
+            "question_text": "Which one of the following is the most appropriate cost driver for the Purchase department of a multi-product company which procures differnet kinds of material?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Value of Material purchased",
+                "B": "Machine hours",
+                "C": "Number of Purchase Orders",
+                "D": "Quantity of Material purchased"
+            },
+            "correct_option_label": "C",
+            "explanation": "In activity-based costing, the cost of the purchasing department is driven by the transactional work involved in executing purchases, which is directly related to the number of purchase orders processed.",
+            "module": 2
+        },
+        {
+            "question_id": "9",
+            "question_text": "Break-even Point in Units is Equal to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Fixed Cost/Selling price per unit",
+                "B": "Fixed Cost x (Selling price per unit - Variable Cost per unit)",
+                "C": "Fixed Cost/(Selling price per unit - Variable Cost per unit)",
+                "D": "(Sales-Variable Cost)/Fixed Cost"
+            },
+            "correct_option_label": "C",
+            "explanation": "The break-even point in units represents the quantity of sales required to cover all fixed costs. It is calculated by dividing the total fixed costs by the contribution margin per unit (Selling price per unit - Variable cost per unit).",
+            "module": 3
+        },
+        {
+            "question_id": "10",
+            "question_text": "J P Chemicals’s inventory at the end of the period consists of 7000 units. 100% of material is supplied at the beginning of the period. However, Henry, the production manager estimates that these units are only 70% complete with respect to direct labour and production overhead. The cost per equivalent unit is Rs. 30 for material and Rs. 90 for conversion costs. What is the value of closing WIP?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "6,51,000",
+                "B": "4,41,000",
+                "C": "6,30,000",
+                "D": "8,40,000"
+            },
+            "correct_option_label": "A",
+            "explanation": "The valuation of closing WIP is calculated as follows:\n$$\\text{Material Cost} = 7,000 \\text{ units} \\times 100\\% \\times \\text{Rs. } 30 = \\text{Rs. } 210,000$$\n$$\\text{Conversion Cost} = 7,000 \\text{ units} \\times 70\\% \\times \\text{Rs. } 90 = 4,900 \\text{ equivalent units} \\times 90 = \\text{Rs. } 441,000$$\n$$\\text{Total WIP Value} = 210,000 + 441,000 = \\text{Rs. } 651,000$$",
+            "module": 2
+        },
+        {
+            "question_id": "11",
+            "question_text": "Abnormal spoilage",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Is considered for the determination of Product cost.",
+                "B": "Affects both the product cost and the period cost",
+                "C": "Part of conversion cost",
+                "D": "Is expensed separately as a period expense"
+            },
+            "correct_option_label": "D",
+            "explanation": "Abnormal spoilage is caused by unexpected and avoidable inefficiency. Rather than being loaded into product inventory costs, it is written off directly to the profit and loss statement as a period expense.",
+            "module": 2
+        },
+        {
+            "question_id": "12",
+            "question_text": "Cost of Goods Sold is equal to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Opening stock of Finished Goods + Cost of Goods Manufactured during the period - Closing stock of Finished Goods",
+                "B": "Beginning W.I.P. less period cost + Manufacturing Cost less indirect cost applied – Ending W.I.P",
+                "C": "Beginning W.I.P. + Direct material consumed during the period + Conversion cost for the current period – Ending W.I.P",
+                "D": "Beginning W.I.P. + Manufacturing Cost less indirect cost applied – Ending W.I.P"
+            },
+            "correct_option_label": "A",
+            "explanation": "The standard cost flow equation for the cost of goods sold (COGS) is: \n$$\\text{COGS} = \\text{Opening Finished Goods} + \\text{Cost of Goods Manufactured} - \\text{Closing Finished Goods}$$",
+            "module": 1
+        },
+        {
+            "question_id": "13",
+            "question_text": "Products incidental to the manufacture of main product are called _______.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "By-products",
+                "B": "Both (a) and (b)",
+                "C": "Joint-products",
+                "D": "Neither (a) nor (b)"
+            },
+            "correct_option_label": "A",
+            "explanation": "Secondary products with relatively minor economic value that are generated incidentally from the common process of manufacturing a main product are classified as by-products.",
+            "module": 2
+        },
+        {
+            "question_id": "14",
+            "question_text": "The VP of operations, wants to know the break-even point for one of the electronic product manufactured and sold by his company ABC Corp. From the information supplied to you calculate how many units of the product must be sold to break-even in a given month? Selling Price per unit $ 200; Variable costs are estimated to be $ 90 per unit; total fixed cost are estimated to be $ 154,000 per month.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1540 units",
+                "B": "1300 units",
+                "C": "1364 units",
+                "D": "1400 units"
+            },
+            "correct_option_label": "D",
+            "explanation": "Break-even point in units is calculated as:\n$$\\text{Contribution per unit} = \\text{Selling Price} - \\text{Variable Cost} = 200 - 90 = \\$110$$\n$$\\text{Break-even Units} = \\frac{\\text{Fixed Cost}}{\\text{Contribution per unit}} = \\frac{154,000}{110} = 1,400 \\text{ units}$$",
+            "module": 3
+        },
+        {
+            "question_id": "15",
+            "question_text": "The management of an entity wants to earn a target profit of Rs.50,000 per month. Use the following information to calculate its sales value in a month to achieve the required profit target. Selling price Rs.250; Varibale cost Rs.150; Total Fixed cost Rs. 200,000 per month.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "5,50,000",
+                "B": "4,40,000",
+                "C": "6,25,000",
+                "D": "7,00,000"
+            },
+            "correct_option_label": "C",
+            "explanation": "Target sales value is calculated using the Contribution Margin Ratio (CMR):\n$$\\text{CMR} = \\frac{\\text{Selling Price} - \\text{Variable Cost}}{\\text{Selling Price}} = \\frac{250 - 150}{250} = 0.40$$\n$$\\text{Target Sales Value} = \\frac{\\text{Fixed Cost} + \\text{Target Profit}}{\\text{CMR}} = \\frac{200,000 + 50,000}{0.40} = \\text{Rs. } 6,25,000$$",
+            "module": 3
+        },
+        {
+            "question_id": "16",
+            "question_text": "Assume Cost-Volume-Profit relationship remains same during two periods. Period 1 sales is Rs. 1000 and Period 2 sales is Rs. 1400. Period 1 profit is Rs. 400 and Period 2 profit is Rs. 600. Find the Break-even sales.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 600",
+                "B": "Rs. 280",
+                "C": "Rs. 200",
+                "D": "Rs. 500"
+            },
+            "correct_option_label": "C",
+            "explanation": "1. $\\text{PV Ratio} = \\frac{\\text{Change in Profit}}{\\text{Change in Sales}} = \\frac{600 - 400}{1,400 - 1,000} = \\frac{200}{400} = 50\\%$.\n2. $\\text{Fixed Cost} = (\\text{Sales} \\times \\text{PV Ratio}) - \\text{Profit} = (1,000 \\times 0.50) - 400 = \\text{Rs. } 100$.\n3. $\\text{Break-even Sales} = \\frac{\\text{Fixed Cost}}{\\text{PV Ratio}} = \\frac{100}{0.50} = \\text{Rs. } 200$.",
+            "module": 3
+        },
+        {
+            "question_id": "17",
+            "question_text": "Zenith Appliances Ltd. provides the following information for the current year: Break-even Sales Rs. 15 lakhs; Budgeted Sales Rs. 150 lakhs; Actual Sales Rs. 135 lakhs; Actual Profit Rs. 45 lakhs. Calculate the Margin of Safety.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 120 lakhs",
+                "B": "Rs. 105 lakhs",
+                "C": "Rs. 135 lakhs",
+                "D": "Rs. 45 lakhs."
+            },
+            "correct_option_label": "A",
+            "explanation": "Margin of Safety (MOS) in terms of sales value is computed as:\n$$\\text{MOS} = \\text{Actual Sales} - \\text{Break-even Sales} = 135 \\text{ lakhs} - 15 \\text{ lakhs} = \\text{Rs. } 120 \\text{ lakhs}$$",
+            "module": 3
+        },
+        {
+            "question_id": "18",
+            "question_text": "Orion Manufacturing Ltd. is preparing its budget for the next year and wants to increase its profit from the current Rs. 24,000 to Rs. 36,000. The current selling price per unit is Rs. 15 and the company sells 6,000 units. The variable cost per unit is Rs. 7 and fixed cost amounts to Rs. 30,000. The estimated sales quantity for the next year is expected to remain at 6,000 units. At what price per unit should the company sell its product in order to achieve the target profit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs.22",
+                "B": "Rs 50",
+                "C": "Rs.18",
+                "D": "Rs.20"
+            },
+            "correct_option_label": "C",
+            "explanation": "To achieve the target profit:\n$$\\text{Total Required Revenue} = \\text{Variable Cost} + \\text{Fixed Cost} + \\text{Target Profit}$$\n$$\\text{Variable Cost} = 6,000 \\text{ units} \\times \\text{Rs. } 7 = \\text{Rs. } 42,000$$\n$$\\text{Total Required Revenue} = 42,000 + 30,000 + 36,000 = \\text{Rs. } 108,000$$\n$$\\text{Required Selling Price per unit} = \\frac{108,000}{6,000} = \\text{Rs. } 18$$",
+            "module": 3
+        },
+        {
+            "question_id": "19",
+            "question_text": "Mars Corporation produces five electronic products using the same equipment and has 20,000 surplus machine hours available after meeting regular demand. A special export order is received for 4,000 units of Product X at a selling price of Rs. 90 per unit. The variable cost per unit is Rs. 60 and each unit requires 3 machine hours. Fixed Machine costs per hour is Rs. 15 and it will not change. Should Mars Corporation accept the special order?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reject because accepting the order will increase fixed costs per unit.",
+                "B": "Accept because the company must allocate fixed costs to all units produced.",
+                "C": "Reject because total cost per unit including fixed cost exceeds the special order price.",
+                "D": "Accept because incremental revenue exceeds incremental cost"
+            },
+            "correct_option_label": "D",
+            "explanation": "Since there is surplus capacity (20,000 hours available, only 12,000 needed), fixed costs will not change and are irrelevant. The decision depends on contribution margin:\n$$\\text{Incremental Contribution per unit} = \\text{Selling Price} - \\text{Variable Cost} = 90 - 60 = \\text{Rs. } 30 \\text{ per unit}$$\nSince the incremental contribution is positive, the special order should be accepted.",
+            "module": 3
+        },
+        {
+            "question_id": "20",
+            "question_text": "Two divisions of a company have the following Degrees of Operating Leverage: Division X has a DOL of 1.5 and Division Y has a DOL of 3.0. If sales are expected to decline by 10% next year, which division will experience a larger percentage decline in operating profit and by how much?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Division Y, with a 30% decline in profit.",
+                "B": "Division Y – 15% decline",
+                "C": "Both divisions – 10% decline",
+                "D": "Division X – 15% decline"
+            },
+            "correct_option_label": "A",
+            "explanation": "The change in operating profit is calculated as:\n$$\\text{Percentage Change in Operating Profit} = \\text{DOL} \\times \\text{Percentage Change in Sales}$$\nFor Division X: $1.5 \\times (-10\\%) = -15\\%$\nFor Division Y: $3.0 \\times (-10\\%) = -30\\%$\nDivision Y will experience a larger decline of 30%.",
+            "module": 3
+        },
+        {
+            "question_id": "21",
+            "question_text": "Beta Traders allows 20 days credit to its customers. The budgeted sales for April are Rs.9,00,000, and opening trade receivables on 1st April amount to Rs.3,60,000. Assuming sales occur evenly throughout the month and April has 30 days, how much cash will Beta Traders collect during April?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 900,000",
+                "B": "Rs.12,60,000",
+                "C": "Rs.300,000",
+                "D": "Rs. 6,60,000"
+            },
+            "correct_option_label": "D",
+            "explanation": "1. Sales occur at a rate of $\\frac{9,00,000}{30 \\text{ days}} = \\text{Rs. } 30,000 \\text{ per day}$.\n2. With a 20-day credit period, sales from the last 20 days of April (Rs. $30,000 \\times 20 = 6,00,000$) will be collected in May.\n3. Sales from the first 10 days of April (Rs. $30,000 \\times 10 = 3,00,000$) will be collected in April.\n4. Opening receivables of Rs. 3,60,000 represent March sales and will be fully collected in April.\n5. Total Cash Collected in April $= 3,60,000 + 3,00,000 = \\text{Rs. } 6,60,000$.",
+            "module": 4
+        },
+        {
+            "question_id": "22",
+            "question_text": "Salary to factory supervisor and Nightshift allowance are examples of _______.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Direct Labour cost",
+                "B": "Manufacturing Overhead",
+                "C": "Indirect Labour cost",
+                "D": "General and Administrative Cost"
+            },
+            "correct_option_label": "B",
+            "explanation": "Wages for supervisory roles and general allowances in the factory are indirect manufacturing costs. They cannot be directly traced to individual products, so they are grouped under Manufacturing Overhead.",
+            "module": 1
+        },
+        {
+            "question_id": "23",
+            "question_text": "A multi-specialty hospital performs three types of surgeries: general surgery, cardiac surgery, and orthopedic surgery. The hospital incurs significant sterilization department costs to clean and prepare surgical instruments. The sterilization time and effort vary depending on the type and complexity of surgery. What is the most appropriate basis for allocating sterilization department costs to each type of surgery?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Number of sterilization hours required for each category of surgery.",
+                "B": "Total surgery revenue earned from each category.",
+                "C": "Number of patients treated in each department.",
+                "D": "Square foot area occupoed by each deapartment."
+            },
+            "correct_option_label": "A",
+            "explanation": "The primary cost driver for the sterilization department's activity is the amount of time required to perform the sterilization task, making sterilization hours the most accurate allocation base.",
+            "module": 2
+        },
+        {
+            "question_id": "24",
+            "question_text": "Gamma Industries budgeted production of 2,000 units for April. Each unit requires 4 kg of raw material at a standard price of Rs.15 per kg. During April, actual production was 1,800 units. The company purchased 7,500 kg of material at Rs.18 per kg. Calculate the Material Rate Variance.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "10,800 Adverse",
+                "B": "22,500 Favourable",
+                "C": "21,600 Adverse",
+                "D": "22,500 Adverse"
+            },
+            "correct_option_label": "D",
+            "explanation": "Material Rate Variance is calculated using the actual quantity purchased:\n$$\\text{Material Rate Variance} = (\\text{Actual Price} - \\text{Standard Price}) \\times \\text{Actual Quantity Purchased}$$\n$$\\text{Material Rate Variance} = (18 - 15) \\times 7,500 = 3 \\times 7,500 = 22,500 \\text{ Adverse}$$",
+            "module": 4
+        },
+        {
+            "question_id": "25",
+            "question_text": "A bakery produces premium chocolate cakes. The standard recipe requires 2.5 kg of flour per cake at a standard price of Rs.40 per kg. During June, the bakery produced 1,200 cakes. However, it actually used 3,200 kg of flour. Calculate the Material Usage Variance.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "8,000 Favourable",
+                "B": "8,000 Adverse",
+                "C": "12,000 Adverse",
+                "D": "5,000 Adverse"
+            },
+            "correct_option_label": "B",
+            "explanation": "Material Usage Variance is calculated as:\n1. $\\text{Standard Quantity (SQ)} = 1,200 \\text{ cakes} \\times 2.5 \\text{ kg/cake} = 3,000 \\text{ kg}$.\n2. $\\text{Material Usage Variance} = (\\text{Actual Quantity} - \\text{Standard Quantity}) \\times \\text{Standard Price} = (3,200 - 3,000) \\times 40 = 200 \\times 40 = 8,000 \\text{ Adverse}$.",
+            "module": 4
+        }
+    ]
+}
