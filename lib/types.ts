@@ -30,7 +30,9 @@ export interface Question {
   correctAnswer: string[]; // Array to support multiple correct answers (empty for subjective)
   module?: string | number;
   selectedAnswer?: string[];
-  source?: string; // exam_date from exam_metadata
+  source?: string; // bank name (also the folder/file name) the question came from
+  subjectCode?: string; // subject code used for locating image assets
+  bankType?: BankType; // bank type (CLA | Exam | Custom) used for locating image assets
   explanation?: string;
   isSubjective?: boolean; // Flag to identify subjective questions
 }

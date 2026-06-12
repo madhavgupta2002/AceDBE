@@ -1,7 +1,12 @@
 import { QuestionFile, IIMBQuestion, Question } from './types';
 
 // Convert IIMB question format to internal format
-export function convertToInternalFormat(iimbQuestion: IIMBQuestion, source?: string): Question {
+export function convertToInternalFormat(
+  iimbQuestion: IIMBQuestion,
+  source?: string,
+  subjectCode?: string,
+  bankType?: 'CLA' | 'Exam' | 'Custom'
+): Question {
   // Check if question is subjective
   const isSubjective = iimbQuestion.question_type === 'SUBJECTIVE' || !iimbQuestion.correct_option_label;
 
@@ -21,6 +26,8 @@ export function convertToInternalFormat(iimbQuestion: IIMBQuestion, source?: str
     correctAnswer: correctAnswers,
     module: iimbQuestion.module,
     source: source,
+    subjectCode: subjectCode,
+    bankType: bankType,
     explanation: iimbQuestion.explaination || iimbQuestion.explanation, // Handle typo in JSON
     isSubjective: isSubjective,
   };
@@ -92,7 +99,7 @@ export async function loadQuestions(
   }
 
   const examDate = questionFile.exam_metadata?.exam_date;
-  return questionFile.questions.map(q => convertToInternalFormat(q, bankName));
+  return questionFile.questions.map(q => convertToInternalFormat(q, bankName, subjectCode, bankType));
 }
 
 // Load all questions for a subject (for full practice mode)

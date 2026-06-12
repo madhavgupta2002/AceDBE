@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Question } from '@/lib/types';
 import { CheckCircle, XCircle, Check, RotateCcw, Play, Pause } from 'lucide-react';
 import StopWatch from './StopWatch';
@@ -32,6 +32,56 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
 }) => {
   const isMultipleAnswer = question.correctAnswer.length > 1;
   const isSubjective = question.isSubjective || Object.keys(question.options).length === 0;
+
+  // Images referenced via the "PARSEIMAGE" placeholder are resolved from a folder
+  // named like the question bank, matching files by question number (e.g. PME_Q5_587.png).
+  const [questionImages, setQuestionImages] = useState<string[]>([]);
+
+  useEffect(() => {
+    const hasPlaceholder = (s?: string) => !!s && s.includes('PARSEIMAGE');
+    const needsImage =
+      hasPlaceholder(question.text) ||
+      hasPlaceholder(question.explanation) ||
+      Object.values(question.options || {}).some((v) => hasPlaceholder(v));
+
+    if (
+      !needsImage ||
+      !question.subjectCode ||
+      !question.bankType ||
+      !question.source
+    ) {
+      setQuestionImages([]);
+      return;
+    }
+
+    let cancelled = false;
+    const params = new URLSearchParams({
+      subjectCode: question.subjectCode,
+      bankType: question.bankType,
+      bankName: question.source,
+      questionId: question.id,
+    });
+
+    fetch(`/api/question-image?${params.toString()}`)
+      .then((r) => (r.ok ? r.json() : { images: [] }))
+      .then((data) => {
+        if (!cancelled) setQuestionImages(data.images || []);
+      })
+      .catch(() => {
+        if (!cancelled) setQuestionImages([]);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [
+    question.id,
+    question.subjectCode,
+    question.bankType,
+    question.source,
+    question.text,
+    question.explanation,
+  ]);
 
   const handleOptionClick = (option: string) => {
     if (showResult || isSubjective) return;
@@ -107,6 +157,60 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
     p: ({ children }: any) => <span className="inline">{children}</span>,
   };
 
+  // Render markdown text, replacing each "PARSEIMAGE" placeholder with the matching
+  // resolved image (in order of appearance). Missing images are skipped silently.
+  const renderRich = (text: string, components?: any): React.ReactNode => {
+    if (!text) return null;
+    if (!text.includes('PARSEIMAGE')) {
+      return (
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm, remarkMath]}
+          rehypePlugins={[rehypeKatex]}
+          components={components}
+        >
+          {formatText(text)}
+        </ReactMarkdown>
+      );
+    }
+
+    const parts = text.split('PARSEIMAGE');
+    const nodes: React.ReactNode[] = [];
+    let imgIdx = 0;
+
+    parts.forEach((part, i) => {
+      if (part.trim()) {
+        nodes.push(
+          <ReactMarkdown
+            key={`text-${i}`}
+            remarkPlugins={[remarkGfm, remarkMath]}
+            rehypePlugins={[rehypeKatex]}
+            components={components}
+          >
+            {formatText(part)}
+          </ReactMarkdown>
+        );
+      }
+
+      if (i < parts.length - 1) {
+        const src = questionImages[imgIdx];
+        imgIdx++;
+        if (src) {
+          nodes.push(
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              key={`img-${i}`}
+              src={src}
+              alt={`Question figure ${imgIdx}`}
+              className="my-4 mx-auto max-w-full rounded-lg border border-surface-border/60 bg-white"
+            />
+          );
+        }
+      }
+    });
+
+    return nodes;
+  };
+
   // Render subjective question
   if (isSubjective) {
     return (
@@ -151,12 +255,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
           )}
         </div>
         <div className="text-base sm:text-lg mb-4 sm:mb-6 text-white prose prose-invert prose-indigo max-w-none text-justify">
-          <ReactMarkdown
-            remarkPlugins={[remarkGfm, remarkMath]}
-            rehypePlugins={[rehypeKatex]}
-          >
-            {formatText(question.text)}
-          </ReactMarkdown>
+          {renderRich(question.text)}
         </div>
         <div className="bg-yellow-900/15 border border-yellow-700/40 rounded-xl p-4 sm:p-6">
           <p className="text-yellow-200/90 mb-3 sm:mb-4 text-sm sm:text-base">
@@ -185,12 +284,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
             <div className="flex items-center gap-2 mb-2 text-emerald-400 text-sm font-semibold">
               Explanation
             </div>
-            <ReactMarkdown
-              remarkPlugins={[remarkGfm, remarkMath]}
-              rehypePlugins={[rehypeKatex]}
-            >
-              {formatText(question.explanation)}
-            </ReactMarkdown>
+            {renderRich(question.explanation)}
           </div>
         )}
       </div>
@@ -242,12 +336,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
         )}
       </div>
       <div className="text-base sm:text-lg mb-4 sm:mb-6 text-white prose prose-invert prose-indigo max-w-none text-justify">
-        <ReactMarkdown
-          remarkPlugins={[remarkGfm, remarkMath]}
-          rehypePlugins={[rehypeKatex]}
-        >
-          {formatText(question.text)}
-        </ReactMarkdown>
+        {renderRich(question.text)}
       </div>
       <div className="grid grid-cols-1 gap-2.5 sm:gap-3">
         {Object.entries(question.options).map(([key, value]) => (
@@ -272,13 +361,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
                   )}
                 </span>
                 <span className="text-sm sm:text-[0.9rem] prose prose-invert prose-indigo max-w-none prose-p:inline flex-1">
-                  <ReactMarkdown
-                    remarkPlugins={[remarkGfm, remarkMath]}
-                    rehypePlugins={[rehypeKatex]}
-                    components={mdComponents}
-                  >
-                    {formatText(value || '')}
-                  </ReactMarkdown>
+                  {renderRich(value || '', mdComponents)}
                 </span>
               </span>
               {showResult && question.correctAnswer.includes(key) && (
@@ -298,12 +381,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
           <div className="flex items-center gap-2 mb-2 text-emerald-400 text-sm font-semibold">
             Explanation
           </div>
-          <ReactMarkdown
-            remarkPlugins={[remarkGfm, remarkMath]}
-            rehypePlugins={[rehypeKatex]}
-          >
-            {formatText(question.explanation)}
-          </ReactMarkdown>
+          {renderRich(question.explanation)}
         </div>
       )}
     </div>
