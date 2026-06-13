@@ -1,0 +1,360 @@
+{
+    "exam_metadata": {
+        "subject_name": "Strategic Management",
+        "exam_date": "14 February 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "Which of the following is a distinct characteristic of a firm as a \"Separate Legal Entity\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Owners are personally liable for all debts.",
+                "B": "The firm enjoys perpetual succession.",
+                "C": "The firm cannot own property in its own name.",
+                "D": "Management and ownership must always be the same person."
+            },
+            "correct_option_label": "B",
+            "explanation": "As a separate legal entity, a firm has a distinct identity separate from its owners. This grants it perpetual succession, meaning it continues to exist beyond the life or participation of its founders.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "In Porter’s Five Forces, \"Economies of Scale\" primarily acts as a barrier to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Buyer Power",
+                "B": "Substitute Products",
+                "C": "New Entrants",
+                "D": "Supplier Power"
+            },
+            "correct_option_label": "C",
+            "explanation": "Economies of scale deter new entrants by forcing them to either enter at a massive scale (high capital and risk) or accept a significant cost disadvantage at a smaller scale.",
+            "module": 4
+        },
+        {
+            "question_id": "3",
+            "question_text": "According to the VRIO framework, a resource that is Valuable and Rare but Easy to Imitate leads to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Temporary Competitive Advantage",
+                "B": "Competitive Disadvantage",
+                "C": "Sustainable Competitive Advantage",
+                "D": "Competitive Parity"
+            },
+            "correct_option_label": "A",
+            "explanation": "When a resource is valuable and rare but lacks costly-to-imitate features, competitors will easily duplicate it over time, reducing the firm's edge to a temporary competitive advantage.",
+            "module": 5
+        },
+        {
+            "question_id": "4",
+            "question_text": "A \"Cost Leadership\" strategy aims to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Achieve the lowest operating costs in the industry.",
+                "B": "Provide the most unique product in the market.",
+                "C": "Target a very narrow, high-end niche.",
+                "D": "Focus exclusively on social media marketing."
+            },
+            "correct_option_label": "A",
+            "explanation": "A Cost Leadership strategy focuses on gaining competitive advantage by optimizing operational efficiencies, scale economies, and processes to achieve the lowest costs in the industry.",
+            "module": 6
+        },
+        {
+            "question_id": "5",
+            "question_text": "Which force is high when customers can easily switch to a different industry's product that fulfills the same need?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Intensity of rivalry",
+                "B": "Threat of substitutes",
+                "C": "Bargaining power of suppliers",
+                "D": "Barriers to entry"
+            },
+            "correct_option_label": "B",
+            "explanation": "Substitutes refer to products or services from outside the focal industry that fulfill the same fundamental customer need. Easy switching to these alternatives indicates a high threat of substitutes.",
+            "module": 4
+        },
+        {
+            "question_id": "6",
+            "question_text": "In a \"Matrix\" organizational structure:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Employees report to only one supervisor.",
+                "B": "It is only used by non-profit organizations.",
+                "C": "There is no hierarchy.",
+                "D": "Dual reporting lines exist (e.g., functional and product)."
+            },
+            "correct_option_label": "D",
+            "explanation": "A matrix structure overlays functional boundaries with product, project, or geographic divisions, leading to dual reporting lines for employees.",
+            "module": 1
+        },
+        {
+            "question_id": "7",
+            "question_text": "Strategy Implementation is often compared to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Writing a book.",
+                "B": "An architectural blueprint (plan) versus the actual construction.",
+                "C": "Dreaming about the future.",
+                "D": "Watching a competitor's moves."
+            },
+            "correct_option_label": "B",
+            "explanation": "Strategy is the structural plan or blueprint, while implementation is the tactical and concrete building process that puts the strategy to work.",
+            "module": 8
+        },
+        {
+            "question_id": "8",
+            "question_text": "Which of the following is a \"Cognitive Bias\" that can hinder strategic decision-making?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Confirmation Bias",
+                "B": "VRIO Analysis",
+                "C": "Competitive Intelligence",
+                "D": "Market Research"
+            },
+            "correct_option_label": "A",
+            "explanation": "Confirmation bias is a systemic error in thinking where leaders selectively gather, interpret, and favor information that supports their pre-existing beliefs, while discounting conflicting evidence.",
+            "module": 8
+        },
+        {
+            "question_id": "9",
+            "question_text": "If a resource is Valuable and Rare, but the firm is not Organized to exploit it, they have:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Unexploited Competitive Advantage.",
+                "B": "Sustainable Competitive Advantage.",
+                "C": "Competitive Parity.",
+                "D": "Competitive Disadvantage."
+            },
+            "correct_option_label": "A",
+            "explanation": "Under the VRIO framework, possessing a valuable and rare resource without having the necessary structure, systems, or culture to exploit it leads to an unexploited competitive advantage.",
+            "module": 5
+        },
+        {
+            "question_id": "10",
+            "question_text": "Stakeholders of a firm include:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only the government.",
+                "B": "Customers, employees, suppliers, and shareholders.",
+                "C": "Only the board of directors.",
+                "D": "Only the shareholders."
+            },
+            "correct_option_label": "B",
+            "explanation": "Stakeholders are any individuals or groups that can affect or are affected by the outcomes of a firm's decisions. This includes primary actors like customers, employees, suppliers, and shareholders.",
+            "module": 1
+        },
+        {
+            "question_id": "11",
+            "question_text": "Forward Vertical Integration occurs when a firm:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Merges with a direct competitor.",
+                "B": "Buys its raw material supplier.",
+                "C": "Enters the business of its customers (e.g., a manufacturer opening retail stores).",
+                "D": "Outsources its IT department."
+            },
+            "correct_option_label": "C",
+            "explanation": "Forward vertical integration involves moving down the value chain, closer to the final consumer, by internalizing operations formerly managed by intermediate customers, such as distribution or retail.",
+            "module": 7
+        },
+        {
+            "question_id": "12",
+            "question_text": "Intellectual Property rights (like patents) help a firm by:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Decreasing costs.",
+                "B": "Increasing Barriers to Imitation.",
+                "C": "Increasing Buyer Power.",
+                "D": "Lowering Barriers to Entry."
+            },
+            "correct_option_label": "B",
+            "explanation": "Intellectual property rights legally protect innovations, significantly raising barriers to imitation so competitors cannot easily clone or replicate proprietary processes or designs.",
+            "module": 5
+        },
+        {
+            "question_id": "13",
+            "question_text": "\"Transaction Costs\" include the costs of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Upgrading factory machinery.",
+                "B": "Paying dividends to shareholders.",
+                "C": "Drafting, negotiating, and enforcing contracts in the market.",
+                "D": "Manufacturing the product."
+            },
+            "correct_option_label": "C",
+            "explanation": "Transaction costs represent the economic friction of doing business in a market, which encompasses drafting, negotiating, monitoring, and enforcing external contracts.",
+            "module": 1
+        },
+        {
+            "question_id": "14",
+            "question_text": "Why is the \"Matrix Structure\" often difficult to implement?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It requires too few managers.",
+                "B": "It is too simple.",
+                "C": "It only works in the manufacturing sector.",
+                "D": "It can lead to power struggles and confusion due to dual reporting."
+            },
+            "correct_option_label": "D",
+            "explanation": "Matrix structures violate the classical 'unity of command' principle. Dual reporting lines generate role conflicts, power struggles between functional and divisional managers, and procedural delays.",
+            "module": 1
+        },
+        {
+            "question_id": "15",
+            "question_text": "\"Strategy\" is best defined as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An annual office party plan.",
+                "B": "A list of yesterday's sales figures.",
+                "C": "A set of short-term tactics.",
+                "D": "A coordinated set of actions to achieve a sustainable competitive advantage."
+            },
+            "correct_option_label": "D",
+            "explanation": "Strategy is the overarching direction and framework of coordinated activities designed to build and preserve a sustainable competitive advantage over rivals.",
+            "module": 2
+        },
+        {
+            "question_id": "16",
+            "question_text": "Internal analysis primarily looks at:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Competitor's stock prices.",
+                "B": "PESTEL factors.",
+                "C": "Resources and Capabilities (VRIO).",
+                "D": "Government regulations."
+            },
+            "correct_option_label": "C",
+            "explanation": "Internal analysis evaluates the firm's inside environment to define strengths and weaknesses, primarily using VRIO testing on internal resources and capabilities.",
+            "module": 5
+        },
+        {
+            "question_id": "17",
+            "question_text": "When managing a multi-business firm in an emerging market with weak institutions and diverse market conditions, which leadership actions are most important to prevent internal stagnation? (Select all that apply.)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Adapting resources creatively to deal with poor infrastructure and regulatory gaps in informal markets.",
+                "B": "Centralizing all decision-making at the corporate level to standardize analysis and reduce internal political conflicts.",
+                "C": "Using local trust networks and community norms to create value where formal regulations are weak.",
+                "D": "Applying sound judgment to balance numerical performance data with real-world market insights when making forecasts in uncertain conditions."
+            },
+            "correct_option_label": "A, C, D",
+            "explanation": "To bypass the institutional voids of emerging markets, managers must rely on creative adaptation (such as 'jugaad'), utilize local, relationship-based informal networks, and employ nuanced judgment rather than relying strictly on centralized systems.",
+            "module": 5
+        },
+        {
+            "question_id": "18",
+            "question_text": "In a fast-changing industry such as Indian banking or automobiles, which of the following statements correctly explain how mobility barriers and strategic group mapping affect a firm’s competitive position? (Select all that apply.)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Competition is usually strongest among firms within the same strategic group because they target the same customers with similar resources and strategies.",
+                "B": "Mobility barriers act as entry barriers between groups, making it difficult for firms in low-performing groups to move into high-margin, premium segments.",
+                "C": "Moving from a low-cost group to a premium differentiation group mainly requires changing prices rather than building new, hard-to-copy resources.",
+                "D": "Strategic group maps help managers identify “white spaces,” or underserved market segments, where there may be opportunities for innovation."
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "Firms compete most intensely with strategic neighbors who share similar tactics. Mobility barriers represent high costs to migrate between groups (e.g., brand building, unique R&D), and mapping visually identifies market gaps or white spaces.",
+            "module": 4
+        },
+        {
+            "question_id": "19",
+            "question_text": "A multi-business firm is reviewing its business portfolio. One of its Strategic Business Units (SBUs) operates in a high-growth industry but has a low market share. The corporate parent provides strong centralized R&D support that the SBU relies on. However, the SBU’s operations and culture do not align well with the parent’s management systems.\n\nBased on portfolio and corporate-level strategy frameworks, which of the following statements are correct? (Select all that apply.)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "In the BCG Growth-Share Matrix, this SBU is classified as a “Question Mark,” meaning it requires significant investment to increase market share and potentially become a “Star.”",
+                "B": "In the Parenting Matrix, this SBU is classified as an “Edge-of-the-Heartland” business because the parent can add value through R&D, but there is risk due to poor strategic or cultural fit.",
+                "C": "If the firm launches the SBU’s existing products into new international markets to increase scale, it is following a Market Development strategy under the Ansoff Matrix.",
+                "D": "All the options provided."
+            },
+            "correct_option_label": "D",
+            "explanation": "The SBU represents a BCG 'Question Mark' (high growth, low share). Under the Parenting Matrix, since the parent adds R&D value but has a culture clash, it is an 'Edge-of-the-Heartland' unit. Entering international markets is 'Market Development' in the Ansoff Matrix, making all options correct.",
+            "module": 7
+        },
+        {
+            "question_id": "20",
+            "question_text": "When an organization shifts to a Segment-Focused structure (like the McDonald’s realignment case) in a volatile market, which of the following statements correctly reflect the principles of effective strategic implementation? (Select all that apply.)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "“Structural inertia” happens when the firm’s Analysis (A) shows the need for a new Strategy (S), but the existing Processes and Structure (P) prevent effective execution because old roles and systems resist change.",
+                "B": "In the digital age, structural changes are often driven by technological disruption, requiring the creation of specialized and agile teams to keep internal capabilities aligned with external changes.",
+                "C": "In the A-S-P cycle, “sensing the environment” is an ongoing process, not a one-time activity, allowing the organization to adjust its structure as market conditions change.",
+                "D": "The Performance Management system acts like a “conductor of an orchestra,” ensuring that decentralized segments work in coordination to achieve the overall strategic goals."
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "Implementation failure frequently roots back to structural inertia (A), where internal systems refuse to budge despite valid plans. Modern environments force restructuring around digital tools (B), and performance controls ensure alignment across segments (D).",
+            "module": 8
+        },
+        {
+            "question_id": "21",
+            "question_text": "Management has evolved from a focus on scientific efficiency to more holistic, people-centric approaches. Discuss the key contributions of Classical Management Theories (such as Taylor’s Scientific Management or Fayol’s Administrative Principles) and contrast them with the Modern Manager’s role in today’s complex business environment.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "### 1. Key Contributions of Classical Management Theories\n*   **Frederick Taylor’s Scientific Management:** Focused primarily on task-level efficiencies and shop floor productivity. By utilizing systematic time-and-motion studies, Taylor sought the 'one best way' to perform any task, minimizing wasted movement. It introduced standardizing operations, formal cooperation principles, and structured wage incentives, treating workers primarily as economic actors driven by monetary rewards.\n*   **Henri Fayol’s Administrative Principles:** Focused on the strategic, organizational level. Fayol defined five central management functions (Planning, Organizing, Leading, Coordinating, and Controlling) and established 14 general principles of management (e.g., Unity of Command, Division of Labor, Scalar Chain, and Subordination of Individual Interests to the General Goal) to create rational structures.\n\n### 2. Contrast with the Modern Manager's Role\n*   **Socio-Technical and People-Centric View:** Where classical theory prioritized mechanical optimization and rigid hierarchies, modern managers operate in highly dynamic, knowledge-based, and volatile environments. \n*   **Facilitation over Dictation:** Instead of policing compliance and enforcing the 'one best way', modern managers act as enablers or coaches. They foster agile, decentralized, and highly diverse teams, managing intrinsic motivation, psychological safety, and rapid adaptability.\n*   **Complex External Alignment:** While classical managers worked within closed-system boundary assumptions, modern managers must continuously scan systemic, open-ended environments (PESTEL, network ecosystems) to recalibrate internal corporate capabilities.",
+            "module": 1
+        },
+        {
+            "question_id": "22",
+            "question_text": "Critically evaluate the tension between the Prescriptive Schools of strategy (Design, Planning, and Positioning) and the Descriptive Schools (Entrepreneurial, Cognitive, Learning, Power, Cultural, and Environmental). How does the Configurational School attempt to resolve this tension by integrating these perspectives into a firm’s lifecycle or transformation?",
+            "question_type": "SUBJECTIVE",
+            "explanation": "### 1. Prescriptive vs. Descriptive Strategy Tension\n*   **Prescriptive Schools (Design, Planning, Positioning):** Argue that strategy formulation must be a highly structured, objective, and deliberate cognitive exercise that occurs before implementation. The CEO/Strategic Planners evaluate the SWOT and industry forces to carve out a static, defensible position (e.g., Cost Leadership or Differentiation).\n*   **Descriptive Schools (Learning, Cognitive, Power, Cultural, Environmental):** Assert that strategies are not perfectly designed in advance; they emerge organically through iterative trial-and-error (Learning), are bounded by individual perceptions (Cognitive), or are shaped by internal negotiations (Power) and deep organizational values (Cultural). \n*   **Core Tension:** Prescriptive views assume predictable environments and highly rational actors, whereas descriptive schools recognize the complexity, cognitive boundaries, and emergent nature of real-world management.\n\n### 2. Resolution via the Configurational School\n*   **Dynamic Configurations:** The Configurational School integrates these perspectives by suggesting that organizations oscillate between stable periods and rapid, transformative shifts. \n*   **Organizational Lifecycles:** Under stable market configurations (Maturity stage), prescriptive schools (such as systematic planning and precise cost positioning) are ideal. However, during periods of disruption or structural decay, descriptive perspectives (such as entrepreneurial vision, cultural renewal, and emergent, experimental learning) must take precedence to pivot and adapt. This dynamic balancing of stability and transformation provides a comprehensive view of strategy.",
+            "module": 3
+        },
+        {
+            "question_id": "23",
+            "question_text": "Using the Value Stick Framework, explain how a firm creates and captures value for its various stakeholders. Discuss how a firm can use this framework to decide whether to pursue a Value Creation strategy (increasing Willingness-to-Pay) or a Value Appropriation strategy (retaining more profit). Use a real-world example, such as Google or Marico, to illustrate your answer.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "### 1. The Value Stick Framework\nThe Value Stick is a vertical metric framework divided into four reference levels:\n*   **Willingness to Pay (WTP):** The absolute maximum price a customer will shell out to acquire a product.\n*   **Price (P):** The actual price charged by the company.\n*   **Cost (C):** The actual expenditure incurred to purchase inputs/labor.\n*   **Willingness to Sell (WTS):** The lowest acceptable compensation suppliers/employees will take for inputs/labor.\n\n$$\\text{Total Value Created} = \\text{WTP} - \\text{WTS}$$\n$$\\text{Customer Surplus (Delight)} = \\text{WTP} - \\text{Price}$$\n$$\\text{Value Captured (Corporate Profit)} = \\text{Price} - \\text{Cost}$$\n$$\\text{Supplier/Employee Surplus} = \\text{Cost} - \\text{WTS}$$\n\n### 2. Value Creation vs. Value Appropriation Strategies\n*   **Value Creation Strategy (Focus on WTP):** Expands the size of the total stick by raising the upper bound (WTP). This is done through innovation, high-end branding, and unique product differentiation.\n*   **Value Appropriation Strategy (Focus on Price/Cost Gap):** Focuses on claiming a larger share of the existing stick by raising prices relative to cost, or lowering costs relative to supplier limits, without necessarily enlarging the overall value.\n\n### 3. Real-World Application: Marico (Saffola)\n*   **WTP Expansion:** Marico took Saffola, a cooking oil, and elevated consumer WTP by positioning it as a heart-healthy dietary choice. \n*   **Capturing Premium Value:** This health-centric differentiation raised WTP significantly above standard refined oils. Marico successfully charged a premium price ($P$) while keeping operating costs ($C$) optimized, capturing a high profit margin without driving away health-conscious customers, who still experienced a positive customer surplus.",
+            "module": 2
+        },
+        {
+            "question_id": "24",
+            "question_text": "Define the Strategic Management Process and discuss its core stages, from establishing a mission and vision to the final stages of implementation and evaluation. Explain with hypothetical examples how each stage of the process contributes to achieving a sustained competitive advantage.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "The Strategic Management Process (SMP) is a continuous, cyclical series of analytical and execution steps used by an organization to coordinate resources, address external changes, and establish a sustained competitive advantage (SCA). Let's review the five stages using a hypothetical **Electric Vehicle (EV) startup** as an example:\n\n### Stage 1: Define Vision, Mission, and Goals\n*   **Description:** Setting the long-term destination (Vision) and primary purpose of existence (Mission).\n*   **Hypothetical Example:** The EV startup sets its vision: *\"To eliminate city carbon footprints globally.\"* Its mission is *\"To manufacture high-performance, affordable urban commuters.\"*\n*   **Contribution to SCA:** Aligns all corporate resources and prevents departments from executing conflicting agendas.\n\n### Stage 2: External and Internal Analysis\n*   **Description:** Examining external macro factors (PESTEL) and industry competitive forces (Five Forces) alongside internal assets (VRIO, Value Chain).\n*   **Hypothetical Example:** The startup identifies government EV subsidies (PESTEL-Political Opportunity) and high lithium battery supplier power. Internally, it identifies that it has a proprietary, in-house software integration (VRIO-Valuable and Rare).\n*   **Contribution to SCA:** Ensures the company targets real market opportunities while anchoring plans in true, defensible strengths.\n\n### Stage 3: Strategy Formulation\n*   **Description:** Designing business-level strategies (e.g., Differentiation) and corporate scope decisions.\n*   **Hypothetical Example:** The startup formulates a *Differentiation Focus* strategy, deciding to design software-optimized smart-charging platforms instead of competing on low-cost chassis assembly.\n*   **Contribution to SCA:** Allocates finite resources toward the highest margin, most defensible positions.\n\n### Stage 4: Strategy Implementation\n*   **Description:** Re-architecting organizational structure, routines, cultures, and incentives to match the chosen plan.\n*   **Hypothetical Example:** The startup adopts a flat, agile project-team structure to speed up software updates, bypassing legacy manufacturing hierarchies.\n*   **Contribution to SCA:** Translates theoretical plans into operational reality, overcoming structural inertia.\n\n### Stage 5: Evaluation and Control\n*   **Description:** Utilizing performance metrics (like the Balanced Scorecard) to monitor and adjust tactics.\n*   **Hypothetical Example:** Establishing metrics to evaluate weekly software update deployment rates alongside cash runway limits.\n*   **Contribution to SCA:** Forms feedback loops that prevent strategic drift, helping the firm adapt to volatile competitor responses.",
+            "module": 3
+        },
+        {
+            "question_id": "25",
+            "question_text": "Using the Indian context as a backdrop (e.g., Reliance Jio in Telecom or the rise of EdTech), critically evaluate how disruptive entrants reshape strategic group evolution and the nature of mobility barriers. Specifically:\n\na. Explain how these entrants reconfigure industry boundaries to create \"hybrid groups\" that blur the lines between traditional sectors.\n\nb. Analyze why intangible factors, such as customer perceptions and brand reputation, often emerge as more formidable mobility barriers than tangible assets like technology or infrastructure.\n\nc. Discuss how the ability to reallocate VRIO-status resources determines whether a firm can successfully migrate from a low-profit to a high-profit strategic position.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "### a. Reconfiguring Industry Boundaries via Hybrid Groups\nDisruptive digital entrants like **Reliance Jio** or leading **EdTech** players do not merely compete within traditional boundaries; they actively expand and merge them. Jio entered telecom not as a simple voice carrier, but as an integrated digital ecosystem platform, bundling high-speed data infrastructure with content pipelines, payment channels, and commerce services. This blurred the lines between network infrastructure, media, and technology, forcing legacy players to either morph into digital tech firms or become low-value utilities.\n\n### b. Intangibles as Formidable Mobility Barriers\nWhile physical technology, software code, or server storage space are easily acquired (low imitability barriers), intangible assets such as *brand trust*, *user habits*, *causally ambiguous coordination routines*, and *network effects* are deeply path-dependent and socially complex. In Indian EdTech, a competitor can easily clone a learning app's source code (tangible/explicit asset), but they cannot easily replicate the brand reputation or local network effects. Thus, these intangibles are highly formidable mobility barriers that protect the market positions of dominant players.\n\n### c. VRIO Resource Reallocation and Strategic Migration\nFor a legacy firm to migrate from a low-profit, commoditized group to a high-profit premium group, it must do more than just change its prices. It must successfully reallocate and upgrade its internal resources to satisfy all four VRIO criteria. This means transforming organizational routines so that legacy resources are structured to match the new strategy. If a firm cannot redesign its culture and reporting systems (the 'O' in VRIO) to support these resources, its attempts to migrate will fail, leaving it 'stuck in the middle' because its old structures resist the new model.",
+            "module": 4
+        },
+        {
+            "question_id": "26",
+            "question_text": "Using the context of a major organizational transformation (such as Air India’s repositioning or HDFC Bank’s digital evolution), critically evaluate the leader's role in balancing deliberate rational planning with emergent learning. How does this dual approach help an organization overcome structural inertia during the implementation phase? Discuss this transition through the lens of the A-S-P cycle, specifically explaining why an \"ingenious blueprint\" (Strategy) often fails if the \"construction\" (Process/Performance) is not aligned.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "### 1. Balancing Deliberate Planning with Emergent Learning\nDuring a massive transformation like **HDFC Bank's digital evolution**, leaders cannot rely solely on a fixed, top-down plan, nor can they let changes happen completely on their own. Instead, they must use a dual approach:\n*   **Deliberate Planning:** Sets the core direction, such as infrastructure investment targets, security policies, and regulatory compliance guidelines.\n*   **Emergent Learning:** Allows front-line divisions, product managers, and customers to refine user interfaces, digital features, and services based on real-time feedback and market testing.\n\n### 2. Overcoming Structural Inertia in the A-S-P Cycle\nIn the **Analysis-Strategy-Performance (A-S-P)** model, a common mistake is assuming that a strong analysis (A) and a clever strategy (S) will naturally lead to high performance. The gap almost always occurs in the execution phase, where existing **Processes and Structures (P)** resist the new strategy.\n*   **Structural Inertia:** Existing departments protect their historical budgets, routines, and roles.\n*   **The Blueprint Analogy:** An 'ingenious blueprint' (the strategy) is useless if the construction materials and team skills (the process/structure) are not aligned. If middle-management incentives (KPIs) remain tied to legacy goals, the execution fails.\n*   **The Leader's Role:** By using a dual deliberate-emergent approach, leaders can launch experimental units (e.g., isolated digital teams) to test new practices, and then gradually adjust the organization's broader systems as those experiments succeed, bypassing structural inertia.",
+            "module": 8
+        },
+        {
+            "question_id": "27",
+            "question_text": "Using the \"strategic myopia\" of firms like Kodak or Nokia as a baseline, critically evaluate the role of Organizational Alignment and Nuanced Judgment in transforming internal resources into sustained competitive advantage.\nSpecifically, address the following in your response:\n\na. How does a failure in Organizational Alignment (the 'O' in VRIO) prevent a firm from capturing value, even when it possesses valuable and rare technology?\n\nb. How do Institutional Voids in emerging markets (like India) redefine the \"Costly to Imitate\" (Imitability) dimension-specifically regarding social complexity and path dependence?\n\nc. Explain how a leader’s Nuanced Judgment acts as a \"Strategic Compass\" to recalibrate a firm’s direction when faced with cognitive biases or environmental shifts.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "### a. Failure in Organizational Alignment (the 'O' in VRIO)\n**Kodak** famously invented core digital camera technologies well ahead of competitors. However, its organizational design, marketing teams, and corporate incentive structures were completely optimized for high-margin physical film sales. Because Kodak lacked the organizational alignment (the 'O' in VRIO) to commercialize and promote digital products, it could not capture value from its own inventions, demonstrating that advanced technology without supportive organizational structures is useless.\n\n### b. How Institutional Voids Redefine \"Costly to Imitate\" (I)\nIn emerging markets like India, **Institutional Voids** (e.g., weak formal logistics, inconsistent regulations, and fragmented retail spaces) mean that simple, standard technological resources are easily copied or bypassed. Instead, deep barriers of *social complexity* and *path dependence* become the primary sources of inimitability. For example, building a trusted relationship-based rural distribution system (like HUL's Project Shakti) or establishing long-term community relationships relies on years of local trust. These resources are extremely costly and difficult for competitors to imitate because they cannot be quickly built with money or software.\n\n### c. Nuanced Judgment as a Strategic Compass\nSpreadsheet metrics and formal reports are prone to confirmation biases and often lag behind rapid market shifts. A leader’s **Nuanced Judgment** serves as a strategic compass by helping them look past biased internal data to see real-world changes. This judgment allows leaders to make difficult choices, resolve internal disputes, change key metrics (KPIs), and shift the organization's direction before strategic myopia sets in.",
+            "module": 5
+        },
+        {
+            "question_id": "28",
+            "question_text": "Identify and define the role of cognitive biases in the strategic management process. Specifically:\n\na. Describe two distinct cognitive biases (e.g., Confirmation Bias, Overconfidence Bias) and explain how they can lead to \"Strategic Myopia\" during the Analysis (A) phase of the A-S-P cycle.\n\nb. Propose three structured organizational practices or leadership actions that can be implemented to mitigate these biases and ensure more objective strategic decision-making.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "### a. Cognitive Biases and Strategic Myopia in the A-S-P Cycle\nIn the **Analysis-Strategy-Performance (A-S-P)** model, the Analysis phase (A) must be objective and grounded in real-world conditions. However, cognitive biases can distort this analysis, causing \"Strategic Myopia\":\n*   **Confirmation Bias:** Occurs when leaders search only for market research and data that support their preferred strategies while ignoring warning signs from PESTEL or competitor analyses. This keeps them blind to looming competitive or regulatory threats.\n*   **Overconfidence Bias:** Leads managers to overestimate their company's capabilities and market influence while underestimating rivals' agility. This results in aggressive, risky strategies that lack contingency plans.\n\n### b. Three Structured Practices to Mitigate Strategic Bias\n1.  **Red Teaming / Devil’s Advocacy:** Appointing a team or individual with the formal role of systematically questioning and trying to disprove core strategic assumptions.\n2.  **Pre-Mortem Analysis:** Before launching a new strategy, the leadership team gathers and assumes the plan has completely failed in the future. They then work backward to identify all the potential reasons for that failure.\n3.  **Scenario Planning:** Developing multiple distinct, plausible future scenarios to prevent the organization from over-focusing on a single forecast or projection.",
+            "module": 8
+        },
+        {
+            "question_id": "29",
+            "question_text": "Heritage-India\n\nHeritage-India was founded in 1974 in a 200-year-old haveli in Varanasi. The founder, Mr. Raghavan, was a physicist who became deeply interested in how light reflects through traditional silk. He discovered that the unique “Celestial Silk” shimmer comes from a special 15-step degumming process using local river minerals, along with a precise hand-weaving method called the “variable-tension” technique.\n\nThis “Master Weaving Technique” is completely tacit knowledge. There are no written manuals. It takes 15 years for an apprentice to become a Master weaver. The firm currently has 40 Masters (average age 58) and 12 apprentices.\n\nLast year, the firm spent ₹15 lakhs repairing the haveli’s roof and replaced old office computers with Apple MacBooks to modernize the workspace.\n\nMarket Disruption & Competition\n\nThe rise of synthetic fabrics (“Synthetic Surge”) has changed the Indian retail market. Companies like Polytextile Global use German-made Mark-IV Jet-Looms that produce 500 meters of fabric per hour.\n\nHeritage-India produces only 2 meters per day per weaver at a cost of ₹8,000 per meter.\n\nPolytextile produces at ₹450 per meter and sells at ₹1,200 per meter.\nThe haveli is located in a prime tourist area and is valued at ₹12 crores, independent of the business performance.\n\nLumière de Paris, a subsidiary of a large global conglomerate, has offered $2 million to buy the firm. They are mainly interested in Raghavan’s patent-pending natural dye formula developed in the 1990s, although they publicly state that they value the brand’s heritage.\n\nInternal Operations & Structure\n\nThe firm is now managed by Raghavan’s grandchildren, both MBA graduates, but they disagree about the firm’s future direction.\n\nThe company sells through three boutiques in Delhi, Mumbai, and Varanasi. The Varanasi boutique also sells unrelated items such as brass artifacts and tourist postcards to diversify revenue.\n\nThe firm follows a functional structure. The Head of Production and the Head of Sales do not communicate due to a family dispute. Weavers are paid a fixed daily wage, regardless of the quality of their work. There is no performance-based incentive system.\n\nThe firm has a Facebook page with 400 followers (mostly family members) and posts only once every six months.\n\nConsumer Trends\n\nA survey of 1,000 Indian women aged 20-35 found that 85% could not distinguish between “Celestial Silk” and high-end synthetic silk from three feet away.\n\nRecently, a Bollywood actress wore a Heritage-India saree to a wedding but mistakenly tagged another brand on Instagram. The firm did not respond or correct the error.\n\nQuestions\n\na. Identify all the key resources mentioned (such as the haveli, MacBooks, weaving technique, location, dye formula, etc.). Apply the VRIO framework to determine which resource provides a sustainable competitive advantage.\n\ni. Why do the MacBooks and the haveli’s real estate value fail the VRIO test for strategic advantage, even if they are valuable assets?\n\nii. Explain the “I” (Imitability) of the weaving technique and assess the “O” (Organization) of the firm’s current management structure.\n\nb. The grandchildren disagree on strategy: one wants to buy German Jet-Looms to reduce costs, while the other wants to sell the firm to Lumière de Paris. Using Porter’s Generic Strategies, recommend a suitable strategic path.\n\ni. Explain how adopting Jet-Looms (Cost Leadership) while maintaining the “Hand-Woven” luxury brand (Differentiation) could result in the firm being “Stuck in the Middle.” What specific trade-offs must the firm accept?",
+            "question_type": "SUBJECTIVE",
+            "explanation": "### a. Key Resources & VRIO Analysis Matrix\n*   **Apple MacBooks:** Valuable (Yes - standard office utility), Rare (No - commercially available to anyone), Inimitable (No), Organized (Yes) $\\rightarrow$ **Competitive Parity**.\n*   **Haveli Real Estate Value (₹12 Cr):** Valuable (Yes - significant physical/financial asset), Rare (Yes - prime tourist location), Inimitable (Yes - historical Varanasi building), Organized (No - currently wasted on low-value brass items and postcards) $\\rightarrow$ **Unexploited Advantage**.\n*   **Patent-Pending Dye Formula:** Valuable (Yes), Rare (Yes), Inimitable (Yes - legally protected), Organized (No - not actively scaled or marketed) $\\rightarrow$ **Unexploited Advantage**.\n*   **Master Weaving Technique (\"Celestial Silk\"):** Valuable (Yes - unique visual properties), Rare (Yes - 15-year master apprentice cycle), Inimitable (Yes - tacit, unwritten knowledge), Organized (No - family disputes, poor pay systems, zero marketing) $\\rightarrow$ **Unexploited Advantage** (due to severe execution and organizational issues).\n\n#### i. Why MacBooks and the Haveli Fail the VRIO Test for Strategic Advantage\n*   **MacBooks:** Are standard commodities. Any competitor can buy them, so they lack the rarity and inimitability needed for a strategic advantage.\n*   **Haveli Real Estate:** Highly valuable financially, but it does not add unique value to the *weaving and saree production* process compared to competitors. It is an unexploited real estate asset rather than an operating strategic advantage.\n\n#### ii. Imitability (\"I\") of Weaving and assessment of Organization (\"O\")\n*   **Imitability:** High barrier to imitation. It relies on *tacit knowledge* (cannot be written down) and *path dependency* (requires 15 years of apprentice training). Competitors cannot quickly replicate this with money or machinery.\n*   **Organization:** Major weaknesses. The functional managers (Production and Sales) do not speak due to family disputes, the weavers are paid flat rates with no incentives for quality, and social media marketing is practically non-existent.\n\n### b. Strategic Recommendation (Porter’s Generic Strategies)\n*   **Differentiation Focus:** Heritage-India must focus on a premium differentiation strategy rather than trying to compete on cost. They must market the *artisanal, hand-woven heritage* as a luxury luxury item.\n\n#### i. \"Stuck in the Middle\" and Key Trade-Offs\n*   **Stuck in the Middle:** If they buy German Jet-Looms to reduce costs while trying to sell \"Hand-Woven\" luxury, they will destroy the brand's authentic heritage story. At the same time, they cannot match the massive scale of pure cost leaders like Polytextile. This conflict leads to high overhead costs and a diluted brand, leaving them stuck in the middle.\n*   **Trade-offs:** They must accept higher costs, low production volumes, and high pricing, while investing heavily in marketing and organizing their internal operations to protect their luxury position.",
+            "module": 6
+        },
+        {
+            "question_id": "30",
+            "question_text": "Global-Auto\n\nGlobal-Auto is a 40-year-old leader in the Internal Combustion Engine (ICE) market. Two years ago, the company announced its “Vision 2030: EV-First” strategy. To show commitment, it spent ₹500 crores on a celebrity-driven marketing campaign and redesigned its headquarters with solar panels and green architecture.\n\nWith advice from a top global consultancy, the Board approved a plan to launch three premium EV models within 24 months.\n\nIndustry Dynamics & Market Changes\n\nThe Indian automobile market is changing. Global-Auto has long dominated the luxury sedan segment, but the EV segment is growing rapidly.\n\nTechnology companies and EV startups are entering the market with “software-defined vehicles.” These firms do not have legacy factories and use direct-to-consumer digital sales models.\n\nUrban mobility patterns are also shifting. High-speed rail and app-based e-scooter rentals are becoming popular among young professionals in Tier-1 cities.\n\nPublic charging stations are growing at 15% per year. However, Global-Auto recently spent ₹20 crores developing a proprietary charging plug that is incompatible with the new national standard. This decision, made by a junior engineer, was not noticed by the Board.\n\nInternal Friction & “The Approval Maze”\n\nThe company culture is divided.\n\nThe R&D team in Bengaluru uses Agile methods and has developed a solid-state battery prototype.\n\nThe main plant in Pune employs 10,000 workers trained only in engine assembly.\n\nThe labor union is concerned because EV production requires 30% less labor. This has led to low motivation (“quiet quitting”) and an increase in defective ICE vehicles.\n\nThe company still follows a rigid functional structure. A small design change (such as an EV door handle) requires 12 levels of physical approval, from the Shop Floor Manager to the Global VP of Quality. Meanwhile, startups change designs weekly.\n\nRecently, the company spent ₹2 crores renovating the cafeteria to offer vegan-only food to match its green image. However, employee morale fell because traditional menu options were removed.\n\nMisaligned Control Systems\n\nRegional Sales Heads are evaluated based on “Quarterly Volume Targets.”\n\nICE vehicles have a 15% profit margin and strong dealer networks.\n\nEVs have a 2% margin and require more customer education. The CFO’s monthly report combines ICE and EV sales into “Total Vehicles Sold.” There is no separate dashboard for EV-specific metrics such as battery efficiency or EV market share growth.\n\nQuestions\n\na. Using Porter’s Five Forces framework, analyze the automotive industry described in the case. For each of the five forces, identify the specific challenges Global-Auto faces as it shifts from ICE vehicles to EVs.\n\nb. The “EV-First” strategy is failing due to a gap between strategy (planning) and implementation (execution).\n\ni. Structure: Identify the specific structural barrier mentioned in the case that reduces agility. Recommend a more suitable organizational design (e.g., Matrix, Divisional, or Taskforce structure) that would eliminate the “12 levels of approval” problem.\n\nii. Control Systems: Analyze the current KPI and reward system. How does it create a bias in favor of ICE vehicles among middle managers? Suggest one specific improvement (for example, using a Balanced Scorecard approach) to align managerial incentives with the EV strategy.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "### a. Porter's Five Forces Analysis (Transitioning to EV)\n1.  **Threat of New Entrants (Very High):** Tech startups are entering the EV space with agile, software-defined vehicles, bypass legacy assembly plants, and use direct-to-consumer digital sales models.\n2.  **Bargaining Power of Suppliers (High):** The legacy internal workforce and labor union at the Pune plant have significant bargaining power and are highly resistant to EV changes (which require 30% less labor), leading to quiet quitting and quality issues in ICE vehicles.\n3.  **Bargaining Power of Buyers (High):** Buyers have many alternative choices in the rapidly expanding EV market, demanding advanced software integrations and standard charging compatibility.\n4.  **Threat of Substitutes (High):** Shifting urban mobility trends (such as high-speed rail and app-based e-scooter rentals) present strong alternatives to owning a luxury sedan.\n5.  **Intensity of Rivalry (High):** Intense competition from tech startups, compounded by Global-Auto's own mistakes, such as spending ₹20 crores on an incompatible proprietary charging plug.\n\n### b. Strategy-Implementation Execution Gap\n\n#### i. Structural Barrier & Recommendation\n*   **Structural Barrier:** A tall, rigid functional structure requiring 12 levels of physical approval from the shop floor to the Global VP for minor design changes.\n*   **Recommendation:** Transition to a **Divisional (M-Form) Structure** or a dedicated **EV Taskforce/Business Unit**. By separating the EV team from the legacy ICE Pune factory hierarchy, the EV unit can operate with flat reporting lines and make rapid design changes to compete with fast-moving startups.\n\n#### ii. Control Systems & Balanced Scorecard Alignment\n*   **Current Bias:** Middle managers and Sales Heads are evaluated on consolidated 'Quarterly Volume Targets'. Since ICE vehicles have established dealer networks and 15% margins (compared to 2% for EVs), managers naturally focus on ICE sales. The unified sales dashboard masks slow EV adoption.\n*   **Proposed Improvement (Balanced Scorecard Approach):** Separate the metrics and incentives for ICE and EV:\n    *   *Financial:* Track EV-specific revenue growth and margins separately.\n    *   *Customer:* Measure customer education, satisfaction, and EV brand awareness.\n    *   *Internal Processes:* Track EV-specific quality, charging standards compliance, and battery efficiency.\n    *   *Learning & Growth:* Link incentives to retraining factory employees from engine assembly to EV software and battery systems, helping to reduce union resistance.",
+            "module": 8
+        }
+    ]
+}

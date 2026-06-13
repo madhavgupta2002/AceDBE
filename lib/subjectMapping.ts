@@ -273,6 +273,7 @@ export const SUBJECTS: Subject[] = [
   },
   {
     name: 'Entrepreneurial Hypothesis Testing',
+    finalExam: false,
     description: '',
     icon: 'Lightbulb',
     aliases: [
@@ -282,6 +283,7 @@ export const SUBJECTS: Subject[] = [
   },
   {
     name: 'Sustainability Measures for SMEs',
+    finalExam: false,
     description: '',
     icon: 'BarChart3',
     aliases: [
@@ -295,6 +297,7 @@ export const SUBJECTS: Subject[] = [
     name: 'Digital Design Tools and Documentation & Presentation',
     description: '',
     icon: 'BookOpen',
+    finalExam: false,
     aliases: [
       { batch: 1, code: 'SE51x', term: 5 },
       { batch: 2, code: '', term: 5 },

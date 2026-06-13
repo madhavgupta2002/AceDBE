@@ -1,0 +1,316 @@
+{
+    "exam_metadata": {
+        "subject_name": "Operations Management",
+        "exam_date": "15 Feb 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "2",
+            "question_text": "[Material Handling Manufacturing Firm Case] A manufacturing firm is engaged in the production of material handling equipment. Each product is engineered in-house and consists of nearly 750 components, which are assembled through a multi-stage manufacturing process. The final stage involves assembly and testing, where all major sub-assemblies are integrated, and the product is tested for quality and performance before being dispatched.\n\nExcept for a small number of off-the-shelf components, most parts are manufactured internally. The organization operates five major manufacturing facilities, collectively housing 700 machine tools, 50 welding units, and 12 presses used to produce various components. Machines are grouped by function, with each group manufacturing a specific set of components. Welding, pressing, and final assembly operations are common across all product variants.\n\nThe firm manufactures approximately 70 different models, with several sub-assembly-level variations within each model. For example, certain components such as cover plates may be made from aluminium, steel, or polymer depending on the intended application. In addition, customers may request optional add-on features, which are incorporated during assembly based on individual orders. Given the wide range of components and materials required, the firm maintains a large raw material store to stock and issue materials as needed.\n\nBased on the description of the material handling equipment manufacturer, which operations system best describes the firm?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Intermittent flow system",
+                "B": "Jumbled flow system",
+                "C": "Streamlined flow system",
+                "D": "Continuous flow system"
+            },
+            "correct_option_label": "A",
+            "explanation": "An intermittent flow system is characterized by the production of a wide variety of products in lower volumes. The firm uses general-purpose machines grouped by function to handle diverse, customized orders.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "Refer to the case study in Question ID 2. Where is the maximum investment in inventory most likely to be found in this organization?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Finished goods and raw materials",
+                "B": "Raw materials",
+                "C": "Finished goods only",
+                "D": "Raw materials and work-in-progress"
+            },
+            "correct_option_label": "D",
+            "explanation": "Due to a high variety of customized models, holding high finished goods is risky. Thus, most inventory investment lies in raw materials and work-in-progress moving through functional stages.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "Refer to the case study in Question ID 2. Which combination of actions would most effectively improve the firm’s competitiveness in terms of quality, delivery, flexibility, and cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Discontinue several products and reduce the number of models",
+                "B": "Invest in supplier development",
+                "C": "Implement lead-time reduction projects",
+                "D": "(B) and (C)"
+            },
+            "correct_option_label": "D",
+            "explanation": "Investing in supplier development improves input quality, while lead-time reduction programs enhance delivery speed and flexibility without requiring the firm to sacrifice product variety.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "[Project Network Analysis] Please consider the below data on project network problem to answer the next set of questions.\n\n| Activity | Predecessor | Duration (weeks) |\n|---|---|---|\n| A | | 2 |\n| B | A | 3 |\n| C | A | 6 |\n| D | A | 4 |\n| E | B | 3 |\n| F | B | 8 |\n| G | C, E | 6 |\n| H | F, G | 3 |\n| I | D | 4 |\n| J | H, I | 2 |\n\nIn a project network, if multiple critical paths exist, what is the primary implication for project management?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The project can be completed earlier than planned.",
+                "B": "Resources must be carefully managed across multiple paths to avoid delays.",
+                "C": "Slack time can be ignored for all activities.",
+                "D": "The network should be redesigned to merge the paths."
+            },
+            "correct_option_label": "B",
+            "explanation": "Multiple critical paths mean that several parallel sequences of activities have zero slack. A delay in any of these paths will delay the overall project, necessitating tight resource coordination.",
+            "module": 2
+        },
+        {
+            "question_id": "7",
+            "question_text": "Refer to the project network data in Question ID 6. Activity F has a slack of 1 week. Which statement best explains this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "F can be delayed indefinitely.",
+                "B": "The slack is an error; all activities must have zero slack.",
+                "C": "F is on a critical path but has a buffer due to parallel activities.",
+                "D": "F is not on any critical path and can be delayed by 1 week without affecting the project."
+            },
+            "correct_option_label": "D",
+            "explanation": "Slack represents the amount of buffer time an activity has. A slack of 1 week for activity F indicates it can be delayed by up to 1 week without pushing back the final project completion date.",
+            "module": 2
+        },
+        {
+            "question_id": "8",
+            "question_text": "Refer to the project network data in Question ID 6. Which of the following is a correct interpretation of Earliest Start (ES) and Latest Finish (LF)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "ES is the earliest an activity can start without delaying predecessors, and LF is the latest it can finish without delaying successors",
+                "B": "ES is set by resource availability, and LF is set by external constraints",
+                "C": "ES is the earliest completion date, and LF is the latest start date"
+            },
+            "correct_option_label": "A",
+            "explanation": "Earliest Start (ES) is the earliest possible time an activity can begin immediately after its predecessors finish. Latest Finish (LF) is the latest time an activity can complete without delaying any subsequent activities.",
+            "module": 2
+        },
+        {
+            "question_id": "9",
+            "question_text": "Refer to the project network data in Question ID 6. In the network, which set of activities is most likely to require close monitoring to avoid cumulative delays?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A → C → G → H → J",
+                "B": "D → I → J",
+                "C": "B → E → G → H",
+                "D": "Both A → B → E → G → H → J and A → C → G → H → J"
+            },
+            "correct_option_label": "D",
+            "explanation": "Calculating path durations: Path 1 (A-B-E-G-H-J) = 2+3+3+6+3+2 = 19 weeks. Path 2 (A-C-G-H-J) = 2+6+6+3+2 = 19 weeks. Since both are parallel critical paths, any delay on either path delays the whole project.",
+            "module": 2
+        },
+        {
+            "question_id": "10",
+            "question_text": "Refer to the project network data in Question ID 6. If activity C is delayed by 2 weeks, how will this affect the overall project duration?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It will increase by 2 weeks",
+                "B": "It will increase by 5 weeks",
+                "C": "It will remain unchanged",
+                "D": "It will increase by 3 weeks"
+            },
+            "correct_option_label": "A",
+            "explanation": "Activity C lies on the critical path A → C → G → H → J (19 weeks). Since it has zero slack, any delay in C will directly increase the overall project duration by that exact amount (2 weeks).",
+            "module": 2
+        },
+        {
+            "question_id": "11",
+            "question_text": "Refer to the project network data in Question ID 6. Activity J depends on both H and I. If activity I is delayed by 3 weeks but has slack of 7 weeks, what is the impact?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "There will be no impact as long as the delay is within the slack",
+                "B": "Activity H will automatically absorb the delay",
+                "C": "Activity J will be delayed by 3 weeks",
+                "D": "The entire project will be delayed"
+            },
+            "correct_option_label": "A",
+            "explanation": "Because the delay of 3 weeks is less than the activity's total slack of 7 weeks, it will not exceed the buffer and will have no impact on the overall project completion date.",
+            "module": 2
+        },
+        {
+            "question_id": "12",
+            "question_text": "Little’s Law is expressed as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Inventory = Price × Quantity",
+                "B": "Average Work in process inventory = Average flow rate × Average Lead Time",
+                "C": "Output = Input / Time",
+                "D": "Capacity = Demand / Time"
+            },
+            "correct_option_label": "B",
+            "explanation": "Little's Law is a fundamental operations management equation defined as: $WIP = R \\times T$, where $WIP$ is average work-in-process inventory, $R$ is average throughput/flow rate, and $T$ is average lead time.",
+            "module": 3
+        },
+        {
+            "question_id": "13",
+            "question_text": "In a manufacturing firm, the following operational decisions are taken.\n\nD1: Assigning an additional technician to perform daily machine inspections and preventive checks\nD2: Installing an automated drilling machine in place of a manual operation\n\nWhich of the following combinations best describes the impact of these decisions?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "D1: Increase in cost; D2: Improvement in quality",
+                "B": "D1: Reduction in delivery performance; D2: Improvement in quality",
+                "C": "D1: Decrease in cost; D2: Reduction in flexibility",
+                "D": "D1: Decrease in quality; D2: Improvement in flexibility"
+            },
+            "correct_option_label": "A",
+            "explanation": "Assigning an additional technician (D1) increases operational labor costs. Replacing manual drilling with an automated system (D2) increases process consistency and precision, directly improving quality.",
+            "module": 3
+        },
+        {
+            "question_id": "14",
+            "question_text": "If the average flow rate (throughput) of a process is 10 units per hour and the average lead time is 5 hours, what is the average work-in-process (WIP) in the system?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "50 units",
+                "B": "5 units",
+                "C": "2 units",
+                "D": "10 units"
+            },
+            "correct_option_label": "A",
+            "explanation": "Using Little's Law: \n$$\\text{WIP} = \\text{Flow Rate} \\times \\text{Lead Time}$$\n$$\\text{WIP} = 10 \\text{ units/hour} \\times 5 \\text{ hours} = 50 \\text{ units}.$$",
+            "module": 3
+        },
+        {
+            "question_id": "15",
+            "question_text": "A production line has three stations with capacities of 6, 4, and 5 units per hour. The capacity of the overall system is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "4 units per hour",
+                "B": "6 units per hour",
+                "C": "5 units per hour",
+                "D": "15 units per hour"
+            },
+            "correct_option_label": "A",
+            "explanation": "The capacity of a serial production line is limited by its bottleneck, which is the station with the lowest capacity. Among 6, 4, and 5, the lowest capacity is 4 units per hour.",
+            "module": 3
+        },
+        {
+            "question_id": "16",
+            "question_text": "Which station is the bottleneck in a three-station line?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "First station",
+                "B": "Station with lowest utilization",
+                "C": "Station with lowest capacity",
+                "D": "Last station"
+            },
+            "correct_option_label": "C",
+            "explanation": "The bottleneck is defined as the stage or station with the lowest processing capacity, which restricts the total output rate of the entire production line.",
+            "module": 3
+        },
+        {
+            "question_id": "17",
+            "question_text": "The process capability index (Cp) is primarily used to assess:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Process stability",
+                "B": "Mean centering",
+                "C": "Number of defects",
+                "D": "Process spread relative to specifications"
+            },
+            "correct_option_label": "D",
+            "explanation": "The process capability index ($C_p$) compares the total allowable design specification width (USL - LSL) to the natural variation (process spread of $6\\sigma$) of the process.",
+            "module": 3
+        },
+        {
+            "question_id": "18",
+            "question_text": "Which of the following correctly compares the meaning of the process capability index (Cp) when it is greater than 1 and less than 1?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cp > 1 indicates statistical control, while Cp < 1 indicates instability",
+                "B": "Cp > 1 indicates that the process spread is smaller than the specification width, while Cp < 1 indicates that the process spread is larger than the specification width",
+                "C": "Cp > 1 indicates that the process mean is centered, while Cp < 1 indicates that the process is off-center",
+                "D": "Cp > 1 indicates zero defects, while Cp < 1 indicates that defects exist"
+            },
+            "correct_option_label": "B",
+            "explanation": "A $C_p > 1$ means the process variation ($6\\sigma$) fits comfortably within the design tolerances, whereas $C_p < 1$ indicates that the process spread is too wide, resulting in output falling outside specifications.",
+            "module": 3
+        },
+        {
+            "question_id": "20",
+            "question_text": "[Inventory Management Case] A restaurant consumes rice at a constant rate of 100 kg per day throughout the year. The purchase price of rice from the regular supplier is ₹10 per kg. To store rice and maintain its quality, the restaurant incurs an annual holding cost of ₹2 per kg, which includes storage, handling, and spoilage-related expenses.\n\nThe restaurant currently procures rice from a wholesale supplier, referred to as Supplier S1. Placing an order with this supplier requires only a phone call and does not involve any cost. However, once the rice is ready, the restaurant must send a vehicle to collect the order. The cost of each vehicle trip is ₹100, travel time is negligible, and the lead time between placing the order and receiving the rice from Supplier S1 is 5 days.\n\nA second supplier, referred to as Supplier S2, has recently opened a store near the restaurant. To place an order with Supplier S2, a staff member must visit the store, at a cost of ₹81 per order. Supplier S2 delivers the rice directly to the restaurant at no additional cost. The lead time for delivery from Supplier S2 is 8 days, which is longer than that of Supplier S1. However, Supplier S2 offers a lower unit purchase price of ₹9.50 per kg, regardless of the order quantity. Assume that demand is constant, shortages are not allowed, and a year consists of 365 days.\n\nCompared to Supplier S1, Supplier S2 is most appropriately described as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A higher-cost, shorter lead-time supplier",
+                "B": "A lower-cost, shorter lead-time supplier",
+                "C": "A higher-cost, longer lead-time supplier",
+                "D": "A lower-cost, longer lead-time supplier"
+            },
+            "correct_option_label": "D",
+            "explanation": "Supplier S2 has a lower purchase cost (₹9.50/kg vs ₹10/kg) but a longer lead time (8 days vs 5 days) compared to Supplier S1.",
+            "module": 4
+        },
+        {
+            "question_id": "21",
+            "question_text": "Refer to the case study in Question ID 20. What is the restaurant’s annual demand for rice?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "30,000 kg",
+                "B": "18,250 kg",
+                "C": "40,000 kg",
+                "D": "36,500 kg"
+            },
+            "correct_option_label": "D",
+            "explanation": "Annual demand is calculated by multiplying the daily consumption rate by the number of days in a year:\n$$\\text{Annual Demand} = 100\\text{ kg/day} \\times 365\\text{ days/year} = 36,500\\text{ kg/year}.$$",
+            "module": 4
+        },
+        {
+            "question_id": "22",
+            "question_text": "Refer to the case study in Question ID 20. If the restaurant orders rice from Supplier S1, what order quantity approximately minimizes the total annual inventory-related cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1,910 kg",
+                "B": "1,360 kg",
+                "C": "1,610 kg",
+                "D": "2,210 kg"
+            },
+            "correct_option_label": "A",
+            "explanation": "Using the Economic Order Quantity (EOQ) formula:\n$$Q^* = \\sqrt{\\frac{2DS}{H}} = \\sqrt{\\frac{2 \\times 36,500 \\times 100}{2}} = \\sqrt{3,650,000} \\approx 1,910.49\\text{ kg}.$$",
+            "module": 4
+        },
+        {
+            "question_id": "23",
+            "question_text": "Refer to the case study in Question ID 20. If the restaurant orders rice from Supplier S2, what order quantity approximately minimizes the total annual inventory-related cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "2,120 kg",
+                "B": "2,620 kg",
+                "C": "1,220 kg",
+                "D": "1,720 kg"
+            },
+            "correct_option_label": "D",
+            "explanation": "Using the Economic Order Quantity (EOQ) formula with S2's ordering cost:\n$$Q^* = \\sqrt{\\frac{2DS}{H}} = \\sqrt{\\frac{2 \\times 36,500 \\times 81}{2}} = \\sqrt{2,956,500} \\approx 1,719.45\\text{ kg}.$$",
+            "module": 4
+        },
+        {
+            "question_id": "24",
+            "question_text": "Refer to the case study in Question ID 20. For which supplier will the reorder point be higher, and why?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Supplier S2, because longer lead time requires more inventory to cover demand",
+                "B": "Supplier S1, because ordering frequency is higher",
+                "C": "The reorder point will be the same for both suppliers",
+                "D": "Supplier S1, because shorter lead time requires earlier reordering"
+            },
+            "correct_option_label": "A",
+            "explanation": "Reorder point is calculated as $\\text{Daily Demand} \\times \\text{Lead Time}$. Since daily demand is identical (100 kg/day), the supplier with the longer lead time (S2 with 8 days vs S1 with 5 days) will have a higher reorder point (800 kg vs 500 kg).",
+            "module": 4
+        },
+        {
+            "question_id": "25",
+            "question_text": "Quality Control\n\nA manufacturing process is being monitored using a p-chart to track the proportion of defectives. Twenty samples are taken from the process over time, with each sample consisting of 100 units. The number of defectives observed in each sample is given in the table below.\n\n| Sample | Number of Defectives | Sample | Number of Defectives |\n|---|---|---|---|\n| 1 | 7 | 11 | 14 |\n| 2 | 14 | 12 | 10 |\n| 3 | 6 | 13 | 11 |\n| 4 | 9 | 14 | 12 |\n| 5 | 12 | 15 | 9 |\n| 6 | 3 | 16 | 13 |\n| 7 | 11 | 17 | 7 |\n| 8 | 7 | 18 | 15 |\n| 9 | 7 | 19 | 11 |\n| 10 | 8 | 20 | 16 |\n\nThe total number of defectives observed across all samples is 215. Since each sample contains 100 units, the average proportion of defectives across all samples is 0.1075. Based on this value, the Upper Control Limit (UCL) is 0.20 and the Lower Control Limit (LCL) is 0.015.\n\nBased on Sample 18 and given control limits, what conclusion can be drawn?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The point corresponding to Sample 18 lies within the control limits.",
+                "B": "The point corresponding to Sample 18 lies below the Lower Control Limit (LCL).",
+                "C": "The point corresponding to Sample 18 lies above the Upper Control Limit (UCL)."
+            },
+            "correct_option_label": "A",
+            "explanation": "For Sample 18, the number of defectives is 15 out of 100, which gives a sample proportion ($p$) of $15/100 = 0.15$. Since $0.015 \\text{ (LCL)} < 0.15 < 0.20 \\text{ (UCL)}$, the point lies within the control limits.",
+            "module": 4
+        }
+    ]
+}
