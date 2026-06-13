@@ -65,6 +65,76 @@ const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) =
     }
   };
 
+  // Split subjects: those with a final exam first, then those without
+  const examSubjects = subjectsForTerm.filter(({ subject }) => subject.finalExam !== false);
+  const noExamSubjects = subjectsForTerm.filter(({ subject }) => subject.finalExam === false);
+
+  const renderSubjectCard = (
+    { subject, alias }: { subject: typeof subjectsForTerm[number]['subject']; alias: typeof subjectsForTerm[number]['alias'] },
+    noExam: boolean,
+  ) => (
+    <Link
+      key={alias.code}
+      href={`/${alias.code}`}
+      className={`block border rounded-xl transition-all duration-200 cursor-pointer group shadow-card hover:shadow-card-hover ${
+        noExam
+          ? 'bg-amber-950/20 border-amber-800/25 hover:border-amber-500/40'
+          : 'bg-surface border-surface-border/60 hover:border-emerald-500/40'
+      }`}
+    >
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-3 sm:p-3.5">
+        {/* Subject Info */}
+        <div className="flex items-center space-x-3 sm:space-x-4 flex-1 mb-3 sm:mb-0">
+          <div className="bg-emerald-600/90 p-2.5 sm:p-3 rounded-xl group-hover:bg-emerald-500 transition-colors shrink-0 shadow-glow-emerald">
+            {React.createElement(getIconForCode(alias.code), {
+              className: 'w-5 h-5 sm:w-6 sm:h-6 text-white',
+            })}
+          </div>
+          <div className="flex-1 min-w-0">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3">
+              <span className="text-[11px] sm:text-xs text-slate-300 bg-slate-700/60 px-2 py-0.5 sm:py-1 font-semibold w-fit mb-1 sm:mb-0 text-center min-w-[50px] rounded-md border border-slate-600/30">
+                {alias.code}
+              </span>
+              <h3 className="text-sm sm:text-base font-bold text-white leading-tight">
+                {getDisplayNameForAlias(subject, alias)}
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        {/* Action Buttons + Arrow */}
+        <div className="flex items-center justify-end mt-2 sm:mt-0 gap-3 sm:gap-4">
+          <div className="flex items-center gap-1.5">
+            <Link
+              href={`/${alias.code}/notes`}
+              onClick={(e) => e.stopPropagation()}
+              className="p-2 bg-indigo-600/90 hover:bg-indigo-500 text-white transition-all rounded-lg border border-indigo-500/35"
+              title="View Notes"
+            >
+              <BookOpen className="w-4 h-4" />
+            </Link>
+            <button
+              onClick={(e) => { e.preventDefault(); handleYoutubeClick(e, alias.code); }}
+              className="p-2 bg-red-600/80 hover:bg-red-500 text-white transition-all rounded-lg border border-red-500/30"
+              title="Watch All Videos"
+            >
+              <Youtube className="w-4 h-4" />
+            </button>
+            <Link
+              href={`/${alias.code}`}
+              onClick={(e) => e.stopPropagation()}
+              className="p-2 bg-emerald-700/85 hover:bg-emerald-600 text-white transition-all rounded-lg border border-emerald-600/35"
+              title="Start Quiz"
+            >
+              <ClipboardList className="w-4 h-4" />
+            </Link>
+          </div>
+          <ArrowRight className="w-5 h-5 text-slate-600 group-hover:text-emerald-400 group-hover:translate-x-1 transition-all ml-1" />
+        </div>
+      </div>
+    </Link>
+  );
+
   return (
     <div className="container mx-auto px-3 sm:px-4 py-2 sm:py-4 max-w-4xl relative z-[1]">
       {/* Term heading */}
@@ -75,65 +145,14 @@ const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) =
 
 
       <div className="space-y-3">
-        {subjectsForTerm.map(({ subject, alias }) => (
-          <Link
-            key={alias.code}
-            href={`/${alias.code}`}
-            className="block bg-surface border border-surface-border/60 hover:border-emerald-500/40 rounded-xl transition-all duration-200 cursor-pointer group shadow-card hover:shadow-card-hover"
-          >
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-3 sm:p-3.5">
-              {/* Subject Info */}
-              <div className="flex items-center space-x-3 sm:space-x-4 flex-1 mb-3 sm:mb-0">
-                <div className="bg-emerald-600/90 p-2.5 sm:p-3 rounded-xl group-hover:bg-emerald-500 transition-colors shrink-0 shadow-glow-emerald">
-                  {React.createElement(getIconForCode(alias.code), {
-                    className: 'w-5 h-5 sm:w-6 sm:h-6 text-white',
-                  })}
-                </div>
-                <div className="flex-1 min-w-0">
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-3">
-                    <span className="text-[11px] sm:text-xs text-slate-300 bg-slate-700/60 px-2 py-0.5 sm:py-1 font-semibold w-fit mb-1 sm:mb-0 text-center min-w-[50px] rounded-md border border-slate-600/30">
-                      {alias.code}
-                    </span>
-                    <h3 className="text-sm sm:text-base font-bold text-white leading-tight">
-                      {getDisplayNameForAlias(subject, alias)}
-                    </h3>
-                  </div>
-                </div>
-              </div>
-
-              {/* Action Buttons + Arrow */}
-              <div className="flex items-center justify-end mt-2 sm:mt-0 gap-3 sm:gap-4">
-                <div className="flex items-center gap-1.5">
-                  <Link
-                    href={`/${alias.code}/notes`}
-                    onClick={(e) => e.stopPropagation()}
-                    className="p-2 bg-indigo-600/90 hover:bg-indigo-500 text-white transition-all rounded-lg border border-indigo-500/35"
-                    title="View Notes"
-                  >
-                    <BookOpen className="w-4 h-4" />
-                  </Link>
-                  <button
-                    onClick={(e) => { e.preventDefault(); handleYoutubeClick(e, alias.code); }}
-                    className="p-2 bg-red-600/80 hover:bg-red-500 text-white transition-all rounded-lg border border-red-500/30"
-                    title="Watch All Videos"
-                  >
-                    <Youtube className="w-4 h-4" />
-                  </button>
-                  <Link
-                    href={`/${alias.code}`}
-                    onClick={(e) => e.stopPropagation()}
-                    className="p-2 bg-emerald-700/85 hover:bg-emerald-600 text-white transition-all rounded-lg border border-emerald-600/35"
-                    title="Start Quiz"
-                  >
-                    <ClipboardList className="w-4 h-4" />
-                  </Link>
-                </div>
-                <ArrowRight className="w-5 h-5 text-slate-600 group-hover:text-emerald-400 group-hover:translate-x-1 transition-all ml-1" />
-              </div>
-            </div>
-          </Link>
-        ))}
+        {examSubjects.map((item) => renderSubjectCard(item, false))}
       </div>
+
+      {noExamSubjects.length > 0 && (
+        <div className="mt-7 space-y-3">
+          {noExamSubjects.map((item) => renderSubjectCard(item, true))}
+        </div>
+      )}
 
       {/* Custom Quiz Generator */}
       <CustomQuizGenerator />

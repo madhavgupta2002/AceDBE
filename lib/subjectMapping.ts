@@ -40,6 +40,14 @@ export const SUBJECTS: Subject[] = [
     ],
   },
   {
+    name: 'Business Statistics for Entrepreneurs III',
+    description: 'Statistical methods and data analysis for business decision-making',
+    icon: 'BarChart3',
+    aliases: [
+      { batch: 2, code: 'DS31x_B2', term: 3 },
+    ],
+  },
+  {
     name: 'Creativity Mindset for Innovation and Imagination',
     description: 'Developing creative thinking and innovation capabilities',
     icon: 'Lightbulb',
@@ -134,6 +142,7 @@ export const SUBJECTS: Subject[] = [
     name: 'Venturing on a Budget: Rs.250 Venture',
     description: '',
     icon: 'Rocket',
+    finalExam: false,
     aliases: [
       { batch: 1, code: 'PJ21x', term: 2 },
       { batch: 2, code: 'PJ21x', term: 2 },
@@ -165,7 +174,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'Lightbulb',
     aliases: [
       { batch: 1, code: 'EP31x', term: 3 },
-      { batch: 2, code: '', term: 3 },
+      { batch: 2, code: 'EP31x', term: 3 },
     ],
   },
   {
@@ -174,7 +183,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'Lightbulb',
     aliases: [
       { batch: 1, code: 'SE31x', term: 3 },
-      { batch: 2, code: '', term: 3 },
+      { batch: 2, code: 'SE31x', term: 3 },
     ],
   },
   {
@@ -183,16 +192,17 @@ export const SUBJECTS: Subject[] = [
     icon: 'TrendingUp',
     aliases: [
       { batch: 1, code: 'MK31x', term: 3 },
-      { batch: 2, code: '', term: 3 },
+      { batch: 2, code: 'MK31x', term: 3 },
     ],
   },
   {
     name: 'Spreadsheets for Business Decisions',
     description: '',
     icon: 'BarChart3',
+    finalExam: false,
     aliases: [
       { batch: 1, code: 'AE31x', term: 3 },
-      { batch: 2, code: '', term: 3 },
+      { batch: 2, code: 'AE31x', term: 3 },
     ],
   },
   {
@@ -201,16 +211,17 @@ export const SUBJECTS: Subject[] = [
     icon: 'BookOpen',
     aliases: [
       { batch: 1, code: 'ID32x', term: 3 },
-      { batch: 2, code: '', term: 3 },
+      { batch: 2, code: 'ID32x', term: 3 },
     ],
   },
   {
     name: 'Understanding Indian Culture Theatre and its presence in daily life',
     description: '',
     icon: 'BookOpen',
+    finalExam: false,
     aliases: [
       { batch: 1, code: 'ID31x', term: 3 },
-      { batch: 2, code: '', term: 3 },
+      { batch: 2, code: 'ID31x', term: 3 },
     ],
   },
 

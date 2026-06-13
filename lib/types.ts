@@ -70,4 +70,5 @@ export interface Subject {
   description: string;
   icon: string; // lucide-react icon name (e.g., 'MessageSquare', 'BarChart3')
   aliases: SubjectAlias[];
+  finalExam?: boolean; // true (default) if the subject has a final exam; set false for project/assessment-based courses
 }
