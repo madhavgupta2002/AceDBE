@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import { Linkedin, Menu, X, BarChart2 } from 'lucide-react';
+import { Linkedin, Menu, X, BarChart2, GraduationCap } from 'lucide-react';
 import Link from 'next/link';
 
 interface HeaderProps {
@@ -71,6 +71,15 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
                 {/* Right section - Desktop */}
                 <div className="hidden sm:flex items-center gap-2">
                     <Link
+                        href="/marks"
+                        className="flex items-center gap-2 px-4 py-2 bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 rounded-xl transition-all duration-300 text-sm font-semibold border border-sky-400/25 hover:border-sky-400/40 backdrop-blur-sm"
+                        aria-label="Marks Import"
+                    >
+                        <GraduationCap className="h-4 w-4" />
+                        <span>Marks</span>
+                    </Link>
+                    {/* CGPA page hidden from nav to avoid confusion with Marks — code kept intentionally.
+                    <Link
                         href="/cgpa"
                         className="flex items-center gap-2 px-4 py-2 bg-purple-400/10 hover:bg-purple-400/20 text-purple-300 rounded-xl transition-all duration-300 text-sm font-semibold border border-purple-400/25 hover:border-purple-400/40 backdrop-blur-sm"
                         aria-label="CGPA Calculator"
@@ -78,6 +87,7 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
                         <BarChart2 className="h-4 w-4" />
                         <span>CGPA</span>
                     </Link>
+                    */}
                     <a
                         href="https://www.linkedin.com/in/madhavgupta2002/"
                         target="_blank"
@@ -108,6 +118,15 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
             {mobileMenuOpen && (
                 <div className="sm:hidden border-t border-slate-700/40 bg-[#0b1120]/98 backdrop-blur-xl px-4 py-3 space-y-2">
                     <Link
+                        href="/marks"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="w-full flex items-center gap-2 px-4 py-2.5 bg-sky-400/10 text-sky-300 rounded-xl text-sm font-semibold border border-sky-400/25"
+                    >
+                        <GraduationCap className="h-4 w-4" />
+                        Marks Import
+                    </Link>
+                    {/* CGPA page hidden from nav to avoid confusion with Marks — code kept intentionally.
+                    <Link
                         href="/cgpa"
                         onClick={() => setMobileMenuOpen(false)}
                         className="w-full flex items-center gap-2 px-4 py-2.5 bg-purple-400/10 text-purple-300 rounded-xl text-sm font-semibold border border-purple-400/25"
@@ -115,6 +134,7 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
                         <BarChart2 className="h-4 w-4" />
                         CGPA Calculator
                     </Link>
+                    */}
                     <a
                         href="https://www.linkedin.com/in/madhavgupta2002/"
                         target="_blank"

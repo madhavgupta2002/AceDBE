@@ -52,3 +52,10 @@ export function isValidTotal(total: number): boolean {
   return Number.isFinite(total) && total >= 0 && total <= 100;
 }
 
+// Grade points for a given letter grade (null if the grade is not valid).
+export function gradePoints(letter: string | null | undefined): number | null {
+  if (!letter) return null;
+  const key = letter.trim().toUpperCase() as LetterGrade;
+  return key in GRADE_POINTS ? GRADE_POINTS[key] : null;
+}
+
