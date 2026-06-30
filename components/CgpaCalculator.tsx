@@ -1,16 +1,11 @@
 'use client';
 
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { gradeFromTotal, isValidTotal, parseNumberOrNull, type LetterGrade } from '@/lib/cgpa/grades';
 import { CGPA_TERMS, getAllSubjects, type CgpaSubject } from '@/lib/cgpa/subjects';
+import { loadStoredMarks, saveStoredMarks, type MarksInput } from '@/lib/cgpa/storage';
+import { useBatch } from '@/contexts/BatchContext';
 import { Award, Trash2 } from 'lucide-react';
-
-type MarksInput = {
-  total: string;
-  internal: string;
-  final: string;
-  gradeOverride: '' | LetterGrade;
-};
 
 type ComputedMark = {
   isCounted: boolean;
@@ -101,8 +96,19 @@ const GRADE_BADGE: Record<string, string> = {
 };
 
 export default function CgpaCalculator() {
+  const { selectedBatch, setSelectedBatch } = useBatch();
   const [marksById, setMarksById] = useState<Record<string, MarksInput>>({});
-  const allSubjects = useMemo(() => getAllSubjects(), []);
+  const allSubjects = useMemo(() => getAllSubjects(selectedBatch), [selectedBatch]);
+
+  // Hydrate from localStorage (also picks up marks imported from the Marks page).
+  const hydrated = useRef(false);
+  useEffect(() => {
+    setMarksById(loadStoredMarks());
+    hydrated.current = true;
+  }, []);
+  useEffect(() => {
+    if (hydrated.current) saveStoredMarks(marksById);
+  }, [marksById]);
 
   // Per-term stats
   const termStatsMap = useMemo(() => {
@@ -160,14 +166,29 @@ export default function CgpaCalculator() {
               Enter <span className="text-slate-300 font-medium">Internal + Final</span>, or fill <span className="text-slate-300 font-medium">Total</span> directly. Grade dropdown overrides auto-calc.
             </p>
           </div>
-          <button
-            onClick={clearAll}
-            className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-surface hover:bg-surface-light border border-surface-border/60 hover:border-red-800/60 text-slate-400 hover:text-red-400 rounded-lg transition-all text-xs font-medium self-start sm:self-auto"
-            type="button"
-          >
-            <Trash2 className="w-3.5 h-3.5" />
-            Clear All
-          </button>
+          <div className="flex items-center gap-2 self-start sm:self-auto">
+            <div className="inline-flex bg-surface-dark/60 border border-surface-border/60 p-0.5 gap-0.5 rounded-lg">
+              {[1, 2].map((b) => (
+                <button
+                  key={b}
+                  onClick={() => setSelectedBatch(b)}
+                  className={`px-2.5 py-1 text-[11px] font-semibold rounded-md transition-colors ${selectedBatch === b ? 'bg-amber-600 text-white' : 'text-slate-400 hover:text-white'
+                    }`}
+                  type="button"
+                >
+                  Batch {b}
+                </button>
+              ))}
+            </div>
+            <button
+              onClick={clearAll}
+              className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-surface hover:bg-surface-light border border-surface-border/60 hover:border-red-800/60 text-slate-400 hover:text-red-400 rounded-lg transition-all text-xs font-medium"
+              type="button"
+            >
+              <Trash2 className="w-3.5 h-3.5" />
+              Clear All
+            </button>
+          </div>
         </div>
 
         {/* ── Summary bar ── */}
