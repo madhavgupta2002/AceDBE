@@ -1,10 +1,10 @@
 'use client';
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { Bookmark, ChevronDown, Copy, RefreshCw, Trash2 } from 'lucide-react';
-import { parseGrades, type RawRow, type ParsedSubject } from '@/lib/marks/parseGrades';
+import { Bookmark, ChevronDown, ClipboardPaste, Copy, RefreshCw, Trash2 } from 'lucide-react';
+import { parseGrades, parsePastedText, type RawRow, type ParsedSubject } from '@/lib/marks/parseGrades';
 import { gradePoints, gradeFromTotal } from '@/lib/cgpa/grades';
-import { CGPA_TERMS } from '@/lib/cgpa/subjects';
+import { CGPA_TERMS, getSubjectsForTerm } from '@/lib/cgpa/subjects';
 import { useBatch } from '@/contexts/BatchContext';
 
 const MOODLE_LOGIN_URL = 'https://moodle.iimb.ac.in/portal/';
@@ -69,6 +69,8 @@ export default function MarksPage() {
     const [origin, setOrigin] = useState('');
     const [rows, setRows] = useState<RawRow[] | null>(null);
     const [showRaw, setShowRaw] = useState(false);
+    const [pasteText, setPasteText] = useState('');
+    const [pasteError, setPasteError] = useState(false);
     const bookmarkletRef = useRef<HTMLAnchorElement>(null);
 
     // Resolve origin + read imported data on mount.
@@ -93,19 +95,27 @@ export default function MarksPage() {
     const parsed = useMemo<ParsedSubject[]>(() => (rows ? parseGrades(rows, selectedBatch) : []), [rows, selectedBatch]);
     const matchedCount = useMemo(() => parsed.filter((p) => p.match).length, [parsed]);
 
-    // Group matched subjects by term (sorted), keep unmatched separate.
+    // Show EVERY curriculum subject for each term; fill in marks where we have
+    // them, leave the rest blank. Always renders all terms for the batch.
     const termGroups = useMemo(() => {
-        const byTerm = new Map<number, ParsedSubject[]>();
+        const byId = new Map<string, ParsedSubject>();
         for (const s of parsed) {
-            if (!s.match) continue;
-            const t = s.match.term;
-            if (!byTerm.has(t)) byTerm.set(t, []);
-            byTerm.get(t)!.push(s);
+            if (s.match) byId.set(s.match.id, s);
         }
         return CGPA_TERMS
-            .filter((t) => byTerm.has(t))
-            .map((term) => ({ term, subjects: byTerm.get(term)!, ...gpaFor(byTerm.get(term)!) }));
-    }, [parsed]);
+            .map((term) => {
+                const subjects = getSubjectsForTerm(term, selectedBatch);
+                const rowsForTerm = subjects.map((subject) => ({
+                    subject,
+                    data: byId.get(subject.id) ?? null,
+                }));
+                const filled = rowsForTerm
+                    .map((r) => r.data)
+                    .filter((d): d is ParsedSubject => d !== null);
+                return { term, rows: rowsForTerm, ...gpaFor(filled) };
+            })
+            .filter((g) => g.rows.length > 0);
+    }, [parsed, selectedBatch]);
 
     const unmatched = useMemo(() => parsed.filter((s) => !s.match), [parsed]);
     const overall = useMemo(() => gpaFor(parsed.filter((s) => s.match)), [parsed]);
@@ -123,8 +133,32 @@ export default function MarksPage() {
 
     const clearData = () => {
         setRows(null);
+        setPasteText('');
+        setPasteError(false);
         if (typeof window !== 'undefined') {
             history.replaceState(null, '', window.location.pathname);
+        }
+    };
+
+    // Parse whatever the student copied off their Moodle grade page.
+    const ingestPaste = (text: string) => {
+        setPasteText(text);
+        const parsedRows = parsePastedText(text);
+        if (parsedRows.length) {
+            setRows(parsedRows);
+            setPasteError(false);
+        } else {
+            setPasteError(text.trim().length > 0);
+        }
+    };
+
+    // One-tap paste for browsers that allow clipboard reads.
+    const pasteFromClipboard = async () => {
+        try {
+            const text = await navigator.clipboard.readText();
+            if (text) ingestPaste(text);
+        } catch {
+            /* permission denied — the textarea is the fallback */
         }
     };
 
@@ -137,7 +171,7 @@ export default function MarksPage() {
                 <div>
                     <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight">Marks Import</h1>
                     <p className="text-[11px] text-slate-500 mt-0.5">
-                        Pull your grades straight from Moodle using a one-time bookmarklet — no login or password is ever sent to this app.
+                        Pull your grades from Moodle with a one-time bookmarklet, or just copy &amp; paste your grade page on mobile — no login or password is ever sent to this app.
                     </p>
                 </div>
 
@@ -175,6 +209,45 @@ export default function MarksPage() {
                         <li>While on that page, click the <span className="text-slate-200 font-medium">Import IIMB Marks</span> bookmark.</li>
                         <li>A new tab opens back here with your parsed marks below.</li>
                     </ol>
+
+                    {/* ── Mobile / no-bookmarklet path: copy & paste ── */}
+                    <div className="mt-5 pt-4 border-t border-surface-border/50">
+                        <div className="flex items-center gap-2 mb-2">
+                            <ClipboardPaste className="w-4 h-4 text-sky-400" />
+                            <h3 className="text-xs font-bold text-slate-100">On mobile? Copy &amp; paste instead</h3>
+                        </div>
+                        <ol className="space-y-1.5 text-xs text-slate-400 list-decimal list-inside mb-3">
+                            <li>
+                                Open your{' '}
+                                <a href={MOODLE_GRADE_URL} target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:underline break-all">
+                                    Moodle grade report
+                                </a>{' '}
+                                (log in if asked).
+                            </li>
+                            <li>Long-press the page → <span className="text-slate-200 font-medium">Select all</span> → <span className="text-slate-200 font-medium">Copy</span>.</li>
+                            <li>Come back here, tap the box and <span className="text-slate-200 font-medium">Paste</span> (or use the button).</li>
+                        </ol>
+                        <button
+                            onClick={pasteFromClipboard}
+                            type="button"
+                            className="inline-flex items-center gap-2 px-4 py-2 mb-2 bg-sky-500/15 hover:bg-sky-500/25 text-sky-300 rounded-lg border border-sky-500/30 text-sm font-semibold"
+                        >
+                            <ClipboardPaste className="w-4 h-4" />
+                            Paste my marks
+                        </button>
+                        <textarea
+                            value={pasteText}
+                            onChange={(e) => ingestPaste(e.target.value)}
+                            placeholder="…or tap here and paste your copied Moodle grade page"
+                            rows={3}
+                            className="w-full rounded-lg bg-surface-dark/60 border border-surface-border/60 px-3 py-2 text-xs text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-sky-500/50 resize-y"
+                        />
+                        {pasteError && (
+                            <p className="mt-1.5 text-[11px] text-amber-400">
+                                Couldn&apos;t find any grades in that text. Make sure you copied the whole grade report page.
+                            </p>
+                        )}
+                    </div>
                 </div>
 
                 {/* ── Parsed data ── */}
@@ -210,7 +283,7 @@ export default function MarksPage() {
                     {!rows ? (
                         <div className="flex flex-col items-center justify-center text-center py-10 text-slate-600">
                             <RefreshCw className="w-6 h-6 mb-2 opacity-50" />
-                            <p className="text-xs">No data imported yet. Click the bookmarklet on your Moodle grade page.</p>
+                            <p className="text-xs">No data yet. Use the bookmarklet on your Moodle grade page, or copy &amp; paste it above.</p>
                         </div>
                     ) : (
                         <div className="space-y-4">
@@ -257,19 +330,22 @@ export default function MarksPage() {
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                {group.subjects.map((s, i) => (
-                                                    <tr key={i} className="border-t border-surface-border/30">
-                                                        <td className="px-3 py-1.5 text-slate-300">
-                                                            {s.match?.name || s.name}
-                                                            {s.hasRetake && <span className="ml-1.5 text-[9px] text-amber-500/70">(retake)</span>}
-                                                        </td>
-                                                        <td className="px-2 py-1.5 text-slate-400 text-right tabular-nums">{s.match?.credits ?? '—'}</td>
-                                                        <td className="px-2 py-1.5 text-slate-200 text-right tabular-nums">{fmt(s.cla)}</td>
-                                                        <td className="px-2 py-1.5 text-slate-200 text-right tabular-nums">{fmt(s.final)}</td>
-                                                        <td className="px-2 py-1.5 text-slate-100 text-right tabular-nums font-semibold">{fmt(s.total)}</td>
-                                                        <td className="px-2 py-1.5 text-center font-bold text-slate-200">{effectiveGrade(s) || '—'}</td>
-                                                    </tr>
-                                                ))}
+                                                {group.rows.map((r, i) => {
+                                                    const d = r.data;
+                                                    return (
+                                                        <tr key={i} className="border-t border-surface-border/30">
+                                                            <td className={`px-3 py-1.5 ${d ? 'text-slate-300' : 'text-slate-500'}`}>
+                                                                {r.subject.name}
+                                                                {d?.hasRetake && <span className="ml-1.5 text-[9px] text-amber-500/70">(retake)</span>}
+                                                            </td>
+                                                            <td className="px-2 py-1.5 text-slate-400 text-right tabular-nums">{r.subject.credits}</td>
+                                                            <td className="px-2 py-1.5 text-slate-200 text-right tabular-nums">{fmt(d?.cla ?? null)}</td>
+                                                            <td className="px-2 py-1.5 text-slate-200 text-right tabular-nums">{fmt(d?.final ?? null)}</td>
+                                                            <td className="px-2 py-1.5 text-slate-100 text-right tabular-nums font-semibold">{fmt(d?.total ?? null)}</td>
+                                                            <td className="px-2 py-1.5 text-center font-bold text-slate-200">{(d && effectiveGrade(d)) || '—'}</td>
+                                                        </tr>
+                                                    );
+                                                })}
                                             </tbody>
                                         </table>
                                     </div>
