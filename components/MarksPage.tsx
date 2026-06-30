@@ -8,7 +8,7 @@ import { CGPA_TERMS } from '@/lib/cgpa/subjects';
 import { useBatch } from '@/contexts/BatchContext';
 
 const MOODLE_LOGIN_URL = 'https://moodle.iimb.ac.in/portal/';
-const MOODLE_GRADE_URL = 'https://moodle.iimb.ac.in/grade/report/user/index.php';
+const MOODLE_GRADE_URL = 'https://moodle.iimb.ac.in/grade/report/user/index.php?id=6211';
 
 /**
  * Builds the bookmarklet source. It runs ON the Moodle grade page (so it uses the
