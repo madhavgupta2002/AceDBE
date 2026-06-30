@@ -179,3 +179,50 @@ export function parseGrades(rows: RawRow[], batch?: number): ParsedSubject[] {
 export function isValidLetterGrade(g: string | null): g is LetterGrade {
     return !!g && (VALID_GRADES as string[]).includes(g);
 }
+
+// ── Pasted-text parsing (mobile-friendly path) ───────────────────────────────
+// When a student does "Select all → Copy" on the Moodle grade report and pastes
+// it here, the clipboard holds the visible table text (tab/space/newline
+// separated). We reconstruct RawRow {n, g} pairs so the same parseGrades
+// pipeline can run — no bookmarklet, console, or extension needed.
+
+// A grade-item line always ends in a parenthesised marker: "(Grade)", "(100)",
+// "CLA (25)", "Final Exam (75)", "Final Exam Retake-1 (75)", etc.
+const COMPONENT_RE = /(Total|CLA|Final\s*Exam|Grade)/i;
+// A value cell: a number ("80.00"), a dash, a percentage, or a letter grade.
+const VALUE_RE = /^(?:-|[OABCDEF][+-]?|\d+(?:\.\d+)?%?)$/i;
+
+export function parsePastedText(text: string): RawRow[] {
+    if (!text) return [];
+    const lines = text
+        .split(/\r?\n/)
+        .map((l) => l.replace(/[ \t]+/g, ' ').trim())
+        .filter(Boolean);
+
+    const rows: RawRow[] = [];
+    // Pull a trailing value off a line that also carries the item name.
+    const inline = /^(.*\([^)]*\))\s+(\S.*)$/;
+
+    for (let i = 0; i < lines.length; i++) {
+        const line = lines[i];
+
+        // Case 1: name and value on the same line.
+        const m = line.match(inline);
+        if (m && COMPONENT_RE.test(m[1])) {
+            rows.push({ n: m[1].trim(), g: m[2].trim() });
+            continue;
+        }
+
+        // Case 2: name-only line; the value sits on the following line.
+        if (/\)$/.test(line) && COMPONENT_RE.test(line)) {
+            const next = lines[i + 1] || '';
+            if (VALUE_RE.test(next)) {
+                rows.push({ n: line, g: next });
+                i++;
+            } else {
+                rows.push({ n: line, g: '' });
+            }
+        }
+    }
+    return rows;
+}
