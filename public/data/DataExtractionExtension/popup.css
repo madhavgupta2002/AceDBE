@@ -1,0 +1,388 @@
+/* ============================================
+   IIMBx Transcript Downloader — Popup
+   Institutional minimalism
+   ============================================ */
+
+:root {
+    --navy: #132e57;
+    --navy-70: rgba(19, 46, 87, 0.65);
+    --navy-50: rgba(19, 46, 87, 0.45);
+    --navy-30: rgba(19, 46, 87, 0.28);
+    --navy-15: rgba(19, 46, 87, 0.14);
+    --navy-08: rgba(19, 46, 87, 0.08);
+    --navy-03: rgba(19, 46, 87, 0.035);
+    --paper: #ffffff;
+    --error: #8a1c1c;
+    --sans: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 400px;
+    min-height: 220px;
+    background: var(--paper);
+    color: var(--navy);
+    font-family: var(--sans);
+    font-size: 13px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ─────────── MASTHEAD ─────────── */
+.masthead {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 22px 16px;
+    border-bottom: 1px solid var(--navy-08);
+}
+
+.masthead-mark {
+    width: 22px;
+    height: 22px;
+    color: var(--navy);
+    flex-shrink: 0;
+}
+
+.masthead-eyebrow {
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--navy-70);
+    line-height: 1;
+}
+
+.masthead-title {
+    margin-top: 4px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--navy);
+}
+
+/* ─────────── STAGE ─────────── */
+.stage {
+    padding: 22px;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    animation: panel-in 240ms cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+
+@keyframes panel-in {
+    from {
+        opacity: 0;
+        transform: translateY(2px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ─────────── MESSAGE / LOADER ─────────── */
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+    padding: 20px 0 24px;
+}
+
+.message-icon {
+    width: 30px;
+    height: 30px;
+    color: var(--navy-50);
+}
+
+.message p {
+    color: var(--navy-70);
+    max-width: 260px;
+}
+
+.waiting-hint {
+    font-size: 12px;
+    color: var(--navy-50);
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 36px 0;
+    color: var(--navy-70);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.loader-spin {
+    width: 18px;
+    height: 18px;
+    color: var(--navy);
+    animation: spin 0.85s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ─────────── SEARCH & LIST ─────────── */
+.search {
+    position: relative;
+    margin-bottom: 6px;
+    border-bottom: 1px solid var(--navy-15);
+}
+
+.search-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 13px;
+    height: 13px;
+    color: var(--navy-50);
+}
+
+.search input {
+    width: 100%;
+    padding: 9px 0 9px 22px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--navy);
+}
+
+.course-list {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 14px;
+}
+
+.course-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.course-row:hover {
+    background: var(--navy-03);
+}
+
+.course-row input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox {
+    width: 15px;
+    height: 15px;
+    border: 1.4px solid var(--navy-30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--paper);
+}
+
+.course-row input[type="checkbox"]:checked+.checkbox {
+    background: var(--navy);
+    border-color: var(--navy);
+}
+
+.course-row input[type="checkbox"]:checked+.checkbox::after {
+    content: "✓";
+    color: var(--paper);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.course-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.select-all .course-name {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--navy-70);
+    letter-spacing: 0.1em;
+}
+
+/* ─────────── PROGRESS & META ─────────── */
+.counter-block {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.counter-caption {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--navy-70);
+}
+
+.progress-bar {
+    margin: 14px 0 18px;
+    height: 3px;
+    background: var(--navy-08);
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 0%;
+    background: var(--navy);
+    transition: width 300ms ease;
+}
+
+.meta {
+    margin-bottom: 18px;
+    border-top: 1px solid var(--navy-08);
+}
+
+.meta-row {
+    display: flex;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--navy-08);
+}
+
+.meta-row dt {
+    font-size: 9px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    width: 70px;
+    color: var(--navy-50);
+}
+
+.meta-row dd {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.meta-mono {
+    font-family: var(--mono);
+    font-size: 11px;
+}
+
+/* ─────────── COMPLETE STATE ─────────── */
+.complete-mark {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 14px;
+}
+
+.complete-mark svg {
+    width: 44px;
+    height: 44px;
+    color: var(--navy);
+}
+
+.complete-summary {
+    text-align: center;
+    color: var(--navy-70);
+    margin-bottom: 16px;
+}
+
+.python-guide {
+    background: var(--navy-03);
+    border: 1px solid var(--navy-15);
+    padding: 12px 16px;
+    margin-bottom: 18px;
+    font-size: 11px;
+}
+
+.python-guide h4 {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+}
+
+.python-guide ol {
+    padding-left: 14px;
+}
+
+.python-guide li {
+    margin-bottom: 4px;
+}
+
+/* ─────────── BUTTONS ─────────── */
+.btn-primary,
+.btn-ghost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 11px;
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+    border: none;
+    transition: background 120ms;
+}
+
+.btn-primary {
+    background: var(--navy);
+    color: var(--paper);
+}
+
+.btn-primary:hover {
+    background: #0a1f3e;
+}
+
+.btn-primary:disabled {
+    background: var(--navy-15);
+    color: var(--navy-50);
+    cursor: not-allowed;
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--navy);
+    border: 1px solid var(--navy-15);
+}
+
+.btn-ghost:hover {
+    background: var(--navy-03);
+    border-color: var(--navy-30);
+}
