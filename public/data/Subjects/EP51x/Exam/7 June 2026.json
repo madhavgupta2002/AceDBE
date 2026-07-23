@@ -1,0 +1,335 @@
+{
+    "exam_metadata": {
+        "subject_name": "Generating Entrepreneurial Resources",
+        "exam_date": "07 June 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "Angel investors typically provide",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Early-stage funding in return for an ownership stake",
+                "B": "Bank loans at low interest",
+                "C": "Grants without ownership stake"
+            },
+            "correct_option_label": "A",
+            "explanation": "Angel investors are high-net-worth individuals who invest their personal capital in early-stage startups in exchange for an equity ownership stake in the business, rather than issuing debt or non-equity grants.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Which of the following is not typically a role of the finance function?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Manufacturing products",
+                "B": "Designing incentive systems",
+                "C": "Measuring organisational performance"
+            },
+            "correct_option_label": "A",
+            "explanation": "Manufacturing products is an operations and production management function. Designing incentive systems and measuring organizational performance are key strategic roles handled by the corporate finance function.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "Match the suitable actions mentioned in column A with their suitable mechanisms in column B\n\n**Column A**\n1. A venture fund partner visits labs and incubators where new technologies and products are being developed\n2. Initial rejection of weak proposals based on some fundamental criteria\n3. Proposing a financing package and attached terms and conditions\n4. Investor sells stake through IPO\n\n**Column B**\nA. Deal Screening\nB. Deal Structuring\nC. Exit\nD. Deal Sourcing",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1-D, 2-A, 3-B, 4-C",
+                "B": "1-D, 2-A, 3-C, 4-B",
+                "C": "1-D, 2-B, 3-A, 4-C"
+            },
+            "correct_option_label": "A",
+            "explanation": "- **1 matches D**: Partnering and sourcing deals at labs/incubators belongs to **Deal Sourcing**.\n- **2 matches A**: Rejection of proposals based on preliminary criteria belongs to **Deal Screening**.\n- **3 matches B**: Proposing a financing package is part of **Deal Structuring**.\n- **4 matches C**: An IPO is a common **Exit** mechanism.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "A profitable company with expectations of high growth in earnings is likely to have a",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Negative P/E ratio always",
+                "B": "Low P/E ratio",
+                "C": "High P/E ratio"
+            },
+            "correct_option_label": "C",
+            "explanation": "Investors are willing to pay a premium for companies with high growth potential, which inflates the current stock price relative to current earnings, resulting in a high Price-to-Earnings (P/E) ratio.",
+            "module": 2
+        },
+        {
+            "question_id": "5",
+            "question_text": "Which of the following statements is most likely correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cash budget focuses on measuring and managing book profit",
+                "B": "Financial forecast predicts future performance",
+                "C": "Book profit always equals cash profit"
+            },
+            "correct_option_label": "B",
+            "explanation": "A financial forecast is used to predict the future performance of a firm. In contrast, cash budgets focus on actual liquidity (receipts/payments) rather than accounting/book profit, and book profit rarely equals cash profit due to non-cash accruals.",
+            "module": 3
+        },
+        {
+            "question_id": "6",
+            "question_text": "Venture capitalists usually invest in startups that have",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Guaranteed profits",
+                "B": "High growth potential and scalability",
+                "C": "Stable, even if low, profitability"
+            },
+            "correct_option_label": "B",
+            "explanation": "Venture capital is a high-risk asset class; hence, VCs target companies with explosive scalability and high growth potential rather than stable, low-growth, or guaranteed profits.",
+            "module": 1
+        },
+        {
+            "question_id": "7",
+            "question_text": "FitMeal delivers healthy meals on a monthly subscription basis. Below is the financial information for the month of April 2026:\n\n• Number of Customers billed during the month: 100\n• Price per customer = ₹7,000/month\n\nCosts incurred during the month:\n• Food preparation cost (variable) = ₹2,00,000\n• Rent paid for the premises = ₹1,00,000\n• Other utilities and overhead expenses = ₹1,00,000\n• Salaries = ₹2,00,000\n\nCustomers pay the full month's amount in advance; ie., the subscription for the entire month of April will be paid on April 1st. Salaries, food preparation cost, rent, other utilities and overhead expenses and salaries will be paid on the fifth of May. Assume that there are no other cash inflows or outflows for the month of April. Calculate the net cash flow for the month of April.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹ 1,00,000",
+                "B": "₹ 6,00,000",
+                "C": "₹ 7,00,000"
+            },
+            "correct_option_label": "C",
+            "explanation": "1. **Cash Inflow (April 1st):** $100 \\text{ customers} \\times ₹7,000 = ₹7,00,000$.\n2. **Cash Outflows (April):** Since all incurred expenses (food prep, rent, utilities, and salaries) are paid in May, the cash outflow in April is $₹0$.\n3. **Net Cash Flow (April):** $\\text{Inflow} - \\text{Outflow} = ₹7,00,000 - 0 = ₹7,00,000$.",
+            "module": 3
+        },
+        {
+            "question_id": "8",
+            "question_text": "A founder invested ₹4 lakh in a startup and initially owned 100% equity consisting of 4,000 shares (face value ₹100 each). The company then issues 1,000 new shares to an incoming investor for ₹1 lakh. What will be the founder’s ownership stake after the new investment?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "100%",
+                "B": "80%",
+                "C": "40%"
+            },
+            "correct_option_label": "B",
+            "explanation": "1. **Initial Shares:** $4,000$\n2. **New Shares Issued:** $1,000$\n3. **Total Post-Investment Shares:** $4,000 + 1,000 = 5,000$\n4. **Founder's Share %:** $\\frac{4,000}{5,000} \\times 100 = 80\\%$.",
+            "module": 2
+        },
+        {
+            "question_id": "9",
+            "question_text": "At the ________ of start-up, funding is primarily used to validate a business idea before a full-blown commercial launch.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Expansion stage",
+                "B": "Seed stage",
+                "C": "Late growth stage"
+            },
+            "correct_option_label": "B",
+            "explanation": "The seed stage is the initial phase where funding is utilized to test, prototype, and validate a business concept or market demand prior to scaling and full commercial launch.",
+            "module": 1
+        },
+        {
+            "question_id": "10",
+            "question_text": "Which is the most logical sequence of venture life-cycle stages?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Recapitalisation→ Proof of concept → scaling of operations → mature growth→ customer acquisition",
+                "B": "Proof of concept → scaling of operations → customer acquisition → mature growth→ recapitalisation",
+                "C": "Proof of concept → customer acquisition → scaling of operations → mature growth→ recapitalisation"
+            },
+            "correct_option_label": "C",
+            "explanation": "A standard venture follows this chronology: first proving the concept, then acquiring initial customers to reach product-market fit, followed by scaling operations, achieving mature growth, and eventually restructuring or exiting via recapitalization.",
+            "module": 1
+        },
+        {
+            "question_id": "11",
+            "question_text": "As per SEBI’s Alternate Investment Fund Regulations, 2012 which category of Alternative Investment Fund (AIF) would venture capital funds that invest in early stage unlisted companies be expected to belong to primarily?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Category III",
+                "B": "Category II",
+                "C": "Category I"
+            },
+            "correct_option_label": "C",
+            "explanation": "SEBI's AIF Regulations classify Venture Capital Funds investing in startups, early-stage, or socially/economically desirable sectors under Category I AIF.",
+            "module": 8
+        },
+        {
+            "question_id": "12",
+            "question_text": "An investor invests Rs 200 lakhs with an expected annual return of 50%. The company's sales in year 4 are expected to be Rs. 2,000 lakhs. The company's exit value at the end of Year 4 is estimated at 4x its sales for Year 4. Calculate the post-money valuation of the firm.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 2000 lakhs",
+                "B": "Rs. 8000 lakhs",
+                "C": "Rs. 1581 lakhs"
+            },
+            "correct_option_label": "C",
+            "explanation": "1. **Target Cash Return in Year 4:** $200 \\times (1 + 0.50)^4 = 200 \\times 5.0625 = 1012.5 \\text{ lakhs}$.\n2. **Exit Valuation at Year 4:** $4 \\times 2000 \\text{ lakhs} = 8000 \\text{ lakhs}$.\n3. **Required Ownership Share:** $\\frac{1012.5}{8000} = 12.65625\\%$.\n4. **Post-Money Valuation:** $\\frac{\\text{Investment}}{\\text{Ownership Share}} = \\frac{200}{0.1265625} \\approx 1581 \\text{ lakhs}$.",
+            "module": 2
+        },
+        {
+            "question_id": "13",
+            "question_text": "An investor invests Rs 200 lakhs with an expected annual return of 50%. The sales of the company in year 4 is expected to be Rs. 2,000 lakhs. The company's exit value at the end of Year 4 is estimated at 4x its sales for Year 4. Calculate the pre-money valuation of the firm.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs. 1381 lakhs",
+                "B": "Rs. 7800 lakhs",
+                "C": "Rs. 1800 lakhs"
+            },
+            "correct_option_label": "A",
+            "explanation": "1. From Question ID 12, the post-money valuation is approximately Rs. 1581 lakhs.\n2. **Pre-Money Valuation:** $\\text{Post-Money Valuation} - \\text{Investment Amount} = 1581 \\text{ lakhs} - 200 \\text{ lakhs} = 1381 \\text{ lakhs}$.",
+            "module": 2
+        },
+        {
+            "question_id": "14",
+            "question_text": "In its most commonly used sense, minority protection clause in the context of early stage equity investing means that",
+            "question_type": "MCQ",
+            "options": {
+                "A": "When founders are reduced to a minority shareholding in a company, they are offered additional contractual protection that will ensure that they cannot be removed from their managerial roles in the startup.",
+                "B": "Investors who hold a minority equity shareholding seek additional protection beyond what company law provides by seeking a right to approve / veto certain business decisions in the startup that can affect the welfare of the minority shareholder, such as raising additional capital, disposing of high value assets and so on.",
+                "C": "Founders belonging to a minority community in any country would qualify for preferential funding options and terms."
+            },
+            "correct_option_label": "B",
+            "explanation": "A minority protection clause grants veto rights to early-stage minority investors, allowing them to block major corporate decisions (such as massive capital changes or asset transfers) to safeguard their economic and control interests.",
+            "module": 4
+        },
+        {
+            "question_id": "15",
+            "question_text": "Which of the following statements is most likely correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "LLP partners generally enjoy limited liability",
+                "B": "LLP has no separate legal identity",
+                "C": "A partnership always has limited liability"
+            },
+            "correct_option_label": "A",
+            "explanation": "A Limited Liability Partnership (LLP) is a separate legal entity where partners have limited liability capped at their capital contributions, unlike standard partnerships where liability is unlimited.",
+            "module": 7
+        },
+        {
+            "question_id": "16",
+            "question_text": "Which anti-dilution mechanism is most founder-friendly?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Narrow-Based Weighted Average",
+                "B": "Broad-Based Weighted Average",
+                "C": "Full Ratchet"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Broad-Based Weighted Average formula is the most founder-friendly as it considers all outstanding shares (including options and common stock), dispersing and minimizing the dilution impact on founders during a down round compared to the harsh Full Ratchet mechanism.",
+            "module": 4
+        },
+        {
+            "question_id": "17",
+            "question_text": "An investor invests ₹10 crore in a company in exchange for a 20% equity stake. The company is expected to exit at a valuation of ₹40 crore. The investment carries a 1x non-participating liquidation preference. What will be the investor’s estimated payout at exit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹8 crore",
+                "B": "₹10 crore",
+                "C": "₹20 crore"
+            },
+            "correct_option_label": "B",
+            "explanation": "With a 1x non-participating liquidation preference, the investor can choose between getting their original investment back ($₹10 \\text{ crore}$) or their pro-rata equity share of the exit value ($20\\% \\text{ of } ₹40 \\text{ crore} = ₹8 \\text{ crore}$). The investor will choose the higher payout, which is ₹10 crore.",
+            "module": 4
+        },
+        {
+            "question_id": "18",
+            "question_text": "Which of the following is NOT typically included under information rights in a shareholders subscription agreement between a startup and investors?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Annual audited accounts",
+                "B": "Board meeting minutes",
+                "C": "Right to appoint the CFO"
+            },
+            "correct_option_label": "C",
+            "explanation": "Information rights are meant to ensure transparency by sharing data (like accounts and meeting minutes). The right to appoint key personnel like the CFO is a governance/control right, not an information right.",
+            "module": 4
+        },
+        {
+            "question_id": "19",
+            "question_text": "Which of the following statements is most accurate about the post funding relationship between an investor and a startup and its founder?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The investor-startup-founder relationship runs almost entirely on trust and good faith",
+                "B": "The investor-startup-relationship is governed almost entirely on the strength of contracts that control the flow of information, governance of the startup, audit and inspection rights and the right to secure their financial and monetisation rights.",
+                "C": "The investor-startup-founder relationship is governed entirely by the provisions of the Securities Contract Regulation Act, 1956."
+            },
+            "correct_option_label": "B",
+            "explanation": "Professional investor-founder relationships rely on binding contractual terms (Shareholders and Subscription Agreements) that outline legal parameters for information sharing, board seats, audit protocols, and exit mechanisms.",
+            "module": 8
+        },
+        {
+            "question_id": "20",
+            "question_text": "A newly invented water-purification technology, which involves a combination of a newly developed combination of chemicals and a purification is best protected through which form of intellectual property right?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Copyright",
+                "B": "Design only",
+                "C": "Patent"
+            },
+            "correct_option_label": "C",
+            "explanation": "Patent protection is designed to secure novel, inventive, and industrially applicable technologies and chemical processes, such as a newly formulated water-purification methodology.",
+            "module": 8
+        },
+        {
+            "question_id": "21",
+            "question_text": "A founder attends startup events and connects with investors before pitching. This is an example of",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cold outreach",
+                "B": "Direct pitching",
+                "C": "Networking for warm introductions"
+            },
+            "correct_option_label": "C",
+            "explanation": "By proactively engaging at startup ecosystem events to build initial contact with investors prior to pitching, the founder is leveraging networking to secure warm introductions.",
+            "module": 6
+        },
+        {
+            "question_id": "22",
+            "question_text": "A startup founder owns all 1,000,000 shares outstanding in the startup. The startup now issues 250,000 new shares in a Series A round. How much of the founder’s stake is diluted?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "20%",
+                "B": "25%",
+                "C": "30%"
+            },
+            "correct_option_label": "A",
+            "explanation": "1. **Initial Shares:** $1,000,000$\n2. **New Shares Issued:** $250,000$\n3. **Post-Round Total:** $1,250,000$\n4. **Founder's Post-Round Stake:** $\\frac{1,000,000}{1,250,000} \\times 100 = 80\\%$.\n5. **Dilution:** $100\\% - 80\\% = 20\\%$.",
+            "module": 2
+        },
+        {
+            "question_id": "23",
+            "question_text": "Which of the following statements about the price – book ratio for equity shares is most likely true?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "CompanyP/B ratio for software services companies is likely to be highest of the three, given that the software industry likely has the highest growth rate in revenue and profits, which is driven by intangible assets.",
+                "B": "P/B ratio for sugar producing companies is likely to be higher than P/B ratio for steel manufacturing companies because sugar manufacturing is a cyclical industry.",
+                "C": "P/B ratio for steel manufacturing companies is likely to be the highest because steel manufacturing is an asset intensive industry."
+            },
+            "correct_option_label": "A",
+            "explanation": "Software firms heavily rely on high-growth intangible assets (intellectual property, software, branding), which are not fully reflected in book value, leading to comparatively high P/B ratios compared to asset-heavy industrial sectors.",
+            "module": 2
+        },
+        {
+            "question_id": "24",
+            "question_text": "A company has an enterprise value of ₹650 crore, debt of ₹200 crore, other financing liabilities of ₹50 crore, and cash of ₹100 crore. Find the equity value of the company.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹400 crore",
+                "B": "₹500 crore",
+                "C": "₹600 crore"
+            },
+            "correct_option_label": "B",
+            "explanation": "1. **Formula:** $\\text{Equity Value} = \\text{Enterprise Value} - \\text{Debt} - \\text{Other Liabilities} + \\text{Cash}$.\n2. **Calculation:** $\\text{Equity Value} = 650 - 200 - 50 + 100 = 500 \\text{ crore}$.",
+            "module": 2
+        },
+        {
+            "question_id": "25",
+            "question_text": "Match the valuation multiple in Column A with its most appropriate benefit/feature in Column B.\n\n**Column A**\n1. P/E Ratio\n2. P/B Ratio\n3. EV/Sales\n4. EV/EBITDA\n\n**Column B**\nA. Compares market price with net worth\nB. Useful when earning are negative or unstable\nC. Measures value relative to operating earnings before charging depreciation\nD. Widely used metric when profits are positive and stable",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1-D, 2-A,3-B,4-C",
+                "B": "1-D, 2-C,3-B,4-A",
+                "C": "1-D, 2-B,3-A,4-C"
+            },
+            "correct_option_label": "A",
+            "explanation": "- **1 matches D**: P/E is used when earnings are positive and stable.\n- **2 matches A**: P/B compares share price to book value/net worth.\n- **3 matches B**: EV/Sales is standard for unprofitable or pre-revenue startups.\n- **4 matches C**: EV/EBITDA matches operating valuation before non-cash depreciation charges.",
+            "module": 2
+        }
+    ]
+}

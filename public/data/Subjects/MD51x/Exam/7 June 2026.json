@@ -1,0 +1,430 @@
+{
+    "exam_metadata": {
+        "subject_name": "Behavioral Economics",
+        "exam_date": "07 June 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "You have passed the first round of interviews for a job, and you are now invited to a second round. During a call, the HR person makes you an offer of ₹10 lakh per annum. Considering the role and your previous experience, you know this is too low of an offer. Using that amount as a starting point, you negotiate up to ₹11 lakh per annum. Which of the following concepts best explains how you used the initial salary offer to negotiate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Anchoring Heuristic",
+                "B": "Affect Heuristic",
+                "C": "Availability Heuristic",
+                "D": "Insensitivity to Base Rate"
+            },
+            "correct_option_label": "A",
+            "explanation": "The initial salary offer of ₹10 lakh serves as a mental starting point or 'anchor.' Subsequent adjustments during the negotiation are made relative to this value, which is a classic manifestation of the anchoring heuristic.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Consider the given set of biases below.\n\na) Conjunction fallacy\nb) Optimism bias\nc) Insensitivity to Sample Size\nd) Hindsight Bias\ne) Regression to the mean\n\nWhich of the following biases are NOT attributed to the Representativeness heuristic?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "a,b,c",
+                "B": "a, b",
+                "C": "c,d,e",
+                "D": "b,d"
+            },
+            "correct_option_label": "D",
+            "explanation": "Conjunction fallacy, insensitivity to sample size, and regression to the mean are directly derived from the representativeness heuristic. Optimism bias and hindsight bias are separate cognitive phenomena unrelated to judging probabilities based on resemblance.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "Consider the given set of biases below.\n\na) A person overestimates the risk of flying after hearing about a recent plane crash, despite statistical evidence showing that flying is safer than driving.\nb) You are at a movie theatre and chose one movie over another because you like the design of the movie’s poster.\nc) A hiring manager recalls a recent negative experience with a candidate from a particular university; he is reluctant to hire students from that university.\nd) A sports fan, who believes their favorite team is the best, will emphasize the team's victories and strong performances. They might downplay or make excuses for the team's losses or poor plays, attributing them to bad luck.\n\nWhich of the following statements best explains retrievability bias?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "a,d",
+                "B": "a,b",
+                "C": "b,c",
+                "D": "a,c"
+            },
+            "correct_option_label": "D",
+            "explanation": "Retrievability bias (a sub-category of the availability heuristic) occurs when individuals assess the frequency or likelihood of an event based on how easily instances can be retrieved from memory. Highly salient, recent, or emotional events (like a plane crash or a recent bad hiring experience) are retrieved much faster, leading to biased judgments.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "The picture relates to which of the following options:\n\n*(Note: The picture depicts a smooth, straightforward winding path labeled 'Expectation' and a highly complicated path filled with rain, monsters, and obstacles labeled 'Reality'.)*",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Curse of Knowledge",
+                "B": "Optimism Bias",
+                "C": "Confirmation Bias",
+                "D": "Hindsight Bias"
+            },
+            "correct_option_label": "B",
+            "explanation": "The image represents optimism bias, specifically the planning fallacy. Individuals tend to expect a highly idealized, trouble-free future outcome while severely underestimating the actual complexities, risks, and obstacles they will face along the way.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "Ethical principles in experimental economics primarily aim to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Protect participant welfare and rights",
+                "B": "Reduce experimental costs",
+                "C": "Increase research profits",
+                "D": "Simplify research design"
+            },
+            "correct_option_label": "A",
+            "explanation": "Modern experimental economics relies heavily on ethical frameworks (such as the Belmont Report) to safeguard subjects' rights, establish informed consent, ensure beneficence, and guarantee that participants are protected from physical or psychological harm.",
+            "module": 4
+        },
+        {
+            "question_id": "6",
+            "question_text": "In an experiment, participants ranked war and starvation as more common causes of death worldwide than respiratory diseases and cancer, despite the latter causing far more deaths. This judgment error is best explained by:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Representativeness heuristic",
+                "B": "Availability heuristic driven by salience",
+                "C": "Conjunction fallacy",
+                "D": "Base rate neglect"
+            },
+            "correct_option_label": "B",
+            "explanation": "Because events like war and starvation receive highly vivid and frequent media coverage, they are highly salient and easily brought to mind, leading individuals to overestimate their actual occurrence relative to quieter but far deadlier diseases.",
+            "module": 1
+        },
+        {
+            "question_id": "7",
+            "question_text": "Assertion (A): Graphic images on cigarette packets can reduce smoking even if smokers are already aware of health risks.\nReason (R): Negative emotional triggers can increase perceived risk and influence decision-making.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A is false, but R is true.",
+                "B": "Both A and R are true, and R is the correct explanation of A.",
+                "C": "A is true, but R is false.",
+                "D": "Both A and R are true, but R is not the correct explanation of A."
+            },
+            "correct_option_label": "B",
+            "explanation": "According to the affect heuristic, individuals rely on immediate emotional responses to assess risk. Graphic imagery triggers strong, negative emotions, which effectively bypasses abstract intellectual knowledge and successfully lowers the demand for cigarettes.",
+            "module": 1
+        },
+        {
+            "question_id": "8",
+            "question_text": "Riya plans today to wake up early next week and exercise. When next week arrives, she chooses to sleep instead. This behaviour illustrates:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Exponential discounting",
+                "B": "Dynamic time inconsistency",
+                "C": "Risk aversion",
+                "D": "Dynamic time consistency"
+            },
+            "correct_option_label": "B",
+            "explanation": "This behavior demonstrates present-bias, which results in dynamic time inconsistency. While a person makes optimal patient plans for the future, those preferences reverse when the future becomes the immediate present due to the sudden temptation of instant gratification.",
+            "module": 2
+        },
+        {
+            "question_id": "9",
+            "question_text": "Consider the following payoff structure (measured in years of jail, shown as negative numbers):\n\n$$\\begin{array}{lcc} & \\text{Prisoner 2: Not Confess} & \\text{Prisoner 2: Confess} \\\\ \\text{Prisoner 1: Not Confess} & (-1, -1) & (-10, 0) \\\\ \\text{Prisoner 1: Confess} & (0, -10) & (-5, -5) \\end{array}$$\n\nWhich of the following is the dominant strategy for Prisoner 1?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "No dominant strategy exists",
+                "B": "Not Confess",
+                "C": "Randomize between both",
+                "D": "Confess"
+            },
+            "correct_option_label": "D",
+            "explanation": "To find Prisoner 1's dominant strategy, compare their payoffs for each action of Prisoner 2:\n- If Prisoner 2 does Not Confess: Confessing gives $0$ (better than $-1$).\n- If Prisoner 2 Confesses: Confessing gives $-5$ (better than $-10$).\nSince Confessing yields a higher payoff in all scenarios, 'Confess' is the dominant strategy.",
+            "module": 2
+        },
+        {
+            "question_id": "10",
+            "question_text": "Consider the following payoff structure (measured in years of jail, shown as negative numbers):\n\n$$\\begin{array}{lcc} & \\text{Prisoner 2: Not Confess} & \\text{Prisoner 2: Confess} \\\\ \\text{Prisoner 1: Not Confess} & (-1, -1) & (-10, 0) \\\\ \\text{Prisoner 1: Confess} & (0, -10) & (-5, -5) \\end{array}$$\n\nUsing the same payoff matrix above, what is the Nash Equilibrium outcome?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "(Confess, Not Confess)",
+                "B": "(Not Confess, Confess)",
+                "C": "(Confess, Confess)",
+                "D": "(Not Confess, Not Confess)"
+            },
+            "correct_option_label": "C",
+            "explanation": "In this standard Prisoner's Dilemma, both players have a dominant strategy to 'Confess'. Since neither player has an incentive to unilaterally deviate from playing 'Confess', the unique Nash Equilibrium is (Confess, Confess).",
+            "module": 2
+        },
+        {
+            "question_id": "11",
+            "question_text": "Consider the following payoff structure (measured in years of jail, shown as negative numbers):\n\n$$\\begin{array}{lcc} & \\text{Prisoner 2: Not Confess} & \\text{Prisoner 2: Confess} \\\\ \\text{Prisoner 1: Not Confess} & (-1, -1) & (-10, 0) \\\\ \\text{Prisoner 1: Confess} & (0, -10) & (-5, -5) \\end{array}$$\n\nWhich of the following outcomes gives the minimum total jail time for both prisoners together?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "(Confess, Confess)",
+                "B": "(Not Confess, Not Confess)",
+                "C": "(Confess, Not Confess)",
+                "D": "(Not Confess, Confess)"
+            },
+            "correct_option_label": "B",
+            "explanation": "Summing the jail times for each outcome:\n- (Not Confess, Not Confess): $(-1) + (-1) = -2$ years\n- (Confess, Confess): $(-5) + (-5) = -10$ years\n- (Confess, Not Confess) or (Not Confess, Confess): $0 + (-10) = -10$ years\nThe outcome that minimizes total jail time (meaning closest to 0) is (Not Confess, Not Confess) with 2 total years of jail.",
+            "module": 2
+        },
+        {
+            "question_id": "12",
+            "question_text": "The University of California, Berkeley, published a report that showed that individual investors are 50% more likely to sell a winning stock than a losing stock even though, on average, the stocks these investors sell go on to outperform while those they hold on to underperform. This is an example of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Being risk-averse in the gain domain and risk-averse in the loss domain",
+                "B": "Being risk-loving in the gain domain but risk-averse in the loss domain",
+                "C": "Being risk-loving in the loss domain and risk-averse in the gain domain",
+                "D": "Being risk-neutral in the loss domain but risk-averse in the gain domain"
+            },
+            "correct_option_label": "C",
+            "explanation": "According to Prospect Theory, people are risk-averse in the gain domain (preferring to secure a sure win by selling winning stocks) and risk-seeking/loving in the loss domain (gambling to avoid realizing a sure loss by holding on to losing stocks). This phenomenon is also known as the disposition effect.",
+            "module": 1
+        },
+        {
+            "question_id": "13",
+            "question_text": "Imagine you are shopping for a new smartphone. You have been looking at a model typically priced at $800. While browsing online, you find a limited-time offer where the same smartphone is available for $600, with an additional $50 gift card included with the purchase. This phenomenon relates to which of the following concepts:\n\ni. Transaction Utility\nii. Broad Framing\niii. Sunk Costs\niv. Myopic Loss Aversion\n\nChoose the correct option",
+            "question_type": "MCQ",
+            "options": {
+                "A": "I only",
+                "B": "I and III",
+                "C": "II and III",
+                "D": "I and II"
+            },
+            "correct_option_label": "A",
+            "explanation": "The reference price is $800. Buying it at $600 with a $50 gift card creates an extremely high perceived value of the deal itself. This difference between reference price and actual price constitutes transaction utility, which heavily motivates consumers to purchase.",
+            "module": 1
+        },
+        {
+            "question_id": "14",
+            "question_text": "For transaction utility (TU) and acquisition utility (AU), which of the following scenarios may induce people to buy useless things?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "AU = TU > > 0",
+                "B": "TU = 0 and AU > > 0",
+                "C": "TU > > AU = 0",
+                "D": "AU > > TU = 0"
+            },
+            "correct_option_label": "C",
+            "explanation": "Even when the product provides no functional value (acquisition utility $AU = 0$), individuals may purchase it if the perceived deal is exceptional, generating highly positive transaction utility ($TU \\gg 0$).",
+            "module": 1
+        },
+        {
+            "question_id": "15",
+            "question_text": "Consider the following statements with respect to Sunk costs\n\nI. Sunk costs do not matter to Humans but matter to Econs\nII. Sunk costs matter because a return on investment must booked for accounting purposes\nIII. Sunk costs matter due to expectations of closing categories of mental accounts.\n\nWhich of the above statements is/are false:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Both I and II",
+                "B": "Only II",
+                "C": "Both II and III",
+                "D": "Only III"
+            },
+            "correct_option_label": "A",
+            "explanation": "Statement I is false because sunk costs do matter to Humans due to psychological pain, but are ignored by rational Econs. Statement II is false because the sunk-cost fallacy is driven by psychological mental accounting and loss aversion rather than technical or standard accounting book returns. Statement III is true.",
+            "module": 1
+        },
+        {
+            "question_id": "16",
+            "question_text": "Consider the following statements.\n\nI. Naifs believe their $\\hat{\\beta} < 1$\nII. Sophisticates believe their $\\hat{\\beta} = \\beta$\nIII. Partial Naives believe $\\beta < \\hat{\\beta} < 1$\n\nChoose the correct option:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "II and III only",
+                "B": "II only",
+                "C": "I only",
+                "D": "I and II only"
+            },
+            "correct_option_label": "A",
+            "explanation": "Naifs are completely unaware of their present-bias and believe they will have perfect self-control in the future ($\\hat{\\beta} = 1$, making statement I false). Sophisticates correctly recognize their present-bias ($\\hat{\\beta} = \\beta$), and partial naifs underestimate its severity but know it exists ($\\beta < \\hat{\\beta} < 1$), making statements II and III true.",
+            "module": 2
+        },
+        {
+            "question_id": "17",
+            "question_text": "Which of the following best describes the primary distinction between simultaneous and sequential games in game theory?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "In simultaneous games, players move in turns and are aware of the previous player's actions, whereas in sequential games, all players move at the same time without knowing the actions of the other players.",
+                "B": "In simultaneous games, all players make their moves simultaneously and are unaware of the other players' choices, whereas in sequential games, players move in sequence, with each player being aware of the previous players' actions.",
+                "C": "Simultaneous games require players to form correct beliefs about the world, while sequential games do not involve belief formation",
+                "D": "Sequential games assume common knowledge of rationality among players, while simultaneous games do not."
+            },
+            "correct_option_label": "B",
+            "explanation": "Simultaneous games model strategic situations where players choose their actions at the same time without observing opponents' choices. In contrast, sequential games are played in turns, enabling later players to observe prior actions before deciding.",
+            "module": 2
+        },
+        {
+            "question_id": "18",
+            "question_text": "In a Beauty Contest Game, each player selects a number between 0 and 100, and the winner is the player whose number is closest to two-thirds of the average of all chosen numbers. After the first step of iterative reasoning, which of the following ranges of numbers can be eliminated as dominated strategies?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "0 to 33.33",
+                "B": "0 to 66.67",
+                "C": "66.67 to 100",
+                "D": "33.33 to 50"
+            },
+            "correct_option_label": "C",
+            "explanation": "The maximum possible average of any set of choices from $[0, 100]$ is $100$. The winning target is $\\frac{2}{3} \\times \\text{Average}$. Since the absolute maximum target value is $\\frac{2}{3} \\times 100 = 66.67$, choosing any number strictly greater than $66.67$ is a dominated strategy and can be eliminated in the first round.",
+            "module": 2
+        },
+        {
+            "question_id": "19",
+            "question_text": "In the context of the Centipede Game, which of the following statements accurately reflects the observed behaviour of players across different categories?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "College students are less likely to continue playing compared to chess players.",
+                "B": "Federation Masters continue playing more frequently than International Masters.",
+                "C": "Grandmasters are more likely to continue playing compared to other chess players.",
+                "D": "The frequency of continuation is highest when students play against each other."
+            },
+            "correct_option_label": "D",
+            "explanation": "In empirical trials of the Centipede Game, when students play against other students, they show the highest frequency of cooperation (continuation). This occurs because they rely on mutual trust rather than backward-induction reasoning, whereas highly rational agents (like chess grandmasters) exit the game much earlier.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "Consider the following statements about statistical discrimination,\n\nI. Agents make decisions about individuals based on the attributes of their groups.\nII. Discrimination arises out of incomplete information and arises because of a signal extraction problem\nIII. A Hindu/Brahmin/White employer may hire a Muslim/Dalit/Black employee because he is not concerned about how productive the potential employee is.\n\nWhich of the above statements are true?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only I is true",
+                "B": "Only I and II are true",
+                "C": "Only III is true",
+                "D": "I, II and III are true"
+            },
+            "correct_option_label": "B",
+            "explanation": "Statistical discrimination is driven by imperfect information where decision-makers use group averages as a proxy for an individual's unobserved traits (Statements I & II). Statement III relates to tastes or preferences and does not describe statistical discrimination.",
+            "module": 3
+        },
+        {
+            "question_id": "21",
+            "question_text": "Which of the following statements are true with respect to Stereotype Threat: (Assume that there is a certain community facing discrimination relative to a reference community)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The performance of members of a certain community on average is seen to decrease when the identity of the members such as gender, race, or caste membership is made salient",
+                "B": "The performance of members of a certain community on average is seen to be higher than the reference community",
+                "C": "The performance of members of a certain community on average is seen to be lower than the reference community.",
+                "D": "The performance of members of a certain community on average is unaffected by making the identity of the members such as gender, race, or caste membership salient"
+            },
+            "correct_option_label": "A",
+            "explanation": "Stereotype threat occurs when making a negative group stereotype salient creates cognitive anxiety in individuals, resulting in a temporary and artificial drop in their performance relative to their actual capability.",
+            "module": 3
+        },
+        {
+            "question_id": "22",
+            "question_text": "Which of the following are the issues resulting from women not negotiating in their salaries?\n\nI) Lifetime forgone earnings\nII) Employers may overpay anticipating a negotiation\nIII) Past compensation records signal the quality of the employee",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only II",
+                "B": "I, II, and III",
+                "C": "I and III Only",
+                "D": "I and II Only"
+            },
+            "correct_option_label": "C",
+            "explanation": "When women do not negotiate, they experience severe lifetime forgone earnings (I). Additionally, since past salaries act as signals of quality for subsequent hiring processes, the negative impact of not negotiating compounds over their career (III).",
+            "module": 3
+        },
+        {
+            "question_id": "23",
+            "question_text": "Behavioural nudges are attractive in public policy primarily because",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They replace all traditional economic tools",
+                "B": "They produce moderate gains at very low implementation cost",
+                "C": "They eliminate all behavioural biases",
+                "D": "They produce extremely large gains"
+            },
+            "correct_option_label": "B",
+            "explanation": "Nudges leverage small changes in choice architecture rather than expensive bans or massive monetary incentives. They are highly efficient, generating meaningful, positive behavioral outcomes at a minimal financial cost.",
+            "module": 3
+        },
+        {
+            "question_id": "24",
+            "question_text": "Nudges are most justified in rare and complex decisions because:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Bounded rationality limits optimization under complexity and infrequency",
+                "B": "Markets fail completely",
+                "C": "Governments always know better",
+                "D": "Individuals have unstable preferences"
+            },
+            "correct_option_label": "A",
+            "explanation": "In complex, infrequent situations (such as buying a home or choosing retirement funds), people lack the experience and cognitive bandwidth to optimize their decisions. Choice architecture guides these boundedly rational agents without limiting their freedom of choice.",
+            "module": 3
+        },
+        {
+            "question_id": "25",
+            "question_text": "Markings on escalators that suggest “Stand on the Right, walk on the Left” primarily work because they",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase the monetary cost of blocking others",
+                "B": "Reduce the physical length of escalators",
+                "C": "Provide a behavioural cue that coordinates social norms",
+                "D": "Impose legal penalties for standing incorrectly"
+            },
+            "correct_option_label": "C",
+            "explanation": "Instead of using legal mandates or fines, simple visual markings act as a non-coercive behavioral nudge that successfully establishes and coordinates social norms of cooperative public space usage.",
+            "module": 3
+        },
+        {
+            "question_id": "26",
+            "question_text": "According to the discussion on motorcycle helmets and libertarian views, which of the following represents a nudge that is less intrusive than a ban?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Providing financial incentives for riders who wear helmets",
+                "B": "Mandating everyone to wear helmets without exceptions",
+                "C": "Banning motorcycles altogether to prevent accidents",
+                "D": "Requiring extra driving lessons and proof of health insurance for a special license to ride without a helmet"
+            },
+            "correct_option_label": "D",
+            "explanation": "Imposing self-discipline requirements (such as extra lessons and insurance verification for those wishing to ride helmetless) is a form of paternalistic choice architecture. It preserves freedom of choice while introducing a friction that discourages unsafe behavior, which is less intrusive than a flat ban.",
+            "module": 3
+        },
+        {
+            "question_id": "27",
+            "question_text": "Which of the following statements are examples of ‘Post completion error’?\n\nI. Leaving the ATM card in the machine after taking the cash from the machine.\nII. Forgetting to collect change after making a purchase\nIII. Not enrolling into a default savings plan when there is no automatic enrolment.\n\nPlease choose the correct option",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only I and II",
+                "B": "Only II and III",
+                "C": "Only I and III",
+                "D": "I, II, and III"
+            },
+            "correct_option_label": "A",
+            "explanation": "Post-completion errors occur when an individual successfully finishes the primary goal of their task (e.g., obtaining cash or goods) and forgets to perform a subsequent, secondary step associated with wrapping up the transaction (such as retrieving the ATM card or collecting change).",
+            "module": 3
+        },
+        {
+            "question_id": "28",
+            "question_text": "Under present-biased preferences:\nCorrect statement",
+            "question_type": "MCQ",
+            "options": {
+                "A": "No preference reversal occurs",
+                "B": "Vices are preponed and virtues postponed",
+                "C": "Virtues are preponed",
+                "D": "Vices are postponed"
+            },
+            "correct_option_label": "B",
+            "explanation": "Present-biased preferences are characterized by extreme impatience in the short-run. Because vices offer immediate benefits and delayed costs, their consumption is preponed; conversely, virtues have immediate costs and delayed benefits, leading people to postpone them.",
+            "module": 2
+        },
+        {
+            "question_id": "29",
+            "question_text": "A sophisticated present-biased individual (β < 1) knows that she has a self-control problem while waking up early to exercise. She adopts the following strategy. She connects her alarm clock to her bank account such that if she does not wake up on time, ₹200 will be automatically donated to a charity. This strategy best represents",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Commitment by limiting future choices",
+                "B": "Removal of temptation cues",
+                "C": "Exponential discounting",
+                "D": "Increasing long-run discount factor (δ)"
+            },
+            "correct_option_label": "A",
+            "explanation": "Sophisticated individuals use commitment devices to tie their hands. Implementing an automatic financial penalty for sleeping in effectively removes the choice of sleeping at no cost, enforcing compliance with their long-term health goals.",
+            "module": 2
+        },
+        {
+            "question_id": "30",
+            "question_text": "Randomized Controlled Trials (RCTs) are mainly used to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Replace surveys entirely",
+                "B": "Measure stock prices",
+                "C": "Test theoretical models without data",
+                "D": "Evaluate policy interventions using random assignment"
+            },
+            "correct_option_label": "D",
+            "explanation": "RCTs are standard tools used to evaluate public policy. By randomly assigning participants to treatment and control groups, researchers eliminate selection bias and establish direct causal effects of policy interventions.",
+            "module": 4
+        }
+    ]
+}
