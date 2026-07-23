@@ -1,0 +1,353 @@
+{
+    "exam_metadata": {
+        "subject_name": "Principles of Macroeconomics",
+        "exam_date": "06 June 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "Which approach to GDP measurement adds together salaries paid to workers, profits earned by firms, rent received by landlords, and interest received by lenders?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Production approach",
+                "B": "Expenditure approach",
+                "C": "Value-added approach",
+                "D": "Income approach"
+            },
+            "correct_option_label": "D",
+            "explanation": "The income approach measures GDP by summing all factor incomes earned by households and firms for resources supplied to production, which includes wages (labor), rent (land), interest (capital), and profits (entrepreneurship).",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Sticky wage contracts that prevent labour costs from adjusting instantly when demand changes are best classified as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A short-run shock",
+                "B": "A measurement issue in GDP",
+                "C": "A long-run supply driver",
+                "D": "A short-run friction"
+            },
+            "correct_option_label": "D",
+            "explanation": "Sticky wages represent a classic market rigidity or friction that prevents immediate market clearing in the short run when aggregate demand fluctuates.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "When measuring GDP across years, real GDP differs from nominal GDP because real GDP:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Includes the underground economy not captured by nominal GDP",
+                "B": "Reflects per-capita output rather than total output",
+                "C": "Uses world prices instead of domestic prices",
+                "D": "Holds the price basket fixed across years to strip out inflation"
+            },
+            "correct_option_label": "D",
+            "explanation": "Real GDP is calculated using a fixed price vector from a baseline year to mute the impact of price changes (inflation) and isolate actual quantity growth.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "A sudden surge in foreign demand for Indian software exports is best characterised in macroeconomic terms as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A long-run productivity gain",
+                "B": "A short-run demand shock",
+                "C": "A short-run supply shock",
+                "D": "A short-run friction"
+            },
+            "correct_option_label": "B",
+            "explanation": "A rapid increase in foreign demand for exports shifts the aggregate demand curve outward in the short run, classifying it as a short-run demand shock.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "Starting from the identity Y = C + I + G + (Ex − Im), the relationship Private Savings + Public Savings + Foreign Savings = Investment is best understood as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An equilibrium condition that holds only at full employment",
+                "B": "A policy goal that the government should aim for",
+                "C": "A long-run result that holds only when interest rates are flexible",
+                "D": "An identity that follows from rearranging the GDP identity and always holds"
+            },
+            "correct_option_label": "D",
+            "explanation": "This identity is derived mathematically from the fundamental expenditure identity by subtracting consumption and taxes from both sides, proving that total investments are always funded by a combination of private, public, and foreign savings.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "If the secondary-market price of an existing government bond rises while its coupon payment stays fixed, the yield on that bond will:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rise",
+                "B": "Stay unchanged because the coupon is fixed",
+                "C": "Become equal to the repo rate",
+                "D": "Fall"
+            },
+            "correct_option_label": "D",
+            "explanation": "Bond prices and yields share an inverse relationship. As the price of a bond increases in the secondary market, the fixed coupon payment represents a smaller percentage return relative to the acquisition cost, causing the yield to fall.",
+            "module": 2
+        },
+        {
+            "question_id": "7",
+            "question_text": "Which of the following is classified as outside money in the Indian monetary system?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A unit of a liquid mutual fund",
+                "B": "A fixed deposit with HDFC Bank",
+                "C": "A demand deposit with the State Bank of India",
+                "D": "Currency notes issued by the Reserve Bank of India"
+            },
+            "correct_option_label": "D",
+            "explanation": "Outside money (base money/M0) is physical currency and central bank reserves created outside the commercial banking system, which is a direct liability of the RBI.",
+            "module": 2
+        },
+        {
+            "question_id": "8",
+            "question_text": "In the closed-economy monetary transmission framework, the bank lending channel emphasises that monetary policy works because:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lower rates reduce EMIs and free up household disposable income",
+                "B": "Lower rates anchor expectations about future inflation",
+                "C": "Banks' ability and willingness to supply loans change when reserves and liquidity change",
+                "D": "Cheaper credit raises asset prices and makes households feel wealthier"
+            },
+            "correct_option_label": "C",
+            "explanation": "The bank lending channel focuses on credit supply. Changes in policy rates and reserve requirements alter commercial bank liquidity, which directly governs the banks' capacity and standards for approving loans.",
+            "module": 2
+        },
+        {
+            "question_id": "9",
+            "question_text": "Suppose headline CPI inflation rises sharply because of a sudden monsoon-driven jump in vegetable prices. The most accurate description of RBI's policy situation is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rate hikes cannot increase supply, but can anchor inflation expectations at the cost of dampening demand",
+                "B": "RBI should ignore the episode because core inflation is unaffected",
+                "C": "RBI must cut rates to stimulate agricultural investment",
+                "D": "RBI can solve this directly by raising the repo rate, since rate hikes grow tomato supply"
+            },
+            "correct_option_label": "A",
+            "explanation": "While monetary tightening cannot directly fix supply-side vegetable shortages, raising rates anchors overall inflation expectations, preventing localized price shocks from bleeding into generalized inflation, though at the expense of slowing domestic demand.",
+            "module": 2
+        },
+        {
+            "question_id": "10",
+            "question_text": "The Marginal Standing Facility (MSF) rate in the RBI corridor typically sits:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Exactly at the repo rate",
+                "B": "Above the repo rate, as a ceiling for overnight rates",
+                "C": "Below the reverse repo rate, as a floor for overnight rates",
+                "D": "Below the SDF rate"
+            },
+            "correct_option_label": "B",
+            "explanation": "The MSF is an emergency liquidity window at which banks borrow overnight from the RBI, and its rate is set at a premium above the repo rate, acting as the upper boundary of the interest rate corridor.",
+            "module": 2
+        },
+        {
+            "question_id": "11",
+            "question_text": "The impossible trinity says a country cannot simultaneously maintain all three of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Floating exchange rates, capital controls, and inflation targeting",
+                "B": "Inflation targeting, fiscal discipline, and trade openness",
+                "C": "A current account surplus, capital account surplus, and rising reserves",
+                "D": "A fixed exchange rate, free capital mobility, and an independent monetary policy"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Trilemma dictates that an economy can only pick two of three goals: a fixed exchange rate, unrestricted capital flows, and sovereign control over domestic monetary policy.",
+            "module": 3
+        },
+        {
+            "question_id": "12",
+            "question_text": "When the Reserve Bank of India buys dollars in the foreign exchange market and simultaneously sells government securities in the domestic market, the operation is best described as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Quantitative easing",
+                "B": "An open market operation aimed at long-term yields",
+                "C": "Sterilised forex intervention",
+                "D": "A reverse repo auction"
+            },
+            "correct_option_label": "C",
+            "explanation": "By purchasing dollars, the RBI injects rupees. Selling government securities simultaneously allows the RBI to absorb those extra rupees, neutralizing (sterilizing) the impact on the domestic money supply and inflation.",
+            "module": 3
+        },
+        {
+            "question_id": "13",
+            "question_text": "India's Balance of Payments identity says the current account and the capital account sum to zero. The economic intuition behind this is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Capital flows automatically equal trade flows in every economy",
+                "B": "The two accounts are independent and may or may not balance",
+                "C": "The RBI always intervenes to ensure the two accounts balance",
+                "D": "A current account deficit must be financed by a matching capital inflow, by double-entry bookkeeping"
+            },
+            "correct_option_label": "D",
+            "explanation": "Under double-entry bookkeeping, any deficit in trade and income transactions (Current Account) must be perfectly balanced by importing external financial resources or drawing down FX assets (Capital Account).",
+            "module": 3
+        },
+        {
+            "question_id": "14",
+            "question_text": "Foreign Direct Investment is generally considered more stable than Foreign Portfolio Investment because:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "FDI does not appear in the Balance of Payments",
+                "B": "FDI involves long-term commitment to physical assets and managerial control, making it harder to reverse quickly",
+                "C": "FDI is provided only by the IMF and World Bank",
+                "D": "FDI flows are denominated in rupees while FPI flows are in dollars"
+            },
+            "correct_option_label": "B",
+            "explanation": "Unlike volatile portfolio 'hot money' traded in liquid financial markets, FDI is 'patient capital' locked into physical infrastructure and joint-ventures, which cannot be liquidated or withdrawn overnight.",
+            "module": 3
+        },
+        {
+            "question_id": "15",
+            "question_text": "Purchasing Power Parity predicts that, in the long run, the nominal exchange rate between two countries should:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Adjust so that identical baskets of goods cost the same in both countries after conversion",
+                "B": "Be set entirely by interest rate differentials",
+                "C": "Stay constant regardless of relative price levels",
+                "D": "Be fixed by the central bank to support exports"
+            },
+            "correct_option_label": "A",
+            "explanation": "PPP asserts that exchange rates should adjust in the long term so that a unit of currency has the same purchasing power, allowing a standard basket of goods to equalize in cost across different nations.",
+            "module": 3
+        },
+        {
+            "question_id": "16",
+            "question_text": "Government spending on building national highways is typically classified as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A transfer payment",
+                "B": "Capital expenditure",
+                "C": "Revenue expenditure",
+                "D": "A tax expenditure"
+            },
+            "correct_option_label": "B",
+            "explanation": "Expenditure on physical assets such as highways directly builds infrastructure, raising long-term productivity and potential output, which defines capital expenditure.",
+            "module": 4
+        },
+        {
+            "question_id": "17",
+            "question_text": "As the marginal propensity to consume rises, the simple government expenditure multiplier in a closed economy:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Becomes negative",
+                "B": "Stays unchanged",
+                "C": "Rises",
+                "D": "Falls"
+            },
+            "correct_option_label": "C",
+            "explanation": "The fiscal multiplier is calculated as $1 / (1 - MPC)$. A higher MPC implies individuals spend a larger share of marginal income, increasing the successive waves of aggregate consumption and driving up the total multiplier.",
+            "module": 4
+        },
+        {
+            "question_id": "18",
+            "question_text": "A government's debt-to-GDP ratio is most likely to decline over time, even without paying down principal, when:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The nominal growth rate of GDP exceeds the nominal interest rate on debt",
+                "B": "The current account moves into surplus",
+                "C": "The fiscal deficit equals zero",
+                "D": "The interest rate on debt exceeds the nominal growth rate of GDP"
+            },
+            "correct_option_label": "A",
+            "explanation": "If the growth rate of nominal GDP ($g$) is higher than the nominal interest rate on government bonds ($r$), national income expands faster than interest compounding, naturally shrinking the debt burden relative to GDP.",
+            "module": 4
+        },
+        {
+            "question_id": "19",
+            "question_text": "An important reason ideas can sustain growth where physical capital cannot is that:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ideas are subject to faster diminishing returns than capital",
+                "B": "Ideas are non-rivalrous and can be used simultaneously by many users without being depleted",
+                "C": "Ideas are always perfectly excludable through patents"
+            },
+            "correct_option_label": "B",
+            "explanation": "Unlike rivalrous physical inputs (which face diminishing returns), technical knowledge and ideas can be utilized by multiple economic agents simultaneously, enabling infinite replication and continuous expansion.",
+            "module": 4
+        },
+        {
+            "question_id": "20",
+            "question_text": "Crowding out in fiscal policy refers to the situation where:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Foreign investors crowd out domestic investors in equity markets",
+                "B": "Public-sector banks crowd out private banks in the deposit market",
+                "C": "Tax cuts crowd out government spending in the budget",
+                "D": "Higher government borrowing pushes up interest rates and reduces private investment"
+            },
+            "correct_option_label": "D",
+            "explanation": "Large-scale government deficit financing consumes the available loanable funds in the financial market, bidding up interest rates and subsequently discouraging private firms from investing in productive capacity.",
+            "module": 4
+        },
+        {
+            "question_id": "21",
+            "question_text": "Explain how an increase in the Cash Reserve Ratio (CRR) by the RBI affects the supply of money in the economy. Walk through the money-multiplier mechanism in your answer. (Answer in 50 to 80 Words)",
+            "question_type": "SUBJECTIVE",
+            "correct_option_label": "",
+            "explanation": "The Cash Reserve Ratio (CRR) is the minimum percentage of deposits that commercial banks must maintain as cash reserves with the RBI. An increase in the CRR reduces the volume of loanable funds available to banks. According to the money multiplier formula ($Multiplier = 1 / CRR$), raising the CRR lowers the multiplier coefficient. Consequently, banks generate fewer secondary loans and demand deposits, which contracts the overall credit and broad money supply ($M3$) in the economy.",
+            "module": 2
+        },
+        {
+            "question_id": "22",
+            "question_text": "State the condition under which government debt is sustainable in the long run, referring to the relationship between the nominal growth rate of GDP (g) and the nominal interest rate on debt (r). Briefly explain the intuition. (Answer in 50 to 80 Words)",
+            "question_type": "SUBJECTIVE",
+            "correct_option_label": "",
+            "explanation": "For long-run public debt to be sustainable, the nominal GDP growth rate ($g$) must exceed the nominal interest rate paid on government debt ($r$), i.e., $g > r$. The intuition behind this condition is that if national income grows faster than the interest compounding on public borrowing, the debt-to-GDP ratio will naturally diminish over time, allowing the government to service its obligations without resorting to painful austerity measures or default.",
+            "module": 4
+        },
+        {
+            "question_id": "24",
+            "question_text": "[Case Context: Consider a small emerging economy that has, over the past decade, borrowed heavily in US dollars to finance infrastructure projects. It has run current-account deficits averaging 4 percent of GDP, financed largely by short-term capital inflows. Its central bank has been defending an exchange rate of around 200 local-currency units per dollar by selling reserves. Tourism, a major source of foreign exchange, has just collapsed because of a global shock.]\n\n(i) Identify the key macroeconomic vulnerabilities in this country and explain why a crisis becomes increasingly likely. (5 marks)",
+            "question_type": "SUBJECTIVE",
+            "correct_option_label": "",
+            "explanation": "The key macroeconomic vulnerabilities of this country are:\n1. **Severe Currency Mismatch**: Borrowing heavily in USD to fund domestic, long-term infrastructure exposes the country to massive debt-servicing risks if the local currency depreciates.\n2. **High Structural Current Account Deficit**: Running a persistent CAD of 4% of GDP financed by highly volatile short-term 'hot money' creates a fragile external position.\n3. **Depletion of FX Reserves**: The central bank's defense of a fixed exchange rate (200 units/$) consumes finite dollar reserves.\n4. **Lack of Economic Diversification**: High dependence on tourism for forex means a localized collapse halts major foreign inflows.\n\nA balance of payments crisis is highly likely because the collapse of tourism cuts off vital forex inflows. Lacking dollar earnings, the central bank will rapidly run out of reserves to defend the currency peg. As reserves dwindle, short-term investors will panic and flee, triggering a currency collapse, speculative attacks, and eventual default on the massive dollar-denominated debt.",
+            "module": 3
+        },
+        {
+            "question_id": "25",
+            "question_text": "[Case Context: Refer to the case study in Question ID 24 regarding a small emerging economy with high USD debt and a tourism collapse.]\n\n(ii) Using the impossible trinity, set out the choices the country now faces, and identify two lessons from India's 1991 BoP crisis that would be relevant. (5 marks)",
+            "question_type": "SUBJECTIVE",
+            "correct_option_label": "",
+            "explanation": "The Impossible Trinity dictates that a country cannot simultaneously maintain a fixed exchange rate, free capital mobility, and independent monetary policy. The country faces three hard choices:\n1. **Abandon the fixed exchange rate**: Let the currency depreciate to find its market level, which will, however, increase the real burden of the dollar debt.\n2. **Impose strict capital controls**: Restrict outflows to protect foreign reserves, sacrificing capital mobility to keep the peg and control interest rates.\n3. **Sacrifice monetary independence**: Heavily increase domestic interest rates to attract capital, which would defend the exchange rate but severely contract the domestic economy.\n\nTwo relevant lessons from India's 1991 BoP crisis are:\n1. **Shift to a flexible exchange rate regime**: Transitioning from a rigid peg to a managed float (like India's LERMS in 1992-93) helps absorb external shocks and prevents speculative runs on reserves.\n2. **Ensure stable financing of deficits**: Prioritize long-term FDI over short-term FPI or volatile commercial borrowings, while instituting structural reforms to reduce export concentration.",
+            "module": 3
+        },
+        {
+            "question_id": "27",
+            "question_text": "[Case Context: In a hypothetical scenario, the US Federal Reserve unexpectedly signals a sharper pace of rate hikes. Over the next three months, Foreign Portfolio Investors pull out heavily from Indian equity and bond markets. The rupee depreciates from 83 to 89 per dollar, the Sensex falls 12 percent, and 10-year Indian bond yields rise sharply. India had entered this episode with a current-account deficit of 2.1 percent of GDP.]\n\n(i) Based on the exchange-rate channel and the country risk premium, explain why a Fed announcement, without an actual rate change, can trigger such large effects on Indian markets. (5 marks)",
+            "question_type": "SUBJECTIVE",
+            "correct_option_label": "",
+            "explanation": "Even without an immediate rate hike, a Fed announcement operates via the expectations channel of monetary policy. Forward-looking financial markets immediately price in the future changes:\n1. **Exchange-Rate Channel**: Investors anticipate a shrinking interest rate differential ($i_{Domestic} - i_{Foreign}$). Under Covered and Uncovered Interest Rate Parity, this expectation leads to projected rupee depreciation, prompting portfolio investors to exit Indian assets immediately to avoid currency losses.\n2. **Country Risk Premium**: As global risk-free yields are expected to rise, emerging market assets look riskier relative to US Treasuries. The risk-adjusted return on Indian assets drops, and the country risk premium rises. FPIs aggressively dump Indian equities and bonds ('hot money' flight), causing the stock index to crash and pushing local bond yields upward as bond prices fall.",
+            "module": 3
+        },
+        {
+            "question_id": "28",
+            "question_text": "[Case Context: Refer to the case study in Question ID 27 regarding US Federal Reserve rate hike signals and capital flight from India.]\n\n(ii) Recommend three policy responses RBI could deploy, distinguishing between forex intervention, monetary policy, and macro-prudential tools. (5 marks)",
+            "question_type": "SUBJECTIVE",
+            "correct_option_label": "",
+            "explanation": "The RBI can deploy the following targeted instruments:\n1. **Forex Intervention**: Direct selling of foreign exchange reserves in the spot market to provide dollar liquidity, helping to stabilize the rupee's sudden depreciation and curb herd-like panic.\n2. **Monetary Policy**: Conduct defensive, short-term rate hikes (raising the repo rate) to widen the interest rate differential, making domestic debt assets more attractive to international capital and mitigating capital flight.\n3. **Macro-Prudential Tools**: Ease regulatory restrictions on external commercial borrowings (ECBs) and relax interest rate caps on NRI deposits to stimulate non-portfolio capital inflows, while setting strict capital buffers on domestic banks' unhedged foreign exchange exposures.",
+            "module": 3
+        },
+        {
+            "question_id": "29",
+            "question_text": "(a) Critically evaluate the claim that “a stronger rupee is always better for the Indian economy”. Examine the trade-offs an open economy faces when deciding whether to allow currency appreciation, particularly when global commodity prices are rising and domestic export competitiveness is under pressure. Use specific channels of impact to support your argument. (Answer in 100 to 150 Words)",
+            "question_type": "SUBJECTIVE",
+            "correct_option_label": "",
+            "explanation": "The claim that a stronger currency is always better is incorrect because exchange rates involve a critical trade-off between the import and export channels:\n1. **Import Channel (Pros of appreciation)**: A stronger rupee lowers the cost of imported goods, such as crude oil and raw materials. When global commodity prices are rising, appreciation helps contain imported cost-push inflation and narrows the trade deficit.\n2. **Export Competitiveness Channel (Cons of appreciation)**: An appreciated rupee makes domestic goods and services (like IT, textiles, and pharma) more expensive internationally. When export competitiveness is already under pressure, a stronger rupee reduces global sales volumes, dampens domestic economic growth ($Y$), and can widen the structural trade deficit.\nTherefore, defending an overvalued rupee hurts domestic manufacturers, demonstrating that a managed, competitively-aligned currency is often more beneficial.",
+            "module": 3
+        },
+        {
+            "question_id": "30",
+            "question_text": "(b) The Impossible Trinity is often presented as a binary constraint, but India's actual position is closer to a spectrum. Critically evaluate India's strategy of “managed integration” across exchange-rate regime, capital mobility, and monetary independence. Are there situations in which you would advise India to move closer to one corner of the triangle? Justify your view. (Answer in 100 to 150 Words)",
+            "question_type": "SUBJECTIVE",
+            "correct_option_label": "",
+            "explanation": "India operates inside the Impossible Trinity spectrum, practicing 'calibrated globalization' through a managed float (intervening only to curb extreme volatility), partial capital account convertibility (restricting volatile FPI debt but encouraging stable FDI), and substantial monetary autonomy. This hybrid strategy shields India from sudden external capital shocks while maintaining domestic credit control.\nHowever, in specific situations, India should move closer to a corner:\n1. **Priority on Monetary Independence (Lower Corner)**: During severe domestic inflationary crises, the RBI must aggressively prioritize inflation-targeting over managing the exchange rate, allowing the rupee to adjust dynamically.\n2. **Priority on Capital Mobility (Right Corner)**: If domestic private investment stalls severely and fiscal space is narrow, India should further ease capital controls on long-term corporate external debt to attract global financing, even if it introduces exchange-rate fluctuations.",
+            "module": 3
+        }
+    ]
+}
