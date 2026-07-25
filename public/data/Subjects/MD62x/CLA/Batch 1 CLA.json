@@ -1,0 +1,710 @@
+{
+    "exam_metadata": {
+        "subject_name": "Growth Engineering & Lean Validation",
+        "exam_date": "Batch 1",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "m1_q1",
+            "question_text": "A founder wants to avoid spending months building a product before discovering whether anyone will pay. Which option best reflects the logic emphasised in the material?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Build a minimum viable product first because real learning only happens after launch.",
+                "B": "Run a cheap, fast test that can reveal demand in days before committing major time and money.",
+                "C": "Focus only on customer interviews because opinions are a stronger signal than behaviour.",
+                "D": "Wait for a competitor to validate the idea before entering the market."
+            },
+            "correct_option_label": "B",
+            "explanation": "Lean validation emphasizes running rapid, low-cost experiments (like smoke tests) to capture real behavioral demand signals in days before committing engineering or operational resources to a full MVP or complete product build.",
+            "module": 1
+        },
+        {
+            "question_id": "m1_q2",
+            "question_text": "A team receives strong positive responses from friends and followers after posting a waitlist page. Why does the material treat this result cautiously?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because waitlists can never be used as evidence.",
+                "B": "Because warm traffic is more likely to create optimistic signals than genuine demand.",
+                "C": "Because any sign-up from social media is automatically invalid.",
+                "D": "Because positive reactions always mean the wrong product is being tested."
+            },
+            "correct_option_label": "B",
+            "explanation": "Warm traffic from friends, family, and social media followers introduces warm traffic bias, creating false positives driven by goodwill rather than true commercial intent.",
+            "module": 1
+        },
+        {
+            "question_id": "m1_q3",
+            "question_text": "Which landing-page structure best aligns with the design principles described?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A clever headline, multiple buttons, a footer menu, and several optional links for exploration.",
+                "B": "A long explanation of the founder’s story, followed by testimonials and several CTAs.",
+                "C": "A visually rich page with many navigation paths so visitors can choose their own journey.",
+                "D": "One specific headline, one sub-headline, minimal social proof, one CTA, and no distractions."
+            },
+            "correct_option_label": "D",
+            "explanation": "A validation landing page must remove all escape routes and distractions, containing strictly five mandatory elements: a specific headline, subheadline, minimal social proof, a single CTA, and zero navigation.",
+            "module": 1
+        },
+        {
+            "question_id": "m1_q4",
+            "question_text": "In the three-signal framework, traffic is strong, sign-ups are weak, and the bounce rate is also high. What is the most defensible interpretation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The traffic source is excellent, but the page message or proposition is not convincing visitors.",
+                "B": "The landing page is working perfectly because traffic is the hardest part.",
+                "C": "The product should be built immediately because interest is clearly high.",
+                "D": "The only issue is pricing, so the headline and audience do not matter."
+            },
+            "correct_option_label": "A",
+            "explanation": "In Scenario 2 of the diagnostic framework (Green CTR, Red Conversion, Red Bounce Rate), the ad successfully captures attention, but the landing page value proposition fails to convert visitors.",
+            "module": 1
+        },
+        {
+            "question_id": "m1_q5",
+            "question_text": "Why is a false positive more dangerous than no signal?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because a false positive saves money but wastes time.",
+                "B": "Because no signal always means the idea is useless.",
+                "C": "Because it creates confidence in the wrong direction and can lead to building the wrong thing.",
+                "D": "Because false positives only happen with paid ads, not organic traffic."
+            },
+            "correct_option_label": "C",
+            "explanation": "False positives create unearned confidence, leading founders to commit capital, engineering time, and operational resources to building a product that lacks actual market demand.",
+            "module": 1
+        },
+        {
+            "question_id": "m1_q6",
+            "question_text": "A founder thinks, “We already know the customer pain, so we know the demand exists.” Which trap does this best illustrate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Builders' bias.",
+                "B": "Speed fallacy.",
+                "C": "Certainty illusion.",
+                "D": "Outcome blindness."
+            },
+            "correct_option_label": "C",
+            "explanation": "The Certainty Illusion is the false belief that knowing a customer has a problem is equivalent to knowing they will pay for a specific solution.",
+            "module": 1
+        },
+        {
+            "question_id": "m1_q7",
+            "question_text": "A team says it cannot afford to validate because that would take too long, and they may lose first-mover advantage. What is the strongest response based on the material?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Validation takes longer than building, so the concern is valid.",
+                "B": "First-mover advantage is usually the main determinant of startup success.",
+                "C": "A short validation sprint is faster than months of building, and fit matters more than being first.",
+                "D": "Validation should only happen after the product has reached the market."
+            },
+            "correct_option_label": "C",
+            "explanation": "This scenario illustrates the Speed Fallacy; a 7-day smoke test is drastically faster than a 6-month build, and first-mover advantage is useless without product-market fit.",
+            "module": 1
+        },
+        {
+            "question_id": "m1_q8",
+            "question_text": "The material compares three routes to market: full build, MVP, and lean validation. Which statement best captures the intended lesson?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Full build is best because it produces the most complete learning.",
+                "B": "MVP and validation are identical because both are cheaper than a full build.",
+                "C": "Lean validation should only be used after the MVP fails.",
+                "D": "Lean validation is the earliest and cheapest way to decide whether the idea deserves building at all."
+            },
+            "correct_option_label": "D",
+            "explanation": "Lean validation tests market demand signals in 7–21 days with minimal to no capital, determining if an idea is worth building prior to writing code for an MVP or full product.",
+            "module": 1
+        },
+        {
+            "question_id": "m1_q9",
+            "question_text": "In the Zoco example, the ad performs well, but the landing page does not convert well. What should the team change first?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The traffic source, because traffic is always the root problem.",
+                "B": "The headline and proposition, because the message does not match what visitors want.",
+                "C": "The product manufacturing plan, because the signal is already strong.",
+                "D": "The social proof only, because that is the main conversion driver."
+            },
+            "correct_option_label": "B",
+            "explanation": "When top-of-funnel traffic CTR is strong but landing page conversion fails, iterate the landing page headline, copy, and offer—do not change the traffic source.",
+            "module": 1
+        },
+        {
+            "question_id": "m1_q10",
+            "question_text": "Why is it insisted on changing only one variable at a time after a test?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To make the page look simpler.",
+                "B": "To reduce ad costs.",
+                "C": "To keep the next result interpretable and know which change caused the improvement.",
+                "D": "To ensure every test produces a positive outcome."
+            },
+            "correct_option_label": "C",
+            "explanation": "Changing exactly one variable at a time maintains statistical interpretability, ensuring the experimenter knows precisely which element drove performance shifts.",
+            "module": 1
+        },
+        {
+            "question_id": "m2_q1",
+            "question_text": "A team is testing whether changing a CTA from “Start free” to “Record my first meeting” will improve sign-ups. Which statement best matches the logic of the null hypothesis?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The new CTA will improve sign-ups by at least 10%.",
+                "B": "The new CTA will improve sign-ups, but the size of the effect is unknown.",
+                "C": "The CTA change will produce no difference in sign-up rate.",
+                "D": "The CTA change will only help if the sample size is large."
+            },
+            "correct_option_label": "C",
+            "explanation": "The Null Hypothesis ($H_0$) represents the baseline assumption that no difference, effect, or change exists between the tested control and variant.",
+            "module": 2
+        },
+        {
+            "question_id": "m2_q2",
+            "question_text": "Why do the experiments begin from the null rather than from optimism?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because optimism lowers the sample size automatically.",
+                "B": "Because starting from no difference protects against confirmation bias.",
+                "C": "Because the null proves the alternative hypothesis more efficiently.",
+                "D": "Because a null hypothesis is the same thing as a market survey."
+            },
+            "correct_option_label": "B",
+            "explanation": "Assuming $H_0$ is true before gathering data forces objective evaluation and protects experimenters from confirmation bias and premature test termination.",
+            "module": 2
+        },
+        {
+            "question_id": "m2_q3",
+            "question_text": "A team sees a 4.2% conversion rate for Variant B after only three days and decides to stop the test immediately. Why is this risky?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It guarantees the result is wrong.",
+                "B": "It may be peeking, which inflates the false positive risk.",
+                "C": "It means the hypothesis was never testable.",
+                "D": "It proves the null hypothesis was false."
+            },
+            "correct_option_label": "B",
+            "explanation": "Stopping a test early upon seeing positive initial results is 'peeking', which drastically inflates Type I error (False Positive) rates and ignores the 7-calendar-day rule.",
+            "module": 2
+        },
+        {
+            "question_id": "m2_q4",
+            "question_text": "A company wants to test a pricing-page CTA, but the required sample is 9,500 users per variant, and the current traffic is only 620 sign-ups per month. What is the strongest implication?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The test is invalid and should be abandoned permanently.",
+                "B": "The team should run the test for 15 months without any changes.",
+                "C": "The sample size is too high because 620 per month is enough for any experiment.",
+                "D": "The team should consider a proxy metric or a different mode because the full test is too slow at the current traffic."
+            },
+            "correct_option_label": "D",
+            "explanation": "When required sample sizes demand unachievable runtimes (e.g., 15 months), growth teams must switch to Mode 03 (Proxy Testing) or Mode 02 (Directional Testing) to maintain velocity.",
+            "module": 2
+        },
+        {
+            "question_id": "m2_q5",
+            "question_text": "What is the best plain-language meaning of minimum detectable effect?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The smallest improvement that would actually change a business decision.",
+                "B": "The smallest number that any calculator can compute.",
+                "C": "The average improvement from previous experiments.",
+                "D": "The best-case conversion rate that the team hopes for."
+            },
+            "correct_option_label": "A",
+            "explanation": "Minimum Detectable Effect (MDE) is the smallest relative or absolute lift between variants that justifies business action and justifies running the experiment.",
+            "module": 2
+        },
+        {
+            "question_id": "m2_q6",
+            "question_text": "Which situation best reflects a type 1 error?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A team misses a real improvement because it used too little data.",
+                "B": "A team scales a change because it looked strong in a tiny early sample, but the effect was only noise.",
+                "C": "A team keeps control because the variant is truly worse.",
+                "D": "A team waits for the full sample size before deciding."
+            },
+            "correct_option_label": "B",
+            "explanation": "A Type I Error alpha is a False Positive—declaring a winning variant when the observed difference was actually produced by random noise.",
+            "module": 2
+        },
+        {
+            "question_id": "m2_q7",
+            "question_text": "Which situation best reflects a type 2 error?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A team rejects a winning idea after running an underpowered test.",
+                "B": "A team declares a winner too early.",
+                "C": "A team sets alpha at 0.05.",
+                "D": "A team uses seven calendar days for the test."
+            },
+            "correct_option_label": "A",
+            "explanation": "A Type II Error ($\beta$) is a False Negative—failing to detect a real improvement because the experiment was underpowered or lacked sufficient sample size.",
+            "module": 2
+        },
+        {
+            "question_id": "m2_q8",
+            "question_text": "A product team is testing a pricing change that would be hard to reverse if wrong. Which error should they worry about more?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Type 1 error, because a bad pricing change can be very costly to scale.",
+                "B": "Type 2 error, because missing any improvement is always the biggest risk.",
+                "C": "Neither error, because pricing changes are reversible.",
+                "D": "Only type 2 error, because type 1 error does not apply to pricing tests."
+            },
+            "correct_option_label": "A",
+            "explanation": "Type I errors must be guarded against in high-stakes, resource-intensive, or irreversible decisions (like pricing changes) where deploying a false winner carries heavy financial risk.",
+            "module": 2
+        },
+        {
+            "question_id": "m2_q9",
+            "question_text": "A team cannot wait three months to see 90-day repurchase data, so it chooses a day-14 engagement metric instead. What must be true for this proxy to be valid?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It must be easier to explain to executives.",
+                "B": "It must be correlated with the final metric, sensitive to the tested change, and faster to measure.",
+                "C": "It must always be lower than the final metric.",
+                "D": "It must replace the final metric permanently."
+            },
+            "correct_option_label": "B",
+            "explanation": "A valid proxy metric must fulfill three criteria: documented empirical correlation with the lagging metric, sensitivity to the variable being tested, and a significant speed advantage in sample collection.",
+            "module": 2
+        },
+        {
+            "question_id": "m2_q10",
+            "question_text": "Why is it important to record the test mode before seeing the result?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It makes the result look stronger.",
+                "B": "It forces the team to agree in advance on what kind of conclusion is acceptable.",
+                "C": "It guarantees statistical significance.",
+                "D": "It reduces the need for a baseline rate."
+            },
+            "correct_option_label": "B",
+            "explanation": "Pre-registering the experiment mode (Mode 01, 02, or 03) establishes acceptable statistical risk and decision thresholds prior to data exposure, preventing goalpost shifting.",
+            "module": 2
+        },
+        {
+            "question_id": "m3_q1",
+            "question_text": "What is the main reason to use cohort analysis instead of only looking at total user numbers?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It removes the need for retention tracking",
+                "B": "It makes dashboards look more complete",
+                "C": "It shows hidden differences in user behaviour over time",
+                "D": "It replaces all other growth metrics"
+            },
+            "correct_option_label": "C",
+            "explanation": "Cohort analysis isolates groups by shared start times to reveal true retention trends over time, preventing aggregate growth numbers from masking churn.",
+            "module": 3
+        },
+        {
+            "question_id": "m3_q2",
+            "question_text": "A product has 10,000 total users, but most from older cohorts have stopped using it. What does this show?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Older users always stop using products",
+                "B": "Aggregate data can hide retention problems",
+                "C": "Acquisition is the only problem",
+                "D": "The product is definitely growing well"
+            },
+            "correct_option_label": "B",
+            "explanation": "High acquisition numbers disguise underlying churn in aggregate dashboards (the 'leaky bucket' effect), hiding the fact that older users systematically abandon the product.",
+            "module": 3
+        },
+        {
+            "question_id": "m3_q3",
+            "question_text": "What are the three required parts of cohort analysis?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Revenue, traffic, and profit",
+                "B": "Users, competitors, and channels",
+                "C": "Entry event, time window, and metric",
+                "D": "Ads, pages, and emails"
+            },
+            "correct_option_label": "C",
+            "explanation": "Every cohort analysis strictly requires an Entry Event (starting action), a Time Window (intervals tracked), and a Tracked Metric (ongoing usage action).",
+            "module": 3
+        },
+        {
+            "question_id": "m3_q4",
+            "question_text": "If a retention curve drops sharply at the beginning and then becomes flat, what does that usually mean?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Acquisition should stop forever",
+                "B": "A loyal core exists after early drop-off",
+                "C": "The product has no users",
+                "D": "The product is failing"
+            },
+            "correct_option_label": "B",
+            "explanation": "A retention curve that drops initially but levels off above zero indicates the presence of a stable, loyal core user base, despite early onboarding friction.",
+            "module": 3
+        },
+        {
+            "question_id": "m3_q5",
+            "question_text": "If a retention curve keeps falling with no stable floor, what is the best interpretation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The company should scale immediately",
+                "B": "The product is building habits strongly",
+                "C": "The product has not found loyal users yet",
+                "D": "The product has a committed core"
+            },
+            "correct_option_label": "C",
+            "explanation": "A continuously declining retention curve (slow bleed) that approaches zero shows that the product fails to form ongoing usage habits and lacks Product-Market Fit.",
+            "module": 3
+        },
+        {
+            "question_id": "m3_q6",
+            "question_text": "Why is a slow bleed retention curve dangerous?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because it always improves acquisition",
+                "B": "Because it looks harmless while steadily losing users",
+                "C": "Because it proves the product is working",
+                "D": "Because it is easy to notice"
+            },
+            "correct_option_label": "B",
+            "explanation": "A slow bleed retention curve is subtle; ongoing new user acquisition hides the steady, continuous loss of existing users until acquisition slows down.",
+            "module": 3
+        },
+        {
+            "question_id": "m3_q7",
+            "question_text": "In the module, what does the steepest early drop in retention usually suggest?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A CAC problem only",
+                "B": "A referral problem only",
+                "C": "Either a targeting problem or an onboarding problem",
+                "D": "A pricing issue only"
+            },
+            "correct_option_label": "C",
+            "explanation": "A steep drop in Phase 1 (Day 0 to Day 7) indicates either an audience targeting mismatch or onboarding friction preventing users from reaching the AHA moment.",
+            "module": 3
+        },
+        {
+            "question_id": "m3_q8",
+            "question_text": "What does a floor above 30 on a retention curve suggest?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "High acquisition cost",
+                "B": "No need for further testing",
+                "C": "Weak product-market fit",
+                "D": "A strong product signal with a loyal base"
+            },
+            "correct_option_label": "D",
+            "explanation": "A retention curve flattening above 30% indicates a strong product-market fit signal with a highly engaged, loyal core user base.",
+            "module": 3
+        },
+        {
+            "question_id": "m3_q9",
+            "question_text": "What should a growth team do before scaling if the retention curve shows a steep early drop?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ignore retention and focus on brand awareness",
+                "B": "Stop all product work",
+                "C": "Spend more on acquisition",
+                "D": "Fix onboarding and reduce early drop first"
+            },
+            "correct_option_label": "D",
+            "explanation": "Before pouring capital into user acquisition, growth teams must streamline onboarding and fix early drop-off to ensure newly acquired users are retained.",
+            "module": 3
+        },
+        {
+            "question_id": "m3_q10",
+            "question_text": "Why does the module say the Growth Readiness Brief is important?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It forces clear decisions about demand, retention, unit economics, and constraints",
+                "B": "It replaces all analysis",
+                "C": "It makes reports longer",
+                "D": "It is only for finance teams"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Growth Readiness Brief acts as a living strategic document that consolidates demand evidence, cohort retention, unit economics, and funnel constraints into an explicit readiness call (Scale, Iterate, or Pivot).",
+            "module": 3
+        },
+        {
+            "question_id": "m4_q1",
+            "question_text": "Why does the module separate marketing, product, and growth?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They are the same thing",
+                "B": "Each one solves a different business problem",
+                "C": "Growth is only for big companies",
+                "D": "Product owns all revenue"
+            },
+            "correct_option_label": "B",
+            "explanation": "Marketing creates demand at the top of the funnel, Product builds the core value experience, and Growth optimizes stage-to-stage transitions across the entire customer lifecycle.",
+            "module": 4
+        },
+        {
+            "question_id": "m4_q2",
+            "question_text": "What is marketing mainly responsible for?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Building features",
+                "B": "Retention loops only",
+                "C": "Creating demand and filling the top of the funnel",
+                "D": "Running product experiments"
+            },
+            "correct_option_label": "C",
+            "explanation": "Marketing owns brand positioning, demand generation, and acquiring prospective leads at the top of the acquisition funnel.",
+            "module": 4
+        },
+        {
+            "question_id": "m4_q3",
+            "question_text": "What is the product mainly responsible for?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Building the core value and user experience",
+                "B": "Managing ad campaigns",
+                "C": "Writing sales scripts",
+                "D": "Owning referral loops"
+            },
+            "correct_option_label": "A",
+            "explanation": "The product function is responsible for building the underlying technology, feature set, and user experience that delivers core value.",
+            "module": 4
+        },
+        {
+            "question_id": "m4_q4",
+            "question_text": "What is growth mainly responsible for?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only brand awareness",
+                "B": "Only engineering",
+                "C": "Only finance",
+                "D": "The transition between funnel stages"
+            },
+            "correct_option_label": "D",
+            "explanation": "Growth connects acquisition, activation, retention, revenue, and referral by systematically optimizing transitions between each stage of the user journey.",
+            "module": 4
+        },
+        {
+            "question_id": "m4_q5",
+            "question_text": "Why is hiring the wrong role a problem?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because all roles do the same thing",
+                "B": "Because the wrong metric may judge people",
+                "C": "Because hiring is never useful",
+                "D": "Because leads do not matter"
+            },
+            "correct_option_label": "B",
+            "explanation": "Misaligning roles (e.g., hiring a Growth Lead but evaluating them on top-of-funnel Marketing leads) causes teams to optimize for volume while unit economics and retention suffer.",
+            "module": 4
+        },
+        {
+            "question_id": "m4_q6",
+            "question_text": "What does the ladder of proof show?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "How far a company has moved from idea proof to scalable growth",
+                "B": "How much money a company raised",
+                "C": "Which ad platform is best",
+                "D": "Which feature has the most clicks"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Ladder of Proof provides a 5-rung maturity progression tracking a company's readiness from Idea Proof (Rung 1) up to Scalable Growth (Rung 5).",
+            "module": 4
+        },
+        {
+            "question_id": "m4_q7",
+            "question_text": "What does an early-stage company usually need most?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "More automation",
+                "B": "Search and learning",
+                "C": "A bigger brand budget",
+                "D": "A larger annual roadmap"
+            },
+            "correct_option_label": "B",
+            "explanation": "Early-stage growth operates in Search Mode, focusing on qualitative discovery, customer understanding, and finding repeatable channels rather than scaling automation.",
+            "module": 4
+        },
+        {
+            "question_id": "m4_q8",
+            "question_text": "What is zero-budget traction meant to do?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Replace the product",
+                "B": "Grow without paid ads by using compounding assets",
+                "C": "Reduce retention tracking",
+                "D": "Remove customer research"
+            },
+            "correct_option_label": "B",
+            "explanation": "Zero-budget traction leverages compounding organic assets (content, founder building in public, creator seeding, viral loops) to generate sustainable user growth without ad spend.",
+            "module": 4
+        },
+        {
+            "question_id": "m4_q9",
+            "question_text": "Why does the module treat B2B and B2C differently?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because they have the same customer journey",
+                "B": "Because B2C never needs growth",
+                "C": "Because B2B only needs ads",
+                "D": "Because their customers, proof needs, and decision patterns are different"
+            },
+            "correct_option_label": "D",
+            "explanation": "B2B and B2C involve fundamentally different sales cycles, buyer decision units, social proof requirements, and conversion velocity.",
+            "module": 4
+        },
+        {
+            "question_id": "m4_q10",
+            "question_text": "What is the main lesson when growth is falling?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Run more ads immediately",
+                "B": "Ship more features immediately",
+                "C": "First, diagnose the real gap",
+                "D": "Ignore the numbers"
+            },
+            "correct_option_label": "C",
+            "explanation": "When growth stalls, teams must use funnel math and cohort diagnostics to isolate the exact primary constraint before blindly scaling ads or shipping features.",
+            "module": 4
+        },
+        {
+            "question_id": "m5_q1",
+            "question_text": "Why does the module say the most popular channel is not always the right one?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Popular channels never work",
+                "B": "The right channel depends on the product’s fit, economics, and audience",
+                "C": "Popular channels are always too expensive",
+                "D": "Popular channels only work for B2C"
+            },
+            "correct_option_label": "B",
+            "explanation": "Acquisition channel selection depends on aligning fixed channel properties (targeting, cost, control) with product characteristics (ACV, consideration time, market size).",
+            "module": 5
+        },
+        {
+            "question_id": "m5_q2",
+            "question_text": "What is channel-market fit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Choosing the channel with the highest followers",
+                "B": "Using every channel at once",
+                "C": "Matching a channel’s properties with the product’s economics and conditions",
+                "D": "Picking channels used by competitors"
+            },
+            "correct_option_label": "C",
+            "explanation": "Channel-Market Fit occurs when a channel's non-negotiable operational properties match a product's business model and unit economics.",
+            "module": 5
+        },
+        {
+            "question_id": "m5_q3",
+            "question_text": "Which of the following is one of the six channel properties?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Colour palette",
+                "B": "Brand mood",
+                "C": "Office location",
+                "D": "Targeting"
+            },
+            "correct_option_label": "D",
+            "explanation": "The six channel properties are Targeting, Control, Input Cost, Output Quality, Time to Result, and Scalability.",
+            "module": 5
+        },
+        {
+            "question_id": "m5_q4",
+            "question_text": "Why can a great channel still fail for a product?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because the content team is always wrong",
+                "B": "Because the product’s price, ACV, or audience may not suit that channel",
+                "C": "Because channels cannot be measured",
+                "D": "Because all channels require the same budget"
+            },
+            "correct_option_label": "B",
+            "explanation": "If a product's ACV cannot support a channel's underlying acquisition cost (CAC), the channel will fail regardless of ad creative or team execution.",
+            "module": 5
+        },
+        {
+            "question_id": "m5_q5",
+            "question_text": "What is the main reason LinkedIn paid ads fail for some low-ACV products?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "LinkedIn has no users",
+                "B": "The CAC becomes too high for the unit economics",
+                "C": "The product cannot be explained on LinkedIn",
+                "D": "LinkedIn works only for consumer brands"
+            },
+            "correct_option_label": "B",
+            "explanation": "LinkedIn paid ads carry high acquisition costs (CAC of ₹8,000–₹10,000), which overwhelms the unit economics of low-ACV or low-priced subscription products.",
+            "module": 5
+        },
+        {
+            "question_id": "m5_q6",
+            "question_text": "Why is time to result important when choosing a channel?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because the business may run out of time or cash before a slow channel works",
+                "B": "Because faster channels are always cheaper",
+                "C": "Because slow channels never scale",
+                "D": "Because only SEO needs planning"
+            },
+            "correct_option_label": "A",
+            "explanation": "Slow-feedback channels (like long-term SEO) risk depleting startup runway and capital before yielding actionable performance data.",
+            "module": 5
+        },
+        {
+            "question_id": "m5_q7",
+            "question_text": "What is the purpose of scoring only two or three channels?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To avoid all experimentation",
+                "B": "To keep the team small",
+                "C": "To reduce product quality",
+                "D": "To balance learning and focus without spreading resources too thin"
+            },
+            "correct_option_label": "D",
+            "explanation": "Executing more than 2–3 channels simultaneously dilutes focus and capital, while relying on a single channel introduces concentration risk.",
+            "module": 5
+        },
+        {
+            "question_id": "m5_q8",
+            "question_text": "What is the best description of an outbound system?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A five-part machine made of list, trigger, message, sequence, and reply engine",
+                "B": "A random list of emails sent once",
+                "C": "A paid ad campaign",
+                "D": "A referral programme"
+            },
+            "correct_option_label": "A",
+            "explanation": "A high-performing B2B outbound engine requires five integrated components: Target List, Trigger Signal, 4-Part Message, Multi-Touch Sequence, and Reply Engine.",
+            "module": 5
+        },
+        {
+            "question_id": "m5_q9",
+            "question_text": "Why is the trigger such an important part of outbound?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It makes the email longer",
+                "B": "It replaces the message",
+                "C": "It tells you why this prospect and why now",
+                "D": "It works only for B2C"
+            },
+            "correct_option_label": "C",
+            "explanation": "Trigger signals establish timing relevance by anchoring outreach in real-world prospect events, answering 'why this prospect and why now' to boost response rates.",
+            "module": 5
+        },
+        {
+            "question_id": "m5_q10",
+            "question_text": "What makes a real organic loop different from a campaign?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A loop ends when the customer buys",
+                "B": "A campaign always has a K-factor",
+                "C": "A campaign never uses social media",
+                "D": "A loop creates re-input, where one customer brings the next customer"
+            },
+            "correct_option_label": "D",
+            "explanation": "Unlike campaigns that terminate at purchase, organic loops use customer purchase/usage actions as inputs to automatically attract subsequent users.",
+            "module": 5
+        }
+    ]
+}

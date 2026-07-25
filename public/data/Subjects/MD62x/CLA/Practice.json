@@ -1,0 +1,80 @@
+{
+    "exam_metadata": {
+        "subject_name": "Growth Strategy & Experimentation",
+        "exam_date": "Batch 1",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "Which factors should be considered when evaluating channel-market fit? Select all that apply.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product pricing and unit economics",
+                "B": "Target audience and market size",
+                "C": "The popularity of the channel alone",
+                "D": "Customer purchase frequency"
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "Evaluating channel-market fit requires aligning channel mechanics with core product properties, including price point (ACV), market size, and purchase frequency. Selecting channels based purely on channel popularity without considering economic unit fit leads to negative ROI.",
+            "module": 5
+        },
+        {
+            "question_id": "2",
+            "question_text": "Which factors should be considered when evaluating channel-market fit? Select all that apply.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Targeting precision",
+                "B": "Time to result",
+                "C": "Scalability",
+                "D": "Office location"
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "Evaluating channel fit depends on essential channel properties: targeting precision, time to result, scalability, input cost, control, and output quality. Physical office location is irrelevant to digital acquisition channel dynamics.",
+            "module": 5
+        },
+        {
+            "question_id": "3",
+            "question_text": "Why might LinkedIn paid advertising be unsuitable for a low-ACV B2B product? Select all that apply.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customer acquisition cost may exceed customer value",
+                "B": "The product may not generate enough revenue to recover the advertising cost",
+                "C": "LinkedIn cannot target business professionals",
+                "D": "All B2B products must use organic channels"
+            },
+            "correct_option_label": "A, B",
+            "explanation": "LinkedIn paid ads have high unit costs, typically yielding a CAC of ₹8,000 to ₹10,000+. For low-ACV products, this acquisition cost exceeds the lifetime customer value (LTV), making advertising cost recovery mathematically impossible.",
+            "module": 5
+        },
+        {
+            "question_id": "4",
+            "question_text": "Which statements correctly describe time to result? Select all that apply.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Paid advertising may produce results within a few days",
+                "B": "SEO may require several months to generate meaningful results",
+                "C": "A slow channel may be unsuitable when the company has limited cash",
+                "D": "Time to result does not affect channel selection"
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "Time to result measures the speed at which a channel provides actionable performance signals (e.g., Paid Ads = 3 days vs. SEO = 6–12 months). Startups with limited runway cannot afford slow-feedback channels that burn capital before delivering data.",
+            "module": 5
+        },
+        {
+            "question_id": "5",
+            "question_text": "Why should a business initially test only two or three channels? Select all that apply.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It allows comparison between channel performance",
+                "B": "It reduces concentration risk",
+                "C": "It prevents resources from being spread too thin",
+                "D": "It guarantees that every selected channel will succeed"
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "Executing 2 to 3 channels balances concentration risk (not relying on a single platform) against resource dilution (spreading team efforts too thin). It allows side-by-side performance comparison, though success in any single channel is never guaranteed.",
+            "module": 5
+        }
+    ]
+}
