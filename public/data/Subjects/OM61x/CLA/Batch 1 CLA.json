@@ -1,0 +1,681 @@
+{
+    "exam_metadata": {
+        "subject_name": "Supply Chain Management",
+        "exam_date": "Batch 1",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "M1_Q1",
+            "question_text": "Which of the following best captures the meaning of a supply chain?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The network of factories that manufacture a product",
+                "B": "The transportation system used to move finished goods",
+                "C": "All parties involved, directly or indirectly, in fulfilling a customer request",
+                "D": "The warehousing and inventory activities of a firm"
+            },
+            "correct_option_label": "C",
+            "explanation": "A supply chain is an end-to-end system that encompasses all entities, processes, and flows directly or indirectly involved in fulfilling a customer request.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q2",
+            "question_text": "Which set of flows moves continuously within a supply chain?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product, advertising, and labour",
+                "B": "Product, information, and funds",
+                "C": "Inventory, machinery, and discounts",
+                "D": "Production, retailing, and branding"
+            },
+            "correct_option_label": "B",
+            "explanation": "Every supply chain relies on three primary interconnected flows: physical product/material flow, bi-directional information flow, and financial cash/funds flow.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q3",
+            "question_text": "What is the primary objective of a supply chain?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To maximize the manufacturer’s profit",
+                "B": "To minimize transportation cost alone",
+                "C": "To maximize overall value generated, or supply chain surplus",
+                "D": "To keep inventory as low as possible"
+            },
+            "correct_option_label": "C",
+            "explanation": "The primary objective of a supply chain is to maximize the total Supply Chain Surplus created across all stages, rather than locally optimizing an individual firm's profits.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q4",
+            "question_text": "Supply chain surplus is best expressed as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Revenue minus manufacturing cost",
+                "B": "Profit margin multiplied by asset turnover",
+                "C": "Price paid by customer minus retailer margin",
+                "D": "Customer value minus supply chain cost"
+            },
+            "correct_option_label": "D",
+            "explanation": "Supply Chain Surplus is defined as the total Customer Value (maximum willingness to pay) minus the total costs incurred across all stages of the supply chain.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q5",
+            "question_text": "Which of the following is most clearly a supply chain design decision rather than a planning or operations decision?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Choosing the location of warehouses for the next several years",
+                "B": "Assigning today’s customer orders to specific trucks",
+                "C": "Deciding monthly inventory targets for the festive season",
+                "D": "Creating pick lists for a warehouse shift"
+            },
+            "correct_option_label": "A",
+            "explanation": "Supply chain design decisions involve long-term architectural choices (spanning years), such as facility location and capacity choices, which cannot be easily altered in the short term.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q6",
+            "question_text": "In the cycle view of supply chain processes, the replenishment cycle occurs at the interface between:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customer and retailer",
+                "B": "Retailer and distributor or warehouse",
+                "C": "Manufacturer and supplier",
+                "D": "Distributor and customer"
+            },
+            "correct_option_label": "B",
+            "explanation": "In the cycle view, the replenishment cycle takes place at the interface between the retailer and the distributor/warehouse as the retailer replenishes inventory to satisfy customer demand.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q7",
+            "question_text": "In the push or pull view, a process is classified as a pull process if it is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Executed in anticipation of customer orders",
+                "B": "Executed only by the manufacturer",
+                "C": "Initiated in response to a customer order",
+                "D": "Always performed with low inventory"
+            },
+            "correct_option_label": "C",
+            "explanation": "Pull processes are triggered directly in response to an explicit customer order, whereas push processes operate speculatively in anticipation of demand.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q8",
+            "question_text": "What does strategic fit mean?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Choosing the lowest-cost supplier in every category",
+                "B": "Matching the responsiveness of the supply chain to the uncertainty created by the competitive strategy",
+                "C": "Maximizing inventory turns regardless of service level",
+                "D": "Ensuring that every stage of the supply chain is equally responsive"
+            },
+            "correct_option_label": "B",
+            "explanation": "Strategic fit requires aligning the operational capabilities of the supply chain (responsiveness vs. efficiency) with the implied demand uncertainty generated by the firm's competitive strategy.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q9",
+            "question_text": "Return on equity, ROE, is defined as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Net income divided by average total assets",
+                "B": "Earnings before interest divided by sales revenue",
+                "C": "Sales revenue divided by average shareholder equity",
+                "D": "Net income divided by average shareholder equity"
+            },
+            "correct_option_label": "D",
+            "explanation": "Return on Equity (ROE) measures financial profitability relative to shareholder investment and is calculated as Net Income divided by Average Shareholder Equity.",
+            "module": 1
+        },
+        {
+            "question_id": "M1_Q10",
+            "question_text": "According to Little’s Law, if throughput is 60 units per day and average flow time is 4 days, average inventory in the system is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "15 units",
+                "B": "56 units",
+                "C": "64 units",
+                "D": "240 units"
+            },
+            "correct_option_label": "D",
+            "explanation": "According to Little's Law ($I = D \\times T$), Average Inventory ($I$) = Throughput ($D$) $\\times$ Flow Time ($T$). Substituting the given values: $I = 60 \\text{ units/day} \\times 4 \\text{ days} = 240 \\text{ units}$.",
+            "module": 1
+        },
+        {
+            "question_id": "M2_Q1",
+            "question_text": "Why is forecasting important even in a pull-based supply chain?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because pull systems do not need actual customer orders",
+                "B": "Because capacity and inventory still need to be planned in advance",
+                "C": "Because forecasting replaces collaboration",
+                "D": "Because pull systems eliminate uncertainty"
+            },
+            "correct_option_label": "B",
+            "explanation": "Although pull execution responds to actual customer orders, long-lead resources, operational capacity, and baseline inventory buffers must still be planned ahead using demand forecasts.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q2",
+            "question_text": "What is the main benefit of collaborative forecasting?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It ensures every stage uses a different forecast",
+                "B": "It eliminates the need for buffer inventory",
+                "C": "It helps supply chain partners align around a common view of demand",
+                "D": "It works only for long-range forecasts"
+            },
+            "correct_option_label": "C",
+            "explanation": "Collaborative forecasting shares market insights and promotional plans across supply chain partners to establish a single aligned view of future demand, mitigating supply-demand mismatches.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q3",
+            "question_text": "Which of the following is a common feature of most forecasts?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They are equally accurate for individual SKUs and broad categories",
+                "B": "They are usually more accurate for groups than for individual items",
+                "C": "Their accuracy improves as the time horizon increases",
+                "D": "They are always perfect if data is available"
+            },
+            "correct_option_label": "B",
+            "explanation": "Forecasts are significantly more accurate for aggregated groups or product families because individual SKU variations and random demand fluctuations cancel each other out.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q4",
+            "question_text": "If a forecast is too low, which of the following is most likely?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Excess inventory and idle capacity",
+                "B": "Lower holding costs and better service",
+                "C": "Better coordination with suppliers",
+                "D": "Stockouts, missed deliveries, and poor service"
+            },
+            "correct_option_label": "D",
+            "explanation": "Under-forecasting leads to insufficient inventory positioning and capacity allocation, resulting in stock-outs, fulfillment delays, and eroded customer service levels.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q5",
+            "question_text": "A time series that fluctuates around a fairly stable average level, with no clear upward or downward movement, is best described as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Trend",
+                "B": "Seasonal",
+                "C": "Horizontal",
+                "D": "Cyclical"
+            },
+            "correct_option_label": "C",
+            "explanation": "A horizontal (or level) pattern represents time-series data that fluctuates randomly around a constant mean value without any sustained upward or downward trend.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q6",
+            "question_text": "What is the key difference between seasonality and cyclical variation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Seasonality is random, while cycles are fixed",
+                "B": "Seasonality repeats with a known periodicity, while cycles do not have a fixed periodicity",
+                "C": "Cycles occur weekly, while seasonality occurs yearly",
+                "D": "Cycles are easier to forecast than seasonality"
+            },
+            "correct_option_label": "B",
+            "explanation": "Seasonality consists of regular demand movements tied to recurring calendar events with a known, fixed periodicity. Cyclical variations are long-term macroeconomic shifts with non-fixed periods.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q7",
+            "question_text": "If actual demand is 100 and forecast demand is 90, then the forecast error is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "-10",
+                "B": "0",
+                "C": "+10",
+                "D": "+190"
+            },
+            "correct_option_label": "C",
+            "explanation": "Forecast error is defined as $E_t = A_t - F_t$. Substituting the values: $E_t = 100 - 90 = +10$.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q8",
+            "question_text": "Which forecast accuracy measure penalizes large errors more heavily because the errors are squared?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "MAD",
+                "B": "MSE",
+                "C": "MAPE",
+                "D": "Mean forecast"
+            },
+            "correct_option_label": "B",
+            "explanation": "Mean Squared Error (MSE) squares individual errors $(A_t - F_t)^2$, which heavily penalizes large forecast deviations relative to smaller errors.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q9",
+            "question_text": "Suppose the previous forecast is 42, actual demand is 40, and α = 0.10. What is the new exponential smoothing forecast?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "41.8",
+                "B": "40.2",
+                "C": "41.0",
+                "D": "42.2"
+            },
+            "correct_option_label": "A",
+            "explanation": "Using the Single Exponential Smoothing formula: $F_t = F_{t-1} + \\alpha (A_{t-1} - F_{t-1}) = 42 + 0.10(40 - 42) = 42 + 0.10(-2) = 42 - 0.2 = 41.8$.",
+            "module": 2
+        },
+        {
+            "question_id": "M2_Q10",
+            "question_text": "Which statement best captures the purpose of aggregate planning?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To determine the exact SKU picked for each customer order tomorrow",
+                "B": "To decide detailed truck routes for the coming week",
+                "C": "To plan production, capacity, inventory, and backlogs over the next few months profitably",
+                "D": "To estimate the intercept and slope of a trend line"
+            },
+            "correct_option_label": "C",
+            "explanation": "Aggregate planning determines aggregate output rates, workforce levels, inventory levels, and backlogs over an intermediate planning horizon (3 to 18 months) to satisfy demand at minimum total cost.",
+            "module": 2
+        },
+        {
+            "question_id": "M3_Q1",
+            "question_text": "Which of the following best defines inventory?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only finished goods waiting to be sold",
+                "B": "A stock or store of goods",
+                "C": "Only raw materials used in manufacturing",
+                "D": "Goods that are obsolete and unsold"
+            },
+            "correct_option_label": "B",
+            "explanation": "Inventory is defined broadly as any stock or store of physical goods (including raw materials, WIP, finished goods, and MRO) held within a supply chain.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q2",
+            "question_text": "Safety stock is best described as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Inventory created only because of quantity discounts",
+                "B": "Inventory used only in manufacturing",
+                "C": "Inventory that is obsolete and marked down",
+                "D": "Inventory held in excess of expected demand to compensate for demand and lead-time variability"
+            },
+            "correct_option_label": "D",
+            "explanation": "Safety stock is buffer inventory maintained above baseline expected demand to protect the firm against demand surges and vendor lead-time delays.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q3",
+            "question_text": "According to Little’s Law, if average demand is 5 units per day and average time in the system is 10 days, average inventory is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "15 units",
+                "B": "50 units",
+                "C": "100 units",
+                "D": "2 units"
+            },
+            "correct_option_label": "B",
+            "explanation": "According to Little's Law ($I = D \\times T$), Average Inventory ($I$) = Demand Rate ($D$) $\\times$ Flow Time ($T$). Thus, $I = 5 \\text{ units/day} \\times 10 \\text{ days} = 50 \\text{ units}$.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q4",
+            "question_text": "Which of the following is not one of the four basic inventory cost categories discussed in class?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Purchase cost",
+                "B": "Holding cost",
+                "C": "Shortage cost",
+                "D": "Advertising cost"
+            },
+            "correct_option_label": "D",
+            "explanation": "The four main inventory cost categories are Purchase Cost, Holding Cost, Ordering/Setup Cost, and Shortage Cost. Advertising is a marketing expense.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q5",
+            "question_text": "If an item costs ₹180 per unit and the annual carrying-rate is 10%, what is the annual holding cost per unit",
+            "question_type": "MCQ",
+            "options": {
+                "A": "₹10",
+                "B": "₹18",
+                "C": "₹36",
+                "D": "₹180"
+            },
+            "correct_option_label": "B",
+            "explanation": "Annual holding cost per unit ($h$) is calculated as $h = i \\times C$. Substituting the given values: $h = 10\\% \\times ₹180 = ₹18$ per unit per year.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q6",
+            "question_text": "Which statement best describes ordering cost?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is always proportional only to the number of units ordered",
+                "B": "It is the same as shortage cost",
+                "C": "It includes only purchase spending",
+                "D": "It usually has a fixed component per order"
+            },
+            "correct_option_label": "D",
+            "explanation": "Ordering cost represents administrative, clerical, and transportation costs that contain a fixed component ($K$) incurred each time an order run is placed, independent of the order lot size $Q$.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q7",
+            "question_text": "In ABC classification, “A” items are typically:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A large fraction of items with a small share of annual value",
+                "B": "A small fraction of items with a large share of annual value",
+                "C": "The cheapest items in the system",
+                "D": "Items with zero stockout risk"
+            },
+            "correct_option_label": "B",
+            "explanation": "Based on the Pareto Principle (80/20 rule), Class A items represent a small fraction of total inventory SKUs (10–20%) but account for the vast majority of annual dollar usage value (60–70%).",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q8",
+            "question_text": "Which of the following is a key assumption of the basic EOQ model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Demand is uncertain and follows a normal distribution",
+                "B": "Shortages are allowed and backordered",
+                "C": "Demand is deterministic and occurs at a constant rate",
+                "D": "Quantity discounts always exist"
+            },
+            "correct_option_label": "C",
+            "explanation": "The basic Ford Harris Economic Order Quantity (EOQ) model assumes that demand is known with certainty (deterministic) and is consumed at a constant rate over time.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q9",
+            "question_text": "In the basic EOQ model, average inventory over a cycle is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "D/Q",
+                "B": "Q",
+                "C": "Q/2",
+                "D": "h/2"
+            },
+            "correct_option_label": "C",
+            "explanation": "In the basic EOQ model, inventory follows a constant sawtooth pattern starting at lot size $Q$ down to $0$, resulting in an average cycle inventory of $Q/2$.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_Q10",
+            "question_text": "According to EOQ logic, if ordering cost K increases while all else stays constant, the optimal order quantity will:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase",
+                "B": "Decrease",
+                "C": "Stay unchanged",
+                "D": "Become zero"
+            },
+            "correct_option_label": "A",
+            "explanation": "The EOQ formula is $Q^* = \\sqrt{\\frac{2DK}{h}}$. Because $Q^*$ is directly proportional to $\\sqrt{K}$, an increase in fixed ordering cost $K$ increases the optimal order size $Q^*$ to amortize the higher order cost over more units.",
+            "module": 3
+        },
+        {
+            "question_id": "M4_Q1",
+            "question_text": "Which of the following best describes sourcing in the course?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only vendor selection",
+                "B": "Only procurement execution",
+                "C": "The broader system of acquiring materials, services, and capabilities, including selection, contracting, coordination, and performance management",
+                "D": "Only contract negotiation"
+            },
+            "correct_option_label": "C",
+            "explanation": "Sourcing is an end-to-end organizational system that combines supplier evaluation, contracting, design collaboration, procurement execution, and supplier performance analytics.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q2",
+            "question_text": "What is the key difference between outsourcing and offshoring?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Outsourcing is about location; offshoring is about ownership",
+                "B": "Outsourcing is about who performs the activity; offshoring is about where the activity is performed",
+                "C": "They mean exactly the same thing",
+                "D": "Outsourcing is domestic only; offshoring is international only"
+            },
+            "correct_option_label": "B",
+            "explanation": "Outsourcing determines entity ownership (shifting internal work to a third party), whereas offshoring determines geography (moving execution to a foreign country).",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q3",
+            "question_text": "An outsourcing decision should primarily be judged by:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Unit purchase price alone",
+                "B": "Whether the third party increases total supply chain surplus after accounting for risk",
+                "C": "Whether the supplier is larger than the firm",
+                "D": "Whether the supplier is offshore"
+            },
+            "correct_option_label": "B",
+            "explanation": "An outsourcing decision is economically viable if the third party generates higher total Supply Chain Surplus ($\text{Customer Value} - \text{Total System Cost}$) net of coordination friction and risks.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q4",
+            "question_text": "Which of the following best distinguishes a 3PL from a 4PL?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A 3PL always owns the inventory, while a 4PL never does",
+                "B": "A 3PL works only in transportation, while a 4PL works only in warehousing",
+                "C": "A 3PL is domestic, while a 4PL is global",
+                "D": "A 3PL typically executes logistics activities, while a 4PL primarily orchestrates a broader end-to-end logistics network"
+            },
+            "correct_option_label": "D",
+            "explanation": "A 3PL provides physical logistics services (transport, warehousing), whereas a 4PL acts as an overarching neutral integrator managing multiple 3PL providers, IT systems, and processes.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q5",
+            "question_text": "Why is supplier evaluation based only on quoted price considered a mistake?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because price is usually unobservable",
+                "B": "Because quoted prices are always manipulated",
+                "C": "Because the relevant criterion is total cost, which includes inventory, delivery, quality, and support costs as well",
+                "D": "Because lower price always implies worse quality"
+            },
+            "correct_option_label": "C",
+            "explanation": "Focusing solely on unit price ignores total cost factors (Total Cost of Ownership - TCO), such as inventory carrying costs driven by lead times, freight fees, defect quality costs, and administrative overhead.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q6",
+            "question_text": "Which contract type is most directly intended to reduce the retailer’s downside risk from leftover inventory?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Buyback contract",
+                "B": "Quantity discount contract",
+                "C": "Two-part tariff",
+                "D": "Shared-savings contract"
+            },
+            "correct_option_label": "A",
+            "explanation": "In a buyback contract, the manufacturer agrees to buy back unsold stock at a agreed salvage price, shifting overstock risk away from the retailer to encourage higher order levels.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q7",
+            "question_text": "In a revenue-sharing contract, the supplier typically:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Charges a higher wholesale price and keeps all retail revenue",
+                "B": "Charges a lower wholesale price and receives a fraction of sales revenue",
+                "C": "Eliminates all forecasting risk for the retailer",
+                "D": "Guarantees a fixed service level without compensation"
+            },
+            "correct_option_label": "B",
+            "explanation": "Under revenue-sharing contracts, the manufacturer lowers the initial unit wholesale price $w$, in exchange for receiving a percentage fraction $f$ of the retailer's downstream sales revenues.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q8",
+            "question_text": "Which contract is mainly aimed at motivating a supplier to improve process performance, such as lead time reduction or quality improvement?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Buyback contract",
+                "B": "Quantity discount contract",
+                "C": "Shared-savings contract",
+                "D": "Simple wholesale-price-only contract"
+            },
+            "correct_option_label": "C",
+            "explanation": "A shared-savings contract incentivizes suppliers to invest capital in performance improvements (e.g., lead-time compression, defect reduction) by sharing the resulting supply chain financial savings.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q9",
+            "question_text": "Why is design collaboration important from a supply chain perspective?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because it matters only to engineering aesthetics",
+                "B": "Because it allows suppliers to influence manufacturability, commonality, and logistics costs early in the design stage",
+                "C": "Because it guarantees low prices later",
+                "D": "Because it removes the need for contracts"
+            },
+            "correct_option_label": "B",
+            "explanation": "Early supplier involvement in product design directly impacts 60–80% of end-to-end supply chain costs by driving component standardization, manufacturability, and transport packaging efficiency.",
+            "module": 4
+        },
+        {
+            "question_id": "M4_Q10",
+            "question_text": "Tailored sourcing means:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Combining different types of suppliers because different products need different strengths",
+                "B": "Using one supplier for every product to simplify management",
+                "C": "Always preferring offshore suppliers for mature products",
+                "D": "Always preferring responsive suppliers for every SKU"
+            },
+            "correct_option_label": "A",
+            "explanation": "Tailored sourcing allocates demand across a portfolio of sources—for instance, contracting efficient, low-cost suppliers for baseline predictable demand, while using flexible, responsive suppliers for uncertain demand surges.",
+            "module": 4
+        },
+        {
+            "question_id": "M5_Q1",
+            "question_text": "The evolution of the Milk supply chain had many concepts. Which of the following was NOT a key concept?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Delayed Differentiation (Postponement)",
+                "B": "Cash Logistics",
+                "C": "Quality assessment",
+                "D": "Packaging"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Indian milk supply chain (Amul) leveraged rapid cash logistics, village-level quality/fat testing, and processing/packaging, but did not rely on delayed differentiation (postponement), which applies to industries like paint and apparel.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q2",
+            "question_text": "The primary driver for a new Supply Chain Strategy in FarmAid Tractors was",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sales were going down",
+                "B": "End of month spike in sales",
+                "C": "Seasonality",
+                "D": "Delivered quality to the dealer"
+            },
+            "correct_option_label": "D",
+            "explanation": "In the FarmAid Tractors case, approximately 70% of tractors delivered to dealers were not ready for immediate sale due to transit damage, missing components, or unrectified factory defects, driving the supply chain re-engineering strategy.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q3",
+            "question_text": "The locations of stockyards in FarmAid Tractors were being reconsidered because:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Current locations were driven by the Marketing office rather than Logistics.",
+                "B": "Secondary movement was to shift from own driving to truck-based delivery.",
+                "C": "Both the reasons",
+                "D": "None of the reasons"
+            },
+            "correct_option_label": "C",
+            "explanation": "Legacy stockyards were sub-optimally tied to regional marketing offices (causing freight backtracking) and the secondary delivery model was transitioning from self-driving on roads to damage-free truck transports.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q4",
+            "question_text": "In the Tea supply chain, Auctions play an important role. Which of the following is NOT a benefit of Auctions?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Quality assessment",
+                "B": "Blending choices",
+                "C": "Logistics costs",
+                "D": "Price discovery"
+            },
+            "correct_option_label": "C",
+            "explanation": "Centralized tea auctions provide transparent price discovery, quality assessment by tasters, and blending flexibility, but they introduce extra handling layers, delays, and higher total logistics costs.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q5",
+            "question_text": "The Milk supply chain has evolved leveraging",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Both Forward and Backward integration",
+                "B": "Forward integration only",
+                "C": "Backward integration only",
+                "D": "Neither Forward nor Backward integration, but due to other factors"
+            },
+            "correct_option_label": "A",
+            "explanation": "The cooperative milk model (Amul) forward integrated into processing, cold-chain distribution, and retail outlets, while backward integrating into cattle feed plants, veterinary support, and breeding centers.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q6",
+            "question_text": "In the reengineered Paint supply chain, benefits accrued due to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increased ability to accept returns",
+                "B": "Better match between demand and supply",
+                "C": "Higher inventories",
+                "D": "Quicker delivery to the customer"
+            },
+            "correct_option_label": "B",
+            "explanation": "By shifting from manufacturing hundreds of pre-colored paint SKUs to distributing base paints and mixing custom tint pigments at retail stores (postponement), supply was perfectly matched with real-time customer demand.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q7",
+            "question_text": "Horizontal unbundling of supply chains focussing on market segments addresses the need for:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cost efficiencies",
+                "B": "Specialization and customisation",
+                "C": "Scale economies",
+                "D": "Scope economies"
+            },
+            "correct_option_label": "B",
+            "explanation": "Horizontal unbundling structures distinct, dedicated supply chain channels for specific market segments to deliver operational specialization and tailored customization.",
+            "module": 5
+        },
+        {
+            "question_id": "M5_Q8",
+            "question_text": "Product redesign should concern itself with",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only buyer interest",
+                "B": "Only logistics",
+                "C": "Both buyer interest and logistics"
+            },
+            "correct_option_label": "C",
+            "explanation": "Product redesign for supply chain efficiency must simultaneously satisfy customer/buyer value preferences while optimizing physical transport density, package cube utilization, and handling logistics.",
+            "module": 5
+        }
+    ]
+}

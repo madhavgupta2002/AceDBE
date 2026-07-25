@@ -355,7 +355,7 @@ export const SUBJECTS: Subject[] = [
     description: '',
     icon: 'ClipboardList',
     aliases: [
-      { batch: 1, code: '', term: 6 },
+      { batch: 1, code: 'OM61x', term: 6 },
       { batch: 2, code: '', term: 6 },
     ],
   },
@@ -369,11 +369,11 @@ export const SUBJECTS: Subject[] = [
     ],
   },
   {
-    name: 'Product Management',
+    name: 'Software Product Management for Startups',
     description: '',
     icon: 'ClipboardList',
     aliases: [
-      { batch: 1, code: '', term: 6 },
+      { batch: 1, code: 'MK61x', term: 6 },
       { batch: 2, code: '', term: 6 },
     ],
   },
@@ -382,16 +382,16 @@ export const SUBJECTS: Subject[] = [
     description: '',
     icon: 'Building2',
     aliases: [
-      { batch: 1, code: '', term: 6 },
+      { batch: 1, code: 'MD61x', term: 6 },
       { batch: 2, code: '', term: 6 },
     ],
   },
   {
-    name: 'Business Research Methods',
+    name: 'Business Research and Growth Systems Architecture',
     description: '',
     icon: 'BarChart3',
     aliases: [
-      { batch: 1, code: '', term: 6 },
+      { batch: 1, code: 'MD62x', term: 6 },
       { batch: 2, code: '', term: 6 },
     ],
   },

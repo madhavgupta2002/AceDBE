@@ -1,0 +1,358 @@
+{
+    "exam_metadata": {
+        "subject_name": "Software Product Management",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "The term \"marginal cost\" refers to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cost of product design",
+                "B": "Cost of customer acquisition",
+                "C": "Cost of producing one additional unit",
+                "D": "Cost of marketing"
+            },
+            "correct_option_label": "C",
+            "explanation": "Marginal cost is the incremental cost incurred to produce or distribute one additional unit of a product. In pure software products, marginal cost is near zero ($MC \\approx 0$).",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "What is a Product Family?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A collection of unrelated products sold by a company",
+                "B": "A set of products sharing a strong brand identity and marketed together",
+                "C": "A set of products built on a common codebase only",
+                "D": "A group of products sold in one country"
+            },
+            "correct_option_label": "B",
+            "explanation": "A Product Family is a collection of diverse, functional products unified under a single, strong brand name for marketing, trust-building, and cross-selling benefits.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "The ultimate objective of Software Product Management is to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Maximize software features",
+                "B": "Generate the greatest possible business value",
+                "C": "Reduce software costs",
+                "D": "Increase team size"
+            },
+            "correct_option_label": "B",
+            "explanation": "The ultimate goal of SPM is to maximize sustainable business value by continuously solving real customer problems effectively rather than simply shipping features.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "The primary goal of the DFV framework is to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase software features",
+                "B": "Improve coding quality",
+                "C": "Reduce development costs",
+                "D": "Balance customer needs, technical capability, and business success"
+            },
+            "correct_option_label": "D",
+            "explanation": "The DFV Framework ensures product viability by balancing Desirability (customer needs), Feasibility (engineering capability), and Viability (business sustainability).",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "The caterpillar-versus-butterfly analogy is used to illustrate that",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Startups grow slowly",
+                "B": "Startups require funding",
+                "C": "Startups are fundamentally different from established companies",
+                "D": "Startups are temporary"
+            },
+            "correct_option_label": "C",
+            "explanation": "Coined by Steve Blank, this analogy emphasizes that a startup is not merely a smaller version of a mature company; it operates under extreme uncertainty searching for a repeatable business model.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "Which of the following best illustrates the Social Impact level?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Faster checkout process",
+                "B": "Personalised recommendations",
+                "C": "Enabling financial inclusion at scale through UPI",
+                "D": "One-click ordering"
+            },
+            "correct_option_label": "C",
+            "explanation": "The pinnacle of Bain's Value Pyramid is Social Impact, which delivers self-transcendence and societal transformation, such as UPI driving universal financial inclusion across a nation.",
+            "module": 2
+        },
+        {
+            "question_id": "7",
+            "question_text": "What problem does the Value Proposition Canvas primarily address?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Technology Gap",
+                "B": "Revenue Gap",
+                "C": "Value Gap between product and customer needs",
+                "D": "Marketing Gap"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Value Proposition Canvas systematically maps the Customer Profile to the Value Map to bridge and eliminate the gap between customer needs and product offerings.",
+            "module": 2
+        },
+        {
+            "question_id": "8",
+            "question_text": "Which phrase best summarizes the TAM-SAM-SOM strategy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Build first, market later",
+                "B": "Sell first, validate later",
+                "C": "Compete on price",
+                "D": "Think big, start small"
+            },
+            "correct_option_label": "D",
+            "explanation": "\"Think big, start small\" reflects envisioning a large Total Addressable Market (TAM) while executing tightly by starting with Early Evangelists within the Serviceable Obtainable Market (SOM).",
+            "module": 2
+        },
+        {
+            "question_id": "9",
+            "question_text": "What is the primary purpose of the Learning Loop?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase development speed only",
+                "B": "Increase software complexity",
+                "C": "Reduce market risk through learning",
+                "D": "Improve coding standards"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Build-Measure-Learn loop accelerates validated learning using user data to refine product hypotheses and minimize market risk.",
+            "module": 2
+        },
+        {
+            "question_id": "10",
+            "question_text": "What is the \"Chasm\" in Moore's model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Gap between early adopters and early majority",
+                "B": "Gap between innovators and early adopters",
+                "C": "Gap between early majority and late majority",
+                "D": "Gap between late majority and laggards"
+            },
+            "correct_option_label": "A",
+            "explanation": "In Geoffrey Moore's Technology Adoption Life Cycle, the Chasm represents the critical adoption gap separating visionary Early Adopters from pragmatic Early Majority buyers.",
+            "module": 2
+        },
+        {
+            "question_id": "11",
+            "question_text": "Which statement best distinguishes Product Definition from Positioning?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product Definition explains customer value; Positioning explains technical architecture.",
+                "B": "Product Definition describes what the product does; Positioning explains why customers should choose it.",
+                "C": "Both serve exactly the same purpose.",
+                "D": "Positioning is only for developers."
+            },
+            "correct_option_label": "B",
+            "explanation": "Product Definition is an internal operational statement of functional capabilities, whereas Product Positioning is an external statement establishing value and differentiation against alternatives.",
+            "module": 3
+        },
+        {
+            "question_id": "12",
+            "question_text": "A consumer fitness app offers a free version, encourages social sharing, and relies on app store downloads. This GTM approach is primarily:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Enterprise GTM",
+                "B": "Account-based marketing",
+                "C": "Product-led B2C GTM",
+                "D": "Direct enterprise sales"
+            },
+            "correct_option_label": "C",
+            "explanation": "A GTM strategy leveraging self-service onboarding, freemium access, viral sharing mechanics, and digital app store distribution is a classic Product-Led B2C model.",
+            "module": 3
+        },
+        {
+            "question_id": "13",
+            "question_text": "Which growth strategy generally has the lowest Customer Acquisition Cost (CAC)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sales-Led Growth",
+                "B": "Marketing-Led Growth",
+                "C": "Traditional Enterprise Sales",
+                "D": "Product-Led Growth"
+            },
+            "correct_option_label": "D",
+            "explanation": "Product-Led Growth relies on the product experience itself to drive self-service acquisition and organic virality, significantly lowering human sales and marketing CAC.",
+            "module": 3
+        },
+        {
+            "question_id": "14",
+            "question_text": "A software company earns more revenue from consulting projects than from software licenses, causing the product roadmap to slow down. Which startup mistake best describes this situation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Services revenue becomes addictive",
+                "B": "Ignoring services",
+                "C": "Underestimating support costs",
+                "D": "No self-service strategy"
+            },
+            "correct_option_label": "A",
+            "explanation": "Becoming reliant on custom service projects distracts engineering teams from building scalable core software products, effectively turning the product company into an IT consulting agency.",
+            "module": 3
+        },
+        {
+            "question_id": "15",
+            "question_text": "A CRM vendor allows customers to install marketplace apps without changing the core product. This is an example of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Configuration",
+                "B": "Customisation",
+                "C": "Composition",
+                "D": "Migration"
+            },
+            "correct_option_label": "C",
+            "explanation": "Composition refers to extending product capabilities via modular external applications or plugins without altering the core codebase.",
+            "module": 3
+        },
+        {
+            "question_id": "16",
+            "question_text": "Which factor most strongly determines customers' willingness to pay?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Development effort",
+                "B": "Number of product features",
+                "C": "Customer's perceived value",
+                "D": "Competitor's engineering team size"
+            },
+            "correct_option_label": "C",
+            "explanation": "In value-based pricing, price is dictated by the net perceived economic benefit and outcome derived by the customer rather than internal development costs or feature volume.",
+            "module": 4
+        },
+        {
+            "question_id": "17",
+            "question_text": "A startup has a large consumer user base but very low willingness to pay. Which revenue model is most appropriate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Premium licensing",
+                "B": "Advertising-supported",
+                "C": "Enterprise subscription",
+                "D": "Transaction fee"
+            },
+            "correct_option_label": "B",
+            "explanation": "An ad-supported revenue model monetizes high user attention and traffic from non-paying users by selling ad inventory to third-party advertisers.",
+            "module": 4
+        },
+        {
+            "question_id": "18",
+            "question_text": "Which product decision is most likely to shorten the CAC payback period?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Improving customer activation and early value realisation",
+                "B": "Increasing engineering headcount",
+                "C": "Delaying product releases",
+                "D": "Reducing product documentation"
+            },
+            "correct_option_label": "A",
+            "explanation": "Streamlining onboarding to help users realize value quickly accelerates initial revenue capture and subscription retention, directly shortening the CAC payback window.",
+            "module": 4
+        },
+        {
+            "question_id": "19",
+            "question_text": "Why is forecasting particularly difficult for software startups?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Software products have fixed demand.",
+                "B": "Startups usually operate with limited historical data and uncertain markets.",
+                "C": "Forecasts are unnecessary in startups.",
+                "D": "Technology evolves very slowly."
+            },
+            "correct_option_label": "B",
+            "explanation": "Startups operate under conditions of extreme market uncertainty lacking historical telemetry data, making deterministic financial projections challenging.",
+            "module": 4
+        },
+        {
+            "question_id": "20",
+            "question_text": "As startups mature, investor evaluation shifts primarily from",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product development to software architecture",
+                "B": "Vision and founder quality to predictable growth and scalable economics",
+                "C": "Marketing to engineering",
+                "D": "Innovation to customer support"
+            },
+            "correct_option_label": "B",
+            "explanation": "In early stages investors back founder quality and vision, but as a startup matures, focus shifts strictly to unit economics, CAC payback, and predictable growth metrics.",
+            "module": 4
+        },
+        {
+            "question_id": "21",
+            "question_text": "A software company intentionally provides APIs, SDKs, and revenue-sharing programs to encourage third-party innovation. Which ecosystem strategy is it following?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Dominator",
+                "B": "Keystone",
+                "C": "Niche",
+                "D": "Vertical Integration"
+            },
+            "correct_option_label": "B",
+            "explanation": "Keystone players foster open, supportive partner networks by sharing platform value via APIs, SDKs, and joint monetization opportunities.",
+            "module": 5
+        },
+        {
+            "question_id": "22",
+            "question_text": "Which activity is most closely associated with a Go-to-Market (GTM) strategy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sprint estimation",
+                "B": "Defect triage",
+                "C": "Product launch planning",
+                "D": "Technical debt reduction"
+            },
+            "correct_option_label": "C",
+            "explanation": "Go-to-Market (GTM) strategy focuses on launch execution, positioning, marketing channels, and commercial alignment to drive market adoption.",
+            "module": 5
+        },
+        {
+            "question_id": "23",
+            "question_text": "A company receives excellent CSAT scores but low NPS scores. What is the most likely interpretation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customers are satisfied but unwilling to recommend the product.",
+                "B": "Customers dislike the product.",
+                "C": "Customers are leaving immediately.",
+                "D": "Product quality is poor."
+            },
+            "correct_option_label": "A",
+            "explanation": "CSAT measures short-term satisfaction with specific support/feature interactions, while NPS measures long-term brand advocacy and willingness to recommend.",
+            "module": 5
+        },
+        {
+            "question_id": "24",
+            "question_text": "A startup has completed product development but customers are largely unaware that the problem exists. According to the Product Launch Framework, the company should first:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduce product pricing.",
+                "B": "Invest in educational marketing.",
+                "C": "Launch referral programs.",
+                "D": "Increase engineering capacity."
+            },
+            "correct_option_label": "B",
+            "explanation": "In the Unawareness stage of the buyer's journey, the primary objective is publishing thought-leadership and educational content to raise problem awareness.",
+            "module": 5
+        },
+        {
+            "question_id": "25",
+            "question_text": "Which Product Management responsibility is most critical during the Purchase stage?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Easy signup and fast activation",
+                "B": "Lead generation",
+                "C": "Competitive analysis",
+                "D": "Brand promotion"
+            },
+            "correct_option_label": "A",
+            "explanation": "During the purchase/onboarding phase, PMs must ensure frictionless user account setup and minimize Time-to-First-Value (TTFV) to prevent drop-offs.",
+            "module": 5
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "exam_metadata": {
+        "subject_name": "Supply Chain Management",
+        "exam_date": "Batch 1",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "Which of the following best describes the process view of a supply chain?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It explains only the financial performance of a firm.",
+                "B": "It shows how supply chain activities flow across partners such as customers, retailers, distributors, manufacturers and suppliers",
+                "C": "It focuses only on transportation and warehousing decisions.",
+                "D": "It explains only long-term supply chain design decisions."
+            },
+            "correct_option_label": "B",
+            "explanation": "The process view maps out how activities, decisions, and material/information flows occur continuously across different supply chain stages—from suppliers down to end customers.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Why are supply chain performance drivers and KPIs important?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They remove the need for planning and coordination.",
+                "B": "They focus only on reducing transportation costs.",
+                "C": "They help understand how decisions affect cost, service, speed, reliability and overall performance.",
+                "D": "They are used only for financial reporting."
+            },
+            "correct_option_label": "C",
+            "explanation": "Performance drivers and KPIs allow managers to evaluate operational trade-offs and assess how choices in facilities, inventory, transportation, sourcing, pricing, and information impact financial health and service levels.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "Why is it important to understand demand components before choosing a forecasting method?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It helps managers avoid using past demand data.",
+                "B": "It helps managers identify patterns such as level, trend, seasonality and random variation.",
+                "C": "It removes the need to measure forecast error.",
+                "D": "It ensures that demand will always remain stable."
+            },
+            "correct_option_label": "B",
+            "explanation": "Identifying underlying patterns like trend, level, seasonality, and random noise enables managers to select the appropriate quantitative model (e.g., Simple Exponential Smoothing vs. Holt's Method or Multiplicative Seasonality).",
+            "module": 2
+        },
+        {
+            "question_id": "4",
+            "question_text": "Which of the following best explains why inventory decisions involve trade-offs?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "More inventory always improves supply chain performance",
+                "B": "Inventory helps manage uncertainty and service levels, but it also creates costs such as holding cost and obsolescence",
+                "C": "Inventory decisions are only about reducing purchase cost",
+                "D": "ABC classification removes the need for inventory planning"
+            },
+            "correct_option_label": "B",
+            "explanation": "Carrying inventory buffers against demand uncertainty and lead-time delays to achieve high product availability, but higher stock levels increase carrying/holding costs, capital lockup, and risk of product obsolescence.",
+            "module": 3
+        },
+        {
+            "question_id": "5",
+            "question_text": "A firm is sourcing two products. Product A has stable demand, high volume and a mature design. Product B has uncertain demand, frequent design changes and high stockout risk. Which sourcing approach is most appropriate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Use only one low-cost offshore supplier for both products",
+                "B": "Use a low-cost source for Product A and a responsive source for Product B",
+                "C": "Use only onshore suppliers for both products",
+                "D": "Avoid supplier evaluation and select the lowest quoted price"
+            },
+            "correct_option_label": "B",
+            "explanation": "Tailored sourcing matches supplier capabilities to demand characteristics: predictable, high-volume products (Product A) benefit from efficient, low-cost sources, while volatile, high-risk products (Product B) require flexible, responsive sources.",
+            "module": 4
+        }
+    ]
+}
