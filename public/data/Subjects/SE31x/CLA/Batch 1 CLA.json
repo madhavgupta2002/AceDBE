@@ -94,9 +94,7 @@
             "question_type": "MCQ",
             "options": {
                 "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
+                "B": "False"
             },
             "correct_option_label": "A",
             "explanation": "In problem exploration, what initially appears as a problem is almost always just a symptom of a deeper root cause. You must dig deeper to find the real issue.",
@@ -136,9 +134,7 @@
             "question_type": "MCQ",
             "options": {
                 "A": "True",
-                "B": "False",
-                "C": "None",
-                "D": "None"
+                "B": "False"
             },
             "correct_option_label": "B",
             "explanation": "Problems are multifaceted and wicked. A single problem usually branches out into multiple causes and root causes, which is why techniques like the Problem Exploration Map are used.",
