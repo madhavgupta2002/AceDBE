@@ -75,12 +75,10 @@
 | Dimension | Traditional For-Profit Enterprise | Social Enterprise | Not-for-Profit / NGO | Corporate Social Responsibility (CSR) | Inclusive Business Model |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Primary Objective** | Maximize shareholder profit | Solve a social problem | Address a social need | Fulfill corporate citizenship / legal mandate | Address needs of low-income populations |
-| **Financial Goal** | Profit maximization | Profit-making or non-profit | Non-loss, non-profit | Reinvestment of profit share into social causes | Financial sustainability ($\text{Profit
-} \ge 0$) |
+| **Financial Goal** | Profit maximization | Profit-making or non-profit | Non-loss, non-profit | Reinvestment of profit share into social causes | Financial sustainability ($\text{Profit} \ge 0$) |
 | **Funding Source** | Private equity, debt, commercial capital | Grants, debt, or commercial capital | Grants, philanthropic donations | Required 2% allocation from corporate profits | Commercial capital, earned revenues |
 | **Core Customer** | Commercial market / Mainstream buyers | Underserved populations | Disadvantaged communities | External social beneficiaries | Low-income population / BOP |
-| **Legal Mandate / Constraint** | Fiduciary duty to shareholders | Governed by social mission charter | Operates under non-profit regulations | Indian Companies Act: top 1,
-000 profitable firms spend $\ge 2\%$ profits | Operates as a financially self-sufficient business entity |
+| **Legal Mandate / Constraint** | Fiduciary duty to shareholders | Governed by social mission charter | Operates under non-profit regulations | Indian Companies Act: top 1,000 profitable firms spend $\ge 2\%$ profits | Operates as a financially self-sufficient business entity |
 
 ### 1.2.3 The Delivery vs. Distribution Gap
 * **The Structural Paradox**:
@@ -89,12 +87,10 @@
 * **Root Cause Breakdown**:
 
 ```
-[For-Profit Commercial Supply Chain
-]
+[For-Profit Commercial Supply Chain]
 Single Point Accountability -> Unified Systems -> End-to-End Tracking -> High Operational Efficiency
 
-[Aid / Non-Profit Distribution Chain
-]
+[Aid / Non-Profit Distribution Chain]
 Donor Entity -> Transport Firm -> Local Port/Airport -> Regional NGO -> Local Clinic -> Patient
 (Issue: Fragmented operational handoffs + Zero single-point accountability = Last-mile delivery failure)
 ```
@@ -117,8 +113,7 @@ Donor Entity -> Transport Firm -> Local Port/Airport -> Regional NGO -> Local Cl
 * **Nobel Peace Prize Rationale**: Awarded the Nobel Peace Prize (rather than Economic Sciences) based on the premise that poverty and economic inequality are primary drivers of civil conflict and societal violence.
 
 ### 1.3.2 Dr. C.K. Prahalad & "Fortune at the Bottom of the Pyramid"
-* **Definition of BOP Market**: Approximately **4 billion people** globally living on less than **$1,
-500 per year**.
+* **Definition of BOP Market**: Approximately **4 billion people** globally living on less than **$1,500 per year**.
 * **Strategic Thesis**: As developed markets in North America and Western Europe reach saturation, multinational corporations (MNCs) can drive revenue growth by targeting low-income populations in emerging economies (BRICS: Brazil, Russia, India, China, South Africa).
 * **Core Business Innovations for BOP Markets**:
   1. **Single-Serve Revolution (Disaggregation)**: Solves the consumer's daily **cash-flow constraint** by breaking bulk inventory down into single-use units without altering unit pricing (e.g., ₹1 shampoo sachets).
@@ -139,22 +134,9 @@ Donor Entity -> Transport Firm -> Local Port/Airport -> Regional NGO -> Local Cl
      * Low-income households spend a large percentage of their daily budget on basic nutrition.
      * When poor consumers spend limited daily income on non-nutritious or addictive products (e.g., alcohol, tobacco, single-serve cosmetics), it directly reduces funds available for essential family nutrition (e.g., eggs, milk, vegetables) and healthcare.
 
-$$\text{Fixed Poor Household Budget
-} = \text{Expenditure
-}_{\text{Essential Nutrition
-  }
-} + \text{Expenditure
-}_{\text{Non-Essential/Addictive Commercial Goods
-  }
-}$$
+$$\text{Fixed Poor Household Budget} = \text{Expenditure}_{\text{Essential Nutrition}} + \text{Expenditure}_{\text{Non-Essential/Addictive Commercial Goods}}$$
 
-$$\uparrow \text{Expenditure
-}_{\text{Non-Essential Goods
-  }
-} \implies \downarrow \text{Expenditure
-}_{\text{Essential Nutrition
-  }
-}$$
+$$\uparrow \text{Expenditure}_{\text{Non-Essential Goods}} \implies \downarrow \text{Expenditure}_{\text{Essential Nutrition}}$$
 
   5. **Producer vs. Consumer Orientation**: The primary path out of poverty is income generation and employment security (producer side), not expanded access to commercial consumption options (consumer side).
 
@@ -163,21 +145,18 @@ $$\uparrow \text{Expenditure
 ```
    Social Impact
         ^
-        |         / [Zone of Alignment
-]
+        |         / [Zone of Alignment]
         |        /  (Profit and Social Impact increase together)
         |       /
         |      /-----\
-        |     /       \ [Zone of Conflict
-]
+        |     /       \ [Zone of Conflict]
         |    /         \ (For-profits drop social impact to preserve profit;
         |   /           \ Inclusive businesses operate here until Profit = 0)
         +-----------------------------------> Financial Profit
 ```
 
 * **For-Profit Enterprise Logic**: Shareholders require profit maximization. If a conflict arises between social impact and bottom-line profitability, the enterprise must choose profitability.
-* **Inclusive Business Model Logic**: The enterprise prioritizes social impact subject to a non-negative profit constraint ($\text{Profit
-} \ge 0$). It can operate within the **Zone of Conflict**—accepting lower profit margins to deliver greater social value—provided it covers operating costs and avoids losses.
+* **Inclusive Business Model Logic**: The enterprise prioritizes social impact subject to a non-negative profit constraint ($\text{Profit} \ge 0$). It can operate within the **Zone of Conflict**—accepting lower profit margins to deliver greater social value—provided it covers operating costs and avoids losses.
 
 ---
 
@@ -201,17 +180,14 @@ $$\uparrow \text{Expenditure
 * **India GDP vs Per Capita Paradox**: Total GDP grew at $\approx 5\%$, while Per Capita GDP grew at $\approx 3\%$ over 50 years, reflecting population growth outstripping per-person output growth.
 * **Income/Wealth Inequality**: The bottom 50% receives 15% of national income, while the top 1% holds 40% of national wealth. Over 60% of the population lives in rural areas, driving distress-driven urban migration.
 * **Employment Gap**: 10–12 million people enter the workforce annually, but only 5–6 million formal jobs are generated, creating millions of distress entrepreneurs.
-* **Inclusive Business Definition**: A financially self-sufficient enterprise ($\text{Profit
-} \ge 0$) designed to serve the essential needs of low-income populations at scale.
+* **Inclusive Business Definition**: A financially self-sufficient enterprise ($\text{Profit} \ge 0$) designed to serve the essential needs of low-income populations at scale.
 * **Core Evaluation Questions**: 1. Is serving the poor the primary objective? 2. Is the operational model financially viable without subsidies? 3. Is the model scalable?
 * **CSR Mandate**: Under the Indian Companies Act, eligible companies must spend at least 2% of net profits on CSR initiatives.
 * **Delivery vs Distribution Gap**: Foreign aid ($2.3T spent) fails on last-mile malaria drug delivery ($0.12/dose) due to uncoordinated handoffs and a lack of single-point accountability. Commercial supply chains achieve global distribution through unified systems and performance tracking.
 * **Yunus Thesis**: Microfinance proves the poor are creditworthy. Market mechanisms empower consumers, whereas pure charity creates dependency and corruption.
-* **Prahalad BOP Thesis**: 4 billion people living under $1,
-500/year represent a massive market opportunity through low margins, high volumes, single-serve sachets (cash-flow management), and cross-subsidization.
+* **Prahalad BOP Thesis**: 4 billion people living under $1,500/year represent a massive market opportunity through low margins, high volumes, single-serve sachets (cash-flow management), and cross-subsidization.
 * **Karnani Critique**: BOP claims lack empirical profit proof. Single-serve sachets create severe plastic waste, aggressive marketing misleads vulnerable buyers, and non-essential purchases divert limited household funds away from basic nutrition.
-* **Trade-off Mechanism**: For-profit enterprises prioritize shareholder value when profits conflict with social good. Inclusive business models accept lower profit margins to maximize social impact, operating down to the break-even constraint ($\text{Profit
-} = 0$).
+* **Trade-off Mechanism**: For-profit enterprises prioritize shareholder value when profits conflict with social good. Inclusive business models accept lower profit margins to maximize social impact, operating down to the break-even constraint ($\text{Profit} = 0$).
 
 
 # Module 2: Inclusive Healthcare & Education
