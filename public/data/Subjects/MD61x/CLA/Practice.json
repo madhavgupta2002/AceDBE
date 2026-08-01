@@ -1,70 +1,73 @@
-module 6
-Question 1
-0 points possible (ungraded)
-What is one of the primary challenges faced by workers in the informal sector?
-
-
-
-Excessive access to social security
-
-Limited access to stable employment and formal benefits
-
-High levels of union representation
-unanswered
-Submit
-Some problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
-Question 2
-0 points possible (ungraded)
-LabourNet primarily improves the livelihoods of informal workers by:
-
-
-
-Providing free financial aid without any services
-
-Replacing informal jobs with automation
-
-Offering skills development, identity, and market linkages
-unanswered
-Submit
-Some problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
-Question 3
-0 points possible (ungraded)
-What is a key advantage of Hasiru Dala's inclusive waste management model?
-
-
-
-It eliminates the need for waste segregation.
-
-It focuses only on increasing landfill capacity.
-
-It creates livelihood opportunities while improving waste management outcomes.
-unanswered
-Submit
-Some problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
-Question 4
-0 points possible (ungraded)
-Why do organisations such as Hasiru Dala adopt both not-for-profit and for-profit models?
-
-
-
-To avoid working with local communities
-
-To combine social impact with financial sustainability
-
-To eliminate the need for external funding
-unanswered
-Submit
-Some problems have options such as save, reset, hints, or show answer. These options follow the Submit button.
-Question 5
-0 points possible (ungraded)
-Which of the following is essential for the long-term success of an inclusive business model?
-
-
-
-Balancing commercial viability with social impact
-
-Focusing only on short-term profits
-
-Ignoring stakeholder needs to reduce costs
-unanswered
-Submit
+{
+    "exam_metadata": {
+        "subject_name": "Inclusive Business Models",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "What is one of the primary challenges faced by workers in the informal sector?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Excessive access to social security",
+                "B": "Limited access to stable employment and formal benefits",
+                "C": "High levels of union representation"
+            },
+            "correct_option_label": "B",
+            "explanation": "Workers in the informal economy face structural vulnerability due to unpredictable income streams, lack of formal contracts, and an absence of social security or healthcare benefits.",
+            "module": 6
+        },
+        {
+            "question_id": "2",
+            "question_text": "LabourNet primarily improves the livelihoods of informal workers by:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Providing free financial aid without any services",
+                "B": "Replacing informal jobs with automation",
+                "C": "Offering skills development, identity, and market linkages"
+            },
+            "correct_option_label": "C",
+            "explanation": "LabourNet empowers informal workers by providing standardized skill training, official identity verification, and direct market connections to sustainable employment opportunities.",
+            "module": 6
+        },
+        {
+            "question_id": "3",
+            "question_text": "What is a key advantage of Hasiru Dala's inclusive waste management model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It eliminates the need for waste segregation.",
+                "B": "It focuses only on increasing landfill capacity.",
+                "C": "It creates livelihood opportunities while improving waste management outcomes."
+            },
+            "correct_option_label": "C",
+            "explanation": "Hasiru Dala integrates informal waste pickers into municipal and corporate waste streams, providing them with stable income and social dignity while enhancing decentralized waste recycling.",
+            "module": 6
+        },
+        {
+            "question_id": "4",
+            "question_text": "Why do organisations such as Hasiru Dala adopt both not-for-profit and for-profit models?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To avoid working with local communities",
+                "B": "To combine social impact with financial sustainability",
+                "C": "To eliminate the need for external funding"
+            },
+            "correct_option_label": "B",
+            "explanation": "A hybrid structure allows the non-profit entity to drive community advocacy and social mobilization, while the for-profit arm delivers commercially viable, scalable services to ensure financial independence.",
+            "module": 6
+        },
+        {
+            "question_id": "5",
+            "question_text": "Which of the following is essential for the long-term success of an inclusive business model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Balancing commercial viability with social impact",
+                "B": "Focusing only on short-term profits",
+                "C": "Ignoring stakeholder needs to reduce costs"
+            },
+            "correct_option_label": "A",
+            "explanation": "Inclusive businesses must operate without financial losses (Profit ≥ 0) to sustain operations independently while continuously creating social value for Base-of-the-Pyramid populations.",
+            "module": 6
+        }
+    ]
+}
