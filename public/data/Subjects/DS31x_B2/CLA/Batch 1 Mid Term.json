@@ -1,0 +1,22 @@
+{
+  "exam_metadata": {
+    "subject_name": "Business Statistics",
+    "exam_date": "Mid Term Batch 1"
+  },
+  "questions": [
+    {
+      "question_id": "STAT_MT_Q6",
+      "module": 2,
+      "question_text": "For a given product, the supply (y) and price(x) for 8 weeks is given as (y,x) as: (5, 2), (7, 4), (9, 8), (12, 5), (10, 7), (13, 8), (16, 16) and (16, 6). The sample covariance is equal to:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "10.0",
+        "B": "10.4",
+        "C": "11.0",
+        "D": "11.4"
+      },
+      "correct_option_label": "D",
+      "explanation": "**Formula:** $\\text{Cov}(X,Y) = \\frac{1}{n-1} \\times \\sum(x_i - \\bar{x})(y_i - \\bar{y})$\n\n**Steps:**\n- Calculate means: $\\bar{x} = 7.0$, $\\bar{y} = 8.125$\n- Compute $\\sum(x_i - \\bar{x})(y_i - \\bar{y}) = 79.875$\n- Cov = $\\frac{79.875}{8-1} = 11.41 \\approx 11.4$\n\n**Result:** 11.4"
+    }
+  ]
+}
