@@ -1,0 +1,108 @@
+{
+  "exam_metadata": {
+    "subject_name": "Business Statistics for Entrepreneurs",
+    "exam_date": "17 May 2025 Abridged",
+    "batch": 1,
+    "attempt": "Re 1"
+  },
+  "questions": [
+    {
+      "question_id": "19",
+      "question_text": "In data used to construct a valid simple linear regression model, it was observed that SSR is equal to 14200, SSE is equal to 1530, and MSE is equal to 191.25. The total number of observations used to build this simple linear regression model is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "8",
+        "B": "9",
+        "C": "10",
+        "D": "11"
+      },
+      "correct_option_label": "C",
+      "explanation": "Step 1: $MSE = \\frac{SSE}{n-2}$ for SLR.\nStep 2: $191.25 = \\frac{1530}{n-2} \\Rightarrow n-2 = 8 \\Rightarrow n = 10$.",
+      "module": 2
+    },
+    {
+      "question_id": "20",
+      "question_text": "In data used to construct a valid simple linear regression model, it was observed that SSR is equal to 14200, SSE is equal to 1530, and MSE is equal to 191.25. The standard error corresponding to this simple linear regression model is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Between 0 and 1",
+        "B": "Between 1 and 10",
+        "C": "Between 10 and 20",
+        "D": "Between 20 and 30"
+      },
+      "correct_option_label": "C",
+      "explanation": "Step 1: Standard error of regression $S_e = \\sqrt{MSE}$.\nStep 2: $S_e = \\sqrt{191.25} \\approx 13.83$. Falls between 10 and 20.",
+      "module": 2
+    },
+    {
+      "question_id": "21",
+      "question_text": "In data used to construct a valid simple regression model with 12 data points, it was observed that ∑(X_i - Xbar)(Yi-Ybar) is equal to -997.1, ∑(X_i-Xbar)^2 equals 392.9 and ∑(Yi-Ybar)^2 = 4800.9. The sample average for x given by Xbar was 28.6 and the sample average for y given by Ybar was 227.6. The least squares estimate for $b_0$ is given by:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "2.54",
+        "B": "-2.54",
+        "C": "300.1",
+        "D": "-300.1"
+      },
+      "correct_option_label": "C",
+      "explanation": "Step 1: $b_1 = \\frac{SS_{xy}}{SS_{xx}} = \\frac{-997.1}{392.9} \\approx -2.5378$.\nStep 2: $b_0 = \\bar{y} - b_1 \\bar{x} = 227.6 - (-2.5378 \\cdot 28.6) \\approx 227.6 + 72.58 = 300.18$.",
+      "module": 2
+    },
+    {
+      "question_id": "22",
+      "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable $y$ to 4 independent variables, $x_1, x_2, x_3, x_4$ the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to $x_1, x_2, x_3, x_4$ were 8, 48, 36 and 2 respectively. The t-statistic corresponding to $x_1, x_2, x_3, x_4$ were 1.5, 0.5,-1.0, and 8.0 respectively. These results imply that Multiple R is equal to",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.81",
+        "B": "0.87",
+        "C": "0.93",
+        "D": "0.98"
+      },
+      "correct_option_label": "A",
+      "explanation": "Step 1: $MSR = SSR/k \\Rightarrow SSR = 125 \\cdot 4 = 500$.\nStep 2: $R^2 = SSR/SST = 500/760 \\approx 0.6579$.\nStep 3: $\\text{Multiple } R = \\sqrt{R^2} = \\sqrt{0.6579} \\approx 0.811$.",
+      "module": 3
+    },
+    {
+      "question_id": "23",
+      "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable $y$ to 4 independent variables, $x_1, x_2, x_3, x_4$ the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to $x_1, x_2, x_3, x_4$ were 8, 48, 36 and 2 respectively. The t-statistic corresponding to $x_1, x_2, x_3, x_4$ were 1.5, 0.5,-1.0, and 8.0 respectively. These results imply that $b_1$ is equal to",
+      "question_type": "MCQ",
+      "options": {
+        "A": "10",
+        "B": "12",
+        "C": "1.0",
+        "D": "1.2"
+      },
+      "correct_option_label": "B",
+      "explanation": "Step 1: $t_1 = \\frac{b_1}{SE(b_1)}$.\nStep 2: $1.5 = \\frac{b_1}{8} \\Rightarrow b_1 = 12$.",
+      "module": 3
+    },
+    {
+      "question_id": "24",
+      "question_text": "When data with 18 observation was used to conduct a multiple linear regression in Excel, relating the dependent variable $y$ to 4 independent variables, $x_1, \\dots, x_4$ the following outputs were obtained. The RSquare was 0.36, standard error was 4.8. These results imply that SSE is equal to",
+      "question_type": "MCQ",
+      "options": {
+        "A": "299",
+        "B": "399",
+        "C": "499",
+        "D": "599"
+      },
+      "correct_option_label": "A",
+      "explanation": "Step 1: $SE = \\sqrt{MSE} \\Rightarrow MSE = 4.8^2 = 23.04$.\nStep 2: $MSE = \\frac{SSE}{n-k-1} = \\frac{SSE}{18-4-1} = \\frac{SSE}{13}$.\nStep 3: $SSE = 23.04 \\cdot 13 = 299.52$.",
+      "module": 3
+    },
+    {
+      "question_id": "25",
+      "question_text": "When data with 18 observation was used to conduct a multiple linear regression in Excel, relating the dependent variable $y$ to 4 independent variables, $x_1, \\dots, x_4$ the following outputs were obtained. The RSquare was 0.36, standard error was 4.8. These results imply that MSE is equal to",
+      "question_type": "MCQ",
+      "options": {
+        "A": "23.04",
+        "B": "24.03",
+        "C": "32.04",
+        "D": "34.02"
+      },
+      "correct_option_label": "A",
+      "explanation": "Step 1: For regression outputs, standard error ($S_e$) is the square root of MSE.\nStep 2: $MSE = (4.8)^2 = 23.04$.",
+      "module": 3
+    }
+  ]
+}
