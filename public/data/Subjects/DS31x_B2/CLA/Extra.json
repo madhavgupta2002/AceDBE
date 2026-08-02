@@ -1,0 +1,554 @@
+{
+  "exam_metadata": {
+    "subject_name": "Business Statistics",
+    "exam_date": "Extra Questions"
+  },
+  "questions": [
+    {
+      "question_id": "M3_Q11",
+      "module": 1,
+      "question_text": "Which of the following is true about the Chi-Square Distribution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The Chi-Square distribution is symmetric and bell-shaped.",
+        "B": "The Chi-Square distribution is used primarily in hypothesis testing for categorical data.",
+        "C": "The Chi-Square distribution can take on negative values.",
+        "D": "The Chi-Square distribution is always normally distributed with a mean of 0."
+      },
+      "correct_option_label": "B",
+      "explanation": "The Chi-Square distribution is used for tests of independence and goodness-of-fit in categorical data.\nProperties:\n1. Non-negative (values $\\ge 0$).\n2. Skewed to the right."
+    },
+    {
+      "question_id": "M6_Q1",
+      "module": 2,
+      "question_text": "If the covariance between two variables X and Y is zero, what does it imply?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "There is a perfect positive linear relationship between X and Y",
+        "B": "There is no linear relationship between X and Y",
+        "C": "X and Y are independent",
+        "D": "There is a perfect negative linear relationship between X and Y"
+      },
+      "correct_option_label": "B",
+      "explanation": "Covariance measures linear association. If $Cov(X, Y) = 0$, there is no *linear* relationship. Note: They could still have a non-linear relationship, so they aren't necessarily independent."
+    },
+    {
+      "question_id": "M6_Q2",
+      "module": 2,
+      "question_text": "Which of the following statements about correlation is not true?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Correlation measures both the strength and direction of the relationship between two variables.",
+        "B": "A correlation of 0.5 indicates a moderate positive linear relationship.",
+        "C": "A correlation of -1 implies that the variables are perfectly negatively related.",
+        "D": "A correlation of 0 implies no relationship between two variables."
+      },
+      "correct_option_label": "D",
+      "explanation": "A correlation of 0 specifically implies no *linear* relationship. Variables could still be related non-linearly (e.g., $y = x^2$ over a symmetric range around 0)."
+    },
+    {
+      "question_id": "M6_Q3",
+      "module": 2,
+      "question_text": "What is the key advantage of using correlation over covariance?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Correlation can be used with non-linear relationships.",
+        "B": "Correlation is always greater than or equal to 0.",
+        "C": "Correlation does not depend on the scale of the variables, making it easier to compare relationships across different datasets.",
+        "D": "Correlation can only be used for categorical data."
+      },
+      "correct_option_label": "C",
+      "explanation": "Covariance units are the product of the units of $X$ and $Y$. Correlation ($r$) is a standardized version that ranges from -1 to 1 and has no units, allowing for direct comparison. Formula: $r = \\frac{Cov(X,Y)}{\\sigma_x \\sigma_y}$."
+    },
+    {
+      "question_id": "M6_Q4",
+      "module": 2,
+      "question_text": "Which of the following statements about overfitting in simple linear regression is TRUE?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Overfitting occurs when the model is too simple and cannot capture the complexity of the data.",
+        "B": "Overfitting occurs when the model has too many predictors relative to the number of data points, leading to an excessively complex model.",
+        "C": "In simple linear regression, overfitting is rare because the model only includes one predictor.",
+        "D": "Overfitting results in a model that performs very well on training data but poorly on new, unseen data."
+      },
+      "correct_option_label": "D",
+      "explanation": "Overfitting happens when a model learns the 'noise' in the training data rather than just the underlying pattern. This leads to high accuracy on the training set but poor generalization to test/new data."
+    },
+    {
+      "question_id": "M6_Q5",
+      "module": 2,
+      "question_text": "Which of the following is the final step in the simple linear regression process?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Plot the data.",
+        "B": "Evaluate residuals to check assumptions.",
+        "C": "Calculate the regression coefficients.",
+        "D": "Assess model performance using R-squared."
+      },
+      "correct_option_label": "B",
+      "explanation": "The standard process follows: Plot data -> Calculate Coefficients -> Assess $R^2$ -> Conduct Residual Analysis. Evaluating residuals is the diagnostic step used to validate the model's reliability before final use."
+    },
+    {
+      "question_id": "M6_Q6",
+      "module": 2,
+      "question_text": "What is the primary objective of the Ordinary Least Squares (OLS) method in linear regression?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "To maximize the sum of squared residuals",
+        "B": "To minimize the sum of squared residuals",
+        "C": "To maximize the correlation coefficient",
+        "D": "To estimate the variance of the dependent variable"
+      },
+      "correct_option_label": "B",
+      "explanation": "OLS finds the line that minimizes the sum of the vertical distances squared between observed data points and the regression line.\nFormula: $\\min \\sum (y_i - \\hat{y}_i)^2$."
+    },
+    {
+      "question_id": "M6_Q7",
+      "module": 2,
+      "question_text": "If the coefficient of determination value of a regression model is 0.85, what does it indicate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "85% of the variance in the independent variable is explained by the dependent variable",
+        "B": "The model perfectly explains the dependent variable",
+        "C": "85% of the variance in the dependent variable is explained by the independent variable",
+        "D": "85% of the observations fall within the predicted range"
+      },
+      "correct_option_label": "C",
+      "explanation": "$R^2$ (Coefficient of Determination) represents the proportion of the total variation in the dependent variable ($Y$) that is accounted for by the regression model (the independent variables $X$)."
+    },
+    {
+      "question_id": "M6_Q8",
+      "module": 2,
+      "question_text": "Which of the following best describes the relationship between the correlation coefficient and the coefficient of determination?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The correlation coefficient is the square root of the coefficient of determination",
+        "B": "The correlation coefficient is the coefficient of determination squared",
+        "C": "The correlation coefficient and the coefficient of determination are unrelated",
+        "D": "The correlation coefficient is the same as the coefficient of determination"
+      },
+      "correct_option_label": "A",
+      "explanation": "In simple linear regression, the square of the correlation coefficient ($r$) is equal to the coefficient of determination ($R^2$). Thus, $r = \\pm \\sqrt{R^2}$."
+    },
+    {
+      "question_id": "M6_Q9",
+      "module": 2,
+      "question_text": "The assumption that the error term has a zero mean is important because it ensures that:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The regression model is unbiased.",
+        "B": "The variance of the dependent variable is minimized.",
+        "C": "The regression line is always centered on the data points.",
+        "D": "The error term follows a normal distribution."
+      },
+      "correct_option_label": "A",
+      "explanation": "One of the Gauss-Markov assumptions is $E(\\epsilon) = 0$. This ensures that the intercept and slope estimates are unbiased, meaning they don't systematically over- or under-estimate the true parameters."
+    },
+    {
+      "question_id": "M6_Q10",
+      "module": 2,
+      "question_text": "If the p-value is smaller than the chosen significance level (α), what should you do?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Fail to reject the null hypothesis",
+        "B": "Accept the null hypothesis",
+        "C": "Reject the null hypothesis",
+        "D": "Increase the sample size"
+      },
+      "correct_option_label": "C",
+      "explanation": "A $p$-value less than $\\alpha$ indicates that the observed result is statistically significant, providing enough evidence to reject the null hypothesis $H_0$."
+    },
+    {
+      "question_id": "M6_Q11",
+      "module": 2,
+      "question_text": "In Excel's regression output, what does the \"Coefficients\" section display?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The predicted values of the dependent variable",
+        "B": "The slope and intercept of the regression equation",
+        "C": "The correlation coefficient",
+        "D": "The p-value for the regression"
+      },
+      "correct_option_label": "B",
+      "explanation": "The 'Coefficients' table in Excel lists the 'Intercept' ($\\beta_0$) and the variable names with their corresponding 'Slope' coefficients ($\\beta_1, \\beta_2...$)."
+    },
+    {
+      "question_id": "M6_Q12",
+      "module": 2,
+      "question_text": "When performing residual analysis in Excel, what is a sign of heteroscedasticity?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Residuals are evenly spread around zero in the residual plot",
+        "B": "Residuals form a funnel shape in the residual plot",
+        "C": "Residuals are normally distributed",
+        "D": "Residuals follow a straight line in a Q-Q plot"
+      },
+      "correct_option_label": "B",
+      "explanation": "Heteroscedasticity means the variance of the error term is not constant. On a residual plot, this appears as a 'fan' or 'funnel' shape where the spread of residuals increases or decreases as the predicted value increases."
+    },
+    {
+      "question_id": "M6_Q13",
+      "module": 2,
+      "question_text": "The primary difference between outliers and influential observations is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Outliers always have a large effect on the regression model, while influential observations do not",
+        "B": "Outliers are more common than influential observations",
+        "C": "Influential observations can change the regression results significantly, while outliers may not",
+        "D": "There is no significant difference between outliers and influential observations"
+      },
+      "correct_option_label": "C",
+      "explanation": "An outlier is a data point with a large residual (far from the line). An influential observation is a point that, if removed, significantly changes the slope or intercept of the regression line. Not all outliers are influential."
+    },
+    {
+      "question_id": "M6_Q14",
+      "module": 2,
+      "question_text": "Which of the following indicates that residuals violate the assumption of normality in linear regression?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A straight line in a Q-Q plot of residuals",
+        "B": "A bell-shaped histogram of residuals",
+        "C": "A random scatter of residuals around zero in a residual plot",
+        "D": "A skewed or bimodal histogram of residuals"
+      },
+      "correct_option_label": "D",
+      "explanation": "Normality of residuals is checked using a histogram or Q-Q plot. A bell shape (B) or straight line (A) confirms normality. Skewness or multiple peaks (D) indicate a violation."
+    },
+    {
+      "question_id": "M6_Q15",
+      "module": 2,
+      "question_text": "Which of the following assumptions must be checked when using Simple Linear Regression to analyze credit card spending behavior?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The relationship between household size and credit card spending must be non-linear",
+        "B": "The residuals should be normally distributed",
+        "C": "Household size must be correlated with credit card spending in a positive direction",
+        "D": "The independent variable (household size) must be constant"
+      },
+      "correct_option_label": "B",
+      "explanation": "SLR assumptions include linearity, independence, normality of residuals, and homoscedasticity. Option B is a core assumption."
+    },
+    {
+      "question_id": "M6_Q16",
+      "module": 2,
+      "question_text": "Which statistic in simple linear regression indicates how well the model fits the data?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "P-value",
+        "B": "R-squared",
+        "C": "Standard error",
+        "D": "Slope coefficient"
+      },
+      "correct_option_label": "B",
+      "explanation": "$R^2$ is the goodness-of-fit statistic. It tells you the percentage of variation in $Y$ explained by the model."
+    },
+    {
+      "question_id": "M6_Q17",
+      "module": 2,
+      "question_text": "In a simple linear regression model, the R-squared value indicates:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The amount of variation in debt explained by monthly payment",
+        "B": "The amount of variation in monthly payment explained by debt",
+        "C": "The correlation between debt and monthly payment",
+        "D": "The slope of the regression line"
+      },
+      "correct_option_label": "B",
+      "explanation": "If the model is 'Monthly Payment vs Debt', $R^2$ explains how much variation in the dependent variable (Payment) is explained by the independent variable (Debt)."
+    },
+    {
+      "question_id": "M7_Q1",
+      "module": 3,
+      "question_text": "The coefficient 𝜷𝟏 in a Multiple Linear Regression model indicates:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The total variance explained by the independent variables.",
+        "B": "The change in the dependent variable for a one-unit change in 𝒙𝟏 holding all other predictors constant.",
+        "C": "The intercept of the regression line.",
+        "D": "The error term in the mode."
+      },
+      "correct_option_label": "B",
+      "explanation": "In Multiple Linear Regression (MLR), each $\\beta$ coefficient represents the partial effect of that variable. It is the change in $Y$ per unit change in $X_i$, keeping all other $X$ variables fixed ('ceteris paribus')."
+    },
+    {
+      "question_id": "M7_Q2",
+      "module": 3,
+      "question_text": "Which method is commonly used to estimate the coefficients in Multiple Linear Regression?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Maximum likelihood estimation.",
+        "B": "Principal component analysis.",
+        "C": "Gradient descent.",
+        "D": "Least squares estimation."
+      },
+      "correct_option_label": "D",
+      "explanation": "Least squares estimation (or OLS) is the standard method for determining the line of best fit in MLR by minimizing the sum of squared residuals."
+    },
+    {
+      "question_id": "M7_Q3",
+      "module": 3,
+      "question_text": "Adjusted R square is preferred over R square when:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The number of predictors is very small.",
+        "B": "The dependent variable is categorical.",
+        "C": "The sample size is very small.",
+        "D": "The model contains a large number of independent variables."
+      },
+      "correct_option_label": "D",
+      "explanation": "$R^2$ always increases when new predictors are added, even if they are irrelevant. Adjusted $R^2$ penalizes for adding variables that don't improve the model significantly. \nFormula: $1 - (1-R^2)\\frac{n-1}{n-p-1}$."
+    },
+    {
+      "question_id": "M7_Q4",
+      "module": 3,
+      "question_text": "Which of the following statements is correct about the p-value in the context of testing the significance of a regression coefficient in MLR?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A low p-value (less than the significance level) indicates that the null hypothesis can be rejected, implying the predictor is statistically significant.",
+        "B": "A high p-value (greater than the significance level) suggests that the regression model is a poor fit for the data.",
+        "C": "The p-value indicates the strength of the overall model, not the significance of individual predictors.",
+        "D": "A p-value greater than 0.05 always implies the predictor is irrelevant to the model."
+      },
+      "correct_option_label": "A",
+      "explanation": "Individual t-tests check if $\\beta_i = 0$. A $p$-value $< 0.05$ means we reject $\\beta_i = 0$, concluding the variable $X_i$ is a significant predictor."
+    },
+    {
+      "question_id": "M7_Q5",
+      "module": 3,
+      "question_text": "The F-test in Multiple Linear Regression tests the null hypothesis that:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "All regression coefficients are individually zero.",
+        "B": "At least one regression coefficient is significantly different from zero.",
+        "C": "The model has no multicollinearity.",
+        "D": "The residuals are homoscedastic."
+      },
+      "correct_option_label": "A",
+      "explanation": "The F-test for overall significance has $H_0: \\beta_1 = \\beta_2 = ... = \\beta_k = 0$. Rejecting $H_0$ means at least one predictor is significant."
+    },
+    {
+      "question_id": "M7_Q6",
+      "module": 3,
+      "question_text": "In Multiple Linear Regression (MLR), which of the following is true about the t-statistic for testing the significance of a regression coefficient?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The t-statistic follows a normal distribution with n degrees of freedom.",
+        "B": "The t-statistic follows a t-distribution with n−p degrees of freedom.",
+        "C": "The t-statistic follows a t-distribution with n−p−1 degrees of freedom.",
+        "D": "The t-statistic follows a normal distribution with n−p−1 degrees of freedom."
+      },
+      "correct_option_label": "C",
+      "explanation": "For MLR with $n$ observations and $p$ independent variables, the degrees of freedom for the t-test on coefficients is $df = n - (p + 1) = n - p - 1$."
+    },
+    {
+      "question_id": "M7_Q7",
+      "module": 3,
+      "question_text": "Which of the following techniques is used to address multicollinearity in Multiple Linear Regression?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Increase the sample size.",
+        "B": "Remove some highly correlated independent variables.",
+        "C": "Use the principle of least squares.",
+        "D": "Perform log transformation on the variables."
+      },
+      "correct_option_label": "B",
+      "explanation": "Multicollinearity occurs when predictors are highly correlated. The simplest remedy is to remove one of the highly correlated variables to stabilize the coefficient estimates."
+    },
+    {
+      "question_id": "M7_Q8",
+      "module": 3,
+      "question_text": "Which of the following statements is true regarding residual analysis in MLR?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Residual analysis is only useful for detecting non-linearity.",
+        "B": "Residual analysis is essential for checking if the model violates assumptions such as normality and homoscedasticity.",
+        "C": "Residual analysis can replace model validation techniques such as cross-validation.",
+        "D": "Residual analysis only applies to simple linear regression, not multiple linear regression."
+      },
+      "correct_option_label": "B",
+      "explanation": "Residual analysis is a diagnostic tool for MLR to ensure the errors are random, normally distributed, and have constant variance, which are requirements for valid inference."
+    },
+    {
+      "question_id": "M7_Q9",
+      "module": 3,
+      "question_text": "A data point with high leverage but small residual is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Likely an outlier.",
+        "B": "Likely an influential observation.",
+        "C": "Not influential and should be ignored.",
+        "D": "Always a good data point for model accuracy."
+      },
+      "correct_option_label": "B",
+      "explanation": "Leverage measures how far an observation's predictor values are from the average. A point with high leverage and a small residual effectively pulls the regression line toward it, making it influential."
+    },
+    {
+      "question_id": "M7_Q10",
+      "module": 3,
+      "question_text": "When performing Multiple Linear Regression, you notice that the adjusted R squared value is significantly lower than the R squared value. What is the most likely explanation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The model is overfitting the data.",
+        "B": "The dependent variable is incorrectly specified.",
+        "C": "The independent variables are not linearly related to the dependent variable.",
+        "D": "The independent variables are irrelevant, and the model may include too many predictors."
+      },
+      "correct_option_label": "D",
+      "explanation": "Adjusted $R^2$ penalizes for complexity. If it is much lower than $R^2$, it indicates that many predictors in the model are not contributing enough explanatory power to justify their inclusion."
+    },
+    {
+      "question_id": "M7_Q11",
+      "module": 3,
+      "question_text": "In the context of Multiple Linear Regression (MLR), which of the following would most likely lead to a high variance in the estimated regression coefficients?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Adding more relevant predictors to the model.",
+        "B": "Including predictors that are highly correlated with each other (multicollinearity).",
+        "C": "Increasing the sample size without adding predictors.",
+        "D": "Using a smaller sample size"
+      },
+      "correct_option_label": "B",
+      "explanation": "Multicollinearity inflates the standard errors (variance) of the coefficient estimates, making them unstable and sensitive to small changes in the data."
+    },
+    {
+      "question_id": "M7_Q12",
+      "module": 3,
+      "question_text": "In the residual plot, if the residuals show a pattern (e.g., a curve), what does this suggest about the model?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The model is appropriate and well-fitted",
+        "B": "The residuals are homoscedastic",
+        "C": "The model may have omitted a significant variable or non-linearity",
+        "D": "The residuals are normally distributed"
+      },
+      "correct_option_label": "C",
+      "explanation": "Residuals should be random scatter. A visible pattern (like a curve) indicates that the linear model is failing to capture a non-linear relationship or an important interaction/variable."
+    },
+    {
+      "question_id": "M7_Q13",
+      "module": 3,
+      "question_text": "What does the F-statistic in an ANOVA table for MLR test?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Whether the residuals are normally distributed",
+        "B": "Whether the model explains a significant portion of the variance in the dependent variable",
+        "C": "Whether the predictors are correlated with each other",
+        "D": "Whether the residuals are homoscedastic"
+      },
+      "correct_option_label": "B",
+      "explanation": "The F-statistic tests the overall significance of the model ($H_0: R^2 = 0$). It determines if the predictors collectively explain a significant portion of the variance in $Y$."
+    },
+    {
+      "question_id": "M7_Q14",
+      "module": 3,
+      "question_text": "Adjusted R-squared is preferred over R-squared when:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The model contains a very small number of predictors",
+        "B": "The model has irrelevant or redundant predictors",
+        "C": "The sample size is very large",
+        "D": "The dependent variable is categorical"
+      },
+      "correct_option_label": "B",
+      "explanation": "As discussed, Adjusted $R^2$ accounts for the number of predictors ($p$) and helps prevent artificial inflation of the fit caused by redundant variables."
+    },
+    {
+      "question_id": "M7_Q15",
+      "module": 3,
+      "question_text": "In a multiple linear regression model, what is the consequence of heteroscedastic residuals?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The model may underestimate the variability in the data",
+        "B": "The residuals will appear as a straight line in the residual plot",
+        "C": "The standard errors of the coefficients could be biased, leading to unreliable significance tests",
+        "D": "The model will have perfect predictive accuracy"
+      },
+      "correct_option_label": "C",
+      "explanation": "Heteroscedasticity violates OLS assumptions. While the coefficients remain unbiased, the standard errors are incorrect, making t-stats and p-values unreliable."
+    },
+    {
+      "question_id": "M7_Q16",
+      "module": 3,
+      "question_text": "A p-value less than 0.05 for a t-test on a regression coefficient indicates:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The predictor is not statistically significant",
+        "B": "The predictor is statistically significant",
+        "C": "The regression model is a good fit",
+        "D": "The coefficient is equal to zero"
+      },
+      "correct_option_label": "B",
+      "explanation": "$p < 0.05$ leads to rejection of $H_0: \\beta_i = 0$, meaning we are $95\\%$ confident that the predictor has a non-zero effect on $Y$."
+    },
+    {
+      "question_id": "M7_Q17",
+      "module": 4,
+      "question_text": "Which of the following situations would most likely lead to omitted variable bias in a regression model?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The dependent variable is highly correlated with one of the predictors.",
+        "B": "An important variable that influences both the dependent and independent variables is excluded from the model.",
+        "C": "The sample size is too large for the model.",
+        "D": "There is no correlation between the independent variables."
+      },
+      "correct_option_label": "B",
+      "explanation": "Omitted Variable Bias (OVB) occurs when a variable that belongs in the true model (because it affects $Y$) is also correlated with one or more included $X$ variables."
+    },
+    {
+      "question_id": "M7_Q18",
+      "module": 3,
+      "question_text": "The F-statistic in multiple linear regression is used to:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Test if the regression model has a significant overall fit",
+        "B": "Compare the fit of two different regression models",
+        "C": "Test the significance of individual regression coefficients",
+        "D": "Evaluate the normality of residuals"
+      },
+      "correct_option_label": "A",
+      "explanation": "The F-statistic measures the ratio of Explained Variance to Unexplained Variance. If the ratio is high enough, the overall model is considered to have a significant fit."
+    },
+    {
+      "question_id": "M8_Q1",
+      "module": 4,
+      "question_text": "How should categorical variables be included in a Multiple Linear Regression model?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Use the categorical variable as is, without any changes.",
+        "B": "Use dummy variables to represent each category.",
+        "C": "Exclude categorical variables from the model.",
+        "D": "Treat categorical variables as numbers in the model."
+      },
+      "correct_option_label": "B",
+      "explanation": "Categorical variables are non-numeric. To use them, we create dummy (indicator) variables (0 or 1). If a variable has $k$ categories, we use $k-1$ dummy variables."
+    },
+    {
+      "question_id": "M8_Q2",
+      "module": 3,
+      "question_text": "What does the coefficient of a variable in a Multiple Linear Regression model tell us?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It shows how much the dependent variable changes when the independent variable increases by one unit.",
+        "B": "It shows the total value of the dependent variable.",
+        "C": "It tells us the average value of the independent variable.",
+        "D": "It shows the relationship between all independent variables."
+      },
+      "correct_option_label": "A",
+      "explanation": "The slope coefficient $\\beta_i$ represents the rate of change: $\\Delta Y / \\Delta X_i$. It quantifies the effect of the specific predictor on the target variable."
+    },
+    {
+      "question_id": "M8_Q3",
+      "module": 4,
+      "question_text": "What does an interaction variable in Multiple Linear Regression represent?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is a product of two independent variables used to check the existence of a conditional relationship between them.",
+        "B": "It shows the effect of one variable on the dependent variable without considering other variables.",
+        "C": "It is the sum of two independent variables.",
+        "D": "It represents a single variable’s effect on the dependent variable."
+      },
+      "correct_option_label": "A",
+      "explanation": "An interaction term ($X_1 \\cdot X_2$) is used when the effect of $X_1$ on $Y$ depends on the level of $X_2$. This captures synergy or conditional effects."
+    }
+  ]
+}
