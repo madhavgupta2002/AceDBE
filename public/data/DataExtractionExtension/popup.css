@@ -352,6 +352,7 @@ body {
     justify-content: center;
     gap: 9px;
     padding: 11px;
+    width: 100%;
     font-size: 11px;
     font-weight: 500;
     text-transform: uppercase;
@@ -359,6 +360,13 @@ body {
     cursor: pointer;
     border: none;
     transition: background 120ms;
+}
+
+.btn-primary svg,
+.btn-ghost svg {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
 }
 
 .btn-primary {
