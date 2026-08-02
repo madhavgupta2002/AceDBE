@@ -1,0 +1,94 @@
+{
+  "exam_metadata": {
+    "subject_name": "Business Statistics for Entrepreneurs",
+    "exam_date": "4 October 2025 Abridged",
+    "batch": 1,
+    "attempt": "Re 2"
+  },
+  "questions": [
+    {
+      "question_id": "20",
+      "question_text": "In data used to construct a valid simple linear regression model with 10 observations, it was observed that $\\sum(X_i-\\bar{X})(Y_i-\\bar{Y})$ is equal to 2840, $\\sum(X_i-\\bar{X})^2$ equals 568 and $\\sum(Y_i-\\bar{Y})^2 = 15730$. The sample average for x given by $\\bar{X}$ was 16 and the sample average for y given by $\\bar{Y}$ was 134. The least squares estimate for $b_0$ is given by:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "5",
+        "B": "-5",
+        "C": "54",
+        "D": "-54"
+      },
+      "correct_option_label": "C",
+      "explanation": "Step 1: Calculate $b_1 = \\frac{\\sum(X_i-\\bar{X})(Y_i-\\bar{Y})}{\\sum(X_i-\\bar{X})^2} = \\frac{2840}{568} = 5$. \nStep 2: Calculate $b_0 = \\bar{Y} - b_1 \\bar{X} = 134 - 5(16) = 134 - 80 = 54$.",
+      "module": 2
+    },
+    {
+      "question_id": "21",
+      "question_text": "In data used to construct a valid simple linear regression model, it was observed that SSR is equal to 14200, SSE is equal to 1530, and MSE is equal to 191.25. The R Square value corresponding to this simple linear regression model is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.89",
+        "B": "0.90",
+        "C": "0.95",
+        "D": "0.99"
+      },
+      "correct_option_label": "B",
+      "explanation": "$R^2 = \\frac{SSR}{SST} = \\frac{SSR}{SSR + SSE}$. \n$R^2 = \\frac{14200}{14200 + 1530} = \\frac{14200}{15730} \\approx 0.9027$.",
+      "module": 2
+    },
+    {
+      "question_id": "22",
+      "question_text": "In data used to construct a valid simple regression model with 12 data points, it was observed that $\\sum(X_i-\\bar{X})(Y_i-\\bar{Y})$ is equal to -997.1, $\\sum(X_i-\\bar{X})^2$ equals 392.9 and $\\sum(Y_i-\\bar{Y})^2 = 4800.9$. The sample average for x given by $\\bar{X}$ was 28.6 and the sample average for y given by $\\bar{Y}$ was 227.6. These results imply that, if X equals 30, the expected value for Y would be:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "224",
+        "B": "234",
+        "C": "244",
+        "D": "254"
+      },
+      "correct_option_label": "A",
+      "explanation": "Step 1: $b_1 = \\frac{-997.1}{392.9} \\approx -2.5378$. \nStep 2: Equation is $\\hat{Y} = \\bar{Y} + b_1(X - \\bar{X})$. \nStep 3: For $X = 30$, $\\hat{Y} = 227.6 + (-2.5378)(30 - 28.6) = 227.6 - 2.5378(1.4) \\approx 227.6 - 3.55 = 224.05$.",
+      "module": 2
+    },
+    {
+      "question_id": "23",
+      "question_text": "When data with 20 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, $x_1, x_2, x_3, x_4$ the following outputs were obtained. The standard error was 72.61, the SSR was 422975.2. The standard error corresponding to $x_1, x_2, x_3, x_4$ were 0.111, 0.007, 7.594, and 20.782 respectively. The t-statistic corresponding to $x_1, x_2, x_3, x_4$ were 5.84, 2.92, 5.33, and -0.005 respectively. These results imply Multiple R is equal to",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.957",
+        "B": "0.917",
+        "C": "0.842",
+        "D": "0.800"
+      },
+      "correct_option_label": "B",
+      "explanation": "Step 1: Standard error of estimate $S_e = 72.61$. $MSE = S_e^2 = 5272.21$. \nStep 2: $df_{error} = n - (k + 1) = 20 - (4 + 1) = 15$. \nStep 3: $SSE = MSE \\cdot df_{error} = 5272.21 \\cdot 15 = 79083.15$. \nStep 4: $SST = SSR + SSE = 422975.2 + 79083.15 = 502058.35$. \nStep 5: $R^2 = SSR / SST = 0.8424$. \nStep 6: $Multiple R = \\sqrt{R^2} = \\sqrt{0.8424} \\approx 0.9178$.",
+      "module": 3
+    },
+    {
+      "question_id": "24",
+      "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, $x_1, x_2, x_3, x_4$ the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to $x_1, x_2, x_3, x_4$ were 8, 48, 36 and 2 respectively. The t-statistic corresponding to $x_1, x_2, x_3, x_4$ were 1.5, 0.5, -1.0, and 8.0 respectively. These results imply that $b_3$ is equal to",
+      "question_type": "MCQ",
+      "options": {
+        "A": "24",
+        "B": "-24",
+        "C": "-36",
+        "D": "36"
+      },
+      "correct_option_label": "C",
+      "explanation": "The t-statistic is defined as $t = b_i / SE(b_i)$. \nFor $x_3$: $t_3 = -1.0$ and $SE(b_3) = 36$. \nTherefore, $b_3 = t_3 \\cdot SE(b_3) = -1.0 \\cdot 36 = -36$.",
+      "module": 3
+    },
+    {
+      "question_id": "25",
+      "question_text": "When data with 56 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 8 independent variables, $x_1,...,x_8$ the following outputs were obtained. The R Square was 0.80, SSR was 4280. These results imply that SST is equal to",
+      "question_type": "MCQ",
+      "options": {
+        "A": "4350",
+        "B": "5350",
+        "C": "6350",
+        "D": "7350"
+      },
+      "correct_option_label": "B",
+      "explanation": "$R^2 = SSR / SST$. \n$0.80 = 4280 / SST$. \n$SST = 4280 / 0.80 = 5350$.",
+      "module": 3
+    }
+  ]
+}
