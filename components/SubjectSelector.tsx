@@ -14,8 +14,9 @@ import { useBatch } from '@/contexts/BatchContext';
 import Link from 'next/link';
 import CustomQuizGenerator from './CustomQuizGenerator';
 
-const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) => {
-  const { selectedBatch, setSelectedBatch } = useBatch();
+const SubjectSelector: React.FC<{ selectedTerm?: number }> = ({ selectedTerm: propTerm }) => {
+  const { selectedBatch, selectedTerm: contextTerm } = useBatch();
+  const selectedTerm = propTerm ?? contextTerm;
 
   // Academic Cell Repository links per term
   const academicCellRepoLinks: Record<number, string> = {
@@ -73,10 +74,9 @@ const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) =
     { subject, alias }: { subject: typeof subjectsForTerm[number]['subject']; alias: typeof subjectsForTerm[number]['alias'] },
     noExam: boolean,
   ) => (
-    <Link
+    <div
       key={alias.code}
-      href={`/${alias.code}`}
-      className={`block border rounded-xl transition-all duration-200 cursor-pointer group shadow-card hover:shadow-card-hover ${
+      className={`block border rounded-xl transition-all duration-200 group shadow-card hover:shadow-card-hover ${
         noExam
           ? 'bg-amber-950/20 border-amber-800/25 hover:border-amber-500/40'
           : 'bg-surface border-surface-border/60 hover:border-emerald-500/40'
@@ -84,7 +84,10 @@ const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) =
     >
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between p-3 sm:p-3.5">
         {/* Subject Info */}
-        <div className="flex items-center space-x-3 sm:space-x-4 flex-1 mb-3 sm:mb-0">
+        <Link
+          href={`/${alias.code}`}
+          className="flex items-center space-x-3 sm:space-x-4 flex-1 mb-3 sm:mb-0 min-w-0"
+        >
           <div className="bg-emerald-600/90 p-2.5 sm:p-3 rounded-xl group-hover:bg-emerald-500 transition-colors shrink-0 shadow-glow-emerald">
             {React.createElement(getIconForCode(alias.code), {
               className: 'w-5 h-5 sm:w-6 sm:h-6 text-white',
@@ -100,14 +103,13 @@ const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) =
               </h3>
             </div>
           </div>
-        </div>
+        </Link>
 
         {/* Action Buttons + Arrow */}
         <div className="flex items-center justify-end mt-2 sm:mt-0 gap-3 sm:gap-4">
           <div className="flex items-center gap-1.5">
             <Link
               href={`/${alias.code}/notes`}
-              onClick={(e) => e.stopPropagation()}
               className="p-2 bg-indigo-600/90 hover:bg-indigo-500 text-white transition-all rounded-lg border border-indigo-500/35"
               title="View Notes"
             >
@@ -122,17 +124,18 @@ const SubjectSelector: React.FC<{ selectedTerm: number }> = ({ selectedTerm }) =
             </button>
             <Link
               href={`/${alias.code}`}
-              onClick={(e) => e.stopPropagation()}
               className="p-2 bg-emerald-700/85 hover:bg-emerald-600 text-white transition-all rounded-lg border border-emerald-600/35"
               title="Start Quiz"
             >
               <ClipboardList className="w-4 h-4" />
             </Link>
           </div>
-          <ArrowRight className="w-5 h-5 text-slate-600 group-hover:text-emerald-400 group-hover:translate-x-1 transition-all ml-1" />
+          <Link href={`/${alias.code}`}>
+            <ArrowRight className="w-5 h-5 text-slate-600 group-hover:text-emerald-400 group-hover:translate-x-1 transition-all ml-1" />
+          </Link>
         </div>
       </div>
-    </Link>
+    </div>
   );
 
   return (
