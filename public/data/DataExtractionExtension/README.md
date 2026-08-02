@@ -32,11 +32,13 @@ After compiling and running the organizer script, your local directory is struct
 
 ```text
 Downloads/
-├── download.json
 ├── organize_iimbx.py
-└── Transcripts/
+└── IIMBx Parsed/
+    ├── download.json               <-- Moved here after processing
     └── <Course Name>/
-        ├── Videos.json  <-- Unified video playlist mapping for all course modules
+        ├── Videos.json             <-- Unified video playlist mapping for all course modules
+        ├── Joined Transcripts/     <-- Combined module PDFs (one merged PDF per module)
+        │   └── <Module Name>.pdf
         └── <Module or Chapter Name>/
             ├── Text.txt                <-- All formatted reading/lesson text
             ├── Transcript.txt          <-- All original transcript URLs
@@ -72,7 +74,7 @@ Create a file named `organize_iimbx.py` in your browser's default `Downloads` fo
    ```bash
    python organize_iimbx.py
    ```
-7. The terminal will print sequential download progress for your PDFs. Once complete, your structured assets will be organized inside the newly created `Transcripts/` folder.
+7. The terminal will print sequential download progress for your PDFs. Once complete, your structured assets will be organized inside the newly created `IIMBx Parsed/` folder.
 
 ---
 
