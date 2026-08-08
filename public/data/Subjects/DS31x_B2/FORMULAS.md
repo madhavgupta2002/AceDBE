@@ -349,3 +349,269 @@ xychart-beta
 | **GOF Test Direction** | Chi-Square Goodness-of-Fit is strictly an **upper-tail** test |
 | **Correlation Range** | Pearson correlation $r_{xy}$ satisfies $-1 \le r_{xy} \le +1$ |
 | **Correlation vs. Causation** | High correlation $r \approx 1$ does **NOT** imply $x$ causes $y$ |
+
+## MODULE 2: Simple Linear Regression (SLR)
+
+---
+
+### Foundations of Simple Linear Regression
+
+**Simple Linear Regression (SLR)** is a supervised learning technique used in predictive analytics to model a linear relationship between a single continuous quantitative dependent variable $y$ and a single independent variable $x$.
+
+```mermaid
+flowchart TD
+    A[Simple Linear Regression Workflow] --> B[1. Collect Data]
+    B --> C[2. Preprocess Data]
+    C --> D["3. Split Data: Training (75%) & Validation (25%)"]
+    D --> E[4. Compute Descriptive Stats & Plots]
+    E --> F[5. Specify Functional Form]
+    F --> G[6. Estimate Parameters via OLS]
+    G --> H[7. Model Diagnostics & Residual Analysis]
+    H --> I[8. Validate Model on Validation Set]
+    I --> J[9. Model Deployment]
+```
+
+| Regression Component | Symbol / Term | Definition & Role |
+|---|---|---|
+| **Dependent Variable** | $y$ | Response, outcome, or target variable being predicted (continuous numeric) |
+| **Independent Variable** | $x$ | Predictor, explanatory variable, or feature used to predict $y$ |
+| **Population Regression Model** | $y_i = \beta_0 + \beta_1 x_i + \epsilon_i$ | True relationship in the population including random error term $\epsilon_i$ |
+| **Population Regression Equation** | $E(y) = \beta_0 + \beta_1 x$ | Expected / mean value of $y$ for a given value of $x$ (error term drops out) |
+| **Sample Estimated Equation** | $\hat{y} = b_0 + b_1 x$ | Estimated regression line fitted using sample statistics $b_0$ and $b_1$ |
+| **Regression Parameters** | $\beta_0, \beta_1$ | Unknown population parameters ($\beta_0 = \text{intercept}$, $\beta_1 = \text{slope}$) |
+| **Sample Estimators** | $b_0, b_1$ | Point estimators of $\beta_0$ and $\beta_1$ computed from sample data |
+
+> **Q:** Linearity in linear regression is defined with respect to the explanatory variable $x$ = **FALSE** ✓ *(Linearity is strictly defined with respect to the regression coefficients $\beta_0$ and $\beta_1$)*
+> **Q:** Is $y_i = \beta_0 + \beta_1 x_i^2 + \epsilon_i$ classified as a linear regression model? = **YES** ✓ *(Because $y$ is linear with respect to parameters $\beta_0$ and $\beta_1$, even though $x$ is squared)*
+> **Q:** Is $y_i = \beta_0 + e^{\beta_1 x_i} + \epsilon_i$ a linear regression model? = **NO** ✓ *(Parameter $\beta_1$ appears non-linearly in the exponent)*
+> **Q:** What is the standard recommended train-validation split ratio for model building? = **75% Training and 25% Validation** ✓
+> **Q:** Performing well on the training data set but performing poorly on the validation set is known as **Overfitting** ✓
+
+---
+
+### Ordinary Least Squares (OLS) Parameter Estimation
+
+The **Ordinary Least Squares (OLS)** method computes sample statistics $b_0$ and $b_1$ by minimizing the sum of squared residual deviations between observed values $y_i$ and predicted values $\hat{y}_i$.
+
+$$\text{Minimize } \text{SSE} = \sum_{i=1}^n (y_i - \hat{y}_i)^2 = \sum_{i=1}^n [y_i - (b_0 + b_1 x_i)]^2$$
+
+#### OLS Estimator Formulas
+$$b_1 = \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^n (x_i - \bar{x})^2} = \frac{s_{xy}}{s_x^2}$$
+
+$$b_0 = \bar{y} - b_1 \bar{x}$$
+
+- **Interpretation of Slope ($b_1$):** Marginal change in the expected value of $y$ associated with a 1-unit increase in $x$.
+- **Extrapolation Warning:** Regression equations are **NOT** valid for predicting $y$ values outside the range of $x$ values present in the training data set.
+
+> **Q:** What objective criterion is minimized by the Ordinary Least Squares (OLS) method? = **Sum of Squared Errors / Residuals (SSE)** ✓
+> **Q:** What property makes OLS estimates desirable under Gauss-Markov assumptions? = **BEST Linear Unbiased Estimator (BLUE)** ✓
+> **Q:** Can an estimated regression equation be used to predict $y$ for $x$ values outside the sample data range? = **NO** ✓ *(Extrapolation beyond the training range is invalid)*
+
+---
+
+### Partitioning Variation & Coefficient of Determination ($R^2$)
+
+Total variation in the dependent variable $y$ is partitioned into explained and unexplained components.
+
+```mermaid
+flowchart LR
+    SST["SST: Total Sum of Squares Sum(yi - ybar)^2"] --- SSR["SSR: Regression Sum of Squares Sum(yhat - ybar)^2 (Explained)"]
+    SST --- SSE["SSE: Error Sum of Squares Sum(yi - yhat)^2 (Unexplained)"]
+```
+
+#### Sum of Squares Decomposition
+$$\text{SST} = \text{SSR} + \text{SSE}$$
+
+$$\sum_{i=1}^n (y_i - \bar{y})^2 = \sum_{i=1}^n (\hat{y}_i - \bar{y})^2 + \sum_{i=1}^n (y_i - \hat{y}_i)^2$$
+
+| Variation Quantity | Symbol | Formula | Degrees of Freedom (DF) | Role / Meaning |
+|---|---|---|---|---|
+| **Total Sum of Squares** | $\text{SST}$ | $\sum (y_i - \bar{y})^2$ | $n - 1$ | Total variation of $y_i$ around sample mean $\bar{y}$ |
+| **Regression Sum of Squares** | $\text{SSR}$ | $\sum (\hat{y}_i - \bar{y})^2$ | $1$ | Variation in $y_i$ explained by regression line |
+| **Error Sum of Squares** | $\text{SSE}$ | $\sum (y_i - \hat{y}_i)^2$ | $n - 2$ | Residual unexplained variation around regression line |
+
+#### Coefficient of Determination ($R^2$)
+$$R^2 = \frac{\text{SSR}}{\text{SST}} = 1 - \frac{\text{SSE}}{\text{SST}}, \quad 0 \le R^2 \le 1$$
+
+- **Interpretation:** Percentage / proportion of total variation in $y$ explained by the linear relationship with $x$.
+- **Relationship to Correlation Coefficient ($r_{xy}$):**
+  $$r_{xy} = \text{sign}(b_1) \cdot \sqrt{R^2}$$
+
+> **Q:** What value does $R^2$ take when every sample observation lies perfectly on the estimated regression line? = **1.0 (or 100%)** ✓
+> **Q:** If $b_1 = -2.5$ and $R^2 = 0.64$, what is the Pearson correlation coefficient $r_{xy}$? = **$-0.80$** ✓ *(Since $b_1$ is negative, $r_{xy} = -\sqrt{0.64} = -0.80$)*
+> **Q:** Why is $R^2$ preferred over correlation $r_{xy}$ for broader model evaluation? = **$R^2$ extends to non-linear relationships and multiple regression models** ✓
+
+---
+
+### Error Term Assumptions & Tests for Model Significance
+
+To conduct statistical inference ($t$-test and $F$-test) on regression parameters, four core assumptions must hold for the error term $\epsilon_i$:
+
+1. **Zero Mean:** $E(\epsilon_i) = 0$ for all $x_i \implies E(y_i) = \beta_0 + \beta_1 x_i$.
+2. **Homoscedasticity (Constant Variance):** $\text{Var}(\epsilon_i) = \sigma^2$ for all $x_i$.
+3. **Independence:** Errors $\epsilon_i$ are uncorrelated across observations.
+4. **Normality:** $\epsilon_i \sim N(0, \sigma^2) \implies y_i \sim N(\beta_0 + \beta_1 x_i, \sigma^2)$.
+
+#### Estimates of Population Variance ($\sigma^2$)
+$$\text{Mean Square Error (MSE)} = s^2 = \frac{\text{SSE}}{n - 2}$$
+
+$$\text{Standard Error of Estimate} = s = \sqrt{\text{MSE}} = \sqrt{\frac{\text{SSE}}{n - 2}}$$
+
+$$\text{Mean Square Regression (MSR)} = \frac{\text{SSR}}{1} = \text{SSR}$$
+
+#### Hypothesis Tests for Slope Parameter $\beta_1$
+$$\text{Null Hypothesis } H_0: \beta_1 = 0 \quad (\text{No linear relationship exists})$$
+$$\text{Alternate Hypothesis } H_A: \beta_1 \neq 0 \quad (\text{Significant linear relationship exists})$$
+
+| Test Type | Test Statistic Formula | Sampling Distribution | Equivalence in SLR |
+|---|---|---|---|
+| **$t$-Test** | $t = \frac{b_1 - 0}{s_{b_1}} \quad \text{where } s_{b_1} = \frac{s}{\sqrt{\sum (x_i - \bar{x})^2}}$ | $t$-distribution with $\text{DF} = n - 2$ | $t^2 = F$ |
+| **$F$-Test** | $F = \frac{\text{MSR}}{\text{MSE}}$ | $F$-distribution with $\text{DF}_1 = 1, \text{DF}_2 = n - 2$ | $F = t^2$ |
+
+> **Q:** What are the denominator degrees of freedom for the $F$-test in simple linear regression? = **$n - 2$** ✓
+> **Q:** In simple linear regression, the $t$-test and $F$-test for parameter significance yield identical conclusions and $p$-values = **TRUE** ✓
+> **Q:** The estimated standard error of $b_1$ is denoted by $s_{b_1} = \frac{s}{\sqrt{\sum (x_i - \bar{x})^2}}$ = **TRUE** ✓
+
+---
+
+### Residual Analysis, Outliers, and Influential Observations
+
+A **residual** $e_i = y_i - \hat{y}_i$ represents the error in predicting $y_i$. Standardized residuals convert error values into standard deviation units: $z_{e_i} = \frac{e_i}{s_e}$.
+
+| Diagnostic Plot | Ideal Pattern | Indication of Violation | Corrective Action |
+|---|---|---|---|
+| **Residuals ($e_i$) vs. Independent ($x$)** | Horizontal band of points centered around zero | **Funnel shape:** Non-constant variance (Heteroscedasticity)<br>**U-shape / Curvilinear:** Non-linear relationship | Transform variables or add higher-order / additional variables |
+| **Residuals ($e_i$) vs. Predicted ($\hat{y}$)** | Horizontal band around zero | Non-random trend or funnel pattern | Add missing independent variables (Multiple Regression) |
+| **Standardized Residuals vs. $x$** | ~95% of points within $[-2, +2]$ | Points with $|z_{e_i}| > 2$ (or $|z_{e_i}| > 3$) | Identify **Outliers** |
+
+- **Outliers:** Observations with unusually large residual values ($|z_{e_i}| > 2$). Caused by data entry errors or extreme chance occurrences.
+- **Influential Observations:** Points that exert a strong leverage effect on slope $b_1$ and intercept $b_0$ (often extreme $x$ or $y$ values). Removing an influential observation substantially alters regression parameters.
+
+> **Q:** What pattern in a plot of residuals versus $x$ indicates a violation of homoscedasticity? = **A funnel or fan-shaped pattern** ✓
+> **Q:** Approximately what percentage of standardized residuals should lie within $[-2, +2]$ if errors are normally distributed? = **95%** ✓
+> **Q:** A data point with a standardized residual of $+3.6$ is classified as an **Outlier** ✓
+
+---
+
+### Comprehensive SLR Numerical Case Studies
+
+**Q1 (Canara Bank Credit Card Spend vs Income - Hanumantha):** Sample $n = 55$ bank customers.
+Given: $\bar{x} = 32.89 \text{ lakhs}, \bar{y} = 4051 \text{ Rs}, \sum (x_i - \bar{x})^2 = 10201$.
+OLS regression estimates: $b_0 = 1047.37, b_1 = 85.27$.
+Sum of Squares: $\text{SST} = 114,197,923$, $\text{SSR} = 74,180,516$, $\text{SSE} = 40,017,408$.
+Perform model estimation, predict spend for income $x = 35 \text{ lakhs}$, calculate $R^2$, standard error $s$, $F$-stat, and $t$-stat.
+
+> *Why: OLS model evaluation and statistical inference for SLR.*
+> $\text{Regression Equation: } \hat{y} = 1047.37 + 85.27 x$
+> $\text{Prediction at } x = 35: \hat{y} = 1047.37 + 85.27(35) = 1047.37 + 2984.45 = 4031.82 \approx 4032 \text{ Rs}$
+> $R^2 = \frac{\text{SSR}}{\text{SST}} = \frac{74,180,516}{114,197,923} = 0.650 \implies 65.0\% \text{ variation explained}$
+> $r_{xy} = +\sqrt{0.650} = +0.806$
+> $\text{DF}_{\text{residual}} = n - 2 = 55 - 2 = 53$
+> $\text{MSE} = \frac{\text{SSE}}{53} = \frac{40,017,408}{53} = 755,045.43 \implies s = \sqrt{755,045.43} = 868.9$
+> $\text{MSR} = \text{SSR} = 74,180,516$
+> $F = \frac{\text{MSR}}{\text{MSE}} = \frac{74,180,516}{755,045.43} = 98.25 \quad (p < 0.001 \implies \text{Reject } H_0)$
+> $s_{b_1} = \frac{s}{\sqrt{\sum (x_i - \bar{x})^2}} = \frac{868.9}{\sqrt{10201}} = \frac{868.9}{101} = 8.603$
+> $t = \frac{b_1}{s_{b_1}} = \frac{85.27}{8.603} = 9.91 \quad (p = 1.1 \times 10^{-13} \le 0.05 \implies \text{Reject } H_0)$
+> **Answer = Model $\hat{y} = 1047.37 + 85.27x$ is highly significant ($F=98.25, t=9.91, R^2=0.65$); Predicted Spend = 4032 Rs** ✓
+> *(Notice that $t^2 = (9.91)^2 = 98.2$, exactly matching the F-statistic)*
+
+---
+
+**Q2 (BMTC Bus Fleet Maintenance vs Age - Shiva):** Sample $n = 30$ buses.
+Age range $x \in [1, 5] \text{ years}$. Mean age $\bar{x} = 3$, mean cost $\bar{y} = 6.1 \text{ lakhs}$.
+OLS regression equation: $\hat{y} = 2.2 + 1.32 x$.
+Sum of Squares: $\text{SST} = 107.1$, $\text{SSR} = 93.5$, $\text{SSE} = 13.65$. Standard error $s = 0.69$, $s_{b_1} = 0.095$.
+Evaluate $R^2$, ANOVA $F$-test, slope $t$-test, and address prediction for a brand-new bus ($x = 0$).
+
+> *Why: SLR inference and evaluation of extrapolation boundaries.*
+> $R^2 = \frac{93.5}{107.1} = 0.873 \implies 87.3\% \text{ variation explained}$
+> $r_{xy} = +\sqrt{0.873} = +0.934$
+> $\text{DF}_{\text{error}} = 30 - 2 = 28$
+> $\text{MSE} = \frac{13.65}{28} = 0.4875 \implies s = \sqrt{0.4875} = 0.698 \approx 0.69$
+> $\text{MSR} = 93.51$
+> $F = \frac{93.51}{0.4875} = 191.8 \quad (\text{or } 191.7, p < 0.001 \implies \text{Reject } H_0)$
+> $t = \frac{1.32}{0.095} = 13.89 \quad (\text{or } 13.85, p < 0.001 \implies \text{Reject } H_0)$
+> **Extrapolation Check:** Can we predict cost for $x = 0$ (brand new bus)? **NO**, because $x=0$ lies outside training range $[1, 5]$.
+> **Answer = Model is highly significant ($R^2=0.87, F=191.7$); predicting for brand-new buses is INVALID due to extrapolation** ✓
+> *(Interpreting intercept $b_0=2.2$ as new bus maintenance is incorrect because training data lacked age < 1)*
+
+---
+
+**Q3 (Amusement Park Season Passes vs Population - Arun):** Sample $n = 30$ PIN codes.
+Dependent variable $y = \text{Season Pass Holders}$, Independent variable $x = \text{Population}$.
+OLS equation: $\hat{y} = -15.24 + 0.009 x$.
+Given: $\text{SSR} = 158,752$, $\text{SSE} = 161,238$, $s_{b_1} = 0.0018$. Residual analysis reveals one PIN code with standardized residual $z_e = +3.6$. Evaluate model.
+
+> *Why: Testing parameter significance and detecting outliers in SLR.*
+> $\text{DF}_{\text{error}} = 30 - 2 = 28$
+> $\text{MSE} = \frac{161,238}{28} = 5758.5 \approx 5759$
+> $\text{MSR} = 158,752$
+> $F = \frac{158,752}{5758.5} = 27.57 \approx 27.5 \quad (p < 0.001 \implies \text{Reject } H_0)$
+> $t = \frac{0.009}{0.0018} = 5.0 \quad (\text{or } 5.25, p < 0.001 \implies \text{Reject } H_0)$
+> **Outlier Evaluation:** $z_e = +3.6 > 2.0$ indicates an **Outlier**.
+> **Answer = Population is a significant predictor ($F=27.5, t=5.25$); PIN code with $z_e=3.6$ is an outlier requiring investigation** ✓
+
+---
+
+**Q4 (Computer Satisfaction Score vs Price - Basaraju):** Sample $n = 36$ survey responses.
+$y = \text{Satisfaction Score (0-100)}$, $x = \text{Price (in thousands Rs)}$.
+OLS equation: $\hat{y} = 48.44 + 0.132 x$.
+Given: $\text{SSR} = 510.8$, $\text{SSE} = 914.8$, $s = 5.19$, $s_{b_1} = 0.03$. Standardized residuals show values of $-2.48$ and $-2.12$. Conduct ANOVA and $t$-test.
+
+> *Why: Analyzing score model diagnostics and interpreting positive price slope.*
+> $R^2 = \frac{510.8}{510.8 + 914.8} = \frac{510.8}{1425.6} = 0.358 \approx 0.36 \implies r = \sqrt{0.36} = 0.598 \approx 0.59$
+> $\text{DF}_{\text{error}} = 36 - 2 = 34$
+> $\text{MSE} = \frac{914.8}{34} = 26.9$
+> $\text{MSR} = 510.8$
+> $F = \frac{510.8}{26.9} = 18.99 \approx 18.9 \quad (p < 0.001 \implies \text{Reject } H_0)$
+> $t = \frac{0.132}{0.03} = 4.4 \quad (\text{or } 4.36, p < 0.001 \implies \text{Reject } H_0)$
+> **Interpretation:** For every 1,000 Rs increase in price, satisfaction score increases by $0.132$ points.
+> **Answer = Price is statistically significant ($F=18.9, t=4.36, R^2=0.36$); two negative outliers ($-2.48, -2.12$) over-predicted by model** ✓
+
+---
+
+**Q5 (Household Debt vs Income - Manjula Nayak):** Sample $n = 500$ survey records.
+$y = \text{Household Debt}$, $x = \text{First Income}$.
+OLS equation: $\hat{y} = 32976 + 0.04 x$.
+Given: $\text{SSR} = 1.86 \times 10^{11}$, $\text{SSE} = 4.08 \times 10^{11}$, $s = 28,619$, $\text{MSE} = 819,076,096$, $s_{b_1} = 0.002$. Conduct model validation.
+
+> *Why: Large sample size SLR evaluation.*
+> $\text{SST} = 1.86 \times 10^{11} + 4.08 \times 10^{11} = 5.94 \times 10^{11}$
+> $R^2 = \frac{1.86 \times 10^{11}}{5.94 \times 10^{11}} = 0.313 \approx 0.31 \implies r = +0.56$
+> $\text{DF}_{\text{error}} = 500 - 2 = 498$
+> $F = \frac{1.87 \times 10^{11}}{819,076,096} = 228.3 \approx 228 \quad (p < 0.001 \implies \text{Reject } H_0)$
+> $t = \frac{0.04}{0.002} = 20.0 \quad (\text{or } 15.1, p < 0.001 \implies \text{Reject } H_0)$
+> **Answer = First income is a significant predictor ($F=228, R^2=0.31$); low $R^2$ indicates additional predictors needed** ✓
+
+---
+
+## Quick Reference: Simple Linear Regression Output Summary
+
+| Case Study / Example | Sample Size ($n$) | Estimated Equation ($\hat{y} = b_0 + b_1 x$) | $R^2$ | $r_{xy}$ | Standard Error ($s$) | $F$-Statistic | $t$-Statistic | Outliers Detected? |
+|---|---|---|---|---|---|---|---|---|
+| **Canara Bank (Income)** | $55$ | $\hat{y} = 1047.37 + 85.27 x$ | $0.650$ | $+0.806$ | $868.9$ | $98.25$ | $9.91$ | None |
+| **Canara Bank (HH Size)** | $55$ | $\hat{y} = 2083.70 + 520.13 x$ | $0.396$ | $+0.630$ | $1140.71$ | $34.70$ | $5.89$ | $3$ outliers ($|z| > 2$) |
+| **Amusement Park (Pop)** | $30$ | $\hat{y} = -15.24 + 0.009 x$ | $0.495$ | $+0.704$ | $75.88$ | $27.50$ | $5.25$ | $1$ outlier ($z = +3.6$) |
+| **BMTC Bus (Age)** | $30$ | $\hat{y} = 2.20 + 1.32 x$ | $0.873$ | $+0.934$ | $0.69$ | $191.70$ | $13.85$ | None |
+| **Computer (Price)** | $36$ | $\hat{y} = 48.44 + 0.132 x$ | $0.360$ | $+0.590$ | $5.19$ | $18.90$ | $4.36$ | $2$ outliers ($-2.48, -2.12$) |
+| **99 Acres (Income)** | $500$ | $\hat{y} = 32976 + 0.04 x$ | $0.310$ | $+0.560$ | $28,619$ | $228.00$ | $15.10$ | Few ($|z| > 2$) |
+| **99 Acres (Payment)** | $500$ | $\hat{y} = 28791 + 2.94 x$ | $0.370$ | $+0.600$ | $27,518$ | $288.00$ | $16.95$ | Few ($|z| > 2$) |
+
+---
+
+## Key Decision Rules Summary
+
+| Rule Name | Operational Formula / Rule |
+|---|---|
+| **OLS Slope Estimator ($b_1$)** | $b_1 = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2}$ |
+| **OLS Intercept Estimator ($b_0$)** | $b_0 = \bar{y} - b_1 \bar{x}$ |
+| **Sum of Squares Partitioning** | $\text{SST} = \text{SSR} + \text{SSE}$ |
+| **Coefficient of Determination ($R^2$)** | $R^2 = \frac{\text{SSR}}{\text{SST}} = 1 - \frac{\text{SSE}}{\text{SST}}$ |
+| **Correlation vs. $R^2$** | $r_{xy} = \text{sign}(b_1) \cdot \sqrt{R^2}$ |
+| **MSE & Standard Error of Estimate** | $\text{MSE} = s^2 = \frac{\text{SSE}}{n - 2}, \quad s = \sqrt{\text{MSE}}$ |
+| **Standard Error of Slope ($s_{b_1}$)** | $s_{b_1} = \frac{s}{\sqrt{\sum (x_i - \bar{x})^2}}$ |
+| **SLR Significance Test ($t$-stat)** | $t = \frac{b_1}{s_{b_1}} \sim t_{n-2}$ |
+| **SLR Significance Test ($F$-stat)** | $F = \frac{\text{MSR}}{\text{MSE}} \sim F_{1, n-2}$ |
+| **$t$ vs $F$ Relation in SLR** | $F = t^2$ (yields identical $p$-value for testing $\beta_1 = 0$) |
+| **Extrapolation Prohibition** | Predict $y$ **ONLY** for $x \in [x_{\min}, x_{\max}]$ of training data |
+| **Outlier Identification** | Standardized residual $|z_{e_i}| > 2$ (or $|z_{e_i}| > 3$) |
