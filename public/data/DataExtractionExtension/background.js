@@ -350,7 +350,15 @@ function collectTranscriptsFromHtml(html, baseUrl) {
 
 function extractYouTubeUrls(html) {
     const matches = [];
-    const videoWrappers = [...html.matchAll(/<div[^>]*class="[^"]*video[^"]*"[^>]*data-metadata=(['"])([\s\S]*?)\1[^>]*>/gi)];
+    const seen = new Set();
+    const addUrl = (ytId) => {
+        if (ytId && !seen.has(ytId)) {
+            seen.add(ytId);
+            matches.push(`https://youtu.be/${ytId}`);
+        }
+    };
+
+    const videoWrappers = [...(html || '').matchAll(/<div[^>]*class="[^"]*video[^"]*"[^>]*data-metadata=(['"])([\s\S]*?)\1[^>]*>/gi)];
     videoWrappers.forEach(match => {
         const rawJson = decodeHtmlEntities(match[2]);
         try {
@@ -358,12 +366,20 @@ function extractYouTubeUrls(html) {
             const streamStr = parsed.streams || "";
             const ytIdMatch = streamStr.match(/1\.00:([A-Za-z0-9_-]+)/);
             if (ytIdMatch) {
-                matches.push(`https://youtu.be/${ytIdMatch[1]}`);
+                addUrl(ytIdMatch[1]);
+            } else if (parsed.youtube_id_1_0) {
+                addUrl(parsed.youtube_id_1_0);
             }
         } catch (e) {
             // Unparsed
         }
     });
+
+    if (matches.length === 0) {
+        const iframeMatches = [...(html || '').matchAll(/(?:youtube\.com\/(?:embed\/|v\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/gi)];
+        iframeMatches.forEach(m => addUrl(m[1]));
+    }
+
     return matches;
 }
 
@@ -451,7 +467,7 @@ async function processOneCourse(course) {
         return null;
     }
 
-    const chaptersData = {};
+    const unitResults = new Array(units.length);
 
     let cursor = 0;
     const worker = async () => {
@@ -460,12 +476,13 @@ async function processOneCourse(course) {
             const idx = cursor++;
             const unitObj = units[idx];
 
-            const chapKey = unitObj.chapterTitle || "General Core";
-            if (!chaptersData[chapKey]) {
-                chaptersData[chapKey] = { texts: [], transcripts: [], videos: [], questions: [] };
-            }
+            const unitStore = { texts: [], transcripts: [], videos: [], questions: [] };
+            await processUnit(course, unitObj, unitStore);
 
-            await processUnit(course, unitObj, chaptersData[chapKey]);
+            unitResults[idx] = {
+                unitObj,
+                data: unitStore
+            };
 
             // Increment overall state stats
             state.stats.completed++;
@@ -479,6 +496,48 @@ async function processOneCourse(course) {
         workers.push(worker());
     }
     await Promise.all(workers);
+
+    if (state.stopRequested) return null;
+
+    // Assemble chaptersData in exact course outline order
+    const chaptersData = {};
+
+    for (let i = 0; i < units.length; i++) {
+        const res = unitResults[i];
+        if (!res || !res.data) continue;
+
+        const chapKey = res.unitObj.chapterTitle || "General Core";
+        if (!chaptersData[chapKey]) {
+            chaptersData[chapKey] = { texts: [], transcripts: [], videos: [], questions: [] };
+        }
+
+        const chapStore = chaptersData[chapKey];
+        const data = res.data;
+
+        if (data.texts && data.texts.length > 0) {
+            chapStore.texts.push(...data.texts);
+        }
+
+        if (data.transcripts && data.transcripts.length > 0) {
+            for (const t of data.transcripts) {
+                if (!chapStore.transcripts.some(existing => existing.url === t.url)) {
+                    chapStore.transcripts.push(t);
+                }
+            }
+        }
+
+        if (data.videos && data.videos.length > 0) {
+            for (const url of data.videos) {
+                if (!chapStore.videos.includes(url)) {
+                    chapStore.videos.push(url);
+                }
+            }
+        }
+
+        if (data.questions && data.questions.length > 0) {
+            chapStore.questions.push(...data.questions);
+        }
+    }
 
     return {
         courseName: course.name,
