@@ -494,3 +494,793 @@ $$\text{Pearson Correlation: } r_{xy} = \frac{s_{xy}}{s_x \cdot s_y}$$
 * Chi-squared GOF test requires expected frequencies $E_i \ge 5$ in every bin.
 * $r_{xy} = 0$ indicates the absence of a **linear** relationship, **not** the absence of any relationship (non-linear associations can yield $r_{xy} = 0$).
 * **Correlation does not imply causation.** Always verify potential lurking/confounding variables before drawing business conclusions.
+
+## MODULE 1: Analysis of Variance (ANOVA), Goodness of Fit, and Covariance/Correlation
+
+---
+
+### One-Way Analysis of Variance (ANOVA) Overview
+
+**One-Way ANOVA** is a hypothesis testing procedure used to compare the means of $K \ge 2$ independent populations (or treatments) based on sample data using a single quantitative response variable $X$.
+
+```mermaid
+flowchart TD
+    A[Multiple Population Comparisons] --> B{Comparing Means of K >= 2 Groups?}
+    B -->|Yes| C[One-Way ANOVA]
+    C --> D[Null Hypothesis H0: mu1 = mu2 = ... = muK]
+    C --> E[Alternate HA: Not all means are equal]
+    C --> F[Partition Variance: SST = SSTr + SSE]
+    F --> G[Test Statistic: F = MSTr / MSE]
+```
+
+| Term / Notation | Definition / Description |
+|---|---|
+| **Factor Level / Treatment** | The specific population, group, or condition being compared ($K$ total levels) |
+| **Response Variable ($X$)** | The quantitative measurement collected from each sample |
+| **Sample Sizes** | $n_1, n_2, \dots, n_K$ (group sample sizes); $N_T = \sum_{i=1}^K n_i$ (total sample size) |
+| **Null Hypothesis ($H_0$)** | $H_0: \mu_1 = \mu_2 = \dots = \mu_K$ (All population means are equal) |
+| **Alternate Hypothesis ($H_A$)** | $H_A:$ Not all population means are equal (At least two means are different) |
+
+> **Q:** In One-Way ANOVA with $K$ populations, the alternate hypothesis $H_A$ states that all population means are different from each other = **FALSE** ✓ *(It states that **NOT** all means are equal; at least one pair is different)*
+> **Q:** Lower-tail and upper-tail test versions exist under ANOVA = **FALSE** ✓ *(ANOVA always uses an upper-tail $F$-test)*
+> **Q:** Why is a test comparing population means called "Analysis of Variance"? = **It determines differences between means by analyzing sample variances and their composition** ✓
+> **Q:** Each population being compared in an experiment is formally referred to as a **Treatment** ✓
+
+---
+
+### ANOVA Assumptions & Mathematical Formulas
+
+#### Assumptions of One-Way ANOVA
+1. **Normality:** For each population, the response variable $X$ is **normally distributed**.
+2. **Equal Variances (Homogeneity of Variance):** The variance of $X$, denoted by $\sigma^2$, is the **same for all populations**.
+3. **Independence:** Observations within and across sample groups are **independent**.
+
+#### Sum of Squares & Mean Squares Partitioning
+$$\text{SST} = \text{SSTr} + \text{SSE}$$
+
+| Source of Variation | Sum of Squares (SS) Formula | Degrees of Freedom (DF) | Mean Square (MS) Formula | Test Statistic ($F$) |
+|---|---|---|---|---|
+| **Between Treatments (SSTr)** | $\sum_{i=1}^K n_i (\bar{X}_i - \bar{X})^2$ | $K - 1$ | $\text{MSTr} = \frac{\text{SSTr}}{K - 1}$ | $F = \frac{\text{MSTr}}{\text{MSE}}$ |
+| **Within Groups / Error (SSE)** | $\sum_{i=1}^K \sum_{j=1}^{n_i} (X_{ij} - \bar{X}_i)^2$ | $N_T - K$ | $\text{MSE} = \frac{\text{SSE}}{N_T - K}$ | — |
+| **Total Variation (SST)** | $\sum_{i=1}^K \sum_{j=1}^{n_i} (X_{ij} - \bar{X})^2$ | $N_T - 1$ | — | — |
+
+where $\bar{X}_i$ is the sample mean of group $i$, and $\bar{X}$ is the overall (grand) mean across all $N_T$ data points.
+
+#### Properties of Estimates & Test Statistic
+- **MSE** is **always** an unbiased estimate of population variance $\sigma^2$, regardless of whether $H_0$ is true.
+- **MSTr** is an unbiased estimate of $\sigma^2$ **only when $H_0$ is true**. If $H_0$ is false, MSTr **overestimates** $\sigma^2$.
+- When $H_0$ is true, the ratio $F = \frac{\text{MSTr}}{\text{MSE}}$ follows an $F$-distribution with $K - 1$ numerator degrees of freedom and $N_T - K$ denominator degrees of freedom.
+- **Decision Rule:** Reject $H_0$ if $F > F_{\alpha, K-1, N_T-K}$ or $p\text{-value} \le \alpha$.
+
+> **Q:** Under ANOVA, which quantity is **ALWAYS** an unbiased estimator of population variance $\sigma^2$? = **MSE** ✓
+> **Q:** When the null hypothesis $H_0$ is false, MSTr will **overestimate** the population variance $\sigma^2$ ✓
+> **Q:** The numerator degrees of freedom for the ANOVA $F$-test is **$K - 1$** ✓
+> **Q:** The denominator degrees of freedom for the ANOVA $F$-test is **$N_T - K$** ✓
+
+---
+
+### ANOVA Numerical Problem Solving & Case Studies
+
+**Q1 (Palnadu District Investment Study):** Srinivas Rao compares average investment amounts across 3 age groups ($K=3$): Young ($n_1=4, \bar{X}_1=60$), Middle ($n_2=5, \bar{X}_2=57.2$), Senior ($n_3=6, \bar{X}_3=54.8$). Total sample size $N_T = 15$. Grand mean $\bar{X} = 57$. Given $\text{SST} = 132$ and $\text{SSTr} = 64.37$, test $H_0: \mu_1 = \mu_2 = \mu_3$ at $\alpha = 0.05$.
+
+> *Why: One-way ANOVA applies because we are comparing means of $K=3$ independent populations.*
+> $\text{SSE} = \text{SST} - \text{SSTr} = 132 - 64.37 = 67.63$
+> $\text{DF}_{\text{treatment}} = K - 1 = 3 - 1 = 2$
+> $\text{DF}_{\text{error}} = N_T - K = 15 - 3 = 12$
+> $\text{MSTr} = \frac{64.37}{2} = 32.18$
+> $\text{MSE} = \frac{67.63}{12} = 5.64$
+> $F = \frac{32.18}{5.64} = 5.71$
+> 📋 **F-Distribution Table:** Lookup $F_{0.05, 2, 12} \rightarrow 3.88$ (or $p\text{-value} = 0.018$)
+> Since $F = 5.71 > 3.88$ ($p = 0.018 \le 0.05$), reject $H_0$.
+> **Answer = Reject $H_0$; average investments across the 3 age groups are NOT all equal** ✓
+> *(Sample means alone are not conclusive; within-group variance puts differences in X-bar in context)*
+
+---
+
+**Q2 (Bapatla District Investment Study):** In Bapatla district, $K=3, N_T=15$ ($n_1=4, n_2=5, n_3=6$). Sample means are $\bar{X}_1=41, \bar{X}_2=42, \bar{X}_3=41.67$. Sample standard deviations are high ($S_1=24.08, S_2=21.12, S_3=18.61$). Given $\text{SST} = 5257.6$, $\text{SSTr} = 2.27$, and $\text{SSE} = 5255$, conduct the test at $\alpha = 0.05$.
+
+> *Why: High within-group variability reduces the ability to distinguish differences between population means.*
+> $\text{DF}_{\text{treatment}} = 2, \quad \text{DF}_{\text{error}} = 12$
+> $\text{MSTr} = \frac{2.27}{2} = 1.13$
+> $\text{MSE} = \frac{5255}{12} = 438$
+> $F = \frac{1.13}{438} = 0.0026 \approx 0$
+> 📋 **F-Distribution Table:** Lookup $F_{0.05, 2, 12} \rightarrow 3.88$ ($p\text{-value} = 0.997$)
+> Since $F = 0.0026 < 3.88$ ($p = 0.997 > 0.05$), do not reject $H_0$.
+> **Answer = Do NOT reject $H_0$; insufficient evidence to claim mean investment levels differ** ✓
+> *(High internal variance causes MSE to dwarf MSTr, driving F statistic close to zero)*
+
+---
+
+**Q3 (NTR District Investment Study):** In NTR district, $K=3, N_T=15$ ($n_1=4, n_2=5, n_3=6$). Sample means are $\bar{X}_1=60, \bar{X}_2=37.2, \bar{X}_3=20$. Sample standard deviations are small ($S_1=2.31, S_2=2.28, S_3=2.31$). Given $\text{SST} = 3345.6$, $\text{SSTr} = 3287$, and $\text{SSE} = 58.8$, test at $\alpha = 0.05$.
+
+> *Why: Large separation between group means combined with low within-group variability produces a massive F-statistic.*
+> $\text{MSTr} = \frac{3287}{2} = 1643.5$
+> $\text{MSE} = \frac{58.8}{12} = 4.9$
+> $F = \frac{1643.5}{4.9} = 335.4$
+> 📋 **F-Distribution Table:** Lookup $F_{0.05, 2, 12} \rightarrow 3.88$ ($p\text{-value} \approx 0.000$)
+> Since $F = 335.4 > 3.88$, reject $H_0$.
+> **Answer = Reject $H_0$; strong evidence that population means are significantly different** ✓
+
+---
+
+**Q4 (Kia Transmission Assembly Methods):** Lakshmamma tests $K=4$ assembly methods with $N_T=34$ ($n_1=8, n_2=11, n_3=9, n_4=6$). Overall mean $\bar{X}=107.2$. Sample means: $\bar{X}_1=117, \bar{X}_2=100, \bar{X}_3=102.6, \bar{X}_4=114.2$. Given $\text{SST} = 11588$, $\text{SSTr} = 1800.3$, and $\text{SSE} = 9787.7$, test at $\alpha = 0.05$.
+
+> *Why: Evaluating performance across 4 assembly method treatments using One-Way ANOVA.*
+> $\text{DF}_{\text{treatment}} = 4 - 1 = 3$
+> $\text{DF}_{\text{error}} = 34 - 4 = 30$
+> $\text{MSTr} = \frac{1800.3}{3} = 600.1$
+> $\text{MSE} = \frac{9787.7}{30} = 326.3$
+> $F = \frac{600.1}{326.3} = 1.84$
+> 📋 **F-Distribution Table:** Lookup $F_{0.05, 3, 30} \rightarrow 2.92$
+> Since $F = 1.84 < 2.92$, do not reject $H_0$.
+> **Answer = Do NOT reject $H_0$; assembly method differences are NOT statistically significant** ✓
+> *(Never rush to claim a superior process based solely on sample means without hypothesis testing)*
+
+---
+
+**Q5 (Vijayawada Biryani Meal Prices):** Sujata tests meal prices across $K=3$ restaurant locations: Shopping ($n_1=13, \bar{X}_1=390.7$), Office ($n_2=9, \bar{X}_2=393.3$), Station ($n_3=8, \bar{X}_3=460$). $N_T = 30$, $\bar{X} = 410$. Given $\text{SST} = 172600$, $\text{SSTr} = 27307$, and $\text{SSE} = 145293$, conduct ANOVA at $\alpha = 0.05$.
+
+> *Why: Testing location effect on average price across 3 areas.*
+> $\text{DF}_{\text{treatment}} = 3 - 1 = 2, \quad \text{DF}_{\text{error}} = 30 - 3 = 27$
+> $\text{MSTr} = \frac{27307}{2} = 13653.5$
+> $\text{MSE} = \frac{145293}{27} = 5381.2$
+> $F = \frac{13653.5}{5381.2} = 2.54$
+> 📋 **F-Distribution Table:** Lookup $F_{0.05, 2, 27} \rightarrow 3.35$
+> Since $F = 2.54 < 3.35$, do not reject $H_0$.
+> **Answer = Do NOT reject $H_0$; price differences are not statistically significant** ✓
+> *(Although Station mean was high, small $n_3=8$ and high internal variance prevented rejection)*
+
+---
+
+**Q6 (Audit Team Composition Study):** Ram tests audit completion days across $K=3$ team types: Local ($n_1=7, \bar{X}_1=25.3$), Corporate ($n_2=6, \bar{X}_2=20.8$), Both ($n_3=7, \bar{X}_3=17$). $N_T = 20$, $\bar{X} = 21.05$. Given $\text{SST} = 324.95$, $\text{SSTr} = 240.6$, and $\text{SSE} = 84.3$, test at $\alpha = 0.05$.
+
+> *Why: Testing team structure effect on audit completion time.*
+> $\text{DF}_{\text{treatment}} = 2, \quad \text{DF}_{\text{error}} = 20 - 3 = 17$
+> $\text{MSTr} = \frac{240.6}{2} = 120.3$
+> $\text{MSE} = \frac{84.3}{17} = 4.96 \approx 4.9$
+> $F = \frac{120.3}{4.9} = 24.55 \quad (\text{or } 24.3)$
+> 📋 **F-Distribution Table:** Lookup $F_{0.05, 2, 17} \rightarrow 3.59$
+> Since $F = 24.3 > 3.59$, reject $H_0$.
+> **Answer = Reject $H_0$; audit completion times differ significantly by team composition** ✓
+
+---
+
+### Post-Hoc Analysis in ANOVA
+
+When $H_0$ is rejected in ANOVA, **Post-Hoc Analysis** is performed to determine *which* specific population means differ from each other.
+
+- **Method:** Pairwise comparisons (e.g., conducting One-Way ANOVA on two groups at a time).
+- **Palnadu Post-Hoc Results Summary ($\alpha = 0.05$):**
+  - **Young ($\mu_1$) vs. Middle ($\mu_2$):** $F = 3.96, p = 0.09 \implies$ Do **NOT** reject ($\mu_1$ and $\mu_2$ could be equal).
+  - **Middle ($\mu_2$) vs. Senior ($\mu_3$):** $p = 0.16 \implies$ Do **NOT** reject ($\mu_2$ and $\mu_3$ could be equal).
+  - **Young ($\mu_1$) vs. Senior ($\mu_3$):** $\text{MSTr} = 64.1, \text{MSE} = 5.86, p = 0.01 \implies$ **Reject $H_0$** ($\mu_1 \neq \mu_3$ significantly).
+
+> **Q:** What is the primary purpose of post-hoc analysis following an ANOVA test? = **To identify which specific treatment means are significantly different after rejecting $H_0$** ✓
+
+---
+
+### Goodness-of-Fit (GOF) Tests
+
+**Goodness-of-Fit (GOF) Test** uses a Chi-Square ($\chi^2$) test statistic to determine whether observed sample data conforms to a hypothesized historical or theoretical probability distribution.
+
+```mermaid
+flowchart TD
+    A[Goodness of Fit Test] --> B[Define K Categories / Intervals]
+    B --> C[Compute Observed Frequencies Oi]
+    B --> D[Compute Expected Frequencies Ei]
+    C & D --> E{Rule Check: All Ei >= 5?}
+    E -->|No| F[Combine adjacent bins/categories]
+    E -->|Yes| G["Compute Test Stat: Chi2 = Sum( (Oi - Ei)^2 / Ei )"]
+    G --> H[DF = K - 1]
+    H --> I[Upper-tail test against Chi2 Critical Value]
+```
+
+#### Key Rules & Test Statistic
+$$\chi^2 = \sum_{i=1}^K \frac{(O_i - E_i)^2}{E_i}$$
+
+- **Always an Upper-Tail Test:** Any discrepancy between observed ($O_i$) and expected ($E_i$) frequencies inflates $\chi^2$.
+- **Degrees of Freedom:** $\text{DF} = K - 1$ ($K = \text{number of categories/bins}$).
+- **Rule of Thumb:** Expected frequency in each bin/category **MUST** be at least 5 ($E_i \ge 5$). Sample observed values $O_i$ have **NO** such restriction.
+
+> **Q:** Chi-square goodness-of-fit tests are always upper-tail tests = **TRUE** ✓
+> **Q:** The restriction $E_i \ge 5$ in a Chi-square test applies to observed frequencies $O_i$ = **FALSE** ✓ *(It applies strictly to expected frequencies $E_i$)*
+> **Q:** What happens to the $\chi^2$ statistic if observed frequencies perfectly match expected frequencies? = **$\chi^2 = 0$** ✓
+
+---
+
+### GOF Applications: Multinomial, Binomial, Normal, and Exponential Distributions
+
+| Distribution Type | Categorization Method | Expected Frequency Formula ($E_i$) | Degrees of Freedom ($\text{DF}$) |
+|---|---|---|---|
+| **Multinomial (Discrete)** | Historical categories ($K$) | $E_i = n \cdot p_i$ | $K - 1$ |
+| **Binomial (Discrete)** | Bins for success counts $X = 0, 1, \dots, n_{trials}$ | $E_i = N_{samples} \cdot \binom{n}{x} p^x (1-p)^{n-x}$ | $K - 1$ |
+| **Normal (Continuous)** | $k$ equal-probability demand intervals | $E_i = N_{samples} \cdot P(\text{Interval}) = \frac{N}{k}$ | $k - 1$ |
+| **Exponential (Continuous)** | $k$ equal-probability time intervals using CDF $F(x) = 1 - e^{-\lambda x}$ | $E_i = N_{samples} \cdot P(\text{Interval}) = \frac{N}{k}$ | $k - 1$ |
+
+#### GOF Numerical Case Studies
+
+**Q7 (TV Viewership - Subba Rao):** Survey of $N=600$ households across $K=4$ channels. Historical probabilities: ETV ($0.29$), Zee ($0.28$), Star Maa ($0.25$), Gemini ($0.18$). Observed counts: $O = [195, 170, 189, 46]$. Test if historical distribution still holds at $\alpha = 0.05$.
+
+> *Why: Goodness-of-fit for a multinomial discrete distribution with known historical probabilities.*
+> $E_1 = 600(0.29) = 174, \quad E_2 = 600(0.28) = 168, \quad E_3 = 600(0.25) = 150, \quad E_4 = 600(0.18) = 108$
+> $\chi^2 = \frac{(195-174)^2}{174} + \frac{(170-168)^2}{168} + \frac{(189-150)^2}{150} + \frac{(46-108)^2}{108}$
+> $\chi^2 = 2.53 + 0.02 + 10.14 + 35.59 = 48.29$
+> $\text{DF} = 4 - 1 = 3$
+> 📋 **Chi-Square Table:** Lookup $\chi^2_{0.05, 3} \rightarrow 7.81$
+> Since $\chi^2 = 48.29 > 7.81$, reject $H_0$.
+> **Answer = Reject $H_0$; viewership percentages have changed significantly** ✓
+
+---
+
+**Q8 (TV Viewership - Revised Hypothesis):** Same $N=600$ and $O = [195, 170, 189, 46]$, test $H_0: p_A=0.3, p_B=0.3, p_C=0.3, p_D=0.1$ at $\alpha = 0.05$.
+
+> *Why: Testing a new candidate multinomial distribution.*
+> $E_1 = 180, \quad E_2 = 180, \quad E_3 = 180, \quad E_4 = 60$
+> $\chi^2 = \frac{(195-180)^2}{180} + \frac{(170-180)^2}{180} + \frac{(189-180)^2}{180} + \frac{(46-60)^2}{60} = 1.25 + 0.56 + 0.45 + 3.27 = 5.52$
+> 📋 **Chi-Square Table:** Lookup $\chi^2_{0.05, 3} \rightarrow 7.81$ ($p\text{-value} = 0.14$)
+> Since $\chi^2 = 5.52 < 7.81$, do not reject $H_0$.
+> **Answer = Do NOT reject $H_0$; population could follow the revised distribution** ✓
+
+---
+
+**Q9 (Eye Surgeries - Dr. Srinivasan):** Sample of $N=365$ days, each day $n=6$ surgeries. Test if daily child surgeries follow $\text{Binomial}(n=6, p=0.5)$ at $\alpha = 0.05$. Bins $X=0,1,2,3,4,5,6$ ($K=7$).
+Observed counts $O = [3, 25, 92, 105, 93, 39, 8]$.
+
+> *Why: Binomial goodness-of-fit test across $K=7$ outcome bins.*
+> $E_0 = 365 \cdot \binom{6}{0}(0.5)^6 = 5.7, \quad E_1 = 365 \cdot \binom{6}{1}(0.5)^6 = 34.2, \quad E_2 = 85.5, \quad E_3 = 114.4, \quad E_4 = 85.5, \quad E_5 = 34.2, \quad E_6 = 5.7$
+> $\chi^2 = \frac{(3-5.7)^2}{5.7} + \frac{(25-34.2)^2}{34.2} + \frac{(92-85.5)^2}{85.5} + \frac{(105-114.4)^2}{114.4} + \frac{(93-85.5)^2}{85.5} + \frac{(39-34.2)^2}{34.2} + \frac{(8-5.7)^2}{5.7}$
+> $\chi^2 = 1.28 + 2.48 + 0.49 + 0.72 + 0.65 + 0.67 + 0.93 = 7.21$
+> $\text{DF} = 7 - 1 = 6$
+> 📋 **Chi-Square Table:** Lookup $\chi^2_{0.05, 6} \rightarrow 12.59$
+> Since $\chi^2 = 7.21 < 12.59$, do not reject $H_0$.
+> **Answer = Do NOT reject $H_0$; child surgeries follow a Binomial distribution with $p=0.5$** ✓
+
+---
+
+**Q10 (Khaja Demand - Venkatesh Babu):** Sample of $N=25$ days. Test $H_0: X \sim \text{Normal}(\mu=70, \sigma=20)$ at $\alpha = 0.05$. Divide normal distribution into $k=5$ equal probability intervals ($P=0.20$ each $\implies E_i = 25 \times 0.20 = 5$).
+Z-cutoffs for probabilities $0.2, 0.4, 0.6, 0.8$: $Z = -0.842, -0.253, +0.253, +0.842$.
+Demand cutoffs ($X = 70 + 20Z$): $53.17, 64.93, 75.07, 86.83$.
+Observed counts in 5 intervals: $O = [4, 8, 8, 2, 3]$.
+
+> *Why: Normal distribution GOF using equal probability intervals.*
+> $\chi^2 = \frac{(4-5)^2}{5} + \frac{(8-5)^2}{5} + \frac{(8-5)^2}{5} + \frac{(2-5)^2}{5} + \frac{(3-5)^2}{5} = 0.2 + 1.8 + 1.8 + 1.8 + 0.8 = 6.4$
+> $\text{DF} = 5 - 1 = 4$
+> 📋 **Chi-Square Table:** Lookup $\chi^2_{0.05, 4} \rightarrow 9.48$
+> Since $\chi^2 = 6.4 < 9.48$, do not reject $H_0$.
+> **Answer = Do NOT reject $H_0$; demand data is consistent with Normal(70, 20)** ✓
+
+---
+
+**Q11 (Call Center Duration - Madhavi):** Sample of $N=50$ calls. Test $H_0: X \sim \text{Exponential}(\text{mean}=6 \text{ min} \implies \lambda = 1/6)$ at $\alpha = 0.05$.
+Construct $k=10$ equal probability intervals ($P=0.10$ each $\implies E_i = 50 \times 0.10 = 5$).
+Formula for cutoff $x$: $1 - e^{-x/6} = P \implies x = -6 \ln(1 - P)$.
+Cutoffs: $0.632, 1.34, 2.14, 3.06, 4.16, 5.50, 7.22, 9.66, 13.82$.
+Observed counts in 10 intervals: $O = [4, 1, 3, 4, 5, 5, 8, 5, 7, 8]$.
+
+> *Why: Exponential GOF using inverse CDF cutoffs.*
+> $\chi^2 = \frac{(4-5)^2}{5} + \frac{(1-5)^2}{5} + \frac{(3-5)^2}{5} + \frac{(4-5)^2}{5} + \frac{(5-5)^2}{5} + \frac{(5-5)^2}{5} + \frac{(8-5)^2}{5} + \frac{(5-5)^2}{5} + \frac{(7-5)^2}{5} + \frac{(8-5)^2}{5}$
+> $\chi^2 = 0.2 + 3.2 + 0.8 + 0.2 + 0 + 0 + 1.8 + 0 + 0.8 + 1.8 = 8.8$
+> $\text{DF} = 10 - 1 = 9$
+> 📋 **Chi-Square Table:** Lookup $\chi^2_{0.05, 9} \rightarrow 16.92$
+> Since $\chi^2 = 8.8 < 16.92$, do not reject $H_0$.
+> **Answer = Do NOT reject $H_0$; call durations are consistent with Exponential(mean=6)** ✓
+
+---
+
+### Covariance and Correlation
+
+#### Sample Covariance ($s_{xy}$)
+$$\text{Sample Covariance } s_{xy} = \frac{\sum_{i=1}^n (x_i - \bar{x})(y_i - \bar{y})}{n - 1}$$
+
+- **Excel Function:** `=COVARIANCE.S(Array1, Array2)`
+- Measures direction of linear association between two variables.
+- **Quadrant Interpretation:**
+  - $s_{xy} > 0$: Points in Quadrants 1 & 3 dominate $\implies$ positive association ($x \uparrow, y \uparrow$).
+  - $s_{xy} < 0$: Points in Quadrants 2 & 4 dominate $\implies$ negative association ($x \uparrow, y \downarrow$).
+  - $s_{xy} \approx 0$: Points evenly scattered across all 4 quadrants.
+- **Special Case:** Covariance of $x$ with itself is the sample variance: $s_{xx} = s_x^2$.
+- **Major Limitation:** Value depends on units of measurement (scale-dependent).
+
+#### Sample Correlation Coefficient ($r_{xy}$)
+$$\text{Pearson Correlation Coefficient } r_{xy} = \frac{s_{xy}}{s_x s_y}$$
+
+- **Excel Function:** `=CORREL(Array1, Array2)`
+- **Scale-Free:** Unitless measure bounded by $-1 \le r_{xy} \le +1$.
+- **Interpretation:**
+  - $r_{xy} = +1$: Perfect positive linear relationship.
+  - $r_{xy} = -1$: Perfect negative linear relationship.
+  - $r_{xy} = 0$: **NO linear association** present.
+
+```mermaid
+xychart-beta
+    title "Linear Association vs Correlation r"
+    x-axis "Independent Variable X" [1, 2, 3, 4, 5, 6, 7, 8]
+    y-axis "Dependent Variable Y" 0 --> 10
+    line [2, 3, 4, 5, 6, 7, 8, 9]
+```
+
+#### Critical Concepts & Pitfalls
+1. **Linearity Only:** $r_{xy} = 0$ does **NOT** mean no relationship exists; a strong **non-linear** relationship may exist!
+   *(Example: $y = 1/x^2$ with symmetric $x = [-3, -2, -1, 1, 2, 3] \implies s_{xy} = 0, r_{xy} = 0$ despite perfect functional association).*
+2. **Correlation $\neq$ Causation:** High correlation does not imply a cause-and-effect relationship.
+3. **Explainable vs. Spurious Correlation:**
+   - **Explainable Correlation:** Logical causal/indirect link exists.
+   - **Spurious Correlation:** Artificial correlation driven by an unobserved **hidden/latent variable** or sheer coincidence.
+     - *Ice cream sales vs. Crime rate:* Driven by latent variable **Temperature**.
+     - *Doctors in villages vs. Village deaths:* Driven by overall **Poor Public Health**.
+     - *Maine Divorce rate vs. Margarine consumption ($r = 0.99$):* Purely coincidence.
+     - *Skirt length vs. Economic performance:* Hemline theory.
+
+> **Q:** The covariance between variable $x$ and itself equals the **Sample Variance $s_x^2$** ✓
+> **Q:** A sample correlation coefficient $r_{xy} = 0$ proves that there is no relationship between $x$ and $y$ = **FALSE** ✓ *(It only proves no **linear** relationship; a non-linear relationship may exist)*
+> **Q:** Which Excel function calculates the sample covariance? = **`=COVARIANCE.S`** ✓
+> **Q:** Correlation coefficient depends on the units of measurement of $x$ and $y$ = **FALSE** ✓ *(It is unitless/scale-free)*
+> **Q:** What causes the spurious correlation between ice cream sales and crime rate? = **A hidden/latent variable (Temperature)** ✓
+
+---
+
+## Quick Reference: Summary Table
+
+| Technique | Primary Purpose | Test Statistic | Key Parameters / DF | Rejection Condition |
+|---|---|---|---|---|
+| **One-Way ANOVA** | Compare means of $K \ge 2$ populations | $F = \frac{\text{MSTr}}{\text{MSE}}$ | $\text{DF}_1 = K - 1, \quad \text{DF}_2 = N_T - K$ | $F > F_{\alpha}$ or $p \le \alpha$ |
+| **Multinomial GOF** | Test fit to historical categorical probabilities | $\chi^2 = \sum \frac{(O - E)^2}{E}$ | $\text{DF} = K - 1$ | $\chi^2 > \chi^2_{\alpha}$ or $p \le \alpha$ |
+| **Binomial GOF** | Test fit to Binomial counts | $\chi^2 = \sum \frac{(O - E)^2}{E}$ | $\text{DF} = K - 1$ | $\chi^2 > \chi^2_{\alpha}$ or $p \le \alpha$ |
+| **Normal GOF** | Test fit to Normal distribution | $\chi^2 = \sum \frac{(O - E)^2}{E}$ | $\text{DF} = k - 1$ ($k$ equal probability intervals) | $\chi^2 > \chi^2_{\alpha}$ or $p \le \alpha$ |
+| **Exponential GOF** | Test fit to Exponential distribution | $\chi^2 = \sum \frac{(O - E)^2}{E}$ | $\text{DF} = k - 1$ ($k$ equal probability intervals) | $\chi^2 > \chi^2_{\alpha}$ or $p \le \alpha$ |
+| **Covariance** | Direction of linear association | $s_{xy} = \frac{\sum (x-\bar{x})(y-\bar{y})}{n-1}$ | Scale-dependent | N/A |
+| **Correlation** | Strength & direction of linear relationship | $r_{xy} = \frac{s_{xy}}{s_x s_y}$ | Bounded $[-1, +1]$ | Tested using $t$-distribution |
+
+---
+
+## Key Decision Rules Summary
+
+| Rule Name | Operational Rule / Formula |
+|---|---|
+| **ANOVA $H_0$ Statement** | Always set as $H_0: \mu_1 = \mu_2 = \dots = \mu_K$ |
+| **ANOVA $H_A$ Statement** | Always set as $H_A:$ Not all means are equal (at least one pair differs) |
+| **Sum of Squares Total Identity** | $\text{SST} = \text{SSTr} + \text{SSE}$ holds universally |
+| **Unbiased Variance Estimates** | MSE is **ALWAYS** unbiased; MSTr is unbiased **ONLY IF $H_0$ IS TRUE** |
+| **ANOVA Test Direction** | ANOVA $F$-test is strictly an **upper-tail** test |
+| **GOF Bin Size Rule** | Expected frequency $E_i \ge 5$ for all categories; sample $O_i$ has no minimum limit |
+| **GOF Test Direction** | Chi-Square Goodness-of-Fit is strictly an **upper-tail** test |
+| **Correlation Range** | Pearson correlation $r_{xy}$ satisfies $-1 \le r_{xy} \le +1$ |
+| **Correlation vs. Causation** | High correlation $r \approx 1$ does **NOT** imply $x$ causes $y$ |
+
+
+# Module 2: Simple Linear Regression
+
+## 2.1 Model Building
+
+### 2.1.1 Introduction to Simple Linear Regression
+
+#### Definition, Purpose, and Historical Context
+* **Simple Linear Regression (SLR)**: A supervised learning statistical technique used to model and quantify the linear relationship between a single quantitative dependent variable ($Y$) and a single quantitative independent variable ($X$).
+* **Primary Purposes**:
+  1. **Description / Inference**: Explaining how changes in the independent variable are associated with changes in the dependent variable.
+  2. **Prediction / Estimation**: Predicting individual values of $Y$ or estimating the conditional expected value $E(Y|X)$ for a given value of $X$.
+* **Historical Origins**:
+  * First conceptualized by **Sir Francis Galton** while studying height transmission from parents to adult offspring (analyzing $905$ adult children across $205$ families).
+  * Galton adjusted female heights by multiplying by $1.08$ to obtain male equivalents.
+  * Observed that taller parents had children who were shorter than them on average, and shorter parents had children who were taller than them on average—coining the term **regression** as heights "regressed towards the mean" of the population.
+
+#### Dependent vs. Independent Variables
+
+| Term | Alternative Names | Role in Model | Example |
+| :--- | :--- | :--- | :--- |
+| **Dependent Variable ($Y$)** | Response, Outcome, Target Variable | Continuous numeric variable being predicted or explained | Credit Card Spend ($\text{\textrupee}$), Maintenance Cost ($\text{\textrupee}$ lakhs), Debt ($\text{\textrupee}$) |
+| **Independent Variable ($X$)** | Predictor, Explanatory Variable, Feature | Variable used to explain or predict the variation in $Y$ | Annual Income ($\text{\textrupee}$ lakhs), Bus Age (years), Monthly Payment ($\text{\textrupee}$) |
+
+#### Functional Form and Parameters
+* **Population Regression Model**:
+
+$$Y_i = \beta_0 + \beta_1 X_i + \epsilon_i \quad (i = 1, 2, \dots, n)$$
+
+  * $\beta_0$: Population $Y$-intercept parameter.
+  * $\beta_1$: Population slope parameter (marginal change in $Y$ per unit change in $X$).
+  * $\epsilon_i$: Random error term (residual or unexplained variation).
+* **Population Regression Equation (Conditional Expectation)**:
+  * Taking the expected value removes the error term ($E(\epsilon_i) = 0$):
+
+$$E(Y_i | X_i) = \beta_0 + \beta_1 X_i$$
+
+* **Estimated (Sample) Regression Equation**:
+  * Using sample estimators $b_0$ (or $B_0$) for $\beta_0$ and $b_1$ (or $B_1$) for $\beta_1$:
+
+$$\hat{Y}_i = b_0 + b_1 X_i$$
+
+  * $\hat{Y}_i$: Predicted value of $Y_i$ or point estimator of $E(Y_i | X_i)$.
+
+#### Linearity Condition with Respect to Parameters
+* The linearity condition in linear regression requires the model to be **linear in the regression parameters ($\beta_0, \beta_1$)**, **not** necessarily linear in the independent variable ($X$).
+
+| Model Equation | Linear in Parameters ($\beta$)? | Linear Regression Model? |
+| :--- | :---: | :---: |
+| $Y_i = \beta_0 + \beta_1 X_i + \epsilon_i$ | Yes | **Yes** |
+| $Y_i = \beta_0 + \beta_1 X_i^2 + \epsilon_i$ | Yes | **Yes** (Polynomial / Quadratic feature) |
+| $Y_i = \beta_0 + \beta_1 \ln(X_i) + \epsilon_i$ | Yes | **Yes** (Logarithmic feature transformation) |
+| $Y_i = \beta_0 + e^{\beta_1 X_i} + \epsilon_i$ | No | **No** (Non-linear regression model) |
+
+---
+
+### 2.1.2 Stages of Building a Regression Model
+
+#### Nine-Step Framework for Model Development
+1. **Data Collection & Extraction**: Gathering primary data (surveys, interviews) or extracting secondary data (existing databases/logs).
+2. **Data Preprocessing**: Feature engineering (e.g., Galton's $1.08$ height adjustment factor), missing data handling, and outlier filtering.
+3. **Data Partitioning**: Splitting data into **Training Set** ($\approx 75\%$) for model estimation and **Validation Set** ($\approx 25\%$) for testing generalizability.
+4. **Descriptive Statistics & Visualization**: Generating summary statistics, box plots, and scatter plots on training data to discover preliminary trends.
+5. **Functional Form Specification**: Selecting the appropriate mathematical relationship (e.g., linear vs. polynomial vs. logarithmic).
+6. **Parameter Estimation**: Computing sample estimators $b_0$ and $b_1$ using Ordinary Least Squares (OLS).
+7. **Model Diagnostics**: Validating error term assumptions ($\epsilon_i$) and checking structural adequacy.
+8. **Model Validation**: Evaluating performance consistency on validation data to guard against **overfitting** (high performance on training data, poor performance on validation data).
+9. **Model Deployment**: Translating validated equations into actionable business decision rules.
+
+#### Supervised Learning and Data Partitioning
+* Linear regression is a **supervised learning algorithm** because model estimation requires known values of both predictor $X$ and target outcome $Y$ in the training set.
+* An ideal deployed model achieves **low bias** (accurate representation) and **low variance** (stable performance across different data samples).
+
+---
+
+### 2.1.3 Parameter Estimation using Ordinary Least Squares (OLS)
+
+#### Objective Criterion of OLS
+* **Ordinary Least Squares (OLS)** identifies estimators $b_0$ and $b_1$ by minimizing the Sum of Squared Residuals ($SSE$):
+
+$$\text{Minimize } SSE = \sum_{i=1}^n e_i^2 = \sum_{i=1}^n (Y_i - \hat{Y}_i)^2 = \sum_{i=1}^n \left(Y_i - (b_0 + b_1 X_i)\right)^2$$
+
+* Under standard regression assumptions (Gauss-Markov Theorem), OLS estimators provide the **Best Linear Unbiased Estimator (BLUE)**.
+
+#### Derivation and Formulas for Intercept ($b_0$) and Slope ($b_1$)
+Using partial differential calculus to set $\frac{\partial SSE}{\partial b_0} = 0$ and $\frac{\partial SSE}{\partial b_1} = 0$ yields the OLS normal equations:
+
+$$\text{Slope Estimator } (b_1) = \frac{\sum_{i=1}^n (X_i - \bar{X})(Y_i - \bar{Y})}{\sum_{i=1}^n (X_i - \bar{X})^2} = \frac{s_{xy}}{s_x^2}$$
+
+$$\text{Intercept Estimator } (b_0) = \bar{Y} - b_1 \bar{X}$$
+
+* Where $\bar{X} = \frac{\sum X_i}{n}$ and $\bar{Y} = \frac{\sum Y_i}{n}$ are sample means of $X$ and $Y$.
+
+#### Interpretation of Regression Coefficients and Extrapolation Warning
+* **Slope ($b_1$)**: Represents the estimated change in the mean of $Y$ associated with a 1-unit increase in $X$.
+* **Intercept ($b_0$)**: Represents the estimated mean value of $Y$ when $X = 0$.
+  * **Warning on Extrapolation**: $b_0$ and the fitted line are valid **only within the range of $X$ values in the training dataset**. Making predictions or interpreting $b_0$ outside this domain (e.g., predicting maintenance cost for a brand-new bus when training data contains ages $1$–$5$ years) can yield misleading results.
+
+---
+
+### 2.1.4 Goodness of Fit and Coefficient of Determination ($R^2$)
+
+#### Partitioning Total Variability ($SST = SSR + SSE$)
+Total variation in $Y$ relative to its mean $\bar{Y}$ partitions into two orthogonal components:
+
+$$SST = SSR + SSE$$
+
+$$\sum_{i=1}^n (Y_i - \bar{Y})^2 = \sum_{i=1}^n (\hat{Y}_i - \bar{Y})^2 + \sum_{i=1}^n (Y_i - \hat{Y}_i)^2$$
+
+| Sum of Squares Term | Formula | Meaning |
+| :--- | :--- | :--- |
+| **Total Sum of Squares ($SST$)** | $\sum_{i=1}^n (Y_i - \bar{Y})^2$ | Total variation of $Y_i$ around sample mean $\bar{Y}$ (baseline error without $X$). |
+| **Regression Sum of Squares ($SSR$)** | $\sum_{i=1}^n (\hat{Y}_i - \bar{Y})^2$ | Variation of $Y_i$ **explained** by the regression line. |
+| **Error Sum of Squares ($SSE$)** | $\sum_{i=1}^n (Y_i - \hat{Y}_i)^2$ | Residual variation **unexplained** by the model. |
+
+#### Definition and Mathematical Calculation of $R^2$
+* **Coefficient of Determination ($R^2$)**: The proportion of total variation in $Y$ explained by the linear model.
+
+$$R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$$
+
+* **Properties**:
+  * Range: $0 \le R^2 \le 1$ (or $0\%$ to $100\%$).
+  * $R^2 = 1 \implies SSE = 0$ (all data points fall perfectly on the regression line).
+  * $R^2 = 0 \implies SSR = 0$ (the regression line provides no explanatory power over $\bar{Y}$).
+
+#### Relationship Between $R^2$ and Correlation Coefficient ($r$)
+In Simple Linear Regression with one independent variable, $R^2$ is the square of the sample Pearson correlation coefficient $r_{xy}$:
+
+$$r_{xy} = \text{sign}(b_1) \cdot \sqrt{R^2}$$
+
+* While $r_{xy}$ is strictly limited to two quantitative variables in a linear relationship, $R^2$ generalizes to non-linear and multiple regression contexts.
+
+---
+
+## 2.2 Model Diagnostics
+
+### 2.2.1 Underlying Assumptions of Error Term ($\epsilon$)
+
+#### Four Core Model Assumptions
+Valid statistical inference ($t$-tests, $F$-tests, confidence intervals) requires four assumptions regarding the error terms $\epsilon_i$:
+
+| Assumption | Mathematical Statement | Meaning |
+| :--- | :--- | :--- |
+| **1. Zero Mean** | $E(\epsilon_i) = 0$ for all $X_i$ | On average, error offsets to zero; regression line represents conditional mean. |
+| **2. Homoscedasticity** | $Var(\epsilon_i) = \sigma^2$ for all $X_i$ | Constant variance of error terms across all levels of $X$. |
+| **3. Independence** | $Cov(\epsilon_i, \epsilon_j) = 0 \quad (i \neq j)$ | Error terms for distinct observations are un-correlated. |
+| **4. Normality** | $\epsilon_i \sim N(0, \sigma^2)$ | Error terms are normally distributed for all values of $X$. |
+
+#### Mathematical Model for Conditional Expectation and Normality
+* Combining these assumptions implies that the response variable $Y_i$ is an independent, normally distributed random variable with conditional mean $\beta_0 + \beta_1 X_i$ and constant variance $\sigma^2$:
+
+$$Y_i \sim N\left(\beta_0 + \beta_1 X_i, \, \sigma^2\right)$$
+
+---
+
+### 2.2.2 Hypothesis Testing for Model Significance
+
+To verify if a statistically significant linear relationship exists between $X$ and $Y$, we test whether the slope coefficient $\beta_1$ differs from zero.
+
+$$\text{Null Hypothesis } (H_0): \beta_1 = 0 \quad (\text{No linear relationship exists; } E(Y) = \beta_0)$$
+$$\text{Alternative Hypothesis } (H_A): \beta_1 \neq 0 \quad (\text{A statistically significant linear relationship exists})$$
+
+#### $t$-Test for Regression Slope ($\beta_1$)
+1. **Estimate of Error Variance ($\sigma^2$)**:
+   * Uses Mean Square Error ($MSE$), where $SSE$ has $df = n - 2$ (since two parameters $b_0, b_1$ are estimated):
+
+$$MSE = s^2 = \frac{SSE}{n - 2}$$
+
+   * Standard error of the regression model: $s = \sqrt{MSE}$.
+
+2. **Standard Error of Slope Estimator $b_1$**:
+
+$$SE(b_1) = \frac{s}{\sqrt{\sum_{i=1}^n (X_i - \bar{X})^2}}$$
+
+3. **$t$-Test Statistic**:
+
+$$t_{\text{calc}} = \frac{b_1 - 0}{SE(b_1)} \sim t_{n-2}$$
+
+4. **Decision Rule**:
+   * Reject $H_0$ if $|t_{\text{calc}}| \ge t_{\alpha/2, \, n-2}$ or $P\text{-value} \le \alpha$.
+
+#### $F$-Test for Overall Significance (ANOVA in SLR)
+1. **Mean Square Regression ($MSR$)**:
+
+$$MSR = \frac{SSR}{1} = SSR \quad (df = 1)$$
+
+2. **$F$-Test Statistic**:
+
+$$F_{\text{calc}} = \frac{MSR}{MSE} = \frac{SSR / 1}{SSE / (n - 2)} \sim F_{1, \, n-2}$$
+
+3. **Decision Rule**:
+   * Reject $H_0$ if $F_{\text{calc}} \ge F_{\alpha, \, 1, \, n-2}$ or $P\text{-value} \le \alpha$.
+
+#### Equivalence of $t$-Test and $F$-Test in Simple Linear Regression
+* In simple linear regression with a single predictor, the $t$-test and $F$-test are mathematically identical:
+
+$$F_{\text{calc}} = \left(t_{\text{calc}}\right)^2$$
+
+* Both yield identical $P$-values and reach identical conclusions. (In Multiple Regression, the $F$-test evaluates overall model significance, while individual $t$-tests evaluate partial slopes).
+
+---
+
+### 2.2.3 Residual Analysis and Validation
+
+#### Residual Definition and Properties
+* **Residual ($e_i$)**: Difference between observed outcome $Y_i$ and predicted value $\hat{Y}_i$:
+
+$$e_i = Y_i - \hat{Y}_i = Y_i - (b_0 + b_1 X_i)$$
+
+* **Properties**:
+  * Sum of OLS residuals equals zero: $\sum_{i=1}^n e_i = 0$.
+  * Mean of OLS residuals equals zero: $\bar{e} = 0$.
+
+#### Graphical Residual Plots ($e_i$ vs. $x$, $e_i$ vs. $\hat{y}$)
+Graphical inspection of residual plots validates whether regression assumptions hold:
+
+| Plot Pattern | Graphic Impression | Diagnostic Implication | Corrective Action |
+| :--- | :--- | :--- | :--- |
+| **Horizontal Band** | Points spread evenly around zero residual line | **Assumptions Valid**: Constant variance (homoscedasticity) and linear functional form. | None; model is valid. |
+| **Funnel / Wedge** | Spread of residuals increases or decreases as $X$ (or $\hat{Y}$) increases | **Heteroscedasticity**: Constant variance assumption violated ($Var(\epsilon_i) \neq \sigma^2$). | Apply log or square root transformations to $Y$. |
+| **U-Shape / Parabolic** | Residuals systematically cluster above zero, then below, then above | **Non-linear Functional Form**: Linear specification is inadequate. | Add quadratic term ($X^2$) or use non-linear/multiple regression. |
+| **Systematic Trend** | Residuals vs $\hat{Y}$ exhibit an inclined pattern | **Omitted Variable Bias**: Key explanatory variables are missing. | Include omitted predictors via Multiple Linear Regression. |
+
+#### Standardized Residuals and Outlier Detection
+* Standardizing residuals divides each residual by its estimated standard deviation ($s_e \approx s$):
+
+$$\text{Standardized Residual } (z_e)_i = \frac{e_i}{s_e}$$
+
+* **Normal Probability Property**: If $\epsilon_i \sim N(0, \sigma^2)$, approximately **$95\%$ of standardized residuals should lie within $[-2, +2]$**.
+
+---
+
+### 2.2.4 Outliers and Influential Observations
+
+#### Identification and Handling of Outliers
+* **Outliers**: Data observations with residual values that deviate substantially from the prevailing trend of the rest of the data.
+* **Detection Criterion**: Observations with standardized residuals outside $[-2, +2]$ (or strictly $|z_e| > 3$).
+* **Handling Protocol**:
+  1. Check for data entry or recording errors $\implies$ Correct data and rerun regression.
+  2. If data is valid but reflects model assumption violations $\implies$ Modify functional form.
+  3. If data is an extreme valid chance occurrence $\implies$ Evaluate whether to retain or omit.
+
+#### Detection and Impact of Influential Observations
+* **Influential Observations**: Observations that exert a strong pull on the estimated regression line. Removing an influential observation significantly alters $b_0$, $b_1$, and $R^2$.
+* **Causes**:
+  * Extreme $Y$-value (outlier in response space).
+  * Extreme $X$-value (high leverage in predictor space).
+  * Combination of moderately unusual $X$ and $Y$ values.
+* **Handling Protocol**:
+  * Verify data recording accuracy.
+  * Collect intermediate sample data in the missing range of $X$ to better establish the relationship.
+
+---
+
+## 2.3 Applications
+
+### 2.3.1 Credit Card Spend vs. Annual Income (Canara Bank Case)
+
+#### Problem Setup
+* **Context**: Hanumantha Pai (Canara Bank) analyzing $n=55$ customers.
+* **Dependent Variable ($Y$)**: Monthly Credit Card Spend ($\text{\textrupee}$).
+* **Independent Variable ($X$)**: Annual Household Income ($\text{\textrupee}$ lakhs).
+* **Summary Stats**: $\bar{X} = 32.89$ lakhs, $\bar{Y} = \text{\textrupee} 3852$.
+
+#### Parameter Calculations & OLS Equation
+
+$$b_1 = \frac{\sum (X_i - \bar{X})(Y_i - \bar{Y})}{\sum (X_i - \bar{X})^2} = 85.27, \quad b_0 = \bar{Y} - b_1 \bar{X} = 3852 - (85.27)(32.89) = 1047.37$$
+
+$$\hat{Y} = 1047.37 + 85.27 X$$
+
+* **Slope Interpretation**: For every $1$ lakh increase in annual income, monthly credit card spend increases by $\text{\textrupee} 85.27$.
+* **Prediction Example**: For a customer with income $X = 35$ lakhs:
+
+$$\hat{Y} = 1047.37 + 85.27(35) = \text{\textrupee} 4031.82 \approx \text{\textrupee} 4032$$
+
+#### Partitioned Sum of Squares & Goodness of Fit
+
+$$SST = 114,197,923, \quad SSR = 74,180,516, \quad SSE = 40,017,408$$
+$$R^2 = \frac{74,180,516}{114,197,923} = 0.650 \quad (65.0\% \text{ of spend variation explained by income})$$
+$$r_{xy} = \sqrt{0.650} = +0.806 \quad (\text{Strong positive linear correlation})$$
+
+#### ANOVA Table & Significance Testing
+
+$$df_{\text{reg}} = 1, \quad df_{\text{err}} = 55 - 2 = 53$$
+$$MSR = \frac{74,180,516}{1} = 74,180,516, \quad MSE = \frac{40,017,408}{53} = 755,045$$
+$$s = \sqrt{MSE} = \sqrt{755,045} = 868.9, \quad SE(b_1) = \frac{868.9}{\sqrt{10201}} = 8.603$$
+$$F_{\text{calc}} = \frac{74,180,516}{755,045} = 98.25 \quad (P\text{-value} \approx 0.000)$$
+$$t_{\text{calc}} = \frac{85.27}{8.603} = 9.91 \quad (P\text{-value} = 1.1 \times 10^{-13})$$
+
+* **Decision**: Reject $H_0: \beta_1 = 0$. Annual income is a statistically significant predictor of credit card spend.
+
+---
+
+### 2.3.2 Credit Card Spend vs. Household Size (Canara Bank Case)
+
+#### Model Formulation & Comparison with Income Model
+* **Dataset**: Same $n=55$ customers. Predictor $X$: Household Size (number of members).
+* **Fitted Equation**: $\hat{Y} = 2083.7 + 520.13 X$
+* **Model Statistics**:
+  * $SSR = 45,233,346, \quad SSE = 68,964,576, \quad SST = 114,197,922$
+  * $MSE = 1,301,218 \implies s = \sqrt{1,301,218} = 1140.71$
+  * $R^2 = 0.396 \quad (39.6\% \text{ explained}), \quad r_{xy} = \sqrt{0.396} = 0.63$
+  * $F_{\text{calc}} = \frac{45,233,346}{1,301,218} = 34.7 \quad (P\text{-value} \approx 0.000)$
+  * $SE(b_1) = 88.2 \implies t_{\text{calc}} = \frac{520.13}{88.2} = 5.89 \quad (P\text{-value} \approx 0.000)$
+
+#### Diagnostic Insights
+* Both models are statistically significant ($P < 0.05$), but **Income** ($R^2 = 65\%$) is a much stronger predictor than **Household Size** ($R^2 = 39.6\%$).
+* Residual plot $e_i$ vs. $\hat{Y}$ for household size displays a distinct trend line, indicating that additional omitted variables (like income) must be added via multiple linear regression.
+
+---
+
+### 2.3.3 Bus Maintenance Cost vs. Bus Age (BMTC Case)
+
+#### Problem Setup
+* **Context**: Shiva (BMTC Bengaluru) evaluating $n=30$ buses.
+* **Dependent Variable ($Y$)**: Annual Maintenance Cost ($\text{\textrupee}$ lakhs). Mean = $6.1$ lakhs, $s_y = 2.0$ lakhs.
+* **Independent Variable ($X$)**: Bus Age (years). Mean = $3.0$ years, Range = $1$ to $5$ years.
+
+#### Fitted Model & Calculations
+* **Equation**: $\hat{Y} = 2.2 + 1.32 X$
+* **Slope Interpretation**: Each additional year of bus age increases annual maintenance cost by $\text{\textrupee} 1.32$ lakhs.
+* **Extrapolation Warning**: Intercept $b_0 = 2.2$ lakhs suggests a brand-new bus (age 0) costs $2.2$ lakhs to maintain. However, since the training data only covers ages $1$–$5$ years, predicting costs for age $0$ is an invalid extrapolation.
+
+$$\text{ANOVA & Model Metrics:}$$
+$$SST = 107.10, \quad SSR = 93.51, \quad SSE = 13.65$$
+$$df_{\text{reg}} = 1, \quad df_{\text{err}} = 28$$
+$$MSR = 93.51, \quad MSE = \frac{13.65}{28} = 0.4875 \implies s = \sqrt{0.4875} = 0.698$$
+$$R^2 = \frac{93.51}{107.10} = 0.873 \quad (87.3\% \text{ of cost variation explained by age})$$
+$$r_{xy} = \sqrt{0.873} = 0.934 \quad (\text{Very strong positive correlation})$$
+$$F_{\text{calc}} = \frac{93.51}{0.4875} = 191.7 \quad (P\text{-value} \approx 0.000)$$
+$$SE(b_1) = 0.095 \implies t_{\text{calc}} = \frac{1.32}{0.095} = 13.85 \quad (P\text{-value} \approx 0.000)$$
+
+* **Diagnostics**: All standardized residuals fall within $[-2, +2]$ (no outliers). Residual plot exhibits a horizontal random band, confirming model assumptions.
+
+---
+
+### 2.3.4 Customer Satisfaction Score vs. Computer Price (Buzzer Rogers Case)
+
+#### Survey Setup & Empirical Equation
+* **Context**: Basaraju evaluating $n=36$ computer survey responses.
+* **Dependent Variable ($Y$)**: Customer Satisfaction Score ($0$ to $100$).
+* **Independent Variable ($X$)**: Price Paid ($\text{\textrupee}$ thousands).
+* **Fitted Equation**: $\hat{Y} = 48.44 + 0.132 X$
+* **Slope Interpretation**: Each $\text{\textrupee} 1000$ increase in price increases satisfaction score by $0.132$ points. (Though intuition suggests lower prices raise satisfaction, regression reflects the training data, where premium prices correlate with higher quality/satisfaction).
+
+#### Model Statistics & Diagnostics
+
+$$SST = 1451.6, \quad SSR = 510.8, \quad SSE = 940.8$$
+$$df_{\text{err}} = 34 \implies MSE = \frac{940.8}{34} = 26.90 \implies s = \sqrt{26.90} = 5.19$$
+$$R^2 = \frac{510.8}{1451.6} = 0.362 \quad (36.2\% \text{ explained}), \quad r_{xy} = 0.592$$
+$$F_{\text{calc}} = \frac{510.8}{26.90} = 18.99 \quad (P\text{-value} \approx 0.000)$$
+$$SE(b_1) = 0.030 \implies t_{\text{calc}} = \frac{0.132}{0.030} = 4.36 \quad (P\text{-value} \approx 0.000)$$
+
+* **Outliers**: Two observations had standardized residuals below $-2$ ($-2.48$ and $-2.12$), indicating significant over-prediction of satisfaction for those computers.
+
+---
+
+### 2.3.5 Household Debt Analysis (99 Acres Case)
+
+* **Context**: Manjula Nayak (99 Acres) analyzing $n=500$ households in Bengaluru.
+* **Dependent Variable ($Y$)**: Household Debt ($\text{\textrupee}$).
+
+#### Model A: Debt ($Y$) vs. First Income ($X_1$)
+
+$$\hat{Y} = 32976 + 0.04 X_1$$
+
+* $R^2 = 0.31 \quad (31\% \text{ explained}), \quad r_{xy} = 0.56$
+* $SST = 5.94 \times 10^{11}, \quad SSR = 1.86 \times 10^{11}, \quad SSE = 4.08 \times 10^{11}$
+* $df_{\text{err}} = 498 \implies MSE = 819,076,096 \implies s = 28,619$
+* $F_{\text{calc}} = 228 \quad (P\text{-value} \approx 0.000)$
+* $SE(b_1) = 0.002 \implies t_{\text{calc}} = \frac{0.04}{0.002} = 15.1 \quad (P\text{-value} \approx 0.000)$
+
+#### Model B: Debt ($Y$) vs. Monthly Payment ($X_2$)
+
+$$\hat{Y} = 28791 + 2.94 X_2$$
+
+* $R^2 = 0.37 \quad (37\% \text{ explained}), \quad r_{xy} = 0.60$
+* $SST = 5.98 \times 10^{11}, \quad SSR = 2.18 \times 10^{11}, \quad SSE = 3.80 \times 10^{11}$
+* $df_{\text{err}} = 498 \implies MSE = 757,268,785 \implies s = 27,518$
+* $F_{\text{calc}} = 288 \quad (P\text{-value} \approx 0.000)$
+* $SE(b_1) = 0.174 \implies t_{\text{calc}} = \frac{2.94}{0.174} = 16.95 \quad (P\text{-value} \approx 0.000)$
+
+#### Case Comparative Summary
+
+| Metric | Credit Card (Income) | Credit Card (Size) | BMTC Bus | Computer Survey | Debt (Income) | Debt (Payment) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Sample Size ($n$)** | $55$ | $55$ | $30$ | $36$ | $500$ | $500$ |
+| **Slope ($b_1$)** | $85.27$ | $520.13$ | $1.32$ | $0.132$ | $0.04$ | $2.94$ |
+| **Intercept ($b_0$)** | $1047.37$ | $2083.70$ | $2.20$ | $48.44$ | $32976$ | $28791$ |
+| **Std Error ($s$)** | $868.9$ | $1140.71$ | $0.698$ | $5.19$ | $28619$ | $27518$ |
+| **$R^2$** | **$0.650$** | $0.396$ | **$0.873$** | $0.362$ | $0.310$ | $0.370$ |
+| **Correlation ($r$)** | $+0.806$ | $+0.630$ | $+0.934$ | $+0.592$ | $+0.560$ | $+0.600$ |
+| **$F$-Statistic** | $98.25$ | $34.70$ | $191.70$ | $18.99$ | $228.00$ | $288.00$ |
+| **$t$-Statistic** | $9.91$ | $5.89$ | $13.85$ | $4.36$ | $15.10$ | $16.95$ |
+
+---
+
+## Quick Revision Summary
+
+### Key Definitions
+* **Simple Linear Regression**: Modeling the conditional mean of a quantitative response $Y$ given a single predictor $X$ via a straight line.
+* **Ordinary Least Squares (OLS)**: Parameter estimation method minimizing the sum of squared vertical residuals ($\sum e_i^2$).
+* **Coefficient of Determination ($R^2$)**: Ratio $\frac{SSR}{SST}$ representing the fraction of total variability in $Y$ explained by the model.
+* **Homoscedasticity**: The model assumption that error terms $\epsilon_i$ have constant variance $\sigma^2$ across all levels of $X$.
+* **Standardized Residual**: Residual divided by its standard error ($z_e = \frac{e_i}{s_e}$); values outside $[-2, +2]$ flag potential outliers.
+* **Overfitting**: Phenomenon where a complex model performs exceptionally on training data but poorly on unseen validation data.
+
+---
+
+### Important Formulas
+
+$$\text{Sample Model Equation: } \hat{Y}_i = b_0 + b_1 X_i$$
+
+$$\text{OLS Slope Estimator: } b_1 = \frac{\sum (X_i - \bar{X})(Y_i - \bar{Y})}{\sum (X_i - \bar{X})^2}$$
+
+$$\text{OLS Intercept Estimator: } b_0 = \bar{Y} - b_1 \bar{X}$$
+
+$$\text{ANOVA Sum of Squares: } SST = SSR + SSE$$
+
+$$SST = \sum (Y_i - \bar{Y})^2, \quad SSR = \sum (\hat{Y}_i - \bar{Y})^2, \quad SSE = \sum (Y_i - \hat{Y}_i)^2$$
+
+$$\text{Coefficient of Determination: } R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$$
+
+$$\text{Mean Square Error (Residual Variance): } MSE = s^2 = \frac{SSE}{n - 2}$$
+
+$$\text{Slope Standard Error: } SE(b_1) = \frac{s}{\sqrt{\sum (X_i - \bar{X})^2}}$$
+
+$$\text{Hypothesis Test Statistics: } t_{\text{calc}} = \frac{b_1}{SE(b_1)}, \quad F_{\text{calc}} = \frac{MSR}{MSE} = \frac{SSR / 1}{SSE / (n - 2)}$$
+
+---
+
+### Must-Remember Points
+* Linearity in linear regression refers to **linearity in parameters ($\beta$)**, not variables ($X$). Models with $X^2$ or $\ln(X)$ are still linear regression models.
+* In Simple Linear Regression, $F_{\text{calc}} = \left(t_{\text{calc}}\right)^2$, and both tests evaluate $H_0: \beta_1 = 0$.
+* Regression models must **never be used for extrapolation** outside the domain of $X$ present in the training set.
+* High $R^2$ alone does not validate a model; residual plots ($e_i$ vs. $X$ or $\hat{Y}$) must be inspected to ensure homoscedasticity, linearity, and independence.
+* Funnel residual patterns signal **heteroscedasticity**, U-shaped patterns signal **non-linear functional form**, and linear trends in residuals vs. $\hat{Y}$ signal **omitted variable bias**.
