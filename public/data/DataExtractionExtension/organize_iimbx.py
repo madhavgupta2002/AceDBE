@@ -124,7 +124,12 @@ def process_payload(json_filepath):
             videos = storage.get("videos", [])
             if videos:
                 module_key = get_module_key(chap_name)
-                master_videos[module_key] = videos
+                if module_key in master_videos:
+                    for v in videos:
+                        if v not in master_videos[module_key]:
+                            master_videos[module_key].append(v)
+                else:
+                    master_videos[module_key] = list(videos)
 
             # 3. Generate Practice Questions.txt
             questions = storage.get("questions", [])
@@ -154,7 +159,7 @@ def process_payload(json_filepath):
                 for idx, t in enumerate(transcripts):
                     pdf_url = t['url']
                     pdf_basename = t['filename'].replace('.pdf', '') if t['filename'] else t['unitTitle']
-                    safe_pdf_name = f"{sanitize_name(pdf_basename)}.pdf"
+                    safe_pdf_name = f"{idx + 1:02d}_{sanitize_name(pdf_basename)}.pdf"
                     pdf_path = os.path.join(pdf_folder, safe_pdf_name)
 
                     if not os.path.exists(pdf_path):
