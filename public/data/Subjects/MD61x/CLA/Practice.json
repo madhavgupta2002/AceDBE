@@ -1,11 +1,13 @@
 {
     "exam_metadata": {
         "subject_name": "Inclusive Business Models",
-        "exam_date": "Batch 1"
+        "exam_date": "Batch 1",
+        "batch": "",
+        "attempt": ""
     },
     "questions": [
         {
-            "question_id": "1",
+            "question_id": "M6_Q1",
             "question_text": "What is one of the primary challenges faced by workers in the informal sector?",
             "question_type": "MCQ",
             "options": {
@@ -14,11 +16,11 @@
                 "C": "High levels of union representation"
             },
             "correct_option_label": "B",
-            "explanation": "Workers in the informal economy face structural vulnerability due to unpredictable income streams, lack of formal contracts, and an absence of social security or healthcare benefits.",
+            "explanation": "Workers in the informal sector lack formal employment contracts, statutory social security (such as Provident Fund and gratuity), and face severe job instability. Approximately 90–92% of the Indian workforce operates in the informal sector without a statutory safety net.",
             "module": 6
         },
         {
-            "question_id": "2",
+            "question_id": "M6_Q2",
             "question_text": "LabourNet primarily improves the livelihoods of informal workers by:",
             "question_type": "MCQ",
             "options": {
@@ -27,11 +29,11 @@
                 "C": "Offering skills development, identity, and market linkages"
             },
             "correct_option_label": "C",
-            "explanation": "LabourNet empowers informal workers by providing standardized skill training, official identity verification, and direct market connections to sustainable employment opportunities.",
+            "explanation": "LabourNet improves informal workers' livelihoods through a structured approach that integrates verified identity cards, financial inclusion (bank accounts and insurance), site-based skill development, and direct B2B market linkages.",
             "module": 6
         },
         {
-            "question_id": "3",
+            "question_id": "M6_Q3",
             "question_text": "What is a key advantage of Hasiru Dala's inclusive waste management model?",
             "question_type": "MCQ",
             "options": {
@@ -40,11 +42,11 @@
                 "C": "It creates livelihood opportunities while improving waste management outcomes."
             },
             "correct_option_label": "C",
-            "explanation": "Hasiru Dala integrates informal waste pickers into municipal and corporate waste streams, providing them with stable income and social dignity while enhancing decentralized waste recycling.",
+            "explanation": "Hasiru Dala integrates informal waste pickers as autonomous micro-entrepreneurs and franchisees, professionalizing waste processing while simultaneously improving municipal recycling efficiency and environmental outcomes.",
             "module": 6
         },
         {
-            "question_id": "4",
+            "question_id": "M6_Q4",
             "question_text": "Why do organisations such as Hasiru Dala adopt both not-for-profit and for-profit models?",
             "question_type": "MCQ",
             "options": {
@@ -53,11 +55,11 @@
                 "C": "To eliminate the need for external funding"
             },
             "correct_option_label": "B",
-            "explanation": "A hybrid structure allows the non-profit entity to drive community advocacy and social mobilization, while the for-profit arm delivers commercially viable, scalable services to ensure financial independence.",
+            "explanation": "A dual-entity hybrid structure enables the non-profit trust to handle policy advocacy, social justice, and community capability building, while the for-profit company executes commercial contracts to achieve financial self-sustainability ($\text{Profit} \\ge 0$).",
             "module": 6
         },
         {
-            "question_id": "5",
+            "question_id": "M6_Q5",
             "question_text": "Which of the following is essential for the long-term success of an inclusive business model?",
             "question_type": "MCQ",
             "options": {
@@ -66,8 +68,138 @@
                 "C": "Ignoring stakeholder needs to reduce costs"
             },
             "correct_option_label": "A",
-            "explanation": "Inclusive businesses must operate without financial losses (Profit ≥ 0) to sustain operations independently while continuously creating social value for Base-of-the-Pyramid populations.",
+            "explanation": "Inclusive business models are designed to explicitly address social problems for low-income populations while operating at or above financial break-even ($\text{Profit} \\ge 0$), balancing social impact with long-term commercial self-sufficiency.",
             "module": 6
+        },
+        {
+            "question_id": "M7_Q1",
+            "question_text": "Which of the following best explains why Farmer Producer Organisations (FPOs) are considered inclusive business models?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They eliminate intermediaries from agricultural markets.",
+                "B": "They enable smallholder farmers to participate more effectively in markets through collective action.",
+                "C": "They primarily maximise profits for external investors."
+            },
+            "correct_option_label": "B",
+            "explanation": "FPOs aggregate smallholder farmers to pool input purchases for volume discounts and consolidate produce for direct negotiation with B2B buyers, enabling smallholders to transition from individual price-takers to empowered market participants.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q2",
+            "question_text": "Which characteristic most clearly distinguishes a social business from a traditional Corporate Social Responsibility (CSR) initiative?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It operates independently of the company's commercial activities.",
+                "B": "It is funded entirely through grants and donations.",
+                "C": "It integrates social objectives into a financially sustainable business model."
+            },
+            "correct_option_label": "C",
+            "explanation": "Unlike traditional CSR, which relies on a mandated profit allocation (such as the 2% rule under Indian corporate law) or philanthropic grants, a social business operates as a self-sustaining, non-loss business entity ($\text{Profit} \\ge 0$) that embeds social impact into its core revenue model.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q3",
+            "question_text": "GNFC's neem initiative demonstrates inclusive business because it:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Operated purely as a philanthropic programme outside its business operations.",
+                "B": "Focused primarily on maximising shareholder returns.",
+                "C": "Created shared value by integrating economically underprivileged communities into its core supply chain."
+            },
+            "correct_option_label": "C",
+            "explanation": "GNFC created shared value by backward-integrating its fertilizer production supply chain to source neem seeds directly from landless rural women, boosting supplementary household incomes while meeting internal production needs.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q4",
+            "question_text": "Based on the GNFC case, which approach is most likely to improve the success of a social business?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Launching social initiatives unrelated to the organisation's core business.",
+                "B": "Aligning the initiative with the organisation's existing capabilities and value chain.",
+                "C": "Prioritising rapid expansion over operational learning."
+            },
+            "correct_option_label": "B",
+            "explanation": "The GNFC initiative succeeded when it leveraged the company's existing rural distribution network in reverse to collect neem seeds, but faced operational challenges when venturing into consumer FMCG marketing outside its core capabilities.",
+            "module": 7
+        },
+        {
+            "question_id": "M7_Q5",
+            "question_text": "Which of the following is most important for ensuring the long-term sustainability of an inclusive business model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Balancing social impact with commercial viability.",
+                "B": "Maximising social impact regardless of financial performance.",
+                "C": "Relying on continuous external funding."
+            },
+            "correct_option_label": "A",
+            "explanation": "To avoid dependency on continuous grant subsidies and maintain operations, an inclusive business model must maintain a non-negative profit constraint ($\text{Profit} \\ge 0$) while maximizing social value.",
+            "module": 7
+        },
+        {
+            "question_id": "M8_Q1",
+            "question_text": "Which of the following best describes impact investing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Investing only to maximise financial returns",
+                "B": "Investing to generate measurable social or environmental impact alongside financial returns",
+                "C": "Providing grants without expecting any financial return"
+            },
+            "correct_option_label": "B",
+            "explanation": "As defined by GIIN, impact investments are made with explicit intentionality to generate positive, measurable social and environmental outcomes alongside financial capital returns.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q2",
+            "question_text": "What is the primary purpose of a Randomised Controlled Trial (RCT)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To calculate financial returns on investment",
+                "B": "To replace impact measurement frameworks",
+                "C": "To compare outcomes between randomly assigned treatment and control groups"
+            },
+            "correct_option_label": "C",
+            "explanation": "RCTs evaluate social interventions by randomly assigning an eligible population into treatment and control groups, establishing a baseline counterfactual to accurately measure true causal impact.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q3",
+            "question_text": "Which startup uses enhanced rock weathering to remove carbon dioxide from the atmosphere?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Varaha",
+                "B": "MittiLabs",
+                "C": "Alt Carbon"
+            },
+            "correct_option_label": "C",
+            "explanation": "Alt Carbon utilizes enhanced rock weathering by crushing basalt rock and applying it to smallholder farm soils, permanently locking atmospheric carbon into soil carbonates while improving crop yields.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q4",
+            "question_text": "What does one carbon credit generally represent?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "One tonne of carbon dioxide removed or avoided",
+                "B": "One hectare of farmland restored",
+                "C": "One year of renewable energy generation"
+            },
+            "correct_option_label": "A",
+            "explanation": "A carbon credit is a standardized unit equal to one metric ton of carbon dioxide equivalent ($\text{CO}_2\text{e}$) either removed from the atmosphere or avoided through verified sustainability interventions.",
+            "module": 8
+        },
+        {
+            "question_id": "M8_Q5",
+            "question_text": "According to Kate Raworth's Doughnut Economy framework, a sustainable future requires",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Prioritising environmental goals over human development",
+                "B": "Balancing social foundations with ecological limits",
+                "C": "Maximising economic growth regardless of environmental impact"
+            },
+            "correct_option_label": "B",
+            "explanation": "Doughnut Economics defines a safe and just operational space for humanity that lies between meeting the Social Foundation (eliminating human poverty and deprivation) and respecting the Ecological Ceiling (preventing environmental degradation).",
+            "module": 8
         }
     ]
 }
