@@ -1,6 +1,6 @@
 {
     "exam_metadata": {
-        "subject_name": "Supply Chain Management",
+        "subject_name": "Supply Chain & Logistics Management",
         "exam_date": "Batch 1",
         "batch": "",
         "attempt": ""
@@ -676,6 +676,342 @@
             "correct_option_label": "C",
             "explanation": "Product redesign for supply chain efficiency must simultaneously satisfy customer/buyer value preferences while optimizing physical transport density, package cube utilization, and handling logistics.",
             "module": 5
+        },
+        {
+            "question_id": "M06_Q01",
+            "question_text": "What was the primary role of distributors in JOSH Denims' original supply chain structure?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To deliver directly from the C and FA warehouse to consumers",
+                "B": "To absorb operational and financial risks by holding inventory and managing retailer demand fluctuations",
+                "C": "To manufacture denim garments for JOSH Denims",
+                "D": "To manage international shipping and customs clearance"
+            },
+            "correct_option_label": "B",
+            "explanation": "Distributors in the original network held local buffer stock, extended credit to retailers, and managed local demand fluctuations. This absorbed operational and financial risks before goods reached the retail tier.",
+            "module": 6
+        },
+        {
+            "question_id": "M06_Q02",
+            "question_text": "Why did JOSH Denims remove the distributor tier?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To gain more control and capture distributor margins",
+                "B": "To comply with new government rules",
+                "C": "To transfer manufacturing to the C and FA",
+                "D": "To outsource all logistics to an international provider"
+            },
+            "correct_option_label": "A",
+            "explanation": "Removing distributors allowed JOSH Denims to practice disintermediation, capturing distributor margins and establishing direct contact and control over retail channels.",
+            "module": 6
+        },
+        {
+            "question_id": "M06_Q03",
+            "question_text": "What role does cold storage play in agricultural supply chains?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It removes the need for wholesale markets",
+                "B": "It acts as an inventory buffer for seasonal produce",
+                "C": "It replaces traders and commission agents",
+                "D": "It helps sort agricultural produce"
+            },
+            "correct_option_label": "B",
+            "explanation": "Cold storage acts as a seasonal inventory buffer connecting perishable harvest periods with year-round demand. It helps stabilize supply and prevents distress selling by farmers during harvest gluts.",
+            "module": 6
+        },
+        {
+            "question_id": "M06_Q04",
+            "question_text": "What was the key strategic decision facing Hasmukhbhai?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Whether to exit cold storage",
+                "B": "Which city - Surat, Pune or Mumbai - offered the best expansion opportunity",
+                "C": "Whether to serve only farmers",
+                "D": "Whether to move into retailing"
+            },
+            "correct_option_label": "B",
+            "explanation": "Hasmukhbhai evaluated expansion opportunities for a 5,000-tonne cold storage facility across candidate cities (Surat, Pune, and Mumbai), analyzing trade-offs in capital costs and local market demand.",
+            "module": 6
+        },
+        {
+            "question_id": "M06_Q05",
+            "question_text": "Why did Rajashree Cement explore the Engine on Load scheme?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To comply with a rule requiring rail transport.",
+                "B": "To expand direct retail delivery.",
+                "C": "To replace grinding units.",
+                "D": "To increase throughput of bulk cement."
+            },
+            "correct_option_label": "D",
+            "explanation": "The Engine on Load (EOL) scheme keeps the locomotive attached during loading/unloading, drastically reducing rake turnaround times to increase overall bulk cement dispatch throughput.",
+            "module": 6
+        },
+        {
+            "question_id": "M06_Q06",
+            "question_text": "What product was Rajashree Cement transporting which needed analysis?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Bulk cement",
+                "B": "Packaged cement bags",
+                "C": "Fly ash",
+                "D": "Clinker"
+            },
+            "correct_option_label": "A",
+            "explanation": "The transport analysis focused on bulk cement dispatches via private rakes between the Malkhaid plant and the Doddaballapur unloading/bagging hub.",
+            "module": 6
+        },
+        {
+            "question_id": "M06_Q07",
+            "question_text": "Which of the following was NOT a core business service offered by Shreeji Transport Services?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Less-than-truckload cargo consolidation",
+                "B": "Express parcel",
+                "C": "Full Truck Load transportation services",
+                "D": "Temperature-controlled refrigerated logistics"
+            },
+            "correct_option_label": "D",
+            "explanation": "Shreeji Transport offered Full Truck Load, Less-than-truckload, bonded trucking, and parcel express services, but did not specialize in temperature-controlled refrigerated logistics.",
+            "module": 6
+        },
+        {
+            "question_id": "M06_Q08",
+            "question_text": "Which managerial focus is most relevant for route profitability?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increasing the number of trucks",
+                "B": "Avoiding long term customer contracts",
+                "C": "Price setting based on route analysis, including load availability at the destination",
+                "D": "Reducing shipment documentation"
+            },
+            "correct_option_label": "C",
+            "explanation": "Route profitability depends on setting pricing based on granular route analysis, considering turnaround time, freight rate density, and backhaul load availability rather than distance alone.",
+            "module": 6
+        },
+        {
+            "question_id": "M07_Q01",
+            "question_text": "What does the Operating Ratio for Indian Railways primarily indicate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The amount spent in rupees to earn every 100 rupees of revenue.",
+                "B": "The percentage of profits reinvested into network infrastructure upgrades.",
+                "C": "The total capital expenditure required to maintain the existing railway lines.",
+                "D": "The ratio of passenger revenue to freight revenue across all its zones."
+            },
+            "correct_option_label": "A",
+            "explanation": "The Operating Ratio measures operational efficiency by indicating the amount in rupees spent by Indian Railways to earn 100 rupees of gross revenue.",
+            "module": 7
+        },
+        {
+            "question_id": "M07_Q02",
+            "question_text": "What is the primary competitive disadvantage for Indian Railways' freight services when compared to road transport?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Significantly higher freight charges for bulk commodities such as coal, iron ore and cement.",
+                "B": "Inability to carry oversized or heavy industrial equipment due to track and tunnel limitations.",
+                "C": "A more complex and time-consuming booking and documentation process for consignments.",
+                "D": "Lack of reliable first- and last-mile connectivity, making it less suitable for door-to-door service."
+            },
+            "correct_option_label": "D",
+            "explanation": "Indian Railways lacks seamless first- and last-mile connectivity, making road transport preferred for flexible, door-to-door delivery despite higher long-haul line-haul costs.",
+            "module": 7
+        },
+        {
+            "question_id": "M07_Q03",
+            "question_text": "Which characteristic best describes the ownership structure of the Indian road freight transport industry?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is dominated by a few large multinational corporations that control major national routes and contracts.",
+                "B": "It is highly fragmented, with a large majority of operators owning very small fleets, often five trucks or fewer.",
+                "C": "It is primarily composed of medium-sized regional companies that specialise in specific types of cargo.",
+                "D": "It is largely state-owned, with government-run corporations handling most long-haul freight movement."
+            },
+            "correct_option_label": "B",
+            "explanation": "The Indian trucking industry is highly fragmented, with nearly 75% of operators owning small fleets of five or fewer trucks.",
+            "module": 7
+        },
+        {
+            "question_id": "M07_Q04",
+            "question_text": "Which expenses typically constitutes the largest single component of total operating costs for a truck operator in India?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Driver salaries and related benefits, which have been rising steadily due to a shortage of skilled drivers.",
+                "B": "Fuel costs, which are also volatile.",
+                "C": "Maintenance and repair costs, including tyres and spare parts, for keeping vehicles roadworthy.",
+                "D": "Toll charges and inter-state taxes, which add up significantly on long-haul routes."
+            },
+            "correct_option_label": "B",
+            "explanation": "Fuel costs constitute the largest single operating expense for long-haul truck operators in India, often accounting for over 40-50% of total running costs.",
+            "module": 7
+        },
+        {
+            "question_id": "M07_Q05",
+            "question_text": "In a Public-Private Partnership for a port terminal, what is the primary purpose of the Concession Agreement?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is a short-term permit that allows a shipping line to use the port facilities for a single voyage.",
+                "B": "It is a financial statement detailing the projected revenue and profitability of the terminal for investors.",
+                "C": "It is a legal contract defining the rights, obligations and risk allocation for the private operator and the port authority.",
+                "D": "It is a marketing document used by the port authority to attract new shipping lines and cargo to the terminal."
+            },
+            "correct_option_label": "C",
+            "explanation": "A Concession Agreement is a formal legal contract between the public port authority and the private concessionaire specifying performance obligations, operational rights, revenue sharing, and risk allocation.",
+            "module": 7
+        },
+        {
+            "question_id": "M07_Q06",
+            "question_text": "Why is efficient hinterland connectivity considered critical for the commercial success of a new private port terminal?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It allows the port to attract more cruise ships and tourism, thereby diversifying revenue streams.",
+                "B": "It directly determines the tariff rates that the port terminal is legally allowed to charge customers.",
+                "C": "It ensures a smooth and cost-effective flow of cargo between the port and industrial or consumption centres.",
+                "D": "It is the primary factor considered by the government when awarding environmental clearances for port projects."
+            },
+            "correct_option_label": "C",
+            "explanation": "Hinterland rail and road connectivity ensures fast, reliable, and cost-effective evacuation of cargo between maritime berths and inland consumption/manufacturing centers.",
+            "module": 7
+        },
+        {
+            "question_id": "M07_Q07",
+            "question_text": "Sea as a mode choice is preferred from many of the sources for Laxmi Transformers. This is because",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rail is a complex mode requiring supply chain coordination with a difficult bureaucracy.",
+                "B": "It is difficult to procure the required number of trucks.",
+                "C": "Ships are easy to charter at low prices.",
+                "D": "The holding costs of the raw material are low, enabling large volume handling required for a ship."
+            },
+            "correct_option_label": "D",
+            "explanation": "Iron ore and pellets have relatively low inventory holding costs per ton, making low-cost bulk ocean shipment (large shipment lot sizes) economical despite longer transit times.",
+            "module": 7
+        },
+        {
+            "question_id": "M07_Q08",
+            "question_text": "Laxmi Transformers has a competitive advantage in serving the integrated steel plant markets in Eastern India because",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Steel plants are a reliable buyer of sponge iron.",
+                "B": "The return empty of the ship provides a supply opportunity at marginal costs.",
+                "C": "This market can be used as a ‘buffer’ if there is any excess after supplying the mini steel plants.",
+                "D": "Rail connectivity is available for direct unloading at the steel plants, thereby saving last-mile costs."
+            },
+            "correct_option_label": "B",
+            "explanation": "Time-chartered ships carrying inbound ore from Eastern ports return empty to the East. Utilizing this empty backhaul to transport outbound sponge iron drastically lowers marginal freight costs.",
+            "module": 7
+        },
+        {
+            "question_id": "M08_Q01",
+            "question_text": "What is the main purpose of the LEADS index?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To measure export performance across Indian states.",
+                "B": "To evaluate logistics efficiency across Indian states.",
+                "C": "To rank private logistics companies in India.",
+                "D": "To compare port performance across coastal states."
+            },
+            "correct_option_label": "B",
+            "explanation": "The LEADS (Logistics Ease Across Different States) index assesses and ranks the performance and efficiency of the logistics ecosystem across Indian states and Union Territories.",
+            "module": 8
+        },
+        {
+            "question_id": "M08_Q02",
+            "question_text": "Which institution’s Logistics Performance Index influenced the development of LEADS?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "World Trade Organization.",
+                "B": "International Monetary Fund.",
+                "C": "Asian Development Bank.",
+                "D": "World Bank."
+            },
+            "correct_option_label": "D",
+            "explanation": "LEADS was developed by the Ministry of Commerce & Industry based on the framework of the World Bank's Logistics Performance Index (LPI).",
+            "module": 8
+        },
+        {
+            "question_id": "M08_Q03",
+            "question_text": "Which two indicators were added in LEADS 2018 beyond the broad Logistics Performance Index style indicators?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Favorability of operating environment and safety/security of cargo movement.",
+                "B": "Green logistics commitment and women’s participation in logistics workforce.",
+                "C": "Packaging facilities and grievance redressal under regulatory environment.",
+                "D": "Warehouse approvals and ease of entry into neighbouring states."
+            },
+            "correct_option_label": "A",
+            "explanation": "LEADS 2018 added 'Favorability of operating environment' and 'Safety/security of cargo movement' to capture domestic regulatory and operational conditions specific to Indian states.",
+            "module": 8
+        },
+        {
+            "question_id": "M08_Q04",
+            "question_text": "Why were states later grouped into coastal, landlocked, north-eastern and union territory categories?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To reduce the number of indicators used in the ranking.",
+                "B": "To give coastal states a higher score by default.",
+                "C": "To compare states more fairly based on geographic context.",
+                "D": "To normalize the investments by state governments for logistics."
+            },
+            "correct_option_label": "C",
+            "explanation": "Categorizing states based on geography ensures a fair comparison by accounting for structural differences in port access, terrain, and regional infrastructure challenges.",
+            "module": 8
+        },
+        {
+            "question_id": "M08_Q05",
+            "question_text": "What was the primary objective of the mid-day meal programme?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To improve nutrition and encourage regular school attendance.",
+                "B": "To replace all school-based cooking with centralised kitchens.",
+                "C": "To increase the number of government schools in rural areas.",
+                "D": "To provide packaged food to children in government schools so they could take it home."
+            },
+            "correct_option_label": "A",
+            "explanation": "The Midday Meal Program aims to combat classroom hunger, improve child nutrition, and incentivize regular enrollment and attendance among school children.",
+            "module": 8
+        },
+        {
+            "question_id": "M08_Q06",
+            "question_text": "Why did the Gujarat government approach Akshaya Patra for further expansion?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because the Government wanted to introduce meals service to the poor.",
+                "B": "Because the foundation had unused vehicles across all locations.",
+                "C": "Because they wanted the meals service in Government hospital.",
+                "D": "Because there was going to be a sharp increase in the number of rural schools."
+            },
+            "correct_option_label": "C",
+            "explanation": "Impressed by Akshaya Patra's efficient centralized meal distribution, the government approached them to expand operations into providing dietary meal services in Government hospitals.",
+            "module": 8
+        },
+        {
+            "question_id": "M08_Q07",
+            "question_text": "Why was the centralised kitchen model more suitable for urban areas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Urban schools needed fewer meals than rural schools.",
+                "B": "Urban schools had lesser space for setting up in-school kitchens.",
+                "C": "Urban schools were usually geographically closer to one another.",
+                "D": "Land was easier to procure for a centralised kitchen."
+            },
+            "correct_option_label": "C",
+            "explanation": "In urban areas, schools are clustered close together geographically, allowing centralized kitchens to achieve high transport utilization and deliver warm meals within strict time windows.",
+            "module": 8
+        },
+        {
+            "question_id": "M08_Q08",
+            "question_text": "Which of the following was NOT a government specified regulation to be satisfied by Akshaya Patra?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Meals has to satisfy nutrition requirements.",
+                "B": "Meals has to be cooked during day light hours.",
+                "C": "Meals had to satisfy a maximum cook-to-consume time.",
+                "D": "Meals had to have a minimum variety in the menu."
+            },
+            "correct_option_label": "B",
+            "explanation": "Akshaya Patra begins kitchen operations as early as 4:00 AM before sunrise to ensure timely morning dispatches, making cooking strictly during daylight hours non-mandatory and impractical.",
+            "module": 8
         }
     ]
 }

@@ -705,6 +705,426 @@
             "correct_option_label": "D",
             "explanation": "Unlike campaigns that terminate at purchase, organic loops use customer purchase/usage actions as inputs to automatically attract subsequent users.",
             "module": 5
+        },
+        {
+            "question_id": "1",
+            "question_text": "A growth team notices that users often stop returning, even though they do not complain about product quality or price. Which interpretation best fits the framework presented?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The issue is mainly brand awareness failure",
+                "B": "The issue is primarily a habit failure rather than a pure communication failure",
+                "C": "The issue is caused only by poor product-market fit",
+                "D": "The issue is best solved by increasing discount frequency"
+            },
+            "correct_option_label": "B",
+            "explanation": "Users failing to return without complaining about price or quality indicates a habit failure, where users simply forget to use the product rather than disliking it.",
+            "module": 6
+        },
+        {
+            "question_id": "2",
+            "question_text": "Which option best explains why external triggers are strategically weaker than internal triggers in long-term retention design?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "External triggers never work in digital products",
+                "B": "Internal triggers are easier to buy through ad platforms",
+                "C": "External triggers require repeated effort or spending, while internal triggers create self-sustaining recall",
+                "D": "Internal triggers only matter in B2B settings"
+            },
+            "correct_option_label": "C",
+            "explanation": "External triggers require continuous effort and spending, whereas internal triggers leverage psychological cues to create repeatable, unprompted usage.",
+            "module": 6
+        },
+        {
+            "question_id": "3",
+            "question_text": "According to the hook model described, which sequence correctly represents a fully functioning habit loop?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Trigger, action, variable reward, investment",
+                "B": "Investment, action, reward, trigger",
+                "C": "Reward, trigger, action, investment",
+                "D": "Action, investment, trigger, reward"
+            },
+            "correct_option_label": "A",
+            "explanation": "Nir Eyal's Hook Model follows the four-phase sequence: Trigger, Action, Variable Reward, and Investment.",
+            "module": 6
+        },
+        {
+            "question_id": "4",
+            "question_text": "A team improves onboarding emails but still sees weak long-term retention. Based on the framework, what is the strongest explanation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Better email subject lines automatically create a habit.",
+                "B": "Long-term retention depends only on price reductions.",
+                "C": "Lifecycle messages can support retention, but cannot replace a missing habit loop.",
+                "D": "Retention is unrelated to user behaviour after activation."
+            },
+            "correct_option_label": "C",
+            "explanation": "Lifecycle messages like emails push users back temporarily, but long-term retention requires an embedded product habit loop to drive pull retention.",
+            "module": 6
+        },
+        {
+            "question_id": "5",
+            "question_text": "A company sends the same email on day 1, day 3, and day 7 to every new user regardless of what they actually did. Why is this approach criticised?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is too personalised",
+                "B": "It assumes all users reach value on the same timeline, which is rarely true",
+                "C": "It works only in enterprise sales",
+                "D": "It prevents any form of segmentation"
+            },
+            "correct_option_label": "B",
+            "explanation": "Calendar-based drip campaigns assume all users move through value milestones at the same rate, ignoring actual individual behavior and readiness.",
+            "module": 6
+        },
+        {
+            "question_id": "6",
+            "question_text": "Which of the following best captures the difference between B2B retention and B2C retention?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "B2B retention focuses on individuals only, while B2C focuses on accounts.",
+                "B": "B2B retention is account-level and multi-stakeholder, while B2C retention is individual-level and faster-moving.",
+                "C": "B2B and B2C retention use the same signals and recovery motion.",
+                "D": "B2C retention usually requires customer success managers more than B2B does."
+            },
+            "correct_option_label": "B",
+            "explanation": "B2B retention operates at the multi-stakeholder account level with high churn impact, whereas B2C focuses on individual consumers with faster usage cycles.",
+            "module": 6
+        },
+        {
+            "question_id": "7",
+            "question_text": "A team loses customers because cards expire, mandates fail, or payments are declined, even though those customers did not intend to leave. What kind of churn is this, and what should be the first response?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Voluntary churn; rebuild the brand promise.",
+                "B": "Emotional churn; add more social proof.",
+                "C": "Strategic churn; reduce product features.",
+                "D": "Involuntary churn; fix the payment and recovery plumbing first."
+            },
+            "correct_option_label": "D",
+            "explanation": "Involuntary churn occurs due to technical payment processing or credit card failures; resolving billing plumbing recovers these users immediately.",
+            "module": 6
+        },
+        {
+            "question_id": "8",
+            "question_text": "Which statement best distinguishes a referral loop from a network effect?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A referral loop brings in more users, while a network effect makes the product itself more valuable as more users join",
+                "B": "A referral loop and a network effect are the same if the K-factor is positive",
+                "C": "A network effect only exists when users receive discounts",
+                "D": "A referral loop can exist only in consumer apps"
+            },
+            "correct_option_label": "A",
+            "explanation": "Referral loops focus on user acquisition by having current users invite new ones, whereas network effects increase the intrinsic product value as the user base expands.",
+            "module": 6
+        },
+        {
+            "question_id": "9",
+            "question_text": "A team launches a “refer a friend” offer during user sign-up, before users have experienced any meaningful result. Why is this likely to underperform?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Referral works only after one year of use",
+                "B": "Users dislike all referral programs at sign-up",
+                "C": "It always creates legal risk",
+                "D": "Users have not yet reached the aha moment, so they lack specific value to recommend credibly"
+            },
+            "correct_option_label": "D",
+            "explanation": "Asking for referrals before users reach their AHA moment fails because users lack validated satisfaction or proof to make credible recommendations.",
+            "module": 6
+        },
+        {
+            "question_id": "10",
+            "question_text": "A retention dashboard shows a steep early drop, then a flattening core that stays active over time. Which interpretation is most accurate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "This is a slide curve showing an acquisition treadmill.",
+                "B": "This is a cliff curve showing a single technical failure at one moment.",
+                "C": "This is a smile curve showing that some users did not find value, but a durable habitual core has formed.",
+                "D": "This is proof that retention no longer matters."
+            },
+            "correct_option_label": "C",
+            "explanation": "A curve that drops initially and then flattens represents a habitual core of retained users who continue to derive long-term value from the product.",
+            "module": 6
+        },
+        {
+            "question_id": "11",
+            "question_text": "Two companies generate the same average revenue per account in month one, but one grows much faster over the next year. According to the framework, what is the most defensible explanation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The faster-growing company must have spent more on acquisitions.",
+                "B": "The difference is mainly in the pricing structure rather than the price number itself.",
+                "C": "The slower-growing company likely had a weaker logo and brand identity.",
+                "D": "The difference can only be explained by product-market fit."
+            },
+            "correct_option_label": "B",
+            "explanation": "Pricing structure dictates expansion and recurring mechanics, allowing companies with identical initial contract values to experience vastly different revenue trajectories.",
+            "module": 7
+        },
+        {
+            "question_id": "12",
+            "question_text": "Which pricing structure is most directly designed to create expansion as a customer’s team grows over time?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Flat rate",
+                "B": "One-time purchase",
+                "C": "Per-seat pricing",
+                "D": "Seasonal discount pricing"
+            },
+            "correct_option_label": "C",
+            "explanation": "Per-seat pricing automatically scales revenue as the client company expands its headcount, serving as a primary expansion mechanism.",
+            "module": 7
+        },
+        {
+            "question_id": "13",
+            "question_text": "Why can a freemium model create powerful acquisition but remain economically dangerous if designed poorly?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because free users always convert too quickly.",
+                "B": "Because freemium removes the need for activation.",
+                "C": "Because most free users never pay, the free tier must be cheap enough to support at scale.",
+                "D": "Because freemium works only in consumer brands."
+            },
+            "correct_option_label": "C",
+            "explanation": "While freemium drives top-of-funnel acquisition, most free users never convert, requiring the free tier serving costs to be low enough to prevent financial strain.",
+            "module": 7
+        },
+        {
+            "question_id": "14",
+            "question_text": "A company wants to improve retention by default rather than re-earning every purchase from scratch. Which pricing structure best supports that goal?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "One-time purchase",
+                "B": "Subscription billing",
+                "C": "Flat-rate lifetime deal",
+                "D": "Per-click billing"
+            },
+            "correct_option_label": "B",
+            "explanation": "Subscription billing creates automatic recurring transactions, serving as the default retention state without needing to re-sell the user every purchase cycle.",
+            "module": 7
+        },
+        {
+            "question_id": "15",
+            "question_text": "A team observes that its existing customer base grows revenue even without adding new customers. Which metric best captures this phenomenon?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "CAC",
+                "B": "CTR",
+                "C": "Bounce rate",
+                "D": "Net Revenue Retention"
+            },
+            "correct_option_label": "D",
+            "explanation": "Net Revenue Retention (NRR) measures recurring revenue retained and expanded from existing customer cohorts over time, independent of new user acquisition.",
+            "module": 7
+        },
+        {
+            "question_id": "16",
+            "question_text": "A B2B company with strong upsell performance wants to move NRR materially higher, but it has already extracted most of the easy upgrades from its existing pricing ladder. Based on the module’s logic, what should it consider next?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A new cross-sell or add-on mechanism rather than only pushing upsell harder",
+                "B": "More discounting to all users",
+                "C": "Cutting onboarding resources",
+                "D": "Lowering all prices equally"
+            },
+            "correct_option_label": "A",
+            "explanation": "When upsell reaches saturation, introducing complementary cross-sell products or modular add-ons opens new revenue expansion pathways.",
+            "module": 7
+        },
+        {
+            "question_id": "17",
+            "question_text": "In a seven-stage B2B pipeline, what is the most important difference between a pipeline “list” and a pipeline “system”?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A system gives each stage written, observable movement criteria rather than relying on personal judgment.",
+                "B": "A list has more stages than a system.",
+                "C": "A list can be used only by marketing.",
+                "D": "A system eliminates the need for sales forecasting."
+            },
+            "correct_option_label": "A",
+            "explanation": "A pipeline system replaces subjective personal opinion with written, objective, and observable criteria required to move deals between stages.",
+            "module": 7
+        },
+        {
+            "question_id": "18",
+            "question_text": "Which combination best describes a strong stage definition in a B2B revenue pipeline?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Flexible, broad, motivational",
+                "B": "Fast, simple, attractive",
+                "C": "Sales-led, emotional, adjustable",
+                "D": "Observable, specific, defensible"
+            },
+            "correct_option_label": "D",
+            "explanation": "Robust pipeline stages must be defined by observable, specific, and defensible criteria backed by empirical proof rather than subjective intuition.",
+            "module": 7
+        },
+        {
+            "question_id": "19",
+            "question_text": "A revenue leader reports healthy pipeline coverage above 3x quota, yet the team is still likely to miss the target. What is the most likely explanation based on the framework?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Coverage alone is misleading if the win rate has deteriorated.",
+                "B": "Coverage is always enough to hit quota.",
+                "C": "Velocity matters only after deals are closed.",
+                "D": "Pipeline math becomes irrelevant at scale."
+            },
+            "correct_option_label": "A",
+            "explanation": "Pipeline coverage alone is insufficient; if win rates fall, even 3x coverage will fail to deliver the expected revenue quota.",
+            "module": 7
+        },
+        {
+            "question_id": "20",
+            "question_text": "A company increases lead volume aggressively, but revenue barely improves because deals stall in the middle of the sales process. What is the most defensible diagnosis?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The true bottleneck is likely at a downstream stage, so adding more top-of-funnel volume only worsens congestion.",
+                "B": "The problem is necessarily low brand awareness.",
+                "C": "The team should double ad spend.",
+                "D": "The solution is to shorten all email subject lines."
+            },
+            "correct_option_label": "A",
+            "explanation": "When deals stall downstream, adding more top-of-funnel leads amplifies congestion rather than throughput, as the bottleneck lies later in the funnel.",
+            "module": 7
+        },
+        {
+            "question_id": "21",
+            "question_text": "A growth team has 40 possible experiments but can realistically run only 6 in a quarter. What problem is the ICE framework primarily designed to solve in this situation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Statistical significance calculation",
+                "B": "Team hiring allocation",
+                "C": "Prioritisation under limited execution capacity",
+                "D": "Brand positioning"
+            },
+            "correct_option_label": "C",
+            "explanation": "The ICE prioritization framework quantitatively ranks experiments to manage limited execution bandwidth across multiple competing ideas.",
+            "module": 8
+        },
+        {
+            "question_id": "22",
+            "question_text": "A team gives a confidence score of 9 to an experiment because “everyone in the brainstorming session felt it would work.” According to the framework, what is the best diagnosis?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The score is valid because team consensus is strong evidence",
+                "B": "The score is inflated because confidence above 5 requires specific evidence that can be stated clearly",
+                "C": "The score is low because creative confidence should start at 10",
+                "D": "The score is correct if the CEO proposed it"
+            },
+            "correct_option_label": "B",
+            "explanation": "Confidence scores above 5 require objective, clear, and articulable evidence rather than subjective team consensus or sentiment.",
+            "module": 8
+        },
+        {
+            "question_id": "23",
+            "question_text": "Why can a fast-to-ship experiment still rank below a slower one in a well-run ICE process?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because easy experiments are always strategically weak",
+                "B": "Because slow experiments are automatically more valuable",
+                "C": "Because activation metrics are never prioritised",
+                "D": "Because ease matters, but impact must still be anchored to the primary growth constraint"
+            },
+            "correct_option_label": "D",
+            "explanation": "Impact is anchored to the primary growth constraint; a slower experiment with high impact on the primary constraint outweighs a quick test on a minor metric.",
+            "module": 8
+        },
+        {
+            "question_id": "24",
+            "question_text": "A backlog contains dozens of ideas, but nobody can quickly tell what is running, what is waiting, or what has been learned. What is the most accurate diagnosis?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The team has built a list, not a backlog system",
+                "B": "The team has a roadmap problem only",
+                "C": "The team needs more acquisition channels",
+                "D": "The team is overusing decision rules"
+            },
+            "correct_option_label": "A",
+            "explanation": "An unorganized list of ideas lacking active WIP tracking, ownership, or recorded insights is merely an idea graveyard rather than an operating backlog system.",
+            "module": 8
+        },
+        {
+            "question_id": "25",
+            "question_text": "Why does the framework insist that every active experiment must have exactly one owner?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because if multiple people or a team name owns it, accountability becomes ambiguous",
+                "B": "Because ownership improves morale only",
+                "C": "Because only product managers can own experiments",
+                "D": "Because ownership eliminates the need for decision rules"
+            },
+            "correct_option_label": "A",
+            "explanation": "Assigning a single human owner to each experiment ensures clear accountability for setup, execution, and decision enforcement.",
+            "module": 8
+        },
+        {
+            "question_id": "26",
+            "question_text": "Which of the following best describes a properly designed decision rule?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "One metric, one threshold, and unlimited runtime",
+                "B": "Multiple metrics, flexible thresholds, and post-hoc interpretation",
+                "C": "One metric, scale threshold, kill threshold, and a predefined time or sample bound",
+                "D": "A qualitative judgment by the founder after results come in"
+            },
+            "correct_option_label": "C",
+            "explanation": "Valid decision rules pre-register a single primary metric, scale/kill thresholds, and a specific sample size or time limit before launching.",
+            "module": 8
+        },
+        {
+            "question_id": "27",
+            "question_text": "Why is “iterate” treated as a bounded option rather than an open-ended one?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because iteration is always inferior to scaling",
+                "B": "Because unlimited iteration becomes a way to avoid admitting that an idea should be killed",
+                "C": "Because only successful experiments may be repeated",
+                "D": "Because iteration is useful only in revenue experiments"
+            },
+            "correct_option_label": "B",
+            "explanation": "Restricting iterations prevents endless goalpost shifting and forces teams to terminate unviable ideas after limited iterations.",
+            "module": 8
+        },
+        {
+            "question_id": "28",
+            "question_text": "A metric shows a large improvement, but the team still should not use it in a decision rule because it is a vanity metric. Which test most directly exposes that problem?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Whether the metric sounds impressive in a presentation",
+                "B": "Whether the metric belongs to a dashboard",
+                "C": "Whether the metric increases every week",
+                "D": "Whether the metric can be traced to revenue, retention, or margin within one or two hops"
+            },
+            "correct_option_label": "D",
+            "explanation": "The 2-Hop Rule ensures a metric can be directly linked to core business outcomes like retention, revenue, or gross margin in two or fewer logical steps.",
+            "module": 8
+        },
+        {
+            "question_id": "29",
+            "question_text": "A team allocates 100% of its quarter to planned experiments with no slack capacity. Why is this considered dangerous?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because too much planning automatically lowers morale",
+                "B": "Because capacity should never exceed 50%",
+                "C": "Because the quarter cannot absorb surprises, reallocations, or learning-driven changes",
+                "D": "Because experiments should be chosen randomly each month"
+            },
+            "correct_option_label": "C",
+            "explanation": "Reserving slack capacity (25-33%) ensures the growth plan can adapt to unexpected bugs, overruns, or mid-quarter strategic shifts.",
+            "module": 8
+        },
+        {
+            "question_id": "30",
+            "question_text": "What is the biggest difference between treating AARRR as a checklist and treating it as a system?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A checklist assigns isolated tactics to each stage, while a system lets insights from one stage shape experiments in the others",
+                "B": "A checklist has fewer metrics than a system",
+                "C": "A checklist focuses only on B2C firms",
+                "D": "A system removes the need for experimentation"
+            },
+            "correct_option_label": "A",
+            "explanation": "Viewing AARRR as a system connects funnel stages so that downstream insights directly inform upstream experimentation and overall growth.",
+            "module": 8
         }
     ]
 }

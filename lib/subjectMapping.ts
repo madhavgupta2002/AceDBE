@@ -351,7 +351,7 @@ export const SUBJECTS: Subject[] = [
 
   // ── Term 6 ──────────────────────────────────────────────────
   {
-    name: 'Supply Chain Management (SCM)',
+    name: 'Supply Chain & Logistics Management',
     description: '',
     icon: 'ClipboardList',
     aliases: [

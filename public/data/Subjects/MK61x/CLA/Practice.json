@@ -353,6 +353,216 @@
             "correct_option_label": "A",
             "explanation": "During the purchase/onboarding phase, PMs must ensure frictionless user account setup and minimize Time-to-First-Value (TTFV) to prevent drop-offs.",
             "module": 5
+        },
+        {
+            "question_id": "Q01",
+            "question_text": "Which Product Planning approach is most suitable for regulated industries?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Data-Driven Planning",
+                "B": "Requirements-Driven Planning",
+                "C": "AI-Driven Planning",
+                "D": "Experimentation-Driven Planning"
+            },
+            "correct_option_label": "B",
+            "explanation": "Requirements-Driven Planning is essential in regulated industries (such as healthcare and core banking) where explicit legal mandates, strict compliance standards, and regulatory specifications govern software capabilities.",
+            "module": 6
+        },
+        {
+            "question_id": "Q02",
+            "question_text": "Which product management technique compares two alternatives to determine which performs better?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customer interviews",
+                "B": "Usage analytics",
+                "C": "A/B Testing",
+                "D": "Brainstorming"
+            },
+            "correct_option_label": "C",
+            "explanation": "A/B Testing is a quantitative experimentation technique that compares two product variants (Variant A vs. Variant B) to evaluate which variant achieves higher user conversion or engagement.",
+            "module": 6
+        },
+        {
+            "question_id": "Q03",
+            "question_text": "Which combination correctly represents vendor-controlled environments?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Icebreaker and Cruise Ship",
+                "B": "Powerboat and Speedboat",
+                "C": "Powerboat and Cruise Ship",
+                "D": "Speedboat and Icebreaker"
+            },
+            "correct_option_label": "B",
+            "explanation": "In the ISPMA 2x2 Product Planning Matrix, Powerboat (new product) and Speedboat (evolved product) both represent deployment scenarios where the software vendor controls the production runtime environment.",
+            "module": 6
+        },
+        {
+            "question_id": "Q04",
+            "question_text": "According to the IEEE definition, a requirement is primarily:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A software function that improves user experience",
+                "B": "A capability or condition needed to solve a problem or satisfy standards, contracts, or regulations.",
+                "C": "A list of customer requests",
+                "D": "A project milestone"
+            },
+            "correct_option_label": "B",
+            "explanation": "The IEEE standard defines a requirement as a capability or condition needed by a user to solve a problem or achieve an objective, or to satisfy a contract, standard, or regulation.",
+            "module": 6
+        },
+        {
+            "question_id": "Q05",
+            "question_text": "Why should organizations maintain as few parallel software versions as possible?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Developers prefer one programming language.",
+                "B": "To reduce maintenance complexity and support costs.",
+                "C": "Customers dislike version numbers.",
+                "D": "Marketing prefers annual releases."
+            },
+            "correct_option_label": "B",
+            "explanation": "Limiting the number of supported parallel software releases reduces engineering maintenance complexity, testing overhead, patch deployment efforts, and ongoing support expenses.",
+            "module": 6
+        },
+        {
+            "question_id": "Q06",
+            "question_text": "A Product Manager compares the expected revenue increase from two competing features. This activity belongs to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Elicitation",
+                "B": "Business Case Analysis",
+                "C": "Verification",
+                "D": "Validation"
+            },
+            "correct_option_label": "B",
+            "explanation": "Evaluating expected revenue gains and ROI trade-offs across competing product initiatives is a core component of Business Case Analysis during product planning.",
+            "module": 7
+        },
+        {
+            "question_id": "Q07",
+            "question_text": "A startup CEO asks the Product Manager to publish every feature planned for the next three years with committed release dates. What is the best response?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Publish the complete feature list to improve transparency.",
+                "B": "Publish only engineering estimates.",
+                "C": "Publish strategic themes while avoiding long-term feature commitments.",
+                "D": "Delay publishing any roadmap."
+            },
+            "correct_option_label": "C",
+            "explanation": "Product roadmaps should communicate high-level strategic themes and outcomes rather than committing to granular feature delivery dates far into the future, maintaining flexibility as market conditions evolve.",
+            "module": 7
+        },
+        {
+            "question_id": "Q08",
+            "question_text": "A SaaS product has reached a stable customer base, generates predictable subscription revenue, and receives mostly incremental improvements. Which lifecycle phase best describes the product?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Conception",
+                "B": "Growth",
+                "C": "Maturity",
+                "D": "Withdrawal"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Maturity Phase of the product lifecycle is characterized by a stable user base, predictable cash flow ('Cash Cow' stage), high sales efficiency, and continuous incremental optimizations.",
+            "module": 7
+        },
+        {
+            "question_id": "Q09",
+            "question_text": "Product team has identified declining customer retention. Who should determine whether improving onboarding is the right strategic investment?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product Manager",
+                "B": "Product Owner",
+                "C": "QA Lead",
+                "D": "Scrum Master"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Product Manager owns business strategy, product vision, and strategic investment decisions ('what' and 'why'), whereas the Product Owner manages tactical backlog execution ('how').",
+            "module": 7
+        },
+        {
+            "question_id": "Q10",
+            "question_text": "A well-designed product architecture contributes primarily to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduced marketing expenses",
+                "B": "Increased advertising effectiveness",
+                "C": "Long-term product evolution and maintainability",
+                "D": "Lower office operating costs"
+            },
+            "correct_option_label": "C",
+            "explanation": "A clean, modular product architecture ensures long-term software maintainability, scalability, and smooth future evolution without accumulating unmanageable technical debt.",
+            "module": 7
+        },
+        {
+            "question_id": "Q11",
+            "question_text": "In the short-term Sales and Fulfillment focus, Software Product Management (SPM) is primarily concerned with",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Long-term platform strategy",
+                "B": "Product-specific customer commitments and sales execution",
+                "C": "Organizational restructuring",
+                "D": "Acquisition strategy"
+            },
+            "correct_option_label": "B",
+            "explanation": "In short-term operational execution, SPM focuses on supporting sales activities, reviewing customer contractual commitments, and streamlining delivery and license fulfillment.",
+            "module": 8
+        },
+        {
+            "question_id": "Q12",
+            "question_text": "Which of the following is an example of a Vanity Metric?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cohort analysis",
+                "B": "Funnel metrics",
+                "C": "App downloads",
+                "D": "Customer Lifetime Value"
+            },
+            "correct_option_label": "C",
+            "explanation": "App downloads measure superficial acquisition reach without demonstrating sustained active usage, retention, or real customer value delivery, making it a classic vanity metric.",
+            "module": 8
+        },
+        {
+            "question_id": "Q13",
+            "question_text": "Which legal topic specifically deals with protection of software inventions and creative works?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product Roadmapping",
+                "B": "Agile Planning",
+                "C": "DevOps",
+                "D": "Intellectual Property"
+            },
+            "correct_option_label": "D",
+            "explanation": "Intellectual Property (IP) law uses mechanisms like patents, copyrights, trademarks, and trade secrets to protect software inventions, source code, and design assets.",
+            "module": 8
+        },
+        {
+            "question_id": "Q14",
+            "question_text": "Which GDPR principle requires privacy to be incorporated during system design?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Data Localization",
+                "B": "Data Protection by Design",
+                "C": "Data Portability",
+                "D": "Data Residency"
+            },
+            "correct_option_label": "B",
+            "explanation": "Data Protection by Design (Privacy by Design) is the mandatory GDPR principle requiring software systems to integrate privacy controls and data protection mechanisms directly into system architecture from day one.",
+            "module": 8
+        },
+        {
+            "question_id": "Q15",
+            "question_text": "Responsible Product Management means",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Creating products that maximize value while minimizing harm to customers, society, and stakeholders.",
+                "B": "Maximizing shareholder value regardless of consequences.",
+                "C": "Complying only with government regulations.",
+                "D": "Prioritizing ethical goals over business goals."
+            },
+            "correct_option_label": "A",
+            "explanation": "Responsible Product Management is defined as building software offerings that maximize sustainable value creation while actively avoiding harm to users, society, regulators, and the environment.",
+            "module": 8
         }
     ]
 }
