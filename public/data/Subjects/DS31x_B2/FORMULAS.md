@@ -615,3 +615,286 @@ Given: $\text{SSR} = 1.86 \times 10^{11}$, $\text{SSE} = 4.08 \times 10^{11}$, $
 | **$t$ vs $F$ Relation in SLR** | $F = t^2$ (yields identical $p$-value for testing $\beta_1 = 0$) |
 | **Extrapolation Prohibition** | Predict $y$ **ONLY** for $x \in [x_{\min}, x_{\max}]$ of training data |
 | **Outlier Identification** | Standardized residual $|z_{e_i}| > 2$ (or $|z_{e_i}| > 3$) |
+
+
+## MODULE 3: Multiple Linear Regression (MLR)
+
+---
+
+### Multiple Linear Regression Model & Equations
+
+**Multiple Linear Regression (MLR)** extends simple linear regression by modeling a single continuous numeric dependent variable $y$ as a linear function of $p \ge 2$ independent variables $x_1, x_2, \dots, x_p$.
+
+```mermaid
+flowchart TD
+    A[Multiple Linear Regression Model] --> B["Population Model: y = beta0 + beta1*x1 + ... + betap*xp + epsilon"]
+    A --> C["Expected Value Equation: E(y) = beta0 + beta1*x1 + ... + betap*xp"]
+    A --> D["Sample Estimated Equation: yhat = b0 + b1*x1 + ... + bp*xp"]
+    B --> E["Assumptions on Error epsilon: Mean=0, Var=sigma^2, Independent, Normal"]
+    D --> F[OLS Estimation: Minimize SSE]
+```
+
+| Term / Notation | Mathematical Form | Definition / Role |
+|---|---|---|
+| **Dependent Variable** | $y$ | Response, target, or outcome variable being predicted (continuous numeric) |
+| **Independent Variables** | $x_1, x_2, \dots, x_p$ | Predictor variables, explanatory variables, or features ($p = \text{number of predictors}$) |
+| **Population MLR Model** | $y = \beta_0 + \sum_{j=1}^p \beta_j x_j + \epsilon$ | Theoretical population relationship including random disturbance $\epsilon$ |
+| **Population MLR Equation** | $E(y) = \beta_0 + \sum_{j=1}^p \beta_j x_j$ | Conditional mean / expected value of $y$ for given predictor values |
+| **Estimated MLR Equation** | $\hat{y} = b_0 + \sum_{j=1}^p b_j x_j$ | Sample fitted equation where $b_0, b_1, \dots, b_p$ estimate $\beta_0, \beta_1, \dots, \beta_p$ |
+| **Response Surface** | Plane in $(p+1)$-D space | Geometric representation of $E(y)$ (e.g., a 2D plane in 3D space when $p=2$) |
+
+#### Interpretation of Regression Coefficients
+- **Partial Regression Slope ($b_j$):** Represents the estimated change in the mean of $y$ per 1-unit increase in $x_j$, **holding all other independent variables constant** (*ceteris paribus*).
+- **Intercept ($b_0$):** Expected value of $y$ when all $x_j = 0$. Testing $H_0: \beta_0 = 0$ is rarely of practical interest; interpreting $b_0$ is invalid if all $x_j = 0$ lies outside the training data range (**extrapolation**).
+
+> **Q:** What is the geometric representation of a multiple linear regression equation with $p=2$ independent variables? = **A plane (Response Surface) in 3-dimensional space** ✓
+> **Q:** How is the partial regression coefficient $b_1$ interpreted in MLR? = **The estimated change in $y$ for a 1-unit change in $x_1$, holding all other independent variables constant** ✓
+> **Q:** Why is hypothesis testing on the intercept $\beta_0$ usually of low practical interest? = **Because predicting $y$ when all $x=0$ often requires extrapolation outside the training data range** ✓
+
+---
+
+### The 10 Steps of MLR Model Building
+
+```mermaid
+flowchart TD
+    S1[1. Collect/Extract Data] --> S2[2. Preprocess Data]
+    S2 --> S3[3. Descriptive Analytics & Plots]
+    S3 --> S4[4. Decide Modeling Strategy]
+    S4 --> S5["5. Partition Data (75% Train / 25% Valid)"]
+    S5 --> S6[6. Specify Functional Form]
+    S6 --> S7[7. Estimate Parameters via OLS]
+    S7 --> S8[8. Perform Model Diagnostics]
+    S8 --> S9[9. Validate on Validation Dataset]
+    S9 --> S10[10. Deploy Model & Monitor]
+```
+
+- **Step 1 — Data Collection:** Gather data from primary (surveys/interviews) or secondary (ERP, databases) sources.
+- **Step 2 — Data Preprocessing:** Assess data quality, handle missing observations, remove recording errors, and transform categorical/qualitative variables.
+- **Step 3 — Descriptive Analytics:** Use scatter plots, correlation matrices, and box plots to identify relationships, multicollinearity warnings, or proxy variables.
+- **Step 4 — Modeling Strategy:** Select independent variables that are **controllable by decision-makers** and demonstrate consistent performance across subsets.
+- **Step 5 — Data Partitioning:** Split data into training (~75%) and validation (~25%) datasets using random sampling.
+- **Step 6 — Specify Functional Form:** Determine initial functional structure (linear, polynomial terms, log transformations).
+- **Step 7 — Parameter Estimation:** Use **Ordinary Least Squares (OLS)** via matrix algebra to compute point estimates $b_0, b_1, \dots, b_p$ minimizing $\text{SSE}$.
+- **Step 8 — Model Diagnostics:** Perform overall $F$-test, individual $t$-tests, and check for multicollinearity, heteroscedasticity, and non-normality of residuals.
+- **Step 9 — Model Validation:** Assess validation metrics ($R^2$, Adjusted $R^2$, MAPE, RMSE) to ensure low bias, low variance, and avoid **overfitting**.
+- **Step 10 — Deployment & Monitoring:** Formulate business decision rules and track model degradation over time.
+
+> **Q:** Overfitting occurs when a regression model performs well on the **Training Data** but poorly on the **Validation Data** ✓
+> **Q:** Why are uncontrollable variables (such as weather) less desirable in managerial regression models? = **Decision-makers cannot directly manipulate them to drive business outcomes** ✓
+
+---
+
+### Variation Decomposition & Adjusted $R^2$
+
+$$\text{SST} = \text{SSR} + \text{SSE}$$
+
+| Sum of Squares | Formula | Degrees of Freedom (DF) | Mean Square (MS) | Role / Property |
+|---|---|---|---|---|
+| **Total (SST)** | $\sum_{i=1}^n (y_i - \bar{y})^2$ | $n - 1$ | — | Total variation in $y$; **independent** of chosen predictors |
+| **Regression (SSR)** | $\sum_{i=1}^n (\hat{y}_i - \bar{y})^2$ | $p$ | $\text{MSR} = \frac{\text{SSR}}{p}$ | Variation explained by the $p$ independent variables |
+| **Error (SSE)** | $\sum_{i=1}^n (y_i - \hat{y}_i)^2$ | $n - p - 1$ | $\text{MSE} = \frac{\text{SSE}}{n - p - 1}$ | Unexplained variation; $\text{MSE} = s^2$ is an unbiased estimate of $\sigma^2$ |
+
+#### Multiple Coefficient of Determination ($R^2$)
+$$R^2 = \frac{\text{SSR}}{\text{SST}} = 1 - \frac{\text{SSE}}{\text{SST}}, \quad 0 \le R^2 \le 1$$
+
+- **Limitation of $R^2$:** Adding any new independent variable to an MLR model will **never decrease** $R^2$ (SSR increases or stays constant; SSE decreases or stays constant), even if the variable is completely irrelevant.
+
+#### Adjusted Multiple Coefficient of Determination ($R^2_{\text{adj}}$)
+$$R^2_{\text{adj}} = 1 - \left[ (1 - R^2) \frac{n - 1}{n - p - 1} \right]$$
+
+- **Purpose:** Penalizes the addition of uninformative independent variables by accounting for degrees of freedom.
+- **Properties:**
+  - $R^2_{\text{adj}} \le R^2$ always.
+  - If $p$ is large relative to $n$, the term can become negative; by convention, set $R^2_{\text{adj}} = 0$.
+
+> **Q:** Adding additional independent variables to an MLR model will **ALWAYS** increase or maintain $R^2$ = **TRUE** ✓
+> **Q:** What is the denominator degrees of freedom for MSE in an MLR model with $n$ observations and $p$ predictors? = **$n - p - 1$** ✓
+> **Q:** If the calculated $R^2_{\text{adj}}$ is mathematically negative due to $p > n$, its reported value is set to **0** ✓
+
+---
+
+### Hypothesis Testing: Overall $F$-Test vs. Individual $t$-Tests
+
+In MLR, the $F$-test and $t$-tests serve distinctly different analytical functions:
+
+```mermaid
+flowchart TD
+    A[Model Evaluation] --> B[Overall F-Test]
+    B -->|H0: beta1 = beta2 = ... = betap = 0| C{Reject H0?}
+    C -->|No| D[Model has NO significant linear relationship]
+    C -->|Yes| E[Overall model is statistically significant]
+    E --> F[Individual t-Tests for each betaj]
+    F -->|H0: betaj = 0| G{Reject H0 for xj?}
+    G -->|Yes| H[Predictor xj contributes significantly]
+    G -->|No| I[Predictor xj is redundant / check multicollinearity]
+```
+
+#### 1. Overall Significance Test ($F$-Test)
+- **Null Hypothesis ($H_0$):** $H_0: \beta_1 = \beta_2 = \dots = \beta_p = 0$ (No linear relationship between $y$ and the entire set of predictors).
+- **Alternate Hypothesis ($H_A$):** $H_A:$ At least one $\beta_j \neq 0$ (One or more predictors are linearly related to $y$).
+- **Test Statistic:**
+  $$F = \frac{\text{MSR}}{\text{MSE}} = \frac{\text{SSR} / p}{\text{SSE} / (n - p - 1)} \sim F_{p, \, n - p - 1}$$
+- **Decision Rule:** Reject $H_0$ if $F > F_{\alpha, p, n-p-1}$ or $p\text{-value} \le \alpha$.
+
+#### 2. Individual Significance Test ($t$-Test)
+- **Null Hypothesis ($H_0$):** $H_0: \beta_j = 0$ (Predictor $x_j$ does not contribute uniquely given other variables).
+- **Alternate Hypothesis ($H_A$):** $H_A: \beta_j \neq 0$.
+- **Test Statistic:**
+  $$t = \frac{b_j}{s_{b_j}} \sim t_{n - p - 1}$$
+- **Decision Rule:** Reject $H_0$ if $|t| > t_{\alpha/2, n-p-1}$ or $p\text{-value} \le \alpha$.
+
+> **Q:** In MLR, the $F$-test and $t$-test always provide identical conclusions = **FALSE** ✓ *(In MLR, the $F$-test assesses overall model significance, while individual $t$-tests assess the marginal contribution of each predictor)*
+> **Q:** What are the numerator and denominator degrees of freedom for the MLR $F$-test? = **Numerator $\text{DF} = p$, Denominator $\text{DF} = n - p - 1$** ✓
+> **Q:** Under $H_0: \beta_1 = \dots = \beta_p = 0$, the expected value of the ratio $\frac{\text{MSR}}{\text{MSE}}$ is approximately **1** ✓
+
+---
+
+### Multicollinearity & Omitted Variable Bias
+
+#### Multicollinearity
+**Multicollinearity** refers to high linear correlation among two or more independent variables ($x_i, x_j$) within an MLR model.
+
+- **Rule of Thumb Warning:** Pairwise sample correlation $|r_{x_i, x_j}| > 0.70$ (or $< -0.70$).
+- **Consequences / Symptoms:**
+  1. **Contradictory Significance:** Overall $F$-test is highly significant ($p < 0.001$), but individual $t$-tests fail to reject $H_0$ ($p > 0.05$) for heavily correlated variables.
+  2. **Wrong Signs:** OLS estimates yield coefficient signs opposite to economic/business logic (e.g., negative slope for income).
+  3. **High Variance:** Standard errors $s_{b_j}$ become heavily inflated, reducing confidence in individual coefficients.
+- **Remedy:** Drop redundant collinear variables from the regression model.
+
+#### Omitted Variable Bias (OVB)
+**Omitted Variable Bias** occurs when a relevant predictor correlated with both the dependent variable $y$ and an included predictor $x$ is omitted from the model.
+
+| Required Conditions for OVB | Observable Effects of Correcting OVB |
+|---|---|
+| 1. Omitted variable is correlated with $y$.<br>2. Omitted variable is correlated with one or more included $x$ variables. | - Substantial increase in $R^2$ and $R^2_{\text{adj}}$.<br>- Substantial drop in standard error of estimate $s$.<br>- Drop in standard errors $s_{b_j}$ and $p$-values of included variables.<br>- Included variable slope adjusts to its true marginal contribution. |
+
+> **Q:** What correlation threshold serves as a general rule of thumb for potential multicollinearity? = **$|r| > 0.70$** ✓
+> **Q:** Severe multicollinearity can cause OLS slope estimates to take the **Wrong Sign** ✓
+> **Q:** If an omitted variable is completely uncorrelated with all included $x$ variables, does omitted variable bias occur in $b_j$? = **NO** ✓ *(OVB requires correlation with both $y$ and at least one included $x$)*
+
+---
+
+### Residual Analysis in MLR
+
+Residuals $e_i = y_i - \hat{y}_i$ are standardized via $z_{e_i} = \frac{e_i}{s_e}$.
+
+- **Residuals vs. Predicted Values ($\hat{y}$):** Primary diagnostic plot in MLR (condenses multidimensional predictors into a single 2D plot). Ideal pattern is a random horizontal band.
+- **Standardized Residuals vs. $\hat{y}$:** Under normality assumptions, ~95% of standardized residuals lie within $[-2, +2]$.
+  - Points with $|z_{e_i}| > 2$ (or $|z_{e_i}| > 3$) are flagged as **outliers**.
+- **Handling Outliers & Influential Observations:**
+  - Verify data collection/entry accuracy; correct erroneous data and rerun regression.
+  - Do **NOT** delete valid observations unless they definitively do not belong to the target population.
+
+> **Q:** Why is the plot of residuals versus predicted values ($\hat{y}$) preferred over residuals versus individual $x_i$ in MLR? = **It provides a single condensed diagnostic plot across multiple independent variables** ✓
+> **Q:** Outliers should routinely be deleted to improve $R^2$ = **FALSE** ✓ *(They should only be deleted if proven to be erroneous or unrepresentative of the population)*
+
+---
+
+### Comprehensive MLR Numerical Case Studies
+
+**Q1 (Canara Bank Credit Card Spend - Hanumantha):** Sample $n = 55$ customers.
+Dependent variable $y = \text{Monthly Spend (Rs)}$.
+Predictors: $x_1 = \text{Annual Income (Lakhs)}$, $x_2 = \text{Household Size}$.
+Regression output: $b_0 = 355.68, b_1 = 71.16, b_2 = 339.90$.
+Sums of Squares: $\text{SST} = 114,197,923$, $\text{SSR} = 91,468,852$, $\text{SSE} = 22,729,071$.
+Predictor standard errors: $s_{b_1} = 6.92, s_{b_2} = 54.05$. Inter-variable correlation: $r_{x_1, x_2} = 0.32$.
+Compute $R^2, R^2_{\text{adj}}, s, \text{MSR}, \text{MSE}, F\text{-stat}$, and individual $t$-tests at $\alpha = 0.05$.
+
+> *Why: Evaluating a 2-variable MLR model and conducting overall and individual hypothesis tests.*
+> $\hat{y} = 355.68 + 71.16 x_1 + 339.90 x_2$
+> $R^2 = \frac{\text{SSR}}{\text{SST}} = \frac{91,468,852}{114,197,923} = 0.801 \approx 0.80 \implies 80\% \text{ variation explained}$
+> $R^2_{\text{adj}} = 1 - \left[ (1 - 0.801) \frac{55 - 1}{55 - 2 - 1} \right] = 1 - \left[ 0.199 \times \frac{54}{52} \right] = 1 - 0.2067 = 0.793$
+> $\text{DF}_{\text{reg}} = p = 2, \quad \text{DF}_{\text{error}} = n - p - 1 = 55 - 2 - 1 = 52$
+> $\text{MSR} = \frac{91,468,852}{2} = 45,734,426$
+> $\text{MSE} = \frac{22,729,071}{52} = 437,097.52 \approx 437,098 \implies s = \sqrt{437,098} = 661.13$
+> $F = \frac{\text{MSR}}{\text{MSE}} = \frac{45,734,426}{437,097.52} = 104.63 \quad (p < 0.001 \implies \text{Reject } H_0: \beta_1 = \beta_2 = 0)$
+> $t_{\text{income}} = \frac{b_1}{s_{b_1}} = \frac{71.17}{6.92} = 10.28 \quad (p < 0.001 \implies \text{Income is significant})$
+> $t_{\text{size}} = \frac{b_2}{s_{b_2}} = \frac{339.92}{54.05} = 6.29 \quad (p < 0.001 \implies \text{Household Size is significant})$
+> **Answer = Model is highly significant ($R^2=0.80, R^2_{\text{adj}}=0.793, F=104.63, s=661.13$); both predictors are individually significant** ✓
+> *(Adding household size increased $R^2$ from 0.65 to 0.80 and lowered standard error from 868.9 to 661.1)*
+
+---
+
+**Q2 (Canara Bank Multicollinearity Case):** Using Hanumantha's data, replace household size with monthly income ($x_1$) alongside annual income ($x_2$). Correlation $r_{x_1, x_2} = 0.83$. Regression output: $\hat{y} = b_0 - 202.85 x_1 + 102.74 x_2$, $R^2 = 0.66$. $F$-test is significant ($p < 0.05$), but $t$-test for monthly income gives $t = 0.18, p > 0.05$. Analyze output.
+
+> *Why: Demonstrating diagnostic detection of severe multicollinearity.*
+> 1. High correlation between predictors: $r_{x_1, x_2} = 0.83 > 0.70$.
+> 2. Contradictory inference: Overall $F$-test is significant, but individual $t$-test for monthly income fails to reject $H_0$ ($t = 0.18, p > 0.05$).
+> 3. Wrong coefficient sign: $b_1 = -202.85$ is negative, contradicting the economic logic that higher monthly income increases credit card spend.
+> **Answer = Severe multicollinearity is present; monthly income is redundant given annual income and must be removed** ✓
+
+---
+
+**Q3 (99 Acres Household Debt Progression - Manjula Nayak):** Sample $n = 500$ households ($\text{SST} = 5.94 \times 10^{11}$). Compare progressive regression models for Debt ($y$):
+- Model A (SLR - First Income $x_1$): $R^2 = 0.31, s = 28619, \text{SSR} = 1.86 \times 10^{11}$
+- Model B (SLR - Monthly Payment $x_2$): $R^2 = 0.37, s = 27518, \text{SSR} = 2.18 \times 10^{11}$
+- Model C (MLR - $x_1 + x_2$): $\hat{y} = 13081.6 + 0.0246 x_1 + 2.09 x_2$, $R^2 = 0.45, R^2_{\text{adj}} = 0.448, s = 25644, F = 203$
+- Model D (MLR - Payment $x_2$ + Utilities $x_3$): $\hat{y} = -140771 + 1.44 x_2 + 168.91 x_3$, $R^2 = 0.67, R^2_{\text{adj}} \approx 0.67, s = 19839, F = 506.9$
+- Model E (MLR - $x_1 + x_2 + x_3$): $\hat{y} = -140378 + 0.017 x_1 + 0.96 x_2 + 157.95 x_3$, $R^2 = 0.708, R^2_{\text{adj}} = 0.70, s = 18699, F = 401.6$
+
+Evaluate ANOVA and individual $t$-tests for Model E ($p=3, n=500$) given $s_{b_1} = 0.002, s_{b_2} = 0.148, s_{b_3} = 7.54$.
+
+> *Why: Analyzing multi-variable model improvements, ANOVA partitioning, and OVB elimination.*
+> $\text{DF}_{\text{reg}} = 3, \quad \text{DF}_{\text{error}} = 500 - 3 - 1 = 496$
+> $\text{SSR} = 4.21 \times 10^{11}, \quad \text{SSE} = 1.73 \times 10^{11}$
+> $\text{MSR} = \frac{4.21 \times 10^{11}}{3} = 1.40 \times 10^{11}$
+> $\text{MSE} = \frac{1.73 \times 10^{11}}{496} = 349,653,451 \implies s = 18699$
+> $F = \frac{1.40 \times 10^{11}}{349,653,451} = 401.6 \quad (p \approx 0 \implies \text{Overall Model Significant})$
+> $t_{\text{income}} = \frac{0.017}{0.002} = 7.96 \quad (p < 0.001)$
+> $t_{\text{payment}} = \frac{0.96}{0.148} = 6.50 \quad (p < 0.001)$
+> $t_{\text{utilities}} = \frac{157.95}{7.54} = 20.95 \quad (p < 0.001)$
+> **Answer = Model E is the best model ($R^2=0.708, s=18699, F=401.6$); all 3 predictors are individually highly significant** ✓
+> *(Progressive inclusion of omitted variables resolved OVB, increasing $R^2$ from 0.31 to 0.71 while cutting standard error by ~35%)*
+
+---
+
+**Q4 (Magic Bricks Flat Prices in Mysuru - Vijay Gowda):** Sample $n = 30$ apartments ($\text{SST} = 251,001$).
+Dependent variable $y = \text{Selling Price (Lakhs)}$.
+Model 1 (SLR - Area $x_1$): $\hat{y} = 28.37 + 0.0968 x_1$, $R^2 = 0.44, s = 70.57, F = 22.39, t = 4.73$.
+Model 2 (MLR - Area $x_1$ + Bedrooms $x_2$): $\hat{y} = -29.19 + 0.085 x_1 + 23.46 x_2$, $R^2 = 0.461, R^2_{\text{adj}} = 0.42, s = 70.74, F = 11.58 (p = 0.0002)$.
+Given $s_{b_1} = 0.024, s_{b_2} = 25.15, r_{x_1, x_2} = 0.542$. Perform individual significance tests for Model 2.
+
+> *Why: Identifying collinear redundancy when adding a correlated non-significant variable.*
+> $\text{DF}_{\text{error}} = 30 - 2 - 1 = 27$
+> $t_{\text{area}} = \frac{0.085}{0.024} = 3.46 \quad (p = 0.002 \le 0.05 \implies \text{Reject } H_0)$
+> $t_{\text{bedrooms}} = \frac{23.46}{25.15} = 0.932 \quad (p = 0.36 > 0.05 \implies \text{Do NOT Reject } H_0)$
+> **Answer = Bedrooms is NOT statistically significant ($t = 0.932, p = 0.36$); adding Bedrooms does not improve the model due to collinearity with Area** ✓
+> *(Notice that Adjusted $R^2$ dropped from 0.43 to 0.42, penalizing the inclusion of the redundant Bedrooms variable)*
+
+---
+
+**Q5 (Magic Bricks Flat Prices - Bathrooms Model):** In Vijay Gowda's dataset ($n=30$), test Model 3 (Area $x_1$ + Bathrooms $x_2$): $\hat{y} = 10.61 + 0.084 x_1 + 17.80 x_2$. Given $R^2 = 0.45, R^2_{\text{adj}} = 0.41, s = 71.18, F = 11.26 (p = 0.0003), r_{x_1, x_2} = 0.659$. Bathrooms $t$-statistic $= 0.723 (p = 0.48)$. What is the conclusion?
+
+> *Why: Diagnostics confirm that Bathrooms is also redundant.*
+> Overall model is significant ($F = 11.26, p < 0.001$), but Bathrooms is not individually significant ($t = 0.723, p = 0.48 > 0.05$).
+> $R^2_{\text{adj}}$ decreases from $0.43$ (SLR) to $0.41$.
+> **Answer = Bathrooms is NOT statistically significant ($p = 0.48$); neither Bedrooms nor Bathrooms should be added to Area** ✓
+
+---
+
+## Quick Reference: Multiple Linear Regression Case Comparison
+
+| Case Study | Model Predictors ($p$) | Sample Size ($n$) | Estimated Equation ($\hat{y}$) | $R^2$ | $R^2_{\text{adj}}$ | Standard Error ($s$) | $F$-Stat ($p\text{-value}$) | Non-Significant Predictors ($p > 0.05$) |
+|---|---|---|---|---|---|---|---|---|
+| **Canara Bank (SLR)** | Income ($1$) | $55$ | $1047.37 + 85.27 x_1$ | $0.650$ | $0.640$ | $868.9$ | $98.24 \; (< 0.001)$ | None |
+| **Canara Bank (MLR)** | Income + HH Size ($2$) | $55$ | $355.68 + 71.16 x_1 + 339.90 x_2$ | $0.801$ | $0.793$ | $661.1$ | $104.63 \; (< 0.001)$ | None |
+| **Canara Bank (Collinear)** | Monthly Inc + Annual Inc ($2$) | $55$ | $b_0 - 202.85 x_1 + 102.74 x_2$ | $0.660$ | $0.647$ | — | Significant | Monthly Income ($t=0.18, \text{wrong sign}$) |
+| **99 Acres (Model C)** | Income + Payment ($2$) | $500$ | $13081.6 + 0.025 x_1 + 2.09 x_2$ | $0.450$ | $0.448$ | $25644$ | $203.0 \; (< 0.001)$ | None |
+| **99 Acres (Model D)** | Payment + Utilities ($2$) | $500$ | $-140771 + 1.44 x_2 + 168.91 x_3$ | $0.670$ | $0.670$ | $19839$ | $506.9 \; (< 0.001)$ | None |
+| **99 Acres (Model E)** | Income + Payment + Util ($3$) | $500$ | $-140378 + 0.017 x_1 + 0.96 x_2 + 157.95 x_3$ | $0.708$ | $0.700$ | $18699$ | $401.6 \; (< 0.001)$ | None |
+| **Magic Bricks (SLR)** | Area ($1$) | $30$ | $28.37 + 0.0968 x_1$ | $0.440$ | $0.430$ | $70.57$ | $22.39 \; (< 0.001)$ | None |
+| **Magic Bricks (MLR 1)** | Area + Bedrooms ($2$) | $30$ | $-29.19 + 0.085 x_1 + 23.46 x_2$ | $0.461$ | $0.420$ | $70.74$ | $11.58 \; (0.0002)$ | Bedrooms ($t=0.932, p=0.36$) |
+| **Magic Bricks (MLR 2)** | Area + Bathrooms ($2$) | $30$ | $10.61 + 0.084 x_1 + 17.80 x_2$ | $0.450$ | $0.410$ | $71.18$ | $11.26 \; (0.0003)$ | Bathrooms ($t=0.723, p=0.48$) |
+
+---
+
+## Key Decision Rules Summary
+
+| Rule / Principle | Operational Formula / Criteria | Key Takeaway |
+|---|---|---|
+| **Overall Model Significance** | $F = \frac{\text{MSR}}{\text{MSE}} > F_{\alpha, p, n-p-1}$ | Rejects $H_0: \beta_1 = \dots = \beta_p = 0$; validates that the overall model has explanatory power |
+| **Individual Predictor Significance** | $t = \frac{b_j}{s_{b_j}}$ with $\text{DF} = n - p - 1$ | Rejects $H_0: \beta_j = 0$; confirms $x_j$ uniquely contributes after controlling for other predictors |
+| **Adjusted $R^2$ Formula** | $R^2_{\text{adj}} = 1 - \left[ (1 - R^2) \frac{n - 1}{n - p - 1} \right]$ | Used to compare models with different numbers of predictors; penalizes useless variables |
+| **Multicollinearity Warning Rule** | $|r_{x_i, x_j}| > 0.70$ | High correlation causes inflated standard errors, insignificant $t$-tests, and wrong coefficient signs |
+| **Omitted Variable Bias Test** | $r(y, x_{\text{omitted}}) \neq 0$ AND $r(x_{\text{included}}, x_{\text{omitted}}) \neq 0$ | Omitting relevant variables biases included slopes; adding them increases $R^2$ and reduces $s$ |
+| **Standardized Residual Outlier Rule** | $|z_{e_i}| = \left|\frac{e_i}{s_e}\right| > 2.0$ (or $> 3.0$) | Flags potential outliers; verify data entry before deciding whether to retain or re-evaluate |

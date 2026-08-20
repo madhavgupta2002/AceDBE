@@ -285,6 +285,146 @@
             "correct_option_label": "B",
             "explanation": "Standardized residuals follow a standard normal distribution $N(0,1)$. By the empirical rule, approximately 95% of the values fall within two standard deviations of the mean ($-2$ to $+2$).",
             "module": 2
+        },
+        {
+            "question_id": "M3_1",
+            "question_text": "A multiple linear regression model for monthly credit-card spending is estimated as: ŷ = 355.68 + 71.16x₁ + 339.9x₂ where x₁ is annual household income (₹ lakh) and x₂ is household size.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A ₹1 lakh increase in annual income causes monthly spending to increase by ₹71.16, irrespective of household size.",
+                "B": "A ₹1 lakh increase in annual income is associated with an estimated ₹71.16 increase in monthly spending, holding household size constant.",
+                "C": "A one-unit increase in household size is associated with an estimated ₹71.16 increase in monthly spending, holding income constant.",
+                "D": "Households with ₹1 lakh higher income spend ₹71.16 more per month on average, without considering other variables."
+            },
+            "correct_option_label": "B",
+            "explanation": "In multiple linear regression, the slope coefficient for an independent variable represents the estimated change in the dependent variable for a one-unit increase in that variable, holding all other independent variables constant (ceteris paribus).",
+            "module": 3
+        },
+        {
+            "question_id": "M3_2",
+            "question_text": "Suppose a researcher develops several MLR models. Model A has very low training error but substantially higher validation error. Model B has slightly higher training error but similarly low training and validation errors. Based on the module, which model should generally be preferred?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Model A, because the model with the lowest training error is always the best model.",
+                "B": "Model A, because validation data should only be used after deployment.",
+                "C": "Model B, because consistent performance across training and validation data suggests lower variance and better generalisation.",
+                "D": "Model B only if its R² is exactly equal to Model A's R²."
+            },
+            "correct_option_label": "C",
+            "explanation": "Model A is overfitting to the training data (high variance on unseen data). Model B shows consistent and balanced error rates between training and validation data, indicating lower variance and better generalization ability.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_3",
+            "question_text": "A multiple linear regression model has n = 55 observations, p = 2 independent variables, and: R² = 0.80. Which value is closest to the adjusted R²?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "0.800",
+                "B": "0.780",
+                "C": "0.650",
+                "D": "0.793"
+            },
+            "correct_option_label": "D",
+            "explanation": "Adjusted R² is computed using $R^2_{adj} = 1 - (1 - R^2) \\frac{n - 1}{n - p - 1} = 1 - (1 - 0.80) \\frac{54}{52} = 1 - 0.20 \\times 1.03846 = 1 - 0.20769 = 0.7923 \\approx 0.793$.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_4",
+            "question_text": "A multiple linear regression model is estimated using 55 observations and 4 independent variables. What are the degrees of freedom associated with SSR and SSE, respectively?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "4 and 50",
+                "B": "4 and 51",
+                "C": "54 and 50",
+                "D": "3 and 51"
+            },
+            "correct_option_label": "A",
+            "explanation": "For an MLR model with $n$ observations and $p$ independent variables: $df(SSR) = p = 4$, and $df(SSE) = n - p - 1 = 55 - 4 - 1 = 50$.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_5",
+            "question_text": "An MLR model has the following F-test result: p-value = 0.018. The significance level is: α = 0.05. Which conclusion is most appropriate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reject H₀ and conclude that all independent variables individually have significant relationships with y.",
+                "B": "Fail to reject H₀ because the p-value is greater than zero.",
+                "C": "Reject H₀ and conclude that there is statistically significant evidence that at least one of the regression coefficients β₁, …, βₚ is non-zero.",
+                "D": "Reject H₀ and conclude that the intercept β₀ is statistically significant."
+            },
+            "correct_option_label": "C",
+            "explanation": "The overall F-test tests $H_0: \\beta_1 = \\beta_2 = \\dots = \\beta_p = 0$ against $H_a$: at least one $\\beta_j \\neq 0$. Because $p$-value = 0.018 < $\\alpha = 0.05$, we reject $H_0$ and conclude that at least one coefficient is significantly different from zero.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_6",
+            "question_text": "Suppose an MLR model includes monthly income (x₁) and annual income (x₂) as independent variables. Their sample correlation coefficient is approximately 0.83. The overall F-test is statistically significant, but the individual t-test for monthly income has a p-value that is not statistically significant. Which interpretation is most appropriate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Monthly income has no relationship with monthly spending because its t-test is not significant.",
+                "B": "The F-test must be incorrect because an individual variable has an insignificant t-test.",
+                "C": "Due to the high correlation between monthly and annual income, monthly income may not provide significant additional explanatory value after annual income is already included in the model.",
+                "D": "The insignificant t-test proves that the correlation between monthly and annual income is zero."
+            },
+            "correct_option_label": "C",
+            "explanation": "Due to high multicollinearity between monthly and annual income ($r \\approx 0.83$), the individual t-test tests the marginal contribution of monthly income given that annual income is already in the model. Monthly income provides redundant explanatory power.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_7",
+            "question_text": "Suppose residual analysis from an MLR model reveals that the variance of the residuals appears to increase as the fitted values increase. Which regression assumption is most directly being questioned?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Homoscedasticity",
+                "B": "E(ε) = 0",
+                "C": "Normality of ε",
+                "D": "Independence of the independent variables"
+            },
+            "correct_option_label": "A",
+            "explanation": "Homoscedasticity assumes constant variance of the error terms across all fitted values $\\hat{y}$. An increasing spread/variance violates this assumption (heteroscedasticity).",
+            "module": 3
+        },
+        {
+            "question_id": "M3_8",
+            "question_text": "Consider the following two observations about a multiple linear regression model: The residual plot against each individual Xᵢ appears approximately random. The residual plot against predicted values ŷ displays a pronounced U-shaped pattern. Which interpretation is most consistent with the material?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The model must be adequate because all individual Xᵢ residual plots are random.",
+                "B": "The U-shaped pattern indicates that the constant variance assumption is violated, but the functional form is otherwise adequate.",
+                "C": "The U-shaped pattern demonstrates that the independent variables are highly correlated.",
+                "D": "The U-shaped pattern suggests that the assumed regression model may not adequately represent the relationship between the variables, despite the individual Xᵢ plots appearing acceptable."
+            },
+            "correct_option_label": "D",
+            "explanation": "A curved (U-shaped) pattern in the residual plot against fitted values $\\hat{y}$ indicates that the assumed linear regression model does not adequately capture the non-linear relationship between the variables, even if individual $X_i$ residual plots appear random.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_9",
+            "question_text": "Which of the following best distinguishes an outlier from an influential observation in multiple linear regression?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An outlier is always caused by an error in data collection, whereas an influential observation is always valid.",
+                "B": "An outlier is a point that does not fit the trend of the remaining data, whereas an influential observation is one that can substantially affect the estimated regression equation if removed.",
+                "C": "An outlier must have an extreme X-value, whereas an influential observation must have an extreme Y-value.",
+                "D": "An outlier affects only the intercept, whereas an influential observation affects only the slope."
+            },
+            "correct_option_label": "B",
+            "explanation": "An outlier is an observation with an unusually large residual that deviates from the overall pattern of the data. An influential observation is a data point whose presence or removal substantially alters the estimated regression parameters.",
+            "module": 3
+        },
+        {
+            "question_id": "M3_10",
+            "question_text": "A researcher identifies an influential observation in an MLR dataset. The observation substantially changes the estimated regression coefficients when it is removed. After investigation, the researcher confirms that: 1. The observation was recorded correctly. 2. It genuinely belongs to the population being studied. 3. It is not a data-entry or collection error. Which action is most appropriate according to the module?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Remove the observation because its strong influence makes the regression equation unreliable.",
+                "B": "Retain the observation automatically and ignore its influence.",
+                "C": "Examine the observation carefully and consider obtaining data on intermediate values of the independent variables to better understand the relationship between Xᵢ and Y.",
+                "D": "Replace the observation with the predicted value ŷ so that it no longer influences the regression."
+            },
+            "correct_option_label": "C",
+            "explanation": "When an influential observation is valid and correctly recorded, dropping it is improper. The researcher should investigate it carefully and collect additional observations at intermediate levels of the predictors to better understand the nature of the relationship.",
+            "module": 3
         }
     ]
 }
