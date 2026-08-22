@@ -425,6 +425,146 @@
             "correct_option_label": "C",
             "explanation": "When an influential observation is valid and correctly recorded, dropping it is improper. The researcher should investigate it carefully and collect additional observations at intermediate levels of the predictors to better understand the nature of the relationship.",
             "module": 3
+        },
+        {
+            "question_id": "1",
+            "question_text": "Two datasets have different means, but Dataset A has a coefficient of variation of 0.15 while Dataset B has a coefficient of variation of 0.55. What can be concluded?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Dataset A has a higher standard deviation in absolute terms",
+                "B": "Dataset B shows greater relative variability compared to its mean",
+                "C": "Both datasets have identical spread since standard deviation was not given",
+                "D": "Coefficient of variation cannot be compared across different datasets"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Coefficient of Variation ($CV = \\frac{\\sigma}{\\mu}$) measures relative variability as a proportion of the mean. A higher $CV$ (0.55 vs 0.15) indicates that Dataset B exhibits greater dispersion relative to its average value.",
+            "module": 4
+        },
+        {
+            "question_id": "2",
+            "question_text": "A simple linear regression of Y on a single independent variable X1 produces an R-Square of 0.25. When a second independent variable X2 is added to form a multiple regression, R-Square rises sharply to 0.78. What is the most likely explanation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The sample size must have increased when X2 was added",
+                "B": "R-Square increases only when the added variable is statistically significant and meaningfully improves the model",
+                "C": "X1 alone was suffering from omitted variable bias, absorbing the effect of the excluded X2",
+                "D": "The regression equation became nonlinear"
+            },
+            "correct_option_label": "C",
+            "explanation": "When an important explanatory variable ($X_2$) is omitted from a regression, the single predictor ($X_1$) suffers from omitted variable bias. Adding $X_2$ explains significant additional variation in $Y$, drastically increasing $R^2$ from 0.25 to 0.78.",
+            "module": 4
+        },
+        {
+            "question_id": "3",
+            "question_text": "In a multiple regression's ANOVA table, MSR = 1200 and MSE = 40. What is the approximate F-statistic, and what does a very small associated p-value imply?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "F = 30; we fail to reject the null hypothesis that all slope coefficients are zero",
+                "B": "F = 30; we reject the null hypothesis that all slope coefficients are simultaneously zero",
+                "C": "F = 0.033; the regression model is not significant",
+                "D": "F cannot be computed without knowing the sample size"
+            },
+            "correct_option_label": "B",
+            "explanation": "The overall model $F$-statistic is calculated as:\n$$F = \\frac{\\text{MSR}}{\\text{MSE}} = \\frac{1200}{40} = 30$$\nA very small $p$-value ($p < \\alpha$) leads to rejecting $H_0: \\beta_1 = \\beta_2 = \\dots = 0$, confirming the overall model is statistically significant.",
+            "module": 4
+        },
+        {
+            "question_id": "4",
+            "question_text": "A regression model includes a binary (dummy) variable coded 1 for \"Yes\" and 0 for \"No,\" with an estimated coefficient of 5.2 and a p-value close to zero. How should this coefficient be interpreted?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A one-unit increase in the dummy variable increases Y by 5.2%",
+                "B": "The correlation between the dummy variable and Y is 5.2",
+                "C": "The dummy variable explains 5.2% of the total variation in Y",
+                "D": "On average, the \"Yes\" group has a Y value 5.2 units higher than the \"No\" group, holding other variables constant"
+            },
+            "correct_option_label": "D",
+            "explanation": "In dummy variable coding, the coefficient represents the estimated difference in the mean value of the dependent variable $Y$ between the indicator group ($X=1$, \"Yes\") and the reference baseline group ($X=0$, \"No\"), ceteris paribus.",
+            "module": 4
+        },
+        {
+            "question_id": "5",
+            "question_text": "A correlation coefficient between two variables is calculated as 0.18, which seems weak. However, when a simple linear regression is run using these variables, the independent variable turns out to be statistically significant with a p-value near zero. What does this indicate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A weak correlation does not automatically mean a variable lacks statistical significance in explaining part of the variability in Y",
+                "B": "The correlation and regression results are contradictory, so one of them must be wrong",
+                "C": "Statistical significance depends only on correlation strength",
+                "D": "The R-Square value must be greater than 0.5 for any variable to be significant"
+            },
+            "correct_option_label": "A",
+            "explanation": "Statistical significance depends on both effect size and sample size ($n$). Even with a weak correlation ($r = 0.18$), a sufficiently large sample size can produce a very small standard error, proving the relationship is statistically non-zero ($p < 0.05$).",
+            "module": 4
+        },
+        {
+            "question_id": "6",
+            "question_text": "While reviewing regression diagnostics, an analyst finds that most standardised residuals fall between -2 and +2, but a few are close to +3 or -3. What is the most appropriate conclusion?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The regression model is invalid and should be discarded immediately",
+                "B": "Standardised residuals near ±3 always indicate a data-entry error",
+                "C": "The model's R-Square must be recalculated because residuals are usually zero",
+                "D": "A few observations may be unusual and should be investigated further, but they do not by themselves indicate that the model is invalid"
+            },
+            "correct_option_label": "D",
+            "explanation": "Standardized residuals are approximately standard normal; ~95% fall within $[-2, +2]$ and ~99.7% fall within $[-3, +3]$. Residuals near $\\pm 3$ represent potential outliers that warrant investigation but do not automatically invalidate the entire model.",
+            "module": 4
+        },
+        {
+            "question_id": "7",
+            "question_text": "In a multiple regression with three independent variables and 25 total observations, why is the Mean Square Error (MSE) calculated by dividing the Sum of Squares Error by 21 rather than 25?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because only 21 of the observations were used in the regression",
+                "B": "Because degrees of freedom are reduced by the number of estimated parameters, including the intercept",
+                "C": "Because 4 observations were treated as outliers and removed",
+                "D": "Because MSE is always calculated using n minus 4 by convention"
+            },
+            "correct_option_label": "B",
+            "explanation": "The degrees of freedom for error are calculated as $\\text{DF}_{\\text{error}} = n - p - 1$, where $n = 25$ and $p = 3$. This subtracts 4 total estimated parameters (3 slopes $\\beta_1, \\beta_2, \\beta_3$ plus 1 intercept $\\beta_0$), yielding $25 - 4 = 21$.",
+            "module": 4
+        },
+        {
+            "question_id": "8",
+            "question_text": "A regression model's Adjusted R-Square is very close to its regular R-Square value across several model variations. What does this pattern generally suggest?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The independent variables being added are contributing genuine explanatory power rather than just inflating R-Square artificially",
+                "B": "The model is definitely overfit and unreliable",
+                "C": "Adjusted R-Square and R-Square are mathematically identical in all cases",
+                "D": "The sample size must be very small for this to occur"
+            },
+            "correct_option_label": "A",
+            "explanation": "Adjusted $R^2$ penalizes the addition of non-informative predictors. If $R^2_{\\text{adj}}$ remains very close to $R^2$, the predictors contribute sufficient explanatory power to overcome the degrees-of-freedom penalty.",
+            "module": 4
+        },
+        {
+            "question_id": "9",
+            "question_text": "When examining a scatter plot of residuals against an independent variable, an analyst observes a clear curved pattern rather than a random scatter around zero. What does this most likely indicate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The regression model has too many independent variables",
+                "B": "The independent variable is statistically insignificant",
+                "C": "The linear model may not adequately capture the true relationship between the variables",
+                "D": "The standard error of the regression must be recalculated using a different formula"
+            },
+            "correct_option_label": "C",
+            "explanation": "A systematic curved pattern in a residual plot indicates a violation of the linearity assumption, suggesting that a non-linear or polynomial transformation (e.g., quadratic term) is required to capture the relationship.",
+            "module": 4
+        },
+        {
+            "question_id": "10",
+            "question_text": "Two independent variables in a regression model are found to be highly correlated with each other, even though each appears significant when tested separately. What potential issue should the analyst be concerned about when interpreting the individual coefficients?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Omitted variable bias",
+                "B": "Multicollinearity, which can make individual coefficient estimates unstable or difficult to interpret reliably",
+                "C": "Heteroscedasticity in the residuals",
+                "D": "A violation of the linearity assumption"
+            },
+            "correct_option_label": "B",
+            "explanation": "High correlation among independent variables creates multicollinearity. This inflates standard errors of the coefficients, making individual $t$-tests unreliable and parameter estimates sensitive to small data changes.",
+            "module": 4
         }
     ]
 }
