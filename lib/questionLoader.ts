@@ -57,6 +57,14 @@ export async function loadQuestionFile(
   }
 }
 
+// Sort modules numerically when possible, falling back to string comparison
+export const compareModules = (a: string | number, b: string | number): number => {
+  const na = typeof a === 'number' ? a : parseInt(a.toString(), 10);
+  const nb = typeof b === 'number' ? b : parseInt(b.toString(), 10);
+  if (!Number.isNaN(na) && !Number.isNaN(nb)) return na - nb;
+  return a.toString().localeCompare(b.toString());
+};
+
 // Bank info with display name
 export interface BankInfo {
   bankName: string;
@@ -98,7 +106,6 @@ export async function loadQuestions(
     return [];
   }
 
-  const examDate = questionFile.exam_metadata?.exam_date;
   return questionFile.questions.map(q => convertToInternalFormat(q, bankName, subjectCode, bankType));
 }
 
@@ -108,14 +115,10 @@ export async function loadAllQuestionsForSubject(
   subjectCode: string
 ): Promise<Question[]> {
   const banks = await getAvailableBanks(bankType, subjectCode);
-  const allQuestions: Question[] = [];
-
-  for (const bank of banks) {
-    const questions = await loadQuestions(bankType, subjectCode, bank.bankName);
-    allQuestions.push(...questions);
-  }
-
-  return allQuestions;
+  const results = await Promise.all(
+    banks.map(bank => loadQuestions(bankType, subjectCode, bank.bankName))
+  );
+  return results.flat();
 }
 
 // Set with modules info
@@ -151,7 +154,7 @@ export async function getSetsWithModules(
               .map(q => q.module)
               .filter(Boolean) as (string | number)[]
           )
-        ).sort();
+        ).sort(compareModules);
 
         setsWithModules.push({
           bankName: bank.bankName,
@@ -174,7 +177,9 @@ export async function getSetsWithModules(
     // Sort exam sets chronologically by date
     if (bankType === 'Exam') {
       setsWithModules.sort((a, b) => {
-        if (!a.exam_date || !b.exam_date) return 0;
+        if (!a.exam_date && !b.exam_date) return 0;
+        if (!a.exam_date) return 1;
+        if (!b.exam_date) return -1;
 
         // Parse dates in "DD Month YYYY" format
         const parseDate = (dateStr: string): Date => {

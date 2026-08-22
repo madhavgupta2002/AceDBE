@@ -23,8 +23,14 @@ const AnswerStatus: React.FC<AnswerStatusProps> = ({
       return 'bg-slate-700/60 text-slate-300 border border-slate-600/40 rounded-lg';
     }
 
-    // Check if arrays are equal
     const correctAnswer = correctAnswers[index];
+
+    // Subjective questions (no correct answer) stay neutral once viewed
+    if (correctAnswer.length === 0 || userAnswer[0] === 'SUBJECTIVE_ACKNOWLEDGED') {
+      return 'bg-indigo-700/60 text-white border border-indigo-500/50 rounded-lg';
+    }
+
+    // Check if arrays are equal
     const isCorrect = userAnswer.length === correctAnswer.length &&
       userAnswer.every(ans => correctAnswer.includes(ans));
 
