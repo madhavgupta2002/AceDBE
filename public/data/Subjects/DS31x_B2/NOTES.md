@@ -1664,3 +1664,411 @@ $$\text{Individual } t\text{-Statistic: } t_{\text{calc}} = \frac{b_j}{SE(b_j)} 
 * Multicollinearity signs: Pairwise $|r| > 0.70$, high overall $F$ alongside insignificant individual $t$-tests, and unexpected coefficient signs.
 * Omitted Variable Bias is corrected by adding relevant missing variables, which decreases the standard error of regression ($s$) and restores unbiased coefficient estimates.
 * In multiple regression, inspect the **residuals vs. predicted values ($\hat{Y}$)** plot as the primary check for homoscedasticity and linearity.
+
+# Module 4: Multiple Linear Regression-2
+
+## 4.1 Intercept Term in Regression
+
+### 4.1.1 Role and Interpretation of the Intercept
+
+#### Mathematical Meaning and Conditional Baseline
+* **Population Intercept ($\beta_0$)**: The expected value of the dependent variable $Y$ when all independent variables in the model simultaneously equal zero:
+
+$$E(Y | X_1 = 0, X_2 = 0, \dots, X_p = 0) = \beta_0$$
+
+* **Sample Estimator ($b_0$)**: The estimated point where the fitted regression hyperplane crosses the $Y$-axis.
+* In multiple regression models containing categorical variables, $b_0$ represents the baseline mean of the reference category when all continuous numerical variables are set to zero.
+
+#### Hypothesis Testing on the Intercept ($H_0: \beta_0 = 0$)
+* Standard regression output evaluates the significance of the intercept term:
+
+$$H_0: \beta_0 = 0 \quad \text{vs.} \quad H_A: \beta_0 \neq 0$$
+
+* **Test Statistic**:
+
+$$t_{\text{calc}} = \frac{b_0}{SE(b_0)} \sim t_{n - p - 1}$$
+
+* **Practical Relevance**:
+  * In most business and economic contexts, testing whether $\beta_0 = 0$ is of minimal practical interest.
+  * Inferences on $\beta_0$ are special cases of estimating the overall regression baseline. A statistically significant or non-significant $P$-value for $b_0$ does not determine whether the model as a whole is valid.
+
+#### Dangers of Extrapolation Outside the Range of Sample Data
+* **Extrapolation Error**: Occurs when a regression equation is used to predict $Y$ for predictor values outside the range observed in the training dataset.
+* If the sample data does not include $X_j = 0$ (e.g., house size of $0$ sq ft, bus age of $0$ years, or patient age of $0$ years), interpreting $b_0$ literally as a real-world baseline is invalid.
+* Regression equations must be restricted to the domain of the independent variables present in the training set.
+
+---
+
+## 4.2 Omitted Variable Bias (OVB)
+
+### 4.2.1 Theoretical Foundations of Omitted Variable Bias
+
+#### Definition and Core Mechanism
+* **Omitted Variable Bias (OVB)**: The distortion and inaccuracy introduced into estimated regression coefficients when one or more relevant explanatory variables are excluded from the model.
+* When a relevant variable is omitted, the included independent variables absorb the omitted variable's explanatory effect, causing the estimated slope coefficients ($b_j$) to deviate from their true population parameters ($\beta_j$).
+
+#### Conditions Required for Omitted Variable Bias to Occur
+For an excluded variable $Z$ to cause OVB in the coefficient of an included predictor $X$, **both** of the following conditions must hold:
+
+```
+                  ┌──────────────────────────────┐
+                  │ Omitted Variable (Z)          │
+                  └───────┬──────────────┬───────┘
+                          │              │
+    Condition 1:          │              │  Condition 2:
+    Correlated with Y     │              │  Correlated with X
+    (r_ZY ≠ 0)            ▼              ▼  (r_ZX ≠ 0)
+                  ┌──────────────┐   ┌──────────────┐
+                  │  Target (Y)  │   │ Predictor (X)│
+                  └──────────────┘   └──────────────┘
+```
+
+1. **Condition 1**: The omitted variable $Z$ is correlated with the dependent variable $Y$ ($r_{zy} \neq 0$).
+2. **Condition 2**: The omitted variable $Z$ is correlated with at least one included independent variable $X$ ($r_{zx} \neq 0$).
+
+---
+
+### 4.2.2 Detecting and Mitigating OVB
+
+#### Diagnostic Indicators: $R^2$, Standard Error ($s$), and Coefficient Shifts
+When an omitted variable is identified and added to the regression model:
+
+| Metric | Behavior When Omitted Variable is Added | Diagnostic Meaning |
+| :--- | :--- | :--- |
+| **$R^2$ and $R^2_{\text{adj}}$** | Significant increase | The newly added variable explains substantial previously unexplained variation. |
+| **Standard Error ($s = \sqrt{MSE}$)** | Significant decrease | Residual dispersion around the regression hyperplane is reduced. |
+| **Coefficients of Included Variables ($b_j$)** | Shifts noticeably | The included variable is relieved of the "borrowed" effect of the omitted variable, revealing its true partial slope. |
+| **$P$-Values of Existing Predictors** | May change/drop | Standard errors of estimators decrease, yielding more accurate significance tests. |
+
+#### Impact on Model Fit and Parameter Estimates
+* Excluding variables that satisfy both OVB conditions creates misleading managerial insights by over- or under-estimating the marginal impact of the included variables.
+* Adding the necessary variables isolates the true *ceteris paribus* effect of each predictor.
+
+---
+
+## 4.3 Categorical Variables in Multiple Linear Regression
+
+### 4.3.1 Dummy (Indicator) Variables
+
+#### Binary Categorical Variables ($0/1$ Coding)
+* **Dummy Variable**: An artificial numerical variable created to represent qualitative or categorical attributes in a regression model.
+* Takes only two discrete values:
+
+$$X_d = \begin{cases} 1 & \text{if the attribute/category is present} \\ 0 & \text{if the attribute/category is absent} \end{cases}$$
+
+#### The $(k - 1)$ Dummy Variable Rule for $k$-Level Categories
+* When incorporating a categorical variable with $k$ distinct levels into a regression model with an intercept, exactly **$k - 1$ dummy variables** must be defined.
+* Including all $k$ dummy variables alongside an intercept term causes **perfect multicollinearity** (the dummy variable trap), preventing OLS estimation because the sum of the $k$ dummies equals $1$, creating perfect linear dependence with the intercept.
+
+#### Baseline (Reference) Level Selection and Interpretation
+* **Baseline (Reference) Category**: The category assigned $0$ across all $k - 1$ dummy variables.
+* The choice of baseline is mathematically arbitrary and does not change the model fit ($R^2$, $s$, or predicted values $\hat{Y}$), but it dictates how coefficients are interpreted:
+  * Intercept $b_0$ represents the expected baseline outcome when all numerical predictors equal zero.
+  * Each dummy coefficient $b_d$ measures the differential shift in $E(Y)$ for that specific category **relative to the chosen baseline**.
+
+---
+
+### 4.3.2 Parallel Regression Equations
+
+#### Parallel Hyperplanes and Differential Intercepts
+* When dummy variables are included without interaction terms, the model assumes that the slope coefficients for continuous predictors are identical across all categories.
+* The dummy variable alters only the **intercept**, creating a set of **parallel lines / hyperplanes** separated by the dummy coefficient value:
+
+$$\text{Baseline Category } (X_d = 0): \hat{Y} = b_0 + b_1 X_1$$
+
+$$\text{Comparison Category } (X_d = 1): \hat{Y} = (b_0 + b_d) + b_1 X_1$$
+
+```
+   Y ^
+     |                   /  Category 1 (X_d = 1): Intercept = b_0 + b_d
+     |                  /
+     |                 /   /  Baseline (X_d = 0): Intercept = b_0
+     |                /   /
+     |  b_d {        /   /       [Slopes are identical = b_1]
+     |              /   /
+     |             /   /
+     +------------/---/---------> X_1
+```
+
+---
+
+### 4.3.3 Interaction Variables and Moderation Effects
+
+#### Definition and Mathematical Formulation of Interaction Terms
+* **Interaction Variable**: A predictor formed by taking the product of two independent variables (typically a continuous variable $X_1$ and a dummy variable $X_2$):
+
+$$Y_i = \beta_0 + \beta_1 X_{1i} + \beta_2 X_{2i} + \beta_3 (X_{1i} X_{2i}) + \epsilon_i$$
+
+* **Purpose**: Tests whether the effect of a continuous predictor $X_1$ on $Y$ depends on (is conditioned by) the categorical group $X_2$.
+
+#### Linearity in Parameters with Product Terms
+* Although $X_1$ and $X_2$ are multiplied together, the regression model remains a **linear regression model** because it is strictly linear in the parameters $\beta_0, \beta_1, \beta_2, \beta_3$.
+
+#### Moderation Variables and Varying Slopes for Sub-groups
+* The categorical variable $X_2$ acts as a **moderator** that modifies both the intercept and the slope:
+
+| Category | Value of $X_2$ | Conditional Regression Equation | Intercept | Slope with respect to $X_1$ |
+| :--- | :---: | :--- | :---: | :---: |
+| **Baseline Group** | $X_2 = 0$ | $E(Y) = \beta_0 + \beta_1 X_1$ | $\beta_0$ | $\beta_1$ |
+| **Comparison Group** | $X_2 = 1$ | $E(Y) = (\beta_0 + \beta_2) + (\beta_1 + \beta_3) X_1$ | $\beta_0 + \beta_2$ | $\beta_1 + \beta_3$ |
+
+* **Interpretation of Coefficients**:
+  * $\beta_2$: Differential intercept between comparison group and baseline group.
+  * $\beta_3$: Differential marginal effect (slope difference) of $X_1$ on $Y$ between the two groups.
+  * If $\beta_3$ is statistically significant ($P < 0.05$), the rate of change in $Y$ per unit change in $X_1$ differs significantly across groups (non-parallel lines).
+
+---
+
+## 4.4 Applications
+
+### 4.4.1 Computer Satisfaction Score Analysis (Chroma / Basaraju Case)
+
+#### Problem Setup
+* **Context**: Basaraju evaluating customer satisfaction scores ($Y \in [0, 100]$) across $n = 36$ computer purchases.
+* **Predictors**: Quantitative price ($X_1$, in $\text{\textrupee}$ lakhs) and qualitative brand ($X_2$: Lenovo vs. Dell).
+
+#### Model Formulation with Binary Brand Dummy
+* Dummy Coding: $X_2 = 1$ if Lenovo, $X_2 = 0$ if Dell (Dell is baseline).
+
+$$\hat{Y} = 46.83 + 1.29 X_1 + 3.93 X_2$$
+
+* **Parallel Regression Equations**:
+  * **Dell ($X_2 = 0$)**: $\hat{Y} = 46.83 + 1.29 X_1$
+  * **Lenovo ($X_2 = 1$)**: $\hat{Y} = (46.83 + 3.93) + 1.29 X_1 = 50.76 + 1.29 X_1$
+* **Interpretation of $b_2 = 3.93$**: For the same price, a Lenovo computer yields an estimated satisfaction score that is $3.93$ points higher on average than a Dell computer.
+
+#### Model Comparison & Diagnostics
+
+| Model Specification | Equation | $R^2$ | Std Error ($s$) | $F$-Stat ($P$-value) | Individual $t$-Tests |
+| :--- | :--- | :---: | :---: | :---: | :--- |
+| **SLR: Price ($X_1$)** | $\hat{Y} = 48.44 + 0.132 X_1$ | $0.360$ | $5.19$ | $18.90 \, (<0.001)$ | Price: $t = 4.36, \, P \approx 0$ |
+| **MLR: Price ($X_1$) + Brand ($X_2$)** | $\hat{Y} = 46.83 + 1.29 X_1 + 3.93 X_2$ | **$0.450$** | **$4.85$** | **$13.75 \, (<0.001)$** | Price: $t = 4.58, \, P \approx 0$<br>Brand: $t = 2.42, \, P = 0.021$ |
+
+* **ANOVA Table for MLR Model ($df_{\text{reg}} = 2, df_{\text{err}} = 33, df_{\text{total}} = 35$)**:
+  * $SST = 1425.60, \quad SSR = 648.20 \implies MSR = 324.10$
+  * $SSE = 777.40 \implies MSE = 23.56 \implies s = \sqrt{23.56} = 4.85$
+  * $F_{\text{calc}} = \frac{324.10}{23.56} = 13.75 \quad (P < 0.001)$
+
+#### Multi-Brand Extension ($k=3$ Brands with $k-1=2$ Dummies)
+* Suppose brands are **Lenovo**, **Dell**, and **Asus** ($k = 3 \implies 2$ dummies).
+* Setting **Asus as Baseline** ($X_1 = 0, X_2 = 0$):
+  * $X_1 = 1$ if Lenovo, $0$ otherwise.
+  * $X_2 = 1$ if Dell, $0$ otherwise.
+  * $E(Y) = \beta_0 + \beta_1 X_1 + \beta_2 X_2$.
+
+$$\text{Asus: } E(Y) = \beta_0, \quad \text{Lenovo: } E(Y) = \beta_0 + \beta_1, \quad \text{Dell: } E(Y) = \beta_0 + \beta_2$$
+
+---
+
+### 4.4.2 Household Debt with Categorical Factors (99 Acres / Manjula Nayak Case)
+
+#### Incorporating Home Ownership Dummy
+* **Context**: $n = 500$ households in Bengaluru. Dependent variable $Y = \text{Household Debt}$ ($\text{\textrupee}$).
+* Quantitative base model ($X_1 = \text{First Income}, X_2 = \text{Monthly Payment}, X_3 = \text{Utilities}$):
+  * $\hat{Y} = -140378 + 0.017 X_1 + 0.96 X_2 + 157.95 X_3$, with $R^2 = 0.708, s = 18699$.
+* Add **Ownership Dummy** ($X_4 = 1$ if Own, $0$ if Rent):
+
+$$\hat{Y} = -185988 + 0.017 X_1 + 1.05 X_2 + 200.00 X_3 - 12837 X_4$$
+
+* **Interpretation of $b_4 = -12837$**: Holding income, monthly payments, and utilities constant, home-owning households have on average $\text{\textrupee} 12,837$ less debt than renting households.
+* **Significance**: $SE(b_4) = 5003 \implies t_{\text{calc}} = \frac{-12837}{5003} = -2.56, \, P\text{-value} = 0.01 < 0.05 \implies$ Significant.
+* Model fit improves marginally: $R^2 = 0.712, s = 18594$.
+
+#### Incorporating Multi-Level Geographic Location Dummies
+* Categorical Variable: Location with $k = 4$ levels (**Southeast**, **Northwest**, **Northeast**, **Southwest**).
+* Dummy Setup ($k - 1 = 3$ dummies, **Southeast is Baseline**):
+  * $X_5 = 1$ if Northwest, $0$ otherwise.
+  * $X_6 = 1$ if Northeast, $0$ otherwise.
+  * $X_7 = 1$ if Southwest, $0$ otherwise.
+* **Estimated Model (7 Predictors, $df_{\text{err}} = 492$)**:
+
+$$\hat{Y} = -184243 + 0.015 X_1 + 0.96 X_2 + 200 X_3 - 12857 X_4 + 4229 X_5 + 2935 X_6 + 5211 X_7$$
+
+* Generates $4 \text{ (locations)} \times 2 \text{ (ownership)} = 8$ parallel regression equations.
+* Model metrics: $R^2 = 0.714, s = 18589$.
+
+#### Model Evaluation and Pruning of Insignificant Predictors
+
+| Location Dummy | Coefficient ($b_j$) | Standard Error | $t$-Statistic | $P$-Value | Statistical Decision ($\alpha = 0.05$) |
+| :--- | :---: | :---: | :---: | :---: | :--- |
+| **Northwest ($X_5$)** | $+4229$ | $3471$ | $1.22$ | $0.22$ | Fail to reject $H_0$ (Not Significant) |
+| **Northeast ($X_6$)** | $+2935$ | $2531$ | $1.16$ | $0.25$ | Fail to reject $H_0$ (Not Significant) |
+| **Southwest ($X_7$)** | $+5211$ | $2881$ | $1.81$ | $0.07$ | Fail to reject $H_0$ (Not Significant) |
+
+* **Managerial Takeaway**: Although the overall model is significant ($F\text{-test } P < 0.001$), all three location dummies have $P > 0.05$. Adding location increases model complexity without providing significant explanatory benefit. The location variables should be removed to avoid overfitting.
+
+---
+
+### 4.4.3 Property Valuation with Multiple Qualitative Factors (Magic Bricks / Vijay Gowda Case)
+
+#### Progressive Model Building with Location, Amenities, and Gated Community
+* **Context**: $n = 30$ flats in Mysuru. Dependent variable $Y = \text{Selling Price}$ ($\text{\textrupee}$ lakhs). $SST = 251001$.
+* Adding quantitative variables (bedrooms/bathrooms) failed earlier due to multicollinearity with area ($r = 0.542, 0.659$).
+* Qualitative variables evaluated:
+  * $X_2 = 1$ if Premium Location, $0$ otherwise.
+  * $X_3 = 1$ if Amenities available, $0$ otherwise.
+  * $X_4 = 1$ if Gated Community, $0$ otherwise.
+
+#### Model Evolution Summary
+
+| Model | Predictors Included | Regression Equation | $R^2$ | $R^2_{\text{adj}}$ | Std Error ($s$) | $F$-Stat |
+| :---: | :--- | :--- | :---: | :---: | :---: | :---: |
+| **1** | Area ($X_1$) | $\hat{Y} = 28.37 + 0.0968 X_1$ | $0.440$ | $0.430$ | $70.57$ | $22.39$ |
+| **2** | Area ($X_1$) + Premium ($X_2$) | $\hat{Y} = -3.92 + 0.087 X_1 + 86.20 X_2$ | $0.660$ | $0.630$ | $56.35$ | $26.03$ |
+| **3** | Area ($X_1$) + $X_2$ + $X_3$ + $X_4$ | $\hat{Y} = -43.99 + 0.078 X_1 + 95.66 X_2 + 35.74 X_3 + 55.38 X_4$ | **$0.801$** | **$0.770$** | **$44.64$** | **$25.25$** |
+
+#### ANOVA & Hypothesis Testing for Final 4-Variable Model
+
+$$SST = 251001, \quad SSR = 201194 \, (df = 4), \quad SSE = 49808 \, (df = 25)$$
+$$MSR = \frac{201194}{4} = 50298, \quad MSE = \frac{49808}{25} = 1992 \implies s = \sqrt{1992} = 44.64$$
+$$F_{\text{calc}} = \frac{50298}{1992} = 25.25 \quad (P\text{-value} \approx 0.000)$$
+
+* **Individual Significance ($df = 25$)**:
+  * Area ($X_1$): $b_1 = 0.078, \, P < 0.001$ ($\text{\textrupee} 7,800$ per additional sq ft).
+  * Premium Locality ($X_2$): $b_2 = 95.66, \, P < 0.001$ ($\text{\textrupee} 95.66$ lakhs premium).
+  * Amenities ($X_3$): $b_3 = 35.74, \, P = 0.040 < 0.05$ ($\text{\textrupee} 35.74$ lakhs premium).
+  * Gated Community ($X_4$): $b_4 = 55.38, \, P = 0.003 < 0.05$ ($\text{\textrupee} 55.38$ lakhs premium).
+
+#### Omitted Variable Bias Correction and Residual Validation
+* As relevant categorical variables were added, the coefficient of Area ($b_1$) dropped progressively: $0.0968 \to 0.0870 \to 0.0780$.
+* In simpler models, Area was picking up the price effect of premium locations and amenities with which larger flats are often equipped. Adding the categorical features eliminated this OVB.
+* Residual plots against $X_1, X_2, X_3, X_4$ and $\hat{Y}$ display random dispersion with no standardized residuals exceeding $\pm 3$.
+
+---
+
+### 4.4.4 Patient Stroke Risk Score Analysis (Sagar Hospitals / Dr. Kishore Case)
+
+#### Problem Setup
+* **Context**: Dr. Kishore analyzing stroke risk scores ($Y \in [1, 100]$) across $n = 25$ patients.
+* **Predictors**: Quantitative Age ($X_1$), Blood Pressure ($X_2$), and Binary Smoking History ($X_3 = 1$ if Smoker, $0$ otherwise).
+
+#### Model Progression
+
+| Specification | Estimated Equation | $R^2$ | $R^2_{\text{adj}}$ | Std Error ($s$) | $F$-Stat |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **SLR: Age ($X_1$)** | $\hat{Y} = -31.75 + 0.832 X_1$ | $0.270$ | $0.240$ | $12.83$ | $8.60$ |
+| **SLR: Blood Pressure ($X_2$)** | $\hat{Y} = -6.85 + 0.214 X_2$ | $0.220$ | $0.190$ | $13.27$ | $6.60$ |
+| **MLR: Age ($X_1$) + BP ($X_2$)** | $\hat{Y} = b_0 + 1.232 X_1 + 0.334 X_2$ | $0.750$ | $0.730$ | $7.69$ | $32.90$ |
+| **MLR with Smoker ($X_3$)** | $\hat{Y} = -96.40 + 1.04 X_1 + 0.30 X_2 + 8.08 X_3$ | **$0.814$** | **$0.787$** | **$6.79$** | **$30.50$** |
+
+#### Final Model Diagnostics ($df_{\text{err}} = 21, SST = 5202$)
+* $SSR = 4232 \implies MSR = \frac{4232}{3} = 1410.7$
+* $SSE = 971 \implies MSE = \frac{971}{21} = 46.24 \implies s = \sqrt{46.24} = 6.79$
+* $F_{\text{calc}} = \frac{1410.7}{46.24} = 30.51 \quad (P < 0.001)$
+* **Individual $t$-Tests**:
+  * Age ($X_1$): $b_1 = 1.04, \, SE = 0.17 \implies t_{\text{calc}} = 5.95, \, P < 0.001$
+  * Blood Pressure ($X_2$): $b_2 = 0.30, \, P < 0.001$
+  * Smoking History ($X_3$): $b_3 = 8.08, \, SE = 3.01 \implies t_{\text{calc}} = 2.68, \, P = 0.014 < 0.05$
+* **Interpretation of $b_3 = 8.08$**: Holding age and blood pressure constant, a history of smoking increases the estimated stroke risk score by $8.08$ points.
+
+---
+
+### 4.4.5 Customer Online Spending Analysis (Amazon / Nirmala Singh Case)
+
+#### Problem Setup
+* **Context**: Nirmala Singh analyzing $n = 600$ customer transactions on Amazon India.
+* **Dependent Variable ($Y$)**: Monthly Online Spend ($\text{\textrupee}$ thousands).
+* **Predictors**: Annual Salary ($X_1$, $\text{\textrupee}$ lakhs), Married ($X_2 = 1$ if married, $0$ otherwise), Gender ($X_3 = 1$ if Male, $0$ if Female).
+
+#### Comparative Model Performance
+
+| Model Specification | Estimated Regression Equation | $R^2$ | Std Error ($s$) | $F$-Stat |
+| :--- | :--- | :---: | :---: | :---: |
+| **1. Salary Only ($X_1$)** | $\hat{Y} = 2.64 + 0.134 X_1$ | $0.029$ | $2.93$ | $18.28$ |
+| **2. Salary ($X_1$) + Married ($X_2$)** | $\hat{Y} = 0.84 + 0.100 X_1 + 4.584 X_2$ | $0.620$ | $1.83$ | $490.80$ |
+| **3. Salary ($X_1$) + Male ($X_3$)** | $\hat{Y} = 1.35 + 0.140 X_1 + 2.200 X_3$ | $0.170$ | $2.72$ | $59.80$ |
+| **4. Full Model ($X_1, X_2, X_3$)** | $\hat{Y} = -0.40 + 0.110 X_1 + 4.580 X_2 + 2.200 X_3$ | **$0.760$** | **$1.47$** | **$620.00$** |
+
+#### Final Model Interpretation ($F = 620.0, P < 0.001, MSE = 2.16$)
+* **Salary ($X_1$)**: $b_1 = 0.11, \, t = 6.8, \, P < 0.001 \implies$ A $\text{\textrupee} 10$ lakh increase in salary increases monthly spend by $\text{\textrupee} 1,100$ ($0.11 \times 10$ thousand).
+* **Married ($X_2$)**: $b_2 = 4.58, \, t = 38.1, \, P < 0.001 \implies$ Married individuals spend $\text{\textrupee} 4,580$ more per month online than unmarried individuals, ceteris paribus.
+* **Male ($X_3$)**: $b_3 = 2.20, \, t = 18.2, \, P < 0.001 \implies$ Men spend $\text{\textrupee} 2,200$ more per month online than women, holding salary and marital status constant.
+
+---
+
+### 4.4.6 Salary Moderation by Gender and Experience (IIIT Dharwad / Jyoti Hegde Case)
+
+#### Problem Setup
+* **Context**: Jyoti Hegde analyzing salaries of $n = 30$ graduates from IIIT Dharwad.
+* **Dependent Variable ($Y$)**: Monthly Salary ($\text{\textrupee}$).
+* **Independent Variables**:
+  * $X_1$: Gender Dummy ($1$ if Women, $0$ if Men).
+  * $X_2$: Work Experience (months).
+  * $X_1 X_2$: Interaction term between Gender and Work Experience.
+
+#### Empirical Interaction Model
+
+$$\hat{Y} = 13450.20 - 7771.68 X_1 + 293.80 X_2 - 241.60 (X_1 X_2)$$
+
+* Model Fit: $R^2 = 0.920, \quad R^2_{\text{adj}} = 0.910, \quad F\text{-test } P < 0.001$.
+* All individual $t$-tests ($b_0, b_1, b_2, b_3$) are statistically significant ($P < 0.05$).
+
+#### Deriving Separate Sub-Group Trajectories
+
+```
+   Salary ^
+          |                     /  Men: Y = 13450.2 + 293.8 X_2 (Slope = 293.8)
+          |                    /
+          |                   /
+          |                  /     /  Women: Y = 5678.5 + 52.2 X_2 (Slope = 52.2)
+          |  13450.2        /     /
+          |                /     /
+          |  5678.5       /     /
+          +--------------/-----/---------> Work Experience (months)
+```
+
+1. **Equation for Men ($X_1 = 0$)**:
+
+$$\hat{Y}_{\text{Men}} = 13450.20 + 293.80 X_2$$
+
+   * Starting baseline salary = $\text{\textrupee} 13,450.20$.
+   * Marginal return per month of experience = $\text{\textrupee} 293.80$.
+
+2. **Equation for Women ($X_1 = 1$)**:
+
+$$\hat{Y}_{\text{Women}} = (13450.20 - 7771.68) + (293.80 - 241.60) X_2$$
+
+$$\hat{Y}_{\text{Women}} = 5678.52 + 52.20 X_2$$
+
+   * Starting baseline salary = $\text{\textrupee} 5,678.52$.
+   * Marginal return per month of experience = $\text{\textrupee} 52.20$.
+
+#### Substantive Takeaway
+* Gender moderates the relationship between experience and salary. Experience yields a significantly steeper marginal increase in salary for men ($\text{\textrupee} 293.80/\text{month}$) compared to women ($\text{\textrupee} 52.20/\text{month}$).
+
+---
+
+## Quick Revision Summary
+
+### Key Definitions
+* **Dummy Variable**: A binary indicator variable ($0$ or $1$) used to incorporate categorical factors into linear regression.
+* **$(k - 1)$ Rule**: A qualitative factor with $k$ levels requires exactly $k - 1$ dummy variables to avoid the dummy variable trap.
+* **Baseline Category**: The omitted category coded as $0$ across all dummies; its conditional mean serves as the reference point represented by $b_0$.
+* **Parallel Regression Models**: Models with dummy variables but no interaction terms, resulting in identical slopes across groups with shifted intercepts.
+* **Interaction Variable**: A product term ($X_1 \cdot X_2$) allowing the slope of a continuous predictor to vary across different categories of a moderator.
+* **Omitted Variable Bias**: Systematic error in estimated coefficients caused by omitting a variable that correlates with both $Y$ and an included $X$.
+
+---
+
+### Important Formulas
+
+$$\text{MLR with Dummy Variable: } \hat{Y} = b_0 + b_1 X_1 + b_2 D_1$$
+
+$$\text{Baseline Equation } (D_1 = 0): \hat{Y} = b_0 + b_1 X_1$$
+
+$$\text{Comparison Equation } (D_1 = 1): \hat{Y} = (b_0 + b_2) + b_1 X_1$$
+
+$$\text{Interaction Model: } \hat{Y} = b_0 + b_1 X_1 + b_2 D_1 + b_3 (X_1 \cdot D_1)$$
+
+$$\text{Moderated Slope for Baseline } (D_1 = 0): \text{Slope} = b_1$$
+
+$$\text{Moderated Slope for Comparison } (D_1 = 1): \text{Slope} = b_1 + b_3$$
+
+---
+
+### Must-Remember Points
+* Never define $k$ dummy variables for $k$ categories when an intercept is present; doing so causes **perfect multicollinearity**.
+* Adding dummy variables allows simultaneous estimation of multiple subgroup equations within a single regression model.
+* A low $R^2$ in a simple regression model often indicates **Omitted Variable Bias**. Adding the missing correlated variables increases $R^2$, decreases standard error $s$, and adjusts biased coefficients to their true partial values.
+* If a categorical variable with multiple levels has non-significant $t$-tests ($P > 0.05$) across all its dummies, it should be removed to prevent model overfitting.
+* Models with interaction terms ($X_1 \cdot X_2$) remain **linear models** because linearity applies strictly to the regression parameters ($\beta$).

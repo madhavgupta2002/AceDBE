@@ -898,3 +898,258 @@ Given $s_{b_1} = 0.024, s_{b_2} = 25.15, r_{x_1, x_2} = 0.542$. Perform individu
 | **Multicollinearity Warning Rule** | $|r_{x_i, x_j}| > 0.70$ | High correlation causes inflated standard errors, insignificant $t$-tests, and wrong coefficient signs |
 | **Omitted Variable Bias Test** | $r(y, x_{\text{omitted}}) \neq 0$ AND $r(x_{\text{included}}, x_{\text{omitted}}) \neq 0$ | Omitting relevant variables biases included slopes; adding them increases $R^2$ and reduces $s$ |
 | **Standardized Residual Outlier Rule** | $|z_{e_i}| = \left|\frac{e_i}{s_e}\right| > 2.0$ (or $> 3.0$) | Flags potential outliers; verify data entry before deciding whether to retain or re-evaluate |
+
+
+## MODULE 4: Multiple Linear Regression with Categorical and Interaction Variables
+
+---
+
+### Categorical Variables & Dummy Variable Coding
+
+In **Multiple Linear Regression (MLR)**, independent variables can be qualitative/categorical (e.g., brand, location, ownership, gender, smoking status) alongside quantitative predictors.
+
+```mermaid
+flowchart TD
+    A[Categorical Variable with k Levels] --> B["Rule: Use (k - 1) Dummy Variables"]
+    B --> C["Assign Binary Coding: 0 or 1"]
+    C --> D["Baseline / Reference Level (All Dummies = 0)"]
+    D --> E[Estimated Intercept = Mean of Baseline]
+    C --> F["Dummy Slopes = Difference from Baseline Mean"]
+```
+
+#### The Dummy Variable Rule
+- If a categorical variable has **$k$ distinct categories / levels**, exactly **$k - 1$ dummy (indicator) variables** are required in the regression equation.
+- Each dummy variable is coded as binary: **$1$ (level present)** or **$0$ (level absent)**.
+- The omitted category (where all $k - 1$ dummies equal $0$) is the **baseline / reference category**.
+
+| Categorical Variable | Levels ($k$) | Number of Dummies ($k-1$) | Dummy Variable Coding Scheme | Baseline Category |
+|---|---|---|---|---|
+| **Computer Brand** | $2$ (Lenovo, Dell) | $1$ | $x_2 = 1$ if Lenovo, $0$ if Dell | Dell ($x_2 = 0$) |
+| **Home Ownership** | $2$ (Own, Rent) | $1$ | $x_4 = 1$ if Own, $0$ if Rent | Rent ($x_4 = 0$) |
+| **Gender** | $2$ (Male, Female) | $1$ | $x_3 = 1$ if Male, $0$ if Female | Female ($x_3 = 0$) |
+| **Smoking History** | $2$ (Smoker, Non-Smoker) | $1$ | $x_3 = 1$ if Smoker, $0$ if Non-Smoker | Non-Smoker ($x_3 = 0$) |
+| **Property Location** | $4$ (NW, NE, SW, SE) | $3$ | $x_5=1$ (NW), $x_6=1$ (NE), $x_7=1$ (SW) | Southeast ($x_5=x_6=x_7=0$) |
+| **Amenities / Gated** | $2$ (Yes, No) each | $1$ each | $x_3 = 1$ (Amenities), $x_4 = 1$ (Gated) | None / Ungated ($0$) |
+
+> **Q:** If a categorical variable has 5 distinct categories, how many dummy variables must be created? = **4** ✓
+> **Q:** What values are dummy (indicator) variables permitted to take? = **0 or 1 only** ✓
+> **Q:** Changing the baseline reference category in a dummy regression changes the overall model $R^2$ = **FALSE** ✓ *(It only re-expresses the intercept and dummy coefficients relative to the new baseline)*
+> **Q:** In a regression with 1 quantitative predictor and 1 dummy variable (2 levels), what do the resulting regression lines look like? = **Two parallel lines with identical slopes but different intercepts** ✓
+
+---
+
+### Mathematical Formulation & Coefficient Interpretation
+
+#### Model with 1 Quantitative Predictor ($x_1$) and 1 Binary Dummy ($x_2$)
+$$y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon$$
+
+$$\hat{y} = b_0 + b_1 x_1 + b_2 x_2$$
+
+- **For Baseline Category ($x_2 = 0$):**
+  $$\hat{y}_{\text{baseline}} = b_0 + b_1 x_1$$
+- **For Comparison Category ($x_2 = 1$):**
+  $$\hat{y}_{\text{comparison}} = (b_0 + b_2) + b_1 x_1$$
+- **Interpretation of Dummy Coefficient ($b_2$):** Represents the estimated difference in the mean response $y$ between the comparison group ($x_2=1$) and the baseline group ($x_2=0$), **holding quantitative variable $x_1$ constant**.
+
+```mermaid
+xychart-beta
+    title "Parallel Regression Lines (Dummy Variable Shift)"
+    x-axis "Quantitative Predictor X1" [10, 20, 30, 40, 50, 60]
+    y-axis "Predicted Response Y" 30 --> 120
+    line [40, 52, 65, 78, 91, 104]
+    line [50, 62, 75, 88, 101, 114]
+```
+
+> **Q:** What does a positive dummy variable coefficient $\beta_2 > 0$ signify? = **The expected value of $y$ for the dummy group is higher than the baseline group by $\beta_2$, holding other variables constant** ✓
+> **Q:** If the dummy coefficient $\beta_2 = 0$, what does it imply? = **There is no difference in the expected value of $y$ between the two categories** ✓
+
+---
+
+### Interaction Variables & Moderation Models
+
+An **interaction variable** is formed by the product of two independent variables (typically a continuous predictor and a categorical dummy variable: $x_1 \times x_2$).
+
+```mermaid
+flowchart TD
+    A["Interaction Model: y = beta0 + beta1*x1 + beta2*x2 + beta3*(x1*x2) + epsilon"] --> B["Continuous Variable: x2 (Experience)"]
+    A --> C["Categorical Dummy: x1 (Gender: 1=Women, 0=Men)"]
+    B & C --> D["Interaction Term: (x1 * x2)"]
+    D --> E{Effect of x1 on Relationship between x2 and y}
+    E --> F["x1 acts as a Moderation Variable"]
+    E --> G["Yields NON-PARALLEL lines (Different Slopes & Intercepts)"]
+```
+
+#### Interaction Equations Breakdown
+$$y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 (x_1 x_2) + \epsilon$$
+
+where $x_1$ is a binary dummy ($0$ or $1$) and $x_2$ is a continuous variable.
+
+- **For Baseline Group ($x_1 = 0$):**
+  $$\hat{y}_{x_1=0} = b_0 + b_2 x_2$$
+  *(Intercept = $b_0$, Marginal Slope with respect to $x_2 = b_2$)*
+
+- **For Comparison Group ($x_1 = 1$):**
+  $$\hat{y}_{x_1=1} = (b_0 + b_1) + (b_2 + b_3) x_2$$
+  *(Intercept = $b_0 + b_1$, Marginal Slope with respect to $x_2 = b_2 + b_3$)*
+
+- **Moderation Variable:** $x_1$ is called a **moderation variable** because it changes the rate (slope) at which $x_2$ impacts $y$.
+- **Linearity:** Models containing interaction terms ($x_1 x_2$) remain **linear regression models** because they are linear in parameters $\beta_0, \beta_1, \beta_2, \beta_3$.
+
+> **Q:** Is a regression model with an interaction term $x_1 x_2$ considered non-linear? = **NO** ✓ *(It is linear with respect to the regression parameters $\beta_j$)*
+> **Q:** In an interaction model, what geometric effect does the interaction term have on the sub-group regression equations? = **It allows the regression lines to have different slopes (non-parallel lines)** ✓
+> **Q:** A variable that alters the strength or direction of the relationship between an independent variable and the dependent variable is called a **Moderation Variable** ✓
+
+---
+
+### Residual Analysis in Categorical & Interaction Models
+
+- **Residuals vs. Quantitative $x$:** Should display a random horizontal scatter centered around zero.
+- **Residuals vs. Dummy Predictor ($x_{\text{dummy}} \in \{0, 1\}$):** Residuals naturally cluster into two vertical columns at $0$ and $1$; each cluster must have an even balance of positive and negative errors with zero mean.
+- **Standardized Residuals ($z_e$):** ~95% of standardized residuals should lie within $[-2, +2]$. Residuals exceeding $|z_e| > 3$ represent extreme outliers.
+
+> **Q:** In a plot of residuals against a binary dummy variable, why do points cluster along two vertical lines? = **Because the dummy variable only takes discrete values of 0 and 1** ✓
+> **Q:** What indicates model adequacy when examining residuals grouped at dummy levels 0 and 1? = **Both vertical clusters show an even, unbiased spread of positive and negative residuals** ✓
+
+---
+
+### Empirical Case Studies & Numerical Applications
+
+**Q1 (Computer Satisfaction Score - Basaraju):** Sample $n = 36$ customers.
+$y = \text{Satisfaction Score (0-100)}, x_1 = \text{Price (Lakhs)}, x_2 = \text{Brand Dummy (1 = Lenovo, 0 = Dell)}$.
+- SLR Model (Price only): $\hat{y} = 48.44 + 0.132 x_1, R^2 = 0.36, s = 5.19, \text{SSR}=510.8, \text{SSE}=914.8$.
+- MLR Model with Dummy: $\hat{y} = 46.83 + 1.29 x_1 + 3.93 x_2$.
+Given: $\text{SST} = 1425.6, \text{SSR} = 648.2, \text{SSE} = 777.4, s = 4.85, s_{b_1} = 0.283, s_{b_2} = 1.63$.
+Evaluate sub-models, $R^2$, ANOVA $F$-test, and individual $t$-tests at $\alpha = 0.05$.
+
+> *Why: Binary dummy variable integration and hypothesis testing.*
+> $\text{Sub-model for Dell } (x_2 = 0): \hat{y}_{\text{Dell}} = 46.83 + 1.29 x_1$
+> $\text{Sub-model for Lenovo } (x_2 = 1): \hat{y}_{\text{Lenovo}} = (46.83 + 3.93) + 1.29 x_1 = 50.77 + 1.29 x_1$
+> $R^2 = \frac{\text{SSR}}{\text{SST}} = \frac{648.2}{1425.6} = 0.454 \approx 0.45 \quad (\text{Improved from } 0.36)$
+> $\text{DF}_{\text{reg}} = 2, \quad \text{DF}_{\text{error}} = 36 - 2 - 1 = 33$
+> $\text{MSR} = \frac{648.2}{2} = 324.1, \quad \text{MSE} = \frac{777.4}{33} = 23.56 \implies s = \sqrt{23.56} = 4.85$
+> $F = \frac{\text{MSR}}{\text{MSE}} = \frac{324.1}{23.56} = 13.75 \quad (p < 0.001 \implies \text{Overall Model Significant})$
+> $t_{\text{price}} = \frac{1.29}{0.283} = 4.58 \quad (p < 0.001 \implies \text{Price is Significant})$
+> $t_{\text{brand}} = \frac{3.93}{1.63} = 2.42 \quad (p < 0.05 \implies \text{Brand is Significant})$
+> **Answer = Brand is significant ($t=2.42$); Lenovo scores on average 3.93 points higher than Dell at any given price ($R^2=0.45$)** ✓
+
+---
+
+**Q2 (99 Acres Debt Model with Ownership & Location - Manjula Nayak):** Sample $n = 500$ households.
+$y = \text{Household Debt}$. Base quantitative predictors: Income ($x_1$), Payment ($x_2$), Utilities ($x_3$) [$R^2=0.708, s=18699$].
+1. **Model with Ownership ($x_4: 1=\text{Own}, 0=\text{Rent}$):**
+   $\hat{y} = -185988 + 0.017 x_1 + 1.05 x_2 + 200 x_3 - 12837 x_4, R^2 = 0.712, s = 18594, s_{b_4} = 5003$.
+2. **Model with Ownership + Location ($k=4 \implies 3$ Dummies: NW $x_5$, NE $x_6$, SW $x_7$, Base = SE):**
+   $\hat{y} = -184243 + 0.015 x_1 + 0.96 x_2 + 200 x_3 - 12857 x_4 + 4229 x_5 + 2935 x_6 + 5211 x_7$.
+   $R^2 = 0.714, s = 18589$.
+   Standard errors: $s_{b_5}=3471, s_{b_6}=2531, s_{b_7}=2881$.
+Analyze individual significance of Ownership and Location dummies at $\alpha = 0.05$.
+
+> *Why: Assessing categorical variable contributions and avoiding unnecessary model complexity.*
+> $t_{\text{ownership}} = \frac{-12837}{5003} = -2.56 \quad (p = 0.01 \le 0.05 \implies \text{Ownership is Statistically Significant})$
+> $t_{\text{NW}} = \frac{4229}{3471} = 1.22 \quad (p = 0.22 > 0.05 \implies \text{Not Significant})$
+> $t_{\text{NE}} = \frac{2935}{2531} = 1.16 \quad (p = 0.25 > 0.05 \implies \text{Not Significant})$
+> $t_{\text{SW}} = \frac{5211}{2881} = 1.81 \quad (p = 0.07 > 0.05 \implies \text{Not Significant})$
+> **Answer = Retain Ownership (homeowners have 12,837 Rs less debt, $p=0.01$); REMOVE Location dummies (all $p > 0.05$, $R^2$ gain of only $0.002$)** ✓
+> *(Adding useless categorical variables creates model complexity and risks overfitting without meaningful performance gains)*
+
+---
+
+**Q3 (Mysuru Flat Selling Prices - Vijay Gowda):** Sample $n = 30$ apartments ($\text{SST} = 251,001$).
+$y = \text{Price (Lakhs)}, x_1 = \text{Area (Sq Ft)}$.
+- Model 1 (SLR - Area): $\hat{y} = 28.37 + 0.0968 x_1, R^2 = 0.44, s = 70.57$.
+- Model 2 (Area $x_1$ + Premium Location Dummy $x_2$):
+  $\hat{y} = -3.92 + 0.087 x_1 + 86.2 x_2, R^2 = 0.66, R^2_{\text{adj}} = 0.63, s = 56.35, F = 26.03$.
+  $s_{b_1} = 0.016 \implies t = 5.31; \quad s_{b_2} = 20.95 \implies t = 4.11 \; (p < 0.001)$.
+- Model 3 (Area $x_1$ + Premium $x_2$ + Amenities $x_3$ + Gated Community $x_4$):
+  $\hat{y} = -43.99 + 0.078 x_1 + 95.66 x_2 + 35.74 x_3 + 55.38 x_4$.
+  Sums of Squares: $\text{SSR} = 201,194, \text{SSE} = 49,808, \text{MSR} = 50,298, \text{MSE} = 1,992 (\text{DF}=25)$.
+  Fit: $R^2 = 0.80, R^2_{\text{adj}} = 0.77, s = 44.64, F = 25.25$.
+  $p\text{-values: } b_1 \; (p < 0.001), b_2 \; (p < 0.001), b_3 \; (p = 0.04), b_4 \; (p = 0.003)$.
+Evaluate the full model and explain why the Area slope $b_1$ dropped from $0.087$ to $0.078$.
+
+> *Why: Full evaluation of qualitative dummies and Omitted Variable Bias (OVB) resolution.*
+> $\text{ANOVA Check: } F = \frac{50,298}{1,992} = 25.25 \quad (p < 0.001 \implies \text{Overall Model Significant})$
+> All individual $p\text{-values} \le 0.05 \implies$ All 3 qualitative variables are individually statistically significant.
+> **Slope Change ($b_1: 0.087 \rightarrow 0.078$):** In earlier models, Area was capturing part of the omitted premiums for amenities and gated security (**Omitted Variable Bias**). Once included, $b_1 = 0.078$ reflects the true isolated marginal effect of area (7,800 Rs/sq ft).
+> **Answer = Full model is highly effective ($R^2=0.80, R^2_{\text{adj}}=0.77, s=44.64$); all 3 categorical features must be retained** ✓
+
+---
+
+**Q4 (Stroke Risk Score Model - Dr. Kishore):** Sample $n = 25$ patients ($\text{SST} = 5202$).
+$y = \text{Risk Score (1-100)}, x_1 = \text{Age}, x_2 = \text{Blood Pressure}, x_3 = \text{Smoker Dummy (1 = Smoker, 0 = Non-Smoker)}$.
+- Model without Smoker ($p=2$): $R^2 = 0.75, R^2_{\text{adj}} = 0.73, s = 7.69, \text{SSR}=3899, \text{SSE}=1302, F=32.9$.
+- Model with Smoker ($p=3$): $\hat{y} = -96.4 + 1.04 x_1 + 0.30 x_2 + 8.08 x_3$.
+Given: $\text{SSR} = 4232, \text{SSE} = 971, \text{MSR} = 1410, \text{MSE} = 46.2 (\text{DF}=21), s = 6.79, s_{b_3} = 3.01$.
+Evaluate $R^2, R^2_{\text{adj}}, F$-test, and Smoker $t$-test at $\alpha = 0.05$.
+
+> *Why: Adding a medical categorical predictor to MLR.*
+> $R^2 = \frac{4232}{5202} = 0.813 \approx 0.81, \quad R^2_{\text{adj}} = 1 - \left[ (1 - 0.813) \frac{24}{21} \right] = 0.786 \approx 0.79$
+> $F = \frac{1410}{46.2} = 30.52 \approx 30.5 \quad (p < 0.001 \implies \text{Overall Significant})$
+> $t_{\text{smoker}} = \frac{8.08}{3.01} = 2.68 \quad (p < 0.05 \implies \text{Smoker Dummy Significant})$
+> **Answer = Smoking history is a significant risk factor ($t=2.68, p < 0.05$); smokers have an average 8.08-point higher risk score ($R^2=0.81$)** ✓
+
+---
+
+**Q5 (Amazon Monthly Spend - Nirmala Singh):** Sample $n = 600$ customers.
+$y = \text{Monthly Spend ('000 Rs)}, x_1 = \text{Annual Salary (Lakhs)}, x_2 = \text{Married Dummy (1=Married)}, x_3 = \text{Male Dummy (1=Male)}$.
+- Model A (Salary only): $\hat{y} = 2.64 + 0.134 x_1, R^2 = 0.029, s = 2.93$.
+- Model B (Salary + Married): $\hat{y} = 0.84 + 0.10 x_1 + 4.584 x_2, R^2 = 0.62, s = 1.83, F = 490.8, t_{\text{married}} = 30.6$.
+- Model C (Salary + Male): $\hat{y} = 1.35 + 0.14 x_1 + 2.20 x_3, R^2 = 0.17, s = 2.72, F = 59.8, t_{\text{male}} = 18.2$.
+- Model D (Salary + Married + Male): $\hat{y} = -0.40 + 0.11 x_1 + 4.58 x_2 + 2.20 x_3$.
+Given for Model D: $R^2 = 0.76, s = 1.47, \text{MSE} = 2.16, \text{MSR} = 1339, F = 620, s_{b_1} = 0.016, s_{b_2} = 0.12, s_{b_3} = 0.12$.
+Interpret Model D coefficients and individual significance.
+
+> *Why: Comparing models with multiple binary demographic variables.*
+> $t_{\text{salary}} = \frac{0.11}{0.016} = 6.8 \quad (p < 0.001)$
+> $t_{\text{married}} = \frac{4.58}{0.12} = 38.1 \quad (p < 0.001)$
+> $t_{\text{male}} = \frac{2.20}{0.12} = 18.2 \quad (p < 0.001)$
+> **Coefficient Interpretations (ceteris paribus):**
+> - For every 10 Lakhs increase in salary, monthly spend increases by $1,000\text{ Rs}$ ($0.11 \times 10 = 1.1 \text{ thousand}$).
+> - Married individuals spend on average $4,580\text{ Rs}$ more per month than unmarried individuals.
+> - Men spend on average $2,200\text{ Rs}$ more per month than women in online purchases.
+> **Answer = Full model explains 76% of variation ($R^2=0.76, F=620$); all predictors are individually highly significant ($p < 0.001$)** ✓
+
+---
+
+**Q6 (IIIT Dharwad Salary Moderation / Interaction Model - Jyothi Hegde):** Sample $n = 30$ employees.
+$y = \text{Salary (Rs)}, x_1 = \text{Gender Dummy (1 = Women, 0 = Men)}, x_2 = \text{Work Experience (Months)}$.
+Interaction Model: $\hat{y} = 13450.2 - 7771.68 x_1 + 293.8 x_2 - 241.6 (x_1 x_2)$.
+Given: $R^2 = 0.92, R^2_{\text{adj}} = 0.91$, all $p\text{-values} < 0.05$.
+Derive the specific sub-models for Men and Women, and interpret the marginal return per month of work experience.
+
+> *Why: Analyzing interaction terms to demonstrate moderation effects.*
+> $\text{For Men } (x_1 = 0): \hat{y}_{\text{Men}} = 13450.2 - 7771.68(0) + 293.8 x_2 - 241.6(0)(x_2) = 13450.2 + 293.8 x_2$
+> $\text{For Women } (x_1 = 1): \hat{y}_{\text{Women}} = (13450.2 - 7771.68) + (293.8 - 241.6) x_2 = 5678.5 + 52.2 x_2$
+> **Marginal Experience Returns:**
+> - Salary for men increases by **$293.8\text{ Rs}$ per month of experience**.
+> - Salary for women increases by **$52.2\text{ Rs}$ per month of experience**.
+> **Answer = Gender moderates the return on experience ($R^2=0.92$); salary growth rate for men is $293.8\text{ Rs/month}$ vs. $52.2\text{ Rs/month}$ for women** ✓
+
+---
+
+## Quick Reference: Categorical & Interaction Regression Models
+
+| Case Study / Application | Predictors ($p$) | Sample ($n$) | Estimated Equation ($\hat{y}$) | $R^2$ | $R^2_{\text{adj}}$ | Std Error ($s$) | $F$-Stat ($p$-val) | Key Statistical Takeaway |
+|---|---|---|---|---|---|---|---|---|
+| **Chroma (Score)** | Price ($x_1$), Brand ($x_2$) | $36$ | $46.83 + 1.29 x_1 + 3.93 x_2$ | $0.45$ | $0.42$ | $4.85$ | $13.75 \; (< 0.001)$ | Lenovo scores $+3.93$ higher than Dell ($p < 0.05$) |
+| **99 Acres (Debt)** | Inc ($x_1$), Pay ($x_2$), Util ($x_3$), Own ($x_4$) | $500$ | $-185988 + 0.017 x_1 + 1.05 x_2 + 200 x_3 - 12837 x_4$ | $0.712$ | $0.710$ | $18594$ | $306.4 \; (< 0.001)$ | Homeowners have $-12,837$ lower debt ($p=0.01$) |
+| **99 Acres (+Location)** | Inc, Pay, Util, Own, $3$ Location Dummies | $500$ | $\hat{y}_{\text{full}}$ (Location dummies $x_5, x_6, x_7$) | $0.714$ | $0.710$ | $18589$ | $175.2 \; (< 0.001)$ | Location dummies **NOT** significant ($p > 0.05$); drop them |
+| **Magic Bricks (+Loc)** | Area ($x_1$), Premium Loc ($x_2$) | $30$ | $-3.92 + 0.087 x_1 + 86.2 x_2$ | $0.66$ | $0.63$ | $56.35$ | $26.03 \; (< 0.001)$ | Premium location adds $+86.2$ Lakhs ($p < 0.001$) |
+| **Magic Bricks (+All Qual)** | Area, Premium, Amenities, Gated | $30$ | $-43.99 + 0.078 x_1 + 95.66 x_2 + 35.74 x_3 + 55.38 x_4$ | $0.80$ | $0.77$ | $44.64$ | $25.25 \; (< 0.001)$ | All $3$ qualitative features significant; resolves OVB |
+| **Sagar Hospital (Stroke)** | Age ($x_1$), BP ($x_2$), Smoker ($x_3$) | $25$ | $-96.4 + 1.04 x_1 + 0.30 x_2 + 8.08 x_3$ | $0.81$ | $0.79$ | $6.79$ | $30.5 \; (< 0.001)$ | Smoking adds $+8.08$ risk points ($p < 0.05$) |
+| **Amazon (Spend)** | Salary ($x_1$), Married ($x_2$), Male ($x_3$) | $600$ | $-0.40 + 0.11 x_1 + 4.58 x_2 + 2.20 x_3$ | $0.76$ | $0.76$ | $1.47$ | $620.0 \; (< 0.001)$ | Married $+4,580\text{ Rs}$, Men $+2,200\text{ Rs}$ ($p < 0.001$) |
+| **IIIT Dharwad (Interaction)** | Gender ($x_1$), Exp ($x_2$), $x_1 x_2$ | $30$ | $13450.2 - 7771.68 x_1 + 293.8 x_2 - 241.6 (x_1 x_2)$ | $0.92$ | $0.91$ | — | Significant | Experience slope is $293.8$ for men vs $52.2$ for women |
+
+---
+
+## Key Decision Rules Summary
+
+| Rule / Concept | Operational Criteria / Formula | Key Takeaway |
+|---|---|---|
+| **Dummy Variable Count** | $k - 1$ dummy variables for $k$ categories | Prevents the dummy variable trap (perfect multicollinearity) |
+| **Baseline Interpretation** | Intercept $b_0$ represents baseline mean when all $x=0$ | All dummy slope coefficients represent differences relative to baseline |
+| **Parallel Lines Property** | Models with only additive dummy variables | Slopes remain identical across categories; only intercepts shift |
+| **Interaction Formulation** | $y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \beta_3 (x_1 x_2) + \epsilon$ | Allows both intercept and slope to vary across categories |
+| **Moderation Definition** | Interaction term $\beta_3 \neq 0$ is statistically significant | Confirms that predictor $x_1$ moderates the impact of $x_2$ on $y$ |
+| **Model Parsimony Rule** | Retain categorical variables **ONLY** if individual $t$-test $p \le \alpha$ | Drop non-significant dummies to avoid overfitting and redundant complexity |
+| **Omitted Variable Resolution** | Including correlated categorical variables | Adjusts biased continuous slopes to their true marginal contributions |
