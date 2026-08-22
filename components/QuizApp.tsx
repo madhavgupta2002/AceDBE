@@ -10,7 +10,7 @@ import {
   BankType,
   QuizState,
 } from '@/lib/types';
-import { loadQuestions } from '@/lib/questionLoader';
+import { loadQuestions, compareModules } from '@/lib/questionLoader';
 import { getSubjectByCode } from '@/lib/subjectMapping';
 import QuizQuestion from './QuizQuestion';
 import QuizStats from './QuizStats';
@@ -20,7 +20,7 @@ import SourceSelector from './SourceSelector';
 import UnifiedQuizSelector from './UnifiedQuizSelector';
 import Header from './Header';
 import StopWatch from './StopWatch';
-import { ArrowRight, ArrowLeft, RefreshCw, Home, ArrowLeftCircle, BookOpen, Youtube, Search, History, ArrowRightLeft, Check, Download, Play, Pause, Printer, Eye, EyeOff, XCircle, List } from 'lucide-react';
+import { ArrowRight, ArrowLeft, RefreshCw, BookOpen, Youtube, Search, Check, Download, Printer, Eye, EyeOff, XCircle, List, RotateCcw } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -115,6 +115,19 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     const handleKeyPress = (event: KeyboardEvent) => {
       if (quizState.questions.length === 0 || quizCompleted) return;
 
+      // Ignore shortcuts while typing in inputs or using modifier combos
+      const target = event.target as HTMLElement | null;
+      if (
+        target &&
+        (target.tagName === 'INPUT' ||
+          target.tagName === 'TEXTAREA' ||
+          target.tagName === 'SELECT' ||
+          target.isContentEditable)
+      ) {
+        return;
+      }
+      if (event.ctrlKey || event.metaKey || event.altKey) return;
+
       if (event.key === 'ArrowLeft') {
         if (quizState.currentQuestionIndex > 0) {
           moveQuestion('prev');
@@ -180,7 +193,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     if (isCustomMode && customQuestions && quizState.questions.length === 0) {
       const questions = customQuestions;
       const uniqueModules = Array.from(new Set(questions.map(q => q.module).filter(Boolean))) as (string | number)[];
-      setAvailableModules(uniqueModules.sort());
+      setAvailableModules(uniqueModules.sort(compareModules));
       const uniqueSources = Array.from(new Set(questions.map(q => q.source).filter(Boolean))) as string[];
       setAvailableSources(uniqueSources.sort());
       setAllQuestions(questions);
@@ -227,10 +240,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
     try {
       // Load questions from all selected sets and modules, grouped by set
+      const loadedSets = await Promise.all(
+        selections.sets.map(set => loadQuestions(set.bankType, subjectCode, set.bankName))
+      );
       const questionsBySet: Question[][] = [];
 
-      for (const set of selections.sets) {
-        const setQuestions = await loadQuestions(set.bankType, subjectCode, set.bankName);
+      for (let i = 0; i < selections.sets.length; i++) {
+        const set = selections.sets[i];
+        const setQuestions = loadedSets[i];
 
         // If modules array is empty, it means select all questions from this set
         // Otherwise, filter by selected modules
@@ -267,7 +284,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
       }
 
       const uniqueModules = Array.from(new Set(allQuestions.map(q => q.module).filter(Boolean))) as (string | number)[];
-      setAvailableModules(uniqueModules.sort());
+      setAvailableModules(uniqueModules.sort(compareModules));
       const uniqueSources = Array.from(new Set(allQuestions.map(q => q.source).filter(Boolean))) as string[];
       setAvailableSources(uniqueSources.sort());
       setAllQuestions(allQuestions);
@@ -310,10 +327,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
     try {
       // Load questions from all selected sets and modules, grouped by set
+      const loadedSets = await Promise.all(
+        selections.sets.map(set => loadQuestions(set.bankType, subjectCode, set.bankName))
+      );
       const questionsBySet: Question[][] = [];
 
-      for (const set of selections.sets) {
-        const setQuestions = await loadQuestions(set.bankType, subjectCode, set.bankName);
+      for (let i = 0; i < selections.sets.length; i++) {
+        const set = selections.sets[i];
+        const setQuestions = loadedSets[i];
 
         // If modules array is empty, it means select all questions from this set
         // Otherwise, filter by selected modules
@@ -344,7 +365,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
       }
 
       const uniqueModules = Array.from(new Set(allQuestions.map(q => q.module).filter(Boolean))) as (string | number)[];
-      setAvailableModules(uniqueModules.sort());
+      setAvailableModules(uniqueModules.sort(compareModules));
       const uniqueSources = Array.from(new Set(allQuestions.map(q => q.source).filter(Boolean))) as string[];
       setAvailableSources(uniqueSources.sort());
       setAllQuestions(allQuestions);
@@ -385,6 +406,33 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
     const currentQuestion = quizState.questions[quizState.currentQuestionIndex];
     const isMultipleAnswer = currentQuestion.correctAnswer.length > 1;
+
+    // Subjective questions are marked as "viewed" only - they never count as
+    // correct or incorrect so they don't skew the score/accuracy stats.
+    if (currentQuestion.isSubjective) {
+      const subjKey = `${currentQuestion.text}-${currentQuestion.source || ''}`;
+      const subjMasterIndex = allQuestions.findIndex(q => `${q.text}-${q.source || ''}` === subjKey);
+
+      setQuizState((prev) => {
+        const newAnsweredQuestions = [...prev.answeredQuestions];
+        newAnsweredQuestions[prev.currentQuestionIndex] = answer;
+        return {
+          ...prev,
+          selectedAnswer: answer,
+          showResult: true,
+          answeredQuestions: newAnsweredQuestions,
+        };
+      });
+
+      if (subjMasterIndex !== -1) {
+        setMasterAnsweredQuestions(prev => {
+          const newMaster = [...prev];
+          newMaster[subjMasterIndex] = answer;
+          return newMaster;
+        });
+      }
+      return;
+    }
 
     // For multiple answer questions, check if a wrong option was selected
     const hasWrongOption = answer.some(opt => !currentQuestion.correctAnswer.includes(opt));
@@ -645,6 +693,34 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     setSelectedSource('all');
     setElapsedSeconds(0);
     setIsTimerActive(false);
+  };
+
+  // Restart the same question set from scratch (fresh answers, timer reset)
+  const restartSameQuiz = () => {
+    if (allQuestions.length === 0) return;
+    setMasterAnsweredQuestions(new Array(allQuestions.length).fill(null));
+    setQuizState(prev => ({
+      ...prev,
+      currentQuestionIndex: 0,
+      score: 0,
+      totalQuestions: allQuestions.length,
+      selectedAnswer: null,
+      showResult: false,
+      questions: allQuestions,
+      incorrectAnswers: [],
+      answeredQuestions: new Array(allQuestions.length).fill(null),
+    }));
+    setSelectedModule('all');
+    setSelectedSource('all');
+    setShowAllQuestions(true);
+    setHideWrongOptions(false);
+    setReviseMode(false);
+    setSearchQuery('');
+    setGlobalAnswersVisible(true);
+    setIndividualAnswersVisible({});
+    setQuizCompleted(false);
+    setElapsedSeconds(0);
+    setIsTimerActive(true);
   };
 
   // Download/Export current quiz as JSON
@@ -975,9 +1051,18 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
             <div className="bg-surface border border-surface-border/60 rounded-xl p-4 sm:p-6 mb-8 shadow-card">
               {!reviseMode && (
                 <>
-                  <h2 className="text-xl sm:text-2xl font-bold mb-4 text-white">
-                    Quiz Completed!
-                  </h2>
+                  <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
+                    <h2 className="text-xl sm:text-2xl font-bold text-white">
+                      Quiz Completed!
+                    </h2>
+                    <button
+                      onClick={restartSameQuiz}
+                      className="flex items-center gap-2 px-4 py-2 bg-emerald-800 text-white border border-emerald-700/45 font-semibold hover:bg-emerald-700 transition-all duration-200 rounded-lg shadow-md"
+                      title="Restart the same question set with fresh answers"
+                    >
+                      <RotateCcw size={16} /> Practice Again
+                    </button>
+                  </div>
                   <QuizStats
                     score={quizState.score}
                     totalQuestions={quizState.totalQuestions}
@@ -1147,15 +1232,18 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                     })
                     .map(({ q, idx }) => {
                       const userAnswer = quizState.answeredQuestions[idx];
-                      // Check if arrays are equal
-                      const isCorrect = userAnswer !== null &&
+                      // Check if arrays are equal; subjective questions stay neutral
+                      const isCorrect = !q.isSubjective && userAnswer !== null &&
                         userAnswer.length === q.correctAnswer.length &&
                         userAnswer.every(ans => q.correctAnswer.includes(ans));
+                      const isNeutral = q.isSubjective;
 
                       return (
                         <div
                           key={idx}
-                          className={`mb-4 p-4 border rounded-xl ${isCorrect
+                          className={`mb-4 p-4 border rounded-xl ${isNeutral
+                            ? 'bg-slate-800/20 border-slate-700/40'
+                            : isCorrect
                             ? 'bg-emerald-900/15 border-emerald-800/40'
                             : 'bg-red-900/15 border-red-800/40'
                             }`}
@@ -1214,16 +1302,16 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                           {q.options && Object.keys(q.options).length > 0 && (
                             <div className="space-y-1 mb-3">
                               {Object.entries(q.options)
-                                .filter(([key]) => {
-                                  if (!hideWrongOptions) {
-                                    // By default (hideWrongOptions=false), only show correct answers
-                                    return q.correctAnswer.includes(key);
-                                  }
-                                  // When toggle is on (hideWrongOptions=true), show all options
-                                  return true;
-                                })
-                                .map(([key, optionValue]) => {
-                                  const isUserAnswer = userAnswer?.includes(key) || false;
+                                 .filter(([key]) => {
+                                   // "Answer Only" mode shows just the correct options
+                                   if (hideWrongOptions) {
+                                     return q.correctAnswer.includes(key);
+                                   }
+                                   // "All Options" mode shows every option
+                                   return true;
+                                 })
+                                 .map(([key, optionValue]) => {
+                                   const isUserAnswer = userAnswer?.includes(key) || false;
                                   const isCorrectAnswer = q.correctAnswer.includes(key);
                                   const isVisible = individualAnswersVisible[idx] ?? globalAnswersVisible;
 
@@ -1291,9 +1379,13 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                         if (!searchQuery) return true;
                         const query = searchQuery.toLowerCase();
                         return q.text.toLowerCase().includes(query) ||
-                          Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(query));
+                          (q.options && Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(query)));
                       })
-                      .map((q, index) => (
+                      .map((q, index) => {
+                        const originalIndex = quizState.questions.findIndex(
+                          mq => `${mq.text}-${mq.source || ''}` === `${q.text}-${q.source || ''}`
+                        );
+                        return (
                         <div
                           key={index}
                           className="mb-4 p-4 bg-red-900/15 border border-red-800/40 rounded-xl"
@@ -1301,7 +1393,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                           {/* Question Number, Module, and Source Metadata */}
                           <div className="mb-3 flex items-center justify-between">
                             <span className="px-2 py-0.5 bg-slate-700/50 border border-slate-600/40 text-slate-300 font-medium text-xs rounded-md">
-                              Q{quizState.questions.indexOf(q) + 1}
+                              Q{originalIndex + 1}
                             </span>
                             <div className="flex gap-2 text-xs">
                               {q.module && (
@@ -1329,16 +1421,16 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                           {q.options && Object.keys(q.options).length > 0 && (
                             <div className="space-y-1 mb-3">
                               {Object.entries(q.options)
-                                .filter(([key]) => {
-                                  if (!hideWrongOptions) {
-                                    // By default (hideWrongOptions=false), only show correct answers
-                                    return q.correctAnswer.includes(key);
-                                  }
-                                  // When toggle is on (hideWrongOptions=true), show all options
-                                  return true;
-                                })
-                                .map(([key, optionValue]) => {
-                                  const isUserAnswer = q.selectedAnswer?.includes(key) || false;
+                                 .filter(([key]) => {
+                                   // "Answer Only" mode shows just the correct options
+                                   if (hideWrongOptions) {
+                                     return q.correctAnswer.includes(key);
+                                   }
+                                   // "All Options" mode shows every option
+                                   return true;
+                                 })
+                                 .map(([key, optionValue]) => {
+                                   const isUserAnswer = q.selectedAnswer?.includes(key) || false;
                                   const isCorrectAnswer = q.correctAnswer.includes(key);
 
                                   return (
@@ -1381,7 +1473,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                             </div>
                           )}
                         </div>
-                      ))}
+                        );
+                      })}
                     {quizState.incorrectAnswers.filter(q => {
                       if (!searchQuery) return true;
                       const query = searchQuery.toLowerCase();
@@ -1456,6 +1549,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                   elapsedSeconds={elapsedSeconds}
                   isTimerActive={isTimerActive}
                   onToggleTimer={() => setIsTimerActive(!isTimerActive)}
+                  questionNumber={quizState.currentQuestionIndex + 1}
+                  totalQuestions={quizState.totalQuestions}
                 />
               </div>
 

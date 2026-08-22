@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { isSafeSegment } from '@/lib/validatePath';
+
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams;
   const bankType = searchParams.get('bankType');
@@ -10,6 +12,13 @@ export async function GET(request: NextRequest) {
   if (!bankType || !subjectCode || !bankName) {
     return NextResponse.json(
       { error: 'Missing required parameters' },
+      { status: 400 }
+    );
+  }
+
+  if (!isSafeSegment(bankType) || !isSafeSegment(subjectCode) || !isSafeSegment(bankName)) {
+    return NextResponse.json(
+      { error: 'Invalid parameters' },
       { status: 400 }
     );
   }

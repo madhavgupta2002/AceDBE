@@ -19,7 +19,7 @@ const QuizStats: React.FC<QuizStatsProps> = ({
   const attempted = answeredQuestions.filter((answer) => answer !== null).length;
   const unattempted = totalQuestions - attempted;
   const accuracy = attempted > 0 ? (score / attempted) * 100 : 0;
-  const completionPercentage = (attempted / totalQuestions) * 100;
+  const completionPercentage = totalQuestions > 0 ? (attempted / totalQuestions) * 100 : 0;
 
   const isLarge = size === 'large';
   const iconSize = isLarge ? 20 : 14;

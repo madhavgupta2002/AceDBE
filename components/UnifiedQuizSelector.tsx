@@ -192,7 +192,12 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
     );
 
     setSelections((prev) => {
-      const newSelections = new Map(); // Clear all (including custom) to start fresh
+      // Preserve existing CLA/Exam selections; drop any custom selection
+      // (custom quizzes remain mutually exclusive with CLA/Exam picks)
+      const newSelections = new Map();
+      prev.forEach((val, k) => {
+        if (!k.startsWith('Custom:')) newSelections.set(k, val);
+      });
 
       relevantSets.forEach(set => {
         const key = getSetKey(set.bankName, set.bankType);

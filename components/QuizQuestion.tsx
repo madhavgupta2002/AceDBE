@@ -18,6 +18,8 @@ interface QuizQuestionProps {
   elapsedSeconds?: number;
   isTimerActive?: boolean;
   onToggleTimer?: () => void;
+  questionNumber?: number;
+  totalQuestions?: number;
 }
 
 const QuizQuestion: React.FC<QuizQuestionProps> = ({
@@ -29,6 +31,8 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   elapsedSeconds = 0,
   isTimerActive = false,
   onToggleTimer,
+  questionNumber,
+  totalQuestions,
 }) => {
   const isMultipleAnswer = question.correctAnswer.length > 1;
   const isSubjective = question.isSubjective || Object.keys(question.options).length === 0;
@@ -37,12 +41,13 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   // named like the question bank, matching files by question number (e.g. PME_Q5_587.png).
   const [questionImages, setQuestionImages] = useState<string[]>([]);
 
+  const hasPlaceholder = (s?: string) => !!s && s.includes('PARSEIMAGE');
+  const textNeedsImage = hasPlaceholder(question.text);
+  const explanationNeedsImage = hasPlaceholder(question.explanation);
+  const optionsNeedImage = Object.values(question.options || {}).some((v) => hasPlaceholder(v));
+
   useEffect(() => {
-    const hasPlaceholder = (s?: string) => !!s && s.includes('PARSEIMAGE');
-    const needsImage =
-      hasPlaceholder(question.text) ||
-      hasPlaceholder(question.explanation) ||
-      Object.values(question.options || {}).some((v) => hasPlaceholder(v));
+    const needsImage = textNeedsImage || explanationNeedsImage || optionsNeedImage;
 
     if (
       !needsImage ||
@@ -79,8 +84,9 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
     question.subjectCode,
     question.bankType,
     question.source,
-    question.text,
-    question.explanation,
+    textNeedsImage,
+    explanationNeedsImage,
+    optionsNeedImage,
   ]);
 
   const handleOptionClick = (option: string) => {
@@ -216,10 +222,15 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
     return (
       <div className="w-full max-w-3xl mx-auto">
         <div className="flex flex-wrap items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
-          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
-            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-yellow-900/30 text-yellow-300 border border-yellow-700/40 text-xs font-semibold rounded-full">
-              Subjective
+        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+          {questionNumber !== undefined && totalQuestions !== undefined && (
+            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-indigo-900/40 text-indigo-300 border border-indigo-700/40 text-xs font-semibold rounded-full tabular-nums">
+              Q{questionNumber} / {totalQuestions}
             </span>
+          )}
+          <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-yellow-900/30 text-yellow-300 border border-yellow-700/40 text-xs font-semibold rounded-full">
+            Subjective
+          </span>
             {question.module && (
               <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-emerald-900/30 text-emerald-300 border border-emerald-700/40 text-xs font-semibold rounded-full">
                 Mod {question.module}
@@ -296,6 +307,11 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
     <div className="w-full max-w-3xl mx-auto">
       <div className="flex flex-wrap items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
         <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+          {questionNumber !== undefined && totalQuestions !== undefined && (
+            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-indigo-900/40 text-indigo-300 border border-indigo-700/40 text-xs font-semibold rounded-full tabular-nums">
+              Q{questionNumber} / {totalQuestions}
+            </span>
+          )}
           {isMultipleAnswer && (
             <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-amber-900/30 text-amber-300 border border-amber-700/40 text-xs font-semibold rounded-full">
               Multiple Correct

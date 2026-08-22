@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { isSafeSegment } from '@/lib/validatePath';
+
 interface BankInfo {
   bankName: string;
   displayName: string;
@@ -14,6 +16,13 @@ export async function GET(request: NextRequest) {
   if (!bankType || !subjectCode) {
     return NextResponse.json(
       { error: 'Missing required parameters' },
+      { status: 400 }
+    );
+  }
+
+  if (!isSafeSegment(bankType) || !isSafeSegment(subjectCode)) {
+    return NextResponse.json(
+      { error: 'Invalid parameters' },
       { status: 400 }
     );
   }

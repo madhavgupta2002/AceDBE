@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { isSafeSegment } from '@/lib/validatePath';
 
 const IMAGE_EXTENSIONS = ['.png', '.jpg', '.jpeg', '.gif', '.webp', '.svg', '.bmp'];
 
@@ -36,6 +37,13 @@ export async function GET(request: NextRequest) {
     if (!bankType || !subjectCode || !bankName || !questionId) {
         return NextResponse.json(
             { error: 'Missing required parameters' },
+            { status: 400 }
+        );
+    }
+
+    if (!isSafeSegment(bankType) || !isSafeSegment(subjectCode) || !isSafeSegment(bankName)) {
+        return NextResponse.json(
+            { error: 'Invalid parameters' },
             { status: 400 }
         );
     }
