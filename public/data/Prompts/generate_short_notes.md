@@ -72,27 +72,32 @@ $$\text{General Formula}$$
 
 **Format A — Conceptual / MCQ-style** (after concept tables, for qualitative subjects):
 
-Each question sits inside a `>` blockquote, immediately after the relevant content block. Answer is **bolded** with a `✓` checkmark. Multiple questions stack as separate `>` lines.
+Each question sits inside a `>` blockquote, immediately after the relevant content block. Tag each question with its source (**CLA.**, **PYQ.**, or **CLA/PYQ.** if present in both). If the question is neither from CLA nor PYQ, or if the origin is unknown, use **Q.** as the fallback tag. Never use arbitrary question numbers. Answer is **bolded** with a `✓` checkmark. Always ensure proper line breaks / separation between question stems, answers, and consecutive items so they don't run together. Multiple questions stack as separate `>` lines with blank line separation between distinct question-answer pairs where appropriate.
 
 ```markdown
-> **Q:** Question stem / keyword = **Answer** ✓
-> **Q:** Another question = **Answer** ✓
-> **Q:** Statement is TRUE/FALSE = **True/False** ✓
-> **Q:** Fill-in-the-blank ______ = **Answer** ✓
+> **CLA:** Question stem / keyword = **Answer** ✓
+>
+> **PYQ:** Another question = **Answer** ✓
+>
+> **CLA/PYQ:** Statement is TRUE/FALSE = **True** ✓
+>
+> **Q:** Conceptual question with unknown source = **Answer** ✓
+>
+> **CLA:** Fill-in-the-blank ______ = **Answer** ✓
 ```
 
 Variations:
-- `**Q:** X is done by the **Receiver** ✓` — direct fact recall
-- `**Q:** X is **NOT** a feature of Y ✓` — negation/exception
-- `**Q:** Missing step = **Answer** ✓` — scenario-based
-- `**Q:** Factor NOT significantly influencing X = **Answer** ✓` — "odd one out"
+- `**CLA:** X is done by the **Receiver** ✓` — direct fact recall
+- `**PYQ:** X leads to Y = **True** ✓` — positive conceptual validation
+- `**CLA/PYQ:** Missing step = **Answer** ✓` — scenario-based
+- `**Q:** Concept X is defined as = **Answer** ✓` — general/unknown source recall
 
 **Format B — Numerical / Problem-solving** (quantitative subjects):
 
-Question number and problem statement appear **outside** the blockquote in bold. The solution sits inside the `>` block with a reasoning line, step-by-step working, table lookups, and final answer.
+Tag with source (e.g. `**PYQ:**`, `**CLA:**`, or `**Q:**` if unknown) and problem statement. The solution sits inside the `>` block with a reasoning line, step-by-step working, table lookups, and final answer.
 
 ```markdown
-**Q{n}:** Problem statement with given values.
+**PYQ:** Problem statement with given values.
 
 > *Why: One-line rationale explaining which method/formula applies and why.*
 > $\text{Step 1 calculation}$
@@ -103,10 +108,10 @@ Question number and problem statement appear **outside** the blockquote in bold.
 > *(Parenthetical key takeaway or common-mistake warning)*
 ```
 
-**Format C — Conceptual but numbered** (theory questions in quantitative subjects):
+**Format C — Conceptual with extended explanation**:
 
 ```markdown
-**Q{n}:** What does X mean / Which statement is true?
+**CLA:** What does X mean / Which statement is true?
 
 > One-to-two sentence answer in plain text.
 ```
@@ -119,15 +124,16 @@ Question number and problem statement appear **outside** the blockquote in bold.
 |---------|-----------|
 | **Key terms** | Always **bold** on first/primary mention |
 | **Answers** | **Bold** + `✓` checkmark |
+| **Question Source Tag** | Use `**CLA:**`, `**PYQ:**`, or `**CLA/PYQ:**`. If neither or source is unknown, fallback to `**Q:**` (do NOT use question numbers) |
 | **Negations** | Use **NOT** in bold caps: `**NOT**` |
 | **Formulas** | Inline `$...$` for within text; `$$...$$` for standalone |
 | **Table lookups** | Prefix with `📋 **Table Name:**` |
 | **Tips/warnings** | `*(Italicized in parentheses at end of solution)*` |
 | **Rationale line** | `*Why: ...*` in italics as first line of numerical solution |
 | **Section dividers** | `---` between topics |
-| **Cross-references** | Slash-separated Q numbers: `**Q44/Q131/Q181:**` |
-| **TRUE/FALSE** | State claim → `**True/False**` + explain if False: `(it's actually X)` |
+| **TRUE/FALSE & Statements** | Formulate claims positively as true/correct facts (`**True** ✓`) so short notes reinforce the correct concepts directly for revision |
 | **Checkmarks** | Every answer ends with `✓` — no exceptions |
+| **Line Breaks** | Ensure proper blank line / line breaks between questions, answers, and consecutive question blocks for clear readability |
 
 ---
 
@@ -192,7 +198,7 @@ Question number and problem statement appear **outside** the blockquote in bold.
 2. Attach **every** question that tests that concept directly below it
 3. For numerical Qs: show full working with table lookups and a `*Why:*` line
 4. For conceptual Qs: collapse to `stem = **answer** ✓` one-liner
-5. Merge duplicate questions using slash notation (`Q12/Q45:`)
+5. Merge duplicate questions using multi-tag notation (`CLA/PYQ:`)
 6. Add Quick Reference and Decision Rules at the end
 7. Add Rapid-Fire table if total questions exceed ~40
 
