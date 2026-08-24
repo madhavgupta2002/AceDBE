@@ -2,7 +2,7 @@
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Bookmark, ChevronDown, ClipboardPaste, Copy, RefreshCw, Trash2 } from 'lucide-react';
-import { parseGrades, parsePastedText, type RawRow, type ParsedSubject } from '@/lib/marks/parseGrades';
+import { parseGrades, parsePastedText, detectBatchFromText, type RawRow, type ParsedSubject } from '@/lib/marks/parseGrades';
 import { gradePoints, gradeFromTotal } from '@/lib/cgpa/grades';
 import { CGPA_TERMS, getSubjectsForTerm } from '@/lib/cgpa/subjects';
 import { useBatch } from '@/contexts/BatchContext';
@@ -35,9 +35,11 @@ function decodeImport(hash: string): RawRow[] | null {
 
 const fmt = (v: number | null) => (v === null ? '—' : v.toFixed(2));
 
-// Effective grade points for a subject: prefer the Moodle letter grade,
-// otherwise derive from the Total (out of 100).
+// Effective grade points for a subject: if retake exists or initial grade was F with valid total, derive from total; otherwise prefer letter grade.
 function pointsFor(s: ParsedSubject): number | null {
+    if (s.total !== null && (s.hasRetake || s.grade === 'F' || !s.grade)) {
+        return gradeFromTotal(s.total).points;
+    }
     const fromLetter = gradePoints(s.grade);
     if (fromLetter !== null) return fromLetter;
     if (s.total !== null) return gradeFromTotal(s.total).points;
@@ -45,6 +47,9 @@ function pointsFor(s: ParsedSubject): number | null {
 }
 
 function effectiveGrade(s: ParsedSubject): string | null {
+    if (s.total !== null && (s.hasRetake || s.grade === 'F' || !s.grade)) {
+        return gradeFromTotal(s.total).letter;
+    }
     if (gradePoints(s.grade) !== null) return (s.grade || '').trim().toUpperCase();
     if (s.total !== null) return gradeFromTotal(s.total).letter;
     return null;
@@ -143,6 +148,10 @@ export default function MarksPage() {
     // Parse whatever the student copied off their Moodle grade page.
     const ingestPaste = (text: string) => {
         setPasteText(text);
+        const detected = detectBatchFromText(text);
+        if (detected && detected !== selectedBatch) {
+            setSelectedBatch(detected);
+        }
         const parsedRows = parsePastedText(text);
         if (parsedRows.length) {
             setRows(parsedRows);

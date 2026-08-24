@@ -1,4 +1,3 @@
-
 // Parses raw scraped Moodle grade rows into structured per-subject marks,
 // and fuzzy-matches each subject to a CGPA subject (lib/cgpa/subjects.ts).
 
@@ -20,6 +19,56 @@ export type ParsedSubject = {
 
 const VALID_GRADES: LetterGrade[] = ['O', 'A', 'B', 'C', 'D', 'E', 'F'];
 
+// Common acronyms and abbreviations mapped to standard canonical names
+function normalizeSubjectBase(name: string): string {
+    const clean = name.trim().replace(/\s+/g, ' ');
+
+    if (/^CMII\b/i.test(clean) || /^Creative Mindset\b/i.test(clean)) {
+        return 'Creativity Mindset for Innovation and Imagination';
+    }
+    if (/^FoBC\s*[-–]?\s*2\b/i.test(clean) || /^FoBC\s*II\b/i.test(clean) || /^Foundation[s]? of Business Communication[- ]*(?:2|II)\b/i.test(clean)) {
+        return 'Foundation of Business Communication II';
+    }
+    if (/^FoBC\b/i.test(clean) || /^Foundation[s]? of Business Communication[- ]*(?:1|I)\b/i.test(clean)) {
+        return 'Foundations of Business Communication I';
+    }
+    if (/^Finance\b/i.test(clean) || /^Financial Statement[s]? and Business Performance\b/i.test(clean)) {
+        return 'Financial Statements and Business Performance';
+    }
+    if (/^Marketing\b/i.test(clean)) {
+        return 'Marketing Fundamentals';
+    }
+    if (/^Statistics\b/i.test(clean)) {
+        return 'Business Statistics for Entrepreneurs';
+    }
+    if (/^Entrepreneurship\b/i.test(clean) || /^Exploration[s]?\s+(?:in|into)\s+Entrepreneurship\b/i.test(clean)) {
+        return 'Exploration into Entrepreneurship';
+    }
+    if (/(?:Venturing on a budget:\s*)?(?:Rs\.?\s*)?250\s*Venture\b/i.test(clean)) {
+        return 'Venturing on a budget: Rs.250 Venture';
+    }
+    if (/^Web(?:site)?\s*Development\b/i.test(clean)) {
+        return 'Website Development';
+    }
+    if (/^Introduction to Strategic Management\b/i.test(clean)) {
+        return 'Strategic Management';
+    }
+    if (/^Sustainability Measure[s]? for SMEs\b/i.test(clean)) {
+        return 'Sustainability Measurements for SMEs';
+    }
+    if (/^Entrepreneurial Hypothesis Testing\b/i.test(clean)) {
+        return 'Entrepreneurial Methods Hypothesis Testing';
+    }
+    if (/^Exploring Society & Social Structure\b/i.test(clean)) {
+        return 'Exploring Society & Structure';
+    }
+    if (/^Understanding Indian Culture\b/i.test(clean)) {
+        return 'Understanding Indian Culture: Theatre and its presence in daily life';
+    }
+
+    return clean;
+}
+
 // Strip Moodle's item-type prefix that gets concatenated onto the name text.
 function stripPrefix(name: string): string {
     return name.replace(/^(Manual item|Category total|Course total|Aggregation)\s*/i, '').trim();
@@ -28,31 +77,41 @@ function stripPrefix(name: string): string {
 type Component = 'cla' | 'final' | 'total' | 'grade' | null;
 
 // Identify which component a row represents and return the base subject name.
-function classify(rawName: string): { base: string; component: Component; retake: boolean } {
-    const name = stripPrefix(rawName);
+export function classify(rawName: string): { base: string; component: Component; retake: boolean } {
+    const name = stripPrefix(rawName).trim();
+    if (!name) return { base: '', component: null, retake: false };
 
-    // (Grade)
-    let m = name.match(/^(.*?)\s*\(Grade\)\s*$/i);
-    if (m) return { base: m[1].trim(), component: 'grade', retake: false };
+    // Ignore generic table headers
+    if (/^Grade item\b/i.test(name)) return { base: '', component: null, retake: false };
 
-    // Total (100)
-    m = name.match(/^(.*?)\s*Total\s*\(\d+\)\s*$/i);
-    if (m) return { base: m[1].trim(), component: 'total', retake: false };
+    const isRetake = /\bRetake(?:-\d+)?\b/i.test(name);
+    const cleanName = name
+        .replace(/\(?\bRetake(?:-\d+)?\)?/gi, '')
+        .replace(/\s+/g, ' ')
+        .trim();
 
-    // Final Exam [Retake-N] (75)
-    m = name.match(/^(.*?)\s*Final Exam(\s+Retake-\d+)?\s*\(\d+\)\s*$/i);
-    if (m) return { base: m[1].trim(), component: 'final', retake: Boolean(m[2]) };
+    // Grade: "(Grade)", "Grade", "[Grade]", "(Letter Grade)", "Grade Letter", "(Retake) Grade"
+    let m = cleanName.match(/^(.*?)\s*(?:\((?:Letter\s*)?Grade\)|\[(?:Letter\s*)?Grade\]|\b(?:Letter\s*)?Grade\b)\s*$/i);
+    if (m && m[1].trim()) return { base: normalizeSubjectBase(m[1]), component: 'grade', retake: isRetake };
 
-    // CLA [Retake-N] (25)
-    m = name.match(/^(.*?)\s*CLA(\s+Retake-\d+)?\s*\(\d+\)\s*$/i);
-    if (m) return { base: m[1].trim(), component: 'cla', retake: Boolean(m[2]) };
+    // Total: "Total(100)", "Total (100)", "Total"
+    m = cleanName.match(/^(.*?)\s*Total(?:\s*\(\d+(?:\.\d+)?\))?\s*$/i);
+    if (m && m[1].trim()) return { base: normalizeSubjectBase(m[1]), component: 'total', retake: isRetake };
 
-    return { base: name, component: null, retake: false };
+    // Final Exam: "Final exam(75)", "Final Exam (75)", "Final Exam", "End Term Exam", "Final"
+    m = cleanName.match(/^(.*?)\s*(?:Final\s*Exam|End\s*Term\s*Exam|End\s*Term|Final)(?:\s*\(\d+(?:\.\d+)?\))?\s*$/i);
+    if (m && m[1].trim()) return { base: normalizeSubjectBase(m[1]), component: 'final', retake: isRetake };
+
+    // CLA: "CLA(25)", "CLA (25)", "CLA", "Continuous Assessment"
+    m = cleanName.match(/^(.*?)\s*(?:CLA|Continuous\s*Assessment)(?:\s*\(\d+(?:\.\d+)?\))?\s*$/i);
+    if (m && m[1].trim()) return { base: normalizeSubjectBase(m[1]), component: 'cla', retake: isRetake };
+
+    return { base: normalizeSubjectBase(cleanName), component: null, retake: isRetake };
 }
 
 function parseGradeValue(g: string): number | null {
     const trimmed = (g || '').trim();
-    if (!trimmed || trimmed === '-') return null;
+    if (!trimmed || trimmed === '-' || trimmed.toLowerCase() === '( empty )') return null;
     const num = Number(trimmed.replace(/[^0-9.]/g, ''));
     return Number.isFinite(num) ? num : null;
 }
@@ -93,7 +152,7 @@ function similarity(a: string, b: string): number {
     return 1 - levenshtein(a, b) / maxLen;
 }
 
-const MATCH_THRESHOLD = 0.72;
+const MATCH_THRESHOLD = 0.70;
 
 type Candidate = { subject: CgpaSubject; norm: string };
 
@@ -131,47 +190,67 @@ export function parseGrades(rows: RawRow[], batch?: number): ParsedSubject[] {
     const order: string[] = [];
     const map = new Map<string, ParsedSubject>();
 
+    const candidates = buildCandidates(batch);
+
     for (const row of rows) {
         const { base, component, retake } = classify(row.n);
         if (!component || !base) continue;
 
-        if (!map.has(base)) {
-            order.push(base);
-            map.set(base, {
-                name: base,
+        // Group rows under the canonical matched subject if possible
+        const { match } = bestMatch(base, candidates);
+        const mapKey = match ? match.code || match.id : base;
+
+        if (!map.has(mapKey)) {
+            order.push(mapKey);
+            map.set(mapKey, {
+                name: match ? match.name : base,
                 cla: null,
                 final: null,
                 total: null,
                 grade: null,
                 hasRetake: false,
-                match: null,
-                matchScore: 0,
+                match: match,
+                matchScore: match ? 1 : 0,
             });
         }
-        const entry = map.get(base)!;
+        const entry = map.get(mapKey)!;
 
         if (component === 'grade') {
             const g = (row.g || '').trim().toUpperCase();
-            if (g && g !== '-') entry.grade = g;
-        } else if (retake) {
-            // Only acknowledge a retake when it actually has a populated value.
-            if (parseGradeValue(row.g) !== null) entry.hasRetake = true;
+            if (g && g !== '-' && g !== '( EMPTY )') {
+                if (retake || !entry.grade || entry.grade === 'F') {
+                    entry.grade = g;
+                }
+            }
+            if (retake && g && g !== '-') entry.hasRetake = true;
         } else {
             const value = parseGradeValue(row.g);
-            if (value !== null) entry[component] = value;
+            if (value !== null) {
+                if (retake) {
+                    entry.hasRetake = true;
+                    entry[component] = value;
+                } else if (entry[component] === null) {
+                    entry[component] = value;
+                }
+            }
         }
     }
 
-    // Keep only subjects that have at least one real mark (drops empty
-    // retake-only groups whose source values are all blank).
+    // Keep only subjects that have at least one real mark
     const result = order
         .map((key) => map.get(key)!)
         .filter((s) => s.cla !== null || s.final !== null || s.total !== null || s.grade !== null);
-    const candidates = buildCandidates(batch);
+
     for (const subject of result) {
-        const { match, score } = bestMatch(subject.name, candidates);
-        subject.match = match;
-        subject.matchScore = score;
+        // If CLA and Final exist, compute total
+        if (subject.cla !== null && subject.final !== null) {
+            subject.total = Number((subject.cla + subject.final).toFixed(2));
+        }
+        if (!subject.match) {
+            const { match, score } = bestMatch(subject.name, candidates);
+            subject.match = match;
+            subject.matchScore = score;
+        }
     }
     return result;
 }
@@ -180,49 +259,73 @@ export function isValidLetterGrade(g: string | null): g is LetterGrade {
     return !!g && (VALID_GRADES as string[]).includes(g);
 }
 
-// ── Pasted-text parsing (mobile-friendly path) ───────────────────────────────
-// When a student does "Select all → Copy" on the Moodle grade report and pastes
-// it here, the clipboard holds the visible table text (tab/space/newline
-// separated). We reconstruct RawRow {n, g} pairs so the same parseGrades
-// pipeline can run — no bookmarklet, console, or extension needed.
+// ── Auto-detect Batch from text ─────────────────────────────────────────────
 
-// A grade-item line always ends in a parenthesised marker: "(Grade)", "(100)",
-// "CLA (25)", "Final Exam (75)", "Final Exam Retake-1 (75)", etc.
-const COMPONENT_RE = /(Total|CLA|Final\s*Exam|Grade)/i;
-// A value cell: a number ("80.00"), a dash, a percentage, or a letter grade.
-const VALUE_RE = /^(?:-|[OABCDEF][+-]?|\d+(?:\.\d+)?%?)$/i;
+export function detectBatchFromText(text: string): number | null {
+    if (!text) return null;
+    if (/Batch\s*(?:2024\b|1\b)/i.test(text) || /DBE\s*2024/i.test(text)) return 1;
+    if (/Batch\s*(?:2025\b|2\b)/i.test(text) || /DBE\s*2025/i.test(text)) return 2;
+    if (/Business Statistics for Entrepreneurs\s*[-–]?\s*[123]/i.test(text)) return 2;
+    if (/Business Statistics for Entrepreneurs\s*(?:I|II|III)\b/i.test(text)) return 2;
+    if (/Business Statistics for Entrepreneurs/i.test(text)) return 1;
+    return null;
+}
+
+// ── Pasted-text parsing (mobile-friendly & desktop table path) ───────────────
 
 export function parsePastedText(text: string): RawRow[] {
     if (!text) return [];
+
     const lines = text
         .split(/\r?\n/)
-        .map((l) => l.replace(/[ \t]+/g, ' ').trim())
+        .map((l) => l.trim())
         .filter(Boolean);
 
     const rows: RawRow[] = [];
-    // Pull a trailing value off a line that also carries the item name.
-    const inline = /^(.*\([^)]*\))\s+(\S.*)$/;
 
     for (let i = 0; i < lines.length; i++) {
         const line = lines[i];
 
-        // Case 1: name and value on the same line.
-        const m = line.match(inline);
-        if (m && COMPONENT_RE.test(m[1])) {
-            rows.push({ n: m[1].trim(), g: m[2].trim() });
+        const { component } = classify(line);
+        if (component) {
+            let val = '';
+            let j = i + 1;
+            while (j < lines.length) {
+                const nextLine = lines[j];
+                if (nextLine.startsWith('Manual item') || nextLine.startsWith('Bachelor of') || classify(nextLine).component !== null) {
+                    break;
+                }
+
+                // If nextLine has tabs, extract Grade column
+                if (nextLine.includes('\t')) {
+                    const cells = nextLine.split('\t').map((c) => c.trim()).filter(Boolean);
+                    if (cells.length > 0) {
+                        if (/^\d+(?:\.\d+)?\s*%$/.test(cells[0])) {
+                            val = cells[1] || '';
+                        } else if (cells.length >= 2 && /^\d+(?:\.\d+)?\s*%$/.test(cells[cells.length - 1])) {
+                            val = cells[cells.length - 2] || cells[0];
+                        } else {
+                            val = cells[0];
+                        }
+                        j++;
+                        break;
+                    }
+                } else if (/^\d+(?:\.\d+)?\s*%$/.test(nextLine)) {
+                    // Line with weight percentage only (e.g. "0.00 %"), next line has value
+                    j++;
+                    continue;
+                } else {
+                    val = nextLine;
+                    j++;
+                    break;
+                }
+            }
+
+            rows.push({ n: line, g: val });
+            i = j - 1;
             continue;
         }
-
-        // Case 2: name-only line; the value sits on the following line.
-        if (/\)$/.test(line) && COMPONENT_RE.test(line)) {
-            const next = lines[i + 1] || '';
-            if (VALUE_RE.test(next)) {
-                rows.push({ n: line, g: next });
-                i++;
-            } else {
-                rows.push({ n: line, g: '' });
-            }
-        }
     }
+
     return rows;
 }
