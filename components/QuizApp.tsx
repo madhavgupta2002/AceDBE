@@ -767,23 +767,29 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     const questions = quizState.questions;
     const uniqueSources = Array.from(new Set(questions.map(q => q.source).filter(Boolean))) as string[];
 
+    // Helper: escape HTML tags but preserve LaTeX dollar-sign delimiters for KaTeX auto-render
+    const escapeHtml = (str: string) => str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;');
+
     const questionsHtml = questions.map((q, idx) => {
       const optionsHtml = !q.isSubjective && q.options
         ? Object.entries(q.options)
           .filter(([, val]) => val && val.trim() !== '')
           .map(([key, val]) => {
             const isCorrect = withAnswers && q.correctAnswer.includes(key);
-            return `<div class="option ${isCorrect ? 'correct' : ''}"><span class="option-label">${key}.</span> ${val}</div>`;
+            return `<div class="option ${isCorrect ? 'correct' : ''}"><span class="option-label">${key}.</span> ${escapeHtml(val)}</div>`;
           }).join('')
         : '<div class="subjective-space">_______________________________________</div>';
 
       const answerHtml = withAnswers && q.correctAnswer.length > 0
-        ? `<div class="answer">Answer: ${q.correctAnswer.join(', ')}${q.explanation ? ' — ' + q.explanation.replace(/</g, '&lt;').replace(/>/g, '&gt;') : ''}</div>`
+        ? `<div class="answer">Answer: ${q.correctAnswer.join(', ')}${q.explanation ? ' — ' + escapeHtml(q.explanation) : ''}</div>`
         : '';
 
       return `
         <div class="question-block">
-          <div class="question-text"><strong>Q${idx + 1}.</strong> ${q.text.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</div>
+          <div class="question-text"><strong>Q${idx + 1}.</strong> ${escapeHtml(q.text)}</div>
           <div class="options">${optionsHtml}</div>
           ${answerHtml}
         </div>`;
@@ -797,6 +803,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
       <html>
       <head>
         <title>${title} - Quiz</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
         <style>
           * { margin: 0; padding: 0; box-sizing: border-box; }
           body { font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; line-height: 1.4; padding: 15mm 12mm; color: #000; background: #fff; }
@@ -812,6 +819,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
           .answer { font-size: 10px; color: #155724; background: #d4edda; padding: 2px 6px; border-radius: 2px; margin-top: 2px; }
           .subjective-space { margin: 4px 0; color: #999; font-size: 10px; }
           .footer { position: fixed; bottom: 6mm; right: 8mm; font-size: 8px; color: #aaa; }
+          /* KaTeX overrides for print */
+          .katex { font-size: 1em; }
+          .katex-display { margin: 4px 0; overflow-x: auto; }
           @media print {
             body { padding: 10mm 10mm; }
             .question-block { page-break-inside: avoid; }
@@ -824,12 +834,28 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
         <div class="subtitle">${questions.length} Questions${withAnswers ? ' (With Answers)' : ''}</div>
         ${questionsHtml}
         <div class="footer">acedbe.in</div>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"><\/script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"><\/script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+              delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\\\(", right: "\\\\)", display: false},
+                {left: "\\\\[", right: "\\\\]", display: true}
+              ],
+              throwOnError: false
+            });
+          });
+        <\/script>
       </body>
       </html>
     `);
     printWindow.document.close();
     printWindow.focus();
-    setTimeout(() => printWindow.print(), 300);
+    // Wait longer for KaTeX JS to load and render math before triggering print
+    setTimeout(() => printWindow.print(), 1500);
   };
 
   // State for print menu

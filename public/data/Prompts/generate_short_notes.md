@@ -75,22 +75,33 @@ $$\text{General Formula}$$
 Each question sits inside a `>` blockquote, immediately after the relevant content block. Tag each question with its source (**CLA.**, **PYQ.**, or **CLA/PYQ.** if present in both). If the question is neither from CLA nor PYQ, or if the origin is unknown, use **Q.** as the fallback tag. Never use arbitrary question numbers. Answer is **bolded** with a `✓` checkmark. Always ensure proper line breaks / separation between question stems, answers, and consecutive items so they don't run together. Multiple questions stack as separate `>` lines with blank line separation between distinct question-answer pairs where appropriate.
 
 ```markdown
-> **CLA:** Question stem / keyword = **Answer** ✓
+> **CLA:** Question stem / keyword
+> - **Answer** ✓
 >
-> **PYQ:** Another question = **Answer** ✓
+> **PYQ:** Another question
+> - **Answer** ✓
 >
-> **CLA/PYQ:** Statement is TRUE/FALSE = **True** ✓
+> **CLA/PYQ:** Statement is TRUE/FALSE
+> - **True** ✓
 >
-> **Q:** Conceptual question with unknown source = **Answer** ✓
+> **Q:** Conceptual question with unknown source
+> - **Answer** ✓
 >
-> **CLA:** Fill-in-the-blank ______ = **Answer** ✓
+> **CLA:** Fill-in-the-blank ______
+> - **Answer** ✓
 ```
 
 Variations:
-- `**CLA:** X is done by the **Receiver** ✓` — direct fact recall
-- `**PYQ:** X leads to Y = **True** ✓` — positive conceptual validation
-- `**CLA/PYQ:** Missing step = **Answer** ✓` — scenario-based
-- `**Q:** Concept X is defined as = **Answer** ✓` — general/unknown source recall
+- `> **CLA:** Question stem` followed by `> - **Answer** ✓` — direct fact recall / conceptual validation
+- `> **PYQ:** Statement` followed by `> - **True** ✓` — positive conceptual validation
+- `> **CLA/PYQ:** Scenario / problem` followed by `> - **Answer** ✓` — scenario-based
+- `> **Q:** Concept question` followed by `> - **Answer** ✓` — general/unknown source recall
+- For multi-part / matching questions, list each item with its own bullet:
+  ```markdown
+  > **PYQ:** Match Items with their categories:
+  > - Item 1 = **Category A** ✓
+  > - Item 2 = **Category B** ✓
+  ```
 
 **Format B — Numerical / Problem-solving** (quantitative subjects):
 
@@ -197,7 +208,7 @@ Tag with source (e.g. `**PYQ:**`, `**CLA:**`, or `**Q:**` if unknown) and proble
 1. Compress each concept into the smallest correct representation (table/formula/bullets)
 2. Attach **every** question that tests that concept directly below it
 3. For numerical Qs: show full working with table lookups and a `*Why:*` line
-4. For conceptual Qs: collapse to `stem = **answer** ✓` one-liner
+4. For conceptual Qs: format with the question stem on the first line and the answer on the next line inside the blockquote (`> - **answer** ✓`)
 5. Merge duplicate questions using multi-tag notation (`CLA/PYQ:`)
 6. Add Quick Reference and Decision Rules at the end
 7. Add Rapid-Fire table if total questions exceed ~40
