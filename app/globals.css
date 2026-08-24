@@ -137,3 +137,31 @@ body::after {
   scrollbar-width: thin;
   scrollbar-color: #334155 rgba(15, 23, 42, 0.5);
 }
+
+/* Print Styles - Optimized for Single Page A4 Landscape */
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 5mm 7mm 5mm 7mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    min-height: auto !important;
+    height: auto !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body::before,
+  body::after {
+    display: none !important;
+  }
+
+  .print-page-break {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
