@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { gradeFromTotal, isValidTotal, parseNumberOrNull, type LetterGrade } from '@/lib/cgpa/grades';
+import { gradeFromTotal, isValidTotal, parseNumberOrNull, gradePoints, type LetterGrade } from '@/lib/cgpa/grades';
 import { CGPA_TERMS, getAllSubjects, type CgpaSubject } from '@/lib/cgpa/subjects';
 import { loadStoredMarks, saveStoredMarks, type MarksInput } from '@/lib/cgpa/storage';
 import { useBatch } from '@/contexts/BatchContext';
@@ -25,10 +25,7 @@ function computeForSubject(subject: CgpaSubject, input: MarksInput | undefined):
 
   if (marks.gradeOverride) {
     const letter = marks.gradeOverride;
-    const points = gradeFromTotal(
-      letter === 'O' ? 91 : letter === 'A' ? 81 : letter === 'B' ? 71 :
-        letter === 'C' ? 61 : letter === 'D' ? 51 : letter === 'E' ? 41 : 0
-    ).points;
+    const points = gradePoints(letter) ?? 0;
     return {
       isCounted: true,
       usedMode: totalVal !== null ? 'total' : (parseNumberOrNull(marks.internal) !== null || parseNumberOrNull(marks.final) !== null ? 'internalFinal' : null),
