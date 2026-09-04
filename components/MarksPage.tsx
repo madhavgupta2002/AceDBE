@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { Bookmark, ChevronDown, ClipboardPaste, Copy, Printer, RefreshCw, Trash2 } from 'lucide-react';
+import { Bookmark, ChevronDown, ClipboardPaste, Copy, Eye, FileText, Printer, RefreshCw, Trash2 } from 'lucide-react';
 import { parseGrades, parsePastedText, detectBatchFromText, type RawRow, type ParsedSubject } from '@/lib/marks/parseGrades';
 import { gradePoints, gradeFromTotal } from '@/lib/cgpa/grades';
 import { CGPA_TERMS, getSubjectsForTerm } from '@/lib/cgpa/subjects';
@@ -19,11 +19,6 @@ function extractStudentName(text: string): string | null {
     return null;
 }
 
-/**
- * Builds the bookmarklet source. It runs ON the Moodle grade page (so it uses the
- * student's existing SSO session — no CORS, no credentials), scrapes the gradebook
- * table, base64-encodes the rows, and opens this app's /marks page with the data.
- */
 function buildBookmarklet(origin: string): string {
     const src = `(function(){try{var rows=document.querySelectorAll('table.user-grade tr,#user-grade tr,.user-grade tr');var out=[];rows.forEach(function(tr){var nameEl=tr.querySelector('.column-itemname,th.column-itemname,.gradeitemheader,th.item');var gradeEl=tr.querySelector('.column-grade,td.column-grade');var name=nameEl?nameEl.textContent.replace(/\\s+/g,' ').trim():'';var grade=gradeEl?gradeEl.textContent.replace(/\\s+/g,' ').trim():'';if(name)out.push({n:name,g:grade});});if(!out.length){alert('No grade rows found. Open your Moodle \"User report\" grade page first, then click this bookmark.');return;}var d=btoa(unescape(encodeURIComponent(JSON.stringify(out))));window.open('${origin}/marks#import='+d,'_blank');}catch(e){alert('Marks import failed: '+e.message);}})();`;
     return `javascript:${src}`;
@@ -44,6 +39,14 @@ function decodeImport(hash: string): RawRow[] | null {
 
 const fmt = (v: number | null) => (v === null ? '—' : v.toFixed(2));
 
+function formatDisplayMark(val: number | null | undefined): string {
+    if (val === null || val === undefined) return '';
+    if (Number.isNaN(val)) return '';
+    if (Number.isInteger(val)) return String(val);
+    const rounded = Math.round(val * 100) / 100;
+    return String(rounded);
+}
+
 // Effective grade points for a subject: prefer derived grade if retake exists or initial was F with valid total
 function pointsFor(s: ParsedSubject): number | null {
     if (s.total !== null && (s.hasRetake || s.grade === 'F' || !s.grade)) {
@@ -55,13 +58,13 @@ function pointsFor(s: ParsedSubject): number | null {
     return null;
 }
 
-function effectiveGrade(s: ParsedSubject): string | null {
+function effectiveGrade(s: ParsedSubject): string {
     if (s.total !== null && (s.hasRetake || s.grade === 'F' || !s.grade)) {
         return gradeFromTotal(s.total).letter;
     }
-    if (gradePoints(s.grade) !== null) return (s.grade || '').trim().toUpperCase();
+    if (s.grade && gradePoints(s.grade) !== null) return s.grade.trim().toUpperCase();
     if (s.total !== null) return gradeFromTotal(s.total).letter;
-    return null;
+    return '';
 }
 
 // Credit-weighted GPA across the given subjects (null if no graded credits).
@@ -78,6 +81,12 @@ function gpaFor(subjects: ParsedSubject[]): { gpa: number | null; credits: numbe
     return { gpa: credits > 0 ? weighted / credits : null, credits, totalPoints: weighted };
 }
 
+const YEARS = [
+    { year: 1, label: 'Year 1 (Terms 1, 2, 3)', terms: [1, 2, 3] },
+    { year: 2, label: 'Year 2 (Terms 4, 5, 6)', terms: [4, 5, 6] },
+    { year: 3, label: 'Year 3 (Terms 7, 8, 9)', terms: [7, 8, 9] },
+];
+
 export default function MarksPage() {
     const { selectedBatch, setSelectedBatch } = useBatch();
     const [origin, setOrigin] = useState('');
@@ -85,6 +94,7 @@ export default function MarksPage() {
     const [showRaw, setShowRaw] = useState(false);
     const [pasteText, setPasteText] = useState('');
     const [pasteError, setPasteError] = useState(false);
+    const [activeTab, setActiveTab] = useState<'dashboard' | 'printPreview'>('dashboard');
     const bookmarkletRef = useRef<HTMLAnchorElement>(null);
 
     // Resolve origin + read imported data on mount.
@@ -190,6 +200,97 @@ export default function MarksPage() {
     const cardCls =
         'bg-surface border border-surface-border/60 rounded-xl p-4 sm:p-5';
 
+    // Helper to render the term table exactly like the official marksheet format
+    const renderTermTable = (group: typeof termGroups[0]) => {
+        const hasProjectCol = group.term === 5 || group.rows.some((r) => r.data?.project !== null && r.data?.project !== undefined);
+
+        return (
+            <div key={group.term} className="w-full text-black">
+                <table className="w-full border-collapse border border-black text-[11px] leading-tight bg-white">
+                    <thead>
+                        {/* Header banner: TERM-X spanning full width */}
+                        <tr className="border-b border-black">
+                            <th
+                                colSpan={hasProjectCol ? 6 : 5}
+                                className="border border-black py-1 px-2 text-center font-bold text-[12px] uppercase tracking-wider bg-white text-black"
+                            >
+                                TERM-{group.term}
+                            </th>
+                        </tr>
+                        {/* Subheaders */}
+                        <tr className="border-b border-black font-bold text-center bg-white text-black text-[11px]">
+                            <th className="border border-black py-1.5 px-3 text-left font-bold w-[45%]">Subject</th>
+                            <th className="border border-black py-1.5 px-2 text-center font-bold w-[12%] whitespace-nowrap">CLA (25)</th>
+                            {hasProjectCol && (
+                                <th className="border border-black py-1.5 px-2 text-center font-bold w-[12%] whitespace-nowrap">Project (25)</th>
+                            )}
+                            <th className="border border-black py-1.5 px-2 text-center font-bold w-[15%] whitespace-nowrap">Final Exam (75)</th>
+                            <th className="border border-black py-1.5 px-2 text-center font-bold w-[14%] whitespace-nowrap">Total (100)</th>
+                            <th className="border border-black py-1.5 px-2 text-center font-bold w-[10%] whitespace-nowrap">Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {group.rows.map((r, i) => {
+                            const d = r.data;
+                            const isProjectBasedSingleMark =
+                                !hasProjectCol &&
+                                d?.cla === null &&
+                                (d?.final !== null || d?.total !== null) &&
+                                /project based/i.test(r.subject.name);
+
+                            const subjectDisplayName = d?.hasRetake ? `*${r.subject.name}` : r.subject.name;
+
+                            return (
+                                <tr key={i} className="border-b border-black text-black">
+                                    {/* Subject */}
+                                    <td className="border border-black py-1.5 px-3 text-left font-normal">
+                                        {subjectDisplayName}
+                                    </td>
+
+                                    {/* Project based course with single merged mark */}
+                                    {isProjectBasedSingleMark ? (
+                                        <td colSpan={2} className="border border-black py-1.5 px-2 text-center font-normal">
+                                            {formatDisplayMark(d?.final ?? d?.total)}
+                                        </td>
+                                    ) : (
+                                        <>
+                                            {/* CLA */}
+                                            <td className="border border-black py-1.5 px-2 text-center font-normal">
+                                                {d?.cla !== null ? formatDisplayMark(d?.cla) : ''}
+                                            </td>
+
+                                            {/* Project (if term has project column) */}
+                                            {hasProjectCol && (
+                                                <td className="border border-black py-1.5 px-2 text-center font-normal">
+                                                    {d?.project !== null ? formatDisplayMark(d?.project) : '-'}
+                                                </td>
+                                            )}
+
+                                            {/* Final Exam */}
+                                            <td className="border border-black py-1.5 px-2 text-center font-normal">
+                                                {d?.finalText || (d?.final !== null ? formatDisplayMark(d?.final) : '')}
+                                            </td>
+                                        </>
+                                    )}
+
+                                    {/* Total */}
+                                    <td className="border border-black py-1.5 px-2 text-center font-normal">
+                                        {d?.total !== null ? formatDisplayMark(d?.total) : ''}
+                                    </td>
+
+                                    {/* Grade */}
+                                    <td className="border border-black py-1.5 px-2 text-center font-normal">
+                                        {d ? effectiveGrade(d) : ''}
+                                    </td>
+                                </tr>
+                            );
+                        })}
+                    </tbody>
+                </table>
+            </div>
+        );
+    };
+
     return (
         <>
             {/* ═══════════════════════════════════════════════════════════════════
@@ -282,7 +383,29 @@ export default function MarksPage() {
                     {/* ── Parsed data ── */}
                     <div className={cardCls}>
                         <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
-                            <h2 className="text-sm font-bold text-slate-100">Step 2 · Your marks</h2>
+                            <div className="flex items-center gap-2">
+                                <h2 className="text-sm font-bold text-slate-100">Step 2 · Your marks</h2>
+                                {rows && (
+                                    <div className="inline-flex bg-surface-dark/60 border border-surface-border/60 p-0.5 gap-0.5 rounded-lg ml-2">
+                                        <button
+                                            onClick={() => setActiveTab('dashboard')}
+                                            className={`px-2.5 py-1 text-[11px] font-semibold rounded-md transition-colors flex items-center gap-1 ${activeTab === 'dashboard' ? 'bg-sky-600 text-white' : 'text-slate-400 hover:text-white'
+                                                }`}
+                                            type="button"
+                                        >
+                                            <Eye className="w-3 h-3" /> Dashboard
+                                        </button>
+                                        <button
+                                            onClick={() => setActiveTab('printPreview')}
+                                            className={`px-2.5 py-1 text-[11px] font-semibold rounded-md transition-colors flex items-center gap-1 ${activeTab === 'printPreview' ? 'bg-emerald-600 text-white' : 'text-slate-400 hover:text-white'
+                                                }`}
+                                            type="button"
+                                        >
+                                            <FileText className="w-3 h-3" /> 3-Page Marksheet Preview
+                                        </button>
+                                    </div>
+                                )}
+                            </div>
                             <div className="flex flex-wrap items-center gap-2">
                                 <div className="inline-flex bg-surface-dark/60 border border-surface-border/60 p-0.5 gap-0.5 rounded-lg">
                                     {[1, 2].map((b) => (
@@ -301,7 +424,7 @@ export default function MarksPage() {
                                     <>
                                         <button
                                             onClick={handlePrint}
-                                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold shadow-sm transition-colors"
+                                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold shadow-sm transition-colors cursor-pointer"
                                             type="button"
                                             title="Print or Save PDF Marksheet"
                                         >
@@ -310,7 +433,7 @@ export default function MarksPage() {
                                         </button>
                                         <button
                                             onClick={clearData}
-                                            className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-surface-light hover:bg-surface border border-surface-border/60 text-slate-400 hover:text-red-400 rounded-lg text-xs font-medium"
+                                            className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-surface-light hover:bg-surface border border-surface-border/60 text-slate-400 hover:text-red-400 rounded-lg text-xs font-medium cursor-pointer"
                                             type="button"
                                         >
                                             <Trash2 className="w-3.5 h-3.5" />
@@ -320,12 +443,50 @@ export default function MarksPage() {
                                 )}
                             </div>
                         </div>
+
                         {!rows ? (
                             <div className="flex flex-col items-center justify-center text-center py-10 text-slate-600">
                                 <RefreshCw className="w-6 h-6 mb-2 opacity-50" />
                                 <p className="text-xs">No data yet. Use the bookmarklet on your Moodle grade page, or copy &amp; paste it above.</p>
                             </div>
+                        ) : activeTab === 'printPreview' ? (
+                            /* ── Live Marksheet Preview (3 Pages exact match) ── */
+                            <div className="space-y-6 pt-2">
+                                <div className="flex items-center justify-between bg-emerald-950/40 border border-emerald-500/30 rounded-lg px-3 py-2 text-xs text-emerald-300">
+                                    <span>
+                                        Viewing <strong>3-Page Marksheet Layout</strong> (Page 1: Terms 1-3, Page 2: Terms 4-6, Page 3: Terms 7-9).
+                                    </span>
+                                    <button
+                                        onClick={handlePrint}
+                                        className="px-2.5 py-1 bg-emerald-600 hover:bg-emerald-500 text-white rounded text-[11px] font-bold"
+                                    >
+                                        Print / PDF
+                                    </button>
+                                </div>
+
+                                {YEARS.map((year) => {
+                                    const groupsForYear = termGroups.filter((g) => year.terms.includes(g.term));
+
+                                    return (
+                                        <div key={year.year} className="bg-white rounded-lg shadow-lg border border-slate-300 p-6 sm:p-8 space-y-6 text-black">
+                                            <div className="text-center border-b border-slate-300 pb-2 mb-4">
+                                                <div className="text-xs font-bold text-slate-500 uppercase tracking-widest">
+                                                    Page {year.year} · {year.label}
+                                                </div>
+                                            </div>
+
+                                            {groupsForYear.map((group) => renderTermTable(group))}
+
+                                            <div className="pt-2 border-t border-slate-200 flex items-center justify-between text-[11px] text-slate-600">
+                                                <span>* Denotes Retake</span>
+                                                <span>Page {year.year} of 3</span>
+                                            </div>
+                                        </div>
+                                    );
+                                })}
+                            </div>
                         ) : (
+                            /* ── Interactive Dashboard View ── */
                             <div className="space-y-4">
                                 {/* Overall GPA */}
                                 <div className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-4 py-3">
@@ -375,12 +536,12 @@ export default function MarksPage() {
                                                         return (
                                                             <tr key={i} className="border-t border-surface-border/30">
                                                                 <td className={`px-3 py-1.5 ${d ? 'text-slate-300' : 'text-slate-500'}`}>
-                                                                    {r.subject.name}
+                                                                    {d?.hasRetake ? `*${r.subject.name}` : r.subject.name}
                                                                     {d?.hasRetake && <span className="ml-1.5 text-[9px] text-amber-500/70">(retake)</span>}
                                                                 </td>
                                                                 <td className="px-2 py-1.5 text-slate-400 text-right tabular-nums">{r.subject.credits}</td>
                                                                 <td className="px-2 py-1.5 text-slate-200 text-right tabular-nums">{fmt(d?.cla ?? null)}</td>
-                                                                <td className="px-2 py-1.5 text-slate-200 text-right tabular-nums">{fmt(d?.final ?? null)}</td>
+                                                                <td className="px-2 py-1.5 text-slate-200 text-right tabular-nums">{d?.finalText || fmt(d?.final ?? null)}</td>
                                                                 <td className="px-2 py-1.5 text-slate-100 text-right tabular-nums font-semibold">{fmt(d?.total ?? null)}</td>
                                                                 <td className="px-2 py-1.5 text-center font-bold text-slate-200">{(d && effectiveGrade(d)) || '—'}</td>
                                                             </tr>
@@ -404,11 +565,11 @@ export default function MarksPage() {
                                                     {unmatched.map((s, i) => (
                                                         <tr key={i} className="border-t border-surface-border/30">
                                                             <td className="px-3 py-1.5 text-slate-300">
-                                                                {s.name}
+                                                                {s.hasRetake ? `*${s.name}` : s.name}
                                                                 {s.hasRetake && <span className="ml-1.5 text-[9px] text-amber-500/70">(retake)</span>}
                                                             </td>
                                                             <td className="px-2 py-1.5 text-slate-200 text-right tabular-nums w-14">{fmt(s.cla)}</td>
-                                                            <td className="px-2 py-1.5 text-slate-200 text-right tabular-nums w-14">{fmt(s.final)}</td>
+                                                            <td className="px-2 py-1.5 text-slate-200 text-right tabular-nums w-14">{s.finalText || fmt(s.final)}</td>
                                                             <td className="px-2 py-1.5 text-slate-100 text-right tabular-nums font-semibold w-14">{fmt(s.total)}</td>
                                                             <td className="px-2 py-1.5 text-center font-bold text-slate-200 w-10">{effectiveGrade(s) || '—'}</td>
                                                         </tr>
@@ -453,162 +614,60 @@ export default function MarksPage() {
             </div>
 
             {/* ═══════════════════════════════════════════════════════════════════
-                PRINTABLE MARKSHEET (A4 Landscape Clean White Document, fits 1 page)
+                PRINTABLE MARKSHEET (3 Pages, 1 Year = 3 Terms per page)
             ═══════════════════════════════════════════════════════════════════ */}
             {rows && (
-                <div className="hidden print:block bg-white text-slate-900 font-sans p-1 max-w-[285mm] mx-auto text-xs leading-tight">
-                    {/* Header */}
-                    <div className="border-b border-slate-800 pb-1 mb-1 text-center flex items-center justify-between">
-                        <div className="text-[13px] font-black tracking-wide uppercase text-slate-900">
-                            AceDBE · Academic Performance Report
-                        </div>
-                        <div className="text-[10px] font-bold text-slate-600 tracking-wide">
-                            BBA-DBE Marksheet &amp; Cumulative GPA Summary
-                        </div>
-                    </div>
+                <div className="hidden print:block bg-white text-black font-sans w-full">
+                    <style dangerouslySetInnerHTML={{
+                        __html: `
+                        @media print {
+                            @page {
+                                size: A4 portrait;
+                                margin: 12mm 14mm 12mm 14mm;
+                            }
+                            html, body {
+                                background: #ffffff !important;
+                                color: #000000 !important;
+                                -webkit-print-color-adjust: exact;
+                                print-color-adjust: exact;
+                            }
+                            .print-page-year {
+                                page-break-after: always;
+                                break-after: page;
+                                page-break-inside: avoid;
+                                break-inside: avoid;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                min-height: 260mm;
+                                box-sizing: border-box;
+                                padding-bottom: 5mm;
+                            }
+                            .print-page-year:last-child {
+                                page-break-after: auto;
+                                break-after: auto;
+                            }
+                        }
+                    `}} />
 
-                    {/* Single-row 6-column Metadata Banner */}
-                    <div className="grid grid-cols-6 gap-x-2 bg-slate-50 border border-slate-300 rounded px-2 py-1 mb-1.5 text-[8.5px]">
-                        <div className="flex flex-col">
-                            <span className="font-bold text-slate-500 text-[7.5px] uppercase">Student Name</span>
-                            <span className="font-extrabold text-slate-900 truncate">{studentName || 'Student'}</span>
-                        </div>
-                        <div className="flex flex-col">
-                            <span className="font-bold text-slate-500 text-[7.5px] uppercase">Program / Batch</span>
-                            <span className="font-semibold text-slate-900 truncate">
-                                BBA-DBE {selectedBatch === 1 ? 'Batch 1 (2024–27)' : 'Batch 2 (2025–28)'}
-                            </span>
-                        </div>
-                        <div className="flex flex-col">
-                            <span className="font-bold text-slate-500 text-[7.5px] uppercase">Date Generated</span>
-                            <span className="font-semibold text-slate-900">
-                                {new Date().toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' })}
-                            </span>
-                        </div>
-                        <div className="flex flex-col">
-                            <span className="font-bold text-slate-500 text-[7.5px] uppercase">Cumulative GPA</span>
-                            <span className="font-extrabold text-emerald-800 text-[11px]">
-                                {overall.gpa === null ? '—' : overall.gpa.toFixed(2)} <span className="text-[8px] text-slate-500 font-normal">/ 10.00</span>
-                            </span>
-                        </div>
-                        <div className="flex flex-col">
-                            <span className="font-bold text-slate-500 text-[7.5px] uppercase">Credits Earned</span>
-                            <span className="font-bold text-slate-900">{overall.credits} Credits</span>
-                        </div>
-                        <div className="flex flex-col">
-                            <span className="font-bold text-slate-500 text-[7.5px] uppercase">Graded Courses</span>
-                            <span className="font-semibold text-slate-900">{matchedCount} Subjects</span>
-                        </div>
-                    </div>
+                    {YEARS.map((year) => {
+                        const groupsForYear = termGroups.filter((g) => year.terms.includes(g.term));
 
-                    {/* Term-by-Term Marksheet Tables: Year 1 (1,2,3), Year 2 (4,5,6), Year 3 (7,8,9) */}
-                    <div className="space-y-1.5">
-                        {[
-                            { num: 1, label: 'Year 1 (Terms 1, 2, 3)', terms: [1, 2, 3] },
-                            { num: 2, label: 'Year 2 (Terms 4, 5, 6)', terms: [4, 5, 6] },
-                            { num: 3, label: 'Year 3 (Terms 7, 8, 9)', terms: [7, 8, 9] },
-                        ].map((year) => {
-                            const groupsForYear = termGroups.filter((g) => year.terms.includes(g.term));
-                            const hasData = groupsForYear.some((g) => g.rows.some((r) => r.data !== null));
-                            if (!hasData) return null;
-
-                            return (
-                                <div key={year.num} className="space-y-0.5">
-                                    {/* Year Line Separator */}
-                                    <div className="flex items-center gap-2 pt-0.5">
-                                        <div className="h-[1px] bg-slate-300 flex-1"></div>
-                                        <span className="text-[8px] font-black uppercase tracking-wider text-slate-700 bg-slate-100 border border-slate-300 rounded px-1.5 py-0.5">
-                                            {year.label}
-                                        </span>
-                                        <div className="h-[1px] bg-slate-300 flex-1"></div>
-                                    </div>
-
-                                    {/* 3 Terms in Row (grid-cols-3) */}
-                                    <div className="grid grid-cols-3 gap-2">
-                                        {groupsForYear.map((group) => {
-                                            return (
-                                                <div key={group.term} className="border border-slate-300 rounded overflow-hidden flex flex-col justify-between bg-white shadow-none">
-                                                    <div>
-                                                        {/* Term Header */}
-                                                        <div className="flex items-center justify-between bg-slate-100 px-1.5 py-0.5 border-b border-slate-300 text-[8px]">
-                                                            <span className="font-extrabold text-slate-900 uppercase">
-                                                                Term {group.term}
-                                                            </span>
-                                                            <span className="font-semibold text-slate-700 text-[7.5px]">
-                                                                {group.credits} cr
-                                                                <span className="mx-1 text-slate-400">|</span>
-                                                                GPA: <span className="font-bold text-emerald-800 text-[8.5px]">{group.gpa === null ? '—' : group.gpa.toFixed(2)}</span>
-                                                            </span>
-                                                        </div>
-
-                                                        {/* Mark Table */}
-                                                        <table className="w-full text-left border-collapse text-[7.5px] leading-tight table-auto">
-                                                            <thead>
-                                                                <tr className="bg-slate-50 border-b border-slate-200 text-slate-600 font-bold uppercase tracking-wider text-[7px]">
-                                                                    <th className="py-0.5 px-1 w-8 whitespace-nowrap">Code</th>
-                                                                    <th className="py-0.5 px-1">Course Title</th>
-                                                                    <th className="py-0.5 px-0.5 text-center w-4">Cr</th>
-                                                                    <th className="py-0.5 px-0.5 text-right w-6">CLA</th>
-                                                                    <th className="py-0.5 px-0.5 text-right w-6">Final</th>
-                                                                    <th className="py-0.5 px-0.5 text-right w-7">Total</th>
-                                                                    <th className="py-0.5 px-0.5 text-center w-4">Gr</th>
-                                                                    <th className="py-0.5 px-0.5 text-center w-4">GP</th>
-                                                                    <th className="py-0.5 px-1 text-right w-7">Pts</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody className="divide-y divide-slate-100">
-                                                                {group.rows.map((r, i) => {
-                                                                    const d = r.data;
-                                                                    const gp = d ? pointsFor(d) : null;
-                                                                    const cr = r.subject.credits;
-                                                                    const pts = gp !== null ? gp * cr : null;
-
-                                                                    return (
-                                                                        <tr key={i} className={d ? 'text-slate-900' : 'text-slate-400 italic'}>
-                                                                            <td className="py-0.5 px-1 font-mono text-[7px] text-slate-500 whitespace-nowrap">
-                                                                                {r.subject.code || '—'}
-                                                                            </td>
-                                                                            <td className="py-0.5 px-1 font-medium leading-[1.15]">
-                                                                                {r.subject.name}
-                                                                                {d?.hasRetake && <span className="ml-0.5 text-[6.5px] text-amber-700 font-bold">*</span>}
-                                                                            </td>
-                                                                            <td className="py-0.5 px-0.5 text-center tabular-nums">{cr}</td>
-                                                                            <td className="py-0.5 px-0.5 text-right tabular-nums">{fmt(d?.cla ?? null)}</td>
-                                                                            <td className="py-0.5 px-0.5 text-right tabular-nums">{fmt(d?.final ?? null)}</td>
-                                                                            <td className="py-0.5 px-0.5 text-right tabular-nums font-bold">{fmt(d?.total ?? null)}</td>
-                                                                            <td className="py-0.5 px-0.5 text-center font-bold">{(d && effectiveGrade(d)) || '—'}</td>
-                                                                            <td className="py-0.5 px-0.5 text-center tabular-nums">{gp !== null ? gp.toFixed(1) : '—'}</td>
-                                                                            <td className="py-0.5 px-1 text-right tabular-nums font-semibold">{pts !== null ? pts.toFixed(1) : '—'}</td>
-                                                                        </tr>
-                                                                    );
-                                                                })}
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-
-                                                    {/* Subtotal footer */}
-                                                    <div className="bg-slate-50 border-t border-slate-200 px-1.5 py-0.5 flex items-center justify-between text-[7px] font-bold text-slate-700">
-                                                        <span>Subtotal ({group.credits} cr):</span>
-                                                        <span className="text-emerald-800 font-extrabold text-[7.5px]">
-                                                            GPA {group.gpa?.toFixed(2) ?? '—'} · {group.totalPoints?.toFixed(1) ?? '—'} pts
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            );
-                                        })}
-                                    </div>
+                        return (
+                            <div key={year.year} className="print-page-year space-y-6">
+                                <div className="space-y-5">
+                                    {groupsForYear.map((group) => renderTermTable(group))}
                                 </div>
-                            );
-                        })}
-                    </div>
 
-                    {/* Footer */}
-                    <div className="mt-1.5 pt-0.5 border-t border-slate-300 flex items-center justify-between text-[7px] text-slate-500">
-                        <span>* Unofficial marksheet summary compiled for student reference and GPA tracking.</span>
-                        <span>Generated via AceDBE</span>
-                    </div>
+                                <div className="mt-auto pt-3 text-[10px] text-slate-800">
+                                    <span>* Denotes Retake</span>
+                                </div>
+                            </div>
+                        );
+                    })}
                 </div>
             )}
         </>
     );
 }
+
