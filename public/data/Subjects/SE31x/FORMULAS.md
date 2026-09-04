@@ -82,7 +82,36 @@ The Double Diamond model alternates between expanding perspectives (**Divergent 
 
 ---
 
-### 1.4 Deep-Dive 25-Mark Subjective Blueprint: The Double Diamond Model
+### 1.4 Deep-Dive 25-Mark Subjective Blueprints: Foundations, Macro Drivers & Double Diamond
+
+> **Q (Subjective — PYQ 25 Sep 2025):** What is Design Thinking? What do you understand by it?
+> - **Core Anchor:** Design Thinking is a **human-centric, systematic model of problem-solving** aimed at tackling complex, ambiguous, and multi-dimensional challenges. It is about designing your thinking, not styling physical objects.
+> - **Three Core Dimensions:**
+>   - **1. Human-Centric (Subject Over Object):** Focuses on the human behind the challenge (users, employees, secondary stakeholders) rather than pure product features or rigid compliance. *Example:* In infant nutrition (Nestlé Cerelac), the solution balances needs across baby, mother, father, doctor, and domestic helper.
+>   - **2. Systematic (Structured Over Ad-Hoc):** Replaces undisciplined shortcuts (*jugaad*) with a structured, repeatable, and scalable cognitive process (e.g., Double Diamond) that oscillates between Divergent (exploring wide) and Convergent (narrowing down) thinking.
+>   - **3. Problem-Solving (Root Causes Over Symptoms):** Moves past superficial "Band-Aid" patches to isolate structural root causes and implement durable **Perma Fixes**.
+> - **The Problem-Space Sweet Spot:**
+>   - *Lean Thinking:* Known Problem, Known Solution (efficiency, Six Sigma, ATMs).
+>   - *Critical Thinking:* Unknown Problem, Known Solution (diagnostics, 5 Whys).
+>   - *Lateral Thinking:* Known Problem, Unknown Solution (creative sideways workarounds).
+>   - *Design Thinking:* **Unknown Problem, Unknown Solution** (high ambiguity, wicked discovery, e.g., Piano Stairs).
+> - **The DFV Innovation Sweet Spot:** A winning design thinking idea sits at the intersection of **Human Desirability** (do people want it?), **Technical Feasibility** (can we build it?), and **Business Viability** (does it make economic sense?).
+> - **Conclusion:** Design Thinking requires a **Clear Head** (clarity), **Deep Heart** (empathy), and **Thick Skin** (resilience) ✓
+
+---
+
+> **Q (Subjective — Sample Questions):** What is the importance of Design Thinking in today's environment?
+> - **Core Anchor:** Modern business environments are defined by volatility, rapid disruption, and changing customer expectations. Design Thinking provides the strategic agility, empathy, and systems thinking required to navigate this landscape.
+> - **6 Contemporary Macro Drivers:**
+>   - **1. Experiences & Moments of Truth:** Physical products and services have merged into end-to-end customer journeys. Value is driven by emotional touchpoints (*e.g., Apple unboxing friction engineered for sensory anticipation*).
+>   - **2. Multifaceted Wicked Problems:** Complex societal and operational issues require **Systems Thinking** to avoid localized optimization (*e.g., widening one traffic junction simply shifts congestion to the next flyover*).
+>   - **3. B2H Transformation:** Corporate and consumer lines blur into **Business-to-Human**. Systems must adapt to human motor and cognitive habits, not force humans to adapt to tech (*e.g., Ford placing indicator stalks on the left failed in right-hand-drive India*).
+>   - **4. Digitization of Engagements:** Masking extreme distributed back-end complexity behind radical front-end simplicity (*e.g., UPI, FASTag, DigiYatra*).
+>   - **5. Restless Customers & C&D:** Information asymmetry is erased by instant social reviews; **Connect & Develop** replaces closed corporate R&D (*e.g., Lego Ideas co-creating commercial sets with enthusiast crowds*).
+>   - **6. Market Surprises & Business Model Clashes:** Unanticipated cultural pivots destroy legacy models (*e.g., Gillette beard trends, Netflix streaming vs. Blockbuster retail*). Continuous empathy detects weak signals early.
+> - **Conclusion:** Design Thinking is essential today because it grounds corporate strategy in human empathy, mitigates innovation risk through rapid experimentation, and aligns capability with customer desirability ✓
+
+---
 
 > **Q (Subjective):** Explain the Double Diamond model of Design Thinking. Illustrate its 5 stages using Mahatma Gandhi’s Indian freedom movement as a case study.
 > - **Core Anchor:** The Double Diamond model is a structured framework that alternates between Divergent (exploratory) and Convergent (analytical) thinking to move from high ambiguity to scalable impact.
@@ -367,14 +396,14 @@ The Three Levels of Empathy:
 
 ---
 
-> **Q (Subjective):** Mention 3 structured methods of problem understanding and root cause analysis with illustrated course examples.
-> - **Core Anchor:** A problem understood is a problem half-solved. Design thinking uses structured visual diagnostics to transition from surface symptoms to structural root causes.
+> **Q (Subjective — PYQ 25 Sep 2025):** Write three methods of problem exploration (problem understanding and root cause analysis).
+> - **Core Anchor:** A problem understood is a problem half-solved. Design thinking uses structured visual diagnostics to transition from surface symptoms to structural root causes without rushing into premature ideation.
 > - **Method 1: The 5 Whys Technique (Iterative Diagnostic Drill-Down):**
 >   - *Mechanism:* Originating from Toyota, repeatedly asks "Why?" (3–5 times) to drill through operational symptoms to the root systemic failure.
 >   - *Course Example:* Factory machine breakdown: Fuse blows $\rightarrow$ overload $\rightarrow$ unlubricated bearing $\rightarrow$ faulty lubrication pump $\rightarrow$ metal shavings entering intake because pump lacked an inexpensive filter. Installing the filter prevents permanent future downtime.
 > - **Method 2: Problem Exploration Map (Mind Mapping):**
 >   - *Mechanism:* Visually decomposes a central issue into contributing thematic branches, isolating behavioral, environmental, and technical causes.
->   - *Course Example:* Cafeteria food waste mapped into portion sizing, menu variety, scheduling bottlenecks, and plate return ergonomics.
+>   - *Course Example:* Cafeteria food waste mapped into portion sizing, menu variety, scheduling bottlenecks, and plate return ergonomics; student reading habits decline mapped radially.
 > - **Method 3: Customer Journey Mapping:**
 >   - *Mechanism:* Chronologically tracks touchpoints across a user's experience lifecycle to isolate emotional lows and moments of friction.
 >   - *Course Example:* Airport security transit: Reveals that traveler anxiety peaks at the 2D luggage screening conveyor due to baggage opening delays, sparking the need for 3D baggage scanners.
@@ -554,7 +583,7 @@ $$\mathbf{The\ Antidote:\ Brainwriting} = \text{Anonymous, silent, spatial idea 
 >   - *Analog 1: Formula 1 Pit-Stop Crews (Ultra-Fast Parallel Tasking):* In F1, 20 specialists execute wheel changes in under 2.5 seconds simultaneously. *Application:* Replace sequential nurse-then-doctor triage with a multi-disciplinary "Triage Pit Crew" (Nurse + Doctor + Registrar) evaluating critical patients simultaneously at arrival.
 >   - *Analog 2: Airport Fast-Track & Digital Wayfinding:* Airports route passengers based on luggage and check-in status. *Application:* Color-coded digital floor pathways guiding non-critical patients straight to minor-injury express clinics, clearing main ER corridors.
 > - **Part B: Challenging Fundamental Assumptions:**
->   - *Assumption 1: "Patients must complete extensive paper intake forms before receiving attention."*
+>     - *Assumption 1: "Patients must complete extensive paper intake forms before receiving attention."*
 >     - *Challenge:* Deploy voice-to-text AI badges on nurses that automatically generate medical intake notes while the patient speaks.
 >   - *Assumption 2: "Diagnostic blood tests must be sent away to a centralized hospital lab."*
 >     - *Challenge:* Implement handheld, point-of-care rapid blood analyzers right at the bedside for instant 60-second vital readouts.
@@ -564,17 +593,31 @@ $$\mathbf{The\ Antidote:\ Brainwriting} = \text{Anonymous, silent, spatial idea 
 
 ---
 
-> **Q (Subjective):** Mention 3 best practices of idea generation and 3 techniques of creativity with illustrated examples.
-> - **Core Anchor:** Ideation requires psychological safety, high divergent volume, and structured thinking techniques to uncover breakthrough solutions.
-> - **Part A: 3 Best Practices of Idea Generation:**
->   - **1. Quantity Over Quality:** Generate hundreds of raw concepts before filtering ($Quantity > Quality$). *Example:* Generating 100 cafeteria layout ideas to surface 5 viable solutions.
->   - **2. Defer Judgment:** Strictly prohibit early evaluation, scoring, or criticism during generation to prevent killing fragile ideas.
->   - **3. Anonymous Brainwriting:** Have team members sketch ideas silently on Post-it notes in pairs, eliminating groupthink, hierarchy dominance, and vocal idea blocking.
-> - **Part B: 3 Creativity Techniques with Examples:**
->   - **1. Challenging Assumptions:** Questioning industry orthodoxies. *Example:* Apple removing physical keyboards to build the full-touchscreen iPhone.
->   - **2. SCAMPER:** Applying structured transformational prompts. *Example:* Adding an eraser to a pencil (*Combine*) and eliminating the wooden casing (*Eliminate*).
->   - **3. Lateral Thinking (Edward de Bono):** Moving sideways from logic using operations like *Task Unification*. *Example:* Using ice blocks to gently lower heavy factory machinery into place without cranes.
-> - **Conclusion:** Combining open ideation practices with structured creative triggers produces both novel and commercially viable solutions ✓
+> **Q (Subjective — PYQ 25 Sep 2025):** Write three methods for solution generation.
+> - **Core Anchor:** Solution generation is the divergent ideation phase aimed at maximizing idea volume under the principle that $\text{Quantity} \gg \text{Quality}$ while strictly deferring judgment.
+> - **Method 1: The SCAMPER Technique (Systematic Transformational Prompts):**
+>   - *Mechanism:* Created by Alex Osborn and Bob Eberle, provides 7 action prompts: **S**ubstitute, **C**ombine, **A**dapt, **M**odify/Minify, **P**ut to another use, **E**liminate, and **R**everse/Rearrange.
+>   - *Course Example:* Redesigning university cafeteria operations: Substituting ceramic dinner plates with modular portion bowls, combining checkouts with tray weighing sensors, and reversing buffet layouts (dessert/salads first) to prevent food waste.
+> - **Method 2: Analogous Design (Cross-Industry Domain Borrowing):**
+>   - *Mechanism:* Drawing inspiration from distant, unrelated industries or biological ecosystems facing an identical underlying dynamic.
+>   - *Course Example:* Hospital emergency room (ER) triage borrowing parallel tasking from Formula 1 Pit-Stop Crews (where 20 specialists change tires in 2.5 seconds) to replace sequential triage with a multi-disciplinary rapid intake pit crew.
+> - **Method 3: Challenging Fundamental Assumptions (First-Principles Inversion):**
+>   - *Mechanism:* Systematically listing and deliberately inverting or eliminating established industry orthodoxies.
+>   - *Course Example:* UPI inverting the dogma that electronic money transfers require bank account and IFSC details (replacing them with mobile numbers and QR codes); Apple removing physical phone keyboards.
+> - **Conclusion:** Combining SCAMPER, Analogous Design, and Challenging Assumptions breaks cognitive fixation and unlocks novel, viable solution concepts ✓
+
+---
+
+> **Q (Subjective — Sample Questions):** What are the best practices of ideation?
+> - **Core Anchor:** Ideation requires psychological safety, behavioral discipline, and deliberate structures to encourage divergent thinking and escape cognitive fixation.
+> - **6 Key Best Practices of Ideation:**
+>   - **1. Quantity Over Quality ($\text{Quantity} \gg \text{Quality}$):** High volume is a prerequisite for novel quality. Pushing teams past their first 15–20 obvious ideas unlocks truly breakthrough combinations.
+>   - **2. Defer Judgment:** Strictly decouple divergent generation from convergent evaluation. Early criticism, skepticism, or playing "devil's advocate" kills fragile nascent concepts.
+>   - **3. Anonymous Brainwriting Over Verbal Brainstorming:** Replaces loud-voice dominance, hierarchy deference, and evaluation apprehension with silent, individual sticky-note writing and clustering.
+>   - **4. Encourage Wild and Exaggerated Ideas:** Provocative, unconventional concepts serve as cognitive springboards; it is easier to tame a wild idea than invigorate a pedestrian one.
+>   - **5. Build on the Ideas of Others ("Yes, And..." Thinking):** Adopting improvisational co-creation by actively hitchhiking on teammates' concepts rather than answering with defensive "Yes, but...".
+>   - **6. Visualize Your Thinking:** Drawing doodles, interfaces, and flow diagrams forces clarity and invites collaborative refinement far more effectively than text.
+> - **Conclusion:** Enforcing quantity, deferring evaluation, and using visual brainwriting maximizes both novelty and utility in ideation sessions ✓
 
 ---
 
@@ -722,18 +765,34 @@ A 9-box blueprint mapping how an organization creates, delivers, and captures va
 
 ### 4.5 Deep-Dive 25-Mark Subjective Blueprint: Prioritizing & Validating Useful Ideas
 
-> **Q (Subjective):** Mention 3 structured methods of prioritizing and validating useful ideas following an ideation session. Illustrate each method with a concrete example.
-> - **Core Anchor:** Following divergent ideation, organizations must use rigorous, objective rubrics to prioritize concepts and validate core hypotheses before investing capital.
-> - **Method 1: The DFV Innovation Trinity Matrix (Desirability, Feasibility, Viability):**
->   - *Mechanism:* Evaluates ideas at the intersection of Human Desirability *(user craving)*, Technical Feasibility *(build capability within constraints)*, and Business Viability *(long-term profitability)*.
->   - *Example:* Original Apple iPhone: Empathy showed high desirability for a single unified phone/music/internet device; multi-touch screen tech proved feasible; carrier revenue-sharing partnerships established commercial viability.
-> - **Method 2: The Impact-Time Portfolio Matrix:**
->   - *Mechanism:* Maps ideas across a $2 \times 2$ grid (Impact vs. Time) into *Starters* (quick wins), *Stars* (high-impact leapfrogs), *Pipeline* (strategic 2–3 year R&D), and *Pipe Dreams* (parked).
->   - *Example:* Retail grocery innovation: Implementing digital barcode scanners on phone apps acts as a *Starter* (1 month); building automated robotic fulfillment micro-warehouses goes into the *Pipeline* (3 years).
-> - **Method 3: Rapid Hypothesis Prototyping (Doing the Last Experiment First):**
->   - *Mechanism:* Builds quick, low-cost prototypes to test the single most critical, high-risk operational hypothesis before designing the full product.
->   - *Example:* The first automated cash dispenser (ATM): Put a human clerk inside a cardboard kiosk to test if users trusted withdrawing physical cash from an automated terminal before engineering motorized counting mechanisms.
-> - **Conclusion:** Combining DFV filtering, Impact-Time portfolio management, and rapid hypothesis testing prevents wasteful capital allocation and accelerates validated learning ✓
+> **Q (Subjective — PYQ 25 Sep 2025):** Write three methods of rapid prototyping and validation.
+> - **Core Anchor:** A prototype is a low-cost, provisional learning artifact built to "do the last experiment first," fail faster to succeed sooner, and validate critical hypotheses before deploying capital.
+> - **Method 1: Low-Fidelity Mockups & "Wizard of Oz" Prototyping:**
+>   - *Mechanism:* Creating tactile, rough physical representations (cardboard, paper UI cards) or simulating autonomous backend logic manually behind the scenes to test user behavior and trust.
+>   - *Course Example:* The first automated cash dispenser (ATM): Putting a human clerk inside a simulated cardboard kiosk to test whether pedestrians trusted withdrawing physical cash from an automated terminal before engineering motorized dispensing mechanisms.
+> - **Method 2: The DFV Innovation Trinity Matrix (Desirability, Feasibility, Viability):**
+>   - *Mechanism:* Systematic validation filter evaluating concepts at the intersection of Human Desirability *(user demand/pain-relief)*, Technical Feasibility *(build capability within constraints)*, and Business Viability *(positive unit economics and sustainable revenue)*.
+>   - *Course Example:* Original Apple iPhone: High desirability for an all-in-one music/phone/web communicator; multi-touch capacitive glass engineered to feasibility; exclusive telecom carrier partnerships securing business viability.
+> - **Method 3: The Impact-Time Portfolio Prioritization Matrix:**
+>   - *Mechanism:* A $2 \times 2$ matrix mapping validated concepts across Potential Impact (Low vs. High) and Implementation Time (Quick vs. Long) into *Starters* (quick wins), *Stars* (strategic breakthroughs), *Pipelines* (long-term R&D), and *Pipe Dreams* (deprioritized).
+>   - *Course Example:* Retail grocery chain: Rolling out in-app barcode scanning acts as a *Starter* (1 month); developing fully autonomous robotic fulfillment dark-stores belongs in the strategic *Pipeline* (3 years).
+> - **Conclusion:** Combining DFV filtering, Impact-Time prioritization, and rapid hypothesis testing prevents capital misallocation and accelerates validated learning ✓
+
+---
+
+> **Q (Subjective — Sample Questions):** Mention any three methods of prototyping of services.
+> - **Core Anchor:** Services are intangible, experiential, and time-dependent; they cannot be 3D printed or molded in plastic. Service prototyping requires simulating interactions, temporal touchpoints, human emotions, and operational handoffs over time.
+> - **Three Structured Methods of Service Prototyping:**
+>   - **1. Storyboarding (Visual Narrative Sequencing):**
+>     - *Mechanism:* Comic-strip style sequential frame-by-frame illustration detailing the customer journey across key touchpoints, environmental contexts, and emotional shifts before, during, and after service delivery.
+>     - *Course Example:* Airport express transit service: Sketching frames for curbside drop-off, biometric kiosk entry, automated baggage drop, fast-track security, and boarding gate push-alerts to identify handoff friction before remodeling physical spaces.
+>   - **2. Skits and Role-Playing (Experiential Behavioral Simulation):**
+>     - *Mechanism:* Team members and frontline personnel physically enact the roles of customers, service providers, and edge-case scenarios under real-time operational stress.
+>     - *Course Example:* Hospital emergency room triage: Medical staff role-play incoming trauma patient arrivals, discovering that nursing staff lose critical minutes transferring paper charts between triage and examination rooms, sparking the need for bedside voice-to-text charting.
+>   - **3. Wizard of Oz / Concierge Pilot Staging:**
+>     - *Mechanism:* Delivering the front-end user experience of a digital, automated, or complex service while executing all backend coordination, data processing, and fulfillment manually behind the scenes.
+>     - *Course Example:* Zappos founder Nick Swinmurn testing online shoe sales by photographing shoes in local stores and manually buying and shipping pairs upon order placement, validating customer willingness to purchase footwear online without holding warehouse inventory.
+> - **Conclusion:** Service prototyping makes abstract customer experiences tangible, allowing organizations to spot friction, align staff, and de-risk service launches at negligible cost ✓
 
 ---
 
