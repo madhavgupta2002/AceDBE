@@ -7,9 +7,11 @@ import type { LetterGrade } from '@/lib/cgpa/grades';
 export type RawRow = { n: string; g: string };
 
 export type ParsedSubject = {
-    name: string; // base subject name as it appears in Moodle
+    name: string; // base subject name as it appears in Moodle / curriculum
     cla: number | null; // out of 25
+    project: number | null; // out of 25 (if present)
     final: number | null; // out of 75
+    finalText?: string | null; // e.g. 'Absent'
     total: number | null; // out of 100
     grade: string | null; // letter grade from Moodle
     hasRetake: boolean;
@@ -23,14 +25,14 @@ const VALID_GRADES: LetterGrade[] = ['O', 'A', 'B', 'C', 'D', 'E', 'F'];
 function normalizeSubjectBase(name: string): string {
     const clean = name.trim().replace(/\s+/g, ' ');
 
-    if (/^CMII\b/i.test(clean) || /^Creative Mindset\b/i.test(clean)) {
-        return 'Creativity Mindset for Innovation and Imagination';
+    if (/^CMII\b/i.test(clean) || /^Creative Mindset\b/i.test(clean) || /^Creativity Mindset\b/i.test(clean)) {
+        return 'Creative Mindset for Innovation and Imagination';
     }
     if (/^FoBC\s*[-–]?\s*2\b/i.test(clean) || /^FoBC\s*II\b/i.test(clean) || /^Foundation[s]? of Business Communication[- ]*(?:2|II)\b/i.test(clean)) {
-        return 'Foundation of Business Communication II';
+        return 'Foundation of Business Communication-II';
     }
     if (/^FoBC\b/i.test(clean) || /^Foundation[s]? of Business Communication[- ]*(?:1|I)\b/i.test(clean)) {
-        return 'Foundations of Business Communication I';
+        return 'Foundations of Business Communication-I';
     }
     if (/^Finance\b/i.test(clean) || /^Financial Statement[s]? and Business Performance\b/i.test(clean)) {
         return 'Financial Statements and Business Performance';
@@ -38,32 +40,50 @@ function normalizeSubjectBase(name: string): string {
     if (/^Marketing\b/i.test(clean)) {
         return 'Marketing Fundamentals';
     }
-    if (/^Statistics\b/i.test(clean)) {
+    if (/^Business Statistics.*(?:1|I)\b/i.test(clean)) {
+        return 'Business Statistics for Entrepreneurs-I';
+    }
+    if (/^Business Statistics.*(?:2|II)\b/i.test(clean)) {
+        return 'Business Statistics for Entrepreneurs-II';
+    }
+    if (/^Business Statistics.*(?:3|III)\b/i.test(clean)) {
+        return 'Business Statistics for Entrepreneurs-III';
+    }
+    if (/^Statistics\b/i.test(clean) || /^Business Statistics for Entrepreneurs\b/i.test(clean)) {
         return 'Business Statistics for Entrepreneurs';
     }
     if (/^Entrepreneurship\b/i.test(clean) || /^Exploration[s]?\s+(?:in|into)\s+Entrepreneurship\b/i.test(clean)) {
-        return 'Exploration into Entrepreneurship';
+        return 'Explorations in Entrepreneurship';
     }
-    if (/(?:Venturing on a budget:\s*)?(?:Rs\.?\s*)?250\s*Venture\b/i.test(clean)) {
-        return 'Venturing on a budget: Rs.250 Venture';
+    if (/(?:Venturing on a [Bb]udget:\s*)?(?:Rs\.?\s*)?250\s*Venture\b/i.test(clean)) {
+        return 'Venturing on a Budget: Rs.250 Venture (Project Based)';
     }
     if (/^Web(?:site)?\s*Development\b/i.test(clean)) {
-        return 'Website Development';
+        return 'Website Development (Project Based)';
     }
-    if (/^Introduction to Strategic Management\b/i.test(clean)) {
-        return 'Strategic Management';
+    if (/^(?:Introduction to\s+)?Strategic Management\b/i.test(clean)) {
+        return 'Introduction to Strategic Management';
     }
-    if (/^Sustainability Measure[s]? for SMEs\b/i.test(clean)) {
-        return 'Sustainability Measurements for SMEs';
+    if (/^Sustainability Measure[s]? for SMEs\b/i.test(clean) || /^Sustainability Measurement[s]? for SMEs\b/i.test(clean)) {
+        return 'Sustainability Measures for SMEs';
     }
-    if (/^Entrepreneurial Hypothesis Testing\b/i.test(clean)) {
-        return 'Entrepreneurial Methods Hypothesis Testing';
+    if (/^Entrepreneurial (?:Methods\s+)?Hypothesis Testing\b/i.test(clean)) {
+        return 'Entrepreneurial Hypothesis Testing';
     }
-    if (/^Exploring Society & Social Structure\b/i.test(clean)) {
-        return 'Exploring Society & Structure';
+    if (/^Exploring Society &(?: Social)? Structure\b/i.test(clean)) {
+        return 'Exploring Society & Social Structure';
     }
     if (/^Understanding Indian Culture\b/i.test(clean)) {
-        return 'Understanding Indian Culture: Theatre and its presence in daily life';
+        return 'Understanding Indian Culture (Project Based)';
+    }
+    if (/^People,\s*Work\s*,?\s*and\s*Organi[sz]ations\b/i.test(clean)) {
+        return 'People, Work and Organisations';
+    }
+    if (/^Principles of Micro[- ]?economics\b/i.test(clean)) {
+        return 'Principles of Microeconomics';
+    }
+    if (/^Design [Yy]our Thinking\b/i.test(clean)) {
+        return 'Design Your Thinking';
     }
 
     return clean;
@@ -74,7 +94,7 @@ function stripPrefix(name: string): string {
     return name.replace(/^(Manual item|Category total|Course total|Aggregation)\s*/i, '').trim();
 }
 
-type Component = 'cla' | 'final' | 'total' | 'grade' | null;
+type Component = 'cla' | 'project' | 'final' | 'total' | 'grade' | null;
 
 // Identify which component a row represents and return the base subject name.
 export function classify(rawName: string): { base: string; component: Component; retake: boolean } {
@@ -98,6 +118,10 @@ export function classify(rawName: string): { base: string; component: Component;
     m = cleanName.match(/^(.*?)\s*Total(?:\s*\(\d+(?:\.\d+)?\))?\s*$/i);
     if (m && m[1].trim()) return { base: normalizeSubjectBase(m[1]), component: 'total', retake: isRetake };
 
+    // Project: "Project(25)", "Project (25)", "Project", "Course Project"
+    m = cleanName.match(/^(.*?)\s*(?:Project|Course\s*Project)(?:\s*\(\d+(?:\.\d+)?\))?\s*$/i);
+    if (m && m[1].trim()) return { base: normalizeSubjectBase(m[1]), component: 'project', retake: isRetake };
+
     // Final Exam: "Final exam(75)", "Final Exam (75)", "Final Exam", "End Term Exam", "Final"
     m = cleanName.match(/^(.*?)\s*(?:Final\s*Exam|End\s*Term\s*Exam|End\s*Term|Final)(?:\s*\(\d+(?:\.\d+)?\))?\s*$/i);
     if (m && m[1].trim()) return { base: normalizeSubjectBase(m[1]), component: 'final', retake: isRetake };
@@ -111,7 +135,7 @@ export function classify(rawName: string): { base: string; component: Component;
 
 function parseGradeValue(g: string): number | null {
     const trimmed = (g || '').trim();
-    if (!trimmed || trimmed === '-' || trimmed.toLowerCase() === '( empty )') return null;
+    if (!trimmed || trimmed === '-' || trimmed.toLowerCase() === '( empty )' || trimmed.toLowerCase().includes('absent')) return null;
     const num = Number(trimmed.replace(/[^0-9.]/g, ''));
     return Number.isFinite(num) ? num : null;
 }
@@ -205,7 +229,9 @@ export function parseGrades(rows: RawRow[], batch?: number): ParsedSubject[] {
             map.set(mapKey, {
                 name: match ? match.name : base,
                 cla: null,
+                project: null,
                 final: null,
+                finalText: null,
                 total: null,
                 grade: null,
                 hasRetake: false,
@@ -223,6 +249,29 @@ export function parseGrades(rows: RawRow[], batch?: number): ParsedSubject[] {
                 }
             }
             if (retake && g && g !== '-') entry.hasRetake = true;
+        } else if (component === 'project') {
+            const value = parseGradeValue(row.g);
+            if (value !== null) {
+                if (retake) {
+                    entry.hasRetake = true;
+                    entry.project = value;
+                } else if (entry.project === null) {
+                    entry.project = value;
+                }
+            }
+        } else if (component === 'final') {
+            if ((row.g || '').toLowerCase().includes('absent')) {
+                entry.finalText = 'Absent';
+            }
+            const value = parseGradeValue(row.g);
+            if (value !== null) {
+                if (retake) {
+                    entry.hasRetake = true;
+                    entry.final = value;
+                } else if (entry.final === null) {
+                    entry.final = value;
+                }
+            }
         } else {
             const value = parseGradeValue(row.g);
             if (value !== null) {
@@ -236,15 +285,18 @@ export function parseGrades(rows: RawRow[], batch?: number): ParsedSubject[] {
         }
     }
 
-    // Keep only subjects that have at least one real mark
+    // Keep only subjects that have at least one real mark or retake status
     const result = order
         .map((key) => map.get(key)!)
-        .filter((s) => s.cla !== null || s.final !== null || s.total !== null || s.grade !== null);
+        .filter((s) => s.cla !== null || s.project !== null || s.final !== null || s.finalText !== null || s.total !== null || s.grade !== null);
 
     for (const subject of result) {
-        // If CLA and Final exist, compute total
-        if (subject.cla !== null && subject.final !== null) {
-            subject.total = Number((subject.cla + subject.final).toFixed(2));
+        // If total is missing, compute from components
+        if (subject.total === null) {
+            if (subject.cla !== null || subject.project !== null || subject.final !== null) {
+                const sum = (subject.cla ?? 0) + (subject.project ?? 0) + (subject.final ?? 0);
+                subject.total = Number(sum.toFixed(2));
+            }
         }
         if (!subject.match) {
             const { match, score } = bestMatch(subject.name, candidates);
