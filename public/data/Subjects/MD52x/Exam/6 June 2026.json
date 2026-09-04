@@ -7,226 +7,18 @@
     },
     "questions": [
         {
-            "question_id": "23",
-            "question_text": "You are launching a new organic baby product. To appeal to parents' emotions and build trust, which right-brain capability should you utilize?",
+            "question_id": "1",
+            "question_text": "What is the typical timeframe for developing a breakthrough product?",
             "question_type": "MCQ",
             "options": {
-                "A": "A data-driven impact report with verified third-party certifications and clinical safety scores.",
-                "B": "A comparative ingredient transparency label showing superiority over chemical-based competitors.",
-                "C": "An influencer-led unboxing campaign focused on product aesthetics and packaging design.",
-                "D": "Compelling storytelling that explains the personal, empathetic origin story of the product."
-            },
-            "correct_option_label": "D",
-            "explanation": "Emotional connection and trust-building are right-brain capabilities. Storytelling creates an empathetic narrative around a product's origin, which appeals to parents much more effectively than purely analytical data or aesthetic packaging.",
-            "module": 5
-        },
-        {
-            "question_id": "26",
-            "question_text": "During the concept generation phase, how should a product innovator resolve the ethical dilemma of observing child users?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Obtain a single blanket consent from the guardian at the start of the study, covering all subsequent observation sessions throughout the research period",
-                "B": "Use a naturalistic observation method in a public setting such as a playground, as no formal consent is required for observing behaviour that occurs in shared public spaces",
-                "C": "Obtain consent only from the school or institution rather than individual parents, as institutional approval suffices",
-                "D": "Secure proper, transparent, and announced parental/guardian consent and ensure non-intrusive, ethical psychological parameters are maintained"
-            },
-            "correct_option_label": "D",
-            "explanation": "In product development involving children, ethical risk management requires obtaining explicit, transparent, and announced parental or guardian consent while maintaining non-intrusive, safe psychological parameters.",
-            "module": 6
-        },
-        {
-            "question_id": "12",
-            "question_text": "How does the desktop computer example differ from the laptop example in terms of architecture?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "The laptop is modular; the desktop is integral.",
-                "B": "The desktop allows for easy RAM upgrades (Modular); the laptop is condensed and difficult to change (Integral).",
-                "C": "The laptop is integral due to its operating system; the desktop is modular due to its open-source software.",
-                "D": "Both are modular; the difference lies only in physical form factor and not component interdependence."
+                "A": "1 to 2 years",
+                "B": "3 to 5 years",
+                "C": "6 to 18 months",
+                "D": "5 to 8 years"
             },
             "correct_option_label": "B",
-            "explanation": "Desktops typically feature modular architecture with interchangeable, easily upgradable parts like RAM and storage. In contrast, laptops are more integrated (integral architecture) to optimize for portability, making upgrades difficult.",
-            "module": 3
-        },
-        {
-            "question_id": "18",
-            "question_text": "What is a \"monadic test\" in product use testing?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "A respondent tests a single product for a period of time",
-                "B": "An in-lab blind test where the brand name is concealed but two variants are evaluated side by side.",
-                "C": "A sequential comparison where a respondent tests product A, then immediately rates product B.",
-                "D": "A large-panel test where at least 100 respondents evaluate the same product simultaneously."
-            },
-            "correct_option_label": "A",
-            "explanation": "In product use testing, a monadic test involves a respondent testing a single, standalone product in isolation over a specific period to capture clean, unbiased feedback.",
-            "module": 4
-        },
-        {
-            "question_id": "6",
-            "question_text": "If a company is using a 5-point scale for \"intention to buy,\" which categories should they track as potential users?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "\"Definitely buy\" and \"probably buy.\"",
-                "B": "All five categories.",
-                "C": "Only \"definitely buy.\"",
-                "D": "\"Indifferent\" and \"probably buy.\""
-            },
-            "correct_option_label": "A",
-            "explanation": "In forecasting models like ATAR, the trial rate is usually estimated using the \"Top 2 Boxes\" of purchase intent surveys, which correspond to \"Definitely buy\" and \"Probably buy\".",
-            "module": 2
-        },
-        {
-            "question_id": "29",
-            "question_text": "An appliance manufacturer wants to mitigate liability for a washing machine that could injure users if opened during a spin cycle. Which action would MOST effectively reduce risk through product design?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Obtain third-party safety certification",
-                "B": "Affix prominent, standardized safety warning labels and detailed instructions",
-                "C": "Include a disclaimer limiting liability",
-                "D": "Implement an automatic door-lock sensor that prevents the machine from completing the cycle if the door is opened"
-            },
-            "correct_option_label": "D",
-            "explanation": "The most effective way to eliminate safety risks is through design-level safety features (such as interlocks or sensors) that physically prevent unsafe use, rather than relying on warnings, labels, or disclaimers.",
-            "module": 6
-        },
-        {
-            "question_id": "28",
-            "question_text": "Once an escalated public policy issue leaves the \"political arena\" due to active legislation, what stage does it enter?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Judicial review and court-mandated compliance stage",
-                "B": "Voluntary industry self-regulation stage",
-                "C": "Regulatory adjustment",
-                "D": "Public consultation and stakeholder lobbying stage"
-            },
-            "correct_option_label": "C",
-            "explanation": "Under the Lifecycle of Public Concern, once a policy issue leaves the political arena through the passing of legislation, it enters the regulatory adjustment stage where official guidelines and rules are codified.",
-            "module": 6
-        },
-        {
-            "question_id": "14",
-            "question_text": "Why is \"Interdepartmental Integration\" particularly critical for complex projects?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Because complex projects benefit from sequential handoffs between isolated specialist teams to avoid overlap.",
-                "B": "To reduce the number of approval stages by consolidating decision-making in a single department.",
-                "C": "To allow each department to maintain an independent budget and development roadmap.",
-                "D": "Because they require diverse skills and coordination across long gestation periods."
-            },
-            "correct_option_label": "D",
-            "explanation": "Complex product development projects have extended timelines and require tight integration across multiple functional disciplines (R&D, marketing, operations) to align varying expertise.",
-            "module": 3
-        },
-        {
-            "question_id": "19",
-            "question_text": "A car manufacturer adds more airbags. What type of demand creation is this?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Utility enhancement.",
-                "B": "Price reduction.",
-                "C": "Regulatory compliance update.",
-                "D": "Aesthetic modification."
-            },
-            "correct_option_label": "A",
-            "explanation": "Adding safety features like airbags directly increases the product's performance and safety benefits for the user, representing an enhancement of the product's functional utility.",
-            "module": 4
-        },
-        {
-            "question_id": "8",
-            "question_text": "Which of the following is a key dimension for evaluating a concept at a broad level?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "The technical feasibility of individual component specifications.",
-                "B": "Strategic fit with corporate vision.",
-                "C": "The estimated retail price relative to competitors’ current offerings.",
-                "D": "The operational capacity of the existing manufacturing plant."
-            },
-            "correct_option_label": "B",
-            "explanation": "Broad-level pre-screening of concepts focuses on strategic alignment (top-down or bottom-up) with the firm's overarching vision, objectives, and Product Innovation Charter (PIC).",
-            "module": 2
-        },
-        {
-            "question_id": "20",
-            "question_text": "A company holds a patent for a good battery, and another holds one for a slick screen. They decide to exchange these. What is this called?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Licensing the patents to a third-party manufacturer.",
-                "B": "Filing a joint patent application.",
-                "C": "Bartering patents.",
-                "D": "Forming a joint venture to co-develop derivative products."
-            },
-            "correct_option_label": "C",
-            "explanation": "Exchanging access to proprietary technologies through patents without monetary transactions is known as bartering or cross-licensing patents.",
-            "module": 4
-        },
-        {
-            "question_id": "9",
-            "question_text": "If a protocol for a new healthy soft drink identifies \"youth\" as the target, what is this an example of?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Psychographic lifestyle profiling.",
-                "B": "Usage occasion segmentation.",
-                "C": "Demographic need-state mapping.",
-                "D": "Target market positioning."
-            },
-            "correct_option_label": "D",
-            "explanation": "The product protocol specifies the target audience (e.g., demographics like youth) as part of defining the overall target market positioning for the upcoming product.",
-            "module": 2
-        },
-        {
-            "question_id": "24",
-            "question_text": "To target Bottom of Pyramid consumers who have irregular or daily cash flows, what business model innovation should a mobile phone company apply?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Bundle the device with a mandatory 24-month data plan billed in advance on a fixed monthly cycle.",
-                "B": "Offer micro-loans, EMI structures, or flexible financing schemes.",
-                "C": "Partner with a single national carrier to offer subsidised devices exclusively through postpaid plans.",
-                "D": "Position the device as an aspirational premium product to leverage status-driven purchase behaviour."
-            },
-            "correct_option_label": "B",
-            "explanation": "Bottom of the Pyramid (BoP) consumers often face irregular cash flows. Business models targeting them must design flexible financing options, micro-loans, or pay-as-you-go pricing plans rather than locked-in postpaid cycles.",
-            "module": 5
-        },
-        {
-            "question_id": "22",
-            "question_text": "In a \"hyper-competitive\" market, what is the strategic paradox regarding launching new products?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "New products are strategically necessary, but firms should adopt a fast-follower strategy to let first-movers absorb market development costs before entering.",
-                "B": "Launching new products is cost-effective only when the firm can achieve economies of scale within the first two quarters to offset the R&D investment.",
-                "C": "Launching new products is costly and risky, but not launching them is even riskier because you lose market share.",
-                "D": "Launching new products is highly profitable, but nobody wants to buy them."
-            },
-            "correct_option_label": "C",
-            "explanation": "Under hyper-competition, rapid product introduction is high-risk and expensive, but failing to launch updates is even more dangerous as competitors will quickly erode your market share.",
-            "module": 5
-        },
-        {
-            "question_id": "25",
-            "question_text": "What major feature was added to the Nokia 1100 specifically to solve a real-life rural consumer problem?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "A dust-and-moisture resistant rubberised casing",
-                "B": "A regional language voice-recognition system for rural dialects",
-                "C": "An extended-life removable battery with a week-long standby time",
-                "D": "A built-in physical torchlight"
-            },
-            "correct_option_label": "D",
-            "explanation": "The built-in physical flashlight was added to the Nokia 1100 after field studies revealed that rural users frequently navigated unlit roads and suffered from power outages.",
-            "module": 5
-        },
-        {
-            "question_id": "15",
-            "question_text": "Distinguish between \"User-oriented\" and \"Result-oriented\" Product Service System.",
-            "question_type": "MCQ",
-            "options": {
-                "A": "User-oriented PSS involves the customer paying per unit of output delivered; Result-oriented PSS centres on the manufacturer retaining asset ownership throughout the contract period.",
-                "B": "User-oriented involves renting/leasing a product, while Result-oriented involves paying for a specific outcome (e.g., voicemail)."
-            },
-            "correct_option_label": "B",
-            "explanation": "User-oriented PSS focuses on the user renting or leasing a physical asset owned by the company, while Result-oriented PSS bypasses the asset entirely, where the customer pays only for the end performance or service outcome.",
-            "module": 3
+            "explanation": "Breakthrough or discontinuous innovations require radical research and developmental iterations, typically taking between 3 to 5 years to launch.",
+            "module": 1
         },
         {
             "question_id": "2",
@@ -243,31 +35,17 @@
             "module": 6
         },
         {
-            "question_id": "7",
-            "question_text": "To mitigate the risk of a poor forecast for a highly uncertain new project, which strategy should a manager adopt?",
+            "question_id": "3",
+            "question_text": "Which approach is recommended to increase flexibility when technology changes fast?",
             "question_type": "MCQ",
             "options": {
-                "A": "Refine the initial forecast using advanced statistical modelling and historical analogues from similar product launches.",
-                "B": "Conduct broad qualitative research across multiple market segments to validate demand before investing in a pilot.",
-                "C": "Commit to a strategy of low-cost development and gradual marketing",
-                "D": "Build detailed scenario plans with upper and lower demand bounds, then commit to the mid-range estimate for budgeting."
+                "A": "An agile approach with iterative design",
+                "B": "A structured, sequential process with detailed upfront design specifications",
+                "C": "A phased stage-gate model with cross-functional reviews at defined milestones",
+                "D": "A parallel development approach where all teams work simultaneously from fixed specifications"
             },
-            "correct_option_label": "C",
-            "explanation": "When demand is highly uncertain, the safest risk-mitigation strategy is to keep development costs minimal and employ a gradual, phased approach to marketing and deployment.",
-            "module": 6
-        },
-        {
-            "question_id": "1",
-            "question_text": "What is the typical timeframe for developing a breakthrough product?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "1 to 2 years",
-                "B": "3 to 5 years",
-                "C": "6 to 18 months",
-                "D": "5 to 8 years"
-            },
-            "correct_option_label": "B",
-            "explanation": "Breakthrough or discontinuous innovations require radical research and developmental iterations, typically taking between 3 to 5 years to launch.",
+            "correct_option_label": "A",
+            "explanation": "Fast-changing technological environments require flexible, iterative product development methodologies like Agile to allow progressive commitments and design revisions.",
             "module": 1
         },
         {
@@ -285,48 +63,6 @@
             "module": 1
         },
         {
-            "question_id": "11",
-            "question_text": "Which statement best validates Steve Jobs’ philosophy that \"customers do not know what they want\"?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Focus groups accurately predict breakthrough product demand before launch.",
-                "B": "Customers can only visualize what they are currently using and their complaints about it.",
-                "C": "Customers consistently overestimate how much they are willing to pay for new features.",
-                "D": "Customers reliably identify unmet needs when shown competitive benchmarks."
-            },
-            "correct_option_label": "B",
-            "explanation": "Consumers struggle to articulate needs for unfamiliar technologies because their imagination is constrained by their experience with existing products. They can only express frustrations about what they already use.",
-            "module": 8
-        },
-        {
-            "question_id": "3",
-            "question_text": "Which approach is recommended to increase flexibility when technology changes fast?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "An agile approach with iterative design",
-                "B": "A structured, sequential process with detailed upfront design specifications",
-                "C": "A phased stage-gate model with cross-functional reviews at defined milestones",
-                "D": "A parallel development approach where all teams work simultaneously from fixed specifications"
-            },
-            "correct_option_label": "A",
-            "explanation": "Fast-changing technological environments require flexible, iterative product development methodologies like Agile to allow progressive commitments and design revisions.",
-            "module": 1
-        },
-        {
-            "question_id": "16",
-            "question_text": "Why is a prototype critical in the development process?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "It validates the final cost structure and confirms the production budget.",
-                "B": "It signals readiness for full-scale manufacturing, eliminating the need for further concept validation.",
-                "C": "It serves as a feedback loop for testing and refinement.",
-                "D": "It establishes the legal basis for a patent application before commercialization."
-            },
-            "correct_option_label": "C",
-            "explanation": "Prototypes act as physical or digital approximations that allow development teams to test assumptions, gather user feedback, and refine the product iteratively.",
-            "module": 3
-        },
-        {
             "question_id": "5",
             "question_text": "The transition of Aspirin from a painkiller to a heart attack treatment is an example of:",
             "question_type": "MCQ",
@@ -341,18 +77,60 @@
             "module": 1
         },
         {
-            "question_id": "30",
-            "question_text": "What are the four core steps of a launch management system?",
+            "question_id": "6",
+            "question_text": "If a company is using a 5-point scale for \"intention to buy,\" which categories should they track as potential users?",
             "question_type": "MCQ",
             "options": {
-                "A": "Demand forecasting, channel selection, pricing strategy, and post-launch customer satisfaction monitoring",
-                "B": "Setting sales targets, assigning regional managers, briefing the PR agency, and scheduling the launch event",
-                "C": "Concept screening, business analysis, product development, and test marketing",
-                "D": "Identifying potential problems, Tracking variables, Identifying trigger points, and Exercising contingency/remedial plans"
+                "A": "\"Definitely buy\" and \"probably buy.\"",
+                "B": "All five categories.",
+                "C": "Only \"definitely buy.\"",
+                "D": "\"Indifferent\" and \"probably buy.\""
+            },
+            "correct_option_label": "A",
+            "explanation": "In forecasting models like ATAR, the trial rate is usually estimated using the \"Top 2 Boxes\" of purchase intent surveys, which correspond to \"Definitely buy\" and \"Probably buy\".",
+            "module": 2
+        },
+        {
+            "question_id": "7",
+            "question_text": "To mitigate the risk of a poor forecast for a highly uncertain new project, which strategy should a manager adopt?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Refine the initial forecast using advanced statistical modelling and historical analogues from similar product launches.",
+                "B": "Conduct broad qualitative research across multiple market segments to validate demand before investing in a pilot.",
+                "C": "Commit to a strategy of low-cost development and gradual marketing",
+                "D": "Build detailed scenario plans with upper and lower demand bounds, then commit to the mid-range estimate for budgeting."
+            },
+            "correct_option_label": "C",
+            "explanation": "When demand is highly uncertain, the safest risk-mitigation strategy is to keep development costs minimal and employ a gradual, phased approach to marketing and deployment.",
+            "module": 6
+        },
+        {
+            "question_id": "8",
+            "question_text": "Which of the following is a key dimension for evaluating a concept at a broad level?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The technical feasibility of individual component specifications.",
+                "B": "Strategic fit with corporate vision.",
+                "C": "The estimated retail price relative to competitors’ current offerings.",
+                "D": "The operational capacity of the existing manufacturing plant."
+            },
+            "correct_option_label": "B",
+            "explanation": "Broad-level pre-screening of concepts focuses on strategic alignment (top-down or bottom-up) with the firm's overarching vision, objectives, and Product Innovation Charter (PIC).",
+            "module": 2
+        },
+        {
+            "question_id": "9",
+            "question_text": "If a protocol for a new healthy soft drink identifies \"youth\" as the target, what is this an example of?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Psychographic lifestyle profiling.",
+                "B": "Usage occasion segmentation.",
+                "C": "Demographic need-state mapping.",
+                "D": "Target market positioning."
             },
             "correct_option_label": "D",
-            "explanation": "A robust launch management system consists of four steps: identifying potential problems, tracking tracking variables, identifying decision trigger points, and executing remedial contingency plans.",
-            "module": 6
+            "explanation": "The product protocol specifies the target audience (e.g., demographics like youth) as part of defining the overall target market positioning for the upcoming product.",
+            "module": 2
         },
         {
             "question_id": "10",
@@ -369,46 +147,32 @@
             "module": 2
         },
         {
-            "question_id": "27",
-            "question_text": "Why is a system-level green innovation superior to a piece-by-piece design adjustment?",
+            "question_id": "11",
+            "question_text": "Which statement best validates Steve Jobs’ philosophy that \"customers do not know what they want\"?",
             "question_type": "MCQ",
             "options": {
-                "A": "Piece-by-piece adjustments are less disruptive and achieve the same cumulative environmental impact over time",
-                "B": "It distributes environmental responsibility across the supply chain, shifting the burden to raw material suppliers",
-                "C": "System-level changes allow companies to claim green certification without modifying core manufacturing processes",
-                "D": "It embeds environmental sustainability into the entire product philosophy and overall design from the start, rather than just adjusting minor stages"
+                "A": "Focus groups accurately predict breakthrough product demand before launch.",
+                "B": "Customers can only visualize what they are currently using and their complaints about it.",
+                "C": "Customers consistently overestimate how much they are willing to pay for new features.",
+                "D": "Customers reliably identify unmet needs when shown competitive benchmarks."
             },
-            "correct_option_label": "D",
-            "explanation": "System-level green design builds ecological considerations directly into the overall product life-cycle and structural philosophy from the very beginning, delivering deeper and more sustainable impact than minor, piece-by-piece adjustments.",
-            "module": 6
+            "correct_option_label": "B",
+            "explanation": "Consumers struggle to articulate needs for unfamiliar technologies because their imagination is constrained by their experience with existing products. They can only express frustrations about what they already use.",
+            "module": 8
         },
         {
-            "question_id": "21",
-            "question_text": "Which of the following industries is highlighted in the text as having a similarly high level of vertical integration and market control as Luxottica?",
+            "question_id": "12",
+            "question_text": "How does the desktop computer example differ from the laptop example in terms of architecture?",
             "question_type": "MCQ",
             "options": {
-                "A": "The low-cost airline industry",
-                "B": "The global luxury wristwatch industry.",
-                "C": "The global smartphone industry",
-                "D": "The diamond market (specifically De Beers)"
+                "A": "The laptop is modular; the desktop is integral.",
+                "B": "The desktop allows for easy RAM upgrades (Modular); the laptop is condensed and difficult to change (Integral).",
+                "C": "The laptop is integral due to its operating system; the desktop is modular due to its open-source software.",
+                "D": "Both are modular; the difference lies only in physical form factor and not component interdependence."
             },
-            "correct_option_label": "D",
-            "explanation": "Luxottica's end-to-end control of design, brands, manufacturing, and retail is highly comparable to De Beers' historical near-monopoly and control over the global diamond supply chain.",
-            "module": 5
-        },
-        {
-            "question_id": "17",
-            "question_text": "Which testing stage involves internal employees or staff?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Gamma testing",
-                "B": "In-house acceptance testing",
-                "C": "Alpha testing",
-                "D": "Beta testing"
-            },
-            "correct_option_label": "C",
-            "explanation": "Alpha testing is an early-stage product use evaluation conducted internally by the company's own employees or laboratory staff.",
-            "module": 4
+            "correct_option_label": "B",
+            "explanation": "Desktops typically feature modular architecture with interchangeable, easily upgradable parts like RAM and storage. In contrast, laptops are more integrated (integral architecture) to optimize for portability, making upgrades difficult.",
+            "module": 3
         },
         {
             "question_id": "13",
@@ -425,32 +189,254 @@
             "module": 3
         },
         {
-            "question_id": "38",
-            "question_text": "How can an industrial equipment manufacturer use an \"analogous market\" lead user to successfully design a product that fills a completely empty \"blue cell\" in their Buyer Utility Map?",
-            "question_type": "SUBJECTIVE",
-            "explanation": "An industrial equipment manufacturer can identify analogous industries that face similar mechanical or physical challenges but operate under different environmental conditions or performance scales. By studying how advanced users in these parallel markets solve their unique design constraints, the manufacturer can translate those insights to create a novel feature. This helps the firm introduce a unique utility (such as extreme risk reduction or simplification) that targets an unaddressed \"blue cell\" on their Buyer Utility Map, establishing an uncontested competitive space.",
-            "module": 2
+            "question_id": "14",
+            "question_text": "Why is \"Interdepartmental Integration\" particularly critical for complex projects?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because complex projects benefit from sequential handoffs between isolated specialist teams to avoid overlap.",
+                "B": "To reduce the number of approval stages by consolidating decision-making in a single department.",
+                "C": "To allow each department to maintain an independent budget and development roadmap.",
+                "D": "Because they require diverse skills and coordination across long gestation periods."
+            },
+            "correct_option_label": "D",
+            "explanation": "Complex product development projects have extended timelines and require tight integration across multiple functional disciplines (R&D, marketing, operations) to align varying expertise.",
+            "module": 3
         },
         {
-            "question_id": "37",
-            "question_text": "How can a company leverage a \"Super Fan Community\" (like Adult Fans of Lego) to identify and bypass design-related product frustrations before a new product ever reaches the mass market?",
-            "question_type": "SUBJECTIVE",
-            "explanation": "A company can treat its passionate Super Fan Community as a highly engaged beta-testing panel. By distributing early-stage functional prototypes to these enthusiast users, the firm receives deep, contextual feedback on usability and structural vulnerabilities. Because super fans push products to their limits and have high domain knowledge, they can identify and help resolve complex user-related or designer-related frustrations early, ensuring a refined, error-free product reaches the broader mass market.",
-            "module": 2
+            "question_id": "15",
+            "question_text": "Distinguish between \"User-oriented\" and \"Result-oriented\" Product Service System.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "User-oriented PSS involves the customer paying per unit of output delivered; Result-oriented PSS centres on the manufacturer retaining asset ownership throughout the contract period.",
+                "B": "User-oriented involves renting/leasing a product, while Result-oriented involves paying for a specific outcome (e.g., voicemail)."
+            },
+            "correct_option_label": "B",
+            "explanation": "User-oriented PSS focuses on the user renting or leasing a physical asset owned by the company, while Result-oriented PSS bypasses the asset entirely, where the customer pays only for the end performance or service outcome.",
+            "module": 3
         },
         {
-            "question_id": "35",
-            "question_text": "When launching a product with no latent demand, why is traditional market research unreliable? What role do free trials, channel partner education, and waiting for a market \"tipping point\" play in this strategy?",
-            "question_type": "SUBJECTIVE",
-            "explanation": "Traditional market research is unreliable when no latent demand exists because consumers struggle to evaluate or express preference for highly unfamiliar products they have never seen. To build such markets, firms must offer free trials to reduce the user's adoption risk, educate channel partners to properly demonstrate the product's unique benefits, and patiently maintain low-budget operations until consumer word-of-mouth reaches a market \"tipping point\" that drives mass adoption.",
+            "question_id": "16",
+            "question_text": "Why is a prototype critical in the development process?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It validates the final cost structure and confirms the production budget.",
+                "B": "It signals readiness for full-scale manufacturing, eliminating the need for further concept validation.",
+                "C": "It serves as a feedback loop for testing and refinement.",
+                "D": "It establishes the legal basis for a patent application before commercialization."
+            },
+            "correct_option_label": "C",
+            "explanation": "Prototypes act as physical or digital approximations that allow development teams to test assumptions, gather user feedback, and refine the product iteratively.",
+            "module": 3
+        },
+        {
+            "question_id": "17",
+            "question_text": "Which testing stage involves internal employees or staff?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Gamma testing",
+                "B": "In-house acceptance testing",
+                "C": "Alpha testing",
+                "D": "Beta testing"
+            },
+            "correct_option_label": "C",
+            "explanation": "Alpha testing is an early-stage product use evaluation conducted internally by the company's own employees or laboratory staff.",
             "module": 4
         },
         {
-            "question_id": "36",
-            "question_text": "How can a company combine \"service enhancement\" (such as authorized warranties) with data encryption to protect a digital product against design and digital piracy when legal enforcement is weak?",
-            "question_type": "SUBJECTIVE",
-            "explanation": "When legal enforcement of intellectual property is weak, a company can secure its digital products by combining technical and service-oriented defenses. Technical access controls like robust data encryption prevent casual file-sharing, while bundling the product with exclusive, authorized post-purchase services—such as cloud syncing, automated software patches, and verified warranty support—provides unique, non-copyable value. This integrated approach ensures that pirated versions remain functionally inferior, deterring piracy.",
+            "question_id": "18",
+            "question_text": "What is a \"monadic test\" in product use testing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A respondent tests a single product for a period of time",
+                "B": "An in-lab blind test where the brand name is concealed but two variants are evaluated side by side.",
+                "C": "A sequential comparison where a respondent tests product A, then immediately rates product B.",
+                "D": "A large-panel test where at least 100 respondents evaluate the same product simultaneously."
+            },
+            "correct_option_label": "A",
+            "explanation": "In product use testing, a monadic test involves a respondent testing a single, standalone product in isolation over a specific period to capture clean, unbiased feedback.",
             "module": 4
+        },
+        {
+            "question_id": "19",
+            "question_text": "A car manufacturer adds more airbags. What type of demand creation is this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Utility enhancement.",
+                "B": "Price reduction.",
+                "C": "Regulatory compliance update.",
+                "D": "Aesthetic modification."
+            },
+            "correct_option_label": "A",
+            "explanation": "Adding safety features like airbags directly increases the product's performance and safety benefits for the user, representing an enhancement of the product's functional utility.",
+            "module": 4
+        },
+        {
+            "question_id": "20",
+            "question_text": "A company holds a patent for a good battery, and another holds one for a slick screen. They decide to exchange these. What is this called?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Licensing the patents to a third-party manufacturer.",
+                "B": "Filing a joint patent application.",
+                "C": "Bartering patents.",
+                "D": "Forming a joint venture to co-develop derivative products."
+            },
+            "correct_option_label": "C",
+            "explanation": "Exchanging access to proprietary technologies through patents without monetary transactions is known as bartering or cross-licensing patents.",
+            "module": 4
+        },
+        {
+            "question_id": "21",
+            "question_text": "Which of the following industries is highlighted in the text as having a similarly high level of vertical integration and market control as Luxottica?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The low-cost airline industry",
+                "B": "The global luxury wristwatch industry.",
+                "C": "The global smartphone industry",
+                "D": "The diamond market (specifically De Beers)"
+            },
+            "correct_option_label": "D",
+            "explanation": "Luxottica's end-to-end control of design, brands, manufacturing, and retail is highly comparable to De Beers' historical near-monopoly and control over the global diamond supply chain.",
+            "module": 5
+        },
+        {
+            "question_id": "22",
+            "question_text": "In a \"hyper-competitive\" market, what is the strategic paradox regarding launching new products?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "New products are strategically necessary, but firms should adopt a fast-follower strategy to let first-movers absorb market development costs before entering.",
+                "B": "Launching new products is cost-effective only when the firm can achieve economies of scale within the first two quarters to offset the R&D investment.",
+                "C": "Launching new products is costly and risky, but not launching them is even riskier because you lose market share.",
+                "D": "Launching new products is highly profitable, but nobody wants to buy them."
+            },
+            "correct_option_label": "C",
+            "explanation": "Under hyper-competition, rapid product introduction is high-risk and expensive, but failing to launch updates is even more dangerous as competitors will quickly erode your market share.",
+            "module": 5
+        },
+        {
+            "question_id": "23",
+            "question_text": "You are launching a new organic baby product. To appeal to parents' emotions and build trust, which right-brain capability should you utilize?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A data-driven impact report with verified third-party certifications and clinical safety scores.",
+                "B": "A comparative ingredient transparency label showing superiority over chemical-based competitors.",
+                "C": "An influencer-led unboxing campaign focused on product aesthetics and packaging design.",
+                "D": "Compelling storytelling that explains the personal, empathetic origin story of the product."
+            },
+            "correct_option_label": "D",
+            "explanation": "Emotional connection and trust-building are right-brain capabilities. Storytelling creates an empathetic narrative around a product's origin, which appeals to parents much more effectively than purely analytical data or aesthetic packaging.",
+            "module": 5
+        },
+        {
+            "question_id": "24",
+            "question_text": "To target Bottom of Pyramid consumers who have irregular or daily cash flows, what business model innovation should a mobile phone company apply?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Bundle the device with a mandatory 24-month data plan billed in advance on a fixed monthly cycle.",
+                "B": "Offer micro-loans, EMI structures, or flexible financing schemes.",
+                "C": "Partner with a single national carrier to offer subsidised devices exclusively through postpaid plans.",
+                "D": "Position the device as an aspirational premium product to leverage status-driven purchase behaviour."
+            },
+            "correct_option_label": "B",
+            "explanation": "Bottom of the Pyramid (BoP) consumers often face irregular cash flows. Business models targeting them must design flexible financing options, micro-loans, or pay-as-you-go pricing plans rather than locked-in postpaid cycles.",
+            "module": 5
+        },
+        {
+            "question_id": "25",
+            "question_text": "What major feature was added to the Nokia 1100 specifically to solve a real-life rural consumer problem?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A dust-and-moisture resistant rubberised casing",
+                "B": "A regional language voice-recognition system for rural dialects",
+                "C": "An extended-life removable battery with a week-long standby time",
+                "D": "A built-in physical torchlight"
+            },
+            "correct_option_label": "D",
+            "explanation": "The built-in physical flashlight was added to the Nokia 1100 after field studies revealed that rural users frequently navigated unlit roads and suffered from power outages.",
+            "module": 5
+        },
+        {
+            "question_id": "26",
+            "question_text": "During the concept generation phase, how should a product innovator resolve the ethical dilemma of observing child users?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Obtain a single blanket consent from the guardian at the start of the study, covering all subsequent observation sessions throughout the research period",
+                "B": "Use a naturalistic observation method in a public setting such as a playground, as no formal consent is required for observing behaviour that occurs in shared public spaces",
+                "C": "Obtain consent only from the school or institution rather than individual parents, as institutional approval suffices",
+                "D": "Secure proper, transparent, and announced parental/guardian consent and ensure non-intrusive, ethical psychological parameters are maintained"
+            },
+            "correct_option_label": "D",
+            "explanation": "In product development involving children, ethical risk management requires obtaining explicit, transparent, and announced parental or guardian consent while maintaining non-intrusive, safe psychological parameters.",
+            "module": 6
+        },
+        {
+            "question_id": "27",
+            "question_text": "Why is a system-level green innovation superior to a piece-by-piece design adjustment?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Piece-by-piece adjustments are less disruptive and achieve the same cumulative environmental impact over time",
+                "B": "It distributes environmental responsibility across the supply chain, shifting the burden to raw material suppliers",
+                "C": "System-level changes allow companies to claim green certification without modifying core manufacturing processes",
+                "D": "It embeds environmental sustainability into the entire product philosophy and overall design from the start, rather than just adjusting minor stages"
+            },
+            "correct_option_label": "D",
+            "explanation": "System-level green design builds ecological considerations directly into the overall product life-cycle and structural philosophy from the very beginning, delivering deeper and more sustainable impact than minor, piece-by-piece adjustments.",
+            "module": 6
+        },
+        {
+            "question_id": "28",
+            "question_text": "Once an escalated public policy issue leaves the \"political arena\" due to active legislation, what stage does it enter?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Judicial review and court-mandated compliance stage",
+                "B": "Voluntary industry self-regulation stage",
+                "C": "Regulatory adjustment",
+                "D": "Public consultation and stakeholder lobbying stage"
+            },
+            "correct_option_label": "C",
+            "explanation": "Under the Lifecycle of Public Concern, once a policy issue leaves the political arena through the passing of legislation, it enters the regulatory adjustment stage where official guidelines and rules are codified.",
+            "module": 6
+        },
+        {
+            "question_id": "29",
+            "question_text": "An appliance manufacturer wants to mitigate liability for a washing machine that could injure users if opened during a spin cycle. Which action would MOST effectively reduce risk through product design?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Obtain third-party safety certification",
+                "B": "Affix prominent, standardized safety warning labels and detailed instructions",
+                "C": "Include a disclaimer limiting liability",
+                "D": "Implement an automatic door-lock sensor that prevents the machine from completing the cycle if the door is opened"
+            },
+            "correct_option_label": "D",
+            "explanation": "The most effective way to eliminate safety risks is through design-level safety features (such as interlocks or sensors) that physically prevent unsafe use, rather than relying on warnings, labels, or disclaimers.",
+            "module": 6
+        },
+        {
+            "question_id": "30",
+            "question_text": "What are the four core steps of a launch management system?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Demand forecasting, channel selection, pricing strategy, and post-launch customer satisfaction monitoring",
+                "B": "Setting sales targets, assigning regional managers, briefing the PR agency, and scheduling the launch event",
+                "C": "Concept screening, business analysis, product development, and test marketing",
+                "D": "Identifying potential problems, Tracking variables, Identifying trigger points, and Exercising contingency/remedial plans"
+            },
+            "correct_option_label": "D",
+            "explanation": "A robust launch management system consists of four steps: identifying potential problems, tracking tracking variables, identifying decision trigger points, and executing remedial contingency plans.",
+            "module": 6
+        },
+        {
+            "question_id": "31",
+            "question_text": "A budget gym chain X aims to attract busy working professionals who currently pay for premium, underutilized health clubs.\n\n• Question: Using the ERRC Grid (Eliminate, Reduce, Raise, Create), identify two high-cost traditional gym factors that X can completely eliminate to lower membership fees, and suggest one new convenience factor X should create to specifically target this segment?",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Under the ERRC framework, budget gym chain X can lower costs by completely eliminating expensive underutilized amenities (such as swimming pools or spa services) and personalized in-person personal trainers (replacing them with digital modules). To appeal to busy working professionals, the gym should create a new convenience factor: 24/7 keycard entry, allowing users to work out at any time without paying for round-the-clock administrative staff.",
+            "module": 5
+        },
+        {
+            "question_id": "32",
+            "question_text": "A tech brand is launching an entry-level smartphone in an emerging market. The R&D team suggests using highly fragile, cheap components to minimize retail prices.\n\n• Question: Evaluate this suggestion by contrasting a price-sensitive consumer with a value-conscious consumer. Which mindset is more likely to play out in emerging markets?",
+            "question_type": "SUBJECTIVE",
+            "explanation": "While price-sensitive buyers focus purely on the upfront purchase cost, emerging market consumers are primarily value-conscious. They calculate a strict price-performance equation, demanding long-term durability to minimize lifetime ownership costs. R&D's suggestion to use highly fragile components would fail because value-conscious buyers are willing to pay a premium for robust quality over a cheap product that breaks quickly and requires frequent, expensive repairs.",
+            "module": 5
         },
         {
             "question_id": "33",
@@ -467,11 +453,32 @@
             "module": 5
         },
         {
-            "question_id": "31",
-            "question_text": "A budget gym chain X aims to attract busy working professionals who currently pay for premium, underutilized health clubs.\n\n• Question: Using the ERRC Grid (Eliminate, Reduce, Raise, Create), identify two high-cost traditional gym factors that X can completely eliminate to lower membership fees, and suggest one new convenience factor X should create to specifically target this segment?",
+            "question_id": "35",
+            "question_text": "When launching a product with no latent demand, why is traditional market research unreliable? What role do free trials, channel partner education, and waiting for a market \"tipping point\" play in this strategy?",
             "question_type": "SUBJECTIVE",
-            "explanation": "Under the ERRC framework, budget gym chain X can lower costs by completely eliminating expensive underutilized amenities (such as swimming pools or spa services) and personalized in-person personal trainers (replacing them with digital modules). To appeal to busy working professionals, the gym should create a new convenience factor: 24/7 keycard entry, allowing users to work out at any time without paying for round-the-clock administrative staff.",
-            "module": 5
+            "explanation": "Traditional market research is unreliable when no latent demand exists because consumers struggle to evaluate or express preference for highly unfamiliar products they have never seen. To build such markets, firms must offer free trials to reduce the user's adoption risk, educate channel partners to properly demonstrate the product's unique benefits, and patiently maintain low-budget operations until consumer word-of-mouth reaches a market \"tipping point\" that drives mass adoption.",
+            "module": 4
+        },
+        {
+            "question_id": "36",
+            "question_text": "How can a company combine \"service enhancement\" (such as authorized warranties) with data encryption to protect a digital product against design and digital piracy when legal enforcement is weak?",
+            "question_type": "SUBJECTIVE",
+            "explanation": "When legal enforcement of intellectual property is weak, a company can secure its digital products by combining technical and service-oriented defenses. Technical access controls like robust data encryption prevent casual file-sharing, while bundling the product with exclusive, authorized post-purchase services—such as cloud syncing, automated software patches, and verified warranty support—provides unique, non-copyable value. This integrated approach ensures that pirated versions remain functionally inferior, deterring piracy.",
+            "module": 4
+        },
+        {
+            "question_id": "37",
+            "question_text": "How can a company leverage a \"Super Fan Community\" (like Adult Fans of Lego) to identify and bypass design-related product frustrations before a new product ever reaches the mass market?",
+            "question_type": "SUBJECTIVE",
+            "explanation": "A company can treat its passionate Super Fan Community as a highly engaged beta-testing panel. By distributing early-stage functional prototypes to these enthusiast users, the firm receives deep, contextual feedback on usability and structural vulnerabilities. Because super fans push products to their limits and have high domain knowledge, they can identify and help resolve complex user-related or designer-related frustrations early, ensuring a refined, error-free product reaches the broader mass market.",
+            "module": 2
+        },
+        {
+            "question_id": "38",
+            "question_text": "How can an industrial equipment manufacturer use an \"analogous market\" lead user to successfully design a product that fills a completely empty \"blue cell\" in their Buyer Utility Map?",
+            "question_type": "SUBJECTIVE",
+            "explanation": "An industrial equipment manufacturer can identify analogous industries that face similar mechanical or physical challenges but operate under different environmental conditions or performance scales. By studying how advanced users in these parallel markets solve their unique design constraints, the manufacturer can translate those insights to create a novel feature. This helps the firm introduce a unique utility (such as extreme risk reduction or simplification) that targets an unaddressed \"blue cell\" on their Buyer Utility Map, establishing an uncontested competitive space.",
+            "module": 2
         },
         {
             "question_id": "39",
@@ -479,13 +486,6 @@
             "question_type": "SUBJECTIVE",
             "explanation": "Balancing a product portfolio involves structural trade-offs between cash flow and survival. Short-term support products (basic internal combustion vehicles) require low investment and generate immediate revenue to keep the firm profitable, while long-term breakthroughs (EV development) consume massive capital with highly uncertain returns. To manage these risks, a product manager can use a Stage-Gate funnel to enforce objective Go/No-Go criteria at each checkpoint, ensuring that expensive EV platforms only receive further funding after meeting clear technical and commercial milestones.",
             "module": 8
-        },
-        {
-            "question_id": "32",
-            "question_text": "A tech brand is launching an entry-level smartphone in an emerging market. The R&D team suggests using highly fragile, cheap components to minimize retail prices.\n\n• Question: Evaluate this suggestion by contrasting a price-sensitive consumer with a value-conscious consumer. Which mindset is more likely to play out in emerging markets?",
-            "question_type": "SUBJECTIVE",
-            "explanation": "While price-sensitive buyers focus purely on the upfront purchase cost, emerging market consumers are primarily value-conscious. They calculate a strict price-performance equation, demanding long-term durability to minimize lifetime ownership costs. R&D's suggestion to use highly fragile components would fail because value-conscious buyers are willing to pay a premium for robust quality over a cheap product that breaks quickly and requires frequent, expensive repairs.",
-            "module": 5
         }
     ]
 }

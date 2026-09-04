@@ -7,6 +7,76 @@
     },
     "questions": [
         {
+            "question_id": "1",
+            "question_text": "A firm segments a market, selects a narrow target group, and designs its offering specifically to address unmet needs despite competitors serving the same group. This approach primarily reflects which strategic logic?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sales maximization",
+                "B": "Operational efficiency",
+                "C": "Differentiation through positioning",
+                "D": "Product orientation"
+            },
+            "correct_option_label": "C",
+            "explanation": "This mirrors the strategic framework of Segmentation, Targeting, and Positioning (STP), where the firm differentiates itself by crafting a unique value proposition for a targeted group.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "A marketer uses customer usage data to refine product features, adjusts pricing based on perceived value, and redesigns distribution channels for better access. These decisions collectively belong to which stage of the value delivery process?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Providing value",
+                "B": "Sustaining value",
+                "C": "Choosing value",
+                "D": "Communicating value"
+            },
+            "correct_option_label": "A",
+            "explanation": "Refining product features, managing pricing strategy, and arranging distribution channels are the core tactical elements of 'Providing Value'.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "An organization relies heavily on digital touchpoints to influence awareness, evaluation, purchase, and post-purchase sharing. Which concept best captures this integrated view?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Brand equity",
+                "B": "Market sensing",
+                "C": "Customer journey",
+                "D": "Value proposition"
+            },
+            "correct_option_label": "C",
+            "explanation": "The customer journey encompasses all the stages a user goes through (from pre-purchase awareness and evaluation to post-purchase advocacy) when interacting with a brand.",
+            "module": 2
+        },
+        {
+            "question_id": "4",
+            "question_text": "Which statement best differentiates marketing from selling?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Selling focuses on long-term value creation",
+                "B": "Marketing is limited to promotion activities",
+                "C": "Selling integrates multiple organizational functions",
+                "D": "Marketing begins with the target market, while selling begins with the product"
+            },
+            "correct_option_label": "D",
+            "explanation": "Marketing takes a customer-centric perspective starting with market needs, whereas selling adopts an internal perspective focusing on converting existing products into cash.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "Segmentation, targeting, and positioning are classified as strategic decisions primarily because they:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Directly influence promotional tactics",
+                "B": "Are easily observable by competitors",
+                "C": "Guide long-term allocation of resources",
+                "D": "Focus on short-term revenue outcomes"
+            },
+            "correct_option_label": "C",
+            "explanation": "STP decisions form the strategic foundation ('Choosing Value') that guides a firm's long-term business direction and asset deployment.",
+            "module": 1
+        },
+        {
             "question_id": "6",
             "question_text": "In the value delivery process, pricing decisions require the integration of:",
             "question_type": "MCQ",
@@ -21,6 +91,384 @@
             "module": 1
         },
         {
+            "question_id": "7",
+            "question_text": "Which element of the strategic marketing framework explicitly captures macro-level opportunities and threats?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Company capabilities",
+                "B": "Customers",
+                "C": "Collaborators",
+                "D": "Context"
+            },
+            "correct_option_label": "D",
+            "explanation": "The macro-environment—analyzed using frameworks like PESTEL (Political, Economic, Social, Technological, Environmental, Legal)—is represented by the 'Context' element of the 5Cs.",
+            "module": 1
+        },
+        {
+            "question_id": "8",
+            "question_text": "Positioning is most accurately described as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Differentiation for a chosen target segment",
+                "B": "Creating operational superiority",
+                "C": "Designing promotional messages",
+                "D": "Selecting the most profitable segment"
+            },
+            "correct_option_label": "A",
+            "explanation": "According to the strategic framework: Positioning = Targeting + Differentiation. It defines how a company establishes its brand uniquely inside the mind of the target audience.",
+            "module": 1
+        },
+        {
+            "question_id": "9",
+            "question_text": "Why are marketing mix decisions considered part of ‘action’ rather than ‘analysis’?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They precede segmentation decisions",
+                "B": "They operationalize strategic intent in the marketplace",
+                "C": "They are invisible to customers",
+                "D": "They are driven by intuition"
+            },
+            "correct_option_label": "B",
+            "explanation": "The marketing mix (4Ps/7Ps) consists of tactical execution elements that implement and communicate the overarching strategy chosen during the STP (strategic intent) phase.",
+            "module": 1
+        },
+        {
+            "question_id": "10",
+            "question_text": "Customer satisfaction is best viewed in the strategic marketing framework as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An outcome of value creation efforts",
+                "B": "A direct measure of firm valuation",
+                "C": "A substitute for profitability metrics",
+                "D": "An indicator of competitor weakness"
+            },
+            "correct_option_label": "A",
+            "explanation": "Customer satisfaction is the ultimate metric-based outcome indicating that the firm's strategic and tactical value delivery processes successfully met user expectations.",
+            "module": 1
+        },
+        {
+            "question_id": "11",
+            "question_text": "Which outcome reflects value created by customers for the firm?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customer satisfaction scores",
+                "B": "Market share volatility",
+                "C": "Brand awareness",
+                "D": "Revenue and profitability growth"
+            },
+            "correct_option_label": "D",
+            "explanation": "Customers create direct value for the firm when their interactions and loyalty translate into financial outcomes, specifically revenue and profit growth.",
+            "module": 1
+        },
+        {
+            "question_id": "12",
+            "question_text": "Digital technologies are considered strategic rather than purely tactical because they:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lower promotion costs",
+                "B": "Influence analysis, action, and outcomes simultaneously",
+                "C": "Operate only in online markets",
+                "D": "Replace traditional marketing channels"
+            },
+            "correct_option_label": "B",
+            "explanation": "Rather than functioning only as media distribution, digital tools reshape contextual insights (analysis), brand experiences (action), and customer metrics (outcomes).",
+            "module": 1
+        },
+        {
+            "question_id": "13",
+            "question_text": "A business model is best interpreted as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A snapshot of how value is created and captured",
+                "B": "A detailed operational plan",
+                "C": "A pricing optimization framework",
+                "D": "A competitor benchmarking tool"
+            },
+            "correct_option_label": "A",
+            "explanation": "A business model acts as a conceptual architecture outlining the core logic of how a firm designs, delivers, and captures economic or customer value.",
+            "module": 1
+        },
+        {
+            "question_id": "14",
+            "question_text": "A firm maps different customer journeys for distinct buyer personas and finds that the same touchpoint generates positive experience for one persona but negative for another. What should be the primary managerial response?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Standardize the experience across personas",
+                "B": "Increase promotional spending",
+                "C": "Eliminate the touchpoint",
+                "D": "Customize the touchpoint by persona"
+            },
+            "correct_option_label": "D",
+            "explanation": "Because different customer segments (personas) evaluate interactions using distinct criteria, customizing the touchpoint prevents negative experiences for sensitive groups.",
+            "module": 2
+        },
+        {
+            "question_id": "15",
+            "question_text": "During customer journey analysis, a firm observes high drop-offs between search and purchase. Which stage requires immediate diagnostic focus?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Evaluation and conversion",
+                "B": "Post-purchase engagement",
+                "C": "Loyalty reinforcement",
+                "D": "Need recognition"
+            },
+            "correct_option_label": "A",
+            "explanation": "A significant drop-off between search (active intent) and the final transaction (purchase) highlights friction during the intermediate evaluation and checkout stages.",
+            "module": 2
+        },
+        {
+            "question_id": "16",
+            "question_text": "A marketer identifies several negative moments of truth occurring after purchase. Addressing these would most directly improve:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Brand awareness",
+                "B": "Customer acquisition",
+                "C": "Customer retention",
+                "D": "Market penetration"
+            },
+            "correct_option_label": "C",
+            "explanation": "Post-purchase friction damages satisfaction. Fixing these post-purchase gaps directly drives long-term customer loyalty and retention.",
+            "module": 2
+        },
+        {
+            "question_id": "17",
+            "question_text": "A company adds multiple digital touchpoints but fails to monitor customer experience across them. What is the most likely outcome?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Improved brand clarity",
+                "B": "Higher operational efficiency",
+                "C": "Lower cost of service",
+                "D": "Inconsistent customer experiences"
+            },
+            "correct_option_label": "D",
+            "explanation": "Adding channels without cross-channel orchestration and tracking results in fragmented, inconsistent experiences that dilute the overall brand equity.",
+            "module": 2
+        },
+        {
+            "question_id": "18",
+            "question_text": "A buyer persona is best described as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A generalized market segment description",
+                "B": "A detailed representation of a target customer archetype",
+                "C": "A demographic profile only",
+                "D": "A real customer chosen for interviews"
+            },
+            "correct_option_label": "B",
+            "explanation": "A buyer persona is a detailed, semi-fictional archetype of a company's target customer built using actual data and behavioral patterns.",
+            "module": 2
+        },
+        {
+            "question_id": "19",
+            "question_text": "Touchpoints are defined as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only digital interfaces",
+                "B": "Any interaction between customer and brand before, during, or after purchase",
+                "C": "Only paid communication channels",
+                "D": "Moments when customers purchase products"
+            },
+            "correct_option_label": "B",
+            "explanation": "Touchpoints represent any and all instances where a customer interacts with a brand across their entire pre-purchase, purchase, and post-purchase stages.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "The primary objective of customer journey mapping is to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduce service costs",
+                "B": "Increase promotional efficiency",
+                "C": "Identify and improve customer experiences across stages",
+                "D": "Standardize communication"
+            },
+            "correct_option_label": "C",
+            "explanation": "Journey mapping serves as a diagnostic tool to visualize the holistic user experience, helping brands find and fix friction points.",
+            "module": 2
+        },
+        {
+            "question_id": "21",
+            "question_text": "Zero Moment of Truth (ZMOT) primarily occurs when customers:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Search for information before purchase",
+                "B": "Provide feedback after use",
+                "C": "Use the product for the first time",
+                "D": "Interact with sales personnel"
+            },
+            "correct_option_label": "A",
+            "explanation": "Coined by Google, ZMOT represents the critical research phase when consumers search for information, read reviews, and evaluate options online before purchase.",
+            "module": 2
+        },
+        {
+            "question_id": "22",
+            "question_text": "First Moment of Truth most closely corresponds to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Long-term loyalty formation",
+                "B": "Evaluation and purchase interaction",
+                "C": "Need recognition",
+                "D": "Post-purchase advocacy"
+            },
+            "correct_option_label": "B",
+            "explanation": "The First Moment of Truth (FMOT) is the initial point of physical or digital contact a buyer has with the product or salesperson, deciding their evaluation and purchase intent.",
+            "module": 2
+        },
+        {
+            "question_id": "23",
+            "question_text": "Second Moment of Truth is primarily associated with:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product usage and experience",
+                "B": "Retail shelf visibility",
+                "C": "Price comparison",
+                "D": "Brand awareness creation"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Second Moment of Truth (SMOT) represents the ongoing usage experience, where the customer evaluates if the product lived up to marketing expectations.",
+            "module": 2
+        },
+        {
+            "question_id": "24",
+            "question_text": "Why is customer journey mapping considered a dynamic process?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customer needs are static",
+                "B": "Touchpoints change and customer expectations evolve",
+                "C": "It is conducted once during launch",
+                "D": "It focuses only on digital channels"
+            },
+            "correct_option_label": "B",
+            "explanation": "Customer journey mapping must be continuously updated because consumer behavior changes, new channels emerge, and user expectations shift over time.",
+            "module": 2
+        },
+        {
+            "question_id": "25",
+            "question_text": "Negative experiences at critical touchpoints are strategically important because they:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Have disproportionate impact on overall brand perception",
+                "B": "Only affect short-term sales",
+                "C": "Increase switching costs",
+                "D": "Are unavoidable in competitive markets"
+            },
+            "correct_option_label": "A",
+            "explanation": "A single bad experience (particularly at critical moments like customer service or purchase checkout) can easily override multiple positive touchpoints and permanently damage brand loyalty.",
+            "module": 2
+        },
+        {
+            "question_id": "26",
+            "question_text": "Which insight best explains why firms should track customer experiences across channels?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customers prefer more channels",
+                "B": "Digital channels are cheaper",
+                "C": "Customer perception is shaped by cumulative experiences",
+                "D": "Channels operate independently"
+            },
+            "correct_option_label": "C",
+            "explanation": "A brand's image is not evaluated on isolated interactions; customers synthesize their cumulative experiences across all digital and physical channels.",
+            "module": 2
+        },
+        {
+            "question_id": "27",
+            "question_text": "A manager reallocates budget toward channels that show high click-through rates without considering downstream conversions. Which risk is most likely?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Underestimating reach",
+                "B": "Focusing on vanity metrics",
+                "C": "Ignoring frequency effects",
+                "D": "Overestimating brand equity"
+            },
+            "correct_option_label": "B",
+            "explanation": "Click-through rates (CTR) are empty if they do not lead to meaningful downstream conversions or revenue. Relying solely on them is a classic case of prioritizing vanity metrics over performance.",
+            "module": 8
+        },
+        {
+            "question_id": "28",
+            "question_text": "A firm observes that online advertising increases offline sales even when online conversions remain flat. Which phenomenon best explains this outcome?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Channel cannibalization",
+                "B": "Attribution noise",
+                "C": "Cross-channel spillover effects",
+                "D": "Search bias"
+            },
+            "correct_option_label": "C",
+            "explanation": "This represents a cross-channel spillover or 'webrooming' effect, where digital ad exposure stimulates buying intent that is ultimately captured at a physical retail outlet.",
+            "module": 3
+        },
+        {
+            "question_id": "29",
+            "question_text": "A campaign generates strong impressions and clicks but attracts customers who churn quickly. Which metric should the firm prioritize to correct this issue?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Cost per click",
+                "B": "Customer lifetime value",
+                "C": "Impression share",
+                "D": "Reach frequency"
+            },
+            "correct_option_label": "B",
+            "explanation": "When quick churn ruins short-term gains, optimization must pivot from click volume to Customer Lifetime Value (CLV), tracking downstream loyalty instead of top-funnel metrics.",
+            "module": 2
+        },
+        {
+            "question_id": "30",
+            "question_text": "Which metric best reflects long-term value creation rather than short-term response?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Click-through rate",
+                "B": "Impression count",
+                "C": "Cost per acquisition",
+                "D": "Customer lifetime value"
+            },
+            "correct_option_label": "D",
+            "explanation": "Customer Lifetime Value (CLV) calculates the total net profit attributed to the entire ongoing relationship with a customer, reflecting long-term relationship value rather than a single interaction.",
+            "module": 2
+        },
+        {
+            "question_id": "31",
+            "question_text": "Marketing mix models are particularly useful because they:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Focus only on digital channels",
+                "B": "Incorporate multiple marketing variables simultaneously",
+                "C": "Attribute outcomes to a single medium",
+                "D": "Eliminate the need for experiments"
+            },
+            "correct_option_label": "B",
+            "explanation": "Marketing Mix Modeling (MMM) uses regression-based statistical techniques to analyze the simultaneous impact of multiple variables (price, promotions, offline, and online channels) on overall sales.",
+            "module": 6
+        },
+        {
+            "question_id": "32",
+            "question_text": "Why is it problematic to evaluate channels in isolation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Offline media lacks metrics",
+                "B": "Consumers are exposed to multiple touchpoints",
+                "C": "Channels differ in cost structures",
+                "D": "Digital media dominates attention"
+            },
+            "correct_option_label": "B",
+            "explanation": "Evaluating channels in isolation ignores the integrated nature of the consumer journey, where multiple touchpoints collaboratively guide a prospect toward conversion.",
+            "module": 2
+        },
+        {
+            "question_id": "33",
+            "question_text": "Which principle best guides effective budget allocation across media?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Prioritizing easily measurable media",
+                "B": "Equal spending across channels",
+                "C": "Considering both effectiveness and efficiency",
+                "D": "Maximizing clicks per channel"
+            },
+            "correct_option_label": "C",
+            "explanation": "Budget allocation must optimize effectiveness (achieving desired campaign goals/impact) alongside efficiency (minimizing waste and cost per action).",
+            "module": 3
+        },
+        {
             "question_id": "34",
             "question_text": "Performance marketing emphasizes experimentation because:",
             "question_type": "MCQ",
@@ -33,6 +481,20 @@
             "correct_option_label": "C",
             "explanation": "In digital performance marketing, continuous optimization and small, iterative adjustments (such as A/B testing) can significantly improve click-through and conversion rates.",
             "module": 8
+        },
+        {
+            "question_id": "35",
+            "question_text": "The main limitation of last-click attribution is that it:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Overstates early-stage influence",
+                "B": "Is difficult to implement",
+                "C": "Ignores upper-funnel contributions",
+                "D": "Requires complex modeling"
+            },
+            "correct_option_label": "C",
+            "explanation": "Last-click attribution awards 100% of conversion credit to the final step, ignoring all the top-and-middle funnel touchpoints (like awareness ads) that initiated the interest.",
+            "module": 3
         },
         {
             "question_id": "36",
@@ -63,342 +525,6 @@
             "module": 8
         },
         {
-            "question_id": "25",
-            "question_text": "Negative experiences at critical touchpoints are strategically important because they:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Have disproportionate impact on overall brand perception",
-                "B": "Only affect short-term sales",
-                "C": "Increase switching costs",
-                "D": "Are unavoidable in competitive markets"
-            },
-            "correct_option_label": "A",
-            "explanation": "A single bad experience (particularly at critical moments like customer service or purchase checkout) can easily override multiple positive touchpoints and permanently damage brand loyalty.",
-            "module": 2
-        },
-        {
-            "question_id": "24",
-            "question_text": "Why is customer journey mapping considered a dynamic process?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Customer needs are static",
-                "B": "Touchpoints change and customer expectations evolve",
-                "C": "It is conducted once during launch",
-                "D": "It focuses only on digital channels"
-            },
-            "correct_option_label": "B",
-            "explanation": "Customer journey mapping must be continuously updated because consumer behavior changes, new channels emerge, and user expectations shift over time.",
-            "module": 2
-        },
-        {
-            "question_id": "9",
-            "question_text": "Why are marketing mix decisions considered part of ‘action’ rather than ‘analysis’?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "They precede segmentation decisions",
-                "B": "They operationalize strategic intent in the marketplace",
-                "C": "They are invisible to customers",
-                "D": "They are driven by intuition"
-            },
-            "correct_option_label": "B",
-            "explanation": "The marketing mix (4Ps/7Ps) consists of tactical execution elements that implement and communicate the overarching strategy chosen during the STP (strategic intent) phase.",
-            "module": 1
-        },
-        {
-            "question_id": "27",
-            "question_text": "A manager reallocates budget toward channels that show high click-through rates without considering downstream conversions. Which risk is most likely?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Underestimating reach",
-                "B": "Focusing on vanity metrics",
-                "C": "Ignoring frequency effects",
-                "D": "Overestimating brand equity"
-            },
-            "correct_option_label": "B",
-            "explanation": "Click-through rates (CTR) are empty if they do not lead to meaningful downstream conversions or revenue. Relying solely on them is a classic case of prioritizing vanity metrics over performance.",
-            "module": 8
-        },
-        {
-            "question_id": "3",
-            "question_text": "An organization relies heavily on digital touchpoints to influence awareness, evaluation, purchase, and post-purchase sharing. Which concept best captures this integrated view?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Brand equity",
-                "B": "Market sensing",
-                "C": "Customer journey",
-                "D": "Value proposition"
-            },
-            "correct_option_label": "C",
-            "explanation": "The customer journey encompasses all the stages a user goes through (from pre-purchase awareness and evaluation to post-purchase advocacy) when interacting with a brand.",
-            "module": 2
-        },
-        {
-            "question_id": "31",
-            "question_text": "Marketing mix models are particularly useful because they:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Focus only on digital channels",
-                "B": "Incorporate multiple marketing variables simultaneously",
-                "C": "Attribute outcomes to a single medium",
-                "D": "Eliminate the need for experiments"
-            },
-            "correct_option_label": "B",
-            "explanation": "Marketing Mix Modeling (MMM) uses regression-based statistical techniques to analyze the simultaneous impact of multiple variables (price, promotions, offline, and online channels) on overall sales.",
-            "module": 6
-        },
-        {
-            "question_id": "30",
-            "question_text": "Which metric best reflects long-term value creation rather than short-term response?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Click-through rate",
-                "B": "Impression count",
-                "C": "Cost per acquisition",
-                "D": "Customer lifetime value"
-            },
-            "correct_option_label": "D",
-            "explanation": "Customer Lifetime Value (CLV) calculates the total net profit attributed to the entire ongoing relationship with a customer, reflecting long-term relationship value rather than a single interaction.",
-            "module": 2
-        },
-        {
-            "question_id": "1",
-            "question_text": "A firm segments a market, selects a narrow target group, and designs its offering specifically to address unmet needs despite competitors serving the same group. This approach primarily reflects which strategic logic?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Sales maximization",
-                "B": "Operational efficiency",
-                "C": "Differentiation through positioning",
-                "D": "Product orientation"
-            },
-            "correct_option_label": "C",
-            "explanation": "This mirrors the strategic framework of Segmentation, Targeting, and Positioning (STP), where the firm differentiates itself by crafting a unique value proposition for a targeted group.",
-            "module": 1
-        },
-        {
-            "question_id": "13",
-            "question_text": "A business model is best interpreted as:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "A snapshot of how value is created and captured",
-                "B": "A detailed operational plan",
-                "C": "A pricing optimization framework",
-                "D": "A competitor benchmarking tool"
-            },
-            "correct_option_label": "A",
-            "explanation": "A business model acts as a conceptual architecture outlining the core logic of how a firm designs, delivers, and captures economic or customer value.",
-            "module": 1
-        },
-        {
-            "question_id": "8",
-            "question_text": "Positioning is most accurately described as:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Differentiation for a chosen target segment",
-                "B": "Creating operational superiority",
-                "C": "Designing promotional messages",
-                "D": "Selecting the most profitable segment"
-            },
-            "correct_option_label": "A",
-            "explanation": "According to the strategic framework: Positioning = Targeting + Differentiation. It defines how a company establishes its brand uniquely inside the mind of the target audience.",
-            "module": 1
-        },
-        {
-            "question_id": "11",
-            "question_text": "Which outcome reflects value created by customers for the firm?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Customer satisfaction scores",
-                "B": "Market share volatility",
-                "C": "Brand awareness",
-                "D": "Revenue and profitability growth"
-            },
-            "correct_option_label": "D",
-            "explanation": "Customers create direct value for the firm when their interactions and loyalty translate into financial outcomes, specifically revenue and profit growth.",
-            "module": 1
-        },
-        {
-            "question_id": "7",
-            "question_text": "Which element of the strategic marketing framework explicitly captures macro-level opportunities and threats?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Company capabilities",
-                "B": "Customers",
-                "C": "Collaborators",
-                "D": "Context"
-            },
-            "correct_option_label": "D",
-            "explanation": "The macro-environment—analyzed using frameworks like PESTEL (Political, Economic, Social, Technological, Environmental, Legal)—is represented by the 'Context' element of the 5Cs.",
-            "module": 1
-        },
-        {
-            "question_id": "4",
-            "question_text": "Which statement best differentiates marketing from selling?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Selling focuses on long-term value creation",
-                "B": "Marketing is limited to promotion activities",
-                "C": "Selling integrates multiple organizational functions",
-                "D": "Marketing begins with the target market, while selling begins with the product"
-            },
-            "correct_option_label": "D",
-            "explanation": "Marketing takes a customer-centric perspective starting with market needs, whereas selling adopts an internal perspective focusing on converting existing products into cash.",
-            "module": 1
-        },
-        {
-            "question_id": "15",
-            "question_text": "During customer journey analysis, a firm observes high drop-offs between search and purchase. Which stage requires immediate diagnostic focus?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Evaluation and conversion",
-                "B": "Post-purchase engagement",
-                "C": "Loyalty reinforcement",
-                "D": "Need recognition"
-            },
-            "correct_option_label": "A",
-            "explanation": "A significant drop-off between search (active intent) and the final transaction (purchase) highlights friction during the intermediate evaluation and checkout stages.",
-            "module": 2
-        },
-        {
-            "question_id": "33",
-            "question_text": "Which principle best guides effective budget allocation across media?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Prioritizing easily measurable media",
-                "B": "Equal spending across channels",
-                "C": "Considering both effectiveness and efficiency",
-                "D": "Maximizing clicks per channel"
-            },
-            "correct_option_label": "C",
-            "explanation": "Budget allocation must optimize effectiveness (achieving desired campaign goals/impact) alongside efficiency (minimizing waste and cost per action).",
-            "module": 3
-        },
-        {
-            "question_id": "22",
-            "question_text": "First Moment of Truth most closely corresponds to:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Long-term loyalty formation",
-                "B": "Evaluation and purchase interaction",
-                "C": "Need recognition",
-                "D": "Post-purchase advocacy"
-            },
-            "correct_option_label": "B",
-            "explanation": "The First Moment of Truth (FMOT) is the initial point of physical or digital contact a buyer has with the product or salesperson, deciding their evaluation and purchase intent.",
-            "module": 2
-        },
-        {
-            "question_id": "28",
-            "question_text": "A firm observes that online advertising increases offline sales even when online conversions remain flat. Which phenomenon best explains this outcome?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Channel cannibalization",
-                "B": "Attribution noise",
-                "C": "Cross-channel spillover effects",
-                "D": "Search bias"
-            },
-            "correct_option_label": "C",
-            "explanation": "This represents a cross-channel spillover or 'webrooming' effect, where digital ad exposure stimulates buying intent that is ultimately captured at a physical retail outlet.",
-            "module": 3
-        },
-        {
-            "question_id": "19",
-            "question_text": "Touchpoints are defined as:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Only digital interfaces",
-                "B": "Any interaction between customer and brand before, during, or after purchase",
-                "C": "Only paid communication channels",
-                "D": "Moments when customers purchase products"
-            },
-            "correct_option_label": "B",
-            "explanation": "Touchpoints represent any and all instances where a customer interacts with a brand across their entire pre-purchase, purchase, and post-purchase stages.",
-            "module": 2
-        },
-        {
-            "question_id": "40",
-            "question_text": "Digital transformation is fundamentally about:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Reducing marketing budgets",
-                "B": "Strategic and continuous change enabled by digital technologies",
-                "C": "Replacing all human tasks with automation",
-                "D": "Digitizing files and records"
-            },
-            "correct_option_label": "B",
-            "explanation": "Unlike simple digitization or digitalization, digital transformation is a holistic, continuous, and strategic restructuring of business models and processes to deliver ongoing value.",
-            "module": 1
-        },
-        {
-            "question_id": "18",
-            "question_text": "A buyer persona is best described as:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "A generalized market segment description",
-                "B": "A detailed representation of a target customer archetype",
-                "C": "A demographic profile only",
-                "D": "A real customer chosen for interviews"
-            },
-            "correct_option_label": "B",
-            "explanation": "A buyer persona is a detailed, semi-fictional archetype of a company's target customer built using actual data and behavioral patterns.",
-            "module": 2
-        },
-        {
-            "question_id": "26",
-            "question_text": "Which insight best explains why firms should track customer experiences across channels?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Customers prefer more channels",
-                "B": "Digital channels are cheaper",
-                "C": "Customer perception is shaped by cumulative experiences",
-                "D": "Channels operate independently"
-            },
-            "correct_option_label": "C",
-            "explanation": "A brand's image is not evaluated on isolated interactions; customers synthesize their cumulative experiences across all digital and physical channels.",
-            "module": 2
-        },
-        {
-            "question_id": "21",
-            "question_text": "Zero Moment of Truth (ZMOT) primarily occurs when customers:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Search for information before purchase",
-                "B": "Provide feedback after use",
-                "C": "Use the product for the first time",
-                "D": "Interact with sales personnel"
-            },
-            "correct_option_label": "A",
-            "explanation": "Coined by Google, ZMOT represents the critical research phase when consumers search for information, read reviews, and evaluate options online before purchase.",
-            "module": 2
-        },
-        {
-            "question_id": "32",
-            "question_text": "Why is it problematic to evaluate channels in isolation?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Offline media lacks metrics",
-                "B": "Consumers are exposed to multiple touchpoints",
-                "C": "Channels differ in cost structures",
-                "D": "Digital media dominates attention"
-            },
-            "correct_option_label": "B",
-            "explanation": "Evaluating channels in isolation ignores the integrated nature of the consumer journey, where multiple touchpoints collaboratively guide a prospect toward conversion.",
-            "module": 2
-        },
-        {
-            "question_id": "35",
-            "question_text": "The main limitation of last-click attribution is that it:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Overstates early-stage influence",
-                "B": "Is difficult to implement",
-                "C": "Ignores upper-funnel contributions",
-                "D": "Requires complex modeling"
-            },
-            "correct_option_label": "C",
-            "explanation": "Last-click attribution awards 100% of conversion credit to the final step, ignoring all the top-and-middle funnel touchpoints (like awareness ads) that initiated the interest.",
-            "module": 3
-        },
-        {
             "question_id": "38",
             "question_text": "In the attraction-conversion-retention framework, retention primarily aims to:",
             "question_type": "MCQ",
@@ -411,132 +537,6 @@
             "correct_option_label": "D",
             "explanation": "Customer retention drives long-term profitability by securing repeat business, which is significantly cheaper than constantly paying to acquire new, cold traffic.",
             "module": 8
-        },
-        {
-            "question_id": "20",
-            "question_text": "The primary objective of customer journey mapping is to:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Reduce service costs",
-                "B": "Increase promotional efficiency",
-                "C": "Identify and improve customer experiences across stages",
-                "D": "Standardize communication"
-            },
-            "correct_option_label": "C",
-            "explanation": "Journey mapping serves as a diagnostic tool to visualize the holistic user experience, helping brands find and fix friction points.",
-            "module": 2
-        },
-        {
-            "question_id": "29",
-            "question_text": "A campaign generates strong impressions and clicks but attracts customers who churn quickly. Which metric should the firm prioritize to correct this issue?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Cost per click",
-                "B": "Customer lifetime value",
-                "C": "Impression share",
-                "D": "Reach frequency"
-            },
-            "correct_option_label": "B",
-            "explanation": "When quick churn ruins short-term gains, optimization must pivot from click volume to Customer Lifetime Value (CLV), tracking downstream loyalty instead of top-funnel metrics.",
-            "module": 2
-        },
-        {
-            "question_id": "12",
-            "question_text": "Digital technologies are considered strategic rather than purely tactical because they:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Lower promotion costs",
-                "B": "Influence analysis, action, and outcomes simultaneously",
-                "C": "Operate only in online markets",
-                "D": "Replace traditional marketing channels"
-            },
-            "correct_option_label": "B",
-            "explanation": "Rather than functioning only as media distribution, digital tools reshape contextual insights (analysis), brand experiences (action), and customer metrics (outcomes).",
-            "module": 1
-        },
-        {
-            "question_id": "2",
-            "question_text": "A marketer uses customer usage data to refine product features, adjusts pricing based on perceived value, and redesigns distribution channels for better access. These decisions collectively belong to which stage of the value delivery process?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Providing value",
-                "B": "Sustaining value",
-                "C": "Choosing value",
-                "D": "Communicating value"
-            },
-            "correct_option_label": "A",
-            "explanation": "Refining product features, managing pricing strategy, and arranging distribution channels are the core tactical elements of 'Providing Value'.",
-            "module": 1
-        },
-        {
-            "question_id": "14",
-            "question_text": "A firm maps different customer journeys for distinct buyer personas and finds that the same touchpoint generates positive experience for one persona but negative for another. What should be the primary managerial response?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Standardize the experience across personas",
-                "B": "Increase promotional spending",
-                "C": "Eliminate the touchpoint",
-                "D": "Customize the touchpoint by persona"
-            },
-            "correct_option_label": "D",
-            "explanation": "Because different customer segments (personas) evaluate interactions using distinct criteria, customizing the touchpoint prevents negative experiences for sensitive groups.",
-            "module": 2
-        },
-        {
-            "question_id": "10",
-            "question_text": "Customer satisfaction is best viewed in the strategic marketing framework as:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "An outcome of value creation efforts",
-                "B": "A direct measure of firm valuation",
-                "C": "A substitute for profitability metrics",
-                "D": "An indicator of competitor weakness"
-            },
-            "correct_option_label": "A",
-            "explanation": "Customer satisfaction is the ultimate metric-based outcome indicating that the firm's strategic and tactical value delivery processes successfully met user expectations.",
-            "module": 1
-        },
-        {
-            "question_id": "17",
-            "question_text": "A company adds multiple digital touchpoints but fails to monitor customer experience across them. What is the most likely outcome?",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Improved brand clarity",
-                "B": "Higher operational efficiency",
-                "C": "Lower cost of service",
-                "D": "Inconsistent customer experiences"
-            },
-            "correct_option_label": "D",
-            "explanation": "Adding channels without cross-channel orchestration and tracking results in fragmented, inconsistent experiences that dilute the overall brand equity.",
-            "module": 2
-        },
-        {
-            "question_id": "23",
-            "question_text": "Second Moment of Truth is primarily associated with:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Product usage and experience",
-                "B": "Retail shelf visibility",
-                "C": "Price comparison",
-                "D": "Brand awareness creation"
-            },
-            "correct_option_label": "A",
-            "explanation": "The Second Moment of Truth (SMOT) represents the ongoing usage experience, where the customer evaluates if the product lived up to marketing expectations.",
-            "module": 2
-        },
-        {
-            "question_id": "16",
-            "question_text": "A marketer identifies several negative moments of truth occurring after purchase. Addressing these would most directly improve:",
-            "question_type": "MCQ",
-            "options": {
-                "A": "Brand awareness",
-                "B": "Customer acquisition",
-                "C": "Customer retention",
-                "D": "Market penetration"
-            },
-            "correct_option_label": "C",
-            "explanation": "Post-purchase friction damages satisfaction. Fixing these post-purchase gaps directly drives long-term customer loyalty and retention.",
-            "module": 2
         },
         {
             "question_id": "39",
@@ -553,25 +553,18 @@
             "module": 1
         },
         {
-            "question_id": "5",
-            "question_text": "Segmentation, targeting, and positioning are classified as strategic decisions primarily because they:",
+            "question_id": "40",
+            "question_text": "Digital transformation is fundamentally about:",
             "question_type": "MCQ",
             "options": {
-                "A": "Directly influence promotional tactics",
-                "B": "Are easily observable by competitors",
-                "C": "Guide long-term allocation of resources",
-                "D": "Focus on short-term revenue outcomes"
+                "A": "Reducing marketing budgets",
+                "B": "Strategic and continuous change enabled by digital technologies",
+                "C": "Replacing all human tasks with automation",
+                "D": "Digitizing files and records"
             },
-            "correct_option_label": "C",
-            "explanation": "STP decisions form the strategic foundation ('Choosing Value') that guides a firm's long-term business direction and asset deployment.",
+            "correct_option_label": "B",
+            "explanation": "Unlike simple digitization or digitalization, digital transformation is a holistic, continuous, and strategic restructuring of business models and processes to deliver ongoing value.",
             "module": 1
-        },
-        {
-            "question_id": "44",
-            "question_text": "Discuss the role of customer understanding in digital marketing. How does the analysis of audience behavior deepen engagement and improve the efficiency of digital marketing campaigns? Support your answer with examples of how different types of data (e.g., search behavior, social engagement) inform marketing decisions.",
-            "question_type": "SUBJECTIVE",
-            "explanation": "Understanding target customer archetypes is critical to optimize ad-spend, improve conversion efficiency, and avoid resource waste. By analyzing behavioral data—such as search history (ZMOT indicators) and social engagement loops (brand advocacy)—firms can craft timely, personalized messaging (e.g., WhatsApp prompts for grocery repeat cycles before a user switches to competitors due to price differences). This ensures strategic alignment between brand value and actual customer needs.",
-            "module": 2
         },
         {
             "question_id": "41",
@@ -579,13 +572,6 @@
             "question_type": "SUBJECTIVE",
             "explanation": "Digital technologies serve as strategic drivers across all value delivery stages:\n1. **Choosing Value:** Big data and behavioral clickstream analytics construct accurate buyer personas and isolate market niches.\n2. **Providing Value:** Optimization tools like on-site SEO and dynamic pricing align digital features with value expectations.\n3. **Communicating Value:** Integrated multichannel campaigns (IMC) and target search advertising deliver highly coherent brand stories.\n4. **Sustaining Value:** Machine-learning CRM analytics track ongoing usage trends, facilitating feature iterations and proactive customer service loops.",
             "module": 1
-        },
-        {
-            "question_id": "45",
-            "question_text": "Explain how a digital marketing strategy integrates multiple online channels (such as SEO, social media, email marketing, and paid advertising) to achieve both brand awareness and customer conversion goals. In your answer, describe how channel selection and sequencing impact overall campaign effectiveness",
-            "question_type": "SUBJECTIVE",
-            "explanation": "A balanced digital strategy sequences channels to transition customers smoothly through the funnel. Top-of-funnel channels (Paid Ads and Social Media) build brand awareness. When users demonstrate active intent, Search Engine Optimization (SEO) catches their research at ZMOT. Finally, mid-to-bottom-funnel channels (personalized Emails or automated WhatsApp discounts) drive customer conversion and loyalty. Selecting the wrong channel sequence (e.g., emailing children's toys instead of using interactive visual social channels) dilutes effectiveness.",
-            "module": 4
         },
         {
             "question_id": "42",
@@ -599,6 +585,20 @@
             "question_text": "What is inbound marketing, and how does it differ from outbound marketing in the digital context?",
             "question_type": "SUBJECTIVE",
             "explanation": "Inbound marketing focuses on 'pull' tactics, using valuable content (blogs, tutorials, organic SEO, communities, or customer-generated reviews) to naturally attract users to a brand's owned digital assets when they seek answers. In contrast, outbound marketing consists of proactive 'push' tactics where the firm initiates the message (e.g., programmatic display ads, paid search bidding, cold emails) to capture immediate attention, which incurs direct acquisition costs and interruptive user experiences.",
+            "module": 4
+        },
+        {
+            "question_id": "44",
+            "question_text": "Discuss the role of customer understanding in digital marketing. How does the analysis of audience behavior deepen engagement and improve the efficiency of digital marketing campaigns? Support your answer with examples of how different types of data (e.g., search behavior, social engagement) inform marketing decisions.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Understanding target customer archetypes is critical to optimize ad-spend, improve conversion efficiency, and avoid resource waste. By analyzing behavioral data—such as search history (ZMOT indicators) and social engagement loops (brand advocacy)—firms can craft timely, personalized messaging (e.g., WhatsApp prompts for grocery repeat cycles before a user switches to competitors due to price differences). This ensures strategic alignment between brand value and actual customer needs.",
+            "module": 2
+        },
+        {
+            "question_id": "45",
+            "question_text": "Explain how a digital marketing strategy integrates multiple online channels (such as SEO, social media, email marketing, and paid advertising) to achieve both brand awareness and customer conversion goals. In your answer, describe how channel selection and sequencing impact overall campaign effectiveness",
+            "question_type": "SUBJECTIVE",
+            "explanation": "A balanced digital strategy sequences channels to transition customers smoothly through the funnel. Top-of-funnel channels (Paid Ads and Social Media) build brand awareness. When users demonstrate active intent, Search Engine Optimization (SEO) catches their research at ZMOT. Finally, mid-to-bottom-funnel channels (personalized Emails or automated WhatsApp discounts) drive customer conversion and loyalty. Selecting the wrong channel sequence (e.g., emailing children's toys instead of using interactive visual social channels) dilutes effectiveness.",
             "module": 4
         }
     ]
