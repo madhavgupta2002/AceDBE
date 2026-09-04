@@ -67,18 +67,43 @@ function effectiveGrade(s: ParsedSubject): string {
     return '';
 }
 
-// Credit-weighted GPA across the given subjects (null if no graded credits).
-function gpaFor(subjects: ParsedSubject[]): { gpa: number | null; credits: number; totalPoints: number } {
-    let weighted = 0;
+// Credit-weighted GPA and Percentage (WAM) across the given subjects.
+// WAM Formula: sum(Marks Obtained * Course Credits) / sum(Course Credits)
+function gpaFor(subjects: ParsedSubject[]): {
+    gpa: number | null;
+    percentage: number | null;
+    credits: number;
+    totalPoints: number;
+    wamCredits: number;
+} {
+    let weightedPoints = 0;
     let credits = 0;
+    let weightedMarks = 0;
+    let wamCredits = 0;
+
     for (const s of subjects) {
         const cr = s.match?.credits ?? 0;
+        if (cr === 0) continue;
+
         const pts = pointsFor(s);
-        if (pts === null || cr === 0) continue;
-        weighted += pts * cr;
-        credits += cr;
+        if (pts !== null) {
+            weightedPoints += pts * cr;
+            credits += cr;
+        }
+
+        if (s.total !== null && !Number.isNaN(s.total)) {
+            weightedMarks += s.total * cr;
+            wamCredits += cr;
+        }
     }
-    return { gpa: credits > 0 ? weighted / credits : null, credits, totalPoints: weighted };
+
+    return {
+        gpa: credits > 0 ? weightedPoints / credits : null,
+        percentage: wamCredits > 0 ? weightedMarks / wamCredits : null,
+        credits: credits > 0 ? credits : wamCredits,
+        totalPoints: weightedPoints,
+        wamCredits,
+    };
 }
 
 const YEARS = [
@@ -469,9 +494,27 @@ export default function MarksPage() {
 
                                     return (
                                         <div key={year.year} className="bg-white rounded-lg shadow-lg border border-slate-300 p-6 sm:p-8 space-y-6 text-black">
-                                            <div className="text-center border-b border-slate-300 pb-2 mb-4">
-                                                <div className="text-xs font-bold text-slate-500 uppercase tracking-widest">
-                                                    Page {year.year} · {year.label}
+                                            {/* Marksheet Top Header */}
+                                            <div className="border-b-2 border-black pb-3 mb-4 flex flex-wrap items-center justify-between gap-3 text-black">
+                                                <div>
+                                                    <h2 className="text-sm sm:text-base font-bold tracking-wider uppercase text-black">Statement of Marks</h2>
+                                                    <p className="text-[11px] text-neutral-600">Batch {selectedBatch} · {year.label}</p>
+                                                </div>
+                                                <div className="flex items-center gap-5 text-right">
+                                                    <div>
+                                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">CGPA</span>
+                                                        <span className="text-sm sm:text-base font-extrabold font-mono text-black">{overall.gpa === null ? '—' : overall.gpa.toFixed(2)}</span>
+                                                    </div>
+                                                    <div className="h-6 w-px bg-neutral-300" />
+                                                    <div>
+                                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Percentage (WAM)</span>
+                                                        <span className="text-sm sm:text-base font-extrabold font-mono text-black">{overall.percentage === null ? '—' : `${overall.percentage.toFixed(2)}%`}</span>
+                                                    </div>
+                                                    <div className="h-6 w-px bg-neutral-300" />
+                                                    <div>
+                                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Credits</span>
+                                                        <span className="text-sm sm:text-base font-extrabold font-mono text-black">{overall.credits}</span>
+                                                    </div>
                                                 </div>
                                             </div>
 
@@ -488,12 +531,21 @@ export default function MarksPage() {
                         ) : (
                             /* ── Interactive Dashboard View ── */
                             <div className="space-y-4">
-                                {/* Overall GPA */}
-                                <div className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-4 py-3">
-                                    <div>
-                                        <div className="text-[10px] font-semibold uppercase tracking-widest text-emerald-400/80">Overall GPA</div>
-                                        <div className="text-3xl font-extrabold tabular-nums text-emerald-300">
-                                            {overall.gpa === null ? '—' : overall.gpa.toFixed(2)}
+                                {/* Overall GPA & Percentage (WAM) */}
+                                <div className="flex flex-wrap items-center justify-between gap-4 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-4 py-3">
+                                    <div className="flex flex-wrap items-center gap-6">
+                                        <div>
+                                            <div className="text-[10px] font-semibold uppercase tracking-widest text-emerald-400/80">Overall GPA</div>
+                                            <div className="text-3xl font-extrabold tabular-nums text-emerald-300">
+                                                {overall.gpa === null ? '—' : overall.gpa.toFixed(2)}
+                                            </div>
+                                        </div>
+                                        <div className="h-10 w-px bg-emerald-500/30 hidden sm:block" />
+                                        <div>
+                                            <div className="text-[10px] font-semibold uppercase tracking-widest text-emerald-400/80">Percentage (WAM)</div>
+                                            <div className="text-3xl font-extrabold tabular-nums text-emerald-300">
+                                                {overall.percentage === null ? '—' : `${overall.percentage.toFixed(2)}%`}
+                                            </div>
                                         </div>
                                     </div>
                                     <div className="text-right text-[11px] text-slate-400">
@@ -514,6 +566,15 @@ export default function MarksPage() {
                                                 <span className="font-bold tabular-nums text-emerald-300">
                                                     {group.gpa === null ? '—' : group.gpa.toFixed(2)}
                                                 </span>
+                                                {group.percentage !== null && (
+                                                    <>
+                                                        <span className="text-slate-600"> · </span>
+                                                        WAM{' '}
+                                                        <span className="font-bold tabular-nums text-emerald-300">
+                                                            {group.percentage.toFixed(2)}%
+                                                        </span>
+                                                    </>
+                                                )}
                                                 <span className="text-slate-600"> · </span>
                                                 {group.credits} cr
                                             </span>
@@ -655,12 +716,37 @@ export default function MarksPage() {
 
                         return (
                             <div key={year.year} className="print-page-year space-y-6">
+                                {/* Marksheet Top Header on Print */}
+                                <div className="border-b-2 border-black pb-2 mb-2 flex items-center justify-between text-black">
+                                    <div>
+                                        <div className="text-sm font-bold tracking-wider uppercase">Statement of Marks</div>
+                                        <div className="text-[10px] text-neutral-600">Batch {selectedBatch} · {year.label}</div>
+                                    </div>
+                                    <div className="flex items-center gap-5 text-right">
+                                        <div>
+                                            <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">CGPA</span>
+                                            <span className="text-sm font-extrabold font-mono">{overall.gpa === null ? '—' : overall.gpa.toFixed(2)}</span>
+                                        </div>
+                                        <div className="h-6 w-px bg-neutral-300" />
+                                        <div>
+                                            <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Percentage (WAM)</span>
+                                            <span className="text-sm font-extrabold font-mono">{overall.percentage === null ? '—' : `${overall.percentage.toFixed(2)}%`}</span>
+                                        </div>
+                                        <div className="h-6 w-px bg-neutral-300" />
+                                        <div>
+                                            <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Credits</span>
+                                            <span className="text-sm font-extrabold font-mono">{overall.credits}</span>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div className="space-y-5">
                                     {groupsForYear.map((group) => renderTermTable(group))}
                                 </div>
 
-                                <div className="mt-auto pt-3 text-[10px] text-slate-800">
+                                <div className="mt-auto pt-3 text-[10px] text-slate-800 flex items-center justify-between">
                                     <span>* Denotes Retake</span>
+                                    <span>Page {year.year} of 3</span>
                                 </div>
                             </div>
                         );
