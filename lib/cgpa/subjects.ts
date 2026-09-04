@@ -34,77 +34,76 @@ const makeId = (term: number, code: string, name: string) => {
   return `${term}${codePart}-${slugify(name)}`;
 };
 
-type RawSubject = Omit<CgpaSubject, 'id'>;
+export type RawSubject = Omit<CgpaSubject, 'id'>;
 
 const RAW_SUBJECTS: RawSubject[] = [
   // ── Year 1 · Term 1 (13.5) ──────────────────────────────────
   // Common
+  { term: 1, code: 'EP12x', name: 'Explorations in Entrepreneurship', credits: 1.5, batches: [1, 2] },
   { term: 1, code: 'MK11x', name: 'Marketing Fundamentals', credits: 3, batches: [1, 2] },
-  { term: 1, code: 'EP11x', name: 'Creativity Mindset for Innovation and Imagination', credits: 1.5, batches: [1, 2] },
-  { term: 1, code: 'EP12x', name: 'Exploration into Entrepreneurship', credits: 1.5, batches: [1, 2] },
+  { term: 1, code: 'AE11x', name: 'Foundations of Business Communication-I', credits: 1.5, batches: [1, 2] },
   { term: 1, code: 'FA11x', name: 'Financial Statements and Business Performance', credits: 3, batches: [1, 2] },
-  { term: 1, code: 'AE11x', name: 'Foundations of Business Communication I', credits: 1.5, batches: [1, 2] },
+  { term: 1, code: 'EP11x', name: 'Creative Mindset for Innovation and Imagination', credits: 1.5, batches: [1, 2] },
   // Batch 1 only: single combined statistics course (3 cr)
   { term: 1, code: 'DS11x_B1', name: 'Business Statistics for Entrepreneurs', credits: 3, batches: [1] },
   // Batch 2 only: split statistics (1.5 cr) + Evolution moved to Term 1
-  { term: 1, code: 'DS11x_B2', name: 'Business Statistics for Entrepreneurs I', credits: 1.5, batches: [2] },
+  { term: 1, code: 'DS11x_B2', name: 'Business Statistics for Entrepreneurs-I', credits: 1.5, batches: [2] },
   { term: 1, code: 'ST21x', name: 'Evolution of Business and Market', credits: 1.5, batches: [2] },
 
   // ── Year 1 · Term 2 (15) ────────────────────────────────────
   // Common
   { term: 2, code: 'SE21x', name: 'Persuasive Communication', credits: 1.5, batches: [1, 2] },
-  { term: 2, code: 'ES21x', name: 'Principles of Micro-Economics', credits: 1.5, batches: [1, 2] },
-  { term: 2, code: 'AE21x', name: 'Foundation of Business Communication II', credits: 1.5, batches: [1, 2] },
-  { term: 2, code: 'ID21x', name: 'Website Development', credits: 3, batches: [1, 2] },
+  { term: 2, code: 'ES21x', name: 'Principles of Microeconomics', credits: 1.5, batches: [1, 2] },
+  { term: 2, code: 'AE21x', name: 'Foundation of Business Communication-II', credits: 1.5, batches: [1, 2] },
   { term: 2, code: 'ID22x', name: 'Indian Knowledge System', credits: 3, batches: [1, 2] },
-  { term: 2, code: 'PJ21x', name: 'Venturing on a budget: Rs.250 Venture', credits: 1.5, batches: [1, 2] },
+  { term: 2, code: 'PJ21x', name: 'Venturing on a Budget: Rs.250 Venture (Project Based)', credits: 1.5, batches: [1, 2] },
+  { term: 2, code: 'ID21x', name: 'Website Development (Project Based)', credits: 3, batches: [1, 2] },
   // Batch 1 only: Evolution (here) + Advanced Statistics (here)
-  { term: 2, code: 'ST21x', name: 'Evolution of Business and Market', credits: 1.5, batches: [1] },
   { term: 2, code: 'DS21x', name: 'Advanced Statistics for Business', credits: 1.5, batches: [1] },
+  { term: 2, code: 'ST21x', name: 'Evolution of Business and Market', credits: 1.5, batches: [1] },
   // Batch 2 only: Management Accounting (here) + Statistics II
   { term: 2, code: 'FA31x', name: 'Management Accounting', credits: 1.5, batches: [2] },
-  { term: 2, code: 'DS21x_B2', name: 'Business Statistics for Entrepreneurs II', credits: 1.5, batches: [2] },
+  { term: 2, code: 'DS21x_B2', name: 'Business Statistics for Entrepreneurs-II', credits: 1.5, batches: [2] },
 
   // ── Year 1 · Term 3 (16.5) ──────────────────────────────────
   // Common
-  { term: 3, code: 'SE31x', name: 'Design your Thinking', credits: 1.5, batches: [1, 2] },
-  { term: 3, code: 'ID31x', name: 'Understanding Indian Culture: Theatre and its presence in daily life', credits: 3, batches: [1, 2] },
-  { term: 3, code: 'AE31x', name: 'Spreadsheets for Business Decisions', credits: 1.5, batches: [1, 2] },
-  { term: 3, code: 'MK31x', name: 'Social Media for Marketing', credits: 3, batches: [1, 2] },
-  { term: 3, code: 'EP31x', name: 'Entrepreneurial Mindset and Methods', credits: 3, batches: [1, 2] },
-  { term: 3, code: 'ID32x', name: 'Exploring Sustainability in the Indian Context', credits: 3, batches: [1, 2] },
-  // Batch 1 only: Management Accounting (here)
   { term: 3, code: 'FA31x', name: 'Management Accounting', credits: 1.5, batches: [1] },
+  { term: 3, code: 'EP31x', name: 'Entrepreneurial Mindset and Methods', credits: 3, batches: [1, 2] },
+  { term: 3, code: 'SE31x', name: 'Design Your Thinking', credits: 1.5, batches: [1, 2] },
+  { term: 3, code: 'MK31x', name: 'Social Media for Marketing', credits: 3, batches: [1, 2] },
+  { term: 3, code: 'ID32x', name: 'Exploring Sustainability in the Indian Context', credits: 3, batches: [1, 2] },
+  { term: 3, code: 'AE31x', name: 'Spreadsheets for Business Decisions', credits: 1.5, batches: [1, 2] },
+  { term: 3, code: 'ID31x', name: 'Understanding Indian Culture (Project Based)', credits: 3, batches: [1, 2] },
   // Batch 2 only: Statistics III
-  { term: 3, code: 'DS31x_B2', name: 'Business Statistics for Entrepreneurs III', credits: 1.5, batches: [2] },
+  { term: 3, code: 'DS31x_B2', name: 'Business Statistics for Entrepreneurs-III', credits: 1.5, batches: [2] },
 
   // ── Year 2 · Term 4 (B1 15 / B2 16.5) ───────────────────────
   // Batch 2 only: Advanced Statistics (here)
   { term: 4, code: 'DS21x', name: 'Advanced Statistics for Business', credits: 1.5, batches: [2] },
   // Common
-  { term: 4, code: 'MK41x', name: 'Digital Marketing Strategy', credits: 3, batches: [1, 2] },
-  { term: 4, code: 'OB41x', name: 'People, Work, and Organizations', credits: 3, batches: [1, 2] },
+  { term: 4, code: 'ST41x', name: 'Introduction to Strategic Management', credits: 3, batches: [1, 2] },
+  { term: 4, code: 'MD41x', name: 'Sustainability Measures for SMEs', credits: 1.5, batches: [1, 2] },
   { term: 4, code: 'OM41x', name: 'Operations Management', credits: 1.5, batches: [1, 2] },
-  { term: 4, code: 'ST41x', name: 'Strategic Management', credits: 3, batches: [1, 2] },
-  { term: 4, code: 'EP41x', name: 'Entrepreneurial Methods Hypothesis Testing', credits: 1.5, batches: [1, 2] },
-  { term: 4, code: 'MD41x', name: 'Sustainability Measurements for SMEs', credits: 1.5, batches: [1, 2] },
-  { term: 4, code: 'MD42x', name: 'Exploring Society & Structure', credits: 1.5, batches: [1, 2] },
+  { term: 4, code: 'EP41x', name: 'Entrepreneurial Hypothesis Testing', credits: 1.5, batches: [1, 2] },
+  { term: 4, code: 'MK41x', name: 'Digital Marketing Strategy', credits: 3, batches: [1, 2] },
+  { term: 4, code: 'OB41x', name: 'People, Work and Organisations', credits: 3, batches: [1, 2] },
+  { term: 4, code: 'MD42x', name: 'Exploring Society & Social Structure', credits: 1.5, batches: [1, 2] },
 
   // ── Year 2 · Term 5 (15) — common ───────────────────────────
-  { term: 5, code: '', name: 'Digital Design Tools and Documentation & Presentation', credits: 3, batches: [1, 2] },
-  { term: 5, code: '', name: 'Generating Entrepreneurial Resources', credits: 3, batches: [1, 2] },
-  { term: 5, code: '', name: 'Principles of Macroeconomics', credits: 1.5, batches: [1, 2] },
-  { term: 5, code: '', name: 'New Age Business Models', credits: 3, batches: [1, 2] },
-  { term: 5, code: '', name: 'Behavioural Economics', credits: 1.5, batches: [1, 2] },
-  { term: 5, code: '', name: 'New Product Development', credits: 3, batches: [1, 2] },
+  { term: 5, code: 'ST51x', name: 'New Age Business Models', credits: 3, batches: [1, 2] },
+  { term: 5, code: 'ES51x', name: 'Principles of Macroeconomics', credits: 1.5, batches: [1, 2] },
+  { term: 5, code: 'ES52x', name: 'Behavioural Economics', credits: 1.5, batches: [1, 2] },
+  { term: 5, code: 'EP51x', name: 'Generating Entrepreneurial Resources', credits: 3, batches: [1, 2] },
+  { term: 5, code: 'SE51x', name: 'Digital Design Tools and Documentation & Presentation', credits: 3, batches: [1, 2] },
+  { term: 5, code: 'MK51x', name: 'New Product Development', credits: 3, batches: [1, 2] },
 
   // ── Year 2 · Term 6 (15) — common ───────────────────────────
-  { term: 6, code: '', name: 'Supply Chain Management (SCM)', credits: 3, batches: [1, 2] },
-  { term: 6, code: '', name: 'Growth Hacking', credits: 1.5, batches: [1, 2] },
-  { term: 6, code: '', name: 'Product Management', credits: 3, batches: [1, 2] },
-  { term: 6, code: '', name: 'Inclusive Business Models', credits: 3, batches: [1, 2] },
-  { term: 6, code: '', name: 'Business Research Methods', credits: 1.5, batches: [1, 2] },
-  { term: 6, code: '', name: 'Project / Do your Venture-1', credits: 3, batches: [1, 2] },
+  { term: 6, code: 'OM61x', name: 'Supply Chain Management (SCM)', credits: 3, batches: [1, 2] },
+  { term: 6, code: 'MK61x', name: 'Growth Hacking', credits: 1.5, batches: [1, 2] },
+  { term: 6, code: 'MK62x', name: 'Product Management', credits: 3, batches: [1, 2] },
+  { term: 6, code: 'ST61x', name: 'Inclusive Business Models', credits: 3, batches: [1, 2] },
+  { term: 6, code: 'DS61x', name: 'Business Research Methods', credits: 1.5, batches: [1, 2] },
+  { term: 6, code: 'PJ61x', name: 'Project / Do your Venture-1', credits: 3, batches: [1, 2] },
 
   // ── Year 3 · Term 7 (15) — common ───────────────────────────
   { term: 7, code: '', name: 'Organizational Development', credits: 3, batches: [1, 2] },
