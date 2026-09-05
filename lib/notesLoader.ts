@@ -22,21 +22,21 @@ export async function loadNotes(subjectCode: string): Promise<string | null> {
   }
 }
 
-export async function loadFormulas(subjectCode: string): Promise<string | null> {
+export async function loadShortNotes(subjectCode: string): Promise<string | null> {
   try {
-    const response = await fetch(`/data/Subjects/${subjectCode}/FORMULAS.md`);
+    const response = await fetch(`/data/Subjects/${subjectCode}/SHORT_NOTES.md`);
 
     if (!response.ok) {
       if (response.status === 404) {
         return null;
       }
-      throw new Error(`Failed to load formulas: ${response.statusText}`);
+      throw new Error(`Failed to load short notes: ${response.statusText}`);
     }
 
     const markdown = await response.text();
     return markdown;
   } catch (error) {
-    console.error(`Error loading formulas for ${subjectCode}:`, error);
+    console.error(`Error loading short notes for ${subjectCode}:`, error);
     return null;
   }
 }

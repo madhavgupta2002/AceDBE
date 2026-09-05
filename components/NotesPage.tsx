@@ -8,7 +8,7 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import rehypeRaw from 'rehype-raw';
 import { ArrowLeft, BookOpen, ChevronDown, Type, Printer } from 'lucide-react';
-import { loadNotes, loadFormulas } from '@/lib/notesLoader';
+import { loadNotes, loadShortNotes } from '@/lib/notesLoader';
 import { getSubjectByCode } from '@/lib/subjectMapping';
 import Header from '@/components/Header';
 import MermaidBlock from '@/components/MermaidBlock';
@@ -68,26 +68,26 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
   const [selectedFont, setSelectedFont] = useState<FontOption>(fontOptions[0]);
   const [fontDropdownOpen, setFontDropdownOpen] = useState(false);
   const [fontSize, setFontSize] = useState<number>(18); // Default font size in px
-  const [showFormulas, setShowFormulas] = useState(false);
-  const [formulasContent, setFormulasContent] = useState<string | null>(null);
+  const [showShortNotes, setShowShortNotes] = useState(false);
+  const [shortNotesContent, setShortNotesContent] = useState<string | null>(null);
   const [notesContent, setNotesContent] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchNotes = async () => {
       setLoading(true);
       setError(null);
-      const [notes, formulas] = await Promise.all([
+      const [notes, shortNotes] = await Promise.all([
         loadNotes(subjectCode),
-        loadFormulas(subjectCode),
+        loadShortNotes(subjectCode),
       ]);
 
-      setFormulasContent(formulas);
+      setShortNotesContent(shortNotes);
       setNotesContent(notes);
 
       const wantShort = searchParams.get('view') === 'short';
-      if (wantShort && formulas) {
-        setShowFormulas(true);
-        setMarkdown(formulas);
+      if (wantShort && shortNotes) {
+        setShowShortNotes(true);
+        setMarkdown(shortNotes);
       } else if (notes) {
         setMarkdown(notes);
       } else {
@@ -99,10 +99,10 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
     fetchNotes();
   }, [subjectCode, searchParams]);
 
-  const handleToggleFormulas = (toShort: boolean) => {
-    if (toShort && !formulasContent) return;
-    setShowFormulas(toShort);
-    setMarkdown(toShort ? formulasContent : notesContent);
+  const handleToggleNotes = (toShort: boolean) => {
+    if (toShort && !shortNotesContent) return;
+    setShowShortNotes(toShort);
+    setMarkdown(toShort ? shortNotesContent : notesContent);
   };
 
 
@@ -253,7 +253,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
       </head>
       <body>
         <div class="title">${title}</div>
-        <div class="subtitle">${showFormulas ? 'Short Notes' : 'Notes'}</div>
+        <div class="subtitle">${showShortNotes ? 'Short Notes' : 'Notes'}</div>
         ${renderedHtml}
         <div class="footer">acedbe.in</div>
       </body>
@@ -292,7 +292,7 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                 <h1 className="text-base sm:text-xl lg:text-2xl font-bold text-white leading-tight">
                   {subject.name}
                 </h1>
-                <p className="text-xs sm:text-sm text-slate-400">{showFormulas ? 'Short Notes' : 'Notes'}</p>
+                <p className="text-xs sm:text-sm text-slate-400">{showShortNotes ? 'Short Notes' : 'Notes'}</p>
               </div>
             </div>
 
@@ -351,11 +351,11 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
             </div>
 
             {/* Notes Type Toggle */}
-            {formulasContent && (
+            {shortNotesContent && (
               <div className="flex items-center bg-slate-700/60 rounded-lg p-0.5 print:hidden">
                 <button
-                  onClick={() => handleToggleFormulas(true)}
-                  className={`px-2 sm:px-3 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-colors ${showFormulas
+                  onClick={() => handleToggleNotes(true)}
+                  className={`px-2 sm:px-3 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-colors ${showShortNotes
                     ? 'bg-amber-500 text-white shadow-sm'
                     : 'text-slate-300 hover:text-white'
                     }`}
@@ -363,8 +363,8 @@ const NotesPage: React.FC<NotesPageProps> = ({ subjectCode }) => {
                   Short Notes
                 </button>
                 <button
-                  onClick={() => handleToggleFormulas(false)}
-                  className={`px-2 sm:px-3 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-colors ${!showFormulas
+                  onClick={() => handleToggleNotes(false)}
+                  className={`px-2 sm:px-3 py-1.5 sm:py-2 rounded-md text-xs sm:text-sm font-medium transition-colors ${!showShortNotes
                     ? 'bg-emerald-600 text-white shadow-sm'
                     : 'text-slate-300 hover:text-white'
                     }`}
