@@ -97,8 +97,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
   const [subjectVideos, setSubjectVideos] = useState<Record<string, string[]>>({});
   const moduleNumbers = Object.keys(subjectVideos).sort((a, b) => Number(a) - Number(b));
 
-  // Check if subject has short notes (FORMULAS.md)
-  const [hasFormulas, setHasFormulas] = useState(false);
+  // Check if subject has short notes (SHORT_NOTES.md)
+  const [hasShortNotes, setHasShortNotes] = useState(false);
 
   useEffect(() => {
     fetch(`/data/Subjects/${subjectCode}/videos.json`)
@@ -106,9 +106,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
       .then(data => setSubjectVideos(data))
       .catch(() => setSubjectVideos({}));
 
-    fetch(`/data/Subjects/${subjectCode}/FORMULAS.md`, { method: 'HEAD' })
-      .then(res => setHasFormulas(res.ok))
-      .catch(() => setHasFormulas(false));
+    fetch(`/data/Subjects/${subjectCode}/SHORT_NOTES.md`, { method: 'HEAD' })
+      .then(res => setHasShortNotes(res.ok))
+      .catch(() => setHasShortNotes(false));
   }, [subjectCode]);
 
   useEffect(() => {
@@ -943,7 +943,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
           {!isCustomMode && !loading && quizState.questions.length > 0 && !quizCompleted && (
             <div className="mb-4">
               <div className="bg-surface border border-surface-border/60 rounded-xl p-2.5">
-                {hasFormulas ? (
+                {hasShortNotes ? (
                   <div className="flex gap-2">
                     <Link
                       href={`/${subjectCode}/notes?view=short`}
@@ -983,7 +983,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                 <BookOpen className="w-5 h-5 text-emerald-400" />
                 Study Materials
               </h2>
-              {hasFormulas ? (
+              {hasShortNotes ? (
                 <div className="flex gap-3">
                   <Link
                     href={`/${subjectCode}/notes?view=short`}
