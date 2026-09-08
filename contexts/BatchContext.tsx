@@ -17,14 +17,14 @@ interface BatchContextType {
 }
 
 const BatchContext = createContext<BatchContextType>({
-  selectedBatch: 2,
+  selectedBatch: 3,
   setSelectedBatch: () => { },
   selectedTerm: 1,
   setSelectedTerm: () => { },
 });
 
 export const BatchProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [selectedBatch, setSelectedBatchState] = useState<number>(2);
+  const [selectedBatch, setSelectedBatchState] = useState<number>(3);
   const [selectedTerm, setSelectedTermState] = useState<number>(1);
 
   // Synchronize state with localStorage on client mount
@@ -32,7 +32,7 @@ export const BatchProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     if (typeof window === 'undefined') return;
 
     const savedBatchStr = localStorage.getItem(STORAGE_KEY_BATCH);
-    let batchToUse = 2;
+    let batchToUse = 3;
     if (savedBatchStr) {
       const parsedBatch = parseInt(savedBatchStr, 10);
       if ((AVAILABLE_BATCHES as readonly number[]).includes(parsedBatch)) {
@@ -48,11 +48,11 @@ export const BatchProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       if (availableTerms.includes(parsedTerm)) {
         setSelectedTermState(parsedTerm);
       } else {
-        const defaultTerm = availableTerms[availableTerms.length - 1] ?? 1;
+        const defaultTerm = availableTerms[0] ?? 1;
         setSelectedTermState(defaultTerm);
       }
     } else {
-      const defaultTerm = availableTerms[availableTerms.length - 1] ?? 1;
+      const defaultTerm = availableTerms[0] ?? 1;
       setSelectedTermState(defaultTerm);
     }
   }, []);
@@ -95,7 +95,7 @@ export const BatchProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 export const useBatch = () => {
   const context = useContext(BatchContext);
   return {
-    selectedBatch: context?.selectedBatch ?? 2,
+    selectedBatch: context?.selectedBatch ?? 3,
     setSelectedBatch: context?.setSelectedBatch ?? (() => { }),
     selectedTerm: context?.selectedTerm ?? 1,
     setSelectedTerm: context?.setSelectedTerm ?? (() => { }),
