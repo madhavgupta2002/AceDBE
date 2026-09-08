@@ -3,8 +3,8 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { getTermsForBatch } from '@/lib/subjectMapping';
 
-const AVAILABLE_BATCHES = [1, 2] as const;
-type BatchNumber = (typeof AVAILABLE_BATCHES)[number];
+export const AVAILABLE_BATCHES = [1, 2, 3] as const;
+export type BatchNumber = (typeof AVAILABLE_BATCHES)[number];
 
 const STORAGE_KEY_BATCH = 'ace_dbe_selected_batch';
 const STORAGE_KEY_TERM = 'ace_dbe_selected_term';

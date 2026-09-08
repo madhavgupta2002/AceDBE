@@ -10,7 +10,7 @@
 // Advanced Statistics) are listed as SEPARATE per-batch entries so each batch's
 // term placement and credit weight stay correct.
 
-export type Batch = 1 | 2;
+export type Batch = 1 | 2 | 3;
 
 export type CgpaSubject = {
   id: string; // stable key for UI state
@@ -37,18 +37,21 @@ const makeId = (term: number, code: string, name: string) => {
 export type RawSubject = Omit<CgpaSubject, 'id'>;
 
 const RAW_SUBJECTS: RawSubject[] = [
-  // ── Year 1 · Term 1 (13.5) ──────────────────────────────────
+  // ── Year 1 · Term 1 (B1/B2 13.5 / B3 15) ────────────────────
   // Common
-  { term: 1, code: 'EP12x', name: 'Explorations in Entrepreneurship', credits: 1.5, batches: [1, 2] },
-  { term: 1, code: 'MK11x', name: 'Marketing Fundamentals', credits: 3, batches: [1, 2] },
-  { term: 1, code: 'AE11x', name: 'Foundations of Business Communication-I', credits: 1.5, batches: [1, 2] },
-  { term: 1, code: 'FA11x', name: 'Financial Statements and Business Performance', credits: 3, batches: [1, 2] },
-  { term: 1, code: 'EP11x', name: 'Creative Mindset for Innovation and Imagination', credits: 1.5, batches: [1, 2] },
+  { term: 1, code: 'EP12x', name: 'Explorations in Entrepreneurship', credits: 1.5, batches: [1, 2, 3] },
+  { term: 1, code: 'MK11x', name: 'Marketing Fundamentals', credits: 3, batches: [1, 2, 3] },
+  { term: 1, code: 'AE11x', name: 'Foundations of Business Communication-I', credits: 1.5, batches: [1, 2, 3] },
+  { term: 1, code: 'FA11x', name: 'Financial Statements and Business Performance', credits: 3, batches: [1, 2, 3] },
+  { term: 1, code: 'EP11x', name: 'Creative Mindset for Innovation and Imagination', credits: 1.5, batches: [1, 2, 3] },
   // Batch 1 only: single combined statistics course (3 cr)
   { term: 1, code: 'DS11x_B1', name: 'Business Statistics for Entrepreneurs', credits: 3, batches: [1] },
-  // Batch 2 only: split statistics (1.5 cr) + Evolution moved to Term 1
-  { term: 1, code: 'DS11x_B2', name: 'Business Statistics for Entrepreneurs-I', credits: 1.5, batches: [2] },
+  // Batch 2 and Batch 3: split statistics (1.5 cr)
+  { term: 1, code: 'DS11x_B2', name: 'Business Statistics for Entrepreneurs-I', credits: 1.5, batches: [2, 3] },
+  // Batch 2 only: Evolution moved to Term 1
   { term: 1, code: 'ST21x', name: 'Evolution of Business and Market', credits: 1.5, batches: [2] },
+  // Batch 3 only: Website Development in Term 1 (3 cr)
+  { term: 1, code: 'ID21x', name: 'Website Development (Project Based)', credits: 3, batches: [3] },
 
   // ── Year 1 · Term 2 (15) ────────────────────────────────────
   // Common

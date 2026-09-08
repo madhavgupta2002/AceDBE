@@ -5,7 +5,7 @@ import { Bookmark, ChevronDown, ClipboardPaste, Copy, Eye, FileText, Printer, Re
 import { parseGrades, parsePastedText, detectBatchFromText, type RawRow, type ParsedSubject } from '@/lib/marks/parseGrades';
 import { gradePoints, gradeFromTotal } from '@/lib/cgpa/grades';
 import { CGPA_TERMS, getSubjectsForTerm } from '@/lib/cgpa/subjects';
-import { useBatch } from '@/contexts/BatchContext';
+import { useBatch, AVAILABLE_BATCHES } from '@/contexts/BatchContext';
 
 const MOODLE_LOGIN_URL = 'https://moodle.iimb.ac.in/portal/';
 const MOODLE_GRADE_URL = 'https://moodle.iimb.ac.in/grade/report/user/index.php?id=6211';
@@ -433,7 +433,7 @@ export default function MarksPage() {
                             </div>
                             <div className="flex flex-wrap items-center gap-2">
                                 <div className="inline-flex bg-surface-dark/60 border border-surface-border/60 p-0.5 gap-0.5 rounded-lg">
-                                    {[1, 2].map((b) => (
+                                    {AVAILABLE_BATCHES.map((b) => (
                                         <button
                                             key={b}
                                             onClick={() => setSelectedBatch(b)}

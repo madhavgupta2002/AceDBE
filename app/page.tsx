@@ -2,7 +2,7 @@
 
 import SubjectSelector from '@/components/SubjectSelector';
 import Header from '@/components/Header';
-import { useBatch } from '@/contexts/BatchContext';
+import { useBatch, AVAILABLE_BATCHES } from '@/contexts/BatchContext';
 import { getTermsForBatch } from '@/lib/subjectMapping';
 
 export default function Home() {
@@ -37,7 +37,7 @@ export default function Home() {
         <div className="flex items-center gap-2">
           <span className="text-xs text-slate-500 font-medium whitespace-nowrap"> Batch:</span>
           <div className="inline-flex bg-slate-800/60 border border-slate-700/50 p-1 gap-1 rounded-xl">
-            {[1, 2].map((batch) => (
+            {AVAILABLE_BATCHES.map((batch) => (
               <button
                 key={batch}
                 onClick={() => setSelectedBatch?.(batch)}

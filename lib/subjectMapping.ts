@@ -20,6 +20,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'AE11x', term: 1 },
       { batch: 2, code: 'AE11x', term: 1 },
+      { batch: 3, code: 'AE11x', term: 1 },
     ],
   },
   {
@@ -29,6 +30,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'DS11x_B1', term: 1, name: 'Business Statistics for Entrepreneurs' },
       { batch: 2, code: 'DS11x_B2', term: 1, name: 'Business Statistics for Entrepreneurs I' },
+      { batch: 3, code: 'DS11x_B2', term: 1, name: 'Business Statistics for Entrepreneurs I' },
     ],
   },
   {
@@ -37,6 +39,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'BarChart3',
     aliases: [
       { batch: 2, code: 'DS21x_B2', term: 2 },
+      // { batch: 3, code: 'DS21x_B2', term: 2 },
     ],
   },
   {
@@ -45,6 +48,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'BarChart3',
     aliases: [
       { batch: 2, code: 'DS31x_B2', term: 3 },
+      // { batch: 3, code: 'DS31x_B2', term: 3 },
     ],
   },
   {
@@ -54,6 +58,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'EP11x', term: 1 },
       { batch: 2, code: 'EP11x', term: 1 },
+      { batch: 3, code: 'EP11x', term: 1 },
     ],
   },
   {
@@ -63,6 +68,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'EP12x', term: 1 },
       { batch: 2, code: 'EP12x', term: 1 },
+      { batch: 3, code: 'EP12x', term: 1 },
     ],
   },
   {
@@ -72,6 +78,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'FA11x', term: 1 },
       { batch: 2, code: 'FA11x', term: 1 },
+      { batch: 3, code: 'FA11x', term: 1 },
     ],
   },
   {
@@ -81,6 +88,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'MK11x', term: 1 },
       { batch: 2, code: 'MK11x', term: 1 },
+      { batch: 3, code: 'MK11x', term: 1 },
     ],
   },
   {
@@ -90,6 +98,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'ST21x', term: 2 },
       { batch: 2, code: 'ST21x', term: 1 },
+      // { batch: 3, code: 'ST21x', term: 2 },
     ],
   },
 
@@ -101,6 +110,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'ES21x', term: 2 },
       { batch: 2, code: 'ES21x', term: 2 },
+      // { batch: 3, code: 'ES21x', term: 2 },
     ],
   },
   {
@@ -110,6 +120,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'ID22x', term: 2 },
       { batch: 2, code: 'ID22x', term: 2 },
+      // { batch: 3, code: 'ID22x', term: 2 },
     ],
   },
   {
@@ -127,6 +138,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'AE21x', term: 2 },
       { batch: 2, code: 'AE21x', term: 2 },
+      // { batch: 3, code: 'AE21x', term: 2 },
     ],
   },
   {
@@ -136,6 +148,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'SE21x', term: 2 },
       { batch: 2, code: 'SE21x', term: 2 },
+      // { batch: 3, code: 'SE21x', term: 2 },
     ],
   },
   {
@@ -146,6 +159,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'PJ21x', term: 2 },
       { batch: 2, code: 'PJ21x', term: 2 },
+      // { batch: 3, code: 'PJ21x', term: 2 },
     ],
   },
   {
@@ -155,6 +169,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'ID21x', term: 2 },
       { batch: 2, code: 'ID21x', term: 2 },
+      { batch: 3, code: 'ID21x', term: 1 },
     ],
   },
   {
@@ -164,6 +179,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'FA31x', term: 3 },
       { batch: 2, code: 'FA31x', term: 2 },
+      // { batch: 3, code: 'FA31x', term: 2 },
     ],
   },
 
@@ -175,6 +191,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'EP31x', term: 3 },
       { batch: 2, code: 'EP31x', term: 3 },
+      // { batch: 3, code: 'EP31x', term: 3 },
     ],
   },
   {
@@ -184,6 +201,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'SE31x', term: 3 },
       { batch: 2, code: 'SE31x', term: 3 },
+      // { batch: 3, code: 'SE31x', term: 3 },
     ],
   },
   {
@@ -193,6 +211,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'MK31x', term: 3 },
       { batch: 2, code: 'MK31x', term: 3 },
+      // { batch: 3, code: 'MK31x', term: 3 },
     ],
   },
   {
@@ -203,6 +222,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'AE31x', term: 3 },
       { batch: 2, code: 'AE31x', term: 3 },
+      // { batch: 3, code: 'AE31x', term: 3 },
     ],
   },
   {
@@ -212,6 +232,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'ID32x', term: 3 },
       { batch: 2, code: 'ID32x', term: 3 },
+      // { batch: 3, code: 'ID32x', term: 3 },
     ],
   },
   {
@@ -222,6 +243,7 @@ export const SUBJECTS: Subject[] = [
     aliases: [
       { batch: 1, code: 'ID31x', term: 3 },
       { batch: 2, code: 'ID31x', term: 3 },
+      // { batch: 3, code: 'ID31x', term: 3 },
     ],
   },
 
