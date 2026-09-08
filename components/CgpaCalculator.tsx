@@ -4,7 +4,7 @@ import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { gradeFromTotal, isValidTotal, parseNumberOrNull, gradePoints, type LetterGrade } from '@/lib/cgpa/grades';
 import { CGPA_TERMS, getAllSubjects, type CgpaSubject } from '@/lib/cgpa/subjects';
 import { loadStoredMarks, saveStoredMarks, type MarksInput } from '@/lib/cgpa/storage';
-import { useBatch } from '@/contexts/BatchContext';
+import { useBatch, AVAILABLE_BATCHES } from '@/contexts/BatchContext';
 import { Award, Trash2 } from 'lucide-react';
 
 type ComputedMark = {
@@ -165,7 +165,7 @@ export default function CgpaCalculator() {
           </div>
           <div className="flex items-center gap-2 self-start sm:self-auto">
             <div className="inline-flex bg-surface-dark/60 border border-surface-border/60 p-0.5 gap-0.5 rounded-lg">
-              {[1, 2].map((b) => (
+              {AVAILABLE_BATCHES.map((b) => (
                 <button
                   key={b}
                   onClick={() => setSelectedBatch(b)}
