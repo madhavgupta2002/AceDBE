@@ -1,0 +1,780 @@
+{
+    "exam_metadata": {
+        "subject_name": "Software Product Management for STARTUPS",
+        "exam_date": "22 August 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "451387435",
+            "question_text": "The primary goal of the DFV framework is to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Improve coding quality",
+                "B": "Increase software features",
+                "C": "Balance customer needs, technical capability, and business success",
+                "D": "Reduce development costs"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Desirability-Feasibility-Viability (DFV) framework balances what customers need (Desirability), what can technically be engineered (Feasibility), and what is economically viable for the business (Viability).",
+            "module": 1
+        },
+        {
+            "question_id": "451387436",
+            "question_text": "Validated learning is best described as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increasing advertising spend",
+                "B": "Metrics-oriented product improvement",
+                "C": "Following founder intuition",
+                "D": "Expanding feature count"
+            },
+            "correct_option_label": "B",
+            "explanation": "Validated learning is an empirical approach within the Build-Measure-Learn feedback loop where real behavioral data and actionable metrics are used to test hypotheses and improve the product.",
+            "module": 2
+        },
+        {
+            "question_id": "451387437",
+            "question_text": "Which of the following best illustrates the Social Impact level?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "One-click ordering",
+                "B": "Personalized recommendations",
+                "C": "Faster checkout process",
+                "D": "Enabling financial inclusion at scale through UPI"
+            },
+            "correct_option_label": "D",
+            "explanation": "In Bain's Value Pyramid, the highest tier is Social Impact (self-transcendence). Enabling national-scale financial inclusion through UPI delivers transformative societal benefits across diverse demographics.",
+            "module": 2
+        },
+        {
+            "question_id": "451387438",
+            "question_text": "What is the primary purpose of TAM analysis?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Measure customer satisfaction",
+                "B": "Define product features",
+                "C": "Estimate total market opportunity",
+                "D": "Identify first adopters"
+            },
+            "correct_option_label": "C",
+            "explanation": "Total Addressable Market (TAM) estimates the total potential demand or market opportunity available for a product category if 100% market share were captured.",
+            "module": 2
+        },
+        {
+            "question_id": "451387439",
+            "question_text": "What is the \"Chasm\" in Moore's model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Gap between late majority and laggards",
+                "B": "Gap between innovators and early adopters",
+                "C": "Gap between early majority and late majority",
+                "D": "Gap between early adopters and early majority"
+            },
+            "correct_option_label": "D",
+            "explanation": "In Geoffrey Moore's Crossing the Chasm model, the chasm represents the critical adoption gap between visionary Early Adopters and risk-averse, pragmatic Early Majority buyers.",
+            "module": 2
+        },
+        {
+            "question_id": "451387440",
+            "question_text": "What does a Value Hypothesis explain?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "How to raise capital",
+                "B": "How competitors behave",
+                "C": "How technology works",
+                "D": "Why customers will use the product"
+            },
+            "correct_option_label": "D",
+            "explanation": "According to Andy Rachleff, a Value Hypothesis articulates the core reason why customers will adopt and use a product by explaining the specific value and delight it delivers to them.",
+            "module": 2
+        },
+        {
+            "question_id": "451387441",
+            "question_text": "A SaaS startup sells compliance software to banks through account managers, demonstrations, and procurement reviews. Which GTM approach is most appropriate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Viral growth",
+                "B": "B2C self-service",
+                "C": "B2B enterprise sales",
+                "D": "Influencer marketing"
+            },
+            "correct_option_label": "C",
+            "explanation": "Selling high-stakes enterprise compliance solutions involving multiple stakeholders, technical demonstrations, and procurement reviews necessitates a consultative B2B enterprise sales motion.",
+            "module": 3
+        },
+        {
+            "question_id": "451387442",
+            "question_text": "Which growth strategy generally has the lowest Customer Acquisition Cost (CAC)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Marketing-Led Growth",
+                "B": "Sales-Led Growth",
+                "C": "Product-Led Growth",
+                "D": "Traditional Enterprise Sales"
+            },
+            "correct_option_label": "C",
+            "explanation": "Product-Led Growth (PLG) leverages the product experience itself to drive self-service onboarding, virality, and organic referrals, significantly lowering human sales costs and CAC.",
+            "module": 3
+        },
+        {
+            "question_id": "451387443",
+            "question_text": "What is the primary purpose of a Business Model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To define product features",
+                "B": "To define the software architecture",
+                "C": "To document customer requirements",
+                "D": "To explain how an organization creates, delivers, and captures value"
+            },
+            "correct_option_label": "D",
+            "explanation": "As conceptualized in Alex Osterwalder's Business Model Canvas, a business model describes the foundational rationale of how an organization creates, delivers, and captures value.",
+            "module": 3
+        },
+        {
+            "question_id": "451387444",
+            "question_text": "Which pricing strategy is most appropriate for a highly innovative software product with little competition and significant R&D investment?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Penetration Pricing",
+                "B": "Skimming Pricing",
+                "C": "Yield Management",
+                "D": "Promotion Pricing"
+            },
+            "correct_option_label": "B",
+            "explanation": "Price Skimming charges a high price initially to capture consumer surplus and quickly recover heavy R&D investments before direct substitutes enter the market.",
+            "module": 4
+        },
+        {
+            "question_id": "451387445",
+            "question_text": "A software company intentionally provides APIs, SDKs, and revenue-sharing programs to encourage third-party innovation. Which ecosystem strategy is it following?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Keystone",
+                "B": "Vertical Integration",
+                "C": "Niche",
+                "D": "Dominator"
+            },
+            "correct_option_label": "A",
+            "explanation": "A Keystone player acts as an open platform enabler, providing core technology infrastructure, open APIs, and shared value mechanisms to stimulate external partner innovation.",
+            "module": 5
+        },
+        {
+            "question_id": "451387446",
+            "question_text": "A startup has a large consumer user base but very low willingness to pay. Which revenue model is most appropriate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Premium licensing",
+                "B": "Enterprise subscription",
+                "C": "Advertising-supported",
+                "D": "Transaction fee"
+            },
+            "correct_option_label": "C",
+            "explanation": "When consumer willingness to pay is minimal but platform user traffic and engagement scale are high, an ad-supported revenue model effectively monetizes aggregated attention.",
+            "module": 4
+        },
+        {
+            "question_id": "451387447",
+            "question_text": "What is the primary purpose of unit economics in a software startup?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To determine software development costs",
+                "B": "To evaluate profitability at the level of a single customer or transaction",
+                "C": "To calculate annual revenue growth",
+                "D": "To estimate total market size"
+            },
+            "correct_option_label": "B",
+            "explanation": "Unit economics evaluates revenues and costs at the atomic unit level (e.g., per customer or per transaction) to confirm if the core business model is fundamentally profitable and scalable.",
+            "module": 4
+        },
+        {
+            "question_id": "451387448",
+            "question_text": "Which Product Planning approach is most suitable for regulated industries?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "AI-Driven Planning",
+                "B": "Requirements-Driven Planning",
+                "C": "Experimentation-Driven Planning",
+                "D": "Data-Driven Planning"
+            },
+            "correct_option_label": "B",
+            "explanation": "Regulated domains (such as banking and healthcare) demand explicit specifications, backward compatibility, and legal compliance matrices, making Requirements-Driven Planning essential.",
+            "module": 6
+        },
+        {
+            "question_id": "451387449",
+            "question_text": "What is the primary objective of Product Marketing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Connect the product with the market through positioning, messaging, and go-to-market execution",
+                "B": "Develop software architecture",
+                "C": "Build engineering roadmaps",
+                "D": "Manage software testing"
+            },
+            "correct_option_label": "A",
+            "explanation": "Product Marketing focuses on value articulation and adoption, bridging product capabilities to customer demand via clear positioning, target messaging, and GTM execution.",
+            "module": 5
+        },
+        {
+            "question_id": "451387450",
+            "question_text": "The primary objective of TRIAGE is to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Perform system testing.",
+                "B": "Design the solution.",
+                "C": "Estimate implementation effort.",
+                "D": "Quickly classify requirements into must-have, reject, or candidates for detailed analysis."
+            },
+            "correct_option_label": "D",
+            "explanation": "In requirements management, triage is a rapid initial assessment step that filters incoming requests into approved items, rejected items, or candidates requiring detailed analysis.",
+            "module": 6
+        },
+        {
+            "question_id": "451387451",
+            "question_text": "A Product Manager compares the expected revenue increase from two competing features. This activity belongs to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Elicitation",
+                "B": "Verification",
+                "C": "Business Case Analysis",
+                "D": "Validation"
+            },
+            "correct_option_label": "C",
+            "explanation": "Evaluating and forecasting the economic impact, ROI, and revenue potential of competing roadmap candidates is a core component of Business Case Analysis.",
+            "module": 6
+        },
+        {
+            "question_id": "451387452",
+            "question_text": "A CRM vendor allows customers to install marketplace apps without changing the core product. This is an example of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Migration",
+                "B": "Configuration",
+                "C": "Composition",
+                "D": "Customization"
+            },
+            "correct_option_label": "C",
+            "explanation": "Composition enables tailorability by allowing modular third-party extensions or marketplace add-ons to integrate into the product without directly modifying the core codebase.",
+            "module": 3
+        },
+        {
+            "question_id": "451387453",
+            "question_text": "Which GDPR principle requires privacy to be incorporated during system design?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Data Portability",
+                "B": "Data Localization",
+                "C": "Data Protection by Design",
+                "D": "Data Residency"
+            },
+            "correct_option_label": "C",
+            "explanation": "Data Protection by Design (Privacy by Design) requires technical and organizational privacy safeguards to be embedded natively into product architecture from the outset.",
+            "module": 8
+        },
+        {
+            "question_id": "451387454",
+            "question_text": "A startup has completed product development but customers are largely unaware that the problem exists. According to the Product Launch Framework, the company should first:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Launch referral programs.",
+                "B": "Invest in educational marketing.",
+                "C": "Increase engineering capacity.",
+                "D": "Reduce product pricing."
+            },
+            "correct_option_label": "B",
+            "explanation": "When customers are unaware of a latent problem, the pre-purchase awareness phase requires educational marketing, content, and thought leadership to articulate the pain point before selling.",
+            "module": 5
+        },
+        {
+            "question_id": "451387455",
+            "question_text": "Which statement best reflects the purpose of a Product Launch Plan?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It focuses only on marketing campaigns.",
+                "B": "It is primarily a budgeting document.",
+                "C": "It aligns product, marketing, sales, and support activities for a successful launch.",
+                "D": "It replaces product development planning."
+            },
+            "correct_option_label": "C",
+            "explanation": "A product launch is a cross-functional operational process that coordinates engineering readiness, marketing campaigns, sales enablement, and customer support for market release.",
+            "module": 5
+        },
+        {
+            "question_id": "451387456",
+            "question_text": "Which of the following best differentiates B2B launches from B2C launches?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "B2B requires stronger sales and customer success enablement.",
+                "B": "B2B has shorter buying cycles.",
+                "C": "B2B focuses primarily on emotional storytelling.",
+                "D": "B2B relies mainly on influencer marketing."
+            },
+            "correct_option_label": "A",
+            "explanation": "B2B product launches involve multiple institutional buyers and complex SLAs, requiring extensive sales enablement, customer success onboarding, and technical training compared to self-service B2C launches.",
+            "module": 3
+        },
+        {
+            "question_id": "451387457",
+            "question_text": "Value Communication should occur:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only during product launch.",
+                "B": "Only after purchase.",
+                "C": "Before and after purchase.",
+                "D": "Only before purchase."
+            },
+            "correct_option_label": "C",
+            "explanation": "Effective value communication spans both the Pre-Purchase Buyer's Journey (awareness, consideration, decision) and the Post-Purchase Customer's Journey (onboarding, adoption, advocacy).",
+            "module": 5
+        },
+        {
+            "question_id": "451387458",
+            "question_text": "The main objective during the Decision stage is to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduce perceived risk and build confidence.",
+                "B": "Collect customer feedback.",
+                "C": "Increase website traffic.",
+                "D": "Educate customers."
+            },
+            "correct_option_label": "A",
+            "explanation": "During the Decision stage of the buyer's journey, prospective buyers evaluate vendor risk; product teams must mitigate perceived risk using customer references, pilot results, and clear commitments.",
+            "module": 5
+        },
+        {
+            "question_id": "451387459",
+            "question_text": "A software company earns more revenue from consulting projects than from software licenses, causing the product roadmap to slow down. Which startup mistake best describes this situation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ignoring services",
+                "B": "No self-service strategy",
+                "C": "Services revenue becomes addictive",
+                "D": "Underestimating support costs"
+            },
+            "correct_option_label": "C",
+            "explanation": "A common service strategy trap occurs when high-margin consulting revenue becomes addictive, pulling engineering capacity away from scalable product R&D and turning the firm into an IT agency.",
+            "module": 3
+        },
+        {
+            "question_id": "451387460",
+            "question_text": "A startup is developing an AI-powered product where customer requirements are expected to evolve rapidly. Which development methodology is most appropriate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Agile",
+                "B": "Waterfall",
+                "C": "Spiral with fixed scope",
+                "D": "V-Model"
+            },
+            "correct_option_label": "A",
+            "explanation": "Agile methodologies excel under conditions of high market and technological uncertainty by utilizing short time-boxed sprints to adapt continuously to evolving user requirements.",
+            "module": 7
+        },
+        {
+            "question_id": "451387461",
+            "question_text": "Which statement best reflects Agile thinking?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Deliver according to the original plan regardless of customer feedback.",
+                "B": "Freeze requirements before development starts.",
+                "C": "Avoid customer interaction after planning.",
+                "D": "Learn continuously and adapt to maximize value."
+            },
+            "correct_option_label": "D",
+            "explanation": "Agile prioritizes responding to change over following a rigid plan, emphasizing continuous validated learning and iterative adaptations to deliver maximum customer value.",
+            "module": 7
+        },
+        {
+            "question_id": "451387462",
+            "question_text": "Which Scrum role owns the Product Backlog?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Scrum Master",
+                "B": "Project Manager",
+                "C": "Development Team",
+                "D": "Product Owner"
+            },
+            "correct_option_label": "D",
+            "explanation": "In the Scrum framework, the Product Owner (PO) has single-point accountability for creating, refining, prioritizing, and maintaining the Product Backlog.",
+            "module": 7
+        },
+        {
+            "question_id": "451387463",
+            "question_text": "Which prioritization technique is best suited for understanding how customer satisfaction changes over time?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "MoSCoW",
+                "B": "Kano",
+                "C": "RICE",
+                "D": "Cost-Value"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Kano Model classifies feature perception into Must-Be, Performance, and Delighter categories and explicitly tracks how satisfaction evolves over time (yesterday's delighter becomes today's table stakes).",
+            "module": 7
+        },
+        {
+            "question_id": "451387464",
+            "question_text": "The primary objective of the Cost-Value approach is to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Compare customer value against implementation cost",
+                "B": "Estimate project duration",
+                "C": "Measure customer satisfaction",
+                "D": "Estimate technical debt"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Cost-Value matrix plots expected customer value against estimated development cost to identify high-value, low-cost quick wins and eliminate low-value, high-cost features.",
+            "module": 7
+        },
+        {
+            "question_id": "451387465",
+            "question_text": "A feature reaches many customers but requires enormous development effort. According to RICE, its score is likely to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Become impossible to calculate",
+                "B": "Decrease",
+                "C": "Remain unchanged",
+                "D": "Increase significantly"
+            },
+            "correct_option_label": "B",
+            "explanation": "In the RICE prioritization formula, $\\text{RICE Score} = \\frac{\\text{Reach} \\times \\text{Impact} \\times \\text{Confidence}}{\\text{Effort}}$. Since Effort is in the denominator, an enormous effort value decreases the overall score.",
+            "module": 7
+        },
+        {
+            "question_id": "451387466",
+            "question_text": "In MoSCoW, the \"Won't Have\" category primarily helps teams:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increase test coverage",
+                "B": "Increase coding speed",
+                "C": "Avoid scope creep",
+                "D": "Improve UI"
+            },
+            "correct_option_label": "C",
+            "explanation": "The 'Won't Have' category in the MoSCoW framework explicitly defines what is out of scope for the current release window, preventing scope creep and setting clear expectations.",
+            "module": 7
+        },
+        {
+            "question_id": "451387467",
+            "question_text": "Which statement best describes Product Lifecycle Management (PLM)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A release planning technique.",
+                "B": "A holistic approach managing a product from conception to withdrawal.",
+                "C": "A method for software testing.",
+                "D": "A process limited to software development."
+            },
+            "correct_option_label": "B",
+            "explanation": "Product Lifecycle Management (PLM) is the comprehensive business management of a product across all stages of its life, from initial ideation and launch through maturity and eventual sunsetting.",
+            "module": 7
+        },
+        {
+            "question_id": "451387468",
+            "question_text": "Which statement best distinguishes CX from UX?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "UX covers the entire customer lifecycle, while CX focuses only on product usability.",
+                "B": "CX and UX are identical concepts.",
+                "C": "CX includes every customer interaction before, during, and after product use, whereas UX focuses on product interaction.",
+                "D": "UX is owned only by Customer Success."
+            },
+            "correct_option_label": "C",
+            "explanation": "User Experience (UX) focuses specifically on end-user software interaction and usability, whereas Customer Experience (CX) encompasses all touchpoints across marketing, sales, billing, and support.",
+            "module": 5
+        },
+        {
+            "question_id": "451387469",
+            "question_text": "A company receives excellent CSAT scores but low NPS scores. What is the most likely interpretation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customers dislike the product.",
+                "B": "Customers are leaving immediately.",
+                "C": "Customers are satisfied but unwilling to recommend the product.",
+                "D": "Product quality is poor."
+            },
+            "correct_option_label": "C",
+            "explanation": "Customer Satisfaction (CSAT) measures immediate transactional satisfaction with a specific service or feature, whereas Net Promoter Score (NPS) measures loyalty and willingness to actively advocate for the product.",
+            "module": 5
+        },
+        {
+            "question_id": "451387470",
+            "question_text": "A product can fail if:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It lacks desirability",
+                "B": "It lacks feasibility",
+                "C": "It meets viability",
+                "D": "It meets desirability"
+            },
+            "correct_option_label": "A, B",
+            "explanation": "Under the DFV framework, product success requires all three pillars. A product will fail if it lacks Desirability (nobody wants it) or lacks Feasibility (it cannot be built reliably).",
+            "module": 1
+        },
+        {
+            "question_id": "451387471",
+            "question_text": "Indicators of Problem-Solution Fit include:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Clear target customer",
+                "B": "Clear customer problem",
+                "C": "Profitable Business",
+                "D": "High Market Share"
+            },
+            "correct_option_label": "A, B",
+            "explanation": "Problem-Solution Fit occurs early during the validation phase when a startup validates that an unambiguous target customer segment exists and experiences a real, well-defined problem.",
+            "module": 1
+        },
+        {
+            "question_id": "451387472",
+            "question_text": "Which of the following product features primarily deliver Functional Value?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "One-click ordering",
+                "B": "Fast delivery",
+                "C": "Loyalty community membership",
+                "D": "Product Promotion"
+            },
+            "correct_option_label": "A, B",
+            "explanation": "In Bain's Value Pyramid, functional value focuses on practical utility and effort reduction, such as simplifying checkout through one-click ordering and saving time through fast delivery.",
+            "module": 2
+        },
+        {
+            "question_id": "451387473",
+            "question_text": "Which characteristics identify an Earlyvangelist?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Has a clear problem",
+                "B": "Happy with current alternatives",
+                "C": "Has severe budget constraints",
+                "D": "Will advocate if the product works"
+            },
+            "correct_option_label": "A, D",
+            "explanation": "Early Evangelists acutely experience a painful, urgent problem, are dissatisfied with current workarounds, possess budget, and enthusiastically advocate for solutions that work.",
+            "module": 2
+        },
+        {
+            "question_id": "451387474",
+            "question_text": "Which factors help products appeal to the Late Majority?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "New to the market",
+                "B": "Established standards",
+                "C": "Mature ecosystem support",
+                "D": "Cutting-edge experimentation"
+            },
+            "correct_option_label": "B, C",
+            "explanation": "The Late Majority is conservative and risk-averse; they adopt technology only after standards are firmly established, risks are eliminated, and mature partner support ecosystems exist.",
+            "module": 2
+        },
+        {
+            "question_id": "451387475",
+            "question_text": "Which statements support the \"Market over Product\" perspective?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Demand matters more than elegant technology.",
+                "B": "New Product features alone guarantees success.",
+                "C": "Product quality alone guarantees success.",
+                "D": "Market adoption is a key determinant of growth."
+            },
+            "correct_option_label": "A, D",
+            "explanation": "As Marc Andreessen noted, 'the market is the only thing that matters.' Strong market demand pulls products forward, making market adoption and felt need far more critical than standalone technology elegance.",
+            "module": 2
+        },
+        {
+            "question_id": "451387476",
+            "question_text": "A B2C startup wants to accelerate adoption. Which GTM tactics are most appropriate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Low-friction onboarding",
+                "B": "Freemium pricing",
+                "C": "Account Based Marketing",
+                "D": "Enterprise procurement processes"
+            },
+            "correct_option_label": "A, B",
+            "explanation": "B2C adoption scales through frictionless, self-service onboarding and freemium pricing tiers that eliminate financial and cognitive barriers for individual consumers.",
+            "module": 3
+        },
+        {
+            "question_id": "451387477",
+            "question_text": "A platform company wants to transition toward Ecosystem-Led Growth. Which initiatives should it prioritize?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Enterprise sales incentives",
+                "B": "Brand Promotion",
+                "C": "Marketplace creation",
+                "D": "Third-party integrations"
+            },
+            "correct_option_label": "C, D",
+            "explanation": "Ecosystem-Led Growth (ELG) relies on partner network density, requiring open API integrations and developer/application marketplaces to create cross-side network effects.",
+            "module": 3
+        },
+        {
+            "question_id": "451387478",
+            "question_text": "Which Business Model Canvas blocks are most directly related to Desirability?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customer Segments",
+                "B": "Value Proposition",
+                "C": "Key Partners",
+                "D": "Cost Structure"
+            },
+            "correct_option_label": "A, B",
+            "explanation": "When mapping the Business Model Canvas to the DFV framework, the customer-facing elements—Value Propositions, Customer Segments, Channels, and Relationships—represent Desirability.",
+            "module": 3
+        },
+        {
+            "question_id": "451387479",
+            "question_text": "Which statements about pricing strategy are correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Different strategies are appropriate at different stages of a product's life cycle.",
+                "B": "Multiple pricing strategies may coexist for the same product.",
+                "C": "The lowest price is always the best competitive strategy.",
+                "D": "Pricing strategy should be standard across markets"
+            },
+            "correct_option_label": "A, B",
+            "explanation": "Pricing evolves across product lifecycle stages (skimming during launch, penetration during growth) and often coexists in multi-tiered hybrid models (freemium, per-seat, usage-based) within the same product.",
+            "module": 4
+        },
+        {
+            "question_id": "451387480",
+            "question_text": "A startup launches an AI document summarization product using OpenAI APIs and Microsoft Azure infrastructure. Which ecosystem risks does it face?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Platform dependency",
+                "B": "Coding complexity",
+                "C": "Governance changes",
+                "D": "Ecosystem fragmentation"
+            },
+            "correct_option_label": "A, C",
+            "explanation": "Relying wholly on external API providers exposes startups to severe platform dependency and unexpected governance changes (such as API pricing hikes, rate limits, or sudden platform terms shifts).",
+            "module": 5
+        },
+        {
+            "question_id": "451387481",
+            "question_text": "Which observations indicate that a subscription model may be preferable to a one-time license?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customers expect continuous innovation.",
+                "B": "Long-term customer relationships are valuable.",
+                "C": "Customers prefer upfront Capex investments",
+                "D": "Customers purchase only once and never return."
+            },
+            "correct_option_label": "A, B",
+            "explanation": "Subscription models thrive when software requires ongoing cloud updates, continuous feature releases, and long-term customer engagement that maximizes Customer Lifetime Value (LTV).",
+            "module": 4
+        },
+        {
+            "question_id": "451387482",
+            "question_text": "Which observations should alert management to deteriorating unit economics?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rising CAC.",
+                "B": "Declining retention.",
+                "C": "Rising gross margins.",
+                "D": "Higher NPS."
+            },
+            "correct_option_label": "A, B",
+            "explanation": "Escalating Customer Acquisition Cost (CAC) and falling customer retention (higher churn) signal severe deterioration in unit economics, creating an unsustainable cash burn trajectory.",
+            "module": 4
+        },
+        {
+            "question_id": "451387483",
+            "question_text": "A banking software company is launching its product in five countries with different financial regulations. Which planning activities should receive the highest priority?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Regulatory requirement analysis.",
+                "B": "Enterprise customization.",
+                "C": "Customer Satisfaction Survey.",
+                "D": "Budget Analysis."
+            },
+            "correct_option_label": "A, B",
+            "explanation": "Multi-country banking rollouts demand strict adherence to local compliance mandates and non-invasive architectural customization (such as localization rule engines) to function legally.",
+            "module": 6
+        },
+        {
+            "question_id": "451387484",
+            "question_text": "Why is Voice of Customer important?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Understand customer needs",
+                "B": "Budget estimate improvements",
+                "C": "Validate Product Positioning",
+                "D": "Improve investor relations"
+            },
+            "correct_option_label": "A, C",
+            "explanation": "Voice of the Customer (VoC) gathers direct customer feedback to uncover authentic unmet needs and validate whether product positioning resonates with market realities.",
+            "module": 5
+        },
+        {
+            "question_id": "451387485",
+            "question_text": "Which components should be included in a comprehensive product launch plan?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product Development Methodology",
+                "B": "Marketing campaigns",
+                "C": "Sales training",
+                "D": "Technology Architecture Review"
+            },
+            "correct_option_label": "B, C",
+            "explanation": "A complete go-to-market launch plan synchronizes customer-facing marketing campaigns with sales enablement, training playbooks, and support readiness.",
+            "module": 5
+        },
+        {
+            "question_id": "451387486",
+            "question_text": "A Product Manager is deciding whether a new customer request should be addressed through consulting /customisation services or added to the core product. Which factors should influence the decision?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Will many customers benefit from the capability?",
+                "B": "Does it align with the long-term product strategy?",
+                "C": "Can it be improve services revenue ?",
+                "D": "Can it help marketing campaigns ?"
+            },
+            "correct_option_label": "A, B",
+            "explanation": "Standard core software features must provide widespread utility across the target market and align with strategic product vision rather than serving one-off consulting requests.",
+            "module": 3
+        },
+        {
+            "question_id": "451387487",
+            "question_text": "A Product Manager leading an Agile team should encourage:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Frequent stakeholder feedback.",
+                "B": "Iterative product releases.",
+                "C": "Pricing strategy improvements",
+                "D": "Customer Acquisition strategies"
+            },
+            "correct_option_label": "A, B",
+            "explanation": "In an Agile development environment, PMs foster iterative release cadences (sprints) coupled with continuous stakeholder and customer feedback loops.",
+            "module": 7
+        },
+        {
+            "question_id": "451387488",
+            "question_text": "A Product Manager deciding between Waterfall and Agile should evaluate:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Pricing power",
+                "B": "Frequency of customer feedback.",
+                "C": "Market uncertainty.",
+                "D": "Fund rising choices."
+            },
+            "correct_option_label": "B, C",
+            "explanation": "Development methodology selection depends fundamentally on market uncertainty and the desired frequency of customer feedback loops (high uncertainty favors Agile).",
+            "module": 7
+        },
+        {
+            "question_id": "451387489",
+            "question_text": "Which Business Model Canvas blocks are most directly related to Feasibility?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customer Segments",
+                "B": "Key Partners",
+                "C": "Key Activities",
+                "D": "Revenue Streams"
+            },
+            "correct_option_label": "B, C",
+            "explanation": "Under the DFV mapping of the Business Model Canvas, operational backend blocks—Key Activities, Key Resources, and Key Partners—represent the Feasibility pillar.",
+            "module": 3
+        }
+    ]
+}
