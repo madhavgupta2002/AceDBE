@@ -1,0 +1,332 @@
+{
+    "exam_metadata": {
+        "subject_name": "Business Research and Growth Systems Architecture",
+        "exam_date": "22 August 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "4513871",
+            "question_text": "Lean validation is best described as the practice of",
+            "question_type": "MCQ",
+            "options": {
+                "A": "conducting financial modelling for a new product line",
+                "B": "running a marketing campaign before a product launches",
+                "C": "testing whether real demand exists before committing resources to build",
+                "D": "writing a business plan before approaching investors"
+            },
+            "correct_option_label": "C",
+            "explanation": "Lean validation is the discipline of testing whether real market demand exists for a product or service before committing capital, engineering, or operational resources to build it. This reduces downside risk by validating observable customer behavior at minimal cost.",
+            "module": 1
+        },
+        {
+            "question_id": "4513872",
+            "question_text": "A landing page test shows a 4% click-through rate from ad to page, a 6% signup rate on the page, and a 68% bounce rate. Using the Three-Signal Framework, which signal is failing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The intent signal and the quality signal",
+                "B": "All three signals are passing",
+                "C": "Only the quality signal",
+                "D": "Only the traffic signal"
+            },
+            "correct_option_label": "A",
+            "explanation": "According to the Three-Signal Framework, the benchmark thresholds are: Traffic Signal (CTR) $\\ge 3\\%$, Intent Signal (Signup Rate) $\\ge 15\\%$, and Quality Signal (Bounce Rate) $< 60\\%$. Here, the CTR ($4\\%$) passes, but the signup rate ($6\\% < 15\\%$) and bounce rate ($68\\% \\ge 60\\%$) both fail.",
+            "module": 1
+        },
+        {
+            "question_id": "4513873",
+            "question_text": "Which survey question is most likely to produce biased results?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "On a scale of 1 to 10, how often did you face this problem last month?",
+                "B": "Would you find a tool that saves you time on X useful?",
+                "C": "How many hours per week do you currently spend on X?",
+                "D": "Which of these three problems has cost you the most time this month?"
+            },
+            "correct_option_label": "B",
+            "explanation": "\"Would you find a tool that saves you time on X useful?\" suffers from hypothetical bias and leading question bias. It prompts respondents to speculate on future intent under zero financial or behavioral cost, whereas un-biased validation questions anchor strictly in past behavior.",
+            "module": 1
+        },
+        {
+            "question_id": "4513874",
+            "question_text": "In an A/B test, the null hypothesis states that",
+            "question_type": "MCQ",
+            "options": {
+                "A": "the new variant will definitely outperform the control",
+                "B": "the test should be stopped immediately",
+                "C": "the sample size was too small to matter",
+                "D": "there is no real difference between the variant and the control"
+            },
+            "correct_option_label": "D",
+            "explanation": "The null hypothesis ($H_0$) represents the baseline statistical assumption that no real difference, effect, or change exists between the tested variant and the control. The purpose of an experiment is to gather sufficient data to reject $H_0$.",
+            "module": 2
+        },
+        {
+            "question_id": "4513875",
+            "question_text": "A D2C brand ships a new checkout flow because a test showed a lift, but the lift was actually noise and true performance was unchanged. This is an example of",
+            "question_type": "MCQ",
+            "options": {
+                "A": "correct decision making under uncertainty",
+                "B": "a Type II error",
+                "C": "a Type I error",
+                "D": "a sampling error unrelated to hypothesis testing"
+            },
+            "correct_option_label": "C",
+            "explanation": "A Type I error (False Positive) occurs when an experiment mistakenly rejects the null hypothesis, concluding that an effect or lift exists when the observed difference was purely random noise. The probability of this error is governed by $\\alpha$ (typically $0.05$).",
+            "module": 2
+        },
+        {
+            "question_id": "4513876",
+            "question_text": "A cohort in growth analytics refers to",
+            "question_type": "MCQ",
+            "options": {
+                "A": "the highest-paying segment of customers",
+                "B": "any random sample of users pulled for analysis",
+                "C": "a group of users who share a common starting point, such as signup week",
+                "D": "all users active on the platform on a given day"
+            },
+            "correct_option_label": "C",
+            "explanation": "A cohort is defined as a group of users who share a common entry event or starting attribute (such as signup date, first purchase month, or acquisition channel) tracked over standardized time intervals to evaluate retention and behavior over time.",
+            "module": 3
+        },
+        {
+            "question_id": "4513877",
+            "question_text": "A B2B company spends 4,00,000 rupees across all channels in a month and acquires 80 new paying customers in that period. What is the blended CAC?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rs 5,000",
+                "B": "Rs 3,200",
+                "C": "Rs 8,000",
+                "D": "Rs 50,000"
+            },
+            "correct_option_label": "A",
+            "explanation": "Blended Customer Acquisition Cost (CAC) is calculated by dividing total sales and marketing spend across all channels by the total number of new paying customers acquired:\n$$\\text{Blended CAC} = \\frac{\\text{Total Spend}}{\\text{New Customers}} = \\frac{\\text{Rs } 4,00,000}{80} = \\text{Rs } 5,000$$",
+            "module": 3
+        },
+        {
+            "question_id": "4513878",
+            "question_text": "A D2C brand sees flat acquisition, declining Month-1 retention over three consecutive cohorts, and a CAC that has stayed constant. Based on this pattern, which decision is most defensible?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Scale acquisition spend immediately to grow faster",
+                "B": "Pause and investigate the retention decline before scaling acquisition further",
+                "C": "Ignore retention since CAC has not changed",
+                "D": "Pivot the entire business model"
+            },
+            "correct_option_label": "B",
+            "explanation": "Pouring money into acquisition when retention is deteriorating creates a \"leaky bucket\" where acquired users systematically churn. The defensible action is to pause acquisition spend and investigate the root cause of the retention drop before scaling further.",
+            "module": 3
+        },
+        {
+            "question_id": "4513879",
+            "question_text": "Which statement best distinguishes growth from marketing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Growth works across the entire AARRR funnel including product and retention, while marketing typically focuses on acquisition and brand",
+                "B": "Growth only uses paid channels while marketing only uses organic channels",
+                "C": "Marketing and growth are the same discipline with different names",
+                "D": "Growth is a department while marketing is a mindset"
+            },
+            "correct_option_label": "A",
+            "explanation": "Marketing primarily owns top-of-funnel demand generation, awareness, and acquisition campaigns, whereas Growth operates across the full AARRR funnel, optimizing transitions between acquisition, activation, retention, revenue, and referral via experiment sprints.",
+            "module": 4
+        },
+        {
+            "question_id": "45138710",
+            "question_text": "A company has healthy acquisition and strong activation, but only 20 percent of activated users are still active by Month 3, compared to a category benchmark of 45 percent. What is the most likely primary constraint?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Referral",
+                "B": "Activation",
+                "C": "Retention",
+                "D": "Acquisition"
+            },
+            "correct_option_label": "C",
+            "explanation": "Because acquisition and initial activation are healthy but users drop sharply between activation and Month 3 (20% vs. 45% category benchmark), the bottleneck is user drop-off post-onboarding. Under the Theory of Constraints, this points directly to a Retention constraint.",
+            "module": 4
+        },
+        {
+            "question_id": "45138711",
+            "question_text": "Channel-market fit means",
+            "question_type": "MCQ",
+            "options": {
+                "A": "choosing the most popular social platform regardless of audience",
+                "B": "selecting a channel because a competitor uses it",
+                "C": "using every available channel simultaneously to maximise reach",
+                "D": "matching a channel to where your specific ICP already spends attention and how they make decisions"
+            },
+            "correct_option_label": "D",
+            "explanation": "Channel-market fit occurs when a channel's inherent properties (targeting, control, unit economics, intent) match the product's business model and align with where the Ideal Customer Profile (ICP) naturally consumes information and makes buying decisions.",
+            "module": 5
+        },
+        {
+            "question_id": "45138712",
+            "question_text": "The AHA Moment in a product is best defined as",
+            "question_type": "MCQ",
+            "options": {
+                "A": "the moment a user unsubscribes from the newsletter",
+                "B": "the specific moment a user first experiences the product's core value",
+                "C": "the point at which a company is founded",
+                "D": "the point where a user first sees the pricing page"
+            },
+            "correct_option_label": "B",
+            "explanation": "The AHA moment is the discrete, timestamped occurrence when a new user first experiences the core promised value of the product. Achieving this quickly is strongly correlated with long-term user retention.",
+            "module": 5
+        },
+        {
+            "question_id": "45138713",
+            "question_text": "A habit loop typically consists of",
+            "question_type": "MCQ",
+            "options": {
+                "A": "price, discount, and checkout",
+                "B": "awareness, interest, and desire",
+                "C": "acquisition, activation, and retention",
+                "D": "cue, action, and reward"
+            },
+            "correct_option_label": "D",
+            "explanation": "A behavioral habit loop is structured around a cue (or trigger) that prompts a behavior, the action taken by the user, and the variable reward received, which reinforces the routine over time.",
+            "module": 6
+        },
+        {
+            "question_id": "45138714",
+            "question_text": "A key structural difference between B2B and B2C retention is that",
+            "question_type": "MCQ",
+            "options": {
+                "A": "B2B retention is usually tied to individual habit formation, while B2C retention depends on procurement cycles",
+                "B": "B2C products never have a renewal or repurchase cycle",
+                "C": "Retention works identically in both models",
+                "D": "B2B retention often depends on team-wide adoption and contract cycles, while B2C retention often depends on individual habit and repeat purchase behaviour"
+            },
+            "correct_option_label": "D",
+            "explanation": "B2B retention is account-level (logo retention) driven by buying committees, team adoption, workflows, and contract renewal cycles. B2C retention is consumer-level, depending largely on personal habit formation and prompt repurchases.",
+            "module": 6
+        },
+        {
+            "question_id": "45138715",
+            "question_text": "A pricing model shapes customer behaviour primarily by",
+            "question_type": "MCQ",
+            "options": {
+                "A": "only affecting the company's internal accounting",
+                "B": "having no effect on how customers use or perceive the product",
+                "C": "being fixed once and never revisited",
+                "D": "determining which features customers use, how they perceive value, and when they upgrade"
+            },
+            "correct_option_label": "D",
+            "explanation": "Pricing is a structural behavioral engine. Tiers, limits, and seat models dictate feature utilization, anchor perceived product value, and create natural expansion triggers as customers scale their usage.",
+            "module": 7
+        },
+        {
+            "question_id": "45138716",
+            "question_text": "Integrating sales into the AARRR framework mainly affects which stages?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Acquisition and activation, since sales often influences how a deal is won and onboarded",
+                "B": "Only revenue, and nothing else in the funnel",
+                "C": "Only acquisition",
+                "D": "Only referral"
+            },
+            "correct_option_label": "A",
+            "explanation": "In B2B and sales-assisted models, the sales motion directly controls top-of-funnel conversion (Acquisition via SDR prospecting and demos) and initial customer handoff/onboarding (Activation via kickoff calls and guided setup).",
+            "module": 7
+        },
+        {
+            "question_id": "45138717",
+            "question_text": "In the ICE scoring framework, a high Confidence score should reflect",
+            "question_type": "MCQ",
+            "options": {
+                "A": "how cheap the experiment is to run",
+                "B": "how strong the evidence is that the experiment will produce the expected result",
+                "C": "how much the team likes the idea personally",
+                "D": "how big the potential upside is if the experiment succeeds"
+            },
+            "correct_option_label": "B",
+            "explanation": "Confidence in ICE evaluates the empirical strength of supporting evidence (past product experiments, validated data, or customer research). If a team cannot articulate the supporting evidence in a single sentence, Confidence must not be scored high.",
+            "module": 8
+        },
+        {
+            "question_id": "45138718",
+            "question_text": "Which of these is most likely to be a vanity metric on its own?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Payback period in months",
+                "B": "Total registered users, with no reference to activation or retention",
+                "C": "Month 3 retention rate",
+                "D": "Customer acquisition cost by channel"
+            },
+            "correct_option_label": "B",
+            "explanation": "Total registered users is a cumulative metric that only increases over time and conceals underlying churn (\"the leaky bucket\"). Without rates of activation, engagement, or retention, it provides zero actionable insight into business health.",
+            "module": 8
+        },
+        {
+            "question_id": "45138719",
+            "question_text": "Treating AARRR as an integrated system rather than a checklist means",
+            "question_type": "MCQ",
+            "options": {
+                "A": "running each stage independently with no shared metrics or feedback loops",
+                "B": "recognising that a change in one stage, such as activation, affects downstream stages like retention and revenue",
+                "C": "only focusing on the acquisition stage since it comes first",
+                "D": "completing each stage once and never revisiting it"
+            },
+            "correct_option_label": "B",
+            "explanation": "Systems thinking in growth views AARRR as an interconnected flywheel with feedback loops: improvements in upstream stages (e.g., faster activation) directly compound downstream retention, customer lifetime value, and referral efficiency.",
+            "module": 8
+        },
+        {
+            "question_id": "45138720",
+            "question_text": "A growth backlog entry is missing a decision rule. Why does this matter?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Decision rules are only needed for experiments that fail",
+                "B": "It does not matter, decision rules are optional documentation",
+                "C": "Without a pre-set rule for what result triggers scale, kill, or iterate, the team risks making a biased call after seeing the result",
+                "D": "Decision rules only apply to pricing experiments"
+            },
+            "correct_option_label": "C",
+            "explanation": "Pre-registering decision rules establishes non-negotiable quantitative thresholds for Scale, Kill, and Iterate before data collection starts. This eliminates post-hoc rationalization, goalpost shifting, and confirmation bias.",
+            "module": 8
+        },
+        {
+            "question_id": "45138721",
+            "question_text": "Each question presents a short scenario followed by a task. Structure your answer to address every part of the task directly. [5 Marks]\n\nA two-person B2B startup wants to test whether founders would pay for a tool that auto-drafts follow-up emails after sales calls, before writing any code. They have Rs 5,000 to spend and three weeks.\n\nDesign one smoke test for this idea. State the exact test, the primary metric you would track, the benchmark that would count as a pass, and one risk that this test would NOT rule out.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. Exact Smoke Test Design:**\nA Concierge / Landing Page Pre-Sales Test. Build a single-page site (via Carrd) or conduct direct outbound founder outreach on LinkedIn to 50 sales leaders/founders. Offer an early-adopter \"Founding Member Paid Pilot\" where the startup promises automated sales follow-up drafts for a refundable deposit of Rs 999 for the first month (executed manually behind the scenes by the founders using call recordings/notes).\n\n**2. Primary Metric Tracked:**\nDeposit / Pre-order Conversion Rate (Number of paid pilot deposits collected divided by qualified founder demo/landing page conversations).\n\n**3. Pass Benchmark:**\nAt least 5 paying commitments / signed deposits ($\\ge 10\\%$ conversion from a target list of 50 qualified founders) achieved within the 3-week window.\n\n**4. Risk NOT Ruled Out:**\nLong-term retention and habit formation (churn risk). While a pre-sale confirms willingness to pay upfront, it does not prove users will integrate the tool into their daily sales workflow repeatedly over multiple months once automated.",
+            "module": 1
+        },
+        {
+            "question_id": "45138722",
+            "question_text": "Each question presents a short scenario followed by a task. Structure your answer to address every part of the task directly. [5 Marks]\n\nA company's Month 1 retention has held steady at 30 percent across the last four cohorts. Blended CAC has increased from Rs 2,000 to Rs 3,400 over the same period, while the acquisition channel mix has not changed.\n\nIdentify the most likely driver of the CAC increase given that retention and channel mix are both stable, and explain what this means for how the company should evaluate its acquisition spend.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. Most Likely Driver of CAC Increase:**\nSince retention and channel mix are unchanged, the increase in CAC (Rs 2,000 to Rs 3,400, a $70\\%$ rise) is driven by top-of-funnel ad auction inflation, rising Cost Per Click (CPC) / Cost Per Lead (CPL), creative ad fatigue, or audience saturation within existing channels. The company is having to spend more to capture the same volume of prospects.\n\n**2. Evaluation of Acquisition Spend:**\n- **Analyze Channel-Specific & Cohort-Adjusted CAC:** The company must stop relying on blended figures and evaluate CAC at the channel and campaign level to isolate which specific campaigns suffered efficiency decay.\n- **Check Payback Period Deterioration:** The $70\\%$ surge in acquisition cost significantly extends the CAC payback window and compresses the LTV:CAC ratio. The company should pause budget expansions, refresh creative messaging, and optimize conversion rates before allocating additional capital.",
+            "module": 3
+        },
+        {
+            "question_id": "45138723",
+            "question_text": "Each question presents a short scenario followed by a task. Structure your answer to address every part of the task directly. [5 Marks]\n\nA B2B company selling to finance teams at mid-size firms is currently running consumer-style Instagram ads because a competitor uses them, and has seen almost no qualified leads after two months.\n\nUsing channel-market fit logic, explain why this channel choice is likely mismatched to this ICP, and recommend one more appropriate channel with a one-sentence rationale.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. Channel-Market Mismatch Analysis:**\nChannel-market fit dictates that channel properties (targeting, intent, context) must match the buyer persona and product economics. Instagram is an entertainment-oriented, consumer B2C visual discovery channel. Finance decision-makers at mid-size firms do not evaluate or procure complex enterprise financial tools during personal social media browsing; they require high-consideration vetting, formal compliance checks, and clear ROI justification.\n\n**2. Recommended Channel & Rationale:**\n**Founder-Led Cold Outbound (Email & LinkedIn):** This channel enables hyper-specific role-based targeting (e.g., CFOs / Heads of Finance at mid-size firms) and allows personalized framing around specific operational bottlenecks (e.g., month-end reconciliation pain) directly within the professional context where purchasing decisions are evaluated.",
+            "module": 5
+        },
+        {
+            "question_id": "45138724",
+            "question_text": "Each question presents a short scenario followed by a task. Structure your answer to address every part of the task directly. [5 Marks]\n\nA SaaS company has a single Rs 1,500 per month plan with all features included. CAC is Rs 9,000 and average gross margin per customer is Rs 1,050 per month. Leadership wants to shorten payback period without raising CAC.\n\nCalculate the current payback period, then propose one pricing structure change that could shorten it, explaining the mechanism by which it would help.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. Calculation of Current Payback Period:**\n$$\\text{Payback Period (Months)} = \\frac{\\text{CAC}}{\\text{Monthly Gross Margin per Customer}} = \\frac{\\text{Rs } 9,000}{\\text{Rs } 1,050} \\approx 8.57 \\text{ months}$$\n\n**2. Proposed Pricing Structure Change:**\nIntroduce an **Annual Upfront Billing Option** (e.g., Rs 15,000 billed annually upfront at a slight discount) or introduce a **Tiered Per-Seat Structure** (e.g., base plan at Rs 1,500 for up to 2 seats, plus Rs 750/month per additional seat).\n\n**3. Mechanism of Shortening Payback:**\nAnnual upfront billing collects 10–12 months of cash immediately at checkout, bringing cash payback down to Day 0. Alternatively, per-seat tiered pricing increases Average Revenue Per User (ARPU) and monthly gross profit contribution from larger accounts without requiring any additional acquisition expenditure.",
+            "module": 7
+        },
+        {
+            "question_id": "45138725",
+            "question_text": "This questions require a complete, structured response. Address every part of each question. [10 Marks]\n\nA two-founder B2B startup believes mid-size logistics companies would pay for a tool that automatically flags shipment delays before customers complain. They have no product built, Rs 20,000 to spend, and 5 weeks before a planned fundraise. Design a complete validation plan for this idea. Your answer should name the validation method(s) you would use, in what order, the specific metrics and pass/fail thresholds for each, and a one-paragraph justification for why this plan fits the founders' constraints of budget, time, and the fundraise deadline.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "### Complete Validation Plan\n\n#### 1. Validation Methods and Execution Sequence\n- **Phase 1: Diagnostic Problem Discovery (Week 1–2):** Direct founder outbound to 30 Logistics / Operations Directors at mid-size companies. Conduct 15 structured discovery interviews focused entirely on past behavior (cost of delayed customer complaints, existing manual tracking workarounds).\n- **Phase 2: Pre-Sales Smoke Test / Letter of Intent (LOI) Campaign (Weeks 3–4):** Present a solution one-pager and offer a \"Paid Pilot / Early Adopter Agreement\" providing automated shipment delay alerts for a pilot fee of Rs 5,000/month or a formal signed non-binding Letter of Intent (LOI).\n- **Phase 3: Wizard-of-Oz / Concierge Validation (Week 5):** Manually ingest shipment tracking spreadsheets/APIs for 1–2 committed pilot clients, manually sending alert drafts to prove operational feasibility and value delivery.\n\n#### 2. Specific Metrics and Pass/Fail Thresholds\n- **Discovery Pass Threshold:** $\\ge 10$ out of 15 logistics heads ($>65\\%$) cite customer complaint tracking as one of their top 3 operational daily headaches and report incurring financial penalties or customer churn as a result.\n- **Commitment Pass Threshold:** At least **3 signed LOIs** or **2 paid pilot deposits** secured within the 3-week selling window.\n\n#### 3. Justification Under Constraints\nThis plan directly honors all founder constraints: direct founder outreach consumes almost zero capital (preserving the Rs 20,000 budget for software tooling and travel), can be completed well within the 5-week timeframe, and produces the highest possible commitment signal (signed LOIs/pilot revenue) to present hard behavioral proof of demand to prospective investors during the fundraise.",
+            "module": 1
+        },
+        {
+            "question_id": "45138726",
+            "question_text": "This questions require a complete, structured response. Address every part of each question . [10 Marks]\n\nChoose ONE stage of AARRR (Acquisition, Activation, Retention, Referral, or Revenue) and describe one specific, realistic intervention within it for a B2B or B2C company of your choice. Then trace how this single intervention could plausibly affect at least two OTHER stages of AARRR, positive or negative, explaining the mechanism for each ripple effect. Conclude with one sentence on why treating AARRR as an integrated system, rather than five separate checklists, changes how a growth team should prioritise its work.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "### Integrated AARRR Analysis\n\n#### 1. Selected Stage and Intervention\n- **Company:** Clairo (B2B SaaS meeting recorder and follow-up tool).\n- **Stage:** **Activation**.\n- **Intervention:** Implement a guided \"Instant AHA\" first-run flow: immediately after signup, the onboarding bot automatically syncs with the user's calendar, pre-fills a 30-second interactive test recording, and generates a completed follow-up draft email within 3 minutes of initial login.\n\n#### 2. Ripple Effects on Two Other Stages\n- **Ripple Effect 1: Impact on Retention (Positive):**\n  * *Mechanism:* Compressing the Time-to-AHA from 14 minutes down to under 3 minutes ensures users immediately experience core product value during their peak intent window. This drives habit formation, significantly reducing the Phase 1 onboarding cliff and increasing Month 1 cohort retention.\n- **Ripple Effect 2: Impact on Revenue (Positive):**\n  * *Mechanism:* Higher user activation directly increases the pool of qualified active accounts that reach free-tier limits (e.g., 5 meetings/month). This accelerates the Pro-to-Team seat upgrade rate, boosting Average Revenue Per User (ARPU) and shortening the CAC payback period.\n\n#### 3. Concluding System Insight\nTreating AARRR as an integrated system changes prioritization from locally optimizing isolated vanity metrics to identifying and solving the single primary constraint whose upstream and downstream feedback loops drive the greatest compounding revenue output.",
+            "module": 8
+        }
+    ]
+}

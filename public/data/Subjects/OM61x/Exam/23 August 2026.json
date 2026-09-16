@@ -1,0 +1,920 @@
+{
+    "exam_metadata": {
+        "subject_name": "Supply Chain And Logistics Management",
+        "exam_date": "23 August 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "451387242",
+            "question_text": "A customer values a product at ₹1,800. Across all stages, the supply chain incurs ₹1,250 to fulfil the request. What is the supply chain surplus for that transaction?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1250",
+                "B": "550",
+                "C": "3050",
+                "D": "1800"
+            },
+            "correct_option_label": "B",
+            "explanation": "Supply Chain Surplus is defined as the total value generated for the customer minus the total supply chain cost incurred across all stages:\n$$\\text{Supply Chain Surplus} = \\text{Customer Value} - \\text{Total Supply Chain Cost} = 1800 - 1250 = 550$$",
+            "module": 1
+        },
+        {
+            "question_id": "451387243",
+            "question_text": "A retailer decides today whether to build a regional fulfilment centre that will operate for the next eight years. This is primarily a supply chain:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "strategy/design decision",
+                "B": "planning decision",
+                "C": "operations decision",
+                "D": "customer-order-cycle decision"
+            },
+            "correct_option_label": "A",
+            "explanation": "Supply chain strategy or design decisions have a long-term time horizon (several years) and involve structural network design choices such as facility location, capacity allocation, and warehouse construction that cannot be easily reversed in the short term.",
+            "module": 1
+        },
+        {
+            "question_id": "451387244",
+            "question_text": "In the push/pull view, the push–pull boundary separates processes initiated:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "for products from those for services",
+                "B": "in response to a customer order from those performed in anticipation of orders",
+                "C": "by CRM from those initiated by SRM",
+                "D": "inside the firm from processes performed by suppliers"
+            },
+            "correct_option_label": "B",
+            "explanation": "The push/pull boundary separates pull processes (which are triggered reactively in response to an explicit customer order) from push processes (which are initiated proactively in anticipation of customer demand based on forecasts).",
+            "module": 1
+        },
+        {
+            "question_id": "451387245",
+            "question_text": "A fashion start-up offers frequent new designs, short promised lead times and uncertain launch demand. Which supply chain capability best supports strategic fit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Maximum finished-goods centralization regardless of lead time",
+                "B": "Lowest purchase price even if lead time becomes less reliable",
+                "C": "Responsiveness through flexible capacity and fast replenishment",
+                "D": "High asset utilization with long production runs"
+            },
+            "correct_option_label": "C",
+            "explanation": "Short lead times, high product variety, and uncertain launch demand create high implied demand uncertainty. Under the strategic fit framework, high implied uncertainty must be matched with a responsive supply chain utilizing flexible capacity and rapid replenishment.",
+            "module": 1
+        },
+        {
+            "question_id": "451387246",
+            "question_text": "A firm reports 42 days of inventory, 18 days of receivables and 35 days of payables. Its cash-to-cash cycle is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "77 days",
+                "B": "25 days",
+                "C": "59 days",
+                "D": "95 days"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Cash-to-Cash (C2C) cycle measures the net elapsed time from paying for inputs to collecting customer payments:\n$$\\text{C2C} = \\text{Days of Inventory} + \\text{Days of Receivables} - \\text{Days of Payables} = 42 + 18 - 35 = 25\\text{ days}$$",
+            "module": 1
+        },
+        {
+            "question_id": "451387247",
+            "question_text": "A distributor shifts urgent orders from rail to air. Which statement best captures the likely trade-off?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Responsiveness falls because faster modes require more information",
+                "B": "Transportation cost falls; cycle inventory necessarily rises",
+                "C": "Transportation cost rises; responsiveness improves and pipeline inventory may fall",
+                "D": "Transportation cost and responsiveness both fall"
+            },
+            "correct_option_label": "C",
+            "explanation": "Air freight is significantly faster than rail, which improves responsiveness and reduces transit flow time ($T$), thereby reducing pipeline inventory ($I = d \\cdot T$). However, air transport commands higher freight charges, causing transportation costs to rise.",
+            "module": 1
+        },
+        {
+            "question_id": "451387248",
+            "question_text": "Demand repeatedly rises during the same festival period each year. This component is best described as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "random error",
+                "B": "seasonality",
+                "C": "trend",
+                "D": "horizontal variation"
+            },
+            "correct_option_label": "B",
+            "explanation": "Seasonality represents regular, predictable demand fluctuations that recur at fixed calendar intervals or annual periods (such as festive seasons or holiday peaks).",
+            "module": 2
+        },
+        {
+            "question_id": "451387249",
+            "question_text": "A home-appliance company sells two product families. Basic ceiling fans have stable demand, long life cycles and intense price competition. Smart air purifiers have uncertain launch demand, frequent feature changes and customers who expect quick availability. Which network choice best achieves strategic fit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Use decentralized finished-goods inventory for fans and postpone all purifier production until an order arrives",
+                "B": "Make both networks maximally responsive regardless of the additional cost",
+                "C": "Use the same highly utilized, long-run production and centralized inventory system for both families",
+                "D": "Run fans through an efficient, scale-oriented network while using flexible capacity and faster replenishment for purifiers"
+            },
+            "correct_option_label": "D",
+            "explanation": "Strategic fit requires tailored supply chains for diverse product lines: commodity goods with predictable demand (fans) are best served by cost-efficient, scale-driven supply chains, whereas innovative goods with high uncertainty (purifiers) require responsive networks.",
+            "module": 1
+        },
+        {
+            "question_id": "451387250",
+            "question_text": "A call centre changes staffing each month to track forecast demand closely and carries little unused capacity. This most closely resembles a:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "continuous-review strategy",
+                "B": "pure postponement strategy",
+                "C": "level strategy",
+                "D": "chase strategy"
+            },
+            "correct_option_label": "D",
+            "explanation": "A chase strategy dynamically adjusts workforce staffing or capacity levels to match fluctuating demand over time, avoiding idle capacity and eliminating inventory builds.",
+            "module": 2
+        },
+        {
+            "question_id": "451387251",
+            "question_text": "Inventory held to protect against demand or lead-time variability is called:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "cycle stock",
+                "B": "safety stock",
+                "C": "pipeline inventory",
+                "D": "anticipation inventory"
+            },
+            "correct_option_label": "B",
+            "explanation": "Safety stock is buffer inventory held over and above expected baseline demand to prevent stock-outs caused by demand surges or vendor delivery lead-time variability.",
+            "module": 3
+        },
+        {
+            "question_id": "451387252",
+            "question_text": "Under the basic EOQ model, if annual demand becomes four times as large while all other inputs remain unchanged, EOQ becomes:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "unchanged",
+                "B": "one-fourth as large",
+                "C": "twice as large",
+                "D": "four times as large"
+            },
+            "correct_option_label": "C",
+            "explanation": "The Economic Order Quantity formula is:\n$$\\text{EOQ} = \\sqrt{\\frac{2DK}{h}}$$\nReplacing annual demand $D$ with $4D$ yields:\n$$\\text{EOQ}' = \\sqrt{\\frac{2(4D)K}{h}} = \\sqrt{4} \\times \\sqrt{\\frac{2DK}{h}} = 2 \\times \\text{EOQ}$$\nThus, the order quantity becomes twice as large.",
+            "module": 3
+        },
+        {
+            "question_id": "451387253",
+            "question_text": "Supplier A quotes a lower unit price than Supplier B, but has higher defect rates, longer lead times and frequent emergency freight. The sound sourcing decision should primarily compare:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "the suppliers’ advertising budgets",
+                "B": "the number of years each supplier has existed",
+                "C": "total cost for the required service and risk profile",
+                "D": "quoted prices only"
+            },
+            "correct_option_label": "C",
+            "explanation": "Strategic sourcing applies a Total Cost of Ownership (TCO) approach, which accounts for unit price, inventory carrying costs of longer lead times, scrap/defect quality costs, and expediting transport charges rather than evaluating purchase price in isolation.",
+            "module": 4
+        },
+        {
+            "question_id": "451387254",
+            "question_text": "A firm has stable base demand for a mature product but highly uncertain surge demand. Which tailored-sourcing arrangement is most appropriate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Use only the lowest-cost distant source for all volume",
+                "B": "Allocate predictable base volume to a low-cost source and uncertain surge volume to a responsive source",
+                "C": "Split every order equally without considering demand characteristics",
+                "D": "Use only the fastest source for all volume"
+            },
+            "correct_option_label": "B",
+            "explanation": "A tailored sourcing portfolio matches demand profiles with supplier capabilities: assigning stable, predictable base volume to an efficient, low-cost supplier (often offshore) while reserving a flexible, responsive supplier (often nearshore/domestic) for unpredictable demand surges.",
+            "module": 4
+        },
+        {
+            "question_id": "451387255",
+            "question_text": "A consumer-goods company already employs separate providers for warehousing, line-haul transport and last-mile delivery. It now wants one external partner to design and coordinate the entire logistics network while managing these providers. The new partner is acting primarily as a:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "component distributor",
+                "B": "4PL/network orchestrator",
+                "C": "retailer",
+                "D": "3PL executing only one logistics activity"
+            },
+            "correct_option_label": "B",
+            "explanation": "A Fourth-Party Logistics (4PL) provider acts as a neutral network integrator and orchestrator that manages, coordinates, and synchronizes multiple 3PL service providers, physical assets, and information flows across the end-to-end supply chain.",
+            "module": 4
+        },
+        {
+            "question_id": "451387256",
+            "question_text": "Weekly point-of-sale demand has variance 100. Distributor orders have variance 400 and manufacturer orders to suppliers have variance 900. Which conclusion is correct?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Order variability is four times customer-demand variability at the distributor and nine times customer-demand variability at the manufacturer, showing that variability increases as we move upstream.",
+                "B": "The bullwhip effect occurs only at the manufacturer because the distributor’s orders are less variable than the manufacturer’s orders.",
+                "C": "There is no bullwhip because average demand is unchanged",
+                "D": "Order variability is lower at both the distributor and manufacturer than at the customer level."
+            },
+            "correct_option_label": "A",
+            "explanation": "The bullwhip effect is characterized by variance amplification as demand signals travel upstream: relative to POS demand variance (100), the distributor's order variance is 4x higher (400) and the manufacturer's order variance is 9x higher (900).",
+            "module": 4
+        },
+        {
+            "question_id": "451387257",
+            "question_text": "Sales proposes a promotion expected to raise demand by 30%, operations can increase output by only 10%, and finance rejects a large inventory build. What is the central purpose of S&OP in this situation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Select the forecasting method with the lowest MSE and stop there",
+                "B": "Replace aggregate planning with daily order fulfilment decisions",
+                "C": "Allow each function to retain its own forecast and optimize independently",
+                "D": "Create one feasible, cross-functional plan by reconciling demand, capacity, inventory and financial trade-offs"
+            },
+            "correct_option_label": "D",
+            "explanation": "Sales and Operations Planning (S&OP) is an executive cross-functional process designed to reconcile conflicting functional objectives across sales, operations, and finance into a single unified, operationally feasible plan.",
+            "module": 2
+        },
+        {
+            "question_id": "451387258",
+            "question_text": "A periodic-review system checks inventory every two weeks and has a replenishment lead time of three weeks. With independent weekly demand, which expression should be used to set its order-up-to level?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mean demand over five weeks + z× weekly demand standard deviation × √5",
+                "B": "Mean demand over five weeks + z× weekly demand standard deviation × 5",
+                "C": "Mean demand over two weeks + z× weekly demand standard deviation × √2",
+                "D": "Mean demand over three weeks + z× weekly demand standard deviation × √3"
+            },
+            "correct_option_label": "A",
+            "explanation": "In a periodic review system with review interval $T = 2\\text{ weeks}$ and lead time $L = 3\\text{ weeks}$, the system must protect against demand uncertainty across the entire protection window of $T + L = 5\\text{ weeks}$. The order-up-to level is:\n$$S = \\mu_{T+L} + z \\cdot \\sigma_{T+L} = \\text{Mean demand over 5 weeks} + z \\cdot \\sigma_{\\text{weekly}} \\cdot \\sqrt{5}$$",
+            "module": 3
+        },
+        {
+            "question_id": "451387259",
+            "question_text": "A paint manufacturer currently produces and stocks 40 different finished shades at regional warehouses. Demand for individual shades is difficult to predict, resulting in stockouts of some shades and excess inventory of others. The company is considering stocking a common neutral base paint at each warehouse and adding the required colour only after a customer order is received. Which statement best explains the principal supply-chain benefit and trade-off of this change?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It postpones product differentiation, allowing demand for different shades to be served from a common inventory pool, but it requires sufficiently fast and reliable colour-mixing capability close to the customer.",
+                "B": "It eliminates aggregate demand uncertainty because the total demand for paint becomes known once base paint is stocked.",
+                "C": "It reduces cycle inventory because the company no longer needs to replenish base paint.",
+                "D": "It converts all production from a pull system to a push system and therefore improves capacity utilization."
+            },
+            "correct_option_label": "A",
+            "explanation": "This is postponement (delayed differentiation). Upstream demand is pooled into generic neutral base paint, reducing overall safety stock and stock-outs, but it trades off inventory holding for localized mixing equipment, pigment inventory, and responsive store-level fulfillment.",
+            "module": 3
+        },
+        {
+            "question_id": "451387260",
+            "question_text": "Plant location is an important logistics decision. Yet the cement industry is changing the plant location concept by bifurcating the plant location, primarily driven by",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Sourcing challenges of raw material (Limestone)",
+                "B": "Better forecasting of market demand",
+                "C": "Transportation vulnerabilities",
+                "D": "Ability to store inventories"
+            },
+            "correct_option_label": "C",
+            "explanation": "The cement industry bifurcates manufacturing into clinker units located near limestone mines and grinding units located near consumption centers to overcome transportation vulnerabilities. Clinker is non-hygroscopic and can be shipped in open wagons/trucks without moisture risk, whereas finished cement is hygroscopic and highly perishable.",
+            "module": 5
+        },
+        {
+            "question_id": "451387261",
+            "question_text": "A hub warehouse has the following benefits in the case of a multi-location branded retail:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Both the benefits",
+                "B": "Reducing number of deliveries to a retail",
+                "C": "None of the benefits",
+                "D": "Reducing handling costs"
+            },
+            "correct_option_label": "B",
+            "explanation": "A centralized hub warehouse consolidates multiple vendor shipments and aggregates multi-category orders, significantly reducing the frequency and number of disparate delivery drops required at individual retail store locations.",
+            "module": 6
+        },
+        {
+            "question_id": "451387262",
+            "question_text": "FarmAid Tractors was considering a Central Despatch Yard. Which of the following would NOT be a benefit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduction in number of handlings",
+                "B": "Better storage conditions of finished goods",
+                "C": "Better loading for primary transportation",
+                "D": "Reduced transit time to stockyards"
+            },
+            "correct_option_label": "A",
+            "explanation": "Establishing an off-site Central Despatch Yard (CDY) adds an intermediate staging node between the assembly plant and long-distance transport, which increases the total number of tractor handling steps rather than reducing them.",
+            "module": 5
+        },
+        {
+            "question_id": "451387263",
+            "question_text": "Which of the following is NOT an example of ‘downward’ flow of information in a supply chain",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reminder service for renewing journal subscriptions",
+                "B": "Standard Operating Procedures issued by senior management to field staff",
+                "C": "Message by an airline regarding flight delay",
+                "D": "Tracking service in the context of deliveries"
+            },
+            "correct_option_label": "B",
+            "explanation": "In supply chain management, downward information flow refers to transmitting real-time tracking, advance shipping notices, or delay alerts proactively downstream toward customers or receivers. Standard Operating Procedures are internal organizational management directives.",
+            "module": 8
+        },
+        {
+            "question_id": "451387264",
+            "question_text": "What was the most significant operational challenge after JOSH removed the distributor layer?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lower warehouse utilization.",
+                "B": "Need to buy a company-owned truck fleet.",
+                "C": "Immediate reduction in warehouse rent.",
+                "D": "Direct handling of fragmented orders for 180 retailers."
+            },
+            "correct_option_label": "D",
+            "explanation": "Eliminating the distributor tier forced the Carrying & Forwarding Agent (C&FA) to break bulk, repack cases into customized assortments, and directly manage fragmented deliveries and credit collections across 180 individual retail stores.",
+            "module": 6
+        },
+        {
+            "question_id": "451387265",
+            "question_text": "What was Seth Dhaniram's core strategic trade-off?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Pharmaceutical clients versus FMCG clients.",
+                "B": "Automation versus fleet expansion.",
+                "C": "Selling the logistics business versus continuing it.",
+                "D": "Reduced financial attractiveness versus reputation"
+            },
+            "correct_option_label": "D",
+            "explanation": "Following disintermediation by JOSH Denims, the C&FA faced significantly higher operational costs on an unchanged fixed monthly fee, creating a trade-off between enduring reduced financial profitability and preserving business reputation and prestige with a marquee national brand.",
+            "module": 6
+        },
+        {
+            "question_id": "451387266",
+            "question_text": "Which operating cost was one of the largest cost components for cold storage facilities?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Advertising cost.",
+                "B": "Software licensing cost.",
+                "C": "Packaging design cost.",
+                "D": "Electricity cost."
+            },
+            "correct_option_label": "D",
+            "explanation": "Continuous refrigeration and thermal preservation require massive power consumption, making electricity expenses (often compounded by commercial tariffs and electricity duties) account for approximately 45% of total cold storage operating costs.",
+            "module": 6
+        },
+        {
+            "question_id": "451387267",
+            "question_text": "Which strategy would best address seasonality in the cold storage business?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Closing the facility during off-season months.",
+                "B": "Storing commodities with different harvest and storage seasons.",
+                "C": "Charging the same rent throughout the year.",
+                "D": "Expanding only for the same peak-season commodity."
+            },
+            "correct_option_label": "B",
+            "explanation": "Commodity seasonality complementarity—storing a balanced mix of agricultural commodities whose harvest, storage, and release cycles peak in different months—smoothes facility capacity utilization year-round.",
+            "module": 6
+        },
+        {
+            "question_id": "451387268",
+            "question_text": "Why was the current location useful for Hasmukhbhai's facility?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It had no electricity duty.",
+                "B": "It was close to major markets and had good highway connectivity.",
+                "C": "It was far from agricultural markets.",
+                "D": "It guaranteed government purchase of stored produce."
+            },
+            "correct_option_label": "B",
+            "explanation": "The cold storage facility at Naroda benefited from close proximity to major agricultural trading hubs in Ahmedabad (Madhavpura Mandi, Naroda Fruit Market) and direct arterial connectivity to National Highway 8.",
+            "module": 6
+        },
+        {
+            "question_id": "451387269",
+            "question_text": "What was the major profitability challenge on Shreeji's Full Truck Load business?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lack of return freight.",
+                "B": "Excess warehouse rent.",
+                "C": "High interstate checking.",
+                "D": "Driver unreliability."
+            },
+            "correct_option_label": "A",
+            "explanation": "Full Truck Load profitability was undermined on unbalanced corridors where trucks failed to secure viable return freight, resulting in unprofitable empty backhauls that eroded round-trip contribution margins.",
+            "module": 6
+        },
+        {
+            "question_id": "451387270",
+            "question_text": "What is the primary mechanism of cross-subsidization practiced by Indian Railways?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Using profits from luxury passenger trains to offset losses from local commuter trains.",
+                "B": "Using profits from freight operations to cover losses incurred from passenger services.",
+                "C": "Charging higher fares on profitable routes to fund operations on non-profitable routes.",
+                "D": "Applying government grants meant for infrastructure to subsidize employee salaries."
+            },
+            "correct_option_label": "B",
+            "explanation": "Indian Railways relies on freight operations (which generate over 60% of total revenue with healthy operating margins) to financially cross-subsidize low-tariff passenger travel services.",
+            "module": 7
+        },
+        {
+            "question_id": "451387271",
+            "question_text": "What is the most significant strategic objective behind the development of Dedicated Freight Corridors by Indian Railways?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To replace the entire existing rail network with a modern, high-speed system for all types of traffic.",
+                "B": "To primarily facilitate the movement of military equipment and personnel across strategically important regions.",
+                "C": "To segregate freight and passenger traffic, thereby increasing the speed and capacity for both services on congested routes.",
+                "D": "To exclusively connect minor ports with industrial hinterlands, bypassing the existing major trunk routes."
+            },
+            "correct_option_label": "C",
+            "explanation": "Dedicated Freight Corridors (DFCs) segregate freight movement from passenger traffic along high-density trunk routes, relieving network congestion, increasing freight transit speeds, and expanding capacity for both rail segments.",
+            "module": 7
+        },
+        {
+            "question_id": "451387272",
+            "question_text": "What has been the most significant impact of Goods and Services Tax on the logistics and warehousing strategy of companies in India?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It decreased overall fuel costs for transporters by eliminating state-level surcharges.",
+                "B": "It enabled a shift from state-based tax-efficient warehousing to a more efficient hub-and-spoke model.",
+                "C": "It mandated that all trucking companies must be publicly listed to ensure financial transparency.",
+                "D": "It has led to an increase in the number of checkpoints and inspections at state borders for all trucks."
+            },
+            "correct_option_label": "B",
+            "explanation": "Before GST, companies maintained fragmented warehouses across every state to avoid Central Sales Tax (CST). GST replaced state border taxes with a single tax structure, enabling network consolidation into large regional hubs and spoke fulfillment centers based on supply chain efficiency.",
+            "module": 5
+        },
+        {
+            "question_id": "451387273",
+            "question_text": "Which factor is a primary contributor to the chronic shortage of skilled truck drivers in the Indian logistics sector?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Strict government regulations on driver age and educational qualifications.",
+                "B": "Many potential drivers are absorbed by the rapidly growing passenger and ride-hailing sectors.",
+                "C": "Increasing automation has made the traditional skills of drivers obsolete and redundant.",
+                "D": "Poor working conditions, low social status and long periods away from family."
+            },
+            "correct_option_label": "D",
+            "explanation": "The trucking industry faces persistent driver shortages due to harsh working conditions, lack of hygienic wayside amenities, prolonged separation from families, and low social standing and remuneration.",
+            "module": 7
+        },
+        {
+            "question_id": "451387274",
+            "question_text": "What is the primary regulatory function of the Tariff Authority for Major Ports in India?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To mediate labour disputes and set wage standards for all workers employed at major ports.",
+                "B": "To directly manage day-to-day cargo handling and logistics operations within major Indian ports.",
+                "C": "To regulate and determine the scale of rates for services provided by port terminals and for assets of the port.",
+                "D": "To oversee the environmental clearance process for all new port development and expansion projects."
+            },
+            "correct_option_label": "C",
+            "explanation": "The Tariff Authority for Major Ports (TAMP) was established under the Major Port Trusts Act to set and regulate the scale of rates, vessel tariffs, and cargo handling charges at India's central Major Ports.",
+            "module": 7
+        },
+        {
+            "question_id": "451387275",
+            "question_text": "What is the most effective guiding principle for allocating risks between the public and private sectors in a port PPP project?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The public sector port authority should retain all significant risks to protect national interests.",
+                "B": "Risks should be shared equally between the public and private partners, regardless of their nature.",
+                "C": "Risk should be allocated to the party that is best equipped to manage and mitigate that specific risk.",
+                "D": "All commercial and operational risks should be transferred entirely to the private sector partner."
+            },
+            "correct_option_label": "C",
+            "explanation": "A cornerstone principle in Public-Private Partnership (PPP) contracting is allocating each operational, financial, or political risk to the entity best positioned to assess, control, and mitigate it at lowest cost.",
+            "module": 7
+        },
+        {
+            "question_id": "451387276",
+            "question_text": "In applying the Economic Order Quantity model, what is the likely consequence if a company significantly underestimates its inventory holding costs?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The model will suggest more frequent orders in smaller batches, increasing annual ordering costs.",
+                "B": "The company will carry insufficient safety stock, making the supply chain vulnerable to demand shocks.",
+                "C": "The calculated order quantity will be too large, leading to excessive capital being tied up in inventory.",
+                "D": "The reorder point will be set too low, resulting in a higher frequency of stockouts and lost sales."
+            },
+            "correct_option_label": "C",
+            "explanation": "Under the EOQ formula $Q^* = \\sqrt{\\frac{2DK}{h}}$, holding cost $h$ appears in the denominator. Underestimating $h$ reduces the denominator, causing the model to compute an order quantity that is excessively large, tying up excessive working capital in inventory.",
+            "module": 3
+        },
+        {
+            "question_id": "451387277",
+            "question_text": "A company experiences an increase in the unpredictability of its customer demand. How should it adjust its inventory policy to maintain the desired service level?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Switch from a fixed order quantity system to a just-in-time delivery model.",
+                "B": "Decrease the order quantity to reduce the total amount of inventory held at any time.",
+                "C": "Reduce the reorder point to trigger replenishment orders later than before.",
+                "D": "Increase the level of safety stock to buffer against the higher demand uncertainty."
+            },
+            "correct_option_label": "D",
+            "explanation": "Safety stock is explicitly sized to buffer against demand uncertainty ($\\text{SS} = z \\cdot \\sigma_d \\sqrt{L}$). Higher demand unpredictability increases the standard deviation $\\sigma_d$, requiring higher safety inventory to preserve the target cycle service level.",
+            "module": 3
+        },
+        {
+            "question_id": "451387278",
+            "question_text": "If a manufacturer like Laxmi Transformers relies on a single supplier for specialized raw materials, what is the most significant supply chain risk it faces?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A consistent decline in the quality of the raw material due to a lack of competitive pressure on the supplier.",
+                "B": "Difficulty in achieving economies of scale due to insufficient purchase volumes from one supplier.",
+                "C": "High vulnerability to supply disruptions caused by geopolitical events, trade policy changes or supplier-specific issues.",
+                "D": "Excessive administrative costs associated with managing multiple supplier relationships and contracts."
+            },
+            "correct_option_label": "C",
+            "explanation": "Single sourcing concentrates vulnerability; any disruption at the supplier (such as plant downtime, port strikes, or geopolitical restrictions) can immediately halt manufacturing operations due to the lack of an operational secondary supplier.",
+            "module": 4
+        },
+        {
+            "question_id": "451387279",
+            "question_text": "Which new indicators were added under sustainability in LEADS 2024?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Road infrastructure and rail infrastructure quality.",
+                "B": "Packaging facilities and grievance redressal mechanisms.",
+                "C": "Green logistics commitment and women’s participation.",
+                "D": "Freight rates and terminal service price reasonableness."
+            },
+            "correct_option_label": "C",
+            "explanation": "The LEADS 2024 assessment report expanded its sustainability and inclusivity dimensions by incorporating Green Logistics Commitments and Women's Participation in the logistics workforce.",
+            "module": 8
+        },
+        {
+            "question_id": "451387280",
+            "question_text": "Why does LEADS create a competitive environment among states?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It allows private firms to directly control state logistics policy.",
+                "B": "To compare states more fairly based on geographic context.",
+                "C": "It provides the balance between central government and State government funds for logistics projects",
+                "D": "It gives states performance feedback and incentives to improve logistics."
+            },
+            "correct_option_label": "D",
+            "explanation": "LEADS fosters competitive federalism by evaluating and ranking states across standardized logistics indicators, providing objective performance feedback, identifying bottlenecks, and incentivizing proactive state policy reforms.",
+            "module": 8
+        },
+        {
+            "question_id": "451387281",
+            "question_text": "Why did donated vehicles create additional logistics complexity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Donated vehicles may have different maintenance requirements.",
+                "B": "Donated vehicles always had higher carrying capacity than purchased vehicles.",
+                "C": "Vehicle sizes varied, making route formation and vehicle assignment more difficult.",
+                "D": "The donor exercised control on the route selection."
+            },
+            "correct_option_label": "C",
+            "explanation": "Donated vehicles introduced fleet heterogeneity into Akshaya Patra's operations: differing volumetric and container capacities complicated daily vehicle-route assignment and packaging standardization across distribution runs.",
+            "module": 8
+        },
+        {
+            "question_id": "451387282",
+            "question_text": "The evolution of the paint supply chain had many concepts. Which of the following was NOT a key concept?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Delayed differentiation (Postponement)",
+                "B": "Cash logistics",
+                "C": "Quality assessment",
+                "D": "Inventory reduction"
+            },
+            "correct_option_label": "B",
+            "explanation": "The paint supply chain transformation centered on retail tinting machines, delayed differentiation (postponement), and SKU rationalization/inventory reduction. Cash logistics was a cornerstone of dairy supply chain re-engineering (Amul), not the paint sector.",
+            "module": 5
+        },
+        {
+            "question_id": "451387283",
+            "question_text": "Horizontal bundling of supply chain elements focusing on market segments addresses the need for:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Scale economies",
+                "B": "Scope economies",
+                "C": "Specialization and customization",
+                "D": "Cost efficiencies"
+            },
+            "correct_option_label": "B",
+            "explanation": "Horizontal bundling aggregates complementary services or product lines across customer segments, sharing core logistics assets and distribution channels to achieve economies of scope.",
+            "module": 5
+        },
+        {
+            "question_id": "451387284",
+            "question_text": "Why did JOSH Denims remove the distributor tier?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To comply with new government rules.",
+                "B": "To gain more control and capture distributor margins.",
+                "C": "To transfer manufacturing to the C&FA.",
+                "D": "To outsource all logistics to an international provider."
+            },
+            "correct_option_label": "B",
+            "explanation": "JOSH Denims pursued disintermediation to capture the 7–10% margin previously absorbed by independent distributors and to gain direct control and Point-of-Sale visibility over its retail network.",
+            "module": 6
+        },
+        {
+            "question_id": "451387285",
+            "question_text": "Why do Indian Railways provide the ‘Engine on Load’ scheme?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To enable mechanized loading for customers.",
+                "B": "To increase throughput of customers’ shipments.",
+                "C": "To increase efficiency of engine utilization.",
+                "D": "To increase efficiency of crew utilization."
+            },
+            "correct_option_label": "B",
+            "explanation": "Under the Engine on Load (EOL) scheme, the locomotive remains attached to the rake during loading/unloading operations within strict time windows. This eliminates locomotive waiting delays and accelerates rake turnaround times, increasing customer shipment throughput.",
+            "module": 6
+        },
+        {
+            "question_id": "451387286",
+            "question_text": "Which managerial focus is most relevant for route profitability for trucking companies?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Price setting based on route analysis, including load availability at the destination.",
+                "B": "Reducing shipment documentation.",
+                "C": "Avoiding long term customer contracts.",
+                "D": "Increasing the number of trucks."
+            },
+            "correct_option_label": "A",
+            "explanation": "Trucking route profitability is governed by freight rate density and destination load availability (backhaul balance), which prevents empty miles and maximizes round-trip contribution margin.",
+            "module": 6
+        },
+        {
+            "question_id": "451387287",
+            "question_text": "In a Public-Private Partnership for a port terminal, what is the primary purpose of the Concession Agreement?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It is a marketing document used by the port authority to attract new shipping lines and cargo to the terminal.",
+                "B": "It is a short-term permit that allows a shipping line to use the port facilities for a single voyage.",
+                "C": "It is a financial statement detailing the projected revenue and profitability of the terminal for investors.",
+                "D": "It is a legal contract defining the rights, obligations and risk allocation for the private operator and the port authority."
+            },
+            "correct_option_label": "D",
+            "explanation": "The Concession Agreement is the core long-term contractual instrument in a port PPP, formalizing the legal rights, investment obligations, revenue-sharing terms, operational standards, and risk allocations between the landlord port authority and the private concessionaire.",
+            "module": 7
+        },
+        {
+            "question_id": "451387288",
+            "question_text": "What is a primary competitive advantage for Indian Railways' freight services when compared to road transport?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ability to carry high volumes of low-cost bulk commodities.",
+                "B": "Lower station to station freight charges.",
+                "C": "The idea of containerization for multimodal transport.",
+                "D": "The location of goods sheds for freight loading and unloading lack of reliable first- and last-mile connectivity, making it less suitable for door-to-door service."
+            },
+            "correct_option_label": "A",
+            "explanation": "Rail transport possesses massive scale economies and high energy efficiency, giving it a dominant competitive advantage in hauling large volumes of heavy, low-value bulk commodities (such as coal, iron ore, and cement) over long distances.",
+            "module": 7
+        },
+        {
+            "question_id": "451387289",
+            "question_text": "Why were states grouped into coastal, landlocked, north-eastern and union territory categories for the LEADS index?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To give coastal states a higher score by default.",
+                "B": "To compare states more fairly based on geographic context.",
+                "C": "To reduce the number of indicators used in the ranking.",
+                "D": "To normalize the investments by state governments for logistics."
+            },
+            "correct_option_label": "B",
+            "explanation": "Categorizing states by geographical characteristics (coastal access, landlocked terrain, or special Himalayan geography) enables like-with-like comparisons that account for inherent physical and infrastructural differences.",
+            "module": 8
+        },
+        {
+            "question_id": "451387290",
+            "question_text": "Which of the following was a government specified regulation to be satisfied by Akshaya Patra?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Meals must have a three-item variety in the menu.",
+                "B": "Meals must satisfy a maximum cook-to-consume time.",
+                "C": "Meals must be cooked during day light hours",
+                "D": "Meals must be served at the point of consumption."
+            },
+            "correct_option_label": "B",
+            "explanation": "Under the government Midday Meal guidelines, prepared food must satisfy strict thermal safety and hygiene standards, including a mandatory maximum cook-to-consume window (within 6 hours of cooking) and a minimum delivery temperature of 60°C.",
+            "module": 8
+        },
+        {
+            "question_id": "451387291",
+            "question_text": "Continuous systems are in general better than discrete systems for streamlined supply chain flows. Which of the following is NOT popularly adopted in day-to-day use, due to customer convenience outweighing the value of streamlined supply chains?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Escalators vs elevators",
+                "B": "Loose tea vs tea bags",
+                "C": "Books on Kindle vs physical",
+                "D": "Liquid body wash vs soap cakes"
+            },
+            "correct_option_label": "B",
+            "explanation": "Although loose tea acts as a continuous granular material that reduces packaging complexity, discrete pre-portioned tea bags remain widely popular because customer convenience and ease of disposal outweigh the supply chain benefits of continuous handling.",
+            "module": 5
+        },
+        {
+            "question_id": "451387293",
+            "question_text": "A pharmacy chain is evaluating two forecasting methods for a commonly purchased medicine. The table below shows actual weekly demand and the forecasts generated by Methods A and B.\n\nUsing the forecast-error measures covered in the course, calculate:\nthe mean absolute deviation, or MAD, for Method A",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Mean Absolute Deviation (MAD) measures the average magnitude of absolute forecast errors:\n$$\\text{MAD} = \\frac{\\sum_{t=1}^{n} |A_t - F_t|}{n} = 6.25$$\n\nCorrect Answer: 6.25 (acceptable range: 6.23 to 6.27).",
+            "module": 2
+        },
+        {
+            "question_id": "451387294",
+            "question_text": "Refer to Question ID 451387293 for context.\n\nthe mean absolute percentage error, or MAPE, for Method A",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Mean Absolute Percentage Error (MAPE) expresses error magnitude relative to actual demand:\n$$\\text{MAPE} = \\frac{1}{n} \\sum_{t=1}^{n} \\left|\\frac{A_t - F_t}{A_t}\\right| \\times 100\\% = 6.21\\%$$\n\nCorrect Answer: 6.21% (acceptable range: 6.19 to 6.23).",
+            "module": 2
+        },
+        {
+            "question_id": "451387295",
+            "question_text": "Refer to Question ID 451387293 for context.\n\nthe MAD for Method B",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Mean Absolute Deviation for Method B is calculated by summing absolute errors across all evaluated periods and dividing by the number of periods:\n$$\\text{MAD}_B = \\frac{\\sum |A_t - F_{B,t}|}{n} = 8.75$$\n\nCorrect Answer: 8.75 (acceptable range: 8.73 to 8.77).",
+            "module": 2
+        },
+        {
+            "question_id": "451387296",
+            "question_text": "Refer to Question ID 451387293 for context.\n\nthe MAPE for Method B\n\nReport MAPE as a percentage, rounded to two decimal places.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Mean Absolute Percentage Error for Method B:\n$$\\text{MAPE}_B = \\frac{1}{n} \\sum \\left|\\frac{A_t - F_{B,t}}{A_t}\\right| \\times 100\\% = 8.24\\%$$\n\nCorrect Answer: 8.24% (acceptable range: 8.22 to 8.26).",
+            "module": 2
+        },
+        {
+            "question_id": "451387298",
+            "question_text": "A subscription-grocery service forecasts the number of boxes customers will order each week. Because recent demand is expected to be informative, the company uses single exponential smoothing with a smoothing constant of α = 0.30.\n\nThe forecast for Week 1 is 380 boxes. Actual demand during the first three weeks is: Week 1: 400 boxes, Week 2: 420 boxes, Week 3: 390 boxes.\n\nUsing single exponential smoothing, calculate:\nthe forecast for Week 2",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Single Exponential Smoothing update equation:\n$$F_2 = F_1 + \\alpha(A_1 - F_1) = 380 + 0.30(400 - 380) = 380 + 0.30(20) = 380 + 6 = 386$$\n\nCorrect Answer: 386 (acceptable range: 385.98 to 386.02).",
+            "module": 2
+        },
+        {
+            "question_id": "451387299",
+            "question_text": "Refer to Question ID 451387298 for context.\n\nthe forecast for Week 3",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Using actual demand for Week 2 ($A_2 = 420$) and forecast $F_2 = 386$:\n$$F_3 = F_2 + \\alpha(A_2 - F_2) = 386 + 0.30(420 - 386) = 386 + 0.30(34) = 386 + 10.2 = 396.2$$\n\nCorrect Answer: 396.2 (acceptable range: 396.18 to 396.22).",
+            "module": 2
+        },
+        {
+            "question_id": "451387300",
+            "question_text": "Refer to Question ID 451387298 for context.\n\nthe forecast for Week 4",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Using actual demand for Week 3 ($A_3 = 390$) and forecast $F_3 = 396.2$:\n$$F_4 = F_3 + \\alpha(A_3 - F_3) = 396.2 + 0.30(390 - 396.2) = 396.2 + 0.30(-6.2) = 396.2 - 1.86 = 394.34$$\n\nCorrect Answer: 394.34 (acceptable range: 394.32 to 394.36).",
+            "module": 2
+        },
+        {
+            "question_id": "451387301",
+            "question_text": "Refer to Question ID 451387298 for context.\n\nthe forecast error for Week 3, using: Forecast error = Actual demand − Forecast demand",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Forecast error in Week 3 is actual demand minus forecast:\n$$E_3 = A_3 - F_3 = 390 - 396.2 = -6.2$$\n\nCorrect Answer: -6.2 (acceptable range: -6.22 to -6.18).",
+            "module": 2
+        },
+        {
+            "question_id": "451387303",
+            "question_text": "A beverage company sells a product whose quarterly demand has both an upward trend and a recurring seasonal pattern. The underlying trend in demand is represented by:\n\nTrend forecast for time period t = 180 + 12t\n\nHere, t is the consecutive quarterly time-period number. Thus, t=1 represents the first quarter in the time series, t=2 the second quarter, and so on.\n\nThe estimated seasonal relatives are: Quarter 1: 0.80, Quarter 2: 1.00.\nTime period 9 corresponds to Quarter 1 of the seasonal cycle, while time period 10 corresponds to Quarter 2.\n\nCalculate:\nthe underlying trend forecast for time period 9",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Substitute $t = 9$ into the trend equation:\n$$F_{\\text{trend}, 9} = 180 + 12(9) = 180 + 108 = 288$$\n\nCorrect Answer: 288 (acceptable range: 287.95 to 288.05).",
+            "module": 2
+        },
+        {
+            "question_id": "451387304",
+            "question_text": "Refer to Question ID 451387303 for context.\n\nthe seasonally adjusted forecast for time period 9",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Multiply the baseline trend forecast by the Quarter 1 seasonal relative ($S_1 = 0.80$):\n$$\\text{Final Forecast}_9 = F_{\\text{trend}, 9} \\times S_1 = 288 \\times 0.80 = 230.4$$\n\nCorrect Answer: 230.4 (acceptable range: 230.35 to 230.45).",
+            "module": 2
+        },
+        {
+            "question_id": "451387305",
+            "question_text": "Refer to Question ID 451387303 for context.\n\nthe underlying trend forecast for time period 10",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Substitute $t = 10$ into the trend equation:\n$$F_{\\text{trend}, 10} = 180 + 12(10) = 180 + 120 = 300$$\n\nCorrect Answer: 300 (acceptable range: 299.95 to 300.05).",
+            "module": 2
+        },
+        {
+            "question_id": "451387306",
+            "question_text": "Refer to Question ID 451387303 for context.\n\nthe seasonally adjusted forecast for time period 10",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Multiply the baseline trend forecast by the Quarter 2 seasonal relative ($S_2 = 1.00$):\n$$\\text{Final Forecast}_{10} = F_{\\text{trend}, 10} \\times S_2 = 300 \\times 1.00 = 300$$\n\nCorrect Answer: 300 (acceptable range: 299.95 to 300.05).",
+            "module": 2
+        },
+        {
+            "question_id": "451387308",
+            "question_text": "A clinic maintains an inventory of sterile testing kits that are used throughout the year. The clinic expects to use 10,800 kits annually, with demand occurring at a steady and known rate. Every time the clinic places a replenishment order, it incurs a fixed ordering cost of ₹100, irrespective of the number of kits ordered. The annual holding cost is ₹24 per kit. Assume that the other assumptions of the basic EOQ model are satisfied and that no quantity discounts are available.\n\nCalculate:\nthe economic order quantity",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Economic Order Quantity (EOQ) calculation with $D = 10,800$, $K = 100$, and $h = 24$:\n$$\\text{EOQ} = \\sqrt{\\frac{2DK}{h}} = \\sqrt{\\frac{2 \\times 10800 \\times 100}{24}} = \\sqrt{\\frac{2,160,000}{24}} = \\sqrt{90,000} = 300\\text{ kits}$$\n\nCorrect Answer: 300 (acceptable range: 299.90 to 300.10).",
+            "module": 3
+        },
+        {
+            "question_id": "451387309",
+            "question_text": "Refer to Question ID 451387308 for context.\n\nthe expected number of orders placed per year",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Order frequency is annual demand divided by optimal order quantity:\n$$N = \\frac{D}{Q^*} = \\frac{10800}{300} = 36\\text{ orders/year}$$\n\nCorrect Answer: 36 (acceptable range: 35.90 to 36.10).",
+            "module": 3
+        },
+        {
+            "question_id": "451387310",
+            "question_text": "Refer to Question ID 451387308 for context.\n\nthe annual ordering cost when the clinic orders the EOQ",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Annual ordering cost is the number of orders multiplied by the fixed cost per order:\n$$\\text{Annual Ordering Cost} = N \\times K = 36 \\times 100 = ₹3,600$$\n\nCorrect Answer: 3600 (acceptable range: 3599.90 to 3600.10).",
+            "module": 3
+        },
+        {
+            "question_id": "451387311",
+            "question_text": "Refer to Question ID 451387308 for context.\n\nthe annual holding cost when the clinic orders the EOQ",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Annual holding cost is average cycle inventory multiplied by the unit carrying cost:\n$$\\text{Annual Holding Cost} = \\frac{Q^*}{2} \\times h = \\frac{300}{2} \\times 24 = 150 \\times 24 = ₹3,600$$\n(Note that at EOQ, annual ordering cost exactly equals annual holding cost).\n\nCorrect Answer: 3600 (acceptable range: 3599.90 to 3600.10).",
+            "module": 3
+        },
+        {
+            "question_id": "451387313",
+            "question_text": "A sports merchandise retailer plans to operate a temporary stall at a one-day intercollege cricket tournament. The retailer will sell jerseys printed with the tournament name and date. All jerseys must be ordered before the tournament begins, and the retailer cannot place another order during the event. Each jersey is purchased for ₹140 and sold during the tournament for ₹250. Because the jerseys carry the tournament name and date, their demand falls sharply after the event. Any unsold jerseys can therefore be cleared after the tournament for only ₹40 each.\n\nDemand during the tournament is uncertain. Based on ticket sales and previous tournaments, the retailer estimates the probability distribution.\n\nUsing the discrete newsvendor model, calculate:\nthe underage cost per jersey",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Underage cost ($C_u$) is the lost profit margin per unit when demand exceeds order quantity:\n$$C_u = P - C = 250 - 140 = ₹110$$\n\nCorrect Answer: 110 (acceptable range: 109.99 to 110.01).",
+            "module": 3
+        },
+        {
+            "question_id": "451387314",
+            "question_text": "Refer to Question ID 451387313 for context.\n\nthe overage cost per jersey",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Overage cost ($C_o$) is the net loss per unsold unit after accounting for salvage value:\n$$C_o = C - S = 140 - 40 = ₹100$$\n\nCorrect Answer: 100 (acceptable range: 99.99 to 100.01).",
+            "module": 3
+        },
+        {
+            "question_id": "451387315",
+            "question_text": "Refer to Question ID 451387313 for context.\n\nthe critical ratio in decimals.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Critical ratio (fractile) formula:\n$$C^* = \\frac{C_u}{C_u + C_o} = \\frac{110}{110 + 100} = \\frac{110}{210} \\approx 0.5238$$\n\nCorrect Answer: 0.5238 (acceptable range: 0.52281 to 0.52481).",
+            "module": 3
+        },
+        {
+            "question_id": "451387316",
+            "question_text": "Refer to Question ID 451387313 for context.\n\nthe optimal number of jerseys to order",
+            "question_type": "SUBJECTIVE",
+            "explanation": "In a discrete newsvendor model, the optimal order quantity $Q^*$ is the smallest demand value whose cumulative probability $F(Q)$ satisfies:\n$$F(Q^*) \\ge \\frac{C_u}{C_u + C_o} = 0.5238$$\nFrom the estimated cumulative demand distribution, $F(120) \\ge 0.5238$. Therefore, $Q^* = 120$.\n\nCorrect Answer: 120 (acceptable range: 120 to 120.00009).",
+            "module": 3
+        },
+        {
+            "question_id": "451387318",
+            "question_text": "An online retailer currently serves two regions through two separate warehouses. Each warehouse holds safety stock for the same product to protect against uncertain demand. At each warehouse, demand during the relevant inventory-protection period is Normally distributed with a standard deviation of 80 units. Demand in the two regions is not independent: the correlation between the two demand streams is 0.25. For example, a nationwide promotion or festival may increase demand in both regions at the same time.\n\nThe company is considering replacing the two separate inventories with one centralized inventory that can serve both regions. Assume that centralization does not change the required service level or the replenishment conditions. The target cycle service level is 95%. Use the standard normal table distributed with the examination to obtain the corresponding value of z.\n\nCalculate:\nthe value of z corresponding to a 95% cycle service level",
+            "question_type": "SUBJECTIVE",
+            "explanation": "From the standard normal cumulative distribution table, the $z$-value satisfying $\\Phi(z) = 0.95$ is approximately $1.645$ (or $1.65$).\n\nCorrect Answer: 1.645 (acceptable range: 1.64 to 1.65).",
+            "module": 3
+        },
+        {
+            "question_id": "451387319",
+            "question_text": "Refer to Question ID 451387318 for context.\n\nthe total safety stock held across the two warehouses when inventories remain separate",
+            "question_type": "SUBJECTIVE",
+            "explanation": "With decentralized safety stock held separately at each warehouse with $\\sigma = 80$ and $z = 1.645$:\n$$\\text{SS}_{\\text{each}} = z \\cdot \\sigma = 1.645 \\times 80 = 131.6$$\n$$\\text{Total SS}_{\\text{separate}} = 2 \\times 131.6 = 263.2\\text{ units}$$\n\nCorrect Answer: 263.2 (acceptable range: 263 to 263.40).",
+            "module": 3
+        },
+        {
+            "question_id": "451387320",
+            "question_text": "Refer to Question ID 451387318 for context.\n\nthe safety stock required after the two demand streams are pooled at one centralized location",
+            "question_type": "SUBJECTIVE",
+            "explanation": "With correlation $\\rho = 0.25$ between the two regions:\n$$\\sigma_{\\text{pooled}} = \\sqrt{\\sigma_1^2 + \\sigma_2^2 + 2\\rho\\sigma_1\\sigma_2} = \\sqrt{80^2 + 80^2 + 2(0.25)(80)(80)} = \\sqrt{6400 + 6400 + 3200} = \\sqrt{16000} \\approx 126.491$$\n$$\\text{SS}_{\\text{pooled}} = z \\cdot \\sigma_{\\text{pooled}} = 1.645 \\times 126.491 \\approx 208.08\\text{ units}$$\n\nCorrect Answer: 208.08 (acceptable range: 207.88 to 208.28).",
+            "module": 3
+        },
+        {
+            "question_id": "451387321",
+            "question_text": "Refer to Question ID 451387318 for context.\n\nthe reduction in safety stock resulting from pooling",
+            "question_type": "SUBJECTIVE",
+            "explanation": "The safety stock savings achieved through risk pooling:\n$$\\text{Safety Stock Reduction} = \\text{Total SS}_{\\text{separate}} - \\text{SS}_{\\text{pooled}} = 263.2 - 208.08 = 55.12\\text{ units}$$\n\nCorrect Answer: 55.12 (acceptable range: 54.92 to 55.32).",
+            "module": 3
+        },
+        {
+            "question_id": "451387322",
+            "question_text": "Match each managerial decision in Column I with the supply chain driver in Column II.\n\n| Column I (Managerial Decision) | Column II (Supply Chain Driver) |\n| :--- | :--- |\n| 1. Determining the location, capacity and role of warehouses | A. Inventory |\n| 2. Setting safety stock levels and cycle inventory lot sizes | B. Facilities |\n| 3. Choosing between rail freight and express air cargo | C. Transportation |\n| 4. Deciding whether to manufacture in-house or outsource | D. Sourcing |",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1–D; 2–A; 3–C; 4–B",
+                "B": "1–A; 2–B; 3–C; 4–D",
+                "C": "1–B; 2–A; 3–D; 4–C",
+                "D": "1–B; 2–A; 3–C; 4–D"
+            },
+            "correct_option_label": "D",
+            "explanation": "Warehouse location, capacity, and role relate to Facilities (1–B); safety stock and cycle lot sizes relate to Inventory (2–A); transport mode selection between rail and air relates to Transportation (3–C); make-or-buy decisions relate to Sourcing (4–D).",
+            "module": 1
+        },
+        {
+            "question_id": "451387323",
+            "question_text": "Match each observed practice in Column I with the principal obstacle to coordination in Column II.\n\n| Column I (Observed Practice) | Column II (Principal Obstacle to Coordination) |\n| :--- | :--- |\n| 1. Forward buying induced by trade promotions | A. Incentive obstacles |\n| 2. Order batching and shortage gaming | B. Information processing obstacles |\n| 3. Evaluating sales staff on sell-in rather than sell-through | C. Pricing obstacles |\n| 4. Forecasting based on upstream orders rather than POS demand | D. Operational obstacles |",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1–B; 2–D; 3–A; 4–C",
+                "B": "1–C; 2–D; 3–A; 4–B",
+                "C": "1–C; 2–A; 3–D; 4–B",
+                "D": "1–A; 2–D; 3–C; 4–B"
+            },
+            "correct_option_label": "B",
+            "explanation": "Trade promotion-driven forward buying is a pricing obstacle (1–C); order batching and shortage gaming are operational obstacles (2–D); sell-in quotas distort salesforce incentives (3–A); order-based forecasting is an information processing obstacle (4–B).",
+            "module": 4
+        },
+        {
+            "question_id": "451387324",
+            "question_text": "Match each contract feature in Column I with the contract type in Column II.\n\n| Column I (Contract Feature) | Column II (Contract Type) |\n| :--- | :--- |\n| 1. Supplier buys back unsold goods at an agreed salvage price | A. Quantity flexibility contract |\n| 2. Buyer pays a lower wholesale price and shares a fraction of sales revenue | B. Shared savings contract |\n| 3. Buyer can adjust order quantity within an agreed band as demand clarifies | C. Buyback contract |\n| 4. Supplier is rewarded with a portion of verified cost reductions | D. Revenue sharing contract |",
+            "question_type": "MCQ",
+            "options": {
+                "A": "1–C; 2–D; 3–A; 4–B",
+                "B": "1–A; 2–B; 3–C; 4–D",
+                "C": "1–C; 2–A; 3–B; 4–D",
+                "D": "1–D; 2–A; 3–B; 4–C"
+            },
+            "correct_option_label": "A",
+            "explanation": "Repurchasing unsold units at a pre-agreed salvage price is a Buyback contract (1–C); lowering wholesale price in exchange for a fraction of gross sales is a Revenue Sharing contract (2–D); adjusting order quantities within a negotiated band is a Quantity Flexibility contract (3–A); rewarding suppliers with a share of proven efficiency gains is a Shared Savings contract (4–B).",
+            "module": 4
+        }
+    ]
+}
