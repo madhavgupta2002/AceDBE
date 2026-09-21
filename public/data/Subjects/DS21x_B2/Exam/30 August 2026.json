@@ -1,0 +1,290 @@
+{
+    "exam_metadata": {
+        "subject_name": "Business Statistics for Entrepreneurs - 2",
+        "exam_date": "30 August 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "Sarah invests money in a portfolio that has 25% of her savings in Asset A and 75% in Asset B. The returns of Asset A have a Normal distribution with mean 6 and standard deviation 3. The returns of Asset B have a Normal distribution with mean 5 and standard deviation 2. The returns of Asset A and Asset B have a correlation coefficient of -0.2 The coefficient of variation of the returns of the overall portfolio takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 to 1.0",
+                "B": "Between 1.0 to 2.0",
+                "C": "Between 2.0 to 3.0",
+                "D": "Between 3.0 to 4.0"
+            },
+            "correct_option_label": "A",
+            "explanation": "Let portfolio return be $R_p = 0.25 R_A + 0.75 R_B$.\n1. Mean return: $E(R_p) = 0.25(6) + 0.75(5) = 1.5 + 3.75 = 5.25$.\n2. Covariance: $\\text{Cov}(R_A, R_B) = \\rho \\sigma_A \\sigma_B = -0.2 \\times 3 \\times 2 = -1.2$.\n3. Variance: $\\text{Var}(R_p) = (0.25)^2(3^2) + (0.75)^2(2^2) + 2(0.25)(0.75)(-1.2) = 0.5625 + 2.25 - 0.45 = 2.3625$.\n4. Standard deviation: $\\sigma_p = \\sqrt{2.3625} \\approx 1.537$.\n5. Coefficient of Variation: $CV = \\frac{\\sigma_p}{\\mu_p} = \\frac{1.537}{5.25} \\approx 0.293$, which lies between 0.0 to 1.0.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Daily demand in a restaurant has two components: dine-in orders that have a Normal distribution with mean 50 and standard deviation 15, and takeout orders that have a Normal distribution with mean 75 and standard deviation 20. The two demands have a correlation coefficient of 0.4. The standard deviation of the total daily demand in the restaurant takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 to 12",
+                "B": "Between 24 to 48",
+                "C": "More than 48",
+                "D": "Between 12 to 24"
+            },
+            "correct_option_label": "B",
+            "explanation": "Total daily demand $T = X + Y$.\n1. $\\text{Cov}(X, Y) = \\rho \\sigma_X \\sigma_Y = 0.4 \\times 15 \\times 20 = 120$.\n2. $\\text{Var}(T) = \\sigma_X^2 + \\sigma_Y^2 + 2\\text{Cov}(X, Y) = 15^2 + 20^2 + 2(120) = 225 + 400 + 240 = 865$.\n3. Standard deviation: $\\sigma_T = \\sqrt{865} \\approx 29.41$, which lies between 24 and 48.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "The Income Tax department has conducted a survey of middle-income families to determine how long individuals spend in preparing their tax returns. A random survey of 22 individuals showed an average of 34 hours and a standard deviation of 10 hours. The standard error for population mean for this sample data is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 2 to 4",
+                "B": "Between 0 to 2",
+                "C": "Between 4 to 6",
+                "D": "Between 6 to 8"
+            },
+            "correct_option_label": "A",
+            "explanation": "Given $n = 22$ and sample standard deviation $s = 10$:\nStandard error of the mean is $SE = \\frac{s}{\\sqrt{n}} = \\frac{10}{\\sqrt{22}} \\approx \\frac{10}{4.6904} \\approx 2.132$, which lies between 2 to 4.",
+            "module": 2
+        },
+        {
+            "question_id": "4",
+            "question_text": "The Income Tax department has conducted a survey of middle-income families to determine how long individuals spend in preparing their tax returns. A random survey of 22 individuals showed an average of 34 hours and a standard deviation of 10 hours. The margin of error for an 80% confidence interval on population mean is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 15 to 20",
+                "B": "Between 10 to 15",
+                "C": "Between 5 to 10",
+                "D": "Between 0 to 5"
+            },
+            "correct_option_label": "D",
+            "explanation": "With $n = 22$, degrees of freedom $df = 21$, and $s = 10$:\n1. For an 80% confidence interval, $\\alpha = 0.20 \\implies \\alpha/2 = 0.10$. Critical value $t_{0.10, 21} \\approx 1.323$.\n2. Margin of error $E = t_{\\alpha/2} \\left(\\frac{s}{\\sqrt{n}}\\right) = 1.323 \\times \\frac{10}{\\sqrt{22}} \\approx 1.323 \\times 2.132 \\approx 2.82$, which lies between 0 to 5.",
+            "module": 3
+        },
+        {
+            "question_id": "5",
+            "question_text": "The Income Tax department has conducted a survey of middle-income families to determine how long individuals spend in preparing their tax returns. A random survey of 22 individuals showed an average of 34 hours and a standard deviation of 10 hours. The upper limit for a 99% confidence interval on population mean is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 25 to 35",
+                "B": "Between 15 to 25",
+                "C": "Between 5 to 15",
+                "D": "Between 35 to 45"
+            },
+            "correct_option_label": "D",
+            "explanation": "With $n = 22$, $\\bar{x} = 34$, $s = 10$, and $df = 21$:\n1. For a 99% confidence interval, $\\alpha = 0.01 \\implies \\alpha/2 = 0.005$. Critical value $t_{0.005, 21} \\approx 2.831$.\n2. Margin of error $E = 2.831 \\times \\frac{10}{\\sqrt{22}} \\approx 2.831 \\times 2.132 \\approx 6.04$.\n3. Upper limit $= \\bar{x} + E = 34 + 6.04 = 40.04$, which lies between 35 to 45.",
+            "module": 3
+        },
+        {
+            "question_id": "6",
+            "question_text": "In a survey conducted by the Statesman, out of the 40 randomly selected school officials, 22 reported that they are unhappy with the IT infrastructure in their school. Construct a hypothesis (H_0 and H_a) to determine if the true value of the proportion of school officials unhappy with the IT infrastructure in their school is more than 50%. The standard error for this test takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.50 to 0.75",
+                "B": "Between 0.25 to 0.50",
+                "C": "Between 0.75 to 1.0",
+                "D": "Between 0.0 to 0.25"
+            },
+            "correct_option_label": "D",
+            "explanation": "Hypothesis: $H_0: p \\le 0.50$ vs $H_a: p > 0.50$, so hypothesized proportion $p_0 = 0.50$.\nStandard error $\\sigma_{\\bar{p}} = \\sqrt{\\frac{p_0(1 - p_0)}{n}} = \\sqrt{\\frac{0.50 \\times 0.50}{40}} = \\sqrt{0.00625} \\approx 0.0791$, which lies between 0.0 to 0.25.",
+            "module": 4
+        },
+        {
+            "question_id": "7",
+            "question_text": "In a survey conducted by the Statesman, out of the 40 randomly selected school officials, 22 reported that they are unhappy with the IT infrastructure in their school. Construct a hypothesis (H_0 and H_a) to determine if the true value of the proportion of school officials unhappy with the IT infrastructure in their school is more than 50%. The test statistic for this test takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.75 to 1.0",
+                "B": "Between 0.25 to 0.50",
+                "C": "Between 0.50 to 0.75",
+                "D": "Between 0.0 to 0.25"
+            },
+            "correct_option_label": "C",
+            "explanation": "Sample proportion $\\bar{p} = \\frac{22}{40} = 0.55$, hypothesized proportion $p_0 = 0.50$.\nStandard error $\\sigma_{\\bar{p}} = \\sqrt{\\frac{0.50(0.50)}{40}} \\approx 0.0791$.\nTest statistic $Z = \\frac{\\bar{p} - p_0}{\\sigma_{\\bar{p}}} = \\frac{0.55 - 0.50}{0.0791} \\approx 0.632$, which lies between 0.50 to 0.75.",
+            "module": 4
+        },
+        {
+            "question_id": "8",
+            "question_text": "In a survey conducted by the Statesman, out of the 40 randomly selected school officials, 22 reported that they are unhappy with the IT infrastructure in their school. Construct a hypothesis (H_0 and H_a) to determine if the true value of the proportion of school officials unhappy with the IT infrastructure in their school is more than 50%. The p-value for this test takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.60 to 0.80",
+                "B": "Between 0.20 to 0.40",
+                "C": "Between 0.40 to 0.60",
+                "D": "Between 0.0 to 0.20"
+            },
+            "correct_option_label": "B",
+            "explanation": "For an upper-tail test ($H_a: p > 0.50$) with test statistic $Z = 0.632$:\n$\\text{p-value} = P(Z \\ge 0.632) = 1 - \\Phi(0.632) \\approx 1 - 0.7363 = 0.2637$, which lies between 0.20 to 0.40.",
+            "module": 4
+        },
+        {
+            "question_id": "9",
+            "question_text": "In a random sample of 28 officegoers, the hours spent each day commuting to work was found to have a mean of 90 mins and a standard deviation of 20 mins. Construct a hypothesis (H_0 and H_a) to determine if the true value of the standard deviation in the population is less than 25. Use a significance level of 0.05. The test statistic for this test takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 12 to 24",
+                "B": "Between 24 to 36",
+                "C": "Between 36 to 48",
+                "D": "Between 0.0 to 12"
+            },
+            "correct_option_label": "A",
+            "explanation": "Here $n = 28$, $s = 20$, and $\\sigma_0 = 25$.\nThe Chi-Square test statistic is:\n$\\chi^2 = \\frac{(n-1)s^2}{\\sigma_0^2} = \\frac{(28-1)(20)^2}{25^2} = \\frac{27 \\times 400}{625} = 17.28$, which lies between 12 to 24.",
+            "module": 4
+        },
+        {
+            "question_id": "10",
+            "question_text": "In a random sample of 28 officegoers, the hours spent each day commuting to work was found to have a mean of 90 mins and a standard deviation of 20 mins. Construct a hypothesis (H_0 and H_a) to determine if the true value of the standard deviation in the population is less than 25. Use a significance level of 0.05. The p-value for this test takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 to 0.25",
+                "B": "Between 0.75 to 1.0",
+                "C": "Between 0.25 to 0.50",
+                "D": "Between 0.50 to 0.75"
+            },
+            "correct_option_label": "A",
+            "explanation": "For a lower-tail test with $df = 27$ and $\\chi^2 = 17.28$:\nThe p-value is $P(\\chi^2_{27} \\le 17.28) \\approx 0.076$, which lies between 0.0 to 0.25.",
+            "module": 4
+        },
+        {
+            "question_id": "11",
+            "question_text": "In a random sample of 28 officegoers, the hours spent each day commuting to work was found to have a mean of 90 mins and a standard deviation of 20 mins. Construct a hypothesis (H_0 and H_a) to determine if the true value of the standard deviation in the population is less than 25. Use a significance level of 0.05. The critical value used to decide on the hypothesis takes a value that is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 to 12",
+                "B": "Between 12 to 24",
+                "C": "Between 24 to 36",
+                "D": "Between 36 to 48"
+            },
+            "correct_option_label": "B",
+            "explanation": "For a lower-tail test at $\\alpha = 0.05$ with degrees of freedom $df = n - 1 = 27$:\nThe critical value corresponds to the 5th percentile of the chi-square distribution: $\\chi^2_{0.95, 27} \\approx 16.151$, which lies between 12 to 24.",
+            "module": 4
+        },
+        {
+            "question_id": "12",
+            "question_text": "A national survey revealed that 17 out of 45 college graduates surveyed at random expressed desire to start their own business before they turn 40. The standard error for proportion is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.05 and 0.10",
+                "B": "Between 0 and 0.05",
+                "C": "Between 0.15 and 0.20",
+                "D": "Between 0.10 and 0.15"
+            },
+            "correct_option_label": "A",
+            "explanation": "Sample proportion $\\bar{p} = \\frac{17}{45} \\approx 0.3778$.\nStandard error of proportion is:\n$\\sigma_{\\bar{p}} = \\sqrt{\\frac{\\bar{p}(1 - \\bar{p})}{n}} = \\sqrt{\\frac{0.3778 \\times 0.6222}{45}} \\approx \\sqrt{0.005224} \\approx 0.0723$, which lies between 0.05 and 0.10.",
+            "module": 2
+        },
+        {
+            "question_id": "13",
+            "question_text": "A national survey revealed that 17 out of 45 college graduates surveyed at random expressed desire to start their own business before they turn 40. The margin of error for a 90% confidence interval on proportion is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.0 and 0.25",
+                "B": "Between 0.75 and 1.0",
+                "C": "Between 0.50 and 0.75",
+                "D": "Between 0.25 and 0.50"
+            },
+            "correct_option_label": "A",
+            "explanation": "With $\\bar{p} = 0.3778$ and $SE \\approx 0.0723$:\nFor 90% confidence, $Z_{\\alpha/2} = Z_{0.05} = 1.645$.\nMargin of error $E = 1.645 \\times 0.0723 \\approx 0.119$, which lies between 0.0 and 0.25.",
+            "module": 3
+        },
+        {
+            "question_id": "14",
+            "question_text": "A national survey revealed that 17 out of 45 college graduates surveyed at random expressed desire to start their own business before they turn 40. The upper limit for an 80% confidence interval is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.50 and 0.75",
+                "B": "Between 0.75 and 1.0",
+                "C": "Between 0.0 and 0.25",
+                "D": "Between 0.25 and 0.50"
+            },
+            "correct_option_label": "D",
+            "explanation": "With $\\bar{p} = 0.3778$ and $SE \\approx 0.0723$:\nFor an 80% confidence interval, $Z_{\\alpha/2} = Z_{0.10} \\approx 1.282$.\nMargin of error $E = 1.282 \\times 0.0723 \\approx 0.0927$.\nUpper limit $= \\bar{p} + E = 0.3778 + 0.0927 = 0.4705$, which lies between 0.25 and 0.50.",
+            "module": 3
+        },
+        {
+            "question_id": "15",
+            "question_text": "In a quality study done by Amul Dairy on a sample of 12 milk packets, the sample standard deviation was 6 ml. When constructing a confidence interval for the variance, the lower limit for an 80% confidence interval is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 50 to 75",
+                "B": "Between 75 to 100",
+                "C": "Between 25 to 50",
+                "D": "Between 0 to 25"
+            },
+            "correct_option_label": "D",
+            "explanation": "Given $n = 12$, $df = 11$, and $s^2 = 6^2 = 36$:\nFor an 80% confidence interval, $\\alpha = 0.20 \\implies \\alpha/2 = 0.10$, so $\\chi^2_{0.10, 11} \\approx 17.275$.\nLower limit for variance $= \\frac{(n-1)s^2}{\\chi^2_{\\alpha/2, n-1}} = \\frac{11 \\times 36}{17.275} = \\frac{396}{17.275} \\approx 22.92$, which lies between 0 to 25.",
+            "module": 3
+        },
+        {
+            "question_id": "16",
+            "question_text": "In a quality study done by Amul Dairy on a sample of 12 milk packets, the sample standard deviation was 6 ml. When constructing a confidence interval for the variance, the upper limit for a 90% confidence interval is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0 to 25",
+                "B": "Between 25 to 50",
+                "C": "Between 75 to 100",
+                "D": "Between 50 to 75"
+            },
+            "correct_option_label": "C",
+            "explanation": "Given $n = 12$, $df = 11$, and $(n-1)s^2 = 11 \\times 36 = 396$:\nFor a 90% confidence interval, $\\alpha = 0.10 \\implies 1 - \\alpha/2 = 0.95$. Critical value $\\chi^2_{0.95, 11} \\approx 4.575$.\nUpper limit for variance $= \\frac{(n-1)s^2}{\\chi^2_{1-\\alpha/2, n-1}} = \\frac{396}{4.575} \\approx 86.56$, which lies between 75 to 100.",
+            "module": 3
+        },
+        {
+            "question_id": "17",
+            "question_text": "In a quality study done by Amul Dairy on a sample of 12 milk packets, the sample standard deviation was 6 ml. When constructing a confidence interval for the variance, the upper limit for a 99% confidence interval is",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 40 to 80",
+                "B": "Between 120 to 160",
+                "C": "Between 80 to 120",
+                "D": "Between 0 to 40"
+            },
+            "correct_option_label": "B",
+            "explanation": "Given $n = 12$, $df = 11$, and $(n-1)s^2 = 11 \\times 36 = 396$:\nFor a 99% confidence interval, $\\alpha = 0.01 \\implies 1 - \\alpha/2 = 0.995$. Critical value $\\chi^2_{0.995, 11} \\approx 2.603$.\nUpper limit for variance $= \\frac{(n-1)s^2}{\\chi^2_{1-\\alpha/2, n-1}} = \\frac{396}{2.603} \\approx 152.13$, which lies between 120 to 160.",
+            "module": 3
+        },
+        {
+            "question_id": "18",
+            "question_text": "Data was collected on the amount spent by 20 students on pizza each week. The sample data gave a mean of 810 and a standard deviation of 60. Construct a hypothesis ( H_0 and H_a) to determine if the true value of the average amount spend per week on pizza is less than 800. The standard error for this test is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 10 to 20",
+                "B": "Between 30 to 40",
+                "C": "Between 20 to 30",
+                "D": "Between 0 to 10"
+            },
+            "correct_option_label": "A",
+            "explanation": "Given sample size $n = 20$ and sample standard deviation $s = 60$:\nStandard error is $SE = \\frac{s}{\\sqrt{n}} = \\frac{60}{\\sqrt{20}} = \\frac{60}{4.472} \\approx 13.42$, which lies between 10 to 20.",
+            "module": 4
+        },
+        {
+            "question_id": "19",
+            "question_text": "Data was collected on the amount spent by 20 students on pizza each week. The sample data gave a mean of 810 and a standard deviation of 60. Construct a hypothesis ( H_0 and H_a) to determine if the true value of the average amount spend per week on pizza is less than 800. Test statistic for the test is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 1.8 to 2.4",
+                "B": "Between 0 to 0.6",
+                "C": "Between 1.2 to 1.8",
+                "D": "Between 0.6 to 1.2"
+            },
+            "correct_option_label": "D",
+            "explanation": "With sample mean $\\bar{x} = 810$, hypothesized mean $\\mu_0 = 800$, and $SE = \\frac{60}{\\sqrt{20}} \\approx 13.416$:\nTest statistic $t = \\frac{\\bar{x} - \\mu_0}{s / \\sqrt{n}} = \\frac{810 - 800}{13.416} \\approx 0.745$, which lies between 0.6 to 1.2.",
+            "module": 4
+        },
+        {
+            "question_id": "20",
+            "question_text": "Data was collected on the amount spent by 20 students on pizza each week. The sample data gave a mean of 810 and a standard deviation of 60. Construct a hypothesis ( H_0 and H_a) to determine if the true value of the average amount spend per week on pizza is less than 800. The p-value for the test is:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Between 0.05 to 0.10",
+                "B": "Between 0.0 to 0.05",
+                "C": "Between 0.10 to 0.15",
+                "D": "More than 0.15"
+            },
+            "correct_option_label": "D",
+            "explanation": "For a lower-tail test ($H_a: \\mu < 800$) with a positive test statistic $t = 0.745$ and $df = 19$:\n$\\text{p-value} = P(t_{19} \\le 0.745) = 1 - P(t_{19} \\ge 0.745) \\approx 1 - 0.233 = 0.767$, which is substantially More than 0.15.",
+            "module": 4
+        }
+    ]
+}

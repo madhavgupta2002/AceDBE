@@ -1,0 +1,374 @@
+{
+    "exam_metadata": {
+        "subject_name": "Introduction to Strategic Management",
+        "exam_date": "20 June 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "Which of the following is a distinct feature of a firm being a separate legal entity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Management and ownership must always be the same person",
+                "B": "The firm cannot hold assets or enter contracts in its own name",
+                "C": "The firm can continue beyond the founders' lifetimes (perpetual succession)",
+                "D": "Owners remain personally liable for all the firm's debts"
+            },
+            "correct_option_label": "C",
+            "explanation": "A separate legal entity exists independently from its owners and founders. Consequently, it possesses perpetual succession, meaning its legal existence continues uninterrupted regardless of changes in ownership or the death of its founders.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "Which statement best captures the difference between strategy and tactics?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Strategy lists daily operational tasks; tactics set the organisation’s multi-year vision and mission.",
+                "B": "Strategy refers only to market positioning choices; tactics refer only to product development decisions.",
+                "C": "Strategy defines long-term direction and resource allocation; tactics are short-term actions used to implement that strategy.",
+                "D": "Strategy and tactics are identical concepts except that strategy operates at higher organisational levels."
+            },
+            "correct_option_label": "C",
+            "explanation": "Strategy establishes the overarching, long-term direction and broad resource commitments of an organization ('doing the right things'), whereas tactics consist of short-term, flexible operational actions designed to execute that strategy ('doing things right').",
+            "module": 2
+        },
+        {
+            "question_id": "3",
+            "question_text": "Which statement best defines value capture?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The total benefits created for all stakeholders measured as the difference between willingness to pay and willingness to sell.",
+                "B": "The portion of created value the firm retains as profit, equal to the difference between the price received and the costs paid for inputs.",
+                "C": "The supplier surplus measured as the difference between payment received and the supplier's minimum willingness to sell.",
+                "D": "The maximum price a customer is willing to pay for a product before switching to a substitute."
+            },
+            "correct_option_label": "B",
+            "explanation": "In the Value Stick framework, value capture refers to the profit appropriated by the firm, which equals the price charged to buyers minus the total input costs paid to suppliers and labor ($\\text{Profit} = \\text{Price} - \\text{Cost}$).",
+            "module": 2
+        },
+        {
+            "question_id": "4",
+            "question_text": "Within the VRIO framework, which dimension asks whether a firm’s structure, processes and incentives enable it to fully capture value from a resource?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rare",
+                "B": "Valuable",
+                "C": "Costly to imitate",
+                "D": "Organized to capture value"
+            },
+            "correct_option_label": "D",
+            "explanation": "The 'Organized' (O) dimension assesses whether an enterprise has the structural design, management control systems, operational routines, and incentive systems in place to exploit and capture the potential of its valuable, rare, and inimitable resources.",
+            "module": 5
+        },
+        {
+            "question_id": "5",
+            "question_text": "Competitive positioning primarily answers which managerial question?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Which businesses should the firm enter or exit?",
+                "B": "How should the firm compete within its chosen businesses?",
+                "C": "Which corporate governance structure is legally required?",
+                "D": "Which short-term tactics will increase quarterly sales?"
+            },
+            "correct_option_label": "B",
+            "explanation": "Competitive positioning is the core focus of business-level strategy, determining how a firm stakes out a unique and valuable position to achieve a competitive advantage within a specific industry or market segment.",
+            "module": 6
+        },
+        {
+            "question_id": "6",
+            "question_text": "Which organizational structure best balances decentralized decision-making at business-unit level with centralized corporate oversight for a large, diversified firm?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Multi-divisional (M-form) structure",
+                "B": "Functional structure with strong central headquarters",
+                "C": "Simple entrepreneurial structure led by the founder",
+                "D": "Matrix structure with dual reporting lines"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Multi-Divisional (M-form) structure grants semi-autonomous operating divisions the authority to respond flexibly to distinct product-market environments while corporate headquarters maintains centralized portfolio management and financial controls.",
+            "module": 8
+        },
+        {
+            "question_id": "7",
+            "question_text": "Historically, what primary advantage did joint-stock corporations give merchants undertaking risky voyages?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Automatic exemption from contractual obligations arising at sea",
+                "B": "Ability to pool capital from multiple investors to spread financial risk",
+                "C": "Guarantee that investors would never lose any invested capital",
+                "D": "State-guaranteed compensation for any voyage losses"
+            },
+            "correct_option_label": "B",
+            "explanation": "Joint-stock corporations allowed capital to be pooled across numerous passive and active investors. This diversification spread catastrophic seafaring and trade risks beyond what any single merchant or partnership could bear.",
+            "module": 1
+        },
+        {
+            "question_id": "8",
+            "question_text": "Which of the following questions is central to corporate-level strategy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Which day-to-day tactics will maximise quarterly sales?",
+                "B": "What businesses or industries should the company operate in?",
+                "C": "How should a single business unit compete within its industry?",
+                "D": "How should the marketing department allocate its monthly budget?"
+            },
+            "correct_option_label": "B",
+            "explanation": "Corporate-level strategy concerns the overall scope and boundaries of the entire enterprise, determining portfolio choices such as which industries or markets to enter, expand in, or exit.",
+            "module": 7
+        },
+        {
+            "question_id": "9",
+            "question_text": "Which strategic action directly increases total value creation for customers, according to the material on value creation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Paying suppliers only their minimum willingness to sell in order to eliminate supplier surplus.",
+                "B": "Increasing customers' willingness to pay by improving product features or investing in brand and experience.",
+                "C": "Raising price above customers' willingness to pay to boost near-term revenue.",
+                "D": "Cutting all marketing spending to reduce administrative costs and report higher short-term profits."
+            },
+            "correct_option_label": "B",
+            "explanation": "Total value created expands when the wedge between customer Willingness to Pay (WTP) and supplier Willingness to Sell (WTS) widens. Enhancing product design, functionality, brand prestige, and service experience directly raises customer WTP.",
+            "module": 2
+        },
+        {
+            "question_id": "10",
+            "question_text": "Why do some strategy groups (for example, luxury hotels) consistently earn higher profit margins than others?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They rely primarily on government subsidies to sustain margins",
+                "B": "They consistently spend more on short-term marketing promotions than other groups",
+                "C": "They are protected by mobility barriers such as brand prestige and entry restrictions",
+                "D": "They operate only in metropolitan cities, which guarantees higher demand"
+            },
+            "correct_option_label": "C",
+            "explanation": "Mobility barriers, such as significant capital requirements, deep brand heritage, prime physical locations, and specialized service architecture, prevent lower-tier firms from easily entering and competing in the luxury segment.",
+            "module": 4
+        },
+        {
+            "question_id": "11",
+            "question_text": "Under Porter's generic strategies, the central goal of a cost leadership strategy is to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Concentrate on a narrow niche with highly tailored offerings",
+                "B": "Develop unique product features that justify premium pricing",
+                "C": "Become the lowest cost producer in the industry to offer acceptable products at lower prices",
+                "D": "Maximize short-term profits through price skimming"
+            },
+            "correct_option_label": "C",
+            "explanation": "Cost leadership focuses on achieving the lowest cumulative operating and production costs in the industry, enabling the firm to price lower than rivals while remaining profitable, provided its product quality is deemed acceptable by mainstream consumers.",
+            "module": 6
+        },
+        {
+            "question_id": "12",
+            "question_text": "According to the BCG Growth-Share Matrix described in the course, how is a business unit with high relative market share operating in a low-growth industry classified?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Star",
+                "B": "Question mark",
+                "C": "Cash cow",
+                "D": "Dog"
+            },
+            "correct_option_label": "C",
+            "explanation": "In the BCG Growth-Share Matrix, business units possessing high relative market share in slow-growing, mature industries are classified as Cash Cows. They generate reliable excess cash flow that can be reallocated to fund emerging Stars or Question Marks.",
+            "module": 7
+        },
+        {
+            "question_id": "13",
+            "question_text": "In the Balanced Scorecard, which perspective is most forward-looking and emphasizes workforce skills, knowledge management and long-term organizational capacity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Learning and growth perspective",
+                "B": "Internal process perspective",
+                "C": "Customer perspective",
+                "D": "Financial perspective"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Learning and Growth perspective focuses on the organization's intangible capital, including human skills, corporate culture, information systems, and institutional knowledge necessary to drive future process enhancements and strategic renewal.",
+            "module": 8
+        },
+        {
+            "question_id": "14",
+            "question_text": "Using the value stick framework, total value created by a firm is best described as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The difference between the price charged to customers and the firm's production cost.",
+                "B": "The sum of customer surplus and the firm's profit only.",
+                "C": "The difference between customers' willingness-to-pay and suppliers' willingness-to-sell.",
+                "D": "The gap between short-term tactical gains and long-term strategic goals."
+            },
+            "correct_option_label": "C",
+            "explanation": "In the Value Stick framework, Total Value Created is defined as the entire economic wedge between the customer's maximum Willingness to Pay (WTP) and the supplier's minimum acceptable Willingness to Sell (WTS): $\\text{Total Value} = \\text{WTP} - \\text{WTS}$.",
+            "module": 2
+        },
+        {
+            "question_id": "15",
+            "question_text": "In a perfectly supplied jam market, what primary route does the material recommend for a firm to achieve superior performance?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reduce product quality to lower costs and rely on higher volumes.",
+                "B": "Create a disequilibrium in the firm's favour by offering unique attributes that raise willingness to pay.",
+                "C": "Wait for competitors to exit so demand exceeds supply naturally.",
+                "D": "Compete solely on price by undercutting rivals to gain share."
+            },
+            "correct_option_label": "B",
+            "explanation": "In competitive equilibrium, firms earn only normal profits. To earn abnormal returns, a firm must induce market disequilibrium in its favor through unique product innovations, distinct taste profiles, or branding that increases customer Willingness to Pay (WTP).",
+            "module": 2
+        },
+        {
+            "question_id": "16",
+            "question_text": "Which technological innovation described in the PESTEL materials produced a platform effect that rapidly scaled digital payments in India?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The Unified Payments Interface (UPI) enabling instant bank-to-bank transactions",
+                "B": "Robotics in automotive manufacturing for assembly line efficiency",
+                "C": "Precision farming sensors improving crop yields",
+                "D": "The rise of telemedicine services connecting doctors remotely"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Unified Payments Interface (UPI) provided an open-architecture, interoperable digital public infrastructure that lowered transaction friction and spurred two-sided network effects across merchants and consumers nationwide.",
+            "module": 4
+        },
+        {
+            "question_id": "17",
+            "question_text": "In Prof. Trilochan Sastry's interview, which governance feature distinguishes cooperatives from typical corporations?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "One member, one vote regardless of capital contribution.",
+                "B": "Ability to list on stock markets to raise farmer capital.",
+                "C": "Profit distributed equally among all members regardless of supply.",
+                "D": "Voting power proportional to the capital invested by each member."
+            },
+            "correct_option_label": "A",
+            "explanation": "Unlike joint-stock corporations where voting control is strictly proportional to equity shares held, cooperative governance is democratic, operating on the foundational principle of 'one member, one vote' irrespective of individual capital contributions.",
+            "module": 1
+        },
+        {
+            "question_id": "18",
+            "question_text": "Which statement best captures the extended value chain concept?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An extended value chain traces activities before and after the firm's internal chain and shows value co-creation across organizational boundaries.",
+                "B": "An extended value chain consists only of external marketing and sales activities beyond the firm.",
+                "C": "An extended value chain is the same as the firm's internal value grid and applies only to manufacturing sectors.",
+                "D": "A firm's value chain should exclude suppliers and downstream partners to concentrate on internal operations only."
+            },
+            "correct_option_label": "A",
+            "explanation": "The extended value chain (or business ecosystem) looks beyond internal primary and support activities to map interdependent relationships across upstream suppliers, logistics partners, distributors, and customers who co-create overall market value.",
+            "module": 2
+        },
+        {
+            "question_id": "19",
+            "question_text": "Which of the following is given as an example of a mobility barrier that increases customer switching costs in banking?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Short-term discounting to attract customers",
+                "B": "Loyalty programmes, digital banking innovations and personalised service",
+                "C": "Commoditised, identical products offered by many competitors",
+                "D": "Low capital requirements for opening new branches"
+            },
+            "correct_option_label": "B",
+            "explanation": "Integrated digital banking apps, personalized wealth advisory relationships, and tailored loyalty programs create high procedural and relational switching costs, making it difficult for competing banks to entice customers away.",
+            "module": 4
+        },
+        {
+            "question_id": "20",
+            "question_text": "Why do many well-designed strategies still fail during implementation according to the A-S-P model and Chandler's principle?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Top leaders usually lack enthusiasm for bold plans",
+                "B": "Employees always resist formal processes and prefer informal structures",
+                "C": "External markets are inherently unpredictable",
+                "D": "The organizational structure has not been realigned to support the new strategy"
+            },
+            "correct_option_label": "D",
+            "explanation": "Chandler's thesis states that 'structure follows strategy.' If a firm introduces a new strategic posture without realigning its organizational architecture, reporting relationships, and coordination mechanisms, structural inertia causes execution to fail.",
+            "module": 8
+        },
+        {
+            "question_id": "21",
+            "question_text": "Apply the POLC framework to advise which organisational structure Ram-Jam should adopt when expanding from jams into snacks and kitchenware. Justify your recommendation with three specific reasons and note two trade-offs Ram-Jam must accept.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. Recommended Structure via POLC:**\nRam-Jam should transition from a centralized functional structure to a **Divisional (Product-based) Structure**:\n* **Planning:** Allows distinct, tailored strategic and operational plans for Jams, Snacks, and Kitchenware.\n* **Organizing:** Decentralizes resources into autonomous product divisions led by dedicated general managers.\n* **Leading:** Enables division heads to foster dedicated product cultures and rapid team motivation.\n* **Controlling:** Establishes clear divisional profit-and-loss (P&L) accountability while corporate monitors overarching targets.\n\n**2. Justification (Three Reasons):**\n* *Market Responsiveness:* Unrelated categories (perishable jams vs. packaged snacks vs. non-food kitchenware) require distinct supply chains, channels, and marketing cadences.\n* *Mitigation of Functional Silos:* Removes operational bottlenecks at the executive level, enabling independent, fast-paced decision-making.\n* *Accountability & Transparency:* Isolates financial performance, enabling investors to evaluate the viability of new ventures without masking results under the core jam business.\n\n**3. Trade-offs to Accept:**\n* *Duplication of Functions & Increased Costs:* Administrative overhead increases due to redundant roles (e.g., separate marketing and supply chain personnel per division).\n* *Loss of Economies of Scale:* Fragmented purchasing and shared equipment usage may reduce bargaining power compared to a unified functional operation.",
+            "module": 1
+        },
+        {
+            "question_id": "22",
+            "question_text": "Identify one strategic move by Apple and one by Toyota described in the readings. For each, state the move, explain how it increased customers' willingness to pay (or reduced costs), and cite one supporting fact from the text.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. Apple:**\n* *Strategic Move:* Ecosystem differentiation through proprietary hardware-software integration and premium brand positioning.\n* *Mechanism on WTP/Cost:* Significantly elevated customer **Willingness to Pay (WTP)** by creating seamless interoperability, high perceived design value, and high switching costs across products.\n* *Supporting Fact:* Apple commands premium pricing and retains market-leading customer loyalty by leveraging software ecosystems (iOS, App Store, iCloud) that tie hardware together.\n\n**2. Toyota:**\n* *Strategic Move:* Pioneer of the Toyota Production System (TPS), characterized by Lean Manufacturing and Just-in-Time (JIT) processes.\n* *Mechanism on WTP/Cost:* Drastically **reduced operating and input costs** (and lowered supplier/firm willingness to sell requirements) by eliminating idle inventory and production defects.\n* *Supporting Fact:* Continuous process optimization and pull-based supply mechanisms allowed Toyota to achieve lower manufacturing defect rates and unmatched cost efficiencies compared to traditional mass-production automakers.",
+            "module": 2
+        },
+        {
+            "question_id": "23",
+            "question_text": "For a mid-sized FMCG firm entering urban Indian markets, identify three PESTEL factors to prioritise. For each factor, give two sentences explaining how it should shape the firm's choices on pack sizes, distribution channels, and pricing.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. Social / Demographic Factors (Urbanization, Nuclear Families, and Health Consciousness):**\nRising nuclear households demand smaller, single-serve or mid-sized SKUs rather than bulk packaging. The firm should prioritize modern trade and quick-commerce channels, utilizing value-based premium pricing on organic/clean-label formulations.\n\n**2. Technological Factors (Proliferation of Quick Commerce and Digital Payments):**\nTen-to-twenty-minute delivery platforms require compact, stackable pack sizes suited for rapid dark-store picking and handling. Distribution should integrate deeply with quick-commerce partners (Blinkit, Zepto, Swiggy Instamart) and direct-to-consumer (D2C) channels, accompanied by dynamic digital bundle pricing.\n\n**3. Economic Factors (Discretionary Income Growth Coupled with Price Sensitivity):**\nUrban consumers display high willingness to try new brands but remain alert to value per unit. The firm should introduce affordable 'trial packs' at low absolute price points alongside family-sized economy packs in modern retail to drive consumer conversion.",
+            "module": 4
+        },
+        {
+            "question_id": "24",
+            "question_text": "You are CEO of a mid-sized firm that owns a widely recognised brand but lacks aligned processes and incentives. Using the VRIO framework, analyse whether this brand can become a sustained competitive advantage and propose two specific organizational changes (brief rationale and an example for each) the firm must implement to capture value.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. VRIO Analysis:**\n* **Valuable (V):** Yes, the recognized brand drives customer awareness and increases Willingness to Pay.\n* **Rare (R):** Yes, a well-established household brand reputation is held by relatively few competitors.\n* **Inimitable (I):** Yes, brand equity takes substantial time, historical path dependency, and resources to build.\n* **Organized (O):** **No.** Currently, the firm lacks aligned organizational processes, operational routines, and incentive schemes.\n* **Conclusion:** The brand currently provides only a **Temporary Competitive Advantage** (or unused competitive potential) until internal organizational alignment is achieved.\n\n**2. Proposed Organizational Changes:**\n* *Intervention 1: Structural Process Realignment.* Shift from disjointed functional silos to cross-functional brand/category units to accelerate market responsiveness. *Example:* Creating dedicated cross-functional squads (integrating marketing, customer support, and supply chain) focused on customer experience.\n* *Intervention 2: Incentive and Control System Redesign.* Align executive and employee compensation systems with brand health and long-term customer retention. *Example:* Implementing a Balanced Scorecard compensation model where bonuses are tied to customer repeat purchase rates and Net Promoter Scores (NPS) rather than short-term sales volume alone.",
+            "module": 5
+        },
+        {
+            "question_id": "25",
+            "question_text": "Select an Indian firm you know (for example Titan or Dabur). Analyze which of Porter's generic strategies best describes its current competitive position and which value proposition type it primarily uses. Evaluate whether two internal capabilities align with that position and give two concrete course-based pieces of evidence supporting your judgment.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. Selected Firm & Competitive Position:**\n* **Firm:** DMart (Avenue Supermarts).\n* **Generic Strategy:** **Cost Leadership**.\n* **Value Proposition:** Everyday Low Prices (EDLP) on essential household and FMCG items.\n\n**2. Evaluation of Two Internal Capabilities:**\n* *Capability 1: Real Estate Ownership Model:* Unlike rivals leasing retail space at premium mall rates, DMart purchases store properties outright or secures long-term low-cost leases. This structurally eliminates escalating rental expenses.\n* *Capability 2: Rapid Supplier Settlement and Lean Logistics:* DMart pays suppliers well ahead of industry norms (e.g., 7–10 days vs. 30–60 days), allowing it to extract significant cash discounts and bulk procurement concessions.\n\n**3. Course-Based Evidence:**\n* *Lowest Operating Costs:* Financial and operational audits consistently reveal DMart maintains the lowest operating expenditure per square foot in Indian organized retail, enabling it to pass savings to consumers.\n* *Defensible Mobility Barrier:* Competitors cannot easily replicate DMart’s unique cluster-based store rollout and cash-backed supplier relationship architecture, creating a sustained cost advantage.",
+            "module": 6
+        },
+        {
+            "question_id": "26",
+            "question_text": "Apply the Ansoff Matrix to Asian Paints' situation described in the readings: the firm shows a strong positioning but faces a digital risk. Recommend a prioritized two-step growth approach (one near-term, one medium-term), justify each choice using the course frameworks, and list two capability investments required to support the medium-term move.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. Prioritized Two-Step Growth Approach:**\n* *Near-Term Move (Market Penetration / Defensive Digitalization):* Digitize existing dealer touchpoints and supply chains using automated inventory tracking, predictive order replenishment, and digital dealer portals to protect core market share against new digital aggregators and entrants.\n* *Medium-Term Move (Product Development / Service Expansion):* Move along the extended value chain from selling paint products to providing comprehensive, integrated home decor solutions ('Beautiful Homes Service') in existing consumer markets.\n\n**2. Justification Using Frameworks:**\n* *Value Chain & BCG Matrix:* Core decorative paints act as a high-share Cash Cow; defending it via digital penetration secures cash flows. Moving into home decor increases Willingness to Pay (WTP) and mitigates commoditization threats.\n\n**3. Required Capability Investments for Medium-Term Move:**\n* *3D Visualization & AR Software Platforms:* Proprietary digital visualizers that allow consumers to design and preview complete room aesthetics online and in-store.\n* *Contractor & Interior Designer Service Management Network:* A standardized training, certification, and quality assurance framework to manage outsourced painting/decor contractors effectively.",
+            "module": 7
+        },
+        {
+            "question_id": "27",
+            "question_text": "Analyze the main barriers to effective delegation described in the course. For a regional sales head at Ram-Jam, propose three concrete interventions to improve delegation and accountability, and state the measurable outcomes you would expect (describe outcomes qualitatively or by the metric type, not specific numeric targets).",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. Barriers to Effective Delegation:**\n* Managerial insecurity and the 'fallacy of personal indispensability' (fearing subordinates will make costly errors or outshine the manager).\n* Ambiguous authority boundaries and lack of job clarity.\n* Inadequate control and reporting systems, causing managers to hoard decisions to maintain operational oversight.\n\n**2. Three Concrete Interventions for Regional Sales Head:**\n* *Establish a Decision Rights Matrix:* Explicitly document financial, discount, and territory approval limits for area sales executives.\n* *Implement Management by Objectives (MBO):* Collaboratively agree on regional sales milestones and shift from daily micromanagement to weekly outcome reviews.\n* *Conduct Frontline Capability & Delegation Workshops:* Train subordinates in distributor management, credit reviews, and sales analytics.\n\n**3. Expected Measurable Outcomes:**\n* *Velocity Metric:* Faster order processing and distributor discount turnaround times.\n* *Organizational Metric:* Significant decrease in employee role ambiguity and lower turnover among field staff.\n* *Performance Metric:* Broader retail shelf-space expansion across sales beats and higher territory quota completion consistency.",
+            "module": 1
+        },
+        {
+            "question_id": "28",
+            "question_text": "Analyse how structural misalignment can block strategic initiatives. Using the Bharti Airtel and Amul examples from the readings, identify one structural cause of failure and one concrete structural change you would implement to restore alignment, explaining the expected effect on execution.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. Structural Misalignment Analysis:**\nStrategic initiatives stall when legacy organizational structures fail to adapt to strategic pivots. When Bharti Airtel confronted Reliance Jio’s data-first, digital-ecosystem onslaught, Airtel’s legacy structure was siloed across traditional voice telecommunications, circle-based operational boundaries, and outsourced IT infrastructure. This structural inertia hindered rapid product integration and unified platform innovation.\n\n**2. Concrete Structural Change to Restore Alignment:**\n* *Structural Shift:* Transition from regional functional silos to a dedicated, autonomous **Digital Business Division (M-form structure overlay)**, mirroring Amul's federated governance which separates grassroots milk collection from professional corporate marketing.\n* *Implementation:* Consolidate digital apps, payments, and entertainment under an empowered Chief Digital Officer with independent engineering and product roadmaps.\n\n**3. Expected Effect on Execution:**\nDecoupling digital initiatives from legacy bureaucratic approval chains speeds up feature development cycles, enables rapid response to digital market changes, and aligns developer incentives with digital engagement metrics.",
+            "module": 8
+        },
+        {
+            "question_id": "30",
+            "question_text": "Question No. 4 (Case Study From Q.No 5 To 6) Marks: 20.00\n• Ram-Jam began as a home experiment and has grown into a named company selling jams across a small regional network. Demand has broadened, external investors have joined, and the founders face a common scaling problem: how to organise the firm to expand into adjacent categories (snacks and ready-to-eat) without losing speed or control. Ram-Jam currently uses a functional structure with heads for manufacturing, marketing, finance and distribution; coordination flows through Ram and the department heads. This functional design has delivered specialization and efficiency for a single product, but product proliferation has produced siloed behaviour and slower cross-functional response. The firm already exhibits two textbook features: it operates as a separate legal entity and enjoys going-concern continuity. Key stakeholders are raising concerns - employees report rising role ambiguity, local suppliers fear order volatility, and new investors want clearer growth and governance plans. Leadership must choose between (A) retaining the functional structure while tightening delegation and controls, (B) moving to a divisional structure by product line to increase responsiveness, or (C) adopting a hybrid/matrix approach to balance shared functions and autonomous product teams. The decision requires weighing trade-offs among responsiveness, duplication and administrative cost, clarity of delegation and accountability, and stakeholder governance.\n\nApply the organisational-structure guidance to recommend which option (functional with tighter delegation; divisional by product; hybrid/matrix) Ram-Jam should choose to launch a chips product line within 12 months. Explain how your recommendation addresses coordination, speed, and cost trade-offs using course concepts. (10 marks)",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. Recommendation:**\nRam-Jam should adopt **Option (B): Moving to a Divisional Structure by Product Line** (or a hybrid structure with dedicated product divisions supported by centralized finance/governance).\n\n**2. Coordination, Speed, and Cost Trade-offs:**\n* *Coordination:* Functional heads are currently overwhelmed trying to coordinate both jams and new snack operations. A product division brings manufacturing, raw material procurement (potatoes/oil vs. fruits/sugar), and category sales under a dedicated Chips Division Head, eliminating cross-departmental coordination bottlenecks.\n* *Speed:* Launching chips within 12 months requires dedicated product development, specialized frying/packaging trials, and focused distribution setups. Dedicated divisional managers have the sole mandate and authority to execute rapidly without competing for executive attention against the core jam business.\n* *Cost Trade-offs:* A divisional structure introduces managerial role duplication and higher overhead costs. However, for a 12-month aggressive launch window backed by external investors, the benefits of market agility, clear governance, and accountability outweigh the extra administrative costs.",
+            "module": 8
+        },
+        {
+            "question_id": "31",
+            "question_text": "(Refer to Question ID 30 for Case Study context)\n\nEvaluate two concrete delegation and control interventions Ram should implement now to reduce role ambiguity and ensure manufacturing quality for expanding product lines. Justify each intervention with one expected benefit and one implementation risk. (10 marks)",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. Intervention 1: Establishment of an Independent Centralized Quality Assurance (QA) Cell.**\n* *Description:* Create a centralized quality control team reporting directly to the executive level, possessing final batch-release authority over both jam and snack manufacturing units.\n* *Expected Benefit:* Guarantees consistent adherence to food safety standards, protecting brand reputation across multiple product lines.\n* *Implementation Risk:* Operational friction and production delays if plant supervisors view external QA audits as bureaucratic micromanagement.\n\n**2. Intervention 2: Implementation of a Formal RACI Matrix and Operational Delegated Financial Authority (DFA).**\n* *Description:* Formally document roles and decision rights regarding supplier contracting, formulation changes, and production schedules, explicitly delegating operational spending limits to plant supervisors.\n* *Expected Benefit:* Reduces employee role ambiguity and eliminates decision-making delays by empowering plant heads to resolve frontline issues without seeking Ram's personal approval.\n* *Implementation Risk:* Subordinates unaccustomed to decentralized decision-making may initially hesitate to assume accountability or may make inconsistent supplier commitments.",
+            "module": 1
+        },
+        {
+            "question_id": "33",
+            "question_text": "Question No. 1 (Case Study From Q.No 2 To 3) Marks: 20.00\nNutriNative Foods is an Indian D2C health-food start-up whose vision is to become 'India's most trusted health food brand' by making healthy eating accessible. Early strategy set explicit five-year goals: reach 10 million customers, launch 50 products and expand into 20 cities - targets used to prioritise product and channel investments. The market threat is clear: global FMCG entrants can outspend NutriNative on promotion and retail reach, shifting competitive dynamics. Course guidance suggests the firm can respond by competing on price or by differentiating via Indian super-foods and clean labels while using influencer marketing and logistics partnerships as functional tactics. NutriNative faces a trade-off: a price-based response risks margin erosion and unsustainable CAC, whereas a differentiation strategy requires up-front R&D, disciplined product development (ready-to-eat and superfood lines) and focused influencer / logistics spend to build willingness to pay. The decision point: should NutriNative attempt rapid scale via price promotions and channel expansion, or concentrate resources on differentiated products and influencer-led customer acquisition while protecting margins and monitoring CAC and repeat purchases?\n\nA. Construct a concise two‑year implementation plan that aligns corporate, business and functional level actions for NutriNative to defend against global entrants. List one action per level and a brief metric to monitor. (5Marks)\nB. Identify three KPIs NutriNative should track to evaluate influencer marketing effectiveness, and state why each KPI is important. (5Marks)",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**A. Two-Year Implementation Plan Across Strategy Levels:**\n* *Corporate Level:* Refine corporate scope to focus on high-margin indigenous superfoods and clean-label nutritional categories rather than diversified mass grocery. *Metric:* Percentage of total portfolio revenue generated by high-margin superfood SKUs.\n* *Business Level:* Execute a Differentiation strategy emphasizing unadulterated traditional Indian ingredients to drive premium Willingness to Pay (WTP). *Metric:* Gross profit margin (>50%) and price premium relative to multinational FMCG alternatives.\n* *Functional Level:* Partner with credible health/nutrition micro-influencers and regional 3PL fulfillment logistics providers. *Metric:* Customer Acquisition Cost (CAC) and 60-day repeat purchase rate.\n\n**B. Three Influencer Marketing KPIs:**\n* *Customer Acquisition Cost (CAC) per Influencer:* Measures marketing capital efficiency by dividing campaign spend by the number of first-time paying customers acquired through unique discount codes/links.\n* *Conversion Rate / Click-Through Rate (CTR):* Indicates the alignment and credibility of the influencer, reflecting whether their audience is genuinely engaged by the health proposition.\n* *Customer Lifetime Value to CAC Ratio (LTV:CAC):* Validates long-term economic sustainability by confirming that acquired consumers return for repeat orders rather than churning after initial promotional discounts.",
+            "module": 2
+        },
+        {
+            "question_id": "34",
+            "question_text": "(Refer to Question ID 33 for Case Study context)\n\nUsing the value stick framework, analyze which strategic response - competing on price versus differentiating on Indian super-foods and clean labels - is more likely to increase NutriNative’s total value created and the firm’s captured value. Provide two short analytical points. (10 marks)",
+            "question_type": "SUBJECTIVE",
+            "explanation": "**1. Total Value Created ($WTP - WTS$):**\nCompeting on price does not expand the total value stick; it merely transfers value from the firm to the consumer. In contrast, differentiating via authentic Indian superfoods and transparent clean labels directly increases customer Willingness to Pay ($WTP$) by addressing unmet consumer health and purity needs, thereby widening the overall economic wedge ($WTP - WTS$).\n\n**2. Firm Captured Value ($\\text{Profit} = \\text{Price} - \\text{Cost}$):**\nA price war against multinational FMCG conglomerates quickly erodes margins because NutriNative lacks the economies of scale to lower its cost base below that of global giants. Differentiation enables NutriNative to command a premium price ($P$) well above its unit production and clean-ingredient procurement costs ($C$), protecting gross margins and generating sustainable, defensible abnormal profits.",
+            "module": 2
+        }
+    ]
+}
