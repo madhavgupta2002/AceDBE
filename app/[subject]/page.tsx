@@ -5,6 +5,11 @@ interface QuizPageProps {
   params: Promise<{
     subject: string;
   }>;
+  searchParams?: Promise<{
+    exam?: string;
+    bank?: string;
+    type?: string;
+  }>;
 }
 
 export async function generateMetadata({ params }: QuizPageProps): Promise<Metadata> {
@@ -14,7 +19,9 @@ export async function generateMetadata({ params }: QuizPageProps): Promise<Metad
   };
 }
 
-export default async function QuizPage({ params }: QuizPageProps) {
+export default async function QuizPage({ params, searchParams }: QuizPageProps) {
   const { subject } = await params;
-  return <QuizApp subjectCode={subject} />;
+  const sp = searchParams ? await searchParams : undefined;
+  const autoExam = sp?.exam || sp?.bank;
+  return <QuizApp subjectCode={subject} autoExam={autoExam} />;
 }

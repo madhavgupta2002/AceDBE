@@ -30,9 +30,11 @@ interface QuizAppProps {
   subjectCode: string;
   customQuestions?: Question[];
   customTitle?: string;
+  autoExam?: string;
+  autoType?: BankType;
 }
 
-const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customTitle }) => {
+const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customTitle, autoExam, autoType }) => {
   const router = useRouter();
   const subject = getSubjectByCode(subjectCode);
 
@@ -317,6 +319,18 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
       setLoading(false);
     }
   };
+
+  // Auto-start exam if autoExam prop provided
+  const hasAutoStarted = useRef(false);
+  useEffect(() => {
+    if (autoExam && !hasAutoStarted.current && !isCustomMode && quizState.questions.length === 0) {
+      hasAutoStarted.current = true;
+      startQuiz({
+        sets: [{ bankName: autoExam, bankType: autoType || 'Exam', modules: [] }],
+        randomOrder: false,
+      });
+    }
+  }, [autoExam, autoType, isCustomMode, quizState.questions.length]);
 
   const startRevise = async (selections: {
     sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam' | 'Custom'; modules: (string | number)[] }>;
