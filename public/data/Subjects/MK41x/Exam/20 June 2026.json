@@ -195,7 +195,8 @@
             "options": {
                 "A": "Do not directly measure business outcomes",
                 "B": "Are expensive to collect",
-                "C": "Apply only to digital media""D": "Are difficult to track"
+                "C": "Apply only to digital media",
+                "D": "Are difficult to track"
             },
             "correct_option_label": "A",
             "explanation": "Intermediate or vanity metrics such as likes, views, and comments capture superficial user interactions but fail to establish a direct causal connection with tangible business outcomes like revenue, margin, conversion rate, or customer retention.",
@@ -418,7 +419,8 @@
             "options": {
                 "A": "switching suppliers is costless",
                 "B": "buyers often split purchases among suppliers",
-                "C": "competition is absent among suppliers""D": "buyers rely on a single supplier"
+                "C": "competition is absent among suppliers",
+                "D": "buyers rely on a single supplier"
             },
             "correct_option_label": "B",
             "explanation": "In complex B2B supply ecosystems, organizations rarely rely on a single source. Instead, buyers split volume allocations across multiple interconnected vendors (e.g., using 70/30 or 80/20 splits) to mitigate operational risk and maintain competitive tension.",

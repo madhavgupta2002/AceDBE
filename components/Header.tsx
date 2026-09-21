@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import { Linkedin, Menu, X, BarChart2, GraduationCap } from 'lucide-react';
+import { Linkedin, Menu, X, BarChart2, GraduationCap, FileText } from 'lucide-react';
 import Link from 'next/link';
 
 interface HeaderProps {
@@ -71,6 +71,14 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
                 {/* Right section - Desktop */}
                 <div className="hidden sm:flex items-center gap-2">
                     <Link
+                        href="/pyqs"
+                        className="flex items-center gap-2 px-4 py-2 bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 rounded-xl transition-all duration-300 text-sm font-semibold border border-emerald-400/25 hover:border-emerald-400/40 backdrop-blur-sm"
+                        aria-label="Previous Year Questions"
+                    >
+                        <FileText className="h-4 w-4" />
+                        <span>PYQs</span>
+                    </Link>
+                    <Link
                         href="/marks"
                         className="flex items-center gap-2 px-4 py-2 bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 rounded-xl transition-all duration-300 text-sm font-semibold border border-sky-400/25 hover:border-sky-400/40 backdrop-blur-sm"
                         aria-label="Marks Import"
@@ -92,7 +100,7 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
                         href="https://www.linkedin.com/in/madhavgupta2002/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-2 px-4 py-2 bg-emerald-400/10 hover:bg-emerald-400/20 text-emerald-300 rounded-xl transition-all duration-300 text-sm font-semibold border border-emerald-400/25 hover:border-emerald-400/40 backdrop-blur-sm group"
+                        className="flex items-center gap-2 px-4 py-2 bg-teal-400/10 hover:bg-teal-400/20 text-teal-300 rounded-xl transition-all duration-300 text-sm font-semibold border border-teal-400/25 hover:border-teal-400/40 backdrop-blur-sm group"
                         aria-label="Connect on LinkedIn"
                     >
                         <Linkedin className="h-4 w-4 transition-transform duration-300 group-hover:scale-110" />
@@ -117,6 +125,14 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
             {/* Mobile menu dropdown */}
             {mobileMenuOpen && (
                 <div className="sm:hidden border-t border-slate-700/40 bg-[#0b1120]/98 backdrop-blur-xl px-4 py-3 space-y-2">
+                    <Link
+                        href="/pyqs"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="w-full flex items-center gap-2 px-4 py-2.5 bg-emerald-400/10 text-emerald-300 rounded-xl text-sm font-semibold border border-emerald-400/25"
+                    >
+                        <FileText className="h-4 w-4" />
+                        PYQs Checklist
+                    </Link>
                     <Link
                         href="/marks"
                         onClick={() => setMobileMenuOpen(false)}

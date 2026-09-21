@@ -166,6 +166,7 @@ export const SUBJECTS: Subject[] = [
     name: 'Website Development',
     description: '',
     icon: 'BookOpen',
+    finalExam: false,
     aliases: [
       { batch: 1, code: 'ID21x', term: 2 },
       { batch: 2, code: 'ID21x', term: 2 },
