@@ -1,0 +1,710 @@
+{
+    "exam_metadata": {
+        "subject_name": "Exploring Society and Structure",
+        "exam_date": "20 June 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "A small bakery decides that one worker will only knead dough, another will only shape loaves, and a third will only operate the oven. According to Adam Smith, what is the primary economic benefit of this arrangement?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It eliminates the need for wages by increasing worker satisfaction.",
+                "B": "It increases output because each worker develops speed and avoids time lost switching between tasks.",
+                "C": "It reduces the cost of raw materials by lowering overall demand.",
+                "D": "It ensures the owner maintains direct control over every stage of production."
+            },
+            "correct_option_label": "B",
+            "explanation": "Adam Smith argued that the division of labour increases overall productivity by improving the dexterity and speed of workers through specialized repetition and eliminating the time lost in transitioning between different tasks.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "What happens to \"justice\" and \"property\" in the natural state of war?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They are protected by natural human sympathy.",
+                "B": "They do not exist because they require laws and a common power.",
+                "C": "They are considered the primary \"virtues of war.\"",
+                "D": "They are determined by majority vote."
+            },
+            "correct_option_label": "B",
+            "explanation": "According to Thomas Hobbes, in the natural state of war where there is no common sovereign power and no law, notions of right and wrong, justice and injustice, and property rights cannot exist.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "Following a major natural disaster, a city loses all functioning government and law enforcement for several weeks. Looting, violence, and hoarding become widespread. Which theorist's framework most directly predicts this outcome, and why?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rousseau, because the general will collapses without a social contract.",
+                "B": "Adam Smith, because the division of labor breaks down without market incentives.",
+                "C": "Hobbes, because without a sovereign power, humans revert to a \"war of all against all.\"",
+                "D": "Wright Mills, because the personal troubles of individuals become public issues."
+            },
+            "correct_option_label": "C",
+            "explanation": "Hobbes argued that human beings are driven by competition, diffidence, and glory; in the absence of an overarching sovereign to enforce order, society collapses into a state of war of all against all.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "How do drowsy driving regulations illustrate Mills's sociological imagination?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They prove sleep is a biological necessity.",
+                "B": "They show that a private act (sleep) is linked to public laws and social structures.",
+                "C": "They prove that all-nighters are a badge of honor.",
+                "D": "They suggest the military should control all travel."
+            },
+            "correct_option_label": "B",
+            "explanation": "The sociological imagination connects individual biography to larger social structures; drowsy driving laws show how an intimate biological act like sleep is governed by public institutions, safety norms, and legal regulations.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "A factory worker loses their job when their plant closes due to automation. They feel personally ashamed and blame their own lack of skills. How would C. Wright Mills critique this reaction?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mills would argue the worker is experiencing a \"public issue\" misread as a \"personal trouble,\" caused by structural economic shifts rather than individual failure.",
+                "B": "Mills would agree, arguing that personal responsibility is the foundation of social progress.",
+                "C": "Mills would argue the worker should seek a new social contract with their employer, as Rousseau suggests.",
+                "D": "Mills would argue the worker lacks the dexterity that Smith identified as essential to productivity."
+            },
+            "correct_option_label": "A",
+            "explanation": "Mills emphasized distinguishing personal troubles from public issues; mass displacement through automation is a systemic structural shift in the economy, making it a public issue rather than a personal moral or skill failure.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "Ordinary men often feel that their private lives are a \"series of traps.\" According to Mills, what is the cause of this feeling?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lack of personal ambition.",
+                "B": "Impersonal society-wide changes",
+                "C": "Good luck in the job market.",
+                "D": "A lack of information."
+            },
+            "correct_option_label": "B",
+            "explanation": "Mills asserted that people feel trapped within their immediate orbits because they fail to see that their personal fortunes are shaped by broader historical transformations and impersonal institutional changes.",
+            "module": 1
+        },
+        {
+            "question_id": "7",
+            "question_text": "A country holds a referendum where citizens vote to give up certain individual freedoms in exchange for a government that guarantees security, education, and healthcare for all. Which concept from Rousseau does this most closely illustrate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The social compact, in which individuals transfer natural liberty to gain protection by the general will.",
+                "B": "The natural state of war, where every citizen competes for scarce resources.",
+                "C": "The division of labor, where citizens specialize their civic roles for collective efficiency.",
+                "D": "The Commonwealth by Acquisition, where a sovereign gains power through conquest."
+            },
+            "correct_option_label": "A",
+            "explanation": "Rousseau's social compact describes how individuals surrender their unrestrained natural liberty to unite under the collective community, gaining civil liberty and mutual protection through the general will.",
+            "module": 1
+        },
+        {
+            "question_id": "8",
+            "question_text": "How does Hobbes define the \"Commonwealth by Institution\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A state formed when people covenant to authorize a chosen sovereign.",
+                "B": "A state that lasts only as long as the people agree with the king's policies.",
+                "C": "A state where humans agree to live without any leader.",
+                "D": "A state where power is attained by subduing enemies through war."
+            },
+            "correct_option_label": "A",
+            "explanation": "Hobbes defines a Commonwealth by Institution as one established when men covenant among themselves to authorize and surrender their natural right of governing themselves to a chosen sovereign or assembly.",
+            "module": 1
+        },
+        {
+            "question_id": "9",
+            "question_text": "Both Hobbes and Adam Smith are concerned with how human society avoids chaos and achieves order. How do their solutions fundamentally differ?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Smith argues order emerges from mutual sympathy; Hobbes argues it emerges from religious authority.",
+                "B": "They do not differ - both argue that a strong monarch is necessary to regulate trade and prevent war.",
+                "C": "Hobbes argues a powerful sovereign is essential to impose order; Smith relies on the organic \"invisible hand\" of the market.",
+                "D": "Hobbes relies on individual self-interest through free markets; Smith relies on an all-powerful sovereign."
+            },
+            "correct_option_label": "C",
+            "explanation": "Hobbes insisted on an absolute sovereign authority to enforce social peace through fear of punishment, whereas Smith proposed that social order and wealth generation arise spontaneously through market interactions and the invisible hand.",
+            "module": 1
+        },
+        {
+            "question_id": "10",
+            "question_text": "While Adam Smith argues that the division of labor arises from an organic human propensity to trade, how would C. Wright Mills categorize the resulting economic structure?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A personal trouble of the worker.",
+                "B": "A public issue and social structure.",
+                "C": "A series of private orbits.",
+                "D": "A natural law of reason."
+            },
+            "correct_option_label": "B",
+            "explanation": "From Mills's sociological perspective, an economy organized around the division of labour represents a macro-level social structure that shapes historical conditions and constitutes a public issue.",
+            "module": 1
+        },
+        {
+            "question_id": "11",
+            "question_text": "Rousseau and Hobbes both start from a \"state of nature\" but reach opposite conclusions about human character within it. What is the core difference in their assumptions?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Rousseau focuses on economic inequality; Hobbes focuses on biological differences between individuals.",
+                "B": "Hobbes believes humans are naturally cooperative; Rousseau believes they are naturally competitive.",
+                "C": "Rousseau believes humans are naturally peaceful and free; Hobbes believes humans are naturally violent and self-destructive without authority.",
+                "D": "Both agree humans are naturally violent, but disagree on whether government can fix this."
+            },
+            "correct_option_label": "C",
+            "explanation": "Hobbes posited that humans in nature are in constant competition and conflict due to diffidence and pride, whereas Rousseau viewed natural man as inherently solitary, peaceful, and uncorrupted by societal vices.",
+            "module": 1
+        },
+        {
+            "question_id": "12",
+            "question_text": "How do the theories of Hobbes and Smith differ regarding the role of the \"Monarch\" or \"Sovereign\" in society?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Hobbes and Smith both agree that the sovereign's power is the \"essence\" of human prosperity.",
+                "B": "Smith argues that a monarch should decide who can trade, while Hobbes argues for free markets.",
+                "C": "Hobbes argues for absolute authority to prevent war; Smith argues that centralized regulation by a monarch is counterproductive to trade.",
+                "D": "Hobbes believes the sovereign is a \"legal fiction,\" while Smith believes the sovereign is a \"Leviathan.\""
+            },
+            "correct_option_label": "C",
+            "explanation": "Hobbes argued that absolute monarchical power is required to uphold civilization and prevent war, whereas Smith maintained that state/monarchical intervention in trade distorts natural market efficiencies.",
+            "module": 1
+        },
+        {
+            "question_id": "13",
+            "question_text": "Why did the management at the restaurant where Ehrenreich worked ban \"gossip\" and off-duty employees sitting together?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To save money on employee meals.",
+                "B": "To prevent the kitchen from becoming too crowded.",
+                "C": "To maintain a quiet atmosphere for customers.",
+                "D": "To prevent the formation of \"proletarian solidarity.\""
+            },
+            "correct_option_label": "D",
+            "explanation": "In Ehrenreich's analysis, workplace rules prohibiting informal socialization and solidarity-building were managerial control tactics intended to suppress worker cohesion and unionization (proletarian solidarity).",
+            "module": 2
+        },
+        {
+            "question_id": "14",
+            "question_text": "When Ehrenreich's manager tells her she is spending too much time talking to customers, which aspect of her labor is being de-emphasized?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Emotional/Skilled labor.",
+                "B": "Surplus value.",
+                "C": "Subsistence wage.",
+                "D": "Physical labor."
+            },
+            "correct_option_label": "A",
+            "explanation": "Management de-skills service work into mechanical routines by discouraging genuine relational connection and emotional labor, prioritizing rapid physical throughput over interpersonal attentiveness.",
+            "module": 2
+        },
+        {
+            "question_id": "15",
+            "question_text": "How does Marx define the \"Proletariat\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Modern wage laborers who sell their labor to survive.",
+                "B": "The ruling class of the ancient world.",
+                "C": "Capitalists who employ others.",
+                "D": "Artisans who own their own tools."
+            },
+            "correct_option_label": "A",
+            "explanation": "In Marxist theory, the proletariat is the class of modern wage laborers who possess no means of production of their own and are reduced to selling their labor power to survive.",
+            "module": 2
+        },
+        {
+            "question_id": "16",
+            "question_text": "A car factory worker spends every shift tightening the same two bolts on a chassis as it passes on a conveyor belt. He has never seen a completed car and has no relationship with the buyers. According to Marx, what does this worker experience?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A Calling - a sense of moral duty that gives his work deep personal meaning.",
+                "B": "Alienation - he is separated from the product of his labor",
+                "C": "Organic solidarity - his specialized role makes him interdependent with other workers.",
+                "D": "Collective effervescence - the rhythm of factory work generates shared group energy."
+            },
+            "correct_option_label": "B",
+            "explanation": "Marx identified alienation from the product of labor as a primary consequence of capitalist production, where the worker has no control over, ownership of, or meaningful relationship to the final manufactured object.",
+            "module": 2
+        },
+        {
+            "question_id": "17",
+            "question_text": "Which of the following is one of the ten measures Marx proposed for the transition to communism?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Privatization of all banks.",
+                "B": "Expanding the power of the church.",
+                "C": "Abolition of all taxes.",
+                "D": "Free education and abolishing child labor"
+            },
+            "correct_option_label": "D",
+            "explanation": "In the Communist Manifesto, Marx and Engels explicitly included free public education for all children and the abolition of children's factory labor in their ten transitional measures.",
+            "module": 2
+        },
+        {
+            "question_id": "18",
+            "question_text": "Marx argues that the \"base\" determines the \"superstructure.\" A media critic observes that most major newspapers, film studios, and streaming platforms are owned by a small number of billionaires. How would Marx interpret this pattern?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "As a personal trouble of journalists who lack the sociological imagination to see structural alternatives.",
+                "B": "As evidence of organic solidarity - media owners specialize in cultural production for the benefit of all.",
+                "C": "As an illustration of how economic ownership of the base shapes the ideas, values, and culture produced by the superstructure.",
+                "D": "As proof that the Protestant ethic has successfully spread capitalist values through cultural channels."
+            },
+            "correct_option_label": "C",
+            "explanation": "According to historical materialism, those who control the economic base (means of production) control the superstructure (media, art, ideology), shaping cultural narratives to legitimate capitalist interests.",
+            "module": 2
+        },
+        {
+            "question_id": "19",
+            "question_text": "Weber believes that capitalism requires workers to perform their work as an \"absolute end in itself.\" What term does he use for this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Traditionalism.",
+                "B": "Alienation.",
+                "C": "Avarice.",
+                "D": "A Calling."
+            },
+            "correct_option_label": "D",
+            "explanation": "Weber identified the concept of 'the calling' (Beruf)—rooted in Calvinist and Protestant theology—as viewing professional labor as a religious and moral obligation pursued as an absolute end in itself.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "Both Marx and Weber analyzed the rise of capitalism, but disagreed on its primary cause. Which of the following best captures their core difference?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Marx argued capitalism arose from religious ideas; Weber argued it arose from class struggle over the means of production.",
+                "B": "Both agreed that the division of labor was the single cause of capitalism, but disagreed on whether it was beneficial.",
+                "C": "Weber argued capitalism was inevitable due to human greed; Marx argued it could only emerge under a Protestant monarchy.",
+                "D": "Marx focused on material economic conditions; Weber focused on religious and cultural values."
+            },
+            "correct_option_label": "D",
+            "explanation": "Marx operated from a materialist view where economic modes of production drive historical change, while Weber adopted an idealist perspective arguing that religious values (the Protestant ethic) catalyzed modern capitalism.",
+            "module": 2
+        },
+        {
+            "question_id": "21",
+            "question_text": "A textile factory owner in 18th-century England offers workers higher piece-rates to increase output. Instead, the workers choose to work fewer hours once they have earned enough for their usual needs and go home early. Weber would describe this workers' behavior as an example of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Alienation - workers rejecting a production process that separates them from their output.",
+                "B": "Anomie - workers experiencing normlessness due to rapid industrialization.",
+                "C": "Proletarian solidarity - workers collectively resisting exploitation.",
+                "D": "Traditionalism - workers prioritizing customary living standards over the accumulation of more income."
+            },
+            "correct_option_label": "D",
+            "explanation": "Weber used this exact historical example to define traditionalism: workers simply sought to maintain their habitual lifestyle rather than maximizing financial gain through limitless accumulation.",
+            "module": 2
+        },
+        {
+            "question_id": "22",
+            "question_text": "A sociologist studies a rapidly growing city where thousands of rural migrants have arrived in two years. She finds high rates of depression, suicide, and social isolation despite full employment. Using Durkheim's framework, what is the most likely explanation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The migrants are experiencing alienation because the factory system has separated them from the product of their labor.",
+                "B": "The migrants are experiencing anomie - the breakdown of shared norms and collective bonds",
+                "C": "The migrants lack a Protestant work ethic and therefore cannot integrate into the rational capitalist economy.",
+                "D": "The migrants suffer from false consciousness because the bourgeoisie controls the superstructure of the city."
+            },
+            "correct_option_label": "B",
+            "explanation": "Durkheim's concept of anomie describes a state of normlessness that occurs during rapid social and economic transitions, leaving individuals without clear moral anchors and leading to increased rates of suicide.",
+            "module": 3
+        },
+        {
+            "question_id": "23",
+            "question_text": "How does Durkheim define \"collective consciousness\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The biological instincts of humans.",
+                "B": "A legal document written by the state.",
+                "C": "The sum of beliefs common to average members of a society.",
+                "D": "Individual likes and dislikes."
+            },
+            "correct_option_label": "C",
+            "explanation": "Durkheim defined collective consciousness as the totality of shared beliefs, sentiments, and moral values held by average members of the same society, functioning as a unifying social force.",
+            "module": 3
+        },
+        {
+            "question_id": "24",
+            "question_text": "After a terrorist attack, a city experiences a dramatic surge in flag displays, candlelight vigils, and public expressions of unity - even among people who had previously felt disconnected from one another. Durkheim would interpret this as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Anomie - the sudden shock disrupts existing norms and leaves people without guidance.",
+                "B": "Rationalization - the state efficiently mobilizes citizens through bureaucratic channels.",
+                "C": "Organic solidarity - citizens recognize their mutual interdependence in a time of crisis.",
+                "D": "Collective effervescence - a shared emotional experience that recharges and reinforces the collective consciousness."
+            },
+            "correct_option_label": "D",
+            "explanation": "Collective effervescence refers to Durkheim's idea of a heightened, shared emotional energy experienced during collective community gatherings, which serves to reaffirm and revitalize shared social bonds.",
+            "module": 3
+        },
+        {
+            "question_id": "25",
+            "question_text": "What does Durkheim mean by \"segmentary structure\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Isolated clans and villages with little connection to others.",
+                "B": "A mathematical formula for suicide.",
+                "C": "Modern apartment buildings.",
+                "D": "A specific type of factory floor."
+            },
+            "correct_option_label": "A",
+            "explanation": "In societies characterized by mechanical solidarity, Durkheim describes a segmentary structure as one composed of relatively isolated, self-contained, and identical social units such as clans or tribal segments.",
+            "module": 3
+        },
+        {
+            "question_id": "26",
+            "question_text": "In \"Mechanical Solidarity,\" the punishment of a crime is often carried out:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "In a very public and collective manner.",
+                "B": "By the individual victim alone.",
+                "C": "In private with a doctor present.",
+                "D": "Through financial fines only."
+            },
+            "correct_option_label": "A",
+            "explanation": "Under mechanical solidarity, crimes offend the strong collective consciousness, prompting repressive, punitive reactions that are carried out publicly to reaffirm the shared moral boundaries of the community.",
+            "module": 3
+        },
+        {
+            "question_id": "27",
+            "question_text": "A small rural village punishes a thief by public shaming before the entire community, while a large city prosecutes the same crime through a specialized court system with lawyers, judges, and a probation officer. According to Durkheim, what does this contrast illustrate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The city has higher levels of anomie because it lacks a collective consciousness.",
+                "B": "Both societies share the same form of solidarity - only the technology of punishment differs.",
+                "C": "The village uses mechanical solidarity with repressive law, while the city uses organic solidarity with restitutive law.",
+                "D": "The village uses organic solidarity while the city uses mechanical solidarity."
+            },
+            "correct_option_label": "C",
+            "explanation": "Durkheim noted that traditional societies exhibit mechanical solidarity with repressive, emotionally driven punishment, whereas modern differentiated societies rely on organic solidarity and restitutive legal systems.",
+            "module": 3
+        },
+        {
+            "question_id": "28",
+            "question_text": "Which of the following is a consequence of \"Anomie\" noted by Durkheim?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Better social integration.",
+                "B": "Stronger family bonds.",
+                "C": "A rise in suicides among individuals.",
+                "D": "A decrease in the crime rate."
+            },
+            "correct_option_label": "C",
+            "explanation": "Durkheim's landmark empirical study demonstrated that anomie (a state of normlessness and inadequate social regulation) directly leads to an increase in anomic suicide.",
+            "module": 3
+        },
+        {
+            "question_id": "29",
+            "question_text": "Durkheim argues that within every individual there exist two types of consciousness. A university student privately loves heavy metal music but publicly performs enthusiasm for classical concerts because her peer group values them. Which dynamic does this illustrate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The individual consciousness (personal tastes) exists alongside a collective consciousness (shared group norms) that exerts powerful pressure on behavior.",
+                "B": "The student is experiencing alienation because her labor (social performance) is separated from her authentic self.",
+                "C": "The student is demonstrating dramaturgical discipline - managing her front-stage performance.",
+                "D": "The student is experiencing anomie because the two value systems are irreconcilable."
+            },
+            "correct_option_label": "A",
+            "explanation": "Durkheim conceptualized duality in human consciousness: individual consciousness encompassing personal preferences, and collective consciousness representing internalized group expectations that constrain social conduct.",
+            "module": 3
+        },
+        {
+            "question_id": "30",
+            "question_text": "How does Durkheim's view of social change differ from Marx's?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Marx thought change was impossible.",
+                "B": "Marx focused on biology, Durkheim on math.",
+                "C": "Marx focused on material technology; Durkheim on the structure of social ties.",
+                "D": "Marx focused on law, Durkheim on religion."
+            },
+            "correct_option_label": "C",
+            "explanation": "Marx explained societal progression through technological and material modes of production and class struggles, whereas Durkheim focused on shifts in social morphology, population density, and solidarity ties.",
+            "module": 3
+        },
+        {
+            "question_id": "31",
+            "question_text": "How does Durkheim's view of social change differ from Weber's?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Durkheim focused on economics; Weber on social ties.",
+                "B": "Weber was a Marxist, but Durkheim was not.",
+                "C": "They had identical views.",
+                "D": "Weber focused on belief systems; Durkheim on the extent of social contact."
+            },
+            "correct_option_label": "D",
+            "explanation": "Weber argued that subjective cultural and religious belief systems drive historical development, whereas Durkheim argued that material social facts, demographic volume, and interaction density shape societal forms.",
+            "module": 3
+        },
+        {
+            "question_id": "32",
+            "question_text": "How did the Salem witch hysteria begin in 1692?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The Governor's wife confessed to being a witch.",
+                "B": "A group of girls showed contagious symptoms like convulsions and \"barking like dogs.\"",
+                "C": "A group of girls was caught stealing from a shop.",
+                "D": "The Native Americans attacked the village with magic."
+            },
+            "correct_option_label": "B",
+            "explanation": "Historical records and Erikson's study detail that the Salem witch panic started when young village girls exhibited unexplained convulsive fits, contortions, and barking sounds.",
+            "module": 3
+        },
+        {
+            "question_id": "33",
+            "question_text": "According to Erikson's analysis, why did the Salem community \"invent\" this new enemy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because they actually believed in Voodoo.",
+                "B": "Because they had lost their original group feeling and needed a way to come together as a group.",
+                "C": "To steal the property of those accused of being witches.",
+                "D": "To follow the new laws of the King of England."
+            },
+            "correct_option_label": "B",
+            "explanation": "Applying Durkheimian theory, Erikson showed that the Puritan colony had lost its original sense of religious mission; defining witches as deviant enemies enabled the community to realign its boundaries and restore solidarity.",
+            "module": 3
+        },
+        {
+            "question_id": "34",
+            "question_text": "Erikson's analysis of Salem suggests that communities sometimes exaggerate or manufacture threats to reinforce group boundaries. Which modern scenario best illustrates this same sociological dynamic?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A government introduces a carbon tax to reduce industrial emissions.",
+                "B": "A media campaign falsely blames immigrants for rising crime, fueling public fear and stricter border demands.",
+                "C": "A university introduces new degree programs in response to changing job market demands.",
+                "D": "A sports team wins a championship, triggering collective celebrations across the city."
+            },
+            "correct_option_label": "B",
+            "explanation": "Scapegoating minority groups or immigrants as a perceived internal threat to consolidate ingroup cohesion directly mirrors Erikson's analysis of Salem manufacturing deviance for boundary maintenance.",
+            "module": 3
+        },
+        {
+            "question_id": "35",
+            "question_text": "If a large percentage of people do not vote in a democracy, what would Hornsby argue is the cause?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The lack of a heavy progressive income tax.",
+                "B": "Democracy is a bad system and has failed.",
+                "C": "The prevalence of traditionalist religious beliefs.",
+                "D": "A failure of socialization into the norms of a democratic society."
+            },
+            "correct_option_label": "D",
+            "explanation": "Hornsby emphasizes that adherence to institutional practices requires effective socialization into community norms; political apathy or low turnout reflects a breakdown in the integration and civic socialization process.",
+            "module": 3
+        },
+        {
+            "question_id": "36",
+            "question_text": "An online gaming community bans players who use offensive language, publicly shames \"cheaters\" in a dedicated forum, and organizes weekly cooperative missions that veteran players lead for newcomers. Using Hornsby's framework, what mechanisms are keeping this community cohesive?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Mechanical solidarity - the members are all similar and share the same skills.",
+                "B": "Rationalization - the community applies formal bureaucratic rules to eliminate inefficiency.",
+                "C": "Both regulation (rules against cheating and offensive language, enforced by public shaming) and integration (cooperative rituals that build shared identity and belonging).",
+                "D": "Alienation - the division of roles between veterans and newcomers separates players from the full gaming experience."
+            },
+            "correct_option_label": "C",
+            "explanation": "Hornsby highlights that sustainable virtual communities depend on two complementary axes: effective regulation (enforcing behavioral standards) and social integration (collaborative rituals creating belonging).",
+            "module": 3
+        },
+        {
+            "question_id": "37",
+            "question_text": "Two graduates from the same university apply for the same competitive job. Graduate A knows the hiring manager personally through a family connection and receives an informal tip about the interview questions. Graduate B has a slightly higher GPA but no personal connections to the firm. According to the concept of social capital, what explains Graduate A's likely advantage?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Graduate A has higher human capital because personal relationships indicate stronger communication skills.",
+                "B": "Graduate A demonstrates dramaturgical discipline by managing their front-stage performance more effectively.",
+                "C": "Graduate A has internalized a Protestant work ethic that drives them to seek out advantageous relationships.",
+                "D": "Graduate A benefits from a larger network with members who possess relevant capital - information and access - that can be mobilized on their behalf."
+            },
+            "correct_option_label": "D",
+            "explanation": "In Bourdieu's framework, social capital consists of resources linked to durable networks of mutual acquaintance, providing members with actionable advantages like insider access and privileged information.",
+            "module": 4
+        },
+        {
+            "question_id": "38",
+            "question_text": "What precise analogy does Erving Goffman use to analyze human social encounters and micro-interactions?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An economic marketplace.",
+                "B": "A digital neural network.",
+                "C": "A biological organism.",
+                "D": "A theatrical stage or performance."
+            },
+            "correct_option_label": "D",
+            "explanation": "Goffman pioneered the dramaturgical perspective, which examines everyday social interactions using the theatrical metaphor of actors performing roles on front and back stages with scripts and audiences.",
+            "module": 4
+        },
+        {
+            "question_id": "39",
+            "question_text": "An employee who is privately furious about a management decision adjusts their uniform, smiles, and remains poised before stepping out to greet clients. This individual is directly practicing which form of performer tact?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Dramaturgical loyalty.",
+                "B": "Audience tact.",
+                "C": "Dramaturgical circumspection.",
+                "D": "Dramaturgical discipline."
+            },
+            "correct_option_label": "D",
+            "explanation": "Goffman defined dramaturgical discipline as the performer's active control of personal affect, tone, and facial expressions to maintain an appropriate front and avoid disrupting the performance.",
+            "module": 4
+        },
+        {
+            "question_id": "40",
+            "question_text": "What is the fundamental structural transition a society undergoes when moving from pre-modern to modern industrialized frameworks?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A shift from mechanical solidarity based on similarities to organic solidarity based on specialization.",
+                "B": "A transition from top-down ideological control to bottom-up dramaturgical scripts.",
+                "C": "A shift from organic solidarity based on specialization to mechanical solidarity based on similarity.",
+                "D": "A transition from a base-driven economic model to an ideas-driven superstructure."
+            },
+            "correct_option_label": "A",
+            "explanation": "Durkheim's foundational thesis is that industrial modernization shifts social integration from mechanical solidarity (shared likeness) to organic solidarity (interdependence based on the division of labour).",
+            "module": 3
+        },
+        {
+            "question_id": "41",
+            "question_text": "An entrepreneur diagnoses a localized problem in their community by rejecting grand sweeping ideologies and focusing entirely on a pragmatic, micro-level solution. This methodology mirrors the perspective of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The Postmodernists.",
+                "B": "The Monarchists.",
+                "C": "The Modernists.",
+                "D": "The Classical Economists."
+            },
+            "correct_option_label": "A",
+            "explanation": "Postmodernism is characterized by skepticism toward universal grand narratives and meta-ideologies, emphasizing instead localized, decentralized, and pragmatic perspectives.",
+            "module": 4
+        },
+        {
+            "question_id": "42",
+            "question_text": "What cultural myth does Jean Baudrillard use to illustrate how individuals pretend to believe in an agency that foresees and satisfies all human desires?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The design of a baby's room in pink.",
+                "B": "The myth of Father Christmas (Santa Claus).",
+                "C": "The German political poll on socialism.",
+                "D": "The Doordarshan channel in pre-liberalization India."
+            },
+            "correct_option_label": "B",
+            "explanation": "Baudrillard analyzed the myth of Santa Claus to explain how consumers complicitly engage with advertising: people half-believe in a benevolent agency that anticipate their desires.",
+            "module": 4
+        },
+        {
+            "question_id": "43",
+            "question_text": "When looking at contemporary marketing, how does the primary objective of advertising contrast with its actual psychological impact?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Its primary objective is to supply product information, but it has become a tool of hidden persuasion that prompts humans to regress into an infant-like state of dependency.",
+                "B": "Its primary objective is to trigger an immediate audience revolt, but it actually forces consumers to accept socialism.",
+                "C": "Its primary objective is to lower prices, but it actually creates a strict status hierarchy among universities.",
+                "D": "Its primary objective is to build genuine social connections, but it actually isolates individuals into solitary habits."
+            },
+            "correct_option_label": "A",
+            "explanation": "Baudrillard argued that while advertising purports to provide objective product descriptions, its deeper indicative role acts as psychological gratification and persuasion that fosters passive consumer dependency.",
+            "module": 4
+        },
+        {
+            "question_id": "44",
+            "question_text": "Which philosopher characterized postmodernism as an \"incredulity with meta-narratives\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Harold Garfinkel.",
+                "B": "Jean-François Lyotard.",
+                "C": "Anthony Giddens.",
+                "D": "Jean Baudrillard."
+            },
+            "correct_option_label": "B",
+            "explanation": "Jean-François Lyotard famously defined postmodernism in 'The Postmodern Condition' (1979) as an 'incredulity toward metanarratives,' rejecting universal overarching theories of history and progress.",
+            "module": 4
+        },
+        {
+            "question_id": "45",
+            "question_text": "A couple watches a reality television show featuring luxury travel, dramatic conflicts, and glamorous proposals, and subsequently feels that they must book an identical vacation to confirm their love is real. This behavior showcases a transition into:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Organic solidarity.",
+                "B": "Reciprocal typification.",
+                "C": "Affective dissociation.",
+                "D": "Hyper-reality."
+            },
+            "correct_option_label": "D",
+            "explanation": "Jean Baudrillard described hyper-reality as a condition where simulated representations become more real to individuals than authentic lived experience, leading people to model their reality on mediated simulations.",
+            "module": 4
+        },
+        {
+            "question_id": "46",
+            "question_text": "What are the three distinct phases involved in the institutionalization process as outlined by Peter L. Berger and Thomas Luckmann?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Habitualization, Reciprocal typification, Tradition.",
+                "B": "Performer tact, Audience tact, Tact regarding tact.",
+                "C": "Externalization, Objectification, Internalization.",
+                "D": "Mechanical solidarity, Organic solidarity, Anomie."
+            },
+            "correct_option_label": "C",
+            "explanation": "In 'The Social Construction of Reality,' Berger and Luckmann formulated the three-step dialectic through which society is constructed: externalization (action), objectification (institutional reality), and internalization (socialization).",
+            "module": 4
+        },
+        {
+            "question_id": "47",
+            "question_text": "A university utilizes a system where students are graded purely on absolute terms, work together on independent projects, customize their own course combinations, and view competition as unnecessary. This dynamic matches the social construction of education found in:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Pre-liberalization France.",
+                "B": "India.",
+                "C": "Britain.",
+                "D": "The Netherlands."
+            },
+            "correct_option_label": "D",
+            "explanation": "Comparative sociological studies on higher education identify the Dutch educational model as emphasizing collaborative learning, non-competitive absolute assessment, and individual curriculum flexibility.",
+            "module": 4
+        },
+        {
+            "question_id": "48",
+            "question_text": "An indigenous group shares an expansive forest communally without any concepts of individual ownership, while a neighboring state declares that same forest to be government property. This clash demonstrates that land ownership:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Is biologically determined by geographical features.",
+                "B": "Requires mechanical solidarity to remain stable.",
+                "C": "Is a purely physical trait that cannot be altered by human activity.",
+                "D": "Is a social institution that exists only as a product of human activity and enactment."
+            },
+            "correct_option_label": "D",
+            "explanation": "Berger and Luckmann assert that social structures like property and ownership are not natural or biological absolutes, but social constructions maintained through habitualization, objectification, and institutional consensus.",
+            "module": 4
+        },
+        {
+            "question_id": "49",
+            "question_text": "What can be evaluated about the biological basis of human relationships when looking at the historical variation of love and marriage practices?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Human sexuality has zero relation to biological drives or mammal comparisons.",
+                "B": "While biological sexual drives exist, the actual rules of who, how, and why people marry are entirely sociocultural constructions rather than biological imperatives.",
+                "C": "Marriage structures are universally identical across time due to rigid genetic programming.",
+                "D": "Arranged marriages are biologically mandated, while love marriages are a product of world openness."
+            },
+            "correct_option_label": "B",
+            "explanation": "Stephanie Coontz's historical examination reveals that while sexual and reproductive drives have biological components, the institutional norms, meanings, and rules governing marriage vary widely and are socioculturally constructed.",
+            "module": 1
+        },
+        {
+            "question_id": "50",
+            "question_text": "What two core elements directly dictate the overall volume and efficacy of an individual's social capital?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The frequency of their performance disruptions and the strength of their dramaturgical discipline.",
+                "B": "The size of the network they can mobilize and the specific volume of capital possessed by each member within that network.",
+                "C": "The physical location of their house and the literal amount of cash stored in their bank account.",
+                "D": "The absolute grading scale of their university and the number of books on their shelves."
+            },
+            "correct_option_label": "B",
+            "explanation": "Pierre Bourdieu specified that the total volume of social capital possessed by an agent depends on the size of the network of connections they can effectively mobilize and the volume of economic, cultural, or symbolic capital held by each member of that network.",
+            "module": 4
+        }
+    ]
+}

@@ -1,0 +1,920 @@
+{
+    "exam_metadata": {
+        "subject_name": "People - Work and Organizations",
+        "exam_date": "21 June 2026",
+        "batch": "",
+        "attempt": ""
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "At Milton farms, where a large part of the management comes from the same sociocultural background, many employees of diverse ethical or cultural origins are hired solely to ensure legal compliance with workplace diversity laws. The company's day-to-day operations leave much to be desired in promoting diversity. Recently, the owner's cousin was promoted to the post of branch manager, while three suitable candidates from different cultures were blatantly overlooked. This is an example of ________.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ingroup Favouritism",
+                "B": "Groupthink",
+                "C": "Social Exchange",
+                "D": "Social Loafing"
+            },
+            "correct_option_label": "A",
+            "explanation": "Ingroup favouritism occurs when decision-makers give preferential treatment and opportunities to individuals from their own social or cultural group. In this case, management favoured a candidate sharing their sociocultural background over equally or more qualified diverse candidates.",
+            "module": 2
+        },
+        {
+            "question_id": "2",
+            "question_text": "Sahil Brar needs an instruction manual developed for his new product. This is the last step of the project, and he has severe budget constraints. He needs a small team of technical writers to work together closely to write the manual on short notice. He needs them to communicate ideas quickly, creatively, and affordably. Which of the following techniques should Hubert consider?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Brainstorming",
+                "B": "Interacting and Brainstorming",
+                "C": "Nominal and Electronic",
+                "D": "Brainstorming and Electronic"
+            },
+            "correct_option_label": "B",
+            "explanation": "Interacting groups combined with brainstorming encourage rapid, open, and low-cost generation of creative ideas within a tightly knit team working under strict time and budget constraints.",
+            "module": 2
+        },
+        {
+            "question_id": "3",
+            "question_text": "Dev is an exceptional financial analyst known for meticulous, highly structured valuation models (high conscientiousness) when working independently. His firm recently shifted to an agile, cross-functional setup: goals change frequently, roles are ambiguous, and rapid, unstructured adaptation is required. Dev’s performance has dropped sharply, and he reports intense frustration.\nWhich statement best explains Dev’s decline?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The new agile context activated Dev’s low openness to experience, causing intolerance for ambiguity and a collapse in performance.",
+                "B": "Dev’s core self-evaluation (self-worth and efficacy) has deteriorated rapidly because the environment contradicts his self-image as a reliable, structured performer.",
+                "C": "The rapid organisational changes reduced Dev’s intrinsic job satisfaction by removing task variety and recognition, producing withdrawal and lower performance.",
+                "D": "A strong trait—conscientiousness—can become maladaptive in environments that require frequent, unstructured pivots, making his usual strengths a liability."
+            },
+            "correct_option_label": "D",
+            "explanation": "While high conscientiousness drives meticulous performance in predictable, structured roles, it can become rigid and counterproductive in fluid, ambiguous environments requiring rapid improvisation.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "A panel is interviewing candidates for a senior executive position. Candidate A gives an average, uninspired interview. Candidate B gives an exceptionally brilliant, flawlessly articulated performance. Candidate C follows immediately after and gives a solid, perfectly acceptable, competent performance. Due to the sequence, the panel rates Candidate C as \"mediocre and structurally weak.\" Which perceptual error is driving the panel's rating of Candidate C?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The Contrast Effect, because Candidate C was evaluated against the extraordinary standard of Candidate B rather than an objective rubric.",
+                "B": "Projection, because the managers are projecting their own high standards onto Candidate C.",
+                "C": "The Halo Effect, because Candidate B's brilliance spilt over and blinded the panel.",
+                "D": "Selective Perception, because the panel is only focusing on negative cues in Candidate C."
+            },
+            "correct_option_label": "A",
+            "explanation": "The contrast effect occurs when evaluation of a person's characteristics is affected by comparisons with other people recently encountered who rank significantly higher or lower on the same characteristics.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "Match the personality or behavioral description in Column I with the appropriate psychological construct in Column II:\n\n| Column I (Description) | Column II (Construct) |\n| :--- | :--- |\n| P. A person who believes their success or failure is determined by fate, luck, or powerful external forces | 1. Internal Locus of Control |\n| Q. A person who believes they are masters of their own fate and that actions directly determine outcomes | 2. High Self-Efficacy |\n| R. An individual's strong conviction in their own capability to successfully perform a specific task | 3. External Locus of Control |\n| S. An individual's overall, general evaluation of their own self-worth and value | 4. Self-Esteem |",
+            "question_type": "MCQ",
+            "options": {
+                "A": "P-4, Q-2, R-1, S-3",
+                "B": "P-3, Q-1, R-2, S-4",
+                "C": "P-3, Q-1, R-4, S-2",
+                "D": "P-1, Q-3, R-2, S-4"
+            },
+            "correct_option_label": "B",
+            "explanation": "External locus of control attributes outcomes to external forces (P-3), internal locus of control attributes them to personal agency (Q-1), self-efficacy is a task-specific capability belief (R-2), and self-esteem reflects overall evaluation of personal self-worth (S-4).",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "A tech company pays its engineers salaries that are 20% above the market average, offers pristine physical working conditions, and provides exceptional healthcare benefits. However, the work itself is highly repetitive, legacy code maintenance; there are zero opportunities for intellectual growth, no recognition programs, and no path for upward career advancement. According to Herzberg's Two-Factor Theory, what is the motivational state of these engineers?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A state of no job dissatisfaction, but low job satisfaction.",
+                "B": "High job dissatisfaction paired with low job satisfaction.",
+                "C": "A state of high job satisfaction despite high complaints.",
+                "D": "High job satisfaction and low job dissatisfaction."
+            },
+            "correct_option_label": "A",
+            "explanation": "Under Herzberg's Two-Factor Theory, competitive pay and superior working conditions fulfill hygiene factors, eliminating dissatisfaction; however, the complete lack of motivators (growth, recognition, challenge) leaves employees without true job satisfaction.",
+            "module": 1
+        },
+        {
+            "question_id": "7",
+            "question_text": "Match the behavioral scenario in Column I with the underlying attribution style or cognitive bias in Column II:\n\n| Column I (Behavioral Scenario) | Column II (Cognitive Distortion / Attribution Style) |\n| :--- | :--- |\n| P. A manager attributes an employee's tardiness entirely to laziness, ignoring a massive transit strike. | 1. Self-Serving Bias |\n| Q. A candidate attributes passing an interview to innate intelligence, but attributes failing another to biased interviewers. | 2. Fundamental Attribution Error |\n| R. An executive evaluates an applicant as universally brilliant simply because they graduated from an elite university. | 3. Horn Effect |\n| S. A supervisor gives an employee negative ratings across all dimensions based solely on one minor mistake. | 4. Halo Effect |",
+            "question_type": "MCQ",
+            "options": {
+                "A": "P-2, Q-1, R-3, S-4",
+                "B": "P-1, Q-2, R-3, S-4",
+                "C": "P-4, Q-3, R-2, S-1",
+                "D": "P-2, Q-1, R-4, S-3"
+            },
+            "correct_option_label": "D",
+            "explanation": "Over-attributing others' failure to internal flaws is Fundamental Attribution Error (P-2); crediting oneself for success while blaming external factors for failure is Self-Serving Bias (Q-1); a single positive trait biasing overall judgment is the Halo Effect (R-4); and a single negative trait biasing overall judgment is the Horn Effect (S-3).",
+            "module": 1
+        },
+        {
+            "question_id": "8",
+            "question_text": "A manufacturing unit introduces a \"Zero Noise, Max Comfort\" policy: they upgrade the air conditioning, provide ergonomic chairs, and ensure pristine safety parameters. However, the assembly-line jobs remain entirely automated, rigid, and devoid of any autonomy, skill variety, or performance recognition.\nWhich of the following descriptions accurately maps this scenario to Herzberg’s Motivation-Hygiene Model and the Job Characteristics Model (JCM)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Hygiene factors are deficient, resulting in extreme job dissatisfaction. The JCM profile is high because the environment is physically stable.",
+                "B": "Motivators are highly active due to the ergonomic upgrades, but the lack of hygiene factors causes high employee complaints.",
+                "C": "The employees will experience high job satisfaction because comfort and safety naturally fulfil the psychological need for task significance.",
+                "D": "Hygiene factors are optimised, leading to a state of \"no dissatisfaction.\" However, the core job characteristics lack meaningfulness and autonomy, leaving employees completely unmotivated."
+            },
+            "correct_option_label": "D",
+            "explanation": "Ergonomic and environmental upgrades address hygiene factors, preventing dissatisfaction. However, true motivation requires intrinsic job enrichment such as skill variety and autonomy, which are absent here.",
+            "module": 1
+        },
+        {
+            "question_id": "9",
+            "question_text": "During a high-stakes corporate restructuring, Kabir focuses entirely on maintaining a flawless public image, carefully decoding his CEO’s subtle preferences, and tailoring his opinions to mirror executive leadership. However, he refuses to take risky positions or champion necessary operational changes. In contrast, his peer, Tara, aggressively identifies structural bottlenecks, initiates an unprompted overhaul of the supply chain workflow, and persists despite fierce pushback, completely unconcerned about whether her bold approach violates traditional corporate hierarchy.\nAccording to individual difference frameworks, Kabir is demonstrating a high degree of ________ coupled with low ________, whereas Tara perfectly exemplifies a highly ________ profile.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Self-Monitoring; Proactivity; Proactive Personality",
+                "B": "Deep Acting; Surface Acting; High-Mach",
+                "C": "Self-Efficacy; Locus of Control; Narcissistic",
+                "D": "Proactive Personality; Self-Monitoring; Machiavellian"
+            },
+            "correct_option_label": "A",
+            "explanation": "Kabir actively adapts his behavior to external social cues (high self-monitoring) without taking initiative (low proactivity), whereas Tara shows proactive personality by taking unprompted initiative to effect structural change despite resistance.",
+            "module": 1
+        },
+        {
+            "question_id": "10",
+            "question_text": "A multinational organisation forms a new cross-functional committee consisting of nine highly conservative, soft-spoken financial auditors and one highly expressive, boisterous, and casually dressed marketing director. Throughout the first three strategy meetings, the committee members consistently over‑attribute both the successes and the friction points in the team's outputs entirely to the marketing director's behaviour.\nWhich statement accurately explains this phenomenon based on the characteristics of the target and its relationship to the background?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The marketing director's behaviour is interpreted via Selective Perception because the auditors are filtering out all data that aligns with financial metrics.",
+                "B": "The auditors are demonstrating a self-serving bias, actively protecting their own professional identities by ignoring team inputs.",
+                "C": "The situation reflects a Pygmalion Effect, where the high expectations of the auditors are forcing the marketing director to alter their baseline personality traits.",
+                "D": "Because we do not observe targets in isolation, the marketing director's extreme distinctiveness against the background of the group creates high perceptual salience, causing observers to over-index on their actions."
+            },
+            "correct_option_label": "D",
+            "explanation": "Targets are perceived in relation to their background. High visual and behavioral contrast increases perceptual salience, drawing disproportionate attention and causing observers to over-attribute group dynamics to that individual.",
+            "module": 1
+        },
+        {
+            "question_id": "11",
+            "question_text": "The founder of an elite aerospace engineering think tank wants to ensure the firm's intensely collaborative, high-risk Moonshot Innovation culture survives long after her retirement. Which of the following systemic practices are empirically validated to sustain this specific cultural architecture across generations? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ensuring the incoming C-suite explicitly models vulnerable behaviour, openly discusses personal technical failures, and visibly rewards bold, non-fatal mistakes.",
+                "B": "Constructing selection rubrics that explicitly filter out applicants with high risk-averseness, regardless of their raw technical proficiency.",
+                "C": "Utilising highly individualised, variable socialisation programs that allow new hires to challenge baseline values immediately upon entry.",
+                "D": "Designing intense, structured socialisation pipelines that systematically train newcomers out of traditional bureaucratic habits."
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "Sustaining an innovation culture requires leadership modeling of psychological safety (admitting mistakes), targeted selection to maintain culture-fit (filtering out risk-averseness), and structured socialization to unlearn bureaucratic habits.",
+            "module": 5
+        },
+        {
+            "question_id": "12",
+            "question_text": "A research hospital forms an emergency epidemiological task force comprising world-class, highly motivated infectious disease experts with extensive field experience. The group is tasked with stopping an outbreak of an unmapped pathogen. According to Path-Goal and Situational Leadership theories, which of the following managerial interventions will actively damage or diminish this team’s performance? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Routinely involving the scientists in top-level resource-allocation decisions and operational strategy formulation.",
+                "B": "Spending extensive time conducting emotional \"cheerleading\" sessions regarding standard, routine administrative reporting tasks.",
+                "C": "Setting high-level, challenging milestones and explicitly communicating complete trust in the team’s scientific efficacy.",
+                "D": "Implementing micro-detailed schedules and step-by-step task instructions detailing how to execute daily lab samples."
+            },
+            "correct_option_label": "B, D",
+            "explanation": "Highly competent and motivated experts perform best with delegation and achievement-oriented leadership; directive micromanagement (D) and redundant cheerleading on routine tasks (B) insult their competence and demotivate them.",
+            "module": 3
+        },
+        {
+            "question_id": "13",
+            "question_text": "A creative graphic designer loves spending his personal weekends building complex, beautiful typography illustrations entirely for free, experiencing deep intrinsic motivation and creative freedom. His agency notes his talent and promotes him to \"Lead Typography Officer,\" giving him a high salary but tying his work to strict daily production quotas and monitoring his creative hours via software trackers. According to Cognitive Evaluation Theory, what is the likely outcome? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The shift from an internal locus of causality to an external locus of causality can turn a passion into a structured chore, reducing spontaneous creativity.",
+                "B": "His intrinsic motivation will likely drop because the introduction of heavy extrinsic rewards and rigid control causes him to feel less in control of his own creative behaviour.",
+                "C": "Tying the creative act to surveillance and deadlines directly supports the designer's psychological need for autonomy.",
+                "D": "His total motivation will double because adding a high extrinsic reward to high intrinsic passion always acts as a linear, positive multiplier."
+            },
+            "correct_option_label": "A, B",
+            "explanation": "Cognitive Evaluation Theory posits that introducing controlling extrinsic rewards shifts an individual's perceived locus of causality from internal to external, undermining feelings of autonomy and eroding intrinsic motivation.",
+            "module": 1
+        },
+        {
+            "question_id": "14",
+            "question_text": "A divisional audit director reviews an underperforming retail store branch. She notes that local store revenues are down 35%. She immediately documents that the branch manager is \"cognitively deficient, unmotivated, and lacking primitive leadership skills.\" She completely ignores documentation showing that the state government closed the main highway leading to the store for construction throughout the entire quarter. This auditor has committed: (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The Fundamental Attribution Error, by over-indexing on internal, dispositional flaws of the manager while completely discounting massive external, situational constraints.",
+                "B": "A severe social perception distortion by failing to evaluate the target (the manager) accurately within its true background context (the highway closure).",
+                "C": "The Self-Serving Bias, by taking credit for the store's previous successful quarters.",
+                "D": "Cognitive Filtering driven by a highly organic structural environment."
+            },
+            "correct_option_label": "A, B",
+            "explanation": "The auditor overemphasizes dispositional factors while disregarding a major situational obstacle (highway closure), exemplifying the Fundamental Attribution Error and failing to assess the target in its situational context.",
+            "module": 1
+        },
+        {
+            "question_id": "15",
+            "question_text": "A search panel is reviewing an executive candidate who scores extraordinarily high on clinical scales of Narcissism and Machiavellianism, but moderate on Psychopathy. Which of the following behavioural profiles can the board expect if it hires this individual? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "He will excel at building deep, empathetic, and altruistic mentorship networks that prioritise employee well-being above corporate profit.",
+                "B": "He will require continuous, extreme personal admiration, believe he is fundamentally entitled to elite privileges, and react with intense defensive anger if criticised.",
+                "C": "He will be highly pragmatic, maintain cold emotional distance from staff, and manipulate political alliances under the core guideline that \"the end justifies the means.\"",
+                "D": "He will likely be highly effective in the short term at driving aggressive political deals, but will create a toxic, self-serving organisational culture over time."
+            },
+            "correct_option_label": "B, C, D",
+            "explanation": "High Narcissism drives entitlement, grandiosity, and hypersensitivity to criticism (B); Machiavellianism involves emotional detachment and manipulative pragmatism (C); and together they often yield short-term political gains at the expense of long-term culture (D).",
+            "module": 1
+        },
+        {
+            "question_id": "16",
+            "question_text": "An organisation transitions from a highly organic, flat structure to a mechanistic, vertically tall structure with rigid departmental silos and high formalisation. Based on the intersection of structural design and motivation theory (JCM), what changes are likely to occur in the internal experiences of the employees? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The structural shift will cause a drop in the critical psychological states required for high intrinsic work satisfaction.",
+                "B": "Task Identity may decline as workers are funnelled into rigid, isolated functional silos where they handle small, fragmented pieces of work rather than whole client portfolios.",
+                "C": "Employee Autonomy will likely plummet due to the heavy influx of standardised rules, formalisation, and centralised approvals.",
+                "D": "Internal work motivation and experienced meaningfulness will naturally surge as a direct result of increased vertical management layers."
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "Mechanistic structures fragment work into narrow, standardized tasks, diminishing autonomy and task identity, which suppresses the core psychological states needed for intrinsic job satisfaction according to the Job Characteristics Model.",
+            "module": 2
+        },
+        {
+            "question_id": "17",
+            "question_text": "An operations director has formal authority to hire, fire, and discipline subordinates. Over her 15-year tenure, she has also earned a legendary reputation for solving seemingly impossible supply chain blockages and is widely admired for her transparent, deeply supportive mentoring approach. Which of the following theoretical statements regarding her power profile are accurate? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Coercive power remains her most stable tool; utilising it frequently will maximise long-term organisational citizenship behaviour.",
+                "B": "Her personal power bases are statistically stronger drivers of deep employee commitment than her formal position power.",
+                "C": "If she is suddenly moved to a completely different industry sector, her Referent power will immediately dissolve along with her industry-specific knowledge.",
+                "D": "Relying primarily on formal legitimate power is highly unstable because it depends entirely on her maintaining her specific position in the corporate hierarchy."
+            },
+            "correct_option_label": "B, D",
+            "explanation": "Personal power bases (expert and referent power) foster genuine commitment, whereas positional power (legitimate power) is tied solely to structural hierarchy and produces mere compliance or resistance.",
+            "module": 3
+        },
+        {
+            "question_id": "18",
+            "question_text": "During a high-visibility project allocation meeting, the VP of Finance dismisses the VP of Marketing’s expansion proposal, stating: \"I am rejecting this because you are an innately arrogant, superficial hype-artist who lacks deep business acumen.\" The VP of Marketing reacts by slamming her laptop shut, refusing to share quarterly customer data files, and publicly plotting to cut the Finance team's travel budgets. According to the conflict process model, what is occurring? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The conflict has dramatically escalated from the Task Conflict level (substance of the proposal) directly into personal Relationship Conflict.",
+                "B": "The conflict has reached Stage II (Cognition and Personalisation), where the parties internalise the friction, leading to felt anxiety, hostility, and frustration that actively drives aggressive behaviour.",
+                "C": "The conflict has become deeply dysfunctional, shifting focus entirely away from organisational goals toward personal retaliation.",
+                "D": "This represents a purely functional conflict pattern that will optimise the long-term strategic decision-making capacity of the firm."
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "The disagreement degenerated from substantive task debate into toxic relationship conflict with ad hominem attacks, activating negative personal emotions (Stage II) and dysfunctional, retaliatory behaviors.",
+            "module": 4
+        },
+        {
+            "question_id": "19",
+            "question_text": "A massive multinational consumer goods firm realises that its local country managers cannot respond to lightning-fast pricing adjustments by regional competitors because every pricing change requires formal, signed approval from corporate headquarters in Chicago. The CEO decides to decentralise pricing authority down to the regional level. Which of the following statements accurately justifies and analyses this structural shift? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "By pushing authority down, the organisation will automatically ensure that 100% of global divisions maintain a completely identical corporate identity and unified message.",
+                "B": "Decentralisation shifts decision-making authority closer to the physical point of action, significantly accelerating tactical response speeds to localised market threats.",
+                "C": "Pushing decision-making power down reduces frontline alienation and enhances job satisfaction by expanding employee empowerment.",
+                "D": "Decentralisation reduces the cognitive load on top-tier corporate executives, allowing them to focus exclusively on macro-level long-term strategy."
+            },
+            "correct_option_label": "B, C, D",
+            "explanation": "Decentralization empowers frontline managers, speeding local market responsiveness and freeing corporate leadership to concentrate on strategic planning, although it may decrease global uniformity.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "An HR director designs a performance-bonus system under the framework of Victor Vroom’s Expectancy Theory (M = E x I x V). She sets an incredibly high performance benchmark to win a luxury vacation. However, the employees are convinced that even if they work 80 hours, high-performance factory equipment makes it completely impossible to hit that benchmark. Concurrently, they find the idea of a corporate luxury vacation unappealing and prefer direct cash bonuses instead. What is the motivational state of this workforce? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Motivation is near zero because Valence (V) is zero or negative (they do not value the specific reward offered).",
+                "B": "Motivation is moderate because Instrumentality (P->O) remains structurally locked at 1.0.",
+                "C": "Motivation is near zero because Expectancy (E->P) is zero (they believe effort cannot lead to performance due to broken equipment).",
+                "D": "Motivation is high because the Valence of the reward is elevated by its luxury status."
+            },
+            "correct_option_label": "A, C",
+            "explanation": "Expectancy Theory is multiplicative ($M = E \\times I \\times V$); if employees perceive effort cannot produce required performance ($E = 0$) and do not value the offered reward ($V = 0$), total motivation collapses to zero.",
+            "module": 1
+        },
+        {
+            "question_id": "21",
+            "question_text": "An international airline rewards its Airport Operations Division based on minimising aircraft turnaround times and maximising gate throughput. Concurrently, it rewards its Maintenance and Engineering Division strictly based on zero-tolerance safety inspections and extensive, slow parts checks. The two divisions are locked in an intense, ongoing feud. The primary structural causes driving this conflict are: (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Deep differences in Personal Variables and core personality traits across the two leadership profiles.",
+                "B": "Jurisdictional Ambiguities arising from a complete lack of formal operational role definitions.",
+                "C": "Interdependence, as the operations team cannot release flights without the formal clearance of the maintenance team.",
+                "D": "The organisation's split reward structures systematically engineer Goal Incompatibility."
+            },
+            "correct_option_label": "C, D",
+            "explanation": "The conflict is structurally induced: the two divisions have fundamentally opposing reward metrics (speed vs. thorough inspections) while remaining sequentially interdependent on each other for flight clearance.",
+            "module": 4
+        },
+        {
+            "question_id": "22",
+            "question_text": "A multi-line global electronics firm deploys a dual-reporting Matrix Structure, tightly binding its geographical divisions to its functional product units. While the structure is designed to optimise lateral communication and resource sharing, the firm is crippled by constant infighting among regional VPs and global product leads over resource deployment. To keep this matrix functional, what must executive leadership realise? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The organisation must rely heavily on formal, dual-budgeting systems and clear, shared performance metrics to force collaborative behaviour.",
+                "B": "The matrix will naturally fail if personal variables like high emotional intelligence and strong lateral communication skills are absent in key managers.",
+                "C": "Executive leadership must instantly intervene and permanently centralise all authority back to a single vertical line the moment any debate occurs.",
+                "D": "A matrix structure intentionally institutionalises conflict; therefore, success requires building high-capacity conflict-resolution skills rather than trying to eliminate disagreements."
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "Matrix designs institutionalize competing priorities by having dual command lines. Their viability depends on shared collaborative metrics, emotional intelligence, and robust conflict-resolution mechanisms.",
+            "module": 2
+        },
+        {
+            "question_id": "23",
+            "question_text": "A newly appointed department head rapidly segments her team of eight into two distinct clusters. The \"In-Group\" receives high autonomy, deep personal coaching, elite project assignments, and unstructured social lunches with her. The \"Out-Group\" receives strictly formalised, transactional directives, zero personal interactions, and routine compliance monitoring. According to LMX theory, what predictable systemic outcomes can be expected from this division? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The out-group will likely exhibit higher rates of psychological withdrawal, escalating counterproductive work behaviours (CWB), and turnover intentions.",
+                "B": "Out-group members will respond by maximising their intrinsic motivation, rapidly outperforming the in-group to win back favour.",
+                "C": "The overall performance metrics of the entire unit will become highly fragmented, driven by perceived relational injustice across the ecosystem.",
+                "D": "In-group members will demonstrate significantly higher levels of organisational citizenship behaviour (OCB) and job satisfaction."
+            },
+            "correct_option_label": "A, C, D",
+            "explanation": "Under Leader-Member Exchange (LMX) theory, favored in-group members exhibit high commitment and OCBs, while marginalized out-group members perceive relational injustice, triggering withdrawal, resentment, and CWBs.",
+            "module": 3
+        },
+        {
+            "question_id": "24",
+            "question_text": "A premier software engineering sprint team is locked in intense, loud debates regarding whether to use Python or Rust to build a new high-frequency trading algorithm. The debates are highly time-consuming and push back the initial planning phase by a full week. Still, they ultimately lead to an architectural design that reduces security vulnerabilities by 40% compared to neighbouring teams. Which of the following statements are true? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The team is navigating Task Conflict, which research proves is highly beneficial when applied to complex, non-routine cognitive activities.",
+                "B": "The team is experiencing Process Conflict, as the core disagreement centres on the personal delegation of operational duties.",
+                "C": "Because the debates delayed the initial schedule, this conflict is structurally dysfunctional by definition, irrespective of the eventual code quality.",
+                "D": "This scenario represents functional conflict because it ultimately enhanced the quality of the organisational decision and output."
+            },
+            "correct_option_label": "A, D",
+            "explanation": "Task conflict centers on the content and goals of the work. When managed constructively in complex technical projects, it stimulates critical evaluation of options, making it functional despite minor initial schedule delays.",
+            "module": 4
+        },
+        {
+            "question_id": "25",
+            "question_text": "A premier management consulting firm is onboarding an incoming batch of MBA associates using an intense, 6-week bootcamp. The associates are isolated together, undergo identical daily training modules, pass through strict collective milestones, and are explicitly stripped of their past professional habits to adopt a unified corporate \"Playbook Style.\" According to socialisation theory, this firm is deploying: (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An institutionalised strategy characterised by Collective, Formal, and Sequential socialisation components.",
+                "B": "A random, informal process that relies entirely on organic peer modelling.",
+                "C": "A design intended to minimise role innovation, ensuring high predictability, conformity, and standardisation of behavioural outputs.",
+                "D": "An Individualised and Variable socialisation strategy designed to maximise unique, non-conformist role innovations."
+            },
+            "correct_option_label": "A, C",
+            "explanation": "Collective, formal, and sequential socialization tactics represent an institutionalized approach that standardizes newcomer attitudes, fostering conformity and predictable role performance while reducing role innovation.",
+            "module": 6
+        },
+        {
+            "question_id": "26",
+            "question_text": "An organisation needs to set up a high-stakes, 3-month task force to turn around a failing digital product. The assignment requires:\n1. Navigating severe corporate politics and holding underperforming external vendors accountable.\n2. Willingness to make highly unpopular personnel cuts without letting personal relationships interfere.\n3. Operating with complete structural autonomy where success or failure rests entirely on the leader's shoulders.\nBased on the profiles of the five employees mentioned in your context\nJoel: High nAch;\nGita: High nPow;\nFeroze: High nAff;\nPriya: High nPow / Low nAff;\nDeep: Low nPow / Low nAff),\nWhich of the following placement strategies are theoretically sound? (Select ALL that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Joel should be given the specific sub-task of re-engineering the product’s core technical architecture, provided he is given clear, rapid milestones and personal accountability for the code's performance.",
+                "B": "Deep is well-suited to manage the political stakeholder dynamics of this turnaround because his low scores in power and affiliation make him completely objective and immune to bias.",
+                "C": "Priya is the ideal candidate to chair the task force because her \"Institutional Manager\" profile ensures she can execute tough choices without being paralysed by a need for social approval.",
+                "D": "Feroze should be appointed as the primary negotiator with the failing vendors because his high need for affiliation will ensure he maintains harmony and avoids conflict."
+            },
+            "correct_option_label": "A, C",
+            "explanation": "High nAch individuals (Joel) excel when given direct personal accountability on challenging technical tasks, while managers with high nPow and low nAff (Priya) make the most effective institutional leaders capable of making tough decisions without seeking popularity.",
+            "module": 1
+        },
+        {
+            "question_id": "27",
+            "question_text": "A multi-state healthcare company is considering a mandatory job rotation program for its specialised surgical nurses and outpatient administrative staff. Which of the following conditions within this specific organisation would serve as strong arguments against implementing this program immediately? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A recent employee survey shows that the administrative staff are currently suffering from acute emotional exhaustion and change fatigue due to a recent software overhaul.",
+                "B": "The administrative staff have high cross-functional overlap, meaning the training time required to switch roles is less than 2 hours.",
+                "C": "The surgical roles require highly specialised, non-interchangeable technical competencies where minor errors carry catastrophic clinical risks.",
+                "D": "The surgical unit is currently managing a severe understaffing crisis and experiencing an unprecedented surge in trauma cases."
+            },
+            "correct_option_label": "A, C, D",
+            "explanation": "Job rotation disrupts workflows and increases error risks in high-specialization, high-consequence environments (surgery), and exacerbates operational strain during acute understaffing crises or severe change fatigue.",
+            "module": 2
+        },
+        {
+            "question_id": "28",
+            "question_text": "An automobile manufacturer operates two distinct engineering teams: the Advanced Innovation Team (measured on breakthrough vehicle features and future tech patents) and the Mass Production Engineering Team (measured on manufacturing cycle times and unit cost reduction). The leadership observes a chronic, hostile relationship between the teams, with the production team routinely blocking the deployment of innovative designs. Which structural factors explain this conflict? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The innovation team cannot realise its goals unless the mass production team allocates factory floor bandwidth to manufacture their concepts.",
+                "B": "The organisation has failed to clearly outline which team possesses final veto power over when a prototype is deemed \"production ready.\"",
+                "C": "The teams are sharing too much granular technical data, leading to processing paralysis.",
+                "D": "The innovation team's metrics demand novelty, whereas the production team's metrics reward predictability and cost minimisation."
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "Intergroup conflict is fueled by sequential/reciprocal task interdependence (A), jurisdictional ambiguity regarding decision authority (B), and structurally engineered goal incompatibility from diverging metrics (D).",
+            "module": 4
+        },
+        {
+            "question_id": "29",
+            "question_text": "A multi-line electronics factory is facing an unexpected 30% surge in customer demand for its flagship product line. Simultaneously, the plant manager is considering deploying a comprehensive Job Rotation program, moving highly specialised technicians to completely unfamiliar cell stations to break up the daily monotony. Which factors present a powerful argument against launching this program right now? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Employees are currently vocalising intense boredom and feeling completely underutilised in their repetitive stations.",
+                "B": "The administrative and supervisory hours required to monitor, safety-audit, and correct the rotating staff will place a heavy strain on an already stretched management tier.",
+                "C": "The factory is entering its peak busy season, where maximising immediate, short-term throughput is the absolute corporate priority.",
+                "D": "The transition and training cross-over time required for a technician to master a new cell station will cause a temporary, multi-day productivity dip."
+            },
+            "correct_option_label": "B, C, D",
+            "explanation": "Launching job rotation during peak production demand risks temporary productivity losses, drains managerial supervisory bandwidth, and undermines immediate throughput goals.",
+            "module": 2
+        },
+        {
+            "question_id": "30",
+            "question_text": "A division head explicitly structures his management framework around a dual deployment of Frederick Herzberg’s Two-Factor Model and Edwin Locke’s Goal‑Setting Theory. Which of the following integrated manager actions aligns perfectly with the core mechanics of both models? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ensuring that base pay, office safety, and corporate policies are maintained at an optimal level, while simultaneously collaborating with employees to lock in ambitious career-growth objectives.",
+                "B": "Designing highly challenging, specific, and mathematically rigorous performance targets while explicitly acknowledging and celebrating an employee's mastery upon goal completion.",
+                "C": "Unilaterally slashing base salary metrics below market baseline while scaling up public praise and job title promotions.",
+                "D": "Stripping away all task significance and autonomy, while providing clear, step-by-step instructions for routine work."
+            },
+            "correct_option_label": "A, B",
+            "explanation": "Herzberg requires maintaining baseline hygiene factors (pay, safety) while providing motivators (recognition, growth), which combines synergistically with Locke's principles of setting specific, challenging goals and celebrating mastery.",
+            "module": 1
+        },
+        {
+            "question_id": "31",
+            "question_text": "During a performance appraisal meeting, an employee says, \"I completely welcome this critical feedback and am fully committed to changing my project management style.\" However, the manager notices the employee sitting with their jaw clenched, their hands balled into white-knuckled fists in their lap, and their torso leaning sharply away toward the exit door. Based on the principles of non-verbal communication, what should the manager conclude? (Select ALL that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The non-verbal kinesic cues (body posture, tension) heavily contradict the verbal message, indicating potential defensiveness or unexpressed resentment.",
+                "B": "The employee’s verbal statements should be taken at face value because spoken words carry the vast majority of emotional meaning in high-stakes settings.",
+                "C": "The employee is definitely lying and planning to sabotage the next project assignment.",
+                "D": "Leakage of true emotional states occurs more reliably through involuntary physical cues than through tightly managed verbal declarations."
+            },
+            "correct_option_label": "A, D",
+            "explanation": "Non-verbal communication (kinesics, physical tension) is less consciously controlled than spoken words and frequently provides authentic emotional leakage contradicting verbal compliance.",
+            "module": 4
+        },
+        {
+            "question_id": "32",
+            "question_text": "An executive coach tracks two directors within a fast-moving consulting firm:\n• Director X scores in the 99th percentile for Self-Monitoring but the 5th percentile for Proactive Personality.\n• Director Y scores in the 5th percentile for Self-Monitoring but the 95th percentile for Proactive Personality.\nDuring a major corporate transition, which behavioural manifestations will most likely be observed? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Director Y will treat his own behavior as a fluid variable, shifting his outward beliefs to match whatever room he stands in.",
+                "B": "Director X will aggressively challenge existing workflows and take high-risk, non-conformist professional stances.",
+                "C": "Director Y will relentlessly identify operational bottlenecks, spearhead new cross-functional projects, and fight to change broken policies, completely unconcerned if his blunt communication style alienates senior leadership.",
+                "D": "Director X will be exceptionally skilled at reading social cues, tailoring his political alignment to please the winning executive faction, but will fail to initiate any creative structural innovations."
+            },
+            "correct_option_label": "C, D",
+            "explanation": "High proactive personality with low self-monitoring (Director Y) drives relentless initiative regardless of social friction, whereas high self-monitoring with low proactivity (Director X) focuses on political conformity and diplomatic accommodation rather than innovation.",
+            "module": 1
+        },
+        {
+            "question_id": "33",
+            "question_text": "An organisation is considering the immediate launch of a Job Enrichment program (vertically expanding jobs by transferring planning, execution, and evaluation responsibilities directly from supervisors to frontline employees). Which of the following factors would provide a strong argument against the immediate implementation of this job design intervention? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A recent climate survey indicates that employees have a very low \"Growth Need Strength\" (GNS) and primarily seek stability, clear directions, and routine work.",
+                "B": "The current workforce lacks the specialised technical competence and decision-making skills required to handle managerial responsibilities without extensive training.",
+                "C": "Middle managers and supervisors are highly anxious about losing their authority and are likely to sabotage the redistribution of their core responsibilities actively.",
+                "D": "Employees have expressed deep frustration that their current roles are monotonous, highly repetitive, and lack any sense of personal autonomy."
+            },
+            "correct_option_label": "A, B, C",
+            "explanation": "Job enrichment fails if employees have low Growth Need Strength (preferring routine), lack necessary competence, or if supervisors resist losing positional control and sabotage the transfer of autonomy.",
+            "module": 2
+        },
+        {
+            "question_id": "34",
+            "question_text": "A hospital network is redesigning its performance appraisal system for attending physicians. The board wants to ensure the criteria are legally defensible, balance operational realities, and capture the full scope of a physician’s value to the organisation. Which of the following represent structurally sound and valid criteria categories for this evaluation? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Active participation in cross-departmental tumour boards and mentoring junior residents during clinical rounds.",
+                "B": "Displaying an inherently empathetic disposition and possessing a natural aura of medical authority.",
+                "C": "Voluntarily covering night shifts for colleagues experiencing family emergencies or writing unprompted hospital safety protocols.",
+                "D": "Patient recovery rates, readmission statistics, and accurate completion of medical charts within 24 hours."
+            },
+            "correct_option_label": "A, C, D",
+            "explanation": "Legally defensible performance appraisal systems measure objective task outcomes (D), observable professional citizenship behaviors (C), and collaborative teamwork/mentoring behaviors (A), rather than subjective personality traits (B).",
+            "module": 6
+        },
+        {
+            "question_id": "35",
+            "question_text": "A highly traditional corporate board consisting of eleven 60-year-old male financiers appoints a 28-year-old female tech entrepreneur to fill a vacant seat. During subsequent strategy reviews, the board members consistently evaluate her comments with extreme intensity, over-attribute any strategic disagreements to her \"generational background,\" and remember her specific presentation errors with near-perfect clarity, while overlooking their own mistakes. Which of the following concepts explains this scenario? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The new board member has extreme Perceptual Salience due to her stark contrast against the demographic and professional background of the rest of the group.",
+                "B": "The scenario represents a classic application of the Self-Serving Bias by the female entrepreneur.",
+                "C": "Tokenism and distinctiveness cause observers to disproportionately over-index on, stereotype, and remember the actions of a highly salient individual.",
+                "D": "The group is executing the Contrast Effect by measuring her performance objectively against a standard rubric."
+            },
+            "correct_option_label": "A, C",
+            "explanation": "Extreme demographic and professional distinctiveness in a homogeneous group creates perceptual salience and tokenism, amplifying scrutiny and leading observers to over-index on errors and engage in stereotyping.",
+            "module": 1
+        },
+        {
+            "question_id": "37",
+            "question_text": "Case Study : Crisis Management in Tech (February 2026)\nIn mid-February, a major cybersecurity incident rocked a well-known software-as-a-service (SaaS) company, leading to a public relations crisis that demanded immediate and decisive action. The company's Chief Technology Officer (CTO), David Vance, quickly stepped into the spotlight, taking full responsibility for the breach and issuing a heartfelt public apology to customers and stakeholders alike. His acknowledgement of the situation was not only a gesture of accountability but also an attempt to reassure clients that the company was committed to rectifying the issues at hand.\nInternally, however, Vance adopted a more directive leadership style, recognising the urgency of the situation. He implemented a set of strict, no-nonsense protocols designed to bypass the usual lengthy committee approval processes. This shift aimed to accelerate the identification and patching of the vulnerability, reflecting the critical need for rapid response in the face of the breach.\nIn a bold move, Vance chose to empower his junior engineers, assigning them leadership roles within an investigative task force dedicated to addressing the breach. He provided these team members with comprehensive resources, including access to information, technology, and support personnel, ensuring they had everything they needed to work effectively. Additionally, he took proactive steps to protect them from any potential executive-level scrutiny or criticism during their investigative efforts, allowing them to focus entirely on the task at hand without the pressure of higher-level concerns.\nVance also emphasised the importance of radical transparency throughout the crisis management process. He instituted daily briefings in which he openly shared updates on the fix's progress and candidly discussed any setbacks or challenges that arose, regardless of how negative the news might be. This approach not only kept the entire company informed but also fostered a culture of openness and trust, reinforcing the commitment to overcoming the breach. In contrast, ensuring stakeholders were kept in the loop at all times.\n\nWhich leadership paradox is most explicitly illustrated by David Vance’s dual approach to handling the breach?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Prioritising long-term cultural reform over immediate technical recovery.",
+                "B": "Combining democratic decision-making with strict internal hierarchies.",
+                "C": "Decentralising authority while simultaneously centralising communication.",
+                "D": "Balancing external accountability with an internal shift to directive, streamlined action."
+            },
+            "correct_option_label": "D",
+            "explanation": "Vance balances personal, public accountability externally with an aggressive, directive, and streamlined internal response to ensure immediate operational containment.",
+            "module": 3
+        },
+        {
+            "question_id": "38",
+            "question_text": "Refer to Question ID 37 for context.\n\nBy empowering junior engineers and shielding them from executive scrutiny, what specific leadership objective was Vance primarily attempting to achieve?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Developing a succession plan to replace senior management.",
+                "B": "Shifting potential legal liability away from himself and onto the junior team.",
+                "C": "Reducing labour costs by utilising less expensive staff on critical tasks.",
+                "D": "Creating a \"psychologically safe\" environment to facilitate high-stakes problem-solving."
+            },
+            "correct_option_label": "D",
+            "explanation": "Shielding employees from external blame and executive pressure creates psychological safety, which enables rapid experimentation and creative problem-solving during high-stakes crises.",
+            "module": 3
+        },
+        {
+            "question_id": "39",
+            "question_text": "Refer to Question ID 37 for context.\n\nWhat is the potential long-term risk of the radical transparency approach Vance adopted during the daily internal briefings?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It may lead to information overload, causing staff to ignore critical updates.",
+                "B": "It could create a cycle of perpetual anxiety if negative news is shared without a corresponding sense of agency or hope.",
+                "C": "Stakeholders may feel the company is oversharing, leading to a loss of competitive advantage.",
+                "D": "The openness may cause junior engineers to lose respect for leadership’s ability to \"handle\" the crisis."
+            },
+            "correct_option_label": "B",
+            "explanation": "Unfiltered transparency that highlights setbacks without offering constructive direction or reassurance can trigger panic and chronic anxiety across the organization.",
+            "module": 4
+        },
+        {
+            "question_id": "40",
+            "question_text": "Refer to Question ID 37 for context.\n\nWhy might Vance’s decision to bypass lengthy committee approval processes be considered a calculated risk in a SaaS environment?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It increases the likelihood of introducing new security flaws due to skipped peer reviews.",
+                "B": "It signals to shareholders that the company’s internal governance is weak.",
+                "C": "It creates a dependency on individual leadership rather than sustainable institutional processes.",
+                "D": "It violates the standardised service level agreements (SLAs) typically required by enterprise clients."
+            },
+            "correct_option_label": "A",
+            "explanation": "While bypassing formal peer reviews and checks accelerates emergency deployment, it carries the significant risk of deploying unvetted code that introduces secondary security vulnerabilities.",
+            "module": 1
+        },
+        {
+            "question_id": "41",
+            "question_text": "Refer to Question ID 37 for context.\n\nHow does Vance’s directive leadership style specifically serve the goal of incident remediation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It allows for better documentation of the crisis management process.",
+                "B": "It prioritises execution speed over the consensus of the engineering team.",
+                "C": "It prevents junior engineers from making their own, potentially flawed, decisions.",
+                "D": "It forces team members to conform to his specific technical solutions."
+            },
+            "correct_option_label": "B",
+            "explanation": "In immediate, time-sensitive crises, directive leadership eliminates protracted deliberation and debates, prioritizing rapid execution and coordination over consensus.",
+            "module": 3
+        },
+        {
+            "question_id": "43",
+            "question_text": "Case Study : The Talent War at a Global Consulting Firm\nIn May 2026, a prominent consulting firm found itself in the midst of a significant internal crisis that threatened its reputation and client relationships. The trouble began when a star consultant named Julian, known for his exceptional client management skills and impressive track record, was caught secretly poaching clients for a side project he was developing. This manoeuvre was particularly alarming given that Julian was bound by a strict non-compete clause, which explicitly prohibited him from soliciting clients outside the firm.\nWhen Sofia, a Partner at the firm and a seasoned professional with a knack for crisis management, unearthed Julian's activities, she faced a critical decision. Rather than resorting to immediate dismissal, which could have sparked a public legal battle and drawn unwanted attention to the firm's internal issues, Sofia chose a more calculated approach. She believed that confronting Julian head-on could potentially exacerbate the situation.\nInstead, she began a strategic process of systematically removing Julian from high-profile accounts where he had previously been indispensable. She implemented this change under the guise of a \"realignment of project needs,\" making it appear as if the shifts were merely operational and not personally directed at him. For instance, she reassigned some of his major clients to other consultants eager to rise to the occasion, thereby fostering their professional growth while severing Julian’s connections to lucrative projects.\nAs part of her methodical approach, Sofia also limited his access to vital internal resources, including key data, past project reports, and proprietary tools essential to effective client engagement. By effectively sidelining him and diminishing his role within the firm, she aimed to render him obsolete in the eyes of both his colleagues and clients.\nOver the next three months, Julian, who had once held a position of influence and respect, found himself increasingly marginalised within the firm. The dwindling number of responsibilities and the loss of interaction with high-profile clients took a toll on his confidence and motivation. Ultimately, the mounting pressure and the realisation of his declining relevance led Julian to resign voluntarily.\nSofia’s deft handling of the situation allowed her to navigate the firm through a potential minefield without igniting a public scandal or a protracted legal dispute, preserving the firm’s integrity and maintaining its strong client relationships. In the end, her strategic foresight not only eliminated a significant threat but also strengthened her standing as a capable leader within the organisation.\n\nWhich of the following best characterises the leadership strategy Sofia employed to handle the Julian crisis?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Strategic marginalisation to mitigate institutional risk.",
+                "B": "Transparent organisational restructuring.",
+                "C": "Passive-aggressive conflict resolution.",
+                "D": "Diplomatic negotiation and mediation."
+            },
+            "correct_option_label": "A",
+            "explanation": "Sofia utilized calculated, structural marginalization to neutralize an ethical and institutional threat quietly without precipitating public scandal or legal conflict.",
+            "module": 6
+        },
+        {
+            "question_id": "44",
+            "question_text": "Refer to Question ID 43 for context.\n\nBy framing the reassignment of Julian’s clients as a realignment of project needs, Sofia was primarily utilising which management tactic?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Gaslighting to diminish an employee's confidence.",
+                "B": "Procedural compliance to ensure contract enforcement.",
+                "C": "Operational camouflage to execute a personnel strategy without public scrutiny.",
+                "D": "Meritocratic advancement for junior staff."
+            },
+            "correct_option_label": "C",
+            "explanation": "Sofia framed the intervention as routine operational realignment to obscure the underlying disciplinary maneuver and avoid public or client scrutiny.",
+            "module": 6
+        },
+        {
+            "question_id": "45",
+            "question_text": "Refer to Question ID 43 for context.\n\nFrom an organisational ethics perspective, what is the most significant criticism that could be levelled against Sofia’s approach?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It allowed a high performer to remain at the firm for three months too long.",
+                "B": "It was a failure of financial stewardship.",
+                "C": "It failed to utilise the firm’s legal department to enforce the non-compete clause.",
+                "D": "It prioritised the firm’s reputation over the professional dignity and due process of the employee."
+            },
+            "correct_option_label": "D",
+            "explanation": "Natural justice and ethical discipline require transparency, clear communication, and due process rather than covert, passive marginalization designed to force a resignation.",
+            "module": 7
+        },
+        {
+            "question_id": "46",
+            "question_text": "Refer to Question ID 43 for context.\n\nWhy was the sideline of Julian considering a more effective risk-mitigation strategy than immediate dismissal for this specific consulting firm?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It allowed the firm to retain Julian’s intellectual property rights.",
+                "B": "It prevented the shock to clients that might occur if a lead consultant were suddenly terminated.",
+                "C": "It ensured that Julian would eventually sign a non-disclosure agreement (NDA) upon resignation.",
+                "D": "It avoided the public discovery process inherent in a lawsuit, which could expose the firm’s internal vulnerability regarding client poaching."
+            },
+            "correct_option_label": "D",
+            "explanation": "Immediate litigation risks public disclosure during legal discovery, which could air governance lapses and client poaching risks to the broader marketplace.",
+            "module": 6
+        },
+        {
+            "question_id": "47",
+            "question_text": "Refer to Question ID 43 for context.\n\nWhat does the outcome of this case suggest about the relationship between power and process in high-stakes corporate environments?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Influence is more effectively maintained through confrontation than through subtle organisational power manoeuvring.",
+                "B": "True leadership is defined by the ability to adhere to rigid disciplinary codes regardless of the outcome.",
+                "C": "Leaders often have to subvert standard HR processes to protect the collective interest of the organisation.",
+                "D": "Formal policies, like non-compete clauses, are always sufficient to handle internal crises."
+            },
+            "correct_option_label": "C",
+            "explanation": "In high-stakes corporate environments, leaders may bypass or covertly manage formal HR procedures to prioritize institutional stability and protect client relationships.",
+            "module": 6
+        },
+        {
+            "question_id": "49",
+            "question_text": "Case Study : The 11th-Hour Labour Accord\nA prominent global semiconductor manufacturer found itself on the brink of an unprecedented labour crisis, with 47,000 employees poised to strike. The stakes were incredibly high: the company stood to lose billions in operating profits, and the potential strike threatened to become the most significant in its history. Frustration permeated the atmosphere as negotiations repeatedly faltered over escalating demands. Workers were adamant about establishing a new profit‑sharing bonus pool and securing substantial wage increases, arguing that these changes were essential to address the rising cost of living and fairly recognise their contributions to the company’s market position.\nAs the deadline for a possible walkout approached, tension escalated to an unbearable level, creating a palpable sense of urgency within the corporate halls. In a concerted effort to prevent an industry-wide upheaval that would ripple through not just the company but the entire semiconductor landscape, the national Labour Minister intervened as a third-party mediator. This critical intervention brought a glimmer of hope, as the Minister aimed to facilitate a crucial final round of discussions that could determine the fate of thousands of employees and the company’s financial health.\nFacing intense pressure from the workforce and shareholders, representatives from both sides engaged in a candid, high-stakes dialogue during this pivotal meeting. The atmosphere in the room was charged, with each party aware that the outcome could drastically reshape their futures. After lengthy discussions, they reached a significant breakthrough: a tentative agreement introducing a revamped performance bonus system designed to reward employees more fairly for their contributions to the company’s success. Additionally, the agreement included a substantial 6.2% wage increase for workers, intended to alleviate the financial strain many had been experiencing due to inflation.\nThis successful negotiation not only averted what could have been a devastating crisis for both the employees and the corporation, but it also paved the way for a renewed sense of partnership between management and workers. With this agreement in place, both parties were able to refocus their efforts on collaboration and progress, moving forward with a strengthened commitment to each other's well-being and the company's future success.\n\nBeyond the formal wage agreement, the labour crisis signifies a breakdown of the Psychological Contract. How does this concept explain workers' motivation, and how does the mediator’s intervention help repair it?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It refers to the individual performance targets of employees; the Minister repaired it by creating new, higher KPIs for the staff to strive toward.",
+                "B": "It refers to the shared desire for job security; the Minister repaired it by promising government-subsidised job protection for the next five years.",
+                "C": "The psychological contract refers to the legal employment contract; the Minister repaired it by making the wage increase legally binding for 10 years.",
+                "D": "It refers to the unwritten set of expectations regarding fairness and mutual obligation; the Minister repaired it by facilitating a candid dialogue that validated workers' contributions and restored perceived equity."
+            },
+            "correct_option_label": "D",
+            "explanation": "The psychological contract represents unwritten mutual expectations of fairness and recognition; the mediation validated employee contributions, resolving perceived inequity.",
+            "module": 6
+        },
+        {
+            "question_id": "50",
+            "question_text": "Refer to Question ID 49 for context.\n\nFrom a strategic perspective, why might management have agreed to a 6.2% wage increase despite the initial frustration of the negotiations?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because the cost of a strike (billions in lost operating profit) far outweighed the marginal increase in labour costs.",
+                "B": "Because the company had surplus capital that they were legally required to distribute.",
+                "C": "Because management wanted to set a precedent for future industry-wide wage standards.",
+                "D": "Because the Labour Minister forced the company to accept the workers' exact financial terms."
+            },
+            "correct_option_label": "A",
+            "explanation": "In capital-intensive industries with massive operational leverage, shutdown costs and loss of market position during a strike dwarf the marginal expense of a wage hike.",
+            "module": 2
+        },
+        {
+            "question_id": "51",
+            "question_text": "Refer to Question ID 49 for context.\n\nWhat is the fundamental conflict between the workers' request for a profit-sharing pool and the nature of fixed-price or operational budget management?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It creates a legal conflict with shareholders who are guaranteed dividends.",
+                "B": "It changes labour from a fixed operating cost to a variable cost linked to company performance.",
+                "C": "It reduces the company's ability to invest in research and development.",
+                "D": "It complicates the tax reporting of the corporation."
+            },
+            "correct_option_label": "B",
+            "explanation": "Profit-sharing shifts labor compensation from predictable, fixed operational overhead into a variable expense tied directly to bottom-line enterprise performance.",
+            "module": 6
+        },
+        {
+            "question_id": "52",
+            "question_text": "Refer to Question ID 49 for context.\n\nThe tentative agreement reached under pressure is often viewed as a win-win outcome, but what is the hidden long-term risk for the company?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The workforce may feel empowered to threaten strikes more frequently to achieve future demands.",
+                "B": "Shareholders may file a lawsuit against the management for failing to hold the line on wages.",
+                "C": "The company may lose its competitive edge against international manufacturers with lower labour costs.",
+                "D": "The union may demand a seat on the board of directors next year."
+            },
+            "correct_option_label": "A",
+            "explanation": "Conceding substantial wage increases under an imminent strike threat can reinforce coercive union tactics, increasing the likelihood of future strike threats during contract renewals.",
+            "module": 4
+        },
+        {
+            "question_id": "53",
+            "question_text": "Refer to Question ID 49 for context.\n\nWhich structural feature of the semiconductor industry likely contributed to the high intensity of this conflict?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "High functional interdependence, where the company’s massive scale and industry impact amplify the consequences of any operational disruption.",
+                "B": "An overly flat structure that lacks clear reporting lines for grievance handling.",
+                "C": "A highly centralised structure that makes individual employees feel insignificant and unrewarded.",
+                "D": "Excessive formalisation, which prevented workers from voicing their concerns through traditional channels."
+            },
+            "correct_option_label": "A",
+            "explanation": "The semiconductor manufacturing process exhibits extreme sequential and technological interdependence; a disruption halts global supply chains and magnifies catastrophic financial losses.",
+            "module": 2
+        },
+        {
+            "question_id": "55",
+            "question_text": "Case Study : The Product-Led Transformation at LHV Pank\nLHV Pank has recently announced a transformative shift in its organisational structure, signalling a significant departure from its traditional operational framework. Historically, the bank operated under a functional, client-segment-based model that divided its products and services by the specific demographics and needs of different client groups. This structure, while effective in its time, often led to segmented operations that could hinder seamless service delivery and responsiveness to client demands.\nIn response to the changing dynamics of the financial services industry and the growing need for enhanced customer engagement, LHV Pank is transitioning to a more contemporary \"product-led\" organisational structure. This strategic shift aims to bolster operational efficiency and improve overall customer satisfaction by adopting a more focused, integrated approach to service delivery.\nUnder the new structure, the retail banking segment will be meticulously reconfigured into four distinct product domains: banking platform, investment products, loan products, and customer experience. Each of these domains is intended to function autonomously, allowing teams greater control over their specific operational processes. This autonomy means that each product area will be responsible for managing its own development cycles, integrating technology solutions, establishing risk management protocols, and overseeing business operations.\nOne of the key objectives of this strategic reorganisation is to streamline decision-making processes. By decentralising authority, LHV Pank is placing accountability directly with the product development teams. This shift is expected to empower these teams, granting them the agility needed to respond swiftly to evolving market demands and shifts in consumer preferences. Such responsiveness is crucial in today’s competitive financial landscape, where the ability to innovate and adapt can significantly influence customer loyalty and market positioning.\nFurthermore, by embracing a product-led approach, LHV Pank aims to accelerate product delivery to market while improving operational scalability. This strategic realignment not only positions the bank better to address the diverse and evolving needs of its customers but also enables it to stand out in a crowded marketplace. As LHV Pank embarks on this new path, it is committed to leveraging these changes to foster stronger relationships with its clients and deliver a modern banking experience that meets expectations.\n\nThe shift from a client-segment-based model to a product-led structure represents a fundamental move from Customer-Centric Silos to which organisational paradigm?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Decentralised domain autonomy.",
+                "B": "Vertical integration of value streams.",
+                "C": "Matrixed resource allocation.",
+                "D": "Geographically dispersed operations."
+            },
+            "correct_option_label": "A",
+            "explanation": "Structuring around autonomous product verticals that manage their own development, technology, and risk operations constitutes a decentralized domain autonomy model.",
+            "module": 2
+        },
+        {
+            "question_id": "56",
+            "question_text": "Refer to Question ID 55 for context.\n\nWhat is the primary Hidden Operational Risk inherent in shifting from a centralised functional model to autonomous product areas?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An increase in the bank's exposure to regulatory scrutiny.",
+                "B": "The potential for siloed innovation and the loss of cross-product synergy or consistent brand experience.",
+                "C": "A reduction in the overall number of employees.",
+                "D": "The immediate loss of institutional knowledge regarding legacy client segments."
+            },
+            "correct_option_label": "B",
+            "explanation": "Granting operational independence to separate product domains often creates isolated silos, risking fragmented customer experiences and duplicated functional efforts.",
+            "module": 2
+        },
+        {
+            "question_id": "57",
+            "question_text": "Refer to Question ID 55 for context.\n\nHow does this new structure likely affect the chain of command for a junior developer working within the Banking Platform unit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It reduces the reliance on hierarchical layers, shifting the focus towards \"unity of command\" within the product team.",
+                "B": "It increases the number of cross-departmental managers the employee must report to.",
+                "C": "It moves the employee into a purely functional, non-product-oriented reporting line.",
+                "D": "It makes the chain of command longer and more rigid."
+            },
+            "correct_option_label": "A",
+            "explanation": "Product domain teams integrate cross-functional roles locally, establishing unified direct reporting within the product unit rather than navigating multiple functional reporting lines.",
+            "module": 2
+        },
+        {
+            "question_id": "58",
+            "question_text": "Refer to Question ID 55 for context.\n\nBy granting each product area autonomous control over risk management and technology, LHV Pank is primarily attempting to minimise which organisational friction?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The high cost of vertical coordination and bureaucratic \"bottlenecks.\"",
+                "B": "The need for excessive horizontal communication between departments.",
+                "C": "The duplication of essential support functions.",
+                "D": "The lack of employee specialisation in banking."
+            },
+            "correct_option_label": "A",
+            "explanation": "Decentralizing key governance and technical approvals down into autonomous units eliminates bureaucratic handoffs and delays caused by centralized functional gatekeepers.",
+            "module": 2
+        },
+        {
+            "question_id": "59",
+            "question_text": "Refer to Question ID 55 for context.\n\nHow does this re-organisation potentially change the internal power dynamics for middle managers at LHV Pank?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Their primary role will move toward external sales rather than internal operations.",
+                "B": "Their influence will shift from managing silos to navigating complex product roadmaps.",
+                "C": "Middle managers will gain more authority over cross-departmental committees.",
+                "D": "Automated AI management tools will likely replace them."
+            },
+            "correct_option_label": "B",
+            "explanation": "Middle managers move from traditional gatekeeping of functional departments to orchestrating multidisciplinary teams and executing product domain delivery roadmaps.",
+            "module": 3
+        },
+        {
+            "question_id": "61",
+            "question_text": "Caselet : The Shareholder-Partner Disagreement\nIn January 2026, a rapidly expanding technology firm found itself at a critical juncture, facing a significant internal conflict between its two visionary founders, each with distinct and passionate perspectives on the company's future. The first founder, a relentless strategist driven by a bold ambition, advocated for an aggressive growth model. He believed that the only way to secure a dominant position in the market was to reinvest every dollar of profit back into the company. He envisioned ramping up research and development, expanding product lines, and scaling operations to meet the demands of a competitive landscape. His unwavering focus was on innovation and market capture, and he was convinced that prioritising growth would ultimately benefit the firm and its stakeholders.\nIn stark juxtaposition, the second founder approached the situation with a more conservative perspective, prioritising the immediate welfare of the company’s shareholders. With a background in finance, he recognised the importance of delivering value to investors, particularly through dividend distributions. His rationale was that by providing regular dividends, the company would cultivate long-term loyalty and stability among its investor base. He argued that consistently rewarding shareholders would engender trust and confidence in the firm, which, in turn, would contribute to a more stable financial foundation and shareholder satisfaction.\nAs discussions between the two founders intensified, tensions flared, culminating in a formal dispute that began to cast a shadow over the company’s very foundation. At the heart of the matter was the operating agreement, which governed their partnership; it was ambiguous regarding how to navigate such significant strategic disagreements. Without a clear process for resolving their differences, their contrasting visions began to threaten not just their partnership but also the firm's future.\nRecognising the urgency of the situation and the potential for stagnation amid their strife, the founders took a significant step by enlisting a third-party consultant. This consultant was tasked with facilitating a \"strategic mediation\" process to help the founders navigate their conflicting priorities in a structured manner.\nThe mediation sessions proved to be a turning point for the company. The consultant led the founders through a series of carefully crafted discussions designed to encourage open dialogue. They were prompted to articulate not only their positions but also the underlying interests, motivations, and concerns that fueled their stances. Through this collaborative effort, both founders gradually unravelled the complexities of their arguments, leading to a more fruitful and constructive dialogue than they had in their heated exchanges.\nOver the course of several meetings, the founders began to identify common ground and shared goals, realising that they both ultimately wanted the best for the company, albeit through different pathways. Their collaboration ultimately yielded a compromise solution that integrated elements from both perspectives: the firm would commit to a strategy of partial reinvestment in its operations and innovative projects, while also implementing a smaller, scheduled dividend payout for shareholders.\nThis integrated approach not only preserved the company’s growth momentum but also reinforced the partnership between the two founders amid challenging decisions. By finding a middle ground, they aligned their strategies and set the stage for a more unified and prosperous future for the firm.\n\nThe founders' initial conflict highlights a classic agency problem in corporate governance. Which of the following best describes this tension?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The struggle between centralised command-and-control and decentralised democratic decision-making.",
+                "B": "The divergence between the firm’s fiduciary duty to creditors and its ethical duty to employees.",
+                "C": "The conflict between short-term executive compensation and long-term firm viability.",
+                "D": "The horizon problem, where management's preference for quick returns conflicts with long-term growth needs."
+            },
+            "correct_option_label": "D",
+            "explanation": "The horizon problem represents the governance dilemma where near-term liquidity/payout preferences (dividends) conflict with long-term capital reinvestment horizons.",
+            "module": 5
+        },
+        {
+            "question_id": "62",
+            "question_text": "Refer to Question ID 61 for context.\n\nThe ambiguity in the operating agreement is a failure of \"ex-ante\" governance. In organisational theory, why is this particularly dangerous for a startup?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It necessitates constant, time-consuming renegotiations of the contract during every operational pivot.",
+                "B": "It creates a governance vacuum where power is determined by personal influence rather than institutional procedure.",
+                "C": "It automatically invalidates the company's legal status in the eyes of tax authorities.",
+                "D": "It prevents the company from being audited by external financial regulators."
+            },
+            "correct_option_label": "B",
+            "explanation": "Lacking clear ex-ante dispute resolution rules in foundational agreements creates a governance vacuum, leaving strategic deadlocks to be decided by raw personal conflict rather than established protocols.",
+            "module": 5
+        },
+        {
+            "question_id": "63",
+            "question_text": "Refer to Question ID 61 for context.\n\nIn mediation, the consultant moved the founders from positions to interests. What is the primary theoretical value of this shift in the context of organisational conflict?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It shifts the burden of proof from the founders to the mediator, reducing the emotional pressure on the owners.",
+                "B": "It forces the parties to abandon their original goals entirely.",
+                "C": "It allows the firm to bypass the legal requirements of the operating agreement.",
+                "D": "It allows the parties to identify integrative potential, or ways to satisfy underlying needs without a zero-sum trade-off."
+            },
+            "correct_option_label": "D",
+            "explanation": "Shifting from rigid bargaining positions to underlying interests reveals integrative trade-offs, enabling win-win solutions that satisfy both parties' fundamental objectives.",
+            "module": 4
+        },
+        {
+            "question_id": "64",
+            "question_text": "Refer to Question ID 61 for context.\n\nThe compromise solution (partial reinvestment + partial dividends) reflects a shift towards Stakeholder Theory. What is the main organisational challenge of this balanced approach?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It increases the cost of capital, as the firm is neither a \"pure growth\" nor a \"pure dividend\" stock.",
+                "B": "It violates the core principles of lean management by splitting resources.",
+                "C": "It requires advanced dynamic capability to manage conflicting strategic priorities simultaneously.",
+                "D": "It is likely to alienate both aggressive growth investors and conservative income investors."
+            },
+            "correct_option_label": "C",
+            "explanation": "Pursuing both capital reinvestment and shareholder payouts simultaneously requires sophisticated organizational ambidexterity and dynamic capabilities to balance competing demands.",
+            "module": 2
+        },
+        {
+            "question_id": "65",
+            "question_text": "Refer to Question ID 61 for context.\n\nHow does this mediation process reflect the relational view of organisations?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It prioritises the stability of the relationship between key stakeholders over the immediate technical/financial output.",
+                "B": "It highlights that organisational success is primarily driven by external market forces rather than internal alignment.",
+                "C": "It posits that firms are only as successful as their legal contracts.",
+                "D": "It suggests that third-party consultants should eventually take over leadership roles in conflicted firms."
+            },
+            "correct_option_label": "A",
+            "explanation": "The relational view emphasizes that trust, partnership stability, and interpersonal alignment among core stakeholders are foundational assets enabling long-term enterprise performance.",
+            "module": 2
+        },
+        {
+            "question_id": "67",
+            "question_text": "Case Study : The Battle for the Sustainability Budget\nIn April 2026, a prominent consumer goods company took a decisive step in its commitment to sustainability by unveiling its ambitious \"Green-First\" policy. This initiative aimed to revolutionise the company’s approach to environmental responsibility and set a bold target of achieving carbon neutrality. At the forefront of this groundbreaking initiative was Elena Rossi, the Head of Sustainability, a visionary leader with a deep understanding of the complexities involved in implementing such an extensive program.\nElena quickly recognised that to realise the company’s ambitious goals, she would need to secure a significant increase in the sustainability budget. However, this task would not be easy, as the Chief Financial Officer (CFO), known for his rigorous fiscal oversight and a firm reluctance to sanction large expenditures without solid justification, stood as a formidable obstacle.\nDetermined to pave the way for her ambitious plans, Elena dedicated several months to fostering informal alliances with key stakeholders within the organisation. She focused particularly on building relationships with the heads of Marketing and Research & Development (R&D), understanding that their support would be crucial in reinforcing the case for increased investment in sustainability initiatives.\nThrough countless discussions and presentations, Elena meticulously crafted a narrative that illustrated how embracing sustainability could transform the company into a market leader. She presented data and compelling case studies from similar companies that had successfully integrated sustainable practices into their operations, which not only enhanced their corporate image but also significantly drove innovation in their product lines. By analysing emerging market trends, she revealed that consumers were increasingly drawn to brands that demonstrated a strong commitment to environmental responsibility, positioning sustainability as a potent driver of brand differentiation and customer loyalty.\nAs the date of the pivotal board meeting approached, Elena’s diligent efforts began to pay off. She walked into the conference room armed not only with her detailed proposal but also with enthusiastic support from her cross-departmental allies. The head of Marketing passionately spoke about the profound resonance that eco-friendly initiatives could have with consumers, citing specific market research and consumer behaviour studies that emphasised the growing demand for sustainable products. Meanwhile, the R&D leader outlined exciting prospects for innovation, asserting that sustainable practices could lead to the development of groundbreaking products that would set the company apart from its competitors.\nThis united front of advocacy created an overwhelming, compelling atmosphere during the meeting, leaving the CFO in a challenging position. Faced with strong support from multiple departments and the reputational risks of opposing progress and innovation, he found it increasingly difficult to justify rejecting the budget request. The collective voice of Elena’s allies effectively boxed him in, turning the tide in favour of the Green-First policy and marking a significant milestone in the company's journey toward sustainability.\n\nElena Rossi’s strategy of building informal alliances before the board meeting is an example of which organisational power tactic?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Expert power derived from her specialised knowledge.",
+                "B": "Legitimate power based on her title.",
+                "C": "Coalition building to create \"pluralistic support.\"",
+                "D": "Coercive power to force the CFO into compliance."
+            },
+            "correct_option_label": "C",
+            "explanation": "Coalition building involves forming lateral alliances with influential peers across functions to pool influence, generate pluralistic support, and overcome resistance.",
+            "module": 3
+        },
+        {
+            "question_id": "68",
+            "question_text": "Refer to Question ID 67 for context.\n\nWhich concept best explains why the CFO was effectively \"boxed in\" despite his mandate for rigorous fiscal oversight?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Social Proof, where the CFO felt compelled to agree because other department heads supported it.",
+                "B": "Strategic Ambiguity, where the benefits of the policy were intentionally vague.",
+                "C": "Groupthink, where the board members were afraid to disagree with the majority.",
+                "D": "The \"Normalisation of Deviance,\" where fiscal rules were ignored."
+            },
+            "correct_option_label": "A",
+            "explanation": "Unanimous, vocal consensus from respected peers across departments established overwhelming social proof, making unilateral dissent politically untenable for the CFO.",
+            "module": 1
+        },
+        {
+            "question_id": "69",
+            "question_text": "Refer to Question ID 67 for context.\n\nFrom a Resource Dependence Theory perspective, why was Elena’s decision to involve the head of Marketing and the R&D leader strategically sound?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "These departments control the most critical resources (revenue generation and future product viability) that the CFO relies on.",
+                "B": "These departments are usually the least expensive to fund.",
+                "C": "These leaders have more seniority in the firm than the CFO.",
+                "D": "The CFO is legally required to follow the advice of these specific departments."
+            },
+            "correct_option_label": "A",
+            "explanation": "Marketing and R&D control vital organizational dependencies—revenue growth and future product pipelines—giving their advocacy immense leverage over financial decision-makers.",
+            "module": 2
+        },
+        {
+            "question_id": "70",
+            "question_text": "Refer to Question ID 67 for context.\n\nElena successfully shifted the frame of the sustainability budget. What was the transition in the CFO's perceived reality?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "From \"Short-term Gain\" to \"Long-term Profitability.\"",
+                "B": "From \"Operational Expense\" to \"Capital Asset Investment.\"",
+                "C": "From \"Discretionary Spending\" to \"Strategic Competitive Necessity.\"",
+                "D": "From \"Environmental Necessity\" to \"Corporate Social Responsibility.\""
+            },
+            "correct_option_label": "C",
+            "explanation": "Elena reframed the sustainability initiative from optional, discretionary overhead into an essential strategic driver of brand differentiation and market survival.",
+            "module": 4
+        },
+        {
+            "question_id": "71",
+            "question_text": "Refer to Question ID 67 for context.\n\nWhat is the potential organisational risk of Elena’s coalition approach in the long run?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It reduces the company's ability to pivot if the market for sustainable products fails.",
+                "B": "It may lead to a permanent fracturing of the finance department's authority.",
+                "C": "It may lead to sub-unit political conflict, with departments prioritising their alliances over the firm's financial health.",
+                "D": "It makes the organisation too dependent on external consultants."
+            },
+            "correct_option_label": "C",
+            "explanation": "Relying heavily on cross-departmental coalitions to push initiatives can institutionalize factional politics, encouraging logrolling and horse-trading at the expense of fiscal discipline.",
+            "module": 4
+        }
+    ]
+}
