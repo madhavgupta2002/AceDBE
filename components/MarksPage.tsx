@@ -596,7 +596,21 @@ export default function MarksPage() {
         return termGroups.reduce((acc, g) => acc + g.rows.length, 0);
     }, [termGroups]);
 
+    const totalCurriculumCredits = useMemo(() => {
+        return termGroups.reduce(
+            (acc, g) => acc + g.rows.reduce((sum, r) => sum + (r.subject.credits || 0), 0),
+            0
+        );
+    }, [termGroups]);
+
     const overall = useMemo(() => gpaFor(allFilledSubjects), [allFilledSubjects]);
+
+    const overallMarksStats = useMemo(() => {
+        const scored = allFilledSubjects.filter((s) => s.total !== null && s.total !== undefined);
+        const earned = Math.round(scored.reduce((sum, s) => sum + (s.total ?? 0), 0) * 100) / 100;
+        const max = scored.length * 100;
+        return { earned, max };
+    }, [allFilledSubjects]);
 
     const manualMarksCount = useMemo(() => Object.keys(manualMarks).length, [manualMarks]);
 
@@ -773,6 +787,12 @@ export default function MarksPage() {
             group.term === 5 ||
             group.rows.some((r) => r.data?.project !== null && r.data?.project !== undefined);
 
+        const termTotalCredits = group.rows.reduce((sum, r) => sum + (r.subject.credits || 0), 0);
+        const termEarnedCredits = group.credits;
+        const scoredRows = group.rows.filter((r) => r.data?.total !== null && r.data?.total !== undefined);
+        const termMarksScored = Math.round(scoredRows.reduce((sum, r) => sum + (r.data?.total ?? 0), 0) * 100) / 100;
+        const termMarksMax = scoredRows.length * 100;
+
         return (
             <div key={group.term} className="w-full text-black">
                 <table className="w-full border-collapse border border-black text-[11px] leading-tight bg-white">
@@ -780,9 +800,32 @@ export default function MarksPage() {
                         <tr className="border-b border-black">
                             <th
                                 colSpan={hasProjectCol ? 6 : 5}
-                                className="border border-black py-1 px-2 text-center font-bold text-[12px] uppercase tracking-wider bg-white text-black"
+                                className="border border-black py-1 px-2 font-bold text-[11px] uppercase tracking-wider bg-white text-black"
                             >
-                                TERM-{group.term}
+                                <div className="flex items-center justify-between px-1">
+                                    <span>TERM-{group.term}</span>
+                                    <div className="flex items-center gap-2.5 text-[10px] normal-case font-normal text-neutral-800">
+                                        <span>
+                                            GPA: <strong className="font-bold font-mono text-black">{group.gpa === null ? '—' : group.gpa.toFixed(2)}</strong>
+                                        </span>
+                                        <span className="text-neutral-300">|</span>
+                                        <span>
+                                            Percentage: <strong className="font-bold font-mono text-black">{group.percentage === null ? '—' : `${group.percentage.toFixed(2)}%`}</strong>
+                                        </span>
+                                        <span className="text-neutral-300">|</span>
+                                        <span>
+                                            Credits: <strong className="font-bold font-mono text-black">{termEarnedCredits} / {termTotalCredits}</strong>
+                                        </span>
+                                        {scoredRows.length > 0 && (
+                                            <>
+                                                <span className="text-neutral-300">|</span>
+                                                <span>
+                                                    Marks: <strong className="font-bold font-mono text-black">{termMarksScored} / {termMarksMax}</strong>
+                                                </span>
+                                            </>
+                                        )}
+                                    </div>
+                                </div>
                             </th>
                         </tr>
                         <tr className="border-b border-black font-bold text-center bg-white text-black text-[11px]">
@@ -1070,7 +1113,21 @@ export default function MarksPage() {
                                 <div>
                                     <div className="text-[9px] font-semibold uppercase tracking-wider text-emerald-400/80">Credits Earned</div>
                                     <div className="text-base sm:text-lg font-bold tabular-nums font-mono text-emerald-300">
-                                        {overall.credits}
+                                        {overall.credits} <span className="text-xs text-emerald-400/70 font-normal">/ {totalCurriculumCredits}</span>
+                                    </div>
+                                </div>
+                                <div className="h-7 w-px bg-emerald-500/30 hidden sm:block" />
+                                <div>
+                                    <div className="text-[9px] font-semibold uppercase tracking-wider text-emerald-400/80">Total Marks</div>
+                                    <div className="text-base sm:text-lg font-bold tabular-nums font-mono text-emerald-300">
+                                        {overallMarksStats.max > 0 ? (
+                                            <span>
+                                                {overallMarksStats.earned}{' '}
+                                                <span className="text-xs text-emerald-400/70 font-normal">/ {overallMarksStats.max}</span>
+                                            </span>
+                                        ) : (
+                                            '—'
+                                        )}
                                     </div>
                                 </div>
                             </div>
@@ -1132,8 +1189,24 @@ export default function MarksPage() {
                                                     </div>
                                                     <div className="h-6 w-px bg-neutral-300" />
                                                     <div>
-                                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Credits</span>
-                                                        <span className="text-sm sm:text-base font-extrabold font-mono text-black">{overall.credits}</span>
+                                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Total Credits</span>
+                                                        <span className="text-sm sm:text-base font-extrabold font-mono text-black">
+                                                            {overall.credits} <span className="text-[10px] text-neutral-500 font-normal">/ {totalCurriculumCredits}</span>
+                                                        </span>
+                                                    </div>
+                                                    <div className="h-6 w-px bg-neutral-300" />
+                                                    <div>
+                                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Total Marks</span>
+                                                        <span className="text-sm sm:text-base font-extrabold font-mono text-black">
+                                                            {overallMarksStats.max > 0 ? (
+                                                                <span>
+                                                                    {overallMarksStats.earned}{' '}
+                                                                    <span className="text-[10px] text-neutral-500 font-normal">/ {overallMarksStats.max}</span>
+                                                                </span>
+                                                            ) : (
+                                                                '—'
+                                                            )}
+                                                        </span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1166,23 +1239,38 @@ export default function MarksPage() {
                                                         ({group.rows.filter((r) => r.data !== null).length}/{group.rows.length} subjects)
                                                     </span>
                                                 </div>
-                                                <div className="text-[11px] text-slate-400">
-                                                    GPA{' '}
-                                                    <span className="font-bold tabular-nums font-mono text-emerald-300">
-                                                        {group.gpa === null ? '—' : group.gpa.toFixed(2)}
-                                                    </span>
-                                                    {group.percentage !== null && (
-                                                        <>
-                                                            <span className="text-slate-600"> · </span>
-                                                            WAM{' '}
+                                                {(() => {
+                                                    const termTotalCredits = group.rows.reduce((sum, r) => sum + (r.subject.credits || 0), 0);
+                                                    const scoredRows = group.rows.filter((r) => r.data?.total !== null && r.data?.total !== undefined);
+                                                    const termMarksScored = Math.round(scoredRows.reduce((sum, r) => sum + (r.data?.total ?? 0), 0) * 100) / 100;
+                                                    const termMarksMax = scoredRows.length * 100;
+
+                                                    return (
+                                                        <div className="text-[11px] text-slate-400">
+                                                            GPA{' '}
                                                             <span className="font-bold tabular-nums font-mono text-emerald-300">
-                                                                {group.percentage.toFixed(2)}%
+                                                                {group.gpa === null ? '—' : group.gpa.toFixed(2)}
                                                             </span>
-                                                        </>
-                                                    )}
-                                                    <span className="text-slate-600"> · </span>
-                                                    <span className="tabular-nums font-mono text-slate-300">{group.credits} cr</span>
-                                                </div>
+                                                            <span className="text-slate-600"> · </span>
+                                                            Percentage{' '}
+                                                            <span className="font-bold tabular-nums font-mono text-emerald-300">
+                                                                {group.percentage === null ? '—' : `${group.percentage.toFixed(2)}%`}
+                                                            </span>
+                                                            <span className="text-slate-600"> · </span>
+                                                            <span className="tabular-nums font-mono text-slate-300">
+                                                                Credits {group.credits} / {termTotalCredits}
+                                                            </span>
+                                                            {scoredRows.length > 0 && (
+                                                                <>
+                                                                    <span className="text-slate-600"> · </span>
+                                                                    <span className="tabular-nums font-mono text-slate-300">
+                                                                        Marks {termMarksScored}/{termMarksMax}
+                                                                    </span>
+                                                                </>
+                                                            )}
+                                                        </div>
+                                                    );
+                                                })()}
                                             </div>
 
                                             {/* Term Subjects Table with Inline Editing */}
@@ -1359,8 +1447,24 @@ export default function MarksPage() {
                                     </div>
                                     <div className="h-6 w-px bg-neutral-300" />
                                     <div>
-                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Credits</span>
-                                        <span className="text-sm font-extrabold font-mono text-black">{overall.credits}</span>
+                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Total Credits</span>
+                                        <span className="text-sm font-extrabold font-mono text-black">
+                                            {overall.credits} <span className="text-[10px] text-neutral-600 font-normal">/ {totalCurriculumCredits}</span>
+                                        </span>
+                                    </div>
+                                    <div className="h-6 w-px bg-neutral-300" />
+                                    <div>
+                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Total Marks</span>
+                                        <span className="text-sm font-extrabold font-mono text-black">
+                                            {overallMarksStats.max > 0 ? (
+                                                <span>
+                                                    {overallMarksStats.earned}{' '}
+                                                    <span className="text-[10px] text-neutral-600 font-normal">/ {overallMarksStats.max}</span>
+                                                </span>
+                                            ) : (
+                                                '—'
+                                            )}
+                                        </span>
                                     </div>
                                 </div>
                             </div>
