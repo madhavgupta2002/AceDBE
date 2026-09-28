@@ -23,7 +23,7 @@ const VALID_GRADES: LetterGrade[] = ['O', 'A', 'B', 'C', 'D', 'E', 'F'];
 
 // Common acronyms and abbreviations mapped to standard canonical names
 function normalizeSubjectBase(name: string): string {
-    const clean = name.trim().replace(/\s+/g, ' ');
+    const clean = name.trim().replace(/^[-–—\s]+|[-–—\s]+$/g, '').replace(/\s+/g, ' ');
 
     if (/^CMII\b/i.test(clean) || /^Creative Mindset\b/i.test(clean) || /^Creativity Mindset\b/i.test(clean)) {
         return 'Creative Mindset for Innovation and Imagination';
@@ -40,14 +40,14 @@ function normalizeSubjectBase(name: string): string {
     if (/^Marketing\b/i.test(clean)) {
         return 'Marketing Fundamentals';
     }
-    if (/^Business Statistics.*(?:1|I)\b/i.test(clean)) {
-        return 'Business Statistics for Entrepreneurs-I';
+    if (/^Business Statistics.*?\b(?:3|III)\b/i.test(clean)) {
+        return 'Business Statistics for Entrepreneurs-III';
     }
-    if (/^Business Statistics.*(?:2|II)\b/i.test(clean)) {
+    if (/^Business Statistics.*?\b(?:2|II)\b/i.test(clean)) {
         return 'Business Statistics for Entrepreneurs-II';
     }
-    if (/^Business Statistics.*(?:3|III)\b/i.test(clean)) {
-        return 'Business Statistics for Entrepreneurs-III';
+    if (/^Business Statistics.*?\b(?:1|I)\b/i.test(clean)) {
+        return 'Business Statistics for Entrepreneurs-I';
     }
     if (/^Statistics\b/i.test(clean) || /^Business Statistics for Entrepreneurs\b/i.test(clean)) {
         return 'Business Statistics for Entrepreneurs';
@@ -317,6 +317,7 @@ export function detectBatchFromText(text: string): number | null {
     if (!text) return null;
     if (/Batch\s*(?:2024\b|1\b)/i.test(text) || /DBE\s*2024/i.test(text)) return 1;
     if (/Batch\s*(?:2025\b|2\b)/i.test(text) || /DBE\s*2025/i.test(text)) return 2;
+    if (/Batch\s*(?:2026\b|3\b)/i.test(text) || /DBE\s*2026/i.test(text)) return 3;
     if (/Business Statistics for Entrepreneurs\s*[-–]?\s*[123]/i.test(text)) return 2;
     if (/Business Statistics for Entrepreneurs\s*(?:I|II|III)\b/i.test(text)) return 2;
     if (/Business Statistics for Entrepreneurs/i.test(text)) return 1;
