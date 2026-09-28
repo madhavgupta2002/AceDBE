@@ -1,14 +1,39 @@
 'use client';
 
 import React, { useEffect, useMemo, useRef, useState } from 'react';
-import { Bookmark, ChevronDown, ClipboardPaste, Copy, Eye, FileText, Printer, RefreshCw, Trash2 } from 'lucide-react';
+import {
+    Bookmark,
+    ChevronDown,
+    ClipboardPaste,
+    Copy,
+    Pencil,
+    Printer,
+    RotateCcw,
+    Trash2,
+    User,
+} from 'lucide-react';
 import { parseGrades, parsePastedText, detectBatchFromText, type RawRow, type ParsedSubject } from '@/lib/marks/parseGrades';
-import { gradePoints, gradeFromTotal } from '@/lib/cgpa/grades';
-import { CGPA_TERMS, getSubjectsForTerm } from '@/lib/cgpa/subjects';
+import { gradePoints, gradeFromTotal, type LetterGrade } from '@/lib/cgpa/grades';
+import { CGPA_TERMS, getSubjectsForTerm, type CgpaSubject } from '@/lib/cgpa/subjects';
 import { useBatch, AVAILABLE_BATCHES } from '@/contexts/BatchContext';
 
 const MOODLE_LOGIN_URL = 'https://moodle.iimb.ac.in/portal/';
 const MOODLE_GRADE_URL = 'https://moodle.iimb.ac.in/grade/report/user/index.php?id=6211';
+
+const STORAGE_KEY_ROWS = 'ace_dbe_moodle_rows_v1';
+const STORAGE_KEY_MANUAL = 'ace_dbe_manual_marks_v1';
+const STORAGE_KEY_NAME = 'ace_dbe_student_name_v1';
+
+export type ManualSubjectMark = {
+    cla?: number | null;
+    project?: number | null;
+    final?: number | null;
+    finalText?: string | null;
+    total?: number | null;
+    grade?: string | null;
+    hasRetake?: boolean;
+    manualGradeLock?: boolean;
+};
 
 function extractStudentName(text: string): string | null {
     if (!text) return null;
@@ -68,7 +93,6 @@ function effectiveGrade(s: ParsedSubject): string {
 }
 
 // Credit-weighted GPA and Percentage (WAM) across the given subjects.
-// WAM Formula: sum(Marks Obtained * Course Credits) / sum(Course Credits)
 function gpaFor(subjects: ParsedSubject[]): {
     gpa: number | null;
     percentage: number | null;
@@ -112,63 +136,469 @@ const YEARS = [
     { year: 3, label: 'Year 3 (Terms 7, 8, 9)', terms: [7, 8, 9] },
 ];
 
+const GRADE_COLOR_CLASSES: Record<string, string> = {
+    O: 'text-emerald-400 font-bold',
+    A: 'text-sky-400 font-bold',
+    B: 'text-indigo-300 font-bold',
+    C: 'text-amber-300 font-bold',
+    D: 'text-orange-400 font-bold',
+    E: 'text-rose-400 font-bold',
+    F: 'text-red-500 font-bold',
+};
+
+// ── Interactive Editable Subject Row Component ─────────────────────────────
+type SubjectRowProps = {
+    subject: CgpaSubject;
+    data: ParsedSubject | null;
+    hasManualOverride: boolean;
+    hasProjectCol: boolean;
+    onUpdateField: (field: 'cla' | 'project' | 'final' | 'total', val: number | null, text?: string | null) => void;
+    onUpdateGrade: (grade: string | null) => void;
+    onToggleRetake: () => void;
+    onResetRow: () => void;
+};
+
+const SubjectRow: React.FC<SubjectRowProps> = ({
+    subject,
+    data,
+    hasManualOverride,
+    hasProjectCol,
+    onUpdateField,
+    onUpdateGrade,
+    onToggleRetake,
+    onResetRow,
+}) => {
+    const [focusedField, setFocusedField] = useState<string | null>(null);
+    const [claText, setClaText] = useState<string>(formatDisplayMark(data?.cla));
+    const [projectText, setProjectText] = useState<string>(formatDisplayMark(data?.project));
+    const [finalText, setFinalText] = useState<string>(data?.finalText || formatDisplayMark(data?.final));
+    const [totalText, setTotalText] = useState<string>(formatDisplayMark(data?.total));
+
+    useEffect(() => {
+        if (focusedField !== 'cla') setClaText(formatDisplayMark(data?.cla));
+    }, [data?.cla, focusedField]);
+
+    useEffect(() => {
+        if (focusedField !== 'project') setProjectText(formatDisplayMark(data?.project));
+    }, [data?.project, focusedField]);
+
+    useEffect(() => {
+        if (focusedField !== 'final') setFinalText(data?.finalText || formatDisplayMark(data?.final));
+    }, [data?.final, data?.finalText, focusedField]);
+
+    useEffect(() => {
+        if (focusedField !== 'total') setTotalText(formatDisplayMark(data?.total));
+    }, [data?.total, focusedField]);
+
+    const effGrade = data ? effectiveGrade(data) : '';
+    const gradeColor = GRADE_COLOR_CLASSES[effGrade] || 'text-slate-400';
+
+    return (
+        <tr className={`border-t border-surface-border/30 transition-colors group hover:bg-surface-dark/30 ${hasManualOverride ? 'bg-sky-950/10' : ''}`}>
+            {/* Subject Name & Details */}
+            <td className="px-3 py-2 text-left">
+                <div className="flex flex-wrap items-center gap-1.5">
+                    {subject.code && (
+                        <span className="font-mono text-[10px] text-slate-400 bg-surface-dark/80 px-1.5 py-0.5 rounded border border-surface-border/50 select-none">
+                            {subject.code}
+                        </span>
+                    )}
+                    <span className={`font-medium ${data ? 'text-slate-200' : 'text-slate-400'}`}>
+                        {data?.hasRetake ? `*${subject.name}` : subject.name}
+                    </span>
+
+                    {/* Retake Badge / Button */}
+                    {data?.hasRetake ? (
+                        <button
+                            type="button"
+                            onClick={onToggleRetake}
+                            title="Click to remove retake status"
+                            className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-semibold rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 hover:bg-amber-500/30 transition-colors cursor-pointer"
+                        >
+                            * Retake
+                        </button>
+                    ) : (
+                        <button
+                            type="button"
+                            onClick={onToggleRetake}
+                            title="Mark as retake"
+                            className="opacity-0 group-hover:opacity-100 px-1 py-0.5 text-[9px] font-medium rounded text-slate-500 hover:text-amber-300 hover:bg-amber-500/10 transition-all cursor-pointer"
+                        >
+                            + Retake
+                        </button>
+                    )}
+
+                    {/* Reset row button if manually modified */}
+                    {hasManualOverride && (
+                        <button
+                            type="button"
+                            onClick={onResetRow}
+                            title="Reset manual changes for this subject"
+                            className="inline-flex items-center gap-0.5 px-1 py-0.5 text-[9px] rounded text-slate-500 hover:text-red-400 hover:bg-red-500/10 transition-colors cursor-pointer"
+                        >
+                            <RotateCcw className="w-2.5 h-2.5" />
+                            <span className="text-[8px] uppercase tracking-wider">Reset</span>
+                        </button>
+                    )}
+                </div>
+            </td>
+
+            {/* Credits */}
+            <td className="px-2 py-2 text-slate-400 text-right tabular-nums font-mono text-[11px] w-12">
+                {subject.credits}
+            </td>
+
+            {/* CLA (/25) */}
+            <td className="px-1.5 py-1 text-right w-16">
+                <input
+                    type="text"
+                    inputMode="decimal"
+                    value={claText}
+                    placeholder="—"
+                    onFocus={() => setFocusedField('cla')}
+                    onBlur={() => {
+                        setFocusedField(null);
+                        setClaText(formatDisplayMark(data?.cla));
+                    }}
+                    onChange={(e) => {
+                        const val = e.target.value;
+                        setClaText(val);
+                        if (!val.trim()) {
+                            onUpdateField('cla', null);
+                        } else {
+                            const num = parseFloat(val);
+                            if (Number.isFinite(num)) onUpdateField('cla', num);
+                        }
+                    }}
+                    className="w-full px-1.5 py-1 text-right text-xs font-mono tabular-nums rounded bg-surface-dark/50 hover:bg-surface-dark/80 focus:bg-surface-dark border border-surface-border/40 focus:border-sky-500/80 text-slate-200 focus:text-white placeholder:text-slate-600 focus:outline-none transition-colors"
+                    title="Continuous Learning Assessment (out of 25)"
+                />
+            </td>
+
+            {/* Project (/25) - if applicable */}
+            {hasProjectCol && (
+                <td className="px-1.5 py-1 text-right w-16">
+                    <input
+                        type="text"
+                        inputMode="decimal"
+                        value={projectText}
+                        placeholder="—"
+                        onFocus={() => setFocusedField('project')}
+                        onBlur={() => {
+                            setFocusedField(null);
+                            setProjectText(formatDisplayMark(data?.project));
+                        }}
+                        onChange={(e) => {
+                            const val = e.target.value;
+                            setProjectText(val);
+                            if (!val.trim()) {
+                                onUpdateField('project', null);
+                            } else {
+                                const num = parseFloat(val);
+                                if (Number.isFinite(num)) onUpdateField('project', num);
+                            }
+                        }}
+                        className="w-full px-1.5 py-1 text-right text-xs font-mono tabular-nums rounded bg-surface-dark/50 hover:bg-surface-dark/80 focus:bg-surface-dark border border-surface-border/40 focus:border-sky-500/80 text-slate-200 focus:text-white placeholder:text-slate-600 focus:outline-none transition-colors"
+                        title="Course Project (out of 25)"
+                    />
+                </td>
+            )}
+
+            {/* Final Exam (/75) */}
+            <td className="px-1.5 py-1 text-right w-16">
+                <input
+                    type="text"
+                    inputMode="decimal"
+                    value={finalText}
+                    placeholder="—"
+                    onFocus={() => setFocusedField('final')}
+                    onBlur={() => {
+                        setFocusedField(null);
+                        setFinalText(data?.finalText || formatDisplayMark(data?.final));
+                    }}
+                    onChange={(e) => {
+                        const val = e.target.value;
+                        setFinalText(val);
+                        if (!val.trim()) {
+                            onUpdateField('final', null, null);
+                        } else if (val.trim().toLowerCase().includes('absent')) {
+                            onUpdateField('final', null, 'Absent');
+                        } else {
+                            const num = parseFloat(val);
+                            if (Number.isFinite(num)) onUpdateField('final', num, null);
+                        }
+                    }}
+                    className="w-full px-1.5 py-1 text-right text-xs font-mono tabular-nums rounded bg-surface-dark/50 hover:bg-surface-dark/80 focus:bg-surface-dark border border-surface-border/40 focus:border-sky-500/80 text-slate-200 focus:text-white placeholder:text-slate-600 focus:outline-none transition-colors"
+                    title="Final Exam (out of 75)"
+                />
+            </td>
+
+            {/* Total (/100) */}
+            <td className="px-1.5 py-1 text-right w-18">
+                <input
+                    type="text"
+                    inputMode="decimal"
+                    value={totalText}
+                    placeholder="—"
+                    onFocus={() => setFocusedField('total')}
+                    onBlur={() => {
+                        setFocusedField(null);
+                        setTotalText(formatDisplayMark(data?.total));
+                    }}
+                    onChange={(e) => {
+                        const val = e.target.value;
+                        setTotalText(val);
+                        if (!val.trim()) {
+                            onUpdateField('total', null);
+                        } else {
+                            const num = parseFloat(val);
+                            if (Number.isFinite(num)) onUpdateField('total', num);
+                        }
+                    }}
+                    className="w-full px-1.5 py-1 text-right text-xs font-mono tabular-nums font-semibold rounded bg-surface-dark/50 hover:bg-surface-dark/80 focus:bg-surface-dark border border-surface-border/40 focus:border-sky-500/80 text-slate-100 focus:text-white placeholder:text-slate-600 focus:outline-none transition-colors"
+                    title="Total Marks (out of 100) — Auto-calculated from CLA + Final, or manually enterable"
+                />
+            </td>
+
+            {/* Grade */}
+            <td className="px-1.5 py-1 text-center w-14">
+                <select
+                    value={data?.grade || ''}
+                    onChange={(e) => onUpdateGrade(e.target.value || null)}
+                    className={`w-full px-1 py-1 text-center text-xs font-mono tabular-nums rounded bg-surface-dark/60 hover:bg-surface-dark/90 focus:bg-surface-dark border border-surface-border/40 focus:border-sky-500/80 focus:outline-none cursor-pointer transition-colors ${gradeColor}`}
+                    title="Letter Grade — Auto-mapped from Total or manually selectable"
+                >
+                    <option value="" className="bg-slate-900 text-slate-400">
+                        {effGrade ? `${effGrade} (Auto)` : '—'}
+                    </option>
+                    <option value="O" className="bg-slate-900 text-emerald-400 font-bold">O (10)</option>
+                    <option value="A" className="bg-slate-900 text-sky-400 font-bold">A (9)</option>
+                    <option value="B" className="bg-slate-900 text-indigo-300 font-bold">B (8)</option>
+                    <option value="C" className="bg-slate-900 text-amber-300 font-bold">C (7)</option>
+                    <option value="D" className="bg-slate-900 text-orange-400 font-bold">D (6)</option>
+                    <option value="E" className="bg-slate-900 text-rose-400 font-bold">E (5)</option>
+                    <option value="F" className="bg-slate-900 text-red-500 font-bold">F (0)</option>
+                </select>
+            </td>
+        </tr>
+    );
+};
+
+// ── Main Page Component ────────────────────────────────────────────────────
 export default function MarksPage() {
     const { selectedBatch, setSelectedBatch } = useBatch();
     const [origin, setOrigin] = useState('');
     const [rows, setRows] = useState<RawRow[] | null>(null);
+    const [manualMarks, setManualMarks] = useState<Record<string, ManualSubjectMark>>({});
+    const [customStudentName, setCustomStudentName] = useState<string>('');
     const [showRaw, setShowRaw] = useState(false);
+    const [showImporter, setShowImporter] = useState(true);
     const [pasteText, setPasteText] = useState('');
     const [pasteError, setPasteError] = useState(false);
     const [activeTab, setActiveTab] = useState<'dashboard' | 'printPreview'>('dashboard');
     const bookmarkletRef = useRef<HTMLAnchorElement>(null);
 
-    // Resolve origin + read imported data on mount.
+    // Initial mount hydration: origin, hash import, and localStorage
     useEffect(() => {
         setOrigin(window.location.origin);
+
         const imported = decodeImport(window.location.hash);
-        if (imported) setRows(imported);
+        if (imported) {
+            setRows(imported);
+            setShowImporter(false);
+        } else {
+            try {
+                const savedRows = localStorage.getItem(STORAGE_KEY_ROWS);
+                if (savedRows) {
+                    const parsed = JSON.parse(savedRows);
+                    if (Array.isArray(parsed) && parsed.length > 0) {
+                        setRows(parsed);
+                        setShowImporter(false);
+                    }
+                }
+            } catch {
+                /* ignore */
+            }
+        }
+
+        try {
+            const savedManual = localStorage.getItem(STORAGE_KEY_MANUAL);
+            if (savedManual) {
+                const parsedManual = JSON.parse(savedManual);
+                if (parsedManual && typeof parsedManual === 'object') {
+                    setManualMarks(parsedManual);
+                }
+            }
+            const savedName = localStorage.getItem(STORAGE_KEY_NAME);
+            if (savedName) {
+                setCustomStudentName(savedName);
+            }
+        } catch {
+            /* ignore */
+        }
     }, []);
+
+    // Persist rows to localStorage
+    useEffect(() => {
+        try {
+            if (rows && rows.length > 0) {
+                localStorage.setItem(STORAGE_KEY_ROWS, JSON.stringify(rows));
+            } else {
+                localStorage.removeItem(STORAGE_KEY_ROWS);
+            }
+        } catch {
+            /* ignore */
+        }
+    }, [rows]);
+
+    // Persist manualMarks to localStorage
+    useEffect(() => {
+        try {
+            if (manualMarks && Object.keys(manualMarks).length > 0) {
+                localStorage.setItem(STORAGE_KEY_MANUAL, JSON.stringify(manualMarks));
+            } else {
+                localStorage.removeItem(STORAGE_KEY_MANUAL);
+            }
+        } catch {
+            /* ignore */
+        }
+    }, [manualMarks]);
+
+    // Persist customStudentName to localStorage
+    useEffect(() => {
+        try {
+            if (customStudentName.trim()) {
+                localStorage.setItem(STORAGE_KEY_NAME, customStudentName.trim());
+            } else {
+                localStorage.removeItem(STORAGE_KEY_NAME);
+            }
+        } catch {
+            /* ignore */
+        }
+    }, [customStudentName]);
 
     const bookmarkletHref = useMemo(
         () => (origin ? buildBookmarklet(origin) : ''),
         [origin]
     );
 
-    // Set the javascript: href via DOM to avoid React's javascript-URL warning.
     useEffect(() => {
         if (bookmarkletRef.current && bookmarkletHref) {
             bookmarkletRef.current.setAttribute('href', bookmarkletHref);
         }
     }, [bookmarkletHref]);
 
-    const studentName = useMemo(() => extractStudentName(pasteText), [pasteText]);
+    const extractedName = useMemo(() => extractStudentName(pasteText), [pasteText]);
+    const studentName = customStudentName || extractedName || '';
 
-    const parsed = useMemo<ParsedSubject[]>(() => (rows ? parseGrades(rows, selectedBatch) : []), [rows, selectedBatch]);
-    const matchedCount = useMemo(() => parsed.filter((p) => p.match).length, [parsed]);
+    // Parsed subjects from Moodle scraped/pasted rows
+    const parsed = useMemo<ParsedSubject[]>(
+        () => (rows ? parseGrades(rows, selectedBatch) : []),
+        [rows, selectedBatch]
+    );
 
-    // Show EVERY curriculum subject for each term; fill in marks where we have them.
+    // Show EVERY curriculum subject for each term; fill in marks from parsed and manual overrides
     const termGroups = useMemo(() => {
         const byId = new Map<string, ParsedSubject>();
         for (const s of parsed) {
             if (s.match) byId.set(s.match.id, s);
         }
+
         return CGPA_TERMS
             .map((term) => {
                 const subjects = getSubjectsForTerm(term, selectedBatch);
-                const rowsForTerm = subjects.map((subject) => ({
-                    subject,
-                    data: byId.get(subject.id) ?? null,
-                }));
+                const rowsForTerm = subjects.map((subject) => {
+                    const base = byId.get(subject.id) ?? null;
+                    const manual = manualMarks[subject.id];
+
+                    if (!manual && !base) {
+                        return { subject, data: null, hasManualOverride: false };
+                    }
+
+                    const cla = manual?.cla !== undefined ? manual.cla : (base?.cla ?? null);
+                    const project = manual?.project !== undefined ? manual.project : (base?.project ?? null);
+                    const final = manual?.final !== undefined ? manual.final : (base?.final ?? null);
+                    const finalText = manual?.finalText !== undefined ? manual.finalText : (base?.finalText ?? null);
+
+                    let total: number | null = null;
+                    if (manual?.total !== undefined) {
+                        total = manual.total;
+                    } else if (base?.total !== null && base?.total !== undefined) {
+                        total = base.total;
+                    } else if (cla !== null || project !== null || final !== null) {
+                        const sum = (cla ?? 0) + (project ?? 0) + (final ?? 0);
+                        total = Number(sum.toFixed(2));
+                    }
+
+                    let grade: string | null = null;
+                    if (manual?.grade !== undefined && manual.grade !== null && manual.grade !== '') {
+                        grade = manual.grade;
+                    } else if (base?.grade) {
+                        grade = base.grade;
+                    } else if (total !== null) {
+                        grade = gradeFromTotal(total).letter;
+                    }
+
+                    const hasRetake = manual?.hasRetake !== undefined ? manual.hasRetake : (base?.hasRetake ?? false);
+
+                    const hasAnyData =
+                        cla !== null ||
+                        project !== null ||
+                        final !== null ||
+                        finalText !== null ||
+                        total !== null ||
+                        grade !== null;
+
+                    const data: ParsedSubject | null = hasAnyData
+                        ? {
+                            name: subject.name,
+                            cla,
+                            project,
+                            final,
+                            finalText,
+                            total,
+                            grade,
+                            hasRetake,
+                            match: subject,
+                            matchScore: 1,
+                        }
+                        : null;
+
+                    const hasManualOverride = !!manual && Object.keys(manual).length > 0;
+
+                    return { subject, data, hasManualOverride };
+                });
+
                 const filled = rowsForTerm
                     .map((r) => r.data)
                     .filter((d): d is ParsedSubject => d !== null);
+
                 return { term, rows: rowsForTerm, ...gpaFor(filled) };
             })
             .filter((g) => g.rows.length > 0);
-    }, [parsed, selectedBatch]);
+    }, [parsed, manualMarks, selectedBatch]);
 
+    // Unmatched subjects (e.g. non-curriculum scraped rows)
     const unmatched = useMemo(() => parsed.filter((s) => !s.match), [parsed]);
-    const overall = useMemo(() => gpaFor(parsed.filter((s) => s.match)), [parsed]);
+
+    // All active subjects with data
+    const allFilledSubjects = useMemo(() => {
+        const list: ParsedSubject[] = [];
+        for (const g of termGroups) {
+            for (const r of g.rows) {
+                if (r.data) list.push(r.data);
+            }
+        }
+        return list;
+    }, [termGroups]);
+
+    const totalCurriculumSubjects = useMemo(() => {
+        return termGroups.reduce((acc, g) => acc + g.rows.length, 0);
+    }, [termGroups]);
+
+    const overall = useMemo(() => gpaFor(allFilledSubjects), [allFilledSubjects]);
+
+    const manualMarksCount = useMemo(() => Object.keys(manualMarks).length, [manualMarks]);
 
     const rawJson = useMemo(() => (rows ? JSON.stringify(rows, null, 2) : ''), [rows]);
 
@@ -177,17 +607,126 @@ export default function MarksPage() {
         try {
             await navigator.clipboard.writeText(rawJson);
         } catch {
-            /* clipboard may be unavailable */
+            /* clipboard unavailable */
         }
     };
 
     const clearData = () => {
         setRows(null);
+        setManualMarks({});
         setPasteText('');
         setPasteError(false);
+        try {
+            localStorage.removeItem(STORAGE_KEY_ROWS);
+            localStorage.removeItem(STORAGE_KEY_MANUAL);
+        } catch {
+            /* ignore */
+        }
         if (typeof window !== 'undefined') {
             history.replaceState(null, '', window.location.pathname);
         }
+    };
+
+    const resetAllManualMarks = () => {
+        setManualMarks({});
+        try {
+            localStorage.removeItem(STORAGE_KEY_MANUAL);
+        } catch {
+            /* ignore */
+        }
+    };
+
+    // Update an individual subject mark manually
+    const updateSubjectField = (
+        subjectId: string,
+        field: 'cla' | 'project' | 'final' | 'total',
+        val: number | null,
+        text?: string | null
+    ) => {
+        setManualMarks((prev) => {
+            const current = prev[subjectId] || {};
+            const updated: ManualSubjectMark = { ...current };
+
+            if (field === 'final') {
+                updated.final = val;
+                updated.finalText = text ?? null;
+            } else {
+                updated[field] = val;
+            }
+
+            // If updating CLA, Project, or Final, and user hasn't explicitly locked total:
+            if (field !== 'total') {
+                const cla = updated.cla !== undefined ? updated.cla : null;
+                const proj = updated.project !== undefined ? updated.project : null;
+                const fin = updated.final !== undefined ? updated.final : null;
+
+                if (cla !== null || proj !== null || fin !== null) {
+                    const sum = (cla ?? 0) + (proj ?? 0) + (fin ?? 0);
+                    updated.total = Number(sum.toFixed(2));
+                    if (!updated.manualGradeLock) {
+                        updated.grade = gradeFromTotal(updated.total).letter;
+                    }
+                } else if (updated.total !== undefined && current.total === undefined) {
+                    updated.total = null;
+                    if (!updated.manualGradeLock) updated.grade = null;
+                }
+            } else if (field === 'total') {
+                if (val !== null) {
+                    if (!updated.manualGradeLock) {
+                        updated.grade = gradeFromTotal(val).letter;
+                    }
+                } else {
+                    if (!updated.manualGradeLock) updated.grade = null;
+                }
+            }
+
+            return {
+                ...prev,
+                [subjectId]: updated,
+            };
+        });
+    };
+
+    const updateSubjectGrade = (subjectId: string, gradeStr: string | null) => {
+        setManualMarks((prev) => {
+            const current = prev[subjectId] || {};
+            if (!gradeStr) {
+                const copy = { ...current };
+                delete copy.grade;
+                delete copy.manualGradeLock;
+                return { ...prev, [subjectId]: copy };
+            }
+            return {
+                ...prev,
+                [subjectId]: {
+                    ...current,
+                    grade: gradeStr.toUpperCase() as LetterGrade,
+                    manualGradeLock: true,
+                },
+            };
+        });
+    };
+
+    const toggleSubjectRetake = (subjectId: string) => {
+        setManualMarks((prev) => {
+            const current = prev[subjectId] || {};
+            const nextRetake = !current.hasRetake;
+            return {
+                ...prev,
+                [subjectId]: {
+                    ...current,
+                    hasRetake: nextRetake,
+                },
+            };
+        });
+    };
+
+    const resetSubjectRow = (subjectId: string) => {
+        setManualMarks((prev) => {
+            const copy = { ...prev };
+            delete copy[subjectId];
+            return copy;
+        });
     };
 
     // Parse whatever the student copied off their Moodle grade page.
@@ -197,22 +736,26 @@ export default function MarksPage() {
         if (detected && detected !== selectedBatch) {
             setSelectedBatch(detected);
         }
+        const extracted = extractStudentName(text);
+        if (extracted && !customStudentName) {
+            setCustomStudentName(extracted);
+        }
         const parsedRows = parsePastedText(text);
         if (parsedRows.length) {
             setRows(parsedRows);
             setPasteError(false);
+            setShowImporter(false);
         } else {
             setPasteError(text.trim().length > 0);
         }
     };
 
-    // One-tap paste for browsers that allow clipboard reads.
     const pasteFromClipboard = async () => {
         try {
             const text = await navigator.clipboard.readText();
             if (text) ingestPaste(text);
         } catch {
-            /* permission denied — the textarea is the fallback */
+            /* fallback to textarea */
         }
     };
 
@@ -222,18 +765,18 @@ export default function MarksPage() {
         }
     };
 
-    const cardCls =
-        'bg-surface border border-surface-border/60 rounded-xl p-4 sm:p-5';
+    const cardCls = 'bg-surface border border-surface-border/60 rounded-xl p-4 sm:p-5 shadow-sm';
 
-    // Helper to render the term table exactly like the official marksheet format
+    // Helper to render the term table for official marksheet format (preview & print)
     const renderTermTable = (group: typeof termGroups[0]) => {
-        const hasProjectCol = group.term === 5 || group.rows.some((r) => r.data?.project !== null && r.data?.project !== undefined);
+        const hasProjectCol =
+            group.term === 5 ||
+            group.rows.some((r) => r.data?.project !== null && r.data?.project !== undefined);
 
         return (
             <div key={group.term} className="w-full text-black">
                 <table className="w-full border-collapse border border-black text-[11px] leading-tight bg-white">
                     <thead>
-                        {/* Header banner: TERM-X spanning full width */}
                         <tr className="border-b border-black">
                             <th
                                 colSpan={hasProjectCol ? 6 : 5}
@@ -242,7 +785,6 @@ export default function MarksPage() {
                                 TERM-{group.term}
                             </th>
                         </tr>
-                        {/* Subheaders */}
                         <tr className="border-b border-black font-bold text-center bg-white text-black text-[11px]">
                             <th className="border border-black py-1.5 px-3 text-left font-bold w-[45%]">Subject</th>
                             <th className="border border-black py-1.5 px-2 text-center font-bold w-[12%] whitespace-nowrap">CLA (25)</th>
@@ -259,7 +801,7 @@ export default function MarksPage() {
                             const d = r.data;
                             const isProjectBasedSingleMark =
                                 !hasProjectCol &&
-                                d?.cla === null &&
+                                (d?.cla === null || d?.cla === undefined) &&
                                 (d?.final !== null || d?.total !== null) &&
                                 /project based/i.test(r.subject.name);
 
@@ -267,43 +809,36 @@ export default function MarksPage() {
 
                             return (
                                 <tr key={i} className="border-b border-black text-black">
-                                    {/* Subject */}
                                     <td className="border border-black py-1.5 px-3 text-left font-normal">
                                         {subjectDisplayName}
                                     </td>
 
-                                    {/* Project based course with single merged mark */}
                                     {isProjectBasedSingleMark ? (
                                         <td colSpan={2} className="border border-black py-1.5 px-2 text-center font-normal">
                                             {formatDisplayMark(d?.final ?? d?.total)}
                                         </td>
                                     ) : (
                                         <>
-                                            {/* CLA */}
                                             <td className="border border-black py-1.5 px-2 text-center font-normal">
-                                                {d?.cla !== null ? formatDisplayMark(d?.cla) : ''}
+                                                {d?.cla !== null && d?.cla !== undefined ? formatDisplayMark(d?.cla) : ''}
                                             </td>
 
-                                            {/* Project (if term has project column) */}
                                             {hasProjectCol && (
                                                 <td className="border border-black py-1.5 px-2 text-center font-normal">
-                                                    {d?.project !== null ? formatDisplayMark(d?.project) : '-'}
+                                                    {d?.project !== null && d?.project !== undefined ? formatDisplayMark(d?.project) : '-'}
                                                 </td>
                                             )}
 
-                                            {/* Final Exam */}
                                             <td className="border border-black py-1.5 px-2 text-center font-normal">
-                                                {d?.finalText || (d?.final !== null ? formatDisplayMark(d?.final) : '')}
+                                                {d?.finalText || (d?.final !== null && d?.final !== undefined ? formatDisplayMark(d?.final) : '')}
                                             </td>
                                         </>
                                     )}
 
-                                    {/* Total */}
                                     <td className="border border-black py-1.5 px-2 text-center font-normal">
-                                        {d?.total !== null ? formatDisplayMark(d?.total) : ''}
+                                        {d?.total !== null && d?.total !== undefined ? formatDisplayMark(d?.total) : ''}
                                     </td>
 
-                                    {/* Grade */}
                                     <td className="border border-black py-1.5 px-2 text-center font-normal">
                                         {d ? effectiveGrade(d) : ''}
                                     </td>
@@ -319,171 +854,250 @@ export default function MarksPage() {
     return (
         <>
             {/* ═══════════════════════════════════════════════════════════════════
-                SCREEN UI (Interactive Dark-mode interface, hidden on print)
+                SCREEN UI (Interactive Modern interface, hidden on print)
             ═══════════════════════════════════════════════════════════════════ */}
             <div className="min-h-screen relative z-[1] text-white print:hidden">
                 <div className="max-w-4xl mx-auto px-3 sm:px-4 lg:px-6 py-4 sm:py-6 space-y-4">
-                    <div>
-                        <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight">Marks Import &amp; Marksheet</h1>
-                        <p className="text-[11px] text-slate-500 mt-0.5">
-                            Pull your grades from Moodle with a one-time bookmarklet or paste your grade report to generate and print your marksheet.
-                        </p>
-                    </div>
-
-                    {/* ── Setup instructions ── */}
-                    <div className={cardCls}>
-                        <div className="flex items-center gap-2 mb-3">
-                            <Bookmark className="w-4 h-4 text-emerald-400" />
-                            <h2 className="text-sm font-bold text-slate-100">Step 1 · Install the bookmarklet</h2>
+                    {/* Header */}
+                    <div className="flex flex-wrap items-center justify-between gap-3">
+                        <div>
+                            <h1 className="text-xl sm:text-2xl font-extrabold tracking-tight">
+                                Marksheet
+                            </h1>
                         </div>
-                        <p className="text-xs text-slate-400 mb-3">
-                            Drag the button below onto your browser&apos;s bookmarks bar (or right-click → add to bookmarks).
-                        </p>
-                        <a
-                            ref={bookmarkletRef}
-                            onClick={(e) => e.preventDefault()}
-                            className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 rounded-lg border border-emerald-500/30 text-sm font-semibold cursor-grab active:cursor-grabbing select-none"
-                        >
-                            <Bookmark className="w-4 h-4" />
-                            Import IIMB Marks
-                        </a>
 
-                        <ol className="mt-4 space-y-1.5 text-xs text-slate-400 list-decimal list-inside">
-                            <li>
-                                Log into Moodle:{' '}
-                                <a href={MOODLE_LOGIN_URL} target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline break-all">
-                                    {MOODLE_LOGIN_URL}
-                                </a>
-                            </li>
-                            <li>
-                                Open your grade report:{' '}
-                                <a href={MOODLE_GRADE_URL} target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline break-all">
-                                    {MOODLE_GRADE_URL}
-                                </a>
-                            </li>
-                            <li>While on that page, click the <span className="text-slate-200 font-medium">Import IIMB Marks</span> bookmark.</li>
-                            <li>A new tab opens back here with your parsed marks below.</li>
-                        </ol>
-
-                        {/* ── Mobile / no-bookmarklet path: copy & paste ── */}
-                        <div className="mt-5 pt-4 border-t border-surface-border/50">
-                            <div className="flex items-center gap-2 mb-2">
-                                <ClipboardPaste className="w-4 h-4 text-sky-400" />
-                                <h3 className="text-xs font-bold text-slate-100">On mobile? Copy &amp; paste instead</h3>
-                            </div>
-                            <ol className="space-y-1.5 text-xs text-slate-400 list-decimal list-inside mb-3">
-                                <li>
-                                    Open your{' '}
-                                    <a href={MOODLE_GRADE_URL} target="_blank" rel="noopener noreferrer" className="text-sky-400 hover:underline break-all">
-                                        Moodle grade report
-                                    </a>{' '}
-                                    (log in if asked).
-                                </li>
-                                <li>Long-press the page → <span className="text-slate-200 font-medium">Select all</span> → <span className="text-slate-200 font-medium">Copy</span>.</li>
-                                <li>Come back here, tap the box and <span className="text-slate-200 font-medium">Paste</span> (or use the button).</li>
-                            </ol>
-                            <button
-                                onClick={pasteFromClipboard}
-                                type="button"
-                                className="inline-flex items-center gap-2 px-4 py-2 mb-2 bg-sky-500/15 hover:bg-sky-500/25 text-sky-300 rounded-lg border border-sky-500/30 text-sm font-semibold"
-                            >
-                                <ClipboardPaste className="w-4 h-4" />
-                                Paste my marks
-                            </button>
-                            <textarea
-                                value={pasteText}
-                                onChange={(e) => ingestPaste(e.target.value)}
-                                placeholder="…or tap here and paste your copied Moodle grade page"
-                                rows={3}
-                                className="w-full rounded-lg bg-surface-dark/60 border border-surface-border/60 px-3 py-2 text-xs text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-sky-500/50 resize-y"
+                        {/* Student Name Display / Input */}
+                        <div className="flex items-center gap-1.5 bg-surface-dark/60 border border-surface-border/60 px-2.5 py-1 rounded-lg">
+                            <User className="w-3.5 h-3.5 text-slate-400" />
+                            <input
+                                type="text"
+                                value={customStudentName}
+                                onChange={(e) => setCustomStudentName(e.target.value)}
+                                placeholder={extractedName || 'Student Name (optional)'}
+                                className="bg-transparent text-xs text-slate-200 placeholder:text-slate-500 focus:outline-none w-36 sm:w-48"
+                                title="Student name for statement of marks"
                             />
-                            {pasteError && (
-                                <p className="mt-1.5 text-[11px] text-amber-400">
-                                    Couldn&apos;t find any grades in that text. Make sure you copied the whole grade report page.
-                                </p>
-                            )}
                         </div>
                     </div>
 
-                    {/* ── Parsed data ── */}
+                    {/* ── Step 1 · Moodle Import (Collapsible) ── */}
                     <div className={cardCls}>
-                        <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+                        <div className="flex items-center justify-between cursor-pointer select-none" onClick={() => setShowImporter(!showImporter)}>
                             <div className="flex items-center gap-2">
-                                <h2 className="text-sm font-bold text-slate-100">Step 2 · Your marks</h2>
-                                {rows && (
-                                    <div className="inline-flex bg-surface-dark/60 border border-surface-border/60 p-0.5 gap-0.5 rounded-lg ml-2">
-                                        <button
-                                            onClick={() => setActiveTab('dashboard')}
-                                            className={`px-2.5 py-1 text-[11px] font-semibold rounded-md transition-colors flex items-center gap-1 ${activeTab === 'dashboard' ? 'bg-sky-600 text-white' : 'text-slate-400 hover:text-white'
-                                                }`}
-                                            type="button"
-                                        >
-                                            <Eye className="w-3 h-3" /> Dashboard
-                                        </button>
-                                        <button
-                                            onClick={() => setActiveTab('printPreview')}
-                                            className={`px-2.5 py-1 text-[11px] font-semibold rounded-md transition-colors flex items-center gap-1 ${activeTab === 'printPreview' ? 'bg-emerald-600 text-white' : 'text-slate-400 hover:text-white'
-                                                }`}
-                                            type="button"
-                                        >
-                                            <FileText className="w-3 h-3" /> 3-Page Marksheet Preview
-                                        </button>
-                                    </div>
-                                )}
+                                <div className="p-1 rounded-md bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
+                                    <ClipboardPaste className="w-4 h-4" />
+                                </div>
+                                <div>
+                                    <h2 className="text-sm font-bold text-slate-100 flex items-center gap-2">
+                                        <span>Moodle Import</span>
+                                        <span className="text-[10px] font-normal text-slate-400">
+                                            {rows ? `(${rows.length} rows loaded)` : '(optional bookmarklet / paste)'}
+                                        </span>
+                                    </h2>
+                                </div>
                             </div>
+                            <button
+                                type="button"
+                                className="text-slate-400 hover:text-white p-1 rounded transition-colors"
+                            >
+                                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${showImporter ? 'rotate-180' : 'rotate-0'}`} />
+                            </button>
+                        </div>
+
+                        {showImporter && (
+                            <div className="mt-4 pt-4 border-t border-surface-border/50 space-y-4">
+                                <div>
+                                    <p className="text-xs text-slate-400 mb-2.5">
+                                        Drag the button below onto your browser bookmarks bar (or right-click → add to bookmarks):
+                                    </p>
+                                    <a
+                                        ref={bookmarkletRef}
+                                        onClick={(e) => e.preventDefault()}
+                                        className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 rounded-lg border border-emerald-500/30 text-xs sm:text-sm font-semibold cursor-grab active:cursor-grabbing select-none"
+                                    >
+                                        <Bookmark className="w-4 h-4" />
+                                        Import IIMB Marks
+                                    </a>
+
+                                    <ol className="mt-3 space-y-1 text-xs text-slate-400 list-decimal list-inside">
+                                        <li>
+                                            Open your Moodle grade report:{' '}
+                                            <a href={MOODLE_GRADE_URL} target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline break-all">
+                                                {MOODLE_GRADE_URL}
+                                            </a>
+                                        </li>
+                                        <li>Click the <span className="text-slate-200 font-medium">Import IIMB Marks</span> bookmarklet.</li>
+                                        <li>A new tab opens back here with your marks parsed into the curriculum table!</li>
+                                    </ol>
+                                </div>
+
+                                <div className="pt-3 border-t border-surface-border/40">
+                                    <h3 className="text-xs font-bold text-slate-100 mb-2 flex items-center gap-1.5">
+                                        <span>On mobile or prefer pasting?</span>
+                                    </h3>
+                                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                                        <button
+                                            onClick={pasteFromClipboard}
+                                            type="button"
+                                            className="inline-flex items-center gap-2 px-3 py-1.5 bg-sky-500/15 hover:bg-sky-500/25 text-sky-300 rounded-lg border border-sky-500/30 text-xs font-semibold cursor-pointer"
+                                        >
+                                            <ClipboardPaste className="w-3.5 h-3.5" />
+                                            Paste from clipboard
+                                        </button>
+                                        <span className="text-[11px] text-slate-500">or copy from Moodle and paste into the box below:</span>
+                                    </div>
+                                    <textarea
+                                        value={pasteText}
+                                        onChange={(e) => ingestPaste(e.target.value)}
+                                        placeholder="Paste your copied Moodle grade page text here..."
+                                        rows={3}
+                                        className="w-full rounded-lg bg-surface-dark/70 border border-surface-border/60 px-3 py-2 text-xs text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-sky-500/50 resize-y font-mono"
+                                    />
+                                    {pasteError && (
+                                        <p className="mt-1.5 text-[11px] text-amber-400">
+                                            Couldn&apos;t detect valid grades in that text. Try copying the entire report or enter marks manually below.
+                                        </p>
+                                    )}
+                                </div>
+                            </div>
+                        )}
+                    </div>
+
+                    {/* ── Step 2 · Curriculum Skeleton & Interactive Marks ── */}
+                    <div className={cardCls}>
+                        {/* Action Bar */}
+                        <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
                             <div className="flex flex-wrap items-center gap-2">
-                                <div className="inline-flex bg-surface-dark/60 border border-surface-border/60 p-0.5 gap-0.5 rounded-lg">
+                                <h2 className="text-sm font-bold text-slate-100 flex items-center gap-2">
+                                    <span>Your Marks</span>
+                                </h2>
+                            </div>
+
+                            {/* Batch Selector & Global Actions */}
+                            <div className="flex flex-wrap items-center gap-2">
+                                <div className="inline-flex bg-surface-dark/70 border border-surface-border/60 p-0.5 gap-0.5 rounded-lg">
                                     {AVAILABLE_BATCHES.map((b) => (
                                         <button
                                             key={b}
                                             onClick={() => setSelectedBatch(b)}
-                                            className={`px-2.5 py-1 text-[11px] font-semibold rounded-md transition-colors ${selectedBatch === b ? 'bg-amber-600 text-white' : 'text-slate-400 hover:text-white'
-                                                }`}
+                                            className={`px-2.5 py-1 text-[11px] font-semibold rounded-md transition-colors cursor-pointer ${
+                                                selectedBatch === b ? 'bg-amber-600 text-white font-bold' : 'text-slate-400 hover:text-white'
+                                            }`}
                                             type="button"
                                         >
                                             Batch {b}
                                         </button>
                                     ))}
                                 </div>
-                                {rows && (
+
+                                {/* Preview / Edit Toggle and Print Button */}
+                                {activeTab === 'dashboard' ? (
+                                    <button
+                                        onClick={() => setActiveTab('printPreview')}
+                                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold shadow-sm transition-colors cursor-pointer"
+                                        type="button"
+                                        title="Preview Marksheet for Printing"
+                                    >
+                                        <Printer className="w-3.5 h-3.5" />
+                                        <span>Print</span>
+                                    </button>
+                                ) : (
                                     <>
+                                        <button
+                                            onClick={() => setActiveTab('dashboard')}
+                                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface-light hover:bg-surface border border-surface-border/60 text-slate-200 hover:text-white rounded-lg text-xs font-semibold shadow-sm transition-colors cursor-pointer"
+                                            type="button"
+                                            title="Back to Edit Marks"
+                                        >
+                                            <Pencil className="w-3.5 h-3.5" />
+                                            <span>Edit</span>
+                                        </button>
                                         <button
                                             onClick={handlePrint}
                                             className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold shadow-sm transition-colors cursor-pointer"
                                             type="button"
-                                            title="Print or Save PDF Marksheet"
+                                            title="Print Marksheet"
                                         >
                                             <Printer className="w-3.5 h-3.5" />
-                                            Print Marksheet
-                                        </button>
-                                        <button
-                                            onClick={clearData}
-                                            className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-surface-light hover:bg-surface border border-surface-border/60 text-slate-400 hover:text-red-400 rounded-lg text-xs font-medium cursor-pointer"
-                                            type="button"
-                                        >
-                                            <Trash2 className="w-3.5 h-3.5" />
-                                            Clear
+                                            <span>Print</span>
                                         </button>
                                     </>
+                                )}
+
+                                {manualMarksCount > 0 && (
+                                    <button
+                                        onClick={resetAllManualMarks}
+                                        className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-surface-light hover:bg-surface border border-surface-border/60 text-slate-300 hover:text-amber-400 rounded-lg text-xs font-medium cursor-pointer transition-colors"
+                                        type="button"
+                                        title="Reset manual overrides only"
+                                    >
+                                        <RotateCcw className="w-3 h-3" />
+                                        <span>Reset Edits ({manualMarksCount})</span>
+                                    </button>
+                                )}
+
+                                {(rows || manualMarksCount > 0) && (
+                                    <button
+                                        onClick={clearData}
+                                        className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-surface-light hover:bg-surface border border-surface-border/60 text-slate-400 hover:text-red-400 rounded-lg text-xs font-medium cursor-pointer transition-colors"
+                                        type="button"
+                                        title="Clear all marks and reset to skeleton"
+                                    >
+                                        <Trash2 className="w-3.5 h-3.5" />
+                                        <span>Clear All</span>
+                                    </button>
                                 )}
                             </div>
                         </div>
 
-                        {!rows ? (
-                            <div className="flex flex-col items-center justify-center text-center py-10 text-slate-600">
-                                <RefreshCw className="w-6 h-6 mb-2 opacity-50" />
-                                <p className="text-xs">No data yet. Use the bookmarklet on your Moodle grade page, or copy &amp; paste it above.</p>
+                        {/* Top Summary Banner */}
+                        <div className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 mb-3">
+                            <div className="flex flex-wrap items-center gap-4 sm:gap-6">
+                                <div>
+                                    <div className="text-[9px] font-semibold uppercase tracking-wider text-emerald-400/80">Overall CGPA</div>
+                                    <div className="text-base sm:text-lg font-bold tabular-nums font-mono text-emerald-300">
+                                        {overall.gpa === null ? '—' : overall.gpa.toFixed(2)}
+                                    </div>
+                                </div>
+                                <div className="h-7 w-px bg-emerald-500/30 hidden sm:block" />
+                                <div>
+                                    <div className="text-[9px] font-semibold uppercase tracking-wider text-emerald-400/80">Percentage (WAM)</div>
+                                    <div className="text-base sm:text-lg font-bold tabular-nums font-mono text-emerald-300">
+                                        {overall.percentage === null ? '—' : `${overall.percentage.toFixed(2)}%`}
+                                    </div>
+                                </div>
+                                <div className="h-7 w-px bg-emerald-500/30 hidden sm:block" />
+                                <div>
+                                    <div className="text-[9px] font-semibold uppercase tracking-wider text-emerald-400/80">Credits Earned</div>
+                                    <div className="text-base sm:text-lg font-bold tabular-nums font-mono text-emerald-300">
+                                        {overall.credits}
+                                    </div>
+                                </div>
                             </div>
-                        ) : activeTab === 'printPreview' ? (
-                            /* ── Live Marksheet Preview (3 Pages exact match) ── */
-                            <div className="space-y-6 pt-2">
+
+                            <div className="text-right text-[10px] text-slate-400 space-y-0.5">
+                                <div className="font-medium text-slate-300">
+                                    {allFilledSubjects.length} of {totalCurriculumSubjects} subjects graded
+                                </div>
+
+                                {unmatched.length > 0 && (
+                                    <div className="text-amber-400 text-[9px]">{unmatched.length} unmatched (excluded from GPA)</div>
+                                )}
+                            </div>
+                        </div>
+
+
+
+                        {activeTab === 'printPreview' ? (
+                            /* ── 3-Page Marksheet Preview (Live Statement of Marks) ── */
+                            <div className="space-y-6 pt-1">
                                 <div className="flex items-center justify-between bg-emerald-950/40 border border-emerald-500/30 rounded-lg px-3 py-2 text-xs text-emerald-300">
                                     <span>
-                                        Viewing <strong>3-Page Marksheet Layout</strong> (Page 1: Terms 1-3, Page 2: Terms 4-6, Page 3: Terms 7-9).
+                                        Viewing <strong>3-Page Official Marksheet Layout</strong> (Page 1: Terms 1-3, Page 2: Terms 4-6, Page 3: Terms 7-9).
                                     </span>
                                     <button
                                         onClick={handlePrint}
-                                        className="px-2.5 py-1 bg-emerald-600 hover:bg-emerald-500 text-white rounded text-[11px] font-bold"
+                                        className="px-3 py-1 bg-emerald-600 hover:bg-emerald-500 text-white rounded text-xs font-bold cursor-pointer"
                                     >
                                         Print / PDF
                                     </button>
@@ -494,21 +1108,27 @@ export default function MarksPage() {
 
                                     return (
                                         <div key={year.year} className="bg-white rounded-lg shadow-lg border border-slate-300 p-6 sm:p-8 space-y-6 text-black">
-                                            {/* Marksheet Top Header */}
+                                            {/* Top Header */}
                                             <div className="border-b-2 border-black pb-3 mb-4 flex flex-wrap items-center justify-between gap-3 text-black">
                                                 <div>
                                                     <h2 className="text-sm sm:text-base font-bold tracking-wider uppercase text-black">Statement of Marks</h2>
-                                                    <p className="text-[11px] text-neutral-600">Batch {selectedBatch} · {year.label}</p>
+                                                    <p className="text-[11px] text-neutral-700 font-medium">
+                                                        {studentName ? `${studentName} · ` : ''}Batch {selectedBatch} · {year.label}
+                                                    </p>
                                                 </div>
                                                 <div className="flex items-center gap-5 text-right">
                                                     <div>
                                                         <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">CGPA</span>
-                                                        <span className="text-sm sm:text-base font-extrabold font-mono text-black">{overall.gpa === null ? '—' : overall.gpa.toFixed(2)}</span>
+                                                        <span className="text-sm sm:text-base font-extrabold font-mono text-black">
+                                                            {overall.gpa === null ? '—' : overall.gpa.toFixed(2)}
+                                                        </span>
                                                     </div>
                                                     <div className="h-6 w-px bg-neutral-300" />
                                                     <div>
                                                         <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Percentage (WAM)</span>
-                                                        <span className="text-sm sm:text-base font-extrabold font-mono text-black">{overall.percentage === null ? '—' : `${overall.percentage.toFixed(2)}%`}</span>
+                                                        <span className="text-sm sm:text-base font-extrabold font-mono text-black">
+                                                            {overall.percentage === null ? '—' : `${overall.percentage.toFixed(2)}%`}
+                                                        </span>
                                                     </div>
                                                     <div className="h-6 w-px bg-neutral-300" />
                                                     <div>
@@ -529,96 +1149,94 @@ export default function MarksPage() {
                                 })}
                             </div>
                         ) : (
-                            /* ── Interactive Dashboard View ── */
+                            /* ── Interactive Dashboard View (Terms 1 to 9 with Inline Inputs) ── */
                             <div className="space-y-4">
-                                {/* Overall GPA & Percentage (WAM) */}
-                                <div className="flex flex-wrap items-center justify-between gap-4 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-4 py-3">
-                                    <div className="flex flex-wrap items-center gap-6">
-                                        <div>
-                                            <div className="text-[10px] font-semibold uppercase tracking-widest text-emerald-400/80">Overall GPA</div>
-                                            <div className="text-3xl font-extrabold tabular-nums text-emerald-300">
-                                                {overall.gpa === null ? '—' : overall.gpa.toFixed(2)}
+                                {termGroups.map((group) => {
+                                    const hasProjectCol =
+                                        group.term === 5 ||
+                                        group.rows.some((r) => r.data?.project !== null && r.data?.project !== undefined);
+
+                                    return (
+                                        <div key={group.term} className="rounded-lg border border-surface-border/50 overflow-hidden bg-surface-dark/20">
+                                            {/* Term Header */}
+                                            <div className="flex flex-wrap items-center justify-between gap-2 bg-surface-dark/50 px-3 py-2 border-b border-surface-border/40">
+                                                <div className="flex items-center gap-2">
+                                                    <span className="text-xs font-bold text-slate-200">Term {group.term}</span>
+                                                    <span className="text-[10px] text-slate-500">
+                                                        ({group.rows.filter((r) => r.data !== null).length}/{group.rows.length} subjects)
+                                                    </span>
+                                                </div>
+                                                <div className="text-[11px] text-slate-400">
+                                                    GPA{' '}
+                                                    <span className="font-bold tabular-nums font-mono text-emerald-300">
+                                                        {group.gpa === null ? '—' : group.gpa.toFixed(2)}
+                                                    </span>
+                                                    {group.percentage !== null && (
+                                                        <>
+                                                            <span className="text-slate-600"> · </span>
+                                                            WAM{' '}
+                                                            <span className="font-bold tabular-nums font-mono text-emerald-300">
+                                                                {group.percentage.toFixed(2)}%
+                                                            </span>
+                                                        </>
+                                                    )}
+                                                    <span className="text-slate-600"> · </span>
+                                                    <span className="tabular-nums font-mono text-slate-300">{group.credits} cr</span>
+                                                </div>
+                                            </div>
+
+                                            {/* Term Subjects Table with Inline Editing */}
+                                            <div className="overflow-x-auto">
+                                                <table className="w-full text-xs min-w-[560px]">
+                                                    <thead>
+                                                        <tr className="text-slate-500 text-left bg-surface-dark/10">
+                                                            <th className="px-3 py-2 font-semibold uppercase tracking-widest text-[9px]">Subject</th>
+                                                            <th className="px-2 py-2 font-semibold uppercase tracking-widest text-[9px] text-right w-12">Cr</th>
+                                                            <th className="px-1.5 py-2 font-semibold uppercase tracking-widest text-[9px] text-right w-16">
+                                                                CLA<br />/25
+                                                            </th>
+                                                            {hasProjectCol && (
+                                                                <th className="px-1.5 py-2 font-semibold uppercase tracking-widest text-[9px] text-right w-16">
+                                                                    Proj<br />/25
+                                                                </th>
+                                                            )}
+                                                            <th className="px-1.5 py-2 font-semibold uppercase tracking-widest text-[9px] text-right w-16">
+                                                                Final<br />/75
+                                                            </th>
+                                                            <th className="px-1.5 py-2 font-semibold uppercase tracking-widest text-[9px] text-right w-18">
+                                                                Total<br />/100
+                                                            </th>
+                                                            <th className="px-1.5 py-2 font-semibold uppercase tracking-widest text-[9px] text-center w-14">
+                                                                Gr
+                                                            </th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        {group.rows.map((r) => (
+                                                            <SubjectRow
+                                                                key={r.subject.id}
+                                                                subject={r.subject}
+                                                                data={r.data}
+                                                                hasManualOverride={r.hasManualOverride}
+                                                                hasProjectCol={hasProjectCol}
+                                                                onUpdateField={(field, val, text) => updateSubjectField(r.subject.id, field, val, text)}
+                                                                onUpdateGrade={(grade) => updateSubjectGrade(r.subject.id, grade)}
+                                                                onToggleRetake={() => toggleSubjectRetake(r.subject.id)}
+                                                                onResetRow={() => resetSubjectRow(r.subject.id)}
+                                                            />
+                                                        ))}
+                                                    </tbody>
+                                                </table>
                                             </div>
                                         </div>
-                                        <div className="h-10 w-px bg-emerald-500/30 hidden sm:block" />
-                                        <div>
-                                            <div className="text-[10px] font-semibold uppercase tracking-widest text-emerald-400/80">Percentage (WAM)</div>
-                                            <div className="text-3xl font-extrabold tabular-nums text-emerald-300">
-                                                {overall.percentage === null ? '—' : `${overall.percentage.toFixed(2)}%`}
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="text-right text-[11px] text-slate-400">
-                                        <div>{matchedCount} subjects · {overall.credits} credits</div>
-                                        {parsed.length - matchedCount > 0 && (
-                                            <div className="text-amber-400">{parsed.length - matchedCount} unmatched (excluded)</div>
-                                        )}
-                                    </div>
-                                </div>
+                                    );
+                                })}
 
-                                {/* Term-wise groups */}
-                                {termGroups.map((group) => (
-                                    <div key={group.term} className="rounded-lg border border-surface-border/50 overflow-hidden">
-                                        <div className="flex items-center justify-between gap-2 bg-surface-dark/40 px-3 py-2">
-                                            <span className="text-xs font-bold text-slate-200">Term {group.term}</span>
-                                            <span className="text-[11px] text-slate-400">
-                                                GPA{' '}
-                                                <span className="font-bold tabular-nums text-emerald-300">
-                                                    {group.gpa === null ? '—' : group.gpa.toFixed(2)}
-                                                </span>
-                                                {group.percentage !== null && (
-                                                    <>
-                                                        <span className="text-slate-600"> · </span>
-                                                        WAM{' '}
-                                                        <span className="font-bold tabular-nums text-emerald-300">
-                                                            {group.percentage.toFixed(2)}%
-                                                        </span>
-                                                    </>
-                                                )}
-                                                <span className="text-slate-600"> · </span>
-                                                {group.credits} cr
-                                            </span>
-                                        </div>
-                                        <div className="overflow-x-auto">
-                                            <table className="w-full text-xs">
-                                                <thead>
-                                                    <tr className="text-slate-500 text-left">
-                                                        <th className="px-3 py-2 font-semibold uppercase tracking-widest text-[9px]">Subject</th>
-                                                        <th className="px-2 py-2 font-semibold uppercase tracking-widest text-[9px] text-right w-14">Cr</th>
-                                                        <th className="px-2 py-2 font-semibold uppercase tracking-widest text-[9px] text-right w-14">CLA<br />/25</th>
-                                                        <th className="px-2 py-2 font-semibold uppercase tracking-widest text-[9px] text-right w-14">Final<br />/75</th>
-                                                        <th className="px-2 py-2 font-semibold uppercase tracking-widest text-[9px] text-right w-14">Total<br />/100</th>
-                                                        <th className="px-2 py-2 font-semibold uppercase tracking-widest text-[9px] text-center w-10">Gr</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    {group.rows.map((r, i) => {
-                                                        const d = r.data;
-                                                        return (
-                                                            <tr key={i} className="border-t border-surface-border/30">
-                                                                <td className={`px-3 py-1.5 ${d ? 'text-slate-300' : 'text-slate-500'}`}>
-                                                                    {d?.hasRetake ? `*${r.subject.name}` : r.subject.name}
-                                                                    {d?.hasRetake && <span className="ml-1.5 text-[9px] text-amber-500/70">(retake)</span>}
-                                                                </td>
-                                                                <td className="px-2 py-1.5 text-slate-400 text-right tabular-nums">{r.subject.credits}</td>
-                                                                <td className="px-2 py-1.5 text-slate-200 text-right tabular-nums">{fmt(d?.cla ?? null)}</td>
-                                                                <td className="px-2 py-1.5 text-slate-200 text-right tabular-nums">{d?.finalText || fmt(d?.final ?? null)}</td>
-                                                                <td className="px-2 py-1.5 text-slate-100 text-right tabular-nums font-semibold">{fmt(d?.total ?? null)}</td>
-                                                                <td className="px-2 py-1.5 text-center font-bold text-slate-200">{(d && effectiveGrade(d)) || '—'}</td>
-                                                            </tr>
-                                                        );
-                                                    })}
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                ))}
-
-                                {/* Unmatched subjects */}
+                                {/* Unmatched Subjects Section (from Scraping) */}
                                 {unmatched.length > 0 && (
                                     <div className="rounded-lg border border-amber-500/30 overflow-hidden">
                                         <div className="bg-amber-500/10 px-3 py-2 text-xs font-bold text-amber-300">
-                                            Unmatched ({unmatched.length}) · not counted in GPA
+                                            Unmatched Subjects ({unmatched.length}) · not part of standard curriculum
                                         </div>
                                         <div className="overflow-x-auto">
                                             <table className="w-full text-xs">
@@ -641,33 +1259,35 @@ export default function MarksPage() {
                                     </div>
                                 )}
 
-                                {/* Raw JSON (collapsible) */}
-                                <details
-                                    open={showRaw}
-                                    onToggle={(e) => setShowRaw((e.target as HTMLDetailsElement).open)}
-                                    className="rounded-lg border border-surface-border/50"
-                                >
-                                    <summary className="flex items-center justify-between gap-2 px-3 py-2 cursor-pointer text-[10px] font-semibold text-slate-500 uppercase tracking-widest select-none">
-                                        <span className="flex items-center gap-1.5">
-                                            <ChevronDown className={`w-3.5 h-3.5 transition-transform ${showRaw ? 'rotate-0' : '-rotate-90'}`} />
-                                            Raw JSON ({rows.length} rows)
-                                        </span>
-                                        <button
-                                            onClick={(e) => {
-                                                e.preventDefault();
-                                                copyRaw();
-                                            }}
-                                            className="inline-flex items-center gap-1.5 px-2 py-1 bg-surface-light hover:bg-surface border border-surface-border/60 text-slate-300 rounded text-[10px] font-medium normal-case"
-                                            type="button"
-                                        >
-                                            <Copy className="w-3 h-3" />
-                                            Copy
-                                        </button>
-                                    </summary>
-                                    <pre className="bg-surface-dark/60 border-t border-surface-border/50 p-3 text-[10px] text-slate-400 overflow-x-auto max-h-80">
-                                        {rawJson}
-                                    </pre>
-                                </details>
+                                {/* Collapsible Raw Scraped JSON */}
+                                {rows && (
+                                    <details
+                                        open={showRaw}
+                                        onToggle={(e) => setShowRaw((e.target as HTMLDetailsElement).open)}
+                                        className="rounded-lg border border-surface-border/50"
+                                    >
+                                        <summary className="flex items-center justify-between gap-2 px-3 py-2 cursor-pointer text-[10px] font-semibold text-slate-500 uppercase tracking-widest select-none">
+                                            <span className="flex items-center gap-1.5">
+                                                <ChevronDown className={`w-3.5 h-3.5 transition-transform ${showRaw ? 'rotate-0' : '-rotate-90'}`} />
+                                                Raw JSON ({rows.length} rows)
+                                            </span>
+                                            <button
+                                                onClick={(e) => {
+                                                    e.preventDefault();
+                                                    copyRaw();
+                                                }}
+                                                className="inline-flex items-center gap-1.5 px-2 py-1 bg-surface-light hover:bg-surface border border-surface-border/60 text-slate-300 rounded text-[10px] font-medium normal-case"
+                                                type="button"
+                                            >
+                                                <Copy className="w-3 h-3" />
+                                                Copy
+                                            </button>
+                                        </summary>
+                                        <pre className="bg-surface-dark/60 border-t border-surface-border/50 p-3 text-[10px] text-slate-400 overflow-x-auto max-h-80">
+                                            {rawJson}
+                                        </pre>
+                                    </details>
+                                )}
                             </div>
                         )}
                     </div>
@@ -677,83 +1297,86 @@ export default function MarksPage() {
             {/* ═══════════════════════════════════════════════════════════════════
                 PRINTABLE MARKSHEET (3 Pages, 1 Year = 3 Terms per page)
             ═══════════════════════════════════════════════════════════════════ */}
-            {rows && (
-                <div className="hidden print:block bg-white text-black font-sans w-full">
-                    <style dangerouslySetInnerHTML={{
-                        __html: `
-                        @media print {
-                            @page {
-                                size: A4 portrait;
-                                margin: 12mm 14mm 12mm 14mm;
-                            }
-                            html, body {
-                                background: #ffffff !important;
-                                color: #000000 !important;
-                                -webkit-print-color-adjust: exact;
-                                print-color-adjust: exact;
-                            }
-                            .print-page-year {
-                                page-break-after: always;
-                                break-after: page;
-                                page-break-inside: avoid;
-                                break-inside: avoid;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: flex-start;
-                                min-height: 260mm;
-                                box-sizing: border-box;
-                                padding-bottom: 5mm;
-                            }
-                            .print-page-year:last-child {
-                                page-break-after: auto;
-                                break-after: auto;
-                            }
+            <div className="hidden print:block bg-white text-black font-sans w-full">
+                <style dangerouslySetInnerHTML={{
+                    __html: `
+                    @media print {
+                        @page {
+                            size: A4 portrait;
+                            margin: 12mm 14mm 12mm 14mm;
                         }
-                    `}} />
+                        html, body {
+                            background: #ffffff !important;
+                            color: #000000 !important;
+                            -webkit-print-color-adjust: exact;
+                            print-color-adjust: exact;
+                        }
+                        .print-page-year {
+                            page-break-after: always;
+                            break-after: page;
+                            page-break-inside: avoid;
+                            break-inside: avoid;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            min-height: 260mm;
+                            box-sizing: border-box;
+                            padding-bottom: 5mm;
+                        }
+                        .print-page-year:last-child {
+                            page-break-after: auto;
+                            break-after: auto;
+                        }
+                    }
+                `}} />
 
-                    {YEARS.map((year) => {
-                        const groupsForYear = termGroups.filter((g) => year.terms.includes(g.term));
+                {YEARS.map((year) => {
+                    const groupsForYear = termGroups.filter((g) => year.terms.includes(g.term));
 
-                        return (
-                            <div key={year.year} className="print-page-year space-y-6">
-                                {/* Marksheet Top Header on Print */}
-                                <div className="border-b-2 border-black pb-2 mb-2 flex items-center justify-between text-black">
+                    return (
+                        <div key={year.year} className="print-page-year space-y-6">
+                            {/* Top Header on Print */}
+                            <div className="border-b-2 border-black pb-2 mb-2 flex items-center justify-between text-black">
+                                <div>
+                                    <div className="text-sm font-bold tracking-wider uppercase">Statement of Marks</div>
+                                    <div className="text-[10px] text-neutral-700 font-medium">
+                                        {studentName ? `${studentName} · ` : ''}Batch {selectedBatch} · {year.label}
+                                    </div>
+                                </div>
+                                <div className="flex items-center gap-5 text-right">
                                     <div>
-                                        <div className="text-sm font-bold tracking-wider uppercase">Statement of Marks</div>
-                                        <div className="text-[10px] text-neutral-600">Batch {selectedBatch} · {year.label}</div>
+                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">CGPA</span>
+                                        <span className="text-sm font-extrabold font-mono text-black">
+                                            {overall.gpa === null ? '—' : overall.gpa.toFixed(2)}
+                                        </span>
                                     </div>
-                                    <div className="flex items-center gap-5 text-right">
-                                        <div>
-                                            <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">CGPA</span>
-                                            <span className="text-sm font-extrabold font-mono">{overall.gpa === null ? '—' : overall.gpa.toFixed(2)}</span>
-                                        </div>
-                                        <div className="h-6 w-px bg-neutral-300" />
-                                        <div>
-                                            <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Percentage (WAM)</span>
-                                            <span className="text-sm font-extrabold font-mono">{overall.percentage === null ? '—' : `${overall.percentage.toFixed(2)}%`}</span>
-                                        </div>
-                                        <div className="h-6 w-px bg-neutral-300" />
-                                        <div>
-                                            <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Credits</span>
-                                            <span className="text-sm font-extrabold font-mono">{overall.credits}</span>
-                                        </div>
+                                    <div className="h-6 w-px bg-neutral-300" />
+                                    <div>
+                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Percentage (WAM)</span>
+                                        <span className="text-sm font-extrabold font-mono text-black">
+                                            {overall.percentage === null ? '—' : `${overall.percentage.toFixed(2)}%`}
+                                        </span>
                                     </div>
-                                </div>
-
-                                <div className="space-y-5">
-                                    {groupsForYear.map((group) => renderTermTable(group))}
-                                </div>
-
-                                <div className="mt-auto pt-3 text-[10px] text-slate-800 flex items-center justify-between">
-                                    <span>* Denotes Retake</span>
-                                    <span>Page {year.year} of 3</span>
+                                    <div className="h-6 w-px bg-neutral-300" />
+                                    <div>
+                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Credits</span>
+                                        <span className="text-sm font-extrabold font-mono text-black">{overall.credits}</span>
+                                    </div>
                                 </div>
                             </div>
-                        );
-                    })}
-                </div>
-            )}
+
+                            <div className="space-y-5">
+                                {groupsForYear.map((group) => renderTermTable(group))}
+                            </div>
+
+                            <div className="mt-auto pt-3 text-[10px] text-slate-800 flex items-center justify-between">
+                                <span>* Denotes Retake</span>
+                                <span>Page {year.year} of 3</span>
+                            </div>
+                        </div>
+                    );
+                })}
+            </div>
         </>
     );
 }
-
