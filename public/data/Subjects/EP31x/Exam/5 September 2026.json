@@ -1,0 +1,1100 @@
+{
+  "exam_metadata": {
+    "subject_name": "Entrepreneurial Mindset and Methods",
+    "exam_date": "05 September 2026",
+    "batch": "",
+    "attempt": ""
+  },
+  "questions": [
+    {
+      "question_id": "4513871074",
+      "question_text": "A founder starts a meal-kit company not by first commissioning market research, but because she happens to know a farmer personally, has spent years working as a professional chef, and runs a WhatsApp group of home cooks. Which effectuation principle best explains her starting point?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Affordable Loss",
+        "B": "Bird in Hand",
+        "C": "Causal logic driven by market research",
+        "D": "Crazy Quilt"
+      },
+      "correct_option_label": "B",
+      "explanation": "The Bird-in-Hand principle states that entrepreneurs start with their available means: who they are, what they know, and whom they know, rather than waiting for an optimal external goal.",
+      "module": 1
+    },
+    {
+      "question_id": "4513871075",
+      "question_text": "Why does launching an untested cross-border payments startup carry \"uncertainty\" rather than mere \"risk\"?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Because it requires a large amount of capital",
+        "B": "Because payments regulation changes every year",
+        "C": "Because competitors already exist in the space",
+        "D": "Because it has never been attempted before, so no reliable probability distribution of outcomes can be estimated from past data"
+      },
+      "correct_option_label": "D",
+      "explanation": "Under Knightian uncertainty, the future is unknown and uncreated, meaning decision-makers cannot assign objective probability distributions to outcomes based on historical data.",
+      "module": 1
+    },
+    {
+      "question_id": "4513871076",
+      "question_text": "A founder with ₹5 lakh in savings decides she will invest at most ₹1 lakh in her prototype and is comfortable losing all of it, rather than first calculating a target 3x return before investing. This illustrates:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Causal logic",
+        "B": "Bird in Hand",
+        "C": "The pivot-or-persevere decision",
+        "D": "Affordable Loss"
+      },
+      "correct_option_label": "D",
+      "explanation": "The Affordable Loss principle directs founders to commit only what they are willing and able to lose, bounding downside risk rather than pursuing an uncertain expected upside.",
+      "module": 1
+    },
+    {
+      "question_id": "4513871077",
+      "question_text": "An idea for a hyperlocal drone-delivery service has a large, fast-growing addressable market and a strong reason for customers to buy. Still, it requires navigating unresolved airspace regulations, building custom hardware, and years to first revenue. Where does it map on the Market Opportunity Navigator?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Moonshot",
+        "B": "Gold Mine",
+        "C": "Quick Win",
+        "D": "Questionable"
+      },
+      "correct_option_label": "A",
+      "explanation": "Opportunities with high market potential combined with high execution challenges (regulatory hurdles, custom hardware, long lead time) fall into the Moonshot quadrant.",
+      "module": 2
+    },
+    {
+      "question_id": "4513871078",
+      "question_text": "Two founders both target the reusable-packaging market, which has a healthy CAGR. Founder A's idea has low customer urgency and thin margins; Founder B's idea has strong willingness to pay and healthy margins. Why might Founder A's idea still score low on \"Potential\" despite the attractive market CAGR?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Because Potential also depends on the customer's compelling reason to buy and the margin structure, not market growth alone",
+        "B": "Because low challenge automatically implies low potential",
+        "C": "Because Potential is determined only by regulation",
+        "D": "Because CAGR is irrelevant to potential"
+      },
+      "correct_option_label": "A",
+      "explanation": "In the Market Opportunity Navigator, 'Potential' is a multidimensional construct that considers not just macro-market size and growth rate, but also customer urgency, willingness to pay, and margin structure.",
+      "module": 2
+    },
+    {
+      "question_id": "4513871079",
+      "question_text": "An idea-evaluation exercise finds that a generative-AI note-taking tool for a small niche of freelance court reporters has low market potential but is also very easy to build (low challenge, since it uses off-the-shelf APIs). Which quadrant does it fall into, and what is the most appropriate strategic response?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Questionable — abandon the idea immediately",
+        "B": "Quick Win — it can be executed now, but the founder should stay alert, since low barriers to build also make it easy for others to copy or commoditise",
+        "C": "Gold Mine — pursue aggressively with heavy fundraising",
+        "D": "Moonshot — only pursue with strong VC backing"
+      },
+      "correct_option_label": "B",
+      "explanation": "Low potential coupled with low challenge defines a Quick Win, which can be executed rapidly with minimal resources but carries low moats against replication.",
+      "module": 2
+    },
+    {
+      "question_id": "4513871080",
+      "question_text": "A founder sets the following hypothesis before writing any code: \"At least 50 of the first 500 landing-page visitors will enter payment details for a pre-order of a ₹499/month meal-planning app.\" Which principle does this hypothesis best demonstrate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It replaces the need for customer interviews entirely",
+        "B": "It sets a clear, quantified threshold that can objectively fail, avoiding confirmation bias",
+        "C": "It cannot be disproven, so it is a weak hypothesis",
+        "D": "It guarantees product-market fit once the test is run"
+      },
+      "correct_option_label": "B",
+      "explanation": "A disciplined Lean hypothesis must be falsifiable with an explicit, pre-defined quantitative threshold to objectively assess customer demand and prevent confirmation bias.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871081",
+      "question_text": "Why might \"we spoke to 20 potential customers, and they all said they loved the idea\" be a weak basis for deciding to build a product?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Enthusiasm expressed in a conversation is not the same as validated behaviour or willingness to pay; ultimate validation comes from action and field interaction, not opinions alone",
+        "B": "Twenty interviews is always statistically insufficient",
+        "C": "Only surveys, not interviews, are valid research tools",
+        "D": "Interviews should never be used in customer discovery"
+      },
+      "correct_option_label": "A",
+      "explanation": "Stated preferences and polite compliments often result in false positives; rigorous validation requires observed behavior, commitments, or actual willingness to pay.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871082",
+      "question_text": "A team's customer interview script leads with: \"Would you pay ₹2,000 a year for an app that tracks your child's screen time?\" What is the biggest flaw, and what should replace it?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It should be replaced with a Wizard-of-Oz MVP question",
+        "B": "The price mentioned is too low — nothing else is wrong with the question",
+        "C": "It is a speculative, forward-looking question that invites a polite or aspirational answer; it should instead ask about current behaviour, e.g., \"How do you currently manage your child's screen time, and what have you tried?\"",
+        "D": "It should be asked over email instead of in person"
+      },
+      "correct_option_label": "C",
+      "explanation": "Customer discovery interviews should avoid speculative, forward-looking questions and instead investigate past behaviors and concrete workarounds currently used.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871083",
+      "question_text": "Two co-founders are negotiating equity: one contributed the original idea, the other is contributing full-time execution and product-building. Which underlying principle should most influence a fair split?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The idea's originator should always get a majority, since ideas are the scarce resource",
+        "B": "Equity should always be an exact 50-50 split regardless of roles",
+        "C": "Equity should be split according to who negotiates most aggressively",
+        "D": "Equity should track ongoing, sustained contribution and risk-bearing execution, not just who originated the idea"
+      },
+      "correct_option_label": "D",
+      "explanation": "Ideas carry minimal commercial value without sustained execution; equity must reward long-term risk-bearing commitment and value creation over time.",
+      "module": 6
+    },
+    {
+      "question_id": "4513871084",
+      "question_text": "A founding team decides to split equity six months into the venture, once they have seen who is truly committed and how their skills complement each other, rather than on day one. What is the main downside of this \"late split\" approach?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It guarantees a conflict will occur",
+        "B": "It legally invalidates the company's incorporation",
+        "C": "It prolongs uncertainty and can heighten founder anxiety about whether their effort will be fairly rewarded",
+        "D": "It is illegal in most jurisdictions"
+      },
+      "correct_option_label": "C",
+      "explanation": "While a late equity split allows observation of actual contributions, deferring ownership discussions can generate substantial stress, anxiety, and distrust regarding reward fairness.",
+      "module": 6
+    },
+    {
+      "question_id": "4513871085",
+      "question_text": "A seed-stage SaaS company with 8 months of operating history and inconsistent cash flow approaches a VC for a valuation. Why is a discounted cash flow (DCF) model a poor primary tool here?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "DCF models always overvalue early-stage companies",
+        "B": "VCs are legally barred from using DCF models",
+        "C": "DCF is only ever used for publicly listed companies",
+        "D": "The venture lacks a predictable, forecastable stream of future cash flows and sufficient operating history to anchor the underlying assumptions"
+      },
+      "correct_option_label": "D",
+      "explanation": "DCF requires reliable, multi-year forecasts of future cash flows, which are inherently absent and unreliable for early-stage startups operating under Knightian uncertainty.",
+      "module": 7
+    },
+    {
+      "question_id": "4513871086",
+      "question_text": "A VC decides to invest in a startup working on climate-tech infrastructure for Tier-2 cities — not because it is the largest opportunity on the table, but because it matches the fund's publicly stated area of focus. This behaviour is best explained by:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Random selection of deals",
+        "B": "Herd mentality among investors",
+        "C": "The post-money valuation methodology",
+        "D": "Investment-thesis-driven deal sourcing and screening"
+      },
+      "correct_option_label": "D",
+      "explanation": "VC firms operate based on clear investment theses (mandated by their LPs), prioritizing opportunities that fit their specific domain, thesis, stage, and geographical mandates.",
+      "module": 7
+    },
+    {
+      "question_id": "4513871087",
+      "question_text": "A founder asks customers for 40% advance payment on annual subscriptions, negotiates 60-day payment terms with a key supplier, and delays hiring a full-time CFO in favour of a part-time consultant. Which growth approach is being applied, and what is its central discipline?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Aggressive VC-fuelled scaling; the discipline is maximising valuation",
+        "B": "Bootstrapping; the central discipline is prioritising cash conservation and cash flow over growth-at-all-costs",
+        "C": "Angel-only financing; the discipline is investor relations",
+        "D": "Franchising; the discipline is maintaining brand consistency"
+      },
+      "correct_option_label": "B",
+      "explanation": "Bootstrapping focuses on customer financing (prepayments), favorable supplier credit terms, and converting fixed costs into variable ones to conserve cash runway.",
+      "module": 8
+    },
+    {
+      "question_id": "4513871088",
+      "question_text": "A profitable, moderate-growth home-décor brand turns down a VC term sheet because the founders want to retain full control over product direction and avoid pressure for hyper-growth. What trade-off are they knowingly accepting?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "They eliminate all future business uncertainty",
+        "B": "They automatically forfeit the ability ever to raise VC funding in future",
+        "C": "They retain full autonomy and ownership but may face a more protracted \"liability of smallness\" and slower access to scale-enabling capital",
+        "D": "They gain the \"liability of smallness\" alleviation that VC funding provides, at the cost of speed"
+      },
+      "correct_option_label": "C",
+      "explanation": "Bootstrapped founders keep complete governance autonomy and equity ownership, but they grow at the pace of internal cash flows and retain vulnerability due to small scale.",
+      "module": 8
+    },
+    {
+      "question_id": "4513871089",
+      "question_text": "Which of the following are true about the causal (\"predictive\") logic that most people default to when planning, according to effectuation theory? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It starts from a set of resources available to the entrepreneur",
+        "B": "It attempts to minimise surprises by forecasting outcomes and planning around them",
+        "C": "It works well in stable environments where historical patterns exist to draw on",
+        "D": "It is the only valid approach once a venture has raised its first funding round"
+      },
+      "correct_option_label": "B, C",
+      "explanation": "Causal logic starts with predefined goals and uses predictive forecasting to minimize surprises in stable, measurable environments. In contrast, effectual logic starts with means.",
+      "module": 1
+    },
+    {
+      "question_id": "4513871090",
+      "question_text": "A large retailer tells a founder, \"I won't place an order, but if you can also supply eco-friendly packaging, I'll commit to a 6-month pilot.\" Which responses are consistent with the Crazy Quilt principle? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Politely decline because it deviates from the original product plan",
+        "B": "Treat the retailer as a self-selecting stakeholder and negotiate a co-created pilot around the packaging requirement",
+        "C": "Wait for a lawyer's formal sign-off before responding to any inbound interest",
+        "D": "Use the retailer's commitment to reshape near-term priorities and secure a guaranteed pilot customer"
+      },
+      "correct_option_label": "B, D",
+      "explanation": "The Crazy Quilt principle emphasizes co-creating goals and products with self-selecting stakeholders who provide genuine commitments of resources, orders, or distribution.",
+      "module": 1
+    },
+    {
+      "question_id": "4513871091",
+      "question_text": "Which of the following scenarios exemplify the Affordable Loss principle in practice? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A founder caps monthly ad spend at what the current month's revenue can cover, rather than borrowing to scale faster",
+        "B": "A founder takes a ₹50 lakh loan against her house to maximise the venture's expected return",
+        "C": "A founder quits a well-paying job, accepting the foregone salary as a bounded, acceptable loss",
+        "D": "A founder invests only the ₹50,000 he is willing to lose entirely, rather than calculating an NPV-optimal investment amount"
+      },
+      "correct_option_label": "A, C, D",
+      "explanation": "Affordable loss entails committing only bounded downside amounts that one can afford to lose (salary, pre-allocated savings, current revenues), rather than leveraging debt for expected upside.",
+      "module": 1
+    },
+    {
+      "question_id": "4513871092",
+      "question_text": "Which of the following are legitimate reasons an idea might land in the \"Questionable\" quadrant of the Market Opportunity Navigator? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Regulatory approval is expected to take three years and requires specialised manufacturing",
+        "B": "The idea has a large, fast-growing addressable market",
+        "C": "The market segment is tiny, and margins are thin",
+        "D": "Implementation requires overcoming significant internal technical hurdles"
+      },
+      "correct_option_label": "A, C, D",
+      "explanation": "The Questionable quadrant combines low potential (tiny market, thin margins) with high challenge (complex technical hurdles, lengthy regulatory delays, specialized manufacturing).",
+      "module": 2
+    },
+    {
+      "question_id": "4513871093",
+      "question_text": "Which factors should be weighed when assessing the \"Potential\" dimension of a new idea, as distinct from its \"Challenge\"? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Size and growth rate of the addressable market",
+        "B": "Manufacturing complexity and talent scarcity required to build the product",
+        "C": "The customer's compelling reason to buy relative to alternatives",
+        "D": "Margin structure and volume-driven economics"
+      },
+      "correct_option_label": "A, C, D",
+      "explanation": "'Potential' reflects upside drivers: market size/growth, customer compelling reason to buy, and margins. Manufacturing complexity and talent scarcity fall under 'Challenge'.",
+      "module": 2
+    },
+    {
+      "question_id": "4513871094",
+      "question_text": "Desk-based market research (reports, surveys, secondary data) has real value early in idea evaluation, but which limitations should an entrepreneur keep in mind? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is useful for a first pass at sizing a market or spotting trends",
+        "B": "It cannot fully substitute for direct field interaction and behavioural validation",
+        "C": "Respondents' stated intentions and enthusiasm often diverge from what they will actually pay for or do",
+        "D": "It eliminates the need for any customer interviews"
+      },
+      "correct_option_label": "A, B, C",
+      "explanation": "Secondary research helps understand macro landscapes, but it cannot capture nuanced customer behavior or replace direct field validation where actual willingness to pay is tested.",
+      "module": 2
+    },
+    {
+      "question_id": "4513871095",
+      "question_text": "Which of the following are core reasons Ash Maurya's Lean Canvas is preferred over a traditional lengthy business plan for an early-stage venture? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is the tool of choice of VC and hence the choice of founders as well",
+        "B": "It is a legal requirement for company incorporation",
+        "C": "It can be revised within minutes as new evidence comes in from experiments",
+        "D": "It forces equal attention to both the product/solution side and the market/customer side of the business"
+      },
+      "correct_option_label": "C, D",
+      "explanation": "The Lean Canvas provides a concise 1-page snapshot that balances product and market assumptions and can be iterated rapidly as experimental results emerge.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871096",
+      "question_text": "A founder wants to validate a \"smart plant-watering\" idea before investing in tooling. Which of the following are appropriate MVP techniques at different stages of validation? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Building a front-end app that looks automated, while a team member manually triggers the watering behind the scenes",
+        "B": "Manually watering plants and texting care reminders to 15 early users to learn their routines, before building any hardware",
+        "C": "Immediately manufacturing 5,000 units to achieve economies of scale before any customer feedback",
+        "D": "A landing page with a short demo video and a \"Reserve Yours – ₹99 deposit\" button, to gauge purchase intent"
+      },
+      "correct_option_label": "A, B, D",
+      "explanation": "Options A, B, and D describe valid MVP archetypes (Wizard of Oz, Concierge, and Smoke Test/Sell-before-you-build). Manufacturing 5,000 units upfront violates core lean validation principles.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871097",
+      "question_text": "Which of the following statements about the Customer Development process (Discovery → Validation → Creation → Company Building) are accurate? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Customer Discovery is where the founder tests whether the problem and proposed solution genuinely resonate with real customers",
+        "B": "The process is strictly linear, and a founder should never revisit Discovery once Validation has begun",
+        "C": "Company Building is the stage where the organisation transitions to executing a validated, scalable model",
+        "D": "Customer Validation focuses on proving that a repeatable, scalable sales or demand-generation process exists"
+      },
+      "correct_option_label": "A, C, D",
+      "explanation": "Customer Development is cyclical and iterative, not strictly linear. Customer Discovery tests problem-solution fit, Validation proves repeatable sales models, and Company Building scales execution.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871098",
+      "question_text": "In the Build-Measure-Learn loop, which practices reflect good discipline? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Defining the MVP's minimum feature set based on the specific hypothesis being tested, not on \"nice to have\" features",
+        "B": "Using the \"Learn\" step to make an explicit pivot-or-persevere decision",
+        "C": "Tracking vanity metrics such as social media follower counts as the primary decision input",
+        "D": "Designing metrics that are actionable and tied to the falsifiable hypothesis, rather than just easy to collect"
+      },
+      "correct_option_label": "A, B, D",
+      "explanation": "Disciplined execution of the Lean loop requires testing specific hypotheses with minimal scope, relying on actionable metrics rather than vanity metrics, and driving clear pivot-or-persevere choices.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871099",
+      "question_text": "Which of the following are recognised sources of founder conflict beyond the equity split itself? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Founders coming from different geographical areas of the country",
+        "B": "One founder feeling their contribution or \"heavy lifting\" is unrecognised relative to a co-founder",
+        "C": "Overlapping role boundaries, e.g., both founders trying to control the same product decisions",
+        "D": "A shared, mutually agreed division of decision rights documented in a founders' agreement"
+      },
+      "correct_option_label": "B, C",
+      "explanation": "Under the Three Rs framework (Rewards, Roles, Relationships), perceived imbalance in effort/contribution and overlapping decision turf are major root causes of co-founder breakdown.",
+      "module": 6
+    },
+    {
+      "question_id": "4513871100",
+      "question_text": "Which practices help protect a founding team's equity structure and cap table from long-term damage? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Allowing a departing founder to keep 100% of their unvested shares to preserve goodwill",
+        "B": "Getting the founders' equity agreement reviewed by a lawyer to cover future contingencies",
+        "C": "A vesting schedule that requires equity to be earned progressively, often over four years",
+        "D": "A one-year cliff period before any shares vest, so an early departure forfeits unearned equity"
+      },
+      "correct_option_label": "B, C, D",
+      "explanation": "Legal review, 4-year time-based vesting, and a 1-year cliff prevent deadweight equity and protect active founders if a co-founder leaves prematurely.",
+      "module": 6
+    },
+    {
+      "question_id": "4513871101",
+      "question_text": "Which of the following are valid considerations when deciding whether to split equity early versus late in a venture's life? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A late split can increase anxiety if deferred for too long, since founders don't know what they will ultimately receive",
+        "B": "A late split allows founders to observe actual contribution and work ethic before committing to numbers",
+        "C": "Deferring the equity conversation indefinitely removes all uncertainty for the founders",
+        "D": "An early split works well when co-founders already have a prior track record together and high mutual trust"
+      },
+      "correct_option_label": "A, B, D",
+      "explanation": "Early splits suit teams with established trust, while late splits allow verification of real commitment; however, deferring too long heightens anxiety and uncertainty.",
+      "module": 6
+    },
+    {
+      "question_id": "4513871102",
+      "question_text": "Which statements accurately describe the pre-evaluation (deal sourcing and screening) stage of a VC's investment process? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Missing out on a future breakout company is considered a serious failure that VCs actively try to avoid",
+        "B": "VCs passively wait for founders to cold-email them and rarely use other channels",
+        "C": "VCs actively source deals through incubators, accelerators, and referrals from other VCs and their own networks",
+        "D": "VCs assess sector fit and stage-appropriateness before deciding whether to engage further"
+      },
+      "correct_option_label": "A, C, D",
+      "explanation": "VCs proactively source deals across accelerators and networks, filter for sector/stage alignment, and seek outsized winners driven by fear of missing out on home runs.",
+      "module": 7
+    },
+    {
+      "question_id": "4513871103",
+      "question_text": "During VC due diligence, which of the following would investors typically scrutinise? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The founders' backgrounds, professional reputation, and how former colleagues view them",
+        "B": "Personal financial situation of the founders",
+        "C": "The cleanliness of the startup's accounting practices and financial records",
+        "D": "The astrological compatibility of the co-founders"
+      },
+      "correct_option_label": "A, C",
+      "explanation": "VC due diligence focuses on founder integrity, reputation, reference checks, and the legal/financial hygiene of company records and cap tables.",
+      "module": 7
+    },
+    {
+      "question_id": "4513871104",
+      "question_text": "Which of the following are accurate statements about Venture Capital as an asset class? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Startup equity is highly liquid and can be sold on demand",
+        "B": "Fund returns are typically driven by a small number of outsized \"power law\" winners",
+        "C": "A high failure rate across the portfolio characterises it",
+        "D": "VCs invest primarily in large, stable companies"
+      },
+      "correct_option_label": "B, C",
+      "explanation": "VC returns follow a power law distribution where ~10% of portfolio companies generate the majority of fund profits, while ~65% fail completely, in an illiquid asset class.",
+      "module": 7
+    },
+    {
+      "question_id": "4513871105",
+      "question_text": "Why might a startup burning cash rapidly still be an attractive VC investment? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "In winner-take-most markets, capturing market share and building durable barriers can matter more than near-term profitability",
+        "B": "High burn always signals efficient spending, regardless of outcomes",
+        "C": "Once product-market fit is established, capital can be deployed to scale a de-risked model",
+        "D": "VCs may judge burn as a justified investment in growth rather than a structural flaw, provided unit economics show a credible path to profitability"
+      },
+      "correct_option_label": "A, C, D",
+      "explanation": "In network-effect or winner-take-all markets, aggressive cash burn is acceptable if unit economics are sound and capital is directed toward defensible scale and customer acquisition.",
+      "module": 7
+    },
+    {
+      "question_id": "4513871106",
+      "question_text": "Which of the following are core reasons bootstrapping remains essential even though venture capital receives disproportionate media attention? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Only a small fraction of total entrepreneurial funding actually comes through venture capital",
+        "B": "Bootstrapping enhances profit margins",
+        "C": "Most businesses do not fit the high-growth trajectory that VCs require",
+        "D": "Bootstrapping allows founders to retain full autonomy over decision-making"
+      },
+      "correct_option_label": "A, C, D",
+      "explanation": "Over 95% of businesses scale through internal cash flow and customer revenue rather than VC, enabling founders to maintain full control without needing 10x-50x venture scale.",
+      "module": 8
+    },
+    {
+      "question_id": "4513871107",
+      "question_text": "Which of the following are recognised categories of bootstrapping methods? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Customer-related methods, such as collecting advance payments or charging interest on overdue invoices",
+        "B": "Owner-related financing, such as using personal savings or small loans from family and friends",
+        "C": "Aggressively subsidising prices using investor capital to force competitors out of the market",
+        "D": "Extensive marketing activities to generate leads"
+      },
+      "correct_option_label": "A, B",
+      "explanation": "Standard bootstrapping categories include customer-related financing (advances, early payment discounts) and owner-related financing (personal savings, sweat equity).",
+      "module": 8
+    },
+    {
+      "question_id": "4513871108",
+      "question_text": "Why might a founder deliberately choose to stay bootstrapped even after their venture becomes \"VC fundable\"? (Select all that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Staying reliant on customers and suppliers, rather than investors, preserves founder autonomy in decision-making",
+        "B": "Premature outside funding can create a false sense of security or complacency",
+        "C": "Bootstrapping enforces financial discipline and frugality that can sharpen the path to product-market fit",
+        "D": "Bootstrapped ventures are legally prohibited from ever raising VC funding later"
+      },
+      "correct_option_label": "A, B, C",
+      "explanation": "Founders frequently preserve operational autonomy, retain economic upside, and avoid the premature scaling traps often introduced by external investor capital.",
+      "module": 8
+    },
+    {
+      "question_id": "4513871109",
+      "question_text": "Effectual logic begins with a predefined revenue goal and works backwards to identify the resources needed.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "B",
+      "explanation": "Starting with a predefined goal and determining the means to reach it defines causal logic. Effectual logic starts with available means and allows goals to emerge.",
+      "module": 1
+    },
+    {
+      "question_id": "4513871110",
+      "question_text": "Under genuine uncertainty, an entrepreneur cannot rely purely on historical data because the future lacks a comparable past pattern.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "A",
+      "explanation": "Knightian uncertainty differs from risk because no historical reference classes or predictive data exist, requiring adaptive and effectual approaches.",
+      "module": 1
+    },
+    {
+      "question_id": "4513871111",
+      "question_text": "A high market CAGR alone guarantees that any idea addressing that market has high \"Potential.\"",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "B",
+      "explanation": "Market CAGR does not ensure venture potential; an idea may suffer from weak unit economics, low customer urgency, or commoditized low margins.",
+      "module": 2
+    },
+    {
+      "question_id": "4513871112",
+      "question_text": "The Market Opportunity Navigator's \"Gold Mine\" quadrant combines high potential with low challenge.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "A",
+      "explanation": "A Gold Mine represents an attractive market opportunity with high upside potential and low barriers/execution challenges.",
+      "module": 2
+    },
+    {
+      "question_id": "4513871113",
+      "question_text": "A hypothesis that can never be proven wrong is a strong, reliable basis for validating a business idea.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "B",
+      "explanation": "Lean validation requires hypotheses to be falsifiable; an unfalsifiable hypothesis cannot provide objective learning or prevent confirmation bias.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871114",
+      "question_text": "The Unique Value Proposition sits at the centre of the Lean Canvas, bridging the product side and the market side.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "A",
+      "explanation": "The Unique Value Proposition block occupies the center of Ash Maurya's Lean Canvas, connecting the problem/solution blocks on the left with customer/channel blocks on the right.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871115",
+      "question_text": "Once a venture reaches Product-Market Fit, it is automatically profitable.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "B",
+      "explanation": "Product-Market Fit reflects proven customer demand and value resonance, but overall profitability depends on unit economics, operational costs, and sustainable pricing models.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871116",
+      "question_text": "Splitting equity extremely early, before founders know each other's true contributions, carries zero risk of misallocation.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "B",
+      "explanation": "Splitting equity too early carries substantial misallocation risk if one co-founder underperforms, changes commitment, or departs shortly after incorporation.",
+      "module": 6
+    },
+    {
+      "question_id": "4513871117",
+      "question_text": "Overlapping role boundaries and \"turf\" disputes between founders are a recognised source of conflict distinct from the equity split itself.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "A",
+      "explanation": "Roles and decision rights form one of the Three Rs of founder conflict; ambiguous operational turf frequently leads to friction independent of equity distribution.",
+      "module": 6
+    },
+    {
+      "question_id": "4513871118",
+      "question_text": "A vesting cliff ensures that a founder who leaves within the cliff period walks away with none of their unvested shares",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "A",
+      "explanation": "A vesting cliff (typically one year) requires founders to complete minimum tenure before any equity vests, forfeiting all shares if they depart prior.",
+      "module": 6
+    },
+    {
+      "question_id": "4513871119",
+      "question_text": "VCs typically prefer founders who have raised money from 30–40 small angel investors, because a crowded cap table signals popularity.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "B",
+      "explanation": "VCs dislike crowded cap tables because managing numerous minority angel investors complicates shareholder governance, consent rights, and future financings.",
+      "module": 7
+    },
+    {
+      "question_id": "4513871120",
+      "question_text": "Deal sourcing, screening, and post-financing support can all be happening in parallel across a VC's portfolio at any given time.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "A",
+      "explanation": "VC firms run continuous multi-stage operations concurrently across their fund lifecycle, reviewing incoming pipeline while advising existing portfolio investments.",
+      "module": 7
+    },
+    {
+      "question_id": "4513871121",
+      "question_text": "Valuation is a purely objective, formulaic exercise for early-stage ventures with little operating history.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "B",
+      "explanation": "Early-stage valuation is subjective and negotiated, heavily driven by qualitative signals, founder pedigree, sector multiples, and market sentiment rather than pure formulas.",
+      "module": 7
+    },
+    {
+      "question_id": "4513871122",
+      "question_text": "Bootstrapping means eliminating all forms of outside financing, with zero exceptions.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "B",
+      "explanation": "Bootstrapping focuses on minimizing external institutional equity and debt, but founders may still utilize small personal loans, customer advances, or trade credit.",
+      "module": 8
+    },
+    {
+      "question_id": "4513871123",
+      "question_text": "Converting fixed costs into variable costs is a recognised bootstrapping strategy to reduce upfront cash outlay.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "TRUE",
+        "B": "FALSE"
+      },
+      "correct_option_label": "A",
+      "explanation": "Shifting fixed overhead to variable expenses (e.g., leasing rather than buying equipment, hiring contract consultants) reduces CAPEX and protects cash runway.",
+      "module": 8
+    },
+    {
+      "question_id": "4513871125",
+      "question_text": "Case # 1 - The \"NeevRoots\" Beginning\n\nReva and Ismail, engineering-college batchmates, watched roadside vegetable vendors in their hometown throw away nearly a third of their produce every week for lack of cold storage. Neither of them had ever run a business. Still, Reva had grown up helping in her family's small food-processing unit and knew basic dehydration and packaging techniques. At the same time, Ismail had spent two years managing last-mile logistics for a delivery startup and had a network of local kirana store owners. Rather than commissioning a market study or writing a five-year financial model, they started experimenting with what they already had: Reva's food-processing know-how, Ismail's delivery contacts, and a small conference-room table.\n\nThey agreed upfront that they would risk no more than ₹40,000 of their combined savings — roughly what each was willing to lose without derailing their lives — and would stop and reassess if that ran out. Early on, a local vegetable wholesaler who had heard about their idea walked in and offered surplus produce for free in exchange for a share of future revenue if the dried-vegetable packets sold well; Reva and Ismail restructured their initial plan around this offer rather than turning it down to protect their \"original\" concept. Then, an unseasonal early monsoon disrupted their planned drying process for two weeks — instead of shutting down, they used the enforced pause to experiment with a new spiced, ready-to-cook dried-vegetable mix, which became their most popular product line six months later.\n\nReva and Ismail's decision to begin with their existing food-processing knowledge, logistics contacts, and a conference table — rather than first defining a target revenue goal — best illustrates which effectuation principle?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Affordable Loss",
+        "B": "Lemonade",
+        "C": "Causal logic",
+        "D": "Bird in Hand"
+      },
+      "correct_option_label": "D",
+      "explanation": "Starting from existing competencies, traits, and networks (what they know and whom they know) directly demonstrates the Bird-in-Hand principle.",
+      "module": 1
+    },
+    {
+      "question_id": "4513871126",
+      "question_text": "Refer to Case # 1 - The \"NeevRoots\" Beginning in Question ID 4513871125 for context.\n\nCapping their combined risk at ₹40,000 — an amount they were willing to lose without derailing their lives — reflects the Affordable Loss principle. What would have most contradicted this principle?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Treating the cap as a decision checkpoint rather than a target to exceed",
+        "B": "Taking a large loan against family property to maximise their projected 3-year revenue before any validation",
+        "C": "Limiting spending to what they could personally absorb",
+        "D": "Stopping to reassess once the ₹40,000 was spent"
+      },
+      "correct_option_label": "B",
+      "explanation": "Leveraging personal or family assets to pursue an uncertain expected return directly contradicts bounding downside exposure via Affordable Loss.",
+      "module": 1
+    },
+    {
+      "question_id": "4513871127",
+      "question_text": "Refer to Case # 1 - The \"NeevRoots\" Beginning in Question ID 4513871125 for context.\n\nWhen the wholesaler offered free surplus produce in exchange for a future revenue share, Reva and Ismail restructured their plan around this offer instead of rejecting it to \"protect\" their original idea. This response demonstrates:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The Affordable Loss principle",
+        "B": "The Crazy Quilt principle — co-creating with a self-selecting stakeholder who commits real resources",
+        "C": "A break from effectual reasoning, since it changed their original plan",
+        "D": "Causal logic"
+      },
+      "correct_option_label": "B",
+      "explanation": "Embracing a self-selecting stakeholder who commits tangible resources (free surplus produce) to re-shape the venture aligns with the Crazy Quilt partnership principle.",
+      "module": 1
+    },
+    {
+      "question_id": "4513871128",
+      "question_text": "Refer to Case # 1 - The \"NeevRoots\" Beginning in Question ID 4513871125 for context.\n\nUsing the enforced monsoon disruption to develop a new spiced, ready-to-cook product line — which went on to become their best-seller — is a direct application of:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The Affordable Loss principle",
+        "B": "Bird in Hand",
+        "C": "The Lemonade principle — leveraging an unplanned surprise as a source of opportunity",
+        "D": "A causal contingency plan drawn up in advance"
+      },
+      "correct_option_label": "C",
+      "explanation": "The Lemonade principle involves transforming unplanned external surprises and constraints into valuable new entrepreneurial directions.",
+      "module": 1
+    },
+    {
+      "question_id": "4513871129",
+      "question_text": "Refer to Case # 1 - The \"NeevRoots\" Beginning in Question ID 4513871125 for context.\n\nA well-meaning mentor advises Reva and Ismail to pause operations, commission a detailed market-sizing study of the dried-vegetable category, forecast three years of revenue, and only then decide how to proceed. Why would strictly following this advice run counter to the effectual approach they have used so far?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is illegal to operate without a formal market study",
+        "B": "Effectuation requires that founders never do any research at all",
+        "C": "Market studies are always inaccurate",
+        "D": "It substitutes prediction and planning for action under genuine uncertainty, delaying the very market feedback (like the wholesaler's offer) that has been driving their venture's progress"
+      },
+      "correct_option_label": "D",
+      "explanation": "Effectual logic prioritizes non-predictive control and direct experiential learning over speculative, long-range forecasting models.",
+      "module": 1
+    },
+    {
+      "question_id": "4513871131",
+      "question_text": "Case # 2 - FreshCrate\n\nFreshCrate is an innovative early-stage venture focused on transforming the way residents of Tier-1 Indian cities access their fresh produce. The company plans to deliver weekly boxes filled with farm-fresh, pre-portioned vegetables directly to apartment complexes, effectively reducing the inefficiencies caused by multiple layers of intermediaries commonly seen in the traditional mandi system.\n\nThe founder, who has a background as a supply-chain analyst, has carefully articulated the concept using a Lean Canvas framework. This one-page overview highlights key pain points, particularly inconsistent quality from local vendors and the significant time required to haggle and travel to procure fresh produce. To address these issues, FreshCrate aims to offer a curated selection of vegetables that have been meticulously tested for chemical residues, ensuring both quality and safety for consumers.\n\nIn terms of market reach, the company's strategy involves forming partnerships with resident welfare associations (RWAs) within various apartment complexes. This approach not only facilitates access to a concentrated customer base but also enhances community engagement through familiar organisational frameworks.\n\nBefore making substantial investments in cold-storage vans or securing long-term contracts with farmers, the founder is taking a cautious and cost-effective approach to validate demand for the service. This involves pilot testing to gauge interest and refine the product offering based on real customer feedback. Additionally, she is deliberating on which target demographic to prioritise as the initial beachhead segment: working professionals who may value convenience and time savings, or retired residents who might place a higher emphasis on quality and health.\n\nFurthermore, she recognises the need to gain a deeper understanding of daily sourcing operations. This insight will be crucial for shaping the supply chain logistics and ultimately building any necessary technology to streamline the process as the business scales.\n\nOn FreshCrate's Lean Canvas, \"partnerships with apartment RWAs\" belongs under which block?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Key Metrics",
+        "B": "Channels",
+        "C": "Unique Value Proposition",
+        "D": "Cost Structure"
+      },
+      "correct_option_label": "B",
+      "explanation": "Channels represent the direct pathways, partnerships, and mechanisms used to reach and deliver value to target customer segments.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871132",
+      "question_text": "Refer to Case # 2 - FreshCrate in Question ID 4513871131 for context.\n\nBefore investing in cold-storage vans, the founder wants to test whether apartment residents will actually commit to a weekly vegetable box. Which action is the most appropriate Smoke Test?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Building a fully automated logistics app with route optimisation before any customer has committed",
+        "B": "Creating a simple landing page describing the weekly box with sample photos and a \"Reserve your Box – pay ₹99 refundable deposit\" button, shared in RWA WhatsApp groups",
+        "C": "Signing a 3-year exclusive contract with a large farm cooperative",
+        "D": "Hiring a 10-person delivery team on permanent payroll"
+      },
+      "correct_option_label": "B",
+      "explanation": "A Smoke Test measures authentic customer purchase intent through a landing page and refundable pre-order deposit prior to committing capital to infrastructure.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871133",
+      "question_text": "Refer to Case # 2 - FreshCrate in Question ID 4513871131 for context.\n\nWhich customer segment is most likely to be the strongest early adopter for FreshCrate, and why?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Retired residents who already visit the local market daily and enjoy selecting vegetables themselves",
+        "B": "Residents who live alone and cook only once a week",
+        "C": "Apartment security staff, since they are always on-site to receive deliveries",
+        "D": "Busy working professionals who are acutely aware of wasting time haggling over vegetable quality and are actively seeking a faster, more reliable alternative"
+      },
+      "correct_option_label": "D",
+      "explanation": "Early adopters have high problem awareness, experience acute friction with existing alternatives, and actively search for a solution that saves time and guarantees quality.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871134",
+      "question_text": "Refer to Case # 2 - FreshCrate in Question ID 4513871131 for context.\n\nTo deeply understand day-to-day sourcing operations before building any app, the founder personally sources and hand-delivers boxes to 10 households for the first month, adjusting the offering based on direct interaction. This is an example of:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A Concierge MVP — manually delivering the service to observe customer needs and workflows closely",
+        "B": "A Wizard of Oz MVP",
+        "C": "Customer Validation, the second milestone in the customer development process",
+        "D": "A high-fidelity prototype"
+      },
+      "correct_option_label": "A",
+      "explanation": "A Concierge MVP involves manually performing the entire service in a high-touch, explicit manner to gain direct qualitative insights into workflows and user requirements.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871135",
+      "question_text": "Refer to Case # 2 - FreshCrate in Question ID 4513871131 for context.\n\nWhich falsifiable hypothesis would best help FreshCrate validate the problem it claims to solve, before it builds any technology?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "\"FreshCrate will eventually be profitable.\"",
+        "B": "\"Vegetables are important to Indian households.\"",
+        "C": "\"Everyone dislikes going to the market.\"",
+        "D": "\"At least 15 of the first 50 households surveyed will report they have skipped or complained about vegetable quality from local vendors in the past month.\""
+      },
+      "correct_option_label": "D",
+      "explanation": "A robust falsifiable hypothesis sets measurable, observable conditions and a specific failure threshold evaluating actual customer behavior.",
+      "module": 3
+    },
+    {
+      "question_id": "4513871137",
+      "question_text": "Case # 3 - MedRoute & Meridian Capital\n\nMedRoute is an innovative health-tech startup that has been making strides in the healthcare sector for the past two years. Their platform serves as a vital link between diagnostic laboratories and hospitals, facilitating the swift transport of samples for urgent testing. This model has proven successful, allowing MedRoute to achieve Product-Market Fit in three major cities, where they have established a strong foothold.\n\nCurrently, the startup is achieving an impressive annualised revenue run rate of ₹2 crore. However, to fuel their ambitious plans for expansion into five additional cities, develop an electric fleet, and grow their operational team, MedRoute is facing significant financial challenges. The company is currently burning through ₹15 lakh in net cash each month, which has put pressure on their resources. At present, the founders have ₹75 lakh remaining in the bank, necessitating strategic financial planning.\n\nTo support their growth trajectory, MedRoute is in negotiations for a Series A funding round, seeking ₹8 crore from Meridian Capital, a venture capital fund with a strong focus on healthcare investments. They have agreed on a pre-money valuation of ₹32 crore. Before finalising the term sheet, the diligent team at Meridian Capital is investing six weeks to review MedRoute's accounting records meticulously. They are also engaging in conversations with former colleagues of both co-founders to gain insights into their backgrounds and assessing the makeup of MedRoute’s cap table by identifying any previous investors involved.\n\nIf MedRoute does not close the round and continues burning ₹15 lakh a month against its current ₹75 lakh bank balance, what is its exact cash runway?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "5 months",
+        "B": "10 months",
+        "C": "6 months",
+        "D": "3 months"
+      },
+      "correct_option_label": "A",
+      "explanation": "Cash Runway is calculated as current cash reserves divided by net monthly burn rate:\n$$\\text{Runway} = \\frac{\\text{₹75 lakh}}{\\text{₹15 lakh/month}} = 5\\text{ months}$$",
+      "module": 7
+    },
+    {
+      "question_id": "4513871138",
+      "question_text": "Refer to Case # 3 - MedRoute & Meridian Capital in Question ID 4513871137 for context.\n\nIf Meridian Capital invests ₹8 crore at a ₹32 crore Pre-Money Valuation, what will MedRoute's Post-Money Valuation be, and what ownership percentage will Meridian hold immediately after closing?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹40 crore Post-Money; Meridian holds 10%",
+        "B": "₹24 crore Post-Money; Meridian holds 33%",
+        "C": "₹32 crore Post-Money; Meridian holds 25%",
+        "D": "₹40 crore Post-Money; Meridian holds 20%"
+      },
+      "correct_option_label": "D",
+      "explanation": "Post-Money Valuation and ownership percentage are calculated as:\n$$\\text{Post-Money} = \\text{Pre-Money} + \\text{Investment} = ₹32\\text{ Cr} + ₹8\\text{ Cr} = ₹40\\text{ Cr}$$\n$$\\text{Ownership \\%} = \\frac{\\text{Investment}}{\\text{Post-Money}} = \\frac{₹8\\text{ Cr}}{₹40\\text{ Cr}} = 20\\%$$",
+      "module": 7
+    },
+    {
+      "question_id": "4513871139",
+      "question_text": "Refer to Case # 3 - MedRoute & Meridian Capital in Question ID 4513871137 for context.\n\nDuring due diligence, Meridian's team specifically checks how many prior investors already sit on MedRoute's cap table. Why does a crowded cap table (e.g., 30–40 small angel investors) tend to concern VCs?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It legally prevents any further fundraising",
+        "B": "It has no bearing on the investment decision",
+        "C": "It automatically increases the company's valuation",
+        "D": "A large number of small stakeholders with a seat at the table can complicate governance and decision-making, and may signal weak early fundraising discipline"
+      },
+      "correct_option_label": "D",
+      "explanation": "Too many individual angel shareholders can create voting deadlocks, complicate information rights, and create significant corporate governance friction.",
+      "module": 7
+    },
+    {
+      "question_id": "4513871140",
+      "question_text": "Refer to Case # 3 - MedRoute & Meridian Capital in Question ID 4513871137 for context.\n\nMedRoute is burning cash well beyond its current revenue while pursuing rapid multi-city expansion. Which explanation best justifies why Meridian might still find this an attractive investment?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Burn rate is irrelevant to VC decision-making",
+        "B": "Meridian plans to convert MedRoute into a public company immediately",
+        "C": "High burn always proves disciplined spending",
+        "D": "In a market where being first to build city-level rider and lab networks creates durable advantages, capturing share ahead of competitors can outweigh near-term profitability, provided the underlying unit economics are sound"
+      },
+      "correct_option_label": "D",
+      "explanation": "High burn is justified when deploying capital into network density that produces defensible local economies of scale, assuming positive underlying contribution margins.",
+      "module": 7
+    },
+    {
+      "question_id": "4513871141",
+      "question_text": "Refer to Case # 3 - MedRoute & Meridian Capital in Question ID 4513871137 for context.\n\nBeyond the ₹8 crore cheque, which of the following is the most accurate description of the additional value Meridian Capital is likely to bring to MedRoute as a lead investor?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Meridian will use its network to help recruit senior operational talent, open doors to hospital-chain partnerships, and provide board-level strategic guidance drawn from other portfolio companies",
+        "B": "Meridian will take over MedRoute's daily bookkeeping and administrative filings",
+        "C": "Meridian's role ends once the wire transfer is complete",
+        "D": "Meridian will personally manage MedRoute's fleet operations"
+      },
+      "correct_option_label": "A",
+      "explanation": "Top-tier VCs provide strategic value-add including executive talent recruiting, commercial business development introductions, and governance support.",
+      "module": 7
+    },
+    {
+      "question_id": "4513871143",
+      "question_text": "Case # 4 - Ansh, Priya, and the Equity Conversation\n\nAnsh and Priya, two close friends with a shared vision, are embarking on an exciting journey as co-founders of a B2B SaaS venture designed to help small manufacturers effectively manage their inventory. Ansh, with his strengths in sales, fundraising, and partnership development, is eager to steer the company toward growth. Meanwhile, Priya, a talented software engineer known for her innovative thinking, is tasked with building and leading the entire product and engineering roadmap, a responsibility she knows will demand her creativity and hard work.\n\nAfter six weeks of brainstorming and groundwork, they find themselves sitting across from each other in a cosy café, the air thick with anticipation as they prepare to discuss the crucial topic of equity distribution in their new endeavour. Ansh leans forward, advocating for a 60-40 split in his favour. He confidently cites his role in conceiving the original idea during an insightful conversation with a factory owner, emphasising his belief that having majority control will empower him to make partnership decisions swiftly without constant deliberation.\n\nHowever, Priya is far from convinced. With a determined expression, she counters his proposal, asserting that while the initial idea is valuable, it represents just the beginning of their journey. She passionately explains that the real worth of the venture will stem from the working product she will dedicate the upcoming year to building and refining. It’s the innovative features and user experience she plans to create that will ultimately attract customers and impress investors.\n\nAs the conversation grows tense, both friends reflect on the stakes of their collaboration. Finally, recognising the importance of a balanced resolution, they decide to consult a mutual mentor, someone whose experience can provide them with valuable insights as they navigate this pivotal moment. They also address the difficult question of what would happen if one of them were to leave the company early, ensuring they lay a solid foundation for their partnership moving forward.\n\nWhat is the most significant risk of Ansh's proposed 60-40 split, based on the venture's division of labour?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It would force the company to remain unregistered",
+        "B": "It would legally prevent Priya from owning the source code she writes",
+        "C": "It risks under-rewarding the execution-heavy, ongoing technical contribution the venture depends on, which can demotivate the very co-founder responsible for building the product",
+        "D": "It would prevent Ansh from ever raising outside capital"
+      },
+      "correct_option_label": "C",
+      "explanation": "Under-rewarding a core technical co-founder who bears the intensive burden of building the software product can demotivate them and trigger co-founder departure.",
+      "module": 6
+    },
+    {
+      "question_id": "4513871144",
+      "question_text": "Refer to Case # 4 - Ansh, Priya, and the Equity Conversation in Question ID 4513871143 for context.\n\nPriya's argument that \"the idea is just a starting point; the product is what creates value\" reflects which widely-held principle in venture building?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Sales-led founders never deserve significant equity",
+        "B": "Execution — not the raw idea — is the primary risk-bearing activity that converts a concept into commercial value",
+        "C": "Ideas are legally protected and therefore inherently valuable",
+        "D": "Technical co-founders are automatically entitled to majority equity"
+      },
+      "correct_option_label": "B",
+      "explanation": "Entrepreneurship views ideas as cheap; value resides almost entirely in the prolonged, risk-bearing execution required to transform that idea into a viable commercial product.",
+      "module": 6
+    },
+    {
+      "question_id": "4513871145",
+      "question_text": "Refer to Case # 4 - Ansh, Priya, and the Equity Conversation in Question ID 4513871143 for context.\n\nAnsh worries that an even 50-50 split could lead to deadlocks on major decisions. Which governance mechanism would let Ansh and Priya keep an equal economic split while still resolving decision-making gridlock?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Avoiding any major decisions until one founder gives up equity",
+        "B": "Appointing a mutually trusted, independent advisor or board member with a tie-breaking vote, defined in advance in their founders' agreement",
+        "C": "Simply giving Ansh 51% equity",
+        "D": "Flipping a coin each time a disagreement arises"
+      },
+      "correct_option_label": "B",
+      "explanation": "Formal decision rights can be detached from equity ownership by appointing an independent board member or advisor with tie-breaking voting power in deadlock situations.",
+      "module": 6
+    },
+    {
+      "question_id": "4513871146",
+      "question_text": "Refer to Case # 4 - Ansh, Priya, and the Equity Conversation in Question ID 4513871143 for context.\n\nTo protect the company if either founder leaves early with a large, unearned equity stake, what should Ansh and Priya build into their equity agreement?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A multi-year vesting schedule with a cliff period (commonly one year), so equity is earned progressively over time",
+        "B": "A clause guaranteeing that whoever leaves keeps their full original stake regardless of tenure",
+        "C": "An immediate, fully vested grant of shares to both founders at incorporation, with no conditions",
+        "D": "No agreement at all, to keep things informal between friends"
+      },
+      "correct_option_label": "A",
+      "explanation": "A standard 4-year vesting schedule with a 1-year cliff ensures equity is earned through continuous service, protecting the venture from cap table deadweight if a founder departs.",
+      "module": 6
+    },
+    {
+      "question_id": "4513871147",
+      "question_text": "Refer to Case # 4 - Ansh, Priya, and the Equity Conversation in Question ID 4513871143 for context.\n\nAnsh and Priya decide to bring in a mutual mentor rather than letting the disagreement fester or rushing to a decision under stress. What best explains why this is good practice for equity conversations specifically?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Mentors should only be consulted after the equity agreement is signed",
+        "B": "Equity conversations should always be resolved within a single 10-minute sitting to avoid overthinking",
+        "C": "Bringing in outside opinions is unnecessary once both founders are legally adults",
+        "D": "Equity splits benefit from being discussed over time, with input from a trusted neutral party, rather than being rushed through under pressure, since hasty or one-sided splits are a common source of long-term founder resentment"
+      },
+      "correct_option_label": "D",
+      "explanation": "Neutral advisors provide objective perspectives and de-escalate emotional friction, helping co-founders establish fair, sustainable ownership structures.",
+      "module": 6
+    },
+    {
+      "question_id": "4513871148",
+      "question_text": "Match the Market Opportunity Navigator quadrants (1–4) with their descriptions (A–D):\n\n| Quadrant | Description |\n| :--- | :--- |\n| 1. Gold Mine | A. High potential, high challenge — revolutionary but resource-intensive and risky |\n| 2. Moonshot | B. Low potential, high challenge — likely not worth the effort without a major rethink |\n| 3. Quick Win | C. High potential, low challenge — pursue without hesitation |\n| 4. Questionable | D. Low potential, low challenge — easy to execute, but modest and easily competed away |",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1-C, 2-A, 3-D, 4-B",
+        "B": "1-A, 2-C, 3-B, 4-D",
+        "C": "1-D, 2-A, 3-C, 4-B",
+        "D": "1-C, 2-A, 3-B, 4-D"
+      },
+      "correct_option_label": "A",
+      "explanation": "1 (Gold Mine) = High potential, low challenge (C); 2 (Moonshot) = High potential, high challenge (A); 3 (Quick Win) = Low potential, low challenge (D); 4 (Questionable) = Low potential, high challenge (B).",
+      "module": 2
+    },
+    {
+      "question_id": "4513871149",
+      "question_text": "Match the MVP types (1–4) with their descriptions (A–D):\n\n| MVP Type | Description |\n| :--- | :--- |\n| 1. Smoke Test | A. A front-end interface that appears automated, while a human manually performs the backend work |\n| 2. Concierge MVP | B. A simple landing page or ad measuring purchase intent before anything is built |\n| 3. Wizard of Oz MVP | C. A rough mock-up, video, or sketch used to gauge interest without functional engineering |\n| 4. Low-Fidelity Prototype | D. The founder personally delivers the core service to a small group of users to learn their workflows |",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1-B, 2-A, 3-D, 4-C",
+        "B": "1-C, 2-D, 3-A, 4-B",
+        "C": "1-D, 2-B, 3-C, 4-A",
+        "D": "1-B, 2-D, 3-A, 4-C"
+      },
+      "correct_option_label": "D",
+      "explanation": "1 (Smoke Test) = landing page/ad measuring purchase intent (B); 2 (Concierge) = founder manually delivers service directly (D); 3 (Wizard of Oz) = faked automation on the backend (A); 4 (Low-Fidelity) = rough mockup/sketch (C).",
+      "module": 3
+    },
+    {
+      "question_id": "4513871150",
+      "question_text": "Match the equity / founder-governance terms (1–4) with their applications (A–D):\n\n| Term | Application |\n| :--- | :--- |\n| 1. Cliff Period | A. A record of who owns what percentage of a company's shares |\n| 2. Vesting Schedule | B. A block of equity set aside to attract and retain early, high-impact employees |\n| 3. ESOP Pool | C. A minimum tenure milestone (commonly one year) before any equity is earned |\n| 4. Cap Table | D. A multi-year timeline over which equity is earned progressively through continued contribution |",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1-A, 2-B, 3-C, 4-D",
+        "B": "1-D, 2-C, 3-A, 4-B",
+        "C": "1-C, 2-A, 3-D, 4-B",
+        "D": "1-C, 2-D, 3-B, 4-A"
+      },
+      "correct_option_label": "D",
+      "explanation": "1 (Cliff Period) = minimum tenure before any equity vests (C); 2 (Vesting Schedule) = multi-year timeline for earning equity (D); 3 (ESOP Pool) = equity reserved for employees (B); 4 (Cap Table) = record of share ownership percentages (A).",
+      "module": 6
+    },
+    {
+      "question_id": "4513871151",
+      "question_text": "Match the VC investment-process stages (1–4) with their primary activities (A–D):\n\n| Stage | Primary Activity |\n| :--- | :--- |\n| 1. Deal Sourcing & Screening | A. Verifying founders' backgrounds, financial records, and the existing cap table before committing |\n| 2. Due Diligence | B. Actively identifying promising companies through networks, incubators, and referrals |\n| 3. Deal Structuring & Valuation | C. Helping the portfolio company recruit talent and make introductions after the investment closes |\n| 4. Post-Financing Support | D. Negotiating the price and terms at which the investment will be made |",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1-B, 2-A, 3-D, 4-C",
+        "B": "1-C, 2-A, 3-B, 4-D",
+        "C": "1-A, 2-B, 3-C, 4-D",
+        "D": "1-B, 2-D, 3-A, 4-C"
+      },
+      "correct_option_label": "A",
+      "explanation": "1 (Sourcing & Screening) = finding companies via networks (B); 2 (Due Diligence) = auditing records and founders (A); 3 (Structuring & Valuation) = negotiating investment terms (D); 4 (Post-Financing) = post-close strategic guidance/hiring (C).",
+      "module": 7
+    },
+    {
+      "question_id": "4513871152",
+      "question_text": "Match the bootstrapping method categories (1–4) with example tactics (A–D):\n\n| Category | Example Tactic |\n| :--- | :--- |\n| 1. Customer-related methods | A. Sharing office space or equipment with another small business to split costs |\n| 2. Owner-related financing | B. Taking a small, low- or no-interest loan from family or co-owners' personal savings |\n| 3. Joint utilisation of resources | C. Requesting a larger advance payment from customers before delivering the product |\n| 4. Delaying/deferring payment | D. Negotiating longer credit periods with suppliers before invoices are due |",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1-B, 2-C, 3-D, 4-A",
+        "B": "1-C, 2-A, 3-D, 4-B",
+        "C": "1-D, 2-A, 3-B, 4-C",
+        "D": "1-C, 2-B, 3-A, 4-D"
+      },
+      "correct_option_label": "D",
+      "explanation": "1 (Customer-related) = customer advance payments (C); 2 (Owner-related) = personal/family loans (B); 3 (Joint utilisation) = sharing office/equipment (A); 4 (Delaying payment) = negotiating longer supplier credit periods (D).",
+      "module": 8
+    },
+    {
+      "question_id": "4513871153",
+      "question_text": "Arrange the typical effectual entrepreneurial journey in the correct sequence:\n1. Interact with stakeholders who commit resources based on the founder's means\n2. Identify current means (who I am, what I know, whom I know)\n3. Take initial action using only those means\n4. Goals and the venture itself are refined and co-created based on stakeholder commitments",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1-2-3-4",
+        "B": "2-1-3-4",
+        "C": "4-2-1-3",
+        "D": "2-3-1-4"
+      },
+      "correct_option_label": "D",
+      "explanation": "The effectual cycle starts with identifying available means (2), taking means-driven action (3), interacting with self-selecting stakeholders (1), and co-creating emergent goals based on commitments (4).",
+      "module": 1
+    },
+    {
+      "question_id": "4513871154",
+      "question_text": "Arrange the steps of evaluating and repositioning an idea using the Market Opportunity Navigator in the correct order:\n1. Identify strategies to reduce challenge or boost potential (e.g., partnering, unbundling features)\n2. Generate an initial business idea\n3. Map the idea onto the Potential–Challenge grid to identify its quadrant\n4. Assess the idea's Potential (market size, reason to buy, margins) and Challenge (obstacles, time to revenue, risk) separately",
+      "question_type": "MCQ",
+      "options": {
+        "A": "2-4-3-1",
+        "B": "2-3-4-1",
+        "C": "2-4-1-3",
+        "D": "4-2-3-1"
+      },
+      "correct_option_label": "A",
+      "explanation": "The evaluation process begins with idea generation (2), assessing Potential and Challenge separately (4), plotting on the matrix (3), and repositioning via strategic levers (1).",
+      "module": 2
+    },
+    {
+      "question_id": "4513871155",
+      "question_text": "Arrange the following steps of rigorous hypothesis testing in the Lean method in the correct order:\n1. Design a lightweight MVP experiment to test the hypothesis\n2. Frame a specific, falsifiable hypothesis\n3. Decide whether to pivot or persevere\n4. Measure the results against the pre-defined threshold",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1-2-4-3",
+        "B": "2-1-4-3",
+        "C": "2-1-3-4",
+        "D": "2-4-1-3"
+      },
+      "correct_option_label": "B",
+      "explanation": "Rigorous Lean experimentation proceeds from defining a falsifiable hypothesis (2), designing the test experiment/MVP (1), measuring outcomes against thresholds (4), and deciding to pivot or persevere (3).",
+      "module": 3
+    },
+    {
+      "question_id": "4513871156",
+      "question_text": "Arrange the typical lifecycle of founder equity events in a high-growth venture in the correct order:\n1. Vesting schedule and cliff period begin to apply to each founder's shares\n2. Equity is set at nominal face value at incorporation\n3. An ESOP pool is carved out for early employees\n4. VC investment dilutes existing shareholders in exchange for growth capital",
+      "question_type": "MCQ",
+      "options": {
+        "A": "2-1-3-4",
+        "B": "1-2-3-4",
+        "C": "2-3-1-4",
+        "D": "2-1-4-3"
+      },
+      "correct_option_label": "A",
+      "explanation": "Equity is established at incorporation (2), subjected to vesting and cliff agreements (1), supplemented by an ESOP pool for initial hires (3), and subsequently diluted by institutional VC funding (4).",
+      "module": 6
+    },
+    {
+      "question_id": "4513871157",
+      "question_text": "Arrange the stages of a startup's VC funding journey in the correct order:\n1. Achieve Product-Market Fit\n2. Approach VCs for growth-stage funding\n3. Build a Minimum Viable Product\n4. Conduct due diligence and negotiate valuation/terms with an interested VC",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1-3-2-4",
+        "B": "3-1-4-2",
+        "C": "3-1-2-4",
+        "D": "3-2-1-4"
+      },
+      "correct_option_label": "C",
+      "explanation": "A venture builds an MVP (3), iterates to validate Product-Market Fit (1), approaches growth VCs (2), and conducts formal due diligence and terms negotiations (4).",
+      "module": 7
+    }
+  ]
+}
