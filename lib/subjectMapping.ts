@@ -129,6 +129,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'BarChart3',
     aliases: [
       { batch: 1, code: 'DS21x', term: 2 },
+      { batch: 2, code: 'DS21x', term: 4 },
     ],
   },
   {
@@ -255,7 +256,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'BookOpen',
     aliases: [
       { batch: 1, code: 'MD42x', term: 4 },
-      { batch: 2, code: '', term: 4 },
+      { batch: 2, code: 'MD42x', term: 4 },
     ],
   },
   {
@@ -264,7 +265,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'TrendingUp',
     aliases: [
       { batch: 1, code: 'MK41x', term: 4 },
-      { batch: 2, code: '', term: 4 },
+      { batch: 2, code: 'MK41x', term: 4 },
     ],
   },
   {
@@ -273,7 +274,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'MessageSquare',
     aliases: [
       { batch: 1, code: 'OB41x', term: 4 },
-      { batch: 2, code: '', term: 4 },
+      { batch: 2, code: 'OB41x', term: 4 },
     ],
   },
   {
@@ -282,7 +283,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'ClipboardList',
     aliases: [
       { batch: 1, code: 'OM41x', term: 4 },
-      { batch: 2, code: '', term: 4 },
+      { batch: 2, code: 'OM41x', term: 4 },
     ],
   },
   {
@@ -291,7 +292,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'Building2',
     aliases: [
       { batch: 1, code: 'ST41x', term: 4 },
-      { batch: 2, code: '', term: 4 },
+      { batch: 2, code: 'ST41x', term: 4 },
     ],
   },
   {
@@ -301,7 +302,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'Lightbulb',
     aliases: [
       { batch: 1, code: 'EP41x', term: 4 },
-      { batch: 2, code: '', term: 4 },
+      { batch: 2, code: 'EP41x', term: 4 },
     ],
   },
   {
@@ -311,7 +312,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'BarChart3',
     aliases: [
       { batch: 1, code: 'MD41x', term: 4 },
-      { batch: 2, code: '', term: 4 },
+      { batch: 2, code: 'MD41x', term: 4 },
     ],
   },
 
