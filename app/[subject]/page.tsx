@@ -9,6 +9,7 @@ interface QuizPageProps {
     exam?: string;
     bank?: string;
     type?: string;
+    review?: string;
   }>;
 }
 
@@ -23,5 +24,5 @@ export default async function QuizPage({ params, searchParams }: QuizPageProps) 
   const { subject } = await params;
   const sp = searchParams ? await searchParams : undefined;
   const autoExam = sp?.exam || sp?.bank;
-  return <QuizApp subjectCode={subject} autoExam={autoExam} />;
+  return <QuizApp subjectCode={subject} autoExam={autoExam} autoReview={sp?.review === 'cbt'} />;
 }
