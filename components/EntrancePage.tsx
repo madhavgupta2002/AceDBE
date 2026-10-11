@@ -4,11 +4,14 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Clock, FileText, Loader2, MonitorPlay, PlayCircle } from 'lucide-react';
 import type { ExamPaperInfo } from '@/lib/pyqService';
+import { useRouter } from 'next/navigation';
 import CbtExam from './CbtExam';
+import { stashCbtReview, toReviewData } from '@/lib/cbtReview';
 
 const ENTRANCE = { code: 'ENTRANCE', name: 'BBA-DBE Entrance Test' };
 
 export default function EntrancePage() {
+  const router = useRouter();
   const [papers, setPapers] = useState<ExamPaperInfo[]>([]);
   const [loading, setLoading] = useState(true);
   const [cbtPaper, setCbtPaper] = useState<ExamPaperInfo | null>(null);
@@ -78,7 +81,17 @@ export default function EntrancePage() {
         timer and on-screen calculator. Some questions rely on a chart or figure that is shown as an image where the source had it.
       </p>
 
-      {cbtPaper && <CbtExam subject={ENTRANCE} paper={cbtPaper} onClose={() => setCbtPaper(null)} />}
+      {cbtPaper && (
+        <CbtExam
+          subject={ENTRANCE}
+          paper={cbtPaper}
+          onResult={(result) => {
+            stashCbtReview(toReviewData(cbtPaper.bankName, result));
+            router.push(`/${ENTRANCE.code}?exam=${encodeURIComponent(cbtPaper.bankName)}&review=cbt`);
+          }}
+          onClose={() => setCbtPaper(null)}
+        />
+      )}
     </main>
   );
 }

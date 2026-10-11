@@ -22,6 +22,7 @@ import { TermPyqGroup, ExamPaperInfo, SubjectPyqInfo } from '@/lib/pyqService';
 import { convertToInternalFormat } from '@/lib/questionLoader';
 import { printExamPaper } from '@/lib/printExam';
 import CbtExam from './CbtExam';
+import { stashCbtReview, toReviewData } from '@/lib/cbtReview';
 
 export default function PyqPage() {
   const router = useRouter();
@@ -263,7 +264,7 @@ export default function PyqPage() {
               </div>
             ) : actionType === 'cbt' ? (
               <p className="text-[10px] text-slate-400 px-0.5">
-                Timed exam in the real exam-centre interface, using the official pattern. Dimmed papers have no pattern yet.
+                Timed exam in the real exam-centre interface, using the official pattern (or a standard practice pattern when none is recorded).
               </p>
             ) : (
               <p className="text-[10px] text-slate-400 px-0.5">
@@ -446,7 +447,7 @@ export default function PyqPage() {
                                             actionType === 'cbt'
                                               ? paper.cbt
                                                 ? `CBT Exam: ${subject.code} (${paper.date}) - ${paper.cbt.durationMin} min, ${paper.cbt.questionCount} questions`
-                                                : 'No official exam pattern for this paper yet'
+                                                : 'This paper has no objective questions'
                                               : `${actionType === 'quiz' ? 'Take Quiz' : 'Print Paper'}: ${subject.code} (${paper.date})`
                                           }
                                         >
@@ -504,7 +505,15 @@ export default function PyqPage() {
       )}
 
       {cbtTarget && (
-        <CbtExam subject={cbtTarget.subject} paper={cbtTarget.paper} onClose={() => setCbtTarget(null)} />
+        <CbtExam
+          subject={cbtTarget.subject}
+          paper={cbtTarget.paper}
+          onResult={(result) => {
+            stashCbtReview(toReviewData(cbtTarget.paper.bankName, result));
+            router.push(`/${cbtTarget.subject.code}?exam=${encodeURIComponent(cbtTarget.paper.bankName)}&review=cbt`);
+          }}
+          onClose={() => setCbtTarget(null)}
+        />
       )}
 
       {/* Guidance Notes Footer */}
@@ -521,7 +530,7 @@ export default function PyqPage() {
             <strong>Retake Cycles:</strong> After a course’s initial term, official re-sit examinations are held in each following exam cycle.
           </li>
           <li>
-            <strong>CBT Exam:</strong> Papers with an official exam pattern (sections, marks, negative marking, duration, calculator) can be taken in the exam-centre interface. Only objective questions are included; written sections are skipped.
+            <strong>CBT Exam:</strong> Every paper with objective questions can be taken (with its official pattern of sections, marks, negative marking, duration and calculator when one is recorded, otherwise a standard practice pattern) in the exam-centre interface. Only objective questions are included; written sections are skipped.
           </li>
           <li>
             <strong>Abridged Papers Excluded:</strong> All transitional abridged papers have been excluded.
