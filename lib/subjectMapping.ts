@@ -587,6 +587,16 @@ export const SUBJECTS: Subject[] = [
       { batch: 2, code: '', term: 9 },
     ],
   },
+  // ── BBA-DBE entrance test ───────────────────────────────────
+  // Not part of any batch/term (batch 0 never matches the batch selector), so it stays off the home page.
+  // The code resolves for /ENTRANCE (quiz page) and is listed on /entrance. Excluded from the PYQ grid (term 0).
+  {
+    name: 'BBA-DBE Entrance Test',
+    description: 'Past entrance test papers: verbal ability, quantitative aptitude, logical reasoning, general awareness',
+    icon: 'ClipboardList',
+    finalExam: false,
+    aliases: [{ batch: 0, code: 'ENTRANCE', term: 0 }],
+  },
 ];
 
 // ── Lookup helpers ──────────────────────────────────────────────

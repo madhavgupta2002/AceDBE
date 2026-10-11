@@ -109,9 +109,13 @@ Example structure:
 
 On the PYQs page, choose **CBT Exam** and click a paper to take it in the exam-centre interface served by the Digion exam engine. Only papers whose `exam_metadata.exam_pattern` is set (sections, marks, negative marking, duration, calculator) are enabled. The result, with a question-by-question review, is shown back on the page after submission. CLA, Custom and regular quizzes are unaffected.
 
-- Engine URL: `NEXT_PUBLIC_DIGION_ENGINE_URL` (default `https://digionengine.vercel.app`)
+- Engine URL: `NEXT_PUBLIC_DIGION_ENGINE_URL` (default `https://digion-engine.vercel.app`)
 - Code: `lib/digionConnector.ts`, `components/CbtExam.tsx`
 - Add or update patterns with `python3 apply_exam_patterns.py`
+
+## Entrance test papers
+
+`/entrance` lists the BBA-DBE entrance papers (10 and 17 Aug 2024, 20 Jul 2025, 2026; data in `public/data/Subjects/ENTRANCE/Exam/`). Each can be practised as a quiz (`/ENTRANCE?exam=<bank>`) or taken as a CBT exam using the pattern in the file (90 min, 60 questions, no negative marking, on-screen calculator). Format notes are in `QUESTION_FORMAT.md`.
 
 ## Technologies
 

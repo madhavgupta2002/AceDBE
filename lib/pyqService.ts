@@ -91,6 +91,35 @@ function formatDisplayDate(rawDate: string): string {
   return day && month ? `${day} ${month}` : rawDate;
 }
 
+/** Entrance test papers (public/data/Subjects/ENTRANCE/Exam), oldest first. */
+export function getEntranceData(): ExamPaperInfo[] {
+  const examDir = path.join(process.cwd(), 'public', 'data', 'Subjects', 'ENTRANCE', 'Exam');
+  if (!fs.existsSync(examDir)) return [];
+  const papers: (ExamPaperInfo & { sortKey: number })[] = [];
+  for (const f of fs.readdirSync(examDir)) {
+    if (!f.endsWith('.json')) continue;
+    try {
+      const parsed = JSON.parse(fs.readFileSync(path.join(examDir, f), 'utf-8'));
+      const rawDate: string = parsed.exam_metadata?.exam_date || f.replace('.json', '');
+      const t = Date.parse(rawDate);
+      const year = parseInt(rawDate.match(/\d{4}/)?.[0] ?? '0', 10);
+      papers.push({
+        filename: f,
+        bankName: f.replace('.json', ''),
+        date: rawDate,
+        displayDate: rawDate,
+        questionCount: (parsed.questions ?? []).filter((q: { question_type?: string }) => q.question_type !== 'SUBJECTIVE').length,
+        subjectCode: 'ENTRANCE',
+        cbt: summariseCbt(parsed.exam_metadata?.exam_pattern),
+        sortKey: Number.isNaN(t) ? new Date(year, 0, 1).getTime() : t,
+      });
+    } catch (e) {
+      console.error(`Error reading entrance file ${f}:`, e);
+    }
+  }
+  return papers.sort((a, b) => a.sortKey - b.sortKey).map(({ sortKey, ...p }) => p);
+}
+
 export function getPyqData(): TermPyqGroup[] {
   const subjectsDir = path.join(process.cwd(), 'public', 'data', 'Subjects');
 

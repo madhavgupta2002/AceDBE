@@ -1,0 +1,1105 @@
+{
+  "exam_metadata": {
+    "subject_name": "BBA-DBE Entrance Test",
+    "exam_date": "20 July 2025",
+    "batch": "",
+    "attempt": "2:00 PM - 3:30 PM",
+    "exam_pattern": {
+      "exam_name": "IIMB BBA-DBE Entrance Test",
+      "duration_min": 90,
+      "total_marks": 60,
+      "total_questions": 60,
+      "negative_marking": false,
+      "calculator": "standard",
+      "timing_mode": "global",
+      "reference_materials": [],
+      "instructions": [
+        "Computer-based test of 90 minutes with 60 questions of 1 mark each; there is no negative marking.",
+        "Physical calculators are not allowed. An on-screen calculator is provided.",
+        "Questions can be attempted in any order and you can move freely between sections."
+      ],
+      "sections": [
+        {
+          "name": "Verbal Ability & Reading Comprehension",
+          "question_type": "MCQ",
+          "num_questions": 20,
+          "marks_per_question": 1,
+          "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+          "context_blocks": [
+            {
+              "context_question_id": "Passage_1",
+              "applies_to": ["17", "18", "19", "20"]
+            }
+          ]
+        },
+        {
+          "name": "Quantitative Aptitude & Data Interpretation",
+          "question_type": "MCQ",
+          "num_questions": 20,
+          "marks_per_question": 1,
+          "question_ids": ["21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40"],
+          "context_blocks": [
+            {
+              "context_question_id": "Passage_2",
+              "applies_to": ["37", "38", "39", "40"]
+            }
+          ]
+        },
+        {
+          "name": "Logical Analytical Reasoning",
+          "question_type": "MCQ",
+          "num_questions": 10,
+          "marks_per_question": 1,
+          "question_ids": ["41", "42", "43", "44", "45", "46", "47", "48", "49", "50"]
+        },
+        {
+          "name": "General Awareness",
+          "question_type": "MCQ",
+          "num_questions": 10,
+          "marks_per_question": 1,
+          "question_ids": ["51", "52", "53", "54", "55", "56", "57", "58", "59", "60"]
+        }
+      ]
+    }
+  },
+  "questions": [
+    {
+      "question_id": "1",
+      "question_text": "Fill in the given blanks with the correct option.\n\nHer necklace was a perfect __________ to the gown, and she blushed when he gave her a sincere __________ on it.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "complement/compliment",
+        "B": "compliment/compliment",
+        "C": "complement/complement",
+        "D": "compliment/complement"
+      },
+      "correct_option_label": "A",
+      "explanation": "'Complement' means something that completes or goes well with another thing, so the necklace was a perfect complement to the gown. 'Compliment' is an expression of praise, which is what she received. Hence complement/compliment.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Similar Words",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "2",
+      "question_text": "Fill in the blank with the correct adjective:\n\nThe _______ old man gave his warm coat to the beggar.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Arrogant",
+        "B": "Hostile",
+        "C": "Genuine",
+        "D": "Benevolent"
+      },
+      "correct_option_label": "D",
+      "explanation": "'Benevolent' means kind and generous, which fits an old man giving his warm coat to a beggar. Arrogant, hostile and genuine do not explain the act of charity as well.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Fill-Ups",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "3",
+      "question_text": "Fill in the blank with the correct option.\n\nOn the night before the exam, she was seen poring _____________ the books.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Over",
+        "B": "Into",
+        "C": "Through",
+        "D": "At"
+      },
+      "correct_option_label": "A",
+      "explanation": "The phrasal verb 'pore over' means to study something intently. The other prepositions do not form a valid phrase with 'poring'.",
+      "module": "Verbal Ability",
+      "topic": "Grammar",
+      "subtopic": "Parts of Speech",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "4",
+      "question_text": "Read the sentence and choose the correct idiom to replace the underlined phrase.\n\nAfter forgetting to submit the report on time, Maya tried to explain herself, but her manager was already angry and <u>refused to listen to any excuses</u>.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "read between the lines.",
+        "B": "gave her the cold shoulder.",
+        "C": "turned a deaf ear.",
+        "D": "held all the cards."
+      },
+      "correct_option_label": "C",
+      "explanation": "'Turned a deaf ear' means to refuse to listen to or pay attention to something, which matches 'refused to listen to any excuses'. The other idioms have different meanings.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Idioms",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "5",
+      "question_text": "Select the option that is the odd one out.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Lavish",
+        "B": "Prudent",
+        "C": "Thrifty",
+        "D": "Economical"
+      },
+      "correct_option_label": "A",
+      "explanation": "Prudent, thrifty and economical all mean careful with money. 'Lavish' means extravagant, so it is the odd one out.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Definition",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "6",
+      "question_text": "The sentence below contains an error. Choose the option that best corrects it.\n\nThe documentary was so inform that viewers struggled to stay engaged, despite its visually appealing cinematography.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The documentary were so informative that viewers struggled to stay engage, despite its visual appealing cinematography.",
+        "B": "The documentary was so informatively that viewers struggle to stay engaged, despite its visual appeal cinematography.",
+        "C": "The documentary was very inform that viewers struggled to stay engaging, despite its visual appealing cinematography.",
+        "D": "The documentary was so informative that viewers struggled to stay engaged, despite its visually appealing cinematography."
+      },
+      "correct_option_label": "D",
+      "explanation": "The sentence needs the adjective 'informative' (not 'inform'), the verb form 'engaged', and the adverb 'visually' modifying 'appealing'. Only option 4 corrects all errors with correct grammar.",
+      "module": "Verbal Ability",
+      "topic": "Grammar",
+      "subtopic": "Error Spotting",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "7",
+      "question_text": "Select the most appropriate option to fill in the blank.\n\nThe miser _______ a cry when he learnt that his money was lost.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Let go",
+        "B": "Let out",
+        "C": "Let up",
+        "D": "Let in"
+      },
+      "correct_option_label": "B",
+      "explanation": "'Let out a cry' is the standard phrasal usage meaning to utter a cry. 'Let go', 'let up' and 'let in' do not collocate with 'cry'.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Phrases",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "8",
+      "question_text": "Select the correct sentence from the given options to fill in the blank in the paragraph.\n\nHumanity is a social species by nature. When the internet entered daily life around 1983, worldwide connections became an instant possibility. _____________________. The backyard fence was replaced by a computer monitor. Whether for private purposes or business, communication is what humans do - not always gracefully or truthfully, but certainly continuously.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Social media had its first seeds in email.",
+        "B": "The internet came, connecting people on the World Wide Web, and nothing changed.",
+        "C": "Social media has become a vast, informal network of online venues.",
+        "D": "Talking to the next-door neighbour became talking to anyone on the planet."
+      },
+      "correct_option_label": "D",
+      "explanation": "The sentence before the blank speaks of worldwide connections; the one after says the backyard fence was replaced by a monitor. 'Talking to the next-door neighbour became talking to anyone on the planet' bridges both with the fence imagery.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Paracompletion",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "9",
+      "question_text": "Select the most appropriate word to fill in the blank.\n\nThe old, ________ house stood on the hill, a gloomy reminder of the past.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Decomposing",
+        "B": "Rotting",
+        "C": "Dilapidated",
+        "D": "Decaying"
+      },
+      "correct_option_label": "C",
+      "explanation": "'Dilapidated' describes a building that is old and in a state of disrepair, which fits a gloomy old house on a hill. Decomposing, rotting and decaying describe organic matter rather than buildings.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Fill-Ups",
+      "difficulty": "Hard"
+    },
+    {
+      "question_id": "10",
+      "question_text": "The following sentences should form a coherent paragraph.\n\nSelect the option which has the odd sentence that does not belong to the thematic unity of the paragraph.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "With the assistance of artificial intelligence (AI) and algorithms, users' search activity on a commercial or search site is directed to brands on social media pages.",
+        "B": "This technique allows companies to reach their target audience across multiple different platforms.",
+        "C": "Businesses use a variety of social media platforms with broad audiences for brand promotion, marketing campaigns, and customer engagement.",
+        "D": "Brand promotion is only limited to one platform."
+      },
+      "correct_option_label": "D",
+      "explanation": "The paragraph is about how businesses use multiple social media platforms to reach their audience. 'Brand promotion is only limited to one platform' contradicts this idea, so it is the odd sentence.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Odd One Out",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "11",
+      "question_text": "Read the sentence and choose the word that is most similar in meaning to the underlined word.\n\nThe athlete was <u>lauded</u> for her outstanding performance at the championship, earning praise from fans and critics alike.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "celebrated",
+        "B": "rewarded",
+        "C": "ignored",
+        "D": "reimbursed"
+      },
+      "correct_option_label": "A",
+      "explanation": "'Lauded' means praised, and 'celebrated' is the closest in meaning here. Rewarded and reimbursed refer to payment, and 'ignored' is the opposite.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Synonym",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "12",
+      "question_text": "Select the CORRECT option to fill in the blank.\n\nDuring the international climate summit, young activists from across the globe delivered passionate speeches. They highlighted rising temperatures, melting glaciers, and endangered species. Their urgent appeal __________ global leaders to take immediate and measurable action. The movement was praised for its clarity, determination, and its power to unite voices for environmental change.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "brainwashed",
+        "B": "deceived",
+        "C": "urged",
+        "D": "instigated"
+      },
+      "correct_option_label": "C",
+      "explanation": "'Urged' (strongly appealed to) fits an urgent appeal asking leaders to take action. Brainwashed and deceived are negative and do not fit, and 'instigated' would need a different construction.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Fill-Ups",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "13",
+      "question_text": "Identify the word that fills the blank correctly.\n\nIn a _________________display of restraint, she redirected the Journalist's hostile inquiry with such polished French, that even the most sceptical Parisian in the room found themselves smiling in admiration.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Woeful",
+        "B": "Straight",
+        "C": "Restrained",
+        "D": "Masterful"
+      },
+      "correct_option_label": "D",
+      "explanation": "'Masterful' suits a display of restraint and polished handling of a hostile question that wins admiration. 'Woeful' is negative, and 'Restrained' would be repetitive with 'restraint'.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Fill-Ups",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "14",
+      "question_text": "Arrange the sentences in the correct order to form a coherent paragraph.\n\nA-The world watched as she spoke of the devastating impact on innocent lives.\n\nB-She ended with a fervent wish: \"Let there be no third world war.\"\n\nC-Maya's message resonated deeply, echoing the fears and hopes of a generation.\n\nD-She pleaded for peace, for an end to conflict and war.\n\nE-Her words hung in the air like a challenge, a call to action for leaders.\n\nF-Maya stood before the United Nations, her voice trembling with emotion.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "FCABDE",
+        "B": "FDAECB",
+        "C": "CFBEDA",
+        "D": "ACEBDF"
+      },
+      "correct_option_label": "B",
+      "explanation": "F introduces Maya at the UN, D has her pleading for peace, A shows the world watching her speak of the impact, E describes her words as a call to action, C her message resonating, and B her closing wish. This gives FDAECB.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Parajumbles",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "15",
+      "question_text": "Match the words in Column A with their antonyms in Column B.\n\n| Column A |  | Column B |  |\n|---|---|---|---|\n| A | Diligent | 1 | Negligent |\n| B | Concise | 2 | Vague |\n| C | Just | 3 | Biased |\n| D | Abolish | 4 | Establish |",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A-4, B-3, C-1, D-2",
+        "B": "A-2, B-1, C-4, D-3",
+        "C": "A-1, B-2, C-3, D-4",
+        "D": "A-3, B-4, C-2, D-1"
+      },
+      "correct_option_label": "C",
+      "explanation": "Diligent-Negligent (A-1), Concise-Vague (B-2), Just-Biased (C-3) and Abolish-Establish (D-4). This matches option 3.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Antonym",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "16",
+      "question_text": "Choose the pair of words that best expresses a relationship similar to the one between the first two words. Sculptor : Chisel :: Painter : ?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Canvas",
+        "B": "Brush",
+        "C": "Colour",
+        "D": "Easel"
+      },
+      "correct_option_label": "B",
+      "explanation": "A sculptor works with a chisel as the primary tool, and a painter works with a brush. A canvas is the surface, not the tool.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Analogy",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "Passage_1",
+      "question_text": "One of the most captivating aspects of the authors' research is their interaction with Okinawan centenarians-those who have lived to 100 years or more. These remarkable individuals, despite their advanced age, often exhibits a zest for life, sharp minds, and relatively robust physical health. The centenarians shared their life stories, daily habits, and personal philosophies, offering a window into the lived experiences that contribute to their longevity. Okinawa, a group of islands located in the southernmost part of Japan, is often celebrated for its inhabitants' exceptional life expectancy and overall health.\n\nThe confluence of cultural, dietary, physical, social, and psychological factors in Okinawa presents a holistic picture of health that stands in stark contrast to the fragmented approach often seen in other parts of the world. What emerges from \"The Okinawa Way\" is a set of guiding principles that can be adapted and adopted by anyone, anywhere, seeking to enhance their health and extend their lifespan.",
+      "question_type": "SUBJECTIVE",
+      "options": {},
+      "correct_option_label": null,
+      "explanation": "",
+      "module": "Verbal Ability"
+    },
+    {
+      "question_id": "17",
+      "question_text": "What is the central theme of the above passage?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Healthy body leads to a healthy mind.",
+        "B": "Everybody can live to be 100 years old",
+        "C": "Okinawa way is a holistic approach to health.",
+        "D": "Taking care of health is important."
+      },
+      "correct_option_label": "C",
+      "explanation": "The passage presents Okinawa's longevity as the result of a combination of cultural, dietary, physical, social and psychological factors, calling it a holistic picture of health. Option 3 states this central theme.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "18",
+      "question_text": "Select the most appropriate option. What title suits the best for the above passage?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Guide to health and happiness",
+        "B": "Secrets of longevity in Okinawa",
+        "C": "Health and fitness",
+        "D": "Life stories of Okinawan centenarians"
+      },
+      "correct_option_label": "B",
+      "explanation": "The passage is about the research on Okinawan centenarians and the factors behind their long lives, so 'Secrets of longevity in Okinawa' suits best. The other titles are too general or too narrow.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "19",
+      "question_text": "Select the most appropriate answer to the given question.\n\nWhich of the following is not stated in the above passage?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Western part of the world has a different approach to health",
+        "B": "Okinawan centenarians have sharp minds and zest for life.",
+        "C": "The elderly had a relatively robust physical health.",
+        "D": "'Okinawa way\" is a set of principles which can be adopted by only a few."
+      },
+      "correct_option_label": "D",
+      "explanation": "The passage says the principles can be adopted by 'anyone, anywhere', so claiming they can be adopted by 'only a few' contradicts it. The other options are stated or implied in the passage.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "20",
+      "question_text": "Select the most appropriate answer to the given question.\n\nThe Okinawa inhabitants had a holistic lifestyle because.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "They lived in the southernmost part of Japan.",
+        "B": "They exhibited high intellect and zest for life.",
+        "C": "These centenarians shared their life stories and personal philosophies.",
+        "D": "Their life was a convergence of multiple factors like diet, exercise, culture, social behaviour etc."
+      },
+      "correct_option_label": "D",
+      "explanation": "The passage says the 'confluence of cultural, dietary, physical, social, and psychological factors' gives Okinawa a holistic picture of health. Option 4 restates this.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "21",
+      "question_text": "A merchant made two types of mixed oils P & Q with three different types of oils, X, Y and Z in the ratios 3:2:5 and 4:3:3 respectively with the costs of each litre of X, Y and Z being ₹120, ₹125 and ₹150 respectively. How much profit will the merchant make if he sells 100 litres each of P and Q at the same rate of ₹136 per litre?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹350",
+        "B": "₹250",
+        "C": "₹750",
+        "D": "₹550"
+      },
+      "correct_option_label": "D",
+      "explanation": "Cost of P per litre $= \\frac{3(120)+2(125)+5(150)}{10} = \\frac{1360}{10} = ₹136$.\n\nCost of Q per litre $= \\frac{4(120)+3(125)+3(150)}{10} = \\frac{1305}{10} = ₹130.5$.\n\nSelling at ₹136: profit on P $= 0$, profit on Q $= 100 \\times (136-130.5) = ₹550$. Total profit $= ₹550$.",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "subtopic": "Mixture & Alligation",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "22",
+      "question_text": "If $1, \\omega, \\omega^2$ are the cube roots of unity, then the value of $\\dfrac{1+9\\omega+11\\omega^2}{\\omega^2+9+11\\omega} + \\dfrac{3+5\\omega+7\\omega^2}{3\\omega+5\\omega^2+7}$ is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$-1$",
+        "B": "$\\omega^2$",
+        "C": "$\\omega$",
+        "D": "$0$"
+      },
+      "correct_option_label": "A",
+      "explanation": "Using $\\omega^3=1$: $\\omega(\\omega^2+9+11\\omega) = 1+9\\omega+11\\omega^2$, so the first fraction $= \\omega$.\n\n$\\omega^2(3\\omega+5\\omega^2+7) = 3+5\\omega+7\\omega^2$, so the second fraction $= \\omega^2$.\n\nSum $= \\omega+\\omega^2 = -1$ (since $1+\\omega+\\omega^2=0$).",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "subtopic": "Identities",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "23",
+      "question_text": "The ratio of monthly income of P to monthly income of Q is 9: 11, and P's savings are $\\frac{100}{3}\\%$ more than Q's savings. What is the expenditure (in ₹) of P, if the sum of monthly income of P and Q is ₹2,40,000, and expenditure (in ₹) of Q is ₹84000?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "36,000",
+        "B": "50,000",
+        "C": "52,000",
+        "D": "44,000"
+      },
+      "correct_option_label": "D",
+      "explanation": "Income of P $= \\frac{9}{20}\\times 240000 = 108000$; income of Q $= 132000$.\n\nSavings of Q $= 132000-84000 = 48000$; savings of P $= 48000\\times\\frac{4}{3} = 64000$.\n\nExpenditure of P $= 108000-64000 = ₹44000$.",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "subtopic": "Ratio, Proportion & Variation",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "24",
+      "question_text": "In a flight of 1400 km, an aircraft was slowed down due to bad weather. Its average speed for the trip was reduced by 450 km/h and the time of flight increased by 60 minutes. The speed of the aircraft due to bad weather is what percent (rounded off to 2 decimal places) of the original speed of the aircraft?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "57.14%",
+        "B": "43.33%",
+        "C": "52.28%",
+        "D": "60.67%"
+      },
+      "correct_option_label": "A",
+      "explanation": "Let original speed be $v$: $\\frac{1400}{v-450}-\\frac{1400}{v}=1 \\Rightarrow v(v-450)=630000 \\Rightarrow v^2-450v-630000=0$.\n\n$v=\\frac{450+1650}{2}=1050$ km/h; reduced speed $=600$ km/h.\n\n$\\frac{600}{1050}\\times100 = 57.14\\%$.",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "subtopic": "Time, Speed & Distance",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "25",
+      "question_text": "What is the sum of the infinite series: $1 - \\frac{1}{2} - \\frac{1}{4} + \\frac{1}{8} - \\frac{1}{16} - \\frac{1}{32} + \\frac{1}{64} - \\frac{1}{128} - \\frac{1}{256} + \\dots$?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$\\frac{6}{7}$",
+        "B": "$\\frac{27}{32}$",
+        "C": "$\\frac{2}{7}$",
+        "D": "$\\frac{5}{8}$"
+      },
+      "correct_option_label": "C",
+      "explanation": "Group terms in threes: $\\left(1-\\frac12-\\frac14\\right)+\\frac18\\left(1-\\frac12-\\frac14\\right)+\\frac{1}{64}\\left(1-\\frac12-\\frac14\\right)+\\dots$\n\nEach bracket $=\\frac14$, so the sum is a GP with first term $\\frac14$ and ratio $\\frac18$: $\\frac{1/4}{1-1/8}=\\frac14\\cdot\\frac87=\\frac27$.",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "subtopic": "Progression & Series",
+      "difficulty": "Hard"
+    },
+    {
+      "question_id": "26",
+      "question_text": "A and C together can complete a certain work in 30 days. B is 20% more efficient than C. A, B and C together can do the same work in 20 days. C alone completed one fourth of the work and the remaining work was completed by A and B together. In how many days was the entire work completed?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$37\\frac{10}{13}$",
+        "B": "$38\\frac{10}{13}$",
+        "C": "$38\\frac{1}{2}$",
+        "D": "$37\\frac{1}{2}$"
+      },
+      "correct_option_label": "B",
+      "explanation": "B's rate $=\\frac1{20}-\\frac1{30}=\\frac1{60}$. Since $B=1.2C$, C's rate $=\\frac{1}{72}$; A's rate $=\\frac1{30}-\\frac1{72}=\\frac{7}{360}$.\n\nC does $\\frac14$ of the work in $\\frac14\\times72=18$ days.\n\nA+B rate $=\\frac{7}{360}+\\frac{6}{360}=\\frac{13}{360}$; remaining $\\frac34$ takes $\\frac34\\times\\frac{360}{13}=\\frac{270}{13}=20\\frac{10}{13}$ days.\n\nTotal $=38\\frac{10}{13}$ days.",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "subtopic": "Time & Work",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "27",
+      "question_text": "A person hosts a party of 13 guests and places 5 of them on one table and the remaining on the other table, the tables being round. In how many ways can he arrange the guests?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$\\frac{13!}{40}$",
+        "B": "$\\frac{13!}{5!8!}$",
+        "C": "$\\frac{13!}{4!7!}$",
+        "D": "$\\frac{13!}{80}$"
+      },
+      "correct_option_label": "A",
+      "explanation": "Choose 5 guests for the first table: $\\binom{13}{5}=\\frac{13!}{5!\\,8!}$.\n\nCircular arrangements: $4!$ for the table of 5 and $7!$ for the table of 8.\n\nTotal $=\\frac{13!}{5!\\,8!}\\cdot 4!\\cdot 7! = \\frac{13!}{5\\cdot 8}=\\frac{13!}{40}$.",
+      "module": "Quantitative Ability",
+      "topic": "Modern Math",
+      "subtopic": "Permutation & Combination",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "28",
+      "question_text": "Find the area (in square units) bounded by $x=6,\\ y=0,\\ 3x-2y=0$, and $x-4y+10=0$.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "34",
+        "B": "31",
+        "C": "15",
+        "D": "17"
+      },
+      "correct_option_label": "D",
+      "explanation": "Vertices: $y=0$ & $3x=2y$: $(0,0)$; $3x=2y$ & $x-4y+10=0$: $(2,3)$; $x=6$ & $x-4y+10=0$: $(6,4)$; $x=6$ & $y=0$: $(6,0)$.\n\nShoelace on $(0,0),(6,0),(6,4),(2,3)$: $\\frac12|0+24+(18-8)+0|=\\frac12(34)=17$.",
+      "module": "Quantitative Ability",
+      "topic": "Geometry",
+      "subtopic": "Polygons",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "29",
+      "question_text": "If $x - 2y + 4z = 6$, $3x + y + 5z = 4$ and $2x - y + 3z = 4$, then what is the value of $(2x - 3y + 5z)$?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "7",
+        "B": "6",
+        "C": "8",
+        "D": "4"
+      },
+      "correct_option_label": "C",
+      "explanation": "Eq1 $+ 2\\times$Eq2: $7x+14z=14 \\Rightarrow x+2z=2$. Eq2 $+$ Eq3: $5x+8z=8$.\n\nSubstituting $x=2-2z$: $10-2z=8 \\Rightarrow z=1,\\ x=0$; then from Eq3, $y=-1$.\n\n$2x-3y+5z=0+3+5=8$.",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "subtopic": "Linear Equation",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "30",
+      "question_text": "If $f: \\mathbb{R} \\to \\mathbb{R}$ is defined by $f(x) = 2x - 3$ and $g: \\mathbb{R} \\to \\mathbb{R}$ is defined by $g(x) = x^3 + 5$, then $(f \\circ g)^{-1}(-9)$ is equal to:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "-2",
+        "B": "2",
+        "C": "-1",
+        "D": "1"
+      },
+      "correct_option_label": "A",
+      "explanation": "$(f\\circ g)(x)=2(x^3+5)-3=2x^3+7$.\n\n$(f\\circ g)^{-1}(-9)$: solve $2x^3+7=-9 \\Rightarrow x^3=-8 \\Rightarrow x=-2$.",
+      "module": "Quantitative Ability",
+      "topic": "Modern Math",
+      "subtopic": "Functions",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "31",
+      "question_text": "In an election between two candidates, A and B, 18% of total voters did not cast their votes. 15% of the votes polled were declared invalid. B received 56% of the total valid votes and won by a majority of 6273 votes. The number of valid votes received by A was:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "27060",
+        "B": "28167",
+        "C": "23001",
+        "D": "29274"
+      },
+      "correct_option_label": "C",
+      "explanation": "B gets 56% and A gets 44% of valid votes, so the majority is 12% of valid votes $=6273$.\n\nValid votes $=\\frac{6273}{0.12}=52275$; A's votes $=0.44\\times52275=23001$.",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "subtopic": "Percentages",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "32",
+      "question_text": "If six arithmetic means are inserted between 3 and $\\frac{13}{2}$, the ratio of the fifth and the first mean is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "3 : 2",
+        "B": "11 : 7",
+        "C": "9 : 8",
+        "D": "8 : 5"
+      },
+      "correct_option_label": "B",
+      "explanation": "With 6 means there are 7 gaps: $d=\\frac{13/2-3}{7}=\\frac12$.\n\nFirst mean $=3.5$, fifth mean $=3+5(0.5)=5.5$. Ratio $=5.5:3.5=11:7$.",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "subtopic": "Progression & Series",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "33",
+      "question_text": "In $\\triangle ABC$, $AD$ is the bisector of $\\angle A$ meeting $BC$ at $D$. If $AB = 30$ cm, $BC = 20$ cm and the length of $BD$ is 4 cm less than $DC$, then the length (in cm) of $AC$ is",
+      "question_type": "MCQ",
+      "options": {
+        "A": "45",
+        "B": "28",
+        "C": "36",
+        "D": "48"
+      },
+      "correct_option_label": "A",
+      "explanation": "$BD+DC=20$ and $DC-BD=4 \\Rightarrow DC=12,\\ BD=8$.\n\nAngle bisector theorem: $\\frac{AB}{AC}=\\frac{BD}{DC} \\Rightarrow \\frac{30}{AC}=\\frac{8}{12} \\Rightarrow AC=45$ cm.",
+      "module": "Quantitative Ability",
+      "topic": "Geometry",
+      "subtopic": "Triangles",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "34",
+      "question_text": "In a business partnership among P, Q, R and S, the profit is shared as follows: $\\frac{\\text{P's share}}{\\text{Q's share}} = \\frac{2}{3}$, $\\frac{\\text{Q's share}}{\\text{R's share}} = \\frac{4}{5}$, $\\frac{\\text{R's share}}{\\text{S's share}} = \\frac{5}{12}$. If the total profit is ₹24850, the difference (in ₹) of the combined share of profit of P and S and that of Q and R taken together is",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹4950",
+        "B": "₹5950",
+        "C": "₹5540",
+        "D": "₹5590"
+      },
+      "correct_option_label": "B",
+      "explanation": "$P:Q=2:3=8:12$, $Q:R=4:5=12:15$, $R:S=5:12=15:36$, so $P:Q:R:S=8:12:15:36$ (total 71).\n\nOne part $=\\frac{24850}{71}=350$.\n\n$(P+S)-(Q+R)=(44-27)\\times350=₹5950$.",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "subtopic": "Ratio, Proportion & Variation",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "35",
+      "question_text": "The perimeter of a rhombus is $148 \\text{ cm}$ and one of its diagonals is $70 \\text{ cm}$. Its area is equal to the area of a trapezium whose parallel sides are $x \\text{ cm}$ and $50 \\text{ cm}$ and the distance between the parallel sides is $14 \\text{ cm}$. What is the value of $x$?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "70",
+        "B": "80",
+        "C": "60",
+        "D": "65"
+      },
+      "correct_option_label": "A",
+      "explanation": "Side $=37$; half-diagonals: $35$ and $\\sqrt{37^2-35^2}=12$, so the other diagonal $=24$.\n\nArea of rhombus $=\\frac12\\times70\\times24=840$.\n\n$\\frac12(x+50)\\times14=840 \\Rightarrow x+50=120 \\Rightarrow x=70$.",
+      "module": "Quantitative Ability",
+      "topic": "Geometry",
+      "subtopic": "Quadrilaterals",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "36",
+      "question_text": "The time taken by a boat to cover a certain distance in still water is 20% less than the time it takes to cover the same distance upstream. The speed of the stream is 4.5 km/h. How much total time (in hours) will the boat take to cover 60 km downstream and 30 km upstream?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$4\\frac{1}{3}$",
+        "B": "$3\\frac{8}{9}$",
+        "C": "$4\\frac{1}{6}$",
+        "D": "$3\\frac{1}{3}$"
+      },
+      "correct_option_label": "B",
+      "explanation": "$\\frac{d}{b}=0.8\\cdot\\frac{d}{b-4.5} \\Rightarrow b-4.5=0.8b \\Rightarrow b=22.5$ km/h.\n\nDownstream $=27$ km/h, upstream $=18$ km/h.\n\nTime $=\\frac{60}{27}+\\frac{30}{18}=\\frac{20}{9}+\\frac{15}{9}=\\frac{35}{9}=3\\frac{8}{9}$ hours.",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "subtopic": "Time, Speed & Distance",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "Passage_2",
+      "question_text": "Population of three towns (in thousands) in four years given in bar graph and percentage of literate population of the towns given in line graph (some of the data is missing in the line graph).\n\nPARSEIMAGE\n\nFollowing Table shows partial data of Percentage growth rate of literate population (year over year)\n\n| Year | Town 1 | Town 2 | Town 3 |\n|---|---|---|---|\n| 2020 | (50/7)% | --- | --- |\n| 2021 | (155/3)% | (6800/203)% | 36% |\n| 2022 | --- | (200/3)% | - (1600/51)% |",
+      "question_type": "SUBJECTIVE",
+      "options": {},
+      "correct_option_label": null,
+      "explanation": "",
+      "module": "Quantitative Ability"
+    },
+    {
+      "question_id": "37",
+      "question_text": "What was the number of literate population in the year 2019 in town 1?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "336000",
+        "B": "393000",
+        "C": "363000",
+        "D": "339000"
+      },
+      "correct_option_label": "A",
+      "explanation": "From the graphs: populations (thousands) 2019/2020/2021/2022 - Town 1: 560/720/780/700, Town 2: 470/580/450/600, Town 3: 204/250/340/200; literacy 2019 - Town 1: 60%, Town 2: 60%, Town 3: 50%. Literate population of Town 1 in 2019 $=60\\%\\times560000=336000$.",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "subtopic": "Bar Graphs",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "38",
+      "question_text": "What is the ratio between total population and literate population in 2019 in town 3?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "2:1",
+        "B": "3:2",
+        "C": "1:2",
+        "D": "4:3"
+      },
+      "correct_option_label": "A",
+      "explanation": "From the graphs: populations (thousands) 2019/2020/2021/2022 - Town 1: 560/720/780/700, Town 2: 470/580/450/600, Town 3: 204/250/340/200; literacy 2019 - Town 1: 60%, Town 2: 60%, Town 3: 50%. Town 3 in 2019: literate $=50\\%\\times204000=102000$, so total : literate $=204000:102000=2:1$.",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "subtopic": "Bar Graphs",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "39",
+      "question_text": "Number of literate population of town 2 in year 2019 is approximately what percent of literate population of town 1 in the year 2021?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "53.85%",
+        "B": "52.75%",
+        "C": "51.65%",
+        "D": "50.62%"
+      },
+      "correct_option_label": "C",
+      "explanation": "From the graphs: populations (thousands) 2019/2020/2021/2022 - Town 1: 560/720/780/700, Town 2: 470/580/450/600, Town 3: 204/250/340/200; literacy 2019 - Town 1: 60%, Town 2: 60%, Town 3: 50%. Town 2 (2019) literate $=60\\%\\times470000=282000$. Town 1: 2020 literate $=50\\%\\times720000=360000$ (check: $360/336-1=\\frac{50}{7}\\%$), 2021 literate $=360000\\times\\left(1+\\frac{155}{300}\\right)=546000$.\n\n$\\frac{282000}{546000}\\times100\\approx51.65\\%$.",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "subtopic": "Bar Graphs",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "40",
+      "question_text": "What was the approximate literate population in town 2 in 2020?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "215000",
+        "B": "208000",
+        "C": "202000",
+        "D": "198000"
+      },
+      "correct_option_label": "C",
+      "explanation": "From the graphs: populations (thousands) 2019/2020/2021/2022 - Town 1: 560/720/780/700, Town 2: 470/580/450/600, Town 3: 204/250/340/200; literacy 2019 - Town 1: 60%, Town 2: 60%, Town 3: 50%. Town 2 in 2021: literate $=60\\%\\times450000=270000$ (consistent with 2022: $270000\\times\\frac53=450000=75\\%$ of 600000). Growth in 2021 was $\\frac{6800}{203}\\%$, so 2020 literate $=270000\\times\\frac{203}{271}\\approx202000$.",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "subtopic": "Bar Graphs",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "41",
+      "question_text": "Based on the English alphabetical order, three of the following four letter cluster pairs are alike in a certain way and thus form a group. Which is the one that does not belong to that group?\n\n(Note: The odd one out is not based on the number of consonants/vowels or their position in the letter cluster)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "OG – ML",
+        "B": "GA – EF",
+        "C": "KQ - IV",
+        "D": "CW - ZB"
+      },
+      "correct_option_label": "D",
+      "explanation": "In each pair the first letter moves −2 and the second letter +5: O→M, G→L; G→E, A→F; K→I, Q→V.\n\nIn CW – ZB, C→Z is −3 (W→B is +5), so it is the odd one out.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Odd One Out",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "42",
+      "question_text": "If 20 October 1981 is Tuesday then what will be the day of the week on 10 June 1987?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Friday",
+        "B": "Wednesday",
+        "C": "Tuesday",
+        "D": "Sunday"
+      },
+      "correct_option_label": "B",
+      "explanation": "From 20 Oct 1981 to 10 June 1987 is 2059 days (the only leap day in this range is 29 Feb 1984).\n\n2059 = 294 × 7 + 1, so there is 1 odd day: Tuesday + 1 = Wednesday.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Clocks & Calendar",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "43",
+      "question_text": "In this question, a statement is followed by two conclusions numbered I and II. You have to assume everything in the statement to be true and decide which of them logically follows beyond a reasonable doubt from the information given in the statement.\n\n**Statement** - Due to changes in the application forms, the last date for payment of Income Tax has been extended by a month by the Finance Ministry. It can now be paid upto 30th September 2025 without any penalty for late payment.\n\n**Conclusion** -\n\nI. No interest will be charged on income tax payments that are made after 30th September 2025\n\nII. No penalty will be charged for income tax payments that are made before 30th September 2025",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Only conclusion I follows",
+        "B": "Both conclusions I and II follow",
+        "C": "Only conclusion II follows",
+        "D": "Neither conclusion I nor II follows"
+      },
+      "correct_option_label": "C",
+      "explanation": "The statement says tax can be paid up to 30th September 2025 without penalty, so II follows directly.\n\nNothing is said about interest, let alone for payments after the deadline, so I does not follow.",
+      "module": "Logical Reasoning",
+      "topic": "Critical Reasoning",
+      "subtopic": "Statement & Conclusion",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "44",
+      "question_text": "What should come in place of '?' in the given series? 325, 306, 289, 274, 261, ?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "251",
+        "B": "249",
+        "C": "250",
+        "D": "255"
+      },
+      "correct_option_label": "C",
+      "explanation": "Differences: −19, −17, −15, −13, so the next is −11.\n\n261 − 11 = 250.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Analogy",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "45",
+      "question_text": "Each of P, Q, R, S, T, U and V has an exam on a different day of a week starting from Monday and ending on Sunday of the same week. V has the exam on Thursday. Only five people have exams after S. Only four people have exams between Q and S. R has the exam immediately after P. T does not have the exam on Monday. How many people have exams between R and U ?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Four",
+        "B": "One",
+        "C": "Two",
+        "D": "Three"
+      },
+      "correct_option_label": "A",
+      "explanation": "Five after S means S is on Tuesday; four between Q and S means Q is on Sunday. V is on Thursday.\n\nThe free days are Mon, Wed, Fri and Sat, and P–R must be consecutive, so P = Fri and R = Sat. T is not on Monday, so T = Wed and U = Mon.\n\nBetween U (Mon) and R (Sat) are Tue, Wed, Thu and Fri, so four people.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Arrangements",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "46",
+      "question_text": "If 'P' stands for '÷', 'Q' stands for 'x', 'R' stands for '+' and 'S' stands for '-', then the resultant of which of the following would be 14?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "38 R 16 P 3 S 96 Q 4",
+        "B": "38 S 16 Q 3 R 96 P 4",
+        "C": "38 Q 16 S 3 P 96 R 4",
+        "D": "38 P 16 R 3 Q 96 S 4"
+      },
+      "correct_option_label": "B",
+      "explanation": "Option B becomes 38 − 16 × 3 + 96 ÷ 4 = 38 − 48 + 24 = 14.\n\n(Option A ≈ −340.7, option C ≈ 611.97 and option D ≈ 286.4.)",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Coding & Decoding",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "47",
+      "question_text": "In a certain code language,\n\n- A + B means 'A is the mother of B'\n- A - B means 'A is the brother of B'\n- A x B means 'A is the wife of B'\n- A % B means 'A is the father of B'\n- A # B means 'A is the daughter of B'\n\nBased on the above, how is N related to T if 'N # V x G % R + T' ?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Mother's sister",
+        "B": "Father's sister",
+        "C": "Sister's son",
+        "D": "Mother's father"
+      },
+      "correct_option_label": "A",
+      "explanation": "N # V: N is V's daughter. V x G: V is G's wife. G % R: G is R's father. R + T: R is T's mother.\n\nSo N and R are both children of V and G, and N (female) is the sister of T's mother: Mother's sister.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Blood Relations",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "48",
+      "question_text": "Five friends C, J, L, P and Z are of different heights. Z is shorter than J but taller than C. L is shorter than C but taller than P. Who among them is the second tallest?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "P",
+        "B": "Z",
+        "C": "L",
+        "D": "J"
+      },
+      "correct_option_label": "B",
+      "explanation": "From the clues, J > Z > C and C > L > P.\n\nThe full order is J > Z > C > L > P, so the second tallest is Z.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Arrangements",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "49",
+      "question_text": "Ravi starts from Point Y and drives 28 km towards West. He then takes a right turn, drives 55 kms, turns left, drives 69 km, turns left and drives 76 km. He then takes a left turn and drives 35 km. He takes a left turn, drives 21 km to stop at Point Z. How far (shortest distance) and towards which direction should he drive in order to reach Point Y again? (All turns are 90 degrees turns only unless specified)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "64 km towards west",
+        "B": "67 km towards west",
+        "C": "62 km towards east",
+        "D": "58 km towards east"
+      },
+      "correct_option_label": "C",
+      "explanation": "Take Y = (0, 0). W 28 → (−28, 0); N 55 → (−28, 55); W 69 → (−97, 55); S 76 → (−97, −21); E 35 → (−62, −21); N 21 → (−62, 0) = Z.\n\nY is 62 km due east of Z.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Directions",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "50",
+      "question_text": "Read the given statement(s) and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement(s).\n\n**Statements:** Some mirrors are angles. All ellipses are angles.\n\n**Conclusions (I):** Some ellipses are mirrors\n\n**Conclusions (II):** All angles are ellipses",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Only conclusion (II) follows",
+        "B": "Only conclusion (I) follows",
+        "C": "Both conclusions (I) and (II) follow",
+        "D": "Neither conclusion (I) nor (II) follows"
+      },
+      "correct_option_label": "D",
+      "explanation": "Mirrors and ellipses both overlap with angles, but they need not overlap with each other, so I does not follow.\n\n'All ellipses are angles' cannot be reversed into 'all angles are ellipses', so II does not follow either.",
+      "module": "Logical Reasoning",
+      "topic": "Critical Reasoning",
+      "subtopic": "Statement & Conclusion",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "51",
+      "question_text": "He was, often called the father of Indian Renaissance and the maker of Modern India, was a man of versatile genius. He set up the Atmiya Sabha (or Society of Friends) in Calcutta to propagate the monotheistic ideals of the Vedanta and to campaign against idolatry, caste rigidities, meaningless rituals, and other social ills.\n\nThe above paragraph describes which one of the following personalities of India?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Raja Rammohan Roy",
+        "B": "Mahatma Gandhi",
+        "C": "Ishwar Chandra Vidyasagar",
+        "D": "Sardar Patel"
+      },
+      "correct_option_label": "A",
+      "explanation": "Raja Rammohan Roy is called the father of the Indian Renaissance and founded the Atmiya Sabha in Calcutta (1815) to campaign against idolatry and social evils.",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "subtopic": "History",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "52",
+      "question_text": "Which of the following correctly describes the function of ISRO's Bhuvan Geoportal?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It serves as India's dedicated astronaut training and research facility",
+        "B": "It is an interactive tool for public engagement in science education",
+        "C": "It enables real-time disaster tracking and crop monitoring using satellites",
+        "D": "It coordinates international treaties and global space cooperation programs"
+      },
+      "correct_option_label": "C",
+      "explanation": "Bhuvan is ISRO's geoportal providing satellite imagery and map services, used for applications such as disaster support and crop monitoring. It is not a training facility or a treaty body.",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "subtopic": "Science",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "53",
+      "question_text": "In the context of the arrival of Mahatma Gandhi from South Africa, consider the following pairs:\n\n| SI No | Political Activity | Description |\n|---|---|---|\n| 1 | Dandi march | First Non-Cooperation |\n| 2 | Ahmedabad Mill Strike | First Hunger Strike |\n| 3 | Truth & Ahimsa | First Civil Disobedience |\n\nWhich of the pairs given above is/are correctly matched?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1 and 2 only",
+        "B": "2 only",
+        "C": "1 and 3 only",
+        "D": "1, 2 and 3"
+      },
+      "correct_option_label": "B",
+      "explanation": "The Ahmedabad Mill Strike (1918) saw Gandhi's first hunger strike. The Dandi March was the Civil Disobedience Movement (1930), and the first civil disobedience was at Champaran (1917), not 'Truth & Ahimsa'. Only pair 2 is correct.",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "subtopic": "History",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "54",
+      "question_text": "India's first locally-built locomotive for export was flagged off to which country on June 20, 2025?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Republic of Guinea",
+        "B": "Germany",
+        "C": "Japan",
+        "D": "USA"
+      },
+      "correct_option_label": "A",
+      "explanation": "Republic of Guinea",
+      "module": "General Awareness",
+      "topic": "Current Affairs",
+      "subtopic": "2025",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "55",
+      "question_text": "With reference to Ostrava Golden Spike 2025, which of the statements given is correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is a military sports championship organized by NATO countries in Eastern Europe",
+        "B": "It is a World Athletics Silver-level event where only European athletes can compete",
+        "C": "It is a continental-level school athletics event held annually in the Czech Republic",
+        "D": "It is an international track and field meet where Neeraj Chopra won the men's javelin title"
+      },
+      "correct_option_label": "D",
+      "explanation": "It is an international track and field meet where Neeraj Chopra won the men's javelin title",
+      "module": "General Awareness",
+      "topic": "Current Affairs",
+      "subtopic": "2025",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "56",
+      "question_text": "In which of the following Indian classical dance forms are short lyrical pieces like gata, tumri, bhajan, and dadra used to portray episodes from Krishna's life through mime (nritya or abhinaya), accompanied by gentle rhythm and expressive gestures?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Bharatanatyam",
+        "B": "Kathak",
+        "C": "Manipuri",
+        "D": "Odissi"
+      },
+      "correct_option_label": "B",
+      "explanation": "Kathak uses short lyrical pieces like gata, thumri, bhajan and dadra to depict episodes from Krishna's life through abhinaya. Kathak is closely associated with Krishna-based themes in north India.",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "subtopic": "Culture",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "57",
+      "question_text": "Which of the following institutions received the Digital Payments Award 2024-25 for its contribution to inclusive banking in rural India?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "National Payments Corporation of India",
+        "B": "State Bank of India",
+        "C": "Reserve Bank of India",
+        "D": "India Post Payments Bank"
+      },
+      "correct_option_label": "D",
+      "explanation": "India Post Payments Bank",
+      "module": "General Awareness",
+      "topic": "Current Affairs",
+      "subtopic": "2025",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "58",
+      "question_text": "Which Chairperson of TATA group was awarded an honorary knighthood by the United Kingdom on February 14, 2025, for his contributions to strengthening business ties between India and the UK?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Anand Mahindra",
+        "B": "Kumara Mangalam Birla",
+        "C": "N. Chandrasekaran",
+        "D": "Mukesh Ambani"
+      },
+      "correct_option_label": "C",
+      "explanation": "N. Chandrasekaran, Chairman of the Tata group, was conferred an honorary knighthood (KBE) by the UK in February 2025 for strengthening India-UK business ties.",
+      "module": "General Awareness",
+      "topic": "Current Affairs",
+      "subtopic": "2025",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "59",
+      "question_text": "Which one of the following statements about the Narmada and/or Tapi rivers is correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The Narmada is the only river that flows through Karnataka and drains into the Arabian Sea",
+        "B": "Both the rivers flow into the Bay of Bengal after traversing through Rajasthan",
+        "C": "Both the rivers are major tributaries of Godavari River and flow eastward into the Bay of Bengal",
+        "D": "The Tapi river originates from the Satpura Range and drains into the Arabian Sea"
+      },
+      "correct_option_label": "D",
+      "explanation": "The Tapi rises in the Satpura range of Madhya Pradesh and flows westward to the Arabian Sea. The Narmada also flows west, but neither river flows into the Bay of Bengal nor is a tributary of the Godavari.",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "subtopic": "Geography",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "60",
+      "question_text": "With reference to Classical Dances, consider the following pairs:\n\n| SI No | Classical Dance | State of Origin |\n|---|---|---|\n| 1 | Bharatanatyam | Karnataka |\n| 2 | Kuchipudi | Kerala |\n| 3 | Sattriya | Assam |\n\nWhich of the pairs given above is/are correctly matched?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "3 only",
+        "B": "1, 2 and 3",
+        "C": "2 and 3 only",
+        "D": "1 and 3 only"
+      },
+      "correct_option_label": "A",
+      "explanation": "Bharatanatyam is from Tamil Nadu and Kuchipudi from Andhra Pradesh, so pairs 1 and 2 are wrong. Sattriya is from Assam, so only pair 3 is correct.",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "subtopic": "Culture",
+      "difficulty": "Medium"
+    }
+  ]
+}

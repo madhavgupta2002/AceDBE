@@ -79,6 +79,14 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
                         <span>PYQs</span>
                     </Link>
                     <Link
+                        href="/entrance"
+                        className="flex items-center gap-2 px-4 py-2 bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 rounded-xl transition-all duration-300 text-sm font-semibold border border-amber-400/25 hover:border-amber-400/40 backdrop-blur-sm"
+                        aria-label="Entrance Test Papers"
+                    >
+                        <FileText className="h-4 w-4" />
+                        <span>Entrance</span>
+                    </Link>
+                    <Link
                         href="/marks"
                         className="flex items-center gap-2 px-4 py-2 bg-sky-400/10 hover:bg-sky-400/20 text-sky-300 rounded-xl transition-all duration-300 text-sm font-semibold border border-sky-400/25 hover:border-sky-400/40 backdrop-blur-sm"
                         aria-label="Marks Import"
@@ -132,6 +140,14 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
                     >
                         <FileText className="h-4 w-4" />
                         PYQs Checklist
+                    </Link>
+                    <Link
+                        href="/entrance"
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="w-full flex items-center gap-2 px-4 py-2.5 bg-amber-400/10 text-amber-300 rounded-xl text-sm font-semibold border border-amber-400/25"
+                    >
+                        <FileText className="h-4 w-4" />
+                        Entrance Test Papers
                     </Link>
                     <Link
                         href="/marks"

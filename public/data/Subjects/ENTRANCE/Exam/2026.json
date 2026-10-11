@@ -1,0 +1,1105 @@
+{
+  "exam_metadata": {
+    "subject_name": "BBA-DBE Entrance Test",
+    "exam_date": "2026",
+    "batch": "",
+    "attempt": "",
+    "exam_pattern": {
+      "exam_name": "IIMB BBA-DBE Entrance Test",
+      "duration_min": 90,
+      "total_marks": 60,
+      "total_questions": 60,
+      "negative_marking": false,
+      "calculator": "standard",
+      "timing_mode": "global",
+      "reference_materials": [],
+      "instructions": [
+        "Computer-based test of 90 minutes with 60 questions of 1 mark each; there is no negative marking.",
+        "Physical calculators are not allowed. An on-screen calculator is provided.",
+        "Questions can be attempted in any order and you can move freely between sections."
+      ],
+      "sections": [
+        {
+          "name": "Verbal Ability & Reading Comprehension",
+          "question_type": "MCQ",
+          "num_questions": 20,
+          "marks_per_question": 1,
+          "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+          "context_blocks": [
+            {
+              "context_question_id": "Passage_1",
+              "applies_to": ["13", "14", "15", "16"]
+            }
+          ]
+        },
+        {
+          "name": "Quantitative Aptitude & Data Interpretation",
+          "question_type": "MCQ",
+          "num_questions": 20,
+          "marks_per_question": 1,
+          "question_ids": ["21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40"],
+          "context_blocks": [
+            {
+              "context_question_id": "Passage_2",
+              "applies_to": ["25", "26", "27", "28"]
+            }
+          ]
+        },
+        {
+          "name": "Logical Analytical Reasoning",
+          "question_type": "MCQ",
+          "num_questions": 10,
+          "marks_per_question": 1,
+          "question_ids": ["41", "42", "43", "44", "45", "46", "47", "48", "49", "50"]
+        },
+        {
+          "name": "General Awareness",
+          "question_type": "MCQ",
+          "num_questions": 10,
+          "marks_per_question": 1,
+          "question_ids": ["51", "52", "53", "54", "55", "56", "57", "58", "59", "60"]
+        }
+      ]
+    }
+  },
+  "questions": [
+    {
+      "question_id": "1",
+      "question_text": "Fill in the blanks with the most appropriate options.\n\n_____ the discounted tariff, she also got a _________ session at the hotel spa.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Besides; complimentary",
+        "B": "Besides; complementary",
+        "C": "Beside; complementary",
+        "D": "Beside; complimentary"
+      },
+      "correct_option_label": "A",
+      "explanation": "'Besides' means in addition to, and a 'complimentary' session is one offered free of charge. 'Complementary' (completing) and 'beside' (next to) do not fit.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Fill-Ups",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "2",
+      "question_text": "Choose the most appropriate set of words to fill in the blanks in the sentence below.\n\nThe RTE admission confirmation deadline was extended to May 15 ______ 4986 students failed ______ confirm allotted seats, ensuring eligible candidates receive another opportunity ______ admission confirmation.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "before, to, to",
+        "B": "because, for, to",
+        "C": "after, to, for",
+        "D": "since, from, to"
+      },
+      "correct_option_label": "C",
+      "explanation": "'After' gives the time relation to the failure, 'failed to confirm' takes the infinitive, and 'opportunity for admission confirmation' takes 'for'.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Fill-Ups",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "3",
+      "question_text": "The given sentences, when arranged in the correct order, form a coherent paragraph. Each sentence is labelled. Select the most logical sequence of the sentences from the options given below to construct a meaningful paragraph, keeping 1 as the first sentence and 6 as the last sentence.\n\n1. Social media platforms constantly present carefully curated images of success, luxury, achievement, and happiness that rarely reflect people’s actual lives.\n\nP - This unhealthy dependence on external approval eventually leads to stress, emotional exhaustion, loss of individuality, and a lingering sense of depression.\n\nQ - As this fear intensifies, many individuals begin neglecting their genuine relationships, personal aspirations, and emotional well-being while seeking online validation.\n\nR - Continuous exposure to these idealised portrayals gradually creates feelings of inadequacy, dissatisfaction, and the fear of missing out among viewers.\n\nS - To overcome such anxiety, individuals must practise self-reflection, identify their authentic values and aspirations, and reject impulsive desires shaped by digital trends.\n\n6. Once people begin living according to their true purpose rather than social media expectations, they experience greater freedom, inner peace, confidence, and lasting happiness.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "PQRS",
+        "B": "RQPS",
+        "C": "SPQR",
+        "D": "QRPS"
+      },
+      "correct_option_label": "B",
+      "explanation": "R introduces the feelings caused by idealised portrayals, Q shows how the fear intensifies, P describes the resulting unhealthy dependence, and S offers the remedy before the concluding sentence. This gives RQPS.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Parajumbles",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "4",
+      "question_text": "Choose the most appropriate sequence of prepositions that appropriately fills the blanks in the sentence below.\n\n_____ rising tensions, the ambassador worked with international observers and entered _____ constructive dialogue to transform regional hostility into a framework _____ peaceful cooperation, and sustainable diplomatic engagement across neighbouring nations.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Alongside, between, towards",
+        "B": "Besides, between, for",
+        "C": "Amidst, into, for",
+        "D": "Among, with, on"
+      },
+      "correct_option_label": "C",
+      "explanation": "'Amidst rising tensions' fits the context, one 'enters into' dialogue, and a 'framework for' cooperation is the correct collocation.",
+      "module": "Verbal Ability",
+      "topic": "Grammar",
+      "subtopic": "Parts of Speech",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "5",
+      "question_text": "Select the most appropriate option that replaces the underlined segment with a suitable idiom or phrase:\n\n“Despite repeated warnings, Rohan continued to drive recklessly, and eventually he <u>faced the consequences of his own actions</u>.”",
+      "question_type": "MCQ",
+      "options": {
+        "A": "burned the midnight oil.",
+        "B": "spilled the beans.",
+        "C": "paid the price.",
+        "D": "hit the nail on the head."
+      },
+      "correct_option_label": "C",
+      "explanation": "'Paid the price' means faced the consequences of one's actions. The other idioms mean worked late, revealed a secret, and been exactly right.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Idioms",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "6",
+      "question_text": "Fill in the blanks with the most appropriate options.\n\nThe _______ scene at the gory accident site deeply _____ the young boy.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "heart-warming; effected",
+        "B": "heart-wrenching; effected",
+        "C": "heart-warming; affected",
+        "D": "heart-wrenching; affected"
+      },
+      "correct_option_label": "D",
+      "explanation": "'Heart-wrenching' suits a gory accident scene, and 'affected' (a verb meaning influenced) is correct, whereas 'effected' means brought about.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Fill-Ups",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "7",
+      "question_text": "Based on the meanings, choose the odd one out.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "voluble",
+        "B": "taciturn",
+        "C": "loquacious",
+        "D": "garrulous"
+      },
+      "correct_option_label": "B",
+      "explanation": "Voluble, loquacious and garrulous all mean talkative, while 'taciturn' means reserved or saying little, so it is the odd one out.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Odd One Out",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "8",
+      "question_text": "Fill in the blank with the most appropriate phrasal verb.\n\nDuring the transnational policy symposium on ethical governance, constitutional scholars attempted to _____ the socioeconomic ramifications of artificial intelligence.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "delve onto",
+        "B": "delve inside",
+        "C": "delve into",
+        "D": "delve in"
+      },
+      "correct_option_label": "C",
+      "explanation": "The correct phrasal verb is 'delve into', meaning to investigate something in depth.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Phrases",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "9",
+      "question_text": "Match the words in Column I with their correct antonyms in Column II and select the correct option.\n\n| Column I | Column II |\n|---|---|\n| A. Ephemeral | 1. Careless |\n| B. Benevolent | 2. Permanent |\n| C. Obscure | 3. Clear |\n| D. Meticulous | 4. Malevolent |",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A–3, B–2, C–4, D–1",
+        "B": "A–2, B–3, C–1, D–4",
+        "C": "A–2, B–4, C–3, D–1",
+        "D": "A–1, B–4, C–2, D–3"
+      },
+      "correct_option_label": "C",
+      "explanation": "Ephemeral (short-lived) is opposite to permanent, benevolent to malevolent, obscure to clear, and meticulous to careless: A-2, B-4, C-3, D-1.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Antonym",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "10",
+      "question_text": "Choose the most appropriate option that best completes the analogy.\n\nScalpel is to surgeon as gavel is to ________.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "arbitrator",
+        "B": "judge",
+        "C": "curator",
+        "D": "legislator"
+      },
+      "correct_option_label": "B",
+      "explanation": "A scalpel is the tool of a surgeon, just as a gavel is the tool of a judge.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Analogy",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "11",
+      "question_text": "The following sentence contains an error. Choose the most appropriate option that correctly rewrites it.\n\nBecause the committee finalised the proposal, the policy remained unimplemented, although several departments neither approved nor financially supported it.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "After the committee finalised the proposal, the policy remained unimplemented because several departments neither approved nor financially supported it.",
+        "B": "Meanwhile the committee finalised the proposal, the policy remained unimplemented furthermore several departments neither approved nor financially supported it.",
+        "C": "Although the committee finalised the proposal, the policy remained unimplemented because several departments neither approved nor financially supported it.",
+        "D": "Before the committee finalised the proposal, the policy remained unimplemented because several departments neither approved nor financially supported it."
+      },
+      "correct_option_label": "C",
+      "explanation": "The original wrongly uses 'Because' and 'although'. 'Although the committee finalised the proposal, the policy remained unimplemented because...' gives the correct contrast and cause.",
+      "module": "Verbal Ability",
+      "topic": "Grammar",
+      "subtopic": "Error Spotting",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "12",
+      "question_text": "Four sentences are given below. One of them does not fit logically with the others. Identify the odd sentence out.\n\nA. During a heatwave, people should preferably exercise either early in the morning or after sunset to avoid extreme temperatures.\n\nB. Individuals engaging in physical activity must remain hydrated and include electrolyte-rich fluids in their diet to prevent heat exhaustion.\n\nC. Regular strength training significantly improves long-term memory retention and accelerates linguistic processing abilities in adolescents.\n\nD. Wearing loose and breathable clothing while taking frequent cooling breaks helps regulate body temperature during workouts.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "B",
+        "B": "C",
+        "C": "D",
+        "D": "A"
+      },
+      "correct_option_label": "B",
+      "explanation": "Sentences A, B and D concern staying safe while exercising in a heatwave, whereas C is about strength training improving memory and language in adolescents, which is unrelated.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Odd One Out",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "Passage_1",
+      "question_text": "A growing number of people across different age groups are experiencing knee-related problems such as meniscus tears, ligament injuries, cartilage damage, and chronic joint pain. These issues are no longer limited to athletes or elderly individuals. Sedentary lifestyles, obesity, lack of exercise, improper posture, excessive gym training, and long hours of sitting have increased the risk of knee injuries among working professionals and young adults as well. Many people ignore early warning signs such as stiffness, swelling, clicking sounds, or pain while climbing stairs. As a result, minor problems gradually develop into serious mobility issues that affect daily life.\n\nA meniscus tear usually occurs when the knee is twisted suddenly while bearing weight. Sports activities, sudden movements, and improper exercise techniques commonly cause such injuries. In some cases, age-related wear and tear weakens the cartilage, making the knee more vulnerable. Doctors advise maintaining a healthy body weight, strengthening leg muscles, and following proper exercise methods to reduce the risk of injury. Regular stretching, balanced nutrition, and avoiding excessive strain on the knees are equally important. Early medical consultation, physiotherapy, and timely diagnosis through scans can help prevent long-term damage. Public awareness regarding joint health, safe physical activity, and preventive care is essential for maintaining mobility and improving quality of life.",
+      "question_type": "SUBJECTIVE",
+      "options": {},
+      "correct_option_label": null,
+      "explanation": "",
+      "module": "Verbal Ability"
+    },
+    {
+      "question_id": "13",
+      "question_text": "Which factor is explicitly identified in the passage as contributing to the increasing prevalence of knee-related injuries among younger adults?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Environmental exposure causes an inflammatory deterioration of cartilage tissues.",
+        "B": "Genetic degeneration associated with congenital musculoskeletal instability.",
+        "C": "Repetitive neurological stress affecting lower-limb motor coordination.",
+        "D": "Prolonged sedentary behaviour combined with improper physical conditioning."
+      },
+      "correct_option_label": "D",
+      "explanation": "The passage lists sedentary lifestyles, lack of exercise, improper posture and excessive gym training as increasing injury risk among young adults. Option D captures this.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "14",
+      "question_text": "Which inference can most reasonably be drawn from the passage regarding modern lifestyle patterns and knee health?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Contemporary occupational and behavioural habits may indirectly accelerate joint vulnerability.",
+        "B": "Advanced diagnostic technologies alone can substantially eliminate mobility disorders.",
+        "C": "Age-related degeneration constitutes the sole medically recognised cause of cartilage erosion.",
+        "D": "Competitive athletic participation remains the predominant source of meniscal impairment."
+      },
+      "correct_option_label": "A",
+      "explanation": "The passage links sitting hours, work habits and exercise habits to rising knee problems, so contemporary occupational and behavioural habits may indirectly accelerate joint vulnerability.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "15",
+      "question_text": "Which option most accurately summarises the central argument of the passage?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Diagnostic negligence by healthcare institutions is responsible for rising mobility disorders.",
+        "B": "Meniscus injuries are largely irreversible despite developments in rehabilitative medicine.",
+        "C": "Orthopaedic deterioration primarily affects athletes engaged in intensive physical training.",
+        "D": "Increasing knee injuries linked to lifestyle patterns can be mitigated through awareness and preventive care."
+      },
+      "correct_option_label": "D",
+      "explanation": "The passage describes rising knee injuries due to lifestyle and stresses awareness and preventive care to reduce risk, which is what option D states.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "16",
+      "question_text": "Which of the following best describes the structural organisation of the passage?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A chronological narration followed by a historical evaluation of medical interventions.",
+        "B": "A comparative assessment contrasting surgical and non-surgical rehabilitation methods.",
+        "C": "A call for action advocating institutional regulation of fitness practices.",
+        "D": "A problem-solution framework examining causes, consequences, and preventive strategies."
+      },
+      "correct_option_label": "D",
+      "explanation": "The passage first states the problem, then explains causes and consequences, and ends with preventive measures, i.e. a problem-solution structure.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Reading Comprehension",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "17",
+      "question_text": "Select the most appropriate option that corrects the underlined error in the given sentence.\n\nThey have <u>immediately</u> shifted to a new house.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "soon",
+        "B": "lately",
+        "C": "recently",
+        "D": "previously"
+      },
+      "correct_option_label": "C",
+      "explanation": "The sentence needs a word meaning 'not long ago'. 'Recently' fits the present perfect 'have shifted', whereas 'immediately' does not.",
+      "module": "Verbal Ability",
+      "topic": "Grammar",
+      "subtopic": "Error Spotting",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "18",
+      "question_text": "Substitute the appropriate synonym for the underlined word in the given sentence.\n\nDespite repeated failures, her <u>invincible</u> spirit kept her going.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "indomitable",
+        "B": "indignant",
+        "C": "irresolute",
+        "D": "incorrigible"
+      },
+      "correct_option_label": "A",
+      "explanation": "'Indomitable' means impossible to subdue, which is a synonym of 'invincible'. 'Indignant', 'irresolute' and 'incorrigible' have different meanings.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "subtopic": "Synonym",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "19",
+      "question_text": "Select the most appropriate option that corrects the underlined error in the given sentence.\n\nBy 2028, the company <u>has operated</u> in this market for fifteen years.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "will operate",
+        "B": "has been operating",
+        "C": "will have operated",
+        "D": "had operated"
+      },
+      "correct_option_label": "C",
+      "explanation": "'By 2028' refers to a future point, so the future perfect 'will have operated' is required.",
+      "module": "Verbal Ability",
+      "topic": "Grammar",
+      "subtopic": "Tenses",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "20",
+      "question_text": "Identify the sentence that best completes the paragraph, ensuring logical flow and coherence.\n\nThe rapid growth of social media has transformed the way individuals communicate and share information. While it has made connectivity easier, it has also contributed to shorter attention spans and superficial interactions. Many users now prefer quick updates over meaningful discussions. ______.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Technology companies are expanding their reach across global markets.",
+        "B": "This shift affects the overall quality of communication in society.",
+        "C": "People are spending more time browsing content on digital platforms.",
+        "D": "Social media platforms are constantly introducing new features online."
+      },
+      "correct_option_label": "B",
+      "explanation": "The paragraph discusses the effect of social media on communication quality, so 'This shift affects the overall quality of communication in society' follows logically from the previous sentences.",
+      "module": "Verbal Ability",
+      "topic": "VA",
+      "subtopic": "Paracompletion",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "21",
+      "question_text": "In an election held in a town, there were three candidates Arjun, Bhavesh, and Charan. Out of the total registered voters, 18% did not cast their votes. During counting, it was found that 6% of the votes polled were declared invalid. Among the valid votes, Arjun received 40% of the votes, while Bhavesh and Charan received the remaining valid votes in the ratio of 7 : 5, respectively. If Arjun won the election by 1,44,525 votes over Charan, then find the total number of registered voters in the town.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "12,50,000",
+        "B": "12,00,000",
+        "C": "15,00,000",
+        "D": "14,40,000"
+      },
+      "correct_option_label": "A",
+      "explanation": "Let registered voters $=N$. Votes polled $=0.82N$; valid votes $=0.94\\times0.82N=0.7708N$.\nArjun gets 40%; the remaining 60% is split 7 : 5, so Bhavesh 35%, Charan 25%.\nMargin $=(40\\%-25\\%)\\times0.7708N=0.11562N=1{,}44{,}525\\Rightarrow N=12{,}50{,}000$.",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "subtopic": "Percentages",
+      "difficulty": "Hard"
+    },
+    {
+      "question_id": "22",
+      "question_text": "Two inlet pipes A and B can fill a tank in 18 hours and 24 hours, respectively, while an outlet pipe C can empty the full tank in X hours. Initially, all three pipes are opened together. After 8 hours, pipe B is closed, and another 6 hours later, pipe C is also closed. The remaining portion of the tank is then filled by pipe A alone. If the tank gets completely filled in a total of 16 hours, find the value of X.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "45",
+        "B": "36",
+        "C": "63",
+        "D": "54"
+      },
+      "correct_option_label": "C",
+      "explanation": "Rates: A $=\\frac{1}{18}$, B $=\\frac{1}{24}$, C $=-\\frac{1}{X}$ per hour.\nA works 16 h, B works 8 h, C works $8+6=14$ h.\n$\\frac{16}{18}+\\frac{8}{24}-\\frac{14}{X}=1\\Rightarrow\\frac{8}{9}+\\frac{3}{9}-1=\\frac{14}{X}\\Rightarrow\\frac{2}{9}=\\frac{14}{X}\\Rightarrow X=63$.",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "subtopic": "Time & Work",
+      "difficulty": "Hard"
+    },
+    {
+      "question_id": "23",
+      "question_text": "The ratio between two consecutive natural numbers (in ascending order) is reversed if seven is added to the first number and four is added to the second number. The sum of the two consecutive numbers is _______.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "11",
+        "B": "15",
+        "C": "9",
+        "D": "13"
+      },
+      "correct_option_label": "A",
+      "explanation": "Let the numbers be $n$ and $n+1$. Then $\\frac{n+7}{n+5}=\\frac{n+1}{n}$.\n$n^2+7n=n^2+6n+5\\Rightarrow n=5$.\nNumbers 5 and 6; sum $=11$.",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "subtopic": "Ratio, Proportion & Variation",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "24",
+      "question_text": "A company produces rectangular advertising boards such that the width is always at least 8 cm shorter than the length, and both the length and width are integers. If the area of a board cannot be more than $320\\text{ cm}^2$ and the width is $x$ cm, then find the maximum possible value of $x$.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "15",
+        "B": "13",
+        "C": "16",
+        "D": "14"
+      },
+      "correct_option_label": "D",
+      "explanation": "Length $\\ge x+8$, so the smallest area for width $x$ is $x(x+8)\\le320$.\n$x=14$: $14\\times22=308\\le320$ ✓; $x=15$: $15\\times23=345>320$ ✗.\nMaximum $x=14$.",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "subtopic": "Inequalities",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "Passage_2",
+      "question_text": "Study the following mixed graph carefully and answer the questions that follow.\n\nThe graph illustrates the number of electric cars manufactured by a company over five years and the percentage exported each year. Cars not exported were sold within the country.\n\n| Year | Cars manufactured (in thousands) | Exported |\n|---|---|---|\n| 2020 | 80 | 25% |\n| 2021 | 100 | 30% |\n| 2022 | 120 | 35% |\n| 2023 | 150 | 40% |\n| 2024 | 180 | 45% |",
+      "question_type": "SUBJECTIVE",
+      "options": {},
+      "correct_option_label": null,
+      "explanation": "",
+      "module": "Quantitative Ability"
+    },
+    {
+      "question_id": "25",
+      "question_text": "The company earned an average profit of ₹1,50,000 on each exported car and ₹80,000 on each car sold within the country. What is the percentage increase in the difference between export profit and domestic profit (in ₹ crore) in 2024 compared to 2023 if the profit margins remained the same?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "35%",
+        "B": "42.55%",
+        "C": "74.07%",
+        "D": "135%"
+      },
+      "correct_option_label": "D",
+      "explanation": "2023: exported $=60{,}000$, domestic $=90{,}000$. Export profit $=60{,}000\\times1.5\\text{ lakh}=₹900$ crore; domestic $=90{,}000\\times0.8\\text{ lakh}=₹720$ crore; difference $=₹180$ crore.\n2024: exported $=81{,}000$, domestic $=99{,}000$. Export profit $=₹1215$ crore; domestic $=₹792$ crore; difference $=₹423$ crore.\nIncrease $=\\frac{423-180}{180}\\times100=135\\%$.",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "subtopic": "Bar Graphs",
+      "difficulty": "Hard"
+    },
+    {
+      "question_id": "26",
+      "question_text": "Find the percentage by which the total number of cars sold within the country in 2022 and 2023 together exceeds the total number of cars sold within the country in 2020 and 2024 together. (Round off your answer to two decimal places.)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "7.34%",
+        "B": "5.66%",
+        "C": "6.67%",
+        "D": "4.44%"
+      },
+      "correct_option_label": "B",
+      "explanation": "Domestic sales (thousands): 2020: 60, 2022: 78, 2023: 90, 2024: 99.\n2022 + 2023 $=168$; 2020 + 2024 $=159$.\nExcess $=\\frac{168-159}{159}\\times100=\\frac{9}{159}\\times100\\approx5.66\\%$.",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "subtopic": "Bar Graphs",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "27",
+      "question_text": "Find the total number of cars exported by the company in the years 2021 and 2024.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1,21,000",
+        "B": "1,01,000",
+        "C": "1,10,000",
+        "D": "1,11,000"
+      },
+      "correct_option_label": "D",
+      "explanation": "Exports: 2021 $=30\\%\\times1{,}00{,}000=30{,}000$; 2024 $=45\\%\\times1{,}80{,}000=81{,}000$.\nTotal $=1{,}11{,}000$.",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "subtopic": "Bar Graphs",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "28",
+      "question_text": "Find the ratio of the total number of cars exported in 2020 and 2021 together to the total number of cars manufactured in 2024.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "5:8",
+        "B": "9:20",
+        "C": "7:23",
+        "D": "5:18"
+      },
+      "correct_option_label": "D",
+      "explanation": "Exports 2020 $=20{,}000$, 2021 $=30{,}000$; total $=50{,}000$.\nManufactured in 2024 $=1{,}80{,}000$.\nRatio $=50:180=5:18$.",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "subtopic": "Bar Graphs",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "29",
+      "question_text": "A businessman purchased some notebooks for ₹960. If he had bought 8 more notebooks for the same amount, the cost of each notebook would have decreased by ₹4. What was the original number of notebooks purchased?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "30",
+        "B": "48",
+        "C": "40",
+        "D": "45"
+      },
+      "correct_option_label": "C",
+      "explanation": "Let the original number be $n$. $\\frac{960}{n}-\\frac{960}{n+8}=4$.\n$960\\times8=4n(n+8)\\Rightarrow n^2+8n-1920=0\\Rightarrow(n+48)(n-40)=0$.\n$n=40$.",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "subtopic": "Quadratic Equations",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "30",
+      "question_text": "If all the letters of the word MANAGER are arranged to form 7-letter words (with or without meaning), and all such words are arranged lexicographically (as in a dictionary), how many of these words will precede the word MANAGER?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1518",
+        "B": "1514",
+        "C": "1512",
+        "D": "1516"
+      },
+      "correct_option_label": "B",
+      "explanation": "Letters in order: A, A, E, G, M, N, R.\nWords starting with A: $6!=720$; with E: $\\frac{6!}{2!}=360$; with G: $360$ → 1440.\nMA__: next letter N; before it MAA, MAE, MAG: $3\\times4!=72$ → 1512.\nMANA__: remaining E, G, R; before G comes E: $2!=2$ → 1514.\nMANAGE then R is the next word, so 1514 words precede MANAGER.",
+      "module": "Quantitative Ability",
+      "topic": "Modern Math",
+      "subtopic": "Permutation & Combination",
+      "difficulty": "Hard"
+    },
+    {
+      "question_id": "31",
+      "question_text": "The time taken by a boat to travel a certain distance upstream is equal to the time taken by it to travel 2.5 times the same distance downstream. The speed of the boat in still water is 7 km/h. How much time (in hours) will the boat take to travel 20 km upstream and 36 km downstream?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "8.6",
+        "B": "6.4",
+        "C": "7.2",
+        "D": "6.8"
+      },
+      "correct_option_label": "A",
+      "explanation": "Let the stream speed be $s$. Upstream $=7-s$, downstream $=7+s$.\n$\\frac{D}{7-s}=\\frac{2.5D}{7+s}\\Rightarrow7+s=17.5-2.5s\\Rightarrow s=3$.\nUpstream 4 km/h, downstream 10 km/h. Time $=\\frac{20}{4}+\\frac{36}{10}=5+3.6=8.6$ h.",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "subtopic": "Time, Speed & Distance",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "32",
+      "question_text": "A bookstore sold 320 books in a week, including fiction and non-fiction books. Each fiction book was sold for ₹240, and each non-fiction book for ₹180. If the total revenue earned from all the books sold was ₹65,760, find the absolute difference between the numbers of fiction books and non- fiction books sold.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "32",
+        "B": "56",
+        "C": "64",
+        "D": "48"
+      },
+      "correct_option_label": "D",
+      "explanation": "Let fiction $=f$, non-fiction $=320-f$.\n$240f+180(320-f)=65760\\Rightarrow60f=65760-57600=8160\\Rightarrow f=136$.\nNon-fiction $=184$; difference $=48$.",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "subtopic": "Linear Equation",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "33",
+      "question_text": "A sum of money is invested at a compound interest of 21% per annum compounded annually for 1 year. An equal sum is invested at 20% per annum compound interest compounded half yearly for 1 year. Which of the following statements is correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The investment with annual compounding will give a greater amount.",
+        "B": "The investment with half-yearly compounding will give a greater amount.",
+        "C": "The difference between the two amounts will always be equal to 10% of the principal.",
+        "D": "Both the investments will give the same amount after 1 year."
+      },
+      "correct_option_label": "D",
+      "explanation": "Annual: amount factor $=1.21$.\nHalf-yearly at 20% p.a.: 10% per half-year, factor $=1.1^2=1.21$.\nThe amounts are equal.",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "subtopic": "Simple & Compound Interest",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "34",
+      "question_text": "ABCD is a cyclic quadrilateral. AB and DC are produced to meet at P. AD and BC are produced to meet at Q.\n\nIf $\\angle AQB=2x^\\circ$, $\\angle QAB=3x^\\circ$ and $\\angle BPC=x^\\circ$, then what is the value of $x$?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "10",
+        "B": "24",
+        "C": "15",
+        "D": "20"
+      },
+      "correct_option_label": "D",
+      "explanation": "In $\\triangle QAB$: $\\angle ABQ=180^\\circ-5x$, i.e. $\\angle ABC=180^\\circ-5x$.\nIn $\\triangle PBC$: $\\angle PBC=180^\\circ-\\angle ABC=5x$ and the exterior angle of the cyclic quadrilateral $\\angle PCB=\\angle DAB=3x$.\n$x+5x+3x=180^\\circ\\Rightarrow x=20$.",
+      "module": "Quantitative Ability",
+      "topic": "Geometry",
+      "subtopic": "Circles",
+      "difficulty": "Hard"
+    },
+    {
+      "question_id": "35",
+      "question_text": "Find the area (in square units) of the triangle formed by the region bounded by the x-axis, the straight line $3x+7y=42$, and the straight line $4x+9y=72$.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "80",
+        "B": "128",
+        "C": "96",
+        "D": "144"
+      },
+      "correct_option_label": "C",
+      "explanation": "$3x+7y=42$ meets the x-axis at $(14,0)$; $4x+9y=72$ meets it at $(18,0)$.\nIntersection: $12x+28y=168$ and $12x+27y=216\\Rightarrow y=-48$, $x=126$.\nArea $=\\frac12\\times(18-14)\\times48=96$.",
+      "module": "Quantitative Ability",
+      "topic": "Geometry",
+      "subtopic": "Triangles",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "36",
+      "question_text": "A theatre has 30 rows of seats arranged in such a way that the number of seats in each row forms an arithmetic progression. The first row contains 18 seats, and each successive row has 3 more seats than the previous row. Due to renovation rules, only those rows whose seat count is divisible by 6 are reserved for premium booking. Find the total number of premium seats in the theatre.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "900",
+        "B": "600",
+        "C": "750",
+        "D": "1200"
+      },
+      "correct_option_label": "A",
+      "explanation": "Row $k$ has $15+3k$ seats; divisible by 6 when $k$ is odd.\nPremium rows: $k=1,3,\\dots,29$ (15 rows) with 18, 24, …, 102 seats.\nSum $=\\frac{15}{2}(18+102)=900$.",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "subtopic": "Progression & Series",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "37",
+      "question_text": "Find the sum of the squares of the first twelve positive multiples of 8.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "38400",
+        "B": "40000",
+        "C": "41600",
+        "D": "43200"
+      },
+      "correct_option_label": "C",
+      "explanation": "$\\sum_{k=1}^{12}(8k)^2=64\\sum_{k=1}^{12}k^2=64\\times\\frac{12\\cdot13\\cdot25}{6}=64\\times650=41600$.",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "subtopic": "Progression & Series",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "38",
+      "question_text": "The 5th term of an arithmetic sequence is 20 and its 10th term is 35. The first term of a geometric sequence is the same as the first term of the arithmetic sequence mentioned above, while the 4th term of the geometric sequence is 1. What will be the sum to infinity of the arithmetic-geometric sequence whose $n$-th term is given by $[a+(n-1)d]\\times r^{n-1}$, where $a$ is the first term of both the arithmetic and the geometric sequences, $d$ is the common difference of the arithmetic sequence, and $r$ is the common ratio of the geometric sequence?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "25",
+        "B": "24",
+        "C": "20",
+        "D": "22"
+      },
+      "correct_option_label": "D",
+      "explanation": "$a+4d=20$, $a+9d=35\\Rightarrow d=3$, $a=8$.\nGP: $8r^3=1\\Rightarrow r=\\frac12$.\n$S_\\infty=\\frac{a}{1-r}+\\frac{dr}{(1-r)^2}=\\frac{8}{1/2}+\\frac{3/2}{1/4}=16+6=22$.",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "subtopic": "Progression & Series",
+      "difficulty": "Hard"
+    },
+    {
+      "question_id": "39",
+      "question_text": "The length of each side of a regular hexagon is 12 cm. The length of one of the diagonals of a rhombus whose area is equal to $\\sqrt{3}$ times the area of the hexagon is 72 cm. What is the length (in cm) of the other diagonal of the rhombus?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "16",
+        "B": "18",
+        "C": "15",
+        "D": "24"
+      },
+      "correct_option_label": "B",
+      "explanation": "Hexagon area $=\\frac{3\\sqrt3}{2}\\times12^2=216\\sqrt3$ cm².\nRhombus area $=\\sqrt3\\times216\\sqrt3=648$ cm².\n$\\frac12\\times72\\times d_2=648\\Rightarrow d_2=18$ cm.",
+      "module": "Quantitative Ability",
+      "topic": "Geometry",
+      "subtopic": "Polygons",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "40",
+      "question_text": "A polynomial $P(x)=x^4+3x^3-5x^2+7x+9$ is divided separately by $(x-2)$ and $(x+1)$, giving remainders $R_1$ and $R_2$, respectively. Find the value of $\\dfrac{R_1+R_2}{2}$.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "19",
+        "B": "48",
+        "C": "38",
+        "D": "24"
+      },
+      "correct_option_label": "A",
+      "explanation": "By the remainder theorem, $R_1=P(2)=16+24-20+14+9=43$ and $R_2=P(-1)=1-3-5-7+9=-5$.\n$\\frac{R_1+R_2}{2}=\\frac{43-5}{2}=19$.",
+      "module": "Quantitative Ability",
+      "topic": "Number System",
+      "subtopic": "Remainder",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "41",
+      "question_text": "Sumeet starts from Point Y and drives 12 km towards the West. He then takes a left turn, drives 74 km, turns right and drives 65 km. He then takes a right turn and drives 57 km. He takes a right turn, drives 31 km. He then turns left and drives 17 km to stop at Point Z. How far (shortest distance) and towards which direction should he drive in order to reach Point Y again? (All turns are 90 degrees turns only unless specified)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "46 km towards the east",
+        "B": "44 km towards the east",
+        "C": "49 km towards the west",
+        "D": "48 km towards the west"
+      },
+      "correct_option_label": "A",
+      "explanation": "Take Y as origin: 12 W → (−12, 0); left (S) 74 → (−12, −74); right (W) 65 → (−77, −74); right (N) 57 → (−77, −17); right (E) 31 → (−46, −17); left (N) 17 → (−46, 0) = Z.\nZ is 46 km west of Y, so he must drive 46 km towards the east.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Directions",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "42",
+      "question_text": "A, B, C, D, E, and F each scored different marks. B was the third lowest scorer. D scored more than A but less than F. E scored more than C but less than A. How many people scored less than D?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Three",
+        "B": "One",
+        "C": "Two",
+        "D": "Four"
+      },
+      "correct_option_label": "D",
+      "explanation": "C < E < A < D < F, and B is third lowest.\nOrder (lowest to highest): C, E, B, A, D, F.\nC, E, B and A scored less than D → four.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Arrangements",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "43",
+      "question_text": "What should come in place of the question mark ‘?’ in the given series? 81, 84, 90, 99, 111, ?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "135",
+        "B": "129",
+        "C": "126",
+        "D": "141"
+      },
+      "correct_option_label": "C",
+      "explanation": "Differences: +3, +6, +9, +12, so the next difference is +15.\n111 + 15 = 126.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Coding & Decoding",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "44",
+      "question_text": "If 4 March 1993 is a Thursday, what will be the day of the week on 12 November 2004?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Thursday",
+        "B": "Saturday",
+        "C": "Friday",
+        "D": "Wednesday"
+      },
+      "correct_option_label": "C",
+      "explanation": "4 Mar 1993 → 4 Mar 2004: 11 years with 3 leap days (1996, 2000, 2004) = 14 odd days ≡ 0, so 4 Mar 2004 is Thursday.\n4 Mar → 12 Nov 2004 = 27 + 30 + 31 + 30 + 31 + 31 + 30 + 31 + 12 = 253 days ≡ 1 odd day.\nThursday + 1 = Friday.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Clocks & Calendar",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "45",
+      "question_text": "A, B, C, D, E, F and G are sitting around a circular table facing the centre. B sits third to the right of E. C sits second to the left of B. A is the immediate neighbour of D and E. G sits to the immediate left of D. How many people sit between F and D when counted from the left of D?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Three",
+        "B": "Two",
+        "C": "Four",
+        "D": "One"
+      },
+      "correct_option_label": "B",
+      "explanation": "Seats in order from E, moving towards E's left: E, A, D, G, B, F, C (B third to right of E, C second to left of B, A between E and D, G to D's immediate left, F in the remaining seat).\nGoing from D towards its left: G, B, then F → two people (G and B) sit between them.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Arrangements",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "46",
+      "question_text": "In a certain code language:\n\n| Expression | Meaning |\n|---|---|\n| A + B | A is the sister of B |\n| A - B | A is the brother of B |\n| A # B | A is the wife of B |\n| A @ B | A is the father of B |\n\nBased on the above, how is Z related to F if **Z + L # M @ T - F**?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Sister’s daughter",
+        "B": "Father’s mother",
+        "C": "Mother’s mother",
+        "D": "Mother’s sister"
+      },
+      "correct_option_label": "D",
+      "explanation": "Z + L: Z is L's sister; L # M: L is M's wife; M @ T: M is T's father; T − F: T is F's brother.\nSo L is F's mother and Z is L's sister → Z is F's mother's sister.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Blood Relations",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "47",
+      "question_text": "Each of P, Q, R, S, T, U and V has an exam on a different day of a week starting from Monday and ending on Sunday of the same week. R has an exam on Tuesday. Only four people have exams before U. T has an exam immediately before V but not on Wednesday. S has an exam on some day after Q but not on Thursday. How many people have exams between P and T?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Three",
+        "B": "Four",
+        "C": "One",
+        "D": "Two"
+      },
+      "correct_option_label": "C",
+      "explanation": "R = Tue; four before U → U = Fri. T–V consecutive with T not Wed: only Sat–Sun works.\nRemaining Mon, Wed, Thu for P, Q, S; S after Q and not Thu → Q = Mon, S = Wed, P = Thu.\nBetween P (Thu) and T (Sat): only U → one.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Arrangements",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "48",
+      "question_text": "In this question, a statement is followed by two conclusions numbered I and II. Assume everything in the statement to be true and decide which conclusion(s) logically follow beyond a reasonable doubt.\n\n**Statement:** Due to changes in the charges per unit of consumption in state X, the last date for payment of electricity bills has been extended by 15 days by the State Government. It can now be paid up to 16th April 2026 without any penalty for late payment.\n\n**Conclusions:**\n\nI. Electricity connections will be disconnected for those people in state X who do not pay the electricity bills by 16th April 2026.\n\nII. A penalty will be charged for electricity bill payments that are made after 16th April 2026 in state X.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Only conclusion II follows.",
+        "B": "Only conclusion I follows.",
+        "C": "Neither conclusion I nor II follows.",
+        "D": "Both conclusions I and II follow."
+      },
+      "correct_option_label": "A",
+      "explanation": "Payment up to 16 April is allowed without penalty, implying a penalty applies after that date → II follows.\nNothing is said about disconnection → I does not follow.",
+      "module": "Logical Reasoning",
+      "topic": "Critical Reasoning",
+      "subtopic": "Statement & Conclusion",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "49",
+      "question_text": "If + means −, − means ×, × means ÷, ÷ means +, then what will come in place of the question mark (?) in the following equation? 17 ÷ 63 − 3 + 84 × 12 = ?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "199",
+        "B": "187",
+        "C": "258",
+        "D": "201"
+      },
+      "correct_option_label": "A",
+      "explanation": "After substitution: 17 + 63 × 3 − 84 ÷ 12.\n= 17 + 189 − 7 = 199.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Coding & Decoding",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "50",
+      "question_text": "Based on the English alphabetical order, three of the following four letter- clusters are alike in a certain way and thus form a group. Which is the one that does not belong to that group? (Note: The odd one out is not based on the number of consonants/vowels or their position in the letter-cluster.)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "EKH",
+        "B": "PVS",
+        "C": "DJH",
+        "D": "MSP"
+      },
+      "correct_option_label": "C",
+      "explanation": "EKH: E(5) +6 → K(11) −3 → H(8); PVS: 16, 22, 19 (+6, −3); MSP: 13, 19, 16 (+6, −3).\nDJH: 4, 10, 8 (+6, −2) → odd one out.",
+      "module": "Logical Reasoning",
+      "topic": "Logical Reasoning",
+      "subtopic": "Odd One Out",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "51",
+      "question_text": "The PM Gati Shakti National Master Plan was introduced mainly to improve which aspects of India’s infrastructure and development strategy?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Urban retail marketing and tourism sector privatization",
+        "B": "Agricultural subsidy distribution and rural credit expansion",
+        "C": "Integrated multimodal logistics and infrastructure planning",
+        "D": "Corporate banking regulation and monetary policy control"
+      },
+      "correct_option_label": "C",
+      "explanation": "PM Gati Shakti is a digital platform for integrated planning and coordinated implementation of multimodal connectivity and logistics infrastructure projects.",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "subtopic": "Economy",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "52",
+      "question_text": "An Indian smartphone manufacturer faced higher production costs after the rupee depreciated during a period of rising electronic component import costs and elevated crude oil prices. Which Balance of Payments situation most likely caused this pressure on the rupee?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rapid agricultural output expansion from improved monsoons",
+        "B": "Persistent current account deficit from rising import payments",
+        "C": "Sustained fiscal revenue growth from higher GST collections",
+        "D": "Continuous capital account surplus from foreign investments"
+      },
+      "correct_option_label": "B",
+      "explanation": "Higher import payments (electronic components, crude oil) widen the current account deficit, increasing demand for foreign currency and putting pressure on the rupee.",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "subtopic": "Economy",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "53",
+      "question_text": "Which Indian conglomerate became the new owner of ACC and Ambuja Cements after acquiring Holcim’s India business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "JSW Group",
+        "B": "Aditya Birla Group",
+        "C": "Reliance Industries",
+        "D": "Adani Group"
+      },
+      "correct_option_label": "D",
+      "explanation": "Adani Group acquired Holcim's stake in Ambuja Cements and ACC in 2022.",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "subtopic": "Economy",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "54",
+      "question_text": "In the Union Budget 2026–27, which sector received major emphasis under the government’s employment-generation strategy?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Luxury retail",
+        "B": "Precious metals trade",
+        "C": "Textile sector",
+        "D": "Airline privatisation"
+      },
+      "correct_option_label": "C",
+      "explanation": "Textile sector",
+      "module": "General Awareness",
+      "topic": "Current Affairs",
+      "subtopic": "2026",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "55",
+      "question_text": "What is the main purpose of the repo rate fixed by the Reserve Bank of India?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Determine the minimum wage rate",
+        "B": "Fix stock market prices",
+        "C": "Regulate liquidity in the banking system",
+        "D": "Control fiscal deficit directly"
+      },
+      "correct_option_label": "C",
+      "explanation": "The repo rate is the rate at which the RBI lends to banks, and it is used mainly to regulate liquidity and inflation in the banking system.",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "subtopic": "Economy",
+      "difficulty": "Easy"
+    },
+    {
+      "question_id": "56",
+      "question_text": "India’s first Unicorn of the year 2026 emerged from which of the following business domains?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Electric mobility infrastructure and battery swapping",
+        "B": "AI-driven retail investment and stock advisory services",
+        "C": "Satellite launch manufacturing and propulsion systems",
+        "D": "Backend digital payments infrastructure and checkout solutions"
+      },
+      "correct_option_label": "D",
+      "explanation": "Backend digital payments infrastructure and checkout solutions",
+      "module": "General Awareness",
+      "topic": "Current Affairs",
+      "subtopic": "2026",
+      "difficulty": "Hard"
+    },
+    {
+      "question_id": "57",
+      "question_text": "India’s focus on improving the quality of human capital through skill development and digital inclusion initiatives mainly aims to address which long-term economic challenges?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Corporate expansion and luxury market consumption",
+        "B": "Improving Gross Enrolment Ratio in higher education",
+        "C": "Structural unemployment and workforce productivity",
+        "D": "Agricultural imbalance and regional trade performance"
+      },
+      "correct_option_label": "C",
+      "explanation": "Skill development and digital inclusion aim to raise workforce productivity and reduce structural unemployment caused by skill mismatches.",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "subtopic": "Economy",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "58",
+      "question_text": "According to the Government of India Budget 2026–27, which of the following sectors was linked with the proposed “BharatVISTAAR” initiative?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "AI-enabled agricultural systems integration",
+        "B": "Semiconductor manufacturing integration",
+        "C": "Inland waterways logistics integration",
+        "D": "Tourism and cultural heritage integration"
+      },
+      "correct_option_label": "A",
+      "explanation": "AI-enabled agricultural systems integration",
+      "module": "General Awareness",
+      "topic": "Current Affairs",
+      "subtopic": "2026",
+      "difficulty": "Hard"
+    },
+    {
+      "question_id": "59",
+      "question_text": "Under Startup India Fund of Funds 2.0, startup investments are proposed to be routed through which entities?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "DPIIT-approved startup incubators",
+        "B": "RBI-regulated commercial banks",
+        "C": "State industrial finance bodies",
+        "D": "SEBI-registered Category I & II AIFs"
+      },
+      "correct_option_label": "D",
+      "explanation": "SEBI-registered Category I & II AIFs",
+      "module": "General Awareness",
+      "topic": "Current Affairs",
+      "subtopic": "2026",
+      "difficulty": "Hard"
+    },
+    {
+      "question_id": "60",
+      "question_text": "Which Indian conglomerate owns Novelis, one of the world’s largest aluminium rolling and recycling companies?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Tata Group",
+        "B": "Aditya Birla Group",
+        "C": "JSW Group",
+        "D": "Vedanta Group"
+      },
+      "correct_option_label": "B",
+      "explanation": "Novelis is a subsidiary of Hindalco Industries, which belongs to the Aditya Birla Group.",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "subtopic": "Economy",
+      "difficulty": "Medium"
+    }
+  ]
+}
