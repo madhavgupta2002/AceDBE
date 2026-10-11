@@ -3,7 +3,27 @@
         "subject_name": "Management Accounting",
         "exam_date": "28 February 2026",
         "batch": 1,
-        "attempt": "Re 1"
+        "attempt": "Re 1",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 1 Term 3",
+          "duration_min": 60,
+          "total_marks": 75,
+          "negative_marking": false,
+          "calculator": "standard",
+          "timing_mode": "global",
+          "reference_materials": [],
+          "instructions": [],
+          "sections": [
+            {
+              "name": "Section 1",
+              "question_type": "MCQ",
+              "num_questions": 25,
+              "marks_per_question": 3,
+              "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25"]
+            }
+          ],
+          "total_questions": 25
+        }
     },
     "questions": [
         {
