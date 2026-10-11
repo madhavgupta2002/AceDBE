@@ -31,11 +31,6 @@ export default function EntrancePage() {
           BBA-DBE Entrance Test{' '}
           <span className="bg-gradient-to-r from-amber-300 to-orange-300 bg-clip-text text-transparent">Papers</span>
         </h1>
-        <p className="mt-1 text-xs text-slate-400 leading-relaxed">
-          Computer-based test, 90 minutes, 60 questions: Verbal Ability &amp; Reading Comprehension (20), Quantitative Aptitude
-          &amp; Data Interpretation (20), Logical Analytical Reasoning (10) and General Awareness (10). An on-screen calculator
-          is provided and physical calculators are not allowed.
-        </p>
       </div>
 
       {loading ? (
@@ -75,11 +70,6 @@ export default function EntrancePage() {
           ))}
         </div>
       )}
-
-      <p className="mt-4 text-[11px] text-slate-500 leading-relaxed">
-        Practice opens the paper as an untimed quiz with explanations. CBT Exam runs it in the exam-centre interface with the
-        timer and on-screen calculator. Some questions rely on a chart or figure that is shown as an image where the source had it.
-      </p>
 
       {cbtPaper && (
         <CbtExam

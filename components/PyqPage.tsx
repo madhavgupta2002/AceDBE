@@ -159,10 +159,6 @@ export default function PyqPage() {
                 (PYQs)
               </span>
             </h1>
-            <p className="mt-1 text-xs text-slate-400 max-w-2xl leading-relaxed">
-              Browse exam papers across trimesters. Click any available paper to
-              launch a live timed quiz or print the full question sheet.
-            </p>
 
             {/* Quick Metrics */}
             <div className="mt-2.5 flex flex-wrap items-center gap-2 text-[11px] font-medium text-slate-400">
@@ -259,15 +255,7 @@ export default function PyqPage() {
                   </button>
                 </div>
               </div>
-            ) : actionType === 'cbt' ? (
-              <p className="text-[10px] text-slate-400 px-0.5">
-                Timed exam in the real exam-centre interface, using the official pattern (or a standard practice pattern when none is recorded).
-              </p>
-            ) : (
-              <p className="text-[10px] text-slate-400 px-0.5">
-                Clicking any paper opens an interactive practice quiz.
-              </p>
-            )}
+            ) : null}
           </div>
         </div>
 
