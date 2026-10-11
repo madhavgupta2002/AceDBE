@@ -148,6 +148,19 @@ PATTERNS = {
         negative_marks_fraction=0.2,
         notes=["Negative marking: 20% of the marks assigned to a question is deducted for a wrong answer.", ROUGH]),
 
+    # ---------------- Retakes of the same courses (June 2026 / Feb 2026 / Mar 2026) ----------------
+    # Not listed in the notices themselves; same course and same question count as the regular sitting, so the same pattern is used.
+    "MD42x/Exam/20 June 2026.json": pattern(B1T4, 60, 100, [S("Section 1", "MCQ", 50, 2)]),
+    "MK41x/Exam/20 June 2026.json": pattern(B1T4, 120, 100, [S("Section 1", "MCQ", 40), W("Section 2", "SUBJECTIVE", 5, take=5)]),
+    "OB41x/Exam/21 June 2026.json": pattern(
+        B1T4, 120, 100, [
+            S("Section 1", "MCQ", 10),
+            S("Section 2", "MSQ", 25, msq_scoring="exact"),
+            S("Section 3", "CASELET_MCQ", 30),
+        ]),
+    "FA31x/Exam/28 February 2026.json": pattern(B1T3, 60, 75, [S("Section 1", "MCQ", 25, 3)], calculator="standard"),
+    "DS11x_B2/Exam/29 March 2026.json": pattern(B2T1, 60, 100, [S("Section 1", "MCQ", 35)], notes=[NO_NEG_100]),
+
     # ---------------- Batch 1, Term 3 (Sep 2025) ----------------
     "FA31x/Exam/20 September 2025.json": pattern(B1T3, 60, 75, [S("Section 1", "MCQ", 25, 3)], calculator="standard"),
     "SE31x/Exam/25 September 2025.json": pattern(
