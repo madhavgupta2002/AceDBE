@@ -1,7 +1,28 @@
 {
     "exam_metadata": {
         "subject_name": "Business Statistics for Entrepreneurs",
-        "exam_date": "29 March 2026"
+        "exam_date": "29 March 2026",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 2 Term 1",
+          "duration_min": 60,
+          "total_marks": 100,
+          "negative_marking": false,
+          "calculator": "none",
+          "timing_mode": "global",
+          "reference_materials": [],
+          "instructions": [
+            "No negative marking. 100 total marks per paper."
+          ],
+          "sections": [
+            {
+              "name": "Section 1",
+              "question_type": "MCQ",
+              "num_questions": 35,
+              "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35"]
+            }
+          ],
+          "total_questions": 35
+        }
     },
     "questions": [
         {
