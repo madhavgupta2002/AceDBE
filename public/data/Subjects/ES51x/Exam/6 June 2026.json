@@ -3,7 +3,53 @@
         "subject_name": "Principles of Macroeconomics",
         "exam_date": "06 June 2026",
         "batch": "",
-        "attempt": ""
+        "attempt": "",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 1 Term 5",
+          "duration_min": 60,
+          "total_marks": 70,
+          "negative_marking": false,
+          "calculator": "none",
+          "timing_mode": "sectional",
+          "reference_materials": [],
+          "instructions": [
+            "Revised pattern: 5 minutes are kept for cross-checking. The written sections are stored as 8 SUBJECTIVE entries in this bank."
+          ],
+          "sections": [
+            {
+              "name": "Section A",
+              "question_type": "MCQ",
+              "num_questions": 20,
+              "marks_per_question": 2,
+              "duration_min": 15,
+              "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
+            },
+            {
+              "name": "Section B",
+              "question_type": "SHORT_ANSWER",
+              "num_questions": 2,
+              "marks_per_question": 5,
+              "duration_min": 10
+            },
+            {
+              "name": "Section C",
+              "question_type": "CASE_BASED",
+              "num_questions": 1,
+              "marks_per_question": 10,
+              "duration_min": 15,
+              "note": "Choice of A or B"
+            },
+            {
+              "name": "Section D",
+              "question_type": "HIGHER_ORDER",
+              "num_questions": 1,
+              "marks_per_question": 10,
+              "duration_min": 15,
+              "note": "Choice of A or B"
+            }
+          ],
+          "total_questions": 24
+        }
     },
     "questions": [
         {

@@ -1,7 +1,27 @@
 {
   "exam_metadata": {
     "subject_name": "Design Your Thinking",
-    "exam_date": "25 September 2025"
+    "exam_date": "25 September 2025",
+    "exam_pattern": {
+      "exam_name": "IIMB BBA DBE Batch 1 Term 3",
+      "duration_min": 60,
+      "total_marks": 100,
+      "negative_marking": false,
+      "calculator": "none",
+      "timing_mode": "global",
+      "reference_materials": [],
+      "instructions": ["Paper and pen exam."],
+      "sections": [
+        {
+          "name": "Section 1",
+          "question_type": "SUBJECTIVE",
+          "num_questions": 4,
+          "marks_per_question": 25,
+          "question_ids": ["1", "2", "3", "4"]
+        }
+      ],
+      "total_questions": 4
+    }
   },
   "questions": [
     {

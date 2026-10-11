@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { SUBJECTS } from './subjectMapping';
+import type { ExamPattern } from './types';
 
 export interface ExamCycle {
   id: string;
@@ -24,6 +25,15 @@ export interface ExamPaperInfo {
   displayDate: string;
   questionCount: number;
   subjectCode: string;
+  /** Present when the paper carries an official exam pattern with at least one CBT-capable (non-subjective) question. */
+  cbt?: {
+    durationMin: number;
+    totalMarks: number;
+    questionCount: number; // questions the CBT exam will actually show
+    timingMode: 'global' | 'sectional';
+    sectionCount: number;
+    hasWrittenPart: boolean; // part of the paper is subjective and cannot be taken in the CBT
+  };
 }
 
 export interface SubjectPyqInfo {
@@ -56,6 +66,21 @@ function matchCycleId(dateStr: string, filename: string): string | null {
     if (s.includes('aug') || s.includes('sep')) return 'cycle-6';
   }
   return null;
+}
+
+function summariseCbt(pattern?: ExamPattern): ExamPaperInfo['cbt'] {
+  if (!pattern || !Array.isArray(pattern.sections)) return undefined;
+  const cbtSections = pattern.sections.filter(s => (s.question_ids?.length ?? 0) > 0);
+  const questionCount = cbtSections.reduce((n, s) => n + (s.question_ids?.length ?? 0), 0);
+  if (questionCount === 0) return undefined;
+  return {
+    durationMin: pattern.duration_min,
+    totalMarks: pattern.total_marks,
+    questionCount,
+    timingMode: pattern.timing_mode,
+    sectionCount: cbtSections.length,
+    hasWrittenPart: pattern.sections.some(s => (s.question_ids?.length ?? 0) === 0),
+  };
 }
 
 function formatDisplayDate(rawDate: string): string {
@@ -170,6 +195,7 @@ export function getPyqData(): TermPyqGroup[] {
                 displayDate: formatDisplayDate(rawDate),
                 questionCount,
                 subjectCode: code,
+                cbt: summariseCbt(parsed.exam_metadata?.exam_pattern),
               });
             }
           } catch (e) {
