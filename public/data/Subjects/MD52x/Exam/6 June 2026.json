@@ -3,7 +3,34 @@
         "subject_name": "New Product Development",
         "exam_date": "06 June 2026",
         "batch": "",
-        "attempt": ""
+        "attempt": "",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 1 Term 5",
+          "duration_min": 120,
+          "total_marks": 75,
+          "negative_marking": false,
+          "calculator": "none",
+          "timing_mode": "global",
+          "reference_materials": [],
+          "instructions": [],
+          "sections": [
+            {
+              "name": "Section A",
+              "question_type": "MCQ",
+              "num_questions": 30,
+              "marks_per_question": 1,
+              "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"]
+            },
+            {
+              "name": "Section B",
+              "question_type": "SHORT_ANSWER",
+              "num_questions": 9,
+              "marks_per_question": 5,
+              "question_ids": ["31", "32", "33", "34", "35", "36", "37", "38", "39"]
+            }
+          ],
+          "total_questions": 39
+        }
     },
     "questions": [
         {
