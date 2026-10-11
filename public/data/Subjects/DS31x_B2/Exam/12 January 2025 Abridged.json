@@ -7,8 +7,23 @@
   },
   "questions": [
     {
+      "question_id": "Passage_1",
+      "question_text": "In data used to construct a valid simple linear regression model with 10 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to 2840, ∑(X_i-Xbar)^2 equals 568 and ∑(Yi-Ybar)^2 = 15730. The sample average for x given by Xbar was 16 and the sample average for y given by Ybar was 134.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 2
+    },
+    {
       "question_id": "236144719",
-      "question_text": "In data used to construct a valid simple linear regression model with 10 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to 2840, ∑(X_i-Xbar)^2 equals 568 and ∑(Yi-Ybar)^2 = 15730. The sample average for x given by Xbar was 16 and the sample average for y given by Ybar was 134. These results imply that, if X equals 20, the expected value for Y would be:",
+      "question_text": "These results imply that, if X equals 20, the expected value for Y would be:",
       "question_type": "MCQ",
       "options": {
         "A": "134",
@@ -18,11 +33,12 @@
       },
       "correct_option_label": "B",
       "explanation": "Step 1: Find slope (\\beta_1) = \\frac{\\sum(X_i-\\bar{X})(Y_i-\\bar{Y})}{\\sum(X_i-\\bar{X})^2} = \\frac{2840}{568} = 5.\nStep 2: Find intercept (\\beta_0) = \\bar{Y} - \\beta_1\\bar{X} = 134 - 5(16) = 134 - 80 = 54.\nStep 3: Predict Y for X=20. \\hat{Y} = 54 + 5(20) = 54 + 100 = 154.",
-      "module": 2
+      "module": 2,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "236144720",
-      "question_text": "In data used to construct a valid simple linear regression model with 10 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to 2840, ∑(X_i-Xbar)^2 equals 568 and ∑(Yi-Ybar)^2 = 15730. The sample average for x given by Xbar was 16 and the sample average for y given by Ybar was 134. These results imply that the percentage of variation in Y that could be attributed to variation in X is:",
+      "question_text": "These results imply that the percentage of variation in Y that could be attributed to variation in X is:",
       "question_type": "MCQ",
       "options": {
         "A": "0.8",
@@ -32,7 +48,8 @@
       },
       "correct_option_label": "C",
       "explanation": "Step 1: Calculate R^2 = \\frac{[\\sum(X_i-\\bar{X})(Y_i-\\bar{Y})]^2}{\\sum(X_i-\\bar{X})^2 \\sum(Y_i-\\bar{Y})^2}.\nStep 2: R^2 = \\frac{2840^2}{568 \\times 15730} = \\frac{8065600}{8934640} \\approx 0.902.\nStep 3: The percentage of variation is 0.9.",
-      "module": 2
+      "module": 2,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "236144721",
@@ -49,8 +66,23 @@
       "module": 2
     },
     {
+      "question_id": "Passage_2",
+      "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, x_2, x_3, x_4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x_1, x_2, x_3, x_4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x_1, x_2, x_3, x_4 were 1.5, 0.5, -1.0, and 8.0 respectively.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 3
+    },
+    {
       "question_id": "236144722",
-      "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, x_2, x_3, x_4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x_1, x_2, x_3, x_4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x_1, x_2, x_3, x_4 were 1.5, 0.5, -1.0, and 8.0 respectively. These results imply that Adjusted R Square is equal to",
+      "question_text": "These results imply that Adjusted R Square is equal to",
       "question_type": "MCQ",
       "options": {
         "A": "0.60",
@@ -60,11 +92,12 @@
       },
       "correct_option_label": "A",
       "explanation": "Step 1: Calculate SSR = MSR \\times k = 125 \\times 4 = 500.\nStep 2: Calculate R^2 = SSR / SST = 500 / 760 \\approx 0.6579.\nStep 3: Adjusted R^2 = 1 - \\frac{(1 - R^2)(n - 1)}{n - k - 1} = 1 - \\frac{(1 - 0.6579)(30)}{31 - 4 - 1} = 1 - \\frac{0.3421 \\times 30}{26} \\approx 1 - 0.3947 = 0.6053 \\approx 0.60.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "236144723",
-      "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, x_2, x_3, x_4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x_1, x_2, x_3, x_4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x_1, x_2, x_3, x_4 were 1.5, 0.5, -1.0, and 8.0 respectively. These results imply that b_2 is equal to",
+      "question_text": "These results imply that b_2 is equal to",
       "question_type": "MCQ",
       "options": {
         "A": "0.4",
@@ -74,11 +107,27 @@
       },
       "correct_option_label": "D",
       "explanation": "Coefficient b_i = t_i \\times SE_i. For the second variable x_2: b_2 = t_2 \\times SE_2 = 0.5 \\times 48 = 24.0.",
+      "module": 3,
+      "passage_id": "Passage_2"
+    },
+    {
+      "question_id": "Passage_3",
+      "question_text": "When data with 18 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, ..., x_4 the following outputs were obtained. The RSquare was 0.36, standard error was 4.8.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
       "module": 3
     },
     {
       "question_id": "236144724",
-      "question_text": "When data with 18 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, ..., x_4 the following outputs were obtained. The RSquare was 0.36, standard error was 4.8. These results imply that MSR is equal to",
+      "question_text": "These results imply that MSR is equal to",
       "question_type": "MCQ",
       "options": {
         "A": "22",
@@ -88,11 +137,12 @@
       },
       "correct_option_label": "C",
       "explanation": "Step 1: MSE = (Standard Error)^2 = 4.8^2 = 23.04. df_{error} = n - k - 1 = 18 - 4 - 1 = 13.\nStep 2: SSE = MSE \\times df_{error} = 23.04 \\times 13 = 299.52.\nStep 3: R^2 = SSR / (SSR + SSE) \\implies 0.36 = SSR / (SSR + 299.52) \\implies 0.36(SSR) + 107.8272 = SSR \\implies 107.8272 = 0.64(SSR) \\implies SSR = 168.48.\nStep 4: MSR = SSR / k = 168.48 / 4 = 42.12 \\approx 42.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_3"
     },
     {
       "question_id": "236144725",
-      "question_text": "When data with 18 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, ..., x_4 the following outputs were obtained. The RSquare was 0.36, standard error was 4.8. These results imply that F - statistic is equal to",
+      "question_text": "These results imply that F - statistic is equal to",
       "question_type": "MCQ",
       "options": {
         "A": "0.018",
@@ -102,7 +152,8 @@
       },
       "correct_option_label": "D",
       "explanation": "Step 1: F = \\frac{R^2 / k}{(1 - R^2) / (n - k - 1)}.\nStep 2: n = 18, k = 4, R^2 = 0.36.\nStep 3: F = \\frac{0.36 / 4}{(1 - 0.36) / (18 - 4 - 1)} = \\frac{0.09}{0.64 / 13} = \\frac{0.09}{0.04923} \\approx 1.828 \\approx 1.8.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_3"
     }
   ]
 }

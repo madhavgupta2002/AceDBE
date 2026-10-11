@@ -736,8 +736,23 @@
       "module": 8
     },
     {
+      "question_id": "Passage_1",
+      "question_text": "Case # 1 - The \"NeevRoots\" Beginning\n\nReva and Ismail, engineering-college batchmates, watched roadside vegetable vendors in their hometown throw away nearly a third of their produce every week for lack of cold storage. Neither of them had ever run a business. Still, Reva had grown up helping in her family's small food-processing unit and knew basic dehydration and packaging techniques. At the same time, Ismail had spent two years managing last-mile logistics for a delivery startup and had a network of local kirana store owners. Rather than commissioning a market study or writing a five-year financial model, they started experimenting with what they already had: Reva's food-processing know-how, Ismail's delivery contacts, and a small conference-room table.\n\nThey agreed upfront that they would risk no more than ₹40,000 of their combined savings — roughly what each was willing to lose without derailing their lives — and would stop and reassess if that ran out. Early on, a local vegetable wholesaler who had heard about their idea walked in and offered surplus produce for free in exchange for a share of future revenue if the dried-vegetable packets sold well; Reva and Ismail restructured their initial plan around this offer rather than turning it down to protect their \"original\" concept. Then, an unseasonal early monsoon disrupted their planned drying process for two weeks — instead of shutting down, they used the enforced pause to experiment with a new spiced, ready-to-cook dried-vegetable mix, which became their most popular product line six months later.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 1
+    },
+    {
       "question_id": "4513871125",
-      "question_text": "Case # 1 - The \"NeevRoots\" Beginning\n\nReva and Ismail, engineering-college batchmates, watched roadside vegetable vendors in their hometown throw away nearly a third of their produce every week for lack of cold storage. Neither of them had ever run a business. Still, Reva had grown up helping in her family's small food-processing unit and knew basic dehydration and packaging techniques. At the same time, Ismail had spent two years managing last-mile logistics for a delivery startup and had a network of local kirana store owners. Rather than commissioning a market study or writing a five-year financial model, they started experimenting with what they already had: Reva's food-processing know-how, Ismail's delivery contacts, and a small conference-room table.\n\nThey agreed upfront that they would risk no more than ₹40,000 of their combined savings — roughly what each was willing to lose without derailing their lives — and would stop and reassess if that ran out. Early on, a local vegetable wholesaler who had heard about their idea walked in and offered surplus produce for free in exchange for a share of future revenue if the dried-vegetable packets sold well; Reva and Ismail restructured their initial plan around this offer rather than turning it down to protect their \"original\" concept. Then, an unseasonal early monsoon disrupted their planned drying process for two weeks — instead of shutting down, they used the enforced pause to experiment with a new spiced, ready-to-cook dried-vegetable mix, which became their most popular product line six months later.\n\nReva and Ismail's decision to begin with their existing food-processing knowledge, logistics contacts, and a conference table — rather than first defining a target revenue goal — best illustrates which effectuation principle?",
+      "question_text": "Reva and Ismail's decision to begin with their existing food-processing knowledge, logistics contacts, and a conference table — rather than first defining a target revenue goal — best illustrates which effectuation principle?",
       "question_type": "MCQ",
       "options": {
         "A": "Affordable Loss",
@@ -747,11 +762,12 @@
       },
       "correct_option_label": "D",
       "explanation": "Starting from existing competencies, traits, and networks (what they know and whom they know) directly demonstrates the Bird-in-Hand principle.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "4513871126",
-      "question_text": "Refer to Case # 1 - The \"NeevRoots\" Beginning in Question ID 4513871125 for context.\n\nCapping their combined risk at ₹40,000 — an amount they were willing to lose without derailing their lives — reflects the Affordable Loss principle. What would have most contradicted this principle?",
+      "question_text": "Capping their combined risk at ₹40,000 — an amount they were willing to lose without derailing their lives — reflects the Affordable Loss principle. What would have most contradicted this principle?",
       "question_type": "MCQ",
       "options": {
         "A": "Treating the cap as a decision checkpoint rather than a target to exceed",
@@ -761,11 +777,12 @@
       },
       "correct_option_label": "B",
       "explanation": "Leveraging personal or family assets to pursue an uncertain expected return directly contradicts bounding downside exposure via Affordable Loss.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "4513871127",
-      "question_text": "Refer to Case # 1 - The \"NeevRoots\" Beginning in Question ID 4513871125 for context.\n\nWhen the wholesaler offered free surplus produce in exchange for a future revenue share, Reva and Ismail restructured their plan around this offer instead of rejecting it to \"protect\" their original idea. This response demonstrates:",
+      "question_text": "When the wholesaler offered free surplus produce in exchange for a future revenue share, Reva and Ismail restructured their plan around this offer instead of rejecting it to \"protect\" their original idea. This response demonstrates:",
       "question_type": "MCQ",
       "options": {
         "A": "The Affordable Loss principle",
@@ -775,11 +792,12 @@
       },
       "correct_option_label": "B",
       "explanation": "Embracing a self-selecting stakeholder who commits tangible resources (free surplus produce) to re-shape the venture aligns with the Crazy Quilt partnership principle.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "4513871128",
-      "question_text": "Refer to Case # 1 - The \"NeevRoots\" Beginning in Question ID 4513871125 for context.\n\nUsing the enforced monsoon disruption to develop a new spiced, ready-to-cook product line — which went on to become their best-seller — is a direct application of:",
+      "question_text": "Using the enforced monsoon disruption to develop a new spiced, ready-to-cook product line — which went on to become their best-seller — is a direct application of:",
       "question_type": "MCQ",
       "options": {
         "A": "The Affordable Loss principle",
@@ -789,11 +807,12 @@
       },
       "correct_option_label": "C",
       "explanation": "The Lemonade principle involves transforming unplanned external surprises and constraints into valuable new entrepreneurial directions.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "4513871129",
-      "question_text": "Refer to Case # 1 - The \"NeevRoots\" Beginning in Question ID 4513871125 for context.\n\nA well-meaning mentor advises Reva and Ismail to pause operations, commission a detailed market-sizing study of the dried-vegetable category, forecast three years of revenue, and only then decide how to proceed. Why would strictly following this advice run counter to the effectual approach they have used so far?",
+      "question_text": "A well-meaning mentor advises Reva and Ismail to pause operations, commission a detailed market-sizing study of the dried-vegetable category, forecast three years of revenue, and only then decide how to proceed. Why would strictly following this advice run counter to the effectual approach they have used so far?",
       "question_type": "MCQ",
       "options": {
         "A": "It is illegal to operate without a formal market study",
@@ -803,11 +822,27 @@
       },
       "correct_option_label": "D",
       "explanation": "Effectual logic prioritizes non-predictive control and direct experiential learning over speculative, long-range forecasting models.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_1"
+    },
+    {
+      "question_id": "Passage_2",
+      "question_text": "Case # 2 - FreshCrate\n\nFreshCrate is an innovative early-stage venture focused on transforming the way residents of Tier-1 Indian cities access their fresh produce. The company plans to deliver weekly boxes filled with farm-fresh, pre-portioned vegetables directly to apartment complexes, effectively reducing the inefficiencies caused by multiple layers of intermediaries commonly seen in the traditional mandi system.\n\nThe founder, who has a background as a supply-chain analyst, has carefully articulated the concept using a Lean Canvas framework. This one-page overview highlights key pain points, particularly inconsistent quality from local vendors and the significant time required to haggle and travel to procure fresh produce. To address these issues, FreshCrate aims to offer a curated selection of vegetables that have been meticulously tested for chemical residues, ensuring both quality and safety for consumers.\n\nIn terms of market reach, the company's strategy involves forming partnerships with resident welfare associations (RWAs) within various apartment complexes. This approach not only facilitates access to a concentrated customer base but also enhances community engagement through familiar organisational frameworks.\n\nBefore making substantial investments in cold-storage vans or securing long-term contracts with farmers, the founder is taking a cautious and cost-effective approach to validate demand for the service. This involves pilot testing to gauge interest and refine the product offering based on real customer feedback. Additionally, she is deliberating on which target demographic to prioritise as the initial beachhead segment: working professionals who may value convenience and time savings, or retired residents who might place a higher emphasis on quality and health.\n\nFurthermore, she recognises the need to gain a deeper understanding of daily sourcing operations. This insight will be crucial for shaping the supply chain logistics and ultimately building any necessary technology to streamline the process as the business scales.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 3
     },
     {
       "question_id": "4513871131",
-      "question_text": "Case # 2 - FreshCrate\n\nFreshCrate is an innovative early-stage venture focused on transforming the way residents of Tier-1 Indian cities access their fresh produce. The company plans to deliver weekly boxes filled with farm-fresh, pre-portioned vegetables directly to apartment complexes, effectively reducing the inefficiencies caused by multiple layers of intermediaries commonly seen in the traditional mandi system.\n\nThe founder, who has a background as a supply-chain analyst, has carefully articulated the concept using a Lean Canvas framework. This one-page overview highlights key pain points, particularly inconsistent quality from local vendors and the significant time required to haggle and travel to procure fresh produce. To address these issues, FreshCrate aims to offer a curated selection of vegetables that have been meticulously tested for chemical residues, ensuring both quality and safety for consumers.\n\nIn terms of market reach, the company's strategy involves forming partnerships with resident welfare associations (RWAs) within various apartment complexes. This approach not only facilitates access to a concentrated customer base but also enhances community engagement through familiar organisational frameworks.\n\nBefore making substantial investments in cold-storage vans or securing long-term contracts with farmers, the founder is taking a cautious and cost-effective approach to validate demand for the service. This involves pilot testing to gauge interest and refine the product offering based on real customer feedback. Additionally, she is deliberating on which target demographic to prioritise as the initial beachhead segment: working professionals who may value convenience and time savings, or retired residents who might place a higher emphasis on quality and health.\n\nFurthermore, she recognises the need to gain a deeper understanding of daily sourcing operations. This insight will be crucial for shaping the supply chain logistics and ultimately building any necessary technology to streamline the process as the business scales.\n\nOn FreshCrate's Lean Canvas, \"partnerships with apartment RWAs\" belongs under which block?",
+      "question_text": "On FreshCrate's Lean Canvas, \"partnerships with apartment RWAs\" belongs under which block?",
       "question_type": "MCQ",
       "options": {
         "A": "Key Metrics",
@@ -817,11 +852,12 @@
       },
       "correct_option_label": "B",
       "explanation": "Channels represent the direct pathways, partnerships, and mechanisms used to reach and deliver value to target customer segments.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "4513871132",
-      "question_text": "Refer to Case # 2 - FreshCrate in Question ID 4513871131 for context.\n\nBefore investing in cold-storage vans, the founder wants to test whether apartment residents will actually commit to a weekly vegetable box. Which action is the most appropriate Smoke Test?",
+      "question_text": "Before investing in cold-storage vans, the founder wants to test whether apartment residents will actually commit to a weekly vegetable box. Which action is the most appropriate Smoke Test?",
       "question_type": "MCQ",
       "options": {
         "A": "Building a fully automated logistics app with route optimisation before any customer has committed",
@@ -831,11 +867,12 @@
       },
       "correct_option_label": "B",
       "explanation": "A Smoke Test measures authentic customer purchase intent through a landing page and refundable pre-order deposit prior to committing capital to infrastructure.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "4513871133",
-      "question_text": "Refer to Case # 2 - FreshCrate in Question ID 4513871131 for context.\n\nWhich customer segment is most likely to be the strongest early adopter for FreshCrate, and why?",
+      "question_text": "Which customer segment is most likely to be the strongest early adopter for FreshCrate, and why?",
       "question_type": "MCQ",
       "options": {
         "A": "Retired residents who already visit the local market daily and enjoy selecting vegetables themselves",
@@ -845,11 +882,12 @@
       },
       "correct_option_label": "D",
       "explanation": "Early adopters have high problem awareness, experience acute friction with existing alternatives, and actively search for a solution that saves time and guarantees quality.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "4513871134",
-      "question_text": "Refer to Case # 2 - FreshCrate in Question ID 4513871131 for context.\n\nTo deeply understand day-to-day sourcing operations before building any app, the founder personally sources and hand-delivers boxes to 10 households for the first month, adjusting the offering based on direct interaction. This is an example of:",
+      "question_text": "To deeply understand day-to-day sourcing operations before building any app, the founder personally sources and hand-delivers boxes to 10 households for the first month, adjusting the offering based on direct interaction. This is an example of:",
       "question_type": "MCQ",
       "options": {
         "A": "A Concierge MVP — manually delivering the service to observe customer needs and workflows closely",
@@ -859,11 +897,12 @@
       },
       "correct_option_label": "A",
       "explanation": "A Concierge MVP involves manually performing the entire service in a high-touch, explicit manner to gain direct qualitative insights into workflows and user requirements.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "4513871135",
-      "question_text": "Refer to Case # 2 - FreshCrate in Question ID 4513871131 for context.\n\nWhich falsifiable hypothesis would best help FreshCrate validate the problem it claims to solve, before it builds any technology?",
+      "question_text": "Which falsifiable hypothesis would best help FreshCrate validate the problem it claims to solve, before it builds any technology?",
       "question_type": "MCQ",
       "options": {
         "A": "\"FreshCrate will eventually be profitable.\"",
@@ -873,11 +912,27 @@
       },
       "correct_option_label": "D",
       "explanation": "A robust falsifiable hypothesis sets measurable, observable conditions and a specific failure threshold evaluating actual customer behavior.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_2"
+    },
+    {
+      "question_id": "Passage_3",
+      "question_text": "Case # 3 - MedRoute & Meridian Capital\n\nMedRoute is an innovative health-tech startup that has been making strides in the healthcare sector for the past two years. Their platform serves as a vital link between diagnostic laboratories and hospitals, facilitating the swift transport of samples for urgent testing. This model has proven successful, allowing MedRoute to achieve Product-Market Fit in three major cities, where they have established a strong foothold.\n\nCurrently, the startup is achieving an impressive annualised revenue run rate of ₹2 crore. However, to fuel their ambitious plans for expansion into five additional cities, develop an electric fleet, and grow their operational team, MedRoute is facing significant financial challenges. The company is currently burning through ₹15 lakh in net cash each month, which has put pressure on their resources. At present, the founders have ₹75 lakh remaining in the bank, necessitating strategic financial planning.\n\nTo support their growth trajectory, MedRoute is in negotiations for a Series A funding round, seeking ₹8 crore from Meridian Capital, a venture capital fund with a strong focus on healthcare investments. They have agreed on a pre-money valuation of ₹32 crore. Before finalising the term sheet, the diligent team at Meridian Capital is investing six weeks to review MedRoute's accounting records meticulously. They are also engaging in conversations with former colleagues of both co-founders to gain insights into their backgrounds and assessing the makeup of MedRoute’s cap table by identifying any previous investors involved.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 7
     },
     {
       "question_id": "4513871137",
-      "question_text": "Case # 3 - MedRoute & Meridian Capital\n\nMedRoute is an innovative health-tech startup that has been making strides in the healthcare sector for the past two years. Their platform serves as a vital link between diagnostic laboratories and hospitals, facilitating the swift transport of samples for urgent testing. This model has proven successful, allowing MedRoute to achieve Product-Market Fit in three major cities, where they have established a strong foothold.\n\nCurrently, the startup is achieving an impressive annualised revenue run rate of ₹2 crore. However, to fuel their ambitious plans for expansion into five additional cities, develop an electric fleet, and grow their operational team, MedRoute is facing significant financial challenges. The company is currently burning through ₹15 lakh in net cash each month, which has put pressure on their resources. At present, the founders have ₹75 lakh remaining in the bank, necessitating strategic financial planning.\n\nTo support their growth trajectory, MedRoute is in negotiations for a Series A funding round, seeking ₹8 crore from Meridian Capital, a venture capital fund with a strong focus on healthcare investments. They have agreed on a pre-money valuation of ₹32 crore. Before finalising the term sheet, the diligent team at Meridian Capital is investing six weeks to review MedRoute's accounting records meticulously. They are also engaging in conversations with former colleagues of both co-founders to gain insights into their backgrounds and assessing the makeup of MedRoute’s cap table by identifying any previous investors involved.\n\nIf MedRoute does not close the round and continues burning ₹15 lakh a month against its current ₹75 lakh bank balance, what is its exact cash runway?",
+      "question_text": "If MedRoute does not close the round and continues burning ₹15 lakh a month against its current ₹75 lakh bank balance, what is its exact cash runway?",
       "question_type": "MCQ",
       "options": {
         "A": "5 months",
@@ -887,11 +942,12 @@
       },
       "correct_option_label": "A",
       "explanation": "Cash Runway is calculated as current cash reserves divided by net monthly burn rate:\n$$\\text{Runway} = \\frac{\\text{₹75 lakh}}{\\text{₹15 lakh/month}} = 5\\text{ months}$$",
-      "module": 7
+      "module": 7,
+      "passage_id": "Passage_3"
     },
     {
       "question_id": "4513871138",
-      "question_text": "Refer to Case # 3 - MedRoute & Meridian Capital in Question ID 4513871137 for context.\n\nIf Meridian Capital invests ₹8 crore at a ₹32 crore Pre-Money Valuation, what will MedRoute's Post-Money Valuation be, and what ownership percentage will Meridian hold immediately after closing?",
+      "question_text": "If Meridian Capital invests ₹8 crore at a ₹32 crore Pre-Money Valuation, what will MedRoute's Post-Money Valuation be, and what ownership percentage will Meridian hold immediately after closing?",
       "question_type": "MCQ",
       "options": {
         "A": "₹40 crore Post-Money; Meridian holds 10%",
@@ -901,11 +957,12 @@
       },
       "correct_option_label": "D",
       "explanation": "Post-Money Valuation and ownership percentage are calculated as:\n$$\\text{Post-Money} = \\text{Pre-Money} + \\text{Investment} = ₹32\\text{ Cr} + ₹8\\text{ Cr} = ₹40\\text{ Cr}$$\n$$\\text{Ownership \\%} = \\frac{\\text{Investment}}{\\text{Post-Money}} = \\frac{₹8\\text{ Cr}}{₹40\\text{ Cr}} = 20\\%$$",
-      "module": 7
+      "module": 7,
+      "passage_id": "Passage_3"
     },
     {
       "question_id": "4513871139",
-      "question_text": "Refer to Case # 3 - MedRoute & Meridian Capital in Question ID 4513871137 for context.\n\nDuring due diligence, Meridian's team specifically checks how many prior investors already sit on MedRoute's cap table. Why does a crowded cap table (e.g., 30–40 small angel investors) tend to concern VCs?",
+      "question_text": "During due diligence, Meridian's team specifically checks how many prior investors already sit on MedRoute's cap table. Why does a crowded cap table (e.g., 30–40 small angel investors) tend to concern VCs?",
       "question_type": "MCQ",
       "options": {
         "A": "It legally prevents any further fundraising",
@@ -915,11 +972,12 @@
       },
       "correct_option_label": "D",
       "explanation": "Too many individual angel shareholders can create voting deadlocks, complicate information rights, and create significant corporate governance friction.",
-      "module": 7
+      "module": 7,
+      "passage_id": "Passage_3"
     },
     {
       "question_id": "4513871140",
-      "question_text": "Refer to Case # 3 - MedRoute & Meridian Capital in Question ID 4513871137 for context.\n\nMedRoute is burning cash well beyond its current revenue while pursuing rapid multi-city expansion. Which explanation best justifies why Meridian might still find this an attractive investment?",
+      "question_text": "MedRoute is burning cash well beyond its current revenue while pursuing rapid multi-city expansion. Which explanation best justifies why Meridian might still find this an attractive investment?",
       "question_type": "MCQ",
       "options": {
         "A": "Burn rate is irrelevant to VC decision-making",
@@ -929,11 +987,12 @@
       },
       "correct_option_label": "D",
       "explanation": "High burn is justified when deploying capital into network density that produces defensible local economies of scale, assuming positive underlying contribution margins.",
-      "module": 7
+      "module": 7,
+      "passage_id": "Passage_3"
     },
     {
       "question_id": "4513871141",
-      "question_text": "Refer to Case # 3 - MedRoute & Meridian Capital in Question ID 4513871137 for context.\n\nBeyond the ₹8 crore cheque, which of the following is the most accurate description of the additional value Meridian Capital is likely to bring to MedRoute as a lead investor?",
+      "question_text": "Beyond the ₹8 crore cheque, which of the following is the most accurate description of the additional value Meridian Capital is likely to bring to MedRoute as a lead investor?",
       "question_type": "MCQ",
       "options": {
         "A": "Meridian will use its network to help recruit senior operational talent, open doors to hospital-chain partnerships, and provide board-level strategic guidance drawn from other portfolio companies",
@@ -943,11 +1002,27 @@
       },
       "correct_option_label": "A",
       "explanation": "Top-tier VCs provide strategic value-add including executive talent recruiting, commercial business development introductions, and governance support.",
-      "module": 7
+      "module": 7,
+      "passage_id": "Passage_3"
+    },
+    {
+      "question_id": "Passage_4",
+      "question_text": "Case # 4 - Ansh, Priya, and the Equity Conversation\n\nAnsh and Priya, two close friends with a shared vision, are embarking on an exciting journey as co-founders of a B2B SaaS venture designed to help small manufacturers effectively manage their inventory. Ansh, with his strengths in sales, fundraising, and partnership development, is eager to steer the company toward growth. Meanwhile, Priya, a talented software engineer known for her innovative thinking, is tasked with building and leading the entire product and engineering roadmap, a responsibility she knows will demand her creativity and hard work.\n\nAfter six weeks of brainstorming and groundwork, they find themselves sitting across from each other in a cosy café, the air thick with anticipation as they prepare to discuss the crucial topic of equity distribution in their new endeavour. Ansh leans forward, advocating for a 60-40 split in his favour. He confidently cites his role in conceiving the original idea during an insightful conversation with a factory owner, emphasising his belief that having majority control will empower him to make partnership decisions swiftly without constant deliberation.\n\nHowever, Priya is far from convinced. With a determined expression, she counters his proposal, asserting that while the initial idea is valuable, it represents just the beginning of their journey. She passionately explains that the real worth of the venture will stem from the working product she will dedicate the upcoming year to building and refining. It’s the innovative features and user experience she plans to create that will ultimately attract customers and impress investors.\n\nAs the conversation grows tense, both friends reflect on the stakes of their collaboration. Finally, recognising the importance of a balanced resolution, they decide to consult a mutual mentor, someone whose experience can provide them with valuable insights as they navigate this pivotal moment. They also address the difficult question of what would happen if one of them were to leave the company early, ensuring they lay a solid foundation for their partnership moving forward.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 6
     },
     {
       "question_id": "4513871143",
-      "question_text": "Case # 4 - Ansh, Priya, and the Equity Conversation\n\nAnsh and Priya, two close friends with a shared vision, are embarking on an exciting journey as co-founders of a B2B SaaS venture designed to help small manufacturers effectively manage their inventory. Ansh, with his strengths in sales, fundraising, and partnership development, is eager to steer the company toward growth. Meanwhile, Priya, a talented software engineer known for her innovative thinking, is tasked with building and leading the entire product and engineering roadmap, a responsibility she knows will demand her creativity and hard work.\n\nAfter six weeks of brainstorming and groundwork, they find themselves sitting across from each other in a cosy café, the air thick with anticipation as they prepare to discuss the crucial topic of equity distribution in their new endeavour. Ansh leans forward, advocating for a 60-40 split in his favour. He confidently cites his role in conceiving the original idea during an insightful conversation with a factory owner, emphasising his belief that having majority control will empower him to make partnership decisions swiftly without constant deliberation.\n\nHowever, Priya is far from convinced. With a determined expression, she counters his proposal, asserting that while the initial idea is valuable, it represents just the beginning of their journey. She passionately explains that the real worth of the venture will stem from the working product she will dedicate the upcoming year to building and refining. It’s the innovative features and user experience she plans to create that will ultimately attract customers and impress investors.\n\nAs the conversation grows tense, both friends reflect on the stakes of their collaboration. Finally, recognising the importance of a balanced resolution, they decide to consult a mutual mentor, someone whose experience can provide them with valuable insights as they navigate this pivotal moment. They also address the difficult question of what would happen if one of them were to leave the company early, ensuring they lay a solid foundation for their partnership moving forward.\n\nWhat is the most significant risk of Ansh's proposed 60-40 split, based on the venture's division of labour?",
+      "question_text": "What is the most significant risk of Ansh's proposed 60-40 split, based on the venture's division of labour?",
       "question_type": "MCQ",
       "options": {
         "A": "It would force the company to remain unregistered",
@@ -957,11 +1032,12 @@
       },
       "correct_option_label": "C",
       "explanation": "Under-rewarding a core technical co-founder who bears the intensive burden of building the software product can demotivate them and trigger co-founder departure.",
-      "module": 6
+      "module": 6,
+      "passage_id": "Passage_4"
     },
     {
       "question_id": "4513871144",
-      "question_text": "Refer to Case # 4 - Ansh, Priya, and the Equity Conversation in Question ID 4513871143 for context.\n\nPriya's argument that \"the idea is just a starting point; the product is what creates value\" reflects which widely-held principle in venture building?",
+      "question_text": "Priya's argument that \"the idea is just a starting point; the product is what creates value\" reflects which widely-held principle in venture building?",
       "question_type": "MCQ",
       "options": {
         "A": "Sales-led founders never deserve significant equity",
@@ -971,11 +1047,12 @@
       },
       "correct_option_label": "B",
       "explanation": "Entrepreneurship views ideas as cheap; value resides almost entirely in the prolonged, risk-bearing execution required to transform that idea into a viable commercial product.",
-      "module": 6
+      "module": 6,
+      "passage_id": "Passage_4"
     },
     {
       "question_id": "4513871145",
-      "question_text": "Refer to Case # 4 - Ansh, Priya, and the Equity Conversation in Question ID 4513871143 for context.\n\nAnsh worries that an even 50-50 split could lead to deadlocks on major decisions. Which governance mechanism would let Ansh and Priya keep an equal economic split while still resolving decision-making gridlock?",
+      "question_text": "Ansh worries that an even 50-50 split could lead to deadlocks on major decisions. Which governance mechanism would let Ansh and Priya keep an equal economic split while still resolving decision-making gridlock?",
       "question_type": "MCQ",
       "options": {
         "A": "Avoiding any major decisions until one founder gives up equity",
@@ -985,11 +1062,12 @@
       },
       "correct_option_label": "B",
       "explanation": "Formal decision rights can be detached from equity ownership by appointing an independent board member or advisor with tie-breaking voting power in deadlock situations.",
-      "module": 6
+      "module": 6,
+      "passage_id": "Passage_4"
     },
     {
       "question_id": "4513871146",
-      "question_text": "Refer to Case # 4 - Ansh, Priya, and the Equity Conversation in Question ID 4513871143 for context.\n\nTo protect the company if either founder leaves early with a large, unearned equity stake, what should Ansh and Priya build into their equity agreement?",
+      "question_text": "To protect the company if either founder leaves early with a large, unearned equity stake, what should Ansh and Priya build into their equity agreement?",
       "question_type": "MCQ",
       "options": {
         "A": "A multi-year vesting schedule with a cliff period (commonly one year), so equity is earned progressively over time",
@@ -999,11 +1077,12 @@
       },
       "correct_option_label": "A",
       "explanation": "A standard 4-year vesting schedule with a 1-year cliff ensures equity is earned through continuous service, protecting the venture from cap table deadweight if a founder departs.",
-      "module": 6
+      "module": 6,
+      "passage_id": "Passage_4"
     },
     {
       "question_id": "4513871147",
-      "question_text": "Refer to Case # 4 - Ansh, Priya, and the Equity Conversation in Question ID 4513871143 for context.\n\nAnsh and Priya decide to bring in a mutual mentor rather than letting the disagreement fester or rushing to a decision under stress. What best explains why this is good practice for equity conversations specifically?",
+      "question_text": "Ansh and Priya decide to bring in a mutual mentor rather than letting the disagreement fester or rushing to a decision under stress. What best explains why this is good practice for equity conversations specifically?",
       "question_type": "MCQ",
       "options": {
         "A": "Mentors should only be consulted after the equity agreement is signed",
@@ -1013,7 +1092,8 @@
       },
       "correct_option_label": "D",
       "explanation": "Neutral advisors provide objective perspectives and de-escalate emotional friction, helping co-founders establish fair, sustainable ownership structures.",
-      "module": 6
+      "module": 6,
+      "passage_id": "Passage_4"
     },
     {
       "question_id": "4513871148",

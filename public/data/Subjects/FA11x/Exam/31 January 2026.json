@@ -3,25 +3,25 @@
         "subject_name": "Financial Statements and Business Performance",
         "exam_date": "31 January 2026",
         "exam_pattern": {
-          "exam_name": "IIMB BBA DBE Batch 2 Term 1",
-          "duration_min": 120,
-          "total_marks": 100,
-          "negative_marking": false,
-          "calculator": "none",
-          "timing_mode": "global",
-          "reference_materials": [],
-          "instructions": [
-            "No negative marking. 100 total marks per paper."
-          ],
-          "sections": [
-            {
-              "name": "Section 1",
-              "question_type": "MCQ",
-              "num_questions": 50,
-              "question_ids": ["582113338", "582113339", "582113340", "582113341", "582113342", "582113343", "582113344", "582113345", "582113346", "582113347", "582113348", "582113349", "582113350", "582113351", "582113352", "582113353", "582113354", "582113355", "582113356", "582113357", "582113358", "582113359", "582113360", "582113361", "582113362", "582113363", "582113364", "582113365", "582113366", "582113367", "582113368", "582113369", "582113370", "582113371", "582113372", "582113373", "582113374", "582113375", "582113376", "582113377", "582113378", "582113379", "582113380", "582113381", "582113382", "582113383", "582113384", "582113385", "582113386", "582113387"]
-            }
-          ],
-          "total_questions": 50
+            "exam_name": "IIMB BBA DBE Batch 2 Term 1",
+            "duration_min": 120,
+            "total_marks": 100,
+            "negative_marking": false,
+            "calculator": "none",
+            "timing_mode": "global",
+            "reference_materials": [],
+            "instructions": [
+                "No negative marking. 100 total marks per paper."
+            ],
+            "sections": [
+                {
+                    "name": "Section 1",
+                    "question_type": "MCQ",
+                    "num_questions": 50,
+                    "question_ids": ["582113338", "582113339", "582113340", "582113341", "582113342", "582113343", "582113344", "582113345", "582113346", "582113347", "582113348", "582113349", "582113350", "582113351", "582113352", "582113353", "582113354", "582113355", "582113356", "582113357", "582113358", "582113359", "582113360", "582113361", "582113362", "582113363", "582113364", "582113365", "582113366", "582113367", "582113368", "582113369", "582113370", "582113371", "582113372", "582113373", "582113374", "582113375", "582113376", "582113377", "582113378", "582113379", "582113380", "582113381", "582113382", "582113383", "582113384", "582113385", "582113386", "582113387"]
+                }
+            ],
+            "total_questions": 50
         }
     },
     "questions": [
@@ -390,8 +390,23 @@
             "module": 5
         },
         {
+            "question_id": "Passage_1",
+            "question_text": "A company has an initial inventory of 50 units at Rs.100 each. During the year, they purchased items in three batches in the following order : 100 units at Rs.120 each; 50 units at Rs.140 each and 50 units at Rs.150 each. The company sold 200 units.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 5
+        },
+        {
             "question_id": "582113364",
-            "question_text": "A company has an initial inventory of 50 units at Rs.100 each. During the year, they purchased items in three batches in the following order : 100 units at Rs.120 each; 50 units at Rs.140 each and 50 units at Rs.150 each. The company sold 200 units. What is the value of the ending inventory using the LIFO method?",
+            "question_text": "What is the value of the ending inventory using the LIFO method?",
             "question_type": "MCQ",
             "options": {
                 "A": "Rs.6,000",
@@ -401,11 +416,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Under LIFO, the last items bought are sold first. Total units = 250, sold 200, remaining 50. The remaining 50 units would be from the oldest stock (initial inventory): 50 units * Rs. 100 = Rs. 5,000.",
-            "module": 5
+            "module": 5,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "582113365",
-            "question_text": "A company has an initial inventory of 50 units at Rs.100 each. During the year, they purchased items in three batches in the following order : 100 units at Rs.120 each; 50 units at Rs.140 each and 50 units at Rs.150 each. The company sold 200 units. What is the value of the cost of goods sold (COGS) using the FIFO method?",
+            "question_text": "What is the value of the cost of goods sold (COGS) using the FIFO method?",
             "question_type": "MCQ",
             "options": {
                 "A": "Rs.31,000",
@@ -415,7 +431,8 @@
             },
             "correct_option_label": "B",
             "explanation": "Under FIFO, oldest units are sold first. COGS for 200 units = (50 * 100) + (100 * 120) + (50 * 140) = 5,000 + 12,000 + 7,000 = Rs. 24,000.",
-            "module": 5
+            "module": 5,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "582113366",

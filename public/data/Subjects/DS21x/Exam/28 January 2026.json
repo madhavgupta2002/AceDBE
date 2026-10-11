@@ -161,8 +161,23 @@
             "module": 3
         },
         {
+            "question_id": "Passage_1",
+            "question_text": "In a multiplicative model, Quarterly seasonal indices (unadjusted) are:\n\n| Q1 | Q2 | Q3 | Q4 |\n| :--- | :--- | :--- | :--- |\n| 0.72 | 0.88 | 1.28 | 1.04 |",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 3
+        },
+        {
             "question_id": "12",
-            "question_text": "In a multiplicative model, Quarterly seasonal indices (unadjusted) are:\n\n| Q1 | Q2 | Q3 | Q4 |\n| :--- | :--- | :--- | :--- |\n| 0.72 | 0.88 | 1.28 | 1.04 |\n\nWhat should be done before using them?",
+            "question_text": "What should be done before using them?",
             "question_type": "MCQ",
             "options": {
                 "A": "Subtract mean from each index",
@@ -172,11 +187,12 @@
             },
             "correct_option_label": "C",
             "explanation": "In a multiplicative time series model, seasonal indices represent the proportion of the baseline average expected in each specific season. A core mathematical requirement is that the seasonal indices must balance out over an entire cycle (e.g., a year). For quarterly data, this means the sum of the four indices must exactly equal the number of periods (4), ensuring their average is precisely 1. If the unadjusted indices do not meet this criterion, they must be normalized so their average equals 1.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "13",
-            "question_text": "In a multiplicative model, Quarterly seasonal indices (unadjusted) are:\n\n| Q1 | Q2 | Q3 | Q4 |\n| :--- | :--- | :--- | :--- |\n| 0.72 | 0.88 | 1.28 | 1.04 |\n\nWhat is the normalized seasonal index for Q3?",
+            "question_text": "What is the normalized seasonal index for Q3?",
             "question_type": "MCQ",
             "options": {
                 "A": "1.28",
@@ -186,7 +202,8 @@
             },
             "correct_option_label": "B",
             "explanation": "Step 1: Calculate the sum of the unadjusted seasonal indices.\n$$\\text{Sum} = 0.72 + 0.88 + 1.28 + 1.04 = 3.92$$\n\nStep 2: For 4 quarters, the sum of the normalized indices should be 4.0. We calculate the normalization multiplier:\n$$\\text{Multiplier} = \\frac{\\text{Required Sum}}{\\text{Actual Sum}} = \\frac{4.0}{3.92} \\approx 1.020408$$\n\nStep 3: Multiply the unadjusted Q3 index by the multiplier.\n$$\\text{Normalized Q3} = 1.28 \\times 1.020408 \\approx 1.30612$$\nRounding to two decimal places, the normalized seasonal index for Q3 is 1.31.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "14",

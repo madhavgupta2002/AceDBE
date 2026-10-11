@@ -5,8 +5,23 @@
     },
     "questions": [
         {
+            "question_id": "Passage_1",
+            "question_text": "Rishav can make a round-trip to Jadavpur from College Street to do a task that takes 1 hour to complete and gives him utility worth Rs 500. Rishav ONLY has the following two ways to commute to Jadavpur from College Street:\n1. Rishav can purchase a return ticket for the metro, which costs Rs 50 and results in a total commute time of 1 hour. Thus, if Rishav takes metro to travel to Jadavpur, it takes him 2 hours to complete the task.\n2. Another option is to travel using a city bus, which costs Rs 30 in total, resulting in a total commute time of 3 hours. Thus, if Rishav takes city bus to travel to Jadavpur, it takes him 4 hours to complete the task.\nWhen Rishav is not traveling or working on the specific task, he can work and earn Rs 100 per hour.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 1
+        },
+        {
             "question_id": "M1_Q1",
-            "question_text": "Rishav can make a round-trip to Jadavpur from College Street to do a task that takes 1 hour to complete and gives him utility worth Rs 500. Rishav ONLY has the following two ways to commute to Jadavpur from College Street:\n1. Rishav can purchase a return ticket for the metro, which costs Rs 50 and results in a total commute time of 1 hour. Thus, if Rishav takes metro to travel to Jadavpur, it takes him 2 hours to complete the task.\n2. Another option is to travel using a city bus, which costs Rs 30 in total, resulting in a total commute time of 3 hours. Thus, if Rishav takes city bus to travel to Jadavpur, it takes him 4 hours to complete the task.\nWhen Rishav is not traveling or working on the specific task, he can work and earn Rs 100 per hour.\n\nWhat is the opportunity cost of traveling by bus?",
+            "question_text": "What is the opportunity cost of traveling by bus?",
             "question_type": "MCQ",
             "options": {
                 "A": "Rs 200",
@@ -16,7 +31,8 @@
             },
             "correct_option_label": "D",
             "explanation": "The opportunity cost of the bus option includes its direct cost (Rs 30) plus the value of the additional time spent compared to the metro (2 extra hours at Rs 100/hr).",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "M1_Q2",
@@ -30,7 +46,8 @@
             },
             "correct_option_label": "B",
             "explanation": "The opportunity cost includes the explicit ticket cost (Rs 50) and the implicit cost of time for the commute and task (2 hours at Rs 100/hr).",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "M1_Q3",
@@ -44,7 +61,8 @@
             },
             "correct_option_label": "C",
             "explanation": "Net economic benefit is the total utility (Rs 500) minus the total economic cost (Rs 250).",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "M1_Q4",
@@ -58,7 +76,8 @@
             },
             "correct_option_label": "D",
             "explanation": "At a wage of Rs 50, the time cost for the 4-hour bus trip is Rs 200.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "M1_Q6",
@@ -327,8 +346,23 @@
             "module": 3
         },
         {
+            "question_id": "Passage_2",
+            "question_text": "A profit-maximizing firm in a competitive market is currently producing 100 units of output. It has average total cost of $8, and fixed cost of $200. Suppose the average revenue is $7.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 3
+        },
+        {
             "question_id": "M3_Q6",
-            "question_text": "A profit-maximizing firm in a competitive market is currently producing 100 units of output. It has average total cost of $8, and fixed cost of $200. Suppose the average revenue is $7. What is its average variable cost?",
+            "question_text": "What is its average variable cost?",
             "question_type": "MCQ",
             "options": {
                 "A": "$8",
@@ -338,7 +372,8 @@
             },
             "correct_option_label": "C",
             "explanation": "TC = 8*100 = 800. VC = 800 - 200 = 600. AVC = 600 / 100 = 6.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "M3_Q7",
@@ -352,7 +387,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Since Price ($7) > AVC ($6), the firm should operate in the short run, but since Price < ATC ($8), it should exit in the long run.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "M3_Q8",

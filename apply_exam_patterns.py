@@ -187,6 +187,8 @@ def assign_ids(rel, pat, questions):
                 pos += 1
                 members = []
                 for _ in range(per):
+                    while questions[pos].get("is_passage"):
+                        pos += 1
                     assert kind(questions[pos]) == "M", f"{rel}: bad vignette member at {pos}"
                     members.append(str(questions[pos]["question_id"]))
                     pos += 1
@@ -194,6 +196,8 @@ def assign_ids(rel, pat, questions):
                 ids += members
         else:
             for _ in range(take):
+                while questions[pos].get("is_passage"):  # shared-passage entries are not questions
+                    pos += 1
                 q = questions[pos]
                 want = "S" if written else "M"
                 assert kind(q) == want, f"{rel}: section {sec['name']} expected {want} at index {pos} (id {q['question_id']})"

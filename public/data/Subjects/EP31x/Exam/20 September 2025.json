@@ -3,79 +3,79 @@
         "subject_name": "Entrepreneurial Mindset and Methods",
         "exam_date": "20 September 2025",
         "exam_pattern": {
-          "exam_name": "IIMB BBA DBE Batch 1 Term 3",
-          "duration_min": 120,
-          "total_marks": 100,
-          "negative_marking": false,
-          "calculator": "none",
-          "timing_mode": "global",
-          "reference_materials": [],
-          "instructions": [],
-          "sections": [
-            {
-              "name": "Simple MCQs",
-              "question_type": "MCQ",
-              "num_questions": 15,
-              "marks_per_question": 1,
-              "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
-            },
-            {
-              "name": "MCQs with Multiple Correct Answers",
-              "question_type": "MSQ",
-              "num_questions": 20,
-              "marks_per_question": 1.5,
-              "msq_scoring": "exact",
-              "question_ids": ["16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35"]
-            },
-            {
-              "name": "True/False questions",
-              "question_type": "TRUE_FALSE",
-              "num_questions": 15,
-              "marks_per_question": 1,
-              "question_ids": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50"]
-            },
-            {
-              "name": "Vignette (Scenario) based MCQs",
-              "question_type": "SCENARIO_MCQ",
-              "num_questions": 20,
-              "marks_per_question": 1,
-              "note": "4 scenarios, each followed by 5 MCQs. The scenario text is stored as a SUBJECTIVE bank entry and shown as a passage.",
-              "question_ids": ["52", "53", "54", "55", "56", "58", "59", "60", "61", "62", "64", "65", "66", "67", "68", "70", "71", "72", "73", "74"],
-              "context_blocks": [
+            "exam_name": "IIMB BBA DBE Batch 1 Term 3",
+            "duration_min": 120,
+            "total_marks": 100,
+            "negative_marking": false,
+            "calculator": "none",
+            "timing_mode": "global",
+            "reference_materials": [],
+            "instructions": [],
+            "sections": [
                 {
-                  "context_question_id": "51",
-                  "applies_to": ["52", "53", "54", "55", "56"]
+                    "name": "Simple MCQs",
+                    "question_type": "MCQ",
+                    "num_questions": 15,
+                    "marks_per_question": 1,
+                    "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
                 },
                 {
-                  "context_question_id": "57",
-                  "applies_to": ["58", "59", "60", "61", "62"]
+                    "name": "MCQs with Multiple Correct Answers",
+                    "question_type": "MSQ",
+                    "num_questions": 20,
+                    "marks_per_question": 1.5,
+                    "msq_scoring": "exact",
+                    "question_ids": ["16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35"]
                 },
                 {
-                  "context_question_id": "63",
-                  "applies_to": ["64", "65", "66", "67", "68"]
+                    "name": "True/False questions",
+                    "question_type": "TRUE_FALSE",
+                    "num_questions": 15,
+                    "marks_per_question": 1,
+                    "question_ids": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50"]
                 },
                 {
-                  "context_question_id": "69",
-                  "applies_to": ["70", "71", "72", "73", "74"]
+                    "name": "Vignette (Scenario) based MCQs",
+                    "question_type": "SCENARIO_MCQ",
+                    "num_questions": 20,
+                    "marks_per_question": 1,
+                    "note": "4 scenarios, each followed by 5 MCQs. The scenario text is stored as a SUBJECTIVE bank entry and shown as a passage.",
+                    "question_ids": ["52", "53", "54", "55", "56", "58", "59", "60", "61", "62", "64", "65", "66", "67", "68", "70", "71", "72", "73", "74"],
+                    "context_blocks": [
+                        {
+                            "context_question_id": "51",
+                            "applies_to": ["52", "53", "54", "55", "56"]
+                        },
+                        {
+                            "context_question_id": "57",
+                            "applies_to": ["58", "59", "60", "61", "62"]
+                        },
+                        {
+                            "context_question_id": "63",
+                            "applies_to": ["64", "65", "66", "67", "68"]
+                        },
+                        {
+                            "context_question_id": "69",
+                            "applies_to": ["70", "71", "72", "73", "74"]
+                        }
+                    ]
+                },
+                {
+                    "name": "Context based MCQs",
+                    "question_type": "CONTEXT_MCQ",
+                    "num_questions": 5,
+                    "marks_per_question": 2,
+                    "question_ids": ["75", "76", "77", "78", "79"]
+                },
+                {
+                    "name": "Sequence based MCQs",
+                    "question_type": "SEQUENCE_MCQ",
+                    "num_questions": 5,
+                    "marks_per_question": 2,
+                    "question_ids": ["80", "81", "82", "83", "84"]
                 }
-              ]
-            },
-            {
-              "name": "Context based MCQs",
-              "question_type": "CONTEXT_MCQ",
-              "num_questions": 5,
-              "marks_per_question": 2,
-              "question_ids": ["75", "76", "77", "78", "79"]
-            },
-            {
-              "name": "Sequence based MCQs",
-              "question_type": "SEQUENCE_MCQ",
-              "num_questions": 5,
-              "marks_per_question": 2,
-              "question_ids": ["80", "81", "82", "83", "84"]
-            }
-          ],
-          "total_questions": 80
+            ],
+            "total_questions": 80
         }
     },
     "questions": [
@@ -791,7 +791,8 @@
             },
             "correct_option_label": "",
             "explanation": "This is a reference case study text. Please refer to this context for the subsequent questions (ID 52 to 56) related to AuroraTech.",
-            "module": 3
+            "module": 3,
+            "is_passage": true
         },
         {
             "question_id": "52",
@@ -805,7 +806,8 @@
             },
             "correct_option_label": "D",
             "explanation": "Please refer to the AuroraTech context (Question ID 51). With severe retention issues (only 12 out of 150 renewals), they lack Product-Market Fit. Scaling a broken model through fundraising is fatal; they must iterate rapidly via limited experiments to find PMF.",
-            "module": 3
+            "module": 3,
+            "passage_id": "51"
         },
         {
             "question_id": "53",
@@ -819,7 +821,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Please refer to the AuroraTech context (Question ID 51). Customer feedback revealed their main friction was the need for extra hardware investments. Partnering with existing IoT providers directly neutralizes this implementation barrier without abandoning their software core.",
-            "module": 3
+            "module": 3,
+            "passage_id": "51"
         },
         {
             "question_id": "54",
@@ -833,7 +836,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Please refer to the AuroraTech context (Question ID 51). Surrendering 30% of equity and a board seat before achieving PMF massively dilutes founder ownership and introduces external governance control prematurely, complicating future rounds.",
-            "module": 6
+            "module": 6,
+            "passage_id": "51"
         },
         {
             "question_id": "55",
@@ -847,7 +851,8 @@
             },
             "correct_option_label": "C",
             "explanation": "Please refer to the AuroraTech context (Question ID 51). Retention is the ultimate value metric. Only 12 of 150 users renewing mathematically proves that the current pricing model or the core value proposition drastically fails to deliver ongoing value.",
-            "module": 4
+            "module": 4,
+            "passage_id": "51"
         },
         {
             "question_id": "56",
@@ -861,7 +866,8 @@
             },
             "correct_option_label": "C",
             "explanation": "Please refer to the AuroraTech context (Question ID 51). Reaching Product-Market Fit organically via small-scale pilots demonstrates robust demand. This verified traction significantly de-risks the business, handing founders superior negotiating leverage with future VCs.",
-            "module": 7
+            "module": 7,
+            "passage_id": "51"
         },
         {
             "question_id": "57",
@@ -875,7 +881,8 @@
             },
             "correct_option_label": "",
             "explanation": "This is a reference case study text. Please refer to this context for the subsequent questions (ID 58 to 62) related to Meesho.",
-            "module": 4
+            "module": 4,
+            "is_passage": true
         },
         {
             "question_id": "58",
@@ -889,7 +896,8 @@
             },
             "correct_option_label": "C",
             "explanation": "Please refer to the Meesho context (Question ID 57). The provided table shows CAC grew from ₹561.64 in FY 18-19 to ₹1378.93 in FY 19-20. Since 561.64 x 2 = 1123.28, the acquisition cost more than doubled in a single year.",
-            "module": 4
+            "module": 4,
+            "passage_id": "57"
         },
         {
             "question_id": "59",
@@ -903,7 +911,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Please refer to the Meesho context (Question ID 57).\nStep 1: Avg Revenue per Order = 800m / 9.1m ≈ ₹87.6\nStep 2: Avg Distribution Cost per Order = 820m / 9.1m ≈ ₹90\nStep 3: Since distribution costs purely per unit exceed the revenue generated, unit economics are negative, thus they are losing money.",
-            "module": 4
+            "module": 4,
+            "passage_id": "57"
         },
         {
             "question_id": "60",
@@ -917,7 +926,8 @@
             },
             "correct_option_label": "B",
             "explanation": "Please refer to the Meesho context (Question ID 57). The table explicitly shows that for FY 19-20, CAC is ₹1378.93 while the Revenue per Entrepreneur is only ₹1245.36. Thus, upfront acquisition costs exceed the annual revenue generated per user.",
-            "module": 4
+            "module": 4,
+            "passage_id": "57"
         },
         {
             "question_id": "61",
@@ -931,7 +941,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Please refer to the Meesho context (Question ID 57).\nStep 1: Calculate monthly revenue per entrepreneur: $\\frac{1245.36}{12} \\approx 103.78$\nStep 2: Divide CAC by monthly revenue to find breakeven: $\\frac{1378.93}{103.78} \\approx 13.28$ months\nStep 3: To fully recover and start exceeding acquisition costs, retaining the user closer to the ~14-15 month mark is logically required.",
-            "module": 4
+            "module": 4,
+            "passage_id": "57"
         },
         {
             "question_id": "62",
@@ -945,7 +956,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Please refer to the Meesho context (Question ID 57). Despite negative unit economics due to rapid, subsidized expansion, exploding from 900k to 2.4 million users with massive order volume demonstrates undeniable market demand and behavioral traction, signaling early PMF.",
-            "module": 4
+            "module": 4,
+            "passage_id": "57"
         },
         {
             "question_id": "63",
@@ -959,7 +971,8 @@
             },
             "correct_option_label": "",
             "explanation": "This is a reference case study text. Please refer to this context for the subsequent questions (ID 64 to 68) related to GreenSpire Energy.",
-            "module": 8
+            "module": 8,
+            "is_passage": true
         },
         {
             "question_id": "64",
@@ -973,7 +986,8 @@
             },
             "correct_option_label": "C",
             "explanation": "Please refer to the GreenSpire Energy context (Question ID 63). Organic bootstrapping via reinvested income avoids both the immense personal financial ruin of a high-interest home loan and the catastrophic loss of strategic flexibility imposed by VC veto clauses.",
-            "module": 8
+            "module": 8,
+            "passage_id": "63"
         },
         {
             "question_id": "65",
@@ -987,7 +1001,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Please refer to the GreenSpire Energy context (Question ID 63). If Kabir grants veto power over 'new product lines', he surrenders his ability to pivot. Should the core biogas market stall, the investor can legally block him from pursuing new adjacent opportunities.",
-            "module": 6
+            "module": 6,
+            "passage_id": "63"
         },
         {
             "question_id": "66",
@@ -1001,7 +1016,8 @@
             },
             "correct_option_label": "C",
             "explanation": "Please refer to the GreenSpire Energy context (Question ID 63). Securing 40% upfront payments directly validates that the customer experiences acute pain and trusts the proposed solution. This 'Sell Before You Build' metric is the most powerful proof of market demand to future investors.",
-            "module": 8
+            "module": 8,
+            "passage_id": "63"
         },
         {
             "question_id": "67",
@@ -1015,7 +1031,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Please refer to the GreenSpire Energy context (Question ID 63). Vague, undocumented 'handshake' agreements involving future royalties create highly problematic equity-like encumbrances that massively complicate VC due diligence and cap table structuring later.",
-            "module": 6
+            "module": 6,
+            "passage_id": "63"
         },
         {
             "question_id": "68",
@@ -1029,7 +1046,8 @@
             },
             "correct_option_label": "D",
             "explanation": "Please refer to the GreenSpire Energy context (Question ID 63). Larger associations strictly demand the government certification. Postponing it completely locks him out of the highly lucrative institutional B2B market, indefinitely capping his growth.",
-            "module": 2
+            "module": 2,
+            "passage_id": "63"
         },
         {
             "question_id": "69",
@@ -1043,7 +1061,8 @@
             },
             "correct_option_label": "",
             "explanation": "This is a reference case study text. Please refer to this context for the subsequent questions (ID 70 to 74) related to BioNova.",
-            "module": 3
+            "module": 3,
+            "is_passage": true
         },
         {
             "question_id": "70",
@@ -1057,7 +1076,8 @@
             },
             "correct_option_label": "B",
             "explanation": "Please refer to the BioNova context (Question ID 69). The case states the deal requires BioNova to 'halt independent commercialization'. By accepting, they entirely surrender their strategic autonomy and control over global distribution of their innovation.",
-            "module": 3
+            "module": 3,
+            "passage_id": "69"
         },
         {
             "question_id": "71",
@@ -1071,7 +1091,8 @@
             },
             "correct_option_label": "D",
             "explanation": "Please refer to the BioNova context (Question ID 69). Aditi's counter-proposal to license internationally but retain Indian commercialization rights ensures BioNova preserves its autonomy in a key selected regional market.",
-            "module": 3
+            "module": 3,
+            "passage_id": "69"
         },
         {
             "question_id": "72",
@@ -1085,7 +1106,8 @@
             },
             "correct_option_label": "C",
             "explanation": "Please refer to the BioNova context (Question ID 69). The text explicitly mentions a competing biotech firm announcing a similar chip entering trials. Delays will inherently allow these competitors to erase BioNova's critical first-mover advantage.",
-            "module": 3
+            "module": 3,
+            "passage_id": "69"
         },
         {
             "question_id": "73",
@@ -1099,7 +1121,8 @@
             },
             "correct_option_label": "D",
             "explanation": "Please refer to the BioNova context (Question ID 69). Co-founder Raj explicitly argues for the deal based on the fact that BioNova lacks the necessary capital to build their own independent manufacturing facilities.",
-            "module": 8
+            "module": 8,
+            "passage_id": "69"
         },
         {
             "question_id": "74",
@@ -1113,7 +1136,8 @@
             },
             "correct_option_label": "B",
             "explanation": "Please refer to the BioNova context (Question ID 69). VC investors operate on fixed 7-10 year fund horizons. Their fear of the runway ending before full launch reflects an institutional preference for immediate, guaranteed liquidity over extended strategic patience.",
-            "module": 7
+            "module": 7,
+            "passage_id": "69"
         },
         {
             "question_id": "75",

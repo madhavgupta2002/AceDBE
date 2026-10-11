@@ -106,7 +106,39 @@ export async function loadQuestions(
     return [];
   }
 
-  return questionFile.questions.map(q => convertToInternalFormat(q, bankName, subjectCode, bankType));
+  return convertFileToQuestions(questionFile, bankName, subjectCode, bankType);
+}
+
+/**
+ * Converts a whole bank. Passage entries (`is_passage`) are not questions: their text is attached to every
+ * question whose `passage_id` points at them.
+ */
+export function convertFileToQuestions(
+  file: QuestionFile,
+  source?: string,
+  subjectCode?: string,
+  bankType?: 'CLA' | 'Exam' | 'Custom'
+): Question[] {
+  const passages = new Map<string, string>();
+  const members = new Map<string, number>();
+  for (const q of file.questions) {
+    if (q.is_passage) passages.set(String(q.question_id), q.question_text);
+    else if (q.passage_id) members.set(q.passage_id, (members.get(q.passage_id) ?? 0) + 1);
+  }
+  const seen = new Map<string, number>();
+  const out: Question[] = [];
+  for (const q of file.questions) {
+    if (q.is_passage) continue;
+    const question = convertToInternalFormat(q, source, subjectCode, bankType);
+    const text = q.passage_id ? passages.get(q.passage_id) : undefined;
+    if (q.passage_id && text) {
+      const index = (seen.get(q.passage_id) ?? 0) + 1;
+      seen.set(q.passage_id, index);
+      question.passage = { id: q.passage_id, text, index, total: members.get(q.passage_id) ?? index };
+    }
+    out.push(question);
+  }
+  return out;
 }
 
 // Load all questions for a subject (for full practice mode)

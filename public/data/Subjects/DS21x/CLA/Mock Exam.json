@@ -6,14 +6,14 @@
     "questions": [
         {
             "question_id": "Q1",
-            "question_text": "The Joint Probability Mass Function of 2 discrete random variables X and Y are given as follows:\nP(X = x, Y = y) = {(x+y)/36, x, y \u2208 {1,2,3}}\nAre the variables X and Y independent?\na. Yes, because P(X = 1, Y = 1) = P(X = 1) \u2219 P(Y = 1)\nb. No, because joint PMF \u2260 product of marginals\nc. Cannot be determined without sample size\nd. Only independent when x = y\ne. Dependent, since P(X = 2, Y = 2) > P(X = 2) \u2219 P(Y = 2)",
+            "question_text": "The Joint Probability Mass Function of 2 discrete random variables X and Y are given as follows:\nP(X = x, Y = y) = {(x+y)/36, x, y ∈ {1,2,3}}\nAre the variables X and Y independent?\na. Yes, because P(X = 1, Y = 1) = P(X = 1) ∙ P(Y = 1)\nb. No, because joint PMF ≠ product of marginals\nc. Cannot be determined without sample size\nd. Only independent when x = y\ne. Dependent, since P(X = 2, Y = 2) > P(X = 2) ∙ P(Y = 2)",
             "question_type": "MCQ",
             "options": {
-                "A": "Yes, because P(X = 1, Y = 1) = P(X = 1) \u2219 P(Y = 1)",
-                "B": "No, because joint PMF \u2260 product of marginals",
+                "A": "Yes, because P(X = 1, Y = 1) = P(X = 1) ∙ P(Y = 1)",
+                "B": "No, because joint PMF ≠ product of marginals",
                 "C": "Cannot be determined without sample size",
                 "D": "Only independent when x = y",
-                "E": "Dependent, since P(X = 2, Y = 2) > P(X = 2) \u2219 P(Y = 2)"
+                "E": "Dependent, since P(X = 2, Y = 2) > P(X = 2) ∙ P(Y = 2)"
             },
             "correct_option_label": "B",
             "explanation": "Variables are independent only if P(X,Y) = P(X)P(Y). Because the joint PMF is defined by an additive term (x+y), it is mathematically impossible to factor it into the product of two separate functions of x and y respectively.",
@@ -21,31 +21,31 @@
         },
         {
             "question_id": "Q2",
-            "question_text": "A sample of 300 employees who own a car among various technology companies were questioned on whether they own a luxury car. The responses obtained were tabulated as given in the table.\n\nCompany: Infosys Limited | Wipro Limited | TCS | CTS | Tech Mahindra | Accenture | IBM\nNumber of employees who own a luxury car: 10 | 4 | 7 | 8 | 3 | 9 | 9\nNumber of employees who do not own a luxury car: 30 | 31 | 38 | 22 | 27 | 56 | 46\n\nConsider the level of significance (\u03b1) = 0.05 for this problem. The p-value for this problem is 0.398. What is the value of the test statistic for this dataset? And, what would be the degrees of freedom (dof) for this dataset?\na. \u03c7\u00b2 = 3.95, dof = 8\nb. \u03c7\u00b2 = 6.23, dof = 6\nc. \u03c7\u00b2 = 10.27, dof = 4\nd. \u03c7\u00b2 = 6.23, dof = 4\ne. \u03c7\u00b2 = 14.26, dof = 8",
+            "question_text": "A sample of 300 employees who own a car among various technology companies were questioned on whether they own a luxury car. The responses obtained were tabulated as given in the table.\n\nCompany: Infosys Limited | Wipro Limited | TCS | CTS | Tech Mahindra | Accenture | IBM\nNumber of employees who own a luxury car: 10 | 4 | 7 | 8 | 3 | 9 | 9\nNumber of employees who do not own a luxury car: 30 | 31 | 38 | 22 | 27 | 56 | 46\n\nConsider the level of significance (α) = 0.05 for this problem. The p-value for this problem is 0.398. What is the value of the test statistic for this dataset? And, what would be the degrees of freedom (dof) for this dataset?\na. χ² = 3.95, dof = 8\nb. χ² = 6.23, dof = 6\nc. χ² = 10.27, dof = 4\nd. χ² = 6.23, dof = 4\ne. χ² = 14.26, dof = 8",
             "question_type": "MCQ",
             "options": {
-                "A": "\u03c7\u00b2 = 3.95, dof = 8",
-                "B": "\u03c7\u00b2 = 6.23, dof = 6",
-                "C": "\u03c7\u00b2 = 10.27, dof = 4",
-                "D": "\u03c7\u00b2 = 6.23, dof = 4",
-                "E": "\u03c7\u00b2 = 14.26, dof = 8"
+                "A": "χ² = 3.95, dof = 8",
+                "B": "χ² = 6.23, dof = 6",
+                "C": "χ² = 10.27, dof = 4",
+                "D": "χ² = 6.23, dof = 4",
+                "E": "χ² = 14.26, dof = 8"
             },
             "correct_option_label": "B",
-            "explanation": "Degrees of freedom for a test of independence is calculated as (rows - 1) * (columns - 1). Here, dof = (2 - 1) * (7 - 1) = 6. Matching the p-value of 0.398 with 6 degrees of freedom gives \u03c7\u00b2 = 6.23.",
+            "explanation": "Degrees of freedom for a test of independence is calculated as (rows - 1) * (columns - 1). Here, dof = (2 - 1) * (7 - 1) = 6. Matching the p-value of 0.398 with 6 degrees of freedom gives χ² = 6.23.",
             "module": 1
         },
         {
             "question_id": "Q3",
-            "question_text": "A marketing team claims that customer preferences for four product colours are equally distributed. To test this, they survey 220 customers and get the following responses:\nColor: Red | Blue | Green | Yellow\nObserved Frequency: 65 | 55 | 40 | 60\nWhat is the chi-square test statistic for this data, and which test does it correspond to?\na. 9.00 \u2014 Chi-Square test of independence\nb. 9.00 \u2014 Chi-Square goodness of fit test\nc. 6.36 \u2014 Chi-Square goodness of fit test\nd. 10.00 \u2014 One-sample Z-test",
+            "question_text": "A marketing team claims that customer preferences for four product colours are equally distributed. To test this, they survey 220 customers and get the following responses:\nColor: Red | Blue | Green | Yellow\nObserved Frequency: 65 | 55 | 40 | 60\nWhat is the chi-square test statistic for this data, and which test does it correspond to?\na. 9.00 — Chi-Square test of independence\nb. 9.00 — Chi-Square goodness of fit test\nc. 6.36 — Chi-Square goodness of fit test\nd. 10.00 — One-sample Z-test",
             "question_type": "MCQ",
             "options": {
-                "A": "9.00 \u2014 Chi-Square test of independence",
-                "B": "9.00 \u2014 Chi-Square goodness of fit test",
-                "C": "6.36 \u2014 Chi-Square goodness of fit test",
-                "D": "10.00 \u2014 One-sample Z-test"
+                "A": "9.00 — Chi-Square test of independence",
+                "B": "9.00 — Chi-Square goodness of fit test",
+                "C": "6.36 — Chi-Square goodness of fit test",
+                "D": "10.00 — One-sample Z-test"
             },
             "correct_option_label": "C",
-            "explanation": "Expected frequency (E) = 220/4 = 55. \u03c7\u00b2 = \u03a3(O-E)\u00b2/E = [(65-55)\u00b2 + (55-55)\u00b2 + (40-55)\u00b2 + (60-55)\u00b2] / 55 = (100+0+225+25)/55 = 350/55 \u2248 6.36. This test compares observed vs expected distribution, making it a Goodness of Fit test.",
+            "explanation": "Expected frequency (E) = 220/4 = 55. χ² = Σ(O-E)²/E = [(65-55)² + (55-55)² + (40-55)² + (60-55)²] / 55 = (100+0+225+25)/55 = 350/55 ≈ 6.36. This test compares observed vs expected distribution, making it a Goodness of Fit test.",
             "module": 1
         },
         {
@@ -65,7 +65,7 @@
         },
         {
             "question_id": "Q5",
-            "question_text": "A company tests the effectiveness of a new training program by comparing employee productivity scores before and after the training. The scores (out of 100) for 6 employees are:\nEmployee: 1 | 2 | 3 | 4 | 5 | 6\nBefore: 72 | 65 | 80 | 68 | 75 | 82\nAfter: 78 | 70 | 82 | 65 | 77 | 85\nUsing the Wilcoxon signed-rank test (one-tailed, significance level \u03b1 = 0.05), test whether the training program led to an increase in productivity. The critical value for n = 6 (one-tailed) is 2\na. W+ = 10; Fail to reject H0\nb. W+ = 12; Reject H0\nc. W+ = 17.75; Reject H0\nd. W+ = 17.5; Fail to reject H0\ne. W+ = 20; Reject H0",
+            "question_text": "A company tests the effectiveness of a new training program by comparing employee productivity scores before and after the training. The scores (out of 100) for 6 employees are:\nEmployee: 1 | 2 | 3 | 4 | 5 | 6\nBefore: 72 | 65 | 80 | 68 | 75 | 82\nAfter: 78 | 70 | 82 | 65 | 77 | 85\nUsing the Wilcoxon signed-rank test (one-tailed, significance level α = 0.05), test whether the training program led to an increase in productivity. The critical value for n = 6 (one-tailed) is 2\na. W+ = 10; Fail to reject H0\nb. W+ = 12; Reject H0\nc. W+ = 17.75; Reject H0\nd. W+ = 17.5; Fail to reject H0\ne. W+ = 20; Reject H0",
             "question_type": "MCQ",
             "options": {
                 "A": "W+ = 10; Fail to reject H0",
@@ -80,7 +80,7 @@
         },
         {
             "question_id": "Q6",
-            "question_text": "The monthly salary of the programmer and lines of code written per day by 10 programmers are given in a table. What would be the lines of code written by a programmer whose monthly salary is $48,000? Slope (\u03b21) = 4.5, and intercept (\u03b20) = -30.\nMonthly salary (in thousands of dollars): 32.7 | 34.7 | 35.6 | 37.3 | 37.5 | 38.5 | 39.5 | 40.5 | 41.2 | 42.5\nLines of code written per day: 110 | 111 | 114 | 145 | 156 | 160 | 162 | 162 | 169 | 171\na. 150\nb. 165\nc. 175\nd. 180\ne. 186",
+            "question_text": "The monthly salary of the programmer and lines of code written per day by 10 programmers are given in a table. What would be the lines of code written by a programmer whose monthly salary is $48,000? Slope (β1) = 4.5, and intercept (β0) = -30.\nMonthly salary (in thousands of dollars): 32.7 | 34.7 | 35.6 | 37.3 | 37.5 | 38.5 | 39.5 | 40.5 | 41.2 | 42.5\nLines of code written per day: 110 | 111 | 114 | 145 | 156 | 160 | 162 | 162 | 169 | 171\na. 150\nb. 165\nc. 175\nd. 180\ne. 186",
             "question_type": "MCQ",
             "options": {
                 "A": "150",
@@ -90,12 +90,12 @@
                 "E": "186"
             },
             "correct_option_label": "E",
-            "explanation": "Using the linear regression equation Y = \u03b20 + \u03b21X, where X is salary in thousands. Y = -30 + 4.5(48) = -30 + 216 = 186 lines of code.",
+            "explanation": "Using the linear regression equation Y = β0 + β1X, where X is salary in thousands. Y = -30 + 4.5(48) = -30 + 216 = 186 lines of code.",
             "module": 2
         },
         {
             "question_id": "Q7",
-            "question_text": "A doctor wants to predict if a patient has a certain disease (1 = Yes, 0 = No) based on their age. A logistic regression model gives this equation:\nLog odds of disease = \u22122 + 0.05 \u00d7 (Age)\nWhat is the predicted probability of disease (P (Y = 1)) for a 40-year-old patient?\na. 12%\nb. 25%\nc. 50%\nd. 75%\ne. 90%",
+            "question_text": "A doctor wants to predict if a patient has a certain disease (1 = Yes, 0 = No) based on their age. A logistic regression model gives this equation:\nLog odds of disease = −2 + 0.05 × (Age)\nWhat is the predicted probability of disease (P (Y = 1)) for a 40-year-old patient?\na. 12%\nb. 25%\nc. 50%\nd. 75%\ne. 90%",
             "question_type": "MCQ",
             "options": {
                 "A": "12%",
@@ -110,7 +110,7 @@
         },
         {
             "question_id": "Q8",
-            "question_text": "A hospital wants to predict whether a patient is at high risk of readmission (1 = Yes, 0 = No) based on: length of stay (in days), and number of chronic conditions. The logistic model is:\nIntercept (\u03b20) = -3.2, Length of stay (\u03b21) = 0.15 per day, Chronic conditions (\u03b22) = 0.8 per condition.\nFor a patient who stayed for 6 days and with 2 chronic conditions, calculate (1) The log-odds of readmission, (2) Compute their probability of admission.\na. Log-odds: -0.7; Probability: 33.2%\nb. Log-odds: 0.1; Probability: 52.5%\nc. Log-odds: -1.2; Probability: 23.2%\nd. Log-odds: 0.8; Probability: 69.0%\ne. Log-odds: -2.0; Probability: 11.9%",
+            "question_text": "A hospital wants to predict whether a patient is at high risk of readmission (1 = Yes, 0 = No) based on: length of stay (in days), and number of chronic conditions. The logistic model is:\nIntercept (β0) = -3.2, Length of stay (β1) = 0.15 per day, Chronic conditions (β2) = 0.8 per condition.\nFor a patient who stayed for 6 days and with 2 chronic conditions, calculate (1) The log-odds of readmission, (2) Compute their probability of admission.\na. Log-odds: -0.7; Probability: 33.2%\nb. Log-odds: 0.1; Probability: 52.5%\nc. Log-odds: -1.2; Probability: 23.2%\nd. Log-odds: 0.8; Probability: 69.0%\ne. Log-odds: -2.0; Probability: 11.9%",
             "question_type": "MCQ",
             "options": {
                 "A": "Log-odds: -0.7; Probability: 33.2%",
@@ -120,7 +120,7 @@
                 "E": "Log-odds: -2.0; Probability: 11.9%"
             },
             "correct_option_label": "A",
-            "explanation": "Log-odds = -3.2 + 0.15(6) + 0.8(2) = -3.2 + 0.9 + 1.6 = -0.7. Probability = e^(-0.7) / (1 + e^(-0.7)) \u2248 0.4965 / 1.4965 \u2248 33.2%.",
+            "explanation": "Log-odds = -3.2 + 0.15(6) + 0.8(2) = -3.2 + 0.9 + 1.6 = -0.7. Probability = e^(-0.7) / (1 + e^(-0.7)) ≈ 0.4965 / 1.4965 ≈ 33.2%.",
             "module": 2
         },
         {
@@ -135,7 +135,7 @@
                 "E": "0.90"
             },
             "correct_option_label": "B",
-            "explanation": "Precision = TP/(TP+FP) = 50/(50+20) = 0.714. Recall = TP/(TP+FN) = 50/(50+10) = 0.833. F1-Score = 2 * (Precision * Recall) / (Precision + Recall) = 2 * (0.595) / (1.547) \u2248 0.77.",
+            "explanation": "Precision = TP/(TP+FP) = 50/(50+20) = 0.714. Recall = TP/(TP+FN) = 50/(50+10) = 0.833. F1-Score = 2 * (Precision * Recall) / (Precision + Recall) = 2 * (0.595) / (1.547) ≈ 0.77.",
             "module": 3
         },
         {
@@ -150,12 +150,12 @@
                 "E": "2.22"
             },
             "correct_option_label": "C",
-            "explanation": "Grand Mean = Sum of all values / 12 = 1305 / 12 = 108.75. Average for Q4 = (130+140+135)/3 = 135. Seasonality Index = Q4 Avg / Grand Mean = 135 / 108.75 \u2248 1.24.",
+            "explanation": "Grand Mean = Sum of all values / 12 = 1305 / 12 = 108.75. Average for Q4 = (130+140+135)/3 = 135. Seasonality Index = Q4 Avg / Grand Mean = 135 / 108.75 ≈ 1.24.",
             "module": 3
         },
         {
             "question_id": "Q11",
-            "question_text": "A store uses exponential smoothing with \u03b1 = 0.4 to forecast daily sales.\n\u2022 Yesterday's forecast: 100 units\n\u2022 Yesterday's actual sales: 120 units\nWhat is today's forecast?\na. 100\nb. 104\nc. 108\nd. 112\ne. 120",
+            "question_text": "A store uses exponential smoothing with α = 0.4 to forecast daily sales.\n• Yesterday's forecast: 100 units\n• Yesterday's actual sales: 120 units\nWhat is today's forecast?\na. 100\nb. 104\nc. 108\nd. 112\ne. 120",
             "question_type": "MCQ",
             "options": {
                 "A": "100",
@@ -165,7 +165,7 @@
                 "E": "120"
             },
             "correct_option_label": "C",
-            "explanation": "Today's forecast = Yesterday's forecast + \u03b1 * (Yesterday's actual - Yesterday's forecast). Forecast = 100 + 0.4 * (120 - 100) = 100 + 8 = 108.",
+            "explanation": "Today's forecast = Yesterday's forecast + α * (Yesterday's actual - Yesterday's forecast). Forecast = 100 + 0.4 * (120 - 100) = 100 + 8 = 108.",
             "module": 3
         },
         {
@@ -185,7 +185,7 @@
         },
         {
             "question_id": "Q13",
-            "question_text": "A retailer uses a weighted average method to forecast weekly sales, assigning these weights to the past 3 weeks:\n\u2022 Most recent week (t-1): Weight = 0.5\n\u2022 2 weeks ago (t-2): Weight = 0.3\n\u2022 3 weeks ago (t-3): Weight = 0.2\nSales data: Week t-3: 200 units, Week t-2: 220 units, Week t-1: 250 units\nWhat is the weighted average forecast for the next week?\na. 210\nb. 231\nc. 233\nd. 235\ne. 240",
+            "question_text": "A retailer uses a weighted average method to forecast weekly sales, assigning these weights to the past 3 weeks:\n• Most recent week (t-1): Weight = 0.5\n• 2 weeks ago (t-2): Weight = 0.3\n• 3 weeks ago (t-3): Weight = 0.2\nSales data: Week t-3: 200 units, Week t-2: 220 units, Week t-1: 250 units\nWhat is the weighted average forecast for the next week?\na. 210\nb. 231\nc. 233\nd. 235\ne. 240",
             "question_type": "MCQ",
             "options": {
                 "A": "210",
@@ -199,8 +199,23 @@
             "module": 3
         },
         {
+            "question_id": "Passage_1",
+            "question_text": "A farmer must choose between three crop options with profits ($000s) dependent on rainfall:\nCrop: Drought (θ1) | Normal (θ2) | Heavy Rain (θ3)\nCorn (A): 20 | 60 | 40\nSoyabean (B): 30 | 50 | 30\nWheat (C): 40 | 40 | 20",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 4
+        },
+        {
             "question_id": "Q14",
-            "question_text": "A farmer must choose between three crop options with profits ($000s) dependent on rainfall:\nCrop: Drought (\u03b81) | Normal (\u03b82) | Heavy Rain (\u03b83)\nCorn (A): 20 | 60 | 40\nSoyabean (B): 30 | 50 | 30\nWheat (C): 40 | 40 | 20\nIf the farmer uses the Maximax criterion, which crop will they choose?\na. Corn (A)\nb. Soybean (B)\nc. Wheat (C)\nd. Indifferent between A and C\ne. Cannot determine/ not enough data",
+            "question_text": "If the farmer uses the Maximax criterion, which crop will they choose?\na. Corn (A)\nb. Soybean (B)\nc. Wheat (C)\nd. Indifferent between A and C\ne. Cannot determine/ not enough data",
             "question_type": "MCQ",
             "options": {
                 "A": "Corn (A)",
@@ -211,11 +226,12 @@
             },
             "correct_option_label": "A",
             "explanation": "Maximax looks for the maximum possible payoff. For Corn it is 60, for Soyabean it is 50, and for Wheat it is 40. The highest overall value is 60, belonging to Corn.",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "Q15",
-            "question_text": "Using the same crop profit table as Q14, assume the farmer\u2019s optimism coefficient (\u03b1) is 0.7. Which crop maximizes the Hurwicz weighted payoff?\na. Corn (A)\nb. Soybean (B)\nc. Wheat (C)\nd. Indifferent between A and B\ne. Cannot determine/ not enough data",
+            "question_text": "assume the farmer’s optimism coefficient (α) is 0.7. Which crop maximizes the Hurwicz weighted payoff?\na. Corn (A)\nb. Soybean (B)\nc. Wheat (C)\nd. Indifferent between A and B\ne. Cannot determine/ not enough data",
             "question_type": "MCQ",
             "options": {
                 "A": "Corn (A)",
@@ -225,8 +241,9 @@
                 "E": "Cannot determine/ not enough data"
             },
             "correct_option_label": "A",
-            "explanation": "Hurwicz Score = \u03b1(Max Payoff) + (1-\u03b1)(Min Payoff). Corn: 0.7(60) + 0.3(20) = 48. Soybean: 0.7(50) + 0.3(30) = 44. Wheat: 0.7(40) + 0.3(20) = 34. Corn has the highest score.",
-            "module": 4
+            "explanation": "Hurwicz Score = α(Max Payoff) + (1-α)(Min Payoff). Corn: 0.7(60) + 0.3(20) = 48. Soybean: 0.7(50) + 0.3(30) = 44. Wheat: 0.7(40) + 0.3(20) = 34. Corn has the highest score.",
+            "module": 4,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "Q16",
@@ -260,7 +277,7 @@
         },
         {
             "question_id": "Q18",
-            "question_text": "In a simple linear regression model Y = \u03b20 + \u03b21X, what does the slope coefficient (\u03b21) represent?\na. The predicted value of Y when X = 0.\nb. The change in Y for a one-unit increase in X, holding all else constant.\nc. The strength of the correlation between X and Y.\nd. The probability that X influences Y.\ne. The error term of the model.",
+            "question_text": "In a simple linear regression model Y = β0 + β1X, what does the slope coefficient (β1) represent?\na. The predicted value of Y when X = 0.\nb. The change in Y for a one-unit increase in X, holding all else constant.\nc. The strength of the correlation between X and Y.\nd. The probability that X influences Y.\ne. The error term of the model.",
             "question_type": "MCQ",
             "options": {
                 "A": "The predicted value of Y when X = 0.",
@@ -270,7 +287,7 @@
                 "E": "The error term of the model."
             },
             "correct_option_label": "B",
-            "explanation": "The slope coefficient (\u03b21) quantifies how much the dependent variable Y changes on average for every one-unit increment in the predictor X.",
+            "explanation": "The slope coefficient (β1) quantifies how much the dependent variable Y changes on average for every one-unit increment in the predictor X.",
             "module": 2
         },
         {
@@ -305,7 +322,7 @@
         },
         {
             "question_id": "Q21",
-            "question_text": "In multiple linear regression with two predictors (X1 and X2), how is the adjusted R \u2013 squared different from R \u2013 squared?\na. Adjusted R-squared decreases as more predictors are added.\nb. Adjusted R-squared accounts for the number of predictors and sample size.\nc. Adjusted R-squared is always higher than R-squared.\nd. Adjusted R-squared measures the significance of individual coefficients.\ne. Adjusted R-squared ignores the effect of irrelevant predictors.",
+            "question_text": "In multiple linear regression with two predictors (X1 and X2), how is the adjusted R – squared different from R – squared?\na. Adjusted R-squared decreases as more predictors are added.\nb. Adjusted R-squared accounts for the number of predictors and sample size.\nc. Adjusted R-squared is always higher than R-squared.\nd. Adjusted R-squared measures the significance of individual coefficients.\ne. Adjusted R-squared ignores the effect of irrelevant predictors.",
             "question_type": "MCQ",
             "options": {
                 "A": "Adjusted R-squared decreases as more predictors are added.",
@@ -320,7 +337,7 @@
         },
         {
             "question_id": "Q22",
-            "question_text": "What is the key distinction between parametric and non \u2013 parametric tests?\na. Parametric tests require distributional assumption, while non-parametric tests do not.\nb. Non-parametric tests always have higher statistical power.\nc. Parametric tests can only be used for categorical data.\nd. Non-parametric tests assume a specific population distribution.\ne. Parametric tests are only applicable to small sample sizes.",
+            "question_text": "What is the key distinction between parametric and non – parametric tests?\na. Parametric tests require distributional assumption, while non-parametric tests do not.\nb. Non-parametric tests always have higher statistical power.\nc. Parametric tests can only be used for categorical data.\nd. Non-parametric tests assume a specific population distribution.\ne. Parametric tests are only applicable to small sample sizes.",
             "question_type": "MCQ",
             "options": {
                 "A": "Parametric tests require distributional assumption, while non-parametric tests do not.",
@@ -335,14 +352,14 @@
         },
         {
             "question_id": "Q23",
-            "question_text": "Which of the following is a non \u2013 parametric alternative to the paired t \u2013 test?\na. ANOVA\nb. Wilcoxon signed - rank test\nc. Chi \u2013 square test\nd. Pearson\u2019s correlation\ne. Two-sample z \u2013 test",
+            "question_text": "Which of the following is a non – parametric alternative to the paired t – test?\na. ANOVA\nb. Wilcoxon signed - rank test\nc. Chi – square test\nd. Pearson’s correlation\ne. Two-sample z – test",
             "question_type": "MCQ",
             "options": {
                 "A": "ANOVA",
                 "B": "Wilcoxon signed - rank test",
-                "C": "Chi \u2013 square test",
-                "D": "Pearson\u2019s correlation",
-                "E": "Two-sample z \u2013 test"
+                "C": "Chi – square test",
+                "D": "Pearson’s correlation",
+                "E": "Two-sample z – test"
             },
             "correct_option_label": "B",
             "explanation": "The Wilcoxon signed-rank test is the standard non-parametric substitute for the paired t-test when the assumption of normality is violated.",
@@ -350,13 +367,13 @@
         },
         {
             "question_id": "Q24",
-            "question_text": "Which of the following tests is parametric?\na. Mann-Whitney U test\nb. Kruskal \u2013 Wallis test\nc. Spearman\u2019s rank correlation\nd. Independent samples t \u2013 test\ne. Friedman test",
+            "question_text": "Which of the following tests is parametric?\na. Mann-Whitney U test\nb. Kruskal – Wallis test\nc. Spearman’s rank correlation\nd. Independent samples t – test\ne. Friedman test",
             "question_type": "MCQ",
             "options": {
                 "A": "Mann-Whitney U test",
-                "B": "Kruskal \u2013 Wallis test",
-                "C": "Spearman\u2019s rank correlation",
-                "D": "Independent samples t \u2013 test",
+                "B": "Kruskal – Wallis test",
+                "C": "Spearman’s rank correlation",
+                "D": "Independent samples t – test",
                 "E": "Friedman test"
             },
             "correct_option_label": "D",
@@ -395,11 +412,11 @@
         },
         {
             "question_id": "Q27",
-            "question_text": "Which forecasting method would you choose for a dataset with no trend or seasonality but occasional outliers?\na. Seasonal Na\u00efve method\nb. Na\u00efve method\nc. Simple Average method\nd. Weighted Average method\ne. Exponential Smoothing method",
+            "question_text": "Which forecasting method would you choose for a dataset with no trend or seasonality but occasional outliers?\na. Seasonal Naïve method\nb. Naïve method\nc. Simple Average method\nd. Weighted Average method\ne. Exponential Smoothing method",
             "question_type": "MCQ",
             "options": {
-                "A": "Seasonal Na\u00efve method",
-                "B": "Na\u00efve method",
+                "A": "Seasonal Naïve method",
+                "B": "Naïve method",
                 "C": "Simple Average method",
                 "D": "Weighted Average method",
                 "E": "Exponential Smoothing method"
@@ -410,17 +427,17 @@
         },
         {
             "question_id": "Q28",
-            "question_text": "The Hurwicz Method combines:\na. Minimax and Maximax criteria.\nb. Optimism (\u03b1) and pessimism (1\u2212\u03b1) weights.\nc. Only probabilities of outcomes.\nd. Historical averages.\ne. None of the above.",
+            "question_text": "The Hurwicz Method combines:\na. Minimax and Maximax criteria.\nb. Optimism (α) and pessimism (1−α) weights.\nc. Only probabilities of outcomes.\nd. Historical averages.\ne. None of the above.",
             "question_type": "MCQ",
             "options": {
                 "A": "Minimax and Maximax criteria.",
-                "B": "Optimism (\u03b1) and pessimism (1\u2212\u03b1) weights.",
+                "B": "Optimism (α) and pessimism (1−α) weights.",
                 "C": "Only probabilities of outcomes.",
                 "D": "Historical averages.",
                 "E": "None of the above."
             },
             "correct_option_label": "B",
-            "explanation": "The Hurwicz criterion uses a coefficient of optimism (\u03b1) to create a weighted average of the maximum and minimum payoffs for each strategy.",
+            "explanation": "The Hurwicz criterion uses a coefficient of optimism (α) to create a weighted average of the maximum and minimum payoffs for each strategy.",
             "module": 4
         },
         {

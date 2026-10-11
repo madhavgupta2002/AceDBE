@@ -70,7 +70,8 @@
       "options": {},
       "correct_option_label": null,
       "explanation": "",
-      "module": "Verbal Ability"
+      "module": "Verbal Ability",
+      "is_passage": true
     },
     {
       "question_id": "1",
@@ -86,7 +87,8 @@
       "explanation": "The title \"Titan and the Origin of Life\" is the most appropriate because the passage primarily discusses Titan, its unique characteristics, and its potential to reveal information about the origin of life. The passage mentions the Panspermia theory and the curiosity about the origin of life, but it focuses on how Titan, with its special features like its atmosphere and surface conditions, might help scientists understand how life began. The other titles either do not capture the main focus of the passage or address only a small part of it.",
       "module": "Verbal Ability",
       "topic": "Reading Comprehension",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "2",
@@ -102,7 +104,8 @@
       "explanation": "The passage states that Titan is surrounded by a thick orange haze that obstructs the view below the dense clouds, making it impossible to know about its surface features.",
       "module": "Verbal Ability",
       "topic": "Reading Comprehension",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "3",
@@ -118,7 +121,8 @@
       "explanation": "",
       "module": "Verbal Ability",
       "topic": "Reading Comprehension",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "4",
@@ -134,7 +138,8 @@
       "explanation": "According to the passage, many mainstream scientists laugh off the Panspermia theory, indicating they do not agree with it.",
       "module": "Verbal Ability",
       "topic": "Reading Comprehension",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "5",
@@ -414,7 +419,8 @@
       "options": {},
       "correct_option_label": null,
       "explanation": "",
-      "module": "Quantitative Ability"
+      "module": "Quantitative Ability",
+      "is_passage": true
     },
     {
       "question_id": "21",
@@ -431,7 +437,8 @@
       "module": "Quantitative Ability",
       "topic": "Data Interpretation",
       "difficulty": "Easy",
-      "subtopic": "Chart/Graph/Table"
+      "subtopic": "Chart/Graph/Table",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "22",
@@ -448,7 +455,8 @@
       "module": "Quantitative Ability",
       "topic": "Data Interpretation",
       "difficulty": "Easy",
-      "subtopic": "Chart/Graph/Table"
+      "subtopic": "Chart/Graph/Table",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "23",
@@ -465,7 +473,8 @@
       "module": "Quantitative Ability",
       "topic": "Data Interpretation",
       "difficulty": "Easy",
-      "subtopic": "Chart/Graph/Table"
+      "subtopic": "Chart/Graph/Table",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "24",
@@ -482,7 +491,8 @@
       "module": "Quantitative Ability",
       "topic": "Data Interpretation",
       "difficulty": "Easy",
-      "subtopic": "Chart/Graph/Table"
+      "subtopic": "Chart/Graph/Table",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "25",

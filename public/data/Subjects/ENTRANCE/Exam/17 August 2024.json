@@ -24,37 +24,11 @@
           "question_type": "MCQ",
           "num_questions": 20,
           "marks_per_question": 1,
-          "question_ids": [
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10",
-            "11",
-            "12",
-            "13",
-            "14",
-            "15",
-            "16",
-            "17",
-            "18",
-            "19",
-            "20"
-          ],
+          "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
           "context_blocks": [
             {
               "context_question_id": "Passage_1",
-              "applies_to": [
-                "1",
-                "2",
-                "3",
-                "4"
-              ]
+              "applies_to": ["1", "2", "3", "4"]
             }
           ]
         },
@@ -63,37 +37,11 @@
           "question_type": "MCQ",
           "num_questions": 20,
           "marks_per_question": 1,
-          "question_ids": [
-            "21",
-            "22",
-            "23",
-            "24",
-            "25",
-            "26",
-            "27",
-            "28",
-            "29",
-            "30",
-            "31",
-            "32",
-            "33",
-            "34",
-            "35",
-            "36",
-            "37",
-            "38",
-            "39",
-            "40"
-          ],
+          "question_ids": ["21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40"],
           "context_blocks": [
             {
               "context_question_id": "Passage_2",
-              "applies_to": [
-                "21",
-                "22",
-                "23",
-                "24"
-              ]
+              "applies_to": ["21", "22", "23", "24"]
             }
           ]
         },
@@ -102,36 +50,14 @@
           "question_type": "MCQ",
           "num_questions": 10,
           "marks_per_question": 1,
-          "question_ids": [
-            "41",
-            "42",
-            "43",
-            "44",
-            "45",
-            "46",
-            "47",
-            "48",
-            "49",
-            "50"
-          ]
+          "question_ids": ["41", "42", "43", "44", "45", "46", "47", "48", "49", "50"]
         },
         {
           "name": "General Awareness",
           "question_type": "MCQ",
           "num_questions": 10,
           "marks_per_question": 1,
-          "question_ids": [
-            "51",
-            "52",
-            "53",
-            "54",
-            "55",
-            "56",
-            "57",
-            "58",
-            "59",
-            "60"
-          ]
+          "question_ids": ["51", "52", "53", "54", "55", "56", "57", "58", "59", "60"]
         }
       ]
     }
@@ -144,7 +70,8 @@
       "options": {},
       "correct_option_label": null,
       "explanation": "",
-      "module": "Verbal Ability"
+      "module": "Verbal Ability",
+      "is_passage": true
     },
     {
       "question_id": "1",
@@ -160,7 +87,8 @@
       "explanation": "The paragraph is about the importance of problem solving skills. Hence option 3 is more suitable",
       "module": "Verbal Ability",
       "topic": "Reading Comprehension",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "2",
@@ -176,7 +104,8 @@
       "explanation": "INDEED -CAREER DEVELOPMENT- EDITORIAL TEAM\nYes . option 2 indicates the most important skill for decision making.",
       "module": "Verbal Ability",
       "topic": "Reading Comprehension",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "3",
@@ -192,7 +121,8 @@
       "explanation": "INDEED -CAREER DEVELOPMENT- EDITORIAL TEAM",
       "module": "Verbal Ability",
       "topic": "Reading Comprehension",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "4",
@@ -208,7 +138,8 @@
       "explanation": "INDEED -CAREER DEVELOPMENT- EDITORIAL TEAM",
       "module": "Verbal Ability",
       "topic": "Reading Comprehension",
-      "difficulty": "Medium"
+      "difficulty": "Medium",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "5",
@@ -489,7 +420,8 @@
       "options": {},
       "correct_option_label": null,
       "explanation": "",
-      "module": "Quantitative Ability"
+      "module": "Quantitative Ability",
+      "is_passage": true
     },
     {
       "question_id": "21",
@@ -506,7 +438,8 @@
       "module": "Quantitative Ability",
       "topic": "Data Interpretation",
       "difficulty": "Medium",
-      "subtopic": "Chart/Graph/Table"
+      "subtopic": "Chart/Graph/Table",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "22",
@@ -523,7 +456,8 @@
       "module": "Quantitative Ability",
       "topic": "Data Interpretation",
       "difficulty": "Medium",
-      "subtopic": "Chart/Graph/Table"
+      "subtopic": "Chart/Graph/Table",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "23",
@@ -540,7 +474,8 @@
       "module": "Quantitative Ability",
       "topic": "Data Interpretation",
       "difficulty": "Medium",
-      "subtopic": "Chart/Graph/Table"
+      "subtopic": "Chart/Graph/Table",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "24",
@@ -557,7 +492,8 @@
       "module": "Quantitative Ability",
       "topic": "Data Interpretation",
       "difficulty": "Medium",
-      "subtopic": "Chart/Graph/Table"
+      "subtopic": "Chart/Graph/Table",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "25",

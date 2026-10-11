@@ -5,9 +5,24 @@
   },
   "questions": [
     {
+      "question_id": "Passage_2",
+      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 1
+    },
+    {
       "question_id": "STAT_MTB2_Q2",
       "module": 1,
-      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The standard deviation of the number of deliveries done by a sales executive in a day is:",
+      "question_text": "The standard deviation of the number of deliveries done by a sales executive in a day is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 3 and 5",
@@ -16,12 +31,13 @@
         "D": "Between 9 and 11"
       },
       "correct_option_label": "C",
-      "explanation": "**Formula:** $s = \\sqrt{\\frac{\\sum(x_i - \\bar{x})^2}{n-1}}$\n\n**Steps:**\n- Data: 12, 22, 20, 6, 5, 6, 20\n- Mean $\\bar{x} = 91/7 = 13$\n- Deviations: -1, 9, 7, -7, -8, -7, 7\n- Squared: 1, 81, 49, 49, 64, 49, 49\n- Sum = 342\n- Variance = $342/6 = 57$\n- $s = \\sqrt{57} \\approx 7.55$\n\n**Result:** Between 7 and 9"
+      "explanation": "**Formula:** $s = \\sqrt{\\frac{\\sum(x_i - \\bar{x})^2}{n-1}}$\n\n**Steps:**\n- Data: 12, 22, 20, 6, 5, 6, 20\n- Mean $\\bar{x} = 91/7 = 13$\n- Deviations: -1, 9, 7, -7, -8, -7, 7\n- Squared: 1, 81, 49, 49, 64, 49, 49\n- Sum = 342\n- Variance = $342/6 = 57$\n- $s = \\sqrt{57} \\approx 7.55$\n\n**Result:** Between 7 and 9",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "STAT_MTB2_Q3",
       "module": 1,
-      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The coefficient of variation of the number of deliveries done by a sales executive in a day is:",
+      "question_text": "The coefficient of variation of the number of deliveries done by a sales executive in a day is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0 to 0.5",
@@ -30,12 +46,13 @@
         "D": "More than 1.5"
       },
       "correct_option_label": "B",
-      "explanation": "**Formula:** $CV = \\frac{s}{\\bar{x}} \\times 100$\n\n**Steps:**\n- From Q2, $s \\approx 7.55$, $\\bar{x} = 13$\n- $CV = \\frac{7.55}{13} = 0.581 \\approx 0.58$\n\n**Result:** Between 0.5 and 1.0"
+      "explanation": "**Formula:** $CV = \\frac{s}{\\bar{x}} \\times 100$\n\n**Steps:**\n- From Q2, $s \\approx 7.55$, $\\bar{x} = 13$\n- $CV = \\frac{7.55}{13} = 0.581 \\approx 0.58$\n\n**Result:** Between 0.5 and 1.0",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "STAT_MTB2_Q4",
       "module": 1,
-      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The type of data recorded can be classified as:",
+      "question_text": "The type of data recorded can be classified as:",
       "question_type": "MCQ",
       "options": {
         "A": "Quantitative, numeric, interval",
@@ -44,12 +61,13 @@
         "D": "Quantitative, numeric, absolute"
       },
       "correct_option_label": "B",
-      "explanation": "Deliveries are countable numbers with a true zero (0 deliveries is meaningful), making it ratio scale data. Ratio scale allows meaningful ratios (e.g., 20 deliveries is twice 10 deliveries)."
+      "explanation": "Deliveries are countable numbers with a true zero (0 deliveries is meaningful), making it ratio scale data. Ratio scale allows meaningful ratios (e.g., 20 deliveries is twice 10 deliveries).",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "STAT_MTB2_Q10",
       "module": 1,
-      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The median number of deliveries done by a sales executive in a day is:",
+      "question_text": "The median number of deliveries done by a sales executive in a day is:",
       "question_type": "MCQ",
       "options": {
         "A": "6",
@@ -58,12 +76,13 @@
         "D": "16"
       },
       "correct_option_label": "C",
-      "explanation": "**Formula:** Median = middle value when sorted\n\n**Steps:**\n- Sort: 5, 6, 6, 12, 20, 20, 22\n- For $n=7$ (odd), median = 4th value = 12\n\n**Result:** 12"
+      "explanation": "**Formula:** Median = middle value when sorted\n\n**Steps:**\n- Sort: 5, 6, 6, 12, 20, 20, 22\n- For $n=7$ (odd), median = 4th value = 12\n\n**Result:** 12",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "STAT_MTB2_Q11",
       "module": 1,
-      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The inter-quartile range for the number of deliveries done by a sales executive in a day is:",
+      "question_text": "The inter-quartile range for the number of deliveries done by a sales executive in a day is:",
       "question_type": "MCQ",
       "options": {
         "A": "11",
@@ -72,12 +91,13 @@
         "D": "14"
       },
       "correct_option_label": "D",
-      "explanation": "**Formula:** $IQR = Q_3 - Q_1$\n\n**Steps:**\n- Sorted: 5, 6, 6, 12, 20, 20, 22\n- $Q_1$ position = $0.25(7+1) = 2$, $Q_1 = 6$\n- $Q_3$ position = $0.75(7+1) = 6$, $Q_3 = 20$\n- $IQR = 20 - 6 = 14$\n\n**Result:** 14"
+      "explanation": "**Formula:** $IQR = Q_3 - Q_1$\n\n**Steps:**\n- Sorted: 5, 6, 6, 12, 20, 20, 22\n- $Q_1$ position = $0.25(7+1) = 2$, $Q_1 = 6$\n- $Q_3$ position = $0.75(7+1) = 6$, $Q_3 = 20$\n- $IQR = 20 - 6 = 14$\n\n**Result:** 14",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "STAT_MTB2_Q13",
       "module": 1,
-      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. If a box plot is drawn for this data, the top of the box will correspond to a number:",
+      "question_text": "If a box plot is drawn for this data, the top of the box will correspond to a number:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 15 and 17",
@@ -86,12 +106,13 @@
         "D": "Between 21 and 23"
       },
       "correct_option_label": "C",
-      "explanation": "**Formula:** Top of box = $Q_3$\n\n**Steps:**\n- From Q11, $Q_3 = 20$\n- The top of the box in a box plot represents $Q_3$\n\n**Result:** Between 19 and 21"
+      "explanation": "**Formula:** Top of box = $Q_3$\n\n**Steps:**\n- From Q11, $Q_3 = 20$\n- The top of the box in a box plot represents $Q_3$\n\n**Result:** Between 19 and 21",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "STAT_MTB2_Q15",
       "module": 1,
-      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The z-score corresponding to the median number of deliveries done by a sales executive in a day is:",
+      "question_text": "The z-score corresponding to the median number of deliveries done by a sales executive in a day is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between -2 and -1",
@@ -100,12 +121,13 @@
         "D": "Between 1 and 2"
       },
       "correct_option_label": "B",
-      "explanation": "**Formula:** $z = \\frac{x - \\bar{x}}{s}$\n\n**Steps:**\n- Median = 12, $\\bar{x} = 13$, $s \\approx 7.55$\n- $z = \\frac{12 - 13}{7.55} = \\frac{-1}{7.55} \\approx -0.13$\n\n**Result:** Between -1 and 0"
+      "explanation": "**Formula:** $z = \\frac{x - \\bar{x}}{s}$\n\n**Steps:**\n- Median = 12, $\\bar{x} = 13$, $s \\approx 7.55$\n- $z = \\frac{12 - 13}{7.55} = \\frac{-1}{7.55} \\approx -0.13$\n\n**Result:** Between -1 and 0",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "STAT_MTB2_Q16",
       "module": 1,
-      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The average number of deliveries done by a sales executive in a day is:",
+      "question_text": "The average number of deliveries done by a sales executive in a day is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 10 and 12",
@@ -114,12 +136,13 @@
         "D": "Between 16 and 18"
       },
       "correct_option_label": "B",
-      "explanation": "**Formula:** Mean = $\\frac{\\sum x}{n}$\n\n**Steps:**\n- Sum = $12+22+20+6+5+6+20 = 91$\n- $n = 7$\n- Mean = $91/7 = 13$\n\n**Result:** Between 12 and 14"
+      "explanation": "**Formula:** Mean = $\\frac{\\sum x}{n}$\n\n**Steps:**\n- Sum = $12+22+20+6+5+6+20 = 91$\n- $n = 7$\n- Mean = $91/7 = 13$\n\n**Result:** Between 12 and 14",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "STAT_MTB2_Q17",
       "module": 1,
-      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The number of outliers in this data identified using the box-plot method is:",
+      "question_text": "The number of outliers in this data identified using the box-plot method is:",
       "question_type": "MCQ",
       "options": {
         "A": "0",
@@ -128,11 +151,12 @@
         "D": "3"
       },
       "correct_option_label": "A",
-      "explanation": "**Formula:** Outliers if value $< Q_1 - 1.5 \\times IQR$ or $> Q_3 + 1.5 \\times IQR$\n\n**Steps:**\n- $Q_1 = 6$, $Q_3 = 20$, $IQR = 14$\n- Lower fence = $6 - 1.5 \\times 14 = -15$\n- Upper fence = $20 + 1.5 \\times 14 = 41$\n- All values (5 to 22) are within $[-15, 41]$\n\n**Result:** 0 outliers"
+      "explanation": "**Formula:** Outliers if value $< Q_1 - 1.5 \\times IQR$ or $> Q_3 + 1.5 \\times IQR$\n\n**Steps:**\n- $Q_1 = 6$, $Q_3 = 20$, $IQR = 14$\n- Lower fence = $6 - 1.5 \\times 14 = -15$\n- Upper fence = $20 + 1.5 \\times 14 = 41$\n- All values (5 to 22) are within $[-15, 41]$\n\n**Result:** 0 outliers",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "STAT_MTB2_Q20",
-      "question_text": "The number of deliveries done in a day by 7 different sales executives working for an e-commerce retailer is recorded to be 12, 22, 20, 6, 5, 6, and 20. The 40th percentile corresponding to the number of deliveries done by a sales executive in a day is:",
+      "question_text": "The 40th percentile corresponding to the number of deliveries done by a sales executive in a day is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 6 and 7",
@@ -141,12 +165,28 @@
         "D": "Between 9 and 10"
       },
       "correct_option_label": "C",
-      "explanation": "**Formula:** Percentile position = $(n+1) \\times \\frac{p}{100}$\n\n**Steps:**\n- $n = 7$, $p = 40$\n- Position = $0.40(7+1) = 3.2$\n- Sorted: 5, 6, 6, 12, 20, 20, 22\n- Interpolate: $6 + 0.2 \\times (12-6) = 6 + 1.2 = 7.2$\n\n**Result:** Between 7 and 8"
+      "explanation": "**Formula:** Percentile position = $(n+1) \\times \\frac{p}{100}$\n\n**Steps:**\n- $n = 7$, $p = 40$\n- Position = $0.40(7+1) = 3.2$\n- Sorted: 5, 6, 6, 12, 20, 20, 22\n- Interpolate: $6 + 0.2 \\times (12-6) = 6 + 1.2 = 7.2$\n\n**Result:** Between 7 and 8",
+      "passage_id": "Passage_2"
+    },
+    {
+      "question_id": "Passage_1",
+      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews. The survey showed that 10 boys received only one job interview, while 75% of the girls received 3 job interviews. Further, only 25% of the boys received 2 interviews, but the number of boys receiving 2 interviews exceeded the number of girls receiving 2 interviews by 5.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 2
     },
     {
       "question_id": "STAT_MTB2_Q1",
       "module": 2,
-      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews. The survey showed that 10 boys received only one job interview, while 75% of the girls received 3 job interviews. Further, only 25% of the boys received 2 interviews, but the number of boys receiving 2 interviews exceeded the number of girls receiving 2 interviews by 5. The probability that a randomly selected student from this survey is a girl that received only 1 interview is:",
+      "question_text": "The probability that a randomly selected student from this survey is a girl that received only 1 interview is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0 and 0.25",
@@ -155,12 +195,13 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "A",
-      "explanation": "**Steps:**\n- Boys with 1 interview = 10\n- Girls with 3 interviews = 75% of 60 = 45\n- Boys with 2 interviews = 25% of 60 = 15\n- Girls with 2 interviews = 15 - 5 = 10\n- Girls with 1 interview = 60 - 45 - 10 = 5\n- Total students = 120\n- $P(\\text{Girl} \\cap \\text{1 interview}) = \\frac{5}{120} = 0.042$\n\n**Result:** Between 0 and 0.25"
+      "explanation": "**Steps:**\n- Boys with 1 interview = 10\n- Girls with 3 interviews = 75% of 60 = 45\n- Boys with 2 interviews = 25% of 60 = 15\n- Girls with 2 interviews = 15 - 5 = 10\n- Girls with 1 interview = 60 - 45 - 10 = 5\n- Total students = 120\n- $P(\\text{Girl} \\cap \\text{1 interview}) = \\frac{5}{120} = 0.042$\n\n**Result:** Between 0 and 0.25",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "STAT_MTB2_Q5",
       "module": 2,
-      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews. The survey showed that 10 boys received only one job interview, while 75% of the girls received 3 job interviews. Further, only 25% of the boys received 2 interviews, but the number of boys receiving 2 interviews exceeded the number of girls receiving 2 interviews by 5. The probability that a randomly selected student from this survey is either a boy or a student that received exactly 2 interviews is:",
+      "question_text": "The probability that a randomly selected student from this survey is either a boy or a student that received exactly 2 interviews is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0 and 0.25",
@@ -169,12 +210,13 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "C",
-      "explanation": "**Formula:** $P(\\text{Boy} \\cup \\text{2 interviews}) = P(\\text{Boy}) + P(\\text{2 interviews}) - P(\\text{Boy} \\cap \\text{2 interviews})$\n\n**Steps:**\n- $P(\\text{Boy}) = \\frac{60}{120} = 0.5$\n- $P(\\text{2 interviews}) = \\frac{15+10}{120} = \\frac{25}{120} = 0.208$\n- $P(\\text{Boy} \\cap \\text{2}) = \\frac{15}{120} = 0.125$\n- $P(\\text{Boy} \\cup \\text{2}) = 0.5 + 0.208 - 0.125 = 0.583$\n\n**Result:** Between 0.50 and 0.75"
+      "explanation": "**Formula:** $P(\\text{Boy} \\cup \\text{2 interviews}) = P(\\text{Boy}) + P(\\text{2 interviews}) - P(\\text{Boy} \\cap \\text{2 interviews})$\n\n**Steps:**\n- $P(\\text{Boy}) = \\frac{60}{120} = 0.5$\n- $P(\\text{2 interviews}) = \\frac{15+10}{120} = \\frac{25}{120} = 0.208$\n- $P(\\text{Boy} \\cap \\text{2}) = \\frac{15}{120} = 0.125$\n- $P(\\text{Boy} \\cup \\text{2}) = 0.5 + 0.208 - 0.125 = 0.583$\n\n**Result:** Between 0.50 and 0.75",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "STAT_MTB2_Q6",
       "module": 2,
-      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews. The survey showed that 10 boys received only one job interview, while 75% of the girls received 3 job interviews. Further, only 25% of the boys received 2 interviews, but the number of boys receiving 2 interviews exceeded the number of girls receiving 2 interviews by 5. Among students that received exactly 3 interviews, the percentage of boys is:",
+      "question_text": "Among students that received exactly 3 interviews, the percentage of boys is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0 and 0.25",
@@ -183,12 +225,13 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "B",
-      "explanation": "**Steps:**\n- Students with 3 interviews: Girls = 45, Boys = 60 - 10 - 15 = 35\n- Total with 3 interviews = 80\n- Boys with 3 = 35\n- Percentage = $\\frac{35}{80} = 0.4375 = 43.75\\%$\n\n**Result:** Between 0.25 and 0.50"
+      "explanation": "**Steps:**\n- Students with 3 interviews: Girls = 45, Boys = 60 - 10 - 15 = 35\n- Total with 3 interviews = 80\n- Boys with 3 = 35\n- Percentage = $\\frac{35}{80} = 0.4375 = 43.75\\%$\n\n**Result:** Between 0.25 and 0.50",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "STAT_MTB2_Q7",
       "module": 2,
-      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews. The survey showed that 10 boys received only one job interview, while 75% of the girls received 3 job interviews. Further, only 25% of the boys received 2 interviews, but the number of boys receiving 2 interviews exceeded the number of girls receiving 2 interviews by 5. The probability that a randomly selected girl from this sample received exactly 2 interviews is:",
+      "question_text": "The probability that a randomly selected girl from this sample received exactly 2 interviews is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0 and 0.25",
@@ -197,12 +240,13 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "A",
-      "explanation": "**Formula:** Conditional probability $P(\\text{2 interviews} | \\text{Girl}) = \\frac{P(\\text{Girl} \\cap \\text{2 interviews})}{P(\\text{Girl})}$\n\n**Steps:**\n- Girls with 2 interviews = 10\n- Total girls = 60\n- $P(\\text{2} | \\text{Girl}) = \\frac{10}{60} = 0.167$\n\n**Result:** Between 0 and 0.25"
+      "explanation": "**Formula:** Conditional probability $P(\\text{2 interviews} | \\text{Girl}) = \\frac{P(\\text{Girl} \\cap \\text{2 interviews})}{P(\\text{Girl})}$\n\n**Steps:**\n- Girls with 2 interviews = 10\n- Total girls = 60\n- $P(\\text{2} | \\text{Girl}) = \\frac{10}{60} = 0.167$\n\n**Result:** Between 0 and 0.25",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "STAT_MTB2_Q8",
       "module": 1,
-      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews. The survey showed that 10 boys received only one job interview, while 75% of the girls received 3 job interviews. Further, only 25% of the boys received 2 interviews, but the number of boys receiving 2 interviews exceeded the number of girls receiving 2 interviews by 5. Based on this survey, the standard deviation of the number of interviews received by a student is:",
+      "question_text": "Based on this survey, the standard deviation of the number of interviews received by a student is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0 and 0.75",
@@ -211,12 +255,13 @@
         "D": "Between 2.25 and 3.00"
       },
       "correct_option_label": "A",
-      "explanation": "**Formula:** $\\sigma = \\sqrt{\\sum(x-\\mu)^2 \\times P(x)}$ for discrete RV\n\n**Steps:**\n- Find frequency for each interview count:\n  - 1 interview: 10 boys + 5 girls = 15\n  - 2 interviews: 15 boys + 10 girls = 25\n  - 3 interviews: 35 boys + 45 girls = 80\n  - Total students = 120\n- Calculate probabilities:\n  - $P(1) = \\frac{15}{120} = 0.125$\n  - $P(2) = \\frac{25}{120} = 0.208$\n  - $P(3) = \\frac{80}{120} = 0.667$\n- Calculate mean $\\mu$: $1 \\times 0.125 + 2 \\times 0.208 + 3 \\times 0.667 = 0.125 + 0.417 + 2.001 = 2.543$\n- Find $E[X^2]$:\n  - $1^2 \\times 0.125 + 2^2 \\times 0.208 + 3^2 \\times 0.667 = 0.125 + 0.832 + 6.003 = 6.96$\n- $\\text{Var}(X) = E[X^2] - (E[X])^2 = 6.96 - (2.543)^2 = 6.96 - 6.468 = 0.492$\n- Standard deviation $\\sigma = \\sqrt{0.492} \\approx 0.70$\n\n**Result:** Between 0 and 0.75"
+      "explanation": "**Formula:** $\\sigma = \\sqrt{\\sum(x-\\mu)^2 \\times P(x)}$ for discrete RV\n\n**Steps:**\n- Find frequency for each interview count:\n  - 1 interview: 10 boys + 5 girls = 15\n  - 2 interviews: 15 boys + 10 girls = 25\n  - 3 interviews: 35 boys + 45 girls = 80\n  - Total students = 120\n- Calculate probabilities:\n  - $P(1) = \\frac{15}{120} = 0.125$\n  - $P(2) = \\frac{25}{120} = 0.208$\n  - $P(3) = \\frac{80}{120} = 0.667$\n- Calculate mean $\\mu$: $1 \\times 0.125 + 2 \\times 0.208 + 3 \\times 0.667 = 0.125 + 0.417 + 2.001 = 2.543$\n- Find $E[X^2]$:\n  - $1^2 \\times 0.125 + 2^2 \\times 0.208 + 3^2 \\times 0.667 = 0.125 + 0.832 + 6.003 = 6.96$\n- $\\text{Var}(X) = E[X^2] - (E[X])^2 = 6.96 - (2.543)^2 = 6.96 - 6.468 = 0.492$\n- Standard deviation $\\sigma = \\sqrt{0.492} \\approx 0.70$\n\n**Result:** Between 0 and 0.75",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "STAT_MTB2_Q9",
       "module": 2,
-      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews. The survey showed that 10 boys received only one job interview, while 75% of the girls received 3 job interviews. Further, only 25% of the boys received 2 interviews, but the number of boys receiving 2 interviews exceeded the number of girls receiving 2 interviews by 5. The probability that a randomly selected student in this sample that received more than 1 interview is:",
+      "question_text": "The probability that a randomly selected student in this sample that received more than 1 interview is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0 and 0.25",
@@ -225,12 +270,13 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "D",
-      "explanation": "**Steps:**\n- Students with 2 or 3 interviews = 25 + 80 = 105\n- Total students = 120\n- $P(>1 \\text{ interview}) = \\frac{105}{120} = 0.875$\n\n**Result:** Between 0.75 and 1"
+      "explanation": "**Steps:**\n- Students with 2 or 3 interviews = 25 + 80 = 105\n- Total students = 120\n- $P(>1 \\text{ interview}) = \\frac{105}{120} = 0.875$\n\n**Result:** Between 0.75 and 1",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "STAT_MTB2_Q12",
       "module": 2,
-      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews. The survey showed that 10 boys received only one job interview, while 75% of the girls received 3 job interviews. Further, only 25% of the boys received 2 interviews, but the number of boys receiving 2 interviews exceeded the number of girls receiving 2 interviews by 5. The probability that a randomly selected student in this sample received at most 2 interviews is:",
+      "question_text": "The probability that a randomly selected student in this sample received at most 2 interviews is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0 and 0.25",
@@ -239,12 +285,13 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "B",
-      "explanation": "**Steps:**\n- Students with 1 or 2 interviews = 15 + 25 = 40\n- Total students = 120\n- $P(\\leq 2 \\text{ interviews}) = \\frac{40}{120} = 0.333$\n\n**Result:** Between 0.25 and 0.50"
+      "explanation": "**Steps:**\n- Students with 1 or 2 interviews = 15 + 25 = 40\n- Total students = 120\n- $P(\\leq 2 \\text{ interviews}) = \\frac{40}{120} = 0.333$\n\n**Result:** Between 0.25 and 0.50",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "STAT_MTB2_Q14",
       "module": 2,
-      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews. The survey showed that 10 boys received only one job interview, while 75% of the girls received 3 job interviews. Further, only 25% of the boys received 2 interviews, but the number of boys receiving 2 interviews exceeded the number of girls receiving 2 interviews by 5. The percentage of boys that receive 2 or more interviews is:",
+      "question_text": "The percentage of boys that receive 2 or more interviews is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0 and 0.25",
@@ -253,12 +300,13 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "D",
-      "explanation": "**Steps:**\n- Boys with 2 or 3 interviews = 15 + 35 = 50\n- Total boys = 60\n- Percentage = $\\frac{50}{60} = 0.833 = 83.3\\%$\n\n**Result:** Between 0.75 and 1"
+      "explanation": "**Steps:**\n- Boys with 2 or 3 interviews = 15 + 35 = 50\n- Total boys = 60\n- Percentage = $\\frac{50}{60} = 0.833 = 83.3\\%$\n\n**Result:** Between 0.75 and 1",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "STAT_MTB2_Q18",
       "module": 2,
-      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews. The survey showed that 10 boys received only one job interview, while 75% of the girls received 3 job interviews. Further, only 25% of the boys received 2 interviews, but the number of boys receiving 2 interviews exceeded the number of girls receiving 2 interviews by 5. The probability that a randomly selected student in this sample received exactly 2 interviews is:",
+      "question_text": "The probability that a randomly selected student in this sample received exactly 2 interviews is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0 and 0.25",
@@ -267,12 +315,13 @@
         "D": "Between 0.75 and 1"
       },
       "correct_option_label": "A",
-      "explanation": "**Steps:**\n- Total with 2 interviews = 25\n- Total students = 120\n- $P(\\text{exactly 2}) = \\frac{25}{120} = 0.208$\n\n**Result:** Between 0 and 0.25"
+      "explanation": "**Steps:**\n- Total with 2 interviews = 25\n- Total students = 120\n- $P(\\text{exactly 2}) = \\frac{25}{120} = 0.208$\n\n**Result:** Between 0 and 0.25",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "STAT_MTB2_Q19",
       "module": 1,
-      "question_text": "A random sample of 60 boys and 60 girls that registered for placement at a college was analyzed to see how many received 1, 2 or 3 interviews. The survey showed that 10 boys received only one job interview, while 75% of the girls received 3 job interviews. Further, only 25% of the boys received 2 interviews, but the number of boys receiving 2 interviews exceeded the number of girls receiving 2 interviews by 5. Based on this survey, the average number of interviews received by a student is:",
+      "question_text": "Based on this survey, the average number of interviews received by a student is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0 and 0.75",
@@ -281,7 +330,8 @@
         "D": "Between 2.25 and 3.00"
       },
       "correct_option_label": "D",
-      "explanation": "**Formula:** Mean = $\\sum(x \\times P(x))$\n\n**Steps:**\n- Number of boys = 60, number of girls = 60\n- Boys with 1 interview = 10 (given)\n- Boys with 2 interviews = 25% of 60 = 15\n- Boys with 3 interviews = 60 - 10 - 15 = 35\n- Girls with 3 interviews = 75% of 60 = 45\n- Let girls with 2 interviews = y, so boys with 2 interviews (15) = girls with 2 interviews (y) + 5 ⇒ y = 10\n- Girls with 1 interview = 60 - 45 - 10 = 5\n- Total with 1 interview: 10 (boys) + 5 (girls) = 15\n- Total with 2 interviews: 15 (boys) + 10 (girls) = 25\n- Total with 3 interviews: 35 (boys) + 45 (girls) = 80\n- Total interviews: (15 × 1) + (25 × 2) + (80 × 3) = 15 + 50 + 240 = 305\n- Total students = 120\n- Mean = $\\frac{305}{120} = 2.54$\n\n**Result:** Between 2.25 and 3.00"
+      "explanation": "**Formula:** Mean = $\\sum(x \\times P(x))$\n\n**Steps:**\n- Number of boys = 60, number of girls = 60\n- Boys with 1 interview = 10 (given)\n- Boys with 2 interviews = 25% of 60 = 15\n- Boys with 3 interviews = 60 - 10 - 15 = 35\n- Girls with 3 interviews = 75% of 60 = 45\n- Let girls with 2 interviews = y, so boys with 2 interviews (15) = girls with 2 interviews (y) + 5 ⇒ y = 10\n- Girls with 1 interview = 60 - 45 - 10 = 5\n- Total with 1 interview: 10 (boys) + 5 (girls) = 15\n- Total with 2 interviews: 15 (boys) + 10 (girls) = 25\n- Total with 3 interviews: 35 (boys) + 45 (girls) = 80\n- Total interviews: (15 × 1) + (25 × 2) + (80 × 3) = 15 + 50 + 240 = 305\n- Total students = 120\n- Mean = $\\frac{305}{120} = 2.54$\n\n**Result:** Between 2.25 and 3.00",
+      "passage_id": "Passage_1"
     }
   ]
 }

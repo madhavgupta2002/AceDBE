@@ -523,8 +523,23 @@
             "module": 2
         },
         {
+            "question_id": "Passage_1",
+            "question_text": "The following are related to conversion cost: Opening WIP: 100 units (20% completed); New units taken up during the period: 500 units; Closing WIP: 50 units (80% completed).",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 2
+        },
+        {
             "question_id": "38",
-            "question_text": "The following are related to conversion cost: Opening WIP: 100 units (20% completed); New units taken up during the period: 500 units; Closing WIP: 50 units (80% completed). The Equivalent Units is equal to:",
+            "question_text": "The Equivalent Units is equal to:",
             "question_type": "MCQ",
             "options": {
                 "A": "550 Units",
@@ -534,11 +549,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Assuming the standard Weighted Average method: \nTotal Completed Units = 100 + 500 - 50 = 550. \nClosing WIP Equivalent = 50 units × 80% = 40. \nTotal Equivalent Units = 550 + 40 = 590 Units.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "39",
-            "question_text": "Refer the input given in the above question. You have the following additional information: Value of Opening Work-in-process: 2000; Expenses incurred during the period: 40,000. The cost per EU",
+            "question_text": "You have the following additional information: Value of Opening Work-in-process: 2000; Expenses incurred during the period: 40,000. The cost per EU",
             "question_type": "MCQ",
             "options": {
                 "A": "71.19",
@@ -548,7 +564,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Under Weighted Average, Total Cost = Opening WIP Cost (2000) + Current Cost (40,000) = 42,000. \nCost per Equivalent Unit = 42,000 / 590 EU = 71.186, which rounds to 71.19.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "40",
@@ -607,8 +624,23 @@
             "module": 2
         },
         {
+            "question_id": "Passage_2",
+            "question_text": "At the beginning of the process, 200 units are in WIP with 60% completion on conversion cost. During the period, 1000 units are introduced. Units completed and closing WIP are 900 units and 250 units. The closing WIP is completed to an extent of 20%. Units lost are treated as normal loss.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 2
+        },
+        {
             "question_id": "44",
-            "question_text": "At the beginning of the process, 200 units are in WIP with 60% completion on conversion cost. During the period, 1000 units are introduced. Units completed and closing WIP are 900 units and 250 units. The closing WIP is completed to an extent of 20%. Units lost are treated as normal loss. Compute the Equivalent Units for the period.",
+            "question_text": "Compute the Equivalent Units for the period.",
             "question_type": "MCQ",
             "options": {
                 "A": "900",
@@ -618,7 +650,8 @@
             },
             "correct_option_label": "B",
             "explanation": "Using Weighted Average: \nEquivalent Units = Fully Completed Units (900) + [Closing WIP (250) × 20%]. \nEU = 900 + 50 = 950. Normal loss units are ignored in EU computation.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "45",
@@ -632,7 +665,8 @@
             },
             "correct_option_label": "C",
             "explanation": "Total input = 200 + 1000 = 1200 units. \nAccounted = 900 (completed) + 250 (WIP) = 1150 units. \nLost = 50 units. If abnormal, these 50 units receive full equivalent valuation. \nTotal EU = 900 (Completed) + 50 (WIP) + 50 (Abnormal) = 1000 units.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "46",

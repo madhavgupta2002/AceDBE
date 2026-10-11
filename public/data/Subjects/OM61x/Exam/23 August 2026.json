@@ -5,45 +5,45 @@
         "batch": "",
         "attempt": "",
         "exam_pattern": {
-          "exam_name": "IIMB BBA DBE Batch 1 Term 6",
-          "duration_min": 120,
-          "total_marks": 80,
-          "negative_marking": false,
-          "calculator": "scientific",
-          "timing_mode": "global",
-          "reference_materials": [
-            "Standardised formula sheet",
-            "Normal distribution tables"
-          ],
-          "instructions": [
-            "The formula sheet and normal distribution tables are shown on the exam system.",
-            "Rough sheets are provided at the centre and must be returned immediately after the exam."
-          ],
-          "sections": [
-            {
-              "name": "Section A",
-              "question_type": "MCQ",
-              "num_questions": 50,
-              "marks_per_question": 1,
-              "question_ids": ["451387242", "451387243", "451387244", "451387245", "451387246", "451387247", "451387248", "451387249", "451387250", "451387251", "451387252", "451387253", "451387254", "451387255", "451387256", "451387257", "451387258", "451387259", "451387260", "451387261", "451387262", "451387263", "451387264", "451387265", "451387266", "451387267", "451387268", "451387269", "451387270", "451387271", "451387272", "451387273", "451387274", "451387275", "451387276", "451387277", "451387278", "451387279", "451387280", "451387281", "451387282", "451387283", "451387284", "451387285", "451387286", "451387287", "451387288", "451387289", "451387290", "451387291"]
-            },
-            {
-              "name": "Section B",
-              "question_type": "NUMERICAL",
-              "num_questions": 6,
-              "marks_per_question": 4,
-              "note": "6 numericals (stored as 24 SUBJECTIVE entries in this bank). Marks go to the final answer within the stated tolerance.",
-              "question_ids": ["451387293", "451387294", "451387295", "451387296", "451387298", "451387299", "451387300", "451387301", "451387303", "451387304", "451387305", "451387306", "451387308", "451387309", "451387310", "451387311", "451387313", "451387314", "451387315", "451387316", "451387318", "451387319", "451387320", "451387321"]
-            },
-            {
-              "name": "Section C",
-              "question_type": "MATCH_THE_FOLLOWING",
-              "num_questions": 3,
-              "marks_per_question": 2,
-              "question_ids": ["451387322", "451387323", "451387324"]
-            }
-          ],
-          "total_questions": 59
+            "exam_name": "IIMB BBA DBE Batch 1 Term 6",
+            "duration_min": 120,
+            "total_marks": 80,
+            "negative_marking": false,
+            "calculator": "scientific",
+            "timing_mode": "global",
+            "reference_materials": [
+                "Standardised formula sheet",
+                "Normal distribution tables"
+            ],
+            "instructions": [
+                "The formula sheet and normal distribution tables are shown on the exam system.",
+                "Rough sheets are provided at the centre and must be returned immediately after the exam."
+            ],
+            "sections": [
+                {
+                    "name": "Section A",
+                    "question_type": "MCQ",
+                    "num_questions": 50,
+                    "marks_per_question": 1,
+                    "question_ids": ["451387242", "451387243", "451387244", "451387245", "451387246", "451387247", "451387248", "451387249", "451387250", "451387251", "451387252", "451387253", "451387254", "451387255", "451387256", "451387257", "451387258", "451387259", "451387260", "451387261", "451387262", "451387263", "451387264", "451387265", "451387266", "451387267", "451387268", "451387269", "451387270", "451387271", "451387272", "451387273", "451387274", "451387275", "451387276", "451387277", "451387278", "451387279", "451387280", "451387281", "451387282", "451387283", "451387284", "451387285", "451387286", "451387287", "451387288", "451387289", "451387290", "451387291"]
+                },
+                {
+                    "name": "Section B",
+                    "question_type": "NUMERICAL",
+                    "num_questions": 6,
+                    "marks_per_question": 4,
+                    "note": "6 numericals (stored as 24 SUBJECTIVE entries in this bank). Marks go to the final answer within the stated tolerance.",
+                    "question_ids": ["451387293", "451387294", "451387295", "451387296", "451387298", "451387299", "451387300", "451387301", "451387303", "451387304", "451387305", "451387306", "451387308", "451387309", "451387310", "451387311", "451387313", "451387314", "451387315", "451387316", "451387318", "451387319", "451387320", "451387321"]
+                },
+                {
+                    "name": "Section C",
+                    "question_type": "MATCH_THE_FOLLOWING",
+                    "num_questions": 3,
+                    "marks_per_question": 2,
+                    "question_ids": ["451387322", "451387323", "451387324"]
+                }
+            ],
+            "total_questions": 59
         }
     },
     "questions": [
@@ -748,172 +748,286 @@
             "module": 5
         },
         {
+            "question_id": "Passage_1",
+            "question_text": "A pharmacy chain is evaluating two forecasting methods for a commonly purchased medicine. The table below shows actual weekly demand and the forecasts generated by Methods A and B.\n\nUsing the forecast-error measures covered in the course, calculate:",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 2
+        },
+        {
             "question_id": "451387293",
-            "question_text": "A pharmacy chain is evaluating two forecasting methods for a commonly purchased medicine. The table below shows actual weekly demand and the forecasts generated by Methods A and B.\n\nUsing the forecast-error measures covered in the course, calculate:\nthe mean absolute deviation, or MAD, for Method A",
+            "question_text": "the mean absolute deviation, or MAD, for Method A",
             "question_type": "SUBJECTIVE",
             "explanation": "Mean Absolute Deviation (MAD) measures the average magnitude of absolute forecast errors:\n$$\\text{MAD} = \\frac{\\sum_{t=1}^{n} |A_t - F_t|}{n} = 6.25$$\n\nCorrect Answer: 6.25 (acceptable range: 6.23 to 6.27).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "451387294",
-            "question_text": "Refer to Question ID 451387293 for context.\n\nthe mean absolute percentage error, or MAPE, for Method A",
+            "question_text": "the mean absolute percentage error, or MAPE, for Method A",
             "question_type": "SUBJECTIVE",
             "explanation": "Mean Absolute Percentage Error (MAPE) expresses error magnitude relative to actual demand:\n$$\\text{MAPE} = \\frac{1}{n} \\sum_{t=1}^{n} \\left|\\frac{A_t - F_t}{A_t}\\right| \\times 100\\% = 6.21\\%$$\n\nCorrect Answer: 6.21% (acceptable range: 6.19 to 6.23).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "451387295",
-            "question_text": "Refer to Question ID 451387293 for context.\n\nthe MAD for Method B",
+            "question_text": "the MAD for Method B",
             "question_type": "SUBJECTIVE",
             "explanation": "Mean Absolute Deviation for Method B is calculated by summing absolute errors across all evaluated periods and dividing by the number of periods:\n$$\\text{MAD}_B = \\frac{\\sum |A_t - F_{B,t}|}{n} = 8.75$$\n\nCorrect Answer: 8.75 (acceptable range: 8.73 to 8.77).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "451387296",
-            "question_text": "Refer to Question ID 451387293 for context.\n\nthe MAPE for Method B\n\nReport MAPE as a percentage, rounded to two decimal places.",
+            "question_text": "the MAPE for Method B\n\nReport MAPE as a percentage, rounded to two decimal places.",
             "question_type": "SUBJECTIVE",
             "explanation": "Mean Absolute Percentage Error for Method B:\n$$\\text{MAPE}_B = \\frac{1}{n} \\sum \\left|\\frac{A_t - F_{B,t}}{A_t}\\right| \\times 100\\% = 8.24\\%$$\n\nCorrect Answer: 8.24% (acceptable range: 8.22 to 8.26).",
+            "module": 2,
+            "passage_id": "Passage_1"
+        },
+        {
+            "question_id": "Passage_2",
+            "question_text": "A subscription-grocery service forecasts the number of boxes customers will order each week. Because recent demand is expected to be informative, the company uses single exponential smoothing with a smoothing constant of α = 0.30.\n\nThe forecast for Week 1 is 380 boxes. Actual demand during the first three weeks is: Week 1: 400 boxes, Week 2: 420 boxes, Week 3: 390 boxes.\n\nUsing single exponential smoothing, calculate:",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
             "module": 2
         },
         {
             "question_id": "451387298",
-            "question_text": "A subscription-grocery service forecasts the number of boxes customers will order each week. Because recent demand is expected to be informative, the company uses single exponential smoothing with a smoothing constant of α = 0.30.\n\nThe forecast for Week 1 is 380 boxes. Actual demand during the first three weeks is: Week 1: 400 boxes, Week 2: 420 boxes, Week 3: 390 boxes.\n\nUsing single exponential smoothing, calculate:\nthe forecast for Week 2",
+            "question_text": "the forecast for Week 2",
             "question_type": "SUBJECTIVE",
             "explanation": "Single Exponential Smoothing update equation:\n$$F_2 = F_1 + \\alpha(A_1 - F_1) = 380 + 0.30(400 - 380) = 380 + 0.30(20) = 380 + 6 = 386$$\n\nCorrect Answer: 386 (acceptable range: 385.98 to 386.02).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "451387299",
-            "question_text": "Refer to Question ID 451387298 for context.\n\nthe forecast for Week 3",
+            "question_text": "the forecast for Week 3",
             "question_type": "SUBJECTIVE",
             "explanation": "Using actual demand for Week 2 ($A_2 = 420$) and forecast $F_2 = 386$:\n$$F_3 = F_2 + \\alpha(A_2 - F_2) = 386 + 0.30(420 - 386) = 386 + 0.30(34) = 386 + 10.2 = 396.2$$\n\nCorrect Answer: 396.2 (acceptable range: 396.18 to 396.22).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "451387300",
-            "question_text": "Refer to Question ID 451387298 for context.\n\nthe forecast for Week 4",
+            "question_text": "the forecast for Week 4",
             "question_type": "SUBJECTIVE",
             "explanation": "Using actual demand for Week 3 ($A_3 = 390$) and forecast $F_3 = 396.2$:\n$$F_4 = F_3 + \\alpha(A_3 - F_3) = 396.2 + 0.30(390 - 396.2) = 396.2 + 0.30(-6.2) = 396.2 - 1.86 = 394.34$$\n\nCorrect Answer: 394.34 (acceptable range: 394.32 to 394.36).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "451387301",
-            "question_text": "Refer to Question ID 451387298 for context.\n\nthe forecast error for Week 3, using: Forecast error = Actual demand − Forecast demand",
+            "question_text": "the forecast error for Week 3, using: Forecast error = Actual demand − Forecast demand",
             "question_type": "SUBJECTIVE",
             "explanation": "Forecast error in Week 3 is actual demand minus forecast:\n$$E_3 = A_3 - F_3 = 390 - 396.2 = -6.2$$\n\nCorrect Answer: -6.2 (acceptable range: -6.22 to -6.18).",
+            "module": 2,
+            "passage_id": "Passage_2"
+        },
+        {
+            "question_id": "Passage_3",
+            "question_text": "A beverage company sells a product whose quarterly demand has both an upward trend and a recurring seasonal pattern. The underlying trend in demand is represented by:\n\nTrend forecast for time period t = 180 + 12t\n\nHere, t is the consecutive quarterly time-period number. Thus, t=1 represents the first quarter in the time series, t=2 the second quarter, and so on.\n\nThe estimated seasonal relatives are: Quarter 1: 0.80, Quarter 2: 1.00.\nTime period 9 corresponds to Quarter 1 of the seasonal cycle, while time period 10 corresponds to Quarter 2.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
             "module": 2
         },
         {
             "question_id": "451387303",
-            "question_text": "A beverage company sells a product whose quarterly demand has both an upward trend and a recurring seasonal pattern. The underlying trend in demand is represented by:\n\nTrend forecast for time period t = 180 + 12t\n\nHere, t is the consecutive quarterly time-period number. Thus, t=1 represents the first quarter in the time series, t=2 the second quarter, and so on.\n\nThe estimated seasonal relatives are: Quarter 1: 0.80, Quarter 2: 1.00.\nTime period 9 corresponds to Quarter 1 of the seasonal cycle, while time period 10 corresponds to Quarter 2.\n\nCalculate:\nthe underlying trend forecast for time period 9",
+            "question_text": "Calculate:\nthe underlying trend forecast for time period 9",
             "question_type": "SUBJECTIVE",
             "explanation": "Substitute $t = 9$ into the trend equation:\n$$F_{\\text{trend}, 9} = 180 + 12(9) = 180 + 108 = 288$$\n\nCorrect Answer: 288 (acceptable range: 287.95 to 288.05).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "451387304",
-            "question_text": "Refer to Question ID 451387303 for context.\n\nthe seasonally adjusted forecast for time period 9",
+            "question_text": "the seasonally adjusted forecast for time period 9",
             "question_type": "SUBJECTIVE",
             "explanation": "Multiply the baseline trend forecast by the Quarter 1 seasonal relative ($S_1 = 0.80$):\n$$\\text{Final Forecast}_9 = F_{\\text{trend}, 9} \\times S_1 = 288 \\times 0.80 = 230.4$$\n\nCorrect Answer: 230.4 (acceptable range: 230.35 to 230.45).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "451387305",
-            "question_text": "Refer to Question ID 451387303 for context.\n\nthe underlying trend forecast for time period 10",
+            "question_text": "the underlying trend forecast for time period 10",
             "question_type": "SUBJECTIVE",
             "explanation": "Substitute $t = 10$ into the trend equation:\n$$F_{\\text{trend}, 10} = 180 + 12(10) = 180 + 120 = 300$$\n\nCorrect Answer: 300 (acceptable range: 299.95 to 300.05).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "451387306",
-            "question_text": "Refer to Question ID 451387303 for context.\n\nthe seasonally adjusted forecast for time period 10",
+            "question_text": "the seasonally adjusted forecast for time period 10",
             "question_type": "SUBJECTIVE",
             "explanation": "Multiply the baseline trend forecast by the Quarter 2 seasonal relative ($S_2 = 1.00$):\n$$\\text{Final Forecast}_{10} = F_{\\text{trend}, 10} \\times S_2 = 300 \\times 1.00 = 300$$\n\nCorrect Answer: 300 (acceptable range: 299.95 to 300.05).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_3"
+        },
+        {
+            "question_id": "Passage_4",
+            "question_text": "A clinic maintains an inventory of sterile testing kits that are used throughout the year. The clinic expects to use 10,800 kits annually, with demand occurring at a steady and known rate. Every time the clinic places a replenishment order, it incurs a fixed ordering cost of ₹100, irrespective of the number of kits ordered. The annual holding cost is ₹24 per kit. Assume that the other assumptions of the basic EOQ model are satisfied and that no quantity discounts are available.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 3
         },
         {
             "question_id": "451387308",
-            "question_text": "A clinic maintains an inventory of sterile testing kits that are used throughout the year. The clinic expects to use 10,800 kits annually, with demand occurring at a steady and known rate. Every time the clinic places a replenishment order, it incurs a fixed ordering cost of ₹100, irrespective of the number of kits ordered. The annual holding cost is ₹24 per kit. Assume that the other assumptions of the basic EOQ model are satisfied and that no quantity discounts are available.\n\nCalculate:\nthe economic order quantity",
+            "question_text": "Calculate:\nthe economic order quantity",
             "question_type": "SUBJECTIVE",
             "explanation": "Economic Order Quantity (EOQ) calculation with $D = 10,800$, $K = 100$, and $h = 24$:\n$$\\text{EOQ} = \\sqrt{\\frac{2DK}{h}} = \\sqrt{\\frac{2 \\times 10800 \\times 100}{24}} = \\sqrt{\\frac{2,160,000}{24}} = \\sqrt{90,000} = 300\\text{ kits}$$\n\nCorrect Answer: 300 (acceptable range: 299.90 to 300.10).",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_4"
         },
         {
             "question_id": "451387309",
-            "question_text": "Refer to Question ID 451387308 for context.\n\nthe expected number of orders placed per year",
+            "question_text": "the expected number of orders placed per year",
             "question_type": "SUBJECTIVE",
             "explanation": "Order frequency is annual demand divided by optimal order quantity:\n$$N = \\frac{D}{Q^*} = \\frac{10800}{300} = 36\\text{ orders/year}$$\n\nCorrect Answer: 36 (acceptable range: 35.90 to 36.10).",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_4"
         },
         {
             "question_id": "451387310",
-            "question_text": "Refer to Question ID 451387308 for context.\n\nthe annual ordering cost when the clinic orders the EOQ",
+            "question_text": "the annual ordering cost when the clinic orders the EOQ",
             "question_type": "SUBJECTIVE",
             "explanation": "Annual ordering cost is the number of orders multiplied by the fixed cost per order:\n$$\\text{Annual Ordering Cost} = N \\times K = 36 \\times 100 = ₹3,600$$\n\nCorrect Answer: 3600 (acceptable range: 3599.90 to 3600.10).",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_4"
         },
         {
             "question_id": "451387311",
-            "question_text": "Refer to Question ID 451387308 for context.\n\nthe annual holding cost when the clinic orders the EOQ",
+            "question_text": "the annual holding cost when the clinic orders the EOQ",
             "question_type": "SUBJECTIVE",
             "explanation": "Annual holding cost is average cycle inventory multiplied by the unit carrying cost:\n$$\\text{Annual Holding Cost} = \\frac{Q^*}{2} \\times h = \\frac{300}{2} \\times 24 = 150 \\times 24 = ₹3,600$$\n(Note that at EOQ, annual ordering cost exactly equals annual holding cost).\n\nCorrect Answer: 3600 (acceptable range: 3599.90 to 3600.10).",
+            "module": 3,
+            "passage_id": "Passage_4"
+        },
+        {
+            "question_id": "Passage_5",
+            "question_text": "A sports merchandise retailer plans to operate a temporary stall at a one-day intercollege cricket tournament. The retailer will sell jerseys printed with the tournament name and date. All jerseys must be ordered before the tournament begins, and the retailer cannot place another order during the event. Each jersey is purchased for ₹140 and sold during the tournament for ₹250. Because the jerseys carry the tournament name and date, their demand falls sharply after the event. Any unsold jerseys can therefore be cleared after the tournament for only ₹40 each.\n\nDemand during the tournament is uncertain. Based on ticket sales and previous tournaments, the retailer estimates the probability distribution.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
             "module": 3
         },
         {
             "question_id": "451387313",
-            "question_text": "A sports merchandise retailer plans to operate a temporary stall at a one-day intercollege cricket tournament. The retailer will sell jerseys printed with the tournament name and date. All jerseys must be ordered before the tournament begins, and the retailer cannot place another order during the event. Each jersey is purchased for ₹140 and sold during the tournament for ₹250. Because the jerseys carry the tournament name and date, their demand falls sharply after the event. Any unsold jerseys can therefore be cleared after the tournament for only ₹40 each.\n\nDemand during the tournament is uncertain. Based on ticket sales and previous tournaments, the retailer estimates the probability distribution.\n\nUsing the discrete newsvendor model, calculate:\nthe underage cost per jersey",
+            "question_text": "Using the discrete newsvendor model, calculate:\nthe underage cost per jersey",
             "question_type": "SUBJECTIVE",
             "explanation": "Underage cost ($C_u$) is the lost profit margin per unit when demand exceeds order quantity:\n$$C_u = P - C = 250 - 140 = ₹110$$\n\nCorrect Answer: 110 (acceptable range: 109.99 to 110.01).",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_5"
         },
         {
             "question_id": "451387314",
-            "question_text": "Refer to Question ID 451387313 for context.\n\nthe overage cost per jersey",
+            "question_text": "the overage cost per jersey",
             "question_type": "SUBJECTIVE",
             "explanation": "Overage cost ($C_o$) is the net loss per unsold unit after accounting for salvage value:\n$$C_o = C - S = 140 - 40 = ₹100$$\n\nCorrect Answer: 100 (acceptable range: 99.99 to 100.01).",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_5"
         },
         {
             "question_id": "451387315",
-            "question_text": "Refer to Question ID 451387313 for context.\n\nthe critical ratio in decimals.",
+            "question_text": "the critical ratio in decimals.",
             "question_type": "SUBJECTIVE",
             "explanation": "Critical ratio (fractile) formula:\n$$C^* = \\frac{C_u}{C_u + C_o} = \\frac{110}{110 + 100} = \\frac{110}{210} \\approx 0.5238$$\n\nCorrect Answer: 0.5238 (acceptable range: 0.52281 to 0.52481).",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_5"
         },
         {
             "question_id": "451387316",
-            "question_text": "Refer to Question ID 451387313 for context.\n\nthe optimal number of jerseys to order",
+            "question_text": "the optimal number of jerseys to order",
             "question_type": "SUBJECTIVE",
             "explanation": "In a discrete newsvendor model, the optimal order quantity $Q^*$ is the smallest demand value whose cumulative probability $F(Q)$ satisfies:\n$$F(Q^*) \\ge \\frac{C_u}{C_u + C_o} = 0.5238$$\nFrom the estimated cumulative demand distribution, $F(120) \\ge 0.5238$. Therefore, $Q^* = 120$.\n\nCorrect Answer: 120 (acceptable range: 120 to 120.00009).",
+            "module": 3,
+            "passage_id": "Passage_5"
+        },
+        {
+            "question_id": "Passage_6",
+            "question_text": "An online retailer currently serves two regions through two separate warehouses. Each warehouse holds safety stock for the same product to protect against uncertain demand. At each warehouse, demand during the relevant inventory-protection period is Normally distributed with a standard deviation of 80 units. Demand in the two regions is not independent: the correlation between the two demand streams is 0.25. For example, a nationwide promotion or festival may increase demand in both regions at the same time.\n\nThe company is considering replacing the two separate inventories with one centralized inventory that can serve both regions. Assume that centralization does not change the required service level or the replenishment conditions. The target cycle service level is 95%. Use the standard normal table distributed with the examination to obtain the corresponding value of z.\n\nCalculate:",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
             "module": 3
         },
         {
             "question_id": "451387318",
-            "question_text": "An online retailer currently serves two regions through two separate warehouses. Each warehouse holds safety stock for the same product to protect against uncertain demand. At each warehouse, demand during the relevant inventory-protection period is Normally distributed with a standard deviation of 80 units. Demand in the two regions is not independent: the correlation between the two demand streams is 0.25. For example, a nationwide promotion or festival may increase demand in both regions at the same time.\n\nThe company is considering replacing the two separate inventories with one centralized inventory that can serve both regions. Assume that centralization does not change the required service level or the replenishment conditions. The target cycle service level is 95%. Use the standard normal table distributed with the examination to obtain the corresponding value of z.\n\nCalculate:\nthe value of z corresponding to a 95% cycle service level",
+            "question_text": "the value of z corresponding to a 95% cycle service level",
             "question_type": "SUBJECTIVE",
             "explanation": "From the standard normal cumulative distribution table, the $z$-value satisfying $\\Phi(z) = 0.95$ is approximately $1.645$ (or $1.65$).\n\nCorrect Answer: 1.645 (acceptable range: 1.64 to 1.65).",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_6"
         },
         {
             "question_id": "451387319",
-            "question_text": "Refer to Question ID 451387318 for context.\n\nthe total safety stock held across the two warehouses when inventories remain separate",
+            "question_text": "the total safety stock held across the two warehouses when inventories remain separate",
             "question_type": "SUBJECTIVE",
             "explanation": "With decentralized safety stock held separately at each warehouse with $\\sigma = 80$ and $z = 1.645$:\n$$\\text{SS}_{\\text{each}} = z \\cdot \\sigma = 1.645 \\times 80 = 131.6$$\n$$\\text{Total SS}_{\\text{separate}} = 2 \\times 131.6 = 263.2\\text{ units}$$\n\nCorrect Answer: 263.2 (acceptable range: 263 to 263.40).",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_6"
         },
         {
             "question_id": "451387320",
-            "question_text": "Refer to Question ID 451387318 for context.\n\nthe safety stock required after the two demand streams are pooled at one centralized location",
+            "question_text": "the safety stock required after the two demand streams are pooled at one centralized location",
             "question_type": "SUBJECTIVE",
             "explanation": "With correlation $\\rho = 0.25$ between the two regions:\n$$\\sigma_{\\text{pooled}} = \\sqrt{\\sigma_1^2 + \\sigma_2^2 + 2\\rho\\sigma_1\\sigma_2} = \\sqrt{80^2 + 80^2 + 2(0.25)(80)(80)} = \\sqrt{6400 + 6400 + 3200} = \\sqrt{16000} \\approx 126.491$$\n$$\\text{SS}_{\\text{pooled}} = z \\cdot \\sigma_{\\text{pooled}} = 1.645 \\times 126.491 \\approx 208.08\\text{ units}$$\n\nCorrect Answer: 208.08 (acceptable range: 207.88 to 208.28).",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_6"
         },
         {
             "question_id": "451387321",
-            "question_text": "Refer to Question ID 451387318 for context.\n\nthe reduction in safety stock resulting from pooling",
+            "question_text": "the reduction in safety stock resulting from pooling",
             "question_type": "SUBJECTIVE",
             "explanation": "The safety stock savings achieved through risk pooling:\n$$\\text{Safety Stock Reduction} = \\text{Total SS}_{\\text{separate}} - \\text{SS}_{\\text{pooled}} = 263.2 - 208.08 = 55.12\\text{ units}$$\n\nCorrect Answer: 55.12 (acceptable range: 54.92 to 55.32).",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_6"
         },
         {
             "question_id": "451387322",

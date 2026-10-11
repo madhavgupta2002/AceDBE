@@ -5,8 +5,23 @@
     },
     "questions": [
         {
+            "question_id": "Passage_1",
+            "question_text": "Read the given caselet and answer the questions that follow with reference to the context.\n\nThe SparkLife Fitness Campaign\n\nThe SparkLife campaign, (launched in January 2025,) aimed to revolutionize fitness advertising by connecting with young urban audiences. The campaigns messaging inspired by a phoenix sparkled in every ad. Designed by Glow Media Agency, for the energy drink, SparkLife, the campaign's tagline was: ‘Ignite Your Inner Fire.’ This served as a reminder for personal transformation. Its vibrant visuals and social media strategy attracted immense attention, with influencers comparing SparkLife's energy drinks to a rocket on steroids.\n\nSparkLife introduced weekly challenges, live-streamed workouts, and motivational posts. “We are thrilled to unveil the SparkLife Campaign,” said Janna Doelson, Creative Director at Glow Media. “Our goal is to inspire individuals to embrace resilience, ambition, and determination while embarking on their fitness journeys. Like an unstoppable river, SparkLife is not just an energy drink; it's a lifestyle movement. Join now to elevate, transform, and achieving your goals.”\n\nA press release stated: Our company team have always been at the forefront of innovation’. One promotional ad emphasized the ‘future possibilities that await us are rooted in health and wellness’. Another advertisement described SparkLife as ‘a completely brand-new innovation’. However, this caused a furore in unnecessarily reiterating the concept of novelty.\n\nThe campaign's execution faced some criticism. Yet, despite these minor flaws, SparkLife's creative approach sparked discussions about wellness, positivity, and self-improvement. Its innovative storytelling left an indelible mark on the competitive world of advertising.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 4
+        },
+        {
             "question_id": "1",
-            "question_text": "Read the given caselet and answer the questions that follow with reference to the context.\n\nThe SparkLife Fitness Campaign\n\nThe SparkLife campaign, (launched in January 2025,) aimed to revolutionize fitness advertising by connecting with young urban audiences. The campaigns messaging inspired by a phoenix sparkled in every ad. Designed by Glow Media Agency, for the energy drink, SparkLife, the campaign's tagline was: \u2018Ignite Your Inner Fire.\u2019 This served as a reminder for personal transformation. Its vibrant visuals and social media strategy attracted immense attention, with influencers comparing SparkLife's energy drinks to a rocket on steroids.\n\nSparkLife introduced weekly challenges, live-streamed workouts, and motivational posts. \u201cWe are thrilled to unveil the SparkLife Campaign,\u201d said Janna Doelson, Creative Director at Glow Media. \u201cOur goal is to inspire individuals to embrace resilience, ambition, and determination while embarking on their fitness journeys. Like an unstoppable river, SparkLife is not just an energy drink; it's a lifestyle movement. Join now to elevate, transform, and achieving your goals.\u201d\n\nA press release stated: Our company team have always been at the forefront of innovation\u2019. One promotional ad emphasized the \u2018future possibilities that await us are rooted in health and wellness\u2019. Another advertisement described SparkLife as \u2018a completely brand-new innovation\u2019. However, this caused a furore in unnecessarily reiterating the concept of novelty.\n\nThe campaign's execution faced some criticism. Yet, despite these minor flaws, SparkLife's creative approach sparked discussions about wellness, positivity, and self-improvement. Its innovative storytelling left an indelible mark on the competitive world of advertising.\n\nQuestion: Identify the correct punctuation for the following statement given in the caselet. Choose your answers from the options that follow.\nStatement: The campaigns messaging inspired by a phoenix shone brightly in every ad.",
+            "question_text": "Question: Identify the correct punctuation for the following statement given in the caselet. Choose your answers from the options that follow.\nStatement: The campaigns messaging inspired by a phoenix shone brightly in every ad.",
             "question_type": "MCQ",
             "options": {
                 "A": "The campaign's messaging, inspired by a phoenix, shone brightly in every ad.",
@@ -16,11 +31,12 @@
             },
             "correct_option_label": "A",
             "explanation": "An apostrophe is required for singular possession ('campaign's'). Commas must enclose non-essential parenthetical information ('inspired by a phoenix').",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "2",
-            "question_text": "Read the caselet \"The SparkLife Fitness Campaign\" and answer the question.\nQuestion: Identify and choose the statement from those that follow which conveys the main idea of the SparkLife campaign in the most clear, concise and grammatically correct manner.",
+            "question_text": "Question: Identify and choose the statement from those that follow which conveys the main idea of the SparkLife campaign in the most clear, concise and grammatically correct manner.",
             "question_type": "MCQ",
             "options": {
                 "A": "The campaign aims to promote personal growth and wellness.",
@@ -30,11 +46,12 @@
             },
             "correct_option_label": "A",
             "explanation": "The passage describes the campaign as a 'lifestyle movement' focused on 'personal transformation,' 'resilience,' and 'wellness,' which aligns with promoting personal growth.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "3",
-            "question_text": "Read the caselet \"The SparkLife Fitness Campaign\" and answer the question.\n\nQuestion: You have been tasked with writing a formal press release for the campaign. From amongst the options given, choose the sentence that demonstrates the best professional tonality as well as appropriate vocabulary.",
+            "question_text": "Question: You have been tasked with writing a formal press release for the campaign. From amongst the options given, choose the sentence that demonstrates the best professional tonality as well as appropriate vocabulary.",
             "question_type": "MCQ",
             "options": {
                 "A": "We're happy to launch our new campaign and hope that everyone loves it as much as we do.",
@@ -44,11 +61,12 @@
             },
             "correct_option_label": "B",
             "explanation": "Formal business documents require polished, objective language. Option B uses professional terms like 'unveil,' 'initiative,' and 'inspire' while maintaining singular subject-verb agreement.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "4",
-            "question_text": "Read the caselet \"The SparkLife Fitness Campaign\" and answer the question.\n\nQuestion: Identify the figure of speech used in the given statement. Choose your answer from the options that follow.\nStatement: Like an unstoppable river, it captured audiences",
+            "question_text": "Question: Identify the figure of speech used in the given statement. Choose your answer from the options that follow.\nStatement: Like an unstoppable river, it captured audiences",
             "question_type": "MCQ",
             "options": {
                 "A": "Hyperbole",
@@ -58,11 +76,12 @@
             },
             "correct_option_label": "D",
             "explanation": "A simile is a direct comparison using 'like' or 'as'. Here, the campaign is compared to an 'unstoppable river' using the word 'Like'.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "5",
-            "question_text": "Read the caselet \"The SparkLife Fitness Campaign\" and answer the question.\n\nQuestion: With reference to the caselet, choose and identify the words which have been used as abstract nouns.",
+            "question_text": "Question: With reference to the caselet, choose and identify the words which have been used as abstract nouns.",
             "question_type": "MCQ",
             "options": {
                 "A": "criticism, resilience, ambition, determination, wellness",
@@ -72,25 +91,27 @@
             },
             "correct_option_label": "A",
             "explanation": "Abstract nouns refer to intangible qualities or concepts like 'resilience' or 'ambition' that cannot be perceived physically.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "6",
-            "question_text": "Read the caselet \"The SparkLife Fitness Campaign\" and answer the question.\n\nQuestion: The sentences given below are from or based on the caselet. Identify and select the sentence which contains a redundant word.",
+            "question_text": "Question: The sentences given below are from or based on the caselet. Identify and select the sentence which contains a redundant word.",
             "question_type": "MCQ",
             "options": {
-                "A": "Designed by Glow Media Agency, the campaign's tagline was: \u201cIgnite Your Inner Fire,\u201d",
+                "A": "Designed by Glow Media Agency, the campaign's tagline was: “Ignite Your Inner Fire,”",
                 "B": "One promotional ad stated, \"future possibilities that await us are rooted in health and wellness.\"",
-                "C": "Jonna Doelson said, \u201c SparkLife is not just an energy drink; it\u2019s a lifestyle movement \u201d",
-                "D": "An advertisement described SparkLife as \u201ca completely brand-new innovation.\u201d"
+                "C": "Jonna Doelson said, “ SparkLife is not just an energy drink; it’s a lifestyle movement ”",
+                "D": "An advertisement described SparkLife as “a completely brand-new innovation.”"
             },
             "correct_option_label": "D",
             "explanation": "The phrase 'brand-new innovation' is redundant because an innovation is, by definition, something new. Adding 'completely brand-new' repeats the same concept unnecessarily.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "7",
-            "question_text": "Read the caselet \"The SparkLife Fitness Campaign\" and answer the question.\n\nQuestion: Identify the figure(s) of speech used in the following statement. Choose your answer from the options given after the statement.\n\nStatement: Its vibrant visuals and social media strategy attracted immense attention, with influencers comparing SparkLife's energy drinks to a rocket on steroids.",
+            "question_text": "Question: Identify the figure(s) of speech used in the following statement. Choose your answer from the options given after the statement.\n\nStatement: Its vibrant visuals and social media strategy attracted immense attention, with influencers comparing SparkLife's energy drinks to a rocket on steroids.",
             "question_type": "MCQ",
             "options": {
                 "A": "Personification",
@@ -100,11 +121,12 @@
             },
             "correct_option_label": "B",
             "explanation": "The word 'to' establishes a comparison (simile) between the drink and a rocket, while 'on steroids' is an intentional exaggeration (hyperbole).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "8",
-            "question_text": "Read the caselet \"The SparkLife Fitness Campaign\" and answer the question.\n\nQuestion: Identify and select the closest antonym of the word \u2018furore\u2019 as used in the caselet above. Choose your answer from the options given below.",
+            "question_text": "Question: Identify and select the closest antonym of the word ‘furore’ as used in the caselet above. Choose your answer from the options given below.",
             "question_type": "MCQ",
             "options": {
                 "A": "tranquility",
@@ -114,11 +136,27 @@
             },
             "correct_option_label": "A",
             "explanation": "A 'furore' is an outbreak of public anger or excitement; 'tranquility' is the opposite, meaning a state of being calm and peaceful.",
+            "module": 1,
+            "passage_id": "Passage_1"
+        },
+        {
+            "question_id": "Passage_2",
+            "question_text": "Read the given caselet and answer the questions that follow with reference to the context.\n\nThe Sagatec Software Manual\n\nIn their race to innovate, Sagatec Software stumbled on their own instruction manual—a seemingly small obstacle that grew into a mountain of confusion for their customers.\n\nSagatec had earned its sterling reputation as a pioneer in office automation by creating high-quality, user-friendly database and accounting software. Confident in their ability to replicate this success in the word-processing market, they developed an effective, powerful and versatile application which was designed to outperform all competitors.\n\nTo ensure the software was thoroughly documented, the senior program designer was tasked with writing the instruction manual. The result was a thorough, meticulous and precisely written guide that explained the program's operation in great detail.\n\nHowever, when the product hit the market, chaos ensued. Office workers, bewildered by the labyrinth of technical jargon, couldn't even locate the ‘Start’ button. The cries for help poured in, and scathing reviews soon followed. Business journals branded the software ‘too complicated’ and ‘difficult to learn.’ What had started as a promising venture spiralled into a marketing nightmare, with sales plummeting and Sagatec's reputation in shreds.\n\nDesperate to salvage the situation, Sagatec launched a new, streamlined training guide which proved like a lighthouse that steered users through the basics and simplified command navigation. However, this revision exacted a considerable toll: $350,000, a year's lead in the market, and their prized reputation for user-friendly software\n\nThis costly debacle taught Sagatec a harsh truth: even the most powerful tools are only as good as their accessibility. In the fast-paced world of business software, clarity isn't just an advantage—it's a necessity.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
             "module": 1
         },
         {
             "question_id": "9",
-            "question_text": "Read the given caselet and answer the questions that follow with reference to the context.\n\nThe Sagatec Software Manual\n\nIn their race to innovate, Sagatec Software stumbled on their own instruction manual\u2014a seemingly small obstacle that grew into a mountain of confusion for their customers.\n\nSagatec had earned its sterling reputation as a pioneer in office automation by creating high-quality, user-friendly database and accounting software. Confident in their ability to replicate this success in the word-processing market, they developed an effective, powerful and versatile application which was designed to outperform all competitors.\n\nTo ensure the software was thoroughly documented, the senior program designer was tasked with writing the instruction manual. The result was a thorough, meticulous and precisely written guide that explained the program's operation in great detail.\n\nHowever, when the product hit the market, chaos ensued. Office workers, bewildered by the labyrinth of technical jargon, couldn't even locate the \u2018Start\u2019 button. The cries for help poured in, and scathing reviews soon followed. Business journals branded the software \u2018too complicated\u2019 and \u2018difficult to learn.\u2019 What had started as a promising venture spiralled into a marketing nightmare, with sales plummeting and Sagatec's reputation in shreds.\n\nDesperate to salvage the situation, Sagatec launched a new, streamlined training guide which proved like a lighthouse that steered users through the basics and simplified command navigation. However, this revision exacted a considerable toll: $350,000, a year's lead in the market, and their prized reputation for user-friendly software\n\nThis costly debacle taught Sagatec a harsh truth: even the most powerful tools are only as good as their accessibility. In the fast-paced world of business software, clarity isn't just an advantage\u2014it's a necessity.\n\nQuestion: What adjective best describes the word-processing program created by Sagatec? Choose your answer from the options given below:",
+            "question_text": "Question: What adjective best describes the word-processing program created by Sagatec? Choose your answer from the options given below:",
             "question_type": "MCQ",
             "options": {
                 "A": "Confusing",
@@ -128,11 +166,12 @@
             },
             "correct_option_label": "C",
             "explanation": "The text describes the software as 'effective, powerful and versatile', which identifies it as a multipurpose application.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "10",
-            "question_text": "Read the caselet \"The Sagatec Software Manual\" and answer the question.\n\nQuestion: With refence to the caselet given above, what is the meaning of the phrase \u2018stumbled on their own instruction manual\u2019?",
+            "question_text": "Question: With refence to the caselet given above, what is the meaning of the phrase ‘stumbled on their own instruction manual’?",
             "question_type": "MCQ",
             "options": {
                 "A": "The engineers couldn't finish writing the manual.",
@@ -142,11 +181,12 @@
             },
             "correct_option_label": "B",
             "explanation": "The phrase is used figuratively to describe how a component intended to help (the manual) became the very thing that hindered the company's progress.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "11",
-            "question_text": "Read the caselet \"The Sagatec Software Manual\" and answer the question.\nQuestion: In the writeup, the manual is described as a \u2018labyrinth of technical jargon.\u2019 What literary device has been used in this phrase? Choose your answer from the options given below:",
+            "question_text": "Question: In the writeup, the manual is described as a ‘labyrinth of technical jargon.’ What literary device has been used in this phrase? Choose your answer from the options given below:",
             "question_type": "MCQ",
             "options": {
                 "A": "Simile",
@@ -156,11 +196,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Describing jargon as a 'labyrinth' is a metaphor because it makes an implicit comparison between the complexity of words and a physical maze without using 'like' or 'as'.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "12",
-            "question_text": "Read the caselet \"The Sagatec Software Manual\" and answer the question.\n\nQuestion: Identify the central idea of the writeup from the options given below.",
+            "question_text": "Question: Identify the central idea of the writeup from the options given below.",
             "question_type": "MCQ",
             "options": {
                 "A": "A user-friendly manual is critical to the success of complex software.",
@@ -170,25 +211,27 @@
             },
             "correct_option_label": "A",
             "explanation": "The core theme of the passage is the vital role of clarity and accessibility in business communication for the success of technical products.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "13",
-            "question_text": "Read the caselet \"The Sagatec Software Manual\" and answer the question.\n\nQuestion: Which statement, from among the options given below, best summarizes the experience gained by Sagatec from this activity?",
+            "question_text": "Question: Which statement, from among the options given below, best summarizes the experience gained by Sagatec from this activity?",
             "question_type": "MCQ",
             "options": {
-                "A": "\u2018In the fast-paced world of business software, clarity isn\u2019t just an advantage\u2014it\u2019s a necessity.\u2019",
-                "B": "\u2018To ensure the software was thoroughly documented, the senior program designer was tasked with writing the instruction manual.\u2019",
-                "C": "\u2018Sagatec had earned its reputation as a pioneer in office automation.\u2019",
-                "D": "\u2018The cries for help from bewildered users were an ominous warning.\u2019"
+                "A": "‘In the fast-paced world of business software, clarity isn’t just an advantage—it’s a necessity.’",
+                "B": "‘To ensure the software was thoroughly documented, the senior program designer was tasked with writing the instruction manual.’",
+                "C": "‘Sagatec had earned its reputation as a pioneer in office automation.’",
+                "D": "‘The cries for help from bewildered users were an ominous warning.’"
             },
             "correct_option_label": "A",
             "explanation": "Summarizing requires capturing the core lesson or conclusion of the passage, which emphasizes communication clarity in business.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "14",
-            "question_text": "Read the caselet \"The Sagatec Software Manual\" and answer the question.\n\nQuestion: What does \u2018sterling reputation\u2019 mean in the context of the caselet? Choose your answer from the options given below:",
+            "question_text": "Question: What does ‘sterling reputation’ mean in the context of the caselet? Choose your answer from the options given below:",
             "question_type": "MCQ",
             "options": {
                 "A": "A reputation that is declining.",
@@ -198,7 +241,8 @@
             },
             "correct_option_label": "B",
             "explanation": "'Sterling' is a vocabulary word meaning excellent or of highest standard, used to describe an outstanding reputation.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "15",
@@ -370,7 +414,7 @@
         },
         {
             "question_id": "27",
-            "question_text": "Read the following statements and identify the two ways (parts of speech) the word \u2018alternate\u2019 has been used. Choose your response by selecting one of the optional pairs that follow.\n\nStatements:\n\nIf the main speaker cannot attend, the team has an alternate ready to step in. The coach decided to take an alternate route to the auditorium to avoid the traffic jam.",
+            "question_text": "Read the following statements and identify the two ways (parts of speech) the word ‘alternate’ has been used. Choose your response by selecting one of the optional pairs that follow.\n\nStatements:\n\nIf the main speaker cannot attend, the team has an alternate ready to step in. The coach decided to take an alternate route to the auditorium to avoid the traffic jam.",
             "question_type": "MCQ",
             "options": {
                 "A": "Verb; noun",
@@ -412,7 +456,7 @@
         },
         {
             "question_id": "30",
-            "question_text": "Read the following paragraph and answer the question that follows:\n\nThe paragraph:\n\nIn today\u2019s hyper-competitive market, adopting sustainable business practices is not just a moral obligation\u2014it\u2019s a strategic imperative. Consumers are no longer passive buyers; they actively seek brands that align with their values. Companies that integrate environmental and social governance into their core strategy are outperforming those that cling to outdated models of profit maximization. If businesses want to remain relevant, attract top talent, and build long-term customer loyalty, sustainability can no longer be an afterthought \u2014 it must be a priority.\n\nQuestion: What type of paragraph is this? Select the option that you believe is the correct response.",
+            "question_text": "Read the following paragraph and answer the question that follows:\n\nThe paragraph:\n\nIn today’s hyper-competitive market, adopting sustainable business practices is not just a moral obligation—it’s a strategic imperative. Consumers are no longer passive buyers; they actively seek brands that align with their values. Companies that integrate environmental and social governance into their core strategy are outperforming those that cling to outdated models of profit maximization. If businesses want to remain relevant, attract top talent, and build long-term customer loyalty, sustainability can no longer be an afterthought — it must be a priority.\n\nQuestion: What type of paragraph is this? Select the option that you believe is the correct response.",
             "question_type": "MCQ",
             "options": {
                 "A": "Narrative",
@@ -552,7 +596,7 @@
         },
         {
             "question_id": "40",
-            "question_text": "Which of the following statements uses the apostrophe to indicate a contraction and to show possession correctly? There may be more than one instance where an apostrophe has been/needs to be used.\n\nStatements:\n(A) The river\u2019s tributaries have widened their courses due to the region's heavy rainfall.\n(B) The mountain's peaks, which are known for their steep slopes, are\u2019nt accessible during the winter months.\n(C) It\u2019s fascinating how the earth\u2019s core generates the magnetic field that protects us from solar radiation.\n(D) The continents' size\u2019s and features are shaped by tectonic activity over millions of years.",
+            "question_text": "Which of the following statements uses the apostrophe to indicate a contraction and to show possession correctly? There may be more than one instance where an apostrophe has been/needs to be used.\n\nStatements:\n(A) The river’s tributaries have widened their courses due to the region's heavy rainfall.\n(B) The mountain's peaks, which are known for their steep slopes, are’nt accessible during the winter months.\n(C) It’s fascinating how the earth’s core generates the magnetic field that protects us from solar radiation.\n(D) The continents' size’s and features are shaped by tectonic activity over millions of years.",
             "question_type": "MCQ",
             "options": {
                 "A": "Statement A",
@@ -561,7 +605,7 @@
                 "D": "Statement D"
             },
             "correct_option_label": "C",
-            "explanation": "'It\u2019s' is the correct contraction for 'It is', and 'earth\u2019s' correctly uses the apostrophe for singular possession.",
+            "explanation": "'It’s' is the correct contraction for 'It is', and 'earth’s' correctly uses the apostrophe for singular possession.",
             "module": 4
         }
     ]

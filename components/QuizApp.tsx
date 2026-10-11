@@ -21,6 +21,7 @@ import UnifiedQuizSelector from './UnifiedQuizSelector';
 import Header from './Header';
 import StopWatch from './StopWatch';
 import CbtExam from './CbtExam';
+import PassageCard from './PassageCard';
 import { CbtReviewData, takeCbtReview, toReviewData } from '@/lib/cbtReview';
 import { ArrowRight, ArrowLeft, RefreshCw, BookOpen, Youtube, Search, Check, Download, Printer, Eye, EyeOff, XCircle, List, RotateCcw } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
@@ -480,8 +481,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     // Subjective questions are marked as "viewed" only - they never count as
     // correct or incorrect so they don't skew the score/accuracy stats.
     if (currentQuestion.isSubjective) {
-      const subjKey = `${currentQuestion.text}-${currentQuestion.source || ''}`;
-      const subjMasterIndex = allQuestions.findIndex(q => `${q.text}-${q.source || ''}` === subjKey);
+      const subjKey = `${currentQuestion.text}-${currentQuestion.source || ''}-${currentQuestion.id}`;
+      const subjMasterIndex = allQuestions.findIndex(q => `${q.text}-${q.source || ''}-${q.id}` === subjKey);
 
       setQuizState((prev) => {
         const newAnsweredQuestions = [...prev.answeredQuestions];
@@ -537,8 +538,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     const isCorrect = allCorrectSelected || (!isMultipleAnswer && answer.length === 1 && currentQuestion.correctAnswer.includes(answer[0]));
 
     // Find the index of this question in allQuestions to update master array
-    const questionKey = `${currentQuestion.text}-${currentQuestion.source || ''}`;
-    const masterIndex = allQuestions.findIndex(q => `${q.text}-${q.source || ''}` === questionKey);
+    const questionKey = `${currentQuestion.text}-${currentQuestion.source || ''}-${currentQuestion.id}`;
+    const masterIndex = allQuestions.findIndex(q => `${q.text}-${q.source || ''}-${q.id}` === questionKey);
 
     setQuizState((prev) => {
       const newAnsweredQuestions = [...prev.answeredQuestions];
@@ -595,8 +596,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
     // Map answers from masterAnsweredQuestions to filtered questions
     const filteredAnsweredQuestions = filteredQuestions.map(filteredQ => {
-      const questionKey = `${filteredQ.text}-${filteredQ.source || ''}`;
-      const masterIndex = allQuestions.findIndex(q => `${q.text}-${q.source || ''}` === questionKey);
+      const questionKey = `${filteredQ.text}-${filteredQ.source || ''}-${filteredQ.id}`;
+      const masterIndex = allQuestions.findIndex(q => `${q.text}-${q.source || ''}-${q.id}` === questionKey);
 
       if (masterIndex !== -1) {
         return masterAnsweredQuestions[masterIndex];
@@ -672,9 +673,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
       newAnsweredQuestions[index] = null;
 
       // Find in incorrectAnswers and remove if present
-      const questionKey = `${currentQuestion.text}-${currentQuestion.source || ''}`;
+      const questionKey = `${currentQuestion.text}-${currentQuestion.source || ''}-${currentQuestion.id}`;
       const newIncorrectAnswers = prev.incorrectAnswers.filter(q =>
-        `${q.text}-${q.source || ''}` !== questionKey
+        `${q.text}-${q.source || ''}-${q.id}` !== questionKey
       );
 
       return {
@@ -689,8 +690,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     });
 
     // Sync with master
-    const questionKey = `${currentQuestion.text}-${currentQuestion.source || ''}`;
-    const masterIndex = allQuestions.findIndex(q => `${q.text}-${q.source || ''}` === questionKey);
+    const questionKey = `${currentQuestion.text}-${currentQuestion.source || ''}-${currentQuestion.id}`;
+    const masterIndex = allQuestions.findIndex(q => `${q.text}-${q.source || ''}-${q.id}` === questionKey);
     if (masterIndex !== -1) {
       setMasterAnsweredQuestions(prev => {
         const newMaster = [...prev];
@@ -717,8 +718,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
       setMasterAnsweredQuestions(prev => {
         const newMaster = [...prev];
         quizState.questions.forEach(q => {
-          const questionKey = `${q.text}-${q.source || ''}`;
-          const masterIndex = allQuestions.findIndex(mq => `${mq.text}-${mq.source || ''}` === questionKey);
+          const questionKey = `${q.text}-${q.source || ''}-${q.id}`;
+          const masterIndex = allQuestions.findIndex(mq => `${mq.text}-${mq.source || ''}-${mq.id}` === questionKey);
           if (masterIndex !== -1) {
             newMaster[masterIndex] = null;
           }
@@ -803,15 +804,32 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
         subject_name: isCustomMode ? (customTitle || 'Custom AI Quiz') : (subject?.name || 'Quiz'),
         exam_date: new Date().toISOString().slice(0, 10),
       },
-      questions: quizState.questions.map((q, index) => ({
-        question_id: q.id || `Q${index + 1}`,
-        question_text: q.text,
-        question_type: q.isSubjective ? 'Subjective' : 'MCQ',
-        options: q.options || { A: '', B: '', C: '', D: '' },
-        correct_option_label: q.correctAnswer.length > 0 ? q.correctAnswer.join(',') : null,
-        module: q.module,
-        explanation: q.explanation || '',
-      })),
+      questions: quizState.questions.flatMap((q, index) => {
+        const entries: Record<string, unknown>[] = [];
+        // A passage is exported once, as its own entry just before the first question that uses it.
+        if (q.passage && !quizState.questions.slice(0, index).some(p => p.passage?.id === q.passage!.id)) {
+          entries.push({
+            question_id: q.passage.id,
+            question_text: q.passage.text,
+            question_type: 'SUBJECTIVE',
+            is_passage: true,
+            options: { A: '', B: '', C: '', D: '' },
+            correct_option_label: '',
+            module: q.module,
+          });
+        }
+        entries.push({
+          question_id: q.id || `Q${index + 1}`,
+          question_text: q.text,
+          ...(q.passage ? { passage_id: q.passage.id } : {}),
+          question_type: q.isSubjective ? 'Subjective' : 'MCQ',
+          options: q.options || { A: '', B: '', C: '', D: '' },
+          correct_option_label: q.correctAnswer.length > 0 ? q.correctAnswer.join(',') : null,
+          module: q.module,
+          explanation: q.explanation || '',
+        });
+        return entries;
+      }),
     };
 
     const dataStr = JSON.stringify(exportData, null, 2);
@@ -859,6 +877,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
       return `
         <div class="question-block">
+          ${q.passage && !questions.slice(0, idx).some(p => p.passage?.id === q.passage!.id)
+            ? `<div class="passage"><strong>Passage</strong> (Q${idx + 1}${q.passage.total > 1 ? ' onwards' : ''})<br>${escapeHtml(q.passage.text)}</div>`
+            : ''}
           <div class="question-text"><strong>Q${idx + 1}.</strong> ${escapeHtml(q.text)}</div>
           <div class="options">${optionsHtml}</div>
           ${answerHtml}
@@ -880,6 +901,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
           h1 { font-size: 16px; text-align: center; margin-bottom: 4px; }
           .sources { text-align: center; font-size: 11px; font-weight: 600; color: #333; margin-bottom: 3px; }
           .subtitle { text-align: center; font-size: 10px; color: #555; margin-bottom: 12px; border-bottom: 1px solid #ccc; padding-bottom: 8px; }
+          .passage { background: #f3f3f3; border-left: 3px solid #999; padding: 6px 8px; margin: 0 0 6px; font-size: 0.95em; white-space: pre-wrap; }
           .question-block { margin-bottom: 10px; page-break-inside: avoid; }
           .question-text { margin-bottom: 4px; font-size: 11px; }
           .options { margin-left: 16px; margin-bottom: 3px; }
@@ -1386,6 +1408,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                               )}
                             </div>
                           </div>
+                          {q.passage && (idx === 0 || quizState.questions[idx - 1].passage?.id !== q.passage.id) && (
+                            <PassageCard question={q} className="mb-3" />
+                          )}
                           {/* Question Text */}
                           <div className="text-white mb-2 text-sm sm:text-base prose prose-invert prose-indigo max-w-none">
                             <ReactMarkdown
@@ -1480,7 +1505,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       })
                       .map((q, index) => {
                         const originalIndex = quizState.questions.findIndex(
-                          mq => `${mq.text}-${mq.source || ''}` === `${q.text}-${q.source || ''}`
+                          mq => `${mq.text}-${mq.source || ''}-${mq.id}` === `${q.text}-${q.source || ''}-${q.id}`
                         );
                         return (
                         <div
@@ -1505,6 +1530,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                               )}
                             </div>
                           </div>
+                          {q.passage && <PassageCard question={q} className="mb-3" />}
                           {/* Question Text */}
                           <div className="text-white mb-2 text-sm sm:text-base prose prose-invert prose-indigo max-w-none">
                             <ReactMarkdown

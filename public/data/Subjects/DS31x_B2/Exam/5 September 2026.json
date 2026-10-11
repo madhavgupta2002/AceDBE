@@ -30,8 +30,23 @@
   },
   "questions": [
     {
+      "question_id": "Passage_1",
+      "question_text": "The manager of a company that manufactures dolls wants to determine whether there are differences in manufacturing quality across three similar machines, 1, 2, and 3. Out oof 30 50, and 40 randomly selected dolls manufactured from machine1, 2, and 3 respectively, 16, 28 and 15 units produced from machine 1, 2, and 3 respectively, were found to be defective. The rest were of acceptable quality. A chi-square test was done for a significance level of 0.05.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 1
+    },
+    {
       "question_id": "4513871053",
-      "question_text": "The manager of a company that manufactures dolls wants to determine whether there are differences in manufacturing quality across three similar machines, 1, 2, and 3. Out oof 30 50, and 40 randomly selected dolls manufactured from machine1, 2, and 3 respectively, 16, 28 and 15 units produced from machine 1, 2, and 3 respectively, were found to be defective. The rest were of acceptable quality. A chi-square test was done for a significance level of 0.05. The test statistic for the chi-square test of independence takes a value that is:",
+      "question_text": "The test statistic for the chi-square test of independence takes a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 5.0 and 10.0",
@@ -41,11 +56,12 @@
       },
       "correct_option_label": "C",
       "explanation": "Total dolls $N = 30 + 50 + 40 = 120$. Total defective $= 16 + 28 + 15 = 59$, total acceptable $= 14 + 22 + 25 = 61$.\nExpected counts $E_{ij} = \\frac{\\text{Row Total} \\times \\text{Col Total}}{N}$:\n- Machine 1: $E_{\\text{def}} = 14.75, E_{\\text{acc}} = 15.25$\n- Machine 2: $E_{\\text{def}} = 24.583, E_{\\text{acc}} = 25.417$\n- Machine 3: $E_{\\text{def}} = 19.667, E_{\\text{acc}} = 20.333$\n\n$$\\chi^2 = \\sum \\frac{(O_{ij} - E_{ij})^2}{E_{ij}} = 0.106 + 0.103 + 0.475 + 0.459 + 1.107 + 1.071 = 3.321$$\nThis value lies between 0.0 and 5.0.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "4513871054",
-      "question_text": "Refer to question ID 4513871053 for context.\n\nThe manager of a company that manufactures dolls wants to determine whether there are differences in manufacturing quality across three similar machines, 1, 2, and 3. Out of 30, 50, and 40 randomly selected dolls manufactured from machine1, 2, and 3 respectively, 16, 28 and 15 units produced from machine 1, 2, and 3 respectively, were found to be defective. The rest were of acceptable quality. A chi-square test was done for a significance level of 0.05. The critical value to be used in the chi-square test of independent is a value that is:",
+      "question_text": "The critical value to be used in the chi-square test of independent is a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0.0 and 5.0",
@@ -55,11 +71,12 @@
       },
       "correct_option_label": "B",
       "explanation": "The contingency table has $r = 2$ rows (Defective, Acceptable) and $c = 3$ columns (Machines 1, 2, 3).\nDegrees of freedom $df = (r - 1)(c - 1) = (2 - 1)(3 - 1) = 2$.\nAt $\\alpha = 0.05$, the critical value $\\chi^2_{0.05, 2} \\approx 5.991$, which lies between 5.0 and 10.0.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "4513871055",
-      "question_text": "Refer to question ID 4513871053 for context.\n\nThe manager of a company that manufactures dolls wants to determine whether there are differences in manufacturing quality across three similar machines, 1, 2, and 3. Out of 30, 50, and 40 randomly selected dolls manufactured from machine1, 2, and 3 respectively, 16, 28 and 15 units produced from machine 1, 2, and 3 respectively, were found to be defective. The rest were of acceptable quality. A chi-square test was done for a significance level of 0.05. The p-value for the chi-square test of independence in this case is a value that is:",
+      "question_text": "The p-value for the chi-square test of independence in this case is a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0.025 and 0.050",
@@ -69,11 +86,27 @@
       },
       "correct_option_label": "C",
       "explanation": "For $df = 2$, the calculated test statistic is $\\chi^2 \\approx 3.321$.\nFrom the chi-square distribution table with $df = 2$, $\\chi^2_{0.10, 2} = 4.605$. Since $\\chi^2 = 3.321 < 4.605$, the $p$-value is greater than 0.10 ($p \\approx 0.190$).",
+      "module": 1,
+      "passage_id": "Passage_1"
+    },
+    {
+      "question_id": "Passage_2",
+      "question_text": "The HR department of a company surveys managers at the Junior, Mid and Senior level to determine if they are happy with the maternity leave policy that was newly introduced. Out of 15, 12, and 20 randomly selected managers from Junior, Mid and Senior levels, respectively, 4, 3 and 6 managers expressed dissatisfaction. They rest were satisfied. A chi-square test was done for a significance level of 0.05.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
       "module": 1
     },
     {
       "question_id": "4513871056",
-      "question_text": "The HR department of a company surveys managers at the Junior, Mid and Senior level to determine if they are happy with the maternity leave policy that was newly introduced. Out of 15, 12, and 20 randomly selected managers from Junior, Mid and Senior levels, respectively, 4, 3 and 6 managers expressed dissatisfaction. They rest were satisfied. A chi-square test was done for a significance level of 0.05. The expected number of Junior level managers that were satisfied takes a value that is:",
+      "question_text": "The expected number of Junior level managers that were satisfied takes a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 25.0 and 35.0",
@@ -83,11 +116,12 @@
       },
       "correct_option_label": "D",
       "explanation": "Total managers $N = 15 + 12 + 20 = 47$.\nDissatisfied counts: Junior = 4, Mid = 3, Senior = 6 (Total Dissatisfied = 13).\nSatisfied counts: Junior = 11, Mid = 9, Senior = 14 (Total Satisfied = $47 - 13 = 34$).\nExpected number of satisfied Junior managers: \n$$E = \\frac{\\text{Total Satisfied} \\times \\text{Total Junior}}{N} = \\frac{34 \\times 15}{47} = \\frac{510}{47} \\approx 10.85$$\nThis value lies between 5.0 and 15.0.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "4513871057",
-      "question_text": "Refer to question ID 4513871056 for context.\n\nThe HR department of a company surveys managers at the Junior, Mid and Senior level to determine if they are happy with the maternity leave policy that was newly introduced. Out of 15, 12, and 20 randomly selected managers from Junior, Mid and Senior levels, respectively, 4, 3 and 6 managers expressed dissatisfaction. They rest were satisfied. A chi-square test was done for a significance level of 0.05. The degrees of freedom to be used in the chi-square test of independence is a value that is:",
+      "question_text": "The degrees of freedom to be used in the chi-square test of independence is a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "2.0",
@@ -97,11 +131,27 @@
       },
       "correct_option_label": "A",
       "explanation": "The contingency table consists of $r = 2$ rows (Satisfied, Dissatisfied) and $c = 3$ columns (Junior, Mid, Senior).\n$$df = (r - 1)(c - 1) = (2 - 1)(3 - 1) = 1 \\times 2 = 2.0$$",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_2"
+    },
+    {
+      "question_id": "Passage_3",
+      "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1,x_2,x_3,x_4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x_1,x_2,x_3,x_4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x_1,x_2,x_3,x_4 were 1.5, 0.5, -1.0, and 8.0 respectively.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 3
     },
     {
       "question_id": "4513871058",
-      "question_text": "When data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1,x_2,x_3,x_4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x_1,x_2,x_3,x_4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x_1,x_2,x_3,x_4 were 1.5, 0.5, -1.0, and 8.0 respectively. These results imply that standard error is a value that is:",
+      "question_text": "These results imply that standard error is a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 200 to 300",
@@ -111,11 +161,12 @@
       },
       "correct_option_label": "A",
       "explanation": "Here $n = 31$, $p = 4$, $SST = 760$, and $MSR = 125$.\n$$SSR = MSR \\times p = 125 \\times 4 = 500$$\nThe sum of squared errors is:\n$$SSE = SST - SSR = 760 - 500 = 260$$\nThe intended error quantity is $SSE = 260$, which lies between 200 to 300.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_3"
     },
     {
       "question_id": "4513871059",
-      "question_text": "Refer to question ID 4513871058 for context.\n\nWhen data with 31 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1,x_2,x_3,x_4 the following outputs were obtained. The SST was 760, the MSR was 125. The standard error corresponding to x_1,x_2,x_3,x_4 were 8, 48, 36 and 2 respectively. The t-statistic corresponding to x_1,x_2,x_3,x_4 were 1.5, 0.5, -1.0, and 8.0 respectively. These results imply that RSquare is a value that is:",
+      "question_text": "These results imply that RSquare is a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0.75 and 1.0",
@@ -125,11 +176,27 @@
       },
       "correct_option_label": "B",
       "explanation": "With $p = 4$ predictors and $MSR = 125$, the regression sum of squares is:\n$$SSR = p \\times MSR = 4 \\times 125 = 500$$\n$$R^2 = \\frac{SSR}{SST} = \\frac{500}{760} \\approx 0.6579$$\nThis value lies between 0.50 and 0.75.",
+      "module": 3,
+      "passage_id": "Passage_3"
+    },
+    {
+      "question_id": "Passage_4",
+      "question_text": "When data with 20 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, x_2, x_3, x_4 the following outputs were obtained. The standard error was 72.61, the SSR was 422975.2. The standard error corresponding to x_1, x_2, x_3, x_4 were 0.111, 0.007, 7.594, and 20.782 respectively. The t-statistic corresponding to x_1, x_2, x_3, x_4 were 5.84, 2.92,5.33, and -0.005 respectively.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
       "module": 3
     },
     {
       "question_id": "4513871060",
-      "question_text": "When data with 20 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, x_2, x_3, x_4 the following outputs were obtained. The standard error was 72.61, the SSR was 422975.2. The standard error corresponding to x_1, x_2, x_3, x_4 were 0.111, 0.007, 7.594, and 20.782 respectively. The t-statistic corresponding to x_1, x_2, x_3, x_4 were 5.84, 2.92,5.33, and -0.005 respectively. These results imply that F statistic is a value that is:",
+      "question_text": "These results imply that F statistic is a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 30.0 and 45.0",
@@ -139,11 +206,12 @@
       },
       "correct_option_label": "D",
       "explanation": "Here $n = 20, p = 4, s_e = 72.61, SSR = 422975.2$.\n$$MSE = s_e^2 = (72.61)^2 = 5272.21$$\n$$MSR = \\frac{SSR}{p} = \\frac{422975.2}{4} = 105743.8$$\n$$F = \\frac{MSR}{MSE} = \\frac{105743.8}{5272.21} \\approx 20.057$$\nThis value lies between 15.0 and 30.0.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_4"
     },
     {
       "question_id": "4513871061",
-      "question_text": "Refer to question ID 4513871060 for context.\n\nWhen data with 20 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, x_2, x_3, x_4 the following outputs were obtained. The standard error was 72.61, the SSR was 422,975.2. The standard error corresponding to x_1, x_2, x_3, x_4 were 0.111, 0.007, 7.594, and 20.782 respectively. The t-statistic corresponding to x_1, x_2, x_3, x_4 were 5.84, 2.92, 5.33, and -0.005 respectively. These results imply that SSTotal is a value that is:",
+      "question_text": "These results imply that SSTotal is a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "Below 300,000",
@@ -153,11 +221,12 @@
       },
       "correct_option_label": "C",
       "explanation": "Error degrees of freedom $df_{\\text{error}} = n - p - 1 = 20 - 4 - 1 = 15$.\n$$SSE = df_{\\text{error}} \\times MSE = 15 \\times (72.61)^2 = 15 \\times 5272.21 = 79083.15$$\n$$SST = SSR + SSE = 422975.2 + 79083.15 = 502058.35$$\nThis value lies between 300,000 and 600,000.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_4"
     },
     {
       "question_id": "4513871062",
-      "question_text": "Refer to question ID 4513871060 for context.\n\nWhen data with 20 observations was used to conduct a multiple linear regression model in Excel, relating the dependent variable y to 4 independent variables, x_1, x_2, x_3, x_4 the following outputs were obtained. The standard error was 72.61, the SSR was 422975.2. The standard error corresponding to x_1, x_2, x_3, x_4 were 0.111, 0.007, 7.594, and 20.782 respectively. The t-statistic corresponding to x_1, x_2, x_3, x_4 were 5.84, 2.92,5.33, and -0.005 respectively. These results imply that b_2 is a value that is",
+      "question_text": "These results imply that b_2 is a value that is",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0.25 and 0.50",
@@ -167,11 +236,27 @@
       },
       "correct_option_label": "D",
       "explanation": "Using the relation $t_j = \\frac{b_j}{SE(b_j)} \\implies b_j = t_j \\times SE(b_j)$:\n$$b_2 = 2.92 \\times 0.007 = 0.02044$$\n$0.02044$ is Below 0.25.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_4"
+    },
+    {
+      "question_id": "Passage_5",
+      "question_text": "In a survey taken by a random sample of 10, 15, 12, and 13 executives from cities A, B, C, and D respectively, the average number of spam messages received per day was recorded to be 18, 22, 24 and 20 respectively. The corresponding standard deviations were 4, 8, 6 and 4 for sample from cities A, B, C and D respectively. An ANOVA test was conducted using a significance level of 0.05.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 1
     },
     {
       "question_id": "4513871063",
-      "question_text": "In a survey taken by a random sample of 10, 15, 12, and 13 executives from cities A, B, C, and D respectively, the average number of spam messages received per day was recorded to be 18, 22, 24 and 20 respectively. The corresponding standard deviations were 4, 8, 6 and 4 for sample from cities A, B, C and D respectively. An ANOVA test was conducted using a significance level of 0.05. The sum of squares total takes a value that is:",
+      "question_text": "The sum of squares total takes a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0 to 1000",
@@ -181,11 +266,12 @@
       },
       "correct_option_label": "C",
       "explanation": "Total sample size $N_T = 10 + 15 + 12 + 13 = 50$.\nGrand mean $\\bar{\\bar{X}} = \\frac{10(18) + 15(22) + 12(24) + 13(20)}{50} = \\frac{1058}{50} = 21.16$.\n$$SSTr = \\sum n_j(\\bar{X}_j - \\bar{\\bar{X}})^2 = 10(-3.16)^2 + 15(0.84)^2 + 12(2.84)^2 + 13(-1.16)^2 = 224.72$$\n$$SSE = \\sum (n_j - 1)s_j^2 = 9(16) + 14(64) + 11(36) + 12(16) = 144 + 896 + 396 + 192 = 1628$$\n$$SST = SSTr + SSE = 224.72 + 1628 = 1852.72$$\nThis value lies between 1000 to 2000.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_5"
     },
     {
       "question_id": "4513871064",
-      "question_text": "Refer to question ID 4513871063 for context.\n\nIn a survey taken by a random sample of 10, 15, 12, and 13 executives from cities A, B, C, and D respectively, the average number of spam messages received per day was recorded to be 18, 22, 24 and 20 respectively. The corresponding standard deviations were 4, 8, 6 and 4 for sample from cities A, B, C and D respectively. An ANOVA test was conducted using a significance level of 0.05. The mean square treatment takes a value that is:",
+      "question_text": "The mean square treatment takes a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 300 and 400",
@@ -195,11 +281,12 @@
       },
       "correct_option_label": "C",
       "explanation": "With $K = 4$ groups, treatment degrees of freedom $df_{\\text{treatment}} = K - 1 = 3$.\nFrom $SSTr = 224.72$:\n$$MSTr = \\frac{SSTr}{K - 1} = \\frac{224.72}{3} \\approx 74.91$$\nThis value lies between 0 to 100.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_5"
     },
     {
       "question_id": "4513871065",
-      "question_text": "Refer to question ID 4513871063 for context.\n\nIn a survey taken by a random sample of 10, 15, 12, and 13 executives from cities A, B, C, and D respectively, the average number of spam messages received per day was recorded to be 18, 22, 24 and 20 respectively. The corresponding standard deviations were 4, 8, 6 and 4 for sample from cities A, B, C and D respectively. An ANOVA test was conducted using a significance level of 0.05 The degree of freedom for computing mean square error is:",
+      "question_text": "The degree of freedom for computing mean square error is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 45 and 60",
@@ -209,11 +296,12 @@
       },
       "correct_option_label": "A",
       "explanation": "Total sample size across all 4 groups is $N_T = 10 + 15 + 12 + 13 = 50$.\nThe degrees of freedom for error is:\n$$df_{\\text{error}} = N_T - K = 50 - 4 = 46$$\n46 lies between 45 and 60.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_5"
     },
     {
       "question_id": "4513871066",
-      "question_text": "Refer to question ID 4513871063 for context.\n\nIn a survey taken by a random sample of 10, 15, 12, and 13 executives from cities A, B, C, and D respectively, the average number of spam messages received per day was recorded to be 18, 22, 24 and 20 respectively. The corresponding standard deviations were 4, 8, 6 and 4 for sample from cities A, B, C and D respectively. An ANOVA test was conducted using a significance level of 0.05. The test statistic, F takes a value that is:",
+      "question_text": "The test statistic, F takes a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 5 to 10",
@@ -223,11 +311,12 @@
       },
       "correct_option_label": "D",
       "explanation": "From the computed values:\n$$MSTr = 74.91, \\quad MSE = \\frac{SSE}{N_T - K} = \\frac{1628}{46} \\approx 35.39$$\n$$F = \\frac{MSTr}{MSE} = \\frac{74.91}{35.39} \\approx 2.117$$\nThis value lies between 0 to 5.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_5"
     },
     {
       "question_id": "4513871067",
-      "question_text": "Refer to question ID 4513871063 for context.\n\nIn a survey taken by a random sample of 10, 15, 12, and 13 executives from cities A, B, C, and D respectively, the average number of spam messages received per day was recorded to be 18, 22, 24 and 20 respectively. The corresponding standard deviations were 4, 8, 6 and 4 for sample from cities A, B, C and D respectively. An ANOVA test was conducted using a significance level of 0.05. The critical value for this test takes a value that is:",
+      "question_text": "The critical value for this test takes a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 15 and 20",
@@ -237,11 +326,27 @@
       },
       "correct_option_label": "C",
       "explanation": "Numerator degrees of freedom $df_1 = K - 1 = 3$, denominator degrees of freedom $df_2 = N_T - K = 46$.\nAt significance level $\\alpha = 0.05$, the critical value from the $F$-distribution table is $F_{0.05, 3, 46} \\approx 2.81$, which lies between 0 to 5.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_5"
+    },
+    {
+      "question_id": "Passage_6",
+      "question_text": "In data used to construct a valid simple linear regression model with 14 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to -883, ∑(X_i-Xbar)^2 equals 377 and ∑(Yi-Ybar)^2 = 4862. The sample average for x given by Xbar was 26 and the sample average for y given by Ybar was 232.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 2
     },
     {
       "question_id": "4513871068",
-      "question_text": "In data used to construct a valid simple linear regression model with 14 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to -883, ∑(X_i-Xbar)^2 equals 377 and ∑(Yi-Ybar)^2 = 4862. The sample average for x given by Xbar was 26 and the sample average for y given by Ybar was 232. The least squares estimate for b0 is a value that is:",
+      "question_text": "The least squares estimate for b0 is a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 250 and 350",
@@ -251,11 +356,12 @@
       },
       "correct_option_label": "A",
       "explanation": "The least squares slope is:\n$$b_1 = \\frac{SS_{xy}}{SS_{xx}} = \\frac{-883}{377} \\approx -2.3422$$\nThe intercept is:\n$$b_0 = \\bar{Y} - b_1 \\bar{X} = 232 - (-2.3422 \\times 26) = 232 + 60.897 \\approx 292.9$$\n292.9 lies between 250 and 350.",
-      "module": 2
+      "module": 2,
+      "passage_id": "Passage_6"
     },
     {
       "question_id": "4513871069",
-      "question_text": "Refer to question ID 4513871068 for context.\n\nIn data used to construct a valid simple linear regression model with 14 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to -883, ∑(X_i-Xbar)^2 equals 377 and ∑(Yi-Ybar)^2 = 4862. The sample average for x given by Xbar was 26 and the sample average for y given by Ybar was 232. The least squares estimate for b1 is a value that is:",
+      "question_text": "The least squares estimate for b1 is a value that is:",
       "question_type": "MCQ",
       "options": {
         "A": "Above 2.0",
@@ -265,11 +371,12 @@
       },
       "correct_option_label": "C",
       "explanation": "The formula for the slope estimate $b_1$ in simple linear regression is:\n$$b_1 = \\frac{\\sum (X_i - \\bar{X})(Y_i - \\bar{Y})}{\\sum (X_i - \\bar{X})^2} = \\frac{-883}{377} \\approx -2.342$$\nSince $-2.342 < -2.0$, this value is Below -2.0.",
-      "module": 2
+      "module": 2,
+      "passage_id": "Passage_6"
     },
     {
       "question_id": "4513871070",
-      "question_text": "Refer to question ID 4513871068 for context.\n\nIn data used to construct a valid simple linear regression model with 14 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to -883, ∑(X_i-Xbar)^2 equals 377 and ∑(Yi-Ybar)^2 = 4862. The sample average for x given by Xbar was 26 and the sample average for y given by Ybar was 232. These results imply that if X equals 20, the expected value of Y would be:",
+      "question_text": "These results imply that if X equals 20, the expected value of Y would be:",
       "question_type": "MCQ",
       "options": {
         "A": "Below 150",
@@ -279,11 +386,27 @@
       },
       "correct_option_label": "D",
       "explanation": "With $b_0 \\approx 292.897$ and $b_1 \\approx -2.3422$:\n$$\\hat{Y} = b_0 + b_1 X = 292.897 + (-2.3422)(20) = 292.897 - 46.844 \\approx 246.05$$\nThis value lies between 150 and 250.",
+      "module": 2,
+      "passage_id": "Passage_6"
+    },
+    {
+      "question_id": "Passage_7",
+      "question_text": "In data used to construct a valid simple linear regression model with 8 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to 348.5, ∑(X_i-Xbar)^2 equals 59.5 and ∑(Yi-Ybar)^2 = 2179.5. The sample average for x given by Xbar was 6.75 and the sample average for y given by Ybar was 64.25.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
       "module": 2
     },
     {
       "question_id": "4513871071",
-      "question_text": "In data used to construct a valid simple linear regression model with 8 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to 348.5, ∑(X_i-Xbar)^2 equals 59.5 and ∑(Yi-Ybar)^2 = 2179.5. The sample average for x given by Xbar was 6.75 and the sample average for y given by Ybar was 64.25. These results imply that the percentage of variation in Y that could be attributed to variation in X is:",
+      "question_text": "These results imply that the percentage of variation in Y that could be attributed to variation in X is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 50% and 75%",
@@ -293,11 +416,12 @@
       },
       "correct_option_label": "B",
       "explanation": "The percentage of variation explained is measured by $R^2$:\n$$R^2 = \\frac{(SS_{xy})^2}{SS_{xx} \\cdot SS_{yy}} = \\frac{(348.5)^2}{59.5 \\times 2179.5} = \\frac{121452.25}{129680.25} \\approx 0.9366 = 93.66\\%$$\n$93.66\\%$ is Above 75%.",
-      "module": 2
+      "module": 2,
+      "passage_id": "Passage_7"
     },
     {
       "question_id": "4513871072",
-      "question_text": "Refer to question ID 4513871071 for context.\n\nIn data used to construct a valid simple linear regression model with 8 observations, it was observed that ∑(X_i-Xbar)(Yi-Ybar) is equal to 348.5, ∑(X_i-Xbar)^2 equals 59.5 and ∑(Yi-Ybar)^2 = 2179.5. The sample average for x given by Xbar was 6.75 and the sample average for y given by Ybar was 64.25. These results imply that the correlation between Y and X is:",
+      "question_text": "These results imply that the correlation between Y and X is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between -1 and -0.5",
@@ -307,7 +431,8 @@
       },
       "correct_option_label": "B",
       "explanation": "The sample correlation coefficient $r$ is:\n$$r = \\frac{SS_{xy}}{\\sqrt{SS_{xx} \\cdot SS_{yy}}} = \\frac{348.5}{\\sqrt{59.5 \\times 2179.5}} = \\frac{348.5}{\\sqrt{129680.25}} = \\frac{348.5}{360.1114} \\approx +0.9677$$\nThis value lies between 0.5 and 1.0.",
-      "module": 2
+      "module": 2,
+      "passage_id": "Passage_7"
     },
     {
       "question_id": "4513871073",

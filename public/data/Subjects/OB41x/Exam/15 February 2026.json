@@ -5,36 +5,36 @@
         "batch": "09:00-11:00",
         "attempt": "",
         "exam_pattern": {
-          "exam_name": "IIMB BBA DBE Batch 1 Term 4",
-          "duration_min": 120,
-          "total_marks": 100,
-          "negative_marking": false,
-          "calculator": "none",
-          "timing_mode": "global",
-          "reference_materials": [],
-          "instructions": [],
-          "sections": [
-            {
-              "name": "Section 1",
-              "question_type": "MCQ",
-              "num_questions": 10,
-              "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
-            },
-            {
-              "name": "Section 2",
-              "question_type": "MSQ",
-              "num_questions": 25,
-              "msq_scoring": "exact",
-              "question_ids": ["11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35"]
-            },
-            {
-              "name": "Section 3",
-              "question_type": "CASELET_MCQ",
-              "num_questions": 30,
-              "question_ids": ["37", "38", "39", "40", "41", "43", "44", "45", "46", "47", "49", "50", "51", "52", "53", "55", "56", "57", "58", "59", "61", "62", "63", "64", "65", "67", "68", "69", "70", "71"]
-            }
-          ],
-          "total_questions": 65
+            "exam_name": "IIMB BBA DBE Batch 1 Term 4",
+            "duration_min": 120,
+            "total_marks": 100,
+            "negative_marking": false,
+            "calculator": "none",
+            "timing_mode": "global",
+            "reference_materials": [],
+            "instructions": [],
+            "sections": [
+                {
+                    "name": "Section 1",
+                    "question_type": "MCQ",
+                    "num_questions": 10,
+                    "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+                },
+                {
+                    "name": "Section 2",
+                    "question_type": "MSQ",
+                    "num_questions": 25,
+                    "msq_scoring": "exact",
+                    "question_ids": ["11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35"]
+                },
+                {
+                    "name": "Section 3",
+                    "question_type": "CASELET_MCQ",
+                    "num_questions": 30,
+                    "question_ids": ["37", "38", "39", "40", "41", "43", "44", "45", "46", "47", "49", "50", "51", "52", "53", "55", "56", "57", "58", "59", "61", "62", "63", "64", "65", "67", "68", "69", "70", "71"]
+                }
+            ],
+            "total_questions": 65
         }
     },
     "questions": [
@@ -109,8 +109,23 @@
             "module": 1
         },
         {
+            "question_id": "Passage_1",
+            "question_text": "Analyse the context and answer the following question\n\n360.org, an organisation working to curb climate change, recently conducted an interview with Anirudh for the position of public relations officer. However, interviewers Ahmed and Laura disagree on whether Anirudh should be given the job. Ahmed believes that Anirudh lacks in-depth knowledge of global warming and its impact. On the other hand, Laura feels that Anirudh would be perfect for the job because he has strong networking and interpersonal skills.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 6
+        },
+        {
             "question_id": "6",
-            "question_text": "Analyse the context and answer the following question\n\n360.org, an organisation working to curb climate change, recently conducted an interview with Anirudh for the position of public relations officer. However, interviewers Ahmed and Laura disagree on whether Anirudh should be given the job. Ahmed believes that Anirudh lacks in-depth knowledge of global warming and its impact. On the other hand, Laura feels that Anirudh would be perfect for the job because he has strong networking and interpersonal skills.\n\nWhich of the following, if true, would strengthen Laura's argument?",
+            "question_text": "Which of the following, if true, would strengthen Laura's argument?",
             "question_type": "MCQ",
             "options": {
                 "A": "Gaining the support of corporate giants would comprise a large part of the job.",
@@ -120,11 +135,12 @@
             },
             "correct_option_label": "A",
             "explanation": "If the primary responsibility of the role is to secure partnerships with corporate sponsors, then strong networking and interpersonal skills are crucial requirements, thereby validating and strengthening Laura's selection criteria.",
-            "module": 6
+            "module": 6,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "7",
-            "question_text": "Analyse the context and answer the following question\n\n360.org, an organisation working to curb climate change, recently conducted an interview with Anirudh for the position of public relations officer. However, interviewers Ahmed and Laura disagree on whether Anirudh should be given the job. Ahmed believes that Anirudh lacks in-depth knowledge of global warming and its impact. On the other hand, Laura feels that Anirudh would be perfect for the job because he has strong networking and interpersonal skills.\n\nWhich of the following, if true, would weaken Laura's argument?",
+            "question_text": "Which of the following, if true, would weaken Laura's argument?",
             "question_type": "MCQ",
             "options": {
                 "A": "Anirudh was unable to fare well in the written test which analyzed her conceptual skills.",
@@ -134,7 +150,8 @@
             },
             "correct_option_label": "C",
             "explanation": "If Anirudh cannot clearly articulate why he is the right fit during the interview, it indicates a direct failure in his core communication and interpersonal execution, which severely undermines Laura's claim that his strong interpersonal skills make him perfect for the job.",
-            "module": 6
+            "module": 6,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "8",
@@ -487,8 +504,23 @@
             "module": 4
         },
         {
+            "question_id": "Passage_2",
+            "question_text": "Analyse the context and answer the following question\n\nYou manage a department of five employees. You have identified that Joel has a high need for achievement, Gita has a high need for power, and Feroze has a high need for affiliation. Priya scored high on the need for power and low on the need for affiliation. Deep scored low on both need for power and need for affiliation.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 1
+        },
+        {
             "question_id": "33",
-            "question_text": "Analyse the context and answer the following question\n\nYou manage a department of five employees. You have identified that Joel has a high need for achievement, Gita has a high need for power, and Feroze has a high need for affiliation. Priya scored high on the need for power and low on the need for affiliation. Deep scored low on both need for power and need for affiliation.\n\nWhich of the following employees would likely thrive in an assignment characterised by high personal responsibility, moderate risks, and frequent performance feedback? (Select all that apply)",
+            "question_text": "Which of the following employees would likely thrive in an assignment characterised by high personal responsibility, moderate risks, and frequent performance feedback? (Select all that apply)",
             "question_type": "MCQ",
             "options": {
                 "A": "Joel",
@@ -498,11 +530,12 @@
             },
             "correct_option_label": "A, C",
             "explanation": "According to McClelland's Theory of Needs, individuals with a high need for achievement (nAch) are motivated by personal accountability, moderately difficult challenges, and constant feedback on their performance. Both Joel (A) and anyone with a high nAch profile (C) fit this description.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "34",
-            "question_text": "Analyse the context and answer the following question\n\nYou manage a department of five employees. You have identified that Joel has a high need for achievement, Gita has a high need for power, and Feroze has a high need for affiliation. Priya scored high on the need for power and low on the need for affiliation. Deep scored low on both need for power and need for affiliation.\n\nWhen selecting a temporary replacement to manage the department, which profiles typically align with the \"Managerial Motive”? (Select all that apply)",
+            "question_text": "When selecting a temporary replacement to manage the department, which profiles typically align with the \"Managerial Motive”? (Select all that apply)",
             "question_type": "MCQ",
             "options": {
                 "A": "Priya",
@@ -512,7 +545,8 @@
             },
             "correct_option_label": "A, D",
             "explanation": "The 'Managerial Motive' is characterized by a high need for power (nPow) combined with a low need for affiliation (nAff). This allows leaders to exercise institutional influence and make tough, unbiased objective decisions. Priya and Gita possess this motivational blend.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "35",
@@ -529,8 +563,23 @@
             "module": 2
         },
         {
+            "question_id": "Passage_3",
+            "question_text": "The \"Agile\" Transformation of GlobalBank\n\nGlobalBank, a century-old financial institution, is currently grappling with a pervasive \"silo mentality\" that hampers its operational efficiency. The lengthy decision-making processes, often spanning several months, are largely due to the need for extensive approvals from various departments, including the Risk Department, the Legal Department, and the Regional Vice President (VP). This cumbersome approval framework has stifled innovation and slowed the introduction of new products, particularly in the competitive landscape of financial technology.\n\nIn response to these challenges, the CEO is advocating a transformative shift to a boundaryless, team-based organisational structure. This approach aims to foster collaboration across departments, facilitating faster decision-making and enabling the bank to respond more quickly to market demands and better compete with agile fintech startups that thrive on speed and flexibility. By breaking down institutional barriers, GlobalBank hopes to cultivate a more dynamic environment that prioritises innovation and operational agility.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 5
+        },
+        {
             "question_id": "37",
-            "question_text": "The \"Agile\" Transformation of GlobalBank\n\nGlobalBank, a century-old financial institution, is currently grappling with a pervasive \"silo mentality\" that hampers its operational efficiency. The lengthy decision-making processes, often spanning several months, are largely due to the need for extensive approvals from various departments, including the Risk Department, the Legal Department, and the Regional Vice President (VP). This cumbersome approval framework has stifled innovation and slowed the introduction of new products, particularly in the competitive landscape of financial technology.\n\nIn response to these challenges, the CEO is advocating a transformative shift to a boundaryless, team-based organisational structure. This approach aims to foster collaboration across departments, facilitating faster decision-making and enabling the bank to respond more quickly to market demands and better compete with agile fintech startups that thrive on speed and flexibility. By breaking down institutional barriers, GlobalBank hopes to cultivate a more dynamic environment that prioritises innovation and operational agility.\n\nWhich structural change is most likely to reduce the \"horizontal boundaries\" within GlobalBank?",
+            "question_text": "Which structural change is most likely to reduce the \"horizontal boundaries\" within GlobalBank?",
             "question_type": "MCQ",
             "options": {
                 "A": "Implementing a strict, unbroken Chain of Command.",
@@ -540,11 +589,12 @@
             },
             "correct_option_label": "B",
             "explanation": "Horizontal boundaries run between different functional silos (like Risk, Legal, Sales). Creating cross-functional 'Tribes' colocates distinct experts to work collaboratively on unified customer journeys, effectively reducing these horizontal divisions.",
-            "module": 5
+            "module": 5,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "38",
-            "question_text": "[Refer to Question ID 37 for context]\n\nIf GlobalBank adopts a Team Structure, what is the primary behavioural risk management that must be mitigated to prevent a drop in performance?",
+            "question_text": "If GlobalBank adopts a Team Structure, what is the primary behavioural risk management that must be mitigated to prevent a drop in performance?",
             "question_type": "MCQ",
             "options": {
                 "A": "Increased standard operating procedures (SOPs).",
@@ -554,11 +604,12 @@
             },
             "correct_option_label": "B",
             "explanation": "Sifting to cross-functional teams and matrix layouts dilutes traditional reporting, leading to a loss of 'Unity of Command'. Employees often receive instructions from multiple sources, causing stress and severe role conflict.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "39",
-            "question_text": "[Refer to Question ID 37 for context]\n\nTo support this new \"Agile\" structure, how should GlobalBank adjust its Formalisation?",
+            "question_text": "To support this new \"Agile\" structure, how should GlobalBank adjust its Formalisation?",
             "question_type": "MCQ",
             "options": {
                 "A": "Increase formalisation to ensure the new teams don't deviate from banking regulations.",
@@ -568,11 +619,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Formalization represents standardization and rigidity. To support agility, teams need flexibility to iterate and experiment; thus, reducing formalization is necessary to prevent bureaucracy from slowing down innovation.",
-            "module": 5
+            "module": 5,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "40",
-            "question_text": "[Refer to Question ID 37 for context]\n\nThe CEO’s move toward a \"Boundaryless\" structure specifically targets the elimination of \"Vertical Boundaries.\" Which action would most effectively achieve this?",
+            "question_text": "The CEO’s move toward a \"Boundaryless\" structure specifically targets the elimination of \"Vertical Boundaries.\" Which action would most effectively achieve this?",
             "question_type": "MCQ",
             "options": {
                 "A": "Implementing a 360-degree performance appraisal system where subordinates evaluate their managers.",
@@ -582,11 +634,12 @@
             },
             "correct_option_label": "A",
             "explanation": "Vertical boundaries represent the hierarchy separating rank levels. Introducing multi-directional, upward feedback like 360-degree performance appraisals bridges this social distance, promoting flat, vertical integration.",
-            "module": 5
+            "module": 5,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "41",
-            "question_text": "[Refer to Question ID 37 for context]\n\nIf GlobalBank’s environment is characterised by high \"Volatility\" (market shifts) and high \"Complexity\" (regulatory requirements), how does Robbins’ Contingency Theory suggest the structure should be balanced?",
+            "question_text": "If GlobalBank’s environment is characterised by high \"Volatility\" (market shifts) and high \"Complexity\" (regulatory requirements), how does Robbins’ Contingency Theory suggest the structure should be balanced?",
             "question_type": "MCQ",
             "options": {
                 "A": "The organisation should be 100% Mechanistic to handle the complexity.",
@@ -596,11 +649,27 @@
             },
             "correct_option_label": "C",
             "explanation": "Robbins' theory notes that when facing multiple environmental contingencies, structures must balance priorities. A hybrid approach of organic wings for market responsiveness, while keeping mechanistic clusters to enforce complex regulations, is the optimal compromise.",
+            "module": 5,
+            "passage_id": "Passage_3"
+        },
+        {
+            "question_id": "Passage_4",
+            "question_text": "The Cultural Erosion at \"BlueJet Airlines\"\n\nBlueJet, once renowned for its vibrant \"Family First\" culture, fostered an environment where employees thrived in casual attire, shared light-hearted jokes over the intercom, and enjoyed a high degree of empowerment in their roles. This welcoming atmosphere not only encouraged camaraderie among staff but also translated into exceptional customer service. However, the dynamics shifted dramatically with the appointment of a new CEO hailing from a traditional legacy carrier. This new leadership brought a stringent corporate ethos, marked by the enforcement of formal uniforms, rigidly timed bathroom breaks, and the introduction of a staggering 500-page manual detailing the protocol for every conceivable task.\n\nThe abrupt change alienated employees, many of whom felt their individuality and autonomy were being stifled. Within a mere year, the tension reached a boiling point as flight attendants, feeling undervalued and overregulated, resorted to striking. This rebellion against the new policies highlighted the discontent brewing within the workforce. Concurrently, customer satisfaction, which had previously flourished under the relaxed and engaging atmosphere, began to plummet, signalling a stark decline in the company’s once-cherished reputation for service excellence.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
             "module": 5
         },
         {
             "question_id": "43",
-            "question_text": "The Cultural Erosion at \"BlueJet Airlines\"\n\nBlueJet, once renowned for its vibrant \"Family First\" culture, fostered an environment where employees thrived in casual attire, shared light-hearted jokes over the intercom, and enjoyed a high degree of empowerment in their roles. This welcoming atmosphere not only encouraged camaraderie among staff but also translated into exceptional customer service. However, the dynamics shifted dramatically with the appointment of a new CEO hailing from a traditional legacy carrier. This new leadership brought a stringent corporate ethos, marked by the enforcement of formal uniforms, rigidly timed bathroom breaks, and the introduction of a staggering 500-page manual detailing the protocol for every conceivable task.\n\nThe abrupt change alienated employees, many of whom felt their individuality and autonomy were being stifled. Within a mere year, the tension reached a boiling point as flight attendants, feeling undervalued and overregulated, resorted to striking. This rebellion against the new policies highlighted the discontent brewing within the workforce. Concurrently, customer satisfaction, which had previously flourished under the relaxed and engaging atmosphere, began to plummet, signalling a stark decline in the company’s once-cherished reputation for service excellence.\n\nWhat occurred to BlueJet’s culture under the new CEO?",
+            "question_text": "What occurred to BlueJet’s culture under the new CEO?",
             "question_type": "MCQ",
             "options": {
                 "A": "The culture became \"stronger\" due to more rules.",
@@ -610,11 +679,12 @@
             },
             "correct_option_label": "C",
             "explanation": "The introduction of formal uniforms, strict timing rules, and an extensive 500-page operational manual signifies a dramatic structural pivot away from informal high-trust empowerment toward an intensely bureaucratic, highly formalized environment.",
-            "module": 5
+            "module": 5,
+            "passage_id": "Passage_4"
         },
         {
             "question_id": "44",
-            "question_text": "[Refer to Question ID 43 for context]\n\nThe flight attendants' strike represents which source of resistance to change?",
+            "question_text": "The flight attendants' strike represents which source of resistance to change?",
             "question_type": "MCQ",
             "options": {
                 "A": "Individual: Habit.",
@@ -624,11 +694,12 @@
             },
             "correct_option_label": "C",
             "explanation": "The sudden structural standardization directly undermined the high degree of employee empowerment, autonomy, and voice that flight attendants formerly enjoyed. This strike is an active resistance to defend those established relationships and power configurations.",
-            "module": 7
+            "module": 7,
+            "passage_id": "Passage_4"
         },
         {
             "question_id": "45",
-            "question_text": "[Refer to Question ID 43 for context]\n\nWhich step of Lewin’s model did the CEO likely skip?",
+            "question_text": "Which step of Lewin’s model did the CEO likely skip?",
             "question_type": "MCQ",
             "options": {
                 "A": "Unfreezing.",
@@ -638,11 +709,12 @@
             },
             "correct_option_label": "A",
             "explanation": "By introducing sweeping new regulations and manual-driven tasks overnight without prepping the staff or showing the clear necessity of these changes, the CEO skipped 'Unfreezing'—the critical stage required to overcome existing status quo inertia.",
-            "module": 7
+            "module": 7,
+            "passage_id": "Passage_4"
         },
         {
             "question_id": "46",
-            "question_text": "[Refer to Question ID 43 for context]\n\nTo fix the strike, the CEO invites the union leader to sit on the board of directors, but gives them no real power. This is an example of: ",
+            "question_text": "To fix the strike, the CEO invites the union leader to sit on the board of directors, but gives them no real power. This is an example of: ",
             "question_type": "MCQ",
             "options": {
                 "A": "Education.",
@@ -652,11 +724,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Co-optation is a structural form of manipulation that involves offering key resistance figures a symbolic role in the decision-making process to secure their endorsement, while withholding any genuine influence or authority.",
-            "module": 7
+            "module": 7,
+            "passage_id": "Passage_4"
         },
         {
             "question_id": "47",
-            "question_text": "[Refer to Question ID 43 for context]\n\nHow could the CEO have used \"Socialisation\" to make this change more effective?",
+            "question_text": "How could the CEO have used \"Socialisation\" to make this change more effective?",
             "question_type": "MCQ",
             "options": {
                 "A": "By firing all old employees and hiring new ones.",
@@ -666,11 +739,27 @@
             },
             "correct_option_label": "B",
             "explanation": "Socialization is the process of integrating people into a culture or standard. Conducting orientation sessions that transparently unpack the rationale ('the why') behind the updated operational standards would have helped employees align with the change voluntarily.",
-            "module": 5
+            "module": 5,
+            "passage_id": "Passage_4"
+        },
+        {
+            "question_id": "Passage_5",
+            "question_text": "The \"Remote Work\" Performance Appraisal\n\n\"CloudScale\" operates as a fully remote company, leveraging a modern work culture that emphasises flexibility, autonomy, and trust. This innovative virtual environment empowers employees to manage their own schedules and work styles, as managers do not directly monitor their daily activities. This approach cultivates a sense of ownership among team members, allowing them to tailor their work processes to what they consider most effective for their individual productivity and creativity.\n\nTo accurately evaluate performance and contributions, CloudScale employs a Management by Objectives (MBO) framework. This method involves establishing clear, measurable goals collaboratively defined by managers and employees. By focusing on quantifiable outcomes and specific achievements rather than simply tracking activity levels, this performance appraisal system promotes a results-oriented culture. It ensures that evaluations are fair and based on actual contributions, aligning with the company’s commitment to optimising the effectiveness of remote work. This goal-oriented structure not only enhances transparency but also motivates employees to strive for excellence and take initiative in achieving their objectives.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 6
         },
         {
             "question_id": "49",
-            "question_text": "The \"Remote Work\" Performance Appraisal\n\n\"CloudScale\" operates as a fully remote company, leveraging a modern work culture that emphasises flexibility, autonomy, and trust. This innovative virtual environment empowers employees to manage their own schedules and work styles, as managers do not directly monitor their daily activities. This approach cultivates a sense of ownership among team members, allowing them to tailor their work processes to what they consider most effective for their individual productivity and creativity.\n\nTo accurately evaluate performance and contributions, CloudScale employs a Management by Objectives (MBO) framework. This method involves establishing clear, measurable goals collaboratively defined by managers and employees. By focusing on quantifiable outcomes and specific achievements rather than simply tracking activity levels, this performance appraisal system promotes a results-oriented culture. It ensures that evaluations are fair and based on actual contributions, aligning with the company’s commitment to optimising the effectiveness of remote work. This goal-oriented structure not only enhances transparency but also motivates employees to strive for excellence and take initiative in achieving their objectives.\n\nIn an MBO system, goals are set:",
+            "question_text": "In an MBO system, goals are set:",
             "question_type": "MCQ",
             "options": {
                 "A": "Solely by the manager.",
@@ -680,11 +769,12 @@
             },
             "correct_option_label": "C",
             "explanation": "The defining hallmark of any functional Management by Objectives (MBO) system is that objectives are not unilaterally imposed; rather, they are established through active joint collaboration between the manager and employee.",
-            "module": 6
+            "module": 6,
+            "passage_id": "Passage_5"
         },
         {
             "question_id": "50",
-            "question_text": "[Refer to Question ID 49 for context]\n\nFor a remote company, evaluating \"Behaviours\" (like what time they log on) is often less effective than evaluating:",
+            "question_text": "For a remote company, evaluating \"Behaviours\" (like what time they log on) is often less effective than evaluating:",
             "question_type": "MCQ",
             "options": {
                 "A": "Traits (Personality).",
@@ -694,11 +784,12 @@
             },
             "correct_option_label": "B",
             "explanation": "In a remote arrangement where employees manage their own schedules and direct physical monitoring is absent, traditional behavioral inputs (e.g., login times) are unreliable. Performance systems should instead evaluate concrete task outcomes and actual deliverables produced.",
-            "module": 6
+            "module": 6,
+            "passage_id": "Passage_5"
         },
         {
             "question_id": "51",
-            "question_text": "[Refer to Question ID 49 for context]\n\nIf a remote manager at CloudScale gives a high rating to an employee just because they respond to emails instantly (even if the work quality is poor), the manager is suffering from:",
+            "question_text": "If a remote manager at CloudScale gives a high rating to an employee just because they respond to emails instantly (even if the work quality is poor), the manager is suffering from:",
             "question_type": "MCQ",
             "options": {
                 "A": "The \"Availability\" heuristic (evaluating based on visible info).",
@@ -708,11 +799,12 @@
             },
             "correct_option_label": "A",
             "explanation": "The availability heuristic occurs when a rater relies heavily on the most visible, vivid, or easily accessible pieces of information (like instant email responses) to make a broad judgment, while ignoring less salient but more critical quality data.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_5"
         },
         {
             "question_id": "52",
-            "question_text": "[Refer to Question ID 49 for context]\n\nCloudScale uses \"Peer Appraisals\" where developers rate each other's code. This is useful because:",
+            "question_text": "CloudScale uses \"Peer Appraisals\" where developers rate each other's code. This is useful because:",
             "question_type": "MCQ",
             "options": {
                 "A": "Peers have a more intimate view of daily performance than remote managers.",
@@ -722,11 +814,12 @@
             },
             "correct_option_label": "A",
             "explanation": "Because remote managers do not observe daily activities directly, peer appraisals are highly beneficial. Colleagues interact constantly on tasks and possess a direct, accurate understanding of each other's actual contributions and work quality.",
-            "module": 6
+            "module": 6,
+            "passage_id": "Passage_5"
         },
         {
             "question_id": "53",
-            "question_text": "[Refer to Question ID 49 for context]\n\nTo ensure the MBO system works, the goals must be:",
+            "question_text": "To ensure the MBO system works, the goals must be:",
             "question_type": "MCQ",
             "options": {
                 "A": "Vague and flexible.",
@@ -736,11 +829,27 @@
             },
             "correct_option_label": "B",
             "explanation": "Goal setting is functional only when objectives are formulated to be SMART—Specific, Measurable, Attainable, Results-oriented, and Time-bound—allowing for clear evaluation, accountability, and tracking.",
-            "module": 6
+            "module": 6,
+            "passage_id": "Passage_5"
+        },
+        {
+            "question_id": "Passage_6",
+            "question_text": "The \"Always-On\" Culture at FinTech Corp\n\nFinTech Corp is a rapidly growing startup that has garnered attention for its high-pressure work environment, largely driven by the CEO's unwavering work ethic and a pervasive \"24/7 hustle\" mentality. This philosophy often manifests as employees receiving Slack messages at all hours, including 2 AM, with the implicit expectation that they respond without delay.\n\nTo support this intense work culture, the company stocks its pantry with a variety of free energy drinks, ranging from caffeinated sodas to energy shots, intended to keep employees alert and productive. Additionally, the company has invested in ergonomically designed \"nap pods\" throughout the office, providing workers a designated space to recharge during the day. However, these amenities are accompanied by a relentless pressure, making it difficult for employees to take genuine breaks without feeling the weight of their workload.\n\nRecently, the consequences of this high-octane culture became alarmingly apparent when three of the company’s top developers reported experiencing severe symptoms of stress, such as heart palpitations and debilitating anxiety. These health concerns ultimately led to their resignations, raising significant red flags about the sustainability of such a demanding work environment. The situation underscores the critical need to evaluate the impact of extreme work expectations on employee well-being and overall productivity, highlighting the potential long-term repercussions of prioritising relentless hustle over health and balance.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 8
         },
         {
             "question_id": "55",
-            "question_text": "The \"Always-On\" Culture at FinTech Corp\n\nFinTech Corp is a rapidly growing startup that has garnered attention for its high-pressure work environment, largely driven by the CEO's unwavering work ethic and a pervasive \"24/7 hustle\" mentality. This philosophy often manifests as employees receiving Slack messages at all hours, including 2 AM, with the implicit expectation that they respond without delay.\n\nTo support this intense work culture, the company stocks its pantry with a variety of free energy drinks, ranging from caffeinated sodas to energy shots, intended to keep employees alert and productive. Additionally, the company has invested in ergonomically designed \"nap pods\" throughout the office, providing workers a designated space to recharge during the day. However, these amenities are accompanied by a relentless pressure, making it difficult for employees to take genuine breaks without feeling the weight of their workload.\n\nRecently, the consequences of this high-octane culture became alarmingly apparent when three of the company’s top developers reported experiencing severe symptoms of stress, such as heart palpitations and debilitating anxiety. These health concerns ultimately led to their resignations, raising significant red flags about the sustainability of such a demanding work environment. The situation underscores the critical need to evaluate the impact of extreme work expectations on employee well-being and overall productivity, highlighting the potential long-term repercussions of prioritising relentless hustle over health and balance.\n\nThe heart palpitations suffered by the developers are categorised as:",
+            "question_text": "The heart palpitations suffered by the developers are categorised as:",
             "question_type": "MCQ",
             "options": {
                 "A": "Psychological symptoms.",
@@ -750,11 +859,12 @@
             },
             "correct_option_label": "B",
             "explanation": "Stress can affect individuals in three main areas: physiological, psychological, and behavioral. Heart palpitations represent a direct, physical somatic reaction of the body, classifying them as physiological symptoms.",
-            "module": 8
+            "module": 8,
+            "passage_id": "Passage_6"
         },
         {
             "question_id": "56",
-            "question_text": "[Refer to Question ID 55 for context]\n\nThe 2 AM messages create a stressor known as:",
+            "question_text": "The 2 AM messages create a stressor known as:",
             "question_type": "MCQ",
             "options": {
                 "A": "Inter-role conflict (work-life blurring).",
@@ -764,11 +874,12 @@
             },
             "correct_option_label": "A",
             "explanation": "Receiving and being expected to reply to work communications in the middle of the night (2 AM) blurs the boundaries between professional duties and private personal time, resulting in inter-role conflict.",
-            "module": 8
+            "module": 8,
+            "passage_id": "Passage_6"
         },
         {
             "question_id": "57",
-            "question_text": "[Refer to Question ID 55 for context]\n\nThe \"nap pods\" and \"energy drinks\" are examples of:",
+            "question_text": "The \"nap pods\" and \"energy drinks\" are examples of:",
             "question_type": "MCQ",
             "options": {
                 "A": "Addressing the root cause of stress.",
@@ -778,11 +889,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Amenities like nap pods and energy drinks are organizational coping mechanisms. They assist employees in managing fatigue (the symptoms of long hours) rather than addressing the structural work expectations and constant availability demands that cause the stress in the first place.",
-            "module": 8
+            "module": 8,
+            "passage_id": "Passage_6"
         },
         {
             "question_id": "58",
-            "question_text": "[Refer to Question ID 55 for context]\n\nIf a developer feels they must answer the 2 AM message to get a promotion, but also wants to sleep to be healthy, they are facing:",
+            "question_text": "If a developer feels they must answer the 2 AM message to get a promotion, but also wants to sleep to be healthy, they are facing:",
             "question_type": "MCQ",
             "options": {
                 "A": "Inter-role conflict.",
@@ -792,11 +904,12 @@
             },
             "correct_option_label": "B",
             "explanation": "Person-role conflict arises when the behavioral requirements of an organizational role (responding at 2 AM) directly clash with an individual's personal needs, health values, or personal boundaries (needing sleep to stay healthy).",
-            "module": 8
+            "module": 8,
+            "passage_id": "Passage_6"
         },
         {
             "question_id": "59",
-            "question_text": "[Refer to Question ID 55 for context]\n\nTo structurally reduce this stress, the company should move toward:",
+            "question_text": "To structurally reduce this stress, the company should move toward:",
             "question_type": "MCQ",
             "options": {
                 "A": "Increasing formalisation.",
@@ -806,11 +919,27 @@
             },
             "correct_option_label": "B",
             "explanation": "To resolve the underlying issues, the company should establish organizational strategies like a formal 'Right to Disconnect' policy, protecting personal boundaries and defining clear timeframes when employees are not expected to check work communications.",
-            "module": 8
+            "module": 8,
+            "passage_id": "Passage_6"
+        },
+        {
+            "question_id": "Passage_7",
+            "question_text": "The \"Legacy Motors\" Turnaround\n\nSarah has recently taken the helm as the CEO of a venerable automotive plant that boasts a rich history spanning over 70 years. The atmosphere within the facility is charged with a mix of scepticism and resistance, particularly among the workforce, which is unionised and entrenched in traditional practices. Many assembly line workers are seasoned artisans, with a wealth of experience and skill in their roles. However, they are at a disadvantage, lacking the technical training needed to transition to electric vehicles (EVs) and the intricate work involved in cutting-edge EV battery technology.\n\nIn this complex environment, mid-level managers, though competent in their duties, are often paralysed by the looming pressure of a high-stakes landscape. Their apprehension about making mistakes stifles innovation and progress, creating a tense and cautious atmosphere. Against this backdrop, Sarah enters with a limited budget for bonuses. Yet she carries a clear and inspiring vision for the plant's future-one that aims to navigate the challenges ahead and usher in a new era of sustainable manufacturing.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 3
         },
         {
             "question_id": "61",
-            "question_text": "The \"Legacy Motors\" Turnaround\n\nSarah has recently taken the helm as the CEO of a venerable automotive plant that boasts a rich history spanning over 70 years. The atmosphere within the facility is charged with a mix of scepticism and resistance, particularly among the workforce, which is unionised and entrenched in traditional practices. Many assembly line workers are seasoned artisans, with a wealth of experience and skill in their roles. However, they are at a disadvantage, lacking the technical training needed to transition to electric vehicles (EVs) and the intricate work involved in cutting-edge EV battery technology.\n\nIn this complex environment, mid-level managers, though competent in their duties, are often paralysed by the looming pressure of a high-stakes landscape. Their apprehension about making mistakes stifles innovation and progress, creating a tense and cautious atmosphere. Against this backdrop, Sarah enters with a limited budget for bonuses. Yet she carries a clear and inspiring vision for the plant's future-one that aims to navigate the challenges ahead and usher in a new era of sustainable manufacturing.\n\nThe assembly line workers are technically proficient in old methods but \"unskilled and hesitant\" regarding the new EV tech. How should Sarah approach them initially?",
+            "question_text": "The assembly line workers are technically proficient in old methods but \"unskilled and hesitant\" regarding the new EV tech. How should Sarah approach them initially?",
             "question_type": "MCQ",
             "options": {
                 "A": "Empower them by delegating all transition decisions to their union reps.",
@@ -820,11 +949,12 @@
             },
             "correct_option_label": "B",
             "explanation": "Since the employees lack technical competence in EV battery assembly and feel apprehensive about the change, they fit a 'low competence, low confidence' readiness profile. Under situational leadership theory, this calls for highly specific, step-by-step guidance and close supervision.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_7"
         },
         {
             "question_id": "62",
-            "question_text": "[Refer to Question ID 61 for context]\n\nThe mid-level managers are \"capable but apprehensive\" about the new risk-heavy environment. What should Sarah emphasise to maximise their performance?",
+            "question_text": "The mid-level managers are \"capable but apprehensive\" about the new risk-heavy environment. What should Sarah emphasise to maximise their performance?",
             "question_type": "MCQ",
             "options": {
                 "A": "Increase the formal penalties for any operational errors.",
@@ -834,11 +964,12 @@
             },
             "correct_option_label": "C",
             "explanation": "For individuals who possess high capability but are hesitant or risk-averse, a participative style is ideal. Increasing two-way communication and involving them in decision-making builds confidence, reduces performance anxiety, and helps overcome their fear of errors.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_7"
         },
         {
             "question_id": "63",
-            "question_text": "[Refer to Question ID 61 for context]\n\nSarah decides to hold town halls where she questions long-held industry myths and asks workers to imagine \"transportation\" rather than just \"cars.\" This behaviour is an example of:",
+            "question_text": "Sarah decides to hold town halls where she questions long-held industry myths and asks workers to imagine \"transportation\" rather than just \"cars.\" This behaviour is an example of:",
             "question_type": "MCQ",
             "options": {
                 "A": "Management by Exception.",
@@ -848,11 +979,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Intellectual Stimulation is a key dimension of Transformational Leadership. It involves encouraging followers to challenge long-standing assumptions, rethink established operational conventions, and view industry problems from entirely new angles.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_7"
         },
         {
             "question_id": "64",
-            "question_text": "[Refer to Question ID 61 for context]\n\nDespite Sarah’s hard work, the plant’s stock price rises primarily because a competitor went bankrupt. However, the Board of Directors publicly credits Sarah’s \"divine insight\" for the success. This illustrates:",
+            "question_text": "Despite Sarah’s hard work, the plant’s stock price rises primarily because a competitor went bankrupt. However, the Board of Directors publicly credits Sarah’s \"divine insight\" for the success. This illustrates:",
             "question_type": "MCQ",
             "options": {
                 "A": "The Substitutes for Leadership model.",
@@ -862,11 +994,12 @@
             },
             "correct_option_label": "B",
             "explanation": "The Attribution Theory of Leadership posits that leadership is a label or perception that observers attribute to individuals. In this case, the Board attributes the rise in stock price to Sarah's leadership qualities rather than recognizing the external cause (the competitor's bankruptcy).",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_7"
         },
         {
             "question_id": "65",
-            "question_text": "[Refer to Question ID 61 for context]\n\nTo ensure long-term stability, Sarah begins training \"Successor Leaders\" who share her values but are encouraged to develop their own styles. This indicates she is focused on:",
+            "question_text": "To ensure long-term stability, Sarah begins training \"Successor Leaders\" who share her values but are encouraged to develop their own styles. This indicates she is focused on:",
             "question_type": "MCQ",
             "options": {
                 "A": "Personalised Charisma.",
@@ -876,11 +1009,27 @@
             },
             "correct_option_label": "C",
             "explanation": "Fostering organizational sustainability, investing in succession planning, and helping other leaders grow while allowing them autonomy are key behaviors of stewardship and servant leadership, prioritizing the organization's legacy over personal control.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_7"
+        },
+        {
+            "question_id": "Passage_8",
+            "question_text": "The \"Digital Transformation\" Deadlock\n\nGlobal Logistics Inc. is in the midst of a significant digital transformation, shifting to an AI-driven routing system to optimise delivery efficiency and reduce operational costs. The Operations Team, whose performance is evaluated on speed and cost-effectiveness, is eager to implement the new software immediately to meet demanding quarterly targets and boost profitability. They believe that advanced routing algorithms will significantly streamline operations and enhance customer satisfaction by reducing delivery times.\n\nOn the other hand, the IT Security Team, which prioritises risk mitigation and system integrity, is apprehensive about the launch. They have identified several minor vulnerabilities within the software that could potentially expose the company to security threats. Addressing these issues would require months of thorough assessment and patching to ensure that the system can be deployed without jeopardising sensitive company and client data.\n\nThe situation has deteriorated to the point that communication between the two department heads has completely broken down. This discord has not only stymied progress on the project but has also started to impact the broader company culture. Employees across various teams have expressed concerns about rising tension, which has led to a noticeable decline in overall morale and collaboration within the organisation. The CEO has observed this shift and is under pressure to intervene and find a resolution before it further affects productivity and staff retention.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 4
         },
         {
             "question_id": "67",
-            "question_text": "The \"Digital Transformation\" Deadlock\n\nGlobal Logistics Inc. is in the midst of a significant digital transformation, shifting to an AI-driven routing system to optimise delivery efficiency and reduce operational costs. The Operations Team, whose performance is evaluated on speed and cost-effectiveness, is eager to implement the new software immediately to meet demanding quarterly targets and boost profitability. They believe that advanced routing algorithms will significantly streamline operations and enhance customer satisfaction by reducing delivery times.\n\nOn the other hand, the IT Security Team, which prioritises risk mitigation and system integrity, is apprehensive about the launch. They have identified several minor vulnerabilities within the software that could potentially expose the company to security threats. Addressing these issues would require months of thorough assessment and patching to ensure that the system can be deployed without jeopardising sensitive company and client data.\n\nThe situation has deteriorated to the point that communication between the two department heads has completely broken down. This discord has not only stymied progress on the project but has also started to impact the broader company culture. Employees across various teams have expressed concerns about rising tension, which has led to a noticeable decline in overall morale and collaboration within the organisation. The CEO has observed this shift and is under pressure to intervene and find a resolution before it further affects productivity and staff retention.\n\nThe conflict over the \"launch date\" vs. \"security patches\" is primarily categorised as:",
+            "question_text": "The conflict over the \"launch date\" vs. \"security patches\" is primarily categorised as:",
             "question_type": "MCQ",
             "options": {
                 "A": "Relationship Conflict.",
@@ -890,11 +1039,12 @@
             },
             "correct_option_label": "B",
             "explanation": "The disagreement between the two departments focuses strictly on the work goals and content of their project (whether to prioritize speed/launch or security patching). This content-driven friction is classified as task conflict.",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_8"
         },
         {
             "question_id": "68",
-            "question_text": "[Refer to Question ID 67 for context]\n\nThe fact that Operations is rewarded for speed while IT is rewarded for safety represents which \"Structural Variable\" of conflict?",
+            "question_text": "The fact that Operations is rewarded for speed while IT is rewarded for safety represents which \"Structural Variable\" of conflict?",
             "question_type": "MCQ",
             "options": {
                 "A": "Jurisdictional Ambiguity.",
@@ -904,11 +1054,12 @@
             },
             "correct_option_label": "B",
             "explanation": "Goal incompatibility is a structural variable of organizational conflict. It occurs when two units are given distinct performance standards and incentive structures that push them in opposite directions (e.g., speed of release vs. complete safety).",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_8"
         },
         {
             "question_id": "69",
-            "question_text": "[Refer to Question ID 67 for context]\n\nThe department heads' refusal to speak to each other signifies that the conflict has moved into which stage?",
+            "question_text": "The department heads' refusal to speak to each other signifies that the conflict has moved into which stage?",
             "question_type": "MCQ",
             "options": {
                 "A": "Cognition and Personalisation.",
@@ -918,11 +1069,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Refusing to speak with each other is an active, visible action. This means the conflict has progressed past internal cognition or intentions into Stage IV: Behaviour, where frustration is expressed through overt conduct.",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_8"
         },
         {
             "question_id": "70",
-            "question_text": "[Refer to Question ID 67 for context]\n\nIf the CEO forces the teams to find a solution that satisfies both the speed requirements and the security protocols without compromise, she is encouraging:",
+            "question_text": "If the CEO forces the teams to find a solution that satisfies both the speed requirements and the security protocols without compromise, she is encouraging:",
             "question_type": "MCQ",
             "options": {
                 "A": "Compromising.",
@@ -932,11 +1084,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Collaborating is a win-win conflict resolution style where both parties work to find an integration that fully meets the essential goals of both sides (operational speed AND security safety) without requiring either to compromise on key concerns.",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_8"
         },
         {
             "question_id": "71",
-            "question_text": "[Refer to Question ID 67 for context]\n\nResearch suggests that the \"Task Conflict\" in this case would only be functional (beneficial) if:",
+            "question_text": "Research suggests that the \"Task Conflict\" in this case would only be functional (beneficial) if:",
             "question_type": "MCQ",
             "options": {
                 "A": "The levels of Relationship Conflict remain very low.",
@@ -946,7 +1099,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Task conflict is beneficial because it brings diverse ideas and prevents groupthink. However, research proves that task conflict only remains functional if relationship conflict (personal clashes and emotional animosity) is kept at very low levels.",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_8"
         }
     ]
 }

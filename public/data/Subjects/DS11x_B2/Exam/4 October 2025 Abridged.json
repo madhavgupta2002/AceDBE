@@ -7,9 +7,24 @@
   },
   "questions": [
     {
+      "question_id": "Passage_1",
+      "question_text": "The daily sales in a local bakery over a 10-day period are recorded as 32, 41, 29, 35, 32, 44, 26, 26, 35, 50, respectively.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 1
+    },
+    {
       "question_id": "1",
       "module": 1,
-      "question_text": "The daily sales in a local bakery over a 10-day period are recorded as 32, 41, 29, 35, 32, 44, 26, 26, 35, 50, respectively. The third quartile of daily sales is given by:",
+      "question_text": "The third quartile of daily sales is given by:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -20,12 +35,13 @@
         "D": "43.25"
       },
       "correct_option_label": "A",
-      "explanation": "### **Concept and Formula**\nThe third quartile ($Q_3$) is the value below which 75% of the data lies. The position is:\n$$ \\text{Position of } Q_3 = 0.75(n+1) $$\n\n### **Step-by-Step Solution**\n1. **Sort the Data:** 26, 26, 29, 32, 32, 35, 35, 41, 44, 50\n2. **Identify $n$:** $n = 10$\n3. **Calculate the Position:**\n   - $\\text{Position} = 0.75(10 + 1) = 8.25$\n4. **Interpolate the Value:**\n   - The position 8.25 lies between the 8th and 9th terms.\n   - 8th value = 41, 9th value = 44\n   - $Q_3 = 41 + 0.25 \\times (44 - 41) = 41.75$\n\n### **Result**\nThe third quartile for daily sales is **41.75**."
+      "explanation": "### **Concept and Formula**\nThe third quartile ($Q_3$) is the value below which 75% of the data lies. The position is:\n$$ \\text{Position of } Q_3 = 0.75(n+1) $$\n\n### **Step-by-Step Solution**\n1. **Sort the Data:** 26, 26, 29, 32, 32, 35, 35, 41, 44, 50\n2. **Identify $n$:** $n = 10$\n3. **Calculate the Position:**\n   - $\\text{Position} = 0.75(10 + 1) = 8.25$\n4. **Interpolate the Value:**\n   - The position 8.25 lies between the 8th and 9th terms.\n   - 8th value = 41, 9th value = 44\n   - $Q_3 = 41 + 0.25 \\times (44 - 41) = 41.75$\n\n### **Result**\nThe third quartile for daily sales is **41.75**.",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "2",
       "module": 1,
-      "question_text": "The daily sales in a local bakery over a 10-day period are recorded as 32, 41, 29, 35, 32, 44, 26, 26, 35, 50, respectively. The median of daily sales is given by:",
+      "question_text": "The median of daily sales is given by:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -36,7 +52,8 @@
         "D": "33.5"
       },
       "correct_option_label": "D",
-      "explanation": "### **Concept and Formula**\nThe median is the middle value of a sorted dataset. For an even number of observations ($n$), it is the average of the two middle terms:\n$$ \\text{Median} = \\frac{x_{n/2} + x_{(n/2)+1}}{2} $$\n\n### **Step-by-Step Solution**\n1. **Sort the Data:** 26, 26, 29, 32, 32, 35, 35, 41, 44, 50\n2. **Identify $n$:** $n = 10$ (even)\n3. **Find Middle Positions:**\n   - 5th position\n   - 6th position\n4. **Identify Middle Values:**\n   - 5th value = 32\n   - 6th value = 35\n5. **Calculate the Average:**\n   - $\\text{Median} = (32 + 35) / 2 = 33.5$\n\n### **Result**\nThe median of daily sales is **33.5**."
+      "explanation": "### **Concept and Formula**\nThe median is the middle value of a sorted dataset. For an even number of observations ($n$), it is the average of the two middle terms:\n$$ \\text{Median} = \\frac{x_{n/2} + x_{(n/2)+1}}{2} $$\n\n### **Step-by-Step Solution**\n1. **Sort the Data:** 26, 26, 29, 32, 32, 35, 35, 41, 44, 50\n2. **Identify $n$:** $n = 10$ (even)\n3. **Find Middle Positions:**\n   - 5th position\n   - 6th position\n4. **Identify Middle Values:**\n   - 5th value = 32\n   - 6th value = 35\n5. **Calculate the Average:**\n   - $\\text{Median} = (32 + 35) / 2 = 33.5$\n\n### **Result**\nThe median of daily sales is **33.5**.",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "3",
@@ -167,9 +184,24 @@
       "explanation": "### **Concept and Formula**\nThe distance zwischen events in a Poisson process follows an Exponential distribution:\n$$ P(X < x) = 1 - e^{-\\lambda x} $$\n\n### **Step-by-Step Solution**\n1. **Calculate the Rate ($\\lambda$):**\n   - Rate = 42 fractures per 10 m = 0.042 per cm.\n2. **Identify the Range:**\n   - We want gap less than 10 cm.\n3. **Apply the Formula:**\n   - $P(X < 10) = 1 - e^{-0.042 \\times 10} = 1 - e^{-0.42}$\n   - $P \\approx 1 - 0.657 = 0.343$\n\n### **Result**\nThe probability is approximately **0.343**, which is **Between 0.25 and 0.50**."
     },
     {
+      "question_id": "Passage_2",
+      "question_text": "The average length of stay in the ICU at hospital for surgery is 2.5 days. The cost of over-the-counter medications for this treatment is Normally distributed with a mean of 15,000 and a standard deviation of 3,000.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 4
+    },
+    {
       "question_id": "11",
       "module": 4,
-      "question_text": "The average length of stay in the ICU at hospital for surgery is 2.5 days. The cost of over-the-counter medications for this treatment is Normally distributed with a mean of 15,000 and a standard deviation of 3,000. The probability that a patient will spend more than 2 days in ICU is:",
+      "question_text": "The probability that a patient will spend more than 2 days in ICU is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -180,12 +212,13 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "B",
-      "explanation": "### **Concept and Formula**\nThe time until an event follows an Exponential distribution. For probability exceeding a value:\n$$ P(X > x) = e^{-\\lambda x} $$\n\n### **Step-by-Step Solution**\n1. **Identify the Rate ($\\lambda$):**\n   - Mean arrival rate $\\lambda$ is usually $1 / \\text{average}$.\n   - Average stay = 2.5 days.\n   - $\\lambda = 1 / 2.5 = 0.4$ stays per day.\n2. **Apply the Formula:**\n   - $P(X > 2) = e^{-0.4 \\times 2} = e^{-0.8}$\n   - $P(X > 2) \\approx 0.4493$\n\n### **Result**\nThe probability is approximately **0.449**, which is **Between 0.25 and 0.50**."
+      "explanation": "### **Concept and Formula**\nThe time until an event follows an Exponential distribution. For probability exceeding a value:\n$$ P(X > x) = e^{-\\lambda x} $$\n\n### **Step-by-Step Solution**\n1. **Identify the Rate ($\\lambda$):**\n   - Mean arrival rate $\\lambda$ is usually $1 / \\text{average}$.\n   - Average stay = 2.5 days.\n   - $\\lambda = 1 / 2.5 = 0.4$ stays per day.\n2. **Apply the Formula:**\n   - $P(X > 2) = e^{-0.4 \\times 2} = e^{-0.8}$\n   - $P(X > 2) \\approx 0.4493$\n\n### **Result**\nThe probability is approximately **0.449**, which is **Between 0.25 and 0.50**.",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "12",
       "module": 4,
-      "question_text": "The average length of stay in the ICU at hospital for surgery is 2.5 days. The cost of over-the-counter medications for this treatment is Normally distributed with a mean of 15,000 and a standard deviation of 3,000. The probability that a patient spends between 7,000 and 14,000 on over-the-counter medications is:",
+      "question_text": "The probability that a patient spends between 7,000 and 14,000 on over-the-counter medications is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -196,7 +229,8 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "B",
-      "explanation": "### **Concept and Formula**\nTo find the probability for a normally distributed variable $X \\sim N(\\mu, \\sigma^2)$, we convert to the standard normal variable $Z \\sim N(0, 1)$:\n$$ Z = \\frac{X - \\mu}{\\sigma} $$\n\n### **Step-by-Step Solution**\n1. **Identify the Parameters:**\n   - Mean $\\mu = 15,000$\n   - Standard Deviation $\\sigma = 3,000$\n2. **Calculate Z-scores for the range [7,000, 14,000]:**\n   - $Z_1 = (7,000 - 15,000) / 3,000 = -8,000 / 3,000 \\approx -2.67$\n   - $Z_2 = (14,000 - 15,000) / 3,000 = -1,000 / 3,000 \\approx -0.33$\n3. **Find Area under the Normal Curve:**\n   - $P(-2.67 < Z < -0.33) = P(Z < -0.33) - P(Z < -2.67)$\n   - Using Z-tables: $P(Z < -0.33) \\approx 0.3707$ and $P(Z < -2.67) \\approx 0.0038$\n4. **Final Calculation:**\n   - $P = 0.3707 - 0.0038 = 0.3669$\n\n### **Result**\nThe probability is approximately **0.367**, which is **Between 0.25 and 0.50**."
+      "explanation": "### **Concept and Formula**\nTo find the probability for a normally distributed variable $X \\sim N(\\mu, \\sigma^2)$, we convert to the standard normal variable $Z \\sim N(0, 1)$:\n$$ Z = \\frac{X - \\mu}{\\sigma} $$\n\n### **Step-by-Step Solution**\n1. **Identify the Parameters:**\n   - Mean $\\mu = 15,000$\n   - Standard Deviation $\\sigma = 3,000$\n2. **Calculate Z-scores for the range [7,000, 14,000]:**\n   - $Z_1 = (7,000 - 15,000) / 3,000 = -8,000 / 3,000 \\approx -2.67$\n   - $Z_2 = (14,000 - 15,000) / 3,000 = -1,000 / 3,000 \\approx -0.33$\n3. **Find Area under the Normal Curve:**\n   - $P(-2.67 < Z < -0.33) = P(Z < -0.33) - P(Z < -2.67)$\n   - Using Z-tables: $P(Z < -0.33) \\approx 0.3707$ and $P(Z < -2.67) \\approx 0.0038$\n4. **Final Calculation:**\n   - $P = 0.3707 - 0.0038 = 0.3669$\n\n### **Result**\nThe probability is approximately **0.367**, which is **Between 0.25 and 0.50**.",
+      "passage_id": "Passage_2"
     }
   ]
 }
