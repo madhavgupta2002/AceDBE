@@ -19,7 +19,7 @@ import {
   MonitorPlay,
 } from 'lucide-react';
 import { TermPyqGroup, ExamPaperInfo, SubjectPyqInfo } from '@/lib/pyqService';
-import { convertToInternalFormat } from '@/lib/questionLoader';
+import { convertFileToQuestions } from '@/lib/questionLoader';
 import { printExamPaper } from '@/lib/printExam';
 import CbtExam from './CbtExam';
 import { stashCbtReview, toReviewData } from '@/lib/cbtReview';
@@ -117,10 +117,7 @@ export default function PyqPage() {
       }
 
       const fileData = await res.json();
-      const rawQuestions = fileData.questions || [];
-      const questions = rawQuestions.map((q: any) =>
-        convertToInternalFormat(q, paper.bankName, subject.code, 'Exam')
-      );
+      const questions = convertFileToQuestions(fileData, paper.bankName, subject.code, 'Exam');
 
       printExamPaper({
         title: 'IIM Bangalore BBA-DBE Examination',

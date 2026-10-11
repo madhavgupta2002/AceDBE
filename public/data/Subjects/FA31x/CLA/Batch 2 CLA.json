@@ -119,8 +119,23 @@
             "module": 1
         },
         {
+            "question_id": "Passage_1",
+            "question_text": "Rahul and Rohit have acquired an automobile service station for a price Rs. 1300 lakhs. The average monthly operating cost is Rs. 50 lakhs which includes salary for the workers, rent for the building, and other expenses. The owners expect a minimum return of 1% per month for their investment. On an average 100 vehicles are serviced per day including Saturday and Sunday. However, the vehicles are of different types and cost. Total servicing hours per month is 9000 hours. The firm has an option of using either \"Units\" or \"Servicing Hour\" rate as a basis of allocating the total cost to vehicles. Suppose if the firm services two different types of vehicles – one high end vehicle and another economy vehicle and it spends 6 hours and 2 hours to service high end vehicle and economy vehicle respectively,",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 1
+        },
+        {
             "question_id": "9",
-            "question_text": "Rahul and Rohit have acquired an automobile service station for a price Rs. 1300 lakhs. The average monthly operating cost is Rs. 50 lakhs which includes salary for the workers, rent for the building, and other expenses. The owners expect a minimum return of 1% per month for their investment. On an average 100 vehicles are serviced per day including Saturday and Sunday. However, the vehicles are of different types and cost. Total servicing hours per month is 9000 hours. The firm has an option of using either \"Units\" or \"Servicing Hour\" rate as a basis of allocating the total cost to vehicles. Suppose if the firm services two different types of vehicles – one high end vehicle and another economy vehicle and it spends 6 hours and 2 hours to service high end vehicle and economy vehicle respectively, use the above data to calculate how much should be charged to the high end vehicle, if \"units\" is used as a basis to allocate the total cost?",
+            "question_text": "use the above data to calculate how much should be charged to the high end vehicle, if \"units\" is used as a basis to allocate the total cost?",
             "question_type": "MCQ",
             "options": {
                 "A": "Rs. 2100",
@@ -130,11 +145,12 @@
             },
             "correct_option_label": "A",
             "explanation": "Step 1: Calculate Total Required Recovery Cost:\n\n$$Total\\ Cost = Monthly\\ Operating\\ Cost\\ (50\\ L) + Minimum\\ Return\\ (1\\%\\ of\\ 1300\\ L) = 50 + 13 = 63\\ Lakhs$$\n\nStep 2: Calculate Units (Vehicles per month assuming 30 days):\n\n$$100\\ vehicles/day \\times 30\\ days = 3000\\ units$$\n\nStep 3: Calculate Charge per Unit:\n\n$$Charge = \\frac{63,00,000}{3000} = Rs. 2100$$\n\nSince the allocation basis is \"Units\", every vehicle is charged the flat rate of Rs. 2100, regardless of the hours spent.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "10",
-            "question_text": "Rahul and Rohit have acquired an automobile service station for a price Rs. 1300 lakhs. The average monthly operating cost is Rs. 50 lakhs which includes salary for the workers, rent for the building, and other expenses. The owners expect a minimum return of 1% per month for their investment. On an average 100 vehicles are serviced per day including Saturday and Sunday. However, the vehicles are of different types and cost. Total servicing hours per month is 9000 hours. The firm has an option of using either \"Units\" or \"Servicing Hour\" rate as a basis of allocating the total cost to vehicles. Suppose if the firm services two different types of vehicles – one high end vehicle and another economy vehicle and it spends 6 hours and 2 hours to service high end vehicle and economy vehicle respectively, use the above data to calculate how much should be charged to the Economy vehicle, if \"units\" is used as a basis to allocate the total cost?",
+            "question_text": "use the above data to calculate how much should be charged to the Economy vehicle, if \"units\" is used as a basis to allocate the total cost?",
             "question_type": "MCQ",
             "options": {
                 "A": "Rs. 2200",
@@ -144,7 +160,8 @@
             },
             "correct_option_label": "B",
             "explanation": "As established in the previous calculation, the flat charge per unit is Rs. 2100. Using \"units\" as an allocation base disregards the difference in service times. Therefore, the economy vehicle is also charged Rs. 2100.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "11",

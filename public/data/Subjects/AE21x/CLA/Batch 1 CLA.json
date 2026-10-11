@@ -279,8 +279,23 @@
             "module": 2
         },
         {
+            "question_id": "Passage_1",
+            "question_text": "Read the following business email carefully to answer the question given below:\n\nDear Tushar,\nI hope you're doing well. I would like to schedule a meeting to discuss the marketing strategy for the first quarter of this year. I believe it’s important to review our current plans, analyse potential improvements, and align our goals for the upcoming months.\nLet me know your availability for a meeting this week or next to discuss the above.\nLooking forward to your response.\nWith Best Regards,\nSindhu",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 2
+        },
+        {
             "question_id": "M2-Q7",
-            "question_text": "Read the following business email carefully to answer the question given below:\n\nDear Tushar,\nI hope you're doing well. I would like to schedule a meeting to discuss the marketing strategy for the first quarter of this year. I believe it’s important to review our current plans, analyse potential improvements, and align our goals for the upcoming months.\nLet me know your availability for a meeting this week or next to discuss the above.\nLooking forward to your response.\nWith Best Regards,\nSindhu\n\nNow, identify the most appropriate subject line from the options.",
+            "question_text": "Now, identify the most appropriate subject line from the options.",
             "question_type": "MCQ",
             "options": {
                 "A": "Request for a Meeting to Discuss Q1 Marketing Strategy",
@@ -290,15 +305,17 @@
             },
             "correct_option_label": "A",
             "explanation": "The subject line should use a direct writing plan that clearly and succinctly summarizes the specific purpose of the email to compel the reader to open it.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "M2-Q8",
-            "question_text": "Read the business email from the previous question and identify the writing approach adopted by Sindhu. While doing so, do not enter blank spaces or special characters. Exact word will get full mark, and near match words will get no marks.\n\nYour task is to respond by filling in the blank (one word) to complete the sentence that follows.\n\nThe approach being deployed here is the ______________style of writing.",
+            "question_text": "identify the writing approach adopted by Sindhu. While doing so, do not enter blank spaces or special characters. Exact word will get full mark, and near match words will get no marks.\n\nYour task is to respond by filling in the blank (one word) to complete the sentence that follows.\n\nThe approach being deployed here is the ______________style of writing.",
             "question_type": "SUBJECTIVE",
             "correct_option_label": "N/A",
             "explanation": "direct. The email identifies the main point (scheduling a meeting) in the first few lines, which is characteristic of the direct approach.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "M2-Q9",

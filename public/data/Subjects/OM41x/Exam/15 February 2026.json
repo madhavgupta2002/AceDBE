@@ -5,33 +5,48 @@
         "batch": "",
         "attempt": "",
         "exam_pattern": {
-          "exam_name": "IIMB BBA DBE Batch 1 Term 4",
-          "duration_min": 60,
-          "total_marks": 120,
-          "negative_marking": true,
-          "calculator": "scientific",
-          "timing_mode": "global",
-          "reference_materials": [],
-          "instructions": [
-            "Negative marking: 20% of the marks assigned to a question is deducted for a wrong answer.",
-            "Rough sheets are provided at the centre and must be returned immediately after the exam."
-          ],
-          "sections": [
-            {
-              "name": "Sections 1-5",
-              "question_type": "MCQ",
-              "num_questions": 22,
-              "question_ids": ["2", "3", "4", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "20", "21", "22", "23", "24", "25"]
-            }
-          ],
-          "negative_marks_fraction": 0.2,
-          "total_questions": 22
+            "exam_name": "IIMB BBA DBE Batch 1 Term 4",
+            "duration_min": 60,
+            "total_marks": 120,
+            "negative_marking": true,
+            "calculator": "scientific",
+            "timing_mode": "global",
+            "reference_materials": [],
+            "instructions": [
+                "Negative marking: 20% of the marks assigned to a question is deducted for a wrong answer.",
+                "Rough sheets are provided at the centre and must be returned immediately after the exam."
+            ],
+            "sections": [
+                {
+                    "name": "Sections 1-5",
+                    "question_type": "MCQ",
+                    "num_questions": 22,
+                    "question_ids": ["2", "3", "4", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "20", "21", "22", "23", "24", "25"]
+                }
+            ],
+            "negative_marks_fraction": 0.2,
+            "total_questions": 22
         }
     },
     "questions": [
         {
+            "question_id": "Passage_1",
+            "question_text": "[Material Handling Manufacturing Firm Case] A manufacturing firm is engaged in the production of material handling equipment. Each product is engineered in-house and consists of nearly 750 components, which are assembled through a multi-stage manufacturing process. The final stage involves assembly and testing, where all major sub-assemblies are integrated, and the product is tested for quality and performance before being dispatched.\n\nExcept for a small number of off-the-shelf components, most parts are manufactured internally. The organization operates five major manufacturing facilities, collectively housing 700 machine tools, 50 welding units, and 12 presses used to produce various components. Machines are grouped by function, with each group manufacturing a specific set of components. Welding, pressing, and final assembly operations are common across all product variants.\n\nThe firm manufactures approximately 70 different models, with several sub-assembly-level variations within each model. For example, certain components such as cover plates may be made from aluminium, steel, or polymer depending on the intended application. In addition, customers may request optional add-on features, which are incorporated during assembly based on individual orders. Given the wide range of components and materials required, the firm maintains a large raw material store to stock and issue materials as needed.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 1
+        },
+        {
             "question_id": "2",
-            "question_text": "[Material Handling Manufacturing Firm Case] A manufacturing firm is engaged in the production of material handling equipment. Each product is engineered in-house and consists of nearly 750 components, which are assembled through a multi-stage manufacturing process. The final stage involves assembly and testing, where all major sub-assemblies are integrated, and the product is tested for quality and performance before being dispatched.\n\nExcept for a small number of off-the-shelf components, most parts are manufactured internally. The organization operates five major manufacturing facilities, collectively housing 700 machine tools, 50 welding units, and 12 presses used to produce various components. Machines are grouped by function, with each group manufacturing a specific set of components. Welding, pressing, and final assembly operations are common across all product variants.\n\nThe firm manufactures approximately 70 different models, with several sub-assembly-level variations within each model. For example, certain components such as cover plates may be made from aluminium, steel, or polymer depending on the intended application. In addition, customers may request optional add-on features, which are incorporated during assembly based on individual orders. Given the wide range of components and materials required, the firm maintains a large raw material store to stock and issue materials as needed.\n\nBased on the description of the material handling equipment manufacturer, which operations system best describes the firm?",
+            "question_text": "Based on the description of the material handling equipment manufacturer, which operations system best describes the firm?",
             "question_type": "MCQ",
             "options": {
                 "A": "Intermittent flow system",
@@ -41,11 +56,12 @@
             },
             "correct_option_label": "A",
             "explanation": "An intermittent flow system is characterized by the production of a wide variety of products in lower volumes. The firm uses general-purpose machines grouped by function to handle diverse, customized orders.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "3",
-            "question_text": "Refer to the case study in Question ID 2. Where is the maximum investment in inventory most likely to be found in this organization?",
+            "question_text": "Where is the maximum investment in inventory most likely to be found in this organization?",
             "question_type": "MCQ",
             "options": {
                 "A": "Finished goods and raw materials",
@@ -55,11 +71,12 @@
             },
             "correct_option_label": "D",
             "explanation": "Due to a high variety of customized models, holding high finished goods is risky. Thus, most inventory investment lies in raw materials and work-in-progress moving through functional stages.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "4",
-            "question_text": "Refer to the case study in Question ID 2. Which combination of actions would most effectively improve the firm’s competitiveness in terms of quality, delivery, flexibility, and cost?",
+            "question_text": "Which combination of actions would most effectively improve the firm’s competitiveness in terms of quality, delivery, flexibility, and cost?",
             "question_type": "MCQ",
             "options": {
                 "A": "Discontinue several products and reduce the number of models",
@@ -69,11 +86,27 @@
             },
             "correct_option_label": "D",
             "explanation": "Investing in supplier development improves input quality, while lead-time reduction programs enhance delivery speed and flexibility without requiring the firm to sacrifice product variety.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
+        },
+        {
+            "question_id": "Passage_2",
+            "question_text": "[Project Network Analysis] Please consider the below data on project network problem to answer the next set of questions.\n\n| Activity | Predecessor | Duration (weeks) |\n|---|---|---|\n| A | | 2 |\n| B | A | 3 |\n| C | A | 6 |\n| D | A | 4 |\n| E | B | 3 |\n| F | B | 8 |\n| G | C, E | 6 |\n| H | F, G | 3 |\n| I | D | 4 |\n| J | H, I | 2 |",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 2
         },
         {
             "question_id": "6",
-            "question_text": "[Project Network Analysis] Please consider the below data on project network problem to answer the next set of questions.\n\n| Activity | Predecessor | Duration (weeks) |\n|---|---|---|\n| A | | 2 |\n| B | A | 3 |\n| C | A | 6 |\n| D | A | 4 |\n| E | B | 3 |\n| F | B | 8 |\n| G | C, E | 6 |\n| H | F, G | 3 |\n| I | D | 4 |\n| J | H, I | 2 |\n\nIn a project network, if multiple critical paths exist, what is the primary implication for project management?",
+            "question_text": "In a project network, if multiple critical paths exist, what is the primary implication for project management?",
             "question_type": "MCQ",
             "options": {
                 "A": "The project can be completed earlier than planned.",
@@ -83,11 +116,12 @@
             },
             "correct_option_label": "B",
             "explanation": "Multiple critical paths mean that several parallel sequences of activities have zero slack. A delay in any of these paths will delay the overall project, necessitating tight resource coordination.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "7",
-            "question_text": "Refer to the project network data in Question ID 6. Activity F has a slack of 1 week. Which statement best explains this?",
+            "question_text": "Activity F has a slack of 1 week. Which statement best explains this?",
             "question_type": "MCQ",
             "options": {
                 "A": "F can be delayed indefinitely.",
@@ -97,11 +131,12 @@
             },
             "correct_option_label": "D",
             "explanation": "Slack represents the amount of buffer time an activity has. A slack of 1 week for activity F indicates it can be delayed by up to 1 week without pushing back the final project completion date.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "8",
-            "question_text": "Refer to the project network data in Question ID 6. Which of the following is a correct interpretation of Earliest Start (ES) and Latest Finish (LF)?",
+            "question_text": "Which of the following is a correct interpretation of Earliest Start (ES) and Latest Finish (LF)?",
             "question_type": "MCQ",
             "options": {
                 "A": "ES is the earliest an activity can start without delaying predecessors, and LF is the latest it can finish without delaying successors",
@@ -110,11 +145,12 @@
             },
             "correct_option_label": "A",
             "explanation": "Earliest Start (ES) is the earliest possible time an activity can begin immediately after its predecessors finish. Latest Finish (LF) is the latest time an activity can complete without delaying any subsequent activities.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "9",
-            "question_text": "Refer to the project network data in Question ID 6. In the network, which set of activities is most likely to require close monitoring to avoid cumulative delays?",
+            "question_text": "In the network, which set of activities is most likely to require close monitoring to avoid cumulative delays?",
             "question_type": "MCQ",
             "options": {
                 "A": "A → C → G → H → J",
@@ -124,11 +160,12 @@
             },
             "correct_option_label": "D",
             "explanation": "Calculating path durations: Path 1 (A-B-E-G-H-J) = 2+3+3+6+3+2 = 19 weeks. Path 2 (A-C-G-H-J) = 2+6+6+3+2 = 19 weeks. Since both are parallel critical paths, any delay on either path delays the whole project.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "10",
-            "question_text": "Refer to the project network data in Question ID 6. If activity C is delayed by 2 weeks, how will this affect the overall project duration?",
+            "question_text": "If activity C is delayed by 2 weeks, how will this affect the overall project duration?",
             "question_type": "MCQ",
             "options": {
                 "A": "It will increase by 2 weeks",
@@ -138,11 +175,12 @@
             },
             "correct_option_label": "A",
             "explanation": "Activity C lies on the critical path A → C → G → H → J (19 weeks). Since it has zero slack, any delay in C will directly increase the overall project duration by that exact amount (2 weeks).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "11",
-            "question_text": "Refer to the project network data in Question ID 6. Activity J depends on both H and I. If activity I is delayed by 3 weeks but has slack of 7 weeks, what is the impact?",
+            "question_text": "Activity J depends on both H and I. If activity I is delayed by 3 weeks but has slack of 7 weeks, what is the impact?",
             "question_type": "MCQ",
             "options": {
                 "A": "There will be no impact as long as the delay is within the slack",
@@ -152,7 +190,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Because the delay of 3 weeks is less than the activity's total slack of 7 weeks, it will not exceed the buffer and will have no impact on the overall project completion date.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "12",
@@ -253,8 +292,23 @@
             "module": 3
         },
         {
+            "question_id": "Passage_3",
+            "question_text": "[Inventory Management Case] A restaurant consumes rice at a constant rate of 100 kg per day throughout the year. The purchase price of rice from the regular supplier is ₹10 per kg. To store rice and maintain its quality, the restaurant incurs an annual holding cost of ₹2 per kg, which includes storage, handling, and spoilage-related expenses.\n\nThe restaurant currently procures rice from a wholesale supplier, referred to as Supplier S1. Placing an order with this supplier requires only a phone call and does not involve any cost. However, once the rice is ready, the restaurant must send a vehicle to collect the order. The cost of each vehicle trip is ₹100, travel time is negligible, and the lead time between placing the order and receiving the rice from Supplier S1 is 5 days.\n\nA second supplier, referred to as Supplier S2, has recently opened a store near the restaurant. To place an order with Supplier S2, a staff member must visit the store, at a cost of ₹81 per order. Supplier S2 delivers the rice directly to the restaurant at no additional cost. The lead time for delivery from Supplier S2 is 8 days, which is longer than that of Supplier S1. However, Supplier S2 offers a lower unit purchase price of ₹9.50 per kg, regardless of the order quantity. Assume that demand is constant, shortages are not allowed, and a year consists of 365 days.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 4
+        },
+        {
             "question_id": "20",
-            "question_text": "[Inventory Management Case] A restaurant consumes rice at a constant rate of 100 kg per day throughout the year. The purchase price of rice from the regular supplier is ₹10 per kg. To store rice and maintain its quality, the restaurant incurs an annual holding cost of ₹2 per kg, which includes storage, handling, and spoilage-related expenses.\n\nThe restaurant currently procures rice from a wholesale supplier, referred to as Supplier S1. Placing an order with this supplier requires only a phone call and does not involve any cost. However, once the rice is ready, the restaurant must send a vehicle to collect the order. The cost of each vehicle trip is ₹100, travel time is negligible, and the lead time between placing the order and receiving the rice from Supplier S1 is 5 days.\n\nA second supplier, referred to as Supplier S2, has recently opened a store near the restaurant. To place an order with Supplier S2, a staff member must visit the store, at a cost of ₹81 per order. Supplier S2 delivers the rice directly to the restaurant at no additional cost. The lead time for delivery from Supplier S2 is 8 days, which is longer than that of Supplier S1. However, Supplier S2 offers a lower unit purchase price of ₹9.50 per kg, regardless of the order quantity. Assume that demand is constant, shortages are not allowed, and a year consists of 365 days.\n\nCompared to Supplier S1, Supplier S2 is most appropriately described as:",
+            "question_text": "Compared to Supplier S1, Supplier S2 is most appropriately described as:",
             "question_type": "MCQ",
             "options": {
                 "A": "A higher-cost, shorter lead-time supplier",
@@ -264,11 +318,12 @@
             },
             "correct_option_label": "D",
             "explanation": "Supplier S2 has a lower purchase cost (₹9.50/kg vs ₹10/kg) but a longer lead time (8 days vs 5 days) compared to Supplier S1.",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "21",
-            "question_text": "Refer to the case study in Question ID 20. What is the restaurant’s annual demand for rice?",
+            "question_text": "What is the restaurant’s annual demand for rice?",
             "question_type": "MCQ",
             "options": {
                 "A": "30,000 kg",
@@ -278,11 +333,12 @@
             },
             "correct_option_label": "D",
             "explanation": "Annual demand is calculated by multiplying the daily consumption rate by the number of days in a year:\n$$\\text{Annual Demand} = 100\\text{ kg/day} \\times 365\\text{ days/year} = 36,500\\text{ kg/year}.$$",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "22",
-            "question_text": "Refer to the case study in Question ID 20. If the restaurant orders rice from Supplier S1, what order quantity approximately minimizes the total annual inventory-related cost?",
+            "question_text": "If the restaurant orders rice from Supplier S1, what order quantity approximately minimizes the total annual inventory-related cost?",
             "question_type": "MCQ",
             "options": {
                 "A": "1,910 kg",
@@ -292,11 +348,12 @@
             },
             "correct_option_label": "A",
             "explanation": "Using the Economic Order Quantity (EOQ) formula:\n$$Q^* = \\sqrt{\\frac{2DS}{H}} = \\sqrt{\\frac{2 \\times 36,500 \\times 100}{2}} = \\sqrt{3,650,000} \\approx 1,910.49\\text{ kg}.$$",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "23",
-            "question_text": "Refer to the case study in Question ID 20. If the restaurant orders rice from Supplier S2, what order quantity approximately minimizes the total annual inventory-related cost?",
+            "question_text": "If the restaurant orders rice from Supplier S2, what order quantity approximately minimizes the total annual inventory-related cost?",
             "question_type": "MCQ",
             "options": {
                 "A": "2,120 kg",
@@ -306,11 +363,12 @@
             },
             "correct_option_label": "D",
             "explanation": "Using the Economic Order Quantity (EOQ) formula with S2's ordering cost:\n$$Q^* = \\sqrt{\\frac{2DS}{H}} = \\sqrt{\\frac{2 \\times 36,500 \\times 81}{2}} = \\sqrt{2,956,500} \\approx 1,719.45\\text{ kg}.$$",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "24",
-            "question_text": "Refer to the case study in Question ID 20. For which supplier will the reorder point be higher, and why?",
+            "question_text": "For which supplier will the reorder point be higher, and why?",
             "question_type": "MCQ",
             "options": {
                 "A": "Supplier S2, because longer lead time requires more inventory to cover demand",
@@ -320,7 +378,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Reorder point is calculated as $\\text{Daily Demand} \\times \\text{Lead Time}$. Since daily demand is identical (100 kg/day), the supplier with the longer lead time (S2 with 8 days vs S1 with 5 days) will have a higher reorder point (800 kg vs 500 kg).",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "25",

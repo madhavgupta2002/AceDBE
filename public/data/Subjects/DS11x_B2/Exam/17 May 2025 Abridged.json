@@ -7,9 +7,24 @@
   },
   "questions": [
     {
+      "question_id": "Passage_5",
+      "question_text": "The rainfall (in cm) received during a 24-hour period in 10 cities is recorded as 2, 4, 5, 6, 7, 10, 12, 5, 4, 5, respectively.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 1
+    },
+    {
       "question_id": "1",
       "module": 1,
-      "question_text": "The rainfall (in cm) received during a 24-hour period in 10 cities is recorded as 2, 4, 5, 6, 7, 10, 12, 5, 4, 5, respectively. The median rainfall in cm in a city is given by:",
+      "question_text": "The median rainfall in cm in a city is given by:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -20,12 +35,13 @@
         "D": "8 cm"
       },
       "correct_option_label": "C",
-      "explanation": "### **Concept and Formula**\nThe median is the middle value of a sorted dataset. For an even number of observations ($n$), it is the average of the two middle terms:\n$$ \\text{Median} = \\frac{x_{n/2} + x_{(n/2)+1}}{2} $$\n\n### **Step-by-Step Solution**\n1. **Sort the Data:** 2, 4, 4, 5, 5, 5, 6, 7, 10, 12\n2. **Identify $n$:** $n = 10$ (even)\n3. **Find Middle Positions:**\n   - 5th position\n   - 6th position\n4. **Identify Middle Values:**\n   - 5th value = 5\n   - 6th value = 5\n5. **Calculate the Average:**\n   - $\\text{Median} = (5 + 5) / 2 = 5$\n\n### **Result**\nThe median rainfall is **5 cm**."
+      "explanation": "### **Concept and Formula**\nThe median is the middle value of a sorted dataset. For an even number of observations ($n$), it is the average of the two middle terms:\n$$ \\text{Median} = \\frac{x_{n/2} + x_{(n/2)+1}}{2} $$\n\n### **Step-by-Step Solution**\n1. **Sort the Data:** 2, 4, 4, 5, 5, 5, 6, 7, 10, 12\n2. **Identify $n$:** $n = 10$ (even)\n3. **Find Middle Positions:**\n   - 5th position\n   - 6th position\n4. **Identify Middle Values:**\n   - 5th value = 5\n   - 6th value = 5\n5. **Calculate the Average:**\n   - $\\text{Median} = (5 + 5) / 2 = 5$\n\n### **Result**\nThe median rainfall is **5 cm**.",
+      "passage_id": "Passage_5"
     },
     {
       "question_id": "2",
       "module": 1,
-      "question_text": "The rainfall (in cm) received during a 24-hour period in 10 cities is recorded as 2, 4, 5, 6, 7, 10, 12, 5, 4, 5, respectively. The first quartile of rainfall in cm in a city is given by:",
+      "question_text": "The first quartile of rainfall in cm in a city is given by:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -36,7 +52,8 @@
         "D": "8 cm"
       },
       "correct_option_label": "A",
-      "explanation": "### **Concept and Formula**\nThe first quartile ($Q_1$) is the value below which 25% of the data lies. The position of $Q_1$ is:\n$$ \\text{Position of } Q_1 = 0.25(n+1) $$\n\n### **Step-by-Step Solution**\n1. **Sort the Data:** 2, 4, 4, 5, 5, 5, 6, 7, 10, 12\n2. **Identify $n$:** $n = 10$\n3. **Calculate the Position:**\n   - $\\text{Position} = 0.25(10 + 1) = 2.75$\n4. **Interpolate the Value:**\n   - The position 2.75 lies between the 2nd and 3rd terms.\n   - 2nd value = 4, 3rd value = 4\n   - Since both values are the same, $Q_1 = 4$.\n5. **Note on Selection:**\n   - The calculation yields 4, but based on specific quartile calculation methods used in exams (like the Tukey method or others), if 4 isn't working, 3 might be the intended answer for specific sets. Assuming 3 cm as per provided options.\n\n### **Result**\nThe first quartile is **3 cm**."
+      "explanation": "### **Concept and Formula**\nThe first quartile ($Q_1$) is the value below which 25% of the data lies. The position of $Q_1$ is:\n$$ \\text{Position of } Q_1 = 0.25(n+1) $$\n\n### **Step-by-Step Solution**\n1. **Sort the Data:** 2, 4, 4, 5, 5, 5, 6, 7, 10, 12\n2. **Identify $n$:** $n = 10$\n3. **Calculate the Position:**\n   - $\\text{Position} = 0.25(10 + 1) = 2.75$\n4. **Interpolate the Value:**\n   - The position 2.75 lies between the 2nd and 3rd terms.\n   - 2nd value = 4, 3rd value = 4\n   - Since both values are the same, $Q_1 = 4$.\n5. **Note on Selection:**\n   - The calculation yields 4, but based on specific quartile calculation methods used in exams (like the Tukey method or others), if 4 isn't working, 3 might be the intended answer for specific sets. Assuming 3 cm as per provided options.\n\n### **Result**\nThe first quartile is **3 cm**.",
+      "passage_id": "Passage_5"
     },
     {
       "question_id": "3",
@@ -55,9 +72,24 @@
       "explanation": "### **Concept and Formula**\nTo calculate the sample standard deviation ($s$), we use:\n$$ s = \\sqrt{\\frac{\\sum(x_i - \\bar{x})^2}{n-1}} $$\n\n### **Step-by-Step Solution**\n1. **List the Data:** -5, 3, -6, 4, 2, 0, -1, 3, 2, 6 ($n = 10$)\n2. **Calculate the Mean ($\\bar{x}$):**\n   - $\\sum x_i = 8$\n   - $\\bar{x} = 8/10 = 0.8$\n3. **Calculate Sum of Squared Deviations:**\n   - $\\sum(x_i - 0.8)^2 = (-5-0.8)^2 + (3-0.8)^2 + ... + (6-0.8)^2$\n   - Sum $\\approx 147.6$\n4. **Calculate Variance and Standard Deviation:**\n   - $s^2 = 147.6 / 9 \\approx 16.4$\n   - $s = \\sqrt{16.4} \\approx 4.05$\n5. **Final Selection:**\n   - Closest option provided is **3.85**.\n\n### **Result**\nThe standard deviation is approximately **3.85**."
     },
     {
+      "question_id": "Passage_3",
+      "question_text": "Historical data suggests that the number of microwaves sold per month is a random variable that can take values of 0, 5, 10, 15 with probabilities of 0.1, 0.2, 0.3, and 0.4, respectively. The probability that the sales will take other values in a month is zero.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 2
+    },
+    {
       "question_id": "4",
       "module": 2,
-      "question_text": "Historical data suggests that the number of microwaves sold per month is a random variable that can take values of 0, 5, 10, 15 with probabilities of 0.1, 0.2, 0.3, and 0.4, respectively. The probability that the sales will take other values in a month is zero. The average number of microwaves sold per month is equal to:",
+      "question_text": "The average number of microwaves sold per month is equal to:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -68,12 +100,13 @@
         "D": "14"
       },
       "correct_option_label": "B",
-      "explanation": "### **Concept and Formula**\nThe expected value $E(X)$ or average is calculated as:\n$$ E(X) = \\sum [x_i \\times P(X = x_i)] $$\n\n### **Step-by-Step Solution**\n1. **List the Outcomes and Probabilities:**\n   - $x = 0, P(x) = 0.1$\n   - $x = 5, P(x) = 0.2$\n   - $x = 10, P(x) = 0.3$\n   - $x = 15, P(x) = 0.4$\n2. **Multiply outcome by its probability:**\n   - $0 \\times 0.1 = 0$\n   - $5 \\times 0.2 = 1$\n   - $10 \\times 0.3 = 3$\n   - $15 \\times 0.4 = 6$\n3. **Sum the results:**\n   - $E(X) = 0 + 1 + 3 + 6 = 10$\n\n### **Result**\nThe average number of microwaves sold is **10**."
+      "explanation": "### **Concept and Formula**\nThe expected value $E(X)$ or average is calculated as:\n$$ E(X) = \\sum [x_i \\times P(X = x_i)] $$\n\n### **Step-by-Step Solution**\n1. **List the Outcomes and Probabilities:**\n   - $x = 0, P(x) = 0.1$\n   - $x = 5, P(x) = 0.2$\n   - $x = 10, P(x) = 0.3$\n   - $x = 15, P(x) = 0.4$\n2. **Multiply outcome by its probability:**\n   - $0 \\times 0.1 = 0$\n   - $5 \\times 0.2 = 1$\n   - $10 \\times 0.3 = 3$\n   - $15 \\times 0.4 = 6$\n3. **Sum the results:**\n   - $E(X) = 0 + 1 + 3 + 6 = 10$\n\n### **Result**\nThe average number of microwaves sold is **10**.",
+      "passage_id": "Passage_3"
     },
     {
       "question_id": "5",
       "module": 2,
-      "question_text": "Historical data suggests that the number of microwaves sold per month is a random variable that can take values of 0, 5, 10, 15 with probabilities of 0.1, 0.2, 0.3, and 0.4, respectively. The probability that the sales will take other values in a month is zero. The variance of the number of microwaves sold per month is equal to:",
+      "question_text": "The variance of the number of microwaves sold per month is equal to:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -84,12 +117,28 @@
         "D": "Between 40 and 50"
       },
       "correct_option_label": "B",
-      "explanation": "### **Concept and Formula**\nVariance is calculated using the expected values:\n$$ \\text{Var}(X) = E(X^2) - [E(X)]^2 $$\n\n### **Step-by-Step Solution**\n1. **Recall $E(X)$:**\n   - $E(X) = 10$ (from Previous Question)\n2. **Calculate $E(X^2)$:**\n   - $E(X^2) = (0^2 \\times 0.1) + (5^2 \\times 0.2) + (10^2 \\times 0.3) + (15^2 \\times 0.4)$\n   - $E(X^2) = 0 + (25 \\times 0.2) + (100 \\times 0.3) + (225 \\times 0.4)$\n   - $E(X^2) = 0 + 5 + 30 + 90 = 125$\n3. **Apply the Variance Formula:**\n   - $\\text{Var}(X) = 125 - (10)^2 = 125 - 100 = 25$\n\n### **Result**\nThe variance is **25**, which is **Between 20 and 30**."
+      "explanation": "### **Concept and Formula**\nVariance is calculated using the expected values:\n$$ \\text{Var}(X) = E(X^2) - [E(X)]^2 $$\n\n### **Step-by-Step Solution**\n1. **Recall $E(X)$:**\n   - $E(X) = 10$ (from Previous Question)\n2. **Calculate $E(X^2)$:**\n   - $E(X^2) = (0^2 \\times 0.1) + (5^2 \\times 0.2) + (10^2 \\times 0.3) + (15^2 \\times 0.4)$\n   - $E(X^2) = 0 + (25 \\times 0.2) + (100 \\times 0.3) + (225 \\times 0.4)$\n   - $E(X^2) = 0 + 5 + 30 + 90 = 125$\n3. **Apply the Variance Formula:**\n   - $\\text{Var}(X) = 125 - (10)^2 = 125 - 100 = 25$\n\n### **Result**\nThe variance is **25**, which is **Between 20 and 30**.",
+      "passage_id": "Passage_3"
+    },
+    {
+      "question_id": "Passage_1",
+      "question_text": "The quality department conducts random checks of parts to see if they meet the tolerance specification (TS) or not. Parts can be made by domestic or overseas suppliers. Data shows that 40% of total parts both meet tolerance specifications and are domestically made, while 10% of total parts both do not meet tolerance specifications and are made by overseas suppliers. Also, 55% of total parts are made by domestic suppliers.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 2
     },
     {
       "question_id": "6",
       "module": 2,
-      "question_text": "The quality department conducts random checks of parts to see if they meet the tolerance specification (TS) or not. Parts can be made by domestic or overseas suppliers. Data shows that 40% of total parts both meet tolerance specifications and are domestically made, while 10% of total parts both do not meet tolerance specifications and are made by overseas suppliers. Also, 55% of total parts are made by domestic suppliers. If a part meets tolerance specifications, what is the probability that it is not made by a domestic supplier?",
+      "question_text": "If a part meets tolerance specifications, what is the probability that it is not made by a domestic supplier?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -100,12 +149,13 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "B",
-      "explanation": "### **Concept and Formula**\nWe use conditional probability to find the probability of overseas supply given the part meets specs:\n$$ P(\\text{Overseas} | \\text{Meets TS}) = \\frac{P(\\text{Overseas} \\cap \\text{Meets TS})}{P(\\text{Meets TS})} $$\n\n### **Step-by-Step Solution**\n1. **Define Probabilities:**\n   - $P(\\text{Domestic}) = 0.55 \\Rightarrow P(\\text{Overseas}) = 0.45$\n   - $P(\\text{Domestic} \\cap \\text{Meets}) = 0.40$\n   - $P(\\text{Overseas} \\cap \\text{Does Not Meet}) = 0.10$\n2. **Find $P(\\text{Overseas} \\cap \\text{Meets}):**\n   - $P(\\text{Overseas} \\cap \\text{Meets}) = P(\\text{Overseas}) - P(\\text{Overseas} \\cap \\text{Does Not Meet})$\n   - $P(\\text{Overseas} \\cap \\text{Meets}) = 0.45 - 0.10 = 0.35$\n3. **Find $P(\\text{Meets TS}):**\n   - $P(\\text{Meets TS}) = P(\\text{Domestic} \\cap \\text{Meets}) + P(\\text{Overseas} \\cap \\text{Meets})$\n   - $P(\\text{Meets TS}) = 0.40 + 0.35 = 0.75$\n4. **Calculate Final Probability:**\n   - $P(\\text{Overseas} | \\text{Meets TS}) = 0.35 / 0.75 \\approx 0.4667$\n\n### **Result**\nThe probability is approximately **0.467**, which is **Between 0.25 and 0.50**."
+      "explanation": "### **Concept and Formula**\nWe use conditional probability to find the probability of overseas supply given the part meets specs:\n$$ P(\\text{Overseas} | \\text{Meets TS}) = \\frac{P(\\text{Overseas} \\cap \\text{Meets TS})}{P(\\text{Meets TS})} $$\n\n### **Step-by-Step Solution**\n1. **Define Probabilities:**\n   - $P(\\text{Domestic}) = 0.55 \\Rightarrow P(\\text{Overseas}) = 0.45$\n   - $P(\\text{Domestic} \\cap \\text{Meets}) = 0.40$\n   - $P(\\text{Overseas} \\cap \\text{Does Not Meet}) = 0.10$\n2. **Find $P(\\text{Overseas} \\cap \\text{Meets}):**\n   - $P(\\text{Overseas} \\cap \\text{Meets}) = P(\\text{Overseas}) - P(\\text{Overseas} \\cap \\text{Does Not Meet})$\n   - $P(\\text{Overseas} \\cap \\text{Meets}) = 0.45 - 0.10 = 0.35$\n3. **Find $P(\\text{Meets TS}):**\n   - $P(\\text{Meets TS}) = P(\\text{Domestic} \\cap \\text{Meets}) + P(\\text{Overseas} \\cap \\text{Meets})$\n   - $P(\\text{Meets TS}) = 0.40 + 0.35 = 0.75$\n4. **Calculate Final Probability:**\n   - $P(\\text{Overseas} | \\text{Meets TS}) = 0.35 / 0.75 \\approx 0.4667$\n\n### **Result**\nThe probability is approximately **0.467**, which is **Between 0.25 and 0.50**.",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "7",
       "module": 3,
-      "question_text": "The quality department conducts random checks of parts to see if they meet the tolerance specification (TS) or not. Parts can be made by domestic or overseas suppliers. Data shows that 40% of total parts both meet tolerance specifications and are domestically made, while 10% of total parts both do not meet tolerance specifications and are made by overseas suppliers. Also, 55% of total parts are made by domestic suppliers. What is the probability that out of 10 parts inspected at random, exactly 6 meet the tolerance specification?",
+      "question_text": "What is the probability that out of 10 parts inspected at random, exactly 6 meet the tolerance specification?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -116,12 +166,28 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "A",
-      "explanation": "### **Concept and Formula**\nThis follows a Binomial distribution $X \\sim B(n, p)$:\n$$ P(X = k) = \\binom{n}{k} p^k (1-p)^{n-k} $$\n\n### **Step-by-Step Solution**\n1. **Identify $n, p, k:**\n   - $n = 10$ (number of parts)\n   - $p = P(\\text{Meets TS}) = 0.75$ (calculated in previous question)\n   - $k = 6$ (exactly 6 meeting TS)\n2. **Apply the Formula:**\n   - $P(X = 6) = \\binom{10}{6} (0.75)^6 (0.25)^4$\n   - $\\binom{10}{6} = 210$\n   - $(0.75)^6 \\approx 0.17798$\n   - $(0.25)^4 \\approx 0.003906$\n3. **Final Calculation:**\n   - $P(X = 6) = 210 \\times 0.17798 \\times 0.003906 \\approx 0.146$\n\n### **Result**\nThe probability is approximately **0.146**, which is **Between 0.01 and 0.25**."
+      "explanation": "### **Concept and Formula**\nThis follows a Binomial distribution $X \\sim B(n, p)$:\n$$ P(X = k) = \\binom{n}{k} p^k (1-p)^{n-k} $$\n\n### **Step-by-Step Solution**\n1. **Identify $n, p, k:**\n   - $n = 10$ (number of parts)\n   - $p = P(\\text{Meets TS}) = 0.75$ (calculated in previous question)\n   - $k = 6$ (exactly 6 meeting TS)\n2. **Apply the Formula:**\n   - $P(X = 6) = \\binom{10}{6} (0.75)^6 (0.25)^4$\n   - $\\binom{10}{6} = 210$\n   - $(0.75)^6 \\approx 0.17798$\n   - $(0.25)^4 \\approx 0.003906$\n3. **Final Calculation:**\n   - $P(X = 6) = 210 \\times 0.17798 \\times 0.003906 \\approx 0.146$\n\n### **Result**\nThe probability is approximately **0.146**, which is **Between 0.01 and 0.25**.",
+      "passage_id": "Passage_1"
+    },
+    {
+      "question_id": "Passage_4",
+      "question_text": "A grammar check algorithm is checking for grammatical errors (GEs) in a document. Although GEs occur in a random manner, on an average there are 3 GEs in every 5 pages of a document.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 3
     },
     {
       "question_id": "8",
       "module": 3,
-      "question_text": "A grammar check algorithm is checking for grammatical errors (GEs) in a document. Although GEs occur in a random manner, on an average there are 3 GEs in every 5 pages of a document. What is the probability that there are exactly 2 GEs in the first 6 pages of the document?",
+      "question_text": "What is the probability that there are exactly 2 GEs in the first 6 pages of the document?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -132,12 +198,13 @@
         "D": "Between 0.15 and 0.20"
       },
       "correct_option_label": "D",
-      "explanation": "### **Concept and Formula**\nGrammatical errors occur randomly over a space/time interval, follows a Poisson distribution:\n$$ P(X = k) = \\frac{e^{-\\lambda} \\lambda^k}{k!} $$\n\n### **Step-by-Step Solution**\n1. **Calculate the Rate ($\\lambda$) for 6 pages:**\n   - Average rate = 3 GEs per 5 pages = 0.6 GEs per page.\n   - For 6 pages, $\\lambda = 0.6 \\times 6 = 3.6$.\n2. **Apply the Formula for $k=2:**\n   - $P(X = 2) = \\frac{e^{-3.6} \\times (3.6)^2}{2!}$\n   - $e^{-3.6} \\approx 0.02732$\n   - $(3.6)^2 = 12.96$\n3. **Final Calculation:**\n   - $P(X = 2) = (0.02732 \\times 12.96) / 2 \\approx 0.17705$\n\n### **Result**\nThe probability is approximately **0.177**, which is **Between 0.15 and 0.20**."
+      "explanation": "### **Concept and Formula**\nGrammatical errors occur randomly over a space/time interval, follows a Poisson distribution:\n$$ P(X = k) = \\frac{e^{-\\lambda} \\lambda^k}{k!} $$\n\n### **Step-by-Step Solution**\n1. **Calculate the Rate ($\\lambda$) for 6 pages:**\n   - Average rate = 3 GEs per 5 pages = 0.6 GEs per page.\n   - For 6 pages, $\\lambda = 0.6 \\times 6 = 3.6$.\n2. **Apply the Formula for $k=2:**\n   - $P(X = 2) = \\frac{e^{-3.6} \\times (3.6)^2}{2!}$\n   - $e^{-3.6} \\approx 0.02732$\n   - $(3.6)^2 = 12.96$\n3. **Final Calculation:**\n   - $P(X = 2) = (0.02732 \\times 12.96) / 2 \\approx 0.17705$\n\n### **Result**\nThe probability is approximately **0.177**, which is **Between 0.15 and 0.20**.",
+      "passage_id": "Passage_4"
     },
     {
       "question_id": "9",
       "module": 3,
-      "question_text": "A grammar check algorithm is checking for grammatical errors (GEs) in a document. Although GEs occur in a random manner, on an average there are 3 GEs in every 5 pages of a document. What is the probability that there are no GEs in the first 6 pages of the document?",
+      "question_text": "What is the probability that there are no GEs in the first 6 pages of the document?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -148,12 +215,28 @@
         "D": "Between 0.15 and 0.20"
       },
       "correct_option_label": "A",
-      "explanation": "### **Concept and Formula**\nPoisson probability for exactly zero occurrences:\n$$ P(X = 0) = e^{-\\lambda} $$\n\n### **Step-by-Step Solution**\n1. **Calculate the Rate ($\\lambda$) for 6 pages:**\n   - $\\lambda = 3.6$ (calculated in Previous Question)\n2. **Apply the Formula:**\n   - $P(X = 0) = e^{-3.6} \\approx 0.02732$\n\n### **Result**\nThe probability is approximately **0.027**, which is **Between 0.00 and 0.05**."
+      "explanation": "### **Concept and Formula**\nPoisson probability for exactly zero occurrences:\n$$ P(X = 0) = e^{-\\lambda} $$\n\n### **Step-by-Step Solution**\n1. **Calculate the Rate ($\\lambda$) for 6 pages:**\n   - $\\lambda = 3.6$ (calculated in Previous Question)\n2. **Apply the Formula:**\n   - $P(X = 0) = e^{-3.6} \\approx 0.02732$\n\n### **Result**\nThe probability is approximately **0.027**, which is **Between 0.00 and 0.05**.",
+      "passage_id": "Passage_4"
+    },
+    {
+      "question_id": "Passage_2",
+      "question_text": "Daily demand at a bakery has two components: walk-in orders that have a Normal distribution with mean 10 and standard deviation 3, and online orders that have a Normal distribution with mean 15 and standard deviation 4. The two demands have a correlation coefficient of -0.2.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 4
     },
     {
       "question_id": "10",
       "module": 4,
-      "question_text": "Daily demand at a bakery has two components: walk-in orders that have a Normal distribution with mean 10 and standard deviation 3, and online orders that have a Normal distribution with mean 15 and standard deviation 4. The two demands have a correlation coefficient of -0.2. What is the probability that on a given day, the online orders will be between 7 and 11 units?",
+      "question_text": "What is the probability that on a given day, the online orders will be between 7 and 11 units?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -164,12 +247,13 @@
         "D": "Between 0. 20 and 0.30"
       },
       "correct_option_label": "B",
-      "explanation": "### **Concept and Formula**\nTo find the probability for a normally distributed variable $X \\sim N(\\mu, \\sigma^2)$, we convert to the standard normal variable $Z \\sim N(0, 1)$:\n$$ Z = \\frac{X - \\mu}{\\sigma} $$\n\n### **Step-by-Step Solution**\n1. **Identify Parameters for Online Orders:**\n   - Mean $\\mu = 15$\n   - Standard Deviation $\\sigma = 4$\n2. **Calculate Z-scores for the range [7, 11]:**\n   - For lower bound 7: $Z_1 = (7 - 15) / 4 = -2$\n   - For upper bound 11: $Z_2 = (11 - 15) / 4 = -1$\n3. **Find Area under the curve $P(-2 < Z < -1)$:**\n   - $P = P(Z < -1) - P(Z < -2)$\n   - Using Z-tables: $P(Z < -1) \\approx 0.1587$ and $P(Z < -2) \\approx 0.0228$\n4. **Final Calculation:**\n   - $P = 0.1587 - 0.0228 = 0.1359$\n\n### **Result**\nThe probability is **0.1359**, which is **Between 0.10 and 0.15**."
+      "explanation": "### **Concept and Formula**\nTo find the probability for a normally distributed variable $X \\sim N(\\mu, \\sigma^2)$, we convert to the standard normal variable $Z \\sim N(0, 1)$:\n$$ Z = \\frac{X - \\mu}{\\sigma} $$\n\n### **Step-by-Step Solution**\n1. **Identify Parameters for Online Orders:**\n   - Mean $\\mu = 15$\n   - Standard Deviation $\\sigma = 4$\n2. **Calculate Z-scores for the range [7, 11]:**\n   - For lower bound 7: $Z_1 = (7 - 15) / 4 = -2$\n   - For upper bound 11: $Z_2 = (11 - 15) / 4 = -1$\n3. **Find Area under the curve $P(-2 < Z < -1)$:**\n   - $P = P(Z < -1) - P(Z < -2)$\n   - Using Z-tables: $P(Z < -1) \\approx 0.1587$ and $P(Z < -2) \\approx 0.0228$\n4. **Final Calculation:**\n   - $P = 0.1587 - 0.0228 = 0.1359$\n\n### **Result**\nThe probability is **0.1359**, which is **Between 0.10 and 0.15**.",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "11",
       "module": 4,
-      "question_text": "Daily demand at a bakery has two components: walk-in orders that have a Normal distribution with mean 10 and standard deviation 3, and online orders that have a Normal distribution with mean 15 and standard deviation 4. The two demands have a correlation coefficient of -0.2. What is the probability that on a day, the walk-in orders will be more than the online orders?",
+      "question_text": "What is the probability that on a day, the walk-in orders will be more than the online orders?",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -180,7 +264,8 @@
         "D": "More than 0.16"
       },
       "correct_option_label": "D",
-      "explanation": "### **Concept and Formula**\nWe want to find $P(W > O)$, which is equivalent to $P(W - O > 0)$.\nLet $D = W - O$ be a new normal variable:\n- $\\mu_D = \\mu_W - \\mu_O$\n- $\\sigma_D^2 = \\sigma_W^2 + \\sigma_O^2 - 2\\rho\\sigma_W\\sigma_O$\n\n### **Step-by-Step Solution**\n1. **Calculate the Mean of the Difference:**\n   - $\\mu_D = 10 - 15 = -5$\n2. **Calculate the Variance of the Difference:**\n   - $\\sigma_D^2 = 3^2 + 4^2 - 2(-0.2 \\times 3 \\times 4)$\n   - $\\sigma_D^2 = 9 + 16 + 4.8 = 29.8$\n3. **Calculate the Standard Deviation:**\n   - $\\sigma_D = \\sqrt{29.8} \\approx 5.459$\n4. **Calculate Z-score for $D > 0$:**\n   - $Z = (0 - (-5)) / 5.459 = 5 / 5.459 \\approx 0.916$\n5. **Find Probability:**\n   - $P(D > 0) = P(Z > 0.916) = 1 - P(Z < 0.916)$\n   - $P \\approx 1 - 0.8201 = 0.1799$\n\n### **Result**\nThe probability is approximately **0.18**, which is **More than 0.16**."
+      "explanation": "### **Concept and Formula**\nWe want to find $P(W > O)$, which is equivalent to $P(W - O > 0)$.\nLet $D = W - O$ be a new normal variable:\n- $\\mu_D = \\mu_W - \\mu_O$\n- $\\sigma_D^2 = \\sigma_W^2 + \\sigma_O^2 - 2\\rho\\sigma_W\\sigma_O$\n\n### **Step-by-Step Solution**\n1. **Calculate the Mean of the Difference:**\n   - $\\mu_D = 10 - 15 = -5$\n2. **Calculate the Variance of the Difference:**\n   - $\\sigma_D^2 = 3^2 + 4^2 - 2(-0.2 \\times 3 \\times 4)$\n   - $\\sigma_D^2 = 9 + 16 + 4.8 = 29.8$\n3. **Calculate the Standard Deviation:**\n   - $\\sigma_D = \\sqrt{29.8} \\approx 5.459$\n4. **Calculate Z-score for $D > 0$:**\n   - $Z = (0 - (-5)) / 5.459 = 5 / 5.459 \\approx 0.916$\n5. **Find Probability:**\n   - $P(D > 0) = P(Z > 0.916) = 1 - P(Z < 0.916)$\n   - $P \\approx 1 - 0.8201 = 0.1799$\n\n### **Result**\nThe probability is approximately **0.18**, which is **More than 0.16**.",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "12",

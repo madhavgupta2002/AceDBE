@@ -293,9 +293,24 @@
       "explanation": "Materiality concept allows items of low value that do not significantly affect results to be charged off as expense\n\ninstead of being tracked in inventory."
     },
     {
+      "question_id": "Passage_1",
+      "question_text": "Bharat Infrastructure was awarded a contract to develop airport which will take 3 years to complete. The total value of the contract is Rs. 2600 cr and estimated expenses is Rs. 2000 cr. The company is expected to incur Rs. 500 cr. in Year 1, Rs.1000 cr. in Year 2 and Rs. 500 cr in Year 3.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 4
+    },
+    {
       "question_id": "19",
       "module": 4,
-      "question_text": "Bharat Infrastructure was awarded a contract to develop airport which will take 3 years to complete. The total value of the contract is Rs. 2600 cr and estimated expenses is Rs. 2000 cr. The company is expected to incur Rs. 500 cr. in Year 1, Rs.1000 cr. in Year 2 and Rs. 500 cr in Year 3. If the company follows percentage of completion method, how much profit the company will recognise in Year 1?",
+      "question_text": "If the company follows percentage of completion method, how much profit the company will recognise in Year 1?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
       "status": "Answered",
@@ -306,12 +321,13 @@
         "D": "Rs. 600 cr."
       },
       "correct_option_label": "B",
-      "explanation": "Profit recognized = Total Profit × (Cost incurred/Total estimated cost) = (2600 – 2000) × (500/2000) = 600 × 0.25 = Rs. 150 cr.\n\nPercentage of Completion method recognizes profit in proportion to work done."
+      "explanation": "Profit recognized = Total Profit × (Cost incurred/Total estimated cost) = (2600 – 2000) × (500/2000) = 600 × 0.25 = Rs. 150 cr.\n\nPercentage of Completion method recognizes profit in proportion to work done.",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "20",
       "module": 4,
-      "question_text": "Bharat Infrastructure was awarded a contract to develop airport which will take 3 years to complete. The total value of the contract is Rs. 2600 cr and estimated expenses is Rs. 2000 cr. The company is expected to incur Rs. 500 cr. in Year 1, Rs.1000 cr. in Year 2 and Rs. 500 cr in Year 3. If the company follows Completed Contract Method, how much profit the company will recognise in Year 1?",
+      "question_text": "If the company follows Completed Contract Method, how much profit the company will recognise in Year 1?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
       "status": "Answered",
@@ -322,7 +338,8 @@
         "D": "Rs. 600 cr."
       },
       "correct_option_label": "A",
-      "explanation": "As per Completed Contract Method, no profit is recognized until the contract is completed.\n\nOnly upon completion, total profit is recognized."
+      "explanation": "As per Completed Contract Method, no profit is recognized until the contract is completed.\n\nOnly upon completion, total profit is recognized.",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "21",
@@ -421,9 +438,24 @@
       "explanation": "COGS = Opening Inventory + Purchases – Closing Inventory = 10,000 + 200,000 – 20,000 = ₹190,000."
     },
     {
+      "question_id": "Passage_2",
+      "question_text": "A company has an initial inventory of 50 units at Rs.180 each. Throughout the year, they made two purchases: 100 units at Rs.190 each and 50 units at Rs.200 each. The company sold 180 units.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 5
+    },
+    {
       "question_id": "27",
       "module": 5,
-      "question_text": "A company has an initial inventory of 50 units at Rs.180 each. Throughout the year, they made two purchases: 100 units at Rs.190 each and 50 units at Rs.200 each. The company sold 180 units. What is the value of the ending inventory using the LIFO method?",
+      "question_text": "What is the value of the ending inventory using the LIFO method?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
       "status": "Answered",
@@ -434,12 +466,13 @@
         "D": "3600"
       },
       "correct_option_label": "D",
-      "explanation": "LIFO: Last In First Out.\n\n180 units sold are the most recent purchased ones. Remaining are the 20 oldest units at Rs.180 (20 × 180 = 3,600)."
+      "explanation": "LIFO: Last In First Out.\n\n180 units sold are the most recent purchased ones. Remaining are the 20 oldest units at Rs.180 (20 × 180 = 3,600).",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "28",
       "module": 5,
-      "question_text": "A company has an initial inventory of 50 units at Rs.180 each. Throughout the year, they made two purchases: 100 units at Rs.190 each and 50 units at Rs.200 each. The company sold 180 units. What is the value of the ending inventory using the FIFO method?",
+      "question_text": "What is the value of the ending inventory using the FIFO method?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
       "status": "Answered",
@@ -450,7 +483,8 @@
         "D": "6000"
       },
       "correct_option_label": "A",
-      "explanation": "FIFO: First In First Out.\n\n20 units left (last purchased: Rs. 200 × 20 = 4,000). The ending inventory is valued at the latest purchase rate."
+      "explanation": "FIFO: First In First Out.\n\n20 units left (last purchased: Rs. 200 × 20 = 4,000). The ending inventory is valued at the latest purchase rate.",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "29",
@@ -501,9 +535,24 @@
       "explanation": "Inventory should be reported at 'lower of cost or market value' i.e., Rs. 200,000\n\n(per conservatism/prudence concept)."
     },
     {
+      "question_id": "Passage_3",
+      "question_text": "An asset with a life of 10 years was purchased for Rs. 100 lakhs three years back.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 6
+    },
+    {
       "question_id": "32",
       "module": 6,
-      "question_text": "An asset with a life of 10 years was purchased for Rs. 100 lakhs three years back. If the company follows Straight Line Method of Depreciation, the depreciated value of the asset at the end of 4 years is _____?",
+      "question_text": "If the company follows Straight Line Method of Depreciation, the depreciated value of the asset at the end of 4 years is _____?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
       "status": "Answered",
@@ -514,12 +563,13 @@
         "D": "Rs. 60 lakhs"
       },
       "correct_option_label": "D",
-      "explanation": "Straight Line:\n\nDepreciation per year = 100/10 = 10 lakhs. After 4 years: 100 – (4 × 10) = 60 lakhs."
+      "explanation": "Straight Line:\n\nDepreciation per year = 100/10 = 10 lakhs. After 4 years: 100 – (4 × 10) = 60 lakhs.",
+      "passage_id": "Passage_3"
     },
     {
       "question_id": "33",
       "module": 6,
-      "question_text": "An asset with a life of 10 years was purchased for Rs. 100 lakhs three years back. If the company follows Written Down Value Method of Depreciation at the rate of 20%, the depreciated value of the asset at the end of 4 years is _____?",
+      "question_text": "If the company follows Written Down Value Method of Depreciation at the rate of 20%, the depreciated value of the asset at the end of 4 years is _____?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
       "status": "Answered",
@@ -530,12 +580,13 @@
         "D": "Rs. 60 lakhs"
       },
       "correct_option_label": "A",
-      "explanation": "WDV after 4 years: \n\n1st Yr: 100-20=80; 2nd: 80-16=64; 3rd: 64-12.8=51.2; 4th: 51.2-10.24=40.96 lakhs."
+      "explanation": "WDV after 4 years: \n\n1st Yr: 100-20=80; 2nd: 80-16=64; 3rd: 64-12.8=51.2; 4th: 51.2-10.24=40.96 lakhs.",
+      "passage_id": "Passage_3"
     },
     {
       "question_id": "34",
       "module": 6,
-      "question_text": "An asset with a life of 10 years was purchased for Rs. 100 lakhs three years back. If the company follows Sum of the Years Digit Method of Depreciation, the depreciated value of the asset at the end of 4 years is _____?",
+      "question_text": "If the company follows Sum of the Years Digit Method of Depreciation, the depreciated value of the asset at the end of 4 years is _____?",
       "question_type": "MCQ",
       "marks_allocated": 2.0,
       "status": "Answered",
@@ -546,7 +597,8 @@
         "D": "Rs. 40.96 lakhs"
       },
       "correct_option_label": "A",
-      "explanation": "Sum of Years’ Digits for 10 years is 55.\n\nDepreciation taken for 4 years (highest years) is (10+9+8+7)/55 = 34/55 x 100 = 61.82. Book value = 100-61.82 = 38.18 lakhs."
+      "explanation": "Sum of Years’ Digits for 10 years is 55.\n\nDepreciation taken for 4 years (highest years) is (10+9+8+7)/55 = 34/55 x 100 = 61.82. Book value = 100-61.82 = 38.18 lakhs.",
+      "passage_id": "Passage_3"
     },
     {
       "question_id": "35",

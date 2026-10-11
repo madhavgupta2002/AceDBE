@@ -61,8 +61,23 @@
             "module": 1
         },
         {
+            "question_id": "Passage_1",
+            "question_text": "You got the following financial data from your accounting department. Opening Stock - Finished Goods Rs. 30; Opening Stock - Raw Material Rs. 100; Opening Stock - Work-in-progress Rs. 28; Closing Stock - Finished Goods Rs. 20; Closing Stock - Raw Material Rs. 231; Closing Stock - Work-in-progress Rs. 14; Raw Material Purchases Rs. 912; Manufacturing overhead Rs. 290; Salary and Wages to Factory Workers Rs. 150.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 1
+        },
+        {
             "question_id": "5",
-            "question_text": "You got the following financial data from your accounting department. Opening Stock - Finished Goods Rs. 30; Opening Stock - Raw Material Rs. 100; Opening Stock - Work-in-progress Rs. 28; Closing Stock - Finished Goods Rs. 20; Closing Stock - Raw Material Rs. 231; Closing Stock - Work-in-progress Rs. 14; Raw Material Purchases Rs. 912; Manufacturing overhead Rs. 290; Salary and Wages to Factory Workers Rs. 150. Calculate the value of \"Cost of Goods Manufactured\" during the period?",
+            "question_text": "Calculate the value of \"Cost of Goods Manufactured\" during the period?",
             "question_type": "MCQ",
             "options": {
                 "A": "1235",
@@ -72,11 +87,12 @@
             },
             "correct_option_label": "A",
             "explanation": "1. Material Consumed = 100 + 912 - 231 = 781. \n2. Prime Cost = Material Consumed (781) + Direct Labour (150) = 931. \n3. Gross Factory Cost = Prime Cost (931) + Mfg Overhead (290) = 1221. \n4. Cost of Goods Manufactured (COGM) = Gross Factory Cost (1221) + Opening WIP (28) - Closing WIP (14) = 1235.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "6",
-            "question_text": "You got the following financial data from your accounting department. Opening Stock - Finished Goods Rs. 30; Opening Stock - Raw Material Rs. 100; Opening Stock - Work-in-progress Rs. 28; Closing Stock - Finished Goods Rs. 20; Closing Stock - Raw Material Rs. 231; Closing Stock - Work-in-progress Rs. 14; Raw Material Purchases Rs. 912; Manufacturing overhead Rs. 290; Salary and Wages to Factory Workers Rs. 150. Calculate the \"Cost of goods sold\" during the period?",
+            "question_text": "Calculate the \"Cost of goods sold\" during the period?",
             "question_type": "MCQ",
             "options": {
                 "A": "1245",
@@ -86,7 +102,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Refer to previous calculations to find Cost of Goods Manufactured (COGM) = 1235. Cost of Goods Sold (COGS) = COGM + Opening Stock of Finished Goods - Closing Stock of Finished Goods = 1235 + 30 - 20 = 1245.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "7",
@@ -145,8 +162,23 @@
             "module": 1
         },
         {
+            "question_id": "Passage_2",
+            "question_text": "Rahul and Rohit have acquired an automobile service station for a price Rs. 1300 lakhs. The average monthly operating cost is Rs. 60 lakhs which includes salary for the workers, rent for the building, and other expenses. The owners expect a minimum return of 1% per month for their investment. On an average 100 vehicles are serviced per day including Saturday and Sunday. However, the vehicles are of different types and cost. Total servicing hours per month is 9000 hours. The firm has an option of using \"Units\" or \"Servicing Hour\" Rate as a basis of allocating the total cost to vehicles. Suppose if the firm services two different types of vehicles – one high end vehicle and another economy vehicle and it spends 6 hours and 2 hours to service high end vehicle and economy vehicle respectively,",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 1
+        },
+        {
             "question_id": "11",
-            "question_text": "Rahul and Rohit have acquired an automobile service station for a price Rs. 1300 lakhs. The average monthly operating cost is Rs. 60 lakhs which includes salary for the workers, rent for the building, and other expenses. The owners expect a minimum return of 1% per month for their investment. On an average 100 vehicles are serviced per day including Saturday and Sunday. However, the vehicles are of different types and cost. Total servicing hours per month is 9000 hours. The firm has an option of using \"Units\" or \"Servicing Hour\" Rate as a basis of allocating the total cost to vehicles. Suppose if the firm services two different types of vehicles – one high end vehicle and another economy vehicle and it spends 6 hours and 2 hours to service high end vehicle and economy vehicle respectively, use the above data to calculate how much should be charged to the high end vehicle, if \"service hours\" is used as a basis to allocate the total cost?",
+            "question_text": "use the above data to calculate how much should be charged to the high end vehicle, if \"service hours\" is used as a basis to allocate the total cost?",
             "question_type": "MCQ",
             "options": {
                 "A": "Rs. 4200",
@@ -156,11 +188,12 @@
             },
             "correct_option_label": "B",
             "explanation": "1. Total Monthly Cost = 60,00,000 + (1% of 1300 lakhs) = 73,00,000. \n2. Rate per Service Hour = 73,00,000 / 9,000 hours = Rs. 811.11 per hour. \n3. Charge for high-end vehicle (6 hours) = 811.11 × 6 = Rs. 4866.67 (Rounded to 4867).",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "12",
-            "question_text": "Rahul and Rohit have acquired an automobile service station for a price Rs. 1300 lakhs. The average monthly operating cost is Rs. 60 lakhs which includes salary for the workers, rent for the building, and other expenses. The owners expect a minimum return of 1% per month for their investment. On an average 100 vehicles are serviced per day including Saturday and Sunday. However, the vehicles are of different types and cost. Total servicing hours per month is 9000 hours. The firm has an option of using \"Units\" or \"Servicing Hour\" Rate as a basis of allocating the total cost to vehicles. Suppose if the firm services two different types of vehicles – one high end vehicle and another economy vehicle and it spends 6 hours and 2 hours to service high end vehicle and economy vehicle respectively, use the above data to calculate how much should be charged to the Economy vehicle, if \"service hours\" is used as a basis to allocate the total cost?",
+            "question_text": "use the above data to calculate how much should be charged to the Economy vehicle, if \"service hours\" is used as a basis to allocate the total cost?",
             "question_type": "MCQ",
             "options": {
                 "A": "Rs. 1622",
@@ -170,7 +203,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Refer to previous context: Service Hour Rate = Rs. 811.11 per hour. Charge for economy vehicle (2 hours) = 811.11 × 2 = Rs. 1622.22 (Rounded to 1622).",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "13",

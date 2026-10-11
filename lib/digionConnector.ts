@@ -212,7 +212,11 @@ export async function buildCbtExam(paper: CbtPaperRef, file: QuestionFile, candi
   // Resolve images for all questions that need them, in parallel.
   const needImage = (q: IIMBQuestion) =>
     [q.question_text, q.explanation, q.explaination, ...Object.values(q.options ?? {})].some((t) => t?.includes(IMG_PLACEHOLDER));
-  const allIds = cbtSections.flatMap((s) => [...questionsOf(s), ...(s.context_blocks ?? []).map((b) => b.context_question_id)]);
+  const allIds = cbtSections.flatMap((s) => [
+    ...questionsOf(s),
+    ...(s.context_blocks ?? []).map((b) => b.context_question_id),
+    ...questionsOf(s).map((id) => byId.get(id)?.passage_id ?? ''),
+  ]).filter(Boolean);
   const imageMap = new Map<string, string[]>();
   await Promise.all(
     allIds.map(async (id) => {
@@ -227,12 +231,17 @@ export async function buildCbtExam(paper: CbtPaperRef, file: QuestionFile, candi
       sec.negative_marks_per_question ??
       (pattern.negative_marking && pattern.negative_marks_fraction ? marks * pattern.negative_marks_fraction : 0);
 
-    const contextFor = new Map<string, string>(); // question id -> passage id
-    const passages = (sec.context_blocks ?? []).map((b) => {
-      const ctx = byId.get(b.context_question_id);
-      const pid = `ctx-${b.context_question_id}`;
-      b.applies_to.forEach((qid) => contextFor.set(qid, pid));
-      return { id: pid, directions: '', html: richHtml(ctx?.question_text, imageMap.get(b.context_question_id) ?? []) };
+    // Shared passages: a question's `passage_id`, or the pattern's older `context_blocks` link.
+    const contextFor = new Map<string, string>(); // question id -> passage entry id
+    (sec.context_blocks ?? []).forEach((b) => b.applies_to.forEach((qid) => contextFor.set(qid, b.context_question_id)));
+    questionsOf(sec).forEach((qid) => {
+      const pid = byId.get(qid)?.passage_id;
+      if (pid && byId.has(pid)) contextFor.set(qid, pid);
+    });
+    const passageIds = Array.from(new Set(contextFor.values()));
+    const passages = passageIds.map((ctxId) => {
+      const ctx = byId.get(ctxId);
+      return { id: `ctx-${ctxId}`, directions: '', html: richHtml(ctx?.question_text?.replace(/([^\n|])\n(?![\n|\-*\d])/g, '$1  \n'), imageMap.get(ctxId) ?? []) };
     });
 
     const questions = questionsOf(sec).map((id) => {
@@ -250,7 +259,7 @@ export async function buildCbtExam(paper: CbtPaperRef, file: QuestionFile, candi
         type: isMsq ? 'MSQ' : 'MCQ',
         html: richHtml(q.question_text, imgs),
         options,
-        ...(contextFor.has(id) ? { passageId: contextFor.get(id) } : {}),
+        ...(contextFor.has(id) ? { passageId: `ctx-${contextFor.get(id)}` } : {}),
         ...(labels.length ? { answer: isMsq ? labels : labels[0] } : {}),
         ...(sec.max_selections && isMsq ? { maxSelections: sec.max_selections } : {}),
       };

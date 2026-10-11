@@ -7,9 +7,24 @@
   },
   "questions": [
     {
+      "question_id": "Passage_4",
+      "question_text": "The rainfall (in cm) received during a 24-hour period in 10 cities is recorded as 2, 4, 5, 6, 7, 10, 12, 5, 4, 5, respectively.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 1
+    },
+    {
       "question_id": "236144701",
       "module": 1,
-      "question_text": "The rainfall (in cm) received during a 24-hour period in 10 cities is recorded as 2, 4, 5, 6, 7, 10, 12, 5, 4, 5, respectively. The standard deviation of rainfall in cm in a city is given by:",
+      "question_text": "The standard deviation of rainfall in cm in a city is given by:",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
       "status": "Answered",
@@ -20,12 +35,13 @@
         "D": "8 cm"
       },
       "correct_option_label": "A",
-      "explanation": "### **Concept and Formula**\nTo calculate the standard deviation ($s$) for a sample, we use the formula:\n$$ s = \\sqrt{\\frac{\\sum(x_i - \\bar{x})^2}{n-1}} $$\nwhere:\n- $x_i$: Individual rainfall values\n- $\\bar{x}$: Mean of the rainfall data\n- $n$: Number of cities (sample size)\n\n### **Step-by-Step Solution**\n1. **List the Data:** 2, 4, 5, 6, 7, 10, 12, 5, 4, 5 (n = 10)\n2. **Calculate the Mean ($\\bar{x}$):**\n   - $\\sum x_i = 2+4+5+6+7+10+12+5+4+5 = 60$\n   - $\\bar{x} = 60 / 10 = 6$\n3. **Calculate Deviations $(x_i - \\bar{x})$:**\n   - -4, -2, -1, 0, 1, 4, 6, -1, -2, -1\n4. **Calculate Squared Deviations $(x_i - \\bar{x})^2$:**\n   - 16, 4, 1, 0, 1, 16, 36, 1, 4, 1\n5. **Sum of Squared Deviations:**\n   - $\\sum(x_i - \\bar{x})^2 = 84$\n6. **Calculate Sample Variance ($s^2$):**\n   - $s^2 = 84 / (10-1) = 84 / 9 \\approx 9.33$\n7. **Calculate Standard Deviation ($s$):**\n   - $s = \\sqrt{9.33} \\approx 3.06$\n\n### **Result**\nThe standard deviation is approximately **3 cm**."
+      "explanation": "### **Concept and Formula**\nTo calculate the standard deviation ($s$) for a sample, we use the formula:\n$$ s = \\sqrt{\\frac{\\sum(x_i - \\bar{x})^2}{n-1}} $$\nwhere:\n- $x_i$: Individual rainfall values\n- $\\bar{x}$: Mean of the rainfall data\n- $n$: Number of cities (sample size)\n\n### **Step-by-Step Solution**\n1. **List the Data:** 2, 4, 5, 6, 7, 10, 12, 5, 4, 5 (n = 10)\n2. **Calculate the Mean ($\\bar{x}$):**\n   - $\\sum x_i = 2+4+5+6+7+10+12+5+4+5 = 60$\n   - $\\bar{x} = 60 / 10 = 6$\n3. **Calculate Deviations $(x_i - \\bar{x})$:**\n   - -4, -2, -1, 0, 1, 4, 6, -1, -2, -1\n4. **Calculate Squared Deviations $(x_i - \\bar{x})^2$:**\n   - 16, 4, 1, 0, 1, 16, 36, 1, 4, 1\n5. **Sum of Squared Deviations:**\n   - $\\sum(x_i - \\bar{x})^2 = 84$\n6. **Calculate Sample Variance ($s^2$):**\n   - $s^2 = 84 / (10-1) = 84 / 9 \\approx 9.33$\n7. **Calculate Standard Deviation ($s$):**\n   - $s = \\sqrt{9.33} \\approx 3.06$\n\n### **Result**\nThe standard deviation is approximately **3 cm**.",
+      "passage_id": "Passage_4"
     },
     {
       "question_id": "236144702",
       "module": 1,
-      "question_text": "The rainfall (in cm) received during a 24-hour period in 10 cities is recorded as 2, 4, 5, 6, 7, 10, 12, 5, 4, 5, respectively. The third quartile of rainfall in cm in a city is given by:",
+      "question_text": "The third quartile of rainfall in cm in a city is given by:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -36,7 +52,8 @@
         "D": "8 cm"
       },
       "correct_option_label": "D",
-      "explanation": "### **Concept and Formula**\nThe third quartile ($Q_3$) is the value below which 75% of the data lies. The position of $Q_3$ in a sorted dataset of size $n$ is:\n$$ \\text{Position of } Q_3 = 0.75(n+1) $$\n\n### **Step-by-Step Solution**\n1. **Sort the Data:** 2, 4, 4, 5, 5, 5, 6, 7, 10, 12\n2. **Identify $n$:** $n = 10$\n3. **Calculate the Position:**\n   - $\\text{Position} = 0.75(10 + 1) = 0.75 \\times 11 = 8.25$\n4. **Interpolate the Value:**\n   - The position 8.25 lies between the 8th and 9th terms.\n   - 8th value = 7, 9th value = 10\n   - $Q_3 = 7 + 0.25 \\times (10 - 7) = 7 + 0.25 \\times 3 = 7.75$\n5. **Round to Nearest Option:**\n   - 7.75 is closest to 8 cm.\n\n### **Result**\nThe third quartile is approximately **8 cm**."
+      "explanation": "### **Concept and Formula**\nThe third quartile ($Q_3$) is the value below which 75% of the data lies. The position of $Q_3$ in a sorted dataset of size $n$ is:\n$$ \\text{Position of } Q_3 = 0.75(n+1) $$\n\n### **Step-by-Step Solution**\n1. **Sort the Data:** 2, 4, 4, 5, 5, 5, 6, 7, 10, 12\n2. **Identify $n$:** $n = 10$\n3. **Calculate the Position:**\n   - $\\text{Position} = 0.75(10 + 1) = 0.75 \\times 11 = 8.25$\n4. **Interpolate the Value:**\n   - The position 8.25 lies between the 8th and 9th terms.\n   - 8th value = 7, 9th value = 10\n   - $Q_3 = 7 + 0.25 \\times (10 - 7) = 7 + 0.25 \\times 3 = 7.75$\n5. **Round to Nearest Option:**\n   - 7.75 is closest to 8 cm.\n\n### **Result**\nThe third quartile is approximately **8 cm**.",
+      "passage_id": "Passage_4"
     },
     {
       "question_id": "236144703",
@@ -71,9 +88,24 @@
       "explanation": "**Formula:** $\\sigma = \\sqrt{E(X^2) - [E(X)]^2}$\n\n**Steps:**\n- $E(X) = 0 \\times 0.28 + 1 \\times 0.22 + 2 \\times 0.15 + 3 \\times 0.10 + 4 \\times 0.10 + 5 \\times 0.08 + 6 \\times 0.07 = 1.87$\n- $E(X^2) = 0^2 \\times 0.28 + 1^2 \\times 0.22 + ... + 6^2 \\times 0.07 = 6.51$\n- Var = $6.51 - 1.87^2 = 3.01$\n- $\\sigma = \\sqrt{3.01} \\approx 1.74 \\approx 1.9$\n\n**Result:** 1.9"
     },
     {
+      "question_id": "Passage_2",
+      "question_text": "In a random sample of 600 automobiles in the US, 270 were cars and the rest were trucks. Also, 240 were US manufactured automobiles and the rest were made in Japan. Additionally, 10% of the samples were US made cars.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 2
+    },
+    {
       "question_id": "236144705",
       "module": 2,
-      "question_text": "In a random sample of 600 automobiles in the US, 270 were cars and the rest were trucks. Also, 240 were US manufactured automobiles and the rest were made in Japan. Additionally, 10% of the samples were US made cars. If an automobile chosen at random was a truck, the probability that it was manufactured in the US is:",
+      "question_text": "If an automobile chosen at random was a truck, the probability that it was manufactured in the US is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -84,12 +116,13 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "C",
-      "explanation": "### **Concept and Formula**\nConditional probability is the probability of an event occurring given that another event has already occurred:\n$$ P(A|B) = \\frac{P(A \\cap B)}{P(B)} $$\nIn this case, we want $P(\\text{US} | \\text{Truck})$.\n\n### **Step-by-Step Solution**\n1. **Define Totals:**\n   - Total automobiles = 600\n   - Cars = 270\n   - Trucks = $600 - 270 = 330$\n2. **Identify US Manufactured Totals:**\n   - US Manufactured = 240\n3. **Calculate US Manufactured Cars:**\n   - US Made Cars = 10% of 600 = $0.10 \\times 600 = 60$\n4. **Calculate US Manufactured Trucks:**\n   - US Made Trucks = Total US - US Made Cars = $240 - 60 = 180$\n5. **Apply Conditional Probability:**\n   - $P(\\text{US} | \\text{Truck}) = \\frac{\\text{US Made Trucks}}{\\text{Total Trucks}} = \\frac{180}{330} \\approx 0.545$\n\n### **Result**\nThe probability is approximately **0.545**, which is **Between 0.50 and 0.75**."
+      "explanation": "### **Concept and Formula**\nConditional probability is the probability of an event occurring given that another event has already occurred:\n$$ P(A|B) = \\frac{P(A \\cap B)}{P(B)} $$\nIn this case, we want $P(\\text{US} | \\text{Truck})$.\n\n### **Step-by-Step Solution**\n1. **Define Totals:**\n   - Total automobiles = 600\n   - Cars = 270\n   - Trucks = $600 - 270 = 330$\n2. **Identify US Manufactured Totals:**\n   - US Manufactured = 240\n3. **Calculate US Manufactured Cars:**\n   - US Made Cars = 10% of 600 = $0.10 \\times 600 = 60$\n4. **Calculate US Manufactured Trucks:**\n   - US Made Trucks = Total US - US Made Cars = $240 - 60 = 180$\n5. **Apply Conditional Probability:**\n   - $P(\\text{US} | \\text{Truck}) = \\frac{\\text{US Made Trucks}}{\\text{Total Trucks}} = \\frac{180}{330} \\approx 0.545$\n\n### **Result**\nThe probability is approximately **0.545**, which is **Between 0.50 and 0.75**.",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "236144706",
       "module": 2,
-      "question_text": "In a random sample of 600 automobiles in the US, 270 were cars and the rest were trucks. Also, 240 were US manufactured automobiles and the rest were made in Japan. Additionally, 10% of the samples were US made cars. The probability that a randomly selected automobile is made in the US is:",
+      "question_text": "The probability that a randomly selected automobile is made in the US is:",
       "question_type": "MCQ",
       "marks_allocated": 4.0,
       "status": "Answered",
@@ -100,7 +133,8 @@
         "D": "Between 0.75 and 0.99"
       },
       "correct_option_label": "B",
-      "explanation": "### **Concept and Formula**\nThe probability of an event is the ratio of favorable outcomes to the total number of outcomes:\n$$ P(A) = \\frac{\\text{Favorable Outcomes}}{\\text{Total Outcomes}} $$\n\n### **Step-by-Step Solution**\n1. **Identify Total Outcomes:**\n   - Total automobiles in the sample = 600\n2. **Identify Favorable Outcomes:**\n   - Automobiles manufactured in the US = 240\n3. **Calculate Probability:**\n   - $P(\\text{US}) = \\frac{240}{600} = 0.40$\n\n### **Result**\nThe probability is **0.40**, which is **Between 0.25 and 0.50**."
+      "explanation": "### **Concept and Formula**\nThe probability of an event is the ratio of favorable outcomes to the total number of outcomes:\n$$ P(A) = \\frac{\\text{Favorable Outcomes}}{\\text{Total Outcomes}} $$\n\n### **Step-by-Step Solution**\n1. **Identify Total Outcomes:**\n   - Total automobiles in the sample = 600\n2. **Identify Favorable Outcomes:**\n   - Automobiles manufactured in the US = 240\n3. **Calculate Probability:**\n   - $P(\\text{US}) = \\frac{240}{600} = 0.40$\n\n### **Result**\nThe probability is **0.40**, which is **Between 0.25 and 0.50**.",
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "236144707",
@@ -119,9 +153,24 @@
       "explanation": "### **Concept and Formula**\nThis problem involves finding a joint probability from marginal and intersection data, followed by a Binomial distribution calculation:\n$$ P(X = k) = \\binom{n}{k} p^k (1-p)^{n-k} $$\n\n### **Step-by-Step Solution**\n1. **Analyze Supplier and Specification Data:**\n   - $P(\\text{Domestic}) = 0.55$\n   - $P(\\text{Domestic} \\cap \\text{Meets TS}) = 0.40$\n2. **Find Probability of Interest ($p$):**\n   - $p = P(\\text{Domestic} \\cap \\text{Does Not Meet TS})$\n   - $p = P(\\text{Domestic}) - P(\\text{Domestic} \\cap \\text{Meets TS}) = 0.55 - 0.40 = 0.15$\n3. **Identify Binomial Parameters:**\n   - $n = 10$ parts\n   - $k = 4$ parts\n   - $p = 0.15$\n4. **Apply Binomial Formula:**\n   - $P(X = 4) = \\binom{10}{4} (0.15)^4 (0.85)^6$\n   - $\\binom{10}{4} = 210$\n   - $P(X = 4) = 210 \\times 0.00050625 \\times 0.37715 \\approx 0.0401$\n\n### **Result**\nThe probability is approximately **0.04**, which is **Between 0.01 and 0.25**."
     },
     {
+      "question_id": "Passage_3",
+      "question_text": "A grammar check algorithm is checking for grammatical errors (GEs) in a document. Although GEs occur in a random manner, on an average there are 3 GEs in every 5 pages of a document.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 3
+    },
+    {
       "question_id": "236144708",
       "module": 3,
-      "question_text": "A grammar check algorithm is checking for grammatical errors (GEs) in a document. Although GEs occur in a random manner, on an average there are 3 GEs in every 5 pages of a document. What is the probability that there are less than 3 GEs in the last 10 pages of the document?",
+      "question_text": "What is the probability that there are less than 3 GEs in the last 10 pages of the document?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
       "status": "Answered",
@@ -132,12 +181,13 @@
         "D": "Between 0.20 and 0.30"
       },
       "correct_option_label": "A",
-      "explanation": "### **Concept and Formula**\nGrammatical errors occur randomly over a space/time interval, follows a Poisson distribution:\n$$ P(X = k) = \\frac{e^{-\\lambda} \\lambda^k}{k!} $$\n\n### **Step-by-Step Solution**\n1. **Calculate the Rate ($\\lambda$) for 10 pages:**\n   - Average rate = 3 GEs per 5 pages = 0.6 GEs per page.\n   - For 10 pages, $\\lambda = 0.6 \\times 10 = 6$.\n2. **Define the Target Probability:**\n   - We want $P(X < 3) = P(X=0) + P(X=1) + P(X=2)$.\n3. **Calculate individual probabilities:**\n   - $P(X=0) = \\frac{e^{-6} 6^0}{0!} = e^{-6} \\approx 0.00248$\n   - $P(X=1) = \\frac{e^{-6} 6^1}{1!} = 6 e^{-6} \\approx 0.01487$\n   - $P(X=2) = \\frac{e^{-6} 6^2}{2!} = 18 e^{-6} \\approx 0.04462$\n4. **Sum the probabilities:**\n   - $P(X < 3) = 0.00248 + 0.01487 + 0.04462 = 0.06197$\n\n### **Result**\nThe probability is approximately **0.062**, which is **Between 0.00 and 0.10**."
+      "explanation": "### **Concept and Formula**\nGrammatical errors occur randomly over a space/time interval, follows a Poisson distribution:\n$$ P(X = k) = \\frac{e^{-\\lambda} \\lambda^k}{k!} $$\n\n### **Step-by-Step Solution**\n1. **Calculate the Rate ($\\lambda$) for 10 pages:**\n   - Average rate = 3 GEs per 5 pages = 0.6 GEs per page.\n   - For 10 pages, $\\lambda = 0.6 \\times 10 = 6$.\n2. **Define the Target Probability:**\n   - We want $P(X < 3) = P(X=0) + P(X=1) + P(X=2)$.\n3. **Calculate individual probabilities:**\n   - $P(X=0) = \\frac{e^{-6} 6^0}{0!} = e^{-6} \\approx 0.00248$\n   - $P(X=1) = \\frac{e^{-6} 6^1}{1!} = 6 e^{-6} \\approx 0.01487$\n   - $P(X=2) = \\frac{e^{-6} 6^2}{2!} = 18 e^{-6} \\approx 0.04462$\n4. **Sum the probabilities:**\n   - $P(X < 3) = 0.00248 + 0.01487 + 0.04462 = 0.06197$\n\n### **Result**\nThe probability is approximately **0.062**, which is **Between 0.00 and 0.10**.",
+      "passage_id": "Passage_3"
     },
     {
       "question_id": "236144709",
       "module": 3,
-      "question_text": "A grammar check algorithm is checking for grammatical errors (GEs) in a document. Although GEs occur in a random manner, on an average there are 3 GEs in every 5 pages of a document. If the algorithm found a GE at the bottom of page 2, what is the probability that no GE is detected in the next 7 pages?",
+      "question_text": "If the algorithm found a GE at the bottom of page 2, what is the probability that no GE is detected in the next 7 pages?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
       "status": "Answered",
@@ -148,12 +198,28 @@
         "D": "Between 0. 20 and 0.30"
       },
       "correct_option_label": "A",
-      "explanation": "### **Concept and Formula**\nThis is a Poisson process where we want to find the probability of zero events in a specific interval:\n$$ P(X = 0) = e^{-\\lambda} $$\nThe Poisson distribution has the memoryless property, so the GE at the bottom of page 2 does not affect future probabilities.\n\n### **Step-by-Step Solution**\n1. **Calculate the Rate ($\\lambda$) for 7 pages:**\n   - Rate = 3 GEs per 5 pages = 0.6 GEs per page.\n   - For 7 pages, $\\lambda = 0.6 \\times 7 = 4.2$.\n2. **Apply the Formula:**\n   - $P(X = 0) = e^{-4.2} \\approx 0.01499$\n\n### **Result**\nThe probability is approximately **0.015**, which is **Between 0.00 and 0.10**."
+      "explanation": "### **Concept and Formula**\nThis is a Poisson process where we want to find the probability of zero events in a specific interval:\n$$ P(X = 0) = e^{-\\lambda} $$\nThe Poisson distribution has the memoryless property, so the GE at the bottom of page 2 does not affect future probabilities.\n\n### **Step-by-Step Solution**\n1. **Calculate the Rate ($\\lambda$) for 7 pages:**\n   - Rate = 3 GEs per 5 pages = 0.6 GEs per page.\n   - For 7 pages, $\\lambda = 0.6 \\times 7 = 4.2$.\n2. **Apply the Formula:**\n   - $P(X = 0) = e^{-4.2} \\approx 0.01499$\n\n### **Result**\nThe probability is approximately **0.015**, which is **Between 0.00 and 0.10**.",
+      "passage_id": "Passage_3"
+    },
+    {
+      "question_id": "Passage_1",
+      "question_text": "Daily demand at a bakery has two components: walk-in orders that have a Normal distribution with mean 10 and standard deviation 3, and online orders that have a Normal distribution with mean 15 and standard deviation 4. The two demands have a correlation coefficient of -0.2.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 4
     },
     {
       "question_id": "236144710",
       "module": 4,
-      "question_text": "Daily demand at a bakery has two components: walk-in orders that have a Normal distribution with mean 10 and standard deviation 3, and online orders that have a Normal distribution with mean 15 and standard deviation 4. The two demands have a correlation coefficient of -0.2. What is the probability that on a given day, the walk-in orders will be between 7 and 16 units?",
+      "question_text": "What is the probability that on a given day, the walk-in orders will be between 7 and 16 units?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
       "status": "Answered",
@@ -164,12 +230,13 @@
         "D": "More than 0.90"
       },
       "correct_option_label": "C",
-      "explanation": "### **Concept and Formula**\nTo find the probability for a normally distributed variable $X \\sim N(\\mu, \\sigma^2)$, we convert to the standard normal variable $Z \\sim N(0, 1)$:\n$$ Z = \\frac{X - \\mu}{\\sigma} $$\n\n### **Step-by-Step Solution**\n1. **Identify Parameters for Walk-in Orders:**\n   - Mean $\\mu = 10$\n   - Standard Deviation $\\sigma = 3$\n2. **Calculate Z-scores for the range [7, 16]:**\n   - For lower bound 7: $Z_1 = (7 - 10) / 3 = -1$\n   - For upper bound 16: $Z_2 = (16 - 10) / 3 = 2$\n3. **Find Area under the Normal Curve:**\n   - $P(7 < X < 16) = P(-1 < Z < 2)$\n   - $P(-1 < Z < 2) = P(Z < 2) - P(Z < -1)$\n   - Using Z-tables: $P(Z < 2) \\approx 0.9772$ and $P(Z < -1) \\approx 0.1587$\n4. **Final Calculation:**\n   - $0.9772 - 0.1587 = 0.8185$\n\n### **Result**\nThe probability is **0.8185**, which is **Between 0.75 and 0.90**."
+      "explanation": "### **Concept and Formula**\nTo find the probability for a normally distributed variable $X \\sim N(\\mu, \\sigma^2)$, we convert to the standard normal variable $Z \\sim N(0, 1)$:\n$$ Z = \\frac{X - \\mu}{\\sigma} $$\n\n### **Step-by-Step Solution**\n1. **Identify Parameters for Walk-in Orders:**\n   - Mean $\\mu = 10$\n   - Standard Deviation $\\sigma = 3$\n2. **Calculate Z-scores for the range [7, 16]:**\n   - For lower bound 7: $Z_1 = (7 - 10) / 3 = -1$\n   - For upper bound 16: $Z_2 = (16 - 10) / 3 = 2$\n3. **Find Area under the Normal Curve:**\n   - $P(7 < X < 16) = P(-1 < Z < 2)$\n   - $P(-1 < Z < 2) = P(Z < 2) - P(Z < -1)$\n   - Using Z-tables: $P(Z < 2) \\approx 0.9772$ and $P(Z < -1) \\approx 0.1587$\n4. **Final Calculation:**\n   - $0.9772 - 0.1587 = 0.8185$\n\n### **Result**\nThe probability is **0.8185**, which is **Between 0.75 and 0.90**.",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "236144711",
       "module": 4,
-      "question_text": "Daily demand at a bakery has two components: walk-in orders that have a Normal distribution with mean 10 and standard deviation 3, and online orders that have a Normal distribution with mean 15 and standard deviation 4. The two demands have a correlation coefficient of -0.2. If the overall daily demand exceeds 32 per day, the bakery considers it to be a Super-Day. What is the probability that the bakery will have a Super-Day?",
+      "question_text": "If the overall daily demand exceeds 32 per day, the bakery considers it to be a Super-Day. What is the probability that the bakery will have a Super-Day?",
       "question_type": "MCQ",
       "marks_allocated": 0.0,
       "status": "Answered",
@@ -180,7 +247,8 @@
         "D": "More than 0.16"
       },
       "correct_option_label": "B",
-      "explanation": "### **Concept and Formula**\nThe total demand ($T$) is the sum of walk-in ($W$) and online ($O$) orders. For correlated normal variables:\n- $\\mu_T = \\mu_W + \\mu_O$\n- $\\sigma_T^2 = \\sigma_W^2 + \\sigma_O^2 + 2\\rho\\sigma_W\\sigma_O$\n\n### **Step-by-Step Solution**\n1. **Calculate the Combined Mean:**\n   - $\\mu_T = 10 + 15 = 25$\n2. **Calculate the Combined Variance:**\n   - $\\sigma_T^2 = 3^2 + 4^2 + 2(-0.2 \\times 3 \\times 4)$\n   - $\\sigma_T^2 = 9 + 16 - 4.8 = 20.2$\n3. **Calculate the Combined Standard Deviation:**\n   - $\\sigma_T = \\sqrt{20.2} \\approx 4.494$\n4. **Calculate Z-score for $T > 32$:**\n   - $Z = (32 - 25) / 4.494 \\approx 1.557$\n5. **Find Probability ($P > 1.56$):**\n   - $P(T > 32) = 1 - P(Z < 1.557) \\approx 1 - 0.9403 = 0.0597$\n\n### **Result**\nThe probability is approximately **0.06**, which is **Between 0.04 and 0.08**."
+      "explanation": "### **Concept and Formula**\nThe total demand ($T$) is the sum of walk-in ($W$) and online ($O$) orders. For correlated normal variables:\n- $\\mu_T = \\mu_W + \\mu_O$\n- $\\sigma_T^2 = \\sigma_W^2 + \\sigma_O^2 + 2\\rho\\sigma_W\\sigma_O$\n\n### **Step-by-Step Solution**\n1. **Calculate the Combined Mean:**\n   - $\\mu_T = 10 + 15 = 25$\n2. **Calculate the Combined Variance:**\n   - $\\sigma_T^2 = 3^2 + 4^2 + 2(-0.2 \\times 3 \\times 4)$\n   - $\\sigma_T^2 = 9 + 16 - 4.8 = 20.2$\n3. **Calculate the Combined Standard Deviation:**\n   - $\\sigma_T = \\sqrt{20.2} \\approx 4.494$\n4. **Calculate Z-score for $T > 32$:**\n   - $Z = (32 - 25) / 4.494 \\approx 1.557$\n5. **Find Probability ($P > 1.56$):**\n   - $P(T > 32) = 1 - P(Z < 1.557) \\approx 1 - 0.9403 = 0.0597$\n\n### **Result**\nThe probability is approximately **0.06**, which is **Between 0.04 and 0.08**.",
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "236144712",

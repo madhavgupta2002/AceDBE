@@ -215,7 +215,7 @@ export function getPyqData(): TermPyqGroup[] {
             const cycleId = matchCycleId(rawDate, f);
             if (cycleId && papersByCycle[cycleId]) {
               const questionCount = Array.isArray(parsed.questions)
-                ? parsed.questions.length
+                ? parsed.questions.filter((q: { is_passage?: boolean }) => !q.is_passage).length
                 : 0;
               const bankName = f.replace('.json', '');
 

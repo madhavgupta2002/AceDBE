@@ -51,6 +51,9 @@ export function printExamPaper({
 
       return `
         <div class="question-block">
+          ${q.passage && !questions.slice(0, idx).some((p) => p.passage?.id === q.passage!.id)
+            ? `<div class="passage"><strong>Passage</strong> (Q${idx + 1}${q.passage.total > 1 ? ' onwards' : ''})<br>${escapeHtml(q.passage.text)}</div>`
+            : ''}
           <div class="question-header">
             <span class="q-num">Q${idx + 1}.</span>
             <div class="q-content">${escapeHtml(q.text)}</div>
@@ -110,6 +113,7 @@ export function printExamPaper({
           color: #555;
           margin-top: 4px;
         }
+        .passage { background: #f3f3f3; border-left: 3px solid #999; padding: 6px 8px; margin: 0 0 6px; font-size: 0.95em; white-space: pre-wrap; }
         .question-block {
           margin-bottom: 11px;
           page-break-inside: avoid;

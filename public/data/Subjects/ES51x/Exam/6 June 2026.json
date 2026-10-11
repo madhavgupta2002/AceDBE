@@ -5,50 +5,50 @@
         "batch": "",
         "attempt": "",
         "exam_pattern": {
-          "exam_name": "IIMB BBA DBE Batch 1 Term 5",
-          "duration_min": 60,
-          "total_marks": 70,
-          "negative_marking": false,
-          "calculator": "none",
-          "timing_mode": "sectional",
-          "reference_materials": [],
-          "instructions": [
-            "Revised pattern: 5 minutes are kept for cross-checking. The written sections are stored as 8 SUBJECTIVE entries in this bank."
-          ],
-          "sections": [
-            {
-              "name": "Section A",
-              "question_type": "MCQ",
-              "num_questions": 20,
-              "marks_per_question": 2,
-              "duration_min": 15,
-              "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
-            },
-            {
-              "name": "Section B",
-              "question_type": "SHORT_ANSWER",
-              "num_questions": 2,
-              "marks_per_question": 5,
-              "duration_min": 10
-            },
-            {
-              "name": "Section C",
-              "question_type": "CASE_BASED",
-              "num_questions": 1,
-              "marks_per_question": 10,
-              "duration_min": 15,
-              "note": "Choice of A or B"
-            },
-            {
-              "name": "Section D",
-              "question_type": "HIGHER_ORDER",
-              "num_questions": 1,
-              "marks_per_question": 10,
-              "duration_min": 15,
-              "note": "Choice of A or B"
-            }
-          ],
-          "total_questions": 24
+            "exam_name": "IIMB BBA DBE Batch 1 Term 5",
+            "duration_min": 60,
+            "total_marks": 70,
+            "negative_marking": false,
+            "calculator": "none",
+            "timing_mode": "sectional",
+            "reference_materials": [],
+            "instructions": [
+                "Revised pattern: 5 minutes are kept for cross-checking. The written sections are stored as 8 SUBJECTIVE entries in this bank."
+            ],
+            "sections": [
+                {
+                    "name": "Section A",
+                    "question_type": "MCQ",
+                    "num_questions": 20,
+                    "marks_per_question": 2,
+                    "duration_min": 15,
+                    "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
+                },
+                {
+                    "name": "Section B",
+                    "question_type": "SHORT_ANSWER",
+                    "num_questions": 2,
+                    "marks_per_question": 5,
+                    "duration_min": 10
+                },
+                {
+                    "name": "Section C",
+                    "question_type": "CASE_BASED",
+                    "num_questions": 1,
+                    "marks_per_question": 10,
+                    "duration_min": 15,
+                    "note": "Choice of A or B"
+                },
+                {
+                    "name": "Section D",
+                    "question_type": "HIGHER_ORDER",
+                    "num_questions": 1,
+                    "marks_per_question": 10,
+                    "duration_min": 15,
+                    "note": "Choice of A or B"
+                }
+            ],
+            "total_questions": 24
         }
     },
     "questions": [
@@ -348,36 +348,70 @@
             "module": 4
         },
         {
-            "question_id": "24",
-            "question_text": "[Case Context: Consider a small emerging economy that has, over the past decade, borrowed heavily in US dollars to finance infrastructure projects. It has run current-account deficits averaging 4 percent of GDP, financed largely by short-term capital inflows. Its central bank has been defending an exchange rate of around 200 local-currency units per dollar by selling reserves. Tourism, a major source of foreign exchange, has just collapsed because of a global shock.]\n\n(i) Identify the key macroeconomic vulnerabilities in this country and explain why a crisis becomes increasingly likely. (5 marks)",
+            "question_id": "Passage_1",
+            "question_text": "[Case Context: Consider a small emerging economy that has, over the past decade, borrowed heavily in US dollars to finance infrastructure projects. It has run current-account deficits averaging 4 percent of GDP, financed largely by short-term capital inflows. Its central bank has been defending an exchange rate of around 200 local-currency units per dollar by selling reserves. Tourism, a major source of foreign exchange, has just collapsed because of a global shock.]",
             "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
             "correct_option_label": "",
-            "explanation": "The key macroeconomic vulnerabilities of this country are:\n1. **Severe Currency Mismatch**: Borrowing heavily in USD to fund domestic, long-term infrastructure exposes the country to massive debt-servicing risks if the local currency depreciates.\n2. **High Structural Current Account Deficit**: Running a persistent CAD of 4% of GDP financed by highly volatile short-term 'hot money' creates a fragile external position.\n3. **Depletion of FX Reserves**: The central bank's defense of a fixed exchange rate (200 units/$) consumes finite dollar reserves.\n4. **Lack of Economic Diversification**: High dependence on tourism for forex means a localized collapse halts major foreign inflows.\n\nA balance of payments crisis is highly likely because the collapse of tourism cuts off vital forex inflows. Lacking dollar earnings, the central bank will rapidly run out of reserves to defend the currency peg. As reserves dwindle, short-term investors will panic and flee, triggering a currency collapse, speculative attacks, and eventual default on the massive dollar-denominated debt.",
+            "explanation": "Shared passage for the questions that follow.",
             "module": 3
         },
         {
+            "question_id": "24",
+            "question_text": "(i) Identify the key macroeconomic vulnerabilities in this country and explain why a crisis becomes increasingly likely. (5 marks)",
+            "question_type": "SUBJECTIVE",
+            "correct_option_label": "",
+            "explanation": "The key macroeconomic vulnerabilities of this country are:\n1. **Severe Currency Mismatch**: Borrowing heavily in USD to fund domestic, long-term infrastructure exposes the country to massive debt-servicing risks if the local currency depreciates.\n2. **High Structural Current Account Deficit**: Running a persistent CAD of 4% of GDP financed by highly volatile short-term 'hot money' creates a fragile external position.\n3. **Depletion of FX Reserves**: The central bank's defense of a fixed exchange rate (200 units/$) consumes finite dollar reserves.\n4. **Lack of Economic Diversification**: High dependence on tourism for forex means a localized collapse halts major foreign inflows.\n\nA balance of payments crisis is highly likely because the collapse of tourism cuts off vital forex inflows. Lacking dollar earnings, the central bank will rapidly run out of reserves to defend the currency peg. As reserves dwindle, short-term investors will panic and flee, triggering a currency collapse, speculative attacks, and eventual default on the massive dollar-denominated debt.",
+            "module": 3,
+            "passage_id": "Passage_1"
+        },
+        {
             "question_id": "25",
-            "question_text": "[Case Context: Refer to the case study in Question ID 24 regarding a small emerging economy with high USD debt and a tourism collapse.]\n\n(ii) Using the impossible trinity, set out the choices the country now faces, and identify two lessons from India's 1991 BoP crisis that would be relevant. (5 marks)",
+            "question_text": "(ii) Using the impossible trinity, set out the choices the country now faces, and identify two lessons from India's 1991 BoP crisis that would be relevant. (5 marks)",
             "question_type": "SUBJECTIVE",
             "correct_option_label": "",
             "explanation": "The Impossible Trinity dictates that a country cannot simultaneously maintain a fixed exchange rate, free capital mobility, and independent monetary policy. The country faces three hard choices:\n1. **Abandon the fixed exchange rate**: Let the currency depreciate to find its market level, which will, however, increase the real burden of the dollar debt.\n2. **Impose strict capital controls**: Restrict outflows to protect foreign reserves, sacrificing capital mobility to keep the peg and control interest rates.\n3. **Sacrifice monetary independence**: Heavily increase domestic interest rates to attract capital, which would defend the exchange rate but severely contract the domestic economy.\n\nTwo relevant lessons from India's 1991 BoP crisis are:\n1. **Shift to a flexible exchange rate regime**: Transitioning from a rigid peg to a managed float (like India's LERMS in 1992-93) helps absorb external shocks and prevents speculative runs on reserves.\n2. **Ensure stable financing of deficits**: Prioritize long-term FDI over short-term FPI or volatile commercial borrowings, while instituting structural reforms to reduce export concentration.",
+            "module": 3,
+            "passage_id": "Passage_1"
+        },
+        {
+            "question_id": "Passage_2",
+            "question_text": "[Case Context: In a hypothetical scenario, the US Federal Reserve unexpectedly signals a sharper pace of rate hikes. Over the next three months, Foreign Portfolio Investors pull out heavily from Indian equity and bond markets. The rupee depreciates from 83 to 89 per dollar, the Sensex falls 12 percent, and 10-year Indian bond yields rise sharply. India had entered this episode with a current-account deficit of 2.1 percent of GDP.]",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
             "module": 3
         },
         {
             "question_id": "27",
-            "question_text": "[Case Context: In a hypothetical scenario, the US Federal Reserve unexpectedly signals a sharper pace of rate hikes. Over the next three months, Foreign Portfolio Investors pull out heavily from Indian equity and bond markets. The rupee depreciates from 83 to 89 per dollar, the Sensex falls 12 percent, and 10-year Indian bond yields rise sharply. India had entered this episode with a current-account deficit of 2.1 percent of GDP.]\n\n(i) Based on the exchange-rate channel and the country risk premium, explain why a Fed announcement, without an actual rate change, can trigger such large effects on Indian markets. (5 marks)",
+            "question_text": "(i) Based on the exchange-rate channel and the country risk premium, explain why a Fed announcement, without an actual rate change, can trigger such large effects on Indian markets. (5 marks)",
             "question_type": "SUBJECTIVE",
             "correct_option_label": "",
             "explanation": "Even without an immediate rate hike, a Fed announcement operates via the expectations channel of monetary policy. Forward-looking financial markets immediately price in the future changes:\n1. **Exchange-Rate Channel**: Investors anticipate a shrinking interest rate differential ($i_{Domestic} - i_{Foreign}$). Under Covered and Uncovered Interest Rate Parity, this expectation leads to projected rupee depreciation, prompting portfolio investors to exit Indian assets immediately to avoid currency losses.\n2. **Country Risk Premium**: As global risk-free yields are expected to rise, emerging market assets look riskier relative to US Treasuries. The risk-adjusted return on Indian assets drops, and the country risk premium rises. FPIs aggressively dump Indian equities and bonds ('hot money' flight), causing the stock index to crash and pushing local bond yields upward as bond prices fall.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "28",
-            "question_text": "[Case Context: Refer to the case study in Question ID 27 regarding US Federal Reserve rate hike signals and capital flight from India.]\n\n(ii) Recommend three policy responses RBI could deploy, distinguishing between forex intervention, monetary policy, and macro-prudential tools. (5 marks)",
+            "question_text": "(ii) Recommend three policy responses RBI could deploy, distinguishing between forex intervention, monetary policy, and macro-prudential tools. (5 marks)",
             "question_type": "SUBJECTIVE",
             "correct_option_label": "",
             "explanation": "The RBI can deploy the following targeted instruments:\n1. **Forex Intervention**: Direct selling of foreign exchange reserves in the spot market to provide dollar liquidity, helping to stabilize the rupee's sudden depreciation and curb herd-like panic.\n2. **Monetary Policy**: Conduct defensive, short-term rate hikes (raising the repo rate) to widen the interest rate differential, making domestic debt assets more attractive to international capital and mitigating capital flight.\n3. **Macro-Prudential Tools**: Ease regulatory restrictions on external commercial borrowings (ECBs) and relax interest rate caps on NRI deposits to stimulate non-portfolio capital inflows, while setting strict capital buffers on domestic banks' unhedged foreign exchange exposures.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "29",

@@ -7,8 +7,23 @@
     },
     "questions": [
         {
+            "question_id": "Passage_1",
+            "question_text": "**[Precision Pump Manufacturing Firm Case]**\nA mid-sized engineering company manufactures industrial pumps for chemical plants, food processors, and water-treatment facilities. The company offers 45 pump models with multiple motor sizes and casing materials (cast iron, stainless steel, polymer-lined). Most customer orders are configured after order receipt.\nThe factory has machining, casting finishing, heat treatment, painting, and final assembly departments. Machines are arranged by function. Shafts, impellers, housings, and brackets are produced internally, while bearings, seals, and motors are purchased from suppliers.\nBecause demand fluctuates and each order has different specifications, jobs wait between departments. Final assembly combines purchased and manufactured parts, then each pump is pressure-tested before shipping.\nBased on this description, answer the following questions.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 1
+        },
+        {
             "question_id": "2",
-            "question_text": "**[Precision Pump Manufacturing Firm Case]**\nA mid-sized engineering company manufactures industrial pumps for chemical plants, food processors, and water-treatment facilities. The company offers 45 pump models with multiple motor sizes and casing materials (cast iron, stainless steel, polymer-lined). Most customer orders are configured after order receipt.\nThe factory has machining, casting finishing, heat treatment, painting, and final assembly departments. Machines are arranged by function. Shafts, impellers, housings, and brackets are produced internally, while bearings, seals, and motors are purchased from suppliers.\nBecause demand fluctuates and each order has different specifications, jobs wait between departments. Final assembly combines purchased and manufactured parts, then each pump is pressure-tested before shipping.\nBased on this description, answer the following questions.\n\nWhich production system best describes this factory?",
+            "question_text": "Which production system best describes this factory?",
             "question_type": "MCQ",
             "options": {
                 "A": "Jumbled flow system",
@@ -17,11 +32,12 @@
             },
             "correct_option_label": "A",
             "explanation": "A jumbled flow system is characterized by high variety, low-to-medium volume, and customized or configured-to-order production where jobs follow non-standard, jumbled routings across functional departments.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "3",
-            "question_text": "Refer to the Precision Pump Manufacturing Firm case in Question 2 for context.\n\nWhich layout is most likely used?",
+            "question_text": "Which layout is most likely used?",
             "question_type": "MCQ",
             "options": {
                 "A": "Process layout",
@@ -29,11 +45,12 @@
             },
             "correct_option_label": "A",
             "explanation": "In a process layout (functional layout), machines and workstations performing similar functions (such as machining, heat treatment, painting) are grouped together to handle high variety and customized workflows.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "4",
-            "question_text": "Refer to the Precision Pump Manufacturing Firm case in Question 2 for context.\n\nWhere is the highest inventory likely concentrated?",
+            "question_text": "Where is the highest inventory likely concentrated?",
             "question_type": "MCQ",
             "options": {
                 "A": "Finished goods only",
@@ -43,11 +60,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Because products are configured after order receipt and jobs wait between functional departments due to varying processing specifications, inventory builds up heavily as raw materials and work-in-process (WIP).",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "5",
-            "question_text": "Refer to the Precision Pump Manufacturing Firm case in Question 2 for context.\n\nWhich action would most improve delivery speed without harming variety?",
+            "question_text": "Which action would most improve delivery speed without harming variety?",
             "question_type": "MCQ",
             "options": {
                 "A": "Stop internal machining",
@@ -56,11 +74,27 @@
             },
             "correct_option_label": "B",
             "explanation": "Reducing machine setup times enables smaller batch sizes and rapid changeovers between diverse pump models, significantly cutting manufacturing lead times while fully preserving product variety.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
+        },
+        {
+            "question_id": "Passage_2",
+            "question_text": "**[Project Network Analysis]**\nPlease consider the below data on project network problem to answer the next set of questions.\n\n| Activity | Predecessor | Normal Duration (weeks) |\n| :---: | :---: | :---: |\n| A | - | 3 |\n| B | - | 4 |\n| C | A | 2 |\n| D | B | 5 |\n| E | C | 4 |\n| F | D | 3 |\n| G | C | 6 |\n| H | E | 2 |\n| I | E, F | 5 |\n| J | G, H, I | 3 |",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 2
         },
         {
             "question_id": "7",
-            "question_text": "**[Project Network Analysis]**\nPlease consider the below data on project network problem to answer the next set of questions.\n\n| Activity | Predecessor | Normal Duration (weeks) |\n| :---: | :---: | :---: |\n| A | - | 3 |\n| B | - | 4 |\n| C | A | 2 |\n| D | B | 5 |\n| E | C | 4 |\n| F | D | 3 |\n| G | C | 6 |\n| H | E | 2 |\n| I | E, F | 5 |\n| J | G, H, I | 3 |\n\nWhich activity is a merge point?",
+            "question_text": "Which activity is a merge point?",
             "question_type": "MCQ",
             "options": {
                 "A": "F",
@@ -70,11 +104,12 @@
             },
             "correct_option_label": "D",
             "explanation": "A merge point in a project network is an activity that has multiple immediate predecessors. Activity I requires both activities E and F to be completed before it can start.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "8",
-            "question_text": "Refer to the Project Network Analysis case in Question 7 for context.\n\nIf activity D is completed early, which activity can begin earlier immediately?",
+            "question_text": "If activity D is completed early, which activity can begin earlier immediately?",
             "question_type": "MCQ",
             "options": {
                 "A": "E",
@@ -84,11 +119,12 @@
             },
             "correct_option_label": "B",
             "explanation": "Activity D is the sole immediate predecessor of activity F. Therefore, completing activity D early allows activity F to begin immediately earlier.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "9",
-            "question_text": "Refer to the Project Network Analysis case in Question 7 for context.\n\nIf the manager can crash only one activity to reduce total project completion time most effectively, which activity is the best candidate?",
+            "question_text": "If the manager can crash only one activity to reduce total project completion time most effectively, which activity is the best candidate?",
             "question_type": "MCQ",
             "options": {
                 "A": "B",
@@ -98,11 +134,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Activity J lies on the critical path (B → D → F → I → J, duration 20 weeks) and is the final converging activity through which all parallel paths pass. Crashing J directly reduces overall project duration without being constrained by parallel paths.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "10",
-            "question_text": "Refer to the Project Network Analysis case in Question 7 for context.\n\nWhich activity is the final merge point, just before project completion?",
+            "question_text": "Which activity is the final merge point, just before project completion?",
             "question_type": "MCQ",
             "options": {
                 "A": "G",
@@ -112,11 +149,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Activity J has predecessors G, H, and I converging into it, making it the final merge point in the network prior to project completion.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "11",
-            "question_text": "Refer to the Project Network Analysis case in Question 7 for context.\n\nIf activity C is delayed by 2 weeks, which activities are directly affected first?",
+            "question_text": "If activity C is delayed by 2 weeks, which activities are directly affected first?",
             "question_type": "MCQ",
             "options": {
                 "A": "E and G",
@@ -126,11 +164,12 @@
             },
             "correct_option_label": "A",
             "explanation": "Activities E and G both have activity C as their immediate predecessor. Consequently, any delay in activity C directly impacts the start of activities E and G first.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "12",
-            "question_text": "Refer to the Project Network Analysis case in Question 7 for context.\n\nWhich of the following activities has no predecessor?",
+            "question_text": "Which of the following activities has no predecessor?",
             "question_type": "MCQ",
             "options": {
                 "A": "D",
@@ -140,11 +179,12 @@
             },
             "correct_option_label": "D",
             "explanation": "Both activities A and B have no predecessors (denoted by `-`), allowing them to start immediately at the beginning of the project.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "13",
-            "question_text": "Refer to the Project Network Analysis case in Question 7 for context.\n\nIf activity F finishes early, what is the earliest likely benefit?",
+            "question_text": "If activity F finishes early, what is the earliest likely benefit?",
             "question_type": "MCQ",
             "options": {
                 "A": "I may start earlier",
@@ -154,11 +194,12 @@
             },
             "correct_option_label": "A",
             "explanation": "Activity F is an immediate predecessor to activity I. If F finishes early, activity I may start earlier, provided its other predecessor (activity E) is also complete.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "14",
-            "question_text": "Refer to the Project Network Analysis case in Question 7 for context.\n\nWhich sequence represents a valid path in the network?",
+            "question_text": "Which sequence represents a valid path in the network?",
             "question_type": "MCQ",
             "options": {
                 "A": "B → C → G → J",
@@ -168,7 +209,8 @@
             },
             "correct_option_label": "C",
             "explanation": "Tracing immediate predecessors: A has no predecessor, C follows A, E follows C, I follows E, and J follows I. Thus, A → C → E → I → J forms a technologically valid sequence through the network.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "15",
@@ -269,8 +311,23 @@
             "module": 4
         },
         {
+            "question_id": "Passage_3",
+            "question_text": "A bakery uses flour at a constant rate of 80 kg per day throughout the year. Its regular supplier, S1, charges ₹20 per kg. The annual holding cost is ₹4 per kg. For Supplier S1, there is no order-processing charge. However, the bakery must arrange transportation separately, which costs ₹144 per order/trip. The lead time from S1 is 4 days. A new supplier, S2, has recently started operations. S2 charges ₹19 per kg and provides free delivery. However, placing each order with S2 requires staff time worth ₹100 per order. The lead time from S2 is 7 days. Assume 365 days per year, constant demand, and no shortages.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 3
+        },
+        {
             "question_id": "23",
-            "question_text": "A bakery uses flour at a constant rate of 80 kg per day throughout the year. Its regular supplier, S1, charges ₹20 per kg. The annual holding cost is ₹4 per kg. For Supplier S1, there is no order-processing charge. However, the bakery must arrange transportation separately, which costs ₹144 per order/trip. The lead time from S1 is 4 days. A new supplier, S2, has recently started operations. S2 charges ₹19 per kg and provides free delivery. However, placing each order with S2 requires staff time worth ₹100 per order. The lead time from S2 is 7 days. Assume 365 days per year, constant demand, and no shortages.\n\nCompared with Supplier S1, Supplier S2 is:",
+            "question_text": "Compared with Supplier S1, Supplier S2 is:",
             "question_type": "MCQ",
             "options": {
                 "A": "Lower-cost, longer lead-time supplier",
@@ -280,11 +337,12 @@
             },
             "correct_option_label": "A",
             "explanation": "Supplier S2 offers a lower unit price (₹19/kg compared to S1's ₹20/kg) but has a longer delivery lead time (7 days compared to S1's 4 days).",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "24",
-            "question_text": "Refer to the Bakery Inventory case in Question 23 for context.\n\nWhat is annual demand for flour?",
+            "question_text": "What is annual demand for flour?",
             "question_type": "MCQ",
             "options": {
                 "A": "24,000 kg",
@@ -294,11 +352,12 @@
             },
             "correct_option_label": "D",
             "explanation": "1. Daily demand $d = 80\\text{ kg/day}$.\n2. Number of days per year $= 365$.\n$$\\text{Annual Demand } (D) = 80 \\times 365 = 29,200\\text{ kg}.$$",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "25",
-            "question_text": "Refer to the Bakery Inventory case in Question 23 for context.\n\nWhat is economic ordering quantity (EOQ) from Supplier S1?",
+            "question_text": "What is economic ordering quantity (EOQ) from Supplier S1?",
             "question_type": "MCQ",
             "options": {
                 "A": "1,450 kg",
@@ -308,11 +367,12 @@
             },
             "correct_option_label": "A",
             "explanation": "For Supplier S1, $D = 29,200\\text{ kg}$, $S = ₹144$, and $H = ₹4/\\text{kg/year}$:\n$$\\text{EOQ} = \\sqrt{\\frac{2DS}{H}} = \\sqrt{\\frac{2 \\times 29,200 \\times 144}{4}} = \\sqrt{2,102,400} \\approx 1,450\\text{ kg}.$$",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "26",
-            "question_text": "Refer to the Bakery Inventory case in Question 23 for context.\n\nIf bakery buys from Supplier S2 at EOQ, average inventory is:",
+            "question_text": "If bakery buys from Supplier S2 at EOQ, average inventory is:",
             "question_type": "MCQ",
             "options": {
                 "A": "1,404 kg",
@@ -322,11 +382,12 @@
             },
             "correct_option_label": "B",
             "explanation": "1. For Supplier S2, $D = 29,200\\text{ kg}$, $S = ₹100$, and $H = ₹4/\\text{kg/year}$:\n$$\\text{EOQ}_{S2} = \\sqrt{\\frac{2 \\times 29,200 \\times 100}{4}} = \\sqrt{1,460,000} \\approx 1,208.3\\text{ kg}.$$\n2. Average cycle inventory is:\n$$\\frac{\\text{EOQ}}{2} = \\frac{1,208.3}{2} \\approx 604.15\\text{ kg} \\approx 604\\text{ kg}.$$",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "27",
-            "question_text": "Refer to the Bakery Inventory case in Question 23 for context.\n\nWhich supplier has higher reorder point, and why?",
+            "question_text": "Which supplier has higher reorder point, and why?",
             "question_type": "MCQ",
             "options": {
                 "A": "Same for both suppliers",
@@ -336,7 +397,8 @@
             },
             "correct_option_label": "B",
             "explanation": "Reorder point is given by $\\text{ROP} = d \\times L$. With daily consumption $d$ identical for both, Supplier S2 has a higher reorder point ($80 \\times 7 = 560\\text{ kg}$) than S1 ($80 \\times 4 = 320\\text{ kg}$) due to its longer lead time.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "28",
