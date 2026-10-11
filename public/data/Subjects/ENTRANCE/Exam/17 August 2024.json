@@ -1,0 +1,1175 @@
+{
+  "exam_metadata": {
+    "subject_name": "BBA-DBE Entrance Test",
+    "exam_date": "17 August 2024",
+    "batch": "",
+    "attempt": "Shift 2",
+    "exam_pattern": {
+      "exam_name": "IIMB BBA-DBE Entrance Test",
+      "duration_min": 90,
+      "total_marks": 60,
+      "total_questions": 60,
+      "negative_marking": false,
+      "calculator": "standard",
+      "timing_mode": "global",
+      "reference_materials": [],
+      "instructions": [
+        "Computer-based test of 90 minutes with 60 questions of 1 mark each; there is no negative marking.",
+        "Physical calculators are not allowed. An on-screen calculator is provided.",
+        "Questions can be attempted in any order and you can move freely between sections."
+      ],
+      "sections": [
+        {
+          "name": "Verbal Ability & Reading Comprehension",
+          "question_type": "MCQ",
+          "num_questions": 20,
+          "marks_per_question": 1,
+          "question_ids": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20"
+          ],
+          "context_blocks": [
+            {
+              "context_question_id": "Passage_1",
+              "applies_to": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Quantitative Aptitude & Data Interpretation",
+          "question_type": "MCQ",
+          "num_questions": 20,
+          "marks_per_question": 1,
+          "question_ids": [
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40"
+          ],
+          "context_blocks": [
+            {
+              "context_question_id": "Passage_2",
+              "applies_to": [
+                "21",
+                "22",
+                "23",
+                "24"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Logical Analytical Reasoning",
+          "question_type": "MCQ",
+          "num_questions": 10,
+          "marks_per_question": 1,
+          "question_ids": [
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50"
+          ]
+        },
+        {
+          "name": "General Awareness",
+          "question_type": "MCQ",
+          "num_questions": 10,
+          "marks_per_question": 1,
+          "question_ids": [
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"
+          ]
+        }
+      ]
+    }
+  },
+  "questions": [
+    {
+      "question_id": "Passage_1",
+      "question_text": "Read the comprehension and answer the questions.\n\nEmployers expect managers and leaders to consider the various viewpoints to make thoughtful and tough decisions. Good decision-makers do not get influenced by their emotions or personal loyalty when deciding about the company's betterment.  This helps make unbiased decisions and even minimizes the chances of the same problem recurring again. Many companies often choose managers with wrong skills who end up making disastrous decisions. The key components of problem solving skills are analytical and critical thinking, creativity and decision making. Analytical thinkers identify patterns, relationships, and root causes, making it easier to devise effective solutions. Critical thinkers make sure that solutions are not just quick fixes but are grounded in logic and evidence. Problem-solving skills are essential for navigating the complexities of modern life and work. By developing these skills, individuals can become more effective, adaptable, and successful in achieving their goals. Whether in personal situations or professional environments, the ability to solve problems efficiently and creatively is a valuable asset that can lead to\nimproved outcomes and greater satisfaction.\nHints :\nINDEED -CAREER DEVELOPMENT- EDITORIAL TEAM",
+      "question_type": "SUBJECTIVE",
+      "options": {},
+      "correct_option_label": null,
+      "explanation": "",
+      "module": "Verbal Ability"
+    },
+    {
+      "question_id": "1",
+      "question_text": "Choose an appropriate title for the passage",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Top Managerial Skills for decision making",
+        "B": "HR Skills for decision making",
+        "C": "Problem Solving Skills for Decision making",
+        "D": "Creative Skills for decision making"
+      },
+      "correct_option_label": "C",
+      "explanation": "The paragraph is about the importance of problem solving skills. Hence option 3 is more suitable",
+      "module": "Verbal Ability",
+      "topic": "Reading Comprehension",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "2",
+      "question_text": "What is the central theme of this passage?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Skills required for decision making while encountering HR solutions",
+        "B": "Most important skill required for managers for decision making, when encountering problems.",
+        "C": "Decision making skills while encountering emotional situations.",
+        "D": "Decision making skills while dealing with complaints"
+      },
+      "correct_option_label": "B",
+      "explanation": "INDEED -CAREER DEVELOPMENT- EDITORIAL TEAM\nYes . option 2 indicates the most important skill for decision making.",
+      "module": "Verbal Ability",
+      "topic": "Reading Comprehension",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "3",
+      "question_text": "What is the inference drawn from this passage?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The manager should act without emotion and bias.",
+        "B": "Problem solving skills helps managers to act without bias while tackling problems.",
+        "C": "Managerial skills are required to solve problems.",
+        "D": "No special skill is required to solve problems in the office."
+      },
+      "correct_option_label": "B",
+      "explanation": "INDEED -CAREER DEVELOPMENT- EDITORIAL TEAM",
+      "module": "Verbal Ability",
+      "topic": "Reading Comprehension",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "4",
+      "question_text": "What is the tone of the passage",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Humorous",
+        "B": "Sarcastic",
+        "C": "Formal",
+        "D": "Arrogant"
+      },
+      "correct_option_label": "C",
+      "explanation": "INDEED -CAREER DEVELOPMENT- EDITORIAL TEAM",
+      "module": "Verbal Ability",
+      "topic": "Reading Comprehension",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "5",
+      "question_text": "Select the appropriate option that refers to the given sentence.\n\nAn indirect reference to someone or something",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Illusion",
+        "B": "Allusion",
+        "C": "Allegory",
+        "D": "Elusion"
+      },
+      "correct_option_label": "B",
+      "explanation": "https://www.collinsdictionary.com/dictionary/english/allusion",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Easy",
+      "subtopic": "Words and Phrases often confused"
+    },
+    {
+      "question_id": "6",
+      "question_text": "Select the correct option that matches with its antonym.\n\nWords\nAntonym A-Generous\n1-Pessimistic\nB-Optimistic\n2-Reveal\nC-Conceal\n3-Stingy\nD-Bitter\n4-Sweet",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A-1, B-2, C-3, D-4",
+        "B": "A-2, B-1, C-3, D-4",
+        "C": "A-3, B-2, C-1, D-4",
+        "D": "A-2, B-3, C-1, D-4"
+      },
+      "correct_option_label": "D",
+      "explanation": "https://www.merriam-webster.com/thesaurus/generous\nhttps://www.merriam-webster.com/thesaurus/optimistic\nhttps://www.merriam-webster.com/thesaurus/reveal\nhttps://www.merriam-webster.com/thesaurus/bitter",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Easy",
+      "subtopic": "Antonyms"
+    },
+    {
+      "question_id": "7",
+      "question_text": "Select the CORRECT synonym for bold word in the below sentence.\n\nDespite the professor's erudition, the lecture was easy, accessible and engaging for all students.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rendition",
+        "B": "Scholarship",
+        "C": "Ignorance",
+        "D": "Acquisition"
+      },
+      "correct_option_label": "B",
+      "explanation": "https://www.collinsdictionary.com/dictionary/english/erudition",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Medium",
+      "subtopic": "Synonyms"
+    },
+    {
+      "question_id": "8",
+      "question_text": "Which of the following analogies best represents the relationship between \"Ocean\" and \"Water\"?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Mountain : Valley",
+        "B": "Forest : Trees",
+        "C": "Sky : Cloud",
+        "D": "River : Stream"
+      },
+      "correct_option_label": "B",
+      "explanation": "Answer Key Change by IIMB\n\nThe relationship between \"Ocean\" and \"Water\" is similar to the relationship between \"River\" and \"Stream\" in option d). Just as an ocean is a large body of water, a river is a significant body of water as well. Similarly, a stream is a smaller body of water, akin to how the word \"ocean\" contrasts with \"river\" in terms of size.\nIn option a) \"Mountain : Valley\", the relationship doesn't fit the analogy because a valley is a geographical feature formed between mountains, which contrasts with the relationship between \"Ocean\" and \"Water\".\nOption b) \"Forest : Tree\" represents a part-whole relationship, where a forest contains many trees, unlike the relationship between \"Ocean\" and \"Water\".\nOption c) \"Sky : Cloud\" doesn't fit because while clouds are part of the sky, they are not the primary substance that makes up the sky, as water is the primary substance in an ocean.\nTherefore, option d) \"River : Stream\" is the best analogy as it represents a similar relationship of larger body to smaller body, just as ocean relates to water.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Easy",
+      "subtopic": "Analogies"
+    },
+    {
+      "question_id": "9",
+      "question_text": "The given sentences, when properly sequenced, form a coherent paragraph. Each sentence is labeled with a letter. Choose the most logical order of the sentences from among the given choices to construct a coherent paragraph.\n\nA. The team worked tirelessly through the night, fueled by coffee and determination.\nB. Finally, as the first light of dawn crept over the horizon, they completed the project.\n\nC. Despite the setbacks they faced, they never lost sight of their goal.\nD. It was a moment of triumph, marking the culmination of weeks of hard work.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "ABDC",
+        "B": "ABCD",
+        "C": "DCAB",
+        "D": "ACBD"
+      },
+      "correct_option_label": "D",
+      "explanation": "First, we need to establish the sentence that introduces the situation or context. Sentence A does this well, setting the scene of the team working through the night.\nNext, we should describe any challenges or conditions they faced. Sentence C fits here as it mentions setbacks and maintaining focus on their goal, which is typical after the initial setup.\nThen, we follow with the completion of the project. Sentence B is appropriate here because it signifies the conclusion of their work. Finally, we describe the result or impact of their efforts. Sentence D follows logically, expressing the triumph and culmination of their efforts. Thus, the correct sequence is:\nA. The team worked tirelessly through the night, fueled by coffee and determination. C. Despite the setbacks they faced, they never lost sight of their goal. B. Finally, as the first light of dawn crept over the horizon, they completed the project. D. It was a moment of triumph, marking the culmination of weeks of hard work.\nTherefore, the correct answer is A-C-B-D. https://www.merriam-webster.com/dictionary/finally",
+      "module": "Verbal Ability",
+      "topic": "Prose",
+      "difficulty": "Difficult",
+      "subtopic": "Para Jumbles"
+    },
+    {
+      "question_id": "10",
+      "question_text": "Read the following paragraph and select the option that correctly fills in the missing sentence:\n\nThe ancient city of Pompeii, located near Naples in Italy, was destroyed and buried under volcanic ash and pumice in the eruption of Mount\nVesuvius in AD 79. Pompeii remained buried for nearly 1,700 years before its rediscovery in 1748. When excavations began, archaeologists found the city remarkably well-preserved, offering a unique glimpse into life in ancient Rome. The streets were lined with homes, shops, and public buildings, many adorned with colorful frescoes and mosaics. ___________.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The eruption led thousands of people fight against each other.",
+        "B": "The city had a population of about 11,000 inhabitants.",
+        "C": "Pompeii was a thriving commercial center in the Roman Empire.",
+        "D": "It appears that the city's inhabitants had no warning of the impending disaster."
+      },
+      "correct_option_label": "D",
+      "explanation": "The missing sentence should provide information about the unawareness of Pompeii's citizens regarding the impending catastrophe. Option d) correctly fills in this missing piece, providing context about the lack of warning before the eruption of Mount Vesuvius. This statement logically follows the description of the city's rediscovery and the well-preserved state of Pompeii.",
+      "module": "Verbal Ability",
+      "topic": "Prose",
+      "difficulty": "Medium",
+      "subtopic": "Missing sentence"
+    },
+    {
+      "question_id": "11",
+      "question_text": "Select the CORRECT option to complete the sentence.\n\nBy the time he _____ at the station, the train had already left, and he _____ for the next one since then.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "arrived, had been waiting",
+        "B": "arrives, had been waiting",
+        "C": "has arrived, had been waiting",
+        "D": "arrived, has been waiting"
+      },
+      "correct_option_label": "A",
+      "explanation": "https://learnenglish.britishcouncil.org/grammar/b1-b2-grammar/past-perfect",
+      "module": "Verbal Ability",
+      "topic": "Grammar",
+      "difficulty": "Difficult",
+      "subtopic": "Parts of speech"
+    },
+    {
+      "question_id": "12",
+      "question_text": "Select the CORRECT option to replace the bold words in below sentence.\n\nIt’s no secret that artificial intelligent (AI), specifically generative AI, has improved all the time.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "will improving",
+        "B": "will have improved",
+        "C": "is improving",
+        "D": "had improved"
+      },
+      "correct_option_label": "C",
+      "explanation": "Explanation: The sentence talks about a general trend or ongoing process (aspect)– the improvement of AI. We need a verb tense that reflects a continuous or ongoing action; therefore, ‘is improving’ is the correct choice.",
+      "module": "Verbal Ability",
+      "topic": "Grammar",
+      "difficulty": "Easy",
+      "subtopic": "Tenses and Aspects"
+    },
+    {
+      "question_id": "13",
+      "question_text": "Select odd sentence out.\n\nThe seed for independence was sown around 1857, and we got our freedom only around 90 years later, i.e. 1947. The freedom we enjoy today is a struggle endured by those who envisioned a free country. Shri Rajendra Prasad became our first president. Celebrating our freedom fighters and honoring them is essential.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The seed for independence was sown around 1857,",
+        "B": "a struggle endured by those who envisioned a free country",
+        "C": "Shri Rajendra Prasad became our first President",
+        "D": "Celebrating our freedom fighters and honoring them is essential"
+      },
+      "correct_option_label": "C",
+      "explanation": "While all other sentences are about achieving freedom, our first president is the odd one out. Hence Option 3",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Medium",
+      "subtopic": "Odd one out"
+    },
+    {
+      "question_id": "14",
+      "question_text": "Replace “like finding a needle in a haystack” in the below sentence with the CORRECT option.\n\nFinding your lost friend during Haj in Mecca will be like finding a needle in a haystack.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Not a difficult task",
+        "B": "Extremely difficult",
+        "C": "Require some search",
+        "D": "Needle in a haystack is easy to find."
+      },
+      "correct_option_label": "B",
+      "explanation": "Finding a needle in a haystack is extremely difficult. Hence Option 2",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Easy",
+      "subtopic": "Idioms and phrases"
+    },
+    {
+      "question_id": "15",
+      "question_text": "Fill in the blanks with suitable words from the options given below.\n\nThe effects of artificial intelligence (AI) are profound and multifaceted, transforming various aspects of ______and industry. AI enhances efficiency and productivity by automating routine tasks and enabling advanced data analysis, leading to ______solutions and insights in fields such as healthcare, finance, and transportation.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "practice, useless",
+        "B": "society, innovative",
+        "C": "academica, improbable",
+        "D": "society, hurtful"
+      },
+      "correct_option_label": "B",
+      "explanation": "Option 2 is correct.\n\nAI is transforming various aspects both in society and industry. By automating routine tasks, allows for innovative solutions using advanced data analysis. So Society….Innovative are the keys.",
+      "module": "Verbal Ability",
+      "topic": "Indirect Writing",
+      "difficulty": "Medium",
+      "subtopic": "Word Usage and Understanding"
+    },
+    {
+      "question_id": "16",
+      "question_text": "Arrange the sentences in order to make complete paragraph.\n\n1. Despite its potential, VR faces challenges such as high costs, technological limitations, and the need for improved user comfort and\naccessibility.\n2. Virtual reality (VR) creates immersive, interactive environments that simulate real or imagined worlds, enhancing experiences in gaming, education, and training.\n3. It is being used in various industries, including healthcare for surgical training, real estate for virtual property tours, and tourism for virtual travel experiences.\n4. By providing a sense of presence, VR allows users to explore and interact with 3D spaces in ways that traditional media cannot.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "2314",
+        "B": "3241",
+        "C": "4213",
+        "D": "2431"
+      },
+      "correct_option_label": "D",
+      "explanation": "It is indeed 2,4,3,1.\n\nOption 4.\n\nThe passage is about Virtual reality, what it creates and where it is used.\nSo the sentence 2 is the starting point. What VR does is explained in sentence 4 followed by where it is used extensively, sentence 3.",
+      "module": "Verbal Ability",
+      "topic": "Indirect Writing",
+      "difficulty": "Difficult",
+      "subtopic": "Prose"
+    },
+    {
+      "question_id": "17",
+      "question_text": "Select the CORRECT preposition.\n\nIn a fit of rage, Angel threw the letter ______ the fire.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "at",
+        "B": "of",
+        "C": "into",
+        "D": "on"
+      },
+      "correct_option_label": "C",
+      "explanation": "The preposition is “into”.  Option 3",
+      "module": "Verbal Ability",
+      "topic": "Grammar",
+      "difficulty": "Easy",
+      "subtopic": "preposition"
+    },
+    {
+      "question_id": "18",
+      "question_text": "Identify the sentence with the proper conjunction.\n\nAlka is not only a great singer, but also a talented dancer.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Alka is not only a great singer, but also a talented dancer.",
+        "B": "Alka is, not only a great singer but also a talented dancer.",
+        "C": "Alka is not only a great singer but, also a talented dancer.",
+        "D": "Alka is not only a great singer but also a talented dancer."
+      },
+      "correct_option_label": "D",
+      "explanation": "In conjunction like not only-but also , no commas are allowed. Hence option 4",
+      "module": "Verbal Ability",
+      "topic": "Grammar",
+      "difficulty": "Medium",
+      "subtopic": "Tenses and Aspects"
+    },
+    {
+      "question_id": "19",
+      "question_text": "Four phrases are highlighted in the text below. Select the CORRECT option that shows the most appropriate one-word substitutes.\n\nLeadership plays a pivotal role in organizational success. Effective leaders possess (a) magnetic qualities, which enables them to inspire and motivate their teams. They also exhibit (b) willingness to change in different conditions. Moreover, leaders with astute decision-making skills can make sound judgments based on critical analysis and (c) quick judgement without reasoning. Furthermore, communication skills are crucial for leaders to articulate their (d) specific view of the future, delegate tasks, and foster collaboration among team members.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "(a) vision (b) adaptability (c) intuition (d) charisma",
+        "B": "(a) charisma (b) adaptability (c) intuition (d) vision",
+        "C": "(a) vision (b) intuition (c) adaptability (d) charisma",
+        "D": "(a) charisma (b) intuition (c) adaptability (d) vision"
+      },
+      "correct_option_label": "B",
+      "explanation": "",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Difficult",
+      "subtopic": "Idioms and phrases"
+    },
+    {
+      "question_id": "20",
+      "question_text": "Select the most appropriate option to fill in the blank\n\nHer collection of paintings is very __________.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "artful",
+        "B": "artificial",
+        "C": "artisan",
+        "D": "artistic"
+      },
+      "correct_option_label": "D",
+      "explanation": "J.P.Tandon, A New Approach to English Grammar & Usage\nRatan Prakashan Mandir, 1964, P.285https://www.merriam-webster.com/dictionary/artistic\n\nhttps://www.merriam-webster.com/dictionary/artistic\n\nQuantitative Ability and Data Interpretation",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Medium",
+      "subtopic": "Words and Phrases often confused"
+    },
+    {
+      "question_id": "Passage_2",
+      "question_text": "Read the data below and answer the questions that follow.\n\nDuring the recent National Games athletes from different states of the country participated in the different sporting events. In the table below data regarding the number of participants from five of the states are given as per the type of events they competed in.\n\nStudy the table and answer the questions\n\n| States \\ Events | Track Events | Field Events | Swimming Events | Racket Sports | Boxing and Wrestling |\n|---|---|---|---|---|---|\n| Punjab | 420 | 312 | 540 | 168 | 360 |\n| Haryana | 288 | 384 | 480 | 216 | 384 |\n| Bihar | 552 | 360 | 432 | 192 | 456 |\n| Kerala | 528 | 576 | 504 | 144 | 408 |\n| Manipur | 336 | 432 | 408 | 240 | 396 |",
+      "question_type": "SUBJECTIVE",
+      "options": {},
+      "correct_option_label": null,
+      "explanation": "",
+      "module": "Quantitative Ability"
+    },
+    {
+      "question_id": "21",
+      "question_text": "Among the five types of events, which one saw maximum participation from athletes of the five given states, taken together?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Track Events",
+        "B": "Field Events",
+        "C": "Swimming Events",
+        "D": "Boxing and Wrestling"
+      },
+      "correct_option_label": "C",
+      "explanation": "The event-wise number of participants are as follows:\nTrack: 2124\nField: 2064\nSwimming: 2364\nRacket Sports: 960\nBoxing and Wrestling: 2004",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "difficulty": "Medium",
+      "subtopic": "Chart/Graph/Table"
+    },
+    {
+      "question_id": "22",
+      "question_text": "Approximately what percentage of the total number of participants from the five states taken together was equal to the total number of participants from Punjab?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "18.9%",
+        "B": "20.1%",
+        "C": "19.4%",
+        "D": "18.2%"
+      },
+      "correct_option_label": "A",
+      "explanation": "Total number of participants from the five states = 1800 + 1752 + 1992 + 2160 + 1812 = 9516\nNow, 1800 ÷ 9516 ≈ 0.1892 ≈ ≡ 18.9%",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "difficulty": "Medium",
+      "subtopic": "Chart/Graph/Table"
+    },
+    {
+      "question_id": "23",
+      "question_text": "In that National Games if we consider participants from all states of India, including the five for which data has been provided, the total number of participants in the track events was 475% more than those who represented the five given states in track events, the total number of participants in the field events was 525% of those who represented the five given states in field events, and the total number of participants in swimming events was 4 times those who represented the five given states in swimming events. What was the combined number of participants in these three types of events at this National Games, if participants from all states of India were counted?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "30381",
+        "B": "28017",
+        "C": "30141",
+        "D": "32505"
+      },
+      "correct_option_label": "D",
+      "explanation": "The event-wise number of participants from the five states are as follows:\nTrack: 2124\nField: 2064\nSwimming: 2364\nHence, the required combined number of participants will be 5.75 ⨯ 2124 + 5.25 ⨯ 2064 + 4 ⨯ 2364 = 12213 + 10836 + 9456 = 32505",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "difficulty": "Medium",
+      "subtopic": "Chart/Graph/Table"
+    },
+    {
+      "question_id": "24",
+      "question_text": "67.5% of all participants from Kerala at the Games were female. If we look at the sex-ratio of participants from Kerala as per the type of events, 56.25% of those in track events and $\\frac{7}{9}$ of those in field events were female. The ratio of female and male participants from the state in swimming events was given as 9 : 5. If the number of female participants from Kerala in boxing and wrestling was y times the number of their male counterparts in the same type of events, which of the options below is the closest to the minimum value of y?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "−2.4",
+        "B": "1.5",
+        "C": "3.5",
+        "D": "3.8"
+      },
+      "correct_option_label": "B",
+      "explanation": "Total female participants from Kerala = 2160 ⨯ 0.675 = 1458\n528 ⨯ 0.5625 + 576 ⨯ 7/9 + 504 ⨯ 9/(9+5) = 297 + 448+ 324 = 1069\nIf all 144 participants from Kerala in racket sports were female, then the value of y will be the lowest. 1069 + 144 = 1213\n1458 – 1213 = 245 = minimum possible number of female participants from Kerala in boxing and wrestling events. Hence, maximum possible number of male participants from Kerala in boxing and wrestling events = 408 – 245 =163 Now, 245 ÷ 163 ≈ 1.5031 ⇒ 1.5 is the correct answer.",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "difficulty": "Medium",
+      "subtopic": "Chart/Graph/Table"
+    },
+    {
+      "question_id": "25",
+      "question_text": "Let $\\frac{m}{n} = \\frac{90^2+5\\times90+4}{90^2+5\\times90+6} \\times \\frac{91^2+5\\times91+4}{91^2+5\\times91+6} \\times \\dots \\times \\frac{98^2+5\\times98+4}{98^2+5\\times98+6}$\n\nwhere m and n are co-primes. What is the value of $|m-n|$ ?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "3",
+        "B": "4",
+        "C": "6",
+        "D": "8"
+      },
+      "correct_option_label": "A",
+      "explanation": "Use: $x^2+5x+4=(x+1)(x+4)$ & $x^2+5x+6=(x+2)(x+3)$, $x = 90, 91, \\dots, 98$\n\n$\\frac{m}{n} = \\frac{91\\times94}{92\\times93} \\times \\frac{92\\times95}{93\\times94} \\times \\frac{93\\times96}{94\\times95} \\times \\dots \\times \\frac{98\\times101}{99\\times100} \\times \\frac{99\\times102}{100\\times101}$\n\n$= \\frac{91}{93} \\times \\frac{102}{100} = \\frac{1547}{1550} \\Rightarrow |m-n| = 3$\n\nAns (1)",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Medium",
+      "subtopic": "Ratio proportion"
+    },
+    {
+      "question_id": "26",
+      "question_text": "If the number 123k578 is divisible by 11, then what is the value of k?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "8",
+        "B": "4",
+        "C": "2",
+        "D": "0"
+      },
+      "correct_option_label": "A",
+      "explanation": "Sum of odd place digits=17\nSum of even place digits = 9+k\nHence Sum of odd place digits-\nSum of even place digits=0, 11, 22,….\nHence 17-9-k=0, 11, 22,….\nHence possible value of k=8\nAnd this is the greatest as well as least possible value of k\nHence the difference between the greatest value and smallest possible values=8-8=0",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Medium",
+      "subtopic": "Number system"
+    },
+    {
+      "question_id": "27",
+      "question_text": "A shopkeeper sold article A at a profit of 18% and article B at a loss of 10%, thus making an overall profit of Rs.85. If he had sold at article A at an 11% loss and article B at an 8% profit, he would have suffered a loss of Rs.34. Find the sum (in Rs.) of the cost prices of article A and article B.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1950",
+        "B": "2050",
+        "C": "2000",
+        "D": "1550"
+      },
+      "correct_option_label": "A",
+      "explanation": "Let cost price of article A =100x\nCost price of Article B =100y\nFrom the given statements, 18x-10y=85\n8y-11x = -34\nSolving this equations, we get x=10, y=9.5\nCost price of article A = 100x = Rs.1000\nCost price of article B = 100y = Rs.950",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Medium",
+      "subtopic": "Profit and Loss"
+    },
+    {
+      "question_id": "28",
+      "question_text": "A, B and C work in a workshop for creating identical idols. A can craft 10 idols in 150 days. Similarly, B and C can individually create 16 idols in 192 days and 320 days, respectively. B works every day, A works only on alternate days starting from the first day, i.e. 1st March, and C also works only on alternate days starting from the second day, i.e 2nd March. On which date will the construction of 2 idols be completed?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "16 March",
+        "B": "15 March",
+        "C": "14 March",
+        "D": "13 March"
+      },
+      "correct_option_label": "B",
+      "explanation": "Time for 1 idol to craft by A, B and c are 15,12, and 20 days\nTaking the LCM of (15,12,20) = 60 units\nEfficiency of A = 60/15 = 4 units/day\nEfficiency of B = 60/12 = 5 units/day\nEfficiency of C = 60/20 = 3 units/day\nWork done in every 2 days = 9 + 8 =17 units. So, the number of cycles will be 3 and the work done during 3 cycles = 3 x 17 = 51 units.  Remaining work on 7th day = 60-51 = 9 units. Work is completed on 7th day by A and B. Therefore, 7 days are required to craft the 1 idol. Hence, First Idol constructed in 7 days. On the 8th day B and C will work. On the 14th day remaining work to be done will be 9/60 to complete the 2nd idol, but on the 14th day work will be done by B and C and their capacity is only of 8/60. Hence 2nd idol will be completed on 15th day.",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Difficult",
+      "subtopic": "Time and Work"
+    },
+    {
+      "question_id": "29",
+      "question_text": "A boy agrees to work at the rate of one rupee on the first day, two rupees on the second day, four rupees on third day and so on, thus getting on any day twice the amount he received just the day before. How many rupees will the boy earn in all, if he started working on the 5th of March and completed the work on the 28th of March?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$2^{20}-1$",
+        "B": "$2^{20}-2$",
+        "C": "$2^{24}-1$",
+        "D": "$2^{23}-1$"
+      },
+      "correct_option_label": "C",
+      "explanation": "nth term=ar^n-1\nn=24\nSum=a(r^n-1)/r-1\n=1(2^204-1)/2-1\n=2^24-1",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "difficulty": "Medium",
+      "subtopic": "Progression"
+    },
+    {
+      "question_id": "30",
+      "question_text": "Out of 7 different consonants and 4 different vowels, how many words (not necessarily meaningful) of 4 consonants and 2 vowels can be formed?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "151200",
+        "B": "210",
+        "C": "720",
+        "D": "142500"
+      },
+      "correct_option_label": "A",
+      "explanation": "Number of ways of selecting (4 consonants out of 7) and (2 vowels out of 4) = 7C4 × 4C2 = 35 × 6 = 210\n\nNumber of groups, each having 4 consonants and 2 vowels = 210.\n\nEach group contains 6 letters.\n\nNumber of ways 6 letters can arrange themselves = 6! = 720\n\n∴ Required number of ways = (210 x 720) = 151200.",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "difficulty": "Difficult",
+      "subtopic": "Permutation Combination"
+    },
+    {
+      "question_id": "31",
+      "question_text": "A room, with a length of 18m, a height of 15 m and a total surface area of 1332 m2 is to be divided into 4 m wide small rooms, by inserting plywood sheets in the room. To minimize the expenditure on the purchase of these sheets, how many 18 m ⨯ 15 m sheets will be required to construct the maximum possible number of such small rooms, if the length and the height of the small rooms remain the same as that of the original room?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "2",
+        "D": "1"
+      },
+      "correct_option_label": "C",
+      "explanation": "Breadth = 396/33=12\nHence maximum 3 rooms (each of width 4meter) can be constructed.\nThus, number of sheets required=2\n[Hence, Option 3 should be the correct answer.]",
+      "module": "Quantitative Ability",
+      "topic": "Geometry",
+      "difficulty": "Medium",
+      "subtopic": "Mensuration"
+    },
+    {
+      "question_id": "32",
+      "question_text": "Nidhi reached her institute in 3 hours while travelling by bus with a wheel radius of 70 cm and making 250 revolutions in one minute. One day, she left for the institute one hour later than usual time. Then to reach her institute on time, she should increase her speed by _____. [Use $\\pi = \\frac{22}{7}$]",
+      "question_type": "MCQ",
+      "options": {
+        "A": "98 km/hr",
+        "B": "33 km/hr",
+        "C": "68.5 km/hr",
+        "D": "40 km/hr"
+      },
+      "correct_option_label": "B",
+      "explanation": "Let speed of bus = $x$ km/hr\n\nDistance covered by wheel in one min. $= \\frac{x\\times1000\\times100}{60}$\n\nCircumference of wheel $= 2\\times\\frac{22}{7}\\times70 = 440$ cm.\n\n∴ No. of revolutions in one min $= \\frac{x\\times1000\\times100}{60\\times440}$\n\n$250 = \\frac{x\\times1000\\times100}{60\\times440}$\n\n$x = 66$ km/hr.\n\nWhen left 1 hour late, then reduced time $= 3-1 = 2$ hour.\n\n$\\Rightarrow \\frac{66\\times3}{2} = 99$ km/hr.\n\nIncrease speed = **33 km/hr.**",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Medium",
+      "subtopic": "Time Speed and Distance"
+    },
+    {
+      "question_id": "33",
+      "question_text": "If the equation $(m-3)x^2 - 2mx + 5m = 0$ has real and positive roots, then the possible value(s) of m lies in:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "[2,3]",
+        "B": "(2, 3.8)",
+        "C": "(3, 3.75]",
+        "D": "[3.1, 4)"
+      },
+      "correct_option_label": "C",
+      "explanation": "The roots are real and positive if $D \\ge 0$, sum of roots $> 0$ and product of roots $> 0$.\n\n(I) $D \\ge 0 \\Rightarrow 4m^2 - 20m(m-3) \\ge 0 \\Rightarrow -4m^2 + 15m \\ge 0$\n\n$\\Rightarrow 4m^2 - 15m \\le 0 \\Rightarrow m \\in [0, 3.75]$\n\n(II) Sum of roots $> 0$: $\\frac{2m}{m-3} > 0 \\Rightarrow \\frac{m}{m-3} > 0 \\Rightarrow m \\in (-\\infty, 0) \\cup (3, \\infty)$\n\n(III) Product of roots $> 0$: $\\frac{5m}{m-3} > 0 \\Rightarrow \\frac{m}{m-3} > 0 \\Rightarrow m \\in (-\\infty, 0) \\cup (3, \\infty)$\n\nCombining (I), (II) and (III) (on the number line with points 0, 3, 3.75):\n\nHence $m \\in (3, 3.75]$",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "difficulty": "Difficult",
+      "subtopic": "Quadratic Equation"
+    },
+    {
+      "question_id": "34",
+      "question_text": "A pair of consecutive odd positive integers, both of which are smaller than 19, have a sum that is more than 22. How many such pairs will be there, if we allow a number to be in more than one pair?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "correct_option_label": "B",
+      "explanation": "Let no. be $x$ and $x+2$\n\n$x + x + 2 > 22$\n\n$2x + 2 > 22 \\Rightarrow 2x > 20 \\Rightarrow x > 10$\n\nNo. is 11, 13, 15\n\nPair (11, 13) (13, 15) (15, 17)\n\nTotal pairs = **3**",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "difficulty": "Medium",
+      "subtopic": "Inequations"
+    },
+    {
+      "question_id": "35",
+      "question_text": "The measure of each exterior angle of a regular polygon having ‘p’ sides is half of the measure of each of its interior angles. The value of ‘p’ is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "8",
+        "B": "6",
+        "C": "7",
+        "D": "9"
+      },
+      "correct_option_label": "B",
+      "explanation": "Interior angle = 2 × exterior angle\n\nint. + ext. = 180\n\n2 ext. + ext. = 180 ⇒ ext. angle = 60°\n\nNo. of sides $= \\frac{360°}{60°} = 6$",
+      "module": "Quantitative Ability",
+      "topic": "Geometry",
+      "difficulty": "Easy",
+      "subtopic": "Plane Geometry"
+    },
+    {
+      "question_id": "36",
+      "question_text": "The simple interest on a certain sum of money invested at 7.5% per annum for 4 years is ₹243. What was the sum (in ₹) invested?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "840",
+        "B": "750",
+        "C": "810",
+        "D": "900"
+      },
+      "correct_option_label": "C",
+      "explanation": "At 7.5% per annum, simple interest in 4 years will be 30% of sum invested.\nHence, sum invested = Rs 243 ÷ 0.3 = Rs 810",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Easy",
+      "subtopic": "Simple Interest"
+    },
+    {
+      "question_id": "37",
+      "question_text": "The average of three numbers is 19 while the average of two of these numbers is 21.25. What is the value of the third number?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "15.5",
+        "B": "14.5",
+        "C": "13.5",
+        "D": "12.5"
+      },
+      "correct_option_label": "B",
+      "explanation": "19 ⨯ 3 – 21.25 ⨯ 2 = 57 – 42.5 = 14.5",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Easy",
+      "subtopic": "Average"
+    },
+    {
+      "question_id": "38",
+      "question_text": "Ravish paid ₹640 for a jar of 40 chocolates where the amount paid included the cost of the jar. Harish paid a total of ₹1540 for one jar containing 55 chocolates and a second jar containing 45 chocolates, where the amount paid included the cost of both the jars. If all jars cost the same, and all chocolates cost the same, how much (in ₹) would Satish have to pay for a jar containing 35 chocolates, if the amount he has to pay includes the cost of the jar as well as that of the chocolates he bought?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "555",
+        "B": "585",
+        "C": "525",
+        "D": "575"
+      },
+      "correct_option_label": "D",
+      "explanation": "Let the cost per jar be Rs y and the cost of each chocolate be Rs z.\nHence, we have y + 40z = 640 and 2y + 100z = 1540 ⇒ y + 50z = 770\nHence, we have 10z = 130 ⇒ 5z = 65 ⇒ 35z = 455 and 40z = 520\nHence, y = 640 – 520 = 120 ⇒ y + 35z = 120 + 455 = 575",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "difficulty": "Medium",
+      "subtopic": "Linear Equation"
+    },
+    {
+      "question_id": "39",
+      "question_text": "PQRS is a cyclic quadrilateral whose diagonals PR and QS intersect at the point T. ∠SQR measures 72°, and ∠QPR measures 28°. What is the measure of ∠QRS?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "80⁰",
+        "B": "100⁰",
+        "C": "82⁰",
+        "D": "60⁰"
+      },
+      "correct_option_label": "A",
+      "explanation": "Since PQRS is a cyclic quadrilateral, ∠SQR = ∠SPR = 72° ⇒ ∠SPQ = 72° + 28° = 100° Hence, ∠QRS = 180° – 100° = 80°",
+      "module": "Quantitative Ability",
+      "topic": "Geometry",
+      "difficulty": "Medium",
+      "subtopic": "Plane Geometry"
+    },
+    {
+      "question_id": "40",
+      "question_text": "Regarding the function $f(x) = x^2 - 5x + 1$ and $g(x) = 1 - x - x^3$ on the set of real numbers, which of the following statements is not true?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The graph of $f$ and $g$ intersect at three different points",
+        "B": "The graph of $f$ and $g$ intersect at just one point with positive abscissa.",
+        "C": "The graph of $f$ and $g$ intersect at just one point with negative abscissa.",
+        "D": "The graph of $f$ and $g$ intersect at just one point above the $x$-axis"
+      },
+      "correct_option_label": "D",
+      "explanation": "",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "difficulty": "Difficult",
+      "subtopic": "Function and Graph"
+    },
+    {
+      "question_id": "41",
+      "question_text": "Komal and Shalu walk 10 km together from the same point towards a point A in the north from point A, Komal walks 6 km towards south and then she walks 3 km towards east.  Also, from point A Shalu walks 4 km towards west and then walks 6 km towards south. What is the distance between Shalu and Komal?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "10 km",
+        "B": "9 km",
+        "C": "8 km",
+        "D": "7 km"
+      },
+      "correct_option_label": "D",
+      "explanation": "",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Medium",
+      "subtopic": "Direction Sense"
+    },
+    {
+      "question_id": "42",
+      "question_text": "Seven people, M,N,O,P,Q,R and S are sitting in a row, facing north. Only one person sits to the left of P. Only two people sit to the right of S. O sits second to the left of S. Only one person sits between O and N. Q is not the immediate neighbor of S. Only two people sit between Q and M. How many people are sitting between P and R?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct_option_label": "C",
+      "explanation": "(left)N P O MS RQ(right)",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Medium",
+      "subtopic": "Seating arrangment"
+    },
+    {
+      "question_id": "43",
+      "question_text": "Read the given statement(s) and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statement(s).\n\nStatements: All birds are insects. All insects are mammals.\n\nConclusions (I) : All mammals are birds\nConclusions (II) : All birds are mammals",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Only conclusion (I) follows",
+        "B": "Only conclusion (II) follows",
+        "C": "Neither conclusion (I) nor (II) follows",
+        "D": "Both conclusions (I) and (II) follow"
+      },
+      "correct_option_label": "B",
+      "explanation": "Only second conclusion is true",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Critical",
+      "difficulty": "Medium",
+      "subtopic": "Conclusion"
+    },
+    {
+      "question_id": "44",
+      "question_text": "What should come in place of ‘?’ in the given series?\n7,    17,  26,   34 ,   ?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "40",
+        "B": "41",
+        "C": "42",
+        "D": "45"
+      },
+      "correct_option_label": "B",
+      "explanation": "Addition of 10,9,8,7,…",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Medium",
+      "subtopic": "Series completion"
+    },
+    {
+      "question_id": "45",
+      "question_text": "K is the sister of L. L is the father of M. M is the son of N. N is the mother of O. O is the wife of P. P is the father of Q. How is L related to Q?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Mother",
+        "B": "Father",
+        "C": "Mother’s father",
+        "D": "Mother’s brother"
+      },
+      "correct_option_label": "C",
+      "explanation": "Mother’s father",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Medium",
+      "subtopic": "Blood Relations"
+    },
+    {
+      "question_id": "46",
+      "question_text": "Based on the English alphabetical order, three of the following four letter cluster pairs are alike in a certain way and thus form a group. Which is the one that does not belong to that group?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "AD- BE",
+        "B": "GJ- HK",
+        "C": "UX- VY",
+        "D": "KN-LP"
+      },
+      "correct_option_label": "D",
+      "explanation": "Logic: difference of 2",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Difficult",
+      "subtopic": "Odd elements - Verbal"
+    },
+    {
+      "question_id": "47",
+      "question_text": "A group of students are sitting in a line facing north. Arpit is 36th from the left end and 30th from the right end.  How many students are sitting in the line?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "62",
+        "B": "65",
+        "C": "66",
+        "D": "67"
+      },
+      "correct_option_label": "B",
+      "explanation": "The correct option is: 2.\nSolution: Total number of students: 35 + 29 + 1 = 65",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Easy",
+      "subtopic": "Order Detection"
+    },
+    {
+      "question_id": "48",
+      "question_text": "In a group of six persons named P, Q, R, S, T and U; each has a different age. R is elder than T. Q is younger than S. P is elder than U. U is elder than Q. S is younger than U. T is elder than P. Who is second eldest in the group?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "T",
+        "B": "R",
+        "C": "O",
+        "D": "S"
+      },
+      "correct_option_label": "A",
+      "explanation": "R  T  P  U  S  Q\nThe correct option is 1.\nThe order is: R>T>P>U>S>Q",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Easy",
+      "subtopic": "Equality-inequality"
+    },
+    {
+      "question_id": "49",
+      "question_text": "PARSEIMAGE",
+      "question_type": "MCQ",
+      "options": {
+        "A": "18",
+        "B": "56",
+        "C": "15",
+        "D": "74"
+      },
+      "correct_option_label": "B",
+      "explanation": "The area common to the circles of doctors and musicians only has 56 in it.\nSolution: Common region of Doctor and musicians. 56",
+      "module": "Logical Reasoning",
+      "topic": "Numerical Reasoning",
+      "difficulty": "Easy",
+      "subtopic": "Basic numerical operations"
+    },
+    {
+      "question_id": "50",
+      "question_text": "If 26th December 1999 is Sunday, then what will be the day of the week on 21st April 2005?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Monday",
+        "B": "Tuesday",
+        "C": "Thursday",
+        "D": "Sunday"
+      },
+      "correct_option_label": "C",
+      "explanation": "21st April 2005 is on Thursday\n\nGeneral Awareness",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Difficult",
+      "subtopic": "Clocks and Calenders"
+    },
+    {
+      "question_id": "51",
+      "question_text": "Who among the following Indian social activist founded a reform association known as the Brahmo Sabha, which was later known as the Brahmo Samaj?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Swami Dayanand Saraswati",
+        "B": "Raja Rammohun Roy",
+        "C": "Ishwarchandra Vidyasagar",
+        "D": "Jyotirao Phule"
+      },
+      "correct_option_label": "B",
+      "explanation": "https://www.ncert.nic.in/ncerts/l/hess203.pdf",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Medium",
+      "subtopic": "Indian History"
+    },
+    {
+      "question_id": "52",
+      "question_text": "Indian industrialist and former chairman of Tata Sons, Mr. Ratan Naval Tata was conferred with which award in 2008?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Padma Vibhushan",
+        "B": "Padma Bhushan",
+        "C": "Padma Shri",
+        "D": "Bharat Ratna"
+      },
+      "correct_option_label": "A",
+      "explanation": "https://dashboard-padmaawards.gov.in/?Award=Padma%20Vibhushan&Year=2008-2008",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Medium",
+      "subtopic": "Indian Economy"
+    },
+    {
+      "question_id": "53",
+      "question_text": "Which among the following is the most appropriate definition of “Gross National Product”?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The depreciation in the total value of goods and services produced in the country.",
+        "B": "The total value of goods and services produced in the country.",
+        "C": "The total value of all the transactions in the country.",
+        "D": "The total value of goods and services produced in the country plus the net factor income from abroad."
+      },
+      "correct_option_label": "D",
+      "explanation": "https://ncert.nic.in/textbook/pdf/jess203.pdf",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Easy",
+      "subtopic": "Indian Economy"
+    },
+    {
+      "question_id": "54",
+      "question_text": "In June 2024, Claudia Sheinbaum was elected as the first female president of _____.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "El Salvador",
+        "B": "Jamaica",
+        "C": "Mexico",
+        "D": "Barbados"
+      },
+      "correct_option_label": "C",
+      "explanation": "03/06/24\nCLAUDIA SHEINBAUM ELECTED AS MEXICO’S FIRST WOMAN PRESIDENT\nhttps://ddnews.gov.in/en/claudia-sheinbaum-elected-as-mexicos-first-woman-president/\n\n3 June 2024\nClaudia Sheinbaum has been elected as Mexico's first female president, in a historic landslide win. https://www.bbc.com/news/articles/cp4475gwny1o",
+      "module": "General Awareness",
+      "topic": "Current Affairs",
+      "difficulty": "Medium",
+      "subtopic": "International Current Affairs"
+    },
+    {
+      "question_id": "55",
+      "question_text": "In September 2023, three temples of the _____ Dynasty in Karnataka were declared as UNESCO Heritage Sites.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Hoysala",
+        "B": "Chalukya",
+        "C": "Vijayanagaram",
+        "D": "Pallava"
+      },
+      "correct_option_label": "A",
+      "explanation": "September 19, 2023\n\nThe Hoysala temples at Belur, Halebid, and Somanathapur in Karnataka were declared as UNESCO World Heritage Sites on September 18 The Chennakeshava temple at Belur and Hoysaleshwara temple at Halebid — both in Hassan district have been on the UNESCO’s tentative list since 2014. The Keshava temple at Somanathapur in Mysuru district was appended to the other two monuments under the tentative list and all the three were officially nominated by the Centre as India’s entry for 2022-23 in February in 2022.\n\nhttps://www.thehindu.com/news/national/karnataka/three-hoysala-temples-of-karnataka-inscribed-as-unesco-world-heritage- sites/article67321126.ece\n\nhttps://whc.unesco.org/document/192644",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Difficult",
+      "subtopic": "Art and Culture"
+    },
+    {
+      "question_id": "56",
+      "question_text": "Match the following associations / reform movements in Column A to the persons who founded / inspired them in Column B:\n\nColumn A\nColumn B\ni) Atmiya Sabha\na) Ram Mohan Roy\nii) Prarthana Samaj\nb) Dayanand Saraswati\niii) Arya Samaj\nc) Atmaram Pandurang\niv) Ramakrishna Mission\nd) Gadadhar Chatterjee",
+      "question_type": "MCQ",
+      "options": {
+        "A": "i – a, iii – b, ii – c , iv - d",
+        "B": "i – d, iii – b ,ii – c, iv - a",
+        "C": "i – d, ii – b, iii – c, iv - a",
+        "D": "i – a, ii – b, iii – c, iv - d"
+      },
+      "correct_option_label": "A",
+      "explanation": "in 1814 he formed the ‘Atmiya Sabha‘,\nhttps://amritmahotsav.nic.in/district-reopsitory-detail.htm?3096\n\nHis Atmiya Sabha, founded in 1814\nhttps://www.nios.ac.in/media/documents/SrSec315NEW/315_History_Eng/315_History_Eng_Lesson18.pdf The Prarthana Samaj was established in Bombay by Dr. Atma Ram Pandurang in 1867.\nhttps://www.nios.ac.in/media/documents/SecICHCour/English/CH.05.pdf\n\nA direct consequence of his visits was the founding of the Prarthana Samaj in 1867 by Atmaram Pandurang https://www.nios.ac.in/media/documents/SrSec315NEW/315_History_Eng/315_History_Eng_Lesson18.pdf This was the basic contribution of Mool Shanker an important representative of the religions reform movement in India from  Gujarat. He later came to be known as Dayanand Saraswati (l824-1883). He founded the Arya Samaj in 1875.\nhttps://www.nios.ac.in/media/documents/SecICHCour/English/CH.10.pdf\n\nPrevious Names: Mool Shankar, Shuddh Chaitanya\nhe founded Arya Samaj\nhttps://www.thearyasamaj.org/maharshidayanand_en\n\nThe founder of the Hindu reform organisation Arya Samaj, Swami Dayanand Saraswati was born as Mool Shankar Tiwari on February 12, 1824, in Gujarat.\nhttps://www.indiatoday.in/information/story/maharishi-dayanand-saraswati-jayanti-2022-date-quotes-and-all-you-need-to-know-1918115-2022- 02-26\n\nDuring the late 19th century, another notable reform movement in Bengal, which soon spread to other parts of the country, was the Ramakrishna Mission. The movement began under an ascetic and priest Gadadhar Chatterjee or Swami Ramakrishna Paramhansa https://www.nios.ac.in/media/documents/SrSec315NEW/315_History_Eng/315_History_Eng_Lesson18.pdf Ramakrishna was born into a poor Brahmin family in Karampukur village in Bengal, India. His parents named him Gadadhar Chatterjee. His teachings inspired the formation of the Ramakrishna Mission\nhttps://www.newworldencyclopedia.org/entry/Ramakrishna",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Medium",
+      "subtopic": "Indian History"
+    },
+    {
+      "question_id": "57",
+      "question_text": "TRISHNA (Thermal Infra-Red Imaging Satellite for High-resolution Natural Resource Assessment), a joint satellite mission between India and _____, is expected to go live in 2025.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Brazil",
+        "B": "France",
+        "C": "Israel",
+        "D": "Japan"
+      },
+      "correct_option_label": "B",
+      "explanation": "The TRISHNA (Thermal Infra-Red Imaging Satellite for High-resolution Natural Resource Assessment) mission, a collaborative endeavor between ISRO and CNES\nhttps://www.isro.gov.in/TRISHNA_Mission.html\n\nJun 6, 2024\nIn a major boost to global efforts to monitor and mitigate climate change, the Indian Space Research Organisation (Isro) is collaborating with the French Space Agency CNES on an ambitious new satellite mission called Trishna.\nhttps://www.indiatoday.in/science/story/trishna-satellite-isro-france-joint-mission-climate-change-data-2549794-2024-06-06",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Easy",
+      "subtopic": "Indian Geography"
+    },
+    {
+      "question_id": "58",
+      "question_text": "Who is CEO of the Indian financial services company ‘Zerodha’ as on 1st June 2024?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Deepinder Goyal",
+        "B": "Ashneer Grover",
+        "C": "Anupam Mittal",
+        "D": "Nikhil Kamath"
+      },
+      "correct_option_label": "D",
+      "explanation": "Jan 26 2024\nNikhil Kamath, the innovative mind behind Zerodha, stands out as a trailblazing entrepreneur to watch in 2024. As co-founder and CEO, he has revolutionized India's investment landscape, democratizing access through Zerodha's user-friendly platform. https://www.business-standard.com/content/press-releases-ani/unveiling-india-s-top-young-visionary-entrepreneurs-to-reckon-in-2024- 124012600721_1.html\n\nJun 10, 2024\nZerodha CEO Nithin Kamath praises SEBI for making Indian stock market more investor-friendly on social media platform X https://timesofindia.indiatimes.com/technology/tech-news/zerodha-ceo-nithin-kamaths-thanks-note-for-sebi-also-has-something-for- brokers/articleshow/110840105.cms",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Easy",
+      "subtopic": "Indian Economy"
+    },
+    {
+      "question_id": "59",
+      "question_text": "‘Chittara Painting’ is a folk art form from _____.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rajasthan",
+        "B": "Nagaland",
+        "C": "Bihar",
+        "D": "Karnataka"
+      },
+      "correct_option_label": "D",
+      "explanation": "Karnataka’s intriguing Chittara  paintings.\n\nhttps://www.thebetterindia.com/5760/tbi-photo-essay-the-varied-hues-of-indigenous-art-in-india/#google_vignette The folk art form of Karnataka,are drawings of intricate patterns, that represent the auspicious ceremony and rituals of life, symbolized in geometric patterns.\n\nhttps://artforconcern.org/traditional-ArtForm/chittara\n\nChittara Painting – Folk Art From Karnataka\n\nhttps://www.huffpost.com/entry/chittara-painting-folk-art-from-karnataka_b_57d5aca5e4b0eb9a57b7ada1",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Medium",
+      "subtopic": "Art and Culture"
+    },
+    {
+      "question_id": "60",
+      "question_text": "Hampi, a UNESCO World Heritage Site, is renowned for its monumental ruins from which empire's reign?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Maurya Empire",
+        "B": "Chola Empire",
+        "C": "Vijayanagara Empire",
+        "D": "Mughal Empire"
+      },
+      "correct_option_label": "C",
+      "explanation": "The austere and grandiose site of Hampi comprise mainly the remnants of the Capital City of Vijayanagara Empire https://whc.unesco.org/en/list/241/#:~:text=The%20austere%20and%20grandiose%20site,the%20last%20great%20Hindu%20Kingdom. Albeit in ruins, the magnificent structures here stand in testimony to Hampi's rich past under the powerful Vijayanagara empire https://desh.tourism.gov.in/destinations/detail/63",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Difficult",
+      "subtopic": "Art and Culture"
+    }
+  ]
+}
