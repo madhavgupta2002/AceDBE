@@ -251,7 +251,8 @@
             "question_text": "Question No. 1 (Case Study From Q.No 2 To 5)\nFour questions in this part are all related to a dataset which provides information about 5000 different orders in a superstore. Imagine that Ms. Shreya is an analyst with the superstore and is solving a few problems for the organisation. She finds that along with the ID and date of every order, the dataset lists which segment the customer falls in (Consumer, Corporate, or Home Office), total number of quantities bought, the total amount paid by the customer (this reflects the total sales per invoice), and the profit made by the store in that order. The data also records whether the order was eventually returned, and it is found that 296 of the 5000 orders were returned",
             "question_type": "SUBJECTIVE",
             "explanation": "This is a reference context for the subsequent questions (ID 18 to 21). It outlines a dataset of 5000 orders covering variables like sales amount, order segment, quantities, and return status.",
-            "module": 1
+            "module": 1,
+            "is_passage": true
         },
         {
             "question_id": "18",
@@ -266,7 +267,8 @@
             },
             "correct_option_label": "E",
             "explanation": "Calculate the Chi-Square statistic $\\chi^2 = \\sum \\frac{(O - E)^2}{E}$ for each category:\n1. $\\frac{(238 - 220.1)^2}{220.1} = \\frac{17.9^2}{220.1} \\approx 1.455$\n2. $\\frac{(1322 - 1271.2)^2}{1271.2} = \\frac{50.8^2}{1271.2} \\approx 2.030$\n3. $\\frac{(1938 - 2214.7)^2}{2214.7} = \\frac{(-276.7)^2}{2214.7} \\approx 34.570$\n4. $\\frac{(1400 - 1123.4)^2}{1123.4} = \\frac{276.6^2}{1123.4} \\approx 68.100$\n5. $\\frac{(102 - 170.6)^2}{170.6} = \\frac{(-68.6)^2}{170.6} \\approx 27.585$\nSum of these values $\\approx 133.74$.\n\nDegrees of freedom $df = k - 1 - p$. Here we have $k=5$ intervals, and we estimated $p=2$ parameters (mean and standard deviation) from the data.\n$$df = 5 - 1 - 2 = 2$$\nThe critical cut-off for $df=2$ at 5% is 5.99. Since our test statistic $133.74 > 5.99$, we reject the null hypothesis of normality.",
-            "module": 1
+            "module": 1,
+            "passage_id": "17"
         },
         {
             "question_id": "19",
@@ -281,7 +283,8 @@
             },
             "correct_option_label": "D",
             "explanation": "Option D suggests that a non-significant intercept must be eliminated from the model. This is statistically false. Even when an intercept's p-value ($0.606$) indicates it's statistically indistinguishable from zero, standard modelling practice retains the intercept term unless there is strict theoretical justification to pass the model directly through the origin. Forcing the intercept to zero restricts the model and severely biases the coefficients of the other predictors.",
-            "module": 2
+            "module": 2,
+            "passage_id": "17"
         },
         {
             "question_id": "20",
@@ -296,7 +299,8 @@
             },
             "correct_option_label": "C",
             "explanation": "From the case study prompt, there are 296 returned orders out of 5000 total. The proportion is roughly $296 / 5000 = 0.0592$ or $\\approx 6\\%$. This scenario presents a classic \"imbalanced class\" issue where the target variable (Returns) is massively skewed toward one label (Not Returned). When classes are extremely imbalanced, standard logistic regression tends to predict the majority class for all data points, achieving high accuracy but providing practically zero predictive power for the minority \"Returns\" class.",
-            "module": 3
+            "module": 3,
+            "passage_id": "17"
         },
         {
             "question_id": "21",
@@ -311,7 +315,8 @@
             },
             "correct_option_label": "A",
             "explanation": "An Autoregressive Model of order 1 [AR(1)] uses only the value from the immediate previous time period ($Y_t$) to predict the future value ($Y_{t+1}$).\nThe AR(1) equation is: \n$$Y_{t+1} = \\beta_0 + \\beta_1 Y_t$$\nWhere intercept $\\beta_0 = 1664.23$, and the autoregressive coefficient $\\beta_1 = 0.105$.\nThe sales today (the last listed day, $Y_t$) = $713.79$.\n$$Y_{t+1} = 1664.23 + 0.105 \\times 713.79$$\n$$Y_{t+1} = 1664.23 + 74.94795$$\n$$Y_{t+1} = 1739.17795$$\nRounding to the nearest integer, the predicted sales for tomorrow is Rs 1739.",
-            "module": 3
+            "module": 3,
+            "passage_id": "17"
         }
     ]
 }

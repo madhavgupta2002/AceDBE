@@ -21,8 +21,23 @@
       "module": 4
     },
     {
+      "question_id": "Passage_1",
+      "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 3
+    },
+    {
       "question_id": "14",
-      "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. What is the margin of error corresponding to a 95% confidence interval on the true value of the average contacts per week?",
+      "question_text": "What is the margin of error corresponding to a 95% confidence interval on the true value of the average contacts per week?",
       "question_type": "MCQ",
       "options": {
         "A": "Margin of error is between 1.0 to 1.5",
@@ -32,11 +47,12 @@
       },
       "correct_option_label": "D",
       "explanation": "Step 1: $n=16, \\bar{x}=19, s=5, df=15$.\nStep 2: $t_{0.025, 15} = 2.131$.\nStep 3: Margin of Error $ME = t \\cdot \\frac{s}{\\sqrt{n}} = 2.131 \\cdot \\frac{5}{4} = 2.66$.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "15",
-      "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. What is the standard error corresponding to a 85% confidence interval on the true value of the average contacts per week?",
+      "question_text": "What is the standard error corresponding to a 85% confidence interval on the true value of the average contacts per week?",
       "question_type": "MCQ",
       "options": {
         "A": "Standard error is between 0.0 to 1.0",
@@ -46,11 +62,27 @@
       },
       "correct_option_label": "B",
       "explanation": "Standard Error $SE = \\frac{s}{\\sqrt{n}} = \\frac{5}{\\sqrt{16}} = 1.25$. This is independent of the confidence level.",
-      "module": 2
+      "module": 2,
+      "passage_id": "Passage_1"
+    },
+    {
+      "question_id": "Passage_2",
+      "question_text": "In a random survey of 24 students in a school, 7 students admitted that they spend more than 2 hours per day on social media activities.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 3
     },
     {
       "question_id": "16",
-      "question_text": "In a random survey of 24 students in a school, 7 students admitted that they spend more than 2 hours per day on social media activities. What is the margin of error corresponding to an 80% confidence interval of true proportion of students spending more than 2 hours per day on social media activities in the population.",
+      "question_text": "What is the margin of error corresponding to an 80% confidence interval of true proportion of students spending more than 2 hours per day on social media activities in the population.",
       "question_type": "MCQ",
       "options": {
         "A": "Margin of error is between 0.0 to 0.10",
@@ -60,11 +92,12 @@
       },
       "correct_option_label": "B",
       "explanation": "Step 1: $\\hat{p} = 7/24 \\approx 0.2917$.\nStep 2: $z_{0.10} = 1.28$.\nStep 3: $ME = z \\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}} = 1.28 \\sqrt{\\frac{0.2917 \\cdot 0.7083}{24}} \\approx 0.118$.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "17",
-      "question_text": "In a random survey of 24 students in a school, 7 students admitted that they spend more than 2 hours per day on social media activities. What is the smallest sample size have will yield a desired margin of error of 0.05 or less for a 90% confidence interval on the true proportion of students spending more than 2 hours per day on social media activities in the population.",
+      "question_text": "What is the smallest sample size have will yield a desired margin of error of 0.05 or less for a 90% confidence interval on the true proportion of students spending more than 2 hours per day on social media activities in the population.",
       "question_type": "MCQ",
       "options": {
         "A": "Sample size of 400",
@@ -74,7 +107,8 @@
       },
       "correct_option_label": "B",
       "explanation": "Step 1: Use $n = \\frac{z^2 p(1-p)}{E^2}$ with $z=1.645, E=0.05$.\nStep 2: Conservative estimate $p=0.5 \\Rightarrow n = \\frac{1.645^2 \\cdot 0.25}{0.0025} \\approx 271$. Rounded to nearest option, 300.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "18",

@@ -47,8 +47,23 @@
             "module": 2
         },
         {
+            "question_id": "Passage_1",
+            "question_text": "Microeconomics by Pindyck and Rubinfeld is a textbook bought by only two types of students: MBA students and advanced undergraduates. The demand curve for MBA students is Qm=10 - P, where Qm is in thousands and is P in hundreds of rupees. The demand curve for advanced undergraduates is Qa=20 - 4P, where Qa is in thousands and P in hundreds of rupees.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 2
+        },
+        {
             "question_id": "5",
-            "question_text": "Microeconomics by Pindyck and Rubinfeld is a textbook bought by only two types of students: MBA students and advanced undergraduates. The demand curve for MBA students is Qm=10 - P, where Qm is in thousands and is P in hundreds of rupees. The demand curve for advanced undergraduates is Qa=20 - 4P, where Qa is in thousands and P in hundreds of rupees. \n\nThe total quantity demanded at a price Rs. 700 will be",
+            "question_text": "The total quantity demanded at a price Rs. 700 will be",
             "question_type": "MCQ",
             "options": {
                 "A": "2000",
@@ -58,7 +73,8 @@
             },
             "correct_option_label": "C",
             "explanation": "Since P is measured in hundreds of rupees, convert the price: P = $\\frac{700}{100}$ = 7.\n\nStep 1: Calculate MBA demand at P = 7.\n$Q_m$ = 10 - 7 = 3 (thousands) = 3,000 units.\n\nStep 2: Calculate undergraduate demand at P = 7.\n$Q_a$ = 20 - 4(7) = 20 - 28 = -8.\nSince quantity demanded cannot be negative, $Q_a$ = 0. (Undergraduates are fully priced out when P > 5, i.e., when the price exceeds Rs 500.)\n\nStep 3: Total quantity demanded.\n$Q_{total}$ = 3,000 + 0 = 3,000 units.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "6",
@@ -72,11 +88,27 @@
             },
             "correct_option_label": "C",
             "explanation": "Convert price: P = $\\frac{100}{100}$ = 1.\n\nStep 1: MBA elasticity at P = 1.\n$Q_m$ = 10 - 1 = 9 (thousands).\n$\\varepsilon_m$ = $\\left|\\frac{dQ_m}{dP}\\right| \\times \\frac{P}{Q_m}$ = 1 $\\times \\frac{1}{9} \\approx$ 0.111.\n\nStep 2: Market demand at P = 1 (since P = 1 < 5, both types buy).\n$Q_{total}$ = (10 - P) + (20 - 4P) = 30 - 5P = 30 - 5(1) = 25 (thousands).\n$\\varepsilon_{market}$ = $\\left|\\frac{dQ}{dP}\\right| \\times \\frac{P}{Q}$ = 5 $\\times \\frac{1}{25}$ = 0.200.\n\nStep 3: Compare elasticities.\n$\\varepsilon_m$ = 0.111 < $\\varepsilon_{market}$ = 0.200.\n\nMBA demand is less elastic than market demand at P = Rs 100.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
+        },
+        {
+            "question_id": "Passage_2",
+            "question_text": "Let there be three types of consumers: High, Medium, and Low. Banana, a software company has a product called Pro-Max, which is produced at zero marginal cost. Also assume that there are 50 High type, 30 Medium type, and 20 Low type consumers. Moreover, each consumer has a demand for only one unit of Pro-Max. Following are the maximum willingness to pay for the product by the three consumers' types:\n\nHigh: 120;         Medium: 60;         Low: 20.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 4
         },
         {
             "question_id": "8",
-            "question_text": "Let there be three types of consumers: High, Medium, and Low. Banana, a software company has a product called Pro-Max, which is produced at zero marginal cost. Also assume that there are 50 High type, 30 Medium type, and 20 Low type consumers. Moreover, each consumer has a demand for only one unit of Pro-Max. Following are the maximum willingness to pay for the product by the three consumers' types:\n\nHigh: 120;         Medium: 60;         Low: 20.\n\nThe uniform price (or a single price) that gives Banana, the highest revenue is",
+            "question_text": "The uniform price (or a single price) that gives Banana, the highest revenue is",
             "question_type": "MCQ",
             "options": {
                 "A": "120",
@@ -86,7 +118,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Since MC = 0, revenue equals profit. Evaluate revenue at each possible uniform price:\n\nAt P = 120: Only High types buy (WTP $\\geq$ 120).\nTR = 120 $\\times$ 50 = 6,000.\n\nAt P = 60: High and Medium types buy (WTP $\\geq$ 60).\nTR = 60 $\\times$ (50 + 30) = 60 $\\times$ 80 = 4,800.\n\nAt P = 20: All types buy.\nTR = 20 $\\times$ (50 + 30 + 20) = 20 $\\times$ 100 = 2,000.\n\nRevenue is maximized at P = 120 with TR = 6,000.",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "9",
@@ -100,7 +133,8 @@
             },
             "correct_option_label": "D",
             "explanation": "Price discrimination requires exactly three conditions:\n1. Market power: The firm must be able to set prices above marginal cost.\n2. Market segmentation: The firm must identify and separate consumer types by their WTP.\n3. No arbitrage: Consumers in lower-price segments cannot resell the good to those in higher-price segments.\n\nZero marginal cost is not a necessary condition. Price discrimination can be practiced at any MC level — the profit motive exists regardless of whether costs are zero or positive.\n\nOption D (MC = 0) is the condition that is NOT necessary.",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "10",
@@ -114,7 +148,8 @@
             },
             "correct_option_label": "C",
             "explanation": "The firm can identify High types but cannot distinguish Medium from Low types.\n\nFor High types (50 consumers, WTP = 120):\nCharge P = 120 (their full WTP). Revenue = 120 $\\times$ 50 = 6,000.\n\nFor the indistinguishable Medium + Low group (30 + 20 = 50 consumers):\n- At P = 60: Only Medium types buy (WTP $\\geq$ 60). Revenue = 60 $\\times$ 30 = 1,800.\n- At P = 20: Both Medium and Low types buy. Revenue = 20 $\\times$ 50 = 1,000.\n\nCharging P = 60 to the entire group maximizes revenue from this segment (1,800 > 1,000).\n\nRevenue-maximizing prices: 120 to High, 60 to Medium, and 60 to Low types.",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "11",
@@ -145,8 +180,23 @@
             "module": 2
         },
         {
+            "question_id": "Passage_3",
+            "question_text": "Suppose the current equilibrium quantity of alcoholic beverages is Q* and the current equilibrium price is P*. The government wishes to reduce the quantity of alcoholic beverages sold, and therefore, is considering the imposition of a specific tax (on per unit of quantity sold) on the sellers of alcoholic drinks. Suppose that the market for alcoholic drinks can be described by (i) a large number of price-taking buyers and sellers of alcoholic drinks, and (ii) a downward sloping linear market demand curve and an upward sloping linear market supply curve.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 2
+        },
+        {
             "question_id": "13",
-            "question_text": "Suppose the current equilibrium quantity of alcoholic beverages is Q* and the current equilibrium price is P*. The government wishes to reduce the quantity of alcoholic beverages sold, and therefore, is considering the imposition of a specific tax (on per unit of quantity sold) on the sellers of alcoholic drinks. Suppose that the market for alcoholic drinks can be described by (i) a large number of price-taking buyers and sellers of alcoholic drinks, and (ii) a downward sloping linear market demand curve and an upward sloping linear market supply curve.\n\nFrom the options given below, the reduction in the quantity sold of the alcohol in the market would be highest after the introduction of the tax when",
+            "question_text": "From the options given below, the reduction in the quantity sold of the alcohol in the market would be highest after the introduction of the tax when",
             "question_type": "MCQ",
             "options": {
                 "A": "market supply curve is inelastic at (P*,Q*), and the market demand curve is elastic at (P*,Q*)",
@@ -156,7 +206,8 @@
             },
             "correct_option_label": "B",
             "explanation": "A per-unit tax drives a wedge between the buyer's price and the seller's price, reducing equilibrium quantity.\n\nThe reduction in quantity is larger when both sides respond strongly to price changes:\n- Elastic supply: Sellers sharply reduce quantity when the net price they receive falls.\n- Elastic demand: Buyers sharply reduce quantity when the price they pay rises.\n\nWhen both supply and demand are elastic, the reduction in quantity traded from either side is large, so the combined fall in equilibrium quantity is maximized.\n\nConclusion: The quantity reduction is highest when both supply and demand are elastic (Option B).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "14",
@@ -170,11 +221,27 @@
             },
             "correct_option_label": "A",
             "explanation": "The tax burden falls more heavily on the more inelastic side of the market.\n\nSeller's share of tax $\\approx \\frac{|E_D|}{E_S + |E_D|}$.\n\nIf supply is relatively more inelastic than demand ($E_S < |E_D|$): Sellers have fewer alternatives — they cannot easily shift production to other goods when their net price falls. They absorb a larger share of the tax through a lower net price received.\n\nOption A (supply more inelastic than demand) means sellers bear the larger burden.\n\nNote: Options C and D describe conditions where consumers bear most of the burden (perfectly inelastic demand or perfectly elastic supply).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_3"
+        },
+        {
+            "question_id": "Passage_4",
+            "question_text": "The average total cost to produce 100 cookies is \\$0.25 per cookie. The marginal cost is constant at \\$0.10 for all levels of cookies produced.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 3
         },
         {
             "question_id": "16",
-            "question_text": "The average total cost to produce 100 cookies is \\$0.25 per cookie. The marginal cost is constant at \\$0.10 for all levels of cookies produced. The total cost to produce 50 cookies is:",
+            "question_text": "The total cost to produce 50 cookies is:",
             "question_type": "MCQ",
             "options": {
                 "A": "\\$20",
@@ -184,7 +251,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Step 1: Find Total Cost at Q = 100.\nTC(100) = ATC $\\times$ Q = 0.25 $\\times$ 100 = \\$25.\n\nStep 2: Find Total Variable Cost at Q = 100 (since MC is constant, TVC = MC $\\times$ Q).\nTVC(100) = 0.10 $\\times$ 100 = \\$10.\n\nStep 3: Solve for Fixed Cost.\nFC = TC - TVC = 25 - 10 = \\$15.\n\nStep 4: Find Total Cost at Q = 50.\nTC(50) = FC + MC $\\times$ Q = 15 + 0.10 $\\times$ 50 = 15 + 5 = \\$20.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_4"
         },
         {
             "question_id": "17",
@@ -198,7 +266,8 @@
             },
             "correct_option_label": "A",
             "explanation": "From Q16, FC = \\$15. The ATC function is:\nATC(Q) = $\\frac{FC}{Q}$ + MC = $\\frac{15}{Q}$ + 0.10.\n\nAt Q = 50: ATC = $\\frac{15}{50}$ + 0.10 = 0.30 + 0.10 = \\$0.40.\nAt Q = 100: ATC = $\\frac{15}{100}$ + 0.10 = 0.15 + 0.10 = \\$0.25.\n\nAs Q increases, $\\frac{15}{Q}$ decreases, so ATC is always falling.\n\nKey rule: When MC < ATC, the ATC curve is falling. Here MC = \\$0.10 is always below ATC at both output levels, so ATC is falling at both Q = 50 and Q = 100.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_4"
         },
         {
             "question_id": "18",
@@ -341,8 +410,23 @@
             "module": 2
         },
         {
+            "question_id": "Passage_5",
+            "question_text": "The industry is characterized by the following equations:\n\nTotal Cost per Firm: TC = 100 + 2Q²\nMarginal Cost per Firm: MC = 4Q\nIndustry Demand Curve: P = 120 - 2Q",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 4
+        },
+        {
             "question_id": "28",
-            "question_text": "The industry is characterized by the following equations:\n\nTotal Cost per Firm: TC = 100 + 2Q²\nMarginal Cost per Firm: MC = 4Q\nIndustry Demand Curve: P = 120 - 2Q\n\nIf there is only one firm (monopoly) in the industry, what is the profit-maximizing quantity and price? Marginal Revenue Curve for the monopolist is given by: MR = 120 - 4Q",
+            "question_text": "If there is only one firm (monopoly) in the industry, what is the profit-maximizing quantity and price? Marginal Revenue Curve for the monopolist is given by: MR = 120 - 4Q",
             "question_type": "MCQ",
             "options": {
                 "A": "Q=10,P=70",
@@ -352,7 +436,8 @@
             },
             "correct_option_label": "B",
             "explanation": "Step 1: Set MR = MC to find profit-maximizing quantity.\n120 - 4Q = 4Q\n120 = 8Q\n$Q_M$ = 15.\n\nStep 2: Substitute $Q_M$ = 15 into the demand curve to find price.\n$P_M$ = 120 - 2(15) = 120 - 30 = 90.\n\nMonopoly equilibrium: $Q_M$ = 15, $P_M$ = 90.",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_5"
         },
         {
             "question_id": "29",
@@ -366,7 +451,8 @@
             },
             "correct_option_label": "B",
             "explanation": "Step 1: Calculate Total Revenue at Q = 15, P = 90.\nTR = P $\\times$ Q = 90 $\\times$ 15 = 1,350.\n\nStep 2: Calculate Total Cost at Q = 15.\nTC = 100 + 2(15)^2 = 100 + 2(225) = 100 + 450 = 550.\n\nStep 3: Calculate Profit.\n$\\pi$ = TR - TC = 1,350 - 550 = \\$800.",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_5"
         },
         {
             "question_id": "30",
@@ -380,7 +466,8 @@
             },
             "correct_option_label": "A",
             "explanation": "In perfect competition, each firm is a price taker and produces where P = MC.\n\nStep 1: Set P = MC.\n120 - 2Q = 4Q\n120 = 6Q\n$Q^* = 20$.\n\nStep 2: Find equilibrium price by substituting $Q^*$ = 20 into the demand curve.\n$P^* = 120 - 2(20) = 120 - 40 = 80$.\n\nCompetitive equilibrium: $Q^*$ = 20, $P^*$ = 80.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_5"
         },
         {
             "question_id": "31",
@@ -394,7 +481,8 @@
             },
             "correct_option_label": "C",
             "explanation": "Step 1: Calculate Total Revenue at Q = 20, P = 80.\nTR = P $\\times$ Q = 80 $\\times$ 20 = 1,600.\n\nStep 2: Calculate Total Cost at Q = 20.\nTC = 100 + 2(20)^2 = 100 + 2(400) = 100 + 800 = 900.\n\nStep 3: Calculate Profit.\n$\\pi$ = TR - TC = 1,600 - 900 = \\$700.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_5"
         },
         {
             "question_id": "32",
@@ -408,7 +496,8 @@
             },
             "correct_option_label": "D",
             "explanation": "The Deadweight Loss (DWL) under monopoly is the area of the triangle between the monopoly output and the competitive output.\n\nKey values:\nMonopoly: $Q_M$ = 15, $P_M$ = 90.\nCompetition: $Q^*$ = 20, $P^*$ = 80.\n\nStep 1: Identify the base and height of the DWL triangle.\nBase = $Q^* - Q_M$ = 20 - 15 = 5.\nHeight = $P_M - P^*$ = 90 - 80 = 10.\n\nStep 2: Calculate DWL.\nDWL = $\\frac{1}{2} \\times \\text{base} \\times \\text{height}$ = $\\frac{1}{2} \\times$ 5 $\\times$ 10 = 25.\n\nThis represents the value of trades that would have occurred under competition but do not occur under monopoly due to the restricted output.",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_5"
         },
         {
             "question_id": "33",
@@ -425,8 +514,23 @@
             "module": 2
         },
         {
+            "question_id": "Passage_6",
+            "question_text": "This is the Year 2040. The annual Demand for E-scooters in Bengaluru, driven by generation Z and teenagers of generation Alpha, is given by QD = 5000 - 250P. The quantity is measured in thousands of E-scooters and the price is measured in thousands of rupees per E-scooter. Even though E-scooters are environmentally a better choice, their high-adoption and reckless riding has increased road accidents. As a result, Bengaluru Municipal Corporation (Bruhat Bengaluru Mahanagara Palike) has imposed a specific (quantity) tax of rupees two thousand per E-scooter (i.e., Rs. 2,000 per E-Scooter) on producers. The before tax supply curve for E-scooters is QS = 600 + 150P. Again, Q is measured in thousands of E-scooters and P is measured in thousands of rupees per E-scooter.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 2
+        },
+        {
             "question_id": "35",
-            "question_text": "This is the Year 2040. The annual Demand for E-scooters in Bengaluru, driven by generation Z and teenagers of generation Alpha, is given by QD = 5000 - 250P. The quantity is measured in thousands of E-scooters and the price is measured in thousands of rupees per E-scooter. Even though E-scooters are environmentally a better choice, their high-adoption and reckless riding has increased road accidents. As a result, Bengaluru Municipal Corporation (Bruhat Bengaluru Mahanagara Palike) has imposed a specific (quantity) tax of rupees two thousand per E-scooter (i.e., Rs. 2,000 per E-Scooter) on producers. The before tax supply curve for E-scooters is QS = 600 + 150P. Again, Q is measured in thousands of E-scooters and P is measured in thousands of rupees per E-scooter.\n\nFind the equilibrium price of E-scooters before the specific tax is levied.",
+            "question_text": "Find the equilibrium price of E-scooters before the specific tax is levied.",
             "question_type": "MCQ",
             "options": {
                 "A": "Rs. 12,000",
@@ -436,7 +540,8 @@
             },
             "correct_option_label": "B",
             "explanation": "Set QD = QS to find equilibrium.\n5000 - 250P = 600 + 150P\n5000 - 600 = 150P + 250P\n4400 = 400P\n$P^*$ = 11 (in thousands of rupees) = Rs 11,000.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_6"
         },
         {
             "question_id": "36",
@@ -450,7 +555,8 @@
             },
             "correct_option_label": "B",
             "explanation": "Substitute the equilibrium price $P^*$ = 11 into the supply equation.\n$Q^*$ = 600 + 150(11) = 600 + 1,650 = 2,250 (in thousands).\n\nVerify using demand: QD = 5000 - 250(11) = 5000 - 2,750 = 2,250. ✓\n\nEquilibrium quantity = 2,250 thousands = 22,50,000 units.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_6"
         },
         {
             "question_id": "37",
@@ -464,7 +570,8 @@
             },
             "correct_option_label": "A",
             "explanation": "A tax of Rs 2,000 = 2 (in thousands) imposed on producers means the seller retains $P_s$ = $P_b$ - 2, where $P_b$ is the buyer's price.\n\nStep 1: Rewrite supply in terms of buyer price.\n$Q_S^{new}$ = 600 + 150 $\\times$ ($P_b$ - 2).\n\nStep 2: Set QD = $QS^{new}$ and solve for $P_b.$\n5000 - $250P_b$ = 600 + 150($P_b$ - 2)\n5000 - $250P_b$ = 600 + $150P_b$ - 300\n5000 - $250P_b$ = 300 + $150P_b$\n4700 = $400P_b$\n$P_b$ = 11.75 (thousands) = Rs 11,750.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_6"
         },
         {
             "question_id": "38",
@@ -478,7 +585,8 @@
             },
             "correct_option_label": "A",
             "explanation": "The tax wedge means: $P_b$ - $P_s$ = T.\n\nThe producer receives the buyer's price minus the tax.\n$P_s$ = $P_b$ - T = 11,750 - 2,000 = Rs 9,750.\n\nVerification: The tax burden is split as:\n- Buyers pay Rs 11,750 vs. pre-tax Rs 11,000: buyer burden = Rs 750.\n- Sellers receive Rs 9,750 vs. pre-tax Rs 11,000: seller burden = Rs 1,250.\n- Total burden = 750 + 1,250 = Rs 2,000 = the full tax. ✓",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_6"
         },
         {
             "question_id": "39",
@@ -492,7 +600,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Fraction of tax passed to buyers = $\\frac{\\text{Rise in buyer price}}{\\text{Tax amount}}$.\n\nBuyer price before tax: $P_b^{before}$ = Rs 11,000.\nBuyer price after tax: $P_b^{after}$ = Rs 11,750.\nTax = Rs 2,000.\n\nFraction = $\\frac{11{,}750 - 11{,}000}{2{,}000} = \\frac{750}{2{,}000} = \\frac{3}{8}$.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_6"
         },
         {
             "question_id": "40",

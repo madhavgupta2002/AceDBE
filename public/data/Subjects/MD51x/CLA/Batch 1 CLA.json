@@ -145,8 +145,23 @@
             "module": 1
         },
         {
+            "question_id": "Passage_1",
+            "question_text": "Context: Your local cinema theatre is screening the following movies:\n1. A mediocre movie this weekend (u0 = 3),\n2. A good movie next weekend (u1 = 5),\n3. A great movie two weekends from now (u2 = 8) and\n4. A Marvel movie three weekends from now (u3 = 13).\n\nFor all questions that follow (Question 1 to 4), assume that β = 1/2 and δ = 1.\nU^t (x) represent Utility at time t ( this weekend (0), next weekend(1), two weekends from now(2), three weekends from now(3) ) from watching a particular movie x ( Mediocre(a), Good(b), Great(c), Marvel(d)) .",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 2
+        },
+        {
             "question_id": "2_1",
-            "question_text": "Context: Your local cinema theatre is screening the following movies:\n1. A mediocre movie this weekend (u0 = 3),\n2. A good movie next weekend (u1 = 5),\n3. A great movie two weekends from now (u2 = 8) and\n4. A Marvel movie three weekends from now (u3 = 13).\n\nFor all questions that follow (Question 1 to 4), assume that β = 1/2 and δ = 1.\nU^t (x) represent Utility at time t ( this weekend (0), next weekend(1), two weekends from now(2), three weekends from now(3) ) from watching a particular movie x ( Mediocre(a), Good(b), Great(c), Marvel(d)) .\n\nAs an Econ, find U^0 (d), U^1 (d) and U^2 (d), and chose the correct option from below:",
+            "question_text": "As an Econ, find U^0 (d), U^1 (d) and U^2 (d), and chose the correct option from below:",
             "question_type": "MCQ",
             "options": {
                 "A": "5, 8 and 13",
@@ -156,11 +171,12 @@
             },
             "correct_option_label": "B",
             "explanation": "Step 1: An \"Econ\" represents a standard exponential discounter who has no present bias, thus β = 1. \nStep 2: The standard discount factor is δ = 1. \nStep 3: The utility of movie d (Marvel) is 13. At any time t, U^t(d) = β * δ^(delay) * u = 1 * 1 * 13 = 13.\nTherefore, the utility remains 13 across all evaluated time periods.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "2_2",
-            "question_text": "[Refer to the context provided in Question 1] As an exponential discounter which movie you will watch?",
+            "question_text": "As an exponential discounter which movie you will watch?",
             "question_type": "MCQ",
             "options": {
                 "A": "Mediocre",
@@ -170,11 +186,12 @@
             },
             "correct_option_label": "D",
             "explanation": "Step 1: An exponential discounter sets β = 1 and uses δ = 1.\nStep 2: They compare the utilities of all options with no time inconsistency: Mediocre (3), Good (5), Great (8), and Marvel (13).\nStep 3: Since Marvel offers the highest absolute utility (13) and there is no strict discounting, they choose to watch Marvel.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "2_3",
-            "question_text": "[Refer to the context provided in Question 1] As a naïve hyperbolic discounter, you will watch which movie?",
+            "question_text": "As a naïve hyperbolic discounter, you will watch which movie?",
             "question_type": "MCQ",
             "options": {
                 "A": "Mediocre",
@@ -184,11 +201,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Step 1: At t=0, a naïve discounter plans for the future assuming future selves won't be biased. Utilities are: Mediocre=3, Good=0.5*5=2.5, Great=0.5*8=4, Marvel=0.5*13=6.5. They plan to watch Marvel.\nStep 2: At t=1, they evaluate: Good=5, Great=0.5*8=4, Marvel=0.5*13=6.5. They still wait.\nStep 3: At t=2, 'Great' is now immediate so its utility is 8. 'Marvel' is in the future so its utility is 0.5*13=6.5. Since 8 > 6.5, they unexpectedly change their plan and watch the Great movie at t=2.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "2_4",
-            "question_text": "[Refer to the context provided in Question 1] As a sophisticated hyperbolic discounter, you will watch which movie?",
+            "question_text": "As a sophisticated hyperbolic discounter, you will watch which movie?",
             "question_type": "MCQ",
             "options": {
                 "A": "Mediocre",
@@ -198,7 +216,8 @@
             },
             "correct_option_label": "A",
             "explanation": "Step 1: A sophisticate uses backward induction. They know at t=2 they would choose Great (8) over Marvel (0.5*13=6.5). So Marvel is eliminated.\nStep 2: At t=1, they know if they wait, they'll watch Great. They compare Good (immediate, 5) to Great (delayed, 0.5*8=4). They would choose Good. Great is eliminated.\nStep 3: At t=0, they compare Mediocre (immediate, 3) to Good (delayed, 0.5*5=2.5). Since 3 > 2.5, they choose to watch the Mediocre movie immediately.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "2_5",

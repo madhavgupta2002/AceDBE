@@ -7,8 +7,23 @@
   },
   "questions": [
     {
+      "question_id": "Passage_2",
+      "question_text": "The daily sales in a local bakery over a 10-day period are recorded as 32, 41, 29, 35, 32, 44, 26, 26, 35, 50, respectively.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 1
+    },
+    {
       "question_id": "1",
-      "question_text": "The daily sales in a local bakery over a 10-day period are recorded as 32, 41, 29, 35, 32, 44, 26, 26, 35, 50, respectively. The third quartile of daily sales is given by:",
+      "question_text": "The third quartile of daily sales is given by:",
       "question_type": "MCQ",
       "options": {
         "A": "41.75",
@@ -18,11 +33,12 @@
       },
       "correct_option_label": "A",
       "explanation": "Step 1: Arrange data in ascending order: 26, 26, 29, 32, 32, 35, 35, 41, 44, 50. \nStep 2: Calculate the position of the third quartile ($Q_3$) using the formula: $Position = 0.75(n + 1) = 0.75(10 + 1) = 8.25$. \nStep 3: Find the value at position 8.25: $Q_3 = Value_8 + 0.25(Value_9 - Value_8) = 41 + 0.25(44 - 41) = 41 + 0.75 = 41.75$.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "2",
-      "question_text": "The daily sales in a local bakery over a 10-day period are recorded as 32, 41, 29, 35, 32, 44, 26, 26, 35, 50, respectively. The median of daily sales is given by:",
+      "question_text": "The median of daily sales is given by:",
       "question_type": "MCQ",
       "options": {
         "A": "38.0",
@@ -32,7 +48,8 @@
       },
       "correct_option_label": "D",
       "explanation": "Step 1: Arrange data in ascending order: 26, 26, 29, 32, 32, 35, 35, 41, 44, 50. \nStep 2: For $n = 10$ (even), the median is the average of the 5th and 6th terms. \nStep 3: $Median = \\frac{32 + 35}{2} = 33.5$.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "3",
@@ -147,8 +164,23 @@
       "module": 3
     },
     {
+      "question_id": "Passage_1",
+      "question_text": "The average length of stay in the ICU at hospital for surgery is 2.5 days. The cost of over-the-counter medications for this treatment is Normally distributed with a mean of 15,000 and a standard deviation of 3,000.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 3
+    },
+    {
       "question_id": "11",
-      "question_text": "The average length of stay in the ICU at hospital for surgery is 2.5 days. The cost of over-the-counter medications for this treatment is Normally distributed with a mean of 15,000 and a standard deviation of 3,000. The probability that a patient will spend more than 2 days in ICU is:",
+      "question_text": "The probability that a patient will spend more than 2 days in ICU is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0.00 and 0.25",
@@ -158,11 +190,12 @@
       },
       "correct_option_label": "B",
       "explanation": "Assuming stay duration follows an Exponential distribution with mean $\\mu = 2.5$, so $\\lambda = 1/2.5 = 0.4$. \n$P(X > 2) = e^{-\\lambda x} = e^{-(0.4 \\cdot 2)} = e^{-0.8} \\approx 0.449$. \nThis is between 0.25 and 0.50.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "12",
-      "question_text": "The average length of stay in the ICU at hospital for surgery is 2.5 days. The cost of over-the-counter medications for this treatment is Normally distributed with a mean of 15,000 and a standard deviation of 3,000. The probability that a patient spends between 7,000 and 14,000 on over-the-counter medications is:",
+      "question_text": "The probability that a patient spends between 7,000 and 14,000 on over-the-counter medications is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0.00 and 0.25",
@@ -172,7 +205,8 @@
       },
       "correct_option_label": "B",
       "explanation": "Normal Distribution: $\\mu = 15000, \\sigma = 3000$. \n$z_1 = (7000 - 15000) / 3000 = -2.67$. \n$z_2 = (14000 - 15000) / 3000 = -0.33$. \n$P(-2.67 < Z < -0.33) = P(Z < -0.33) - P(Z < -2.67) \\approx 0.3707 - 0.0038 = 0.3669$. \nThis is between 0.25 and 0.50.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "13",

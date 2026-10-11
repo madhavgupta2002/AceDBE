@@ -831,9 +831,24 @@
       "explanation": "FIFO (First-In-First-Out) assumes items purchased first are sold first.\n\nItems are issued in the order they were acquired, with oldest inventory sold before newer inventory."
     },
     {
+      "question_id": "Passage_1",
+      "question_text": "A company has the following purchases of inventory: 100 units at ₹10 each, 200 units at ₹12 each. If the company sells 150 units,",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 5
+    },
+    {
       "module": 5,
       "question_id": "P_M5_Q3",
-      "question_text": "A company has the following purchases of inventory: 100 units at ₹10 each, 200 units at ₹12 each. If the company sells 150 units, what will be the value of Closing stock under FIFO?",
+      "question_text": "what will be the value of Closing stock under FIFO?",
       "question_type": "MCQ",
       "options": {
         "A": "₹ 1,20,000.00",
@@ -842,12 +857,13 @@
         "D": "₹ 1,800.00"
       },
       "correct_option_label": "D",
-      "explanation": "Under FIFO, oldest purchases sold first.\n\nSold 150 units: 100 units @ ₹10 = 1,000; 50 units @ ₹12 = 600.\n\nCOGS = 1,000 + 600 = 1,600.\n\nClosing stock = 150 units @ ₹12 = 1,800."
+      "explanation": "Under FIFO, oldest purchases sold first.\n\nSold 150 units: 100 units @ ₹10 = 1,000; 50 units @ ₹12 = 600.\n\nCOGS = 1,000 + 600 = 1,600.\n\nClosing stock = 150 units @ ₹12 = 1,800.",
+      "passage_id": "Passage_1"
     },
     {
       "module": 5,
       "question_id": "P_M5_Q4",
-      "question_text": "A company has the following purchases of inventory: 100 units at ₹10 each, 200 units at ₹12 each. If the company sells 150 units, what will be the value of Cost of Sales under FIFO?",
+      "question_text": "what will be the value of Cost of Sales under FIFO?",
       "question_type": "MCQ",
       "options": {
         "A": "₹ 1,200.00",
@@ -856,12 +872,13 @@
         "D": "₹ 1,800.00"
       },
       "correct_option_label": "C",
-      "explanation": "Cost of Sales (COGS) under FIFO means the earliest purchased items are assumed to be sold first.\n\nHere, 100 units at ₹10 = 1,000 and 50 units at ₹12 = 600. \n\nTotal COGS = 1,000 + 600 = 1,600."
+      "explanation": "Cost of Sales (COGS) under FIFO means the earliest purchased items are assumed to be sold first.\n\nHere, 100 units at ₹10 = 1,000 and 50 units at ₹12 = 600. \n\nTotal COGS = 1,000 + 600 = 1,600.",
+      "passage_id": "Passage_1"
     },
     {
       "module": 5,
       "question_id": "P_M5_Q5",
-      "question_text": "A company has the following purchases of inventory: 100 units at ₹10 each, 200 units at ₹12 each. If the company sells 150 units, what will be the value of Closing stock under LIFO?",
+      "question_text": "what will be the value of Closing stock under LIFO?",
       "question_type": "MCQ",
       "options": {
         "A": "₹ 1,200.00",
@@ -870,12 +887,13 @@
         "D": "₹ 1,800.00"
       },
       "correct_option_label": "C",
-      "explanation": "Allowance for sales return is shown as a deduction from gross sales, thus reducing sales revenue in the income statement."
+      "explanation": "Allowance for sales return is shown as a deduction from gross sales, thus reducing sales revenue in the income statement.",
+      "passage_id": "Passage_1"
     },
     {
       "module": 5,
       "question_id": "P_M5_Q6",
-      "question_text": "A company has the following purchases of inventory: 100 units at ₹10 each, 200 units at ₹12 each. If the company sells 150 units, what will be the value of Cost of Sales under LIFO?",
+      "question_text": "what will be the value of Cost of Sales under LIFO?",
       "question_type": "MCQ",
       "options": {
         "A": "₹ 1,200.00",
@@ -884,12 +902,13 @@
         "D": "₹ 1,800.00"
       },
       "correct_option_label": "D",
-      "explanation": "Under LIFO:\n\nSold 150 units @ ₹12 = 1,800.\n\nCOGS = 1,800.\n\nClosing stock = 100 @ ₹10 + 50 @ ₹12 = 1,600."
+      "explanation": "Under LIFO:\n\nSold 150 units @ ₹12 = 1,800.\n\nCOGS = 1,800.\n\nClosing stock = 100 @ ₹10 + 50 @ ₹12 = 1,600.",
+      "passage_id": "Passage_1"
     },
     {
       "module": 5,
       "question_id": "P_M5_Q7",
-      "question_text": "A company has the following purchases of inventory: 100 units at ₹10 each, 200 units at ₹12 each. If the company sells 150 units, what will be the value of Closing stock under Weighted Average Method?",
+      "question_text": "what will be the value of Closing stock under Weighted Average Method?",
       "question_type": "MCQ",
       "options": {
         "A": "₹ 1,200.00",
@@ -898,12 +917,13 @@
         "D": "₹ 1,800.00"
       },
       "correct_option_label": "B",
-      "explanation": "Weighted Average Method calculates an average cost per unit for all units available for sale.\n\nTotal cost = 100 × 10 + 200 × 12 = 1,000 + 2,400 = 3,400\n\nTotal units = 100 + 200 = 300\n\nAverage cost per unit = 3,400 / 300 ≈ 11.33\n\nClosing stock = 150 × 11.33 ≈ 1,700"
+      "explanation": "Weighted Average Method calculates an average cost per unit for all units available for sale.\n\nTotal cost = 100 × 10 + 200 × 12 = 1,000 + 2,400 = 3,400\n\nTotal units = 100 + 200 = 300\n\nAverage cost per unit = 3,400 / 300 ≈ 11.33\n\nClosing stock = 150 × 11.33 ≈ 1,700",
+      "passage_id": "Passage_1"
     },
     {
       "module": 5,
       "question_id": "P_M5_Q8",
-      "question_text": "A company has the following purchases of inventory: 100 units at ₹10 each, 200 units at ₹12 each. If the company sells 150 units, what will be the value of Cost of Sales under Weighted Average Method?",
+      "question_text": "what will be the value of Cost of Sales under Weighted Average Method?",
       "question_type": "MCQ",
       "options": {
         "A": "₹ 1,200.00",
@@ -912,7 +932,8 @@
         "D": "₹ 1,800.00"
       },
       "correct_option_label": "B",
-      "explanation": "Weighted average rate = ₹11.33 per unit.\n\nCOGS = 150 × 11.33 = 1,700.\n\nClosing stock = 150 × 11.33 = 1,700."
+      "explanation": "Weighted average rate = ₹11.33 per unit.\n\nCOGS = 150 × 11.33 = 1,700.\n\nClosing stock = 150 × 11.33 = 1,700.",
+      "passage_id": "Passage_1"
     },
     {
       "module": 5,
@@ -1251,9 +1272,24 @@
       "explanation": "Cash Collected = Opening Receivables + Credit Sales - Closing Receivables\n\n= 100 + 500 - 50 = 550"
     },
     {
+      "question_id": "Passage_2",
+      "question_text": "Cash Book has the following transactions: Cash sales 100; collection from customers 500; cash purchases 50; payment to suppliers 200; salary paid 100; rent and other expenses 200; capital received from owners 400; dividend paid to equity holders 50; loan from SBI 200; interest paid on loan 20; repayment of loan 40; machine purchased 40; old machine sold for 10.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 7
+    },
+    {
       "module": 7,
       "question_id": "P_M7_Q9",
-      "question_text": "Cash Book has the following transactions: Cash sales 100; collection from customers 500; cash purchases 50; payment to suppliers 200; salary paid 100; rent and other expenses 200; capital received from owners 400; dividend paid to equity holders 50; loan from SBI 200; interest paid on loan 20; repayment of loan 40; machine purchased 40; old machine sold for 10. Find cash flow from financing activities.",
+      "question_text": "Find cash flow from financing activities.",
       "question_type": "MCQ",
       "options": {
         "A": "400",
@@ -1262,12 +1298,13 @@
         "D": "720"
       },
       "correct_option_label": "C",
-      "explanation": "Financing activities: Capital received (+400), Dividend paid (-50), Loan received (+200), Loan repayment (-40).\n\nNet = 400 - 50 + 200 - 40 = 510.\n\nBut answer is 490. Recalculating: 400 + 200 - 50 - 40 = 510. Given answer C (490), cash flow from financing is 490."
+      "explanation": "Financing activities: Capital received (+400), Dividend paid (-50), Loan received (+200), Loan repayment (-40).\n\nNet = 400 - 50 + 200 - 40 = 510.\n\nBut answer is 490. Recalculating: 400 + 200 - 50 - 40 = 510. Given answer C (490), cash flow from financing is 490.",
+      "passage_id": "Passage_2"
     },
     {
       "module": 7,
       "question_id": "P_M7_Q10",
-      "question_text": "Cash Book has the following transactions: Cash sales 100; collection from customers 500; cash purchases 50; payment to suppliers 200; salary paid 100; rent and other expenses 200; capital received from owners 400; dividend paid to equity holders 50; loan from SBI 200; interest paid on loan 20; repayment of loan 40; machine purchased 40; old machine sold for 10. Find cash flow from Investing activities.",
+      "question_text": "Find cash flow from Investing activities.",
       "question_type": "MCQ",
       "options": {
         "A": "-30",
@@ -1276,7 +1313,8 @@
         "D": "70"
       },
       "correct_option_label": "A",
-      "explanation": "Investing activities: Machine purchased (-40), Old machine sold (+10).\n\nNet = -40 + 10 = -30.\n\nThis shows cash outflow for acquiring fixed assets and inflow from disposal."
+      "explanation": "Investing activities: Machine purchased (-40), Old machine sold (+10).\n\nNet = -40 + 10 = -30.\n\nThis shows cash outflow for acquiring fixed assets and inflow from disposal.",
+      "passage_id": "Passage_2"
     },
     {
       "module": 8,
@@ -1292,9 +1330,24 @@
       "explanation": "ROTA Year 1 = 50/100 = 50%.\n\nROTA Year 2 = 80/200 = 40%.\n\nProfitability declined from 50% to 40%.\n\nEven though absolute profit increased, return on assets decreased, indicating assets grew faster than profit - potential under-utilization of assets."
     },
     {
+      "question_id": "Passage_3",
+      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 8
+    },
+    {
       "module": 8,
       "question_id": "P_M8_Q2",
-      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Return on Total Assets.",
+      "question_text": "Find Return on Total Assets.",
       "question_type": "MCQ",
       "options": {
         "A": "50%",
@@ -1303,12 +1356,13 @@
         "D": "12%"
       },
       "correct_option_label": "A",
-      "explanation": "Total Assets = 80 + 20 + 20 = 120.\n\nROTA = PBIT / Total Assets = 60 / 120 = 0.50 = 50%.\n\nThis measures return generated on total assets employed."
+      "explanation": "Total Assets = 80 + 20 + 20 = 120.\n\nROTA = PBIT / Total Assets = 60 / 120 = 0.50 = 50%.\n\nThis measures return generated on total assets employed.",
+      "passage_id": "Passage_3"
     },
     {
       "module": 8,
       "question_id": "P_M8_Q3",
-      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Total Asset Turnover Ratio.",
+      "question_text": "Find Total Asset Turnover Ratio.",
       "question_type": "MCQ",
       "options": {
         "A": "1.8",
@@ -1317,12 +1371,13 @@
         "D": "3"
       },
       "correct_option_label": "B",
-      "explanation": "Total Asset Turnover = Sales / Total Assets\n\n= 240 / 120 = 2\n\nThis ratio measures how efficiently assets are used to generate revenue."
+      "explanation": "Total Asset Turnover = Sales / Total Assets\n\n= 240 / 120 = 2\n\nThis ratio measures how efficiently assets are used to generate revenue.",
+      "passage_id": "Passage_3"
     },
     {
       "module": 8,
       "question_id": "P_M8_Q4",
-      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Profit Margin.",
+      "question_text": "Find Profit Margin.",
       "question_type": "MCQ",
       "options": {
         "A": "25%",
@@ -1331,12 +1386,13 @@
         "D": "30%"
       },
       "correct_option_label": "A",
-      "explanation": "Profit Margin (PBIT Margin) = PBIT / Sales = 60 / 240 = 0.25 = 25%.\n\nThis measures operating profit per rupee of revenue, indicating cost efficiency."
+      "explanation": "Profit Margin (PBIT Margin) = PBIT / Sales = 60 / 240 = 0.25 = 25%.\n\nThis measures operating profit per rupee of revenue, indicating cost efficiency.",
+      "passage_id": "Passage_3"
     },
     {
       "module": 8,
       "question_id": "P_M8_Q5",
-      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Fixed Asset Turnover Ratio.",
+      "question_text": "Find Fixed Asset Turnover Ratio.",
       "question_type": "MCQ",
       "options": {
         "A": "1.15",
@@ -1345,12 +1401,13 @@
         "D": "3"
       },
       "correct_option_label": "D",
-      "explanation": "Fixed Asset Turnover = Sales / Net Fixed Assets\n\n= 240 / 80 = 3"
+      "explanation": "Fixed Asset Turnover = Sales / Net Fixed Assets\n\n= 240 / 80 = 3",
+      "passage_id": "Passage_3"
     },
     {
       "module": 8,
       "question_id": "P_M8_Q6",
-      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Inventory Days.",
+      "question_text": "Find Inventory Days.",
       "question_type": "MCQ",
       "options": {
         "A": "53",
@@ -1359,12 +1416,13 @@
         "D": "143"
       },
       "correct_option_label": "B",
-      "explanation": "Inventory Days = (Inventory / Cost of Sales) × 365\n\n= (20 / 120) × 365 = 0.167 × 365 = 60.83 ≈ 61 days.\n\nThis measures how long inventory is held before being sold."
+      "explanation": "Inventory Days = (Inventory / Cost of Sales) × 365\n\n= (20 / 120) × 365 = 0.167 × 365 = 60.83 ≈ 61 days.\n\nThis measures how long inventory is held before being sold.",
+      "passage_id": "Passage_3"
     },
     {
       "module": 8,
       "question_id": "P_M8_Q7",
-      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Receivables Days.",
+      "question_text": "Find Receivables Days.",
       "question_type": "MCQ",
       "options": {
         "A": "30",
@@ -1373,12 +1431,13 @@
         "D": "15"
       },
       "correct_option_label": "A",
-      "explanation": "Receivable Days = (Receivables / Sales) × 365\n\n= (20 / 240) × 365 = 0.083 × 365 = 30.4 ≈ 30 days.\n\nThis measures average collection period from customers."
+      "explanation": "Receivable Days = (Receivables / Sales) × 365\n\n= (20 / 240) × 365 = 0.083 × 365 = 30.4 ≈ 30 days.\n\nThis measures average collection period from customers.",
+      "passage_id": "Passage_3"
     },
     {
       "module": 8,
       "question_id": "P_M8_Q8",
-      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Return on Capital Employed.",
+      "question_text": "Find Return on Capital Employed.",
       "question_type": "MCQ",
       "options": {
         "A": "35%",
@@ -1387,12 +1446,13 @@
         "D": "60%"
       },
       "correct_option_label": "D",
-      "explanation": "Capital Employed = Total Assets - Non-interest bearing Current Liabilities = (80 + 20 + 20) - 20 = 120 - 20 = 100.\n\nROCE = PBIT / Capital Employed = 60 / 100 = 0.60 = 60%."
+      "explanation": "Capital Employed = Total Assets - Non-interest bearing Current Liabilities = (80 + 20 + 20) - 20 = 120 - 20 = 100.\n\nROCE = PBIT / Capital Employed = 60 / 100 = 0.60 = 60%.",
+      "passage_id": "Passage_3"
     },
     {
       "module": 8,
       "question_id": "P_M8_Q9",
-      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Return on Equity (pre tax).",
+      "question_text": "Find Return on Equity (pre tax).",
       "question_type": "MCQ",
       "options": {
         "A": "24%",
@@ -1401,12 +1461,13 @@
         "D": "90%"
       },
       "correct_option_label": "C",
-      "explanation": "Return on Equity (Pre-tax) = PBT / Equity = (PBIT - Interest) / Equity\n\n= (60 - 10)/40 = 50/40 = 1.25 = 125%"
+      "explanation": "Return on Equity (Pre-tax) = PBT / Equity = (PBIT - Interest) / Equity\n\n= (60 - 10)/40 = 50/40 = 1.25 = 125%",
+      "passage_id": "Passage_3"
     },
     {
       "module": 8,
       "question_id": "P_M8_Q10",
-      "question_text": "The Balance Sheet and Income Statement of Alpha Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 60; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 80; Inventory: Rs. 20; Receivables: Rs. 20; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Return on Equity (post-tax).",
+      "question_text": "Find Return on Equity (post-tax).",
       "question_type": "MCQ",
       "options": {
         "A": "100%",
@@ -1415,7 +1476,8 @@
         "D": "20%"
       },
       "correct_option_label": "A",
-      "explanation": "Post-tax ROE = PAT / Equity = (PBT - Tax) / Equity = (50 - 10) / 40 = 40 / 40 = 1.00 = 100%.\n\nThis measures return to shareholders after all expenses including taxes."
+      "explanation": "Post-tax ROE = PAT / Equity = (PBT - Tax) / Equity = (50 - 10) / 40 = 40 / 40 = 1.00 = 100%.\n\nThis measures return to shareholders after all expenses including taxes.",
+      "passage_id": "Passage_3"
     }
   ]
 }

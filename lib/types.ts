@@ -13,6 +13,8 @@ export interface IIMBQuestion {
   topic?: string; // entrance papers: e.g. "Arithmetic"
   subtopic?: string; // entrance papers: e.g. "Time & Work"
   difficulty?: string; // entrance papers: Easy | Medium | Hard
+  is_passage?: boolean; // entry only holds a shared passage / caselet; it is not a question
+  passage_id?: string; // question_id of the passage entry this question refers to
 }
 
 // Official exam pattern (Exam banks only). Documented in QUESTION_FORMAT.md.
@@ -80,6 +82,14 @@ export interface Question {
   bankType?: BankType; // bank type (CLA | Exam | Custom) used for locating image assets
   explanation?: string;
   isSubjective?: boolean; // Flag to identify subjective questions
+  passage?: QuestionPassage; // shared passage / caselet this question belongs to
+}
+
+export interface QuestionPassage {
+  id: string;
+  text: string;
+  index: number; // 1-based position of this question among the passage's questions
+  total: number; // number of questions that use the passage
 }
 
 // Quiz state types

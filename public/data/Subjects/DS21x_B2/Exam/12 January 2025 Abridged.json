@@ -21,8 +21,23 @@
       "module": 3
     },
     {
+      "question_id": "Passage_1",
+      "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. Construct a hypothesis (H_0 and H_a) to determine if the true value of the average contacts per week is equal to 15.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 4
+    },
+    {
       "question_id": "236144714",
-      "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. Construct a hypothesis (H_0 and H_a) to determine if the true value of the average contacts per week is equal to 15. The correct form of hypothesis test to be used is the following:",
+      "question_text": "The correct form of hypothesis test to be used is the following:",
       "question_type": "MCQ",
       "options": {
         "A": "H_0: \\mu \\le 15 \\text{ and } H_a: \\mu > 15",
@@ -32,11 +47,12 @@
       },
       "correct_option_label": "B",
       "explanation": "To test if the population mean is 'equal to' a specific value, a **two-tailed test** is used.\n\n- The **null hypothesis** ($H_0$) always contains the equality sign.\n- The **alternative hypothesis** ($H_a$) asserts inequality.\n\nThus: $H_0: \\mu = 15$ and $H_a: \\mu \\neq 15$.",
-      "module": 4
+      "module": 4,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "236144715",
-      "question_text": "Sales personnel for Magenta Ltd. have been submitting weekly reports of customer contacts made during the week. A sample of 16 weekly reports showed a mean 19 and standard deviation was 5 contacts per week. Construct a hypothesis (H_0 and H_a) to determine if the true value of the average contacts per week is equal to 15. For a significance level of 10%, what is the p-value?",
+      "question_text": "For a significance level of 10%, what is the p-value?",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0.00 and 0.01",
@@ -46,11 +62,27 @@
       },
       "correct_option_label": "A",
       "explanation": "Step 1: Compute the test statistic:\n$$t = \\frac{\\bar{x} - \\mu_0}{s/\\sqrt{n}} = \\frac{19 - 15}{5/\\sqrt{16}} = \\frac{4}{1.25} = 3.2, \\quad df = 15$$\n\nStep 2: For a two-tailed test, $p\\text{-value} = 2 \\times P(t_{15} > 3.2)$.\n\nFrom the $t$-table, $P(t_{15} > 2.947) = 0.005$. Since $3.2 > 2.947$, the p-value $< 2 \\times 0.005 = 0.01$.\n\nThe p-value is between 0.00 and 0.01.",
-      "module": 4
+      "module": 4,
+      "passage_id": "Passage_1"
+    },
+    {
+      "question_id": "Passage_2",
+      "question_text": "In a random survey of 42 managers, 24 did not have an MBA degree.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 3
     },
     {
       "question_id": "236144716",
-      "question_text": "In a random survey of 42 managers, 24 did not have an MBA degree. What is the smallest sample size among those listed below that will yield a desired margin of error of 0.1 or less for a 99% confidence interval on the true proportion of managers in the population having an MBA degree.",
+      "question_text": "What is the smallest sample size among those listed below that will yield a desired margin of error of 0.1 or less for a 99% confidence interval on the true proportion of managers in the population having an MBA degree.",
       "question_type": "MCQ",
       "options": {
         "A": "Sample size of 400",
@@ -60,11 +92,12 @@
       },
       "correct_option_label": "C",
       "explanation": "Step 1: Compute sample proportion with MBA:\n$$\\hat{p} = \\frac{42 - 24}{42} = \\frac{18}{42} \\approx 0.4286$$\n\nStep 2: Apply the sample size formula for proportion:\n$$n = \\frac{Z_{\\alpha/2}^2 \\cdot \\hat{p}(1-\\hat{p})}{E^2}$$\n\nFor 99% CI: $Z_{0.005} \\approx 2.576$, $E = 0.1$.\n\nStep 3: Substituting:\n$$n = \\frac{2.576^2 \\times 0.4286 \\times 0.5714}{0.01} = \\frac{6.636 \\times 0.2449}{0.01} \\approx 162.5$$\n\nThe smallest listed sample size exceeding 162.5 is **200**.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "236144717",
-      "question_text": "In a random survey of 42 managers, 24 did not have an MBA degree. Construct a hypothesis (H_0 and H_a) to determine if the true value of the proportion of managers in the population having an MBA degree is more than 50%. The p-value corresponding to a significance level of 10% is:",
+      "question_text": "Construct a hypothesis (H_0 and H_a) to determine if the true value of the proportion of managers in the population having an MBA degree is more than 50%. The p-value corresponding to a significance level of 10% is:",
       "question_type": "MCQ",
       "options": {
         "A": "Between 0.00 and 0.05",
@@ -74,7 +107,8 @@
       },
       "correct_option_label": "C",
       "explanation": "Step 1: $\\hat{p} = 18/42 \\approx 0.4286$.\n\nHypotheses: $H_0: p \\le 0.5$, $H_a: p > 0.5$ (upper-tail test).\n\nStep 2: Compute test statistic:\n$$Z = \\frac{\\hat{p} - p_0}{\\sqrt{p_0(1-p_0)/n}} = \\frac{0.4286 - 0.5}{\\sqrt{0.5 \\times 0.5 / 42}} = \\frac{-0.0714}{0.07715} \\approx -0.925$$\n\nStep 3: For an upper-tail test:\n$$p\\text{-value} = P(Z > -0.925) = 1 - \\Phi(-0.925) = 1 - 0.1775 = 0.8225$$\n\nThe p-value is between 0.80 and 0.95.",
-      "module": 4
+      "module": 4,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "236144718",

@@ -35,8 +35,23 @@
             "module": 1
         },
         {
+            "question_id": "Passage_1",
+            "question_text": "When individuals in a sample of 150 were asked whether or not they supported capital punishment, the following information was obtained.\n\n| Do you support capital punishment? | Number of individuals |\n| :--- | :--- |\n| Yes | 40 |\n| No | 60 |\n| No Opinion | 50 |\n\nWe are interested in determining whether or not the opinions of the individuals (as to Yes, No, and No Opinion) are uniformly distributed.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 1
+        },
+        {
             "question_id": "3",
-            "question_text": "When individuals in a sample of 150 were asked whether or not they supported capital punishment, the following information was obtained.\n\n| Do you support capital punishment? | Number of individuals |\n| :--- | :--- |\n| Yes | 40 |\n| No | 60 |\n| No Opinion | 50 |\n\nWe are interested in determining whether or not the opinions of the individuals (as to Yes, No, and No Opinion) are uniformly distributed. The calculated value for the test statistic equals",
+            "question_text": "The calculated value for the test statistic equals",
             "question_type": "MCQ",
             "options": {
                 "A": "2",
@@ -46,11 +61,12 @@
             },
             "correct_option_label": "D",
             "explanation": "Expected frequency (E) = 150/3 = 50. Test statistic χ² = Σ[(O-E)²/E] = (40-50)²/50 + (60-50)²/50 + (50-50)²/50 = 100/50 + 100/50 + 0 = 4.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "4",
-            "question_text": "When individuals in a sample of 150 were asked whether or not they supported capital punishment, the following information was obtained.\n\n| Do you support capital punishment? | Number of individuals |\n| :--- | :--- |\n| Yes | 40 |\n| No | 60 |\n| No Opinion | 50 |\n\nWe are interested in determining whether or not the opinions of the individuals (as to Yes, No, and No Opinion) are uniformly distributed. The conclusion of the test (at 95% confidence) is that",
+            "question_text": "The conclusion of the test (at 95% confidence) is that",
             "question_type": "MCQ",
             "options": {
                 "A": "The distribution is uniform",
@@ -60,7 +76,8 @@
             },
             "correct_option_label": "A",
             "explanation": "The calculated χ² is 4. With df=2, the critical value at 5% significance is 5.99. Since 4 < 5.99, we fail to reject the null hypothesis and conclude the distribution is uniform.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "5",
@@ -245,8 +262,23 @@
             "module": 4
         },
         {
+            "question_id": "Passage_2",
+            "question_text": "Alan Bissell, a market analyst for City Sound Mart, is analyzing sales of heavy metal CD's. Alan's dependent variable is annual heavy metal CD sales (in $1,000,000's), and his independent variables are teenage population (in 1,000's) and type of sales district (0 = urban, 1 = rural). Regression analysis of the data yielded the following tables.\n\n| | Coefficients | Standard Error | t Statistic | p-value |\n| :--- | :--- | :--- | :--- | :--- |\n| Intercept | 1.7 | 0.384212 | 4.424638 | 0.00166 |\n| x1 (teenagers) | 0.04 | 0.014029 | 2.851146 | 0.019054 |\n| x2 (district) | -1.566666 | 0.20518 | -7.63558 | 3.21E-05 |",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 2
+        },
+        {
             "question_id": "18",
-            "question_text": "Alan Bissell, a market analyst for City Sound Mart, is analyzing sales of heavy metal CD's. Alan's dependent variable is annual heavy metal CD sales (in $1,000,000's), and his independent variables are teenage population (in 1,000's) and type of sales district (0 = urban, 1 = rural). Regression analysis of the data yielded the following tables.\n\n| | Coefficients | Standard Error | t Statistic | p-value |\n| :--- | :--- | :--- | :--- | :--- |\n| Intercept | 1.7 | 0.384212 | 4.424638 | 0.00166 |\n| x1 (teenagers) | 0.04 | 0.014029 | 2.851146 | 0.019054 |\n| x2 (district) | -1.566666 | 0.20518 | -7.63558 | 3.21E-05 |\n\nFor an urban sales district with 10,000 teenagers, Alan's model predicts annual sales of heavy metal CD sales of __________.",
+            "question_text": "For an urban sales district with 10,000 teenagers, Alan's model predicts annual sales of heavy metal CD sales of __________.",
             "question_type": "MCQ",
             "options": {
                 "A": "$2,100,000",
@@ -256,11 +288,12 @@
             },
             "correct_option_label": "A",
             "explanation": "Model: Y = 1.7 + 0.04(x1) - 1.566666(x2). For urban (x2=0) and 10,000 teenagers (x1=10): Y = 1.7 + 0.04(10) - 1.566666(0) = 1.7 + 0.4 = 2.1. Since sales are in $1,000,000's, predicted sales are $2,100,000.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "19",
-            "question_text": "Alan Bissell, a market analyst for City Sound Mart, is analyzing sales of heavy metal CD's. Alan's dependent variable is annual heavy metal CD sales (in $1,000,000's), and his independent variables are teenage population (in 1,000's) and type of sales district (0 = urban, 1 = rural). Regression analysis of the data yielded the following tables.\n\n| | Coefficients | Standard Error | t Statistic | p-value |\n| :--- | :--- | :--- | :--- | :--- |\n| Intercept | 1.7 | 0.384212 | 4.424638 | 0.00166 |\n| x1 (teenagers) | 0.04 | 0.014029 | 2.851146 | 0.019054 |\n| x2 (district) | -1.566666 | 0.20518 | -7.63558 | 3.21E-05 |\n\nFor two sales districts with the same number of teenagers one urban and one rural, Alan's model predicts __________.",
+            "question_text": "For two sales districts with the same number of teenagers one urban and one rural, Alan's model predicts __________.",
             "question_type": "MCQ",
             "options": {
                 "A": "$1,566,666 higher sales in the rural district",
@@ -270,7 +303,8 @@
             },
             "correct_option_label": "C",
             "explanation": "The coefficient for x2 (district) is -1.566666, meaning that for a rural district (x2=1) vs an urban district (x2=0), sales are predicted to be 1.566666 ($1M) lower, which equals $1,566,666 lower.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "20",
