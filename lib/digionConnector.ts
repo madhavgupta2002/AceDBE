@@ -1,4 +1,4 @@
-// Connector to the Digion exam engine (a separate deployment, default https://digionengine.vercel.app).
+// Connector to the Digion exam engine (a separate deployment, default https://digion-engine.vercel.app).
 // It turns a PYQ Exam bank + its `exam_metadata.exam_pattern` into the engine's ExamConfig, starts the exam
 // through the engine's embed.js SDK, and resolves with the engine's result when the candidate submits.
 // Client-side only.
@@ -12,7 +12,7 @@ import rehypeStringify from 'rehype-stringify';
 import type { ExamPattern, ExamPatternSection, IIMBQuestion, QuestionFile } from './types';
 
 export const DIGION_ENGINE_URL = (
-  process.env.NEXT_PUBLIC_DIGION_ENGINE_URL || 'https://digionengine.vercel.app'
+  process.env.NEXT_PUBLIC_DIGION_ENGINE_URL || 'https://digion-engine.vercel.app'
 ).replace(/\/$/, '');
 
 // ---------------------------------------------------------------------------
@@ -119,7 +119,11 @@ const mdProcessor = unified()
 
 function markdownToHtml(text: string): string {
   if (!text) return '';
-  return String(mdProcessor.processSync(prepareMarkdown(text)));
+  // The engine runs on another origin, so site-relative image paths (![](/data/...)) must be made absolute.
+  return String(mdProcessor.processSync(prepareMarkdown(text))).replace(
+    /src="\/(?!\/)/g,
+    `src="${window.location.origin}/`
+  );
 }
 
 const IMG_PLACEHOLDER = 'PARSEIMAGE';

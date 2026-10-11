@@ -10,6 +10,9 @@ export interface IIMBQuestion {
   status?: string;
   explanation?: string;
   explaination?: string; // Handle typo in JSON files
+  topic?: string; // entrance papers: e.g. "Arithmetic"
+  subtopic?: string; // entrance papers: e.g. "Time & Work"
+  difficulty?: string; // entrance papers: Easy | Medium | Hard
 }
 
 // Official exam pattern (Exam banks only). Documented in QUESTION_FORMAT.md.

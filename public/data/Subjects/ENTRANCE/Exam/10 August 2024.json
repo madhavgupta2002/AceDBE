@@ -1,0 +1,1100 @@
+{
+  "exam_metadata": {
+    "subject_name": "BBA-DBE Entrance Test",
+    "exam_date": "10 August 2024",
+    "batch": "",
+    "attempt": "Shift 1",
+    "exam_pattern": {
+      "exam_name": "IIMB BBA-DBE Entrance Test",
+      "duration_min": 90,
+      "total_marks": 60,
+      "total_questions": 60,
+      "negative_marking": false,
+      "calculator": "standard",
+      "timing_mode": "global",
+      "reference_materials": [],
+      "instructions": [
+        "Computer-based test of 90 minutes with 60 questions of 1 mark each; there is no negative marking.",
+        "Physical calculators are not allowed. An on-screen calculator is provided.",
+        "Questions can be attempted in any order and you can move freely between sections."
+      ],
+      "sections": [
+        {
+          "name": "Verbal Ability & Reading Comprehension",
+          "question_type": "MCQ",
+          "num_questions": 20,
+          "marks_per_question": 1,
+          "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"],
+          "context_blocks": [
+            {
+              "context_question_id": "Passage_1",
+              "applies_to": ["1", "2", "3", "4"]
+            }
+          ]
+        },
+        {
+          "name": "Quantitative Aptitude & Data Interpretation",
+          "question_type": "MCQ",
+          "num_questions": 20,
+          "marks_per_question": 1,
+          "question_ids": ["21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35", "36", "37", "38", "39", "40"],
+          "context_blocks": [
+            {
+              "context_question_id": "Passage_2",
+              "applies_to": ["21", "22", "23", "24"]
+            }
+          ]
+        },
+        {
+          "name": "Logical Analytical Reasoning",
+          "question_type": "MCQ",
+          "num_questions": 10,
+          "marks_per_question": 1,
+          "question_ids": ["41", "42", "43", "44", "45", "46", "47", "48", "49", "50"]
+        },
+        {
+          "name": "General Awareness",
+          "question_type": "MCQ",
+          "num_questions": 10,
+          "marks_per_question": 1,
+          "question_ids": ["51", "52", "53", "54", "55", "56", "57", "58", "59", "60"]
+        }
+      ]
+    }
+  },
+  "questions": [
+    {
+      "question_id": "Passage_1",
+      "question_text": "Read the comprehension and answer the questions.\n\nMan has always been curious to know about the origin of life. Some have suggested that the life could have been brought to Earth by extra- terrestrials! For example, Eric von Daniken suggested this in Chariots of the Gods, which he wrote around 40 years ago. Similar suggestion was made by Sir Fred Hoyle and Professor N. Chandra Wickremasinghe, scientists with impeccable credentials, in 1970s. They propounded the Panspermia (meaning “seeds everywhere”) theory which maintains that life evolved out of a primordial soup, which got dispersed into cosmos through comets and meteorites. Life began on Earth, when some of this landed on it. However, many mainstream scientists just laugh it out. An obvious reason for this is that the conditions conducive to existence of life and its propagation as available on Earth are not there elsewhere; one of these being the temperature factor.\nTitan, though quite different from our mother planet, Earth, has many special features, which the scientists believe could help in revealing the origin of life. It is the only moon in our solar system with an atmosphere. And this could be similar to that of Earth when life began here. Thanks to Voyager I, we already know that the Titan’s atmosphere predominantly contains nitrogen with small percentage of methane. But Titan is\nsurrounded by a thick orange haze which obstructs the view below the dense clouds and therefore no one has been able to know about the surface features. However, being 1200 million kilometres away from the sun, titan has a very low surface temperature, -180°C, which makes the chances of life on it very slim.",
+      "question_type": "SUBJECTIVE",
+      "options": {},
+      "correct_option_label": null,
+      "explanation": "",
+      "module": "Verbal Ability"
+    },
+    {
+      "question_id": "1",
+      "question_text": "Select the most appropriate title of the passage",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Effect of Panspermia",
+        "B": "Earth’s Protective Blanket",
+        "C": "Voyager and Interstellar Space",
+        "D": "Titan and the Origin of Life"
+      },
+      "correct_option_label": "D",
+      "explanation": "The title \"Titan and the Origin of Life\" is the most appropriate because the passage primarily discusses Titan, its unique characteristics, and its potential to reveal information about the origin of life. The passage mentions the Panspermia theory and the curiosity about the origin of life, but it focuses on how Titan, with its special features like its atmosphere and surface conditions, might help scientists understand how life began. The other titles either do not capture the main focus of the passage or address only a small part of it.",
+      "module": "Verbal Ability",
+      "topic": "Reading Comprehension",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "2",
+      "question_text": "According to the passage it is not possible to know about Titan’s surface features because",
+      "question_type": "MCQ",
+      "options": {
+        "A": "of its locations",
+        "B": "of the presence of thick orange haze",
+        "C": "of excessive solar radiation",
+        "D": "of cover of methane and ethane gases"
+      },
+      "correct_option_label": "B",
+      "explanation": "The passage states that Titan is surrounded by a thick orange haze that obstructs the view below the dense clouds, making it impossible to know about its surface features.",
+      "module": "Verbal Ability",
+      "topic": "Reading Comprehension",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "3",
+      "question_text": "The word ‘conducive’ in the paragraph 1 means:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "bountiful",
+        "B": "remorseful",
+        "C": "helpful",
+        "D": "purposeful"
+      },
+      "correct_option_label": "C",
+      "explanation": "",
+      "module": "Verbal Ability",
+      "topic": "Reading Comprehension",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "4",
+      "question_text": "Select the appropriate option which is NOT true according to the passage.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Mainstream scientists  agree with Panspermia theory",
+        "B": "Titan is different from Earth.",
+        "C": "Chariots of God was Written by Eric von Daniken",
+        "D": "Voyager I has given many significant information related to Titan"
+      },
+      "correct_option_label": "A",
+      "explanation": "According to the passage, many mainstream scientists laugh off the Panspermia theory, indicating they do not agree with it.",
+      "module": "Verbal Ability",
+      "topic": "Reading Comprehension",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "5",
+      "question_text": "Choose the CORRECT idiom that fits in the blank.\n\n\"As the summit on global trade policy unfolded, the delegations from developing nations and industrialized countries found themselves ______, grappling with entrenched positions on tariffs, subsidies, and market access, each side fiercely defending their economic interests and ideological principles amidst mounting diplomatic tension.\"",
+      "question_type": "MCQ",
+      "options": {
+        "A": "jump on the bandwagon",
+        "B": "take a shine to someone",
+        "C": "at loggerheads",
+        "D": "to throw caution to the wind"
+      },
+      "correct_option_label": "C",
+      "explanation": "**Difficult relationships**\n\n| idiom | meaning | example |\n|---|---|---|\n| **be at loggerheads** (of two people or groups) | disagree strongly with each other | The council and local residents are at loggerheads over the plans for a new car park. |\n\nhttps://archive.org/details/english-idioms-in-use-intermediate-book-with-answers-2017/page/47/mode/2up",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Difficult",
+      "subtopic": "Idioms and phrases"
+    },
+    {
+      "question_id": "6",
+      "question_text": "Select the CORRECT phrase to complete the sentence:\n\nDespite the challenges, she approached each problem with ________, carefully weighing all possible solutions before making decisions.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "meticulousness",
+        "B": "meticulous",
+        "C": "meticulosity",
+        "D": "meticulocity"
+      },
+      "correct_option_label": "A",
+      "explanation": "https://www.vocabulary.com/dictionary/meticulousness#:~:text=Meticulousness%20is%20a%20quality%20of,quality%20can%20be%20extremely%20useful. \"Meticulousness\" refers to the quality of being very careful and precise, paying attention to every detail. It describes how she handled problems by carefully considering all options before taking action.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Medium"
+    },
+    {
+      "question_id": "7",
+      "question_text": "Replace the bold words in the sentence below with the CORRECT synonym.\n\n\"The Professor’s erudite lectures on astrophysics aroused curiosity in the minds of his students, inspiring them to delve deeper into the mysteries of the cosmos.\".",
+      "question_type": "MCQ",
+      "options": {
+        "A": "perplexed",
+        "B": "intrigued",
+        "C": "confounded",
+        "D": "bewildered"
+      },
+      "correct_option_label": "B",
+      "explanation": "https://dictionary.cambridge.org/dictionary/english/intrigue\n\n\"Intrigued\" means to arouse curiosity or interest, which fits the context of his erudite lectures on astrophysics capturing the minds of his students and motivating them to explore further into the mysteries of the cosmos.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Medium",
+      "subtopic": "Synonyms"
+    },
+    {
+      "question_id": "8",
+      "question_text": "Complete the sentence by choosing the word that best fits the context:\n\nDespite the initial setbacks, the team remained __________ and determined to achieve their goals.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "perseverance",
+        "B": "Resilient",
+        "C": "Discouraged",
+        "D": "Persistence"
+      },
+      "correct_option_label": "B",
+      "explanation": "\"resilient\" fits the first blank as it describes the team's ability to bounce back from setbacks.\n\nhttps://dictionary.cambridge.org/dictionary/english/resilient",
+      "module": "Verbal Ability",
+      "topic": "Indirect Writing",
+      "difficulty": "Medium",
+      "subtopic": "Word Usage and Understanding"
+    },
+    {
+      "question_id": "9",
+      "question_text": "Arrange the following sentences in the CORRECT sequence to form a coherent paragraph:\n\n1)    Either glory means to me fame, or it means luminosity.\n2)    As for the second, who wishes to become a kind of living electric light bulb?\n3)    Glory suggests two ideas to me, of which one seems wicked and the other ridiculous.\n4)    As for the first, since to be famous means to be better known than other people, the desire for fame appears to me as a competitive passion and therefore of hell rather than heaven.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "3 - 1 - 4 - 2",
+        "B": "3 - 4 - 1 - 2",
+        "C": "1 - 3 - 4 - 2",
+        "D": "2 - 3 - 1 - 4"
+      },
+      "correct_option_label": "B",
+      "explanation": "https://archive.org/details/in.ernet.dli.2015.157427/page/n19/mode/2up",
+      "module": "Verbal Ability",
+      "topic": "Prose",
+      "difficulty": "Difficult",
+      "subtopic": "Para Jumbles"
+    },
+    {
+      "question_id": "10",
+      "question_text": "Identify the phrasal verb in the following complex sentence:\n\n\"Although encountering numerous setbacks, they eventually broke through the barriers and achieved unprecedented success in their field.\"",
+      "question_type": "MCQ",
+      "options": {
+        "A": "numerous setbacks",
+        "B": "broke through",
+        "C": "barriers and achieved",
+        "D": "unprecedented"
+      },
+      "correct_option_label": "B",
+      "explanation": "https://www.collinsdictionary.com/dictionary/english/break-through#:~:text=2.-,phrasal%20verb,there%20are%20difficulties%20and%20obstacles.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Medium",
+      "subtopic": "Idioms and phrases"
+    },
+    {
+      "question_id": "11",
+      "question_text": "Identify the sentence that contains a future tense verb:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "He has been studying for his exam.",
+        "B": "They are cooking dinner right now.",
+        "C": "By this time next week, we will have completed the project.",
+        "D": "She is reading a book in the garden."
+      },
+      "correct_option_label": "C",
+      "explanation": "https://dictionary.cambridge.org/grammar/british-grammar/future",
+      "module": "Verbal Ability",
+      "topic": "Grammar",
+      "difficulty": "Easy",
+      "subtopic": "Tenses and Aspects"
+    },
+    {
+      "question_id": "12",
+      "question_text": "Select the CORRECT sentence that uses a conjunction to connect two clauses with different tenses, maintaining coherence and clarity:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "He has finished his studies but is planning to travel next month.",
+        "B": "Despite finishing her work early, she goes home immediately.",
+        "C": "By the time we arrived, they had already left the party.",
+        "D": "While she cooks dinner, he will be finishing his work in the office"
+      },
+      "correct_option_label": "A",
+      "explanation": "conjunction \"but\" to connect two clauses with different tenses\n\"He has finished his studies\" (present perfect tense) and \"is planning to travel next month\" (future tense)\nhttps://dictionary.cambridge.org/grammar/british-grammar/conjunctions?q=Conjunctions",
+      "module": "Verbal Ability",
+      "topic": "Grammar",
+      "difficulty": "Medium",
+      "subtopic": "Tenses and Aspects"
+    },
+    {
+      "question_id": "13",
+      "question_text": "Select the option that is odd one out based on the meaning of the word given below.\n\nBenevolent",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Extrovert",
+        "B": "Altruistic",
+        "C": "Generous",
+        "D": "Compassionate"
+      },
+      "correct_option_label": "A",
+      "explanation": "https://www.merriam-webster.com/dictionary/extrovert",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Medium",
+      "subtopic": "Odd one out"
+    },
+    {
+      "question_id": "14",
+      "question_text": "Choose the answer that best completes the analogy based on the semantic relationship between the first two words. Learned : Scholarly :: Superficial : ?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Deep",
+        "B": "Inquisitive",
+        "C": "Shallow",
+        "D": "Mundane"
+      },
+      "correct_option_label": "C",
+      "explanation": "Learned and scholarly are synonyms. Learned describes someone with extensive knowledge, while scholarly emphasizes the pursuit of knowledge through academic study. Similarly, Shallow is the most analogous choice for superficial. It describes something lacking depth or seriousness, just as superficial refers to something concerned only with the surface level.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Easy",
+      "subtopic": "Analogies"
+    },
+    {
+      "question_id": "15",
+      "question_text": "A sentence has been removed from the end of the following passage. Please choose the CORRECT option that completes the passage in the most appropriate manner:\n\nAudience segmentation used to be a blunt process—grouping people based on demographic information such as their age, gender, location,\neducational level, income, and so on. AI technologies can drill down into audience behaviors and help teams develop a sophisticated\nunderstanding of niche communities based on their shared values, behaviors, influences, brand affinities, and more. This provides a much more nuanced understanding of what really makes an audience tick, making it easier to create campaigns that resonate.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "None the less, implementing AI requires significant investment",
+        "B": "Unlike conventional market research tactics, it's based on real-time data, which means the intelligence it gives you is never out of date.",
+        "C": "This newfound understanding allows for marketing based on blanket information.",
+        "D": "With AI, marketers can now target specific demographics."
+      },
+      "correct_option_label": "B",
+      "explanation": "https://www.forbes.com/sites/meltwater/2024/06/18/unlocking-the-ai-advantage-to-transform-pr/\n\nExplanation: While the other sentences introduce new concerns, do not directly connect to the concluding sentence structure, and/or disrupt the flow of the passage, option 2 maintains the flow of the passage. It uses a contrasting phrase (\"Unlike conventional...\") and highlights a specific advantage of AI (real-time data) that connects to the previous sentence about its effectiveness.",
+      "module": "Verbal Ability",
+      "topic": "Prose",
+      "difficulty": "Difficult",
+      "subtopic": "Missing sentence"
+    },
+    {
+      "question_id": "16",
+      "question_text": "Complete the following statement using the most appropriate and grammatically CORRECT prepositions from the given choices.\n\nThe discovery of a hidden chamber _______ the ancient temple sent archaeologists into a frenzy ______ excitement.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "beneath / on",
+        "B": "within / of",
+        "C": "regarding / with",
+        "D": "due to / for"
+      },
+      "correct_option_label": "B",
+      "explanation": "",
+      "module": "Verbal Ability",
+      "topic": "Grammar",
+      "difficulty": "Difficult",
+      "subtopic": "Parts of speech"
+    },
+    {
+      "question_id": "17",
+      "question_text": "Choose the word to replace the word “effects” in the below sentence\n\nDumping medical waste into the atmosphere effects the environment, badly.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "upshots",
+        "B": "affects",
+        "C": "reverberates",
+        "D": "effect"
+      },
+      "correct_option_label": "B",
+      "explanation": "Effects and Affects are often confused Phrases.",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Easy",
+      "subtopic": "Words and Phrases often confused"
+    },
+    {
+      "question_id": "18",
+      "question_text": "Select the CORRECT option to fill in the blank.\n\nThe selectors were criticized for choosing a weak team for the World Cup. The team faced defeats in the initial stages and performed well later. Contrary to general belief the ______.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "team lost the final match",
+        "B": "team lost the trophy.",
+        "C": "team won the trophy.",
+        "D": "team returned empty handed"
+      },
+      "correct_option_label": "C",
+      "explanation": "It really happened . option 3. The general belief is that a weak team would lose the match. Contrary is winning.",
+      "module": "Verbal Ability",
+      "topic": "Indirect Writing",
+      "difficulty": "Easy",
+      "subtopic": "Sentence completion"
+    },
+    {
+      "question_id": "19",
+      "question_text": "Match the words below with its CORRECT antonyms.\n\nWords\nAntonym\nA.  Savory\n1.   Healthy\n\nB.  Split\n2.   Sweet\nC.  Rigid\n3.  Flexible\nD.  Toxic\n4.  Join",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A-3, B-4, C-1, D-2",
+        "B": "A-2, B-4, C-3, D-1",
+        "C": "A-4, B-1, C-2, D-3",
+        "D": "A-4, B-3, C-2, D-1"
+      },
+      "correct_option_label": "B",
+      "explanation": "A Blackbook of English Grammar Vocabulary\nNikhil Gupta, Gupta Edutech, 2023\np.228\n\nhttps://www.merriam-webster.com/thesaurus/rigid",
+      "module": "Verbal Ability",
+      "topic": "Vocabulary",
+      "difficulty": "Easy",
+      "subtopic": "Antonyms"
+    },
+    {
+      "question_id": "20",
+      "question_text": "Select the CORRECT option to fill in the blank.\n\nI drove out early one morning to Hemis to witness one of the greatest events of the Ladakhi calendar, the Tse-Chu festival.______. I concluded that this is how the traditional culture flourished, until a Ladakhi pointed out that such goods could be aimed only at the tourist market. The few Ladakhis in evidence were clustered around the homemade roulette wheels set among the trees.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "I knew before I came to Ladakh- the high dry region in northern India that borders Tibet.",
+        "B": "We began to edge down along a single lane road towards Nubra valley.",
+        "C": "Indeed many of Ladakh’s festivals, traditionally held in winter when Ladakhi’s don’t have to work on fields, have now been moved to the summer so they can grab a foreign audience.",
+        "D": "When I arrived, I found a whole settlement set up around the temple, with sharp cheeked men and girls selling necklaces and statues of the Buddha, mystic scrolls and even CD’s."
+      },
+      "correct_option_label": "D",
+      "explanation": "Enjoying Everyday English\nRamakrishna Rao Sangam Books,2010,p.3\n\nhttps://www.merriam-webster.com/dictionary/when\n\nQuantitative Ability and Data Interpretation",
+      "module": "Verbal Ability",
+      "topic": "Indirect Writing",
+      "difficulty": "Easy",
+      "subtopic": "Prose"
+    },
+    {
+      "question_id": "Passage_2",
+      "question_text": "Read the data below and answer the questions that follow.\n\nThe pie chart shows the percentage of total number of students (male and female) in different institutes affiliated with an educational council, whereas the radar graph shows the number of male students in the institutes. Let the total number of students in all the institutes taken together be 5500.\n\nPARSEIMAGE",
+      "question_type": "SUBJECTIVE",
+      "options": {},
+      "correct_option_label": null,
+      "explanation": "",
+      "module": "Quantitative Ability"
+    },
+    {
+      "question_id": "21",
+      "question_text": "The number of female candidates in institution Y is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "425",
+        "B": "355",
+        "C": "400",
+        "D": "310"
+      },
+      "correct_option_label": "B",
+      "explanation": "$5500 \\times \\frac{21}{100} = 1155$\n\nFemale $= 1155 - 800 = \\boxed{355}$",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "difficulty": "Easy",
+      "subtopic": "Chart/Graph/Table"
+    },
+    {
+      "question_id": "22",
+      "question_text": "The degree representation of the total number of students in institutes X and Y, taken together, as a share of the overall number of students in all the institutes, taken together, is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "36°",
+        "B": "79.5°",
+        "C": "129.6°",
+        "D": "106°"
+      },
+      "correct_option_label": "C",
+      "explanation": "Student X $= 5500 \\times \\frac{15}{100} = 825$\n\nY $= 5500 \\times \\frac{21}{100} = 1155$\n\nCombined of X & Y $= 1980$\n\nAngle $= \\frac{1980}{5500} \\times 360$\n\n$= \\boxed{129.6^\\circ}$",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "difficulty": "Easy",
+      "subtopic": "Chart/Graph/Table"
+    },
+    {
+      "question_id": "23",
+      "question_text": "The ratio of the number of female students in institute Z to the number of female students in institute V is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "2 : 3",
+        "B": "3 : 7",
+        "C": "7 : 5",
+        "D": "5 : 3"
+      },
+      "correct_option_label": "D",
+      "explanation": "Female in Z = 400\n\nFemale in V = 240\n\nRatio of Z : V = 400 : 240\n\n$= \\boxed{5 : 3}$",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "difficulty": "Easy",
+      "subtopic": "Chart/Graph/Table"
+    },
+    {
+      "question_id": "24",
+      "question_text": "If 25% of the female students from institute V are transferred to institute Z and 20% of the male students from institute Z are transferred to institute W, then after the transfer, the percentage (up to two decimal places) by which the number of students in institute Z are more than that of the students in institute U is ______.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "54.55%",
+        "B": "60.45%",
+        "C": "50.63%",
+        "D": "49.09%"
+      },
+      "correct_option_label": "A",
+      "explanation": "Student V = 440, Female V = 240\n\nFemale Z = 400, Total of Z = 1100\n\n25% of female of V = 60\n\nNow Female in Z = 60 + 400 = 460\n\n20% Male of Z = 700 × 20% = 140\n\nNow Male in W = 650 + 140 = 790\n\nAfter Transfer, Total Student in Z = 560 + 460 = 1020\n\nDifference of Z and U = 360\n\n$\\% = \\frac{360}{660} \\times 100 = \\boxed{54.55\\%}$",
+      "module": "Quantitative Ability",
+      "topic": "Data Interpretation",
+      "difficulty": "Easy",
+      "subtopic": "Chart/Graph/Table"
+    },
+    {
+      "question_id": "25",
+      "question_text": "A sum of Rs. 7,740 is divided between X, Y and Z such that the ratio of the share of X to the combined share of Y and Z is 4 : 11 and the ratio of the share of Z to the combined share of X and Y is 1 : 3. What is the share (in Rs.) of Y?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1,840",
+        "B": "2,064",
+        "C": "3,520",
+        "D": "3,741"
+      },
+      "correct_option_label": "D",
+      "explanation": "$\\frac{X}{4} : \\frac{Y+Z}{11} = \\frac{X+Y+Z}{15} = \\frac{7740}{15} = 516$\n\n$\\Rightarrow X = 4 \\times 516 = 2064$\n\n$\\frac{Z}{1} : \\frac{Y+X}{3} = \\frac{7740}{4} = 1935$\n\n$Y = 7740 - (2064 + 1935) = 7740 - 3999 = \\boxed{3741}$\n\nAns (4)",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Easy",
+      "subtopic": "Ratio proportion"
+    },
+    {
+      "question_id": "26",
+      "question_text": "A cylindrical vessel of base radius 42 cm contains water to a certain level. A solid cylinder of height 18 cm is dropped into it and is completely submerged in water. If the level of the water in the vessel rises by 8 cm, what is the total surface area (in $cm^2$) of the solid cylinder? (Use $\\pi = \\frac{22}{7}$)(Assuming no overflow.)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "6570",
+        "B": "7040",
+        "C": "7568",
+        "D": "8096"
+      },
+      "correct_option_label": "D",
+      "explanation": "$\\pi \\times 42 \\times 42 \\times 8 = \\pi R^2 \\times 18$\n\n$R^2 = \\frac{42 \\times 42 \\times 8}{18} = 784 \\Rightarrow R = 28$\n\nTSA $= 2\\pi r(r + h)$\n\n$= 2\\pi \\times 28 \\times (28 + 18)$\n\n$= 2\\pi \\times 28 \\times 46 = 2 \\times \\frac{22}{7} \\times 28 \\times 46 = 8096$\n\nAns (4)",
+      "module": "Quantitative Ability",
+      "topic": "Geometry",
+      "difficulty": "Medium",
+      "subtopic": "Mensuration"
+    },
+    {
+      "question_id": "27",
+      "question_text": "A bank offers 5% compound interest per annum, calculated on half-yearly basis. A customer deposits Rs. 3200 each on 1st January and 1st July of a year. At the end of the year, the amount he would have gained by way of interest is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs. 240",
+        "B": "Rs. 242",
+        "C": "Rs. 340",
+        "D": "Rs. 342"
+      },
+      "correct_option_label": "B",
+      "explanation": "Amount = P(1+r/100)time\n\nCI= 6642-6400=242",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Easy",
+      "subtopic": "Average"
+    },
+    {
+      "question_id": "28",
+      "question_text": "The digit in the units' place of $13^{2003} - 7^{291}$ is ______.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "7",
+        "B": "4",
+        "C": "3",
+        "D": "9"
+      },
+      "correct_option_label": "B",
+      "explanation": "13^1 = --3\n13^2 = ---9\n\n13^3 = ----7\n13^4 = ----1\n13^5 = ----3\n13^6 = ---9\n13^7 = ----7\n13^8 = ----1\n13^9 = ----3\n13^10 = ----9\nNotice that when the exponent is a MULTIPLE of 4 (4, 8, 12, 16, ...), the units digit will be 1 Since 2000 is a MULTIPLE of 4, we know that the units digit of 13^2000 will be 1\nContinuing with the pattern:\n13^2001 = --3\n13^2002 = ---9\n13^2003 = ----7\nThe Cyclic table for 7 is as follows:\nUnit digit\nThe unit digit pattern is 7, 9, 3, 1, 7, 9, 3, 1…..\nSo, divide 291 by 4 we get the remainder is 3. Hence the digit in the unit place is 3.\nNow, 7 – 3 = 4",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Medium",
+      "subtopic": "Number system"
+    },
+    {
+      "question_id": "29",
+      "question_text": "While selling 15 items, a shopkeeper earned a profit equal to the total cost price of 3 items. If each item is marked 25% above its actual cost and a discount of Rs 2 is given while selling it, then what is the difference between the total cost price of 20 items and the total selling price of 12\nitems?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Rs. 224",
+        "B": "Rs. 220",
+        "C": "Rs. 278",
+        "D": "Rs. 254"
+      },
+      "correct_option_label": "A",
+      "explanation": "Profit earned while selling 15 items =cost price of 3 items\n15(SP – CP) = 3CP\n15SP = 18CP\nProfit percentage =20%\nLet cost price of a product =x\nMarked price =125% of x\nSelling price = 120% of x\nDiscount offered =Rs.2\n125% of x -7.5x – 120% of x =2\nX=40\nCP of 20 item =800\nSP of 12 item =48*12 =576\nDifference =Rs.224",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Medium",
+      "subtopic": "Profit and Loss"
+    },
+    {
+      "question_id": "30",
+      "question_text": "Sahil can complete a job in 20 days when working alone. Manoj is twice as fast as Sahil and three times as fast as Ashish in the same job. The collaborative work arrangement involves Sahil and Manoj working on the first day, Sahil and Ashish on the second day, and Manoj and Ashish on the third day. This three-day cycle continues till the work is completed. What fraction of the total work will then be done by Ashish till the job is completed?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$\\frac{7}{40}$",
+        "B": "$\\frac{6}{41}$",
+        "C": "$\\frac{7}{45}$",
+        "D": "$\\frac{6}{49}$"
+      },
+      "correct_option_label": "A",
+      "explanation": "S=20 days; M=10 days; and A=30 days\nTotal number of unit work = 20 + 10 + 30 = 60unit\nOne day work by S=60/20=3 unit\nOne day work by M=60/10=6 unit\nOne day work by A=60/30=2 unit\nIn three days=2*(3+6+2) =22 units of work done In 6 days= 44 units of work done. Remaining work on 7th day=60-44=16 unit out of which 9 unit is done by S and M. Remaining work on 8th day=60-53=7 unit out of which 5 unit is done by S and A. On 9th day, 2 units is completed by M and A. Out of which 3/2 units is completed by Manoj because Manoj is three times as fast as Ashish and 1/2 unit is done by Aashish. Total units done by Aashish= 8+2+1/2=21/2 units. Hence work done by Manoj=(21/2 )/60=7/40",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Difficult",
+      "subtopic": "Time and Work"
+    },
+    {
+      "question_id": "31",
+      "question_text": "A train running between two towns arrives at its destination 10 minutes late when it goes at 60 km per hour and 16 minutes late when it goes at 40 km per hour. Determine the speed at which the train reaches on time.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "360 km/h",
+        "B": "100 km/h",
+        "C": "90 km/h",
+        "D": "240 km/h"
+      },
+      "correct_option_label": "A",
+      "explanation": "Let distance = x km\nATQ\nx/60=t+10/60\nx/40=t+16/60\nhence t=1/30\nand speed = 360km/h",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Medium",
+      "subtopic": "Time Speed and Distance"
+    },
+    {
+      "question_id": "32",
+      "question_text": "If $2^{x+y} = 4^{x-y} = \\sqrt{32}$, then xy = ____.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$\\frac{75}{32}$",
+        "B": "$\\frac{75}{64}$",
+        "C": "$\\frac{75}{16}$",
+        "D": "$\\frac{75}{128}$"
+      },
+      "correct_option_label": "B",
+      "explanation": "ATQ\nx+y=5/2\n2x-2y= 5/2\n[hence\n\nxy = -24]\nHow does one get the above result???!!\nx + y = 5/2 ⇒ 2x + 2y = 5\nAdding 2x – 2y = 5/2, we get 4x = 15/2, while subtracting we get 4y = 5/2.\nMultiplying we get 16xy = 75/4, or xy = 75/64, which is the correct answer",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "difficulty": "Easy",
+      "subtopic": "Linear Equation"
+    },
+    {
+      "question_id": "33",
+      "question_text": "The roots of the equation x2 + 18x – 703 = 0 are given as a and b, with a > b.\nThe roots of the equation x2 – 10x – 336 = 0 are given as c and d, with c > d.\n\nWhich of the options below gives the correct relation between a, b, c and d?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "a > b > c > d",
+        "B": "c > a > d > b",
+        "C": "a > c > b > d",
+        "D": "c > a > b > d"
+      },
+      "correct_option_label": "B",
+      "explanation": "x2 + 18x – 703 = 0\nx2 – 19x + 37x - 703 = 0\nx(x – 19) + 37(x – 19) = 0\n\n(x – 19)(x + 37) = 0\nx = 19, -37\nIf a > b, then a = 19, b = -37\nx2 – 10x – 336 = 0\nx2 + 14x - 24x – 336 = 0\nx(x + 14) - 24(x + 14) = 0\n(x – 24)(x + 14) = 0\nx = 24, -14\nIf c > d, then c = 24, d = -14\nWe know 24 > 19 > - 14 > -37\n⇒ c > a > d > b",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "difficulty": "Difficult",
+      "subtopic": "Quadratic Equation"
+    },
+    {
+      "question_id": "34",
+      "question_text": "Find the sum of the smallest value and the greatest value of $x$ that satisfy the inequality\n$|5x + 5| - 8 \\le 17$.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "2",
+        "B": "– 2",
+        "C": "4",
+        "D": "– 4"
+      },
+      "correct_option_label": "B",
+      "explanation": "We have |5x + 5| - 8 ≤ 17 ⇒ |5x + 5| ≤ 25 ⇒ -25 < 5x + 5 ≤ 25 ⇒ - 30 < 5x ≤ 20 ⇒ - 6 ≤ x ≤ 4 Hence smallest value of x= -6 and greatest value of x= 4\nHence sum = -2",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "difficulty": "Medium",
+      "subtopic": "Inequations"
+    },
+    {
+      "question_id": "35",
+      "question_text": "The sum of the first 3 terms of an AP is 6 and that of the last 3 terms is 16. If the AP has 13 terms, what is the Arithmetic mean of the three terms that are exactly at the middle of the progression?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "11",
+        "B": "$\\frac{11}{3}$",
+        "C": "22",
+        "D": "$\\frac{22}{3}$"
+      },
+      "correct_option_label": "B",
+      "explanation": "The AP can be expressed as a, (a + d), ---, (a +12d). The sum of the first 3 terms is (3a + 3d) = 6 and that of the last 3 is (3a + 33d) = 16. Solving these equations, we get a = 5/3 and d = 1/3. The sum of the middle 3 terms is (3a + 18d) = 11. Hence AM =11/3",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "difficulty": "Medium",
+      "subtopic": "Progression"
+    },
+    {
+      "question_id": "36",
+      "question_text": "Two British and three Indian men and their wives are to be seated around a circular table. If the seating arrangements are defined only by the relative positions of the people, then the total number of ways in which each British man can be seated next to his wife and each Indian man can also be, simultaneously, seated next to his wife is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "850",
+        "B": "768",
+        "C": "904",
+        "D": "790"
+      },
+      "correct_option_label": "B",
+      "explanation": "No. of ways $= (5-1)! \\times 2 \\times 2 \\times 2 \\times 2 \\times 2$\n\n$= 4! \\cdot 2^5$\n\n$= 768$",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "difficulty": "Medium",
+      "subtopic": "Permutation Combination"
+    },
+    {
+      "question_id": "37",
+      "question_text": "In $\\Delta XYZ$, length of $\\overline{XY}$ = 13 cm. If the length of the median drawn from vertex Z to base $\\overline{XY}$ is 6.5 cm, then $\\Delta XYZ$ is a/an:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "equilateral triangle",
+        "B": "right angled triangle",
+        "C": "acute angled triangle",
+        "D": "obtuse angled triangle"
+      },
+      "correct_option_label": "B",
+      "explanation": "If the median is half of the base, then $\\Delta$ is a right-angled triangle.",
+      "module": "Quantitative Ability",
+      "topic": "Geometry",
+      "difficulty": "Medium",
+      "subtopic": "Plane Geometry"
+    },
+    {
+      "question_id": "38",
+      "question_text": "The sum of the cost prices of three items was Rs.24150. The person sold the first item at a profit of 72%, the second item at a profit of 40% and the third item at a profit of 126%. The total profit earned from the sale of these three items was Rs.19432. If the cost price of the second item was Rs.175 more than what it actually was, then the ratio of the cost prices of the second and the third items, respectively, would have been 4: 5. What was the difference (in Rs) between the profits earned from the sale of the first and the second items?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "6342",
+        "B": "6132",
+        "C": "6272",
+        "D": "6244"
+      },
+      "correct_option_label": "C",
+      "explanation": "Let the cost prices (in `) of Items 1, 2 and 3 respectively be p, q, and r.\nHence, we have p + q + r = 24150; 0.72p + 0.4q + 1.26r = 19432; 5(q + 175) = 4r\nSolving the three linear equations above, we get p = 11725; q = 5425; r = 7000\nHence, required difference (in `) = 11725 ⨯ 0.72 – 5425 ⨯ 0.4 = 8442 – 2170 = 6272",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Difficult",
+      "subtopic": "Profit and Loss"
+    },
+    {
+      "question_id": "39",
+      "question_text": "81 equally efficient people could complete a piece of work in 15 days. Initially 45 such people started working together. But after they worked together for 6 days their employer wanted that the work should be completed in a total of 21 days. However any new worker was only 60% as efficient as any of the 45 people already working. How many new workers did the employer hire to work alongside the initial 45 people to meet the deadline?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "36",
+        "B": "30",
+        "C": "27",
+        "D": "18"
+      },
+      "correct_option_label": "B",
+      "explanation": "81 ⨯ 15 ÷ 45 = 81 ÷ 3 = 27\nHence, 45 people having the initial level of efficiency would have needed 27 days to complete the work. After 6 days work left for these 45 people was of another 21 days.\nBut they had only (21 – 6) = 15 more days.\n\n45 ⨯ 21 ÷ 15 = 63 ⇒ (63 – 45) = 18 more workers as efficient as those already deployed would have been needed. However, the new recruits were only 60% as efficient.\n18 ÷ 0.6 = 30\n⇒ 30 new workers would be needed.",
+      "module": "Quantitative Ability",
+      "topic": "Arithmetic",
+      "difficulty": "Medium",
+      "subtopic": "Time and Work"
+    },
+    {
+      "question_id": "40",
+      "question_text": "If f(x) = x – 1, and g(f(x)) = 3 + 2x – $x^2$ + $x^3$, which of the options below give a correct expression for g(x)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "$x^3 + 2x^2 + 3x + 3$",
+        "B": "$x^3 - 2x^2 + 3x - 5$",
+        "C": "$x^3 - 4x^2 + 7x - 4$",
+        "D": "$x^3 + 2x^2 + 3x + 5$"
+      },
+      "correct_option_label": "D",
+      "explanation": "$g(f(x)) = g(x - 1) = 3 + 2x - x^2 + x^3 = 3 + 2 \\times (x - 1 + 1) - (x - 1 + 1)^2 + (x - 1 + 1)^3$\n$= 3 + 2 \\times (x - 1) + 2 - \\{(x - 1)^2 + 2 \\times (x - 1) \\times 1 + 1^2\\} + \\{(x - 1)^3 + 3 \\times (x - 1)^2 \\times 1 + 3 \\times (x - 1) \\times 1^2 + 1^3\\} = 5 + 2 \\times (x - 1) - (x - 1)^2 - 2 \\times (x - 1) - 1 + (x - 1)^3 + 3 \\times (x - 1)^2 + 3 \\times (x - 1) + 1 = 5 + (x - 1)^3 + 2 \\times (x - 1)^2 + 3 \\times (x - 1) \\equiv (x - 1)^3 + 2 \\times (x - 1)^2 + 3 \\times (x - 1) + 5 \\Rightarrow g(x - 1) = (x - 1)^3 + 2 \\times (x - 1)^2 + 3 \\times (x - 1) + 5 \\Rightarrow g(x) = x^3 + 2x^2 + 3x + 5$\n\nLogical Analytical Reasoning",
+      "module": "Quantitative Ability",
+      "topic": "Algebra",
+      "difficulty": "Difficult",
+      "subtopic": "Function and Graph"
+    },
+    {
+      "question_id": "41",
+      "question_text": "Read the given statements and conclusions carefully. Assuming that the information given in the statements is true, even if it appears to be at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.\n\nStatements:\nAll mangoes are oranges.\nNo banana is orange.\n\nConclusions:\nI. No mango is a banana.\nII. At least some oranges are mangoes.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Only I follows",
+        "B": "Only II follows",
+        "C": "Both I and II follow",
+        "D": "Neither I nor II follows"
+      },
+      "correct_option_label": "C",
+      "explanation": "",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Critical",
+      "difficulty": "Medium",
+      "subtopic": "Conclusion"
+    },
+    {
+      "question_id": "42",
+      "question_text": "M, N, O, P, Q and R are sitting around a circular table facing the centre. M sits second to the left of R. Only one person sits between R and Q. O is not the immediate neighbour of M. N sits third to the right of Q. How many people sit between Q and R, when counted from the right of R?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct_option_label": "A",
+      "explanation": "Clockwise\nORNMPQ",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Medium",
+      "subtopic": "Seating arrangment"
+    },
+    {
+      "question_id": "43",
+      "question_text": "Rahul ranked 16th from the top and 27th from the bottom in his class. How many students are there in the class?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "40",
+        "B": "41",
+        "C": "42",
+        "D": "43"
+      },
+      "correct_option_label": "C",
+      "explanation": "16+27-1=32",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Easy",
+      "subtopic": "Order Detection"
+    },
+    {
+      "question_id": "44",
+      "question_text": "A, B, C, D and E have different ages. Only one person is elder than E. B is younger than C but elder than D. A is elder than C. How many people are elder than C?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "4",
+        "B": "3",
+        "C": "2",
+        "D": "1"
+      },
+      "correct_option_label": "C",
+      "explanation": "A>E>C>B>D",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Easy",
+      "subtopic": "Equality-inequality"
+    },
+    {
+      "question_id": "45",
+      "question_text": "PARSEIMAGE",
+      "question_type": "MCQ",
+      "options": {
+        "A": "8",
+        "B": "10",
+        "C": "11",
+        "D": "5"
+      },
+      "correct_option_label": "D",
+      "explanation": "Only 5 students study both math and english",
+      "module": "Logical Reasoning",
+      "topic": "Numerical Reasoning",
+      "difficulty": "Medium",
+      "subtopic": "Basic numerical operations"
+    },
+    {
+      "question_id": "46",
+      "question_text": "Complete the series.\n\nZA144,   YB121,   XC100,   WD81,   ?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "UF 64",
+        "B": "VF 64",
+        "C": "VE 65",
+        "D": "VE 64"
+      },
+      "correct_option_label": "D",
+      "explanation": "-1\nSquares of 12,11,10,9,8",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Medium",
+      "subtopic": "Series completion"
+    },
+    {
+      "question_id": "47",
+      "question_text": "Meena is the wife of Nandu. Nandu is the father of Ovi. Ovi is the sister of Prakash. Prakash is the father of Sunita. Sunita is the wife of Rohan. How is Rohan related to Meena?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Wife’s mother",
+        "B": "Wife’s father’s mother",
+        "C": "Mother",
+        "D": "Wife’s sister"
+      },
+      "correct_option_label": "B",
+      "explanation": "Wife’s father’s mother",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Medium",
+      "subtopic": "Blood Relations"
+    },
+    {
+      "question_id": "48",
+      "question_text": "Raj starts from point A and walks 7kms towards West direction. He then takes a left turn and walks 11kms, turns left and walks 11kms, turns left and walks 7kms. He then takes the final left turn, walks 4kms and stops at point B. How far (shortest distance) and towards which direction should he drive in order to reach Point A again? (All turns are 90 degrees turns only unless specified)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "4kms towards North",
+        "B": "4kms towards South",
+        "C": "3kms towards North",
+        "D": "3kms towards South"
+      },
+      "correct_option_label": "A",
+      "explanation": "11-7=4",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Easy",
+      "subtopic": "Direction Sense"
+    },
+    {
+      "question_id": "49",
+      "question_text": "KL 15 is related to NO 21 in a certain way. In the same way, XY 28 is related to AB 34.\nWhich of the following is related to GH 41 by using the same logic?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "HJ 46",
+        "B": "HJ 47",
+        "C": "JK 46",
+        "D": "JK 47"
+      },
+      "correct_option_label": "D",
+      "explanation": "The difference between the alphabets in the clusters:+3\nNumber:+6",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Difficult",
+      "subtopic": "Verbal Anology"
+    },
+    {
+      "question_id": "50",
+      "question_text": "If 1st January 2020 is a Wednesday, then what will be the day of the week on 15th September 2020?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Monday",
+        "B": "Tuesday",
+        "C": "Friday",
+        "D": "Saturday"
+      },
+      "correct_option_label": "B",
+      "explanation": "15th September 2020 is on Tuesday\n\nGeneral Awareness",
+      "module": "Logical Reasoning",
+      "topic": "Verbal Reasoning - Analytical",
+      "difficulty": "Difficult",
+      "subtopic": "Clocks and Calenders"
+    },
+    {
+      "question_id": "51",
+      "question_text": "Which country hosted the G7 Summit in June 2024?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Canada",
+        "B": "Italy",
+        "C": "France",
+        "D": "Germany"
+      },
+      "correct_option_label": "B",
+      "explanation": "https://indianexpress.com/article/india/g7-summit-live-updates-pm-narendra-modi-italy-9391861/",
+      "module": "General Awareness",
+      "topic": "Current Affairs",
+      "difficulty": "Medium",
+      "subtopic": "International Current Affairs"
+    },
+    {
+      "question_id": "52",
+      "question_text": "Which Indian has won the World Junior Chess Championship (U-20 Girls) in June 2024, held at Gandhinagar, Gujarat?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Koneru Humpy",
+        "B": "Soumya Swaminathan",
+        "C": "Divya Deshmukh",
+        "D": "Harika Dronavalli"
+      },
+      "correct_option_label": "C",
+      "explanation": "https://timesofindia.indiatimes.com/sports/chess/nagpurs-queen-indias-pride-divya-deshmukh-is-world-junior-chess- champion/articleshow/110978256.cms",
+      "module": "General Awareness",
+      "topic": "Current Affairs",
+      "difficulty": "Difficult",
+      "subtopic": "National Current Affairs"
+    },
+    {
+      "question_id": "53",
+      "question_text": "Mahatma Gandhi started his famous Salt March, also known as the Dandi March, from which of the following places?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Swaminarayan Temple, Gandhinagar",
+        "B": "Salt Panes, Dandi",
+        "C": "Sabarmati Ashram, Ahmedabad",
+        "D": "Kirti Mandir, Porbandar"
+      },
+      "correct_option_label": "C",
+      "explanation": "https://ncert.nic.in/textbook/pdf/jess302.pdf\n\nP-39",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Medium",
+      "subtopic": "Indian History"
+    },
+    {
+      "question_id": "54",
+      "question_text": "Which of these is a meteorological satellite, which was launched by ISRO in February 2024?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "XPoSat",
+        "B": "GSAT-24",
+        "C": "NVS-01",
+        "D": "INSAT-3DS"
+      },
+      "correct_option_label": "D",
+      "explanation": "https://www.isro.gov.in/INSAT-\n3DS_imaging_Earth.html#:~:text=INSAT%2D3DS%2C%20the%20meteorological%20satellite,launched%20on%20February%2017%2C%202024.",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Difficult",
+      "subtopic": "Indian Geography"
+    },
+    {
+      "question_id": "55",
+      "question_text": "Who is the founder of InMobi, who received ‘Future Leaders Award’ in 2015?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Ritesh Agarwal",
+        "B": "Naveen Tewari",
+        "C": "P. C. Mustafa",
+        "D": "Sachin Bansal"
+      },
+      "correct_option_label": "B",
+      "explanation": "https://www.inmobi.com/company/leadership/naveen-tewari\n\nhttps://iitk.ac.in/dora/profile/naveen-tewari",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Easy",
+      "subtopic": "Indian Economy"
+    },
+    {
+      "question_id": "56",
+      "question_text": "Who wrote the book ‘The Idea of Democracy’?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Sam Pitroda",
+        "B": "M.J. Akbar",
+        "C": "S. Raman",
+        "D": "Manorama Mishra"
+      },
+      "correct_option_label": "A",
+      "explanation": "https://www.penguin.co.in/book/the-idea-of-democracy/\n\nThe Idea of Democracy\n\nby Sam Pitroda (Author)\nhttps://www.amazon.in/Idea-Democracy-Sam-Pitroda/dp/0143467042",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Medium",
+      "subtopic": "Art and Culture"
+    },
+    {
+      "question_id": "57",
+      "question_text": "The Vandemataram Movement was initiated in Andhra Pradesh in 1907 following the _____.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Second World War",
+        "B": "Bengal famine",
+        "C": "Jalianwala Baug massacre",
+        "D": "Partition of Bengal"
+      },
+      "correct_option_label": "D",
+      "explanation": "The Vande Mataram movement was started on February 11, 1907, in Andhra Pradesh following the announcement of the Bengal Partition of 1905.\nhttps://amritmahotsav.nic.in/district-reopsitory-detail.htm?10422\n\nThe partition of Bengal infuriated people all over India. All sections of the Congress – the Moderates and the Radicals, as they may be called – opposed it. Large public meetings and demonstrations were organised and novel methods of mass protest developed. The struggle that unfolded came to be known as the Swadeshi movement, strongest in Bengal but with echoes elsewhere too – in deltaic Andhra for instance, it was known as the Vandemataram Movement.\n\nAndhra Kesari and the Vandemataram Movement | INDIAN CULTURE\n\nhttps://ncert.nic.in/textbook/pdf/hess209.pdf",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Medium",
+      "subtopic": "Indian History"
+    },
+    {
+      "question_id": "58",
+      "question_text": "_____ is the Chairman of Reliance Jio Infocomm Limited as on 1st June 2024.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Anant Ambani",
+        "B": "Mukesh Ambani",
+        "C": "Isha Ambani",
+        "D": "Akash Ambani"
+      },
+      "correct_option_label": "D",
+      "explanation": "Akash M. Ambani (DIN: 06984194) is an Indian business leader serving as the Chairman of Reliance Jio Infocomm Limited (RJIL) since June 2022.\n\nhttps://www.ril.com/about/board-of-directors/akash-ambani\n\nMay 1, 2024\nAkash Ambani, Chairman of Reliance Jio Infocomm said\nhttps://timesofindia.indiatimes.com/technology/tech-news/reliance-jio-chairman-akash-ambani-on-5g-services-this-is-driving- consistent-/articleshow/109511353.cms",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Easy",
+      "subtopic": "Indian Economy"
+    },
+    {
+      "question_id": "59",
+      "question_text": "Which of the following persons was a famous ‘santoor’ (musical instrument) player?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Pandit Shivkumar Sharma",
+        "B": "Ustad Bismillah Khan",
+        "C": "Pandit Bhimsen Joshi",
+        "D": "Ustad Alla Rakha"
+      },
+      "correct_option_label": "A",
+      "explanation": "Shiv Kumar Sharma (born January 13, 1938, Jammu [now in Jammu and Kashmir], India—died May 10, 2022, Mumbai, India) was an Indian sanṭūr (hammered dulcimer) virtuoso\n\nhttps://www.britannica.com/biography/Shiv-Kumar-Sharma\n\nBismillah Khan (born March 21, 1916, Dumraon, Bihar and Orissa province, British India—died August 21, 2006, Varanasi, Uttar Pradesh, India) was an Indian musician who played the shehnai\n\nhttps://www.britannica.com/biography/Bismillah-Khan\n\nA new biography of Pt. Bhimsen Joshi released for his centenary traces his journey from a small Karnataka town to becoming one of India’s most celebrated khayal artistes\n\nhttps://www.thehindu.com/entertainment/music/pt-bhimsen-joshi-the-making-of-a-maestro/article37446411.ece Alla Rakha (born April 29, 1919, Phagwal, Jammu, India—died February 3, 2000, Mumbai) was an Indian tabla player, https://www.britannica.com/biography/Alla-Rakha",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Easy",
+      "subtopic": "Art and Culture"
+    },
+    {
+      "question_id": "60",
+      "question_text": "Which of the following statements about the sectors of the economy is CORRECT?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Secondary activities encompass trade and commerce in goods and services.",
+        "B": "Tertiary activities include agriculture, mining, and fishing.",
+        "C": "Quaternary activities involve research, development, and innovation in technology and sciences.",
+        "D": "Primary activities involve processing raw materials for finished goods."
+      },
+      "correct_option_label": "D",
+      "explanation": "Primary activities are directly dependent on environment as these refer to utilisation of earth’s resources such as land, water, vegetation, building materials and minerals. It, thus includes, hunting and gathering, pastoral activities, fishing, forestry, agriculture, and mining and quarrying. https://ncert.nic.in/ncerts/l/legy105.pdf\n\nSimilarly we have farmers growing crops, business houses engaged in extracting raw materials/minerals from earth (coal-mines, iron-ore mines etc.), extracting materials from forest for further processing (like collecting natural honey, timber etc.), extracting items from sea/river (like fish, crab, prawn, sea foods etc.). All these are examples of extractive industries.\nhttps://nios.ac.in/media/documents/srsec319new/319EL1.pdf",
+      "module": "General Awareness",
+      "topic": "General Knowledge",
+      "difficulty": "Medium",
+      "subtopic": "Indian Economy"
+    }
+  ]
+}

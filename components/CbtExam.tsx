@@ -68,7 +68,7 @@ export default function CbtExam({
   paper,
   onClose,
 }: {
-  subject: SubjectPyqInfo;
+  subject: Pick<SubjectPyqInfo, 'code' | 'name'>;
   paper: ExamPaperInfo;
   onClose: () => void;
 }) {
