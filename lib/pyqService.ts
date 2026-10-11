@@ -1,7 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import { SUBJECTS } from './subjectMapping';
-import type { ExamPattern } from './types';
+import { resolveExamPattern } from './cbtPattern';
+import type { QuestionFile } from './types';
 
 export interface ExamCycle {
   id: string;
@@ -68,8 +69,9 @@ function matchCycleId(dateStr: string, filename: string): string | null {
   return null;
 }
 
-function summariseCbt(pattern?: ExamPattern): ExamPaperInfo['cbt'] {
-  if (!pattern || !Array.isArray(pattern.sections)) return undefined;
+function summariseCbt(file: QuestionFile): ExamPaperInfo['cbt'] {
+  const pattern = resolveExamPattern(file)?.pattern;
+  if (!pattern) return undefined;
   const cbtSections = pattern.sections.filter(s => (s.question_ids?.length ?? 0) > 0);
   const questionCount = cbtSections.reduce((n, s) => n + (s.question_ids?.length ?? 0), 0);
   if (questionCount === 0) return undefined;
@@ -110,7 +112,7 @@ export function getEntranceData(): ExamPaperInfo[] {
         displayDate: rawDate,
         questionCount: (parsed.questions ?? []).filter((q: { question_type?: string }) => q.question_type !== 'SUBJECTIVE').length,
         subjectCode: 'ENTRANCE',
-        cbt: summariseCbt(parsed.exam_metadata?.exam_pattern),
+        cbt: summariseCbt(parsed),
         sortKey: Number.isNaN(t) ? new Date(year, 0, 1).getTime() : t,
       });
     } catch (e) {
@@ -224,7 +226,7 @@ export function getPyqData(): TermPyqGroup[] {
                 displayDate: formatDisplayDate(rawDate),
                 questionCount,
                 subjectCode: code,
-                cbt: summariseCbt(parsed.exam_metadata?.exam_pattern),
+                cbt: summariseCbt(parsed),
               });
             }
           } catch (e) {
