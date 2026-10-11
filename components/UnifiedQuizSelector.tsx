@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { SetWithModules, getSetsWithModules } from '@/lib/questionLoader';
-import { Shuffle, Check } from 'lucide-react';
+import { Shuffle, Check, MonitorPlay } from 'lucide-react';
 
 interface UnifiedQuizSelectorProps {
   subjectCode: string;
@@ -14,11 +14,13 @@ interface UnifiedQuizSelectorProps {
     sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam' | 'Custom'; modules: (string | number)[] }>;
     randomOrder: boolean;
   }) => void;
+  /** Take a single Exam paper as a CBT exam (exam-centre interface). */
+  onStartCbt?: (bankName: string, date: string) => void;
 }
 
 type SelectionMap = Map<string, Set<string | number>>;
 
-const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, onStartQuiz, onStartRevise }) => {
+const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, onStartQuiz, onStartRevise, onStartCbt }) => {
   const [claSets, setClaSets] = useState<SetWithModules[]>([]);
   const [examSets, setExamSets] = useState<SetWithModules[]>([]);
   const [customSets, setCustomSets] = useState<SetWithModules[]>([]);
@@ -359,6 +361,16 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
           </div>
           <span className="truncate">{set.displayName}</span>
         </button>
+
+        {set.bankType === 'Exam' && onStartCbt && (
+          <button
+            type="button"
+            onClick={() => onStartCbt(set.bankName, set.exam_date || set.displayName)}
+            className="mb-2 sm:mb-3 ml-4 sm:ml-6 flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-violet-950/50 hover:bg-violet-600 border border-violet-700/50 text-violet-200 hover:text-white text-xs font-bold transition-colors"
+          >
+            <MonitorPlay className="w-3.5 h-3.5" /> CBT Exam
+          </button>
+        )}
 
         {set.modules.length > 0 && (
           <div className="flex flex-wrap gap-1.5 sm:gap-2 ml-4 sm:ml-6">

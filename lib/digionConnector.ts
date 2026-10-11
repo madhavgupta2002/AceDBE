@@ -10,6 +10,7 @@ import remarkRehype from 'remark-rehype';
 import rehypeKatex from 'rehype-katex';
 import rehypeStringify from 'rehype-stringify';
 import type { ExamPattern, ExamPatternSection, IIMBQuestion, QuestionFile } from './types';
+import { resolveExamPattern } from './cbtPattern';
 
 export const DIGION_ENGINE_URL = (
   process.env.NEXT_PUBLIC_DIGION_ENGINE_URL || 'https://digionengine.vercel.app'
@@ -165,16 +166,25 @@ export interface CbtPaperRef {
 
 export interface BuiltCbtExam {
   config: Record<string, unknown>;
-  /** Everything needed to show the review after the exam, keyed by question id. */
-  review: Record<string, { text: string; options: Record<string, string>; correct: string[]; explanation?: string; module?: string | number }>;
   pattern: ExamPattern;
 }
 
 const questionsOf = (s: ExamPatternSection) => s.question_ids ?? [];
 
 export function paperHasCbt(file: QuestionFile): boolean {
-  const p = file.exam_metadata?.exam_pattern;
-  return !!p && p.sections.some((s) => questionsOf(s).length > 0);
+  return !!resolveExamPattern(file);
+}
+
+/** Answers given in a finished CBT exam, keyed by question id (option labels). Unanswered questions are left out. */
+export function cbtAnswers(result: DigionResult): Record<string, string[]> {
+  const out: Record<string, string[]> = {};
+  for (const sec of result.sections) {
+    for (const q of sec.questions) {
+      const r = Array.isArray(q.response) ? q.response : q.response ? [q.response] : [];
+      if (r.length) out[q.id] = r;
+    }
+  }
+  return out;
 }
 
 function labelsOf(q: IIMBQuestion): string[] {
@@ -185,8 +195,8 @@ function labelsOf(q: IIMBQuestion): string[] {
 }
 
 export async function buildCbtExam(paper: CbtPaperRef, file: QuestionFile, candidateName: string): Promise<BuiltCbtExam> {
-  const pattern = file.exam_metadata?.exam_pattern;
-  if (!pattern) throw new Error('This paper has no official exam pattern, so it cannot be opened as a CBT exam.');
+  const pattern = resolveExamPattern(file)?.pattern;
+  if (!pattern) throw new Error('This paper has no objective questions, so it cannot be opened as a CBT exam.');
 
   const byId = new Map<string, IIMBQuestion>();
   file.questions.forEach((q) => byId.set(String(q.question_id), q));
@@ -211,8 +221,6 @@ export async function buildCbtExam(paper: CbtPaperRef, file: QuestionFile, candi
     })
   );
 
-  const review: BuiltCbtExam['review'] = {};
-
   const sections = cbtSections.map((sec, si) => {
     const marks = sec.marks_per_question ?? fallbackMarks;
     const negative =
@@ -236,14 +244,6 @@ export async function buildCbtExam(paper: CbtPaperRef, file: QuestionFile, candi
       const options = Object.entries(q.options ?? {})
         .filter(([, v]) => v && v.trim() !== '')
         .map(([key, v]) => ({ id: key, html: richHtml(v, imgs) }));
-
-      review[id] = {
-        text: q.question_text,
-        options: Object.fromEntries(Object.entries(q.options ?? {}).filter(([, v]) => v)) as Record<string, string>,
-        correct: labels,
-        explanation: q.explaination || q.explanation,
-        module: q.module,
-      };
 
       return {
         id,
@@ -292,7 +292,7 @@ export async function buildCbtExam(paper: CbtPaperRef, file: QuestionFile, candi
     output: { postMessage: true, localStorage: false },
   };
 
-  return { config, review, pattern };
+  return { config, pattern };
 }
 
 /** Starts the exam in a full-screen overlay and resolves with the engine's result when it is submitted. */

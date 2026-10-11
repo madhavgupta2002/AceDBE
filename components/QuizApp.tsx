@@ -20,6 +20,8 @@ import SourceSelector from './SourceSelector';
 import UnifiedQuizSelector from './UnifiedQuizSelector';
 import Header from './Header';
 import StopWatch from './StopWatch';
+import CbtExam from './CbtExam';
+import { CbtReviewData, takeCbtReview, toReviewData } from '@/lib/cbtReview';
 import { ArrowRight, ArrowLeft, RefreshCw, BookOpen, Youtube, Search, Check, Download, Printer, Eye, EyeOff, XCircle, List, RotateCcw } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -32,9 +34,10 @@ interface QuizAppProps {
   customTitle?: string;
   autoExam?: string;
   autoType?: BankType;
+  autoReview?: boolean; // open the review of a CBT exam that was just taken (hand-off from another page)
 }
 
-const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customTitle, autoExam, autoType }) => {
+const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customTitle, autoExam, autoType, autoReview }) => {
   const router = useRouter();
   const subject = getSubjectByCode(subjectCode);
 
@@ -56,6 +59,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     answeredQuestions: [],
   });
 
+  const [cbtTarget, setCbtTarget] = useState<{ bankName: string; date: string } | null>(null);
   const [showConfirmation, setShowConfirmation] = useState(false);
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -320,17 +324,69 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     }
   };
 
+  // Opens the regular completed-quiz review for a finished CBT exam (same screen as after a normal quiz).
+  const showCbtReview = async (review: CbtReviewData) => {
+    setLoading(true);
+    try {
+      const questions = await loadQuestions('Exam', subjectCode, review.bankName);
+      if (questions.length === 0) {
+        alert('Could not load the paper for review.');
+        return;
+      }
+      const answered = questions.map(q => (!q.isSubjective && review.answers[q.id]?.length ? review.answers[q.id] : null));
+      const incorrect: Question[] = [];
+      let score = 0;
+      questions.forEach((q, i) => {
+        const a = answered[i];
+        if (!a) return;
+        const ok = a.length === q.correctAnswer.length && a.every(x => q.correctAnswer.includes(x));
+        if (ok) score++;
+        else incorrect.push({ ...q, selectedAnswer: a });
+      });
+
+      const uniqueModules = Array.from(new Set(questions.map(q => q.module).filter(Boolean))) as (string | number)[];
+      setAvailableModules(uniqueModules.sort(compareModules));
+      setAvailableSources(Array.from(new Set(questions.map(q => q.source).filter(Boolean))) as string[]);
+      setAllQuestions(questions);
+      setSelectedModule('all');
+      setSelectedSource('all');
+      setMasterAnsweredQuestions(answered);
+      setQuizState(prev => ({
+        ...prev,
+        currentQuestionIndex: 0,
+        score,
+        totalQuestions: questions.length,
+        selectedAnswer: null,
+        showResult: false,
+        questions,
+        incorrectAnswers: incorrect,
+        answeredQuestions: answered,
+      }));
+      setReviseMode(false);
+      setElapsedSeconds(review.timeSec);
+      setIsTimerActive(false);
+      setQuizCompleted(true);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   // Auto-start exam if autoExam prop provided
   const hasAutoStarted = useRef(false);
   useEffect(() => {
     if (autoExam && !hasAutoStarted.current && !isCustomMode && quizState.questions.length === 0) {
       hasAutoStarted.current = true;
+      const review = autoReview ? takeCbtReview(autoExam) : null;
+      if (review) {
+        void showCbtReview(review);
+        return;
+      }
       startQuiz({
         sets: [{ bankName: autoExam, bankType: autoType || 'Exam', modules: [] }],
         randomOrder: false,
       });
     }
-  }, [autoExam, autoType, isCustomMode, quizState.questions.length]);
+  }, [autoExam, autoType, autoReview, isCustomMode, quizState.questions.length]);
 
   const startRevise = async (selections: {
     sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam' | 'Custom'; modules: (string | number)[] }>;
@@ -1083,6 +1139,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                 subjectCode={subjectCode}
                 onStartQuiz={startQuiz}
                 onStartRevise={startRevise}
+                onStartCbt={(bankName, date) => setCbtTarget({ bankName, date })}
               />
             </div>
           )}
@@ -1758,6 +1815,18 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
           )
         }
       </div>
+      {cbtTarget && subject && (
+        <CbtExam
+          subject={{ code: subjectCode, name: subject.name }}
+          paper={cbtTarget}
+          onResult={(result) => {
+            const bankName = cbtTarget.bankName;
+            setCbtTarget(null);
+            void showCbtReview(toReviewData(bankName, result));
+          }}
+          onClose={() => setCbtTarget(null)}
+        />
+      )}
     </div>
   );
 };
