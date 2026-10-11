@@ -129,6 +129,14 @@ PATTERNS = {
         ], timing="sectional",
         notes=["Revised pattern: 5 minutes are kept for cross-checking. The written sections are stored as 8 SUBJECTIVE entries in this bank."]),
 
+    "EP52x/Exam/6 June 2026.json": pattern(B1T5, 120, 100, [S("Section 1", "MCQ", 50, 2)]),
+    "MD52x/Exam/6 June 2026.json": pattern(
+        B1T5, 120, 75, [S("Section A", "MCQ", 30, 1), W("Section B", "SHORT_ANSWER", 9, 5, take=9)]),
+    "EP51x/Exam/7 June 2026.json": pattern(
+        B1T5, 75, 50, [S("Section 1", "MCQ", 25, 2, negative_marks_per_question=1)], negative=True,
+        notes=["Negative marking: -1 for each wrong answer.", "The question paper uses a three-option MCQ format."]),
+    "MD51x/Exam/7 June 2026.json": pattern(B1T5, 90, 150, [S("Section 1", "MCQ", 30, 5)], calculator="standard"),
+
     # ---------------- Batch 1, Term 4 (Feb 2026) ----------------
     "ST41x/Exam/14 February 2026.json": pattern(
         B1T4, 120, 100, [
