@@ -3,7 +3,33 @@
         "subject_name": "Introduction to Strategic Management",
         "exam_date": "20 June 2026",
         "batch": "",
-        "attempt": ""
+        "attempt": "",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 1 Term 4",
+          "duration_min": 120,
+          "total_marks": 100,
+          "negative_marking": false,
+          "calculator": "none",
+          "timing_mode": "global",
+          "reference_materials": [],
+          "instructions": [],
+          "sections": [
+            {
+              "name": "Section 1",
+              "question_type": "MCQ_MSQ",
+              "num_questions": 20,
+              "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
+            },
+            {
+              "name": "Sections 2-3",
+              "question_type": "SHORT_ANSWER_AND_CASE_STUDY",
+              "num_questions": 12,
+              "note": "Short-answer questions and case studies.",
+              "question_ids": ["21", "22", "23", "24", "25", "26", "27", "28", "30", "31", "33", "34"]
+            }
+          ],
+          "total_questions": 32
+        }
     },
     "questions": [
         {

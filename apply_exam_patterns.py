@@ -41,6 +41,7 @@ def pattern(exam_name, duration, total_marks, sections, *, calculator="none", ne
 B2T3, B2T2, B2T1 = "IIMB BBA DBE Batch 2 Term 3", "IIMB BBA DBE Batch 2 Term 2", "IIMB BBA DBE Batch 2 Term 1"
 B1T6, B1T5, B1T4 = "IIMB BBA DBE Batch 1 Term 6", "IIMB BBA DBE Batch 1 Term 5", "IIMB BBA DBE Batch 1 Term 4"
 B1T3 = "IIMB BBA DBE Batch 1 Term 3"
+B1T2 = "IIMB BBA DBE Batch 1 Term 2"
 ROUGH = "Rough sheets are provided at the centre and must be returned immediately after the exam."
 NO_NEG_100 = "No negative marking. 100 total marks per paper."
 MSQ_NOTE = ("Section 2 contains Multiple Select Questions (MSQs). To score marks you must select all correct options "
@@ -168,6 +169,25 @@ PATTERNS = {
         ]),
     "FA31x/Exam/28 February 2026.json": pattern(B1T3, 60, 75, [S("Section 1", "MCQ", 25, 3)], calculator="standard"),
     "DS11x_B2/Exam/29 March 2026.json": pattern(B2T1, 60, 100, [S("Section 1", "MCQ", 35)], notes=[NO_NEG_100]),
+
+    # Earlier / retake sittings of courses whose pattern is in the notices (same course and question count).
+    "ES21x/Exam/04 May 2025.json": pattern(B2T2, 60, 100, [S("Section 1", "MCQ", 40, 2.5)], calculator="standard", notes=[ROUGH]),
+    "FA11x/Exam/11 January 2025.json": pattern(B2T1, 120, 100, [S("Section 1", "MCQ", 50)], notes=[NO_NEG_100]),
+    "FA11x/Exam/5 October 2025.json": pattern(B2T1, 120, 100, [S("Section 1", "MCQ", 50)], notes=[NO_NEG_100]),
+    "ID22x/Exam/4 May 2025.json": pattern(B2T2, 120, 100, [S("Section 1", "MCQ", 50, 2)]),
+    "ID22x/Exam/27 September 2025.json": pattern(B2T2, 120, 100, [S("Section 1", "MCQ", 50, 2)]),
+    "MD42x/Exam/28 September 2025.json": pattern(B1T2, 60, 100, [S("Section 1", "MCQ", 40)], notes=[NO_NEG_100]),
+    "MK11x/Exam/12 January 2025.json": pattern(B2T1, 120, 100, [S("Section 1", "MCQ", 50)], notes=[NO_NEG_100]),
+    "SE21x/Exam/28 September 2025.json": pattern(B1T2, 60, 100, [S("Section 1", "MCQ", 50, 2)]),
+    "OM41x/Exam/21 June 2026.json": pattern(
+        B1T4, 60, 120, [S("Sections 1-5", "MCQ", 25)], calculator="scientific", negative=True,
+        negative_marks_fraction=0.2,
+        notes=["Negative marking: 20% of the marks assigned to a question is deducted for a wrong answer.", ROUGH]),
+    "ST41x/Exam/20 June 2026.json": pattern(
+        B1T4, 120, 100, [
+            S("Section 1", "MCQ_MSQ", 20),
+            W("Sections 2-3", "SHORT_ANSWER_AND_CASE_STUDY", 12, take=12, note="Short-answer questions and case studies."),
+        ]),
 
     # ---------------- Batch 1, Term 3 (Sep 2025) ----------------
     "FA31x/Exam/20 September 2025.json": pattern(B1T3, 60, 75, [S("Section 1", "MCQ", 25, 3)], calculator="standard"),

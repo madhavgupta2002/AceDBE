@@ -1,7 +1,28 @@
 {
     "exam_metadata": {
         "subject_name": "Marketing Fundamentals",
-        "exam_date": "12 January 2025"
+        "exam_date": "12 January 2025",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 2 Term 1",
+          "duration_min": 120,
+          "total_marks": 100,
+          "negative_marking": false,
+          "calculator": "none",
+          "timing_mode": "global",
+          "reference_materials": [],
+          "instructions": [
+            "No negative marking. 100 total marks per paper."
+          ],
+          "sections": [
+            {
+              "name": "Section 1",
+              "question_type": "MCQ",
+              "num_questions": 50,
+              "question_ids": ["236144827", "236144828", "236144829", "236144830", "236144832", "236144833", "236144835", "236144835_2", "236144836", "236144837", "236144838", "236144838_2", "236144839", "236144840", "236144841", "236144842", "236144843", "236144845", "236144846", "236144847", "236144847_2", "236144848", "236144849", "236144851", "236144853", "236144855", "236144855_2", "236144856", "236144857", "236144858", "236144858_2", "236144858_3", "236144859", "236144860", "236144861", "236144862", "236144863", "236144864", "236144865", "236144866", "236144867", "236144868", "236144869", "236144870", "236144871", "236144872", "236144873", "236144874", "236144875", "236144876"]
+            }
+          ],
+          "total_questions": 50
+        }
     },
     "questions": [
         {
@@ -103,7 +124,7 @@
             "module": 5
         },
         {
-            "question_id": "236144835",
+            "question_id": "236144835_2",
             "question_text": "A medical equipment supplier notices hospitals require approvals from finance, procurement, and clinicians. Which factor most influences this process?",
             "question_type": "MCQ",
             "options": {
@@ -159,7 +180,7 @@
             "module": 1
         },
         {
-            "question_id": "236144838",
+            "question_id": "236144838_2",
             "question_text": "A high-tech components supplier depends heavily on one large aerospace client. Which strategy best mitigates risk while maintaining this critical B2B relationship?",
             "question_type": "MCQ",
             "options": {
@@ -285,7 +306,7 @@
             "module": 6
         },
         {
-            "question_id": "236144847",
+            "question_id": "236144847_2",
             "question_text": "A cloud-storage startup hopes to thrive in a saturated market by providing enhanced security and personalized onboarding. Which fundamental priority underlies effective marketing management here?",
             "question_type": "MCQ",
             "options": {
@@ -369,7 +390,7 @@
             "module": 3
         },
         {
-            "question_id": "236144855",
+            "question_id": "236144855_2",
             "question_text": "An online bookstore personalizes recommendations and maintains frequent communication with loyal readers. Which long-term benefit can this strategy yield?",
             "question_type": "MCQ",
             "options": {
@@ -425,7 +446,7 @@
             "module": 1
         },
         {
-            "question_id": "236144858",
+            "question_id": "236144858_2",
             "question_text": "A retailer struggles with inconsistent experiences across online, app, and store. Which tactic enables omnichannel?",
             "question_type": "MCQ",
             "options": {
@@ -439,7 +460,7 @@
             "module": 7
         },
         {
-            "question_id": "236144858",
+            "question_id": "236144858_3",
             "question_text": "A major retailer exerts strong influence over suppliers. What concept explains this?",
             "question_type": "MCQ",
             "options": {
