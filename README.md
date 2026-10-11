@@ -109,7 +109,7 @@ Example structure:
 
 On the PYQs page, choose **CBT Exam** and click a paper to take it in the exam-centre interface served by the Digion exam engine. Papers with `exam_metadata.exam_pattern` use it (sections, marks, negative marking, duration, calculator); any other Exam paper with objective questions uses a standard practice pattern (1 mark each, no negative marking, 1.5 min per question). CBT is also available from each Exam set on a subject page. After submission the regular quiz review opens (`/<subject>?exam=<bank>&review=cbt`). CLA, Custom and regular quizzes are unaffected.
 
-- Engine URL: `NEXT_PUBLIC_DIGION_ENGINE_URL` (default `https://digionengine.vercel.app`)
+- Engine URL: `NEXT_PUBLIC_DIGION_ENGINE_URL` (default `https://digion-engine.vercel.app`)
 - Code: `lib/digionConnector.ts`, `lib/cbtPattern.ts`, `lib/cbtReview.ts`, `components/CbtExam.tsx`
 - Add or update patterns with `python3 apply_exam_patterns.py`
 
