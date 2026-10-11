@@ -3,7 +3,66 @@
     "subject_name": "Entrepreneurial Mindset and Methods",
     "exam_date": "05 September 2026",
     "batch": "",
-    "attempt": ""
+    "attempt": "",
+    "exam_pattern": {
+      "exam_name": "IIMB BBA DBE Batch 2 Term 3",
+      "duration_min": 120,
+      "total_marks": 100,
+      "negative_marking": false,
+      "calculator": "none",
+      "timing_mode": "global",
+      "reference_materials": [],
+      "instructions": [
+        "Section 2 contains Multiple Select Questions (MSQs). To score marks you must select all correct options for each question. No partial marks or grace marks are awarded for incomplete or partially correct selections."
+      ],
+      "sections": [
+        {
+          "name": "Section 1",
+          "question_type": "MCQ",
+          "num_questions": 15,
+          "marks_per_question": 1,
+          "question_ids": ["4513871074", "4513871075", "4513871076", "4513871077", "4513871078", "4513871079", "4513871080", "4513871081", "4513871082", "4513871083", "4513871084", "4513871085", "4513871086", "4513871087", "4513871088"]
+        },
+        {
+          "name": "Section 2",
+          "question_type": "MSQ",
+          "num_questions": 20,
+          "marks_per_question": 1.5,
+          "msq_scoring": "exact",
+          "question_ids": ["4513871089", "4513871090", "4513871091", "4513871092", "4513871093", "4513871094", "4513871095", "4513871096", "4513871097", "4513871098", "4513871099", "4513871100", "4513871101", "4513871102", "4513871103", "4513871104", "4513871105", "4513871106", "4513871107", "4513871108"]
+        },
+        {
+          "name": "Section 3",
+          "question_type": "TRUE_FALSE",
+          "num_questions": 15,
+          "marks_per_question": 1,
+          "question_ids": ["4513871109", "4513871110", "4513871111", "4513871112", "4513871113", "4513871114", "4513871115", "4513871116", "4513871117", "4513871118", "4513871119", "4513871120", "4513871121", "4513871122", "4513871123"]
+        },
+        {
+          "name": "Section 4",
+          "question_type": "SCENARIO_MCQ",
+          "num_questions": 20,
+          "marks_per_question": 1,
+          "note": "4 scenarios, each followed by 5 MCQs",
+          "question_ids": ["4513871125", "4513871126", "4513871127", "4513871128", "4513871129", "4513871131", "4513871132", "4513871133", "4513871134", "4513871135", "4513871137", "4513871138", "4513871139", "4513871140", "4513871141", "4513871143", "4513871144", "4513871145", "4513871146", "4513871147"]
+        },
+        {
+          "name": "Section 5",
+          "question_type": "MATCH_THE_FOLLOWING",
+          "num_questions": 5,
+          "marks_per_question": 2,
+          "question_ids": ["4513871148", "4513871149", "4513871150", "4513871151", "4513871152"]
+        },
+        {
+          "name": "Section 6",
+          "question_type": "SEQUENCE_MCQ",
+          "num_questions": 5,
+          "marks_per_question": 2,
+          "question_ids": ["4513871153", "4513871154", "4513871155", "4513871156", "4513871157"]
+        }
+      ],
+      "total_questions": 80
+    }
   },
   "questions": [
     {

@@ -12,9 +12,51 @@ export interface IIMBQuestion {
   explaination?: string; // Handle typo in JSON files
 }
 
+// Official exam pattern (Exam banks only). Documented in QUESTION_FORMAT.md.
+export type ExamPatternQuestionType =
+  | 'MCQ' | 'MSQ' | 'MCQ_MSQ' | 'TRUE_FALSE' | 'SCENARIO_MCQ' | 'CASELET_MCQ' | 'CONTEXT_MCQ'
+  | 'MATCH_THE_FOLLOWING' | 'SEQUENCE_MCQ' | 'NUMERICAL' | 'SHORT_ANSWER' | 'CASE_BASED'
+  | 'HIGHER_ORDER' | 'SHORT_ANSWER_AND_CASE_STUDY' | 'SUBJECTIVE';
+
+export interface ExamPatternContextBlock {
+  context_question_id: string; // bank entry holding the shared scenario text
+  applies_to: string[]; // question ids that refer to it
+}
+
+export interface ExamPatternSection {
+  name: string;
+  question_type: ExamPatternQuestionType;
+  num_questions: number;
+  marks_per_question?: number; // omitted when the notice does not say; derived from total_marks
+  negative_marks_per_question?: number;
+  duration_min?: number; // sectional timing only
+  msq_scoring?: 'exact' | 'partial';
+  max_selections?: number;
+  question_ids?: string[]; // bank questions in this section (absent for written sections that are not in the bank)
+  context_blocks?: ExamPatternContextBlock[];
+  note?: string;
+}
+
+export interface ExamPattern {
+  exam_name: string;
+  duration_min: number;
+  total_marks: number;
+  total_questions: number;
+  negative_marking: boolean;
+  negative_marks_fraction?: number; // e.g. 0.2 = 20% of a question's marks
+  calculator: 'none' | 'standard' | 'scientific';
+  timing_mode: 'global' | 'sectional';
+  reference_materials: string[];
+  instructions: string[];
+  sections: ExamPatternSection[];
+}
+
 export interface ExamMetadata {
   subject_name: string;
   exam_date: string;
+  batch?: string | number;
+  attempt?: string;
+  exam_pattern?: ExamPattern;
 }
 
 export interface QuestionFile {

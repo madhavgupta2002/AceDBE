@@ -1,7 +1,28 @@
 {
     "exam_metadata": {
         "subject_name": "Foundations of Business Communication I",
-        "exam_date": "01 February 2026"
+        "exam_date": "01 February 2026",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 2 Term 1",
+          "duration_min": 60,
+          "total_marks": 100,
+          "negative_marking": false,
+          "calculator": "none",
+          "timing_mode": "global",
+          "reference_materials": [],
+          "instructions": [
+            "No negative marking. 100 total marks per paper."
+          ],
+          "sections": [
+            {
+              "name": "Section 1",
+              "question_type": "MCQ",
+              "num_questions": 35,
+              "question_ids": ["582113248", "582113249", "582113250", "582113251", "582113252", "582113253", "582113254", "582113255", "582113256", "582113257", "582113259", "582113260", "582113261", "582113262", "582113263", "582113264", "582113265", "582113267", "582113268", "582113269", "582113270", "582113271", "582113272", "582113273", "582113274", "582113276", "582113277", "582113278", "582113279", "582113280", "582113281", "582113283", "582113284", "582113286", "582113287"]
+            }
+          ],
+          "total_questions": 35
+        }
     },
     "questions": [
         {

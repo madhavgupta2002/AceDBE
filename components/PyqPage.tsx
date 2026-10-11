@@ -16,10 +16,12 @@ import {
   Layers,
   ArrowRight,
   ExternalLink,
+  MonitorPlay,
 } from 'lucide-react';
 import { TermPyqGroup, ExamPaperInfo, SubjectPyqInfo } from '@/lib/pyqService';
 import { convertToInternalFormat } from '@/lib/questionLoader';
 import { printExamPaper } from '@/lib/printExam';
+import CbtExam from './CbtExam';
 
 export default function PyqPage() {
   const router = useRouter();
@@ -27,7 +29,8 @@ export default function PyqPage() {
   const [termGroups, setTermGroups] = useState<TermPyqGroup[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedTerm, setSelectedTerm] = useState<number | 'all'>('all');
-  const [actionType, setActionType] = useState<'quiz' | 'print'>('quiz');
+  const [actionType, setActionType] = useState<'quiz' | 'print' | 'cbt'>('quiz');
+  const [cbtTarget, setCbtTarget] = useState<{ subject: SubjectPyqInfo; paper: ExamPaperInfo } | null>(null);
   const [withAnswers, setWithAnswers] = useState(false);
   const [printingPaperKey, setPrintingPaperKey] = useState<string | null>(null);
 
@@ -87,6 +90,11 @@ export default function PyqPage() {
     subject: SubjectPyqInfo,
     paper: ExamPaperInfo
   ) => {
+    if (actionType === 'cbt') {
+      if (paper.cbt) setCbtTarget({ subject, paper });
+      return;
+    }
+
     if (actionType === 'quiz') {
       router.push(`/${subject.code}?exam=${encodeURIComponent(paper.bankName)}`);
       return;
@@ -185,7 +193,7 @@ export default function PyqPage() {
             </span>
 
             {/* Main Toggle: Quiz vs Print */}
-            <div className="grid grid-cols-2 p-0.5 bg-slate-800/90 rounded-lg border border-slate-700/60 gap-1">
+            <div className="grid grid-cols-3 p-0.5 bg-slate-800/90 rounded-lg border border-slate-700/60 gap-1">
               <button
                 type="button"
                 onClick={() => setActionType('quiz')}
@@ -209,6 +217,18 @@ export default function PyqPage() {
               >
                 <Printer className="w-3.5 h-3.5" />
                 Print Paper
+              </button>
+              <button
+                type="button"
+                onClick={() => setActionType('cbt')}
+                className={`flex items-center justify-center gap-1.5 py-1.5 px-2 rounded-md text-[11px] font-bold transition-all duration-200 ${
+                  actionType === 'cbt'
+                    ? 'bg-violet-500 text-slate-950 shadow-sm shadow-violet-500/30'
+                    : 'text-slate-400 hover:text-white hover:bg-slate-700/50'
+                }`}
+              >
+                <MonitorPlay className="w-3.5 h-3.5" />
+                CBT Exam
               </button>
             </div>
 
@@ -241,6 +261,10 @@ export default function PyqPage() {
                   </button>
                 </div>
               </div>
+            ) : actionType === 'cbt' ? (
+              <p className="text-[10px] text-slate-400 px-0.5">
+                Timed exam in the real exam-centre interface, using the official pattern. Dimmed papers have no pattern yet.
+              </p>
             ) : (
               <p className="text-[10px] text-slate-400 px-0.5">
                 Clicking any paper opens an interactive practice quiz.
@@ -405,23 +429,31 @@ export default function PyqPage() {
                                         <button
                                           key={paper.filename}
                                           type="button"
-                                          disabled={isPrinting}
+                                          disabled={isPrinting || (actionType === 'cbt' && !paper.cbt)}
                                           onClick={() =>
                                             handlePaperClick(subject, paper)
                                           }
                                           className={`w-full max-w-[105px] px-1.5 py-1 rounded-md border font-semibold text-[10.5px] flex items-center justify-center gap-1 transition-all duration-200 group/btn shadow-sm ${
                                             actionType === 'quiz'
                                               ? 'bg-emerald-950/50 hover:bg-emerald-600 border-emerald-700/50 text-emerald-200 hover:text-white'
+                                              : actionType === 'cbt'
+                                              ? paper.cbt
+                                                ? 'bg-violet-950/50 hover:bg-violet-600 border-violet-700/50 text-violet-200 hover:text-white'
+                                                : 'bg-slate-900/40 border-slate-800 text-slate-600 cursor-not-allowed'
                                               : 'bg-sky-950/50 hover:bg-sky-600 border-sky-700/50 text-sky-200 hover:text-white'
                                           }`}
-                                          title={`${
-                                            actionType === 'quiz'
-                                              ? 'Take Quiz'
-                                              : 'Print Paper'
-                                          }: ${subject.code} (${paper.date})`}
+                                          title={
+                                            actionType === 'cbt'
+                                              ? paper.cbt
+                                                ? `CBT Exam: ${subject.code} (${paper.date}) - ${paper.cbt.durationMin} min, ${paper.cbt.questionCount} questions`
+                                                : 'No official exam pattern for this paper yet'
+                                              : `${actionType === 'quiz' ? 'Take Quiz' : 'Print Paper'}: ${subject.code} (${paper.date})`
+                                          }
                                         >
                                           {isPrinting ? (
                                             <Loader2 className="w-3 h-3 animate-spin" />
+                                          ) : actionType === 'cbt' ? (
+                                            <MonitorPlay className="w-3 h-3 shrink-0 opacity-70 group-hover/btn:opacity-100" />
                                           ) : actionType === 'quiz' ? (
                                             <PlayCircle className="w-3 h-3 shrink-0 opacity-70 group-hover/btn:opacity-100" />
                                           ) : (
@@ -471,6 +503,10 @@ export default function PyqPage() {
         </div>
       )}
 
+      {cbtTarget && (
+        <CbtExam subject={cbtTarget.subject} paper={cbtTarget.paper} onClose={() => setCbtTarget(null)} />
+      )}
+
       {/* Guidance Notes Footer */}
       <div className="mt-5 p-3.5 rounded-xl bg-slate-900/50 border border-slate-800 text-slate-400 text-[11px] leading-relaxed">
         <h3 className="font-bold text-xs text-slate-200 mb-1.5 flex items-center gap-1.5">
@@ -483,6 +519,9 @@ export default function PyqPage() {
           </li>
           <li>
             <strong>Retake Cycles:</strong> After a course’s initial term, official re-sit examinations are held in each following exam cycle.
+          </li>
+          <li>
+            <strong>CBT Exam:</strong> Papers with an official exam pattern (sections, marks, negative marking, duration, calculator) can be taken in the exam-centre interface. Only objective questions are included; written sections are skipped.
           </li>
           <li>
             <strong>Abridged Papers Excluded:</strong> All transitional abridged papers have been excluded.

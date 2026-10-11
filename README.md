@@ -105,6 +105,14 @@ Example structure:
 5. Select a specific bank (if in bank mode)
 6. Start practicing!
 
+## CBT exams (PYQs only)
+
+On the PYQs page, choose **CBT Exam** and click a paper to take it in the exam-centre interface served by the Digion exam engine. Only papers whose `exam_metadata.exam_pattern` is set (sections, marks, negative marking, duration, calculator) are enabled. The result, with a question-by-question review, is shown back on the page after submission. CLA, Custom and regular quizzes are unaffected.
+
+- Engine URL: `NEXT_PUBLIC_DIGION_ENGINE_URL` (default `https://digionengine.vercel.app`)
+- Code: `lib/digionConnector.ts`, `components/CbtExam.tsx`
+- Add or update patterns with `python3 apply_exam_patterns.py`
+
 ## Technologies
 
 - Next.js 14 (App Router)

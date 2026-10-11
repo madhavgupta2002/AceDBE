@@ -1,7 +1,82 @@
 {
     "exam_metadata": {
         "subject_name": "Entrepreneurial Mindset and Methods",
-        "exam_date": "20 September 2025"
+        "exam_date": "20 September 2025",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 1 Term 3",
+          "duration_min": 120,
+          "total_marks": 100,
+          "negative_marking": false,
+          "calculator": "none",
+          "timing_mode": "global",
+          "reference_materials": [],
+          "instructions": [],
+          "sections": [
+            {
+              "name": "Simple MCQs",
+              "question_type": "MCQ",
+              "num_questions": 15,
+              "marks_per_question": 1,
+              "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
+            },
+            {
+              "name": "MCQs with Multiple Correct Answers",
+              "question_type": "MSQ",
+              "num_questions": 20,
+              "marks_per_question": 1.5,
+              "msq_scoring": "exact",
+              "question_ids": ["16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34", "35"]
+            },
+            {
+              "name": "True/False questions",
+              "question_type": "TRUE_FALSE",
+              "num_questions": 15,
+              "marks_per_question": 1,
+              "question_ids": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47", "48", "49", "50"]
+            },
+            {
+              "name": "Vignette (Scenario) based MCQs",
+              "question_type": "SCENARIO_MCQ",
+              "num_questions": 20,
+              "marks_per_question": 1,
+              "note": "4 scenarios, each followed by 5 MCQs. The scenario text is stored as a SUBJECTIVE bank entry and shown as a passage.",
+              "question_ids": ["52", "53", "54", "55", "56", "58", "59", "60", "61", "62", "64", "65", "66", "67", "68", "70", "71", "72", "73", "74"],
+              "context_blocks": [
+                {
+                  "context_question_id": "51",
+                  "applies_to": ["52", "53", "54", "55", "56"]
+                },
+                {
+                  "context_question_id": "57",
+                  "applies_to": ["58", "59", "60", "61", "62"]
+                },
+                {
+                  "context_question_id": "63",
+                  "applies_to": ["64", "65", "66", "67", "68"]
+                },
+                {
+                  "context_question_id": "69",
+                  "applies_to": ["70", "71", "72", "73", "74"]
+                }
+              ]
+            },
+            {
+              "name": "Context based MCQs",
+              "question_type": "CONTEXT_MCQ",
+              "num_questions": 5,
+              "marks_per_question": 2,
+              "question_ids": ["75", "76", "77", "78", "79"]
+            },
+            {
+              "name": "Sequence based MCQs",
+              "question_type": "SEQUENCE_MCQ",
+              "num_questions": 5,
+              "marks_per_question": 2,
+              "question_ids": ["80", "81", "82", "83", "84"]
+            }
+          ],
+          "total_questions": 80
+        }
     },
     "questions": [
         {

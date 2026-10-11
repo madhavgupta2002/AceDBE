@@ -1,7 +1,28 @@
 {
     "exam_metadata": {
         "subject_name": "Explorations in Entrepreneurship",
-        "exam_date": "31 January 2026"
+        "exam_date": "31 January 2026",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 2 Term 1",
+          "duration_min": 60,
+          "total_marks": 100,
+          "negative_marking": false,
+          "calculator": "none",
+          "timing_mode": "global",
+          "reference_materials": [],
+          "instructions": [
+            "No negative marking. 100 total marks per paper."
+          ],
+          "sections": [
+            {
+              "name": "Section 1",
+              "question_type": "MCQ",
+              "num_questions": 35,
+              "question_ids": ["582113431", "582113432", "582113433", "582113434", "582113435", "582113436", "582113437", "582113438", "582113439", "582113440", "582113441", "582113442", "582113443", "582113444", "582113445", "582113446", "582113447", "582113448", "582113449", "582113450", "582113451", "582113452", "582113453", "582113454", "582113455", "582113456", "582113457", "582113458", "582113459", "582113460", "582113461", "582113462", "582113463", "582113464", "582113465"]
+            }
+          ],
+          "total_questions": 35
+        }
     },
     "questions": [
         {
