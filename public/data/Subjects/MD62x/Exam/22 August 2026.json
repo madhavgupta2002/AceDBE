@@ -3,7 +3,46 @@
         "subject_name": "Business Research and Growth Systems Architecture",
         "exam_date": "22 August 2026",
         "batch": "",
-        "attempt": ""
+        "attempt": "",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 1 Term 6",
+          "duration_min": 120,
+          "total_marks": 80,
+          "negative_marking": false,
+          "calculator": "standard",
+          "timing_mode": "global",
+          "reference_materials": [],
+          "instructions": [
+            "Every question is self-contained; brand-specific numbers needed are stated in the question.",
+            "For Sections B and C, structure the answer so each part of the question is addressed directly."
+          ],
+          "sections": [
+            {
+              "name": "Section A",
+              "question_type": "MCQ",
+              "num_questions": 20,
+              "marks_per_question": 2,
+              "question_ids": ["4513871", "4513872", "4513873", "4513874", "4513875", "4513876", "4513877", "4513878", "4513879", "45138710", "45138711", "45138712", "45138713", "45138714", "45138715", "45138716", "45138717", "45138718", "45138719", "45138720"]
+            },
+            {
+              "name": "Section B",
+              "question_type": "CASE_BASED",
+              "num_questions": 4,
+              "marks_per_question": 5,
+              "note": "Case-based / application: each question presents a short scenario followed by a task.",
+              "question_ids": ["45138721", "45138722", "45138723", "45138724"]
+            },
+            {
+              "name": "Section C",
+              "question_type": "SUBJECTIVE",
+              "num_questions": 2,
+              "marks_per_question": 10,
+              "note": "Subjective / descriptive: structured, complete response.",
+              "question_ids": ["45138725", "45138726"]
+            }
+          ],
+          "total_questions": 26
+        }
     },
     "questions": [
         {

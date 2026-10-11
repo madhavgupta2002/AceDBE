@@ -3,7 +3,29 @@
         "subject_name": "Inclusive Business Model",
         "exam_date": "23 August 2026",
         "batch": "",
-        "attempt": ""
+        "attempt": "",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 1 Term 6",
+          "duration_min": 120,
+          "total_marks": 100,
+          "negative_marking": false,
+          "calculator": "none",
+          "timing_mode": "global",
+          "reference_materials": [],
+          "instructions": [
+            "Questions are based on the inclusive business model case study shared two days before the exam."
+          ],
+          "sections": [
+            {
+              "name": "Section A",
+              "question_type": "SUBJECTIVE",
+              "num_questions": 10,
+              "marks_per_question": 10,
+              "question_ids": ["451387232", "451387233", "451387234", "451387235", "451387236", "451387237", "451387238", "451387239", "451387240", "451387241"]
+            }
+          ],
+          "total_questions": 10
+        }
     },
     "questions": [
         {

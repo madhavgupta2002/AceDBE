@@ -1,7 +1,28 @@
 {
     "exam_metadata": {
         "subject_name": "Creative Mindset for Innovation and Imagination",
-        "exam_date": "31 January 2026"
+        "exam_date": "31 January 2026",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 2 Term 1",
+          "duration_min": 60,
+          "total_marks": 100,
+          "negative_marking": false,
+          "calculator": "none",
+          "timing_mode": "global",
+          "reference_materials": [],
+          "instructions": [
+            "Entirely computer-based paper with 4 subjective questions."
+          ],
+          "sections": [
+            {
+              "name": "Section 1",
+              "question_type": "SUBJECTIVE",
+              "num_questions": 4,
+              "question_ids": ["582113427", "582113428", "582113429", "582113430"]
+            }
+          ],
+          "total_questions": 4
+        }
     },
     "questions": [
         {
