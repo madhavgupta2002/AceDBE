@@ -1067,9 +1067,24 @@
       "explanation": "**Step 1: Calculate Total Assets**\nTotal Assets = Equity + Non-current Liabilities + Current Liabilities\n= 80 + 120 + 50 = Rs. 250\n\nOR\n\nTotal Assets = Non-current Assets + Inventory + Receivables\n= 160 + 40 + 50 = Rs. 250\n\n**Step 2: Calculate ROTA**\nROTA = (PBIT / Total Assets) × 100\n= (60 / 250) × 100\n= 24%\n\n**Interpretation:** For every Rs. 100 of assets, the company generates Rs. 24 of operating profit."
     },
     {
+      "question_id": "Passage_1",
+      "question_text": "The Balance Sheet and Income Statement of NatureRemedy Pharma Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 100; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 100; Inventory: Rs. 30; Receivables: Rs. 30; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 8
+    },
+    {
       "module": 8,
       "question_id": "M8_Q3",
-      "question_text": "The Balance Sheet and Income Statement of NatureRemedy Pharma Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 100; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 100; Inventory: Rs. 30; Receivables: Rs. 30; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Total Asset Turnover Ratio.",
+      "question_text": "Find Total Asset Turnover Ratio.",
       "question_type": "MCQ",
       "options": {
         "A": "1.50",
@@ -1078,7 +1093,8 @@
         "D": "0.80"
       },
       "correct_option_label": "A",
-      "explanation": "**Step 1: Calculate Total Assets**\nTotal Assets = Equity + Non-current Liabilities + Current Liabilities\n= 40 + 100 + 20 = Rs. 160\n\nOR\n\nTotal Assets = Non-current Assets + Inventory + Receivables\n= 100 + 30 + 30 = Rs. 160\n\n**Step 2: Calculate Total Asset Turnover Ratio**\nTotal Asset Turnover = Sales / Total Assets\n= 240 / 160\n= 1.50\n\n**Interpretation:** For every Rs. 1 of assets, the company generates Rs. 1.50 in sales."
+      "explanation": "**Step 1: Calculate Total Assets**\nTotal Assets = Equity + Non-current Liabilities + Current Liabilities\n= 40 + 100 + 20 = Rs. 160\n\nOR\n\nTotal Assets = Non-current Assets + Inventory + Receivables\n= 100 + 30 + 30 = Rs. 160\n\n**Step 2: Calculate Total Asset Turnover Ratio**\nTotal Asset Turnover = Sales / Total Assets\n= 240 / 160\n= 1.50\n\n**Interpretation:** For every Rs. 1 of assets, the company generates Rs. 1.50 in sales.",
+      "passage_id": "Passage_1"
     },
     {
       "module": 8,
@@ -1111,7 +1127,7 @@
     {
       "module": 8,
       "question_id": "M8_Q6",
-      "question_text": "The Balance Sheet and Income Statement of NatureRemedy Pharma Ltd has the following Values. Equity: Rs. 40; Non-current Liabilities: Rs. 100; Current Liabilities: Rs. 20; Non-current asset (manily fixed assets): Rs. 100; Inventory: Rs. 30; Receivables: Rs. 30; Sales: Rs. 240; Raw Material Consumption: Rs. 120; Salary, other expenses and Depreciation: Rs. 60; Profit Before Interest and Taxes: 60; Interest: Rs. 10; Taxes: Rs. 10. Find Return on Capital Employed.",
+      "question_text": "Find Return on Capital Employed.",
       "question_type": "MCQ",
       "options": {
         "A": "33.33%",
@@ -1120,7 +1136,8 @@
         "D": "42.86%"
       },
       "correct_option_label": "D",
-      "explanation": "**Step 1: Calculate Capital Employed**\nCapital Employed = Equity + Non-current Liabilities\n= 40 + 100 = Rs. 140\n\n**Step 2: Calculate ROCE**\nROCE = (PBIT / Capital Employed) × 100\n= (60 / 140) × 100\n= 42.86%\n\n**Interpretation:** For every Rs. 100 of long-term capital employed, the company generates Rs. 42.86 of operating profit."
+      "explanation": "**Step 1: Calculate Capital Employed**\nCapital Employed = Equity + Non-current Liabilities\n= 40 + 100 = Rs. 140\n\n**Step 2: Calculate ROCE**\nROCE = (PBIT / Capital Employed) × 100\n= (60 / 140) × 100\n= 42.86%\n\n**Interpretation:** For every Rs. 100 of long-term capital employed, the company generates Rs. 42.86 of operating profit.",
+      "passage_id": "Passage_1"
     },
     {
       "module": 8,

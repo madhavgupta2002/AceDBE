@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { Question } from '@/lib/types';
 import { CheckCircle, XCircle, Check, RotateCcw, Play, Pause } from 'lucide-react';
 import StopWatch from './StopWatch';
+import PassageCard from './PassageCard';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -265,6 +266,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
             </button>
           )}
         </div>
+        {question.passage && <PassageCard question={question} className="mb-4" />}
         <div className="text-base sm:text-lg mb-4 sm:mb-6 text-white prose prose-invert prose-indigo max-w-none text-justify">
           {renderRich(question.text)}
         </div>
@@ -351,6 +353,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
           </button>
         )}
       </div>
+      {question.passage && <PassageCard question={question} className="mb-4" />}
       <div className="text-base sm:text-lg mb-4 sm:mb-6 text-white prose prose-invert prose-indigo max-w-none text-justify">
         {renderRich(question.text)}
       </div>

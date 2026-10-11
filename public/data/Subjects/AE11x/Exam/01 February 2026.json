@@ -3,31 +3,46 @@
         "subject_name": "Foundations of Business Communication I",
         "exam_date": "01 February 2026",
         "exam_pattern": {
-          "exam_name": "IIMB BBA DBE Batch 2 Term 1",
-          "duration_min": 60,
-          "total_marks": 100,
-          "negative_marking": false,
-          "calculator": "none",
-          "timing_mode": "global",
-          "reference_materials": [],
-          "instructions": [
-            "No negative marking. 100 total marks per paper."
-          ],
-          "sections": [
-            {
-              "name": "Section 1",
-              "question_type": "MCQ",
-              "num_questions": 35,
-              "question_ids": ["582113248", "582113249", "582113250", "582113251", "582113252", "582113253", "582113254", "582113255", "582113256", "582113257", "582113259", "582113260", "582113261", "582113262", "582113263", "582113264", "582113265", "582113267", "582113268", "582113269", "582113270", "582113271", "582113272", "582113273", "582113274", "582113276", "582113277", "582113278", "582113279", "582113280", "582113281", "582113283", "582113284", "582113286", "582113287"]
-            }
-          ],
-          "total_questions": 35
+            "exam_name": "IIMB BBA DBE Batch 2 Term 1",
+            "duration_min": 60,
+            "total_marks": 100,
+            "negative_marking": false,
+            "calculator": "none",
+            "timing_mode": "global",
+            "reference_materials": [],
+            "instructions": [
+                "No negative marking. 100 total marks per paper."
+            ],
+            "sections": [
+                {
+                    "name": "Section 1",
+                    "question_type": "MCQ",
+                    "num_questions": 35,
+                    "question_ids": ["582113248", "582113249", "582113250", "582113251", "582113252", "582113253", "582113254", "582113255", "582113256", "582113257", "582113259", "582113260", "582113261", "582113262", "582113263", "582113264", "582113265", "582113267", "582113268", "582113269", "582113270", "582113271", "582113272", "582113273", "582113274", "582113276", "582113277", "582113278", "582113279", "582113280", "582113281", "582113283", "582113284", "582113286", "582113287"]
+                }
+            ],
+            "total_questions": 35
         }
     },
     "questions": [
         {
+            "question_id": "Passage_1",
+            "question_text": "The passage given below talks about the depletion of natural resources. However, some of the important words, phrases, and expressions have been omitted. Complete the passage by filling-in all the blanks choosing from the options provided for each blank:\n\nThe Passage\nWe often talk of the depleting natural resources_____(1.1)__________us. One common worry is about the availability of potable water in not so distant a future. Every summer, a large number of villages and cities in our country are reported to be reeling under acute shortage water. It seems that suddenly the age-old rivers, well, and ponds are drying _____(1.2)_____ and the fertile lands have become barren overnight. However, if we observe closely, it is not so. Well, it’s true that all of this is happening, but hasn’t happened just in a couple of days, months, or years. ______(1.3)___________ several decades now, we have not just used, but also overused, and even exploited natural resources without any sense of remorse, concern, care, or guilt. It seems we have become devoid _______(1.4)______________ such finer sentiments.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 1
+        },
+        {
             "question_id": "582113248",
-            "question_text": "The passage given below talks about the depletion of natural resources. However, some of the important words, phrases, and expressions have been omitted. Complete the passage by filling-in all the blanks choosing from the options provided for each blank:\n\nThe Passage\nWe often talk of the depleting natural resources_____(1.1)__________us. One common worry is about the availability of potable water in not so distant a future. Every summer, a large number of villages and cities in our country are reported to be reeling under acute shortage water. It seems that suddenly the age-old rivers, well, and ponds are drying _____(1.2)_____ and the fertile lands have become barren overnight. However, if we observe closely, it is not so. Well, it’s true that all of this is happening, but hasn’t happened just in a couple of days, months, or years. ______(1.3)___________ several decades now, we have not just used, but also overused, and even exploited natural resources without any sense of remorse, concern, care, or guilt. It seems we have become devoid _______(1.4)______________ such finer sentiments.\n\nSubQuestion No : 1\nWith reference to the passage, select the word that you think best fits the blank 1.1",
+            "question_text": "SubQuestion No : 1\nWith reference to the passage, select the word that you think best fits the blank 1.1",
             "question_type": "MCQ",
             "options": {
                 "A": "about",
@@ -37,11 +52,12 @@
             },
             "correct_option_label": "C",
             "explanation": "In the context of natural resources existing in our environment, the preposition 'around' is the most appropriate to describe resources surrounding us.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "582113249",
-            "question_text": "Refer to the passage in Question ID 582113248. \n\nSubQuestion No : 2\nWith reference to the passage, select the word that you think best fits the blank 1.2",
+            "question_text": "SubQuestion No : 2\nWith reference to the passage, select the word that you think best fits the blank 1.2",
             "question_type": "MCQ",
             "options": {
                 "A": "in",
@@ -51,11 +67,12 @@
             },
             "correct_option_label": "D",
             "explanation": "The phrasal verb 'drying up' is the standard English expression used to describe the disappearance of water from rivers or ponds.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "582113250",
-            "question_text": "Refer to the passage in Question ID 582113248.\n\nSubQuestion No : 3\nWith reference to the passage, select the word that you think best fits the blank 1.3",
+            "question_text": "SubQuestion No : 3\nWith reference to the passage, select the word that you think best fits the blank 1.3",
             "question_type": "MCQ",
             "options": {
                 "A": "For",
@@ -65,11 +82,12 @@
             },
             "correct_option_label": "A",
             "explanation": "The preposition 'For' is used to denote a period of time (several decades) extending up to the present in the context of the present perfect tense.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "582113251",
-            "question_text": "Refer to the passage in Question ID 582113248. \n\nSubQuestion No : 4\nWith reference to the passage, select the word that you think best fits the blank 1.4",
+            "question_text": "SubQuestion No : 4\nWith reference to the passage, select the word that you think best fits the blank 1.4",
             "question_type": "MCQ",
             "options": {
                 "A": "with",
@@ -79,7 +97,8 @@
             },
             "correct_option_label": "C",
             "explanation": "The adjective 'devoid' is consistently followed by the preposition 'of' to mean lacking or free from something.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "582113252",
@@ -166,8 +185,23 @@
             "module": 1
         },
         {
+            "question_id": "Passage_2",
+            "question_text": "Comprehension:\nCaselet 1: Rising Employee Absenteeism at Oasis Electronics\nRead the caselet given below and answer the questions that follow:\nOasis Electronics, a medium-sized manufacturing company, began experiencing a steady rise in employee absenteeism over six months. Production schedules were frequently disrupted, deadlines were missed, and supervisors struggled to redistribute workloads among present staff. Initial reviews showed that absences were highest in departments with repetitive tasks, timings which were rigidly imposed, and communication limited between managers and workers. Employees reported feeling undervalued, physically exhausted, and unclear about performance expectations. Although the company introduced stricter attendance policies, but absenteeism continued, suggesting that punitive measures alone were ineffective. Management latter realized that poor workplace communication, lack of flexibility, and minimal recognition were key contributors to the problem. Addressing absenteeism, however, required enforcing not just rules but also improving engagement, clarifying roles, and creating a supportive work environment. The case highlights how language, tone, and clarity in expression in internal communication can influence employee behavior as much as formal policies.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 1
+        },
+        {
             "question_id": "582113259",
-            "question_text": "Comprehension:\nCaselet 1: Rising Employee Absenteeism at Oasis Electronics\nRead the caselet given below and answer the questions that follow:\nOasis Electronics, a medium-sized manufacturing company, began experiencing a steady rise in employee absenteeism over six months. Production schedules were frequently disrupted, deadlines were missed, and supervisors struggled to redistribute workloads among present staff. Initial reviews showed that absences were highest in departments with repetitive tasks, timings which were rigidly imposed, and communication limited between managers and workers. Employees reported feeling undervalued, physically exhausted, and unclear about performance expectations. Although the company introduced stricter attendance policies, but absenteeism continued, suggesting that punitive measures alone were ineffective. Management latter realized that poor workplace communication, lack of flexibility, and minimal recognition were key contributors to the problem. Addressing absenteeism, however, required enforcing not just rules but also improving engagement, clarifying roles, and creating a supportive work environment. The case highlights how language, tone, and clarity in expression in internal communication can influence employee behavior as much as formal policies.\n\nSubQuestion No : 11\nThe phrase punitive measures refers to the actions that are",
+            "question_text": "SubQuestion No : 11\nThe phrase punitive measures refers to the actions that are",
             "question_type": "MCQ",
             "options": {
                 "A": "Preventive",
@@ -177,11 +211,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Punitive measures are actions taken as punishment for an offense, intended to correct behavior through disciplinary consequences.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "582113260",
-            "question_text": "Refer to the caselet in Question ID 582113259.\n\nSubQuestion No : 12\nThe expression in the caselet, ‘’repetitive tasks, timings which were rigidly imposed, and communication limited,’’ lacks parallel grammatical structure. Which of following constructions would make the structure parallel?",
+            "question_text": "SubQuestion No : 12\nThe expression in the caselet, ‘’repetitive tasks, timings which were rigidly imposed, and communication limited,’’ lacks parallel grammatical structure. Which of following constructions would make the structure parallel?",
             "question_type": "MCQ",
             "options": {
                 "A": "Tasks repetitive, rigid shift timings, limited communication",
@@ -191,11 +226,12 @@
             },
             "correct_option_label": "D",
             "explanation": "Parallelism requires items in a list to follow the same grammatical form. Option D uses the consistent pattern of 'Adjective + Noun'.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "582113261",
-            "question_text": "Refer to the caselet in Question ID 582113259.\n\nSubQuestion No : 13\nThere is an error in the expression: ‘’Although the company introduced stricter attendance policies, but absenteeism continued suggesting that punitive measures alone were ineffective.’’ Choose the right option to render the sentence grammatically appropriate.",
+            "question_text": "SubQuestion No : 13\nThere is an error in the expression: ‘’Although the company introduced stricter attendance policies, but absenteeism continued suggesting that punitive measures alone were ineffective.’’ Choose the right option to render the sentence grammatically appropriate.",
             "question_type": "MCQ",
             "options": {
                 "A": "Delete ‘Although’ from the main clause and replace it with ‘However’",
@@ -205,11 +241,12 @@
             },
             "correct_option_label": "C",
             "explanation": "The conjunctions 'Although' and 'but' are redundant when used together in the same sentence; 'Although' already establishes the contrast.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "582113262",
-            "question_text": "Refer to the caselet in Question ID 582113259.\n\nSubQuestion No : 14\nIn the expression, ‘’…began experiencing a steady rise in employee absenteeism…’’ the word ‘experiencing’ has been used as a:",
+            "question_text": "SubQuestion No : 14\nIn the expression, ‘’…began experiencing a steady rise in employee absenteeism…’’ the word ‘experiencing’ has been used as a:",
             "question_type": "MCQ",
             "options": {
                 "A": "Auxiliary",
@@ -219,11 +256,12 @@
             },
             "correct_option_label": "B",
             "explanation": "In this context, 'experiencing' acts as a noun (the object of the verb 'began'), making it a gerund.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "582113263",
-            "question_text": "Refer to the caselet in Question ID 582113259.\n\nSubQuestion No : 15\nThere is an error in the expression, ‘’Management latter realized…’’ Which of the following options would make it grammatically appropriate?",
+            "question_text": "SubQuestion No : 15\nThere is an error in the expression, ‘’Management latter realized…’’ Which of the following options would make it grammatically appropriate?",
             "question_type": "MCQ",
             "options": {
                 "A": "The management later realized",
@@ -233,11 +271,12 @@
             },
             "correct_option_label": "A",
             "explanation": "The word 'latter' refers to the second of two things, whereas 'later' is the adverb of time required to indicate a subsequent realization.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "582113264",
-            "question_text": "Refer to the caselet in Question ID 582113259.\n\nSubQuestion No : 16\nThe expression: ‘’Addressing absenteeism, therefore, required enforcing not just rules improved engagement as well…’’ is grammatically faulty. Which of the following options would make the sentence grammatically appropriate?",
+            "question_text": "SubQuestion No : 16\nThe expression: ‘’Addressing absenteeism, therefore, required enforcing not just rules improved engagement as well…’’ is grammatically faulty. Which of the following options would make the sentence grammatically appropriate?",
             "question_type": "MCQ",
             "options": {
                 "A": "Addressing absenteeism, therefore, required not only enforcing rules but also improving engagement",
@@ -247,11 +286,12 @@
             },
             "correct_option_label": "A",
             "explanation": "The correlative conjunction 'not only... but also' correctly connects two parallel phrases ('enforcing rules' and 'improving engagement').",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_2"
         },
         {
             "question_id": "582113265",
-            "question_text": "Refer to the caselet in Question ID 582113259.\n\nSubQuestion No : 17\nTake a look at the ending of the caselet again – ‘’The case highlights how language, tone, and clarity in expression in internal communication can influence employee behavior as much as formal policies.’’ Now identify the words/expressions that are redundant in this statement.",
+            "question_text": "SubQuestion No : 17\nTake a look at the ending of the caselet again – ‘’The case highlights how language, tone, and clarity in expression in internal communication can influence employee behavior as much as formal policies.’’ Now identify the words/expressions that are redundant in this statement.",
             "question_type": "MCQ",
             "options": {
                 "A": "…how language, tone and clarity",
@@ -261,11 +301,27 @@
             },
             "correct_option_label": "D",
             "explanation": "The phrase 'in expression in internal communication' is redundant because the preceding words 'language, tone, and clarity' already imply the mode of expression.",
-            "module": 3
+            "module": 3,
+            "passage_id": "Passage_2"
+        },
+        {
+            "question_id": "Passage_3",
+            "question_text": "Comprehension:\nCaselet 2: Lustre Beauty Line and Strategic Brand Communication\nGo through the caselet given below and answer the questions that follow:\nIt was in 2024 that Lustre Beauty Line, a mid-sized skincare, brand has entered a crowded market dominated by global giants and local herbal labels. To stand out, the company positioned itself as “science backed yet gentle emissary,” that thrive on combining clinical testing with natural ingredients. It’s marketing campaigned focused on social media influencers, short video tutorials, and customer testimonials rather than traditional advertising. The brand’s language was carefully chosen—simple, reassuring, and aspirational—to appeal to young, urban consumers who valued authenticity. Lustre Beauty Line avoided exaggerated claims, instead highlighting transparency in sourcing and visible results over time. However, critics argued that the campaign relied too heavily on buzzwords like clean, pure, and natural, which were vague and overused. Despite this, consistent messaging, parallel slogans, and visually appealing packaging helped Lustre Beauty Line building trust. Within no time, the brand achieved strong recall and loyalty, proving that thoughtful communication and precise language can shape perception as powerfully as the product itself.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 2
         },
         {
             "question_id": "582113267",
-            "question_text": "Comprehension:\nCaselet 2: Lustre Beauty Line and Strategic Brand Communication\nGo through the caselet given below and answer the questions that follow:\nIt was in 2024 that Lustre Beauty Line, a mid-sized skincare, brand has entered a crowded market dominated by global giants and local herbal labels. To stand out, the company positioned itself as “science backed yet gentle emissary,” that thrive on combining clinical testing with natural ingredients. It’s marketing campaigned focused on social media influencers, short video tutorials, and customer testimonials rather than traditional advertising. The brand’s language was carefully chosen—simple, reassuring, and aspirational—to appeal to young, urban consumers who valued authenticity. Lustre Beauty Line avoided exaggerated claims, instead highlighting transparency in sourcing and visible results over time. However, critics argued that the campaign relied too heavily on buzzwords like clean, pure, and natural, which were vague and overused. Despite this, consistent messaging, parallel slogans, and visually appealing packaging helped Lustre Beauty Line building trust. Within no time, the brand achieved strong recall and loyalty, proving that thoughtful communication and precise language can shape perception as powerfully as the product itself.\n\nSubQuestion No : 18\nThe opening line in the caselet – ‘’It was in 2024 that Lustre Beauty Line, a mid-sized skincare, brand has entered a crowded market…’’ is grammatically inconsistent. Which of the following statements would render it grammatically appropriate?",
+            "question_text": "SubQuestion No : 18\nThe opening line in the caselet – ‘’It was in 2024 that Lustre Beauty Line, a mid-sized skincare, brand has entered a crowded market…’’ is grammatically inconsistent. Which of the following statements would render it grammatically appropriate?",
             "question_type": "MCQ",
             "options": {
                 "A": "It was in 2024 that Lustre Beauty Line, a mid-sized skincare, brand had entered a crowded market",
@@ -275,11 +331,12 @@
             },
             "correct_option_label": "D",
             "explanation": "When referencing a specific past year (2024), the simple past tense ('entered') is required instead of the present perfect ('has entered').",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "582113268",
-            "question_text": "Refer to the caselet in Question ID 582113267.\n\nSubQuestion No : 19\nThe word “emissary” in the expression “science-backed yet gentle emissary” can be replaced with which of the following words?",
+            "question_text": "SubQuestion No : 19\nThe word “emissary” in the expression “science-backed yet gentle emissary” can be replaced with which of the following words?",
             "question_type": "MCQ",
             "options": {
                 "A": "Ombudsman",
@@ -289,11 +346,12 @@
             },
             "correct_option_label": "C",
             "explanation": "'Envoy' is a synonym for 'emissary', both referring to a representative or messenger sent on a mission.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "582113269",
-            "question_text": "Refer to the caselet in Question ID 582113267.\n\nSubQuestion No : 20\nThe expression - “that thrive on combining clinical testing with natural ingredients,” is grammatically inconsistent. Which of the following statements would make it grammatically appropriate?",
+            "question_text": "SubQuestion No : 20\nThe expression - “that thrive on combining clinical testing with natural ingredients,” is grammatically inconsistent. Which of the following statements would make it grammatically appropriate?",
             "question_type": "MCQ",
             "options": {
                 "A": "That throve on combined clinical testing and natural ingredients",
@@ -303,11 +361,12 @@
             },
             "correct_option_label": "C",
             "explanation": "The subject 'emissary' is singular, therefore the verb must also be singular ('thrives') to maintain subject-verb agreement.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "582113270",
-            "question_text": "Refer to the caselet in Question ID 582113267.\n\nSubQuestion No : 21\nWhat is the best way to rewrite the statement, “It’s marketing campaigned focussed on social media influencers, short video tutorials, and customer testimonials…”",
+            "question_text": "SubQuestion No : 21\nWhat is the best way to rewrite the statement, “It’s marketing campaigned focussed on social media influencers, short video tutorials, and customer testimonials…”",
             "question_type": "MCQ",
             "options": {
                 "A": "Its marketing campaigners focussed on social media influencers, short video tutorials and customer testimonials…",
@@ -317,11 +376,12 @@
             },
             "correct_option_label": "D",
             "explanation": "'Its' is the correct possessive pronoun. 'It's' is a contraction for 'it is'. Additionally, 'campaign' is the appropriate noun form for the marketing effort.",
-            "module": 4
+            "module": 4,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "582113271",
-            "question_text": "Refer to the caselet in Question ID 582113267.\n\nSubQuestion No : 22\nThe structure of the phrase – “the campaign relied too heavily on buzzwords…” is:",
+            "question_text": "SubQuestion No : 22\nThe structure of the phrase – “the campaign relied too heavily on buzzwords…” is:",
             "question_type": "MCQ",
             "options": {
                 "A": "the (article); campaign (noun); relied (verb); too (adverb); heavily (adverb); on (preposition); buzzwords (noun)",
@@ -331,11 +391,12 @@
             },
             "correct_option_label": "A",
             "explanation": "This breakdown correctly identifies the word classes: 'too' modifies the adverb 'heavily', thus both are adverbs.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "582113272",
-            "question_text": "Refer to the caselet in Question ID 582113267.\n\nSubQuestion No : 23\nThe expression, “…and visually appealing packaging helped Lustre Beauty Line building trust,” can be rendered grammatically appropriate by replacing it with:",
+            "question_text": "SubQuestion No : 23\nThe expression, “…and visually appealing packaging helped Lustre Beauty Line building trust,” can be rendered grammatically appropriate by replacing it with:",
             "question_type": "MCQ",
             "options": {
                 "A": "…and visually appealing packaging helped Lustre Beauty Line to build up trust",
@@ -345,11 +406,12 @@
             },
             "correct_option_label": "C",
             "explanation": "The verb 'help' can be followed by a bare infinitive ('build') or a 'to-infinitive', but not by a gerund ('building') in this context.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "582113273",
-            "question_text": "Refer to the caselet in Question ID 582113267.\n\nSubQuestion No : 24\nWhich modifier placement is most effective in a professional context?",
+            "question_text": "SubQuestion No : 24\nWhich modifier placement is most effective in a professional context?",
             "question_type": "MCQ",
             "options": {
                 "A": "The brand chose its carefully language.",
@@ -359,11 +421,12 @@
             },
             "correct_option_label": "C",
             "explanation": "Placing the adverb 'carefully' directly before the verb it modifies ('chose') provides the most clarity and formal flow in professional writing.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_3"
         },
         {
             "question_id": "582113274",
-            "question_text": "Refer to the caselet in Question ID 582113267.\n\nSubQuestion No : 25\nWhich of the following figures of speech would be an apt descriptor for the phrase, “global giants” in the caselet?",
+            "question_text": "SubQuestion No : 25\nWhich of the following figures of speech would be an apt descriptor for the phrase, “global giants” in the caselet?",
             "question_type": "MCQ",
             "options": {
                 "A": "Metaphor",
@@ -373,11 +436,27 @@
             },
             "correct_option_label": "A",
             "explanation": "“Global giants” is a metaphor because it compares large companies to giants to emphasize their scale and power without using 'like' or 'as'.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_3"
+        },
+        {
+            "question_id": "Passage_4",
+            "question_text": "Comprehension:\nThe passage given below talks about a professional challenge and how it was overcome. However, some of the important words have been omitted. Complete the passage by filling-in all the blanks choosing from the options provided for each blank:\n\nThe Passage\nMeridian Bank _____10.1________ itself on transparency and regulatory compliance. _____10.2_______ new digital lending regulations were introduced by the central bank, Meridian’s legal department drafted a _______10.3_________ circular explaining the revised procedures. Loan officers applied rules _______10.4______ customer approvals were delayed, and frustration mounted among both employees and clients. Eventually, Meridian issued a simplified operational handbook with flowcharts, FAQs, and examples tailored for branch-level _______10.5________.",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 1
         },
         {
             "question_id": "582113276",
-            "question_text": "Comprehension:\nThe passage given below talks about a professional challenge and how it was overcome. However, some of the important words have been omitted. Complete the passage by filling-in all the blanks choosing from the options provided for each blank:\n\nThe Passage\nMeridian Bank _____10.1________ itself on transparency and regulatory compliance. _____10.2_______ new digital lending regulations were introduced by the central bank, Meridian’s legal department drafted a _______10.3_________ circular explaining the revised procedures. Loan officers applied rules _______10.4______ customer approvals were delayed, and frustration mounted among both employees and clients. Eventually, Meridian issued a simplified operational handbook with flowcharts, FAQs, and examples tailored for branch-level _______10.5________.\n\nSubQuestion No : 26\nWith reference to the passage, select the word that you think best fits the blank 10.1",
+            "question_text": "SubQuestion No : 26\nWith reference to the passage, select the word that you think best fits the blank 10.1",
             "question_type": "MCQ",
             "options": {
                 "A": "prided",
@@ -387,11 +466,12 @@
             },
             "correct_option_label": "A",
             "explanation": "The verb 'prided' (past tense of pride) used reflexively ('prided itself on') describes a source of satisfaction or reputation.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_4"
         },
         {
             "question_id": "582113277",
-            "question_text": "Refer to the passage in Question ID 582113276.\n\nSubQuestion No : 27\nWith reference to the passage, select the word that you think best fits the blank 10.2",
+            "question_text": "SubQuestion No : 27\nWith reference to the passage, select the word that you think best fits the blank 10.2",
             "question_type": "MCQ",
             "options": {
                 "A": "Whereas",
@@ -401,11 +481,12 @@
             },
             "correct_option_label": "B",
             "explanation": "'When' is the appropriate temporal conjunction to introduce the specific instance or time the new regulations were introduced.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_4"
         },
         {
             "question_id": "582113278",
-            "question_text": "Refer to the passage in Question ID 582113276.\n\nSubQuestion No : 28\nWith reference to the passage, select the word that you think best fits the blank 10.3",
+            "question_text": "SubQuestion No : 28\nWith reference to the passage, select the word that you think best fits the blank 10.3",
             "question_type": "MCQ",
             "options": {
                 "A": "comprehending",
@@ -415,11 +496,12 @@
             },
             "correct_option_label": "B",
             "explanation": "'Comprehensive' is an adjective meaning 'including all or nearly all elements or aspects', fitting the description of a detailed circular.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_4"
         },
         {
             "question_id": "582113279",
-            "question_text": "Refer to the passage in Question ID 582113276.\n\nSubQuestion No : 29\nWith reference to the passage, select the word that you think best fits the blank 10.4",
+            "question_text": "SubQuestion No : 29\nWith reference to the passage, select the word that you think best fits the blank 10.4",
             "question_type": "MCQ",
             "options": {
                 "A": "inconsistently",
@@ -429,11 +511,12 @@
             },
             "correct_option_label": "A",
             "explanation": "'Inconsistently' refers to the lack of uniformity in application, which logically leads to delays and confusion as described in the passage.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_4"
         },
         {
             "question_id": "582113280",
-            "question_text": "Refer to the passage in Question ID 582113276.\n\nSubQuestion No : 30\nWith reference to the passage, select the word that you think best fits the blank 10.5",
+            "question_text": "SubQuestion No : 30\nWith reference to the passage, select the word that you think best fits the blank 10.5",
             "question_type": "MCQ",
             "options": {
                 "A": "execution",
@@ -443,7 +526,8 @@
             },
             "correct_option_label": "A",
             "explanation": "The noun 'execution' refers to the carrying out or putting into effect of a plan or order at the branch level.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_4"
         },
         {
             "question_id": "582113281",
@@ -460,8 +544,23 @@
             "module": 3
         },
         {
+            "question_id": "Passage_5",
+            "question_text": "Comprehension:\nRead the paragraph given below and answer the questions that follow:\n\nIt was such a beautiful feeling, so ennobling, so liberating! Something that I had cherished forever, dreamt forever, craved forever, was finally here. And it caused numbness in me, so I could not say anything even though I wanted to say a lot. Emotions floated to the brim inside me, but words required to convey them deserted me. Valiantly, I groped for the right words to express what I was going through, but it wasn’t possible. All of a sudden, speechlessness had descended on me as Rio stood in front of me on its four legs. Its two little eyes evoked compassion; its tail wagged perpetually announcing its love for all. Finally, when senses were revived in me, I hugged Daddy in unspeakable joy and gratitude. My best birthday gift ever had arrived and it had brought with it exquisite moment of love, happiness, and pride!",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 2
+        },
+        {
             "question_id": "582113283",
-            "question_text": "Comprehension:\nRead the paragraph given below and answer the questions that follow:\n\nIt was such a beautiful feeling, so ennobling, so liberating! Something that I had cherished forever, dreamt forever, craved forever, was finally here. And it caused numbness in me, so I could not say anything even though I wanted to say a lot. Emotions floated to the brim inside me, but words required to convey them deserted me. Valiantly, I groped for the right words to express what I was going through, but it wasn’t possible. All of a sudden, speechlessness had descended on me as Rio stood in front of me on its four legs. Its two little eyes evoked compassion; its tail wagged perpetually announcing its love for all. Finally, when senses were revived in me, I hugged Daddy in unspeakable joy and gratitude. My best birthday gift ever had arrived and it had brought with it exquisite moment of love, happiness, and pride!\n\nSubQuestion No : 32\nThe style of the paragraph appears to be:",
+            "question_text": "SubQuestion No : 32\nThe style of the paragraph appears to be:",
             "question_type": "MCQ",
             "options": {
                 "A": "Factual",
@@ -471,11 +570,12 @@
             },
             "correct_option_label": "D",
             "explanation": "The paragraph tells a personal story using 'I' and 'me' to recount an emotional sequence of events, which characterizes the narrative style.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_5"
         },
         {
             "question_id": "582113284",
-            "question_text": "Refer to the paragraph in Question ID 582113283.\n\nSubQuestion No : 33\nAs used in the passage, which of the following expressions will not be a synonym of the word perpetually?",
+            "question_text": "SubQuestion No : 33\nAs used in the passage, which of the following expressions will not be a synonym of the word perpetually?",
             "question_type": "MCQ",
             "options": {
                 "A": "Constantly",
@@ -485,7 +585,8 @@
             },
             "correct_option_label": "B",
             "explanation": "'Perpetually' means never-ending or constant. 'Occasionally' refers to something that happens only sometimes, making it an antonym, not a synonym.",
-            "module": 1
+            "module": 1,
+            "passage_id": "Passage_5"
         },
         {
             "question_id": "582113286",

@@ -5,8 +5,23 @@
   },
   "questions": [
     {
+      "question_id": "Passage_1",
+      "question_text": "Caselet -1: EcoNow\nThe Launch of the EcoNow Campaign\nAs part of their corporate social responsibility initiatives, GreenEarth Corp., a global leader in renewable energy, has decided to launch a campaign called ‘EcoNow’. It is an innovative and new initiative by GreenEarth Corp.\nThe ‘EcoNow’ campaign, which aims to raising awareness about reducing carbon footprints, will be launched next month. The campaign will be rolled out through various media channels, including television, social media and print advertisements.\nThe marketing team at GreenEarth is tasked with creating a compelling narrative that resonates with a diverse audience. They need to ensure that the campaign’s message is clear, engaging and free of any grammatical errors. The success of the campaign depends on its reach engagement and most importantly the clarity of its message. Additionally, the team must carefully select words and phrases that appeal to both environmentally conscious consumers and potential business partners. With a strict deadline approaching, the team is finalizing the content and preparing for the campaign launch.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 2
+    },
+    {
       "question_id": "2361441407",
-      "question_text": "Caselet -1: EcoNow\nThe Launch of the EcoNow Campaign\nAs part of their corporate social responsibility initiatives, GreenEarth Corp., a global leader in renewable energy, has decided to launch a campaign called \u2018EcoNow\u2019. It is an innovative and new initiative by GreenEarth Corp.\nThe \u2018EcoNow\u2019 campaign, which aims to raising awareness about reducing carbon footprints, will be launched next month. The campaign will be rolled out through various media channels, including television, social media and print advertisements.\nThe marketing team at GreenEarth is tasked with creating a compelling narrative that resonates with a diverse audience. They need to ensure that the campaign\u2019s message is clear, engaging and free of any grammatical errors. The success of the campaign depends on its reach engagement and most importantly the clarity of its message. Additionally, the team must carefully select words and phrases that appeal to both environmentally conscious consumers and potential business partners. With a strict deadline approaching, the team is finalizing the content and preparing for the campaign launch.\nIdentify the type of grammatical error in the following statement from the caselet:\n\nStatement: The \u2018EcoNow\u2019 campaign, which aims to raising awareness about reducing carbon footprints, will be launched next month.",
+      "question_text": "Identify the type of grammatical error in the following statement from the caselet:\n\nStatement: The ‘EcoNow’ campaign, which aims to raising awareness about reducing carbon footprints, will be launched next month.",
       "question_type": "MCQ",
       "options": {
         "A": "Error in capitalization of a noun.",
@@ -16,11 +31,12 @@
       },
       "correct_option_label": "B",
       "explanation": "The error is in sentence construction because 'aims to raising' uses an incorrect verb form; it should use the infinitive 'to raise'.",
-      "module": 2
+      "module": 2,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "2361441408",
-      "question_text": "Caselet -1: EcoNow (Refer to previous caselet description)\nThe team drafted the following statement for a social media post. What is grammatically wrong with this sentence? Choose your answer from the options given after the statement.\n\nStatement: By adopting sustainable practices, not only will you help the environment, but also reducing your energy costs.",
+      "question_text": "The team drafted the following statement for a social media post. What is grammatically wrong with this sentence? Choose your answer from the options given after the statement.\n\nStatement: By adopting sustainable practices, not only will you help the environment, but also reducing your energy costs.",
       "question_type": "MCQ",
       "options": {
         "A": "The statement needs to be corrected for the use of the conjunction.",
@@ -30,11 +46,12 @@
       },
       "correct_option_label": "D",
       "explanation": "The sentence fails the rule of parallelism because the phrases following 'not only' and 'but also' do not share the same grammatical structure.",
-      "module": 2
+      "module": 2,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "2361441409",
-      "question_text": "Caselet -1: EcoNow (Refer to previous caselet description)\nChoose a word to fill in the blank such that the meaning of the statement is closest to that expressed in the caselet.\n\nStatement: The campaign's message must ________ both consumers and business partners alike.",
+      "question_text": "Choose a word to fill in the blank such that the meaning of the statement is closest to that expressed in the caselet.\n\nStatement: The campaign's message must ________ both consumers and business partners alike.",
       "question_type": "MCQ",
       "options": {
         "A": "aspire",
@@ -44,11 +61,12 @@
       },
       "correct_option_label": "D",
       "explanation": "In marketing and campaign context, the goal is to 'attract' or draw interest from the target groups mentioned.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "2361441410",
-      "question_text": "Caselet -1: EcoNow (Refer to previous caselet description)\nIdentify the correct punctuation for the following statement from the caselet. Choose your answer from the options given after the statement.\n\nStatement: The success of the campaign depends on its reach engagement and most importantly the clarity of its message.",
+      "question_text": "Identify the correct punctuation for the following statement from the caselet. Choose your answer from the options given after the statement.\n\nStatement: The success of the campaign depends on its reach engagement and most importantly the clarity of its message.",
       "question_type": "MCQ",
       "options": {
         "A": "The success of the campaign depends on it's reach, engagement and most importantly, the clarity of it's message.",
@@ -58,11 +76,12 @@
       },
       "correct_option_label": "B",
       "explanation": "Option B correctly uses commas to separate items in a list and parenthetical expressions, while using the correct possessive form of 'its' (no apostrophe).",
-      "module": 4
+      "module": 4,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "2361441411",
-      "question_text": "Caselet -1: EcoNow (Refer to previous caselet description)\nFrom the statements that follow identify and choose one which would be most appropriate for inclusion in a formal media release announcing this campaign.",
+      "question_text": "From the statements that follow identify and choose one which would be most appropriate for inclusion in a formal media release announcing this campaign.",
       "question_type": "MCQ",
       "options": {
         "A": "EcoNow is gonna be a game-changer in the way people think about the environment!",
@@ -72,11 +91,12 @@
       },
       "correct_option_label": "C",
       "explanation": "Option C uses professional tone and vocabulary suitable for business documents and media releases, unlike the other options which use informal or overly emotive language.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "2361441412",
-      "question_text": "Caselet -1: EcoNow (Refer to previous caselet description)\nIdentify the correct subject-verb agreement in the following statement. Choose your answer from the options given after the statement.\n\nStatement: The marketing team, in conjunction with the project manager, ________ the content right now.",
+      "question_text": "Identify the correct subject-verb agreement in the following statement. Choose your answer from the options given after the statement.\n\nStatement: The marketing team, in conjunction with the project manager, ________ the content right now.",
       "question_type": "MCQ",
       "options": {
         "A": "have finalising",
@@ -86,11 +106,12 @@
       },
       "correct_option_label": "B",
       "explanation": "When a singular subject is followed by a phrase like 'in conjunction with', the verb remains singular ('is') to agree with the main subject 'team'.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "2361441413",
-      "question_text": "Caselet -1: EcoNow (Refer to previous caselet description)\nThe sentences given below are from or based on the caselet. Identify and select the sentence which contains a redundant word.",
+      "question_text": "The sentences given below are from or based on the caselet. Identify and select the sentence which contains a redundant word.",
       "question_type": "MCQ",
       "options": {
         "A": "The marketing team at GreenEarth is tasked with creating a compelling narrative that resonates with a diverse audience.",
@@ -100,11 +121,12 @@
       },
       "correct_option_label": "D",
       "explanation": "In option D, 'innovative' and 'new' are redundant as they both convey the idea of being original or recently introduced, making one of the words unnecessary.",
-      "module": 2
+      "module": 2,
+      "passage_id": "Passage_1"
     },
     {
       "question_id": "2361441414",
-      "question_text": "Caselet -1: EcoNow (Refer to previous caselet description)\nIdentify and choose the statement from those that follow, which conveys the main idea of the caselet in the most clear, concise and grammatically correct manner:",
+      "question_text": "Identify and choose the statement from those that follow, which conveys the main idea of the caselet in the most clear, concise and grammatically correct manner:",
       "question_type": "MCQ",
       "options": {
         "A": "The campaign aims to raise awareness about reducing carbon footprint, which is crucial for environmental protection.",
@@ -114,11 +136,27 @@
       },
       "correct_option_label": "A",
       "explanation": "Option A summarizes the campaign's objective most effectively by avoiding redundant phrasing and maintaining structural conciseness as required in business writing.",
-      "module": 3
+      "module": 3,
+      "passage_id": "Passage_1"
+    },
+    {
+      "question_id": "Passage_2",
+      "question_text": "Caselet -2: Accountancy\nPoetry in a Sea of Commerce\nThe financial market is a turbulent sea, with investors navigating its waves like seasoned sailors. Stock prices fluctuate unpredictably, leaving even the sharpest minds bewildered. Amidst this chaos, the rise and fall of fortunes is a dramatic dance—swift, graceful, yet often ruthless.\n\nAnwesha, a budding accountant with a razor-sharp focus, works under the tutelage of her high-profile mentor Dr Das. “Numbers, Anwesha are not just digits they are the very poetry of commerce,” says Dr Das, sharing his knowledge generously. However, Anwesha’s recent error, overlooking a crucial tax regulation, caused both of them much embarrassment.\n\nMeanwhile, her colleague, Priya works with the precision of an ancient weather vane in a storm. Her calculations are flawless and meticulous each and every time. Dr Das always cites her work as the benchmark for young interns in the firm. Priya admitted that the art of accountancy wasn't merely about numbers but about seeing the invisible patterns they wove.\n\nErrors aside, the world of finance remains a labyrinth, where only those with perseverance, foresight, and skill survive. It is a realm where concepts like trust and integrity shine brighter than gold.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 2
     },
     {
       "question_id": "2361441415",
-      "question_text": "Caselet -2: Accountancy\nPoetry in a Sea of Commerce\nThe financial market is a turbulent sea, with investors navigating its waves like seasoned sailors. Stock prices fluctuate unpredictably, leaving even the sharpest minds bewildered. Amidst this chaos, the rise and fall of fortunes is a dramatic dance\u2014swift, graceful, yet often ruthless.\n\nAnwesha, a budding accountant with a razor-sharp focus, works under the tutelage of her high-profile mentor Dr Das. \u201cNumbers, Anwesha are not just digits they are the very poetry of commerce,\u201d says Dr Das, sharing his knowledge generously. However, Anwesha\u2019s recent error, overlooking a crucial tax regulation, caused both of them much embarrassment.\n\nMeanwhile, her colleague, Priya works with the precision of an ancient weather vane in a storm. Her calculations are flawless and meticulous each and every time. Dr Das always cites her work as the benchmark for young interns in the firm. Priya admitted that the art of accountancy wasn't merely about numbers but about seeing the invisible patterns they wove.\n\nErrors aside, the world of finance remains a labyrinth, where only those with perseverance, foresight, and skill survive. It is a realm where concepts like trust and integrity shine brighter than gold.\nIdentify the simile used to describe investors in the caselet. Choose your answer from the options that follow.",
+      "question_text": "Identify the simile used to describe investors in the caselet. Choose your answer from the options that follow.",
       "question_type": "MCQ",
       "options": {
         "A": "They see the financial market as a turbulent sea.",
@@ -128,11 +166,12 @@
       },
       "correct_option_label": "C",
       "explanation": "A simile is a direct comparison using 'like' or 'as'. Here, 'like seasoned sailors' explicitly compares investors to sailors.",
-      "module": 2
+      "module": 2,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "2361441416",
-      "question_text": "Caselet -2: Accountancy (Refer to previous caselet description)\nIdentify and select the closest antonym of the word \u2018crucial\u2019.",
+      "question_text": "Identify and select the closest antonym of the word ‘crucial’.",
       "question_type": "MCQ",
       "options": {
         "A": "Trivial",
@@ -142,11 +181,12 @@
       },
       "correct_option_label": "A",
       "explanation": "In the context of vocabulary building, 'crucial' means extremely important or vital. Its closest antonym is 'trivial,' which refers to something of little value or importance.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "2361441417",
-      "question_text": "Caselet -2: Accountancy (Refer to previous caselet description)\nCorrect the punctuation of the statement that follows. Choose your answer from the options given below.\nStatement: He often reminds her, \u201cNumbers, Anwesha are not just digits they are the very poetry of commerce.\u201d",
+      "question_text": "Correct the punctuation of the statement that follows. Choose your answer from the options given below.\nStatement: He often reminds her, “Numbers, Anwesha are not just digits they are the very poetry of commerce.”",
       "question_type": "MCQ",
       "options": {
         "A": "He often reminds her, \"Numbers, Anwesha, are not just digits they are, the very poetry of commerce.\"",
@@ -156,11 +196,12 @@
       },
       "correct_option_label": "C",
       "explanation": "Correct punctuation requires commas to set off the direct address ('Anwesha') and a semicolon to join two related independent clauses within the quote.",
-      "module": 4
+      "module": 4,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "2361441418",
-      "question_text": "Caselet -2: Accountancy (Refer to previous caselet description)\nIdentify the abstract nouns from the given set of words. Base your answer on the usage of the words in the caselet. Choose your answers from the options that follow.\nWords: invisible, perseverance, seasoned, integrity, flawless, swift, trust",
+      "question_text": "Identify the abstract nouns from the given set of words. Base your answer on the usage of the words in the caselet. Choose your answers from the options that follow.\nWords: invisible, perseverance, seasoned, integrity, flawless, swift, trust",
       "question_type": "MCQ",
       "options": {
         "A": "perseverance, trust, integrity",
@@ -170,11 +211,12 @@
       },
       "correct_option_label": "A",
       "explanation": "Perseverance, trust, and integrity are abstract nouns as they represent intangible qualities or concepts that cannot be perceived by the five physical senses.",
-      "module": 1
+      "module": 1,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "2361441419",
-      "question_text": "Caselet -2: Accountancy (Refer to previous caselet description)\nWhich figure of speech does \u2018poetry of commerce\u2019 represent in the caselet? Choose your answers from the options that follow.",
+      "question_text": "Which figure of speech does ‘poetry of commerce’ represent in the caselet? Choose your answers from the options that follow.",
       "question_type": "MCQ",
       "options": {
         "A": "Simile",
@@ -184,11 +226,12 @@
       },
       "correct_option_label": "D",
       "explanation": "The phrase 'poetry of commerce' is a metaphor because it makes an implicit comparison between financial numbers and poetry without using words like 'as' or 'like'.",
-      "module": 2
+      "module": 2,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "2361441420",
-      "question_text": "Caselet -2: Accountancy (Refer to previous caselet description)\nIdentify and select the option which is true for the statement 'Meanwhile, her colleague, Priya works with the precision of an ancient weather vane in a storm.'",
+      "question_text": "Identify and select the option which is true for the statement 'Meanwhile, her colleague, Priya works with the precision of an ancient weather vane in a storm.'",
       "question_type": "MCQ",
       "options": {
         "A": "The simile used in the statement supports with the facts that follow in the next few sentences.",
@@ -198,7 +241,8 @@
       },
       "correct_option_label": "C",
       "explanation": "The metaphor 'precision of an ancient weather vane in a storm' implies erratic behavior, which contradicts the following sentences describing Priya's work as 'flawless and meticulous.'",
-      "module": 2
+      "module": 2,
+      "passage_id": "Passage_2"
     },
     {
       "question_id": "2361441421",
@@ -211,7 +255,7 @@
         "D": "Unity"
       },
       "correct_option_label": "D",
-      "explanation": "The concept defined\u2014where a paragraph focuses on a single central idea\u2014is known as paragraph unity.",
+      "explanation": "The concept defined—where a paragraph focuses on a single central idea—is known as paragraph unity.",
       "module": 3
     },
     {
@@ -351,7 +395,7 @@
         "D": "The discrepancy in the balance sheet was a glaring red flag."
       },
       "correct_option_label": "B",
-      "explanation": "The phrase 'brought the entire corporation to its knees' is hyperbole\u2014an intentional exaggeration used to emphasize the magnitude of the error's impact.",
+      "explanation": "The phrase 'brought the entire corporation to its knees' is hyperbole—an intentional exaggeration used to emphasize the magnitude of the error's impact.",
       "module": 2
     },
     {
@@ -370,7 +414,7 @@
     },
     {
       "question_id": "2361441433",
-      "question_text": "Identify and select the statement which does not apply to a \u2018three tier essay\u2019 from amongst those presented below.",
+      "question_text": "Identify and select the statement which does not apply to a ‘three tier essay’ from amongst those presented below.",
       "question_type": "MCQ",
       "options": {
         "A": "Another name for a 'three-tier essay' is a 'hamburger essay'.",
@@ -398,7 +442,7 @@
     },
     {
       "question_id": "2361441435",
-      "question_text": "Is the given statement true or false? Choose your answer from the given options.\n\nStatement: The sentence \u2018She has a deep understanding of finance, which is essential skill\u2019 is grammatically correct.",
+      "question_text": "Is the given statement true or false? Choose your answer from the given options.\n\nStatement: The sentence ‘She has a deep understanding of finance, which is essential skill’ is grammatically correct.",
       "question_type": "MCQ",
       "options": {
         "A": "FALSE",
@@ -410,7 +454,7 @@
     },
     {
       "question_id": "2361441436",
-      "question_text": "Read and analyse the passage that follows and choose the most appropriate topic sentence from amongst the options presented.\n\nMusic trends often reflect the evolving culture and values of society. Genres like hip-hop and pop often highlight issues such as social justice, mental health, or personal identity, resonating with listeners\u2019 lived experiences. The rise of independent artists and global collaborations mirrors the increasing accessibility and interconnectedness of the world. Meanwhile, streaming platforms like Spotify and YouTube are reshaping how music is discovered and consumed, prioritizing convenience and variety. Trends in music not only entertain but also provide insights into what matters most to people in a given era.",
+      "question_text": "Read and analyse the passage that follows and choose the most appropriate topic sentence from amongst the options presented.\n\nMusic trends often reflect the evolving culture and values of society. Genres like hip-hop and pop often highlight issues such as social justice, mental health, or personal identity, resonating with listeners’ lived experiences. The rise of independent artists and global collaborations mirrors the increasing accessibility and interconnectedness of the world. Meanwhile, streaming platforms like Spotify and YouTube are reshaping how music is discovered and consumed, prioritizing convenience and variety. Trends in music not only entertain but also provide insights into what matters most to people in a given era.",
       "question_type": "MCQ",
       "options": {
         "A": "Electronic Beats: Dominating Today's Charts",
@@ -427,7 +471,7 @@
       "question_text": "Read the following statement and then choose the option from those presented to correctly complete the sentence.\n\nStatement: We need ____ honesty to build strong relationships.",
       "question_type": "MCQ",
       "options": {
-        "A": "blank \u2013 no article is needed",
+        "A": "blank – no article is needed",
         "B": "a",
         "C": "an",
         "D": "the"
@@ -438,7 +482,7 @@
     },
     {
       "question_id": "2361441438",
-      "question_text": "In the sentence \u2018The financial report was surprisingly accurate\u2019, identify the correct adjective, the adverb, and the noun combination from the options given below.",
+      "question_text": "In the sentence ‘The financial report was surprisingly accurate’, identify the correct adjective, the adverb, and the noun combination from the options given below.",
       "question_type": "MCQ",
       "options": {
         "A": "Accurate (noun), Report (adjective), Surprisingly (verb)",
@@ -466,7 +510,7 @@
     },
     {
       "question_id": "2361441440",
-      "question_text": "In the sentence \u2018He is the CEO of the company\u2019. What part of speech is \u2018CEO\u2019? Choose your answer from the options given below.",
+      "question_text": "In the sentence ‘He is the CEO of the company’. What part of speech is ‘CEO’? Choose your answer from the options given below.",
       "question_type": "MCQ",
       "options": {
         "A": "Verb",

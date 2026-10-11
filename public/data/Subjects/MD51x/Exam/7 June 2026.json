@@ -119,8 +119,23 @@
             "module": 2
         },
         {
+            "question_id": "Passage_1",
+            "question_text": "Consider the following payoff structure (measured in years of jail, shown as negative numbers):\n\n$$\\begin{array}{lcc} & \\text{Prisoner 2: Not Confess} & \\text{Prisoner 2: Confess} \\\\ \\text{Prisoner 1: Not Confess} & (-1, -1) & (-10, 0) \\\\ \\text{Prisoner 1: Confess} & (0, -10) & (-5, -5) \\end{array}$$",
+            "question_type": "SUBJECTIVE",
+            "is_passage": true,
+            "options": {
+                "A": "",
+                "B": "",
+                "C": "",
+                "D": ""
+            },
+            "correct_option_label": "",
+            "explanation": "Shared passage for the questions that follow.",
+            "module": 2
+        },
+        {
             "question_id": "9",
-            "question_text": "Consider the following payoff structure (measured in years of jail, shown as negative numbers):\n\n$$\\begin{array}{lcc} & \\text{Prisoner 2: Not Confess} & \\text{Prisoner 2: Confess} \\\\ \\text{Prisoner 1: Not Confess} & (-1, -1) & (-10, 0) \\\\ \\text{Prisoner 1: Confess} & (0, -10) & (-5, -5) \\end{array}$$\n\nWhich of the following is the dominant strategy for Prisoner 1?",
+            "question_text": "Which of the following is the dominant strategy for Prisoner 1?",
             "question_type": "MCQ",
             "options": {
                 "A": "No dominant strategy exists",
@@ -130,11 +145,12 @@
             },
             "correct_option_label": "D",
             "explanation": "To find Prisoner 1's dominant strategy, compare their payoffs for each action of Prisoner 2:\n- If Prisoner 2 does Not Confess: Confessing gives $0$ (better than $-1$).\n- If Prisoner 2 Confesses: Confessing gives $-5$ (better than $-10$).\nSince Confessing yields a higher payoff in all scenarios, 'Confess' is the dominant strategy.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "10",
-            "question_text": "Consider the following payoff structure (measured in years of jail, shown as negative numbers):\n\n$$\\begin{array}{lcc} & \\text{Prisoner 2: Not Confess} & \\text{Prisoner 2: Confess} \\\\ \\text{Prisoner 1: Not Confess} & (-1, -1) & (-10, 0) \\\\ \\text{Prisoner 1: Confess} & (0, -10) & (-5, -5) \\end{array}$$\n\nUsing the same payoff matrix above, what is the Nash Equilibrium outcome?",
+            "question_text": "Using the same payoff matrix above, what is the Nash Equilibrium outcome?",
             "question_type": "MCQ",
             "options": {
                 "A": "(Confess, Not Confess)",
@@ -144,11 +160,12 @@
             },
             "correct_option_label": "C",
             "explanation": "In this standard Prisoner's Dilemma, both players have a dominant strategy to 'Confess'. Since neither player has an incentive to unilaterally deviate from playing 'Confess', the unique Nash Equilibrium is (Confess, Confess).",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "11",
-            "question_text": "Consider the following payoff structure (measured in years of jail, shown as negative numbers):\n\n$$\\begin{array}{lcc} & \\text{Prisoner 2: Not Confess} & \\text{Prisoner 2: Confess} \\\\ \\text{Prisoner 1: Not Confess} & (-1, -1) & (-10, 0) \\\\ \\text{Prisoner 1: Confess} & (0, -10) & (-5, -5) \\end{array}$$\n\nWhich of the following outcomes gives the minimum total jail time for both prisoners together?",
+            "question_text": "Which of the following outcomes gives the minimum total jail time for both prisoners together?",
             "question_type": "MCQ",
             "options": {
                 "A": "(Confess, Confess)",
@@ -158,7 +175,8 @@
             },
             "correct_option_label": "B",
             "explanation": "Summing the jail times for each outcome:\n- (Not Confess, Not Confess): $(-1) + (-1) = -2$ years\n- (Confess, Confess): $(-5) + (-5) = -10$ years\n- (Confess, Not Confess) or (Not Confess, Confess): $0 + (-10) = -10$ years\nThe outcome that minimizes total jail time (meaning closest to 0) is (Not Confess, Not Confess) with 2 total years of jail.",
-            "module": 2
+            "module": 2,
+            "passage_id": "Passage_1"
         },
         {
             "question_id": "12",
