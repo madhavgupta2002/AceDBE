@@ -1,7 +1,28 @@
 {
     "exam_metadata": {
         "subject_name": "Evolution of Business and Market",
-        "exam_date": "31 January 2026"
+        "exam_date": "31 January 2026",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 2 Term 1",
+          "duration_min": 60,
+          "total_marks": 100,
+          "negative_marking": false,
+          "calculator": "none",
+          "timing_mode": "global",
+          "reference_materials": [],
+          "instructions": [
+            "No negative marking. 100 total marks per paper."
+          ],
+          "sections": [
+            {
+              "name": "Section 1",
+              "question_type": "MCQ",
+              "num_questions": 35,
+              "question_ids": ["58211336", "58211337", "58211338", "58211339", "58211340", "58211341", "58211342", "58211343", "58211344", "58211345", "58211346", "58211347", "58211348", "58211349", "58211350", "58211351", "58211352", "58211353", "58211354", "58211355", "58211356", "58211357", "58211358", "58211359", "58211360", "58211361", "58211362", "58211363", "58211364", "58211365", "58211366", "58211367", "58211368", "58211369", "58211370"]
+            }
+          ],
+          "total_questions": 35
+        }
     },
     "questions": [
         {

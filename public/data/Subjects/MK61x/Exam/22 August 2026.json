@@ -3,7 +3,40 @@
         "subject_name": "Software Product Management for STARTUPS",
         "exam_date": "22 August 2026",
         "batch": "",
-        "attempt": ""
+        "attempt": "",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 1 Term 6",
+          "duration_min": 120,
+          "total_marks": 75,
+          "negative_marking": false,
+          "calculator": "none",
+          "timing_mode": "global",
+          "reference_materials": [],
+          "instructions": [
+            "Section B scoring: both correct = 2 marks; one correct and no wrong option = 1 mark; any wrong option = 0 marks. There is no negative marking.",
+            "To change a response, first untick a selected option (or use Clear Response); a third option cannot be ticked while two are selected."
+          ],
+          "sections": [
+            {
+              "name": "Section A",
+              "question_type": "MCQ",
+              "num_questions": 35,
+              "marks_per_question": 1,
+              "question_ids": ["451387435", "451387436", "451387437", "451387438", "451387439", "451387440", "451387441", "451387442", "451387443", "451387444", "451387445", "451387446", "451387447", "451387448", "451387449", "451387450", "451387451", "451387452", "451387453", "451387454", "451387455", "451387456", "451387457", "451387458", "451387459", "451387460", "451387461", "451387462", "451387463", "451387464", "451387465", "451387466", "451387467", "451387468", "451387469"]
+            },
+            {
+              "name": "Section B",
+              "question_type": "MSQ",
+              "num_questions": 20,
+              "marks_per_question": 2,
+              "msq_scoring": "partial",
+              "max_selections": 2,
+              "note": "Each question has exactly two correct options and at most two options can be selected.",
+              "question_ids": ["451387470", "451387471", "451387472", "451387473", "451387474", "451387475", "451387476", "451387477", "451387478", "451387479", "451387480", "451387481", "451387482", "451387483", "451387484", "451387485", "451387486", "451387487", "451387488", "451387489"]
+            }
+          ],
+          "total_questions": 55
+        }
     },
     "questions": [
         {

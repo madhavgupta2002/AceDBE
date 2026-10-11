@@ -3,7 +3,29 @@
     "subject_name": "Design Your Thinking",
     "exam_date": "05 September 2026",
     "batch": "",
-    "attempt": ""
+    "attempt": "",
+    "exam_pattern": {
+      "exam_name": "IIMB BBA DBE Batch 2 Term 3",
+      "duration_min": 60,
+      "total_marks": 100,
+      "negative_marking": false,
+      "calculator": "none",
+      "timing_mode": "global",
+      "reference_materials": [],
+      "instructions": [
+        "Digital answers, up to 200 words each (you may exceed the word count if necessary)."
+      ],
+      "sections": [
+        {
+          "name": "Section 1",
+          "question_type": "SUBJECTIVE",
+          "num_questions": 4,
+          "marks_per_question": 25,
+          "question_ids": ["451387490", "451387491", "451387492", "451387493"]
+        }
+      ],
+      "total_questions": 4
+    }
   },
   "questions": [
     {

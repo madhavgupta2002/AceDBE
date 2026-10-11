@@ -3,7 +3,29 @@
         "subject_name": "Business Statistics for Entrepreneurs II",
         "exam_date": "24 May 2026",
         "batch": "",
-        "attempt": ""
+        "attempt": "",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 2 Term 2",
+          "duration_min": 60,
+          "total_marks": 100,
+          "negative_marking": false,
+          "calculator": "scientific",
+          "timing_mode": "global",
+          "reference_materials": ["Formula sheet", "Probability tables"],
+          "instructions": [
+            "The formula sheet and probability tables are included with the question paper."
+          ],
+          "sections": [
+            {
+              "name": "Section 1",
+              "question_type": "MCQ",
+              "num_questions": 20,
+              "marks_per_question": 5,
+              "question_ids": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]
+            }
+          ],
+          "total_questions": 20
+        }
     },
     "questions": [
         {

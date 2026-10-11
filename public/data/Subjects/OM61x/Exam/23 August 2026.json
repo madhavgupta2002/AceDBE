@@ -3,7 +3,48 @@
         "subject_name": "Supply Chain And Logistics Management",
         "exam_date": "23 August 2026",
         "batch": "",
-        "attempt": ""
+        "attempt": "",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 1 Term 6",
+          "duration_min": 120,
+          "total_marks": 80,
+          "negative_marking": false,
+          "calculator": "scientific",
+          "timing_mode": "global",
+          "reference_materials": [
+            "Standardised formula sheet",
+            "Normal distribution tables"
+          ],
+          "instructions": [
+            "The formula sheet and normal distribution tables are shown on the exam system.",
+            "Rough sheets are provided at the centre and must be returned immediately after the exam."
+          ],
+          "sections": [
+            {
+              "name": "Section A",
+              "question_type": "MCQ",
+              "num_questions": 50,
+              "marks_per_question": 1,
+              "question_ids": ["451387242", "451387243", "451387244", "451387245", "451387246", "451387247", "451387248", "451387249", "451387250", "451387251", "451387252", "451387253", "451387254", "451387255", "451387256", "451387257", "451387258", "451387259", "451387260", "451387261", "451387262", "451387263", "451387264", "451387265", "451387266", "451387267", "451387268", "451387269", "451387270", "451387271", "451387272", "451387273", "451387274", "451387275", "451387276", "451387277", "451387278", "451387279", "451387280", "451387281", "451387282", "451387283", "451387284", "451387285", "451387286", "451387287", "451387288", "451387289", "451387290", "451387291"]
+            },
+            {
+              "name": "Section B",
+              "question_type": "NUMERICAL",
+              "num_questions": 6,
+              "marks_per_question": 4,
+              "note": "6 numericals (stored as 24 SUBJECTIVE entries in this bank). Marks go to the final answer within the stated tolerance.",
+              "question_ids": ["451387293", "451387294", "451387295", "451387296", "451387298", "451387299", "451387300", "451387301", "451387303", "451387304", "451387305", "451387306", "451387308", "451387309", "451387310", "451387311", "451387313", "451387314", "451387315", "451387316", "451387318", "451387319", "451387320", "451387321"]
+            },
+            {
+              "name": "Section C",
+              "question_type": "MATCH_THE_FOLLOWING",
+              "num_questions": 3,
+              "marks_per_question": 2,
+              "question_ids": ["451387322", "451387323", "451387324"]
+            }
+          ],
+          "total_questions": 59
+        }
     },
     "questions": [
         {

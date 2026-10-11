@@ -3,7 +3,30 @@
     "subject_name": "Business Statistics for Entrepreneurs 3",
     "exam_date": "05 September 2026",
     "batch": "",
-    "attempt": ""
+    "attempt": "",
+    "exam_pattern": {
+      "exam_name": "IIMB BBA DBE Batch 2 Term 3",
+      "duration_min": 60,
+      "total_marks": 100,
+      "negative_marking": false,
+      "calculator": "scientific",
+      "timing_mode": "global",
+      "reference_materials": ["Formula sheet", "Probability tables"],
+      "instructions": [
+        "Rough sheets are provided at the centre and must be returned immediately after the exam.",
+        "Soft copies of the formula sheet and probability table are available in the 'Formula Sheet' section beside the MCQ section."
+      ],
+      "sections": [
+        {
+          "name": "Section 1",
+          "question_type": "MCQ",
+          "num_questions": 20,
+          "marks_per_question": 5,
+          "question_ids": ["4513871053", "4513871054", "4513871055", "4513871056", "4513871057", "4513871058", "4513871059", "4513871060", "4513871061", "4513871062", "4513871063", "4513871064", "4513871065", "4513871066", "4513871067", "4513871068", "4513871069", "4513871070", "4513871071", "4513871072"]
+        }
+      ],
+      "total_questions": 20
+    }
   },
   "questions": [
     {

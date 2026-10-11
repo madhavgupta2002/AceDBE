@@ -3,7 +3,28 @@
         "subject_name": "Business Statistics for Entrepreneurs - 1",
         "exam_date": "1 February 2026",
         "batch": 2,
-        "attempt": "Main"
+        "attempt": "Main",
+        "exam_pattern": {
+          "exam_name": "IIMB BBA DBE Batch 2 Term 1",
+          "duration_min": 60,
+          "total_marks": 100,
+          "negative_marking": false,
+          "calculator": "none",
+          "timing_mode": "global",
+          "reference_materials": [],
+          "instructions": [
+            "No negative marking. 100 total marks per paper."
+          ],
+          "sections": [
+            {
+              "name": "Section 1",
+              "question_type": "MCQ",
+              "num_questions": 35,
+              "question_ids": ["582113212", "582113213", "582113214", "582113215", "582113216", "582113217", "582113218", "582113219", "582113220", "582113221", "582113222", "582113223", "582113224", "582113225", "582113226", "582113227", "582113228", "582113229", "582113230", "582113231", "582113232", "582113233", "582113234", "582113235", "582113236", "582113237", "582113238", "582113239", "582113240", "582113241", "582113242", "582113243", "582113244", "582113245", "582113246"]
+            }
+          ],
+          "total_questions": 35
+        }
     },
     "questions": [
         {
