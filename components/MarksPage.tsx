@@ -72,8 +72,10 @@ function formatDisplayMark(val: number | null | undefined): string {
     return String(rounded);
 }
 
-// Effective grade points for a subject: prefer derived grade if retake exists or initial was F with valid total
+// Effective grade points for a subject: a manually picked grade always wins; otherwise
+// prefer derived grade if retake exists or initial was F with valid total
 function pointsFor(s: ParsedSubject): number | null {
+    if (s.gradeLocked && gradePoints(s.grade) !== null) return gradePoints(s.grade);
     if (s.total !== null && (s.hasRetake || s.grade === 'F' || !s.grade)) {
         return gradeFromTotal(s.total).points;
     }
@@ -84,6 +86,7 @@ function pointsFor(s: ParsedSubject): number | null {
 }
 
 function effectiveGrade(s: ParsedSubject): string {
+    if (s.gradeLocked && s.grade && gradePoints(s.grade) !== null) return s.grade.trim().toUpperCase();
     if (s.total !== null && (s.hasRetake || s.grade === 'F' || !s.grade)) {
         return gradeFromTotal(s.total).letter;
     }
@@ -97,11 +100,13 @@ function gpaFor(subjects: ParsedSubject[]): {
     gpa: number | null;
     percentage: number | null;
     credits: number;
+    earnedCredits: number; // credits from passed (non-F) subjects only
     totalPoints: number;
     wamCredits: number;
 } {
     let weightedPoints = 0;
     let credits = 0;
+    let earnedCredits = 0;
     let weightedMarks = 0;
     let wamCredits = 0;
 
@@ -113,6 +118,7 @@ function gpaFor(subjects: ParsedSubject[]): {
         if (pts !== null) {
             weightedPoints += pts * cr;
             credits += cr;
+            if (pts > 0) earnedCredits += cr;
         }
 
         if (s.total !== null && !Number.isNaN(s.total)) {
@@ -125,6 +131,7 @@ function gpaFor(subjects: ParsedSubject[]): {
         gpa: credits > 0 ? weightedPoints / credits : null,
         percentage: wamCredits > 0 ? weightedMarks / wamCredits : null,
         credits: credits > 0 ? credits : wamCredits,
+        earnedCredits,
         totalPoints: weightedPoints,
         wamCredits,
     };
@@ -497,12 +504,18 @@ export default function MarksPage() {
         [rows, selectedBatch]
     );
 
-    // Show EVERY curriculum subject for each term; fill in marks from parsed and manual overrides
-    const termGroups = useMemo(() => {
+    // Imported marks keyed by curriculum subject id
+    const parsedById = useMemo(() => {
         const byId = new Map<string, ParsedSubject>();
         for (const s of parsed) {
             if (s.match) byId.set(s.match.id, s);
         }
+        return byId;
+    }, [parsed]);
+
+    // Show EVERY curriculum subject for each term; fill in marks from parsed and manual overrides
+    const termGroups = useMemo(() => {
+        const byId = parsedById;
 
         return CGPA_TERMS
             .map((term) => {
@@ -559,6 +572,7 @@ export default function MarksPage() {
                             total,
                             grade,
                             hasRetake,
+                            gradeLocked: !!manual?.manualGradeLock,
                             match: subject,
                             matchScore: 1,
                         }
@@ -576,7 +590,7 @@ export default function MarksPage() {
                 return { term, rows: rowsForTerm, ...gpaFor(filled) };
             })
             .filter((g) => g.rows.length > 0);
-    }, [parsed, manualMarks, selectedBatch]);
+    }, [parsedById, manualMarks, selectedBatch]);
 
     // Unmatched subjects (e.g. non-curriculum scraped rows)
     const unmatched = useMemo(() => parsed.filter((s) => !s.match), [parsed]);
@@ -652,11 +666,17 @@ export default function MarksPage() {
 
     // Update an individual subject mark manually
     const updateSubjectField = (
-        subjectId: string,
+        subject: CgpaSubject,
         field: 'cla' | 'project' | 'final' | 'total',
-        val: number | null,
+        rawVal: number | null,
         text?: string | null
     ) => {
+        const subjectId = subject.id;
+        const base = parsedById.get(subjectId) ?? null;
+        // Project-based subjects may carry a single mark out of 100 in the final column
+        const maxFor = { cla: 25, project: 25, final: /project based/i.test(subject.name) ? 100 : 75, total: 100 };
+        const val = rawVal === null ? null : Math.min(Math.max(rawVal, 0), maxFor[field]);
+
         setManualMarks((prev) => {
             const current = prev[subjectId] || {};
             const updated: ManualSubjectMark = { ...current };
@@ -668,11 +688,11 @@ export default function MarksPage() {
                 updated[field] = val;
             }
 
-            // If updating CLA, Project, or Final, and user hasn't explicitly locked total:
+            // If updating CLA, Project, or Final, recompute total from manual edits merged over imported marks
             if (field !== 'total') {
-                const cla = updated.cla !== undefined ? updated.cla : null;
-                const proj = updated.project !== undefined ? updated.project : null;
-                const fin = updated.final !== undefined ? updated.final : null;
+                const cla = updated.cla !== undefined ? updated.cla : (base?.cla ?? null);
+                const proj = updated.project !== undefined ? updated.project : (base?.project ?? null);
+                const fin = updated.final !== undefined ? updated.final : (base?.final ?? null);
 
                 if (cla !== null || proj !== null || fin !== null) {
                     const sum = (cla ?? 0) + (proj ?? 0) + (fin ?? 0);
@@ -680,9 +700,10 @@ export default function MarksPage() {
                     if (!updated.manualGradeLock) {
                         updated.grade = gradeFromTotal(updated.total).letter;
                     }
-                } else if (updated.total !== undefined && current.total === undefined) {
-                    updated.total = null;
-                    if (!updated.manualGradeLock) updated.grade = null;
+                } else {
+                    // No components left: drop the derived total/grade so imported values show through
+                    delete updated.total;
+                    if (!updated.manualGradeLock) delete updated.grade;
                 }
             } else if (field === 'total') {
                 if (val !== null) {
@@ -788,7 +809,7 @@ export default function MarksPage() {
             group.rows.some((r) => r.data?.project !== null && r.data?.project !== undefined);
 
         const termTotalCredits = group.rows.reduce((sum, r) => sum + (r.subject.credits || 0), 0);
-        const termEarnedCredits = group.credits;
+        const termEarnedCredits = group.earnedCredits;
         const scoredRows = group.rows.filter((r) => r.data?.total !== null && r.data?.total !== undefined);
         const termMarksScored = Math.round(scoredRows.reduce((sum, r) => sum + (r.data?.total ?? 0), 0) * 100) / 100;
         const termMarksMax = scoredRows.length * 100;
@@ -1113,7 +1134,7 @@ export default function MarksPage() {
                                 <div>
                                     <div className="text-[9px] font-semibold uppercase tracking-wider text-emerald-400/80">Credits Earned</div>
                                     <div className="text-base sm:text-lg font-bold tabular-nums font-mono text-emerald-300">
-                                        {overall.credits} <span className="text-xs text-emerald-400/70 font-normal">/ {totalCurriculumCredits}</span>
+                                        {overall.earnedCredits} <span className="text-xs text-emerald-400/70 font-normal">/ {totalCurriculumCredits}</span>
                                     </div>
                                 </div>
                                 <div className="h-7 w-px bg-emerald-500/30 hidden sm:block" />
@@ -1191,7 +1212,7 @@ export default function MarksPage() {
                                                     <div>
                                                         <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Total Credits</span>
                                                         <span className="text-sm sm:text-base font-extrabold font-mono text-black">
-                                                            {overall.credits} <span className="text-[10px] text-neutral-500 font-normal">/ {totalCurriculumCredits}</span>
+                                                            {overall.earnedCredits} <span className="text-[10px] text-neutral-500 font-normal">/ {totalCurriculumCredits}</span>
                                                         </span>
                                                     </div>
                                                     <div className="h-6 w-px bg-neutral-300" />
@@ -1258,7 +1279,7 @@ export default function MarksPage() {
                                                             </span>
                                                             <span className="text-slate-600"> · </span>
                                                             <span className="tabular-nums font-mono text-slate-300">
-                                                                Credits {group.credits} / {termTotalCredits}
+                                                                Credits {group.earnedCredits} / {termTotalCredits}
                                                             </span>
                                                             {scoredRows.length > 0 && (
                                                                 <>
@@ -1307,7 +1328,7 @@ export default function MarksPage() {
                                                                 data={r.data}
                                                                 hasManualOverride={r.hasManualOverride}
                                                                 hasProjectCol={hasProjectCol}
-                                                                onUpdateField={(field, val, text) => updateSubjectField(r.subject.id, field, val, text)}
+                                                                onUpdateField={(field, val, text) => updateSubjectField(r.subject, field, val, text)}
                                                                 onUpdateGrade={(grade) => updateSubjectGrade(r.subject.id, grade)}
                                                                 onToggleRetake={() => toggleSubjectRetake(r.subject.id)}
                                                                 onResetRow={() => resetSubjectRow(r.subject.id)}
@@ -1449,7 +1470,7 @@ export default function MarksPage() {
                                     <div>
                                         <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Total Credits</span>
                                         <span className="text-sm font-extrabold font-mono text-black">
-                                            {overall.credits} <span className="text-[10px] text-neutral-600 font-normal">/ {totalCurriculumCredits}</span>
+                                            {overall.earnedCredits} <span className="text-[10px] text-neutral-600 font-normal">/ {totalCurriculumCredits}</span>
                                         </span>
                                     </div>
                                     <div className="h-6 w-px bg-neutral-300" />
