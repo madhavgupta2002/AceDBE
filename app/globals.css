@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 241, 245, 249;
-  --background-start-rgb: 11, 17, 32;
-  --background-end-rgb: 17, 24, 39;
+  --background-start-rgb: 5, 8, 16;
+  --background-end-rgb: 9, 13, 24;
 }
 
 html,
@@ -16,7 +16,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(165deg, rgb(var(--background-start-rgb)) 0%, rgb(var(--background-end-rgb)) 50%, rgb(13, 19, 33) 100%);
+  background: linear-gradient(165deg, rgb(var(--background-start-rgb)) 0%, rgb(var(--background-end-rgb)) 50%, rgb(6, 10, 19) 100%);
   min-height: 100vh;
   position: relative;
 }
