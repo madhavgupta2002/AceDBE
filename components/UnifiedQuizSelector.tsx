@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { SetWithModules, getSetsWithModules } from '@/lib/questionLoader';
-import { Shuffle, Check, MonitorPlay } from 'lucide-react';
+import { Shuffle, Check, MonitorPlay, Play, BookOpenCheck } from 'lucide-react';
 
 interface UnifiedQuizSelectorProps {
   subjectCode: string;
@@ -384,7 +384,7 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
                     toggleModule(set.bankName, set.bankType, module);
                   }}
                   className={`px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm font-medium transition-all duration-200 border rounded-lg ${selected
-                    ? 'bg-emerald-600/80 text-white border-emerald-500/50'
+                    ? 'bg-emerald-500/15 text-emerald-200 border-emerald-500/40'
                     : 'bg-slate-700/60 text-slate-300 border-slate-600/40 hover:bg-slate-600 hover:border-emerald-500/40'
                     }`}
                 >
@@ -410,48 +410,56 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
 
   return (
     <div className="w-full">
-      {/* Top Controls */}
-      <div className="flex items-center justify-between gap-3 mb-5">
-        <p className="text-xs text-slate-500 hidden sm:block">
-          Click set name to select all questions
-        </p>
-        <div className="flex-1 sm:hidden"></div>
+      {/* Toolbar: module shortcuts on the left, whole-bank actions on the right */}
+      <div className="flex flex-wrap items-center justify-between gap-2">
+        {allModules.length > 0 && (
+          <div className="flex flex-wrap items-center gap-1.5">
+            <span className="text-xs text-slate-400 mr-1">Modules</span>
+            {allModules.map((module) => {
+              const isActive = isModuleSelectedInAllRelevantSets(module);
+              return (
+                <button
+                  key={`bulk-${module}`}
+                  onClick={() => toggleModuleAcrossAllSets(module)}
+                  title={`Select module ${module} in every CLA and exam set`}
+                  aria-pressed={isActive}
+                  className={`h-8 px-3 text-xs font-medium border rounded-lg transition-colors ${isActive ? 'bg-emerald-500/15 text-emerald-200 border-emerald-500/40' : 'bg-slate-800/60 text-slate-300 border-slate-700/50 hover:bg-slate-700/70 hover:text-white'}`}
+                >
+                  M{module}
+                </button>
+              );
+            })}
+          </div>
+        )}
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 ml-auto">
           <button
             onClick={allSelected ? deselectAll : selectAll}
-            className={`px-3 py-1.5 sm:px-4 sm:py-2 font-semibold transition-all duration-200 border text-xs sm:text-sm rounded-lg ${allSelected
-              ? 'bg-slate-700/60 text-white border-slate-600/40 hover:bg-slate-600'
-              : 'bg-purple-600/80 text-white border-purple-500/40 hover:bg-purple-500'
-              }`}
+            className={`h-8 px-3 text-xs font-medium border rounded-lg transition-colors ${allSelected ? 'bg-emerald-500/15 text-emerald-200 border-emerald-500/40' : 'bg-slate-800/60 text-slate-300 border-slate-700/50 hover:bg-slate-700/70 hover:text-white'}`}
           >
-            {allSelected ? 'Deselect All' : 'Select All'}
+            {allSelected ? 'Deselect all' : 'Select all'}
           </button>
-
           <button
             onClick={() => setRandomOrder(!randomOrder)}
-            className={`p-1.5 sm:p-2 transition-all duration-200 border rounded-lg ${randomOrder
-              ? 'bg-purple-600/80 text-white border-purple-500/40'
-              : 'bg-slate-800/60 text-slate-300 border-slate-700/40 hover:bg-slate-700'
-              }`}
-            title="Random Order"
+            className={`w-8 h-8 flex items-center justify-center border rounded-lg transition-colors ${randomOrder ? 'bg-emerald-500/15 text-emerald-200 border-emerald-500/40' : 'bg-slate-800/60 text-slate-300 border-slate-700/50 hover:bg-slate-700/70 hover:text-white'}`}
+            title={randomOrder ? 'Random order: on' : 'Random order: off'}
+            aria-pressed={randomOrder}
           >
-            <Shuffle className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+            <Shuffle className="w-3.5 h-3.5" />
           </button>
-
           {customSets.length > 0 && (
             <button
               onClick={() => setShowCustom(!showCustom)}
-              className={`px-3 py-1.5 sm:px-4 sm:py-2 font-semibold transition-all duration-200 border text-xs sm:text-sm rounded-lg ${showCustom
-                ? 'bg-purple-600/80 text-white border-purple-500/40 hover:bg-purple-500'
-                : 'bg-slate-800/60 text-slate-300 border-slate-700/40 hover:bg-slate-700'
-                }`}
+              className={`h-8 px-3 text-xs font-medium border rounded-lg transition-colors ${showCustom ? 'bg-emerald-500/15 text-emerald-200 border-emerald-500/40' : 'bg-slate-800/60 text-slate-300 border-slate-700/50 hover:bg-slate-700/70 hover:text-white'}`}
             >
-              {showCustom ? 'Hide Custom' : 'Show Custom Quizzes'}
+              {showCustom ? 'Hide custom' : 'Custom quizzes'}
             </button>
           )}
         </div>
       </div>
+      <p className="mt-2 mb-5 text-[11px] text-slate-500">
+        Pick a module to select it in every set, or click a set name to select that whole set.
+      </p>
 
       {/* Custom Quizzes Selection (MUTUALLY EXCLUSIVE) */}
       {showCustom && customSets.length > 0 && (
@@ -479,33 +487,6 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
                 <span className="truncate">{set.displayName}</span>
               </button>
             ))}
-          </div>
-        </div>
-      )}
-
-      {/* Select By Module - Bulk Selection */}
-      {allModules.length > 0 && (
-        <div className="mb-6 p-4 bg-surface border border-surface-border/60 rounded-xl">
-          <h2 className="text-lg font-bold text-white mb-3 flex items-center justify-between">
-            <span>Select By Module</span>
-            <span className="text-xs font-normal text-slate-500">Selects across all CLA & Exams</span>
-          </h2>
-          <div className="flex flex-wrap gap-1.5 sm:gap-2 justify-center">
-            {allModules.map((module) => {
-              const isActive = isModuleSelectedInAllRelevantSets(module);
-              return (
-                <button
-                  key={`bulk-${module}`}
-                  onClick={() => toggleModuleAcrossAllSets(module)}
-                  className={`px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-medium transition-all duration-200 border rounded-lg ${isActive
-                    ? 'bg-emerald-600/80 text-white border-emerald-500/50 shadow-glow-emerald'
-                    : 'bg-slate-700/60 text-slate-300 border-slate-600/40 hover:bg-slate-600 hover:border-emerald-500/40'
-                    }`}
-                >
-                  M{module}
-                </button>
-              );
-            })}
           </div>
         </div>
       )}
@@ -541,15 +522,17 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
       <div className="mt-6 sm:mt-8 grid grid-cols-2 gap-3">
         <button
           onClick={handleStartQuiz}
-          className="px-4 sm:px-6 py-3 sm:py-4 bg-gradient-to-r from-emerald-900 to-emerald-800 text-white border border-emerald-700/35 font-semibold text-base sm:text-lg hover:from-emerald-800 hover:to-emerald-700 transition-all duration-200 rounded-xl shadow-md flex items-center justify-center gap-2"
+          className="px-4 sm:px-6 py-3 bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-200 border border-emerald-500/40 hover:border-emerald-400/60 font-semibold text-sm sm:text-base transition-colors rounded-xl flex items-center justify-center gap-2"
         >
-          ▶ Start Quiz
+          <Play className="w-4 h-4" />
+          Start Quiz
         </button>
         <button
           onClick={handleStartRevise}
-          className="px-4 sm:px-6 py-3 sm:py-4 bg-gradient-to-r from-blue-900 to-blue-800 text-white border border-blue-700/35 font-semibold text-base sm:text-lg hover:from-blue-800 hover:to-blue-700 transition-all duration-200 rounded-xl shadow-md flex items-center justify-center gap-2"
+          className="px-4 sm:px-6 py-3 bg-surface-light hover:bg-slate-700/70 text-slate-100 border border-surface-border font-semibold text-sm sm:text-base transition-colors rounded-xl flex items-center justify-center gap-2"
         >
-          ✏️ Revise
+          <BookOpenCheck className="w-4 h-4" />
+          Revise
         </button>
       </div>
     </div>
