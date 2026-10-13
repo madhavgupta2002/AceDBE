@@ -23,7 +23,7 @@ import StopWatch from './StopWatch';
 import CbtExam from './CbtExam';
 import PassageCard from './PassageCard';
 import { CbtReviewData, takeCbtReview, toReviewData } from '@/lib/cbtReview';
-import { ArrowRight, ArrowLeft, RefreshCw, BookOpen, Youtube, Search, Check, Download, Printer, Eye, EyeOff, XCircle, List, RotateCcw } from 'lucide-react';
+import { ArrowRight, ArrowLeft, RefreshCw, BookOpen, Youtube, Play, Search, Check, Download, Printer, Eye, EyeOff, XCircle, List, RotateCcw } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
@@ -31,19 +31,14 @@ import rehypeKatex from 'rehype-katex';
 
 interface QuizAppProps {
   subjectCode: string;
-  customQuestions?: Question[];
-  customTitle?: string;
   autoExam?: string;
   autoType?: BankType;
   autoReview?: boolean; // open the review of a CBT exam that was just taken (hand-off from another page)
 }
 
-const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customTitle, autoExam, autoType, autoReview }) => {
+const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, autoReview }) => {
   const router = useRouter();
   const subject = getSubjectByCode(subjectCode);
-
-  // Check if this is a custom quiz mode
-  const isCustomMode = !!customQuestions && customQuestions.length > 0;
 
   const [quizState, setQuizState] = useState<QuizState>({
     practiceMode: 'bank',
@@ -84,19 +79,16 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
   const [isTimerActive, setIsTimerActive] = useState(false);
 
   // Helper function to create YouTube playlist URL from video links
+  const videoIdOf = (link: string): string | null => {
+    // Match different YouTube URL formats
+    const match = link.match(/(?:youtu\.be\/|youtube\.com\/watch\?v=|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/);
+    return match ? match[1] : null;
+  };
+
   const createPlaylistUrl = (videoLinks: string[]): string => {
-    // Extract video IDs from YouTube URLs
-    const videoIds = videoLinks
-      .map(link => {
-        // Match different YouTube URL formats
-        const match = link.match(/(?:youtu\.be\/|youtube\.com\/watch\?v=|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/);
-        return match ? match[1] : null;
-      })
-      .filter(Boolean);
-
+    const videoIds = videoLinks.map(videoIdOf).filter(Boolean);
     if (videoIds.length === 0) return '';
-
-    // Create playlist URL: first video as main, rest as playlist items
+    // Ad-hoc playlist: first video plays, the rest queue up
     return `http://www.youtube.com/watch_videos?video_ids=${videoIds.join(',')}`;
   };
 
@@ -194,40 +186,6 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
     return () => clearInterval(interval);
   }, [isTimerActive]);
-
-  // Auto-start quiz when custom questions are provided
-  useEffect(() => {
-    if (isCustomMode && customQuestions && quizState.questions.length === 0) {
-      const questions = customQuestions;
-      const uniqueModules = Array.from(new Set(questions.map(q => q.module).filter(Boolean))) as (string | number)[];
-      setAvailableModules(uniqueModules.sort(compareModules));
-      const uniqueSources = Array.from(new Set(questions.map(q => q.source).filter(Boolean))) as string[];
-      setAvailableSources(uniqueSources.sort());
-      setAllQuestions(questions);
-      setSelectedModule('all');
-      setSelectedSource('all');
-
-      // Initialize master answered questions array
-      const initialMasterAnswers = new Array(questions.length).fill(null);
-      setMasterAnsweredQuestions(initialMasterAnswers);
-
-      setQuizState((prev) => ({
-        ...prev,
-        currentQuestionIndex: 0,
-        score: 0,
-        totalQuestions: questions.length,
-        selectedAnswer: null,
-        showResult: false,
-        questions: questions,
-        incorrectAnswers: [],
-        answeredQuestions: new Array(questions.length).fill(null),
-      }));
-      setQuizCompleted(false);
-      setReviseMode(false);
-      setElapsedSeconds(0);
-      setIsTimerActive(true);
-    }
-  }, [isCustomMode, customQuestions, quizState.questions.length]);
 
   const shuffleArray = <T,>(array: T[]): T[] => {
     const shuffled = [...array];
@@ -375,7 +333,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
   // Auto-start exam if autoExam prop provided
   const hasAutoStarted = useRef(false);
   useEffect(() => {
-    if (autoExam && !hasAutoStarted.current && !isCustomMode && quizState.questions.length === 0) {
+    if (autoExam && !hasAutoStarted.current && quizState.questions.length === 0) {
       hasAutoStarted.current = true;
       const review = autoReview ? takeCbtReview(autoExam) : null;
       if (review) {
@@ -387,7 +345,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
         randomOrder: false,
       });
     }
-  }, [autoExam, autoType, autoReview, isCustomMode, quizState.questions.length]);
+  }, [autoExam, autoType, autoReview, quizState.questions.length]);
 
   const startRevise = async (selections: {
     sets: Array<{ bankName: string; bankType: 'CLA' | 'Exam' | 'Custom'; modules: (string | number)[] }>;
@@ -801,7 +759,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     // Convert internal Question format back to the predefined quiz format
     const exportData = {
       exam_metadata: {
-        subject_name: isCustomMode ? (customTitle || 'Custom AI Quiz') : (subject?.name || 'Quiz'),
+        subject_name: subject?.name || 'Quiz',
         exam_date: new Date().toISOString().slice(0, 10),
       },
       questions: quizState.questions.flatMap((q, index) => {
@@ -837,9 +795,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    const fileName = isCustomMode
-      ? `custom-quiz-${new Date().toISOString().slice(0, 10)}.json`
-      : `${subjectCode}-quiz-${new Date().toISOString().slice(0, 10)}.json`;
+    const fileName = `${subjectCode}-quiz-${new Date().toISOString().slice(0, 10)}.json`;
     link.download = fileName;
     document.body.appendChild(link);
     link.click();
@@ -851,7 +807,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
   const printQuiz = (withAnswers: boolean) => {
     if (quizState.questions.length === 0) return;
 
-    const title = isCustomMode ? (customTitle || 'Custom AI Quiz') : (subject?.name || 'Quiz');
+    const title = subject?.name || 'Quiz';
     const questions = quizState.questions;
     const uniqueSources = Array.from(new Set(questions.map(q => q.source).filter(Boolean))) as string[];
 
@@ -979,8 +935,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     }
   };
 
-  // Only show subject not found if NOT in custom mode
-  if (!subject && !isCustomMode) {
+  if (!subject) {
     return (
       <div className="text-center py-12">
         <p className="text-red-400">Subject not found</p>
@@ -991,24 +946,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
     );
   }
 
-  // Determine the title to display
-  const displayTitle = isCustomMode ? (customTitle || 'Custom AI Quiz') : subject?.name;
+  const displayTitle = subject?.name;
 
   return (
     <div className="min-h-screen relative z-[1]">
       <Header
         showBackButton
         onBack={() => {
-          if (isCustomMode) {
-            // In custom mode, back always goes home
-            if (quizState.questions.length > 0 && !quizCompleted) {
-              if (window.confirm("Quit quiz and return to home?")) {
-                router.push('/');
-              }
-            } else {
-              router.push('/');
-            }
-          } else if (quizState.questions.length > 0) {
+          if (quizState.questions.length > 0) {
             // If quiz is in progress or completed, back button resets to subject dashboard
             if (quizCompleted) {
               resetQuiz();
@@ -1026,13 +971,13 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
       />
       <div className="py-6 sm:py-10 px-3 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white mb-5 sm:mb-7 tracking-tight">
+          <h1 className="text-2xl sm:text-3xl font-bold text-white mb-5 sm:mb-6 tracking-tight">
             {displayTitle}
           </h1>
 
 
           {/* Compact Notes during quiz */}
-          {!isCustomMode && !loading && quizState.questions.length > 0 && !quizCompleted && (
+          {!loading && quizState.questions.length > 0 && !quizCompleted && (
             <div className="mb-4">
               <div className="bg-surface border border-surface-border/60 rounded-xl p-2.5">
                 {hasShortNotes ? (
@@ -1040,17 +985,17 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                     <Link
                       href={`/${subjectCode}/notes?view=short`}
                       target="_blank"
-                      className="flex-1 py-2.5 px-3 bg-amber-700 hover:bg-amber-600 text-white border border-amber-600/45 font-medium text-sm transition-all duration-200 flex items-center justify-center gap-2 rounded-lg"
+                      className="flex-1 py-2 px-3 bg-surface-light hover:bg-slate-700/70 text-slate-100 border border-surface-border font-medium text-sm transition-colors flex items-center justify-center gap-2 rounded-lg"
                     >
-                      <BookOpen className="w-4 h-4" />
+                      <BookOpen className="w-4 h-4 text-amber-400" />
                       Short Notes
                     </Link>
                     <Link
                       href={`/${subjectCode}/notes?view=detailed`}
                       target="_blank"
-                      className="flex-1 py-2.5 px-3 bg-emerald-800 hover:bg-emerald-700 text-white border border-emerald-700/45 font-medium text-sm transition-all duration-200 flex items-center justify-center gap-2 rounded-lg"
+                      className="flex-1 py-2 px-3 bg-surface-light hover:bg-slate-700/70 text-slate-100 border border-surface-border font-medium text-sm transition-colors flex items-center justify-center gap-2 rounded-lg"
                     >
-                      <BookOpen className="w-4 h-4" />
+                      <BookOpen className="w-4 h-4 text-emerald-400" />
                       Detailed Notes
                     </Link>
                   </div>
@@ -1058,9 +1003,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                   <Link
                     href={`/${subjectCode}/notes`}
                     target="_blank"
-                    className="w-full py-2.5 px-3 bg-emerald-800 hover:bg-emerald-700 text-white border border-emerald-700/45 font-medium text-sm transition-all duration-200 flex items-center justify-center gap-2 rounded-lg"
+                    className="w-full py-2 px-3 bg-surface-light hover:bg-slate-700/70 text-slate-100 border border-surface-border font-medium text-sm transition-colors flex items-center justify-center gap-2 rounded-lg"
                   >
-                    <BookOpen className="w-4 h-4" />
+                    <BookOpen className="w-4 h-4 text-emerald-400" />
                     View Notes
                   </Link>
                 )}
@@ -1069,7 +1014,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
           )}
 
           {/* Full View Notes Section - when quiz NOT active */}
-          {!isCustomMode && !loading && (quizState.questions.length === 0 || quizCompleted) && (
+          {!loading && (quizState.questions.length === 0 || quizCompleted) && (
             <div className="mb-6 bg-surface border border-surface-border/60 rounded-xl p-5">
               <h2 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
                 <BookOpen className="w-5 h-5 text-emerald-400" />
@@ -1079,66 +1024,101 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                 <div className="flex gap-3">
                   <Link
                     href={`/${subjectCode}/notes?view=short`}
-                    className="flex-1 py-3 bg-gradient-to-r from-amber-800 to-amber-700 hover:from-amber-700 hover:to-amber-600 text-white border border-amber-600/35 font-semibold transition-all duration-200 flex items-center justify-center gap-2 rounded-xl shadow-md"
+                    className="flex-1 py-2.5 bg-surface-light hover:bg-slate-700/70 text-slate-100 border border-surface-border font-medium transition-colors flex items-center justify-center gap-2 rounded-lg"
                   >
-                    <BookOpen className="w-5 h-5" />
+                    <BookOpen className="w-4 h-4 text-amber-400" />
                     Short Notes
-                    <ArrowRight className="w-4 h-4" />
                   </Link>
                   <Link
                     href={`/${subjectCode}/notes?view=detailed`}
-                    className="flex-1 py-3 bg-gradient-to-r from-emerald-900 to-emerald-800 hover:from-emerald-800 hover:to-emerald-700 text-white border border-emerald-700/35 font-semibold transition-all duration-200 flex items-center justify-center gap-2 rounded-xl shadow-md"
+                    className="flex-1 py-2.5 bg-surface-light hover:bg-slate-700/70 text-slate-100 border border-surface-border font-medium transition-colors flex items-center justify-center gap-2 rounded-lg"
                   >
-                    <BookOpen className="w-5 h-5" />
+                    <BookOpen className="w-4 h-4 text-emerald-400" />
                     Detailed Notes
-                    <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
               ) : (
                 <Link
                   href={`/${subjectCode}/notes`}
-                  className="w-full py-3 bg-gradient-to-r from-emerald-900 to-emerald-800 hover:from-emerald-800 hover:to-emerald-700 text-white border border-emerald-700/35 font-semibold transition-all duration-200 flex items-center justify-center gap-2 rounded-xl shadow-md"
+                  className="w-full py-2.5 bg-surface-light hover:bg-slate-700/70 text-slate-100 border border-surface-border font-medium transition-colors flex items-center justify-center gap-2 rounded-lg"
                 >
-                  <BookOpen className="w-5 h-5" />
+                  <BookOpen className="w-4 h-4 text-emerald-400" />
                   View Notes
-                  <ArrowRight className="w-4 h-4" />
                 </Link>
               )}
             </div>
           )}
 
 
-          {/* Full Video Playlists Section - when quiz NOT active */}
-          {!isCustomMode && !loading && moduleNumbers.length > 0 && (quizState.questions.length === 0 || quizCompleted) && (
-            <div className="mb-6 bg-surface border border-surface-border/60 rounded-xl p-5">
-              <h2 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
-                <Youtube className="w-5 h-5 text-red-400" />
-                Video Playlists
-              </h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-                {moduleNumbers.map((moduleNum) => {
-                  const videoLinks = subjectVideos[moduleNum] || [];
-                  const playlistUrl = createPlaylistUrl(videoLinks);
-
-                  return (
-                    <button
-                      key={moduleNum}
-                      onClick={() => window.open(playlistUrl, '_blank')}
-                      disabled={!playlistUrl}
-                      className={`py-2.5 px-4 font-semibold transition-all duration-200 flex items-center justify-center gap-2 rounded-lg ${playlistUrl
-                        ? 'bg-red-600/80 hover:bg-red-500 text-white border border-red-500/30'
-                        : 'bg-slate-800/50 text-slate-500 border border-slate-700/40 cursor-not-allowed'
-                        }`}
-                      title={playlistUrl ? `Open Module ${moduleNum} playlist (${videoLinks.length} videos)` : 'No videos available'}
+          {/* Video playlists — whole-course link in the header, one thumbnail card per module */}
+          {!loading && moduleNumbers.length > 0 && (quizState.questions.length === 0 || quizCompleted) && (() => {
+            const allVideos = moduleNumbers.flatMap((m) => subjectVideos[m] || []);
+            const allPlaylistUrl = moduleNumbers.length > 1 ? createPlaylistUrl(allVideos) : '';
+            const cards = moduleNumbers.map((m) => ({ key: m, label: `Module ${m}`, videos: subjectVideos[m] || [] }));
+            return (
+              <div className="mb-6 bg-surface border border-surface-border/60 rounded-xl p-5">
+                <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
+                  <h2 className="text-lg font-bold text-white flex items-center gap-2">
+                    <Youtube className="w-5 h-5 text-red-400" />
+                    Video Playlists
+                  </h2>
+                  {allPlaylistUrl && (
+                    <a
+                      href={allPlaylistUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title={`Play the full course (${allVideos.length} videos) on YouTube`}
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-medium bg-red-500/10 hover:bg-red-500/20 text-red-200 border border-red-500/40 hover:border-red-400/60 transition-colors"
                     >
-                      <Youtube className="w-4 h-4" />
-                      Module {moduleNum}
-                    </button>
-                  );
-                })}
+                      <Play className="w-3.5 h-3.5 fill-current" />
+                      Full course
+                      <span className="text-red-300/70 font-normal">{allVideos.length} videos</span>
+                    </a>
+                  )}
+                </div>
+                <div className="flex gap-3 overflow-x-auto snap-x pb-1 -mx-1 px-1 sm:grid sm:grid-cols-3 lg:grid-cols-4 sm:overflow-visible sm:pb-0 sm:mx-0 sm:px-0">
+                  {cards.map(({ key, label, videos }) => {
+                    const playlistUrl = createPlaylistUrl(videos);
+                    const thumbId = videos.map(videoIdOf).find(Boolean);
+                    return (
+                      <a
+                        key={key}
+                        href={playlistUrl || undefined}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-disabled={!playlistUrl}
+                        title={playlistUrl ? `Play ${label} (${videos.length} videos) on YouTube` : 'No videos available'}
+                        className={`group block w-[42%] shrink-0 snap-start sm:w-auto rounded-lg overflow-hidden border transition-colors ${
+                          playlistUrl ? 'border-surface-border hover:border-red-500/50' : 'border-surface-border/40 opacity-50 pointer-events-none'
+                        }`}
+                      >
+                        <div className="relative aspect-video bg-surface-dark">
+                          {thumbId && (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img
+                              src={`https://i.ytimg.com/vi/${thumbId}/mqdefault.jpg`}
+                              alt=""
+                              loading="lazy"
+                              className="absolute inset-0 w-full h-full object-cover opacity-70 group-hover:opacity-100 transition-opacity"
+                            />
+                          )}
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <span className="flex items-center justify-center w-9 h-9 rounded-full bg-black/60 group-hover:bg-red-600 transition-colors">
+                              <Play className="w-4 h-4 text-white fill-white ml-0.5" />
+                            </span>
+                          </div>
+                        </div>
+                        <div className="px-2.5 py-1.5 bg-surface-light">
+                          <div className="text-sm font-medium text-slate-100">{label}</div>
+                          <div className="text-[11px] text-slate-500">{videos.length} videos</div>
+                        </div>
+                      </a>
+                    );
+                  })}
+                </div>
               </div>
-            </div>
-          )}
+            );
+          })()}
 
           {loading && (
             <div className="text-center py-12">
@@ -1149,7 +1129,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
           )}
 
 
-          {!isCustomMode && !loading && quizState.questions.length === 0 && (
+          {!loading && quizState.questions.length === 0 && (
             <div className="mb-6 bg-surface border border-surface-border/60 rounded-xl p-5">
               <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
                 <svg className="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1172,11 +1152,11 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                 <>
                   <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
                     <h2 className="text-xl sm:text-2xl font-bold text-white">
-                      Quiz Completed!
+                      Quiz complete
                     </h2>
                     <button
                       onClick={restartSameQuiz}
-                      className="flex items-center gap-2 px-4 py-2 bg-emerald-800 text-white border border-emerald-700/45 font-semibold hover:bg-emerald-700 transition-all duration-200 rounded-lg shadow-md"
+                      className="flex items-center gap-2 px-4 py-2 bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-200 border border-emerald-500/40 hover:border-emerald-400/60 font-semibold transition-colors rounded-lg"
                       title="Restart the same question set with fresh answers"
                     >
                       <RotateCcw size={16} /> Practice Again
@@ -1244,7 +1224,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       <button
                         onClick={() => setShowAllQuestions(true)}
                         className={`flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm font-semibold transition-all duration-200 ${showAllQuestions
-                          ? 'bg-emerald-600 text-white shadow-sm'
+                          ? 'bg-emerald-500/15 text-emerald-200'
                           : 'text-slate-400 hover:text-slate-200 hover:bg-slate-700/50'
                           }`}
                       >
@@ -1303,7 +1283,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
                   <button
                     onClick={downloadCurrentQuiz}
-                    className="px-4 py-2 border font-semibold transition-all duration-200 rounded-lg bg-purple-600/80 text-white border-purple-500/40 hover:bg-purple-500 flex items-center gap-2"
+                    className="px-4 py-2 font-medium transition-colors rounded-lg bg-surface-light hover:bg-slate-700/70 text-slate-100 border border-surface-border flex items-center gap-2"
                     title="Export quiz as JSON file"
                   >
                     <Download size={16} /> Export
@@ -1311,7 +1291,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                   <div className="relative" ref={printMenuRef}>
                     <button
                       onClick={() => setShowPrintMenu(!showPrintMenu)}
-                      className="px-4 py-2 border font-semibold transition-all duration-200 rounded-lg bg-sky-600/80 text-white border-sky-500/40 hover:bg-sky-500 flex items-center gap-2"
+                      className="px-4 py-2 font-medium transition-colors rounded-lg bg-surface-light hover:bg-slate-700/70 text-slate-100 border border-surface-border flex items-center gap-2"
                       title="Print quiz as PDF"
                     >
                       <Printer size={16} /> Print
@@ -1397,12 +1377,12 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                                 </span>
                               )}
                               {q.module && (
-                                <span className="px-2 py-1 bg-emerald-900/30 border border-emerald-700/40 text-emerald-300 font-medium rounded-md">
+                                <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 font-medium rounded-md text-slate-300">
                                   Mod {q.module}
                                 </span>
                               )}
                               {q.source && (
-                                <span className="px-2 py-1 bg-purple-900/30 border border-purple-700/40 text-purple-300 font-medium rounded-md">
+                                <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 font-medium rounded-md text-slate-400">
                                   {q.source}
                                 </span>
                               )}
@@ -1519,12 +1499,12 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                             </span>
                             <div className="flex gap-2 text-xs">
                               {q.module && (
-                                <span className="px-2 py-1 bg-emerald-900/30 border border-emerald-700/40 text-emerald-300 font-medium rounded-md">
+                                <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 font-medium rounded-md text-slate-300">
                                   Mod {q.module}
                                 </span>
                               )}
                               {q.source && (
-                                <span className="px-2 py-1 bg-purple-900/30 border border-purple-700/40 text-purple-300 font-medium rounded-md">
+                                <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 font-medium rounded-md text-slate-400">
                                   {q.source}
                                 </span>
                               )}
@@ -1712,14 +1692,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                 />
                 <button
                   onClick={finishQuiz}
-                  className="w-full mt-4 px-4 sm:px-6 py-3 bg-emerald-800 text-white border border-emerald-700/45 font-semibold hover:bg-emerald-700 transition-all duration-200 flex items-center justify-center rounded-xl shadow-md"
+                  className="w-full mt-4 px-4 sm:px-6 py-2.5 bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-200 border border-emerald-500/40 hover:border-emerald-400/60 font-semibold transition-colors flex items-center justify-center rounded-xl"
                 >
-                  Finish Quiz <RefreshCw className="ml-2" size={20} />
+                  Finish Quiz <RefreshCw className="ml-2" size={16} />
                 </button>
 
                 <button
                   onClick={clearAllResponses}
-                  className="w-full mt-2 px-4 sm:px-6 py-2 bg-slate-700/60 text-slate-300 border border-slate-600/40 font-semibold hover:bg-slate-600 hover:text-white transition-all duration-200 flex items-center justify-center text-sm rounded-xl"
+                  className="w-full mt-2 px-4 sm:px-6 py-2 text-slate-400 hover:text-white hover:bg-slate-800/60 font-medium transition-colors flex items-center justify-center text-sm rounded-xl"
                 >
                   Clear All Responses
                 </button>
@@ -1727,7 +1707,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                 <div className="flex gap-2 mt-2">
                   <button
                     onClick={downloadCurrentQuiz}
-                    className="w-1/2 px-2 sm:px-3 py-2 bg-purple-600/80 text-white border border-purple-500/40 font-semibold hover:bg-purple-500 transition-all duration-200 flex items-center justify-center text-sm rounded-xl"
+                    className="w-1/2 px-2 sm:px-3 py-2 bg-surface-light hover:bg-slate-700/70 text-slate-100 border border-surface-border font-medium transition-colors flex items-center justify-center text-sm rounded-xl"
                     title="Export quiz as JSON file"
                   >
                     <Download className="mr-1" size={14} /> Export
@@ -1735,7 +1715,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                   <div className="relative w-1/2" ref={printMenuRef}>
                     <button
                       onClick={() => setShowPrintMenu(!showPrintMenu)}
-                      className="w-full px-2 sm:px-3 py-2 bg-sky-600/80 text-white border border-sky-500/40 font-semibold hover:bg-sky-500 transition-all duration-200 flex items-center justify-center text-sm rounded-xl"
+                      className="w-full px-2 sm:px-3 py-2 bg-surface-light hover:bg-slate-700/70 text-slate-100 border border-surface-border font-medium transition-colors flex items-center justify-center text-sm rounded-xl"
                       title="Print quiz as PDF"
                     >
                       <Printer className="mr-1" size={14} /> Print
@@ -1776,7 +1756,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
 
           {/* Fixed Navigation Buttons */}
           {!loading && !quizCompleted && quizState.questions.length > 0 && (
-            <div className="fixed bottom-0 left-0 right-0 bg-[#0b1120]/95 backdrop-blur-xl border-t border-slate-700/40 px-2 sm:px-6 lg:px-8 py-3 sm:py-4 z-40">
+            <div className="fixed bottom-0 left-0 right-0 bg-[#060a13]/95 backdrop-blur-xl border-t border-slate-700/40 px-2 sm:px-6 lg:px-8 py-3 sm:py-4 z-40">
               <div className="max-w-6xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
                   <div className="lg:col-span-9">
@@ -1784,7 +1764,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       {quizState.currentQuestionIndex > 0 ? (
                         <button
                           onClick={() => moveQuestion('prev')}
-                          className="px-3 sm:px-6 py-2 sm:py-3 transition-all duration-200 flex items-center font-semibold text-sm sm:text-base bg-slate-700/60 text-white border border-slate-600/40 hover:bg-slate-600 rounded-xl"
+                          className="px-3 sm:px-6 py-2 sm:py-3 transition-all duration-200 flex items-center font-semibold text-sm sm:text-base bg-surface-light hover:bg-slate-700/70 text-slate-100 border border-surface-border rounded-xl"
                         >
                           <ArrowLeft className="mr-1 sm:mr-2 h-4 w-4 sm:h-5 sm:w-5" /> Previous
                         </button>
@@ -1797,7 +1777,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, customQuestions, customT
                       {quizState.currentQuestionIndex < quizState.totalQuestions - 1 ? (
                         <button
                           onClick={() => moveQuestion('next')}
-                          className="px-3 sm:px-6 py-2 sm:py-3 transition-all duration-200 flex items-center font-semibold text-sm sm:text-base bg-emerald-800 text-white border border-emerald-700/45 hover:bg-emerald-700 rounded-xl shadow-md"
+                          className="px-3 sm:px-6 py-2 sm:py-3 transition-all duration-200 flex items-center font-semibold text-sm sm:text-base bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-200 border border-emerald-500/40 hover:border-emerald-400/60 rounded-xl"
                         >
                           Next <ArrowRight className="ml-1 sm:ml-2 h-4 w-4 sm:h-5 sm:w-5" />
                         </button>
