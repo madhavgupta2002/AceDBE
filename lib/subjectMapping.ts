@@ -384,15 +384,6 @@ export const SUBJECTS: Subject[] = [
     ],
   },
   {
-    name: 'Growth Hacking',
-    description: '',
-    icon: 'TrendingUp',
-    aliases: [
-      { batch: 1, code: '', term: 6 },
-      { batch: 2, code: '', term: 6 },
-    ],
-  },
-  {
     name: 'Software Product Management for Startups',
     description: '',
     icon: 'ClipboardList',
