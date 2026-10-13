@@ -955,7 +955,7 @@ export default function MarksPage() {
                                     <h2 className="text-sm font-bold text-slate-100 flex items-center gap-2">
                                         <span>Moodle Import</span>
                                         <span className="text-[10px] font-normal text-slate-400">
-                                            {rows ? `(${rows.length} rows loaded)` : '(optional bookmarklet / paste)'}
+                                            {rows ? `${rows.length} rows loaded` : ''}
                                         </span>
                                     </h2>
                                 </div>
@@ -969,59 +969,49 @@ export default function MarksPage() {
                         </div>
 
                         {showImporter && (
-                            <div className="mt-4 pt-4 border-t border-surface-border/50 space-y-4">
-                                <div>
-                                    <p className="text-xs text-slate-400 mb-2.5">
-                                        Drag the button below onto your browser bookmarks bar (or right-click → add to bookmarks):
-                                    </p>
-                                    <a
-                                        ref={bookmarkletRef}
-                                        onClick={(e) => e.preventDefault()}
-                                        className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-300 rounded-lg border border-emerald-500/30 text-xs sm:text-sm font-semibold cursor-grab active:cursor-grabbing select-none"
-                                    >
-                                        <Bookmark className="w-4 h-4" />
-                                        Import IIMB Marks
+                            <div className="mt-4 pt-4 border-t border-surface-border/50 space-y-3 text-xs text-slate-400">
+                                <p>
+                                    Open your{' '}
+                                    <a href={MOODLE_GRADE_URL} target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline">
+                                        Moodle grade report
                                     </a>
-
-                                    <ol className="mt-3 space-y-1 text-xs text-slate-400 list-decimal list-inside">
-                                        <li>
-                                            Open your Moodle grade report:{' '}
-                                            <a href={MOODLE_GRADE_URL} target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:underline break-all">
-                                                {MOODLE_GRADE_URL}
-                                            </a>
-                                        </li>
-                                        <li>Click the <span className="text-slate-200 font-medium">Import IIMB Marks</span> bookmarklet.</li>
-                                        <li>A new tab opens back here with your marks parsed into the curriculum table!</li>
-                                    </ol>
-                                </div>
-
-                                <div className="pt-3 border-t border-surface-border/40">
-                                    <h3 className="text-xs font-bold text-slate-100 mb-2 flex items-center gap-1.5">
-                                        <span>On mobile or prefer pasting?</span>
-                                    </h3>
-                                    <div className="flex flex-wrap items-center gap-2 mb-2">
-                                        <button
-                                            onClick={pasteFromClipboard}
-                                            type="button"
-                                            className="inline-flex items-center gap-2 px-3 py-1.5 bg-sky-500/15 hover:bg-sky-500/25 text-sky-300 rounded-lg border border-sky-500/30 text-xs font-semibold cursor-pointer"
+                                    , select all, copy, and paste it here.
+                                </p>
+                                <textarea
+                                    value={pasteText}
+                                    onChange={(e) => ingestPaste(e.target.value)}
+                                    placeholder="Paste grade report"
+                                    rows={3}
+                                    className="w-full rounded-lg bg-surface-dark/70 border border-surface-border/60 px-3 py-2 text-xs text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-sky-500/50 resize-y font-mono"
+                                />
+                                {pasteError && (
+                                    <p className="text-amber-400">
+                                        No grades found. Copy the whole page, or enter marks below.
+                                    </p>
+                                )}
+                                <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+                                    <button
+                                        onClick={pasteFromClipboard}
+                                        type="button"
+                                        className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-surface-light hover:bg-surface border border-surface-border/60 text-slate-200 rounded-md font-medium cursor-pointer"
+                                    >
+                                        <ClipboardPaste className="w-3.5 h-3.5" />
+                                        Paste from clipboard
+                                    </button>
+                                    <span className="hidden sm:inline text-slate-600">·</span>
+                                    <span className="hidden sm:inline-flex items-center gap-1.5">
+                                        Or drag
+                                        <a
+                                            ref={bookmarkletRef}
+                                            onClick={(e) => e.preventDefault()}
+                                            title="Drag to your bookmarks bar, then click it on the grade report"
+                                            className="inline-flex items-center gap-1 px-2 py-0.5 bg-emerald-500/15 text-emerald-300 rounded border border-emerald-500/30 font-medium cursor-grab active:cursor-grabbing select-none"
                                         >
-                                            <ClipboardPaste className="w-3.5 h-3.5" />
-                                            Paste from clipboard
-                                        </button>
-                                        <span className="text-[11px] text-slate-500">or copy from Moodle and paste into the box below:</span>
-                                    </div>
-                                    <textarea
-                                        value={pasteText}
-                                        onChange={(e) => ingestPaste(e.target.value)}
-                                        placeholder="Paste your copied Moodle grade page text here..."
-                                        rows={3}
-                                        className="w-full rounded-lg bg-surface-dark/70 border border-surface-border/60 px-3 py-2 text-xs text-slate-200 placeholder:text-slate-600 focus:outline-none focus:border-sky-500/50 resize-y font-mono"
-                                    />
-                                    {pasteError && (
-                                        <p className="mt-1.5 text-[11px] text-amber-400">
-                                            Couldn&apos;t detect valid grades in that text. Try copying the entire report or enter marks manually below.
-                                        </p>
-                                    )}
+                                            <Bookmark className="w-3 h-3" />
+                                            Import IIMB Marks
+                                        </a>
+                                        to your bookmarks bar and click it on the grade report.
+                                    </span>
                                 </div>
                             </div>
                         )}
