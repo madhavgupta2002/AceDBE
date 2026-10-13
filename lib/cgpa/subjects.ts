@@ -102,10 +102,9 @@ const RAW_SUBJECTS: RawSubject[] = [
 
   // ── Year 2 · Term 6 (15) — common ───────────────────────────
   { term: 6, code: 'OM61x', name: 'Supply Chain Management (SCM)', credits: 3, batches: [1, 2] },
-  { term: 6, code: 'MK61x', name: 'Growth Hacking', credits: 1.5, batches: [1, 2] },
   { term: 6, code: 'MK62x', name: 'Product Management', credits: 3, batches: [1, 2] },
   { term: 6, code: 'ST61x', name: 'Inclusive Business Models', credits: 3, batches: [1, 2] },
-  { term: 6, code: 'DS61x', name: 'Business Research Methods', credits: 1.5, batches: [1, 2] },
+  { term: 6, code: 'DS61x', name: 'Business Research Methods', credits: 3, batches: [1, 2] },
   { term: 6, code: 'PJ61x', name: 'Project / Do your Venture-1', credits: 3, batches: [1, 2] },
 
   // ── Year 3 · Term 7 (15) — common ───────────────────────────
