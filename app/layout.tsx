@@ -134,7 +134,7 @@ export default function RootLayout({
           })}
         </Script>
       </head>
-      <body className={`${inter.className} bg-gray-900 ${merriweather.variable} ${openSans.variable} ${lora.variable} ${roboto.variable}`}>
+      <body className={`${inter.className} bg-[#05080f] ${merriweather.variable} ${openSans.variable} ${lora.variable} ${roboto.variable}`}>
         <NavigationProgress />
         <DarkModeProvider>
           <BatchProvider>
