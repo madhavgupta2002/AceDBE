@@ -807,7 +807,7 @@ export default function MarksPage() {
                                 (d?.final !== null || d?.total !== null) &&
                                 /project based/i.test(r.subject.name);
 
-                            const subjectDisplayName = d?.hasRetake ? `*${r.subject.name}` : r.subject.name;
+                            const subjectDisplayName = d?.hasRetake ? `${r.subject.name}*` : r.subject.name;
 
                             return (
                                 <tr key={i} className="border-b border-black text-black">
