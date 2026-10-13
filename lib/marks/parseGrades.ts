@@ -15,6 +15,7 @@ export type ParsedSubject = {
     total: number | null; // out of 100
     grade: string | null; // letter grade from Moodle
     hasRetake: boolean;
+    gradeLocked?: boolean; // grade was picked manually; don't re-derive it from total
     match: CgpaSubject | null; // matched CGPA subject (if any)
     matchScore: number; // 0..1 confidence of the match
 };
@@ -213,6 +214,8 @@ function bestMatch(name: string, candidates: Candidate[]): { match: CgpaSubject 
 export function parseGrades(rows: RawRow[], batch?: number): ParsedSubject[] {
     const order: string[] = [];
     const map = new Map<string, ParsedSubject>();
+    // Subjects whose grade came from a retake row; original-attempt rows must not overwrite it.
+    const retakeGraded = new Set<string>();
 
     const candidates = buildCandidates(batch);
 
@@ -244,7 +247,10 @@ export function parseGrades(rows: RawRow[], batch?: number): ParsedSubject[] {
         if (component === 'grade') {
             const g = (row.g || '').trim().toUpperCase();
             if (g && g !== '-' && g !== '( EMPTY )') {
-                if (retake || !entry.grade || entry.grade === 'F') {
+                if (retake) {
+                    entry.grade = g;
+                    retakeGraded.add(mapKey);
+                } else if (!retakeGraded.has(mapKey) && (!entry.grade || entry.grade === 'F')) {
                     entry.grade = g;
                 }
             }
