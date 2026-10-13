@@ -46,6 +46,14 @@ body::after {
   z-index: 0;
 }
 
+/* Quiz question, option and passage text: left-aligned (justified text leaves
+   uneven word gaps on screen), roomier line height, balanced line breaks */
+.quiz-text {
+  text-align: left;
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
 /* KaTeX dark mode styling */
 .katex {
   color: #f1f5f9;

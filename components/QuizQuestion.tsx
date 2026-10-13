@@ -225,56 +225,53 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
         <div className="flex flex-wrap items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
         <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
           {questionNumber !== undefined && totalQuestions !== undefined && (
-            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-indigo-900/40 text-indigo-300 border border-indigo-700/40 text-xs font-semibold rounded-full tabular-nums">
+            <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-white tabular-nums">
               Q{questionNumber} / {totalQuestions}
             </span>
           )}
-          <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-yellow-900/30 text-yellow-300 border border-yellow-700/40 text-xs font-semibold rounded-full">
+          <span className="px-2 py-0.5 bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[11px] font-medium rounded-md">
             Subjective
           </span>
+          {onClearResponse && selectedAnswer && (
+              <button
+                onClick={onClearResponse}
+                className="flex items-center gap-1 px-2 py-0.5 text-[11px] font-medium text-slate-400 hover:text-white bg-slate-800/70 border border-slate-700/60 hover:border-slate-500 rounded-md transition-colors"
+                title="Clear response"
+              >
+                <RotateCcw size={11} />
+                Clear
+              </button>
+          )}
+          </div>
+
+          <div className="flex flex-wrap items-center justify-end gap-1.5 sm:gap-2 ml-auto">
             {question.module && (
-              <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-emerald-900/30 text-emerald-300 border border-emerald-700/40 text-xs font-semibold rounded-full">
+              <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-slate-300">
                 Mod {question.module}
               </span>
             )}
             {question.source && (
-              <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-900/30 text-purple-300 border border-purple-700/40 text-xs font-semibold rounded-full truncate max-w-[150px] sm:max-w-none">
+              <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-slate-400 truncate max-w-[150px] sm:max-w-none">
                 {question.source}
               </span>
             )}
             <button
               onClick={onToggleTimer}
-              className={`inline-flex items-center gap-1 px-1.5 py-1 rounded-full transition-all ${isTimerActive
-                ? 'bg-red-900/30 text-red-400 hover:bg-red-900/50'
-                : 'bg-emerald-900/30 text-emerald-400 hover:bg-emerald-900/50'
-                }`}
+              className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md border border-slate-700/60 bg-slate-800/70 text-slate-400 hover:text-white hover:border-slate-500 transition-colors"
               title={isTimerActive ? 'Pause timer' : 'Start timer'}
             >
               <StopWatch elapsedSeconds={elapsedSeconds} isActive={isTimerActive} />
               {isTimerActive ? <Pause size={12} /> : <Play size={12} />}
             </button>
           </div>
-
-          {onClearResponse && selectedAnswer && (
-            <button
-              onClick={onClearResponse}
-              className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-bold text-slate-400 hover:text-white bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/40 hover:border-slate-500 rounded-lg shadow-sm transition-all active:scale-95"
-              title="Clear response"
-            >
-              <RotateCcw size={12} className="text-slate-500" />
-              Clear
-            </button>
-          )}
         </div>
         {question.passage && <PassageCard question={question} className="mb-4" />}
-        <div className="text-base sm:text-lg mb-4 sm:mb-6 text-white prose prose-invert prose-indigo max-w-none text-justify">
+        <div className="text-base sm:text-lg mb-4 sm:mb-6 text-slate-50 prose prose-invert prose-indigo max-w-none quiz-text">
           {renderRich(question.text)}
         </div>
         <div className="bg-yellow-900/15 border border-yellow-700/40 rounded-xl p-4 sm:p-6">
           <p className="text-yellow-200/90 mb-3 sm:mb-4 text-sm sm:text-base">
-            📝 This is a subjective question that requires a written answer.
-            <br />
-            Please answer this question on your exam paper or separately.
+            Subjective question — write your answer on paper, then check the sample solution.
           </p>
           {!selectedAnswer && !showResult && (
             <button
@@ -310,51 +307,50 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
       <div className="flex flex-wrap items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
         <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
           {questionNumber !== undefined && totalQuestions !== undefined && (
-            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-indigo-900/40 text-indigo-300 border border-indigo-700/40 text-xs font-semibold rounded-full tabular-nums">
+            <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-white tabular-nums">
               Q{questionNumber} / {totalQuestions}
             </span>
           )}
           {isMultipleAnswer && (
-            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-amber-900/30 text-amber-300 border border-amber-700/40 text-xs font-semibold rounded-full">
+            <span className="px-2 py-0.5 bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[11px] font-medium rounded-md">
               Multiple Correct
             </span>
           )}
+          {onClearResponse && selectedAnswer && (
+            <button
+              onClick={onClearResponse}
+              className="flex items-center gap-1 px-2 py-0.5 text-[11px] font-medium text-slate-400 hover:text-white bg-slate-800/70 border border-slate-700/60 hover:border-slate-500 rounded-md transition-colors"
+              title="Clear response"
+            >
+              <RotateCcw size={11} />
+              Clear
+            </button>
+          )}
+        </div>
+
+        <div className="flex flex-wrap items-center justify-end gap-1.5 sm:gap-2 ml-auto">
           {question.module && (
-            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-emerald-900/30 text-emerald-300 border border-emerald-700/40 text-xs font-semibold rounded-full">
+            <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-slate-300">
               Mod {question.module}
             </span>
           )}
           {question.source && (
-            <span className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-900/30 text-purple-300 border border-purple-700/40 text-xs font-semibold rounded-full truncate max-w-[150px] sm:max-w-none">
+            <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-slate-400 truncate max-w-[150px] sm:max-w-none">
               {question.source}
             </span>
           )}
           <button
             onClick={onToggleTimer}
-            className={`inline-flex items-center gap-1 px-1.5 py-1 rounded-full transition-all ${isTimerActive
-              ? 'bg-red-900/30 text-red-400 hover:bg-red-900/50'
-              : 'bg-emerald-900/30 text-emerald-400 hover:bg-emerald-900/50'
-              }`}
+            className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md border border-slate-700/60 bg-slate-800/70 text-slate-400 hover:text-white hover:border-slate-500 transition-colors"
             title={isTimerActive ? 'Pause timer' : 'Start timer'}
           >
             <StopWatch elapsedSeconds={elapsedSeconds} isActive={isTimerActive} />
             {isTimerActive ? <Pause size={12} /> : <Play size={12} />}
           </button>
         </div>
-
-        {onClearResponse && selectedAnswer && (
-          <button
-            onClick={onClearResponse}
-            className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-bold text-slate-400 hover:text-white bg-slate-800/50 hover:bg-slate-700/50 border border-slate-700/40 hover:border-slate-500 rounded-lg shadow-sm transition-all active:scale-95"
-            title="Clear response"
-          >
-            <RotateCcw size={12} className="text-slate-500" />
-            Clear
-          </button>
-        )}
       </div>
       {question.passage && <PassageCard question={question} className="mb-4" />}
-      <div className="text-base sm:text-lg mb-4 sm:mb-6 text-white prose prose-invert prose-indigo max-w-none text-justify">
+      <div className="text-base sm:text-lg mb-4 sm:mb-6 text-slate-50 prose prose-invert prose-indigo max-w-none quiz-text">
         {renderRich(question.text)}
       </div>
       <div className="grid grid-cols-1 gap-2.5 sm:gap-3">
@@ -379,7 +375,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
                     key
                   )}
                 </span>
-                <span className="text-sm sm:text-[0.9rem] prose prose-invert prose-indigo max-w-none prose-p:inline flex-1">
+                <span className="text-sm sm:text-[15px] prose prose-invert prose-indigo max-w-none prose-p:inline flex-1 quiz-text">
                   {renderRich(value || '', mdComponents)}
                 </span>
               </span>
