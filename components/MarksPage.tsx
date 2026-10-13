@@ -154,6 +154,60 @@ const GRADE_COLOR_CLASSES: Record<string, string> = {
 };
 
 // ── Interactive Editable Subject Row Component ─────────────────────────────
+type MarkInputProps = {
+    value: number | null | undefined;
+    text?: string | null; // non-numeric display value, e.g. 'Absent'
+    label: string;
+    bold?: boolean;
+    allowAbsent?: boolean;
+    onCommit: (val: number | null, text?: string | null) => void;
+};
+
+// Numeric cell that keeps the raw typed text while focused and re-formats on blur.
+const MarkInput: React.FC<MarkInputProps> = ({ value, text, label, bold, allowAbsent, onCommit }) => {
+    const display = text || formatDisplayMark(value);
+    const [focused, setFocused] = useState(false);
+    const [draft, setDraft] = useState(display);
+
+    useEffect(() => {
+        if (!focused) setDraft(display);
+    }, [display, focused]);
+
+    return (
+        <input
+            type="text"
+            inputMode="decimal"
+            value={draft}
+            placeholder="—"
+            aria-label={label}
+            title={label}
+            onFocus={(e) => {
+                setFocused(true);
+                e.target.select();
+            }}
+            onBlur={() => {
+                setFocused(false);
+                setDraft(display);
+            }}
+            onChange={(e) => {
+                const val = e.target.value;
+                setDraft(val);
+                if (!val.trim()) {
+                    onCommit(null, null);
+                } else if (allowAbsent && val.trim().toLowerCase().startsWith('ab')) {
+                    onCommit(null, 'Absent');
+                } else {
+                    const num = parseFloat(val);
+                    if (Number.isFinite(num)) onCommit(num, null);
+                }
+            }}
+            className={`w-full px-1.5 py-1 text-right text-xs font-mono tabular-nums rounded-md bg-transparent border border-transparent hover:border-surface-border focus:border-sky-500/70 focus:bg-surface-dark placeholder:text-slate-700 focus:outline-none transition-colors ${
+                bold ? 'font-semibold text-slate-100' : 'text-slate-300'
+            }`}
+        />
+    );
+};
+
 type SubjectRowProps = {
     subject: CgpaSubject;
     data: ParsedSubject | null;
@@ -175,216 +229,99 @@ const SubjectRow: React.FC<SubjectRowProps> = ({
     onToggleRetake,
     onResetRow,
 }) => {
-    const [focusedField, setFocusedField] = useState<string | null>(null);
-    const [claText, setClaText] = useState<string>(formatDisplayMark(data?.cla));
-    const [projectText, setProjectText] = useState<string>(formatDisplayMark(data?.project));
-    const [finalText, setFinalText] = useState<string>(data?.finalText || formatDisplayMark(data?.final));
-    const [totalText, setTotalText] = useState<string>(formatDisplayMark(data?.total));
-
-    useEffect(() => {
-        if (focusedField !== 'cla') setClaText(formatDisplayMark(data?.cla));
-    }, [data?.cla, focusedField]);
-
-    useEffect(() => {
-        if (focusedField !== 'project') setProjectText(formatDisplayMark(data?.project));
-    }, [data?.project, focusedField]);
-
-    useEffect(() => {
-        if (focusedField !== 'final') setFinalText(data?.finalText || formatDisplayMark(data?.final));
-    }, [data?.final, data?.finalText, focusedField]);
-
-    useEffect(() => {
-        if (focusedField !== 'total') setTotalText(formatDisplayMark(data?.total));
-    }, [data?.total, focusedField]);
-
     const effGrade = data ? effectiveGrade(data) : '';
-    const gradeColor = GRADE_COLOR_CLASSES[effGrade] || 'text-slate-400';
+    const gradeColor = GRADE_COLOR_CLASSES[effGrade] || 'text-slate-500';
+    const locked = !!data?.gradeLocked;
 
     return (
-        <tr className={`border-t border-surface-border/30 transition-colors group hover:bg-surface-dark/30 ${hasManualOverride ? 'bg-sky-950/10' : ''}`}>
-            {/* Subject Name & Details */}
-            <td className="px-3 py-2 text-left">
-                <div className="flex flex-wrap items-center gap-1.5">
-                    {subject.code && (
-                        <span className="font-mono text-[10px] text-slate-400 bg-surface-dark/80 px-1.5 py-0.5 rounded border border-surface-border/50 select-none">
-                            {subject.code}
-                        </span>
-                    )}
-                    <span className={`font-medium ${data ? 'text-slate-200' : 'text-slate-400'}`}>
-                        {data?.hasRetake ? `*${subject.name}` : subject.name}
-                    </span>
-
-                    {/* Retake Badge / Button */}
+        <tr
+            className={`group border-t border-surface-border/40 transition-colors hover:bg-white/[0.02] ${
+                hasManualOverride ? 'shadow-[inset_2px_0_0_rgba(56,189,248,0.6)]' : ''
+            }`}
+        >
+            <td className="pl-3 pr-2 py-1.5">
+                <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
+                    <span className={data ? 'text-slate-200' : 'text-slate-400'}>{subject.name}</span>
                     {data?.hasRetake ? (
                         <button
                             type="button"
                             onClick={onToggleRetake}
-                            title="Click to remove retake status"
-                            className="inline-flex items-center gap-0.5 px-1.5 py-0.5 text-[9px] font-semibold rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 hover:bg-amber-500/30 transition-colors cursor-pointer"
+                            title="Retake — click to unmark"
+                            className="px-1.5 py-px text-[10px] font-medium rounded bg-amber-500/15 text-amber-300 hover:bg-amber-500/25 cursor-pointer"
                         >
-                            * Retake
+                            Retake
                         </button>
                     ) : (
                         <button
                             type="button"
                             onClick={onToggleRetake}
                             title="Mark as retake"
-                            className="opacity-0 group-hover:opacity-100 px-1 py-0.5 text-[9px] font-medium rounded text-slate-500 hover:text-amber-300 hover:bg-amber-500/10 transition-all cursor-pointer"
+                            className="px-1.5 py-px text-[10px] rounded border border-dashed border-slate-600 text-slate-500 hover:text-amber-300 hover:border-amber-500/50 cursor-pointer sm:opacity-0 sm:group-hover:opacity-100 focus-visible:opacity-100 transition-opacity"
                         >
-                            + Retake
+                            Retake
                         </button>
                     )}
-
-                    {/* Reset row button if manually modified */}
                     {hasManualOverride && (
                         <button
                             type="button"
                             onClick={onResetRow}
-                            title="Reset manual changes for this subject"
-                            className="inline-flex items-center gap-0.5 px-1 py-0.5 text-[9px] rounded text-slate-500 hover:text-red-400 hover:bg-red-500/10 transition-colors cursor-pointer"
+                            title="Undo your edits to this subject"
+                            aria-label="Undo edits"
+                            className="p-0.5 rounded text-sky-400/80 hover:text-sky-300 hover:bg-sky-500/10 cursor-pointer"
                         >
-                            <RotateCcw className="w-2.5 h-2.5" />
-                            <span className="text-[8px] uppercase tracking-wider">Reset</span>
+                            <RotateCcw className="w-3 h-3" />
                         </button>
                     )}
                 </div>
+                {subject.code && <div className="font-mono text-[10px] text-slate-600">{subject.code}</div>}
             </td>
 
-            {/* Credits */}
-            <td className="px-2 py-2 text-slate-400 text-right tabular-nums font-mono text-[11px] w-12">
-                {subject.credits}
-            </td>
+            <td className="px-2 py-1.5 text-right font-mono tabular-nums text-[11px] text-slate-500 w-10">{subject.credits}</td>
 
-            {/* CLA (/25) */}
-            <td className="px-1.5 py-1 text-right w-16">
-                <input
-                    type="text"
-                    inputMode="decimal"
-                    value={claText}
-                    placeholder="—"
-                    onFocus={() => setFocusedField('cla')}
-                    onBlur={() => {
-                        setFocusedField(null);
-                        setClaText(formatDisplayMark(data?.cla));
-                    }}
-                    onChange={(e) => {
-                        const val = e.target.value;
-                        setClaText(val);
-                        if (!val.trim()) {
-                            onUpdateField('cla', null);
-                        } else {
-                            const num = parseFloat(val);
-                            if (Number.isFinite(num)) onUpdateField('cla', num);
-                        }
-                    }}
-                    className="w-full px-1.5 py-1 text-right text-xs font-mono tabular-nums rounded bg-surface-dark/50 hover:bg-surface-dark/80 focus:bg-surface-dark border border-surface-border/40 focus:border-sky-500/80 text-slate-200 focus:text-white placeholder:text-slate-600 focus:outline-none transition-colors"
-                    title="Continuous Learning Assessment (out of 25)"
-                />
+            <td className="px-0.5 py-1 w-16">
+                <MarkInput value={data?.cla} label="CLA (out of 25)" onCommit={(v) => onUpdateField('cla', v)} />
             </td>
-
-            {/* Project (/25) - if applicable */}
             {hasProjectCol && (
-                <td className="px-1.5 py-1 text-right w-16">
-                    <input
-                        type="text"
-                        inputMode="decimal"
-                        value={projectText}
-                        placeholder="—"
-                        onFocus={() => setFocusedField('project')}
-                        onBlur={() => {
-                            setFocusedField(null);
-                            setProjectText(formatDisplayMark(data?.project));
-                        }}
-                        onChange={(e) => {
-                            const val = e.target.value;
-                            setProjectText(val);
-                            if (!val.trim()) {
-                                onUpdateField('project', null);
-                            } else {
-                                const num = parseFloat(val);
-                                if (Number.isFinite(num)) onUpdateField('project', num);
-                            }
-                        }}
-                        className="w-full px-1.5 py-1 text-right text-xs font-mono tabular-nums rounded bg-surface-dark/50 hover:bg-surface-dark/80 focus:bg-surface-dark border border-surface-border/40 focus:border-sky-500/80 text-slate-200 focus:text-white placeholder:text-slate-600 focus:outline-none transition-colors"
-                        title="Course Project (out of 25)"
-                    />
+                <td className="px-0.5 py-1 w-16">
+                    <MarkInput value={data?.project} label="Project (out of 25)" onCommit={(v) => onUpdateField('project', v)} />
                 </td>
             )}
-
-            {/* Final Exam (/75) */}
-            <td className="px-1.5 py-1 text-right w-16">
-                <input
-                    type="text"
-                    inputMode="decimal"
-                    value={finalText}
-                    placeholder="—"
-                    onFocus={() => setFocusedField('final')}
-                    onBlur={() => {
-                        setFocusedField(null);
-                        setFinalText(data?.finalText || formatDisplayMark(data?.final));
-                    }}
-                    onChange={(e) => {
-                        const val = e.target.value;
-                        setFinalText(val);
-                        if (!val.trim()) {
-                            onUpdateField('final', null, null);
-                        } else if (val.trim().toLowerCase().includes('absent')) {
-                            onUpdateField('final', null, 'Absent');
-                        } else {
-                            const num = parseFloat(val);
-                            if (Number.isFinite(num)) onUpdateField('final', num, null);
-                        }
-                    }}
-                    className="w-full px-1.5 py-1 text-right text-xs font-mono tabular-nums rounded bg-surface-dark/50 hover:bg-surface-dark/80 focus:bg-surface-dark border border-surface-border/40 focus:border-sky-500/80 text-slate-200 focus:text-white placeholder:text-slate-600 focus:outline-none transition-colors"
-                    title="Final Exam (out of 75)"
+            <td className="px-0.5 py-1 w-16">
+                <MarkInput
+                    value={data?.final}
+                    text={data?.finalText}
+                    allowAbsent
+                    label="Final exam (out of 75) — type 'ab' for Absent"
+                    onCommit={(v, t) => onUpdateField('final', v, t)}
+                />
+            </td>
+            <td className="px-0.5 py-1 w-16">
+                <MarkInput
+                    value={data?.total}
+                    bold
+                    label="Total (out of 100) — calculated from the components, or enter directly"
+                    onCommit={(v) => onUpdateField('total', v)}
                 />
             </td>
 
-            {/* Total (/100) */}
-            <td className="px-1.5 py-1 text-right w-18">
-                <input
-                    type="text"
-                    inputMode="decimal"
-                    value={totalText}
-                    placeholder="—"
-                    onFocus={() => setFocusedField('total')}
-                    onBlur={() => {
-                        setFocusedField(null);
-                        setTotalText(formatDisplayMark(data?.total));
-                    }}
-                    onChange={(e) => {
-                        const val = e.target.value;
-                        setTotalText(val);
-                        if (!val.trim()) {
-                            onUpdateField('total', null);
-                        } else {
-                            const num = parseFloat(val);
-                            if (Number.isFinite(num)) onUpdateField('total', num);
-                        }
-                    }}
-                    className="w-full px-1.5 py-1 text-right text-xs font-mono tabular-nums font-semibold rounded bg-surface-dark/50 hover:bg-surface-dark/80 focus:bg-surface-dark border border-surface-border/40 focus:border-sky-500/80 text-slate-100 focus:text-white placeholder:text-slate-600 focus:outline-none transition-colors"
-                    title="Total Marks (out of 100) — Auto-calculated from CLA + Final, or manually enterable"
-                />
-            </td>
-
-            {/* Grade */}
-            <td className="px-1.5 py-1 text-center w-14">
+            <td className="pl-1 pr-3 py-1 w-14">
                 <select
-                    value={data?.grade || ''}
+                    value={locked ? data?.grade || '' : ''}
                     onChange={(e) => onUpdateGrade(e.target.value || null)}
-                    className={`w-full px-1 py-1 text-center text-xs font-mono tabular-nums rounded bg-surface-dark/60 hover:bg-surface-dark/90 focus:bg-surface-dark border border-surface-border/40 focus:border-sky-500/80 focus:outline-none cursor-pointer transition-colors ${gradeColor}`}
-                    title="Letter Grade — Auto-mapped from Total or manually selectable"
+                    title={locked ? 'Grade set manually — choose Auto to calculate from total' : 'Calculated from total — pick a letter to override'}
+                    aria-label="Grade"
+                    className={`w-full appearance-none text-center text-xs font-mono font-bold rounded-md py-1 bg-transparent cursor-pointer focus:outline-none border ${
+                        locked ? 'border-sky-500/50' : 'border-transparent hover:border-surface-border'
+                    } ${gradeColor}`}
                 >
-                    <option value="" className="bg-slate-900 text-slate-400">
-                        {effGrade ? `${effGrade} (Auto)` : '—'}
+                    <option value="" className="bg-slate-900 text-slate-300">
+                        {effGrade || '—'}
                     </option>
-                    <option value="O" className="bg-slate-900 text-emerald-400 font-bold">O (10)</option>
-                    <option value="A" className="bg-slate-900 text-sky-400 font-bold">A (9)</option>
-                    <option value="B" className="bg-slate-900 text-indigo-300 font-bold">B (8)</option>
-                    <option value="C" className="bg-slate-900 text-amber-300 font-bold">C (7)</option>
-                    <option value="D" className="bg-slate-900 text-orange-400 font-bold">D (6)</option>
-                    <option value="E" className="bg-slate-900 text-rose-400 font-bold">E (5)</option>
-                    <option value="F" className="bg-slate-900 text-red-500 font-bold">F (0)</option>
+                    {(['O', 'A', 'B', 'C', 'D', 'E', 'F'] as const).map((g) => (
+                        <option key={g} value={g} className="bg-slate-900 text-slate-200">
+                            {g}
+                        </option>
+                    ))}
                 </select>
             </td>
         </tr>
@@ -403,6 +340,7 @@ export default function MarksPage() {
     const [pasteText, setPasteText] = useState('');
     const [pasteError, setPasteError] = useState(false);
     const [activeTab, setActiveTab] = useState<'dashboard' | 'printPreview'>('dashboard');
+    const [termOpen, setTermOpen] = useState<Record<number, boolean>>({});
     const bookmarkletRef = useRef<HTMLAnchorElement>(null);
 
     // Initial mount hydration: origin, hash import, and localStorage
@@ -1021,21 +959,17 @@ export default function MarksPage() {
                     <div className={cardCls}>
                         {/* Action Bar */}
                         <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
-                            <div className="flex flex-wrap items-center gap-2">
-                                <h2 className="text-sm font-bold text-slate-100 flex items-center gap-2">
-                                    <span>Your Marks</span>
-                                </h2>
-                            </div>
+                            <h2 className="text-sm font-bold text-slate-100">Your Marks</h2>
 
-                            {/* Batch Selector & Global Actions */}
                             <div className="flex flex-wrap items-center gap-2">
-                                <div className="inline-flex bg-surface-dark/70 border border-surface-border/60 p-0.5 gap-0.5 rounded-lg">
+                                <div className="inline-flex bg-surface-dark/70 border border-surface-border/60 p-0.5 rounded-lg" role="group" aria-label="Batch">
                                     {AVAILABLE_BATCHES.map((b) => (
                                         <button
                                             key={b}
                                             onClick={() => setSelectedBatch(b)}
+                                            aria-pressed={selectedBatch === b}
                                             className={`px-2.5 py-1 text-[11px] font-semibold rounded-md transition-colors cursor-pointer ${
-                                                selectedBatch === b ? 'bg-amber-600 text-white font-bold' : 'text-slate-400 hover:text-white'
+                                                selectedBatch === b ? 'bg-amber-600 text-white' : 'text-slate-400 hover:text-white'
                                             }`}
                                             type="button"
                                         >
@@ -1044,36 +978,35 @@ export default function MarksPage() {
                                     ))}
                                 </div>
 
-                                {/* Preview / Edit Toggle and Print Button */}
                                 {activeTab === 'dashboard' ? (
                                     <button
                                         onClick={() => setActiveTab('printPreview')}
-                                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold shadow-sm transition-colors cursor-pointer"
+                                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold transition-colors cursor-pointer"
                                         type="button"
-                                        title="Preview Marksheet for Printing"
+                                        title="Preview marksheet for printing"
                                     >
                                         <Printer className="w-3.5 h-3.5" />
-                                        <span>Print</span>
+                                        Print
                                     </button>
                                 ) : (
                                     <>
                                         <button
                                             onClick={() => setActiveTab('dashboard')}
-                                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface-light hover:bg-surface border border-surface-border/60 text-slate-200 hover:text-white rounded-lg text-xs font-semibold shadow-sm transition-colors cursor-pointer"
+                                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface-light hover:bg-surface border border-surface-border/60 text-slate-200 hover:text-white rounded-lg text-xs font-semibold transition-colors cursor-pointer"
                                             type="button"
-                                            title="Back to Edit Marks"
+                                            title="Back to editing"
                                         >
                                             <Pencil className="w-3.5 h-3.5" />
-                                            <span>Edit</span>
+                                            Edit
                                         </button>
                                         <button
                                             onClick={handlePrint}
-                                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold shadow-sm transition-colors cursor-pointer"
+                                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold transition-colors cursor-pointer"
                                             type="button"
-                                            title="Print Marksheet"
+                                            title="Print marksheet"
                                         >
                                             <Printer className="w-3.5 h-3.5" />
-                                            <span>Print</span>
+                                            Print
                                         </button>
                                     </>
                                 )}
@@ -1081,80 +1014,63 @@ export default function MarksPage() {
                                 {manualMarksCount > 0 && (
                                     <button
                                         onClick={resetAllManualMarks}
-                                        className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-surface-light hover:bg-surface border border-surface-border/60 text-slate-300 hover:text-amber-400 rounded-lg text-xs font-medium cursor-pointer transition-colors"
+                                        className="inline-flex items-center gap-1.5 px-2 py-1.5 text-slate-400 hover:text-sky-300 rounded-lg text-xs font-medium cursor-pointer transition-colors"
                                         type="button"
-                                        title="Reset manual overrides only"
+                                        title="Undo all manual edits, keep imported marks"
                                     >
                                         <RotateCcw className="w-3 h-3" />
-                                        <span>Reset Edits ({manualMarksCount})</span>
+                                        Undo edits ({manualMarksCount})
                                     </button>
                                 )}
 
                                 {(rows || manualMarksCount > 0) && (
                                     <button
-                                        onClick={clearData}
-                                        className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-surface-light hover:bg-surface border border-surface-border/60 text-slate-400 hover:text-red-400 rounded-lg text-xs font-medium cursor-pointer transition-colors"
+                                        onClick={() => {
+                                            if (window.confirm('Clear all imported marks and edits?')) clearData();
+                                        }}
+                                        className="inline-flex items-center gap-1.5 px-2 py-1.5 text-slate-400 hover:text-red-400 rounded-lg text-xs font-medium cursor-pointer transition-colors"
                                         type="button"
-                                        title="Clear all marks and reset to skeleton"
+                                        title="Clear all marks"
                                     >
                                         <Trash2 className="w-3.5 h-3.5" />
-                                        <span>Clear All</span>
+                                        Clear
                                     </button>
                                 )}
                             </div>
                         </div>
 
-                        {/* Top Summary Banner */}
-                        <div className="flex flex-wrap items-center justify-between gap-3 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 mb-3">
-                            <div className="flex flex-wrap items-center gap-4 sm:gap-6">
-                                <div>
-                                    <div className="text-[9px] font-semibold uppercase tracking-wider text-emerald-400/80">Overall CGPA</div>
-                                    <div className="text-base sm:text-lg font-bold tabular-nums font-mono text-emerald-300">
-                                        {overall.gpa === null ? '—' : overall.gpa.toFixed(2)}
+                        {/* Summary */}
+                        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                            {[
+                                { label: 'CGPA', value: overall.gpa === null ? '—' : overall.gpa.toFixed(2), accent: true },
+                                { label: 'Percentage', value: overall.percentage === null ? '—' : `${overall.percentage.toFixed(2)}%` },
+                                { label: 'Credits earned', value: String(overall.earnedCredits), of: totalCurriculumCredits },
+                                { label: 'Total marks', value: overallMarksStats.max > 0 ? String(overallMarksStats.earned) : '—', of: overallMarksStats.max || undefined },
+                            ].map((t) => (
+                                <div
+                                    key={t.label}
+                                    className={`rounded-lg border px-3 py-2.5 ${t.accent ? 'border-emerald-500/30 bg-emerald-500/10' : 'border-surface-border/60 bg-surface-dark/40'}`}
+                                >
+                                    <div className={`text-[11px] ${t.accent ? 'text-emerald-400/90' : 'text-slate-400'}`}>{t.label}</div>
+                                    <div className={`mt-0.5 text-lg sm:text-xl font-bold font-mono tabular-nums ${t.accent ? 'text-emerald-300' : 'text-slate-100'}`}>
+                                        {t.value}
+                                        {t.of !== undefined && <span className="ml-1 text-xs font-normal text-slate-500">/ {t.of}</span>}
                                     </div>
                                 </div>
-                                <div className="h-7 w-px bg-emerald-500/30 hidden sm:block" />
-                                <div>
-                                    <div className="text-[9px] font-semibold uppercase tracking-wider text-emerald-400/80">Percentage (WAM)</div>
-                                    <div className="text-base sm:text-lg font-bold tabular-nums font-mono text-emerald-300">
-                                        {overall.percentage === null ? '—' : `${overall.percentage.toFixed(2)}%`}
-                                    </div>
-                                </div>
-                                <div className="h-7 w-px bg-emerald-500/30 hidden sm:block" />
-                                <div>
-                                    <div className="text-[9px] font-semibold uppercase tracking-wider text-emerald-400/80">Credits Earned</div>
-                                    <div className="text-base sm:text-lg font-bold tabular-nums font-mono text-emerald-300">
-                                        {overall.earnedCredits} <span className="text-xs text-emerald-400/70 font-normal">/ {totalCurriculumCredits}</span>
-                                    </div>
-                                </div>
-                                <div className="h-7 w-px bg-emerald-500/30 hidden sm:block" />
-                                <div>
-                                    <div className="text-[9px] font-semibold uppercase tracking-wider text-emerald-400/80">Total Marks</div>
-                                    <div className="text-base sm:text-lg font-bold tabular-nums font-mono text-emerald-300">
-                                        {overallMarksStats.max > 0 ? (
-                                            <span>
-                                                {overallMarksStats.earned}{' '}
-                                                <span className="text-xs text-emerald-400/70 font-normal">/ {overallMarksStats.max}</span>
-                                            </span>
-                                        ) : (
-                                            '—'
-                                        )}
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="text-right text-[10px] text-slate-400 space-y-0.5">
-                                <div className="font-medium text-slate-300">
-                                    {allFilledSubjects.length} of {totalCurriculumSubjects} subjects graded
-                                </div>
-
-                                {unmatched.length > 0 && (
-                                    <div className="text-amber-400 text-[9px]">{unmatched.length} unmatched (excluded from GPA)</div>
-                                )}
-                            </div>
+                            ))}
                         </div>
-
-
+                        <div className="mt-2 mb-4 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] text-slate-500">
+                            <div className="h-1 w-24 rounded-full bg-surface-dark overflow-hidden">
+                                <div
+                                    className="h-full bg-emerald-500/70"
+                                    style={{ width: `${totalCurriculumSubjects ? (allFilledSubjects.length / totalCurriculumSubjects) * 100 : 0}%` }}
+                                />
+                            </div>
+                            <span>
+                                {allFilledSubjects.length} of {totalCurriculumSubjects} subjects graded
+                            </span>
+                            {unmatched.length > 0 && <span className="text-amber-400">· {unmatched.length} unmatched, excluded from CGPA</span>}
+                        </div>
 
                         {activeTab === 'printPreview' ? (
                             /* ── 3-Page Marksheet Preview (Live Statement of Marks) ── */
@@ -1234,99 +1150,94 @@ export default function MarksPage() {
                             </div>
                         ) : (
                             /* ── Interactive Dashboard View (Terms 1 to 9 with Inline Inputs) ── */
-                            <div className="space-y-4">
+                            <div className="space-y-2">
                                 {termGroups.map((group) => {
                                     const hasProjectCol =
                                         group.term === 5 ||
                                         group.rows.some((r) => r.data?.project !== null && r.data?.project !== undefined);
+                                    const gradedCount = group.rows.filter((r) => r.data !== null).length;
+                                    const termTotalCredits = group.rows.reduce((sum, r) => sum + (r.subject.credits || 0), 0);
+                                    const scoredRows = group.rows.filter((r) => r.data?.total !== null && r.data?.total !== undefined);
+                                    const termMarksScored = Math.round(scoredRows.reduce((sum, r) => sum + (r.data?.total ?? 0), 0) * 100) / 100;
+                                    // Terms with marks start open; if nothing is graded yet, show every term for manual entry
+                                    const isOpen = termOpen[group.term] ?? (gradedCount > 0 || allFilledSubjects.length === 0);
 
                                     return (
                                         <div key={group.term} className="rounded-lg border border-surface-border/50 overflow-hidden bg-surface-dark/20">
-                                            {/* Term Header */}
-                                            <div className="flex flex-wrap items-center justify-between gap-2 bg-surface-dark/50 px-3 py-2 border-b border-surface-border/40">
-                                                <div className="flex items-center gap-2">
-                                                    <span className="text-xs font-bold text-slate-200">Term {group.term}</span>
-                                                    <span className="text-[10px] text-slate-500">
-                                                        ({group.rows.filter((r) => r.data !== null).length}/{group.rows.length} subjects)
+                                            <button
+                                                type="button"
+                                                onClick={() => setTermOpen((prev) => ({ ...prev, [group.term]: !isOpen }))}
+                                                aria-expanded={isOpen}
+                                                className="w-full flex flex-wrap items-center justify-between gap-x-4 gap-y-1 px-3 py-2.5 text-left hover:bg-surface-dark/40 transition-colors cursor-pointer"
+                                            >
+                                                <span className="flex items-center gap-2">
+                                                    <ChevronDown className={`w-3.5 h-3.5 text-slate-500 transition-transform ${isOpen ? '' : '-rotate-90'}`} />
+                                                    <span className="text-sm font-semibold text-slate-100">Term {group.term}</span>
+                                                    <span className="text-[11px] text-slate-500">
+                                                        {gradedCount}/{group.rows.length} graded
                                                     </span>
-                                                </div>
-                                                {(() => {
-                                                    const termTotalCredits = group.rows.reduce((sum, r) => sum + (r.subject.credits || 0), 0);
-                                                    const scoredRows = group.rows.filter((r) => r.data?.total !== null && r.data?.total !== undefined);
-                                                    const termMarksScored = Math.round(scoredRows.reduce((sum, r) => sum + (r.data?.total ?? 0), 0) * 100) / 100;
-                                                    const termMarksMax = scoredRows.length * 100;
+                                                </span>
+                                                <span className="flex items-baseline gap-3 text-[11px] text-slate-500 font-mono tabular-nums">
+                                                    {group.percentage !== null && <span>{group.percentage.toFixed(2)}%</span>}
+                                                    <span>
+                                                        {group.earnedCredits}/{termTotalCredits} cr
+                                                    </span>
+                                                    {scoredRows.length > 0 && (
+                                                        <span className="hidden sm:inline">
+                                                            {termMarksScored}/{scoredRows.length * 100}
+                                                        </span>
+                                                    )}
+                                                    <span className="text-slate-400">
+                                                        GPA{' '}
+                                                        <span className={`text-sm font-bold ${group.gpa === null ? 'text-slate-600' : 'text-emerald-300'}`}>
+                                                            {group.gpa === null ? '—' : group.gpa.toFixed(2)}
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </button>
 
-                                                    return (
-                                                        <div className="text-[11px] text-slate-400">
-                                                            GPA{' '}
-                                                            <span className="font-bold tabular-nums font-mono text-emerald-300">
-                                                                {group.gpa === null ? '—' : group.gpa.toFixed(2)}
-                                                            </span>
-                                                            <span className="text-slate-600"> · </span>
-                                                            Percentage{' '}
-                                                            <span className="font-bold tabular-nums font-mono text-emerald-300">
-                                                                {group.percentage === null ? '—' : `${group.percentage.toFixed(2)}%`}
-                                                            </span>
-                                                            <span className="text-slate-600"> · </span>
-                                                            <span className="tabular-nums font-mono text-slate-300">
-                                                                Credits {group.earnedCredits} / {termTotalCredits}
-                                                            </span>
-                                                            {scoredRows.length > 0 && (
-                                                                <>
-                                                                    <span className="text-slate-600"> · </span>
-                                                                    <span className="tabular-nums font-mono text-slate-300">
-                                                                        Marks {termMarksScored}/{termMarksMax}
-                                                                    </span>
-                                                                </>
-                                                            )}
-                                                        </div>
-                                                    );
-                                                })()}
-                                            </div>
-
-                                            {/* Term Subjects Table with Inline Editing */}
-                                            <div className="overflow-x-auto">
-                                                <table className="w-full text-xs min-w-[560px]">
-                                                    <thead>
-                                                        <tr className="text-slate-500 text-left bg-surface-dark/10">
-                                                            <th className="px-3 py-2 font-semibold uppercase tracking-widest text-[9px]">Subject</th>
-                                                            <th className="px-2 py-2 font-semibold uppercase tracking-widest text-[9px] text-right w-12">Cr</th>
-                                                            <th className="px-1.5 py-2 font-semibold uppercase tracking-widest text-[9px] text-right w-16">
-                                                                CLA<br />/25
-                                                            </th>
-                                                            {hasProjectCol && (
-                                                                <th className="px-1.5 py-2 font-semibold uppercase tracking-widest text-[9px] text-right w-16">
-                                                                    Proj<br />/25
+                                            {isOpen && (
+                                                <div className="overflow-x-auto border-t border-surface-border/40">
+                                                    <table className="w-full text-xs min-w-[540px]">
+                                                        <thead>
+                                                            <tr className="text-[10px] text-slate-500">
+                                                                <th className="pl-3 pr-2 py-1.5 text-left font-medium">Subject</th>
+                                                                <th className="px-2 py-1.5 text-right font-medium">Cr</th>
+                                                                <th className="px-2 py-1.5 text-right font-medium">
+                                                                    CLA <span className="text-slate-600">/25</span>
                                                                 </th>
-                                                            )}
-                                                            <th className="px-1.5 py-2 font-semibold uppercase tracking-widest text-[9px] text-right w-16">
-                                                                Final<br />/75
-                                                            </th>
-                                                            <th className="px-1.5 py-2 font-semibold uppercase tracking-widest text-[9px] text-right w-18">
-                                                                Total<br />/100
-                                                            </th>
-                                                            <th className="px-1.5 py-2 font-semibold uppercase tracking-widest text-[9px] text-center w-14">
-                                                                Gr
-                                                            </th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        {group.rows.map((r) => (
-                                                            <SubjectRow
-                                                                key={r.subject.id}
-                                                                subject={r.subject}
-                                                                data={r.data}
-                                                                hasManualOverride={r.hasManualOverride}
-                                                                hasProjectCol={hasProjectCol}
-                                                                onUpdateField={(field, val, text) => updateSubjectField(r.subject, field, val, text)}
-                                                                onUpdateGrade={(grade) => updateSubjectGrade(r.subject.id, grade)}
-                                                                onToggleRetake={() => toggleSubjectRetake(r.subject.id)}
-                                                                onResetRow={() => resetSubjectRow(r.subject.id)}
-                                                            />
-                                                        ))}
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                                                {hasProjectCol && (
+                                                                    <th className="px-2 py-1.5 text-right font-medium">
+                                                                        Proj <span className="text-slate-600">/25</span>
+                                                                    </th>
+                                                                )}
+                                                                <th className="px-2 py-1.5 text-right font-medium">
+                                                                    Final <span className="text-slate-600">/75</span>
+                                                                </th>
+                                                                <th className="px-2 py-1.5 text-right font-medium">
+                                                                    Total <span className="text-slate-600">/100</span>
+                                                                </th>
+                                                                <th className="pl-1 pr-3 py-1.5 text-center font-medium">Grade</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            {group.rows.map((r) => (
+                                                                <SubjectRow
+                                                                    key={r.subject.id}
+                                                                    subject={r.subject}
+                                                                    data={r.data}
+                                                                    hasManualOverride={r.hasManualOverride}
+                                                                    hasProjectCol={hasProjectCol}
+                                                                    onUpdateField={(field, val, text) => updateSubjectField(r.subject, field, val, text)}
+                                                                    onUpdateGrade={(grade) => updateSubjectGrade(r.subject.id, grade)}
+                                                                    onToggleRetake={() => toggleSubjectRetake(r.subject.id)}
+                                                                    onResetRow={() => resetSubjectRow(r.subject.id)}
+                                                                />
+                                                            ))}
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            )}
                                         </div>
                                     );
                                 })}
