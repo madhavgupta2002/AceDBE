@@ -20,14 +20,14 @@ const AnswerStatus: React.FC<AnswerStatusProps> = ({
   const getStatusColor = (index: number) => {
     const userAnswer = answeredQuestions[index];
     if (userAnswer === null) {
-      return 'bg-slate-700/60 text-slate-300 border border-slate-600/40 rounded-lg';
+      return 'bg-slate-800/60 text-slate-400 border border-slate-700/50 hover:border-slate-500 rounded-lg';
     }
 
     const correctAnswer = correctAnswers[index];
 
     // Subjective questions (no correct answer) stay neutral once viewed
     if (correctAnswer.length === 0 || userAnswer[0] === 'SUBJECTIVE_ACKNOWLEDGED') {
-      return 'bg-indigo-700/60 text-white border border-indigo-500/50 rounded-lg';
+      return 'bg-indigo-500/20 text-indigo-200 border border-indigo-400/40 rounded-lg';
     }
 
     // Check if arrays are equal
@@ -35,9 +35,9 @@ const AnswerStatus: React.FC<AnswerStatusProps> = ({
       userAnswer.every(ans => correctAnswer.includes(ans));
 
     if (isCorrect) {
-      return 'bg-emerald-700/70 text-white border border-emerald-600/50 rounded-lg';
+      return 'bg-emerald-500/20 text-emerald-200 border border-emerald-400/40 rounded-lg';
     }
-    return 'bg-red-700/70 text-white border border-red-600/50 rounded-lg';
+    return 'bg-red-500/20 text-red-200 border border-red-400/40 rounded-lg';
   };
 
   return (

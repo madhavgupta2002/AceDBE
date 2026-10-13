@@ -121,7 +121,7 @@ export default function PassageCard({
       </div>
       {open && (
         <div
-          className={`prose prose-invert prose-sm max-w-none overflow-y-auto border-t border-amber-700/30 px-3 py-3 text-slate-200 text-justify ${
+          className={`prose prose-invert prose-sm max-w-none overflow-y-auto border-t border-amber-700/30 px-3 py-3 text-slate-200 quiz-text ${
             tall ? 'max-h-[80vh]' : 'max-h-72'
           }`}
         >
