@@ -7,13 +7,8 @@ import {
   BookOpen,
   Printer,
   PlayCircle,
-  CheckCircle2,
-  FileText,
-  Sparkles,
   HelpCircle,
   Loader2,
-  Calendar,
-  Layers,
   ArrowRight,
   ExternalLink,
   MonitorPlay,
@@ -142,49 +137,20 @@ export default function PyqPage() {
 
   return (
     <main className="max-w-7xl mx-auto px-2 sm:px-4 py-3 sm:py-4">
-      {/* Hero Header */}
-      <div className="relative overflow-hidden rounded-xl bg-gradient-to-b from-slate-900/90 via-[#0d1527]/80 to-[#0b1120] border border-slate-700/50 p-3.5 sm:p-4 mb-4 shadow-xl backdrop-blur-xl">
-        <div className="absolute top-0 right-0 -mr-16 -mt-16 w-48 h-48 bg-emerald-500/10 rounded-full blur-2xl pointer-events-none" />
-        <div className="absolute bottom-0 left-0 -ml-16 -mb-16 w-48 h-48 bg-sky-500/10 rounded-full blur-2xl pointer-events-none" />
-
-        <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      {/* Header */}
+      <div className="rounded-xl bg-surface border border-surface-border/60 p-3.5 sm:p-4 mb-4">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-400/10 border border-emerald-400/20 text-emerald-300 text-[11px] font-semibold mb-1.5">
-              <Sparkles className="w-3 h-3" />
-              <span>Official Past Papers Checklist</span>
-            </div>
-            <h1 className="text-xl sm:text-2xl font-black text-white tracking-tight">
-              Previous Year Questions{' '}
-              <span className="bg-gradient-to-r from-emerald-300 via-teal-200 to-cyan-300 bg-clip-text text-transparent">
-                (PYQs)
-              </span>
-            </h1>
-
-            {/* Quick Metrics */}
-            <div className="mt-2.5 flex flex-wrap items-center gap-2 text-[11px] font-medium text-slate-400">
-              <div className="flex items-center gap-1.5 bg-slate-800/60 px-2.5 py-1 rounded-md border border-slate-700/50">
-                <FileText className="w-3.5 h-3.5 text-emerald-400" />
-                <span className="text-white font-bold">{totalPapers}</span> Papers Available
-              </div>
-              <div className="flex items-center gap-1.5 bg-slate-800/60 px-2.5 py-1 rounded-md border border-slate-700/50">
-                <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400" />
-                <span className="text-white font-bold">
-                  {totalQuestions.toLocaleString()}
-                </span> Questions
-              </div>
-              <div className="flex items-center gap-1.5 bg-slate-800/60 px-2.5 py-1 rounded-md border border-slate-700/50">
-                <Calendar className="w-3.5 h-3.5 text-amber-400" />
-                <span>3 Trimesters / Year</span>
-              </div>
-            </div>
+            <h1 className="text-xl sm:text-2xl font-bold text-white tracking-tight">Previous year papers</h1>
+            <p className="mt-1 text-xs text-slate-400">
+              <span className="text-slate-200 font-semibold">{totalPapers}</span> papers ·{' '}
+              <span className="text-slate-200 font-semibold">{totalQuestions.toLocaleString()}</span> questions · exams held 3 times a year
+            </p>
           </div>
 
           {/* Action Mode Toggle Card */}
-          <div className="bg-slate-900/90 border border-slate-700/70 p-2.5 rounded-xl shadow-lg flex flex-col gap-2 min-w-[240px] sm:min-w-[260px]">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
-              <Layers className="w-3 h-3 text-emerald-400" />
-              Click Action Mode
-            </span>
+          <div className="flex flex-col gap-1.5 min-w-[240px] sm:min-w-[260px]">
+            <span className="text-[11px] text-slate-400">When you click a paper</span>
 
             {/* Main Toggle: Quiz vs Print */}
             <div className="grid grid-cols-3 p-0.5 bg-slate-800/90 rounded-lg border border-slate-700/60 gap-1">
