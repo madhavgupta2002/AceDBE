@@ -26,12 +26,7 @@ export default function EntrancePage() {
 
   return (
     <main className="max-w-4xl mx-auto px-3 sm:px-4 py-4">
-      <div className="rounded-xl bg-gradient-to-b from-slate-900/90 to-[#0b1120] border border-slate-700/50 p-4 mb-4 shadow-xl">
-        <h1 className="text-xl sm:text-2xl font-black text-white tracking-tight">
-          BBA-DBE Entrance Test{' '}
-          <span className="bg-gradient-to-r from-amber-300 to-orange-300 bg-clip-text text-transparent">Papers</span>
-        </h1>
-      </div>
+      <h1 className="text-xl sm:text-2xl font-bold text-white tracking-tight mb-4">BBA-DBE entrance test papers</h1>
 
       {loading ? (
         <div className="flex justify-center py-10 text-slate-400">
