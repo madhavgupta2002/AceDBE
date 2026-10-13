@@ -83,6 +83,15 @@ function normalizeSubjectBase(name: string): string {
     if (/^Principles of Micro[- ]?economics\b/i.test(clean)) {
         return 'Principles of Microeconomics';
     }
+    if (/^Supply Chain\b/i.test(clean)) {
+        return 'Supply Chain Management (SCM)';
+    }
+    if (/^Software Product Management\b/i.test(clean)) {
+        return 'Product Management';
+    }
+    if (/^Business Research\b/i.test(clean)) {
+        return 'Business Research Methods';
+    }
     if (/^Design [Yy]our Thinking\b/i.test(clean)) {
         return 'Design Your Thinking';
     }
@@ -98,40 +107,49 @@ function stripPrefix(name: string): string {
 type Component = 'cla' | 'project' | 'final' | 'total' | 'grade' | null;
 
 // Identify which component a row represents and return the base subject name.
-export function classify(rawName: string): { base: string; component: Component; retake: boolean } {
+// `attempt` is 0 for the original sitting, 1 for "Retake", N for "Retake-N".
+export function classify(rawName: string): { base: string; component: Component; retake: boolean; attempt: number } {
     const name = stripPrefix(rawName).trim();
-    if (!name) return { base: '', component: null, retake: false };
+    const none = { base: '', component: null, retake: false, attempt: 0 };
+    if (!name) return none;
 
     // Ignore generic table headers
-    if (/^Grade item\b/i.test(name)) return { base: '', component: null, retake: false };
+    if (/^Grade item\b/i.test(name)) return none;
 
-    const isRetake = /\bRetake(?:-\d+)?\b/i.test(name);
+    const retakeMatch = name.match(/\bRetake(?:-(\d+))?\b/i);
+    const isRetake = !!retakeMatch;
+    const attempt = retakeMatch ? Number(retakeMatch[1] ?? 1) : 0;
     const cleanName = name
         .replace(/\(?\bRetake(?:-\d+)?\)?/gi, '')
         .replace(/\s+/g, ' ')
         .trim();
+    const result = (base: string, component: Component) => ({ base: normalizeSubjectBase(base), component, retake: isRetake, attempt });
 
-    // Grade: "(Grade)", "Grade", "[Grade]", "(Letter Grade)", "Grade Letter", "(Retake) Grade"
-    let m = cleanName.match(/^(.*?)\s*(?:\((?:Letter\s*)?Grade\)|\[(?:Letter\s*)?Grade\]|\b(?:Letter\s*)?Grade\b)\s*$/i);
-    if (m && m[1].trim()) return { base: normalizeSubjectBase(m[1]), component: 'grade', retake: isRetake };
+    // Grade: "(Grade)", "Grade", "[Grade]", "(Letter Grade)", "Grade Letter", "(Retake) Grade", "Total Grade"
+    let m = cleanName.match(/^(.*?)\s*(?:\((?:Letter\s*)?Grade\)|\[(?:Letter\s*)?Grade\]|\b(?:Total\s+)?(?:Letter\s*)?Grade\b)\s*$/i);
+    if (m && m[1].trim()) return result(m[1], 'grade');
 
     // Total: "Total(100)", "Total (100)", "Total"
     m = cleanName.match(/^(.*?)\s*Total(?:\s*\(\d+(?:\.\d+)?\))?\s*$/i);
-    if (m && m[1].trim()) return { base: normalizeSubjectBase(m[1]), component: 'total', retake: isRetake };
+    if (m && m[1].trim()) return result(m[1], 'total');
 
     // Project: "Project(25)", "Project (25)", "Project", "Course Project"
     m = cleanName.match(/^(.*?)\s*(?:Project|Course\s*Project)(?:\s*\(\d+(?:\.\d+)?\))?\s*$/i);
-    if (m && m[1].trim()) return { base: normalizeSubjectBase(m[1]), component: 'project', retake: isRetake };
+    if (m && m[1].trim()) return result(m[1], 'project');
 
     // Final Exam: "Final exam(75)", "Final Exam (75)", "Final Exam", "End Term Exam", "Final"
     m = cleanName.match(/^(.*?)\s*(?:Final\s*Exam|End\s*Term\s*Exam|End\s*Term|Final)(?:\s*\(\d+(?:\.\d+)?\))?\s*$/i);
-    if (m && m[1].trim()) return { base: normalizeSubjectBase(m[1]), component: 'final', retake: isRetake };
+    if (m && m[1].trim()) return result(m[1], 'final');
 
     // CLA: "CLA(25)", "CLA (25)", "CLA", "Continuous Assessment"
     m = cleanName.match(/^(.*?)\s*(?:CLA|Continuous\s*Assessment)(?:\s*\(\d+(?:\.\d+)?\))?\s*$/i);
-    if (m && m[1].trim()) return { base: normalizeSubjectBase(m[1]), component: 'cla', retake: isRetake };
+    if (m && m[1].trim()) return result(m[1], 'cla');
 
-    return { base: normalizeSubjectBase(cleanName), component: null, retake: isRetake };
+    // Single-mark project subjects: "Website Development (Retake-2) (100)"
+    m = cleanName.match(/^(.*?)\s*\(100\)\s*$/);
+    if (m && m[1].trim()) return result(m[1], 'total');
+
+    return { ...result(cleanName, null) };
 }
 
 function parseGradeValue(g: string): number | null {
@@ -211,16 +229,21 @@ function bestMatch(name: string, candidates: Candidate[]): { match: CgpaSubject 
 
 // ── Public API ─────────────────────────────────────────────────────────────
 
+type MarkField = 'cla' | 'project' | 'final' | 'total' | 'grade';
+
 export function parseGrades(rows: RawRow[], batch?: number): ParsedSubject[] {
     const order: string[] = [];
     const map = new Map<string, ParsedSubject>();
-    // Subjects whose grade came from a retake row; original-attempt rows must not overwrite it.
-    const retakeGraded = new Set<string>();
+    // Per subject: the attempt number each field's current value came from. A later
+    // attempt (Retake-N) overrides earlier ones; blank retake rows carry the old value forward.
+    const attempts = new Map<string, Partial<Record<MarkField, number>>>();
+    // Subjects where a retake attempt supplied a CLA/Project/Final mark
+    const retakeMarked = new Set<string>();
 
     const candidates = buildCandidates(batch);
 
     for (const row of rows) {
-        const { base, component, retake } = classify(row.n);
+        const { base, component, attempt } = classify(row.n);
         if (!component || !base) continue;
 
         // Group rows under the canonical matched subject if possible
@@ -229,6 +252,7 @@ export function parseGrades(rows: RawRow[], batch?: number): ParsedSubject[] {
 
         if (!map.has(mapKey)) {
             order.push(mapKey);
+            attempts.set(mapKey, {});
             map.set(mapKey, {
                 name: match ? match.name : base,
                 cla: null,
@@ -243,72 +267,61 @@ export function parseGrades(rows: RawRow[], batch?: number): ParsedSubject[] {
             });
         }
         const entry = map.get(mapKey)!;
+        const seen = attempts.get(mapKey)!;
+        const isNewer = (field: MarkField) => seen[field] === undefined || attempt >= seen[field]!;
 
         if (component === 'grade') {
             const g = (row.g || '').trim().toUpperCase();
-            if (g && g !== '-' && g !== '( EMPTY )') {
-                if (retake) {
-                    entry.grade = g;
-                    retakeGraded.add(mapKey);
-                } else if (!retakeGraded.has(mapKey) && (!entry.grade || entry.grade === 'F')) {
-                    entry.grade = g;
-                }
+            if (g && g !== '-' && g !== '( EMPTY )' && isNewer('grade')) {
+                entry.grade = g;
+                seen.grade = attempt;
+                if (attempt > 0) entry.hasRetake = true;
             }
-            if (retake && g && g !== '-') entry.hasRetake = true;
-        } else if (component === 'project') {
-            const value = parseGradeValue(row.g);
-            if (value !== null) {
-                if (retake) {
-                    entry.hasRetake = true;
-                    entry.project = value;
-                } else if (entry.project === null) {
-                    entry.project = value;
-                }
-            }
-        } else if (component === 'final') {
-            if ((row.g || '').toLowerCase().includes('absent')) {
-                entry.finalText = 'Absent';
-            }
-            const value = parseGradeValue(row.g);
-            if (value !== null) {
-                if (retake) {
-                    entry.hasRetake = true;
-                    entry.final = value;
-                } else if (entry.final === null) {
-                    entry.final = value;
-                }
-            }
-        } else {
-            const value = parseGradeValue(row.g);
-            if (value !== null) {
-                if (retake) {
-                    entry.hasRetake = true;
-                    entry[component] = value;
-                } else if (entry[component] === null) {
-                    entry[component] = value;
-                }
-            }
+            continue;
+        }
+
+        if (component === 'final' && attempt >= (seen.final ?? 0) && (row.g || '').toLowerCase().includes('absent')) {
+            entry.finalText = 'Absent';
+        }
+
+        const value = parseGradeValue(row.g);
+        if (value === null || !isNewer(component)) continue;
+
+        entry[component] = value;
+        seen[component] = attempt;
+        if (component === 'final') entry.finalText = null;
+        if (attempt > 0) {
+            entry.hasRetake = true;
+            if (component !== 'total') retakeMarked.add(mapKey);
         }
     }
 
     // Keep only subjects that have at least one real mark or retake status
-    const result = order
-        .map((key) => map.get(key)!)
-        .filter((s) => s.cla !== null || s.project !== null || s.final !== null || s.finalText !== null || s.total !== null || s.grade !== null);
+    const resultKeys = order.filter((key) => {
+        const s = map.get(key)!;
+        return s.cla !== null || s.project !== null || s.final !== null || s.finalText !== null || s.total !== null || s.grade !== null;
+    });
 
-    for (const subject of result) {
-        // If total is missing, compute from components
-        if (subject.total === null) {
-            if (subject.cla !== null || subject.project !== null || subject.final !== null) {
-                const sum = (subject.cla ?? 0) + (subject.project ?? 0) + (subject.final ?? 0);
-                subject.total = Number(sum.toFixed(2));
-            }
+    const result: ParsedSubject[] = [];
+    for (const key of resultKeys) {
+        const subject = map.get(key)!;
+        const hasComponents = subject.cla !== null || subject.project !== null || subject.final !== null;
+        // Moodle's retake "Total" only sums that attempt's rows (it drops the carried-forward
+        // CLA), so once a retake supplies marks, recompute the total from the merged components.
+        if (hasComponents && (subject.total === null || retakeMarked.has(key))) {
+            const sum = (subject.cla ?? 0) + (subject.project ?? 0) + (subject.final ?? 0);
+            subject.total = Number(sum.toFixed(2));
         }
+        // A letter grade older than the latest retake marks is stale; let it be derived from the total
+        const seen = attempts.get(key)!;
+        const latestMarkAttempt = Math.max(seen.cla ?? 0, seen.project ?? 0, seen.final ?? 0, seen.total ?? 0);
+        if (subject.grade && (seen.grade ?? 0) < latestMarkAttempt) subject.grade = null;
         if (!subject.match) {
             const { match, score } = bestMatch(subject.name, candidates);
             subject.match = match;
             subject.matchScore = score;
         }
+        result.push(subject);
     }
     return result;
 }
