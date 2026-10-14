@@ -6,8 +6,7 @@ import {
     ChevronDown,
     ClipboardPaste,
     Copy,
-    Pencil,
-    Printer,
+    Download,
     RotateCcw,
     Trash2,
     User,
@@ -339,7 +338,6 @@ export default function MarksPage() {
     const [showImporter, setShowImporter] = useState(true);
     const [pasteText, setPasteText] = useState('');
     const [pasteError, setPasteError] = useState(false);
-    const [activeTab, setActiveTab] = useState<'dashboard' | 'printPreview'>('dashboard');
     const [termOpen, setTermOpen] = useState<Record<number, boolean>>({});
     const bookmarkletRef = useRef<HTMLAnchorElement>(null);
 
@@ -732,10 +730,9 @@ export default function MarksPage() {
         }
     };
 
-    const handlePrint = () => {
-        if (typeof window !== 'undefined') {
-            window.print();
-        }
+    // Opens the browser's print dialog; the print-only marksheet below is what gets printed / saved as PDF.
+    const handleDownload = () => {
+        window.print();
     };
 
     const cardCls = 'bg-surface border border-surface-border/60 rounded-xl p-4 sm:p-5 shadow-sm';
@@ -978,38 +975,15 @@ export default function MarksPage() {
                                     ))}
                                 </div>
 
-                                {activeTab === 'dashboard' ? (
-                                    <button
-                                        onClick={() => setActiveTab('printPreview')}
-                                        className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold transition-colors cursor-pointer"
-                                        type="button"
-                                        title="Preview marksheet for printing"
-                                    >
-                                        <Printer className="w-3.5 h-3.5" />
-                                        Print
-                                    </button>
-                                ) : (
-                                    <>
-                                        <button
-                                            onClick={() => setActiveTab('dashboard')}
-                                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-surface-light hover:bg-surface border border-surface-border/60 text-slate-200 hover:text-white rounded-lg text-xs font-semibold transition-colors cursor-pointer"
-                                            type="button"
-                                            title="Back to editing"
-                                        >
-                                            <Pencil className="w-3.5 h-3.5" />
-                                            Edit
-                                        </button>
-                                        <button
-                                            onClick={handlePrint}
-                                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg text-xs font-semibold transition-colors cursor-pointer"
-                                            type="button"
-                                            title="Print marksheet"
-                                        >
-                                            <Printer className="w-3.5 h-3.5" />
-                                            Print
-                                        </button>
-                                    </>
-                                )}
+                                <button
+                                    onClick={handleDownload}
+                                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-emerald-500/15 hover:bg-emerald-500/25 text-emerald-200 border border-emerald-500/40 hover:border-emerald-400/60 rounded-lg text-xs font-semibold transition-colors cursor-pointer"
+                                    type="button"
+                                    title="Download marksheet (choose Save as PDF in the print dialog)"
+                                >
+                                    <Download className="w-3.5 h-3.5" />
+                                    Download
+                                </button>
 
                                 {manualMarksCount > 0 && (
                                     <button
@@ -1072,84 +1046,7 @@ export default function MarksPage() {
                             {unmatched.length > 0 && <span className="text-amber-400">· {unmatched.length} unmatched, excluded from CGPA</span>}
                         </div>
 
-                        {activeTab === 'printPreview' ? (
-                            /* ── 3-Page Marksheet Preview (Live Statement of Marks) ── */
-                            <div className="space-y-6 pt-1">
-                                <div className="flex items-center justify-between bg-emerald-950/40 border border-emerald-500/30 rounded-lg px-3 py-2 text-xs text-emerald-300">
-                                    <span>
-                                        Viewing <strong>3-Page Official Marksheet Layout</strong> (Page 1: Terms 1-3, Page 2: Terms 4-6, Page 3: Terms 7-9).
-                                    </span>
-                                    <button
-                                        onClick={handlePrint}
-                                        className="px-3 py-1 bg-emerald-600 hover:bg-emerald-500 text-white rounded text-xs font-bold cursor-pointer"
-                                    >
-                                        Print / PDF
-                                    </button>
-                                </div>
-
-                                {YEARS.map((year) => {
-                                    const groupsForYear = termGroups.filter((g) => year.terms.includes(g.term));
-
-                                    return (
-                                        <div key={year.year} className="bg-white rounded-lg shadow-lg border border-slate-300 p-6 sm:p-8 space-y-6 text-black">
-                                            {/* Top Header */}
-                                            <div className="border-b-2 border-black pb-3 mb-4 flex flex-wrap items-center justify-between gap-3 text-black">
-                                                <div>
-                                                    <h2 className="text-sm sm:text-base font-bold tracking-wider uppercase text-black">Statement of Marks</h2>
-                                                    <p className="text-[11px] text-neutral-700 font-medium">
-                                                        {studentName ? `${studentName} · ` : ''}Batch {selectedBatch} · {year.label}
-                                                    </p>
-                                                </div>
-                                                <div className="flex items-center gap-5 text-right">
-                                                    <div>
-                                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">CGPA</span>
-                                                        <span className="text-sm sm:text-base font-extrabold font-mono text-black">
-                                                            {overall.gpa === null ? '—' : overall.gpa.toFixed(2)}
-                                                        </span>
-                                                    </div>
-                                                    <div className="h-6 w-px bg-neutral-300" />
-                                                    <div>
-                                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Percentage (WAM)</span>
-                                                        <span className="text-sm sm:text-base font-extrabold font-mono text-black">
-                                                            {overall.percentage === null ? '—' : `${overall.percentage.toFixed(2)}%`}
-                                                        </span>
-                                                    </div>
-                                                    <div className="h-6 w-px bg-neutral-300" />
-                                                    <div>
-                                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Total Credits</span>
-                                                        <span className="text-sm sm:text-base font-extrabold font-mono text-black">
-                                                            {overall.earnedCredits} <span className="text-[10px] text-neutral-500 font-normal">/ {totalCurriculumCredits}</span>
-                                                        </span>
-                                                    </div>
-                                                    <div className="h-6 w-px bg-neutral-300" />
-                                                    <div>
-                                                        <span className="text-[9px] font-bold text-neutral-500 uppercase tracking-wider block">Total Marks</span>
-                                                        <span className="text-sm sm:text-base font-extrabold font-mono text-black">
-                                                            {overallMarksStats.max > 0 ? (
-                                                                <span>
-                                                                    {overallMarksStats.earned}{' '}
-                                                                    <span className="text-[10px] text-neutral-500 font-normal">/ {overallMarksStats.max}</span>
-                                                                </span>
-                                                            ) : (
-                                                                '—'
-                                                            )}
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            {groupsForYear.map((group) => renderTermTable(group))}
-
-                                            <div className="pt-2 border-t border-slate-200 flex items-center justify-between text-[11px] text-slate-600">
-                                                <span>* Denotes Retake</span>
-                                                <span>Page {year.year} of 3</span>
-                                            </div>
-                                        </div>
-                                    );
-                                })}
-                            </div>
-                        ) : (
-                            /* ── Interactive Dashboard View (Terms 1 to 9 with Inline Inputs) ── */
+                        {/* ── Interactive Dashboard View (Terms 1 to 9 with Inline Inputs) ── */}
                             <div className="space-y-2">
                                 {termGroups.map((group) => {
                                     const hasProjectCol =
@@ -1299,7 +1196,6 @@ export default function MarksPage() {
                                     </details>
                                 )}
                             </div>
-                        )}
                     </div>
                 </div>
             </div>
