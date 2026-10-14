@@ -56,7 +56,7 @@ const SubjectSelector: React.FC<{ selectedTerm?: number }> = ({ selectedTerm: pr
     }
   };
 
-  const handleYoutubeClick = async (e: React.MouseEvent, subjectCode: string) => {
+  const handleYoutubeClick = async (subjectCode: string) => {
     const playlistUrl = await getAllVideosForSubject(subjectCode);
     if (playlistUrl) {
       window.open(playlistUrl, '_blank');
@@ -104,7 +104,7 @@ const SubjectSelector: React.FC<{ selectedTerm?: number }> = ({ selectedTerm: pr
           <BookOpen className="w-4 h-4" />
         </Link>
         <button
-          onClick={(e) => { e.preventDefault(); handleYoutubeClick(e, alias.code); }}
+          onClick={(e) => { e.preventDefault(); handleYoutubeClick(alias.code); }}
           className="p-2 rounded-lg border border-red-500/30 text-red-400/90 hover:text-red-300 hover:bg-red-500/10 hover:border-red-400/60 transition-colors"
           title="Watch all videos"
           aria-label="Watch all videos"

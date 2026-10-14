@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { Inter, Merriweather, Open_Sans, Lora, Roboto } from 'next/font/google';
 import './globals.css';
 import 'katex/dist/katex.min.css';
-import { DarkModeProvider } from '@/contexts/DarkModeContext';
 import { BatchProvider } from '@/contexts/BatchContext';
 import Script from 'next/script';
 import { NavigationProgress } from '@/components/NavigationProgress';
@@ -90,7 +89,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -136,26 +135,13 @@ export default function RootLayout({
       </head>
       <body className={`${inter.className} bg-[#05080f] ${merriweather.variable} ${openSans.variable} ${lora.variable} ${roboto.variable}`}>
         <NavigationProgress />
-        <DarkModeProvider>
           <BatchProvider>
             {children}
             <footer className="w-full py-6 mt-auto border-t border-gray-800/50">
               <div className="flex flex-col items-center gap-2">
-                {/* <p className="text-center text-xs text-gray-500">
-                Made by{' '}
-                <a
-                  href="https://www.linkedin.com/in/madhavgupta2002/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:text-gray-400 underline underline-offset-2 transition-colors"
-                >
-                  Madhav Gupta
-                </a>
-              </p> */}
               </div>
             </footer>
           </BatchProvider>
-        </DarkModeProvider>
       </body>
     </html>
 

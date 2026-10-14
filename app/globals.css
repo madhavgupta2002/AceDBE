@@ -173,9 +173,4 @@ body::after {
   body::after {
     display: none !important;
   }
-
-  .print-page-break {
-    page-break-inside: avoid;
-    break-inside: avoid;
-  }
 }

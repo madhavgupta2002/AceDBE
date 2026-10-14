@@ -2,7 +2,6 @@
 // and fuzzy-matches each subject to a CGPA subject (lib/cgpa/subjects.ts).
 
 import { getAllSubjects, type CgpaSubject } from '@/lib/cgpa/subjects';
-import type { LetterGrade } from '@/lib/cgpa/grades';
 
 export type RawRow = { n: string; g: string };
 
@@ -19,8 +18,6 @@ export type ParsedSubject = {
     match: CgpaSubject | null; // matched CGPA subject (if any)
     matchScore: number; // 0..1 confidence of the match
 };
-
-const VALID_GRADES: LetterGrade[] = ['O', 'A', 'B', 'C', 'D', 'E', 'F'];
 
 // Common acronyms and abbreviations mapped to standard canonical names
 function normalizeSubjectBase(name: string): string {
@@ -108,7 +105,7 @@ type Component = 'cla' | 'project' | 'final' | 'total' | 'grade' | null;
 
 // Identify which component a row represents and return the base subject name.
 // `attempt` is 0 for the original sitting, 1 for "Retake", N for "Retake-N".
-export function classify(rawName: string): { base: string; component: Component; retake: boolean; attempt: number } {
+function classify(rawName: string): { base: string; component: Component; retake: boolean; attempt: number } {
     const name = stripPrefix(rawName).trim();
     const none = { base: '', component: null, retake: false, attempt: 0 };
     if (!name) return none;
@@ -324,10 +321,6 @@ export function parseGrades(rows: RawRow[], batch?: number): ParsedSubject[] {
         result.push(subject);
     }
     return result;
-}
-
-export function isValidLetterGrade(g: string | null): g is LetterGrade {
-    return !!g && (VALID_GRADES as string[]).includes(g);
 }
 
 // ── Auto-detect Batch from text ─────────────────────────────────────────────

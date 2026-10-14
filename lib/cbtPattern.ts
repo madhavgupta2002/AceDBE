@@ -6,7 +6,7 @@ const isObjective = (q: QuestionFile['questions'][number]) =>
   q.question_type !== 'SUBJECTIVE' && !!q.correct_option_label && Object.values(q.options ?? {}).some(Boolean);
 
 /** Generic pattern: one global-timer section with every objective question, 1 mark each, no negative marking. */
-export function defaultExamPattern(file: QuestionFile): ExamPattern | undefined {
+function defaultExamPattern(file: QuestionFile): ExamPattern | undefined {
   const ids = file.questions.filter(isObjective).map((q) => String(q.question_id));
   if (ids.length === 0) return undefined;
   const multi = file.questions.some((q) => isObjective(q) && (q.correct_option_label ?? '').includes(','));

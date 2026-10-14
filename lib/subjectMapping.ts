@@ -596,22 +596,6 @@ export const SUBJECTS: Subject[] = [
 export const getSubjectByCode = (code: string): Subject | undefined =>
   SUBJECTS.find(s => s.aliases.some(a => a.code === code));
 
-/** Find the specific alias entry for a code */
-export const getAliasForCode = (code: string): SubjectAlias | undefined => {
-  for (const subject of SUBJECTS) {
-    const alias = subject.aliases.find(a => a.code === code);
-    if (alias) return alias;
-  }
-  return undefined;
-};
-
-export const getSubjectName = (code: string): string =>
-  getSubjectByCode(code)?.name ?? code;
-
-/** Returns the term the given alias code sits in */
-export const getTermForSubject = (code: string): number =>
-  getAliasForCode(code)?.term ?? 1;
-
 /** All subjects available for a given batch, optionally filtered by term */
 export const getSubjectsByBatch = (
   batch: number,
