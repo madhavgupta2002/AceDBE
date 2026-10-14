@@ -12,7 +12,6 @@ interface HeaderProps {
     onBack?: () => void;
 }
 
-// CGPA page (/cgpa) is hidden from nav to avoid confusion with Marks — the route is kept intentionally.
 const NAV_LINKS = [
     { href: '/pyqs', label: 'PYQs', mobileLabel: 'Previous year papers', icon: FileText },
     { href: '/entrance', label: 'Entrance', mobileLabel: 'Entrance test papers', icon: ClipboardList },
