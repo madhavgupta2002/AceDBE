@@ -1,7 +1,7 @@
 import { QuestionFile, IIMBQuestion, Question } from './types';
 
 // Convert IIMB question format to internal format
-export function convertToInternalFormat(
+function convertToInternalFormat(
   iimbQuestion: IIMBQuestion,
   source?: string,
   subjectCode?: string,
@@ -34,7 +34,7 @@ export function convertToInternalFormat(
 }
 
 // Load question file from public/data directory via API
-export async function loadQuestionFile(
+async function loadQuestionFile(
   bankType: 'CLA' | 'Exam' | 'Custom',
   subjectCode: string,
   bankName: string
@@ -72,7 +72,7 @@ export interface BankInfo {
 }
 
 // Get available banks for a subject and bank type
-export async function getAvailableBanks(
+async function getAvailableBanks(
   bankType: 'CLA' | 'Exam' | 'Custom',
   subjectCode: string
 ): Promise<BankInfo[]> {
@@ -139,18 +139,6 @@ export function convertFileToQuestions(
     out.push(question);
   }
   return out;
-}
-
-// Load all questions for a subject (for full practice mode)
-export async function loadAllQuestionsForSubject(
-  bankType: 'CLA' | 'Exam' | 'Custom',
-  subjectCode: string
-): Promise<Question[]> {
-  const banks = await getAvailableBanks(bankType, subjectCode);
-  const results = await Promise.all(
-    banks.map(bank => loadQuestions(bankType, subjectCode, bank.bankName))
-  );
-  return results.flat();
 }
 
 // Set with modules info

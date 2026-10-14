@@ -4,13 +4,10 @@ import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import {
-  BookOpen,
   Printer,
   PlayCircle,
   HelpCircle,
   Loader2,
-  ArrowRight,
-  ExternalLink,
   MonitorPlay,
 } from 'lucide-react';
 import { TermPyqGroup, ExamPaperInfo, SubjectPyqInfo } from '@/lib/pyqService';

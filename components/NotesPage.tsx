@@ -7,7 +7,7 @@ import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import rehypeRaw from 'rehype-raw';
-import { ArrowLeft, BookOpen, ChevronDown, Type, Printer } from 'lucide-react';
+import { BookOpen, ChevronDown, Type, Printer } from 'lucide-react';
 import { loadNotes, loadShortNotes } from '@/lib/notesLoader';
 import { getSubjectByCode } from '@/lib/subjectMapping';
 import Header from '@/components/Header';

@@ -171,10 +171,6 @@ export interface BuiltCbtExam {
 
 const questionsOf = (s: ExamPatternSection) => s.question_ids ?? [];
 
-export function paperHasCbt(file: QuestionFile): boolean {
-  return !!resolveExamPattern(file);
-}
-
 /** Answers given in a finished CBT exam, keyed by question id (option labels). Unanswered questions are left out. */
 export function cbtAnswers(result: DigionResult): Record<string, string[]> {
   const out: Record<string, string[]> = {};
