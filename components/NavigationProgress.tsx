@@ -1,11 +1,10 @@
 'use client';
 
 import { useEffect, useRef, useState, Suspense } from 'react';
-import { usePathname, useSearchParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 function NavigationProgressInner() {
     const pathname = usePathname();
-    const searchParams = useSearchParams();
     const [progress, setProgress] = useState(0);
     const [visible, setVisible] = useState(false);
     const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);

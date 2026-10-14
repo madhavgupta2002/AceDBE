@@ -16,7 +16,6 @@ import { gradePoints, gradeFromTotal, type LetterGrade } from '@/lib/cgpa/grades
 import { CGPA_TERMS, getSubjectsForTerm, type CgpaSubject } from '@/lib/cgpa/subjects';
 import { useBatch, AVAILABLE_BATCHES } from '@/contexts/BatchContext';
 
-const MOODLE_LOGIN_URL = 'https://moodle.iimb.ac.in/portal/';
 const MOODLE_GRADE_URL = 'https://moodle.iimb.ac.in/grade/report/user/index.php?id=6211';
 
 const STORAGE_KEY_ROWS = 'ace_dbe_moodle_rows_v1';
