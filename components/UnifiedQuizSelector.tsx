@@ -238,7 +238,7 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
   };
 
   const selectAll = () => {
-    setSelections((prev) => {
+    setSelections(() => {
       const newSelections = new Map(); // Start fresh to clear custom
 
       [...claSets, ...examSets].forEach((set) => {

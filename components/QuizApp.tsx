@@ -5,8 +5,6 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import {
   Question,
-  PracticeMode,
-  QuestionOrder,
   BankType,
   QuizState,
 } from '@/lib/types';
@@ -19,7 +17,6 @@ import ModuleSelector from './ModuleSelector';
 import SourceSelector from './SourceSelector';
 import UnifiedQuizSelector from './UnifiedQuizSelector';
 import Header from './Header';
-import StopWatch from './StopWatch';
 import CbtExam from './CbtExam';
 import PassageCard from './PassageCard';
 import { CbtReviewData, takeCbtReview, toReviewData } from '@/lib/cbtReview';
@@ -56,7 +53,6 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
   });
 
   const [cbtTarget, setCbtTarget] = useState<{ bankName: string; date: string } | null>(null);
-  const [showConfirmation, setShowConfirmation] = useState(false);
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [allQuestions, setAllQuestions] = useState<Question[]>([]);
@@ -924,17 +920,6 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
     }
   }, [showPrintMenu]);
 
-  const confirmGoToMainMenu = () => {
-    setShowConfirmation(true);
-  };
-
-  const handleConfirmation = (confirmed: boolean) => {
-    setShowConfirmation(false);
-    if (confirmed) {
-      router.push('/');
-    }
-  };
-
   if (!subject) {
     return (
       <div className="text-center py-12">
@@ -1794,32 +1779,6 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
             </div>
           )}
         </div>
-
-        {
-          showConfirmation && (
-            <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 z-50">
-              <div className="p-6 bg-surface border border-surface-border/60 max-w-sm w-full rounded-xl shadow-card">
-                <p className="mb-4 text-slate-300">
-                  Are you sure you want to go back to the main menu? Your progress will be lost.
-                </p>
-                <div className="flex justify-end gap-2">
-                  <button
-                    onClick={() => handleConfirmation(false)}
-                    className="px-4 py-2 bg-slate-700/60 text-slate-200 border border-slate-600/40 hover:bg-slate-600 transition-all duration-200 rounded-lg"
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    onClick={() => handleConfirmation(true)}
-                    className="px-4 py-2 bg-red-600/80 text-white border border-red-500/40 hover:bg-red-500 transition-all duration-200 rounded-lg"
-                  >
-                    Confirm
-                  </button>
-                </div>
-              </div>
-            </div>
-          )
-        }
       </div>
       {cbtTarget && subject && (
         <CbtExam

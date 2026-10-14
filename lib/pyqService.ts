@@ -10,7 +10,7 @@ export interface ExamCycle {
   name: string;
 }
 
-export const ALL_EXAM_CYCLES: ExamCycle[] = [
+const ALL_EXAM_CYCLES: ExamCycle[] = [
   { id: 'cycle-1', label: 'Jan 2025', name: 'Cycle 1 (Jan 2025)' },
   { id: 'cycle-2', label: 'May 2025', name: 'Cycle 2 (May 2025)' },
   { id: 'cycle-3', label: 'Sep/Oct 2025', name: 'Cycle 3 (Sep/Oct 2025)' },
