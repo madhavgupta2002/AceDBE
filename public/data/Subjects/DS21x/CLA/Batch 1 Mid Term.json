@@ -156,7 +156,7 @@
         },
         {
             "question_id": "MT1_Q11",
-            "question_text": "A tea shop owner wants to know if there is a relationship between gender (male and female) and the preferred flavour of tea. The following table summarizes the results. If we want to perform a chi-squared test of independence, what should be the degrees of freedom for that test?\n\n| GENDER | Mint | Normal | Ginger | Total |\n| :--- | :--- | :--- | :--- | :--- |\n| Male | 8 | 25 | 19 | 52 |\n| Female | 14 | 20 | 10 | 44 |\n| Total | 22 | 45 | 29 | 96 |",
+            "question_text": "A tea shop owner wants to know if there is a relationship between gender (male and female) and the preferred flavour of tea. The following table summarizes the results. If we want to perform a chi-squared test of independence, what should be the degrees of freedom for that test?\n\n| | **FLAVOUR** | | | |\n| :--- | :---: | :---: | :---: | :---: |\n| **GENDER** | **Mint** | **Normal** | **Ginger** | **Total** |\n| **Male** | 8 | 25 | 19 | 52 |\n| **Female** | 14 | 20 | 10 | 44 |\n| **Total** | 22 | 45 | 29 | 96 |",
             "question_type": "MCQ",
             "options": {
                 "A": "6",
@@ -171,7 +171,7 @@
         },
         {
             "question_id": "MT1_Q12",
-            "question_text": "A company wants to predict whether an employee will be promoted (Y=1) or not (Y=0) based on the number of years of experience (X). The company collected relevant data and implemented a logistic regression which led to the estimated coefficients: intercept = 0.3, slope = 0.2. What is the probability that an employee with 6 years of experience will be promoted?",
+            "question_text": "A company wants to predict whether an employee will be promoted (Y=1) or not (Y=0) based on the number of years of experience (X). The company collected relevant data and implemented a logistic regression which led to the estimated coefficients: **$\\hat{\\beta}_0 = 0.3$** (intercept), **$\\hat{\\beta}_1 = 0.2$** (slope parameter corresponding to $X$). What is the probability that an employee with 6 years of experience will be promoted?",
             "question_type": "MCQ",
             "options": {
                 "A": "82%",
@@ -186,7 +186,7 @@
         },
         {
             "question_id": "MT1_Q13",
-            "question_text": "A physician states that the median number of times he sees each of his patients during the year is 5. Using the Wilcoxon Signed-Rank test provided in the table, what will be the value of the positive and negative signed rank sums for this problem?",
+            "question_text": "A physician states that the median number of times he sees each of his patients during the year is 5. To evaluate the validity of this statement, he randomly selects ten of his patients and determines the number of office visits each of them made during the past year. He obtains the following values for the ten patients in his sample: **9, 10, 8, 4, 8, 3, 0, 10, 15, 9.**\n\n| Patient Visits ($X_i$) | Difference ($X_i - 5$) | Absolute Rank | Absolute rank arranged in ascending order | Rank | Signed Rank |\n| :---: | :---: | :---: | :---: | :---: | :---: |\n| 9 | 4 | 4 | 1 | 1 | -1 |\n| 10 | 5 | 5 | 2 | 2 | -2 |\n| 8 | 3 | 3 | 3 | 3.5 | 3.5 |\n| 4 | -1 | 1 | 3 | 3.5 | 3.5 |\n| 8 | 3 | 3 | 4 | 5.5 | 5.5 |\n| 3 | -2 | 2 | 4 | 5.5 | 5.5 |\n| 0 | -5 | 5 | 5 | 7.5 | 7.5 |\n| 10 | 5 | 5 | 5 | 7.5 | 7.5 |\n| 15 | 10 | 10 | 5 | 7.5 | -7.5 |\n| 9 | 4 | 4 | 10 | 10 | 10 |\n\nThe Wilcoxon Signed-Rank test statistic is:\n$W^+ = \\sum(\\text{Positive Signed Ranks})$, and\n$W^- = \\sum(\\text{Negative Signed Ranks})$\n\nWhat will be the value of $W^+$ and $W^-$ for this problem?",
             "question_type": "MCQ",
             "options": {
                 "A": "-10, 14",
@@ -196,12 +196,12 @@
                 "E": "None of the above"
             },
             "correct_option_label": "C",
-            "explanation": "Based on the provided ranking table: Sum of Positive Ranks = $3.5 + 5.5 + 5.5 + 7.5 + 7.5 + 10 = 39.5$ (plus other ranks in table summing to 43); Sum of Negative Ranks = $(-1) + (-2) + (-7.5) = -10.5$.",
+            "explanation": "Based on the provided ranking table: Sum of Positive Signed Ranks $W^+ = 3.5 + 3.5 + 5.5 + 5.5 + 7.5 + 7.5 + 10 = 43$; Sum of Negative Signed Ranks $W^- = (-1) + (-2) + (-7.5) = -10.5$.",
             "module": 1
         },
         {
             "question_id": "MT1_Q14",
-            "question_text": "Two researchers investigated student intelligence levels. Calculate the expected value “Above Average” for Researcher X while using the Chi – Square goodness of fit.\n\n| Researcher | Below Average | Average | Above Average | Genius | Row Total |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| X | 86 | 60 | 44 | 10 | 200 |\n| Y | 40 | 33 | 25 | 2 | 100 |\n| Column Total | 126 | 93 | 69 | 12 | 300 |",
+            "question_text": "Two researchers adopted different sampling techniques while investigating the same group of students to find the number of students falling in different intelligence levels. The results are as follows:\n\n| | **No. of students in each level** | | | | |\n| :--- | :---: | :---: | :---: | :---: | :---: |\n| **Researcher** | **Below Average** | **Average** | **Above Average** | **Genius** | **Row Total** |\n| X | 86 | 60 | 44 | 10 | 200 |\n| Y | 40 | 33 | 25 | 2 | 100 |\n| **Column Total** | 126 | 93 | 69 | 12 | **Grand Total = 300** |\n\nCalculate the expected value “Above Average” for Researcher X while using the Chi – Square goodness of fit.",
             "question_type": "MCQ",
             "options": {
                 "A": "500",
@@ -216,7 +216,7 @@
         },
         {
             "question_id": "MT1_Q15",
-            "question_text": "A teacher predicts final exam scores based on hours studied. Intercept = 32.85, slope = 4.91. Predict the exam score of a student who studies 10 hours.",
+            "question_text": "A teacher wants to predict a student’s final exam score based on the number of hours they studied. The following table provides data for eight students:\n\n| Hours Studied | Final Exam Score |\n| :--- | :--- |\n| 2 | 50.33 |\n| 4 | 62.5 |\n| 6.5 | 67 |\n| 10.25 | 88 |\n| 8.5 | 82 |\n| 7 | 45 |\n| 5.5 | 42 |\n| 9 | 85 |\n\nHere **$\\hat{\\beta}_0$** (intercept) = 32.85, and **$\\hat{\\beta}_1$** (slope) = 4.91. Predict the exam score of a student who studies 10 hours.",
             "question_type": "MCQ",
             "options": {
                 "A": "88",
@@ -226,7 +226,7 @@
                 "E": "82"
             },
             "correct_option_label": "E",
-            "explanation": "Using the linear regression equation $Y = \\text{Intercept} + \\text{Slope} \\times X$: $Y = 32.85 + 4.91 \\times 10 = 32.85 + 49.1 = 81.95 \\approx 82$.",
+            "explanation": "Using the linear regression equation $\\hat{Y} = \\hat{\\beta}_0 + \\hat{\\beta}_1 X$: $\\hat{Y} = 32.85 + 4.91 \\times 10 = 32.85 + 49.1 = 81.95 \\approx 82$.",
             "module": 2
         },
         {
