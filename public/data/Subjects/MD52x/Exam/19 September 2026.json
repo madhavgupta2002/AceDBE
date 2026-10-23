@@ -1,0 +1,561 @@
+{
+    "exam_metadata": {
+        "subject_name": "New Product Development",
+        "exam_date": "19 September 2026",
+        "batch": "",
+        "attempt": "",
+        "exam_pattern": {
+            "exam_name": "IIMB BBA DBE Term 5 Retake 1",
+            "duration_min": 120,
+            "total_marks": 75,
+            "negative_marking": false,
+            "calculator": "none",
+            "timing_mode": "global",
+            "reference_materials": [],
+            "instructions": [],
+            "sections": [
+                {
+                    "name": "Section A",
+                    "question_type": "MCQ",
+                    "num_questions": 30,
+                    "marks_per_question": 1,
+                    "question_ids": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12",
+                        "13",
+                        "14",
+                        "15",
+                        "16",
+                        "17",
+                        "18",
+                        "19",
+                        "20",
+                        "21",
+                        "22",
+                        "23",
+                        "24",
+                        "25",
+                        "26",
+                        "27",
+                        "28",
+                        "29",
+                        "30"
+                    ]
+                },
+                {
+                    "name": "Section B",
+                    "question_type": "SHORT_ANSWER",
+                    "num_questions": 9,
+                    "marks_per_question": 5,
+                    "question_ids": [
+                        "31",
+                        "32",
+                        "33",
+                        "34",
+                        "35",
+                        "36",
+                        "37",
+                        "38",
+                        "39"
+                    ]
+                }
+            ],
+            "total_questions": 39
+        }
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "What is the typical development timeframe for a breakthrough (new-to-the-world) product?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "5 to 8 years",
+                "B": "6 to 18 months",
+                "C": "3 to 5 years",
+                "D": "1 to 2 years"
+            },
+            "correct_option_label": "C",
+            "explanation": "A breakthrough (new-to-the-world) product needs radical research and many development iterations. It typically takes 3 to 5 years to launch.",
+            "module": 4
+        },
+        {
+            "question_id": "2",
+            "question_text": "Titan Company's \"Titan\" (premium watches) and \"Fastrack\" (youth-casual watches) brands are examples of choices related to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Retail channel format and customer experience differentiation",
+                "B": "After-sales service and warranty structure",
+                "C": "Brand positioning and target segment strategy",
+                "D": "Manufacturing process design"
+            },
+            "correct_option_label": "C",
+            "explanation": "Titan (premium) and Fastrack (youth-casual) are separate brands aimed at different segments. They are therefore choices of brand positioning and target segment strategy.",
+            "module": 6
+        },
+        {
+            "question_id": "3",
+            "question_text": "Which approach is recommended to increase flexibility when technology changes fast?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An agile approach with iterative design",
+                "B": "A parallel development approach where all teams work simultaneously from fixed specifications",
+                "C": "A structured, sequential process with detailed upfront design specifications",
+                "D": "A phased stage-gate model with cross-functional reviews at defined milestones"
+            },
+            "correct_option_label": "A",
+            "explanation": "When technology changes quickly, an agile approach with iterative design keeps development flexible. It allows progressive commitments and design revisions as new information arrives.",
+            "module": 5
+        },
+        {
+            "question_id": "4",
+            "question_text": "When a bakery chain known only for bread launches its first-ever range of beverages, it is called a:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "New product line for the firm",
+                "B": "Brand extension into an adjacent product category",
+                "C": "Market development using an existing product formulation",
+                "D": "Diversification through a new-to-the-firm product category"
+            },
+            "correct_option_label": "A",
+            "explanation": "A bakery known only for bread launching beverages is introducing a product category new to the firm. This is a new product line for the firm, not just an extension of its existing line.",
+            "module": 3
+        },
+        {
+            "question_id": "5",
+            "question_text": "Listerine's transition from a surgical antiseptic to a mouthwash for \"bad breath\" is an example of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product improvement through a reformulated active ingredient",
+                "B": "Market expansion through a new therapeutic application",
+                "C": "Line extension targeting a new consumer health segment",
+                "D": "Repositioning"
+            },
+            "correct_option_label": "D",
+            "explanation": "Listerine was originally a surgical antiseptic and was later positioned as a mouthwash for bad breath. Keeping the same product but changing how customers perceive it is repositioning.",
+            "module": 3
+        },
+        {
+            "question_id": "6",
+            "question_text": "To mitigate the risk of a poor forecast for a highly uncertain new project, which strategy should a manager adopt?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Conduct broad qualitative research across multiple market segments to validate demand before investing in a pilot",
+                "B": "Build detailed scenario plans with upper and lower demand bounds, then commit to the mid-range estimate for budgeting",
+                "C": "Commit to a strategy of low-cost development and gradual marketing",
+                "D": "Refine the initial forecast using advanced statistical modelling and historical analogues from similar product launches"
+            },
+            "correct_option_label": "C",
+            "explanation": "When a forecast is highly uncertain, the manager should limit exposure by committing to low-cost development and gradual marketing. This keeps the downside small and lets the firm scale up as real demand data emerges.",
+            "module": 6
+        },
+        {
+            "question_id": "7",
+            "question_text": "Which of the following is a key dimension for evaluating a concept at a broad level?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The operational capacity of the existing manufacturing plant",
+                "B": "Strategic fit with corporate vision",
+                "C": "The technical feasibility of individual component specifications",
+                "D": "The estimated retail price relative to competitors' current offerings"
+            },
+            "correct_option_label": "B",
+            "explanation": "At a broad level, a concept is evaluated on dimensions such as strategic fit with corporate vision, market attractiveness and profitability. Detailed technical or operational aspects are assessed later.",
+            "module": 1
+        },
+        {
+            "question_id": "8",
+            "question_text": "Adding a rubber, non-slip grip to the handle of a kitchen knife is an example of what type of innovation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Disruptive platform innovation",
+                "B": "User-experience aesthetic refinement",
+                "C": "Market-driven functional innovation",
+                "D": "Incremental process innovation for manufacturing efficiency"
+            },
+            "correct_option_label": "C",
+            "explanation": "A non-slip grip makes the knife more functional for the user without changing its core technology. It is a market-driven functional innovation.",
+            "module": 2
+        },
+        {
+            "question_id": "9",
+            "question_text": "Which statement best validates Steve Jobs' philosophy that \"customers do not know what they want\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Customers can only visualize what they are currently using and their complaints about it",
+                "B": "Focus groups accurately predict breakthrough product demand before launch",
+                "C": "Customers reliably identify unmet needs when shown competitive benchmarks",
+                "D": "Customers consistently overestimate how much they are willing to pay for new features"
+            },
+            "correct_option_label": "A",
+            "explanation": "Customers can only visualise what they already use and what they complain about. They cannot imagine breakthrough products that do not yet exist, which is why Jobs distrusted asking them directly.",
+            "module": 5
+        },
+        {
+            "question_id": "10",
+            "question_text": "How does a smartphone's architecture differ from a desktop computer's in terms of modularity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The desktop allows for easy component upgrades (Modular); the smartphone is condensed and difficult to change (Integral)",
+                "B": "The smartphone is integral due to its operating system; the desktop is modular due to its open-source software",
+                "C": "Both are modular; the difference lies only in physical form factor and not component interdependence",
+                "D": "The smartphone is modular; the desktop is integral"
+            },
+            "correct_option_label": "A",
+            "explanation": "A desktop has separable components that can easily be upgraded, so it has a modular architecture. A smartphone packs components tightly together and is hard to change, so it has an integral architecture.",
+            "module": 7
+        },
+        {
+            "question_id": "11",
+            "question_text": "What is the primary trade-off when deciding to build a prototype \"In-House\" versus \"Outsourcing\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Both approaches carry identical risks; the decision depends purely on the cost per unit produced",
+                "B": "In-house protects secrecy and skilled knowledge; outsourcing identifies production problems objectively and scales easily",
+                "C": "In-house development ensures faster time-to-market; outsourcing ensures higher product quality",
+                "D": "Outsourcing protects IP secrecy through NDA contracts; in-house building is preferred for mature, high-volume production runs"
+            },
+            "correct_option_label": "B",
+            "explanation": "Building in-house protects secrecy and retains skilled knowledge within the firm. Outsourcing gives an objective view of production problems and scales easily.",
+            "module": 3
+        },
+        {
+            "question_id": "12",
+            "question_text": "Why is \"Interdepartmental Integration\" particularly critical for complex projects?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because complex projects benefit from sequential handoffs between isolated specialist teams to avoid overlap",
+                "B": "To allow each department to maintain an independent budget and development roadmap",
+                "C": "To reduce the number of approval stages by consolidating decision-making in a single department",
+                "D": "Because they require diverse skills and coordination across long gestation periods"
+            },
+            "correct_option_label": "D",
+            "explanation": "Complex projects need diverse skills and have long gestation periods. Interdepartmental integration ensures these functions coordinate continuously instead of working in isolation.",
+            "module": 1
+        },
+        {
+            "question_id": "13",
+            "question_text": "Distinguish between \"User-oriented\" and \"Result-oriented\" Product Service System.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Result-oriented PSS transfers legal ownership to the user upon contract signing, unlike User-oriented PSS",
+                "B": "User-oriented PSS involves the customer paying per unit of output delivered; Result-oriented PSS centres on the manufacturer retaining asset ownership throughout the contract period",
+                "C": "User-oriented involves renting/leasing a product, while Result-oriented involves paying for a specific outcome (e.g., voicemail)",
+                "D": "User-oriented PSS is typically B2C, while Result-oriented PSS applies only to industrial B2B contracts where performance is contractually guaranteed"
+            },
+            "correct_option_label": "C",
+            "explanation": "In a User-oriented PSS the customer pays to use a product (renting, leasing, sharing) while the provider keeps ownership. In a Result-oriented PSS the customer pays for the outcome delivered, such as voicemail instead of buying an answering machine.",
+            "module": 3
+        },
+        {
+            "question_id": "14",
+            "question_text": "Why is a prototype critical in the development process?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It signals readiness for full-scale manufacturing, eliminating the need for further concept validation",
+                "B": "It validates the final cost structure and confirms the production budget",
+                "C": "It serves as a feedback loop for testing and refinement",
+                "D": "It establishes the legal basis for a patent application before commercialization"
+            },
+            "correct_option_label": "C",
+            "explanation": "A prototype is the first tangible output of technical development and lets users test the concept. Their feedback feeds back into testing and refinement before full-scale production.",
+            "module": 3
+        },
+        {
+            "question_id": "15",
+            "question_text": "Which testing stage involves internal employees or staff?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "In-house acceptance testing",
+                "B": "Beta testing",
+                "C": "Alpha testing",
+                "D": "Gamma testing"
+            },
+            "correct_option_label": "C",
+            "explanation": "Alpha testing is the first product use test and is carried out in-house by the firm's own employees or staff. Beta testing, by contrast, uses selected external customers.",
+            "module": 7
+        },
+        {
+            "question_id": "16",
+            "question_text": "What is a \"monadic test\" in product use testing?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "An in-lab blind test where the brand name is concealed but two variants are evaluated side by side",
+                "B": "A sequential comparison where a respondent tests product A, then immediately rates product B",
+                "C": "A respondent tests a single product for a period of time",
+                "D": "A large-panel test where at least 100 respondents evaluate the same product simultaneously"
+            },
+            "correct_option_label": "C",
+            "explanation": "A monadic test has a respondent evaluate a single product over a period of time. Paired comparison and sequential monadic tests involve more than one product.",
+            "module": 6
+        },
+        {
+            "question_id": "17",
+            "question_text": "A smartphone manufacturer adds water and dust resistance to its next model. What type of demand creation is this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Aesthetic modification",
+                "B": "Utility enhancement",
+                "C": "Regulatory compliance update",
+                "D": "Price reduction"
+            },
+            "correct_option_label": "B",
+            "explanation": "Water and dust resistance improve how useful the phone is in daily use. This is utility enhancement, a way of creating demand for an existing product.",
+            "module": 5
+        },
+        {
+            "question_id": "18",
+            "question_text": "In a \"hyper-competitive\" market, what is the strategic paradox regarding launching new products?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Launching new products is cost-effective only when the firm can achieve economies of scale within the first two quarters to offset the R&D investment",
+                "B": "Launching new products is highly profitable, but nobody wants to buy them",
+                "C": "New products are strategically necessary, but firms should adopt a fast-follower strategy to let first-movers absorb market development costs before entering",
+                "D": "Launching new products is costly and risky, but not launching them is even riskier because you lose market share"
+            },
+            "correct_option_label": "D",
+            "explanation": "In hyper-competitive markets, products become obsolete quickly. Launching new products is costly and risky, but not launching is riskier because the firm loses market share.",
+            "module": 1
+        },
+        {
+            "question_id": "19",
+            "question_text": "You are launching a new organic pet food brand. To appeal to pet owners' emotions and build trust, which right-brain capability should you utilize?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Compelling storytelling that explains the personal, empathetic origin story of the product",
+                "B": "A data-driven impact report with verified third-party certifications and clinical safety scores",
+                "C": "An influencer-led unboxing campaign focused on product aesthetics and packaging design",
+                "D": "A comparative ingredient transparency label showing superiority over chemical-based competitors"
+            },
+            "correct_option_label": "A",
+            "explanation": "Right-brain capabilities such as storytelling, empathy and emotion build trust with customers. An empathetic origin story of the brand appeals directly to pet owners' emotions.",
+            "module": 2
+        },
+        {
+            "question_id": "20",
+            "question_text": "To target Bottom of Pyramid consumers who have irregular or daily cash flows, what business model innovation should an appliance company apply?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Partner with a single national retailer to offer subsidised units exclusively through postpaid plans",
+                "B": "Offer micro-loans, EMI structures, or flexible financing schemes",
+                "C": "Bundle the device with a mandatory 24-month service plan billed in advance on a fixed monthly cycle",
+                "D": "Position the device as an aspirational premium product to leverage status-driven purchase behaviour"
+            },
+            "correct_option_label": "B",
+            "explanation": "Bottom of Pyramid consumers earn irregular or daily cash flows, so large upfront payments are a barrier. Micro-loans, EMIs and flexible financing make the product affordable in small instalments.",
+            "module": 1
+        },
+        {
+            "question_id": "21",
+            "question_text": "What major feature was added to the Nokia 1100 specifically to solve a real-life rural consumer problem?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A built-in physical torchlight",
+                "B": "An extended-life removable battery with a week-long standby time",
+                "C": "A dust-and-moisture resistant rubberised casing",
+                "D": "A regional language voice-recognition system for rural dialects"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Nokia 1100 added a built-in physical torchlight to solve a real rural problem: frequent power cuts and poor lighting. It is a classic example of solving a real-life consumer need.",
+            "module": 1
+        },
+        {
+            "question_id": "22",
+            "question_text": "Why is a system-level green innovation superior to a piece-by-piece design adjustment?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Piece-by-piece adjustments are less disruptive and achieve the same cumulative environmental impact over time",
+                "B": "System-level changes allow companies to claim green certification without modifying core manufacturing processes",
+                "C": "It embeds environmental sustainability into the entire product philosophy and overall design from the start, rather than just adjusting minor stages",
+                "D": "It distributes environmental responsibility across the supply chain, shifting the burden to raw material suppliers"
+            },
+            "correct_option_label": "C",
+            "explanation": "System-level green innovation builds sustainability into the whole product philosophy and design from the start. Piece-by-piece adjustments only tweak minor stages and so have limited impact.",
+            "module": 8
+        },
+        {
+            "question_id": "23",
+            "question_text": "A manufacturer wants to mitigate liability for a blender that could injure users if opened while the blade is still spinning. Which action would MOST effectively reduce risk through product design?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Include a disclaimer limiting liability",
+                "B": "Implement an automatic lid-lock sensor that prevents the blade from spinning unless the lid is properly sealed",
+                "C": "Affix prominent, standardized safety warning labels and detailed instructions",
+                "D": "Obtain third-party safety certification"
+            },
+            "correct_option_label": "B",
+            "explanation": "Design is the most effective way to reduce liability, because it removes the hazard itself. An automatic lid-lock sensor stops the blade whenever the lid is not sealed, whereas disclaimers, labels and certificates only warn or shift blame.",
+            "module": 6
+        },
+        {
+            "question_id": "24",
+            "question_text": "What are the four core steps of a launch management system?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Concept screening, business analysis, product development, and test marketing",
+                "B": "Demand forecasting, channel selection, pricing strategy, and post-launch customer satisfaction monitoring",
+                "C": "Setting sales targets, assigning regional managers, briefing the PR agency, and scheduling the launch event",
+                "D": "Identifying potential problems, Tracking variables, Identifying trigger points, and Exercising contingency/remedial plans"
+            },
+            "correct_option_label": "D",
+            "explanation": "A launch management system has four core steps: identify potential problems, track the key variables, identify trigger points, and exercise contingency or remedial plans when a trigger is breached.",
+            "module": 7
+        },
+        {
+            "question_id": "25",
+            "question_text": "Neurosynaptic's early neurotechnology device helped blind users \"see\" obstacles by projecting a camera feed onto an electrode array placed in the mouth. Which physiological principle did this device exploit?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Retinal regeneration",
+                "B": "Muscular reflex conditioning",
+                "C": "Cochlear resonance",
+                "D": "Neural plasticity — the brain repurposing the tongue's dense sensory nerves to interpret visual data"
+            },
+            "correct_option_label": "D",
+            "explanation": "The Neurosynaptic device projected camera images onto an electrode array on the tongue, which is rich in sensory nerves. This relies on neural plasticity, where the brain repurposes one sensory pathway to interpret another sense.",
+            "module": 6
+        },
+        {
+            "question_id": "26",
+            "question_text": "Neurosynaptic's first rural telemedicine pilot saw patient traffic collapse after an initial surge. What root cause did the founder identify?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The video conferencing bandwidth was too low for patients to see the doctor",
+                "B": "Doctors refused to participate in the pilot after the first week",
+                "C": "The kiosk's solar power supply failed during the second week",
+                "D": "The consultation technology worked well, but there was no nearby pharmacy to fill prescriptions, so patients reverted to informal pharmacists"
+            },
+            "correct_option_label": "D",
+            "explanation": "Neurosynaptic's consultation technology worked, but the ecosystem was incomplete, with no nearby pharmacy to fill prescriptions. Patients therefore went back to informal pharmacists and traffic collapsed.",
+            "module": 5
+        },
+        {
+            "question_id": "27",
+            "question_text": "According to practitioner alumni interviewed for the course, what is the core distinction between product management and project management?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Project management always ranks above product management in the org chart",
+                "B": "Product management is only for software; project management is only for hardware",
+                "C": "Product management is about deciding what to build by understanding customer pain points, while project management is about scoping deliverables and timelines to ensure execution",
+                "D": "There is no meaningful difference; the terms are interchangeable in every company"
+            },
+            "correct_option_label": "C",
+            "explanation": "Product management decides what to build by understanding customer pain points. Project management scopes deliverables and timelines to make sure execution happens.",
+            "module": 4
+        },
+        {
+            "question_id": "28",
+            "question_text": "A design change that costs $10 if made during the initial design stage will typically cost how much if delayed until the production stage?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "$50",
+                "B": "$100",
+                "C": "$1,000",
+                "D": "$500"
+            },
+            "correct_option_label": "C",
+            "explanation": "Cost of a design change grows roughly 10x at each stage: about $10 at the design stage, $100 at the process design stage and $1,000 at the production stage. So a change delayed to production costs about $1,000.",
+            "module": 2
+        },
+        {
+            "question_id": "29",
+            "question_text": "In the Buyer Utility Map, a \"blue square\" represents:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A stage/utility combination left completely unaddressed by the current market, representing an open opportunity",
+                "B": "A declining, saturated product category",
+                "C": "A stage/utility combination where both the firm and its competitors are heavily active",
+                "D": "A utility dimension that customers actively dislike"
+            },
+            "correct_option_label": "A",
+            "explanation": "In the Buyer Utility Map, blue squares are stage/utility combinations that no competitor addresses, so they are open blue-ocean opportunities. Red squares are where competitors are already active.",
+            "module": 2
+        },
+        {
+            "question_id": "30",
+            "question_text": "In the Kano Model, a feature that causes no dissatisfaction if it's missing (because users never expected it) but creates a significant satisfaction spike and commands a price premium if included is classified as a(n):",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Must-Have Attribute",
+                "B": "One-Dimensional Attribute",
+                "C": "Attractive Attribute (Delighter)",
+                "D": "Reverse Attribute"
+            },
+            "correct_option_label": "C",
+            "explanation": "In the Kano Model, an Attractive attribute (Delighter) is unexpected, so its absence causes no dissatisfaction. Its presence creates a large satisfaction spike and supports a price premium.",
+            "module": 4
+        },
+        {
+            "question_id": "31",
+            "question_text": "A no-frills budget airline Y aims to attract cost-conscious leisure travellers who currently avoid full-service carriers due to high fares. Using the ERRC Grid (Eliminate, Reduce, Raise, Create), identify two high-cost traditional airline factors that Y can completely eliminate to lower fares, and suggest one new convenience factor Y should create to specifically target this segment?",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Under ERRC, a budget airline can eliminate high-cost frills such as first/business class cabins and complimentary meals or lounges. It can also eliminate loyalty programmes or multiple aircraft types, which saves cost. A new convenience factor to create is a simple self-service digital booking and check-in process, or flights between convenient secondary airports, which suits cost-conscious leisure travellers.",
+            "module": 5
+        },
+        {
+            "question_id": "32",
+            "question_text": "A consumer electronics brand is launching an entry-level electric scooter in an emerging market. The R&D team suggests using low-grade, cheap battery cells to minimise retail prices. Evaluate this suggestion by contrasting a price-sensitive consumer with a value-conscious consumer. Which mindset is more likely to play out in emerging markets?",
+            "question_type": "SUBJECTIVE",
+            "explanation": "A price-sensitive consumer looks only at the upfront price, while a value-conscious consumer weighs price against performance, durability and total cost of ownership. Emerging-market consumers are increasingly value-conscious and are willing to pay a slight premium for quality. Cheap, low-grade battery cells would fail on durability and repair costs, so the R&D suggestion should be rejected.",
+            "module": 5
+        },
+        {
+            "question_id": "33",
+            "question_text": "A startup is launching a fitness-tracking wearable band. The product manager wants to establish a clear launch tracking system to prevent slow customer adoption. Draft a brief Launch Management Plan by identifying one critical variable to track, defining a specific quantitative trigger point for that variable, and outlining a contingency action to execute if that trigger point is breached.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Variable to track: app activation rate, meaning the share of buyers who download the companion app and sync the band. Trigger point: activation below 60% within 4 weeks of purchase. Contingency action: add a setup guide and video walkthrough in the box, send onboarding prompts and run an activation incentive to lift adoption.",
+            "module": 6
+        },
+        {
+            "question_id": "34",
+            "question_text": "Explain how a product manager should use a \"blind\" paired comparison test to evaluate a new coffee blend prototype. Why is keeping the brand identity hidden critical to obtaining accurate user feedback on taste and sensory properties?",
+            "question_type": "SUBJECTIVE",
+            "explanation": "In a blind paired comparison test, the new coffee blend is tested against a control such as the firm's bestseller or a well-known blend, because a satisfaction score means little without a benchmark. Respondents taste both unlabelled and state a preference. Hiding the brand removes the halo effect and brand loyalty bias, so feedback reflects only taste and sensory properties.",
+            "module": 4
+        },
+        {
+            "question_id": "35",
+            "question_text": "How can a company combine \"service enhancement\" (such as authorised warranties) with data encryption to protect a connected digital product's design from piracy and counterfeiting in a market where legal enforcement is weak?",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Where legal enforcement is weak, the company can pair service enhancement (authorised warranties, support, updates available only to genuine users) with data encryption and access controls such as biometrics or activation keys. This makes pirated or counterfeit copies less useful. The firm should also design a product that is hard or unnecessary to pirate, for example by pricing it low or tying the experience to the user.",
+            "module": 4
+        },
+        {
+            "question_id": "36",
+            "question_text": "How can a company leverage a \"Super Fan Community\" (like the Harley Owners Group for Harley-Davidson) to identify and bypass design-related product frustrations before a new product ever reaches the mass market?",
+            "question_type": "SUBJECTIVE",
+            "explanation": "A Super Fan Community of loyalists, early adopters and lead users knows the product well. The company can build a forum, share prototypes and new designs with them, and invite them to test and co-create (as LEGO does). Their feedback reveals frustrations and design issues, including from analogous uses, before the mass-market launch.",
+            "module": 2
+        },
+        {
+            "question_id": "37",
+            "question_text": "Using Tata Motors' transition from conventional ICE cars to EV development as a backdrop, evaluate the economic trade-offs of balancing a portfolio between short-term support products and long-term breakthrough innovations. How should a product manager utilise a Stage-Gate funnel to systematically mitigate the financial and technological risks of this transition?",
+            "question_type": "SUBJECTIVE",
+            "explanation": "Short-term support products (current ICE models) give reliable cash flow at low development cost, but relying only on them erodes competitiveness. Long-term breakthrough products (EVs) are costly and take 3-5 years but secure future relevance, so the portfolio should balance both. A Stage-Gate funnel starts with many ideas and narrows them through go/no-go gates with cross-functional teams, which limits financial and technological risk by staging investment.",
+            "module": 8
+        },
+        {
+            "question_id": "38",
+            "question_text": "A digital-health startup's core telemedicine hardware worked flawlessly in a rural pilot, yet patient visits collapsed to zero within weeks. Diagnose the root cause using the concept of an incomplete ecosystem (as illustrated in the New Product Development practitioner interviews), and propose two adjacent services the startup should bundle alongside its core diagnostic technology to sustain patient traffic.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "The root cause was an incomplete ecosystem: the telemedicine technology worked, but patients had no nearby pharmacy to fill prescriptions or clinics for tests, so they stopped visiting. The startup should bundle (1) a medicine/pharmacy delivery service and (2) diagnostic or blood-testing services, for example via mobile units. This completes the end-to-end solution and sustains patient traffic.",
+            "module": 7
+        },
+        {
+            "question_id": "39",
+            "question_text": "A kitchenware company wants to redesign its vegetable peeler. Using the Buyer Utility Map and the three tiers of Lead Users (Target Application, Analogous Market, Specialized Problem Area) as frameworks, identify one \"blue square\" opportunity on the map and one analogous-market lead user the company could study to fill it.",
+            "question_type": "SUBJECTIVE",
+            "explanation": "The Buyer Utility Map is a 6x6 grid of product life-cycle stages against utilities, and a blue square is a stage/utility cell no competitor serves. For the peeler, a blue square could be the usability (or simplicity) utility at the purchase/use stage, for example a very durable forged-steel peeler that does not need replacing. An analogous-market lead user is campers and hikers, who shave sticks and tinder with rugged tools, and studying them guides a robust design.",
+            "module": 2
+        }
+    ]
+}
