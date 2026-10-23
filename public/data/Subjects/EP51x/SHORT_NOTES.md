@@ -38,6 +38,9 @@
 > **PYQ:** Which of the following is **NOT** typically a role of the finance function?
 > - **Manufacturing products** ✓
 >
+> **PYQ:** Which of the following is **NOT** primarily a function of the finance department? (Ensuring all staff are paid well to maintain motivation / Raising and deploying finance sustainably / Measuring and communicating performance)
+> - **Ensuring all staff are paid well to maintain motivation** (primarily an HR function; raising/deploying finance sustainably and measuring/communicating performance are finance roles) ✓
+>
 > **Q:** According to venture finance principles, an entrepreneur is also considered a capital provider because they contribute:
 > - **Intellectual capital, skills, and experience** ✓
 >
@@ -71,6 +74,9 @@
 
 > **PYQ:** Which is the most logical sequence of venture life-cycle stages?
 > - **Proof of concept → customer acquisition → scaling of operations → mature growth → recapitalisation** ✓
+>
+> **PYQ:** Which of the following could be likely concerns for a start-up? I. Growth potential; II. Raising resources; III. Innovative idea; IV. Capturing market
+> - **II and IV** (growth potential and an innovative idea are strengths/opportunities, not concerns) ✓
 >
 > **Q:** Why do start-ups often divide enterprise development into phases?
 > - **To manage activities and capital requirements more effectively** ✓
@@ -262,6 +268,8 @@ $$\text{Market Capitalization} = \text{Total Outstanding Shares} \times \text{Cu
 > - Rejection of proposals based on preliminary criteria = **Deal Screening** ✓
 > - Due diligence, business model analysis, and valuation = **Deal Evaluation** ✓
 > - Proposing financing package and terms = **Deal Structuring** ✓
+> - Promising startup identified by investor = **Deal Sourcing** ✓
+> - Negotiating equity stake and control rights = **Deal Structuring** ✓
 > - Investor sells stake through IPO = **Exit** ✓
 > - Post-funding investor actions = **Investor Monitoring** ✓
 >
@@ -366,6 +374,12 @@ $$\text{Equity Value} = \text{Enterprise Value} - \text{Total Debt} - \text{Othe
 > - EV/Sales = **Useful when earnings are negative or unstable** ✓
 > - EV/EBITDA = **Measures value relative to operating earnings before charging depreciation** ✓
 >
+> **PYQ:** Which statement regarding P/E and P/B ratios is most likely **NOT** correct?
+> - **"The P/B ratio of a company is high because its book value is high due to high accumulated profits"** (a high P/B reflects intangibles/growth; a high book value would *lower* P/B) ✓
+>
+> **PYQ:** Which statements are most likely **NOT** correct generally? I. Higher growth rate firms tend to have higher valuation; II. Highly levered firms generally have high valuation; III. Large firms are riskier than small firms; IV. Risky firms generally have low valuation
+> - **II and III** (levered firms are riskier so valued lower; large firms are generally less risky than small ones) ✓
+>
 > **Q:** Why do companies within the same industry tend to have similar P/E and P/B ratios?
 > - **They have similar relationships between capital, sales, and profits** ✓
 >
@@ -405,6 +419,25 @@ $$\text{Equity Value} = \text{Enterprise Value} - \text{Total Debt} - \text{Othe
 > $\text{Equity Value} = \text{EV} - \text{Debt} - \text{Other Liabilities} + \text{Cash}$
 > $\text{Equity Value} = 650 - 200 - 50 + 100 = 500\text{ crore}$
 > **Answer = ₹500 crore** ✓
+
+---
+
+**PYQ:** The market value of the equity capital of a company is ₹800 crore. It has debt of ₹200 crore, other financial liabilities of ₹100 crore, and cash and cash equivalents of ₹100 crore. What is the enterprise value of the company?
+
+> *Why: Enterprise value adds debt and other financial liabilities to market equity and subtracts cash.*
+> $\text{EV} = \text{Market Value of Equity} + \text{Debt} + \text{Other Financial Liabilities} - \text{Cash}$
+> $\text{EV} = 800 + 200 + 100 - 100 = 1{,}000\text{ crore}$
+> **Answer = ₹1,000 crore** ✓
+
+---
+
+**PYQ:** The book value of the assets of a company is ₹500 crore. The company has total liabilities of ₹180 crore and preference share capital of ₹20 crore. The company has 30 crore equity shares outstanding. What is the Book Value per Equity Share?
+
+> *Why: Book value per equity share uses net worth attributable to equity, so liabilities and preference capital are deducted from assets.*
+> $\text{Net Assets for Equity} = 500 - 180 - 20 = \text{₹}300\text{ crore}$
+> $\text{BVPS} = \frac{300}{30} = \text{₹}10$
+> **Answer = ₹10** ✓
+> *(Do not forget to deduct preference capital; ignoring it gives the wrong ₹10.67.)*
 
 ---
 
@@ -529,6 +562,35 @@ $$\text{Exit Multiple} = \frac{\text{Investor Exit Proceeds}}{\text{Original Inv
 
 ---
 
+**PYQ:** A founder owns 100% of the equity, comprising 10,000 shares. The company issues 2,500 new shares to a new external investor. By what percentage is the founder's ownership diluted?
+
+> *Why: Dilution equals 100% minus the founder's post-issue stake.*
+> $\text{Total Shares} = 10{,}000 + 2{,}500 = 12{,}500$
+> $\text{Founder Stake} = \frac{10{,}000}{12{,}500} \times 100 = 80\%$
+> $\text{Dilution} = 100\% - 80\% = 20\%$
+> **Answer = 20%** ✓
+
+---
+
+**PYQ:** The founder of a start-up initially invested ₹1 crore and received 10 lakh equity shares of ₹10 each (100% ownership). The company then raised Series A: ₹50 lakh at ₹25 per share, and Series B: ₹80 lakh at ₹40 per share. Assuming no further issues or transfers, what are the approximate stakes of the Founder, Series A investor and Series B investor after Series B?
+
+> *Why: Convert each round's money into shares at its issue price, then divide by total shares.*
+> $\text{Series A Shares} = \frac{50}{25} = 2\text{ lakh}$
+> $\text{Series B Shares} = \frac{80}{40} = 2\text{ lakh}$
+> $\text{Total Shares} = 10 + 2 + 2 = 14\text{ lakh}$
+> $\text{Founder} = \frac{10}{14} = 71.43\%, \quad \text{Series A} = \frac{2}{14} = 14.29\%, \quad \text{Series B} = \frac{2}{14} = 14.29\%$
+> **Answer = 71.43%, 14.29%, 14.29%** ✓
+
+---
+
+**PYQ:** The post-money valuation of a firm has been estimated at ₹50 lakh. Find the amount invested by the investor if he holds a 20% equity stake.
+
+> *Why: Investor stake = Investment / Post-money, so Investment = Post-money x Stake.*
+> $\text{Investment} = 50 \times 20\% = \text{₹}10\text{ lakh}$
+> **Answer = ₹10 lakh** ✓
+
+---
+
 ### Startup Valuation Framework and Case Analysis
 
 #### Reverse Valuation Framework for Target Returns
@@ -591,6 +653,27 @@ $$\text{Required Entry Equity \%} = \frac{\text{Required Exit Equity \%}}{1 - \t
 > $\text{Post-Money Valuation} \approx \text{₹}1{,}581\text{ lakhs}$
 > $\text{Pre-Money Valuation} = 1{,}581 - 200 = \text{₹}1{,}381\text{ lakhs}$
 > **Answer = Rs. 1381 lakhs** ✓
+
+---
+
+**PYQ:** An investor invests ₹500 lakhs with an expected annual return of 50%. The company's sales in Year 5 are expected to be ₹3,000 lakhs. The exit value at the end of Year 5 is estimated at 4x its Year 5 sales. Calculate the pre- and post-money valuation, assuming the investor exits at the end of Year 5.
+
+> *Why: Compound the investment to Year 5 to get the target return, divide by exit value to get the required stake, then derive post- and pre-money.*
+> $\text{Exit Value} = 4 \times 3{,}000 = \text{₹}12{,}000\text{ lakhs}$
+> $\text{Target Return} = 500 \times (1.5)^5 = 500 \times 7.59375 = \text{₹}3{,}796.88\text{ lakhs}$
+> $\text{Required Stake} = \frac{3{,}796.88}{12{,}000} = 31.64\%$
+> $\text{Post-Money} = \frac{500}{0.3164} \approx 1{,}580.25$
+> $\text{Pre-Money} = 1{,}580.25 - 500 = 1{,}080.25$
+> **Answer = Pre-money 1,080.25; Post-money 1,580.25** (option reads "crores" but the working is in lakhs) ✓
+
+---
+
+**PYQ:** An investor invests ₹30 crore for a 25% stake, expecting to realise a multiple of 2.50 times the investment at exit. What should be the expected exit value of the company?
+
+> *Why: Required investor proceeds = Investment x Multiple; company exit value = proceeds / stake.*
+> $\text{Investor Proceeds} = 30 \times 2.5 = \text{₹}75\text{ crore}$
+> $\text{Exit Value} = \frac{75}{25\%} = \text{₹}300\text{ crore}$
+> **Answer = ₹300 crore** ✓
 
 ---
 
@@ -701,6 +784,17 @@ All expenses are paid on May 5th. No other transactions. Calculate net cash flow
 > $\text{Cash Outflows (April)} = \text{₹}0 \text{ (all expenses disbursed in May)}$
 > $\text{Net Cash Flow (April)} = \text{Inflows} - \text{Outflows} = 7{,}00{,}000 - 0 = \text{₹}7{,}00{,}000$
 > **Answer = ₹ 7,00,000** ✓
+
+---
+
+**PYQ:** A startup entered into the following transactions during June: Revenue earned ₹5,00,000 (₹3,00,000 received in cash); overhead paid ₹1,20,000; marketing paid ₹80,000; salaries paid ₹1,00,000; cash deficit of ₹1,00,000 at the beginning of the month. Find the cumulative cash surplus/deficit at the end of the month.
+
+> *Why: Cash budgets track only cash movements, so the uncollected ₹2,00,000 of credit sales is ignored.*
+> $\text{Cash Receipts} = \text{₹}3{,}00{,}000$
+> $\text{Cash Payments} = 1{,}20{,}000 + 80{,}000 + 1{,}00{,}000 = \text{₹}3{,}00{,}000$
+> $\text{Net Cash Flow} = 3{,}00{,}000 - 3{,}00{,}000 = 0$
+> $\text{Closing Position} = -1{,}00{,}000 + 0 = -\text{₹}1{,}00{,}000$
+> **Answer = Cash deficit of ₹1,00,000** ✓
 
 ---
 
@@ -868,12 +962,20 @@ Assume the entire cash deficit must be funded. What is the funding requirement?
   - Material changes to the capital structure (new share issuances, debt above limits).
   - Major acquisitions, corporate mergers, or sales of primary intellectual property.
   - Changes to the core line of business or executive compensation plans.
+- **Governance and Management Rights:** Investor rights to participate in appointing independent directors and to approve appointment/removal of key officers such as the CFO.
+- **Non-Compete Agreement:** Prevents a promoter from using knowledge, relationships, or involvement to set up or join a rival business after receiving investment (unlike information rights, which give access to information, or non-disposal obligations, which restrict share transfers).
 
 > **PYQ:** In its most commonly used sense, minority protection clause in the context of early stage equity investing means that
 > - **Investors who hold a minority equity shareholding seek additional protection beyond what company law provides by seeking a right to approve / veto certain business decisions in the startup that can affect the welfare of the minority shareholder, such as raising additional capital, disposing of high value assets and so on.** ✓
 >
 > **PYQ:** Which of the following is **NOT** typically included under information rights in a shareholders subscription agreement between a startup and investors?
 > - **Right to appoint the CFO** ✓
+>
+> **PYQ:** Which provision primarily prevents a promoter from using their knowledge, relationships, or involvement to establish or join a rival business after receiving investment?
+> - **Non-Compete Agreement** ✓
+>
+> **PYQ:** An investor negotiates the right to participate in appointing independent directors and to approve appointment or removal of the CFO. These provisions represent the ________ granted to the investor.
+> - **Governance and Management Rights** ✓
 >
 > **Q:** What is the role of independent directors on a startup’s board?
 > - **Provide unbiased decisions in the best interest of the company** ✓
@@ -889,6 +991,8 @@ Assume the entire cash deficit must be funded. What is the funding requirement?
 
 - **Non-Participating Liquidation Preference:** The investor chooses **either** their guaranteed preference payout (e.g., $1\times$ or $2\times$ invested capital) **OR** their pro-rata common equity share.
 - **Participating Liquidation Preference ("Double-Dipping"):** The investor first receives their full preference payout, and **then** shares pro-rata in the remaining proceeds alongside common shareholders.
+- **Cap on Liquidation Preference:** A "1X" cap limits the preference payoff to 1x the investment (e.g., maximum ₹10 crore on a ₹10 crore investment).
+- **Participation Right:** The feature that, in addition to the liquidation preference, lets the investor receive a proportionate share of the proceeds remaining after the preference is paid.
 
 #### Anti-Dilution Mechanisms (Down Round Protections)
 
@@ -917,6 +1021,18 @@ $$\text{Conversion Price (Weighted Avg)} = \text{Old Price} \times \frac{A + B}{
 >
 > **PYQ:** Which anti-dilution mechanism is most founder-friendly?
 > - **Broad-Based Weighted Average** ✓
+>
+> **PYQ:** Down rounds dilute all pre-existing shareholders (founders and external investors) more than a flat round or a higher-valuation round, provided they have no anti-dilution protection. This statement is
+> - **True** ✓
+>
+> **PYQ:** A majority shareholder sells its shares to an outside buyer. Which right allows minority shareholders to participate in the sale on the same terms?
+> - **Tag-along right** (drag-along forces minorities to sell; anti-dilution protects against dilution) ✓
+>
+> **PYQ:** Which feature should an investor have, in addition to a liquidation preference, to receive a proportionate share of the proceeds remaining after the preference is paid?
+> - **Participation right** ✓
+>
+> **PYQ:** An investor has a "1X" cap on his liquidation preference on a ₹10 crore investment. Ignoring other terms, the maximum expected payoff is
+> - **₹10 crore** ✓
 >
 > **Q:** What is the purpose of a drag-along clause?
 > - **To force founders to sell shares during an exit** ✓
@@ -962,7 +1078,28 @@ $$\text{Conversion Price (Weighted Avg)} = \text{Old Price} \times \frac{A + B}{
 
 ---
 
-**CLA:** The founder of a company initially invested ₹10,00,000. The firm raised ₹2,50,000 in Series A from an investor for a 20% stake at ₹1.00 per share. The company then raised ₹2,00,000 in Series B at ₹0.50 per share. Find the new ownership stakes after Series B, assuming the full ratchet provision was exercised.
+**PYQ:** An investor invests ₹15 crore in convertible preference shares for a 25% stake with a 1x non-participating liquidation preference. Liquidation proceeds are ₹100 crore. What is the payoff of a rational, payoff-maximising investor?
+
+> *Why: A non-participating investor takes the higher of the preference or the converted equity share.*
+> $\text{Option 1 (1x Preference)} = \text{₹}15\text{ crore}$
+> $\text{Option 2 (Convert to Equity)} = 25\% \times 100 = \text{₹}25\text{ crore}$
+> $\text{Payoff} = \max(15, 25) = \text{₹}25\text{ crore}$
+> **Answer = ₹25 crore** ✓
+
+---
+
+**PYQ:** An investor invests ₹20 crore for a 25% stake with a 1x participating liquidation preference with no cap. The company is sold for ₹100 crore. What is the investor's total payoff?
+
+> *Why: Participating preference pays the 1x preference first, then a pro-rata share of what remains.*
+> $\text{Step 1 (1x Preference)} = \text{₹}20\text{ crore}$
+> $\text{Remaining Proceeds} = 100 - 20 = \text{₹}80\text{ crore}$
+> $\text{Step 2 (Participation)} = 25\% \times 80 = \text{₹}20\text{ crore}$
+> $\text{Total Payoff} = 20 + 20 = \text{₹}40\text{ crore}$
+> **Answer = ₹40 crore** ✓
+
+---
+
+**CLA/PYQ:** The founder of a company initially invested ₹10,00,000. The firm raised ₹2,50,000 in Series A from an investor for a 20% stake at ₹1.00 per share. The company then raised ₹2,00,000 in Series B at ₹0.50 per share. Find the new ownership stakes after Series B, assuming the full ratchet provision was exercised.
 
 > *Why: Full ratchet reduces the Series A purchase price to the Series B price (₹0.50), awarding additional shares to the Series A investor before calculating final percentages.*
 > $\text{Founder Initial Shares} = 10{,}00{,}000 \text{ shares}$
@@ -1438,6 +1575,9 @@ $$\text{Operating Cash Flow} = \text{PAT} + \text{Depreciation} + \text{Interest
 > **PYQ:** A newly invented water-purification technology, which involves a newly developed combination of chemicals and a purification is best protected through which form of intellectual property right?
 > - **Patent** ✓
 >
+> **PYQ:** Which IP protection applies to the chemical formula of a newly synthesised polymer coating that improves sensor durability, along with the step-by-step method used to apply it to hardware?
+> - **Patent** (a new formula plus its application method is an invention; copyright protects expression, design protects appearance) ✓
+>
 > **Q:** Why are IP assignment clauses important in employment contracts?
 > - **They ensure the company owns work created by employees or contractors** ✓
 
@@ -1521,3 +1661,19 @@ $$\text{Operating Cash Flow} = \text{PAT} + \text{Depreciation} + \text{Interest
 | IP used to protect a distinct product appearance or bottle shape | **Design (Designs Act, 2000)** ✓ |
 | IP used to protect a newly formulated chemical process | **Patent (Patents Act, 1970)** ✓ |
 | Maximum investment size for a Micro Enterprise under UDYAM | **≤ ₹2.5 Crores (Turnover ≤ ₹10 Crores)** ✓ |
+| Start-up concerns (growth potential, raising resources, innovative idea, capturing market) | **Raising resources and capturing market** (growth potential and innovative idea are strengths) ✓ |
+| Task that is NOT a finance function (staff pay for motivation) | **Ensuring staff are well paid for motivation (HR function)** ✓ |
+| High P/B ratio is due to | **Intangibles/growth, NOT high book value** ✓ |
+| Highly levered firms / large firms valuation | **Levered and risky firms are valued lower; large firms are less risky than small ones** ✓ |
+| Enterprise value from equity, debt, other liabilities, cash | **EV = Equity + Debt + Other liabilities - Cash** ✓ |
+| Book value per equity share | **(Assets - Liabilities - Preference capital) / Equity shares** ✓ |
+| Investment from post-money and stake | **Investment = Post-money x Stake** ✓ |
+| Required exit value for target multiple | **Investment x Multiple / Stake** ✓ |
+| Non-compete vs information rights | **Non-compete stops promoter joining/setting up a rival; information rights only give access to information** ✓ |
+| Appointing independent directors / approving CFO | **Governance and Management Rights** ✓ |
+| Non-participating preference payoff | **Higher of 1x preference or pro-rata equity** ✓ |
+| Participating preference (no cap) payoff | **Preference + pro-rata share of the remainder** ✓ |
+| 1X cap on liquidation preference | **Maximum payoff = 1x the investment** ✓ |
+| Right letting minorities sell alongside majority on same terms | **Tag-along right** ✓ |
+| Full ratchet vs broad-based weighted average | **Full ratchet is least founder-friendly; broad-based weighted average is most founder-friendly** ✓ |
+| Down round with no anti-dilution protection | **All existing holders diluted more than in flat/up round** ✓ |
