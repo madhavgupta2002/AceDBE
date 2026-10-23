@@ -76,6 +76,18 @@
 >
 > **PYQ:** Assertion (A): Graphic images on cigarette packets reduce smoking even if smokers know the risks. Reason (R): Negative emotional triggers increase perceived risk.
 > - **Both A and R are true, and R is the correct explanation of A** ✓
+>
+> **PYQ:** You are buying a second-hand car. The seller quotes ₹8 lakh (above actual value); you use it as the starting point and agree on ₹7.5 lakh. Which concept explains the seller's price influence?
+> - **Anchoring Heuristic** ✓
+>
+> **PYQ:** Which situations illustrate retrievability bias: (a) Believing shark attacks are common after watching news reports, (b) Choosing a restaurant for attractive ad colours and images, (c) Avoiding hires from a college after easily recalling one poor ex-employee, (d) Supporting a political decision because it benefits personal interests?
+> - **Statements (a) and (c)** ✓
+>
+> **PYQ:** A person believes winning the lottery is common because of frequent news stories about winners, though the true probability is tiny. What explains this?
+> - **Availability heuristic** ✓
+>
+> **PYQ:** Assertion (A): Warning labels showing harmful effects of excessive alcohol can influence consumption even when people know the health risks. Reason (R): Fear or concern raises perceived seriousness of a risk and affects decisions.
+> - **Both A and R are true, and R is the correct explanation of A** ✓ *(Affect heuristic)*
 
 ---
 
@@ -120,6 +132,21 @@ $$\text{Expected Value: } E(V) = \sum p_i x_i \quad \Big| \quad \text{Expected U
 >
 > **PYQ:** Investors are 50% more likely to sell winning stocks than losing stocks, holding losers that continue to underperform. This reflects:
 > - **Being risk-averse in the gain domain and risk-seeking in the loss domain** ✓
+>
+> **PYQ:** Problem 3: people prefer a sure gain of \$500 over a 50-50 gamble of \$1000 or \$0. Problem 4: people prefer a 50-50 gamble of losing \$1000 or \$0 over a sure loss of \$500. This reversal indicates:
+> - **Reflection effect between gains and losses** ✓ *(Risk-averse for gains, risk-seeking for losses; inconsistent with expected utility)*
+>
+> **PYQ:** Consider an individual with a strictly concave utility function. Which statement must be true?
+> - **The utility of the expected value exceeds the expected utility of the gamble: $U(E[X]) > E[U(X)]$ (Jensen's inequality; risk-averse)** ✓
+
+**PYQ:** An individual accepts a sure income of ₹18,000 instead of a lottery with expected value ₹20,000. What does this imply?
+
+> *Why: Risk premium = expected value minus certainty equivalent; accepting less than the EV for certainty signals risk aversion.*
+> $\text{Risk Premium} = E(V) - \text{Certainty Equivalent}$
+> $= 20{,}000 - 18{,}000 = 2{,}000$
+> Risk-averse $\implies$ $E(U)$ of the lottery $<$ utility of the sure income.
+> **Answer = The risk premium is ₹2,000** ✓
+> *(Not risk-loving, not indifferent; the sure income is preferred in utility terms.)*
 
 ---
 
@@ -157,11 +184,20 @@ $$\text{Total Utility} = \text{Acquisition Utility (AU)} + \text{Transaction Uti
 > **PYQ:** You find a \$800 smartphone on sale for \$600 with an additional \$50 gift card included. Which concept explains the purchase motivation?
 > - **Transaction Utility** ✓
 >
-> **PYQ:** Which relationship between Transaction Utility (TU) and Acquisition Utility (AU) induces people to purchase completely useless items?
+> **PYQ:** Which relationship between Transaction Utility (TU) and Acquisition Utility (AU) induces people to purchase completely useless items (items with little or no practical use)?
 > - **$\text{TU} \gg \text{AU} = 0$** ✓
 >
 > **PYQ:** Sunk costs matter to humans because:
 > - **Closing categories of mental accounts at a loss triggers psychological pain** ✓
+>
+> **PYQ:** A jacket usually priced at ₹5,000 is on sale for ₹3,500 and you feel you are getting a bargain. Which concepts apply: (i) Transaction Utility, (ii) Broad Framing, (iii) Sunk Costs, (iv) Myopic Loss Aversion?
+> - **(i) Transaction Utility only** ✓
+>
+> **PYQ:** Sunk-cost statements: (I) Sunk costs do not matter to Humans but matter to Econs, (II) Sunk costs matter because a return on investment must be booked for accounting purposes, (III) Sunk costs matter due to expectations of closing categories of mental accounts. Which are false?
+> - **Both I and II** ✓ *(Sunk costs matter to Humans, not Econs; the driver is mental accounting, not bookkeeping; III is true)*
+>
+> **PYQ:** Sunk-cost statements: (I) Sunk costs are already incurred and cannot be recovered, (II) Rational decision-making should ignore sunk costs for future choices, (III) People may still consider them to justify past decisions. Which are true?
+> - **I, II and III** ✓
 
 ---
 
@@ -253,11 +289,17 @@ Parameters: $\beta = \frac{1}{2}$, $\delta = 1$.
 > **PYQ:** Riya plans today to wake up early next week and exercise, but sleeps in when the morning arrives. This illustrates:
 > - **Dynamic time inconsistency** ✓
 >
-> **PYQ:** Identify the correct parameter identities: (I) Naifs: $\hat{\beta}<1$, (II) Sophisticates: $\hat{\beta}=\beta$, (III) Partial Naifs: $\beta < \hat{\beta} < 1$.
+> **PYQ:** Identify the correct parameter identities: (I) Naifs: $\hat{\beta}<1$ (also phrased: Naifs "correctly recognise" their future $\hat{\beta}<1$), (II) Sophisticates: $\hat{\beta}=\beta$, (III) Partial Naifs: $\beta < \hat{\beta} < 1$.
 > - **II and III only** ✓
 >
 > **PYQ:** Under present-biased preferences, which behavioral pattern is observed?
 > - **Vices are preponed and virtues postponed** ✓
+>
+> **PYQ:** Arjun decides to study every morning from next Monday, but when Monday arrives he sleeps late. This is an example of:
+> - **Dynamic time inconsistency** ✓ *(Present bias is the cause; time consistency would mean following the plan)*
+>
+> **PYQ:** Present-bias statements: (I) Naifs do not recognise their present bias and expect future selves to follow plans, (II) Sophisticates correctly anticipate their future present bias, (III) Partial naifs are partly aware but underestimate its strength. Which are true?
+> - **I, II and III** ✓
 >
 > **PYQ:** A sophisticated present-biased person connects her alarm to her bank to automatically donate ₹200 to charity if she oversleeps. This represents:
 > - **Commitment by limiting future choices** ✓
@@ -282,6 +324,43 @@ Prisoner 1: Confess          (0, -10)                  (-5, -5)
 - **Dominant Strategy:** Yields strictly higher payoffs regardless of rival actions. (For both prisoners: **Confess**).
 - **Nash Equilibrium:** State where neither player can unilaterally deviate to improve payoff. Result: **(Confess, Confess)**.
 - **Social Optimum:** **(Not Confess, Not Confess)** gives minimum aggregate jail time (2 years vs 10 years).
+
+> **PYQ:** Which is the dominant strategy for Prisoner 1 in the matrix above?
+> - **Confess** ✓ *(0 > -1 if P2 stays silent; -5 > -10 if P2 confesses)*
+>
+> **PYQ:** What is the Nash Equilibrium outcome of the matrix above?
+> - **(Confess, Confess)** ✓
+>
+> **PYQ:** Which outcome gives the minimum total jail time for both prisoners together?
+> - **(Not Confess, Not Confess)** ✓ *(2 years total vs 10 for every other cell)*
+>
+> **PYQ:** Which best describes the outcome of the Prisoner's Dilemma?
+> - **Both prisoners have an incentive to confess, even though both would be better off by not confessing** ✓
+>
+> **PYQ:** If Prisoner 2 chooses Not Confess, what is Prisoner 1's best response?
+> - **Confess** ✓ *(0 > -1)*
+>
+> **PYQ:** If Prisoner 2 chooses Confess, what is Prisoner 1's best response?
+> - **Confess** ✓ *(-5 > -10)*
+>
+> **PYQ:** Why is (Not Confess, Not Confess) not the Nash equilibrium?
+> - **Either prisoner can improve their payoff by unilaterally switching from Not Confess to Confess** ✓
+
+#### Stag Hunt (Coordination Game)
+
+| | Player 2: Stag | Player 2: Hunt |
+| :--- | :---: | :---: |
+| **Player 1: Stag** | (6, 6) | (0, 3) |
+| **Player 1: Hunt** | (3, 0) | (3, 3) |
+
+- **Nash Equilibria:** Two pure NE, **(Stag, Stag)** = **payoff-dominant**, **(Hunt, Hunt)** = **risk-dominant** (secure payoff of 3 regardless of rival).
+- Players unsure of the rival's action may prefer the secure, risk-dominant strategy.
+
+> **PYQ:** In the Stag Hunt payoff structure above, which correctly identifies the Nash Equilibria?
+> - **Both (Stag, Stag) and (Hunt, Hunt)** ✓
+>
+> **PYQ:** In a Stag Hunt, why might players choose the risk-dominant equilibrium over the payoff-dominant one?
+> - **They prefer the more secure payoff when uncertain about the other player's action** ✓
 
 ---
 
@@ -311,14 +390,14 @@ Prisoner 1: Confess          (0, -10)                  (-5, -5)
 > **CLA:** Under the Cognitive Hierarchy model, a higher population parameter $\tau$ indicates:
 > - **More firms with higher-order strategic types emerge (yielding higher profits)** ✓
 >
-> **PYQ:** What is the primary difference between simultaneous and sequential games?
+> **PYQ:** What is the primary difference between simultaneous-move and sequential-move games?
 > - **Simultaneous: players choose unaware of others' choices; Sequential: players move in turns aware of prior moves** ✓
 >
 > **PYQ:** In a 0–100 Beauty Contest, which range of numbers is eliminated in the first round of iterative reasoning?
 > - **66.67 to 100** ✓
 >
-> **PYQ:** In the Centipede Game, which player pairing sustains the highest frequency of continuation/cooperation?
-> - **Students playing against students** ✓
+> **PYQ:** In the Centipede Game, which player pairing sustains the highest frequency of continuation/cooperation (college students vs. chess Federation/International Masters/Grandmasters)?
+> - **Students playing against students** ✓ *(Expertise does NOT consistently raise continuation; chess experts exit earlier via backward induction.)*
 
 ---
 
@@ -363,8 +442,14 @@ Prisoner 1: Confess          (0, -10)                  (-5, -5)
 > **PYQ:** Statistical discrimination arises because:
 > - **Agents make decisions based on group averages due to incomplete information (signal extraction)** ✓
 >
+> **PYQ:** Statistical discrimination statements: (I) Decisions about individuals are based on attributes of their groups, (II) It arises from incomplete information (signal extraction problem), (III) A Brahmin/White employer hires a Muslim/Dalit/Black employee because he does not care about productivity. Which are true?
+> - **Only I and II** ✓ *(III is a taste/preference story, not statistical)*
+>
+> **PYQ:** Statistical discrimination statements: (I) Employers use group-level characteristics as a proxy for productivity when individual information is limited, (II) It arises from incomplete information about potential employees, (III) It occurs only when employers deliberately dislike a social group. Which are true?
+> - **Only I and II** ✓ *(Dislike = taste-based, Becker)*
+>
 > **PYQ:** What occurs during Stereotype Threat?
-> - **Performance decreases when group identity (gender, race, caste) is made salient** ✓
+> - **Performance decreases when group identity (gender, race, caste) is made salient, especially from fear of confirming a negative stereotype** ✓
 
 ---
 
@@ -389,6 +474,12 @@ Prisoner 1: Confess          (0, -10)                  (-5, -5)
 >
 > **PYQ:** What are the negative long-term consequences of women negotiating salaries less frequently?
 > - **Lifetime forgone earnings and past compensation signaling lower employee quality** ✓
+>
+> **PYQ:** Which are issues from women not negotiating salaries: (I) Lifetime forgone earnings, (II) Employers may overpay anticipating negotiation, (III) Past compensation records signal employee quality?
+> - **I and III only** ✓ *(II is false)*
+>
+> **PYQ:** Potential consequences of employees not negotiating: (I) Lower starting salary leads to lower lifetime earnings, (II) Employers assume the employee accepts a lower salary, (III) Previous salary influences future pay and signals perceived value.
+> - **I, II and III** ✓
 
 ---
 
@@ -435,10 +526,10 @@ Prisoner 1: Confess          (0, -10)                  (-5, -5)
 > **CLA:** For which decision types are nudges most suitable?
 > - **Investment goods, Sin goods, and Rare/infrequent high-stakes choices** ✓
 >
-> **PYQ:** Why are behavioral nudges highly attractive in public policy?
+> **PYQ:** Why are behavioral nudges highly attractive in public policy (influence behaviour without major financial incentives or costly interventions)?
 > - **They produce moderate gains at very low implementation cost** ✓
 >
-> **PYQ:** Why are nudges justified for rare and complex decisions?
+> **PYQ:** Why are nudges justified/useful for rare and complex decisions that are difficult to evaluate?
 > - **Bounded rationality limits optimization under complexity and infrequency** ✓
 >
 > **PYQ:** Why do escalator floor markings ("Stand on Right, Walk on Left") work?
@@ -449,6 +540,15 @@ Prisoner 1: Confess          (0, -10)                  (-5, -5)
 >
 > **PYQ:** Which scenarios represent "Post-completion errors": (I) Leaving an ATM card after collecting cash, (II) Forgetting change at a counter, (III) Not opting into a savings plan?
 > - **Only I and II** ✓
+>
+> **PYQ:** Signs at a public swimming pool say "Please shower before entering the pool." They primarily work because they:
+> - **Provide a behavioural cue that communicates and reinforces a social norm** ✓
+>
+> **PYQ:** Which is a less intrusive policy that encourages safer behaviour while preserving individual choice?
+> - **Allowing drivers to opt out of a safety requirement only after completing additional safety training and meeting specific conditions** ✓ *(Bans and blanket mandates remove choice; a small insurance discount changes incentives)*
+>
+> **PYQ:** Which are examples of "Post-completion error": (I) Collecting ATM cash but forgetting the card, (II) Paying for a purchase but leaving the receipt at the counter, (III) Forgetting to switch off the lights after leaving a room?
+> - **Only I and II** ✓ *(III is plain forgetfulness, no primary goal just completed)*
 
 ---
 
@@ -488,6 +588,9 @@ Prisoner 1: Confess          (0, -10)                  (-5, -5)
 
 > **PYQ:** Ethical principles in experimental economics primarily aim to:
 > - **Protect participant welfare and rights** ✓
+>
+> **PYQ:** The primary purpose of ethical guidelines in an economic experiment is to:
+> - **Ensure the safety, dignity, and informed consent of participants** ✓
 >
 > **PYQ:** What is the primary purpose of Randomized Controlled Trials (RCTs)?
 > - **Evaluate policy interventions using random assignment** ✓
@@ -548,3 +651,15 @@ Prisoner 1: Confess          (0, -10)                  (-5, -5)
 | ATM ejecting card before dispensing cash | **Mitigating Post-Completion Error** ✓ |
 | Three ethical pillars of Belmont Report | **Respect for Persons, Beneficence, Justice** ✓ |
 | RCT gold standard verification table | **Balance Table (proves baseline equality)** ✓ |
+| Seller's opening quote used as negotiation starting point | **Anchoring Heuristic** ✓ |
+| News stories make lottery wins / shark attacks seem common | **Availability / Retrievability** ✓ |
+| Sure gain preferred but gamble preferred over sure loss | **Reflection effect (Prospect Theory)** ✓ |
+| Accept ₹18,000 sure vs lottery EV ₹20,000 | **Risk premium = ₹2,000 (risk-averse)** ✓ |
+| Strictly concave utility | **$U(E[X]) > E[U(X)]$ (risk-averse)** ✓ |
+| Bargain vs usual price (jacket ₹5,000 to ₹3,500) | **Transaction Utility only** ✓ |
+| Prisoner's Dilemma dominant strategy / NE / min jail | **Confess / (Confess, Confess) / (Not Confess, Not Confess)** ✓ |
+| Stag Hunt (6,6), (3,3) equilibria | **Both (Stag, Stag) and (Hunt, Hunt); Hunt is risk-dominant** ✓ |
+| Pool sign "Please shower first" | **Behavioural cue reinforcing a social norm** ✓ |
+| Opt out of safety rule only after training | **Less intrusive nudge preserving choice** ✓ |
+| Forgot receipt / ATM card after transaction | **Post-completion error (lights left on is NOT)** ✓ |
+| Ethical guidelines purpose | **Safety, dignity, informed consent** ✓ |

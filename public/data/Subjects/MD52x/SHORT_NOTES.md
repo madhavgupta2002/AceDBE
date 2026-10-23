@@ -51,6 +51,12 @@ $$\text{Disruptive / Discontinuous} > \text{Architectural} > \text{Incremental}$
 >
 > **PYQ:** What is the typical timeframe for developing a breakthrough product?
 > - **3 to 5 years** ✓
+>
+> **PYQ:** When a bakery chain known only for bread launches its first-ever range of beverages, it is called a:
+> - **New product line for the firm** ✓
+>
+> **PYQ:** Listerine's transition from a surgical antiseptic to a mouthwash for "bad breath" is an example of:
+> - **Repositioning** ✓
 
 ---
 
@@ -149,6 +155,13 @@ $$\text{Cost of Design Changes:} \quad \text{Concept Phase (\$10)} \xrightarrow{
 > **PYQ:** Which approach is recommended to increase flexibility when technology changes fast?
 > - **An agile approach with iterative design** ✓
 
+**PYQ:** A design change that costs $10 if made during the initial design stage will typically cost how much if delayed until the production stage?
+
+> *Why: Cost of a design change grows roughly 10x at each successive stage (design -> process design -> production).*
+> $\$10 \xrightarrow{10\times} \$100 \text{ (process design)} \xrightarrow{10\times} \$1{,}000 \text{ (production)}$
+> **Answer = $1,000** ✓
+> *(Do not stop at $100 or average to $500; the escalation is compounded across both stages.)*
+
 ---
 
 ## MODULE 2: Concept Generation and Evaluation
@@ -182,6 +195,9 @@ $$\text{Cost of Design Changes:} \quad \text{Concept Phase (\$10)} \xrightarrow{
 >
 > **PYQ:** Adding a foot lever to a trash can is an example of what type of innovation?
 > - **Market-driven functional innovation** ✓
+>
+> **PYQ:** Adding a rubber, non-slip grip to the handle of a kitchen knife is an example of what type of innovation?
+> - **Market-driven functional innovation** ✓
 
 ---
 
@@ -213,6 +229,15 @@ The $6 \times 6$ matrix maps the customer experience journey across 6 utility le
 > - **Utility Lever Alignment:** Map the analogous solution to an empty blue cell—such as *Risk Reduction* or *Simplicity* during the *Maintenance* or *Use* phase.
 > - **De-biasing Mass Market Fit:** Strip out aerospace-grade over-engineering to keep unit costs commercially viable for factory floors.
 > - **Conclusion:** Translating extreme stress-tested mechanisms unlocks uncontested blue cells without costly internal trial-and-error R&D ✓
+>
+> **PYQ:** In the Buyer Utility Map, a "blue square" represents:
+> - **A stage/utility combination left completely unaddressed by the current market, representing an open opportunity** ✓
+>
+> **PYQ (Subjective):** A kitchenware company wants to redesign its vegetable peeler. Using the Buyer Utility Map and the three tiers of Lead Users (Target Application, Analogous Market, Specialized Problem Area) as frameworks, identify one "blue square" opportunity on the map and one analogous-market lead user the company could study to fill it.
+> - **Core Anchor:** The map is a $6 \times 6$ grid of life-cycle stages vs utilities; a blue square is a stage/utility cell no competitor serves.
+> - **Blue Square:** *Simplicity* (or usability) utility at the *Purchase/Use* stage, e.g., a very durable forged-steel peeler that never needs replacing.
+> - **Analogous-Market Lead User:** Campers and hikers who shave sticks and tinder with rugged tools; studying them guides a robust, long-life blade and grip design.
+> - **Conclusion:** Pairing an empty blue cell with an analogous-market lead user turns extreme-use insight into an uncontested peeler design ✓
 
 ---
 
@@ -238,6 +263,7 @@ The $6 \times 6$ matrix maps the customer experience journey across 6 utility le
 > - **Contextual Stress-Testing:** Super fans push products to mechanical and aesthetic boundaries, exposing subtle user-related and designer-related failure points.
 > - **Rapid Feedback Integration:** Fan platforms surface structural flaws (e.g., weak clutch power, brittle hinges) prior to expensive high-volume tooling runs.
 > - **Commercial Filtering:** Gatekeepers filter out niche fan requests to maintain accessibility for mass consumers.
+> - **Retake Variant (Harley Owners Group):** Same logic for Harley-Davidson; build a forum, share prototypes with loyalists, early adopters, and lead users, and co-create as LEGO does.
 > - **Conclusion:** Deploying fan communities as pre-screening panels prevents costly drop errors and eliminates early product frustrations before mass distribution ✓
 
 ---
@@ -277,6 +303,9 @@ Customer Satisfaction
 >
 > **CLA:** What is a "short menu" strategy for a food truck?
 > - **Keeping limited choices, such as only burgers or fries** ✓
+>
+> **PYQ:** In the Kano Model, a feature that causes no dissatisfaction if it is missing (users never expected it) but creates a significant satisfaction spike and commands a price premium if included is classified as a(n):
+> - **Attractive Attribute (Delighter)** ✓
 
 ---
 
@@ -300,6 +329,9 @@ $$\begin{array}{c|c|c}
 
 > **CLA:** What is the difference between "Active" and "Passive" risk acceptance?
 > - **Active acceptance involves a contingency plan; passive acceptance deals with risks as they come** ✓
+>
+> **PYQ:** To mitigate the risk of a poor forecast for a highly uncertain new project, which strategy should a manager adopt?
+> - **Commit to a strategy of low-cost development and gradual marketing** ✓
 
 ---
 
@@ -421,6 +453,9 @@ $$\text{Relationship Weight Scale:} \quad \text{Strong} = 9, \quad \text{Moderat
 >
 > **PYQ:** How does the desktop computer example differ from the laptop example in terms of architecture?
 > - **The desktop allows for easy RAM upgrades (Modular); the laptop is condensed and difficult to change (Integral)** ✓
+>
+> **PYQ:** How does a smartphone's architecture differ from a desktop computer's in terms of modularity?
+> - **The desktop allows for easy component upgrades (Modular); the smartphone is condensed and difficult to change (Integral)** ✓
 
 ---
 
@@ -599,6 +634,13 @@ Phase 1: Alpha Testing         Phase 2: Beta Testing         Phase 3: Gamma Test
 >
 > **PYQ:** What is a "monadic test" in product use testing?
 > - **A respondent tests a single product for a period of time** ✓
+>
+> **PYQ (Subjective):** Explain how a product manager should use a "blind" paired comparison test to evaluate a new coffee blend prototype. Why is keeping the brand identity hidden critical to obtaining accurate user feedback on taste and sensory properties?
+> - **Core Anchor:** A blind paired comparison pits the prototype against a benchmark while concealing brand identity, so only taste drives the verdict.
+> - **Design:** Test the new blend against a control (the firm's bestseller or a well-known blend); a satisfaction score means little without a benchmark.
+> - **Procedure:** Respondents taste both unlabelled samples side by side and state a preference.
+> - **Why Hide the Brand:** Concealment removes the **Halo Effect** and brand-loyalty bias, so feedback reflects only taste and sensory properties.
+> - **Conclusion:** Blind pairing against a benchmark gives unbiased, comparable evidence of the blend's true sensory appeal ✓
 
 ---
 
@@ -622,6 +664,9 @@ $$\text{Horizontal Differentiation (Variety @ Same Price)} \quad \text{vs.} \qua
 > - **Because it makes the product easier and more comfortable to use** ✓
 >
 > **PYQ:** A car manufacturer adds more airbags. What type of demand creation is this?
+> - **Utility enhancement** ✓
+>
+> **PYQ:** A smartphone manufacturer adds water and dust resistance to its next model. What type of demand creation is this?
 > - **Utility enhancement** ✓
 
 ---
@@ -688,6 +733,7 @@ $$\text{Horizontal Differentiation (Variety @ Same Price)} \quad \text{vs.} \qua
 > - **Service Enhancement:** Bundle core digital products with authorized service ecosystems—such as real-time cloud updates, certified technical support, and warranty networks—that counterfeiters cannot duplicate.
 > - **Technical Encryption:** Implement tokenized session access, biometric authentication, and server-side verification to block casual file-sharing.
 > - **Value Devaluation of Copies:** Make critical product features depend on live backend communication, leaving pirated, offline copies functionally incomplete.
+> - **Retake Variant (connected digital product):** Pair authorised warranties, support, and updates available only to genuine users with biometrics or activation keys; also make piracy unnecessary (e.g., low pricing).
 > - **Conclusion:** Integrating live service value with encryption renders pirated variants obsolete, bypassing the delays of legal enforcement ✓
 
 ---
@@ -759,6 +805,13 @@ $$\text{Horizontal Differentiation (Variety @ Same Price)} \quad \text{vs.} \qua
 > - **Raise:** Increase equipment availability for functional training and cardio machines.
 > - **Create:** Introduce 24/7 keycard-automated access, allowing professionals to work out on their own schedules without paying for round-the-clock desk staff.
 > - **Conclusion:** Eliminating underused amenities and adding 24/7 automated entry allows gym X to lower costs and capture busy urban professionals ✓
+>
+> **PYQ (Subjective):** A no-frills budget airline Y aims to attract cost-conscious leisure travellers who currently avoid full-service carriers due to high fares. Using the ERRC Grid, identify two high-cost traditional airline factors that Y can completely eliminate to lower fares, and suggest one new convenience factor Y should create to specifically target this segment?
+> - **Core Anchor:** ERRC lets airline Y cut costly frills while adding a simple, low-cost convenience for leisure travellers.
+> - **Eliminate (Factor 1):** First/business class cabins and complimentary meals or lounges.
+> - **Eliminate (Factor 2):** Loyalty programmes or multiple aircraft types (single fleet saves maintenance and training cost).
+> - **Create:** A simple self-service digital booking and check-in process, or flights between convenient secondary airports.
+> - **Conclusion:** Removing frills and creating easy self-service travel lowers fares while serving cost-conscious leisure travellers ✓
 
 ---
 
@@ -815,6 +868,9 @@ $$\text{Perceived Value} = \frac{\text{Expected Quality} + \text{Lifetime Durabi
 > **PYQ:** To target Bottom of Pyramid consumers who have irregular or daily cash flows, what business model innovation should a mobile phone company apply?
 > - **Offer micro-loans, EMI structures, or flexible financing schemes** ✓
 >
+> **PYQ:** To target Bottom of Pyramid consumers who have irregular or daily cash flows, what business model innovation should an appliance company apply?
+> - **Offer micro-loans, EMI structures, or flexible financing schemes** ✓
+>
 > **PYQ:** What major feature was added to the Nokia 1100 specifically to solve a real-life rural consumer problem?
 > - **A built-in physical torchlight** ✓
 >
@@ -825,6 +881,13 @@ $$\text{Perceived Value} = \frac{\text{Expected Quality} + \text{Lifetime Durabi
 > - **Cultural Dynamics:** Smartphones represent significant household investments; device failure disrupts daily earning potential.
 > - **Verdict on R&D Strategy:** The low-cost, fragile design will likely fail. Sustainable adoption requires durable components backed by available, low-cost local repair options.
 > - **Conclusion:** Emerging market consumers prefer durable products with accessible local repairs over cheap, fragile alternatives ✓
+>
+> **PYQ (Subjective):** A consumer electronics brand is launching an entry-level electric scooter in an emerging market. The R&D team suggests using low-grade, cheap battery cells to minimise retail prices. Evaluate this suggestion by contrasting a price-sensitive consumer with a value-conscious consumer. Which mindset is more likely to play out in emerging markets?
+> - **Core Anchor:** Emerging-market consumers are value-conscious, not merely price-sensitive.
+> - **Price-Sensitive:** Looks only at the upfront price.
+> - **Value-Conscious:** Weighs price against performance, durability, and total cost of ownership; willing to pay a slight premium for quality.
+> - **Verdict:** Cheap, low-grade battery cells fail on durability and repair cost (the battery is the costliest component), so the R&D suggestion should be rejected.
+> - **Conclusion:** Value-conscious buyers will favour a durable scooter over a cheap, short-lived one ✓
 
 ---
 
@@ -854,6 +917,9 @@ $$\text{Perceived Value} = \frac{\text{Expected Quality} + \text{Lifetime Durabi
 > - **Launching new products is costly and risky, but not launching them is even riskier because you lose market share** ✓
 >
 > **PYQ:** You are launching a new organic baby product. To appeal to parents' emotions and build trust, which right-brain capability should you utilize?
+> - **Compelling storytelling that explains the personal, empathetic origin story of the product** ✓
+>
+> **PYQ:** You are launching a new organic pet food brand. To appeal to pet owners' emotions and build trust, which right-brain capability should you utilize?
 > - **Compelling storytelling that explains the personal, empathetic origin story of the product** ✓
 >
 > **PYQ (Subjective):** A premium cosmetics company hosts a popular online beauty forum. Following customer complaints about an irritating skin cream ingredient, the moderator deletes all negative posts. How does suppressing negative feedback impact the community's overall authenticity and trust required to maintain a powerful brand? The moderator’s action can be related to which of the core myths of brand communities?
@@ -898,6 +964,9 @@ $$\text{The Launch Triad Constraint:} \quad \text{NPD Capability} = f(\text{Qual
 > - **It keeps the firm from making binding alliances that make escape difficult if early profitability/market share thresholds are not met** ✓
 >
 > **PYQ:** Maruti’s "Nexa" and "Arena" frameworks are examples of choices related to:
+> - **Brand positioning and target segment strategy** ✓
+>
+> **PYQ:** Titan Company's "Titan" (premium watches) and "Fastrack" (youth-casual watches) brands are examples of choices related to:
 > - **Brand positioning and target segment strategy** ✓
 
 ---
@@ -987,6 +1056,13 @@ $$\text{Testing Continuum:} \quad \text{Pseudo Sale} \longrightarrow \text{Contr
 > - **Diagnostic Root Cause:** Signals onboarding friction, unboxing confusion, or smartphone-router pairing errors.
 > - **Contingency Action:** Automatically trigger an interactive video onboarding guide via SMS, deploy automated in-app troubleshooting prompts, and offer immediate callback support from technical teams.
 > - **Conclusion:** Pre-defining tracking variables and automated contingency plans prevents onboarding friction from turning into product returns ✓
+>
+> **PYQ (Subjective):** A startup is launching a fitness-tracking wearable band. The product manager wants to establish a clear launch tracking system to prevent slow customer adoption. Draft a brief Launch Management Plan by identifying one critical variable to track, defining a specific quantitative trigger point for that variable, and outlining a contingency action to execute if that trigger point is breached.
+> - **Core Anchor:** A Launch Management Plan needs a tracked variable, an explicit trigger threshold, and a pre-planned contingency.
+> - **Critical Variable:** App activation rate (share of buyers who download the companion app and sync the band).
+> - **Trigger Point:** Activation below $60\%$ within 4 weeks of purchase.
+> - **Contingency Action:** Add a setup guide and video walkthrough in the box, send onboarding prompts, and run an activation incentive.
+> - **Conclusion:** Tracking activation against a fixed trigger lets the team intervene before slow adoption becomes returns ✓
 
 ---
 
@@ -1022,6 +1098,9 @@ Stage 1: Stirring              Stage 2: Trial Support        Stage 3: Political 
 >
 > **PYQ:** An appliance manufacturer wants to mitigate liability for a washing machine that could injure users if opened during a spin cycle. Which action would MOST effectively reduce risk through product design?
 > - **Implement an automatic door-lock sensor that prevents the machine from completing the cycle if the door is opened** ✓
+>
+> **PYQ:** A manufacturer wants to mitigate liability for a blender that could injure users if opened while the blade is still spinning. Which action would MOST effectively reduce risk through product design?
+> - **Implement an automatic lid-lock sensor that prevents the blade from spinning unless the lid is properly sealed** ✓
 
 ---
 
@@ -1061,6 +1140,19 @@ Stage 1: Stirring              Stage 2: Trial Support        Stage 3: Political 
 >
 > **CLA:** What major shift happened when the healthcare venture moved from selling technology to providing services?
 > - **The company gained direct contact with patients, daily feedback, recurring revenue, and better understanding of field realities** ✓
+>
+> **PYQ:** Neurosynaptic's early neurotechnology device helped blind users "see" obstacles by projecting a camera feed onto an electrode array placed in the mouth. Which physiological principle did this device exploit?
+> - **Neural plasticity: the brain repurposing the tongue's dense sensory nerves to interpret visual data** ✓
+>
+> **PYQ:** Neurosynaptic's first rural telemedicine pilot saw patient traffic collapse after an initial surge. What root cause did the founder identify?
+> - **The consultation technology worked well, but there was no nearby pharmacy to fill prescriptions, so patients reverted to informal pharmacists** ✓
+>
+> **PYQ (Subjective):** A digital-health startup's core telemedicine hardware worked flawlessly in a rural pilot, yet patient visits collapsed to zero within weeks. Diagnose the root cause using the concept of an incomplete ecosystem, and propose two adjacent services the startup should bundle alongside its core diagnostic technology to sustain patient traffic.
+> - **Core Anchor:** Technology alone is not a solution; an incomplete ecosystem makes patients stop visiting.
+> - **Root Cause:** Consultation worked, but patients had no nearby pharmacy to fill prescriptions and no clinics for tests, so they reverted to informal channels.
+> - **Bundle 1:** Medicine/pharmacy delivery service (e.g., prescriptions routed to local pick-up points).
+> - **Bundle 2:** Diagnostic or blood-testing services, e.g., via mobile units.
+> - **Conclusion:** Completing the end-to-end chain of consultation, tests, and medicines sustains patient traffic ✓
 
 ---
 
@@ -1075,8 +1167,8 @@ Stage 1: Stirring              Stage 2: Trial Support        Stage 3: Political 
   - Public agencies focus on fully deploying allocated budgets within the fiscal cycle rather than maximizing commercial ROI.
   - *The 99% Prototype Strategy:* Build a fully functioning end-to-end prototype (UI, backend logic, mock databases) within 6 weeks to secure municipal board approvals while final engineering runs in the background.
 
-> **CLA:** What is the key difference between product management and project management?
-> - **Product management focuses on what to build, while project management focuses more on timelines, deliverables, and execution** ✓
+> **CLA/PYQ:** What is the core distinction between product management and project management?
+> - **Product management focuses on what to build (understanding customer pain points), while project management focuses on scoping deliverables and timelines to ensure execution** ✓
 >
 > **CLA:** What is the role of a prototype in product management?
 > - **To test ideas, demonstrate features, collect feedback, and refine the product** ✓
@@ -1187,6 +1279,7 @@ $$\text{Design Change Cost Progression:} \quad \text{Design Phase (\$10)} \longr
 >   - *Gate 1 (Concept Screen):* Assesses battery supply-chain agreements and overall market demand before allocating capital.
 >   - *Gate 2 (Technical Feasibility):* Evaluates range under challenging operating conditions, charging interfaces, and thermal management prototypes.
 >   - *Gate 3 (Commercial Go/No-Go):* Assesses total battery pack costs, subsidies, and charging network readiness before committing factory lines.
+> - **Retake Variant (Tata Motors, ICE to EV):** Same logic; ICE models give reliable cash flow at low development cost but over-reliance erodes competitiveness, while EVs are costly (3-5 years) yet secure future relevance. A Stage-Gate funnel starts with many ideas and narrows them via go/no-go gates with cross-functional teams, staging investment to limit financial and technological risk.
 > - **Conclusion:** Using support lines to fund disciplined stage-gate EV development protects operating margins while navigating structural market transitions ✓
 
 ---
@@ -1267,3 +1360,18 @@ $$\text{Design Change Cost Progression:} \quad \text{Design Phase (\$10)} \longr
 | Core learning from early telemedicine experiments | **Consultations fail without accessible local medicine and testing** ✓ |
 | Purpose of usage-aware telemedicine hardware | **Prevents unauthorized diagnosis by untrained kiosk operators** ✓ |
 | Public sector SaaS purchasing priority | **Fully deploying allocated public funds before the fiscal deadline** ✓ |
+| Cost of a $10 design-stage change at production | **$1,000 (10x per stage: $10 -> $100 -> $1,000)** ✓ |
+| Strategy for a highly uncertain forecast | **Low-cost development with gradual marketing** ✓ |
+| Bakery launching beverages / detergent maker launching shampoo | **New product line for the firm** ✓ |
+| Listerine antiseptic to bad-breath mouthwash | **Repositioning** ✓ |
+| Water/dust resistance or extra airbags | **Utility enhancement** ✓ |
+| Non-slip knife grip / foot lever on trash can | **Market-driven functional innovation** ✓ |
+| Blue square in Buyer Utility Map | **Stage/utility cell no competitor serves (open opportunity)** ✓ |
+| Kano feature with no penalty if absent but big spike if present | **Attractive attribute (Delighter)** ✓ |
+| Smartphone vs desktop architecture | **Smartphone Integral; desktop Modular** ✓ |
+| Titan vs Fastrack, Nexa vs Arena | **Brand positioning and target segment strategy** ✓ |
+| Blender lid or washing machine door interlock | **Design-level safety sensor beats labels, disclaimers, certificates** ✓ |
+| Neurosynaptic tongue-electrode device principle | **Neural plasticity** ✓ |
+| Neurosynaptic pilot traffic collapse | **No nearby pharmacy; incomplete ecosystem** ✓ |
+| Product vs project management | **Product: what to build; Project: timelines and execution** ✓ |
+| Why hide brand in paired comparison | **Removes halo effect and brand-loyalty bias** ✓ |

@@ -239,6 +239,9 @@ $$\text{Potential Network Connections (Direct)} = \frac{n(n - 1)}{2}$$
 >
 > **PYQ:** Which launch strategy involves validating a transaction model yourself first (e.g., via your own retail arm) before opening it to third-party participants?
 > - **Follow the Rabbit strategy** ✓
+>
+> **PYQ:** The challenge a new two-sided marketplace faces in attracting both buyers and sellers simultaneously (neither side wants to join first without the other already present) is commonly known as:
+> - **The chicken-and-egg problem** ✓
 
 ---
 
@@ -318,6 +321,9 @@ $$\text{Platform Flywheel: High Buyer Satisfaction} \rightarrow \text{Repeat Ord
 
 > **PYQ:** Which platform is cited for using data to provide "Personalized Recommendations" for movies and TV shows?
 > - **Netflix** ✓
+>
+> **PYQ:** Which platform is frequently cited for using behavioural data (listening history) to power "Personalised Recommendations" for music and audio content?
+> - **Spotify** ✓
 >
 > **PYQ:** How does eBay’s use of data analytics empower "Sellers" specifically?
 > - **By providing insights into market trends and pricing dynamics** ✓
@@ -766,6 +772,15 @@ $$\text{LTV} : \text{CAC} \ge 3 : 1$$
 > **Answer = 2%** ✓  
 > *(To reach a 5% conversion rate benchmark on the same traffic, 750 purchases are required—an incremental 450 orders).*
 
+**PYQ:** An online store recorded 20,000 visitors and 400 completed purchases in a month. What is its conversion rate?
+
+> *Why: Conversion rate = share of visitors who complete a purchase.*
+>
+> $$\text{Conversion Rate} = \left(\frac{400}{20,000}\right) \times 100 = 0.02 \times 100 = 2\%$$
+>
+> **Answer = 2%** ✓  
+> *(Common mistake: forgetting the x 100 gives 0.02, which is not 0.02%.)*
+
 $$\text{Customer Lifetime Value (Subscription)} = \frac{\text{Average Monthly Revenue per User (ARPU)}}{\text{Monthly Churn Rate}}$$
 
 $$\text{Return on Ad Spend (ROAS)} = \frac{\text{Gross Revenue Generated from Ads}}{\text{Total Ad Spend Incurred}}$$
@@ -916,6 +931,9 @@ $$\text{Inventory Turnover} = \frac{\text{Cost of Goods Sold (COGS)}}{\text{Aver
 | Ride-sharing (Ola / Uber) network effect classification | **Two-Sided / Indirect Network Effect** ✓ |
 | MySpace market share loss to Facebook | **Degraded UX from spam triggered negative network effects** ✓ |
 | Primary metric measuring platform supply-demand equilibrium | **Liquidity** ✓ |
+| Neither buyers nor sellers want to join a new marketplace first | **Chicken-and-egg problem** ✓ |
+| Personalised recommendations from behavioural data: movies/TV vs. music/audio | **Netflix** / **Spotify** ✓ |
+| Conversion rate = purchases / visitors x 100 (15,000 and 300; 20,000 and 400) | **2%** ✓ |
 | Google Android $5M developer competition launch strategy | **Seeding the Platform** ✓ |
 | JustDial physical directory customer onboarding strategy | **Piggyback Strategy** ✓ |
 | Validating internal retail pipeline before opening 3P access | **Follow the Rabbit Strategy** ✓ |
