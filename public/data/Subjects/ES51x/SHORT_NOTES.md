@@ -76,6 +76,12 @@ $$\text{Per Capita GDP} = \frac{\text{Total Real GDP}}{\text{Total Population}} 
 >
 > **PYQ:** When measuring GDP across years, real GDP differs from nominal GDP because real GDP:
 > - **Holds the price basket fixed across years to strip out inflation** ✓
+>
+> **PYQ:** Which approach to measuring GDP estimates national output by summing household consumption, business investment, government spending, and net exports?
+> - **Expenditure approach** ✓
+>
+> **PYQ:** Why is real GDP considered a better measure of economic growth than nominal GDP?
+> - **It removes the effects of changes in the price level over time** ✓
 
 **CLA:** In a small island economy, only two goods are produced: fish and coconuts. In 2023, 100 kg of fish sold at Rs. 200/kg and 50 coconuts sold at Rs. 50 each. In 2024, 110 kg of fish sold at Rs. 250/kg and 60 coconuts sold at Rs. 60 each. Using 2023 as the base year, what is the approximate real GDP growth rate from 2023 to 2024?
 
@@ -148,7 +154,13 @@ Real Output (Y)
 > **PYQ:** Sticky wage contracts that prevent labour costs from adjusting instantly when demand changes are best classified as:
 > - **A short-run friction** ✓
 >
+> **PYQ:** Menu costs that discourage firms from changing prices immediately after a change in market conditions are best classified as:
+> - **A short-run friction** ✓
+>
 > **PYQ:** A sudden surge in foreign demand for Indian software exports is best characterised in macroeconomic terms as:
+> - **A short-run demand shock** ✓
+>
+> **PYQ:** A sharp increase in household spending following a reduction in income tax is best characterised in macroeconomic terms as:
 > - **A short-run demand shock** ✓
 
 ---
@@ -213,6 +225,9 @@ $$100\% = \frac{C}{Y} + \frac{I}{Y} + \frac{G}{Y} + \frac{NX}{Y}$$
 >
 > **PYQ:** Starting from the identity Y = C + I + G + (Ex − Im), the relationship Private Savings + Public Savings + Foreign Savings = Investment is best understood as:
 > - **An identity that follows from rearranging the GDP identity and always holds** ✓
+>
+> **PYQ:** Which statement best describes the national income identity ($Y = C + I + G + NX$)?
+> - **It is an accounting identity that is always true by definition (any economy, any employment level)** ✓
 
 **CLA:** Country X has the following national accounts data (in Rs. billion): GDP = 500, Consumption = 300, Government Spending = 120, Exports = 80, Imports = 60. What is the level of Investment in Country X?
 
@@ -344,8 +359,15 @@ Yield (%)
 > **PYQ:** If the secondary-market price of an existing government bond rises while its coupon payment stays fixed, the yield on that bond will:
 > - **Fall** ✓
 >
+> **PYQ:** If market interest rates increase, what happens to the price of an existing fixed-coupon government bond?
+> - **It falls, because new bonds offer higher returns** ✓
+>
 > **PYQ:** The Marginal Standing Facility (MSF) rate in the RBI corridor typically sits:
 > - **Above the repo rate, as a ceiling for overnight rates** ✓
+>
+> **PYQ:** When a commercial bank faces an unexpected overnight liquidity shortage, which RBI facility is it most likely to use for emergency funds?
+> - **Marginal Standing Facility (MSF)** ✓
+> *(SDF absorbs liquidity; CRR and OMO are not borrowing facilities.)*
 
 **CLA:** Nominal interest rate is 10%. Expected inflation rises from 4% to 7%. What happens to the real interest rate?
 
@@ -394,6 +416,9 @@ Controllable via Central Bank rate hikes            Directly uncontrollable via 
 >
 > **PYQ:** Suppose headline CPI inflation rises sharply because of a sudden monsoon-driven jump in vegetable prices. The most accurate description of RBI's policy situation is:
 > - **Rate hikes cannot increase supply, but can anchor inflation expectations at the cost of dampening demand** ✓
+>
+> **PYQ:** Inflation rises sharply due to a sudden increase in global crude oil prices. The role of the central bank is best described as:
+> - **Monetary policy cannot directly increase oil supply, but can help contain inflationary expectations by moderating demand** ✓
 
 **CLA:** Money supply rises by 10%, velocity falls by 3%, output rises by 4%. Inflation rate will be:
 
@@ -441,6 +466,9 @@ Monetary transmission is the dynamic mechanism through which central bank policy
 >
 > **PYQ:** In the closed-economy monetary transmission framework, the bank lending channel emphasises that monetary policy works because:
 > - **Banks' ability and willingness to supply loans change when reserves and liquidity change** ✓
+>
+> **PYQ:** In the credit channel of monetary policy, an increase in the policy interest rate reduces aggregate demand primarily because:
+> - **Banks become less willing and able to extend loans** ✓
 
 ---
 
@@ -490,6 +518,10 @@ $$e = E \times \frac{P_{\text{foreign}}}{P_{\text{domestic}}}$$
 >
 > **PYQ:** Purchasing Power Parity predicts that, in the long run, the nominal exchange rate between two countries should:
 > - **Adjust so that identical baskets of goods cost the same in both countries after conversion** ✓
+>
+> **PYQ:** Under PPP, if inflation in India is consistently higher than in the United States, the rupee is expected to:
+> - **Depreciate against the US dollar in the long run** ✓
+> *(Higher-inflation currency loses purchasing power faster.)*
 
 **CLA:** If Indian interest rate = 8%, US interest rate = 5%, and investors expect the rupee to depreciate by 3%, according to Interest Rate Parity (IRP), capital will:
 
@@ -562,6 +594,9 @@ A sovereign economy cannot simultaneously sustain all three macroeconomic object
 >
 > **PYQ:** The impossible trinity says a country cannot simultaneously maintain all three of:
 > - **A fixed exchange rate, free capital mobility, and an independent monetary policy** ✓
+>
+> **PYQ:** A country maintains a fixed exchange rate while allowing unrestricted capital flows. According to the impossible trinity, it must sacrifice:
+> - **Independent monetary policy** ✓
 
 ---
 
@@ -598,11 +633,20 @@ $$\text{Current Account Deficit (CAD)} \iff \text{Capital Account Surplus (Net F
 > **PYQ:** When the Reserve Bank of India buys dollars in the foreign exchange market and simultaneously sells government securities in the domestic market, the operation is best described as:
 > - **Sterilised forex intervention** ✓
 >
+> **PYQ:** To prevent an increase in the domestic money supply after purchasing foreign currency, the RBI is most likely to:
+> - **Sell government securities in the open market** ✓
+>
 > **PYQ:** India's Balance of Payments identity says the current account and the capital account sum to zero. The economic intuition behind this is:
 > - **A current account deficit must be financed by a matching capital inflow, by double-entry bookkeeping** ✓
 >
+> **PYQ:** If India records a current account deficit, according to the BoP accounting identity:
+> - **The deficit must be matched by a net capital inflow or a reduction in foreign exchange reserves** ✓
+>
 > **PYQ:** Foreign Direct Investment is generally considered more stable than Foreign Portfolio Investment because:
 > - **FDI involves long-term commitment to physical assets and managerial control, making it harder to reverse quickly** ✓
+>
+> **PYQ:** Which characteristic best explains why Foreign Portfolio Investment (FPI) is called "hot money"?
+> - **It can be withdrawn quickly in response to changes in market conditions** ✓
 
 **CLA:** India records a current account deficit of \$20 billion. At the same time, it receives \$25 billion in capital inflows. The overall balance of payments will:
 
@@ -660,12 +704,12 @@ $$\text{Current Account Deficit (CAD)} \iff \text{Capital Account Surplus (Net F
 > - **Monetary Policy:** Execute short-term defensive Repo hikes to protect the interest rate differential and curb imported inflation.
 > - **Macro-Prudential Tools:** Relax borrowing limits on External Commercial Borrowings (ECBs) and ease interest caps on NRI bank deposits to draw in foreign capital, while monitoring bank FX exposures. ✓
 
-> **PYQ (Subjective):** (a) Critically evaluate the claim that "a stronger rupee is always better for the Indian economy". Examine trade-offs when global commodity prices rise and domestic export competitiveness is under pressure. (Answer in 100 to 150 Words)
+> **PYQ (Subjective):** (a) Critically evaluate the claim that "a stronger rupee is always better for the Indian economy". Examine trade-offs when global commodity prices rise and domestic export competitiveness is under pressure. (Answer in 100 to 150 Words; retake: 150 to 200 Words)
 > - **Import Channel (Pro-Appreciation):** A stronger rupee lowers the landed cost of dollar-priced imports (crude oil, raw inputs), helping contain imported cost-push inflation and easing domestic input costs.
 > - **Export Channel (Anti-Appreciation):** A stronger rupee makes domestic goods and services (IT, textiles, pharma) more expensive for foreign buyers, eroding competitiveness and widening trade deficits.
 > - **Conclusion:** A stronger currency is **NOT** universally beneficial. When exports are struggling, an overvalued rupee harms economic growth ($Y$), meaning a balanced, managed exchange rate is preferred. ✓
 
-> **PYQ (Subjective):** (b) The Impossible Trinity is often presented as a binary constraint, but India's actual position is closer to a spectrum. Critically evaluate India's strategy of "managed integration". Are there situations where India should move closer to one corner? (Answer in 100 to 150 Words)
+> **PYQ (Subjective):** (b) The Impossible Trinity is often presented as a binary constraint, but India's actual position is closer to a spectrum. Critically evaluate India's strategy of "managed integration". Are there situations where India should move closer to one corner? (Answer in 100 to 150 Words; retake: 150 to 200 Words)
 > - **Managed Integration Spectrum:** India balances intermediate positions on the Trilemma: a managed floating exchange rate (curbing sharp swings), calibrated capital mobility (encouraging FDI while regulating volatile debt), and substantial domestic monetary policy independence.
 > - **When to Prioritize Monetary Autonomy:** During acute domestic inflation, the RBI must focus fully on inflation targeting, allowing the exchange rate to absorb external pressures.
 > - **When to Prioritize Capital Mobility:** During domestic capital shortages, India should ease corporate external debt rules to fund infrastructure investments, accepting greater currency volatility. ✓
@@ -707,6 +751,10 @@ Indirect: GST, Customs, Excise                    Disinvestment / Asset Monetiza
 >
 > **PYQ:** Government spending on building national highways is typically classified as:
 > - **Capital expenditure** ✓
+>
+> **PYQ:** Which of the following is most likely classified as revenue expenditure?
+> - **Payment of salaries to government school teachers** ✓
+> *(Aircraft, dams, airport terminals create assets = capital expenditure.)*
 
 ---
 
@@ -768,11 +816,21 @@ $$\text{Fiscal Multiplier} = \frac{1}{1 - \text{MPC}}$$
 > **PYQ:** As the marginal propensity to consume rises, the simple government expenditure multiplier in a closed economy:
 > - **Rises** ✓
 >
+> **PYQ:** The simple tax multiplier becomes larger in absolute value when:
+> - **The marginal propensity to consume (MPC) increases** ✓
+> *(Tax multiplier magnitude = MPC / (1 - MPC).)*
+>
 > **PYQ:** A government's debt-to-GDP ratio is most likely to decline over time, even without paying down principal, when:
 > - **The nominal growth rate of GDP exceeds the nominal interest rate on debt** ✓
 >
+> **PYQ:** A country's public debt burden is more likely to become sustainable when:
+> - **The nominal interest rate on government debt is lower than the nominal GDP growth rate ($r < g$)** ✓
+>
 > **PYQ:** Crowding out in fiscal policy refers to the situation where:
 > - **Higher government borrowing pushes up interest rates and reduces private investment** ✓
+>
+> **PYQ:** Most likely consequence of a large increase in government borrowing in the loanable funds market:
+> - **Private investment decreases as higher borrowing raises interest rates (crowding out)** ✓
 
 **CLA:** If $\text{MPC} = 0.75$ and government spending increases by ₹200 crore, the increase in Aggregate Demand would be:
 
@@ -842,6 +900,9 @@ Geometric population growth    to diminishing returns;     generate ongoing prod
 >
 > **PYQ:** An important reason ideas can sustain growth where physical capital cannot is that:
 > - **Ideas are non-rivalrous and can be used simultaneously by many users without being depleted** ✓
+>
+> **PYQ:** According to endogenous growth theory, R&D investment can generate sustained growth because:
+> - **Knowledge created through innovation can be used repeatedly without being exhausted** ✓
 
 ---
 
@@ -935,3 +996,18 @@ Geometric population growth    to diminishing returns;     generate ongoing prod
 | Public debt ratio trajectory when $g > r$ | Debt-to-GDP ratio **declines naturally over time** ✓ |
 | Heavy public borrowing raising market interest rates | **Crowding out** of private sector investment ✓ |
 | Long-run economic growth source | Driven by **productivity improvements and non-rival ideas** ✓ |
+| Menu costs delaying firm price changes | **Short-run friction** ✓ |
+| Tax cut raising household spending | **Short-run demand shock** ✓ |
+| National income identity | **Accounting identity**, true by definition in any economy ✓ |
+| Market interest rates rise | Existing fixed-coupon bond **price falls** ✓ |
+| Emergency overnight bank liquidity shortage | **MSF** (SDF absorbs; CRR/OMO do not lend) ✓ |
+| Credit channel of a policy rate hike | **Banks less willing and able to lend**, so AD falls ✓ |
+| Oil-driven (supply) inflation | Policy cannot add supply but **moderates demand and anchors expectations** ✓ |
+| Fixed rate plus free capital flows | **Sacrifice independent monetary policy** ✓ |
+| RBI buys forex, must keep money supply unchanged | **Sell G-Secs via OMO** (sterilise) ✓ |
+| Current account deficit under BoP identity | **Matched by net capital inflow or fall in reserves** ✓ |
+| FPI called hot money | **Quickly withdrawn** when conditions change ✓ |
+| Higher home inflation under PPP | **Currency depreciates** in the long run ✓ |
+| Teacher salaries vs aircraft, dams, terminals | **Revenue expenditure** vs **capital expenditure** ✓ |
+| Tax multiplier magnitude | $MPC/(1-MPC)$; **rises with MPC** ✓ |
+| Retake subjective set | Identical to main: CRR, $g>r$, two cases, rupee and trinity essays ✓ |

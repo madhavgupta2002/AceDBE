@@ -1,0 +1,781 @@
+{
+    "exam_metadata": {
+        "subject_name": "New Age Business Models",
+        "exam_date": "19 September 2026",
+        "batch": "",
+        "attempt": "",
+        "exam_pattern": {
+            "exam_name": "IIMB BBA DBE Term 5 Retake 1",
+            "duration_min": 120,
+            "total_marks": 100,
+            "negative_marking": false,
+            "calculator": "none",
+            "timing_mode": "global",
+            "reference_materials": [],
+            "instructions": [],
+            "sections": [
+                {
+                    "name": "Section 1",
+                    "question_type": "MCQ",
+                    "num_questions": 50,
+                    "marks_per_question": 2,
+                    "question_ids": [
+                        "1",
+                        "2",
+                        "3",
+                        "4",
+                        "5",
+                        "6",
+                        "7",
+                        "8",
+                        "9",
+                        "10",
+                        "11",
+                        "12",
+                        "13",
+                        "14",
+                        "15",
+                        "16",
+                        "17",
+                        "18",
+                        "19",
+                        "20",
+                        "21",
+                        "22",
+                        "23",
+                        "24",
+                        "25",
+                        "26",
+                        "27",
+                        "28",
+                        "29",
+                        "30",
+                        "31",
+                        "32",
+                        "33",
+                        "34",
+                        "35",
+                        "36",
+                        "37",
+                        "38",
+                        "39",
+                        "40",
+                        "41",
+                        "42",
+                        "43",
+                        "44",
+                        "45",
+                        "46",
+                        "47",
+                        "48",
+                        "49",
+                        "50"
+                    ]
+                }
+            ],
+            "total_questions": 50
+        }
+    },
+    "questions": [
+        {
+            "question_id": "1",
+            "question_text": "A business model is best described as the rationale of how an organisation:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Manages its supply chain logistics.",
+                "B": "Creates, delivers, and captures value.",
+                "C": "Registers its trademarks and patents.",
+                "D": "Only generates short-term profit."
+            },
+            "correct_option_label": "B",
+            "explanation": "A business model describes the rationale for how an organisation creates, delivers, and captures value. The other options describe supporting activities, not the core definition.",
+            "module": 1
+        },
+        {
+            "question_id": "2",
+            "question_text": "The Business Model Canvas is a strategic tool that visualises a company's model:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Through a single bar chart.",
+                "B": "Only as a financial spreadsheet.",
+                "C": "On a single page across nine interlinked building blocks (value proposition, infrastructure, customers, finances).",
+                "D": "As a 50-page detailed report."
+            },
+            "correct_option_label": "C",
+            "explanation": "The Business Model Canvas puts a company's model on a single page using nine interlinked building blocks covering the value proposition, infrastructure, customers, and finances.",
+            "module": 1
+        },
+        {
+            "question_id": "3",
+            "question_text": "Which once-dominant Indian watchmaker eventually shut down after failing to adapt to changing technology and rising competition from brands like Titan?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "HMT Watches",
+                "B": "Voltas",
+                "C": "Godrej Appliances",
+                "D": "Bajaj Electricals"
+            },
+            "correct_option_label": "A",
+            "explanation": "HMT Watches was once India's watch market leader. It shut down after failing to adapt to changing technology and to compete with Titan.",
+            "module": 1
+        },
+        {
+            "question_id": "4",
+            "question_text": "Beyond logistics and inventory management, what valuable input do distributors typically feed back to manufacturers operating in distant markets?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Only invoice and billing data",
+                "B": "Manufacturing blueprints",
+                "C": "A competitor's internal HR policies",
+                "D": "Ground-level market intelligence and customer feedback"
+            },
+            "correct_option_label": "D",
+            "explanation": "Distributors sit close to the market, so beyond logistics and inventory they feed ground-level market intelligence and customer feedback back to manufacturers.",
+            "module": 1
+        },
+        {
+            "question_id": "5",
+            "question_text": "As the final link in a supply chain, what is the retailer's primary strategic function within the business ecosystem?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Managing wholesale-level inventory only",
+                "B": "Serving as the direct interface with the end customer",
+                "C": "Setting global logistics rates",
+                "D": "Approving manufacturing designs"
+            },
+            "correct_option_label": "B",
+            "explanation": "As the final link in the supply chain, the retailer is the direct interface with the end customer. Wholesale inventory, logistics rates, and design approval sit upstream.",
+            "module": 1
+        },
+        {
+            "question_id": "6",
+            "question_text": "Netflix, originally a DVD-by-mail service before pivoting to streaming, was founded by:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Jeff Bezos",
+                "B": "Reed Hastings",
+                "C": "Elon Musk",
+                "D": "Jack Dorsey"
+            },
+            "correct_option_label": "B",
+            "explanation": "Netflix was founded by Reed Hastings, who moved it from a DVD-by-mail rental service to a subscription streaming giant.",
+            "module": 1
+        },
+        {
+            "question_id": "7",
+            "question_text": "The decline of MySpace in favour of Facebook is best explained by:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Facebook's acquisition of MySpace's servers",
+                "B": "A drop in MySpace's content quality and rising spam, triggering negative network effects that pushed users toward Facebook's cleaner ecosystem",
+                "C": "Facebook operating purely as a local classifieds board",
+                "D": "MySpace introducing a costly subscription fee"
+            },
+            "correct_option_label": "B",
+            "explanation": "MySpace's content quality fell and spam rose, creating negative network effects. Users migrated to Facebook's cleaner ecosystem, so the decline came from a worse user experience.",
+            "module": 2
+        },
+        {
+            "question_id": "8",
+            "question_text": "If an Uber dashboard shows riders in a zone waiting 20+ minutes for a match, which operational lever best restores marketplace liquidity?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Triggering surge pricing or push notifications to nearby drivers to rebalance supply",
+                "B": "Temporarily banning new rider sign-ups",
+                "C": "Charging riders a flat access fee to browse driver profiles",
+                "D": "Disabling GPS tracking in that zone"
+            },
+            "correct_option_label": "A",
+            "explanation": "Long rider waits mean supply is short. Surge pricing or push notifications to nearby drivers rebalance supply and demand and restore liquidity. Banning sign-ups or disabling GPS does not fix it.",
+            "module": 5
+        },
+        {
+            "question_id": "9",
+            "question_text": "Which platform launch strategy involves the operator first fulfilling transactions itself (e.g., through an owned fleet or in-house inventory) before opening the market to third-party participants?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Micro-market strategy",
+                "B": "Follow-the-Rabbit strategy",
+                "C": "Piggyback strategy",
+                "D": "Big-Bang seeding strategy"
+            },
+            "correct_option_label": "B",
+            "explanation": "In the Follow-the-Rabbit strategy, the operator first fulfils transactions itself (own fleet or inventory) to validate demand, then opens the market to third-party participants.",
+            "module": 2
+        },
+        {
+            "question_id": "10",
+            "question_text": "An independent filmmaker wants to showcase a short film with high visual fidelity, advanced analytics, and no third-party ad interruptions. Which platform strategy fits best?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "YouTube's fully automated, ad-supported recommendation engine",
+                "B": "Craigslist's local classifieds video section",
+                "C": "A generic blog's embedded video widget",
+                "D": "Vimeo's ad-free, subscription-based model geared toward creative control"
+            },
+            "correct_option_label": "D",
+            "explanation": "Vimeo's ad-free, subscription-based model gives creators high visual fidelity, analytics, and creative control, with no third-party ad interruptions.",
+            "module": 2
+        },
+        {
+            "question_id": "11",
+            "question_text": "Which metric would best capture the \"liquidity\" of a freelance marketplace such as Upwork?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The number of fonts used on the homepage",
+                "B": "Total headcount at the company's headquarters",
+                "C": "Total office square footage",
+                "D": "The percentage of posted jobs that result in a successful hire"
+            },
+            "correct_option_label": "D",
+            "explanation": "Marketplace liquidity is the ease with which supply and demand match. On Upwork, the share of posted jobs that end in a successful hire measures this directly.",
+            "module": 3
+        },
+        {
+            "question_id": "12",
+            "question_text": "Which platform is frequently cited for using behavioural data to power \"Personalised Recommendations\" for music and audio content?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Zomato",
+                "B": "Ola",
+                "C": "Spotify",
+                "D": "eBay"
+            },
+            "correct_option_label": "C",
+            "explanation": "Spotify uses behavioural data (listening history) to power personalised recommendations for music and audio. Zomato, Ola, and eBay are not cited for this.",
+            "module": 3
+        },
+        {
+            "question_id": "13",
+            "question_text": "How does data analytics on a marketplace like eBay specifically empower its \"Sellers\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "By auto-generating legally binding contracts",
+                "B": "By guaranteeing a sale regardless of listing quality",
+                "C": "By surfacing market-trend and pricing-dynamics insights they can act on",
+                "D": "By exposing every buyer's home address"
+            },
+            "correct_option_label": "C",
+            "explanation": "eBay's data analytics gives sellers insights into market trends and pricing dynamics they can act on. It cannot guarantee sales or expose buyers' private data.",
+            "module": 3
+        },
+        {
+            "question_id": "14",
+            "question_text": "Why is \"disintermediation\" considered a structural risk for service marketplaces like Urban Company or Airbnb?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because buyers and sellers may move transactions off-platform to avoid paying service fees",
+                "B": "Because it requires excessive data storage",
+                "C": "Because too many users overload the servers",
+                "D": "Because it slows down internet speeds"
+            },
+            "correct_option_label": "A",
+            "explanation": "Disintermediation is a risk because buyers and sellers may take transactions off-platform to avoid service fees. This leaks the platform's revenue.",
+            "module": 5
+        },
+        {
+            "question_id": "15",
+            "question_text": "A customer is anxious about receiving counterfeit cosmetics online. Which Nykaa value proposition would most directly reassure them?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Extensive product selection",
+                "B": "Authenticity and direct sourcing from brands",
+                "C": "Fast delivery windows",
+                "D": "In-house private labels"
+            },
+            "correct_option_label": "B",
+            "explanation": "Nykaa's value proposition of authenticity and direct sourcing from brands addresses fears of counterfeit cosmetics.",
+            "module": 3
+        },
+        {
+            "question_id": "16",
+            "question_text": "Nykaa wants to deepen its \"multi-sided\" platform model. Which new participant group would be the most natural addition?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Auto-repair mechanics",
+                "B": "Heavy-machinery manufacturers",
+                "C": "Beauty influencers and makeup experts",
+                "D": "A pure offline-only retail arm"
+            },
+            "correct_option_label": "C",
+            "explanation": "Nykaa's multi-sided model brings together brands, customers, and content creators. Beauty influencers and makeup experts are the most natural new participant group.",
+            "module": 3
+        },
+        {
+            "question_id": "17",
+            "question_text": "An insurance provider wants to reach more customers without hiring additional agents. How should it apply the Policybazaar-style marketplace model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Charge users a fee just to view policy details",
+                "B": "Rely solely on physical mail campaigns",
+                "C": "List its products on the marketplace to tap into the platform's existing user base",
+                "D": "Shut down its own website entirely"
+            },
+            "correct_option_label": "C",
+            "explanation": "Listing its products on the marketplace lets the insurer tap the platform's existing user base without hiring more agents, as Policybazaar's model does.",
+            "module": 3
+        },
+        {
+            "question_id": "18",
+            "question_text": "Which metric captures the total value of all transactions processed through a B2B marketplace, before deducting the platform's own commission?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Gross Merchandise Value (GMV)",
+                "B": "Net Profit",
+                "C": "Referral Rate",
+                "D": "Inventory Turnover Ratio"
+            },
+            "correct_option_label": "A",
+            "explanation": "Gross Merchandise Value (GMV) is the total value of all transactions processed through a marketplace, before deducting the platform's commission.",
+            "module": 3
+        },
+        {
+            "question_id": "19",
+            "question_text": "What primarily allowed Zoom to disrupt video-conferencing incumbents like Cisco WebEx and Microsoft Teams in its early growth phase?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It was the only completely free option on the market",
+                "B": "It shipped pre-bundled with Windows",
+                "C": "It relied exclusively on on-premise servers",
+                "D": "Its simplicity and reliable audio/video quality even on weak connections"
+            },
+            "correct_option_label": "D",
+            "explanation": "Zoom disrupted WebEx and Teams through its simplicity and reliable audio/video quality even on weak connections.",
+            "module": 4
+        },
+        {
+            "question_id": "20",
+            "question_text": "A SaaS company bills a customer strictly according to the number of API calls consumed each month. This pricing model is known as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Tiered pricing",
+                "B": "Perpetual licensing",
+                "C": "Freemium",
+                "D": "Usage-based pricing"
+            },
+            "correct_option_label": "D",
+            "explanation": "Charging strictly by consumption, such as the number of API calls, is usage-based (pay-as-you-go) pricing.",
+            "module": 4
+        },
+        {
+            "question_id": "21",
+            "question_text": "A customer downgrades from the \"Pro\" plan to \"Basic\", reducing the monthly revenue they contribute. This is best described as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Churn",
+                "B": "Contraction",
+                "C": "Expansion",
+                "D": "Acquisition"
+            },
+            "correct_option_label": "B",
+            "explanation": "A customer moving from a higher plan to a lower one stays a customer but pays less. This is contraction, whereas churn is a full cancellation.",
+            "module": 4
+        },
+        {
+            "question_id": "22",
+            "question_text": "You're selling SaaS to a 50,000-employee enterprise. Best-practice guidance suggests your sales motion should be:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Identical to a self-serve small-business sale",
+                "B": "Tailored specifically to enterprise buying processes and stakeholders",
+                "C": "Focused exclusively on SEO",
+                "D": "Fully automated through chatbots only"
+            },
+            "correct_option_label": "B",
+            "explanation": "Enterprise buyers have complex buying processes and many stakeholders. The sales motion must be tailored to them, not a self-serve approach.",
+            "module": 4
+        },
+        {
+            "question_id": "23",
+            "question_text": "Users adopt a product because it's genuinely useful and organically invite colleagues, with no salesperson involved in the process. This growth motion is known as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Enterprise Field Sales",
+                "B": "Sales-Led Growth",
+                "C": "On-Premise Licensing",
+                "D": "Product-Led Growth (PLG)"
+            },
+            "correct_option_label": "D",
+            "explanation": "When users adopt a product because it is useful and organically invite colleagues, with no salesperson involved, the growth motion is Product-Led Growth (PLG).",
+            "module": 4
+        },
+        {
+            "question_id": "24",
+            "question_text": "Which Indian FinTech company is commonly cited as a leading example offering mobile wallets, UPI payments, and utility bill payments?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "ZestMoney",
+                "B": "Paytm",
+                "C": "LendingKart",
+                "D": "Adobe"
+            },
+            "correct_option_label": "B",
+            "explanation": "Paytm is the Indian FinTech example known for mobile wallets, UPI payments, and utility bill payments.",
+            "module": 4
+        },
+        {
+            "question_id": "25",
+            "question_text": "Which concept best explains the fundamental reason a customer chooses a SaaS product over legacy on-premise software?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Revenue generation",
+                "B": "Value proposition",
+                "C": "Capital expenditure (CAPEX)",
+                "D": "Churn rate"
+            },
+            "correct_option_label": "B",
+            "explanation": "The value proposition is the fundamental reason a customer chooses a SaaS product over legacy on-premise software. Revenue, CAPEX, and churn are business-side measures.",
+            "module": 4
+        },
+        {
+            "question_id": "26",
+            "question_text": "Offering existing users a $50 credit for successfully referring a friend to sign up is an example of:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A customer referral program",
+                "B": "Content marketing",
+                "C": "Market segmentation",
+                "D": "Vertical SaaS"
+            },
+            "correct_option_label": "A",
+            "explanation": "Giving existing users a credit for referring a friend who signs up is a customer referral program.",
+            "module": 4
+        },
+        {
+            "question_id": "27",
+            "question_text": "You have an idea for a new app but build only its essential core feature first to test market interest before investing further. This stripped-down version is called the:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Product roadmap",
+                "B": "Final product",
+                "C": "Beta test",
+                "D": "Minimum Viable Product (MVP)"
+            },
+            "correct_option_label": "D",
+            "explanation": "Building only the essential core feature to test market interest before investing further is a Minimum Viable Product (MVP).",
+            "module": 4
+        },
+        {
+            "question_id": "28",
+            "question_text": "What is the defining characteristic of a \"Neobank\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It operates the largest network of physical branches",
+                "B": "It operates entirely through digital channels with no physical branch network",
+                "C": "It is wholly government-owned",
+                "D": "It deals exclusively in physical gold"
+            },
+            "correct_option_label": "B",
+            "explanation": "A Neobank is a digital-only bank. It operates entirely through digital channels with no physical branch network.",
+            "module": 4
+        },
+        {
+            "question_id": "29",
+            "question_text": "Why is Customer Acquisition Cost (CAC) an especially critical metric for WealthTech platforms compared to traditional banks?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because customers switch banks daily",
+                "B": "Because WealthTech firms generate no revenue at all",
+                "C": "Because regulators fix the CAC by law",
+                "D": "Because per-transaction margins are thin, so users must be acquired cost-efficiently to remain profitable"
+            },
+            "correct_option_label": "D",
+            "explanation": "WealthTech platforms earn thin per-transaction margins, so users must be acquired cost-efficiently. This makes CAC especially critical compared with traditional banks.",
+            "module": 4
+        },
+        {
+            "question_id": "30",
+            "question_text": "Practo's \"Surgery Discovery\" vertical lets patients book high-value surgeries end-to-end through the platform. How does Practo primarily monetise this service?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Selling surgical instruments directly to hospitals",
+                "B": "A flat monthly membership fee charged to patients",
+                "C": "Billing doctors for the electricity used during the procedure",
+                "D": "A commission taken on the surgery revenue"
+            },
+            "correct_option_label": "D",
+            "explanation": "Practo's Surgery Discovery vertical earns revenue as a commission on the surgery bookings made through the platform.",
+            "module": 5
+        },
+        {
+            "question_id": "31",
+            "question_text": "Which factor is most often cited as part of the \"robust supporting ecosystem\" that has enabled D2C brands to flourish in India?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The elimination of all last-mile delivery services",
+                "B": "Horizontal platforms like Amazon, social media, and digital payment systems",
+                "C": "A full return to offline-only village retail",
+                "D": "A nationwide ban on product R&D"
+            },
+            "correct_option_label": "B",
+            "explanation": "Horizontal platforms such as Amazon, social media, and digital payment systems form the robust supporting ecosystem that lets D2C brands sell directly online.",
+            "module": 5
+        },
+        {
+            "question_id": "32",
+            "question_text": "Why has boAt been able to price its audio products more competitively than legacy premium audio brands?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Lower corporate overheads and reduced spend on mass-media brand advertising",
+                "B": "Because it conducts no R&D whatsoever",
+                "C": "Because it sells through a single flagship store only",
+                "D": "Because its products are made from low-cost cardboard casing"
+            },
+            "correct_option_label": "A",
+            "explanation": "boAt kept corporate overheads low and spent little on mass-media advertising, which let it price below legacy premium audio brands.",
+            "module": 5
+        },
+        {
+            "question_id": "33",
+            "question_text": "Which of the following best captures Mamaearth's core value proposition as a D2C brand?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Offering the cheapest possible chemical-heavy formulations",
+                "B": "Selling exclusively through premium physical boutiques",
+                "C": "Keeping its ingredient list confidential",
+                "D": "Safe, toxin-free alternatives for baby and personal care"
+            },
+            "correct_option_label": "D",
+            "explanation": "Mamaearth's core D2C value proposition is safe, toxin-free alternatives for baby and personal care.",
+            "module": 5
+        },
+        {
+            "question_id": "34",
+            "question_text": "How does boAt's product design philosophy differ from that of traditional premium audio brands?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "boAt products are made entirely of wood",
+                "B": "There is no meaningful design difference - only price differs",
+                "C": "boAt products are sold in only one colour",
+                "D": "Traditional designs were bulky and utilitarian, while boAt emphasises youth-centric, fashion-forward aesthetics"
+            },
+            "correct_option_label": "D",
+            "explanation": "Traditional audio designs were bulky and utilitarian, whereas boAt emphasises youth-centric, fashion-forward aesthetics.",
+            "module": 5
+        },
+        {
+            "question_id": "35",
+            "question_text": "Why is influencer marketing particularly effective for a youth-focused D2C brand like boAt?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because young audiences follow influencers, and seeing them use trendy products builds social proof and desirability",
+                "B": "Because influencers work without any compensation",
+                "C": "Because influencers personally manufacture the products",
+                "D": "Because it is the only route into physical retail stores"
+            },
+            "correct_option_label": "A",
+            "explanation": "Young audiences follow influencers. Seeing them use trendy products builds social proof and desirability for a youth-focused D2C brand like boAt.",
+            "module": 5
+        },
+        {
+            "question_id": "36",
+            "question_text": "What is the key difference between a \"vanity metric\" and an \"actionable metric\"?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Actionable metrics are always numerically larger",
+                "B": "Vanity metrics are free to track; actionable metrics cost money",
+                "C": "Vanity metrics look impressive but offer little strategic insight, while actionable metrics directly inform business decisions",
+                "D": "Vanity metrics are used only by technology companies"
+            },
+            "correct_option_label": "C",
+            "explanation": "Vanity metrics look impressive but give little strategic insight. Actionable metrics directly inform business decisions.",
+            "module": 7
+        },
+        {
+            "question_id": "37",
+            "question_text": "What was a major impact of Web 2.0 on the creator economy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "A sharp decline in overall internet usage",
+                "B": "The growth of user-generated content and interactive platforms",
+                "C": "A steep decline in social media adoption",
+                "D": "The disappearance of blogging as a format"
+            },
+            "correct_option_label": "B",
+            "explanation": "Web 2.0 enabled user-generated content and interactive platforms, which fuelled the growth of the creator economy.",
+            "module": 6
+        },
+        {
+            "question_id": "38",
+            "question_text": "How does consistent KPI tracking support \"informed decision-making\" within an organisation?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It guarantees the CEO's judgment is always correct",
+                "B": "It removes the need for management meetings entirely",
+                "C": "It lets leaders base decisions on quantifiable data instead of gut instinct",
+                "D": "It automatically makes strategic decisions on the manager's behalf"
+            },
+            "correct_option_label": "C",
+            "explanation": "Consistent KPI tracking lets leaders base decisions on quantifiable data instead of gut instinct.",
+            "module": 7
+        },
+        {
+            "question_id": "39",
+            "question_text": "The Balanced Scorecard evaluates an organisation from which four perspectives?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Financial, Customer, Internal Process, Learning & Growth",
+                "B": "Marketing, Sales, HR, Operations",
+                "C": "Shareholder, Competitor, Government, Public",
+                "D": "Short-term, Long-term, Daily, Monthly"
+            },
+            "correct_option_label": "A",
+            "explanation": "The Balanced Scorecard views an organisation from four perspectives: Financial, Customer, Internal Process, and Learning & Growth.",
+            "module": 7
+        },
+        {
+            "question_id": "40",
+            "question_text": "Which metric in a manufacturing business model most directly measures operational efficiency?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Churn rate",
+                "B": "Machine utilisation rate",
+                "C": "Royalty fee",
+                "D": "Average daily rate"
+            },
+            "correct_option_label": "B",
+            "explanation": "Machine utilisation rate measures how much of a machine's capacity is used. It directly reflects operational efficiency in manufacturing.",
+            "module": 7
+        },
+        {
+            "question_id": "41",
+            "question_text": "Historically, creators depended on intermediaries such as publishers or record labels. What has fundamentally changed in today's creator economy?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Increased reliance on intermediaries",
+                "B": "Direct creator-to-audience connection enabled by digital platforms",
+                "C": "Reduced overall content production",
+                "D": "The elimination of all monetisation options"
+            },
+            "correct_option_label": "B",
+            "explanation": "Digital platforms let creators connect directly with their audience, reducing dependence on publishers and record labels.",
+            "module": 6
+        },
+        {
+            "question_id": "42",
+            "question_text": "Why is \"creator retention\" a critical metric for creator-economy platforms?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Because end-users on the platform don't matter",
+                "B": "Because higher creator earnings and better tools reduce creator churn, sustaining the content supply",
+                "C": "Because creators typically stay regardless of how much they earn",
+                "D": "Because retention has no relationship to monetisation"
+            },
+            "correct_option_label": "B",
+            "explanation": "Higher creator earnings and better tools reduce creator churn. This sustains the content supply, which is why creator retention is critical.",
+            "module": 6
+        },
+        {
+            "question_id": "43",
+            "question_text": "In an on-demand or subscription business, what is generally considered the \"golden rule\" target for the LTV:CAC ratio?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "10:1",
+                "B": "1:5",
+                "C": "3:1",
+                "D": "1:1"
+            },
+            "correct_option_label": "C",
+            "explanation": "The golden-rule target for LTV:CAC in on-demand and subscription businesses is 3:1. Customer lifetime value should be about three times the cost of acquiring the customer.",
+            "module": 7
+        },
+        {
+            "question_id": "44",
+            "question_text": "Why are NFTs considered useful for digital art, even though the underlying image files can be copied?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "They convert digital art into a physical product",
+                "B": "They make copying technically impossible",
+                "C": "They automatically delete all duplicate image files",
+                "D": "They provide verifiable proof of ownership and authenticity despite the existence of copies"
+            },
+            "correct_option_label": "D",
+            "explanation": "An NFT gives verifiable proof of ownership and authenticity for a digital asset, even though copies of the image file can exist.",
+            "module": 6
+        },
+        {
+            "question_id": "45",
+            "question_text": "Which of the following is a defining feature of cryptocurrency systems?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Centralised control by a single bank",
+                "B": "Fixed exchange rates set by national governments",
+                "C": "Complete reliance on paper record-keeping",
+                "D": "Decentralisation enabled by blockchain technology"
+            },
+            "correct_option_label": "D",
+            "explanation": "Cryptocurrency systems are decentralised, enabled by blockchain technology, with no single bank in control.",
+            "module": 6
+        },
+        {
+            "question_id": "46",
+            "question_text": "A restaurant currently pays 27% commission to a food-delivery duopoly. If it integrates with ONDC, what is the most direct way this improves its profitability?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "It should raise menu prices to absorb the 27% fee",
+                "B": "It can save a substantial portion of the commission by routing orders through ONDC, improving its net margin",
+                "C": "It should sell only its own branded merchandise and ignore delivery entirely",
+                "D": "It should stop offering delivery altogether"
+            },
+            "correct_option_label": "B",
+            "explanation": "By routing orders through ONDC, the restaurant can save a substantial part of the 27% commission and improve its net margin.",
+            "module": 8
+        },
+        {
+            "question_id": "47",
+            "question_text": "What is the primary function of the protocol layer connecting buyer apps and seller apps within ONDC?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "To let any buyer app transact with any seller app, regardless of which company built each one",
+                "B": "To operate as a single monopoly platform",
+                "C": "To set fixed prices for all goods sold on the network",
+                "D": "To hold customer funds like a bank"
+            },
+            "correct_option_label": "A",
+            "explanation": "The ONDC protocol layer lets any buyer app transact with any seller app, irrespective of which company built each one.",
+            "module": 8
+        },
+        {
+            "question_id": "48",
+            "question_text": "An online store recorded 20,000 visitors and 400 completed purchases in a month. What is its conversion rate?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "20%",
+                "B": "0.02%",
+                "C": "2%",
+                "D": "5%"
+            },
+            "correct_option_label": "C",
+            "explanation": "Conversion rate = purchases / visitors x 100.\n\nStep 1: 400 / 20,000 = 0.02.\n\nStep 2: 0.02 x 100 = 2%.",
+            "module": 7
+        },
+        {
+            "question_id": "49",
+            "question_text": "Can a neighbourhood Kirana store function as a \"Seller Side App\" on ONDC?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Yes, but only if it exclusively sells electronics",
+                "B": "Yes - if it chooses to, it can list itself directly on ONDC as a seller-side application",
+                "C": "No, it must always sell through Amazon or Flipkart",
+                "D": "No, only large national brands are permitted to be apps"
+            },
+            "correct_option_label": "B",
+            "explanation": "ONDC is an open network, so a Kirana store can list itself directly as a seller-side application if it chooses to.",
+            "module": 8
+        },
+        {
+            "question_id": "50",
+            "question_text": "The challenge a new two-sided marketplace faces in attracting both buyers and sellers simultaneously - since neither side wants to join first without the other already present - is commonly known as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The chicken-and-egg problem",
+                "B": "The churn spiral",
+                "C": "The disintermediation paradox",
+                "D": "The vanity metric problem"
+            },
+            "correct_option_label": "A",
+            "explanation": "The chicken-and-egg problem is the challenge of attracting buyers and sellers at the same time, since neither wants to join first.",
+            "module": 2
+        }
+    ]
+}
