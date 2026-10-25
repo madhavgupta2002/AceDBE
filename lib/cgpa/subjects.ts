@@ -112,9 +112,9 @@ const RAW_SUBJECTS: RawSubject[] = [
   { term: 7, code: '', name: 'Sales and Distribution Management (DTC)', credits: 1.5, batches: [1, 2] },
   { term: 7, code: '', name: 'Do your Venture-2', credits: 3, batches: [1, 2] },
   { term: 7, code: '', name: 'Nature of Languages', credits: 1.5, batches: [1, 2] },
-  { term: 7, code: '', name: 'Critical Thinking', credits: 1.5, batches: [1, 2] },
+  { term: 7, code: 'MD71x', name: 'Critical Thinking', credits: 1.5, batches: [1, 2] },
   { term: 7, code: '', name: 'Big Data Analytics', credits: 3, batches: [1, 2] },
-  { term: 7, code: '', name: 'Family Business', credits: 1.5, batches: [1, 2] },
+  { term: 7, code: 'ST71x', name: 'Family Business', credits: 1.5, batches: [1, 2] },
 
   // ── Year 3 · Term 8 (15) — common ───────────────────────────
   { term: 8, code: '', name: 'Customer Relationship Management', credits: 3, batches: [1, 2] },
