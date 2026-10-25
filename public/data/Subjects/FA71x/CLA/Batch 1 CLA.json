@@ -1,0 +1,1203 @@
+{
+  "exam_metadata": {
+    "subject_name": "Corporate Finance",
+    "exam_date": "Batch 1"
+  },
+  "questions": [
+    {
+      "question_id": "M1-Q1",
+      "question_text": "Which of the following statements best reflects a fundamental principle of finance?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Investors are generally risk-neutral, and therefore, they do not care about risk.",
+        "B": "Investors are generally risk-averse, and therefore, they choose a safe rupee over a risky rupee at any given point in time.",
+        "C": "Investors are generally risk-loving, and therefore, they choose a risky rupee over a safe rupee at any given point in time.",
+        "D": "Investors prefer a safe rupee next year over a safe rupee today."
+      },
+      "correct_option_label": "B",
+      "explanation": "Investors are risk-averse: given the choice, they prefer a safe rupee over a risky rupee of the same expected value.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q2",
+      "question_text": "Which of the following statements are correct?\nI.   ₹1 received today is worth more than ₹1 received tomorrow.\nII.  A real asset cannot be an intangible asset.\nIII. A project is expected to add value when the expected return is greater than its opportunity cost of capital.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "I and II",
+        "B": "II and III",
+        "C": "I, II, and III",
+        "D": "I and III"
+      },
+      "correct_option_label": "D",
+      "explanation": "I is the time value of money and III is the NPV logic. II is false because real assets can be intangible (brand, reputation, patents).",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q3",
+      "question_text": "Which of the following is a corporate investment decision?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Deciding whether to issue equity or debt",
+        "B": "Deciding whether to acquire a new manufacturing plant",
+        "C": "Deciding the dividend payout ratio",
+        "D": "Deciding the amount of employee cost"
+      },
+      "correct_option_label": "B",
+      "explanation": "Investment decisions are about which real assets to buy; acquiring a plant is one. Equity vs debt and dividend payout are financing decisions.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q4",
+      "question_text": "Two mutually exclusive value-adding investments A and B have the same outlay, life and expected return, but A has substantially lower risk. A rational risk-averse investor would generally prefer:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Investment B",
+        "B": "Investment A",
+        "C": "Both equally",
+        "D": "Neither investment"
+      },
+      "correct_option_label": "B",
+      "explanation": "With identical outlay, life and expected return, a risk-averse investor picks the lower-risk option.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q5",
+      "question_text": "Which of the following statements is NOT correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The liability of the sole proprietor is not limited to the value of the firm's assets",
+        "B": "The shareholders of a public company generally have limited liability",
+        "C": "The sole member of the One Person Company (OPC) generally has limited liability",
+        "D": "Partners in a limited liability partnership firm generally have unlimited liability"
+      },
+      "correct_option_label": "D",
+      "explanation": "Partners in an LLP have limited liability, so statement (d) is the incorrect one.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q6",
+      "question_text": "Which of the following demonstrates an agency problem between shareholders and managers?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Managers selecting projects that are expected to increase shareholder wealth",
+        "B": "Shareholders receiving dividends in accordance with the company's dividend policy",
+        "C": "Managers using company resources to provide themselves with personal benefits",
+        "D": "A company consistently repaying its bank loans on time, including interest payments"
+      },
+      "correct_option_label": "C",
+      "explanation": "Managers using company resources for personal benefit puts their interests above shareholders' — a classic agency problem.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q7",
+      "question_text": "Company A has ₹20 lakh surplus cash. It can invest in Project X (expected 14%) or earn 9% in a comparable-risk financial asset. Most appropriate conclusion?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Project X should not be accepted because the funds would be locked in once invested in the project.",
+        "B": "Project X should be accepted because its expected return exceeds its opportunity cost of capital.",
+        "C": "Project X should be rejected because the company should always keep surplus cash in liquid investments.",
+        "D": "The 9% return available from the alternative investment is irrelevant for decision-making."
+      },
+      "correct_option_label": "B",
+      "explanation": "The 9% on a comparable-risk financial asset is the opportunity cost of capital; 14% > 9%, so Project X adds value.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q8",
+      "question_text": "Choosing between issuing equity or raising debt to finance a project is primarily a:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Financing decision",
+        "B": "Investing decision",
+        "C": "Operating decision",
+        "D": "Dividend decision"
+      },
+      "correct_option_label": "A",
+      "explanation": "Choosing between equity and debt decides how the project is funded, which is a financing decision.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q9",
+      "question_text": "A company is considering a ₹50 lakh machine generating cash flows over five years. It should undertake the investment if the project is expected to:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Increase the company's accounting profit in the current year, regardless of risk",
+        "B": "Increase shareholder wealth by generating returns that exceed the opportunity cost of capital",
+        "C": "Increase the company's sales revenue, regardless of the investment required",
+        "D": "Reduce the company's dividend payout in the short term"
+      },
+      "correct_option_label": "B",
+      "explanation": "Invest only if the project earns more than the opportunity cost of capital, i.e. increases shareholder wealth.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q10",
+      "question_text": "Match Column I with Column II:\nColumn I                    Column II\n1. Wealth                   A. Measured over a period of time\n2. Profit                   B. Return available in the financial market at the same level of risk\n3. Opportunity cost         C. Measured at a particular point in time\n4. Risk–return trade-off    D. Higher expected return generally required for higher risk",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1-C, 2-A, 3-B, 4-D",
+        "B": "1-A, 2-C, 3-D, 4-B",
+        "C": "1-B, 2-A, 3-C, 4-D",
+        "D": "1-C, 2-A, 3-A, 4-D"
+      },
+      "correct_option_label": "A",
+      "explanation": "Wealth is a stock measured at a point in time; profit is a flow over a period; opportunity cost is the market return at the same risk; higher risk requires higher expected return.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q11",
+      "question_text": "The primary financial objective of a corporation is to:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Maximise dividend payouts",
+        "B": "Maximise the borrowings",
+        "C": "Maximise the shareholder wealth",
+        "D": "Invest in any project"
+      },
+      "correct_option_label": "C",
+      "explanation": "The primary financial objective of a corporation is to maximise shareholder wealth.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q12",
+      "question_text": "What is the maximum number of shareholders a private limited company can have in India?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "50",
+        "B": "100",
+        "C": "200",
+        "D": "Unlimited"
+      },
+      "correct_option_label": "C",
+      "explanation": "A private limited company in India can have at most 200 shareholders (Companies Act, 2013).",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q13",
+      "question_text": "Which of the following is generally NOT a characteristic of a company form of business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The company is a separate legal entity",
+        "B": "The shareholders of the company have limited liability",
+        "C": "The company will cease to exist if its founding member passes away",
+        "D": "Companies are regulated under the Companies Act, 2013"
+      },
+      "correct_option_label": "C",
+      "explanation": "A company is a separate legal entity with perpetual existence, so it does not cease when a founder dies.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q14",
+      "question_text": "Which of the following applies to a public limited company?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The company can have a maximum of 1000 shareholders",
+        "B": "The company's name should end with the suffix 'Pvt. Ltd.'",
+        "C": "The company must have a minimum of 3 directors",
+        "D": "The shares of the company cannot be transferred freely"
+      },
+      "correct_option_label": "C",
+      "explanation": "A public limited company needs a minimum of 3 directors (a private company needs 2); there is no cap on shareholders.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q15",
+      "question_text": "Agency costs arise primarily because:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "All investors have identical objectives",
+        "B": "Managers and owners may have conflicting interests",
+        "C": "Companies always have to rely on external financing",
+        "D": "Shareholders directly manage every business decision"
+      },
+      "correct_option_label": "B",
+      "explanation": "Agency costs arise because managers (agents) may pursue goals that conflict with those of owners (principals).",
+      "module": 1
+    },
+    {
+      "question_id": "M2-Q1",
+      "question_text": "Ramesh deposits ₹20,000 in a fixed deposit for 4 years. The fixed deposit earns interest at 7% per annum, compounded annually. How much money will Ramesh receive at maturity?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹24,626",
+        "B": "₹26,616",
+        "C": "₹26,216",
+        "D": "₹25,626"
+      },
+      "correct_option_label": "C",
+      "explanation": "20,000 x 1.07^4 = 26,216",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q2",
+      "question_text": "Priya expects to receive ₹50,000 three years from now from an investment. If the appropriate opportunity cost of capital is 12% per year, what is the approximate present value of this amount?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹35,589",
+        "B": "₹32,000",
+        "C": "₹44,648",
+        "D": "₹30,000"
+      },
+      "correct_option_label": "A",
+      "explanation": "50,000 / 1.12^3 = 35,589",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q3",
+      "question_text": "Neha is evaluating an investment that will pay her ₹2,00,000 after four years. She calculates its present value using both an 8% per year and a 12% per year discount rate. Which statement is correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The present value will be higher at 12%",
+        "B": "The present value will be the same at both rates",
+        "C": "The present value will be higher at 8%",
+        "D": "The future value will automatically change"
+      },
+      "correct_option_label": "C",
+      "explanation": "Lower discount rate gives higher PV",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q4",
+      "question_text": "Consider the following statements about compounding and discounting. Which of the following statements are correct?\nI. Compounding is used to determine the future value of an amount invested today.\nII. Discounting is used to determine the present value of a future cash flow.\nIII. A higher discount rate generally results in a higher present value of a given future cash flow.\nIV. The more risky the future payoff or cashflow, the more is its present value today.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "I and III",
+        "B": "I and II",
+        "C": "II and IV",
+        "D": "II and III"
+      },
+      "correct_option_label": "B",
+      "explanation": "III and IV are false - higher rate/risk lowers PV",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q5",
+      "question_text": "Arjun has ₹10 lakh available for investment. He can invest in a business project expected to yield a return of 13% per year. Alternatively, he can invest the money in the financial market at the same risk and earn a return of 9% per year. . What is the most appropriate interpretation of the 9% return?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It represents the project's expected cash inflows",
+        "B": "It represents the project's expected profit before tax",
+        "C": "It represents the opportunity cost of capital",
+        "D": "It represents the guaranteed return from the project"
+      },
+      "correct_option_label": "C",
+      "explanation": "Return forgone on equal-risk alternative",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q6",
+      "question_text": "Kavita wants to invest in a scheme that will pay her ₹10,000 at the end of each year for 5 years. If the opportunity cost of capital is 10% per year, what is the approximate amount she needs to invest today in the scheme?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹31,046",
+        "B": "₹37,908",
+        "C": "₹40,000",
+        "D": "₹50,000"
+      },
+      "correct_option_label": "B",
+      "explanation": "10,000 x PVA(10%,5) = 10,000 x 3.7908",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q7",
+      "question_text": "An investment will generate ₹20,000 at the end of each year for five years, beginning at the end of Year 3. If the opportunity cost of capital is 10%, what is the approximate present value of the investment?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹68,565",
+        "B": "₹75,815",
+        "C": "₹56,961",
+        "D": "₹62,658"
+      },
+      "correct_option_label": "D",
+      "explanation": "20,000 x 3.7908 = 75,816 at Yr 2, / 1.1^2 = 62,658",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q8",
+      "question_text": "A company takes a loan that requires it to make equal annual instalments of ₹2 lakh at the end of each year for 7 years. This series of payments represents a:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Perpetuity",
+        "B": "Annuity",
+        "C": "Growing perpetuity",
+        "D": "Growing annuity"
+      },
+      "correct_option_label": "B",
+      "explanation": "Equal fixed payments for a fixed period",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q9",
+      "question_text": "Arun deposits ₹25,000 at the end of each year for four years, beginning at the end of Year 3. If the investment earns 8% per year, what will be the approximate value of these deposits at the end of Year 6?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹1,10,987",
+        "B": "₹1,25,971",
+        "C": "₹1,12,653",
+        "D": "₹1,04,308"
+      },
+      "correct_option_label": "C",
+      "explanation": "4 deposits Yr 3-6: 25,000 x FVA(8%,4)=25,000 x 4.5061",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q10",
+      "question_text": "Mahesh invests in a scheme offering him ₹10,000 every year (starting one year from today), forever. Find the present value of these yearly payments if the discount rate is 10%.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹1,00,000",
+        "B": "₹1,10,000",
+        "C": "₹1,50,000",
+        "D": "₹2,00,000"
+      },
+      "correct_option_label": "A",
+      "explanation": "10,000 / 0.10",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q11",
+      "question_text": "Meera takes a car loan of ₹7,00,000 for 7 years at 10% interest per annum. The loan agreement requires Meera to make equal annual payments at the end of every year for 7 years. Using the given information, what is the annual instalment that Meera needs to pay at the end of every year?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹1,42,783",
+        "B": "₹1,52,024",
+        "C": "₹1,43,784",
+        "D": "₹1,53,783"
+      },
+      "correct_option_label": "C",
+      "explanation": "7,00,000 / PVA(10%,7)=7,00,000/4.8684",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q12",
+      "question_text": "Meera takes a car loan of ₹7,00,000 for 7 years at 10% interest per annum. The loan agreement requires Meera to make equal annual payments at the end of every year for 7 years. Using the given information, what is the amount of principal remaining to be repaid at the end of year 3?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹4,50,775",
+        "B": "₹4,55,775",
+        "C": "₹4,53,775",
+        "D": "₹4,53,775"
+      },
+      "correct_option_label": "B",
+      "explanation": "Balance after 3 payments = 1,43,784 x PVA(10%,4) = 4,55,775",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q13",
+      "question_text": "Meera takes a car loan of ₹7,00,000 for 7 years at 10% interest per annum. The loan agreement requires Meera to make equal annual payments at the end of every year for 7 years. Using the given information, what is the total amount of interest paid till the end of year 3?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹1,85,127",
+        "B": "₹1,86,127",
+        "C": "₹1,84,127",
+        "D": "₹1,87,127"
+      },
+      "correct_option_label": "D",
+      "explanation": "Interest yrs 1-3: 70,000 + 62,622 + 54,505 = 1,87,127",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q14",
+      "question_text": "Rahul expects to receive ₹10,000 at the end of Year 1 from an investment. The payment will increase by 5% each year for the next four years, resulting in a total of five payments. If the discount rate is 10% per annum, what is the approximate present value of these payments?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹37,155",
+        "B": "₹40,000",
+        "C": "₹41,506",
+        "D": "₹43,294"
+      },
+      "correct_option_label": "C",
+      "explanation": "Sum of 10,000 x 1.05^(t-1) / 1.1^t, t=1..5 = 41,506",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q15",
+      "question_text": "An investment offers an Annual Percentage Rate (APR) of 6% per year compounded quarterly. What is the approximate Effective Annual Rate (EAR) on the investment?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "6.00%",
+        "B": "6.08%",
+        "C": "6.14%",
+        "D": "6.50%"
+      },
+      "correct_option_label": "C",
+      "explanation": "(1+0.06/4)^4 - 1 = 6.136%",
+      "module": 2
+    },
+    {
+      "question_id": "M3-Q1",
+      "question_text": "An investor purchased a five-year U.S. government bond. The bond has an coupon rate of 8%, and coupons will be paid semiannually. The face value of the bond is $1000. If the investors demand a return of 12% per year compounded semi-annually, what is the price of the bond?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹852.80",
+        "B": "₹915.95",
+        "C": "₹1084.25",
+        "D": "₹1400"
+      },
+      "correct_option_label": "A",
+      "explanation": "$40 coupon, 6% per half, 10 periods = 852.80",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q2",
+      "question_text": "If a bond's coupon rate is lower than its yield to maturity (YTM), the bond will trade at",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A premium",
+        "B": "A discount",
+        "C": "Par value",
+        "D": "Face value"
+      },
+      "correct_option_label": "B",
+      "explanation": "Coupon < YTM -> price < face",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q3",
+      "question_text": "Which of the following statements is most likely correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Yield to maturity reflects the rate of return investors realise on the investment.",
+        "B": "The holding period return (or the rate of return) measures the future expected return on a bond investment.",
+        "C": "Yield to maturity measures the historical return on the bond for the last two years.",
+        "D": "Yield to maturity is the return that investors expect from buying a bond today and holding it till maturity."
+      },
+      "correct_option_label": "D",
+      "explanation": "YTM = expected return if held to maturity; HPR is realised",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q4",
+      "question_text": "A 10-year bond is issued with a face value of ₹1,000, paying interest (i.e., coupons) of ₹50 per year. If interest rates increase shortly after the bond is issued, the yield to maturity will (a)__________ and price will (b) _________",
+      "question_type": "MCQ",
+      "options": {
+        "A": "(a) Decrease, (b) Decrease",
+        "B": "(a) Increase, (b) Increase",
+        "C": "(a) Decrease, (b) Increase",
+        "D": "(a) Increase, (b) Decrease"
+      },
+      "correct_option_label": "D",
+      "explanation": "Rates up -> YTM up, price down",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q5",
+      "question_text": "A 4-year bond was originally issued with a 9% annual coupon rate and a face value of ₹1,000. At the end of Year 2, with 2 years remaining until maturity, the yield to maturity on the bond falls to 7% per year compounded annually. What is the approximate price of the bond at the end of Year 2?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹985.64",
+        "B": "₹1,036.16",
+        "C": "₹982.64",
+        "D": "₹1,090.00"
+      },
+      "correct_option_label": "B",
+      "explanation": "90/1.07 + 1090/1.07^2 = 1,036.16",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q6",
+      "question_text": "A bond has a face value of ₹1,000 and pays ₹75 in annual interest. What is the bond's coupon rate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "6.50%",
+        "B": "7.00%",
+        "C": "7.50%",
+        "D": "8.00%"
+      },
+      "correct_option_label": "C",
+      "explanation": "75/1000",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q7",
+      "question_text": "Which of the following statements is most likely not correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Long-term bonds generally have greater interest-rate risk than comparable short-term bonds.",
+        "B": "Less liquid bonds generally require higher yields to compensate for the liquidity risk.",
+        "C": "Corporate bonds may offer higher yields than comparable government bonds because of greater default risk of corporate bonds",
+        "D": "Liquidity risk refers to the possibility that the issuer will fail to repay the coupons and face value."
+      },
+      "correct_option_label": "D",
+      "explanation": "That describes default risk, not liquidity risk",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q8",
+      "question_text": "Which of the following statements is most likely not correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "If the yield to maturity (YTM) on a bond increases over a period, the rate of return over the period will be lower than the initial YTM.",
+        "B": "If the yield to maturity (YTM) on a bond decreases over a period, the rate of return over the period will be higher than the initial YTM.",
+        "C": "If the yield to maturity (YTM) on a bond decreases over a period, the rate of return over the period will be lower than the initial YTM.",
+        "D": "If the yield to maturity (YTM) on a bond remains the same over a period, the rate of return over the period will be the same as the initial YTM."
+      },
+      "correct_option_label": "C",
+      "explanation": "YTM falls -> price rises -> realised return HIGHER, not lower",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q9",
+      "question_text": "Match the bonds mentioned in column I with their suitable features listed in column II Column I 1. Coupon bond 2. Zero-coupon bond 3. Perpetual bond 4. Treasury bonds Column II A. No periodic coupon payment B. No maturity date C. Generally long-term bonds D. Periodic coupon payment",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1-A, 2-C, 3-D, 4-B",
+        "B": "1-D, 2-B, 3-A, 4-C",
+        "C": "1-D, 2-A, 3-B, 4-C",
+        "D": "1-B, 2-D, 3-C, 4-A"
+      },
+      "correct_option_label": "C",
+      "explanation": "Coupon-D, Zero-A, Perpetual-B, Treasury-C",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q10",
+      "question_text": "Meera purchases a bond for ₹980 today. The bond pays an annual interest (i.e. coupon) of ₹90 one year from today. At the end of one year (after receiving the coupon), she sells the bond for ₹1,020. What is the rate of return on the bond for the one-year period?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "12.00%",
+        "B": "13.27%",
+        "C": "14.08%",
+        "D": "10.10%"
+      },
+      "correct_option_label": "B",
+      "explanation": "(90 + 1020 - 980)/980 = 13.27%",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q11",
+      "question_text": "An investor purchases an inflation-indexed bond with a face value of ₹1,00,000. The bond pays a fixed real coupon rate of 4% per year. During the year, inflation turns out to be 6%. How much coupon payment will the investor receive (in nominal terms) at the end of the year?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹4,000",
+        "B": "₹4,240",
+        "C": "₹4,840",
+        "D": "₹6,000"
+      },
+      "correct_option_label": "B",
+      "explanation": "Principal indexed to 1,06,000 x 4% = 4,240",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q12",
+      "question_text": "Ravi is evaluating a company's stock. The company is expected to pay a dividend of ₹6 per share one year from today. If dividends are expected to grow at 4% per year and the required return (i.e., the cost of equity) is 10%, what should be the present value of the stock?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹60",
+        "B": "₹100",
+        "C": "₹75",
+        "D": "₹150"
+      },
+      "correct_option_label": "B",
+      "explanation": "6/(0.10-0.04) = 100",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q13",
+      "question_text": "A stock is expected to pay a dividend of ₹7 every year forever. If the cost of equity is 14%, what should be the present value of the stock?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹70",
+        "B": "₹114",
+        "C": "₹107",
+        "D": "₹50"
+      },
+      "correct_option_label": "D",
+      "explanation": "7/0.14 = 50",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q14",
+      "question_text": "A 15-year corporate bond has a face value of ₹1,000 and a coupon rate of 6%. The coupons will be paid semi-annually. If the bond's yield to maturity is 5%per year compounded semi-annually, what is the approximate price of the bond?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹1,000",
+        "B": "₹1,039.90",
+        "C": "₹1,104.65",
+        "D": "₹1,064.76"
+      },
+      "correct_option_label": "C",
+      "explanation": "$30 coupon, 2.5% per half, 30 periods = 1,104.65",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q15",
+      "question_text": "The sensitivity of bond prices to changes in interest rates is called _____________.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Inflation risk",
+        "B": "Interest rate risk",
+        "C": "Liquidity risk",
+        "D": "Default risk"
+      },
+      "correct_option_label": "B",
+      "explanation": "Interest rate risk",
+      "module": 3
+    },
+    {
+      "question_id": "M4-Q1",
+      "question_text": "Which of the following statements about the net present value (NPV) is NOT correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "NPV recognises the time value of money and discounts the future cash flows appropriately",
+        "B": "NPV provides a clear benchmark for project acceptance",
+        "C": "NPV of a project is affected by the company's choice of accounting method",
+        "D": "A positive NPV project increases the shareholder value"
+      },
+      "correct_option_label": "C",
+      "explanation": "NPV is computed from cash flows, not accounting profits, so it is not affected by the choice of accounting method.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q2",
+      "question_text": "Which of the following statements about Discounted Payback Period is incorrect?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It considers the time value of money.",
+        "B": "It uses discounted cash flows to determine the recovery period.",
+        "C": "It considers all cash flows throughout the entire project life.",
+        "D": "It suffers from the drawback of an arbitrary benchmark for project acceptance"
+      },
+      "correct_option_label": "C",
+      "explanation": "DPP ignores cash flows after the cutoff period",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q3",
+      "question_text": "Which of the following statements about multiple IRRs is incorrect?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Multiple IRRs can arise when a project's cash flows change sign more than once.",
+        "B": "Non-conventional cash flows can create multiple IRRs.",
+        "C": "Multiple IRRs can make the traditional IRR decision rule difficult to apply.",
+        "D": "Multiple IRRs occur only when a project has a negative NPV."
+      },
+      "correct_option_label": "D",
+      "explanation": "Multiple IRRs come from sign changes, not from negative NPV",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Passage_1",
+      "question_text": "A project requires an investment of ₹10,00,000 today. Expected year-end cash inflows:\nYear | Cash Inflow\n1    | ₹2,00,000\n2    | ₹4,00,000\n3    | ₹4,00,000\n4    | ₹5,00,000",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q4",
+      "question_text": "What is the Payback Period?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "2 years",
+        "B": "4 years",
+        "C": "3 years",
+        "D": "5 years"
+      },
+      "correct_option_label": "C",
+      "explanation": "2L + 4L + 4L = 10L recovered by end of Year 3",
+      "module": 4,
+      "passage_id": "M4-Passage_1"
+    },
+    {
+      "question_id": "M4-Passage_2",
+      "question_text": "A project requires an initial investment of ₹8,00,000 today and will generate the following year-end cash flows:\nYear | Cash flow\n1    | ₹3,00,000\n2    | ₹3,00,000\n3    | ₹4,00,000",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q5",
+      "question_text": "If the opportunity cost of capital for the project is 10%, what is the approximate NPV?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹15,000.34",
+        "B": "₹21,187.08",
+        "C": "₹10,876.35",
+        "D": "₹2,00,000"
+      },
+      "correct_option_label": "B",
+      "explanation": "-8L + 3L/1.1 + 3L/1.1^2 + 4L/1.1^3 = 21,187",
+      "module": 4,
+      "passage_id": "M4-Passage_2"
+    },
+    {
+      "question_id": "M4-Passage_3",
+      "question_text": "A company is evaluating a four-year project. Projected current assets and current liabilities (₹):\nParticulars         | Year 0 | Year 1   | Year 2   | Year 3   | Year 4\nInventory           | 80,000 | 1,00,000 | 1,20,000 | 1,10,000 | 90,000\nAccounts receivable | 50,000 | 60,000   | 70,000   | 65,000   | 40,000\nAccounts payable    | 30,000 | 40,000   | 50,000   | 45,000   | 35,000",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q6",
+      "question_text": "Assume that net working capital is fully recovered at the end of Year 4. What is the cash flow due to a change in net working capital required at the end of Year 1?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "+₹1,20,000",
+        "B": "+₹20,000",
+        "C": "−₹1,20,000",
+        "D": "−₹20,000"
+      },
+      "correct_option_label": "D",
+      "explanation": "NWC Yr0 = 1,00,000; Yr1 = 1,20,000; increase of 20,000 = cash outflow",
+      "module": 4,
+      "passage_id": "M4-Passage_3"
+    },
+    {
+      "question_id": "M4-Q7",
+      "question_text": "Which of the following project activities results in an incremental cash inflow?\n(keeping other components of working capital fixed in each case)\nI.   Increase in inventory in the current year as compared to last year\nII.  Decrease in inventory in the current year as compared to last year\nIII. Increase in accounts payables in the current year as compared to last year\nIV.  Increase in accounts receivables in the current year as compared to last year",
+      "question_type": "MCQ",
+      "options": {
+        "A": "I and II",
+        "B": "II and III",
+        "C": "III and IV",
+        "D": "I and IV"
+      },
+      "correct_option_label": "B",
+      "explanation": "Lower inventory and higher payables release cash",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q8",
+      "question_text": "A company owns a building that could be rented out for ₹4,00,000 per year. It plans to use it for a new 5-year project instead, so it will not be rented during the project. The building's current market price is ₹50,00,000. How should the use of the building be treated while forecasting project-related incremental cash flows?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The rental income of ₹4,00,000 per year over the life of the project should be treated as a project-related incremental cash outflow as it is an opportunity cost of using the building in the project.",
+        "B": "Since the company owns the building, you should not include the use of the building as a project-related incremental cash flow.",
+        "C": "The current market price of the building, which is ₹50,00,000, should be treated as a project-related incremental cash outflow as it is an opportunity cost of using the building in the project.",
+        "D": "The money spent on purchasing the building is a sunk cost, and it should therefore be ignored."
+      },
+      "correct_option_label": "A",
+      "explanation": "Forgone rent is the opportunity cost of using the building",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Passage_4",
+      "question_text": "A company is considering purchasing a machine for ₹10,00,000 today.\n- Useful life 5 years; salvage value ₹1,00,000 at end of Year 5; straight-line depreciation\n- Annual year-end revenue ₹6,00,000; annual year-end cash expenses ₹2,00,000 (for 5 years)\n- Corporate tax rate 30%\n- Machine sold for ₹1,00,000 at end of Year 5; book value then ₹1,00,000\n- Opportunity cost of capital 10%\n- No inventory; all sales and purchases in cash",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q9",
+      "question_text": "What is the project-related net cash flow at the end of Year 1?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹2,34,1000",
+        "B": "₹3,34,000",
+        "C": "₹4,34,000",
+        "D": "₹1,34,000"
+      },
+      "correct_option_label": "B",
+      "explanation": "Dep = 1.8L; OCF = (6L - 2L)(1 - 0.3) + 0.3 x 1.8L = 3,34,000",
+      "module": 4,
+      "passage_id": "M4-Passage_4"
+    },
+    {
+      "question_id": "M4-Q10",
+      "question_text": "What is the NPV of the project?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹3,28,214.91",
+        "B": "₹2,17,000.67",
+        "C": "₹2,64,514.91",
+        "D": "₹1,58,345.67"
+      },
+      "correct_option_label": "A",
+      "explanation": "-10L + 3.34L x PVA(10%,5) + 1L/1.1^5 = 3,28,215",
+      "module": 4,
+      "passage_id": "M4-Passage_4"
+    },
+    {
+      "question_id": "M4-Q11",
+      "question_text": "Which of the following statements best describes the relationship between the Payback Period and Net Present Value (NPV)?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A project with a shorter Payback Period will always yield a higher NPV as it recovers the initial investment faster.",
+        "B": "A project with a longer Payback Period cannot have a higher NPV than a project with a shorter Payback Period.",
+        "C": "A project may have a short Payback Period, but its NPV can still be negative",
+        "D": "Projects having the same Payback Period must have the same NPV"
+      },
+      "correct_option_label": "C",
+      "explanation": "Payback ignores time value and cash flows after the cutoff",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q12",
+      "question_text": "Which of the following capital budgeting methods does not take into account the time value of money?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Payback Period",
+        "B": "Discounted Payback Period",
+        "C": "Internal Rate of Return",
+        "D": "Net Present Value (NPV)"
+      },
+      "correct_option_label": "A",
+      "explanation": "Simple payback just counts undiscounted cash flows until the investment is recovered, so it ignores the time value of money.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q13",
+      "question_text": "Project X requires ₹10 lakh and produces cash inflows of ₹6 lakh in Year 1 and ₹6 lakh in Year 2. Project Y requires ₹10 lakh and produces ₹1 lakh in Year 1, ₹1 lakh in Year 2, and ₹15 lakh in Year 3. If both have an opportunity cost of capital of 10%, which statement is most likely to be true?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Project X has a shorter Payback Period and a higher NPV.",
+        "B": "Project Y has a shorter Payback Period and a higher NPV.",
+        "C": "Project X has a shorter Payback Period, but Project Y has a higher NPV.",
+        "D": "Both projects must have the same NPV because the initial investments are equal."
+      },
+      "correct_option_label": "C",
+      "explanation": "X: payback 1.67 yrs, NPV 0.41L; Y: payback 3 yrs, NPV 3.01L",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q14",
+      "question_text": "Project A has an IRR of 22% and an NPV of ₹10 lakh. Project B has an IRR of 18% and an NPV of ₹16 lakh. If the projects are mutually exclusive, which project should generally be preferred?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Project A because its IRR is higher",
+        "B": "Project B because its NPV is higher",
+        "C": "Project A because IRR is always superior to NPV",
+        "D": "Either project because the NPV difference is irrelevant"
+      },
+      "correct_option_label": "B",
+      "explanation": "Mutually exclusive -> choose higher NPV",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Passage_5",
+      "question_text": "Consider two mutually exclusive projects. Opportunity cost of capital is 8%.\nProject | C0        | C1       | C2       | IRR (%)\nA       | -8,00,000 | 4,82,000 | 5,86,000 | 21\nB       | -4,00,000 | 2,62,000 | 3,44,000 | 31",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q15",
+      "question_text": "Which project would you choose? Use the IRR rule on incremental cash flows to make the choice.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Project A",
+        "B": "Project B",
+        "C": "Both projects can be accepted as they have positive IRR",
+        "D": "Neither Project A nor Project B"
+      },
+      "correct_option_label": "A",
+      "explanation": "Incremental (A - B): -4,00,000, +2,20,000, +2,42,000 -> IRR 10% > 8%, so take A",
+      "module": 4,
+      "passage_id": "M4-Passage_5"
+    },
+    {
+      "question_id": "M5-Passage_1",
+      "question_text": "A stock could generate the following possible returns under different economic conditions:\nEconomic Condition | Probability | Stock Return\nBoom | 0.20 | 20%\nNormal | 0.50 | 12%\nRecession | 0.30 | 4%",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q1",
+      "question_text": "What is the expected return of the stock?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "8.0%",
+        "B": "8.8%",
+        "C": "11.2%",
+        "D": "10.2%"
+      },
+      "correct_option_label": "C",
+      "explanation": "0.2x20 + 0.5x12 + 0.3x4 = 11.2%",
+      "module": 5,
+      "passage_id": "M5-Passage_1"
+    },
+    {
+      "question_id": "M5-Passage_2",
+      "question_text": "A stock has generated the following annual returns over five years. Calculate the mean return (a), variance (b), and standard deviation (c) of the stock's returns.\nYear | Actual Return(%)\n1 | 18\n2 | 12\n3 | 8\n4 | 15\n5 | 7",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q2",
+      "question_text": "Which of the following statements about Discounted Payback Period is incorrect?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "a: 12%, b: 20.5, c: 4.64%",
+        "B": "a: 12%, b: 21.5, c: 4.64%",
+        "C": "a: 12%, b: 21.5, c: 5.64%",
+        "D": "a: 12.5%, b: 21.5, c: 4.64%"
+      },
+      "correct_option_label": "B",
+      "explanation": "Mean = 60/5 = 12%. Squared deviations: 36, 0, 16, 9, 25 = 86. Sample variance = 86/(5-1) = 21.5. SD = sqrt(21.5) = 4.64%. (The question stem mentioning Discounted Payback Period is a typo in the quiz.)",
+      "module": 5,
+      "passage_id": "M5-Passage_2"
+    },
+    {
+      "question_id": "M5-Q3",
+      "question_text": "An investor allocates 60% of the portfolio to Stock A and 40% to Stock B. Their expected returns are 15% and 9%, respectively. What is the expected portfolio return?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "11.4%",
+        "B": "12.0%",
+        "C": "12.6%",
+        "D": "13.0%"
+      },
+      "correct_option_label": "A",
+      "explanation": "0.6x15 + 0.4x9 = 11.4%",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q4",
+      "question_text": "An investor allocates 60% of his fund to Stock A and 40% to Stock B. Stock A has a standard deviation of 20%, and Stock B has a standard deviation of 10%. The correlation coefficient between the returns on the two stocks is 0.25. Calculate the portfolio standard deviation.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1.50%",
+        "B": "1.84%",
+        "C": "13.56%",
+        "D": "16.00%"
+      },
+      "correct_option_label": "C",
+      "explanation": "Var = 0.36x400 + 0.16x100 + 2x0.6x0.4x0.25x20x10 = 184; SD = 13.56%",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Passage_3",
+      "question_text": "An investor is evaluating two securities under the following three possible economic conditions.\nState | Probability | Return on Security A(%) | Return on Security B(%)\nBoom | 0.25 | 24 | 18\nNormal | 0.50 | 12 | 10\nRecession | 0.25 | -8 | 2",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q5",
+      "question_text": "Calculate the expected return on Security A.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "8.0%",
+        "B": "10.0%",
+        "C": "12.0%",
+        "D": "13.0%"
+      },
+      "correct_option_label": "B",
+      "explanation": "0.25x24 + 0.5x12 + 0.25x(-8) = 10%",
+      "module": 5,
+      "passage_id": "M5-Passage_3"
+    },
+    {
+      "question_id": "M5-Passage_4",
+      "question_text": "An investor is evaluating two securities under three possible economic conditions.\nState | Probability | Return on Security A(%) | Return on Security B(%)\nBoom | 0.25 | 24 | 18\nNormal | 0.50 | 12 | 10\nRecession | 0.25 | -8 | 2",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q6",
+      "question_text": "Calculate the standard deviation of Security B using the probability weights of the states.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "4.00%",
+        "B": "5.00%",
+        "C": "5.66%",
+        "D": "6.00%"
+      },
+      "correct_option_label": "C",
+      "explanation": "E(B) = 10; Var = 0.25x64 + 0 + 0.25x64 = 32; SD = 5.66%",
+      "module": 5,
+      "passage_id": "M5-Passage_4"
+    },
+    {
+      "question_id": "M5-Q7",
+      "question_text": "Which of the following can be classified as the safest investment?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Treasury Bills",
+        "B": "Stocks",
+        "C": "Corporate investment grade bonds",
+        "D": "Corporate junk grade bonds"
+      },
+      "correct_option_label": "A",
+      "explanation": "Government T-bills carry minimal risk",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q8",
+      "question_text": "Which of the following risks can be classified as diversifiable risk?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Macro-economic risk",
+        "B": "Inflation risk",
+        "C": "Market risk",
+        "D": "Company-specific risk"
+      },
+      "correct_option_label": "D",
+      "explanation": "Firm-specific (unique) risk diversifies away",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q9",
+      "question_text": "Which of the following companies’ stock would generally have a beta of more than 1?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Company producing luxury goods",
+        "B": "Company producing necessity goods",
+        "C": "Countercyclical company",
+        "D": "Company producing utility services"
+      },
+      "correct_option_label": "A",
+      "explanation": "Luxury goods are cyclical -> high beta",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q10",
+      "question_text": "An investment analyst is evaluating whether investing in the U.S. stock market offers sufficient compensation for taking market risk. The current annual yield on a 3-month U.S. Treasury bill, used as a proxy for the risk-free rate, is 4%. The analyst expects the Nasdaq Composite Index (i.e., the market index) to provide an annual return of 11% over the next year. Based on these estimates, what is the expected market risk premium?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "4%",
+        "B": "7%",
+        "C": "11%",
+        "D": "15%"
+      },
+      "correct_option_label": "B",
+      "explanation": "11% - 4%",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q11",
+      "question_text": "A stock has a beta of 1.5. The risk-free rate is 3%, and the market risk premium is 6%. What is the stock's expected return?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "9%",
+        "B": "10%",
+        "C": "12%",
+        "D": "15%"
+      },
+      "correct_option_label": "C",
+      "explanation": "3% + 1.5x6% = 12%",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q12",
+      "question_text": "A company has a market value of equity of ₹80 million and a market value of debt of ₹20 million. The equity beta is 1.25. The expected market risk premium is 8%, and the risk-free rate is 4%. The company’s cost of debt is 6%. Assume that the company pays no corporate taxes. What is the required return on the company's stock?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "10%",
+        "B": "12%",
+        "C": "16%",
+        "D": "14%"
+      },
+      "correct_option_label": "D",
+      "explanation": "CAPM: 4% + 1.25x8% = 14%",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q13",
+      "question_text": "A company has a market value of equity of ₹80 million and a market value of debt of ₹20 million. The equity beta is 1.25. The expected market risk premium is 8%, and the risk-free rate is 4%. The company’s cost of debt is 6%. Assume that the company pays no corporate taxes. What is the company’s asset cost of capital?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "10.0%",
+        "B": "12.4%",
+        "C": "11.2%",
+        "D": "14.0%"
+      },
+      "correct_option_label": "B",
+      "explanation": "0.8x14% + 0.2x6% = 12.4%",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q14",
+      "question_text": "Which statement about beta is correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Beta measures the total risk.",
+        "B": "Beta measures the systematic risk.",
+        "C": "Beta measures only firm-specific risk.",
+        "D": "Beta measures the probability of high taxes."
+      },
+      "correct_option_label": "B",
+      "explanation": "Beta measures systematic (market) risk",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q15",
+      "question_text": "Which of the following statements is most likely correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The portfolio standard deviation is usually equal to the weighted average of individual security standard deviations.",
+        "B": "The portfolio standard deviation is usually more than the weighted average of individual security standard deviations.",
+        "C": "The portfolio standard deviation does not depend on the individual security standard deviations.",
+        "D": "The portfolio standard deviation is usually less than the weighted average of individual security standard deviations."
+      },
+      "correct_option_label": "D",
+      "explanation": "Diversification: less than perfect correlation lowers portfolio SD",
+      "module": 5
+    }
+  ]
+}

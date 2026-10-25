@@ -1,0 +1,798 @@
+{
+  "exam_metadata": {
+    "subject_name": "Family Business Strategy",
+    "exam_date": "Batch 1"
+  },
+  "questions": [
+    {
+      "question_id": "M1-Q1",
+      "question_text": "A listed IT company is majority owned by a founding trust holding about 70% equity, while day-to-day operations are run entirely by non-family professional executives. Which quadrant of the ownership-management matrix best fits this company?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "High family ownership with family management",
+        "B": "Low family ownership with professional management",
+        "C": "High family ownership with professional management",
+        "D": "Low family ownership with family management"
+      },
+      "correct_option_label": "C",
+      "explanation": "A trust owning ~70% (like Tata Trusts in TCS) with fully professional management is high family ownership with professional management.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q2",
+      "question_text": "Under which leadership condition do family-owned firms typically exhibit the strongest financial performance relative to non-family firms?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "When a professional outside manager is hired to lead the corporation",
+        "B": "When the founding family retains ownership but avoids holding active board seats",
+        "C": "When institutional investors acquire the majority of voting control rights",
+        "D": "When a family member serves as CEO instead of an outside professional"
+      },
+      "correct_option_label": "D",
+      "explanation": "Research cited in the module found family firms performed even better when a family member was CEO.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q3",
+      "question_text": "How does the principle of shareholder value maximisation differ in meaning between a typical non-family business and a family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "In a family business the shareholder is the family, so it becomes family value",
+        "B": "Family businesses reject shareholder value maximisation entirely",
+        "C": "Non-family businesses maximise employee value instead of shareholder value",
+        "D": "Family businesses only maximise value for minority shareholders"
+      },
+      "correct_option_label": "A",
+      "explanation": "In a family business the shareholder is the family, so shareholder value maximisation becomes family value maximisation.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q4",
+      "question_text": "In the four-quadrant framework of family business goals, which combination describes growth of the firm and improvements in firm performance?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Family-oriented economic goals",
+        "B": "Non-family oriented economic goals",
+        "C": "Family-oriented non-economic goals",
+        "D": "Non-family oriented non-economic goals"
+      },
+      "correct_option_label": "B",
+      "explanation": "Firm growth and performance are non-family-oriented economic goals.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q5",
+      "question_text": "When two brothers with equal ownership stakes in a family firm disagree over strategic direction, which type of agency cost does this conflict primarily represent?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Primary agency cost between principal and agent",
+        "B": "Secondary agency cost between two principals",
+        "C": "Transaction cost from asset specificity",
+        "D": "Entrenchment cost from minority expropriation"
+      },
+      "correct_option_label": "B",
+      "explanation": "Conflict between two owners (principals) is a secondary, principal–principal agency cost.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q6",
+      "question_text": "A technology startup founded by two siblings three years ago has not clarified whether they intend to pass the business to the next generation. Based on standard criteria for classifying family businesses, how should this company currently be classified?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Not a family business because it has two owners",
+        "B": "A family business because it is unlisted",
+        "C": "A family business because two related founders own it",
+        "D": "Not a family business until intent to succession is evident"
+      },
+      "correct_option_label": "D",
+      "explanation": "Without evident intent to pass it on to the next generation (like Zerodha today), the firm is not yet a family business.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q7",
+      "question_text": "Applying systems theory to a family business, why is the family subsystem typically described as more closed while the business subsystem is described as more open?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The family always ignores external events while the business always ignores emotions",
+        "B": "The business has no interaction with suppliers or customers at all",
+        "C": "The business must interact with markets while the family is driven by internal emotional dynamics",
+        "D": "The family subsystem is legally required to disclose all information publicly"
+      },
+      "correct_option_label": "C",
+      "explanation": "The business must interact with markets (open), while the family runs on internal emotional dynamics (more closed).",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q8",
+      "question_text": "Under transaction cost economics applied to family businesses, reputation, tacit knowledge, and bonding or bridging social capital are best classified as which type of asset?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Generic tradable assets available across any firm",
+        "B": "Generic non-tradable assets unique to the family business",
+        "C": "Highly specific assets tied to a single machine",
+        "D": "Publicly disclosed intangible assets under SEBI norms"
+      },
+      "correct_option_label": "B",
+      "explanation": "Reputation, tacit knowledge and social capital are generic non-tradable assets that can't easily move across firms.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q9",
+      "question_text": "During severe economic crises, family firms typically exhibit greater financial resilience than non-family firms. Which strategic behavior primarily drives this resilience?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Maintaining conservative capital expenditure and leveraging established lender relationships",
+        "B": "Aggressively acquiring distressed competitors and expanding into new markets",
+        "C": "Increasing short-term debt financing to fund high-risk projects",
+        "D": "Divesting core operating assets to maximize immediate cash reserves"
+      },
+      "correct_option_label": "A",
+      "explanation": "Family firms weather crises through conservative capex and long-standing lender and supplier relationships.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q10",
+      "question_text": "Which three characteristics together determine whether a business qualifies as a family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Revenue, employee count, and market share",
+        "B": "Listing status, brand name, and founder age",
+        "C": "Ownership, management, and intent to succession",
+        "D": "Capital structure, industry type, and location"
+      },
+      "correct_option_label": "C",
+      "explanation": "A family business is defined by ownership, management and intent to succession.",
+      "module": 1
+    },
+    {
+      "question_id": "M2-Q1",
+      "question_text": "What is the most commonly used criterion for classifying a business as a 'family business'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Company is listed on a stock exchange",
+        "B": "Business operates only in domestic markets",
+        "C": "Significant family ownership and involvement in management",
+        "D": "Business employs more than 100 people"
+      },
+      "correct_option_label": "C",
+      "explanation": "The common criterion is significant family ownership together with involvement in management.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q2",
+      "question_text": "What is a 'family constitution' in the context of family business governance?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A written document outlining shared values, policies, and rules guiding the family's relationship with the business",
+        "B": "A legal contract required for company incorporation",
+        "C": "A financial statement summarizing family wealth",
+        "D": "A marketing document describing the family brand"
+      },
+      "correct_option_label": "A",
+      "explanation": "A family constitution is a written document of shared values, policies and rules governing the family's relationship with the business.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q3",
+      "question_text": "An owner defines success not merely as maximising financial returns but as preserving the family name, maintaining long-term relationships and ensuring continuity across generations.\nWhich owner right is most directly reflected in this decision?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Right to decide",
+        "B": "Right to value",
+        "C": "Right to design",
+        "D": "Right to transfer"
+      },
+      "correct_option_label": "B",
+      "explanation": "Defining success to include legacy, relationships and continuity reflects the owner's right to value.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q4",
+      "question_text": "Two siblings inherit a business equally. However, one sibling has expertise in operations and the other in finance. Both technically have equal ownership, but they divide management responsibilities according to their capabilities.\nWhat does this arrangement illustrate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Non-family employees are legally barred from promotions",
+        "B": "Family members may be prioritized for leadership positions regardless of merit",
+        "C": "Family firms cannot hire non-family employees",
+        "D": "Non-family employees receive lower base salaries by law"
+      },
+      "correct_option_label": "B",
+      "explanation": "The only plausible option; the others describe legal rules that don't exist. (The options don't closely match the stem.)",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Passage_1",
+      "question_text": "Please Note: Questions 5–7 are based on the case provided below. Read the case carefully before attempting these questions.\nMehta Foods, a third-generation family enterprise, built its reputation on preserving traditional recipes and the family name across decades. When a large multinational offered to acquire the company at a substantial premium, the family patriarch declined, stating that selling would erase the identity his grandfather had created. His daughter, who manages finance, argued that the offer would secure the family's wealth and reduce financial risk, especially since the firm's core market was shrinking. Meanwhile, the patriarch's nephew, a shareholder uninvolved in operations, supported the sale, wanting liquidity to pursue his own ventures. Tensions grew as family members weighed emotional attachment against financial logic. The firm had no formal charter guiding such decisions, and disagreements were resolved informally around the dinner table, raising concerns about how future, larger disputes might be managed as the family and its shareholding base continued to expand.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q5",
+      "question_text": "What concept best explains the patriarch's reluctance to sell the business despite a lucrative offer?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Socioemotional wealth",
+        "B": "Agency cost minimisation",
+        "C": "Shareholder value maximisation",
+        "D": "Portfolio diversification"
+      },
+      "correct_option_label": "A",
+      "explanation": "Valuing identity and legacy over a lucrative financial offer is socioemotional wealth.",
+      "module": 2,
+      "passage_id": "M2-Passage_1"
+    },
+    {
+      "question_id": "M2-Q6",
+      "question_text": "What underlying governance weakness does the absence of a formal charter reveal in Mehta Foods?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Lack of external customers for the firm's products",
+        "B": "Lack of agreed rules for resolving major family-business decisions",
+        "C": "Lack of any family members willing to work in the business",
+        "D": "Lack of any ownership stake held by the family"
+      },
+      "correct_option_label": "B",
+      "explanation": "Without a formal charter, there are no agreed rules for resolving major family-business decisions.",
+      "module": 2,
+      "passage_id": "M2-Passage_1"
+    },
+    {
+      "question_id": "M2-Q7",
+      "question_text": "Which factor is most likely to intensify governance conflicts as Mehta Foods moves toward a cousin consortium structure?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Increased involvement of the founder in daily operations",
+        "B": "A reduction in the total number of family shareholders",
+        "C": "Divergent financial needs and interests among expanding family branches",
+        "D": "Simplification of the firm's product portfolio"
+      },
+      "correct_option_label": "C",
+      "explanation": "As branches multiply in a cousin consortium, their differing financial needs and interests drive conflict.",
+      "module": 2,
+      "passage_id": "M2-Passage_1"
+    },
+    {
+      "question_id": "M2-Q8",
+      "question_text": "A founder has created a highly successful business but refuses to delegate authority, develop contingency plans or prepare for succession. Almost every major decision depends on the founder.\nWhich combination of risks is most evident?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Low family involvement and excessive professionalisation",
+        "B": "Excessive dependence on one individual and unclear succession",
+        "C": "Excessive ownership dispersion and weak family identity",
+        "D": "Strong governance and limited entrepreneurial control"
+      },
+      "correct_option_label": "B",
+      "explanation": "Everything depends on one person, with no delegation or succession plan.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q9",
+      "question_text": "A founder has the authority to determine the company's direction, choose its strategy and make major decisions without requiring approval from others. However, the same concentration of power creates significant dependence on the founder.\nWhich two ideas from the module best capture this situation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Power to destroy and power to create",
+        "B": "Power to create and power to sustain",
+        "C": "Power to sustain and right to inform",
+        "D": "Right to value and right to transfer"
+      },
+      "correct_option_label": "A",
+      "explanation": "The founder's authority reflects the power to create; the concentrated dependence also carries the power to destroy.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q10",
+      "question_text": "A large fourth-generation family business has multiple companies, with different family members responsible for different businesses. It has a family council and a written family constitution specifying who can join the business and what qualifications are required\nWhat does this situation indicate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The business is moving towards a controlling-owner model",
+        "B": "Informal family relationships are sufficient for governance",
+        "C": "The business has adopted a purely business-first philosophy",
+        "D": "The family has developed more formal governance mechanisms appropriate to a family federation"
+      },
+      "correct_option_label": "D",
+      "explanation": "A family council and written constitution are formal governance mechanisms suited to a family federation.",
+      "module": 2
+    },
+    {
+      "question_id": "M3-Q1",
+      "question_text": "A founder observes fading interest among the children, a weakening competitive position, and a highly attractive acquisition offer. Which transfer pathway best fits this situation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Divide the business among next-gen members",
+        "B": "Sell the business to an outside buyer",
+        "C": "Transfer the entire business to next-gen",
+        "D": "Launch a new venture in the family galaxy"
+      },
+      "correct_option_label": "B",
+      "explanation": "Low next-gen interest, a weakening position and an attractive offer point to selling to an outside buyer.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q2",
+      "question_text": "Which basis of successor commitment is characterized by a felt obligation to the family, often summarized by the phrase 'I ought to'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Normative commitment",
+        "B": "Affective commitment",
+        "C": "Calculative commitment",
+        "D": "Imperative commitment"
+      },
+      "correct_option_label": "A",
+      "explanation": "Normative commitment is a felt obligation to the family — 'I ought to'.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q3",
+      "question_text": "A new leader discards proven practices wholesale and alienates long-serving veterans while pursuing rapid change. Which failure syndrome does this illustrate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Conservative syndrome",
+        "B": "Wavering syndrome",
+        "C": "Rebellious syndrome",
+        "D": "Circumstantial syndrome"
+      },
+      "correct_option_label": "C",
+      "explanation": "Discarding proven practices and alienating veterans in a rush to change is the rebellious syndrome.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q4",
+      "question_text": "A family-firm heir completes an MBA, spends several years at a consulting firm and a multinational, then joins the family business through a clearly defined entry role. Which succession path does this describe?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Working outside, then returning",
+        "B": "Bottom-up path within the firm",
+        "C": "Job rotation across functions",
+        "D": "New venture in family galaxy"
+      },
+      "correct_option_label": "A",
+      "explanation": "An MBA, outside work and then a defined entry role is the 'work outside, then return' path.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Passage_1",
+      "question_text": "Read the following case let and answer the upcoming questions keep this in mind:-\nMeera, the elder daughter of a manufacturing family, built a decade-long career at a global technology firm and is now a senior director there. Her father wants her to take over as CEO of the family business within two years. Meera has the analytical skill and leadership experience to run the firm, and colleagues at her current employer describe her as an outstanding operator. However, whenever the family raises the succession topic, she deflects the conversation, citing her fulfilling career and the autonomy she enjoys outside the family firm. She has never expressed genuine enthusiasm for the family business and seems to view any move into it as an obligation rather than a choice. Her father is considering announcing her as the designated successor at the next shareholder's meeting, believing her competence alone should settle the matter",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q5",
+      "question_text": "Which quadrant of the Willingness–Ability matrix best describes Meera?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Ready Leader",
+        "B": "Eager Apprentice",
+        "C": "Reluctant Talent",
+        "D": "Not (yet) a fit"
+      },
+      "correct_option_label": "C",
+      "explanation": "Meera is highly able but unwilling — a Reluctant Talent.",
+      "module": 3,
+      "passage_id": "M3-Passage_1"
+    },
+    {
+      "question_id": "M3-Q6",
+      "question_text": "What is the primary risk if Meera's father forces her into the CEO role despite her ambivalence?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Premature power before the incumbent can let go",
+        "B": "Visible early failure due to sheltering an heir",
+        "C": "Forced entry breeds disengagement and resentment",
+        "D": "Soft accountability from running a pet project"
+      },
+      "correct_option_label": "C",
+      "explanation": "Forcing an unwilling successor in breeds disengagement and resentment.",
+      "module": 3,
+      "passage_id": "M3-Passage_1"
+    },
+    {
+      "question_id": "M3-Q7",
+      "question_text": "What is the recommended move for a successor who fits Meera's quadrant?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Build competence through outside roles and mentoring",
+        "B": "Surface her motives and redesign the role for autonomy",
+        "C": "Release her with dignity and appoint a non-family CEO",
+        "D": "Stage authority through stretch assignments immediately"
+      },
+      "correct_option_label": "B",
+      "explanation": "For a reluctant talent, surface her motives and redesign the role to give her autonomy.",
+      "module": 3,
+      "passage_id": "M3-Passage_1"
+    },
+    {
+      "question_id": "M3-Passage_2",
+      "question_text": "Read the following case let and answer the upcoming questions keep this in mind:-\nVikram has spent eighteen years chief financial officer of a family-owned retail chain and was widely seen as the second-in-command under the retiring founder. When the founder's son was named the new CEO instead, Vikram grew increasingly quiet in leadership meetings, stopped volunteering ideas, and began fielding calls from executive search firms. He confided to a colleague that he saw no clear path for his own growth under the new leadership and felt his decades of institutional knowledge were being overlooked. Within a few months, Vikram accepted an offer from a competitor, taking with him deep knowledge of supplier contracts and long-standing relationships with major retail partners that the family firm had relied on for years.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q8",
+      "question_text": "What move could the new CEO have taken to reduce the risk of losing Vikram?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Withhold information until trust is firmly established",
+        "B": "Sequence change through pilots before scaling it",
+        "C": "Create early proof points to convert sceptics",
+        "D": "Retain by design through role clarity and incentives"
+      },
+      "correct_option_label": "D",
+      "explanation": "Retaining key non-family executives by design — clear roles and incentives — reduces the risk of losing them.",
+      "module": 3,
+      "passage_id": "M3-Passage_2"
+    },
+    {
+      "question_id": "M3-Q9",
+      "question_text": "Which stakeholder response category does Vikram's departure best represent?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Protect and mentor",
+        "B": "Enable change",
+        "C": "Wait and watch for failure",
+        "D": "Leave the family firm"
+      },
+      "correct_option_label": "D",
+      "explanation": "Vikram's exit to a competitor is the 'leave the family firm' response.",
+      "module": 3,
+      "passage_id": "M3-Passage_2"
+    },
+    {
+      "question_id": "M3-Q10",
+      "question_text": "What is the main organisational risk illustrated by Vikram's exit?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The successor is cast as an insurgent leader",
+        "B": "Knowledge and relationships walk out of the firm",
+        "C": "An early stumble becomes a self-fulfilling story",
+        "D": "The successor's promises remain untested by crisis"
+      },
+      "correct_option_label": "B",
+      "explanation": "His knowledge of supplier contracts and partner relationships walked out of the firm with him.",
+      "module": 3,
+      "passage_id": "M3-Passage_2"
+    },
+    {
+      "question_id": "M4-Q1",
+      "question_text": "In the three relationship systems framework used to analyse family firms, what currency does the business system primarily trade in?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Emotion: love and its opposites",
+        "B": "Competence: knowledge and skill",
+        "C": "Power: votes and voice",
+        "D": "Status: title and seniority"
+      },
+      "correct_option_label": "B",
+      "explanation": "The family trades in emotion, the business in competence and skill, and ownership in power.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q2",
+      "question_text": "In the tunneling and propping framework, what is the key distinguishing feature between the two forms of related-party value transfer?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Tunneling moves value to controllers while propping moves value into the firm",
+        "B": "Tunneling always involves cash, while propping only involves shares",
+        "C": "Propping harms minority shareholders while tunneling instead protects their interests",
+        "D": "Tunneling occurs only during a crisis while propping occurs only in normal times"
+      },
+      "correct_option_label": "A",
+      "explanation": "Tunneling moves value out to controllers; propping moves value into the firm.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q3",
+      "question_text": "A woman has real decision-making influence in a family firm but holds no title, does not appear on the organisation chart, and is consulted only privately. Which form of invisibility does this best illustrate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Legal invisibility",
+        "B": "Economic invisibility",
+        "C": "Organisational invisibility",
+        "D": "Narrative invisibility"
+      },
+      "correct_option_label": "C",
+      "explanation": "Real influence with no title or place on the org chart is organisational invisibility.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q4",
+      "question_text": "A family firm reports general satisfaction with its direction, makes timely decisions on critical issues with no unresolved tension left standing, and maintains relationships good enough to work and celebrate together, even though members do not always agree.\nUsing the three-question diagnostic for healthy conflict, how should this family's conflict level be assessed?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Too cold, because disagreements are being avoided beneath a surface of calm",
+        "B": "In the Goldilocks zone, since all three conditions for healthy conflict are met",
+        "C": "Inconclusive, because satisfaction with direction cannot be assessed without unanimous agreement",
+        "D": "Too hot, because relationships show visible strain despite good decisions"
+      },
+      "correct_option_label": "B",
+      "explanation": "Satisfaction with direction, timely decisions and good relationships mean conflict is in the Goldilocks zone.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q5",
+      "question_text": "A family decides that ownership shares will be split equally among all children, salaries will be based strictly on each child's role and performance, and a family fund will support any child facing genuine hardship. Which combination of distributive-justice rules does this reflect?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Equity for ownership, need for pay, equality for hardship support",
+        "B": "Equality for ownership, equity for pay, need for hardship support",
+        "C": "Need for ownership, equality for pay, equity for hardship support",
+        "D": "Equality for ownership, need for pay, equity for hardship support"
+      },
+      "correct_option_label": "B",
+      "explanation": "Equal shares is equality, performance-based pay is equity, and the hardship fund is need.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q6",
+      "question_text": "During an escalating family dispute, one branch hires a lawyer to represent its interests at a mediation session, and the opposing branch responds by hiring its own lawyer for the same meeting. According to Deutsch's description of how conflict intensifies, what best explains why this exchange is likely to deepen the dispute rather than resolve it?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Legal representation always eliminates emotional elements from a dispute",
+        "B": "Hiring advocates automatically shifts the conflict from relationship to cognitive conflict",
+        "C": "Competitive moves tend to invite competitive responses, tightening the spiral",
+        "D": "Mediation sessions are only effective once lawyers are present on both sides"
+      },
+      "correct_option_label": "C",
+      "explanation": "Competitive moves invite competitive responses, tightening the conflict spiral.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q7",
+      "question_text": "A family wants to apply the principle of 'fair process' to its decision about which relatives may enter the business, rather than announcing a rule unilaterally. Which sequence of actions best reflects the three principles of fair process in this domain?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Engage relatives in discussion, explain the reasoning, and set clear expectations for what follows",
+        "B": "Announce the entry rule, survey employee satisfaction, and revisit it after five years",
+        "C": "Consult only the founder, publish the decision, and discipline those who object",
+        "D": "Benchmark competitor family firms, adopt their rule, and inform the family afterward"
+      },
+      "correct_option_label": "A",
+      "explanation": "Fair process means engaging people, explaining the reasoning and setting clear expectations.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Passage_1",
+      "question_text": "Question 8-10 are based on the below mentioned case let. Please read the following case to attempt the questions.\nPriya has worked unpaid in her family's textile business for over two decades, managing accounts, mediating disputes between her father and uncle, and training new employees, yet she holds no formal title, is absent from the organisational chart, and is not paid a salary. Her younger brother, with less experience, was recently named managing director and given a seat on the board. When Priya raised the issue of succession planning at a family gathering, her father dismissed her concerns, saying 'you have always been good with people, let your brother handle the business side.' Frustrated, Priya began quietly consulting a lawyer about her rights, while her brother felt increasingly cornered and stopped discussing company matters with her altogether. Their mother, who has mediated family disputes for years, fears that unless the family addresses these grievances directly and transparently, the growing silence between the two siblings could escalate into a more damaging confrontation.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q8",
+      "question_text": "Priya's two decades of unpaid, untitled work managing accounts and mediating disputes is best described using which concept from the study of women in family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The glass cliff",
+        "B": "The mirrored ceiling",
+        "C": "Organisational and economic invisibility",
+        "D": "Primogeniture"
+      },
+      "correct_option_label": "C",
+      "explanation": "Unpaid, untitled work off the org chart is organisational and economic invisibility.",
+      "module": 4,
+      "passage_id": "M4-Passage_1"
+    },
+    {
+      "question_id": "M4-Q9",
+      "question_text": "Her father's comment that she is 'good with people' while her brother 'handles the business side' is an example of which risk associated with reported gender differences in working style?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Applying objective, written succession criteria fairly",
+        "B": "Correcting for the mirrored ceiling through mentoring",
+        "C": "Establishing a transparent ceiling through published policy",
+        "D": "Using a perceived difference as an unjustified job filter"
+      },
+      "correct_option_label": "D",
+      "explanation": "Using a perceived gender difference ('good with people') to filter roles is unjustified.",
+      "module": 4,
+      "passage_id": "M4-Passage_1"
+    },
+    {
+      "question_id": "M4-Q10",
+      "question_text": "The siblings' current pattern of avoiding the topic entirely, even though both are privately frustrated, places their relationship at which stage of the family conflict spiral, and what does this suggest about the family's path forward?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Family war, suggesting litigation is now unavoidable",
+        "B": "Advocates being called in, suggesting lawyers have already taken over",
+        "C": "Communication breaking down, suggesting a need for ground rules before escalation",
+        "D": "Interests diverging, suggesting the conflict has only just begun"
+      },
+      "correct_option_label": "C",
+      "explanation": "Going silent while privately frustrated is the 'communication breaking down' stage; ground rules are needed before it escalates.",
+      "module": 4,
+      "passage_id": "M4-Passage_1"
+    },
+    {
+      "question_id": "M5-Q1",
+      "question_text": "What is the primary driver for family businesses to pursue professionalisation as they grow in size and complexity?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The desire to remove all family members from the business entirely",
+        "B": "The need for formal systems and specialised expertise beyond family capacity",
+        "C": "Government regulations mandating non-family ownership",
+        "D": "Pressure from competitors to merge with larger firms"
+      },
+      "correct_option_label": "B",
+      "explanation": "Growth and complexity create a need for formal systems and specialised expertise beyond what the family can provide.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q2",
+      "question_text": "A third-generation family firm drafts a formal document outlining family values, employment policies for family members, and dispute resolution mechanisms. What is this document called?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Shareholder agreement",
+        "B": "Memorandum of association",
+        "C": "Annual report",
+        "D": "Family constitution"
+      },
+      "correct_option_label": "D",
+      "explanation": "A formal document of family values, employment policies and dispute mechanisms is a family constitution.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Passage_1",
+      "question_text": "Read the following case let and answer the upcoming 3 questions keep this in mind:-\nAfter the sudden illness of the founder-CEO of Raghavan Pharma, the family faced an urgent decision about leadership succession. The founder's daughter, trained as a scientist, had deep knowledge of the company's core research but limited experience in managing large-scale operations and finance. The board, which included two independent directors brought in during an earlier professionalisation drive, suggested appointing an experienced external COO to support the daughter during the transition, allowing her to focus on R&D while gradually building managerial capability. Some family members felt this was an admission that the family could not run the business independently, while others saw it as a prudent step to ensure business continuity and protect stakeholder interests during a vulnerable period. The independent directors emphasised that combining family leadership with professional support was a common and effective practice among growing family enterprises navigating unplanned leadership transitions.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q3",
+      "question_text": "What role did the independent directors play in Raghavan Pharma's succession situation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "They recommended appointing an external COO to support the new family leader",
+        "B": "They demanded immediate sale of the company to outside investors",
+        "C": "They insisted the daughter resign from all company roles",
+        "D": "They proposed shutting down the research and development division"
+      },
+      "correct_option_label": "A",
+      "explanation": "The independent directors recommended an external COO to support the daughter.",
+      "module": 5,
+      "passage_id": "M5-Passage_1"
+    },
+    {
+      "question_id": "M5-Q4",
+      "question_text": "What was the primary concern of family members who opposed bringing in an external COO?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The external COO would demand majority ownership stakes",
+        "B": "It implied the family could not manage the business independently",
+        "C": "The external COO lacked any relevant industry experience",
+        "D": "It would violate government pharmaceutical regulations"
+      },
+      "correct_option_label": "B",
+      "explanation": "Opponents felt it implied the family couldn't run the business independently.",
+      "module": 5,
+      "passage_id": "M5-Passage_1"
+    },
+    {
+      "question_id": "M5-Q5",
+      "question_text": "What professionalisation practice from an earlier stage proved valuable during this leadership transition?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The presence of independent directors on the board",
+        "B": "The complete removal of family members from management",
+        "C": "The sale of company shares on a public stock exchange",
+        "D": "The relocation of company headquarters overseas"
+      },
+      "correct_option_label": "A",
+      "explanation": "Independent directors appointed during the earlier professionalisation drive proved valuable.",
+      "module": 5,
+      "passage_id": "M5-Passage_1"
+    },
+    {
+      "question_id": "M5-Q6",
+      "question_text": "How does a family council differ functionally from a board of directors in a family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The family council manages daily operations while the board handles only family disputes",
+        "B": "The family council has legal authority over company finances while the board has none",
+        "C": "The family council addresses family relationships and values while the board focuses on business strategy and oversight",
+        "D": "The family council and board perform identical functions and are interchangeable"
+      },
+      "correct_option_label": "C",
+      "explanation": "The family council handles family relationships and values; the board handles business strategy and oversight.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q7",
+      "question_text": "A founder is considering hiring a professional, non-family CFO because the business has grown too complex for in-house family expertise. Which professionalisation practice does this illustrate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Establishing a family constitution",
+        "B": "Conducting a formal succession ceremony",
+        "C": "Diversifying into unrelated industries",
+        "D": "Bringing in external talent for specialised functional roles"
+      },
+      "correct_option_label": "D",
+      "explanation": "Hiring a non-family CFO brings external talent into a specialised functional role.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q8",
+      "question_text": "Family firms often exhibit patient capital, meaning they are willing to accept lower short-term returns in exchange for what benefit relevant to innovation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Avoidance of all long-term capital commitments",
+        "B": "Faster exit through quick asset liquidation",
+        "C": "Longer investment horizons that support sustained research and development",
+        "D": "Immediate quarterly profit maximisation for shareholders"
+      },
+      "correct_option_label": "C",
+      "explanation": "Patient capital means longer investment horizons that support sustained R&D.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q9",
+      "question_text": "Which of the following is a common barrier to innovation adoption observed in family-owned businesses?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Emotional attachment to existing products and resistance to changing established practices",
+        "B": "Excessive willingness to take uncalculated financial risks",
+        "C": "Overreliance on external venture capital funding",
+        "D": "Mandatory annual rotation of all leadership positions"
+      },
+      "correct_option_label": "A",
+      "explanation": "Emotional attachment to existing products and resistance to change are common barriers.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q10",
+      "question_text": "Trans-generational entrepreneurship in family businesses is best understood as:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The legal process of converting a sole proprietorship into a partnership",
+        "B": "The capability of a family to create economic and social value across successive generations through continued entrepreneurial behaviour",
+        "C": "The transfer of ownership shares equally among all generational heirs",
+        "D": "The practice of each generation starting a completely unrelated new venture"
+      },
+      "correct_option_label": "B",
+      "explanation": "Trans-generational entrepreneurship is a family's capability to create value across generations through continued entrepreneurial behaviour.",
+      "module": 5
+    }
+  ]
+}

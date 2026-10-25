@@ -462,7 +462,7 @@ export const SUBJECTS: Subject[] = [
     description: '',
     icon: 'Lightbulb',
     aliases: [
-      { batch: 1, code: '', term: 7 },
+      { batch: 1, code: 'MD71x', term: 7 },
       { batch: 2, code: '', term: 7 },
     ],
   },
@@ -480,8 +480,16 @@ export const SUBJECTS: Subject[] = [
     description: '',
     icon: 'Building2',
     aliases: [
-      { batch: 1, code: '', term: 7 },
+      { batch: 1, code: 'ST71x', term: 7, name: 'Family Business Strategy' },
       { batch: 2, code: '', term: 7 },
+    ],
+  },
+  {
+    name: 'Startup Dilemmas: Founding or Joining',
+    description: '',
+    icon: 'Rocket',
+    aliases: [
+      { batch: 1, code: 'EP71x', term: 7 },
     ],
   },
 
@@ -509,7 +517,7 @@ export const SUBJECTS: Subject[] = [
     description: '',
     icon: 'DollarSign',
     aliases: [
-      { batch: 1, code: '', term: 8 },
+      { batch: 1, code: 'FA71x', term: 7 },
       { batch: 2, code: '', term: 8 },
     ],
   },

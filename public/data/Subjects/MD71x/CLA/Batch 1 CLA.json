@@ -1,0 +1,988 @@
+{
+  "exam_metadata": {
+    "subject_name": "Critical Thinking",
+    "exam_date": "Batch 1"
+  },
+  "questions": [
+    {
+      "question_id": "M1-Q1",
+      "question_text": "A manager argues: 'All top-performing employees arrive early. Priya arrives early. Therefore, Priya is a top-performing employee.' What is the primary logical flaw in this argument?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It presents only two options when more exist",
+        "B": "It affirms the consequent, treating a shared trait as proof of the conclusion",
+        "C": "It attacks the person making the argument rather than the claim",
+        "D": "It relies on an unrepresentative sample to generalize"
+      },
+      "correct_option_label": "B",
+      "explanation": "'All top performers arrive early' does not mean everyone who arrives early is a top performer. Inferring Priya's status from the shared trait is affirming the consequent.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q2",
+      "question_text": "During a budget meeting, an employee says, 'We shouldn't listen to Raj's proposal on cost-cutting because he was recently divorced and clearly isn't thinking straight.' Which reasoning error does this statement best illustrate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Circular reasoning that assumes the conclusion in the premise",
+        "B": "Appeal to authority that relies on Raj's job title",
+        "C": "Slippery slope reasoning that exaggerates future consequences",
+        "D": "Ad hominem attack that dismisses the proposal by targeting Raj personally"
+      },
+      "correct_option_label": "D",
+      "explanation": "The argument dismisses the proposal by attacking Raj's personal life, not the merits of the proposal: ad hominem.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q3",
+      "question_text": "A company decides to launch a new product nationwide because three customers in a focus group loved it. What weakness best describes this decision-making approach?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It relies on outdated evidence rather than current customer needs",
+        "B": "It generalizes from an unrepresentative small sample to the entire market",
+        "C": "It confuses correlation between the product and sales with causation",
+        "D": "It uses a false dichotomy between launching and not launching"
+      },
+      "correct_option_label": "B",
+      "explanation": "Three focus-group customers are far too small and unrepresentative a sample to generalise to a national market.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q4",
+      "question_text": "A hospital tells patients a surgery has a '90% survival rate' rather than a '10% mortality rate' to encourage them to proceed. Which critical thinking concept explains why patients respond more positively to the first phrasing?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Framing effect, where identical information presented differently changes perception",
+        "B": "Anchoring bias, where the first number given sets a reference point",
+        "C": "Halo effect, where one positive trait influences overall judgment",
+        "D": "Confirmation bias, where patients only notice supporting evidence"
+      },
+      "correct_option_label": "A",
+      "explanation": "'90% survival' and '10% mortality' are the same fact; the positive frame changes perception — the framing effect.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q5",
+      "question_text": "A retailer plans to double advertising spend, assuming that increased ad exposure will proportionally increase sales. What hidden assumption is this strategy most dependent on?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The retailer's current market share is below industry average",
+        "B": "Advertising costs will remain constant over the campaign period",
+        "C": "Customers' purchase decisions are significantly influenced by advertising exposure",
+        "D": "Competitors will not respond by increasing their own advertising"
+      },
+      "correct_option_label": "C",
+      "explanation": "Doubling ad spend to raise sales only works if purchase decisions really respond to advertising exposure.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q6",
+      "question_text": "A study finds that cities with more ice cream shops also have higher crime rates, and a report concludes that ice cream shops cause crime. What is the most likely explanation for this flawed conclusion?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Both variables are influenced by a third factor such as warmer weather or population density",
+        "B": "The sample size used in the study was too small to be reliable",
+        "C": "The report relies on anecdotal evidence rather than statistical data",
+        "D": "The report uses a false dichotomy between two unrelated outcomes"
+      },
+      "correct_option_label": "A",
+      "explanation": "Ice cream shops and crime both rise with a third factor such as warm weather or population density; correlation is not causation.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q7",
+      "question_text": "An online survey about employee satisfaction is emailed only to staff who attended the last town hall meeting, and results show 95% satisfaction. Why might this result misrepresent overall employee sentiment?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The 95% figure represents correlation rather than a causal relationship",
+        "B": "Email surveys generally have lower response rates than phone surveys",
+        "C": "Attendees are likely more engaged and positive than the average employee, biasing the sample",
+        "D": "The survey question wording likely led respondents toward positive answers"
+      },
+      "correct_option_label": "C",
+      "explanation": "Town-hall attendees are likely more engaged than average employees, so the sample is biased toward positive answers.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q8",
+      "question_text": "A CEO decides to enter a new market solely because a competitor recently succeeded there, without analyzing the competitor's specific advantages. Which reasoning weakness best describes this decision?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Using a small, unrepresentative sample of customer feedback to decide",
+        "B": "Presenting only two options when a range of alternatives exists",
+        "C": "Assuming success will transfer without evaluating differences in resources and context",
+        "D": "Rejecting the competitor's strategy without considering any evidence at all"
+      },
+      "correct_option_label": "C",
+      "explanation": "The CEO assumes the competitor's success will transfer without examining differences in resources and context.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q9",
+      "question_text": "A retirement plan automatically enrolls employees but allows them to opt out, resulting in much higher participation than a plan requiring employees to actively opt in. What critical thinking principle explains this difference in behavior?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Employees are exhibiting confirmation bias toward retirement savings",
+        "B": "Employees are using deductive reasoning to evaluate long-term outcomes",
+        "C": "The opt-out plan provides stronger statistical evidence of benefits",
+        "D": "The default option frames the decision and reduces the effort needed to comply"
+      },
+      "correct_option_label": "D",
+      "explanation": "Auto-enrolment makes participation the default, framing the choice and removing the effort needed to join.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q10",
+      "question_text": "A manager tells the team, 'Either we cut costs immediately or the company will go bankrupt within a year.' Why is this statement potentially a flawed argument?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It attacks the character of employees instead of addressing the issue",
+        "B": "It ignores other possible options between the two extreme outcomes presented",
+        "C": "It confuses a correlation between costs and bankruptcy with causation",
+        "D": "It relies on a sample that is too small to support the conclusion"
+      },
+      "correct_option_label": "B",
+      "explanation": "The manager presents only two extremes and ignores options in between — a false dichotomy.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q11",
+      "question_text": "A quality inspector examines 50 out of 10,000 units and concludes the entire batch is defect-free based on finding no defects in the sample. What type of reasoning is being used, and what is its main limitation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Deductive reasoning, which guarantees the conclusion if premises are true",
+        "B": "Analogical reasoning, which compares two unrelated situations",
+        "C": "Circular reasoning, which assumes the conclusion within its own premise",
+        "D": "Inductive reasoning, which offers probable but not certain conclusions"
+      },
+      "correct_option_label": "D",
+      "explanation": "Generalising from a sample to the batch is inductive reasoning; it gives a probable, not a certain, conclusion.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q12",
+      "question_text": "An advertisement claims, 'Nine out of ten dentists recommend our toothpaste,' without disclosing the sample size or how dentists were selected. How should a critical thinker evaluate this claim?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Question the sample size and selection method before accepting the statistic as representative",
+        "B": "Reject the claim outright because all advertising statistics are fabricated",
+        "C": "Accept the claim since dentists are credible professional authorities",
+        "D": "Assume the claim is valid because it uses a specific numerical ratio"
+      },
+      "correct_option_label": "A",
+      "explanation": "Without knowing the sample size and how dentists were selected, the statistic cannot be assumed representative.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q13",
+      "question_text": "A startup founder argues, 'Our competitor failed because they raised too much funding too early, so we should avoid raising funding until we have significant revenue.' What critical flaw undermines this reasoning?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It assumes a single cause for the competitor's failure without ruling out other factors",
+        "B": "It relies on a false dichotomy between raising funding and generating revenue",
+        "C": "It uses an appeal to authority by citing the competitor's experience",
+        "D": "It generalizes from a large, statistically representative sample of startups"
+      },
+      "correct_option_label": "A",
+      "explanation": "The founder attributes the competitor's failure to one cause without ruling out other factors.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q14",
+      "question_text": "A marketing report shows that website traffic increased by 40% after a new design launch and concludes the redesign caused the traffic surge, without noting that the launch coincided with a major holiday sale. What analytical error is present here?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Presenting the data as a false dichotomy between two design choices",
+        "B": "Relying on anecdotal customer testimonials instead of traffic data",
+        "C": "Using a sample size too small to draw any meaningful conclusion",
+        "D": "Failing to control for a confounding event that could independently explain the increase"
+      },
+      "correct_option_label": "D",
+      "explanation": "The holiday sale is a confounding event that could explain the traffic jump on its own.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q15",
+      "question_text": "During a salary negotiation, an employee frames a request as 'protecting the company from losing me to a competitor' rather than 'wanting more money for personal reasons.' How does this framing strategically affect the employer's likely response?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It shifts the employer's focus from a personal cost to a loss the company could avoid",
+        "B": "It relies on a slippery slope to exaggerate the consequences of refusal",
+        "C": "It uses an appeal to authority to make the request seem more credible",
+        "D": "It applies inductive reasoning to generalize from past salary negotiations"
+      },
+      "correct_option_label": "A",
+      "explanation": "Framing the raise as avoiding the loss of a valued employee shifts the employer's focus from a cost to a loss they can prevent.",
+      "module": 1
+    },
+    {
+      "question_id": "M2-Q1",
+      "question_text": "What distinguishes an explicit claim from an implicit position in a text?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "An explicit claim is typically subjective, whilst an implicit position remains objective and factual",
+        "B": "An explicit claim is reconstructed from gaps, whilst an implicit position is directly stated",
+        "C": "An explicit claim is directly stated and quotable, whilst an implicit position must be inferred",
+        "D": "An explicit claim is found in academic studies, whilst implicit positions occur in fiction"
+      },
+      "correct_option_label": "C",
+      "explanation": "An explicit claim is directly stated and can be quoted; an implicit position has to be inferred from the text.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q2",
+      "question_text": "In a report stating 'Our platform helped thousands of small businesses grow this year. As always, we remain focussed on the merchants...', what does the phrase 'as always' reveal?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "An explicit claim of community growth that is fully backed by historical data",
+        "B": "An explicit denial of any merchant departures during the specified business year",
+        "C": "An implicit assumption of market dominance that is verified by official industry statistics",
+        "D": "An implicit position of consistency that the text fails to support with evidence"
+      },
+      "correct_option_label": "D",
+      "explanation": "'As always' implies a consistent track record that the text never backs up with evidence.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q3",
+      "question_text": "A green-energy startup presents its history to venture capitalists: It began by identifying a massive gap in residential solar storage (1), but soon faced a critical shortage of lithium battery supplies that threatened its survival (2). Consequently, the team engineered a novel silicon-based alternative that doubled storage capacity at half the cost (3).\nUnder the Situation-Complication-Resolution (SCR) framework of business narratives, which of the following best analyses the function of element (2) in persuading investors?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It represents the Situation, introducing the baseline market opportunity before any external disruption or severe resource conflict occurs.",
+        "B": "It serves as the Resolution, demonstrating how the startup successfully adapted to challenging market conditions to achieve stability.",
+        "C": "It establishes the Complication, creating narrative tension that justifies the necessity of the company's eventual innovative technological solution.",
+        "D": "It acts as an alternative reading, challenging the company's internal assumptions by highlighting external structural and market failures."
+      },
+      "correct_option_label": "C",
+      "explanation": "In SCR, element (2) — the lithium shortage — is the Complication that creates tension and justifies the Resolution.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q4",
+      "question_text": "In analysing a company's failure, the traditional narrative emphasises a clash between a slow-moving legacy firm and an innovative digital startup. A counter-reading reveals that the legacy firm's own engineers had proposed a digital transition years earlier, which executives rejected to preserve current physical retail margins. How does this counter-reading shift the application of the 5 Cs framework?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It changes the final consequence from commercial bankruptcy to a positive organisational transformation.",
+        "B": "It shifts the analytical focus from external technological conflict to internal leadership choices.",
+        "C": "It removes the original industry context to focus purely on the main characters' personalities.",
+        "D": "It introduces an entirely new set of characters without altering the existing organisational choices."
+      },
+      "correct_option_label": "B",
+      "explanation": "The counter-reading moves the cause from an external technology clash to internal leadership choices (rejecting the engineers' proposal).",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q5",
+      "question_text": "A delivery-robot start-up, ApexGo, experiences two severe crashes where its automated units hit pedestrians. ApexGo blames unusual pedestrian movements and municipal infrastructure. An independent safety audit reveals that a background navigation script repeatedly overrode operator emergency commands, a detail hidden to bypass lengthy certification reviews. To establish this audit as a credible counter-reading, investigators apply three evaluative tests. Which of the following findings demonstrates that the audit's counter-reading successfully passes the consistency test?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The algorithm defect explains both collisions and explains why certified operators could not regain manual control.",
+        "B": "The audit relies on actual server logs, internal design communications, and physical safety telemetry reports.",
+        "C": "The audit forecasts that identical collisions will inevitably recur unless the core safety software is fundamentally redesigned.",
+        "D": "The audit highlights how the leadership prioritised rapid market penetration over comprehensive training protocols for its operators."
+      },
+      "correct_option_label": "A",
+      "explanation": "The consistency test asks whether the counter-reading explains the evidence at least as well — here it explains both crashes and why operators could not regain control.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q6",
+      "question_text": "A company memo mentions 'speed' six times and 'quality' only once. What does this repetition pattern most clearly signal?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "An explicit assertion that quality has been entirely ignored",
+        "B": "A structural decision to bury quality in an appendix",
+        "C": "An assumption that the reader prioritises speed over quality",
+        "D": "An implicit ranking where speed is prioritised over quality"
+      },
+      "correct_option_label": "D",
+      "explanation": "Repeating 'speed' six times against 'quality' once signals an implicit ranking of priorities.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q7",
+      "question_text": "A press release states \"Operating costs increased 6% and these investments position the company well for future growth.\" What close-reading concern does this sentence raise?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The cost figure lacks precision and cannot be checked against any baseline",
+        "B": "The statement relies mainly on emotional language rather than on financial data",
+        "C": "The growth claim is asserted as fact without any supporting metric or timeline",
+        "D": "The sentence implies that physical store closures have already been finalised"
+      },
+      "correct_option_label": "C",
+      "explanation": "The claim that the costs 'position the company well for future growth' is asserted, not demonstrated — no metric or timeline.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q8",
+      "question_text": "A corporate acquisition report repeats 'growth' nine times, refers to factory closures as 'asset optimisation', and relegates safety risks to an appendix. If a critical reader evaluates the placement of these safety risks, which technique are they applying, and what does this choice convey?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Analysing structure and order, signalling that the risk is of lesser importance.",
+        "B": "Analysing selection bias, proving that the risk is factually incorrect or invalid.",
+        "C": "Analysing emotive word choice, showing that the risk is an objective reality.",
+        "D": "Analysing the assumed audience, indicating that the reader already agrees with it."
+      },
+      "correct_option_label": "A",
+      "explanation": "Placing safety risks in an appendix is a choice of structure and order that signals they matter less.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q9",
+      "question_text": "An eco-friendly energy firm launched a campaign showing how its solar installations brought cheap electricity to rural communities. However, the promotional materials completely ignored the displacement of several indigenous families during land acquisition.\nWhich action of analysing this scenario represents an application of 'narrative omission'?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Evaluating whether the solar panels deliver the promised cheap electricity to the communities.",
+        "B": "Identifying how the campaign excludes displaced families whose experiences complicate the empowerment story.",
+        "C": "Pointing out that the marketing campaign relies on unverified economic data and statistics.",
+        "D": "Proposing an alternative advertising strategy that focuses on urban rather than rural consumers."
+      },
+      "correct_option_label": "B",
+      "explanation": "Narrative omission means spotting who is left out — here the displaced families who complicate the empowerment story.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q10",
+      "question_text": "A company report states that it plans to \"explore opportunities to optimise the store portfolio.\" Why might a close reader treat this phrase with suspicion?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It offers a precise timeline for identifying which physical locations will close",
+        "B": "It explicitly guarantees the immediate opening of several new retail outlets",
+        "C": "It directly contradicts the positive financial figures reported in earlier sections",
+        "D": "It serves as a euphemism that avoids openly committing to closing stores"
+      },
+      "correct_option_label": "D",
+      "explanation": "'Optimise the store portfolio' is a euphemism that avoids committing openly to closing stores.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q11",
+      "question_text": "A report pairs \"footfall declined 8% year over year\" with \"online engagement metrics trending positively.\" What does this pairing most likely suggest?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Both metrics are equally precise and can be verified against a baseline",
+        "B": "The vague metric is probably hiding results that are not actually favourable",
+        "C": "The company is deliberately understating its physical store performance in the report",
+        "D": "Online engagement is being compared to a clearly defined prior industry benchmark"
+      },
+      "correct_option_label": "B",
+      "explanation": "A hard number (-8%) is paired with a vague, unquantified 'trending positively', which likely hides unfavourable results.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q12",
+      "question_text": "An analyst wishes to evaluate whether a counter-reading of a business narrative is more robust than the dominant version. Which combination of tests should be applied?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Repetition test, omission test, and word-choice test",
+        "B": "Structure test, audience test, and emphasis test",
+        "C": "Emotional test, popularity test, and brevity test",
+        "D": "Evidentiary test, consistency test, and predictive test"
+      },
+      "correct_option_label": "D",
+      "explanation": "Counter-readings are judged with the evidentiary, consistency and predictive tests.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q13",
+      "question_text": "The popular narrative credits Netflix's innovation for the bankruptcy of the retail giant. What key fact about the legacy organisation does a counter-reading bring to light?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Physical retail stores remained highly profitable throughout the liquidation process",
+        "B": "Internal proposals for streaming services were rejected by senior leadership",
+        "C": "Technical limitations prevented any early adoption of digital delivery systems",
+        "D": "Late fee structures were declared illegal prior to the bankruptcy"
+      },
+      "correct_option_label": "B",
+      "explanation": "The counter-reading shows Blockbuster's leadership rejected internal proposals for streaming.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q14",
+      "question_text": "An analyst is evaluating a counter-reading of a food delivery platform's dominant narrative. While the platform claims its success is driven by 'algorithmic route optimisation,' the counter-reading argues that its growth relies on 'systematic wage underpayment.' To evaluate this counter-reading, the analyst applies the consistency test. What must the analyst determine to satisfy this specific test?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Whether the wage underpayment theory explains the high driver retention and rapid delivery times that made the original narrative persuasive.",
+        "B": "Whether there is verifiable and documented data on actual worker wages rather than speculative anecdotes collected from public online forums.",
+        "C": "Whether the wage underpayment theory successfully forecasts how the platform will perform during upcoming regulatory changes and worker strikes.",
+        "D": "Whether the wage underpayment theory completely disproves the existence of any operational route optimisation software within the company's system."
+      },
+      "correct_option_label": "A",
+      "explanation": "The consistency test asks whether the counter-reading accounts for the facts that made the original narrative persuasive.",
+      "module": 2
+    },
+    {
+      "question_id": "M2-Q15",
+      "question_text": "When analysing a pitch deck that includes a growth projection slide extending past trends indefinitely into the future, which assumption check would most effectively expose a hidden weakness?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Asking whether the slide employs a bar chart instead of a standard trend line",
+        "B": "Asking whether the font size of the projection matches the rest of the deck",
+        "C": "Asking whether the slide explicitly names the assumption that past growth conditions will hold",
+        "D": "Asking whether competitor risks are thoroughly detailed in the accompanying appendix document"
+      },
+      "correct_option_label": "C",
+      "explanation": "Indefinite trend extrapolation hides the assumption that past growth conditions will continue; asking for it to be named exposes the weakness.",
+      "module": 2
+    },
+    {
+      "question_id": "M3-Q1",
+      "question_text": "A manager argues: 'All employees who miss the deadline will be penalised. Priya missed the deadline. Therefore, Priya will be penalised.' Assuming the structure holds regardless of whether the premises are actually true, which property does this argument demonstrate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Soundness",
+        "B": "Validity",
+        "C": "Strength",
+        "D": "Cogency"
+      },
+      "correct_option_label": "B",
+      "explanation": "Validity is about structure: if the premises are true, the conclusion must follow, whether or not they actually are true.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q2",
+      "question_text": "A startup founder highlights her fifteen years of industry experience before presenting her pitch to investors, before any data is shared. Which rhetorical appeal is she primarily using?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Pathos",
+        "B": "Ethos",
+        "C": "Logos",
+        "D": "Warrant"
+      },
+      "correct_option_label": "B",
+      "explanation": "Establishing credibility through experience before presenting data is an appeal to ethos.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q3",
+      "question_text": "A retail analyst observes that footfall has risen every festive season for the past eight years and predicts it will rise again this year, while acknowledging the prediction is not guaranteed. What type of reasoning is this?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Deductive reasoning",
+        "B": "Analogical reasoning",
+        "C": "Statistical reasoning",
+        "D": "Inductive reasoning"
+      },
+      "correct_option_label": "D",
+      "explanation": "Predicting from a repeated pattern while admitting it isn't guaranteed is inductive reasoning.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q4",
+      "question_text": "An advertisement shows a luxury car speeding through scenic roads with the tagline 'Live without limits', without ever stating that viewers should purchase the car. What does this illustrate about the structure of arguments?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Evidence must always be numerical and statistical",
+        "B": "Reasoning is unnecessary when evidence is strong",
+        "C": "Warrants must always be stated explicitly",
+        "D": "Claims can be implied rather than explicitly stated"
+      },
+      "correct_option_label": "D",
+      "explanation": "The ad never says 'buy this car'; its claim is implied, not stated.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q5",
+      "question_text": "In 2006, Netflix's leadership asked the board to redirect resources from a profitable DVD-by-mail business into an unproven streaming model. Given that rising broadband adoption and changing consumption patterns alone would not persuade the board, which structural element was most critical to secure approval?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Qualifier limiting the strength of the claim",
+        "B": "Backing supporting the warrant behind the claim",
+        "C": "Reasoning connecting the evidence to the claim",
+        "D": "Rebuttal anticipating objections to the claim"
+      },
+      "correct_option_label": "C",
+      "explanation": "Evidence alone (broadband trends) was not enough; the board needed the reasoning that connected the evidence to the claim.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q6",
+      "question_text": "A consultant states: 'Our six-month pilot showed productivity rose by 12%. Therefore, the company should permanently adopt a four-day workweek.' Which Toulmin element is missing to explain why this productivity gain justifies a permanent policy change?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Warrant",
+        "B": "Backing",
+        "C": "Qualifier",
+        "D": "Rebuttal"
+      },
+      "correct_option_label": "A",
+      "explanation": "The missing piece is the warrant — why a 12% gain in a six-month pilot justifies a permanent policy.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q7",
+      "question_text": "An inductive argument has a logically reasonable structure connecting its premises to its conclusion, but one of its premises later turns out to be false. How should this argument be classified?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is cogent but not strong",
+        "B": "It is valid but not sound",
+        "C": "It is strong but not cogent",
+        "D": "It is sound but not valid"
+      },
+      "correct_option_label": "C",
+      "explanation": "A good inductive structure makes it strong; a false premise means it is not cogent.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q8",
+      "question_text": "A manager proposing a new office in Chennai presents employee satisfaction scores from the Mumbai office as supporting evidence for the proposal. What evidentiary flaw does this illustrate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The evidence is insufficient in sample size",
+        "B": "The evidence source lacks credibility and expertise",
+        "C": "The evidence is no longer current",
+        "D": "The evidence lacks relevance to the claim"
+      },
+      "correct_option_label": "D",
+      "explanation": "Satisfaction in the Mumbai office says nothing about whether a Chennai office is justified; the evidence lacks relevance.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q9",
+      "question_text": "During an organisational restructuring, leadership explains how the change protects employees' long-term job security instead of only presenting cost-saving spreadsheets. Which rhetorical appeal are they primarily using to gain employee support?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Ethos",
+        "B": "Pathos",
+        "C": "Logos",
+        "D": "Warrant"
+      },
+      "correct_option_label": "B",
+      "explanation": "Appealing to employees' feelings about long-term job security, rather than only spreadsheets, is pathos.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q10",
+      "question_text": "An AI tool produces a market-entry report filled with accurate statistics on GDP growth and internet penetration, concluding that a company should enter a new market. What critical gap should a reader look for before accepting this recommendation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Whether the reasoning connects the evidence to the conclusion",
+        "B": "Whether the statistics are precisely rounded",
+        "C": "Whether the report uses sophisticated vocabulary",
+        "D": "Whether the formatting appears professional and polished"
+      },
+      "correct_option_label": "A",
+      "explanation": "Accurate statistics still need reasoning that links them to the recommendation.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q11",
+      "question_text": "Two lawyers examine identical facts about a factory accident: one argues the company acted negligently, the other argues it acted reasonably under the circumstances. Both accept the same facts. What does this disagreement primarily illustrate about legal argumentation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Disagreement centres on the credibility of expert witnesses",
+        "B": "Disagreement centres on the sufficiency of available evidence",
+        "C": "Disagreement centres on the warrant linking facts to legal conclusions",
+        "D": "Disagreement centres on the qualifier used in argument"
+      },
+      "correct_option_label": "C",
+      "explanation": "Both sides accept the facts but disagree on the warrant that links facts to the legal conclusion.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q12",
+      "question_text": "Despite publishing a Black Friday advertisement urging customers not to buy its jacket, a clothing company strengthened consumer trust rather than losing it. The advertisement contained very little statistical detail. What explains this outcome in terms of rhetorical appeal?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The advertisement relied heavily on statistical evidence of damage",
+        "B": "The advertisement used emotional storytelling about individual customers",
+        "C": "The advertisement relied on logical cost-benefit calculations throughout",
+        "D": "The advertisement reinforced credibility by acting consistently with company values"
+      },
+      "correct_option_label": "D",
+      "explanation": "Patagonia's 'Don't Buy This Jacket' built credibility (ethos) by acting consistently with its environmental values.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q13",
+      "question_text": "A beverage company funds and conducts its own study concluding that its drink improves long-term health outcomes, and later presents this as evidence supporting a public health claim. Applying evidence evaluation criteria, what is the most appropriate response to this study?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Reject the findings outright as completely fabricated data",
+        "B": "Treat the findings with greater scrutiny due to conflict of interest",
+        "C": "Accept the findings since the company has relevant expertise",
+        "D": "Ignore the funding source as irrelevant to validity"
+      },
+      "correct_option_label": "B",
+      "explanation": "Self-funded research has a conflict of interest, so it deserves extra scrutiny — not automatic rejection.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q14",
+      "question_text": "A retail CEO in 2021 reasons: 'Digital payments have grown consistently, smartphone ownership keeps rising, and customers increasingly expect cashless options; therefore, our stores should be redesigned around digital payments.' Which risk is most directly associated with this style of reasoning?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The pattern may not hold if future conditions change unexpectedly",
+        "B": "The conclusion is logically guaranteed by the stated premises",
+        "C": "The argument lacks any supporting observations or patterns",
+        "D": "The claim is stated only implicitly throughout"
+      },
+      "correct_option_label": "A",
+      "explanation": "Inductive reasoning from trends risks failing if future conditions change unexpectedly.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q15",
+      "question_text": "Amazon combined its reputation for reliable delivery, a straightforward cost-saving calculation about shipping, and the promise of a frustration-free shopping experience to launch Prime successfully. Which combination of rhetorical appeals does this best represent?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Logos alone supported by strong data",
+        "B": "Pathos reinforced by qualifiers and rebuttals",
+        "C": "Ethos combined only with Toulmin backing",
+        "D": "Ethos, logos, and pathos working together"
+      },
+      "correct_option_label": "D",
+      "explanation": "Reputation (ethos), the cost-saving calculation (logos) and frustration-free shopping (pathos) worked together.",
+      "module": 3
+    },
+    {
+      "question_id": "M4-Q1",
+      "question_text": "A manager instantly senses that a client is frustrated just by glancing at her expression during a meeting, without consciously analyzing any of it. Which system of thinking is primarily responsible for this instant, effortless perception?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "System 1",
+        "B": "System 2",
+        "C": "Availability heuristic",
+        "D": "Confirmation bias"
+      },
+      "correct_option_label": "A",
+      "explanation": "Instant, effortless perception of emotion is System 1 thinking.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q2",
+      "question_text": "During a salary negotiation, a candidate mentions a very high expected salary figure right at the start, and the recruiter's counteroffer ends up closer to that number than company policy would normally allow. This pull toward an early number best illustrates which bias?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Availability heuristic",
+        "B": "Anchoring bias",
+        "C": "Confirmation bias",
+        "D": "Hasty generalization"
+      },
+      "correct_option_label": "B",
+      "explanation": "The early high figure acts as an anchor that pulls the counteroffer toward it.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q3",
+      "question_text": "A founder who strongly believes her product idea will succeed reads ten customer reviews, and even though three are negative, she spends most of her energy explaining why those reviewers' don't understand the product' rather than investigating their concerns. This behaviour is best described as which bias?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Availability heuristic",
+        "B": "Anchoring bias",
+        "C": "Confirmation bias",
+        "D": "Appeal to tradition"
+      },
+      "correct_option_label": "C",
+      "explanation": "Explaining away negative reviews to protect an existing belief is confirmation bias.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q4",
+      "question_text": "A junior analyst presents data showing that a popular product line has declining margins. A senior executive responds, 'You've been with us only three months, so you clearly don't understand our business,' without addressing the data at all. This response illustrates which fallacy?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Straw man",
+        "B": "False dichotomy",
+        "C": "Appeal to authority",
+        "D": "Ad hominem"
+      },
+      "correct_option_label": "D",
+      "explanation": "Attacking the analyst's tenure instead of the data is ad hominem.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q5",
+      "question_text": "A beauty brand tests a new fragrance on fifty thousand customers and finds that most prefer its scent over the existing one. The brand launches it, but sales collapse because loyal customers feel strong emotional attachment to the original scent, something the test never measured. This outcome is best explained by which error?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The sample size was too small to be representative",
+        "B": "The test measured preference but not what the decision truly required",
+        "C": "The test suffered from anchoring the earliest comparison",
+        "D": "The brand relied on anecdotal evidence from one customer"
+      },
+      "correct_option_label": "B",
+      "explanation": "The test measured scent preference, not the emotional attachment that the decision actually depended on.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q6",
+      "question_text": "Before finalizing a major acquisition recommendation, a strategy team deliberately assigns one member to argue against the deal and actively search for data that would prove the recommendation wrong. This practice is best understood as a structural antidote to which bias?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Availability heuristic",
+        "B": "Anchoring bias",
+        "C": "Confirmation bias",
+        "D": "Appeal to novelty"
+      },
+      "correct_option_label": "C",
+      "explanation": "Assigning a devil's advocate to seek disconfirming evidence counters confirmation bias.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q7",
+      "question_text": "After reading extensive media coverage of a cybersecurity breach at a competitor, a CFO insists that cyberattacks are now the company's biggest operational risk, even though internal audit data shows supply chain failures occur far more frequently. The CFO's judgment is most shaped by which bias?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Availability heuristic",
+        "B": "Anchoring bias",
+        "C": "Appeal to authority",
+        "D": "Confirmation bias"
+      },
+      "correct_option_label": "A",
+      "explanation": "Vivid, heavily covered events feel more likely than they are — the availability heuristic.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q8",
+      "question_text": "A manager notes that sales rose by fifteen percent the month after a new logo was launched and immediately concludes the logo caused the sales increase. Which part of the argument's structure is most clearly weak in this reasoning?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The warrant linking evidence to the claim",
+        "B": "The evidence showing a sales increase",
+        "C": "The claim that sales rose",
+        "D": "The sample size of the sales data"
+      },
+      "correct_option_label": "A",
+      "explanation": "The evidence (sales rose) is fine; the warrant linking the logo to the increase (post hoc) is weak.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q9",
+      "question_text": "A board member opposes allowing employees one remote workday per week, arguing, 'If we allow\nthis, soon everyone will demand to work from home permanently, and then company culture will\ncompletely collapse.' This reasoning is best identified as which fallacy?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Post hoc",
+        "B": "Slippery slope",
+        "C": "Appeal to authority",
+        "D": "False dichotomy"
+      },
+      "correct_option_label": "B",
+      "explanation": "Claiming one small step leads inevitably to collapse is a slippery slope.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q10",
+      "question_text": "A marketing lead proposes trimming the budget for three low-performing social media channels to reinvest in email campaigns. A colleague replies, 'So you want to abandon social media entirely and lose all our younger customers?' This response is best described as which fallacy?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Ad hominem",
+        "B": "False dichotomy",
+        "C": "Slippery slope",
+        "D": "Straw man"
+      },
+      "correct_option_label": "D",
+      "explanation": "The colleague distorts a modest proposal into an extreme one that is easier to attack: straw man.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q11",
+      "question_text": "Facing a new low-cost competitor, a CEO tells the leadership team, 'We either match their prices immediately or we exit this market entirely.' A board member points out that bundling, loyalty programs, and service differentiation are also viable paths. The CEO's original framing illustrates which fallacy?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Straw man",
+        "B": "Appeal to novelty",
+        "C": "False dichotomy",
+        "D": "Post hoc"
+      },
+      "correct_option_label": "C",
+      "explanation": "Presenting only two options when bundling, loyalty and differentiation exist is a false dichotomy.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q12",
+      "question_text": "A retail chain's leadership rejects a proposal to use AI-based demand forecasting, stating, 'We have manually forecasted inventory for thirty years, and that experience is what keeps us profitable,' without examining whether the manual method still performs well. This justification most closely reflects which reasoning shortcut?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Appeal to tradition",
+        "B": "Appeal to nature",
+        "C": "Appeal to novelty",
+        "D": "Appeal to authority"
+      },
+      "correct_option_label": "A",
+      "explanation": "Justifying a practice only because 'we have always done it' is an appeal to tradition.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q13",
+      "question_text": "A company's investor presentation highlights only the one product line showing growth while omitting three declining segments, and repeats the phrase 'market leader' throughout the deck without supporting data. This approach is best characterized as which type of communication?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Legitimate persuasion",
+        "B": "Inductive reasoning",
+        "C": "Manufactured consent",
+        "D": "Hasty generalization"
+      },
+      "correct_option_label": "C",
+      "explanation": "Selective emphasis and unsupported repetition shape perception instead of informing it — manufactured consent.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q14",
+      "question_text": "Ahead of a funding negotiation, a founder privately writes down her own valuation estimate based on comparable company data before hearing the investor's opening offer. This practice is designed to protect her judgment primarily against which risk?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Overestimating the company's long-term growth",
+        "B": "Being unconsciously pulled toward the investor's anchor",
+        "C": "Relying on anecdotal founder experience",
+        "D": "Falling into a false dichotomy during talks"
+      },
+      "correct_option_label": "B",
+      "explanation": "Setting her own estimate first protects her from being pulled toward the investor's anchor.",
+      "module": 4
+    },
+    {
+      "question_id": "M4-Q15",
+      "question_text": "A leadership team, all graduates of the same business school, repeatedly approves a risky strategy partly because each member feels reassured that trusted former classmates on the team agree with it, while a non-alumnus's documented objections are given little weight. This pattern of reinforced confidence is best explained by which combination of biases?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Confirmation bias and anchoring",
+        "B": "Availability heuristic and appeal to authority",
+        "C": "In-group bias and social proof",
+        "D": "Hasty generalization and post hoc"
+      },
+      "correct_option_label": "C",
+      "explanation": "Trusting fellow alumni (in-group bias) and taking reassurance from their agreement (social proof) reinforce each other.",
+      "module": 4
+    },
+    {
+      "question_id": "M5-Q1",
+      "question_text": "A jewelry brand prices a lab-grown diamond ring the same as a visually identical natural diamond, marketing it with the line 'real love, real diamond.' Customers happily pay the premium even though they know the stone's origin does not change its appearance. What does this scenario best illustrate about value?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Value is determined solely by the cost of raw materials used",
+        "B": "Value is a universal standard that stays the same across all contexts",
+        "C": "Value is socially constructed through cultural narratives and institutions",
+        "D": "Value is fixed by the physical composition of the object itself"
+      },
+      "correct_option_label": "C",
+      "explanation": "Customers pay for the story and meaning, not physical difference — value is socially constructed.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q2",
+      "question_text": "A small restaurant proudly displays a Michelin Star plaque near its entrance, and customers become willing to pay significantly more for the same menu items after the plaque appears. What principle does this situation demonstrate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Michelin stars guarantee the best possible taste for every customer",
+        "B": "Price alone determines whether a certification will be trusted",
+        "C": "Certification labels have no real influence on purchasing decisions",
+        "D": "Certifications act as institutional signals that confer trust-based value"
+      },
+      "correct_option_label": "D",
+      "explanation": "A Michelin Star is an institutional signal that confers trust, so customers pay more for the same food.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q3",
+      "question_text": "A gifted musician performs in a crowded park and barely gets noticed by passersby. Months later, the same musician performs identical pieces on the same instrument in a sold-out concert hall and receives a standing ovation. What best explains the difference in audience response?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Listeners in the concert hall had developed better musical taste overnight",
+        "B": "External context such as venue reputation and setting shaped perceived value",
+        "C": "The concert hall's acoustics made the music objectively superior in quality",
+        "D": "The musician's technical skill improved significantly between the two performances"
+      },
+      "correct_option_label": "B",
+      "explanation": "The same performance was valued differently because of context — venue reputation and setting.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q4",
+      "question_text": "In social epistemology, how do the structural mechanics of an echo chamber differ fundamentally from an epistemic bubble when processing conflicting external evidence?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It relies primarily on tacit knowledge rather than formal explicit credentials.",
+        "B": "It forms through accidental algorithmic exclusion rather than active trust manipulation.",
+        "C": "It lacks internal peer recognition while demonstrating high interactional domain expertise.",
+        "D": "It actively pre-discredits external sources rather than merely omitting them."
+      },
+      "correct_option_label": "D",
+      "explanation": "An echo chamber actively discredits outside sources in advance; an epistemic bubble merely leaves them out.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q5",
+      "question_text": "From an epistemological standpoint, why does an expert's historical track record fail to reliably signal genuine domain expertise in fields like political forecasting?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Interactional expertise prevents experts from generating verifiable empirical predictions over extended durations.",
+        "B": "Tacit knowledge cannot be evaluated using observational track records without direct apprenticeship.",
+        "C": "Credentials and peer citations inherently supersede empirical performance in non-technical domains.",
+        "D": "The domain lacks rapid, unambiguous feedback required to isolate skill from chance."
+      },
+      "correct_option_label": "D",
+      "explanation": "Political forecasting lacks quick, clear feedback, so track records can't separate skill from luck.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q6",
+      "question_text": "A science journalist cannot personally run a particle physics experiment but has spent years interviewing physicists and can discuss their findings fluently enough to hold expert-level conversations with them. What type of expertise does the journalist possess?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Contributory expertise, demonstrated by directly performing the technical work",
+        "B": "Interactional expertise, gained by absorbing the field's language without doing the work",
+        "C": "Experiential expertise, gained through lived personal experience with the problem",
+        "D": "Credential-based expertise, demonstrated through formal degrees and licenses"
+      },
+      "correct_option_label": "B",
+      "explanation": "Fluency in a field's language without doing the work is interactional expertise.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q7",
+      "question_text": "From a theoretical perspective, how is tacit expertise fundamentally distinguished from explicit expertise?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It relies on peer consensus rather than direct environmental feedback.",
+        "B": "It requires credentialed board certification rather than documented field experience.",
+        "C": "It enables non-practitioners to evaluate experts without performing underlying work.",
+        "D": "It develops through practical immersion rather than rule-based written manuals."
+      },
+      "correct_option_label": "D",
+      "explanation": "Tacit expertise is built through practical immersion, not written rules.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q8",
+      "question_text": "A student with no background in nutrition wants to evaluate conflicting online claims about a new diet trend without becoming a nutrition expert herself. Which skill does she most need to develop?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Meta-expertise, the skill of judging experts without being an expert oneself",
+        "B": "Tacit expertise, developed only through years of personal practice",
+        "C": "Experiential expertise, gained from living with a chronic condition",
+        "D": "Contributory expertise, built by directly performing nutrition research"
+      },
+      "correct_option_label": "A",
+      "explanation": "Judging experts without being one is meta-expertise.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q9",
+      "question_text": "Why do formal credentials and peer recognition frequently fail as reliable proxies for an expert's real-time operational competence?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "They rely on quantitative metrics that misrepresent an individual's explicit knowledge base.",
+        "B": "They replace direct domain expertise with subjective evaluations provided by non-expert peers.",
+        "C": "They capture past learning or social conformity rather than present tacit performance.",
+        "D": "They reflect interactional expertise while ignoring whether basic formal training occurred."
+      },
+      "correct_option_label": "C",
+      "explanation": "Credentials and peer recognition reflect past learning or social conformity, not current hands-on performance.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q10",
+      "question_text": "When exercising meta-expertise to evaluate claims grounded in generalized expert consensus, a critical thinker must analyze three core structural dimensions of authority. Which set of inquiries directly addresses these essential dimensions?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Identifying specific expert identities, verifying their precise domain specificity, and scrutinizing trust networks.",
+        "B": "Evaluating formal institutional credentials, counting peer citations, and assessing overall career longevity.",
+        "C": "Analyzing inherent cognitive biases, auditing external financial incentives, and checking consensus alignment.",
+        "D": "Measuring historic prediction accuracy, assessing task feedback speed, and examining pattern recognition capabilities."
+      },
+      "correct_option_label": "A",
+      "explanation": "When told 'the experts say', ask: which experts, expert in what exactly, and how did you come to trust them.",
+      "module": 5
+    }
+  ]
+}
