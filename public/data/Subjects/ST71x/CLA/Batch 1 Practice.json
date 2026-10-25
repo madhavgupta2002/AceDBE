@@ -1,0 +1,778 @@
+{
+  "exam_metadata": {
+    "subject_name": "Family Business Strategy",
+    "exam_date": "Batch 1"
+  },
+  "questions": [
+    {
+      "question_id": "M1-Q1",
+      "question_text": "In Systems Theory, which of the following best describes a family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A completely closed system with no interaction with the external environment",
+        "B": "A system driven only by customer feedback",
+        "C": "A system in which family, ownership, and management are interconnected",
+        "D": "A system where ownership and management always remain separate"
+      },
+      "correct_option_label": "C",
+      "explanation": "Correct answer: A system in which family, ownership, and management are interconnected.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q2",
+      "question_text": "In the framework discussed, which of the following comes immediately after family involvement?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Family firm outcomes",
+        "B": "Professionalisation",
+        "C": "Family behavioural disposition",
+        "D": "Economic performance"
+      },
+      "correct_option_label": "C",
+      "explanation": "Correct answer: Family behavioural disposition.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q3",
+      "question_text": "Which of the following is NOT one of the three core dimensions of ownership competence?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Matching competence",
+        "B": "Governance competence",
+        "C": "Timing competence",
+        "D": "Marketing competence"
+      },
+      "correct_option_label": "D",
+      "explanation": "Correct answer: Marketing competence.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q4",
+      "question_text": "Which of the following best describes the role of governance in this framework?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It helps align family goals with business goals",
+        "B": "It focuses only on increasing financial returns",
+        "C": "It refers only to family ownership of the firm",
+        "D": "It represents the firm’s physical and financial assets"
+      },
+      "correct_option_label": "A",
+      "explanation": "Correct answer: It helps align family goals with business goals.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q5",
+      "question_text": "Which type of capital refers to the relationships and connections a family builds with employees, suppliers, customers, and the wider community?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Human capital",
+        "B": "Financial capital",
+        "C": "Heritage capital",
+        "D": "Social capital"
+      },
+      "correct_option_label": "D",
+      "explanation": "Correct answer: Social capital.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q6",
+      "question_text": "Which of the following is an example of a family-oriented non-economic goal?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Improving operational performance",
+        "B": "Increasing the firm’s market share",
+        "C": "Maintaining family harmony and reputation",
+        "D": "Expanding into a new geographic market"
+      },
+      "correct_option_label": "C",
+      "explanation": "Correct answer: Maintaining family harmony and reputation.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q7",
+      "question_text": "Which of the following best explains the longevity of many family firms discussed in this session?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A strong focus on short-term quarterly returns",
+        "B": "Complete avoidance of professional managers",
+        "C": "Reliance only on financial capital",
+        "D": "A combination of intergenerational continuity, adaptability, and long-term investment"
+      },
+      "correct_option_label": "D",
+      "explanation": "Correct answer: A combination of intergenerational continuity, adaptability, and long-term investment.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q8",
+      "question_text": "Which of the following best reflects a key theme from the session?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Industrialisation replaced family businesses with professionally managed firms",
+        "B": "Family firms during the industrial era operated only within local markets",
+        "C": "Industrial family firms avoided involvement in infrastructure and finance",
+        "D": "Family firms played a major role in industrial capitalism and were often closely connected with national political developments"
+      },
+      "correct_option_label": "D",
+      "explanation": "Correct answer: Family firms played a major role in industrial capitalism and were often closely connected with national political developments.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q9",
+      "question_text": "What role did the hundi play in pre-colonial and early colonial India?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It functioned as an early transferable bill of exchange",
+        "B": "It was used only for local cash payments",
+        "C": "It was a government-issued tax document",
+        "D": "It was a form of family inheritance"
+      },
+      "correct_option_label": "A",
+      "explanation": "Correct answer: It functioned as an early transferable bill of exchange.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q10",
+      "question_text": "According to the session, what does “saakh” primarily refer to?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Formal legal ownership",
+        "B": "Religious obligation",
+        "C": "Reputational trust",
+        "D": "Political influence"
+      },
+      "correct_option_label": "C",
+      "explanation": "Correct answer: Reputational trust.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q11",
+      "question_text": "What was a key feature of the Managing Agency System?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Managing agents controlled several companies while contributing only a small share of the risk capital",
+        "B": "Managing agents owned all the capital of the companies they controlled",
+        "C": "Managing agents were appointed only by the government",
+        "D": "Managing agents were prohibited from handling day-to-day operations"
+      },
+      "correct_option_label": "A",
+      "explanation": "Correct answer: Managing agents controlled several companies while contributing only a small share of the risk capital.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q12",
+      "question_text": "Which of the following was a common response of Indian family businesses to liberalisation after 1991?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Reducing professional management",
+        "B": "Restructuring businesses and professionalising management",
+        "C": "Avoiding public capital markets entirely",
+        "D": "Returning to closely held family-only operations"
+      },
+      "correct_option_label": "B",
+      "explanation": "Correct answer: Restructuring businesses and professionalising management.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q13",
+      "question_text": "How did many Indian family business groups respond to the regulatory constraints of the License Raj?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "They completely withdrew from regulated industries",
+        "B": "They avoided diversification and remained in a single sector",
+        "C": "They relied only on foreign capital for expansion",
+        "D": "They navigated licensing rules, diversified into accessible sectors, and restructured ownership"
+      },
+      "correct_option_label": "D",
+      "explanation": "Correct answer: They navigated licensing rules, diversified into accessible sectors, and restructured ownership.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q14",
+      "question_text": "Which of the following is highlighted as a major social contribution of family firms?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Avoiding investment in social causes",
+        "B": "Reducing employment in smaller towns",
+        "C": "Supporting employment, philanthropy, and community development",
+        "D": "Focusing only on shareholder returns"
+      },
+      "correct_option_label": "C",
+      "explanation": "Correct answer: Supporting employment, philanthropy, and community development.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q15",
+      "question_text": "What was one of the key findings of the Anderson and Reeb 2003 study?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Family firms consistently underperformed non-family firms",
+        "B": "Family ownership had no relationship with firm performance",
+        "C": "Family firms performed better only when managed by outside professionals",
+        "D": "Family firms performed better on average than non-family firms"
+      },
+      "correct_option_label": "D",
+      "explanation": "Correct answer: Family firms performed better on average than non-family firms.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q16",
+      "question_text": "According to the alignment–entrenchment trade-off, when is family firm performance likely to be strongest?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "When family ownership is moderate",
+        "B": "When family ownership is extremely low",
+        "C": "When family ownership is completely absent",
+        "D": "When family control is maximised at all costs"
+      },
+      "correct_option_label": "A",
+      "explanation": "Correct answer: When family ownership is moderate.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q17",
+      "question_text": "Which of the following is identified as an important firm-level driver of longevity in family businesses?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Avoiding succession planning",
+        "B": "Strong governance and well-planned succession",
+        "C": "Frequently changing ownership structures",
+        "D": "Relying only on family members for management"
+      },
+      "correct_option_label": "B",
+      "explanation": "Correct answer: Strong governance and well-planned succession.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q18",
+      "question_text": "Which of the following best represents strategic control in a family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Deciding which suppliers to work with on a daily basis",
+        "B": "Determining the long-term direction and future scope of the business",
+        "C": "Managing employee attendance and daily tasks",
+        "D": "Monitoring routine operational processes"
+      },
+      "correct_option_label": "B",
+      "explanation": "Correct answer: Determining the long-term direction and future scope of the business.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q19",
+      "question_text": "Match the following factors to their descriptions:\n\nOptions:\n- Political stability\n- Consolidated ownership\n- Professionalisation\n- Flexible successor selection\n- Craft and heritage sectors\n- Predictable inheritance laws\n- Succession planning\n- Family governance\n\nMatches:\n- Supports smoother transfer of ownership\n- Creates structures such as family councils and constitutions\n- Helps ensure leadership continuity across generations\n- Reduces sudden disruptions to the business environment\n- Helps preserve family control and capital\n- Brings non-family expertise into management\n- Expands the pool of capable future leaders\n- Benefit from slowly changing skills and production methods",
+      "question_type": "SUBJECTIVE",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Answer:\nSupports smoother transfer of ownership → Predictable inheritance laws\nCreates structures such as family councils and constitutions → Family governance\nHelps ensure leadership continuity across generations → Succession planning\nReduces sudden disruptions to the business environment → Political stability\nHelps preserve family control and capital → Consolidated ownership\nBrings non-family expertise into management → Professionalisation\nExpands the pool of capable future leaders → Flexible successor selection\nBenefit from slowly changing skills and production methods → Craft and heritage sectors",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q20",
+      "question_text": "Which of the following factors is highlighted as contributing to the resilience of family firms during crises?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Higher dependence on short-term market sentiment",
+        "B": "Greater emphasis on rapid expansion during downturns",
+        "C": "Stronger relationships, disciplined capital allocation, and better access to credit",
+        "D": "Avoidance of all restructuring decisions"
+      },
+      "correct_option_label": "C",
+      "explanation": "Correct answer: Stronger relationships, disciplined capital allocation, and better access to credit.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q21",
+      "question_text": "Which statement best describes the Entrepreneurial Family Galaxy?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It places the family at the centre and views different entities as vehicles serving different family objectives",
+        "B": "It focuses only on the family’s main operating company",
+        "C": "It refers only to the financial investments made by a family",
+        "D": "It explains how family members compete for ownership"
+      },
+      "correct_option_label": "A",
+      "explanation": "Correct answer: It places the family at the centre and views different entities as vehicles serving different family objectives.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q22",
+      "question_text": "Categorize the following companies into the four ownership and management quadrants:\n\nOptions:\n- Mahindra\n- Reliance\n- Apollo Hospitals\n- Marico\n- Wipro\n- TCS\n- Suzlon\n- Max Financial\n\nCategories:\n- High family ownership + family managed\n- High family ownership + professionally managed\n- Low family ownership + family managed\n- Low family ownership + professionally managed",
+      "question_type": "SUBJECTIVE",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Answer:\nHigh family ownership + family managed → Reliance, Apollo Hospitals, Suzlon\nHigh family ownership + professionally managed → Marico, Wipro, TCS\nLow family ownership + family managed → Mahindra\nLow family ownership + professionally managed → Max Financial",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q23",
+      "question_text": "Which of the following is a key strength of family businesses discussed in this session?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A strong focus on short-term quarterly performance",
+        "B": "Greater dependence on external investors",
+        "C": "A long-term perspective supported by patient capital",
+        "D": "Frequent changes in ownership and leadership"
+      },
+      "correct_option_label": "C",
+      "explanation": "Correct answer: A long-term perspective supported by patient capital.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q24",
+      "question_text": "Which of the following is most likely to become a weakness in a family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Long-term commitment to the organisation",
+        "B": "Deep relationships with employees and customers",
+        "C": "Strong knowledge of the business",
+        "D": "Excessive dependence on the founder for key decisions"
+      },
+      "correct_option_label": "D",
+      "explanation": "Correct answer: Excessive dependence on the founder for key decisions.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q25",
+      "question_text": "Which of the following best distinguishes a family business from a non-family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Family businesses always avoid external professionals",
+        "B": "Family businesses are typically guided by long-term family values and succession considerations",
+        "C": "Non-family businesses do not focus on shareholder value",
+        "D": "Family businesses cannot raise debt"
+      },
+      "correct_option_label": "B",
+      "explanation": "Correct answer: Family businesses are typically guided by long-term family values and succession considerations.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q26",
+      "question_text": "Which of the following best reflects Stewardship Theory in a family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A manager focuses mainly on maximising personal rewards",
+        "B": "An owner and manager always have conflicting goals",
+        "C": "A manager acts in the long-term interests of the business and aligns with the family’s goals",
+        "D": "A family member automatically eliminates all agency costs"
+      },
+      "correct_option_label": "C",
+      "explanation": "Correct answer: A manager acts in the long-term interests of the business and aligns with the family’s goals.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q27",
+      "question_text": "According to Stakeholder Theory, which of the following should a firm consider when making decisions?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Only the interests of shareholders, suppliers, and employees",
+        "B": "Only the interests of family members and customers",
+        "C": "Only short-term financial returns",
+        "D": "The interests of employees, customers, suppliers, owners, and other stakeholders"
+      },
+      "correct_option_label": "D",
+      "explanation": "Correct answer: The interests of employees, customers, suppliers, owners, and other stakeholders.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q28",
+      "question_text": "Which of the following is NOT part of the FIBER framework?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Family control and influence",
+        "B": "Financial profitability",
+        "C": "Binding social ties",
+        "D": "Identification with the family business"
+      },
+      "correct_option_label": "B",
+      "explanation": "Correct answer: Financial profitability.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q29",
+      "question_text": "According to Transaction Cost Economics, when is a firm more likely to perform an activity internally rather than outsource it?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "When outsourcing is always faster",
+        "B": "When performing the activity internally is less costly than using the external market",
+        "C": "When the firm wants to avoid all external relationships",
+        "D": "When the activity involves only financial assets"
+      },
+      "correct_option_label": "B",
+      "explanation": "Correct answer: When performing the activity internally is less costly than using the external market.",
+      "module": 1
+    },
+    {
+      "question_id": "M1-Q30",
+      "question_text": "In the Resource-Based View of family business, what does “familiness” refer to?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A unique bundle of resources created through the interaction of the family and the business",
+        "B": "The number of family members working in the firm",
+        "C": "The financial wealth owned by the family",
+        "D": "The legal ownership structure of the firm"
+      },
+      "correct_option_label": "A",
+      "explanation": "Correct answer: A unique bundle of resources created through the interaction of the family and the business.",
+      "module": 1
+    },
+    {
+      "question_id": "M3-Q1",
+      "question_text": "Which of the following best explains why the three-generation rule should be interpreted with caution?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "All family businesses survive beyond the third generation",
+        "B": "Definitions of survival may ignore changes in ownership, management, or business structure",
+        "C": "Family ownership always remains concentrated across generations",
+        "D": "Third-generation family members always prefer to leave the business"
+      },
+      "correct_option_label": "B",
+      "explanation": "Correct answer: Definitions of survival may ignore changes in ownership, management, or business structure.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q2",
+      "question_text": "Which of the following is one possible pathway for transferring a family business to the next generation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Closing the business before succession",
+        "B": "Dividing the business among family members",
+        "C": "Removing all governance structures",
+        "D": "Retaining all decision-making with the incumbent"
+      },
+      "correct_option_label": "B",
+      "explanation": "Correct answer: Dividing the business among family members.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q3",
+      "question_text": "How does the role of the successor typically change during the succession process?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It remains unchanged until the final handover",
+        "B": "It immediately replaces the incumbent's role",
+        "C": "It is limited only to ownership decisions",
+        "D": "It gradually increases as the incumbent’s role decreases"
+      },
+      "correct_option_label": "D",
+      "explanation": "Correct answer: It gradually increases as the incumbent’s role decreases.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q4",
+      "question_text": "Which of the following best describes a complete succession in a family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Transfer of day-to-day management only",
+        "B": "Transfer of ownership only",
+        "C": "Transfer of both ownership control and management control",
+        "D": "Appointment of a professional manager without any change in control"
+      },
+      "correct_option_label": "C",
+      "explanation": "Correct answer: Transfer of both ownership control and management control.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q5",
+      "question_text": "Which type of incumbent is most likely to support a smooth succession by stepping back while continuing to mentor the successor?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Ambassador",
+        "B": "Emperor",
+        "C": "General",
+        "D": "Controller"
+      },
+      "correct_option_label": "A",
+      "explanation": "Correct answer: Ambassador.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q6",
+      "question_text": "Which succession path is most likely to help a successor build credibility through independent professional experience before joining the family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Parachuting directly to the top",
+        "B": "Inheriting ownership immediately",
+        "C": "Working outside and then returning",
+        "D": "Remaining only a passive owner"
+      },
+      "correct_option_label": "C",
+      "explanation": "Correct answer: Working outside and then returning.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q7",
+      "question_text": "What type of commitment arises when a successor joins because of family expectations or a sense of obligation?",
+      "question_type": "SUBJECTIVE",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Answer: Normative commitment",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q8",
+      "question_text": "What term describes the continued influence of the founder even after leadership has been transferred?",
+      "question_type": "SUBJECTIVE",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Answer: Founder's shadow",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q9",
+      "question_text": "Which of the following is most important for a successor to earn credibility in the family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Family membership alone",
+        "B": "Formal ownership alone",
+        "C": "Competence, commitment, and earned respect",
+        "D": "Immediate authority over all employees"
+      },
+      "correct_option_label": "C",
+      "explanation": "Correct answer: Competence, commitment, and earned respect.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q10",
+      "question_text": "What type of incumbent plans the exit and continues as a mentor or advisor without trying to regain control?",
+      "question_type": "SUBJECTIVE",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Answer: Ambassador",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q11",
+      "question_text": "What type of succession passes the business to the eldest child?",
+      "question_type": "SUBJECTIVE",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Answer: Primogeniture",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q12",
+      "question_text": "What type of succession involves ownership being shared among multiple family members?",
+      "question_type": "SUBJECTIVE",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Answer: Coparcenary",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q13",
+      "question_text": "What is the term for transferring the business to the next generation without dividing it?",
+      "question_type": "SUBJECTIVE",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Answer: Undivided transfer",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q14",
+      "question_text": "What do we call the person who currently leads the family business and is expected to transfer control?",
+      "question_type": "SUBJECTIVE",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Answer: Incumbent",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q15",
+      "question_text": "A successor is highly willing to join the family business but currently lacks the required competence and experience. How would this person be classified?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Not yet a fit",
+        "B": "Ready leader",
+        "C": "Eager apprentice",
+        "D": "Reluctant talent"
+      },
+      "correct_option_label": "C",
+      "explanation": "Correct answer: Eager apprentice.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q16",
+      "question_text": "What term describes an incumbent expecting the successor to behave and lead exactly like them?",
+      "question_type": "SUBJECTIVE",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Answer: Clone syndrome",
+      "module": 3
+    },
+    {
+      "question_id": "M5-Q1",
+      "question_text": "What does professionalisation primarily change in a family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Who owns the business",
+        "B": "How decisions are made",
+        "C": "The family name",
+        "D": "The industry in which the firm operates"
+      },
+      "correct_option_label": "B",
+      "explanation": "Correct answer: How decisions are made.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q2",
+      "question_text": "Which of the following is a key benefit of professionalisation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Greater dependence on informal decisions",
+        "B": "Reduced access to outside capital",
+        "C": "Less transparency",
+        "D": "Merit-based talent management"
+      },
+      "correct_option_label": "D",
+      "explanation": "Correct answer: Merit-based talent management.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q3",
+      "question_text": "Which of the following best defines a professional manager?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A manager who uses expertise, objective criteria, and professional standards",
+        "B": "A manager who is not a family member",
+        "C": "A manager who relies mainly on personal relationships",
+        "D": "A manager who holds ownership shares"
+      },
+      "correct_option_label": "A",
+      "explanation": "Correct answer: A manager who uses expertise, objective criteria, and professional standards.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q4",
+      "question_text": "Which of the following is one of the variables that shapes the professionalisation process?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Weather conditions",
+        "B": "Family characteristics",
+        "C": "Personal hobbies of employees",
+        "D": "Office location alone"
+      },
+      "correct_option_label": "B",
+      "explanation": "Correct answer: Family characteristics.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q5",
+      "question_text": "Which of the following is NOT one of the three paths to professionalisation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Avoiding all formal management roles",
+        "B": "Developing capable family members",
+        "C": "Promoting non-family insiders",
+        "D": "Hiring external professionals"
+      },
+      "correct_option_label": "A",
+      "explanation": "Correct answer: Avoiding all formal management roles.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q6",
+      "question_text": "Which of the following is one of the types of professionalised family firms discussed in the module?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Temporary family firm",
+        "B": "Informal public firm",
+        "C": "Independent ownership firm",
+        "D": "Hybrid professional firm"
+      },
+      "correct_option_label": "D",
+      "explanation": "Correct answer: Hybrid professional firm.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q7",
+      "question_text": "Why is innovation described as a paradox in family businesses?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Family firms never invest in innovation",
+        "B": "Family control can both support and restrict innovation",
+        "C": "Innovation is only relevant to non-family firms",
+        "D": "Family firms always prefer radical innovation"
+      },
+      "correct_option_label": "B",
+      "explanation": "Correct answer: Family control can both support and restrict innovation.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q8",
+      "question_text": "Which theory views internationalisation as a gradual process of learning and increasing commitment?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Network Model",
+        "B": "Uppsala Model",
+        "C": "Springboard Theory",
+        "D": "Institutional View"
+      },
+      "correct_option_label": "B",
+      "explanation": "Correct answer: Uppsala Model.",
+      "module": 5
+    },
+    {
+      "question_id": "M5-Q9",
+      "question_text": "Which entry mode generally involves the highest level of control and resource commitment?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Exporting",
+        "B": "Licensing",
+        "C": "Joint venture",
+        "D": "Wholly owned subsidiary"
+      },
+      "correct_option_label": "D",
+      "explanation": "Correct answer: Wholly owned subsidiary.",
+      "module": 5
+    }
+  ]
+}
