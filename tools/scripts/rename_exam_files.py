@@ -7,7 +7,7 @@ import json
 import os
 from pathlib import Path
 
-SUBJECTS_DIR = Path(__file__).parent / "public" / "data" / "Subjects"
+SUBJECTS_DIR = Path(__file__).resolve().parents[2] / "public" / "data" / "Subjects"
 
 
 def main():
