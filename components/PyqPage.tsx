@@ -16,26 +16,45 @@ import { printExamPaper } from '@/lib/printExam';
 import CbtExam from './CbtExam';
 import { stashCbtReview, toReviewData } from '@/lib/cbtReview';
 
+const ENTRANCE: SubjectPyqInfo = {
+  code: 'ENTRANCE',
+  name: 'BBA-DBE Entrance Test',
+  term: 0,
+  hasFinalExam: false,
+  papersByCycle: {},
+  totalAvailable: 0,
+  totalExpected: 0,
+};
+
+const entranceYear = (p: ExamPaperInfo) => p.date.match(/\d{4}/)?.[0] ?? p.date;
+// "10 August 2024" → "10 Aug"; a bare year has no day, so call it a paper
+const shortEntranceDate = (p: ExamPaperInfo) => {
+  const m = p.date.match(/^(\d{1,2})\s+([A-Za-z]{3})/);
+  return m ? `${m[1]} ${m[2]}` : 'Paper';
+};
+
 export default function PyqPage() {
   const router = useRouter();
 
   const [termGroups, setTermGroups] = useState<TermPyqGroup[]>([]);
   const [loading, setLoading] = useState(true);
-  const [selectedTerm, setSelectedTerm] = useState<number | 'all'>('all');
+  const [selectedTerm, setSelectedTerm] = useState<number | 'all' | 'entrance'>('all');
   const [actionType, setActionType] = useState<'quiz' | 'print' | 'cbt'>('quiz');
   const [cbtTarget, setCbtTarget] = useState<{ subject: SubjectPyqInfo; paper: ExamPaperInfo } | null>(null);
   const [withAnswers, setWithAnswers] = useState(false);
   const [printingPaperKey, setPrintingPaperKey] = useState<string | null>(null);
+  const [entrancePapers, setEntrancePapers] = useState<ExamPaperInfo[]>([]);
 
   useEffect(() => {
     async function loadData() {
       try {
         setLoading(true);
-        const res = await fetch('/api/pyqs');
+        const [res, entranceRes] = await Promise.all([fetch('/api/pyqs'), fetch('/api/entrance')]);
         if (res.ok) {
           const data: TermPyqGroup[] = await res.json();
           setTermGroups(data);
         }
+        if (entranceRes.ok) setEntrancePapers(await entranceRes.json());
       } catch (err) {
         console.error('Failed to load PYQ data:', err);
       } finally {
@@ -44,39 +63,6 @@ export default function PyqPage() {
     }
     loadData();
   }, []);
-
-  // Compute total statistics
-  const totalPapers = termGroups.reduce((acc, group) => {
-    return (
-      acc +
-      group.subjects.reduce((sAcc, subj) => {
-        return (
-          sAcc +
-          Object.values(subj.papersByCycle).reduce(
-            (pAcc, pList) => pAcc + pList.length,
-            0
-          )
-        );
-      }, 0)
-    );
-  }, 0);
-
-  const totalQuestions = termGroups.reduce((acc, group) => {
-    return (
-      acc +
-      group.subjects.reduce((sAcc, subj) => {
-        return (
-          sAcc +
-          Object.values(subj.papersByCycle).reduce(
-            (pAcc, pList) =>
-              pAcc +
-              pList.reduce((qAcc, paper) => qAcc + paper.questionCount, 0),
-            0
-          )
-        );
-      }, 0)
-    );
-  }, 0);
 
   // Handle clicking a paper
   const handlePaperClick = async (
@@ -127,8 +113,58 @@ export default function PyqPage() {
     }
   };
 
+  const renderPaperButton = (subject: SubjectPyqInfo, paper: ExamPaperInfo) => {
+    const key = `${subject.code}-${paper.filename}`;
+    const isPrinting =
+      printingPaperKey === key;
+
+    return (
+      <button
+        key={paper.filename}
+        type="button"
+        disabled={isPrinting || (actionType === 'cbt' && !paper.cbt)}
+        onClick={() =>
+          handlePaperClick(subject, paper)
+        }
+        className={`w-full max-w-[105px] px-1.5 py-1 rounded-md border font-semibold text-[10.5px] flex items-center justify-center gap-1 transition-all duration-200 group/btn shadow-sm ${
+          actionType === 'quiz'
+            ? 'bg-emerald-950/50 hover:bg-emerald-600 border-emerald-700/50 text-emerald-200 hover:text-white'
+            : actionType === 'cbt'
+            ? paper.cbt
+              ? 'bg-violet-950/50 hover:bg-violet-600 border-violet-700/50 text-violet-200 hover:text-white'
+              : 'bg-slate-900/40 border-slate-800 text-slate-600 cursor-not-allowed'
+            : 'bg-sky-950/50 hover:bg-sky-600 border-sky-700/50 text-sky-200 hover:text-white'
+        }`}
+        title={
+          actionType === 'cbt'
+            ? paper.cbt
+              ? `CBT Exam: ${subject.code} (${paper.date}) - ${paper.cbt.durationMin} min, ${paper.cbt.questionCount} questions`
+              : 'This paper has no objective questions'
+            : `${actionType === 'quiz' ? 'Take Quiz' : 'Print Paper'}: ${subject.code} (${paper.date})`
+        }
+      >
+        {isPrinting ? (
+          <Loader2 className="w-3 h-3 animate-spin" />
+        ) : actionType === 'cbt' ? (
+          <MonitorPlay className="w-3 h-3 shrink-0 opacity-70 group-hover/btn:opacity-100" />
+        ) : actionType === 'quiz' ? (
+          <PlayCircle className="w-3 h-3 shrink-0 opacity-70 group-hover/btn:opacity-100" />
+        ) : (
+          <Printer className="w-3 h-3 shrink-0 opacity-70 group-hover/btn:opacity-100" />
+        )}
+        <span className="truncate">
+          {paper.displayDate}
+        </span>
+      </button>
+    );
+  };
+
+  const entranceYears = Array.from(new Set(entrancePapers.map(entranceYear))).sort();
+
   const displayedGroups =
-    selectedTerm === 'all'
+    selectedTerm === 'entrance'
+      ? []
+      : selectedTerm === 'all'
       ? termGroups
       : termGroups.filter(g => g.term === selectedTerm);
 
@@ -139,16 +175,10 @@ export default function PyqPage() {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
             <h1 className="text-xl sm:text-2xl font-bold text-white tracking-tight">Previous year papers</h1>
-            <p className="mt-1 text-xs text-slate-400">
-              <span className="text-slate-200 font-semibold">{totalPapers}</span> papers ·{' '}
-              <span className="text-slate-200 font-semibold">{totalQuestions.toLocaleString()}</span> questions · exams held 3 times a year
-            </p>
           </div>
 
           {/* Action Mode Toggle Card */}
           <div className="flex flex-col gap-1.5 min-w-[240px] sm:min-w-[260px]">
-            <span className="text-[11px] text-slate-400">When you click a paper</span>
-
             {/* Main Toggle: Quiz vs Print */}
             <div className="grid grid-cols-3 p-0.5 bg-slate-800/90 rounded-lg border border-slate-700/60 gap-1">
               <button
@@ -238,6 +268,18 @@ export default function PyqPage() {
             >
               All ({termGroups.length})
             </button>
+            {entrancePapers.length > 0 && (
+              <button
+                onClick={() => setSelectedTerm('entrance')}
+                className={`px-2.5 py-1 rounded-md text-[11px] font-bold transition-all duration-200 shrink-0 ${
+                  selectedTerm === 'entrance'
+                    ? 'bg-amber-600 text-white shadow-sm border border-amber-500'
+                    : 'bg-slate-800/60 text-slate-400 hover:text-white hover:bg-slate-800 border border-slate-800'
+                }`}
+              >
+                Entrance
+              </button>
+            )}
             {termGroups.map(group => {
               const groupPapers = group.subjects.reduce(
                 (sum, s) =>
@@ -284,6 +326,59 @@ export default function PyqPage() {
       ) : (
         /* Term Groups Tables */
         <div className="space-y-4 sm:space-y-5">
+          {(selectedTerm === 'all' || selectedTerm === 'entrance') && entranceYears.length > 0 && (
+            <div className="bg-slate-900/60 border border-slate-800 rounded-xl overflow-hidden shadow-md backdrop-blur-sm">
+              <div className="px-3.5 sm:px-4 py-2 bg-slate-800/50 border-b border-slate-700/60 flex flex-wrap items-center justify-between gap-2">
+                <div className="flex items-center gap-2.5">
+                  <span className="flex items-center justify-center w-6 h-6 rounded-lg bg-amber-500/20 text-amber-300 font-black text-[10px] border border-amber-500/30">
+                    EN
+                  </span>
+                  <h2 className="text-sm sm:text-base font-bold text-white tracking-tight">Admission Entrance Test</h2>
+                </div>
+                <span className="text-[11px] text-slate-400">
+                  {entrancePapers[0].questionCount} questions
+                  {entrancePapers[0].cbt && <> · {entrancePapers[0].cbt.durationMin} min</>}
+                </span>
+              </div>
+              <div className="overflow-x-auto">
+                <table className="w-full text-left border-collapse min-w-[650px]">
+                  <thead>
+                    <tr className="border-b border-slate-800/80 bg-slate-900/80 text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                      <th className="py-2 px-3 sm:px-4 w-[240px]">Exam</th>
+                      {entranceYears.map(y => (
+                        <th key={y} className="py-2 px-2 text-center min-w-[90px]">
+                          <div className="text-slate-300 font-semibold">{y}</div>
+                        </th>
+                      ))}
+                      <th className="py-2 px-2.5 text-center w-[75px]">Papers</th>
+                    </tr>
+                  </thead>
+                  <tbody className="text-xs">
+                    <tr className="hover:bg-slate-800/30 transition-colors">
+                      <td className="py-1.5 px-3 sm:px-4">
+                        <div className="font-mono font-bold text-xs text-amber-400">ENTRANCE</div>
+                        <span className="text-slate-300 font-medium text-[11px]">BBA-DBE Entrance Test</span>
+                      </td>
+                      {entranceYears.map(y => (
+                        <td key={y} className="py-1 px-1.5 text-center align-middle">
+                          <div className="flex flex-col gap-1 items-center justify-center">
+                            {entrancePapers
+                              .filter(p => entranceYear(p) === y)
+                              .map(p => renderPaperButton(ENTRANCE, { ...p, displayDate: shortEntranceDate(p) }))}
+                          </div>
+                        </td>
+                      ))}
+                      <td className="py-1 px-2.5 text-center">
+                        <span className="inline-flex items-center px-1.5 rounded text-[10px] font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30">
+                          {entrancePapers.length}
+                        </span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          )}
           {displayedGroups.map(group => (
             <div
               key={group.term}
@@ -369,51 +464,7 @@ export default function PyqPage() {
                               >
                                 {hasPaper ? (
                                   <div className="flex flex-col gap-1 items-center justify-center">
-                                    {papers.map(paper => {
-                                      const key = `${subject.code}-${paper.filename}`;
-                                      const isPrinting =
-                                        printingPaperKey === key;
-
-                                      return (
-                                        <button
-                                          key={paper.filename}
-                                          type="button"
-                                          disabled={isPrinting || (actionType === 'cbt' && !paper.cbt)}
-                                          onClick={() =>
-                                            handlePaperClick(subject, paper)
-                                          }
-                                          className={`w-full max-w-[105px] px-1.5 py-1 rounded-md border font-semibold text-[10.5px] flex items-center justify-center gap-1 transition-all duration-200 group/btn shadow-sm ${
-                                            actionType === 'quiz'
-                                              ? 'bg-emerald-950/50 hover:bg-emerald-600 border-emerald-700/50 text-emerald-200 hover:text-white'
-                                              : actionType === 'cbt'
-                                              ? paper.cbt
-                                                ? 'bg-violet-950/50 hover:bg-violet-600 border-violet-700/50 text-violet-200 hover:text-white'
-                                                : 'bg-slate-900/40 border-slate-800 text-slate-600 cursor-not-allowed'
-                                              : 'bg-sky-950/50 hover:bg-sky-600 border-sky-700/50 text-sky-200 hover:text-white'
-                                          }`}
-                                          title={
-                                            actionType === 'cbt'
-                                              ? paper.cbt
-                                                ? `CBT Exam: ${subject.code} (${paper.date}) - ${paper.cbt.durationMin} min, ${paper.cbt.questionCount} questions`
-                                                : 'This paper has no objective questions'
-                                              : `${actionType === 'quiz' ? 'Take Quiz' : 'Print Paper'}: ${subject.code} (${paper.date})`
-                                          }
-                                        >
-                                          {isPrinting ? (
-                                            <Loader2 className="w-3 h-3 animate-spin" />
-                                          ) : actionType === 'cbt' ? (
-                                            <MonitorPlay className="w-3 h-3 shrink-0 opacity-70 group-hover/btn:opacity-100" />
-                                          ) : actionType === 'quiz' ? (
-                                            <PlayCircle className="w-3 h-3 shrink-0 opacity-70 group-hover/btn:opacity-100" />
-                                          ) : (
-                                            <Printer className="w-3 h-3 shrink-0 opacity-70 group-hover/btn:opacity-100" />
-                                          )}
-                                          <span className="truncate">
-                                            {paper.displayDate}
-                                          </span>
-                                        </button>
-                                      );
-                                    })}
+                                    {papers.map(paper => renderPaperButton(subject, paper))}
                                   </div>
                                 ) : (
                                   <span

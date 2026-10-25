@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import { useState } from 'react';
-import { ArrowLeft, Linkedin, Menu, X, GraduationCap, FileText, ClipboardList } from 'lucide-react';
+import { ArrowLeft, Linkedin, Menu, X, GraduationCap, FileText, ListChecks } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -14,7 +14,7 @@ interface HeaderProps {
 
 const NAV_LINKS = [
     { href: '/pyqs', label: 'PYQs', mobileLabel: 'Previous year papers', icon: FileText },
-    { href: '/entrance', label: 'Entrance', mobileLabel: 'Entrance test papers', icon: ClipboardList },
+    { href: '/tracker', label: 'Tracker', mobileLabel: 'Progress tracker', icon: ListChecks },
     { href: '/marks', label: 'Marks', mobileLabel: 'Marksheet', icon: GraduationCap },
 ];
 
