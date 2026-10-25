@@ -2,7 +2,7 @@ import json
 import os
 from pathlib import Path
 
-subjects_dir = Path(__file__).parent
+subjects_dir = Path(__file__).resolve().parents[2] / "public" / "data" / "Subjects"
 
 # Fix module type in all JSONs
 for json_file in subjects_dir.rglob("*.json"):
