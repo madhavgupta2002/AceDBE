@@ -1,0 +1,106 @@
+{
+  "exam_metadata": {
+    "subject_name": "Critical Thinking",
+    "exam_date": "Batch 1"
+  },
+  "questions": [
+    {
+      "question_id": "M3-Q1",
+      "question_text": "A strong argument can still be considered cogent only when its premises are true or well supported",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "A",
+      "explanation": "Correct answer: True.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q2",
+      "question_text": "A strong argument should consider evidence that contradicts its conclusion rather than relying only on supporting evidence",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "A",
+      "explanation": "Correct answer: True.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q3",
+      "question_text": "If evidence is factually correct, it automatically provides relevant support for the claim being made",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "B",
+      "explanation": "False. Evidence can be factually correct yet irrelevant to the claim; relevance has to be established separately.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q4",
+      "question_text": "Inductive arguments guarantee that their conclusions are true when the evidence is strong",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "B",
+      "explanation": "False. Even strong inductive arguments only make their conclusions probable, never guaranteed.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q5",
+      "question_text": "An argument can be logically valid even when its premises are false",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "A",
+      "explanation": "Correct answer: True.",
+      "module": 3
+    },
+    {
+      "question_id": "M3-Q6",
+      "question_text": "3.4.2 Match the Reasoning\n\nOptions:\n- Inductive Reasoning\n- Warrant\n- Validity\n- Strength\n- Deductive Reasoning\n\nPrompts:\n- The explanation that connects the evidence to the conclusion and shows why the evidence supports the claim\n- The degree to which the premises make an inductive conclusion likely to be true\n- A conclusion based on patterns or observations, where the conclusion is probable rather than certain\n- Reasoning that moves from a general rule or principle to a specific conclusion\n- A property of an argument where, if the premises are true, the conclusion must also be true",
+      "question_type": "SUBJECTIVE",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Answer:\nThe explanation that connects the evidence to the conclusion → Warrant\nThe degree to which the premises make an inductive conclusion likely → Strength\nA conclusion based on patterns or observations, probable rather than certain → Inductive Reasoning\nReasoning from a general rule to a specific conclusion → Deductive Reasoning\nIf the premises are true, the conclusion must also be true → Validity",
+      "module": 3
+    },
+    {
+      "question_id": "M4-Q1",
+      "question_text": "Match the following:\n- Seeking information that supports existing beliefs\n- Judging likelihood by what comes easily to mind\n- Deliberately shaping perceptions and behaviour at scale\n- The reasoning that connects evidence to a claim\n- An initial number influences later judgements",
+      "question_type": "SUBJECTIVE",
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Answer:\nSeeking information that supports existing beliefs → Confirmation\nJudging likelihood by what comes easily to mind → Availability\nDeliberately shaping perceptions and behaviour at scale → Propoganda\nThe reasoning that connects evidence to a claim → Warrant\nAn initial number influences later judgements → Anchoring",
+      "module": 4
+    }
+  ]
+}
