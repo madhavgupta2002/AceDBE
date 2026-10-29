@@ -6,9 +6,14 @@ async function runInFrames(func, args = []) {
   return results.flatMap(r => r.result || []);
 }
 
+// Auto answers from the AceDBE repo; anything typed in the textbox overrides per question.
 document.getElementById('fill').onclick = async () => {
-  let answers;
-  try { answers = JSON.parse(ta.value); } catch (e) { log.textContent = 'Invalid JSON: ' + e.message; return; }
+  let override = {};
+  if (ta.value.trim()) {
+    try { override = JSON.parse(ta.value); } catch (e) { log.textContent = 'Invalid JSON: ' + e.message; return; }
+  }
+  const answers = { ...auto, ...override };
+  if (!Object.keys(answers).length) { log.textContent = 'No detected answers and nothing pasted.'; return; }
   const res = await runInFrames(fillAnswers, [answers]);
   const total = res.reduce((t, r) => t + r.total, 0), done = res.reduce((t, r) => t + r.selected, 0);
   if (!total) { log.textContent = 'No questions found on this page.'; return; }
@@ -25,7 +30,7 @@ document.getElementById('submit').onclick = async () => {
 
 // Clipboard API can fail in popups; fall back to execCommand.
 async function copyText(text) {
-  try { await copyText(text); }
+  try { await navigator.clipboard.writeText(text); }
   catch { const t = document.createElement('textarea'); t.value = text; document.body.appendChild(t); t.select(); document.execCommand('copy'); t.remove(); }
 }
 
@@ -59,6 +64,91 @@ Questions:
 ${q.body}`);
   log.textContent = `Copied LLM prompt with ${q.count} question(s).`;
 };
+
+// ---- Auto-detection: subject from URL, module by best match, answers by string match ----
+
+const REPO = 'https://api.github.com/repos/madhavgupta2002/AceDBE/contents/public/data/Subjects';
+const status = document.getElementById('status');
+let auto = {};          // { "3": ["b"] } letters refer to the options as ordered on the page
+
+const words = s => String(s).toLowerCase().replace(/[^a-z0-9₹%.]+/g, ' ').split(' ').filter(w => w.length > 1);
+function sim(a, b) {   // Dice coefficient over word sets
+  const A = new Set(words(a)), B = new Set(words(b));
+  if (!A.size || !B.size) return 0;
+  let n = 0; A.forEach(w => B.has(w) && n++);
+  return 2 * n / (A.size + B.size);
+}
+
+async function getJSON(url) { const r = await fetch(url); if (!r.ok) throw new Error(`${r.status} ${url}`); return r.json(); }
+
+// Cached for 6h so the GitHub API (60 req/h unauthenticated) isn't hit on every open.
+async function loadSubject(code) {
+  const key = 'cla_' + code, c = (await chrome.storage.local.get(key))[key];
+  if (c && Date.now() - c.t < 6 * 3600e3) return c.data;
+  const folders = (await getJSON(REPO)).filter(f => f.type === 'dir' && (f.name === code || f.name.startsWith(code + '_')));
+  const data = { name: code, questions: [] };
+  for (const f of folders) {
+    for (const dir of ['CLA', 'Exam']) {   // CLA/MT-style quizzes also reuse exam questions
+      let files = [];
+      try { files = await getJSON(`${REPO}/${encodeURIComponent(f.name)}/${dir}`); } catch { continue; }
+      for (const file of files.filter(x => /\.json$/i.test(x.name))) {
+        const j = await getJSON(file.download_url);
+        data.name = j.exam_metadata?.subject_name || data.name;
+        (j.questions || []).forEach(q => !q.is_passage && q.options && Object.values(q.options).some(Boolean) && q.correct_option_label &&
+          data.questions.push({ ...q, src: `${f.name}/${dir}/${file.name}` }));
+      }
+    }
+  }
+  await chrome.storage.local.set({ [key]: { t: Date.now(), data } });
+  return data;
+}
+
+async function detect() {
+  try {
+    const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+    // The quiz lives in iframe#unit-iframe: its src carries the course id, its title is e.g. "3.8.1 CLA - 3".
+    const info = await runInFrames(() => { const f = document.getElementById('unit-iframe'); return [{ href: location.href, src: f?.src, title: f?.title }]; });
+    const urls = [...info.map(i => i.src), tab.url, ...info.map(i => i.href)].filter(Boolean).map(u => { try { return decodeURIComponent(u); } catch { return u; } });
+    const code = urls.map(u => (u.match(/[+:/]([A-Z]{2}\d{2}x)[+_/]/) || [])[1]).find(Boolean);
+    const batch = urls.map(u => (u.match(/\+[^+/]*_B(\d)\b/) || [])[1]).find(Boolean);
+    const title = info.map(i => i.title).find(Boolean) || tab.title || '';
+    const hintMod = (title.match(/CLA\s*-?\s*(\d+)/i) || [])[1];
+    if (!code) { status.textContent = 'No subject code in URL — paste answers manually.'; return; }
+    status.textContent = `Detected ${code}, loading answers…`;
+    const [subj, qs] = await Promise.all([loadSubject(code), runInFrames(extractQuestions)]);
+    if (!subj.questions.length) { status.textContent = `${code}: no CLA answers in repo yet.`; return; }
+    if (!qs.length) { status.textContent = `${subj.name} (${code}) — no questions on this page.`; return; }
+    const best = (q, pool) => pool.reduce((b, k) => { const s = sim(q.text + ' ' + q.options.join(' '), k.question_text + ' ' + Object.values(k.options).join(' ')); return s > b.s ? { s, k } : b; }, { s: 0 });
+    // Module = the one whose questions best match this page as a whole.
+    const groups = {};
+    subj.questions.forEach(k => (groups[`${k.src}|${k.module}`] ??= []).push(k));
+    let cands = Object.entries(groups);
+    if (hintMod) { const only = cands.filter(([g]) => g.includes('/CLA/') && g.endsWith('|' + hintMod)); if (only.length) cands = only; }
+    const score = ([g, pool]) => qs.reduce((t, q) => t + best(q, pool).s, 0) * (batch && (g.split('/')[0].endsWith('_B' + batch) || g.includes('Batch ' + batch)) ? 1.1 : 1);
+    const [gid, pool] = cands.sort((a, b) => score(b) - score(a))[0];
+    auto = {}; const lines = [];
+    for (const q of qs) {
+      const { s, k } = best(q, pool);
+      if (!k || s < 0.5) { lines.push(`Q${q.n}: ? no confident match`); continue; }
+      const labels = String(k.correct_option_label).split(/[,\s]+/).filter(l => k.options[l]);
+      const idx = labels.map(l => q.options.map((o, i) => [sim(o, k.options[l]) + (o.trim() === k.options[l].trim()), i]).sort((a, b) => b[0] - a[0])[0][1]);
+      if (!idx.length) { lines.push(`Q${q.n}: ? no answer key`); continue; }
+      auto[q.n] = idx.map(i => String.fromCharCode(97 + i));
+      lines.push(`Q${q.n}: ${auto[q.n].join(',')}  (${Math.round(s * 100)}% match)`);
+    }
+    const [src, mod] = gid.split('|');
+    status.textContent = `${subj.name} (${code}${batch ? ' B' + batch : ''}) · ${title ? title + ' · ' : ''}Module ${mod} · ${Object.keys(auto).length}/${qs.length} matched\n[${src}]`;
+    log.textContent = lines.join('\n');
+  } catch (e) { status.textContent = 'Auto-detect failed: ' + e.message; }
+}
+
+document.getElementById('hl').onclick = async () => {
+  if (!Object.keys(auto).length) { log.textContent = 'Nothing detected to highlight.'; return; }
+  const n = (await runInFrames(highlight, [auto])).reduce((a, b) => a + b, 0);
+  log.textContent = `Highlighted ${n} option(s). Selection unchanged.`;
+};
+
+detect();
 
 // ---- Functions below run inside each page frame (must be self-contained) ----
 
@@ -98,6 +188,27 @@ function fillAnswers(answers) {
     if (picked.length) { selected++; out.push(`Q${qn}: ✓ ${picked.join(' | ')}`); }
   });
   return { total: problems.length, selected, lines: out };
+}
+
+function highlight(answers) {
+  let n = 0;
+  const problems = [...document.querySelectorAll('.problem, .xblock-student_view-problem')]
+    .filter(p => p.querySelector('input[type=radio], input[type=checkbox]'))
+    .filter((p, _, all) => !all.some(o => o !== p && p.contains(o)));
+  problems.forEach((p, i) => {
+    const header = p.closest('.xblock')?.querySelector('h3, .problem-header') || p.querySelector('h3');
+    const m = header && header.textContent.match(/Question\s*(\d+)/i);
+    const inputs = [...p.querySelectorAll('input[type=radio], input[type=checkbox]')];
+    const labelEl = inp => inp.closest('label') || p.querySelector(`label[for="${inp.id}"]`) || inp.parentElement;
+    inputs.forEach(inp => labelEl(inp).style.removeProperty('outline'));
+    for (const l of answers[m ? m[1] : String(i + 1)] || []) {
+      const inp = inputs[l.charCodeAt(0) - 97];
+      if (!inp) continue;
+      Object.assign(labelEl(inp).style, { outline: '3px solid #22c55e', background: 'rgba(34,197,94,.15)', borderRadius: '4px' });
+      n++;
+    }
+  });
+  return [n];
 }
 
 // Also captures shared context (e.g. a data table in an HTML block placed before
