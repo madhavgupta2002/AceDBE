@@ -89,7 +89,6 @@ const SubjectSelector: React.FC<{ selectedTerm?: number }> = ({ selectedTerm: pr
           </h3>
           <div className="text-[11px] text-slate-500 font-mono">
             {alias.code}
-            {noExam && <span className="font-sans text-amber-400/80"> · No final exam</span>}
           </div>
         </div>
       </Link>

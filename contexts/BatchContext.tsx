@@ -7,7 +7,16 @@ export const AVAILABLE_BATCHES = [1, 2, 3] as const;
 export type BatchNumber = (typeof AVAILABLE_BATCHES)[number];
 
 const STORAGE_KEY_BATCH = 'ace_dbe_selected_batch';
-const STORAGE_KEY_TERM = 'ace_dbe_selected_term';
+// Term is remembered per batch, and only once the user picks one; otherwise the latest term is shown.
+const termKey = (batch: number) => `ace_dbe_selected_term_b${batch}`;
+
+const termFor = (batch: number): number => {
+  const terms = getTermsForBatch(batch);
+  const latest = terms[terms.length - 1] ?? 1;
+  if (typeof window === 'undefined') return latest;
+  const saved = parseInt(localStorage.getItem(termKey(batch)) ?? '', 10);
+  return terms.includes(saved) ? saved : latest;
+};
 
 interface BatchContextType {
   selectedBatch: number;
@@ -41,20 +50,7 @@ export const BatchProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       }
     }
 
-    const availableTerms = getTermsForBatch(batchToUse);
-    const savedTermStr = localStorage.getItem(STORAGE_KEY_TERM);
-    if (savedTermStr) {
-      const parsedTerm = parseInt(savedTermStr, 10);
-      if (availableTerms.includes(parsedTerm)) {
-        setSelectedTermState(parsedTerm);
-      } else {
-        const defaultTerm = availableTerms[0] ?? 1;
-        setSelectedTermState(defaultTerm);
-      }
-    } else {
-      const defaultTerm = availableTerms[0] ?? 1;
-      setSelectedTermState(defaultTerm);
-    }
+    setSelectedTermState(termFor(batchToUse));
   }, []);
 
   const setSelectedBatch = (batch: number) => {
@@ -64,24 +60,14 @@ export const BatchProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         localStorage.setItem(STORAGE_KEY_BATCH, String(batch));
       }
 
-      const availableTerms = getTermsForBatch(batch);
-      setSelectedTermState((prevTerm) => {
-        let newTerm = prevTerm;
-        if (!availableTerms.includes(prevTerm)) {
-          newTerm = availableTerms[availableTerms.length - 1] ?? 1;
-        }
-        if (typeof window !== 'undefined') {
-          localStorage.setItem(STORAGE_KEY_TERM, String(newTerm));
-        }
-        return newTerm;
-      });
+      setSelectedTermState(termFor(batch));
     }
   };
 
   const setSelectedTerm = (term: number) => {
     setSelectedTermState(term);
     if (typeof window !== 'undefined') {
-      localStorage.setItem(STORAGE_KEY_TERM, String(term));
+      localStorage.setItem(termKey(selectedBatch), String(term));
     }
   };
 

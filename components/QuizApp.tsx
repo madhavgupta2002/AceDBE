@@ -90,7 +90,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
 
   // Get videos for current subject (fetched dynamically)
   const [subjectVideos, setSubjectVideos] = useState<Record<string, string[]>>({});
-  const moduleNumbers = Object.keys(subjectVideos).sort((a, b) => Number(a) - Number(b));
+  // Numbered modules first, then extras like "Interviews" or "Live Session" in file order
+  const moduleNumbers = Object.keys(subjectVideos).sort((a, b) => (isNaN(+a) ? Infinity : +a) - (isNaN(+b) ? Infinity : +b));
 
   // Check if subject has short notes (SHORT_NOTES.md)
   const [hasShortNotes, setHasShortNotes] = useState(false);
@@ -1039,7 +1040,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
           {!loading && moduleNumbers.length > 0 && (quizState.questions.length === 0 || quizCompleted) && (() => {
             const allVideos = moduleNumbers.flatMap((m) => subjectVideos[m] || []);
             const allPlaylistUrl = moduleNumbers.length > 1 ? createPlaylistUrl(allVideos) : '';
-            const cards = moduleNumbers.map((m) => ({ key: m, label: `Module ${m}`, videos: subjectVideos[m] || [] }));
+            const cards = moduleNumbers.map((m) => ({ key: m, label: isNaN(+m) ? m : `Module ${m}`, videos: subjectVideos[m] || [] }));
             return (
               <div className="mb-6 bg-surface border border-surface-border/60 rounded-xl p-5">
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
@@ -1061,7 +1062,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
                     </a>
                   )}
                 </div>
-                <div className="flex gap-3 overflow-x-auto snap-x pb-1 -mx-1 px-1 sm:grid sm:grid-cols-3 lg:grid-cols-4 sm:overflow-visible sm:pb-0 sm:mx-0 sm:px-0">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
                   {cards.map(({ key, label, videos }) => {
                     const playlistUrl = createPlaylistUrl(videos);
                     const thumbId = videos.map(videoIdOf).find(Boolean);
@@ -1073,7 +1074,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
                         rel="noopener noreferrer"
                         aria-disabled={!playlistUrl}
                         title={playlistUrl ? `Play ${label} (${videos.length} videos) on YouTube` : 'No videos available'}
-                        className={`group block w-[42%] shrink-0 snap-start sm:w-auto rounded-lg overflow-hidden border transition-colors ${
+                        className={`group block rounded-lg overflow-hidden border transition-colors ${
                           playlistUrl ? 'border-surface-border hover:border-red-500/50' : 'border-surface-border/40 opacity-50 pointer-events-none'
                         }`}
                       >
