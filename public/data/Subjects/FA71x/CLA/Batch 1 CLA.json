@@ -1198,6 +1198,216 @@
       "correct_option_label": "D",
       "explanation": "Diversification: less than perfect correlation lowers portfolio SD",
       "module": 5
+    },
+    {
+      "question_id": "CLA_M6_Q01",
+      "question_text": "ABC Ltd. has 10 million shares outstanding. The company has surplus cash of ₹100 million. The market value of its assets, excluding cash, is ₹800 million. The company decides to distribute the entire surplus cash as a dividend. An investor owns 1,000 shares before the dividend. Assume no taxes, transaction costs, or market imperfections. What is the proposed dividend per share?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹5",
+        "B": "₹10",
+        "C": "₹15",
+        "D": "₹20"
+      },
+      "correct_option_label": "B",
+      "explanation": "Dividend per share = surplus cash / shares = ₹100M / 10M = ₹10.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q02",
+      "question_text": "ABC Ltd. has 10 million shares outstanding. The company has surplus cash of ₹100 million. The market value of its assets, excluding cash, is ₹900 million. The company decides to distribute the entire surplus cash as a dividend. An investor owns 1,000 shares before the dividend. Assume no taxes, transaction costs, or market imperfections. The company is considering either paying the entire surplus cash as a dividend or using it to repurchase shares in the open market. Assume no taxes, transaction costs, or market imperfections.\nConsidering the given information, if the company decides to issue a dividend, what should be the ex-dividend share price?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹60",
+        "B": "₹70",
+        "C": "₹90",
+        "D": "₹80"
+      },
+      "correct_option_label": "C",
+      "explanation": "Cum-dividend price = (₹900M + ₹100M) / 10M = ₹100. On the ex-dividend date the price falls by the dividend per share (₹10), so ₹90.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q03",
+      "question_text": "ABC Ltd. has 10 million shares outstanding. The company has surplus cash of ₹100 million. The market value of its assets, excluding cash, is ₹900 million. The company decides to distribute the entire surplus cash as a dividend. An investor owns 1,000 shares before the dividend. Assume no taxes, transaction costs, or market imperfections. The company is considering either paying the entire surplus cash as a dividend or using it to repurchase shares in the open market. Assume no taxes, transaction costs, or market imperfections. Given the information provided, if the company decides to repurchase shares at the current market price, how many shares can it repurchase with ₹100 million?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0.5 million",
+        "B": "1 million",
+        "C": "2 million",
+        "D": "4 million"
+      },
+      "correct_option_label": "B",
+      "explanation": "Current price = ₹1,000M / 10M = ₹100. ₹100M / ₹100 = 1 million shares.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q04",
+      "question_text": "ABC Ltd. has 10 million shares outstanding. The company has surplus cash of ₹100 million. The market value of its assets, excluding cash, is ₹800 million. The company decides to distribute the entire surplus cash as a dividend. An investor owns 1,000 shares before the dividend. Assume no taxes, transaction costs, or market imperfections. If the investor wants cash equal to ₹14 per original share but receives only ₹10 per share as a dividend, how many shares must the investor sell after the dividend to generate the additional cash?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "50 shares",
+        "B": "62.5 shares",
+        "C": "17.50 shares",
+        "D": "55 shares"
+      },
+      "correct_option_label": "A",
+      "explanation": "Cum-dividend price = ₹900M / 10M = ₹90; ex-dividend price = ₹80. Extra cash needed = ₹4 × 1,000 = ₹4,000 (homemade dividend). Shares to sell = ₹4,000 / ₹80 = 50.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q05",
+      "question_text": "A company earns ₹400 lakhs in net income and pays total cash dividends of ₹100 lakhs. What is its dividend payout ratio?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "20%",
+        "B": "25%",
+        "C": "40%",
+        "D": "75%"
+      },
+      "correct_option_label": "B",
+      "explanation": "Payout ratio = dividends / net income = 100 / 400 = 25%.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q06",
+      "question_text": "A company announces a 3-for-1 stock split. An investor owns 400 shares priced at ₹450 each before the split. Immediately after the stock split, how many shares will the investor have and what will be the price per share?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "400 shares with a price of ₹150 each",
+        "B": "1,200 shares with a price of ₹450 each",
+        "C": "100 shares with a price of ₹450 each",
+        "D": "1,200 shares with a price of ₹150 each"
+      },
+      "correct_option_label": "D",
+      "explanation": "A 3-for-1 split triples the shares (400 × 3 = 1,200) and divides the price by 3 (₹450 / 3 = ₹150); holding value is unchanged at ₹1,80,000.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q07",
+      "question_text": "An investor purchases 500 shares of a company at a price of ₹240 per share before the ex-dividend date. The company declares a dividend of ₹8 per share. How much cash dividend is the investor expected to receive?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹4,000",
+        "B": "₹2,000",
+        "C": "₹8,000",
+        "D": "₹1,20,000"
+      },
+      "correct_option_label": "A",
+      "explanation": "Buying before the ex-dividend date (cum dividend) entitles the investor to the dividend: 500 × ₹8 = ₹4,000.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q08",
+      "question_text": "A company wants to reduce the stake held by a major shareholder. Instead of buying shares through the stock exchange or making a general offer to all shareholders, the company negotiates directly with that shareholder to repurchase a block of shares. Which method is being used?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Open Market Repurchase",
+        "B": "Dutch Auction",
+        "C": "Targeted Repurchase",
+        "D": "Stock Dividend"
+      },
+      "correct_option_label": "C",
+      "explanation": "In a targeted repurchase the firm negotiates directly with a major shareholder to buy back shares.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q09",
+      "question_text": "A company declares a 15% stock dividend. What happens to the company's cash holdings immediately as a result of the stock dividend?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cash holdings decrease by 15%.",
+        "B": "Cash holdings increase by 15%.",
+        "C": "Cash holdings remain unchanged.",
+        "D": "Cash holdings decrease by the market value of the stocks issued"
+      },
+      "correct_option_label": "C",
+      "explanation": "A stock dividend pays shareholders in shares, not cash, so cash is unchanged.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q10",
+      "question_text": "ABC Ltd. has 2,00,000 shares outstanding and declares a 10% stock dividend. How many additional shares will be issued?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "10,000",
+        "B": "20,000",
+        "C": "30,000",
+        "D": "40,000"
+      },
+      "correct_option_label": "B",
+      "explanation": "10% × 2,00,000 = 20,000 new shares.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q11",
+      "question_text": "A company has 4,00,000 shares outstanding, trading at ₹250 per share. It declares a 20% stock dividend. Assuming no market reaction, what will be the total number of shares and the theoretical share price after the dividend?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "4,80,000 shares and ₹250",
+        "B": "4,20,000 shares and ₹238.10",
+        "C": "5,00,000 shares and ₹200",
+        "D": "4,80,000 shares and ₹208.33"
+      },
+      "correct_option_label": "D",
+      "explanation": "Shares = 4,00,000 × 1.2 = 4,80,000. Firm value ₹10 crore is unchanged, so price = ₹250 / 1.2 = ₹208.33.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q12",
+      "question_text": "A mature company has ₹200 crore in surplus cash but few profitable investment opportunities. Management proposes acquiring an unrelated business with negative NPV. Which argument best supports distributing the surplus cash to shareholders?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Dividend clientele theory",
+        "B": "Bird-in-hand theory",
+        "C": "Industry herding",
+        "D": "Agency cost of idle cash"
+      },
+      "correct_option_label": "D",
+      "explanation": "Agency cost of idle cash: managers with excess cash may waste it on pet projects, perks or negative-NPV acquisitions; paying it out prevents this.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q13",
+      "question_text": "Which of the following would reduce the cash balance of the company?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Issuing new shares through a stock split",
+        "B": "Consolidating shares through reverse stock split",
+        "C": "Issuing stock dividend",
+        "D": "Repurchasing shares"
+      },
+      "correct_option_label": "D",
+      "explanation": "A repurchase pays cash to selling shareholders. Splits, reverse splits and stock dividends only change share count and price.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q14",
+      "question_text": "A company announces a share repurchase. It specifies a price range of ₹180–₹200 per share and asks shareholders to indicate how many shares they are willing to sell at different prices. The company then determines the lowest price at which it can repurchase the desired number of shares. Which repurchase method is this?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Open Market Repurchase",
+        "B": "Tender Offer at a Fixed Price",
+        "C": "Dutch Auction",
+        "D": "Targeted Repurchase"
+      },
+      "correct_option_label": "C",
+      "explanation": "Dutch auction: the firm sets a price range, shareholders state quantities at each price, and the firm pays the lowest price that fills the desired number.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q15",
+      "question_text": "Several firms in an industry maintain stable dividends. A company follows the same policy mainly to avoid appearing financially weak relative to competitors. This is an example of:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Industry herding",
+        "B": "Dividend irrelevance",
+        "C": "Dutch auction",
+        "D": "Reverse stock split"
+      },
+      "correct_option_label": "A",
+      "explanation": "Industry herding: firms follow competitors' dividend policies out of fear of being left alone or seen as weak.",
+      "module": 6
     }
   ]
 }

@@ -983,6 +983,216 @@
       "correct_option_label": "A",
       "explanation": "When told 'the experts say', ask: which experts, expert in what exactly, and how did you come to trust them.",
       "module": 5
+    },
+    {
+      "question_id": "CLA_M6_Q01",
+      "question_text": "In the Nyaya five-step model of logical reasoning, what is the specific role of Udaharana?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It asserts the initial claim or central proposition that must be formally established.",
+        "B": "It provides a shared real-world example linking the reason to a universal rule.",
+        "C": "It applies the general rule directly to the specific case under current observation.",
+        "D": "It re-states the final conclusion after all supporting grounds have been fully verified."
+      },
+      "correct_option_label": "B",
+      "explanation": "Udaharana is the example step: 'wherever there is smoke, there is fire, as in a kitchen'. It ties the reason to a universal rule through a familiar real-world case.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q02",
+      "question_text": "From a critical thinking perspective, what is the main risk of relying on a single, dominant narrative when evaluating evidence?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It assumes that informal evidence is inherently superior to research.",
+        "B": "It rejects all quantitative data in favor of personal anecdotes.",
+        "C": "It relies exclusively on fabricated data and false historical facts.",
+        "D": "It treats one partial truth as the sole absolute reality."
+      },
+      "correct_option_label": "D",
+      "explanation": "The 'single story' (Adichie) is not necessarily false but incomplete: it treats one partial truth as the whole reality.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q03",
+      "question_text": "What is the correct sequence of the five steps in the Nyaya syllogism?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Udaharana (example), Hetu (reason), Pratigna (proposition), Upanaya (application), Nigamana (conclusion)",
+        "B": "Pratigna (proposition), Udaharana (example), Hetu (reason), Upanaya (application), Nigamana (conclusion)",
+        "C": "Hetu (reason), Pratigna (proposition), Udaharana (example), Nigamana (conclusion), Upanaya (application)",
+        "D": "Pratigna (proposition), Hetu (reason), Udaharana (example), Upanaya (application), Nigamana (conclusion)"
+      },
+      "correct_option_label": "D",
+      "explanation": "Pratijna (claim: the hill has fire) → Hetu (because there is smoke) → Udaharana (wherever smoke, fire, as in a kitchen) → Upanaya (the hill has such smoke) → Nigamana (therefore the hill has fire).",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q04",
+      "question_text": "When adapting communication strategies for a high-context audience, which approach best aligns with cross-cultural communication principles?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Demanding immediate compliance using standardized direct logic",
+        "B": "Softening directives while framing requests around relationships",
+        "C": "Explicitly stating requests while omitting relational framing",
+        "D": "Eliminating firm deadlines to prevent social confrontation"
+      },
+      "correct_option_label": "B",
+      "explanation": "High-context cultures rely on relationships and indirect cues; softening directives and framing around the relationship preserves face while still keeping the request (deadlines are not dropped).",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q05",
+      "question_text": "In structured problem-solving, what is the primary limitation of using an analytical framework?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It compresses reality and omits important contextual details.",
+        "B": "It fails to give a structured way to organize information.",
+        "C": "It replaces empirical data with unverified theoretical assumptions.",
+        "D": "It prevents teams from formulating an initial working hypothesis."
+      },
+      "correct_option_label": "A",
+      "explanation": "Like Ted Chiang's 'blurry JPEG', a framework compresses a messy situation: it keeps the outline but loses detail and context.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q06",
+      "question_text": "Comparing the Aristotelian syllogism with the Nyaya syllogism, what is a defining structural difference between them?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Nyaya eliminates the necessity for a supporting logical reason",
+        "B": "Nyaya incorporates an essential empirical example within reasoning",
+        "C": "Nyaya relies exclusively on abstract deductive universal premises",
+        "D": "Nyaya restricts valid inference strictly to three steps"
+      },
+      "correct_option_label": "B",
+      "explanation": "The Western three-step syllogism has no explicit requirement for a real-world example; in Nyaya the example (Udaharana) is an essential component, not decoration.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q07",
+      "question_text": "In Nyaya philosophy, how does the method of Tarka test the validity of a claim?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Gathering empirical survey data from a large population sample",
+        "B": "Citing an established authority who endorses the original claim",
+        "C": "Appealing to the emotional sentiment of the target audience",
+        "D": "Supposing its opposite and showing absurd consequences follow"
+      },
+      "correct_option_label": "D",
+      "explanation": "Tarka is hypothetical reasoning: assume the opposite of the claim and show that it leads to absurd or contradictory consequences.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q08",
+      "question_text": "A product manager argues that a new checkout feature causes user drop-off by citing how simplifying last year's login flow boosted completion rates. In this Nyaya-style argument, what function does citing the past login example serve?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Applies the universal rule directly to current context.",
+        "B": "Restates the initial claim as the final verdict.",
+        "C": "Anchors the argument in a shared past experience.",
+        "D": "Establishes the core logical ground for the claim."
+      },
+      "correct_option_label": "C",
+      "explanation": "In the lecture's checkout example, 'just as when we simplified the login process last year…' is the Udaharana: it anchors the argument in shared, familiar experience. The ground (Hetu) is the rise in payment-confusion tickets.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q09",
+      "question_text": "When reviewing a drop in quarterly revenue, an analyst stops searching for patterns and states, 'The market has too many moving variables to analyze.' Which failure of analytical judgment is occurring?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Overcomplicating a simple linear cause by assuming multiple hidden market variables.",
+        "B": "Confusing external systemic market changes with internal operational execution failures.",
+        "C": "Substituting rigorous statistical model testing with purely qualitative customer feedback.",
+        "D": "Mistaking internal cognitive confusion for an inherently unanalyzable problem complexity."
+      },
+      "correct_option_label": "D",
+      "explanation": "Complexity is a property of the problem; confusion is a state of the analyst. Giving up because 'it's too complex' mistakes one's own confusion for unanalysable complexity.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q10",
+      "question_text": "A German manager expects a formal decision-maker at a meeting, while an Indian team sends a respected senior figure for relationship-building. Why does this cross-cultural mismatch derail negotiations early?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It requires participants to adopt completely flattened corporate decision structures.",
+        "B": "It forces both teams to abandon empirical evidence for authority.",
+        "C": "It creates conflicting assumptions about participant credibility and decision authority.",
+        "D": "It invalidates the logical structure of hypothetical Tarka reasoning."
+      },
+      "correct_option_label": "C",
+      "explanation": "Authority works differently across contexts: one side reads credibility from formal decision rights, the other from seniority and relationships, so each misjudges who matters in the room.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q11",
+      "question_text": "A global policy analyst dismisses a local health worker's report on community mistrust as 'merely anecdotal' for lacking survey data. Why is this evaluation flawed?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It ignores that field workers require no formal verification procedures.",
+        "B": "It overlooks how localized testimony offers vital contextual precision.",
+        "C": "It assumes local oral claims replace empirical scientific standards.",
+        "D": "It presumes unverified personal intuition functions as universal evidence."
+      },
+      "correct_option_label": "B",
+      "explanation": "The lecture: such testimony 'may be less statistically broad, but it may be contextually precise'. Evaluate its source, consistency, track record and credibility rather than dismiss it.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q12",
+      "question_text": "In cross-cultural critical thinking, what error occurs when an evaluator uncritically idealizes another culture's reasoning as inherently superior or more holistic?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Evaluating argument style over effect",
+        "B": "Overcorrecting into structural stereotyping",
+        "C": "Confusing unfamiliarity with irrationality",
+        "D": "Romanticizing alternative cultural traditions"
+      },
+      "correct_option_label": "D",
+      "explanation": "Mistake 2 in the lecture: romanticizing other cultures, assuming non-Western traditions are always wiser or more holistic, which is itself a single story.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q13",
+      "question_text": "A retail manager is developing demand forecasts for a new product launch under high uncertainty. Which approach best demonstrates calibrated judgment in this scenario?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Assigning probabilistic outcome ranges based on actual evidence strength",
+        "B": "Treating long term financial projections as established baseline facts",
+        "C": "Selecting a single precise revenue target to reassure stakeholders",
+        "D": "Delaying all supply decisions until market demand is known"
+      },
+      "correct_option_label": "A",
+      "explanation": "Calibration means matching confidence to how often you are actually right: express forecasts as probability ranges in line with the evidence, not false precision.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q14",
+      "question_text": "An analyst uses a SWOT matrix to quickly structure a complex market shift and presents the neat slides as a final conclusion. What primary analytical trap is this analyst exhibiting?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Assuming frameworks eliminate need for empirical evidence",
+        "B": "Confusing a simplified model with complete reality",
+        "C": "Overestimating the statistical precision of categorical tools",
+        "D": "Expecting analytical frameworks to enforce objective consensus"
+      },
+      "correct_option_label": "B",
+      "explanation": "A framework is a compressed model, a starting point for thinking; presenting it as the conclusion confuses the simplified map with the full reality.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q15",
+      "question_text": "A SaaS startup observes a 30% spike in customer churn immediately after releasing a new product interface and raising monthly subscription prices. How should an analyst approach evaluating these potential causes?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Discard the redesign hypothesis if pricing data shows strong correlation with cancellations.",
+        "B": "Focus primarily on product interface changes because UX issues generate immediate backlash.",
+        "C": "Select the price increase first since financial changes dominate user cancellation decisions.",
+        "D": "Evaluate evidence for both factors because multiple causes can simultaneously drive churn."
+      },
+      "correct_option_label": "D",
+      "explanation": "Analytical thinking generates competing explanations and asks what evidence would distinguish them; both causes can operate at once, so test each rather than pick one early.",
+      "module": 6
     }
   ]
 }
