@@ -5,7 +5,7 @@
     },
     "questions": [
         {
-            "question_id": "STAT_MT_Q1",
+            "question_id": "MT_M2_Q01",
             "question_text": "The daily earnings of a taxi driver in a city has an average of 2400 and a standard deviation of 360. If a random sample of 45 taxi drivers are surveyed, the probability of the average daily earnings in the sample being between 2300 and 2500 is:",
             "question_type": "MCQ",
             "options": {
@@ -19,7 +19,7 @@
             "module": 2
         },
         {
-            "question_id": "STAT_MT_Q6",
+            "question_id": "MT_M4_Q01",
             "question_text": "For a given product, the supply (y) and price(x) for 8 weeks is given as (y,x) as: (5, 2), (7, 4), (9, 8), (12, 5), (10, 7), (13, 8), (16, 16) and (16, 6). The sample covariance is equal to:",
             "question_type": "MCQ",
             "options": {
@@ -33,7 +33,7 @@
             "module": 4
         },
         {
-            "question_id": "STAT_MT_Q7",
+            "question_id": "MT_M1_Q01",
             "question_text": "Scores on a national competitive exam were normally distributed with a mean of 80 and a variance of 36. If the top 5% of test scores receive merit awards, what is the lowest score eligible for a merit award? It is:",
             "question_type": "MCQ",
             "options": {
@@ -47,7 +47,7 @@
             "module": 1
         },
         {
-            "question_id": "STAT_MT_Q9",
+            "question_id": "MT_M1_Q02",
             "question_text": "It is believed that 70% of the customers at a retail chain are satisfied with their shopping experience. If a random sample of 20 shoppers are surveyed, what is the probability that at least 12 are not satisfied with their shopping experience? It is:",
             "question_type": "MCQ",
             "options": {
@@ -61,7 +61,7 @@
             "module": 1
         },
         {
-            "question_id": "STAT_MT_Q10",
+            "question_id": "MT_M1_Q03",
             "question_text": "The probability that a t-random variable with 5 degrees of freedom takes values between -2.0 and 0.5 is:",
             "question_type": "MCQ",
             "options": {
@@ -75,7 +75,7 @@
             "module": 1
         },
         {
-            "question_id": "STAT_MT_Q11",
+            "question_id": "MT_M2_Q02",
             "question_text": "A department store has determined that 25% of all their sales are credit sales. If a random sample of 60 sales records are selected, the probability of the proportion of credit sales in the sample being more than 30% is:",
             "question_type": "MCQ",
             "options": {

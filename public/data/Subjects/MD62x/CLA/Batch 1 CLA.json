@@ -7,7 +7,7 @@
     },
     "questions": [
         {
-            "question_id": "m1_q1",
+            "question_id": "CLA_M1_Q01",
             "question_text": "A founder wants to avoid spending months building a product before discovering whether anyone will pay. Which option best reflects the logic emphasised in the material?",
             "question_type": "MCQ",
             "options": {
@@ -21,7 +21,7 @@
             "module": 1
         },
         {
-            "question_id": "m1_q2",
+            "question_id": "CLA_M1_Q02",
             "question_text": "A team receives strong positive responses from friends and followers after posting a waitlist page. Why does the material treat this result cautiously?",
             "question_type": "MCQ",
             "options": {
@@ -35,7 +35,7 @@
             "module": 1
         },
         {
-            "question_id": "m1_q3",
+            "question_id": "CLA_M1_Q03",
             "question_text": "Which landing-page structure best aligns with the design principles described?",
             "question_type": "MCQ",
             "options": {
@@ -49,7 +49,7 @@
             "module": 1
         },
         {
-            "question_id": "m1_q4",
+            "question_id": "CLA_M1_Q04",
             "question_text": "In the three-signal framework, traffic is strong, sign-ups are weak, and the bounce rate is also high. What is the most defensible interpretation?",
             "question_type": "MCQ",
             "options": {
@@ -63,7 +63,7 @@
             "module": 1
         },
         {
-            "question_id": "m1_q5",
+            "question_id": "CLA_M1_Q05",
             "question_text": "Why is a false positive more dangerous than no signal?",
             "question_type": "MCQ",
             "options": {
@@ -77,7 +77,7 @@
             "module": 1
         },
         {
-            "question_id": "m1_q6",
+            "question_id": "CLA_M1_Q06",
             "question_text": "A founder thinks, “We already know the customer pain, so we know the demand exists.” Which trap does this best illustrate?",
             "question_type": "MCQ",
             "options": {
@@ -91,7 +91,7 @@
             "module": 1
         },
         {
-            "question_id": "m1_q7",
+            "question_id": "CLA_M1_Q07",
             "question_text": "A team says it cannot afford to validate because that would take too long, and they may lose first-mover advantage. What is the strongest response based on the material?",
             "question_type": "MCQ",
             "options": {
@@ -105,7 +105,7 @@
             "module": 1
         },
         {
-            "question_id": "m1_q8",
+            "question_id": "CLA_M1_Q08",
             "question_text": "The material compares three routes to market: full build, MVP, and lean validation. Which statement best captures the intended lesson?",
             "question_type": "MCQ",
             "options": {
@@ -119,7 +119,7 @@
             "module": 1
         },
         {
-            "question_id": "m1_q9",
+            "question_id": "CLA_M1_Q09",
             "question_text": "In the Zoco example, the ad performs well, but the landing page does not convert well. What should the team change first?",
             "question_type": "MCQ",
             "options": {
@@ -133,7 +133,7 @@
             "module": 1
         },
         {
-            "question_id": "m1_q10",
+            "question_id": "CLA_M1_Q10",
             "question_text": "Why is it insisted on changing only one variable at a time after a test?",
             "question_type": "MCQ",
             "options": {
@@ -147,7 +147,7 @@
             "module": 1
         },
         {
-            "question_id": "m2_q1",
+            "question_id": "CLA_M2_Q01",
             "question_text": "A team is testing whether changing a CTA from “Start free” to “Record my first meeting” will improve sign-ups. Which statement best matches the logic of the null hypothesis?",
             "question_type": "MCQ",
             "options": {
@@ -161,7 +161,7 @@
             "module": 2
         },
         {
-            "question_id": "m2_q2",
+            "question_id": "CLA_M2_Q02",
             "question_text": "Why do the experiments begin from the null rather than from optimism?",
             "question_type": "MCQ",
             "options": {
@@ -175,7 +175,7 @@
             "module": 2
         },
         {
-            "question_id": "m2_q3",
+            "question_id": "CLA_M2_Q03",
             "question_text": "A team sees a 4.2% conversion rate for Variant B after only three days and decides to stop the test immediately. Why is this risky?",
             "question_type": "MCQ",
             "options": {
@@ -189,7 +189,7 @@
             "module": 2
         },
         {
-            "question_id": "m2_q4",
+            "question_id": "CLA_M2_Q04",
             "question_text": "A company wants to test a pricing-page CTA, but the required sample is 9,500 users per variant, and the current traffic is only 620 sign-ups per month. What is the strongest implication?",
             "question_type": "MCQ",
             "options": {
@@ -203,7 +203,7 @@
             "module": 2
         },
         {
-            "question_id": "m2_q5",
+            "question_id": "CLA_M2_Q05",
             "question_text": "What is the best plain-language meaning of minimum detectable effect?",
             "question_type": "MCQ",
             "options": {
@@ -217,7 +217,7 @@
             "module": 2
         },
         {
-            "question_id": "m2_q6",
+            "question_id": "CLA_M2_Q06",
             "question_text": "Which situation best reflects a type 1 error?",
             "question_type": "MCQ",
             "options": {
@@ -231,7 +231,7 @@
             "module": 2
         },
         {
-            "question_id": "m2_q7",
+            "question_id": "CLA_M2_Q07",
             "question_text": "Which situation best reflects a type 2 error?",
             "question_type": "MCQ",
             "options": {
@@ -245,7 +245,7 @@
             "module": 2
         },
         {
-            "question_id": "m2_q8",
+            "question_id": "CLA_M2_Q08",
             "question_text": "A product team is testing a pricing change that would be hard to reverse if wrong. Which error should they worry about more?",
             "question_type": "MCQ",
             "options": {
@@ -259,7 +259,7 @@
             "module": 2
         },
         {
-            "question_id": "m2_q9",
+            "question_id": "CLA_M2_Q09",
             "question_text": "A team cannot wait three months to see 90-day repurchase data, so it chooses a day-14 engagement metric instead. What must be true for this proxy to be valid?",
             "question_type": "MCQ",
             "options": {
@@ -273,7 +273,7 @@
             "module": 2
         },
         {
-            "question_id": "m2_q10",
+            "question_id": "CLA_M2_Q10",
             "question_text": "Why is it important to record the test mode before seeing the result?",
             "question_type": "MCQ",
             "options": {
@@ -287,7 +287,7 @@
             "module": 2
         },
         {
-            "question_id": "m3_q1",
+            "question_id": "CLA_M3_Q01",
             "question_text": "What is the main reason to use cohort analysis instead of only looking at total user numbers?",
             "question_type": "MCQ",
             "options": {
@@ -301,7 +301,7 @@
             "module": 3
         },
         {
-            "question_id": "m3_q2",
+            "question_id": "CLA_M3_Q02",
             "question_text": "A product has 10,000 total users, but most from older cohorts have stopped using it. What does this show?",
             "question_type": "MCQ",
             "options": {
@@ -315,7 +315,7 @@
             "module": 3
         },
         {
-            "question_id": "m3_q3",
+            "question_id": "CLA_M3_Q03",
             "question_text": "What are the three required parts of cohort analysis?",
             "question_type": "MCQ",
             "options": {
@@ -329,7 +329,7 @@
             "module": 3
         },
         {
-            "question_id": "m3_q4",
+            "question_id": "CLA_M3_Q04",
             "question_text": "If a retention curve drops sharply at the beginning and then becomes flat, what does that usually mean?",
             "question_type": "MCQ",
             "options": {
@@ -343,7 +343,7 @@
             "module": 3
         },
         {
-            "question_id": "m3_q5",
+            "question_id": "CLA_M3_Q05",
             "question_text": "If a retention curve keeps falling with no stable floor, what is the best interpretation?",
             "question_type": "MCQ",
             "options": {
@@ -357,7 +357,7 @@
             "module": 3
         },
         {
-            "question_id": "m3_q6",
+            "question_id": "CLA_M3_Q06",
             "question_text": "Why is a slow bleed retention curve dangerous?",
             "question_type": "MCQ",
             "options": {
@@ -371,7 +371,7 @@
             "module": 3
         },
         {
-            "question_id": "m3_q7",
+            "question_id": "CLA_M3_Q07",
             "question_text": "In the module, what does the steepest early drop in retention usually suggest?",
             "question_type": "MCQ",
             "options": {
@@ -385,7 +385,7 @@
             "module": 3
         },
         {
-            "question_id": "m3_q8",
+            "question_id": "CLA_M3_Q08",
             "question_text": "What does a floor above 30 on a retention curve suggest?",
             "question_type": "MCQ",
             "options": {
@@ -399,7 +399,7 @@
             "module": 3
         },
         {
-            "question_id": "m3_q9",
+            "question_id": "CLA_M3_Q09",
             "question_text": "What should a growth team do before scaling if the retention curve shows a steep early drop?",
             "question_type": "MCQ",
             "options": {
@@ -413,7 +413,7 @@
             "module": 3
         },
         {
-            "question_id": "m3_q10",
+            "question_id": "CLA_M3_Q10",
             "question_text": "Why does the module say the Growth Readiness Brief is important?",
             "question_type": "MCQ",
             "options": {
@@ -427,7 +427,7 @@
             "module": 3
         },
         {
-            "question_id": "m4_q1",
+            "question_id": "CLA_M4_Q01",
             "question_text": "Why does the module separate marketing, product, and growth?",
             "question_type": "MCQ",
             "options": {
@@ -441,7 +441,7 @@
             "module": 4
         },
         {
-            "question_id": "m4_q2",
+            "question_id": "CLA_M4_Q02",
             "question_text": "What is marketing mainly responsible for?",
             "question_type": "MCQ",
             "options": {
@@ -455,7 +455,7 @@
             "module": 4
         },
         {
-            "question_id": "m4_q3",
+            "question_id": "CLA_M4_Q03",
             "question_text": "What is the product mainly responsible for?",
             "question_type": "MCQ",
             "options": {
@@ -469,7 +469,7 @@
             "module": 4
         },
         {
-            "question_id": "m4_q4",
+            "question_id": "CLA_M4_Q04",
             "question_text": "What is growth mainly responsible for?",
             "question_type": "MCQ",
             "options": {
@@ -483,7 +483,7 @@
             "module": 4
         },
         {
-            "question_id": "m4_q5",
+            "question_id": "CLA_M4_Q05",
             "question_text": "Why is hiring the wrong role a problem?",
             "question_type": "MCQ",
             "options": {
@@ -497,7 +497,7 @@
             "module": 4
         },
         {
-            "question_id": "m4_q6",
+            "question_id": "CLA_M4_Q06",
             "question_text": "What does the ladder of proof show?",
             "question_type": "MCQ",
             "options": {
@@ -511,7 +511,7 @@
             "module": 4
         },
         {
-            "question_id": "m4_q7",
+            "question_id": "CLA_M4_Q07",
             "question_text": "What does an early-stage company usually need most?",
             "question_type": "MCQ",
             "options": {
@@ -525,7 +525,7 @@
             "module": 4
         },
         {
-            "question_id": "m4_q8",
+            "question_id": "CLA_M4_Q08",
             "question_text": "What is zero-budget traction meant to do?",
             "question_type": "MCQ",
             "options": {
@@ -539,7 +539,7 @@
             "module": 4
         },
         {
-            "question_id": "m4_q9",
+            "question_id": "CLA_M4_Q09",
             "question_text": "Why does the module treat B2B and B2C differently?",
             "question_type": "MCQ",
             "options": {
@@ -553,7 +553,7 @@
             "module": 4
         },
         {
-            "question_id": "m4_q10",
+            "question_id": "CLA_M4_Q10",
             "question_text": "What is the main lesson when growth is falling?",
             "question_type": "MCQ",
             "options": {
@@ -567,7 +567,7 @@
             "module": 4
         },
         {
-            "question_id": "m5_q1",
+            "question_id": "CLA_M5_Q01",
             "question_text": "Why does the module say the most popular channel is not always the right one?",
             "question_type": "MCQ",
             "options": {
@@ -581,7 +581,7 @@
             "module": 5
         },
         {
-            "question_id": "m5_q2",
+            "question_id": "CLA_M5_Q02",
             "question_text": "What is channel-market fit?",
             "question_type": "MCQ",
             "options": {
@@ -595,7 +595,7 @@
             "module": 5
         },
         {
-            "question_id": "m5_q3",
+            "question_id": "CLA_M5_Q03",
             "question_text": "Which of the following is one of the six channel properties?",
             "question_type": "MCQ",
             "options": {
@@ -609,7 +609,7 @@
             "module": 5
         },
         {
-            "question_id": "m5_q4",
+            "question_id": "CLA_M5_Q04",
             "question_text": "Why can a great channel still fail for a product?",
             "question_type": "MCQ",
             "options": {
@@ -623,7 +623,7 @@
             "module": 5
         },
         {
-            "question_id": "m5_q5",
+            "question_id": "CLA_M5_Q05",
             "question_text": "What is the main reason LinkedIn paid ads fail for some low-ACV products?",
             "question_type": "MCQ",
             "options": {
@@ -637,7 +637,7 @@
             "module": 5
         },
         {
-            "question_id": "m5_q6",
+            "question_id": "CLA_M5_Q06",
             "question_text": "Why is time to result important when choosing a channel?",
             "question_type": "MCQ",
             "options": {
@@ -651,7 +651,7 @@
             "module": 5
         },
         {
-            "question_id": "m5_q7",
+            "question_id": "CLA_M5_Q07",
             "question_text": "What is the purpose of scoring only two or three channels?",
             "question_type": "MCQ",
             "options": {
@@ -665,7 +665,7 @@
             "module": 5
         },
         {
-            "question_id": "m5_q8",
+            "question_id": "CLA_M5_Q08",
             "question_text": "What is the best description of an outbound system?",
             "question_type": "MCQ",
             "options": {
@@ -679,7 +679,7 @@
             "module": 5
         },
         {
-            "question_id": "m5_q9",
+            "question_id": "CLA_M5_Q09",
             "question_text": "Why is the trigger such an important part of outbound?",
             "question_type": "MCQ",
             "options": {
@@ -693,7 +693,7 @@
             "module": 5
         },
         {
-            "question_id": "m5_q10",
+            "question_id": "CLA_M5_Q10",
             "question_text": "What makes a real organic loop different from a campaign?",
             "question_type": "MCQ",
             "options": {
@@ -707,7 +707,7 @@
             "module": 5
         },
         {
-            "question_id": "1",
+            "question_id": "CLA_M6_Q01",
             "question_text": "A growth team notices that users often stop returning, even though they do not complain about product quality or price. Which interpretation best fits the framework presented?",
             "question_type": "MCQ",
             "options": {
@@ -721,7 +721,7 @@
             "module": 6
         },
         {
-            "question_id": "2",
+            "question_id": "CLA_M6_Q02",
             "question_text": "Which option best explains why external triggers are strategically weaker than internal triggers in long-term retention design?",
             "question_type": "MCQ",
             "options": {
@@ -735,7 +735,7 @@
             "module": 6
         },
         {
-            "question_id": "3",
+            "question_id": "CLA_M6_Q03",
             "question_text": "According to the hook model described, which sequence correctly represents a fully functioning habit loop?",
             "question_type": "MCQ",
             "options": {
@@ -749,7 +749,7 @@
             "module": 6
         },
         {
-            "question_id": "4",
+            "question_id": "CLA_M6_Q04",
             "question_text": "A team improves onboarding emails but still sees weak long-term retention. Based on the framework, what is the strongest explanation?",
             "question_type": "MCQ",
             "options": {
@@ -763,7 +763,7 @@
             "module": 6
         },
         {
-            "question_id": "5",
+            "question_id": "CLA_M6_Q05",
             "question_text": "A company sends the same email on day 1, day 3, and day 7 to every new user regardless of what they actually did. Why is this approach criticised?",
             "question_type": "MCQ",
             "options": {
@@ -777,7 +777,7 @@
             "module": 6
         },
         {
-            "question_id": "6",
+            "question_id": "CLA_M6_Q06",
             "question_text": "Which of the following best captures the difference between B2B retention and B2C retention?",
             "question_type": "MCQ",
             "options": {
@@ -791,7 +791,7 @@
             "module": 6
         },
         {
-            "question_id": "7",
+            "question_id": "CLA_M6_Q07",
             "question_text": "A team loses customers because cards expire, mandates fail, or payments are declined, even though those customers did not intend to leave. What kind of churn is this, and what should be the first response?",
             "question_type": "MCQ",
             "options": {
@@ -805,7 +805,7 @@
             "module": 6
         },
         {
-            "question_id": "8",
+            "question_id": "CLA_M6_Q08",
             "question_text": "Which statement best distinguishes a referral loop from a network effect?",
             "question_type": "MCQ",
             "options": {
@@ -819,7 +819,7 @@
             "module": 6
         },
         {
-            "question_id": "9",
+            "question_id": "CLA_M6_Q09",
             "question_text": "A team launches a “refer a friend” offer during user sign-up, before users have experienced any meaningful result. Why is this likely to underperform?",
             "question_type": "MCQ",
             "options": {
@@ -833,7 +833,7 @@
             "module": 6
         },
         {
-            "question_id": "10",
+            "question_id": "CLA_M6_Q10",
             "question_text": "A retention dashboard shows a steep early drop, then a flattening core that stays active over time. Which interpretation is most accurate?",
             "question_type": "MCQ",
             "options": {
@@ -847,7 +847,7 @@
             "module": 6
         },
         {
-            "question_id": "11",
+            "question_id": "CLA_M7_Q01",
             "question_text": "Two companies generate the same average revenue per account in month one, but one grows much faster over the next year. According to the framework, what is the most defensible explanation?",
             "question_type": "MCQ",
             "options": {
@@ -861,7 +861,7 @@
             "module": 7
         },
         {
-            "question_id": "12",
+            "question_id": "CLA_M7_Q02",
             "question_text": "Which pricing structure is most directly designed to create expansion as a customer’s team grows over time?",
             "question_type": "MCQ",
             "options": {
@@ -875,7 +875,7 @@
             "module": 7
         },
         {
-            "question_id": "13",
+            "question_id": "CLA_M7_Q03",
             "question_text": "Why can a freemium model create powerful acquisition but remain economically dangerous if designed poorly?",
             "question_type": "MCQ",
             "options": {
@@ -889,7 +889,7 @@
             "module": 7
         },
         {
-            "question_id": "14",
+            "question_id": "CLA_M7_Q04",
             "question_text": "A company wants to improve retention by default rather than re-earning every purchase from scratch. Which pricing structure best supports that goal?",
             "question_type": "MCQ",
             "options": {
@@ -903,7 +903,7 @@
             "module": 7
         },
         {
-            "question_id": "15",
+            "question_id": "CLA_M7_Q05",
             "question_text": "A team observes that its existing customer base grows revenue even without adding new customers. Which metric best captures this phenomenon?",
             "question_type": "MCQ",
             "options": {
@@ -917,7 +917,7 @@
             "module": 7
         },
         {
-            "question_id": "16",
+            "question_id": "CLA_M7_Q06",
             "question_text": "A B2B company with strong upsell performance wants to move NRR materially higher, but it has already extracted most of the easy upgrades from its existing pricing ladder. Based on the module’s logic, what should it consider next?",
             "question_type": "MCQ",
             "options": {
@@ -931,7 +931,7 @@
             "module": 7
         },
         {
-            "question_id": "17",
+            "question_id": "CLA_M7_Q07",
             "question_text": "In a seven-stage B2B pipeline, what is the most important difference between a pipeline “list” and a pipeline “system”?",
             "question_type": "MCQ",
             "options": {
@@ -945,7 +945,7 @@
             "module": 7
         },
         {
-            "question_id": "18",
+            "question_id": "CLA_M7_Q08",
             "question_text": "Which combination best describes a strong stage definition in a B2B revenue pipeline?",
             "question_type": "MCQ",
             "options": {
@@ -959,7 +959,7 @@
             "module": 7
         },
         {
-            "question_id": "19",
+            "question_id": "CLA_M7_Q09",
             "question_text": "A revenue leader reports healthy pipeline coverage above 3x quota, yet the team is still likely to miss the target. What is the most likely explanation based on the framework?",
             "question_type": "MCQ",
             "options": {
@@ -973,7 +973,7 @@
             "module": 7
         },
         {
-            "question_id": "20",
+            "question_id": "CLA_M7_Q10",
             "question_text": "A company increases lead volume aggressively, but revenue barely improves because deals stall in the middle of the sales process. What is the most defensible diagnosis?",
             "question_type": "MCQ",
             "options": {
@@ -987,7 +987,7 @@
             "module": 7
         },
         {
-            "question_id": "21",
+            "question_id": "CLA_M8_Q01",
             "question_text": "A growth team has 40 possible experiments but can realistically run only 6 in a quarter. What problem is the ICE framework primarily designed to solve in this situation?",
             "question_type": "MCQ",
             "options": {
@@ -1001,7 +1001,7 @@
             "module": 8
         },
         {
-            "question_id": "22",
+            "question_id": "CLA_M8_Q02",
             "question_text": "A team gives a confidence score of 9 to an experiment because “everyone in the brainstorming session felt it would work.” According to the framework, what is the best diagnosis?",
             "question_type": "MCQ",
             "options": {
@@ -1015,7 +1015,7 @@
             "module": 8
         },
         {
-            "question_id": "23",
+            "question_id": "CLA_M8_Q03",
             "question_text": "Why can a fast-to-ship experiment still rank below a slower one in a well-run ICE process?",
             "question_type": "MCQ",
             "options": {
@@ -1029,7 +1029,7 @@
             "module": 8
         },
         {
-            "question_id": "24",
+            "question_id": "CLA_M8_Q04",
             "question_text": "A backlog contains dozens of ideas, but nobody can quickly tell what is running, what is waiting, or what has been learned. What is the most accurate diagnosis?",
             "question_type": "MCQ",
             "options": {
@@ -1043,7 +1043,7 @@
             "module": 8
         },
         {
-            "question_id": "25",
+            "question_id": "CLA_M8_Q05",
             "question_text": "Why does the framework insist that every active experiment must have exactly one owner?",
             "question_type": "MCQ",
             "options": {
@@ -1057,7 +1057,7 @@
             "module": 8
         },
         {
-            "question_id": "26",
+            "question_id": "CLA_M8_Q06",
             "question_text": "Which of the following best describes a properly designed decision rule?",
             "question_type": "MCQ",
             "options": {
@@ -1071,7 +1071,7 @@
             "module": 8
         },
         {
-            "question_id": "27",
+            "question_id": "CLA_M8_Q07",
             "question_text": "Why is “iterate” treated as a bounded option rather than an open-ended one?",
             "question_type": "MCQ",
             "options": {
@@ -1085,7 +1085,7 @@
             "module": 8
         },
         {
-            "question_id": "28",
+            "question_id": "CLA_M8_Q08",
             "question_text": "A metric shows a large improvement, but the team still should not use it in a decision rule because it is a vanity metric. Which test most directly exposes that problem?",
             "question_type": "MCQ",
             "options": {
@@ -1099,7 +1099,7 @@
             "module": 8
         },
         {
-            "question_id": "29",
+            "question_id": "CLA_M8_Q09",
             "question_text": "A team allocates 100% of its quarter to planned experiments with no slack capacity. Why is this considered dangerous?",
             "question_type": "MCQ",
             "options": {
@@ -1113,7 +1113,7 @@
             "module": 8
         },
         {
-            "question_id": "30",
+            "question_id": "CLA_M8_Q10",
             "question_text": "What is the biggest difference between treating AARRR as a checklist and treating it as a system?",
             "question_type": "MCQ",
             "options": {

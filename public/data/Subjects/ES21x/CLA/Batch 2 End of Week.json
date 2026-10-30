@@ -7,7 +7,7 @@
     },
     "questions": [
         {
-            "question_id": "Passage_1",
+            "question_id": "CLA_M1_P01",
             "question_text": "Reference Context: Rishav can make a round-trip to Jadavpur from College Street to do a task that takes 1 hour to complete and gives him utility worth Rs 500. Rishav ONLY has the following two ways to commute to Jadavpur from College Street:\n1. Rishav can purchase a return ticket for the metro, which costs Rs 50 and results in a total commute time of 1 hour. Thus, if Rishav takes metro to travel to Jadavpur, it takes him 2 hours to complete the task.\n2. Another option is to travel using a city bus, which costs Rs 30 in total, resulting in a total commute time of 3 hours. Thus, if Rishav takes city bus to travel to Jadavpur, it takes him 4 hours to complete the task.\nWhen Rishav is not traveling or working on the specific task, he can work and earn Rs 100 per hour.",
             "question_type": "SUBJECTIVE",
             "is_passage": true,
@@ -22,7 +22,7 @@
             "module": 1
         },
         {
-            "question_id": "CLA1_Q1",
+            "question_id": "CLA_M1_Q01",
             "question_text": "What is the opportunity cost of traveling by bus?",
             "question_type": "MCQ",
             "options": {
@@ -34,10 +34,10 @@
             "correct_option_label": "D",
             "explanation": "Opportunity cost is the explicit cost plus the implicit cost (foregone wages). Explicit cost for the bus is Rs 30. The implicit cost is the wages lost during the total 4 hours taken (3 hours commute + 1 hour task), which is $4 \\times 100 = Rs 400$. Total Opportunity Cost = $30 + 400 = Rs 430$.",
             "module": 1,
-            "passage_id": "Passage_1"
+            "passage_id": "CLA_M1_P01"
         },
         {
-            "question_id": "CLA1_Q2",
+            "question_id": "CLA_M1_Q02",
             "question_text": "What is the Opportunity cost of travelling by metro?",
             "question_type": "MCQ",
             "options": {
@@ -49,10 +49,10 @@
             "correct_option_label": "B",
             "explanation": "Explicit cost for the metro is Rs 50. Total time taken is 2 hours (1 hour commute + 1 hour task). Implicit cost is the foregone wages for 2 hours: $2 \\times 100 = Rs 200$. Total Opportunity Cost = $50 + 200 = Rs 250$.",
             "module": 1,
-            "passage_id": "Passage_1"
+            "passage_id": "CLA_M1_P01"
         },
         {
-            "question_id": "CLA1_Q3",
+            "question_id": "CLA_M1_Q03",
             "question_text": "What is the net economic benefit of Rishav by travelling using metro?",
             "question_type": "MCQ",
             "options": {
@@ -64,10 +64,10 @@
             "correct_option_label": "B",
             "explanation": "Net economic benefit is Total Benefit minus Total Cost. Total Benefit from the task is Rs 500. Total Opportunity Cost of using the metro is Rs 250 (as calculated in Q2). Net Benefit = $500 - 250 = Rs 250$.",
             "module": 1,
-            "passage_id": "Passage_1"
+            "passage_id": "CLA_M1_P01"
         },
         {
-            "question_id": "CLA1_Q4",
+            "question_id": "CLA_M1_Q04",
             "question_text": "What is the new opportunity cost of traveling by bus for Debayan, who is identical to Rishav except that he can earn hourly wage of only Rs 50 when not traveling?",
             "question_type": "MCQ",
             "options": {
@@ -79,10 +79,10 @@
             "correct_option_label": "D",
             "explanation": "Debayan's implicit cost for the 4-hour bus option is $4 \\times 50 = Rs 200$. The explicit cost is Rs 30. Total Opportunity Cost = $30 + 200 = Rs 230$.",
             "module": 1,
-            "passage_id": "Passage_1"
+            "passage_id": "CLA_M1_P01"
         },
         {
-            "question_id": "CLA1_Q5",
+            "question_id": "CLA_M1_Q05",
             "question_text": "What is the new opportunity cost of traveling by metro for Debayan?",
             "question_type": "MCQ",
             "options": {
@@ -94,10 +94,10 @@
             "correct_option_label": "D",
             "explanation": "Debayan's implicit cost for the 2-hour metro option is $2 \\times 50 = Rs 100$. The explicit cost is Rs 50. Total Opportunity Cost = $50 + 100 = Rs 150$.",
             "module": 1,
-            "passage_id": "Passage_1"
+            "passage_id": "CLA_M1_P01"
         },
         {
-            "question_id": "Passage_2",
+            "question_id": "CLA_M1_P02",
             "question_text": "Reference Context: Imagine a situation where potential buyers of flats and current flat owners considering selling their properties suddenly come to the realization that flat prices are expected to rise significantly next year. This shift in expectations about future price increases could have several immediate and long-term effects on the housing market.",
             "question_type": "SUBJECTIVE",
             "is_passage": true,
@@ -112,7 +112,7 @@
             "module": 1
         },
         {
-            "question_id": "CLA1_Q6",
+            "question_id": "CLA_M1_Q06",
             "question_text": "What is the likely immediate effect on the demand for flats in the current market when buyers expect prices to rise significantly next year?",
             "question_type": "MCQ",
             "options": {
@@ -124,10 +124,10 @@
             "correct_option_label": "B",
             "explanation": "If consumers expect prices to be higher in the future, their current demand for the good will increase as they aim to make the purchase before the price goes up.",
             "module": 1,
-            "passage_id": "Passage_2"
+            "passage_id": "CLA_M1_P02"
         },
         {
-            "question_id": "CLA1_Q7",
+            "question_id": "CLA_M1_Q07",
             "question_text": "How will the supply of flats in the current market likely change when sellers expect prices to rise significantly next year?",
             "question_type": "MCQ",
             "options": {
@@ -139,10 +139,10 @@
             "correct_option_label": "C",
             "explanation": "When sellers anticipate future price increases, they tend to hoard or hold back current inventory, leading to a leftward shift (decrease) in current supply.",
             "module": 1,
-            "passage_id": "Passage_2"
+            "passage_id": "CLA_M1_P02"
         },
         {
-            "question_id": "CLA1_Q8",
+            "question_id": "CLA_M2_Q01",
             "question_text": "What is the likely impact on the price of flats in the current market if both demand increases and supply decreases due to expectations of higher future prices?",
             "question_type": "MCQ",
             "options": {
@@ -154,10 +154,10 @@
             "correct_option_label": "B",
             "explanation": "An increase in demand (rightward shift) coupled with a decrease in supply (leftward shift) definitively pushes the equilibrium price upward.",
             "module": 2,
-            "passage_id": "Passage_2"
+            "passage_id": "CLA_M1_P02"
         },
         {
-            "question_id": "CLA1_Q9",
+            "question_id": "CLA_M2_Q02",
             "question_text": "If sellers hold off on selling their flats due to expectations of higher prices next year, what is the likely short-term impact on the market?",
             "question_type": "MCQ",
             "options": {
@@ -169,10 +169,10 @@
             "correct_option_label": "A",
             "explanation": "Holding off sales decreases current supply, creating excess demand (a shortage) at the current price, which naturally drives the price upward.",
             "module": 2,
-            "passage_id": "Passage_2"
+            "passage_id": "CLA_M1_P02"
         },
         {
-            "question_id": "CLA1_Q10",
+            "question_id": "CLA_M2_Q03",
             "question_text": "The demand for chocolate is: $Q_d = 100 - 10P$\nAnd the supply of chocolate is: $Q_s = 10 + 20P$\nWhere $P$ is the price of chocolate.\nFind the equilibrium price and quantity of chocolate.",
             "question_type": "MCQ",
             "options": {
@@ -186,7 +186,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q1",
+            "question_id": "CLA_M2_Q04",
             "question_text": "What occurs when the market price of a product falls below its equilibrium price?",
             "question_type": "MCQ",
             "options": {
@@ -200,7 +200,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q2",
+            "question_id": "CLA_M2_Q05",
             "question_text": "If the cross-price elasticity of demand between two goods is POSITIVE, what does this indicate about their relationship?",
             "question_type": "MCQ",
             "options": {
@@ -214,7 +214,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q3",
+            "question_id": "CLA_M2_Q06",
             "question_text": "What does a perfectly vertical demand curve for a commodity indicate?",
             "question_type": "MCQ",
             "options": {
@@ -228,7 +228,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q4",
+            "question_id": "CLA_M2_Q07",
             "question_text": "What is the effect of an increase in the supply of a commodity on equilibrium?",
             "question_type": "MCQ",
             "options": {
@@ -242,7 +242,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q5",
+            "question_id": "CLA_M2_Q08",
             "question_text": "If the percentage increase in the quantity of a commodity demanded is smaller than the percentage fall in price, the price elasticity of demand is:",
             "question_type": "MCQ",
             "options": {
@@ -256,7 +256,7 @@
             "module": 2
         },
         {
-            "question_id": "Passage_3",
+            "question_id": "CLA_M2_P01",
             "question_text": "Reference Context: The supply of labor is given by: $L^S = 12w$\nwhere $L^S$ represents the quantity of labor supplied (in millions of hours) and $w$ is the wage rate per hour.\nThe demand for labor (in millions of hours) is given by: $L^D = 96 - 12w$",
             "question_type": "SUBJECTIVE",
             "is_passage": true,
@@ -271,7 +271,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q6",
+            "question_id": "CLA_M2_Q09",
             "question_text": "What is the free-market wage rate and employment level?",
             "question_type": "MCQ",
             "options": {
@@ -283,10 +283,10 @@
             "correct_option_label": "A",
             "explanation": "Set $L^S = L^D$: $12w = 96 - 12w \\Rightarrow 24w = 96 \\Rightarrow w = 4$. Substitute $w = 4$ into $L^S$: $L = 12(4) = 48$ million hours.",
             "module": 2,
-            "passage_id": "Passage_3"
+            "passage_id": "CLA_M2_P01"
         },
         {
-            "question_id": "CLA2_Q7",
+            "question_id": "CLA_M2_Q10",
             "question_text": "If the government sets a minimum wage of $6 per hour, how many people will be employed?",
             "question_type": "MCQ",
             "options": {
@@ -298,10 +298,10 @@
             "correct_option_label": "C",
             "explanation": "At a minimum wage of $w = 6$, the quantity of labor demanded is $L^D = 96 - 12(6) = 24$. The quantity supplied is $L^S = 12(6) = 72$. Employment is determined by the short side of the market (demand), so 24 million hours will be employed.",
             "module": 2,
-            "passage_id": "Passage_3"
+            "passage_id": "CLA_M2_P01"
         },
         {
-            "question_id": "CLA2_Q8",
+            "question_id": "CLA_M2_Q11",
             "question_text": "Instead of the minimum wage, the government introduces labor subsidies, where each employer is paid a subsidy of Rs 2 for every hour of labor done by the employee. What will the new equilibrium wage and employment level be?",
             "question_type": "MCQ",
             "options": {
@@ -313,10 +313,10 @@
             "correct_option_label": "A",
             "explanation": "A subsidy to employers decreases their effective wage cost to $w - 2$. The new demand curve is $L^D = 96 - 12(w - 2) = 120 - 12w$. Setting $L^S = L^D$: $12w = 120 - 12w \\Rightarrow 24w = 120 \\Rightarrow w = 5$. Employment is $12(5) = 60$ million hours.",
             "module": 2,
-            "passage_id": "Passage_3"
+            "passage_id": "CLA_M2_P01"
         },
         {
-            "question_id": "CLA2_Q9",
+            "question_id": "CLA_M2_Q12",
             "question_text": "If the government wants to maximum the revenue from taxing the consumers, which type of good should it tax?",
             "question_type": "MCQ",
             "options": {
@@ -330,7 +330,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q10",
+            "question_id": "CLA_M2_Q13",
             "question_text": "A company raises the price of its product by 15%, and total revenue increases. What does this suggest about the price elasticity of demand?",
             "question_type": "MCQ",
             "options": {
@@ -344,7 +344,7 @@
             "module": 2
         },
         {
-            "question_id": "Passage_4",
+            "question_id": "CLA_M3_P01",
             "question_text": "Reference Context: The following table provides information on the total cost of Lily's ice cream production:\n\n| Quantity of Ice Cream (in Litres) | Total Cost (in Rs) |\n| --- | --- |\n| 0 | 60 |\n| 1 | 100 |\n| 2 | 130 |\n| 3 | 170 |\n| 4 | 230 |\n| 5 | 310 |\n| 6 | 420 |",
             "question_type": "SUBJECTIVE",
             "is_passage": true,
@@ -359,7 +359,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA3_Q1",
+            "question_id": "CLA_M3_Q01",
             "question_text": "Find Average Total Cost (ATC) for 6 units of Ice Cream.",
             "question_type": "MCQ",
             "options": {
@@ -371,10 +371,10 @@
             "correct_option_label": "C",
             "explanation": "Average Total Cost (ATC) is Total Cost divided by Quantity. For 6 units, the Total Cost is Rs 420. $ATC = 420 / 6 = Rs 70$.",
             "module": 3,
-            "passage_id": "Passage_4"
+            "passage_id": "CLA_M3_P01"
         },
         {
-            "question_id": "CLA3_Q2",
+            "question_id": "CLA_M3_Q02",
             "question_text": "What is the Marginal Cost (MC) when the production increases from 4 units to 5 units of ice cream?",
             "question_type": "MCQ",
             "options": {
@@ -386,10 +386,10 @@
             "correct_option_label": "B",
             "explanation": "Marginal Cost is the change in Total Cost when quantity increases by one unit. $MC = TC(5) - TC(4) = 310 - 230 = Rs 80$.",
             "module": 3,
-            "passage_id": "Passage_4"
+            "passage_id": "CLA_M3_P01"
         },
         {
-            "question_id": "CLA3_Q3",
+            "question_id": "CLA_M3_Q03",
             "question_text": "At which level of output does the Average Total Cost start increasing?",
             "question_type": "MCQ",
             "options": {
@@ -401,10 +401,10 @@
             "correct_option_label": "B",
             "explanation": "Calculate ATC for each level: ATC(2)=65, ATC(3)=56.67, ATC(4)=57.5. Since ATC drops from Q=2 to Q=3 but goes up at Q=4 (from 56.67 to 57.5), it starts increasing at 4 units.",
             "module": 3,
-            "passage_id": "Passage_4"
+            "passage_id": "CLA_M3_P01"
         },
         {
-            "question_id": "CLA3_Q4",
+            "question_id": "CLA_M3_Q04",
             "question_text": "You are constructing an apartment building, and your market research department initially estimated revenues of Rs 9 Crore, while the engineering department estimated costs of Rs 6 crore, of which spending Rs. 1.5 comes from laying the foundation. After spending Rs. 1.5 crore on the foundation, a recession causes the revenue estimate to be revised down to Rs. 5.0 crore. Given this situation, should you complete the apartment building?",
             "question_type": "MCQ",
             "options": {
@@ -418,7 +418,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA3_Q5",
+            "question_id": "CLA_M3_Q05",
             "question_text": "A competitive firm’s short-run supply curve is its _________ cost curve above its _________ cost curve.",
             "question_type": "MCQ",
             "options": {
@@ -432,7 +432,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA3_Q6",
+            "question_id": "CLA_M3_Q06",
             "question_text": "A profit-maximizing firm in a competitive market is currently producing 100 units of output. It has average total cost of $8, and fixed cost of $200. Suppose the average revenue is $7.\n\nWhat is its average variable cost?",
             "question_type": "MCQ",
             "options": {
@@ -446,7 +446,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA3_Q7",
+            "question_id": "CLA_M3_Q07",
             "question_text": "What would be your recommendation for the firm in Q6?",
             "question_type": "MCQ",
             "options": {
@@ -460,7 +460,7 @@
             "module": 3
         },
         {
-            "question_id": "Passage_5",
+            "question_id": "CLA_M3_P02",
             "question_text": "Reference Context: The short-run cost function of a company is given by the equation: $TC = 200 + 55q$. Where TC is the total cost (in thousands) and q is the total quantity of output (in thousands).",
             "question_type": "SUBJECTIVE",
             "is_passage": true,
@@ -475,7 +475,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA3_Q8",
+            "question_id": "CLA_M3_Q08",
             "question_text": "What is the company’s Fixed Cost?",
             "question_type": "MCQ",
             "options": {
@@ -487,10 +487,10 @@
             "correct_option_label": "A",
             "explanation": "Fixed Costs are costs that do not vary with the quantity produced. In the total cost equation $TC = 200 + 55q$, the constant term is 200.",
             "module": 3,
-            "passage_id": "Passage_5"
+            "passage_id": "CLA_M3_P02"
         },
         {
-            "question_id": "CLA3_Q9",
+            "question_id": "CLA_M3_Q09",
             "question_text": "If the company produces 100,000 units of goods (q = 100), what would be its Average Variable Cost (AVC)?",
             "question_type": "MCQ",
             "options": {
@@ -502,10 +502,10 @@
             "correct_option_label": "D",
             "explanation": "The Variable Cost (VC) part of the equation is $55q$. Average Variable Cost (AVC) is $VC / q = 55q / q = 55$. This remains constant at all output levels for this linear cost function.",
             "module": 3,
-            "passage_id": "Passage_5"
+            "passage_id": "CLA_M3_P02"
         },
         {
-            "question_id": "CLA3_Q10",
+            "question_id": "CLA_M3_Q10",
             "question_text": "The government imposes a $1,000 per year license fee on all pizza restaurants. As a result, which cost curves shift?",
             "question_type": "MCQ",
             "options": {
@@ -519,7 +519,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA4_Q1",
+            "question_id": "CLA_M4_Q01",
             "question_text": "For a profit-maximizing monopoly that charges a single price, what is the relationship between price P, marginal revenue MR, and marginal cost MC?",
             "question_type": "MCQ",
             "options": {
@@ -533,7 +533,7 @@
             "module": 4
         },
         {
-            "question_id": "CLA4_Q2",
+            "question_id": "CLA_M4_Q02",
             "question_text": "If a monopoly’s fixed costs increase, its price will _________ and its profit will _________.",
             "question_type": "MCQ",
             "options": {
@@ -547,7 +547,7 @@
             "module": 4
         },
         {
-            "question_id": "CLA4_Q3",
+            "question_id": "CLA_M4_Q03",
             "question_text": "Which of the following statements about price discrimination is true?",
             "question_type": "MCQ",
             "options": {
@@ -561,7 +561,7 @@
             "module": 4
         },
         {
-            "question_id": "CLA4_Q4",
+            "question_id": "CLA_M4_Q04",
             "question_text": "A natural monopoly exists when:",
             "question_type": "MCQ",
             "options": {
@@ -575,7 +575,7 @@
             "module": 4
         },
         {
-            "question_id": "CLA4_Q5",
+            "question_id": "CLA_M4_Q05",
             "question_text": "Price discrimination is more likely to be successful when:",
             "question_type": "MCQ",
             "options": {
@@ -589,7 +589,7 @@
             "module": 4
         },
         {
-            "question_id": "Passage_6",
+            "question_id": "CLA_M4_P01",
             "question_text": "Reference Context: A monopolist has a fixed cost of Rs 5 and a constant marginal cost of Rs 6. The demand for its product is given in the table below:\n\n| Price (in Rs) | Quantity |\n| --- | --- |\n| Rs 10 | 1 unit |\n| Rs 9 | 2 units |\n| Rs 8 | 3 units |\n| Rs 7 | 4 units |\n| Rs 6 | 5 units |",
             "question_type": "SUBJECTIVE",
             "is_passage": true,
@@ -604,7 +604,7 @@
             "module": 4
         },
         {
-            "question_id": "CLA4_Q6",
+            "question_id": "CLA_M4_Q06",
             "question_text": "What is the total revenue when the firm sells 3 units?",
             "question_type": "MCQ",
             "options": {
@@ -616,10 +616,10 @@
             "correct_option_label": "B",
             "explanation": "Total Revenue (TR) is Price multiplied by Quantity. At 3 units, the price is Rs 8. $TR = 8 \\times 3 = Rs 24$.",
             "module": 4,
-            "passage_id": "Passage_6"
+            "passage_id": "CLA_M4_P01"
         },
         {
-            "question_id": "CLA4_Q7",
+            "question_id": "CLA_M4_Q07",
             "question_text": "What is the marginal revenue when output increases from 2 to 3 units?",
             "question_type": "MCQ",
             "options": {
@@ -631,10 +631,10 @@
             "correct_option_label": "A",
             "explanation": "TR at 2 units is $9 \\times 2 = 18$. TR at 3 units is $8 \\times 3 = 24$. Marginal Revenue is the change in TR: $24 - 18 = Rs 6$.",
             "module": 4,
-            "passage_id": "Passage_6"
+            "passage_id": "CLA_M4_P01"
         },
         {
-            "question_id": "CLA4_Q8",
+            "question_id": "CLA_M4_Q08",
             "question_text": "At what quantity does the monopolist maximize profit?",
             "question_type": "MCQ",
             "options": {
@@ -646,10 +646,10 @@
             "correct_option_label": "C",
             "explanation": "Profit is maximized where MR = MC. MC is constant at Rs 6. From Q7, we know MR between 2 and 3 units is Rs 6. Therefore, MR = MC at 3 units.",
             "module": 4,
-            "passage_id": "Passage_6"
+            "passage_id": "CLA_M4_P01"
         },
         {
-            "question_id": "CLA4_Q9",
+            "question_id": "CLA_M4_Q09",
             "question_text": "What is the optimal price the monopolist should charge to maximize profit?",
             "question_type": "MCQ",
             "options": {
@@ -661,10 +661,10 @@
             "correct_option_label": "C",
             "explanation": "As determined in Q8, the profit-maximizing quantity is 3 units. According to the demand schedule, the price consumers are willing to pay for 3 units is Rs 8.",
             "module": 4,
-            "passage_id": "Passage_6"
+            "passage_id": "CLA_M4_P01"
         },
         {
-            "question_id": "CLA4_Q10",
+            "question_id": "CLA_M4_Q10",
             "question_text": "What is the maximal profit of the monopolist?",
             "question_type": "MCQ",
             "options": {
@@ -676,7 +676,7 @@
             "correct_option_label": "D",
             "explanation": "Profit = TR - TC. At 3 units, $TR = 24$. Total Cost is Fixed Cost plus Variable Cost: $TC = 5 + (6 \\times 3) = 5 + 18 = 23$. Max Profit = $24 - 23 = Rs 1$.",
             "module": 4,
-            "passage_id": "Passage_6"
+            "passage_id": "CLA_M4_P01"
         }
     ]
 }
