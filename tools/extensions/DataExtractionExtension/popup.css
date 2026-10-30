@@ -394,3 +394,31 @@ body {
     background: var(--navy-03);
     border-color: var(--navy-30);
 }
+.course-row .course-name {
+    flex: 1;
+}
+
+.module-toggle {
+    margin-left: auto;
+    flex-shrink: 0;
+    padding: 2px 6px;
+    border: 1px solid var(--navy-15);
+    background: var(--paper);
+    color: var(--navy-70);
+    font: 11px var(--sans);
+    cursor: pointer;
+}
+
+.module-toggle:hover {
+    background: var(--navy-03);
+}
+
+.module-list {
+    padding-left: 22px;
+    font-size: 12px;
+    color: var(--navy-70);
+}
+
+.module-row .course-name {
+    font-size: 12px;
+}

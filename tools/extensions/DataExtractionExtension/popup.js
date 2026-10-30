@@ -60,11 +60,15 @@ function renderCourseList(courseData) {
     const savedIds = new Set(data.selectedCourseIds || []);
 
     courses.forEach(course => {
+      const item = document.createElement('div');
+      item.className = 'course-item';
+
       const label = document.createElement('label');
       label.className = 'course-row';
 
       const cb = document.createElement('input');
       cb.type = 'checkbox';
+      cb.className = 'course-cb';
       cb.value = course.courseId;
       cb.dataset.name = course.name;
       cb.checked = savedIds.has(course.courseId);
@@ -81,27 +85,101 @@ function renderCourseList(courseData) {
       name.className = 'course-name';
       name.textContent = course.name;
 
+      const toggle = document.createElement('button');
+      toggle.type = 'button';
+      toggle.className = 'module-toggle';
+      toggle.textContent = 'All modules ▾';
+
+      const moduleList = document.createElement('div');
+      moduleList.className = 'module-list hidden';
+
+      toggle.addEventListener('click', e => { e.preventDefault(); toggleModules(course, item, moduleList, toggle); });
+
       label.appendChild(cb);
       label.appendChild(checkmark);
       label.appendChild(name);
-      courseListDiv.appendChild(label);
+      label.appendChild(toggle);
+      item.appendChild(label);
+      item.appendChild(moduleList);
+      courseListDiv.appendChild(item);
     });
 
     applyCourseFilter();
   });
 }
 
+// Modules (chapters) are fetched lazily the first time a course's dropdown is opened.
+// Until then, or while every module is ticked, the course compiles in full.
+async function toggleModules(course, item, moduleList, toggle) {
+  const opening = moduleList.classList.contains('hidden');
+  moduleList.classList.toggle('hidden', !opening);
+  if (!opening || item.dataset.loaded) return;
+
+  moduleList.textContent = 'Loading modules…';
+  const response = await chrome.runtime.sendMessage({ type: 'GET_COURSE_CHAPTERS', courseId: course.courseId });
+  moduleList.textContent = '';
+  if (response?.status !== 'fetched' || !response.chapters.length) {
+    moduleList.textContent = 'Could not load modules.';
+    return;
+  }
+  item.dataset.loaded = '1';
+
+  const makeRow = (text, cls) => {
+    const row = document.createElement('label');
+    row.className = 'course-row module-row';
+    const box = document.createElement('input');
+    box.type = 'checkbox';
+    box.className = cls;
+    box.checked = true;
+    const mark = document.createElement('span');
+    mark.className = 'checkbox';
+    const span = document.createElement('span');
+    span.className = 'course-name';
+    span.textContent = text;
+    row.append(box, mark, span);
+    moduleList.appendChild(row);
+    return box;
+  };
+
+  const allBox = makeRow('All modules', 'module-all');
+  const boxes = response.chapters.map(ch => {
+    const box = makeRow(ch, 'module-cb');
+    box.value = ch;
+    return box;
+  });
+
+  const refresh = () => {
+    const n = boxes.filter(b => b.checked).length;
+    allBox.checked = n === boxes.length;
+    toggle.textContent = (n === boxes.length ? 'All modules' : `${n}/${boxes.length} modules`) + ' ▾';
+    // Picking a module implies the course; un-ticking every module drops it.
+    item.querySelector('.course-cb').checked = n > 0;
+    updateStartButton();
+    updateSelectAllState();
+  };
+  allBox.addEventListener('change', () => { boxes.forEach(b => b.checked = allBox.checked); refresh(); });
+  boxes.forEach(b => b.addEventListener('change', refresh));
+}
+
+function selectedChapters(item) {
+  if (!item.dataset.loaded) return null;
+  const boxes = Array.from(item.querySelectorAll('input.module-cb'));
+  const picked = boxes.filter(b => b.checked).map(b => b.value);
+  // Course ticked again after clearing every module means "whole course".
+  return picked.length === boxes.length || !picked.length ? null : picked;
+}
+
 function updateStartButton() {
-  const checked = courseListDiv.querySelectorAll('input[type="checkbox"]:checked');
+  const checked = courseListDiv.querySelectorAll('input.course-cb:checked');
   startBtn.disabled = checked.length === 0;
 }
 
 function applyCourseFilter() {
   const query = courseSearch.value.trim().toLowerCase();
-  const rows = courseListDiv.querySelectorAll('.course-row');
+  const rows = courseListDiv.querySelectorAll('.course-item');
   let visible = 0;
   rows.forEach(row => {
-    const name = row.querySelector('.course-name')?.textContent.toLowerCase() || '';
+    const name = row.querySelector('.course-cb')?.dataset.name.toLowerCase() || '';
     const match = !query || name.includes(query);
     row.classList.toggle('hidden', !match);
     if (match) visible++;
@@ -112,13 +190,13 @@ function applyCourseFilter() {
 }
 
 function updateSelectAllState() {
-  const visibleBoxes = Array.from(courseListDiv.querySelectorAll('.course-row:not(.hidden) input[type="checkbox"]'));
+  const visibleBoxes = Array.from(courseListDiv.querySelectorAll('.course-item:not(.hidden) input.course-cb'));
   const allChecked = visibleBoxes.length > 0 && visibleBoxes.every(cb => cb.checked);
   selectAllCb.checked = allChecked;
 }
 
 function saveSelectedCourses() {
-  const selected = Array.from(courseListDiv.querySelectorAll('input[type="checkbox"]:checked'))
+  const selected = Array.from(courseListDiv.querySelectorAll('input.course-cb:checked'))
     .map(cb => cb.value);
   chrome.storage.local.set({ selectedCourseIds: selected });
 }
@@ -157,7 +235,7 @@ goToDashboard.addEventListener('click', () => {
 });
 
 selectAllCb.addEventListener('change', () => {
-  const visibleBoxes = Array.from(courseListDiv.querySelectorAll('.course-row:not(.hidden) input[type="checkbox"]'));
+  const visibleBoxes = Array.from(courseListDiv.querySelectorAll('.course-item:not(.hidden) input.course-cb'));
   visibleBoxes.forEach(cb => cb.checked = selectAllCb.checked);
   updateStartButton();
   saveSelectedCourses();
@@ -166,8 +244,8 @@ selectAllCb.addEventListener('change', () => {
 courseSearch.addEventListener('input', applyCourseFilter);
 
 startBtn.addEventListener('click', async () => {
-  const selected = Array.from(courseListDiv.querySelectorAll('input[type="checkbox"]:checked'))
-    .map(cb => ({ courseId: cb.value, name: cb.dataset.name }));
+  const selected = Array.from(courseListDiv.querySelectorAll('input.course-cb:checked'))
+    .map(cb => ({ courseId: cb.value, name: cb.dataset.name, chapters: selectedChapters(cb.closest('.course-item')) }));
 
   showOnly(progressSection);
   renderProgress({ percent: 0 });
