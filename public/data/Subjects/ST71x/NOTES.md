@@ -4070,3 +4070,1060 @@ Siblings become partners by choice, not co-owners by accident, through: **purpos
 - **Four capability gaps:** financial, managerial, knowledge, alliances.
 - **Governance:** family chair lowers internationalisation; experienced independent directors (especially distant markets) and cross-generational involvement raise it.
 - **Family CEOs prefer lower-commitment modes;** joint ventures give local knowledge with partial control.
+
+# Module 6: Family Business Governance
+
+## 6.0 Module Overview
+
+### 6.0.1 Welcome to the Module
+
+- As a family business grows, informal arrangements become insufficient for **decision-making, family relationships and ownership responsibilities**.
+- The challenge is not to create more structures, but to ensure the **right decisions are made by the right people in the right forums**.
+- The module links the **three-circle model** (family, business, ownership) with the **Four-Room model** (Board Room, Management Room, Family Room, Owner Room).
+- Governance structures **define responsibilities, establish accountability and coordinate the interests** of family members, business leaders and owners.
+
+| Circle | Structures covered |
+|--------|--------------------|
+| **Business circle** | Board of directors, composition, independent directors, board committees, advisory board |
+| **Family circle** | Family forum, family council, family constitution, family office, trusts, family bank, holding companies |
+| **Ownership circle** | Ownership choices, ownership strategy, shareholders' agreement, owner council, shareholders' assembly |
+
+- For each structure the focus is on **what it does, why it matters, how it relates to other structures and when it becomes necessary**.
+
+### 6.0.2 Learning Outcomes
+
+- Explain the roles of governance structures across the family, business and ownership circles using the **Three-Circle and Four-Room models**.
+- Differentiate the responsibilities of **boards, family councils, owner councils and management structures**.
+- Evaluate **board composition, independence and committee structures** in relation to effective oversight and accountability.
+- Analyse the purpose and interrelationships of **family forums, family constitutions, family offices and trusts**.
+- Assess **ownership structures and governance arrangements** for suitability to a family business's objectives and stage of development.
+
+## 6.1 Governance in the Business Circle
+
+### 6.1.1 Governance Across the Three Circles and Four Rooms
+
+#### Definition: Governance
+
+- **Governance** establishes **how decisions are made, who holds authority and where different responsibilities belong**.
+- The **three-circle model** identifies the **systems** involved (family, business, ownership).
+- The **Four-Room model** gives those interests a **place to make decisions** and distinguishes the conversations and decisions appropriate to each room.
+- Problem case: founder discusses strategy at the dinner table, family disagreements influence board decisions, ownership questions are settled informally.
+
+#### The four rooms
+
+| Room | Main responsibility |
+|------|---------------------|
+| **Owner Room** | Who may own, how ownership rights are exercised, which decisions owners reserve |
+| **Board Room** | Appointing and overseeing the CEO, approving strategy, overseeing risk |
+| **Management Room** | Running the business and executing strategy day to day |
+| **Family Room** | Family unity, education, shared values, next-generation development |
+
+- The dinner table should not automatically become the boardroom.
+- A decision should be made by the people with the **right responsibility**, not the most senior or loudest family member.
+- When boundaries are unclear: **family status substitutes for competence, ownership is confused with management, important decisions are made in the wrong room**.
+- Governance becomes more important as the family, ownership group and business grow in size and complexity.
+
+### 6.1.2 The Board's Purpose
+
+#### Key Concept: Board purpose
+
+- Most jurisdictions require a board by law, but a legal board does **not automatically mean good governance**.
+- The board sits **between owners and managers**.
+- Its purpose is to **oversee the business, not to run it**; it guides and challenges management.
+- Members' responsibility is to the **business, not personal relationships**; they must understand owners' interests and be **willing to challenge them** rather than just agree.
+
+#### Litmus test for board-level decisions
+
+- Ask: **"Is this decision significant enough that a bad choice could place the business at substantial risk?"** If yes, it belongs at board level.
+
+| Board-level decision | Note |
+|----------------------|------|
+| **Hiring or firing the CEO** | Often considered the single most important decision |
+| **Succession planning** | Management succession should be planned well ahead (family or non-family firm) |
+| **Executive compensation** | Includes separating pay for management from returns to owners |
+| **Strategy and material decisions** | Approving direction, acquisitions, significant resource access including loans |
+| **Regulatory and legal compliance** | Ensuring statutory obligations are met |
+| **Annual dividend** | Board sets it against the owner room's policy, the year's performance and business needs |
+
+#### Four types of family business board
+
+| Type | Legal authority | Advantage |
+|------|-----------------|-----------|
+| **Informal advisory board** | None | Easy to implement, very flexible, very limited liability |
+| **Formal advisory board** | None | Structured advice; builds **institutional memory** |
+| **Fiduciary board** | **Full and binding** | Empowered to make tough decisions; legal responsibility to all shareholders |
+| **Hybrid (fiduciary + advisory)** | **Partial**: only members with fiduciary responsibility hold legal authority | Mixes the advantages of both |
+
+- The appropriate structure depends on the firm's **needs, readiness and legal responsibilities**.
+- A family firm may begin with an advisory board and move towards a fiduciary board as stakes and need for accountable oversight increase.
+
+#### Three broad board functions
+
+| Function | Nature |
+|----------|--------|
+| **Service** | Advice and counsel to owners and management, drawing on directors' prior experience |
+| **Resource provision** | Legitimacy, networks, access to capital, talent and customers |
+| **Control** | Monitoring performance and risk; the classic oversight function |
+
+- Each of the three roles shapes and strengthens the effectiveness of the board.
+
+### 6.1.3 The Board's Service Role
+
+#### Definition: Board capital
+
+- **Board capital** is the resource backing the role a director plays. Two types:
+
+| Type | Components |
+|------|------------|
+| **Human capital** | Prior experience, functional expertise, industry knowledge, reputation, prior governance experience |
+| **Relational (social) capital** | Ties with capital providers (banks, private equity), customers, talent pools, regulators, other firms |
+
+- A board populated only with relatives tends to be rich in **either human or social capital alone**; this is a **common, fixable gap**.
+
+#### How the service role works in practice
+
+| Contribution | Description |
+|--------------|-------------|
+| **Strategic sounding board** | Pressure-tests strategic plans and expansion decisions **before** hard commitment of resources |
+| **Succession mentoring** | Coaches next-generation leaders; adds credibility the family alone cannot supply |
+| **Outside (detached) view** | Judges a new hire, partner or risk that the founder is too emotionally close to judge rationally |
+
+- The service role is available even on an **informal advisory board** with no legal authority (typically a family firm's first governance step); formalising through a fiduciary board strengthens it.
+
+#### Insider vs outside director
+
+| Aspect | Inside / family director | Outside director |
+|--------|--------------------------|------------------|
+| **Firm-specific knowledge** | Deep, built over many years | Builds over time, starts much later |
+| **Willingness to challenge the founder** | Constrained (e.g. challenging one's father) | Structurally freer to say harder truths |
+| **Stake in preserving status quo** | Very high (career, identity, relationships) | Lower; own reputation is at stake if firm performs poorly |
+
+#### Service-role self-check
+
+- Does the director's **background match the firm's actual strategic questions**?
+- Has a director **shifted the CEO's mind on something material** this year? (No purely "yes people".)
+- Is at least one director **able and willing to mentor the next generation** and actively develop a rising family leader?
+- Is the environment **safe to raise hard questions**, including a family member's own performance?
+- Test of value: has the board's advice influenced important decisions, and can directors raise difficult issues openly?
+
+### 6.1.4 The Board's Resource Provisioning Role
+
+#### Definition: Resource dependence theory
+
+- **Resource dependence theory:** organisations are **not self-sufficient**; survival depends on managing dependence on external resources, and the **board is a strategic tool** for this.
+
+#### Resources a board can open up
+
+| Resource | How |
+|----------|-----|
+| **Capital** | Director with lender or investor relationships eases access to debt or equity |
+| **Talent** | Well-networked director helps recruit senior hires the family cannot reach |
+| **Customers and partners** | Opens commercial doors, joint ventures, distribution deals |
+| **Regulatory and reputational standing** | Credible outside name reassures regulators, lenders and the market |
+
+#### Four channels through which a board provides resources
+
+| Channel | Meaning |
+|---------|---------|
+| **Advice and counsel** | Strategic input drawing on resource-relevant expertise |
+| **Legitimacy** | Outside director's reputation reassures lenders, customers, regulators, stakeholders |
+| **Channels of communication** | Director's network surfaces partnerships and opportunities early |
+| **Preferential access to resources** | Better financing terms, stronger hires, warmer introductions |
+
+#### Legitimacy: when an outside name matters
+
+- **Before a listing or capital raise:** independent directors signal readiness for public or institutional investor scrutiny.
+- **Before a cross-border partnership:** an internationally credible name reassures a foreign counterparty.
+- **Before regulatory scrutiny intensifies:** a respected name can influence how closely a regulator watches and reads the firm's actions.
+
+#### Limit and design question
+
+- **Limit:** borrowed legitimacy must be **backed by real governance**; otherwise it is a **reputational risk** for both the firm and the director.
+- **Design question:** Where are the firm's real resource dependencies, and do directors' networks actually reach them, or merely overlap with what the family already knows?
+
+### 6.1.5 The Board's Control Role
+
+#### Two principal-agent problems
+
+| Type | Conflict | Level in family firms | Board's job |
+|------|----------|-----------------------|-------------|
+| **Type 1** | Owners vs managers | Typically **lower**, especially when family members manage the firm | Monitor management on the owners' behalf |
+| **Type 2** | **Controlling family vs minority shareholders** | Often **very high** (concentrated control, fewer checks) | Protect minority shareholders from extraction of profits by the controlling family |
+
+#### Four functions of the control role
+
+| Function | Detail |
+|----------|--------|
+| **Performance monitoring** | Evaluate financial results against history, peers and **what was planned** |
+| **Related-party transactions oversight** | Transactions with firms owned by the family or relatives must be priced and approved at **arm's length** and by **non-conflicted directors** |
+| **Compensation oversight** | Fairness and equity of pay; separate pay for the management role from returns to ownership |
+| **Compliance and risk oversight** | Regulatory, financial, operational, reputational and succession risk |
+
+- Two risks needing special attention in family firms: **tunneling** and **related-party transactions**.
+
+#### Definition: Tunneling
+
+- **Tunneling:** a controlling shareholder extracts **private value from the firm at the expense of minority shareholders**, very often through related-party transactions.
+- **Example:** an item available at arm's length for 10 lakh rupees is bought from a brother's or brother-in-law's firm at 15 lakh; everyone's money, including minority shareholders', is transferred to the family.
+
+#### Board's role on related-party transactions
+
+| Step | Action |
+|------|--------|
+| 1. Define and disclose | Define who counts as related; maintain and **annually update a disclosure register** |
+| 2. Approve independently | Only **independent directors or non-conflicted owners** approve; never the interested party |
+| 3. Price at arm's length | Use **competitive bids** or **outside valuation**, not purely internal estimates |
+| 4. Monitor continuously | Internal audit tracks related-party exposure and reports to the board, which evaluates it |
+
+- Effective control must address **managerial accountability** and the risk that controlling owners disadvantage minority shareholders; clear disclosure and independent review matter most for related-party transactions.
+
+### 6.1.6 How Big Should a Family Firm's Board Be?
+
+#### Evidence on board size
+
+- **Jensen's rule of thumb** (from research): effectiveness tends to **decline once a board grows past roughly 7 or 8 members**.
+- Why bigger is not automatically safer: **individual accountability shrinks, coordination costs rise, and genuine debate gives way to polite, diplomatic consensus**; exactly what a controlling family least needs.
+
+#### Family-specific pressure
+
+- The trap: ensuring **every family branch gets a seat**, treating the board as a **representation body** rather than a decision-making body.
+- A 15% or 20% representation body cannot do a 7-person board's job.
+- Give branches voice through a **family council or owner council** (family-level governance) and **reserve board seats for competence and business demand**.
+
+#### Practical guidelines
+
+| Guideline | Detail |
+|-----------|--------|
+| **Legal minimums** | In India, set by the **Companies Act** and **SEBI-related thresholds** |
+| **Effective size** | **5 to 9 members** for most family firms |
+| **New seat** | Add for a **specific, nameable gap** (expertise or oversight need), not entitlement |
+| **Revisit at transitions** | Generational handoff, major acquisition, outside capital, significant decision or other transition |
+| **Test effectiveness** | Can everybody speak candidly? Is the **board** deciding, or the **owner room**? |
+
+- A board should not be too small to play its role, nor so large that the liabilities of largeness make it ineffective.
+
+### 6.1.7 Board Capital and Diversity
+
+#### Four types of board diversity
+
+| Type | Meaning |
+|------|---------|
+| **Demographic** | Representation across demographic characteristics |
+| **Functional / expertise** | Different functional skills |
+| **Experiential** | Experience across different business situations |
+| **Network** | Access to wider professional networks |
+
+- A family board is drawn from a **small, related pool**; each diversity type fills specific gaps.
+
+#### Evidence on diverse boards
+
+- Diverse boards tend to **monitor more rigorously**.
+- They bring **wider perspectives**, surfacing risks a homogeneous board would miss, and **reduce groupthink**.
+- The link between board diversity and **market performance** is **weaker and context-dependent**; diversity does not guarantee better performance.
+- Treat diversity as a **governance quality lever**, not a silver bullet; the strongest case is **monitoring, risk detection and perspectives**.
+
+#### Why family firms struggle to diversify
+
+| Barrier | Explanation |
+|---------|-------------|
+| **Socio-emotional cost** | An outside seat feels like loss of family identity and control, not a governance gain |
+| **Succession customs** | Seats inherited along existing family career paths reproduce existing patterns |
+| **Privacy and trust concerns** | Outsiders are seen as risky; uncertainty about what they will learn about the family firm |
+
+#### Discipline to fix it
+
+- **Separate** the question of **who deserves a seat** (family inheritance fairness) from **what the board needs to do its job** (competence, board capital, diversity).
+
+### 6.1.8 Types of Board Members
+
+#### Chairman and CEO duality
+
+- The **chairman** leads the **board's process and culture**, not the company's operations.
+- **CEO duality:** the same person is both **chairman and CEO** (founder or family member). The person running the company then runs the meeting meant to oversee them.
+- It is the **single most common way a family firm board quietly loses its control function**.
+
+#### Types of directors
+
+| Type | Contribution | Risk / test |
+|------|--------------|-------------|
+| **Promoter directors** (founders and controlling shareholders) | Deep firm-specific knowledge, founding vision, personal commitment | A board of promoters alone has **no structural source of challenge**; fix by balancing with **independent and non-family professional directors** |
+| **Family directors (non-promoters)** | Ownership interest, business knowledge, family context | Test: **"Would this person earn this seat if they were not family?"** If no, the seat is **family room standing borrowed into the boardroom** |
+| **Executive directors** | Participate in running the business as well as serving on the board | Roles must be clearly understood so governance is not confused with management |
+| **Non-executive directors** | Focus on board responsibilities; can strengthen oversight when their role is substantive | Roles must be clear so oversight is not confused with management |
+| **Independent directors** | Expertise, challenge, credible control | See below |
+
+#### Independent directors
+
+- Statutory definitions vary by jurisdiction; in India the **Companies Act** specifies who is qualified (or disqualified) to be an independent director.
+
+| Benefit | Explanation |
+|---------|-------------|
+| **Professionalising the boardroom** | Family members prepare and behave more formally in front of a credible outsider |
+| **Managing family careers honestly** | Can raise hard truths about a family member's performance where emotions otherwise drive decisions |
+| **Complementary expertise** | Fills gaps the family's own career paths never produce |
+| **Lending credible control** | No related-party interest to protect (which legal definitions require), so the control role gains credibility |
+
+| Characteristic of an effective independent director | Detail |
+|-----------------------------------------------------|--------|
+| **Willingness to disagree** | Not merely technical independence; no currying favour |
+| **Relevant expertise** | Matched to the firm's **named gaps**, not a generic CV |
+| **Real-time commitment** | Reads papers closely, visits operations, knows the business, engages in decisions |
+| **Comfort inside a family system** | Neither **deferential** to family authority nor **dismissive** of it; respects the family's role without being overridden |
+
+#### Symbolic vs substantive independence
+
+- **Symbolic:** independent on paper only; **substantive:** independent in the room.
+- If directors **check the chairman's face or look for behavioural cues before speaking**, independence has been lost whatever the paperwork says.
+
+### 6.1.9 Why Family Firms Resist Independent Directors
+
+#### Reasons for resistance
+
+| Reason | Detail |
+|--------|--------|
+| **Confidentiality** | Keep financial and compensation details within the family |
+| **Loss of control** | Fear of outsiders' influence |
+| **Loss of freedom** | Restrictions on informal decision-making |
+| **Tenure limits** | Prefer a long-term, fully trusted relationship with one outsider |
+| **Secrecy** | Keep family conflict and succession doubts private |
+
+#### Effectiveness of independent directors
+
+- **Work best** when appointment and reappointment are **genuinely independent of the controlling family**.
+- **Work worst** under **pure symbolic compliance**: selected and retained at the family's pleasure, familiar to the family, and likely to toe the family line.
+- **Effectiveness tracks the appointment process more than the director's individual credentials.**
+
+#### Governance failures
+
+- **Satyam, IL&FS** (and the **Tata-Mistry dispute**) are used to question independence and effective oversight.
+- Shared lesson: **independence on the roster is not independence in practice**.
+- **Structure, information and culture** decide whether independence is symbolic or substantive.
+- When a family trust, family governance mechanism or ownership structure effectively controls board appointments, how independent can a director's vote be?
+- Genuine independence requires: appointment process, access to information, willingness to question the controlling family, and freedom to exercise judgement.
+
+### 6.1.10 Board Committee Structures
+
+#### Typical committees
+
+- **Audit committee**, **nomination and remuneration committee**, **stakeholder committee**, **risk management or strategy committees**, **IT committees**; some are mandatory, others vary across boards.
+
+| Committee | Purpose |
+|-----------|---------|
+| **Audit Committee** | Financial reporting, internal controls, related-party transactions |
+| **Nomination and Remuneration Committee** | Director appointments, succession, executive pay |
+| **Stakeholder Relationship Committee** | Investor and shareholder grievances |
+| **Risk Management Committee** | Enterprise risk oversight where applicable |
+| **CSR Committee** (India) | Mandated in India |
+
+#### Power vs symbolic committees
+
+| Feature | Power committee | Symbolic committee |
+|---------|-----------------|--------------------|
+| **Authority** | Real delegated authority | Exists to satisfy a checklist |
+| **Meetings** | Meet substantively | Ritualistic |
+| **Effect** | Findings and recommendations significantly influence or change decisions | **Ratifies** decisions made elsewhere |
+
+- Power committees are typically mandated ones (audit, nomination and remuneration; CSR in India), but mandated status does not guarantee performance.
+- **One-year test:** has the committee **influenced or changed a real decision** recently, or only ratified one already made?
+- Hard to answer from outside; a family member joining the board should keep asking it.
+
+#### Management committees
+
+- Used to **delegate without losing oversight**.
+- Discipline: **written delegation of authority with clear limits**, clear reporting structures, and anything above the line **still goes to the board**.
+
+#### Design principles
+
+- Design committees **deliberately, not out of habit**; periodically review whether each still has a **real and current mandate**.
+- Staff for **substantive roles**, with a chair who insists on **real agendas**.
+- **Few well-run committees beat many hollow symbolic ones.**
+
+### 6.1.11 Family Members on the Board
+
+#### Family presence across ownership stages
+
+- Ownership stages: **controlling owner, sibling partnership, cousin consortium, family federation**.
+- Typical board composition varies by stage, so **governance requirements change with each stage**.
+- As the family grows, giving every branch a board seat becomes increasingly difficult; a **family council** provides a separate channel for family representation so the board stays focused on governance and business competence.
+
+#### Family presence across firm size and complexity
+
+- **Small, simple structures:** an all-family board can genuinely work at any generation.
+- Consider the number of businesses and geographies; ask whether **outside expertise** (human or social board capital the family cannot supply) is needed.
+- Track growth of complexity; **pace board change with business requirements**.
+- Do **not** populate seats from **generational pride** ("my father had a seat") or equal branch representation.
+
+#### Interaction of board, top management and family council
+
+- Three decision areas: **succession, strategy and the family constitution**.
+- For each, clarify who **generates, advises, validates and approves**; the roles differ by decision, but **none of the three can work in isolation** and responsibilities should not be duplicated.
+
+#### Generational self-check
+
+| Question | Meaning |
+|----------|---------|
+| **Does it match the complexity?** | Does composition reflect today's business complexity? |
+| **Is representation answered?** | Is there a written answer for managing growing shareholder numbers, rather than every branch on the board? |
+| **Is there a real council relationship?** | Does family voice reach governance through a proper channel, separating family/ownership governance from business governance? |
+
+### 6.1.12 Key Governance Questions
+
+#### Questions before a family member takes a board seat (answer honestly, preferably in writing)
+
+| Area | Questions |
+|------|-----------|
+| **Readiness and competence** | Does the person want the **responsibilities** or the **title and standing**? Do they understand the accountability? |
+| **Process and accountability** | **How is the person evaluated and by whom?** Use a written process applied as rigorously as to anyone else. Can they be **removed in practice**, or does family standing make non-renewal impossible? Are **boundaries respected**? (Board disagreements resurface as family grievances.) |
+| **Compensation and exit** | Is pay **set and disclosed the same way** for family and non-family directors? Is there a **defined term with a real decision point**? Is there an **honourable way to step down**? |
+
+- Being family may explain why someone is considered, but does **not** establish readiness; a seat needs preparation, competence, accountability and willingness to act in the interests of the business and its shareholders.
+
+### 6.1.13 Board of Advisors
+
+#### Definition: Advisory board
+
+- A **board of advisors** is a **lighter-weight first step**: it brings **service and resource provision value without fiduciary exposure and with no binding authority ceded**.
+
+#### How it works
+
+| Feature | Detail |
+|---------|--------|
+| **Cadence** | Regular meetings, commonly **quarterly**, frequent enough to build continuity |
+| **Topics** | Clear scope: strategy, major decisions, succession progress, external market developments |
+| **No binding vote** | Allows candid input; the owner is free to accept or decline |
+| **Light charter** | Scope, meeting frequency, confidentiality, modest compensation |
+
+- Many firms retain **both** an advisory board and a fiduciary board; often the same person serves on both.
+
+#### Who serves
+
+| Advisor type | Value |
+|--------------|-------|
+| **Retired operating executives** | Relevant industry experience; have run something comparable |
+| **Functional specialists** | Domain expertise, e.g. finance, technology, international expansion, digital transformation |
+| **Family business consultants** | Recognise patterns across family systems; show a problem is not unique and how others solved it |
+
+#### Benefits, challenges and graduation
+
+| Aspect | Detail |
+|--------|--------|
+| **Benefit** | Low risk, real value; owner more comfortable than with a binding constraint |
+| **Challenge** | Advice is non-binding and can be **quietly set aside** when inconvenient to the founder |
+| **When to graduate to fiduciary or hybrid board** | When stakes and **outside capital** justify binding, accountable oversight: more geographies and businesses, multiple people involved, outsiders brought in, accountability to more people; it can no longer be run in the ownership circle alone and must run as a professional organisation |
+
+## 6.2 Governance in the Family Circle
+
+### 6.2.1 Why Formalise Family Governance?
+
+#### Purpose of family governance
+
+- No law requires family governance (unlike a board in the business circle).
+- It provides a structure for managing **family relationships, expectations, education and continuity**; it **complements business governance rather than replacing it**.
+- It lets the board focus on the business.
+
+| Dimension | Firm (business) governance | Family governance |
+|-----------|---------------------------|-------------------|
+| **Structures** | Board, vision, strategic decisions, top management team | Family forum, family council, constitution, family office |
+| **Focus** | Strategy, performance, operations | Communication, harmony, education of the next generation, transfer of legacy, family values and culture |
+| **Shared goal** | **Longevity and continuity** across generations | **Longevity and continuity** across generations |
+
+- The **interface**: clear communication between owners and the firm's members; keeping the family's **entrepreneurial ability and prosperity** across generations.
+
+#### Cost of staying informal
+
+- **Early stage, founder-led:** governance is the founder's decision; formal structure is not really needed.
+- **Building governance mid-crisis:** emotions run high, trust deficit, structure missing, things can spiral.
+- **Cost of deferral:** no clear **decision rights**, and conflicts easily trigger as the family grows.
+- Best developed **before a crisis**; small first-generation families need not build a full system immediately.
+
+### 6.2.2 Family Governance: Growth Stages and Breakdown Patterns
+
+#### Governance by growth stage
+
+| Stage | Complexity | Governance needed |
+|-------|-----------|-------------------|
+| **Generation 1: controlling owner** | One founder, single business, simple | Founder's judgment; informal conversations and a working board are enough |
+| **Generation 2: sibling partnership** (or controlling owner with rising complexity) | Multiple functions, lines or companies | **First formal step**: regular family meetings, early **family council**, understanding recorded (ideally written) |
+| **Generation 3: cousin consortium** | Multiple entities, geographies, products, cousins running lines | **Full-blown architecture**: family forum, family council, constitution, often a family office; no longer optional |
+
+- Build governance **one level ahead**: founder stage plans for sibling stage; sibling stage plans for cousin stage.
+- Governance should neither formalise everything immediately nor rely on informal practice indefinitely.
+
+#### Four breakdown patterns
+
+| Pattern | What it looks like | Why it recurs |
+|---------|-------------------|---------------|
+| **Loft** | Unclear rules and roles; decisions made at the dinner table; no boundary between family and firm | "We have managed so far"; ignores that what worked at one scale fails as complexity grows ("what has got you here will not take you there") |
+| **Silo** | Each branch runs its own "kingdom" with its own rules, values and culture; little collaboration, nothing holds them together | No cross-connection; each branch thinks it is better off alone |
+| **Missing room** | A room is absent, most often the **owner room**; unclear who decides, nobody "driving the ship"; owners do not meet or agree | Non-managing and managing owners do not meet; no natural forum; governance failure moves into the business |
+| **Messy room** | A room has **lost its purpose** and adds no value; people come and go without understanding the purpose | Business and family change at different paces, so one room becomes messy |
+
+- These patterns explain most family governance failures: what happens in the dining room eventually goes to the boardroom.
+- **Diagnostic questions:** How do fundamental decisions get taken or avoided? Do branches collaborate or function separately?
+
+### 6.2.3 The Family Forum and Council
+
+#### Definition: Family forum
+
+- A **family forum** is a **meeting or event, not a standing body**, for the **entire family**.
+- **Inclusive:** all family members, typically including spouses; no election, competence bar or educational minimum.
+- Decisions to be made explicitly: an **age limit** and whether **in-laws** participate.
+
+| Aspect | Detail |
+|--------|--------|
+| **Purpose** | Connection, bonding, relationship; much less business, more bonding (e.g. a family picnic or getaway) |
+| **Content** | Business changes and leadership updates, suggestions for the council, education of the next generation, family history and legacy |
+| **What good forums do** | Ensure **inclusivity**; leadership shares **updates directly with every member** (transparency); build **bonding across branches**, countering silos; create unity and identity that bridge distance between generations |
+| **Why more important later** | **Cousin bonds do not form automatically** (not raised together); regular meetings build bonding |
+
+#### Definition: Family council
+
+- A **family council** is a **smaller, elected group** that does the work a full forum cannot.
+
+| Feature | Family forum | Family council |
+|---------|--------------|----------------|
+| **Participants** | Everyone; no size limit | Small elected group, usually about **4, 5 or 7** (large councils are unwieldy) |
+| **Election** | None | Elected by the forum |
+| **Form** | Meeting or event | Ongoing governance body |
+| **Eligibility** | All family members | Anyone the forum elects, including non-business members, non-owners or outsiders |
+| **Main purpose** | Connection, education, updates, history, legacy | Leads continuing family governance work and coordinates family-level matters |
+
+- Election by a forum representing multiple branches gives the council stronger weight.
+
+#### Four mandates of the family council
+
+| Mandate | Detail |
+|---------|--------|
+| **Next-generation development** | Educate as shareholders, future professionals and family members; development across **all three circles**, to safeguard business and legacy |
+| **Communication** | Keep branches informed on family, business, management changes and future plans (can use the forum) |
+| **Integration and legacy** | Document family history; pass on legacy |
+| **Family constitution and succession** | Generate the constitution (needed particularly at cousin consortium stage) and **advise the board** on succession |
+
+#### How the council runs
+
+- **Intensive early on:** meets regularly, sets policies, establishes the **purpose** of family and business (carried across generations with only minor modification).
+- **Steady state:** meetings become less frequent.
+- **Complex stage (cousin consortium, multiple business units):** the council mirrors what a board does in a large or listed company, with **committees and a core team**.
+- The forum and council should **not replace the board or owner council**; each has a distinct remit.
+
+#### Examples
+
+- **Dr. Reddy's Laboratories:** distinct family council rules that separate family aspirations from board-level governance decisions.
+- **GMR Group:** multiple branches; a constitution plus a family council, and clear employment rules for how future generations join, enshrined in the constitution.
+
+### 6.2.4 The Family Constitution
+
+#### Definition: Family constitution
+
+- A **family constitution** is a **written document of the family's values, rules, policies and shared principles**, agreed by the whole family.
+
+#### How it is created
+
+- Drafted by a **working group** nominated by the forum and overseen by the family council (or the council itself acts as the working group).
+- Rules and policies are **discussed with all family members before drafting**, brought back to the forum, iterated; dissent is worked through to common ground and **consent by everyone** to the final draft.
+
+#### Legal status
+
+- **Not legally enforceable**: in a dispute between branches, no one can take it to court.
+- It should not automatically be treated as legally equivalent to a shareholders' agreement.
+
+#### Why it still has value
+
+- The **process** is more valuable than the final print ("the journey is more important than the destination"); substantial iteration between council and forum, and the document can last a couple of generations.
+- **Moral commitment:** every member has given it, and there is a **social cost to breaking it** (visible to the whole family); this links to socio-emotional costs in a family business.
+
+#### Constitution vs shareholders' agreement
+
+| Aspect | Family constitution | Shareholders' agreement |
+|--------|---------------------|-------------------------|
+| **Legal enforceability** | **Not** legally enforceable | **Legally enforceable**, especially if reflected in the company's articles of association |
+| **Covers** | Ground rules, family-level policy, values, culture | **Ownership only**: transfer, voting rights, buying, selling, exit |
+| **Basis of compliance** | Moral commitment and social cost | Contract law and company law; court can examine it |
+| **Examples of clauses** | Employment, conduct, governance bodies | First right of refusal, tag-along rights, stake that can be sold |
+
+### 6.2.5 What Goes into a Family Constitution
+
+#### Scope
+
+- Because it is not a legal document but a **social contract**, there are **no boundaries** on what it includes; it should reflect the family's circumstances rather than a **generic template**.
+- Throws up questions branches must answer; reveals aspirations others did not know existed, so issues are **resolved earlier**; once agreed, it becomes binding on all in practice.
+
+#### Typical contents
+
+| Area | Contents |
+|------|----------|
+| **Values and purpose** | Family values, vision and mission; purpose for which the family and business exist |
+| **Employment, titles, compensation, conduct** | See below |
+| **Governance bodies** | Rules for the family forum, council, and board nomination |
+| **Escalation** | Process when family council and board disagree: who convenes, how it is discussed, how it moves forward |
+| **Ownership and liquidity** | Cap on money taken out of the company; permitted purposes (personal use, assets outside the company); awareness of the shareholders' agreement |
+| **Family meetings and decision-making processes** | Frequency, convening, attendance |
+| **Succession and ownership expectations** | Principles and procedures for succession |
+
+#### Employment policy
+
+- Codifies **entry requirements** (minimum education, outside work experience), the **selection method** and role (structured interview, entry test, starting level).
+- **No one is parachuted into a role**; being family does not guarantee a job.
+
+#### Compensation policy
+
+- **Family scale vs market scale**, and the link between them. Matching or exceeding market scale means **taking money out of the business** that could be reinvested; family may gain more as owners by growing firm value than by dividends or salary.
+- Also covers how increments are shared and how annual bonuses are decided; these increase family liquidity but are choices enshrined in the constitution.
+
+#### Performance and conduct
+
+- How each family member's **performance is rated**; consequences of over-performance (money or higher holding) and under-performance (lesser role or responsibility); whether family and non-family are **held to the same standard**.
+- **Code of conduct** within the family and in the business: communication norms, conflict handling, rules on **employing spouses**.
+
+#### Rules for governing bodies
+
+| Body | Rules the constitution can set |
+|------|-------------------------------|
+| **Family council** | Size (e.g. maximum 7 or 8), eligibility, election rules, composition (multiple branches, gender balance, mixed ages) |
+| **Family forum** | How often it meets, who convenes, who arranges, who attends, age limit, in-law participation |
+| **Board** | Which family members can be nominated, how nominated, elected and selected, tenure, rotation, independent directors and their tenure, pay structure |
+
+### 6.2.6 Building a Family Constitution
+
+#### Process
+
+- A **deliberative, iterative** process; the first draft is easy, but discussion starts when it reaches the forum.
+- Like a country's constitution, it will need **amendments** over time.
+
+| Step | Detail |
+|------|--------|
+| **1. Starting point** | What the family currently does, what it is satisfied with and what it is not |
+| **2. Define the mandate and drafting group** | Mandate; members, size and qualifications; term limits and length of terms; meeting frequency; what it can decide, recommend or must escalate; funding and whether members are paid |
+| **3. Involve family members** | Discuss with the whole family; iterate between the group and the forum |
+| **4. Ratification** | Present to those with real authority and get agreement; not an afterthought |
+| **5. Review and revision** | Set a review cycle; reviewed through the same deliberative process by whoever holds authority later |
+
+- **Ratification:** if the people with real authority are not involved at every stage, they see it as **foisted on them** and it is bound to fail; even if the forum agrees, owners can block it.
+- **Review:** **GMR** is the example of a built-in review cycle; as authority holders change, the constitution is revised to meet the requirements of the new owners, so it stands the test of time.
+- A constitution is more likely to remain useful when members participate meaningfully, understand the reasoning behind provisions and agree on how it will be reviewed; the **process should create shared understanding**, not just produce a document.
+
+### 6.2.7 The Family Office
+
+#### Definition: Family office
+
+- A **family office** is an institution that coordinates **financial, administrative and governance responsibilities** when family wealth has grown in size and complexity beyond what any one member can manage.
+
+#### Three core functions
+
+| Function | Detail |
+|----------|--------|
+| **Investment** | Professionally managing diversified family wealth: movable assets (financial wealth, possibly across borders), immovable/hard assets, and assets in between (e.g. a charter flight or yacht) |
+| **Support** | Tax, legal, insurance, family philanthropy, administration and family tax services, centralised for the whole family |
+| **Governance** | **Administering** the family council, constitution and family meetings (administering, **not deciding**) |
+
+- It is a governance institution with a more financial ambit.
+
+#### When a family needs one
+
+- **Typical trigger:** wealth **outgrows the operating business**, e.g. after a **partial sale or IPO**, a large capital infusion, or members selling stakes to an external party.
+- Before that, if wealth is managed by individuals or largely reinvested in the business, a family office may not be needed.
+
+| Readiness signal | Detail |
+|------------------|--------|
+| **Diversified wealth** | Assets have grown well beyond the operating business |
+| **Complexity** | More branches and generations; informal coordination of investments, insurance and tax becomes hard (e.g. cross-border branches) |
+| **Structural complexity** | Multiple entities, cross-border holdings, trusts, philanthropy |
+| **Recurring unanswered questions** | Administrative questions repeat and there is **no clear owner** of family office tasks |
+
+#### What it is not
+
+- An **administrative setup that supports the council and the board**; **not a decision-making authority**.
+- Not simply an investment department, and **not a substitute for the board, family council or other governance bodies**.
+- It carries out the decisions of the family and board and takes administrative overload from key decision-makers; structure should match the family's actual needs and resources.
+
+### 6.2.8 Types of Family Office
+
+#### Selection
+
+- No single best model; depends on **stage of business, scale and amount of wealth served**.
+
+#### Types
+
+| Type | Description | Key risk / feature |
+|------|-------------|--------------------|
+| **Embedded** | Team inside the operating business, usually 1 or 2 members of the **CFO's team**; staff still part of the company | Thin lines between family finances and business finances; confusion and transfer of funds between family office and operating company |
+| **Virtual** | **Outsourced** to a highly trusted provider with its own dedicated staff | Needs trust; completely separate staff |
+| **Single-family office (SFO)** | Separate team serving **one family exclusively** | Entire cost borne by one family; can **customise** heavily, including for different branches and members |
+| **Multi-family office (MFO)** | Separate office serving **multiple, usually unrelated, families** | Fixed costs shared, so each family pays a fraction; **standard templates**, less customisation |
+
+### 6.2.9 Family Trusts
+
+#### Definition: Trust
+
+- A trust **separates legal ownership from beneficial ownership**: the trust (via trustees) holds legal title, while beneficiaries receive the benefits, according to the trust deed and applicable law.
+
+#### Why families use trusts
+
+- **Prevents fragmentation of assets:** shareholding splits each generation (e.g. 100% to 50% to 25% to ever smaller shares), making a controlling block impossible and weakening negotiation.
+- Assets are transferred to a trust, keeping the **block together** as one large controlling block usable in negotiation.
+- The trust **transfers economic benefit without transferring legal title**; returns flow to beneficiaries.
+- The **trust deed** enshrines terms; trusts offer **ring-fencing of assets**, management of **capital gains exposure**, and possible **tax advantages**, depending on the legal and tax framework.
+
+#### Parties
+
+| Party | Role |
+|-------|------|
+| **Settlor** | Transfers the asset to the trust |
+| **Trustees** | Manage the trust; hold ownership control; professionals run operations |
+| **Beneficiaries** | Family members; beneficial (not legal) owners |
+
+- Some beneficiaries can be trustees, but not all trustees should be owners: an **independent voice** is needed.
+
+#### Four kinds of trust
+
+| Kind | Feature | Trade-off |
+|------|---------|-----------|
+| **Discretionary** | Trustees decide distribution among a class of beneficiaries | Very flexible, **not very transparent** |
+| **Specific (fixed)** | Each beneficiary's allocation fixed in the trust deed | Very transparent, **less adaptable** |
+| **Revocable** | Settlor can reclaim assets | Protection benefits much weaker |
+| **Irrevocable** | Transfer is permanent; title always with the trust; beneficiaries get only economic gains | Makes sense for **real asset protection** |
+
+#### Example: Tata Trusts and Tata Sons
+
+- **Tata Sons** is the holding company of the Tata group; **Tata Trusts hold about 66%** of Tata Sons and nominate directors to its board.
+- Shareholding percentage alone may not ensure alignment: if the trustees disagree, the percentage means little.
+
+### 6.2.10 The Family Bank, Investment Committee and Strategic Planning Committee
+
+#### Overview
+
+- Three specialised vehicles between the family and ownership governance, each solving a distinct practical problem.
+
+#### Family bank
+
+- An **internal capital allocation mechanism** for family members' funding needs (e.g. start a venture, step outside, run an adjacent venture while employed).
+- Aims: **encourage next-generation entrepreneurship**; build **financial literacy** (P&L, company financials); keep **family capital rotating within the family system**, with returns coming back to the bank.
+
+| Design element | Requirement |
+|----------------|-------------|
+| **Eligibility** | Clear written criteria and policy; decisions not arbitrary or relationship-based |
+| **Formal underwriting** | Judge on **merit** as the market would, not as a favour to a family member |
+| **Pricing** | Interest at **prevailing market rates**, not as a gift |
+| **Loan vs gift** | A loan treated as a gift will **never be repaid** |
+| **Independent oversight** | Prevents **favouritism**; absence leads to loss of family trust |
+
+#### Family investment committee
+
+- Moves investment decisions from whoever runs the business today (assumed to know where the family should invest) to **broader branch representation, professionalised execution and real transparency**.
+
+#### Strategic planning committee
+
+- Runs **parallel planning**: the business strategic plan must take account of the **family's values, goals and constraints**, and the business plan and family plan must stay **in sync**.
+
+#### Common safeguards
+
+- **Written policies, transparent criteria and appropriate oversight** reduce perceived favouritism and preserve trust; unclear responsibilities are a risk.
+
+### 6.2.11 Family Holding Companies, Business Groups and Investment Arms
+
+#### Holding company
+
+- Needed when the enterprise has **diversified beyond one business** and the family needs a structure to govern the **whole portfolio**.
+- A **holding company** owns stakes in multiple companies; a very important **governance vehicle**.
+
+| Function | Detail |
+|----------|--------|
+| **Capital reallocation** | Moves capital between entities with different growth and risk profiles |
+| **Risk and strategy management** | Manages differing strategic requirements of operating companies |
+| **Wider governance structure** | Coordinates ownership, authority and accountability across the group |
+
+- Its usefulness depends on how **authority, accountability and the holding-operating relationship** are defined.
+
+#### Example: Tata Sons
+
+- Holding company of the Tata group; group companies grow differently (e.g. Corus struggling, JLR stable, Tata Steel cyclical, Titan doing well, TCS the main funder of new enterprises, with risk questions as AI emerges).
+
+#### Why holding companies are more common in emerging markets
+
+| Reason | Explanation |
+|--------|-------------|
+| **Underdeveloped capital markets** | Holding company acts like a bank, moving capital between companies |
+| **Lack of developed labour market** | Centralised shared support/talent across group companies |
+| **Weaker contract enforcement** | Internal structure substitutes for weak institutions |
+
+#### Family investment and venture arms
+
+- Growing in India, e.g. **Premji Invest** (belongs to the Premji family): a PE and investment arm **completely separate from Wipro**, with its own management, team and decisions, which can even invest in companies that may compete with Wipro.
+
+## 6.3 Governance in the Ownership Circle
+
+### 6.3.1 Ownership Choices: The Four Types of Family Ownership
+
+#### Key Concept
+
+- Ownership is **not a single arrangement**; different structures create different expectations of control, participation, decision-making and continuity, and distinct governance requirements.
+- Ownership should be a **deliberate long-term choice**, not merely an inheritance outcome.
+
+#### Two dimensions
+
+- **Ownership criteria:** exclusive vs inclusive.
+- **Decision control:** unified vs shared.
+
+| Type | Ownership criteria | Decision control | Example |
+|------|--------------------|------------------|---------|
+| **Sole Owner** | Exclusive | Unified | **House of Camus**: ownership and control concentrated in one successor per generation for over 150 years |
+| **Partnership** | Exclusive | Shared | **COFRA / Brenninkmeijer family (C&A)**: shared but very exclusive; roughly **15-year apprenticeship** before admission as owner |
+| **Concentrated** | Inclusive | Unified | **Vitamix**: inclusive ownership; decision control unified through collaborative leadership |
+| **Distributed** | Inclusive | Shared | **Bacardi Limited**: about 7 generations; inclusive; stakes near 1% each; shared decision-making |
+
+- Survey figures cited (describe that study only, not all family businesses): about **13% Sole Owner, 24% Partnership, 27% Concentrated, 36% Distributed**.
+- Each family firm must choose the model that works best for its unique needs.
+- The choice is **not permanent**: firms may move between types as business or family needs change.
+- **Legal vs enacted type:** what documents say vs how ownership actually functions daily; the divergence can be significant, and **closing that gap is itself a governance act**.
+
+### 6.3.2 The Ownership Alternatives Matrix
+
+#### Ownership strategy
+
+- Choosing an ownership type is not enough; owners need an **explicit strategy** for what they want from ownership (control, liquidity, continuity, participation).
+- Framework: **De Massis and Rondi** (ownership alternatives matrix).
+
+| Dimension | Elements |
+|-----------|----------|
+| **Ownership competencies** | Matching competence, timing competence, governance competence |
+| **Ownership approach** | Custodian vs entrepreneur |
+| **Ownership rights** | Voting vs non-voting |
+| **Ownership activity** | Active vs passive owner |
+
+| Choice | Meaning |
+|--------|---------|
+| **Custodian vs entrepreneur** | Preserving what exists (exploitation) vs actively growing and reshaping it, creating new vehicles in the family galaxy (exploration) |
+| **Voting vs non-voting** | Separates **economic ownership** (dividends, valuation) from **formal decision control**; voting shares carry both |
+| **Passive vs active** | Merely holding a stake vs genuine engagement in ownership and governance of ownership |
+
+#### Why an explicit strategy
+
+- Owners must weigh **financial return against control, legacy and family employment**, over a chosen **time horizon**; balance financial and non-financial wealth as business and family complexity changes.
+- Comparing alternatives makes **trade-offs explicit**; a single structure may not satisfy all branches equally (no universally correct answer).
+
+#### Sequence
+
+1. Agree the **ownership strategy** first (it changes with external and family realities).
+2. Then choose the **ownership type and structure** to serve it.
+- Not the other way round (do not fit strategy to an existing structure).
+
+### 6.3.3 The Shareholders' Agreement
+
+#### Definition: Shareholders' agreement
+
+- The **legally enforceable backbone** of the ownership circle; it binds in law exactly what happens to the shares (the family constitution expresses values; the shareholders' agreement does the opposite).
+
+#### Contents
+
+| Area | Detail |
+|------|--------|
+| **Decision rules** | Majority, supermajority or unanimity thresholds (by branch or decision type) |
+| **Transfer and exit mechanics** | What a shareholder can do with shares; can they go outside the family; process to exit |
+| **Valuation methodology** | How shares are priced when exit or transfer is triggered; who values; external party; method |
+
+#### Decision rules
+
+| Rule | Used for |
+|------|----------|
+| **Simple majority** (e.g. one share, one vote) | Routine operational matters |
+| **Supermajority** (often **75%**) | Consequential decisions: amending the agreement, acquisitions, creating new share classes with differential voting |
+| **Unanimity** | Most fundamental matters: core purpose of the firm, nature of control |
+
+- Share classes matter: some classes carry additional or weaker voting rights.
+
+#### Transfer and exit provisions
+
+| Provision | Meaning |
+|-----------|---------|
+| **Right of first refusal** | Existing shareholders get first offer; no sale to an outsider unless they refuse |
+| **Put right** | Minority can force a buyback under specified conditions (like a put option, triggering exit or transfer) |
+| **Drag-along** | Majority can compel minority to sell alongside them |
+| **Tag-along** | Minority can join a majority sale on the same terms |
+
+#### Enforceability trap (India)
+
+- Case: **V.B. Rangaraj v. V.B. Gopalkrishnan**. A transfer restriction only in the shareholders' agreement and **not also in the articles of association** may be **unenforceable against the company**.
+- **Lesson:** articles of association must reflect and align with the shareholders' agreement. Obtain current legal advice before relying on this point.
+
+### 6.3.4 The Shareholders' or Owner Council
+
+#### Definition: Owner council
+
+- The **owner council** is the **owner room's working body** (Four-Room model): a forum for matters connected specifically to **ownership** (dividends, ownership strategy, future of investments).
+- **Membership follows the ownership stake, not family membership**; this is why its decisions carry **legal weight** compared with the family council.
+
+#### Who sits on it, by ownership type
+
+| Ownership type | Owner council |
+|----------------|---------------|
+| **Sole owner** | No council needed; the owner decides directly |
+| **Partnership** | Admitted partners (per shareholders' agreement and articles of association) constitute the council |
+| **Concentrated** | Family branch or group holding matters, with unified decision control |
+| **Distributed** | A subset of the many owners: **elected or rotating representatives** |
+
+#### Owner council vs board
+
+| Decision | Owner council | Board |
+|----------|--------------|-------|
+| **Major acquisition or sale** | **Approves** | May decide / recommend |
+| **Selecting or removing board members** | **Decides** | Only recommends |
+| **Hiring or firing the CEO** | **Approves** | **Decides** |
+
+#### Owner council vs family council
+
+- **Practical test:** *"Is this decision being made with owner council authority, or has a family council conversation quietly been treated as if it had that authority?"*
+- Carryover from family council to owner council blurs the line between rooms and is **bad governance**.
+- Family council: family relationships, education, values. Owner council: ownership interests and responsibilities. Each needs its own mandate and space.
+
+### 6.3.5 The Shareholders' Assembly
+
+#### Definition: Shareholders' assembly
+
+- The **full body of owners**; in a listed company even a one-share holder is part of it.
+- Must meet **at least once a year** (legal requirement).
+
+#### Functions
+
+- Approves accounts; appoints or removes **directors** and **auditors**, and discusses their terms; approves **dividends**; votes on **special resolutions** at the AGM.
+- Minority shareholders have a right to vote (and to postal ballots), so dissent is recorded even if the majority passes the resolution.
+
+#### Why it matters more in a family firm
+
+- For family members with small shares who are not on the owner council, the assembly is the **one legally guaranteed annual moment** to be heard before all family members and owners.
+- Skipping it costs a family firm more than a widely held firm.
+
+#### Family vs widely held firm
+
+| Dimension | Family ownership | Widely held ownership |
+|-----------|-----------------|-----------------------|
+| **Ownership structure** | Concentrated | Dispersed |
+| **Time horizon** | Very long-term | Short-term (liquidity today; current quarter) |
+| **Agency risk** | **Type 2**: controlling family vs minority shareholders | **Type 1**: owners vs managers |
+| **Owner goals** | **Financial and socio-emotional wealth**; control, identity, legacy and values often weigh at par or above pure financial return | Predominantly **financial return** |
+
+- Formal responsibilities (approving accounts, appointing directors) coexist with concerns about family relationships, control, continuity and minority shareholder interests.
+
+### 6.3.6 Ownership Governance in the Entrepreneurial Family Galaxy
+
+#### Definition: Family galaxy
+
+- A **constellation** of operating firms, family offices, foundations, holding companies, trusts and investment vehicles around the family (at the centre); governance is no longer about one company.
+
+#### Four dimensions
+
+| Dimension | Meaning | Example |
+|-----------|---------|---------|
+| **Mass** | Capital or strategic weight of an entity | **TCS** carries far more weight in Tata Sons than a capital-consuming newer business |
+| **Luminosity** | Visibility to outsiders | Listed TCS is highly visible; the privately held Dorabji Tata Trust (an owner of Tata Sons) is hardly known |
+| **Distance from the centre** | **Control distance**: how closely the family controls the entity vs lets it run independently | Foundation runs at a distance |
+| **Regeneration rate** | How quickly entities are created or retired as the family changes | PremjiInvest participates in many new entities |
+
+#### Premji galaxy example
+
+| Entity | Features |
+|--------|----------|
+| **Wipro** | Listed, highly luminous, high mass, very close to centre |
+| **PremjiInvest** | Family office and investment vehicle; visible to some extent; somewhat distant; capital derived from Wipro; part of many new entities |
+| **Foundation** | Philanthropic; fairly distant; vision and mission defined by the family, then runs independently; not luminous |
+| **Controlling trust** | Controls the Wipro stake; very invisible |
+
+#### Governance implication
+
+- **Each node has different four-room boundaries**, so the galaxy needs a different four-room structure per entity; one common room would become a **messy room**.
+- Effective governance requires clarity about **how entities relate, where decisions are made and how the family's long-term objectives are translated into practice**.
+
+### 6.3.7 Governance Across All Three Circles
+
+#### Three distinct jobs, three sets of structures
+
+| Circle | Central concern | Structures |
+|--------|-----------------|------------|
+| **Business** | Direction, oversight, performance and risk | Board, committees, independent directors, board of advisors |
+| **Family** | Relationships, communication, values and continuity | Forum, council, constitution, family office, trusts, legacy structures (richest set of vehicles) |
+| **Ownership** | Ownership rights, strategy, transfer and exit | Ownership model, shareholders' agreement, owner council, shareholders' assembly, galaxy |
+
+- Left informal, **each circle fails in its own way**.
+- Across all circles: call out **at what stage** each mechanism is required, **document** it, ensure the **entire family agrees**, and **revisit at frequent intervals** as generations and markets change.
+- Fundamental objective: ensure **succession and longevity** of the family and the firm.
+- Governance gives clearer responsibilities, better decisions and greater continuity across generations.
+
+## 6.4 Module Summary
+
+### 6.4.1 Governance in the Three Circles: Consolidated View
+
+#### Staging logic
+
+| Stage | Structures |
+|-------|-----------|
+| **Controlling-owner family** | Minimal formal structures |
+| **Sibling partnership** | Council and the beginnings of a constitution |
+| **Cousin consortium** | Fuller set: forum, council, constitution, often a family office |
+
+#### Vehicles for internal capital and legacy
+
+| Vehicle | Core purpose |
+|---------|--------------|
+| **Family trust** | Separates legal ownership from beneficial interests |
+| **Family bank / investment and planning bodies** | Coordinate internal capital allocation with family-business strategy |
+| **Holding companies, business groups, investment arms** | Govern and fund a diversified family enterprise |
+| **Next-generation development** | Builds future capability through exposure, education, external experience and merit-based progression |
+| **Family archive** | Preserves family history and legacy across generations |
+
+#### Recurring discipline
+
+- **Name it, write it, agree it and revisit it.**
+- Governance keeps decisions in the right room; unclear boundaries let family status replace competence and ownership be confused with management.
+
+## Quick Revision Summary
+
+### Key Definitions
+
+- **Governance:** how decisions are made, who holds authority and where responsibilities belong.
+- **Board:** sits between owners and managers; **oversees, does not run** the business; litmus test is whether a bad decision could place the business at substantial risk.
+- **Board capital:** **human capital** (experience, expertise, reputation) plus **relational/social capital** (networks, access).
+- **Resource dependence theory:** organisations are not self-sufficient; the board manages external dependence.
+- **Tunneling:** controlling shareholder extracts private value at the expense of minority shareholders, often through related-party transactions.
+- **CEO duality:** one person is both chairman and CEO; weakens the control role.
+- **Symbolic vs substantive independence:** independent on paper vs independent in the room.
+- **Power committee:** real delegated authority and influence on decisions; **symbolic committee:** ratifies decisions made elsewhere.
+- **Family forum:** inclusive meeting/event; **family council:** small elected standing body.
+- **Family constitution:** written, moral (not legally enforceable) agreement on values, rules and policies; value lies in the process.
+- **Shareholders' agreement:** legally enforceable ownership contract (decision rules, transfer/exit, valuation).
+- **Family office:** administrative support for investment, support and governance administration; **not** a decision-making authority.
+- **Trust:** separates legal ownership (trustees) from beneficial ownership (beneficiaries); settlor transfers assets.
+- **Owner council:** owner room's working body; membership follows ownership stake.
+- **Shareholders' assembly:** full body of owners; meets at least annually; legally guaranteed moment for every owner to be heard.
+- **Family galaxy:** constellation of entities around the family; dimensions mass, luminosity, distance from centre, regeneration rate.
+
+### Important Relations
+
+- Board-level decisions: CEO hire/fire, succession, executive pay, strategy and material decisions, compliance, annual dividend.
+- Four board types: informal advisory (no authority), formal advisory (no authority), fiduciary (full), hybrid (partial).
+- Board roles: **service + resource provision + control**.
+- Board size: effectiveness declines beyond about 7 or 8 (Jensen); practical range **5 to 9**.
+- Shareholding fragmentation across generations: $100\% \rightarrow 50\% \rightarrow 25\% \rightarrow \dots$, which a trust counters by holding the block together.
+- Ownership types: Sole owner (exclusive, unified); Partnership (exclusive, shared); Concentrated (inclusive, unified); Distributed (inclusive, shared).
+- Decision thresholds: simple majority (routine), supermajority (often 75%, consequential), unanimity (fundamental).
+- Family governance by stage: Gen 1 founder judgment; Gen 2 regular meetings and early council; Gen 3 forum, council, constitution, family office.
+
+### Must-Remember Points
+
+- **Related-party transactions:** define and disclose, approve independently, price at arm's length, monitor continuously.
+- **Four types of board diversity:** demographic, functional, experiential, network; strongest case is monitoring and risk detection, not guaranteed performance.
+- **Four benefits of independent directors:** professionalise boardroom, manage family careers honestly, complementary expertise, credible control.
+- **Independence effectiveness tracks the appointment process**, not just credentials (Satyam, IL&FS, Tata-Mistry).
+- **Family director test:** would this person earn the seat if not family?
+- **Do not give every branch a board seat**; use family or owner council for representation.
+- **Advisory board:** low-risk first step, no binding vote; graduate to fiduciary when stakes and outside capital justify.
+- **Four breakdown patterns:** loft, silo, missing room (often owner room), messy room.
+- **Council mandates:** next-generation development, communication, integration and legacy, constitution and succession.
+- **Constitution:** not legally enforceable; process, moral commitment and social cost give it force; ratification by authority holders is essential; review cycle (GMR).
+- **Family office:** three functions (investment, support, governance administration); trigger is wealth outgrowing the operating business; four types (embedded, virtual, single-family, multi-family).
+- **Four trust kinds:** discretionary, specific, revocable, irrevocable; Tata Trusts hold about 66% of Tata Sons.
+- **Family bank safeguards:** written criteria, formal underwriting, market interest, independent oversight.
+- **Holding companies** are more prevalent in emerging markets (weak capital, labour markets, contract enforcement).
+- **Ownership strategy comes before ownership structure**; legal vs enacted ownership gap is a governance issue.
+- **Enforceability:** transfer restrictions should be in both the shareholders' agreement and the articles of association.
+- **Owner council vs board:** owner council approves acquisitions/sales and decides board membership; board decides CEO hire/fire with owner council approval.
+- **Assembly matters more in family firms** because it is the guaranteed moment for minority family members to be heard; family firms face Type 2 agency and socio-emotional wealth considerations.
+- **Core discipline:** name it, write it, agree it, revisit it.
