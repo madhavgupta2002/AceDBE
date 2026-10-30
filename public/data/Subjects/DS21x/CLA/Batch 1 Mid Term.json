@@ -5,7 +5,7 @@
     },
     "questions": [
         {
-            "question_id": "MT1_Q1",
+            "question_id": "MT_M2_Q01",
             "question_text": "In regression, ____________ means the variance of errors should remain constant across all levels of the independent variables.",
             "question_type": "MCQ",
             "options": {
@@ -20,7 +20,7 @@
             "module": 2
         },
         {
-            "question_id": "MT1_Q2",
+            "question_id": "MT_M2_Q02",
             "question_text": "Which of the following is NOT a necessary assumption in conventional linear regression models?",
             "question_type": "MCQ",
             "options": {
@@ -35,7 +35,7 @@
             "module": 2
         },
         {
-            "question_id": "MT1_Q3",
+            "question_id": "MT_M2_Q03",
             "question_text": "Logistic regression expresses ____________ as a linear function of the independent variables.",
             "question_type": "MCQ",
             "options": {
@@ -50,7 +50,7 @@
             "module": 2
         },
         {
-            "question_id": "MT1_Q4",
+            "question_id": "MT_M2_Q04",
             "question_text": "In the context of regression models, multicollinearity means",
             "question_type": "MCQ",
             "options": {
@@ -65,7 +65,7 @@
             "module": 2
         },
         {
-            "question_id": "MT1_Q5",
+            "question_id": "MT_M2_Q05",
             "question_text": "Consider two scenarios: (I) the dependent variable is continuous, (II) the dependent variable is categorical. Which types of regression models should we utilize for these two scenarios?",
             "question_type": "MCQ",
             "options": {
@@ -80,7 +80,7 @@
             "module": 2
         },
         {
-            "question_id": "MT1_Q6",
+            "question_id": "MT_M1_Q01",
             "question_text": "When is the Wilcoxon Signed-Rank test used?",
             "question_type": "MCQ",
             "options": {
@@ -95,7 +95,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q7",
+            "question_id": "MT_M1_Q02",
             "question_text": "In the Wilcoxon Signed-Rank test, what does the test statistic measure?",
             "question_type": "MCQ",
             "options": {
@@ -110,7 +110,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q8",
+            "question_id": "MT_M1_Q03",
             "question_text": "The chi-square test statistic for independence is calculated as (O represents observed frequencies, E represents expected frequencies)",
             "question_type": "MCQ",
             "options": {
@@ -125,7 +125,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q9",
+            "question_id": "MT_M1_Q04",
             "question_text": "After conducting a chi-square test of independence between two variables, the p-value is found to be 0.003. What should be the most correct interpretation of this?",
             "question_type": "MCQ",
             "options": {
@@ -140,7 +140,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q10",
+            "question_id": "MT_M1_Q05",
             "question_text": "Which of the following is a parametric test?",
             "question_type": "MCQ",
             "options": {
@@ -155,7 +155,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q11",
+            "question_id": "MT_M1_Q06",
             "question_text": "A tea shop owner wants to know if there is a relationship between gender (male and female) and the preferred flavour of tea. The following table summarizes the results. If we want to perform a chi-squared test of independence, what should be the degrees of freedom for that test?\n\n| | **FLAVOUR** | | | |\n| :--- | :---: | :---: | :---: | :---: |\n| **GENDER** | **Mint** | **Normal** | **Ginger** | **Total** |\n| **Male** | 8 | 25 | 19 | 52 |\n| **Female** | 14 | 20 | 10 | 44 |\n| **Total** | 22 | 45 | 29 | 96 |",
             "question_type": "MCQ",
             "options": {
@@ -170,7 +170,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q12",
+            "question_id": "MT_M2_Q06",
             "question_text": "A company wants to predict whether an employee will be promoted (Y=1) or not (Y=0) based on the number of years of experience (X). The company collected relevant data and implemented a logistic regression which led to the estimated coefficients: **$\\hat{\\beta}_0 = 0.3$** (intercept), **$\\hat{\\beta}_1 = 0.2$** (slope parameter corresponding to $X$). What is the probability that an employee with 6 years of experience will be promoted?",
             "question_type": "MCQ",
             "options": {
@@ -185,7 +185,7 @@
             "module": 2
         },
         {
-            "question_id": "MT1_Q13",
+            "question_id": "MT_M1_Q07",
             "question_text": "A physician states that the median number of times he sees each of his patients during the year is 5. To evaluate the validity of this statement, he randomly selects ten of his patients and determines the number of office visits each of them made during the past year. He obtains the following values for the ten patients in his sample: **9, 10, 8, 4, 8, 3, 0, 10, 15, 9.**\n\n| Patient Visits ($X_i$) | Difference ($X_i - 5$) | Absolute Rank | Absolute rank arranged in ascending order | Rank | Signed Rank |\n| :---: | :---: | :---: | :---: | :---: | :---: |\n| 9 | 4 | 4 | 1 | 1 | -1 |\n| 10 | 5 | 5 | 2 | 2 | -2 |\n| 8 | 3 | 3 | 3 | 3.5 | 3.5 |\n| 4 | -1 | 1 | 3 | 3.5 | 3.5 |\n| 8 | 3 | 3 | 4 | 5.5 | 5.5 |\n| 3 | -2 | 2 | 4 | 5.5 | 5.5 |\n| 0 | -5 | 5 | 5 | 7.5 | 7.5 |\n| 10 | 5 | 5 | 5 | 7.5 | 7.5 |\n| 15 | 10 | 10 | 5 | 7.5 | -7.5 |\n| 9 | 4 | 4 | 10 | 10 | 10 |\n\nThe Wilcoxon Signed-Rank test statistic is:\n$W^+ = \\sum(\\text{Positive Signed Ranks})$, and\n$W^- = \\sum(\\text{Negative Signed Ranks})$\n\nWhat will be the value of $W^+$ and $W^-$ for this problem?",
             "question_type": "MCQ",
             "options": {
@@ -200,7 +200,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q14",
+            "question_id": "MT_M1_Q08",
             "question_text": "Two researchers adopted different sampling techniques while investigating the same group of students to find the number of students falling in different intelligence levels. The results are as follows:\n\n| | **No. of students in each level** | | | | |\n| :--- | :---: | :---: | :---: | :---: | :---: |\n| **Researcher** | **Below Average** | **Average** | **Above Average** | **Genius** | **Row Total** |\n| X | 86 | 60 | 44 | 10 | 200 |\n| Y | 40 | 33 | 25 | 2 | 100 |\n| **Column Total** | 126 | 93 | 69 | 12 | **Grand Total = 300** |\n\nCalculate the expected value “Above Average” for Researcher X while using the Chi – Square goodness of fit.",
             "question_type": "MCQ",
             "options": {
@@ -215,7 +215,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q15",
+            "question_id": "MT_M2_Q07",
             "question_text": "A teacher wants to predict a student’s final exam score based on the number of hours they studied. The following table provides data for eight students:\n\n| Hours Studied | Final Exam Score |\n| :--- | :--- |\n| 2 | 50.33 |\n| 4 | 62.5 |\n| 6.5 | 67 |\n| 10.25 | 88 |\n| 8.5 | 82 |\n| 7 | 45 |\n| 5.5 | 42 |\n| 9 | 85 |\n\nHere **$\\hat{\\beta}_0$** (intercept) = 32.85, and **$\\hat{\\beta}_1$** (slope) = 4.91. Predict the exam score of a student who studies 10 hours.",
             "question_type": "MCQ",
             "options": {
@@ -230,7 +230,7 @@
             "module": 2
         },
         {
-            "question_id": "MT2_Q1",
+            "question_id": "MT_M3_Q01",
             "question_text": "An analyst is using an autoregressive (AR) model of order 1 to study the stock price return of Asian Paints (AP). The R-squared value for this model is 0.0006. Which of the following interpretation is WRONG based on the model?",
             "question_type": "MCQ",
             "options": {
@@ -245,7 +245,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q2",
+            "question_id": "MT_M4_Q01",
             "question_text": "A manufacturing company monitors the quality of engine parts using Statistical Process Control (SPC) techniques. Which of the following statements correctly describes how SPC helps in quality management?",
             "question_type": "MCQ",
             "options": {
@@ -260,7 +260,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q3",
+            "question_id": "MT_M4_Q02",
             "question_text": "A retail company tests three ad designs and two call-to-action messages. What is the most critical advantage of using such a design of experiment (DOE) in this case?",
             "question_type": "MCQ",
             "options": {
@@ -275,7 +275,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q4",
+            "question_id": "MT_M3_Q02",
             "question_text": "A marketing team applies logistic regression. Confusion matrix: Actual Yes/Predicted Yes = 50, Actual Yes/Predicted No = 10, Actual No/Predicted Yes = 5, Actual No/Predicted No = 35. What is the precision of the model?",
             "question_type": "MCQ",
             "options": {
@@ -290,7 +290,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q5",
+            "question_id": "MT_M3_Q03",
             "question_text": "Which of the following is NOT an advantage for using k-fold cross validation in model evaluation?",
             "question_type": "MCQ",
             "options": {
@@ -305,7 +305,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q6",
+            "question_id": "MT_M3_Q04",
             "question_text": "In time series analysis, what is the primary difference between trend and seasonality?",
             "question_type": "MCQ",
             "options": {
@@ -320,7 +320,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q7",
+            "question_id": "MT_M3_Q05",
             "question_text": "Which of the following statements best describes the difference between the naive method and the seasonal naive method in time series forecasting?",
             "question_type": "MCQ",
             "options": {
@@ -335,7 +335,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q8",
+            "question_id": "MT_M3_Q06",
             "question_text": "A bakery tracks daily sales. Average Tuesday sales is 90 units. If the actual sales on a Tuesday in the dataset were 108 units, what is the seasonal index for Tuesday?",
             "question_type": "MCQ",
             "options": {
@@ -350,7 +350,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q9",
+            "question_id": "MT_M3_Q07",
             "question_text": "Using exponential smoothing with smoothing parameter $\\alpha = 0.5$, and assuming an initial forecast of 100 for Day 1. Data: Day 1=100, Day 2=120, Day 3=110, Day 4=130, Day 5=125, Day 6=140, Day 7=135. What is the smoothed forecast for Day 8?",
             "question_type": "MCQ",
             "options": {
@@ -365,7 +365,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q10",
+            "question_id": "MT_M4_Q03",
             "question_text": "Which of the following best describes the role of statistics in quality management?",
             "question_type": "MCQ",
             "options": {
@@ -380,7 +380,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q11",
+            "question_id": "MT_M4_Q04",
             "question_text": "A company chooses between investments based on a payoff matrix. Option A: (200, 50), Option B: (150, 100), Option C: (300, -100). Identify the minimax and maximin choices.",
             "question_type": "MCQ",
             "options": {
@@ -395,7 +395,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q12",
+            "question_id": "MT_M4_Q05",
             "question_text": "A sample of 25 bags has a mean weight of 0.97 kg and a standard deviation of 0.05 kg. To test if the population mean is 1 kg, what is the value of the test statistic (t-score)?",
             "question_type": "MCQ",
             "options": {
@@ -410,7 +410,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q13",
+            "question_id": "MT_M4_Q06",
             "question_text": "In decision theory, what does an opportunity loss (regret) matrix represent?",
             "question_type": "MCQ",
             "options": {
@@ -425,7 +425,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q14",
+            "question_id": "MT_M4_Q07",
             "question_text": "Weight of 500 mg tablets: overall mean = 500.2 mg, standard deviation = 0.39 mg. Using the six-sigma rule (3-sigma process limits), what should be the Upper Control Limit (UCL)?",
             "question_type": "MCQ",
             "options": {
@@ -440,7 +440,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q15",
+            "question_id": "MT_M4_Q08",
             "question_text": "A company considers market research (cost: 200k). If research suggests launching (70%), success (60%) gives 1,000k profit, failure (40%) gives 500k loss. If research suggests not launching (30%), profit is 0. What is the EMV of conducting research?",
             "question_type": "MCQ",
             "options": {

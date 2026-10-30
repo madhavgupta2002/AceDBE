@@ -7,7 +7,7 @@
     },
     "questions": [
         {
-            "question_id": "M1_Q1",
+            "question_id": "CLA_M1_Q01",
             "question_text": "Which of the following best captures the meaning of a supply chain?",
             "question_type": "MCQ",
             "options": {
@@ -21,7 +21,7 @@
             "module": 1
         },
         {
-            "question_id": "M1_Q2",
+            "question_id": "CLA_M1_Q02",
             "question_text": "Which set of flows moves continuously within a supply chain?",
             "question_type": "MCQ",
             "options": {
@@ -35,7 +35,7 @@
             "module": 1
         },
         {
-            "question_id": "M1_Q3",
+            "question_id": "CLA_M1_Q03",
             "question_text": "What is the primary objective of a supply chain?",
             "question_type": "MCQ",
             "options": {
@@ -49,7 +49,7 @@
             "module": 1
         },
         {
-            "question_id": "M1_Q4",
+            "question_id": "CLA_M1_Q04",
             "question_text": "Supply chain surplus is best expressed as:",
             "question_type": "MCQ",
             "options": {
@@ -63,7 +63,7 @@
             "module": 1
         },
         {
-            "question_id": "M1_Q5",
+            "question_id": "CLA_M1_Q05",
             "question_text": "Which of the following is most clearly a supply chain design decision rather than a planning or operations decision?",
             "question_type": "MCQ",
             "options": {
@@ -77,7 +77,7 @@
             "module": 1
         },
         {
-            "question_id": "M1_Q6",
+            "question_id": "CLA_M1_Q06",
             "question_text": "In the cycle view of supply chain processes, the replenishment cycle occurs at the interface between:",
             "question_type": "MCQ",
             "options": {
@@ -91,7 +91,7 @@
             "module": 1
         },
         {
-            "question_id": "M1_Q7",
+            "question_id": "CLA_M1_Q07",
             "question_text": "In the push or pull view, a process is classified as a pull process if it is:",
             "question_type": "MCQ",
             "options": {
@@ -105,7 +105,7 @@
             "module": 1
         },
         {
-            "question_id": "M1_Q8",
+            "question_id": "CLA_M1_Q08",
             "question_text": "What does strategic fit mean?",
             "question_type": "MCQ",
             "options": {
@@ -119,7 +119,7 @@
             "module": 1
         },
         {
-            "question_id": "M1_Q9",
+            "question_id": "CLA_M1_Q09",
             "question_text": "Return on equity, ROE, is defined as:",
             "question_type": "MCQ",
             "options": {
@@ -133,7 +133,7 @@
             "module": 1
         },
         {
-            "question_id": "M1_Q10",
+            "question_id": "CLA_M1_Q10",
             "question_text": "According to Little’s Law, if throughput is 60 units per day and average flow time is 4 days, average inventory in the system is:",
             "question_type": "MCQ",
             "options": {
@@ -147,7 +147,7 @@
             "module": 1
         },
         {
-            "question_id": "M2_Q1",
+            "question_id": "CLA_M2_Q01",
             "question_text": "Why is forecasting important even in a pull-based supply chain?",
             "question_type": "MCQ",
             "options": {
@@ -161,7 +161,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q2",
+            "question_id": "CLA_M2_Q02",
             "question_text": "What is the main benefit of collaborative forecasting?",
             "question_type": "MCQ",
             "options": {
@@ -175,7 +175,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q3",
+            "question_id": "CLA_M2_Q03",
             "question_text": "Which of the following is a common feature of most forecasts?",
             "question_type": "MCQ",
             "options": {
@@ -189,7 +189,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q4",
+            "question_id": "CLA_M2_Q04",
             "question_text": "If a forecast is too low, which of the following is most likely?",
             "question_type": "MCQ",
             "options": {
@@ -203,7 +203,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q5",
+            "question_id": "CLA_M2_Q05",
             "question_text": "A time series that fluctuates around a fairly stable average level, with no clear upward or downward movement, is best described as:",
             "question_type": "MCQ",
             "options": {
@@ -217,7 +217,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q6",
+            "question_id": "CLA_M2_Q06",
             "question_text": "What is the key difference between seasonality and cyclical variation?",
             "question_type": "MCQ",
             "options": {
@@ -231,7 +231,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q7",
+            "question_id": "CLA_M2_Q07",
             "question_text": "If actual demand is 100 and forecast demand is 90, then the forecast error is:",
             "question_type": "MCQ",
             "options": {
@@ -245,7 +245,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q8",
+            "question_id": "CLA_M2_Q08",
             "question_text": "Which forecast accuracy measure penalizes large errors more heavily because the errors are squared?",
             "question_type": "MCQ",
             "options": {
@@ -259,7 +259,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q9",
+            "question_id": "CLA_M2_Q09",
             "question_text": "Suppose the previous forecast is 42, actual demand is 40, and α = 0.10. What is the new exponential smoothing forecast?",
             "question_type": "MCQ",
             "options": {
@@ -273,7 +273,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q10",
+            "question_id": "CLA_M2_Q10",
             "question_text": "Which statement best captures the purpose of aggregate planning?",
             "question_type": "MCQ",
             "options": {
@@ -287,7 +287,7 @@
             "module": 2
         },
         {
-            "question_id": "M3_Q1",
+            "question_id": "CLA_M3_Q01",
             "question_text": "Which of the following best defines inventory?",
             "question_type": "MCQ",
             "options": {
@@ -301,7 +301,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q2",
+            "question_id": "CLA_M3_Q02",
             "question_text": "Safety stock is best described as:",
             "question_type": "MCQ",
             "options": {
@@ -315,7 +315,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q3",
+            "question_id": "CLA_M3_Q03",
             "question_text": "According to Little’s Law, if average demand is 5 units per day and average time in the system is 10 days, average inventory is:",
             "question_type": "MCQ",
             "options": {
@@ -329,7 +329,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q4",
+            "question_id": "CLA_M3_Q04",
             "question_text": "Which of the following is not one of the four basic inventory cost categories discussed in class?",
             "question_type": "MCQ",
             "options": {
@@ -343,7 +343,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q5",
+            "question_id": "CLA_M3_Q05",
             "question_text": "If an item costs ₹180 per unit and the annual carrying-rate is 10%, what is the annual holding cost per unit",
             "question_type": "MCQ",
             "options": {
@@ -357,7 +357,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q6",
+            "question_id": "CLA_M3_Q06",
             "question_text": "Which statement best describes ordering cost?",
             "question_type": "MCQ",
             "options": {
@@ -371,7 +371,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q7",
+            "question_id": "CLA_M3_Q07",
             "question_text": "In ABC classification, “A” items are typically:",
             "question_type": "MCQ",
             "options": {
@@ -385,7 +385,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q8",
+            "question_id": "CLA_M3_Q08",
             "question_text": "Which of the following is a key assumption of the basic EOQ model?",
             "question_type": "MCQ",
             "options": {
@@ -399,7 +399,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q9",
+            "question_id": "CLA_M3_Q09",
             "question_text": "In the basic EOQ model, average inventory over a cycle is:",
             "question_type": "MCQ",
             "options": {
@@ -413,7 +413,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q10",
+            "question_id": "CLA_M3_Q10",
             "question_text": "According to EOQ logic, if ordering cost K increases while all else stays constant, the optimal order quantity will:",
             "question_type": "MCQ",
             "options": {
@@ -427,7 +427,7 @@
             "module": 3
         },
         {
-            "question_id": "M4_Q1",
+            "question_id": "CLA_M4_Q01",
             "question_text": "Which of the following best describes sourcing in the course?",
             "question_type": "MCQ",
             "options": {
@@ -441,7 +441,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q2",
+            "question_id": "CLA_M4_Q02",
             "question_text": "What is the key difference between outsourcing and offshoring?",
             "question_type": "MCQ",
             "options": {
@@ -455,7 +455,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q3",
+            "question_id": "CLA_M4_Q03",
             "question_text": "An outsourcing decision should primarily be judged by:",
             "question_type": "MCQ",
             "options": {
@@ -469,7 +469,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q4",
+            "question_id": "CLA_M4_Q04",
             "question_text": "Which of the following best distinguishes a 3PL from a 4PL?",
             "question_type": "MCQ",
             "options": {
@@ -483,7 +483,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q5",
+            "question_id": "CLA_M4_Q05",
             "question_text": "Why is supplier evaluation based only on quoted price considered a mistake?",
             "question_type": "MCQ",
             "options": {
@@ -497,7 +497,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q6",
+            "question_id": "CLA_M4_Q06",
             "question_text": "Which contract type is most directly intended to reduce the retailer’s downside risk from leftover inventory?",
             "question_type": "MCQ",
             "options": {
@@ -511,7 +511,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q7",
+            "question_id": "CLA_M4_Q07",
             "question_text": "In a revenue-sharing contract, the supplier typically:",
             "question_type": "MCQ",
             "options": {
@@ -525,7 +525,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q8",
+            "question_id": "CLA_M4_Q08",
             "question_text": "Which contract is mainly aimed at motivating a supplier to improve process performance, such as lead time reduction or quality improvement?",
             "question_type": "MCQ",
             "options": {
@@ -539,7 +539,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q9",
+            "question_id": "CLA_M4_Q09",
             "question_text": "Why is design collaboration important from a supply chain perspective?",
             "question_type": "MCQ",
             "options": {
@@ -553,7 +553,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q10",
+            "question_id": "CLA_M4_Q10",
             "question_text": "Tailored sourcing means:",
             "question_type": "MCQ",
             "options": {
@@ -567,7 +567,7 @@
             "module": 4
         },
         {
-            "question_id": "M5_Q1",
+            "question_id": "CLA_M5_Q01",
             "question_text": "The evolution of the Milk supply chain had many concepts. Which of the following was NOT a key concept?",
             "question_type": "MCQ",
             "options": {
@@ -581,7 +581,7 @@
             "module": 5
         },
         {
-            "question_id": "M5_Q2",
+            "question_id": "CLA_M5_Q02",
             "question_text": "The primary driver for a new Supply Chain Strategy in FarmAid Tractors was",
             "question_type": "MCQ",
             "options": {
@@ -595,7 +595,7 @@
             "module": 5
         },
         {
-            "question_id": "M5_Q3",
+            "question_id": "CLA_M5_Q03",
             "question_text": "The locations of stockyards in FarmAid Tractors were being reconsidered because:",
             "question_type": "MCQ",
             "options": {
@@ -609,7 +609,7 @@
             "module": 5
         },
         {
-            "question_id": "M5_Q4",
+            "question_id": "CLA_M5_Q04",
             "question_text": "In the Tea supply chain, Auctions play an important role. Which of the following is NOT a benefit of Auctions?",
             "question_type": "MCQ",
             "options": {
@@ -623,7 +623,7 @@
             "module": 5
         },
         {
-            "question_id": "M5_Q5",
+            "question_id": "CLA_M5_Q05",
             "question_text": "The Milk supply chain has evolved leveraging",
             "question_type": "MCQ",
             "options": {
@@ -637,7 +637,7 @@
             "module": 5
         },
         {
-            "question_id": "M5_Q6",
+            "question_id": "CLA_M5_Q06",
             "question_text": "In the reengineered Paint supply chain, benefits accrued due to",
             "question_type": "MCQ",
             "options": {
@@ -651,7 +651,7 @@
             "module": 5
         },
         {
-            "question_id": "M5_Q7",
+            "question_id": "CLA_M5_Q07",
             "question_text": "Horizontal unbundling of supply chains focussing on market segments addresses the need for:",
             "question_type": "MCQ",
             "options": {
@@ -665,7 +665,7 @@
             "module": 5
         },
         {
-            "question_id": "M5_Q8",
+            "question_id": "CLA_M5_Q08",
             "question_text": "Product redesign should concern itself with",
             "question_type": "MCQ",
             "options": {
@@ -678,7 +678,7 @@
             "module": 5
         },
         {
-            "question_id": "M06_Q01",
+            "question_id": "CLA_M6_Q01",
             "question_text": "What was the primary role of distributors in JOSH Denims' original supply chain structure?",
             "question_type": "MCQ",
             "options": {
@@ -692,7 +692,7 @@
             "module": 6
         },
         {
-            "question_id": "M06_Q02",
+            "question_id": "CLA_M6_Q02",
             "question_text": "Why did JOSH Denims remove the distributor tier?",
             "question_type": "MCQ",
             "options": {
@@ -706,7 +706,7 @@
             "module": 6
         },
         {
-            "question_id": "M06_Q03",
+            "question_id": "CLA_M6_Q03",
             "question_text": "What role does cold storage play in agricultural supply chains?",
             "question_type": "MCQ",
             "options": {
@@ -720,7 +720,7 @@
             "module": 6
         },
         {
-            "question_id": "M06_Q04",
+            "question_id": "CLA_M6_Q04",
             "question_text": "What was the key strategic decision facing Hasmukhbhai?",
             "question_type": "MCQ",
             "options": {
@@ -734,7 +734,7 @@
             "module": 6
         },
         {
-            "question_id": "M06_Q05",
+            "question_id": "CLA_M6_Q05",
             "question_text": "Why did Rajashree Cement explore the Engine on Load scheme?",
             "question_type": "MCQ",
             "options": {
@@ -748,7 +748,7 @@
             "module": 6
         },
         {
-            "question_id": "M06_Q06",
+            "question_id": "CLA_M6_Q06",
             "question_text": "What product was Rajashree Cement transporting which needed analysis?",
             "question_type": "MCQ",
             "options": {
@@ -762,7 +762,7 @@
             "module": 6
         },
         {
-            "question_id": "M06_Q07",
+            "question_id": "CLA_M6_Q07",
             "question_text": "Which of the following was NOT a core business service offered by Shreeji Transport Services?",
             "question_type": "MCQ",
             "options": {
@@ -776,7 +776,7 @@
             "module": 6
         },
         {
-            "question_id": "M06_Q08",
+            "question_id": "CLA_M6_Q08",
             "question_text": "Which managerial focus is most relevant for route profitability?",
             "question_type": "MCQ",
             "options": {
@@ -790,7 +790,7 @@
             "module": 6
         },
         {
-            "question_id": "M07_Q01",
+            "question_id": "CLA_M7_Q01",
             "question_text": "What does the Operating Ratio for Indian Railways primarily indicate?",
             "question_type": "MCQ",
             "options": {
@@ -804,7 +804,7 @@
             "module": 7
         },
         {
-            "question_id": "M07_Q02",
+            "question_id": "CLA_M7_Q02",
             "question_text": "What is the primary competitive disadvantage for Indian Railways' freight services when compared to road transport?",
             "question_type": "MCQ",
             "options": {
@@ -818,7 +818,7 @@
             "module": 7
         },
         {
-            "question_id": "M07_Q03",
+            "question_id": "CLA_M7_Q03",
             "question_text": "Which characteristic best describes the ownership structure of the Indian road freight transport industry?",
             "question_type": "MCQ",
             "options": {
@@ -832,7 +832,7 @@
             "module": 7
         },
         {
-            "question_id": "M07_Q04",
+            "question_id": "CLA_M7_Q04",
             "question_text": "Which expenses typically constitutes the largest single component of total operating costs for a truck operator in India?",
             "question_type": "MCQ",
             "options": {
@@ -846,7 +846,7 @@
             "module": 7
         },
         {
-            "question_id": "M07_Q05",
+            "question_id": "CLA_M7_Q05",
             "question_text": "In a Public-Private Partnership for a port terminal, what is the primary purpose of the Concession Agreement?",
             "question_type": "MCQ",
             "options": {
@@ -860,7 +860,7 @@
             "module": 7
         },
         {
-            "question_id": "M07_Q06",
+            "question_id": "CLA_M7_Q06",
             "question_text": "Why is efficient hinterland connectivity considered critical for the commercial success of a new private port terminal?",
             "question_type": "MCQ",
             "options": {
@@ -874,7 +874,7 @@
             "module": 7
         },
         {
-            "question_id": "M07_Q07",
+            "question_id": "CLA_M7_Q07",
             "question_text": "Sea as a mode choice is preferred from many of the sources for Laxmi Transformers. This is because",
             "question_type": "MCQ",
             "options": {
@@ -888,7 +888,7 @@
             "module": 7
         },
         {
-            "question_id": "M07_Q08",
+            "question_id": "CLA_M7_Q08",
             "question_text": "Laxmi Transformers has a competitive advantage in serving the integrated steel plant markets in Eastern India because",
             "question_type": "MCQ",
             "options": {
@@ -902,7 +902,7 @@
             "module": 7
         },
         {
-            "question_id": "M08_Q01",
+            "question_id": "CLA_M8_Q01",
             "question_text": "What is the main purpose of the LEADS index?",
             "question_type": "MCQ",
             "options": {
@@ -916,7 +916,7 @@
             "module": 8
         },
         {
-            "question_id": "M08_Q02",
+            "question_id": "CLA_M8_Q02",
             "question_text": "Which institution’s Logistics Performance Index influenced the development of LEADS?",
             "question_type": "MCQ",
             "options": {
@@ -930,7 +930,7 @@
             "module": 8
         },
         {
-            "question_id": "M08_Q03",
+            "question_id": "CLA_M8_Q03",
             "question_text": "Which two indicators were added in LEADS 2018 beyond the broad Logistics Performance Index style indicators?",
             "question_type": "MCQ",
             "options": {
@@ -944,7 +944,7 @@
             "module": 8
         },
         {
-            "question_id": "M08_Q04",
+            "question_id": "CLA_M8_Q04",
             "question_text": "Why were states later grouped into coastal, landlocked, north-eastern and union territory categories?",
             "question_type": "MCQ",
             "options": {
@@ -958,7 +958,7 @@
             "module": 8
         },
         {
-            "question_id": "M08_Q05",
+            "question_id": "CLA_M8_Q05",
             "question_text": "What was the primary objective of the mid-day meal programme?",
             "question_type": "MCQ",
             "options": {
@@ -972,7 +972,7 @@
             "module": 8
         },
         {
-            "question_id": "M08_Q06",
+            "question_id": "CLA_M8_Q06",
             "question_text": "Why did the Gujarat government approach Akshaya Patra for further expansion?",
             "question_type": "MCQ",
             "options": {
@@ -986,7 +986,7 @@
             "module": 8
         },
         {
-            "question_id": "M08_Q07",
+            "question_id": "CLA_M8_Q07",
             "question_text": "Why was the centralised kitchen model more suitable for urban areas?",
             "question_type": "MCQ",
             "options": {
@@ -1000,7 +1000,7 @@
             "module": 8
         },
         {
-            "question_id": "M08_Q08",
+            "question_id": "CLA_M8_Q08",
             "question_text": "Which of the following was NOT a government specified regulation to be satisfied by Akshaya Patra?",
             "question_type": "MCQ",
             "options": {

@@ -5,7 +5,7 @@
     },
     "questions": [
         {
-            "question_id": "CLA1_Q1",
+            "question_id": "CLA_M1_Q01",
             "question_text": "Suppose $X_1$ and $X_2$ are independent normal random variables with variances 4 and 9 respectively. Consider the random variable $Y = aX_1 + bX_2$. Which of the following conditions on a and b will make $\\text{Var}(Y) = 0$?",
             "question_type": "MCQ",
             "options": {
@@ -19,7 +19,7 @@
             "module": 1
         },
         {
-            "question_id": "CLA1_Q2",
+            "question_id": "CLA_M1_Q02",
             "question_text": "If returns on Stock A and Stock B are independent and normally distributed, what is the distribution of Y = Return of B − Return of A?",
             "question_type": "MCQ",
             "options": {
@@ -33,7 +33,7 @@
             "module": 1
         },
         {
-            "question_id": "CLA1_Q3",
+            "question_id": "CLA_M1_Q03",
             "question_text": "If Z is a standard normal random variable, what is the distribution of $X = Z^2$?",
             "question_type": "MCQ",
             "options": {
@@ -47,7 +47,7 @@
             "module": 1
         },
         {
-            "question_id": "CLA1_Q4",
+            "question_id": "CLA_M1_Q04",
             "question_text": "In a study of monthly stock returns with a small sample size, why is the Student’s t distribution preferred over the normal distribution?",
             "question_type": "MCQ",
             "options": {
@@ -61,7 +61,7 @@
             "module": 1
         },
         {
-            "question_id": "CLA1_Q5",
+            "question_id": "CLA_M1_Q05",
             "question_text": "In testing the overall significance of a multiple regression model explaining stock returns, an F statistic is computed. As both numerator and denominator degrees of freedom increase, what happens to the F distribution?",
             "question_type": "MCQ",
             "options": {
@@ -75,7 +75,7 @@
             "module": 1
         },
         {
-            "question_id": "CLA1_Q6",
+            "question_id": "CLA_M1_Q06",
             "question_text": "A portfolio manager wants to test if the mean daily return of a stock differs from 0.5% based on a sample of 15 days. Which distribution is appropriate for the test?",
             "question_type": "MCQ",
             "options": {
@@ -89,7 +89,7 @@
             "module": 1
         },
         {
-            "question_id": "CLA1_Q7",
+            "question_id": "CLA_M1_Q07",
             "question_text": "Which of the following correctly defines the F distribution?",
             "question_type": "MCQ",
             "options": {
@@ -103,7 +103,7 @@
             "module": 1
         },
         {
-            "question_id": "CLA1_Q8",
+            "question_id": "CLA_M1_Q08",
             "question_text": "A UPI app analyses the distribution of daily transaction amounts and finds:\nMean = ₹1,200, Median = ₹700, Mode = ₹400.\nWhat is the correct conclusion?",
             "question_type": "MCQ",
             "options": {
@@ -117,7 +117,7 @@
             "module": 1
         },
         {
-            "question_id": "CLA1_Q9",
+            "question_id": "CLA_M1_Q09",
             "question_text": "A mobile-based micro-investment app records the risk category of each user as Conservative, Moderate, Aggressive. What is the type of data that the app records?",
             "question_type": "MCQ",
             "options": {
@@ -131,7 +131,7 @@
             "module": 1
         },
         {
-            "question_id": "CLA1_Q10",
+            "question_id": "CLA_M1_Q10",
             "question_text": "A digital payments platform wants to compare success rate vs. number of transactions across 100 merchants. The best data visualisation to represent this will be:",
             "question_type": "MCQ",
             "options": {
@@ -145,7 +145,7 @@
             "module": 1
         },
         {
-            "question_id": "CLA2_Q1",
+            "question_id": "CLA_M2_Q01",
             "question_text": "In a UPI study analyzing customer transaction behavior, which of the following best describes a sampling frame?",
             "question_type": "MCQ",
             "options": {
@@ -159,7 +159,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q2",
+            "question_id": "CLA_M2_Q02",
             "question_text": "In a Finance analytics project estimating average monthly transaction value across platform users, what is the defining characteristic of a probabilistic sampling method?",
             "question_type": "MCQ",
             "options": {
@@ -173,7 +173,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q3",
+            "question_id": "CLA_M2_Q03",
             "question_text": "Which condition best justifies the use of stratified sampling instead of simple random sampling?",
             "question_type": "MCQ",
             "options": {
@@ -187,7 +187,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q4",
+            "question_id": "CLA_M2_Q04",
             "question_text": "What best explains why the average transaction value computed from a sample differs from the true population average?",
             "question_type": "MCQ",
             "options": {
@@ -201,7 +201,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q5",
+            "question_id": "CLA_M2_Q05",
             "question_text": "What does it mean to say that the sample mean X̄ is an unbiased estimator of μ?",
             "question_type": "MCQ",
             "options": {
@@ -215,7 +215,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q6",
+            "question_id": "CLA_M2_Q06",
             "question_text": "If the population distribution is normal with mean μ and standard deviation σ, what is the distribution of the sample mean X̄?",
             "question_type": "MCQ",
             "options": {
@@ -229,7 +229,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q7",
+            "question_id": "CLA_M2_Q07",
             "question_text": "What does the Central Limit Theorem describe?",
             "question_type": "MCQ",
             "options": {
@@ -243,7 +243,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q8",
+            "question_id": "CLA_M2_Q08",
             "question_text": "A startup company uses customer transaction data that is non-normal. Under what condition can the sampling distribution of the mean be approximated by a normal distribution?",
             "question_type": "MCQ",
             "options": {
@@ -257,7 +257,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q9",
+            "question_id": "CLA_M2_Q09",
             "question_text": "In a Bank study estimating the proportion of users who default on a short-term loan, increasing the sample size n has which effect on the sampling distribution of the sample default rate p̄?",
             "question_type": "MCQ",
             "options": {
@@ -271,7 +271,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA2_Q10",
+            "question_id": "CLA_M2_Q10",
             "question_text": "In a EdTech risk analysis, returns on a digital asset are assumed to be normally distributed. What distribution does (n − 1)S² / σ² follow?",
             "question_type": "MCQ",
             "options": {
@@ -285,7 +285,7 @@
             "module": 2
         },
         {
-            "question_id": "CLA3_Q1",
+            "question_id": "CLA_M3_Q01",
             "question_text": "A firm estimates the average transaction value (θ) of its users using two different point estimators derived from random samples. Both estimators are unbiased. Estimator A has a smaller standard error than Estimator B.\nWhich statement is correct?",
             "question_type": "MCQ",
             "options": {
@@ -299,7 +299,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA3_Q2",
+            "question_id": "CLA_M3_Q02",
             "question_text": "An analyst uses the sample mean of customer transaction amounts to estimate the population mean. As the number of customers sampled increases, the estimates become increasingly closer to the true population mean.\nWhich property of point estimators is being illustrated?",
             "question_type": "MCQ",
             "options": {
@@ -313,7 +313,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA3_Q3",
+            "question_id": "CLA_M3_Q03",
             "question_text": "A company estimates average customer transaction value using a simple random sample. Despite careful random sampling, the estimate differs slightly from the true population mean because only one sample could be collected.\nThis difference is best described as:",
             "question_type": "MCQ",
             "options": {
@@ -327,7 +327,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA3_Q4",
+            "question_id": "CLA_M3_Q04",
             "question_text": "An analyst conducts both online and in-branch customer satisfaction surveys. However, online users respond at a much lower rate than in-branch customers, even though both groups are equally important for decision-making.\nThis problem is best classified as:",
             "question_type": "MCQ",
             "options": {
@@ -341,7 +341,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA3_Q5",
+            "question_id": "CLA_M3_Q05",
             "question_text": "A digital lending platform wants to estimate the average credit score of its borrower population. The population standard deviation is unknown, but a random sample provides a sample standard deviation.\nAccording to statistical inference principles discussed, which quantity should be used to compute the margin of error for the confidence interval?",
             "question_type": "MCQ",
             "options": {
@@ -355,7 +355,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA3_Q6",
+            "question_id": "CLA_M3_Q06",
             "question_text": "An industry firm constructs a 95% confidence interval for the population mean transaction value using a random sample. The resulting interval is ₹4,800 to ₹5,200. Which of the following interpretations is statistically correct?",
             "question_type": "MCQ",
             "options": {
@@ -369,7 +369,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA3_Q7",
+            "question_id": "CLA_M3_Q07",
             "question_text": "Two company product teams compare confidence intervals for customer satisfaction scores. Team A uses an 80% confidence interval, while Team B uses a 95% confidence interval with the same sample size and variability. Which statement is statistically correct?",
             "question_type": "MCQ",
             "options": {
@@ -383,7 +383,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA3_Q8",
+            "question_id": "CLA_M3_Q08",
             "question_text": "A robo-advisory firm wants to estimate the proportion of investors who rebalance portfolios monthly. The firm desires a specific margin of error for its confidence interval. Which of the following changes would reduce the margin of error without altering the observed sample proportion?",
             "question_type": "MCQ",
             "options": {
@@ -397,7 +397,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA3_Q9",
+            "question_id": "CLA_M3_Q09",
             "question_text": "A small business owner wants to estimate the propotion of cutomers demand on product with a 99% confidence level and a desired margin of error of 0.05. The analyst uses the planning value p*= 0.5 to determine the required sample size. Why is 0.5 often used as a planning value when no prior information is available?",
             "question_type": "MCQ",
             "options": {
@@ -411,7 +411,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA3_Q10",
+            "question_id": "CLA_M3_Q10",
             "question_text": "An entrepreneur risk estimates the variance of daily portfolio returns.A random sample of n = 20 days gives a sample variance s² = 0.0004.\nAssuming normality, find the LOWER bound of the 95% confidence interval for the population variance.",
             "question_type": "MCQ",
             "options": {
@@ -425,7 +425,7 @@
             "module": 3
         },
         {
-            "question_id": "CLA4_Q1",
+            "question_id": "CLA_M4_Q01",
             "question_text": "A consumer protection agency suspects that a beverage company is overfilling bottles labeled 750 ml to attract customers. To verify this, they collect a random sample of bottles and want to statistically test whether the average amount filled differs from the labeled quantity.\nWhich of the following correctly specifies the null hypothesis, alternative hypothesis, and the type of test?",
             "question_type": "MCQ",
             "options": {
@@ -439,7 +439,7 @@
             "module": 4
         },
         {
-            "question_id": "CLA4_Q2",
+            "question_id": "CLA_M4_Q02",
             "question_text": "Geeta Kumari wants to test whether the average service response time at her service center has exceeded 48 hours.\nThe hypotheses are:\nH₀: μ ≤ 48 hours\nH₁: μ > 48 hours\nWhich of the following statements correctly describes a Type I error in this context?",
             "question_type": "MCQ",
             "options": {
@@ -453,7 +453,7 @@
             "module": 4
         },
         {
-            "question_id": "CLA4_Q3",
+            "question_id": "CLA_M4_Q03",
             "question_text": "A quality control manager suspects that a machine filling packets labeled as 250 grams may be underfilling them. To investigate, a random sample of 36 packets is collected. The sample mean weight is 246 grams and the sample standard deviation is 12 grams.\nThe manager conducts a hypothesis test at a significance level of 5%.\nH₀: μ = 250\nH₁: μ < 250\nWhat is the approximate value of the test statistic?",
             "question_type": "MCQ",
             "options": {
@@ -467,7 +467,7 @@
             "module": 4
         },
         {
-            "question_id": "CLA4_Q4",
+            "question_id": "CLA_M4_Q04",
             "question_text": "A company claims that the average lifetime of its batteries is 300 hours. A consumer group believes the lifetime is less than claimed. A random sample of 36 batteries is tested and the average lifetime is 287 hours. Assume the population standard deviation is 30 hours. Test the claim at a significance level of 0.05 using the p-value approach. What is the correct conclusion?",
             "question_type": "MCQ",
             "options": {
@@ -481,7 +481,7 @@
             "module": 4
         },
         {
-            "question_id": "CLA4_Q5",
+            "question_id": "CLA_M4_Q05",
             "question_text": "An online learning platform claims that 70% of its users complete a course they enroll in. A researcher believes that the actual completion rate is lower than the claim.\nA random sample of 500 users is taken, and 320 users completed the course.\nUsing a hypothesis test for the population proportion, what is the approximate p-value for this test?",
             "question_type": "MCQ",
             "options": {
@@ -495,7 +495,7 @@
             "module": 4
         },
         {
-            "question_id": "CLA4_Q6",
+            "question_id": "CLA_M4_Q06",
             "question_text": "A quality analyst claims that the variance of delivery times of a logistics company is 64 minutes. To test whether the variability has changed, a random sample of 25 deliveries is collected and the sample variance is found to be 100 minutes.\nAssume the delivery times follow a normal distribution. A two-tailed hypothesis test is conducted.\nWhat is the approximate p-value of the test?",
             "question_type": "MCQ",
             "options": {
@@ -509,7 +509,7 @@
             "module": 4
         },
         {
-            "question_id": "CLA4_Q7",
+            "question_id": "CLA_M4_Q07",
             "question_text": "A streaming platform claims that 65% of its subscribers watch at least one movie per week. A data analyst suspects that the actual proportion is different from this claim.\nA random sample of 600 subscribers is taken, and 360 subscribers report watching at least one movie per week.\nUsing a two-tailed hypothesis test, what is the approximate p-value?",
             "question_type": "MCQ",
             "options": {
@@ -523,7 +523,7 @@
             "module": 4
         },
         {
-            "question_id": "CLA4_Q8",
+            "question_id": "CLA_M4_Q08",
             "question_text": "A dataset contains 5 observations of two variables X and Y. The sample means are x̄ = 6 and ȳ = 10. The sum of the products of deviations ∑(xi − x̄)(yi − ȳ) calculated from the data is 40. What is the sample covariance Sxy?",
             "question_type": "MCQ",
             "options": {
@@ -537,7 +537,7 @@
             "module": 4
         },
         {
-            "question_id": "CLA4_Q9",
+            "question_id": "CLA_M4_Q09",
             "question_text": "The sample covariance between two variables X and Y is 8200. The sample standard deviation of X is 8 and the sample standard deviation of Y is 1250. Which of the following best describes the relationship between X and Y?",
             "question_type": "MCQ",
             "options": {
@@ -551,7 +551,7 @@
             "module": 4
         },
         {
-            "question_id": "CLA4_Q10",
+            "question_id": "CLA_M4_Q10",
             "question_text": "Which of the following statements about the Pearson correlation coefficient is correct?",
             "question_type": "MCQ",
             "options": {
