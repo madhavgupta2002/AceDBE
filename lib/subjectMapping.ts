@@ -492,6 +492,14 @@ export const SUBJECTS: Subject[] = [
       { batch: 1, code: 'EP71x', term: 7 },
     ],
   },
+  {
+    name: 'Data Visualisation for Business Decisions',
+    description: '',
+    icon: 'BarChart3',
+    aliases: [
+      { batch: 1, code: 'DS71x', term: 7 },
+    ],
+  },
 
   // ── Term 8 ──────────────────────────────────────────────────
   {
