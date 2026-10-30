@@ -299,6 +299,13 @@ async function fetchDashboardCourses() {
     }
 }
 
+// course.chapters: null/undefined = every module, otherwise the chapter titles to keep.
+function filterUnitsByChapters(units, course) {
+    if (!units || !Array.isArray(course.chapters)) return units;
+    const keep = new Set(course.chapters);
+    return units.filter(u => keep.has(u.chapterTitle));
+}
+
 async function getCourseOutline(courseId) {
     const username = await fetchUsername(courseId);
     if (!username) return null;
@@ -460,7 +467,7 @@ async function processOneCourse(course) {
     state.cursor = { courseName: course.name, sectionName: '', unitTitle: '' };
     await saveState();
 
-    const units = await getCourseOutline(course.courseId);
+    const units = filterUnitsByChapters(await getCourseOutline(course.courseId), course);
     if (state.stopRequested) return null;
 
     if (!units || units.length === 0) {
@@ -556,7 +563,7 @@ async function runDownload(courses, startIdx = 0) {
     state.stats.total = 0;
     state.stats.completed = 0;
     for (const c of courses) {
-        const outline = await getCourseOutline(c.courseId);
+        const outline = filterUnitsByChapters(await getCourseOutline(c.courseId), c);
         if (outline) state.stats.total += outline.length;
     }
     await saveState();
@@ -620,6 +627,16 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
                 sendResponse({ status: 'fetched', courses: result.courses });
             } else {
                 sendResponse({ status: 'error', reason: result.reason });
+            }
+            return;
+        }
+
+        if (message.type === 'GET_COURSE_CHAPTERS') {
+            const units = await getCourseOutline(message.courseId);
+            if (!units) {
+                sendResponse({ status: 'error' });
+            } else {
+                sendResponse({ status: 'fetched', chapters: [...new Set(units.map(u => u.chapterTitle).filter(Boolean))] });
             }
             return;
         }
