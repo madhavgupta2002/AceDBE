@@ -5,7 +5,7 @@
     },
     "questions": [
         {
-            "question_id": "Passage_1",
+            "question_id": "CLA_M1_P01",
             "question_text": "Rishav can make a round-trip to Jadavpur from College Street to do a task that takes 1 hour to complete and gives him utility worth Rs 500. Rishav ONLY has the following two ways to commute to Jadavpur from College Street:\n1. Rishav can purchase a return ticket for the metro, which costs Rs 50 and results in a total commute time of 1 hour. Thus, if Rishav takes metro to travel to Jadavpur, it takes him 2 hours to complete the task.\n2. Another option is to travel using a city bus, which costs Rs 30 in total, resulting in a total commute time of 3 hours. Thus, if Rishav takes city bus to travel to Jadavpur, it takes him 4 hours to complete the task.\nWhen Rishav is not traveling or working on the specific task, he can work and earn Rs 100 per hour.",
             "question_type": "SUBJECTIVE",
             "is_passage": true,
@@ -20,7 +20,7 @@
             "module": 1
         },
         {
-            "question_id": "M1_Q1",
+            "question_id": "CLA_M1_Q01",
             "question_text": "What is the opportunity cost of traveling by bus?",
             "question_type": "MCQ",
             "options": {
@@ -32,10 +32,10 @@
             "correct_option_label": "D",
             "explanation": "The opportunity cost of the bus option includes its direct cost (Rs 30) plus the value of the additional time spent compared to the metro (2 extra hours at Rs 100/hr).",
             "module": 1,
-            "passage_id": "Passage_1"
+            "passage_id": "CLA_M1_P01"
         },
         {
-            "question_id": "M1_Q2",
+            "question_id": "CLA_M1_Q02",
             "question_text": "What is the Opportunity cost of travelling by metro?",
             "question_type": "MCQ",
             "options": {
@@ -47,10 +47,10 @@
             "correct_option_label": "B",
             "explanation": "The opportunity cost includes the explicit ticket cost (Rs 50) and the implicit cost of time for the commute and task (2 hours at Rs 100/hr).",
             "module": 1,
-            "passage_id": "Passage_1"
+            "passage_id": "CLA_M1_P01"
         },
         {
-            "question_id": "M1_Q3",
+            "question_id": "CLA_M1_Q03",
             "question_text": "What is the net economic benefit of Rishav by travelling using metro?",
             "question_type": "MCQ",
             "options": {
@@ -62,10 +62,10 @@
             "correct_option_label": "C",
             "explanation": "Net economic benefit is the total utility (Rs 500) minus the total economic cost (Rs 250).",
             "module": 1,
-            "passage_id": "Passage_1"
+            "passage_id": "CLA_M1_P01"
         },
         {
-            "question_id": "M1_Q4",
+            "question_id": "CLA_M1_Q04",
             "question_text": "What is the new opportunity cost of traveling by bus for Debayan, who is identical to Rishav except that he can earn hourly wage of only Rs 50 when not traveling?",
             "question_type": "MCQ",
             "options": {
@@ -77,10 +77,10 @@
             "correct_option_label": "D",
             "explanation": "At a wage of Rs 50, the time cost for the 4-hour bus trip is Rs 200.",
             "module": 1,
-            "passage_id": "Passage_1"
+            "passage_id": "CLA_M1_P01"
         },
         {
-            "question_id": "M1_Q6",
+            "question_id": "CLA_M1_Q05",
             "question_text": "What is the likely immediate effect on the demand for flats in the current market when buyers expect prices to rise significantly next year?",
             "question_type": "MCQ",
             "options": {
@@ -94,7 +94,7 @@
             "module": 1
         },
         {
-            "question_id": "M1_Q7",
+            "question_id": "CLA_M1_Q06",
             "question_text": "How will the supply of flats in the current market likely change when sellers expect prices to rise significantly next year?",
             "question_type": "MCQ",
             "options": {
@@ -108,7 +108,7 @@
             "module": 1
         },
         {
-            "question_id": "M1_Q8",
+            "question_id": "CLA_M1_Q07",
             "question_text": "What is the likely impact on the price of flats in the current market if both demand increases and supply decreases due to expectations of higher future prices?",
             "question_type": "MCQ",
             "options": {
@@ -122,7 +122,7 @@
             "module": 1
         },
         {
-            "question_id": "M1_Q9",
+            "question_id": "CLA_M1_Q08",
             "question_text": "If sellers hold off on selling their flats due to expectations of higher prices next year, what is the likely short-term impact on the market?",
             "question_type": "MCQ",
             "options": {
@@ -136,7 +136,7 @@
             "module": 1
         },
         {
-            "question_id": "M2_Q1",
+            "question_id": "CLA_M2_Q01",
             "question_text": "What occurs when the market price of a product falls below its equilibrium price?",
             "question_type": "MCQ",
             "options": {
@@ -150,7 +150,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q2",
+            "question_id": "CLA_M2_Q02",
             "question_text": "If the cross-price elasticity of demand between two goods is POSITIVE, what does this indicate about their relationship?",
             "question_type": "MCQ",
             "options": {
@@ -164,7 +164,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q3",
+            "question_id": "CLA_M2_Q03",
             "question_text": "What does a perfectly vertical demand curve for a commodity indicate?",
             "question_type": "MCQ",
             "options": {
@@ -178,7 +178,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q4",
+            "question_id": "CLA_M2_Q04",
             "question_text": "What is the effect of an increase in the supply of a commodity on equilibrium?",
             "question_type": "MCQ",
             "options": {
@@ -192,7 +192,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q5",
+            "question_id": "CLA_M2_Q05",
             "question_text": "If the percentage increase in the quantity of a commodity demanded is smaller than the percentage fall in price, the price elasticity of demand is:",
             "question_type": "MCQ",
             "options": {
@@ -206,7 +206,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q6",
+            "question_id": "CLA_M2_Q06",
             "question_text": "What is the free-market wage rate and employment level?",
             "question_type": "MCQ",
             "options": {
@@ -220,7 +220,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q7",
+            "question_id": "CLA_M2_Q07",
             "question_text": "If the government sets a minimum wage of $6 per hour, how many people will be employed?",
             "question_type": "MCQ",
             "options": {
@@ -234,7 +234,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q8",
+            "question_id": "CLA_M2_Q08",
             "question_text": "Instead of the minimum wage, the government introduces labor subsidies, where each employer is paid a subsidy of Rs 2 for every hour of labor done by the employee. What will the new equilibrium wage and employment level be?",
             "question_type": "MCQ",
             "options": {
@@ -248,7 +248,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q9",
+            "question_id": "CLA_M2_Q09",
             "question_text": "If the government wants to maximum the revenue from taxing the consumers, which type of good should it tax?",
             "question_type": "MCQ",
             "options": {
@@ -262,7 +262,7 @@
             "module": 2
         },
         {
-            "question_id": "M2_Q10",
+            "question_id": "CLA_M2_Q10",
             "question_text": "A company raises the price of its product by 15%, and total revenue increases. What does this suggest about the price elasticity of demand?",
             "question_type": "MCQ",
             "options": {
@@ -276,7 +276,7 @@
             "module": 2
         },
         {
-            "question_id": "M3_Q1",
+            "question_id": "CLA_M3_Q01",
             "question_text": "Find Average Total Cost (ATC) for 6 units of Ice Cream.",
             "question_type": "MCQ",
             "options": {
@@ -290,7 +290,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q2",
+            "question_id": "CLA_M3_Q02",
             "question_text": "What is the Marginal Cost (MC) when the production increases from 4 units to 5 units of ice cream?",
             "question_type": "MCQ",
             "options": {
@@ -304,7 +304,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q3",
+            "question_id": "CLA_M3_Q03",
             "question_text": "At which level of output does the Average Total Cost start increasing?",
             "question_type": "MCQ",
             "options": {
@@ -318,7 +318,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q4",
+            "question_id": "CLA_M3_Q04",
             "question_text": "You are constructing an apartment building, and your market research department initially estimated revenues of Rs 9 Crore, while the engineering department estimated costs of Rs 6 crore, of which spending Rs. 1.5 comes from laying the foundation. After spending Rs. 1.5 crore on the foundation, a recession causes the revenue estimate to be revised down to Rs. 5.0 crore. Given this situation, should you complete the apartment building?",
             "question_type": "MCQ",
             "options": {
@@ -332,7 +332,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q5",
+            "question_id": "CLA_M3_Q05",
             "question_text": "A competitive firm’s short-run supply curve is its _________ cost curve above its _________ cost curve.",
             "question_type": "MCQ",
             "options": {
@@ -346,7 +346,7 @@
             "module": 3
         },
         {
-            "question_id": "Passage_2",
+            "question_id": "CLA_M3_P01",
             "question_text": "A profit-maximizing firm in a competitive market is currently producing 100 units of output. It has average total cost of $8, and fixed cost of $200. Suppose the average revenue is $7.",
             "question_type": "SUBJECTIVE",
             "is_passage": true,
@@ -361,7 +361,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q6",
+            "question_id": "CLA_M3_Q06",
             "question_text": "What is its average variable cost?",
             "question_type": "MCQ",
             "options": {
@@ -373,10 +373,10 @@
             "correct_option_label": "C",
             "explanation": "TC = 8*100 = 800. VC = 800 - 200 = 600. AVC = 600 / 100 = 6.",
             "module": 3,
-            "passage_id": "Passage_2"
+            "passage_id": "CLA_M3_P01"
         },
         {
-            "question_id": "M3_Q7",
+            "question_id": "CLA_M3_Q07",
             "question_text": "What would be your recommendation for the firm in Q6?",
             "question_type": "MCQ",
             "options": {
@@ -388,10 +388,10 @@
             "correct_option_label": "A",
             "explanation": "Since Price ($7) > AVC ($6), the firm should operate in the short run, but since Price < ATC ($8), it should exit in the long run.",
             "module": 3,
-            "passage_id": "Passage_2"
+            "passage_id": "CLA_M3_P01"
         },
         {
-            "question_id": "M3_Q8",
+            "question_id": "CLA_M3_Q08",
             "question_text": "What is the company’s Fixed Cost? (Given TC = 200 + 55q)",
             "question_type": "MCQ",
             "options": {
@@ -405,7 +405,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q9",
+            "question_id": "CLA_M3_Q09",
             "question_text": "If the company produces 100,000 units of goods (q = 100), what would be its Average Variable Cost (AVC)?",
             "question_type": "MCQ",
             "options": {
@@ -419,7 +419,7 @@
             "module": 3
         },
         {
-            "question_id": "M3_Q10",
+            "question_id": "CLA_M3_Q10",
             "question_text": "The government imposes a $1,000 per year license fee on all pizza restaurants. As a result, which cost curves shift?",
             "question_type": "MCQ",
             "options": {
@@ -433,7 +433,7 @@
             "module": 3
         },
         {
-            "question_id": "M4_Q1",
+            "question_id": "CLA_M4_Q01",
             "question_text": "For a profit-maximizing monopoly that charges a single price, what is the relationship between price P, marginal revenue MR, and marginal cost MC?",
             "question_type": "MCQ",
             "options": {
@@ -447,7 +447,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q2",
+            "question_id": "CLA_M4_Q02",
             "question_text": "If a monopoly’s fixed costs increase, its price will _________ and its profit will _________.",
             "question_type": "MCQ",
             "options": {
@@ -461,7 +461,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q3",
+            "question_id": "CLA_M4_Q03",
             "question_text": "Which of the following statements about price discrimination is true?",
             "question_type": "MCQ",
             "options": {
@@ -475,7 +475,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q4",
+            "question_id": "CLA_M4_Q04",
             "question_text": "A natural monopoly exists when:",
             "question_type": "MCQ",
             "options": {
@@ -489,7 +489,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q5",
+            "question_id": "CLA_M4_Q05",
             "question_text": "Price discrimination is more likely to be successful when:",
             "question_type": "MCQ",
             "options": {
@@ -503,7 +503,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q6",
+            "question_id": "CLA_M4_Q06",
             "question_text": "What is the total revenue when the firm sells 3 units? (Fixed cost=5, MC=6, Price at 3 units=8)",
             "question_type": "MCQ",
             "options": {
@@ -517,7 +517,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q7",
+            "question_id": "CLA_M4_Q07",
             "question_text": "What is the marginal revenue when output increases from 2 to 3 units? (Price at 2 units=9, Price at 3 units=8)",
             "question_type": "MCQ",
             "options": {
@@ -531,7 +531,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q8",
+            "question_id": "CLA_M4_Q08",
             "question_text": "At what quantity does the monopolist maximize profit?",
             "question_type": "MCQ",
             "options": {
@@ -545,7 +545,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q9",
+            "question_id": "CLA_M4_Q09",
             "question_text": "What is the optimal price the monopolist should charge to maximize profit?",
             "question_type": "MCQ",
             "options": {
@@ -559,7 +559,7 @@
             "module": 4
         },
         {
-            "question_id": "M4_Q10",
+            "question_id": "CLA_M4_Q10",
             "question_text": "What is the maximal profit of the monopolist?",
             "question_type": "MCQ",
             "options": {

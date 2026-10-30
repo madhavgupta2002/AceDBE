@@ -5,7 +5,7 @@
     },
     "questions": [
         {
-            "question_id": "MT1_Q1",
+            "question_id": "MT_M1_Q01",
             "question_text": "There is a weekly report that you have to prepare, this report has repetitive formatting requirements. It takes you at least 10 min to do this formatting. This report is done in Microsoft Excel. Which feature of Excel can be used to automate this report to reduce the formatting time to less than a minute",
             "question_type": "MCQ",
             "options": {
@@ -19,7 +19,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q2",
+            "question_id": "MT_M1_Q02",
             "question_text": "You have been summoned by the CFO to create a mail to the Accounts Receivable and Sales team every week on the outstanding for more than 60 days, for them to take necessary follow-up action. You have been asked to create a trigger to run the script every Monday morning at 5pm. What is the type of trigger called",
             "question_type": "MCQ",
             "options": {
@@ -33,7 +33,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q3",
+            "question_id": "MT_M1_Q03",
             "question_text": "Apps Scripts can be used for:",
             "question_type": "MCQ",
             "options": {
@@ -47,7 +47,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q4",
+            "question_id": "MT_M1_Q04",
             "question_text": "Fundamental Building Blocks of spread sheet based system",
             "question_type": "MCQ",
             "options": {
@@ -61,7 +61,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q5",
+            "question_id": "MT_M1_Q05",
             "question_text": "Specifically, e.namedValues gives you a JavaScript object where:",
             "question_type": "MCQ",
             "options": {
@@ -75,7 +75,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q6",
+            "question_id": "MT_M1_Q06",
             "question_text": "You want to automate delivery fee calculation for the following business rule,\n\nIn Bangalore and Chennai: Rs. 80 flat fee for Free users; Premium users get free delivery\n\nIn Mumbai: Premium users pay Rs. 40 flat; Free users pay Rs. 5/kg,\n\nWhich of formula is correct",
             "question_type": "MCQ",
             "options": {
@@ -89,7 +89,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q7",
+            "question_id": "MT_M1_Q07",
             "question_text": "Why is 'Safety Stock' calculated in inventory planning?",
             "question_type": "MCQ",
             "options": {
@@ -103,7 +103,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q8",
+            "question_id": "MT_M1_Q08",
             "question_text": "If you are building a Employee Master Table which of the following would be unique identifier to refer to specific employee across various tables, it's also known as primary key",
             "question_type": "MCQ",
             "options": {
@@ -117,7 +117,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q9",
+            "question_id": "MT_M1_Q09",
             "question_text": "You want to know how fast the inventory moves, which of the following column of Inventory table helps you on the same",
             "question_type": "MCQ",
             "options": {
@@ -131,7 +131,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q10",
+            "question_id": "MT_M1_Q10",
             "question_text": "Which of the following is not a usecase of UrlFetchApp",
             "question_type": "MCQ",
             "options": {
@@ -145,7 +145,7 @@
             "module": 1
         },
         {
-            "question_id": "MT1_Q11",
+            "question_id": "MT_M2_Q01",
             "question_text": "______ helps in making sense of large volume of data not by changing the raw data itself but by creating a summary view",
             "question_type": "MCQ",
             "options": {
@@ -159,7 +159,7 @@
             "module": 2
         },
         {
-            "question_id": "MT1_Q12",
+            "question_id": "MT_M2_Q02",
             "question_text": "What is the first step of real world data analysis:",
             "question_type": "MCQ",
             "options": {
@@ -173,7 +173,7 @@
             "module": 2
         },
         {
-            "question_id": "MT1_Q13",
+            "question_id": "MT_M2_Q03",
             "question_text": "You have been given the data of a gifting shop that deals with Chocolates and Bouquets, depending on the occasion some customers might only order chocolate some might only order bouquets and some might order both. These aren’t mutually exclusive sets. Hence we apply the basics of Set theory. Which of the following is correct",
             "question_type": "MCQ",
             "options": {
@@ -187,7 +187,7 @@
             "module": 2
         },
         {
-            "question_id": "MT1_Q14",
+            "question_id": "MT_M2_Q04",
             "question_text": "Which formula best categorizes SKU variety for each customer?",
             "question_type": "MCQ",
             "options": {
@@ -201,7 +201,7 @@
             "module": 2
         },
         {
-            "question_id": "MT1_Q15",
+            "question_id": "MT_M2_Q05",
             "question_text": "While building a dashboard you are trying to find which area returns the most products. How would you construct the pivot for the same, which data would you select ?",
             "question_type": "MCQ",
             "options": {
@@ -215,7 +215,7 @@
             "module": 2
         },
         {
-            "question_id": "MT1_Q16",
+            "question_id": "MT_M2_Q06",
             "question_text": "When you use a slicer and categorise your revenue data monthwise, you notice that revenue is going up but item count remains the same, which of the following could be right (Select all that make sense)",
             "question_type": "MCQ",
             "options": {
@@ -229,7 +229,7 @@
             "module": 2
         },
         {
-            "question_id": "MT1_Q17",
+            "question_id": "MT_M2_Q07",
             "question_text": "Why use MAX for Total Orders in daily-SKU level data?",
             "question_type": "MCQ",
             "options": {
@@ -243,7 +243,7 @@
             "module": 2
         },
         {
-            "question_id": "MT1_Q18",
+            "question_id": "MT_M3_Q01",
             "question_text": "You are going to launch a discount to reward your loyal customers, How would you identify these customers?",
             "question_type": "MCQ",
             "options": {
@@ -257,7 +257,7 @@
             "module": 3
         },
         {
-            "question_id": "MT1_Q19",
+            "question_id": "MT_M2_Q08",
             "question_text": "While building your dashboard you want to copy formulas, however this seems to be tedious, which of the below steps have to be taken to make the copying of formulas simpler",
             "question_type": "MCQ",
             "options": {
@@ -271,7 +271,7 @@
             "module": 2
         },
         {
-            "question_id": "MT1_Q20",
+            "question_id": "MT_M2_Q09",
             "question_text": "After the annual performance review of a company with 5000+ employees, you have now got the data containing ratings for all the employees, CEO wants you to present a slide in the upcoming meeting of % of Top performers, Average performers and Below Average performers in the company, which of the following formula will you use for the same",
             "question_type": "MCQ",
             "options": {
@@ -285,7 +285,7 @@
             "module": 2
         },
         {
-            "question_id": "MT2_Q1",
+            "question_id": "MT_M3_Q02",
             "question_text": "In one of the marketing team presentation, they have spoken about a group of customers who had recently purchased products of Rs 10 Lakhs in aggregate, The frequency of purchase of these customers is once every year. One of your junior asked you after the presentation what was the kind of segmentation done by Marketing Team",
             "question_type": "MCQ",
             "options": {
@@ -299,7 +299,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q2",
+            "question_id": "MT_M3_Q03",
             "question_text": "What is the formula for frequency?",
             "question_type": "MCQ",
             "options": {
@@ -313,7 +313,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q3",
+            "question_id": "MT_M3_Q04",
             "question_text": "When building a retention matrix, which Excel feature is essential for easily visualizing drop-offs over time?",
             "question_type": "MCQ",
             "options": {
@@ -327,7 +327,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q4",
+            "question_id": "MT_M3_Q05",
             "question_text": "If a cohort’s CLTV is ₹2,400, which of the following Customer Acquisition Cost (CAC) would you prefer?",
             "question_type": "MCQ",
             "options": {
@@ -341,7 +341,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q5",
+            "question_id": "MT_M3_Q06",
             "question_text": "You have been approached by Marketing head, they want to run a campaign the cost of the campaign per customer would come upto Rs. 1425/-, from the below data calculate the maximum amount that can be spent per customer, and advise if we can proceed with the campaign or not?",
             "question_type": "MCQ",
             "options": {
@@ -355,7 +355,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q6",
+            "question_id": "MT_M3_Q07",
             "question_text": "If my average churn is 25% what is the lifespan of the customer",
             "question_type": "MCQ",
             "options": {
@@ -369,7 +369,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q7",
+            "question_id": "MT_M3_Q08",
             "question_text": "What Excel function is used to calculate average lifespan (Centroid of lifespan) from the cohort matrix in our calculations and method shown in class?\n\nPARSEIMAGE",
             "question_type": "MCQ",
             "options": {
@@ -383,7 +383,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q8",
+            "question_id": "MT_M3_Q09",
             "question_text": "What nature of function is used to calculate average lifespan from the cohort matrix in our method shown in class?",
             "question_type": "MCQ",
             "options": {
@@ -397,7 +397,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q9",
+            "question_id": "MT_M3_Q10",
             "question_text": "Which of the below is the correct formula to calculate Recency?",
             "question_type": "MCQ",
             "options": {
@@ -411,7 +411,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q10",
+            "question_id": "MT_M3_Q11",
             "question_text": "How do you bifurcate the total order value into different buckets",
             "question_type": "MCQ",
             "options": {
@@ -425,7 +425,7 @@
             "module": 3
         },
         {
-            "question_id": "MT2_Q11",
+            "question_id": "MT_M4_Q01",
             "question_text": "What is the primary purpose of an MIS Report",
             "question_type": "MCQ",
             "options": {
@@ -439,7 +439,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q12",
+            "question_id": "MT_M4_Q02",
             "question_text": "What is a Trial Balance?",
             "question_type": "MCQ",
             "options": {
@@ -453,7 +453,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q13",
+            "question_id": "MT_M4_Q03",
             "question_text": "Which cost would typically be classified under SG and A?",
             "question_type": "MCQ",
             "options": {
@@ -467,7 +467,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q14",
+            "question_id": "MT_M4_Q04",
             "question_text": "Your company is in production of Games, recently you have launched a offline single player game named Noha on Playstation and it’s a hit, Six months since the launch today you are sitting for a meeting with top executives and discussing on the PnL, which of the following would be an apt description for trend of your PnL",
             "question_type": "MCQ",
             "options": {
@@ -481,7 +481,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q15",
+            "question_id": "MT_M4_Q05",
             "question_text": "In a D2C fashion brand, why is CM1 actively monitored?",
             "question_type": "MCQ",
             "options": {
@@ -495,7 +495,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q16",
+            "question_id": "MT_M4_Q06",
             "question_text": "You are sitting in an PnL Analysis meeting the CEO wants you to filter using main heads and show the total of all expense under that head, there are multiple such heads and you should keep filtering and giving totals of only visible rows when filters are applied, which formula should you use?",
             "question_type": "MCQ",
             "options": {
@@ -509,7 +509,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q17",
+            "question_id": "MT_M4_Q07",
             "question_text": "You entity operates across 2 locations and 1 HQ, the CEO spends 30% of his time at HQ and the rest of the time equally between Location 1 and Location 2. You are asked to prepare location wise PnL, How would you deal with CEO salary?",
             "question_type": "MCQ",
             "options": {
@@ -523,7 +523,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q18",
+            "question_id": "MT_M4_Q08",
             "question_text": "PARSEIMAGE\n\nWhat would be the topline of the PnL",
             "question_type": "MCQ",
             "options": {
@@ -537,7 +537,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q19",
+            "question_id": "MT_M4_Q09",
             "question_text": "PARSEIMAGE\n\nWhat is CM1 if Unit Costs = ₹15.15 Cr and Direct Marketing = ₹8.35 Cr?",
             "question_type": "MCQ",
             "options": {
@@ -551,7 +551,7 @@
             "module": 4
         },
         {
-            "question_id": "MT2_Q20",
+            "question_id": "MT_M4_Q10",
             "question_text": "PARSEIMAGE\n\nA year back, most of the staffs started quitting from support functions, this led to lots of workload and backlogs. In order to prevent such instance the teams started extensively hiring. Which of the below Comment is apt with reference to the numbers in above TB",
             "question_type": "MCQ",
             "options": {

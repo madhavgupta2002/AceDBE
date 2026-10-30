@@ -12,6 +12,7 @@ Rules:
 -Never omit or shorten any question  or option, give full text as it is 
 - if its a non mcq questions write question type "SUBJECTIVE" and put answer in explanation and omit options
 - for exams , it should be sorted by question ID if mentioned
+- for graded CLA files: question_id is "CLA_M<module>_Q<nn>" (2-digit, restarts at 01 for each module, e.g. "CLA_M3_Q07"); for mid-terms "MT_M<module>_Q<nn>". Shared passages use P instead of Q (e.g. "CLA_M2_P01"). Practice / ungraded files keep their own ids
 - for EXAMS only: if the official exam pattern notice is available (sections, marks, negative marking, duration, calculator, instructions), add it as "exam_pattern" inside exam_metadata exactly as in the schema below. Omit "exam_pattern" entirely when the pattern is not known - never guess it. Do not add it to CLA banks.
 - if a passage / caselet / case study / data set is shared by 2 or more questions, do NOT repeat it or write "refer to question X": add it ONCE as its own entry just before the first question that uses it ({"question_id": "Passage_1", "question_type": "SUBJECTIVE", "is_passage": true, "question_text": "<the full passage>", "options": {}, "correct_option_label": "", "module": ...}) and give every question that uses it "passage_id": "Passage_1". The question_text of those questions holds only their own stem. A passage used by a single question stays in that question's text.
 
