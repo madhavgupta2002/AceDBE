@@ -1659,3 +1659,306 @@ $$r_D = \text{YTM (if traded)} \;\;|\;\; r_f + \text{Yield Spread} \;\;|\;\; r_f
 | Discount rate | Depends on **project risk**, **NOT** company |
 | Asset cost of capital rule | Wrongly accepts negative NPV and rejects positive NPV projects |
 | Cost ranking | $r_E \ge r_A \ge r_D$ |
+
+---
+
+## MODULE 6: Corporate Payout Decisions
+
+---
+
+### Payout Policy and Uses of Free Cash Flow
+
+| Choice | Options |
+|---|---|
+| **Retain** | Invest in projects (positive / zero / negative NPV); retire debt; increase cash reserves |
+| **Pay out** | Cash dividend; share repurchase |
+
+- **Payout policy:** Choice between **retaining cash, paying dividends, or repurchasing shares**
+- **Non-cash payout:** **Stock dividend**; related actions: **stock split**, **reverse split**
+- **Infosys (July 2019):** payout raised from up to 70% to **85% of free cash flow** (FY2019-20)
+
+> **Q:** The choice a firm makes between retaining cash, paying dividends, or repurchasing shares is called its ______.
+> - **Payout policy** ✓
+
+---
+
+### Cash Dividends
+
+| Form | Formula |
+|---|---|
+| **Dividend per share** | DPS |
+| **Dividend payout** | $\dfrac{\text{DPS}}{\text{EPS}}$ |
+| **Dividend yield** | $\dfrac{\text{DPS}}{\text{Price per share}}$ |
+
+| Date | Meaning |
+|---|---|
+| **Declaration** | Board **authorises** dividend (becomes a **liability**; in India, once **approved by shareholders**) |
+| **Ex-dividend** | Buyers **on or after** this date get **no** dividend; before it, stock trades **cum dividend**; price falls by ~DPS |
+| **Record** | Only **shareholders of record** receive dividend |
+| **Payment** | Dividend **actually paid** |
+
+- **ONGC:** ₹1.25 declared May 21, 2025; ex-dividend and record date Sep 4, 2025; paid Sep 27, 2025
+- **Restrictions:** lender covenants; creditor laws; minimum payout by law in **Brazil and Chile**
+- Price falls on ex-date because the **firm's market value falls** by the cash paid out
+
+> **Q:** Buyers of a stock on or after which date are **NOT** eligible for the declared dividend?
+> - **Ex-dividend date** ✓
+>
+> **Q:** The stock price falls on the ex-dividend date ideally by the amount of ______.
+> - **Dividend per share** ✓
+
+---
+
+### Share Repurchases
+
+| Method | Key Feature |
+|---|---|
+| **Open market repurchase** | Buys in secondary market over **several months** |
+| **Tender offer** | Fixed price, stated number of shares, **~10 days**, **10%-20% premium**; offer can be **cancelled** if too few shares tendered |
+| **Dutch auction** | Price **range** set; firm pays the **lowest price** that fills the desired number of shares |
+| **Targeted repurchase** | Negotiates directly with a **major shareholder** |
+
+- **Open market** and **tender offer** = most common in **India**
+
+> **Q:** In a Dutch auction, the firm pays ______.
+> - **The lowest price at which it can buy the desired number of shares** ✓
+>
+> **Q:** Which two repurchase routes are most commonly used in India?
+> - **Open market repurchase and tender offer** ✓
+
+---
+
+### Stock Dividends, Splits and Reverse Splits
+
+| Action | Meaning | Example |
+|---|---|---|
+| **Stock dividend (bonus shares)** | Extra shares to existing holders, **no cash** | 1:4 = 25%; 1:2 = 50%; **LIC 1:1 (100%)**, April 2026 |
+| **Stock split** | Old share replaced by more new shares | 2-for-1; **Nvidia 10-for-1** (2024, price > $1,000) |
+| **Reverse split** | Several shares merged into one higher-priced share | 1-for-10 |
+
+- **Split rationale:** affordable for small investors; higher **demand and liquidity**; announcement effect **+2%** on average
+- **Reverse split rationale:** avoid **delisting** (NYSE/Nasdaq minimum **$1**; **no such rule in India**); better **marketability** (avoid penny-stock image)
+- **Typical price range:** NIFTY 500 majority **₹100-₹1,500**; NYSE majority **$10-$60**
+
+$$P_{\text{after}} = \frac{\text{MV of Equity}}{\text{Shares after}} \qquad \text{New shares} = \text{Old shares} \times \text{stock dividend \%}$$
+
+**Q:** Fictitious Corp has ₹20 million excess cash, no debt, 10 million shares and other assets of ₹400 million. It pays a 50% (1:2) stock dividend. Find the new share price.
+
+> *Why: A stock dividend leaves cash and equity value unchanged; only the share count rises.*
+> $\text{MV} = 20 + 400 = ₹420\text{ million}$ (price before $= 420/10 = ₹42$)
+> $\text{New shares} = 10/2 = 5\text{ million} \Rightarrow 15\text{ million outstanding}$
+> $P = 420/15$
+> **Answer = ₹28** ✓
+> *(Total market value stays ₹420 million; only the price per share falls)*
+
+---
+
+### Comparison of Payouts and Corporate Actions
+
+| Action | Cash | MV of Equity | Shares Outstanding | Price Per Share |
+|---|---|---|---|---|
+| **Cash dividend** | ↓ | ↓ | − | ↓ |
+| **Repurchase** | ↓ | ↓ | ↓ | − |
+| **Stock dividend** | − | − | ↑ | ↓ |
+| **Stock split** | − | − | ↑ | ↓ |
+| **Reverse split** | − | − | ↓ | ↑ |
+
+- ↑ increases, ↓ decreases, − unchanged; repurchase price unchanged **only at prevailing market price**
+
+> **Q:** Which action reduces shares outstanding and leaves the share price unchanged?
+> - **Share repurchase (at market price)** ✓
+>
+> **Q:** Which action reduces shares outstanding and raises the price per share with no change in cash or equity value?
+> - **Reverse split** ✓
+
+---
+
+### Information Content of Dividends
+
+| Observation | Detail |
+|---|---|
+| **Smoothing** | Changes follow **long-run sustainable earnings**; transitory changes ignored |
+| **Changes matter** | Focus on **change**, not absolute level (₹5 after ₹4 is big; ₹5 after ₹5 is not) |
+| **GM evidence** | Only **8** dividend changes in **23 years** (1985-2008) |
+| **Increase** | Signals **confidence in future earnings**; but may signal **lack of positive NPV projects** (**Microsoft 2003**) |
+| **Decrease** | Signals earnings will not rebound; but may be a response to an **external shock** (**Harley-Davidson, April 2020**: 95% cut, stock **+15%**) |
+
+| Dividend Change | Avg. Price Reaction |
+|---|---|
+| **Increase** | **+0.5%** |
+| **Decrease** | **−2%** (asymmetric) |
+
+- Price sensitivity to dividend changes has **decreased over time**
+
+> **Q:** Dividend changes have an asymmetric effect on stock prices: increases lead to ______ and decreases lead to ______.
+> - **+0.5%; −2%** ✓
+>
+> **Q:** A dividend increase is **NOT** necessarily good news because it may signal ______.
+> - **A lack of positive NPV projects** ✓
+
+---
+
+### Information Content of Share Repurchases
+
+| Feature | Dividends | Repurchases |
+|---|---|---|
+| Commitment | High | **Much lower** (no commitment to repeat) |
+| Smoothing | Yes | **No** |
+| Signal | Sustainable earnings | Shares **undervalued** |
+
+- Repurchase at a **premium**: senior managers and directors **hold on to their shares** → **positive** price reaction
+
+> **Q:** Announcement of a share repurchase at a premium leads to ______.
+> - **A positive stock price reaction** ✓
+
+---
+
+### Cash Dividend vs Share Repurchase (Perfect Capital Markets)
+
+$$P_{ex} = P_{cum} - Div \qquad \text{Shares repurchased} = \frac{\text{Repurchase amount}}{\text{Repurchase price}}$$
+
+- $P_{ex}$ = ex-dividend price; $P_{cum}$ = cum-dividend price; $Div$ = dividend per share
+
+| (Equity value = firm value; no debt) | Before | After Dividend | After Repurchase |
+|---|---|---|---|
+| Cash (₹ mn) | 20 | 0 | 0 |
+| Other assets (₹ mn) | 400 | 400 | 400 |
+| Total MV (₹ mn) | 420 | 400 | 400 |
+| Shares (mn) | 10 | 10 | 9.524 |
+| **Price** | ₹42 | **₹40** | **₹42** |
+
+- Perfect markets: dividend → price drops by **DPS**; open market repurchase → **no effect** on price
+
+**Q:** Firm has ₹20 million excess cash, no debt, 10 million shares, other assets ₹400 million. It repurchases ₹20 million of shares at the market price. Find shares repurchased and the price afterwards.
+
+> *Why: Repurchase at market price removes cash and shares in proportion, so price is unchanged.*
+> $P_0 = 420/10 = ₹42$
+> $\text{Shares repurchased} = 20/42 = 0.476\text{ million}$
+> $\text{Shares left} = 10 - 0.476 = 9.524\text{ million}$
+> $P = 400/9.524$
+> **Answer = ₹42** ✓
+> *(Cash dividend of ₹2 per share would instead give ₹40)*
+
+---
+
+### Investor Preferences and Homemade Dividends
+
+- Investor with **2,000 shares** (not participating in repurchase): total value **₹84,000** in every case
+
+| | Before (₹42) | After Dividend (₹40) | After Repurchase (₹42) |
+|---|---|---|---|
+| Shares | 84,000 | 80,000 | 84,000 |
+| Cash | 0 | 4,000 | 0 |
+| **Total** | **84,000** | **84,000** | **84,000** |
+
+| Case | Action | Result |
+|---|---|---|
+| Repurchase, investor wants cash | **Sell** $4000/42 \approx 95$ shares | 1,905 shares + ₹4,000 cash |
+| Dividend, investor wants shares | **Buy** $4000/40 = 100$ shares at ex-dividend price | 2,100 shares worth ₹84,000 |
+| Dividend ₹2, investor wants ₹9,000 | Sell $5000/40 = 125$ shares | 1,875 shares (₹75,000) + ₹9,000 cash |
+
+- **Miller-Modigliani payout policy irrelevance:** in perfect markets (no taxes, transaction costs, other imperfections), payout policy is **value-irrelevant**; investors replicate any payout on their own
+
+**Q:** Firm pays ₹2 dividend per share (ex-dividend price ₹40). An investor with 2,000 shares wants a total cash payout of ₹9,000. How many shares must she sell?
+
+> *Why: Dividend gives part of the cash; the shortfall is raised by selling shares at the ex-dividend price.*
+> $\text{Dividend received} = 2 \times 2000 = ₹4000$
+> $\text{Shortfall} = 9000 - 4000 = ₹5000$
+> $\text{Shares sold} = 5000/40$
+> **Answer = 125 shares** ✓
+> *(Holdings: 1,875 shares = ₹75,000 plus ₹9,000 cash = ₹84,000; wealth unchanged)*
+
+> **Q:** In perfect capital markets, payout policy of a firm is irrelevant to firm value.
+> - **True** ✓
+
+---
+
+### Taxes
+
+- Interest on debt is **tax-deductible**; interest earned on invested cash is **taxed** → **cash is negative debt**, holding cash has a **tax disadvantage**
+- If dividends and repurchases are taxed differently, investors prefer the **lower-taxed** payout
+
+$$\text{After-tax return} = \text{Pre-tax return} \times (1 - t)$$
+
+**Q:** Fictonia pays 35% tax on T-bill interest (6%). A tax-free investor compares: (1) a ₹100 dividend now, invested by her in T-bills, vs (2) firm retains cash 1 year, invests in T-bills, then pays dividend. Which does she prefer?
+
+> *Why: Compare the investor's own pre-tax-free return with the firm's after-tax return.*
+> Choice 1: $100 \times 1.06 = ₹106$
+> Choice 2: $6\%(1 - 0.35) = 3.90\%$; $100 \times 1.039 = ₹103.90$
+> **Answer = Dividend today (₹106 > ₹103.90)** ✓
+> *(The corporate tax on interest income makes retaining cash costly)*
+
+---
+
+### Agency Costs of Idle Cash
+
+- Excess cash lets managers fund **money-losing pet projects**, pay **excessive perks**, or make **negative NPV acquisitions**
+- Paying out excess cash (dividends or repurchases) **reduces agency costs** → share price typically **rises**
+
+> **Q:** Agency costs of idle cash arise when managers ______.
+> - **Misuse excess cash (pet projects, perks, negative NPV acquisitions)** ✓
+
+---
+
+### Firm Life Cycle
+
+| Stage | Payout Behaviour |
+|---|---|
+| **Young growth firm** | **Retain and reinvest** FCF: avoids issuance costs and shareholders' immediate tax; investors not worried (positive NPV projects) |
+| **Mature firm** | Positive NPV projects **scarcer** than cash flow; cash accumulates; investors fear **overinvestment/perks** → **payout** |
+
+| Direct Issuance Cost | Range |
+|---|---|
+| **Debt** | 1%-3% |
+| **Equity** | 3.5%-7% |
+
+> **Q:** Why should a young growth firm retain free cash flow?
+> - **Avoids issuance costs and immediate shareholder tax; cash goes to positive NPV projects** ✓
+
+---
+
+### Behavioural Factors
+
+| Theory | Key Idea |
+|---|---|
+| **Dividend clienteles** | Investors such as **retirees** prefer **regular, stable cash dividends** (saves transaction costs and inconvenience); may pay more for dividend-paying stocks |
+| **Bird-in-the-hand** | "A bird in the hand is worth two in the bush"; dividend payers may have **higher prices**; **not explained by rational theories** |
+| **Industry herding** | Firms **follow competitors' dividend policies**; **fear of being left alone (FOMO)** |
+
+- **Frontier Communications:** two share classes with identical fundamentals; **cash dividend shares** traded at a **higher price** despite lower dividends than the stock dividend class; the **premium varied over time** (preference changes)
+
+> **Q:** Which theory says dividend-paying firms enjoy higher prices than non-payers, and cannot be explained by rational theories?
+> - **Bird-in-the-hand theory** ✓
+>
+> **Q:** Firms copying the dividend policies of industry competitors out of fear of missing out illustrates ______.
+> - **Industry herding** ✓
+
+---
+
+## Quick Reference: Which Payout / Effect to Use
+
+| Situation | Action/Answer |
+|-----------|---------------|
+| Ex-dividend price in perfect markets | $P_{ex} = P_{cum} - Div$ |
+| Open market repurchase at market price | Price **unchanged**; shares fall |
+| Shares repurchased | Amount / repurchase price |
+| Stock dividend or split | Cash and MV of equity unchanged; shares ↑, price ↓ |
+| Reverse split | Shares ↓, price ↑ |
+| Investor wants cash after repurchase | Sell shares (homemade dividend) |
+| Investor wants shares after dividend | Reinvest dividend at ex-dividend price |
+| Tax on retained cash | Compare $\text{pre-tax} \times (1 - t)$ with investor's own return |
+
+## Key Decision Rules Summary
+
+| Rule | Detail |
+|------|--------|
+| Payout irrelevance | Perfect markets → payout policy **does not** affect value (Miller-Modigliani) |
+| Dividend vs repurchase price effect | Dividend lowers price by DPS; repurchase at market leaves price unchanged |
+| Dividend signal | Increase **+0.5%**, decrease **−2%**; read in context of managers' likely information |
+| Dividend vs repurchase commitment | Dividends smoothed and sticky; repurchases flexible, not smoothed, signal undervaluation |
+| Stock split | Avg. announcement effect **+2%** |
+| Reverse split | Avoids delisting (NYSE/Nasdaq $1 minimum; none in India) |
+| Cash and taxes | Cash is negative debt → tax disadvantage of retaining cash |
+| Idle cash | Payout reduces agency costs, raises price |
+| Life cycle | Young → retain; mature → pay out |
+| Behavioural | Clienteles, bird-in-the-hand, industry herding |
