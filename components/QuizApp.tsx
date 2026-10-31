@@ -1023,8 +1023,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
             </div>
           )}
 
-          {/* Full View Notes Section - when quiz NOT active */}
-          {!loading && (quizState.questions.length === 0 || quizCompleted) && (
+          {/* Full View Notes Section - only on the quiz picker, not during or after a quiz */}
+          {!loading && quizState.questions.length === 0 && (
             <div className="mb-6 bg-surface border border-surface-border/60 rounded-xl p-5">
               <h2 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
                 <BookOpen className="w-5 h-5 text-emerald-400" />
