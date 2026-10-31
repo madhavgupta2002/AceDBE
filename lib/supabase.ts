@@ -7,7 +7,7 @@ const key = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 export const supabase: SupabaseClient | null = url && key ? createClient(url, key) : null;
 
 // ── Usernames ─────────────────────────────────────────────────────────────────
-// Format: name.surnameYY (e.g. madhav.gupta25). Supabase Auth needs an email, so the username is stored as
+// Format: name.surnameYY (e.g. firstname.lastname25). Supabase Auth needs an email, so the username is stored as
 // "<username>@acedbe.app". That address is never mailed ("Confirm email" is off in the project).
 export const USERNAME_PATTERN = /^[a-z]+(\.[a-z]+)+[0-9]{2}$/;
 const EMAIL_DOMAIN = 'acedbe.app';
