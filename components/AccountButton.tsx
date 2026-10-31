@@ -114,10 +114,11 @@ function AuthDialog({
 
         <label className="block">
           <span className="text-xs text-slate-400">Username</span>
+          <span className="block text-[11px] text-slate-500">Your IIMB id: firstname.lastname + batch year, e.g. firstname.lastname25</span>
           <input
             value={username}
             onChange={e => setUsername(e.target.value)}
-            placeholder="madhav.gupta25"
+            placeholder="firstname.lastname25"
             autoComplete="username"
             autoCapitalize="none"
             autoFocus
@@ -135,12 +136,6 @@ function AuthDialog({
           />
         </label>
 
-        {mode === 'signup' && (
-          <p className="text-[11px] text-slate-500">
-            Your username is your IIMB id (name.surname + year). Whoever claims it first sets the password, so pick one
-            you will remember.
-          </p>
-        )}
         {error && <p className="text-xs text-red-300">{error}</p>}
 
         <button
