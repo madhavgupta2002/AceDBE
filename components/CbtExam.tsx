@@ -1,7 +1,10 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { AlertTriangle, Loader2, PlayCircle, X } from 'lucide-react';
+import { AlertTriangle, History, Loader2, PlayCircle, X } from 'lucide-react';
+import { useAuth } from '@/contexts/AuthContext';
+import { fetchSetsWithHistory, setKey } from '@/lib/history';
+import HistoryDialog from './HistoryDialog';
 import type { ExamPaperInfo, SubjectPyqInfo } from '@/lib/pyqService';
 import type { ExamPattern, QuestionFile } from '@/lib/types';
 import { resolveExamPattern } from '@/lib/cbtPattern';
@@ -56,6 +59,19 @@ export default function CbtExam({
 }) {
   const [stage, setStage] = useState<Stage>({ kind: 'loading' });
   const [name, setName] = useState('');
+  const { user } = useAuth();
+  const examSet = setKey('Exam', paper.bankName);
+  const [hasHistory, setHasHistory] = useState(false);
+  const [showHistory, setShowHistory] = useState(false);
+
+  useEffect(() => {
+    if (!user) return setHasHistory(false);
+    let cancelled = false;
+    fetchSetsWithHistory(subject.code).then(s => !cancelled && setHasHistory(s.has(examSet)));
+    return () => {
+      cancelled = true;
+    };
+  }, [subject.code, examSet, user]);
 
   useEffect(() => {
     setName(localStorage.getItem(NAME_KEY) ?? '');
@@ -231,6 +247,14 @@ export default function CbtExam({
               className="mt-0.5 w-full bg-slate-800 border border-slate-600 rounded-md px-2.5 py-1.5 text-sm text-white outline-none focus:border-emerald-500"
             />
           </label>
+          {hasHistory && (
+            <button
+              onClick={() => setShowHistory(true)}
+              className="flex items-center justify-center gap-1.5 px-4 py-2 rounded-md bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 text-sm font-bold"
+            >
+              <History className="w-4 h-4" /> See history
+            </button>
+          )}
           <button
             onClick={() => start(file, pattern, official)}
             className="flex items-center justify-center gap-1.5 px-4 py-2 rounded-md bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-sm font-bold"
@@ -242,6 +266,9 @@ export default function CbtExam({
           Opens the {DIGION_ENGINE_URL.replace('https://', '')} exam screen over this page. The review opens here when you submit.
         </p>
       </div>
+      {showHistory && (
+        <HistoryDialog subjectCode={subject.code} set={examSet} title={`${subject.name} · ${paper.date}`} onClose={() => setShowHistory(false)} />
+      )}
     </Overlay>
   );
 }
