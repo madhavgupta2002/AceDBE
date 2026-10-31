@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
-import { Loader2, LogIn, LogOut, UserRound, X } from 'lucide-react';
+import Link from 'next/link';
+import { History, Loader2, LogIn, LogOut, UserRound, X } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 
 type Mode = 'login' | 'signup';
@@ -23,7 +24,14 @@ const AccountButton: React.FC<{ className: string }> = ({ className }) => {
           {username}
         </button>
         {menuOpen && (
-          <div className="absolute right-0 mt-1 w-40 rounded-lg border border-slate-700 bg-slate-900 p-1 shadow-xl z-20">
+          <div className="absolute right-0 mt-1 w-44 rounded-lg border border-slate-700 bg-slate-900 p-1 shadow-xl z-20">
+            <Link
+              href="/history"
+              onClick={() => setMenuOpen(false)}
+              className="w-full flex items-center gap-2 px-3 py-1.5 rounded-md text-sm text-slate-300 hover:bg-slate-800 hover:text-white"
+            >
+              <History className="h-4 w-4" /> Quiz history
+            </Link>
             <button
               onClick={() => {
                 setMenuOpen(false);

@@ -19,6 +19,7 @@ export interface AttemptUnit {
 
 export interface Attempt {
   id: string;
+  subject_code: string;
   mode: AttemptMode;
   set_keys: string[];
   units: AttemptUnit[];
@@ -28,6 +29,18 @@ export interface Attempt {
   time_sec: number;
   created_at: string;
 }
+
+// ── Formatting ────────────────────────────────────────────────────────────────
+
+export const formatDuration = (sec: number) => {
+  const m = Math.floor(sec / 60);
+  const s = sec % 60;
+  return m >= 60 ? `${Math.floor(m / 60)}h ${m % 60}m` : `${m}m ${s.toString().padStart(2, '0')}s`;
+};
+
+export const pct = (correct: number, total: number) => (total ? Math.round((correct / total) * 100) : 0);
+
+export const pctCls = (p: number) => (p >= 75 ? 'text-emerald-300' : p >= 50 ? 'text-yellow-300' : 'text-red-300');
 
 const isCorrect = (q: Question, a: string[]) =>
   a.length === q.correctAnswer.length && a.every(x => q.correctAnswer.includes(x));
@@ -92,12 +105,17 @@ export async function fetchSetsWithHistory(subjectCode: string): Promise<Set<str
   return new Set((data ?? []).flatMap(r => r.set_keys as string[]));
 }
 
+const ATTEMPT_COLUMNS = 'id, subject_code, mode, set_keys, units, correct, wrong, total, time_sec, created_at';
+
+/** Display name of a set key: "CLA|CLA 1" → "CLA 1". */
+export const setLabel = (key: string) => key.slice(key.indexOf('|') + 1);
+
 /** Attempts that included the given set, newest first. */
 export async function fetchSetHistory(subjectCode: string, set: string): Promise<Attempt[]> {
   if (!supabase) return [];
   const { data, error } = await supabase
     .from('quiz_attempts')
-    .select('id, mode, set_keys, units, correct, wrong, total, time_sec, created_at')
+    .select(ATTEMPT_COLUMNS)
     .eq('subject_code', subjectCode)
     .contains('set_keys', [set])
     .order('created_at', { ascending: false })
@@ -107,4 +125,25 @@ export async function fetchSetHistory(subjectCode: string, set: string): Promise
     return [];
   }
   return data as Attempt[];
+}
+
+/** Every saved attempt across subjects, newest first. */
+export async function fetchAllAttempts(): Promise<Attempt[]> {
+  if (!supabase) return [];
+  const { data, error } = await supabase
+    .from('quiz_attempts')
+    .select(ATTEMPT_COLUMNS)
+    .order('created_at', { ascending: false })
+    .limit(1000);
+  if (error) {
+    console.error('Loading quiz history failed:', error.message);
+    return [];
+  }
+  return data as Attempt[];
+}
+
+export async function deleteAttempt(id: string): Promise<boolean> {
+  if (!supabase) return false;
+  const { error } = await supabase.from('quiz_attempts').delete().eq('id', id);
+  return !error;
 }
