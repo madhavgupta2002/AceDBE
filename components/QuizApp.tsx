@@ -20,6 +20,7 @@ import Header from './Header';
 import CbtExam from './CbtExam';
 import PassageCard from './PassageCard';
 import { CbtReviewData, takeCbtReview, toReviewData } from '@/lib/cbtReview';
+import { saveAttempt, setKey } from '@/lib/history';
 import { ArrowRight, ArrowLeft, RefreshCw, BookOpen, Youtube, Play, Search, Check, Download, Printer, Eye, EyeOff, XCircle, List, RotateCcw } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -69,6 +70,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
   const [searchQuery, setSearchQuery] = useState('');
   const [globalAnswersVisible, setGlobalAnswersVisible] = useState(true);
   const [individualAnswersVisible, setIndividualAnswersVisible] = useState<Record<number, boolean>>({});
+
+  // Question set each loaded question came from, for saving attempts to history (Custom sets aren't tracked)
+  const questionSetRef = useRef(new WeakMap<Question, string>());
 
   // Timer state
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
@@ -222,6 +226,9 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
         if (filteredQuestions.length > 0) {
           questionsBySet.push(filteredQuestions);
         }
+        if (set.bankType !== 'Custom') {
+          filteredQuestions.forEach(q => questionSetRef.current.set(q, setKey(set.bankType, set.bankName)));
+        }
       }
 
       if (questionsBySet.length === 0) {
@@ -322,6 +329,15 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
       setElapsedSeconds(review.timeSec);
       setIsTimerActive(false);
       setQuizCompleted(true);
+      const examSet = setKey('Exam', review.bankName);
+      void saveAttempt({
+        subjectCode,
+        mode: 'cbt',
+        questions,
+        answers: answered,
+        setOf: () => examSet,
+        timeSec: review.timeSec,
+      });
     } finally {
       setLoading(false);
     }
@@ -612,6 +628,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
     }
     setQuizCompleted(true);
     setIsTimerActive(false);
+    void saveAttempt({
+      subjectCode,
+      mode: 'practice',
+      questions: allQuestions,
+      answers: masterAnsweredQuestions,
+      setOf: q => questionSetRef.current.get(q),
+      timeSec: elapsedSeconds,
+    });
   };
 
   const clearResponse = (index: number) => {

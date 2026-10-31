@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { ArrowLeft, Linkedin, Menu, X, GraduationCap, FileText, ListChecks } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import AccountButton from './AccountButton';
 
 interface HeaderProps {
     showBackButton?: boolean;
@@ -72,6 +73,7 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
                         <Linkedin className="h-4 w-4" />
                         Connect
                     </a>
+                    <AccountButton className={linkCls(false)} />
                 </div>
 
                 {/* Mobile hamburger */}
@@ -97,6 +99,7 @@ const Header: React.FC<HeaderProps> = ({ showBackButton = false, backLink = '/',
                         <Linkedin className="h-4 w-4" />
                         Connect on LinkedIn
                     </a>
+                    <AccountButton className={linkCls(false)} />
                 </div>
             )}
         </nav>

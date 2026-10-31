@@ -2,7 +2,10 @@
 
 import React, { useState, useEffect } from 'react';
 import { SetWithModules, getSetsWithModules } from '@/lib/questionLoader';
-import { Shuffle, Check, MonitorPlay, Play, BookOpenCheck } from 'lucide-react';
+import { Shuffle, Check, MonitorPlay, Play, BookOpenCheck, History } from 'lucide-react';
+import { useAuth } from '@/contexts/AuthContext';
+import { fetchSetsWithHistory, setKey } from '@/lib/history';
+import HistoryDialog from './HistoryDialog';
 
 interface UnifiedQuizSelectorProps {
   subjectCode: string;
@@ -28,6 +31,21 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
   const [selections, setSelections] = useState<SelectionMap>(new Map());
   const [randomOrder, setRandomOrder] = useState(false);
   const [showCustom, setShowCustom] = useState(false);
+  const { user } = useAuth();
+  const [setsWithHistory, setSetsWithHistory] = useState<Set<string>>(new Set());
+  const [historyFor, setHistoryFor] = useState<SetWithModules | null>(null);
+
+  useEffect(() => {
+    if (!user) {
+      setSetsWithHistory(new Set());
+      return;
+    }
+    let cancelled = false;
+    fetchSetsWithHistory(subjectCode).then(s => !cancelled && setSetsWithHistory(s));
+    return () => {
+      cancelled = true;
+    };
+  }, [subjectCode, user]);
 
   // Derived state for unique module numbers across all sets
   const allModules = Array.from(new Set(
@@ -341,6 +359,7 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
   const renderSet = (set: SetWithModules) => {
     const isFullySelected = isSetFullySelected(set);
     const isPartiallySelected = isSetPartiallySelected(set);
+    const hasHistory = set.bankType !== 'Custom' && setsWithHistory.has(setKey(set.bankType, set.bankName));
 
     return (
       <div key={getSetKey(set.bankName, set.bankType)} className="mb-4 sm:mb-6 p-3 sm:p-4 bg-surface-dark/40 border border-surface-border/40 rounded-xl">
@@ -362,14 +381,27 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
           <span className="truncate">{set.displayName}</span>
         </button>
 
-        {set.bankType === 'Exam' && onStartCbt && (
-          <button
-            type="button"
-            onClick={() => onStartCbt(set.bankName, set.exam_date || set.displayName)}
-            className="mb-2 sm:mb-3 ml-4 sm:ml-6 flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-violet-950/50 hover:bg-violet-600 border border-violet-700/50 text-violet-200 hover:text-white text-xs font-bold transition-colors"
-          >
-            <MonitorPlay className="w-3.5 h-3.5" /> CBT Exam
-          </button>
+        {((set.bankType === 'Exam' && onStartCbt) || hasHistory) && (
+          <div className="mb-2 sm:mb-3 ml-4 sm:ml-6 flex flex-wrap gap-1.5">
+            {set.bankType === 'Exam' && onStartCbt && (
+              <button
+                type="button"
+                onClick={() => onStartCbt(set.bankName, set.exam_date || set.displayName)}
+                className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-violet-950/50 hover:bg-violet-600 border border-violet-700/50 text-violet-200 hover:text-white text-xs font-bold transition-colors"
+              >
+                <MonitorPlay className="w-3.5 h-3.5" /> CBT Exam
+              </button>
+            )}
+            {hasHistory && (
+              <button
+                type="button"
+                onClick={() => setHistoryFor(set)}
+                className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-800/70 hover:bg-slate-700 border border-slate-600/60 text-slate-300 hover:text-white text-xs font-bold transition-colors"
+              >
+                <History className="w-3.5 h-3.5" /> See history
+              </button>
+            )}
+          </div>
         )}
 
         {set.modules.length > 0 && (
@@ -517,6 +549,15 @@ const UnifiedQuizSelector: React.FC<UnifiedQuizSelectorProps> = ({ subjectCode, 
           )}
         </div>
       </div>
+
+      {historyFor && (
+        <HistoryDialog
+          subjectCode={subjectCode}
+          set={setKey(historyFor.bankType, historyFor.bankName)}
+          title={historyFor.displayName}
+          onClose={() => setHistoryFor(null)}
+        />
+      )}
 
       {/* Action Buttons */}
       <div className="mt-6 sm:mt-8 grid grid-cols-2 gap-3">
