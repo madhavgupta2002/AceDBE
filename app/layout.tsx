@@ -3,6 +3,7 @@ import { Inter, Merriweather, Open_Sans, Lora, Roboto } from 'next/font/google';
 import './globals.css';
 import 'katex/dist/katex.min.css';
 import { BatchProvider } from '@/contexts/BatchContext';
+import { AuthProvider } from '@/contexts/AuthContext';
 import Script from 'next/script';
 import { NavigationProgress } from '@/components/NavigationProgress';
 
@@ -136,11 +137,13 @@ export default function RootLayout({
       <body className={`${inter.className} bg-[#05080f] ${merriweather.variable} ${openSans.variable} ${lora.variable} ${roboto.variable}`}>
         <NavigationProgress />
           <BatchProvider>
-            {children}
-            <footer className="w-full py-6 mt-auto border-t border-gray-800/50">
-              <div className="flex flex-col items-center gap-2">
-              </div>
-            </footer>
+            <AuthProvider>
+              {children}
+              <footer className="w-full py-6 mt-auto border-t border-gray-800/50">
+                <div className="flex flex-col items-center gap-2">
+                </div>
+              </footer>
+            </AuthProvider>
           </BatchProvider>
       </body>
     </html>
