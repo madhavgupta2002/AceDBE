@@ -6,6 +6,7 @@ import Header from '@/components/Header';
 import { useBatch } from '@/contexts/BatchContext';
 import { getSubjectsByBatch, getDisplayNameForAlias, getTermsForBatch } from '@/lib/subjectMapping';
 import { CheckKind, isModuleDone, useModules, useProgress } from '@/lib/progress';
+import { useAuth } from '@/contexts/AuthContext';
 
 const Bar: React.FC<{ value: number; total: number }> = ({ value, total }) => (
   <div className="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
@@ -110,6 +111,7 @@ const ModuleTile: React.FC<{
 export default function TrackerPage() {
   const { selectedBatch, selectedTerm, setSelectedTerm } = useBatch();
   const { progress, setChecks } = useProgress();
+  const { user } = useAuth();
 
   const terms = getTermsForBatch(selectedBatch);
   const allSubjects = getSubjectsByBatch(selectedBatch);
@@ -155,7 +157,7 @@ export default function TrackerPage() {
         <div className="flex flex-wrap items-end justify-between gap-3 mb-5 px-1">
           <div>
             <h1 className="text-xl sm:text-2xl font-bold tracking-tight">Progress Tracker</h1>
-            <p className="text-xs text-slate-500 mt-0.5">Batch {selectedBatch} · saved on this device</p>
+            <p className="text-xs text-slate-500 mt-0.5">Batch {selectedBatch} · {user ? 'synced to your account' : 'saved on this device'}</p>
           </div>
           <div className="flex items-center gap-3">
             <Ring value={pct(termTotals.done, termTotals.total)} size={44} />

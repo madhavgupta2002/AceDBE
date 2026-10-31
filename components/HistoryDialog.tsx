@@ -3,17 +3,8 @@
 import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { Loader2, X } from 'lucide-react';
-import { Attempt, fetchSetHistory } from '@/lib/history';
-
-const formatTime = (sec: number) => {
-  const m = Math.floor(sec / 60);
-  const s = sec % 60;
-  return m >= 60 ? `${Math.floor(m / 60)}h ${m % 60}m` : `${m}m ${s.toString().padStart(2, '0')}s`;
-};
-
-const pct = (correct: number, total: number) => (total ? Math.round((correct / total) * 100) : 0);
-
-const pctCls = (p: number) => (p >= 75 ? 'text-emerald-300' : p >= 50 ? 'text-yellow-300' : 'text-red-300');
+import { Attempt, fetchSetHistory, formatDuration, pct, pctCls } from '@/lib/history';
+import Link from 'next/link';
 
 /** Past attempts that included one question set, showing only that set's part of each attempt. */
 export default function HistoryDialog({
@@ -85,7 +76,7 @@ export default function HistoryDialog({
                       {a.mode === 'cbt' ? 'CBT' : 'Practice'}
                     </span>
                     {new Date(a.created_at).toLocaleString(undefined, { dateStyle: 'medium', timeStyle: 'short' })}
-                    <span>· {formatTime(a.time_sec)}</span>
+                    <span>· {formatDuration(a.time_sec)}</span>
                   </div>
                   <div className={`text-sm font-bold ${pctCls(p)}`}>
                     {correct}/{total} <span className="text-xs font-semibold">({p}%)</span>
@@ -107,6 +98,11 @@ export default function HistoryDialog({
               </div>
             );
           })}
+        </div>
+        <div className="px-4 py-2.5 border-t border-slate-700 text-right">
+          <Link href="/history" className="text-xs font-semibold text-emerald-400 hover:text-emerald-300">
+            All quiz history →
+          </Link>
         </div>
       </div>
     </div>,
