@@ -1061,7 +1061,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
 
 
           {/* Video playlists — whole-course link in the header, one thumbnail card per module */}
-          {!loading && moduleNumbers.length > 0 && (quizState.questions.length === 0 || quizCompleted) && (() => {
+          {!loading && moduleNumbers.length > 0 && quizState.questions.length === 0 && (() => {
             const allVideos = moduleNumbers.flatMap((m) => subjectVideos[m] || []);
             const allPlaylistUrl = moduleNumbers.length > 1 ? createPlaylistUrl(allVideos) : '';
             const cards = moduleNumbers.map((m) => ({ key: m, label: isNaN(+m) ? m : `Module ${m}`, videos: subjectVideos[m] || [] }));
