@@ -1,8 +1,9 @@
 'use client';
 
 import { useCallback, useEffect, useState } from 'react';
+import { supabase } from './supabase';
 
-// Per-user module completion, stored in localStorage.
+// Per-user module completion, cached in localStorage and mirrored to Supabase while signed in.
 // Shape: { [subjectCode]: { [module]: { video?: true, questions?: true } } }
 export type CheckKind = 'video' | 'questions';
 export type ModuleProgress = Partial<Record<CheckKind, boolean>>;
@@ -23,6 +24,50 @@ const read = (): ProgressMap => {
 const write = (map: ProgressMap) => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(map));
   window.dispatchEvent(new Event(CHANGE_EVENT));
+};
+
+// ── Account sync ──────────────────────────────────────────────────────────────
+
+let syncUserId: string | null = null;
+
+const pushModule = (code: string, module: string, p: ModuleProgress) => {
+  if (!supabase || !syncUserId) return;
+  void supabase
+    .from('module_progress')
+    .upsert({ subject_code: code, module, video: !!p.video, questions: !!p.questions, updated_at: new Date().toISOString() })
+    .then(({ error }) => error && console.error('Progress sync failed:', error.message));
+};
+
+/** Called by AuthProvider. Signing in merges this device's progress with the account; signing out clears it. */
+export const setProgressUser = async (userId: string | null) => {
+  if (userId === syncUserId) return;
+  const wasSignedIn = syncUserId !== null;
+  syncUserId = userId;
+  if (!userId) {
+    if (wasSignedIn) write({});
+    return;
+  }
+  if (!supabase) return;
+  const { data, error } = await supabase.from('module_progress').select('subject_code, module, video, questions');
+  if (error || syncUserId !== userId) return;
+
+  const map = read();
+  const remote = new Set<string>();
+  for (const row of data ?? []) {
+    remote.add(`${row.subject_code}|${row.module}`);
+    const subject = (map[row.subject_code] ??= {});
+    const local = subject[row.module];
+    const merged = { video: !!(row.video || local?.video), questions: !!(row.questions || local?.questions) };
+    if (merged.video !== row.video || merged.questions !== row.questions) pushModule(row.subject_code, row.module, merged);
+    if (merged.video || merged.questions) subject[row.module] = merged;
+  }
+  // Upload what only this device had.
+  for (const [code, modules] of Object.entries(map)) {
+    for (const [module, p] of Object.entries(modules)) {
+      if (!remote.has(`${code}|${module}`)) pushModule(code, module, p);
+    }
+  }
+  write(map);
 };
 
 export const isModuleDone = (p?: ModuleProgress) => !!(p?.video && p?.questions);
@@ -50,6 +95,7 @@ export const useProgress = () => {
     if (!next.video && !next.questions) delete subject[module];
     else subject[module] = next;
     write(map);
+    pushModule(code, module, next);
   }, []);
 
   return { progress, setChecks };
