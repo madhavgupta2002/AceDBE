@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "build:extension": "node scripts/zip-extension.js",
+    "prebuild": "node scripts/zip-extension.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
