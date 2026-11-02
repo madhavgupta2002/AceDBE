@@ -793,6 +793,146 @@
       "correct_option_label": "B",
       "explanation": "Trans-generational entrepreneurship is a family's capability to create value across generations through continued entrepreneurial behaviour.",
       "module": 5
+    },
+    {
+      "question_id": "CLA_M6_Q01",
+      "question_text": "A family-owned company discusses a proposed expansion during a family reunion. Several relatives support the idea, but the company has not assessed the financial risks or strategic implications. What is the most appropriate next step?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Proceed with the expansion because most family members support it",
+        "B": "Ask the board to evaluate the proposal against the company’s strategy and risks",
+        "C": "Ask the family council to approve the expansion on behalf of the company",
+        "D": "Let the founder make the final decision without further review"
+      },
+      "correct_option_label": "B",
+      "explanation": "Business decisions belong to the board, which evaluates a proposal against strategy and risk. Family enthusiasm is not an assessment, and the family council does not decide on the company's behalf.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q02",
+      "question_text": "A family business has grown to include several generations. Some family members work in the business, while others are shareholders who have no operational role. The family wants to keep everyone informed and strengthen relationships across branches. Which structure best serves this purpose?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The board of directors",
+        "B": "The management committee",
+        "C": "The family forum",
+        "D": "The audit committee"
+      },
+      "correct_option_label": "C",
+      "explanation": "The family forum is the broad, inclusive body for informing and connecting the extended family across generations and branches, including non-working shareholders.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q03",
+      "question_text": "After selling part of its operating business, a family accumulates substantial wealth across investments and other assets. The family now needs professional investment management, tax and legal support and assistance administering its governance arrangements. Which structure best fits this need?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A family office",
+        "B": "A family forum",
+        "C": "A board of directors",
+        "D": "A shareholders’ assembly"
+      },
+      "correct_option_label": "A",
+      "explanation": "A family office manages a family's wealth: investments, tax and legal support, and administration of family governance.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q04",
+      "question_text": "A family-owned manufacturing company is considering a major expansion. An independent director questions the financial projections, introduces the company to potential lenders and ensures that management reports progress against agreed targets. Which option correctly identifies the three board roles demonstrated, in order?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Control, service, resource provision",
+        "B": "Resource provision, control, service",
+        "C": "Service, control, resource provision",
+        "D": "Service, resource provision, control"
+      },
+      "correct_option_label": "D",
+      "explanation": "Questioning the projections is the service role (advice, strategic sounding board that pressure-tests plans). Introducing lenders is resource provision (networks and access to capital). Monitoring progress against agreed targets is control.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q05",
+      "question_text": "A family controls a company and approves a transaction that transfers a valuable company asset to another business owned by the controlling family. The transaction is not independently reviewed and may disadvantage minority shareholders. What is the primary governance risk?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Type I agency conflict between owners and hired managers",
+        "B": "Type II agency conflict between the controlling family and minority shareholders",
+        "C": "A resource-provision failure caused by limited external networks",
+        "D": "A succession-planning failure caused by insufficient next-generation development"
+      },
+      "correct_option_label": "B",
+      "explanation": "A Type II agency conflict is the controlling family extracting value at the expense of minority shareholders. Related-party transactions need arm's-length pricing and approval by non-conflicted directors.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q06",
+      "question_text": "A family business has entered the cousin-consortium stage. Each family branch demands a board seat to ensure representation. However, the business now operates across multiple markets and needs stronger financial, technological and international expertise. Which governance arrangement best addresses both needs?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Reserve board seats for relevant competence and use a family council to represent family branches",
+        "B": "Give every branch a board seat and retain the existing board structure",
+        "C": "Replace the board with the family council so every branch can participate",
+        "D": "Allow the CEO to appoint all directors without consulting any governance body"
+      },
+      "correct_option_label": "A",
+      "explanation": "Board seats go to the competence the business needs, while representation of family branches is handled in the family council. The board is not a family forum.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q07",
+      "question_text": "A family council discusses whether the company should be sold. During the discussion, members agree that the family should retain control. However, the family has a separate owner council with defined decision-making authority. What is the most appropriate interpretation of the family council’s decision?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It automatically binds all shareholders because the family council represents the family",
+        "B": "It replaces the board’s responsibility to evaluate and decide on the proposed sale",
+        "C": "It expresses the family’s preference, but the decision must follow the established ownership and board authority arrangements",
+        "D": "It gives every family member an individual veto over the proposed sale"
+      },
+      "correct_option_label": "C",
+      "explanation": "The family council voices the family's view; it has no formal authority over the company. Decisions follow the defined authority of the owner council and the board.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q08",
+      "question_text": "A family business appoints two independent directors to satisfy its governance requirements. Both directors have relevant expertise. However, during meetings, they consistently agree with the founder, who controls their reappointment. They rarely challenge proposals, even when financial risks are raised. Which intervention most directly addresses the underlying problem?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Increase the number of board meetings without changing the appointment process",
+        "B": "Appoint additional directors with similar professional qualifications",
+        "C": "Transfer all board responsibilities to the management team",
+        "D": "Strengthen the independence of appointment and reappointment processes and create conditions for genuine challenge"
+      },
+      "correct_option_label": "D",
+      "explanation": "The problem is not expertise but independence: the founder controls reappointment. Fixing the appointment and reappointment process and enabling real challenge addresses the cause.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q09",
+      "question_text": "A family business develops a detailed family constitution covering values, family employment, board nominations and ownership principles. The drafting team completes the document, but the existing decision-makers have not formally agreed to it. The family assumes that the document will nevertheless guide future decisions. What is the most important next step?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Publish the constitution immediately so that family members begin following it",
+        "B": "Obtain agreement from the people who hold the relevant authority and establish a process for review and revision",
+        "C": "Ask the family office to enforce the constitution independently of existing governance bodies",
+        "D": "Replace the constitution with informal discussions to avoid disagreements"
+      },
+      "correct_option_label": "B",
+      "explanation": "A constitution only guides decisions once the people with authority have agreed to it, and it needs a process for periodic review and revision.",
+      "module": 6
+    },
+    {
+      "question_id": "CLA_M6_Q10",
+      "question_text": "A family-controlled company plans to acquire a competitor. The family council supports the acquisition because it could preserve the family’s long-term legacy. The board is concerned about debt and operational risk, while the owner council must exercise its approval authority under the company’s established decision-making arrangements. Which approach best reflects sound governance?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Proceed because preserving family legacy should take priority over financial risk",
+        "B": "Allow the family council to make the final decision because it represents the family’s shared values",
+        "C": "Let the board approve the acquisition without considering the owner council’s established authority",
+        "D": "Have the board evaluate the business case and risks, the owner council exercise its defined approval authority and the family council communicate the family’s perspective"
+      },
+      "correct_option_label": "D",
+      "explanation": "Each body keeps its own role: the board evaluates the case and risk, the owner council exercises its approval authority, and the family council communicates the family's perspective.",
+      "module": 6
     }
   ]
 }
