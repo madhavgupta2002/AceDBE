@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Quiz Answer Filler",
-  "version": "1.2",
+  "version": "1.3",
   "description": "Paste a JSON of answers to auto-select options; copy questions / LLM prompt; submit all.",
   "permissions": ["scripting", "activeTab", "storage"],
   "host_permissions": ["https://*.iimbx.edu.in/*", "https://iimbx.edu.in/*", "https://api.github.com/*", "https://raw.githubusercontent.com/*"],

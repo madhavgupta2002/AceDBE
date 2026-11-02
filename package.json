@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build:extension": "node scripts/zip-extension.js",
-    "prebuild": "node scripts/zip-extension.js",
+    "prebuild": "node scripts/zip-extension.js && node scripts/build-answer-index.js",
+    "build:index": "node scripts/build-answer-index.js",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"

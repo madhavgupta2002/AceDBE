@@ -67,40 +67,24 @@ ${q.body}`);
 
 // ---- Auto-detection: subject from URL, module by best match, answers by string match ----
 
-const REPO = 'https://api.github.com/repos/madhavgupta2002/AceDBE/contents/public/data/Subjects';
+const INDEX_URL = 'https://raw.githubusercontent.com/madhavgupta2002/AceDBE/main/public/data/answer-index.json';
 const status = document.getElementById('status');
 let auto = {};          // { "3": ["b"] } letters refer to the options as ordered on the page
 
 const words = s => String(s).toLowerCase().replace(/[^a-z0-9₹%.]+/g, ' ').split(' ').filter(w => w.length > 1);
-function sim(a, b) {   // Dice coefficient over word sets
-  const A = new Set(words(a)), B = new Set(words(b));
+const wordSet = x => (x.w ??= new Set(words(x.text)));   // memoised per entry
+function dice(A, B) {
   if (!A.size || !B.size) return 0;
   let n = 0; A.forEach(w => B.has(w) && n++);
   return 2 * n / (A.size + B.size);
 }
+const sim = (a, b) => dice(new Set(words(a)), new Set(words(b)));
 
-async function getJSON(url) { const r = await fetch(url); if (!r.ok) throw new Error(`${r.status} ${url}`); return r.json(); }
-
-// Cached for 6h so the GitHub API (60 req/h unauthenticated) isn't hit on every open.
-async function loadSubject(code) {
-  const key = 'cla_' + code, c = (await chrome.storage.local.get(key))[key];
-  if (c && Date.now() - c.t < 6 * 3600e3) return c.data;
-  const folders = (await getJSON(REPO)).filter(f => f.type === 'dir' && (f.name === code || f.name.startsWith(code + '_')));
-  const data = { name: code, questions: [] };
-  for (const f of folders) {
-    for (const dir of ['CLA', 'Exam']) {   // CLA/MT-style quizzes also reuse exam questions
-      let files = [];
-      try { files = await getJSON(`${REPO}/${encodeURIComponent(f.name)}/${dir}`); } catch { continue; }
-      for (const file of files.filter(x => /\.json$/i.test(x.name))) {
-        const j = await getJSON(file.download_url);
-        data.name = j.exam_metadata?.subject_name || data.name;
-        (j.questions || []).forEach(q => !q.is_passage && q.options && Object.values(q.options).some(Boolean) && q.correct_option_label &&
-          data.questions.push({ ...q, src: `${f.name}/${dir}/${file.name}` }));
-      }
-    }
-  }
-  await chrome.storage.local.set({ [key]: { t: Date.now(), data } });
-  return data;
+// One file with every answerable question from all subjects (built by scripts/build-answer-index.js).
+async function loadIndex() {
+  const r = await fetch(INDEX_URL);
+  if (!r.ok) throw new Error(`answer index ${r.status}`);
+  return (await r.json()).map(e => ({ ...e, text: e.q + ' ' + Object.values(e.o).join(' ') }));
 }
 
 async function detect() {
@@ -112,32 +96,31 @@ async function detect() {
     const code = urls.map(u => (u.match(/[+:/]([A-Z]{2}\d{2}x)[+_/]/) || [])[1]).find(Boolean);
     const batch = urls.map(u => (u.match(/\+[^+/]*_B(\d)\b/) || [])[1]).find(Boolean);
     const title = info.map(i => i.title).find(Boolean) || tab.title || '';
-    const hintMod = (title.match(/CLA\s*-?\s*(\d+)/i) || [])[1];
-    if (!code) { status.textContent = 'No subject code in URL — paste answers manually.'; return; }
-    status.textContent = `Detected ${code}, loading answers…`;
-    const [subj, qs] = await Promise.all([loadSubject(code), runInFrames(extractQuestions)]);
-    if (!subj.questions.length) { status.textContent = `${code}: no CLA answers in repo yet.`; return; }
-    if (!qs.length) { status.textContent = `${subj.name} (${code}) — no questions on this page.`; return; }
-    const best = (q, pool) => pool.reduce((b, k) => { const s = sim(q.text + ' ' + q.options.join(' '), k.question_text + ' ' + Object.values(k.options).join(' ')); return s > b.s ? { s, k } : b; }, { s: 0 });
-    // Module = the one whose questions best match this page as a whole.
-    const groups = {};
-    subj.questions.forEach(k => (groups[`${k.src}|${k.module}`] ??= []).push(k));
-    let cands = Object.entries(groups);
-    if (hintMod) { const only = cands.filter(([g]) => g.includes('/CLA/') && g.endsWith('|' + hintMod)); if (only.length) cands = only; }
-    const score = ([g, pool]) => qs.reduce((t, q) => t + best(q, pool).s, 0) * (batch && (g.split('/')[0].endsWith('_B' + batch) || g.includes('Batch ' + batch)) ? 1.1 : 1);
-    const [gid, pool] = cands.sort((a, b) => score(b) - score(a))[0];
-    auto = {}; const lines = [];
+    status.textContent = `${code ? 'Detected ' + code + ', l' : 'L'}oading answers…`;
+    const [index, qs] = await Promise.all([loadIndex(), runInFrames(extractQuestions)]);
+    if (!qs.length) { status.textContent = `${code || 'This page'}: no questions found on this page.`; return; }
+
+    // Match each page question against every bank (a quiz can reuse another subject's or an exam's questions),
+    // preferring the detected subject and batch when scores are close.
+    const bonus = e => (code && e.c === code ? 0.04 : 0) + (batch && (e.s.split('/')[0].endsWith('_B' + batch) || e.s.includes('Batch ' + batch)) ? 0.01 : 0);
+    auto = {}; const lines = [], hits = {};
     for (const q of qs) {
-      const { s, k } = best(q, pool);
-      if (!k || s < 0.5) { lines.push(`Q${q.n}: ? no confident match`); continue; }
-      const labels = String(k.correct_option_label).split(/[,\s]+/).filter(l => k.options[l]);
-      const idx = labels.map(l => q.options.map((o, i) => [sim(o, k.options[l]) + (o.trim() === k.options[l].trim()), i]).sort((a, b) => b[0] - a[0])[0][1]);
-      if (!idx.length) { lines.push(`Q${q.n}: ? no answer key`); continue; }
+      const qSet = new Set(words(q.text + ' ' + q.options.join(' ')));
+      let best = null, bestScore = 0, bestRaw = 0;
+      for (const e of index) {
+        const raw = dice(qSet, wordSet(e));
+        if (raw < 0.45) continue;
+        if (raw + bonus(e) > bestScore) { best = e; bestRaw = raw; bestScore = raw + bonus(e); }
+      }
+      if (!best) { lines.push(`Q${q.n}: ? no confident match`); continue; }
+      const idx = best.a.split(',').map(l => q.options.map((o, i) => [sim(o, best.o[l]) + (o.trim() === best.o[l].trim()), i]).sort((a, b) => b[0] - a[0])[0][1]);
       auto[q.n] = idx.map(i => String.fromCharCode(97 + i));
-      lines.push(`Q${q.n}: ${auto[q.n].join(',')}  (${Math.round(s * 100)}% match)`);
+      lines.push(`Q${q.n}: ${auto[q.n].join(',')}  (${Math.round(bestRaw * 100)}% match · ${best.c} ${best.s.split('/').pop()}${best.m !== '' ? ' M' + best.m : ''})`);
+      const g = `${best.n} (${best.c}) · ${best.s.split('/').pop()}`; hits[g] = (hits[g] || 0) + 1;
     }
-    const [src, mod] = gid.split('|');
-    status.textContent = `${subj.name} (${code}${batch ? ' B' + batch : ''}) · ${title ? title + ' · ' : ''}Module ${mod} · ${Object.keys(auto).length}/${qs.length} matched\n[${src}]`;
+    const top = Object.entries(hits).sort((a, b) => b[1] - a[1])[0];
+    status.textContent = `${title ? title + ' · ' : ''}${Object.keys(auto).length}/${qs.length} matched${top ? '\n' + top[0] : ''}` +
+      (code && top && !top[0].includes(`(${code})`) ? `\n(${code} has no matching bank — used the closest one)` : '');
     log.textContent = lines.join('\n');
   } catch (e) { status.textContent = 'Auto-detect failed: ' + e.message; }
 }
@@ -163,7 +146,7 @@ function fillAnswers(answers) {
     .filter((p, _, all) => !all.some(o => o !== p && p.contains(o)));
   problems.forEach((p, i) => {
     const header = p.closest('.xblock')?.querySelector('h3, .problem-header') || p.querySelector('h3');
-    const m = header && header.textContent.match(/Question\s*(\d+)/i);
+    const m = header && header.textContent.match(/(?:Question|MCQ)\s*(\d+)/i);
     const qn = m ? m[1] : String(i + 1);
     const ans = answers[qn] ?? answers['Q' + qn];
     if (ans == null) { out.push(`Q${qn}: — not in JSON`); return; }
@@ -197,7 +180,7 @@ function highlight(answers) {
     .filter((p, _, all) => !all.some(o => o !== p && p.contains(o)));
   problems.forEach((p, i) => {
     const header = p.closest('.xblock')?.querySelector('h3, .problem-header') || p.querySelector('h3');
-    const m = header && header.textContent.match(/Question\s*(\d+)/i);
+    const m = header && header.textContent.match(/(?:Question|MCQ)\s*(\d+)/i);
     const inputs = [...p.querySelectorAll('input[type=radio], input[type=checkbox]')];
     const labelEl = inp => inp.closest('label') || p.querySelector(`label[for="${inp.id}"]`) || inp.parentElement;
     inputs.forEach(inp => labelEl(inp).style.removeProperty('outline'));
@@ -239,7 +222,7 @@ function extractQuestions() {
     if (!isProblem(blk)) { const t = textOf(blk); if (t) context.push(t); continue; }
     const p = blk.querySelector('.problem') || blk;
     const header = blk.querySelector('h3, .problem-header');
-    const m = header && header.textContent.match(/Question\s*(\d+)/i);
+    const m = header && header.textContent.match(/(?:Question|MCQ)\s*(\d+)/i);
     const inputs = [...p.querySelectorAll('input[type=radio], input[type=checkbox]')];
     const options = inputs.map(inp => norm((inp.closest('label') || p.querySelector(`label[for="${inp.id}"]`) || inp.parentElement).textContent));
     const clone = p.cloneNode(true);
