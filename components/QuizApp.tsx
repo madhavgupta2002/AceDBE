@@ -1086,7 +1086,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
                     </a>
                   )}
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                <div className="grid grid-cols-4 gap-2 sm:gap-3">
                   {cards.map(({ key, label, videos }) => {
                     const playlistUrl = createPlaylistUrl(videos);
                     const thumbId = videos.map(videoIdOf).find(Boolean);
@@ -1098,7 +1098,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
                         rel="noopener noreferrer"
                         aria-disabled={!playlistUrl}
                         title={playlistUrl ? `Play ${label} (${videos.length} videos) on YouTube` : 'No videos available'}
-                        className={`group block rounded-lg overflow-hidden border transition-colors ${
+                        className={`group block min-w-0 rounded-lg overflow-hidden border transition-colors ${
                           playlistUrl ? 'border-surface-border hover:border-red-500/50' : 'border-surface-border/40 opacity-50 pointer-events-none'
                         }`}
                       >
@@ -1113,14 +1113,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
                             />
                           )}
                           <div className="absolute inset-0 flex items-center justify-center">
-                            <span className="flex items-center justify-center w-9 h-9 rounded-full bg-black/60 group-hover:bg-red-600 transition-colors">
+                            <span className="flex items-center justify-center w-6 h-6 sm:w-9 sm:h-9 rounded-full bg-black/60 group-hover:bg-red-600 transition-colors">
                               <Play className="w-4 h-4 text-white fill-white ml-0.5" />
                             </span>
                           </div>
                         </div>
-                        <div className="px-2.5 py-1.5 bg-surface-light">
-                          <div className="text-sm font-medium text-slate-100">{label}</div>
-                          <div className="text-[11px] text-slate-500">{videos.length} videos</div>
+                        <div className="px-1.5 sm:px-2.5 py-1.5 bg-surface-light">
+                          <div className="text-xs sm:text-sm font-medium text-slate-100 truncate">{label}</div>
+                          <div className="text-[10px] sm:text-[11px] text-slate-500 truncate">{videos.length} videos</div>
                         </div>
                       </a>
                     );
