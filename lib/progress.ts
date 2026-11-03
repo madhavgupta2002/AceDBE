@@ -37,7 +37,7 @@ const setStatus = (status: SyncStatus) => { syncStatus = status; notify(); };
 
 // Pending edits are kept per account, including explicit false values, until the server accepts them.
 // A cloud snapshot replaces a stale cache; only unsaved user edits are applied over that snapshot.
-export const retryProgressSync = (): Promise<void> => {
+const retryProgressSync = (): Promise<void> => {
   if (!supabase || !syncUserId) return Promise.resolve();
   if (activeSync) return activeSync;
   clearTimeout(retryTimer);
@@ -163,7 +163,7 @@ export const useProgress = () => {
 
 const moduleCache = new Map<string, Promise<string[]>>();
 
-export const fetchModules = (code: string): Promise<string[]> => {
+const fetchModules = (code: string): Promise<string[]> => {
   if (!moduleCache.has(code)) {
     moduleCache.set(
       code,

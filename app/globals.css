@@ -152,6 +152,27 @@ body::after {
   scrollbar-color: #334155 rgba(15, 23, 42, 0.5);
 }
 
+/* Hide scrollbar while keeping scrollability */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+/* Keyboard focus ring (mouse focus stays clean) */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #34d399;
+  outline-offset: 2px;
+}
+
 /* Print Styles - Optimized for Single Page A4 Landscape */
 @media print {
   @page {
@@ -172,5 +193,20 @@ body::after {
   body::before,
   body::after {
     display: none !important;
+  }
+}
+/* Respect the OS "reduce motion" setting: no animations, instant transitions, no smooth scroll. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
   }
 }

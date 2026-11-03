@@ -15,6 +15,15 @@ module.exports = {
           dark: '#0d1321',
           border: '#1e2d3d',
         },
+        page: '#05080f',
+      },
+      fontSize: {
+        '2xs': ['10px', '14px'],
+      },
+      zIndex: {
+        sticky: '10',
+        dropdown: '20',
+        modal: '50',
       },
       boxShadow: {
         'card': '0 4px 24px 0 rgba(0,0,0,0.25)',

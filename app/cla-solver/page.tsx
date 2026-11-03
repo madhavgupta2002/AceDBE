@@ -1,4 +1,5 @@
 import Header from '@/components/Header';
+import PageTitle from '@/components/PageTitle';
 import { Download, Puzzle } from 'lucide-react';
 
 export const metadata = {
@@ -17,11 +18,12 @@ export default function ClaSolverRoute() {
     return (
         <div className="min-h-screen relative z-[1] text-white">
             <Header showBackButton backLink="/" />
-            <main className="max-w-2xl mx-auto px-4 py-10">
-                <h1 className="text-2xl sm:text-3xl font-bold flex items-center gap-2.5 mb-2">
-                    <Puzzle className="w-7 h-7 text-emerald-400" />
-                    CLA Solver
-                </h1>
+            <main id="main" className="max-w-2xl mx-auto px-3 sm:px-4 py-8 sm:py-10">
+                <PageTitle
+                    className="mb-3"
+                    title="CLA Solver"
+                    icon={<Puzzle className="w-6 h-6 text-emerald-400" />}
+                />
                 <p className="text-slate-400 mb-6">
                     A Chrome extension that detects the subject and module of the CLA you have open, matches each question
                     against the AceDBE question bank and highlights or selects the correct options for you.
@@ -43,7 +45,7 @@ export default function ClaSolverRoute() {
                     ))}
                 </ol>
 
-                <p className="text-xs text-slate-500 mt-8">
+                <p className="text-xs text-slate-400 mt-8">
                     Answers come from the AceDBE question bank, so a CLA that is not in it yet will not be matched.
                     Always check the highlighted answers yourself before submitting.
                 </p>

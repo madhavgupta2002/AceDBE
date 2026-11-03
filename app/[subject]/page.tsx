@@ -1,5 +1,6 @@
 import QuizApp from '@/components/QuizApp';
 import { Metadata } from 'next';
+import { getSubjectByCode } from '@/lib/subjectMapping';
 
 interface QuizPageProps {
   params: Promise<{
@@ -16,7 +17,7 @@ interface QuizPageProps {
 export async function generateMetadata({ params }: QuizPageProps): Promise<Metadata> {
   const { subject } = await params;
   return {
-    title: subject.toUpperCase(),
+    title: getSubjectByCode(subject)?.name ?? subject.toUpperCase(),
   };
 }
 

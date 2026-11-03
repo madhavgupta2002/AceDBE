@@ -11,20 +11,28 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 const merriweather = Merriweather({
   subsets: ['latin'],
   weight: ['300', '400', '700'],
-  variable: '--font-merriweather'
+  variable: '--font-merriweather',
+  display: 'swap',
+  preload: false,
 });
 const openSans = Open_Sans({
   subsets: ['latin'],
-  variable: '--font-open-sans'
+  variable: '--font-open-sans',
+  display: 'swap',
+  preload: false,
 });
 const lora = Lora({
   subsets: ['latin'],
-  variable: '--font-lora'
+  variable: '--font-lora',
+  display: 'swap',
+  preload: false,
 });
 const roboto = Roboto({
   subsets: ['latin'],
   weight: ['300', '400', '500', '700'],
-  variable: '--font-roboto'
+  variable: '--font-roboto',
+  display: 'swap',
+  preload: false,
 });
 
 export const metadata: Metadata = {
@@ -92,8 +100,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {/* Google tag (gtag.js) */}
         <Script
           async
@@ -125,24 +131,21 @@ export default function RootLayout({
             "@type": "WebSite",
             "name": "AceDBE",
             "url": "https://acedbe.vercel.app",
-            "description": "Comprehensive practice portal for BBA-DBE students with notes, quizzes, and previous year questions.",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://acedbe.vercel.app/search?q={search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
+            "description": "Comprehensive practice portal for BBA-DBE students with notes, quizzes, and previous year questions."
           })}
         </Script>
       </head>
-      <body className={`${inter.className} bg-[#05080f] ${merriweather.variable} ${openSans.variable} ${lora.variable} ${roboto.variable}`}>
+      <body className={`${inter.className} bg-page ${merriweather.variable} ${openSans.variable} ${lora.variable} ${roboto.variable}`}>
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[10000] focus:rounded-lg focus:bg-emerald-500 focus:px-4 focus:py-2 focus:text-sm focus:font-semibold focus:text-slate-950"
+        >
+          Skip to content
+        </a>
         <NavigationProgress />
           <BatchProvider>
             <AuthProvider>
               {children}
-              <footer className="w-full py-6 mt-auto border-t border-gray-800/50">
-                <div className="flex flex-col items-center gap-2">
-                </div>
-              </footer>
             </AuthProvider>
           </BatchProvider>
       </body>
