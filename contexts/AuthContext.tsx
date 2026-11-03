@@ -9,6 +9,8 @@ import { useBatch } from './BatchContext';
 interface AuthContextType {
   /** False when Supabase isn't configured; the account UI is hidden. */
   enabled: boolean;
+  /** False until the stored session has been read (true right away when Supabase isn't configured). */
+  authReady: boolean;
   user: User | null;
   username: string;
   /** Both resolve to an error message, or null on success. */
@@ -19,6 +21,7 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType>({
   enabled: false,
+  authReady: true,
   user: null,
   username: '',
   signIn: async () => 'Accounts are not available.',
@@ -30,11 +33,16 @@ const USERNAME_HINT = 'Use the format name.surname25 (lowercase letters, a dot, 
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
+  const [authReady, setAuthReady] = useState(!supabase);
   const { setSelectedBatch } = useBatch();
 
   useEffect(() => {
     if (!supabase) return;
-    supabase.auth.getSession().then(({ data }) => setUser(data.session?.user ?? null));
+    supabase.auth
+      .getSession()
+      .then(({ data }) => setUser(data.session?.user ?? null))
+      .catch(() => {})
+      .finally(() => setAuthReady(true));
     const { data } = supabase.auth.onAuthStateChange((_event, session) => setUser(session?.user ?? null));
     return () => data.subscription.unsubscribe();
   }, []);
@@ -79,7 +87,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   return (
     <AuthContext.Provider
-      value={{ enabled: !!supabase, user, username: emailToUsername(user?.email), signIn, signUp, signOut }}
+      value={{ enabled: !!supabase, authReady, user, username: emailToUsername(user?.email), signIn, signUp, signOut }}
     >
       {children}
     </AuthContext.Provider>

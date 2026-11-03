@@ -18,12 +18,12 @@ export interface IIMBQuestion {
 }
 
 // Official exam pattern (Exam banks only). Documented in QUESTION_FORMAT.md.
-export type ExamPatternQuestionType =
+type ExamPatternQuestionType =
   | 'MCQ' | 'MSQ' | 'MCQ_MSQ' | 'TRUE_FALSE' | 'SCENARIO_MCQ' | 'CASELET_MCQ' | 'CONTEXT_MCQ'
   | 'MATCH_THE_FOLLOWING' | 'SEQUENCE_MCQ' | 'NUMERICAL' | 'SHORT_ANSWER' | 'CASE_BASED'
   | 'HIGHER_ORDER' | 'SHORT_ANSWER_AND_CASE_STUDY' | 'SUBJECTIVE';
 
-export interface ExamPatternContextBlock {
+interface ExamPatternContextBlock {
   context_question_id: string; // bank entry holding the shared scenario text
   applies_to: string[]; // question ids that refer to it
 }
@@ -56,7 +56,7 @@ export interface ExamPattern {
   sections: ExamPatternSection[];
 }
 
-export interface ExamMetadata {
+interface ExamMetadata {
   subject_name: string;
   exam_date: string;
   batch?: string | number;
@@ -85,7 +85,7 @@ export interface Question {
   passage?: QuestionPassage; // shared passage / caselet this question belongs to
 }
 
-export interface QuestionPassage {
+interface QuestionPassage {
   id: string;
   text: string;
   index: number; // 1-based position of this question among the passage's questions
@@ -93,8 +93,8 @@ export interface QuestionPassage {
 }
 
 // Quiz state types
-export type PracticeMode = 'bank' | 'full';
-export type QuestionOrder = 'random' | 'inOrder';
+type PracticeMode = 'bank' | 'full';
+type QuestionOrder = 'random' | 'inOrder';
 export type BankType = 'CLA' | 'Exam' | 'Custom';
 
 export interface QuizState {

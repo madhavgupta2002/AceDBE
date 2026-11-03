@@ -20,7 +20,7 @@ export const DIGION_ENGINE_URL = (
 // Engine types (the subset AceDBE needs; full definitions live in the engine's src/types.ts)
 // ---------------------------------------------------------------------------
 
-export interface DigionQuestionResult {
+interface DigionQuestionResult {
   id: string;
   number: number;
   type: 'MCQ' | 'MSQ' | 'TITA';
@@ -32,7 +32,7 @@ export interface DigionQuestionResult {
   marksAwarded?: number;
 }
 
-export interface DigionScore {
+interface DigionScore {
   marks: number;
   maxMarks: number;
   correct: number;
@@ -40,7 +40,7 @@ export interface DigionScore {
   unattempted: number;
 }
 
-export interface DigionSectionResult {
+interface DigionSectionResult {
   id: string;
   name: string;
   timeSpentSec: number;

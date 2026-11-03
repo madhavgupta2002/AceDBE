@@ -1,130 +1,109 @@
-# AceDBE - IIMB BBA-DBE Practice Portal
+# AceDBE
 
-Your complete practice platform for IIMB BBA-DBE courses, supporting 7 subjects with CLA and Exam question banks.
+Practice portal for IIMB BBA-DBE students: MCQ quizzes from CLA and exam question banks, timed CBT-style mock exams, previous year papers (PYQs), study notes, a module progress tracker and a marks/CGPA calculator. Live at https://acedbe.vercel.app.
 
-## Features
+Accounts are optional. Everything works without logging in; progress and quiz history are stored on the device. Logging in syncs them to Supabase.
 
-- **7 Subjects**: AE11x, DS11x, EP11x, EP12x, FA11x, MK11x, ST21x
-- **Question Bank Types**: CLA (Continuous Learning Assessment) and Exam
-- **Practice Modes**: Modulewise practice or full practice across all banks
-- **Question Ordering**: Random or in-order
-- **Dark Mode**: Toggle between light and dark themes
-- **Progress Tracking**: Real-time statistics and answer tracking
-- **Keyboard Navigation**: Arrow keys for navigation
+## Tech stack
 
-## Getting Started
+- Next.js 14 (App Router), React 18, TypeScript
+- Tailwind CSS 3 (dark theme only, custom tokens in `tailwind.config.js`)
+- Supabase (auth + Postgres) via `@supabase/supabase-js`, optional
+- `react-markdown` + KaTeX + Mermaid for notes and math/diagram rendering
+- `lucide-react` icons
 
-### Prerequisites
+## Setup
 
-- Node.js 18+ 
-- npm or yarn
+Requires Node.js 18+.
 
-### Installation
-
-1. Install dependencies:
 ```bash
 npm install
+npm run dev        # http://localhost:3000
 ```
 
-2. Run the development server:
-```bash
-npm run dev
-```
+### Environment variables (optional)
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser
-
-### Build for Production
-
-```bash
-npm run build
-npm start
-```
-
-## Project Structure
+Create `.env.local` to enable accounts. Without these, the Log in button is hidden and all data stays in the browser.
 
 ```
-iimb-practice/
-├── app/                    # Next.js App Router
-│   ├── api/               # API routes
-│   ├── quiz/              # Quiz pages
-│   ├── layout.tsx         # Root layout
-│   ├── page.tsx           # Home page
-│   └── globals.css        # Global styles
-├── components/            # React components
-│   ├── QuizApp.tsx        # Main quiz component
-│   ├── QuizQuestion.tsx   # Question display
-│   ├── SubjectSelector.tsx
-│   └── ...
-├── lib/                   # Utilities
-│   ├── types.ts           # TypeScript types
-│   ├── questionLoader.ts  # Question loading logic
-│   └── subjectMapping.ts  # Subject mappings
-├── public/
-│   └── data/              # Question JSON files
-│       ├── CLA/
-│       └── Exam/
-└── contexts/              # React contexts
-    └── DarkModeContext.tsx
+NEXT_PUBLIC_SUPABASE_URL=https://<project>.supabase.co
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=<publishable (anon) key>
 ```
 
-## Question File Format
+### Supabase schema
 
-Questions are stored as JSON files in `public/data/` organized by bank type (CLA/Exam) and subject code.
+1. Create a Supabase project and turn **Confirm email** off (Authentication settings). Usernames are mapped to a fake email `<username>@acedbe.app` that is never mailed.
+2. Open SQL Editor, paste `supabase/schema.sql` and run it. It is idempotent. It creates `profiles`, `module_progress` and `quiz_attempts`, enables row-level security so users only see their own rows, and a trigger that creates the profile on sign-up.
 
-Example structure:
-```json
-{
-  "exam_metadata": {
-    "subject_name": "Business Statistics",
-    "exam_date": "Mid Term Batch 1"
-  },
-  "questions": [
-    {
-      "question_id": "STAT_MT_Q1",
-      "question_text": "Question text here...",
-      "question_type": "MCQ",
-      "options": {
-        "A": "Option A",
-        "B": "Option B",
-        "C": "Option C",
-        "D": "Option D"
-      },
-      "correct_option_label": "D",
-      "module": "Mid-Term"
-    }
-  ]
-}
+Usernames must look like `firstname.lastname25` (the two-digit suffix is the batch year: 24, 25, 26 map to batches 1, 2, 3).
+
+## Scripts
+
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Dev server |
+| `npm run build` | Production build. `prebuild` first zips the CLA Solver extension and rebuilds `public/data/answer-index.json` |
+| `npm start` | Serve the production build |
+| `npm run lint` | `next lint` |
+| `npm test` | Regression tests (`node --test scripts/regression.test.cjs`) for `lib/` progress, history and related logic |
+| `npm run build:extension` | Re-zip `tools/extensions/QuizFiller` into `public/downloads/QuizFiller.zip` |
+| `npm run build:index` | Rebuild `public/data/answer-index.json` from the CLA/Exam banks |
+
+Type check with `npx tsc --noEmit`.
+
+## Routes
+
+| Route | Page |
+| --- | --- |
+| `/` | Subject list for the selected batch and term |
+| `/[subject]` | Quiz / CBT exam for a subject (`?exam=`, `?bank=`, `?review=cbt`) |
+| `/[subject]/notes` | Markdown notes (detailed and short) |
+| `/pyqs` | Previous year papers |
+| `/tracker` | Module progress grid (videos and questions per module) |
+| `/history` | Quiz attempt history (logged in) |
+| `/marks` | Marks / CGPA calculator |
+| `/cla-solver` | Download and install guide for the QuizFiller Chrome extension |
+| `/api/banks`, `/api/questions`, `/api/question-image`, `/api/pyqs`, `/api/entrance` | Read-only routes serving question data from `public/data` |
+
+## Folder map
+
+```
+app/             App Router pages, layout, route handlers (app/api), robots.ts, sitemap.ts, globals.css
+components/      Shared UI (Header, Modal, Button, Chip, PageTitle, ...) and page-level components
+  marks/         Pieces of the marks / CGPA page
+  pyq/           Pieces of the PYQ page (if present)
+contexts/        AuthContext (Supabase session), BatchContext (selected batch and term)
+lib/             Data and logic: subjectMapping, questionLoader, progress, history, supabase, digionConnector,
+                 pyqService, cbtPattern, cgpa/, marks/, types
+public/data/     Content: Subjects/<code>/{CLA,Exam}/*.json, NOTES.md, videos.json; answer-index.json (generated)
+public/downloads/ QuizFiller.zip (generated by scripts/zip-extension.js)
+supabase/        schema.sql
+scripts/         build-answer-index.js, zip-extension.js, regression.test.cjs
+tools/           Content tooling, not part of the app build: extensions/ (QuizFiller, DataExtractionExtension),
+                 prompts/ (LLM prompts for notes and question transcription), scripts/ (Python helpers)
 ```
 
-## Usage
+### Question files
 
-1. Select a subject from the home page
-2. Choose question bank type (CLA or Exam)
-3. Select practice mode (Modulewise or Full practice)
-4. Choose question order (Random or In Order)
-5. Select a specific bank (if in bank mode)
-6. Start practicing!
+`public/data/Subjects/<code>/CLA|Exam/<name>.json` with an `exam_metadata` object (subject name, exam date, optional `exam_pattern` for CBT) and a `questions` array. Types live in `lib/types.ts`. Subject codes, batches and terms are defined in `lib/subjectMapping.ts`; add a subject there and drop its data folder under `public/data/Subjects/`.
 
-## CBT exams (PYQs only)
+## Data flow
 
-On the PYQs page, choose **CBT Exam** and click a paper to take it in the exam-centre interface served by the Digion exam engine. Papers with `exam_metadata.exam_pattern` use it (sections, marks, negative marking, duration, calculator); any other Exam paper with objective questions uses a standard practice pattern (1 mark each, no negative marking, 1.5 min per question). CBT is also available from each Exam set on a subject page. After submission the regular quiz review opens (`/<subject>?exam=<bank>&review=cbt`). CLA, Custom and regular quizzes are unaffected.
+- **Module progress**: written to `localStorage` first (`ace_dbe_module_progress`, per user when signed in) and mirrored to the `module_progress` table while logged in. Failed writes are kept as pending and retried (the tracker shows the sync status and a Retry button). Guest progress is imported into the account on first login. Logic is in `lib/progress.ts`.
+- **Quiz history**: finished quizzes and CBT exams are inserted into `quiz_attempts` when logged in (`lib/history.ts`); nothing is stored for guests. `/history` and the per-set history dialog read from there.
+- **Batch and term** selection is remembered in `localStorage` (`contexts/BatchContext.tsx`).
+- **CBT exams** run through the external Digion exam engine (`lib/digionConnector.ts`); the finished result is handed back to the quiz review view via `lib/cbtReview.ts`.
 
-- Engine URL: `NEXT_PUBLIC_DIGION_ENGINE_URL` (default `https://digion-engine.vercel.app`)
-- Code: `lib/digionConnector.ts`, `lib/cbtPattern.ts`, `lib/cbtReview.ts`, `components/CbtExam.tsx`
-- Add or update patterns with `python3 apply_exam_patterns.py`
+## Design conventions
 
-## Entrance test papers
-
-`/entrance` lists the BBA-DBE entrance papers (10 and 17 Aug 2024, 20 Jul 2025, 2026; data in `public/data/Subjects/ENTRANCE/Exam/`). Each can be practised as a quiz (`/ENTRANCE?exam=<bank>`) or taken as a CBT exam using the pattern in the file (90 min, 60 questions, no negative marking, on-screen calculator). Format notes are in `QUESTION_FORMAT.md`.
-
-## Technologies
-
-- Next.js 14 (App Router)
-- React 18
-- TypeScript
-- Tailwind CSS
-- Lucide React (Icons)
-
-## License
-
-Private project for IIMB course practice.
+- **Surface tokens** (from `tailwind.config.js`): `bg-surface`, `bg-surface-light`, `bg-surface-dark`, `border-surface-border` for cards, panels, dropdowns and modals; `bg-page` for the page background. Do not hardcode `bg-slate-*` / `border-slate-*` for these. Semantic colors (emerald for success/primary, red for errors, amber/violet for status) stay as is.
+- **Type and layers**: `text-2xs` for 10px text; `z-sticky`, `z-dropdown`, `z-modal` instead of arbitrary z-index values.
+- **Shared components**: `Button` (variants `primary | secondary | ghost | danger`, sizes `sm | md | lg`), `Chip` (toggle/filter pill), `Modal` (portaled dialog with focus trap, Escape and backdrop close; give it `labelledBy`), `PageTitle` (h1 with icon and subtitle). Use them rather than hand-rolling styles.
+- **Accessibility**:
+  - A skip link in `app/layout.tsx` targets `#main`; each page renders exactly one `<main id="main">`.
+  - The header nav has `aria-label="Main"`; tables and lists have accessible names.
+  - Async status (loading, errors, sync state) uses `role="status"` / `role="alert"` or `aria-live`.
+  - Clickable things are real `button`/`a` elements (or have a role, `tabIndex` and key handlers); icon-only buttons have `aria-label`; images have `alt`.
+  - Meaningful text is `text-slate-400` or lighter on the dark background.
+  - `globals.css` disables animations and transitions under `prefers-reduced-motion: reduce`.
+- Inclusive terminology in code, comments and docs.

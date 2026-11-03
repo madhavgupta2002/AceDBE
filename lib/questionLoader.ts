@@ -66,7 +66,7 @@ export const compareModules = (a: string | number, b: string | number): number =
 };
 
 // Bank info with display name
-export interface BankInfo {
+interface BankInfo {
   bankName: string;
   displayName: string;
 }

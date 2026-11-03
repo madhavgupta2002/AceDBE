@@ -24,7 +24,14 @@ const QuizStats: React.FC<QuizStatsProps> = ({
 
   // Correct / incorrect segments; the empty remainder is what's left to answer
   const progressBar = (
-    <div className="h-1.5 rounded-full bg-surface-dark overflow-hidden flex" aria-hidden>
+    <div
+      className="h-1.5 rounded-full bg-surface-dark overflow-hidden flex"
+      role="progressbar"
+      aria-label="Quiz completion"
+      aria-valuemin={0}
+      aria-valuemax={100}
+      aria-valuenow={Math.round(completionPercentage)}
+    >
       <div className="bg-emerald-500/80 transition-all" style={{ width: `${pct(score)}%` }} />
       <div className="bg-red-500/70 transition-all" style={{ width: `${pct(incorrect)}%` }} />
     </div>
@@ -55,18 +62,18 @@ const QuizStats: React.FC<QuizStatsProps> = ({
   }
 
   return (
-    <div className="bg-surface border border-surface-border/60 rounded-xl px-3 py-2.5">
+    <div role="status" aria-live="polite" className="bg-surface border border-surface-border/60 rounded-xl px-3 py-2.5">
       <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 text-xs tabular-nums">
         <span className="text-slate-400">
           <span className="font-semibold text-white">{attempted}</span>/{totalQuestions} answered
-          <span className="text-slate-600"> · </span>
+          <span className="text-slate-400"> · </span>
           {completionPercentage.toFixed(0)}%
         </span>
         <span className="flex flex-wrap items-center gap-x-3">
           <span className="text-emerald-400">{score} correct</span>
-          <span className="text-red-400">{incorrect} wrong</span>
+          <span className="text-red-400">{incorrect} incorrect</span>
           <span className="text-slate-400">{accuracy.toFixed(1)}% accuracy</span>
-          <span className="text-slate-500">{unattempted} left</span>
+          <span className="text-slate-400">{unattempted} left</span>
         </span>
       </div>
       <div className="mt-2">{progressBar}</div>

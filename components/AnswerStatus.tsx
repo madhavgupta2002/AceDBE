@@ -45,17 +45,20 @@ const AnswerStatus: React.FC<AnswerStatusProps> = ({
       <h3 className="text-base sm:text-lg font-semibold mb-2 text-white">
         Answer Status
       </h3>
-      <div className="grid grid-cols-8 sm:grid-cols-6 gap-1 sm:gap-2">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(2.25rem,1fr))] gap-1 sm:gap-2 max-h-64 overflow-y-auto p-0.5">
         {Array.from({ length: totalQuestions }, (_, index) => (
           <button
+            type="button"
             key={index}
-            className={`w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center font-semibold text-xs sm:text-sm ${getStatusColor(
+            className={`aspect-square w-full flex items-center justify-center font-semibold text-xs sm:text-sm ${getStatusColor(
               index
             )} ${index === currentQuestionIndex
               ? 'ring-2 ring-emerald-400'
               : ''
               }`}
             onClick={() => onQuestionSelect(index)}
+            aria-current={index === currentQuestionIndex ? 'true' : undefined}
+            aria-label={`Question ${index + 1}${answeredQuestions[index] === null ? ', unanswered' : ', answered'}`}
           >
             {index + 1}
           </button>

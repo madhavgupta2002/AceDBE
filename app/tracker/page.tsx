@@ -3,19 +3,13 @@
 import React from 'react';
 import Link from 'next/link';
 import Header from '@/components/Header';
+import Chip from '@/components/Chip';
+import PageTitle from '@/components/PageTitle';
+import { Loader2 } from 'lucide-react';
 import { useBatch } from '@/contexts/BatchContext';
 import { getSubjectsByBatch, getDisplayNameForAlias, getTermsForBatch } from '@/lib/subjectMapping';
 import { CheckKind, isModuleDone, useModules, useProgress } from '@/lib/progress';
 import { useAuth } from '@/contexts/AuthContext';
-
-const Bar: React.FC<{ value: number; total: number }> = ({ value, total }) => (
-  <div className="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
-    <div
-      className="h-full bg-emerald-500 transition-all"
-      style={{ width: `${total ? (value / total) * 100 : 0}%` }}
-    />
-  </div>
-);
 
 const Ring: React.FC<{ value: number; size: number }> = ({ value, size }) => {
   const r = 15.5;
@@ -47,29 +41,25 @@ const ModuleTile: React.FC<{
   onToggleBoth: () => void;
 }> = ({ label, video, questions, onToggle, onToggleBoth }) => {
   const done = video && questions;
-  const tri = 'cursor-pointer transition-[fill,opacity] duration-200 hover:opacity-80';
+  const tri =
+    'cursor-pointer transition-[fill,opacity] duration-200 hover:opacity-80 outline-none focus-visible:stroke-white focus-visible:stroke-2';
+  const keyToggle = (kind: CheckKind) => (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      onToggle(kind);
+    }
+  };
   return (
     <div className="relative w-full h-full" onDoubleClick={onToggleBoth}>
       <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="absolute inset-0 w-full h-full block select-none">
-        <defs>
-          <linearGradient id="g-vid" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#fb7185" />
-            <stop offset="100%" stopColor="#be123c" />
-          </linearGradient>
-          <linearGradient id="g-q" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#38bdf8" />
-            <stop offset="100%" stopColor="#0369a1" />
-          </linearGradient>
-          <linearGradient id="g-done" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#34d399" />
-            <stop offset="100%" stopColor="#047857" />
-          </linearGradient>
-        </defs>
         <polygon
           points="0,0 100,0 0,100"
           className={tri}
-          fill={done ? 'url(#g-done)' : video ? 'url(#g-vid)' : 'rgba(30,41,59,0.6)'}
+          fill={done ? 'url(#tracker-g-done)' : video ? 'url(#tracker-g-vid)' : 'rgba(30,41,59,0.6)'}
           onClick={() => onToggle('video')}
+          onKeyDown={keyToggle('video')}
+          tabIndex={0}
+          vectorEffect="non-scaling-stroke"
           role="button"
           aria-pressed={video}
           aria-label={`${label} videos`}
@@ -79,8 +69,11 @@ const ModuleTile: React.FC<{
         <polygon
           points="100,0 100,100 0,100"
           className={tri}
-          fill={done ? 'url(#g-done)' : questions ? 'url(#g-q)' : 'rgba(15,23,42,0.6)'}
+          fill={done ? 'url(#tracker-g-done)' : questions ? 'url(#tracker-g-q)' : 'rgba(15,23,42,0.6)'}
           onClick={() => onToggle('questions')}
+          onKeyDown={keyToggle('questions')}
+          tabIndex={0}
+          vectorEffect="non-scaling-stroke"
           role="button"
           aria-pressed={questions}
           aria-label={`${label} questions`}
@@ -99,8 +92,8 @@ const ModuleTile: React.FC<{
           </svg>
         ) : (
           <>
-            <span className={`absolute top-1 left-1.5 ${video ? 'text-white' : 'text-slate-600'}`}>▶</span>
-            <span className={`absolute bottom-1 right-1.5 ${questions ? 'text-white' : 'text-slate-600'}`}>?</span>
+            <span className={`absolute top-1 left-1.5 ${video ? 'text-white' : 'text-slate-400'}`}>▶</span>
+            <span className={`absolute bottom-1 right-1.5 ${questions ? 'text-white' : 'text-slate-400'}`}>?</span>
           </>
         )}
       </div>
@@ -146,20 +139,48 @@ export default function TrackerPage() {
     (a, b) => Number(a) - Number(b),
   );
 
+  const loading = allSubjects.some(s => modules[s.alias.code] === undefined);
   const termTotals = termStats(selectedTerm);
   const pct = (d: number, t: number) => (t ? Math.round((d / t) * 100) : 0);
 
   return (
     <div className="min-h-screen text-white relative z-[1]">
-      <Header showBackButton />
-      <div className="container mx-auto px-3 sm:px-4 py-5 max-w-6xl">
+      <Header showBackButton wide />
+      <svg width="0" height="0" className="absolute" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="tracker-g-vid" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="#fb7185" />
+            <stop offset="100%" stopColor="#be123c" />
+          </linearGradient>
+          <linearGradient id="tracker-g-q" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="#38bdf8" />
+            <stop offset="100%" stopColor="#0369a1" />
+          </linearGradient>
+          <linearGradient id="tracker-g-done" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="#34d399" />
+            <stop offset="100%" stopColor="#047857" />
+          </linearGradient>
+        </defs>
+      </svg>
+      <main id="main" className="max-w-6xl mx-auto px-3 sm:px-4 py-5">
         {/* Title + term overview */}
         <div className="flex flex-wrap items-end justify-between gap-3 mb-5 px-1">
-          <div>
-            <h1 className="text-xl sm:text-2xl font-bold tracking-tight">Progress Tracker</h1>
-            {user && syncStatus === 'error' && <button onClick={() => void retrySync()} className="text-xs text-amber-300 hover:text-amber-200">Retry sync</button>}
-            <p className="text-xs text-slate-500 mt-0.5">Batch {selectedBatch} · {!user ? 'saved on this device' : syncStatus === 'synced' ? 'synced to your account' : syncStatus === 'error' ? 'sync failed · changes saved on this device' : 'syncing…'}</p>
-          </div>
+          <PageTitle
+            title="Progress Tracker"
+            subtitle={
+              <>
+                Batch {selectedBatch} ·{' '}
+                <span role="status" aria-live="polite">
+                  {!user ? 'saved on this device' : syncStatus === 'synced' ? 'synced to your account' : syncStatus === 'error' ? 'sync failed · changes saved on this device' : 'syncing…'}
+                </span>
+                {user && syncStatus === 'error' && (
+                  <button onClick={() => void retrySync()} className="ml-2 font-medium text-red-300 hover:text-red-200 underline underline-offset-2">
+                    Retry sync
+                  </button>
+                )}
+              </>
+            }
+          />
           <div className="flex items-center gap-3">
             <Ring value={pct(termTotals.done, termTotals.total)} size={44} />
             <div className="leading-tight">
@@ -176,32 +197,33 @@ export default function TrackerPage() {
             const { done, total } = termStats(term);
             const active = term === selectedTerm;
             return (
-              <button
-                key={term}
-                onClick={() => setSelectedTerm(term)}
-                className={`shrink-0 flex items-center gap-2 rounded-full border pl-1 pr-3 py-1 transition-colors ${
-                  active
-                    ? 'bg-emerald-500/10 border-emerald-500/50 text-white'
-                    : 'border-slate-700/60 text-slate-400 hover:text-white hover:border-slate-500'
-                }`}
-              >
-                <Ring value={pct(done, total)} size={24} />
-                <span className="text-xs font-semibold">T{term}</span>
-              </button>
+              <Chip key={term} active={active} onClick={() => setSelectedTerm(term)} className="gap-2 pl-1.5 pr-3">
+                <Ring value={pct(done, total)} size={22} />
+                <span className="font-semibold">T{term}</span>
+              </Chip>
             );
           })}
         </div>
 
+        {loading ? (
+          <div className="py-12 flex justify-center" role="status" aria-label="Loading modules">
+            <Loader2 className="w-5 h-5 animate-spin text-emerald-400" />
+          </div>
+        ) : rows.length === 0 ? (
+          <p className="px-1 py-10 text-center text-sm text-slate-400">
+            No modules to track for Term {selectedTerm}. They may not be available yet, or couldn&apos;t be loaded. Try reloading the page.
+          </p>
+        ) : (
         <div className="flex flex-col items-center gap-2">
           {/* Grid: modules (rows) × subjects (columns) */}
           <div className="max-w-full overflow-x-auto rounded-2xl border border-surface-border/60 bg-surface shadow-lg shadow-black/20">
-            <table className="text-xs border-collapse table-fixed">
+            <table className="text-xs border-collapse table-fixed" aria-label={`Module progress for term ${selectedTerm}`}>
               <thead>
                 <tr>
-                  <th className="sticky left-0 z-[1] bg-surface w-16 min-w-16 border-b border-r border-slate-800" />
+                  <th scope="col" className="sticky left-0 z-[1] bg-surface w-16 min-w-16 border-b border-r border-surface-border" />
                   {subjectsForTerm.map(({ subject, alias }) => {
                     return (
-                      <th key={alias.code} className="w-16 min-w-16 max-w-16 border-b border-l border-slate-800 py-2 font-normal align-top">
+                      <th key={alias.code} scope="col" className="w-16 min-w-16 max-w-16 border-b border-l border-surface-border py-2 font-normal align-top">
                         <Link
                           href={`/${alias.code}`}
                           title={getDisplayNameForAlias(subject, alias)}
@@ -225,7 +247,7 @@ export default function TrackerPage() {
                     <tr key={m}>
                       <td
                         title={m}
-                        className="sticky left-0 z-[1] bg-surface w-16 min-w-16 max-w-16 h-16 border-r border-b border-slate-800 text-center"
+                        className="sticky left-0 z-[1] bg-surface w-16 min-w-16 max-w-16 h-16 border-r border-b border-surface-border text-center"
                       >
                         <span className="text-[11px] font-semibold text-slate-300 leading-tight">
                           Module {m}
@@ -234,11 +256,11 @@ export default function TrackerPage() {
                   {subjectsForTerm.map(({ alias }) => {
                     const code = alias.code;
                     if (!(modules[code] ?? []).includes(m)) {
-                      return <td key={code} className="w-16 h-16 border-b border-l border-slate-800 bg-[repeating-linear-gradient(45deg,transparent_0_6px,rgba(51,65,85,0.25)_6px_7px)]" />;
+                      return <td key={code} className="w-16 h-16 border-b border-l border-surface-border bg-[repeating-linear-gradient(45deg,transparent_0_6px,rgba(51,65,85,0.25)_6px_7px)]" />;
                     }
                     const p = progress[code]?.[m];
                     return (
-                      <td key={code} className="p-0 border-b border-l border-slate-800 w-16 min-w-16 max-w-16 h-16">
+                      <td key={code} className="p-0 border-b border-l border-surface-border w-16 min-w-16 max-w-16 h-16">
                           <ModuleTile
                             label={`${code} ${m}`}
                             video={!!p?.video}
@@ -258,12 +280,13 @@ export default function TrackerPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-[11px] text-slate-500">
+          <p className="text-[11px] text-slate-400">
             <span className="text-rose-400">◤</span> Videos · <span className="text-sky-400">◢</span> Questions · double-tap for both
           </p>
 
         </div>
-      </div>
+        )}
+      </main>
     </div>
   );
 }

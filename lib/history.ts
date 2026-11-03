@@ -8,7 +8,7 @@ export type AttemptMode = 'practice' | 'cbt';
 export const setKey = (bankType: string, bankName: string) => `${bankType}|${bankName}`;
 
 /** Question metadata survives CBT review and revision retries. */
-export const questionSet = (q: Question): string | undefined =>
+const questionSet = (q: Question): string | undefined =>
   q.source && q.bankType && q.bankType !== 'Custom' ? setKey(q.bankType, q.source) : undefined;
 
 export interface AttemptUnit {
@@ -112,8 +112,8 @@ const ATTEMPT_COLUMNS = 'id, subject_code, mode, set_keys, units, correct, wrong
 /** Display name of a set key: "CLA|CLA 1" → "CLA 1". */
 export const setLabel = (key: string) => key.slice(key.indexOf('|') + 1);
 
-/** Attempts that included the given set, newest first. */
-export async function fetchSetHistory(subjectCode: string, set: string): Promise<Attempt[]> {
+/** Attempts that included the given set, newest first. Resolves to null when loading fails. */
+export async function fetchSetHistory(subjectCode: string, set: string): Promise<Attempt[] | null> {
   if (!supabase) return [];
   const { data, error } = await supabase
     .from('quiz_attempts')
@@ -124,13 +124,13 @@ export async function fetchSetHistory(subjectCode: string, set: string): Promise
     .limit(50);
   if (error) {
     console.error('Loading quiz history failed:', error.message);
-    return [];
+    return null;
   }
   return data as Attempt[];
 }
 
-/** Every saved attempt across subjects, newest first. */
-export async function fetchAllAttempts(): Promise<Attempt[]> {
+/** Every saved attempt across subjects, newest first. Resolves to null when loading fails. */
+export async function fetchAllAttempts(): Promise<Attempt[] | null> {
   if (!supabase) return [];
   const { data, error } = await supabase
     .from('quiz_attempts')
@@ -139,7 +139,7 @@ export async function fetchAllAttempts(): Promise<Attempt[]> {
     .limit(1000);
   if (error) {
     console.error('Loading quiz history failed:', error.message);
-    return [];
+    return null;
   }
   return data as Attempt[];
 }
@@ -147,5 +147,6 @@ export async function fetchAllAttempts(): Promise<Attempt[]> {
 export async function deleteAttempt(id: string): Promise<boolean> {
   if (!supabase) return false;
   const { error } = await supabase.from('quiz_attempts').delete().eq('id', id);
+  if (error) console.error('Deleting quiz attempt failed:', error.message);
   return !error;
 }

@@ -85,7 +85,7 @@ test('failed fetch exposes error and retries successfully', async () => {
   assert.equal(h.state.status, 'error');
   assert.equal(h.state.timers.size, 1);
   h.state.fetchError = false;
-  await h.module.retryProgressSync();
+  await h.hook.retrySync();
   assert.equal(h.state.status, 'synced');
   assert.equal(cache(h.storage).S[1].video, true);
   assert.equal(h.state.timers.size, 0);
@@ -96,7 +96,7 @@ test('failed uncheck survives reload and preserves the other cloud checkbox', as
   await h.module.setProgressUser('alice');
   h.state.saveError = true;
   h.hook.setChecks('S', '1', { video: false });
-  await h.module.retryProgressSync();
+  await h.hook.retrySync();
   assert.equal(h.state.status, 'error');
   const reloaded = progressHarness(h.storage, h.state.rows);
   await reloaded.module.setProgressUser('alice');
@@ -116,7 +116,7 @@ test('an edit during an in-flight save is not dropped', async () => {
   await saving;
   h.hook.setChecks('S', '1', { video: false });
   release();
-  await h.module.retryProgressSync();
+  await h.hook.retrySync();
   assert.equal(h.state.rows[0].video, false);
   assert.equal(h.state.writes.length, 2);
   assert.equal(h.state.status, 'synced');
@@ -127,7 +127,7 @@ test('switching accounts keeps pending edits scoped to their owner', async () =>
   await h.module.setProgressUser('alice');
   h.state.saveError = true;
   h.hook.setChecks('S', '1', { video: false });
-  await h.module.retryProgressSync();
+  await h.hook.retrySync();
   h.state.saveError = false;
   await h.module.setProgressUser('bob');
   assert.equal(cache(h.storage, 'bob').S[1].questions, true);
@@ -185,31 +185,46 @@ test('empty module/source filters retain controls and recover the quiz without l
     },
     useRef(initial) { const index = cursor++; return states[index] ?? (states[index] = { current: initial }); },
   };
+  const questionLoader = {
+    compareModules: (a, b) => a - b,
+    loadQuestions: async (_type, _code, source) => [{
+      id: source, text: source, module: source === 'CLA' ? 1 : 5, source, bankType: 'CLA',
+      correctAnswer: ['A'], options: { A: 'yes' },
+    }],
+  };
+  // Pure helpers and hooks under components/quiz run for real; presentational pieces are named stubs.
+  const quiz = {};
+  const loadQuiz = (name, deps = {}) => quiz[name] ??= load(`components/quiz/${name}.ts`, { react: hooks, ...deps });
+  const answers = loadQuiz('answers');
+  const stubs = ['QuizQuestion', 'QuizStats', 'AnswerStatus', 'UnifiedQuizSelector', 'Header', 'CbtExam', 'Button'];
   const dependencies = {
     react: hooks,
     'next/navigation': { useRouter: () => ({ push() {} }) },
-    'next/link': 'Link',
     '@/lib/subjectMapping': { getSubjectByCode: () => ({ name: 'Test subject' }) },
-    '@/lib/questionLoader': {
-      compareModules: (a, b) => a - b,
-      loadQuestions: async (_type, _code, source) => [{
-        id: source, text: source, module: source === 'CLA' ? 1 : 5, source, bankType: 'CLA',
-        correctAnswer: ['A'], options: { A: 'yes' },
-      }],
-    },
+    '@/lib/questionLoader': questionLoader,
     '@/lib/history': { saveAttempt() {}, setKey: (type, bank) => `${type}|${bank}` },
     '@/lib/cbtReview': {},
     'lucide-react': new Proxy({}, { get: (_, name) => String(name) }),
-    'react-markdown': 'Markdown', 'remark-gfm': () => {}, 'remark-math': () => {}, 'rehype-katex': () => {},
+    './quiz/StudyMaterials': { StudyMaterials: 'StudyMaterials', QuizNotesBar: 'QuizNotesBar' },
+    './quiz/VideoPlaylists': 'VideoPlaylists',
+    './quiz/ReviewView': { __esModule: true, default: 'ReviewView', ReviewToolbar: 'ReviewToolbar' },
+    './quiz/QuizActions': { QuizNavBar: 'QuizNavBar', QuizSidebarActions: 'QuizSidebarActions' },
+    './quiz/exportQuiz': { downloadQuizJson() {}, printQuiz() {} },
+    './quiz/answers': answers,
+    './quiz/loadSelection': loadQuiz('loadSelection', { '@/lib/questionLoader': questionLoader, './answers': answers }),
+    './quiz/useQuizTimer': loadQuiz('useQuizTimer'),
+    './quiz/useQuizShortcuts': loadQuiz('useQuizShortcuts'),
+    './quiz/useSubjectResources': loadQuiz('useSubjectResources'),
+    // QuizFilters is rendered through so the real ModuleSelector / SourceSelector props can be reached
+    './quiz/QuizFilters': load('components/quiz/QuizFilters.tsx', { react: hooks, '../ModuleSelector': 'ModuleSelector', '../SourceSelector': 'SourceSelector' }),
   };
-  for (const name of ['QuizQuestion', 'QuizStats', 'AnswerStatus', 'ModuleSelector', 'SourceSelector', 'UnifiedQuizSelector', 'Header', 'CbtExam', 'PassageCard']) {
-    dependencies[`./${name}`] = name;
-  }
+  for (const name of stubs) dependencies[`./${name}`] = name;
   const { default: QuizApp } = load('components/QuizApp.tsx', dependencies);
   const render = () => { cursor = 0; return QuizApp({ subjectCode: 'S' }); };
   const nodes = tree => {
     if (!tree || typeof tree !== 'object') return [];
-    return [tree, ...React.Children.toArray(tree.props?.children).flatMap(nodes)];
+    const rendered = typeof tree.type === 'function' ? [tree.type(tree.props)] : React.Children.toArray(tree.props?.children);
+    return [tree, ...rendered.flatMap(nodes)];
   };
   const find = (tree, type) => nodes(tree).find(node => node.type === type);
   let tree = render();

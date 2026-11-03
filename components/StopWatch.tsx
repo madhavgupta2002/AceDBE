@@ -17,8 +17,8 @@ const StopWatch: React.FC<StopWatchProps> = ({ elapsedSeconds, isActive }) => {
 
     return (
         <div className="inline-flex items-center gap-1.5">
-            <Clock className={`w-3 h-3 ${isActive ? 'text-emerald-400' : 'text-slate-500'}`} />
-            <span className={`font-mono text-[11px] font-medium tabular-nums ${isActive ? 'text-slate-200' : 'text-slate-500'}`}>
+            <Clock className={`w-3 h-3 ${isActive ? 'text-emerald-400' : 'text-slate-400'}`} aria-hidden />
+            <span className={`font-mono text-[11px] font-medium tabular-nums ${isActive ? 'text-slate-200' : 'text-slate-400'}`}>
                 {hours > 0 ? `${formatTime(hours)}:` : ''}{formatTime(minutes)}:{formatTime(seconds)}
             </span>
         </div>

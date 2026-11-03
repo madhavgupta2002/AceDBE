@@ -4,7 +4,7 @@ import { SUBJECTS } from './subjectMapping';
 import { resolveExamPattern } from './cbtPattern';
 import type { QuestionFile } from './types';
 
-export interface ExamCycle {
+interface ExamCycle {
   id: string;
   label: string;
   name: string;

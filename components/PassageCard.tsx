@@ -1,26 +1,13 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
+import Markdown from './quiz/Markdown';
+import { formatQuizText } from './quiz/formatText';
 import { BookOpenText, ChevronDown, ChevronUp, Maximize2, Minimize2 } from 'lucide-react';
 import type { Question } from '@/lib/types';
 
-// Same preprocessing as QuizQuestion: literal "\n", and currency "$" must not start a math span.
-function formatText(text: string): string {
-  let processed = text.replace(/\\n/g, '\n');
-  const mathBlocks: string[] = [];
-  processed = processed.replace(/\$\$[\s\S]*?\$\$/g, (m) => {
-    mathBlocks.push(m);
-    return `\x00MATH${mathBlocks.length - 1}\x00`;
-  });
-  processed = processed.replace(/\$\s*(?=[0-9_])/g, '\\$');
-  processed = processed.replace(/\x00MATH(\d+)\x00/g, (_, i) => mathBlocks[parseInt(i, 10)]);
-  // Passages use single newlines for headings and lines: keep them as line breaks (tables and lists are left alone).
-  return processed.replace(/([^\n|])\n(?![\n|\-*\d])/g, '$1  \n');
-}
+// Passages use single newlines for headings and lines: keep them as line breaks (tables and lists are left alone).
+const formatText = (text: string) => formatQuizText(text).replace(/([^\n|])\n(?![\n|\-*\d])/g, '$1  \n');
 
 // Remembers which passages the reader collapsed, so moving between questions keeps their choice.
 const collapsed = new Set<string>();
@@ -79,9 +66,7 @@ export default function PassageCard({
   };
 
   const md = (t: string, k: React.Key) => (
-    <ReactMarkdown key={k} remarkPlugins={[remarkGfm, remarkMath]} rehypePlugins={[rehypeKatex]}>
-      {formatText(t)}
-    </ReactMarkdown>
+    <Markdown key={k}>{formatText(t)}</Markdown>
   );
   const parts = text.split('PARSEIMAGE');
 
@@ -106,7 +91,7 @@ export default function PassageCard({
           <button
             type="button"
             onClick={() => setTall(!tall)}
-            className="p-1 text-amber-300/70 hover:text-amber-200"
+            className="inline-flex h-8 w-8 items-center justify-center text-amber-300 hover:text-amber-100"
             title={tall ? 'Shrink' : 'Expand'}
             aria-label={tall ? 'Shrink passage' : 'Expand passage'}
           >
@@ -114,7 +99,7 @@ export default function PassageCard({
           </button>
         )}
         {collapsible && (
-          <button type="button" onClick={toggle} className="p-1 text-amber-300/70 hover:text-amber-200" aria-label={open ? 'Hide passage' : 'Show passage'}>
+          <button type="button" onClick={toggle} className="inline-flex h-8 w-8 items-center justify-center text-amber-300 hover:text-amber-100" aria-label={open ? 'Hide passage' : 'Show passage'}>
             {open ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
           </button>
         )}
