@@ -2,13 +2,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { Question } from '@/lib/types';
+import { moduleLabel } from '@/lib/moduleLabel';
 import { CheckCircle, XCircle, Check, RotateCcw, Play, Pause } from 'lucide-react';
 import StopWatch from './StopWatch';
+import Button from './Button';
 import PassageCard from './PassageCard';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
+import type { Components } from 'react-markdown';
+import Markdown, { inlineParagraphs } from './quiz/Markdown';
+import { formatQuizText } from './quiz/formatText';
 
 interface QuizQuestionProps {
   question: Question;
@@ -23,6 +24,78 @@ interface QuizQuestionProps {
   totalQuestions?: number;
 }
 
+interface QuestionHeaderProps {
+  questionNumber?: number;
+  totalQuestions?: number;
+  onClearResponse?: () => void;
+  hasResponse: boolean;
+  module?: string | number | null;
+  source?: string;
+  elapsedSeconds: number;
+  isTimerActive: boolean;
+  onToggleTimer?: () => void;
+  children?: React.ReactNode;
+}
+
+const QuestionHeader: React.FC<QuestionHeaderProps> = ({
+  questionNumber,
+  totalQuestions,
+  onClearResponse,
+  hasResponse,
+  module,
+  source,
+  elapsedSeconds,
+  isTimerActive,
+  onToggleTimer,
+  children,
+}) => (
+  <div className="flex flex-wrap items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
+    <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+      {questionNumber !== undefined && totalQuestions !== undefined && (
+        <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-white tabular-nums">
+          Q{questionNumber} / {totalQuestions}
+        </span>
+      )}
+      {children}
+      {onClearResponse && hasResponse && (
+        <button
+          type="button"
+          onClick={onClearResponse}
+          className="flex items-center gap-1 px-2 py-0.5 h-8 sm:h-auto text-[11px] font-medium text-slate-400 hover:text-white bg-slate-800/70 border border-slate-700/60 hover:border-slate-500 rounded-md transition-colors"
+          title="Clear response"
+          aria-label="Clear response"
+        >
+          <RotateCcw size={11} />
+          Clear
+        </button>
+      )}
+    </div>
+
+    <div className="flex flex-wrap items-center justify-end gap-1.5 sm:gap-2 ml-auto">
+      {module !== undefined && module !== null && module !== '' && (
+        <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-slate-300">
+          {moduleLabel(module)}
+        </span>
+      )}
+      {source && (
+        <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-slate-400 truncate max-w-[150px] sm:max-w-none">
+          {source}
+        </span>
+      )}
+      <button
+        type="button"
+        onClick={onToggleTimer}
+        className="inline-flex items-center gap-1.5 px-2 py-0.5 h-8 sm:h-auto rounded-md border border-slate-700/60 bg-slate-800/70 text-slate-400 hover:text-white hover:border-slate-500 transition-colors"
+        title={isTimerActive ? 'Pause timer' : 'Start timer'}
+        aria-label={isTimerActive ? 'Pause timer' : 'Start timer'}
+      >
+        <StopWatch elapsedSeconds={elapsedSeconds} isActive={isTimerActive} />
+        {isTimerActive ? <Pause size={12} /> : <Play size={12} />}
+      </button>
+    </div>
+  </div>
+);
+
 const QuizQuestion: React.FC<QuizQuestionProps> = ({
   question,
   onAnswer,
@@ -36,6 +109,17 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   totalQuestions,
 }) => {
   const isMultipleAnswer = question.correctAnswer.length > 1;
+  const headerProps: QuestionHeaderProps = {
+    questionNumber,
+    totalQuestions,
+    onClearResponse,
+    hasResponse: !!selectedAnswer,
+    module: question.module,
+    source: question.source,
+    elapsedSeconds,
+    isTimerActive,
+    onToggleTimer,
+  };
   const isSubjective = question.isSubjective || Object.keys(question.options).length === 0;
 
   // Images referenced via the "PARSEIMAGE" placeholder are resolved from a folder
@@ -136,47 +220,16 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
     if (isSelected(option) && !question.correctAnswer.includes(option)) {
       return baseClass + 'bg-red-800/40 text-white border-red-600/50';
     }
-    return baseClass + 'bg-slate-800/40 text-slate-500 border-slate-700/40';
-  };
-
-  const formatText = (text: string) => {
-    let processed = text.replace(/\\n/g, '\n');
-
-    // Protect $$...$$ display math blocks so currency escaping doesn't touch them
-    const mathBlocks: string[] = [];
-    processed = processed.replace(/\$\$[\s\S]*?\$\$/g, (match) => {
-      mathBlocks.push(match);
-      return `\x00MATH${mathBlocks.length - 1}\x00`;
-    });
-
-    // Escape currency dollar signs: $ optionally followed by whitespace then a digit or underscore
-    // Patterns: $30, $ 2,500, $113,750, $___, etc.
-    // This leaves inline math like $\times$ untouched (backslash follows $, not whitespace+digit)
-    processed = processed.replace(/\$\s*(?=[0-9_])/g, '\\$');
-
-    // Restore display math blocks
-    processed = processed.replace(/\x00MATH(\d+)\x00/g, (_, i) => mathBlocks[parseInt(i)]);
-
-    return processed;
-  };
-
-  const mdComponents = {
-    p: ({ children }: any) => <span className="inline">{children}</span>,
+    return baseClass + 'bg-slate-800/40 text-slate-400 border-slate-700/40';
   };
 
   // Render markdown text, replacing each "PARSEIMAGE" placeholder with the matching
   // resolved image (in order of appearance). Missing images are skipped silently.
-  const renderRich = (text: string, components?: any): React.ReactNode => {
+  const renderRich = (text: string, components?: Components): React.ReactNode => {
     if (!text) return null;
     if (!text.includes('PARSEIMAGE')) {
       return (
-        <ReactMarkdown
-          remarkPlugins={[remarkGfm, remarkMath]}
-          rehypePlugins={[rehypeKatex]}
-          components={components}
-        >
-          {formatText(text)}
-        </ReactMarkdown>
+        <Markdown components={components}>{formatQuizText(text)}</Markdown>
       );
     }
 
@@ -187,14 +240,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
     parts.forEach((part, i) => {
       if (part.trim()) {
         nodes.push(
-          <ReactMarkdown
-            key={`text-${i}`}
-            remarkPlugins={[remarkGfm, remarkMath]}
-            rehypePlugins={[rehypeKatex]}
-            components={components}
-          >
-            {formatText(part)}
-          </ReactMarkdown>
+          <Markdown key={`text-${i}`} components={components}>{formatQuizText(part)}</Markdown>
         );
       }
 
@@ -222,64 +268,23 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   if (isSubjective) {
     return (
       <div className="w-full max-w-3xl mx-auto">
-        <div className="flex flex-wrap items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
-        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
-          {questionNumber !== undefined && totalQuestions !== undefined && (
-            <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-white tabular-nums">
-              Q{questionNumber} / {totalQuestions}
-            </span>
-          )}
-          <span className="px-2 py-0.5 bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[11px] font-medium rounded-md">
-            Subjective
-          </span>
-          {onClearResponse && selectedAnswer && (
-              <button
-                onClick={onClearResponse}
-                className="flex items-center gap-1 px-2 py-0.5 text-[11px] font-medium text-slate-400 hover:text-white bg-slate-800/70 border border-slate-700/60 hover:border-slate-500 rounded-md transition-colors"
-                title="Clear response"
-              >
-                <RotateCcw size={11} />
-                Clear
-              </button>
-          )}
-          </div>
-
-          <div className="flex flex-wrap items-center justify-end gap-1.5 sm:gap-2 ml-auto">
-            {question.module && (
-              <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-slate-300">
-                Mod {question.module}
-              </span>
-            )}
-            {question.source && (
-              <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-slate-400 truncate max-w-[150px] sm:max-w-none">
-                {question.source}
-              </span>
-            )}
-            <button
-              onClick={onToggleTimer}
-              className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md border border-slate-700/60 bg-slate-800/70 text-slate-400 hover:text-white hover:border-slate-500 transition-colors"
-              title={isTimerActive ? 'Pause timer' : 'Start timer'}
-            >
-              <StopWatch elapsedSeconds={elapsedSeconds} isActive={isTimerActive} />
-              {isTimerActive ? <Pause size={12} /> : <Play size={12} />}
-            </button>
-          </div>
-        </div>
+      <QuestionHeader {...headerProps}>
+        <span className="px-2 py-0.5 bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[11px] font-medium rounded-md">
+          Subjective
+        </span>
+      </QuestionHeader>
         {question.passage && <PassageCard question={question} className="mb-4" />}
         <div className="text-base sm:text-lg mb-4 sm:mb-6 text-slate-50 prose prose-invert prose-indigo max-w-none quiz-text">
           {renderRich(question.text)}
         </div>
-        <div className="bg-yellow-900/15 border border-yellow-700/40 rounded-xl p-4 sm:p-6">
-          <p className="text-yellow-200/90 mb-3 sm:mb-4 text-sm sm:text-base">
+        <div className="bg-amber-900/15 border border-amber-700/40 rounded-xl p-4 sm:p-6">
+          <p className="text-amber-200/90 mb-3 sm:mb-4 text-sm sm:text-base">
             Subjective question — write your answer on paper, then check the sample solution.
           </p>
           {!selectedAnswer && !showResult && (
-            <button
-              onClick={handleSubjectiveAcknowledge}
-              className="px-4 sm:px-6 py-2 sm:py-3 bg-emerald-600 hover:bg-emerald-500 text-white border border-emerald-500/40 font-semibold transition-all duration-200 text-sm sm:text-base rounded-xl"
-            >
+            <Button variant="primary" size="lg" onClick={handleSubjectiveAcknowledge}>
               View Sample Solution
-            </button>
+            </Button>
           )}
           {(selectedAnswer || showResult) && (
             <div className="flex items-center gap-2 text-emerald-300">
@@ -304,51 +309,13 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   // Render regular MCQ question
   return (
     <div className="w-full max-w-3xl mx-auto">
-      <div className="flex flex-wrap items-center justify-between gap-1.5 sm:gap-2 mb-3 sm:mb-4">
-        <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
-          {questionNumber !== undefined && totalQuestions !== undefined && (
-            <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-white tabular-nums">
-              Q{questionNumber} / {totalQuestions}
-            </span>
-          )}
-          {isMultipleAnswer && (
-            <span className="px-2 py-0.5 bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[11px] font-medium rounded-md">
-              Multiple Correct
-            </span>
-          )}
-          {onClearResponse && selectedAnswer && (
-            <button
-              onClick={onClearResponse}
-              className="flex items-center gap-1 px-2 py-0.5 text-[11px] font-medium text-slate-400 hover:text-white bg-slate-800/70 border border-slate-700/60 hover:border-slate-500 rounded-md transition-colors"
-              title="Clear response"
-            >
-              <RotateCcw size={11} />
-              Clear
-            </button>
-          )}
-        </div>
-
-        <div className="flex flex-wrap items-center justify-end gap-1.5 sm:gap-2 ml-auto">
-          {question.module && (
-            <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-slate-300">
-              Mod {question.module}
-            </span>
-          )}
-          {question.source && (
-            <span className="px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 text-[11px] font-medium rounded-md text-slate-400 truncate max-w-[150px] sm:max-w-none">
-              {question.source}
-            </span>
-          )}
-          <button
-            onClick={onToggleTimer}
-            className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md border border-slate-700/60 bg-slate-800/70 text-slate-400 hover:text-white hover:border-slate-500 transition-colors"
-            title={isTimerActive ? 'Pause timer' : 'Start timer'}
-          >
-            <StopWatch elapsedSeconds={elapsedSeconds} isActive={isTimerActive} />
-            {isTimerActive ? <Pause size={12} /> : <Play size={12} />}
-          </button>
-        </div>
-      </div>
+      <QuestionHeader {...headerProps}>
+        {isMultipleAnswer && (
+          <span className="px-2 py-0.5 bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[11px] font-medium rounded-md">
+            Multiple Correct
+          </span>
+        )}
+      </QuestionHeader>
       {question.passage && <PassageCard question={question} className="mb-4" />}
       <div className="text-base sm:text-lg mb-4 sm:mb-6 text-slate-50 prose prose-invert prose-indigo max-w-none quiz-text">
         {renderRich(question.text)}
@@ -356,10 +323,12 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
       <div className="grid grid-cols-1 gap-2.5 sm:gap-3">
         {Object.entries(question.options).map(([key, value]) => (
           <button
+            type="button"
             key={key}
             onClick={() => handleOptionClick(key)}
             className={getButtonClass(key)}
             disabled={showResult}
+            aria-pressed={isSelected(key)}
           >
             <span className="flex items-center justify-between">
               <span className="flex items-center flex-1">
@@ -368,24 +337,28 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
                   : 'bg-slate-700/60 text-slate-300'
                   }`}>
                   {isMultipleAnswer && isSelected(key) && !showResult ? (
-                    <Check size={14} className="sm:hidden" />
-                  ) : isMultipleAnswer && isSelected(key) && !showResult ? (
                     <Check size={16} />
                   ) : (
                     key
                   )}
                 </span>
                 <span className="text-sm sm:text-[15px] prose prose-invert prose-indigo max-w-none prose-p:inline flex-1 quiz-text">
-                  {renderRich(value || '', mdComponents)}
+                  {renderRich(value || '', inlineParagraphs)}
                 </span>
               </span>
               {showResult && question.correctAnswer.includes(key) && (
-                <CheckCircle className="inline-block ml-2 text-emerald-400 flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
+                <>
+                  <CheckCircle className="inline-block ml-2 text-emerald-400 flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" aria-hidden />
+                  <span className="sr-only">Correct answer</span>
+                </>
               )}
               {showResult &&
                 isSelected(key) &&
                 !question.correctAnswer.includes(key) && (
-                  <XCircle className="inline-block ml-2 text-red-400 flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" />
+                  <>
+                    <XCircle className="inline-block ml-2 text-red-400 flex-shrink-0 w-5 h-5 sm:w-6 sm:h-6" aria-hidden />
+                    <span className="sr-only">Your answer, incorrect</span>
+                  </>
                 )}
             </span>
           </button>

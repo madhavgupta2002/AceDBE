@@ -88,7 +88,7 @@ const MermaidBlock: React.FC<MermaidBlockProps> = ({ chart }) => {
 
     if (error) {
         return (
-            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 my-5">
+            <div role="alert" className="bg-red-900/20 border border-red-500/30 rounded-lg p-4 my-5">
                 <p className="text-red-400 text-sm font-mono">Diagram error: {error}</p>
                 <pre className="text-slate-400 text-xs mt-2 overflow-x-auto">{chart}</pre>
             </div>
@@ -106,7 +106,7 @@ const MermaidBlock: React.FC<MermaidBlockProps> = ({ chart }) => {
     return (
         <div
             ref={containerRef}
-            className="mermaid-diagram my-5 overflow-x-auto flex justify-center [&_svg]:bg-transparent"
+            className="mermaid-diagram my-5 overflow-x-auto flex justify-start [&_svg]:bg-transparent [&>svg]:mx-auto"
             dangerouslySetInnerHTML={{ __html: svg }}
         />
     );

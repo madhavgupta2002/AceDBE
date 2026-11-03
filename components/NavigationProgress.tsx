@@ -30,8 +30,10 @@ function NavigationProgressInner() {
 
     useEffect(() => {
         const handleClick = (e: MouseEvent) => {
+            if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
             const anchor = (e.target as HTMLElement).closest('a');
             if (!anchor) return;
+            if ((anchor.target && anchor.target !== '_self') || anchor.hasAttribute('download')) return;
 
             const href = anchor.getAttribute('href');
             if (!href) return;

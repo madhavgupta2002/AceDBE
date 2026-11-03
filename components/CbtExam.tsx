@@ -1,10 +1,12 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useId, useState } from 'react';
 import { AlertTriangle, History, Loader2, PlayCircle, X } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 import { fetchSetsWithHistory, setKey } from '@/lib/history';
 import HistoryDialog from './HistoryDialog';
+import Modal from './Modal';
+import Button from './Button';
 import type { ExamPaperInfo, SubjectPyqInfo } from '@/lib/pyqService';
 import type { ExamPattern, QuestionFile } from '@/lib/types';
 import { resolveExamPattern } from '@/lib/cbtPattern';
@@ -18,23 +20,36 @@ import {
   startCbtExam,
 } from '@/lib/digionConnector';
 
+const noop = () => {};
 const NAME_KEY = 'acedbe-cbt-candidate-name';
 
 const CALC_LABEL = { none: 'Not allowed', standard: 'Standard', scientific: 'Scientific' } as const;
 
-function Overlay({ children, onClose }: { children: React.ReactNode; onClose?: () => void }) {
+/** CBT dialog shell: Modal gives the focus trap, focus restore, Escape and scroll lock; the X always closes. */
+function Overlay({
+  children,
+  onClose,
+  titleId,
+  backdropCloses = true,
+}: {
+  children: React.ReactNode;
+  onClose: () => void;
+  titleId: string;
+  /** When false, clicking the backdrop does nothing (Escape and the X still close). */
+  backdropCloses?: boolean;
+}) {
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-start sm:items-center justify-center bg-black/70 p-3 overflow-y-auto"
-      onClick={onClose}
-    >
-      <div
-        className="w-full max-w-2xl bg-slate-900 border border-slate-700 rounded-xl shadow-2xl text-slate-200"
-        onClick={(e) => e.stopPropagation()}
+    <Modal onClose={onClose} labelledBy={titleId} closeOnBackdrop={backdropCloses} className="relative max-w-2xl">
+      <button
+        type="button"
+        onClick={onClose}
+        className="absolute top-2 right-2 p-1.5 text-slate-400 hover:text-white rounded-md"
+        aria-label="Close"
       >
-        {children}
-      </div>
-    </div>
+        <X className="w-4 h-4" />
+      </button>
+      {children}
+    </Modal>
   );
 }
 
@@ -63,6 +78,7 @@ export default function CbtExam({
   const examSet = setKey('Exam', paper.bankName);
   const [hasHistory, setHasHistory] = useState(false);
   const [showHistory, setShowHistory] = useState(false);
+  const titleId = useId();
 
   useEffect(() => {
     if (!user) return setHasHistory(false);
@@ -121,8 +137,8 @@ export default function CbtExam({
   if (stage.kind === 'loading' || stage.kind === 'starting' || stage.kind === 'running') {
     // While running, the engine's own full-screen overlay is on top; this stays underneath.
     return (
-      <Overlay>
-        <div className="p-8 flex flex-col items-center gap-2 text-sm text-slate-300">
+      <Overlay onClose={close} backdropCloses={false} titleId={titleId}>
+        <div id={titleId} role="status" className="p-8 flex flex-col items-center gap-2 text-sm text-slate-300">
           <Loader2 className="w-6 h-6 animate-spin text-emerald-400" />
           {stage.kind === 'loading' && 'Loading paper...'}
           {stage.kind === 'starting' && 'Preparing your exam...'}
@@ -134,24 +150,21 @@ export default function CbtExam({
 
   if (stage.kind === 'error') {
     return (
-      <Overlay onClose={close}>
-        <div className="p-5 space-y-3">
-          <div className="flex items-start gap-2 text-red-300 text-sm">
+      <Overlay onClose={close} titleId={titleId}>
+        <div className="p-5 pr-9 space-y-3">
+          <div role="alert" className="flex items-start gap-2 text-red-300 text-sm">
             <AlertTriangle className="w-4 h-4 mt-0.5 shrink-0" />
-            <span>{stage.message}</span>
+            <span id={titleId}>{stage.message}</span>
           </div>
           <div className="flex justify-end gap-2">
             {stage.retry && (
-              <button
-                className="px-3 py-1.5 rounded-md bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold"
-                onClick={() => start(stage.retry!.file, stage.retry!.pattern, stage.retry!.official)}
-              >
+              <Button variant="primary" size="sm" onClick={() => start(stage.retry!.file, stage.retry!.pattern, stage.retry!.official)}>
                 Try again
-              </button>
+              </Button>
             )}
-            <button className="px-3 py-1.5 rounded-md bg-slate-700 hover:bg-slate-600 text-xs font-bold" onClick={close}>
+            <Button size="sm" onClick={close}>
               Close
-            </button>
+            </Button>
           </div>
         </div>
       </Overlay>
@@ -163,17 +176,14 @@ export default function CbtExam({
   const cbtCount = pattern.sections.reduce((n, s) => n + (s.question_ids?.length ?? 0), 0);
   const hasWritten = pattern.sections.some((s) => !s.question_ids?.length);
   return (
-    <Overlay onClose={close}>
-      <div className="px-4 py-3 border-b border-slate-700 flex items-center justify-between">
+    <Overlay onClose={showHistory ? noop : close} backdropCloses={false} titleId={titleId}>
+      <div className="px-4 py-3 pr-10 border-b border-slate-700 flex items-center justify-between">
         <div>
           <div className="text-[10px] uppercase tracking-wider text-emerald-400 font-bold">{pattern.exam_name}</div>
-          <h2 className="text-base font-bold text-white">
+          <h2 id={titleId} className="text-base font-bold text-white">
             {subject.name} <span className="text-slate-400 font-normal">· {paper.date}</span>
           </h2>
         </div>
-        <button onClick={close} className="p-1 text-slate-400 hover:text-white" aria-label="Close">
-          <X className="w-4 h-4" />
-        </button>
       </div>
 
       <div className="p-4 space-y-3 text-xs">
@@ -183,17 +193,18 @@ export default function CbtExam({
             ['Total marks', String(pattern.total_marks)],
             [
               'Negative marking',
-              pattern.negative_marking ? (pattern.negative_marks_fraction ? `${pattern.negative_marks_fraction * 100}% of marks` : 'Yes') : 'No',
+              pattern.negative_marking ? (pattern.negative_marks_fraction ? `${Math.round(pattern.negative_marks_fraction * 1000) / 10}% of marks` : 'Yes') : 'No',
             ],
             ['Calculator', CALC_LABEL[pattern.calculator]],
           ].map(([k, v]) => (
-            <div key={k} className="bg-slate-800/70 border border-slate-700/60 rounded-lg px-2.5 py-1.5">
+            <div key={k} className="bg-surface-light border border-surface-border rounded-lg px-2.5 py-1.5">
               <div className="text-[10px] text-slate-400 uppercase tracking-wide">{k}</div>
               <div className="font-bold text-white">{v}</div>
             </div>
           ))}
         </div>
 
+        <div className="overflow-x-auto">
         <table className="w-full text-left border-collapse">
           <thead>
             <tr className="text-[10px] uppercase tracking-wide text-slate-400 border-b border-slate-700">
@@ -205,7 +216,7 @@ export default function CbtExam({
           </thead>
           <tbody className="divide-y divide-slate-800">
             {pattern.sections.map((s) => (
-              <tr key={s.name} className={s.question_ids?.length ? '' : 'text-slate-500'}>
+              <tr key={s.name} className={s.question_ids?.length ? '' : 'text-slate-400'}>
                 <td className="py-1 pr-2">
                   {s.name}
                   {!s.question_ids?.length && <span className="ml-1 italic">(written, not in CBT)</span>}
@@ -217,6 +228,7 @@ export default function CbtExam({
             ))}
           </tbody>
         </table>
+        </div>
 
         {!official && (
           <p className="text-slate-400 flex items-start gap-1.5">
@@ -244,25 +256,19 @@ export default function CbtExam({
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Your name"
-              className="mt-0.5 w-full bg-slate-800 border border-slate-600 rounded-md px-2.5 py-1.5 text-sm text-white outline-none focus:border-emerald-500"
+              className="mt-0.5 w-full bg-surface-dark border border-slate-600 rounded-md px-2.5 py-1.5 text-sm text-white outline-none focus:border-emerald-500"
             />
           </label>
           {hasHistory && (
-            <button
-              onClick={() => setShowHistory(true)}
-              className="flex items-center justify-center gap-1.5 px-4 py-2 rounded-md bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 text-sm font-bold"
-            >
+            <Button onClick={() => setShowHistory(true)}>
               <History className="w-4 h-4" /> See history
-            </button>
+            </Button>
           )}
-          <button
-            onClick={() => start(file, pattern, official)}
-            className="flex items-center justify-center gap-1.5 px-4 py-2 rounded-md bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-sm font-bold"
-          >
+          <Button variant="primary" onClick={() => start(file, pattern, official)}>
             <PlayCircle className="w-4 h-4" /> Start exam
-          </button>
+          </Button>
         </div>
-        <p className="text-[10px] text-slate-500">
+        <p className="text-[10px] text-slate-400">
           Opens the {DIGION_ENGINE_URL.replace('https://', '')} exam screen over this page. The review opens here when you submit.
         </p>
       </div>

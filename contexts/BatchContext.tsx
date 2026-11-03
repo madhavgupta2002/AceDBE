@@ -4,7 +4,6 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 import { getTermsForBatch } from '@/lib/subjectMapping';
 
 export const AVAILABLE_BATCHES = [1, 2, 3] as const;
-export type BatchNumber = (typeof AVAILABLE_BATCHES)[number];
 
 const STORAGE_KEY_BATCH = 'ace_dbe_selected_batch';
 // Term is remembered per batch, and only once the user picks one; otherwise the latest term is shown.
