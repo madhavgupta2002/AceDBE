@@ -7,6 +7,10 @@ export type AttemptMode = 'practice' | 'cbt';
 /** "CLA|<bank>" or "Exam|<bank>": one question set. Each module of a set is one history unit. */
 export const setKey = (bankType: string, bankName: string) => `${bankType}|${bankName}`;
 
+/** Question metadata survives CBT review and revision retries. */
+export const questionSet = (q: Question): string | undefined =>
+  q.source && q.bankType && q.bankType !== 'Custom' ? setKey(q.bankType, q.source) : undefined;
+
 export interface AttemptUnit {
   key: string;
   set: string;
@@ -51,7 +55,7 @@ export async function saveAttempt(opts: {
   mode: AttemptMode;
   questions: Question[];
   answers: (string[] | null)[]; // aligned with questions
-  setOf: (q: Question) => string | undefined;
+  setOf?: (q: Question) => string | undefined;
   timeSec: number;
 }) {
   if (!supabase) return;
@@ -60,10 +64,9 @@ export async function saveAttempt(opts: {
 
   const units = new Map<string, AttemptUnit>();
   const answers: Record<string, string[]> = {};
-  let answeredAny = false;
 
   opts.questions.forEach((q, i) => {
-    const set = opts.setOf(q);
+    const set = opts.setOf ? opts.setOf(q) : questionSet(q);
     if (!set || q.isSubjective) return;
     const mod = q.module == null ? '' : String(q.module);
     const key = `${set}|${mod}`;
@@ -75,14 +78,13 @@ export async function saveAttempt(opts: {
       unit.unanswered++;
       return;
     }
-    answeredAny = true;
     answers[`${q.source ?? ''}::${q.id}`] = a;
     if (isCorrect(q, a)) unit.correct++;
     else unit.wrong++;
   });
 
-  if (!answeredAny) return;
   const list = Array.from(units.values());
+  if (!list.length) return;
   const { error } = await supabase.from('quiz_attempts').insert({
     subject_code: opts.subjectCode,
     mode: opts.mode,

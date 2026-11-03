@@ -11,63 +11,114 @@ export type ProgressMap = Record<string, Record<string, ModuleProgress>>;
 
 const STORAGE_KEY = 'ace_dbe_module_progress';
 const CHANGE_EVENT = 'ace_dbe_progress_change';
-
-const read = (): ProgressMap => {
-  if (typeof window === 'undefined') return {};
-  try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}') as ProgressMap;
-  } catch {
-    return {};
-  }
-};
-
-const write = (map: ProgressMap) => {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(map));
-  window.dispatchEvent(new Event(CHANGE_EVENT));
-};
-
-// ── Account sync ──────────────────────────────────────────────────────────────
-
+type SyncStatus = 'local' | 'syncing' | 'synced' | 'error';
+type PendingEdit = { checks: ModuleProgress; token: string };
+type PendingMap = Record<string, Record<string, PendingEdit>>;
 let syncUserId: string | null = null;
+let syncStatus: SyncStatus = 'local';
+let activeSync: Promise<void> | null = null;
+let retryTimer: ReturnType<typeof setTimeout> | undefined;
+let retryDelay = 1000;
+let generation = 0;
 
-const pushModule = (code: string, module: string, p: ModuleProgress) => {
-  if (!supabase || !syncUserId) return;
-  void supabase
-    .from('module_progress')
-    .upsert({ subject_code: code, module, video: !!p.video, questions: !!p.questions, updated_at: new Date().toISOString() })
-    .then(({ error }) => error && console.error('Progress sync failed:', error.message));
+const cacheKey = (userId = syncUserId) => userId ? `${STORAGE_KEY}:${userId}` : STORAGE_KEY;
+const pendingKey = (userId: string) => `${cacheKey(userId)}:pending`;
+const readJson = <T,>(key: string): T => {
+  try { return JSON.parse(localStorage.getItem(key) || '{}') as T; }
+  catch { return {} as T; }
+};
+const read = (): ProgressMap => typeof window === 'undefined' ? {} : readJson<ProgressMap>(cacheKey());
+const notify = () => window.dispatchEvent(new Event(CHANGE_EVENT));
+const write = (map: ProgressMap) => {
+  localStorage.setItem(cacheKey(), JSON.stringify(map));
+  notify();
+};
+const setStatus = (status: SyncStatus) => { syncStatus = status; notify(); };
+
+// Pending edits are kept per account, including explicit false values, until the server accepts them.
+// A cloud snapshot replaces a stale cache; only unsaved user edits are applied over that snapshot.
+export const retryProgressSync = (): Promise<void> => {
+  if (!supabase || !syncUserId) return Promise.resolve();
+  if (activeSync) return activeSync;
+  clearTimeout(retryTimer);
+  const userId = syncUserId;
+  const currentGeneration = generation;
+  const client = supabase;
+  const isCurrent = () => syncUserId === userId && generation === currentGeneration;
+  setStatus('syncing');
+  const run = async () => {
+    try {
+      const { data, error } = await client.from('module_progress')
+        .select('subject_code, module, video, questions').eq('user_id', userId);
+      if (error) throw error;
+      if (!isCurrent()) return;
+      const map: ProgressMap = {};
+      for (const row of data ?? []) {
+        (map[row.subject_code] ??= {})[row.module] = { video: row.video, questions: row.questions };
+      }
+      const guestKey = `${pendingKey(userId)}:guest`;
+      const guest = readJson<ProgressMap>(guestKey);
+      const imported = readJson<PendingMap>(pendingKey(userId));
+      for (const [code, modules] of Object.entries(guest)) {
+        for (const [module, checks] of Object.entries(modules)) {
+          if (!map[code]?.[module] && !imported[code]?.[module]) {
+            (imported[code] ??= {})[module] = { checks, token: crypto.randomUUID() };
+          }
+        }
+      }
+      localStorage.setItem(pendingKey(userId), JSON.stringify(imported));
+      localStorage.removeItem(guestKey);
+      // Re-read the queue after each write so edits made during a request are not lost.
+      while (isCurrent()) {
+        const pending = readJson<PendingMap>(pendingKey(userId));
+        const entries = Object.entries(pending).flatMap(([code, modules]) =>
+          Object.entries(modules).map(([module, edit]) => ({ code, module, edit })));
+        if (!entries.length) { write(map); setStatus('synced'); retryDelay = 1000; return; }
+        for (const { code, module, edit } of entries) {
+          if (!isCurrent()) return;
+          const next = { ...map[code]?.[module], ...edit.checks };
+          const { error: saveError } = await client.from('module_progress').upsert({
+            user_id: userId, subject_code: code, module,
+            video: !!next.video, questions: !!next.questions, updated_at: new Date().toISOString(),
+          });
+          if (saveError) throw saveError;
+          if (!isCurrent()) return;
+          (map[code] ??= {})[module] = next;
+          const latest = readJson<PendingMap>(pendingKey(userId));
+          if (latest[code]?.[module]?.token === edit.token) delete latest[code][module];
+          localStorage.setItem(pendingKey(userId), JSON.stringify(latest));
+        }
+      }
+    } catch (error) {
+      if (!isCurrent()) return;
+      console.error('Progress sync failed:', error);
+      setStatus('error');
+      retryTimer = setTimeout(() => { void retryProgressSync(); }, retryDelay);
+      retryDelay = Math.min(retryDelay * 2, 30000);
+    }
+  };
+  const task = run();
+  activeSync = task;
+  void task.finally(() => { if (activeSync === task) activeSync = null; });
+  return task;
 };
 
-/** Called by AuthProvider. Signing in merges this device's progress with the account; signing out clears it. */
+/** Load the account's cloud state. Guest progress is imported only for modules absent from the account. */
 export const setProgressUser = async (userId: string | null) => {
   if (userId === syncUserId) return;
-  const wasSignedIn = syncUserId !== null;
+  if (userId && !syncUserId) {
+    const guestKey = `${pendingKey(userId)}:guest`;
+    const guest = { ...readJson<ProgressMap>(guestKey), ...read() };
+    localStorage.setItem(guestKey, JSON.stringify(guest));
+    localStorage.removeItem(STORAGE_KEY);
+  }
+  generation++;
+  clearTimeout(retryTimer);
+  activeSync = null;
   syncUserId = userId;
-  if (!userId) {
-    if (wasSignedIn) write({});
-    return;
-  }
-  if (!supabase) return;
-  const { data, error } = await supabase.from('module_progress').select('subject_code, module, video, questions');
-  if (error || syncUserId !== userId) return;
-
-  const map = read();
-  const remote = new Set<string>();
-  for (const row of data ?? []) {
-    remote.add(`${row.subject_code}|${row.module}`);
-    const subject = (map[row.subject_code] ??= {});
-    const local = subject[row.module];
-    const merged = { video: !!(row.video || local?.video), questions: !!(row.questions || local?.questions) };
-    if (merged.video !== row.video || merged.questions !== row.questions) pushModule(row.subject_code, row.module, merged);
-    if (merged.video || merged.questions) subject[row.module] = merged;
-  }
-  // Upload what only this device had.
-  for (const [code, modules] of Object.entries(map)) {
-    for (const [module, p] of Object.entries(modules)) {
-      if (!remote.has(`${code}|${module}`)) pushModule(code, module, p);
-    }
-  }
-  write(map);
+  retryDelay = 1000;
+  setStatus(userId ? 'syncing' : 'local');
+  await retryProgressSync();
 };
 
 export const isModuleDone = (p?: ModuleProgress) => !!(p?.video && p?.questions);
@@ -75,30 +126,37 @@ export const isModuleDone = (p?: ModuleProgress) => !!(p?.video && p?.questions)
 /** Shared progress state, kept in sync across components and tabs. */
 export const useProgress = () => {
   const [progress, setProgress] = useState<ProgressMap>({});
-
+  const [status, setSyncStatus] = useState<SyncStatus>('local');
   useEffect(() => {
-    const sync = () => setProgress(read());
+    const sync = () => { setProgress(read()); setSyncStatus(syncStatus); };
+    const online = () => { void retryProgressSync(); };
     sync();
     window.addEventListener(CHANGE_EVENT, sync);
     window.addEventListener('storage', sync);
+    window.addEventListener('online', online);
     return () => {
       window.removeEventListener(CHANGE_EVENT, sync);
       window.removeEventListener('storage', sync);
+      window.removeEventListener('online', online);
     };
   }, []);
-
-  /** Set one or more checks for a module. */
   const setChecks = useCallback((code: string, module: string, checks: ModuleProgress) => {
     const map = read();
     const subject = (map[code] ??= {});
-    const next = { ...subject[module], ...checks };
-    if (!next.video && !next.questions) delete subject[module];
-    else subject[module] = next;
+    subject[module] = { ...subject[module], ...checks };
     write(map);
-    pushModule(code, module, next);
+    if (syncUserId) {
+      const pending = readJson<PendingMap>(pendingKey(syncUserId));
+      const modules = (pending[code] ??= {});
+      modules[module] = {
+        checks: { ...modules[module]?.checks, ...checks },
+        token: crypto.randomUUID(),
+      };
+      localStorage.setItem(pendingKey(syncUserId), JSON.stringify(pending));
+      void retryProgressSync();
+    }
   }, []);
-
-  return { progress, setChecks };
+  return { progress, setChecks, syncStatus: status, retrySync: retryProgressSync };
 };
 
 // ── Module lists (numbered keys of each subject's videos.json; extras like live sessions are skipped) ─────

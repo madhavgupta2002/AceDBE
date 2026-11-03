@@ -71,9 +71,6 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
   const [globalAnswersVisible, setGlobalAnswersVisible] = useState(true);
   const [individualAnswersVisible, setIndividualAnswersVisible] = useState<Record<number, boolean>>({});
 
-  // Question set each loaded question came from, for saving attempts to history (Custom sets aren't tracked)
-  const questionSetRef = useRef(new WeakMap<Question, string>());
-
   // Timer state
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
   const [isTimerActive, setIsTimerActive] = useState(false);
@@ -225,9 +222,6 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
 
         if (filteredQuestions.length > 0) {
           questionsBySet.push(filteredQuestions);
-        }
-        if (set.bankType !== 'Custom') {
-          filteredQuestions.forEach(q => questionSetRef.current.set(q, setKey(set.bankType, set.bankName)));
         }
       }
 
@@ -605,8 +599,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
       currentQuestionIndex: 0,
       score: newScore,
       totalQuestions: filteredQuestions.length,
-      selectedAnswer: filteredAnsweredQuestions[0],
-      showResult: filteredAnsweredQuestions[0] !== null,
+      selectedAnswer: filteredAnsweredQuestions[0] ?? null,
+      showResult: filteredAnsweredQuestions[0] != null,
       questions: filteredQuestions,
       incorrectAnswers: newIncorrectAnswers,
       answeredQuestions: filteredAnsweredQuestions,
@@ -633,7 +627,6 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
       mode: 'practice',
       questions: allQuestions,
       answers: masterAnsweredQuestions,
-      setOf: q => questionSetRef.current.get(q),
       timeSec: elapsedSeconds,
     });
   };
@@ -718,6 +711,8 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
   };
 
   const resetQuiz = () => {
+    setAllQuestions([]);
+    setMasterAnsweredQuestions([]);
     setQuizState({
       practiceMode: 'bank',
       questionOrder: 'inOrder',
@@ -963,7 +958,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
       <Header
         showBackButton
         onBack={() => {
-          if (quizState.questions.length > 0) {
+          if (allQuestions.length > 0) {
             // If quiz is in progress or completed, back button resets to subject dashboard
             if (quizCompleted) {
               resetQuiz();
@@ -1024,7 +1019,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
           )}
 
           {/* Full View Notes Section - only on the quiz picker, not during or after a quiz */}
-          {!loading && quizState.questions.length === 0 && (
+          {!loading && allQuestions.length === 0 && (
             <div className="mb-6 bg-surface border border-surface-border/60 rounded-xl p-5">
               <h2 className="text-lg font-bold text-white mb-3 flex items-center gap-2">
                 <BookOpen className="w-5 h-5 text-emerald-400" />
@@ -1061,7 +1056,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
 
 
           {/* Video playlists — whole-course link in the header, one thumbnail card per module */}
-          {!loading && moduleNumbers.length > 0 && quizState.questions.length === 0 && (() => {
+          {!loading && moduleNumbers.length > 0 && allQuestions.length === 0 && (() => {
             const allVideos = moduleNumbers.flatMap((m) => subjectVideos[m] || []);
             const allPlaylistUrl = moduleNumbers.length > 1 ? createPlaylistUrl(allVideos) : '';
             const cards = moduleNumbers.map((m) => ({ key: m, label: isNaN(+m) ? m : `Module ${m}`, videos: subjectVideos[m] || [] }));
@@ -1139,7 +1134,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
           )}
 
 
-          {!loading && quizState.questions.length === 0 && (
+          {!loading && allQuestions.length === 0 && (
             <div className="mb-6 bg-surface border border-surface-border/60 rounded-xl p-5">
               <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
                 <svg className="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1614,7 +1609,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
             </div>
           )}
 
-          {!loading && !quizCompleted && quizState.questions.length > 0 && (
+          {!loading && !quizCompleted && allQuestions.length > 0 && (
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 pb-28">
               <div className="lg:col-span-9">
                 {/* Mobile-only: module & source selectors above stats */}
@@ -1653,7 +1648,14 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
                   </div>
                 </div>
 
-                <QuizQuestion
+                {quizState.questions.length === 0 ? (
+                  <div className="rounded-xl border border-slate-700 p-6 text-center text-slate-300">
+                    <p>No questions match these filters.</p>
+                    <button onClick={() => applyFilters('all', 'all')} className="mt-3 text-emerald-400 hover:text-emerald-300">
+                      Clear filters
+                    </button>
+                  </div>
+                ) : <QuizQuestion
                   question={quizState.questions[quizState.currentQuestionIndex]}
                   onAnswer={handleAnswer}
                   onClearResponse={() => clearResponse(quizState.currentQuestionIndex)}
@@ -1664,7 +1666,7 @@ const QuizApp: React.FC<QuizAppProps> = ({ subjectCode, autoExam, autoType, auto
                   onToggleTimer={() => setIsTimerActive(!isTimerActive)}
                   questionNumber={quizState.currentQuestionIndex + 1}
                   totalQuestions={quizState.totalQuestions}
-                />
+                />}
               </div>
 
               <div className="lg:col-span-3">

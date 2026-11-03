@@ -110,7 +110,7 @@ const ModuleTile: React.FC<{
 
 export default function TrackerPage() {
   const { selectedBatch, selectedTerm, setSelectedTerm } = useBatch();
-  const { progress, setChecks } = useProgress();
+  const { progress, setChecks, syncStatus, retrySync } = useProgress();
   const { user } = useAuth();
 
   const terms = getTermsForBatch(selectedBatch);
@@ -157,7 +157,8 @@ export default function TrackerPage() {
         <div className="flex flex-wrap items-end justify-between gap-3 mb-5 px-1">
           <div>
             <h1 className="text-xl sm:text-2xl font-bold tracking-tight">Progress Tracker</h1>
-            <p className="text-xs text-slate-500 mt-0.5">Batch {selectedBatch} · {user ? 'synced to your account' : 'saved on this device'}</p>
+            {user && syncStatus === 'error' && <button onClick={() => void retrySync()} className="text-xs text-amber-300 hover:text-amber-200">Retry sync</button>}
+            <p className="text-xs text-slate-500 mt-0.5">Batch {selectedBatch} · {!user ? 'saved on this device' : syncStatus === 'synced' ? 'synced to your account' : syncStatus === 'error' ? 'sync failed · changes saved on this device' : 'syncing…'}</p>
           </div>
           <div className="flex items-center gap-3">
             <Ring value={pct(termTotals.done, termTotals.total)} size={44} />
