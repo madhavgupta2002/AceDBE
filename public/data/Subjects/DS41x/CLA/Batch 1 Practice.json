@@ -1,0 +1,215 @@
+{
+    "exam_metadata": {
+        "subject_name": "Advanced Statistics for Business",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "ASB_Q01",
+            "question_text": "What is the primary goal of quality management?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Reducing production costs",
+                "B": "Maximizing product variety",
+                "C": "Ensuring that products, services, or processes meet or exceed customer expectations",
+                "D": "Eliminating the need for monitoring and improvement"
+            },
+            "correct_option_label": "C",
+            "explanation": "The primary goal of quality management is to satisfy customer requirements and strive to exceed their expectations through consistent processes and product standards.",
+            "module": 4
+        },
+        {
+            "question_id": "ASB_Q02",
+            "question_text": "What type of error occurs when the null hypothesis ($H_0$) is true but is incorrectly rejected?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Type I error (False positive)",
+                "B": "Correct decision",
+                "C": "Type II error",
+                "D": "Random error"
+            },
+            "correct_option_label": "A",
+            "explanation": "A Type I error, also known as a false positive, occurs when a researcher rejects a null hypothesis that is actually true in the population.",
+            "module": 4
+        },
+        {
+            "question_id": "ASB_Q03",
+            "question_text": "In the given example of assessing supplier quality, what statistical test is used to evaluate the compressive strength of brake pads?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Two-tailed z-test",
+                "B": "Chi-square test",
+                "C": "ANOVA",
+                "D": "One-tailed t-test"
+            },
+            "correct_option_label": "D",
+            "explanation": "A one-tailed t-test is used when testing if a sample mean is significantly greater than or less than a population mean, which is standard in quality threshold testing.",
+            "module": 4
+        },
+        {
+            "question_id": "ASB_Q04",
+            "question_text": "Which of the following is the correct sequence of steps for building and evaluating a linear regression model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Split the data, Train the model, Test the model, Assess performance, Detect overfitting",
+                "B": "Split the data, Test the model, Train the model, Detect overfitting, Assess performance"
+            },
+            "correct_option_label": "A",
+            "explanation": "The standard workflow involves splitting data first, training on one set, testing on another, and finally assessing metrics and checking for overfitting/generalization.",
+            "module": 2
+        },
+        {
+            "question_id": "ASB_Q05",
+            "question_text": "How does Mean Squared Error (MSE) differ from Mean Absolute Error (MAE)?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "MSE squares the error terms, giving more weight to larger errors, while MAE takes the absolute differences.",
+                "B": "MSE takes the absolute differences between predicted and actual values, while MAE squares the differences."
+            },
+            "correct_option_label": "A",
+            "explanation": "MSE penalizes larger errors more heavily because it squares the difference between actual and predicted values, whereas MAE treats all errors linearly.",
+            "module": 3
+        },
+        {
+            "question_id": "ASB_Q06",
+            "question_text": "What does a confusion matrix help analyze in a classification model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The relationship between independent and dependent variables in regression models",
+                "B": "The performance of a classification model by displaying true positives, true negatives, false positives, and False negatives"
+            },
+            "correct_option_label": "B",
+            "explanation": "A confusion matrix provides a detailed breakdown of correct and incorrect classifications, allowing for the calculation of precision, recall, and accuracy.",
+            "module": 3
+        },
+        {
+            "question_id": "ASB_Q07",
+            "question_text": "Which of the following is NOT an assumption of the classical linear regression model?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The relationship between the dependent and independent variables is linear.",
+                "B": "The independent variables are perfectly correlated with each other."
+            },
+            "correct_option_label": "B",
+            "explanation": "Linear regression assumes no perfect multicollinearity; independent variables should not be perfectly correlated as it makes the model coefficients indeterminate.",
+            "module": 2
+        },
+        {
+            "question_id": "ASB_Q08",
+            "question_text": "In logistic regression, the dependent variable is transformed using:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The logistic (sigmoid) function",
+                "B": "A square root transformation"
+            },
+            "correct_option_label": "A",
+            "explanation": "Logistic regression uses the sigmoid function to map predicted values to probabilities between 0 and 1, facilitating binary classification.",
+            "module": 2
+        },
+        {
+            "question_id": "ASB_Q09",
+            "question_text": "Employee attrition refers to:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The voluntary or involuntary departure of employees from an organization",
+                "B": "The increase in employee retention rates"
+            },
+            "correct_option_label": "A",
+            "explanation": "Attrition is the reduction in staff through various means like resignation, retirement, or termination, which is a key metric in HR predictive analytics.",
+            "module": 2
+        },
+        {
+            "question_id": "ASB_Q10",
+            "question_text": "Which type of data is best suited for non-parametric tests?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Ordinal and categorical data",
+                "B": "Interval and ratio data",
+                "C": "Only continuous data",
+                "D": "Only data with a known distribution"
+            },
+            "correct_option_label": "A",
+            "explanation": "Non-parametric tests do not assume a normal distribution and are therefore ideal for ordinal data or categorical data where ranking is possible.",
+            "module": 1
+        },
+        {
+            "question_id": "ASB_Q11",
+            "question_text": "If two events A and B are independent, what is the probability of A and B both occuring, given that $P(A) = 0.3$ and $P(B) = 0.5$?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "0.8",
+                "B": "0.15",
+                "C": "0.2",
+                "D": "0.3"
+            },
+            "correct_option_label": "B",
+            "explanation": "For independent events, the probability of both occurring is the product of their individual probabilities: $0.3 \\times 0.5 = 0.15$.",
+            "module": 1
+        },
+        {
+            "question_id": "ASB_Q12",
+            "question_text": "What is the null hypothesis for a Chi-Square Test of Independence?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The two variables are dependent on each other",
+                "B": "The two variables are independent of each other",
+                "C": "The variables are normally distributed",
+                "D": "The expected frequencies are equal to the observed"
+            },
+            "correct_option_label": "B",
+            "explanation": "The null hypothesis for a Chi-Square Test of Independence always assumes that there is no relationship or association between the two categorical variables.",
+            "module": 1
+        },
+        {
+            "question_id": "ASB_Q13",
+            "question_text": "In a Chi-Square Test of Independence, when would you reject the null hypothesis?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "When the p-value is greater than the significance level",
+                "B": "When the Chi-Square statistic Is close to 0",
+                "C": "When the p-value is less than the significance level",
+                "D": "When the sample size is small"
+            },
+            "correct_option_label": "C",
+            "explanation": "We reject the null hypothesis when the p-value is less than the chosen alpha level (significance level), indicating the result is statistically significant.",
+            "module": 1
+        },
+        {
+            "question_id": "ASB_Q14",
+            "question_text": "We refer to $P(A \\cap B) = P(A) \\cdot P(B)$ as:",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Addition Rule for Dependent Events",
+                "B": "Multiplication Rule of Probabilities"
+            },
+            "correct_option_label": "B",
+            "explanation": "The Multiplication Rule states that the joint probability of two independent events is found by multiplying their individual probabilities.",
+            "module": 1
+        },
+        {
+            "question_id": "ASB_Q15",
+            "question_text": "In this problem, what does this establish according to concept of independence, $P(\\text{Purchase a gaming console} \\cap \\text{Age 18-25}) > P(\\text{Purchase a gaming console}) \\cdot P(\\text{Age 18-25})$?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "2 events are not independent",
+                "B": "2 events are not dependent"
+            },
+            "correct_option_label": "A",
+            "explanation": "If the joint probability is not equal to the product of individual probabilities, the events are considered dependent or 'not independent'.",
+            "module": 1
+        },
+        {
+            "question_id": "ASB_Q16",
+            "question_text": "If observed value is 27 and expected value is 30. Then find the $\\chi^2$ test statistic.",
+            "question_type": "MCQ",
+            "options": {
+                "A": "2 $\\chi^2$",
+                "B": "0.8",
+                "C": "0.3"
+            },
+            "correct_option_label": "C",
+            "explanation": "The formula for the Chi-square statistic is $\\frac{(O-E)^2}{E}$. Here, $\\frac{(27-30)^2}{30} = \\frac{(-3)^2}{30} = \\frac{9}{30} = 0.3$.",
+            "module": 1
+        }
+    ]
+}
