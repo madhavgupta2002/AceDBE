@@ -1,0 +1,422 @@
+{
+    "exam_metadata": {
+        "subject_name": "Advanced Statistics for Business",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "MOD1_Q1",
+            "question_text": "a. Explain the key philosophical differences between parametric and nonparametric methods in statistical analysis. How do their underlying assumptions about data distributions differ?\nb. Consider two scenarios:\n• A researcher wants to estimate the average height of university students and assumes that height follows a normal distribution.\n• Another researcher is studying the relationship between customer satisfaction and service quality without making any assumptions about the data’s distribution.\nWhich type of statistical method - parametric or nonparametric - would be more appropriate in each case? Justify your answer.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Parametric methods assume a specific underlying distribution (like Normal) for the population, whereas nonparametric methods are distribution-free. In the first scenario, parametric methods are appropriate due to the normality assumption; in the second, nonparametric methods are better as no distributional assumptions are made.",
+            "module": 1
+        },
+        {
+            "question_id": "MOD1_Q2",
+            "question_text": "Let X and Y be two discrete random variables with the following joint probability mass function (for other values, the probability is 0):\n$P(X = x, Y = y) = \\begin{cases} \\frac{1}{8}, & (x, y) \\in \\{(1,1), (1,2), (2,1), (2,2)\\} \\\\ \\frac{1}{4}, & (x, y) \\in \\{(3,1), (3,2)\\} \\end{cases}$\na. Compute the marginal probability mass functions of the two random variables.\nb. Determine whether X and Y are independent by checking whether the multiplication rule is true.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Marginal PMFs are calculated by summing $P(X,Y)$ over all values of the other variable: $P(X=1)=1/4$, $P(X=2)=1/4$, $P(X=3)=1/2$; $P(Y=1)=1/2$, $P(Y=2)=1/2$. Since $P(X=x, Y=y) = P(X=x)P(Y=y)$ holds for all pairs (e.g., $1/8 = 1/4 \\times 1/2$), the variables are independent.",
+            "module": 1
+        },
+        {
+            "question_id": "MOD1_Q3",
+            "question_text": "In the TV show F.R.I.E.N.D.S., the six main characters had different numbers of lines with different proportions of lines being funny. This information is given below. Use the concept of test of independence to determine if these characters enjoyed statistically similar proportions of funny lines.\n| | Monica | Rachel | Phoebe | Ross | Joey | Chandler |\n|---|---|---|---|---|---|---|\n| Total lines | 8500 | 8800 | 7400 | 9000 | 8000 | 9000 |\n| Funny % | 57.8% | 57.9% | 60.9% | 57.7% | 65.6% | 66.6% |",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "A Chi-square test of independence should be performed using a contingency table of funny vs. non-funny lines for each character. If the p-value is less than the significance level, we reject the null hypothesis, meaning the characters have significantly different proportions of funny lines.",
+            "module": 1
+        },
+        {
+            "question_id": "MOD1_Q4",
+            "question_text": "Consider the HR analytics dataset and determine whether the salary distribution is similar in all departments except for management roles. Then, repeat the same exercise for all departments except for management, sales, HR and support. Subsequently, prepare a managerial report to explain how salary levels are similar or different between different departments.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "This requires using the Kruskal-Wallis test (a nonparametric version of ANOVA) to compare salary distributions across multiple departments. The analysis helps identify if organizational hierarchy or specific functional domains significantly impact pay scales independent of normal distribution assumptions.",
+            "module": 1
+        },
+        {
+            "question_id": "MOD1_Q5",
+            "question_text": "Consider the HR analytics dataset and determine whether the satisfaction level is independent of average monthly hours worked by the employees. After conducting the test, you should prepare a managerial report to explain the findings of the test and connect it to the Pearson correlation coefficient between the two variables as can be computed from the original numerical observations.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Independence can be checked using a Chi-square test of independence after binning the variables, or by testing for zero correlation. Comparing the test results with the Pearson correlation coefficient provides insights into both the existence and the linear strength of the relationship between workload and satisfaction.",
+            "module": 1
+        },
+        {
+            "question_id": "MOD1_Q6",
+            "question_text": "a. Explain the fundamental idea behind a goodness-of-fit test. Why is it important in statistical analysis?\nb. When performing a goodness-of-fit test, what are the null and alternative hypotheses typically used?\nc. Discuss two practical applications of goodness-of-fit tests in different fields, such as finance, economics, organizational behavior, human resources, or quality control. How will these tests help in decision-making?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "A goodness-of-fit test determines how well observed data follows a specific theoretical distribution. $H_0$ states the data follows the distribution, while $H_a$ states it does not. Applications include testing if stock returns are normal in finance or if product defects follow a Poisson distribution in quality control.",
+            "module": 1
+        },
+        {
+            "question_id": "MOD1_Q7",
+            "question_text": "A six-sided die is rolled 120 times, and the observed frequencies for each face are recorded as follows:\nFace (X): 1, 2, 3, 4, 5, 6\nObserved Frequency: 25, 18, 22, 20, 19, 16\nTest whether the die is fair using a chi-square goodness-of-fit test at a 5% significance level.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Expected frequencies ($E$) for a fair die are $120/6 = 20$ for each face. Calculate $\\chi^2 = \\sum \\frac{(O-E)^2}{E} = \\frac{(25-20)^2}{20} + ... + \\frac{(16-20)^2}{20} = 2.5$. With $df=5$ and $\\alpha=0.05$, the critical value is 11.07; since $2.5 < 11.07$, we fail to reject $H_0$ and conclude the die is fair.",
+            "module": 1
+        },
+        {
+            "question_id": "MOD1_Q8",
+            "question_text": "Consider the HR analytics dataset. Treat the variable average monthly hours as a continuous one and determine whether it can be assumed to be normally distributed. Draw a histogram of this data and see whether the conclusion of the goodness of fit test can be supported with visual representation of the data.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "A Shapiro-Wilk or Kolmogorov-Smirnov test can formally assess normality. If the test rejects normality, the histogram will likely show skewness or multiple peaks, indicating that parametric tests assuming normality should be used with caution.",
+            "module": 1
+        },
+        {
+            "question_id": "MOD1_Q9",
+            "question_text": "a. Explain the fundamental idea behind the Wilcoxon signed-rank test. How does it differ from the traditional t-test in terms of assumptions about the data?\nb. Discuss a practical scenario where the signed-rank test is useful. Describe the null and alternative hypotheses for this problem.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "The Wilcoxon signed-rank test is a nonparametric alternative to the paired t-test that compares medians of paired data without assuming normality. It is useful in 'before-and-after' scenarios where data is skewed or contains outliers, with $H_0$ stating the median difference is zero.",
+            "module": 1
+        },
+        {
+            "question_id": "MOD1_Q10",
+            "question_text": "Consider the HR analytics dataset and suppose that a claim has been heard that the central tendency of the last evaluation rating for every employee is 0.7.\na. Use the Wilcoxon rank sum test to assess if the median rating can be considered to be 0.7 or not.\nb. Perform a suitable t-test to assess if the mean rating can be considered to be 0.7 or not.\nc. Compare the results of the above two tests and discuss.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "The Wilcoxon test (for median) and t-test (for mean) might yield different results if the evaluation data is skewed. Comparing them helps determine if the 'central tendency' is consistently 0.7 regardless of the metric used, or if outliers are pulling the mean away from the median.",
+            "module": 1
+        },
+        {
+            "question_id": "MOD1_Q11",
+            "question_text": "Consider the following dataset that was discussed in the module and find whether the marketing campaign helped in gaining significantly different number of visits before and after the campaign.\n| Customer | Pre-Campaign Visits | Post-Campaign Visits |\n|---|---|---|\n| 1 | 50 | 55 |\n| 2 | 60 | 65 |\n| 3 | 45 | 48 |\n| 4 | 80 | 75 |\n| 5 | 30 | 40 |\n| 6 | 55 | 60 |\n| 7 | 70 | 72 |\n| 8 | 40 | 45 |\n| 9 | 85 | 90 |\n| 10 | 90 | 85 |",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Since the sample size is small (n=10), a Wilcoxon Signed-Rank test is appropriate to check for a significant median difference in visits. The differences are +5, +5, +3, -5, +10, +5, +2, +5, +5, -5; ranking these absolute differences and applying the test will determine if the campaign was effective.",
+            "module": 1
+        },
+        {
+            "question_id": "MOD1_Q12",
+            "question_text": "Consider the dataset on the placement of students. Answer the following questions and using that prepare a managerial report.\na. Test using suitable goodness-of-fit procedures if the CTC data can be modelled as having a normal distribution.\nb. Test using suitable nonparametric procedure if there is any significant difference in average CTC between male and female students.\nc. Would you say that placement in different sectors can be assumed to be statistically independent of the gender?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Part (a) uses K-S tests for normality, (b) uses Mann-Whitney U test to compare CTC medians between genders, and (c) uses a Chi-square test of independence for Sector vs Gender. This multi-step analysis ensures robust findings even if pay data is non-normal.",
+            "module": 1
+        },
+        {
+            "question_id": "MOD2_Q1",
+            "question_text": "a. Explain the fundamental idea behind linear regression. What assumptions does it make about the relationship between the dependent and independent variables?\nb. How does logistic regression differ from linear regression in terms of the type of dependent variable and the interpretation of results? Provide a real-life example where logistic regression would be more appropriate than linear regression.\nc. What is nonlinear regression, and how does it differ from linear regression? Give a real-life example of a situation where a nonlinear model might provide a better fit for the data than a linear model.\nd. Suppose a company wants to predict its future sales based on advertising expenditure. Would linear, logistic, or nonlinear regression be the most appropriate choice? Justify your answer.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Linear regression models continuous outcomes assuming a straight-line relationship. Logistic regression handles binary categorical outcomes (e.g., churn vs. stay) using the logit link. Nonlinear regression captures curves (like diminishing returns in advertising), which is often more realistic for budget-to-sales modeling.",
+            "module": 2
+        },
+        {
+            "question_id": "MOD2_Q2",
+            "question_text": "The multiple linear regression model discussed during the module reported an R-squared value of 0.032. Discuss whether it indicates a good fit or a bad fit. Suggest possible ways to improve the model further and illustrate it using the dataset.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "An R-squared of 0.032 is very low, suggesting only 3.2% of the variance is explained (poor fit). Improvement strategies include adding interaction terms, using nonlinear transformations, or performing feature selection to include more relevant predictors.",
+            "module": 2
+        },
+        {
+            "question_id": "MOD2_Q3",
+            "question_text": "Consider the HR analytics dataset. Use the concept of interaction effects in linear regression model, as discussed during the module, to determine if employees in different departments place more emphasis on salary when reporting their satisfaction levels. Prepare a comprehensive managerial report based on your analysis.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Interaction terms (Department × Salary) should be added to the regression model. If these terms are significant, it indicates that the effect of salary on satisfaction varies significantly between departments, suggesting department-specific retention strategies are needed.",
+            "module": 2
+        },
+        {
+            "question_id": "MOD2_Q4",
+            "question_text": "a. Explain how the binomial distribution generalises the Bernoulli distribution.\nb. If the probability of an event is ½, what are the odds? What about the log odds? What does this tell us about the qualitative interpretation of odds and log odds? How will the answer change if the probability is less than ½ or greater than ½?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "The Bernoulli distribution is for a single trial; Binomial is the sum of $n$ independent Bernoulli trials. For $p=0.5$, odds are $0.5/0.5 = 1$ and log-odds are $\\ln(1)=0$. If $p < 0.5$, log-odds are negative; if $p > 0.5$, they are positive.",
+            "module": 2
+        },
+        {
+            "question_id": "MOD2_Q5",
+            "question_text": "A hospital wants to predict whether a patient will develop a certain disease (1 = Yes, 0 = No) based on risk factors such as age and blood pressure.\na. Discuss why logistic regression is appropriate in this case.\nb. How do the Bernoulli and binomial distributions help in estimating probabilities for the model?\nc. Write the logistic regression model for this problem using proper mathematical symbols.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Logistic regression is used because the outcome is binary. The model is $\\ln(\\frac{p}{1-p}) = \\beta_0 + \\beta_1(Age) + \\beta_2(BP)$. The Bernoulli distribution models each individual patient outcome, and maximum likelihood estimation uses this to find the best fit parameters.",
+            "module": 2
+        },
+        {
+            "question_id": "MOD2_Q6",
+            "question_text": "Consider the HR analytics dataset and divide it into two parts: (a) employees who spent less than 3 years, and (b) others. Now, follow the steps of logistic regression model for these two groups separately to identify how the satisfaction level, the last performance evaluation rating, average monthly hours, number of projects, and promotion in 5 years impact the chances of leaving the job for an employee. Explain the steps in detail and prepare a managerial report to discuss the output.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Separate logistic regressions reveal how drivers of attrition change with tenure. For newer employees, 'satisfaction' might be the main driver, while for veterans, 'promotion' or 'number of projects' could be more significant, allowing for tenure-based HR interventions.",
+            "module": 2
+        },
+        {
+            "question_id": "MOD2_Q7",
+            "question_text": "Use the HR analytics dataset and follow the steps of logistic regression model to identify how the satisfaction level, the last performance evaluation rating, average monthly hours, years at the company, promotion in 5 years, salary levels, and different departments impact the chances of leaving the job for an employee. Consider this model and compare it to the analysis discussed in the module where the department variable was not included.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Adding categorical variables like 'department' and 'salary' using dummy coding allows the model to capture environmental and financial factors. Comparison with a simpler model using a Likelihood Ratio test or AIC will show if department-level variation is a significant factor in employee turnover.",
+            "module": 2
+        },
+        {
+            "question_id": "MOD2_Q8",
+            "question_text": "a. Why is variable selection important in regression models? How does including too many or too few variables affect the model’s performance and interpretability?\nb. A marketing analyst is building a model to predict whether a customer will purchase a product (Yes/No) based on factors like age, income, previous purchases, and website activity.\n• Which regression model (linear or logistic) should be used, and why?\n• What criteria should the analyst consider when selecting the most relevant variables for the model?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Variable selection prevents overfitting (too many) or underfitting (too few). Logistic regression is used for the purchase prediction (Yes/No). The analyst should use criteria like p-values, AIC/BIC, or business relevance to select predictors.",
+            "module": 2
+        },
+        {
+            "question_id": "MOD2_Q9",
+            "question_text": "a. Describe two types of nonlinear regression models commonly used in business applications, such as exponential and logistic growth models. Provide an example of a business scenario where each would be useful.\nb. A technology company wants to model the relationship between server capacity and website response time. Initial increases in server capacity significantly reduce response time, but after a certain point, adding more servers results in only marginal improvements.\n• Why might a nonlinear regression model be more appropriate than a linear one in this case?\n• Suggest a type of nonlinear model that could capture this trend and explain why it would be suitable.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Exponential models suit rapid growth (e.g., viral marketing); logistic models suit growth with a carrying capacity. For server response time, a reciprocal or exponential decay model is appropriate because it captures the 'law of diminishing returns' that a linear model would miss.",
+            "module": 2
+        },
+        {
+            "question_id": "MOD2_Q10",
+            "question_text": "Consider the house price dataset and perform a comprehensive analysis of the five questions mentioned during the module and prepare a report that can be helpful for a homebuyer as well as a seller. The questions are listed below.\n1. How is price distributed across the city of Bangalore?\n2. Is there any pattern according to the location or the area of the house?\n3. Can we say that the price distribution is normal?\n4. Does price differ substantially according to who provides the posting – builder, owner or dealer?\n5. Which factors impact the price and how?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "This involves descriptive stats (1, 2), K-S tests (3), ANOVA/Kruskal-Wallis (4), and Multiple Linear Regression (5). The results help buyers understand value drivers and sellers price their properties competitively based on area and posting type.",
+            "module": 2
+        },
+        {
+            "question_id": "MOD2_Q11",
+            "question_text": "a. Explain the key differences between linear regression, logistic regression, and nonlinear regression. In what types of business problems would each model be most appropriate?\nb. Assume that a retail company wants to predict its monthly revenue based on advertising expenditure. What assumptions must be satisfied for linear regression to be a suitable model? How can the company evaluate the model’s performance?\nc. Assume that a bank wants to predict whether a loan applicant will default (Yes/No) based on factors like income, credit score, and employment status. Why is logistic regression a better choice than linear regression for this problem? Explain how the logistic function helps in modeling probabilities.\nd. A business analyst observes that customer satisfaction scores increase rapidly with initial improvements in service quality but eventually level off. Why might a nonlinear regression model be more appropriate than a linear one in this scenario? Suggest a type of nonlinear function that could describe this trend and explain its relevance.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Linear regression fits straight lines for continuous targets; logistic uses the S-curve for probabilities (0-1 range); nonlinear fits custom curves. The bank uses logistic regression to ensure predicted default probabilities stay between 0 and 1, unlike a linear model which could predict values outside this range.",
+            "module": 2
+        },
+        {
+            "question_id": "MOD3_Q1",
+            "question_text": "a. What is forecasting in a business context, and why is it important for decision making? Provide two examples of business areas where forecasting plays a crucial role.\nb. What are some common challenges businesses may face when making forecasts? Can you think of some good practices to resolve these challenges?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Forecasting predicts future values based on historical data, crucial for inventory and budget planning. Challenges include data volatility and changing trends; good practices include using cross-validation and combining multiple forecasting methods.",
+            "module": 3
+        },
+        {
+            "question_id": "MOD3_Q2",
+            "question_text": "a. Why is it important to measure forecasting accuracy in business applications? How can poor forecasting impact decision-making in areas such as inventory management, financial planning, or marketing?\nb. A retail company is evaluating the accuracy of its sales forecasts. Which metric do you think would be most useful if the company wants to minimise large forecasting errors, and why?\nc. A logistics company tracks delivery demand forecasts to optimise its fleet size. What forecasting accuracy metric should the company prioritise to ensure it does not over or under-allocate resources?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Accuracy measurement ensures resource optimization. For minimizing large errors, RMSE is best as it penalizes large deviations. For balanced allocation (not over/under), Mean Absolute Error (MAE) or Mean Percentage Error (MPE) for bias check is preferred.",
+            "module": 3
+        },
+        {
+            "question_id": "MOD3_Q3",
+            "question_text": "For the house price dataset, use suitable statistical techniques to detect if there are outliers. Then, remove the outliers from the dataset and conduct a cross-validation analysis to assess the efficacy of a linear regression model in predicting house price. Based on what we have seen in the module, do you think that the removal of outliers helps one in getting a better forecasting model?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Outliers can be detected using Cook's distance or boxplots. Removing them typically lowers the variance and improves the $R^2$ in cross-validation, but one must ensure they are truly errors and not valid high-value data points to maintain the model's generalizability.",
+            "module": 3
+        },
+        {
+            "question_id": "MOD3_Q4",
+            "question_text": "a. Why is it important to measure classification accuracy in business applications using logistic regression? Provide two examples where classification accuracy is critical, such as credit risk assessment or customer churn prediction.\nb. A bank uses logistic regression to predict whether a loan applicant will default.\n• Why might accuracy alone not be the best metric in this case?\n• If the bank wants to minimise the risk of wrongly approving a high-risk loan, which metric(s) should it prioritise and why?\nc. An e-commerce company applies logistic regression to predict whether a customer will respond to a marketing campaign (Yes/No).\n• Which classification metric(s) should the company focus on to improve its targeting strategy?\n• How can improving classification accuracy contribute to better decision making and higher returns on marketing investment?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "In imbalanced cases like default, accuracy is misleading. Banks should prioritize 'Recall' to minimize Type II errors (missing a defaulter). Marketing companies focus on 'Precision' to ensure high response rates among targeted customers, maximizing ROI.",
+            "module": 3
+        },
+        {
+            "question_id": "MOD3_Q5",
+            "question_text": "Consider the dataset from the ed-tech company that we used in the module to see how a logistic regression model helps in predicting binary data. Use the same model, or a more appropriate logistic regression framework (based on your own understanding of the problem), and perform a 5-fold cross validation study. Calculate the average accuracy for the logistic regression. Discuss whether feature engineering is necessary for this task.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "5-fold CV provides a robust estimate of performance by rotating training and test sets. Feature engineering (e.g., creating interaction terms between student activity and time) often significantly boosts accuracy by capturing nuanced behavioral patterns in the ed-tech data.",
+            "module": 3
+        },
+        {
+            "question_id": "MOD3_Q6",
+            "question_text": "a. Provide two examples of time series data commonly encountered in business applications and discuss why forecasting may be important for these contexts.\nb. A retail company wants to forecast its monthly sales to optimise inventory levels. What challenges might the company face when forecasting sales using historical data? How can improving time series forecasting help the company reduce costs and improve profitability?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Examples include daily stock prices and monthly electricity demand. Challenges include seasonality (holiday peaks) and unexpected shocks. Better forecasting reduces holding costs (no overstock) and lost sales (no stockouts), directly improving profitability.",
+            "module": 3
+        },
+        {
+            "question_id": "MOD3_Q7",
+            "question_text": "Google Trends is helpful to identify the interest levels of public in various topics. It records the interest score (based on number of searches in Google) in a scale between 0 to 100, with 100 being the maximum possible interest. The dataset named GoogleTrends provides the weekly interest scores of the searches on “startup funding in India” and “entrepreneurship courses” from the entire India. Use the concepts learnt in this module to detect the trend and seasonality patterns for both series.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "This requires time series decomposition to separate the global 'Trend' (overall increase/decrease) from 'Seasonality' (periodic fluctuations like academic cycles). Visualizing auto-correlation plots (ACF) can also confirm the periodicity of the search interest.",
+            "module": 3
+        },
+        {
+            "question_id": "MOD3_Q8",
+            "question_text": "For the French bakery dataset, use the naïve and the seasonal naïve methods to predict the sales in September of 2022. Which one do you think is performing better?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "The Naïve method uses the last observed value, while Seasonal Naïve uses the value from the same season last year. For a bakery with strong weekly or annual seasonality, Seasonal Naïve typically performs better as it accounts for recurring demand patterns.",
+            "module": 3
+        },
+        {
+            "question_id": "MOD3_Q9",
+            "question_text": "a. For the French bakery dataset, use all of the simple methods discussed in this module and the previous module to predict the sales in September of 2022, and compare the predictions.\nb. Consider the GoogleTrends dataset and use a suitable approach to predict the interest scores in the four weeks of February 2025.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Compare Naïve, Mean, and Drift methods. For GoogleTrends, if a trend is present, the Drift method or simple linear regression on time would be more suitable than a simple Mean forecast to capture the direction of search interest.",
+            "module": 3
+        },
+        {
+            "question_id": "MOD3_Q10",
+            "question_text": "a. For the French bakery dataset, use the exponential smoothing technique to model the sales in the entire time horizon and obtain predictions for the next days.\nb. Consider the GoogleTrends dataset and use the exponential smoothing technique to model the interest scores. Use this model to predict the interest scores in the four weeks of February 2025, and compare the predictions with the values obtained from other simple forecasting technique(s).",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Exponential smoothing (SES, Holt, or Holt-Winters) assigns more weight to recent data. Comparing this with simple methods usually shows lower RMSE because ES adapts to level shifts and seasonality more effectively than static average methods.",
+            "module": 3
+        },
+        {
+            "question_id": "MOD3_Q11",
+            "question_text": "Consider the following seven methods of forecasting: Naïve method, Seasonal naïve method, Average method, Weighted average method, Drift method, Exponential smoothing technique, Autoregressive models. Use the concepts of cross-validation to determine which one of these models should we use for predicting the future for this dataset.\nFor cross-validation, you can use all data until 31 August 2022 as the training set and predict for the next month. Then, use a suitable metric, for example the root mean squared error, for evaluating the predictive accuracy of each model. The best choice should be the one that comes with the minimum prediction error.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "This systematic comparison identifies the most accurate model for the specific data characteristics. While AR models might capture complex dependencies, simpler methods like Seasonal Naïve are sometimes hard to beat if the data has very regular periodicity.",
+            "module": 3
+        },
+        {
+            "question_id": "MOD3_Q12",
+            "question_text": "a. Describe with suitable business examples how and when the naïve method and weighted average method may work well for time series forecasting.\nb. Explain the basic idea of exponential smoothing and how it differs from simple moving averages. Why is it useful for forecasting business data with short-term fluctuations?\nc. What is an autoregressive (AR) model in time series forecasting? How does it differ from exponential smoothing in capturing patterns in data?\nd. Assume that a logistics company wants to forecast monthly fuel consumption to optimise its budget.\n• Which forecasting method (simple, exponential smoothing, or AR models) would be most suitable for this task and why?\n• What challenges might the company face in making accurate forecasts, and how can they address these challenges?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "AR models use past values as predictors; ES uses weighted averages. For fuel consumption, ES or AR models are suitable as they handle trends better than simple averages. Challenges like price volatility can be addressed by including external variables in a more complex ARX model.",
+            "module": 3
+        },
+        {
+            "question_id": "MOD4_Q1",
+            "question_text": "a. Explain Quality Management. What is the role of statistics in quality management? What are the key principles of quality management?\nb. How does six sigma improve process quality? Explain the difference between Total Quality Management (TQM) and Six Sigma.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Quality Management ensures consistency in products/services; statistics provides objective measurement through SPC. Six Sigma focuses on reducing variation to 3.4 defects per million, while TQM is a broader cultural philosophy for continuous improvement.",
+            "module": 4
+        },
+        {
+            "question_id": "MOD4_Q2",
+            "question_text": "a. How does hypothesis testing help in process optimization? What is the role of hypothesis testing in predictive maintenance in manufacturing?\nb. Why is a low significance level (α) used in critical industries like medicine and aviation?\nc. Explain the difference between Type I and Type II errors in hypothesis testing. Mention 3 industries where Type I error is preferred over Type II error.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Hypothesis testing validates if process changes lead to real improvements. Critical industries use low $\\alpha$ (e.g., 0.01) to minimize Type I errors (false positives), as errors can be fatal. In fire alarms, Type I (false alarm) is preferred over Type II (missing a real fire).",
+            "module": 4
+        },
+        {
+            "question_id": "MOD4_Q3",
+            "question_text": "An airline allows domestic frequent flyers to drop bags if weight < 20 kg. To investigate cheating, a random sample of 40 bags is selected: sample mean weight ($\\bar{x}$) = 21.2, sample standard deviation (s) = 2.5. Using hypothesis testing at 1% level of significance, determine if the airlines have anything to worry. What would a Type II error mean in this context and how can you control for that?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "$H_0: \\mu \\le 20, H_a: \\mu > 20$. Calculated $t = \\frac{21.2 - 20}{2.5/\\sqrt{40}} = \\frac{1.2}{0.395} \\approx 3.04$. At $\\alpha=0.01$, critical $t_{39} \\approx 2.42$. Since $3.04 > 2.42$, we reject $H_0$; the airline should worry. A Type II error would be failing to catch the cheating; it can be controlled by increasing sample size.",
+            "module": 4
+        },
+        {
+            "question_id": "MOD4_Q4",
+            "question_text": "a. Why is regression important in quality control and process management? How can regression help optimize machine performance? Provide a detailed example.\nb. How does logistic regression help in predicting product defects in a manufacturing process? Explain how can we use this model to determine whether a product passes or fails quality inspection.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Regression identifies which variables (like temperature) impact output quality. Logistic regression predicts the probability of a defect; if $P(Defect) > threshold$, the item is flagged for inspection, allowing for automated real-time quality screening.",
+            "module": 4
+        },
+        {
+            "question_id": "MOD4_Q5",
+            "question_text": "a. Explain the four key elements of decision-making under uncertainty. Why is it important to consider probabilities of different states of nature when making decisions?\nb. How does a payoff matrix assist decision-makers in evaluating different strategies? What does an opportunity loss matrix (regret matrix) represent, and how is it different from a payoff matrix?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Elements include strategies, states of nature, outcomes, and probabilities. A payoff matrix shows profits, while a regret matrix shows the 'loss' from not choosing the best option for a given state. Probabilities allow for Expected Monetary Value (EMV) calculations.",
+            "module": 4
+        },
+        {
+            "question_id": "MOD4_Q6",
+            "question_text": "a. Explain the differences between certainty, uncertainty, and risk in decision-making. What are the key assumptions behind decision-making under uncertainty?\nb. Why is the Maximax Criterion considered highly optimistic? Why do companies use Minimax Regret instead of maximizing expected profit?\nc. What is the Hurwicz Criterion, and how does it help in decision-making under uncertainty? What does the coefficient of optimism (α) represent in the Hurwicz equation?\nd. A business owner must decide between opening a new store, expanding an existing store, or launching an online platform. The estimated profits (in thousands) for best and worst-case scenarios are:\n| Decision | Best Profit | Worst Profit |\n|---|---|---|\n| New Store | 300 | 100 |\n| Expansion | 250 | 120 |\n| Online Platform | 400 | 50 |\nIf the Hurwicz $\\alpha$ is set at 0.6, which option should the owner choose?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "Hurwicz Score = $\\alpha(\\text{Best}) + (1-\\alpha)(\\text{Worst})$. Scores: New Store $= 0.6(300) + 0.4(100) = 220$; Expansion $= 0.6(250) + 0.4(120) = 198$; Online $= 0.6(400) + 0.4(50) = 260$. The owner should choose the Online Platform.",
+            "module": 4
+        },
+        {
+            "question_id": "MOD4_Q7",
+            "question_text": "a. What is a decision tree, and how does it help in business decision-making? Explain the key components of a decision tree. How do probabilities influence decision trees?\nb. A retail company is deciding between Supplier A and Supplier B:\n• Supplier A: 80% chance of high-quality goods (profit ₹400k), 20% chance of defects (loss ₹100k).\n• Supplier B: 90% chance of high-quality goods (profit ₹350k), 10% chance of defects (loss ₹50k).\nUse a decision tree to determine the best choice.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "EMV for Supplier A $= 0.8(400) + 0.2(-100) = 320 - 20 = 300k$. EMV for Supplier B $= 0.9(350) + 0.1(-50) = 315 - 5 = 310k$. Since $310k > 300k$, Supplier B is the better choice based on Expected Monetary Value.",
+            "module": 4
+        },
+        {
+            "question_id": "MOD4_Q8",
+            "question_text": "A solar panel plant performs quality inspections. A random sample of 50 panels from a batch of 500 is tested. Rules: Defect < 2% → Approve; 2%-6% → Further testing (cost ₹150,000); $\\ge$ 6% → Reject (cost ₹600,000). Probabilities: P(<2%) = 0.60, P(2%-6%) = 0.30, P($\\ge$ 6%) = 0.10. Perform the following tasks:\n1. Construct a decision tree.\n2. Calculate the Expected Monetary Value (EMV) for this process.\n3. Recommend whether the company should implement further testing or rely on sample inspection only.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "EMV (Cost) $= 0.60(0) + 0.30(150,000) + 0.10(600,000) = 45,000 + 60,000 = ₹105,000$. The decision depends on the trade-off between the certain cost of further testing for that 30% segment versus the risk of shipping bad products or scrapping good ones prematurely.",
+            "module": 4
+        },
+        {
+            "question_id": "MOD4_Q9",
+            "question_text": "a. What is Statistical Process Control (SPC), and how does it improve quality management? Explain the difference between common cause variation and special cause variation in SPC.\nb. How do control charts help detect process deviations? Explain the three main components of a control chart?\nc. What is Six Sigma, and why is it important in manufacturing and service industries? How does Six Sigma (± 6σ limits) differ from a standard control chart (± 3σ limits)?\nd. A logistics company monitors package delivery times. Historical data: overall Mean Delivery Time ($\\bar{x}$) = 42 minutes, overall Standard Deviation (σ) = 4 minutes. Construct a control chart using ± 3σ limits.",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "UCL = $\\mu + 3\\sigma = 42 + 12 = 54$; LCL = $\\mu - 3\\sigma = 42 - 12 = 30$. Common cause variation is inherent in the system; special cause variation is due to external factors. SPC uses control charts to distinguish between these to maintain process stability.",
+            "module": 4
+        },
+        {
+            "question_id": "MOD4_Q10",
+            "question_text": "a. What is an $\\bar{X}$ - R chart, and why is it used in SPC? Elaborate the steps for constructing an $\\bar{X}$ - R chart? How are control limits calculated for $\\bar{X}$ and R charts?\nb. How does an $\\bar{X}$ chart help detect changes in process averages? How are control limits calculated for $\\bar{X}$ and R charts?\nc. What is a P chart, and when is it used? What type of data is required for a P chart?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "$\\bar{X}$-R charts track the mean and range of samples to monitor central tendency and variability of continuous data. P charts track the proportion of defectives in categorical (Pass/Fail) data, following a binomial distribution.",
+            "module": 4
+        },
+        {
+            "question_id": "MOD4_Q11",
+            "question_text": "a. What are the key benefits of Design Of Experiment (DOE) in a manufacturing environment? Explain the concept of factors, levels, and responses in DOE.\nb. A car manufacturer is testing the impact of paint type, drying time, and humidity on car paint durability. How can DOE help optimize the process?",
+            "question_type": "SUBJECTIVE",
+            "options": null,
+            "correct_option_label": null,
+            "explanation": "DOE systematically varies factors (paint type, time, humidity) to observe their effect on a response (durability). It identifies interaction effects that change-one-factor-at-a-time (OFAT) testing misses, allowing the manufacturer to find the optimal settings for maximum durability.",
+            "module": 4
+        }
+    ]
+}
