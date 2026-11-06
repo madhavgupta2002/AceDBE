@@ -210,3 +210,13 @@ textarea:focus-visible,
     transition-delay: 0s !important;
   }
 }
+
+/* Slim, dark native scrollbars everywhere (page, answer grid, dropdowns). */
+html {
+  color-scheme: dark;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #334155 transparent;
+}

@@ -129,7 +129,7 @@ export const SUBJECTS: Subject[] = [
     icon: 'BarChart3',
     aliases: [
       { batch: 1, code: 'DS21x', term: 2 },
-      { batch: 2, code: 'DS21x', term: 4 },
+      { batch: 2, code: 'DS41x', term: 4 },
     ],
   },
   {
