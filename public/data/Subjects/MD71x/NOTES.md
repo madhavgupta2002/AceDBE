@@ -2510,3 +2510,543 @@ When told **"The experts say..."**, ask:
 - **Manner of argument is part of the argument**; moral quality depends on **intention, context, and effect**.
 - Nyaya's **Udaharana** is structural, not decorative; Tarka allows **"let's explore what follows"** instead of "you are wrong."
 - Rigorous logic need not be aggressive: **clarify the issue while preserving the relationship**.
+
+# Module 7: Critical Thinking in Organisations and Society
+
+## 7.0 Module Introduction
+
+### 7.0.1 Introduction to the Module
+
+#### Key Concept
+- The module examines how **organisations use language** to make claims, express responsibility, and influence how others interpret their actions.
+- Aim: distinguish **genuine accountability** from **performative communication** by looking past persuasive language to the **structure supporting a claim**.
+- **Devil's advocacy** is used to challenge assumptions, test proposals, and reduce the risks of **groupthink** and **confirmation bias**.
+- The module then extends to **hustle culture, mental health, institutional responsibility, human judgement**, and the pressures that shape individual decision-making.
+- Common focus: **question confident claims, examine the evidence and accountability behind them, and make more thoughtful decisions** in organisational and everyday life.
+
+| Part | Focus |
+|------|-------|
+| **7.1** | Corporate statements: claim vs performance; the four criteria of accountability |
+| **7.2** | Devil's advocacy: testing reasoning and proposals before a decision is made |
+| **7.3** | Inherited narratives, hustle culture, pushing back, and rest; institutional responsibility |
+
+## 7.1 Organisational Language and Accountability
+
+### 7.1.1 Looking Beyond Corporate Statements
+
+#### Key Concept
+- Corporate statements can sound **reassuring, sincere, and decisive** while leaving very little that can be **checked**.
+- Core skill: notice the **gap between what a statement makes you feel and what it commits someone to doing**.
+- Learning outcomes:
+  - Tell a **claim someone is prepared to stand behind** from a statement that is **simply sounding good**.
+  - Recognise this difference in **organisational language, your own writing, and everyday arguments**.
+  - Use **devil's advocacy** to test an idea before committing to it.
+- Places where organisations make claims, persuade, and sometimes avoid saying what they mean: **press releases, mission and vision statements, public pledges, annual reports, and apologies**.
+
+#### Two Test Statements
+| Statement | Gut reaction | Critical question |
+|-----------|--------------|-------------------|
+| "We are committed to becoming the **most trusted company in our industry**." | Familiar; found in annual reports, mission statements, and post-scandal apologies | Has the organisation **actually claimed anything**, or only **performed the appearance of claiming** without real obligation? |
+| "Following this incident, we will **take full responsibility** and we'll **do better**." | More satisfying; **sounds like accountability** | Responsibility for **what, specifically**? |
+
+- Questions that reveal the gap in "take full responsibility":
+  - Is the **money returned** to the affected person?
+  - Is the person responsible **actually fired or merely reassigned**?
+  - Is the failed process **audited by someone outside the organisation**?
+  - Or does the sentence only produce the **feeling of accountability** while **maintaining the status quo**?
+- Applying evidence evaluation, fallacy-spotting, and bias recognition is harder on a **400-word corporate statement** that has passed many rounds of **committee and legal review** than on a clean classroom argument.
+
+#### Why Organisations Speak Differently From Individuals
+| Individual promise | Organisational statement |
+|--------------------|--------------------------|
+| "I'll have this done by **Friday**." | Passes through **managers, lawyers, and communications teams** before release |
+| Clear promise, **one responsible person** | Issued under an **entity name** (the company, the university, the board) |
+| Easy to hold accountable | Sounds like a firm promise because a large group stands behind it, but the **wording is designed to avoid holding any one person accountable** if it fails |
+
+#### Example: The Apology That Changes Nothing
+- A **composite, made-up case** (drawn from several real situations, not one specific company).
+- A consumer products firm finds that a product has **caused injuries**. Within **48 hours** it states: *"We are deeply sorry for any harm caused. The safety of our customers is our highest priority, and we are taking this matter extremely seriously."*
+
+| Element | In the vague apology? |
+|---------|----------------------|
+| **Recall** | Not mentioned |
+| **Compensation** | Not mentioned |
+| **Independent investigation** with results visible to outsiders | Not mentioned |
+| **One executive** answerable for the outcome | Not mentioned |
+
+- Every sentence could be said **truthfully on a best day and a worst day**, which is the problem.
+- **A statement that is true in every possible world tells you nothing about which world you are in.**
+
+| Vague version | Accountable version |
+|---------------|---------------------|
+| "Deeply sorry... safety is our highest priority... taking this extremely seriously." | "We are **recalling all units sold since March**, offering **full refunds** and commissioning an **independent safety audit**, whose full findings we will **publish within 90 days**. Our **chief operating officer is accountable** for completing the recall." |
+| Warm in tone, **no structure** | Colder in tone, but **named recall, refunds, audit, deadline, and owner** |
+
+- **Warm-sounding words are not the same as accountability with structure.**
+
+#### Washing: The Pattern Across Institutions
+- The problem is **not unique to business**; it appears in **schools, colleges, and the mental health and health industries**.
+- Business ethics scholars name it with "**-washing**" terms.
+
+| Term | Meaning |
+|------|---------|
+| **Greenwashing** | Environmental claims that create an **impression of sustainability** while covering up harmful practices on the ground |
+| **Diversity washing** | Diversity statements **not matched by changes in hiring or promotion** |
+| **Safety washing** | Safety pledges that **misrepresent general performance improvements** |
+| **Empty corporate apologies** | Express **regret without promising concrete action** |
+
+- The problem is **not always that an organisation is lying**: words may be **technically true** yet create an **impression of commitment** that actions do not support.
+- Critical thinkers spot the **gap between what organisations say and what they are prepared to do**.
+
+#### Why This Matters
+- Most people will either **produce organisational speech** (a pitch, press release, all-hands email) or **receive it** (as an employee, customer, investor, or citizen).
+- Without this skill you risk **trusting polished organisations that deliver little** and **overlooking less polished ones that make clearer, measurable promises**.
+- As a drafter, the skill helps you make **genuine, accountable commitments**.
+- Being specific and clear **seems riskier than vague, polished language**, but it **builds greater trust in the long run**.
+
+### 7.1.2 The Four Criteria of Accountability
+
+#### Definition: Claim vs Performance
+| Term | Definition |
+|------|------------|
+| **Claim** | A statement that is **specific enough to be checked**, where **someone stands to lose something identifiable** if it turns out false |
+| **Performance** | A statement that uses the **grammar and emotional register of a claim** (confident, declarative, often moral in tone) **without the underlying structure** that would hold someone accountable later |
+
+- The distinction is borrowed, loosely, from the **philosophy of language**.
+
+#### Speech Act Theory (J.L. Austin)
+- Developed by philosopher **J.L. Austin** in the **1950s**; lectures later published as ***How to Do Things With Words***.
+- Insight: **not all sentences work the same way**.
+
+| Type | What it does | Examples |
+|------|--------------|----------|
+| **Constatives** | **Describe the world**; can be straightforwardly **true or false** | "It is raining." "The meeting starts at 3:00 PM." |
+| **Performatives** | Do not describe; they **do something** when said **under the right conditions** | "I now pronounce you married." "I apologize." "I promise I'll be there." |
+
+- Key insight: **words do not automatically make things happen**.
+- **Felicity conditions** = the real-world conditions that must be met for a performative to work as intended.
+
+#### Example: The Wedding Officiant
+| Case | Words | Felicity conditions | Result |
+|------|-------|--------------------|--------|
+| Wedding officiant | "I now pronounce you married" | Both people **consented**; officiant is **authorised**; **legal requirements** met | Works |
+| Child playing wedding in the backyard | Identical words | Conditions **not met** | Means **nothing** legally |
+
+- The words are identical; the **circumstances** are not.
+- Applied to organisations: "We are committed to becoming the most trusted company in our industry" sounds like a promise. Ask what makes it real: a **plan, accountability, and a way to measure progress**. Without them it is like the **backyard wedding**: convincing words lacking the structures that give them meaning.
+
+#### The Four Criteria Framework
+- A practical tool for analysing organisational communication, moving from theory to the ground.
+
+| # | Criterion | Test question | Example |
+|---|-----------|---------------|---------|
+| 1 | **Specificity** | Is there a **clear, measurable target** or just a vague aspiration? | What does "most trusted" mean? How measured and by when? |
+| 2 | **Verifiability** | Can **someone independently check** delivery rather than take the organisation's word? | A named instrument or independent party |
+| 3 | **Named ownership** | Is a **specific person, team, or role** responsible, or is responsibility vaguely stated with "the company"? | "Our VP of operations" |
+| 4 | **Consequences for failure** | Does the organisation stand to **lose something tangible** if it fails? | Funding, a bonus, a contract, or **public credibility** |
+
+- **All four present** = a **claim** (carries the evidence and accountability that can be evaluated with logic and evidence).
+- **Most absent** = a **performance** (designed to produce a **feeling of commitment without its structure**).
+
+#### Worked Example: Two Sentences in the Same Genre
+- **Sentence 1:** "We are committed to becoming the most trusted company in our industry."
+- **Sentence 2:** "We will reduce customer complaint resolution time from **5 days to 2 days** by the end of **quarter 3**, and our **VP of operations** will report progress **publicly each quarter**."
+
+| Criterion | Sentence 1 | Reason | Sentence 2 | Reason |
+|-----------|-----------|--------|-----------|--------|
+| Specificity | **Fails** | "Trusted" is undefined | **Passes** | 5 days to 2 days is a number |
+| Verifiability | **Fails** | No instrument named; no one tests the truth | **Passes** | Resolution time is measurable from support tickets |
+| Named ownership | **Fails** | "We" as the whole company; no one person | **Passes** | VP of operations |
+| Consequences | **Fails** | Nothing attached; no one loses anything | **Passes** | Quarterly public reporting makes a miss visible |
+
+- Sentence 2 is **not more sincere or persuasive in tone**; it is **easier to verify**.
+- **Accountability depends on the structure of a claim, not on how convincing it sounds.**
+
+#### Practice: Scoring Three Statements
+| Statement | Score | Verdict | Reasoning |
+|-----------|-------|---------|-----------|
+| 1. "We are dedicated to creating a culture of inclusion where everyone can thrive." | **0 of 4** | **Performance** | No target, no check, no owner, no cost |
+| 2. "By December 31st, we will publish the average pay for every job level broken down by gender and our CFO will sign the report." | **4 of 4** | **Claim** | Specific; anyone can verify; **CFO** is named owner; a **missed deadline or refused signature** would be conspicuous |
+| 3. "Our products are made with care for the planet." | Fails **specificity and verifiability** | Performance | Almost impossible to verify what "care for the planet" means |
+
+- **Converting a performance into a claim:** replace "care for the planet" with "**packaging that is 80% recycled material by next year and is audited by a third party**": one sentence of editing.
+- The skill to learn: take a vague line and make it **verifiable and checkable**.
+
+#### Why Organisations Default to Performance
+| Reason | Explanation |
+|--------|-------------|
+| **Incentives** | A vague promise earns **almost as much public goodwill** as a specific one, **without the risk of being held to a measurable target** |
+| **Audience expectations** | Phrases like "deeply committed" and "take full responsibility" **sound sincere and reassuring** even with no concrete action; corporate communication has evolved to favour language that **inspires confidence but demands little in return** |
+| **Genuine uncertainty** | The organisation may not yet have worked out what it can realistically promise; this differs from **deliberately evading responsibility**, but readers **cannot tell the difference from the wording alone** |
+
+#### Three Common Mistakes
+| # | Mistake | Correction |
+|---|---------|------------|
+| 1 | **Confusing length with specificity** | A long, jargon-heavy line ("We leverage a **holistic stakeholder-centered framework** to drive **sustainable outcomes**") can say very little; specificity means a claim that **can be tested**, not technical language |
+| 2 | **Treating verifiability as all-or-nothing** | Ask whether **someone other than the organisation** could verify it; a **third-party audit** is stronger evidence than self-reported progress; treat verifiability as a **scale**, not yes/no |
+| 3 | **Mistaking honesty for vagueness** | "We don't yet know how to meet this target. Here's how we'll work it out and by when we will report back" is honest **and accountable** (sets out a **process, responsibility, and deadline**); **uncertain does not mean vague** |
+
+#### Avoiding Overcorrection
+- Questioning organisational claims does **not** mean assuming they are all empty promises; that is **just as uncritical** as believing everything an organisation says.
+- Many claims **genuinely pass all four conditions**; many people inside organisations work, often **against internal resistance**, to replace vague language with specific, accountable commitments before release.
+- Apply the four tests **every time**:
+  - Is the claim **specific**?
+  - Can it be **verified**?
+  - **Who is responsible**?
+  - What are the **consequences** if it is not delivered?
+- **Do not replace blind trust with blind distrust**: test the claim and let the **evidence guide judgement**.
+
+## 7.2 Devil's Advocacy
+
+### 7.2.1 Devil's Advocacy in Practice
+
+#### Key Concept
+- Testing **language** is one part of critical thinking; testing the **reasoning that produces it** is another.
+- Devil's advocacy is a **structured way to question assumptions, expose weaknesses, and guard against groupthink**.
+- Challenge: not only to have objections in the room, but to ensure they are **seriously considered**.
+
+#### Definition: Devil's Advocate (Advocatus Diaboli)
+- Latin term from the **Catholic Church's canonisation process**.
+- For centuries the Church formally appointed an **advocatus diaboli** whose entire job was to **argue against a candidate's sainthood**: dig up evidence against the candidate's virtue, challenge every reported miracle, and make the **strongest possible case against** canonisation.
+- This was **not cynicism or self-doubt**; it reflected an institutional understanding:
+  - **A conclusion that has never been seriously attacked has not been tested; it has only been agreed with.**
+  - **Agreement by everyone does not make an idea sound.**
+
+#### Groupthink and the Bay of Pigs (1961)
+- Psychologist **Irving Janis** called the organisational phenomenon **groupthink**; a key example was the **1961 Bay of Pigs invasion**.
+- Facts of the case:
+  - US President **Kennedy's** advisers supported a plan to **overthrow Cuba's Fidel Castro** using **Cuban exiles trained and backed by the CIA**.
+  - The plan was **deeply flawed**: it **underestimated Castro's forces** and assumed the invaders would **spark a popular uprising** by Cuban citizens.
+  - The uprising **did not happen**; the invasion **ended in disaster**.
+- The decision was **not made by uninformed people**: the room had **very experienced advisers** with reasons both to back and to question the plan.
+- Once the group moved confidently in one direction, **raising doubts became difficult**:
+  - People may **assume someone else has already spotted the problem**.
+  - They worry that challenging consensus will make them look **disloyal or out of step**.
+- **Janis's danger:** a room full of capable people can **overlook serious flaws**, not because nobody saw them, but because the group makes it **harder for an individual to speak up**.
+
+#### Devil's Advocacy as a Structural Fix
+- Instead of hoping someone feels brave enough to dissent, **formally assign the role of dissent** to one person or team.
+- Effects:
+  - Disagreement is **no longer a personal risk**; it is part of the **assigned role**.
+  - The advocate is **not being difficult or disloyal**; they are doing what the team asked.
+  - Everyone knows **questioning is part of the process**.
+- Groups often decide better when someone is **explicitly asked to challenge the dominant view**.
+- The advocate **need not be right about every objection**; the role is to make the team **explain its reasoning, examine assumptions, and consider what might go wrong**.
+- Value lies in making sure the team **asks questions it might otherwise ignore**.
+
+#### Link to the Four Criteria
+- Devil's advocacy **puts the four-criteria test into practice**.
+- Challenging "We are committed to becoming the most trusted company in our industry" produces natural questions: **Committed how? Measured how? Who is responsible? What happens if the company fails?**
+- Examining a corporate claim checks whether words amount to a **real commitment**; challenging a proposal in a meeting does the same thing **aloud with others in the room**.
+
+#### Charlan Nemeth: In Defense of Troublemakers
+- Psychologist known for research on **dissent, minority influence, and independent thinking**; her essay ***In Defense of Troublemakers*** is part of the pre-read.
+- Key distinction: **asking someone to play devil's advocate** vs **listening to someone who genuinely disagrees**.
+
+| Assigned opposition | Genuine dissent |
+|---------------------|-----------------|
+| People may treat it as a **formality**, **defend their original position even more strongly**, and move on without seriously considering alternatives | Makes us **look beyond the position the group has already settled on** |
+| Useful, but not always as effective as intended | Can be more effective in encouraging **independent thinking** |
+
+- Even a dissenting argument that **turns out to be wrong** can prompt the group to **examine assumptions and consider alternatives** it had missed; do **not dismiss it simply because it challenges the majority view**.
+- The bigger task: build a **team culture** where concerns can be raised without being labelled **difficult, disloyal, or not a team player**.
+- The point is **not to manufacture an argument** but to **make room for questions that might not otherwise be asked**.
+
+#### Timing of Scrutiny
+| Moment | What is possible |
+|--------|------------------|
+| **After** a decision or statement is out | Spot the gap between words and actions, when **little can be done** |
+| **Before** the decision is finalised or the statement goes public | Close the gap, but it is **harder**: it requires raising **uncomfortable questions** and hearing them from others under pressure to agree and move on |
+
+- The goal of a critical thinker is **not** to always agree or always disagree, but to help create conditions where **important questions can be asked, competing explanations examined, and decisions made on stronger grounds than simple consensus**.
+
+#### Three Common Objections
+| Objection | Response |
+|-----------|----------|
+| **"Does this slow down decision-making?"** | Slower in the short run, but compare **an hour of structured dissent** with the cost of releasing a commitment you **do not intend or cannot keep**; devil's advocacy is **cheap insurance** |
+| **"Does it demoralise the team?"** | It can, if done carelessly; it must be **constructive**. When dissent ends with a **better proposal** (not one with no commitment or named ownership), teams value the role; when it ends **only with a list of problems**, teams become fearful and demoralised |
+| **"The advocate does not believe what they argue; is it fake?"** | The point is the **quality of the objections**, not the advocate's sincerity; a good objection is equally informative either way. **Assigned dissent can be better than volunteered dissent** because the advocate need not own the objection personally and can **press harder than a worried colleague** would |
+
+#### Limitation: Devil's Advocacy Can Become a Performance
+- An assigned challenger raises a few objections and is **overruled**; the team proceeds **reassured that it has considered alternatives**, even though **nothing changed**.
+- Raised again in 7.2.2 as a condition for the technique to work.
+
+### 7.2.2 Devil's Advocacy: Putting Claims to the Test
+
+#### Key Concept
+- Once disagreement is treated as **part of good reasoning rather than disruption**, proposals can be examined from **more than one position**.
+- Method: build the **strongest honest case**, then **switch perspectives** and test it with the four criteria, then **rewrite** to make it more accountable.
+- Purpose: **not to weaken a proposal** but to make it **stronger before others are asked to trust it**.
+- At work, there may be **no assigned devil's advocate**; sometimes you must **play the role yourself**.
+
+#### Scenario: Public Commitment on Women in Leadership
+- A mid-sized company is preparing its next **investor and public relations update**.
+- Proposal: *"We should publicly announce a commitment to reach **50% women in leadership roles by 2027** and feature it prominently in our next **earnings call**."*
+
+| Possible gains | Expectations the target creates |
+|----------------|---------------------------------|
+| Investors want evidence that leadership diversity is a **genuine priority** | What counts as a **leadership role**? |
+| Prospective employees want to see **opportunities to advance** | Can the company **meet the target**? |
+| A **clear, time-bound target** shows ambition and gives something concrete to work towards | What happens if it **falls short**? |
+
+#### Round 1: The Strongest Honest Case
+- Role: a member of the proposal team who genuinely believes in the initiative; **do not deliberately make the proposal weak**.
+- Sample argument:
+  - Investors and strong candidates ask the same question: is leadership diversity a **genuine priority** or **something we say in corporate communications**?
+  - A public commitment to 50% women in leadership by 2027 sends a **clear signal** of intent to make progress.
+  - It is **not a general statement of valuing diversity** but a **time-bound target**.
+  - Evidence of momentum: "We have **already hired 3 women into senior positions** this year."
+- Why it persuades: it **connects the proposal to stakeholder expectations**, presents a **specific target**, and offers **an example of recent progress**.
+- Caution: a statement that a company is "committed" may sound decisive but **does not say who is answerable for the outcome**. Exercise: name **one role that could own the commitment** and **one responsibility that should come with it**.
+
+#### Round 2: Switch Perspective and Apply the Four Criteria
+| Criterion | Questions the devil's advocate asks |
+|-----------|-------------------------------------|
+| **1. Specificity** | Does the company promise 50% women in leadership by 2027? What does "**leadership**" mean: the **executive committee only**, **senior management**, or **everyone at manager level and above**? |
+| **2. Verifiability** | How will **investors, employees, or journalists** know whether it was achieved? Will the company **publish relevant figures**? Will anyone **independent** verify the results? |
+| **3. Named ownership** | Who delivers the target: the **chief people officer**, the **executive leadership**, or a **particular business unit**? |
+| **4. Consequences for failure** | If the company reaches only **38% by 2027**, must leadership **explain the shortfall publicly**? Are **executive incentives linked to progress**? Is a **corrective action plan** required? |
+
+- A missed target does **not automatically mean dishonesty**: hiring and promotion are affected by **unpredictable circumstances**.
+- But a meaningful commitment should **specify how the company will account for its performance**, even if lower than expected.
+- The original proposal was **not necessarily a bad idea**; the problem arises when a public promise is made **without clarifying meaning, measurement, responsibility, and response to shortfall**.
+
+#### Round 3: Rewrite to Be More Accountable
+- Finally, **rewrite the proposal to make it more accountable**, using what the four-criteria test exposed.
+
+#### Evaluating After vs Before Publication
+| Timing | Outcome |
+|--------|---------|
+| Evaluating a claim **after publication** | Identify the **gap** between words and commitment |
+| Challenging a proposal **before approval** | **Close the gap** before the announcement becomes public |
+
+- **Nemeth's point (reinforced):** disagreement improves thinking by encouraging people to **consider alternatives and question assumptions** otherwise taken for granted.
+- The aim is **not to disagree for its own sake** but to ensure **a team's confidence does not prevent it from examining weaknesses in its own reasoning**.
+- Be willing to **play the devil's advocate yourself** and to **listen when someone else plays it for you**.
+- **Key takeaway:** do not stop at whether a claim **sounds convincing**; ask **what it commits the organisation to doing**, and **test that commitment before the decision is made**. **Devil's advocacy is a habit, not a one-time exercise.**
+
+#### Making Devil's Advocacy Work
+- Failure mode: objections are raised, **politely acknowledged**, and everyone proceeds as planned; the group feels it considered alternatives but **nothing really changed**.
+- For it to work, objections must receive **serious consideration**. Organisations can support this by:
+  - **Rotating** the responsibility for challenging proposals.
+  - **Requiring responses** to significant objections.
+  - **Allowing further review** when important questions remain unanswered.
+- Goal: **not to manufacture disagreement** but to ensure people can **question decisions and their questions can make a difference**.
+
+#### Applying the Method to Your Own Work
+| Step | Action |
+|------|--------|
+| 1 | Identify your **central claim** (essay, business proposal, pitch deck, team recommendation) |
+| 2 | Apply the **four-criteria test**: **Specificity** (is the claim clear?), **Verifiability** (what evidence would show it is true?), **Named ownership** (who is responsible?), **Consequences** (what if the commitment is not met?) |
+| 3 | **Play devil's advocate**: challenge your strongest argument. What **assumption might be wrong**? What **could go wrong**? What **evidence would change your mind**? |
+| 4 | **Rewrite one vague claim** to be more precise and accountable |
+
+- The aim is **not to find fault with everything** but to **test your reasoning before asking others to accept it**.
+
+#### The Two Tools as a Pair
+| Tool | Purpose | Grounding |
+|------|---------|-----------|
+| **Four-criteria test** (specificity, verifiability, named owner, real cost of failure) | Tell a **genuine organisational claim** from an **empty performance** | J.L. Austin's **constative vs performative** distinction and **felicity conditions** |
+| **Devil's advocacy** | Structural technique to test reasoning and proposals | Church's **advocatus diaboli**; Janis's **groupthink**; Nemeth's work on **dissent** |
+
+- Both tools do the same underlying job: **refuse to let confident, polished, emotionally satisfying language do the work of evidence and accounting**.
+- The same habit of questioning matters even more when the claims shaping decisions come not from companies but from **families, institutions, and society** (7.3).
+
+## 7.3 Society, Hustle Culture, and Institutional Responsibility
+
+### 7.3.1 Who Decided This for You?
+
+#### Key Concept
+- We inherit not only traditions and values but **expectations, ambitions, and ideas of what a successful life ought to look like**.
+- Voices of **family, society, and institutions** can become so familiar that we **mistake them for our own**.
+- First step towards a truly independent choice: **recognise whose voice has been guiding it**.
+- Discussion context: a panel of **young working graduates** with the course instructor on **mental health, hustle culture, and institutional responsibility**; critical thinking examines **how claims become commonsensical** and part of familiar narratives.
+
+#### Narratives Internalised: Panel Experiences
+| Experience | Narrative or pressure | Lesson |
+|------------|----------------------|--------|
+| **Early career choice** | In school you must **decide what you want to become** and choose subjects accordingly; the path gets **engraved**; after entering the field you may realise it is not for you, yet pivoting is hard because you are told you **"made for this"** and **"picked it yourself"** | Pressure comes from **both family and institution**; institutions present only **a few limited paths**; it is **okay to change a decision made earlier** |
+| **Freedom with a standard** | Parents allowed free choice of study and career, provided one is **strong in morals and ethics**; the one request was **"Whatever you do, do it 100%"** so there are **no regrets** | Support can coexist with a high personal standard |
+| **Marks-based tiers** | Choice of **science, commerce, or arts**: **above 90%** go to science, **70 to 90%** to commerce, **below 70%** arts is the only place left | Parents did not force a course, but the **societal factor** is so influential that people **overlook other options**; others who followed this mindset into science **regretted it** |
+| **Emotionally charged family** | Weak at mathematics, so **humanities** was the only option (the rest need maths); parents, who are good at maths, were **against it** | Convincing family is hard because of the **emotional charge** |
+
+- The instructor links these to **echo chambers** (also called an **epistemic bubble**): surrounding oneself with like-minded people so that the same knowledge is repeated ("your marks are high, so you must be a scientist or doctor"). They are **hard for young people to break out of**.
+
+#### Making an Independent Decision
+- **Be self-aware**: it does not come internally; look at what is going on, what happened previously, and what can happen.
+- **Communicate**: ask the **right questions to the right people**.
+- The most important question to ask someone: **"Was it worth it?"**, i.e., despite the hard work, tension, and pressure (present in any field), is the field **actually working out and making you happy**?
+- If **everyone in the chosen cohort** said they wished they had stayed in science:
+  - First **reconsider the cohort** you chose to ask.
+  - Then **do your own research**, because not everyone gives the same answer; either the field is perfect (rare) or you are **asking the wrong cohort**.
+- Instructor's point: develop the ability to **ask the right questions, weigh options, and reach a decision you can stand behind and own**; not "**four out of five people tell me this, so I'll do it**".
+- As the habit grows, **credibility** grows because you are **honest and make your own decisions**.
+
+#### Critical Thinking in an Emotionally Charged Setting
+| Practice | Detail |
+|----------|--------|
+| **Listen, not just hear** | Get to the **actual problem** |
+| **Resist the impulse to solve first** | Parents, teachers, and others in authority feel they know the problem and **rush to solutions** before listening; first **figure out what the problem is** |
+| **Ask for their side** | e.g., "**Why is it that you want me to do this?**" |
+| **Stay true to yourself** | State "this is what I am happy doing" and **be consistent**; consistency **builds credibility** |
+
+- Voices competing for attention: **parents, school, college, peers, and social media**, where **life coaches** say "slow down, listen to your inner self" while **hustle-culture voices** say "grind, hustle, hustle"; deciding for yourself amid this is a major societal problem.
+
+### 7.3.2 Pushing Back
+
+#### Key Concept
+- Agreement is easy; **questioning what everyone accepts takes courage**.
+- Culture often celebrates **constant effort, unquestioned ambition, and the relentless pursuit of more**: familiar phrases become **principles**, expectations become **obligations**, and **exhaustion is mistaken for achievement**.
+- Independent thinking is not always about finding another answer; it can begin with **questioning the one everyone else has accepted**.
+
+#### Hustle Slogans as Untested Premises
+- Common slogans:
+  - "**Sleep when you're dead**"
+  - "**Grind now, shine later**"
+  - "**If you're not exhausted, you're not trying hard enough**"
+- These are **bundles of claims (premises) never tested, examined, or analysed**; repetition makes them seem **logical and commonsensical**, so we **internalise** them.
+- The big claim: **you need to hustle in order to be successful**.
+
+#### Testing the Hustle Claim: Panel Observations
+- We do **not have to work hard for everything**; hustle culture suggests that if you are not working hard you will not get it, for every single thing.
+- The promise "**just one last push, then you will enjoy**" ends in **exhaustion** and the enjoyment **never comes**, especially when the effort goes to something obtainable more easily.
+- **Work hard vs work smart**:
+  - Working hard seems built into the curriculum (**deadlines and pressure**); working smart is not, because it is **context-dependent** (e.g., sometimes use AI tools, sometimes do it yourself, as in making slides for a video).
+  - Doing things smarter and faster can **increase pressure to do more work**.
+  - **Longer hours do not necessarily mean quality work.**
+  - **Over-reliance on AI** can help to patch things up but **backfires where the work is very context-dependent**, since the tool does not know the context; relying on it can displace one's own **experience and creativity**.
+
+#### Human Judgement Under Pressure
+- Situation: **five people give different advice**, each with possible **agendas, biases, and ways of thinking**, plus pressure to decide quickly because of hustle culture.
+- Panel response: realise **when to step back** and view the problem from an **outside perspective**; a **fresher perspective** reveals angles hidden within one context; **return to the issue** if time allows.
+- The instructor asked whether panellists could say "I need some time to think critically about this" under pressure to deliver a decision (e.g., choosing a research topic).
+
+#### Pushing Back on Authority: The Thesis Topic Example
+- A professor was **adamant** that the student research a topic **favourable to the professor** (whose name would appear on the paper), or suggested an AI-related topic because AI was prominent.
+
+| Student | Approach |
+|---------|----------|
+| **Psychology background** | Explained she uses **AI only when necessary rather than relying on it completely**, wanted to **keep the human connect**, and did not want to follow the bandwagon; **stepped back and took her own decision** rather than being influenced |
+| **Another student** | Told the professor, "with all due respect," that she was **not yet at the stage** to go that deep, since the topic needs an **insane amount of subject expertise**; noted that heavy AI use would **minimise sustainability, her own knowledge development, and her sense of accomplishment** in writing a first paper; it was a **long, tasking procedure** to convince |
+
+#### Negotiating Expectations
+- **AI cannot negotiate on your behalf**: it can draft a nicely worded email, but **in front of a person of seniority** you must convince them and judge their **mood and willingness to compromise or talk**.
+- Pushing back is **tricky and difficult**; enter the space knowing this.
+- Steps for articulating a position:
+  - **Analyse what you are going through**: distinguish "I do not want to do this", "I am not interested", and "I am **burnt out**"; recognising your emotions helps you analyse the situation and **articulate it better, without missing key points**.
+  - **Take a step back** before speaking.
+  - Have **all the relevant facts** ready.
+  - The **other side must be receptive**; the overall **environment** matters.
+
+#### Institutional Responsibility
+- Students are stuck **between a rock and a hard place**: they invested **money and effort**, must **complete the thesis to graduate**, and face **institutional requirements**.
+- Institutions need **protections** so that students already facing **burnout and pressure** are not burdened further by the **biases, aspirations, and desires of institutional members**.
+- Another claim challenged: "**just work passionately, put your heart into it, and you will get what you want**"; the panel's experience shows this is **not really true** because of **internal and external forces**:
+  - **Cultural** forces: people's opinions, beliefs, values, attitudes, prejudices, biases.
+  - **Personal baggage**: your own attitudes and biases about what you can or should do.
+  - A continuing process of **give and take, negotiation, wins and losses**.
+
+### 7.3.3 Permission to Rest
+
+#### Key Concept
+- In a world that never stops, the hardest thing may be **giving yourself permission to pause**.
+- Rest can begin to feel like something that must be **earned**; we measure days by what we accomplish, **overlooking what it costs to keep accomplishing it**.
+- Questions raised: Is **slowing down the same as falling behind**? Can rest be a **conscious choice** rather than a reluctant response to exhaustion? What responsibility do **workplaces and institutions** have in creating space for it?
+- Rest is looked at **beyond individual indulgence**: the value of **strategic pauses**, the pressures that make them difficult, and building **healthier relationships with work and productivity**.
+- A meaningful life is **not measured only by how much we accomplish**, but by how thoughtfully we **make room to live it**.
+
+#### Why Strategic Rest Is Hard
+| Pressure | Detail |
+|----------|--------|
+| **Constant bombardment** | Parents, larger family ("WhatsApp uncles and aunties", "WhatsApp University"), teachers, professors, peers, workplace bosses, and social media |
+| **Rest not seen as an option** | Panel response: strategic rest is often **not considered an option** at all |
+| **Race from childhood** | One exam after another (class 10 boards, class 12 boards, university entrance exams such as JEE and NEET); from the start you feel far behind and **struggle**; **rest was never a concept** |
+| **Guilt and FOMO** | Taking rest brings guilt: "Am I leaving something behind? Losing out?"; people **trade off rest** and let it take the back seat |
+
+#### Defining Strategic Rest
+- First **understand what strategic rest does for you**.
+- It means different things to different people:
+  - **Logging off and plugging out fully**.
+  - **Recalibrating one's own expectations**.
+
+#### FOMO and JOMO
+| Term | Meaning |
+|------|---------|
+| **FOMO** | **Fear of missing out**; drives people to skip rest |
+| **JOMO** | **Joy of missing out**; the counter-concept introduced by the instructor |
+
+#### Institutional Responsibility for Wellbeing
+- There are **real repercussions**, mental and physical, of overwork.
+- Research cited: employee wellness efforts often become mostly "**washing**" (done because organisations have to) rather than genuine support.
+- Panel view on making wellness programmes work:
+  - Wellness programmes and free counselling are **necessary**, but if they fail, find the **root cause**.
+  - **Providing the resource is not enough**; people must be **open to accessing it**.
+  - **Create awareness** about why the system exists.
+  - Make sure it is **not stigmatised** in the office. Example: if the counselling area is separate yet visible, everyone knows who attends and **colleagues may stigmatise** it; when few people around you ask for help, you are **pushed back from asking**.
+  - **Bridge the gap between giving the resource and accessing it.**
+
+#### Auditing Your Own Work
+| Method | How it works |
+|--------|--------------|
+| **Time tracking** | For the first two weeks of knowing the workload, track **what takes how much time** and whether actual work is **impeded by other activities**; from the next week set a **schedule and targets** |
+| **Three-question check-in** | After each task ask **where I lacked, what I did well, what I can improve**; e.g., if working late, was it my problem or **was I unable to say no**? (Used instead of organiser tools) |
+| **Weekly metrics** | At the end of the work week record **tasks assigned, how much was finished in what time, other factors, how much time it took, how much rest or log-off time**, and its **effect on productivity** |
+| **Input vs output** | Compare **input and output**: if 40 hours are worked, **how much value was created**; set an **ideal range** for yourself |
+
+- Instructor's note: audits help young professionals gain **credibility to do things on their own terms**, over a long journey.
+
+#### Late Nights and Unreasonable Requests
+- Some situations (late nights, weekends) **cannot be fully controlled**.
+- Early in a career you have **little say over time or work**; reasonable requests are met, and sometimes even unreasonable ones, because **much is not visible to you**: **institutional pressures** and **several hierarchies** through which a decision is passed down may be unknown at a junior level (e.g., a report requested by 11:00 PM).
+- Good practice for those who assign work: **always give the reason** ("I need this by 11:00 PM because of this reason"); it takes about **two extra minutes** and makes the request reasonable. Most people want their teams to succeed and do a good job.
+- Sometimes you simply accept: **"it's my job."**
+
+#### The Support Ecosystem
+- A major factor in recovering from a struggle and breaking through is the **support around a person**; without it, recovery is unlikely.
+- Both institutions and individuals must **fight the individualistic idea** that "if you pull yourself up by your bootstraps and do all the right things, things will work out": an **isolated way of thinking** about yourself and your place in society.
+- People are part of an **ecosystem**, not isolated atoms; you need others.
+- Where family support is absent, seek an ecosystem among **friends, peers, or online communities**: an attempt to be part of **something bigger**.
+- **All institutions, including family,** should make such communities available to young people, and young people should take advantage of them.
+
+## Quick Revision Summary
+
+### Key Definitions
+- **Claim:** a statement **specific enough to be checked**, where someone **stands to lose something identifiable** if it is false.
+- **Performance:** a statement with the **grammar and emotional register of a claim** but **without the structure** to hold anyone accountable.
+- **Constative (J.L. Austin):** a sentence that **describes the world** and can be **true or false**.
+- **Performative (J.L. Austin):** a sentence that **does something** when said under the right conditions ("I now pronounce you married", "I apologize", "I promise").
+- **Felicity conditions:** the real-world conditions needed for a performative to work (consent, authorisation, legal requirements in the wedding case).
+- **Four criteria of accountability:** **specificity, verifiability, named ownership, consequences for failure**.
+- **Greenwashing, diversity washing, safety washing:** claims or pledges creating an impression of commitment unsupported by action.
+- **Devil's advocacy:** formally assigned dissent to **test assumptions and expose weaknesses** before a decision (origin: Church's **advocatus diaboli**).
+- **Groupthink (Irving Janis):** group pressure toward consensus that makes it hard for individuals to raise doubts.
+- **Strategic rest:** a **conscious, purposeful pause**, which may mean **logging off** or **recalibrating expectations**.
+- **FOMO / JOMO:** **fear** of missing out / **joy** of missing out.
+
+### Important Relations
+- Four criteria all present = **claim**; most absent = **performance**.
+- **Accountability depends on the structure of a claim, not how convincing it sounds.**
+- Vague apology (no recall, compensation, independent investigation, or answerable executive) vs accountable apology (recall of units sold since March, full refunds, independent audit published within 90 days, COO accountable).
+- Complaint resolution example: **5 days to 2 days** by end of **quarter 3**, **VP of operations** reports publicly each quarter = passes **4 of 4**.
+- "Care for the planet" becomes a claim as "**packaging 80% recycled material by next year, audited by a third party**".
+- Bay of Pigs (**1961**): experienced advisers, **groupthink**, flawed assumption of a **popular uprising**, disaster.
+- Nemeth: **genuine dissent** can be more effective than **assigned opposition**; even wrong dissent prompts re-examination.
+- Women-in-leadership proposal: **50% by 2027**, tested on meaning of "leadership", verification, owner, and consequences of reaching only **38%**.
+
+### Must-Remember Points
+- A statement **true in every possible world** tells you nothing about which world you are in.
+- Organisations default to performance because of **incentives, audience expectations, and genuine uncertainty**.
+- Three mistakes: **length is not specificity; verifiability is a scale; honesty is not vagueness** (uncertain is not vague).
+- **Do not replace blind trust with blind distrust**; apply the four tests every time.
+- **A conclusion never seriously attacked has only been agreed with, not tested.**
+- Three objections to devil's advocacy: **slow** (answer: cheap insurance), **demoralising** (answer: be constructive and end with a better proposal), **fake** (answer: quality of objections matters; assigned dissent frees the advocate).
+- Devil's advocacy fails when it becomes **performance**; support it by **rotating the role, requiring responses to significant objections, and allowing further review**.
+- Challenge proposals **before** approval, when the gap can still be closed; **devil's advocacy is a habit, not a one-time exercise**.
+- Own-work method: identify the central claim, apply the four criteria, play devil's advocate (wrong assumption? what could go wrong? what evidence would change my mind?), rewrite one vague claim.
+- Independent choice starts with recognising **whose voice** has been guiding it; ask "**Was it worth it?**" and check whether you asked the **right cohort**.
+- In emotionally charged settings: **listen before solving**, ask "Why do you want me to do this?", and stay consistent.
+- Hustle slogans are **untested premises** that become commonsensical through repetition; **exhaustion is not achievement**; longer hours do not mean quality; **working smart is context-dependent**.
+- **AI cannot negotiate on your behalf**; recognise your own state (burnout vs disinterest), prepare facts, and consider the other side's receptivity.
+- Wellness programmes need **root-cause analysis, awareness, de-stigmatisation, and access**, not just provision of a resource.
+- Audit work through **time tracking, three-question check-ins, weekly metrics, or input vs output**.
+- Give **reasons** for urgent requests; build a **support ecosystem** rather than relying on bootstrap individualism.

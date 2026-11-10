@@ -1193,6 +1193,216 @@
       "correct_option_label": "D",
       "explanation": "Analytical thinking generates competing explanations and asks what evidence would distinguish them; both causes can operate at once, so test each rather than pick one early.",
       "module": 6
+    },
+    {
+      "question_id": "CLA_M7_Q01",
+      "question_text": "According to the claim versus performance distinction, what makes a statement a genuine claim?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "It is written in a confident, declarative and moral tone",
+        "B": "It is specific enough to be checked, and someone stands to lose something identifiable if it turns out false",
+        "C": "It has been reviewed by the legal and communications teams before release",
+        "D": "It is issued in the name of the organisation rather than an individual"
+      },
+      "correct_option_label": "B",
+      "explanation": "A claim carries the structure of accountability: it can be checked and someone stands to lose something tangible if it fails. A performance may sound confident or moral but lacks that structure.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q02",
+      "question_text": "In J.L. Austin's speech act theory, what is a sentence such as \"The meeting starts at 3 pm\" called?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A performative",
+        "B": "A felicity condition",
+        "C": "A constative",
+        "D": "A performance"
+      },
+      "correct_option_label": "C",
+      "explanation": "Austin called sentences that describe the world and can be true or false constatives; sentences that do something (\"I promise\") are performatives.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q03",
+      "question_text": "What are \"felicity conditions\"?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The real-world conditions that must be in place for a performative statement to work as intended",
+        "B": "The emotional effect a statement has on its audience",
+        "C": "The legal disclaimers attached to a corporate statement",
+        "D": "The conditions under which a statement can be proved false"
+      },
+      "correct_option_label": "A",
+      "explanation": "Performatives only work when certain real-world conditions hold (e.g. an authorised officiant and legal requirements for \"I now pronounce you married\").",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q04",
+      "question_text": "Which of the following is NOT one of the four criteria for telling a claim from a performance?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Specificity",
+        "B": "Named ownership",
+        "C": "Consequences for failure",
+        "D": "Emotional sincerity"
+      },
+      "correct_option_label": "D",
+      "explanation": "The four criteria are specificity, verifiability, named ownership and consequences for failure.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q05",
+      "question_text": "A Pune-based lending app's annual report states: \"We are committed to becoming the most customer-friendly lender in India.\" How many of the four criteria does this statement meet?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "None of the four",
+        "B": "Specificity only",
+        "C": "Named ownership only",
+        "D": "All four"
+      },
+      "correct_option_label": "A",
+      "explanation": "\"Most customer-friendly\" is undefined, there is no way to verify it, no named owner and no stated consequence for failure.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q06",
+      "question_text": "At a Coimbatore textile firm, several senior managers privately doubt a proposed expansion into Bangladesh. None of them speaks up: each assumes someone else has already flagged the risks, and none wants to appear disloyal. The plan is approved. Which phenomenon does this best illustrate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Confirmation bias",
+        "B": "Groupthink",
+        "C": "Devil's advocacy",
+        "D": "A failed felicity condition"
+      },
+      "correct_option_label": "B",
+      "explanation": "Irving Janis's groupthink: once a group moves confidently in one direction, people assume someone else has raised doubts and fear appearing disloyal.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q07",
+      "question_text": "Why did the Catholic Church formally appoint an Advocatus Diaboli in its canonisation process?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Because the Church doubted its own judgement in selecting candidates",
+        "B": "To speed up the process by settling objections early",
+        "C": "Because a conclusion that has never been seriously attacked has not actually been tested",
+        "D": "To represent the candidate's family during the proceedings"
+      },
+      "correct_option_label": "C",
+      "explanation": "The Advocatus Diaboli institutionalised dissent: a conclusion that has never been seriously attacked has not actually been tested.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q08",
+      "question_text": "A Kochi seafood exporter's website says: \"Our products are made with care for the oceans.\" The communications head wants to turn this performance into a claim with minimal editing. Which revision does this best?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "\"We are deeply and genuinely committed to protecting the oceans we depend on.\"",
+        "B": "\"By March 2028, 80% of our packaging will be made from recycled material, verified by an independent auditor whose findings we will publish.\"",
+        "C": "\"We leverage a holistic, stakeholder-centred marine sustainability framework across our value chain.\"",
+        "D": "\"Our founder personally cares about the health of India's coastline.\""
+      },
+      "correct_option_label": "B",
+      "explanation": "Only option B adds a measurable target, a deadline and independent verification; the others remain vague performances.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q09",
+      "question_text": "An analyst rates the line \"We leverage a holistic, stakeholder-centred framework to drive sustainable, future-ready outcomes across our value chain\" as highly specific because it is long and technical. Which common mistake is the analyst making?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Confusing length with specificity",
+        "B": "Treating verifiability as all or nothing",
+        "C": "Mistaking honesty for vagueness",
+        "D": "Replacing blind trust with blind distrust"
+      },
+      "correct_option_label": "A",
+      "explanation": "Mistake 1: a long statement full of jargon may promise nothing testable. Specificity means making a claim that can be tested.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q10",
+      "question_text": "How should verifiability be understood when evaluating an organisational statement?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "As a yes-or-no test: either a claim can be checked or it cannot",
+        "B": "As irrelevant if the organisation reports its own progress regularly",
+        "C": "As something only government regulators can establish",
+        "D": "As a scale, where checks by an independent party give stronger evidence than the organisation's own reporting"
+      },
+      "correct_option_label": "D",
+      "explanation": "Mistake 2 is treating verifiability as all or nothing; it is a scale, and independent verification is stronger than self-reporting.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q11",
+      "question_text": "A Gurugram consulting firm assigns a junior associate to argue against every proposal in its weekly strategy meeting. Over time, partners treat this as a box-ticking step, defend their original positions even more firmly and rarely change course. Which insight best explains this outcome?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Assigned dissent always produces better decisions than genuine disagreement",
+        "B": "Devil's advocacy demoralises teams and should be avoided",
+        "C": "Charlan Nemeth's point that simply assigning someone to argue the opposite can become a formality, whereas genuine disagreement more reliably prompts independent thinking",
+        "D": "The associate's objections were probably wrong, so the partners were justified in ignoring them"
+      },
+      "correct_option_label": "C",
+      "explanation": "Nemeth showed that assigned dissent can be treated as a formality, with people defending their original positions, while genuine disagreement more reliably stimulates independent thinking.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q12",
+      "question_text": "After overbilling hundreds of patients, a Hyderabad hospital chain issues this statement: \"We are deeply sorry for any inconvenience caused. Patient trust is our highest priority, and we are taking this matter extremely seriously.\" Why would a critical thinker consider this statement uninformative?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Because it contains statements that are factually false",
+        "B": "Because every sentence could be said truthfully whether or not the hospital takes any corrective action, so it reveals nothing about what will actually happen",
+        "C": "Because it is too short to be taken seriously",
+        "D": "Because it apologises before an investigation has been completed"
+      },
+      "correct_option_label": "B",
+      "explanation": "It is a performance: no specific action, owner, verification or consequence, so it is compatible with doing nothing.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q13",
+      "question_text": "A Jaipur solar panel manufacturer announces: \"We do not yet know how we will cut our factory emissions by 40%. Our head of operations will publish a costed plan by 30 June 2027 and report progress every quarter after that.\" A colleague dismisses this as vague corporate performance. Which assessment is most accurate?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The colleague is right, because admitting uncertainty means the statement fails specificity",
+        "B": "The colleague is wrong, because being uncertain is not the same as being vague, and the statement sets out a process, a named owner and a deadline",
+        "C": "The colleague is right, because no independent auditor is mentioned, so the statement is a performance",
+        "D": "The colleague is wrong, because the statement's honest tone makes it trustworthy"
+      },
+      "correct_option_label": "B",
+      "explanation": "Mistake 3 is mistaking honesty for vagueness: being uncertain is not the same as being vague when a process, owner and deadline are committed to.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q14",
+      "question_text": "At a Bengaluru edtech company, the assigned devil's advocate raises three serious objections to a product launch. The team thanks her, approves the plan unchanged and leaves reassured that it has \"considered the alternatives\". Which change would most directly stop this from recurring?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Remove the devil's advocate role, since it clearly does not work",
+        "B": "Choose a devil's advocate who personally believes the objections",
+        "C": "Limit the devil's advocate to one objection per meeting to save time",
+        "D": "Require formal responses to significant objections, rotate the role, and allow further review when important questions remain unanswered"
+      },
+      "correct_option_label": "D",
+      "explanation": "To stop devil's advocacy becoming a performance: rotate the responsibility, require responses to significant objections and allow further review when important questions remain unanswered.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q15",
+      "question_text": "A mid-sized company proposes publicly committing to \"50% women in leadership roles by 2027\". Which question tests the proposal against the specificity criterion?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Does \"leadership\" mean the executive committee only, all senior management, or everyone at manager level and above?",
+        "B": "Is the chief people officer or a particular business unit responsible for delivering the target?",
+        "C": "What happens if the company reaches only 38% by 2027?",
+        "D": "Will anyone independent of the company verify the results?"
+      },
+      "correct_option_label": "A",
+      "explanation": "Specificity asks whether the claim is clear (what counts as leadership). B tests named ownership, C consequences for failure and D verifiability.",
+      "module": 7
     }
   ]
 }

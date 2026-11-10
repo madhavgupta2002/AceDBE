@@ -1393,3 +1393,284 @@ $$\text{Cogent} = \text{Strong} + \text{True / well-supported premises}$$
 | Style | Manner of argument is part of the argument; judge by intention, context, effect |
 | Nyaya | Pratijna, Hetu, Udaharana, Upanaya, Nigamana; example is structural |
 | Tarka | Suppose the opposite, trace consequences, preserve the relationship |
+
+## MODULE 7: Critical Thinking in Organisations and Society
+
+---
+
+### Claim vs Performance: Looking Beyond Corporate Statements
+
+| Concept | Key Point |
+|---------|-----------|
+| **Core gap** | What a statement **makes you feel** vs what it **commits someone to doing** |
+| **Where claims appear** | Press releases, mission/vision statements, public pledges, annual reports, **apologies** |
+| **Individual vs organisation** | "I'll do it by Friday" = one accountable person; organisational wording passes through managers, lawyers, communications teams and is **designed to avoid holding any one person accountable** |
+| **Claim** | **Specific enough to be checked**; someone **stands to lose something identifiable** if false |
+| **Performance** | **Grammar and emotional register of a claim** without the **structure** to hold anyone accountable |
+| **"Take full responsibility"** | For what? Money returned? Person fired or reassigned? External audit? Or just the **feeling** of accountability? |
+| **Key insight** | A statement **true in every possible world** tells you **nothing** about which world you are in |
+
+| Vague apology | Accountable apology |
+|---------------|---------------------|
+| "Deeply sorry... safety is our highest priority... taking this extremely seriously" (**no** recall, compensation, independent investigation, or answerable executive) | **Recall** units sold since March + **full refunds** + **independent safety audit** published within **90 days** + **COO accountable** |
+| Warm, **no structure** | Colder, **has structure** |
+
+| "-Washing" | Meaning |
+|-----------|---------|
+| **Greenwashing** | Environmental claims giving an impression of sustainability while covering up harmful practices |
+| **Diversity washing** | Diversity statements **not matched** by hiring or promotion changes |
+| **Safety washing** | Safety pledges that misrepresent general performance improvements |
+| **Empty apologies** | Regret **without concrete action** |
+
+- Problem is **NOT always lying**: words may be **technically true** yet imply commitment that actions do not support.
+- Why it matters: you will **produce or receive** organisational speech; avoid trusting polished organisations that deliver little and overlooking plain ones with **measurable** promises. Specific wording **seems riskier** but **builds more trust long-term**.
+
+---
+
+### Austin's Speech Acts and the Four Criteria
+
+| Concept | Key Point |
+|---------|-----------|
+| **J.L. Austin** | *How to Do Things With Words* (1950s lectures) |
+| **Constatives** | **Describe** the world; **true or false** ("It is raining") |
+| **Performatives** | **Do** something when said under right conditions ("I now pronounce you married", "I apologize", "I promise") |
+| **Felicity conditions** | Real-world conditions for a performative to work |
+| **Wedding example** | Works if both **consented**, officiant **authorised**, **legal requirements** met; same words in a **child's backyard wedding** mean nothing |
+| **Application** | "Most trusted company" needs a **plan, accountability, measurement**; otherwise a backyard wedding |
+
+| # | Criterion | Test |
+|---|-----------|------|
+| 1 | **Specificity** | Clear **measurable target** or vague aspiration? |
+| 2 | **Verifiability** | Can **someone independently check** delivery? |
+| 3 | **Named ownership** | A specific **person, team, or role**, not just "the company"? |
+| 4 | **Consequences for failure** | Something **tangible** to lose (funding, bonus, contract, public credibility)? |
+
+- **All four = claim; most absent = performance.**
+- **Accountability depends on the structure of a claim, NOT how convincing it sounds.**
+
+| Statement | Score | Verdict |
+|-----------|-------|---------|
+| "Committed to becoming the most trusted company in our industry" | **0/4** ("trusted" undefined; no instrument; "we"; nothing lost) | Performance |
+| "Reduce complaint resolution time from **5 days to 2 days** by end of **Q3**; **VP of operations** reports publicly each quarter" | **4/4** (number; measurable from tickets; named VP; public quarterly report makes a miss visible) | Claim |
+| "Dedicated to a culture of inclusion where everyone can thrive" | **0/4** | Performance |
+| "By Dec 31 publish average pay per job level by gender; **CFO signs** the report" | **4/4** | Claim |
+| "Products made with care for the planet" | Fails **specificity and verifiability** | Performance; upgrade to "**packaging 80% recycled by next year, audited by a third party**" |
+
+| Why organisations default to performance | Detail |
+|------------------------------------------|--------|
+| **Incentives** | Vague promise earns almost as much goodwill with **no risk of a measurable target** |
+| **Audience expectations** | "Deeply committed", "take full responsibility" sound sincere but **demand little** |
+| **Genuine uncertainty** | May not have worked out what to promise; **differs from evasion**, but wording alone cannot show which |
+
+| Common mistake | Correction |
+|----------------|------------|
+| **Length = specificity** | Jargon ("holistic stakeholder-centered framework to drive sustainable outcomes") says little; specificity = **testable** |
+| **Verifiability all-or-nothing** | It is a **scale**; **third-party audit** > self-reported progress |
+| **Honesty = vagueness** | "We don't yet know how to meet this; here is how we'll work it out and when we will report" is **honest and accountable** (process, responsibility, deadline) |
+
+- **Avoid overcorrection:** many claims **do pass all four**; **do NOT replace blind trust with blind distrust**; apply the four tests **every time** and let evidence guide judgement.
+
+---
+
+### Devil's Advocacy: Origin, Groupthink, and Nemeth
+
+| Concept | Key Point |
+|---------|-----------|
+| **Origin** | Catholic Church canonisation: **advocatus diaboli** argued **against** sainthood |
+| **Principle** | A conclusion **never seriously attacked has only been agreed with, NOT tested**; agreement does not make an idea sound |
+| **Groupthink (Irving Janis)** | Capable group overlooks flaws because speaking up against consensus feels **disloyal or out of step**; people assume **someone else spotted the problem** |
+| **Bay of Pigs (1961)** | Kennedy's experienced advisers backed a CIA-trained Cuban-exile invasion of Cuba; **underestimated Castro's forces**, assumed a **popular uprising** (did **NOT** happen); **disaster** |
+| **Structural fix** | **Formally assign dissent** to a person/team; disagreement becomes a **role**, not a personal risk |
+| **Advocate's value** | Need **NOT** be right on every point; makes the team **explain reasoning, examine assumptions, consider what could go wrong** |
+| **Link to four criteria** | Natural questions: **Committed how? Measured how? Who is responsible? What if the company fails?** |
+
+| Assigned opposition | Genuine dissent (**Charlan Nemeth**, *In Defense of Troublemakers*) |
+|---------------------|----------------------------------------------------------------------|
+| Can become a **formality**; people **defend their original position more strongly** and move on | Makes the group **look beyond its settled position**; even **wrong dissent** prompts re-examination of assumptions |
+| Useful, but not always effective | Needs a **team culture** where concerns are not labelled **difficult, disloyal, not a team player** |
+
+- Aim: **NOT to manufacture argument**, but to **make room for questions that might not be asked**.
+- **Timing:** spotting the gap **after** release leaves little to do; questioning **before** finalisation closes the gap (harder: uncomfortable questions under pressure to agree).
+
+| Objection | Response |
+|-----------|----------|
+| **Slows decisions** | Slower short-term; an hour of structured dissent vs a commitment you cannot keep; **cheap insurance** |
+| **Demoralises the team** | Only if careless; **constructive** dissent ends with a **better proposal**; a list of problems alone breeds fear |
+| **Advocate does not believe it (fake)** | **Quality of objections** matters, not sincerity; **assigned dissent can be better than volunteered** because the advocate need not own it and can press harder |
+
+- **Limitation:** devil's advocacy can become a **performance**: objections raised, politely acknowledged, overruled, and **nothing changes**.
+
+---
+
+### Putting Claims to the Test: Women in Leadership Proposal
+
+| Concept | Key Point |
+|---------|-----------|
+| **Proposal** | Publicly commit to **50% women in leadership roles by 2027**, featured in the **earnings call** |
+| **Round 1: strongest honest case** | Investors and candidates ask if diversity is a **genuine priority**; a **time-bound target** signals intent; evidence of momentum (**3 women hired into senior roles this year**); connects to **stakeholder expectations** |
+| **Round 2: devil's advocate** | Test with the four criteria |
+| **Round 3** | **Rewrite** to make it more accountable |
+| **Purpose** | **NOT to weaken** the proposal; make it **stronger before others are asked to trust it** |
+
+| Criterion | Questions asked |
+|-----------|-----------------|
+| **Specificity** | What is "leadership": **executive committee only**, **senior management**, or **manager level and up**? |
+| **Verifiability** | How will investors, employees, journalists know? **Publish figures? Independent verification?** |
+| **Named ownership** | **Chief people officer**, executive leadership, or a business unit? |
+| **Consequences** | If only **38%** reached: **public explanation? Executive incentives linked? Corrective action plan?** |
+
+- A **missed target is NOT automatically dishonesty** (hiring and promotion face unpredictable circumstances), but a commitment should specify **how the company will account for its performance**.
+- The original idea was **NOT necessarily bad**; the problem is a public promise **without meaning, measurement, owner, or response to shortfall**.
+
+| Making devil's advocacy work | Detail |
+|------------------------------|--------|
+| **Rotate** | Rotate the responsibility for challenging proposals |
+| **Require responses** | Significant objections must be answered |
+| **Allow further review** | When important questions remain unanswered |
+
+| Own-work method | Step |
+|-----------------|------|
+| 1 | Identify the **central claim** (essay, proposal, pitch deck, recommendation) |
+| 2 | Apply the **four criteria** |
+| 3 | **Play devil's advocate:** wrong assumption? what could go wrong? what **evidence would change my mind**? |
+| 4 | **Rewrite one vague claim** to be precise and accountable |
+
+- **Two tools as a pair:** four-criteria test (grounded in **Austin's constatives, performatives, felicity conditions**) + devil's advocacy (structural technique); both **refuse to let polished language do the work of evidence and accounting**.
+- Devil's advocacy is a **habit, NOT a one-time exercise**; test the commitment **before** the decision is made; be willing to **play the role yourself** and **listen when others play it**.
+
+---
+
+### Who Decided This for You? Inherited Narratives
+
+| Concept | Key Point |
+|---------|-----------|
+| **Inherited expectations** | Family, society, institutions supply ideas of a successful life that become so familiar we **mistake them for our own** |
+| **First step to independent choice** | Recognise **whose voice** has been guiding the choice |
+| **Early career choice** | Told to decide in school; path **engraved**; pivoting later is hard ("you picked this yourself"); pressure from **family and institution**; institutions present **limited paths**; **OK to change** a decision later |
+| **Marks-based tiers** | **Above 90% science; 70 to 90% commerce; below 70% arts**; societal factor makes people **overlook other options** |
+| **Echo chamber / epistemic bubble** | Same advice repeated by like-minded people ("high marks, so be a scientist or doctor"); **hard for young people to break out of** |
+| **Freedom with a standard** | "Whatever you do, **do it 100%**" so there are no regrets |
+
+| Making an independent decision | Detail |
+|--------------------------------|--------|
+| **Self-awareness** | Look at what is going on, what happened before, what may happen |
+| **Ask the right question** | **"Was it worth it?"** (despite hardship, is it working and are you happy?) |
+| **If everyone says "I wish I'd stayed in science"** | First **reconsider the cohort** you asked, then **do your own research** (answers vary; no field is perfect) |
+| **Own the decision** | Weigh options and **stand behind it**; NOT "**four out of five people say so**"; consistency builds **credibility** |
+
+| Emotionally charged setting (family) | Practice |
+|--------------------------------------|----------|
+| **Listen, not just hear** | Reach the **actual problem** |
+| **Resist rushing to solutions** | Authority figures often solve before understanding |
+| **Ask their side** | "**Why do you want me to do this?**" |
+| **Stay true and consistent** | "This is what I'm happy doing" |
+
+- Competing voices: parents, school, college, peers, **social media** (life coaches say slow down; **hustle-culture voices** say grind).
+
+---
+
+### Pushing Back: Hustle Culture, AI, and Authority
+
+| Concept | Key Point |
+|---------|-----------|
+| **Hustle slogans** | "**Sleep when you're dead**", "**Grind now, shine later**", "**If you're not exhausted, you're not trying hard enough**" |
+| **Nature of slogans** | **Bundles of untested premises** that feel commonsensical through repetition |
+| **Big claim** | You must **hustle to be successful** |
+| **Test of the claim** | We do **NOT** need to work hard for **everything**; "one last push, then enjoy" ends in **exhaustion** without enjoyment |
+| **Work hard vs work smart** | Hard is built into curriculum (deadlines); smart is **context-dependent** (use AI sometimes, do it yourself at other times) |
+| **Speed paradox** | Doing things faster can raise **pressure to do more**; **longer hours do NOT mean quality** |
+| **Over-reliance on AI** | Helps patch things up but **backfires in context-dependent work**; can displace own experience and creativity |
+| **Judgement under pressure** | Several advisers with **agendas and biases** + time pressure: **step back**, take a **fresher outside perspective**, return to the issue if time allows |
+
+| Pushing back on a professor (thesis topic) | Approach |
+|--------------------------------------------|----------|
+| **Psychology student** | Uses **AI only when necessary**; wanted the **human connect**; refused the bandwagon; stepped back and took her **own decision** |
+| **Another student** | "With all due respect" not yet at the stage; topic needs **heavy subject expertise**; heavy AI use hurts **sustainability, knowledge development, sense of accomplishment** |
+
+| Negotiating expectations | Point |
+|--------------------------|-------|
+| **AI cannot negotiate for you** | You must convince a senior person in person and read their **mood and willingness to compromise** |
+| **Know your state** | Distinguish "do not want to do this", "not interested", and **burnt out** |
+| **Step back first** | Then articulate; you will not miss key points |
+| **Prepare facts** | And check the other side is **receptive** (environment matters) |
+
+- **Institutional responsibility:** students are caught between sunk **money and effort** and requirements such as the **thesis to graduate**; institutions need **protections** so burnt-out students are not further burdened by members' **biases and aspirations**.
+- The claim "**work passionately and you will get what you want**" is **NOT really true**: **cultural forces** (beliefs, values, biases), **your own baggage**, and a process of **give and take, negotiation, wins and losses**.
+
+---
+
+### Permission to Rest: Strategic Rest and Wellbeing
+
+| Concept | Key Point |
+|---------|-----------|
+| **Framing** | Rest feels like something to be **earned**; slowing down is **NOT** the same as falling behind; rest can be a **conscious choice** |
+| **Bombardment** | Parents, larger family (WhatsApp uncles/aunties, WhatsApp University), teachers, professors, peers, bosses, social media |
+| **Race from childhood** | 10th boards, 12th boards, entrance exams (JEE, NEET); **rest was never a concept** |
+| **Strategic rest** | Understand what it does for you; may be **logging off fully** or **recalibrating expectations** |
+| **FOMO** | **Fear of missing out**; guilt that rest means losing out, so rest takes the backseat |
+| **JOMO** | **Joy of missing out** |
+
+| Institutional wellbeing | Detail |
+|-------------------------|--------|
+| **Employee wellness "washing"** | Research shows wellness efforts often become **washing** (done because required) |
+| **Find the root cause** | Why a programme or free counselling is not working |
+| **Resource is NOT enough** | People must be **open to accessing it**; create awareness |
+| **De-stigmatise** | Visible counselling spaces expose who attends; few peers seeking help deters others |
+| **Bridge** | Close the gap between **giving the resource** and **accessing it** |
+
+| Auditing your own work | Method |
+|------------------------|--------|
+| **Time tracking** | Track **what takes how much time** for two weeks; set schedule and targets |
+| **Three-question check-in** | **Where did I lack? What did I do well? What can I improve?** (e.g., late nights: my problem or unable to say no?) |
+| **Weekly metrics** | Tasks assigned, finished, time taken, other factors, **rest/log-off time**, effect on productivity |
+| **Input vs output** | If 40 hours worked, **how much value created?** Set an **ideal range** |
+
+- **Late nights and urgent asks:** juniors may not see **institutional pressures and hierarchies** behind a request (e.g., report by 11:00 PM); as a manager, **always give the reason** (about two extra minutes); sometimes "**it's my job**".
+- **Support ecosystem:** success depends heavily on **support**; reject **bootstrap individualism**; we are part of an **ecosystem**; if family support is absent, seek **friends, peers, online communities**; **all institutions, including family,** should provide such communities.
+- A meaningful life is **NOT measured only by how much we accomplish**, but by how thoughtfully we **make room to live it**.
+
+---
+
+## Quick Reference: Organisations and Society
+
+| Situation | Action/Answer |
+|-----------|---------------|
+| Statement sounds committed ("take full responsibility") | Run the **four criteria**: specificity, verifiability, named ownership, consequences |
+| Four criteria all present | **Claim** |
+| Most absent | **Performance** |
+| Vague line needs fixing | Add **number, deadline, independent verifier, named owner** (e.g., 80% recycled packaging, third-party audit) |
+| Uncertain commitment | State **process, responsibility, and deadline** (honest, not vague) |
+| Team converging on consensus | Assign **devil's advocate**; welcome **genuine dissent** |
+| Proposal about to go public | Challenge it **before approval** using the four criteria |
+| Objections raised then ignored | Devil's advocacy has become **performance**: rotate role, require responses, allow further review |
+| Advice from many voices | Ask "**Was it worth it?**"; check the **cohort**; own the decision |
+| Hustle slogan | Treat as **untested premise**; test it |
+| Pressure from an authority | Step back, identify your state, prepare facts, **negotiate** (AI cannot do it for you) |
+| Guilt about resting | FOMO vs **JOMO**; define strategic rest; **audit** your work |
+| Wellness programme underused | Root cause, awareness, de-stigmatise, bridge to access |
+
+| Framework | Core Question / Rule | Benchmark Example |
+|-----------|----------------------|-------------------|
+| **Four criteria** | Specific? Verifiable? Owned? Costly to fail? | VP of operations: 5 days to 2 days by Q3 |
+| **Felicity conditions** | Are the real-world conditions in place? | Wedding officiant vs backyard wedding |
+| **Devil's advocacy** | Has the conclusion been seriously attacked? | Advocatus diaboli; Bay of Pigs |
+| **Genuine dissent (Nemeth)** | Can concerns be raised without being called disloyal? | *In Defense of Troublemakers* |
+
+## Key Decision Rules Summary
+
+| Rule | Detail |
+|------|--------|
+| Structure over tone | Accountability depends on the **structure** of a claim, not how convincing it sounds |
+| Four criteria | Specificity, verifiability, named ownership, consequences for failure |
+| Verifiability | A **scale**; third-party audit beats self-reporting |
+| Uncertain is not vague | An honest "we will find out by X, owned by Y" is accountable |
+| No blind distrust | Test every claim; do **NOT** assume the worst |
+| Untested agreement | A conclusion never seriously attacked has only been agreed with |
+| Dissent | Assigned dissent helps, genuine dissent helps more; neither works if ignored |
+| Timing | Challenge before the decision is final |
+| Missed target | Not automatically dishonest; must specify how performance is accounted for |
+| Own decisions | Recognise whose voice is guiding you; ask "Was it worth it?" |
+| Authority conflict | Know your state, bring facts, negotiate in person |
+| Hustle culture | Exhaustion is not achievement; longer hours do not mean quality |
+| Rest | Strategic rest is a conscious choice; institutions must bridge giving and accessing support |
+| Support | People are part of an ecosystem, not isolated individuals |

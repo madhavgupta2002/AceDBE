@@ -284,3 +284,318 @@
 | Data trust | Validate completeness, validity, duplicates, refresh date first |
 | Axis | Check start, scale, units; start at zero for time comparisons |
 | Aggregation | Drill down before deciding |
+
+## MODULE 2: Designing Effective Dashboards
+
+---
+
+### Why Dashboards Fail and Who to Involve
+
+- **More than 70%** of 450+ dashboard builders say most dashboards fail; usual cause: **nobody understood who would use it** (**NOT** wrong charts, colours or clutter).
+- **User segments** need genuinely different dashboards (TrendE: CMO = market share trend; category manager = SKU-level funnel; warehouse head = near real-time fulfilment exceptions). One all-purpose dashboard = too dense for CMO, too shallow for the rest.
+
+| Term | Meaning |
+|---|---|
+| **Stakeholder** | Commissions the dashboard; holds budget or authority; may **NOT** be a user |
+| **User** | Opens it regularly (category manager, regional manager, possibly the CMO) |
+| **Senior sponsor** | Engaged **from day 1** (not just informed); resolves adoption conflicts (distrusted numbers, old spreadsheet, rival versions) |
+| **Pilot users** | Small cross-functional testers on **your side of the table**; report bugs constructively; nominated by sponsor per segment |
+| **IT representative** | Looped in **week 1**; late request = context-free ticket in a long queue |
+
+- **Stephen Few:** asking only the requester gives *what they are used to getting, not what they need*; talk to **both funder and user**.
+
+---
+
+### Asking the Right Questions
+
+| Category | Ask about |
+|---|---|
+| **Why** | Role, responsibilities, business problem, **decisions/actions**, what they check now |
+| **What** | KPIs, **benchmark** (target, last year, budget), **dimensions** to split by, **granularity** |
+| **How and When** | Frequency, **alert triggers** (e.g. below 90% of target), next step (drill vs summary) |
+| **Where** | **Device**, PDF/PowerPoint export, who else has access, **security** |
+
+- "I want to see performance" = **opening line of a conversation, NOT a requirement**; ask which decision it drives.
+- People volunteer **what** easily; **why** and parts of **how and when** need conversation; **where** needs only direct questions.
+- Senior levels pass problems down; mid and junior levels **drill into detail**.
+
+| Interviewee | Behaviour |
+|---|---|
+| **Blank-slate** | Vague ("show me sales") |
+| **Laundry-list** | ~30 unprioritised metrics |
+
+| Technique | Best for | TrendE example |
+|---|---|---|
+| **Walk me through your day** | How and when; filters laundry lists; gives blank-slate concrete content | Sales head checks headline number Monday before leadership call: summary suffices |
+| **Show me what you already look at** | What, pain points, what they ignore | Marketing's manual spend vs leads spreadsheet |
+| **Cross-pollinate across departments** | Sharpens what/why | Operations wants performance by **fulfilment centre and carrier**, not product category |
+| **Rough mock-up** | Benchmarks and alert triggers (people critique better than they invent) | Wants quarter beside last year's; **red if more than 5% behind target** |
+
+---
+
+### Documenting and Consolidating Requirements
+
+| Metric | Sales | Marketing | Operations |
+|---|---|---|---|
+| **GMV, total orders, average order value, conversion rate, return rate** | Yes | Yes | Yes |
+| **Gross margin %** | By product category | No | No |
+| **Sell-through rate** | Yes | No | Yes (by fulfilment centre) |
+| **CAC, ROAS, cart abandonment** | No | Yes | No |
+| **Order cycle time, on-time delivery %** | No | No | Yes |
+| **Device** | Laptop (trend pulled into slides) | Provided | Phone on warehouse floor |
+
+| Metric | Meaning |
+|---|---|
+| **Return rate** | Share of delivered orders returned; acts as **negative sales** |
+| **Sell-through rate** | % of inventory sold; unsold = **dead stock** |
+| **Cart abandonment rate** | Items in cart that never convert |
+| **Order cycle time** | Click on buy to doorstep delivery |
+| **On-time delivery %** | Share meeting the promised delivery date |
+
+- **Return rate split:** sales = by **product category**; marketing = by **channel, campaign creative, promo code** (low-quality buyers, misaligned expectations); operations = by **fulfilment centre and carrier** (packaging/delivery issues).
+
+| Structure | Pros | Cons | Use when |
+|---|---|---|---|
+| **One size fits all** | Single source of truth; lowest maintenance | **High clutter** | Heavy overlap in workflows and goals |
+| **Fragmented** | Fully tailored | Costly; **same metric calculated differently**; no leadership overview | No shared goals or data sources |
+| **Hybrid** | Shared core plus tailored pages | More upfront layout planning | Real shared core, distinct operational needs |
+
+- **Hybrid build:** 5 shared KPIs on **overview page**; everything else on **dedicated department pages** (with department-specific splits).
+- Unprioritised metrics (e.g. social media engagement) are **logged for phase 2, NEVER rejected**.
+- **Playback session:** all three heads together; what we heard, shared core, dedicated tabs, phase 2 parking lot; show a **very rough sketch** (polished mock-up = people assume it is nearly final).
+
+---
+
+### Data Audit and Feasibility
+
+| Audit item | Key point |
+|---|---|
+| **Where data sits** | TrendE: sales = point-of-sale; marketing spend = ad platforms; fulfilment = operations system |
+| **External source** | Own discovery process; **explicit vendor permission**; slower; **flag immediately** |
+| **Direct automated access** | Prefer **API feeds**; manual handoffs fail silently |
+| **Manual uploads** | Note in audit; include upload training in **onboarding** |
+| **Excel** | **Source of last resort** (Bangalore vs BLR; capitalised headers stopped an update) |
+| **Data dictionary** | Field meanings from the **data owner** (revenue with or without tax/delivery); shown in dashboard |
+| **Sample data** | **25 to 100 rows**; check date formats, blanks, text in numeric fields |
+| **Refresh frequency** | Source must refresh at least as often as users want (returns wanted on 1st, logistics data on 7th) |
+| **Known problems** | Ask owners and users directly |
+| **Revisions** | Media spend final only a month later: show **indicative first figure** and allow **overwrite** of history |
+| **Historical depth** | Needed for trends; may be a rolling window or archive |
+
+- Run the audit with a **data-savvy partner** (date stored as text, hard-coded fields, structure mismatches).
+
+| Verdict | TrendE example |
+|---|---|
+| **Feasible now** | GMV |
+| **Feasible with extra work** | Return rate by 1st (align logistics 7th delivery); stays in phase 1 only if fixed quickly |
+| **Not feasible yet** | Sell-through by fulfilment centre (inconsistent received vs sold tracking) to phase 2 |
+
+- Close-out meeting: what was checked, verdict per metric, extra known issues, **sponsor intervenes to speed access**, **explicit sign-off on version 1 scope**.
+
+---
+
+### Phase-wise Development
+
+- Biggest risk = **holding release until 100% perfect**; perfection is the enemy of progress.
+- **Phase 1 (MVP) = overlap of highest-priority requirements and data feasible now**; delivered in **weeks, not months**; guards against clutter; other ideas go to **phase 2 (not rejected)**.
+
+| Bottleneck | Cause | Example |
+|---|---|---|
+| **System** | Data not tracked consistently | Sell-through by fulfilment centre |
+| **Process** | External vendors/manual handoffs | Return rate: wanted 1st, delivered 7th |
+| **Governance** | Data revised after landing | Media spend final next month |
+
+- **Roadmap table:** phase, items, target users, timeline, blockers (phase 1 normally none; phase 2 blockers name the team to fix).
+- **TrendE phase 1:** GMV, total orders, average order value, conversion rate. **Return rate to phase 2** (procurement renegotiates vendor timeline).
+- Users get new ideas on seeing real data; phase 1 scope is a **shield against scope creep** ("log it in phase 2").
+- Launch is a **recurrent cycle** (lean v1, observe, adapt); simple dashboards feasible in one pass need no phasing; multiple segments plus senior stakeholders = phase.
+- **Sign-off on roadmap before a single visual is built.**
+
+---
+
+### Anatomy of a Dashboard
+
+- Dashboard = **small connected set of screens**, not one page; blocks are tool-independent (Power BI, Tableau, Looker).
+
+| Block | Role |
+|---|---|
+| **Pages or tabs** | Different views |
+| **Visuals** | Charts, tables, numbers (one block, not everything) |
+| **KPI cards** | Key figures on opening; **under 10**, prominent, near top |
+| **Filters (slicers)** | Narrow region/date/category; all visuals update |
+| **Navigation** | Tabs, sidebar menu or buttons |
+| **Hover and click interactions** | Detail without redesigning the screen; contain clutter |
+
+---
+
+### KPI Cards
+
+- **KPI** = broadly on track?; **diagnostic** = why? Executives often look **only at KPI cards**.
+- Isolated number (net margin 12%) is meaningless without context.
+
+| Card part | Detail |
+|---|---|
+| **Number** | Large, unmistakable |
+| **Label** | Plain language; use users' own name (GMV or total revenue) |
+| **Comparison** | Reference point |
+| **Trend signal** | Arrow or **sparkline**; shows whether issue is building or sudden |
+
+- Add **tooltip definition** on hover.
+
+| Comparison | Use when |
+|---|---|
+| **Versus target** | Agreed goal; show **% of target achieved** |
+| **Versus prior period** | No fixed target; MoM, QoQ, YoY |
+| **Versus industry standard** | Meaning depends on market (satisfaction score, on-time delivery, market share) |
+
+- **One card, many comparisons (CMO case):** absolute sales plus % of target, **forecast as default target with filter to switch to budget**, YoY in corner, 6-month line below.
+
+| TrendE card | Comparison | Note |
+|---|---|---|
+| **GMV** | Target | Plus sparkline; most watched |
+| **Total orders** | Prior period | Pair with average order value |
+| **Average order value** | Prior period | Orders up and basket size down shows at a glance while GMV looks stable |
+| **Conversion rate** | Target (internal benchmark) | **Early warning**: moves before GMV |
+| **Return rate** | Target | Catch rise before it drags GMV or margin |
+
+---
+
+### Information Flow and Visual Hierarchy
+
+- Eye tracking: **big numbers noticed first**; **repeated identical cards lose attention by the 4th or 5th**; key chart works best **left of centre**. Most important number: **top left and visually different**.
+
+| Hierarchy tool | Effect |
+|---|---|
+| **Size** | Bigger first (GMV largest) |
+| **Colour and contrast** | Splash against muted background; use sparingly |
+| **Position** | Top left scanned first |
+| **Proximity** | Close = related (total orders beside average order value) |
+| **Typography** | Weight and size signal importance |
+
+- **Hierarchy** = what is noticed first on a screen; **flow** = sequence across pages: **start high, then drill down**.
+- Dashboard must **communicate fast, not impress**; broken extremes: too much detail vs no path to investigate.
+- **Three-question test:** where to start? what is next? when are we done?
+
+| Level | Needs |
+|---|---|
+| **Executive** | Few measures vs target plus trend; minimalist; minimal learning; print/PowerPoint export |
+| **Mid-level** | More context and history; interactive drill-down; diagnosis |
+| **Operational** | Simple; alerts and notifications; spot red flags and act |
+
+- TrendE: overview = **executive tier**; sales, marketing, operations = **sibling mid-level pages**.
+
+| Progressive disclosure | Example |
+|---|---|
+| **Hover** | Detail appears without leaving the visual |
+| **Expand in place** | Click return rate: category breakdown appears below |
+| **Click through** | Click conversion rate: page by campaign (worth the click only for genuine deep dives) |
+
+- **Structural wireframe:** boxes only (KPI cards, charts, filters, navigation); **no data, colour, branding or chart types**; hand sketch is fine; ask **"does the layout make sense?"** and get sign-off; involve a **UX designer** if possible.
+
+---
+
+### Choosing Charts for TrendE
+
+| Question | Default chart |
+|---|---|
+| Comparison | Column (under ~6 categories); horizontal bar (more) |
+| Over time | Bar or line (one series); **line** (multiple series) |
+| Composition | Pie/donut only under 4 slices; stacked bar; 100% stacked |
+| Distribution | Histogram; **box plot** (wider box = more variable; whiskers = outliers) |
+| Relationship | Scatter (correlation, **NOT** causation) |
+
+- **Position beats angle**: prefer bars to pie/donut.
+
+| Page | Charts |
+|---|---|
+| **Overview** | KPI cards with callout number and **sparkline over quarters**; total orders and average order value together |
+| **Sales** | Bar (sorted high to low) plus 6-month trend line for gross margin %, sell-through, return rate by product category |
+| **Marketing** | 4 bar charts plus trend lines: CAC by channel, ROAS by channel, ROAS by campaign, cart abandonment by channel |
+| **Operations** | Bar plus trend plus **box plot** (consistency and outliers) for order cycle time by fulfilment centre, on-time delivery by carrier, return rate by centre and carrier |
+| **Region (operations)** | **Bar** for 4 regions; **map with colour gradient** for underperforming locations and clusters |
+
+- **Linked trend line:** selecting a bar category updates the trend line to that category.
+- **Crowded operations page:** progressive disclosure; default = users' preferred view; button ("Check performance consistency" or "Check performance trend over 6 months") reveals the other. Regular = visible; occasional = on a button.
+
+---
+
+### Look and Feel
+
+- Look and feel is **frozen upfront with sign-off** (late colour/font changes are slow and subjective).
+- Get **brand guidelines**, exact colours, approved logos, font rules from the **brand team** (not guessed); consult the brand creative; design for the **device** (mobile vs laptop).
+
+| Palette rule | Share |
+|---|---|
+| **Neutral** (backgrounds, text) | ~60% |
+| **Secondary/brand** | ~30% |
+| **Accent** (highlight) | ~10% |
+
+- Total palette **3 to 4 colours**; one colour per bar = decoration, not message.
+- **Brand red vs status red:** shift status to **red-orange**; reserve exact brand red for logos and primary actions.
+- **Red, yellow, green** reserved for **below/on/above target**; for degrees use a **single-colour light-to-dark gradient**.
+- **Colourblind:** ~1 in 12 men red-green; test with **Coblis**; pair colour with **icon, label or pattern**; if removing colour keeps the point, it is accessible (down arrow > red dot).
+- **Page design:** light canvas on darker neutral background, consistent spacing, **invisible grid**, title plus logo.
+
+| | Wireframe | Mock-up |
+|---|---|---|
+| **Signs off** | Layout and navigation | Look and feel |
+| **Content** | Boxes | Charts |
+| **Colour** | Grayscale | Real palette |
+| **Logo** | Blank | Real logo |
+| **Data** | None | Dummy; not live |
+
+- Content evolves; **look, layout and navigation stay stable** so users need not relearn. Simple short-term single-audience dashboards still meet requirements but **look and feel is secondary**.
+
+---
+
+### Eight-step Design Process
+
+| Step | Activity | Sign-off or output |
+|---|---|---|
+| **1** | Identify stakeholders and user segments | Sponsor, stakeholders, pilot users |
+| **2** | Gather and consolidate requirements | Aligned priorities |
+| **3** | Data audit and feasibility | **Scope for version 1** |
+| **4** | Phase-wise plan | **Sponsor and stakeholder sign-off**; reference plan |
+| **5** | Information flow and hierarchy | **Wireframe** sign-off |
+| **6** | Chart finalisation (plus filters) | Charts per requirement |
+| **7** | Look and feel | **Mock-up** sign-off (sponsor, stakeholders, pilot users) |
+| **8** | Ongoing agile development | Sprint releases to pilot users; feedback for glitches and bugs |
+
+---
+
+## Quick Reference: Dashboard Design Frameworks
+
+| Framework | Core Question / Rule | Benchmark Example |
+|---|---|---|
+| **Why/What/How and When/Where** | What does this user need in order to act? | Sales head's request covers only "what" |
+| **Four elicitation techniques** | How to get users to open up | Monday headline-number check; manual spend sheet; ops wants carrier split; "red if 5% behind" |
+| **Hybrid structure** | Shared core plus dedicated pages | 5 common KPIs on overview; sales, marketing, operations pages |
+| **Data audit checklist** | Can data support the requirement? | Return rate 1st vs 7th; sell-through not comparable |
+| **Phase 1 as MVP** | Priority requirement and feasible data | GMV, orders, average order value, conversion rate |
+| **KPI card anatomy** | Number, label, comparison, trend | GMV vs target with sparkline |
+| **Five hierarchy tools** | What is noticed first | Largest GMV top left |
+| **Progressive disclosure** | Show now, reveal on demand | Button to open box plot |
+| **60-30-10 colour rule** | Neutral, brand, accent | Highlighted underperforming bar |
+| **Eight-step process** | Idea to ongoing agile release | Wireframe then mock-up sign-offs |
+
+## Key Decision Rules Summary
+
+| Rule | Detail |
+|---|---|
+| Users first | Identify segments and stakeholders versus users before design |
+| Request vs requirement | Ask what decision the number drives |
+| Enrol early | Senior sponsor, pilot users (on your side), IT from week 1 |
+| Structure choice | Heavy overlap = one size; no overlap = fragmented; shared core plus distinct needs = hybrid |
+| Unprioritised metrics | Log for phase 2, never reject |
+| Data access | Prefer API feeds; flag external sources; Excel last resort |
+| Dictionary and sample | Definitions from data owner; 25 to 100 real rows |
+| Verdict | Feasible now / with extra work / not feasible yet |
+| Phase 1 | Priority requirement and feasible data; scope is the shield against creep |
+| KPI card | Never a lone number; add comparison and trend |
+| Comparison choice | Target if agreed goal; prior period if direction matters; industry if external context matters |
+| Hierarchy | Most important number top left and different; start high, then drill down |
+| User level | Executive simple, mid-level diagnostic, operational alerts |
+| Crowded page | Default view plus button (progressive disclosure) |
+| Chart | Position beats angle; box plot for consistency; map for location |
+| Colour | 3 to 4 colours (60-30-10); red/yellow/green only for status; pair colour with icon or label |
+| Sign-offs | Wireframe for structure, mock-up for look, roadmap before any build |

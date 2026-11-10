@@ -1,0 +1,224 @@
+{
+  "exam_metadata": {
+    "subject_name": "Data Visualisation for Business Decisions",
+    "exam_date": "Batch 1"
+  },
+  "questions": [
+    {
+      "question_id": "MT_Q01",
+      "question_text": "A Pizza chain’s Regional manager for South India oversees 30 stores and asks for a dashboard. Which design best fits his role?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Product wise sales for every store, refreshing every 15 minutes",
+        "B": "Weekly store performance against target, with trends over recent weeks and flags for stores that keep missing target",
+        "C": "Daily delivery performance for every store with red flags for late deliveries",
+        "D": "A full export of transactions so he can analyse them in Excel himself"
+      },
+      "correct_option_label": "B",
+      "explanation": "A regional manager is a tactical user: trends over recent weeks, comparisons across stores and exceptions such as stores that keep missing targets, not SKU-level or transaction-level detail.",
+      "module": 1
+    },
+    {
+      "question_id": "MT_Q02",
+      "question_text": "An ecommerce company’s delivery team wants to keep live order delays by zone on a wall screen all day. Leadership wants a Monday summary of last week, with commentary on the worst day and the corrective action taken. What should each group get?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A dashboard for the delivery team and a report for leadership",
+        "B": "A dashboard for both",
+        "C": "A report for the delivery team and a single chart for leadership",
+        "D": "A single chart for both"
+      },
+      "correct_option_label": "A",
+      "explanation": "A dashboard suits ongoing monitoring (live screen). A report communicates a specific conclusion and actions to people who want the takeaways, such as a weekly leadership summary.",
+      "module": 1
+    },
+    {
+      "question_id": "MT_Q03",
+      "question_text": "A Retail company’s CEO likes to take data driven decisions and has asked for her own dashboard. Which of the following features suit her needs?\nNote: This is a multiple-select question and may have more than one correct answer. To receive full marks, you must select all correct options. Zero marks will be awarded if any correct option is missed or an incorrect option is selected. (select ALL that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A few high-level numbers such as revenue growth and overall margin",
+        "B": "Detailed filters and drill downs on every chart so she can investigate root causes herself",
+        "C": "Views that export cleanly into a PowerPoint slide or PDF for board meetings",
+        "D": "SKU-level stock positions for every store",
+        "E": "Alerts for each individual late order",
+        "F": "Comparisons with targets and trends over time"
+      },
+      "correct_option_label": "A, C, F",
+      "explanation": "Executive dashboards are simple and minimalist: performance versus targets, trends, minimal learning, and printability/export to PowerPoint. Drill-downs are for the mid-level and alerts and granular detail for the operational level.",
+      "module": 2
+    },
+    {
+      "question_id": "MT_Q04",
+      "question_text": "TrendE's new sales-by-city bar chart in the company performance dashboard shows separate bars for 'Calcutta' and 'Kolkata'. The dashboard's total sales also come out about 8% higher than the figure finance reports. Which explanations are plausible?\nNote: This is a multiple-select question and may have more than one correct answer. To receive full marks, you must select all correct options. Zero marks will be awarded if any correct option is missed or an incorrect option is selected. (select ALL that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Some orders are counted twice by the dashboard, for example logged by both the website and the payment gateway",
+        "B": "The wrong chart type was used for city comparisons",
+        "C": "Finance and the dashboard may be defining 'sales' differently, for example including or excluding discounts",
+        "D": "Some months' records are missing in the dashboard’s backend data",
+        "E": "The front end team is entering data inconsistently while invoicing",
+        "F": "8% difference is within acceptable limits and should be ignored"
+      },
+      "correct_option_label": "A, C, E",
+      "explanation": "Duplicate records inflate totals, differing definitions of sales (gross vs net) cause mismatches, and inconsistent entry (Calcutta/Kolkata) splits one city into two bars. Missing records would lower, not raise, the total.",
+      "module": 1
+    },
+    {
+      "question_id": "MT_Q05",
+      "question_text": "TrendE's dashboard shows website orders (updated every minute), delivery partner data (updated daily) and marketing spend (updated monthly) side by side as users want to see these as a single snapshot. What is the main risk, and how should the design address it?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Users will be confused with inconsistent numbers; update the dashboard only once a month so that all three refresh at the same time",
+        "B": "The dashboard is expected to be frequently updated; remove the marketing spend data",
+        "C": "Users will be confused with inconsistent numbers; feature the three metrics in different pages with “Last updated on…” status on every page",
+        "D": "Managers may treat month old marketing spend figures as current; show each metric's definition and “Last updated on…” status in the relevant charts"
+      },
+      "correct_option_label": "D",
+      "explanation": "With mismatched refresh frequencies a manager may assume all numbers are equally current. Best practice is to show each metric's definition and refresh frequency on the dashboard.",
+      "module": 1
+    },
+    {
+      "question_id": "MT_Q06",
+      "question_text": "Three months after launch, two of TrendE's regional managers rarely open the new dashboard and insist 'the numbers must be wrong'. An audit confirms the data is accurate. Both regions are below target. What is the most likely issue, and the best response?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Discomfort with newly visible performance; get the senior sponsor to encourage teams to use the dashboard to find and fix problems",
+        "B": "A data quality problem; rebuild the data pipeline",
+        "C": "The dashboard is too simple; add more metrics to make it worth opening",
+        "D": "Managers prefer PowerPoint; go back to monthly slide reports"
+      },
+      "correct_option_label": "A",
+      "explanation": "The data is verified, so this is an adoption problem. A senior sponsor can step in, align people and push adoption.",
+      "module": 2
+    },
+    {
+      "question_id": "MT_Q07",
+      "question_text": "TrendE's on-time delivery rate fell from 95% to 82% in September. Industry data shows courier performance was stable across the market. Split by region, all four regions show a similar drop. Which of the following splits should be looked at next?\nNote: This is a multiple-select question and may have more than one correct answer. To receive full marks, you must select all correct options. Zero marks will be awarded if any correct option is missed or an incorrect option is selected. (select ALL that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "On-time delivery % by fulfilment centre",
+        "B": "On-time delivery % by product price band",
+        "C": "On-time delivery % by courier company who deliver orders for each fulfilment center",
+        "D": "On-time delivery % by customer segment"
+      },
+      "correct_option_label": "A, C",
+      "explanation": "External data is stable and the drop is not regional, so the cause is internal and operational. Next rungs of the diagnostic ladder are fulfilment centres and the courier assignments within each.",
+      "module": 1
+    },
+    {
+      "question_id": "MT_Q08",
+      "question_text": "PARSEIMAGE\n\nThe chart shows TrendE's daily return rates by region. The red dots show outliers. Based on it, what should TrendE do about the North region?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Ignore North's outliers, since outliers are usually noise",
+        "B": "Retrain North's staff, since its routine process is the weakest as shown by the outliers",
+        "C": "Introduce standardised workflows in North to reduce day-to-day variation",
+        "D": "Investigate the orders on specific days behind North's outliers; its everyday process is already consistent"
+      },
+      "correct_option_label": "D",
+      "explanation": "North has the narrowest box (highly predictable routine) but extreme outliers, so the issue lies in specific orders or days and should be investigated, not fixed through process changes.",
+      "module": 1
+    },
+    {
+      "question_id": "MT_Q09",
+      "question_text": "PARSEIMAGE\n\nUsing the same chart of TrendE's daily return rates, which statements are supported?\nNote: This is a multiple-select question and may have more than one correct answer. To receive full marks, you must select all correct options. Zero marks will be awarded if any correct option is missed or an incorrect option is selected. (select ALL that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "North has the most extreme outliers",
+        "B": "East, South and West have less predictable everyday return rates than North",
+        "C": "South performs more consistently than North",
+        "D": "East performs more consistently than North"
+      },
+      "correct_option_label": "A, B",
+      "explanation": "North has four extreme outliers (18–27%) but the narrowest box; East, South and West have much wider boxes, i.e. less consistent everyday performance.",
+      "module": 1
+    },
+    {
+      "question_id": "MT_Q10",
+      "question_text": "PARSEIMAGE\n\nThe chart below shows September sales and targets for TrendE's seven stores. Which store most needs the Regional manager's attention?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Store 2, because it has the lowest sales",
+        "B": "Store 6, because it is the one closest to its target",
+        "C": "Store 5, because it is furthest below its own target despite having the highest sales",
+        "D": "Store 3, because it has high sales and has exceeded its targets"
+      },
+      "correct_option_label": "C",
+      "explanation": "Sales must be judged against each store's own target. Store 5 has the highest sales but misses its target by the widest margin.",
+      "module": 1
+    },
+    {
+      "question_id": "MT_Q11",
+      "question_text": "Which of these statements about TrendE is an insight, rather than an observation or a recommendation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Apparel returns rose to 55% in July because there was a significant delay in deliveries of the orders generated by the Gifting campaign",
+        "B": "Stop the Gifting campaign till the delivery delay issues are sorted out",
+        "C": "Apparel returns rose to 55% in July",
+        "D": "Apparel returns are worse than last year"
+      },
+      "correct_option_label": "A",
+      "explanation": "An observation states what the chart shows, an insight explains why, and a recommendation says what to do.",
+      "module": 1
+    },
+    {
+      "question_id": "MT_Q12",
+      "question_text": "Two analysts explain why TrendE's jacket sales fell. Analyst A: 'Sales fell in March because winter ended.' Analyst B: 'Sales fell in the North in January because the Delhi warehouse was out of stock for nine days.' Which is more valuable to management, and why?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A, because it explains a pattern that repeats every year",
+        "B": "B, because it points to something management can act on",
+        "C": "Both are equally valuable, since both explain the drop",
+        "D": "Neither, because both insights are trivial"
+      },
+      "correct_option_label": "B",
+      "explanation": "A useful insight points to a cause management can act on; the stock-out is actionable while the end of winter is not.",
+      "module": 1
+    },
+    {
+      "question_id": "MT_Q13",
+      "question_text": "Which pairings of a TrendE business question and a chart follow the course's guidance?\nNote: This is a multiple-select question and may have more than one correct answer. To receive full marks, you must select all correct options. Zero marks will be awarded if any correct option is missed or an incorrect option is selected. (select ALL that apply)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "'Which of our eight cities brings in the most orders?' → donut chart",
+        "B": "'Are accessories sales trending up compared with apparel and footwear over six weeks?' → line chart with three lines",
+        "C": "'How consistent are delivery times across six fulfilment centres?' → side-by-side box plots",
+        "D": "'Does higher marketing spend cause more orders?' → scatter plot, which will confirm whether spend causes orders",
+        "E": "'What caused the warehouse team's headcount to fall over the year?' → waterfall chart",
+        "F": "'How do sales compare across 15 cities?' → vertical column chart"
+      },
+      "correct_option_label": "B, C, E",
+      "explanation": "Avoid pie/donut charts beyond 3–4 categories, use horizontal bars for many categories, and remember a scatter plot shows a relationship but does not prove causation. Line charts show trends, box plots show consistency and waterfall charts show what drove a change.",
+      "module": 1
+    },
+    {
+      "question_id": "MT_Q14",
+      "question_text": "PARSEIMAGE\n\nThe chart shows TrendE's app purchase funnel for October. Which stage should the team investigate first, and why?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Cart to 'Buy', because cart abandonment is always the biggest problem",
+        "B": "'Buy' to payment, because about half the customers who decided to buy didn't complete payment, which points to a potential payment-step problem",
+        "C": "Views to cart, because it loses the most people",
+        "D": "None: every funnel narrows, so this is normal"
+      },
+      "correct_option_label": "B",
+      "explanation": "Funnels narrow naturally, but losing about half of customers between clicking Buy (9,000) and payment completed (4,300) is an unexpected drop pointing to a payment-step issue.",
+      "module": 1
+    },
+    {
+      "question_id": "MT_Q15",
+      "question_text": "PARSEIMAGE\n\nA TrendE manager looks at this chart and says: 'August was our best month ever. Let's repeat August's campaign.' What is the best response?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "June and July are the dull months. Increase marketing budget in these months",
+        "B": "Compare August with the same month last year before deciding",
+        "C": "Check data completeness first: June and July at exactly zero suggest missing uploads, and August may include their records",
+        "D": "Agree; August clearly outperformed every other month"
+      },
+      "correct_option_label": "C",
+      "explanation": "Zeros in June and July followed by a spike in August signal missing or delayed uploads. Check data completeness before drawing conclusions.",
+      "module": 1
+    }
+  ]
+}

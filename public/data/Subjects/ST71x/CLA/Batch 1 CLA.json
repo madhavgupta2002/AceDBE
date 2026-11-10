@@ -933,6 +933,164 @@
       "correct_option_label": "D",
       "explanation": "Each body keeps its own role: the board evaluates the case and risk, the owner council exercises its approval authority, and the family council communicates the family's perspective.",
       "module": 6
+    },
+    {
+      "question_id": "CLA_M7_Q01",
+      "question_text": "A family-owned company commits to funding a community health program that will only show measurable benefits after 15 years, a horizon few publicly listed firms would accept. Which distinctive trait of family firms best explains this behavior?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Longer time horizons spanning generations",
+        "B": "Mandatory CSR compliance requirements",
+        "C": "Short-term fiscal quarter planning",
+        "D": "Dispersed ownership structures"
+      },
+      "correct_option_label": "A",
+      "explanation": "Family firms plan and invest across generations, not just fiscal quarters, which makes them natural long-horizon stakeholder managers.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q02",
+      "question_text": "What distinguishes the philanthropic tradition of the Tata family from the Gandhian trusteeship doctrine followed by groups like Bajaj and Birla?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Tata philanthropy rejects the concept of holding wealth in trust",
+        "B": "Tata philanthropy is rooted in Parsi community service rather than trusteeship doctrine",
+        "C": "Tata philanthropy began only after Gandhi's independence movement",
+        "D": "Tata philanthropy relies solely on corporate CSR arms"
+      },
+      "correct_option_label": "B",
+      "explanation": "Tata's philanthropic identity predates and is less tied to Gandhian trusteeship; it is rooted in the Parsi community service tradition and Jamsetji Tata's reformist vision.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q03",
+      "question_text": "A business family with strong in-house investment expertise wants to combine grant-making with impact investing under a single structure. Which organizational model best fits this family's needs?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "A standalone public charitable trust",
+        "B": "A corporate CSR arm mandated by law",
+        "C": "A dedicated family office impact desk",
+        "D": "Partnership with an external intermediary platform"
+      },
+      "correct_option_label": "C",
+      "explanation": "Families with strong in-house investment capability (e.g. Dandekars, Premjis) extend it into a family office impact desk that bridges grants and impact investing under one roof.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q04",
+      "question_text": "A family drafts a formal family constitution explicitly naming its core shared values for the first time. Which component of value work does this action primarily represent?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Transmission",
+        "B": "Renewal",
+        "C": "Articulation",
+        "D": "Reputation management"
+      },
+      "correct_option_label": "C",
+      "explanation": "Value work has three components: articulation (naming shared values explicitly), transmission (passing them on) and renewal (refreshing them at each generational transition).",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q05",
+      "question_text": "What key contrast is drawn between the Walton Family Foundation's third-generation transition and the Ford Foundation's multi-decade family board absence?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Both families increased board size during generational transitions",
+        "B": "Both families signed the giving pledge after founder's death",
+        "C": "One family dissolved its foundation while the other merged it",
+        "D": "One family intensified hands-on control while the other disengaged for decades"
+      },
+      "correct_option_label": "D",
+      "explanation": "Walton's family board shrank from 22 to 5 as the third generation took hands-on control; the Ford family left the board in 1976 (Henry Ford II) and returned only in 2019.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q06",
+      "question_text": "A family office invests in an education startup, accepting a return below market rate because the venture promises significant social impact in girls' education. Where does this investment fall on the spectrum of capital?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Impact investing",
+        "B": "Impact-first investing",
+        "C": "ESG screening",
+        "D": "Pure philanthropy"
+      },
+      "correct_option_label": "B",
+      "explanation": "Impact investing seeks market-rate returns with measurable impact; impact-first investing accepts below-market returns to achieve greater impact.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q07",
+      "question_text": "An Indian company meeting prescribed size thresholds calculates its CSR obligation based on which financial benchmark?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "5% of total annual revenue for the current year",
+        "B": "2% of average net profit over the preceding three years",
+        "C": "1% of total shareholder equity",
+        "D": "3% of total assets under management"
+      },
+      "correct_option_label": "B",
+      "explanation": "Qualifying Indian companies must spend 2% of their average net profit of the preceding three years on CSR.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_P01",
+      "question_text": "Please Note: Questions 8–10 are based on the case provided below. Read the case carefully before attempting these questions.\nThe Shiv family, originating from a Jain merchant community in Rajasthan, has run a chain of manufacturing businesses for three generations. Their giving is deeply tied to recurring community festivals, where the family distributes food and funds temple renovations every year as part of long-standing rituals. The family patriarch often speaks of holding the firm's wealth 'in trust for society,' a phrase he says he adopted after reading about Gandhian principles during his youth. Meanwhile, the family's youngest daughter has started a separate initiative focused on nature conservation retreats for employees, which she describes as deepening everyone's connection to something larger than daily business operations. The family has recently routed a significant portion of its wealth through a newly registered public charitable trust, following a pattern common among large Indian business houses, to formalize and scale its community engagement activities.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for the questions that follow.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q08",
+      "question_text": "Which family spirituality pillar is best reflected in the daughter's nature conservation retreats?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Connection and transcendence",
+        "B": "Shared practices and rituals",
+        "C": "Emotional sharing",
+        "D": "Services and acts of kindness"
+      },
+      "correct_option_label": "A",
+      "explanation": "Connection and transcendence gives a sense of meaning beyond the business itself, matching her stated aim of connecting everyone to something larger.",
+      "module": 7,
+      "passage_id": "CLA_M7_P01"
+    },
+    {
+      "question_id": "CLA_M7_Q09",
+      "question_text": "The patriarch's reference to holding wealth 'in trust for society' most closely reflects which moral root discussed in family philanthropy?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Parsi communitarian tradition",
+        "B": "Instrumental CSR motive",
+        "C": "Relational CSR motive",
+        "D": "Gandhian trusteeship doctrine"
+      },
+      "correct_option_label": "D",
+      "explanation": "Gandhi's trusteeship doctrine holds that wealth is held in trust for society, as seen in the Bajaj and Birla groups.",
+      "module": 7,
+      "passage_id": "CLA_M7_P01"
+    },
+    {
+      "question_id": "CLA_M7_Q10",
+      "question_text": "The family's annual festival-linked donations and temple renovations exemplify which spirituality pillar?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Learning and education",
+        "B": "Shared practices and rituals",
+        "C": "Nature and art experience",
+        "D": "Spiritual growth and development"
+      },
+      "correct_option_label": "B",
+      "explanation": "Recurring family traditions and festival-linked giving reflect the shared practices and rituals pillar.",
+      "module": 7,
+      "passage_id": "CLA_M7_P01"
     }
   ]
 }

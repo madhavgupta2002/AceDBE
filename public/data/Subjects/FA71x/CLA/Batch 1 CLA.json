@@ -1408,6 +1408,216 @@
       "correct_option_label": "A",
       "explanation": "Industry herding: firms follow competitors' dividend policies out of fear of being left alone or seen as weak.",
       "module": 6
+    },
+    {
+      "question_id": "CLA_M7_Q1",
+      "question_text": "A company offers its shares to the public for the first time and becomes a listed firm. Which of the following best describes this process?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Seasoned Equity Offering",
+        "B": "Initial Public Offering",
+        "C": "Rights Offering",
+        "D": "Private Placement"
+      },
+      "correct_option_label": "B",
+      "explanation": "An IPO is the first sale of shares to the public, after which the firm becomes listed.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q2",
+      "question_text": "In an IPO, 70% of the shares are newly issued by the company, and 30% are sold by existing shareholders. Which statement is correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The company is going with only a primary offering",
+        "B": "The company is going with only a secondary offering",
+        "C": "The company is going with both primary and secondary offerings",
+        "D": "The company is going with a fixed-price offering"
+      },
+      "correct_option_label": "C",
+      "explanation": "New shares issued by the firm are a primary offering; shares sold by existing shareholders are a secondary offering. Both are present here.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q3",
+      "question_text": "Under the __________ method, investors bid for different quantities of shares within a price range.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Fixed price issue",
+        "B": "Book-building issue",
+        "C": "Rights issue",
+        "D": "Bonus issue"
+      },
+      "correct_option_label": "B",
+      "explanation": "In book building, a price band is announced and investors bid for quantities at prices within the band.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q4",
+      "question_text": "A company offers shares at ₹80 in the initial public offering, and the stock closes at ₹100 on the first trading day. By how much the IPO is underpriced?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "20%",
+        "B": "25%",
+        "C": "80%",
+        "D": "100%"
+      },
+      "correct_option_label": "B",
+      "explanation": "Underpricing = (First-day close − Offer price) / Offer price = (100 − 80) / 80 = 25%.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q5",
+      "question_text": "An investor sells a stock that has risen by 30% shortly after an IPO but continues holding another stock that has fallen by 30%, despite having no new information justifying either decision. This behaviour is most consistent with",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Risk aggressiveness",
+        "B": "Dividend smoothing",
+        "C": "Dividend clientele",
+        "D": "The disposition effect"
+      },
+      "correct_option_label": "D",
+      "explanation": "The disposition effect is the tendency to prematurely sell winners and hold on to losers.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q6",
+      "question_text": "A listed company issues 5 lakh new shares, while one of its founders sells 2 lakh existing shares through the same offering. Which statement is correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "The company receives proceeds from all 7 lakh shares",
+        "B": "The founder receives proceeds from the 5 lakh newly issued shares.",
+        "C": "The company receives proceeds from 5 lakh shares, while the founder receives proceeds from 2 lakh shares.",
+        "D": "Neither party receives proceeds until the shares are sold again"
+      },
+      "correct_option_label": "C",
+      "explanation": "Primary (new) share proceeds go to the company; secondary share proceeds go to the selling shareholder.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q7",
+      "question_text": "A company’s shares trade at ₹100 before a rights issue. It offers one new share for every four existing shares at ₹ 80. Assuming no market reaction or other costs, what should be the ex-rights price when the rights issue is fully subscribed?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹80",
+        "B": "₹92",
+        "C": "₹96",
+        "D": "₹100"
+      },
+      "correct_option_label": "C",
+      "explanation": "Ex-rights price = (4 × 100 + 1 × 80) / 5 = 480 / 5 = ₹96.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q8",
+      "question_text": "Nova Corporation announces a rights issue to finance its expansion. Its share price is expected to decline from ₹120 to ₹116 after the issue. The company plans to raise ₹20 million by offering new shares at ₹80 per share. Assuming the increase in the total market value of equity equals the gross proceeds from the offering, determine the number of new shares issued.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "3,00,000",
+        "B": "2,00,0000",
+        "C": "2,50,000",
+        "D": "1,00,000"
+      },
+      "correct_option_label": "C",
+      "explanation": "New shares = ₹20,000,000 / ₹80 = 2,50,000.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q9",
+      "question_text": "Nova Corporation announces a rights issue to finance its expansion. Its share price is expected to decline from ₹120 to ₹116 after the issue. The company plans to raise ₹20 million by offering new shares at ₹80 per share. Assuming the increase in the total market value of equity equals the gross proceeds from the offering, determine the number of shares outstanding before the rights issue.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "2.25 million shares",
+        "B": "2.5 million shares",
+        "C": "2 million shares",
+        "D": "2.75 million shares"
+      },
+      "correct_option_label": "A",
+      "explanation": "116 × (N + 2,50,000) = 120N + 2,00,00,000 → 4N = 90,00,000 → N = 2.25 million shares.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q10",
+      "question_text": "A company has an ex-rights price of ₹96 and a subscription price of ₹80. Four North American rights are required to buy one new share. What is the value of one North American right, and how does it compare with the value of one European right under the same prices?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "North American ₹16; European ₹4",
+        "B": "North American ₹16; European ₹16",
+        "C": "North American ₹4; European ₹4",
+        "D": "North American ₹4; European ₹16"
+      },
+      "correct_option_label": "D",
+      "explanation": "European right = Px − Ps = 96 − 80 = ₹16. North American right = (Px − Ps) / N = 16 / 4 = ₹4.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q11",
+      "question_text": "A loan agreement requires a borrower to maintain a minimum interest coverage ratio of 3 times. This is an example of a",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Negative covenant",
+        "B": "Positive covenant",
+        "C": "Secured loan",
+        "D": "Unsecured loan"
+      },
+      "correct_option_label": "B",
+      "explanation": "A positive covenant specifies an action or condition the company must abide by (e.g. maintaining a minimum ratio); a negative covenant limits or prohibits actions.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q12",
+      "question_text": "Orion Corporation offers 2,000 shares in an IPO at ₹80 per share. Of these, 70% are newly issued by the company and 30% are sold by existing shareholders. The underwriters charge a spread of 4% of the offer price, allocated proportionately between the company and selling shareholders. What are the net proceeds to the company and the selling shareholders, respectively?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹1,12,000 and ₹48,000",
+        "B": "₹1,12,000 and ₹46,080",
+        "C": "₹1,07,520 and ₹48,000",
+        "D": "₹1,07,520 and ₹46,080"
+      },
+      "correct_option_label": "D",
+      "explanation": "Net price = 80 × 0.96 = ₹76.80. Company: 1,400 × 76.80 = ₹1,07,520. Selling shareholders: 600 × 76.80 = ₹46,080.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q13",
+      "question_text": "Orion Corporation offers 2,000 shares in an IPO at ₹80 per share. Of these, 70% are newly issued by the company and 30% are sold by existing shareholders. The underwriters charge a 4% spread on the offer price. The stock closes at ₹110 on the first trading day. What is the combined cost of underpricing and underwriting commission attributable to the selling shareholders?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹18,000",
+        "B": "₹19,920",
+        "C": "₹28,000",
+        "D": "₹30,000"
+      },
+      "correct_option_label": "B",
+      "explanation": "Underpricing: 600 × (110 − 80) = ₹18,000. Underwriting: 600 × 80 × 4% = ₹1,920. Total = ₹19,920.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q14",
+      "question_text": "Meridian Corporation has an outstanding 20-year bond with a face value of ₹1,000 and a coupon rate of 8%, payable semi-annually. Due to possible changes in interest rates, the bond's market price at the end of one year could be either ₹900 or ₹1,100, with equal probability. What is the expected market price of the bond after one year?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹950",
+        "B": "₹1000",
+        "C": "₹1050",
+        "D": "₹900"
+      },
+      "correct_option_label": "B",
+      "explanation": "Expected price = 0.5 × 900 + 0.5 × 1,100 = ₹1,000.",
+      "module": 7
+    },
+    {
+      "question_id": "CLA_M7_Q15",
+      "question_text": "Meridian Corporation has an outstanding 20-year bond with a face value of ₹1,000 and a coupon rate of 8%, payable semi-annually. Due to possible changes in interest rates, the bond's market price at the end of one year could be either ₹900 or ₹1,100, with equal probability. What is the expected price after one year if the bond is callable at ₹1,000 and the issuer calls it whenever the market price exceeds the call price?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹950",
+        "B": "₹1050",
+        "C": "₹1000",
+        "D": "₹900"
+      },
+      "correct_option_label": "A",
+      "explanation": "If the price would be ₹1,100 the bond is called at ₹1,000. Expected price = 0.5 × 1,000 + 0.5 × 900 = ₹950.",
+      "module": 7
     }
   ]
 }
