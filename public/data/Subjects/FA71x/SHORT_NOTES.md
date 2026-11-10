@@ -1962,3 +1962,441 @@ $$\text{After-tax return} = \text{Pre-tax return} \times (1 - t)$$
 | Idle cash | Payout reduces agency costs, raises price |
 | Life cycle | Young → retain; mature → pay out |
 | Behavioural | Clienteles, bird-in-the-hand, industry herding |
+
+---
+
+## MODULE 7: Corporate Financing Decisions
+
+---
+
+### Financing Alternatives Overview
+
+| Financing | Alternatives | Issuer |
+|---|---|---|
+| **Equity** | **IPO** | **Unlisted** firm |
+| **Equity** | **SEO**: **FPO**, **rights offering**, **private placement** | **Listed** firm |
+| **Debt** | **Bonds**: bond indenture, **callable bonds** | Borrowing firm |
+
+- Focus of the module: **equity financing**; debt financing introduced briefly
+
+---
+
+### IPO: Types of Offering and Pricing Methods
+
+| Type | What Is Sold | Firm Raises Money? | Examples |
+|---|---|---|---|
+| **Primary (issue of fresh capital)** | **New shares** | **Yes** | Reliance Power (2008) |
+| **Secondary (OFS)** | **Existing shares** from existing shareholders | **No** | NSE (2026), Hyundai Motor India (2024), LIC (2022) |
+| **Mix** | New + existing shares | Yes (primary part) | Tata Capital (2025), Paytm (2021) |
+
+| Pricing Method | Key Features |
+|---|---|
+| **Fixed price** | Price **set in advance**; investors know the exact price; demand known **only after close** |
+| **Book building** | **Price band** (min-max); investors bid quantities; offer price = **highest price at which max shares can be sold**; **most popular** |
+
+- If oversubscribed (both methods): allotment **pro-rata (proportionate)** or **lottery**
+- After an IPO: **unlisted becomes listed** (BSE/NSE)
+
+| Top 5 IPOs (India) | Year | Type | Amount (INR Cr) | Expenses % |
+|---|---|---|---|---|
+| **Hyundai Motor India** | 2024 | OFS | 27,859 | 2.24% |
+| **NSE** | 2026 | OFS | 22,563 | 1.74% |
+| **LIC** | 2022 | OFS | 20,557 | 0.58% |
+| **Paytm** | 2021 | OFS + fresh | 18,300 | 2.25% |
+| **Tata Capital** | 2025 | OFS + fresh | 15,512 | 2.10% |
+
+- Issue expenses are on the **lower side for PSU IPOs** (e.g., LIC 0.58%)
+
+---
+
+### Going Public: Motives and Disadvantages
+
+- **Exit routes** for private-firm investors (restricted share transferability): **merger/acquisition** or **IPO**
+- Raising money is **not the main motive** (ranks 9th)
+
+| Rank | Motive (CFO survey) | % |
+|---|---|---|
+| 1 | **Create public shares for future acquisitions** | 59.4% |
+| 2 | **Establish market price/value** | 51.2% |
+| 3 | **Enhance reputation** | 49.1% |
+| 4 | **Broaden ownership base** | 45.9% |
+| 5 | **Let principals diversify personal holdings** | 44.1% |
+| 6 | **Minimize cost of capital** | 42.5% |
+| 7 | **Allow venture capitalists to cash out** | 32.2% |
+| 8 | **Attract analysts' attention** | 29.8% |
+| 9 | **Run out of private equity** | 27.6% |
+| 10 | **Debt too expensive** | 14.3% |
+
+| Disadvantage | Detail |
+|---|---|
+| **Dispersed shareholders** | Harder to **monitor management** |
+| **Compliance** | Filings with **SEBI** and **stock exchanges (BSE/NSE)** |
+| **Listing fees** | **NSE initial: ₹50,000**; **annual: from ₹3,00,000**, rising with paid-up capital and market cap |
+
+$$\text{Market Capitalization} = \text{Price per Share} \times \text{Shares Outstanding}$$
+
+---
+
+### IPO Characteristics and Underpricing
+
+| Characteristic | Detail |
+|---|---|
+| **Underpricing** | First day close often **above** offer price |
+| **Cyclicality** | Many IPOs in good times; **dry up** in bad times (2001-02 after dot-com; 2008-09 after 2007) |
+| **High costs** | **Underpricing + issue expenses** (about **7%** of issue price in India and US) |
+| **Long-run performance** | **Poor** over **3-5 years** (buy-and-hold is a bad investment) |
+
+$$\text{Underpricing (\%)} = \frac{\text{First Day Closing Price} - \text{Offer Price}}{\text{Offer Price}}$$
+
+- Example: Tata Capital 2025: $\dfrac{331.10 - 326}{326} \approx$ **1.6%**
+
+| Issue Expense Item | Detail |
+|---|---|
+| **Underwriter / merchant banker fees** | **Largest** expense; underwriters buy at less than offer price and bear the risk of unsold shares |
+| **Legal advisors' fees** | Manage legal risk, ensure compliance |
+| **Other** | Advertising/marketing, printing/stationery, regulatory fees, miscellaneous |
+
+- **Underwriter spread** = offer price minus the price at which underwriters buy the shares
+
+| Average Underpricing | % |
+|---|---|
+| **India** (1990-2024) | **> 80%** |
+| **US** (1960-2025) | **about 18%** |
+
+| Asia-Pacific (avg. first day return) | % | | % |
+|---|---|---|---|
+| **China** | 159.3 | Taiwan | 37.5 |
+| **India** | 80.4 | Vietnam | 33.3 |
+| South Korea | 52.8 | Sri Lanka | 27.7 |
+| Indonesia | 51.6 | Singapore | 24.4 |
+| Japan | 48.7 | Australia | 20.1 |
+| Malaysia | 46.7 | Pakistan | 19.8 |
+| Hong Kong | 38.1 | Philippines | 16.3 |
+| Thailand | 37.8 | **New Zealand (lowest)** | 15.5 |
+
+| India: IPOs | 2021 | 2022 | 2023 | 2024 | 2025 |
+|---|---|---|---|---|---|
+| **Underpriced** | 64.7% | 71.2% | 76.5% | 77.0% | 64.0% |
+| **Overpriced** | 27.7% | 23.3% | 16.0% | 12.5% | 36.0% |
+
+| | Detail |
+|---|---|
+| **Beneficiaries** | **Underwriters** (manage risk) and **investors** who get shares |
+| **Bears the cost** | **Pre-IPO shareholders** |
+| **Why underpricing (winner's curse)** | Good IPO: demand > supply, **rationed**; bad IPO: **fully filled**; you "win" when others' demand is low; underpricing keeps **less informed investors** participating and helps **underwriters manage risk** |
+
+---
+
+### IPO Calculations
+
+| Item | Formula |
+|---|---|
+| Net price per share | $\text{Offer} \times (1 - s)$ |
+| Proceeds to firm | $\text{Primary Shares} \times \text{Offer} \times (1 - s)$ |
+| Proceeds to existing shareholders | $\text{Secondary Shares} \times \text{Offer} \times (1 - s)$ |
+| Underwriter commission | $\text{Total Shares} \times \text{Offer} \times s$ |
+| Cost of underpricing (money left on the table) | $\text{Total Shares} \times (P_1 - \text{Offer})$ |
+| Underpricing cost to selling shareholders | $\text{Secondary Shares} \times (P_1 - \text{Offer})$ |
+| Underwriting cost to selling shareholders | $\text{Secondary Shares} \times \text{Offer} \times s$ |
+| IPO cost to selling shareholders | Underpricing cost + underwriting cost |
+
+- $s$ = underwriter spread; $P_1$ = first day closing price
+
+**Example:** Immediate return +15% on underpriced IPOs and -10% on overpriced IPOs; only half of the shares applied for are allotted in the underpriced issue. Bid ₹1,000 in each of one underpriced and one overpriced issue. Find the net gain or loss.
+
+> *Why: Rationing cuts the investment in the underpriced issue; the overpriced issue is fully allotted.*
+> Underpriced: $500 \times 0.15 = +75$
+> Overpriced: $1000 \times (-0.10) = -100$
+> $75 - 100$
+> **Net loss = ₹25** ✓
+> *(Winner's curse: rationed in good issues, fully invested in bad ones)*
+
+**Example:** Fictonia offers 1,000 shares in an IPO: 60% by the firm, 40% by existing shareholders. Offer price ₹50; spread 5%; first day close ₹100; other costs negligible. Find proceeds, commission, cost of underpricing and cost to selling shareholders.
+
+> *Why: Split shares into primary (600) and secondary (400); apply the net price and the spread.*
+> Firm proceeds: $600 \times 50 \times 0.95 = 28{,}500$
+> Existing shareholders' proceeds: $400 \times 50 \times 0.95 = 19{,}000$
+> Underwriter commission: $1000 \times 50 \times 0.05 = 2{,}500$
+> Cost of underpricing: $1000 \times (100 - 50) = 50{,}000$
+> To selling shareholders: underpricing $400 \times 50 = 20{,}000$; underwriting $400 \times 50 \times 0.05 = 1{,}000$
+> **Answer = ₹28,500; ₹19,000; ₹2,500; ₹50,000; total cost to selling shareholders ₹21,000** ✓
+> *(Check: 28,500 + 19,000 = 47,500 = 50,000 - 2,500)*
+
+---
+
+### Investor Behaviour in IPOs (SEBI Study, Sep 2024; IPOs Apr 2018 - Dec 2023)
+
+| Finding | Value |
+|---|---|
+| IPO shares (by value) **sold within a week** of listing | **54%** |
+| **Individual investors** sold within a week | **50.2%** |
+| **Mutual funds** sold within a week (long-term holders) | **3.3%** |
+| **Banks** sold within a week (short-term holders) | **79.8%** |
+| Retail investors by state | **Gujarat 39.3%**, Maharashtra 13.5%, Rajasthan 10.5% |
+| Demat accounts applying (Apr 2021 - Dec 2023) | Almost **half** opened post-COVID (CY2021-23) |
+
+| **Disposition effect** (sell winners early, hold losers) | Individuals' share sold within a week |
+|---|---|
+| Returns **> 20%** | **67.6%** |
+| **Negative** returns | **23.3%** |
+
+---
+
+### SEOs and Follow-on Public Offerings
+
+| SEO Type | Issue Made To | What Is Sold |
+|---|---|---|
+| **FPO** | **Public at large** | New and/or existing shares |
+| **Rights offering** | **Existing shareholders** | New shares |
+| **Private placement** | **Small group of investors** | New and/or existing shares |
+
+- **SEO** = equity issue by an **already listed** firm
+
+| FPO Type | Example |
+|---|---|
+| **Primary** | Vodafone Idea (2024) |
+| **Secondary (OFS)** | ONGC (2004) |
+| **Mix** | Power Grid (2010, 2013) |
+
+| Top 5 FPOs (India) | Year | Type | Amount (INR Cr) | Expenses % |
+|---|---|---|---|---|
+| **Vodafone Idea** | 2024 | Fresh | 18,000 | 2.14% |
+| **Yes Bank** | 2020 | Fresh | 15,000 | 1.00% |
+| **ONGC** | 2004 | OFS | 10,542 | - |
+| **ICICI Bank** | 2007 | Fresh | 10,044 | 1.10% |
+| **NMDC** | 2010 | OFS | 9,930 | 0.12% |
+
+| FPO vs IPO | Detail |
+|---|---|
+| **Prevalence** | **Not common in India**; **common in US** |
+| **Costs** | **High but lower than IPO** |
+| **Underpricing** | Offer price about **2% below previous close** (US); less than IPO |
+| **Issue expenses** | **1-3%** of issue amount (lower than IPO) |
+
+---
+
+### Rights Issues: Basics
+
+| Item | Detail |
+|---|---|
+| **Rights issue** | **Option** for existing shareholders to buy new shares at a **discount** in proportion to holdings; also called **rights entitlements** |
+| **Advantage 1** | Shareholder keeps **proportionate stake** (if she participates) |
+| **Advantage 2** | **Lower costs** than IPO and FPO |
+| **Advantage 3** | **Protects** existing shareholders from underpricing |
+| **Rights puzzle** | Despite benefits, **rare in the US**; common in India |
+
+| Top 5 Rights Issues (India) | Year | Amount (INR Cr) | Expenses % |
+|---|---|---|---|
+| **Reliance Industries** | 2020 | 53,124 | 0.17% |
+| **Vodafone Idea** | 2019 | 25,000 | 0.42% |
+| **Bharti Airtel** | 2019 | 24,939 | 0.09% |
+| **Adani Enterprises** | 2025 | 24,930 | 0.10% |
+| **Bharti Airtel** | 2021 | 20,987 | 0.17% |
+
+| Term | Meaning |
+|---|---|
+| **Ex-rights date** | Buy **before** = get rights; buy **on or after** = no rights |
+| **Subscription price $P_S$** | Offer price, **below market price** |
+| **Rights-on price $P_{RO}$** | Price **before** ex-rights date |
+| **Ex-rights price $P_X$** | Price **on or after** ex-rights date |
+
+$$P_X < P_{RO}$$
+
+- Reason: new shares are issued at a discount
+
+---
+
+### Rights Issues and Underpricing
+
+$$P = \frac{\text{MV of Equity}}{\text{Shares Outstanding}}$$
+
+- Setup: ₹1,000 cash, 50 shares (₹20 each); 50 new shares at ₹10; cash raised ₹500
+
+| | FPO | Rights Issue (all participate) |
+|---|---|---|
+| Cash after | ₹1,500 | ₹1,500 |
+| Shares after | 100 | 100 |
+| **Price after** | **₹15** | **₹15** |
+| Old shareholders' wealth | $50 \times 15 = 750$ (**loss ₹250**) | $100 \times 15 = 1{,}500$ (**gain ₹500** = amount contributed) |
+| New shareholders | $50 \times 15 = 750$ vs ₹500 paid (**gain ₹250**) | - |
+| Result | **₹250 transferred** from old to new shareholders | **No wealth transfer** |
+
+---
+
+### Types of Rights and Value of a Right
+
+| | **North American Right** | **European Right** |
+|---|---|---|
+| Rights given | **1 per share** | **Less than 1 per share** |
+| Rights per new share | **N rights** buy 1 share | **1 right** buys 1 share |
+| Value of 1 right | $\dfrac{P_X - P_S}{N}$ | $P_X - P_S$ |
+| Used in | - | **India** |
+
+- Distinction matters **only for valuing a right**
+
+#### Rights Issue Mechanics
+$$\text{Rights} = \frac{\text{Shares Held}}{\text{Shares per Right}} \qquad \text{Funds Raised} = \text{New Shares} \times P_S$$
+$$P_X = \frac{\text{MV before} + \text{Funds Raised}}{\text{Shares after}}$$
+
+#### Wealth Transfer to Participants
+$$\text{Transfer} = \text{MV after} - \text{MV before} - \text{Amount Paid}$$
+
+- Equals the **loss** of non-participating shareholders
+- Assumes MV increase = gross proceeds (issue expenses ignored)
+
+---
+
+### Participation and Wealth Transfer: Worked Scenarios
+
+- Setup: 100m shares at ₹100 (MV ₹10,000m); **promoters 60%** (60m), others 40% (40m); **1 right per 5 shares**, 1 right buys 1 share at **₹70**
+
+| | Before | **I: All take up** | **II: Only promoters take up** | **III: Promoters take up + unsubscribed portion** |
+|---|---|---|---|---|
+| New shares (m) | - | 20 | 12 | 20 |
+| Shares after (m) | 100 | 120 | 112 | 120 |
+| Funds raised (₹m) | - | 1,400 | 840 | 1,400 |
+| MV of equity (₹m) | 10,000 | 11,400 | 10,840 | 11,400 |
+| **Share price (₹)** | 100 | **95** | **96.8** | **95** |
+| Promoters' stake | 60% | 60% | 64.3% | 66.7% |
+| Promoters' shares (m) | 60 | 72 | 72 | 80 |
+| Promoters' MV (₹m) | 6,000 | 6,840 | 6,968.6 | 7,600 |
+| Others' stake | 40% | 40% | 35.7% | 33.3% |
+| Others' shares (m) | 40 | 48 | 40 | 40 |
+| Others' MV (₹m) | 4,000 | 4,560 | 3,871.4 | 3,800 |
+| **Wealth transfer to promoters (₹m)** | - | **0** | **128.6** | **200** |
+
+> *Why: Price after = (MV before + funds raised) / shares after; transfer = promoters' MV gain minus the amount they paid.*
+> Scenario I: $11{,}400/120 = 95$; value of 1 European right $= 95 - 70 =$ **₹25**
+> Scenario II: $10{,}840/112 = 96.8$; $(6{,}968.6 - 6{,}000) - 840 =$ **₹128.6m**
+> Scenario III: $11{,}400/120 = 95$; $(7{,}600 - 6{,}000) - 1{,}400 =$ **₹200m**
+> *(Non-participation has a cost: others lose 4,000 - 3,871.4 = 128.6 and 4,000 - 3,800 = 200)*
+
+---
+
+### Participation in Rights Issues in India
+
+| Party | Options |
+|---|---|
+| **Shareholders** | **Exercise**, **renounce** in favour of renouncees, or **forfeit** (let expire) |
+| **Renouncees** | **Exercise** or **forfeit**; **cannot renounce further** |
+
+- Both can subscribe to the **unsubscribed portion**; **shareholders have higher priority**
+- **Not underwritten** by investment bankers; **promoters effectively underwrite** by committing to subscribe in full and to apply for additional shares if under-subscribed (100% of the offer)
+- Reason: discounted shares plus wealth transfer make participation attractive to promoters
+
+| Aspect | India | US |
+|---|---|---|
+| Entitlements exercised | About **three-fourths** | **64%** mean participation |
+| Transferability | Almost all **transferable** | About **50% non-transferable** |
+
+- About **one-fourth** of entitlements unexercised; mostly **oversubscribed by promoters** → wealth transfer from non-participants (mainly retail) and **sharp rise in promoter ownership**
+
+| Reason for Non-Participation | Detail |
+|---|---|
+| **Trading frictions** | Before **2020**, rights **not traded electronically** |
+| **Liquidity / transaction costs** | No cash to subscribe; **capital gains tax** on selling shares |
+| **Information gap** | Not all know **rights carry value**; investor education |
+
+---
+
+### Rights Issue Practice
+
+$$\text{New Shares} = \frac{\text{Funds Raised}}{P_S} \qquad P_X(X + \text{New Shares}) = P_{RO}X + \text{Funds Raised}$$
+
+- $X$ = shares outstanding before the rights offering
+
+**Example:** Fictonia raises ₹15 million via a rights offering at a subscription price of ₹50; price falls from ₹65 (rights-on) to ₹63.18 (ex-rights). Assume the rise in MV equals the gross proceeds. Find shares before the offering.
+
+> *Why: MV after = MV before + funds raised.*
+> New shares $= 15/50 = 0.3\text{ million}$
+> $63.18(X + 0.3) = 65X + 15$
+> $63.18X + 18.954 = 65X + 15$
+> $3.954 = 1.82X$
+> **Answer = X = 2.173 million shares** ✓
+> *(Check: both sides equal about 156.2)*
+
+---
+
+### Private Placements of Equity
+
+| Feature | Detail |
+|---|---|
+| **Investors** | **Small group**: promoters/insiders or outsiders (**private equity, banks, financial institutions**) |
+| **Market reaction** | Generally **positive** |
+| **Reason** | **Monitoring / certification hypothesis**: new **blockholders** monitor managers and certify asset valuation |
+| **Advantage** | Avoids costly **registration** with the regulator; **cheaper**, esp. for smaller issues |
+| **Disadvantage** | Investors cannot easily resell; usually a **lock-in period** |
+
+---
+
+### Bond Indenture and Provisions
+
+- **Bond indenture** = legal agreement between **issuer (borrower)** and **bondholders (lenders)**; hundreds of pages
+
+| Provision | Types | Key Points |
+|---|---|---|
+| **Form** | **Bearer** | Holder of certificate owns bond (like currency); coupons detached and presented to agent; **hard to recover if lost/stolen**; issuer **cannot notify** holders |
+| | **Registered** | **Registrar** records ownership and changes; issuer pays **owner of record**; **almost all bonds today** |
+| **Security** | **Secured** | Backed by **collateral** (asset pledged on debt) |
+| | **Unsecured** | **No** collateral |
+| **Seniority** | **Senior / Junior (subordinated)** | In bankruptcy, **senior paid in full first**; debt **cannot be subordinated to equity** (equity is residual) |
+| **Protective covenants** | **Negative** | **Limits/prohibits** actions (e.g., dividends not above **25% of net income**) |
+| | **Positive** | **Requires** actions/conditions (e.g., working capital above a minimum) |
+| **Call provision** | **Callable / Noncallable** | See below |
+
+- Shareholders may **voluntarily add covenants**: more/stronger covenants → lower default likelihood → **lower interest rate** → lower cost of borrowing
+
+---
+
+### Callable Bonds
+
+| Feature | Detail |
+|---|---|
+| **Call provision** | Issuer's **right, not obligation**, to retire all/part of the issue at the **call price** over a specified period |
+| **Call price** | Often a % of face value; usually **at or above face value** |
+| **Issuer calls when** | Calling is **cheaper than open-market repurchase**, i.e., **bond price > call price** (e.g., after a fall in interest rates) |
+| **Price effect** | Callable bond price **<** noncallable; holders pay less |
+
+$$E(P_{\text{callable}}) = \sum_i p_i \times \min(P_i,\; \text{Call Price})$$
+
+**Example:** 30-year, 7% semiannual-coupon bond, face value ₹100. After one year the price is ₹80 or ₹120 with equal probability. Find the expected price (a) noncallable, (b) callable at ₹100.
+
+> *Why: The issuer calls only when the price is above the call price, capping the bondholder's value at ₹100.*
+> (a) $0.5 \times 80 + 0.5 \times 120 = 40 + 60$ = **₹100**
+> (b) $0.5 \times 80 + 0.5 \times 100 = 40 + 50$
+> **Answer = (a) ₹100; (b) ₹90** ✓
+> *(At ₹80 the issuer does not call; at ₹120 it calls at ₹100; the call provision costs bondholders ₹10)*
+
+---
+
+## Quick Reference: Which Method / Formula to Use
+
+| Situation | Action/Answer |
+|-----------|---------------|
+| Measure IPO underpricing | $(P_1 - \text{Offer})/\text{Offer}$ |
+| Proceeds to firm / existing shareholders | Primary / secondary shares × offer × $(1 - s)$ |
+| Underwriter commission | Total shares × offer × $s$ |
+| Money left on the table | Total shares × $(P_1 - \text{Offer})$ |
+| Ex-rights price | (MV before + funds raised) / shares after |
+| New shares in a rights issue | Funds raised / $P_S$ |
+| Value of a European right | $P_X - P_S$ |
+| Value of a North American right | $(P_X - P_S)/N$ |
+| Wealth transfer to participants | MV after - MV before - amount paid |
+| Expected price of callable bond | Cap each outcome at the call price, then weight by probability |
+
+## Key Decision Rules Summary
+
+| Rule | Detail |
+|------|--------|
+| Primary vs secondary offering | Primary raises money for the firm; OFS pays existing shareholders only |
+| Pricing method | Fixed price: price set in advance; book building: price band, most popular |
+| Oversubscription | Allotment pro-rata or by lottery |
+| Underpricing | Cost borne by pre-IPO shareholders; benefits underwriters and allotted investors |
+| Winner's curse | Full allotment in bad IPOs, rationed in good IPOs |
+| Issue expense ranking | IPO (highest) > FPO (1-3%) > rights issue (lowest) |
+| Rights issue and underpricing | No wealth transfer only if all shareholders participate |
+| Non-participation | Wealth moves from non-participants to participants; promoter stake rises |
+| Rights in India | European rights; transferable; promoters effectively underwrite |
+| Private placement | Positive reaction (monitoring/certification); cheaper, no registration; lock-in |
+| Bond indenture | Registered, secured/unsecured, senior/junior, negative/positive covenants, callable/noncallable |
+| Callable bond | Issuer calls when price > call price; callable bond worth less than noncallable |

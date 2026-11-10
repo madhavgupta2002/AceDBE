@@ -5127,3 +5127,586 @@ Siblings become partners by choice, not co-owners by accident, through: **purpos
 - **Owner council vs board:** owner council approves acquisitions/sales and decides board membership; board decides CEO hire/fire with owner council approval.
 - **Assembly matters more in family firms** because it is the guaranteed moment for minority family members to be heard; family firms face Type 2 agency and socio-emotional wealth considerations.
 - **Core discipline:** name it, write it, agree it, revisit it.
+
+# Module 7: Family Firms, Communities, and External Stakeholders
+
+## 7.0 Module Overview
+
+### 7.0.1 Welcome to the Module
+
+- When the name on the company is also the name on the family's front door, **every business decision is read as a statement about the family itself**.
+- A broken promise to a supplier, a factory that pollutes a river, a foundation that rebuilds a village school: each becomes part of the **family's personal record**.
+- The module looks **outwards** from the family firm to employees, customers, suppliers, regulators and, above all, the **communities** it grows up in.
+- Many of India's oldest business families (**Tatas, Bajajs, Murugappas**) have tied their identity to giving back for generations.
+- Core questions: **why** families give (reputation, values, duty, holding a growing family together) and **how** they turn intentions into strategy (who leads, which vehicles, how giving is governed across generations).
+- Closes with a conversation with **Ankush of Anand Sweets**: quality and customer trust, coming home after a corporate career, and modernising a legacy without losing its soul.
+
+### 7.0.2 Learning Objectives
+
+- Identify the **stakeholders** a family firm serves and the **traits** that make it manage them differently.
+- Explain why business families engage in **philanthropy**, using **socioemotional wealth** and the **moral, instrumental and relational** motives for giving.
+- Compare the main ways families **organise their giving**, from foundations and CSR arms to **family-office impact desks and intermediaries**.
+- Apply the ideas of **value work** and **earning the right to change** to a family business case such as **Anand Sweets**.
+
+## 7.1 Family Firms and Community Engagement
+
+### 7.1.1 Family Firms as Stakeholder Managers
+
+#### Definition: Stakeholder theory
+
+- Every firm depends on its stakeholders; its **performance and legitimacy** rest on how it manages relationships with every group that **can affect, or is affected by**, its objectives and operations.
+- Stakeholders go **beyond shareholders**: employees, customers, suppliers, communities, regulators and the broader public, alongside investors.
+- Stakeholder theory **reframes strategy as a web of relationships** to be managed **deliberately**, not as a series of **arm's-length transactions**.
+
+#### The family firm's twist
+
+- Family firms sit inside the same framework, but the **family is both an internal actor and, very often, a visible external stakeholder** in its own right.
+
+- **Stakeholder map (family firm at centre):** employees, customers, suppliers, communities, regulators, broader public, investors.
+
+#### Three traits of family firms as stakeholder managers
+
+| Trait | Meaning | Consequence |
+|-------|---------|-------------|
+| **Longer time horizons** | Plan and invest **across generations**, not fiscal quarters | Changes how they weigh the **long-term payoffs of community relationships** |
+| **Identity fused with the family name** | Firm's brand and family's personal reputation are the **same asset** | Stakeholder missteps carry **personal as well as corporate cost** |
+| **Concentrated, continuous ownership** | A controlling family can commit to a community relationship **for decades** | A dispersed, publicly listed company can **rarely** rely on such commitment |
+
+#### Link to SEW and FIBER
+
+- These traits shape how families balance **financial wealth** with **socioemotional wealth (SEW)**, the non-financial wealth family firms protect alongside financial wealth.
+- **FIBER dimensions:** **F**amily control and influence, **I**dentification of family members with the firm, **B**inding social ties, **E**motional attachment, **R**enewal of family bonds through dynastic succession.
+- Reading community engagement through SEW and FIBER gives family-firm engagement a **distinct flavour**.
+
+### 7.1.2 Entrepreneurial Families Shaping Their Community
+
+#### Key Concept: Giving deepens across generations
+
+- Community engagement is **not just a first-generation founder's gesture**; across Indian and global business families it tends to **persist and deepen across generations**.
+- The **oldest, most multi-generational** families tend to have the **longest-running and most institutionalised** philanthropic vehicles.
+- India offers an unusually rich set of **second-, third- and even fifth-generation** cases: Tatas, Bajajs, Murugappa group, Godrejs, Mahindras, Shiv Nadars (HCL group).
+- Globally, **Walton** and **Mulliez** show the same multi-generational pattern; the **Ford Foundation** shows what happens when a family **disengages** from its own foundation and later **reconnects**.
+- **First-generation wealth creators** (Premjis, Nilekanis, Kiran Mazumdar-Shaw) show **new Indian wealth institutionalising giving**, not only multi-generational continuity.
+
+#### Multi-generational family philanthropy in India and globally
+
+| Family | Vehicle | What it shows |
+|--------|---------|---------------|
+| **Tata (India)** | Tata Trusts, from **1892** | Network of trusts holding about **66% of Tata Sons**; leadership passed to **Noel Tata in October 2024** |
+| **Bajaj (India)** | Jamnalal Bajaj Foundation, **1977** | **Four generations** of family chairmanship; **352 crore** donated in 2024 (**#3** on EdelGive-Hurun) |
+| **Murugappa (India)** | AMM Foundation, **1922/24** | Marked its **100th year in January 2024**; still run by the founding lineage |
+| **Shiv Nadar / HCL (India)** | Shiv Nadar Foundation | **#1** on the EdelGive-Hurun 2024 list, a record **2,153 crore** |
+| **Walton (USA)** | Walton Family Foundation, **1987** | Family board; third generation redirected about **$2.2 billion over five years** and **declined the Giving Pledge** |
+| **Ford (USA)** | Ford Foundation, **1936** | Family **left the board in 1976** and **returned in 2019** |
+| **Mulliez (France)** | Family association | About **700 members**; a case in **values transmission and ownership design** |
+
+#### Tata Trusts
+
+- A **network of philanthropic trusts**, not a single entity: **J.N. Tata Endowment (1892)**, **Sir Ratan Tata Trust (1919)**, **Sir Dorabji Tata Trust (1932)**.
+- **Dorabji Tata died without heirs** and left his Tata Sons stake to the trust: the **origin of the trusts' large equity position** (collectively more than 65% of Tata Sons).
+- **Noel Tata** became chairman of Tata Trusts in **October 2024**, succeeding **Ratan Tata**; trust leadership moved into a different generation.
+- Fund **healthcare, education, livelihoods, nutrition, rural development, water and research**, through both **grant making and direct implementation**.
+
+#### Bajaj
+
+- **Jamnalal Bajaj**, a close associate of **Mahatma Gandhi** (some studies describe him as adopted as Gandhi's "fifth son"), founded the family's **philanthropic identity**.
+- Jamnalal Bajaj Foundation **inaugurated in 1977** by Prime Minister **Morarji Desai**.
+- Chairmanship passed down the family line: **Jamnalal → Ramkrishna (son) → Rahul (grandson) → Shekhar Bajaj**.
+- 2024: ranked **third** on EdelGive-Hurun India Philanthropy list, donating **352 crore**, up **33% year on year**; one of the top donors to **arts, culture and heritage**.
+
+#### Murugappa
+
+- **AMM Foundation** traces its history to a **1922 hospital foundation stone**; marked its **100th year in January 2024**.
+- Still run by a member of the founding **Subbiah / Alagappan lineage**; the group's **main vehicle for community engagement**.
+
+#### Walton vs Ford: contrast at generational transition
+
+| Aspect | Walton Family Foundation | Ford Foundation |
+|--------|--------------------------|-----------------|
+| **Founded** | 1987 | About 1936 |
+| **Board** | **Entire board are family members** | Family presence lasted until **Henry Ford II resigned (December 1976)** |
+| **Generational move** | In **2016** board shrank from **22 to 5** as **third-generation grandchildren took control** | **No family member on the board** for over four decades until **Henry Ford III's election (February 2019)** |
+| **Giving direction** | Redirected about **$2.2 billion over 5 years** to **K-12 education, the environment and Arkansas economic development** | Not specified |
+| **Giving Pledge** | **Chose not to join**; Rob Walton: "we have chosen to go our own way" | Not specified |
+| **Pattern** | **Doubled down on hands-on control** at the transition | **Disengaged for over 4 decades**, then reconnected |
+
+- The "disengagement" refers **only to presence on the board** as a mechanism.
+
+### 7.1.3 The Rise of Impact in Family Business
+
+#### Key Concept: Two forms of wealth
+
+- Family firms optimise for **financial wealth** and **socioemotional wealth**, two distinct and sometimes **competing** forms; SEW is **off (beyond) the balance sheet**.
+- The course **deliberately avoids the informal term "dual wealth"**: it is **not a separately named academic construct**.
+- **Philanthropy is one of the few activities that can build both at once:**
+  - Protects **reputation** and reduces **regulatory, political and other risk** to financial wealth.
+  - Reinforces **identity and belonging**, which form part of SEW.
+
+#### Three motives for family-firm CSR
+
+| Motive | Meaning |
+|--------|---------|
+| **Moral** | CSR because **it is the right thing to do** |
+| **Instrumental** | CSR to **build and protect reputation and legitimacy**, which strengthens the family business |
+| **Relational** | CSR as a vehicle to **serve the family's own social ties** |
+
+- **Research:** **instrumental and relational motives often outweigh pure moral motives**; family firms give substantially to **protect SEW**, not only out of altruism.
+- This **does not remove the moral grounding** of giving; whatever the motive, **beneficiaries still benefit**, and the family firm still benefits from instrumental and relational CSR.
+
+#### Causal chain linking CSR to SEW
+
+$$\text{Philanthropy protects identity and reputation} \rightarrow \text{Lower risk to binding social ties} \rightarrow \text{Next generation engaged through shared values} \rightarrow \text{Renewal of family bonds}$$
+
+- Giving gives next-generation members a **values-aligned channel of engagement**.
+
+#### The family name on the door
+
+- Because the family's name is embedded in the firm's brand (often **eponymous**), reputational consequences attach to **living, named individuals**, not an **anonymous corporate entity**.
+- A family firm's **community wins and missteps** are read by the public as the **family's own personal record**: a family identity, not just a firm identity.
+
+#### Eight pillars of family spirituality
+
+- Beyond reputation and SEW, many entrepreneurial families frame giving as an expression of **shared spiritual or moral values**, lived out as a **family practice rather than a corporate programme**.
+
+| # | Pillar | Meaning |
+|---|--------|---------|
+| 1 | **Connection and transcendence** | Meaning **beyond the business** |
+| 2 | **Spiritual growth and development** | Ongoing **personal and moral growth** |
+| 3 | **Nature and art experience** | Shared appreciation of **nature and the arts** |
+| 4 | **Emotional sharing** | **Open expression of feeling** within the family |
+| 5 | **Nurturing relationships** | Investing in the **wellbeing of family ties** |
+| 6 | **Learning and education** | Valuing **lifelong learning** |
+| 7 | **Services and acts of kindness** | **Everyday generosity** (not necessarily formal giving) |
+| 8 | **Shared practices and rituals** | **Festivals, traditions and observances** (e.g. donations around a festival) |
+
+- The pillars link family spirituality to how families find **meaning in community development** through CSR, philanthropy or other vehicles.
+
+#### Two Indian value roots of family philanthropy
+
+| Dimension | Gandhian trusteeship | Communitarian roots |
+|-----------|----------------------|---------------------|
+| **Core idea** | Wealth is **held in trust for society**, not as pure private property | Giving rooted in a **community's service tradition** and a founder's **reformist vision** |
+| **Example families** | **Bajaj and Birla** | **Tata (Parsi community)**; also **Jain, Chettiar** and other communities |
+| **Expressed through** | **Khadi, women's education, upliftment of marginalised communities, funding the independence movement** | Tata's giving **predates, and is less directly tied to,** Gandhian trusteeship; rooted in the **Parsi community service tradition** and **Jamsetji Tata's reformist vision** |
+| **Common outcome** | Family wealth **routed through trusts at scale** | Family wealth **routed through trusts at scale** |
+
+- Trusteeship need not come purely from Gandhian doctrine; it can be a sense of trusteeship reflecting the **spiritual roots** of the family.
+- **Distinct moral roots, common institutional outcome: trusts.**
+
+## 7.2 Philanthropy, Value Work and Organising for Impact
+
+### 7.2.1 The Importance of Value Work
+
+#### Definition: Value work
+
+- **Value work:** philanthropy as the family's mechanism for **articulating, transmitting and renewing its values** across generations.
+- Core question: can a family's values **survive a generational transition without a deliberate mechanism** to carry them forward?
+- Family business owners **rarely separate a "real self" from a "work self"**; personal values flow directly into business conduct, including giving.
+- Because they plan across generations, they feel an explicit need to **pass on values, not just assets**.
+
+#### Why philanthropy carries values
+
+| Role | Detail |
+|------|--------|
+| **Local roots and reciprocity** | Giving back to the communities that **helped build the family's wealth** |
+| **A role for everyone** | Gives **non-executive family members** a continued channel of involvement; can **lift employee morale** and **aid recruitment** of external talent |
+| **A unifying force** | A **30-country, 70-interview study** found philanthropy unites **geographically and generationally dispersed** family members |
+| **A training ground** | A shared foundation builds **next-generation financial and managerial skills**; hands-on involvement shows younger members **how the family's wealth is used** |
+
+#### Value work: three moving parts
+
+| Part | What happens |
+|------|-------------|
+| **1. Articulate** | The family **names its shared values** explicitly, sometimes formalised in a **family creed or family constitution** |
+| **2. Transmit** | Values pass to the next generation through **joint philanthropic (giving) decisions and shared service experiences** |
+| **3. Renew** | Values are **refreshed at each generational transition** through philanthropy, a **lower-stakes, emotionally resonant** vehicle than the operating business |
+
+- Philanthropy is the family's mechanism for carrying **values, not just assets**, across generations.
+
+### 7.2.2 Practising Philanthropy and Creating Impact
+
+#### Key Concept: Impact champions
+
+- **Impact champions:** family members who champion impact and giving and **lead from the front**.
+- Often the **next generation**, sometimes the **founder**, and commonly the **women of the family**.
+- **Rohini Nilekani** ranked **independently** on the EdelGive-Hurun 2024 list alongside **Nandan Nilekani**; both **Giving Pledge signatories since 2017**.
+- **Kiran Mazumdar-Shaw** (founder of **Biocon**) is reported as the **first Indian woman CEO to sign the Giving Pledge**.
+- "Impact champion" is a **course label** for a well-evidenced pattern, **not an established academic term**.
+
+#### Channels for family philanthropy
+
+| Channel | Mechanism | Example |
+|---------|-----------|---------|
+| **Private foundation or trust** | Dedicated legal entity with a **family-controlled board** | Tata Trusts; Jamnalal Bajaj Foundation; Walton Family Foundation |
+| **Corporate CSR vehicle** | **Legally mandated in India under Section 135** | AMM Foundation, which also serves as Murugappa's CSR vehicle |
+| **Giving Pledge** | Public commitment to give away **more than half of one's wealth** | **Azim Premji (2013)**; **Nandan and Rohini Nilekani (2017)** |
+| **Venture philanthropy or impact investing** | **Blended for-profit and grant** structure, usually led by the **family office** | **Raintree (Dandekar family)**: impact portfolio plus a separate grant foundation |
+| **Platform or intermediary** | **Pools and advises** family philanthropic capital | **Dasra** |
+| **Family office impact arm** | **In-house investment team plus grantmaking** | **Premji Invest** |
+
+- **Areas of family giving:** children and youth, healthcare, poverty alleviation, environment, human rights, community development, art and culture, animal welfare.
+
+#### India's CSR mandate (regulatory anchor)
+
+| Requirement | Detail |
+|-------------|--------|
+| **Who** | Companies **above certain size thresholds** (Section 135) |
+| **2% rule** | Spend about **2% of average profit over the last three years** on CSR |
+| **Choice** | Company chooses the **area and the geography** of spending |
+| **CSR committee** | Mandatory for qualifying companies |
+| **Impact assessment** | **Independent impact assessment** mandatory above a certain CSR obligation (**CSR Amendment Rules, 2021**) |
+
+#### Frameworks for strategic philanthropy
+
+- Many frameworks exist (an **indicative, not exhaustive** list), each answering a different core question.
+- Shared message: **many firms already seek to do good**; a **strategic approach helps them do it better**.
+
+#### Framework 1: Three inflection points in family philanthropy
+
+| Inflection point | Description |
+|------------------|-------------|
+| **1. Start-up** | Giving moves from **ad hoc gestures** to a **deliberately impact-directed programme** |
+| **2. Scale-up** | A **step change**, often after a **liquidity event**; scaling impact **without a matching rise in staff or governance**, which becomes a burden |
+| **3. Tune-up** | A **reflective redesign** of the giving programme, sometimes with **no external trigger** |
+
+- Each point calls for a change in how the programme is **designed and governed**.
+
+#### Framework 2: Five conditions for collective impact
+
+| Condition | Meaning |
+|-----------|---------|
+| **Common agenda** | **Shared vision** of the problem and a **joint approach** to solving it |
+| **Shared measurement** | Measures **tracked across family and business circles** |
+| **Mutually reinforcing activities** | **Different but coordinated** activities across participants |
+| **Continuous communication** | Frequent, structured, relevant, timely; **builds trust across institutions, sectors and egos** |
+| **Backbone (support) organisation** | **Dedicated staff or entity** coordinating the effort |
+
+- Even more important for family firms: they must align **two systems (family and business)** and multiple governance structures for **family harmony and business prosperity**.
+- **Why it matters for a family funder:** large causes such as **river rejuvenation** or **girls' education at scale** cannot be solved by one family's grants alone; the conditions give families a **vocabulary for insisting that grantees, and co-funding families, coordinate** (multi-layering across firm, family and multiple families).
+
+#### The spectrum of capital
+
+- Runs from **impact first** (pure philanthropy) to **financial return first** (traditional investment); moving along it **trades financial return against explicit impact intent**.
+
+| Position (impact first → return first) | Description |
+|------------------------------------------|-------------|
+| **Pure philanthropy** | **Grants; no financial return** expected |
+| **Impact-first investing** | **Below-market return accepted** for greater impact (e.g. **programme-related investments**) |
+| **Impact investing** | **Market-rate return** with **measurable impact** |
+| **Blended finance** | **Grant, concessionary and commercial capital layered** to de-risk a deal |
+| **ESG-screened** | Investments screened for **environmental, social and governance** factors |
+| **Traditional investment** | **Financial return only**; no explicit impact intent |
+
+- Families with investment capability can use **several points at once** (e.g. grants plus impact-first or market-rate impact investments).
+
+#### Assessing impact and risk
+
+| Assessing impact | Assessing risk |
+|------------------|----------------|
+| **Theory of change or logic model:** standard nonprofit evaluation approach showing **what changed** as a result of the activity | **Fiduciary duty:** boards have a legal obligation to shareholders, so may be **cautious about unconventional or long-horizon giving** |
+| **India's CSR Amendment Rules, 2021:** independent impact assessment **mandatory above a threshold** (legal requirement, not just best practice) | **Reputational fear:** a funded project that **fails publicly reflects on the family's name** |
+| | **Corporate (level) constraints:** CSR choices must be **defensible to the parent company's stakeholders** |
+
+#### Bringing the family in across generations
+
+| Mechanism | Detail |
+|-----------|--------|
+| **Family councils** | Dedicated governance bodies where **family members, not only executives**, set the direction of the family's philanthropy |
+| **Next-gen giving circles and philanthropy committees** | Defined, **lower-stakes decision-making roles** for younger members **before they take on business authority** |
+| **A giving identity of their own** | Next generation shapes **its own giving identity** rather than inheriting it unchanged, while staying **aligned with the family** |
+
+- **Hands-on involvement, not episodic conversation**, deepens the younger members' appreciation of the family's wealth and purpose.
+
+### 7.2.3 Organising for Impact
+
+#### Four ways families organise their giving
+
+| Model | Best suited to | Example |
+|-------|----------------|---------|
+| **Standalone foundation or trust** | Large, **multi-generational groups with an established public identity**; the **most durable, legible vehicle** for a century-scale identity | Tata, Bajaj, Birla, Godrej, Murugappa |
+| **Corporate CSR arm** | **Any sufficiently large Indian company, by law** (regardless of family preference); the strategic choice is **how tightly it integrates with voluntary family giving** | Murugappa's **AMM Foundation**, serving **both roles** |
+| **Family office impact desk** | Families with **strong in-house investment capability**, **bridging grants and impact investing** under one roof | **Dandekar, Premji** |
+| **Third-party intermediary or platform** | Families wanting strategic philanthropy **without building in-house capacity** | An **NGO, partner institution or platform** |
+
+- The right model depends on the family's **scale, identity and in-house capability**, and on the strategy the family agrees for community engagement.
+
+#### Generational handoffs in giving: Jamnalal Bajaj Foundation
+
+| Year / Generation | Leader | Event |
+|-------------------|--------|-------|
+| **1977** (founder) | Jamnalal Bajaj | Foundation inaugurated; **founder's philanthropic identity** |
+| **2nd generation** | Ramkrishna Bajaj (son) | Chairmanship passes down the family line |
+| **1994** | Rahul Bajaj (grandson) | Becomes chairman |
+| **2022** | Shekhar Bajaj (great-grandson) | Becomes chairman |
+
+- Generational handoffs happen in **philanthropy as well as in business**, and families take them seriously.
+
+#### Legal vehicles for Indian philanthropic capital
+
+- Indian philanthropic capital can be structured as a **Section 8 company**, a **public charitable trust** or a **registered society**.
+- The choice **parallels the choice of legal form for the business** itself.
+
+#### Questions for examining a family firm's giving
+
+- Is giving **purely altruistic**, or does it also serve intended or unintended **strategic, instrumental** benefits?
+- How does the **next generation get involved**, and how is giving built over time?
+- Is it **coordinated at the family level or the firm level**, or a set of **independent, episodic** initiatives?
+- How does **family spirituality** build and strengthen giving over time?
+
+## 7.3 Conversation: Anand Sweets
+
+### 7.3.1 The Anand Story and Coming Home
+
+#### Anand Sweets: profile
+
+| Item | Detail |
+|------|--------|
+| **Founded** | **1988** by Ankush's father, a **500 sq ft store on Commercial Street, Bengaluru** |
+| **Founder background** | Salesman in a sweet store for **17 years** before starting |
+| **Today** | About **20 stores in Bangalore**; **airport retail** (a big business); bakery and restaurants; large **online** presence on all **quick commerce** platforms; **exports to about 5 countries** |
+| **Brand ethos** | **"The taste of Royal India"**: the best of Indian royalty and Indian products |
+| **Founding tenets** | **Customer service** and **impeccable quality when nobody is watching** |
+
+#### Ankush Dadu's path home
+
+- Did not take the typical path of sitting in the store straight out of college (as **Marwari families** often expect); chose to **explore and learn outside**.
+- **Thoughtworks** (technology), **Toyota** (operations), business school, then **Deloitte** consulting (US, Bangalore, Singapore).
+- **Tipping point:** after a polished client presentation, he asked himself **"How are they going to implement this?"**; consulting strategy felt **superficial** because, from a family business background, he knew how hard implementation is.
+- In the corporate world he was always pleasing the next level (manager, senior manager, partner, client); he wanted to **do something for himself** where he could create impact.
+
+#### No expectation to join: choice brings accountability
+
+- Brothers **Arvind and Ankit** joined earlier, for their own reasons:
+  - Elder brother: joined during the **2008 financial crisis** ("I've done all of this to come and **sell samosas**").
+  - Other brother, a **chartered accountant**, saw an opportunity to **regulate the financial structure**.
+- There was **no definitive path or expectation**; each joined **when it felt right**, which took pressure off.
+- **With choice came accountability:** **"It's yours to make or break."**
+
+#### What built the brand
+
+- Founder was **"showkeen"** (loved to dress well; never wore a creased shirt), so the brand DNA was to do things **slightly opulent, slightly bigger than the status quo**.
+- **Bangalore's dramatic change** (IT, global travel) signalled that **if they did not adapt in time, they would be irrelevant**.
+- One of the **first legacy companies to adopt technology** and online channels (**Swiggy, Zomato** early; now **quick commerce**).
+- **"Nostalgia is easily forgotten":** remain nostalgic **yet stay relevant**.
+
+| Step | Focus |
+|------|-------|
+| 1 | **Packaging and branding** (no other mithai brand was doing it) |
+| 2 | **Cleaning up processes**, keeping customer service and quality **sacrosanct** |
+| 3 | **Elevating the store experience** |
+| 4 | Making **factory processes replicable** ("**nobody wants surprises in food**") |
+
+- **Leadership:** work should happen **without the father or a brother standing there**; **true leaders become replaceable**.
+- Core: **stay relevant**, keep ears on the ground, find the **sweet spot between new age and traditional**; a **modern brand still Indian at heart**.
+
+#### Family business as an emotional ecosystem
+
+- Strategy and "book gyaan" are not enough: you must **navigate emotions, egos and relationships**; a **high emotional quotient** is make or break.
+- **Differences are healthy**, but **respect the founder's past choices** rather than trying to "change the company for good"; change has a **cost**.
+- Know **what to change and what not to change**; maintain a **continuum** with history.
+- Father's message: never forget **what the brand is known for**; it was relevant 30 years back, is relevant today and will be in 200 years.
+- **"If you don't know where you've come from, you don't know where you're going."**
+
+### 7.3.2 Earning the Right to Change
+
+#### The magic wand fallacy
+
+- Arrived to a **very rigid infrastructure** with a plan to **transform the company in 2 years**.
+- Many second- and third-generation entrants believe in a **magic wand**: right people, **10X salaries**, technology.
+- **Change is very hard; long-term change is harder**; for long-term change you must **earn your right to change**.
+- Telling people "everything happening is wrong" is a **recipe for disaster**; it reflects **not respecting the other person's journey**.
+- After a couple of years as a **"rebel"**, he learned to **build consensus**: change **with** people has **10x** the impact of change without them.
+
+#### How he earned the right
+
+| Lever | Detail |
+|-------|--------|
+| **Pick what nobody is looking at** | Earn confidence through overlooked problems, **not capital-intensive** initiatives |
+| **Save costs** | "The minute you start **saving costs** in any family business, you have earned your right"; spending is easy, the grind is hard |
+| **Strategic replacements** | Respect and push people, but replace those who are a **burden on change** |
+| **Be a catalyst, not a poster boy** | Inspire brothers and others that change is possible; keep ego aside, be stubborn |
+| **Humility** | It is **never a solo journey**; each brother solved a problem; **standing on their shoulders** |
+
+#### Working with long-serving employees
+
+- Staff with **30 to 35 years** of service hold the founder's trust; being "right" would mean **questioning their service** and their "report card", which feels **threatening**.
+- **Empathy:** put yourself in their shoes to understand the resistance.
+- Do **not be a snitch** to the father; get them into confidence and **make it appear that they are driving the change** ("this person came up with the idea, I am backing it").
+- Everybody needs **validation and a tap on the back**; afterwards most initiatives were supported.
+
+#### Professionalising: KPIs, SOPs and professionals
+
+- A company that believed **loyalty comes before skills** had no professionals; each of the first **5 to 8** hires was a **"war negotiation"** (professionals cost at least **3X**).
+- **First hire: a design person**, justified because it **saved money** versus an agency.
+- **Quality team:** father believed quality required **being physically on the ground** (a workaholic, 7 days a week), which **cannot scale**.
+- **First principles:** **product is the backbone** of everything (beyond packaging, branding, stores).
+
+#### Systemising quality: lessons from Toyota
+
+- Toyota works on **SQPC: safety, quality, profit, cost**; quality and safety are paramount. Toyota showed that systemising quality was **doable** in India with the right culture and processes.
+- **Culture needs discipline and some social shaming**: management must consistently point out lapses (e.g. cleanliness) so peers reprimand deviations.
+- **Social cues:**
+  - Factory has **4 cabins: 3 for the family, 1 for the head of quality**, signalling **quality is bigger than us**.
+  - The quality head's rejection is final.
+  - Everyone wears a **lab coat, dry-cleaned every day**.
+- **Same standard as for one's own children:** customers come with trust; hold that standard for **everybody else's children**, and for employees' food too.
+- **Etios anecdote:** Toyota's first car made and fully assembled in India; an engineer **stayed 3 years with Indian families**; at the launch, staff were reminded that each car is **someone's first car**, carrying emotional, financial and family aspirations. For Anand, **every product goes into someone's happy occasion**.
+- **Repeatability is everything:** once a clean environment becomes habit, **the people in the system push out** those who distort it.
+
+#### Building the quality function
+
+- First hires (generalist **food technologists from dairy industries**) talked about **world-class systems nobody understood**; the business needed to **build a base** first.
+- Breakthrough: a hire from a **very similar brand** showed it was possible.
+- **Milk yield:** typical science says about **15% milk solids** (khoa / chhena); Anand was getting **8 to 9%** due to watered milk and floor staff with **incentives tied to vendors**.
+- Lesson: **everything is driven by incentive**; understand the incentive to change or not change.
+- Result: **saved crores** from vendor and process changes in **six months**; today about **20 food technologists**, a **microbiological lab**, **international certification**, recognised by central food safety teams as following international standards.
+- Industry is still **handmade and people-dense**, and the **human touch** is valued.
+
+#### Influencing brothers and father
+
+- With employees there is the **"boss's son" clout**; with brothers and father there is not, so **emotional quotient** matters more.
+- Understand what is favourable to each person and **talk to each in a language they understand**; **test the water** and adjust.
+- **Storytelling** (from a theatre background): how a pitch is framed and built around incentives works **9 out of 10 times**.
+- Key skills for today, especially as AI does everything else: **empathy, emotional quotient and the art of storytelling**.
+
+#### How the three brothers work together
+
+| Practice | Detail |
+|----------|--------|
+| **Different skill sets** | Varied interests across business aspects |
+| **Boundaries, no written rules** | Understood **overlaps**; EQ keeps them from crossing boundaries even when **inefficient** |
+| **"Is it my battle to fight?"** | Suggest, then leave the call to the **owner of that area** |
+| **Regular meetings** | Brothers and a couple of cousins meet **every couple of weeks** on larger direction |
+| **Own P&Ls** | Each drives **their own P&L** |
+| **Shared customer responsibility** | Any customer can call any of them; **never "it's not my responsibility"** |
+| **Pick your battles** | Someone puts their foot down only when something is not acceptable |
+
+- **Harmony is more important than the final outcome:** **"Inefficient but together is way better than absolutely efficient and then broken."**
+- **Five fingers analogy:** each functions differently, the thumb cannot do what a finger does, but **together they are powerful**.
+
+### 7.3.3 Legacy, Modernisation and the Next Generation
+
+#### Modernisation is never overnight
+
+- The modernisation journey has run for **about 15 years**; changing everything overnight is **bound to fall**.
+- Early on: **good packaging** and **branding**, when most Marwari mithai shops saw branding as **a waste of money**; each step was a **leap of faith** (like early Swiggy and Zomato).
+- An inherent **muscle to be flexible**, to try, and the gumption to experiment (shared by the father); some ideas failed.
+- **Constant question: "What next?"** (health, customer and store experience, new channels) because cities, customer behaviour and demographics are changing.
+- **Airports:** because **India is going to travel**.
+- **Humility over complacency:** family businesses can be so **cushy and comfortable** that they are **arrogant about an insight**; "Will I be a brand that is good tomorrow?"
+- **MVP approach:** try, fail, retry until the channel becomes big.
+- Online: started with **a small machine** to engineer **shelf life without losing the product's ethos**; today **five big machines (10X the cost each)**; started **6 to 7 years before quick commerce**, avoiding a catch-up game.
+- **Keep learning from competitors**.
+
+#### Is mithai a commodity? No
+
+| Argument | Detail |
+|----------|--------|
+| **Commodity defined** | Something with **no emotion**; a **means to an end** (rice, dal) |
+| **Sweets were always special** | Royalty had karigars make sweets; **chandi ka vara** on kheer: why put silver on a commodity? |
+| **Sweets are emotional and communal** | Happy occasions, exchange, community, society; integral to culture |
+| **Real problem** | It was **sold badly**: fragmented, small dirty shops, **corners cut on quality, hygiene and experience** |
+| **Lack of pride** | Image of a black kadai and a worker in a banian vs a refined bakery; nobody dared change it, or had the incentive ("chal rahe hai"); old sweet-maker money went into **land** |
+| **Anand's response** | Give the industry its due: **premium experiences and pride**; uplift the industry |
+
+- Brands such as **Forest Essentials and Good Earth** showed **India can be luxurious**; mithai as the **best export and souvenir product** (airports).
+- New brands reimagining Indian mithai are **good for the industry**, not a threat.
+
+#### Whose legacy is it?
+
+- Anand **will always be the father's legacy**: he started with nothing and gave his life to the brand.
+- Ankush's legacy: **carry his father's legacy forward** so he can feel proud ("quality is still in place, customers still go back happy"), **keep pushing the boundaries of what mithai can be**, and **bring pride back** into the industry and the organisation.
+
+#### Who holds the family together: women
+
+- At the start, with four children and suppliers demanding advances (problems with MOQs), the father wanted to quit; the mother said **"This is what you know. Try. I'll support you."**
+- She ran everything at home, giving him the comfort to push; her **humility** keeps the family grounded.
+- Today the **wives keep the family together**; the business is only one aspect of the family, and **without the family structure there is no business**.
+- **"Women make or break a family business."**
+
+#### Frugality: hindrance or discipline?
+
+- **Frugality is a culture**, born of early struggle; sometimes a hindrance.
+- Evaluation shifted from **"it's too expensive"** to: **Is it good for the business? Is it the right time? Can the business support it?** If yes, invest.
+- **No external investors**; mostly **debt working capital**, so **cash flows matter** (e.g. **Diwali purchases are 10x**, leaving little cash even for a five lakh rupee machine).
+- Gives a **sense of responsibility for every penny**; if refused, build a better use case and try again.
+
+#### The next generation
+
+- Children are young; no serious succession conversation yet.
+- The father **did not push** the brothers; his **passion, hard work and zeal** inspired them; the hope is the next generation **joins because they like it**.
+- The **love and respect for the brand** is invaluable and is what they hope the next generation experiences.
+
+#### Advice to next-generation entrants: the Ps
+
+$$\text{Privilege} \rightarrow \text{Passion} \rightarrow \text{Pride} \rightarrow \text{Performance, Profits, Perpetuity}$$
+
+- **Privilege:** an established business means you are **not in survival mode**; do not take it lightly.
+- Convert privilege into **passion**, then **pride**; once proud, **performance, profits and perpetuity follow**.
+- **Do not expect a rosy ride:** **earn your right to drive change**, earn respect and your place; without it there is frustration, agony, angst and anxiety.
+- Once the right is earned, there is **love and acceptance**: a **flywheel** that makes you **unstoppable**.
+
+## 7.4 Case Simulation: Kamath Coffee
+
+### 7.4.1 Case Set-up
+
+- **Family firm:** the Kamaths have roasted coffee in **Chikkamagaluru for sixty years**.
+- For as long, they have **quietly paid for a school, a clinic and festival feasts** for families on their coffee estate.
+- **Trigger:** the business has grown **too big for informal giving**, and the **youngest Kamath has come home** with plans of her own.
+- **Task:** advise the family on **giving with purpose** and on **bringing change into a business shaped by its history**.
+- Format: choose an option at each decision (cannot be changed), score shown at each stage, **total out of 18** with a model recommendation; 20 minutes.
+
+## 7.5 Module Summary
+
+### 7.5.1 Closing Synthesis
+
+- Long time horizons, concentrated ownership and the **family name on the door** give family firms a distinctive relationship with their communities; for many of India's oldest business families, **giving has become part of who they are**.
+- Families give for **moral, instrumental, relational and spiritual** reasons, and philanthropy protects **both financial and socioemotional wealth**.
+- Philanthropy gives the family a **lower-stakes space to articulate, transmit and renew its values**, which the operating business cannot easily do.
+- Turning intentions into impact requires **champions, the right vehicles, rigorous frameworks, attention to impact and risk, and governance that survives generational handoffs**.
+
+| Takeaway | Detail |
+|----------|--------|
+| **Stakeholders across decades** | A family firm's community record is read as **the family's own** |
+| **Two forms of wealth at once** | Philanthropy builds financial and socioemotional wealth, **whatever the motive** |
+| **Value work** | Philanthropy passes on **values, not just assets** |
+| **Strategic giving** | Right vehicle, frameworks, impact and risk assessment, next-generation involvement |
+
+## Quick Revision Summary
+
+### Key Definitions
+
+- **Stakeholder theory:** strategy as a **web of relationships** with groups that affect or are affected by the firm, managed deliberately, not as arm's-length transactions.
+- **Family firm as stakeholder manager:** the family is both an **internal actor and a visible external stakeholder**.
+- **Socioemotional wealth (SEW):** non-financial wealth **beyond the balance sheet**; FIBER: family control and influence, identification, binding social ties, emotional attachment, renewal of family bonds.
+- **"Dual wealth":** informal term the course **deliberately avoids**; not a separately named academic construct.
+- **Value work:** philanthropy as the mechanism to **articulate, transmit and renew** family values across generations.
+- **Impact champion:** course label for family members who lead giving (often next generation, sometimes founder, often women); not an established academic term.
+- **Giving Pledge:** public commitment to give away **more than half of one's wealth**.
+- **Gandhian trusteeship:** wealth **held in trust for society**, not as pure private property.
+- **Earning the right to change:** building credibility and consensus (overlooked problems, cost savings, empathy) before driving change in a family firm.
+
+### Important Relations
+
+- Three traits: **longer time horizons + identity fused with family name + concentrated, continuous ownership**.
+- Three CSR motives: **moral (right thing) / instrumental (reputation, legitimacy) / relational (family's social ties)**; instrumental and relational often outweigh moral.
+- CSR to SEW chain: protects identity and reputation → lower risk to binding social ties → next generation engaged through shared values → renewal of family bonds.
+- Spectrum of capital (impact first → return first): **pure philanthropy → impact-first investing → impact investing → blended finance → ESG-screened → traditional investment**.
+- Three inflection points: **start-up → scale-up → tune-up**.
+- India CSR: about **2% of average profit of the last three years**; firms choose area and geography; CSR committee; independent impact assessment above threshold (**CSR Amendment Rules 2021**); **Section 135**.
+- Anand advice: **privilege → passion → pride → performance, profits, perpetuity**.
+
+### Must-Remember Points
+
+- **Eight pillars of family spirituality:** connection and transcendence; spiritual growth and development; nature and art experience; emotional sharing; nurturing relationships; learning and education; services and acts of kindness; shared practices and rituals.
+- **Two Indian moral roots:** **Gandhian trusteeship** (Bajaj, Birla: khadi, women's education, marginalised communities, independence movement) vs **communitarian roots** (Tata, Parsi service tradition and Jamsetji Tata's reformist vision; also Jain, Chettiar); **common outcome: wealth routed through trusts at scale**.
+- **Value work roles:** local roots and reciprocity; a role for everyone; a unifying force (**30-country, 70-interview study**); a training ground.
+- **Five conditions for collective impact:** common agenda, shared measurement, mutually reinforcing activities, continuous communication, backbone organisation.
+- **Assessing impact:** theory of change or logic model; mandatory independent assessment above threshold. **Assessing risk:** fiduciary duty, reputational fear, corporate constraints.
+- **Bringing the family in:** family councils; next-gen giving circles and philanthropy committees; a giving identity of their own; hands-on, not episodic.
+- **Six channels:** private foundation or trust; corporate CSR vehicle; Giving Pledge; venture philanthropy or impact investing (Raintree); platform or intermediary (Dasra); family office impact arm (Premji Invest).
+- **Four organising models:** standalone foundation or trust (Tata, Bajaj, Birla, Godrej, Murugappa); corporate CSR arm (AMM Foundation, both roles); family office impact desk (Dandekar, Premji); third-party intermediary or platform (NGO, partner institution, platform).
+- **Legal vehicles:** Section 8 company, public charitable trust, registered society.
+- **Key cases:** Tata Trusts (1892; about 66% of Tata Sons; Dorabji's heirless stake; Noel Tata, October 2024); Jamnalal Bajaj Foundation (1977, Morarji Desai; Jamnalal → Ramkrishna → Rahul 1994 → Shekhar 2022; 352 crore, #3, 2024); AMM Foundation (1922 hospital stone; 100th year January 2024); Shiv Nadar Foundation (#1, 2,153 crore, 2024).
+- **Walton vs Ford:** Walton (1987, all-family board, 22 → 5 in 2016, third generation, $2.2 billion over five years, declined Giving Pledge) **doubled down on hands-on control**; Ford (1936, Henry Ford II left 1976, Henry Ford III 2019) **disengaged for over four decades**, then reconnected.
+- **Anand Sweets:** 1988, 500 sq ft on Commercial Street; tenets customer service and quality when nobody is watching; leaders become replaceable; earn the right to change (cost savings, make others own the change); quality head's cabin among the family's; harmony over efficiency; mithai is not a commodity; women make or break a family business.
