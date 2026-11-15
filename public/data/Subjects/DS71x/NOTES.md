@@ -1092,3 +1092,749 @@
 - Operations page crowding is solved with default views plus buttons that disclose the box plot or trend chart.
 - Reserve red, yellow and green for below, on, above target; use a single-colour gradient for degrees; shift status red off brand red.
 - Eight steps: stakeholders, requirements, data audit and feasibility, phase plan, information flow and hierarchy (wireframe), chart finalisation, look and feel (mock-up), ongoing agile development.
+
+# Module 3: Building Visualisations with Power BI
+
+## 3.0 Module Overview
+
+### 3.0.1 Scope of the Module
+
+- The module **moves from planning a dashboard to building one in Power BI**, Microsoft's business intelligence tool.
+- **Data first**: load four separate files, clean them in **Power Query**, connect them in a **data model**, set up **hierarchies** and write calculations as **measures in DAX**.
+- **Look next**: set a **theme** so every visual follows the same colours, text and settings.
+- **Visuals**: the seven main chart types (**table, donut, column and bar, line, KPI card, scatter**), plus **slicers, interactions, drill-down and tooltips**.
+- **Assembly**: put the visuals on one report page and manage it with the **filter, selection and grouping tools**.
+- **Additional charts**: matrix, combo chart, waterfall chart and stacked area chart.
+- Running case: **Superstore**, a fictional US retailer of office supplies, furniture and technology, 2015 to 2018.
+
+### 3.0.2 Learning Objectives
+
+- Bring multiple data files together, clean them and connect them into one data model.
+- Decide between a **calculated column** and a **measure**, and write basic **DAX** measures.
+- Build and format the core visuals, using **conditional formatting**, **hierarchies** and **drill-down** to answer business questions.
+- Give users control through **slicers, interactions and tooltips**, and assemble a finished report page.
+
+## 3.1 Getting Started and Data Preparation
+
+### 3.1.1 Power BI and the Superstore Data
+
+#### Key Concept: Report vs Dashboard in Power BI
+
+| Term | Power BI meaning |
+|---|---|
+| **Report** | One or more **pages of interactive visuals**; what is built in Power BI Desktop in this module |
+| **Dashboard** | Always a **single screen** made by **pinning visuals** from reports in the online cloud service |
+
+- What is normally called a multi-screen dashboard is called a **report** in Power BI's language.
+- **Power BI Desktop** is free and runs on **Windows**; it has **new releases every month**, so menus may look slightly different but the steps still work.
+- The **online service** (cloud) is used to share reports and dashboards.
+
+#### Superstore Data: Four Files
+
+| File | One row is | Key fields |
+|---|---|---|
+| **Orders** | One **product in an order** (so an order ID repeats across rows) | Order date, customer ID, product ID, net sales, quantity, profit, discount |
+| **Customer lookup** | One customer | Customer name, **segment** (consumer, corporate, home office), city, state, **region** |
+| **Product lookup** | One product | Product ID, **category** (technology, office supplies, furniture), **subcategory**, product name |
+| **Shipping** | One order | Shipping date, shipping mode |
+
+- Scale: **2015 to 2018**, about **9,000+ order lines**, total sales about **2.2 million dollars**.
+- Four separate files is realistic: orders, customers and products are held by different teams, and **bringing them together is part of an analyst's job**.
+- Guiding question: **How is the business performing? Where is it making money and where is it losing money?**
+
+### 3.1.2 Interface and Loading Data
+
+#### Interface Areas
+
+| Area | Role |
+|---|---|
+| **Data pane** (right) | Tables and all their columns used to build charts |
+| **Visualizations pane** (middle) | Choose the visual; also holds the formatting options |
+| **Canvas** (centre) | Drag and drop to build the report |
+| **Report view** | Default view where visuals are built |
+| **Table view** | Shows the data like a spreadsheet; quick check that data loaded properly |
+| **Model view** | Connect tables and set relationships |
+| **DAX query and TMDL views** | More advanced views, not used here |
+
+#### Loading Data
+
+- Start with a **Blank report**, then **Get Data** (Home ribbon). Sources include **Excel, CSV, SQL Server** and many more; large organisations typically connect to SQL tables.
+- Choosing **Excel workbook** opens the **Navigator**, which lists each worksheet; options are **Load**, **Transform Data** or Cancel.
+- Here: the Orders and Shipping sheets come from one workbook; the customer and product files are loaded separately.
+- Each worksheet becomes a **separate table** in the data pane.
+
+#### Field Icons in the Data Pane
+
+| Icon | Meaning |
+|---|---|
+| **Sigma** | Numeric field that can be added or subtracted |
+| **Calendar** | Date field |
+| **Calculator** | **Calculated measure** |
+
+### 3.1.3 Checking Tables in Table View
+
+| Problem found | Fix |
+|---|---|
+| **Postal code** stored as a number (shows sigma) | Column tools: change data type from whole number to **text**, since postal codes are never added |
+| **Order date and shipping date** carry an unused timestamp | Change data type from date-time to **Date** and pick format **MM/DD/YYYY** |
+| **Country** column has only one value (United States) | Remove it; **every column uses memory**, so keep only columns useful for visuals |
+| **Product lookup has no headers** (shows Column1 to Column4) | Needs Power Query: use first row as headers |
+| Customer name wanted in capitals | Needs Power Query: add column from examples |
+
+- Date formatting done in table view carries into every visual built afterwards.
+- Table view also allows **sorting ascending or descending** to inspect values.
+
+### 3.1.4 Power Query Transformations
+
+#### Definition: Power Query
+
+- **Power Query Editor** (Home, Transform Data) is a tool for data operations that normally need a data engineer, simple enough for a layperson.
+- In large projects data engineers prepare the data; analysts may still need small transformations.
+
+#### What Can Be Done
+
+- Use first row as headers, add a custom column, choose or remove columns, keep or delete rows, remove duplicates, copy a table.
+- The **Applied Steps** pane records every action taken.
+
+| Task | Method |
+|---|---|
+| Product lookup headers | **Use first row as headers** |
+| Remove country | Select the column, **Remove columns** (recorded as the step "Removed columns") |
+| Capitalised customer name | **Add column from examples**: type the expected result for a couple of rows and the tool learns the pattern and fills the rest |
+
+#### Close & Apply vs Apply
+
+| Option | Effect |
+|---|---|
+| **Close & Apply** | Applies changes and closes Power Query |
+| **Apply** | Applies changes but **stays in Power Query**, so other tables can be edited |
+
+### 3.1.5 Data Model and Relationships
+
+#### Key Concept: Why Connect Tables
+
+- Most dashboards use **multiple data sets**, each with part of the information (orders hold the numbers, lookups explain the IDs).
+- A segment-wise report needs the order table to refer to the customer lookup.
+- After connecting, it is **as if working with one file**. The **data model is one of the most important inputs for a great dashboard**.
+- Done in **Model view**.
+
+#### Match Key
+
+- Tables can be connected only if they share **at least one common column (a match key)**.
+- Power BI **auto-connects** when column names are spelled the same.
+
+| Tables | Match key | Connection |
+|---|---|---|
+| **Orders and Products** | Product ID | Automatic |
+| **Orders and Shipping** | Order ID | Automatic |
+| **Orders and Customers** | Customer ID in orders, but **cust_id** in the customer lookup | Names differ, so **drag cust_id onto customer ID manually** |
+
+#### Relationship Cardinality
+
+- Dragging the key opens a relationship dialog that shows the direction, for example **from customer lookup to orders: one to many**.
+- **One to many**: each customer ID has **one row** in the lookup but the same customer may have **many order rows**. Seen from the orders side the same relationship reads many to one.
+- Selecting a connector shows the summary (which column on each side).
+
+#### Checks for Lookup Tables
+
+- Lookup tables must have **unique rows**; if a product ID appears in several rows the model cannot connect correctly.
+- Confirm the **correct column** is mapped on both sides.
+
+### 3.1.6 Hierarchies
+
+#### Definition: Hierarchy
+
+- A **hierarchy** arranges data in levels so users can view patterns at the top level and **drill down** to explore deeper.
+- Example use: year-wise sales show a dip; drill from year to quarter to see whether all quarters dipped or only one.
+
+| Hierarchy | Levels | How it is created |
+|---|---|---|
+| **Date** | Year, quarter, month, day | **Automatic**: Power BI configures dates as a hierarchy |
+| **Product (category hierarchy)** | Category, subcategory, product | **Manual**: Power BI cannot recognise it unless defined |
+
+#### Creating the Category Hierarchy
+
+1. In the product lookup, click the **three dots next to Category** and choose **Create hierarchy**.
+2. For subcategory and then product, three dots, **Add to hierarchy**, choose the category hierarchy.
+3. **Hide** the original fields (category, subcategory, product) so they are not used by mistake; they stay available inside the hierarchy.
+
+- An arrow beside a field in the data pane shows it is a hierarchy.
+- The lowest level is the product: it is added as **product ID** when the hierarchy is first built and as **product name** when it is used in the bar chart.
+
+## 3.2 Measures and DAX
+
+### 3.2.1 Columns vs Measures
+
+#### Definitions
+
+| Term | How it is calculated | Stored? | Use |
+|---|---|---|---|
+| **Calculated column** | **Once for every row** | **Yes**, in the table, so it uses memory | Value needed for **filtering** or as an **axis** (for example capitalised customer name) |
+| **Calculated measure** | **On the fly** at query time, for whatever is currently filtered, sliced or grouped | **No**; recalculates on every change | Anything that must **aggregate or react to the user's selection** |
+
+- Total sales for the business is one number; with a region selected the **same measure** gives that region's sales.
+- Measures suit total sales, percentage of target, year-over-year growth, quarterly versus yearly sales.
+- A percentage per row would be wrong: for a selected region the percentage must be **calculated at that time rather than adding up row percentages**.
+
+#### Simple Test: Column or Measure
+
+| Question | If yes |
+|---|---|
+| Does it need to **change automatically with filters or slicers**? | **Measure** |
+| Do I need it to **filter on or put on an axis**? | **Column** |
+
+- You **cannot filter on a measure**; filtering needs an actual column.
+
+### 3.2.2 DAX Basics
+
+#### Definition: DAX
+
+- **DAX** stands for **Data Analysis Expressions**, the formula language for measures, similar to Excel formulas.
+- It has a large function library: summing, counting, dividing, conditions, and date work such as year-on-year or month-on-month.
+
+#### Creating a Measure
+
+- Three dots next to the table in the data pane, **New measure**, or **New measure** on the ribbon; a formula pane opens like Excel's.
+- Typing `SUM(` shows a dropdown of tables and columns; the measure appears in the table with a **calculator** icon.
+- **Formatting** (for example percentage, decimals) is set on the measure and becomes the **default across the report**; it can be overridden per visual.
+- Measures can be built on earlier measures; a few **building-block measures** are created first and others reuse them.
+- Save the file early and often: Power BI saves as a **.pbix** file (here named Superstore).
+
+### 3.2.3 Superstore Measures
+
+| Measure | DAX | Note |
+|---|---|---|
+| **Total net sales** | `Total Net Sales = SUM(Orders_Products[Net Sales])` | **Net sales = gross sales minus discount**, the amount actually paid |
+| **Total profit** | `Total Profit = SUM(Orders_Products[Profit])` | Absolute profit amount |
+| **Profitability** | `Profitability = DIVIDE([Total Profit], [Total Net Sales])` | Format as **percentage** |
+| **Total discount** | `Total Discount = SUM(Orders_Products[Discount])` | Sum of discount amounts |
+| **Discount percentage** | `Discount PCT = DIVIDE([Total Discount], [Total Net Sales] + [Total Discount])` | Denominator is **gross sales** |
+
+$$\text{Profitability} = \frac{\text{Total Profit}}{\text{Total Net Sales}}$$
+
+$$\text{Discount \%} = \frac{\text{Total Discount}}{\text{Total Net Sales} + \text{Total Discount}}$$
+
+- Discount percentage uses **gross sales** in the denominator, **not net sales**, because net sales is already reduced by the discount.
+- Check: total profit of about 273K on net sales of about 2.2 million gives about 12.4%, matching the 12.42% shown on the table totals row.
+
+#### DIVIDE vs Slash
+
+| Operator | Behaviour when the denominator is zero |
+|---|---|
+| **/** (Excel-style) | Gives an **error** |
+| **DIVIDE()** | **Safe divide**; handles the divide-by-zero case |
+
+- `DIVIDE(numerator, denominator)`: numerator first, then denominator.
+
+## 3.3 Report Theme
+
+### 3.3.1 Why Set a Theme First
+
+- **Formatting is the most time-consuming part** of building a report, so anything set up at the start saves time on every visual.
+- A **theme** is one set of **colours, text and visual settings** that every chart follows.
+- Path: **View, Themes, Customize current theme**. The theme can be **edited at any point later**.
+
+### 3.3.2 Theme Settings Used
+
+| Setting | Choice in the course |
+|---|---|
+| **Name** | Superstore course theme (saved as base theme selection) |
+| **Colour palette** | **Accessible default**: adapted so slightly colourblind users can read most colours; the **first colour becomes the default** for most charts (column and line charts are blue) |
+| **Sentiment colours** | **Negative: dark red; neutral: amber; positive: green** |
+| **Divergent colours** | For gradients (like Excel colour scales): **maximum green, middle amber, minimum red** |
+| **General text** | **16 points** (used for table values and similar) |
+| **Title** | Changed from 12 to **18 points** |
+| **Visual background** | White |
+| **Border** | On, **light grey** so it does not dominate; **rounded corners** about 10 pixels |
+| **Shadow** | On, so visuals look slightly lifted off the page |
+| **Page canvas size** | **1920 by 1080** (default); enough detail even on large monitors |
+| **Canvas background** | Slightly grey with added transparency so white visuals stand out |
+| **Wallpaper** | Area **behind the canvas** when the screen is larger than the page; left as default |
+
+- Companies vary colours to match their **brand palette**.
+
+### 3.3.3 Saving and Limits of a Theme
+
+- **Download current theme** saves a **JSON file** (Superstore Course theme) that can be browsed and applied to other reports.
+- Fonts and colours generally reach every visual, and general text size reaches tables.
+- **Chart title size and axis labels or axis titles often do not follow the theme** and are formatted on each visual.
+- Good habit: change settings in the **theme** where possible instead of visual by visual (for example **tooltip text size**, 16 reduced to **10**). To open the theme, make sure **no visual is selected** (click outside), then use customize your report theme.
+
+## 3.4 Building the Core Visuals
+
+### 3.4.1 General Formatting Workflow
+
+- A visual is added from the **gallery** by a single click or drag and drop onto the canvas.
+- Two panes: **Build visual** (assign fields) and **Format your visual** (appearance).
+- Format pane has two tabs: **Visual** (specific to the chart type) and **General** (common to all: size, title, subtitle, effects such as border, background and curved corners, header icons, properties).
+- **Swap visual type**: with a visual selected, click another visual icon and the same data is redrawn (pie to donut to bar).
+- **Copy and paste (Ctrl+C, Ctrl+V)** a formatted visual and replace the field to reuse formatting.
+- **Format painter** (top ribbon) copies **only formatting** from one visual to another to keep a consistent look.
+- **fx** beside a setting means **conditional formatting** can be applied.
+
+### 3.4.2 Tables
+
+#### Key Concept: Purpose
+
+- A table **shows the detail** behind a report.
+- Built here as **subcategory performance**: subcategory, total net sales, total profit and profitability.
+
+#### Build and Read
+
+- Fields are dragged in order; the **totals row** is on by default.
+- Each column can be **sorted**; a scroll slider appears when rows do not fit.
+- Totals: about **2.2 million** net sales, **273K** profit, **12.42%** profitability.
+- Most profitable subcategories (labels, paper, envelopes) show **40%+ profitability**; loss-making ones are **tables, bookcases and supplies**.
+
+#### Formatting Options
+
+| Option | Detail |
+|---|---|
+| **Style presets** | For example minimal or flashy rose; **none** allows manual control |
+| **Values and column headers** | Text takes size from the theme; header colour changed to dark blue |
+| **Totals** | Can be turned off or formatted |
+| **Specific column** | Formatting chosen **one column at a time** |
+| **Display units** | Thousands, millions, billions; net sales set to **thousands, 0 decimals**; profit to **thousands, 1 decimal** (smallest value 949 shows as 0.9K); profitability **1 decimal**, no display unit |
+| **Number format** | Set on the **measure** (or in table view for a column); display units are set on the visual |
+| **Cell elements** | Background colour, font colour, **data bars**, **icons** |
+
+#### Conditional Formatting in Tables
+
+| Type | Applied to | Rule or setting |
+|---|---|---|
+| **Icons** | Total net sales | Rules based: default is bottom 33% red diamond, middle triangle, top 33% green; changed to **traffic-light circles** |
+| **Data bars** | Total profit | Positive green, negative red (taken from theme sentiment colours); positive bar lightened in this visual so numbers stay readable |
+| **Font colour** | Profitability | Rule: **greater than minimum and less than 0** gives red (flags loss-making) |
+
+- Conditional formatting is reachable from **cell elements** or from the **dropdown next to the field** in the Build pane.
+- Rules can be by **rules, gradient or field value**; it can apply to **values only, or values and totals**.
+- Changes made on one visual **do not change the theme**.
+- Rules depend on context: real companies often use **targets** (above target green, below red, near target yellow) or a **minimum profitability threshold** (for example anything below 10% is red).
+- **Less is more**: formatting every column overwhelms the user. Format the **one most important column** (for example profit for a finance user).
+- Sparklines for trends in a table are added in the next module.
+
+### 3.4.3 Donut Charts
+
+#### Key Concept: When to Use
+
+- Pie and donut charts show **who contributes to sales** and work **only with a handful of slices**: four regions and three segments qualify.
+
+| Feature | Pie | Donut |
+|---|---|---|
+| Total shown | **No** | **Yes, in the centre** (2.2 million) |
+
+- Fields: **Values** = total net sales; **Legend** = region (customer lookup). **Whatever is in the legend determines the slices.**
+
+#### Formatting
+
+- **Legend off** and **detail labels** set to show everything (category, absolute value and percentage), because matching colours to a legend is hard.
+- Title (General): **"Net sales by region"**, size about 22, centred; **subtitle turned off**.
+- Segment donut made by **copy-paste**, replacing region with segment, then editing the title.
+
+#### Reading the Results
+
+| Chart | Observation |
+|---|---|
+| **Region** | **West contributes almost a third** (about 33.5%, 736.77K); East about 26 to 27% (about 590K); **South is smallest** |
+| **Segment** | **Consumer about 50%**, **corporate about 30%**, **home office about 19%** |
+
+- Hover **tooltips** show whatever fields the chart uses (region, total net sales, percentage).
+
+### 3.4.4 Interactions
+
+#### Key Concept: Default Behaviour
+
+- **A selection in one visual impacts all other visuals on the page** by default. This effect is called **interactions**.
+- Selecting **West** in the region donut changes the donut centre from 2.2 million to **736.77K**; the table now totals **737K** (West only) and the segment donut **highlights** the West share of each segment (highlighted percentages add up to the West share, 33.49%).
+- **Ctrl+click** selects several slices (for example consumer and corporate); **click on empty white space** clears the selection.
+
+#### Edit Interactions
+
+- Select the **source visual**, then **Format, Edit Interactions**; icons appear on the other (target) visuals.
+
+| Option | Effect on target visual |
+|---|---|
+| **Filter** | Target shows **only** the selected data; the whole donut becomes West and percentages sum to 100% (**default for the table**) |
+| **Highlight** | Target still shows all data and **highlights the selected part** (**default between charts**) |
+| **None** | Target is **unaffected** (back to 2.2 million) |
+
+- The designer decides how much interaction to allow, based on user and design requirements; it helps, for example, to select phones and see every chart turn into phone numbers.
+- Interactions work both ways: selecting a table row (for example chairs) shows how much of it comes from each region and segment.
+
+### 3.4.5 Column Charts
+
+- **Column and bar charts compare numbers across categories** because **eyes compare lengths far more accurately than angles**; often preferred to pie charts.
+- Built as **net sales by category**: **X-axis** = category, **Y-axis** = total net sales (technology highest; furniture and office supplies close).
+
+| Improvement | Setting |
+|---|---|
+| **Data labels** | **Best practice for column and bar charts**: without them the reader must read the axis or hover, and hovering is impossible when the chart is pasted into a slide |
+| **Y-axis values** | Turn **off** once data labels are on, for a cleaner chart |
+| **X-axis font** | About 14 points |
+| **Bar colour** | Optional change; Columns, Layout adjusts **spacing between bars** (less space gives thicker bars) |
+| **Title** | General: "Net sales by category", size 20, centred; subtitle off |
+
+### 3.4.6 Bar Charts
+
+- **Column charts suit about 4 to 5 bars**; with more categories (here subcategories) labels tilt and long names are hard to read, so use a **horizontal bar chart**.
+- Method: copy the column chart, replace category with subcategory, then **swap to the bar chart type** and increase the height. Sorting is by the main measure by default.
+- Formatting carried by copy-paste includes data labels; the **title must be edited** ("Net sales by subcategory").
+
+#### Adding Tooltip Detail
+
+- Fields dropped into **Tooltips** appear on hover. **Profitability** added to the tooltip.
+
+#### Conditional Formatting of Bars
+
+- Format pane, Bars, colour **fx**: **rules based on profitability**, **greater than minimum and less than 0**, bar colour **red**; other bars stay blue by default.
+- Any available field or measure can be used, even if it is not in the visual.
+- Result: three problem subcategories (**tables, bookcases, supplies**) are visible at a glance. Selecting furniture shows two loss-making subcategories (bookcases and tables) while chairs and furnishings make money.
+
+#### Explaining the Colour
+
+- Add a **subtitle** (General, Title, Subtitle): "Red bars indicate losses", about 13 points, italic, centred.
+- A **text box** is the other option (covered later).
+
+### 3.4.7 Hierarchy in Charts
+
+#### Key Concept: One Chart Replaces Three
+
+- A manager asks next: **are all tables losing money or only some?** Instead of another chart, use a **hierarchy** (category, subcategory, product name) in the bar chart.
+- Replace subcategory with **category hierarchy**; the top level (category) shows first with **drill icons**.
+
+#### Ways to Drill
+
+| Method | How it works |
+|---|---|
+| **Tooltip drill** | Hover or click a bar and choose **drill down** or **drill up**; no drill-down at the lowest level |
+| **Drill mode (single arrow)** | Turn on; "click a data point to drill" into that bar only; go up one level to return |
+| **Next level (double arrow)** | **All bars move to the next level** (category to subcategory to all products across categories) |
+| **Expand to next level (forked arrow)** | Shows **category and subcategory together** (for example chairs under furniture) |
+
+- Examples: drilling tables shows that most tables lose money; drilling phones shows that nearly all make money except one.
+- Bars sort by net sales by default; use the three dots, **Sort by**, category then subcategory, so subcategories group under technology, office supplies and furniture.
+- Title changed to a generic **"Product Performance: Net sales"**; the subtitle "red bars indicate losses" is kept.
+- **Power BI remembers the drill level at which the file is saved** and reopens at it. Organisations leave the **most-used view** open; users drill from there.
+- New users do not know a chart can be drilled, so give **help instructions** (next section).
+
+### 3.4.8 Help Tooltip
+
+#### Ways to Add Notes
+
+| Method | Visibility | Best for |
+|---|---|---|
+| **Subtitle** | Always visible | **Short notes**, such as what a colour means |
+| **Help tooltip** | A small **question mark** shown on hover; text appears when used | **Longer instructions** that would clutter the chart: how to drill, **last refresh time**, **data issues**, new functionality |
+| **Text box** | Free-standing | Covered in later modules |
+
+- Set under **Format, General, Header icons**: icons such as drill up and drill down can be switched on or off, and the **Help tooltip** is turned on with its text (example: "Red bars show losses. You can use the tooltip to drill down or up into specific bars").
+- New users do not know what a colour means or that a chart can be drilled; notes remove that doubt without cluttering the chart.
+
+### 3.4.9 Line Charts
+
+#### Key Concept: Purpose
+
+- Bar charts compare categories; a **line chart shows how something changes over time**.
+- Build: **X-axis = order date** (date hierarchy used), **Y-axis = total net sales**. Trends are built on dates.
+
+#### Formatting
+
+| Item | Setting |
+|---|---|
+| **Format painter** | Copy formatting (title and fonts) from a formatted visual |
+| **Data labels** | Turned **off** and **Y-axis values on** (font about 12) |
+| **Lines, interpolation** | **Smooth** or **linear** (jagged, follows the points) |
+| **Markers** | Turn on to show the individual data points |
+
+#### Adding Category to Legend
+
+- **Category into Legend** gives three lines.
+- Reading: overall dip from 2015 to 2016. **Furniture grew steadily**; **office supplies dipped and then rose**; **technology dropped in 2016 then accelerated rapidly and overtook the others**. So the dip came from **office supplies and technology, not furniture**.
+
+### 3.4.10 Drill-down in Line Charts
+
+#### Key Concept: When Did It Happen
+
+- The line chart shows **which category** drove the change but **not when within the year**; the date hierarchy lets the user drill down.
+- **A static trend chart** keeps only **Year** on the X-axis: the drill icons disappear.
+
+#### Date Drill Behaviour
+
+| Mode | Result for dates |
+|---|---|
+| **Drill mode on a data point** | Goes deeper into that year only (year, then quarter, then month, then day) |
+| **Forked arrow (expand)** | Shows quarter-wise (then month-wise) across all years; the **daily view is too dense** |
+| **Double arrow (next level)** | **Adds up all Q1s across years**, and so on; **not useful for dates** |
+
+- Examples: 2017, then quarter 2, then April to June, then a May daily view.
+- **Red dots** appear where losses occur because the **format painter carried over the loss-red rule** from the bar chart.
+- Format painter carries **everything, including the help tooltip text**, so it must be edited ("red dots show losses" instead of bars).
+- The **subtitle is dynamic**: it reads "total net sales by year, quarter and month" and changes as the level changes.
+
+#### Trend Per KPI and Responsive Setting
+
+- Copy-paste the chart twice and replace the measure: **total net sales, total profit, profitability**.
+- **Responsive** behaviour shrinks fonts as the visual shrinks. Turn off at **Format, Visual, General, Properties, Advanced options, Responsive**; Shift-click to select several visuals and change them together.
+
+### 3.4.11 KPI Cards
+
+#### Key Concept: Purpose
+
+- KPI cards answer **how are we doing?** at a glance: big simple numbers placed prominently, top or left, so the eye lands there first (visual hierarchy).
+- Use the newest **Card** visual: it accepts **multiple values** and creates a card for each.
+- Values here: total net sales, total profit, profitability.
+
+#### Formatting Levels
+
+| Level | Settings |
+|---|---|
+| **Multi-card layout** | **Tiles** (space between cards) or **table** (no space); **arrangement** horizontal (default) or vertical; **gap** (default 8 points); **background** colours the overall card block |
+| **Cards (individual)** | Background of each card; border; **accent bar** (colour, width, position such as left or top); **shadow** and size |
+| **Callout values** | Size of the number (for example 60), colour; conditional colour |
+| **Labels** | Size of the label text (for example 16) |
+
+- **Apply settings to all** cards, or to **one specific card** (switch the setting selector from all to the card name).
+- Conditional formatting of callout values: **profitability** rule greater than minimum and less than 0 gives **deep red**; the number turns red when the selection (for example tables) is loss-making.
+- Result: **2.2 million net sales, 273K profit, 12.4% profitability**.
+
+### 3.4.12 Slicers
+
+#### Definition: Slicer
+
+- A **slicer** is a control for **user selection** that is **always visible**, letting users customise their view (for example the West manager sees only West; a manager narrows to Q1).
+- Funnel icon; a slicer takes **one field** only.
+- By default **affects all visuals on the page**; control it with **Edit Interactions** (filter or none).
+
+#### Region Slicer
+
+| Setting | Options |
+|---|---|
+| **Style** | **Vertical list**, **tile**, **dropdown** (smallest; best when space is limited) |
+| **Selection** | **Multi-select** by default (Ctrl+click for checkboxes); single select can be forced; **Select all** can be shown |
+| **Header** | Text defaults to the field name; changed to **"Select region"**, italic, so users know it is for them |
+| **Background and border** | General, Effects: background and visual border on (otherwise it shows page background) |
+
+#### Date Slicer
+
+- Copy the formatted slicer and replace the field with **order date**.
+- Options: **Between** (chosen; users know it from travel bookings), before, after, relative date, dropdown; a **slider** lets users narrow the range.
+- Header "Select date range"; if the header size does not change, turn **responsive off** (General, Properties, Advanced options).
+- **Interactions**: the date slicer should **filter the KPIs** but have **no impact on the region slicer**; the region slicer likewise should not affect the date slicer.
+
+### 3.4.13 Scatter Plots
+
+#### Key Concept: Relationship Between Two Things
+
+- A scatter answers a different question: **do two things move together?**
+- Here: do **net sales and profitability** go together across subcategories, and what is the effect of discounting?
+
+#### Field Wells
+
+| Well | Field | Meaning |
+|---|---|---|
+| **X-axis** | Total net sales | Horizontal position |
+| **Y-axis** | Profitability | Vertical position |
+| **Values** | Subcategory | **One bubble per subcategory** |
+| **Legend** | Category | **Colour** shows the category |
+| **Size** | Total discount | Bubble size shows how much discount was given |
+| **Tooltips** | Subcategory | Name on hover |
+
+- Four parameters per dot: **X = net sales, Y = profitability, colour = category, size = discount**.
+- **Total discount** had to be created as a new measure to put into size.
+
+#### Reading the Chart
+
+- Overall there is **no clear relationship** between net sales and profitability; adding **category as colour** can reveal patterns hidden overall.
+
+| Category | Pattern |
+|---|---|
+| **Office supplies** | Clustered at **lower net sales**, many with high profit; most receive low discounts |
+| **Technology** | Mid to high net sales; profitability highest in the mid range |
+| **Furniture** | **Mixed bag, many losses** (tables lowest at about -8.56%, bookcases also negative) |
+
+- **Machines**: not much net sales but **very heavy discount**, profitability only **2.32%**, just above the loss line.
+- **Phones**: high net sales, medium discount. **Binders**: sell a lot with heavy discounts, yet still more profitable than loss-making furniture.
+- Turn on **Category label** (Format) so subcategory names show without hovering, which matters for slides.
+
+#### Formatting the Scatter
+
+| Task | Setting |
+|---|---|
+| **Copy formatting** | Format painter from the line chart; axis titles still need work |
+| **Axis titles** | X and Y titles set to size 18 |
+| **Axis range** | Y-axis minimum and maximum changed from auto (for example **-20% to 70%**, entered as -0.2 and 0.7) so dots are not hugging the axis; top and bottom later set to the same range |
+| **Zero line** | **Add further analysis** pane: **Y-axis constant line at 0**, coloured red |
+| **Target line** | Same tool, for example constant line at **0.2** for a 20% profitability target |
+| **Shade area** | Shade below the line to mark the **loss region**; raise **transparency (about 85%)** so bubble colours stay visible |
+
+- Loss region subcategories: **tables, bookcases, supplies**; machines sit just above it.
+- Caution: total discount amount **rises with sales** even at a small discount rate, so low-sales office supplies show low discount. **Discount percentage** is the better measure for the size of the bubble (to be added in a later dashboard).
+
+## 3.5 Assembling the Report
+
+### 3.5.1 Building the Performance Overview Page
+
+- In practice, from the design we know which charts are needed; **reuse what exists, create what is missing, then assemble**.
+- Page contents: **header "Performance Overview"**, **KPI cards**, **trend charts**, the **product performance bar chart**, and **three slicers** (date range, region, segment).
+
+#### Steps and Tools
+
+| Tool or step | Detail |
+|---|---|
+| **Gridlines and Snap to grid** | View menu; they help align visuals |
+| **Header** | Insert, **Text box**; typed text size about 32 to 36, bold; a logo can be added the same way |
+| **Moving a text box** | Use the **three dots (move handle)**; it does not move while in edit mode |
+| **Copy visuals** | Ctrl+C from other pages (KPI, drill-down line, bar chart) and Ctrl+V on the report page; resize each |
+| **Align** | Select with **Shift**, Format, **Align** (left, top and so on); similar to PowerPoint, with distribute available |
+| **Slicer paste prompt** | When pasting a slicer onto another page, Power BI asks whether to **sync** it |
+| **Third slicer** | Copy an existing slicer, replace the field with **segment**, change the **slicer header** text |
+
+- Always **select the visual** before formatting, otherwise the format pane shows canvas options.
+- Trend charts are shown at **year** level; the user can choose another level.
+- East selected on the report page shows about **590K** net sales on every page that shares the slicer.
+
+#### Sync Slicers
+
+- If the slicer is **synced**, a selection **persists across pages**: choosing East on one page applies on the others, and selecting all returns everything to 2.2 million.
+- **Most companies prefer persistence**; choose **Don't sync** when it is not wanted. It depends on user requirements.
+- Placement and choices can always be changed; use design inputs if a designer is available.
+
+### 3.5.2 Designer Controls vs User Choices
+
+#### Who Chooses What
+
+| Role | What they can do |
+|---|---|
+| **Users** | Pick values in **slicers**, **click visuals** to filter or highlight others, **drill down**, **hover** over tooltips and the help tooltip |
+| **Designer (report author)** | Filters pane, sync slicers, selection pane, grouping, edit interactions, locking and hiding filters |
+
+- Microsoft calls the designer the **report author**.
+
+### 3.5.3 Filters Pane
+
+#### Three Levels of Filter (set by the designer, not the user)
+
+| Level | Scope | Example |
+|---|---|---|
+| **Filters on this visual** | Selected visual only | **Top N**: top 5 subcategories by total net sales; rename the visual to match |
+| **Filters on this page** | All visuals on the page | **Region = West**; remove the region slicer and title the page "Western Region Performance Overview" |
+| **Filters on all pages** | Entire report | Region = West on every page |
+
+- Basic filtering and **Top N** are among the options; **clear filter** removes it.
+- **Lock** a filter so nobody can change it, or **hide** it so it does not show; useful when sharing the **.pbix** file.
+- Use page-level region filters to **create the same report for several regions** without letting users see other regions' numbers (save and send one per region).
+
+### 3.5.4 Sync Slicers Pane, Selection Pane and Grouping
+
+| Tool | Where | Purpose |
+|---|---|---|
+| **Sync slicers** | View menu | Select a slicer, then choose **per page** whether it is **synced** and whether it is **visible** |
+| **Selection pane** | View menu | Lists all elements; **rename** them (segment slicer, date range slicer, region slicer, bar chart, trends, KPI cards, header); **show or hide** them; useful when elements overlap, for editing something behind a logo, or hiding a visual before sharing |
+| **Grouping** | Format, **Group** (and Ungroup) | Group related visuals (trend charts and KPI cards) so they **move together** |
+
+- Renaming matters because with many boxes, slicers and charts it is hard to identify a visual by its default name.
+
+### 3.5.5 What the Module Covers (Recap)
+
+- **Data**: load four files, clean in Power Query, connect in a data model, define measures in DAX.
+- **Visuals**: tables, donuts, column and bar charts, line charts, KPI cards, scatter plots, formatted with the format pane and **conditional formatting** for important numbers.
+- **Consistency**: theme for colours and fonts; **format painter**; select, align, distribute and group; **selection pane** for naming and showing or hiding.
+- **Designer controls**: interactions; filter on a visual, a page or the report; lock or hide filters.
+- **User controls**: slicers, click-to-filter, drill-down, tooltips and help tooltip.
+- Save the file; it is reused in later sessions.
+
+## 3.6 Additional Charts
+
+### 3.6.1 Matrix
+
+#### Key Concept: Table vs Matrix
+
+| Visual | Structure |
+|---|---|
+| **Table** | Lists **one thing per row** (for example subcategories) |
+| **Matrix** | **Crosses two things, rows against columns, with totals both ways** (a cross-tabulation) |
+
+- Build: **Columns** = region, **Rows** = category hierarchy (so rows can be drilled), **Values** = profitability.
+- Reading: **furniture overall about 2.33%**; **technology highest overall at 17.66% but South only 6.27%**.
+- Click **Furniture** to expand: **bookcases and tables make losses**. Bookcases in Central are borderline (not a loss); tables are a problem across regions, **less so in South and West, especially West**.
+- Formatting is like a table: **conditional formatting, font colour, rules** (greater than minimum, less than 0, red).
+- Rules apply to **values only by default**; choose **values and totals** to colour totals as well. Row and column subtotals, bold and so on are controlled in the format pane.
+
+### 3.6.2 Combo Chart
+
+- Used to show **an amount and a rate together** (for example sales and profitability), which sit on **very different scales**.
+- **One as columns and the other as a line, each with its own axis** (line and stacked column chart).
+- Build: **X-axis** = order date, **column Y-axis** = total net sales, **line Y-axis** = profitability. Drilling is available.
+- Reading: net sales rise every quarter, but profitability varies a lot; for example **Q4 2018 has a huge bar with a dip in profitability**, which raises the question of whether sales were bought with too much discounting.
+- **Use carefully**: because the axes differ, show **axis titles on both the primary and secondary Y-axes** so users know which series follows which axis.
+
+### 3.6.3 Waterfall Chart
+
+- Shows **how a total moves from one point to another step by step**: what pushed it up and what pulled it down; very common in finance for seeing what pulls performance down.
+- Build: **Y-axis** = total net sales, **category (X)** = order date kept at **year** only, **breakdown** = category.
+- **Green** = increases, **red** = decreases.
+
+| Period | Reading |
+|---|---|
+| **2015 to 2016** | **Furniture increased**, **office supplies and technology fell**, net effect a **small decline** (matches the line chart dip) |
+| **2016 to 2017** | **All three increased**; technology jumped relatively |
+| **2017 to 2018** | **All three increased**; most of the rise from **office supplies**, furniture grew very little |
+
+- **Check the axis scale**: here it starts at **400K**. The relative contribution is still readable, but **a large bar does not by itself show how large the jump is**.
+
+### 3.6.4 Stacked Area Chart
+
+- Shows **how a total and the mix inside it change over time**.
+- Better than two donuts (for example segment sales in two different years), which are hard to compare.
+- Build: **X-axis** = order date at year level, **Y-axis** = total net sales, **Legend** = segment.
+- **100% stacked area chart**: shows **only composition**, not absolute values; clearer when the change in total makes the stacked version hard to read.
+- Reading: **consumer is dominant**; in the 100% view the **consumer share comes down, corporate takes over space, and home office stays reasonably stable**.
+
+## Quick Revision Summary
+
+### Key Definitions
+
+- **Report**: pages of interactive visuals in Power BI Desktop. **Dashboard**: one screen made by pinning visuals in the online service.
+- **Power Query**: tool to clean and transform data; **Applied Steps** record each action.
+- **Match key**: common column that lets two tables connect. **One to many**: one lookup row, many order rows. Lookup tables must have **unique rows**.
+- **Hierarchy**: levels for drilling (date is automatic; category, subcategory, product must be created).
+- **Calculated column**: stored, computed per row, used for filtering or axes. **Measure**: computed on the fly, reacts to filters, cannot be used to filter.
+- **DAX**: Data Analysis Expressions; **DIVIDE** is the safe divide.
+- **Theme**: saved set of colours, text and visual settings (JSON file).
+- **Slicer**: always-visible user control for selection. **Interaction**: effect of a selection in one visual on others (filter, highlight, none).
+- **Format painter**: copies formatting only. **Help tooltip**: question-mark note for longer instructions.
+- **Matrix**: rows against columns with totals both ways. **Combo**: columns plus line on separate axes. **Waterfall**: step-by-step changes in a total. **Stacked area**: total and mix over time.
+
+### Key Formulas and Rules
+
+| Topic | Rule |
+|---|---|
+| Net sales | Gross sales minus discount |
+| Profitability | `DIVIDE([Total Profit], [Total Net Sales])` |
+| Discount percentage | `DIVIDE([Total Discount], [Total Net Sales] + [Total Discount])` (gross sales in denominator) |
+| Column or measure | Needs to react to filters: measure. Needs to filter or be an axis: column |
+| Field icons | Sigma = numeric, calendar = date, calculator = measure |
+| Superstore scale | 2015 to 2018, 9,000+ order lines, about 2.2 million in net sales, 273K profit, 12.42% profitability |
+| Chart choice | Donut or pie only for a handful of slices; column for about 4 to 5 bars, bar for more; line for time; scatter for relationship |
+| Data labels | Best practice on column and bar charts; then turn Y-axis values off |
+| Drill modes | Drill mode (one bar), double arrow (next level for all), forked arrow (expand to show levels together) |
+| Date drill | Double arrow adds up the same quarter across years, so it is not useful |
+| Notes on visuals | Subtitle (short, always visible), help tooltip (longer), text box |
+| Slicer styles | Vertical list, tile, dropdown; dates use Between |
+| Filters pane | Visual, page, all pages; set by designer; can lock or hide |
+| Combo chart | Always title both axes |
+
+### Must-Remember Points
+
+- Power BI Desktop is free, runs on Windows, and files are saved as **.pbix**.
+- Fix data types in table view (postal code to text, dates to date) and remove unused columns because **every column uses memory**.
+- Customer lookup used **cust_id** against **customer ID**, so it had to be connected manually; product and shipping connected automatically.
+- Set the theme before the first visual; tooltip size and similar settings are best changed in the theme. Chart titles and axis labels are formatted per visual.
+- Conditional formatting rule used throughout: **profitability greater than minimum and less than 0 gives red**; it carries across with the format painter, including help tooltip text.
+- Loss-making subcategories: **tables, bookcases, supplies**; machines is borderline at 2.32% with heavy discounts.
+- 2015 to 2016 dip came from **office supplies and technology**, not furniture.
+- By default every selection affects every other visual; the designer overrides with Edit Interactions.
+- A synced slicer keeps its selection across pages; sync is controlled in the sync slicers pane.
+- Page or report filters set by the designer let one report be sent to each region without slicer choice.
+- Use the selection pane to name, show or hide elements and group related visuals so they move together.
+- Combo and waterfall charts need careful reading: label both axes, check the axis start (waterfall started at 400K).

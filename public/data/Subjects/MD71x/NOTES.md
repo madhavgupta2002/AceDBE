@@ -3050,3 +3050,425 @@ When told **"The experts say..."**, ask:
 - Wellness programmes need **root-cause analysis, awareness, de-stigmatisation, and access**, not just provision of a resource.
 - Audit work through **time tracking, three-question check-ins, weekly metrics, or input vs output**.
 - Give **reasons** for urgent requests; build a **support ecosystem** rather than relying on bootstrap individualism.
+
+# Module 8: Critical Thinking in Practice
+
+## 8.0 Module Introduction
+
+### 8.0.1 Introduction to the Module
+
+#### Key Concept
+- The module applies critical thinking to **real entrepreneurial decisions**, using two founder interviews conducted by Prof. Swati Bandi.
+- Common thread: how founders **recognise opportunities, test them against evidence, handle assumptions and bias, and decide under uncertainty**.
+
+| Part | Focus |
+|------|-------|
+| **8.1** | Sheetal Chhabra (Whites & Pastels): spotting an opportunity, passion and data, the Ikigai framework |
+| **8.2** | Sheetal Chhabra: Blue Ocean Strategy, assumptions and customer feedback, quality benchmarks, local manufacturing |
+| **8.3** | Sheetal Chhabra: artisans and stakeholders, changing tastes, B2B customers, resource-constrained decisions, failed prototypes, hustle culture |
+| **8.4** | Sangeetha Menon: listening to problems, bias, strategy and execution, calculated risk, impact, collaboration, mentorship |
+
+| Interviewee | Background | Business |
+|-------------|------------|----------|
+| **Sheetal Chhabra** | About **15 years in finance** (Wells Fargo in the US; head of policy and process at IIFL Finance) | **Whites & Pastels**: premium tableware and home decor brand, "an Indian company with international taste" |
+| **Sangeetha Menon** | Electronics, heavy engineering, social sector, now manufacturing | **Sustainable construction material** |
+
+## 8.1 Recognising and Validating an Opportunity
+
+### 8.1.1 From Finance to Whites & Pastels
+
+#### Key Concept
+- An opportunity often begins with a **personal observation, an unmet need, or an interest**, but recognising it requires looking **beyond personal preference** to what potential customers need and expect.
+
+#### The Journey
+- Around **15 years in finance**, in both **India and the US**.
+- Last role before the venture: **head of policy and process, IIFL Finance**.
+- Exposure to the US showed a different aesthetic: homes that are **white, light, and neutral**, versus the **colourful** walls (blue, green, red) of Indian homes.
+- She admired the **aesthetic sense** even in the smallest apartment; the name **Whites & Pastels** comes from this experience.
+- Her finance career gave her a reputation for **attention to detail**, which helped her **observe** what existed in the US but not in India.
+
+#### How the Opportunity Was Spotted
+| Observation | Detail |
+|-------------|--------|
+| **Availability gap** | Quality tableware and home goods available in the US were **not available in India**, which she described as about **50 years behind** in availability |
+| **Quality gap** | Even very famous Indian brands did not match the quality available in the US |
+| **Customers exist** | People in India **have money and international exposure** (especially in Bangalore, where most have travelled abroad) |
+| **Missing link** | Exposure and money, but **no access to good quality tableware** |
+| **Personal fit** | She loves **hosting and entertaining** (as a Punjabi, friends visit every weekend) and likes to make house parties **elevated**, including how food is **served** |
+
+#### Merging the Subjective with the Business
+- Taste is **subjective**; market opportunity is **business-like**; the founder merged both.
+- **India is a large market**: any taste preference has customers who share it, so a founder can build a brand around a particular taste and **find the market** for it.
+- This gives **confidence to founders** starting something of their own.
+
+### 8.1.2 Passion, Data, and Ikigai
+
+#### Key Concept
+- Not every idea is a viable opportunity; turning an interest into a business requires **understanding consumer preferences, identifying market needs, and checking that demand is sufficient**.
+- A founder's **inner feeling of a clear gap** must be **substantiated by data**.
+
+#### Role of Data
+| Point | Detail |
+|-------|--------|
+| **Habit from finance** | Reads **reports**, tracks **which markets are growing** and the **expected growth percentage** over the coming years |
+| **Homework before entry** | Gap sensed first, then **substantiated by data** before starting |
+| **Search data** | Even today, before a launch, she checks **what people are searching online** (keyword search volume and clicks; tools can be bought and **Google data is free**) |
+| **Where to begin** | Homeware is huge (thousands to lakhs of products); search data shows **which product to start with** (for example luxury vases, artificial plants) |
+| **Limit of data** | **Data is not everything, but it gives confidence** |
+
+- Instructor's point: **data does not speak for itself**; numbers need a **story** made out of them, and the founder merged **subjective passion with numbers**.
+- The story she drew from data: **there are people looking for this, and the brand gives them what they want, quality tableware**.
+
+#### Definition: Ikigai
+- **Ikigai** is a **Japanese technique** for taking an important decision (for example about a career); she used it to choose among **three or four** things she could do, and a book on Ikigai influenced her decision.
+
+| Step | Action |
+|------|--------|
+| **1** | Write down **what you like to do**: hobbies, passions, "inner calling" (one person can have 2 to 3 or more) |
+| **2** | Think about **how to make money** from it; assess it from the **demand** point of view |
+| **3** | Ask whether you can turn the creativity into a **physical product or a service** that can be sold |
+
+- Examples of turning passion into a product: teaching into a **learning course**; a love of keeping a house nicely into **home decor** as a segment.
+- Her result: a passion (**home decor**) that could become a **business idea**.
+
+## 8.2 Strategy, Assumptions, and Quality Standards
+
+### 8.2.1 Blue Ocean Strategy, Assumptions, and Customer Feedback
+
+#### Key Concept
+- Identifying an opportunity is only the beginning; the entrepreneur must **interpret market information, recognise gaps in existing offerings, and develop a distinct proposition**.
+- **Data gives a broader perspective** but cannot capture specifics (for example, **what kind of drinking glass** people want); this is where **assumptions** begin.
+
+#### Blue Ocean Strategy
+- Founder's approach: look at **what is available in the market and, most importantly, what is not available**.
+- She follows the **blue ocean, red ocean** idea: find something **nobody else is doing**, which she calls the **safest place to be**.
+
+| Step in her reasoning | Detail |
+|-----------------------|--------|
+| **Survey** | Looked at **hundreds of websites** selling teacups |
+| **Pattern found** | Everybody sold **blue, red, or yellow** (coloured or printed) items |
+| **Gap questions** | Why nobody focused on **white**? Why not **ivory**? Why not a **different technique**? |
+| **Technique** | **Embossing on ceramics**, seen in the US; in India everybody was doing **prints** |
+| **Local capability** | India has **good craftsmanship**; old techniques were **buried** because nobody invested in them or rebuilt them |
+| **Decision** | **Start with white and basics, combined with design** |
+| **Assumption behind it** | If she craves it, **others with the same taste** exist and will buy |
+| **Outcome** | The assumption **held**: customers are "loving it" |
+
+#### An Assumption That Failed
+| Element | Detail |
+|---------|--------|
+| **Source of the idea** | A **small set of customers** said the brand was all expensive and should bring something **economical** |
+| **Her normal method** | Works on **customer feedback**, goes by what the **maximum crowd** says, and **phones customers** for feedback (it is a new brand) |
+| **What went wrong** | The economical range was based on a **small set**, not a larger audience; she tried and **failed** |
+| **Why it failed** | The brand had built a **luxury image and an audience that trusts it** on certain parameters ("can shop blindly"); customers said **a luxury brand does not do that** |
+| **Response** | Took some items **off the shelf** and **stopped selling them online**; **recalibrated to the original vision** |
+
+- **Lesson:** a vocal minority is not the market; the founder must decide **whose feedback to act on**, and the final decision rests with the founder.
+
+### 8.2.2 Quality Benchmarks, Materials, and Local Manufacturing
+
+#### Key Concept
+- Product quality, material selection, functionality, and detail shape **brand perception**; clear standards are essential when working with **different suppliers and manufacturers**.
+- **Quality is subjective** and varies from person to person; there is **no single international standard**, so the founder builds a benchmark.
+
+#### Importing First as a Benchmark
+- The brand **initially imported everything**, deliberately, to **learn how products abroad are made and how they differ** from what is made in India.
+- Handling the products showed that, for example, **plate quality** differed from Indian products.
+- Using an international product as the **benchmark**, she tells makers to **"make it better than this"**, which is easier for artisans to act on.
+- She describes this benchmark-beating approach as part of her **blue ocean strategy**.
+
+#### Ergonomics
+- **Ergonomics** is followed in the Western world to give cutlery the **right weight and balance**, for example so that **the hand does not tire** when picking up rice with a spoon.
+- A spoon needs **balanced weight** between handle and the other end.
+- Indian artisans were often **not aware** of ergonomics; even the **best Indian brands failed on ergonomics**: a so-called luxury spoon **falls back out of a katori** because it is **heavy on the handle**.
+- Ergonomics applies to **everything**, not only office chairs; every product follows ergonomic standards.
+
+#### Material Standards: Stainless Steel
+| Grade | Property |
+|-------|----------|
+| **202** | Usually the **best quality available in India** |
+| **304** | **Rust-free (corrosion resistant)**; internationally known as a **high-quality standard for utensils** |
+
+- Steel is an **alloy**; the **grade and ratio** of metals (such as chrome) decide rust resistance.
+- Manufacturers replied that **raw material for 304 was not available in India**; this showed her **what India really needs**.
+
+#### Why Shift to Making in India
+| Reason | Detail |
+|--------|--------|
+| **Communication with artisans** | Artisans are **not educated** in the sense of reading drawings; descriptions were not understood. **Pinterest and AI** now let a founder **convert a visualised design into pictures** and show them |
+| **Benchmark approach** | Import the best, then ask local makers to **beat it** |
+| **Love for India** | Consumers pay a **high premium for international brand value**; she asks **why no brand from India** on a global platform |
+| **Craftsmanship** | India has a history of **beautiful craftsmanship** (the Taj Mahal is cited); the talent is there |
+| **The weak link** | **Design** is where India is failing; craft technique must go **hand in hand with global design and aesthetic sense** |
+| **Ambition** | Build a brand on a **global platform** so that Indian brands become ones Americans are "crazy for" |
+
+## 8.3 Stakeholders, Constraints, and Decision-Making
+
+### 8.3.1 Artisans, Changing Tastes, and B2B Customers
+
+#### Key Concept
+- Turning a creative vision into a product needs **communication, negotiation, collaboration, and willingness to refine ideas**, because the people making it have their **own sensibilities**.
+
+#### Working With Artisans
+| Challenge | Approach |
+|-----------|----------|
+| **Strong opinions** | Many **to-and-fro** rounds; an **extra leaf** she does not like means the piece **is redone** |
+| **Artisan says "it looks good"** | Agree it is good, then ask to **do it her way first**; praise their talent; **keep their design aside** and use it in **another design** |
+| **Division of work** | **She handles design; they handle the technicality**; she gives them **equal value**, learns from them, and asks how they did it |
+
+- Instructor's point: the process involves **subjective, intangible negotiation and compromise**, not only data.
+
+#### Changing Tastes and Aesthetics
+- Trends keep changing; her answer uses **luxury brands as the example**: they do **not go by what is trending**; they develop a product and **people follow**.
+- Example given: Prada's **Kolhapuri chappal**, worn in India for ages but seen as outdated until a luxury brand made it; so **taste is a perception**.
+- **Quality never goes out of style**; it is her internal standard.
+- Her **safe space is neutrals**: white blends into any setup, so white plates suit any dinnerware.
+
+#### Other Stakeholders: B2B and HORECA
+| Point | Detail |
+|-------|--------|
+| **Sales channel** | Retail only on **her own website** |
+| **New segment** | **HORECA** (hotels, restaurants, cafes) approach for **B2B orders** |
+| **Differences** | **Different pricing**; they work the **traditional way**, prefer **catalogues** to websites, so the **business model has to differ** |
+| **Catalogues** | **AI** can create a catalogue in **2 to 3 minutes** |
+| **Payment terms** | **Advance payments always, never credit** |
+| **Nature** | A **two-way negotiation**: best service to them, and agreement to **her payment terms** |
+
+### 8.3.2 Decisions Under Constraint, Failure, and Hustle Culture
+
+#### Key Concept
+- Entrepreneurial decisions involve **uncertainty and limited resources**; **external expectations, personal bias, and pressure to grow fast** can push decisions without enough consideration of **evidence or risk**.
+
+#### Resisting "Everyone Says You Should"
+- Instructor's frame: reasoning errors such as **"everyone is doing this"** (bandwagon) and **"I have already invested so much"** (sunk cost) shape decisions.
+- Pressure faced: customers say she should have **more dinnerware variety**.
+
+| Her method | Detail |
+|------------|--------|
+| **Context** | **Bootstrapped business**: earnings are **reinvested**, so she decides on **what she has now** |
+| **Do the maths on paper** | How much **funds** are available? How much are **needed**? |
+| **Opportunity cost** | A full dinnerware set means **less investment in other products** |
+| **What if it fails?** | Customers see about **10 dinner sets and choose one**; she cannot hold **10 varieties** |
+| **Luxury segment** | One dinner set would sell, but **other brands already do it**, and she has no funds to compete |
+| **Rule** | **Listen to everybody, but do the maths, then go ahead** (once funds are raised, expansion can follow) |
+
+- Instructor's point: a bootstrapped founder needs **constant calibration** between **what works for the business and what the market wants**.
+
+#### Failed Prototypes
+| Strategy | Detail |
+|----------|--------|
+| **Hold stock** | Keep the product for a longer time; **some buyers may come** |
+| **Reuse material (Zara example)** | A brand used the **same fabric over three years**: a **bag**, then **tops**, then a **skirt**; lesson: **optimise what you already have** and do not discard raw material |
+| **Redesign the use** | Plain classic **bowls** that did not sell were placed on a **rotating Ferris wheel with a gold stand**; the product that had not sold then **everyone wanted** |
+
+- Mindset: a failure is a prompt to **rethink, recalibrate, and re-engineer**, not to give up; "that is how you know it", whether you failed or not.
+
+#### Hustle Culture and Patience
+- Pressure on students: either **do something now or be a failure**, "strike while it's hot".
+- The instructor notes that for most founders, **meaningful work is a long journey**.
+
+| Advice | Detail |
+|--------|--------|
+| **Plan every decision** | Do **not** act hastily or because a thing is **trendy or selling** |
+| **Do not copy** | Do not do something **just because others are doing it** |
+| **Research and time** | Give yourself time; **research a lot**; do **Ikigai** so that the choice is tied to **your own passion** and not regretted years later |
+| **Patience** | Keep calm when told "it is not happening"; **keep improving**, so that **tomorrow is better than yesterday** |
+| **Go slow to grow** | "The fastest way to grow is to go slow" |
+| **Bamboo analogy** | A bamboo plant **does not appear to grow for the first 5 years** because it is **growing roots**; business **fundamentals must be strong** |
+| **One habit** | **Be patient**; back **instinct with research and market study**; **data is not everything, but it is something** |
+
+- Instructor's point: training in **judgement, good reasoning, and critical thinking** carries into any job and any cultural context, including working with international and Indian stakeholders.
+
+## 8.4 Sangeetha Menon: Listening, Adaptation, and Impact
+
+### 8.4.1 Journey, Bias, Negotiation, and Strategy
+
+#### Key Concept
+- Entrepreneurship is rarely straightforward: it needs **recognising opportunities, understanding people's needs, and deciding under uncertainty**; success rests on **adaptability and learning**, not only a good idea.
+
+#### The Journey
+| Stage | Detail |
+|-------|--------|
+| **Start (age 18)** | Wanted to become a **doctor** but her father did not allow it; met a person making **electronic displays** from his garage; started a company in **1984** |
+| **Electronics** | **Single-line displays** for advertising, then **large display systems**; clients included **Groupon** and **Coca-Cola**; stayed until about **30** |
+| **Heavy engineering** | Took over her **father's company** (including **fuel injection pumps**); clients such as **MICO (now Bosch)** and **Bharat Earth Movers**; team of about **150** |
+| **Social sector** | About **15 years**: **children's libraries**, then consulting |
+| **Return** | Decided in **2018** to "hang up her boots"; during **COVID** came across a **material** she found amazing and became an entrepreneur again (**sustainable construction material**) |
+
+#### Finding Opportunities by Listening
+- She **listens** to people: in meetings, while people wait for the senior person, they discuss **challenges**; she notes them and later offers to work on the problem.
+- When unsure, she stays quiet, goes back to the factory, **researches, consults her team**, and returns with a **solution**.
+- Opportunities arise where something is **missing or extremely expensive**; her aim is a **more viable, cheaper solution made locally** instead of imported.
+- Instructor's point: **understand the actual problem before rushing to a solution**, and check that the solution is the **right** one.
+- Common thread across all her ventures: **people**; give them something that **makes their life easier** (she sat in client offices to ask how she could make things easier).
+- **Manufacturing:** she provides solutions; **social sector:** she facilitates, with both sides sharing the same end goal.
+
+#### Gender Bias and Red Flags
+| Point | Detail |
+|-------|--------|
+| **Early years (1980s)** | Few business people and **very few women**; a **shock factor** ("a woman is coming and owns the business") that **faded within minutes** once she spoke knowledgeably |
+| **Later years** | More **condescension** ("you don't know what you're talking about"); at a meeting with a real estate developer (**9 men** on the other side) there was **silence** after her presentation until one asked a question, after which she was **questioned for 45 minutes** |
+| **Age** | She wore **saris** early on to look older; she reflects that people were **more open-minded** then |
+| **Representation** | At an aluminium gravity casting conference she was **the only woman among about 3,400 men**; a man said her presence gave him confidence that his **daughter** could take over |
+
+| Red flag | Response |
+|----------|----------|
+| **Contractor who kept putting her down** (on a huge order) | **Walked away** and told the client she would not work with that contractor |
+| **Individual clients who withhold the final payment** and find faults unrelated to the material | **Walked away** from the chase; lost **many lakhs** across several clients |
+| **Reasoning** | Does not want **negativity or confrontation**, and no longer needs to **convince people of her value** |
+
+#### Advice on Negotiation Without Losing Authenticity
+| Advice | Detail |
+|--------|--------|
+| **Do not give work free** | Mock-ups first done free: a hospital chain mock-up of **200 sq ft became 20,000 sq ft**, but another mock-up (much time and effort) ended with no order; now she asks clients to **at least cover costs** |
+| **Value needs a price** | Even in the social sector **nothing was free**: village women running libraries charged **Rs 10 per month** ("like a packet of chips"), which **gives value** to the service |
+| **Be your own devil's advocate** | Learn the product or service deeply; **list the hardest questions**, ask them aloud, **record yourself**, or have a **well-meaning person** question you; investors ask difficult questions |
+| **Conviction sells** | People want to see **how passionate and convinced** you are |
+
+#### Strategy and Execution
+- **Strategy** is a **plan or vision**; it has **no point if only on paper or in the mind**; it must be **put into action** to show that it works.
+- Strategy and execution **work together**; after action, keep **growing or adding to it**; "you never stop".
+- Both are **not set in stone**: **think on your feet**.
+
+#### Adaptability and Collaboration
+- **"Change is the only constant"**: today's product or service will evolve; with **AI** it is unclear how relevant a product will be in a year or two.
+- **Do not be afraid to pivot** (a term she learnt in her course at IIMB); keep **evolving the product**; her own material may stay relevant for perhaps 5 to 10 years, so she keeps improving to avoid being left behind.
+- Earlier there was **little information and few mentors**; now **data and mentors are online**; **listen to mentors**, who **plant seeds** that grow later even if you do not follow all advice.
+- **Collaborate; do not treat others as competition**; the market is huge; holding on tightly is like **holding sand**, the tighter you hold, the more you lose.
+- Instructor's point: knowing **when to pivot** needs people around who will **call you out**: mentors and peers.
+
+### 8.4.2 Family Business, Social Impact, and Calculated Risk
+
+#### Key Concept
+- Success is **not only financial**; it also lies in the **difference a business makes in people's lives**.
+
+#### Taking Over the Family Business
+| Assumption | What happened |
+|------------|---------------|
+| **"My father will help me"** | **Wrong**: she realised quickly she had to do it **on her own**; he handed it over saying "it is yours" and was **prepared to see it fail** (a small-turnover business) |
+| **"As a woman in a male-dominated industry, will I be accepted?"** | **Wrong in a good way**: by working hard and **sitting in client offices** (Bosch, Bharat Electronics, Bharat Earth Movers) until they listened, she was accepted; "not as difficult as I thought" |
+| **Result** | Turnover grew from about **38 lakh** to over **4 crore per year**; she did it mainly so that her **brother** could take over, which he later did |
+
+#### Moving to the Social Sector
+- While running the factory (start about **7:30 am**, sign off about **2:30 pm**) she **volunteered at the Spastic Society of Karnataka**, teaching children.
+- With friends she set up a **children's library**, then a **foundation** with libraries across **Karnataka** (government schools, NGOs, a village near **Davangere**); she was involved for about **6 to 7 years**.
+- Libraries were run by **women from self-help groups** from their own homes, which made them **entrepreneurs**.
+- **No community pushback**: it was **education**, and all parents want their children to succeed; children who read **storybooks** learn to read and then handle **textbooks**.
+- Final project before retiring: a **curriculum for rural women entrepreneurs in manufacturing**, including **training of trainers** (about a year to a year and a half).
+
+#### Consulting and CSR
+- Moved to **consulting** (projects of **3 to 6 months**, each with a different corporate or NGO) when **CSR spending** became mandatory and companies did not know what to do and took the **easiest option of giving money**.
+- Her view: CSR must **create impact**, not only **throw money at the problem**.
+
+| Example | Detail |
+|---------|--------|
+| **Solar lamps for children without electricity** | Advice: do **not** hand over finished lamps (a father may **sell** them); supply them **semi-knocked-down** and have **employees help children assemble them**, so the children **feel they made it** and keep it |
+| **Added benefit** | Employees see the **challenges on the other side** and become **more sensitive**; also **reading programmes** (an hour a week or month) |
+| **Planning CSR** | Ask **what, why, and where**; a Kerala spice company sourcing raw material from **Andhra** chose to work **in Andhra** (where the need is) and in **education** (libraries) |
+
+#### Success Versus Impact
+- A for-profit enterprise cannot measure success **only with money**; measure **the change you bring about**.
+- Money is needed to grow, but **money comes and goes**; people remember **what you did**, not "that you made 100 crores".
+- Instructor's point: the experience of working together **cannot be quantified**, yet it can be **more successful** than a number; a child **happy reading** is also success.
+
+#### Confirmation Bias in CSR Reporting
+- Instructor's frame: **confirmation bias** is when funders ask only for data that **confirms** what they think their funds are doing.
+- Her experience: at that time funders were **not that worried** about impact data; the question was "how do we do this?"
+- **Data is easy to generate and quantify**, but **a quality project** is more important.
+
+#### Calculated Risk Versus Gamble
+| Phase | Detail |
+|-------|--------|
+| **Early** | **Fearlessness of youth**; **never risk-averse**; "if I fall, I will get up"; initially **running blind** with no guide or mentor; downside was **wasted time and money** |
+| **Now** | **Calculated risks**: can go online and talk to people |
+| **Her distinction** | Gambling is not knowing what is happening; she gambled **with cards she knew she had** |
+
+- Instructor's point: after long practice, **critical thinking skills** develop so that **experience** indicates what will or will not work; avoid **analysis paralysis** from overthinking, and keep going.
+
+#### Team Input
+- She discusses new ideas with her **team**: first reaction is usually **"no" ("one more thing to do")**; after she explains how it could be done, they become **more open** and suggest how.
+- Now the team **brings ideas** (needs they have heard) and she asks them to **think** about difficult client requests.
+- She also **gives her own inputs** so that they see she **knows what she is talking about**, not only that she is the boss.
+
+### 8.4.3 Mistakes, Mentorship, and Choosing a Path
+
+#### Key Concept
+- Building a business needs **continuous learning, recognising mistakes, and willingness to adapt**, and balancing **personal ambition, professional responsibility, and the needs of the people around you**.
+
+#### Surrounding Yourself With People
+- Earlier she worked alone; now she **talks to people**, including those **outside her field**, for **different perspectives**.
+- She finds raw materials (especially **sustainable** ones) and asks her team how to **incorporate them**; the company does a lot of **R&D**.
+- Her view: **collaboration is the only thing that works**.
+- Instructor's point: relationship building is **not only transactional**; an entrepreneur needs an **ecosystem**.
+
+#### Mistakes Learnt From
+- Her first business was started with a person she **married**; when they **separated** she **handed it over** with **nothing to show** for her work; the second she handed to her **brother**.
+- Lesson: **do it for yourself**; she started the current venture saying "this is my baby".
+- Advice to a young entrepreneur whose husband did not want to join: ask **who you started it for**; **do not depend on others or hold expectations**, which "let you down".
+- Instructor's point: women often **internalise the bias** that wanting something for oneself is **selfish**.
+- On family: **work together as a family** ("I will make sure you succeed; you make sure I succeed"). She also states a **personal view** that children should not be neglected in the early years and acknowledges others may disagree.
+- Instructor's point: **external social, economic, political, and cultural forces** cannot always be controlled; **prioritise** and **pivot** with the resources you can control; **mistakes should not hold you back**.
+
+#### Mentoring and Team Development
+| Practice | Detail |
+|----------|--------|
+| **Responsibility with growth** | If **salary** is to rise, **responsibility** must rise; one junior moved from **basic accounts** to **client contact, payments, and reconciliation**; another now runs a **division** |
+| **Professional conduct** | Teaches that **"this is not your home"**: behave professionally, as they may work elsewhere later |
+| **Communication** | Staff improve **English** (read storybooks, speak English to customers even if spoken to in the local language); seniors learn **how to talk to clients** |
+| **Stepping back** | She is gradually letting the team **speak to clients** |
+| **Micro-entrepreneurs** | A **pivot after her course**: **do what you are good at and outsource the rest**; created about **5 or 6 micro-entrepreneurs**, trained to do **construction with her material** across India (she earlier made panels and did construction) |
+| **Ownership** | Tells the team **"this is your company"**; staff completing **5 years** receive **stock options** (first two people from the next financial year), making them **stakeholders** |
+
+- Mentoring is **constant**; it never stops.
+
+#### Choosing a Path From Many Options
+| Step | Detail |
+|------|--------|
+| **1. Passion** | Find what **tugs at your heart** |
+| **2. Write lists** | Pen and paper; the act of writing helps you think |
+| **3. Whittle down** | Examine each option, then pick the **lowest hanging fruit** (easily achievable) and work back toward the larger option |
+| **4. Do not overreach** | **Too many things at once dilute** your interest; make one a success, then move to the next |
+| **5. Research** | Talk to people; ask what will work, how to market, whether to **collaborate or do it alone**, and **when to start** |
+
+- **Timing:** some ideas are **ahead of their time**: her first company's **large display boards** met government opposition and faded, then **came back**; the inventor of her current material developed it **18 years earlier**, when people were not ready; she bought the technology when **the time had come**.
+- Instructor's summary: **the three Ps: passion, pivot, and people**.
+
+## Quick Revision Summary
+
+### Key Definitions
+- **Ikigai:** Japanese technique for important decisions; list passions, assess how to make money and demand, and check if it can become a product or service.
+- **Blue ocean strategy (as applied):** find what **nobody else is doing**; start from what is **not available**.
+- **Benchmarking:** import the best international product, then ask makers to **beat it**.
+- **Ergonomics:** design for right **weight and balance** so use does not tire the user; applies to **all products**, such as cutlery.
+- **HORECA:** hotels, restaurants, and cafes, a **B2B** customer base.
+- **Bootstrapped business:** earnings are **reinvested**; decisions depend on **funds available now**.
+- **Calculated risk vs gamble:** gambling is acting without knowing what is happening; a calculated risk uses the **cards you know you have**.
+- **Confirmation bias:** asking only for data that **confirms** what you already think.
+
+### Important Relations
+- **Gap felt from inside + substantiated by data = confidence** (**data is not everything, but it is something**).
+- Small vocal customer set **is not** the market: the economical range failed because the brand's **luxury image** and trusting audience were ignored.
+- Stainless steel: **202** (best usually available in India) vs **304** (rust-free; international standard for utensils; raw material not available locally at the time).
+- Financial decision checklist: **funds available, funds needed, opportunity cost, what if it fails**.
+- Menon's turnover: about **38 lakh to over 4 crore per year**.
+- Strategy and execution: **plan, act, keep adapting**.
+- **Three Ps: passion, pivot, people.**
+
+### Must-Remember Points
+- An opportunity needs **personal observation plus market and customer validation**.
+- **Data does not speak for itself**; it needs a story and a founder's judgement.
+- Check **what is missing** in the market (white, ivory, embossing) rather than competing in crowded colours.
+- **Quality is subjective**; build a benchmark, then beat it; ergonomics and material grade are quality standards.
+- Artisans: **design is yours, technique is theirs**; respect their skill while refining the design.
+- Taste is **perception**; **quality never goes out of style**.
+- **Listen to everyone, do the maths, then decide**; account for **opportunity cost**.
+- Failed prototype: **hold, reuse the material, or redesign the use**.
+- **Do not act hastily or because others are doing it**; **the fastest way to grow is to go slow**.
+- **Listen to the real problem before building a solution.**
+- Do not do free work; **price gives value**; be your own **devil's advocate** before pitching.
+- **Walk away** from clients who put you down or withhold payment when pursuing them costs more than it is worth.
+- A strategy **not put into action is of no use**; **pivot** and **collaborate**; do not treat others as competition.
+- Success is **not only money**: measure **impact**; quality matters more than easy-to-generate data.
+- **Do it for yourself**; avoid dependence and expectations.
+- Mentoring is constant: **responsibility grows with pay**, ownership through **stock options**.
+- Choose a path by **passion, written lists, the lowest hanging fruit, research, and right timing**.

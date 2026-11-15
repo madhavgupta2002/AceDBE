@@ -3840,5 +3840,563 @@ $$P_X \times (X + \text{New Shares}) = P_{RO} \times X + \text{Funds Raised}$$
 - Private placements: positive market reaction (**monitoring / certification**), cheaper and no registration, but **lock-in** limits resale
 - Debt cannot be subordinated to equity; **registered bonds** are the norm; more covenants lower the cost of borrowing
 - A callable bond is worth **less** than a noncallable bond; example: ₹100 noncallable vs ₹90 callable at ₹100
-EOF
-tail -c 300 NOTES.md | tail -3
+
+# Module 8: Corporate Merger and Acquisitions (M&A) Decisions
+
+## 8.1 Module Overview
+
+### 8.1.1 Scope of the Module
+
+#### Key Concept
+
+- Firms use **mergers and acquisitions (M&As)** as a **major tool of growth**
+- The module covers: **overview of M&As**, **types of M&As**, **synergy and its sources**, **shareholder wealth implications**, other motives (**managerial overconfidence**, **agency motive**, **EPS growth**, **diversification**)
+
+| Motive | Nature |
+|---|---|
+| **Synergy** | **Rational** motive |
+| **Managerial overconfidence (hubris)** | Not always rational |
+| **Agency motive** | Not always rational |
+| **EPS growth** | Dubious motive |
+| **Diversification** | Dubious motive |
+
+#### Key Concept: Learning Objectives
+
+| Objective | Focus |
+|---|---|
+| **Identify** | Different forms and types of mergers and acquisitions |
+| **Explain** | Common reasons why firms undertake mergers and acquisitions |
+| **Compare** | How M&A decisions may influence shareholder wealth and firm value |
+| **Analyse** | Motives behind M&A decisions: synergy, EPS growth and diversification |
+
+## 8.2 Overview of Mergers and Acquisitions
+
+### 8.2.1 Stakeholders and Mechanisms
+
+#### Key Concept: Examples of Acquisitive Firms
+
+- **Google** has made **250+ acquisitions**
+- **Oracle** has acquired **150+ companies**
+
+#### Key Concept: Stakeholders in an M&A Deal
+
+| Stakeholder | Role |
+|---|---|
+| **Buyer** | Called the **acquirer** or **bidder** |
+| **Seller** | Called the **target** |
+| **Advisors** | **Investment bankers** and **lawyers** |
+| **Regulators** | **Government**, **securities market regulator**, **antitrust watchdog** |
+
+#### Key Concept: Mergers and Acquisitions
+
+- Two primary mechanisms by which **ownership and control** of a firm can change:
+  - The **target merges with another firm** (**merger**)
+  - **Another firm acquires the target** (**acquisition**)
+- In both cases the **acquiring entity must purchase the stock or existing assets of the target** for some **consideration**
+- **Consideration** can be **cash**, **stock**, a **combination of cash and stock**, or something else of equivalent value
+- The terms **mergers**, **acquisitions** and **takeovers** are used **interchangeably** in this module
+
+#### Key Concept: Why M&As Are Studied Separately
+
+- M&As are **economically large transactions** relative to ordinary investments
+- They can **create as well as destroy value on a large scale**
+
+### 8.2.2 M&A Activity and Waves
+
+#### Key Concept: M&A Activity
+
+- The global takeover market is highly active: on average **more than $2 trillion per year** in transaction (deal) value
+- Number of deals: more than **30,000 deals every year** over the last two decades or so; the trend since 1985 is **upward**
+- Deal value has exceeded **$2 trillion every year** over the last two decades
+- A **cross-border deal** is one in which the acquirer and the target are from **different countries**
+
+#### Definition: M&A Waves
+
+- **M&A waves** = **peaks of heavy activity** followed by **quiet troughs** of few transactions in the takeover market
+- M&A activity is **greater during economic expansions** than during contractions
+- M&A activity **correlates with bull markets**: more deals when the stock market is high, fewer when it is low
+
+#### Key Concept: Theories of M&A Waves
+
+| Theory | Explanation |
+|---|---|
+| **Neoclassical Theory** | Waves occur as **firms in specific industries react to economic shocks** (e.g., **deregulation**); this is why M&A activity **clusters by industry** |
+| **Overvaluation Theory** | **Market valuations cause waves**: more M&As happen in periods of **bubbles**; when firm valuations deviate from fundamentals, managers use their **overvalued stock as currency** to buy the assets of **undervalued (or less overvalued) firms** |
+
+#### Key Concept: Largest Cross-Border M&A Deals (as of August 2026)
+
+| Rank | Acquirer (Country) | Target (Country) | Year | Value ($ billion) |
+|---|---|---|---|---|
+| 1 | **Vodafone AirTouch PLC** (GB) | **Mannesmann AG** (DE) | 1999 | **202.8** |
+| 2 | **Anheuser-Busch InBev** (BE) | **SABMiller PLC** (GB) | 2015 | **101.5** |
+| 3 | **Royal Dutch Petroleum Co** (NL) | **Shell Transport & Trading Co** (GB) | 2004 | **74.6** |
+| 4 | Vodafone Group PLC (GB) | AirTouch Communications Inc (US) | 1999 | 60.3 |
+| 5 | Takeda Pharmaceutical Co Ltd (JP) | Shire PLC (US) | 2018 | 60.1 |
+| 6 | Pfizer Inc (US) | Pharmacia Corp (SE) | 2002 | 59.5 |
+| 7 | Bayer AG (DE) | Monsanto Co (US) | 2016 | 56.6 |
+| 8 | InBev NV (BE) | Anheuser-Busch Cos Inc (US) | 2008 | 52.2 |
+| 9 | British American Tobacco PLC (GB) | Reynolds American Inc (US) | 2016 | 49.1 |
+| 10 | British Petroleum Co PLC (GB) | Amoco Corp (US) | 1998 | 48.2 |
+
+#### Key Concept: Leading Global M&A Investment Banks by M&A Fees (2025)
+
+| Rank | Advisor | Fees (USD million) |
+|---|---|---|
+| 1 | **Goldman Sachs & Co** | **4,887.56** |
+| 2 | **JP Morgan** | **3,202.54** |
+| 3 | **Morgan Stanley** | **3,080.88** |
+| 4 | Citi | 2,137.52 |
+| 5 | Evercore Inc | 1,747.22 |
+| 6 | Jefferies LLC | 1,739.95 |
+| 7 | Centreview Partners LLC | 1,653.72 |
+| 8 | BoFa Securities Inc | 1,462.79 |
+| 9 | Lazard | 1,377.40 |
+| 10 | Houlihan Lokey | 1,032.88 |
+
+## 8.3 Types of M&As
+
+### 8.3.1 Horizontal M&As
+
+#### Definition: Horizontal M&A
+
+- **Horizontal M&A** = M&A between firms **in the same industry** (e.g., a merger between **two competitors**)
+
+| Example | Year | Industry |
+|---|---|---|
+| **L&T Infotech's acquisition of Mindtree** | 2019 | IT services |
+| **Vodafone-Idea merger** | 2018 | Telecom |
+
+#### Key Concept: Antitrust Regulation
+
+- Horizontal mergers often require **approval from antitrust regulators**, to ensure they **do not substantially reduce competition or create monopolies**
+- The regulator's role is to ensure **healthy competition**; it often **blocks transactions that give excessive power to a few players**
+
+| Country | Antitrust Regulator |
+|---|---|
+| **India** | **Competition Commission of India (CCI)** |
+| **US** | **Federal Trade Commission (FTC)** |
+
+### 8.3.2 Vertical M&As
+
+#### Definition: Vertical M&A
+
+- **Vertical M&A** = M&A between firms at **different stages of the production process** (i.e., between a **supplier and a customer**)
+
+#### Key Concept: Backward and Forward Vertical Integration
+
+| Type | Meaning | Example |
+|---|---|---|
+| **Backward vertical integration** | A firm **acquires a supplier** | **ITC** (FMCG) acquiring **Technico Agri Sciences** (potato seed technology firm) in **2007** to **secure raw material** for its **Bingo! chips** |
+| **Forward vertical integration** | A firm **acquires a customer** | **ONGC** (upstream oil-and-gas exploration and production) acquiring a **majority stake in HPCL** (refiner and fuel marketer) in **2018**; HPCL is a customer of ONGC |
+
+### 8.3.3 Conglomerate M&As
+
+#### Definition: Conglomerate M&A
+
+- **Conglomerate M&A** = merger between firms in **unrelated industries**
+- Example: **Adani Group** (infrastructure conglomerate) acquiring **NDTV** (news broadcaster) in **2022**
+
+#### Key Concept: Comparison of M&A Types
+
+| Type | Firms Involved | Example |
+|---|---|---|
+| **Horizontal** | **Same industry** (competitors) | L&T Infotech-Mindtree; Vodafone-Idea |
+| **Vertical (backward)** | Firm and its **supplier** | ITC-Technico Agri Sciences |
+| **Vertical (forward)** | Firm and its **customer** | ONGC-HPCL |
+| **Conglomerate** | **Unrelated industries** | Adani Group-NDTV |
+
+## 8.4 Synergy and Shareholder Wealth
+
+### 8.4.1 Synergy and Its Sources
+
+#### Definition: Synergy
+
+- **Synergy** = the rational motive for M&As: **two firms may be worth more together than apart** ("1 + 1 > 2")
+- Synergy exists when $PV_{AT} > PV_A + PV_T$
+
+$$\text{Synergy} = PV_{AT} - (PV_A + PV_T)$$
+
+| Symbol | Meaning |
+|---|---|
+| $PV_{AT}$ | Present value of the **combined firm** |
+| $PV_A$ | Present value of the **acquirer** as a separate firm |
+| $PV_T$ | Present value of the **target** as a separate firm |
+
+#### Key Concept: Where Synergy Comes From
+
+- Synergy comes from an **increase in cash flows of the combined firm relative to the sum of the cash flows of the two separate firms**
+- **Synergy is the PV of incremental cash flows**
+
+$$\Delta CF_t = \Delta Rev_t - \Delta Costs_t - \Delta Taxes_t - \Delta Capital\ Requirements_t$$
+
+| Source | Meaning |
+|---|---|
+| **Incremental increase in revenue** | $\Delta Rev$ rises |
+| **Incremental reduction in costs** | $\Delta Costs$ falls |
+| **Incremental reduction in taxes** | $\Delta Taxes$ falls |
+| **Incremental reduction in capital requirements** | $\Delta Capital\ Requirements$ falls |
+
+#### Key Concept: Incremental Increase in Revenue
+
+| Source | Detail |
+|---|---|
+| **Cross-selling** | One firm sells the products and services of the other firm after the deal |
+| **Market power** | **Reduced competition** and greater bargaining power over customers lead to **higher prices**; most countries have **antitrust laws** that **limit** such activity |
+
+#### Key Concept: Incremental Reduction in Costs
+
+| Source | Detail | Obvious Benefit Of |
+|---|---|---|
+| **Economies of scale** | **Average cost of production falls** as the level of production increases (fixed costs do not rise with output; mainly variable costs rise) | **Horizontal mergers** |
+| **Economies of vertical integration** | Makes **coordination of closely related operating activities easier** | **Vertical mergers** |
+| **Elimination of inefficiencies** | A **change in management** can increase firm value; some managers overspend on **perquisites** and **money-losing pet projects**, making them **ripe for takeover** | Takeover of poorly managed firms |
+
+#### Key Concept: Incremental Reduction in Taxes
+
+| Source | Detail |
+|---|---|
+| **Use of tax losses** | A merger between a **profitable** firm and an **unprofitable** one lets the **losses offset the profits**, reducing total profits and the **tax bill** of the combined firm |
+| **Larger tax shield (target has less than optimal debt)** | **More debt means more interest expense and lower taxable income**; the acquirer can **infuse the target with the missing debt** |
+| **Larger tax shield (both firms have optimal debt)** | Merger leads to **risk reduction**: the combined firm's debt is **less risky**, creating **greater debt capacity** and a **larger tax shield** |
+
+#### Key Concept: Incremental Reduction in Capital Requirements
+
+- **Incremental investment in working capital and fixed assets** may come down because of a **reduction in duplicate plants and facilities**
+
+### 8.4.2 Sharing of Synergy and Takeover Premium
+
+#### Definition: Takeover Premium
+
+- The acquirer usually must **pay more than the fair value of the target**: if it paid only fair value, **target shareholders would not surrender their shares** (they can sell in the secondary market at the fair price anyway)
+- **Premium** = the amount **over and above the value of the target** that the acquirer pays to target shareholders
+
+$$\text{Takeover Premium} = \frac{\text{Offer Price} - \text{Pre-Offer Value of the Target}}{\text{Pre-Offer Value of the Target}}$$
+
+#### Formula: Sharing of Synergy
+
+| Party | Portion of Synergy Retained |
+|---|---|
+| **Acquirer** | $\text{Synergy} - \text{Premium}$ |
+| **Target** | $\text{Premium}$ |
+
+- **Acquirer loses if synergy < premium**
+
+#### Worked Example: Takeover Premium and Synergy Sharing
+
+- Target stock price = ₹100; acquirer pays ₹120; synergy = ₹30
+
+| Item | Working | Answer |
+|---|---|---|
+| Takeover premium (₹) | $120 - 100$ | **₹20** |
+| Takeover premium (%) | $\dfrac{120 - 100}{100}$ | **20%** |
+| Gain to target | Premium | **₹20** |
+| Gain to acquirer | $30 - 20$ | **₹10** |
+| Check | $10 + 20$ | **= ₹30 synergy** |
+
+- If synergy were **less than ₹20**, the acquirer would **lose**
+
+### 8.4.3 Market Reaction and Shareholder Wealth
+
+#### Key Concept: Measuring Synergy in Practice
+
+- Synergy is measured using the **value-weighted cumulative abnormal returns** of the **bidding and target firms' stock** surrounding the **announcement of the deal**
+
+#### Key Concept: Target Stock Price on Announcement
+
+| Question | Answer |
+|---|---|
+| What happens to the target's stock price on announcement? | It **increases as soon as the takeover bid is announced** |
+| Why? | The acquirer pays a **substantial takeover premium**, so target shareholders will receive an **offer price above the pre-announcement price** |
+| Does it rise as much as the offer price? | **No**: it rises but stays **below the offer price** |
+| Why? | The **probability of deal completion is usually less than 100%**; if the deal fails, target shareholders do not receive the offer price and the stock price falls |
+
+- The **higher the probability of deal completion, the closer the stock price to the offer price**
+
+#### Key Concept: Do M&As Create Value for Shareholders?
+
+| Group | Evidence |
+|---|---|
+| **Target shareholders** | **Clear winners** (they receive the premium) |
+| **Acquiring shareholders** | Evidence **far less clear**; **on average they do not benefit** |
+| **Combined firms' shareholders** | M&As **create shareholder value** |
+
+## 8.5 Managerial Overconfidence
+
+### 8.5.1 Hubris Hypothesis
+
+#### Definition: Hubris Hypothesis
+
+- **Overconfidence** is also called **hubris**
+- **Overconfident managers** are more likely to undertake M&As
+- They are **overly optimistic about their ability to create value**, **overestimate synergies** and therefore **overpay** in M&A deals (**hubris hypothesis**)
+- Evidence: **managers affected by hubris are more likely to destroy shareholder value**
+
+### 8.5.2 Proxies for Managerial Overconfidence
+
+#### Key Concept: Measuring Overconfidence
+
+- Managerial overconfidence is **difficult to measure**; prior research uses **proxies**
+
+| Proxy | Detail |
+|---|---|
+| **High takeover premium** | Managers who pay a high premium: $\dfrac{\text{Offer Price} - \text{Pre-Offer Value of Target}}{\text{Pre-Offer Value of Target}}$ |
+| **Holding in-the-money stock options** | Managers who hold **in-the-money** stock options **until the year before expiration** |
+| **Media portrayal** | Managers the **media portrays as overconfident** |
+| **High acquisitiveness** | Managers who make **five or more acquisitions within three years** |
+
+#### Key Concept: Stock Options and In-the-Money Options
+
+- **Employee stock options** are **call options**
+- **Call option** = gives the owner the **right, but not the obligation**, to **purchase the shares of the firm** at a predetermined price (**strike / exercise price**) on or before a certain date (**expiration date**)
+- An option is **in the money** if the **strike price is below the market price**: the holder can buy at less than the market price and sell at the market price for a profit, so it makes sense to **exercise**
+- A manager who **keeps holding in-the-money options** until the year before expiration is probably **overconfident about the ability to increase the stock price**
+
+## 8.6 Agency Motive
+
+### 8.6.1 Principal-Agent Conflict and Free Cash Flow
+
+#### Definition: Principal-Agent (Agency) Problem
+
+- Shareholders (**owners**) cannot manage the firm actively and **delegate authority to professional managers**: **shareholders are principals, managers are agents**
+- What is in the interest of shareholders may not be in the interest of managers: **conflict of interest** between principal and agent = **principal-agent problem** (**agency problem**)
+- **Agency motive of M&As**: because of this conflict, **managers may undertake acquisitions against the interest of shareholders**
+
+#### Key Concept: Free Cash Flow Hypothesis
+
+- Firm has **surplus cash** but **no profitable investment opportunity**
+  - **Ideally**, the CEO should **return the excess cash to shareholders**
+  - **In practice**, the CEO is more likely to make **value-destroying acquisitions** than to return the cash (**Free Cash Flow Hypothesis**)
+
+| Why a Value-Destroying Acquisition Helps the CEO | Detail |
+|---|---|
+| **Prestige** | Returning cash **shrinks the firm** (balance sheet); acquiring another firm gives the **prestige of running a larger organization** |
+| **Compensation** | **Executive compensation is sometimes linked to firm size**: the larger the firm, the higher the pay |
+
+### 8.6.2 Mitigating Agency Conflicts and Evidence
+
+#### Key Concept: Reducing Agency Conflicts
+
+| Method | Detail |
+|---|---|
+| **Aligning interests** | **Compensation contracts**, **stock ownership**, **employee stock options** |
+| **Monitoring** | **Direct monitoring of managers** |
+
+#### Key Concept: Empirical Evidence
+
+- Acquiring-firm managers whose **compensation is more closely linked to firm value** make **better acquisition decisions**
+- **Effective monitoring (through the board of directors)** of managerial actions leads to **better acquisition decisions**
+- The **market for corporate control** acts as a **disciplining mechanism of last resort**
+
+#### Definition: Market for Corporate Control
+
+- The market for M&As is also called the **market for corporate control**, because firms **compete for taking corporate control**
+- **Agency-infected firms** (inefficient managers) are more likely to become **targets of hostile takeovers**: once the inefficient managers are removed, **firm value can be increased**
+
+### 8.6.3 Principal-Principal Conflict
+
+#### Key Concept: Principal-Principal Problem
+
+- In markets with **business groups** (such as **India**), the common conflict is **principal-principal** rather than principal-agent
+- It is a conflict of interest between **controlling (majority) shareholders** and **other (minority) shareholders**
+- Controlling shareholders may take M&A and other decisions that **benefit them but harm minority shareholders**
+
+| Example | Detail |
+|---|---|
+| **Within-group rescue acquisitions** (common in India) | **Resources are moved into a distressed group firm** to **protect the group reputation**, at the **expense of the minority shareholders of the firm that supplies the resources** |
+
+#### Key Concept: Comparison of Agency Conflicts
+
+| Feature | Principal-Agent | Principal-Principal |
+|---|---|---|
+| **Conflict between** | **Shareholders** and **managers** | **Controlling (majority)** and **minority** shareholders |
+| **Typical setting** | Firms with separated ownership and management | **Business groups** (e.g., India) |
+| **M&A illustration** | **Value-destroying acquisitions** from surplus cash | **Within-group rescue acquisitions** |
+
+## 8.7 EPS Growth: Accretion and Dilution
+
+### 8.7.1 P/E Ratio and EPS Accretion
+
+#### Definition: Price-Earnings (P/E) Ratio
+
+$$\text{P/E} = \frac{\text{Stock Price}}{\text{Earnings per Share (EPS)}}$$
+
+- P/E = the **price investors are willing to pay for ₹1 of a firm's earnings**
+- Firms trade at **different P/E ratios** because **investors expect higher growth in the earnings of firms with higher P/E multiples**
+- The P/E ratio of a firm **primarily indicates the market's expectation of its earnings growth**
+
+#### Key Concept: EPS Accretive and EPS Dilutive Deals
+
+- The **EPS of the merged firm can exceed the pre-merger EPS of either firm even if the deal creates no economic value** (no synergy)
+- This happens **when a firm acquires another firm with a lower P/E ratio**
+
+| Term | Meaning |
+|---|---|
+| **EPS accretive deal** | **EPS of the acquiring firm goes up** after the deal |
+| **EPS dilutive deal** | **EPS of the acquiring firm goes down** after the deal |
+
+### 8.7.2 EPS Accretion-Dilution Example
+
+#### Worked Example: EPS Accretion Without Synergy
+
+- Two **all-equity-financed** firms, A and T, each with **earnings of ₹80 per share** and **100 shares outstanding**
+- Price per share: **Firm A ₹1,000**; **Firm T ₹600**
+- Firm A acquires Firm T **using its own stock**; **no synergies**, **no premium**, **no transaction or other costs**
+
+| Part | Question | Working | Answer |
+|---|---|---|---|
+| (a) | P/E of Firm A before | $1{,}000 / 80$ | **12.5** |
+| (a) | P/E of Firm T before | $600 / 80$ | **7.5** |
+| (b) | Value of Firm A after the acquisition | $100 \times 1{,}000 + 100 \times 600 = 1{,}00{,}000 + 60{,}000$ | **₹1,60,000** |
+
+- **(b) Reasoning:** no synergy and no premium, so **MV after = MV of A before + MV of T before**; both firms are all-equity, so market value equals market value of equity
+
+#### Worked Example: Shares Issued and Combined Firm EPS
+
+- **(c) Shares issued:** let $N$ = new shares issued by Firm A to Firm T's shareholders
+  - Since T receives no premium, the new shares must be worth **T's pre-acquisition market value**: (price per share after the deal) $\times N = 600 \times 100$
+
+$$\frac{1{,}60{,}000}{100 + N} \times N = 60{,}000 \;\Rightarrow\; 1{,}60{,}000N = 60{,}00{,}000 + 60{,}000N \;\Rightarrow\; 1{,}00{,}000N = 60{,}00{,}000 \;\Rightarrow\; N = 60$$
+
+- **(d) Combined firm EPS:**
+
+$$\text{Earnings after} = 80 \times 100 + 80 \times 100 = 8{,}000 + 8{,}000 = ₹16{,}000$$
+
+$$\text{EPS after} = \frac{16{,}000}{100 + 60} = ₹100$$
+
+- **(e) Combined firm P/E:**
+
+$$\text{Price after} = \frac{1{,}60{,}000}{160} = ₹1{,}000 \qquad \text{P/E after} = \frac{1{,}000}{100} = 10$$
+
+| Item | Before (Firm A) | After (Combined Firm) |
+|---|---|---|
+| **Shares outstanding** | 100 | **160** |
+| **Total earnings** | ₹8,000 | **₹16,000** |
+| **EPS** | ₹80 | **₹100** (accretive: $+25\%$) |
+| **Stock price** | ₹1,000 | **₹1,000** (unchanged, no value created) |
+| **P/E ratio** | 12.5 | **10** (falls) |
+
+- Check: Firm T's shareholders receive $60 \times 1{,}000 = ₹60{,}000$ = T's pre-acquisition market value (no premium)
+- Check: the price stays at ₹1,000 (no value created) while EPS rises from ₹80 to ₹100, so P/E $= 12.5 \times \dfrac{80}{100} = 10$
+
+#### Key Concept: Interpretation
+
+- EPS rises from ₹80 to ₹100 but the **P/E falls from 12.5 to 10**
+- The increase in EPS **comes at a cost**: **future earnings of the combined firm will grow at a slower rate**
+- Therefore **EPS increase is not necessarily a rational motive for mergers**
+
+## 8.8 Diversification
+
+### 8.8.1 Diversification and the Coinsurance Effect
+
+#### Key Concept: Diversification as a Merger Motive
+
+- When two firms merge, the **volatility of the combined value is usually less than their volatilities as separate entities**: the **benefit of diversification**
+- It is a **dubious (not so rational) motive**: if **shareholders can diversify on their own at no extra cost**, the firm need not diversify
+
+#### Definition: Coinsurance Effect
+
+- **Diversification from a merger usually hurts shareholders**
+- **Bondholders** are likely to **gain**: their debt is now **insured by two firms instead of a single firm** (**coinsurance effect of mergers**)
+- The **gain to bondholders comes at the expense of shareholders**
+
+### 8.8.2 Diversification Example
+
+#### Worked Example: Wealth Transfer from Shareholders to Bondholders
+
+- Firms A and T merge; **no synergy**, so **T receives no premium**
+- **Face value of debt:** Firm A ₹30,000; Firm T ₹15,000
+- Two equally likely states (probability **0.5** each); firm values in ₹ thousands:
+
+| Firm Value (₹ thousand) | Boom | Recession |
+|---|---|---|
+| **Firm A** | 80 | 20 |
+| **Firm T** | 10 | 40 |
+
+- **Debt value = $\min$(firm value, face value of debt)**; **equity = firm value - debt value** (residual claim)
+
+#### Worked Example: Before the Merger (Parts a-c)
+
+| Value (₹ thousand) | Boom | Recession | Expected Value |
+|---|---|---|---|
+| **Firm A** | 80 | 20 | $0.5 \times 80 + 0.5 \times 20 =$ **50** |
+| Debt of A (face 30) | 30 | 20 | **25** |
+| Equity of A | 50 | 0 | **25** |
+| **Firm T** | 10 | 40 | $0.5 \times 10 + 0.5 \times 40 =$ **25** |
+| Debt of T (face 15) | 10 | 15 | **12.5** |
+| Equity of T | 0 | 25 | **12.5** |
+| **Firm A + Firm T (separate)** | 90 | 60 | **75** |
+| Total debt | 40 | 35 | **37.5** |
+| Total equity | 50 | 25 | **37.5** |
+
+- Boom, Firm A: value 80 exceeds face value 30, so debt = 30 and equity = 50
+- Recession, Firm A: value 20 is below face value 30, so debt = 20 and **equity = 0**
+- Boom, Firm T: value 10 is below face value 15, so debt = 10 and **equity = 0**
+- Recession, Firm T: value 40 exceeds face value 15, so debt = 15 and equity = 25
+
+#### Worked Example: After the Merger (Parts d-e)
+
+- Merged firm AT: value $= 90$ (boom), $60$ (recession); expected $0.5 \times 90 + 0.5 \times 60 =$ **75** (no synergy, no premium, so **total value unchanged**)
+- Combined face value of debt $= 30 + 15 =$ **₹45 thousand**; this is **fully covered in both states** (90 > 45 and 60 > 45), so debt = 45 in both states
+
+| Value (₹ thousand) | Boom | Recession | Expected Value |
+|---|---|---|---|
+| **Combined firm AT** | 90 | 60 | **75** |
+| Debt | 45 | 45 | **45** |
+| Equity | 90 - 45 = 45 | 60 - 45 = 15 | $0.5 \times 45 + 0.5 \times 15 =$ **30** |
+| **Increase in value of debt** | 45 - 40 = **+5** | 45 - 35 = **+10** | **+7.5** |
+| **Change in value of equity** | 45 - 50 = **-5** | 15 - 25 = **-10** | **-7.5** |
+
+- Check: total value is the same before and after (75), debt gain $+7.5$ and equity loss $-7.5$ net to **zero**
+- **Is there a transfer of wealth? Yes**: the market value of the firm is unchanged, but **expected debt value rises from 37.5 to 45 (+7.5)** and **expected equity value falls from 37.5 to 30 (-7.5)**: wealth moves from **shareholders to bondholders**
+
+#### Key Concept: Conclusions
+
+- **Bondholders gain, shareholders lose**
+- The **less risky the combined firm, the greater the gains to bondholders**
+- **Shareholders are hurt by the amount that bondholders gain** in deals with **no synergies**
+
+## Quick Revision Summary
+
+### Key Definitions
+
+- **M&A**: change in ownership and control of a firm through a **merger** (target merges with another firm) or an **acquisition** (another firm acquires the target); **consideration** can be cash, stock or a combination
+- **Acquirer (bidder)** = buyer; **target** = seller; **advisors** = investment bankers and lawyers; **regulators** include the **antitrust watchdog** (**CCI** in India, **FTC** in the US)
+- **M&A waves**: peaks of heavy activity followed by quiet troughs; explained by **neoclassical theory** (industry reaction to economic shocks) and **overvaluation theory** (overvalued stock used as currency)
+- **Horizontal** M&A: same industry; **vertical** M&A: different production stages (**backward** = acquire a supplier; **forward** = acquire a customer); **conglomerate** M&A: unrelated industries
+- **Synergy**: $PV_{AT} - (PV_A + PV_T)$ = **PV of incremental cash flows**; sources: **higher revenue**, **lower costs**, **lower taxes**, **lower capital requirements**
+- **Takeover premium**: amount paid above the target's pre-offer value; **acquirer keeps Synergy - Premium**, **target keeps the Premium**
+- **Hubris hypothesis**: overconfident managers overestimate synergies and **overpay**
+- **Free cash flow hypothesis**: managers with surplus cash and no profitable projects make **value-destroying acquisitions** instead of returning cash
+- **Market for corporate control**: **disciplining mechanism of last resort**; agency-infected firms become **hostile takeover targets**
+- **Principal-principal conflict**: **controlling** versus **minority** shareholders (e.g., **within-group rescue acquisitions**)
+- **EPS accretive** deal: acquirer's EPS rises; **EPS dilutive** deal: acquirer's EPS falls
+- **Coinsurance effect**: merged firm's debt is insured by both firms, so **bondholders gain at the expense of shareholders**
+
+### Important Formulas
+
+| Concept | Formula |
+|---|---|
+| Synergy | $PV_{AT} - (PV_A + PV_T)$ |
+| Incremental cash flow | $\Delta CF_t = \Delta Rev_t - \Delta Costs_t - \Delta Taxes_t - \Delta Capital\ Requirements_t$ |
+| Takeover premium | $\dfrac{\text{Offer Price} - \text{Pre-Offer Value of Target}}{\text{Pre-Offer Value of Target}}$ |
+| Synergy retained by acquirer | $\text{Synergy} - \text{Premium}$ |
+| Synergy retained by target | $\text{Premium}$ |
+| P/E ratio | $\text{Stock Price} / \text{EPS}$ |
+| Combined firm value (no synergy, no premium) | $MV_A + MV_T$ |
+| New shares issued $N$ (no premium) | $\dfrac{MV_{AT}}{N_A + N} \times N = MV_T$, where $N_A$ = acquirer's original shares |
+| Combined EPS | $\text{Total Earnings} / (\text{Original Shares} + \text{New Shares})$ |
+| Debt value in a state | $\min(\text{Firm Value}, \text{Face Value of Debt})$ |
+| Equity value in a state | $\text{Firm Value} - \text{Debt Value}$ |
+
+### Must-Remember Points
+
+- Global takeover market averages **more than $2 trillion per year**; largest cross-border deal: **Vodafone AirTouch-Mannesmann (1999), $202.8 billion**; top M&A adviser by 2025 fees: **Goldman Sachs ($4,887.56 million)**
+- **Horizontal** deals need **antitrust approval**; **economies of scale** favour horizontal mergers, **economies of vertical integration** favour vertical mergers
+- Takeover example: price ₹100, offer ₹120, synergy ₹30 gives **premium 20%**, **target gain ₹20**, **acquirer gain ₹10**; **acquirer loses if synergy < premium**
+- Target's stock price **rises on announcement but stays below the offer price** (**deal completion probability < 100%**)
+- **Target shareholders are clear winners**; **acquiring shareholders do not benefit on average**; **combined firms' shareholders gain**
+- Proxies for overconfidence: **high premium**, **holding in-the-money options until the year before expiry**, **media portrayal**, **5 or more acquisitions in 3 years**
+- Agency conflict is reduced by **aligning compensation/stock ownership** and by **monitoring (board of directors)**
+- EPS example: A (P/E 12.5) acquires T (P/E 7.5) with **60 new shares**; **EPS rises ₹80 to ₹100** but **P/E falls 12.5 to 10**; EPS growth is **not a rational motive**
+- Acquiring a **lower P/E** firm is **EPS accretive** even with **no synergy**
+- Diversification example: **debt +₹7.5 thousand, equity -₹7.5 thousand**; total value stays ₹75 thousand; **shareholders are hurt by the amount bondholders gain**

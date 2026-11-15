@@ -2400,3 +2400,233 @@ $$E(P_{\text{callable}}) = \sum_i p_i \times \min(P_i,\; \text{Call Price})$$
 | Private placement | Positive reaction (monitoring/certification); cheaper, no registration; lock-in |
 | Bond indenture | Registered, secured/unsecured, senior/junior, negative/positive covenants, callable/noncallable |
 | Callable bond | Issuer calls when price > call price; callable bond worth less than noncallable |
+
+---
+
+## MODULE 8: Corporate Merger and Acquisitions (M&A) Decisions
+
+---
+
+### M&A Overview
+
+| Item | Detail |
+|---|---|
+| **Acquirer / bidder** | Buyer |
+| **Target** | Seller |
+| **Advisors** | **Investment bankers** and **lawyers** |
+| **Regulators** | Government, securities market regulator, **antitrust watchdog** |
+| **Merger** | Target **merges with** another firm |
+| **Acquisition** | Another firm **acquires** the target |
+| **Consideration** | **Cash**, **stock**, a **combination**, or equivalent value |
+
+- Acquirer must purchase the target's **stock or existing assets**; mergers, acquisitions and takeovers are used **interchangeably**
+- M&As are **economically large** and can **create or destroy value on a large scale**
+- Google: **250+** acquisitions; Oracle: **150+**
+
+---
+
+### M&A Activity and Waves
+
+- Global takeover market: **more than $2 trillion per year**; **30,000+ deals per year** over the last two decades
+- **M&A waves** = peaks of heavy activity followed by quiet troughs; **more in expansions and bull markets**
+
+| Theory | Explanation |
+|---|---|
+| **Neoclassical** | Firms in specific industries react to **economic shocks** (e.g., **deregulation**); activity **clusters by industry** |
+| **Overvaluation** | **Bubbles** drive waves; **overvalued stock used as currency** to buy **undervalued / less overvalued** firms |
+
+| Top 3 Cross-Border Deals | Year | Value ($ bn) |
+|---|---|---|
+| **Vodafone AirTouch (GB) → Mannesmann (DE)** | 1999 | **202.8** |
+| **Anheuser-Busch InBev (BE) → SABMiller (GB)** | 2015 | **101.5** |
+| **Royal Dutch Petroleum (NL) → Shell Transport & Trading (GB)** | 2004 | **74.6** |
+
+| Top 3 M&A Advisers by 2025 Fees | Fees (USD mn) |
+|---|---|
+| **Goldman Sachs & Co** | **4,887.56** |
+| **JP Morgan** | **3,202.54** |
+| **Morgan Stanley** | **3,080.88** |
+
+- **Cross-border deal**: acquirer and target from **different countries**
+
+---
+
+### Types of M&As
+
+| Type | Meaning | Example |
+|---|---|---|
+| **Horizontal** | **Same industry** (competitors); needs **antitrust approval** | L&T Infotech-Mindtree (2019, IT services); Vodafone-Idea (2018, telecom) |
+| **Vertical: backward** | Firm acquires its **supplier** | ITC-Technico Agri Sciences (2007) for Bingo! potato supply |
+| **Vertical: forward** | Firm acquires its **customer** | ONGC-HPCL (2018) |
+| **Conglomerate** | **Unrelated industries** | Adani Group-NDTV (2022) |
+
+| Antitrust Regulator | Country |
+|---|---|
+| **Competition Commission of India (CCI)** | India |
+| **Federal Trade Commission (FTC)** | US |
+
+- Regulators block deals that **substantially reduce competition or create monopolies**
+
+---
+
+### Synergy and Its Sources
+
+$$\text{Synergy} = PV_{AT} - (PV_A + PV_T)$$
+
+- Synergy = **PV of incremental cash flows**; $PV_{AT} > PV_A + PV_T$ means two firms are worth more together
+
+$$\Delta CF_t = \Delta Rev_t - \Delta Costs_t - \Delta Taxes_t - \Delta Capital\ Requirements_t$$
+
+| Source | Detail |
+|---|---|
+| **Higher revenue** | **Cross-selling**; **market power** → higher prices (limited by **antitrust laws**) |
+| **Lower costs** | **Economies of scale** (horizontal); **economies of vertical integration** (vertical); **elimination of inefficiencies** (management change, no perquisites / pet projects) |
+| **Lower taxes** | **Use of tax losses** (profitable + unprofitable firm); **larger tax shield** (add missing debt to target; merger → less risky debt → **greater debt capacity**) |
+| **Lower capital requirements** | **Fewer duplicate plants and facilities** → less investment in working capital and fixed assets |
+
+---
+
+### Takeover Premium and Sharing of Synergy
+
+$$\text{Takeover Premium} = \frac{\text{Offer Price} - \text{Pre-Offer Value of Target}}{\text{Pre-Offer Value of Target}}$$
+
+| Party | Share of Synergy |
+|---|---|
+| **Acquirer** | $\text{Synergy} - \text{Premium}$ |
+| **Target** | $\text{Premium}$ |
+
+- Premium is needed because target holders can **sell at fair value in the market anyway**
+- **Acquirer loses if synergy < premium**
+
+**Example:** Target trades at ₹100; acquirer pays ₹120; synergy is ₹30. Find the premium and each side's gain.
+
+> *Why: Premium = offer − pre-offer value; target keeps the premium, acquirer keeps the rest of the synergy.*
+> Premium $= 120 - 100 = 20$; premium % $= 20/100 = 20\%$
+> Target gain $= 20$
+> Acquirer gain $= 30 - 20 = 10$
+> **Answer = Premium ₹20 (20%); target ₹20; acquirer ₹10** ✓
+> *(Check: 20 + 10 = 30 synergy; if synergy < ₹20 the acquirer loses)*
+
+---
+
+### Market Reaction and Shareholder Wealth
+
+| Question | Answer |
+|---|---|
+| Measure of synergy in practice | **Value-weighted cumulative abnormal returns** of bidder and target around announcement |
+| Target price on announcement | **Rises** (premium) but stays **below the offer price** |
+| Why below offer price? | **Probability of completion < 100%**; higher probability → closer to offer price |
+| Target shareholders | **Clear winners** |
+| Acquiring shareholders | **Do not benefit on average** (evidence unclear) |
+| Combined firms' shareholders | **Value created** |
+
+---
+
+### Managerial Overconfidence (Hubris)
+
+- **Overconfident managers** are more likely to do M&As, **overestimate synergies** and **overpay** (**hubris hypothesis**); evidence: they **destroy shareholder value**
+
+| Proxy for Overconfidence | Detail |
+|---|---|
+| **High takeover premium** | Premium = (Offer − Pre-offer value) / Pre-offer value |
+| **In-the-money options held** | Held **until the year before expiration** (strike < market price, yet not exercised) |
+| **Media portrayal** | Press portrays the manager as overconfident |
+| **High acquisitiveness** | **5 or more acquisitions within 3 years** |
+
+- **Employee stock options = call options**: right (not obligation) to buy at the **strike price** on or before the **expiration date**; **in the money** when strike < market price
+
+---
+
+### Agency Motive
+
+| Conflict | Between | M&A Illustration |
+|---|---|---|
+| **Principal-agent** | **Shareholders** and **managers** | **Free cash flow hypothesis**: surplus cash and no profitable project → CEO makes **value-destroying acquisitions** instead of returning cash |
+| **Principal-principal** | **Controlling (majority)** and **minority** shareholders (business groups, e.g., India) | **Within-group rescue acquisitions**: resources moved to a distressed group firm to protect group reputation, at the expense of the supplying firm's minority holders |
+
+| Why Managers Prefer Acquisitions | Detail |
+|---|---|
+| **Prestige** | Heading a **larger** organization |
+| **Compensation** | Pay sometimes **linked to firm size** |
+
+| Mitigation / Evidence | Detail |
+|---|---|
+| **Align interests** | **Compensation contracts**, **stock ownership**, stock options |
+| **Monitor managers** | **Board of directors** monitoring → better acquisition decisions |
+| **Pay linked to firm value** | Better acquisition decisions |
+| **Market for corporate control** | **Disciplining mechanism of last resort**: agency-infected firms become **hostile takeover targets** |
+
+---
+
+### EPS Growth: Accretion and Dilution
+
+$$\text{P/E} = \frac{\text{Stock Price}}{\text{EPS}}$$
+
+- P/E = price paid for **₹1 of earnings**; **higher P/E → higher expected earnings growth**
+- Acquiring a **lower P/E firm** raises the acquirer's EPS even with **no synergy** (**EPS accretive**); a fall in EPS is **EPS dilutive**
+
+**Example:** Firms A and T are all-equity, each with EPS ₹80 and 100 shares. Price: A ₹1,000, T ₹600. A acquires T with its own stock; no synergy, no premium, no costs. Find P/Es, A's value after, shares issued, EPS after and P/E after.
+
+> *Why: No synergy or premium, so combined value = sum of values; T's holders get new shares worth T's market value; EPS = total earnings / total shares.*
+> P/E of A $= 1000/80 = 12.5$; P/E of T $= 600/80 = 7.5$
+> Value of A after $= 100 \times 1000 + 100 \times 600 = 1{,}60{,}000$
+> $\dfrac{1{,}60{,}000}{100 + N} \times N = 60{,}000 \Rightarrow 1{,}00{,}000N = 60{,}00{,}000 \Rightarrow N = 60$
+> Earnings after $= 8{,}000 + 8{,}000 = 16{,}000$; EPS after $= 16{,}000/160 = 100$
+> Price after $= 1{,}60{,}000/160 = 1{,}000$; P/E after $= 1000/100 = 10$
+> **Answer = P/E 12.5 and 7.5; value ₹1,60,000; N = 60; EPS ₹100 (up from ₹80); P/E 10 (down from 12.5)** ✓
+> *(EPS rises 25% but price stays ₹1,000 and P/E falls: higher EPS is paid for by slower future earnings growth, so EPS growth is NOT a rational motive)*
+
+---
+
+### Diversification and the Coinsurance Effect
+
+- Merger lowers **volatility of combined value**; **shareholders** can diversify on their own at no extra cost
+- **Coinsurance effect**: debt is insured by **two firms**, so **bondholders gain** and **shareholders lose** (wealth transfer when there is **no synergy**)
+
+$$\text{Debt} = \min(\text{Firm Value},\ \text{Face Value}) \qquad \text{Equity} = \text{Firm Value} - \text{Debt}$$
+
+**Example:** Firms A and T merge with no synergy and no premium. Face value of debt: A ₹30,000; T ₹15,000. Boom (p = 0.5): A = 80, T = 10; Recession (p = 0.5): A = 20, T = 40 (₹ thousand). Is there a wealth transfer?
+
+> *Why: Total value is unchanged, but the combined firm's debt (face 45) is covered in both states, so debt becomes safer and equity absorbs the risk.*
+> Before: debt A $= 30, 20$ (EV = 25); debt T $= 10, 15$ (EV = 12.5)
+> Separate total: value $90, 60$ (EV = 75); debt $40, 35$ (EV = 37.5); equity $50, 25$ (EV = 37.5)
+> After: value $90, 60$ (EV = 75); debt $45, 45$ (EV = 45); equity $45, 15$ (EV = 30)
+> Debt change $= +5, +10$ (EVV = **+7.5**); equity change $= -5, -10$ (EV = **-7.5**)
+> **Answer = Yes: ₹7.5 thousand moves from shareholders to bondholders; firm value stays ₹75 thousand** ✓
+> *(Shareholders lose exactly what bondholders gain; the less risky the combined firm, the greater the bondholders' gain)*
+
+---
+
+## Quick Reference: Which Measure / Rule to Use
+
+| Situation | Action/Answer |
+|-----------|---------------|
+| Value created by a deal | $PV_{AT} - (PV_A + PV_T)$ |
+| Premium paid | (Offer − Pre-offer value) / Pre-offer value |
+| Acquirer's gain | Synergy − Premium |
+| Target's gain | Premium |
+| Combined value, no synergy and no premium | $MV_A + MV_T$ |
+| New shares to target (no premium) | Solve $\dfrac{MV_{AT}}{N_A + N} \times N = MV_T$ |
+| Combined EPS | Total earnings / (original shares + new shares) |
+| Combined price | $MV_{AT}$ / total shares |
+| Debt value in a state | $\min$(firm value, face value of debt) |
+| Equity value in a state | Firm value − debt value |
+| Wealth transfer in a no-synergy merger | Change in debt value (gain to bondholders = loss to shareholders) |
+
+## Key Decision Rules Summary
+
+| Rule | Detail |
+|------|--------|
+| Rational motive | Synergy (PV of incremental cash flows) |
+| Synergy sources | Revenue up, costs down, taxes down, capital requirements down |
+| Acquirer loses | When synergy < premium |
+| Target price on announcement | Rises but stays below offer price (deal may fail) |
+| Who gains | Target shareholders clearly; acquirer shareholders not on average |
+| Horizontal deals | Need antitrust approval (CCI in India, FTC in US) |
+| Backward vs forward | Backward = acquire supplier; forward = acquire customer |
+| Hubris | Overconfident managers overestimate synergies and overpay |
+| Agency (principal-agent) | Free cash flow → value-destroying acquisitions; mitigated by incentives and monitoring |
+| Agency (principal-principal) | Controlling vs minority shareholders (within-group rescue acquisitions) |
+| Market for corporate control | Disciplining mechanism of last resort |
+| EPS accretion | Buying a lower P/E firm raises EPS even without synergy; P/E falls |
+| Diversification | Coinsurance: bondholders gain, shareholders lose by the same amount |
