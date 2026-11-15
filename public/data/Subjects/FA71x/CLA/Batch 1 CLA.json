@@ -1618,6 +1618,216 @@
       "correct_option_label": "A",
       "explanation": "If the price would be ₹1,100 the bond is called at ₹1,000. Expected price = 0.5 × 1,000 + 0.5 × 900 = ₹950.",
       "module": 7
+    },
+    {
+      "question_id": "CLA_M8_Q01",
+      "question_text": "Two automobile manufacturers producing similar vehicles merge to reduce production costs and enhance economies of scale. This is an example of",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Vertical merger",
+        "B": "Horizontal merger",
+        "C": "Conglomerate merger",
+        "D": "None of the above"
+      },
+      "correct_option_label": "B",
+      "explanation": "Firms in the same industry making similar products combining is a horizontal merger.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q02",
+      "question_text": "There are two all-equity-financed firms, Alpha Ltd. and Beta Ltd. Alpha Ltd. has earnings of ₹120 per share, has 200 shares outstanding, and its stock price is ₹1,800. Beta Ltd., on the other hand, has earnings of ₹60 per share, has 300 shares outstanding, and its stock price is ₹600. Alpha Ltd. acquires Beta Ltd. by issuing its own shares. Assume no synergies, no acquisition premium, no transaction costs, and a perfect capital market. Calculate the number of new shares Alpha Ltd. must issue to acquire Beta Ltd.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "200 shares",
+        "B": "250 shares",
+        "C": "100 shares",
+        "D": "150 shares"
+      },
+      "correct_option_label": "C",
+      "explanation": "Beta's value = 600 × 300 = ₹1,80,000; at Alpha's ₹1,800 price, 1,80,000 / 1,800 = 100 new shares.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q03",
+      "question_text": "There are two all-equity-financed firms, Alpha Ltd. and Beta Ltd. Alpha Ltd. has earnings of ₹120 per share, has 200 shares outstanding, and its stock price is ₹1,800. Beta Ltd., on the other hand, has earnings of ₹60 per share, has 300 shares outstanding, and its stock price is ₹600. Alpha Ltd. acquires Beta Ltd. by issuing its own shares. Assume no synergies, no acquisition premium, no transaction costs, and a perfect capital market. Find Alpha Ltd.’s earnings per share (EPS) after the acquisition.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹90",
+        "B": "₹84",
+        "C": "₹140",
+        "D": "₹42"
+      },
+      "correct_option_label": "C",
+      "explanation": "Combined earnings = 24,000 + 18,000 = ₹42,000 over 200 + 100 = 300 shares, so EPS = ₹140.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q04",
+      "question_text": "There are two all-equity-financed firms, Alpha Ltd. and Beta Ltd. Alpha Ltd. has earnings of ₹120 per share, has 200 shares outstanding, and its stock price is ₹1,800. Beta Ltd., on the other hand, has earnings of ₹60 per share, has 300 shares outstanding, and its stock price is ₹600. Alpha Ltd. acquires Beta Ltd. by issuing its own shares. Assume no synergies, no acquisition premium, no transaction costs, and a perfect capital market. For the shareholders of Alpha Ltd., this acquisition can be best described as",
+      "question_type": "MCQ",
+      "options": {
+        "A": "EPS-accretive",
+        "B": "EPS-dilutive",
+        "C": "EPS-neutral",
+        "D": "None of the above"
+      },
+      "correct_option_label": "A",
+      "explanation": "EPS rises from ₹120 to ₹140 because the high-P/E acquirer (15) buys a low-P/E target (10).",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q05",
+      "question_text": "There are two all-equity-financed firms, Alpha Ltd. and Beta Ltd. Alpha Ltd. has earnings of ₹120 per share, has 200 shares outstanding, and its stock price is ₹1,800. Beta Ltd., on the other hand, has earnings of ₹60 per share, has 300 shares outstanding, and its stock price is ₹600. Alpha Ltd. acquires Beta Ltd. by issuing its own shares. Assume no synergies, no acquisition premium, no transaction costs, and a perfect capital market. Find the market value of Alpha Ltd. after the acquisition.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹3,60,000",
+        "B": "₹1,80,000",
+        "C": "₹7,20,000",
+        "D": "₹5,40,000"
+      },
+      "correct_option_label": "D",
+      "explanation": "With no synergies, combined value = ₹3,60,000 + ₹1,80,000 = ₹5,40,000.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q06",
+      "question_text": "There are two all-equity-financed firms, Alpha Ltd. and Beta Ltd. Alpha Ltd. has earnings of ₹120 per share, has 200 shares outstanding, and its stock price is ₹1,800. Beta Ltd., on the other hand, has earnings of ₹60 per share, has 300 shares outstanding, and its stock price is ₹600. Alpha Ltd. acquires Beta Ltd. by issuing its own shares. Assume no synergies, no acquisition premium, no transaction costs, and a perfect capital market. Find Alpha Ltd.’s expected stock price after the acquisition.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹1,600",
+        "B": "₹2,400",
+        "C": "₹1,800",
+        "D": "₹800"
+      },
+      "correct_option_label": "C",
+      "explanation": "₹5,40,000 / 300 shares = ₹1,800; the price is unchanged despite higher EPS.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q07",
+      "question_text": "There are two all-equity-financed firms, Alpha Ltd. and Beta Ltd. Alpha Ltd. has earnings of ₹120 per share, has 200 shares outstanding, and its stock price is ₹1,800. Beta Ltd., on the other hand, has earnings of ₹60 per share, has 300 shares outstanding, and its stock price is ₹600. Alpha Ltd. acquires Beta Ltd. by issuing its own shares. Assume no synergies, no acquisition premium, no transaction costs, and a perfect capital market. Find Alpha Ltd.'s P/E ratio after the acquisition.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "15.5",
+        "B": "10.2",
+        "C": "12.35",
+        "D": "12.86"
+      },
+      "correct_option_label": "D",
+      "explanation": "P/E = 1,800 / 140 = 12.86, a value-weighted blend of 15 and 10.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q08",
+      "question_text": "An acquirer has standalone earnings of ₹24 crore and 3 crore shares outstanding before the acquisition. It acquires a target with earnings of ₹8 crore and issues 1 crore new shares as consideration to the target. What is the percentage change in the earnings per share (EPS) of the acquirer due to the acquisition? Assume no synergies, no acquisition premium, no transaction costs, and a perfect capital market.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "10% increase",
+        "B": "20% increase",
+        "C": "20% decrease",
+        "D": "No change"
+      },
+      "correct_option_label": "D",
+      "explanation": "EPS before = 24 / 3 = ₹8; after = (24 + 8) / (3 + 1) = ₹8, so no change.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q09",
+      "question_text": "Ignoring the interests of shareholders, a CEO pursues a large acquisition primarily to increase the company's size, enhance personal prestige, and justify higher compensation. This is best explained by",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Economies of scale",
+        "B": "The agency problem",
+        "C": "Hubris hypothesis",
+        "D": "Effective Monitoring"
+      },
+      "correct_option_label": "B",
+      "explanation": "Empire-building for size, prestige and pay is the agency motive; hubris concerns overconfident valuation.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q10",
+      "question_text": "A merger reduces combined operating costs by ₹12 crore annually. The present value of these savings is ₹50 crore, while the present value of integration costs is ₹8 crore. Ignoring other effects, the net value created by these cost savings is:",
+      "question_type": "MCQ",
+      "options": {
+        "A": "₹8 crore",
+        "B": "₹12 crore",
+        "C": "₹42 crore",
+        "D": "₹50 crore"
+      },
+      "correct_option_label": "C",
+      "explanation": "Net value = PV of savings − PV of integration costs = 50 − 8 = ₹42 crore.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q11",
+      "question_text": "Which statement about synergy is correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Synergy always exists whenever there is a merger of two companies",
+        "B": "Synergy is the excess of the combined firm value over the standalone values of merging firms",
+        "C": "Synergy equals the acquisition premium paid to target shareholders",
+        "D": "None of the above"
+      },
+      "correct_option_label": "B",
+      "explanation": "Synergy = V(AT) − (V(A) + V(T)); it is not guaranteed and differs from the premium.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q12",
+      "question_text": "A pharmaceutical company acquires a hotel chain with no significant business relationship between them. This is an example of",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Conglomerate merger",
+        "B": "Horizontal merger",
+        "C": "Vertical merger",
+        "D": "Reverse merger"
+      },
+      "correct_option_label": "A",
+      "explanation": "Unrelated businesses combining is a conglomerate merger.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q13",
+      "question_text": "Which statement about bondholder gains and shareholder losses in mergers is most likely correct?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Bondholders always lose when two companies merge with different P/E ratios",
+        "B": "Bondholders gain at the expense of shareholders in deals with no synergies.",
+        "C": "Shareholders always benefit when a company becomes less risky.",
+        "D": "Bondholder gains can occur only when the merger creates positive synergies."
+      },
+      "correct_option_label": "B",
+      "explanation": "Coinsurance effect: with no synergy, debt becomes safer, so bondholders gain exactly what shareholders lose.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q14",
+      "question_text": "Managers may undertake acquisitions against the interest of shareholders. What kind of conflict or problem does it represent?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Principal-agent conflict",
+        "B": "Principal-principal conflict",
+        "C": "CEO-CFO conflict",
+        "D": "Blockholder-minority shareholder conflict"
+      },
+      "correct_option_label": "A",
+      "explanation": "Managers (agents) acting against shareholders (principals) is the principal-agent problem.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q15",
+      "question_text": "Which of the following is commonly used as a proxy for managerial overconfidence in the context of mergers and acquisitions?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Managers who consistently favour distributing high dividends",
+        "B": "Managers who hold in-the-money stock options until the year before expiration",
+        "C": "Managers who undertake no acquisitions at all",
+        "D": "Managers who invest only in projects with positive NPV"
+      },
+      "correct_option_label": "B",
+      "explanation": "Holding in-the-money options until the year before expiry signals overconfidence about raising the stock price.",
+      "module": 8
     }
   ]
 }

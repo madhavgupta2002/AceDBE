@@ -1091,6 +1091,164 @@
       "explanation": "Recurring family traditions and festival-linked giving reflect the shared practices and rituals pillar.",
       "module": 7,
       "passage_id": "CLA_M7_P01"
+    },
+    {
+      "question_id": "CLA_M8_Q01",
+      "question_text": "A family business is required by company law to maintain a specific board composition and follow succession formalities. Which of Richard Scott's institutional pillars does this represent?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Regulative",
+        "B": "Normative",
+        "C": "Cultural-cognitive",
+        "D": "Mimetic"
+      },
+      "correct_option_label": "A",
+      "explanation": "Company law dictating board composition and succession formalities is the regulative pillar (rule and sanction).",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q02",
+      "question_text": "In the three-circle model, which governance structure is the first direct target of SEBI's regulatory requirements on independent directors and audit committees?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Shareholder agreement",
+        "B": "Family council",
+        "C": "Family constitution",
+        "D": "Board of directors"
+      },
+      "correct_option_label": "D",
+      "explanation": "The board (business circle) is the direct target of SEBI rules on independent directors and committees.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q03",
+      "question_text": "The 2005 amendment making daughters coparceners by birth in an HUF primarily creates regulatory pressure on which circle of a family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Family circle",
+        "B": "Business circle",
+        "C": "Ownership circle",
+        "D": "Management circle"
+      },
+      "correct_option_label": "A",
+      "explanation": "The Hindu Succession Act 2005 amendment is the regulative pressure on the family circle.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q04",
+      "question_text": "A family firm continues operating in a declining home market rather than exiting, even though exit would be financially superior. Which concept best explains this decision?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Patient capital allocation",
+        "B": "Socio-emotional wealth preservation",
+        "C": "Regulatory compliance requirement",
+        "D": "Mimetic isomorphism"
+      },
+      "correct_option_label": "B",
+      "explanation": "SEW: family firms may stay in a declining home market because exit threatens identity and legacy.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q05",
+      "question_text": "In emerging markets with underdeveloped credit rating agencies and few merchant banks, family business groups typically respond by doing which of the following?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Building internal capital markets and cross-subsidizing across group firms",
+        "B": "Waiting for regulators to create domestic rating agencies",
+        "C": "Relying entirely on foreign credit rating agencies for financing decisions",
+        "D": "Exiting capital-intensive businesses to avoid financing risk"
+      },
+      "correct_option_label": "A",
+      "explanation": "The response to the capital-market void is internal capital markets, cross-subsidising across group firms.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q06",
+      "question_text": "A board seat quota for an independent director is filled on paper, but actual control still rests entirely with the family. What does this situation best illustrate about institutional pillars?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Normative pressure is sufficient to drive durable governance reform alone",
+        "B": "Regulatory compliance alone without normative alignment produces nominal change",
+        "C": "Cultural-cognitive beliefs always change before regulatory mandates are issued",
+        "D": "Coercive mechanisms guarantee genuine behavioral change in family firms"
+      },
+      "correct_option_label": "B",
+      "explanation": "A rule alone is filled on paper: compliance without change; rule, norm and belief must move together.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q07",
+      "question_text": "When a family firm copies the governance structure of a larger, more successful firm without any external mandate requiring it, this reflects which mechanism of institutional isomorphism?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Coercive",
+        "B": "Normative",
+        "C": "Regulative",
+        "D": "Mimetic"
+      },
+      "correct_option_label": "D",
+      "explanation": "Mimetic isomorphism: copying firms seen as more successful, without anyone asking.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_P01",
+      "question_text": "Please Note: Questions 8–10 are based on the case provided below. Read the case carefully before attempting these questions.\nA well-known family business group is undergoing a significant transition. For decades, family members held nearly every senior executive position, decisions were made informally, and risk appetite was closely tied to the family's reputation and identity. Recently, the family has begun hiring professional CEOs and CFOs from outside the family for key roles, even though capable family members were available. Ownership of the group, however, remains entirely with the family, now organized through a formal family council and a board with independent directors. Investment decisions are increasingly evaluated using structured ROI frameworks rather than family instinct alone. Despite these changes, the family continues to emphasize a long payback horizon for its investments and remains deeply attentive to its public reputation, even as professionals take over daily operations.",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {
+        "A": "",
+        "B": "",
+        "C": "",
+        "D": ""
+      },
+      "correct_option_label": "",
+      "explanation": "Shared passage for questions 8–10.",
+      "module": 8
+    },
+    {
+      "question_id": "CLA_M8_Q08",
+      "question_text": "This transition exemplifies which structural shift identified in studies of the future of family business?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Family-owned to family-run",
+        "B": "Formal to informal governance",
+        "C": "Family-run to family-owned",
+        "D": "Regulative to normative pillar dominance"
+      },
+      "correct_option_label": "C",
+      "explanation": "KPMG's study: family businesses move from family-run to family-owned and professionally managed.",
+      "module": 8,
+      "passage_id": "CLA_M8_P01"
+    },
+    {
+      "question_id": "CLA_M8_Q09",
+      "question_text": "Which attribute does the passage indicate remains unchanged despite professionalisation?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Family-only executive roles",
+        "B": "Informal decision-making",
+        "C": "Instinct-based risk appetite",
+        "D": "Patient capital orientation"
+      },
+      "correct_option_label": "D",
+      "explanation": "What stays the same: the long-term horizon and patient capital.",
+      "module": 8,
+      "passage_id": "CLA_M8_P01"
+    },
+    {
+      "question_id": "CLA_M8_Q10",
+      "question_text": "The use of structured ROI frameworks instead of relying purely on family instinct reflects which component of the transition?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Changed risk appetite assessment",
+        "B": "Changed ownership structure",
+        "C": "Changed family circle composition",
+        "D": "Changed regulatory classification"
+      },
+      "correct_option_label": "A",
+      "explanation": "Risk appetite shifts from family identity to enterprise risk frameworks and formal metrics such as ROI.",
+      "module": 8,
+      "passage_id": "CLA_M8_P01"
     }
   ]
 }
