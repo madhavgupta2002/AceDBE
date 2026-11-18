@@ -139,8 +139,8 @@
         "B": "The check-in staff doubling as baggage handlers",
         "C": "The number of models offered by the airline"
       },
-      "correct_option_label": "C",
-      "explanation": "Reducing aircraft variety (using a single model) simplifies maintenance and training, allowing for faster response and higher utilization.",
+      "correct_option_label": "B",
+      "explanation": "Check-in staff doubling as baggage handlers allows employees to move between tasks as needed, reducing delays and improving operational responsiveness.",
       "module": 1
     },
     {
@@ -201,6 +201,14 @@
     {
       "question_id": "M1_C_Q3",
       "question_text": "In a toy manufacturing process where the sequence of activities includes preparation (8 minutes), pre-treatment (12 minutes), painting (20 minutes), drying (10 minutes), and inspection/packing (5 minutes), what is the total throughput time to process the first batch of toys from beginning to end?",
+      "variant_label": "Term 1",
+      "variants": [
+        {
+          "id": "term-2",
+          "label": "Term 2",
+          "question_text": "Refer to our discussion in Section 1.4.5, what is the total time taken to process one batch of toys from preparation to inspection and packing? (for the first order)"
+        }
+      ],
       "question_type": "MCQ",
       "options": {
         "A": "45 minutes",
@@ -215,6 +223,14 @@
     {
       "question_id": "M1_C_Q4",
       "question_text": "Given a toy production process where preparation takes 8 minutes, pre-treatment takes 12 minutes, painting takes 20 minutes, drying takes 10 minutes, and inspection/packing takes 5 minutes, which stage is identified as the bottleneck?",
+      "variant_label": "Term 1",
+      "variants": [
+        {
+          "id": "term-2",
+          "label": "Term 2",
+          "question_text": "Refer to our discussion in Section 1.4.6, Which stage in the toy production process takes the longest time and is likely the bottleneck?"
+        }
+      ],
       "question_type": "MCQ",
       "options": {
         "A": "Preparation",
@@ -229,6 +245,14 @@
     {
       "question_id": "M1_C_Q5",
       "question_text": "If a toy manufacturing process has a cycle time of 20 minutes (determined by the painting bottleneck) and operates for an 8-hour working day, what is the maximum number of pallets that can be produced daily?",
+      "variant_label": "Term 1",
+      "variants": [
+        {
+          "id": "term-2",
+          "label": "Term 2",
+          "question_text": "Refer to our discussion in Section 1.4.7, given an 8-hour working day, what is the maximum number of toy pallets that can be produced per day, assuming the bottleneck is in the painting stage?"
+        }
+      ],
       "question_type": "MCQ",
       "options": {
         "A": "18 pallets per day",
@@ -243,6 +267,20 @@
     {
       "question_id": "M1_C_Q6",
       "question_text": "In capacity analysis, why is a stage like drying often considered a 'non-capacity constrained resource' even if it has a set processing time?",
+      "variant_label": "Term 1",
+      "variants": [
+        {
+          "id": "term-2",
+          "label": "Term 2",
+          "question_text": "Refer to our discussion in Section 1.4.7, which of the following statements best explains why the drying stage is not considered a capacity-constrained resource?",
+          "options": {
+            "A": "Drying time is shorter than preparation time",
+            "B": "Drying stage uses expensive resources",
+            "C": "Drying can handle any number of pallets without limiting overall output",
+            "D": "Drying is not required for all types of toys"
+          }
+        }
+      ],
       "question_type": "MCQ",
       "options": {
         "A": "Drying time is always shorter than other stages",
@@ -257,6 +295,14 @@
     {
       "question_id": "M1_B_Q1",
       "question_text": "In the initial toy manufacturing case study where painting takes 20 minutes per pallet, preparation takes 8 minutes, and pre-treatment takes 12 minutes, which stage is identified as the bottleneck?",
+      "variant_label": "Term 1",
+      "variants": [
+        {
+          "id": "term-2",
+          "label": "Term 2",
+          "question_text": "Refer to the video in Section 1.5.2, what was identified as the bottleneck in the toy manufacturing process before adding capacity?"
+        }
+      ],
       "question_type": "MCQ",
       "options": {
         "A": "Preparation stage",
@@ -285,6 +331,20 @@
     {
       "question_id": "M1_B_Q3",
       "question_text": "When the operating policy is changed to process three pallets simultaneously in the painting booth (increasing its capacity to 9 pallets/hr) and preparation capacity is adjusted to 11.25 pallets/hr, where does the bottleneck shift if the pre-treatment stage remains at 5 pallets/hr?",
+      "variant_label": "Term 1",
+      "variants": [
+        {
+          "id": "term-2",
+          "label": "Term 2",
+          "question_text": "Refer to the video in Section 1.5.3, when increasing the number of pallets processed simultaneously in the painting booth from one to three, what happens to the bottleneck in the production process?",
+          "options": {
+            "A": "It remains at the painting booth",
+            "B": "It shifts to the pre-treatment stage",
+            "C": "It shifts to the preparation stage",
+            "D": "It is eliminated completely"
+          }
+        }
+      ],
       "question_type": "MCQ",
       "options": {
         "A": "It remains at the painting booth",
@@ -299,6 +359,20 @@
     {
       "question_id": "M1_B_Q4",
       "question_text": "Based on the toy manufacturing example, what is the primary advantage of changing an operating policy (like increasing batch size in a booth) instead of adding a second piece of equipment?",
+      "variant_label": "Term 1",
+      "variants": [
+        {
+          "id": "term-2",
+          "label": "Term 2",
+          "question_text": "Refer to the video in Section 1.5.4, What is the effect of changing the operating policy to process multiple pallets in the painting booth rather than adding a second booth?",
+          "options": {
+            "A": "Output stays the same, but costs increase",
+            "B": "Output increases without additional investment in capacity",
+            "C": "Output decreases due to longer preparation times",
+            "D": "Output doubles immediately"
+          }
+        }
+      ],
       "question_type": "MCQ",
       "options": {
         "A": "It increases the throughput time for the first order",
@@ -311,8 +385,26 @@
       "module": 1
     },
     {
+      "question_id": "M1_CAL_P1",
+      "question_text": "### Table 1: Details of the process steps\n\n| Resource | Process Time (min/unit) | Number of Workers |\n| --- | --- | --- |\n| 1 | 10 | 2 |\n| 2 | 6 | 1 |\n| 3 | 16 | 3 |",
+      "question_type": "SUBJECTIVE",
+      "is_passage": true,
+      "options": {},
+      "correct_option_label": null,
+      "module": 1
+    },
+    {
       "question_id": "M1_CAL_Q1",
-      "question_text": "Based on the table (Resource 1: 10m/2w, Resource 2: 6m/1w, Resource 3: 16m/3w), which resource is bottleneck?",
+      "question_text": "Which resource is bottleneck?",
+      "variant_label": "Term 2",
+      "variants": [
+        {
+          "id": "term-1",
+          "label": "Term 1",
+          "question_text": "Based on the table (Resource 1: 10m/2w, Resource 2: 6m/1w, Resource 3: 16m/3w), which resource is bottleneck?"
+        }
+      ],
+      "passage_id": "M1_CAL_P1",
       "question_type": "MCQ",
       "options": {
         "A": "Resource 1",
@@ -327,6 +419,7 @@
     {
       "question_id": "M1_CAL_Q2",
       "question_text": "Estimate process capacity",
+      "passage_id": "M1_CAL_P1",
       "question_type": "MCQ",
       "options": {
         "A": "1/5 unit/minute",
@@ -341,6 +434,7 @@
     {
       "question_id": "M1_CAL_Q3",
       "question_text": "If the demand is very high, what is flow rate?",
+      "passage_id": "M1_CAL_P1",
       "question_type": "MCQ",
       "options": {
         "A": "1/6 unit/minute",
@@ -355,6 +449,7 @@
     {
       "question_id": "M1_CAL_Q4",
       "question_text": "If the demand is very high, what is cycle time?",
+      "passage_id": "M1_CAL_P1",
       "question_type": "MCQ",
       "options": {
         "A": "2 min/unit",
@@ -369,6 +464,7 @@
     {
       "question_id": "M1_CAL_Q5",
       "question_text": "Estimate the average labour content",
+      "passage_id": "M1_CAL_P1",
       "question_type": "MCQ",
       "options": {
         "A": "40 min/unit",
@@ -383,6 +479,7 @@
     {
       "question_id": "M1_CAL_Q6",
       "question_text": "If the demand is very high, what is Labour Utilization?",
+      "passage_id": "M1_CAL_P1",
       "question_type": "MCQ",
       "options": {
         "A": "77.77%",
@@ -397,6 +494,7 @@
     {
       "question_id": "M1_CAL_Q7",
       "question_text": "If the wage rate is ₹500 per hour and if the demand is very high, what is cost of direct labour?",
+      "passage_id": "M1_CAL_P1",
       "question_type": "MCQ",
       "options": {
         "A": "₹356 per hour",

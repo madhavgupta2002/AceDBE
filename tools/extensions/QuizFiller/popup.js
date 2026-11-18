@@ -115,7 +115,7 @@ async function detect() {
       if (!best) { lines.push(`Q${q.n}: ? no confident match`); continue; }
       const idx = best.a.split(',').map(l => q.options.map((o, i) => [sim(o, best.o[l]) + (o.trim() === best.o[l].trim()), i]).sort((a, b) => b[0] - a[0])[0][1]);
       auto[q.n] = idx.map(i => String.fromCharCode(97 + i));
-      lines.push(`Q${q.n}: ${auto[q.n].join(',')}  (${Math.round(bestRaw * 100)}% match · ${best.c} ${best.s.split('/').pop()}${best.m !== '' ? ' M' + best.m : ''})`);
+      lines.push(`Q${q.n}: ${auto[q.n].join(',')}  (${Math.round(bestRaw * 100)}% match · ${best.c} ${best.s.split('/').pop()}${best.m !== '' ? ' M' + best.m : ''}${best.v ? ' · ' + best.v : ''})`);
       const g = `${best.n} (${best.c}) · ${best.s.split('/').pop()}`; hits[g] = (hits[g] || 0) + 1;
     }
     const top = Object.entries(hits).sort((a, b) => b[1] - a[1])[0];

@@ -8,13 +8,17 @@ export const questionKey = (q: Pick<Question, 'text' | 'source' | 'id'>): string
 export const isAnswerCorrect = (answer: string[], q: Pick<Question, 'correctAnswer'>): boolean =>
   answer.length === q.correctAnswer.length && answer.every(a => q.correctAnswer.includes(a));
 
-/** Case-insensitive match of `query` against a question's text or any option; an empty query matches all. */
+/** Search every wording and its options; an empty query matches all. */
 export const matchesSearch = (q: Question, query: string): boolean => {
   if (!query) return true;
   const needle = query.toLowerCase();
   return (
     q.text.toLowerCase().includes(needle) ||
-    !!(q.options && Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(needle)))
+    !!(q.options && Object.values(q.options).some(opt => opt?.toString().toLowerCase().includes(needle))) ||
+    !!q.variants?.some(variant =>
+      variant.text.toLowerCase().includes(needle) ||
+      Object.values(variant.options ?? {}).some(option => option?.toLowerCase().includes(needle))
+    )
   );
 };
 

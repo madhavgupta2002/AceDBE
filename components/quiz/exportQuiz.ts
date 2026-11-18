@@ -36,6 +36,16 @@ export function downloadQuizJson(questions: Question[], subjectCode: string, sub
         correct_option_label: q.correctAnswer.length > 0 ? q.correctAnswer.join(',') : null,
         module: q.module,
         explanation: q.explanation || '',
+        ...(q.variantLabel ? { variant_label: q.variantLabel } : {}),
+        ...(q.variants?.length ? {
+          variants: q.variants.map(variant => ({
+            id: variant.id,
+            label: variant.label,
+            question_text: variant.text,
+            ...(variant.options ? { options: variant.options } : {}),
+            ...(variant.explanation !== undefined ? { explanation: variant.explanation } : {}),
+          })),
+        } : {}),
       });
       return entries;
     }),

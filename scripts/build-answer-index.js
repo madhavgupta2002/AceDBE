@@ -18,15 +18,28 @@ for (const folder of fs.readdirSync(ROOT).sort()) {
       const name = data.exam_metadata?.subject_name || code;
       for (const q of data.questions || []) {
         if (q.is_passage || !q.options || !q.question_text) continue;
-        const labels = String(q.correct_option_label || '').split(/[,\s]+/).filter((l) => q.options[l]);
-        if (!labels.length || !Object.values(q.options).some(Boolean)) continue;
-        entries.push({
-          c: code, n: name, s: `${folder}/${dir}/${file.replace(/\.json$/, '')}`, m: q.module ?? '',
-          q: q.question_text, o: q.options, a: labels.join(','),
-        });
+        // Separate index entries let older extensions match every wording too.
+        // The website still loads one question; variants share its answer labels.
+        const versions = [
+          { label: q.variant_label, question_text: q.question_text, options: q.options },
+          ...(q.variants || []).map(variant => ({
+            ...variant,
+            options: variant.options ?? q.options,
+          })),
+        ];
+        for (const version of versions) {
+          const options = version.options;
+          const labels = String(q.correct_option_label || '').split(/[,\s]+/).filter((l) => options[l]);
+          if (!version.question_text || !labels.length || !Object.values(options).some(Boolean)) continue;
+          entries.push({
+            c: code, n: name, s: `${folder}/${dir}/${file.replace(/\.json$/, '')}`, m: q.module ?? '',
+            q: version.question_text, o: options, a: labels.join(','),
+            ...(version.label ? { v: version.label } : {}),
+          });
+        }
       }
     }
   }
 }
 fs.writeFileSync(OUT, JSON.stringify(entries));
-console.log(`Wrote ${path.relative(process.cwd(), OUT)} (${entries.length} questions, ${(fs.statSync(OUT).size / 1e6).toFixed(1)} MB)`);
+console.log(`Wrote ${path.relative(process.cwd(), OUT)} (${entries.length} searchable versions, ${(fs.statSync(OUT).size / 1e6).toFixed(1)} MB)`);

@@ -10,6 +10,7 @@ import PassageCard from './PassageCard';
 import type { Components } from 'react-markdown';
 import Markdown, { inlineParagraphs } from './quiz/Markdown';
 import { formatQuizText } from './quiz/formatText';
+import QuestionVariantSelector, { useQuestionVariant } from './quiz/QuestionVariantSelector';
 
 interface QuizQuestionProps {
   question: Question;
@@ -97,7 +98,7 @@ const QuestionHeader: React.FC<QuestionHeaderProps> = ({
 );
 
 const QuizQuestion: React.FC<QuizQuestionProps> = ({
-  question,
+  question: originalQuestion,
   onAnswer,
   onClearResponse,
   selectedAnswer,
@@ -108,6 +109,10 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   questionNumber,
   totalQuestions,
 }) => {
+  const { displayedQuestion: question, selectedVariantId, onSelectVariant } = useQuestionVariant(originalQuestion);
+  const variantSelector = (
+    <QuestionVariantSelector question={originalQuestion} selectedVariantId={selectedVariantId} onSelectVariant={onSelectVariant} />
+  );
   const isMultipleAnswer = question.correctAnswer.length > 1;
   const headerProps: QuestionHeaderProps = {
     questionNumber,
@@ -269,6 +274,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
     return (
       <div className="w-full max-w-3xl mx-auto">
       <QuestionHeader {...headerProps}>
+        {variantSelector}
         <span className="px-2 py-0.5 bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[11px] font-medium rounded-md">
           Subjective
         </span>
@@ -310,6 +316,7 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   return (
     <div className="w-full max-w-3xl mx-auto">
       <QuestionHeader {...headerProps}>
+        {variantSelector}
         {isMultipleAnswer && (
           <span className="px-2 py-0.5 bg-amber-500/10 border border-amber-500/30 text-amber-300 text-[11px] font-medium rounded-md">
             Multiple Correct

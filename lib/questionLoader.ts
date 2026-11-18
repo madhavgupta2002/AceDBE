@@ -30,6 +30,14 @@ function convertToInternalFormat(
     bankType: bankType,
     explanation: iimbQuestion.explaination || iimbQuestion.explanation, // Handle typo in JSON
     isSubjective: isSubjective,
+    variantLabel: iimbQuestion.variant_label,
+    variants: iimbQuestion.variants?.map(variant => ({
+      id: variant.id,
+      label: variant.label,
+      text: variant.question_text,
+      options: variant.options,
+      explanation: variant.explanation,
+    })),
   };
 }
 

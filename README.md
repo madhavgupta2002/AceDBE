@@ -87,6 +87,33 @@ tools/           Content tooling, not part of the app build: extensions/ (QuizFi
 
 `public/data/Subjects/<code>/CLA|Exam/<name>.json` with an `exam_metadata` object (subject name, exam date, optional `exam_pattern` for CBT) and a `questions` array. Types live in `lib/types.ts`. Subject codes, batches and terms are defined in `lib/subjectMapping.ts`; add a subject there and drop its data folder under `public/data/Subjects/`.
 
+#### Alternate question versions
+
+Keep related wordings in one question with `variant_label` for its primary version and a `variants` array for alternatives:
+
+```json
+{
+  "question_id": "M1_Q1",
+  "question_text": "Primary wording",
+  "variant_label": "Term 1",
+  "question_type": "MCQ",
+  "options": { "A": "First answer", "B": "Second answer" },
+  "correct_option_label": "B",
+  "variants": [
+    {
+      "id": "term-2",
+      "label": "Term 2",
+      "question_text": "Alternate wording",
+      "options": { "A": "First answer reworded", "B": "Second answer reworded" }
+    }
+  ]
+}
+```
+
+Each variant needs a unique, nonempty `id`, a display `label`, and `question_text`. Its optional `options` replace the entire primary option set; omit them to reuse the primary options. An optional `explanation` overrides the primary explanation. **Correct option labels must stay the same across versions**; use separate questions when the answer or scoring changes.
+
+Practice and review show a version selector, and search includes every version. Versions share one question identity, grade and history entry. JSON exports preserve the variants. CBT uses the primary wording. `npm run build:index` indexes every wording with its matching options so the QuizFiller extension can match either version; new extension versions also display the matched term.
+
 ## Data flow
 
 - **Module progress**: written to `localStorage` first (`ace_dbe_module_progress`, per user when signed in) and mirrored to the `module_progress` table while logged in. Failed writes are kept as pending and retried (the tracker shows the sync status and a Retry button). Guest progress is imported into the account on first login. Logic is in `lib/progress.ts`.

@@ -1,3 +1,12 @@
+// Wording variants share the parent question's identity, answer labels and scoring.
+export interface IIMBQuestionVariant {
+  id: string;
+  label: string;
+  question_text: string;
+  options?: IIMBQuestion['options'];
+  explanation?: string;
+}
+
 // IIMB Question Schema Types
 export interface IIMBQuestion {
   question_id: string;
@@ -15,6 +24,8 @@ export interface IIMBQuestion {
   difficulty?: string; // entrance papers: Easy | Medium | Hard
   is_passage?: boolean; // entry only holds a shared passage / caselet; it is not a question
   passage_id?: string; // question_id of the passage entry this question refers to
+  variant_label?: string; // label for the primary wording, e.g. "Term 1"
+  variants?: IIMBQuestionVariant[];
 }
 
 // Official exam pattern (Exam banks only). Documented in QUESTION_FORMAT.md.
@@ -83,6 +94,16 @@ export interface Question {
   explanation?: string;
   isSubjective?: boolean; // Flag to identify subjective questions
   passage?: QuestionPassage; // shared passage / caselet this question belongs to
+  variantLabel?: string;
+  variants?: QuestionVariant[];
+}
+
+export interface QuestionVariant {
+  id: string;
+  label: string;
+  text: string;
+  options?: Question['options'];
+  explanation?: string;
 }
 
 interface QuestionPassage {

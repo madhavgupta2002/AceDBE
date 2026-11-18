@@ -11,6 +11,7 @@ import PassageCard from '../PassageCard';
 import Markdown, { inlineParagraphs } from './Markdown';
 import PrintMenu from './PrintMenu';
 import { isAnswerCorrect, matchesSearch, questionKey } from './answers';
+import QuestionVariantSelector, { useQuestionVariant } from './QuestionVariantSelector';
 
 const SEGMENT_BASE = 'flex items-center gap-1.5 px-3 py-1.5 rounded-md border text-sm font-semibold transition-colors';
 const SEGMENT_ON = 'bg-emerald-500/15 text-emerald-200 border-emerald-500/40';
@@ -121,7 +122,7 @@ const TONE_CLASS = {
 const META_CHIP = 'px-2 py-0.5 bg-slate-800/70 border border-slate-700/60 font-medium rounded-md';
 
 function ReviewQuestionCard({
-  question: q,
+  question,
   number,
   userAnswer,
   tone,
@@ -141,13 +142,15 @@ function ReviewQuestionCard({
   /** When set, a per-question show/hide-answer toggle is rendered. */
   onToggleAnswer?: () => void;
 }) {
+  const { displayedQuestion: q, selectedVariantId, onSelectVariant } = useQuestionVariant(question);
   return (
     <div className={`mb-4 p-4 border rounded-xl ${TONE_CLASS[tone]}`}>
       <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <span className="px-2 py-0.5 bg-slate-700/50 border border-slate-600/40 text-slate-300 font-medium text-xs rounded-md">
             Q{number}
           </span>
+          <QuestionVariantSelector question={question} selectedVariantId={selectedVariantId} onSelectVariant={onSelectVariant} />
           {onToggleAnswer && (
             <button
               type="button"
