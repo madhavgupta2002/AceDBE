@@ -210,6 +210,7 @@ test('extension matches both term versions at 100% and remaps answers when optio
       scripting: { executeScript: async ({ func }) => [{ result: func.name === 'extractQuestions' ? pageQuestions : [{ href: '', title: 'Capacity analysis' }] }] },
     },
   });
+  vm.runInContext(fs.readFileSync(path.join(root, 'tools/extensions/QuizFiller/match.js'), 'utf8'), context); // loaded first, as in popup.html
   const code = fs.readFileSync(path.join(root, 'tools/extensions/QuizFiller/popup.js'), 'utf8');
   await vm.runInContext(code + '\ndetect();', context);
   const lines = element('log').textContent.split('\n');

@@ -37,7 +37,10 @@ async function copyText(text) {
 async function questionsText() {
   const qs = (await runInFrames(extractQuestions)).sort((a, b) => a.n - b.n);
   if (!qs.length) { log.textContent = 'No questions found on this page.'; return null; }
-  return { count: qs.length, body: qs.map(q => (q.context ? `[Context for Q${q.n}]\n${q.context}\n\n` : '') + `Q${q.n}. ${q.text}${q.multi ? ' (select ALL that apply)' : ''}\n` +
+  const imageLines = q => (q.images || []).map((url, i, all) => `  Image${all.length > 1 ? ' ' + (i + 1) : ''} for Q${q.n}: ${url}`).join('\n');
+  const images = qs.reduce((n, q) => n + (q.images || []).length, 0);
+  return { count: qs.length, images, body: qs.map(q => (q.context ? `[Context for Q${q.n}]\n${q.context}\n\n` : '') + `Q${q.n}. ${q.text}${q.multi ? ' (select ALL that apply)' : ''}\n` +
+    (q.images?.length ? imageLines(q) + '\n' : '') +
     q.options.map((o, i) => `  ${String.fromCharCode(97 + i)}) ${o}`).join('\n')).join('\n\n') };
 }
 
@@ -45,7 +48,7 @@ document.getElementById('copyq').onclick = async () => {
   const q = await questionsText();
   if (!q) return;
   await copyText(q.body);
-  log.textContent = `Copied ${q.count} question(s).`;
+  log.textContent = `Copied ${q.count} question(s)${q.images ? ` with ${q.images} image link(s)` : ''}.`;
 };
 
 document.getElementById('copy').onclick = async () => {
@@ -56,13 +59,14 @@ document.getElementById('copy').onclick = async () => {
 After your reasoning, output the final answers as a single JSON object on its own, in exactly this format:
 - keys are question numbers as strings
 - values are the option letter (e.g. "b"); for "select ALL that apply" questions use an array of letters (e.g. ["a","c"])
+- where a question lists an image link, open it and read the chart or table before answering
 
 Example: {"1":"b","2":"d","3":["a","c"]}
 
 Questions:
 
 ${q.body}`);
-  log.textContent = `Copied LLM prompt with ${q.count} question(s).`;
+  log.textContent = `Copied LLM prompt with ${q.count} question(s)${q.images ? ` and ${q.images} image link(s)` : ''}.`;
 };
 
 // ---- Auto-detection: subject from URL, module by best match, answers by string match ----
@@ -71,20 +75,12 @@ const INDEX_URL = 'https://raw.githubusercontent.com/madhavgupta2002/AceDBE/main
 const status = document.getElementById('status');
 let auto = {};          // { "3": ["b"] } letters refer to the options as ordered on the page
 
-const words = s => String(s).toLowerCase().replace(/[^a-z0-9₹%.]+/g, ' ').split(' ').filter(w => w.length > 1);
-const wordSet = x => (x.w ??= new Set(words(x.text)));   // memoised per entry
-function dice(A, B) {
-  if (!A.size || !B.size) return 0;
-  let n = 0; A.forEach(w => B.has(w) && n++);
-  return 2 * n / (A.size + B.size);
-}
-const sim = (a, b) => dice(new Set(words(a)), new Set(words(b)));
 
 // One file with every answerable question from all subjects (built by scripts/build-answer-index.js).
 async function loadIndex() {
   const r = await fetch(INDEX_URL);
   if (!r.ok) throw new Error(`answer index ${r.status}`);
-  return (await r.json()).map(e => ({ ...e, text: e.q + ' ' + Object.values(e.o).join(' ') }));
+  return r.json();
 }
 
 async function detect() {
@@ -101,21 +97,17 @@ async function detect() {
     if (!qs.length) { status.textContent = `${code || 'This page'}: no questions found on this page.`; return; }
 
     // Match each page question against every bank (a quiz can reuse another subject's or an exam's questions),
-    // preferring the detected subject and batch when scores are close.
-    const bonus = e => (code && e.c === code ? 0.04 : 0) + (batch && (e.s.split('/')[0].endsWith('_B' + batch) || e.s.includes('Batch ' + batch)) ? 0.01 : 0);
+    // preferring the detected subject and batch when scores are close. See match.js for the acceptance rules.
     auto = {}; const lines = [], hits = {};
     for (const q of qs) {
-      const qSet = new Set(words(q.text + ' ' + q.options.join(' ')));
-      let best = null, bestScore = 0, bestRaw = 0;
-      for (const e of index) {
-        const raw = dice(qSet, wordSet(e));
-        if (raw < 0.45) continue;
-        if (raw + bonus(e) > bestScore) { best = e; bestRaw = raw; bestScore = raw + bonus(e); }
+      const r = QuizMatch.matchQuestion(q, index, { code, batch });
+      if (!r.entry) {
+        lines.push(`Q${q.n}: ? not in AceDBE yet${r.closest ? ` (closest stem ${Math.round(r.closest * 100)}%)` : ''}`);
+        continue;
       }
-      if (!best) { lines.push(`Q${q.n}: ? no confident match`); continue; }
-      const idx = best.a.split(',').map(l => q.options.map((o, i) => [sim(o, best.o[l]) + (o.trim() === best.o[l].trim()), i]).sort((a, b) => b[0] - a[0])[0][1]);
-      auto[q.n] = idx.map(i => String.fromCharCode(97 + i));
-      lines.push(`Q${q.n}: ${auto[q.n].join(',')}  (${Math.round(bestRaw * 100)}% match · ${best.c} ${best.s.split('/').pop()}${best.m !== '' ? ' M' + best.m : ''}${best.v ? ' · ' + best.v : ''})`);
+      const best = r.entry;
+      auto[q.n] = r.letters;
+      lines.push(`Q${q.n}: ${r.letters.join(',')}  (${Math.round(r.score * 100)}% match · ${best.c} ${best.s.split('/').pop()}${best.m !== '' ? ' M' + best.m : ''}${best.v ? ' · ' + best.v : ''})`);
       const g = `${best.n} (${best.c}) · ${best.s.split('/').pop()}`; hits[g] = (hits[g] || 0) + 1;
     }
     const top = Object.entries(hits).sort((a, b) => b[1] - a[1])[0];
@@ -211,15 +203,19 @@ function extractQuestions() {
     c.querySelectorAll('p, div, li, br, h1, h2, h3, h4').forEach(e => e.after(document.createTextNode('\n')));
     return c.textContent.replace(/<!--[\s\S]*?-->/g, '').split('\n').map(norm).filter(Boolean).join('\n');
   };
+  // Absolute links of images (charts, tables as pictures) inside a block, skipping inline data URIs.
+  const imagesOf = el => [...el.querySelectorAll('img')]
+    .map(img => img.currentSrc || img.src)
+    .filter(src => /^https?:/i.test(src));
   const isProblem = el => el.querySelector('input[type=radio], input[type=checkbox]');
   // Blocks in document order: problem xblocks and HTML (text) xblocks.
   let blocks = [...document.querySelectorAll('.xblock-student_view-problem, .xblock-student_view-html')]
     .filter((p, _, all) => !all.some(o => o !== p && p.contains(o)));
   if (!blocks.some(isProblem)) // fallback when xblock wrappers are absent
     blocks = [...document.querySelectorAll('.problem')].filter(isProblem);
-  const out = []; let context = []; let i = 0;
+  const out = []; let context = [], contextImages = []; let i = 0;
   for (const blk of blocks) {
-    if (!isProblem(blk)) { const t = textOf(blk); if (t) context.push(t); continue; }
+    if (!isProblem(blk)) { const t = textOf(blk); if (t) context.push(t); contextImages.push(...imagesOf(blk)); continue; }
     const p = blk.querySelector('.problem') || blk;
     const header = blk.querySelector('h3, .problem-header');
     const m = header && header.textContent.match(/(?:Question|MCQ)\s*(\d+)/i);
@@ -229,9 +225,10 @@ function extractQuestions() {
     clone.querySelectorAll('.field, .choicegroup label, button, .action, .notification, .problem-progress, .sr, .status').forEach(e => e.remove());
     clone.querySelectorAll('h3, .problem-header').forEach(e => e.remove());
     const text = textOf(clone).replace(/\d+(\.\d+)? points? possible.*$/im, '').trim();
-    out.push({ n: m ? m[1] : String(++i), context: context.join('\n'), text, options, multi: inputs[0]?.type === 'checkbox' });
+    const images = [...new Set([...contextImages, ...imagesOf(p)])];
+    out.push({ n: m ? m[1] : String(++i), context: context.join('\n'), text, options, multi: inputs[0]?.type === 'checkbox', images });
     if (m) i = Number(m[1]);
-    context = [];
+    context = []; contextImages = [];
   }
   return out;
 }

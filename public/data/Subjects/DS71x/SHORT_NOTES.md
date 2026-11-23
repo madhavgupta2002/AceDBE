@@ -957,3 +957,358 @@ $$\text{Profitability} = \frac{\text{Total Profit}}{\text{Total Net Sales}} \qqu
 | Filters | Designer sets visual, page or all-pages filters; lock or hide them |
 | Selection pane | Rename and show or hide elements; group to move together |
 | Combo and waterfall | Title both axes; read the axis scale |
+
+## MODULE 4: Building Interactive Reports and Dashboards
+
+---
+
+### Brief and Planning
+
+- Goal: **profitable growth** = **hit the sales budget** and keep **profitability at 13% or better** (one flat target).
+- Users: **CEO** (whole company) and **regional managers** (own region, month by month, down to products); all want **YTD vs budget** and **year on year**.
+
+| Question | Page | Needs |
+|---|---|---|
+| **Are we on track against budget?** | **Performance Overview** | Budget table, sales vs budget, target |
+| **Where is growth coming from?** More customers, more orders, bigger orders? | **Growth Drivers** | Distinct customers and orders, **orders per customer**, **average order value** |
+| **Is growth profitable?** Products, regions, discounts eating profit? | **Profitability Drivers** | **Discount %**, line discount %, profitability by region and category |
+
+- Budget is **seasonal** (peaks in **Q4**), so it is **split by month and region**. Branding: **logo on every page** plus a set **page background colour**.
+- Process: **requirements, tables and measures (reuse and add), explore data, wireframe, build and assemble**. New measures mid-way are **normal**.
+- DAX below is **reconstructed from narration**.
+
+---
+
+### Star Schema and New Tables
+
+- **Star schema**: **fact tables (orders, budget) in the middle**, lookups (customers, products, **region**, **calendar**) around; shipping hangs off orders.
+
+| Table | How | Key detail |
+|---|---|---|
+| **Budget** | Get Data, Excel | Month to **Date** (first of month); **4 regions per month** |
+| **Region** | **Enter Data** | 4 rows: Central, South, East, West (**spelling must match**) |
+| **Calendar** | New Table: `CALENDAR(DATE(2015,1,1), DATE(2018,12,31))` | **Every day, no gaps**; **Mark as date table** |
+
+| Calendar column | DAX |
+|---|---|
+| **Year** | `YEAR('Calendar'[Date])` |
+| **Quarter** | `"Q" & QUARTER('Calendar'[Date])` |
+| **Month Number** | `MONTH('Calendar'[Date])` |
+| **Month** | `FORMAT('Calendar'[Date], "MMM")`; **sort by Month Number** (else alphabetical) |
+
+- **Date Hierarchy** = year, quarter, month (created manually).
+- Links: region to customers and budget; calendar to **order date** and budget **month** (**manual drag**, names differ).
+- **Rule: anything that filters both sales and budget must come from a table connected to both**: dates from **calendar**, region from **Region table**.
+
+---
+
+### Measures Table and Count Measures
+
+- A measure **calculates across the whole model**, not just its table. Keep all in **`_Measures`** (Enter Data, blank; **underscore keeps it on top**).
+- Move old measures: **Properties, Home table**; delete Column1; icon becomes a calculator.
+
+| Measure | DAX |
+|---|---|
+| **Customers** | `DISTINCTCOUNT(Orders_Products[Customer ID])` |
+| **Orders** | `DISTINCTCOUNT(Orders_Products[Order ID])` |
+
+- One customer has many orders; one order has many rows, so **count each ID once**.
+- **Copy-paste** similar measures, but **change every reference**.
+
+---
+
+### Discount Measures
+
+$$\text{Discount \%} = \frac{\text{Total Discount}}{\text{Total Net Sales} + \text{Total Discount}}$$
+
+- Example: price 100, discount 20, net sales 80: 20 / (80 + 20) = **20%**.
+
+| | **Discount %** | **Line discount %** |
+|---|---|---|
+| **Type** | **Measure** | **Column** (orders table) |
+| **Why** | Re-aggregates at order, product, region, year | **Fact about each line** |
+| **DAX** | `DIVIDE([Total Discount], [Total Discount] + [Total Net Sales])` | `ROUND(DIVIDE([Discount], [Discount] + [Net Sales]), 2)` |
+| **Format** | %, 1 decimal | %, 1 decimal (later 0) |
+
+- **12 fixed discount levels, 0 to 80%**; **ROUND to 2 decimals** stops tiny differences creating extra levels.
+- All percentages kept at **1 decimal** (profitability changed from 2).
+
+---
+
+### Testing and Budget Measures
+
+- **Test before use**: table next to **trusted Excel numbers**, in small batches.
+
+| Issue | Fix |
+|---|---|
+| **Year summed** | Summarization: **Don't summarize** |
+| Extra decimals | **Currency, 0 decimals** (sales, profit, discount, budget) |
+
+- West 2018: **234,149** sales vs **239,000** budget (about **98.0%**).
+- **Customers not additive** across years (West 257 total vs 227, 202 per year): **correct** for distinct count.
+
+| Measure | DAX | Format |
+|---|---|---|
+| **Total Budget Sales** | `SUM(Budget[Budget Sales])` | Currency |
+| **Sales vs Budget %** | `DIVIDE([Total Net Sales], [Total Budget Sales])` | %, 1 decimal |
+| **Profitability Target** | `0.13` | %, 0 decimals |
+| **Profit Budget** | `[Total Budget Sales] * [Profitability Target]` | Currency |
+| **Profit vs Budget %** | `DIVIDE([Total Profit], [Profit Budget])` | %, 1 decimal |
+
+- **Above 100% = ahead of budget**. Create the target **before** profit budget.
+
+---
+
+### Time-Based Measures
+
+| Function | Role |
+|---|---|
+| **SAMEPERIODLASTYEAR** | Shifts selected dates **back one year** (needs calendar date column) |
+| **CALCULATE** | Evaluates a measure **for those shifted dates** |
+| **TOTALYTD** | Adds a measure from **1 January to the date** |
+
+| Measure | DAX |
+|---|---|
+| **Sales LY** | `CALCULATE([Total Net Sales], SAMEPERIODLASTYEAR('Calendar'[Date]))` |
+| **Sales YoY %** | `DIVIDE([Total Net Sales] - [Sales LY], [Sales LY])` |
+| **Customers LY / YoY %**, **Orders LY / YoY %** | Same pattern |
+| **Orders per Customer** | `DIVIDE([Orders], [Customers])` (1 decimal) |
+| **Average Order Value** | `DIVIDE([Total Net Sales], [Orders])` (currency) |
+| **Sales YTD** | `TOTALYTD([Total Net Sales], 'Calendar'[Date])` |
+
+$$\text{YoY \%} = \frac{\text{This Year} - \text{Last Year}}{\text{Last Year}}$$
+
+- Signed format **`+0.0%;-0.0%;0.0%`**: **positive; negative; zero** (order matters).
+- **2015 YoY is blank** (no prior year). Old visuals break once the calendar is the date table (**order-date hierarchy gone**).
+
+---
+
+### Performance Overview: Wireframe and Slicers
+
+| Area | Content |
+|---|---|
+| **Top** | Title, **year, month, region slicers**, **logo top right** |
+| **Left** | **KPI cards** (eye starts here) |
+| **Middle** | **Net sales vs budget** |
+| **Right** | **Regional performance table** |
+| **Bottom** | **One switchable trend chart**; **top 6 by sales**, **bottom 6 by profitability** |
+
+- Wireframe = plan, **not cast in stone**; explore while building.
+- Theme: canvas background **EEF2F6**, transparency 0; download as new theme. **Hide** (not delete) old pages.
+- Header text box about 28 pt; logo via **Insert, Image**; **shadows off** on both.
+
+| Slicer | Field | Setting |
+|---|---|---|
+| **Region** | **Region table** | Pasted: **Don't sync** for now |
+| **Year** | Calendar Year | **Dropdown**, **single select**, default **2018** |
+| **Months** | **Month Number** | **Between + slider**, 1 to 6 (pretend **end of June 2018**) |
+
+- Month **number** allows a **range slider**; names would need six ticks.
+
+---
+
+### KPI Cards with Reference Labels
+
+- One **Card** visual, 5 values: **net sales, profit, profitability, customers, orders**; **vertical**, **5 rows**; rename by double-click.
+- **Format all cards first, then each**: a per-card setting **overrides** later all-card changes.
+- Accent bar blue, left, about 8; callout 30 then **28**, **centred**; label 14; **divider off**; callout size about 56%.
+- **Reference labels** (per card): **Versus Budget** and **Y on Y**; horizontal, centred; label 12, value 14.
+
+| Comparison | Red | Amber | Green |
+|---|---|---|---|
+| **Sales vs budget %** | **< 0.95** | **0.95 to 1** | **> 1** |
+| **YoY %** | **< 0** | | **> 0** |
+
+- Pick the **measure** in the rule (not the label). Thresholds are **user-specified**.
+- Demo (Jan to Jun 2018): net sales about **247K**, **99.8% (amber)**, **+12.2% (green)**.
+
+---
+
+### Net Sales vs Budget and Regional Table
+
+| Column chart item | Setting |
+|---|---|
+| **X-axis** | **Quarter, Month** (opens at month; CEO drills up) |
+| **Y-axis** | **Budget sales + net sales**, **overlap on** (net sales is the hero) |
+| **Colours** | Budget **grey**, net sales **blue** |
+| **Text** | Responsive off; axes **12 pt** minimum; **title 18 pt, left aligned** |
+| **Legend** | **Off**; subtitle **"Gray bars show budget figures"** (12, italic) |
+
+- **Regional table**: region (Region table), net sales, versus budget, year on year, profitability; **totals off** (already in KPIs); **same colour rules as cards**; preset **None condensed**; add title **Regional Performance** (tables have none).
+- Reading: **West under budget**, **East close**, **Central and South well ahead**.
+
+---
+
+### Field Parameter Trend Chart
+
+- **Slicer filters values in a column; it cannot choose a measure.** A **field parameter** = small table of measures that a slicer **can** pick from.
+
+| Step | Detail |
+|---|---|
+| **Create** | **Model view, New parameter, Fields** |
+| **Name** | **P_OverviewMetric** (prefix **P_** groups all parameters) |
+| **Fields** | Net sales, profit, profitability, customers, orders |
+| **Rename** | Edit **only text in double quotes**; never the measure reference |
+| **Slicer** | **Tile**, **single select**, 14 pt, "Select metric for trend chart" |
+| **Line chart** | X = **Month**, Y = **the parameter**; linear; data labels above, Y-axis off; title changes with metric |
+
+- **One chart does the job of five.**
+
+---
+
+### Top N, Grouping and Interactions
+
+| Table | Filter (on this visual) | Sort |
+|---|---|---|
+| **Top 6 subcategories** | **Top N = 6** by net sales | Net sales, descending |
+| **Bottom 6 subcategories** | **Top N type, show Bottom 6** by profitability | Profitability, **ascending** |
+
+- Default sort is **by name**. Loss-makers: **tables, machines, supplies**; low: bookcases, chairs, storage.
+- Click **blank canvas** before adding a visual, or it **swaps** the selected one.
+- **Align top**, **Group** to move together.
+- **Interactions off** between visuals: **slicers filter, visuals only read**; keep **parameter slicer to trend chart**. Double-check.
+- Same metric = **same colour rule everywhere**. Rule boundaries as **Number** (Percent mode made losses green: **logic error**).
+
+---
+
+### Growth Drivers Page
+
+- **Duplicate** the overview; **year slicer replaced by label "Years 2015 - 2018"**; add **segment slicer**; keep month slicer (**same months each year = fair comparison**).
+- **Sync slicers** (View): **Sync** column shares the selection; **eye** column = visible. Months and region synced; year not.
+- KPI cards: **net sales, customers, orders per customer, AOV**; **no reference labels**; **locked visual filter Year = 2018**; label "2018 / Selected months"; vertical line shape as divider.
+
+| Visual | Build | Reading |
+|---|---|---|
+| **3 line charts by year** | Customers, orders per customer, AOV | Customers **590 to 689** (dip 2016); orders per customer **steady rise** (2.4 in 2018); **AOV down 487 to 423** |
+| **Waterfall** | Year (2017, 2018 locked, ascending), breakdown **segment** | From **581K**: **home office most**, then consumer; corporate little |
+| **100% stacked area** | Year, net sales, segment | **Consumer share falling**; corporate and home office rising |
+| **Bar chart (2018)** | **Category hierarchy**, locked 2018, thousands | **Technology** leads (**phones** top); furniture: chairs top |
+
+- **Growth = customers ordering more often + more customers (2017, 2018)**, **NOT bigger orders**.
+- Waterfall title from the question: **"Where the 2018 growth came from"**. Recomputed: about 581K to 703K, **+122K (about +21%)**.
+- **Category mix was flat**, so **segment kept** (keep informative dimensions; a parameter could switch both).
+- Drill instruction as **subtitle**: "Hover over a bar and use the tooltip to drill up or down".
+- 2018: **689 customers, 703K, 2.4 orders per customer, AOV 423**. Jan to Jun only: orders per customer **1.4**.
+
+---
+
+### Profitability Drivers Page
+
+- Duplicate growth page. KPI cards: **profit, profitability, total discount, discount %** (locked 2018 carries over).
+- Related pairs, so **2 combo charts replace 4 trends**:
+
+| Combo | Columns | Line | Colour |
+|---|---|---|---|
+| **Profit** | Total profit | Profitability | Light green / dark green |
+| **Discount** | Total discount | Discount % | Light red / red |
+
+- **Title both Y-axes** on every combo.
+- Profit **rose steadily**; profitability **dropped in 2018** (full year; H1 looked better, so **H2 dragged it**); **discount % up to almost 20%**, discounts grew faster than sales.
+
+| Visual | Build | Reading (2018) |
+|---|---|---|
+| **Matrix** | Region x category hierarchy, subtotals off, Minimal, 2018 | **Bookcases East about -9.4%**, Central breakeven; **tables lose everywhere**, West least bad |
+| **Scatter** | **X = discount %**, Y = profitability, **size = net sales**, legend category | Higher discount, lower profitability; constant lines **0% and 13%**, very light shade |
+| **Column by discount level** | X = **line discount %** (column), **categorical**, **sorted ascending**; Y = profitability | Red < 0, green >= 0; **orders in tooltip** |
+
+- **Subcategory slicer** (single select) drives the discount-level chart (product names too long).
+- **Accessories**: only **0% and 20%**, both profitable (**150 and 91 orders**). **Machines**: 0 to 70%; **profitable up to 30%** (below 13% target), **red beyond**.
+- Alternative rule: red **below the 13% target**; decide **with users**.
+- Only interaction kept: **subcategory slicer**.
+
+---
+
+### Page Navigator
+
+- **Insert, Buttons, Navigator, Page navigator**; **auto-updates** on rename.
+- Turn **Hidden pages off** (Pages, Options). Current page coloured.
+- Text 13 pt in **all states: default, hover, pressed, selected** (selected was 10.5).
+- Add it **before duplicating pages**. **Ctrl+click** to switch pages in Desktop.
+
+---
+
+### Publishing
+
+- **Delete hidden pages** first (3 pages left), save, **Publish** to a **workspace** (default **My workspace**; companies use **shared workspaces**).
+
+| Created | Holds |
+|---|---|
+| **Report** | What users see |
+| **Semantic model** | Data, relationships, measures |
+
+- **Republish overwrites both**. Data is as at publish; **scheduled refresh** later.
+
+| Service feature | Use |
+|---|---|
+| **View** | Full screen, fit to page, **show visuals as tables** |
+| **Focus mode** | One visual fills the page |
+| **Show as a table** | Numbers behind a visual |
+| **Synced slicers** | Selection persists across pages |
+| **Export** | **PDF**; **PowerPoint as image** (page = slide) or **live data** (needs licence, refreshes) |
+| **Other** | Download .pbix, permissions, print, **SharePoint embed**, **Teams tab** |
+
+| Edit in | Effect |
+|---|---|
+| **Desktop** | **Main copy**; publishing **overwrites** all versions |
+| **Service** | Personal or temporary edits; **not in Desktop**, lost on republish; **Save a copy** first |
+
+---
+
+### Dashboards
+
+| | **Report** | **Dashboard** |
+|---|---|---|
+| **For** | **Exploring** | **Quick look** |
+| **Form** | Many pages, slicers, drill | **One screen of tiles** pinned from 1+ reports |
+| **Tile click** | Not applicable | Opens the report |
+
+| User | Method | Behaviour |
+|---|---|---|
+| **CEO** | **Pin live page** (overview) | **Slicers stay interactive**; page changes show on refresh; **one page only** |
+| **West manager** | Region = West, **pin visuals** from several pages | **Tiles keep pinned filters** (always West); add text box tile; delete or move tiles |
+
+- Features: **subscriptions** (receive on refresh), **comments with @mentions**, Teams chat, save copy, print; **alerts** later.
+- **Sharing needs Pro (or trial) for everyone**; **free** can publish and edit but **cannot share or open shared content**.
+
+---
+
+## Quick Reference: Interactive Report and Dashboard Toolkit
+
+| Framework | Core Question / Rule | Benchmark Example |
+|---|---|---|
+| **Brief to build** | Which question does each page answer? | On track, growth, profitability: three pages |
+| **Star schema** | Do sales and budget share lookups? | Calendar and Region connect to both fact tables |
+| **Date table** | Can time functions find last year? | Calendar 2015 to 2018, marked as date table |
+| **Test measures** | Do numbers match a trusted source? | West 2018 234,149 vs budget 239,000 |
+| **Comparisons** | Against budget or last year? | Versus Budget (95% / 100% bands), Y on Y (sign) |
+| **Field parameter** | Can one chart show many measures? | P_OverviewMetric switches 5 metrics |
+| **Top N / Bottom N** | Which few items matter most? | Top 6 by sales, bottom 6 by profitability |
+| **Interactions** | Who filters: slicers or visuals? | Slicers only; parameter and subcategory slicer kept |
+| **Locked filters** | Must a snapshot stay fixed? | Year = 2018 on non-trend visuals |
+| **Growth decomposition** | Customers, frequency or order size? | 590 to 689 customers; AOV 487 to 423 |
+| **Discount analysis** | At what discount do we lose money? | Machines profitable up to 30% |
+| **Publish and pin** | Report to explore or dashboard to glance? | CEO live page; West tiles |
+
+## Key Decision Rules Summary
+
+| Rule | Detail |
+|---|---|
+| Plan first | Questions, then tables and measures, explore, wireframe, build |
+| Shared lookups | Dates from calendar, region from Region table, so budget filters too |
+| Measures home | `_Measures` table; measures work across the model |
+| Counts | DISTINCTCOUNT; distinct counts do not add across years |
+| Discount | Measure for aggregates; rounded column for line-level discount levels |
+| Test | Check in a table against Excel; set Year to Don't summarize |
+| Formats | Currency 0 decimals, percentages 1 decimal, YoY `+0.0%;-0.0%;0.0%` |
+| YoY blanks | First year has no prior year |
+| KPI cards | Format all first, then per card; reference labels per card |
+| Colour bands | Budget: red < 95%, amber 95 to 100%, green > 100%; YoY and profit: red < 0 |
+| Consistency | Same metric, same colour rule, 18 pt titles, 12 pt axes everywhere |
+| Legend vs subtitle | Explain colours in a subtitle; drop the legend |
+| Measure switching | Field parameter, not a normal slicer |
+| Interactions | Turn off visual-to-visual; slicers do the filtering |
+| Discount axis | Categorical and sorted ascending |
+| Combo charts | Title both Y-axes |
+| Navigator | Add before duplicating; hide hidden pages; format all states |
+| Edit location | Desktop is the main copy; service edits are overwritten |
+| Report or dashboard | Report to explore; dashboard for a quick look; tiles keep filters; Pro to share |

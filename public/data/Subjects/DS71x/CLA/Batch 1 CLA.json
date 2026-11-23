@@ -1,0 +1,223 @@
+{
+    "exam_metadata": {
+        "subject_name": "Data Visualisation for Business Decisions",
+        "exam_date": "Batch 1"
+    },
+    "questions": [
+        {
+            "question_id": "CLA_M4_Q01",
+            "question_text": "Which of the following business-question-to-chart pairings match correctly? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Relationship between net sales and profitability across subcategories → scatter",
+                "B": "How the mix of customer segments changes over the years → 100% stacked area",
+                "C": "Compare total profit across four regions, one of which made a loss → pie chart",
+                "D": "How each region’s share of total sales has moved over five years → donut chart",
+                "E": "Show whether the current month’s profit is on track against its monthly target → KPI card"
+            },
+            "correct_option_label": "A, B, E",
+            "explanation": "Scatter shows a relationship, 100% stacked area shows a changing mix, and a KPI card shows a value against target; a pie cannot show a loss and a donut cannot show movement over time.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA_M4_Q02",
+            "question_text": "A new PowerBI report has been launched recently. There is a bar chart for profitability by Sub-category. A note needs to be shown explicitly on the visual saying “Red colored bars show sub-categories whose Profitability is below the 13% target”. Which of the following is the best way to do this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Use the Subtitle on the visual to add this note",
+                "B": "Use the Help tooltip (the “?” icon) on the visual to add the note",
+                "C": "Add text in the tooltip for the red bars",
+                "D": "Add the note on a separate Help page in the report"
+            },
+            "correct_option_label": "A",
+            "explanation": "A subtitle is always visible and suits short notes such as what a colour means; the help tooltip is for longer instructions shown on hover.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA_M4_Q03",
+            "question_text": "PARSEIMAGE\n\nIn the following scatter plot, bubble size shows Net Sales of each sub-category. Blue dotted line shows the Profitability target of 13%. Which of the following interpretations are supported by the chart? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Supplies get a lower discount and make a small profit.",
+                "B": "Machines get heavy discounts and end up making losses.",
+                "C": "Labels contribute the most to Net Sales and profitability.",
+                "D": "Labels contribute the most to Net Sales and profitability.",
+                "E": "Copiers earn well above the 13% Profitability target at a moderate discount"
+            },
+            "correct_option_label": "B, E",
+            "explanation": "Machines sit at about 35% discount with a loss; Copiers earn about 40% at about 11% discount. Supplies make a loss, and Labels are a small bubble (low net sales).",
+            "module": 4
+        },
+        {
+            "question_id": "CLA_M4_Q04",
+            "question_text": "You first set the Net Sales card’s font to 20 pt, then set all cards to 32 pt. Net Sales card stays at 20 pt and needs to be reformatted to 32 points. What practice would avoid this extra step?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Format each card individually, starting with the largest",
+                "B": "Apply common formatting to “All” first, then customise individual cards",
+                "C": "Turn off the divider",
+                "D": "Increase the callout size to 100%"
+            },
+            "correct_option_label": "B",
+            "explanation": "Individual card settings override the “All” setting, so apply common formatting to All first, then customise.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA_M4_Q05",
+            "question_text": "PARSEIMAGE\n\nNet Sales KPI card is designed as follows. The vs Budget (Actual Net Sales /Budget) rules are shown below. Supposing Net sales are $480K against a budget of $500K, what color will the vs Budget number be?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Red",
+                "B": "Amber",
+                "C": "Green",
+                "D": "No colour"
+            },
+            "correct_option_label": "B",
+            "explanation": "480/500 = 0.96, which falls in the rule “≥ 0.95 and < 1” (amber).",
+            "module": 4
+        },
+        {
+            "question_id": "CLA_M4_Q06",
+            "question_text": "You have space for only one trend chart on the Overview page in the report. Users want to be able to choose which KPI (net sales, profit, profitability, customers, orders) is plotted in the trend. What is the best way to handle this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Use a slicer with all the KPIs as inputs",
+                "B": "Create a field parameter with the KPIs and use this in the slicer",
+                "C": "Ask the seniormost person to choose the most important KPI that needs to be shown as we have space for only one line chart.",
+                "D": "Create a separate page with 5 trend charts for KPIs"
+            },
+            "correct_option_label": "B",
+            "explanation": "A field parameter used in a slicer switches one trend chart between metrics.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA_M4_Q07",
+            "question_text": "The CEO wants to see the bottom 5 subcategories (from a total of 50 subcategories) by profitability. What is the best way to show this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Add a slicer for subcategory",
+                "B": "Apply conditional formatting to Profitability so that the numbers become red in case of losses",
+                "C": "In the Filters pane use a Top N filter, set to Bottom 5, by Profitability",
+                "D": "Create a bar chart sorted by Profitability (ascending)"
+            },
+            "correct_option_label": "C",
+            "explanation": "A Top N visual-level filter set to Bottom 5 by Profitability shows exactly those subcategories.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA_M4_Q08",
+            "question_text": "The Growth page has mostly line charts showing trends over the last 5 years. Hence, the year slicer has been removed. The Regional Managers want to see KPI cards for reference but the KPI cards must show only current year data. What is the best way to achieve this?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Add a slicer on the page, select current year and then hide it",
+                "B": "Add a visual-level filter Year = Current year on the KPI cards, and lock it",
+                "C": "Delete the other years’ data",
+                "D": "Tell the Regional Managers this is not possible as there is no slicer for Year on the page"
+            },
+            "correct_option_label": "B",
+            "explanation": "A locked visual-level filter restricts only the cards to the current year without affecting the trend charts.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA_M4_Q09",
+            "question_text": "PARSEIMAGE\n\nThe Growth page shows the following trends. What is the best summary of the growth story?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Growth comes from bigger orders",
+                "B": "Growth comes from fewer, larger customers",
+                "C": "We have more Customers in recent years but they seem to be ordering less often.",
+                "D": "Growth comes from more customers and customers ordering more often but could be higher if the average order value is not allowed to fall."
+            },
+            "correct_option_label": "D",
+            "explanation": "Customers rose 590 → 689 and orders per customer 1.6 → 2.4, while average order value fell $487 → $423.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA_M4_Q10",
+            "question_text": "With the month slicer at Jan–Jun, profitability looks healthy. Moving it to Jan–Dec shows profitability dropped in 2018. What is the best inference?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "The second half of the year was lower in profitability",
+                "B": "The data is corrupted",
+                "C": "The slicer is broken",
+                "D": "Profit and profitability are unrelated"
+            },
+            "correct_option_label": "A",
+            "explanation": "If the first half is healthy but the full year drops, the second half had lower profitability.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA_M4_Q11",
+            "question_text": "You add a Page Navigator to let users navigate to different report pages. You find that it also lists the hidden working pages. How do you fix it?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Delete the pages",
+                "B": "Rename the pages",
+                "C": "Ctrl+click each page",
+                "D": "Turn off “Hidden pages” in the navigator’s Pages options"
+            },
+            "correct_option_label": "D",
+            "explanation": "The page navigator's Pages options let you exclude hidden pages.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA_M4_Q12",
+            "question_text": "Which of the following statements about time-based measures are true? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "SAMEPERIODLASTYEAR shifts the dates back one year",
+                "B": "CALCULATE (Year – 1) gets last year’s sales",
+                "C": "TOTALYTD adds up values from 1 January to the date in view",
+                "D": "Last year’s sales can be calculated with SUM on the Net Sales column alone",
+                "E": "Time intelligence functions require a continuous Date table to work properly"
+            },
+            "correct_option_label": "A, C, E",
+            "explanation": "SAMEPERIODLASTYEAR shifts dates back a year and TOTALYTD runs from 1 January; both work on a proper (continuous) calendar table.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA_M4_Q13",
+            "question_text": "PARSEIMAGE\n\nWhich of the following statements are supported by the Profitability table and Profitability Vs Line discount chart below? Red bars show losses. (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "West pulls down the profitability of furniture category",
+                "B": "Machines should not be discontinued as East is selling machines profitably. Check if South and West regions are giving heavy line discounts on machines as discounts of 40% and above are related to losses",
+                "C": "Machines should be discontinued as the subcategory is making a loss of -6.4% and eroding the profits of the Technology category",
+                "D": "The regions should not give any discounts on Machines",
+                "E": "Check if Central region is giving higher line discounts to some orders as the profitability is much lower than that of East"
+            },
+            "correct_option_label": "A, B",
+            "explanation": "West's −1.6% drags Furniture to 1.3%; East earns 32% on Machines and losses start at about 40% line discount. Central (18.5%) is not lower than East (18.4%).",
+            "module": 4
+        },
+        {
+            "question_id": "CLA_M4_Q14",
+            "question_text": "Which of the following practices improve a one-page report for senior leaders? (Select all that apply)",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Align and evenly distribute visuals on a grid",
+                "B": "Use red only for adverse values, consistently across pages",
+                "C": "Include several different chart types to show variety",
+                "D": "Add a short subtitle or note explaining any color or new feature",
+                "E": "Use a different color palette on each page for interest"
+            },
+            "correct_option_label": "A, B, D",
+            "explanation": "Alignment, consistent use of red for adverse values and short explanatory notes help; variety of chart types or palettes for its own sake hurts.",
+            "module": 4
+        },
+        {
+            "question_id": "CLA_M4_Q15",
+            "question_text": "A page has date and region slicers, KPI cards, a trend chart and a table. Users complain that clicking a table row unexpectedly changes the cards and trend. The designer wants only the slicers to filter. What should the designer do?",
+            "question_type": "MCQ",
+            "options": {
+                "A": "Delete the table",
+                "B": "Lock the filters pane",
+                "C": "Edit interactions so the non-slicer visuals don’t affect each other",
+                "D": "Turn off slicer sync"
+            },
+            "correct_option_label": "C",
+            "explanation": "Edit Interactions controls whether selecting one visual filters the others.",
+            "module": 4
+        }
+    ]
+}
