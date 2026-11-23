@@ -7,7 +7,7 @@ const ts = require('typescript');
 const React = require('react');
 
 const root = path.join(__dirname, '..');
-const bank = JSON.parse(fs.readFileSync(path.join(root, 'public/data/Subjects/OM41x/CLA/Practice.json'), 'utf8'));
+const bank = JSON.parse(fs.readFileSync(path.join(root, 'public/data/Subjects/OM41x/CLA/Sub Sectional Quiz.json'), 'utf8'));
 const plain = value => JSON.parse(JSON.stringify(value));
 
 function load(file, dependencies = {}, globals = {}) {
@@ -29,7 +29,7 @@ function load(file, dependencies = {}, globals = {}) {
 const loader = load('lib/questionLoader.ts', { './questionImages': load('lib/questionImages.ts') });
 const variants = load('lib/questionVariants.ts');
 const answers = load('components/quiz/answers.ts');
-const questions = loader.convertFileToQuestions(bank, 'Practice', 'OM41x', 'CLA');
+const questions = loader.convertFileToQuestions(bank, 'Sub Sectional Quiz', 'OM41x', 'CLA');
 const question = id => questions.find(q => q.id === id);
 
 test('wording variants remain one graded question and retain both sets of options', () => {
@@ -37,9 +37,9 @@ test('wording variants remain one graded question and retain both sets of option
   for (const n of [3, 4, 5, 6]) {
     const q = question(`M1_C_Q${n}`);
     const before = plain(q);
-    const alternate = variants.resolveQuestionVariant(q, 'term-2');
-    assert.equal(q.variantLabel, 'Term 1');
-    assert.equal(q.variants[0].label, 'Term 2');
+    const alternate = variants.resolveQuestionVariant(q, 'batch-2');
+    assert.equal(q.variantLabel, 'Batch 1');
+    assert.equal(q.variants[0].label, 'Batch 2');
     assert.equal(alternate.id, q.id);
     assert.equal(alternate.source, q.source);
     assert.deepEqual(plain(alternate.correctAnswer), ['C']);
@@ -50,7 +50,7 @@ test('wording variants remain one graded question and retain both sets of option
   }
   assert.equal(question('M1_C_Q1').variants, undefined);
   assert.equal(
-    variants.resolveQuestionVariant(question('M1_C_Q6'), 'term-2').options.C,
+    variants.resolveQuestionVariant(question('M1_C_Q6'), 'batch-2').options.C,
     'Drying can handle any number of pallets without limiting overall output'
   );
   assert.equal(question('M1_C_Q6').options.C, 'Drying can often handle very large batches simultaneously without restricting the flow of the system');
@@ -76,11 +76,11 @@ test('export and reimport preserve alternate wording, labels, options and explan
     document: { createElement: () => ({ click() {} }), body: { appendChild() {}, removeChild() {} } },
   });
   downloadQuizJson([q], 'OM41x', 'Operations Management');
-  const [reimported] = loader.convertFileToQuestions(exported, 'Practice', 'OM41x', 'CLA');
+  const [reimported] = loader.convertFileToQuestions(exported, 'Sub Sectional Quiz', 'OM41x', 'CLA');
   assert.deepEqual(plain(reimported.variants), plain(q.variants));
-  assert.equal(reimported.variantLabel, 'Term 1');
+  assert.equal(reimported.variantLabel, 'Batch 1');
   assert.equal(reimported.id, q.id);
-  assert.equal(variants.resolveQuestionVariant(reimported, 'term-2').explanation, 'Alternate explanation');
+  assert.equal(variants.resolveQuestionVariant(reimported, 'batch-2').explanation, 'Alternate explanation');
 });
 
 function viewHarness() {
@@ -137,9 +137,9 @@ test('practice switches question and option wording while preserving selected an
   const props = { question: q, onAnswer: value => { response = value; }, selectedAnswer: null, showResult: false };
   let tree = h.render(QuizQuestion, props);
   const button = label => tree.find(node => node.type === 'button' && node.props.children === label);
-  button('Term 2').props.onClick();
+  button('Batch 2').props.onClick();
   tree = h.render(QuizQuestion, props);
-  assert.equal(button('Term 2').props['aria-pressed'], true);
+  assert.equal(button('Batch 2').props['aria-pressed'], true);
   assert.ok(tree.some(node => node.type === 'Markdown' && node.props.children === q.variants[0].text));
   assert.ok(tree.some(node => node.type === 'Markdown' && node.props.children === q.variants[0].options.C));
   const optionButtons = tree.filter(node => node.type === 'button' && typeof node.props['aria-pressed'] === 'boolean' && typeof node.props.children !== 'string');
@@ -148,18 +148,18 @@ test('practice switches question and option wording while preserving selected an
   props.selectedAnswer = response;
   props.showResult = true;
   tree = h.render(QuizQuestion, props);
-  button('Term 1').props.onClick();
+  button('Batch 1').props.onClick();
   tree = h.render(QuizQuestion, props);
   const selected = tree.filter(node => node.type === 'button' && node.props.disabled && node.props['aria-pressed']);
   assert.equal(selected.length, 1);
   assert.ok(tree.some(node => node.type === 'Markdown' && node.props.children === q.options.C));
-  button('Term 2').props.onClick();
+  button('Batch 2').props.onClick();
   props.question = question('M1_C_Q3');
   tree = h.render(QuizQuestion, props);
-  assert.equal(button('Term 1').props['aria-pressed'], true);
+  assert.equal(button('Batch 1').props['aria-pressed'], true);
   props.question = q;
   tree = h.render(QuizQuestion, props);
-  assert.equal(button('Term 2').props['aria-pressed'], true);
+  assert.equal(button('Batch 2').props['aria-pressed'], true);
 });
 
 test('review exposes both versions without losing correct answer highlighting', () => {
@@ -172,7 +172,7 @@ test('review exposes both versions without losing correct answer highlighting', 
     globalAnswersVisible: true, individualAnswersVisible: {}, onSetIndividualVisible() {},
   };
   let tree = h.render(ReviewView, props);
-  tree.find(node => node.type === 'button' && node.props.children === 'Term 2').props.onClick();
+  tree.find(node => node.type === 'button' && node.props.children === 'Batch 2').props.onClick();
   tree = h.render(ReviewView, props);
   assert.ok(tree.some(node => node.type === 'Markdown' && node.props.children === q.variants[0].text));
   assert.ok(tree.some(node => node.type === 'Markdown' && node.props.children === q.variants[0].options.C));
@@ -217,8 +217,8 @@ test('extension matches both term versions at 100% and remaps answers when optio
   assert.equal(lines.length, 11);
   const expected = ['b', 'a', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'b'];
   lines.forEach((line, i) => {
-    assert.ok(line.startsWith(`Q${i + 1}: ${expected[i]}  (100% match · OM41x Practice M1`), line);
-    if (i >= 2 && i <= 5 || i === 10) assert.ok(line.includes('Term 2'), line);
-    if (i >= 6 && i <= 9) assert.ok(line.includes('Term 1'), line);
+    assert.ok(line.startsWith(`Q${i + 1}: ${expected[i]}  (100% match · OM41x Sub Sectional Quiz M1`), line);
+    if (i >= 2 && i <= 5 || i === 10) assert.ok(line.includes('Batch 2'), line);
+    if (i >= 6 && i <= 9) assert.ok(line.includes('Batch 1'), line);
   });
 });

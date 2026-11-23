@@ -24,7 +24,7 @@ export interface IIMBQuestion {
   difficulty?: string; // entrance papers: Easy | Medium | Hard
   is_passage?: boolean; // entry only holds a shared passage / caselet; it is not a question
   passage_id?: string; // question_id of the passage entry this question refers to
-  variant_label?: string; // label for the primary wording, e.g. "Term 1"
+  variant_label?: string; // label for the primary wording, e.g. "Batch 1"
   variants?: IIMBQuestionVariant[];
 }
 

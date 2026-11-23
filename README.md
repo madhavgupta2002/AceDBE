@@ -95,14 +95,14 @@ Keep related wordings in one question with `variant_label` for its primary versi
 {
   "question_id": "M1_Q1",
   "question_text": "Primary wording",
-  "variant_label": "Term 1",
+  "variant_label": "Batch 1",
   "question_type": "MCQ",
   "options": { "A": "First answer", "B": "Second answer" },
   "correct_option_label": "B",
   "variants": [
     {
-      "id": "term-2",
-      "label": "Term 2",
+      "id": "batch-2",
+      "label": "Batch 2",
       "question_text": "Alternate wording",
       "options": { "A": "First answer reworded", "B": "Second answer reworded" }
     }

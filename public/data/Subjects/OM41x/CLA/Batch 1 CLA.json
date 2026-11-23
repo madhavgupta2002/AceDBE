@@ -340,6 +340,90 @@
         "module": 2
       },
       {
+        "question_id": "CLA_M2_P01",
+        "question_text": "Consider the below data on project network to solve the questions that follow.\n\n| Activity | Predecessor | Duration (weeks) |\n| --- | --- | --- |\n| A | - | 8 |\n| B | A | 3 |\n| C | A | 6 |\n| D | A | 4 |\n| E | B | 5 |\n| F | B | 4 |\n| G | C, E | 6 |\n| H | D | 6 |\n| I | F | 6 |\n| J | D | 4 |\n| K | G, H, I | 3 |\n| L | J, K | 3 |",
+        "question_type": "SUBJECTIVE",
+        "is_passage": true,
+        "options": {},
+        "correct_option_label": null,
+        "module": 2
+      },
+      {
+        "question_id": "CLA_M2_Q10",
+        "question_text": "Based on the given project network and activity durations, identify the critical path.",
+        "question_type": "MCQ",
+        "options": {
+          "A": "A → B → E → G → K → L",
+          "B": "A → D → H → K → L",
+          "C": "A → C → G → K → L",
+          "D": "All paths have equal duration"
+        },
+        "correct_option_label": "A",
+        "explanation": "Path lengths: A-B-E-G-K-L = 28, A-B-F-I-K-L = 27, A-C-G-K-L = 26, A-D-H-K-L = 24, A-D-J-L = 15 weeks; the longest (28 weeks) is critical.",
+        "module": 2,
+        "passage_id": "CLA_M2_P01"
+      },
+      {
+        "question_id": "CLA_M2_Q11",
+        "question_text": "If activity A is delayed by 2 weeks, which of the following statements is most likely true?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "The total project duration will remain unchanged",
+          "B": "All downstream activities on the critical path will be delayed by at least 2 weeks",
+          "C": "Only activities B and C will be affected",
+          "D": "The delay will only impact non-critical paths"
+        },
+        "correct_option_label": "B",
+        "explanation": "A is on the critical path with zero slack, so a 2-week delay shifts every downstream critical activity and the project finish by 2 weeks.",
+        "module": 2,
+        "passage_id": "CLA_M2_P01"
+      },
+      {
+        "question_id": "CLA_M2_Q12",
+        "question_text": "Activity K has three predecessors — G, H, and I.\nIf any one of these predecessor activities is delayed, what is the most likely impact on Activity K?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "K can still start as long as at least one predecessor finishes on time",
+          "B": "K cannot start until all three predecessors (G, H, and I) are completed; it must wait for the latest finishing one",
+          "C": "K will automatically adjust its start date based on resource availability",
+          "D": "Only the predecessor with the longest slack will determine when K can start"
+        },
+        "correct_option_label": "B",
+        "explanation": "An activity's early start is the latest early finish among all its predecessors, so K waits for whichever of G, H and I finishes last.",
+        "module": 2,
+        "passage_id": "CLA_M2_P01"
+      },
+      {
+        "question_id": "CLA_M2_Q13",
+        "question_text": "If activity F is delayed by 3 weeks and has a slack of only 1 week, what will happen to the project’s finish date?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "It will be unaffected",
+          "B": "It will be extended by at least 2 weeks",
+          "C": "It will only be affected if activity I has zero slack",
+          "D": "The project will not be delayed"
+        },
+        "correct_option_label": "B",
+        "explanation": "Slack absorbs only 1 week of the 3-week delay, so the remaining 2 weeks push out the project finish (path A-B-F-I-K-L becomes 30 weeks).",
+        "module": 2,
+        "passage_id": "CLA_M2_P01"
+      },
+      {
+        "question_id": "CLA_M2_Q14",
+        "question_text": "Activity L has Finish-to-Start dependencies on J and K. If J finishes on time but K is delayed by 4 weeks, when is the earliest that L can start?",
+        "question_type": "MCQ",
+        "options": {
+          "A": "After J finishes",
+          "B": "After K finishes",
+          "C": "After the earliest of J or K finishes",
+          "D": "Immediately if one predecessor is on time"
+        },
+        "correct_option_label": "B",
+        "explanation": "With Finish-to-Start links, L can start only after all predecessors finish, so it waits for the delayed K.",
+        "module": 2,
+        "passage_id": "CLA_M2_P01"
+      },
+      {
         "question_id": "CLA_M4_Q01",
         "question_text": "What is the primary role of the dabbawalas in Mumbai's workforce system?",
         "question_type": "MCQ",

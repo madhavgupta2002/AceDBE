@@ -1,7 +1,7 @@
 {
   "exam_metadata": {
     "subject_name": "Operations Management",
-    "exam_date": "Practice Questions"
+    "exam_date": "Sub Sectional Quiz"
   },
   "questions": [
     {
@@ -201,11 +201,11 @@
     {
       "question_id": "M1_C_Q3",
       "question_text": "In a toy manufacturing process where the sequence of activities includes preparation (8 minutes), pre-treatment (12 minutes), painting (20 minutes), drying (10 minutes), and inspection/packing (5 minutes), what is the total throughput time to process the first batch of toys from beginning to end?",
-      "variant_label": "Term 1",
+      "variant_label": "Batch 1",
       "variants": [
         {
-          "id": "term-2",
-          "label": "Term 2",
+          "id": "batch-2",
+          "label": "Batch 2",
           "question_text": "Refer to our discussion in Section 1.4.5, what is the total time taken to process one batch of toys from preparation to inspection and packing? (for the first order)"
         }
       ],
@@ -223,11 +223,11 @@
     {
       "question_id": "M1_C_Q4",
       "question_text": "Given a toy production process where preparation takes 8 minutes, pre-treatment takes 12 minutes, painting takes 20 minutes, drying takes 10 minutes, and inspection/packing takes 5 minutes, which stage is identified as the bottleneck?",
-      "variant_label": "Term 1",
+      "variant_label": "Batch 1",
       "variants": [
         {
-          "id": "term-2",
-          "label": "Term 2",
+          "id": "batch-2",
+          "label": "Batch 2",
           "question_text": "Refer to our discussion in Section 1.4.6, Which stage in the toy production process takes the longest time and is likely the bottleneck?"
         }
       ],
@@ -245,11 +245,11 @@
     {
       "question_id": "M1_C_Q5",
       "question_text": "If a toy manufacturing process has a cycle time of 20 minutes (determined by the painting bottleneck) and operates for an 8-hour working day, what is the maximum number of pallets that can be produced daily?",
-      "variant_label": "Term 1",
+      "variant_label": "Batch 1",
       "variants": [
         {
-          "id": "term-2",
-          "label": "Term 2",
+          "id": "batch-2",
+          "label": "Batch 2",
           "question_text": "Refer to our discussion in Section 1.4.7, given an 8-hour working day, what is the maximum number of toy pallets that can be produced per day, assuming the bottleneck is in the painting stage?"
         }
       ],
@@ -267,11 +267,11 @@
     {
       "question_id": "M1_C_Q6",
       "question_text": "In capacity analysis, why is a stage like drying often considered a 'non-capacity constrained resource' even if it has a set processing time?",
-      "variant_label": "Term 1",
+      "variant_label": "Batch 1",
       "variants": [
         {
-          "id": "term-2",
-          "label": "Term 2",
+          "id": "batch-2",
+          "label": "Batch 2",
           "question_text": "Refer to our discussion in Section 1.4.7, which of the following statements best explains why the drying stage is not considered a capacity-constrained resource?",
           "options": {
             "A": "Drying time is shorter than preparation time",
@@ -295,11 +295,11 @@
     {
       "question_id": "M1_B_Q1",
       "question_text": "In the initial toy manufacturing case study where painting takes 20 minutes per pallet, preparation takes 8 minutes, and pre-treatment takes 12 minutes, which stage is identified as the bottleneck?",
-      "variant_label": "Term 1",
+      "variant_label": "Batch 1",
       "variants": [
         {
-          "id": "term-2",
-          "label": "Term 2",
+          "id": "batch-2",
+          "label": "Batch 2",
           "question_text": "Refer to the video in Section 1.5.2, what was identified as the bottleneck in the toy manufacturing process before adding capacity?"
         }
       ],
@@ -331,11 +331,11 @@
     {
       "question_id": "M1_B_Q3",
       "question_text": "When the operating policy is changed to process three pallets simultaneously in the painting booth (increasing its capacity to 9 pallets/hr) and preparation capacity is adjusted to 11.25 pallets/hr, where does the bottleneck shift if the pre-treatment stage remains at 5 pallets/hr?",
-      "variant_label": "Term 1",
+      "variant_label": "Batch 1",
       "variants": [
         {
-          "id": "term-2",
-          "label": "Term 2",
+          "id": "batch-2",
+          "label": "Batch 2",
           "question_text": "Refer to the video in Section 1.5.3, when increasing the number of pallets processed simultaneously in the painting booth from one to three, what happens to the bottleneck in the production process?",
           "options": {
             "A": "It remains at the painting booth",
@@ -359,11 +359,11 @@
     {
       "question_id": "M1_B_Q4",
       "question_text": "Based on the toy manufacturing example, what is the primary advantage of changing an operating policy (like increasing batch size in a booth) instead of adding a second piece of equipment?",
-      "variant_label": "Term 1",
+      "variant_label": "Batch 1",
       "variants": [
         {
-          "id": "term-2",
-          "label": "Term 2",
+          "id": "batch-2",
+          "label": "Batch 2",
           "question_text": "Refer to the video in Section 1.5.4, What is the effect of changing the operating policy to process multiple pallets in the painting booth rather than adding a second booth?",
           "options": {
             "A": "Output stays the same, but costs increase",
@@ -396,11 +396,11 @@
     {
       "question_id": "M1_CAL_Q1",
       "question_text": "Which resource is bottleneck?",
-      "variant_label": "Term 2",
+      "variant_label": "Batch 2",
       "variants": [
         {
-          "id": "term-1",
-          "label": "Term 1",
+          "id": "batch-1",
+          "label": "Batch 1",
           "question_text": "Based on the table (Resource 1: 10m/2w, Resource 2: 6m/1w, Resource 3: 16m/3w), which resource is bottleneck?"
         }
       ],
@@ -619,8 +619,87 @@
       "module": 2
     },
     {
+      "question_id": "M2_I_Q1",
+      "question_text": "\"Process improvement exercise if carried out wrongly will lead to Productivity paradox\". State True or False.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "A",
+      "explanation": "Improvements aimed at local optima raise internal measures without improving customer or business results, which is the productivity paradox.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_I_Q2",
+      "question_text": "In the process improvement example discussed in Section 2.3.5, which of the following represents \"low-hanging fruits\" in the improvement exercise? (Select the most appropriate answer)",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Changes that require significant investment and long implementation time",
+        "B": "Improvements that can be implemented immediately with minimal approval and no major system change",
+        "C": "Activities that involve redesigning online systems and workflow automation",
+        "D": "Long-term initiatives requiring new technologies and vendor coordination"
+      },
+      "correct_option_label": "B",
+      "explanation": "Options are prioritised into low-hanging fruits (quick wins needing little approval or system change) versus long-term changes.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_I_Q3",
+      "question_text": "A process is said to reach a state of perfection (from a productivity perspective) when the process speed to sales ratio is __________.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "100",
+        "D": "Less than zero"
+      },
+      "correct_option_label": "B",
+      "explanation": "Perfection is reached when the process produces at exactly the rate of sales, giving a ratio of 1 with no overproduction or shortfall.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_I_Q4",
+      "question_text": "In a manufacturing organization, improvement is possible only in the shop floor. State True or False.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "True",
+        "B": "False"
+      },
+      "correct_option_label": "B",
+      "explanation": "Thinking improvement ends at the shop floor is the end-of-the-road syndrome; improvement applies across all departments and the supply chain.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_I_Q5",
+      "question_text": "Mid way break down in lean implementation can happen because of ________________.",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Lack of motivation",
+        "B": "Centralization of authority",
+        "C": "Communication gap",
+        "D": "All of the above"
+      },
+      "correct_option_label": "D",
+      "explanation": "Midway breakdown stems from lack of commitment and motivation, centralised authority leaving middle managers unempowered, and communication gaps.",
+      "module": 2
+    },
+    {
       "question_id": "M2_P_Q1",
       "question_text": "IIM Bangalore is hosting its annual management fest \"Vista\", which involves planning keynote speeches, competitions, and sponsorships. This activity is best categorized as:",
+      "variant_label": "Batch 1",
+      "variants": [
+        {
+          "id": "batch-2",
+          "label": "Batch 2",
+          "question_text": "IIM Bangalore is hosting its annual management fest \"Vista\", which involves planning keynote speeches, competitions, and sponsorships. This activity is best categorized as:",
+          "options": {
+            "A": "An ongoing operation",
+            "B": "A project",
+            "C": "A routine administrative function"
+          }
+        }
+      ],
       "question_type": "MCQ",
       "options": {
         "A": "An ongoing operation",
@@ -661,8 +740,36 @@
       "module": 2
     },
     {
+      "question_id": "M2_P_Q4",
+      "question_text": "![Project network data](M2_P_network.png)\n\nUsing the above project network data identify the appropriate project network diagram",
+      "question_type": "MCQ",
+      "options": {
+        "A": "![A → B → D and A → C → D](M2_P_Q4_A.png)",
+        "B": "![B → A, C → A, A → D](M2_P_Q4_B.png)",
+        "C": "![A → B → C → D](M2_P_Q4_C.png)",
+        "D": "![A → C → B → D](M2_P_Q4_D.png)"
+      },
+      "correct_option_label": "A",
+      "explanation": "A has no predecessor and leads to both B and C, and D follows both B and C, so the network branches A → B → D and A → C → D.",
+      "module": 2
+    },
+    {
       "question_id": "M2_P_Q5",
       "question_text": "Using the network data (A:3, B:2, C:4, D:3 where B,C follow A, and D follows B,C), identify the early start (ES) and early finish (EF) time for activity D.",
+      "variant_label": "Batch 1",
+      "variants": [
+        {
+          "id": "batch-2",
+          "label": "Batch 2",
+          "question_text": "![Project network data](M2_P_network.png)\n\nUsing the above project network data identify the early start (ES) and early finish (EF) time for activity D",
+          "options": {
+            "A": "ES = 10, EF = 7",
+            "B": "ES =11, EF =10",
+            "C": "ES =7, EF =10",
+            "D": "ES =7, EF =7"
+          }
+        }
+      ],
       "question_type": "MCQ",
       "options": {
         "A": "ES = 10, EF = 7",
@@ -677,6 +784,14 @@
     {
       "question_id": "M2_P_Q6",
       "question_text": "Using the network data (A:3, B:2, C:4, D:3), identify the slack time for activity B.",
+      "variant_label": "Batch 1",
+      "variants": [
+        {
+          "id": "batch-2",
+          "label": "Batch 2",
+          "question_text": "![Project network data](M2_P_network.png)\n\nUsing the above project network data identify the slack time for activity B."
+        }
+      ],
       "question_type": "MCQ",
       "options": {
         "A": "5",
@@ -691,6 +806,20 @@
     {
       "question_id": "M2_P_Q7",
       "question_text": "Using the project network data identify the critical path.",
+      "variant_label": "Batch 1",
+      "variants": [
+        {
+          "id": "batch-2",
+          "label": "Batch 2",
+          "question_text": "![Project network data](M2_P_network.png)\n\nUsing the above project network data identify the critical path",
+          "options": {
+            "A": "A → B →D",
+            "B": "A → C →D",
+            "C": "A →B →C →D",
+            "D": "D →A →C →B"
+          }
+        }
+      ],
       "question_type": "MCQ",
       "options": {
         "A": "A → B → D",
@@ -700,6 +829,59 @@
       },
       "correct_option_label": "B",
       "explanation": "The critical path is the longest sequence of tasks: A (3) + C (4) + D (3) = 10 days.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_P_Q8",
+      "question_text": "What type of cost is the electricity used to run a project administration office for an ongoing project?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Direct cost",
+        "B": "Indirect cost"
+      },
+      "correct_option_label": "B",
+      "explanation": "Administration office overheads such as electricity cannot be traced to a specific activity, so they are indirect costs.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_P_Q9",
+      "question_text": "When a project is crashed to shorten its duration, why does the direct cost curve slope upward?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "Due to decreased project scope",
+        "B": "Due to reduced equipment usage",
+        "C": "Due to the need for additional resources or overtime pay"
+      },
+      "correct_option_label": "C",
+      "explanation": "Shortening activities needs extra resources or overtime, so direct costs rise as duration falls.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_P_Q10",
+      "question_text": "![Project crashing data](M2_P_crash.png)\n\nUsing the above project network data identify the total project time saved if you only crash activity A by 1 day?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1 day",
+        "B": "5 days",
+        "C": "3 days",
+        "D": "8 days"
+      },
+      "correct_option_label": "A",
+      "explanation": "A lies on every path, including the critical path A → C → D (10 days), so crashing A by 1 day cuts the project to 9 days.",
+      "module": 2
+    },
+    {
+      "question_id": "M2_P_Q11",
+      "question_text": "![Project crashing data](M2_P_crash.png)\n\nUsing the above project network data identify the total project time saved if you only crash activity B by 1 day?",
+      "question_type": "MCQ",
+      "options": {
+        "A": "1 day",
+        "B": "5 days",
+        "C": "3 days",
+        "D": "zero day"
+      },
+      "correct_option_label": "D",
+      "explanation": "B is on the non-critical path A → B → D (8 days) with 2 days of slack, so crashing it leaves the 10-day critical path unchanged.",
       "module": 2
     },
     {
