@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Question } from '@/lib/types';
 import { moduleLabel } from '@/lib/moduleLabel';
 import { CheckCircle, XCircle, Check, RotateCcw, Play, Pause } from 'lucide-react';
@@ -127,57 +127,6 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
   };
   const isSubjective = question.isSubjective || Object.keys(question.options).length === 0;
 
-  // Images referenced via the "PARSEIMAGE" placeholder are resolved from a folder
-  // named like the question bank, matching files by question number (e.g. PME_Q5_587.png).
-  const [questionImages, setQuestionImages] = useState<string[]>([]);
-
-  const hasPlaceholder = (s?: string) => !!s && s.includes('PARSEIMAGE');
-  const textNeedsImage = hasPlaceholder(question.text);
-  const explanationNeedsImage = hasPlaceholder(question.explanation);
-  const optionsNeedImage = Object.values(question.options || {}).some((v) => hasPlaceholder(v));
-
-  useEffect(() => {
-    const needsImage = textNeedsImage || explanationNeedsImage || optionsNeedImage;
-
-    if (
-      !needsImage ||
-      !question.subjectCode ||
-      !question.bankType ||
-      !question.source
-    ) {
-      setQuestionImages([]);
-      return;
-    }
-
-    let cancelled = false;
-    const params = new URLSearchParams({
-      subjectCode: question.subjectCode,
-      bankType: question.bankType,
-      bankName: question.source,
-      questionId: question.id,
-    });
-
-    fetch(`/api/question-image?${params.toString()}`)
-      .then((r) => (r.ok ? r.json() : { images: [] }))
-      .then((data) => {
-        if (!cancelled) setQuestionImages(data.images || []);
-      })
-      .catch(() => {
-        if (!cancelled) setQuestionImages([]);
-      });
-
-    return () => {
-      cancelled = true;
-    };
-  }, [
-    question.id,
-    question.subjectCode,
-    question.bankType,
-    question.source,
-    textNeedsImage,
-    explanationNeedsImage,
-    optionsNeedImage,
-  ]);
 
   const handleOptionClick = (option: string) => {
     if (showResult || isSubjective) return;
@@ -228,46 +177,9 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
     return baseClass + 'bg-slate-800/40 text-slate-400 border-slate-700/40';
   };
 
-  // Render markdown text, replacing each "PARSEIMAGE" placeholder with the matching
-  // resolved image (in order of appearance). Missing images are skipped silently.
-  const renderRich = (text: string, components?: Components): React.ReactNode => {
-    if (!text) return null;
-    if (!text.includes('PARSEIMAGE')) {
-      return (
-        <Markdown components={components}>{formatQuizText(text)}</Markdown>
-      );
-    }
-
-    const parts = text.split('PARSEIMAGE');
-    const nodes: React.ReactNode[] = [];
-    let imgIdx = 0;
-
-    parts.forEach((part, i) => {
-      if (part.trim()) {
-        nodes.push(
-          <Markdown key={`text-${i}`} components={components}>{formatQuizText(part)}</Markdown>
-        );
-      }
-
-      if (i < parts.length - 1) {
-        const src = questionImages[imgIdx];
-        imgIdx++;
-        if (src) {
-          nodes.push(
-            // eslint-disable-next-line @next/next/no-img-element
-            <img
-              key={`img-${i}`}
-              src={src}
-              alt={`Question figure ${imgIdx}`}
-              className="my-4 mx-auto max-w-full rounded-lg border border-surface-border/60 bg-white"
-            />
-          );
-        }
-      }
-    });
-
-    return nodes;
-  };
+  // Markdown text; figures are ordinary Markdown images (see lib/questionImages.ts).
+  const renderRich = (text: string, components?: Components): React.ReactNode =>
+    text ? <Markdown components={components}>{formatQuizText(text)}</Markdown> : null;
 
   // Render subjective question
   if (isSubjective) {

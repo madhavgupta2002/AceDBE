@@ -6,6 +6,8 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..', 'public', 'data', 'Subjects');
 const OUT = path.join(__dirname, '..', 'public', 'data', 'answer-index.json');
 const entries = [];
+// Figures (`![Figure](file.png)`) are not part of the wording the extension matches against.
+const noImages = (t) => String(t ?? '').replace(/!\[[^\]]*\]\([^)]*\)\s*/g, '').trim();
 
 for (const folder of fs.readdirSync(ROOT).sort()) {
   const code = folder.split('_')[0];
@@ -33,7 +35,7 @@ for (const folder of fs.readdirSync(ROOT).sort()) {
           if (!version.question_text || !labels.length || !Object.values(options).some(Boolean)) continue;
           entries.push({
             c: code, n: name, s: `${folder}/${dir}/${file.replace(/\.json$/, '')}`, m: q.module ?? '',
-            q: version.question_text, o: options, a: labels.join(','),
+            q: noImages(version.question_text), o: Object.fromEntries(Object.entries(options).map(([k, v]) => [k, noImages(v)])), a: labels.join(','),
             ...(version.label ? { v: version.label } : {}),
           });
         }

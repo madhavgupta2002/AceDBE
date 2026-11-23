@@ -21,7 +21,7 @@ export default function PassageCard({
   className = '',
   collapsible = true,
 }: {
-  question: Pick<Question, 'passage' | 'subjectCode' | 'bankType' | 'source'>;
+  question: Pick<Question, 'passage' | 'source'>;
   className?: string;
   collapsible?: boolean;
 }) {
@@ -29,32 +29,10 @@ export default function PassageCard({
   const key = `${question.source ?? ''}:${passage?.id ?? ''}`;
   const [open, setOpen] = useState(!collapsed.has(key));
   const [tall, setTall] = useState(false);
-  const [images, setImages] = useState<string[]>([]);
   const text = passage?.text ?? '';
-  const needsImage = text.includes('PARSEIMAGE');
 
   useEffect(() => setOpen(!collapsed.has(key)), [key]);
 
-  useEffect(() => {
-    if (!passage || !needsImage || !question.subjectCode || !question.bankType || !question.source) {
-      setImages([]);
-      return;
-    }
-    let cancelled = false;
-    const params = new URLSearchParams({
-      subjectCode: question.subjectCode,
-      bankType: question.bankType,
-      bankName: question.source,
-      questionId: passage.id,
-    });
-    fetch(`/api/question-image?${params.toString()}`)
-      .then((r) => (r.ok ? r.json() : { images: [] }))
-      .then((d) => !cancelled && setImages(d.images || []))
-      .catch(() => !cancelled && setImages([]));
-    return () => {
-      cancelled = true;
-    };
-  }, [passage, needsImage, question.subjectCode, question.bankType, question.source]);
 
   if (!passage) return null;
 
@@ -65,10 +43,6 @@ export default function PassageCard({
     setOpen(!open);
   };
 
-  const md = (t: string, k: React.Key) => (
-    <Markdown key={k}>{formatText(t)}</Markdown>
-  );
-  const parts = text.split('PARSEIMAGE');
 
   return (
     <section className={`rounded-xl border border-amber-700/40 bg-amber-950/20 ${className}`}>
@@ -110,15 +84,8 @@ export default function PassageCard({
             tall ? 'max-h-[80vh]' : 'max-h-72'
           }`}
         >
-          {parts.map((part, i) => (
-            <React.Fragment key={i}>
-              {part.trim() && md(part, `t${i}`)}
-              {i < parts.length - 1 && images[i] && (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img src={images[i]} alt={`Passage figure ${i + 1}`} className="my-3 mx-auto max-w-full rounded-lg border border-surface-border/60 bg-white" />
-              )}
-            </React.Fragment>
-          ))}
+          {/* Figures are Markdown images in the passage text (see lib/questionImages.ts). */}
+          <Markdown>{formatText(text)}</Markdown>
         </div>
       )}
     </section>

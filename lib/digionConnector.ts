@@ -11,6 +11,7 @@ import rehypeKatex from 'rehype-katex';
 import rehypeStringify from 'rehype-stringify';
 import type { ExamPattern, ExamPatternSection, IIMBQuestion, QuestionFile } from './types';
 import { resolveExamPattern } from './cbtPattern';
+import { bankImageBase, resolveImages } from './questionImages';
 
 export const DIGION_ENGINE_URL = (
   process.env.NEXT_PUBLIC_DIGION_ENGINE_URL || 'https://digion-engine.vercel.app'
@@ -121,37 +122,11 @@ const mdProcessor = unified()
 function markdownToHtml(text: string): string {
   if (!text) return '';
   // The engine runs on another origin, so site-relative image paths (![](/data/...)) must be made absolute.
-  return String(mdProcessor.processSync(prepareMarkdown(text))).replace(
-    /src="\/(?!\/)/g,
-    `src="${window.location.origin}/`
-  );
+  return String(mdProcessor.processSync(prepareMarkdown(text)))
+    .replace(/src="\/(?!\/)/g, `src="${window.location.origin}/`)
+    .replace(/<img /g, '<img style="max-width:100%;height:auto;display:block;margin:8px 0" ');
 }
 
-const IMG_PLACEHOLDER = 'PARSEIMAGE';
-
-/** Renders text, replacing each PARSEIMAGE placeholder (in order) with an <img> that uses an absolute URL. */
-function richHtml(text: string | undefined, images: string[]): string {
-  if (!text) return '';
-  if (!text.includes(IMG_PLACEHOLDER)) return markdownToHtml(text);
-  const parts = text.split(IMG_PLACEHOLDER);
-  let html = '';
-  parts.forEach((part, i) => {
-    if (part.trim()) html += markdownToHtml(part);
-    const src = i < parts.length - 1 ? images[i] : undefined;
-    if (src) html += `<img src="${window.location.origin}${src}" alt="" style="max-width:100%;height:auto;display:block;margin:8px 0" />`;
-  });
-  return html;
-}
-
-async function fetchImages(subjectCode: string, bankName: string, questionId: string): Promise<string[]> {
-  const params = new URLSearchParams({ subjectCode, bankType: 'Exam', bankName, questionId });
-  try {
-    const res = await fetch(`/api/question-image?${params.toString()}`);
-    return res.ok ? ((await res.json()).images ?? []) : [];
-  } catch {
-    return [];
-  }
-}
 
 // ---------------------------------------------------------------------------
 // Pattern + bank -> engine config
@@ -205,21 +180,9 @@ export async function buildCbtExam(paper: CbtPaperRef, file: QuestionFile, candi
   const sectional = pattern.timing_mode === 'sectional' && cbtSections.every((s) => (s.duration_min ?? 0) > 0);
   const calcType = pattern.calculator === 'scientific' ? 'scientific' : 'standard';
 
-  // Resolve images for all questions that need them, in parallel.
-  const needImage = (q: IIMBQuestion) =>
-    [q.question_text, q.explanation, q.explaination, ...Object.values(q.options ?? {})].some((t) => t?.includes(IMG_PLACEHOLDER));
-  const allIds = cbtSections.flatMap((s) => [
-    ...questionsOf(s),
-    ...(s.context_blocks ?? []).map((b) => b.context_question_id),
-    ...questionsOf(s).map((id) => byId.get(id)?.passage_id ?? ''),
-  ]).filter(Boolean);
-  const imageMap = new Map<string, string[]>();
-  await Promise.all(
-    allIds.map(async (id) => {
-      const q = byId.get(id);
-      if (q && needImage(q)) imageMap.set(id, await fetchImages(paper.subjectCode, paper.bankName, id));
-    })
-  );
+  // Figures are Markdown images with bank-relative file names (see lib/questionImages.ts).
+  const imageBase = bankImageBase(paper.subjectCode, 'Exam', paper.bankName);
+  const richHtml = (text?: string) => markdownToHtml(resolveImages(text ?? '', imageBase));
 
   const sections = cbtSections.map((sec, si) => {
     const marks = sec.marks_per_question ?? fallbackMarks;
@@ -237,7 +200,7 @@ export async function buildCbtExam(paper: CbtPaperRef, file: QuestionFile, candi
     const passageIds = Array.from(new Set(contextFor.values()));
     const passages = passageIds.map((ctxId) => {
       const ctx = byId.get(ctxId);
-      return { id: `ctx-${ctxId}`, directions: '', html: richHtml(ctx?.question_text?.replace(/([^\n|])\n(?![\n|\-*\d])/g, '$1  \n'), imageMap.get(ctxId) ?? []) };
+      return { id: `ctx-${ctxId}`, directions: '', html: richHtml(ctx?.question_text?.replace(/([^\n|])\n(?![\n|\-*\d])/g, '$1  \n')) };
     });
 
     const questions = questionsOf(sec).map((id) => {
@@ -245,15 +208,14 @@ export async function buildCbtExam(paper: CbtPaperRef, file: QuestionFile, candi
       if (!q) throw new Error(`Pattern refers to question ${id} which is missing from the bank.`);
       const labels = labelsOf(q);
       const isMsq = sec.question_type === 'MSQ' || labels.length > 1;
-      const imgs = imageMap.get(id) ?? [];
       const options = Object.entries(q.options ?? {})
         .filter(([, v]) => v && v.trim() !== '')
-        .map(([key, v]) => ({ id: key, html: richHtml(v, imgs) }));
+        .map(([key, v]) => ({ id: key, html: richHtml(v) }));
 
       return {
         id,
         type: isMsq ? 'MSQ' : 'MCQ',
-        html: richHtml(q.question_text, imgs),
+        html: richHtml(q.question_text),
         options,
         ...(contextFor.has(id) ? { passageId: `ctx-${contextFor.get(id)}` } : {}),
         ...(labels.length ? { answer: isMsq ? labels : labels[0] } : {}),

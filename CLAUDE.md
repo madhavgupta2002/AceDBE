@@ -60,7 +60,7 @@ The user pastes questions (often with a "return JSON" prompt) and wants answers 
    - Mid-terms go in their own bank, `CLA/Batch 1 MT.json`, with ids `MT_Q<nn>` and each question's module set to the one it tests.
    - Each question: `question_type: "MCQ"`, options `A`..`F` (more than four is fine), uppercase `correct_option_label`, and multi-select as `"A, C, F"` (comma-separated; the loader splits it). Add a one-line `explanation` taken from the source.
    - Shared case/caselet: add a passage entry before its questions (`question_type: "SUBJECTIVE"`, `is_passage: true`, empty options, id like `CLA_M7_P01`) and set `passage_id` on each question that uses it.
-   - Images: put `PARSEIMAGE` in the question text and save the file in a folder named exactly like the bank (`CLA/Batch 1 MT/MT_Q08.png`). `/api/question-image` matches files by the `Q<number>` token, so save one copy per question even when two share a chart.
+   - Images: save the file in a folder named exactly like the bank (`CLA/Batch 1 MT/MT_Q08.png`) and reference it by file name as a Markdown image where it should appear, e.g. `"question_text": "![Figure](MT_Q08.png)\n\nThe chart shows…"` (also works in options, explanations and passage entries; several questions can share one file). `lib/questionImages.ts` turns the name into a site path when the bank loads, and `scripts/question-images.test.cjs` fails if a referenced file is missing or a file in the folder is unused.
 6. Run `npm run build:index` so the QuizFiller extension knows the new questions, then `npm test` and `npx tsc --noEmit`. Commit and push only when the user asks; pushing deploys the live site.
 
 ## Conventions

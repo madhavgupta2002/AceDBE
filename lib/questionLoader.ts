@@ -1,4 +1,8 @@
 import { QuestionFile, IIMBQuestion, Question } from './types';
+import { bankImageBase, resolveImages } from './questionImages';
+
+const resolveOptions = <T extends Record<string, string | undefined> | undefined>(options: T, base: string): T =>
+  (options && Object.fromEntries(Object.entries(options).map(([k, v]) => [k, resolveImages(v, base)]))) as T;
 
 // Convert IIMB question format to internal format
 function convertToInternalFormat(
@@ -19,24 +23,29 @@ function convertToInternalFormat(
       .filter(ans => ans.length > 0)
     : [];
 
+  // Bank-relative image file names become site paths here, once, for every view (quiz, review, print, export).
+  const base = subjectCode && bankType && source ? bankImageBase(subjectCode, bankType, source) : '';
+  const img = (t?: string) => (base ? resolveImages(t, base) : t);
+  const opts = <T extends Record<string, string | undefined> | undefined>(o: T): T => (base ? resolveOptions(o, base) : o);
+
   return {
     id: iimbQuestion.question_id,
-    text: iimbQuestion.question_text,
-    options: iimbQuestion.options,
+    text: img(iimbQuestion.question_text) ?? '',
+    options: opts(iimbQuestion.options),
     correctAnswer: correctAnswers,
     module: iimbQuestion.module,
     source: source,
     subjectCode: subjectCode,
     bankType: bankType,
-    explanation: iimbQuestion.explaination || iimbQuestion.explanation, // Handle typo in JSON
+    explanation: img(iimbQuestion.explaination || iimbQuestion.explanation), // Handle typo in JSON
     isSubjective: isSubjective,
     variantLabel: iimbQuestion.variant_label,
     variants: iimbQuestion.variants?.map(variant => ({
       id: variant.id,
       label: variant.label,
-      text: variant.question_text,
-      options: variant.options,
-      explanation: variant.explanation,
+      text: img(variant.question_text) ?? '',
+      options: opts(variant.options),
+      explanation: img(variant.explanation),
     })),
   };
 }
@@ -130,7 +139,10 @@ export function convertFileToQuestions(
   const passages = new Map<string, string>();
   const members = new Map<string, number>();
   for (const q of file.questions) {
-    if (q.is_passage) passages.set(String(q.question_id), q.question_text);
+    if (q.is_passage) {
+      const base = subjectCode && bankType && source ? bankImageBase(subjectCode, bankType, source) : '';
+      passages.set(String(q.question_id), base ? resolveImages(q.question_text, base) : q.question_text);
+    }
     else if (q.passage_id) members.set(q.passage_id, (members.get(q.passage_id) ?? 0) + 1);
   }
   const seen = new Map<string, number>();

@@ -26,7 +26,7 @@ function load(file, dependencies = {}, globals = {}) {
   return exports;
 }
 
-const loader = load('lib/questionLoader.ts');
+const loader = load('lib/questionLoader.ts', { './questionImages': load('lib/questionImages.ts') });
 const variants = load('lib/questionVariants.ts');
 const answers = load('components/quiz/answers.ts');
 const questions = loader.convertFileToQuestions(bank, 'Practice', 'OM41x', 'CLA');

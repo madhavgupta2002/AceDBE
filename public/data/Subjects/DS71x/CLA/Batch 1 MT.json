@@ -108,7 +108,7 @@
     },
     {
       "question_id": "MT_Q08",
-      "question_text": "PARSEIMAGE\n\nThe chart shows TrendE's daily return rates by region. The red dots show outliers. Based on it, what should TrendE do about the North region?",
+      "question_text": "![Figure](MT_Q08.png)\n\nThe chart shows TrendE's daily return rates by region. The red dots show outliers. Based on it, what should TrendE do about the North region?",
       "question_type": "MCQ",
       "options": {
         "A": "Ignore North's outliers, since outliers are usually noise",
@@ -122,7 +122,7 @@
     },
     {
       "question_id": "MT_Q09",
-      "question_text": "PARSEIMAGE\n\nUsing the same chart of TrendE's daily return rates, which statements are supported?\nNote: This is a multiple-select question and may have more than one correct answer. To receive full marks, you must select all correct options. Zero marks will be awarded if any correct option is missed or an incorrect option is selected. (select ALL that apply)",
+      "question_text": "![Figure](MT_Q09.png)\n\nUsing the same chart of TrendE's daily return rates, which statements are supported?\nNote: This is a multiple-select question and may have more than one correct answer. To receive full marks, you must select all correct options. Zero marks will be awarded if any correct option is missed or an incorrect option is selected. (select ALL that apply)",
       "question_type": "MCQ",
       "options": {
         "A": "North has the most extreme outliers",
@@ -136,7 +136,7 @@
     },
     {
       "question_id": "MT_Q10",
-      "question_text": "PARSEIMAGE\n\nThe chart below shows September sales and targets for TrendE's seven stores. Which store most needs the Regional manager's attention?",
+      "question_text": "![Figure](MT_Q10.png)\n\nThe chart below shows September sales and targets for TrendE's seven stores. Which store most needs the Regional manager's attention?",
       "question_type": "MCQ",
       "options": {
         "A": "Store 2, because it has the lowest sales",
@@ -194,7 +194,7 @@
     },
     {
       "question_id": "MT_Q14",
-      "question_text": "PARSEIMAGE\n\nThe chart shows TrendE's app purchase funnel for October. Which stage should the team investigate first, and why?",
+      "question_text": "![Figure](MT_Q14.png)\n\nThe chart shows TrendE's app purchase funnel for October. Which stage should the team investigate first, and why?",
       "question_type": "MCQ",
       "options": {
         "A": "Cart to 'Buy', because cart abandonment is always the biggest problem",
@@ -208,7 +208,7 @@
     },
     {
       "question_id": "MT_Q15",
-      "question_text": "PARSEIMAGE\n\nA TrendE manager looks at this chart and says: 'August was our best month ever. Let's repeat August's campaign.' What is the best response?",
+      "question_text": "![Figure](MT_Q15.png)\n\nA TrendE manager looks at this chart and says: 'August was our best month ever. Let's repeat August's campaign.' What is the best response?",
       "question_type": "MCQ",
       "options": {
         "A": "June and July are the dull months. Increase marketing budget in these months",

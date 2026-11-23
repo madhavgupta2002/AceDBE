@@ -142,7 +142,7 @@ function historyHarness() {
     auth: { getSession: async () => ({ data: { session: { user: { id: 'alice' } } } }) },
     from: () => ({ insert: async value => { inserts.push(plain(value)); return { error: null }; } }),
   } } });
-  const loader = load('lib/questionLoader.ts');
+  const loader = load('lib/questionLoader.ts', { './questionImages': load('lib/questionImages.ts') });
   const questions = loader.convertFileToQuestions({ questions: [
     { question_id: '1', question_text: 'Q', question_type: 'MCQ', options: { A: 'Yes' }, correct_option_label: 'A', module: 1 },
     { question_id: '2', question_text: 'Q2', question_type: 'MCQ', options: { A: 'Yes' }, correct_option_label: 'A', module: 2 },

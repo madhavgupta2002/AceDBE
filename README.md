@@ -63,7 +63,7 @@ Type check with `npx tsc --noEmit`.
 | `/history` | Quiz attempt history (logged in) |
 | `/marks` | Marks / CGPA calculator |
 | `/cla-solver` | Download and install guide for the QuizFiller Chrome extension |
-| `/api/banks`, `/api/questions`, `/api/question-image`, `/api/pyqs`, `/api/entrance` | Read-only routes serving question data from `public/data` |
+| `/api/banks`, `/api/questions`, `/api/pyqs`, `/api/entrance` | Read-only routes serving question data from `public/data` |
 
 ## Folder map
 
